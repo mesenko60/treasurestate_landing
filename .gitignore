@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Optional: If you have a virtual environment in the project
+# .venv/
+# venv/
+# env/
+
+# Optional: If you have node_modules
+# node_modules/
