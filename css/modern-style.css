@@ -28,6 +28,13 @@ body {
   color: var(--text);
   line-height: 1.6;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Typography */
@@ -52,7 +59,29 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+  .menu-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+    padding: 0.5em 0;
+    position: static;
+  }
+  .menu-bar a {
+    padding: 0.75em 1em;
+    border-radius: 0;
+    border-bottom: 1px solid var(--gray);
+    text-align: left;
+    font-size: 1.1em;
+  }
+  .menu-bar a:last-child {
+    border-bottom: none;
+  }
+}
+
 
 .menu-bar a {
   color: var(--dark);
@@ -108,7 +137,21 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   filter: brightness(0.7);
   transition: transform 10s ease;
+  max-width: 100vw;
+  max-height: 100vh;
 }
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: 250px;
+    height: 40vh;
+  }
+  .hero-image {
+    min-height: 250px;
+    height: 100%;
+  }
+}
+
 
 .hero-section:hover .hero-image {
   transform: scale(1.05);
