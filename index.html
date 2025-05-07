@@ -65,17 +65,17 @@
                 <div class="planner-card">
                     <h3>Montana Backroads Travel Planner</h3>
                     <p>Explore the hidden gems and scenic routes off the beaten path. Adventure awaits around every bend!</p>
-                    <span>Coming Soon</span>
+                    <button class="waitlist-btn" data-planner="Montana Backroads Travel Planner">Join Waitlist</button>
                 </div>
                 <div class="planner-card">
                     <h3>Hot Springs in Montana Travel Planner</h3>
                     <p>Discover Montana's rejuvenating natural hot springs. Plan your relaxing getaway today.</p>
-                    <span>Coming Soon</span>
+                    <button class="waitlist-btn" data-planner="Hot Springs in Montana Travel Planner">Join Waitlist</button>
                 </div>
                 <div class="planner-card">
                     <h3>Bitterroot Valley Travel Planner</h3>
                     <p>Experience the stunning landscapes and charming towns of the Bitterroot Valley.</p>
-                    <span>Coming Soon</span>
+                    <button class="waitlist-btn" data-planner="Bitterroot Valley Travel Planner">Join Waitlist</button>
                 </div>
             </div>
         </section>
@@ -89,5 +89,22 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- Waitlist Modal -->
+    <div id="waitlist-modal" class="modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;overflow:auto;background:rgba(0,0,0,0.5);">
+      <div style="background:#fff;margin:5% auto;padding:2rem;max-width:400px;position:relative;border-radius:8px;text-align:center;">
+        <span id="waitlist-modal-close" style="position:absolute;top:0.5rem;right:1rem;font-size:2rem;cursor:pointer;">&times;</span>
+        <form id="waitlist-form">
+          <h3>Join the Waitlist</h3>
+          <p>Be the first to know when this planner launches!</p>
+          <input type="email" id="waitlist-email" name="email" placeholder="Your email" required style="width:90%;padding:0.5rem;margin-bottom:1rem;" />
+          <input type="hidden" id="waitlist-planner" name="planner" />
+          <button type="submit" style="padding:0.5rem 1.5rem;">Notify Me</button>
+        </form>
+        <div id="waitlist-success" style="display:none;">
+          <h4>Thank you!</h4>
+          <p>You're on the waitlist. We'll notify you when this planner is ready.</p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
