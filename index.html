@@ -18,8 +18,14 @@
       gtag('config', 'G-NQ8F9RC7DE');
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Add favicon link here -->
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+
+
 </head>
 <body>
     <header class="hero-section">
@@ -29,7 +35,13 @@
             <p>Discover the unparalleled beauty and rich history of Montana</p>
         </div>
     </header>
-
+    <nav class="menu-bar">
+      <a href="index.html" class="active">Home</a>
+      <a href="Montana-Facts.html">Montana Facts</a>
+      <a href="#">Explore</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
     <main>
         <section id="description" class="content-section">
             <h2>What Does &quot;Treasure State&quot; Mean?</h2>
@@ -53,29 +65,31 @@
             </p>
         </section>
 
+        <!-- Banner Section -->
         <section id="affiliate-banner" class="banner-section">
             <!-- Expedia Affiliate Banner -->
             <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
             <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
         </section>
-
+        
+        <!-- Planners Section -->
         <section id="coming-soon" class="content-section planners-section">
             <h2>Coming Soon: Montana Travel Planners</h2>
             <div class="planners-grid">
                 <div class="planner-card">
                     <h3>Montana Backroads Travel Planner</h3>
                     <p>Explore the hidden gems and scenic routes off the beaten path. Adventure awaits around every bend!</p>
-                    <button class="waitlist-btn" data-planner="Montana Backroads Travel Planner">Join Waitlist</button>
+                    <a class="waitlist-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdPTdHpiWtYrOk3bB10CoLFFtgtvWZTsZ2BVleAWIveISkDTQ/viewform?usp=pp_url&entry.13122347=Montana+Backroads+Travel+Planner" target="_blank" rel="noopener">Join Waitlist</a>
                 </div>
                 <div class="planner-card">
                     <h3>Hot Springs in Montana Travel Planner</h3>
                     <p>Discover Montana's rejuvenating natural hot springs. Plan your relaxing getaway today.</p>
-                    <button class="waitlist-btn" data-planner="Hot Springs in Montana Travel Planner">Join Waitlist</button>
+                    <a class="waitlist-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdPTdHpiWtYrOk3bB10CoLFFtgtvWZTsZ2BVleAWIveISkDTQ/viewform?usp=pp_url&entry.13122347=Hot+Springs+in+Montana+Travel+Planner" target="_blank" rel="noopener">Join Waitlist</a>
                 </div>
                 <div class="planner-card">
                     <h3>Bitterroot Valley Travel Planner</h3>
                     <p>Experience the stunning landscapes and charming towns of the Bitterroot Valley.</p>
-                    <button class="waitlist-btn" data-planner="Bitterroot Valley Travel Planner">Join Waitlist</button>
+                    <a class="waitlist-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdPTdHpiWtYrOk3bB10CoLFFtgtvWZTsZ2BVleAWIveISkDTQ/viewform?usp=pp_url&entry.13122347=Bitterroot+Valley+Travel+Planner" target="_blank" rel="noopener">Join Waitlist</a>
                 </div>
             </div>
         </section>
@@ -88,23 +102,8 @@
         <p>Your Gateway to Montana's Treasures</p>
     </footer>
 
+
+
     <script src="js/script.js"></script>
-    <!-- Waitlist Modal -->
-    <div id="waitlist-modal" class="modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;overflow:auto;background:rgba(0,0,0,0.5);">
-      <div style="background:#fff;margin:5% auto;padding:2rem;max-width:400px;position:relative;border-radius:8px;text-align:center;">
-        <span id="waitlist-modal-close" style="position:absolute;top:0.5rem;right:1rem;font-size:2rem;cursor:pointer;">&times;</span>
-        <form id="waitlist-form">
-          <h3>Join the Waitlist</h3>
-          <p>Be the first to know when this planner launches!</p>
-          <input type="email" id="waitlist-email" name="email" placeholder="Your email" required style="width:90%;padding:0.5rem;margin-bottom:1rem;" />
-          <input type="hidden" id="waitlist-planner" name="planner" />
-          <button type="submit" style="padding:0.5rem 1.5rem;">Notify Me</button>
-        </form>
-        <div id="waitlist-success" style="display:none;">
-          <h4>Thank you!</h4>
-          <p>You're on the waitlist. We'll notify you when this planner is ready.</p>
-        </div>
-      </div>
-    </div>
 </body>
 </html>

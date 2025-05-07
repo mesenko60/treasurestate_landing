@@ -7,41 +7,47 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Waitlist Modal Interactivity
+// Waitlist Modal Interactivity for Google Form embed
 const waitlistModal = document.getElementById('waitlist-modal');
 const waitlistClose = document.getElementById('waitlist-modal-close');
-const waitlistForm = document.getElementById('waitlist-form');
-const waitlistSuccess = document.getElementById('waitlist-success');
-const waitlistEmail = document.getElementById('waitlist-email');
-const waitlistPlanner = document.getElementById('waitlist-planner');
+const waitlistIframe = document.getElementById('waitlist-iframe');
 
-// Open modal
+function encodePlanner(planner) {
+    return encodeURIComponent(planner);
+}
+
 Array.from(document.querySelectorAll('.waitlist-btn')).forEach(btn => {
     btn.addEventListener('click', function() {
+        const planner = btn.getAttribute('data-planner');
+        // Set the Google Form iframe src with pre-filled planner
+        waitlistIframe.src = `https://docs.google.com/forms/d/e/1FAIpQLSdPTdHpiWtYrOk3bB10CoLFFtgtvWZTsZ2BVleAWIveISkDTQ/viewform?usp=pp_url&entry.13122347=${encodePlanner(planner)}`;
         waitlistModal.style.display = 'block';
-        waitlistPlanner.value = btn.getAttribute('data-planner');
-        waitlistSuccess.style.display = 'none';
-        waitlistForm.style.display = 'block';
-        waitlistEmail.value = '';
-        waitlistEmail.focus();
     });
 });
-// Close modal on X
 waitlistClose.addEventListener('click', function() {
     waitlistModal.style.display = 'none';
+    waitlistIframe.src = '';
 });
-// Close modal on outside click
 window.addEventListener('click', function(event) {
     if (event.target === waitlistModal) {
         waitlistModal.style.display = 'none';
+        waitlistIframe.src = '';
     }
 });
-// Handle form submission
-waitlistForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    waitlistForm.style.display = 'none';
-    waitlistSuccess.style.display = 'block';
-    // You can add analytics/event tracking here
-});
+
+// Track clicks on waitlist buttons in GA4
+if (window.gtag) {
+  document.querySelectorAll('.waitlist-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      gtag('event', 'waitlist_click', {
+        'event_category': 'engagement',
+        'event_label': btn.textContent.trim(),
+        'planner': btn.href.includes('entry.13122347=') 
+          ? decodeURIComponent(btn.href.split('entry.13122347=')[1].replace(/\+/g, ' ')) 
+          : ''
+      });
+    });
+  });
+}
 
 // You can add more JavaScript for interactivity if needed in the future.
