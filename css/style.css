@@ -147,6 +147,7 @@ main {
 
 /* Banner Sections */
 .banner-section {
+    min-height: 90px;
     background-color: #fff;
     padding: 1rem;
     margin-bottom: 2rem;
