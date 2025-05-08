@@ -7,6 +7,67 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Robust includeHTML: waits for target element before inserting HTML
+function includeHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        waitForElement('#' + id, 3000).then(el => {
+          el.innerHTML = data;
+        });
+      });
+}
+
+// Helper: Wait for an element to exist in the DOM
+function waitForElement(selector, timeout = 2000) {
+    return new Promise((resolve, reject) => {
+        const interval = 50;
+        let elapsed = 0;
+        const check = () => {
+            const el = document.querySelector(selector);
+            if (el) return resolve(el);
+            elapsed += interval;
+            if (elapsed >= timeout) return reject();
+            setTimeout(check, interval);
+        };
+        check();
+    });
+}
+
+// Run scripts inside a dynamically included element
+function runScriptsInElement(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const scripts = el.querySelectorAll('script');
+    scripts.forEach(oldScript => {
+        const newScript = document.createElement('script');
+        if (oldScript.src) {
+            newScript.src = oldScript.src;
+        } else {
+            newScript.textContent = oldScript.textContent;
+        }
+        // Copy attributes
+        for (const attr of oldScript.attributes) {
+            newScript.setAttribute(attr.name, attr.value);
+        }
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+}
+
+// Set hero content after include loads
+function setHeroContent(options) {
+    waitForElement('#site-hero header').then(header => {
+        const h1 = header.querySelector('h1');
+        const p = header.querySelector('p');
+        const img = header.querySelector('img');
+        if (h1 && options.title) h1.textContent = options.title;
+        if (p && options.subtitle) p.textContent = options.subtitle;
+        if (img && options.image) img.src = options.image;
+        if (img && options.alt) img.alt = options.alt;
+    });
+}
+
+
 // Waitlist Modal Interactivity for Google Form embed
 const waitlistModal = document.getElementById('waitlist-modal');
 const waitlistClose = document.getElementById('waitlist-modal-close');

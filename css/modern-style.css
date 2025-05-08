@@ -62,6 +62,25 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
+.hero-section--small {
+  height: 32vh;
+  min-height: 180px;
+}
+
+.hero-image--small {
+  height: 100%;
+  min-height: 180px;
+}
+
+.hero-text--small h1 {
+  font-size: 2rem;
+}
+
+.hero-text--small p {
+  font-size: 1rem;
+}
+
+
 @media (max-width: 600px) {
   .menu-bar {
     flex-direction: column;

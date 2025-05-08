@@ -1,13 +1,8 @@
 <section id="coming-soon" class="content-section planners-section">
+    <div id="site-menu"></div>
+    <div id="site-hero"></div>
+    <div id="site-banner"></div>
     <h2>Coming Soon: Montana Travel Planners</h2>
-    <nav class="menu-bar">
-      <a href="index.html">Home</a>
-      <a href="towns.html">Cities and Towns</a>
-      <a href="Montana-Facts.html">Montana Facts</a>
-      <a href="#">Explore</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact</a>
-    </nav>
     <div class="planners-grid">
         <div class="planner-card">
             <h3>Montana Backroads Travel Planner</h3>
@@ -26,3 +21,20 @@
         </div>
     </div>
 </section>
+<div id="site-footer"></div>
+<script src="js/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    includeHTML('site-menu', 'includes/header.html');
+    includeHTML('site-hero', 'includes/hero-interior.html');
+    includeHTML('site-banner', 'includes/banner.html');
+    includeHTML('coming-soon', 'includes/coming-soon.html');
+    includeHTML('site-footer', 'includes/footer.html');
+    setHeroContent({
+      title: 'Montana Travel Planners',
+      subtitle: 'Plan your perfect Montana adventure',
+      image: 'images/_MG_8720.jpg',
+      alt: 'Scenic Montana Landscape - The Treasure State'
+    });
+  });
+</script>

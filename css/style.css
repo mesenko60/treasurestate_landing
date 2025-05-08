@@ -23,6 +23,12 @@ body {
     overflow: hidden; /* Ensures the image doesn't overflow */
 }
 
+/* Override for interior pages */
+header.hero-section.hero-section--small {
+    height: 35vh !important;
+    min-height: 200px !important;
+}
+
 .hero-image {
     position: absolute;
     top: 0;
@@ -32,6 +38,23 @@ body {
     object-fit: cover; /* Cover the area, might crop */
     z-index: -1; /* Behind the text */
     filter: brightness(0.6); /* Darken the image for text readability */
+}
+
+.hero-image--small {
+    height: 100%;
+    min-height: 180px;
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero-text--small h1 {
+    font-size: 2rem;
+}
+
+.hero-text--small p {
+    font-size: 1rem;
 }
 
 .hero-text h1 {
