@@ -15,6 +15,10 @@ These rules are designed for any AI assistant or automation working on the Treas
 
 ## 2. Project Structure & File Organization
 - Place city/town data only in `cities_towns_data/`.
+- Place city/town content only in `cities_towns_content/`.
+- When a new city/town page is created, update the Montana Cities and Towns main page to include a link to it.
+- Be aware that navigation menu links (e.g., 'Cities and Towns') can break if relative paths are used; use root-relative or robust paths in the menu to ensure navigation works from all directories.
+- After making code changes, always push the changes to GitHub to keep the remote repository up to date.
 - Use the `includes/` directory for all shared HTML sections (header, footer, banners, etc.).
 - Store CSS in `css/` and JavaScript in `js/`.
 - Use lowercase, hyphenated filenames for HTML files.
@@ -22,7 +26,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 
 ## 3. Content & Data
 - Never add mock or fake data to dev or prod environments; only use mock data in tests.
-- Always reference `cities_towns_data/` as the source of truth for towns/cities.
+- Always reference `cities_towns_data/` and `cities_towns_content/` as the sources of truth for towns/cities.
 - Do not duplicate code or data; use includes and templates.
 
 ## 4. Includes & Templates
@@ -30,6 +34,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 - Never copy-paste shared sections directly into pages.
 - Follow the template in `how-to-build-town-pages.md` for new town/city pages.
 - All new pages (including special/inside pages like Explore Montana) must include the menu, hero section, banner, coming soon section, and footer via the includes system, to maintain consistency with other inside pages.
+- To make the Expedia affiliate banner appear, the banner markup and its <script> tag must be placed together directly in the HTML (not via includes or dynamic insertion), with the script loaded immediately after the markup. Follow the exact pattern in city-town-template.html.
 
 ## 5. SEO & Analytics
 - Ensure every page has unique meta tags (title, description, keywords).

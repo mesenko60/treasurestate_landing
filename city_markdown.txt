@@ -1,0 +1,70 @@
+# Explore {{ city_name }}, Montana: {{ headline_descriptor }}
+
+{{ intro_paragraph }}
+
+---
+
+## Quick Facts
+
+- **Population:** {{ population }}
+- **County:** {{ county }}
+- **Founded:** {{ year_founded }}
+- **Elevation:** {{ elevation }} ft
+- **Known For:** {{ known_for }}
+- **Nearby Landmarks:** {{ nearby_landmarks }}
+- **Fun Fact:** {{ fun_fact }}
+
+---
+
+## Notable People & Pop Culture
+
+- {{ famous_person_1 }} – {{ short_description }}
+- {{ famous_person_2 }} – {{ short_description }}
+- {{ film_or_tv_reference }} – {{ description }}
+
+---
+
+## Top Things to Do in {{ city_name }}
+
+- ✧ **{{ attraction_1 }}** – {{ one_line_description }}
+- ✧ **{{ attraction_2 }}** – {{ one_line_description }}
+- ✧ **{{ attraction_3 }}** – {{ one_line_description }}
+- ✧ **{{ attraction_4 }}** – {{ one_line_description }}
+
+---
+
+## Local Industry & Economy
+
+{{ paragraph_about_industry_and_economy }}
+
+---
+
+## History & Heritage
+
+{{ paragraph_about_history }}
+
+---
+
+## Seasonal Activities & Local Events
+
+- **Spring/Summer:** {{ spring_summer_activities }}
+- **Fall/Winter:** {{ fall_winter_activities }}
+- **Annual Events:** {{ notable_events }}
+
+---
+
+## Getting There & Nearby Destinations
+
+{{ driving_info_and_nearby_towns }}
+
+---
+
+## Where to Stay in {{ city_name }}
+
+{{ paragraph_about_lodging }}
+
+---
+
+## Plan Your Visit
+
+Ready to explore {{ city_name }}? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
