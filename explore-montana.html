@@ -22,13 +22,9 @@
     </script>
 </head>
 <body>
-    <main>
-      <section id="affiliate-banner" class="banner-section">
-        <!-- Expedia Affiliate Banner -->
-        <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
-        <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
-      </section>
-    </main>
+    <div id="site-menu"></div>
+    <div id="site-hero"></div>
+    <div id="site-banner"></div>
     <div id="site-footer"></div>
     <script src="js/script.js"></script>
     <script>
@@ -37,8 +33,10 @@
           .then(response => response.text())
           .then(data => { document.getElementById(id).innerHTML = data; });
       }
+      includeHTML('site-menu', 'includes/header.html');
+      includeHTML('site-hero', 'includes/hero-interior.html');
+      includeHTML('site-banner', 'includes/banner.html');
       includeHTML('site-footer', 'includes/footer.html');
     </script>
-    <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
 </body>
 </html>
