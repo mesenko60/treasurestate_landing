@@ -21,6 +21,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://treasurestate.com/mining-history-of-montana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/planners.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
