@@ -29,7 +29,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 - Always use the provided JavaScript snippet to load includes.
 - Never copy-paste shared sections directly into pages.
 - Follow the template in `how-to-build-town-pages.md` for new town/city pages.
-- All new pages (including special/inside pages like Explore Montana) must include the menu and hero section via the includes system, to maintain consistency with other inside pages.
+- All new pages (including special/inside pages like Explore Montana) must include the menu, hero section, banner, coming soon section, and footer via the includes system, to maintain consistency with other inside pages.
 
 ## 5. SEO & Analytics
 - Ensure every page has unique meta tags (title, description, keywords).
