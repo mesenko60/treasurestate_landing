@@ -8,6 +8,36 @@
     <meta name="description" content="A comprehensive list of Montana's cities and towns. Explore each community in the Treasure State.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modern-style.css">
+    <style>
+      .dimmed-link {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: not-allowed;
+        text-decoration: line-through;
+      }
+      .towns-grid > a:not(.dimmed-link) {
+        color: #1a385a;
+        background: #b3d4fc;
+        border-radius: 6px;
+        padding: 0 14px;
+        margin: 2px 0;
+        box-shadow: 0 2px 8px rgba(26,56,90,0.10);
+        transition: box-shadow 0.2s, background 0.2s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        height: 36px;
+        line-height: 1.2;
+        vertical-align: middle;
+      }
+      .towns-grid > a:not(.dimmed-link):hover,
+      .towns-grid > a:not(.dimmed-link):focus {
+        background: #e3f0ff;
+        box-shadow: 0 4px 12px rgba(26,56,90,0.18);
+        color: #0d223a;
+        text-decoration: underline;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,133 +60,133 @@
             <div class="towns-grid">
                 <!-- Town links inserted here -->
                 <a href="montana-towns/alberton.html">Alberton</a>
-<a href="#">Anaconda</a>
-<a href="#">Bainville</a>
-<a href="#">Baker</a>
-<a href="#">Bearcreek</a>
-<a href="#">Belgrade</a>
-<a href="#">Belt</a>
-<a href="#">Big Sandy</a>
-<a href="#">Big Timber</a>
-<a href="#">Billings</a>
-<a href="#">Boulder</a>
+<a href="#" class="dimmed-link">Anaconda</a>
+<a href="#" class="dimmed-link">Bainville</a>
+<a href="#" class="dimmed-link">Baker</a>
+<a href="#" class="dimmed-link">Bearcreek</a>
+<a href="#" class="dimmed-link">Belgrade</a>
+<a href="#" class="dimmed-link">Belt</a>
+<a href="#" class="dimmed-link">Big Sandy</a>
+<a href="#" class="dimmed-link">Big Timber</a>
+<a href="#" class="dimmed-link">Billings</a>
+<a href="#" class="dimmed-link">Boulder</a>
 <a href="montana-towns/bozeman.html">Bozeman</a>
-<a href="#">Bridger</a>
-<a href="#">Broadus</a>
-<a href="#">Broadview</a>
-<a href="#">Browning</a>
-<a href="#">Butte</a>
-<a href="#">Cascade</a>
-<a href="#">Chester</a>
-<a href="#">Chinook</a>
-<a href="#">Choteau</a>
-<a href="#">Circle</a>
-<a href="#">Clyde Park</a>
-<a href="#">Colstrip</a>
-<a href="#">Columbia Falls</a>
-<a href="#">Columbus</a>
-<a href="#">Conrad</a>
-<a href="#">Culbertson</a>
-<a href="#">Cut Bank</a>
-<a href="#">Darby</a>
-<a href="#">Deer Lodge</a>
-<a href="#">Denton</a>
-<a href="#">Dillon</a>
-<a href="#">Dodson</a>
-<a href="#">Drummond</a>
-<a href="#">Dutton</a>
-<a href="#">East Helena</a>
-<a href="#">Ekalaka</a>
-<a href="#">Ennis</a>
-<a href="#">Eureka</a>
-<a href="#">Fairfield</a>
-<a href="#">Fairview</a>
-<a href="#">Flaxville</a>
-<a href="#">Forsyth</a>
-<a href="#">Fort Benton</a>
-<a href="#">Fort Peck</a>
-<a href="#">Froid</a>
-<a href="#">Fromberg</a>
-<a href="#">Geraldine</a>
-<a href="#">Glasgow</a>
-<a href="#">Glendive</a>
-<a href="#">Grass Range</a>
-<a href="#">Great Falls</a>
-<a href="#">Hamilton</a>
-<a href="#">Hardin</a>
-<a href="#">Harlem</a>
-<a href="#">Harlowton</a>
-<a href="#">Havre</a>
-<a href="#">Helena</a>
-<a href="#">Hingham</a>
-<a href="#">Hobson</a>
-<a href="#">Hot Springs</a>
-<a href="#">Hysham</a>
-<a href="#">Ismay</a>
-<a href="#">Joliet</a>
-<a href="#">Jordan</a>
-<a href="#">Judith Gap</a>
+<a href="#" class="dimmed-link">Bridger</a>
+<a href="#" class="dimmed-link">Broadus</a>
+<a href="#" class="dimmed-link">Broadview</a>
+<a href="#" class="dimmed-link">Browning</a>
+<a href="#" class="dimmed-link">Butte</a>
+<a href="#" class="dimmed-link">Cascade</a>
+<a href="#" class="dimmed-link">Chester</a>
+<a href="#" class="dimmed-link">Chinook</a>
+<a href="#" class="dimmed-link">Choteau</a>
+<a href="#" class="dimmed-link">Circle</a>
+<a href="#" class="dimmed-link">Clyde Park</a>
+<a href="#" class="dimmed-link">Colstrip</a>
+<a href="#" class="dimmed-link">Columbia Falls</a>
+<a href="#" class="dimmed-link">Columbus</a>
+<a href="#" class="dimmed-link">Conrad</a>
+<a href="#" class="dimmed-link">Culbertson</a>
+<a href="#" class="dimmed-link">Cut Bank</a>
+<a href="#" class="dimmed-link">Darby</a>
+<a href="#" class="dimmed-link">Deer Lodge</a>
+<a href="#" class="dimmed-link">Denton</a>
+<a href="#" class="dimmed-link">Dillon</a>
+<a href="#" class="dimmed-link">Dodson</a>
+<a href="#" class="dimmed-link">Drummond</a>
+<a href="#" class="dimmed-link">Dutton</a>
+<a href="#" class="dimmed-link">East Helena</a>
+<a href="#" class="dimmed-link">Ekalaka</a>
+<a href="#" class="dimmed-link">Ennis</a>
+<a href="#" class="dimmed-link">Eureka</a>
+<a href="#" class="dimmed-link">Fairfield</a>
+<a href="#" class="dimmed-link">Fairview</a>
+<a href="#" class="dimmed-link">Flaxville</a>
+<a href="#" class="dimmed-link">Forsyth</a>
+<a href="#" class="dimmed-link">Fort Benton</a>
+<a href="#" class="dimmed-link">Fort Peck</a>
+<a href="#" class="dimmed-link">Froid</a>
+<a href="#" class="dimmed-link">Fromberg</a>
+<a href="#" class="dimmed-link">Geraldine</a>
+<a href="#" class="dimmed-link">Glasgow</a>
+<a href="#" class="dimmed-link">Glendive</a>
+<a href="#" class="dimmed-link">Grass Range</a>
+<a href="#" class="dimmed-link">Great Falls</a>
+<a href="#" class="dimmed-link">Hamilton</a>
+<a href="#" class="dimmed-link">Hardin</a>
+<a href="#" class="dimmed-link">Harlem</a>
+<a href="#" class="dimmed-link">Harlowton</a>
+<a href="#" class="dimmed-link">Havre</a>
+<a href="#" class="dimmed-link">Helena</a>
+<a href="#" class="dimmed-link">Hingham</a>
+<a href="#" class="dimmed-link">Hobson</a>
+<a href="#" class="dimmed-link">Hot Springs</a>
+<a href="#" class="dimmed-link">Hysham</a>
+<a href="#" class="dimmed-link">Ismay</a>
+<a href="#" class="dimmed-link">Joliet</a>
+<a href="#" class="dimmed-link">Jordan</a>
+<a href="#" class="dimmed-link">Judith Gap</a>
 <a href="montana-towns/kalispell.html">Kalispell</a>
-<a href="#">Kevin</a>
-<a href="#">Laurel</a>
-<a href="#">Lavina</a>
-<a href="#">Lewistown</a>
-<a href="#">Libby</a>
-<a href="#">Lima</a>
-<a href="#">Livingston</a>
-<a href="#">Lodge Grass</a>
-<a href="#">Malta</a>
-<a href="#">Manhattan</a>
-<a href="#">Medicine Lake</a>
-<a href="#">Melstone</a>
-<a href="#">Miles City</a>
+<a href="#" class="dimmed-link">Kevin</a>
+<a href="#" class="dimmed-link">Laurel</a>
+<a href="#" class="dimmed-link">Lavina</a>
+<a href="#" class="dimmed-link">Lewistown</a>
+<a href="#" class="dimmed-link">Libby</a>
+<a href="#" class="dimmed-link">Lima</a>
+<a href="#" class="dimmed-link">Livingston</a>
+<a href="#" class="dimmed-link">Lodge Grass</a>
+<a href="#" class="dimmed-link">Malta</a>
+<a href="#" class="dimmed-link">Manhattan</a>
+<a href="#" class="dimmed-link">Medicine Lake</a>
+<a href="#" class="dimmed-link">Melstone</a>
+<a href="#" class="dimmed-link">Miles City</a>
 <a href="montana-towns/missoula.html">Missoula</a>
-<a href="#">Moore</a>
-<a href="#">Nashua</a>
-<a href="#">Neihart</a>
-<a href="#">Opheim</a>
-<a href="#">Outlook</a>
-<a href="#">Philipsburg</a>
-<a href="#">Pinesdale</a>
-<a href="#">Plains</a>
-<a href="#">Plentywood</a>
-<a href="#">Plevna</a>
-<a href="#">Polson</a>
-<a href="#">Poplar</a>
-<a href="#">Red Lodge</a>
-<a href="#">Rexford</a>
-<a href="#">Richey</a>
-<a href="#">Ronan</a>
-<a href="#">Roundup</a>
-<a href="#">Ryegate</a>
-<a href="#">Saco</a>
-<a href="#">Scobey</a>
-<a href="#">Shelby</a>
-<a href="#">Sheridan</a>
-<a href="#">Sidney</a>
-<a href="#">St. Ignatius</a>
-<a href="#">Stanford</a>
-<a href="#">Stevensville</a>
-<a href="#">Sunburst</a>
-<a href="#">Superior</a>
-<a href="#">Terry</a>
-<a href="#">Thompson Falls</a>
-<a href="#">Three Forks</a>
-<a href="#">Townsend</a>
-<a href="#">Troy</a>
-<a href="#">Twin Bridges</a>
-<a href="#">Valier</a>
-<a href="#">Virginia City</a>
-<a href="#">Walkerville</a>
-<a href="#">West Yellowstone</a>
-<a href="#">Westby</a>
-<a href="#">White Sulphur Springs</a>
-<a href="#">Whitefish</a>
-<a href="#">Whitehall</a>
-<a href="#">Wibaux</a>
-<a href="#">Winifred</a>
-<a href="#">Winnett</a>
-<a href="#">Wolf Point</a>
+<a href="#" class="dimmed-link">Moore</a>
+<a href="#" class="dimmed-link">Nashua</a>
+<a href="#" class="dimmed-link">Neihart</a>
+<a href="#" class="dimmed-link">Opheim</a>
+<a href="#" class="dimmed-link">Outlook</a>
+<a href="#" class="dimmed-link">Philipsburg</a>
+<a href="#" class="dimmed-link">Pinesdale</a>
+<a href="#" class="dimmed-link">Plains</a>
+<a href="#" class="dimmed-link">Plentywood</a>
+<a href="#" class="dimmed-link">Plevna</a>
+<a href="#" class="dimmed-link">Polson</a>
+<a href="#" class="dimmed-link">Poplar</a>
+<a href="#" class="dimmed-link">Red Lodge</a>
+<a href="#" class="dimmed-link">Rexford</a>
+<a href="#" class="dimmed-link">Richey</a>
+<a href="#" class="dimmed-link">Ronan</a>
+<a href="#" class="dimmed-link">Roundup</a>
+<a href="#" class="dimmed-link">Ryegate</a>
+<a href="#" class="dimmed-link">Saco</a>
+<a href="#" class="dimmed-link">Scobey</a>
+<a href="#" class="dimmed-link">Shelby</a>
+<a href="#" class="dimmed-link">Sheridan</a>
+<a href="#" class="dimmed-link">Sidney</a>
+<a href="#" class="dimmed-link">St. Ignatius</a>
+<a href="#" class="dimmed-link">Stanford</a>
+<a href="#" class="dimmed-link">Stevensville</a>
+<a href="#" class="dimmed-link">Sunburst</a>
+<a href="#" class="dimmed-link">Superior</a>
+<a href="#" class="dimmed-link">Terry</a>
+<a href="#" class="dimmed-link">Thompson Falls</a>
+<a href="#" class="dimmed-link">Three Forks</a>
+<a href="#" class="dimmed-link">Townsend</a>
+<a href="#" class="dimmed-link">Troy</a>
+<a href="#" class="dimmed-link">Twin Bridges</a>
+<a href="#" class="dimmed-link">Valier</a>
+<a href="#" class="dimmed-link">Virginia City</a>
+<a href="#" class="dimmed-link">Walkerville</a>
+<a href="#" class="dimmed-link">West Yellowstone</a>
+<a href="#" class="dimmed-link">Westby</a>
+<a href="#" class="dimmed-link">White Sulphur Springs</a>
+<a href="#" class="dimmed-link">Whitefish</a>
+<a href="#" class="dimmed-link">Whitehall</a>
+<a href="#" class="dimmed-link">Wibaux</a>
+<a href="#" class="dimmed-link">Winifred</a>
+<a href="#" class="dimmed-link">Winnett</a>
+<a href="#" class="dimmed-link">Wolf Point</a>
             </div>
         </section>
         <section id="affiliate-banner" class="banner-section">
