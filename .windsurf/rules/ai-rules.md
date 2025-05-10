@@ -16,7 +16,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 ## 2. Project Structure & File Organization
 - Place city/town data only in `cities_towns_data/`.
 - Place city/town content only in `cities_towns_content/`.
-- When a new city/town page is created, update the Montana Cities and Towns main page to include a link to it.
+- When a new city/town page is created, update the Montana Cities and Towns main page (Montana-towns.html) and the towns index.html (montana-towns/index.html) to include a link to it.
 - Be aware that navigation menu links (e.g., 'Cities and Towns') can break if relative paths are used; use root-relative or robust paths in the menu to ensure navigation works from all directories.
 - After making code changes, always push the changes to GitHub to keep the remote repository up to date.
 - Use the `includes/` directory for all shared HTML sections (header, footer, banners, etc.).
