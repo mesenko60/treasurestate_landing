@@ -56,6 +56,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://treasurestate.com/montana-towns/butte.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/montana-towns/helena.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
