@@ -31,6 +31,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://treasurestate.com/montana-towns/missoula.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/explore-montana.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
