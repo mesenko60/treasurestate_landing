@@ -1,0 +1,58 @@
+---
+trigger: always_on
+---
+
+# AI Rules for Treasure State Landing Site
+
+These rules are designed for any AI assistant or automation working on the Treasure State Landing codebase. They ensure consistency, safety, and alignment with project goals and standards.
+
+## 1. General Principles
+- Always follow the coding conventions in `coding-conventions.md`.
+- Prefer simple, maintainable solutions.
+- Do not make changes outside the scope of the current task.
+- Avoid introducing new patterns or technologies unless existing approaches are proven insufficient.
+- Always check for and iterate on existing code before creating new code.
+
+## 2. Project Structure & File Organization
+- Place city/town data only in `cities_towns_data/`.
+- Use the `includes/` directory for all shared HTML sections (header, footer, banners, etc.).
+- Store CSS in `css/` and JavaScript in `js/`.
+- Use lowercase, hyphenated filenames for HTML files.
+- Avoid files growing beyond 300–500 lines; refactor as needed.
+
+## 3. Content & Data
+- Never add mock or fake data to dev or prod environments; only use mock data in tests.
+- Always reference `cities_towns_data/` as the source of truth for towns/cities.
+- Do not duplicate code or data; use includes and templates.
+
+## 4. Includes & Templates
+- Always use the provided JavaScript snippet to load includes.
+- Never copy-paste shared sections directly into pages.
+- Follow the template in `how-to-build-town-pages.md` for new town/city pages.
+
+## 5. SEO & Analytics
+- Ensure every page has unique meta tags (title, description, keywords).
+- Include Google Analytics and AdSense/AdWords code as specified.
+- Keep `sitemap.xml` and `robots.txt` updated with site changes.
+- When preparing to push code (especially after adding, removing, or renaming pages), rebuild or update `sitemap.xml` to ensure all site URLs are current.
+- Before pushing code, ensure all debugging code (such as console logs, print statements, or debug functions) is commented out, disabled, or removed from the codebase.
+
+## 6. Safety & Environment
+- Never overwrite the `.env` file without explicit user confirmation.
+- Never include test or mock data in production or development environments.
+- Do not touch files unrelated to the task at hand.
+- Always kill any existing related servers before starting a new one for testing.
+
+## 7. Maintenance & Documentation
+- Update `README.md`, `how-to-build-town-pages.md`, and `coding-conventions.md` as standards or processes change.
+- Add comments to complex or non-obvious code, especially in JavaScript.
+
+## 8. Testing & Quality
+- Write thorough tests for all major functionality.
+- Test changes locally before deployment.
+- Avoid code duplication in both logic and structure.
+- Be aware of and respect different environments (dev, test, prod).
+
+---
+
+**Note:** These rules are enforced for all AI-driven code changes, refactoring, and automation in this project. Update this file as your standards evolve.

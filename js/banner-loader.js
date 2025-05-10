@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const bannerContainers = document.querySelectorAll('.eg-affiliate-banners');
         if (bannerContainers.length === 0) return;
         
-        console.log('Found Expedia banner containers:', bannerContainers.length);
+        // console.log('Found Expedia banner containers:', bannerContainers.length);
         
         // Check if script is already loaded
         if (document.querySelector('script[src*="eg-affiliate-banners.js"]')) {
-            console.log('Expedia banner script already loaded.');
+            // console.log('Expedia banner script already loaded.');
             return;
         }
         
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         script.src = 'https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js';
         script.className = 'eg-affiliate-banners-script';
         script.onload = function() {
-            console.log('Expedia banner script loaded successfully.');
+            // console.log('Expedia banner script loaded successfully.');
         };
         script.onerror = function() {
             console.error('Failed to load Expedia banner script.');
