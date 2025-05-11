@@ -5,20 +5,11 @@
   command = "# no build command needed for static HTML site"
 
 # Redirects and headers
-[[redirects]]
-  from = "/includes/*"
-  to = "/404.html"
-  status = 404
-  force = true
 
+# Pretty URLs
 [[redirects]]
   from = "/*.html"
   to = "/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
   status = 200
 
 # Custom 404 handling
@@ -27,10 +18,11 @@
   to = "/404.html"
   status = 404
 
+# Default catch-all needs to be last
 [[redirects]]
-  from = "/404.html"
-  to = "/404.html"
-  status = 404
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 
 [build.environment]

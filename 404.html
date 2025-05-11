@@ -6,8 +6,8 @@
     <meta name="google-adsense-account" content="ca-pub-8089329941656548">
     <title>Page Not Found - Treasure State</title>
     <meta name="description" content="404 - Page Not Found. The page you are looking for does not exist on Treasure State.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/modern-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,44 +20,62 @@
       gtag('js', new Date());
       gtag('config', 'G-NQ8F9RC7DE');
     </script>
+    <style>
+      /* Minimal styling for 404 page */
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      header {
+        background-color: #3b7a57;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+      .logo {
+        max-width: 200px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #3b7a57;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .button {
+        display: inline-block;
+        background-color: #3b7a57;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #2a5a3f;
+      }
+    </style>
 </head>
 <body>
-    <div id="site-menu"></div>
-    <div id="site-hero"></div>
+    <header>
+        <h2>Treasure State</h2>
+    </header>
     <main>
-      <section id="not-found" class="banner-section">
-        <div class="not-found-banner">
-          <h1>404 - Page Not Found</h1>
-          <p>Sorry, the page you are looking for does not exist.</p>
-          <a href="/" class="button">Return Home</a>
-        </div>
-      </section>
-      <div id="coming-soon"></div>
+        <h1>404 - Page Not Found</h1>
+        <p>Sorry, the page you are looking for does not exist or has been moved.</p>
+        <a href="/" class="button">Return to Homepage</a>
     </main>
-    <div id="site-footer"></div>
-    <script src="js/script.js"></script>
-    <script>
-      function includeHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => { document.getElementById(id).innerHTML = data; });
-      }
-      includeHTML('site-menu', 'includes/header.html');
-      includeHTML('site-hero', 'includes/hero-interior.html');
-      includeHTML('coming-soon', 'includes/coming-soon.html');
-      includeHTML('site-footer', 'includes/footer.html');
-      // Set the hero text after the hero section loads
-      function setHeroText(title, subtitle) {
-        const interval = setInterval(function() {
-          const hero = document.getElementById('site-hero');
-          if (hero && hero.querySelector('h1') && hero.querySelector('p')) {
-            hero.querySelector('h1').textContent = title;
-            hero.querySelector('p').textContent = subtitle;
-            clearInterval(interval);
-          }
-        }, 50);
-      }
-      setHeroText('404 - Page Not Found', 'We couldn\'t find the page you requested.');
-    </script>
 </body>
 </html>
