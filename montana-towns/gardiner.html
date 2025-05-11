@@ -84,10 +84,10 @@
           .then(response => response.text())
           .then(data => { document.getElementById(id).innerHTML = data; });
       }
-      includeHTML('site-menu', 'includes/header.html');
-      includeHTML('site-hero', 'includes/hero-interior.html');
-      includeHTML('coming-soon', 'includes/coming-soon.html');
-      includeHTML('site-footer', 'includes/footer.html');
+      includeHTML('site-menu', '/includes/header.html');
+      includeHTML('site-hero', '/includes/hero-interior.html');
+      includeHTML('coming-soon', '/includes/coming-soon.html');
+      includeHTML('site-footer', '/includes/footer.html');
       // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
       (function() {
         var img = new Image();
