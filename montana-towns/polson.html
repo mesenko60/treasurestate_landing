@@ -93,12 +93,27 @@
       includeHTML('site-hero', '../includes/hero-interior.html');
       includeHTML('coming-soon', '../includes/coming-soon.html');
       includeHTML('site-footer', '../includes/footer.html');
-      setHeroContent({
-        title: 'Polson',
-        subtitle: 'Lakeside Adventure Basecamp',
-        image: '../images/polson-lake.jpg', // Replace with a Polson-specific image if available
-        alt: 'Polson - Flathead Lake View'
-      });
+      // Dynamically set hero image: use polson-lake.jpg if it exists, otherwise use the default hero-image.jpg
+      (function() {
+        var img = new Image();
+        img.onload = function() {
+          setHeroContent({
+            title: 'Polson',
+            subtitle: 'Lakeside Adventure Basecamp',
+            image: '../images/polson-lake.jpg',
+            alt: 'Polson - Flathead Lake View'
+          });
+        };
+        img.onerror = function() {
+          setHeroContent({
+            title: 'Polson',
+            subtitle: 'Lakeside Adventure Basecamp',
+            image: '../images/hero-image.jpg',
+            alt: 'Polson - Flathead Lake View'
+          });
+        };
+        img.src = '../images/polson-lake.jpg';
+      })();
     </script>
     <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
 </body>
