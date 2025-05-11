@@ -17,6 +17,14 @@ These rules are designed for any AI assistant or automation working on the Treas
 - Place city/town data only in `cities_towns_data/`.
 - Place city/town content only in `cities_towns_content/`.
 - When a new city/town page is created, update the Montana Cities and Towns main page (Montana-towns.html) and the towns index.html (montana-towns/index.html) to include a link to it.
+- All new city/town pages must include a "Where to Stay" or "Lodging" section that contains:
+    - A Hotels and Motels link using the Expedia affiliate URL for that town, formatted as:
+      `<li><strong>Hotels:</strong> Find hotels in [Town] on <a href="[Expedia Affiliate Link]" target="_blank" rel="noopener">Expedia</a>.</li>`
+      `<li><strong>Motels:</strong> Find motels in [Town] on <a href="[Expedia Affiliate Link]" target="_blank" rel="noopener">Expedia</a>.</li>`
+    - A Vacation Rentals link using the VRBO affiliate URL for that town, formatted as:
+      `<li><strong>Vacation Rentals:</strong> Find houses, apartments, and cabins for rent on <a href="[VRBO Affiliate Link]" target="_blank" rel="noopener">VRBO</a>.</li>`
+    - All links must open in a new window (use `target="_blank" rel="noopener"`).
+    - The links must be placed in the lodging/accommodations section of the page, following the established pattern in existing town pages (see Kalispell or Bozeman for reference).
 - Be aware that navigation menu links (e.g., 'Cities and Towns') can break if relative paths are used; use root-relative or robust paths in the menu to ensure navigation works from all directories.
 - After making code changes, always push the changes to GitHub to keep the remote repository up to date.
 - Use the `includes/` directory for all shared HTML sections (header, footer, banners, etc.).
@@ -56,6 +64,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 ## 8. Testing & Quality
 - Write thorough tests for all major functionality.
 - Test changes locally before deployment.
+- Before pushing code, always run Puppeteer-based automated browser tests to verify that new or updated pages render and function as expected. Address any issues found before completing the push.
 - Avoid code duplication in both logic and structure.
 - Be aware of and respect different environments (dev, test, prod).
 

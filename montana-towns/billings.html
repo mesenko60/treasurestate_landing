@@ -96,6 +96,41 @@
       includeHTML('site-hero', '../includes/hero-interior.html');
       includeHTML('coming-soon', '../includes/coming-soon.html');
       includeHTML('site-footer', '../includes/footer.html');
+      // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
+      (function() {
+        var img = new Image();
+        var townImg = '../images/towns/billings.jpg';
+        var defaultImg = '../images/hero-image.jpg';
+        img.onload = function() {
+          setHeroContent({
+            title: 'Billings',
+            subtitle: 'A Montana Community',
+            image: townImg,
+            alt: 'Billings - Scenic View'
+          });
+        };
+        img.onerror = function() {
+          setHeroContent({
+            title: 'Billings',
+            subtitle: 'A Montana Community',
+            image: defaultImg,
+            alt: 'Billings - Scenic View'
+          });
+        };
+        img.src = townImg;
+      })();
+    </script>
+    <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+    <script>
+      function includeHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => { document.getElementById(id).innerHTML = data; });
+      }
+      includeHTML('site-menu', '../includes/header.html');
+      includeHTML('site-hero', '../includes/hero-interior.html');
+      includeHTML('coming-soon', '../includes/coming-soon.html');
+      includeHTML('site-footer', '../includes/footer.html');
       setHeroContent({
         title: 'Billings',
         subtitle: 'The Magic City',
