@@ -106,22 +106,24 @@
       // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
       (function() {
         var img = new Image();
-        var townImg = '../images/towns/bigfork.jpg';
+        var townSlug = 'bigfork';
+        var townName = 'Bigfork';
+        var townImg = '../images/towns/' + townSlug + '.jpg';
         var defaultImg = '../images/hero-image.jpg';
         img.onload = function() {
           setHeroContent({
-            title: 'Bigfork',
+            title: townName,
             subtitle: 'A Montana Community',
             image: townImg,
-            alt: 'Bigfork - Scenic View'
+            alt: townName + ' - Scenic View'
           });
         };
         img.onerror = function() {
           setHeroContent({
-            title: 'Bigfork',
+            title: townName,
             subtitle: 'A Montana Community',
             image: defaultImg,
-            alt: 'Bigfork - Scenic View'
+            alt: townName + ' - Scenic View'
           });
         };
         img.src = townImg;

@@ -98,12 +98,31 @@
       includeHTML('site-hero', '../includes/hero-interior.html');
       includeHTML('coming-soon', '../includes/coming-soon.html');
       includeHTML('site-footer', '../includes/footer.html');
-      setHeroContent({
-        title: 'Bozeman',
-        subtitle: 'A Montana Community',
-        image: '../images/hero-image.jpg',
-        alt: 'Bozeman - Scenic View'
-      });
+      // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
+      (function() {
+        var img = new Image();
+        var townSlug = 'bozeman';
+        var townName = 'Bozeman';
+        var townImg = '../images/towns/' + townSlug + '.jpg';
+        var defaultImg = '../images/hero-image.jpg';
+        img.onload = function() {
+          setHeroContent({
+            title: townName,
+            subtitle: 'A Montana Community',
+            image: townImg,
+            alt: townName + ' - Scenic View'
+          });
+        };
+        img.onerror = function() {
+          setHeroContent({
+            title: townName,
+            subtitle: 'A Montana Community',
+            image: defaultImg,
+            alt: townName + ' - Scenic View'
+          });
+        };
+        img.src = townImg;
+      })();
     </script>
 <script></script>
 </body>
