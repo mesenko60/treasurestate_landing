@@ -76,6 +76,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://treasurestate.com/montana-towns/gardiner.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/montana-towns/butte.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -87,6 +92,11 @@
   </url>
   <url>
     <loc>https://treasurestate.com/montana-towns/great-falls.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/montana-towns/gardiner.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
