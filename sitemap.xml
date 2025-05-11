@@ -51,17 +51,27 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://treasurestate.com/montana-towns/missoula.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/montana-towns/polson.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://treasurestate.com/montana-towns/great-falls.html</loc>
+    <loc>https://treasurestate.com/montana-towns/bigfork.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://treasurestate.com/montana-towns/billings.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/montana-towns/great-falls.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
