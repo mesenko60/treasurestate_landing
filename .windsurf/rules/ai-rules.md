@@ -17,6 +17,7 @@ These rules are designed for any AI assistant or automation working on the Treas
 - Place city/town data only in `cities_towns_data/`.
 - Place city/town content only in `cities_towns_content/`.
 - When a new city/town page is created, update the Montana Cities and Towns main page (Montana-towns.html) and the towns index.html (montana-towns/index.html) to include a link to it.
+- Follow the `montana-towns-checklist.md` file for a complete verification of town page standards. This checklist ensures all town pages maintain consistent structure, styling, and functionality.
 - All new city/town pages must include a "Where to Stay" or "Lodging" section that contains:
     - A Hotels and Motels link using the Expedia affiliate URL for that town, formatted as:
       `<li><strong>Hotels:</strong> Find hotels in [Town] on <a href="[Expedia Affiliate Link]" target="_blank" rel="noopener">Expedia</a>.</li>`
