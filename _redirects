@@ -1,0 +1,11 @@
+# Redirect all accesses to includes directory to 404
+/includes/*  /404.html  404!
+
+# Pretty URLs
+/*.html  /:splat  200
+
+# 404 handling
+/404  /404.html  404
+
+# Catch-all last
+/*  /index.html  200
