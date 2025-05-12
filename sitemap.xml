@@ -95,11 +95,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://treasurestate.com/montana-towns/gardiner.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
   <url>
     <loc>https://treasurestate.com/montana-towns/helena.html</loc>
     <changefreq>monthly</changefreq>
@@ -127,6 +123,11 @@
   </url>
   <url>
     <loc>https://treasurestate.com/montana-towns/west-glacier.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/story-of-montana-vigilantes.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
