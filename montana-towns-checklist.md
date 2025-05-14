@@ -1,12 +1,29 @@
-# Montana Town Pages Standardization Checklist
+# Montana Town Page Creation Checklist
 
-This checklist ensures all Montana town pages follow a consistent structure, styling, and functionality. Use this document when creating or updating town pages.
+This checklist ensures all Montana town pages are created consistently and thoroughly. Use this document when creating new town pages or updating existing ones.
 
-## File Structure and Naming
+## 1. Content Preparation
+- [ ] Confirm the new town’s markdown content exists in `cities_towns_content/`.
+- [ ] Review the content for all required sections (Quick Facts, Notable People, Top Things to Do, Local Industry, History & Heritage, Seasonal Activities, Getting There, Where to Stay).
 
-- [ ] File is saved in the `montana-towns/` directory
-- [ ] Filename is the town name in lowercase with hyphens replacing spaces (e.g., `west-glacier.html`)
+## 2. Page Creation
+- [ ] Create a new file in `montana-towns/` named with lowercase, hyphenated format (e.g., `whitefish.html`).
+- [ ] Use the structure from `city-town-template.html` and reference Kalispell/Bozeman for section order and formatting.
+- [ ] Add unique meta tags: title, description, keywords.
+- [ ] Include the following shared sections using the JS snippet:
+  - Header (`includes/header.html`)
+  - Hero (`includes/hero-interior.html`)
+  - Banner (Expedia affiliate banner and script, placed directly in the page)
+  - Coming Soon (`includes/coming-soon.html`)
+  - Footer (`includes/footer.html`)
 
+## 3. Content Population
+- [ ] Populate all sections from the markdown content, following the template’s order.
+- [ ] Ensure all facts, history, and local details are accurate and up to date.
+- [ ] Add a unique “Where to Stay” section:
+  - [ ] Add **Hotels** and **Motels** links using the provided Expedia affiliate URL for the town.
+  - [ ] Add **Vacation Rentals** link using the provided VRBO affiliate URL for the town.
+  - [ ] All affiliate links must open in a new tab and use `rel="noopener"`.
 ## HTML Structure
 
 - [ ] DOCTYPE and HTML5 structure is present

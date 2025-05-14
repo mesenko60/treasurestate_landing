@@ -4,6 +4,38 @@ trigger: always_on
 
 # AI Rules for Treasure State Landing Site
 
+---
+
+## 🚩 Automated Town Page Creation: "Make a Town" Workflow
+
+To create a new Montana town page, simply prompt:
+
+> **Make a Town**
+
+### The required steps are:
+
+1. **Check for New Content**  
+   Look in the `cities_towns_content/` directory for new markdown content files.
+2. **Page Existence Check**  
+   If a town page does not exist in `montana-towns/`, create it.
+3. **Follow the Checklist Step-by-Step**  
+   - At **each step**, the AI must display the full checklist, marking off completed items in real time.
+   - As each task is finished, check it off in the displayed checklist.
+   - Once all checklist items are complete, the AI must uncheck all items so the checklist is ready for the next town page creation.
+   - The checklist is found in [`montana-towns-checklist.md`](../montana-towns-checklist.md) and covers all required sections, affiliate links, navigation, sitemap, meta tags, and QA.
+   - Never add mock data to dev or prod.
+   - Never duplicate code or shared sections—always use includes.
+   - Always update the navigation and sitemap.
+   - Use the includes system for all shared HTML.
+
+**Reference:**
+- The full, detailed checklist is in [`montana-towns-checklist.md`](../montana-towns-checklist.md). Always follow it for new or updated town pages.
+
+---
+
+These rules ensure every AI assistant or automation working on the Treasure State Landing codebase produces consistent, safe, and standards-aligned results.
+
+
 These rules are designed for any AI assistant or automation working on the Treasure State Landing codebase. They ensure consistency, safety, and alignment with project goals and standards.
 
 ## 1. General Principles
