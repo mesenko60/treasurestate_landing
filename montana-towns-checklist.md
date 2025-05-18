@@ -98,6 +98,8 @@ This checklist ensures all Montana town pages are created consistently and thoro
 - [ ] Description meta tag is present and descriptive
 - [ ] Proper heading hierarchy (h2, h3)
 - [ ] Image alt text includes town name
+- [ ] Add a new entry to sitemap.xml for the town page.
+- [ ] Update `<lastmod>` in sitemap.xml to today's date for all `<url>` entries. **Note: This must be done every time the sitemap is changed or a new town is added.**
 
 ## Affiliate Links
 
