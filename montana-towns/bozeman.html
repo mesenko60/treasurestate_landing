@@ -101,11 +101,64 @@
 </ul>
 <!-- End Bozeman content -->
 </section>
-<section class="banner-section" id="affiliate-banner">
 <!-- Expedia Affiliate Banner -->
-<div class="eg-affiliate-banners" data-camref="1011l52GG6" data-image="mountains" data-layout="leaderboard" data-link="stays" data-message="hotel-treehouse-find-perfect-place-stay" data-network="pz" data-program="us-expedia" data-pubref=""></div>
-
+<section id="affiliate-banner" class="banner-section" style="min-height: 100px; margin: 20px 0; text-align: center; background: #f8f9fa; padding: 15px 0 10px 0; width: 100%;">
+    <div style="width: 100%; max-width: 1200px; margin: 0 auto; text-align: center;">
+        <iframe 
+            class="eg-affiliate-banners-frame" 
+            src="https://affiliates.expediagroup.com/products/banners?program=us-expedia&layout=leaderboard&image=mountains&message=hotel-treehouse-find-perfect-place-stay&link=stays&network=pz&camref=1011l52GG6" 
+            style="width: 728px; height: 90px; margin: 0 auto; border: none; display: block;"
+            title="Expedia Hotel Deals">
+        </iframe>
+    </div>
 </section>
+
+<style>
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    /* Banner container styling */
+    #affiliate-banner {
+        max-width: 100%;
+        margin: 0 auto 20px;
+        padding: 0;
+        overflow: hidden !important;
+        text-align: center;
+        height: 100px !important; /* Strict height */
+        min-height: 100px !important;
+        max-height: 100px !important;
+        position: relative;
+        background: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Target all possible banner elements that might be affecting height */
+    #affiliate-banner > div,
+    .eg-affiliate-banners,
+    .eg-affiliate-banners iframe,
+    #affiliate-banner > div > div {
+        height: 100% !important;
+        max-height: 100% !important;
+        width: auto !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        overflow: hidden !important;
+    }
+    
+    /* Ensure the banner is responsive */
+    @media (max-width: 768px) {
+        #affiliate-banner {
+            height: 100px !important;
+            margin-bottom: 15px;
+        }
+    }
+</style>
 <div id="coming-soon"></div>
 </main>
 <div id="site-footer"></div>
@@ -113,6 +166,8 @@
   
   
   <!-- Navigation Script -->
+  
+
   <script>
     // Include HTML function
     function includeHTML(id, file) {

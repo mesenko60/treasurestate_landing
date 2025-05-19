@@ -1,5 +1,5 @@
-# Explore {{ city_name }}, Montana: {{ headline_descriptor }}
-
+# {{ city_name }}, Montana: {{ headline_descriptor }}
+{{slogan}}
 {{ intro_paragraph }}
 
 ---
