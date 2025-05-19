@@ -69,6 +69,18 @@
     </style>
 </head>
 <body>
+
+<div id="site-menu"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Page Not Found - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Page Not Found</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
     <header>
         <h2>Treasure State</h2>
     </header>
@@ -77,5 +89,53 @@
         <p>Sorry, the page you are looking for does not exist or has been moved.</p>
         <a href="/" class="button">Return to Homepage</a>
     </main>
+  
+  
+  
+  
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
 </body>
 </html>

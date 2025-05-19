@@ -22,8 +22,21 @@
     </script>
 </head>
 <body>
-    <div id="site-menu"></div>
-    <div id="site-hero"></div>
+
+<div id="site-menu"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Explore Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Explore Montana</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+    
+  
+  
     <main>
       <!-- Expedia Affiliate Banner -->
       <section id="affiliate-banner" class="banner-section">
@@ -58,5 +71,79 @@
       setHeroText('Explore Montana', 'Discover upcoming features and adventures');
     </script>
     </script>
+  <script>
+      // Set up the hero section
+      function setupHero() {
+        const options = {
+          title: document.title.split(' - ')[0],
+          subtitle: 'The Treasure State',
+          image: 'images/hero-image.jpg',
+          alt: 'Scenic Montana Landscape - The Treasure State'
+        };
+        
+        // Set default values based on page
+        if (document.body.classList.contains('town-page')) {
+          options.subtitle = 'A Montana Community';
+          options.image = 'images/towns/' + window.location.pathname.split('/').pop().replace('.html', '') + '.jpg';
+          options.alt = options.title + ' - Scenic View';
+        }
+        
+        // Set hero content
+        setHeroContent(options).then(() => {
+          console.log('Hero content updated');
+        });
+      }
+      
+      // Initialize the hero when the page loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupHero);
+      } else {
+        setupHero();
+      }
+  </script>
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
 </body>
 </html>

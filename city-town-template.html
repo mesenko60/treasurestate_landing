@@ -22,19 +22,31 @@
     </script>
 </head>
 <body>
-    <div id="site-menu"></div>
-    <div id="site-hero"></div>
+
+<div id="site-menu"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="{{TOWN_NAME}} - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>{{TOWN_NAME}}</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+    
+  
+  
     <main>
       <section class="content-section">
         <!-- Begin {{TOWN_NAME}} content -->
-        <h2>{{TOWN_NAME}}, Montana</h2>
         <p><strong>History:</strong> Brief history of {{TOWN_NAME}} goes here.</p>
         <p><strong>Population:</strong> XXXX</p>
         <p><strong>Interesting Facts:</strong> Add facts about the town here.</p>
         <!-- Add more town-specific content, images, galleries, or references below -->
-        <!-- <img src="images/towns/{{TOWN_SLUG}}.jpg" alt="{{TOWN_NAME}} Montana"> -->
+        <!-- <img src="images/towns/default-town.jpg" alt="{{TOWN_NAME}} Montana"> -->
         
-        <h3>Best {{TOWN_NAME}} Hotels & Lodging Guide (2025)</h3>
+        <h2>Best {{TOWN_NAME}} Hotels & Lodging Guide (2025)</h2>
         <ul>
           <li><strong>Hotels:</strong> Find hotels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.example" target="_blank" rel="noopener">Expedia</a>.</li>
           <li><strong>Motels:</strong> Find motels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.example" target="_blank" rel="noopener">Expedia</a>.</li>
@@ -60,36 +72,66 @@
           .then(response => response.text())
           .then(data => { document.getElementById(id).innerHTML = data; });
       }
+      // Include navigation and other common elements
       includeHTML('site-menu', 'includes/header.html');
-      includeHTML('site-hero', 'includes/hero-interior.html');
       includeHTML('coming-soon', 'includes/coming-soon.html');
       includeHTML('site-footer', 'includes/footer.html');
-      // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
-      (function() {
-        var img = new Image();
-        var townSlug = '{{TOWN_SLUG}}';
-        var townName = '{{TOWN_NAME}}';
-        var townImg = 'images/towns/' + townSlug + '.jpg';
-        var defaultImg = 'images/hero-image.jpg';
-        img.onload = function() {
-          setHeroContent({
-            title: townName,
-            subtitle: 'A Montana Community',
-            image: townImg,
-            alt: townName + ' - Scenic View'
-          });
-        };
-        img.onerror = function() {
-          setHeroContent({
-            title: townName,
-            subtitle: 'A Montana Community',
-            image: defaultImg,
-            alt: townName + ' - Scenic View'
-          });
-        };
-        img.src = townImg;
-      })();
+      
+      // Set hero content
+      const townName = '{{TOWN_NAME}}';
+      const img = document.querySelector('.hero-image');
+      if (img) {
+        // Set the alt text to include the town name
+        img.alt = `${townName} - Scenic View`;
+        // Set the title in the hero section
+        const h1 = document.querySelector('.hero-text h1');
+        if (h1) h1.textContent = townName;
+      }
     </script>
     <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
 </body>
 </html>

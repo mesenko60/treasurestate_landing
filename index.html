@@ -96,5 +96,35 @@
       includeHTML('coming-soon-include', 'includes/coming-soon.html');
       includeHTML('site-footer', 'includes/footer.html');
     </script>
+  <script>
+      // Set up the hero section
+      function setupHero() {
+        const options = {
+          title: document.title.split(' - ')[0],
+          subtitle: 'The Treasure State',
+          image: 'images/hero-image.jpg',
+          alt: 'Scenic Montana Landscape - The Treasure State'
+        };
+        
+        // Set default values based on page
+        if (document.body.classList.contains('town-page')) {
+          options.subtitle = 'A Montana Community';
+          options.image = 'images/towns/' + window.location.pathname.split('/').pop().replace('.html', '') + '.jpg';
+          options.alt = options.title + ' - Scenic View';
+        }
+        
+        // Set hero content
+        setHeroContent(options).then(() => {
+          console.log('Hero content updated');
+        });
+      }
+      
+      // Initialize the hero when the page loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupHero);
+      } else {
+        setupHero();
+      }
+  </script>
 </body>
 </html>

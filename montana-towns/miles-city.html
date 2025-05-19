@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-8089329941656548">
@@ -12,9 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548" crossorigin="anonymous"></script>
+  
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8F9RC7DE"></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -23,12 +24,26 @@
   </script>
 </head>
 <body>
-  <div id="site-menu"></div>
-  <div id="site-hero"></div>
+
+<div id="site-menu"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Miles City, Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Miles City, Montana</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+  
+  
+  
+  
+  
   <main>
     <section class="content-section">
-      <h2>Miles City, Montana</h2>
-<h3>Quick Facts</h3>
+      <h1>Quick Facts</h1>
       <ul>
         <li><strong>Population:</strong> 8,412</li>
         <li><strong>County:</strong> Custer County</li>
@@ -38,7 +53,7 @@
         <li><strong>Nearby Landmarks:</strong> Fort Keogh Livestock and Range Research Laboratory, Pirogue Island State Park, Spotted Eagle Recreation Area, Tongue River.</li>
         <li><strong>Fun Fact:</strong> Once the largest horse market in the world, especially during World War I when Fort Keogh served as a remount station.</li>
       </ul>
-      <h2>History & Heritage</h2>
+      <h1>History & Heritage</h1>
       <p>Founded in 1876 at the confluence of the Tongue and Yellowstone Rivers, Miles City quickly became a vital outpost in the American West. Its establishment was a direct result of the Battle of the Little Bighorn, leading to the founding of Fort Keogh to support military operations and protect settlers. The town, named after Colonel Nelson A. Miles, thrived as a service center for soldiers, buffalo hunters, and cowboys. The arrival of the Northern Pacific Railroad in 1881 cemented its role as a major cattle shipping hub, attracting herds from as far as Texas and making it a legendary Western town. Throughout its history, Miles City has embraced its frontier spirit, evolving from a rugged outpost to a proud community that cherishes its rich heritage, evident in its historic Main Street and the stories preserved at the Range Riders Museum.</p>
       <h2>Things to Do</h2>
       <ul>
@@ -53,7 +68,7 @@
         <li><strong>Fall/Winter:</strong> Hunting in the surrounding plains and badlands (check local regulations), enjoying the crisp air for hikes, visiting indoor attractions like the Range Riders Museum and WaterWorks Art Museum, and experiencing local holiday events.</li>
         <li><strong>Annual Events:</strong> The world-renowned Miles City Bucking Horse Sale (held annually in May), the Eastern Montana Fair, and various community events and festivals throughout the year.</li>
       </ul>
-      <h3>Best Miles City Hotels & Lodging Guide (2025)</h3>
+      <h2>Best Miles City Hotels & Lodging Guide (2025)</h2>
       <ul>
         <li><strong>Hotels:</strong> Find hotels in Miles City on <a href="https://expedia.com/affiliates/hotel-search-miles-city.sN1aCaW" target="_blank" rel="noopener">Expedia</a>.</li>
         <li><strong>Motels:</strong> Find motels in Miles City on <a href="https://expedia.com/affiliates/hotel-search-miles-city.sN1aCaW" target="_blank" rel="noopener">Expedia</a>.</li>
@@ -64,47 +79,104 @@
     <section class="banner-section" id="affiliate-banner">
       <!-- Expedia Affiliate Banner -->
       <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
-      <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+      
     </section>
     <div id="coming-soon"></div>
   </main>
   <div id="site-footer"></div>
-  <script src="../js/script.js"></script>
+  
   <script>
     function includeHTML(id, file) {
       fetch(file)
         .then(response => response.text())
         .then(data => { document.getElementById(id).innerHTML = data; });
     }
-    includeHTML('site-menu', '../includes/header.html');
-    includeHTML('site-hero', '../includes/hero-interior.html');
-    includeHTML('coming-soon', '../includes/coming-soon.html');
-    includeHTML('site-footer', '../includes/footer.html');
+    , '../includes/footer.html');
     // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
-    (function() {
-      var img = new Image();
-      var townSlug = 'miles-city';
-      var townName = 'Miles City';
-      var townImg = '../images/towns/' + townSlug + '.jpg';
-      var defaultImg = '../images/hero-image.jpg';
-      img.onload = function() {
-        setHeroContent({
-          title: townName,
-          subtitle: "Home of the Bucking Horse Sale and Montana's Horse Capital",
-          image: townImg,
-          alt: townName + ' - Scenic View'
+      // Wait for the hero section to be loaded before setting content
+      function initializeHero() {
+        var img = new Image();
+        var townSlug = 'miles-city';
+        var townName = 'Miles City, Montana';
+        var townImg = '../images/towns/' + townSlug + '.jpg';
+        var defaultImg = '../images/hero-image.jpg';
+        
+        img.onload = function() {
+          // Ensure the hero section exists
+          waitForElement('#site-hero .hero-section').then(function() {
+            setHeroContent({
+              title: townName,
+              subtitle: 'A Montana Community',
+              image: townImg,
+              alt: townName + ' - Scenic View'
+            });
+          });
+        };
+        
+        img.onerror = function() {
+          waitForElement('#site-hero .hero-section').then(function() {
+            setHeroContent({
+              title: townName,
+              subtitle: 'A Montana Community',
+              image: defaultImg,
+              alt: townName + ' - Scenic View'
+            });
+          });
+        };
+        
+        img.src = townImg;
+      }
+      
+      // Run after the page loads
+      if (document.readyState === 'complete') {
+        initializeHero();
+      } else {
+        window.addEventListener('load', initializeHero);
+      }
+  
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
         });
-      };
-      img.onerror = function() {
-        setHeroContent({
-          title: townName,
-          subtitle: "Home of the Bucking Horse Sale and Montana's Horse Capital",
-          image: defaultImg,
-          alt: townName + ' - Scenic View'
-        });
-      };
-      img.src = townImg;
-    })();
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
   </script>
 </body>
 </html>

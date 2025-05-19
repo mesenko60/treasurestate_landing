@@ -12,11 +12,18 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548" crossorigin="anonymous"></script>
 
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NQ8F9RC7DE"></script>
+
 <script>
+      function includeHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => { 
+            const el = document.getElementById(id);
+            if (el) el.innerHTML = data; 
+          });
+      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -24,21 +31,29 @@
     </script>
 </head>
 <body>
+
 <div id="site-menu"></div>
-<div id="site-hero"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Gardiner, Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Gardiner, Montana</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+
+  
+  
+  
+  
 <main>
 <section class="content-section">
 <!-- Begin Gardiner content -->
-<h2>Gardiner, Montana</h2>
-<h3>Quick Facts</h3><ul><li><strong>Population:</strong> 791 (2020 Census)</li><li><strong>County:</strong> Park County</li><li><strong>Founded:</strong> 1880</li><li><strong>Elevation:</strong> 5,259 ft</li><li><strong>Known For:</strong> The original northern entrance to Yellowstone National Park, the historic Roosevelt Arch, abundant wildlife, and year-round access to Yellowstone's Northern Range.</li><li><strong>Nearby Landmarks:</strong> Yellowstone National Park, Roosevelt Arch, Mammoth Hot Springs, Absaroka-Beartooth Wilderness, Gallatin National Forest.</li><li><strong>Fun Fact:</strong> Gardiner's Park Street runs along Yellowstone's northern boundary—step off the sidewalk and you're in the park!</li></ul>
+<h1>Quick Facts</h1><ul><li><strong>Population:</strong> 791 (2020 Census)</li><li><strong>County:</strong> Park County</li><li><strong>Founded:</strong> 1880</li><li><strong>Elevation:</strong> 5,259 ft</li><li><strong>Known For:</strong> The original northern entrance to Yellowstone National Park, the historic Roosevelt Arch, abundant wildlife, and year-round access to Yellowstone's Northern Range.</li><li><strong>Nearby Landmarks:</strong> Yellowstone National Park, Roosevelt Arch, Mammoth Hot Springs, Absaroka-Beartooth Wilderness, Gallatin National Forest.</li><li><strong>Fun Fact:</strong> Gardiner's Park Street runs along Yellowstone's northern boundary—step off the sidewalk and you're in the park!</li></ul>
 
-
-
-
-
-
-
-<h3>Top Things to Do in Gardiner</h3>
+<h1>Top Things to Do in Gardiner</h1>
 <ul>
 <li><strong>Explore Yellowstone's Northern Range:</strong> Year-round wildlife viewing, including bison, elk, wolves, and bears.</li>
 <li><strong>Visit the Historic Roosevelt Arch:</strong> Iconic stone archway dedicated in 1903, marking the original grand entrance to Yellowstone.</li>
@@ -46,20 +61,20 @@
 <li><strong>Soak in Natural Hot Springs:</strong> Relax in Yellowstone Hot Springs or Chico Hot Springs, surrounded by mountain views.</li>
 </ul>
 
-<h3>Local Industry &amp; Economy</h3>
+<h2>Local Industry &amp; Economy</h2>
 <p>Tourism is the lifeblood of Gardiner, with the town serving as a gateway for visitors to Yellowstone National Park. Outfitters, guides, lodging, and restaurants cater to park-goers, nature enthusiasts, and adventure seekers. The community also supports local ranching and small businesses.</p>
 
-<h3>Seasonal Activities &amp; Local Events</h3>
+<h2>Seasonal Activities &amp; Local Events</h2>
 <ul>
 <li><strong>Spring/Summer:</strong> Whitewater rafting, hiking, fly-fishing, wildlife viewing, and local festivals.</li>
 <li><strong>Fall/Winter:</strong> Elk rut viewing, wolf watching in Lamar Valley, cross-country skiing, snowshoeing, and snowmobile tours into Yellowstone.</li>
 <li><strong>Annual Events:</strong> Seasonal celebrations, Fourth of July festivities, and community events. Check the Gardiner Chamber of Commerce for current schedules.</li>
 </ul>
 
-<h3>Getting There &amp; Nearby Destinations</h3>
+<h2>Getting There &amp; Nearby Destinations</h2>
 <p>Located on US Highway 89, Gardiner is about 55 miles south of Livingston, MT, and is the only Yellowstone entrance open year-round to wheeled vehicles. Nearby towns include Livingston and Bozeman. Paradise Valley offers scenic drives and outdoor recreation.</p>
 
-<h3>Best Gardiner Hotels & Lodging Guide (2025)</h3>
+<h2>Best Gardiner Hotels & Lodging Guide (2025)</h2>
 <ul>
 <li><strong>Hotels:</strong> Find hotels in Gardiner on <a href="https://expedia.com/affiliates/hotel-search-gardiner.9x6UxR4" rel="noopener" target="_blank">Expedia</a>.</li>
 <li><strong>Motels:</strong> Find motels in Gardiner on <a href="https://expedia.com/affiliates/hotel-search-gardiner.9x6UxR4" rel="noopener" target="_blank">Expedia</a>.</li>
@@ -67,55 +82,63 @@
 </ul>
 <p>Book early during peak season for the best selection.</p>
 
-<h3>Plan Your Visit</h3>
+<h2>Plan Your Visit</h2>
 <p>Ready to explore Gardiner? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.</p>
 <!-- End Gardiner content -->
 </section>
 <section class="banner-section" id="affiliate-banner">
 <!-- Expedia Affiliate Banner (required markup and script for banner) -->
 <div class="eg-affiliate-banners" data-camref="1011l52GG6" data-image="mountains" data-layout="leaderboard" data-link="stays" data-message="hotel-treehouse-find-perfect-place-stay" data-network="pz" data-program="us-expedia" data-pubref=""></div>
-<script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+
 </section>
 <div id="coming-soon"></div>
 </main>
 <div id="site-footer"></div>
-<script src="../js/script.js"></script>
-<script>
-      function includeHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => { document.getElementById(id).innerHTML = data; });
+
+  
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
       }
-      includeHTML('site-menu', '/includes/header.html');
-      includeHTML('site-hero', '/includes/hero-interior.html');
-      includeHTML('coming-soon', '/includes/coming-soon.html');
-      includeHTML('site-footer', '/includes/footer.html');
-      // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
-      (function() {
-        var img = new Image();
-        var townSlug = 'gardiner';
-        var townName = 'Gardiner, Montana';
-        var townImg = '/images/towns/' + townSlug + '.jpg';
-        var defaultImg = '/images/hero-image.jpg';
-        img.onload = function() {
-          setHeroContent({
-            title: townName,
-            subtitle: "Yellowstone's Wild Frontier",
-            image: townImg,
-            alt: townName + ' - Scenic View'
-          });
-        };
-        img.onerror = function() {
-          setHeroContent({
-            title: townName,
-            subtitle: "Yellowstone's Wild Frontier",
-            image: defaultImg,
-            alt: townName + ' - Scenic View'
-          });
-        };
-        img.src = townImg;
-      })();
-    </script>
-<script></script>
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
 </body>
 </html>

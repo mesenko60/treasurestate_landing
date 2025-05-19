@@ -12,10 +12,18 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548" crossorigin="anonymous"></script>
+
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NQ8F9RC7DE"></script>
+
 <script>
+      function includeHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => { 
+            const el = document.getElementById(id);
+            if (el) el.innerHTML = data; 
+          });
+      }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -23,13 +31,27 @@
     </script>
 </head>
 <body>
+
 <div id="site-menu"></div>
-<div id="site-hero"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Billings, Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Billings, Montana</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+
+  
+  
+  
+  
 <main>
 <section class="content-section">
 <!-- Begin Billings content -->
-<h2>Billings, Montana</h2>
-<h3>Quick Facts</h3>
+<h1>Quick Facts</h1>
 <ul>
 <li><strong>Population:</strong> 117,116 (2020 census)</li>
 <li><strong>County:</strong> Yellowstone County</li>
@@ -39,36 +61,36 @@
 <li><strong>Nearby Landmarks:</strong> Pompey's Pillar National Monument, Pictograph Cave State Park, Little Bighorn Battlefield National Monument.</li>
 <li><strong>Fun Fact:</strong> Billings was nicknamed the "Magic City" because of its rapid growth from its founding as a railroad town in March 1882.</li>
 </ul>
-<h3>Notable People &amp; Pop Culture</h3>
+<h1>Notable People &amp; Pop Culture</h1>
 <ul>
 <li><strong>Brent Musburger:</strong> Renowned sportscaster for CBS, ABC, and ESPN.</li>
 <li><strong>Jeff Kober:</strong> Actor known for TV and film roles including "China Beach" and "Yellowstone".</li>
 <li><strong>Yellowstone (TV Series):</strong> While not filmed exclusively in Billings, the series is set in Montana and often references the city and region.</li>
 </ul>
-<h3>Top Things to Do in Billings</h3>
+<h2>Top Things to Do in Billings</h2>
 <ul>
 <li><strong>The Rimrocks:</strong> Hike or bike along iconic sandstone cliffs with panoramic city views.</li>
 <li><strong>ZooMontana:</strong> Explore a 70-acre wildlife park featuring animals native to Montana and the Rockies.</li>
 <li><strong>Pictograph Cave State Park:</strong> Discover ancient rock paintings and archaeological sites in three caves.</li>
 <li><strong>Yellowstone Art Museum:</strong> See contemporary and historic art from the Rocky Mountain region and beyond.</li>
 </ul>
-<h3>Local Industry &amp; Economy</h3>
+<h2>Local Industry &amp; Economy</h2>
 <p>Billings is a regional hub for healthcare, energy, agriculture, and transportation. The city’s economy is anchored by major hospitals, oil refineries, and a strong logistics sector, making it a commercial center for eastern Montana and northern Wyoming.</p>
-<h3>History &amp; Heritage</h3>
+<h2>History &amp; Heritage</h2>
 <p>Founded as a railroad town in 1882, Billings quickly earned the nickname "Magic City" for its rapid growth. The area’s history stretches back to ancient times, with evidence of Native American habitation at sites like Pictograph Cave. Today, Billings blends its frontier past with modern amenities and a vibrant arts scene.</p>
-<h3>Seasonal Activities &amp; Local Events</h3>
+<h2>Seasonal Activities &amp; Local Events</h2>
 <ul>
 <li><strong>Spring/Summer:</strong> Hiking, biking the Rimrocks, fishing the Yellowstone River, farmers markets, and outdoor festivals.</li>
 <li><strong>Fall/Winter:</strong> Scenic drives, Beartooth Highway, skiing, snowboarding, and holiday lights.</li>
 <li><strong>Annual Events:</strong> MontanaFair, Strawberry Festival, art walks, parades, and local college sports.</li>
 </ul>
-<h3>Getting There &amp; Nearby Destinations</h3>
+<h2>Getting There &amp; Nearby Destinations</h2>
 <ul>
 <li><strong>By Air:</strong> Billings Logan International Airport (BIL) offers direct flights to major cities year-round.</li>
 <li><strong>By Road:</strong> At the junction of I-90 and I-94, Billings is easily accessible by car.</li>
 <li><strong>Nearby:</strong> Yellowstone National Park, Beartooth Highway, Pompey's Pillar, Little Bighorn Battlefield, Red Lodge, and more.</li>
 </ul>
-<h3>Best Billings Hotels & Lodging Guide (2025)</h3>
+<h2>Best Billings Hotels & Lodging Guide (2025)</h2>
 <ul>
 <li><strong>Hotels:</strong> Find hotels in Billings on <a href="https://expedia.com/affiliates/hotel-search-billings.KM3nHHb" rel="noopener" target="_blank">Expedia</a>.</li>
 <li><strong>Motels:</strong> Find motels in Billings on <a href="https://expedia.com/affiliates/hotel-search-billings.KM3nHHb" rel="noopener" target="_blank">Expedia</a>.</li>
@@ -81,64 +103,56 @@
 <section class="banner-section" id="affiliate-banner">
 <!-- Expedia Affiliate Banner -->
 <div class="eg-affiliate-banners" data-camref="1011l52GG6" data-image="mountains" data-layout="leaderboard" data-link="stays" data-message="hotel-treehouse-find-perfect-place-stay" data-network="pz" data-program="us-expedia" data-pubref=""></div>
-<script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+
 </section>
 <div id="coming-soon"></div>
 </main>
 <div id="site-footer"></div>
-<script src="../js/script.js"></script>
-<script>
-      function includeHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => { document.getElementById(id).innerHTML = data; });
+
+  
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
       }
-      includeHTML('site-menu', '../includes/header.html');
-      includeHTML('site-hero', '../includes/hero-interior.html');
-      includeHTML('coming-soon', '../includes/coming-soon.html');
-      includeHTML('site-footer', '../includes/footer.html');
-      // Dynamically set hero image: use town-specific image if it exists, otherwise use the default hero-image.jpg
-      (function() {
-        var img = new Image();
-        var townImg = '../images/towns/billings.jpg';
-        var defaultImg = '../images/hero-image.jpg';
-        img.onload = function() {
-          setHeroContent({
-            title: 'Billings',
-            subtitle: 'A Montana Community',
-            image: townImg,
-            alt: 'Billings - Scenic View'
-          });
-        };
-        img.onerror = function() {
-          setHeroContent({
-            title: 'Billings',
-            subtitle: 'A Montana Community',
-            image: defaultImg,
-            alt: 'Billings - Scenic View'
-          });
-        };
-        img.src = townImg;
-      })();
-    </script>
-<script></script>
-<script>
-      function includeHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => { document.getElementById(id).innerHTML = data; });
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
       }
-      includeHTML('site-menu', '../includes/header.html');
-      includeHTML('site-hero', '../includes/hero-interior.html');
-      includeHTML('coming-soon', '../includes/coming-soon.html');
-      includeHTML('site-footer', '../includes/footer.html');
-      setHeroContent({
-        title: 'Billings',
-        subtitle: 'The Magic City',
-        image: '../images/hero-image.jpg',
-        alt: 'Billings - City View'
-      });
-    </script>
-<script></script>
+    });
+  </script>
 </body>
 </html>

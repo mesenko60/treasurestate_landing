@@ -56,15 +56,51 @@ function runScriptsInElement(id) {
 
 // Set hero content after include loads
 function setHeroContent(options) {
-    waitForElement('#site-hero header').then(header => {
-        const h1 = header.querySelector('h1');
-        const p = header.querySelector('p');
-        const img = header.querySelector('img');
-        if (h1 && options.title) h1.textContent = options.title;
-        if (p && options.subtitle) p.textContent = options.subtitle;
-        if (img && options.image) img.src = options.image;
-        if (img && options.alt) img.alt = options.alt;
+    return new Promise((resolve) => {
+        const hero = document.querySelector('#site-hero .hero-section');
+        if (hero) {
+            updateHeroContent(hero, options);
+            resolve();
+        } else {
+            waitForElement('#site-hero .hero-section').then(hero => {
+                updateHeroContent(hero, options);
+                resolve();
+            }).catch(() => {
+                console.warn('Hero section not found after timeout');
+                resolve();
+            });
+        }
     });
+}
+
+// Helper function to update hero content
+function updateHeroContent(hero, options) {
+    if (!hero) return;
+    
+    const h1 = hero.querySelector('h1');
+    const p = hero.querySelector('p');
+    const img = hero.querySelector('img');
+    
+    // Only update if the element exists and the option is provided
+    if (h1 && options.title) h1.textContent = options.title;
+    if (p && options.subtitle) p.textContent = options.subtitle;
+    
+    // For the image, we'll use a new Image() to preload it
+    if (img && (options.image || options.alt)) {
+        // If we have a new image to load, preload it first
+        if (options.image) {
+            const newImg = new Image();
+            newImg.onload = function() {
+                // Only update the src once the image is loaded
+                img.src = options.image;
+                if (options.alt) img.alt = options.alt;
+            };
+            newImg.src = options.image;
+        } else if (options.alt) {
+            // If only the alt text is being updated
+            img.alt = options.alt;
+        }
+    }
 }
 
 
