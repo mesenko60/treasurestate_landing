@@ -163,7 +163,13 @@
   </url>
   <url>
     <loc>https://treasurestate.com/montana-towns/thompson-falls.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/montana-towns/virginia-city.html</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
