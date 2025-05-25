@@ -1,173 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ca-pub-8089329941656548" name="google-adsense-account"/>
-    <title>{{TOWN_NAME}}, Montana - Treasure State</title>
-    <meta content="Discover the history, facts, and highlights of {{TOWN_NAME}}, Montana." name="description"/>
-    <link href="../css/style.css" rel="stylesheet"/>
-    <link href="../css/modern-style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-8089329941656548" />
+  <title>{{TOWN_NAME}}, Montana - Treasure State</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
 
-    <!-- Google tag (gtag.js) -->
-    <script>
-      function includeHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => { 
-            const el = document.getElementById(id);
-            if (el) el.innerHTML = data; 
-          });
-      }
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NQ8F9RC7DE');
-    </script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/modern-style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NQ8F9RC7DE');
+  </script>
 </head>
 <body>
+  <!-- Header / Navigation (keep intact) -->
+  <div id="site-menu"></div>
 
-<div id="site-menu"></div>
+  <!-- Hero Section -->
+  <div id="site-hero">
+    <header class="hero-section hero-section--small">
+      <img
+        src="../images/towns/{{HERO_IMAGE}}"
+        alt="{{TOWN_NAME}}, Montana - Scenic View"
+        class="hero-image hero-image--small"
+        width="1920"
+        height="800"
+        onerror="this.onerror=null; this.src='../images/hero-image.jpg';"
+      />
+      <div class="hero-text hero-text--small">
+        <h1>{{TOWN_NAME}}, Montana</h1>
+        <p>{{TAGLINE}}</p>
+      </div>
+    </header>
+  </div>
 
-<div id="site-hero">
-  <header class="hero-section hero-section--small">
-    <img src="../images/towns/default-town.jpg" alt="{{TOWN_NAME}}, Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
-    <div class="hero-text hero-text--small">
-      <h1>{{TOWN_NAME}}, Montana</h1>
-      <p>A Montana Community</p>
-    </div>
-  </header>
-</div>
-  
-<main>
-  <section class="content-section">
-    <!-- Begin {{TOWN_NAME}} content -->
-    <h1>Quick Facts</h1>
-    <ul>
-      <li><strong>Population:</strong> [Population] (as of recent estimates)</li>
-      <li><strong>County:</strong> [County Name] County</li>
-      <li><strong>Founded:</strong> [Year]</li>
-      <li><strong>Elevation:</strong> [Elevation] ft</li>
-      <li><strong>Known For:</strong> [Key features, industries, or attractions]</li>
-      <li><strong>Nearby Landmarks:</strong> [Notable nearby attractions or landmarks]</li>
-      <li><strong>Fun Fact:</strong> [Interesting fact about the town]</li>
-    </ul>
-    
-    <h1>Notable People &amp; Pop Culture</h1>
-    <ul>
-      <li><strong>[Famous Person]:</strong> [Brief description of their connection to the town].</li>
-      <li><strong>[Local Attraction]:</strong> [Brief description of its significance].</li>
-      <li><strong>[Movie/Book/Event]:</strong> [Brief description of its connection to the town].</li>
-    </ul>
-    
-    <h2>Top Things to Do in {{TOWN_NAME}}</h2>
-    <ul>
-      <li>✧ <strong>Activity 1</strong> – Description of the activity or attraction.</li>
-      <li>✧ <strong>Activity 2</strong> – Description of the activity or attraction.</li>
-      <li>✧ <strong>Activity 3</strong> – Description of the activity or attraction.</li>
-      <li>✧ <strong>Activity 4</strong> – Description of the activity or attraction.</li>
-    </ul>
-    
-    <h2>Local Industry &amp; Economy</h2>
-    <p>Brief overview of the local economy, major industries, and employment sectors in {{TOWN_NAME}}.</p>
-    
-    <h2>History &amp; Heritage</h2>
-    <p>Brief history of {{TOWN_NAME}}, including founding, historical significance, and development over time.</p>
-    
-    <h2>Seasonal Activities &amp; Local Events</h2>
-    <ul>
-      <li><strong>Spring/Summer:</strong> [Seasonal activities and events]</li>
-      <li><strong>Fall/Winter:</strong> [Seasonal activities and events]</li>
-      <li><strong>Annual Events:</strong> [List of recurring annual events]</li>
-    </ul>
-    
-    <h2>Getting There &amp; Nearby Destinations</h2>
-    <p>Information about transportation options to {{TOWN_NAME}} and nearby points of interest.</p>
-    <ul>
-      <li><strong>Nearby Town 1</strong> (approx. [distance]): [Brief description]</li>
-      <li><strong>Nearby Town 2</strong> (approx. [distance]): [Brief description]</li>
-      <li><strong>Nearby Attraction</strong> (approx. [distance]): [Brief description]</li>
-    </ul>
-    
-    <h2>Best {{TOWN_NAME}} Hotels & Lodging Guide (2025)</h2>
-    <ul>
-      <li><strong>Hotels:</strong> Find hotels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.example" rel="noopener" target="_blank">Expedia</a>.</li>
-      <li><strong>Motels:</strong> Find motels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.example" rel="noopener" target="_blank">Expedia</a>.</li>
-      <li><strong>Bed &amp; Breakfasts:</strong> Charming B&amp;Bs can be found, offering a more personalized experience.</li>
-      <li><strong>Vacation Rentals:</strong> Find houses, apartments, and cabins for rent on <a href="https://vrbo.com/affiliates/search-{{TOWN_SLUG}}-dateless.example" rel="noopener" target="_blank">VRBO</a>.</li>
-      <li><strong>Campgrounds:</strong> For those who prefer the outdoors, there are campgrounds in the surrounding national forests and some private RV parks.</li>
-    </ul>
-    <!-- End {{TOWN_NAME}} content -->
-  </section>
-  
-  <!-- Expedia Affiliate Banner -->
-  <section id="affiliate-banner" class="banner-section" style="min-height: 100px; margin: 20px 0; text-align: center; background: #f8f9fa; padding: 15px 0 10px 0; width: 100%;">
-    <div style="width: 100%; max-width: 1200px; margin: 0 auto; text-align: center;">
-      <iframe 
-        class="eg-affiliate-banners-frame" 
-        src="https://affiliates.expediagroup.com/products/banners?program=us-expedia&layout=leaderboard&image=mountains&message=hotel-treehouse-find-perfect-place-stay&link=stays&network=pz&camref=1011l52GG6" 
-        style="width: 728px; height: 90px; margin: 0 auto; border: none; display: block;"
-        title="Expedia Hotel Deals">
-      </iframe>
-    </div>
-  </section>
-  
-  <div id="coming-soon"></div>
-</main>
+  <!-- Main Content -->
+  <main>
+    <section class="content-section">
+      <!-- Quick Facts -->
+      <h1>Quick Facts</h1>
+      <ul>
+        <li><strong>Population:</strong> {{POPULATION}}</li>
+        <li><strong>County:</strong> {{COUNTY}}</li>
+        <li><strong>Founded:</strong> {{FOUNDED}}</li>
+        <li><strong>Elevation:</strong> {{ELEVATION}}</li>
+        <li><strong>Known For:</strong> {{KNOWN_FOR}}</li>
+      </ul>
 
-<div id="site-footer"></div>
+      <!-- Notable People & Pop Culture -->
+      <h1>Notable People & Pop Culture</h1>
+      {{NOTABLE_PEOPLE_LIST}}
 
-<script>
-  // Include HTML function
-  function includeHTML(id, file) {
-    fetch(file)
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
-        return response.text();
-      })
-      .then(data => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.innerHTML = data;
-          console.log('Loaded:', file);
-        } else {
-          console.error('Element not found:', id);
+      <!-- Things to Do -->
+      <h2>Top Things to Do in {{TOWN_NAME}}</h2>
+      {{THINGS_TO_DO_LIST}}
+
+      <!-- Local Industry & Economy -->
+      <h2>Local Industry & Economy</h2>
+      <p>{{ECONOMY_PARAGRAPH}}</p>
+      {{ECONOMY_LIST}}
+
+      <!-- History & Heritage -->
+      <h2>History & Heritage</h2>
+      <p>{{HISTORY}}</p>
+
+      <!-- Seasonal Activities & Local Events -->
+      <h2>Seasonal Activities & Local Events</h2>
+      {{SEASONAL_ACTIVITIES}}
+
+      <!-- Getting There & Nearby Destinations -->
+      <h2>Getting There & Nearby Destinations</h2>
+      {{GETTING_THERE}}
+
+      <!-- Lodging Guide (affiliate links remain but town slug is dynamic) -->
+      <h2>Best {{TOWN_NAME}} Hotels & Lodging Guide ({{CURRENT_YEAR}})</h2>
+      <ul>
+        <li><strong>Hotels:</strong> Find hotels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.buq6o7k" target="_blank" rel="noopener">Expedia</a>.</li>
+        <li><strong>Motels:</strong> Find motels in {{TOWN_NAME}} on <a href="https://expedia.com/affiliates/hotel-search-{{TOWN_SLUG}}.buq6o7k" target="_blank" rel="noopener">Expedia</a>.</li>
+        <li><strong>Bed & Breakfasts:</strong> {{B_AND_B_DESCRIPTION}}</li>
+        <li><strong>Vacation Rentals:</strong> Browse {{TOWN_NAME}} rentals on <a href="https://vrbo.com/affiliates/treasure_state/{{TOWN_SLUG}}" target="_blank" rel="noopener">VRBO</a>.</li>
+        <li><strong>Campgrounds:</strong> {{CAMPGROUND_DESCRIPTION}}</li>
+      </ul>
+    </section>
+
+    <!-- Affiliate Banner (keep intact) -->
+    <section id="affiliate-banner" class="banner-section" style="min-height: 100px; margin: 20px 0; text-align: center; background: #f8f9fa; padding: 15px 0 10px 0; width: 100%;">
+      <div style="width: 100%; max-width: 1200px; margin: 0 auto; text-align: center;">
+        <iframe
+          class="eg-affiliate-banners-frame"
+          src="https://affiliates.expediagroup.com/products/banners?program=us-expedia&layout=leaderboard&image=mountains&message=hotel-treehouse-find-perfect-place-stay&link=stays&network=pz&camref=1011l52GG6"
+          style="width: 728px; height: 90px; margin: 0 auto; border: none; display: block;"
+          title="Expedia Hotel Deals"
+        ></iframe>
+      </div>
+    </section>
+
+    <div id="coming-soon"></div>
+  </main>
+
+  <!-- Footer (keep intact) -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../js/banner-loader.js"></script>
+  <script>
+    // Simplified logic for sandbox environments: fallback to inline text if fetch fails
+    async function includeHTML(id, file) {
+      try {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error('Fetch failed');
+        const html = await response.text();
+        document.getElementById(id).innerHTML = html;
+      } catch (err) {
+        console.warn(`Could not load \${file}: \${err.message}`);
+        // Fallback for sandbox/debugging
+        const fallback = {
+          'site-menu': '<!-- Menu placeholder -->',
+          'site-footer': '<!-- Footer placeholder -->',
+          'coming-soon': ''
+        };
+        if (id in fallback) {
+          document.getElementById(id).innerHTML = fallback[id];
         }
-      })
-      .catch(error => {
-        console.error('Error loading include:', file, error);
-      });
-  }
-
-  // Load all includes when the DOM is loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get the base path based on current page location
-    const isTownPage = window.location.pathname.includes('/montana-towns/');
-    const basePath = isTownPage ? '../' : './';
-    
-    console.log('Base path:', basePath);
-    
-    // Include navigation
-    includeHTML('site-menu', basePath + 'includes/header.html');
-    
-    // Include other common elements
-    if (document.getElementById('coming-soon')) {
-      includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
     }
-    if (document.getElementById('site-footer')) {
-      includeHTML('site-footer', basePath + 'includes/footer.html');
-    }
-    
-    // Set town name in hero section if needed
-    const townName = '{{TOWN_NAME}}';
-    const h1 = document.querySelector('.hero-text h1');
-    if (h1 && townName) h1.textContent = townName + ', Montana';
-  });
-</script>
 
+    document.addEventListener('DOMContentLoaded', () => {
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
 </body>
 </html>
