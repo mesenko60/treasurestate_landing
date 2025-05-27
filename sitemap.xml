@@ -78,6 +78,12 @@
 
   <!-- Town detail pages -->
   <url>
+    <loc>https://treasurestate.com/montana-towns/fort-benton.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
     <loc>https://treasurestate.com/montana-towns/fort-peck.html</loc>
     <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
