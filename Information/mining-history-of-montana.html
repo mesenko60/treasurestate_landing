@@ -15,11 +15,20 @@
       gtag('js', new Date());
       gtag('config', 'G-NQ8F9RC7DE');
     </script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modern-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
 </head>
 <body>
 
@@ -27,10 +36,17 @@
 
 <div id="site-hero">
   <header class="hero-section hero-section--small">
-    <img src="../images/towns/default-town.jpg" alt="Mining History of Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <img
+      src="../images/information/default-town.jpg"
+      alt="Scenic view of a Montana mining town"
+      class="hero-image hero-image--small"
+      width="1920"
+      height="800"
+      onerror="this.onerror=null; this.src='../images/hero-image.jpg';"
+    />
     <div class="hero-text hero-text--small">
       <h1>Mining History of Montana</h1>
-      <p>A Montana Community</p>
+      <p>From Gold Rush to Ghost Towns</p>
     </div>
   </header>
 </div>
@@ -52,7 +68,7 @@
         <p>Last Chance Gulch, where Helena now stands, was discovered in the summer of 1864 by a group of discouraged prospectors about to abandon the territory. They decided to give Montana one last chance, hence the name. Their reward was another phenomenally rich strike that would eventually yield an estimated $19 million in gold. The Four Georgians, as they came to be known (though only two were actually from Georgia), founded what would become Montana's capital city almost by accident, as a convenience to their real work of separating gold from gravel.</p>
         <p>Confederate Gulch and Montana Bar in the Big Belt Mountains yielded some of the richest placer ground ever worked in the United States. One pan of dirt from Montana Bar reportedly produced $1,400 in gold, a laborer's wages for years, while diamond-studded pockets elsewhere in the gulch produced enough wealth to lure even more fortune seekers to the high country.</p>
         <p>Yet these riches came with their toll. The mining frontier was a place where law arrived after disorder had already established squatter's rights. In the early days at Bannack and Virginia City, with the nearest federal court in Denver and no effective territorial government, the miners created their own legal framework in the tradition of the California diggings. Claim dimensions were established, water rights allocated, and basic rules of conduct enforced by miners' courts that dispensed rapid if rough justice.</p>
-        <p>But for serious crimes, the miners had few effective remedies until they took matters into their own hands with the formation of the <a href="/story-of-montana-vigilantes.html" class="mining-link">Montana Vigilantes</a> in December 1863. The story has been told and retold, how the secret society identified and dispatched road agents who had been terrorizing the trails between Bannack and Virginia City, robbing and murdering travelers. Between December 1863 and February 1864, the Vigilantes hanged at least twenty-two men, including Henry Plummer, the sheriff of Bannack who was alleged to be the leader of the road agent gang.</p>
+        <p>But for serious crimes, the miners had few effective remedies until they took matters into their own hands with the formation of the <a href="/Information/story-of-montana-vigilantes.html" class="mining-link">Montana Vigilantes</a> in December 1863. The story has been told and retold, how the secret society identified and dispatched road agents who had been terrorizing the trails between Bannack and Virginia City, robbing and murdering travelers. Between December 1863 and February 1864, the Vigilantes hanged at least twenty-two men, including Henry Plummer, the sheriff of Bannack who was alleged to be the leader of the road agent gang.</p>
         <p>Was justice served? The question still hangs over Montana history like gunsmoke that never quite clears. What's certain is that the early mining camps existed in a moral frontier as well as a geographical one, where the line between necessary order and summary execution was blurred by isolation, fear, and the intoxicating presence of enormous wealth for the taking.</p>
         <p>Beyond the violence lay the quieter devastation of the land itself. Hydraulic mining introduced high-pressure water cannons that literally washed away hillsides. Sluice boxes and stamp mills used mercury to amalgamate with gold, sending the toxic metal downstream. Smelters processing ore belched arsenic and lead into mountain air. Forests were felled for timbers to shore up mine tunnels and feed the voracious appetite of stamp mills and smelter furnaces. The scars from this first massive resource extraction remain written on Montana's landscape today, in tailings piles that still leach acid, in stream courses rearranged by human hands, in bald mountainsides that have yet to heal after a century and a half.</p>
         <p>By the 1870s, the nature of Montana mining had transformed again with the discovery of vast silver deposits, particularly in Butte, which would eventually earn the title "the richest hill on earth." Gold had opened the territory, but copper would dominate its economy for the next century. The Anaconda Copper Mining Company, founded by Marcus Daly, would grow to become one of the largest corporations in America and would wield outsized influence in Montana politics and daily life well into the 20th century.</p>
@@ -78,52 +94,41 @@
     <div id="site-footer"></div>
     <script src="js/script.js"></script>
     <script>
+      // Include common elements
       function includeHTML(id, file) {
+        // Skip the hero section since it's already included in the HTML
+        if (id === 'site-hero') return;
+        
         fetch(file)
           .then(response => response.text())
-          .then(data => { document.getElementById(id).innerHTML = data; });
+          .then(data => { 
+            const element = document.getElementById(id);
+            if (element) {
+              element.innerHTML = data;
+            }
+          })
+          .catch(error => {
+            console.error('Error loading include:', file, error);
+          });
       }
-      includeHTML('site-menu', 'includes/header.html');
-      includeHTML('site-hero', 'includes/hero-interior.html');
-      includeHTML('coming-soon', 'includes/coming-soon.html');
-      includeHTML('site-footer', 'includes/footer.html');
-      setHeroContent({
-        title: 'Mining History of Montana',
-        subtitle: 'From Gold Rushes to Copper Kings',
-        image: 'images/hero-image.jpg',
-        alt: 'Montana Mining History - Gold Rush'
+      
+      // Only include header and footer, not the hero section
+      document.addEventListener('DOMContentLoaded', () => {
+        includeHTML('site-menu', '../includes/header.html');
+        includeHTML('coming-soon', '../includes/coming-soon.html');
+        includeHTML('site-footer', '../includes/footer.html');
+        
+        // Set up error handling for the hero image
+        const heroImage = document.querySelector('.hero-image');
+        if (heroImage) {
+          heroImage.onerror = function() {
+            this.onerror = null; // Prevent infinite loop
+            this.src = '../images/hero-image.jpg';
+          };
+        }
       });
     </script>
     <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
-  <script>
-      // Set up the hero section
-      function setupHero() {
-        const options = {
-          title: document.title.split(' - ')[0],
-          subtitle: 'The Treasure State',
-          image: 'images/hero-image.jpg',
-          alt: 'Scenic Montana Landscape - The Treasure State'
-        };
-        
-        // Set default values based on page
-        if (document.body.classList.contains('town-page')) {
-          options.subtitle = 'A Montana Community';
-          options.image = 'images/towns/' + window.location.pathname.split('/').pop().replace('.html', '') + '.jpg';
-          options.alt = options.title + ' - Scenic View';
-        }
-        
-        // Set hero content
-        setHeroContent(options).then(() => {
-          console.log('Hero content updated');
-        });
-      }
-      
-      // Initialize the hero when the page loads
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', setupHero);
-      } else {
-        setupHero();
-      }
   </script>
   
   <!-- Navigation Script -->

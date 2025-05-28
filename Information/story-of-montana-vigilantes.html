@@ -15,25 +15,41 @@
     gtag('js', new Date());
     gtag('config', 'G-NQ8F9RC7DE');
   </script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/modern-style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modern-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
 </head>
 <body>
 
 <div id="site-menu"></div>
 
-<div id="site-hero">
-  <header class="hero-section hero-section--small">
-    <img src="../images/towns/default-town.jpg" alt="The Noose of Doubt: Montana’s Vigilante Legacy - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
-    <div class="hero-text hero-text--small">
-      <h1>The Noose of Doubt: Montana’s Vigilante Legacy</h1>
-      <p>A Montana Community</p>
-    </div>
-  </header>
-</div>
+  <div id="site-hero">
+    <header class="hero-section hero-section--small">
+      <img
+        src="../images/information/default-town.jpg"
+        alt="Historical image of Montana vigilantes"
+        class="hero-image hero-image--small"
+        width="1920"
+        height="800"
+        onerror="this.onerror=null; this.src='../images/hero-image.jpg';"
+      />
+      <div class="hero-text hero-text--small">
+        <h1>The History of Montana Vigilantes</h1>
+        <p>A Gruesome Affair</p>
+      </div>
+    </header>
+  </div>
   
   
   
@@ -141,53 +157,41 @@
 
   <script src="js/script.js"></script>
   <script>
+    // Include common elements
     function includeHTML(id, file) {
+      // Skip the hero section since it's already included in the HTML
+      if (id === 'site-hero') return;
+      
       fetch(file)
         .then(response => response.text())
-        .then(data => { document.getElementById(id).innerHTML = data; });
+        .then(data => { 
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
     }
-    includeHTML('site-menu', 'includes/header.html');
-    includeHTML('site-hero', 'includes/hero-interior.html');
-    includeHTML('coming-soon', 'includes/coming-soon.html');
-    includeHTML('site-footer', 'includes/footer.html');
-
-    setHeroContent({
-      title: 'The History of Montana Vigilantes',
-      subtitle: 'A Gruesome Affair',
-      image: 'images/hero-image.jpg',
-      alt: 'The History of Montana Vigilantes'
+    
+    // Only include header and footer, not the hero section
+    document.addEventListener('DOMContentLoaded', () => {
+      includeHTML('site-menu', '../includes/header.html');
+      includeHTML('coming-soon', '../includes/coming-soon.html');
+      includeHTML('site-footer', '../includes/footer.html');
+      
+      // Set up error handling for the hero image
+      const heroImage = document.querySelector('.hero-image');
+      if (heroImage) {
+        heroImage.onerror = function() {
+          this.onerror = null; // Prevent infinite loop
+          this.src = '../images/hero-image.jpg';
+        };
+      }
     });
   </script>
   <script src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
-  <script>
-      // Set up the hero section
-      function setupHero() {
-        const options = {
-          title: document.title.split(' - ')[0],
-          subtitle: 'The Treasure State',
-          image: 'images/hero-image.jpg',
-          alt: 'Scenic Montana Landscape - The Treasure State'
-        };
-        
-        // Set default values based on page
-        if (document.body.classList.contains('town-page')) {
-          options.subtitle = 'A Montana Community';
-          options.image = 'images/towns/' + window.location.pathname.split('/').pop().replace('.html', '') + '.jpg';
-          options.alt = options.title + ' - Scenic View';
-        }
-        
-        // Set hero content
-        setHeroContent(options).then(() => {
-          console.log('Hero content updated');
-        });
-      }
-      
-      // Initialize the hero when the page loads
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', setupHero);
-      } else {
-        setupHero();
-      }
   </script>
   
   <!-- Navigation Script -->

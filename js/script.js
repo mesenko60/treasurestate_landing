@@ -7,6 +7,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Function to load head scripts
+function loadHeadScripts(file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        const headElement = document.head;
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+        
+        // Get all child nodes from the loaded content
+        while (tempDiv.firstChild) {
+          headElement.appendChild(tempDiv.firstChild);
+        }
+      })
+      .catch(error => console.error('Error loading head scripts:', error));
+}
+
 // Robust includeHTML: waits for target element before inserting HTML
 function includeHTML(id, file) {
     fetch(file)
@@ -87,13 +104,19 @@ function updateHeroContent(hero, options) {
     
     // For the image, we'll use a new Image() to preload it
     if (img && (options.image || options.alt)) {
-        // If we have a new image to load, preload it first
-        if (options.image) {
+        // Only modify the image if it's using the default image or if we're just updating the alt text
+        const isDefaultImage = img.src.includes('default-town.jpg') || img.src.includes('hero-image.jpg');
+        
+        if (options.image && isDefaultImage) {
             const newImg = new Image();
             newImg.onload = function() {
                 // Only update the src once the image is loaded
                 img.src = options.image;
                 if (options.alt) img.alt = options.alt;
+            };
+            newImg.onerror = function() {
+                // If the new image fails to load, keep the current image
+                console.warn('Failed to load image:', options.image);
             };
             newImg.src = options.image;
         } else if (options.alt) {

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE_TITLE - Treasure State</title>
+  <meta name="description" content="PAGE_DESCRIPTION">
+  <meta name="keywords" content="KEYWORDS">
+  <meta name="google-adsense-account" content="ca-pub-8089329941656548">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8F9RC7DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NQ8F9RC7DE');
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modern-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <div id="site-menu"></div>
+
+  <!-- Hero Section -->
+  <div id="site-hero">
+    <header class="hero-section hero-section--small">
+      <img
+        src="images/hero-image.jpg"
+        alt="HERO_IMAGE_ALT"
+        class="hero-image hero-image--small"
+        width="1920"
+        height="800"
+        onerror="this.onerror=null; this.src='images/hero-image.jpg';"
+      />
+      <div class="hero-text hero-text--small">
+        <h1>PAGE_TITLE</h1>
+        <p>PAGE_SUBTITLE</p>
+      </div>
+    </header>
+  </div>
+  
+  <main>
+    <section class="content-section">
+      <!-- Main content goes here -->
+      <h2>MAIN_HEADING</h2>
+      <p>Your content starts here. This is a template for creating consistent information pages across the site.</p>
+      
+      <!-- Example section -->
+      <h3>Section Heading</h3>
+      <p>Section content goes here. You can add as many sections as needed.</p>
+      
+      <!-- Example list -->
+      <h3>List Example</h3>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+      
+      <!-- Example quote -->
+      <blockquote>
+        <p>This is an example of a blockquote that you might use for important information or quotes.</p>
+      </blockquote>
+    </section>
+
+    <!-- Affiliate Banner -->
+    <section id="affiliate-banner" class="banner-section">
+      <!-- Affiliate content will be loaded here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      const element = document.getElementById(id);
+      if (!element) return;
+
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('File not found');
+          return response.text();
+        })
+        .then(html => {
+          element.outerHTML = html;
+        })
+        .catch(error => {
+          console.error(`Error loading ${file}:`, error);
+          // Fallback to inline content if available
+          if (id === 'site-menu') {
+            element.outerHTML = `
+              <nav class="main-nav">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/montana-towns/">Montana Towns</a></li>
+                  <li><a href="/geology-of-western-montana.html">Geology</a></li>
+                </ul>
+              </nav>`;
+          } else if (id === 'site-footer') {
+            element.outerHTML = `
+              <footer class="site-footer">
+                <p>&copy; ${new Date().getFullYear()} Treasure State. All rights reserved.</p>
+              </footer>`;
+          }
+        });
+    }
+
+    // Set up the page when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Include header, hero, and footer
+      includeHTML('site-menu', 'includes/header.html');
+      includeHTML('site-hero', 'includes/hero-interior.html');
+      includeHTML('site-footer', 'includes/footer.html');
+
+      // Handle image errors for hero images
+      const heroImage = document.querySelector('.hero-image');
+      if (heroImage) {
+        heroImage.onerror = function() {
+          this.onerror = null; // Prevent infinite loop
+          this.src = 'images/hero-image.jpg';
+        };
+      }
+      
+      // Load affiliate banner
+      includeHTML('affiliate-banner', 'includes/banner.html');
+    });
+  </script>
+</body>
+</html>
