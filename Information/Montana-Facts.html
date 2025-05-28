@@ -33,30 +33,29 @@
   </script>
 </head>
 <body>
+  <!-- Header / Navigation -->
+  <div id="site-menu"></div>
 
-<div id="site-menu"></div>
-
-<div id="site-hero">
-  <header class="hero-section hero-section--small">
-    <img
-      src="../images/information/default-town.jpg"
-      alt="Scenic Montana landscape with mountains and blue sky"
-      class="hero-image hero-image--small"
-      width="1920"
-      height="800"
-      onerror="this.onerror=null; this.src='../images/hero-image.jpg';"
-    />
-    <div class="hero-text hero-text--small">
-      <h1>Montana Facts</h1>
-      <p>Discover the Treasure State</p>
-    </div>
-  </header>
-</div>
-    
+  <!-- Hero Section -->
+  <div id="site-hero">
+    <header class="hero-section hero-section--small">
+      <img
+        src="../images/information/default-town.jpg"
+        alt="Scenic Montana landscape with mountains and blue sky"
+        class="hero-image hero-image--small"
+        width="1920"
+        height="800"
+        onerror="this.onerror=null; this.src='../images/hero-image.jpg';"
+      />
+      <div class="hero-text hero-text--small">
+        <h1>Montana Facts</h1>
+        <p>Discover the Treasure State</p>
+      </div>
+    </header>
+  </div>
   
-  
-    <main>
-      <section class="content-section">
+  <main>
+    <section class="content-section">
         <!-- Begin Montana Facts content -->
         <h2>Montana: A Land of Intrigue and Wonder</h2>
         <p>Montana, a state that truly lives up to its nickname "The Treasure State," offers a captivating blend of sprawling landscapes, unique demographics, and a history as rugged as its terrain. For those who have never ventured into its vast expanse, Montana presents a world of fascinating contrasts and surprising details that paint a picture of a place unlike any other in the United States. From its sparse population to its extreme weather and its unexpected connections to Hollywood, Montana is a land of endless discovery.</p>
@@ -141,23 +140,24 @@
         });
     }
 
-    // Load all includes when the DOM is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get the base path based on current page location
-      const isTownPage = window.location.pathname.includes('/montana-towns/');
-      const basePath = isTownPage ? '../' : './';
-      
-      console.log('Base path:', basePath);
-      
-      // Include navigation
-      includeHTML('site-menu', basePath + 'includes/header.html');
-      
-      // Include other common elements
-if (document.getElementById('coming-soon')) {
-        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+    // Set up the page when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Only include the header and footer, not the hero section
+      includeHTML('site-menu', '../includes/header.html');
+      if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', '../includes/coming-soon.html');
       }
       if (document.getElementById('site-footer')) {
-        includeHTML('site-footer', basePath + 'includes/footer.html');
+        includeHTML('site-footer', '../includes/footer.html');
+      }
+
+      // Set up error handling for the hero image
+      const heroImage = document.querySelector('.hero-image');
+      if (heroImage) {
+        heroImage.onerror = function() {
+          this.onerror = null; // Prevent infinite loop
+          this.src = '../images/hero-image.jpg';
+        };
       }
     });
   </script>
