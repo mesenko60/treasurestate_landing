@@ -21,6 +21,15 @@
     gtag('js', new Date());
     gtag('config', 'G-NQ8F9RC7DE');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
 </head>
 <body>
   <!-- Header / Navigation (keep intact) -->
@@ -39,7 +48,7 @@
       />
       <div class="hero-text hero-text--small">
         <h1>Libby, Montana</h1>
-        <p>The Right Kind of Remote</p>
+        <p>Kootenai Country's Wild Heart</p>
       </div>
     </header>
   </div>
@@ -160,6 +169,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const isTownPage = window.location.pathname.includes('/montana-towns/');
       const basePath = isTownPage ? '../' : './';
+      
 
       includeHTML('site-menu', basePath + 'includes/header.html');
       if (document.getElementById('coming-soon')) {

@@ -19,6 +19,15 @@
     gtag('js', new Date());
     gtag('config', 'G-NQ8F9RC7DE');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -37,7 +46,7 @@
       />
       <div class="hero-text hero-text--small">
         <h1>Plentywood, Montana</h1>
-        <p>Frontier Gateway to Wild Adventure</p>
+        <p>Northeast Montana's Prairie Outpost</p>
       </div>
     </header>
   </div>
@@ -152,6 +161,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const isTownPage = window.location.pathname.includes('/montana-towns/');
       const basePath = isTownPage ? '../' : './';
+      // Load body includes
       includeHTML('site-menu', basePath + 'includes/header.html');
       if (document.getElementById('coming-soon')) {
         includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
