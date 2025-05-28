@@ -1,5 +1,5 @@
-# {{ city_name }}, Montana: {{ headline_descriptor }}
-{{slogan}}
+# {{ city_name }}, Montana: {{official slogan}}
+
 {{ intro_paragraph }}
 
 ---
