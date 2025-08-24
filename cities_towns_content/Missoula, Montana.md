@@ -1,5 +1,3 @@
-## Missoula, Montana Data Collection
-
 ### Quick Facts
 
 - **Population:** 77,757 (Source: U.S. Census Bureau, July 1, 2023 estimate)
