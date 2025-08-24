@@ -1,0 +1,227 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    min-height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+/* Override for interior pages */
+header.hero-section.hero-section--small {
+    height: 35vh !important;
+    min-height: 200px !important;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, might crop */
+    z-index: -1; /* Behind the text */
+    filter: brightness(0.6); /* Darken the image for text readability */
+}
+
+.hero-image--small {
+    height: 100%;
+    min-height: 180px;
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero-text--small h1 {
+    font-size: 2rem;
+}
+
+.hero-text--small p {
+    font-size: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Responsive font size */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Main Content Sections */
+
+#description {
+    margin-top: -80px;
+}
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+/* Planners Section */
+.planners-section h2 {
+    color: #16a085; /* Teal color */
+}
+
+.planners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.planner-card {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7; /* Mid-grey border */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.planner-card h3 {
+    font-size: 1.5rem;
+    color: #2980b9; /* Blue */
+    margin-bottom: 0.75rem;
+}
+
+.planner-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #7f8c8d; /* Grey text */
+}
+
+.planner-card span {
+    display: inline-block;
+    background-color: #e74c3c; /* Red */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Banner Sections */
+.banner-section {
+    min-height: 90px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.banner-placeholder {
+    padding: 2rem;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.banner-placeholder p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    margin: 0 0 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+    .planner-card h3 {
+        font-size: 1.3rem;
+    }
+    main {
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .content-section {
+        padding: 1.5rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .planner-card {
+        padding: 1rem;
+    }
+    .planner-card h3 {
+        font-size: 1.2rem;
+    }
+    .banner-placeholder {
+        padding: 1.5rem;
+    }
+}

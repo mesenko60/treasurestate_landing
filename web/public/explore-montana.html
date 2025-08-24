@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-8089329941656548">
+    <title>Explore Montana - Treasure State</title>
+    <meta name="description" content="Explore Montana: Discover upcoming features and adventures on Treasure State.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8F9RC7DE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NQ8F9RC7DE');
+    </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Montana - The Treasure State",
+    "alternateName": ["Treasure State", "TreasureState"],
+    "url": "https://treasurestate.com/"
+  }
+  </script>
+</head>
+<body>
+
+<div id="site-menu"></div>
+
+<div id="site-hero">
+  <header class="hero-section hero-section--small">
+    <img src="../images/towns/default-town.jpg" alt="Explore Montana - Scenic View" class="hero-image hero-image--small" width="1920" height="800" onerror="this.onerror=null; this.src='../images/hero-image.jpg';">
+    <div class="hero-text hero-text--small">
+      <h1>Explore Montana</h1>
+      <p>A Montana Community</p>
+    </div>
+  </header>
+</div>
+    
+  
+  
+    <main>
+      <!-- Expedia Affiliate Banner -->
+      <section id="affiliate-banner" class="banner-section">
+        <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
+        <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+      </section>
+      <div id="coming-soon"></div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/script.js"></script>
+    <script>
+      function includeHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => { document.getElementById(id).innerHTML = data; });
+      }
+      includeHTML('site-menu', 'includes/header.html');
+      includeHTML('site-hero', 'includes/hero-interior.html');
+      includeHTML('coming-soon', 'includes/coming-soon.html');
+      includeHTML('site-footer', 'includes/footer.html');
+      // Set the hero text after the hero section loads
+      function setHeroText(title, subtitle) {
+        const interval = setInterval(function() {
+          const hero = document.getElementById('site-hero');
+          if (hero && hero.querySelector('h1') && hero.querySelector('p')) {
+            hero.querySelector('h1').textContent = title;
+            hero.querySelector('p').textContent = subtitle;
+            clearInterval(interval);
+          }
+        }, 50);
+      }
+      setHeroText('Explore Montana', 'Discover upcoming features and adventures');
+    </script>
+    </script>
+  <script>
+      // Set up the hero section
+      function setupHero() {
+        const options = {
+          title: document.title.split(' - ')[0],
+          subtitle: 'The Treasure State',
+          image: 'images/hero-image.jpg',
+          alt: 'Scenic Montana Landscape - The Treasure State'
+        };
+        
+        // Set default values based on page
+        if (document.body.classList.contains('town-page')) {
+          options.subtitle = 'A Montana Community';
+          options.image = 'images/towns/' + window.location.pathname.split('/').pop().replace('.html', '') + '.jpg';
+          options.alt = options.title + ' - Scenic View';
+        }
+        
+        // Set hero content
+        setHeroContent(options).then(() => {
+          console.log('Hero content updated');
+        });
+      }
+      
+      // Initialize the hero when the page loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupHero);
+      } else {
+        setupHero();
+      }
+  </script>
+  
+  <!-- Navigation Script -->
+  <script>
+    // Include HTML function
+    function includeHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
+          return response.text();
+        })
+        .then(data => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = data;
+            console.log('Loaded:', file);
+          } else {
+            console.error('Element not found:', id);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading include:', file, error);
+        });
+    }
+
+    // Load all includes when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the base path based on current page location
+      const isTownPage = window.location.pathname.includes('/montana-towns/');
+      const basePath = isTownPage ? '../' : './';
+      
+      console.log('Base path:', basePath);
+      
+      // Include navigation
+      includeHTML('site-menu', basePath + 'includes/header.html');
+      
+      // Include other common elements
+if (document.getElementById('coming-soon')) {
+        includeHTML('coming-soon', basePath + 'includes/coming-soon.html');
+      }
+      if (document.getElementById('site-footer')) {
+        includeHTML('site-footer', basePath + 'includes/footer.html');
+      }
+    });
+  </script>
+</body>
+</html>
