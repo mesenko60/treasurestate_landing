@@ -4,8 +4,16 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 
 export async function markdownToHtml(md: string): Promise<string> {
+  // Remove any H2 headings that contain "Data Collection" to prevent secondary heads from rendering.
+  // Example to remove: "## Missoula, Montana Data Collection"
+  const sanitizedMd = md
+    .split(/\r?\n/)
+    .filter(line => !/^\s{0,3}##\s+.*data collection\s*$/i.test(line))
+    .join('\n')
+    // collapse excessive blank lines introduced by removals
+    .replace(/\n{3,}/g, '\n\n');
   // marked.parse may return string | Promise<string>; await normalizes to string
-  return await marked.parse(md) as unknown as string;
+  return await marked.parse(sanitizedMd) as unknown as string;
 }
 
 export async function readTownMarkdownByTownName(townName: string): Promise<{ contentHtml: string; excerpt?: string } | null> {
