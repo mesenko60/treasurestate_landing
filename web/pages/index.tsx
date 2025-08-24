@@ -80,8 +80,7 @@ export default function Home() {
             state's destiny but also contributed significantly to the industrial development of the nation.
           </p>
           <p>
-            In essence, "The Treasure State" is more than just a catchy phrase; it is a testament to Montana's extraordinary
-            <a href="/Information/geology-of-western-montana.html" className="mining-link">geological heritage</a> and the profound impact of its mineral wealth on its history, culture, and economy. It speaks to a legacy of exploration, discovery, and the enduring allure of the treasures hidden within its majestic mountains and expansive plains.
+            In essence, "The Treasure State" is more than just a catchy phrase; it is a testament to Montana's extraordinary{' '}<a href="/Information/geology-of-western-montana.html" className="mining-link">geological heritage</a> and the profound impact of its mineral wealth on its history, culture, and economy. It speaks to a legacy of exploration, discovery, and the enduring allure of the treasures hidden within its majestic mountains and expansive plains.
           </p>
         </section>
         <AffiliateBanner />
