@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002FMontana-towns","\u002FMontana-towns.html","\u002Fmontana-towns\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

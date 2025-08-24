@@ -72,9 +72,7 @@
         <!-- End Montana Facts content -->
       </section>
       <section id="affiliate-banner" class="banner-section">
-        <!-- Expedia Affiliate Banner -->
-        <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
-        <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+        <!-- Expedia Affiliate Banner will be injected via include: ../includes/banner.html -->
       </section>
       <div id="coming-soon"></div>
     </main>
@@ -144,6 +142,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       // Only include the header and footer, not the hero section
       includeHTML('site-menu', '../includes/header.html');
+      // Load affiliate banner include for reliability (iframe-based)
+      if (document.getElementById('affiliate-banner')) {
+        includeHTML('affiliate-banner', '../includes/banner.html');
+      }
       if (document.getElementById('coming-soon')) {
         includeHTML('coming-soon', '../includes/coming-soon.html');
       }

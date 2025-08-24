@@ -157,7 +157,13 @@
   </url>
   <url>
     <loc>https://treasurestate.com/montana-towns/plentywood.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/montana-towns/sidney.html</loc>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
@@ -410,6 +416,12 @@
   <url>
     <loc>https://treasurestate.com/montana-towns/dillon.html</loc>
     <lastmod>2025-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://treasurestate.com/montana-towns/lincoln.html</loc>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
