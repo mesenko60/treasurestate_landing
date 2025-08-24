@@ -1,10 +1,11 @@
 # Netlify configuration file
 
 [build]
-  publish = "/"
-  command = "# no build command needed for static HTML site"
-  # This is the key part - tell Netlify which page to use for 404s
-  not_found = "/404.html"
+  # Build from the Next.js app and publish the static export
+  base = "web"
+  publish = "out"
+  command = "npm ci && npm run build"
+  # Netlify will use /404.html from the publish directory automatically
 
 # Redirects and headers
 
@@ -14,16 +15,8 @@
   to = "/:splat"
   status = 200
 
-# Default catch-all is only for existing pages to be routed to index.html (SPA behavior)
-# This won't interfere with 404 handling for non-existent files
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
 
 # Enable asset optimization
 [build.processing]
