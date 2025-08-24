@@ -4,7 +4,7 @@
   # Build from the Next.js app and publish the static export
   base = "web"
   publish = "out"
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
   # Netlify will use /404.html from the publish directory automatically
 
 # Redirects and headers
