@@ -1,4 +1,40 @@
-<!-- Expedia Affiliate Banner -->
+<!-- Expedia Affiliate Banner (iframe embed for reliability) -->
 <section id="affiliate-banner" class="banner-section">
-  <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="hotel-treehouse-find-perfect-place-stay" data-link="stays" data-camref="1011l52GG6" data-pubref=""></div>
+  <div style="width:100%;max-width:1200px;margin:0 auto;text-align:center;padding:15px 0;">
+    <iframe
+      class="eg-affiliate-banners-frame"
+      src="https://affiliates.expediagroup.com/products/banners?program=us-expedia&layout=leaderboard&image=mountains&message=hotel-treehouse-find-perfect-place-stay&link=stays&network=pz&camref=1011l52GG6"
+      style="width:728px;height:90px;margin:0 auto;border:none;display:block;"
+      title="Expedia Hotel Deals"
+    ></iframe>
+
+    <!-- Local fallback: shown if iframe is blocked (e.g., CSP on localhost) -->
+    <a
+      id="expedia-fallback-link"
+      href="https://www.expedia.com/?pwaLob=HRS&camref=1011l52GG6"
+      target="_blank"
+      rel="noopener"
+      style="display:none;margin:0 auto;background:#0a5cff;color:#fff;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:600"
+      aria-label="Find hotels on Expedia"
+    >
+      Find hotels on Expedia
+    </a>
+
+    <script>
+      (function() {
+        var iframe = document.querySelector('#affiliate-banner iframe.eg-affiliate-banners-frame');
+        var fallback = document.getElementById('expedia-fallback-link');
+        var loaded = false;
+        if (iframe) {
+          iframe.addEventListener('load', function() { loaded = true; });
+        }
+        setTimeout(function(){
+          if (!loaded) {
+            if (fallback) fallback.style.display = 'inline-block';
+            if (iframe) iframe.style.display = 'none';
+          }
+        }, 1500);
+      })();
+    </script>
+  </div>
 </section>
