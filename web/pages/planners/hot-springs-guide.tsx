@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
+import StoreBanner from '../../components/StoreBanner';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
 
@@ -67,6 +68,7 @@ export default function HotSpringsGuide() {
               <li><strong>Check Restrictions:</strong> Some hot springs (like Boiling River) close during spring runoff for safety. Always verify accessibility before you travel.</li>
             </ul>
           </section>
+          <StoreBanner />
           <AffiliateBanner />
         </div>
       </main>

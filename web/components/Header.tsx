@@ -9,10 +9,10 @@ export default function Header() {
     <nav className="menu-bar">
       <Link href="/">Home</Link>
       <Link href="/Montana-towns" className={isActive('/Montana-towns') ? 'active' : ''}>Cities and Towns</Link>
+      <Link href="/planners" className={isActive('/planners') ? 'active' : ''}>Travel Planners</Link>
       <Link href="/Information/Montana-Facts.html" className={isActive('/Information/Montana-Facts.html') ? 'active' : ''}>Montana Facts</Link>
       <Link href="/explore-montana.html" className={isActive('/explore-montana.html') ? 'active' : ''}>Explore Montana</Link>
-      <a href="#">Gallery</a>
-      <a href="#">Contact</a>
+      <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#d8973c', fontWeight: 'bold' }}>Shop</a>
     </nav>
   );
 }

@@ -13,6 +13,7 @@ import TableOfContents from '../../components/TableOfContents';
 import SingleTownMap from '../../components/SingleTownMap';
 import TownWeather from '../../components/TownWeather';
 import TownDistances from '../../components/TownDistances';
+import StoreBanner from '../../components/StoreBanner';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -107,6 +108,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
+          <StoreBanner />
           <AffiliateBanner />
         </div>
       </main>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
+import StoreBanner from '../../components/StoreBanner';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
 import Link from 'next/link';
@@ -62,6 +63,7 @@ export default function MontanaBackroads() {
               <li><strong>Respect Wildlife:</strong> You are driving through their home. Watch for deer, elk, and free-range cattle, especially at dawn and dusk.</li>
             </ul>
           </section>
+          <StoreBanner />
           <AffiliateBanner />
         </div>
       </main>
