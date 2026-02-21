@@ -22,3 +22,24 @@ export function getTownNameFromSlug(slug: string): string {
     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ');
 }
+
+export function getRelatedTowns(currentSlug: string, count: number = 3): { name: string; slug: string }[] {
+  const towns = getTownList();
+  // Filter out current town
+  const otherTowns = towns.filter(t => t.slug !== currentSlug);
+  
+  // Deterministic "random" selection based on the string length and characters of the current slug
+  // This ensures the related towns for a specific town don't change on every build
+  let seed = 0;
+  for (let i = 0; i < currentSlug.length; i++) {
+    seed += currentSlug.charCodeAt(i);
+  }
+  
+  const related = [];
+  for (let i = 0; i < count; i++) {
+    const index = (seed + i * 17) % otherTowns.length;
+    related.push(otherTowns[index]);
+  }
+  
+  return related;
+}

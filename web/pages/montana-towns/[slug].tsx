@@ -5,7 +5,9 @@ import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
 import Footer from '../../components/Footer';
 import Schema from '../../components/Schema';
-import { getTownList, getTownNameFromSlug } from '../../lib/towns';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import NearbyTowns from '../../components/NearbyTowns';
+import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
 type Props = {
@@ -14,12 +16,19 @@ type Props = {
   contentHtml: string;
   description: string;
   aeoData: AEOData | null;
+  relatedTowns: { name: string; slug: string }[];
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData }: Props) {
+export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns }: Props) {
   const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
+
+  const breadcrumbItems = [
+    { name: 'Home', url: 'https://treasurestate.com/' },
+    { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
+    { name: townName, url: url }
+  ];
 
   return (
     <>
@@ -44,6 +53,8 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
 
       <Header />
       
+      <Breadcrumbs items={breadcrumbItems} />
+
       <Hero
         title={townName}
         subtitle="A Montana Community"
@@ -54,6 +65,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
       
       <main>
         <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <NearbyTowns towns={relatedTowns} />
         <AffiliateBanner />
       </main>
       
@@ -76,6 +88,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const contentHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
   const description = md?.excerpt || '';
   const aeoData = md?.aeoData || null;
+  const relatedTowns = getRelatedTowns(slug, 3);
 
-  return { props: { slug, townName, contentHtml, description, aeoData } };
+  return { props: { slug, townName, contentHtml, description, aeoData, relatedTowns } };
 };
