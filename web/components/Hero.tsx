@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import { useState } from 'react';
+
 type Props = {
   title: string;
   subtitle?: string;
@@ -7,20 +10,20 @@ type Props = {
 };
 
 export default function Hero({ title, subtitle, image, alt, small }: Props) {
+  const [imgSrc, setImgSrc] = useState(image);
+
   return (
     <header className={`hero-section ${small ? 'hero-section--small' : ''}`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={image}
+      <Image
+        src={imgSrc}
         alt={alt}
         className={`hero-image ${small ? 'hero-image--small' : ''}`}
-        width={1920}
-        height={800}
-        onError={(e) => {
-          const target = e.currentTarget as HTMLImageElement;
-          if (!target.dataset.fallback) {
-            target.src = '/images/towns/default-town.jpg';
-            target.dataset.fallback = '1';
+        fill
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
+        priority // Ensures LCP optimization
+        onError={() => {
+          if (imgSrc !== '/images/towns/default-town.jpg') {
+            setImgSrc('/images/towns/default-town.jpg');
           }
         }}
       />
