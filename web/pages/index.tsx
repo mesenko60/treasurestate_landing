@@ -18,6 +18,15 @@ export default function Home() {
           name="keywords"
           content="Montana, Treasure State, Montana Travel, Big Sky Country, Montana Backroads, Montana Hot Springs, Bitterroot Valley, Expedia, AdSense, Travel Planner"
         />
+        <meta property="og:title" content="Treasure State - Explore the Wonders of Montana" />
+        <meta property="og:description" content="Discover the meaning of 'Treasure State' and explore upcoming travel planners for Montana's backroads, hot springs, and the Bitterroot Valley." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://treasurestate.com/" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Treasure State - Explore the Wonders of Montana" />
+        <meta name="twitter:description" content="Discover the meaning of 'Treasure State' and explore upcoming travel planners for Montana's backroads, hot springs, and the Bitterroot Valley." />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

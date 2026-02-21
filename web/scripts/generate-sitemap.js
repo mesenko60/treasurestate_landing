@@ -29,13 +29,15 @@ function url(loc, lastmod = new Date()) {
   // Core pages
   entries.push(url(`${baseUrl}/`));
   entries.push(url(`${baseUrl}/Montana-towns/`));
-  entries.push(url(`${baseUrl}/explore-montana.html`));
 
-  // Information pages discovered in out/Information
+  // Information pages discovered in out/Information (assuming they still exist in Next.js pages)
   const infoDir = path.join(outDir, 'Information');
   if (fs.existsSync(infoDir)) {
     for (const f of fs.readdirSync(infoDir)) {
-      if (f.endsWith('.html')) entries.push(url(`${baseUrl}/Information/${f}`));
+      if (f.endsWith('.html') || fs.statSync(path.join(infoDir, f)).isDirectory()) {
+        const slug = f.replace('.html', '');
+        entries.push(url(`${baseUrl}/Information/${slug}/`));
+      }
     }
   }
 
@@ -45,6 +47,10 @@ function url(loc, lastmod = new Date()) {
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
-  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
-  console.log('sitemap.xml generated');
+  if (fs.existsSync(outDir)) {
+    fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
+    console.log('sitemap.xml generated in out/');
+  } else {
+    console.log('out/ directory does not exist, sitemap.xml skipped.');
+  }
 })();
