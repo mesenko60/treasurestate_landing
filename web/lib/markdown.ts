@@ -16,7 +16,7 @@ export interface TownData {
   nearbyDestinations: string[]; // List of town names
 }
 
-export async function markdownToHtml(md: string): Promise<string> {
+export async function markdownToHtml(md: string, currentTownName?: string): Promise<string> {
   const sanitizedMd = md
     .split(/\r?\n/)
     .filter(line => !/^\s{0,3}##\s+.*data collection\s*$/i.test(line))
@@ -24,23 +24,50 @@ export async function markdownToHtml(md: string): Promise<string> {
     .replace(/\n{3,}/g, '\n\n');
   
   const allTowns = getTownList();
-  const renderer = new marked.Renderer();
   
-  // Custom renderer to replace bold town names with internal links
-  const originalStrong = renderer.strong.bind(renderer);
-  renderer.strong = (text: string) => {
-    // Clean text to match against our town list (e.g. "Glendive, Montana:" -> "Glendive")
-    const cleanText = text.replace(/:$/, '').replace(/, Montana/i, '').trim();
-    const match = allTowns.find(t => t.name.toLowerCase() === cleanText.toLowerCase());
+  // Parse markdown to HTML
+  const rawHtml = await marked.parse(sanitizedMd) as unknown as string;
+
+  // Post-process HTML to auto-link all valid town mentions
+  // We split by HTML tags to safely isolate text nodes
+  const tokens = rawHtml.split(/(<[^>]*>)/g);
+  let inAnchor = false;
+  let inHeading = false;
+
+  // Build a regex that matches any town name, sorted by length descending
+  const sortedTowns = [...allTowns]
+    .filter(t => !currentTownName || t.name.toLowerCase() !== currentTownName.toLowerCase())
+    .sort((a, b) => b.name.length - a.name.length);
     
-    if (match) {
-      return `<strong><a href="/montana-towns/${match.slug}/">${text}</a></strong>`;
+  if (sortedTowns.length === 0) return rawHtml;
+
+  const escapedTowns = sortedTowns.map(t => t.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  // Match town name, optionally followed by ", Montana"
+  // Using case-sensitive 'g' instead of 'gi' to avoid linking generic lowercase words like "plains" or "circle"
+  const regex = new RegExp(`\\b(${escapedTowns.join('|')})(?:, Montana)?\\b`, 'g');
+
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
+    if (token.match(/^<a[\s>]/i)) {
+      inAnchor = true;
+    } else if (token.match(/^<\/a>/i)) {
+      inAnchor = false;
+    } else if (token.match(/^<h[1-6]/i)) {
+      inHeading = true;
+    } else if (token.match(/^<\/h[1-6]/i)) {
+      inHeading = false;
+    } else if (!token.startsWith('<') && !inAnchor && !inHeading) {
+       tokens[i] = token.replace(regex, (match, townNameMatch) => {
+         const matchTown = allTowns.find(t => t.name === townNameMatch);
+         if (matchTown) {
+           return `<a href="/montana-towns/${matchTown.slug}/">${match}</a>`;
+         }
+         return match;
+       });
     }
-    
-    return originalStrong(text);
-  };
+  }
   
-  return await marked.parse(sanitizedMd, { renderer }) as unknown as string;
+  return tokens.join('');
 }
 
 export function extractAEOData(md: string, townName: string): AEOData {
@@ -185,7 +212,7 @@ export async function readTownMarkdownByTownName(townName: string): Promise<Town
   const raw = fs.readFileSync(full, 'utf8');
   const parsed = matter(raw);
   
-  const html = await markdownToHtml(parsed.content);
+  const html = await markdownToHtml(parsed.content, townName);
   const excerpt = parsed.data?.description || parsed.excerpt || '';
   const aeoData = extractAEOData(parsed.content, townName);
   const nearbyDestinations = extractNearbyDestinations(parsed.content);
