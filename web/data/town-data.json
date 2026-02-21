@@ -1,0 +1,1074 @@
+{
+  "alberton": {
+    "name": "Alberton",
+    "lat": 47.0023955,
+    "lng": -114.477156,
+    "elevation": 3041,
+    "county": "Mineral County",
+    "region": "Western"
+  },
+  "anaconda": {
+    "name": "Anaconda",
+    "lat": 46.1294685,
+    "lng": -112.953131,
+    "elevation": 5279,
+    "county": "Deer Lodge County",
+    "region": "Western"
+  },
+  "bainville": {
+    "name": "Bainville",
+    "lat": 48.139777,
+    "lng": -104.222916,
+    "elevation": 1982,
+    "county": "Roosevelt County",
+    "region": "Eastern"
+  },
+  "baker": {
+    "name": "Baker",
+    "lat": 46.3678114,
+    "lng": -104.2752261,
+    "elevation": 2946,
+    "county": "Fallon County",
+    "region": "Eastern"
+  },
+  "bearcreek": {
+    "name": "Bearcreek",
+    "lat": 45.1608855,
+    "lng": -109.1577101,
+    "elevation": 4606,
+    "county": "Carbon County",
+    "region": "Central"
+  },
+  "belgrade": {
+    "name": "Belgrade",
+    "lat": 45.773279,
+    "lng": -111.184535,
+    "elevation": 4462,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "belt": {
+    "name": "Belt",
+    "lat": 47.387633,
+    "lng": -110.927528,
+    "elevation": 3510,
+    "county": "Cascade County",
+    "region": "Central"
+  },
+  "big-sandy": {
+    "name": "Big Sandy",
+    "lat": 48.179976,
+    "lng": -110.111445,
+    "elevation": 2700,
+    "county": "Chouteau County",
+    "region": "Central"
+  },
+  "big-sky": {
+    "name": "Big Sky",
+    "lat": 45.2589644,
+    "lng": -111.308725,
+    "elevation": 6319,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "big-timber": {
+    "name": "Big Timber",
+    "lat": 45.834901,
+    "lng": -109.955311,
+    "elevation": 4091,
+    "county": "Sweet Grass County",
+    "region": "Central"
+  },
+  "bigfork": {
+    "name": "Bigfork",
+    "lat": 48.0679255,
+    "lng": -114.0966664,
+    "elevation": 2940,
+    "county": "Flathead County",
+    "region": "Western"
+  },
+  "billings": {
+    "name": "Billings",
+    "lat": 45.7874957,
+    "lng": -108.49607,
+    "elevation": 3123,
+    "county": "Yellowstone County",
+    "region": "Eastern"
+  },
+  "boulder": {
+    "name": "Boulder",
+    "lat": 46.236595,
+    "lng": -112.120834,
+    "elevation": 4908,
+    "county": "Jefferson County",
+    "region": "Central"
+  },
+  "bozeman": {
+    "name": "Bozeman",
+    "lat": 45.6794293,
+    "lng": -111.044047,
+    "elevation": 4826,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "bridger": {
+    "name": "Bridger",
+    "lat": 45.2957807,
+    "lng": -108.9137544,
+    "elevation": 3671,
+    "county": "Carbon County",
+    "region": "Central"
+  },
+  "broadus": {
+    "name": "Broadus",
+    "lat": 45.443881,
+    "lng": -105.40749,
+    "elevation": 3035,
+    "county": "Powder River County",
+    "region": "Eastern"
+  },
+  "broadview": {
+    "name": "Broadview",
+    "lat": 46.0977314,
+    "lng": -108.8770972,
+    "elevation": 3858,
+    "county": "Yellowstone County",
+    "region": "Central"
+  },
+  "browning": {
+    "name": "Browning",
+    "lat": 48.557743,
+    "lng": -113.017258,
+    "elevation": 4377,
+    "county": "Glacier County",
+    "region": "Western"
+  },
+  "butte": {
+    "name": "Butte",
+    "lat": 46.0131505,
+    "lng": -112.536508,
+    "elevation": 5741,
+    "county": "Silver Bow County",
+    "region": "Western"
+  },
+  "cascade": {
+    "name": "Cascade",
+    "lat": 47.3271465,
+    "lng": -111.3281242,
+    "elevation": 3894,
+    "county": "Cascade County",
+    "region": "Central"
+  },
+  "chester": {
+    "name": "Chester",
+    "lat": 48.510308,
+    "lng": -110.967315,
+    "elevation": 3133,
+    "county": "Liberty County",
+    "region": "Central"
+  },
+  "chinook": {
+    "name": "Chinook",
+    "lat": 48.590132,
+    "lng": -109.231823,
+    "elevation": 2421,
+    "county": "Blaine County",
+    "region": "Central"
+  },
+  "choteau": {
+    "name": "Choteau",
+    "lat": 47.812243,
+    "lng": -112.183375,
+    "elevation": 3825,
+    "county": "Teton County",
+    "region": "Central"
+  },
+  "circle": {
+    "name": "Circle",
+    "lat": 47.416675,
+    "lng": -105.592222,
+    "elevation": 2434,
+    "county": "McCone County",
+    "region": "Eastern"
+  },
+  "clyde-park": {
+    "name": "Clyde Park",
+    "lat": 45.886879,
+    "lng": -110.603819,
+    "elevation": 4865,
+    "county": "Park County",
+    "region": "Central"
+  },
+  "colstrip": {
+    "name": "Colstrip",
+    "lat": 45.884162,
+    "lng": -106.623637,
+    "elevation": 3238,
+    "county": "Rosebud County",
+    "region": "Eastern"
+  },
+  "columbia-falls": {
+    "name": "Columbia Falls",
+    "lat": 48.3697168,
+    "lng": -114.191582,
+    "elevation": 3077,
+    "county": "Flathead County",
+    "region": "Western"
+  },
+  "columbus": {
+    "name": "Columbus",
+    "lat": 45.6366114,
+    "lng": -109.252154,
+    "elevation": 3583,
+    "county": "Stillwater County",
+    "region": "Central"
+  },
+  "conrad": {
+    "name": "Conrad",
+    "lat": 48.170251,
+    "lng": -111.943019,
+    "elevation": 3510,
+    "county": "Pondera County",
+    "region": "Central"
+  },
+  "culbertson": {
+    "name": "Culbertson",
+    "lat": 48.1449031,
+    "lng": -104.5165641,
+    "elevation": 1932,
+    "county": "Roosevelt County",
+    "region": "Eastern"
+  },
+  "cut-bank": {
+    "name": "Cut Bank",
+    "lat": 48.63304,
+    "lng": -112.326162,
+    "elevation": 3776,
+    "county": "Glacier County",
+    "region": "Central"
+  },
+  "darby": {
+    "name": "Darby",
+    "lat": 46.022659,
+    "lng": -114.178093,
+    "elevation": 3885,
+    "county": "Ravalli County",
+    "region": "Western"
+  },
+  "deer-lodge": {
+    "name": "Deer Lodge",
+    "lat": 46.0753795,
+    "lng": -113.089332,
+    "elevation": 8497,
+    "county": "Deer Lodge County",
+    "region": "Western"
+  },
+  "denton": {
+    "name": "Denton",
+    "lat": 47.318629,
+    "lng": -109.948201,
+    "elevation": 3602,
+    "county": "Fergus County",
+    "region": "Central"
+  },
+  "dillon": {
+    "name": "Dillon",
+    "lat": 45.2141249,
+    "lng": -112.6346079,
+    "elevation": 5095,
+    "county": "Beaverhead County",
+    "region": "Western"
+  },
+  "dodson": {
+    "name": "Dodson",
+    "lat": 48.395979,
+    "lng": -108.243819,
+    "elevation": 2290,
+    "county": "Phillips County",
+    "region": "Eastern"
+  },
+  "drummond": {
+    "name": "Drummond",
+    "lat": 46.667431,
+    "lng": -113.147286,
+    "elevation": 3957,
+    "county": "Granite County",
+    "region": "Western"
+  },
+  "dutton": {
+    "name": "Dutton",
+    "lat": 47.844249,
+    "lng": -111.71171,
+    "elevation": 3698,
+    "county": "Teton County",
+    "region": "Central"
+  },
+  "east-glacier": {
+    "name": "East Glacier",
+    "lat": 48.4466475,
+    "lng": -113.2332922,
+    "elevation": 4852,
+    "county": "Glacier County",
+    "region": "Western"
+  },
+  "east-helena": {
+    "name": "East Helena",
+    "lat": 46.5895782,
+    "lng": -111.914593,
+    "elevation": 3888,
+    "county": "Lewis and Clark County",
+    "region": "Central"
+  },
+  "ekalaka": {
+    "name": "Ekalaka",
+    "lat": 45.8907706,
+    "lng": -104.5474596,
+    "elevation": 3425,
+    "county": "Carter County",
+    "region": "Eastern"
+  },
+  "ennis": {
+    "name": "Ennis",
+    "lat": 45.348817,
+    "lng": -111.729697,
+    "elevation": 4951,
+    "county": "Madison County",
+    "region": "Central"
+  },
+  "eureka": {
+    "name": "Eureka",
+    "lat": 48.8799647,
+    "lng": -115.0535,
+    "elevation": 2589,
+    "county": "Lincoln County",
+    "region": "Western"
+  },
+  "fairfield": {
+    "name": "Fairfield",
+    "lat": 47.614673,
+    "lng": -111.980279,
+    "elevation": 3986,
+    "county": "Teton County",
+    "region": "Central"
+  },
+  "fairview": {
+    "name": "Fairview",
+    "lat": 47.856408,
+    "lng": -104.044933,
+    "elevation": 1916,
+    "county": "Richland County",
+    "region": "Eastern"
+  },
+  "flaxville": {
+    "name": "Flaxville",
+    "lat": 48.8039142,
+    "lng": -105.1727604,
+    "elevation": 2779,
+    "county": "Daniels County",
+    "region": "Eastern"
+  },
+  "forsyth": {
+    "name": "Forsyth",
+    "lat": 46.266384,
+    "lng": -106.677812,
+    "elevation": 2526,
+    "county": "Rosebud County",
+    "region": "Eastern"
+  },
+  "fort-benton": {
+    "name": "Fort Benton",
+    "lat": 47.8176482,
+    "lng": -110.6716371,
+    "elevation": 2641,
+    "county": "Chouteau County",
+    "region": "Central"
+  },
+  "fort-peck": {
+    "name": "Fort Peck",
+    "lat": 48.0096025,
+    "lng": -106.447673,
+    "elevation": 2162,
+    "county": "Valley County",
+    "region": "Eastern"
+  },
+  "froid": {
+    "name": "Froid",
+    "lat": 48.334753,
+    "lng": -104.49383,
+    "elevation": 2024,
+    "county": "Roosevelt County",
+    "region": "Eastern"
+  },
+  "fromberg": {
+    "name": "Fromberg",
+    "lat": 45.3921696,
+    "lng": -108.9065335,
+    "elevation": 3524,
+    "county": "Carbon County",
+    "region": "Central"
+  },
+  "gardiner": {
+    "name": "Gardiner",
+    "lat": 45.0502165,
+    "lng": -110.7360473,
+    "elevation": 5906,
+    "county": "Park County",
+    "region": "Central"
+  },
+  "geraldine": {
+    "name": "Geraldine",
+    "lat": 47.6032974,
+    "lng": -110.2664376,
+    "elevation": 3143,
+    "county": "Chouteau County",
+    "region": "Central"
+  },
+  "glasgow": {
+    "name": "Glasgow",
+    "lat": 48.1955915,
+    "lng": -106.635556,
+    "elevation": 2096,
+    "county": "Valley County",
+    "region": "Eastern"
+  },
+  "glendive": {
+    "name": "Glendive",
+    "lat": 47.10529,
+    "lng": -104.71246,
+    "elevation": 2083,
+    "county": "Dawson County",
+    "region": "Eastern"
+  },
+  "grass-range": {
+    "name": "Grass Range",
+    "lat": 47.0266936,
+    "lng": -108.8034309,
+    "elevation": 3484,
+    "county": "Fergus County",
+    "region": "Central"
+  },
+  "great-falls": {
+    "name": "Great Falls",
+    "lat": 47.5048851,
+    "lng": -111.29189,
+    "elevation": 3340,
+    "county": "Cascade County",
+    "region": "Central"
+  },
+  "hamilton": {
+    "name": "Hamilton",
+    "lat": 46.2472045,
+    "lng": -114.1555462,
+    "elevation": 3573,
+    "county": "Ravalli County",
+    "region": "Western"
+  },
+  "hardin": {
+    "name": "Hardin",
+    "lat": 45.7324778,
+    "lng": -107.612031,
+    "elevation": 2910,
+    "county": "Big Horn County",
+    "region": "Eastern"
+  },
+  "harlem": {
+    "name": "Harlem",
+    "lat": 48.532501,
+    "lng": -108.784903,
+    "elevation": 2372,
+    "county": "Blaine County",
+    "region": "Central"
+  },
+  "harlowton": {
+    "name": "Harlowton",
+    "lat": 46.434925,
+    "lng": -109.835441,
+    "elevation": 4170,
+    "county": "Wheatland County",
+    "region": "Central"
+  },
+  "havre": {
+    "name": "Havre",
+    "lat": 48.5536972,
+    "lng": -109.677802,
+    "elevation": 2493,
+    "county": "Hill County",
+    "region": "Central"
+  },
+  "helena": {
+    "name": "Helena",
+    "lat": 46.5927425,
+    "lng": -112.036277,
+    "elevation": 4039,
+    "county": "Lewis and Clark County",
+    "region": "Central"
+  },
+  "hingham": {
+    "name": "Hingham",
+    "lat": 48.554991,
+    "lng": -110.422166,
+    "elevation": 3035,
+    "county": "Hill County",
+    "region": "Central"
+  },
+  "hobson": {
+    "name": "Hobson",
+    "lat": 47.000263,
+    "lng": -109.873654,
+    "elevation": 4091,
+    "county": "Judith Basin County",
+    "region": "Central"
+  },
+  "hot-springs": {
+    "name": "Hot Springs",
+    "lat": 47.6091041,
+    "lng": -114.668741,
+    "elevation": 2835,
+    "county": "Sanders County",
+    "region": "Western"
+  },
+  "hysham": {
+    "name": "Hysham",
+    "lat": 46.2913623,
+    "lng": -107.2315145,
+    "elevation": 2661,
+    "county": "Treasure County",
+    "region": "Eastern"
+  },
+  "ismay": {
+    "name": "Ismay",
+    "lat": 46.4972276,
+    "lng": -104.794128,
+    "elevation": 2523,
+    "county": "Custer County",
+    "region": "Eastern"
+  },
+  "joliet": {
+    "name": "Joliet",
+    "lat": 45.4850626,
+    "lng": -108.9703595,
+    "elevation": 3734,
+    "county": "Carbon County",
+    "region": "Central"
+  },
+  "jordan": {
+    "name": "Jordan",
+    "lat": 47.32121,
+    "lng": -106.910461,
+    "elevation": 2608,
+    "county": "Garfield County",
+    "region": "Eastern"
+  },
+  "judith-gap": {
+    "name": "Judith Gap",
+    "lat": 46.677179,
+    "lng": -109.75185,
+    "elevation": 4623,
+    "county": "Wheatland County",
+    "region": "Central"
+  },
+  "kalispell": {
+    "name": "Kalispell",
+    "lat": 48.202158,
+    "lng": -114.315321,
+    "elevation": 2959,
+    "county": "Flathead County",
+    "region": "Western"
+  },
+  "kevin": {
+    "name": "Kevin",
+    "lat": 48.745231,
+    "lng": -111.965372,
+    "elevation": 3330,
+    "county": "Toole County",
+    "region": "Central"
+  },
+  "laurel": {
+    "name": "Laurel",
+    "lat": 45.6691159,
+    "lng": -108.771532,
+    "elevation": 3307,
+    "county": "Yellowstone County",
+    "region": "Central"
+  },
+  "lavina": {
+    "name": "Lavina",
+    "lat": 46.2947988,
+    "lng": -108.9377067,
+    "elevation": 3442,
+    "county": "Golden Valley County",
+    "region": "Central"
+  },
+  "lewistown": {
+    "name": "Lewistown",
+    "lat": 47.0639275,
+    "lng": -109.428213,
+    "elevation": 3934,
+    "county": "Fergus County",
+    "region": "Central"
+  },
+  "libby": {
+    "name": "Libby",
+    "lat": 48.3883645,
+    "lng": -115.5558612,
+    "elevation": 2096,
+    "county": "Lincoln County",
+    "region": "Western"
+  },
+  "lima": {
+    "name": "Lima",
+    "lat": 44.6361718,
+    "lng": -112.5912118,
+    "elevation": 6253,
+    "county": "Beaverhead County",
+    "region": "Western"
+  },
+  "livingston": {
+    "name": "Livingston",
+    "lat": 45.6623873,
+    "lng": -110.5615899,
+    "elevation": 4501,
+    "county": "Park County",
+    "region": "Central"
+  },
+  "lodge-grass": {
+    "name": "Lodge Grass",
+    "lat": 45.3146237,
+    "lng": -107.36367,
+    "elevation": 3366,
+    "county": "Big Horn County",
+    "region": "Eastern"
+  },
+  "malta": {
+    "name": "Malta",
+    "lat": 48.3596948,
+    "lng": -107.8726879,
+    "elevation": 2254,
+    "county": "Phillips County",
+    "region": "Eastern"
+  },
+  "manhattan": {
+    "name": "Manhattan",
+    "lat": 45.855369,
+    "lng": -111.334081,
+    "elevation": 4249,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "medicine-lake": {
+    "name": "Medicine Lake",
+    "lat": 48.501414,
+    "lng": -104.504677,
+    "elevation": 1959,
+    "county": "Sheridan County",
+    "region": "Eastern"
+  },
+  "melstone": {
+    "name": "Melstone",
+    "lat": 46.599054,
+    "lng": -107.8694908,
+    "elevation": 2927,
+    "county": "Musselshell County",
+    "region": "Eastern"
+  },
+  "miles-city": {
+    "name": "Miles City",
+    "lat": 46.4070219,
+    "lng": -105.847843,
+    "elevation": 2365,
+    "county": "Custer County",
+    "region": "Eastern"
+  },
+  "missoula": {
+    "name": "Missoula",
+    "lat": 46.8701049,
+    "lng": -113.995267,
+    "elevation": 3215,
+    "county": "Missoula County",
+    "region": "Western"
+  },
+  "moore": {
+    "name": "Moore",
+    "lat": 46.975523,
+    "lng": -109.696854,
+    "elevation": 4154,
+    "county": "Fergus County",
+    "region": "Central"
+  },
+  "nashua": {
+    "name": "Nashua",
+    "lat": 48.132242,
+    "lng": -106.35642,
+    "elevation": 2064,
+    "county": "Valley County",
+    "region": "Eastern"
+  },
+  "neihart": {
+    "name": "Neihart",
+    "lat": 46.937126,
+    "lng": -110.7378183,
+    "elevation": 5705,
+    "county": "Cascade County",
+    "region": "Central"
+  },
+  "opheim": {
+    "name": "Opheim",
+    "lat": 48.857088,
+    "lng": -106.407904,
+    "elevation": 3268,
+    "county": "Valley County",
+    "region": "Eastern"
+  },
+  "outlook": {
+    "name": "Outlook",
+    "lat": 48.8887698,
+    "lng": -104.7781582,
+    "elevation": 2346,
+    "county": "Sheridan County",
+    "region": "Eastern"
+  },
+  "philipsburg": {
+    "name": "Philipsburg",
+    "lat": 46.3321878,
+    "lng": -113.2944992,
+    "elevation": 5249,
+    "county": "Granite County",
+    "region": "Western"
+  },
+  "pinesdale": {
+    "name": "Pinesdale",
+    "lat": 46.327745,
+    "lng": -114.2183816,
+    "elevation": 4003,
+    "county": "Ravalli County",
+    "region": "Western"
+  },
+  "plains": {
+    "name": "Plains",
+    "lat": 47.4605431,
+    "lng": -114.884788,
+    "elevation": 2467,
+    "county": "Sanders County",
+    "region": "Western"
+  },
+  "plentywood": {
+    "name": "Plentywood",
+    "lat": 48.77475,
+    "lng": -104.562458,
+    "elevation": 2047,
+    "county": "Sheridan County",
+    "region": "Eastern"
+  },
+  "plevna": {
+    "name": "Plevna",
+    "lat": 46.417672,
+    "lng": -104.518588,
+    "elevation": 2772,
+    "county": "Fallon County",
+    "region": "Eastern"
+  },
+  "polson": {
+    "name": "Polson",
+    "lat": 47.6905295,
+    "lng": -114.163761,
+    "elevation": 2930,
+    "county": "Lake County",
+    "region": "Western"
+  },
+  "poplar": {
+    "name": "Poplar",
+    "lat": 48.1126804,
+    "lng": -105.198113,
+    "elevation": 1995,
+    "county": "Roosevelt County",
+    "region": "Eastern"
+  },
+  "red-lodge": {
+    "name": "Red Lodge",
+    "lat": 45.1859038,
+    "lng": -109.2470622,
+    "elevation": 5568,
+    "county": "Carbon County",
+    "region": "Central"
+  },
+  "rexford": {
+    "name": "Rexford",
+    "lat": 48.899408,
+    "lng": -115.172115,
+    "elevation": 2549,
+    "county": "Lincoln County",
+    "region": "Western"
+  },
+  "richey": {
+    "name": "Richey",
+    "lat": 47.6440745,
+    "lng": -105.0695661,
+    "elevation": 2490,
+    "county": "Dawson County",
+    "region": "Eastern"
+  },
+  "ronan": {
+    "name": "Ronan",
+    "lat": 47.5288233,
+    "lng": -114.101501,
+    "elevation": 3051,
+    "county": "Lake County",
+    "region": "Western"
+  },
+  "roundup": {
+    "name": "Roundup",
+    "lat": 46.445242,
+    "lng": -108.541799,
+    "elevation": 3222,
+    "county": "Musselshell County",
+    "region": "Central"
+  },
+  "ryegate": {
+    "name": "Ryegate",
+    "lat": 46.2993387,
+    "lng": -109.2573501,
+    "elevation": 3668,
+    "county": "Golden Valley County",
+    "region": "Central"
+  },
+  "saco": {
+    "name": "Saco",
+    "lat": 48.4566091,
+    "lng": -107.3437749,
+    "elevation": 2182,
+    "county": "Phillips County",
+    "region": "Eastern"
+  },
+  "scobey": {
+    "name": "Scobey",
+    "lat": 48.792086,
+    "lng": -105.419948,
+    "elevation": 2470,
+    "county": "Daniels County",
+    "region": "Eastern"
+  },
+  "seeley-lake": {
+    "name": "Seeley Lake",
+    "lat": 47.1552987,
+    "lng": -113.4484281,
+    "elevation": 4088,
+    "county": "Missoula County",
+    "region": "Western"
+  },
+  "shelby": {
+    "name": "Shelby",
+    "lat": 48.5054997,
+    "lng": -111.856872,
+    "elevation": 3297,
+    "county": "Toole County",
+    "region": "Central"
+  },
+  "sheridan": {
+    "name": "Sheridan",
+    "lat": 48.7625919,
+    "lng": -104.5154683,
+    "elevation": 2123,
+    "county": "Sheridan County",
+    "region": "Eastern"
+  },
+  "sidney": {
+    "name": "Sidney",
+    "lat": 47.716735,
+    "lng": -104.155973,
+    "elevation": 1939,
+    "county": "Richland County",
+    "region": "Eastern"
+  },
+  "st-ignatius": {
+    "name": "St. Ignatius",
+    "lat": 47.3195165,
+    "lng": -114.097039,
+    "elevation": 2936,
+    "county": "Lake County",
+    "region": "Western"
+  },
+  "stanford": {
+    "name": "Stanford",
+    "lat": 47.1537394,
+    "lng": -110.2174252,
+    "elevation": 4275,
+    "county": "Judith Basin County",
+    "region": "Central"
+  },
+  "stevensville": {
+    "name": "Stevensville",
+    "lat": 46.510407,
+    "lng": -114.094385,
+    "elevation": 3317,
+    "county": "Ravalli County",
+    "region": "Western"
+  },
+  "sunburst": {
+    "name": "Sunburst",
+    "lat": 48.882602,
+    "lng": -111.910475,
+    "elevation": 3363,
+    "county": "Toole County",
+    "region": "Central"
+  },
+  "superior": {
+    "name": "Superior",
+    "lat": 47.1915937,
+    "lng": -114.891797,
+    "elevation": 2759,
+    "county": "Mineral County",
+    "region": "Western"
+  },
+  "terry": {
+    "name": "Terry",
+    "lat": 46.793063,
+    "lng": -105.312209,
+    "elevation": 2251,
+    "county": "Prairie County",
+    "region": "Eastern"
+  },
+  "thompson-falls": {
+    "name": "Thompson Falls",
+    "lat": 47.5971287,
+    "lng": -115.344309,
+    "elevation": 2562,
+    "county": "Sanders County",
+    "region": "Western"
+  },
+  "three-forks": {
+    "name": "Three Forks",
+    "lat": 45.892606,
+    "lng": -111.551448,
+    "elevation": 4075,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "townsend": {
+    "name": "Townsend",
+    "lat": 46.319098,
+    "lng": -111.520802,
+    "elevation": 3825,
+    "county": "Broadwater County",
+    "region": "Central"
+  },
+  "troy": {
+    "name": "Troy",
+    "lat": 48.4615199,
+    "lng": -115.8949854,
+    "elevation": 1909,
+    "county": "Lincoln County",
+    "region": "Western"
+  },
+  "twin-bridges": {
+    "name": "Twin Bridges",
+    "lat": 45.54437,
+    "lng": -112.331112,
+    "elevation": 4633,
+    "county": "Madison County",
+    "region": "Central"
+  },
+  "valier": {
+    "name": "Valier",
+    "lat": 48.30726,
+    "lng": -112.250743,
+    "elevation": 3819,
+    "county": "Pondera County",
+    "region": "Central"
+  },
+  "virginia-city": {
+    "name": "Virginia City",
+    "lat": 45.2935505,
+    "lng": -111.9442329,
+    "elevation": 5778,
+    "county": "Madison County",
+    "region": "Central"
+  },
+  "walkerville": {
+    "name": "Walkerville",
+    "lat": 46.030064,
+    "lng": -112.535223,
+    "elevation": 6204,
+    "county": "Silver Bow County",
+    "region": "Western"
+  },
+  "west-glacier": {
+    "name": "West Glacier",
+    "lat": 48.4963369,
+    "lng": -113.982443,
+    "elevation": 3222,
+    "county": "Flathead County",
+    "region": "Western"
+  },
+  "west-yellowstone": {
+    "name": "West Yellowstone",
+    "lat": 44.6632056,
+    "lng": -111.1012064,
+    "elevation": 6667,
+    "county": "Gallatin County",
+    "region": "Central"
+  },
+  "westby": {
+    "name": "Westby",
+    "lat": 48.869958,
+    "lng": -104.052304,
+    "elevation": 2093,
+    "county": "Sheridan County",
+    "region": "Eastern"
+  },
+  "white-sulphur-springs": {
+    "name": "White Sulphur Springs",
+    "lat": 46.5480749,
+    "lng": -110.9034718,
+    "elevation": 5039,
+    "county": "Meagher County",
+    "region": "Central"
+  },
+  "whitefish": {
+    "name": "Whitefish",
+    "lat": 48.4108018,
+    "lng": -114.334624,
+    "elevation": 3038,
+    "county": "Flathead County",
+    "region": "Western"
+  },
+  "whitehall": {
+    "name": "Whitehall",
+    "lat": 45.87076,
+    "lng": -112.097494,
+    "elevation": 4360,
+    "county": "Jefferson County",
+    "region": "Central"
+  },
+  "wibaux": {
+    "name": "Wibaux",
+    "lat": 46.910018,
+    "lng": -104.2215171,
+    "elevation": 2805,
+    "county": "Wibaux County",
+    "region": "Eastern"
+  },
+  "winifred": {
+    "name": "Winifred",
+    "lat": 47.557759,
+    "lng": -109.374902,
+    "elevation": 3228,
+    "county": "Fergus County",
+    "region": "Central"
+  },
+  "winnett": {
+    "name": "Winnett",
+    "lat": 47.0027521,
+    "lng": -108.352271,
+    "elevation": 2956,
+    "county": "Petroleum County",
+    "region": "Eastern"
+  },
+  "wolf-point": {
+    "name": "Wolf Point",
+    "lat": 48.090574,
+    "lng": -105.640557,
+    "elevation": 2001,
+    "county": "Roosevelt County",
+    "region": "Eastern"
+  }
+}

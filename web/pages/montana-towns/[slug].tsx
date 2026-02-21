@@ -14,6 +14,7 @@ import SingleTownMap from '../../components/SingleTownMap';
 import TownWeather from '../../components/TownWeather';
 import TownDistances from '../../components/TownDistances';
 import StoreBanner from '../../components/StoreBanner';
+import TownQuickFacts from '../../components/TownQuickFacts';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -30,6 +31,12 @@ type AirportDistance = {
   airportName?: string;
 };
 
+type TownFactsData = {
+  elevation: number | null;
+  county: string | null;
+  region: string | null;
+};
+
 type Props = {
   slug: string;
   townName: string;
@@ -40,9 +47,10 @@ type Props = {
   currentTownCoords: TownCoordinate | null;
   relatedTownCoords: TownCoordinate[];
   airportDistances: Record<string, AirportDistance> | null;
+  townFacts: TownFactsData | null;
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances }: Props) {
+export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts }: Props) {
   const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -103,6 +111,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
           <TableOfContents contentSelector=".content-section" />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
+          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
@@ -183,6 +192,22 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     .filter(Boolean) as TownCoordinate[];
   const airportDistances = allAirportDistances[slug] || null;
 
+  let allTownData: Record<string, any> = {};
+  try {
+    const townDataPath = path.resolve(process.cwd(), 'data', 'town-data.json');
+    if (fs.existsSync(townDataPath)) {
+      allTownData = JSON.parse(fs.readFileSync(townDataPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load town data", e);
+  }
+  const rawFacts = allTownData[slug];
+  const townFacts: TownFactsData | null = rawFacts ? {
+    elevation: rawFacts.elevation || null,
+    county: rawFacts.county || null,
+    region: rawFacts.region || null,
+  } : null;
+
   return { 
     props: { 
       slug, 
@@ -193,7 +218,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       relatedTowns,
       currentTownCoords,
       relatedTownCoords,
-      airportDistances
+      airportDistances,
+      townFacts
     } 
   };
 };

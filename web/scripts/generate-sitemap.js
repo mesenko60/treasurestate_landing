@@ -32,6 +32,7 @@ function url(loc, lastmod = new Date()) {
   entries.push(url(`${baseUrl}/planners/`));
   entries.push(url(`${baseUrl}/planners/montana-backroads/`));
   entries.push(url(`${baseUrl}/planners/hot-springs-guide/`));
+  entries.push(url(`${baseUrl}/find-your-town/`));
 
   // Information pages discovered in out/Information (assuming they still exist in Next.js pages)
   const infoDir = path.join(outDir, 'Information');
