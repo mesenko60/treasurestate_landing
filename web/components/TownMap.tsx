@@ -48,11 +48,22 @@ export default function TownMap({
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {towns.map((town) => (
-          <Marker key={town.slug} position={[town.lat, town.lng]} icon={customIcon}>
+          <Marker 
+            key={town.slug} 
+            position={[town.lat, town.lng]} 
+            icon={customIcon}
+            title={town.name}
+            eventHandlers={{
+              click: () => {
+                window.location.href = `/montana-towns/${town.slug}/`;
+              }
+            }}
+          >
             <Popup>
-              <a href={`/montana-towns/${town.slug}/`} style={{ fontWeight: 'bold', color: '#3b6978', textDecoration: 'none' }}>
-                {town.name}
-              </a>
+              <div style={{ textAlign: 'center' }}>
+                <strong>{town.name}</strong><br/>
+                <span style={{ fontSize: '0.85em', color: '#666' }}>Click marker to visit page</span>
+              </div>
             </Popup>
           </Marker>
         ))}
