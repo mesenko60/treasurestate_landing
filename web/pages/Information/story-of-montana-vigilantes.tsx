@@ -4,6 +4,7 @@ import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
+import TableOfContents from '../../components/TableOfContents';
 
 export default function StoryOfMontanaVigilantes() {
   return (
@@ -21,8 +22,21 @@ export default function StoryOfMontanaVigilantes() {
         alt="Historical image of Montana vigilantes"
         small
       />
-      <main>
-        <section className="content-section">
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+        <div style={{ display: 'none' }} className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @media (min-width: 1024px) {
+            .toc-desktop {
+              display: block !important;
+              width: 300px;
+              flex-shrink: 0;
+            }
+          }
+        `}} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <section className="content-section">
           <h2>The Noose of Doubt: Montana's Vigilante Legacy</h2>
           <p>The land remembers what men choose to forget. Here in the high country, where creeks cut through narrow valleys and pines stand sentinel on windswept ridges, winter silence can still summon echoes of the rough justice that once shaped Montana Territory. When the night grows deep and the snow falls sideways past your window, you might imagine you hear the creak of rope against pine beam, the shuffling of men's boots in pre-dawn darkness, the muffled protests of the condemned. Such imaginings come easy in a place where history hangs like a shadow across the landscape, where men once took the law into their own hands and called it righteousness.</p>
 
@@ -67,6 +81,7 @@ export default function StoryOfMontanaVigilantes() {
         </section>
         <AffiliateBanner />
         <ComingSoon />
+        </div>
       </main>
       <Footer />
     </>

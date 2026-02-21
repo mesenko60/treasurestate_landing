@@ -27,18 +27,6 @@ export default function Home() {
         <meta name="twitter:title" content="Treasure State - Explore the Wonders of Montana" />
         <meta name="twitter:description" content="Discover the meaning of 'Treasure State' and explore upcoming travel planners for Montana's backroads, hot springs, and the Bitterroot Valley." />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebSite',
-              name: 'Montana - The Treasure State',
-              alternateName: ['Treasure State', 'TreasureState'],
-              url: 'https://treasurestate.com/',
-            }),
-          }}
-        />
       </Head>
       <Header />
       <Hero

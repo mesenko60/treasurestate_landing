@@ -4,6 +4,7 @@ import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
+import TableOfContents from '../../components/TableOfContents';
 
 export default function GeologyOfWesternMontana() {
   return (
@@ -21,9 +22,22 @@ export default function GeologyOfWesternMontana() {
         alt="Scenic view of Western Montana's landscape"
         small
       />
-      <main>
-        <section className="content-section">
-          <h2>Western Montana's Geological Story</h2>
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+        <div style={{ display: 'none' }} className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @media (min-width: 1024px) {
+            .toc-desktop {
+              display: block !important;
+              width: 300px;
+              flex-shrink: 0;
+            }
+          }
+        `}} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <section className="content-section">
+            <h2>Western Montana's Geological Story</h2>
           <p>There is something about this country that gets into a person's bones, literally, as it turns out, for the bones of the earth itself tell the most remarkable story you could imagine, if you know how to read the stone scripture written across western Montana's face. I have spent the better part of my life trying to decipher the handwriting of this landscape, and what I have learned is that every ridge and gulch, every towering peak and gentle valley, speaks to us of time beyond human reckoning and forces that dwarf our prairie-bound imaginations.</p>
           
           <h3>Ancient Seas and Mountain Building</h3>
@@ -55,6 +69,7 @@ export default function GeologyOfWesternMontana() {
         </section>
         <AffiliateBanner />
         <ComingSoon />
+        </div>
       </main>
       <Footer />
     </>

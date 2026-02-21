@@ -4,6 +4,7 @@ import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
+import TableOfContents from '../../components/TableOfContents';
 
 export default function MontanaFacts() {
   return (
@@ -21,8 +22,21 @@ export default function MontanaFacts() {
         alt="Scenic Montana landscape with mountains and blue sky"
         small
       />
-      <main>
-        <section className="content-section">
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+        <div style={{ display: 'none' }} className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @media (min-width: 1024px) {
+            .toc-desktop {
+              display: block !important;
+              width: 300px;
+              flex-shrink: 0;
+            }
+          }
+        `}} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <section className="content-section">
           <h2>Montana: A Land of Intrigue and Wonder</h2>
           <p>Montana, a state that truly lives up to its nickname "The Treasure State," offers a captivating blend of sprawling landscapes, unique demographics, and a history as rugged as its terrain. For those who have never ventured into its vast expanse, Montana presents a world of fascinating contrasts and surprising details that paint a picture of a place unlike any other in the United States. From its sparse population to its extreme weather and its unexpected connections to Hollywood, Montana is a land of endless discovery.</p>
           
@@ -43,6 +57,7 @@ export default function MontanaFacts() {
         </section>
         <AffiliateBanner />
         <ComingSoon />
+        </div>
       </main>
       <Footer />
     </>

@@ -4,6 +4,7 @@ import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
+import TableOfContents from '../../components/TableOfContents';
 
 export default function MiningHistoryOfMontana() {
   return (
@@ -21,8 +22,21 @@ export default function MiningHistoryOfMontana() {
         alt="Scenic view of a Montana mining town"
         small
       />
-      <main>
-        <section className="content-section">
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+        <div style={{ display: 'none' }} className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @media (min-width: 1024px) {
+            .toc-desktop {
+              display: block !important;
+              width: 300px;
+              flex-shrink: 0;
+            }
+          }
+        `}} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <section className="content-section">
           <h2>Montana's Golden Fever: A History of Gold Mining in Big Sky Country</h2>
           <p>The land remembers. Long before the state boundaries were sketched onto maps by men with political ambitions, before the railroad brought its iron determination across the Continental Divide, before even the first white trappers wandered these high valleys trailing their solitude behind them like a scent, the land had been holding its secrets. Gold nestled in creekbeds and mountain veins, patient as winter, while centuries of wind and weather worked the stone faces of the mountains into the geography of waiting.</p>
           
@@ -58,6 +72,7 @@ export default function MiningHistoryOfMontana() {
         </section>
         <AffiliateBanner />
         <ComingSoon />
+        </div>
       </main>
       <Footer />
     </>
