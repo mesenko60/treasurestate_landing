@@ -154,9 +154,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     console.error("Failed to load coordinates", e);
   }
 
-  const currentTownCoords = coordinates[slug] || null;
+  const currentTownCoords = coordinates[slug] ? { ...coordinates[slug], slug } : null;
   const relatedTownCoords = relatedTowns
-    .map(t => coordinates[t.slug])
+    .map(t => coordinates[t.slug] ? { ...coordinates[t.slug], slug: t.slug } : null)
     .filter(Boolean) as TownCoordinate[];
 
   return { 
