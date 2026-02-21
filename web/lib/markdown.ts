@@ -23,12 +23,23 @@ export async function markdownToHtml(md: string): Promise<string> {
     .join('\n')
     .replace(/\n{3,}/g, '\n\n');
   
-  // Custom renderer to replace bold town names in the Nearby Destinations section with links
+  const allTowns = getTownList();
   const renderer = new marked.Renderer();
-  const originalListitem = renderer.listitem.bind(renderer);
   
-  // We'll process the links on the React side to avoid hardcoding logic here,
-  // so we just return the standard parsed HTML for now.
+  // Custom renderer to replace bold town names with internal links
+  const originalStrong = renderer.strong.bind(renderer);
+  renderer.strong = (text: string) => {
+    // Clean text to match against our town list (e.g. "Glendive, Montana:" -> "Glendive")
+    const cleanText = text.replace(/:$/, '').replace(/, Montana/i, '').trim();
+    const match = allTowns.find(t => t.name.toLowerCase() === cleanText.toLowerCase());
+    
+    if (match) {
+      return `<strong><a href="/montana-towns/${match.slug}/">${text}</a></strong>`;
+    }
+    
+    return originalStrong(text);
+  };
+  
   return await marked.parse(sanitizedMd, { renderer }) as unknown as string;
 }
 
