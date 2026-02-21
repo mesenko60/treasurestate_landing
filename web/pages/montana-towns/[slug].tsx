@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import Schema from '../../components/Schema';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NearbyTowns from '../../components/NearbyTowns';
+import TableOfContents from '../../components/TableOfContents';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -63,10 +64,27 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
         small
       />
       
-      <main>
-        <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <NearbyTowns towns={relatedTowns} />
-        <AffiliateBanner />
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+        <style dangerouslySetInnerHTML={{__html: `
+          .toc-desktop {
+            display: none;
+          }
+          @media (min-width: 1024px) {
+            .toc-desktop {
+              display: block;
+              width: 300px;
+              flex-shrink: 0;
+            }
+          }
+        `}} />
+        <div className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <NearbyTowns towns={relatedTowns} />
+          <AffiliateBanner />
+        </div>
       </main>
       
       <Footer />
