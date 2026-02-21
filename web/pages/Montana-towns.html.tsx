@@ -1,16 +1,38 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+import TownDirectory from '../components/TownDirectory';
 import { getTownList } from '../lib/towns';
+import fs from 'fs';
+import path from 'path';
 
 export async function getStaticProps() {
-  const towns = getTownList();
+  const basicTowns = getTownList();
+  let coordinates: Record<string, any> = {};
+  
+  try {
+    const coordsPath = path.resolve(process.cwd(), 'data', 'town-coordinates.json');
+    if (fs.existsSync(coordsPath)) {
+      coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load coordinates", e);
+  }
+
+  const towns = basicTowns.map(t => {
+    const coords = coordinates[t.slug];
+    return {
+      ...t,
+      lat: coords?.lat || null,
+      lng: coords?.lng || null
+    };
+  });
+
   return { props: { towns } };
 }
 
-export default function TownsIndex({ towns }: { towns: { name: string; slug: string }[] }) {
+export default function TownsIndex({ towns }: { towns: any[] }) {
   return (
     <>
       <Head>
@@ -22,13 +44,7 @@ export default function TownsIndex({ towns }: { towns: { name: string; slug: str
       <main>
         <section className="content-section">
           <h2>All Towns</h2>
-          <div className="towns-grid">
-            {towns.map((t) => (
-              <Link key={t.slug} href={`/montana-towns/${t.slug}/`}>
-                {t.name}
-              </Link>
-            ))}
-          </div>
+          <TownDirectory towns={towns} />
         </section>
       </main>
       <Footer />

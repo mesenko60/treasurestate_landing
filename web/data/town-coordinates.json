@@ -1,0 +1,672 @@
+{
+  "alberton": {
+    "name": "Alberton",
+    "lat": 47.0023955,
+    "lng": -114.477156
+  },
+  "anaconda": {
+    "name": "Anaconda",
+    "lat": 46.1294685,
+    "lng": -112.953131
+  },
+  "bainville": {
+    "name": "Bainville",
+    "lat": 48.139777,
+    "lng": -104.222916
+  },
+  "baker": {
+    "name": "Baker",
+    "lat": 46.3678114,
+    "lng": -104.2752261
+  },
+  "bearcreek": {
+    "name": "Bearcreek",
+    "lat": 45.1608855,
+    "lng": -109.1577101
+  },
+  "belgrade": {
+    "name": "Belgrade",
+    "lat": 45.773279,
+    "lng": -111.184535
+  },
+  "belt": {
+    "name": "Belt",
+    "lat": 47.387633,
+    "lng": -110.927528
+  },
+  "big-sandy": {
+    "name": "Big Sandy",
+    "lat": 48.179976,
+    "lng": -110.111445
+  },
+  "big-sky": {
+    "name": "Big Sky",
+    "lat": 45.2589644,
+    "lng": -111.308725
+  },
+  "big-timber": {
+    "name": "Big Timber",
+    "lat": 45.834901,
+    "lng": -109.955311
+  },
+  "bigfork": {
+    "name": "Bigfork",
+    "lat": 48.0679255,
+    "lng": -114.0966664
+  },
+  "billings": {
+    "name": "Billings",
+    "lat": 45.7874957,
+    "lng": -108.49607
+  },
+  "boulder": {
+    "name": "Boulder",
+    "lat": 46.236595,
+    "lng": -112.120834
+  },
+  "bozeman": {
+    "name": "Bozeman",
+    "lat": 45.6794293,
+    "lng": -111.044047
+  },
+  "bridger": {
+    "name": "Bridger",
+    "lat": 45.2957807,
+    "lng": -108.9137544
+  },
+  "broadus": {
+    "name": "Broadus",
+    "lat": 45.443881,
+    "lng": -105.40749
+  },
+  "broadview": {
+    "name": "Broadview",
+    "lat": 46.0977314,
+    "lng": -108.8770972
+  },
+  "browning": {
+    "name": "Browning",
+    "lat": 48.557743,
+    "lng": -113.017258
+  },
+  "butte": {
+    "name": "Butte",
+    "lat": 46.0131505,
+    "lng": -112.536508
+  },
+  "cascade": {
+    "name": "Cascade",
+    "lat": 47.3271465,
+    "lng": -111.3281242
+  },
+  "chester": {
+    "name": "Chester",
+    "lat": 48.510308,
+    "lng": -110.967315
+  },
+  "chinook": {
+    "name": "Chinook",
+    "lat": 48.590132,
+    "lng": -109.231823
+  },
+  "choteau": {
+    "name": "Choteau",
+    "lat": 47.812243,
+    "lng": -112.183375
+  },
+  "circle": {
+    "name": "Circle",
+    "lat": 47.416675,
+    "lng": -105.592222
+  },
+  "clyde-park": {
+    "name": "Clyde Park",
+    "lat": 45.886879,
+    "lng": -110.603819
+  },
+  "colstrip": {
+    "name": "Colstrip",
+    "lat": 45.884162,
+    "lng": -106.623637
+  },
+  "columbia-falls": {
+    "name": "Columbia Falls",
+    "lat": 48.3697168,
+    "lng": -114.191582
+  },
+  "columbus": {
+    "name": "Columbus",
+    "lat": 45.6366114,
+    "lng": -109.252154
+  },
+  "conrad": {
+    "name": "Conrad",
+    "lat": 48.170251,
+    "lng": -111.943019
+  },
+  "culbertson": {
+    "name": "Culbertson",
+    "lat": 48.1449031,
+    "lng": -104.5165641
+  },
+  "cut-bank": {
+    "name": "Cut Bank",
+    "lat": 48.63304,
+    "lng": -112.326162
+  },
+  "darby": {
+    "name": "Darby",
+    "lat": 46.022659,
+    "lng": -114.178093
+  },
+  "deer-lodge": {
+    "name": "Deer Lodge",
+    "lat": 46.0753795,
+    "lng": -113.089332
+  },
+  "denton": {
+    "name": "Denton",
+    "lat": 47.318629,
+    "lng": -109.948201
+  },
+  "dillon": {
+    "name": "Dillon",
+    "lat": 45.2141249,
+    "lng": -112.6346079
+  },
+  "dodson": {
+    "name": "Dodson",
+    "lat": 48.395979,
+    "lng": -108.243819
+  },
+  "drummond": {
+    "name": "Drummond",
+    "lat": 46.667431,
+    "lng": -113.147286
+  },
+  "dutton": {
+    "name": "Dutton",
+    "lat": 47.844249,
+    "lng": -111.71171
+  },
+  "east-glacier": {
+    "name": "East Glacier",
+    "lat": 48.4466475,
+    "lng": -113.2332922
+  },
+  "east-helena": {
+    "name": "East Helena",
+    "lat": 46.5895782,
+    "lng": -111.914593
+  },
+  "ekalaka": {
+    "name": "Ekalaka",
+    "lat": 45.8907706,
+    "lng": -104.5474596
+  },
+  "ennis": {
+    "name": "Ennis",
+    "lat": 45.348817,
+    "lng": -111.729697
+  },
+  "eureka": {
+    "name": "Eureka",
+    "lat": 48.8799647,
+    "lng": -115.0535
+  },
+  "fairfield": {
+    "name": "Fairfield",
+    "lat": 47.614673,
+    "lng": -111.980279
+  },
+  "fairview": {
+    "name": "Fairview",
+    "lat": 47.856408,
+    "lng": -104.044933
+  },
+  "flaxville": {
+    "name": "Flaxville",
+    "lat": 48.8039142,
+    "lng": -105.1727604
+  },
+  "forsyth": {
+    "name": "Forsyth",
+    "lat": 46.266384,
+    "lng": -106.677812
+  },
+  "fort-benton": {
+    "name": "Fort Benton",
+    "lat": 47.8176482,
+    "lng": -110.6716371
+  },
+  "fort-peck": {
+    "name": "Fort Peck",
+    "lat": 48.0096025,
+    "lng": -106.447673
+  },
+  "froid": {
+    "name": "Froid",
+    "lat": 48.334753,
+    "lng": -104.49383
+  },
+  "fromberg": {
+    "name": "Fromberg",
+    "lat": 45.3921696,
+    "lng": -108.9065335
+  },
+  "gardiner": {
+    "name": "Gardiner",
+    "lat": 45.0502165,
+    "lng": -110.7360473
+  },
+  "geraldine": {
+    "name": "Geraldine",
+    "lat": 47.6032974,
+    "lng": -110.2664376
+  },
+  "glasgow": {
+    "name": "Glasgow",
+    "lat": 48.1955915,
+    "lng": -106.635556
+  },
+  "glendive": {
+    "name": "Glendive",
+    "lat": 47.10529,
+    "lng": -104.71246
+  },
+  "grass-range": {
+    "name": "Grass Range",
+    "lat": 47.0266936,
+    "lng": -108.8034309
+  },
+  "great-falls": {
+    "name": "Great Falls",
+    "lat": 47.5048851,
+    "lng": -111.29189
+  },
+  "hamilton": {
+    "name": "Hamilton",
+    "lat": 46.2472045,
+    "lng": -114.1555462
+  },
+  "hardin": {
+    "name": "Hardin",
+    "lat": 45.7324778,
+    "lng": -107.612031
+  },
+  "harlem": {
+    "name": "Harlem",
+    "lat": 48.532501,
+    "lng": -108.784903
+  },
+  "harlowton": {
+    "name": "Harlowton",
+    "lat": 46.434925,
+    "lng": -109.835441
+  },
+  "havre": {
+    "name": "Havre",
+    "lat": 48.5536972,
+    "lng": -109.677802
+  },
+  "helena": {
+    "name": "Helena",
+    "lat": 46.5927425,
+    "lng": -112.036277
+  },
+  "hingham": {
+    "name": "Hingham",
+    "lat": 48.554991,
+    "lng": -110.422166
+  },
+  "hobson": {
+    "name": "Hobson",
+    "lat": 47.000263,
+    "lng": -109.873654
+  },
+  "hot-springs": {
+    "name": "Hot Springs",
+    "lat": 47.6091041,
+    "lng": -114.668741
+  },
+  "hysham": {
+    "name": "Hysham",
+    "lat": 46.2913623,
+    "lng": -107.2315145
+  },
+  "ismay": {
+    "name": "Ismay",
+    "lat": 46.4972276,
+    "lng": -104.794128
+  },
+  "joliet": {
+    "name": "Joliet",
+    "lat": 45.4850626,
+    "lng": -108.9703595
+  },
+  "jordan": {
+    "name": "Jordan",
+    "lat": 47.32121,
+    "lng": -106.910461
+  },
+  "judith-gap": {
+    "name": "Judith Gap",
+    "lat": 46.677179,
+    "lng": -109.75185
+  },
+  "kalispell": {
+    "name": "Kalispell",
+    "lat": 48.202158,
+    "lng": -114.315321
+  },
+  "kevin": {
+    "name": "Kevin",
+    "lat": 48.745231,
+    "lng": -111.965372
+  },
+  "laurel": {
+    "name": "Laurel",
+    "lat": 45.6691159,
+    "lng": -108.771532
+  },
+  "lavina": {
+    "name": "Lavina",
+    "lat": 46.2947988,
+    "lng": -108.9377067
+  },
+  "lewistown": {
+    "name": "Lewistown",
+    "lat": 47.0639275,
+    "lng": -109.428213
+  },
+  "libby": {
+    "name": "Libby",
+    "lat": 48.3883645,
+    "lng": -115.5558612
+  },
+  "lima": {
+    "name": "Lima",
+    "lat": 44.6361718,
+    "lng": -112.5912118
+  },
+  "livingston": {
+    "name": "Livingston",
+    "lat": 45.6623873,
+    "lng": -110.5615899
+  },
+  "lodge-grass": {
+    "name": "Lodge Grass",
+    "lat": 45.3146237,
+    "lng": -107.36367
+  },
+  "malta": {
+    "name": "Malta",
+    "lat": 48.3596948,
+    "lng": -107.8726879
+  },
+  "manhattan": {
+    "name": "Manhattan",
+    "lat": 45.855369,
+    "lng": -111.334081
+  },
+  "medicine-lake": {
+    "name": "Medicine Lake",
+    "lat": 48.501414,
+    "lng": -104.504677
+  },
+  "melstone": {
+    "name": "Melstone",
+    "lat": 46.599054,
+    "lng": -107.8694908
+  },
+  "miles-city": {
+    "name": "Miles City",
+    "lat": 46.4070219,
+    "lng": -105.847843
+  },
+  "missoula": {
+    "name": "Missoula",
+    "lat": 46.8701049,
+    "lng": -113.995267
+  },
+  "moore": {
+    "name": "Moore",
+    "lat": 46.975523,
+    "lng": -109.696854
+  },
+  "nashua": {
+    "name": "Nashua",
+    "lat": 48.132242,
+    "lng": -106.35642
+  },
+  "neihart": {
+    "name": "Neihart",
+    "lat": 46.937126,
+    "lng": -110.7378183
+  },
+  "opheim": {
+    "name": "Opheim",
+    "lat": 48.857088,
+    "lng": -106.407904
+  },
+  "outlook": {
+    "name": "Outlook",
+    "lat": 48.8887698,
+    "lng": -104.7781582
+  },
+  "philipsburg": {
+    "name": "Philipsburg",
+    "lat": 46.3321878,
+    "lng": -113.2944992
+  },
+  "pinesdale": {
+    "name": "Pinesdale",
+    "lat": 46.327745,
+    "lng": -114.2183816
+  },
+  "plains": {
+    "name": "Plains",
+    "lat": 47.4605431,
+    "lng": -114.884788
+  },
+  "plentywood": {
+    "name": "Plentywood",
+    "lat": 48.77475,
+    "lng": -104.562458
+  },
+  "plevna": {
+    "name": "Plevna",
+    "lat": 46.417672,
+    "lng": -104.518588
+  },
+  "polson": {
+    "name": "Polson",
+    "lat": 47.6905295,
+    "lng": -114.163761
+  },
+  "poplar": {
+    "name": "Poplar",
+    "lat": 48.1126804,
+    "lng": -105.198113
+  },
+  "red-lodge": {
+    "name": "Red Lodge",
+    "lat": 45.1859038,
+    "lng": -109.2470622
+  },
+  "rexford": {
+    "name": "Rexford",
+    "lat": 48.899408,
+    "lng": -115.172115
+  },
+  "richey": {
+    "name": "Richey",
+    "lat": 47.6440745,
+    "lng": -105.0695661
+  },
+  "ronan": {
+    "name": "Ronan",
+    "lat": 47.5288233,
+    "lng": -114.101501
+  },
+  "roundup": {
+    "name": "Roundup",
+    "lat": 46.445242,
+    "lng": -108.541799
+  },
+  "ryegate": {
+    "name": "Ryegate",
+    "lat": 46.2993387,
+    "lng": -109.2573501
+  },
+  "saco": {
+    "name": "Saco",
+    "lat": 48.4566091,
+    "lng": -107.3437749
+  },
+  "scobey": {
+    "name": "Scobey",
+    "lat": 48.792086,
+    "lng": -105.419948
+  },
+  "seeley-lake": {
+    "name": "Seeley Lake",
+    "lat": 47.1552987,
+    "lng": -113.4484281
+  },
+  "shelby": {
+    "name": "Shelby",
+    "lat": 48.5054997,
+    "lng": -111.856872
+  },
+  "sheridan": {
+    "name": "Sheridan",
+    "lat": 48.7625919,
+    "lng": -104.5154683
+  },
+  "sidney": {
+    "name": "Sidney",
+    "lat": 47.716735,
+    "lng": -104.155973
+  },
+  "st-ignatius": {
+    "name": "St. Ignatius",
+    "lat": 47.3195165,
+    "lng": -114.097039
+  },
+  "stanford": {
+    "name": "Stanford",
+    "lat": 47.1537394,
+    "lng": -110.2174252
+  },
+  "stevensville": {
+    "name": "Stevensville",
+    "lat": 46.510407,
+    "lng": -114.094385
+  },
+  "sunburst": {
+    "name": "Sunburst",
+    "lat": 48.882602,
+    "lng": -111.910475
+  },
+  "superior": {
+    "name": "Superior",
+    "lat": 47.1915937,
+    "lng": -114.891797
+  },
+  "terry": {
+    "name": "Terry",
+    "lat": 46.793063,
+    "lng": -105.312209
+  },
+  "thompson-falls": {
+    "name": "Thompson Falls",
+    "lat": 47.5971287,
+    "lng": -115.344309
+  },
+  "three-forks": {
+    "name": "Three Forks",
+    "lat": 45.892606,
+    "lng": -111.551448
+  },
+  "townsend": {
+    "name": "Townsend",
+    "lat": 46.319098,
+    "lng": -111.520802
+  },
+  "troy": {
+    "name": "Troy",
+    "lat": 48.4615199,
+    "lng": -115.8949854
+  },
+  "twin-bridges": {
+    "name": "Twin Bridges",
+    "lat": 45.54437,
+    "lng": -112.331112
+  },
+  "valier": {
+    "name": "Valier",
+    "lat": 48.30726,
+    "lng": -112.250743
+  },
+  "virginia-city": {
+    "name": "Virginia City",
+    "lat": 45.2935505,
+    "lng": -111.9442329
+  },
+  "walkerville": {
+    "name": "Walkerville",
+    "lat": 46.030064,
+    "lng": -112.535223
+  },
+  "west-glacier": {
+    "name": "West Glacier",
+    "lat": 48.4963369,
+    "lng": -113.982443
+  },
+  "west-yellowstone": {
+    "name": "West Yellowstone",
+    "lat": 44.6632056,
+    "lng": -111.1012064
+  },
+  "westby": {
+    "name": "Westby",
+    "lat": 48.869958,
+    "lng": -104.052304
+  },
+  "white-sulphur-springs": {
+    "name": "White Sulphur Springs",
+    "lat": 46.5480749,
+    "lng": -110.9034718
+  },
+  "whitefish": {
+    "name": "Whitefish",
+    "lat": 48.4108018,
+    "lng": -114.334624
+  },
+  "whitehall": {
+    "name": "Whitehall",
+    "lat": 45.87076,
+    "lng": -112.097494
+  },
+  "wibaux": {
+    "name": "Wibaux",
+    "lat": 46.910018,
+    "lng": -104.2215171
+  },
+  "winifred": {
+    "name": "Winifred",
+    "lat": 47.557759,
+    "lng": -109.374902
+  },
+  "winnett": {
+    "name": "Winnett",
+    "lat": 47.0027521,
+    "lng": -108.352271
+  },
+  "wolf-point": {
+    "name": "Wolf Point",
+    "lat": 48.090574,
+    "lng": -105.640557
+  }
+}
