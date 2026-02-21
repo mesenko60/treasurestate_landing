@@ -77,6 +77,6 @@ Ready to explore Hot Springs? Add it to your Montana travel itinerary and discov
 
 - Town of Hot Springs, Montana Official Website: https://townofhotspringsmt.com/
 - Hot Springs Montana Chamber of Commerce: https://www.hotspringsmtchamber.org/
-- Grokipedia - Hot Springs, Montana: https://en.grokipedia.org/wiki/Hot_Springs,_Montana
+- Grokipedia - Hot Springs, Montana: https://grokipedia.com/page/Hot_Springs,_Montana
 - Various search results for elevation and specific facts.
 

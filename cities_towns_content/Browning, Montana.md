@@ -77,6 +77,6 @@ Ready to explore Browning? Add it to your Montana travel itinerary and discover 
 - Visit Montana - Blackfeet Country Visitor Information (https://www.visitmt.com/listings/general/tourism-office/blackfeet-country-visitor-information)
 - Town of Browning Official Website (http://www.browningmontana.com/)
 - Browning Area Chamber of Commerce (via wtotravel.com - http://www.wtotravel.com/montana/browningarea.html)
-- Grokipedia (Category:People from Browning, Montana - https://en.grokipedia.org/wiki/Category:People_from_Browning,_Montana; Browning, Montana - https://en.grokipedia.org/wiki/Browning,_Montana)
+- Grokipedia (Category:People from Browning, Montana - https://grokipedia.com/page/Category:People_from_Browning,_Montana; Browning, Montana - https://grokipedia.com/page/Browning,_Montana)
 - Playback.fm - Famous People from Browning, Montana (https://playback.fm/born-in-city/browning-mt)
 - IMDb (for actor information verification)

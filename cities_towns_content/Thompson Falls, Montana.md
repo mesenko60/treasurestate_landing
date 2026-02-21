@@ -73,7 +73,7 @@ Ready to explore Thompson Falls? Add it to your Montana travel itinerary and dis
 
 ## Sources Used
 
-- Grokipedia contributors. "Thompson Falls, Montana." Grokipedia, The Free Encyclopedia. (https://en.grokipedia.org/wiki/Thompson_Falls,_Montana)
+- Grokipedia contributors. "Thompson Falls, Montana." Grokipedia, The Free Encyclopedia. (https://grokipedia.com/page/Thompson_Falls,_Montana)
 - Thompson Falls Chamber of Commerce. (https://www.thompsonfallschamber.org/)
 - Playback.fm. "Famous People From Thompson Falls, Montana." (https://playback.fm/born-in-city/thompson-falls-mt)
 - Montana Fish, Wildlife & Parks. "Thompson Falls State Park." (https://fwp.mt.gov/thompson-falls)
