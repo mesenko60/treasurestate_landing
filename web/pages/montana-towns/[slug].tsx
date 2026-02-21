@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import type { GetStaticPaths, GetStaticProps } from 'next';
+import fs from 'fs';
+import path from 'path';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import AffiliateBanner from '../../components/AffiliateBanner';
@@ -8,8 +10,16 @@ import Schema from '../../components/Schema';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NearbyTowns from '../../components/NearbyTowns';
 import TableOfContents from '../../components/TableOfContents';
+import SingleTownMap from '../../components/SingleTownMap';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
+
+type TownCoordinate = {
+  name: string;
+  slug: string;
+  lat: number;
+  lng: number;
+};
 
 type Props = {
   slug: string;
@@ -18,9 +28,11 @@ type Props = {
   description: string;
   aeoData: AEOData | null;
   relatedTowns: { name: string; slug: string }[];
+  currentTownCoords: TownCoordinate | null;
+  relatedTownCoords: TownCoordinate[];
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns }: Props) {
+export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords }: Props) {
   const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -82,6 +94,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
           <AffiliateBanner />
         </div>
@@ -131,5 +144,31 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     relatedTowns = getRelatedTowns(slug, 3);
   }
 
-  return { props: { slug, townName, contentHtml, description, aeoData, relatedTowns } };
+  let coordinates: Record<string, TownCoordinate> = {};
+  try {
+    const coordsPath = path.resolve(process.cwd(), 'data', 'town-coordinates.json');
+    if (fs.existsSync(coordsPath)) {
+      coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load coordinates", e);
+  }
+
+  const currentTownCoords = coordinates[slug] || null;
+  const relatedTownCoords = relatedTowns
+    .map(t => coordinates[t.slug])
+    .filter(Boolean) as TownCoordinate[];
+
+  return { 
+    props: { 
+      slug, 
+      townName, 
+      contentHtml, 
+      description, 
+      aeoData, 
+      relatedTowns,
+      currentTownCoords,
+      relatedTownCoords
+    } 
+  };
 };

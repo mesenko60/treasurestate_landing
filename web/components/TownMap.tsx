@@ -1,5 +1,5 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import React, { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -21,13 +21,28 @@ type TownCoordinate = {
   lng: number;
 };
 
-export default function TownMap({ towns }: { towns: TownCoordinate[] }) {
-  // Approximate center of Montana
-  const center: [number, number] = [46.9653, -109.5337];
-  
+// Component to handle dynamic center/zoom updates
+function MapUpdater({ center, zoom }: { center: [number, number], zoom: number }) {
+  const map = useMap();
+  useEffect(() => {
+    map.setView(center, zoom);
+  }, [center, zoom, map]);
+  return null;
+}
+
+export default function TownMap({ 
+  towns, 
+  center = [46.9653, -109.5337],
+  zoom = 6 
+}: { 
+  towns: TownCoordinate[];
+  center?: [number, number];
+  zoom?: number;
+}) {
   return (
     <div style={{ height: '400px', width: '100%', marginBottom: '2rem', borderRadius: '8px', overflow: 'hidden', zIndex: 1, position: 'relative' }}>
-      <MapContainer center={center} zoom={6} style={{ height: '100%', width: '100%', zIndex: 1 }}>
+      <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%', zIndex: 1 }}>
+        <MapUpdater center={center} zoom={zoom} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
