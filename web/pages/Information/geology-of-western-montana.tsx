@@ -23,18 +23,21 @@ export default function GeologyOfWesternMontana() {
         small
       />
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
-        <div style={{ display: 'none' }} className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
-        </div>
         <style dangerouslySetInnerHTML={{__html: `
+          .toc-desktop {
+            display: none;
+          }
           @media (min-width: 1024px) {
             .toc-desktop {
-              display: block !important;
+              display: block;
               width: 300px;
               flex-shrink: 0;
             }
           }
         `}} />
+        <div className="toc-desktop">
+          <TableOfContents contentSelector=".content-section" />
+        </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <section className="content-section">
             <h2>Western Montana's Geological Story</h2>
