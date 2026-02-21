@@ -1,0 +1,3486 @@
+{
+  "alberton": {
+    "BZN": {
+      "durationSeconds": 13402,
+      "distanceMiles": 224
+    },
+    "BIL": {
+      "durationSeconds": 23280,
+      "distanceMiles": 376
+    },
+    "MSO": {
+      "durationSeconds": 1818,
+      "distanceMiles": 24
+    },
+    "FCA": {
+      "durationSeconds": 10746,
+      "distanceMiles": 135
+    },
+    "GTF": {
+      "durationSeconds": 14475,
+      "distanceMiles": 200
+    },
+    "HLN": {
+      "durationSeconds": 9381,
+      "distanceMiles": 145
+    }
+  },
+  "anaconda": {
+    "BZN": {
+      "durationSeconds": 6325,
+      "distanceMiles": 101
+    },
+    "BIL": {
+      "durationSeconds": 16203,
+      "distanceMiles": 254
+    },
+    "MSO": {
+      "durationSeconds": 7009,
+      "distanceMiles": 112
+    },
+    "FCA": {
+      "durationSeconds": 15040,
+      "distanceMiles": 220
+    },
+    "GTF": {
+      "durationSeconds": 11755,
+      "distanceMiles": 180
+    },
+    "HLN": {
+      "durationSeconds": 5842,
+      "distanceMiles": 93
+    }
+  },
+  "bainville": {
+    "BZN": {
+      "durationSeconds": 29414,
+      "distanceMiles": 462
+    },
+    "BIL": {
+      "durationSeconds": 21298,
+      "distanceMiles": 316
+    },
+    "MSO": {
+      "durationSeconds": 38260,
+      "distanceMiles": 560
+    },
+    "FCA": {
+      "durationSeconds": 36699,
+      "distanceMiles": 529
+    },
+    "GTF": {
+      "durationSeconds": 28181,
+      "distanceMiles": 398
+    },
+    "HLN": {
+      "durationSeconds": 31858,
+      "distanceMiles": 478
+    }
+  },
+  "baker": {
+    "BZN": {
+      "durationSeconds": 25307,
+      "distanceMiles": 375
+    },
+    "BIL": {
+      "durationSeconds": 17191,
+      "distanceMiles": 228
+    },
+    "MSO": {
+      "durationSeconds": 36885,
+      "distanceMiles": 573
+    },
+    "FCA": {
+      "durationSeconds": 43781,
+      "distanceMiles": 638
+    },
+    "GTF": {
+      "durationSeconds": 30345,
+      "distanceMiles": 430
+    },
+    "HLN": {
+      "durationSeconds": 31217,
+      "distanceMiles": 464
+    }
+  },
+  "bearcreek": {
+    "BZN": {
+      "durationSeconds": 11101,
+      "distanceMiles": 166
+    },
+    "BIL": {
+      "durationSeconds": 5881,
+      "distanceMiles": 68
+    },
+    "MSO": {
+      "durationSeconds": 22679,
+      "distanceMiles": 364
+    },
+    "FCA": {
+      "durationSeconds": 30710,
+      "distanceMiles": 472
+    },
+    "GTF": {
+      "durationSeconds": 20773,
+      "distanceMiles": 285
+    },
+    "HLN": {
+      "durationSeconds": 17011,
+      "distanceMiles": 255
+    }
+  },
+  "belgrade": {
+    "BZN": {
+      "durationSeconds": 396,
+      "distanceMiles": 2
+    },
+    "BIL": {
+      "durationSeconds": 10278,
+      "distanceMiles": 155
+    },
+    "MSO": {
+      "durationSeconds": 11892,
+      "distanceMiles": 199
+    },
+    "FCA": {
+      "durationSeconds": 19923,
+      "distanceMiles": 307
+    },
+    "GTF": {
+      "durationSeconds": 12141,
+      "distanceMiles": 177
+    },
+    "HLN": {
+      "durationSeconds": 6224,
+      "distanceMiles": 90
+    }
+  },
+  "belt": {
+    "BZN": {
+      "durationSeconds": 12746,
+      "distanceMiles": 198
+    },
+    "BIL": {
+      "durationSeconds": 13940,
+      "distanceMiles": 198
+    },
+    "MSO": {
+      "durationSeconds": 13414,
+      "distanceMiles": 194
+    },
+    "FCA": {
+      "durationSeconds": 16602,
+      "distanceMiles": 237
+    },
+    "GTF": {
+      "durationSeconds": 3166,
+      "distanceMiles": 29
+    },
+    "HLN": {
+      "durationSeconds": 6843,
+      "distanceMiles": 109
+    }
+  },
+  "big-sandy": {
+    "BZN": {
+      "durationSeconds": 16471,
+      "distanceMiles": 256
+    },
+    "BIL": {
+      "durationSeconds": 20372,
+      "distanceMiles": 295
+    },
+    "MSO": {
+      "durationSeconds": 16970,
+      "distanceMiles": 250
+    },
+    "FCA": {
+      "durationSeconds": 19626,
+      "distanceMiles": 283
+    },
+    "GTF": {
+      "durationSeconds": 6892,
+      "distanceMiles": 87
+    },
+    "HLN": {
+      "durationSeconds": 10569,
+      "distanceMiles": 168
+    }
+  },
+  "big-sky": {
+    "BZN": {
+      "durationSeconds": 3627,
+      "distanceMiles": 46
+    },
+    "BIL": {
+      "durationSeconds": 13345,
+      "distanceMiles": 192
+    },
+    "MSO": {
+      "durationSeconds": 15090,
+      "distanceMiles": 242
+    },
+    "FCA": {
+      "durationSeconds": 23121,
+      "distanceMiles": 350
+    },
+    "GTF": {
+      "durationSeconds": 15339,
+      "distanceMiles": 220
+    },
+    "HLN": {
+      "durationSeconds": 9422,
+      "distanceMiles": 133
+    }
+  },
+  "big-timber": {
+    "BZN": {
+      "durationSeconds": 4446,
+      "distanceMiles": 70
+    },
+    "BIL": {
+      "durationSeconds": 6258,
+      "distanceMiles": 85
+    },
+    "MSO": {
+      "durationSeconds": 16024,
+      "distanceMiles": 269
+    },
+    "FCA": {
+      "durationSeconds": 24055,
+      "distanceMiles": 376
+    },
+    "GTF": {
+      "durationSeconds": 14165,
+      "distanceMiles": 181
+    },
+    "HLN": {
+      "durationSeconds": 10356,
+      "distanceMiles": 159
+    }
+  },
+  "bigfork": {
+    "BZN": {
+      "durationSeconds": 18552,
+      "distanceMiles": 283
+    },
+    "BIL": {
+      "durationSeconds": 28430,
+      "distanceMiles": 436
+    },
+    "MSO": {
+      "durationSeconds": 7944,
+      "distanceMiles": 94
+    },
+    "FCA": {
+      "durationSeconds": 2333,
+      "distanceMiles": 26
+    },
+    "GTF": {
+      "durationSeconds": 16493,
+      "distanceMiles": 222
+    },
+    "HLN": {
+      "durationSeconds": 12742,
+      "distanceMiles": 179
+    }
+  },
+  "billings": {
+    "BZN": {
+      "durationSeconds": 9611,
+      "distanceMiles": 154
+    },
+    "BIL": {
+      "durationSeconds": 1253,
+      "distanceMiles": 6
+    },
+    "MSO": {
+      "durationSeconds": 21189,
+      "distanceMiles": 352
+    },
+    "FCA": {
+      "durationSeconds": 29220,
+      "distanceMiles": 460
+    },
+    "GTF": {
+      "durationSeconds": 16410,
+      "distanceMiles": 227
+    },
+    "HLN": {
+      "durationSeconds": 15521,
+      "distanceMiles": 243
+    }
+  },
+  "boulder": {
+    "BZN": {
+      "durationSeconds": 6282,
+      "distanceMiles": 77
+    },
+    "BIL": {
+      "durationSeconds": 16160,
+      "distanceMiles": 230
+    },
+    "MSO": {
+      "durationSeconds": 9637,
+      "distanceMiles": 150
+    },
+    "FCA": {
+      "durationSeconds": 15838,
+      "distanceMiles": 231
+    },
+    "GTF": {
+      "durationSeconds": 7955,
+      "distanceMiles": 118
+    },
+    "HLN": {
+      "durationSeconds": 2041,
+      "distanceMiles": 31
+    }
+  },
+  "bozeman": {
+    "BZN": {
+      "durationSeconds": 927,
+      "distanceMiles": 10
+    },
+    "BIL": {
+      "durationSeconds": 9837,
+      "distanceMiles": 146
+    },
+    "MSO": {
+      "durationSeconds": 12505,
+      "distanceMiles": 208
+    },
+    "FCA": {
+      "durationSeconds": 20536,
+      "distanceMiles": 316
+    },
+    "GTF": {
+      "durationSeconds": 12754,
+      "distanceMiles": 186
+    },
+    "HLN": {
+      "durationSeconds": 6837,
+      "distanceMiles": 99
+    }
+  },
+  "bridger": {
+    "BZN": {
+      "durationSeconds": 10070,
+      "distanceMiles": 154
+    },
+    "BIL": {
+      "durationSeconds": 4328,
+      "distanceMiles": 48
+    },
+    "MSO": {
+      "durationSeconds": 21648,
+      "distanceMiles": 352
+    },
+    "FCA": {
+      "durationSeconds": 29679,
+      "distanceMiles": 460
+    },
+    "GTF": {
+      "durationSeconds": 19219,
+      "distanceMiles": 265
+    },
+    "HLN": {
+      "durationSeconds": 15980,
+      "distanceMiles": 243
+    }
+  },
+  "broadus": {
+    "BZN": {
+      "durationSeconds": 19967,
+      "distanceMiles": 319
+    },
+    "BIL": {
+      "durationSeconds": 11851,
+      "distanceMiles": 173
+    },
+    "MSO": {
+      "durationSeconds": 31545,
+      "distanceMiles": 517
+    },
+    "FCA": {
+      "durationSeconds": 39576,
+      "distanceMiles": 625
+    },
+    "GTF": {
+      "durationSeconds": 27008,
+      "distanceMiles": 393
+    },
+    "HLN": {
+      "durationSeconds": 25877,
+      "distanceMiles": 408
+    }
+  },
+  "broadview": {
+    "BZN": {
+      "durationSeconds": 11316,
+      "distanceMiles": 177
+    },
+    "BIL": {
+      "durationSeconds": 2728,
+      "distanceMiles": 30
+    },
+    "MSO": {
+      "durationSeconds": 22398,
+      "distanceMiles": 315
+    },
+    "FCA": {
+      "durationSeconds": 27589,
+      "distanceMiles": 403
+    },
+    "GTF": {
+      "durationSeconds": 14153,
+      "distanceMiles": 196
+    },
+    "HLN": {
+      "durationSeconds": 14805,
+      "distanceMiles": 196
+    }
+  },
+  "browning": {
+    "BZN": {
+      "durationSeconds": 18504,
+      "distanceMiles": 264
+    },
+    "BIL": {
+      "durationSeconds": 23905,
+      "distanceMiles": 342
+    },
+    "MSO": {
+      "durationSeconds": 15206,
+      "distanceMiles": 199
+    },
+    "FCA": {
+      "durationSeconds": 6611,
+      "distanceMiles": 91
+    },
+    "GTF": {
+      "durationSeconds": 9931,
+      "distanceMiles": 130
+    },
+    "HLN": {
+      "durationSeconds": 12601,
+      "distanceMiles": 175
+    }
+  },
+  "butte": {
+    "BZN": {
+      "durationSeconds": 4935,
+      "distanceMiles": 78
+    },
+    "BIL": {
+      "durationSeconds": 14813,
+      "distanceMiles": 231
+    },
+    "MSO": {
+      "durationSeconds": 7510,
+      "distanceMiles": 125
+    },
+    "FCA": {
+      "durationSeconds": 15541,
+      "distanceMiles": 233
+    },
+    "GTF": {
+      "durationSeconds": 10365,
+      "distanceMiles": 157
+    },
+    "HLN": {
+      "durationSeconds": 4451,
+      "distanceMiles": 70
+    }
+  },
+  "cascade": {
+    "BZN": {
+      "durationSeconds": 13859,
+      "distanceMiles": 184
+    },
+    "BIL": {
+      "durationSeconds": 18081,
+      "distanceMiles": 231
+    },
+    "MSO": {
+      "durationSeconds": 14695,
+      "distanceMiles": 188
+    },
+    "FCA": {
+      "durationSeconds": 17884,
+      "distanceMiles": 231
+    },
+    "GTF": {
+      "durationSeconds": 4455,
+      "distanceMiles": 24
+    },
+    "HLN": {
+      "durationSeconds": 7956,
+      "distanceMiles": 96
+    }
+  },
+  "chester": {
+    "BZN": {
+      "durationSeconds": 17369,
+      "distanceMiles": 271
+    },
+    "BIL": {
+      "durationSeconds": 21269,
+      "distanceMiles": 309
+    },
+    "MSO": {
+      "durationSeconds": 17868,
+      "distanceMiles": 264
+    },
+    "FCA": {
+      "durationSeconds": 13696,
+      "distanceMiles": 193
+    },
+    "GTF": {
+      "durationSeconds": 7789,
+      "distanceMiles": 102
+    },
+    "HLN": {
+      "durationSeconds": 11466,
+      "distanceMiles": 182
+    }
+  },
+  "chinook": {
+    "BZN": {
+      "durationSeconds": 20386,
+      "distanceMiles": 313
+    },
+    "BIL": {
+      "durationSeconds": 19581,
+      "distanceMiles": 231
+    },
+    "MSO": {
+      "durationSeconds": 20884,
+      "distanceMiles": 306
+    },
+    "FCA": {
+      "durationSeconds": 19324,
+      "distanceMiles": 275
+    },
+    "GTF": {
+      "durationSeconds": 10806,
+      "distanceMiles": 144
+    },
+    "HLN": {
+      "durationSeconds": 14483,
+      "distanceMiles": 224
+    }
+  },
+  "choteau": {
+    "BZN": {
+      "durationSeconds": 13505,
+      "distanceMiles": 192
+    },
+    "BIL": {
+      "durationSeconds": 18906,
+      "distanceMiles": 270
+    },
+    "MSO": {
+      "durationSeconds": 11890,
+      "distanceMiles": 168
+    },
+    "FCA": {
+      "durationSeconds": 11513,
+      "distanceMiles": 163
+    },
+    "GTF": {
+      "durationSeconds": 4931,
+      "distanceMiles": 58
+    },
+    "HLN": {
+      "durationSeconds": 7602,
+      "distanceMiles": 103
+    }
+  },
+  "circle": {
+    "BZN": {
+      "durationSeconds": 25226,
+      "distanceMiles": 368
+    },
+    "BIL": {
+      "durationSeconds": 17679,
+      "distanceMiles": 270
+    },
+    "MSO": {
+      "durationSeconds": 31791,
+      "distanceMiles": 473
+    },
+    "FCA": {
+      "durationSeconds": 34980,
+      "distanceMiles": 517
+    },
+    "GTF": {
+      "durationSeconds": 21544,
+      "distanceMiles": 309
+    },
+    "HLN": {
+      "durationSeconds": 25221,
+      "distanceMiles": 389
+    }
+  },
+  "clyde-park": {
+    "BZN": {
+      "durationSeconds": 4078,
+      "distanceMiles": 57
+    },
+    "BIL": {
+      "durationSeconds": 9013,
+      "distanceMiles": 128
+    },
+    "MSO": {
+      "durationSeconds": 15656,
+      "distanceMiles": 255
+    },
+    "FCA": {
+      "durationSeconds": 22441,
+      "distanceMiles": 310
+    },
+    "GTF": {
+      "durationSeconds": 14196,
+      "distanceMiles": 157
+    },
+    "HLN": {
+      "durationSeconds": 8647,
+      "distanceMiles": 110
+    }
+  },
+  "colstrip": {
+    "BZN": {
+      "durationSeconds": 17779,
+      "distanceMiles": 277
+    },
+    "BIL": {
+      "durationSeconds": 9663,
+      "distanceMiles": 131
+    },
+    "MSO": {
+      "durationSeconds": 29357,
+      "distanceMiles": 476
+    },
+    "FCA": {
+      "durationSeconds": 37388,
+      "distanceMiles": 583
+    },
+    "GTF": {
+      "durationSeconds": 24820,
+      "distanceMiles": 352
+    },
+    "HLN": {
+      "durationSeconds": 23689,
+      "distanceMiles": 366
+    }
+  },
+  "columbia-falls": {
+    "BZN": {
+      "durationSeconds": 20117,
+      "distanceMiles": 309
+    },
+    "BIL": {
+      "durationSeconds": 29911,
+      "distanceMiles": 426
+    },
+    "MSO": {
+      "durationSeconds": 9822,
+      "distanceMiles": 119
+    },
+    "FCA": {
+      "durationSeconds": 705,
+      "distanceMiles": 7
+    },
+    "GTF": {
+      "durationSeconds": 15937,
+      "distanceMiles": 214
+    },
+    "HLN": {
+      "durationSeconds": 14307,
+      "distanceMiles": 204
+    }
+  },
+  "columbus": {
+    "BZN": {
+      "durationSeconds": 6729,
+      "distanceMiles": 111
+    },
+    "BIL": {
+      "durationSeconds": 3990,
+      "distanceMiles": 46
+    },
+    "MSO": {
+      "durationSeconds": 18307,
+      "distanceMiles": 310
+    },
+    "FCA": {
+      "durationSeconds": 26338,
+      "distanceMiles": 417
+    },
+    "GTF": {
+      "durationSeconds": 16629,
+      "distanceMiles": 222
+    },
+    "HLN": {
+      "durationSeconds": 12639,
+      "distanceMiles": 200
+    }
+  },
+  "conrad": {
+    "BZN": {
+      "durationSeconds": 14632,
+      "distanceMiles": 235
+    },
+    "BIL": {
+      "durationSeconds": 19026,
+      "distanceMiles": 279
+    },
+    "MSO": {
+      "durationSeconds": 13995,
+      "distanceMiles": 209
+    },
+    "FCA": {
+      "durationSeconds": 11827,
+      "distanceMiles": 159
+    },
+    "GTF": {
+      "durationSeconds": 5052,
+      "distanceMiles": 67
+    },
+    "HLN": {
+      "durationSeconds": 8729,
+      "distanceMiles": 147
+    }
+  },
+  "culbertson": {
+    "BZN": {
+      "durationSeconds": 28635,
+      "distanceMiles": 459
+    },
+    "BIL": {
+      "durationSeconds": 20519,
+      "distanceMiles": 313
+    },
+    "MSO": {
+      "durationSeconds": 37236,
+      "distanceMiles": 546
+    },
+    "FCA": {
+      "durationSeconds": 35675,
+      "distanceMiles": 514
+    },
+    "GTF": {
+      "durationSeconds": 27157,
+      "distanceMiles": 384
+    },
+    "HLN": {
+      "durationSeconds": 30834,
+      "distanceMiles": 464
+    }
+  },
+  "cut-bank": {
+    "BZN": {
+      "durationSeconds": 17345,
+      "distanceMiles": 281
+    },
+    "BIL": {
+      "durationSeconds": 21740,
+      "distanceMiles": 324
+    },
+    "MSO": {
+      "durationSeconds": 16708,
+      "distanceMiles": 254
+    },
+    "FCA": {
+      "durationSeconds": 9110,
+      "distanceMiles": 126
+    },
+    "GTF": {
+      "durationSeconds": 7765,
+      "distanceMiles": 112
+    },
+    "HLN": {
+      "durationSeconds": 11442,
+      "distanceMiles": 192
+    }
+  },
+  "darby": {
+    "BZN": {
+      "durationSeconds": 15136,
+      "distanceMiles": 192
+    },
+    "BIL": {
+      "durationSeconds": 25014,
+      "distanceMiles": 344
+    },
+    "MSO": {
+      "durationSeconds": 5523,
+      "distanceMiles": 68
+    },
+    "FCA": {
+      "durationSeconds": 15032,
+      "distanceMiles": 187
+    },
+    "GTF": {
+      "durationSeconds": 17551,
+      "distanceMiles": 234
+    },
+    "HLN": {
+      "durationSeconds": 12457,
+      "distanceMiles": 180
+    }
+  },
+  "deer-lodge": {
+    "BZN": {
+      "durationSeconds": 11551,
+      "distanceMiles": 114
+    },
+    "BIL": {
+      "durationSeconds": 21429,
+      "distanceMiles": 267
+    },
+    "MSO": {
+      "durationSeconds": 12301,
+      "distanceMiles": 130
+    },
+    "FCA": {
+      "durationSeconds": 20333,
+      "distanceMiles": 238
+    },
+    "GTF": {
+      "durationSeconds": 16981,
+      "distanceMiles": 193
+    },
+    "HLN": {
+      "durationSeconds": 11068,
+      "distanceMiles": 106
+    }
+  },
+  "denton": {
+    "BZN": {
+      "durationSeconds": 15340,
+      "distanceMiles": 192
+    },
+    "BIL": {
+      "durationSeconds": 13563,
+      "distanceMiles": 166
+    },
+    "MSO": {
+      "durationSeconds": 19108,
+      "distanceMiles": 262
+    },
+    "FCA": {
+      "durationSeconds": 22297,
+      "distanceMiles": 306
+    },
+    "GTF": {
+      "durationSeconds": 8861,
+      "distanceMiles": 98
+    },
+    "HLN": {
+      "durationSeconds": 12538,
+      "distanceMiles": 178
+    }
+  },
+  "dillon": {
+    "BZN": {
+      "durationSeconds": 8239,
+      "distanceMiles": 107
+    },
+    "BIL": {
+      "durationSeconds": 18117,
+      "distanceMiles": 260
+    },
+    "MSO": {
+      "durationSeconds": 10576,
+      "distanceMiles": 179
+    },
+    "FCA": {
+      "durationSeconds": 18607,
+      "distanceMiles": 287
+    },
+    "GTF": {
+      "durationSeconds": 13997,
+      "distanceMiles": 220
+    },
+    "HLN": {
+      "durationSeconds": 8084,
+      "distanceMiles": 133
+    }
+  },
+  "dodson": {
+    "BZN": {
+      "durationSeconds": 23671,
+      "distanceMiles": 362
+    },
+    "BIL": {
+      "durationSeconds": 19460,
+      "distanceMiles": 228
+    },
+    "MSO": {
+      "durationSeconds": 24170,
+      "distanceMiles": 355
+    },
+    "FCA": {
+      "durationSeconds": 22609,
+      "distanceMiles": 324
+    },
+    "GTF": {
+      "durationSeconds": 14091,
+      "distanceMiles": 193
+    },
+    "HLN": {
+      "durationSeconds": 17768,
+      "distanceMiles": 273
+    }
+  },
+  "drummond": {
+    "BZN": {
+      "durationSeconds": 8761,
+      "distanceMiles": 146
+    },
+    "BIL": {
+      "durationSeconds": 18639,
+      "distanceMiles": 298
+    },
+    "MSO": {
+      "durationSeconds": 3543,
+      "distanceMiles": 56
+    },
+    "FCA": {
+      "durationSeconds": 12320,
+      "distanceMiles": 166
+    },
+    "GTF": {
+      "durationSeconds": 10684,
+      "distanceMiles": 153
+    },
+    "HLN": {
+      "durationSeconds": 4740,
+      "distanceMiles": 67
+    }
+  },
+  "dutton": {
+    "BZN": {
+      "durationSeconds": 13129,
+      "distanceMiles": 209
+    },
+    "BIL": {
+      "durationSeconds": 17524,
+      "distanceMiles": 253
+    },
+    "MSO": {
+      "durationSeconds": 12492,
+      "distanceMiles": 183
+    },
+    "FCA": {
+      "durationSeconds": 13223,
+      "distanceMiles": 184
+    },
+    "GTF": {
+      "durationSeconds": 3549,
+      "distanceMiles": 40
+    },
+    "HLN": {
+      "durationSeconds": 7226,
+      "distanceMiles": 120
+    }
+  },
+  "east-glacier": {
+    "BZN": {
+      "durationSeconds": 19473,
+      "distanceMiles": 277
+    },
+    "BIL": {
+      "durationSeconds": 24874,
+      "distanceMiles": 355
+    },
+    "MSO": {
+      "durationSeconds": 14449,
+      "distanceMiles": 188
+    },
+    "FCA": {
+      "durationSeconds": 5854,
+      "distanceMiles": 80
+    },
+    "GTF": {
+      "durationSeconds": 10899,
+      "distanceMiles": 143
+    },
+    "HLN": {
+      "durationSeconds": 13570,
+      "distanceMiles": 188
+    }
+  },
+  "east-helena": {
+    "BZN": {
+      "durationSeconds": 5693,
+      "distanceMiles": 84
+    },
+    "BIL": {
+      "durationSeconds": 15571,
+      "distanceMiles": 237
+    },
+    "MSO": {
+      "durationSeconds": 8429,
+      "distanceMiles": 126
+    },
+    "FCA": {
+      "durationSeconds": 14630,
+      "distanceMiles": 207
+    },
+    "GTF": {
+      "durationSeconds": 6754,
+      "distanceMiles": 94
+    },
+    "HLN": {
+      "durationSeconds": 840,
+      "distanceMiles": 7
+    }
+  },
+  "ekalaka": {
+    "BZN": {
+      "durationSeconds": 29079,
+      "distanceMiles": 410
+    },
+    "BIL": {
+      "durationSeconds": 20964,
+      "distanceMiles": 264
+    },
+    "MSO": {
+      "durationSeconds": 40657,
+      "distanceMiles": 609
+    },
+    "FCA": {
+      "durationSeconds": 47547,
+      "distanceMiles": 674
+    },
+    "GTF": {
+      "durationSeconds": 34111,
+      "distanceMiles": 466
+    },
+    "HLN": {
+      "durationSeconds": 34989,
+      "distanceMiles": 499
+    }
+  },
+  "ennis": {
+    "BZN": {
+      "durationSeconds": 4601,
+      "distanceMiles": 54
+    },
+    "BIL": {
+      "durationSeconds": 14311,
+      "distanceMiles": 200
+    },
+    "MSO": {
+      "durationSeconds": 12428,
+      "distanceMiles": 199
+    },
+    "FCA": {
+      "durationSeconds": 20459,
+      "distanceMiles": 307
+    },
+    "GTF": {
+      "durationSeconds": 13758,
+      "distanceMiles": 199
+    },
+    "HLN": {
+      "durationSeconds": 7841,
+      "distanceMiles": 112
+    }
+  },
+  "eureka": {
+    "BZN": {
+      "durationSeconds": 24245,
+      "distanceMiles": 366
+    },
+    "BIL": {
+      "durationSeconds": 34123,
+      "distanceMiles": 518
+    },
+    "MSO": {
+      "durationSeconds": 13536,
+      "distanceMiles": 180
+    },
+    "FCA": {
+      "durationSeconds": 4632,
+      "distanceMiles": 63
+    },
+    "GTF": {
+      "durationSeconds": 20315,
+      "distanceMiles": 274
+    },
+    "HLN": {
+      "durationSeconds": 18435,
+      "distanceMiles": 261
+    }
+  },
+  "fairfield": {
+    "BZN": {
+      "durationSeconds": 12332,
+      "distanceMiles": 174
+    },
+    "BIL": {
+      "durationSeconds": 17733,
+      "distanceMiles": 253
+    },
+    "MSO": {
+      "durationSeconds": 10717,
+      "distanceMiles": 151
+    },
+    "FCA": {
+      "durationSeconds": 12774,
+      "distanceMiles": 181
+    },
+    "GTF": {
+      "durationSeconds": 3758,
+      "distanceMiles": 40
+    },
+    "HLN": {
+      "durationSeconds": 6429,
+      "distanceMiles": 86
+    }
+  },
+  "fairview": {
+    "BZN": {
+      "durationSeconds": 26865,
+      "distanceMiles": 433
+    },
+    "BIL": {
+      "durationSeconds": 18749,
+      "distanceMiles": 287
+    },
+    "MSO": {
+      "durationSeconds": 38443,
+      "distanceMiles": 631
+    },
+    "FCA": {
+      "durationSeconds": 38528,
+      "distanceMiles": 550
+    },
+    "GTF": {
+      "durationSeconds": 29039,
+      "distanceMiles": 420
+    },
+    "HLN": {
+      "durationSeconds": 32716,
+      "distanceMiles": 500
+    }
+  },
+  "flaxville": {
+    "BZN": {
+      "durationSeconds": 34572,
+      "distanceMiles": 536
+    },
+    "BIL": {
+      "durationSeconds": 26456,
+      "distanceMiles": 390
+    },
+    "MSO": {
+      "durationSeconds": 39219,
+      "distanceMiles": 557
+    },
+    "FCA": {
+      "durationSeconds": 37658,
+      "distanceMiles": 526
+    },
+    "GTF": {
+      "durationSeconds": 29140,
+      "distanceMiles": 395
+    },
+    "HLN": {
+      "durationSeconds": 32817,
+      "distanceMiles": 475
+    }
+  },
+  "forsyth": {
+    "BZN": {
+      "durationSeconds": 15909,
+      "distanceMiles": 252
+    },
+    "BIL": {
+      "durationSeconds": 7793,
+      "distanceMiles": 106
+    },
+    "MSO": {
+      "durationSeconds": 27487,
+      "distanceMiles": 450
+    },
+    "FCA": {
+      "durationSeconds": 35518,
+      "distanceMiles": 558
+    },
+    "GTF": {
+      "durationSeconds": 22950,
+      "distanceMiles": 327
+    },
+    "HLN": {
+      "durationSeconds": 21819,
+      "distanceMiles": 341
+    }
+  },
+  "fort-benton": {
+    "BZN": {
+      "durationSeconds": 14075,
+      "distanceMiles": 218
+    },
+    "BIL": {
+      "durationSeconds": 17976,
+      "distanceMiles": 257
+    },
+    "MSO": {
+      "durationSeconds": 14574,
+      "distanceMiles": 211
+    },
+    "FCA": {
+      "durationSeconds": 17443,
+      "distanceMiles": 248
+    },
+    "GTF": {
+      "durationSeconds": 4495,
+      "distanceMiles": 49
+    },
+    "HLN": {
+      "durationSeconds": 8172,
+      "distanceMiles": 129
+    }
+  },
+  "fort-peck": {
+    "BZN": {
+      "durationSeconds": 29314,
+      "distanceMiles": 395
+    },
+    "BIL": {
+      "durationSeconds": 22110,
+      "distanceMiles": 268
+    },
+    "MSO": {
+      "durationSeconds": 32191,
+      "distanceMiles": 462
+    },
+    "FCA": {
+      "durationSeconds": 30630,
+      "distanceMiles": 431
+    },
+    "GTF": {
+      "durationSeconds": 22112,
+      "distanceMiles": 300
+    },
+    "HLN": {
+      "durationSeconds": 25789,
+      "distanceMiles": 380
+    }
+  },
+  "froid": {
+    "BZN": {
+      "durationSeconds": 29578,
+      "distanceMiles": 472
+    },
+    "BIL": {
+      "durationSeconds": 21462,
+      "distanceMiles": 326
+    },
+    "MSO": {
+      "durationSeconds": 38117,
+      "distanceMiles": 559
+    },
+    "FCA": {
+      "durationSeconds": 36556,
+      "distanceMiles": 527
+    },
+    "GTF": {
+      "durationSeconds": 28038,
+      "distanceMiles": 396
+    },
+    "HLN": {
+      "durationSeconds": 31715,
+      "distanceMiles": 477
+    }
+  },
+  "fromberg": {
+    "BZN": {
+      "durationSeconds": 9590,
+      "distanceMiles": 147
+    },
+    "BIL": {
+      "durationSeconds": 3847,
+      "distanceMiles": 41
+    },
+    "MSO": {
+      "durationSeconds": 21167,
+      "distanceMiles": 345
+    },
+    "FCA": {
+      "durationSeconds": 29199,
+      "distanceMiles": 453
+    },
+    "GTF": {
+      "durationSeconds": 18739,
+      "distanceMiles": 258
+    },
+    "HLN": {
+      "durationSeconds": 15499,
+      "distanceMiles": 236
+    }
+  },
+  "gardiner": {
+    "BZN": {
+      "durationSeconds": 5740,
+      "distanceMiles": 85
+    },
+    "BIL": {
+      "durationSeconds": 11509,
+      "distanceMiles": 172
+    },
+    "MSO": {
+      "durationSeconds": 17318,
+      "distanceMiles": 284
+    },
+    "FCA": {
+      "durationSeconds": 25349,
+      "distanceMiles": 391
+    },
+    "GTF": {
+      "durationSeconds": 17567,
+      "distanceMiles": 261
+    },
+    "HLN": {
+      "durationSeconds": 11650,
+      "distanceMiles": 174
+    }
+  },
+  "geraldine": {
+    "BZN": {
+      "durationSeconds": 17096,
+      "distanceMiles": 222
+    },
+    "BIL": {
+      "durationSeconds": 15319,
+      "distanceMiles": 196
+    },
+    "MSO": {
+      "durationSeconds": 17934,
+      "distanceMiles": 248
+    },
+    "FCA": {
+      "durationSeconds": 21122,
+      "distanceMiles": 292
+    },
+    "GTF": {
+      "durationSeconds": 7686,
+      "distanceMiles": 84
+    },
+    "HLN": {
+      "durationSeconds": 11363,
+      "distanceMiles": 164
+    }
+  },
+  "glasgow": {
+    "BZN": {
+      "durationSeconds": 29328,
+      "distanceMiles": 386
+    },
+    "BIL": {
+      "durationSeconds": 23118,
+      "distanceMiles": 281
+    },
+    "MSO": {
+      "durationSeconds": 30206,
+      "distanceMiles": 443
+    },
+    "FCA": {
+      "durationSeconds": 28646,
+      "distanceMiles": 411
+    },
+    "GTF": {
+      "durationSeconds": 20128,
+      "distanceMiles": 281
+    },
+    "HLN": {
+      "durationSeconds": 23805,
+      "distanceMiles": 361
+    }
+  },
+  "glendive": {
+    "BZN": {
+      "durationSeconds": 22789,
+      "distanceMiles": 372
+    },
+    "BIL": {
+      "durationSeconds": 14673,
+      "distanceMiles": 226
+    },
+    "MSO": {
+      "durationSeconds": 34367,
+      "distanceMiles": 570
+    },
+    "FCA": {
+      "durationSeconds": 38359,
+      "distanceMiles": 566
+    },
+    "GTF": {
+      "durationSeconds": 24923,
+      "distanceMiles": 358
+    },
+    "HLN": {
+      "durationSeconds": 28600,
+      "distanceMiles": 438
+    }
+  },
+  "grass-range": {
+    "BZN": {
+      "durationSeconds": 14622,
+      "distanceMiles": 205
+    },
+    "BIL": {
+      "durationSeconds": 8227,
+      "distanceMiles": 98
+    },
+    "MSO": {
+      "durationSeconds": 21188,
+      "distanceMiles": 310
+    },
+    "FCA": {
+      "durationSeconds": 24376,
+      "distanceMiles": 354
+    },
+    "GTF": {
+      "durationSeconds": 10940,
+      "distanceMiles": 146
+    },
+    "HLN": {
+      "durationSeconds": 14617,
+      "distanceMiles": 226
+    }
+  },
+  "great-falls": {
+    "BZN": {
+      "durationSeconds": 11370,
+      "distanceMiles": 178
+    },
+    "BIL": {
+      "durationSeconds": 15355,
+      "distanceMiles": 218
+    },
+    "MSO": {
+      "durationSeconds": 11904,
+      "distanceMiles": 172
+    },
+    "FCA": {
+      "durationSeconds": 15093,
+      "distanceMiles": 216
+    },
+    "GTF": {
+      "durationSeconds": 1790,
+      "distanceMiles": 9
+    },
+    "HLN": {
+      "durationSeconds": 5467,
+      "distanceMiles": 90
+    }
+  },
+  "hamilton": {
+    "BZN": {
+      "durationSeconds": 14466,
+      "distanceMiles": 181
+    },
+    "BIL": {
+      "durationSeconds": 24344,
+      "distanceMiles": 334
+    },
+    "MSO": {
+      "durationSeconds": 4268,
+      "distanceMiles": 51
+    },
+    "FCA": {
+      "durationSeconds": 13777,
+      "distanceMiles": 170
+    },
+    "GTF": {
+      "durationSeconds": 16296,
+      "distanceMiles": 218
+    },
+    "HLN": {
+      "durationSeconds": 11202,
+      "distanceMiles": 163
+    }
+  },
+  "hardin": {
+    "BZN": {
+      "durationSeconds": 12172,
+      "distanceMiles": 198
+    },
+    "BIL": {
+      "durationSeconds": 4056,
+      "distanceMiles": 52
+    },
+    "MSO": {
+      "durationSeconds": 23750,
+      "distanceMiles": 397
+    },
+    "FCA": {
+      "durationSeconds": 31781,
+      "distanceMiles": 504
+    },
+    "GTF": {
+      "durationSeconds": 19213,
+      "distanceMiles": 273
+    },
+    "HLN": {
+      "durationSeconds": 18082,
+      "distanceMiles": 287
+    }
+  },
+  "harlem": {
+    "BZN": {
+      "durationSeconds": 21777,
+      "distanceMiles": 334
+    },
+    "BIL": {
+      "durationSeconds": 18080,
+      "distanceMiles": 210
+    },
+    "MSO": {
+      "durationSeconds": 22276,
+      "distanceMiles": 327
+    },
+    "FCA": {
+      "durationSeconds": 20715,
+      "distanceMiles": 296
+    },
+    "GTF": {
+      "durationSeconds": 12197,
+      "distanceMiles": 165
+    },
+    "HLN": {
+      "durationSeconds": 15874,
+      "distanceMiles": 245
+    }
+  },
+  "harlowton": {
+    "BZN": {
+      "durationSeconds": 8507,
+      "distanceMiles": 115
+    },
+    "BIL": {
+      "durationSeconds": 6947,
+      "distanceMiles": 91
+    },
+    "MSO": {
+      "durationSeconds": 18229,
+      "distanceMiles": 253
+    },
+    "FCA": {
+      "durationSeconds": 23632,
+      "distanceMiles": 345
+    },
+    "GTF": {
+      "durationSeconds": 10196,
+      "distanceMiles": 137
+    },
+    "HLN": {
+      "durationSeconds": 10637,
+      "distanceMiles": 135
+    }
+  },
+  "havre": {
+    "BZN": {
+      "durationSeconds": 18812,
+      "distanceMiles": 291
+    },
+    "BIL": {
+      "durationSeconds": 20957,
+      "distanceMiles": 252
+    },
+    "MSO": {
+      "durationSeconds": 19311,
+      "distanceMiles": 284
+    },
+    "FCA": {
+      "durationSeconds": 17751,
+      "distanceMiles": 253
+    },
+    "GTF": {
+      "durationSeconds": 9233,
+      "distanceMiles": 122
+    },
+    "HLN": {
+      "durationSeconds": 12910,
+      "distanceMiles": 202
+    }
+  },
+  "helena": {
+    "BZN": {
+      "durationSeconds": 6365,
+      "distanceMiles": 90
+    },
+    "BIL": {
+      "durationSeconds": 16243,
+      "distanceMiles": 243
+    },
+    "MSO": {
+      "durationSeconds": 7739,
+      "distanceMiles": 119
+    },
+    "FCA": {
+      "durationSeconds": 13940,
+      "distanceMiles": 201
+    },
+    "GTF": {
+      "durationSeconds": 6487,
+      "distanceMiles": 91
+    },
+    "HLN": {
+      "durationSeconds": 542,
+      "distanceMiles": 4
+    }
+  },
+  "hingham": {
+    "BZN": {
+      "durationSeconds": 19149,
+      "distanceMiles": 297
+    },
+    "BIL": {
+      "durationSeconds": 23049,
+      "distanceMiles": 335
+    },
+    "MSO": {
+      "durationSeconds": 19648,
+      "distanceMiles": 290
+    },
+    "FCA": {
+      "durationSeconds": 15448,
+      "distanceMiles": 218
+    },
+    "GTF": {
+      "durationSeconds": 9569,
+      "distanceMiles": 128
+    },
+    "HLN": {
+      "durationSeconds": 13246,
+      "distanceMiles": 208
+    }
+  },
+  "hobson": {
+    "BZN": {
+      "durationSeconds": 11651,
+      "distanceMiles": 162
+    },
+    "BIL": {
+      "durationSeconds": 9874,
+      "distanceMiles": 136
+    },
+    "MSO": {
+      "durationSeconds": 17422,
+      "distanceMiles": 255
+    },
+    "FCA": {
+      "durationSeconds": 20611,
+      "distanceMiles": 299
+    },
+    "GTF": {
+      "durationSeconds": 7175,
+      "distanceMiles": 91
+    },
+    "HLN": {
+      "durationSeconds": 10852,
+      "distanceMiles": 171
+    }
+  },
+  "hot-springs": {
+    "BZN": {
+      "durationSeconds": 17927,
+      "distanceMiles": 271
+    },
+    "BIL": {
+      "durationSeconds": 27805,
+      "distanceMiles": 424
+    },
+    "MSO": {
+      "durationSeconds": 6305,
+      "distanceMiles": 72
+    },
+    "FCA": {
+      "durationSeconds": 6570,
+      "distanceMiles": 77
+    },
+    "GTF": {
+      "durationSeconds": 19000,
+      "distanceMiles": 247
+    },
+    "HLN": {
+      "durationSeconds": 13906,
+      "distanceMiles": 192
+    }
+  },
+  "hysham": {
+    "BZN": {
+      "durationSeconds": 14412,
+      "distanceMiles": 228
+    },
+    "BIL": {
+      "durationSeconds": 6296,
+      "distanceMiles": 82
+    },
+    "MSO": {
+      "durationSeconds": 25990,
+      "distanceMiles": 426
+    },
+    "FCA": {
+      "durationSeconds": 34021,
+      "distanceMiles": 534
+    },
+    "GTF": {
+      "durationSeconds": 21453,
+      "distanceMiles": 302
+    },
+    "HLN": {
+      "durationSeconds": 20322,
+      "distanceMiles": 317
+    }
+  },
+  "ismay": {
+    "BZN": {
+      "durationSeconds": 23970,
+      "distanceMiles": 355
+    },
+    "BIL": {
+      "durationSeconds": 15854,
+      "distanceMiles": 209
+    },
+    "MSO": {
+      "durationSeconds": 35548,
+      "distanceMiles": 554
+    },
+    "FCA": {
+      "durationSeconds": 43579,
+      "distanceMiles": 661
+    },
+    "GTF": {
+      "durationSeconds": 30209,
+      "distanceMiles": 385
+    },
+    "HLN": {
+      "durationSeconds": 29880,
+      "distanceMiles": 444
+    }
+  },
+  "joliet": {
+    "BZN": {
+      "durationSeconds": 8547,
+      "distanceMiles": 131
+    },
+    "BIL": {
+      "durationSeconds": 3596,
+      "distanceMiles": 38
+    },
+    "MSO": {
+      "durationSeconds": 20125,
+      "distanceMiles": 330
+    },
+    "FCA": {
+      "durationSeconds": 28156,
+      "distanceMiles": 437
+    },
+    "GTF": {
+      "durationSeconds": 18446,
+      "distanceMiles": 241
+    },
+    "HLN": {
+      "durationSeconds": 14457,
+      "distanceMiles": 220
+    }
+  },
+  "jordan": {
+    "BZN": {
+      "durationSeconds": 20820,
+      "distanceMiles": 302
+    },
+    "BIL": {
+      "durationSeconds": 13616,
+      "distanceMiles": 175
+    },
+    "MSO": {
+      "durationSeconds": 27386,
+      "distanceMiles": 407
+    },
+    "FCA": {
+      "durationSeconds": 30574,
+      "distanceMiles": 451
+    },
+    "GTF": {
+      "durationSeconds": 17138,
+      "distanceMiles": 243
+    },
+    "HLN": {
+      "durationSeconds": 20815,
+      "distanceMiles": 323
+    }
+  },
+  "judith-gap": {
+    "BZN": {
+      "durationSeconds": 9741,
+      "distanceMiles": 134
+    },
+    "BIL": {
+      "durationSeconds": 7964,
+      "distanceMiles": 107
+    },
+    "MSO": {
+      "durationSeconds": 19137,
+      "distanceMiles": 282
+    },
+    "FCA": {
+      "durationSeconds": 22325,
+      "distanceMiles": 326
+    },
+    "GTF": {
+      "durationSeconds": 8889,
+      "distanceMiles": 118
+    },
+    "HLN": {
+      "durationSeconds": 11870,
+      "distanceMiles": 154
+    }
+  },
+  "kalispell": {
+    "BZN": {
+      "durationSeconds": 19628,
+      "distanceMiles": 301
+    },
+    "BIL": {
+      "durationSeconds": 29506,
+      "distanceMiles": 454
+    },
+    "MSO": {
+      "durationSeconds": 8920,
+      "distanceMiles": 116
+    },
+    "FCA": {
+      "durationSeconds": 943,
+      "distanceMiles": 9
+    },
+    "GTF": {
+      "durationSeconds": 17113,
+      "distanceMiles": 229
+    },
+    "HLN": {
+      "durationSeconds": 13819,
+      "distanceMiles": 197
+    }
+  },
+  "kevin": {
+    "BZN": {
+      "durationSeconds": 17240,
+      "distanceMiles": 279
+    },
+    "BIL": {
+      "durationSeconds": 21634,
+      "distanceMiles": 322
+    },
+    "MSO": {
+      "durationSeconds": 16603,
+      "distanceMiles": 253
+    },
+    "FCA": {
+      "durationSeconds": 11333,
+      "distanceMiles": 149
+    },
+    "GTF": {
+      "durationSeconds": 7660,
+      "distanceMiles": 110
+    },
+    "HLN": {
+      "durationSeconds": 11337,
+      "distanceMiles": 190
+    }
+  },
+  "laurel": {
+    "BZN": {
+      "durationSeconds": 8301,
+      "distanceMiles": 136
+    },
+    "BIL": {
+      "durationSeconds": 2365,
+      "distanceMiles": 20
+    },
+    "MSO": {
+      "durationSeconds": 19879,
+      "distanceMiles": 335
+    },
+    "FCA": {
+      "durationSeconds": 27910,
+      "distanceMiles": 442
+    },
+    "GTF": {
+      "durationSeconds": 17257,
+      "distanceMiles": 237
+    },
+    "HLN": {
+      "durationSeconds": 14211,
+      "distanceMiles": 225
+    }
+  },
+  "lavina": {
+    "BZN": {
+      "durationSeconds": 11691,
+      "distanceMiles": 162
+    },
+    "BIL": {
+      "durationSeconds": 3665,
+      "distanceMiles": 44
+    },
+    "MSO": {
+      "durationSeconds": 21413,
+      "distanceMiles": 300
+    },
+    "FCA": {
+      "durationSeconds": 26605,
+      "distanceMiles": 389
+    },
+    "GTF": {
+      "durationSeconds": 13169,
+      "distanceMiles": 181
+    },
+    "HLN": {
+      "durationSeconds": 13820,
+      "distanceMiles": 182
+    }
+  },
+  "lewistown": {
+    "BZN": {
+      "durationSeconds": 12359,
+      "distanceMiles": 172
+    },
+    "BIL": {
+      "durationSeconds": 10371,
+      "distanceMiles": 129
+    },
+    "MSO": {
+      "durationSeconds": 18924,
+      "distanceMiles": 278
+    },
+    "FCA": {
+      "durationSeconds": 22113,
+      "distanceMiles": 321
+    },
+    "GTF": {
+      "durationSeconds": 8677,
+      "distanceMiles": 113
+    },
+    "HLN": {
+      "durationSeconds": 12354,
+      "distanceMiles": 193
+    }
+  },
+  "libby": {
+    "BZN": {
+      "durationSeconds": 25478,
+      "distanceMiles": 389
+    },
+    "BIL": {
+      "durationSeconds": 35356,
+      "distanceMiles": 541
+    },
+    "MSO": {
+      "durationSeconds": 14769,
+      "distanceMiles": 204
+    },
+    "FCA": {
+      "durationSeconds": 6959,
+      "distanceMiles": 98
+    },
+    "GTF": {
+      "durationSeconds": 23236,
+      "distanceMiles": 318
+    },
+    "HLN": {
+      "durationSeconds": 19668,
+      "distanceMiles": 284
+    }
+  },
+  "lima": {
+    "BZN": {
+      "durationSeconds": 11080,
+      "distanceMiles": 156
+    },
+    "BIL": {
+      "durationSeconds": 20958,
+      "distanceMiles": 309
+    },
+    "MSO": {
+      "durationSeconds": 13178,
+      "distanceMiles": 225
+    },
+    "FCA": {
+      "durationSeconds": 21209,
+      "distanceMiles": 333
+    },
+    "GTF": {
+      "durationSeconds": 16599,
+      "distanceMiles": 267
+    },
+    "HLN": {
+      "durationSeconds": 10686,
+      "distanceMiles": 180
+    }
+  },
+  "livingston": {
+    "BZN": {
+      "durationSeconds": 2545,
+      "distanceMiles": 35
+    },
+    "BIL": {
+      "durationSeconds": 8218,
+      "distanceMiles": 119
+    },
+    "MSO": {
+      "durationSeconds": 14122,
+      "distanceMiles": 234
+    },
+    "FCA": {
+      "durationSeconds": 22154,
+      "distanceMiles": 341
+    },
+    "GTF": {
+      "durationSeconds": 14372,
+      "distanceMiles": 211
+    },
+    "HLN": {
+      "durationSeconds": 8454,
+      "distanceMiles": 124
+    }
+  },
+  "lodge-grass": {
+    "BZN": {
+      "durationSeconds": 14062,
+      "distanceMiles": 233
+    },
+    "BIL": {
+      "durationSeconds": 5946,
+      "distanceMiles": 87
+    },
+    "MSO": {
+      "durationSeconds": 25639,
+      "distanceMiles": 431
+    },
+    "FCA": {
+      "durationSeconds": 33671,
+      "distanceMiles": 539
+    },
+    "GTF": {
+      "durationSeconds": 21103,
+      "distanceMiles": 307
+    },
+    "HLN": {
+      "durationSeconds": 19972,
+      "distanceMiles": 322
+    }
+  },
+  "malta": {
+    "BZN": {
+      "durationSeconds": 24472,
+      "distanceMiles": 316
+    },
+    "BIL": {
+      "durationSeconds": 18263,
+      "distanceMiles": 211
+    },
+    "MSO": {
+      "durationSeconds": 25374,
+      "distanceMiles": 373
+    },
+    "FCA": {
+      "durationSeconds": 23814,
+      "distanceMiles": 341
+    },
+    "GTF": {
+      "durationSeconds": 15295,
+      "distanceMiles": 211
+    },
+    "HLN": {
+      "durationSeconds": 18972,
+      "distanceMiles": 291
+    }
+  },
+  "manhattan": {
+    "BZN": {
+      "durationSeconds": 982,
+      "distanceMiles": 12
+    },
+    "BIL": {
+      "durationSeconds": 10860,
+      "distanceMiles": 165
+    },
+    "MSO": {
+      "durationSeconds": 11280,
+      "distanceMiles": 189
+    },
+    "FCA": {
+      "durationSeconds": 19311,
+      "distanceMiles": 297
+    },
+    "GTF": {
+      "durationSeconds": 11529,
+      "distanceMiles": 167
+    },
+    "HLN": {
+      "durationSeconds": 5612,
+      "distanceMiles": 80
+    }
+  },
+  "medicine-lake": {
+    "BZN": {
+      "durationSeconds": 30411,
+      "distanceMiles": 484
+    },
+    "BIL": {
+      "durationSeconds": 22296,
+      "distanceMiles": 338
+    },
+    "MSO": {
+      "durationSeconds": 38951,
+      "distanceMiles": 570
+    },
+    "FCA": {
+      "durationSeconds": 37390,
+      "distanceMiles": 539
+    },
+    "GTF": {
+      "durationSeconds": 28872,
+      "distanceMiles": 408
+    },
+    "HLN": {
+      "durationSeconds": 32549,
+      "distanceMiles": 488
+    }
+  },
+  "melstone": {
+    "BZN": {
+      "durationSeconds": 16125,
+      "distanceMiles": 239
+    },
+    "BIL": {
+      "durationSeconds": 7609,
+      "distanceMiles": 89
+    },
+    "MSO": {
+      "durationSeconds": 26606,
+      "distanceMiles": 358
+    },
+    "FCA": {
+      "durationSeconds": 31159,
+      "distanceMiles": 432
+    },
+    "GTF": {
+      "durationSeconds": 17723,
+      "distanceMiles": 224
+    },
+    "HLN": {
+      "durationSeconds": 19013,
+      "distanceMiles": 239
+    }
+  },
+  "miles-city": {
+    "BZN": {
+      "durationSeconds": 18475,
+      "distanceMiles": 296
+    },
+    "BIL": {
+      "durationSeconds": 10359,
+      "distanceMiles": 150
+    },
+    "MSO": {
+      "durationSeconds": 30053,
+      "distanceMiles": 494
+    },
+    "FCA": {
+      "durationSeconds": 37867,
+      "distanceMiles": 533
+    },
+    "GTF": {
+      "durationSeconds": 24431,
+      "distanceMiles": 325
+    },
+    "HLN": {
+      "durationSeconds": 24385,
+      "distanceMiles": 385
+    }
+  },
+  "missoula": {
+    "BZN": {
+      "durationSeconds": 11602,
+      "distanceMiles": 195
+    },
+    "BIL": {
+      "durationSeconds": 21480,
+      "distanceMiles": 348
+    },
+    "MSO": {
+      "durationSeconds": 713,
+      "distanceMiles": 6
+    },
+    "FCA": {
+      "durationSeconds": 10158,
+      "distanceMiles": 125
+    },
+    "GTF": {
+      "durationSeconds": 12675,
+      "distanceMiles": 171
+    },
+    "HLN": {
+      "durationSeconds": 7581,
+      "distanceMiles": 116
+    }
+  },
+  "moore": {
+    "BZN": {
+      "durationSeconds": 11366,
+      "distanceMiles": 158
+    },
+    "BIL": {
+      "durationSeconds": 9589,
+      "distanceMiles": 131
+    },
+    "MSO": {
+      "durationSeconds": 17931,
+      "distanceMiles": 263
+    },
+    "FCA": {
+      "durationSeconds": 21120,
+      "distanceMiles": 307
+    },
+    "GTF": {
+      "durationSeconds": 7684,
+      "distanceMiles": 99
+    },
+    "HLN": {
+      "durationSeconds": 11361,
+      "distanceMiles": 179
+    }
+  },
+  "nashua": {
+    "BZN": {
+      "durationSeconds": 30322,
+      "distanceMiles": 400
+    },
+    "BIL": {
+      "durationSeconds": 23190,
+      "distanceMiles": 279
+    },
+    "MSO": {
+      "durationSeconds": 31201,
+      "distanceMiles": 457
+    },
+    "FCA": {
+      "durationSeconds": 29640,
+      "distanceMiles": 426
+    },
+    "GTF": {
+      "durationSeconds": 21122,
+      "distanceMiles": 295
+    },
+    "HLN": {
+      "durationSeconds": 24799,
+      "distanceMiles": 375
+    }
+  },
+  "neihart": {
+    "BZN": {
+      "durationSeconds": 10264,
+      "distanceMiles": 139
+    },
+    "BIL": {
+      "durationSeconds": 15240,
+      "distanceMiles": 183
+    },
+    "MSO": {
+      "durationSeconds": 16607,
+      "distanceMiles": 230
+    },
+    "FCA": {
+      "durationSeconds": 19796,
+      "distanceMiles": 273
+    },
+    "GTF": {
+      "durationSeconds": 6360,
+      "distanceMiles": 65
+    },
+    "HLN": {
+      "durationSeconds": 9187,
+      "distanceMiles": 118
+    }
+  },
+  "opheim": {
+    "BZN": {
+      "durationSeconds": 33843,
+      "distanceMiles": 437
+    },
+    "BIL": {
+      "durationSeconds": 27633,
+      "distanceMiles": 332
+    },
+    "MSO": {
+      "durationSeconds": 34721,
+      "distanceMiles": 494
+    },
+    "FCA": {
+      "durationSeconds": 33161,
+      "distanceMiles": 462
+    },
+    "GTF": {
+      "durationSeconds": 24643,
+      "distanceMiles": 332
+    },
+    "HLN": {
+      "durationSeconds": 28320,
+      "distanceMiles": 412
+    }
+  },
+  "outlook": {
+    "BZN": {
+      "durationSeconds": 33592,
+      "distanceMiles": 524
+    },
+    "BIL": {
+      "durationSeconds": 25476,
+      "distanceMiles": 378
+    },
+    "MSO": {
+      "durationSeconds": 41601,
+      "distanceMiles": 582
+    },
+    "FCA": {
+      "durationSeconds": 40041,
+      "distanceMiles": 551
+    },
+    "GTF": {
+      "durationSeconds": 31523,
+      "distanceMiles": 420
+    },
+    "HLN": {
+      "durationSeconds": 35200,
+      "distanceMiles": 500
+    }
+  },
+  "philipsburg": {
+    "BZN": {
+      "durationSeconds": 8936,
+      "distanceMiles": 130
+    },
+    "BIL": {
+      "durationSeconds": 18814,
+      "distanceMiles": 283
+    },
+    "MSO": {
+      "durationSeconds": 5896,
+      "distanceMiles": 81
+    },
+    "FCA": {
+      "durationSeconds": 14817,
+      "distanceMiles": 193
+    },
+    "GTF": {
+      "durationSeconds": 13181,
+      "distanceMiles": 180
+    },
+    "HLN": {
+      "durationSeconds": 7238,
+      "distanceMiles": 94
+    }
+  },
+  "pinesdale": {
+    "BZN": {
+      "durationSeconds": 15260,
+      "distanceMiles": 240
+    },
+    "BIL": {
+      "durationSeconds": 25138,
+      "distanceMiles": 392
+    },
+    "MSO": {
+      "durationSeconds": 4305,
+      "distanceMiles": 49
+    },
+    "FCA": {
+      "durationSeconds": 13814,
+      "distanceMiles": 168
+    },
+    "GTF": {
+      "durationSeconds": 16333,
+      "distanceMiles": 216
+    },
+    "HLN": {
+      "durationSeconds": 11239,
+      "distanceMiles": 161
+    }
+  },
+  "plains": {
+    "BZN": {
+      "durationSeconds": 17608,
+      "distanceMiles": 270
+    },
+    "BIL": {
+      "durationSeconds": 27486,
+      "distanceMiles": 423
+    },
+    "MSO": {
+      "durationSeconds": 5987,
+      "distanceMiles": 71
+    },
+    "FCA": {
+      "durationSeconds": 8153,
+      "distanceMiles": 95
+    },
+    "GTF": {
+      "durationSeconds": 18681,
+      "distanceMiles": 247
+    },
+    "HLN": {
+      "durationSeconds": 13587,
+      "distanceMiles": 192
+    }
+  },
+  "plentywood": {
+    "BZN": {
+      "durationSeconds": 31889,
+      "distanceMiles": 506
+    },
+    "BIL": {
+      "durationSeconds": 23773,
+      "distanceMiles": 360
+    },
+    "MSO": {
+      "durationSeconds": 40428,
+      "distanceMiles": 593
+    },
+    "FCA": {
+      "durationSeconds": 38867,
+      "distanceMiles": 561
+    },
+    "GTF": {
+      "durationSeconds": 30349,
+      "distanceMiles": 430
+    },
+    "HLN": {
+      "durationSeconds": 34026,
+      "distanceMiles": 511
+    }
+  },
+  "plevna": {
+    "BZN": {
+      "durationSeconds": 24248,
+      "distanceMiles": 362
+    },
+    "BIL": {
+      "durationSeconds": 16132,
+      "distanceMiles": 216
+    },
+    "MSO": {
+      "durationSeconds": 35826,
+      "distanceMiles": 561
+    },
+    "FCA": {
+      "durationSeconds": 43857,
+      "distanceMiles": 668
+    },
+    "GTF": {
+      "durationSeconds": 30487,
+      "distanceMiles": 392
+    },
+    "HLN": {
+      "durationSeconds": 30158,
+      "distanceMiles": 451
+    }
+  },
+  "polson": {
+    "BZN": {
+      "durationSeconds": 16622,
+      "distanceMiles": 264
+    },
+    "BIL": {
+      "durationSeconds": 26500,
+      "distanceMiles": 417
+    },
+    "MSO": {
+      "durationSeconds": 5001,
+      "distanceMiles": 65
+    },
+    "FCA": {
+      "durationSeconds": 5120,
+      "distanceMiles": 64
+    },
+    "GTF": {
+      "durationSeconds": 17695,
+      "distanceMiles": 240
+    },
+    "HLN": {
+      "durationSeconds": 12601,
+      "distanceMiles": 185
+    }
+  },
+  "poplar": {
+    "BZN": {
+      "durationSeconds": 30844,
+      "distanceMiles": 434
+    },
+    "BIL": {
+      "durationSeconds": 22814,
+      "distanceMiles": 346
+    },
+    "MSO": {
+      "durationSeconds": 34976,
+      "distanceMiles": 513
+    },
+    "FCA": {
+      "durationSeconds": 33415,
+      "distanceMiles": 481
+    },
+    "GTF": {
+      "durationSeconds": 24897,
+      "distanceMiles": 351
+    },
+    "HLN": {
+      "durationSeconds": 28574,
+      "distanceMiles": 431
+    }
+  },
+  "red-lodge": {
+    "BZN": {
+      "durationSeconds": 10370,
+      "distanceMiles": 158
+    },
+    "BIL": {
+      "durationSeconds": 5987,
+      "distanceMiles": 64
+    },
+    "MSO": {
+      "durationSeconds": 21948,
+      "distanceMiles": 357
+    },
+    "FCA": {
+      "durationSeconds": 29979,
+      "distanceMiles": 464
+    },
+    "GTF": {
+      "durationSeconds": 20269,
+      "distanceMiles": 269
+    },
+    "HLN": {
+      "durationSeconds": 16280,
+      "distanceMiles": 247
+    }
+  },
+  "rexford": {
+    "BZN": {
+      "durationSeconds": 25136,
+      "distanceMiles": 373
+    },
+    "BIL": {
+      "durationSeconds": 35014,
+      "distanceMiles": 526
+    },
+    "MSO": {
+      "durationSeconds": 14428,
+      "distanceMiles": 188
+    },
+    "FCA": {
+      "durationSeconds": 5524,
+      "distanceMiles": 71
+    },
+    "GTF": {
+      "durationSeconds": 21207,
+      "distanceMiles": 282
+    },
+    "HLN": {
+      "durationSeconds": 19327,
+      "distanceMiles": 269
+    }
+  },
+  "richey": {
+    "BZN": {
+      "durationSeconds": 27478,
+      "distanceMiles": 417
+    },
+    "BIL": {
+      "durationSeconds": 19362,
+      "distanceMiles": 271
+    },
+    "MSO": {
+      "durationSeconds": 34911,
+      "distanceMiles": 503
+    },
+    "FCA": {
+      "durationSeconds": 38005,
+      "distanceMiles": 513
+    },
+    "GTF": {
+      "durationSeconds": 24664,
+      "distanceMiles": 338
+    },
+    "HLN": {
+      "durationSeconds": 28341,
+      "distanceMiles": 419
+    }
+  },
+  "ronan": {
+    "BZN": {
+      "durationSeconds": 15438,
+      "distanceMiles": 250
+    },
+    "BIL": {
+      "durationSeconds": 25316,
+      "distanceMiles": 403
+    },
+    "MSO": {
+      "durationSeconds": 3817,
+      "distanceMiles": 51
+    },
+    "FCA": {
+      "durationSeconds": 6129,
+      "distanceMiles": 68
+    },
+    "GTF": {
+      "durationSeconds": 16511,
+      "distanceMiles": 226
+    },
+    "HLN": {
+      "durationSeconds": 11418,
+      "distanceMiles": 172
+    }
+  },
+  "roundup": {
+    "BZN": {
+      "durationSeconds": 12936,
+      "distanceMiles": 204
+    },
+    "BIL": {
+      "durationSeconds": 4419,
+      "distanceMiles": 54
+    },
+    "MSO": {
+      "durationSeconds": 23417,
+      "distanceMiles": 323
+    },
+    "FCA": {
+      "durationSeconds": 28010,
+      "distanceMiles": 397
+    },
+    "GTF": {
+      "durationSeconds": 14574,
+      "distanceMiles": 189
+    },
+    "HLN": {
+      "durationSeconds": 15824,
+      "distanceMiles": 204
+    }
+  },
+  "ryegate": {
+    "BZN": {
+      "durationSeconds": 10595,
+      "distanceMiles": 145
+    },
+    "BIL": {
+      "durationSeconds": 4887,
+      "distanceMiles": 61
+    },
+    "MSO": {
+      "durationSeconds": 20317,
+      "distanceMiles": 283
+    },
+    "FCA": {
+      "durationSeconds": 25509,
+      "distanceMiles": 372
+    },
+    "GTF": {
+      "durationSeconds": 12073,
+      "distanceMiles": 164
+    },
+    "HLN": {
+      "durationSeconds": 12724,
+      "distanceMiles": 165
+    }
+  },
+  "saco": {
+    "BZN": {
+      "durationSeconds": 26375,
+      "distanceMiles": 343
+    },
+    "BIL": {
+      "durationSeconds": 20165,
+      "distanceMiles": 239
+    },
+    "MSO": {
+      "durationSeconds": 27253,
+      "distanceMiles": 400
+    },
+    "FCA": {
+      "durationSeconds": 25693,
+      "distanceMiles": 369
+    },
+    "GTF": {
+      "durationSeconds": 17175,
+      "distanceMiles": 238
+    },
+    "HLN": {
+      "durationSeconds": 20852,
+      "distanceMiles": 318
+    }
+  },
+  "scobey": {
+    "BZN": {
+      "durationSeconds": 34066,
+      "distanceMiles": 467
+    },
+    "BIL": {
+      "durationSeconds": 26253,
+      "distanceMiles": 367
+    },
+    "MSO": {
+      "durationSeconds": 38198,
+      "distanceMiles": 546
+    },
+    "FCA": {
+      "durationSeconds": 36638,
+      "distanceMiles": 514
+    },
+    "GTF": {
+      "durationSeconds": 28120,
+      "distanceMiles": 383
+    },
+    "HLN": {
+      "durationSeconds": 31797,
+      "distanceMiles": 464
+    }
+  },
+  "seeley-lake": {
+    "BZN": {
+      "durationSeconds": 13204,
+      "distanceMiles": 208
+    },
+    "BIL": {
+      "durationSeconds": 23082,
+      "distanceMiles": 360
+    },
+    "MSO": {
+      "durationSeconds": 4370,
+      "distanceMiles": 57
+    },
+    "FCA": {
+      "durationSeconds": 7488,
+      "distanceMiles": 103
+    },
+    "GTF": {
+      "durationSeconds": 11145,
+      "distanceMiles": 146
+    },
+    "HLN": {
+      "durationSeconds": 7394,
+      "distanceMiles": 103
+    }
+  },
+  "shelby": {
+    "BZN": {
+      "durationSeconds": 15946,
+      "distanceMiles": 259
+    },
+    "BIL": {
+      "durationSeconds": 20340,
+      "distanceMiles": 303
+    },
+    "MSO": {
+      "durationSeconds": 15309,
+      "distanceMiles": 233
+    },
+    "FCA": {
+      "durationSeconds": 10790,
+      "distanceMiles": 150
+    },
+    "GTF": {
+      "durationSeconds": 6366,
+      "distanceMiles": 90
+    },
+    "HLN": {
+      "durationSeconds": 10043,
+      "distanceMiles": 171
+    }
+  },
+  "sheridan": {
+    "BZN": {
+      "durationSeconds": 31714,
+      "distanceMiles": 504
+    },
+    "BIL": {
+      "durationSeconds": 23598,
+      "distanceMiles": 358
+    },
+    "MSO": {
+      "durationSeconds": 40253,
+      "distanceMiles": 590
+    },
+    "FCA": {
+      "durationSeconds": 38693,
+      "distanceMiles": 559
+    },
+    "GTF": {
+      "durationSeconds": 30174,
+      "distanceMiles": 428
+    },
+    "HLN": {
+      "durationSeconds": 33851,
+      "distanceMiles": 508
+    }
+  },
+  "sidney": {
+    "BZN": {
+      "durationSeconds": 26091,
+      "distanceMiles": 422
+    },
+    "BIL": {
+      "durationSeconds": 17975,
+      "distanceMiles": 276
+    },
+    "MSO": {
+      "durationSeconds": 37669,
+      "distanceMiles": 620
+    },
+    "FCA": {
+      "durationSeconds": 38186,
+      "distanceMiles": 551
+    },
+    "GTF": {
+      "durationSeconds": 28265,
+      "distanceMiles": 409
+    },
+    "HLN": {
+      "durationSeconds": 31942,
+      "distanceMiles": 489
+    }
+  },
+  "st-ignatius": {
+    "BZN": {
+      "durationSeconds": 14406,
+      "distanceMiles": 236
+    },
+    "BIL": {
+      "durationSeconds": 24284,
+      "distanceMiles": 389
+    },
+    "MSO": {
+      "durationSeconds": 2784,
+      "distanceMiles": 36
+    },
+    "FCA": {
+      "durationSeconds": 7163,
+      "distanceMiles": 83
+    },
+    "GTF": {
+      "durationSeconds": 15478,
+      "distanceMiles": 212
+    },
+    "HLN": {
+      "durationSeconds": 10385,
+      "distanceMiles": 157
+    }
+  },
+  "stanford": {
+    "BZN": {
+      "durationSeconds": 13084,
+      "distanceMiles": 184
+    },
+    "BIL": {
+      "durationSeconds": 11307,
+      "distanceMiles": 158
+    },
+    "MSO": {
+      "durationSeconds": 16007,
+      "distanceMiles": 233
+    },
+    "FCA": {
+      "durationSeconds": 19196,
+      "distanceMiles": 276
+    },
+    "GTF": {
+      "durationSeconds": 5760,
+      "distanceMiles": 68
+    },
+    "HLN": {
+      "durationSeconds": 9437,
+      "distanceMiles": 149
+    }
+  },
+  "stevensville": {
+    "BZN": {
+      "durationSeconds": 13876,
+      "distanceMiles": 224
+    },
+    "BIL": {
+      "durationSeconds": 23754,
+      "distanceMiles": 377
+    },
+    "MSO": {
+      "durationSeconds": 2921,
+      "distanceMiles": 33
+    },
+    "FCA": {
+      "durationSeconds": 12430,
+      "distanceMiles": 152
+    },
+    "GTF": {
+      "durationSeconds": 14949,
+      "distanceMiles": 200
+    },
+    "HLN": {
+      "durationSeconds": 9855,
+      "distanceMiles": 145
+    }
+  },
+  "sunburst": {
+    "BZN": {
+      "durationSeconds": 17380,
+      "distanceMiles": 285
+    },
+    "BIL": {
+      "durationSeconds": 21774,
+      "distanceMiles": 328
+    },
+    "MSO": {
+      "durationSeconds": 16743,
+      "distanceMiles": 259
+    },
+    "FCA": {
+      "durationSeconds": 12284,
+      "distanceMiles": 176
+    },
+    "GTF": {
+      "durationSeconds": 7800,
+      "distanceMiles": 116
+    },
+    "HLN": {
+      "durationSeconds": 11477,
+      "distanceMiles": 196
+    }
+  },
+  "superior": {
+    "BZN": {
+      "durationSeconds": 14884,
+      "distanceMiles": 252
+    },
+    "BIL": {
+      "durationSeconds": 24762,
+      "distanceMiles": 405
+    },
+    "MSO": {
+      "durationSeconds": 3300,
+      "distanceMiles": 53
+    },
+    "FCA": {
+      "durationSeconds": 11547,
+      "distanceMiles": 137
+    },
+    "GTF": {
+      "durationSeconds": 15957,
+      "distanceMiles": 228
+    },
+    "HLN": {
+      "durationSeconds": 10863,
+      "distanceMiles": 174
+    }
+  },
+  "terry": {
+    "BZN": {
+      "durationSeconds": 20614,
+      "distanceMiles": 334
+    },
+    "BIL": {
+      "durationSeconds": 12498,
+      "distanceMiles": 188
+    },
+    "MSO": {
+      "durationSeconds": 32192,
+      "distanceMiles": 533
+    },
+    "FCA": {
+      "durationSeconds": 39135,
+      "distanceMiles": 552
+    },
+    "GTF": {
+      "durationSeconds": 25699,
+      "distanceMiles": 344
+    },
+    "HLN": {
+      "durationSeconds": 26524,
+      "distanceMiles": 423
+    }
+  },
+  "thompson-falls": {
+    "BZN": {
+      "durationSeconds": 19905,
+      "distanceMiles": 296
+    },
+    "BIL": {
+      "durationSeconds": 29783,
+      "distanceMiles": 448
+    },
+    "MSO": {
+      "durationSeconds": 8283,
+      "distanceMiles": 96
+    },
+    "FCA": {
+      "durationSeconds": 10450,
+      "distanceMiles": 120
+    },
+    "GTF": {
+      "durationSeconds": 20978,
+      "distanceMiles": 272
+    },
+    "HLN": {
+      "durationSeconds": 15884,
+      "distanceMiles": 217
+    }
+  },
+  "three-forks": {
+    "BZN": {
+      "durationSeconds": 1704,
+      "distanceMiles": 24
+    },
+    "BIL": {
+      "durationSeconds": 11582,
+      "distanceMiles": 176
+    },
+    "MSO": {
+      "durationSeconds": 10729,
+      "distanceMiles": 180
+    },
+    "FCA": {
+      "durationSeconds": 18760,
+      "distanceMiles": 287
+    },
+    "GTF": {
+      "durationSeconds": 10974,
+      "distanceMiles": 157
+    },
+    "HLN": {
+      "durationSeconds": 5057,
+      "distanceMiles": 70
+    }
+  },
+  "townsend": {
+    "BZN": {
+      "durationSeconds": 3766,
+      "distanceMiles": 56
+    },
+    "BIL": {
+      "durationSeconds": 13644,
+      "distanceMiles": 209
+    },
+    "MSO": {
+      "durationSeconds": 10294,
+      "distanceMiles": 154
+    },
+    "FCA": {
+      "durationSeconds": 16495,
+      "distanceMiles": 235
+    },
+    "GTF": {
+      "durationSeconds": 8619,
+      "distanceMiles": 122
+    },
+    "HLN": {
+      "durationSeconds": 2702,
+      "distanceMiles": 35
+    }
+  },
+  "troy": {
+    "BZN": {
+      "durationSeconds": 26765,
+      "distanceMiles": 373
+    },
+    "BIL": {
+      "durationSeconds": 36643,
+      "distanceMiles": 526
+    },
+    "MSO": {
+      "durationSeconds": 15143,
+      "distanceMiles": 174
+    },
+    "FCA": {
+      "durationSeconds": 8343,
+      "distanceMiles": 117
+    },
+    "GTF": {
+      "durationSeconds": 24620,
+      "distanceMiles": 336
+    },
+    "HLN": {
+      "durationSeconds": 21052,
+      "distanceMiles": 302
+    }
+  },
+  "twin-bridges": {
+    "BZN": {
+      "durationSeconds": 5667,
+      "distanceMiles": 79
+    },
+    "BIL": {
+      "durationSeconds": 15545,
+      "distanceMiles": 232
+    },
+    "MSO": {
+      "durationSeconds": 11383,
+      "distanceMiles": 177
+    },
+    "FCA": {
+      "durationSeconds": 19414,
+      "distanceMiles": 284
+    },
+    "GTF": {
+      "durationSeconds": 13855,
+      "distanceMiles": 201
+    },
+    "HLN": {
+      "durationSeconds": 7941,
+      "distanceMiles": 115
+    }
+  },
+  "valier": {
+    "BZN": {
+      "durationSeconds": 16283,
+      "distanceMiles": 258
+    },
+    "BIL": {
+      "durationSeconds": 20677,
+      "distanceMiles": 301
+    },
+    "MSO": {
+      "durationSeconds": 15646,
+      "distanceMiles": 231
+    },
+    "FCA": {
+      "durationSeconds": 9860,
+      "distanceMiles": 135
+    },
+    "GTF": {
+      "durationSeconds": 6703,
+      "distanceMiles": 89
+    },
+    "HLN": {
+      "durationSeconds": 10380,
+      "distanceMiles": 169
+    }
+  },
+  "virginia-city": {
+    "BZN": {
+      "durationSeconds": 6055,
+      "distanceMiles": 68
+    },
+    "BIL": {
+      "durationSeconds": 15765,
+      "distanceMiles": 214
+    },
+    "MSO": {
+      "durationSeconds": 13882,
+      "distanceMiles": 213
+    },
+    "FCA": {
+      "durationSeconds": 21914,
+      "distanceMiles": 321
+    },
+    "GTF": {
+      "durationSeconds": 15212,
+      "distanceMiles": 213
+    },
+    "HLN": {
+      "durationSeconds": 9295,
+      "distanceMiles": 126
+    }
+  },
+  "walkerville": {
+    "BZN": {
+      "durationSeconds": 5052,
+      "distanceMiles": 79
+    },
+    "BIL": {
+      "durationSeconds": 14930,
+      "distanceMiles": 232
+    },
+    "MSO": {
+      "durationSeconds": 7627,
+      "distanceMiles": 126
+    },
+    "FCA": {
+      "durationSeconds": 15658,
+      "distanceMiles": 234
+    },
+    "GTF": {
+      "durationSeconds": 10482,
+      "distanceMiles": 158
+    },
+    "HLN": {
+      "durationSeconds": 4569,
+      "distanceMiles": 71
+    }
+  },
+  "west-glacier": {
+    "BZN": {
+      "durationSeconds": 21005,
+      "distanceMiles": 321
+    },
+    "BIL": {
+      "durationSeconds": 28394,
+      "distanceMiles": 410
+    },
+    "MSO": {
+      "durationSeconds": 10710,
+      "distanceMiles": 132
+    },
+    "FCA": {
+      "durationSeconds": 2115,
+      "distanceMiles": 24
+    },
+    "GTF": {
+      "durationSeconds": 14420,
+      "distanceMiles": 197
+    },
+    "HLN": {
+      "durationSeconds": 15195,
+      "distanceMiles": 217
+    }
+  },
+  "west-yellowstone": {
+    "BZN": {
+      "durationSeconds": 6972,
+      "distanceMiles": 90
+    },
+    "BIL": {
+      "durationSeconds": 16690,
+      "distanceMiles": 237
+    },
+    "MSO": {
+      "durationSeconds": 17141,
+      "distanceMiles": 271
+    },
+    "FCA": {
+      "durationSeconds": 25173,
+      "distanceMiles": 378
+    },
+    "GTF": {
+      "durationSeconds": 18471,
+      "distanceMiles": 270
+    },
+    "HLN": {
+      "durationSeconds": 12554,
+      "distanceMiles": 183
+    }
+  },
+  "westby": {
+    "BZN": {
+      "durationSeconds": 34317,
+      "distanceMiles": 529
+    },
+    "BIL": {
+      "durationSeconds": 26201,
+      "distanceMiles": 382
+    },
+    "MSO": {
+      "durationSeconds": 42856,
+      "distanceMiles": 615
+    },
+    "FCA": {
+      "durationSeconds": 41295,
+      "distanceMiles": 583
+    },
+    "GTF": {
+      "durationSeconds": 32777,
+      "distanceMiles": 453
+    },
+    "HLN": {
+      "durationSeconds": 36454,
+      "distanceMiles": 533
+    }
+  },
+  "white-sulphur-springs": {
+    "BZN": {
+      "durationSeconds": 6601,
+      "distanceMiles": 99
+    },
+    "BIL": {
+      "durationSeconds": 11964,
+      "distanceMiles": 148
+    },
+    "MSO": {
+      "durationSeconds": 13117,
+      "distanceMiles": 196
+    },
+    "FCA": {
+      "durationSeconds": 19318,
+      "distanceMiles": 277
+    },
+    "GTF": {
+      "durationSeconds": 9815,
+      "distanceMiles": 106
+    },
+    "HLN": {
+      "durationSeconds": 5525,
+      "distanceMiles": 77
+    }
+  },
+  "whitefish": {
+    "BZN": {
+      "durationSeconds": 20741,
+      "distanceMiles": 317
+    },
+    "BIL": {
+      "durationSeconds": 30619,
+      "distanceMiles": 470
+    },
+    "MSO": {
+      "durationSeconds": 10032,
+      "distanceMiles": 132
+    },
+    "FCA": {
+      "durationSeconds": 1084,
+      "distanceMiles": 12
+    },
+    "GTF": {
+      "durationSeconds": 16767,
+      "distanceMiles": 223
+    },
+    "HLN": {
+      "durationSeconds": 14931,
+      "distanceMiles": 212
+    }
+  },
+  "whitehall": {
+    "BZN": {
+      "durationSeconds": 3314,
+      "distanceMiles": 52
+    },
+    "BIL": {
+      "durationSeconds": 13192,
+      "distanceMiles": 205
+    },
+    "MSO": {
+      "durationSeconds": 9030,
+      "distanceMiles": 150
+    },
+    "FCA": {
+      "durationSeconds": 17061,
+      "distanceMiles": 258
+    },
+    "GTF": {
+      "durationSeconds": 11502,
+      "distanceMiles": 175
+    },
+    "HLN": {
+      "durationSeconds": 5588,
+      "distanceMiles": 88
+    }
+  },
+  "wibaux": {
+    "BZN": {
+      "durationSeconds": 24982,
+      "distanceMiles": 406
+    },
+    "BIL": {
+      "durationSeconds": 16866,
+      "distanceMiles": 260
+    },
+    "MSO": {
+      "durationSeconds": 36560,
+      "distanceMiles": 605
+    },
+    "FCA": {
+      "durationSeconds": 40592,
+      "distanceMiles": 601
+    },
+    "GTF": {
+      "durationSeconds": 27156,
+      "distanceMiles": 393
+    },
+    "HLN": {
+      "durationSeconds": 30833,
+      "distanceMiles": 473
+    }
+  },
+  "winifred": {
+    "BZN": {
+      "durationSeconds": 16380,
+      "distanceMiles": 210
+    },
+    "BIL": {
+      "durationSeconds": 14394,
+      "distanceMiles": 168
+    },
+    "MSO": {
+      "durationSeconds": 22946,
+      "distanceMiles": 316
+    },
+    "FCA": {
+      "durationSeconds": 26134,
+      "distanceMiles": 359
+    },
+    "GTF": {
+      "durationSeconds": 12698,
+      "distanceMiles": 152
+    },
+    "HLN": {
+      "durationSeconds": 16375,
+      "distanceMiles": 232
+    }
+  },
+  "winnett": {
+    "BZN": {
+      "durationSeconds": 15984,
+      "distanceMiles": 227
+    },
+    "BIL": {
+      "durationSeconds": 8656,
+      "distanceMiles": 99
+    },
+    "MSO": {
+      "durationSeconds": 22549,
+      "distanceMiles": 332
+    },
+    "FCA": {
+      "durationSeconds": 25738,
+      "distanceMiles": 376
+    },
+    "GTF": {
+      "durationSeconds": 12302,
+      "distanceMiles": 168
+    },
+    "HLN": {
+      "durationSeconds": 15979,
+      "distanceMiles": 248
+    }
+  },
+  "wolf-point": {
+    "BZN": {
+      "durationSeconds": 29993,
+      "distanceMiles": 421
+    },
+    "BIL": {
+      "durationSeconds": 22180,
+      "distanceMiles": 322
+    },
+    "MSO": {
+      "durationSeconds": 33524,
+      "distanceMiles": 492
+    },
+    "FCA": {
+      "durationSeconds": 31963,
+      "distanceMiles": 460
+    },
+    "GTF": {
+      "durationSeconds": 23445,
+      "distanceMiles": 330
+    },
+    "HLN": {
+      "durationSeconds": 27122,
+      "distanceMiles": 410
+    }
+  }
+}
