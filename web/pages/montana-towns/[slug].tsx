@@ -88,7 +88,30 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const contentHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
   const description = md?.excerpt || '';
   const aeoData = md?.aeoData || null;
-  const relatedTowns = getRelatedTowns(slug, 3);
+  
+  // Try to use the specifically parsed nearby destinations from the markdown file first.
+  // If the markdown file doesn't have any, fall back to our deterministic algorithm.
+  let relatedTowns = [];
+  if (md?.nearbyDestinations && md.nearbyDestinations.length > 0) {
+    const allTowns = getTownList();
+    relatedTowns = md.nearbyDestinations.map(name => {
+      const match = allTowns.find(t => t.name.toLowerCase() === name.toLowerCase());
+      return match ? { name: match.name, slug: match.slug } : null;
+    }).filter(Boolean) as { name: string; slug: string }[];
+    
+    // If we only found 1 or 2 valid ones, pad it out with the fallback algorithm so it looks full
+    if (relatedTowns.length < 3) {
+      const fallbacks = getRelatedTowns(slug, 3);
+      for (const fallback of fallbacks) {
+        if (relatedTowns.length >= 3) break;
+        if (!relatedTowns.find(t => t.slug === fallback.slug)) {
+          relatedTowns.push(fallback);
+        }
+      }
+    }
+  } else {
+    relatedTowns = getRelatedTowns(slug, 3);
+  }
 
   return { props: { slug, townName, contentHtml, description, aeoData, relatedTowns } };
 };

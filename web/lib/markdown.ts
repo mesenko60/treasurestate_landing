@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { getTownList } from './towns';
 
 export interface AEOData {
   keyFacts: Record<string, string>;
@@ -12,6 +13,7 @@ export interface TownData {
   contentHtml: string;
   excerpt: string;
   aeoData: AEOData;
+  nearbyDestinations: string[]; // List of town names
 }
 
 export async function markdownToHtml(md: string): Promise<string> {
@@ -20,7 +22,14 @@ export async function markdownToHtml(md: string): Promise<string> {
     .filter(line => !/^\s{0,3}##\s+.*data collection\s*$/i.test(line))
     .join('\n')
     .replace(/\n{3,}/g, '\n\n');
-  return await marked.parse(sanitizedMd) as unknown as string;
+  
+  // Custom renderer to replace bold town names in the Nearby Destinations section with links
+  const renderer = new marked.Renderer();
+  const originalListitem = renderer.listitem.bind(renderer);
+  
+  // We'll process the links on the React side to avoid hardcoding logic here,
+  // so we just return the standard parsed HTML for now.
+  return await marked.parse(sanitizedMd, { renderer }) as unknown as string;
 }
 
 export function extractAEOData(md: string, townName: string): AEOData {
@@ -72,6 +81,56 @@ export function extractAEOData(md: string, townName: string): AEOData {
   return aeoData;
 }
 
+function extractNearbyDestinations(md: string): string[] {
+  const nearbyTowns: string[] = [];
+  const tokens = marked.lexer(md);
+  let inNearbySection = false;
+  
+  const allValidTowns = getTownList().map(t => t.name.toLowerCase());
+
+  for (const token of tokens) {
+    if (token.type === 'heading') {
+      const text = token.text.toLowerCase();
+      if (text.includes('nearby') || text.includes('getting there')) {
+        inNearbySection = true;
+      } else {
+        inNearbySection = false;
+      }
+    } else if (inNearbySection && token.type === 'list') {
+      // Deep search for bold text in list items (which usually represent the nearby towns)
+      const extractBold = (text: string) => {
+        const matches = Array.from(text.matchAll(/\*\*(.*?)\*\*/g));
+        for (const match of matches) {
+          const possibleTown = match[1].replace(/, Montana/i, '').trim();
+          // Verify it's a valid town in our directory
+          if (allValidTowns.includes(possibleTown.toLowerCase())) {
+            if (!nearbyTowns.includes(possibleTown)) {
+              nearbyTowns.push(possibleTown);
+            }
+          }
+        }
+      };
+      
+      // Look at top level items
+      for (const item of token.items) {
+        extractBold(item.text);
+        // Look at nested sublists (e.g. "Nearby Destinations: \n - **Glendive**")
+        if (item.tokens) {
+          for (const subToken of item.tokens) {
+             if (subToken.type === 'list') {
+               for (const subItem of subToken.items) {
+                 extractBold(subItem.text);
+               }
+             }
+          }
+        }
+      }
+    }
+  }
+  
+  return nearbyTowns;
+}
+
 function generateQuestion(sectionTitle: string, townName: string): string {
   const lower = sectionTitle.toLowerCase();
   if (lower.includes('things to do') || lower.includes('activities')) {
@@ -118,6 +177,7 @@ export async function readTownMarkdownByTownName(townName: string): Promise<Town
   const html = await markdownToHtml(parsed.content);
   const excerpt = parsed.data?.description || parsed.excerpt || '';
   const aeoData = extractAEOData(parsed.content, townName);
+  const nearbyDestinations = extractNearbyDestinations(parsed.content);
 
-  return { contentHtml: html, excerpt, aeoData };
+  return { contentHtml: html, excerpt, aeoData, nearbyDestinations };
 }
