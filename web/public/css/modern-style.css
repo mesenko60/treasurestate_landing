@@ -17,6 +17,9 @@
   /* Typography */
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Open Sans', sans-serif;
+  
+  /* Mobile Layout Variables */
+  --bottom-nav-height: 65px;
 }
 
 /* General Body Styles */
@@ -29,6 +32,14 @@ body {
   line-height: 1.6;
   font-size: 16px;
   overflow-x: hidden;
+  padding-bottom: 0; /* Default for desktop */
+}
+
+/* Mobile Adjustments for Bottom Nav */
+@media (max-width: 600px) {
+  body {
+    padding-bottom: var(--bottom-nav-height); /* Make room for sticky bottom nav */
+  }
 }
 
 img {
@@ -83,22 +94,64 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 600px) {
   .menu-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5em;
-    padding: 0.5em 0;
-    position: static;
+    display: none; /* Hide top nav entirely on mobile */
   }
-  .menu-bar a {
-    padding: 0.75em 1em;
-    border-radius: 0;
-    border-bottom: 1px solid var(--gray);
-    text-align: left;
-    font-size: 1.1em;
+}
+
+/* Mobile Bottom Navigation Bar */
+.mobile-bottom-nav {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--bottom-nav-height);
+  background-color: var(--white);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom); /* iOS safe area */
+}
+
+@media (max-width: 600px) {
+  .mobile-bottom-nav {
+    display: flex;
   }
-  .menu-bar a:last-child {
-    border-bottom: none;
-  }
+}
+
+.mobile-bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: 25%;
+  height: 100%;
+  transition: color 0.2s;
+}
+
+.mobile-bottom-nav a .icon {
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.2s;
+}
+
+.mobile-bottom-nav a:hover,
+.mobile-bottom-nav a:active,
+.mobile-bottom-nav a.active {
+  color: var(--primary);
+}
+
+.mobile-bottom-nav a.active .icon,
+.mobile-bottom-nav a:hover .icon {
+  filter: grayscale(0%) opacity(1);
+  transform: translateY(-2px);
 }
 
 
