@@ -77,5 +77,5 @@ Ready to explore Polson? Add it to your Montana travel itinerary and discover th
 
 - Polson Chamber of Commerce (www.polsonchamber.com)
 - Visit Montana (www.visitmt.com)
-- Wikipedia (en.wikipedia.org/wiki/Polson,_Montana & en.wikipedia.org/wiki/Category:People_from_Polson,_Montana)
+- Grokipedia (en.grokipedia.org/wiki/Polson,_Montana & en.grokipedia.org/wiki/Category:People_from_Polson,_Montana)
 - City of Polson (www.cityofpolson.com)

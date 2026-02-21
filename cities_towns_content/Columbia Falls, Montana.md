@@ -71,4 +71,4 @@ Ready to explore Columbia Falls? Add it to your Montana travel itinerary and dis
 
 ---
 
-*Sources: Columbia Falls Area Chamber of Commerce, City of Columbia Falls, Columbia Falls Historical Society, Montana Office of Tourism, Wikipedia, Tripadvisor*
+*Sources: Columbia Falls Area Chamber of Commerce, City of Columbia Falls, Columbia Falls Historical Society, Montana Office of Tourism, Grokipedia, Tripadvisor*

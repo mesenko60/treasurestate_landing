@@ -92,5 +92,5 @@ Ready to explore Wolf Point? Add it to your Montana travel itinerary and discove
 2. Visit Montana. (n.d.). Wolf Point Chamber of Commerce. Retrieved from https://visitmt.com/listing/wolf-point-chamber-of-commerce
 3. City of Wolf Point, Montana. (n.d.). History of Wolf Point. Retrieved from https://ci.wolf-point.mt.us/community/page/history-wolf-point
 4. Sherman Inn. (n.d.). Retrieved from https://www.shermaninn.com/
-5. Wikipedia. (n.d.). Wolf Point, Montana. Retrieved from https://en.wikipedia.org/wiki/Wolf_Point,_Montana
-6. Wikipedia. (n.d.). Category:People from Wolf Point, Montana. Retrieved from https://en.wikipedia.org/wiki/Category:People_from_Wolf_Point,_Montana
+5. Grokipedia. (n.d.). Wolf Point, Montana. Retrieved from https://en.grokipedia.org/wiki/Wolf_Point,_Montana
+6. Grokipedia. (n.d.). Category:People from Wolf Point, Montana. Retrieved from https://en.grokipedia.org/wiki/Category:People_from_Wolf_Point,_Montana

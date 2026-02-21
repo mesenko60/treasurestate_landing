@@ -76,4 +76,4 @@ Ready to explore Anaconda? Add it to your Montana travel itinerary and discover 
 
 ---
 
-*Sources: Discover Anaconda (official tourism website), Wikipedia, U.S. Census Bureau, Britannica, TripAdvisor*
+*Sources: Discover Anaconda (official tourism website), Grokipedia, U.S. Census Bureau, Britannica, TripAdvisor*

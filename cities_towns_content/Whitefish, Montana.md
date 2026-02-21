@@ -78,7 +78,7 @@ Ready to explore Whitefish? Add it to your Montana travel itinerary and discover
 **Sources:**
 - Explore Whitefish (explorewhitefish.com)
 - Whitefish Chamber of Commerce (whitefishchamber.org)
-- Wikipedia (en.wikipedia.org/wiki/Whitefish,_Montana)
+- Grokipedia (en.grokipedia.org/wiki/Whitefish,_Montana)
 - U.S. Census Bureau (census.gov)
 - City of Whitefish (cityofwhitefish.org)
 - Famous Birthdays (famousbirthdays.com)

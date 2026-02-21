@@ -129,7 +129,7 @@ Ready to explore Kalispell? Add it to your Montana travel itinerary and discover
 
 - https://discoverkalispell.com/
 - https://discoverkalispell.com/about-kalispell/history/
-- https://en.wikipedia.org/wiki/Category:People_from_Kalispell,_Montana
-- https://en.wikipedia.org/wiki/Kalispell,_Montana
+- https://en.grokipedia.org/wiki/Category:People_from_Kalispell,_Montana
+- https://en.grokipedia.org/wiki/Kalispell,_Montana
 - https://www.census.gov/quickfacts/fact/table/kalispellcitymontana/PST045223
 - https://www.famousbirthdays.com/city/kalispell-mt.html

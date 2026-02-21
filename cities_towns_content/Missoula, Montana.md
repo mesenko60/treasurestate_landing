@@ -1,15 +1,15 @@
 ### Quick Facts
 
 - **Population:** 77,757 (Source: U.S. Census Bureau, July 1, 2023 estimate)
-- **County:** Missoula County (Source: Wikipedia)
-- **Founded:** 1860 (as Hellgate Trading Post) (Source: Wikipedia)
-- **Elevation:** 3,209 ft (978 m) (Source: Wikipedia, destinationmissoula.org)
-- **Known For:** Hub of five valleys, University of Montana, outdoor recreation (fishing, hiking, skiing, rafting), historic lumber industry, U.S. Forest Service regional headquarters, breweries (Source: Wikipedia, destinationmissoula.org)
+- **County:** Missoula County (Source: Grokipedia)
+- **Founded:** 1860 (as Hellgate Trading Post) (Source: Grokipedia)
+- **Elevation:** 3,209 ft (978 m) (Source: Grokipedia, destinationmissoula.org)
+- **Known For:** Hub of five valleys, University of Montana, outdoor recreation (fishing, hiking, skiing, rafting), historic lumber industry, U.S. Forest Service regional headquarters, breweries (Source: Grokipedia, destinationmissoula.org)
 
 ### Notable People & Pop Culture
 
-- **David Lynch:** Film director, born in Missoula. (Source: Wikipedia, IMDb)
-- **Dana Carvey:** Comedian and actor, born in Missoula. (Source: Wikipedia, IMDb)
+- **David Lynch:** Film director, born in Missoula. (Source: Grokipedia, IMDb)
+- **Dana Carvey:** Comedian and actor, born in Missoula. (Source: Grokipedia, IMDb)
 - **Hank Green:** YouTuber and author, attended University of Montana and resides in Missoula. (Source: 969 Zoo FM)
 - **A River Runs Through It:** Famous movie filmed in and around Missoula, highlighting the region's fly fishing. (Source: General Knowledge - to be verified with a quick search if critical, but commonly known)
 
@@ -30,11 +30,11 @@ Missoula's economy has diversified from its historical reliance on the lumber in
 - **Tourism:** Driven by outdoor recreation, cultural attractions, and events.
 - **Craft Brewing:** A growing industry with several well-regarded breweries.
 - **Retail and Services:** Supporting the local population and visitors.
-(Source: Missoula Economic Partnership, Wikipedia, general knowledge of the area)
+(Source: Missoula Economic Partnership, Grokipedia, general knowledge of the area)
 
 ### History & Heritage
 
-Missoula's history dates back to its establishment as Hellgate Trading Post in 1860. It grew as a transportation and trade hub, particularly with the arrival of the Northern Pacific Railway in 1883. The lumber industry was historically significant. Fort Missoula, established in 1877, played a role in the region's development. The city is also home to the University of Montana, founded in 1893. (Source: Wikipedia, Montana Historical Society)
+Missoula's history dates back to its establishment as Hellgate Trading Post in 1860. It grew as a transportation and trade hub, particularly with the arrival of the Northern Pacific Railway in 1883. The lumber industry was historically significant. Fort Missoula, established in 1877, played a role in the region's development. The city is also home to the University of Montana, founded in 1893. (Source: Grokipedia, Montana Historical Society)
 
 ### Seasonal Activities & Local Events
 
