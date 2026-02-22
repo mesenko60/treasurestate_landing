@@ -403,5 +403,95 @@
         "distMiles": 20
       }
     ]
+  },
+  "livingston": {
+    "name": "Livingston",
+    "places": [
+      {
+        "name": "Northside Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Sacajawea Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Ninth Street Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "G Street Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "M Street Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Jack Weimer Memorial Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Mars Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Livingston / Paradise Valley KOA",
+        "type": "Campground",
+        "distMiles": 10
+      }
+    ]
+  },
+  "nashua": {
+    "name": "Nashua",
+    "places": [
+      {
+        "name": "Warren Memorial Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "US DOD",
+        "type": "Nature Reserve",
+        "distMiles": 5
+      },
+      {
+        "name": "Trout Pond Recreation Area",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Flat Lake Recreation Area",
+        "type": "Park",
+        "distMiles": 8
+      },
+      {
+        "name": "Downstream Recreation Area",
+        "type": "Park",
+        "distMiles": 9
+      },
+      {
+        "name": "Mall Park",
+        "type": "Park",
+        "distMiles": 9
+      },
+      {
+        "name": "Osage Circle Park",
+        "type": "Park",
+        "distMiles": 9
+      },
+      {
+        "name": "Coleman Wildlife Park",
+        "type": "Park",
+        "distMiles": 9
+      }
+    ]
   }
 }
