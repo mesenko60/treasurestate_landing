@@ -49,6 +49,16 @@ function url(loc, lastmod = new Date()) {
     entries.push(url(`${baseUrl}/montana-towns/${t.slug}/`));
   }
 
+  // Comparison pages
+  const compareDir = path.join(outDir, 'compare');
+  if (fs.existsSync(compareDir)) {
+    for (const f of fs.readdirSync(compareDir)) {
+      if (fs.statSync(path.join(compareDir, f)).isDirectory()) {
+        entries.push(url(`${baseUrl}/compare/${f}/`));
+      }
+    }
+  }
+
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
   if (fs.existsSync(outDir)) {
     fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');

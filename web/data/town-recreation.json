@@ -223,5 +223,95 @@
         "distMiles": 23
       }
     ]
+  },
+  "forsyth": {
+    "name": "Forsyth",
+    "places": [
+      {
+        "name": "Riverside Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Pioneer Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Marcyes Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "VFW Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "State Trust",
+        "type": "Nature Reserve",
+        "distMiles": 7
+      },
+      {
+        "name": "BLM",
+        "type": "Nature Reserve",
+        "distMiles": 13
+      },
+      {
+        "name": "Cattle Brands Historical Marker",
+        "type": "Park",
+        "distMiles": 18
+      },
+      {
+        "name": "Rosebud Historical Marker",
+        "type": "Park",
+        "distMiles": 18
+      }
+    ]
+  },
+  "glendive": {
+    "name": "Glendive",
+    "places": [
+      {
+        "name": "Community Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Schock Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "GBNFCU Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Historical Landmark Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Babe Ruth Field",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Glendive Historical Marker",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Perham Field",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "ABC Little League Field",
+        "type": "Park",
+        "distMiles": 1
+      }
+    ]
   }
 }
