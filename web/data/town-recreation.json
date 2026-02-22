@@ -493,5 +493,185 @@
         "distMiles": 9
       }
     ]
+  },
+  "plentywood": {
+    "name": "Plentywood",
+    "places": [
+      {
+        "name": "Sherwood Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Mill Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Polly Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Sportsman Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Harry DeSilva City Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Raymond Park and Recreation Area",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "State Trust",
+        "type": "Nature Reserve",
+        "distMiles": 16
+      },
+      {
+        "name": "US DOD",
+        "type": "Nature Reserve",
+        "distMiles": 16
+      }
+    ]
+  },
+  "rexford": {
+    "name": "Rexford",
+    "places": [
+      {
+        "name": "Camp 32",
+        "type": "Campground",
+        "distMiles": 4
+      },
+      {
+        "name": "Swisher Lake Campground",
+        "type": "Campground",
+        "distMiles": 5
+      },
+      {
+        "name": "Tent camping only",
+        "type": "Campground",
+        "distMiles": 6
+      },
+      {
+        "name": "Riverside Park",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Memorial Park",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Tobacco Plains Historical Marker",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Gateway Boat Camp",
+        "type": "Campground",
+        "distMiles": 7
+      },
+      {
+        "name": "Gold Creek Bay Recreation Site",
+        "type": "Park",
+        "distMiles": 12
+      }
+    ]
+  },
+  "ronan": {
+    "name": "Ronan",
+    "places": [
+      {
+        "name": "Ronan Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Crow Creek Trailhead",
+        "type": "Trailhead",
+        "distMiles": 5
+      },
+      {
+        "name": "Pablo Ball Fields",
+        "type": "Park",
+        "distMiles": 5
+      },
+      {
+        "name": "Ninepipe National Wildlife Refuge",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Mission Mountain Wilderness Historical Marker",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Pablo National Wildlife Refuge",
+        "type": "Park",
+        "distMiles": 8
+      },
+      {
+        "name": "Mud Lake Trailhead",
+        "type": "Trailhead",
+        "distMiles": 9
+      },
+      {
+        "name": "Lions Park",
+        "type": "Park",
+        "distMiles": 11
+      }
+    ]
+  },
+  "stanford": {
+    "name": "Stanford",
+    "places": [
+      {
+        "name": "Stanford City Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Mining Plays Second Fiddle Historical Marker",
+        "type": "Park",
+        "distMiles": 12
+      },
+      {
+        "name": "Lions Club Park",
+        "type": "Park",
+        "distMiles": 17
+      },
+      {
+        "name": "Lions Park",
+        "type": "Park",
+        "distMiles": 17
+      },
+      {
+        "name": "Denton City Park",
+        "type": "Park",
+        "distMiles": 17
+      },
+      {
+        "name": "Judith River State Wildlife Management Area",
+        "type": "Park",
+        "distMiles": 19
+      },
+      {
+        "name": "Ackley Lake State Park",
+        "type": "Park",
+        "distMiles": 19
+      },
+      {
+        "name": "Judith River Historical Marker",
+        "type": "Park",
+        "distMiles": 19
+      }
+    ]
   }
 }

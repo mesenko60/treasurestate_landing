@@ -25,21 +25,35 @@ export function getTownNameFromSlug(slug: string): string {
 
 export function getRelatedTowns(currentSlug: string, count: number = 3): { name: string; slug: string }[] {
   const towns = getTownList();
-  // Filter out current town
   const otherTowns = towns.filter(t => t.slug !== currentSlug);
-  
-  // Deterministic "random" selection based on the string length and characters of the current slug
-  // This ensures the related towns for a specific town don't change on every build
-  let seed = 0;
-  for (let i = 0; i < currentSlug.length; i++) {
-    seed += currentSlug.charCodeAt(i);
+
+  let coordinates: Record<string, { lat: number; lng: number }> = {};
+  try {
+    const coordsPath = path.resolve(process.cwd(), 'data', 'town-coordinates.json');
+    if (fs.existsSync(coordsPath)) {
+      coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
+    }
+  } catch { /* fall through to alphabetical fallback */ }
+
+  const current = coordinates[currentSlug];
+  if (!current) {
+    return otherTowns.slice(0, count);
   }
-  
-  const related = [];
-  for (let i = 0; i < count; i++) {
-    const index = (seed + i * 17) % otherTowns.length;
-    related.push(otherTowns[index]);
+
+  const R = 3959; // Earth radius in miles
+  function dist(lat1: number, lon1: number, lat2: number, lon2: number) {
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
-  
-  return related;
+
+  const withDist = otherTowns
+    .filter(t => coordinates[t.slug])
+    .map(t => ({ ...t, d: dist(current.lat, current.lng, coordinates[t.slug].lat, coordinates[t.slug].lng) }))
+    .sort((a, b) => a.d - b.d);
+
+  return withDist.slice(0, count).map(({ name, slug }) => ({ name, slug }));
 }
