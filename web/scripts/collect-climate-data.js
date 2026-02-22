@@ -48,7 +48,6 @@ async function collectClimateData() {
     console.log(`Fetching climate for ${town.name}...`);
 
     try {
-      // Use Open-Meteo Historical Weather API with daily aggregation over 5 years
       const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${town.lat}&longitude=${town.lng}&start_date=2019-01-01&end_date=2023-12-31&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,snowfall_sum&temperature_unit=fahrenheit&precipitation_unit=inch&timezone=America/Denver`;
 
       const data = await fetchJson(url);
@@ -79,7 +78,6 @@ async function collectClimateData() {
         const months = [];
         for (let m = 0; m < 12; m++) {
           const count = monthlyCounts[m] || 1;
-          // precip and snow are sums per day, so monthly total = sum / years
           const years = 5;
           months.push({
             month: MONTH_NAMES[m],
@@ -90,7 +88,7 @@ async function collectClimateData() {
           });
         }
 
-        results[slug] = { name: town.name, months };
+        results[slug] = { name: town.name, months }; // no interpolated flag = real API data
         console.log(`  OK: ${town.name} - Jan high: ${months[0].avgHigh}°F, Jul high: ${months[6].avgHigh}°F`);
       } else {
         console.log(`  No climate data returned for ${town.name}`);

@@ -63,6 +63,7 @@ type RecreationPlace = {
 type Props = {
   slug: string;
   townName: string;
+  nickname: string;
   contentHtml: string;
   description: string;
   aeoData: AEOData | null;
@@ -75,9 +76,9 @@ type Props = {
   recreationPlaces: RecreationPlace[] | null;
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces }: Props) {
-  const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
-  const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces }: Props) {
+  const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
+  const metaDesc = description || `Discover ${townName}, Montana — ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
 
   const breadcrumbItems = [
@@ -113,7 +114,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
 
       <Hero
         title={townName}
-        subtitle="A Montana Community"
+        subtitle={nickname}
         image={`/images/towns/${slug}.jpg`}
         alt={`${townName} - Scenic View`}
         small
@@ -165,6 +166,17 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const slug = String(ctx.params?.slug);
   const townName = getTownNameFromSlug(slug);
   const md = await readTownMarkdownByTownName(townName);
+
+  let allNicknames: Record<string, string> = {};
+  try {
+    const nicknamePath = path.resolve(process.cwd(), 'data', 'town-nicknames.json');
+    if (fs.existsSync(nicknamePath)) {
+      allNicknames = JSON.parse(fs.readFileSync(nicknamePath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load nicknames", e);
+  }
+  const nickname = allNicknames[slug] || 'A Montana Community';
   
   const contentHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
   const description = md?.excerpt || '';
@@ -269,6 +281,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     props: { 
       slug, 
       townName, 
+      nickname,
       contentHtml, 
       description, 
       aeoData, 

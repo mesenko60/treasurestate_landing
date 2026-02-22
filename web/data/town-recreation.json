@@ -673,5 +673,120 @@
         "distMiles": 19
       }
     ]
+  },
+  "troy": {
+    "name": "Troy",
+    "places": [
+      {
+        "name": "Troy City Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Roosevelt Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Kootenai River Historical Marker",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Kootenai Falls Park",
+        "type": "Nature Reserve",
+        "distMiles": 6
+      },
+      {
+        "name": "Kilbrennan Lake Campground",
+        "type": "Campground",
+        "distMiles": 9
+      },
+      {
+        "name": "Yaak Falls Campground",
+        "type": "Campground",
+        "distMiles": 13
+      },
+      {
+        "name": "Loon Lake Campground",
+        "type": "Campground",
+        "distMiles": 14
+      },
+      {
+        "name": "Spar Lake Campground",
+        "type": "Campground",
+        "distMiles": 14
+      }
+    ]
+  },
+  "westby": {
+    "name": "Westby",
+    "places": [
+      {
+        "name": "Noelle Meyer Memorial Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Onstad Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Comer Park",
+        "type": "Park",
+        "distMiles": 9
+      },
+      {
+        "name": "State Trust",
+        "type": "Nature Reserve",
+        "distMiles": 11
+      },
+      {
+        "name": "USFWS",
+        "type": "Nature Reserve",
+        "distMiles": 11
+      },
+      {
+        "name": "Writing Rock Park",
+        "type": "Park",
+        "distMiles": 11
+      },
+      {
+        "name": "Sunset Park",
+        "type": "Park",
+        "distMiles": 18
+      },
+      {
+        "name": "Brush Lake State Park",
+        "type": "Park",
+        "distMiles": 19
+      }
+    ]
+  },
+  "winnett": {
+    "name": "Winnett",
+    "places": [
+      {
+        "name": "USFWS",
+        "type": "Nature Reserve",
+        "distMiles": 8
+      },
+      {
+        "name": "BLM",
+        "type": "Nature Reserve",
+        "distMiles": 20
+      },
+      {
+        "name": "State",
+        "type": "Nature Reserve",
+        "distMiles": 21
+      },
+      {
+        "name": "State Trust",
+        "type": "Nature Reserve",
+        "distMiles": 31
+      }
+    ]
   }
 }

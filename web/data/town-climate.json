@@ -7830,5 +7830,4099 @@
         "snowIn": 2.5
       }
     ]
+  },
+  "eureka": {
+    "name": "Eureka",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 21,
+        "precipIn": 1.5,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 33,
+        "avgLow": 15,
+        "precipIn": 1.3,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 45,
+        "avgLow": 23,
+        "precipIn": 1.1,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 30,
+        "precipIn": 1.4,
+        "snowIn": 0.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 41,
+        "precipIn": 2.3,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 48,
+        "precipIn": 2.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 82,
+        "avgLow": 54,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 55,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 70,
+        "avgLow": 48,
+        "precipIn": 1.5,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 36,
+        "precipIn": 1.7,
+        "snowIn": 0.9
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 41,
+        "avgLow": 27,
+        "precipIn": 1.9,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 34,
+        "avgLow": 22,
+        "precipIn": 2,
+        "snowIn": 3.2
+      }
+    ]
+  },
+  "fairfield": {
+    "name": "Fairfield",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 37,
+        "avgLow": 22,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 29,
+        "avgLow": 11,
+        "precipIn": 1,
+        "snowIn": 2.5
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 42,
+        "avgLow": 21,
+        "precipIn": 0.7,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 30,
+        "precipIn": 1.7,
+        "snowIn": 2.7
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 41,
+        "precipIn": 2.7,
+        "snowIn": 1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 73,
+        "avgLow": 50,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 84,
+        "avgLow": 56,
+        "precipIn": 0.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 82,
+        "avgLow": 56,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 72,
+        "avgLow": 48,
+        "precipIn": 1.5,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 35,
+        "precipIn": 1.3,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 26,
+        "precipIn": 0.8,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 35,
+        "avgLow": 21,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      }
+    ]
+  },
+  "fairview": {
+    "name": "Fairview",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 6,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 19,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 29,
+        "precipIn": 1.7,
+        "snowIn": 3
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 43,
+        "precipIn": 2.6,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 79,
+        "avgLow": 56,
+        "precipIn": 2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 84,
+        "avgLow": 62,
+        "precipIn": 1.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 83,
+        "avgLow": 60,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 52,
+        "precipIn": 2.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 36,
+        "precipIn": 1.5,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 24,
+        "precipIn": 0.6,
+        "snowIn": 1
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 0.8,
+        "snowIn": 1.9
+      }
+    ]
+  },
+  "flaxville": {
+    "name": "Flaxville",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 27,
+        "avgLow": 12,
+        "precipIn": 0.5,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 22,
+        "avgLow": 5,
+        "precipIn": 0.6,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 37,
+        "avgLow": 18,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 47,
+        "avgLow": 28,
+        "precipIn": 1.4,
+        "snowIn": 3
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 42,
+        "precipIn": 1.9,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 75,
+        "avgLow": 54,
+        "precipIn": 2.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 80,
+        "avgLow": 59,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 79,
+        "avgLow": 58,
+        "precipIn": 1.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 70,
+        "avgLow": 50,
+        "precipIn": 1.4,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 50,
+        "avgLow": 34,
+        "precipIn": 1,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 37,
+        "avgLow": 22,
+        "precipIn": 0.9,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 27,
+        "avgLow": 13,
+        "precipIn": 0.6,
+        "snowIn": 1.7
+      }
+    ]
+  },
+  "forsyth": {
+    "name": "Forsyth",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 38,
+        "avgLow": 20,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 11,
+        "precipIn": 0.9,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 45,
+        "avgLow": 23,
+        "precipIn": 0.7,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 54,
+        "avgLow": 33,
+        "precipIn": 2,
+        "snowIn": 2.5
+      },
+      {
+        "month": "May",
+        "avgHigh": 67,
+        "avgLow": 46,
+        "precipIn": 1.8,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 81,
+        "avgLow": 57,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 90,
+        "avgLow": 65,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 88,
+        "avgLow": 63,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 78,
+        "avgLow": 54,
+        "precipIn": 2,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 57,
+        "avgLow": 37,
+        "precipIn": 1.7,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 46,
+        "avgLow": 27,
+        "precipIn": 0.6,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 19,
+        "precipIn": 0.6,
+        "snowIn": 1.3
+      }
+    ]
+  },
+  "fort-benton": {
+    "name": "Fort Benton",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 38,
+        "avgLow": 22,
+        "precipIn": 0.6,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 12,
+        "precipIn": 1.1,
+        "snowIn": 3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 43,
+        "avgLow": 23,
+        "precipIn": 0.8,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 33,
+        "precipIn": 1.5,
+        "snowIn": 1.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 44,
+        "precipIn": 2.3,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 77,
+        "avgLow": 55,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 87,
+        "avgLow": 62,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 75,
+        "avgLow": 52,
+        "precipIn": 1.3,
+        "snowIn": 0.6
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 37,
+        "precipIn": 1.5,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 44,
+        "avgLow": 28,
+        "precipIn": 1.1,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 21,
+        "precipIn": 0.9,
+        "snowIn": 2.1
+      }
+    ]
+  },
+  "fort-peck": {
+    "name": "Fort Peck",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 31,
+        "avgLow": 14,
+        "precipIn": 0.4,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 8,
+        "precipIn": 0.8,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 39,
+        "avgLow": 20,
+        "precipIn": 0.6,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 32,
+        "precipIn": 1,
+        "snowIn": 1.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 45,
+        "precipIn": 1.7,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 58,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 64,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 85,
+        "avgLow": 63,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 53,
+        "precipIn": 1.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 37,
+        "precipIn": 1.3,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 41,
+        "avgLow": 25,
+        "precipIn": 0.9,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 14,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      }
+    ]
+  },
+  "glasgow": {
+    "name": "Glasgow",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 31,
+        "avgLow": 13,
+        "precipIn": 0.4,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 27,
+        "avgLow": 7,
+        "precipIn": 0.8,
+        "snowIn": 2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 19,
+        "precipIn": 0.6,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 30,
+        "precipIn": 1,
+        "snowIn": 1.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 67,
+        "avgLow": 44,
+        "precipIn": 1.7,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 79,
+        "avgLow": 56,
+        "precipIn": 2.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 61,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 51,
+        "precipIn": 1.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 35,
+        "precipIn": 1.1,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 22,
+        "precipIn": 0.9,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 12,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      }
+    ]
+  },
+  "glendive": {
+    "name": "Glendive",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 33,
+        "avgLow": 15,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 8,
+        "precipIn": 0.8,
+        "snowIn": 2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 41,
+        "avgLow": 20,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 30,
+        "precipIn": 1.4,
+        "snowIn": 2
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 44,
+        "precipIn": 2.7,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 79,
+        "avgLow": 57,
+        "precipIn": 1.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 63,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 75,
+        "avgLow": 52,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 36,
+        "precipIn": 1.6,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 24,
+        "precipIn": 0.6,
+        "snowIn": 1
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 33,
+        "avgLow": 15,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      }
+    ]
+  },
+  "grass-range": {
+    "name": "Grass Range",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 39,
+        "avgLow": 22,
+        "precipIn": 0.7,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 29,
+        "avgLow": 12,
+        "precipIn": 1.1,
+        "snowIn": 2.9
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 43,
+        "avgLow": 23,
+        "precipIn": 0.8,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 32,
+        "precipIn": 2.2,
+        "snowIn": 2.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 43,
+        "precipIn": 2.6,
+        "snowIn": 1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 75,
+        "avgLow": 54,
+        "precipIn": 2.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 62,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 61,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 52,
+        "precipIn": 2.1,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 37,
+        "precipIn": 1.7,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 45,
+        "avgLow": 27,
+        "precipIn": 0.9,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 37,
+        "avgLow": 21,
+        "precipIn": 0.8,
+        "snowIn": 2.1
+      }
+    ]
+  },
+  "great-falls": {
+    "name": "Great Falls",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 38,
+        "avgLow": 24,
+        "precipIn": 0.8,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 29,
+        "avgLow": 13,
+        "precipIn": 1.2,
+        "snowIn": 3.1
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 42,
+        "avgLow": 23,
+        "precipIn": 0.8,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 32,
+        "precipIn": 2,
+        "snowIn": 2.6
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 43,
+        "precipIn": 2.4,
+        "snowIn": 0.7
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 74,
+        "avgLow": 52,
+        "precipIn": 2.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 60,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 59,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 51,
+        "precipIn": 1.4,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 37,
+        "precipIn": 1.6,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 44,
+        "avgLow": 29,
+        "precipIn": 0.9,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 37,
+        "avgLow": 23,
+        "precipIn": 0.8,
+        "snowIn": 2
+      }
+    ]
+  },
+  "jordan": {
+    "name": "Jordan",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 19,
+        "precipIn": 0.5,
+        "snowIn": 0.9
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 11,
+        "precipIn": 0.8,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 41,
+        "avgLow": 22,
+        "precipIn": 0.6,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 33,
+        "precipIn": 1.3,
+        "snowIn": 1.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 45,
+        "precipIn": 1.6,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 57,
+        "precipIn": 2.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 87,
+        "avgLow": 63,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 85,
+        "avgLow": 62,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 53,
+        "precipIn": 1.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 36,
+        "precipIn": 1.3,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 43,
+        "avgLow": 26,
+        "precipIn": 0.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 34,
+        "avgLow": 17,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      }
+    ]
+  },
+  "judith-gap": {
+    "name": "Judith Gap",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 36,
+        "avgLow": 20,
+        "precipIn": 0.9,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 27,
+        "avgLow": 9,
+        "precipIn": 1.3,
+        "snowIn": 3.6
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 20,
+        "precipIn": 0.8,
+        "snowIn": 2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 48,
+        "avgLow": 27,
+        "precipIn": 2.3,
+        "snowIn": 3.3
+      },
+      {
+        "month": "May",
+        "avgHigh": 60,
+        "avgLow": 39,
+        "precipIn": 2.9,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 71,
+        "avgLow": 48,
+        "precipIn": 3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 81,
+        "avgLow": 56,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 56,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 71,
+        "avgLow": 47,
+        "precipIn": 1.8,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 52,
+        "avgLow": 32,
+        "precipIn": 1.9,
+        "snowIn": 2.5
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 24,
+        "precipIn": 1,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 35,
+        "avgLow": 18,
+        "precipIn": 0.8,
+        "snowIn": 2.2
+      }
+    ]
+  },
+  "kalispell": {
+    "name": "Kalispell",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 34,
+        "avgLow": 21,
+        "precipIn": 1.6,
+        "snowIn": 3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 32,
+        "avgLow": 15,
+        "precipIn": 1.7,
+        "snowIn": 3.6
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 23,
+        "precipIn": 1.3,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 30,
+        "precipIn": 1.9,
+        "snowIn": 1.6
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 41,
+        "precipIn": 2.7,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 71,
+        "avgLow": 49,
+        "precipIn": 2.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 81,
+        "avgLow": 55,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 79,
+        "avgLow": 55,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 69,
+        "avgLow": 48,
+        "precipIn": 1.8,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 35,
+        "precipIn": 2,
+        "snowIn": 1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 27,
+        "precipIn": 2.2,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 34,
+        "avgLow": 23,
+        "precipIn": 1.9,
+        "snowIn": 3.4
+      }
+    ]
+  },
+  "kevin": {
+    "name": "Kevin",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 33,
+        "avgLow": 17,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 8,
+        "precipIn": 1,
+        "snowIn": 2.6
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 38,
+        "avgLow": 18,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 50,
+        "avgLow": 28,
+        "precipIn": 0.8,
+        "snowIn": 1.2
+      },
+      {
+        "month": "May",
+        "avgHigh": 62,
+        "avgLow": 40,
+        "precipIn": 2.6,
+        "snowIn": 1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 50,
+        "precipIn": 2.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 81,
+        "avgLow": 56,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 55,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 70,
+        "avgLow": 47,
+        "precipIn": 1,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 52,
+        "avgLow": 32,
+        "precipIn": 1.1,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 39,
+        "avgLow": 23,
+        "precipIn": 1.2,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 31,
+        "avgLow": 15,
+        "precipIn": 0.8,
+        "snowIn": 1.8
+      }
+    ]
+  },
+  "laurel": {
+    "name": "Laurel",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 40,
+        "avgLow": 23,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 12,
+        "precipIn": 1.4,
+        "snowIn": 3.7
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 46,
+        "avgLow": 24,
+        "precipIn": 1.1,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 54,
+        "avgLow": 32,
+        "precipIn": 1.6,
+        "snowIn": 2.1
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 43,
+        "precipIn": 2.4,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 77,
+        "avgLow": 53,
+        "precipIn": 2.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 88,
+        "avgLow": 60,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 86,
+        "avgLow": 60,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 77,
+        "avgLow": 52,
+        "precipIn": 1.1,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 57,
+        "avgLow": 36,
+        "precipIn": 2,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 47,
+        "avgLow": 28,
+        "precipIn": 0.7,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 39,
+        "avgLow": 22,
+        "precipIn": 0.7,
+        "snowIn": 1.6
+      }
+    ]
+  },
+  "lavina": {
+    "name": "Lavina",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 39,
+        "avgLow": 21,
+        "precipIn": 0.6,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 10,
+        "precipIn": 1.2,
+        "snowIn": 3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 22,
+        "precipIn": 0.8,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 31,
+        "precipIn": 1.9,
+        "snowIn": 2
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 43,
+        "precipIn": 2.4,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 77,
+        "avgLow": 53,
+        "precipIn": 2.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 87,
+        "avgLow": 60,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 86,
+        "avgLow": 60,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 76,
+        "avgLow": 50,
+        "precipIn": 1.3,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 35,
+        "precipIn": 1.5,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 46,
+        "avgLow": 26,
+        "precipIn": 0.7,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 38,
+        "avgLow": 19,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      }
+    ]
+  },
+  "lewistown": {
+    "name": "Lewistown",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 37,
+        "avgLow": 19,
+        "precipIn": 1,
+        "snowIn": 2.5
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 9,
+        "precipIn": 1.6,
+        "snowIn": 4.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 41,
+        "avgLow": 21,
+        "precipIn": 0.8,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 49,
+        "avgLow": 29,
+        "precipIn": 2.5,
+        "snowIn": 4
+      },
+      {
+        "month": "May",
+        "avgHigh": 61,
+        "avgLow": 40,
+        "precipIn": 2.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 50,
+        "precipIn": 2.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 82,
+        "avgLow": 57,
+        "precipIn": 0.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 81,
+        "avgLow": 57,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 72,
+        "avgLow": 49,
+        "precipIn": 1.7,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 33,
+        "precipIn": 1.9,
+        "snowIn": 2.7
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 43,
+        "avgLow": 24,
+        "precipIn": 1.3,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 18,
+        "precipIn": 1.2,
+        "snowIn": 3
+      }
+    ]
+  },
+  "libby": {
+    "name": "Libby",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 36,
+        "avgLow": 21,
+        "precipIn": 2.7,
+        "snowIn": 6
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 35,
+        "avgLow": 16,
+        "precipIn": 2,
+        "snowIn": 4.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 47,
+        "avgLow": 25,
+        "precipIn": 1.4,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 56,
+        "avgLow": 32,
+        "precipIn": 1.9,
+        "snowIn": 1.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 67,
+        "avgLow": 42,
+        "precipIn": 2.5,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 75,
+        "avgLow": 50,
+        "precipIn": 1.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 56,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 56,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 48,
+        "precipIn": 1.4,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 58,
+        "avgLow": 36,
+        "precipIn": 2.3,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 26,
+        "precipIn": 3.3,
+        "snowIn": 4.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 23,
+        "precipIn": 3.3,
+        "snowIn": 6.2
+      }
+    ]
+  },
+  "lima": {
+    "name": "Lima",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 23,
+        "avgLow": 6,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 23,
+        "avgLow": 4,
+        "precipIn": 0.9,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 33,
+        "avgLow": 13,
+        "precipIn": 0.8,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 43,
+        "avgLow": 22,
+        "precipIn": 1.2,
+        "snowIn": 2.6
+      },
+      {
+        "month": "May",
+        "avgHigh": 56,
+        "avgLow": 33,
+        "precipIn": 2.3,
+        "snowIn": 2.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 68,
+        "avgLow": 42,
+        "precipIn": 1.5,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 80,
+        "avgLow": 51,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 77,
+        "avgLow": 50,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 68,
+        "avgLow": 41,
+        "precipIn": 1.5,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 49,
+        "avgLow": 27,
+        "precipIn": 1.3,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 36,
+        "avgLow": 16,
+        "precipIn": 0.7,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 25,
+        "avgLow": 7,
+        "precipIn": 0.7,
+        "snowIn": 2
+      }
+    ]
+  },
+  "livingston": {
+    "name": "Livingston",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 17,
+        "precipIn": 1.1,
+        "snowIn": 2.9
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 10,
+        "precipIn": 2,
+        "snowIn": 5.5
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 39,
+        "avgLow": 18,
+        "precipIn": 1.4,
+        "snowIn": 3.5
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 47,
+        "avgLow": 26,
+        "precipIn": 2.2,
+        "snowIn": 3.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 60,
+        "avgLow": 38,
+        "precipIn": 3.2,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 48,
+        "precipIn": 2.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 82,
+        "avgLow": 55,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 81,
+        "avgLow": 55,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 72,
+        "avgLow": 47,
+        "precipIn": 1.8,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 33,
+        "precipIn": 2.6,
+        "snowIn": 3.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 24,
+        "precipIn": 1.2,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 19,
+        "precipIn": 1,
+        "snowIn": 2.6
+      }
+    ]
+  },
+  "lodge-grass": {
+    "name": "Lodge Grass",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 39,
+        "avgLow": 21,
+        "precipIn": 1,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 31,
+        "avgLow": 11,
+        "precipIn": 1.5,
+        "snowIn": 3.9
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 24,
+        "precipIn": 1.2,
+        "snowIn": 2.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 32,
+        "precipIn": 2.4,
+        "snowIn": 3.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 44,
+        "precipIn": 2.4,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 56,
+        "precipIn": 2.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 88,
+        "avgLow": 63,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 86,
+        "avgLow": 62,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 77,
+        "avgLow": 53,
+        "precipIn": 1.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 57,
+        "avgLow": 37,
+        "precipIn": 2.1,
+        "snowIn": 2.7
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 48,
+        "avgLow": 28,
+        "precipIn": 1,
+        "snowIn": 2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 39,
+        "avgLow": 20,
+        "precipIn": 1,
+        "snowIn": 2.5
+      }
+    ]
+  },
+  "malta": {
+    "name": "Malta",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 33,
+        "avgLow": 15,
+        "precipIn": 0.5,
+        "snowIn": 0.9
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 8,
+        "precipIn": 0.8,
+        "snowIn": 2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 19,
+        "precipIn": 0.7,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 30,
+        "precipIn": 1.1,
+        "snowIn": 1.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 43,
+        "precipIn": 1.6,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 55,
+        "precipIn": 2.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 61,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 60,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 51,
+        "precipIn": 1.4,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 35,
+        "precipIn": 1.2,
+        "snowIn": 1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 41,
+        "avgLow": 23,
+        "precipIn": 0.9,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 31,
+        "avgLow": 13,
+        "precipIn": 0.7,
+        "snowIn": 1.6
+      }
+    ]
+  },
+  "manhattan": {
+    "name": "Manhattan",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 37,
+        "avgLow": 19,
+        "precipIn": 0.7,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 31,
+        "avgLow": 11,
+        "precipIn": 1.4,
+        "snowIn": 3.7
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 43,
+        "avgLow": 21,
+        "precipIn": 1.1,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 29,
+        "precipIn": 2,
+        "snowIn": 1.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 39,
+        "precipIn": 2.6,
+        "snowIn": 0.7
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 74,
+        "avgLow": 48,
+        "precipIn": 2.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 55,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 55,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 46,
+        "precipIn": 1.7,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 32,
+        "precipIn": 1.7,
+        "snowIn": 2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 23,
+        "precipIn": 0.9,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 19,
+        "precipIn": 0.8,
+        "snowIn": 1.9
+      }
+    ]
+  },
+  "plentywood": {
+    "name": "Plentywood",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 26,
+        "avgLow": 10,
+        "precipIn": 0.5,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 22,
+        "avgLow": 3,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 37,
+        "avgLow": 17,
+        "precipIn": 0.5,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 48,
+        "avgLow": 27,
+        "precipIn": 1.3,
+        "snowIn": 2.7
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 41,
+        "precipIn": 1.8,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 76,
+        "avgLow": 54,
+        "precipIn": 2.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 81,
+        "avgLow": 59,
+        "precipIn": 1.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 58,
+        "precipIn": 1.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 72,
+        "avgLow": 49,
+        "precipIn": 1.3,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 51,
+        "avgLow": 33,
+        "precipIn": 1.1,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 37,
+        "avgLow": 21,
+        "precipIn": 0.8,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 27,
+        "avgLow": 10,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      }
+    ]
+  },
+  "plevna": {
+    "name": "Plevna",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 34,
+        "avgLow": 18,
+        "precipIn": 0.6,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 28,
+        "avgLow": 9,
+        "precipIn": 0.9,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 42,
+        "avgLow": 21,
+        "precipIn": 0.5,
+        "snowIn": 0.9
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 31,
+        "precipIn": 1.7,
+        "snowIn": 2.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 44,
+        "precipIn": 2.8,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 57,
+        "precipIn": 2.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 63,
+        "precipIn": 1.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 61,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 75,
+        "avgLow": 53,
+        "precipIn": 1.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 36,
+        "precipIn": 1.9,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 25,
+        "precipIn": 0.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 34,
+        "avgLow": 18,
+        "precipIn": 0.9,
+        "snowIn": 2.1
+      }
+    ]
+  },
+  "polson": {
+    "name": "Polson",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 23,
+        "precipIn": 1.6,
+        "snowIn": 3.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 33,
+        "avgLow": 17,
+        "precipIn": 1.9,
+        "snowIn": 4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 26,
+        "precipIn": 1.3,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 32,
+        "precipIn": 2,
+        "snowIn": 1.6
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 43,
+        "precipIn": 2.5,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 51,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 83,
+        "avgLow": 58,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 82,
+        "avgLow": 58,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 71,
+        "avgLow": 50,
+        "precipIn": 1.7,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 37,
+        "precipIn": 1.9,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 28,
+        "precipIn": 2.1,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 24,
+        "precipIn": 2,
+        "snowIn": 3.4
+      }
+    ]
+  },
+  "poplar": {
+    "name": "Poplar",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 29,
+        "avgLow": 12,
+        "precipIn": 0.5,
+        "snowIn": 1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 25,
+        "avgLow": 6,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 39,
+        "avgLow": 18,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 29,
+        "precipIn": 1.4,
+        "snowIn": 2.3
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 43,
+        "precipIn": 2.1,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 56,
+        "precipIn": 2.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 83,
+        "avgLow": 60,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 73,
+        "avgLow": 51,
+        "precipIn": 2,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 35,
+        "precipIn": 1.4,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 39,
+        "avgLow": 22,
+        "precipIn": 0.8,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 29,
+        "avgLow": 12,
+        "precipIn": 0.7,
+        "snowIn": 1.7
+      }
+    ]
+  },
+  "red-lodge": {
+    "name": "Red Lodge",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 31,
+        "avgLow": 17,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 22,
+        "avgLow": 5,
+        "precipIn": 1.5,
+        "snowIn": 4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 38,
+        "avgLow": 18,
+        "precipIn": 1.2,
+        "snowIn": 2.9
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 47,
+        "avgLow": 25,
+        "precipIn": 1.6,
+        "snowIn": 2.5
+      },
+      {
+        "month": "May",
+        "avgHigh": 59,
+        "avgLow": 37,
+        "precipIn": 2.2,
+        "snowIn": 0.4
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 70,
+        "avgLow": 47,
+        "precipIn": 2.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 80,
+        "avgLow": 55,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 78,
+        "avgLow": 54,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 69,
+        "avgLow": 46,
+        "precipIn": 1.4,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 48,
+        "avgLow": 30,
+        "precipIn": 2.2,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 38,
+        "avgLow": 22,
+        "precipIn": 0.8,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 31,
+        "avgLow": 16,
+        "precipIn": 0.7,
+        "snowIn": 1.7
+      }
+    ]
+  },
+  "rexford": {
+    "name": "Rexford",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 36,
+        "avgLow": 22,
+        "precipIn": 1.6,
+        "snowIn": 3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 33,
+        "avgLow": 16,
+        "precipIn": 1.7,
+        "snowIn": 3.6
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 45,
+        "avgLow": 25,
+        "precipIn": 1.3,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 31,
+        "precipIn": 1.9,
+        "snowIn": 1.6
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 42,
+        "precipIn": 2.7,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 72,
+        "avgLow": 50,
+        "precipIn": 2.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 82,
+        "avgLow": 56,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 81,
+        "avgLow": 56,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 70,
+        "avgLow": 49,
+        "precipIn": 1.8,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 36,
+        "precipIn": 2,
+        "snowIn": 1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 41,
+        "avgLow": 28,
+        "precipIn": 2.2,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 35,
+        "avgLow": 24,
+        "precipIn": 1.9,
+        "snowIn": 3.4
+      }
+    ]
+  },
+  "richey": {
+    "name": "Richey",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 0.5,
+        "snowIn": 1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 7,
+        "precipIn": 0.8,
+        "snowIn": 2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 19,
+        "precipIn": 0.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 51,
+        "avgLow": 29,
+        "precipIn": 1.4,
+        "snowIn": 2.3
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 42,
+        "precipIn": 2.2,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 77,
+        "avgLow": 55,
+        "precipIn": 2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 83,
+        "avgLow": 59,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 73,
+        "avgLow": 51,
+        "precipIn": 2.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 35,
+        "precipIn": 1.6,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 22,
+        "precipIn": 0.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      }
+    ]
+  },
+  "ronan": {
+    "name": "Ronan",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 21,
+        "precipIn": 1.7,
+        "snowIn": 3.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 33,
+        "avgLow": 16,
+        "precipIn": 2,
+        "snowIn": 4.3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 25,
+        "precipIn": 1.4,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 32,
+        "precipIn": 2,
+        "snowIn": 1.7
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 42,
+        "precipIn": 2.5,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 73,
+        "avgLow": 50,
+        "precipIn": 2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 84,
+        "avgLow": 57,
+        "precipIn": 0.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 83,
+        "avgLow": 57,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 72,
+        "avgLow": 48,
+        "precipIn": 1.5,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 36,
+        "precipIn": 1.8,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 42,
+        "avgLow": 26,
+        "precipIn": 2,
+        "snowIn": 1.7
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 23,
+        "precipIn": 2,
+        "snowIn": 3.6
+      }
+    ]
+  },
+  "roundup": {
+    "name": "Roundup",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 39,
+        "avgLow": 21,
+        "precipIn": 0.6,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 12,
+        "precipIn": 1.1,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 44,
+        "avgLow": 23,
+        "precipIn": 0.7,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 32,
+        "precipIn": 1.9,
+        "snowIn": 2.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 44,
+        "precipIn": 2.3,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 77,
+        "avgLow": 55,
+        "precipIn": 2.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 87,
+        "avgLow": 62,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 86,
+        "avgLow": 61,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 76,
+        "avgLow": 52,
+        "precipIn": 1.6,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 36,
+        "precipIn": 1.6,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 45,
+        "avgLow": 27,
+        "precipIn": 0.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 37,
+        "avgLow": 20,
+        "precipIn": 0.7,
+        "snowIn": 1.6
+      }
+    ]
+  },
+  "ryegate": {
+    "name": "Ryegate",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 39,
+        "avgLow": 22,
+        "precipIn": 0.6,
+        "snowIn": 1.6
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 30,
+        "avgLow": 11,
+        "precipIn": 1.2,
+        "snowIn": 3.3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 43,
+        "avgLow": 22,
+        "precipIn": 1,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 30,
+        "precipIn": 2,
+        "snowIn": 2.7
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 42,
+        "precipIn": 2.6,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 76,
+        "avgLow": 52,
+        "precipIn": 2.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 59,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 59,
+        "precipIn": 0.8,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 75,
+        "avgLow": 50,
+        "precipIn": 1.6,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 35,
+        "precipIn": 1.8,
+        "snowIn": 2.3
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 45,
+        "avgLow": 27,
+        "precipIn": 0.7,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 37,
+        "avgLow": 21,
+        "precipIn": 0.6,
+        "snowIn": 1.6
+      }
+    ]
+  },
+  "saco": {
+    "name": "Saco",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 31,
+        "avgLow": 15,
+        "precipIn": 0.4,
+        "snowIn": 1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 8,
+        "precipIn": 0.8,
+        "snowIn": 2.1
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 39,
+        "avgLow": 20,
+        "precipIn": 0.6,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 31,
+        "precipIn": 1.1,
+        "snowIn": 1.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 66,
+        "avgLow": 44,
+        "precipIn": 1.8,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 78,
+        "avgLow": 56,
+        "precipIn": 2.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 61,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 61,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 51,
+        "precipIn": 1.5,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 54,
+        "avgLow": 36,
+        "precipIn": 1.2,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 23,
+        "precipIn": 1,
+        "snowIn": 2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 14,
+        "precipIn": 0.6,
+        "snowIn": 1.6
+      }
+    ]
+  },
+  "three-forks": {
+    "name": "Three Forks",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 37,
+        "avgLow": 20,
+        "precipIn": 0.9,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 31,
+        "avgLow": 13,
+        "precipIn": 1.5,
+        "snowIn": 4.1
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 43,
+        "avgLow": 23,
+        "precipIn": 1.3,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 53,
+        "avgLow": 29,
+        "precipIn": 2.1,
+        "snowIn": 2.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 41,
+        "precipIn": 2.4,
+        "snowIn": 0.7
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 74,
+        "avgLow": 50,
+        "precipIn": 2.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 57,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 57,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 49,
+        "precipIn": 1.6,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 56,
+        "avgLow": 35,
+        "precipIn": 2.1,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 44,
+        "avgLow": 25,
+        "precipIn": 1.1,
+        "snowIn": 1.8
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 37,
+        "avgLow": 21,
+        "precipIn": 0.9,
+        "snowIn": 2.1
+      }
+    ]
+  },
+  "townsend": {
+    "name": "Townsend",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 37,
+        "avgLow": 19,
+        "precipIn": 0.8,
+        "snowIn": 1.9
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 31,
+        "avgLow": 12,
+        "precipIn": 1.2,
+        "snowIn": 3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 42,
+        "avgLow": 21,
+        "precipIn": 1,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 52,
+        "avgLow": 29,
+        "precipIn": 1.7,
+        "snowIn": 2.4
+      },
+      {
+        "month": "May",
+        "avgHigh": 64,
+        "avgLow": 40,
+        "precipIn": 2.2,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 74,
+        "avgLow": 49,
+        "precipIn": 2.4,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 85,
+        "avgLow": 56,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 83,
+        "avgLow": 56,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 48,
+        "precipIn": 1.3,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 34,
+        "precipIn": 1.6,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 43,
+        "avgLow": 25,
+        "precipIn": 0.7,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 36,
+        "avgLow": 20,
+        "precipIn": 0.7,
+        "snowIn": 1.7
+      }
+    ]
+  },
+  "troy": {
+    "name": "Troy",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 38,
+        "avgLow": 23,
+        "precipIn": 2.2,
+        "snowIn": 4.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 36,
+        "avgLow": 18,
+        "precipIn": 2.3,
+        "snowIn": 5.2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 48,
+        "avgLow": 26,
+        "precipIn": 1.5,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 56,
+        "avgLow": 33,
+        "precipIn": 2.1,
+        "snowIn": 2.3
+      },
+      {
+        "month": "May",
+        "avgHigh": 67,
+        "avgLow": 44,
+        "precipIn": 2.8,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 75,
+        "avgLow": 52,
+        "precipIn": 2.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 86,
+        "avgLow": 58,
+        "precipIn": 0.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 84,
+        "avgLow": 58,
+        "precipIn": 1.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 74,
+        "avgLow": 50,
+        "precipIn": 1.7,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 58,
+        "avgLow": 38,
+        "precipIn": 2.3,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 44,
+        "avgLow": 30,
+        "precipIn": 2.7,
+        "snowIn": 3
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 38,
+        "avgLow": 25,
+        "precipIn": 2.5,
+        "snowIn": 5.1
+      }
+    ]
+  },
+  "twin-bridges": {
+    "name": "Twin Bridges",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 31,
+        "avgLow": 15,
+        "precipIn": 0.9,
+        "snowIn": 2.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 29,
+        "avgLow": 11,
+        "precipIn": 1.1,
+        "snowIn": 3
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 40,
+        "avgLow": 21,
+        "precipIn": 1,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 50,
+        "avgLow": 27,
+        "precipIn": 1.5,
+        "snowIn": 1.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 63,
+        "avgLow": 38,
+        "precipIn": 2.2,
+        "snowIn": 0.8
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 73,
+        "avgLow": 47,
+        "precipIn": 2.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 84,
+        "avgLow": 55,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 82,
+        "avgLow": 55,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 73,
+        "avgLow": 47,
+        "precipIn": 1.4,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 55,
+        "avgLow": 33,
+        "precipIn": 1.1,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 40,
+        "avgLow": 22,
+        "precipIn": 0.8,
+        "snowIn": 1.5
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 32,
+        "avgLow": 17,
+        "precipIn": 0.7,
+        "snowIn": 1.8
+      }
+    ]
+  },
+  "valier": {
+    "name": "Valier",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 35,
+        "avgLow": 19,
+        "precipIn": 0.6,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 27,
+        "avgLow": 11,
+        "precipIn": 1.1,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 39,
+        "avgLow": 20,
+        "precipIn": 0.9,
+        "snowIn": 2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 49,
+        "avgLow": 29,
+        "precipIn": 1.5,
+        "snowIn": 2.8
+      },
+      {
+        "month": "May",
+        "avgHigh": 61,
+        "avgLow": 40,
+        "precipIn": 2.4,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 71,
+        "avgLow": 49,
+        "precipIn": 2.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 81,
+        "avgLow": 57,
+        "precipIn": 0.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 56,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 70,
+        "avgLow": 48,
+        "precipIn": 1.5,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 52,
+        "avgLow": 34,
+        "precipIn": 1.2,
+        "snowIn": 2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 41,
+        "avgLow": 25,
+        "precipIn": 1.3,
+        "snowIn": 2.6
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 33,
+        "avgLow": 18,
+        "precipIn": 0.9,
+        "snowIn": 2.2
+      }
+    ]
+  },
+  "virginia-city": {
+    "name": "Virginia City",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 29,
+        "avgLow": 13,
+        "precipIn": 1,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 26,
+        "avgLow": 9,
+        "precipIn": 1.4,
+        "snowIn": 3.9
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 35,
+        "avgLow": 17,
+        "precipIn": 1.1,
+        "snowIn": 3
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 43,
+        "avgLow": 23,
+        "precipIn": 2,
+        "snowIn": 4.2
+      },
+      {
+        "month": "May",
+        "avgHigh": 56,
+        "avgLow": 36,
+        "precipIn": 3.2,
+        "snowIn": 3
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 68,
+        "avgLow": 45,
+        "precipIn": 3.1,
+        "snowIn": 0.7
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 79,
+        "avgLow": 54,
+        "precipIn": 1,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 77,
+        "avgLow": 53,
+        "precipIn": 1.5,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 68,
+        "avgLow": 45,
+        "precipIn": 1.9,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 50,
+        "avgLow": 29,
+        "precipIn": 1.8,
+        "snowIn": 2.6
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 38,
+        "avgLow": 19,
+        "precipIn": 1,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 1.1,
+        "snowIn": 3.1
+      }
+    ]
+  },
+  "walkerville": {
+    "name": "Walkerville",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 28,
+        "avgLow": 10,
+        "precipIn": 0.9,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 25,
+        "avgLow": 7,
+        "precipIn": 1.6,
+        "snowIn": 4.2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 34,
+        "avgLow": 14,
+        "precipIn": 1.1,
+        "snowIn": 2.9
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 42,
+        "avgLow": 21,
+        "precipIn": 1.5,
+        "snowIn": 2.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 55,
+        "avgLow": 33,
+        "precipIn": 2.2,
+        "snowIn": 2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 66,
+        "avgLow": 42,
+        "precipIn": 2.9,
+        "snowIn": 0.9
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 78,
+        "avgLow": 50,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 76,
+        "avgLow": 50,
+        "precipIn": 0.9,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 67,
+        "avgLow": 41,
+        "precipIn": 1.3,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 49,
+        "avgLow": 27,
+        "precipIn": 1.5,
+        "snowIn": 2.3
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 37,
+        "avgLow": 17,
+        "precipIn": 1,
+        "snowIn": 2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 29,
+        "avgLow": 10,
+        "precipIn": 0.9,
+        "snowIn": 2.3
+      }
+    ]
+  },
+  "west-glacier": {
+    "name": "West Glacier",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 33,
+        "avgLow": 19,
+        "precipIn": 2.2,
+        "snowIn": 5.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 29,
+        "avgLow": 12,
+        "precipIn": 2.4,
+        "snowIn": 6.2
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 41,
+        "avgLow": 20,
+        "precipIn": 1.4,
+        "snowIn": 2.7
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 50,
+        "avgLow": 27,
+        "precipIn": 2.1,
+        "snowIn": 2.7
+      },
+      {
+        "month": "May",
+        "avgHigh": 62,
+        "avgLow": 37,
+        "precipIn": 2.8,
+        "snowIn": 1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 70,
+        "avgLow": 46,
+        "precipIn": 3.1,
+        "snowIn": 0.5
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 80,
+        "avgLow": 52,
+        "precipIn": 0.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 79,
+        "avgLow": 53,
+        "precipIn": 1.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 68,
+        "avgLow": 46,
+        "precipIn": 1.7,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 53,
+        "avgLow": 34,
+        "precipIn": 2.4,
+        "snowIn": 2
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 39,
+        "avgLow": 26,
+        "precipIn": 2.8,
+        "snowIn": 4.7
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 33,
+        "avgLow": 21,
+        "precipIn": 2.7,
+        "snowIn": 6.2
+      }
+    ]
+  },
+  "west-yellowstone": {
+    "name": "West Yellowstone",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 24,
+        "avgLow": 8,
+        "precipIn": 1.9,
+        "snowIn": 5.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 24,
+        "avgLow": 7,
+        "precipIn": 2.3,
+        "snowIn": 6.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 34,
+        "avgLow": 13,
+        "precipIn": 1.8,
+        "snowIn": 4.9
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 41,
+        "avgLow": 19,
+        "precipIn": 1.7,
+        "snowIn": 3.9
+      },
+      {
+        "month": "May",
+        "avgHigh": 53,
+        "avgLow": 28,
+        "precipIn": 2,
+        "snowIn": 2.5
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 65,
+        "avgLow": 37,
+        "precipIn": 2.2,
+        "snowIn": 0.6
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 78,
+        "avgLow": 46,
+        "precipIn": 0.6,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 75,
+        "avgLow": 46,
+        "precipIn": 1.3,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 65,
+        "avgLow": 37,
+        "precipIn": 1.8,
+        "snowIn": 0.3
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 47,
+        "avgLow": 23,
+        "precipIn": 2.1,
+        "snowIn": 2.8
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 33,
+        "avgLow": 13,
+        "precipIn": 1.7,
+        "snowIn": 4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 25,
+        "avgLow": 8,
+        "precipIn": 2.1,
+        "snowIn": 5.8
+      }
+    ]
+  },
+  "westby": {
+    "name": "Westby",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 25,
+        "avgLow": 8,
+        "precipIn": 0.5,
+        "snowIn": 1.3
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 21,
+        "avgLow": 2,
+        "precipIn": 0.5,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 37,
+        "avgLow": 17,
+        "precipIn": 0.5,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 48,
+        "avgLow": 26,
+        "precipIn": 1.4,
+        "snowIn": 3
+      },
+      {
+        "month": "May",
+        "avgHigh": 65,
+        "avgLow": 41,
+        "precipIn": 2,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 76,
+        "avgLow": 54,
+        "precipIn": 3.2,
+        "snowIn": 0
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 80,
+        "avgLow": 59,
+        "precipIn": 1.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 80,
+        "avgLow": 58,
+        "precipIn": 1.4,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 71,
+        "avgLow": 50,
+        "precipIn": 1.4,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 51,
+        "avgLow": 34,
+        "precipIn": 1.2,
+        "snowIn": 1.1
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 37,
+        "avgLow": 21,
+        "precipIn": 0.8,
+        "snowIn": 1.4
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 27,
+        "avgLow": 9,
+        "precipIn": 0.7,
+        "snowIn": 1.9
+      }
+    ]
+  },
+  "white-sulphur-springs": {
+    "name": "White Sulphur Springs",
+    "months": [
+      {
+        "month": "Jan",
+        "avgHigh": 30,
+        "avgLow": 13,
+        "precipIn": 1.1,
+        "snowIn": 3.1
+      },
+      {
+        "month": "Feb",
+        "avgHigh": 24,
+        "avgLow": 7,
+        "precipIn": 1.6,
+        "snowIn": 4.4
+      },
+      {
+        "month": "Mar",
+        "avgHigh": 35,
+        "avgLow": 16,
+        "precipIn": 0.9,
+        "snowIn": 2.4
+      },
+      {
+        "month": "Apr",
+        "avgHigh": 43,
+        "avgLow": 23,
+        "precipIn": 1.8,
+        "snowIn": 3.2
+      },
+      {
+        "month": "May",
+        "avgHigh": 56,
+        "avgLow": 34,
+        "precipIn": 2.5,
+        "snowIn": 1.2
+      },
+      {
+        "month": "Jun",
+        "avgHigh": 67,
+        "avgLow": 44,
+        "precipIn": 2.7,
+        "snowIn": 0.1
+      },
+      {
+        "month": "Jul",
+        "avgHigh": 78,
+        "avgLow": 51,
+        "precipIn": 0.7,
+        "snowIn": 0
+      },
+      {
+        "month": "Aug",
+        "avgHigh": 76,
+        "avgLow": 51,
+        "precipIn": 1.1,
+        "snowIn": 0
+      },
+      {
+        "month": "Sep",
+        "avgHigh": 67,
+        "avgLow": 43,
+        "precipIn": 1.8,
+        "snowIn": 0.2
+      },
+      {
+        "month": "Oct",
+        "avgHigh": 49,
+        "avgLow": 29,
+        "precipIn": 1.8,
+        "snowIn": 2.7
+      },
+      {
+        "month": "Nov",
+        "avgHigh": 37,
+        "avgLow": 20,
+        "precipIn": 1.1,
+        "snowIn": 2.2
+      },
+      {
+        "month": "Dec",
+        "avgHigh": 31,
+        "avgLow": 14,
+        "precipIn": 0.9,
+        "snowIn": 2.5
+      }
+    ]
   }
 }
