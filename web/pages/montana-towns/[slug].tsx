@@ -16,6 +16,7 @@ import TownDistances from '../../components/TownDistances';
 import StoreBanner from '../../components/StoreBanner';
 import TownQuickFacts from '../../components/TownQuickFacts';
 import ClimateTable from '../../components/ClimateTable';
+import NearbyRecreation from '../../components/NearbyRecreation';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -49,6 +50,12 @@ type MonthClimate = {
   precipIn: number;
 };
 
+type RecreationPlace = {
+  name: string;
+  type: string;
+  distMiles: number;
+};
+
 type Props = {
   slug: string;
   townName: string;
@@ -61,9 +68,10 @@ type Props = {
   airportDistances: Record<string, AirportDistance> | null;
   townFacts: TownFactsData | null;
   climateMonths: MonthClimate[] | null;
+  recreationPlaces: RecreationPlace[] | null;
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths }: Props) {
+export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces }: Props) {
   const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -129,6 +137,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
+          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
           <StoreBanner />
@@ -237,6 +246,17 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   }
   const climateMonths = allClimateData[slug]?.months || null;
 
+  let allRecreation: Record<string, { places: RecreationPlace[] }> = {};
+  try {
+    const recPath = path.resolve(process.cwd(), 'data', 'town-recreation.json');
+    if (fs.existsSync(recPath)) {
+      allRecreation = JSON.parse(fs.readFileSync(recPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load recreation data", e);
+  }
+  const recreationPlaces = allRecreation[slug]?.places || null;
+
   return { 
     props: { 
       slug, 
@@ -249,7 +269,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       relatedTownCoords,
       airportDistances,
       townFacts,
-      climateMonths
+      climateMonths,
+      recreationPlaces
     } 
   };
 };

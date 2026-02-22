@@ -1,0 +1,137 @@
+{
+  "alberton": {
+    "name": "Alberton",
+    "places": [
+      {
+        "name": "Petty Pasture Trailhead",
+        "type": "Trailhead",
+        "distMiles": 5
+      },
+      {
+        "name": "Stark Mountain Trailhead",
+        "type": "Trailhead",
+        "distMiles": 6
+      },
+      {
+        "name": "Kreis Pond Campground",
+        "type": "Campground",
+        "distMiles": 7
+      },
+      {
+        "name": "CCC Campsite",
+        "type": "Campground",
+        "distMiles": 8
+      },
+      {
+        "name": "Big Pine Fishing Access",
+        "type": "Campground",
+        "distMiles": 9
+      },
+      {
+        "name": "Edith Peak Trailhead",
+        "type": "Trailhead",
+        "distMiles": 12
+      },
+      {
+        "name": "Reservation Divide Trailhead",
+        "type": "Trailhead",
+        "distMiles": 12
+      },
+      {
+        "name": "Forest Grove Fishing Access",
+        "type": "Campground",
+        "distMiles": 14
+      }
+    ]
+  },
+  "big-timber": {
+    "name": "Big Timber",
+    "places": [
+      {
+        "name": "Lions Club Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Spring Creek Campground",
+        "type": "Campground",
+        "distMiles": 2
+      },
+      {
+        "name": "Greycliff Prairie Dog Town State Park",
+        "type": "Nature Reserve",
+        "distMiles": 9
+      },
+      {
+        "name": "Gage Pioneer Memorial",
+        "type": "Park",
+        "distMiles": 12
+      },
+      {
+        "name": "BLM",
+        "type": "Nature Reserve",
+        "distMiles": 12
+      },
+      {
+        "name": "Halfmoon Campground",
+        "type": "Campground",
+        "distMiles": 20
+      },
+      {
+        "name": "Halfmoon Trailhead",
+        "type": "Trailhead",
+        "distMiles": 20
+      },
+      {
+        "name": "Natural Bridge State Park",
+        "type": "Park",
+        "distMiles": 23
+      }
+    ]
+  },
+  "browning": {
+    "name": "Browning",
+    "places": [
+      {
+        "name": "All Chief's Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Blackfeet Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Camp Disappointment Historical Marker",
+        "type": "Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Y Lazy R",
+        "type": "Campground",
+        "distMiles": 12
+      },
+      {
+        "name": "Camp Disappointment",
+        "type": "Nature Reserve",
+        "distMiles": 12
+      },
+      {
+        "name": "Red Eagle Campground",
+        "type": "Campground",
+        "distMiles": 12
+      },
+      {
+        "name": "Running Eagle Falls Trailhead",
+        "type": "Trailhead",
+        "distMiles": 16
+      },
+      {
+        "name": "South Shore Trailhead",
+        "type": "Trailhead",
+        "distMiles": 17
+      }
+    ]
+  }
+}
