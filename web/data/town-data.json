@@ -5,7 +5,11 @@
     "lng": -114.477156,
     "elevation": 3041,
     "county": "Mineral County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59820",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 452
   },
   "anaconda": {
     "name": "Anaconda",
@@ -13,7 +17,11 @@
     "lng": -112.953131,
     "elevation": 5279,
     "county": "Deer Lodge County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59711",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 9421
   },
   "bainville": {
     "name": "Bainville",
@@ -21,7 +29,11 @@
     "lng": -104.222916,
     "elevation": 1982,
     "county": "Roosevelt County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59212",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 313
   },
   "baker": {
     "name": "Baker",
@@ -29,7 +41,11 @@
     "lng": -104.2752261,
     "elevation": 2946,
     "county": "Fallon County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59313",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1780
   },
   "bearcreek": {
     "name": "Bearcreek",
@@ -37,7 +53,11 @@
     "lng": -109.1577101,
     "elevation": 4606,
     "county": "Carbon County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59007",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 107
   },
   "belgrade": {
     "name": "Belgrade",
@@ -45,7 +65,11 @@
     "lng": -111.184535,
     "elevation": 4462,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59714",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 12509
   },
   "belt": {
     "name": "Belt",
@@ -53,7 +77,11 @@
     "lng": -110.927528,
     "elevation": 3510,
     "county": "Cascade County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59412",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 515
   },
   "big-sandy": {
     "name": "Big Sandy",
@@ -61,7 +89,11 @@
     "lng": -110.111445,
     "elevation": 2700,
     "county": "Chouteau County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59520",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 605
   },
   "big-sky": {
     "name": "Big Sky",
@@ -69,7 +101,11 @@
     "lng": -111.308725,
     "elevation": 6319,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59716",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 3591
   },
   "big-timber": {
     "name": "Big Timber",
@@ -77,7 +113,11 @@
     "lng": -109.955311,
     "elevation": 4091,
     "county": "Sweet Grass County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59011",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1715
   },
   "bigfork": {
     "name": "Bigfork",
@@ -85,7 +125,11 @@
     "lng": -114.0966664,
     "elevation": 2940,
     "county": "Flathead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59911",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 5000
   },
   "billings": {
     "name": "Billings",
@@ -93,7 +137,11 @@
     "lng": -108.49607,
     "elevation": 3123,
     "county": "Yellowstone County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59101",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 117116
   },
   "boulder": {
     "name": "Boulder",
@@ -101,7 +149,11 @@
     "lng": -112.120834,
     "elevation": 4908,
     "county": "Jefferson County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59632",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1201
   },
   "bozeman": {
     "name": "Bozeman",
@@ -109,7 +161,11 @@
     "lng": -111.044047,
     "elevation": 4826,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59715",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 58000
   },
   "bridger": {
     "name": "Bridger",
@@ -117,7 +173,11 @@
     "lng": -108.9137544,
     "elevation": 3671,
     "county": "Carbon County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59014",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 719
   },
   "broadus": {
     "name": "Broadus",
@@ -125,7 +185,11 @@
     "lng": -105.40749,
     "elevation": 3035,
     "county": "Powder River County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59317",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 470
   },
   "broadview": {
     "name": "Broadview",
@@ -133,7 +197,11 @@
     "lng": -108.8770972,
     "elevation": 3858,
     "county": "Yellowstone County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59015",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 136
   },
   "browning": {
     "name": "Browning",
@@ -141,7 +209,11 @@
     "lng": -113.017258,
     "elevation": 4377,
     "county": "Glacier County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59417",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1000
   },
   "butte": {
     "name": "Butte",
@@ -149,7 +221,11 @@
     "lng": -112.536508,
     "elevation": 5741,
     "county": "Silver Bow County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59701",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 34494
   },
   "cascade": {
     "name": "Cascade",
@@ -157,7 +233,11 @@
     "lng": -111.3281242,
     "elevation": 3894,
     "county": "Cascade County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59421",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 572
   },
   "chester": {
     "name": "Chester",
@@ -165,7 +245,11 @@
     "lng": -110.967315,
     "elevation": 3133,
     "county": "Liberty County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59522",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 829
   },
   "chinook": {
     "name": "Chinook",
@@ -173,7 +257,11 @@
     "lng": -109.231823,
     "elevation": 2421,
     "county": "Blaine County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59523",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1154
   },
   "choteau": {
     "name": "Choteau",
@@ -181,7 +269,11 @@
     "lng": -112.183375,
     "elevation": 3825,
     "county": "Teton County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59422",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1721
   },
   "circle": {
     "name": "Circle",
@@ -189,7 +281,11 @@
     "lng": -105.592222,
     "elevation": 2434,
     "county": "McCone County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59215",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 560
   },
   "clyde-park": {
     "name": "Clyde Park",
@@ -197,7 +293,11 @@
     "lng": -110.603819,
     "elevation": 4865,
     "county": "Park County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59018",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 355
   },
   "colstrip": {
     "name": "Colstrip",
@@ -205,7 +305,11 @@
     "lng": -106.623637,
     "elevation": 3238,
     "county": "Rosebud County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59323",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2055
   },
   "columbia-falls": {
     "name": "Columbia Falls",
@@ -213,7 +317,11 @@
     "lng": -114.191582,
     "elevation": 3077,
     "county": "Flathead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59912",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 5308
   },
   "columbus": {
     "name": "Columbus",
@@ -221,7 +329,11 @@
     "lng": -109.252154,
     "elevation": 3583,
     "county": "Stillwater County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59019",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2015
   },
   "conrad": {
     "name": "Conrad",
@@ -229,7 +341,11 @@
     "lng": -111.943019,
     "elevation": 3510,
     "county": "Pondera County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59425",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2318
   },
   "culbertson": {
     "name": "Culbertson",
@@ -237,7 +353,11 @@
     "lng": -104.5165641,
     "elevation": 1932,
     "county": "Roosevelt County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59218",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 706
   },
   "cut-bank": {
     "name": "Cut Bank",
@@ -245,7 +365,11 @@
     "lng": -112.326162,
     "elevation": 3776,
     "county": "Glacier County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59427",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 3056
   },
   "darby": {
     "name": "Darby",
@@ -253,7 +377,11 @@
     "lng": -114.178093,
     "elevation": 3885,
     "county": "Ravalli County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59829",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 783
   },
   "deer-lodge": {
     "name": "Deer Lodge",
@@ -261,7 +389,11 @@
     "lng": -113.089332,
     "elevation": 8497,
     "county": "Deer Lodge County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59722",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 3033
   },
   "denton": {
     "name": "Denton",
@@ -269,7 +401,11 @@
     "lng": -109.948201,
     "elevation": 3602,
     "county": "Fergus County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59430",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 215
   },
   "dillon": {
     "name": "Dillon",
@@ -277,7 +413,11 @@
     "lng": -112.6346079,
     "elevation": 5095,
     "county": "Beaverhead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59725",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 3880
   },
   "dodson": {
     "name": "Dodson",
@@ -285,7 +425,11 @@
     "lng": -108.243819,
     "elevation": 2290,
     "county": "Phillips County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59524",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 128
   },
   "drummond": {
     "name": "Drummond",
@@ -293,7 +437,11 @@
     "lng": -113.147286,
     "elevation": 3957,
     "county": "Granite County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59832",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 272
   },
   "dutton": {
     "name": "Dutton",
@@ -301,7 +449,11 @@
     "lng": -111.71171,
     "elevation": 3698,
     "county": "Teton County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59433",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 318
   },
   "east-glacier": {
     "name": "East Glacier",
@@ -309,7 +461,11 @@
     "lng": -113.2332922,
     "elevation": 4852,
     "county": "Glacier County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59434",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 354
   },
   "east-helena": {
     "name": "East Helena",
@@ -317,7 +473,11 @@
     "lng": -111.914593,
     "elevation": 3888,
     "county": "Lewis and Clark County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59635",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2264
   },
   "ekalaka": {
     "name": "Ekalaka",
@@ -325,7 +485,11 @@
     "lng": -104.5474596,
     "elevation": 3425,
     "county": "Carter County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59324",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 407
   },
   "ennis": {
     "name": "Ennis",
@@ -333,7 +497,11 @@
     "lng": -111.729697,
     "elevation": 4951,
     "county": "Madison County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59729",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 917
   },
   "eureka": {
     "name": "Eureka",
@@ -341,7 +509,11 @@
     "lng": -115.0535,
     "elevation": 2589,
     "county": "Lincoln County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59917",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1380
   },
   "fairfield": {
     "name": "Fairfield",
@@ -349,7 +521,11 @@
     "lng": -111.980279,
     "elevation": 3986,
     "county": "Teton County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59436",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 805
   },
   "fairview": {
     "name": "Fairview",
@@ -357,7 +533,11 @@
     "lng": -104.044933,
     "elevation": 1916,
     "county": "Richland County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59221",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 832
   },
   "flaxville": {
     "name": "Flaxville",
@@ -365,7 +545,11 @@
     "lng": -105.1727604,
     "elevation": 2779,
     "county": "Daniels County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59222",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 58
   },
   "forsyth": {
     "name": "Forsyth",
@@ -373,7 +557,11 @@
     "lng": -106.677812,
     "elevation": 2526,
     "county": "Rosebud County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59327",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1630
   },
   "fort-benton": {
     "name": "Fort Benton",
@@ -381,7 +569,11 @@
     "lng": -110.6716371,
     "elevation": 2641,
     "county": "Chouteau County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59442",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1449
   },
   "fort-peck": {
     "name": "Fort Peck",
@@ -389,7 +581,11 @@
     "lng": -106.447673,
     "elevation": 2162,
     "county": "Valley County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59223",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 239
   },
   "froid": {
     "name": "Froid",
@@ -397,7 +593,11 @@
     "lng": -104.49383,
     "elevation": 2024,
     "county": "Roosevelt County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59226",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 180
   },
   "fromberg": {
     "name": "Fromberg",
@@ -405,7 +605,11 @@
     "lng": -108.9065335,
     "elevation": 3524,
     "county": "Carbon County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59029",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 392
   },
   "gardiner": {
     "name": "Gardiner",
@@ -413,7 +617,11 @@
     "lng": -110.7360473,
     "elevation": 5906,
     "county": "Park County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59030",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 791
   },
   "geraldine": {
     "name": "Geraldine",
@@ -421,7 +629,10 @@
     "lng": -110.2664376,
     "elevation": 3143,
     "county": "Chouteau County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59446",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "glasgow": {
     "name": "Glasgow",
@@ -429,7 +640,10 @@
     "lng": -106.635556,
     "elevation": 2096,
     "county": "Valley County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59230",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "glendive": {
     "name": "Glendive",
@@ -437,7 +651,11 @@
     "lng": -104.71246,
     "elevation": 2083,
     "county": "Dawson County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59330",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 4873
   },
   "grass-range": {
     "name": "Grass Range",
@@ -445,7 +663,10 @@
     "lng": -108.8034309,
     "elevation": 3484,
     "county": "Fergus County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59032",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "great-falls": {
     "name": "Great Falls",
@@ -453,7 +674,11 @@
     "lng": -111.29189,
     "elevation": 3340,
     "county": "Cascade County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59403",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 60000
   },
   "hamilton": {
     "name": "Hamilton",
@@ -461,7 +686,11 @@
     "lng": -114.1555462,
     "elevation": 3573,
     "county": "Ravalli County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59840",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 4659
   },
   "hardin": {
     "name": "Hardin",
@@ -469,7 +698,10 @@
     "lng": -107.612031,
     "elevation": 2910,
     "county": "Big Horn County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59034",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "harlem": {
     "name": "Harlem",
@@ -477,7 +709,10 @@
     "lng": -108.784903,
     "elevation": 2372,
     "county": "Blaine County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59526",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "harlowton": {
     "name": "Harlowton",
@@ -485,7 +720,10 @@
     "lng": -109.835441,
     "elevation": 4170,
     "county": "Wheatland County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59036",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "havre": {
     "name": "Havre",
@@ -493,7 +731,11 @@
     "lng": -109.677802,
     "elevation": 2493,
     "county": "Hill County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59501",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 9362
   },
   "helena": {
     "name": "Helena",
@@ -501,7 +743,11 @@
     "lng": -112.036277,
     "elevation": 4039,
     "county": "Lewis and Clark County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59601",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 33100
   },
   "hingham": {
     "name": "Hingham",
@@ -509,7 +755,10 @@
     "lng": -110.422166,
     "elevation": 3035,
     "county": "Hill County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59528",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "hobson": {
     "name": "Hobson",
@@ -517,7 +766,10 @@
     "lng": -109.873654,
     "elevation": 4091,
     "county": "Judith Basin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59452",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "hot-springs": {
     "name": "Hot Springs",
@@ -525,7 +777,11 @@
     "lng": -114.668741,
     "elevation": 2835,
     "county": "Sanders County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59845",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 557
   },
   "hysham": {
     "name": "Hysham",
@@ -533,7 +789,10 @@
     "lng": -107.2315145,
     "elevation": 2661,
     "county": "Treasure County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59038",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "ismay": {
     "name": "Ismay",
@@ -541,7 +800,10 @@
     "lng": -104.794128,
     "elevation": 2523,
     "county": "Custer County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59336",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "joliet": {
     "name": "Joliet",
@@ -549,7 +811,10 @@
     "lng": -108.9703595,
     "elevation": 3734,
     "county": "Carbon County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59041",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "jordan": {
     "name": "Jordan",
@@ -557,7 +822,10 @@
     "lng": -106.910461,
     "elevation": 2608,
     "county": "Garfield County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59337",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "judith-gap": {
     "name": "Judith Gap",
@@ -565,7 +833,10 @@
     "lng": -109.75185,
     "elevation": 4623,
     "county": "Wheatland County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59453",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "kalispell": {
     "name": "Kalispell",
@@ -573,7 +844,11 @@
     "lng": -114.315321,
     "elevation": 2959,
     "county": "Flathead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59901",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 29886
   },
   "kevin": {
     "name": "Kevin",
@@ -581,7 +856,10 @@
     "lng": -111.965372,
     "elevation": 3330,
     "county": "Toole County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59454",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "laurel": {
     "name": "Laurel",
@@ -589,7 +867,10 @@
     "lng": -108.771532,
     "elevation": 3307,
     "county": "Yellowstone County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59044",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "lavina": {
     "name": "Lavina",
@@ -597,7 +878,10 @@
     "lng": -108.9377067,
     "elevation": 3442,
     "county": "Golden Valley County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59046",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "lewistown": {
     "name": "Lewistown",
@@ -605,7 +889,11 @@
     "lng": -109.428213,
     "elevation": 3934,
     "county": "Fergus County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59457",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 5952
   },
   "libby": {
     "name": "Libby",
@@ -613,7 +901,11 @@
     "lng": -115.5558612,
     "elevation": 2096,
     "county": "Lincoln County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59923",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2775
   },
   "lima": {
     "name": "Lima",
@@ -621,7 +913,10 @@
     "lng": -112.5912118,
     "elevation": 6253,
     "county": "Beaverhead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59739",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "livingston": {
     "name": "Livingston",
@@ -629,7 +924,11 @@
     "lng": -110.5615899,
     "elevation": 4501,
     "county": "Park County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59047",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 8040
   },
   "lodge-grass": {
     "name": "Lodge Grass",
@@ -637,7 +936,11 @@
     "lng": -107.36367,
     "elevation": 3366,
     "county": "Big Horn County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59050",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 441
   },
   "malta": {
     "name": "Malta",
@@ -645,7 +948,10 @@
     "lng": -107.8726879,
     "elevation": 2254,
     "county": "Phillips County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59538",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "manhattan": {
     "name": "Manhattan",
@@ -653,7 +959,10 @@
     "lng": -111.334081,
     "elevation": 4249,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59741",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "medicine-lake": {
     "name": "Medicine Lake",
@@ -661,7 +970,10 @@
     "lng": -104.504677,
     "elevation": 1959,
     "county": "Sheridan County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59247",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "melstone": {
     "name": "Melstone",
@@ -669,7 +981,10 @@
     "lng": -107.8694908,
     "elevation": 2927,
     "county": "Musselshell County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59054",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "miles-city": {
     "name": "Miles City",
@@ -677,7 +992,11 @@
     "lng": -105.847843,
     "elevation": 2365,
     "county": "Custer County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59301",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 8412
   },
   "missoula": {
     "name": "Missoula",
@@ -685,7 +1004,11 @@
     "lng": -113.995267,
     "elevation": 3215,
     "county": "Missoula County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59807",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 77757
   },
   "moore": {
     "name": "Moore",
@@ -693,7 +1016,10 @@
     "lng": -109.696854,
     "elevation": 4154,
     "county": "Fergus County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59464",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "nashua": {
     "name": "Nashua",
@@ -701,7 +1027,10 @@
     "lng": -106.35642,
     "elevation": 2064,
     "county": "Valley County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59230",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "neihart": {
     "name": "Neihart",
@@ -709,7 +1038,10 @@
     "lng": -110.7378183,
     "elevation": 5705,
     "county": "Cascade County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59465",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "opheim": {
     "name": "Opheim",
@@ -717,7 +1049,10 @@
     "lng": -106.407904,
     "elevation": 3268,
     "county": "Valley County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59250",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "outlook": {
     "name": "Outlook",
@@ -725,7 +1060,10 @@
     "lng": -104.7781582,
     "elevation": 2346,
     "county": "Sheridan County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59252",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "philipsburg": {
     "name": "Philipsburg",
@@ -733,7 +1071,11 @@
     "lng": -113.2944992,
     "elevation": 5249,
     "county": "Granite County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59858",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 841
   },
   "pinesdale": {
     "name": "Pinesdale",
@@ -741,7 +1083,10 @@
     "lng": -114.2183816,
     "elevation": 4003,
     "county": "Ravalli County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59841",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "plains": {
     "name": "Plains",
@@ -749,7 +1094,11 @@
     "lng": -114.884788,
     "elevation": 2467,
     "county": "Sanders County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59859",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1106
   },
   "plentywood": {
     "name": "Plentywood",
@@ -757,7 +1106,11 @@
     "lng": -104.562458,
     "elevation": 2047,
     "county": "Sheridan County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59254",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1669
   },
   "plevna": {
     "name": "Plevna",
@@ -765,7 +1118,10 @@
     "lng": -104.518588,
     "elevation": 2772,
     "county": "Fallon County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59344",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "polson": {
     "name": "Polson",
@@ -773,7 +1129,11 @@
     "lng": -114.163761,
     "elevation": 2930,
     "county": "Lake County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59860",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 5148
   },
   "poplar": {
     "name": "Poplar",
@@ -781,7 +1141,10 @@
     "lng": -105.198113,
     "elevation": 1995,
     "county": "Roosevelt County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59255",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "red-lodge": {
     "name": "Red Lodge",
@@ -789,7 +1152,11 @@
     "lng": -109.2470622,
     "elevation": 5568,
     "county": "Carbon County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59068",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2399
   },
   "rexford": {
     "name": "Rexford",
@@ -797,7 +1164,10 @@
     "lng": -115.172115,
     "elevation": 2549,
     "county": "Lincoln County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59930",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "richey": {
     "name": "Richey",
@@ -805,7 +1175,10 @@
     "lng": -105.0695661,
     "elevation": 2490,
     "county": "Dawson County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59259",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "ronan": {
     "name": "Ronan",
@@ -813,7 +1186,11 @@
     "lng": -114.101501,
     "elevation": 3051,
     "county": "Lake County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59864",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1955
   },
   "roundup": {
     "name": "Roundup",
@@ -821,7 +1198,10 @@
     "lng": -108.541799,
     "elevation": 3222,
     "county": "Musselshell County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59072",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "ryegate": {
     "name": "Ryegate",
@@ -829,7 +1209,10 @@
     "lng": -109.2573501,
     "elevation": 3668,
     "county": "Golden Valley County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59074",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "saco": {
     "name": "Saco",
@@ -837,7 +1220,10 @@
     "lng": -107.3437749,
     "elevation": 2182,
     "county": "Phillips County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59261",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "scobey": {
     "name": "Scobey",
@@ -845,7 +1231,10 @@
     "lng": -105.419948,
     "elevation": 2470,
     "county": "Daniels County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59263",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "seeley-lake": {
     "name": "Seeley Lake",
@@ -853,7 +1242,11 @@
     "lng": -113.4484281,
     "elevation": 4088,
     "county": "Missoula County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59868",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1682
   },
   "shelby": {
     "name": "Shelby",
@@ -861,7 +1254,11 @@
     "lng": -111.856872,
     "elevation": 3297,
     "county": "Toole County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59474",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 3169
   },
   "sheridan": {
     "name": "Sheridan",
@@ -869,7 +1266,10 @@
     "lng": -104.5154683,
     "elevation": 2123,
     "county": "Sheridan County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59211",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "sidney": {
     "name": "Sidney",
@@ -877,7 +1277,10 @@
     "lng": -104.155973,
     "elevation": 1939,
     "county": "Richland County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59270",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "st-ignatius": {
     "name": "St. Ignatius",
@@ -885,7 +1288,11 @@
     "lng": -114.097039,
     "elevation": 2936,
     "county": "Lake County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59865",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 768
   },
   "stanford": {
     "name": "Stanford",
@@ -893,7 +1300,10 @@
     "lng": -110.2174252,
     "elevation": 4275,
     "county": "Judith Basin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59479",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "stevensville": {
     "name": "Stevensville",
@@ -901,7 +1311,11 @@
     "lng": -114.094385,
     "elevation": 3317,
     "county": "Ravalli County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59870",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1337
   },
   "sunburst": {
     "name": "Sunburst",
@@ -909,7 +1323,10 @@
     "lng": -111.910475,
     "elevation": 3363,
     "county": "Toole County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59842",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "superior": {
     "name": "Superior",
@@ -917,7 +1334,10 @@
     "lng": -114.891797,
     "elevation": 2759,
     "county": "Mineral County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59872",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "terry": {
     "name": "Terry",
@@ -925,7 +1345,10 @@
     "lng": -105.312209,
     "elevation": 2251,
     "county": "Prairie County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59349",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "thompson-falls": {
     "name": "Thompson Falls",
@@ -933,7 +1356,11 @@
     "lng": -115.344309,
     "elevation": 2562,
     "county": "Sanders County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59873",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1336
   },
   "three-forks": {
     "name": "Three Forks",
@@ -941,7 +1368,11 @@
     "lng": -111.551448,
     "elevation": 4075,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59752",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1989
   },
   "townsend": {
     "name": "Townsend",
@@ -949,7 +1380,10 @@
     "lng": -111.520802,
     "elevation": 3825,
     "county": "Broadwater County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59644",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "troy": {
     "name": "Troy",
@@ -957,7 +1391,11 @@
     "lng": -115.8949854,
     "elevation": 1909,
     "county": "Lincoln County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59935",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 985
   },
   "twin-bridges": {
     "name": "Twin Bridges",
@@ -965,7 +1403,11 @@
     "lng": -112.331112,
     "elevation": 4633,
     "county": "Madison County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59754",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 330
   },
   "valier": {
     "name": "Valier",
@@ -973,7 +1415,10 @@
     "lng": -112.250743,
     "elevation": 3819,
     "county": "Pondera County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59486",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "virginia-city": {
     "name": "Virginia City",
@@ -981,7 +1426,11 @@
     "lng": -111.9442329,
     "elevation": 5778,
     "county": "Madison County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59755",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 148
   },
   "walkerville": {
     "name": "Walkerville",
@@ -989,7 +1438,10 @@
     "lng": -112.535223,
     "elevation": 6204,
     "county": "Silver Bow County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59701",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "west-glacier": {
     "name": "West Glacier",
@@ -997,7 +1449,11 @@
     "lng": -113.982443,
     "elevation": 3222,
     "county": "Flathead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59936",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 221
   },
   "west-yellowstone": {
     "name": "West Yellowstone",
@@ -1005,7 +1461,11 @@
     "lng": -111.1012064,
     "elevation": 6667,
     "county": "Gallatin County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59758",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1272
   },
   "westby": {
     "name": "Westby",
@@ -1013,7 +1473,10 @@
     "lng": -104.052304,
     "elevation": 2093,
     "county": "Sheridan County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59275",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "white-sulphur-springs": {
     "name": "White Sulphur Springs",
@@ -1021,7 +1484,11 @@
     "lng": -110.9034718,
     "elevation": 5039,
     "county": "Meagher County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59645",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 1046
   },
   "whitefish": {
     "name": "Whitefish",
@@ -1029,7 +1496,11 @@
     "lng": -114.334624,
     "elevation": 3038,
     "county": "Flathead County",
-    "region": "Western"
+    "region": "Western",
+    "zipCode": "59937",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 8915
   },
   "whitehall": {
     "name": "Whitehall",
@@ -1037,7 +1508,10 @@
     "lng": -112.097494,
     "elevation": 4360,
     "county": "Jefferson County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59759",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "wibaux": {
     "name": "Wibaux",
@@ -1045,7 +1519,10 @@
     "lng": -104.2215171,
     "elevation": 2805,
     "county": "Wibaux County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59353",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "winifred": {
     "name": "Winifred",
@@ -1053,7 +1530,10 @@
     "lng": -109.374902,
     "elevation": 3228,
     "county": "Fergus County",
-    "region": "Central"
+    "region": "Central",
+    "zipCode": "59489",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)"
   },
   "winnett": {
     "name": "Winnett",
@@ -1061,7 +1541,11 @@
     "lng": -108.352271,
     "elevation": 2956,
     "county": "Petroleum County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59087",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 201
   },
   "wolf-point": {
     "name": "Wolf Point",
@@ -1069,6 +1553,10 @@
     "lng": -105.640557,
     "elevation": 2001,
     "county": "Roosevelt County",
-    "region": "Eastern"
+    "region": "Eastern",
+    "zipCode": "59201",
+    "areaCode": "406",
+    "timeZone": "Mountain Time (MT)",
+    "population": 2517
   }
 }

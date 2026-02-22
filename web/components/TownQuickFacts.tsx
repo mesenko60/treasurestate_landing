@@ -4,13 +4,21 @@ type TownDataProps = {
   elevation: number | null;
   county: string | null;
   region: string | null;
+  zipCode?: string | null;
+  areaCode?: string | null;
+  timeZone?: string | null;
+  population?: number | null;
 };
 
-export default function TownQuickFacts({ elevation, county, region }: TownDataProps) {
+export default function TownQuickFacts({ elevation, county, region, zipCode, areaCode, timeZone, population }: TownDataProps) {
   const facts = [
+    population && { label: 'Population', value: population.toLocaleString() },
     county && { label: 'County', value: county },
     region && { label: 'Region', value: `${region} Montana` },
     elevation && { label: 'Elevation', value: `${elevation.toLocaleString()} ft` },
+    zipCode && { label: 'Zip Code', value: zipCode },
+    areaCode && { label: 'Area Code', value: areaCode },
+    timeZone && { label: 'Time Zone', value: timeZone },
   ].filter(Boolean) as { label: string; value: string }[];
 
   if (facts.length === 0) return null;
@@ -18,8 +26,8 @@ export default function TownQuickFacts({ elevation, county, region }: TownDataPr
   return (
     <div style={{
       display: 'grid',
-      gridTemplateColumns: `repeat(${Math.min(facts.length, 3)}, 1fr)`,
-      gap: '1rem',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+      gap: '0.75rem',
       marginBottom: '2rem'
     }}>
       {facts.map(fact => (

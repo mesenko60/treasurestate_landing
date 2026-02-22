@@ -15,6 +15,7 @@ import TownWeather from '../../components/TownWeather';
 import TownDistances from '../../components/TownDistances';
 import StoreBanner from '../../components/StoreBanner';
 import TownQuickFacts from '../../components/TownQuickFacts';
+import ClimateTable from '../../components/ClimateTable';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -35,6 +36,17 @@ type TownFactsData = {
   elevation: number | null;
   county: string | null;
   region: string | null;
+  zipCode?: string | null;
+  areaCode?: string | null;
+  timeZone?: string | null;
+  population?: number | null;
+};
+
+type MonthClimate = {
+  month: string;
+  avgHigh: number;
+  avgLow: number;
+  precipIn: number;
 };
 
 type Props = {
@@ -48,9 +60,10 @@ type Props = {
   relatedTownCoords: TownCoordinate[];
   airportDistances: Record<string, AirportDistance> | null;
   townFacts: TownFactsData | null;
+  climateMonths: MonthClimate[] | null;
 };
 
-export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts }: Props) {
+export default function TownPage({ slug, townName, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths }: Props) {
   const title = `${townName}, Montana - Complete Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -111,10 +124,11 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
           <TableOfContents contentSelector=".content-section" />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
-          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} />}
+          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
           <StoreBanner />
@@ -206,7 +220,22 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     elevation: rawFacts.elevation || null,
     county: rawFacts.county || null,
     region: rawFacts.region || null,
+    zipCode: rawFacts.zipCode || null,
+    areaCode: rawFacts.areaCode || null,
+    timeZone: rawFacts.timeZone || null,
+    population: rawFacts.population || null,
   } : null;
+
+  let allClimateData: Record<string, { months: MonthClimate[] }> = {};
+  try {
+    const climatePath = path.resolve(process.cwd(), 'data', 'town-climate.json');
+    if (fs.existsSync(climatePath)) {
+      allClimateData = JSON.parse(fs.readFileSync(climatePath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load climate data", e);
+  }
+  const climateMonths = allClimateData[slug]?.months || null;
 
   return { 
     props: { 
@@ -219,7 +248,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       currentTownCoords,
       relatedTownCoords,
       airportDistances,
-      townFacts
+      townFacts,
+      climateMonths
     } 
   };
 };
