@@ -313,5 +313,95 @@
         "distMiles": 1
       }
     ]
+  },
+  "havre": {
+    "name": "Havre",
+    "places": [
+      {
+        "name": "Pepin Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Eagles Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Lions Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Kuhr Memorial Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Deaconess Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Rotary Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "US Bank Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Sixth Avenue Park",
+        "type": "Park",
+        "distMiles": 1
+      }
+    ]
+  },
+  "jordan": {
+    "name": "Jordan",
+    "places": [
+      {
+        "name": "Willems Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Kariotis Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Panwitz Park",
+        "type": "Park",
+        "distMiles": 0
+      },
+      {
+        "name": "Indian Country Historical Marker",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "Woodland Park",
+        "type": "Park",
+        "distMiles": 1
+      },
+      {
+        "name": "State Trust",
+        "type": "Nature Reserve",
+        "distMiles": 18
+      },
+      {
+        "name": "Hell Creek Recreation Area",
+        "type": "Park",
+        "distMiles": 20
+      },
+      {
+        "name": "Hell Creek State Park",
+        "type": "Park",
+        "distMiles": 20
+      }
+    ]
   }
 }

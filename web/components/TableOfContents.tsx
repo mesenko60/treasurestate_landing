@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 interface TOCItem {
   id: string;
@@ -7,26 +8,26 @@ interface TOCItem {
 }
 
 interface TableOfContentsProps {
-  contentSelector?: string; // The CSS selector for the main content area (e.g., 'main', '.content-section')
+  contentSelector?: string;
 }
 
 export default function TableOfContents({ contentSelector = '.content-section' }: TableOfContentsProps) {
   const [headings, setHeadings] = useState<TOCItem[]>([]);
   const [activeId, setActiveId] = useState<string>('');
+  const router = useRouter();
 
   useEffect(() => {
-    // Wait a brief moment to ensure the sibling content-section is fully rendered and hydrated
+    setHeadings([]);
+    setActiveId('');
+
     const timer = setTimeout(() => {
-      // 1. Find all headings in the content area
       const contentArea = document.querySelector(contentSelector);
       if (!contentArea) return;
 
       const elements = Array.from(contentArea.querySelectorAll('h2, h3'));
-      
-      // 2. Add IDs to headings if they don't have them, and collect them for the TOC
+
       const items: TOCItem[] = elements.map((elem) => {
         if (!elem.id) {
-          // Generate an ID based on the text content
           elem.id = elem.textContent
             ?.toLowerCase()
             .replace(/[^a-z0-9]+/g, '-')
@@ -35,15 +36,13 @@ export default function TableOfContents({ contentSelector = '.content-section' }
         return {
           id: elem.id,
           text: elem.textContent || '',
-          level: Number(elem.tagName.charAt(1)), // 2 for H2, 3 for H3
+          level: Number(elem.tagName.charAt(1)),
         };
       });
 
       setHeadings(items);
 
-      // 3. Set up Intersection Observer to track which heading is currently active
       const callback: IntersectionObserverCallback = (entries) => {
-        // Find the first intersecting entry
         const visibleEntries = entries.filter((entry) => entry.isIntersecting);
         if (visibleEntries.length > 0) {
           setActiveId(visibleEntries[0].target.id);
@@ -51,17 +50,16 @@ export default function TableOfContents({ contentSelector = '.content-section' }
       };
 
       const observer = new IntersectionObserver(callback, {
-        rootMargin: '0px 0px -80% 0px', // Trigger when heading is near the top of the viewport
+        rootMargin: '0px 0px -80% 0px',
       });
 
       elements.forEach((elem) => observer.observe(elem));
 
-      // Clean up observer when component unmounts
       return () => observer.disconnect();
-    }, 100);
+    }, 150);
 
     return () => clearTimeout(timer);
-  }, [contentSelector]);
+  }, [contentSelector, router.asPath]);
 
   if (headings.length === 0) return null;
 
