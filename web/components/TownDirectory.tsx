@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 const TownMap = dynamic(() => import('./TownMap'), { 
   ssr: false, 
   loading: () => (
-    <div style={{ height: '400px', background: '#e8e8e8', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
+    <div className="town-map-container" style={{ background: '#e8e8e8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       Loading map...
     </div>
   ) 
@@ -34,23 +34,13 @@ export default function TownDirectory({ towns }: { towns: TownCoordinate[] }) {
 
   return (
     <div className="town-directory">
-      <div className="search-container" style={{ marginBottom: '2rem' }}>
+      <div className="search-container" style={{ marginBottom: '1.5rem' }}>
         <input
           type="text"
-          placeholder="Search for a town in Montana..."
+          placeholder="Search for a town..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          style={{
-            width: '100%',
-            padding: '1rem 1.5rem',
-            fontSize: '1.2rem',
-            borderRadius: '8px',
-            border: '2px solid #e0e0e0',
-            boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
-            outline: 'none',
-            fontFamily: 'inherit',
-            transition: 'border-color 0.3s ease'
-          }}
+          className="town-search-input"
           onFocus={(e) => e.target.style.borderColor = '#3b6978'}
           onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
         />

@@ -357,6 +357,43 @@ main {
   }
 }
 
+/* Town Search Input */
+.town-search-input {
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .town-search-input {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Town Map Container */
+.town-map-container {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .town-map-container {
+    height: 250px;
+    margin-bottom: 1.25rem;
+  }
+}
+
 .planners-section h2 {
   color: var(--primary);
 }

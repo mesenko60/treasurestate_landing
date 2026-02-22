@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 const TownMap = dynamic(() => import('./TownMap'), { 
   ssr: false, 
   loading: () => (
-    <div style={{ height: '400px', background: '#e8e8e8', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
+    <div className="town-map-container" style={{ background: '#e8e8e8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       Loading map...
     </div>
   ) 

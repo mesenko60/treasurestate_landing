@@ -40,7 +40,7 @@ export default function TownMap({
   zoom?: number;
 }) {
   return (
-    <div style={{ height: '400px', width: '100%', marginBottom: '2rem', borderRadius: '8px', overflow: 'hidden', zIndex: 1, position: 'relative' }}>
+    <div className="town-map-container">
       <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%', zIndex: 1 }}>
         <MapUpdater center={center} zoom={zoom} />
         <TileLayer
