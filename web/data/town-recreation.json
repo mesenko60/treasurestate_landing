@@ -133,5 +133,95 @@
         "distMiles": 17
       }
     ]
+  },
+  "columbia-falls": {
+    "name": "Columbia Falls",
+    "places": [
+      {
+        "name": "Surrounded by Wilderness Historical Marker",
+        "type": "Park",
+        "distMiles": 3
+      },
+      {
+        "name": "Bad Rock Canyon Historical Marker",
+        "type": "Park",
+        "distMiles": 3
+      },
+      {
+        "name": "Berne Memorial Park",
+        "type": "Park",
+        "distMiles": 4
+      },
+      {
+        "name": "River Trail Park",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Depot Park",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Kay Beller Park",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Crestwood Park",
+        "type": "Park",
+        "distMiles": 8
+      },
+      {
+        "name": "Whitefish Lake Access",
+        "type": "Park",
+        "distMiles": 9
+      }
+    ]
+  },
+  "drummond": {
+    "name": "Drummond",
+    "places": [
+      {
+        "name": "Drummond Campground",
+        "type": "Campground",
+        "distMiles": 0
+      },
+      {
+        "name": "Southern Flint Creek Valley Historical Marker",
+        "type": "Park",
+        "distMiles": 7
+      },
+      {
+        "name": "Jackson Park",
+        "type": "Park",
+        "distMiles": 10
+      },
+      {
+        "name": "Bearmouth Historical Marker",
+        "type": "Park",
+        "distMiles": 10
+      },
+      {
+        "name": "Browns Lake Campground",
+        "type": "Campground",
+        "distMiles": 21
+      },
+      {
+        "name": "Beavertail Hill State Park",
+        "type": "Nature Reserve",
+        "distMiles": 21
+      },
+      {
+        "name": "Harry Morgan Campground",
+        "type": "Campground",
+        "distMiles": 22
+      },
+      {
+        "name": "Moose Creek campground (free)",
+        "type": "Campground",
+        "distMiles": 23
+      }
+    ]
   }
 }

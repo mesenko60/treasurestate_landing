@@ -9,7 +9,10 @@
     "zipCode": "59820",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 452
+    "population": 452,
+    "schoolDistrict": "Alberton K-12 Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "anaconda": {
     "name": "Anaconda",
@@ -21,7 +24,10 @@
     "zipCode": "59711",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 9421
+    "population": 9421,
+    "schoolDistrict": "Anaconda Public Schools",
+    "schoolEnrollment": 1600,
+    "schoolWebsite": "https://www.anacondapublicschools.org"
   },
   "bainville": {
     "name": "Bainville",
@@ -33,7 +39,10 @@
     "zipCode": "59212",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 313
+    "population": 313,
+    "schoolDistrict": "Bainville K-12 Schools",
+    "schoolEnrollment": 90,
+    "schoolWebsite": null
   },
   "baker": {
     "name": "Baker",
@@ -45,7 +54,10 @@
     "zipCode": "59313",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1780
+    "population": 1780,
+    "schoolDistrict": "Baker K-12 Schools",
+    "schoolEnrollment": 400,
+    "schoolWebsite": null
   },
   "bearcreek": {
     "name": "Bearcreek",
@@ -57,7 +69,10 @@
     "zipCode": "59007",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 107
+    "population": 107,
+    "schoolDistrict": "Bearcreek School District",
+    "schoolEnrollment": 30,
+    "schoolWebsite": null
   },
   "belgrade": {
     "name": "Belgrade",
@@ -69,7 +84,10 @@
     "zipCode": "59714",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 12509
+    "population": 12509,
+    "schoolDistrict": "Belgrade Public Schools",
+    "schoolEnrollment": 3800,
+    "schoolWebsite": "https://www.belgrade.k12.mt.us"
   },
   "belt": {
     "name": "Belt",
@@ -81,7 +99,10 @@
     "zipCode": "59412",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 515
+    "population": 515,
+    "schoolDistrict": "Belt Public Schools",
+    "schoolEnrollment": 280,
+    "schoolWebsite": null
   },
   "big-sandy": {
     "name": "Big Sandy",
@@ -93,7 +114,10 @@
     "zipCode": "59520",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 605
+    "population": 605,
+    "schoolDistrict": "Big Sandy K-12 Schools",
+    "schoolEnrollment": 120,
+    "schoolWebsite": null
   },
   "big-sky": {
     "name": "Big Sky",
@@ -105,7 +129,10 @@
     "zipCode": "59716",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 3591
+    "population": 3591,
+    "schoolDistrict": "Ophir School District",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "big-timber": {
     "name": "Big Timber",
@@ -117,7 +144,10 @@
     "zipCode": "59011",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1715
+    "population": 1715,
+    "schoolDistrict": "Big Timber Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "bigfork": {
     "name": "Bigfork",
@@ -129,7 +159,10 @@
     "zipCode": "59911",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 5000
+    "population": 5000,
+    "schoolDistrict": "Bigfork Public Schools",
+    "schoolEnrollment": 900,
+    "schoolWebsite": "https://www.bigfork.k12.mt.us"
   },
   "billings": {
     "name": "Billings",
@@ -141,7 +174,10 @@
     "zipCode": "59101",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 117116
+    "population": 117116,
+    "schoolDistrict": "Billings Public Schools",
+    "schoolEnrollment": 16000,
+    "schoolWebsite": "https://www.billingsschools.org"
   },
   "boulder": {
     "name": "Boulder",
@@ -153,7 +189,10 @@
     "zipCode": "59632",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1201
+    "population": 1201,
+    "schoolDistrict": "Boulder Public Schools",
+    "schoolEnrollment": 250,
+    "schoolWebsite": null
   },
   "bozeman": {
     "name": "Bozeman",
@@ -165,7 +204,10 @@
     "zipCode": "59715",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 58000
+    "population": 58000,
+    "schoolDistrict": "Bozeman Public Schools",
+    "schoolEnrollment": 8500,
+    "schoolWebsite": "https://www.bsd7.org"
   },
   "bridger": {
     "name": "Bridger",
@@ -177,7 +219,10 @@
     "zipCode": "59014",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 719
+    "population": 719,
+    "schoolDistrict": "Bridger K-12 Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "broadus": {
     "name": "Broadus",
@@ -189,7 +234,10 @@
     "zipCode": "59317",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 470
+    "population": 470,
+    "schoolDistrict": "Broadus Public Schools",
+    "schoolEnrollment": 100,
+    "schoolWebsite": null
   },
   "broadview": {
     "name": "Broadview",
@@ -201,7 +249,10 @@
     "zipCode": "59015",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 136
+    "population": 136,
+    "schoolDistrict": "Broadview Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "browning": {
     "name": "Browning",
@@ -213,7 +264,10 @@
     "zipCode": "59417",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1000
+    "population": 1000,
+    "schoolDistrict": "Browning Public Schools",
+    "schoolEnrollment": 1600,
+    "schoolWebsite": null
   },
   "butte": {
     "name": "Butte",
@@ -225,7 +279,10 @@
     "zipCode": "59701",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 34494
+    "population": 34494,
+    "schoolDistrict": "Butte Public Schools",
+    "schoolEnrollment": 4200,
+    "schoolWebsite": "https://www.butte.k12.mt.us"
   },
   "cascade": {
     "name": "Cascade",
@@ -237,7 +294,10 @@
     "zipCode": "59421",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 572
+    "population": 572,
+    "schoolDistrict": "Cascade Public Schools",
+    "schoolEnrollment": 180,
+    "schoolWebsite": null
   },
   "chester": {
     "name": "Chester",
@@ -249,7 +309,10 @@
     "zipCode": "59522",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 829
+    "population": 829,
+    "schoolDistrict": "Chester-Joplin-Inverness Schools",
+    "schoolEnrollment": 160,
+    "schoolWebsite": null
   },
   "chinook": {
     "name": "Chinook",
@@ -261,7 +324,10 @@
     "zipCode": "59523",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1154
+    "population": 1154,
+    "schoolDistrict": "Chinook Public Schools",
+    "schoolEnrollment": 280,
+    "schoolWebsite": null
   },
   "choteau": {
     "name": "Choteau",
@@ -273,7 +339,10 @@
     "zipCode": "59422",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1721
+    "population": 1721,
+    "schoolDistrict": "Choteau Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "circle": {
     "name": "Circle",
@@ -285,7 +354,10 @@
     "zipCode": "59215",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 560
+    "population": 560,
+    "schoolDistrict": "Circle Public Schools",
+    "schoolEnrollment": 140,
+    "schoolWebsite": null
   },
   "clyde-park": {
     "name": "Clyde Park",
@@ -297,7 +369,10 @@
     "zipCode": "59018",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 355
+    "population": 355,
+    "schoolDistrict": "Shields Valley Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "colstrip": {
     "name": "Colstrip",
@@ -309,7 +384,10 @@
     "zipCode": "59323",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2055
+    "population": 2055,
+    "schoolDistrict": "Colstrip Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "columbia-falls": {
     "name": "Columbia Falls",
@@ -321,7 +399,10 @@
     "zipCode": "59912",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 5308
+    "population": 5308,
+    "schoolDistrict": "Columbia Falls Public Schools",
+    "schoolEnrollment": 1800,
+    "schoolWebsite": "https://www.cfsd6.org"
   },
   "columbus": {
     "name": "Columbus",
@@ -333,7 +414,10 @@
     "zipCode": "59019",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2015
+    "population": 2015,
+    "schoolDistrict": "Columbus Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "conrad": {
     "name": "Conrad",
@@ -345,7 +429,10 @@
     "zipCode": "59425",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2318
+    "population": 2318,
+    "schoolDistrict": "Conrad Public Schools",
+    "schoolEnrollment": 450,
+    "schoolWebsite": null
   },
   "culbertson": {
     "name": "Culbertson",
@@ -357,7 +444,10 @@
     "zipCode": "59218",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 706
+    "population": 706,
+    "schoolDistrict": "Culbertson Public Schools",
+    "schoolEnrollment": 180,
+    "schoolWebsite": null
   },
   "cut-bank": {
     "name": "Cut Bank",
@@ -369,7 +459,10 @@
     "zipCode": "59427",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 3056
+    "population": 3056,
+    "schoolDistrict": "Cut Bank Public Schools",
+    "schoolEnrollment": 600,
+    "schoolWebsite": null
   },
   "darby": {
     "name": "Darby",
@@ -381,7 +474,10 @@
     "zipCode": "59829",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 783
+    "population": 783,
+    "schoolDistrict": "Darby Public Schools",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "deer-lodge": {
     "name": "Deer Lodge",
@@ -393,7 +489,10 @@
     "zipCode": "59722",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 3033
+    "population": 3033,
+    "schoolDistrict": "Deer Lodge Public Schools",
+    "schoolEnrollment": 450,
+    "schoolWebsite": null
   },
   "denton": {
     "name": "Denton",
@@ -405,7 +504,10 @@
     "zipCode": "59430",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 215
+    "population": 215,
+    "schoolDistrict": "Denton Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "dillon": {
     "name": "Dillon",
@@ -417,7 +519,10 @@
     "zipCode": "59725",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 3880
+    "population": 3880,
+    "schoolDistrict": "Dillon Public Schools",
+    "schoolEnrollment": 650,
+    "schoolWebsite": null
   },
   "dodson": {
     "name": "Dodson",
@@ -429,7 +534,10 @@
     "zipCode": "59524",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 128
+    "population": 128,
+    "schoolDistrict": "Dodson Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "drummond": {
     "name": "Drummond",
@@ -441,7 +549,10 @@
     "zipCode": "59832",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 272
+    "population": 272,
+    "schoolDistrict": "Drummond Public Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "dutton": {
     "name": "Dutton",
@@ -453,7 +564,10 @@
     "zipCode": "59433",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 318
+    "population": 318,
+    "schoolDistrict": "Dutton/Brady Public Schools",
+    "schoolEnrollment": 130,
+    "schoolWebsite": null
   },
   "east-glacier": {
     "name": "East Glacier",
@@ -465,7 +579,10 @@
     "zipCode": "59434",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 354
+    "population": 354,
+    "schoolDistrict": "East Glacier Park Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "east-helena": {
     "name": "East Helena",
@@ -477,7 +594,10 @@
     "zipCode": "59635",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2264
+    "population": 2264,
+    "schoolDistrict": "East Helena Public Schools",
+    "schoolEnrollment": 1200,
+    "schoolWebsite": "https://www.ehps.k12.mt.us"
   },
   "ekalaka": {
     "name": "Ekalaka",
@@ -489,7 +609,10 @@
     "zipCode": "59324",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 407
+    "population": 407,
+    "schoolDistrict": "Ekalaka Public Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "ennis": {
     "name": "Ennis",
@@ -501,7 +624,10 @@
     "zipCode": "59729",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 917
+    "population": 917,
+    "schoolDistrict": "Ennis Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "eureka": {
     "name": "Eureka",
@@ -513,7 +639,10 @@
     "zipCode": "59917",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1380
+    "population": 1380,
+    "schoolDistrict": "Lincoln County Schools - Eureka",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "fairfield": {
     "name": "Fairfield",
@@ -525,7 +654,10 @@
     "zipCode": "59436",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 805
+    "population": 805,
+    "schoolDistrict": "Fairfield Public Schools",
+    "schoolEnrollment": 250,
+    "schoolWebsite": null
   },
   "fairview": {
     "name": "Fairview",
@@ -537,7 +669,10 @@
     "zipCode": "59221",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 832
+    "population": 832,
+    "schoolDistrict": "Fairview Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "flaxville": {
     "name": "Flaxville",
@@ -549,7 +684,10 @@
     "zipCode": "59222",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 58
+    "population": 58,
+    "schoolDistrict": "Flaxville Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "forsyth": {
     "name": "Forsyth",
@@ -561,7 +699,10 @@
     "zipCode": "59327",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1630
+    "population": 1630,
+    "schoolDistrict": "Forsyth Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "fort-benton": {
     "name": "Fort Benton",
@@ -573,7 +714,10 @@
     "zipCode": "59442",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1449
+    "population": 1449,
+    "schoolDistrict": "Fort Benton Public Schools",
+    "schoolEnrollment": 250,
+    "schoolWebsite": null
   },
   "fort-peck": {
     "name": "Fort Peck",
@@ -585,7 +729,10 @@
     "zipCode": "59223",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 239
+    "population": 239,
+    "schoolDistrict": "Fort Peck Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "froid": {
     "name": "Froid",
@@ -597,7 +744,10 @@
     "zipCode": "59226",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 180
+    "population": 180,
+    "schoolDistrict": "Froid Public Schools",
+    "schoolEnrollment": 70,
+    "schoolWebsite": null
   },
   "fromberg": {
     "name": "Fromberg",
@@ -609,7 +759,10 @@
     "zipCode": "59029",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 392
+    "population": 392,
+    "schoolDistrict": "Fromberg Public Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "gardiner": {
     "name": "Gardiner",
@@ -621,7 +774,10 @@
     "zipCode": "59030",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 791
+    "population": 791,
+    "schoolDistrict": "Gardiner Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "geraldine": {
     "name": "Geraldine",
@@ -632,7 +788,10 @@
     "region": "Central",
     "zipCode": "59446",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Geraldine Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "glasgow": {
     "name": "Glasgow",
@@ -643,7 +802,10 @@
     "region": "Eastern",
     "zipCode": "59230",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Glasgow Public Schools",
+    "schoolEnrollment": 700,
+    "schoolWebsite": null
   },
   "glendive": {
     "name": "Glendive",
@@ -655,7 +817,10 @@
     "zipCode": "59330",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 4873
+    "population": 4873,
+    "schoolDistrict": "Glendive Public Schools",
+    "schoolEnrollment": 1000,
+    "schoolWebsite": null
   },
   "grass-range": {
     "name": "Grass Range",
@@ -666,7 +831,10 @@
     "region": "Central",
     "zipCode": "59032",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Grass Range Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "great-falls": {
     "name": "Great Falls",
@@ -678,7 +846,10 @@
     "zipCode": "59403",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 60000
+    "population": 60000,
+    "schoolDistrict": "Great Falls Public Schools",
+    "schoolEnrollment": 10000,
+    "schoolWebsite": "https://www.gfps.k12.mt.us"
   },
   "hamilton": {
     "name": "Hamilton",
@@ -690,7 +861,10 @@
     "zipCode": "59840",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 4659
+    "population": 4659,
+    "schoolDistrict": "Hamilton Public Schools",
+    "schoolEnrollment": 1800,
+    "schoolWebsite": null
   },
   "hardin": {
     "name": "Hardin",
@@ -701,7 +875,10 @@
     "region": "Eastern",
     "zipCode": "59034",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Hardin Public Schools",
+    "schoolEnrollment": 900,
+    "schoolWebsite": null
   },
   "harlem": {
     "name": "Harlem",
@@ -712,7 +889,10 @@
     "region": "Central",
     "zipCode": "59526",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Harlem Public Schools",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "harlowton": {
     "name": "Harlowton",
@@ -723,7 +903,10 @@
     "region": "Central",
     "zipCode": "59036",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Harlowton Public Schools",
+    "schoolEnrollment": 160,
+    "schoolWebsite": null
   },
   "havre": {
     "name": "Havre",
@@ -735,7 +918,10 @@
     "zipCode": "59501",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 9362
+    "population": 9362,
+    "schoolDistrict": "Havre Public Schools",
+    "schoolEnrollment": 1600,
+    "schoolWebsite": null
   },
   "helena": {
     "name": "Helena",
@@ -747,7 +933,10 @@
     "zipCode": "59601",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 33100
+    "population": 33100,
+    "schoolDistrict": "Helena Public Schools",
+    "schoolEnrollment": 7800,
+    "schoolWebsite": "https://www.helenaschools.org"
   },
   "hingham": {
     "name": "Hingham",
@@ -758,7 +947,10 @@
     "region": "Central",
     "zipCode": "59528",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Hingham Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "hobson": {
     "name": "Hobson",
@@ -769,7 +961,10 @@
     "region": "Central",
     "zipCode": "59452",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Hobson Public Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "hot-springs": {
     "name": "Hot Springs",
@@ -781,7 +976,10 @@
     "zipCode": "59845",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 557
+    "population": 557,
+    "schoolDistrict": "Hot Springs Public Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "hysham": {
     "name": "Hysham",
@@ -792,7 +990,10 @@
     "region": "Eastern",
     "zipCode": "59038",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Hysham Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "ismay": {
     "name": "Ismay",
@@ -803,7 +1004,10 @@
     "region": "Eastern",
     "zipCode": "59336",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Ismay Public Schools",
+    "schoolEnrollment": 10,
+    "schoolWebsite": null
   },
   "joliet": {
     "name": "Joliet",
@@ -814,7 +1018,10 @@
     "region": "Central",
     "zipCode": "59041",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Joliet Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "jordan": {
     "name": "Jordan",
@@ -825,7 +1032,10 @@
     "region": "Eastern",
     "zipCode": "59337",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Garfield County Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "judith-gap": {
     "name": "Judith Gap",
@@ -836,7 +1046,10 @@
     "region": "Central",
     "zipCode": "59453",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Judith Gap Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "kalispell": {
     "name": "Kalispell",
@@ -848,7 +1061,10 @@
     "zipCode": "59901",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 29886
+    "population": 29886,
+    "schoolDistrict": "Kalispell Public Schools",
+    "schoolEnrollment": 4200,
+    "schoolWebsite": "https://www.sd5.k12.mt.us"
   },
   "kevin": {
     "name": "Kevin",
@@ -859,7 +1075,10 @@
     "region": "Central",
     "zipCode": "59454",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Kevin Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "laurel": {
     "name": "Laurel",
@@ -870,7 +1089,10 @@
     "region": "Central",
     "zipCode": "59044",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Laurel Public Schools",
+    "schoolEnrollment": 1800,
+    "schoolWebsite": null
   },
   "lavina": {
     "name": "Lavina",
@@ -881,7 +1103,10 @@
     "region": "Central",
     "zipCode": "59046",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Lavina Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "lewistown": {
     "name": "Lewistown",
@@ -893,7 +1118,10 @@
     "zipCode": "59457",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 5952
+    "population": 5952,
+    "schoolDistrict": "Lewistown Public Schools",
+    "schoolEnrollment": 1200,
+    "schoolWebsite": null
   },
   "libby": {
     "name": "Libby",
@@ -905,7 +1133,10 @@
     "zipCode": "59923",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2775
+    "population": 2775,
+    "schoolDistrict": "Libby Public Schools",
+    "schoolEnrollment": 1100,
+    "schoolWebsite": null
   },
   "lima": {
     "name": "Lima",
@@ -916,7 +1147,10 @@
     "region": "Western",
     "zipCode": "59739",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Lima Public Schools",
+    "schoolEnrollment": 30,
+    "schoolWebsite": null
   },
   "livingston": {
     "name": "Livingston",
@@ -928,7 +1162,10 @@
     "zipCode": "59047",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 8040
+    "population": 8040,
+    "schoolDistrict": "Livingston Public Schools",
+    "schoolEnrollment": 1400,
+    "schoolWebsite": null
   },
   "lodge-grass": {
     "name": "Lodge Grass",
@@ -940,7 +1177,10 @@
     "zipCode": "59050",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 441
+    "population": 441,
+    "schoolDistrict": "Lodge Grass Public Schools",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "malta": {
     "name": "Malta",
@@ -951,7 +1191,10 @@
     "region": "Eastern",
     "zipCode": "59538",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Malta Public Schools",
+    "schoolEnrollment": 400,
+    "schoolWebsite": null
   },
   "manhattan": {
     "name": "Manhattan",
@@ -962,7 +1205,10 @@
     "region": "Central",
     "zipCode": "59741",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Manhattan Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "medicine-lake": {
     "name": "Medicine Lake",
@@ -973,7 +1219,10 @@
     "region": "Eastern",
     "zipCode": "59247",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Medicine Lake Public Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "melstone": {
     "name": "Melstone",
@@ -984,7 +1233,10 @@
     "region": "Eastern",
     "zipCode": "59054",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Melstone Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "miles-city": {
     "name": "Miles City",
@@ -996,7 +1248,10 @@
     "zipCode": "59301",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 8412
+    "population": 8412,
+    "schoolDistrict": "Miles City Public Schools",
+    "schoolEnrollment": 1400,
+    "schoolWebsite": null
   },
   "missoula": {
     "name": "Missoula",
@@ -1008,7 +1263,10 @@
     "zipCode": "59807",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 77757
+    "population": 77757,
+    "schoolDistrict": "Missoula County Public Schools",
+    "schoolEnrollment": 9000,
+    "schoolWebsite": "https://www.mcpsmt.org"
   },
   "moore": {
     "name": "Moore",
@@ -1019,7 +1277,10 @@
     "region": "Central",
     "zipCode": "59464",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Moore Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "nashua": {
     "name": "Nashua",
@@ -1030,7 +1291,10 @@
     "region": "Eastern",
     "zipCode": "59230",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Nashua Public Schools",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "neihart": {
     "name": "Neihart",
@@ -1041,7 +1305,10 @@
     "region": "Central",
     "zipCode": "59465",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Neihart Public Schools",
+    "schoolEnrollment": 10,
+    "schoolWebsite": null
   },
   "opheim": {
     "name": "Opheim",
@@ -1052,7 +1319,10 @@
     "region": "Eastern",
     "zipCode": "59250",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Opheim Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "outlook": {
     "name": "Outlook",
@@ -1063,7 +1333,10 @@
     "region": "Eastern",
     "zipCode": "59252",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Outlook Public Schools",
+    "schoolEnrollment": 20,
+    "schoolWebsite": null
   },
   "philipsburg": {
     "name": "Philipsburg",
@@ -1075,7 +1348,10 @@
     "zipCode": "59858",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 841
+    "population": 841,
+    "schoolDistrict": "Philipsburg K-12 Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "pinesdale": {
     "name": "Pinesdale",
@@ -1086,7 +1362,10 @@
     "region": "Western",
     "zipCode": "59841",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Pinesdale School District",
+    "schoolEnrollment": 80,
+    "schoolWebsite": null
   },
   "plains": {
     "name": "Plains",
@@ -1098,7 +1377,10 @@
     "zipCode": "59859",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1106
+    "population": 1106,
+    "schoolDistrict": "Plains Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "plentywood": {
     "name": "Plentywood",
@@ -1110,7 +1392,10 @@
     "zipCode": "59254",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1669
+    "population": 1669,
+    "schoolDistrict": "Plentywood Public Schools",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "plevna": {
     "name": "Plevna",
@@ -1121,7 +1406,10 @@
     "region": "Eastern",
     "zipCode": "59344",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Plevna Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "polson": {
     "name": "Polson",
@@ -1133,7 +1421,10 @@
     "zipCode": "59860",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 5148
+    "population": 5148,
+    "schoolDistrict": "Polson Public Schools",
+    "schoolEnrollment": 1400,
+    "schoolWebsite": null
   },
   "poplar": {
     "name": "Poplar",
@@ -1144,7 +1435,10 @@
     "region": "Eastern",
     "zipCode": "59255",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Poplar Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "red-lodge": {
     "name": "Red Lodge",
@@ -1156,7 +1450,10 @@
     "zipCode": "59068",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2399
+    "population": 2399,
+    "schoolDistrict": "Red Lodge Public Schools",
+    "schoolEnrollment": 400,
+    "schoolWebsite": null
   },
   "rexford": {
     "name": "Rexford",
@@ -1167,7 +1464,10 @@
     "region": "Western",
     "zipCode": "59930",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Rexford Public Schools",
+    "schoolEnrollment": 30,
+    "schoolWebsite": null
   },
   "richey": {
     "name": "Richey",
@@ -1178,7 +1478,10 @@
     "region": "Eastern",
     "zipCode": "59259",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Richey Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "ronan": {
     "name": "Ronan",
@@ -1190,7 +1493,10 @@
     "zipCode": "59864",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1955
+    "population": 1955,
+    "schoolDistrict": "Ronan Public Schools",
+    "schoolEnrollment": 900,
+    "schoolWebsite": null
   },
   "roundup": {
     "name": "Roundup",
@@ -1201,7 +1507,10 @@
     "region": "Central",
     "zipCode": "59072",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Roundup Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "ryegate": {
     "name": "Ryegate",
@@ -1212,7 +1521,10 @@
     "region": "Central",
     "zipCode": "59074",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Ryegate Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "saco": {
     "name": "Saco",
@@ -1223,7 +1535,10 @@
     "region": "Eastern",
     "zipCode": "59261",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Saco Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "scobey": {
     "name": "Scobey",
@@ -1234,7 +1549,10 @@
     "region": "Eastern",
     "zipCode": "59263",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Scobey Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "seeley-lake": {
     "name": "Seeley Lake",
@@ -1246,7 +1564,10 @@
     "zipCode": "59868",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1682
+    "population": 1682,
+    "schoolDistrict": "Seeley Lake Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "shelby": {
     "name": "Shelby",
@@ -1258,7 +1579,10 @@
     "zipCode": "59474",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 3169
+    "population": 3169,
+    "schoolDistrict": "Shelby Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "sheridan": {
     "name": "Sheridan",
@@ -1269,7 +1593,10 @@
     "region": "Eastern",
     "zipCode": "59211",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Sheridan Public Schools",
+    "schoolEnrollment": 200,
+    "schoolWebsite": null
   },
   "sidney": {
     "name": "Sidney",
@@ -1280,7 +1607,10 @@
     "region": "Eastern",
     "zipCode": "59270",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Sidney Public Schools",
+    "schoolEnrollment": 1200,
+    "schoolWebsite": null
   },
   "st-ignatius": {
     "name": "St. Ignatius",
@@ -1292,7 +1622,10 @@
     "zipCode": "59865",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 768
+    "population": 768,
+    "schoolDistrict": "St. Ignatius Public Schools",
+    "schoolEnrollment": 300,
+    "schoolWebsite": null
   },
   "stanford": {
     "name": "Stanford",
@@ -1303,7 +1636,10 @@
     "region": "Central",
     "zipCode": "59479",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Stanford Public Schools",
+    "schoolEnrollment": 100,
+    "schoolWebsite": null
   },
   "stevensville": {
     "name": "Stevensville",
@@ -1315,7 +1651,10 @@
     "zipCode": "59870",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1337
+    "population": 1337,
+    "schoolDistrict": "Stevensville Public Schools",
+    "schoolEnrollment": 900,
+    "schoolWebsite": null
   },
   "sunburst": {
     "name": "Sunburst",
@@ -1326,7 +1665,10 @@
     "region": "Central",
     "zipCode": "59842",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Sunburst Public Schools",
+    "schoolEnrollment": 60,
+    "schoolWebsite": null
   },
   "superior": {
     "name": "Superior",
@@ -1337,7 +1679,10 @@
     "region": "Western",
     "zipCode": "59872",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Superior Public Schools",
+    "schoolEnrollment": 250,
+    "schoolWebsite": null
   },
   "terry": {
     "name": "Terry",
@@ -1348,7 +1693,10 @@
     "region": "Eastern",
     "zipCode": "59349",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Terry Public Schools",
+    "schoolEnrollment": 120,
+    "schoolWebsite": null
   },
   "thompson-falls": {
     "name": "Thompson Falls",
@@ -1360,7 +1708,10 @@
     "zipCode": "59873",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1336
+    "population": 1336,
+    "schoolDistrict": "Thompson Falls Public Schools",
+    "schoolEnrollment": 450,
+    "schoolWebsite": null
   },
   "three-forks": {
     "name": "Three Forks",
@@ -1372,7 +1723,10 @@
     "zipCode": "59752",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1989
+    "population": 1989,
+    "schoolDistrict": "Three Forks Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "townsend": {
     "name": "Townsend",
@@ -1383,7 +1737,10 @@
     "region": "Central",
     "zipCode": "59644",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Townsend Public Schools",
+    "schoolEnrollment": 500,
+    "schoolWebsite": null
   },
   "troy": {
     "name": "Troy",
@@ -1395,7 +1752,10 @@
     "zipCode": "59935",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 985
+    "population": 985,
+    "schoolDistrict": "Troy Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "twin-bridges": {
     "name": "Twin Bridges",
@@ -1407,7 +1767,10 @@
     "zipCode": "59754",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 330
+    "population": 330,
+    "schoolDistrict": "Twin Bridges Public Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "valier": {
     "name": "Valier",
@@ -1418,7 +1781,10 @@
     "region": "Central",
     "zipCode": "59486",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Valier Public Schools",
+    "schoolEnrollment": 130,
+    "schoolWebsite": null
   },
   "virginia-city": {
     "name": "Virginia City",
@@ -1430,7 +1796,10 @@
     "zipCode": "59755",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 148
+    "population": 148,
+    "schoolDistrict": "Virginia City Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "walkerville": {
     "name": "Walkerville",
@@ -1441,7 +1810,10 @@
     "region": "Western",
     "zipCode": "59701",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Walkerville Public Schools",
+    "schoolEnrollment": 100,
+    "schoolWebsite": null
   },
   "west-glacier": {
     "name": "West Glacier",
@@ -1453,7 +1825,10 @@
     "zipCode": "59936",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 221
+    "population": 221,
+    "schoolDistrict": "West Glacier (Columbia Falls SD)",
+    "schoolEnrollment": null,
+    "schoolWebsite": null
   },
   "west-yellowstone": {
     "name": "West Yellowstone",
@@ -1465,7 +1840,10 @@
     "zipCode": "59758",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1272
+    "population": 1272,
+    "schoolDistrict": "West Yellowstone Public Schools",
+    "schoolEnrollment": 150,
+    "schoolWebsite": null
   },
   "westby": {
     "name": "Westby",
@@ -1476,7 +1854,10 @@
     "region": "Eastern",
     "zipCode": "59275",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Westby Public Schools",
+    "schoolEnrollment": 40,
+    "schoolWebsite": null
   },
   "white-sulphur-springs": {
     "name": "White Sulphur Springs",
@@ -1488,7 +1869,10 @@
     "zipCode": "59645",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 1046
+    "population": 1046,
+    "schoolDistrict": "White Sulphur Springs Schools",
+    "schoolEnrollment": 250,
+    "schoolWebsite": null
   },
   "whitefish": {
     "name": "Whitefish",
@@ -1500,7 +1884,10 @@
     "zipCode": "59937",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 8915
+    "population": 8915,
+    "schoolDistrict": "Whitefish School District",
+    "schoolEnrollment": 1800,
+    "schoolWebsite": "https://www.whitefishschools.org"
   },
   "whitehall": {
     "name": "Whitehall",
@@ -1511,7 +1898,10 @@
     "region": "Central",
     "zipCode": "59759",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Whitehall Public Schools",
+    "schoolEnrollment": 350,
+    "schoolWebsite": null
   },
   "wibaux": {
     "name": "Wibaux",
@@ -1522,7 +1912,10 @@
     "region": "Eastern",
     "zipCode": "59353",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Wibaux Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "winifred": {
     "name": "Winifred",
@@ -1533,7 +1926,10 @@
     "region": "Central",
     "zipCode": "59489",
     "areaCode": "406",
-    "timeZone": "Mountain Time (MT)"
+    "timeZone": "Mountain Time (MT)",
+    "schoolDistrict": "Winifred Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "winnett": {
     "name": "Winnett",
@@ -1545,7 +1941,10 @@
     "zipCode": "59087",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 201
+    "population": 201,
+    "schoolDistrict": "Winnett Public Schools",
+    "schoolEnrollment": 50,
+    "schoolWebsite": null
   },
   "wolf-point": {
     "name": "Wolf Point",
@@ -1557,6 +1956,9 @@
     "zipCode": "59201",
     "areaCode": "406",
     "timeZone": "Mountain Time (MT)",
-    "population": 2517
+    "population": 2517,
+    "schoolDistrict": "Wolf Point Public Schools",
+    "schoolEnrollment": 600,
+    "schoolWebsite": null
   }
 }

@@ -17,6 +17,7 @@ import StoreBanner from '../../components/StoreBanner';
 import TownQuickFacts from '../../components/TownQuickFacts';
 import ClimateTable from '../../components/ClimateTable';
 import NearbyRecreation from '../../components/NearbyRecreation';
+import SchoolInfo from '../../components/SchoolInfo';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -41,6 +42,9 @@ type TownFactsData = {
   areaCode?: string | null;
   timeZone?: string | null;
   population?: number | null;
+  schoolDistrict?: string | null;
+  schoolEnrollment?: number | null;
+  schoolWebsite?: string | null;
 };
 
 type MonthClimate = {
@@ -137,6 +141,7 @@ export default function TownPage({ slug, townName, contentHtml, description, aeo
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
+          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
@@ -233,6 +238,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     areaCode: rawFacts.areaCode || null,
     timeZone: rawFacts.timeZone || null,
     population: rawFacts.population || null,
+    schoolDistrict: rawFacts.schoolDistrict || null,
+    schoolEnrollment: rawFacts.schoolEnrollment || null,
+    schoolWebsite: rawFacts.schoolWebsite || null,
   } : null;
 
   let allClimateData: Record<string, { months: MonthClimate[] }> = {};
