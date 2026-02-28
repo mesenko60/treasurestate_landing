@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
@@ -144,6 +145,11 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
+          <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+            <Link href={`/compare?a=${slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
+              Compare {townName} with Another Town
+            </Link>
+          </div>
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
           <StoreBanner />

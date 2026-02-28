@@ -22,9 +22,9 @@ export default function MobileBottomNav() {
         <span>Towns</span>
       </Link>
       
-      <Link href="/planners" className={isActive('/planners') ? 'active' : ''}>
-        <div className="icon">📖</div>
-        <span>Guides</span>
+      <Link href="/compare" className={isActive('/compare') ? 'active' : ''}>
+        <div className="icon">⚖️</div>
+        <span>Compare</span>
       </Link>
       
       <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer">

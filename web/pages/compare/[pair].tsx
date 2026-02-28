@@ -9,9 +9,16 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
+type MonthClimate = {
+  month: string; avgHigh: number; avgLow: number; precipIn: number; snowIn?: number;
+};
+
+type RecPlace = { name: string; type: string; distMiles: number };
+
 type TownData = {
   name: string;
   slug: string;
+  nickname: string;
   elevation: number | null;
   county: string | null;
   region: string | null;
@@ -21,6 +28,11 @@ type TownData = {
   schoolEnrollment: number | null;
   nearestAirportMiles: number | null;
   nearestAirportName: string | null;
+  janHigh: number | null; janLow: number | null;
+  julHigh: number | null; julLow: number | null;
+  annualPrecip: string | null; annualSnow: string | null;
+  climateMonths: MonthClimate[] | null;
+  recreation: RecPlace[] | null;
 };
 
 type Props = {
@@ -44,8 +56,8 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
 }
 
 export default function ComparePage({ townA, townB }: Props) {
-  const title = `${townA.name} vs ${townB.name}, Montana - Side by Side Comparison`;
-  const metaDesc = `Compare ${townA.name} and ${townB.name}, Montana side by side. Population, elevation, climate, schools, and more.`;
+  const title = `${townA.name} vs ${townB.name}, Montana — Side by Side Comparison`;
+  const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side — population, climate, schools, recreation, and more.`;
   const url = `https://treasurestate.com/compare/${townA.slug}-vs-${townB.slug}/`;
 
   const breadcrumbs = [
@@ -74,45 +86,91 @@ export default function ComparePage({ townA, townB }: Props) {
         small
       />
 
-      <main>
+      <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 20px 4rem' }}>
         <section className="content-section">
-          <h2 style={{ textAlign: 'center' }}>{townA.name} vs {townB.name}</h2>
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+            {[townA, townB].map((t, i) => (
+              <div key={t.slug} style={{ flex: 1, minWidth: '200px', textAlign: 'center', padding: '1rem', background: i === 0 ? '#e8f0f3' : '#fdf0ef', borderRadius: '10px' }}>
+                <Link href={`/montana-towns/${t.slug}/`} style={{ textDecoration: 'none' }}>
+                  <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#204051' }}>{t.name}</div>
+                  <div style={{ fontSize: '0.9rem', color: '#666', fontStyle: 'italic' }}>{t.nickname}</div>
+                </Link>
+              </div>
+            ))}
+          </div>
+
           <p style={{ textAlign: 'center', color: '#666', marginBottom: '2rem' }}>
-            A side-by-side comparison of two Montana communities. Explore the key differences to help you decide which town is right for your visit or relocation.
+            A side-by-side comparison to help you decide which Montana community is right for you.
           </p>
 
           <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
               <thead>
-                <tr>
-                  <th style={{ padding: '0.8rem', borderBottom: '2px solid #204051', textAlign: 'left', color: '#204051' }}></th>
-                  <th style={{ padding: '0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#204051', fontSize: '1.1rem' }}>
-                    <Link href={`/montana-towns/${townA.slug}/`} style={{ color: '#3b6978', textDecoration: 'none' }}>{townA.name}</Link>
-                  </th>
-                  <th style={{ padding: '0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#204051', fontSize: '1.1rem' }}>
-                    <Link href={`/montana-towns/${townB.slug}/`} style={{ color: '#3b6978', textDecoration: 'none' }}>{townB.name}</Link>
-                  </th>
+                <tr style={{ background: '#f8f9fa' }}>
+                  <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'left', color: '#204051', width: '30%' }}>Overview</th>
+                  <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#3b6978', width: '35%' }}>{townA.name}</th>
+                  <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#c0392b', width: '35%' }}>{townB.name}</th>
                 </tr>
               </thead>
               <tbody>
-                <CompareRow label="Population" valA={townA.population?.toLocaleString() || 'N/A'} valB={townB.population?.toLocaleString() || 'N/A'} />
-                <CompareRow label="County" valA={townA.county || ''} valB={townB.county || ''} />
-                <CompareRow label="Region" valA={townA.region ? `${townA.region} MT` : ''} valB={townB.region ? `${townB.region} MT` : ''} />
-                <CompareRow label="Elevation" valA={townA.elevation ? `${townA.elevation.toLocaleString()} ft` : ''} valB={townB.elevation ? `${townB.elevation.toLocaleString()} ft` : ''} />
-                <CompareRow label="Zip Code" valA={townA.zipCode || ''} valB={townB.zipCode || ''} />
-                <CompareRow label="Nearest Airport" valA={townA.nearestAirportMiles != null ? `${townA.nearestAirportName} (${townA.nearestAirportMiles} mi)` : ''} valB={townB.nearestAirportMiles != null ? `${townB.nearestAirportName} (${townB.nearestAirportMiles} mi)` : ''} />
-                <CompareRow label="School District" valA={townA.schoolDistrict || ''} valB={townB.schoolDistrict || ''} />
-                <CompareRow label="School Enrollment" valA={townA.schoolEnrollment ? `~${townA.schoolEnrollment.toLocaleString()}` : ''} valB={townB.schoolEnrollment ? `~${townB.schoolEnrollment.toLocaleString()}` : ''} />
+                <CompareRow label="Population" valA={townA.population?.toLocaleString() || '—'} valB={townB.population?.toLocaleString() || '—'} />
+                <CompareRow label="Elevation" valA={townA.elevation ? `${townA.elevation.toLocaleString()} ft` : '—'} valB={townB.elevation ? `${townB.elevation.toLocaleString()} ft` : '—'} />
+                <CompareRow label="County" valA={townA.county || '—'} valB={townB.county || '—'} />
+                <CompareRow label="Region" valA={townA.region ? `${townA.region} Montana` : '—'} valB={townB.region ? `${townB.region} Montana` : '—'} />
+
+                <tr style={{ background: '#f8f9fa' }}>
+                  <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Climate</td>
+                </tr>
+                <CompareRow label="January Avg High" valA={townA.janHigh != null ? `${townA.janHigh}°F` : '—'} valB={townB.janHigh != null ? `${townB.janHigh}°F` : '—'} />
+                <CompareRow label="January Avg Low" valA={townA.janLow != null ? `${townA.janLow}°F` : '—'} valB={townB.janLow != null ? `${townB.janLow}°F` : '—'} />
+                <CompareRow label="July Avg High" valA={townA.julHigh != null ? `${townA.julHigh}°F` : '—'} valB={townB.julHigh != null ? `${townB.julHigh}°F` : '—'} />
+                <CompareRow label="July Avg Low" valA={townA.julLow != null ? `${townA.julLow}°F` : '—'} valB={townB.julLow != null ? `${townB.julLow}°F` : '—'} />
+                <CompareRow label="Annual Precipitation" valA={townA.annualPrecip ? `${townA.annualPrecip}"` : '—'} valB={townB.annualPrecip ? `${townB.annualPrecip}"` : '—'} />
+                <CompareRow label="Annual Snowfall" valA={townA.annualSnow ? `${townA.annualSnow}"` : '—'} valB={townB.annualSnow ? `${townB.annualSnow}"` : '—'} />
+
+                <tr style={{ background: '#f8f9fa' }}>
+                  <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Access &amp; Education</td>
+                </tr>
+                <CompareRow label="Nearest Airport" valA={townA.nearestAirportMiles != null ? `${townA.nearestAirportName} (${townA.nearestAirportMiles} mi)` : '—'} valB={townB.nearestAirportMiles != null ? `${townB.nearestAirportName} (${townB.nearestAirportMiles} mi)` : '—'} />
+                <CompareRow label="Zip Code" valA={townA.zipCode || '—'} valB={townB.zipCode || '—'} />
+                <CompareRow label="School District" valA={townA.schoolDistrict || '—'} valB={townB.schoolDistrict || '—'} />
+                <CompareRow label="Enrollment" valA={townA.schoolEnrollment ? `~${townA.schoolEnrollment.toLocaleString()}` : '—'} valB={townB.schoolEnrollment ? `~${townB.schoolEnrollment.toLocaleString()}` : '—'} />
               </tbody>
             </table>
           </div>
 
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem', flexWrap: 'wrap' }}>
+          {/* Nearby recreation */}
+          {(townA.recreation || townB.recreation) && (
+            <div style={{ marginTop: '2rem' }}>
+              <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem', textAlign: 'center' }}>Nearby Outdoor Recreation</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                {[townA, townB].map((town, idx) => (
+                  <div key={town.slug}>
+                    <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.95rem', textAlign: 'center' }}>{town.name}</div>
+                    {town.recreation?.map((p, i) => (
+                      <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.35rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.85rem' }}>
+                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', marginRight: '0.5rem' }}>{p.name}</span>
+                        <span style={{ color: '#888', flexShrink: 0 }}>{p.distMiles} mi</span>
+                      </div>
+                    )) || <div style={{ color: '#999', fontSize: '0.85rem', textAlign: 'center' }}>No data</div>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2.5rem', flexWrap: 'wrap' }}>
             <Link href={`/montana-towns/${townA.slug}/`} style={{ padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600 }}>
-              Learn More About {townA.name}
+              Explore {townA.name}
             </Link>
-            <Link href={`/montana-towns/${townB.slug}/`} style={{ padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600 }}>
-              Learn More About {townB.name}
+            <Link href={`/montana-towns/${townB.slug}/`} style={{ padding: '0.75rem 1.5rem', background: '#c0392b', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600 }}>
+              Explore {townB.name}
+            </Link>
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <Link href="/compare/" style={{ color: '#3b6978', fontWeight: 500 }}>
+              ← Compare different towns
             </Link>
           </div>
         </section>
@@ -190,14 +248,17 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const slugA = parts[0];
   const slugB = parts[1];
 
-  const townDataPath = path.resolve(process.cwd(), 'data', 'town-data.json');
-  const airportPath = path.resolve(process.cwd(), 'data', 'town-airport-distances.json');
+  const dataDir = path.resolve(process.cwd(), 'data');
+  const load = (file: string) => {
+    const p = path.join(dataDir, file);
+    return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
+  };
 
-  const townData = JSON.parse(fs.readFileSync(townDataPath, 'utf8'));
-  let airportData: Record<string, Record<string, { distanceMiles: number }>> = {};
-  if (fs.existsSync(airportPath)) {
-    airportData = JSON.parse(fs.readFileSync(airportPath, 'utf8'));
-  }
+  const townData = load('town-data.json');
+  const airportData = load('town-airport-distances.json');
+  const climateData = load('town-climate.json');
+  const recData = load('town-recreation.json');
+  const nicknames = load('town-nicknames.json');
 
   function buildTown(slug: string): TownData {
     const d = townData[slug] || {};
@@ -205,16 +266,18 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     let nearestAirportMiles: number | null = null;
     let nearestAirportName: string | null = null;
     if (airports) {
-      for (const [code, info] of Object.entries(airports)) {
+      for (const [code, info] of Object.entries(airports) as [string, any][]) {
         if (nearestAirportMiles === null || info.distanceMiles < nearestAirportMiles) {
           nearestAirportMiles = info.distanceMiles;
           nearestAirportName = AIRPORT_NAMES[code] || code;
         }
       }
     }
+    const months = climateData[slug]?.months as MonthClimate[] | undefined;
     return {
       name: d.name || slug,
       slug,
+      nickname: nicknames[slug] || 'A Montana Community',
       elevation: d.elevation || null,
       county: d.county || null,
       region: d.region || null,
@@ -224,6 +287,14 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       schoolEnrollment: d.schoolEnrollment || null,
       nearestAirportMiles,
       nearestAirportName,
+      janHigh: months?.[0]?.avgHigh ?? null,
+      janLow: months?.[0]?.avgLow ?? null,
+      julHigh: months?.[6]?.avgHigh ?? null,
+      julLow: months?.[6]?.avgLow ?? null,
+      annualPrecip: months ? months.reduce((s, m) => s + m.precipIn, 0).toFixed(1) : null,
+      annualSnow: months ? months.reduce((s, m) => s + (m.snowIn || 0), 0).toFixed(1) : null,
+      climateMonths: months || null,
+      recreation: recData[slug]?.places?.slice(0, 4) || null,
     };
   }
 

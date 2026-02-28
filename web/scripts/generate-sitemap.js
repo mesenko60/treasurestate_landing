@@ -29,6 +29,7 @@ function url(loc, lastmod = new Date()) {
   // Core pages
   entries.push(url(`${baseUrl}/`));
   entries.push(url(`${baseUrl}/Montana-towns/`));
+  entries.push(url(`${baseUrl}/compare/`));
   entries.push(url(`${baseUrl}/planners/`));
   entries.push(url(`${baseUrl}/planners/montana-backroads/`));
   entries.push(url(`${baseUrl}/planners/hot-springs-guide/`));
