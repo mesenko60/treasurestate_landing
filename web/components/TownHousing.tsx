@@ -2,19 +2,35 @@ type Props = {
   medianHomeValue: number | null;
   medianRent: number | null;
   medianHouseholdIncome: number | null;
+  zillowHomeValue: number | null;
+  zillowHomeValueDate: string | null;
+  zillowRent: number | null;
+  zillowRentDate: string | null;
 };
 
-export default function TownHousing({ medianHomeValue, medianRent, medianHouseholdIncome }: Props) {
-  if (!medianHomeValue && !medianRent && !medianHouseholdIncome) return null;
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
+export default function TownHousing({
+  medianHomeValue, medianRent, medianHouseholdIncome,
+  zillowHomeValue, zillowHomeValueDate, zillowRent, zillowRentDate,
+}: Props) {
+  if (!medianHomeValue && !medianRent && !medianHouseholdIncome && !zillowHomeValue) return null;
+
+  const displayHomeValue = zillowHomeValue || medianHomeValue;
+  const displayRent = zillowRent || medianRent;
 
   const affordabilityRatio =
-    medianHomeValue && medianHouseholdIncome
-      ? (medianHomeValue / medianHouseholdIncome).toFixed(1)
+    displayHomeValue && medianHouseholdIncome
+      ? (displayHomeValue / medianHouseholdIncome).toFixed(1)
       : null;
 
   const rentBurden =
-    medianRent && medianHouseholdIncome
-      ? ((medianRent * 12) / medianHouseholdIncome * 100).toFixed(0)
+    displayRent && medianHouseholdIncome
+      ? ((displayRent * 12) / medianHouseholdIncome * 100).toFixed(0)
       : null;
 
   return (
@@ -22,23 +38,43 @@ export default function TownHousing({ medianHomeValue, medianRent, medianHouseho
       <h3 style={{ margin: '0 0 1rem', color: '#204051', fontSize: '1.15rem' }}>
         Housing &amp; Cost of Living
       </h3>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>
-        {medianHomeValue && (
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+        {/* Home Value */}
+        {displayHomeValue && (
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#3b6978' }}>
-              ${medianHomeValue.toLocaleString()}
+              ${displayHomeValue.toLocaleString()}
             </div>
-            <div style={{ fontSize: '0.82rem', color: '#666' }}>Median Home Value</div>
+            <div style={{ fontSize: '0.82rem', color: '#666' }}>
+              {zillowHomeValue ? 'Typical Home Value' : 'Median Home Value'}
+            </div>
+            {zillowHomeValue && medianHomeValue && (
+              <div style={{ fontSize: '0.72rem', color: '#999', marginTop: '2px' }}>
+                Census (2019–23): ${medianHomeValue.toLocaleString()}
+              </div>
+            )}
           </div>
         )}
-        {medianRent && (
+
+        {/* Rent */}
+        {displayRent && (
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#3b6978' }}>
-              ${medianRent.toLocaleString()}<span style={{ fontSize: '0.9rem', fontWeight: 400 }}>/mo</span>
+              ${displayRent.toLocaleString()}<span style={{ fontSize: '0.9rem', fontWeight: 400 }}>/mo</span>
             </div>
-            <div style={{ fontSize: '0.82rem', color: '#666' }}>Median Rent</div>
+            <div style={{ fontSize: '0.82rem', color: '#666' }}>
+              {zillowRent ? 'Typical Rent' : 'Median Rent'}
+            </div>
+            {zillowRent && medianRent && (
+              <div style={{ fontSize: '0.72rem', color: '#999', marginTop: '2px' }}>
+                Census (2019–23): ${medianRent.toLocaleString()}/mo
+              </div>
+            )}
           </div>
         )}
+
+        {/* Income */}
         {medianHouseholdIncome && (
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#3b6978' }}>
@@ -70,8 +106,13 @@ export default function TownHousing({ medianHomeValue, medianRent, medianHouseho
         </div>
       )}
 
-      <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center' }}>
-        Source: U.S. Census Bureau, American Community Survey 5-Year Estimates (2019–2023)
+      <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center', lineHeight: 1.6 }}>
+        {zillowHomeValue && (
+          <>Home value data from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Home Value Index</a> ({formatDate(zillowHomeValueDate)}). </>
+        )}
+        {medianHouseholdIncome && (
+          <>Income{!zillowHomeValue && medianHomeValue ? ' and home value' : ''} from U.S. Census Bureau, ACS 5-Year Estimates (2019–2023).</>
+        )}
       </div>
     </section>
   );

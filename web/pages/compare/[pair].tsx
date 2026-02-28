@@ -31,6 +31,9 @@ type TownData = {
   medianHomeValue: number | null;
   medianRent: number | null;
   medianHouseholdIncome: number | null;
+  zillowHomeValue: number | null;
+  zillowHomeValueDate: string | null;
+  zillowRent: number | null;
   janHigh: number | null; janLow: number | null;
   julHigh: number | null; julLow: number | null;
   annualPrecip: string | null; annualSnow: string | null;
@@ -148,8 +151,8 @@ export default function ComparePage({ townA, townB }: Props) {
                 <tr style={{ background: '#f8f9fa' }}>
                   <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living <span style={{ fontWeight: 400, fontSize: '0.75rem', color: '#888' }}>(ACS 2019–2023)</span></td>
                 </tr>
-                <CompareRow label="Median Home Value" valA={townA.medianHomeValue ? `$${townA.medianHomeValue.toLocaleString()}` : '—'} valB={townB.medianHomeValue ? `$${townB.medianHomeValue.toLocaleString()}` : '—'} />
-                <CompareRow label="Median Rent" valA={townA.medianRent ? `$${townA.medianRent.toLocaleString()}/mo` : '—'} valB={townB.medianRent ? `$${townB.medianRent.toLocaleString()}/mo` : '—'} />
+                <CompareRow label={townA.zillowHomeValue || townB.zillowHomeValue ? 'Typical Home Value' : 'Median Home Value'} valA={(townA.zillowHomeValue || townA.medianHomeValue) ? `$${(townA.zillowHomeValue || townA.medianHomeValue)!.toLocaleString()}` : '—'} valB={(townB.zillowHomeValue || townB.medianHomeValue) ? `$${(townB.zillowHomeValue || townB.medianHomeValue)!.toLocaleString()}` : '—'} />
+                <CompareRow label={townA.zillowRent || townB.zillowRent ? 'Typical Rent' : 'Median Rent'} valA={(townA.zillowRent || townA.medianRent) ? `$${(townA.zillowRent || townA.medianRent)!.toLocaleString()}/mo` : '—'} valB={(townB.zillowRent || townB.medianRent) ? `$${(townB.zillowRent || townB.medianRent)!.toLocaleString()}/mo` : '—'} />
                 <CompareRow label="Median Household Income" valA={townA.medianHouseholdIncome ? `$${townA.medianHouseholdIncome.toLocaleString()}` : '—'} valB={townB.medianHouseholdIncome ? `$${townB.medianHouseholdIncome.toLocaleString()}` : '—'} />
 
                 <tr style={{ background: '#f8f9fa' }}>
@@ -321,6 +324,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       medianHomeValue: housingData[slug]?.medianHomeValue || null,
       medianRent: housingData[slug]?.medianRent || null,
       medianHouseholdIncome: housingData[slug]?.medianHouseholdIncome || null,
+      zillowHomeValue: housingData[slug]?.zillowHomeValue || null,
+      zillowHomeValueDate: housingData[slug]?.zillowHomeValueDate || null,
+      zillowRent: housingData[slug]?.zillowRent || null,
       janHigh: months?.[0]?.avgHigh ?? null,
       janLow: months?.[0]?.avgLow ?? null,
       julHigh: months?.[6]?.avgHigh ?? null,

@@ -46,6 +46,9 @@ type TownEntry = {
   medianHomeValue: number | null;
   medianRent: number | null;
   medianHouseholdIncome: number | null;
+  zillowHomeValue: number | null;
+  zillowHomeValueDate: string | null;
+  zillowRent: number | null;
   climate: ClimateSummary | null;
   recreation: RecPlace[] | null;
 };
@@ -364,18 +367,18 @@ export default function CompareTool({ towns }: Props) {
                   />
 
                   <tr style={{ background: '#f8f9fa' }}>
-                    <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living <span style={{ fontWeight: 400, fontSize: '0.75rem', color: '#888' }}>(ACS 2019–2023)</span></td>
+                    <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living</td>
                   </tr>
                   <CompareRow
-                    label="Median Home Value"
-                    valA={townA.medianHomeValue ? `$${townA.medianHomeValue.toLocaleString()}` : '—'}
-                    valB={townB.medianHomeValue ? `$${townB.medianHomeValue.toLocaleString()}` : '—'}
+                    label={townA.zillowHomeValue || townB.zillowHomeValue ? 'Typical Home Value' : 'Median Home Value'}
+                    valA={(townA.zillowHomeValue || townA.medianHomeValue) ? `$${(townA.zillowHomeValue || townA.medianHomeValue)!.toLocaleString()}` : '—'}
+                    valB={(townB.zillowHomeValue || townB.medianHomeValue) ? `$${(townB.zillowHomeValue || townB.medianHomeValue)!.toLocaleString()}` : '—'}
                     highlightLower
                   />
                   <CompareRow
-                    label="Median Rent"
-                    valA={townA.medianRent ? `$${townA.medianRent.toLocaleString()}/mo` : '—'}
-                    valB={townB.medianRent ? `$${townB.medianRent.toLocaleString()}/mo` : '—'}
+                    label={townA.zillowRent || townB.zillowRent ? 'Typical Rent' : 'Median Rent'}
+                    valA={(townA.zillowRent || townA.medianRent) ? `$${(townA.zillowRent || townA.medianRent)!.toLocaleString()}/mo` : '—'}
+                    valB={(townB.zillowRent || townB.medianRent) ? `$${(townB.zillowRent || townB.medianRent)!.toLocaleString()}/mo` : '—'}
                     highlightLower
                   />
                   <CompareRow
@@ -560,6 +563,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         medianHomeValue: housingData[slug]?.medianHomeValue || null,
         medianRent: housingData[slug]?.medianRent || null,
         medianHouseholdIncome: housingData[slug]?.medianHouseholdIncome || null,
+        zillowHomeValue: housingData[slug]?.zillowHomeValue || null,
+        zillowHomeValueDate: housingData[slug]?.zillowHomeValueDate || null,
+        zillowRent: housingData[slug]?.zillowRent || null,
         climate,
         recreation: recData[slug]?.places || null,
       };

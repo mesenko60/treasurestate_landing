@@ -76,7 +76,11 @@ type Props = {
   townFacts: TownFactsData | null;
   climateMonths: MonthClimate[] | null;
   recreationPlaces: RecreationPlace[] | null;
-  housing: { medianHomeValue: number | null; medianRent: number | null; medianHouseholdIncome: number | null } | null;
+  housing: {
+    medianHomeValue: number | null; medianRent: number | null; medianHouseholdIncome: number | null;
+    zillowHomeValue: number | null; zillowHomeValueDate: string | null;
+    zillowRent: number | null; zillowRentDate: string | null;
+  } | null;
 };
 
 export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing }: Props) {
@@ -145,7 +149,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
-          {housing && <TownHousing medianHomeValue={housing.medianHomeValue} medianRent={housing.medianRent} medianHouseholdIncome={housing.medianHouseholdIncome} />}
+          {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -300,6 +304,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     medianHomeValue: rawHousing.medianHomeValue || null,
     medianRent: rawHousing.medianRent || null,
     medianHouseholdIncome: rawHousing.medianHouseholdIncome || null,
+    zillowHomeValue: rawHousing.zillowHomeValue || null,
+    zillowHomeValueDate: rawHousing.zillowHomeValueDate || null,
+    zillowRent: rawHousing.zillowRent || null,
+    zillowRentDate: rawHousing.zillowRentDate || null,
   } : null;
 
   return { 
