@@ -18,6 +18,7 @@ type MonthClimate = {
 };
 
 type RecPlace = { name: string; type: string; distMiles: number };
+type RecSummary = { total: number; byCategory: { type: string; count: number }[]; highlights: RecPlace[] };
 
 type ClimateSummary = {
   janHigh: number; janLow: number;
@@ -50,7 +51,7 @@ type TownEntry = {
   zillowHomeValueDate: string | null;
   zillowRent: number | null;
   climate: ClimateSummary | null;
-  recreation: RecPlace[] | null;
+  recreation: RecSummary | null;
 };
 
 type Props = {
@@ -69,7 +70,9 @@ const REC_ICONS: Record<string, string> = {
   'National Park': '🏔️', 'National Forest': '🌲', 'Wilderness': '🏕️',
   'State Park': '🌳', 'Lake': '🏞️', 'River': '🎣', 'Hot Spring': '♨️',
   'Ski Area': '⛷️', 'Scenic Drive': '🛣️', 'Wildlife Refuge': '🦅',
-  'Historic Site': '🏛️', 'National Rec Area': '🏞️', 'Golf': '⛳', 'Museum': '🏛️',
+  'Historic Site': '📜', 'National Rec Area': '🏞️', 'Golf': '⛳', 'Museum': '🏛️',
+  'Campground': '⛺', 'Trailhead': '🥾', 'Waterfall': '💧',
+  'Fishing Access': '🐟', 'Boat Launch': '🚣', 'Viewpoint': '👀',
 };
 
 const REC_COLORS: Record<string, string> = {
@@ -77,6 +80,8 @@ const REC_COLORS: Record<string, string> = {
   'State Park': '#5a8f3c', 'Lake': '#3b6978', 'River': '#2980b9', 'Hot Spring': '#c0392b',
   'Ski Area': '#5b6abf', 'Scenic Drive': '#d68910', 'Wildlife Refuge': '#7d6608',
   'Historic Site': '#8b4513', 'National Rec Area': '#2e86ab', 'Golf': '#27ae60', 'Museum': '#6c3483',
+  'Campground': '#6b8e23', 'Trailhead': '#8b6914', 'Waterfall': '#2e86ab',
+  'Fishing Access': '#2471a3', 'Boat Launch': '#1a5276', 'Viewpoint': '#a04000',
 };
 
 function Indicator({ better }: { better: boolean | null }) {
@@ -424,14 +429,48 @@ export default function CompareTool({ towns }: Props) {
             {/* Nearby recreation comparison */}
             {(townA.recreation || townB.recreation) && (
               <div style={{ marginTop: '2rem' }}>
-                <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem', textAlign: 'center' }}>
-                  Outdoor Recreation &amp; Attractions
+                <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>
+                  Outdoor Recreation &amp; Attractions (within 50 mi)
                 </h3>
+                <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#888', margin: '0 0 1rem' }}>
+                  {townA.name}: {townA.recreation?.total || 0} sites | {townB.name}: {townB.recreation?.total || 0} sites
+                </p>
+
+                {/* Category breakdown */}
+                <div style={{ overflowX: 'auto', marginBottom: '1rem' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
+                    <thead>
+                      <tr style={{ borderBottom: '2px solid #204051' }}>
+                        <th style={{ textAlign: 'left', padding: '0.4rem 0.6rem', color: '#204051' }}>Category</th>
+                        <th style={{ textAlign: 'center', padding: '0.4rem 0.6rem', color: '#3b6978' }}>{townA.name}</th>
+                        <th style={{ textAlign: 'center', padding: '0.4rem 0.6rem', color: '#c0392b' }}>{townB.name}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(() => {
+                        const allTypes = new Set<string>();
+                        townA.recreation?.byCategory.forEach(c => allTypes.add(c.type));
+                        townB.recreation?.byCategory.forEach(c => allTypes.add(c.type));
+                        const catA = Object.fromEntries(townA.recreation?.byCategory.map(c => [c.type, c.count]) || []);
+                        const catB = Object.fromEntries(townB.recreation?.byCategory.map(c => [c.type, c.count]) || []);
+                        return Array.from(allTypes).sort().map(type => (
+                          <tr key={type} style={{ borderBottom: '1px solid #eee' }}>
+                            <td style={{ padding: '0.35rem 0.6rem' }}>{REC_ICONS[type] || '📍'} {type}</td>
+                            <td style={{ textAlign: 'center', padding: '0.35rem', fontWeight: (catA[type] || 0) >= (catB[type] || 0) ? 600 : 400, color: (catA[type] || 0) >= (catB[type] || 0) ? '#3b6978' : '#888' }}>{catA[type] || '—'}</td>
+                            <td style={{ textAlign: 'center', padding: '0.35rem', fontWeight: (catB[type] || 0) >= (catA[type] || 0) ? 600 : 400, color: (catB[type] || 0) >= (catA[type] || 0) ? '#c0392b' : '#888' }}>{catB[type] || '—'}</td>
+                          </tr>
+                        ));
+                      })()}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Top highlights */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                   {[townA, townB].map((town, idx) => (
                     <div key={town.slug}>
-                      <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.95rem', textAlign: 'center' }}>{town.name}</div>
-                      {town.recreation?.map((p, i) => (
+                      <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>Top Highlights</div>
+                      {town.recreation?.highlights.map((p, i) => (
                         <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem' }}>
                           <span style={{ flexShrink: 0 }}>{REC_ICONS[p.type] || '📍'}</span>
                           <div style={{ minWidth: 0, flex: 1 }}>
@@ -570,7 +609,25 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         zillowHomeValueDate: housingData[slug]?.zillowHomeValueDate || null,
         zillowRent: housingData[slug]?.zillowRent || null,
         climate,
-        recreation: recData[slug]?.places || null,
+        recreation: (() => {
+          const places: RecPlace[] = recData[slug]?.places || [];
+          if (!places.length) return null;
+          const byCategory: Record<string, number> = {};
+          for (const p of places) byCategory[p.type] = (byCategory[p.type] || 0) + 1;
+          const sorted = Object.entries(byCategory).sort((a, b) => b[1] - a[1]).map(([type, count]) => ({ type, count }));
+          // Pick diverse highlights: 1 per category, then fill by distance
+          const highlights: RecPlace[] = [];
+          const usedTypes = new Set<string>();
+          for (const p of places) {
+            if (highlights.length >= 8) break;
+            if (!usedTypes.has(p.type)) { highlights.push(p); usedTypes.add(p.type); }
+          }
+          for (const p of places) {
+            if (highlights.length >= 8) break;
+            if (!highlights.find(h => h.name === p.name)) highlights.push(p);
+          }
+          return { total: places.length, byCategory: sorted, highlights };
+        })(),
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name));

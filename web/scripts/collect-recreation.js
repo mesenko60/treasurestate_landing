@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Comprehensive Montana recreation sites database
-const RECREATION_SITES = [
+const CURATED_SITES = [
   // === NATIONAL PARKS ===
   { name: 'Glacier National Park', type: 'National Park', lat: 48.7596, lng: -113.7870 },
   { name: 'Yellowstone National Park', type: 'National Park', lat: 44.4280, lng: -110.5885 },
@@ -30,7 +29,7 @@ const RECREATION_SITES = [
   { name: 'Welcome Creek Wilderness', type: 'Wilderness', lat: 46.6500, lng: -113.5000 },
   { name: 'Gates of the Mountains Wilderness', type: 'Wilderness', lat: 46.8500, lng: -111.8500 },
 
-  // === STATE PARKS (expanded from 6 to 30+) ===
+  // === STATE PARKS ===
   { name: 'Makoshika State Park', type: 'State Park', lat: 47.0900, lng: -104.6881 },
   { name: 'Lewis and Clark Caverns', type: 'State Park', lat: 45.8333, lng: -111.8667 },
   { name: 'Giant Springs State Park', type: 'State Park', lat: 47.5189, lng: -111.2153 },
@@ -143,7 +142,6 @@ const RECREATION_SITES = [
   { name: 'Teton Pass Ski Area', type: 'Ski Area', lat: 47.8100, lng: -112.5300 },
   { name: 'Turner Mountain', type: 'Ski Area', lat: 48.3100, lng: -115.3200 },
   { name: 'Bear Paw Ski Bowl', type: 'Ski Area', lat: 48.0300, lng: -109.6400 },
-  { name: 'Montana Snowbowl', type: 'Ski Area', lat: 47.0170, lng: -114.1500 },
 
   // === SCENIC DRIVES ===
   { name: 'Beartooth Highway', type: 'Scenic Drive', lat: 45.0100, lng: -109.4300 },
@@ -193,7 +191,7 @@ const RECREATION_SITES = [
   { name: 'Big Sky Golf Course', type: 'Golf', lat: 45.2700, lng: -111.3700 },
   { name: 'Hamilton Golf Club', type: 'Golf', lat: 46.2600, lng: -114.1500 },
 
-  // === MUSEUMS ===
+  // === MUSEUMS (curated top-tier) ===
   { name: 'Museum of the Rockies', type: 'Museum', lat: 45.6603, lng: -111.0485 },
   { name: 'C.M. Russell Museum', type: 'Museum', lat: 47.5062, lng: -111.2774 },
   { name: 'World Museum of Mining', type: 'Museum', lat: 46.0200, lng: -112.5400 },
@@ -208,59 +206,103 @@ const RECREATION_SITES = [
   { name: 'Miracle of America Museum', type: 'Museum', lat: 47.6930, lng: -114.1500 },
 ];
 
+const RADIUS_MILES = 50;
+const MIN_SITES = 8;
+const EXTENDED_RADIUS = 75;
+
 function haversineMiles(lat1, lon1, lat2, lon2) {
   const R = 3959;
   const dLat = (lat2 - lat1) * Math.PI / 180;
   const dLon = (lon2 - lon1) * Math.PI / 180;
-  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLon/2)**2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 function buildRecreation() {
   const coordsPath = path.resolve(__dirname, '..', 'data', 'town-coordinates.json');
+  const osmPath = path.resolve(__dirname, '..', 'data', 'osm-recreation-sites.json');
   const outPath = path.resolve(__dirname, '..', 'data', 'town-recreation.json');
 
   const coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
+  const osmSites = JSON.parse(fs.readFileSync(osmPath, 'utf8'));
+
+  // Merge curated + OSM, curated wins on name collisions
+  const allSites = [...CURATED_SITES];
+  const seenNames = new Set(CURATED_SITES.map(s => s.name.toLowerCase().trim()));
+
+  const TYPE_MAP = {
+    'Golf Course': 'Golf',
+    'Nature Reserve': 'Wildlife Refuge',
+    'Picnic Area': 'Campground',
+    'Visitor Center': 'Museum',
+    'Swimming Area': 'Lake',
+  };
+
+  for (const osm of osmSites) {
+    const key = osm.name.toLowerCase().trim();
+    if (!seenNames.has(key)) {
+      seenNames.add(key);
+      const type = TYPE_MAP[osm.type] || osm.type;
+      allSites.push({ ...osm, type });
+    }
+  }
+
+  console.log(`Merged database: ${allSites.length} total sites (${CURATED_SITES.length} curated + ${allSites.length - CURATED_SITES.length} from OSM)`);
+
   const results = {};
+  let totalPlaces = 0;
+  let minPlaces = Infinity;
+  let maxPlaces = 0;
+  let minTown = '';
+  let maxTown = '';
 
   for (const [slug, town] of Object.entries(coordinates)) {
-    const all = RECREATION_SITES.map(site => ({
+    const all = allSites.map(site => ({
       name: site.name,
       type: site.type,
       distMiles: Math.round(haversineMiles(town.lat, town.lng, site.lat, site.lng)),
     }))
-    .sort((a, b) => a.distMiles - b.distMiles);
+      .sort((a, b) => a.distMiles - b.distMiles);
 
-    // Pick top 10 with diversity: ensure at least one from each available category
-    const picked = [];
-    const usedTypes = new Set();
-    // First pass: pick closest of each type
-    for (const p of all) {
-      if (picked.length >= 10) break;
-      if (!usedTypes.has(p.type)) {
-        picked.push(p);
-        usedTypes.add(p.type);
-      }
-    }
-    // Second pass: fill remaining with closest overall
-    for (const p of all) {
-      if (picked.length >= 10) break;
-      if (!picked.find(x => x.name === p.name)) {
-        picked.push(p);
-      }
-    }
-    picked.sort((a, b) => a.distMiles - b.distMiles);
+    // Take everything within the radius
+    let nearby = all.filter(p => p.distMiles <= RADIUS_MILES);
 
-    results[slug] = { name: town.name, places: picked };
+    // If too few results, extend the radius
+    if (nearby.length < MIN_SITES) {
+      nearby = all.filter(p => p.distMiles <= EXTENDED_RADIUS);
+    }
+
+    // Still ensure at least MIN_SITES by taking closest if needed
+    if (nearby.length < MIN_SITES) {
+      nearby = all.slice(0, MIN_SITES);
+    }
+
+    totalPlaces += nearby.length;
+    if (nearby.length < minPlaces) { minPlaces = nearby.length; minTown = slug; }
+    if (nearby.length > maxPlaces) { maxPlaces = nearby.length; maxTown = slug; }
+
+    results[slug] = { name: town.name, places: nearby };
   }
 
   fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
-  console.log(`Recreation data built for ${Object.keys(results).length} towns.`);
-  
-  // Show sample
-  console.log('\nSample - Missoula:');
-  if (results.missoula) {
-    results.missoula.places.forEach(p => console.log(`  ${p.name}: ${p.distMiles} mi`));
+
+  const townCount = Object.keys(results).length;
+  console.log(`\nRecreation data built for ${townCount} towns.`);
+  console.log(`Average sites per town: ${Math.round(totalPlaces / townCount)}`);
+  console.log(`Min: ${minPlaces} (${minTown}), Max: ${maxPlaces} (${maxTown})`);
+
+  // Show a few samples
+  for (const sample of ['missoula', 'bozeman', 'glendive', 'whitefish']) {
+    if (results[sample]) {
+      console.log(`\n${sample}: ${results[sample].places.length} sites`);
+      const byType = {};
+      for (const p of results[sample].places) {
+        byType[p.type] = (byType[p.type] || 0) + 1;
+      }
+      for (const [t, c] of Object.entries(byType).sort((a, b) => b[1] - a[1])) {
+        console.log(`  ${t}: ${c}`);
+      }
+    }
   }
 }
 
