@@ -28,6 +28,9 @@ type TownData = {
   schoolEnrollment: number | null;
   nearestAirportMiles: number | null;
   nearestAirportName: string | null;
+  medianHomeValue: number | null;
+  medianRent: number | null;
+  medianHouseholdIncome: number | null;
   janHigh: number | null; janLow: number | null;
   julHigh: number | null; julLow: number | null;
   annualPrecip: string | null; annualSnow: string | null;
@@ -127,6 +130,13 @@ export default function ComparePage({ townA, townB }: Props) {
                 <CompareRow label="July Avg Low" valA={townA.julLow != null ? `${townA.julLow}°F` : '—'} valB={townB.julLow != null ? `${townB.julLow}°F` : '—'} />
                 <CompareRow label="Annual Precipitation" valA={townA.annualPrecip ? `${townA.annualPrecip}"` : '—'} valB={townB.annualPrecip ? `${townB.annualPrecip}"` : '—'} />
                 <CompareRow label="Annual Snowfall" valA={townA.annualSnow ? `${townA.annualSnow}"` : '—'} valB={townB.annualSnow ? `${townB.annualSnow}"` : '—'} />
+
+                <tr style={{ background: '#f8f9fa' }}>
+                  <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living</td>
+                </tr>
+                <CompareRow label="Median Home Value" valA={townA.medianHomeValue ? `$${townA.medianHomeValue.toLocaleString()}` : '—'} valB={townB.medianHomeValue ? `$${townB.medianHomeValue.toLocaleString()}` : '—'} />
+                <CompareRow label="Median Rent" valA={townA.medianRent ? `$${townA.medianRent.toLocaleString()}/mo` : '—'} valB={townB.medianRent ? `$${townB.medianRent.toLocaleString()}/mo` : '—'} />
+                <CompareRow label="Median Household Income" valA={townA.medianHouseholdIncome ? `$${townA.medianHouseholdIncome.toLocaleString()}` : '—'} valB={townB.medianHouseholdIncome ? `$${townB.medianHouseholdIncome.toLocaleString()}` : '—'} />
 
                 <tr style={{ background: '#f8f9fa' }}>
                   <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Access &amp; Education</td>
@@ -259,6 +269,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const climateData = load('town-climate.json');
   const recData = load('town-recreation.json');
   const nicknames = load('town-nicknames.json');
+  const housingData = load('town-housing.json');
 
   function buildTown(slug: string): TownData {
     const d = townData[slug] || {};
@@ -287,6 +298,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       schoolEnrollment: d.schoolEnrollment || null,
       nearestAirportMiles,
       nearestAirportName,
+      medianHomeValue: housingData[slug]?.medianHomeValue || null,
+      medianRent: housingData[slug]?.medianRent || null,
+      medianHouseholdIncome: housingData[slug]?.medianHouseholdIncome || null,
       janHigh: months?.[0]?.avgHigh ?? null,
       janLow: months?.[0]?.avgLow ?? null,
       julHigh: months?.[6]?.avgHigh ?? null,

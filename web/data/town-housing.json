@@ -1,0 +1,940 @@
+{
+  "alberton": {
+    "name": "Alberton",
+    "medianHomeValue": 247000,
+    "medianRent": 1161,
+    "medianHouseholdIncome": 71250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "anaconda": {
+    "name": "Anaconda",
+    "medianHomeValue": 209700,
+    "medianRent": 661,
+    "medianHouseholdIncome": 49533,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "bainville": {
+    "name": "Bainville",
+    "medianHomeValue": null,
+    "medianRent": 739,
+    "medianHouseholdIncome": 115000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "baker": {
+    "name": "Baker",
+    "medianHomeValue": 198800,
+    "medianRent": 772,
+    "medianHouseholdIncome": 78971,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "bearcreek": {
+    "name": "Bearcreek",
+    "medianHomeValue": 191700,
+    "medianRent": 840,
+    "medianHouseholdIncome": 111500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "belgrade": {
+    "name": "Belgrade",
+    "medianHomeValue": 469600,
+    "medianRent": 1582,
+    "medianHouseholdIncome": 88896,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "belt": {
+    "name": "Belt",
+    "medianHomeValue": 170500,
+    "medianRent": 910,
+    "medianHouseholdIncome": 72083,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "big-sandy": {
+    "name": "Big Sandy",
+    "medianHomeValue": 129600,
+    "medianRent": 620,
+    "medianHouseholdIncome": 58083,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "big-sky": {
+    "name": "Big Sky",
+    "medianHomeValue": 884700,
+    "medianRent": 1712,
+    "medianHouseholdIncome": 103625,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "big-timber": {
+    "name": "Big Timber",
+    "medianHomeValue": 235100,
+    "medianRent": 1009,
+    "medianHouseholdIncome": 63514,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "bigfork": {
+    "name": "Bigfork",
+    "medianHomeValue": 614300,
+    "medianRent": 1103,
+    "medianHouseholdIncome": 82648,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "billings": {
+    "name": "Billings",
+    "medianHomeValue": 311800,
+    "medianRent": 1097,
+    "medianHouseholdIncome": 71855,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "boulder": {
+    "name": "Boulder",
+    "medianHomeValue": 194800,
+    "medianRent": 692,
+    "medianHouseholdIncome": 61250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "bozeman": {
+    "name": "Bozeman",
+    "medianHomeValue": 614900,
+    "medianRent": 1611,
+    "medianHouseholdIncome": 79903,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "bridger": {
+    "name": "Bridger",
+    "medianHomeValue": 807700,
+    "medianRent": null,
+    "medianHouseholdIncome": 136154,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "broadus": {
+    "name": "Broadus",
+    "medianHomeValue": 155900,
+    "medianRent": 588,
+    "medianHouseholdIncome": 54792,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "broadview": {
+    "name": "Broadview",
+    "medianHomeValue": 148800,
+    "medianRent": null,
+    "medianHouseholdIncome": 66250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "browning": {
+    "name": "Browning",
+    "medianHomeValue": 121100,
+    "medianRent": 617,
+    "medianHouseholdIncome": 34318,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "butte": {
+    "name": "Butte",
+    "medianHomeValue": 225100,
+    "medianRent": 808,
+    "medianHouseholdIncome": 57633,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "cascade": {
+    "name": "Cascade",
+    "medianHomeValue": 186500,
+    "medianRent": 844,
+    "medianHouseholdIncome": 48750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "chester": {
+    "name": "Chester",
+    "medianHomeValue": 156900,
+    "medianRent": 662,
+    "medianHouseholdIncome": 53583,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "chinook": {
+    "name": "Chinook",
+    "medianHomeValue": 205900,
+    "medianRent": 811,
+    "medianHouseholdIncome": 71500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "choteau": {
+    "name": "Choteau",
+    "medianHomeValue": 194900,
+    "medianRent": 713,
+    "medianHouseholdIncome": 53929,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "circle": {
+    "name": "Circle",
+    "medianHomeValue": 161100,
+    "medianRent": 545,
+    "medianHouseholdIncome": 81250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "clyde-park": {
+    "name": "Clyde Park",
+    "medianHomeValue": 237500,
+    "medianRent": 1012,
+    "medianHouseholdIncome": 57813,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "colstrip": {
+    "name": "Colstrip",
+    "medianHomeValue": 193700,
+    "medianRent": 632,
+    "medianHouseholdIncome": 86000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "columbia-falls": {
+    "name": "Columbia Falls",
+    "medianHomeValue": 346700,
+    "medianRent": 1003,
+    "medianHouseholdIncome": 65313,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "columbus": {
+    "name": "Columbus",
+    "medianHomeValue": 264000,
+    "medianRent": 926,
+    "medianHouseholdIncome": 62500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "conrad": {
+    "name": "Conrad",
+    "medianHomeValue": 158400,
+    "medianRent": 888,
+    "medianHouseholdIncome": 47348,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "culbertson": {
+    "name": "Culbertson",
+    "medianHomeValue": 218800,
+    "medianRent": 1044,
+    "medianHouseholdIncome": 103750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "cut-bank": {
+    "name": "Cut Bank",
+    "medianHomeValue": 161400,
+    "medianRent": 921,
+    "medianHouseholdIncome": 55848,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "darby": {
+    "name": "Darby",
+    "medianHomeValue": 263200,
+    "medianRent": 883,
+    "medianHouseholdIncome": 40943,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "deer-lodge": {
+    "name": "Deer Lodge",
+    "medianHomeValue": 196400,
+    "medianRent": 781,
+    "medianHouseholdIncome": 53676,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "denton": {
+    "name": "Denton",
+    "medianHomeValue": 118800,
+    "medianRent": 1058,
+    "medianHouseholdIncome": 57500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "dillon": {
+    "name": "Dillon",
+    "medianHomeValue": 237500,
+    "medianRent": 821,
+    "medianHouseholdIncome": 51458,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "dodson": {
+    "name": "Dodson",
+    "medianHomeValue": 44700,
+    "medianRent": null,
+    "medianHouseholdIncome": 41172,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "drummond": {
+    "name": "Drummond",
+    "medianHomeValue": 210000,
+    "medianRent": 608,
+    "medianHouseholdIncome": 44375,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "dutton": {
+    "name": "Dutton",
+    "medianHomeValue": 129500,
+    "medianRent": 788,
+    "medianHouseholdIncome": 55469,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "east-glacier": {
+    "name": "East Glacier",
+    "medianHomeValue": 170800,
+    "medianRent": 867,
+    "medianHouseholdIncome": 37500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "east-helena": {
+    "name": "East Helena",
+    "medianHomeValue": 254400,
+    "medianRent": 1020,
+    "medianHouseholdIncome": 53611,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "ekalaka": {
+    "name": "Ekalaka",
+    "medianHomeValue": 118300,
+    "medianRent": 678,
+    "medianHouseholdIncome": 45417,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "ennis": {
+    "name": "Ennis",
+    "medianHomeValue": 402300,
+    "medianRent": 805,
+    "medianHouseholdIncome": 60880,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "eureka": {
+    "name": "Eureka",
+    "medianHomeValue": 172300,
+    "medianRent": 1012,
+    "medianHouseholdIncome": 43750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "fairfield": {
+    "name": "Fairfield",
+    "medianHomeValue": 203000,
+    "medianRent": 683,
+    "medianHouseholdIncome": 66544,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "fairview": {
+    "name": "Fairview",
+    "medianHomeValue": 178800,
+    "medianRent": 689,
+    "medianHouseholdIncome": 80903,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "flaxville": {
+    "name": "Flaxville",
+    "medianHomeValue": 98200,
+    "medianRent": null,
+    "medianHouseholdIncome": 102727,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "forsyth": {
+    "name": "Forsyth",
+    "medianHomeValue": 185100,
+    "medianRent": 743,
+    "medianHouseholdIncome": 58375,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "fort-benton": {
+    "name": "Fort Benton",
+    "medianHomeValue": 201900,
+    "medianRent": 745,
+    "medianHouseholdIncome": 67171,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "fort-peck": {
+    "name": "Fort Peck",
+    "medianHomeValue": 272400,
+    "medianRent": null,
+    "medianHouseholdIncome": 88333,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "froid": {
+    "name": "Froid",
+    "medianHomeValue": 85000,
+    "medianRent": null,
+    "medianHouseholdIncome": 70750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "fromberg": {
+    "name": "Fromberg",
+    "medianHomeValue": 176400,
+    "medianRent": 873,
+    "medianHouseholdIncome": 59028,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "gardiner": {
+    "name": "Gardiner",
+    "medianHomeValue": 609200,
+    "medianRent": 795,
+    "medianHouseholdIncome": 57835,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "geraldine": {
+    "name": "Geraldine",
+    "medianHomeValue": 73300,
+    "medianRent": 572,
+    "medianHouseholdIncome": 42639,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "glasgow": {
+    "name": "Glasgow",
+    "medianHomeValue": 206000,
+    "medianRent": 794,
+    "medianHouseholdIncome": 76985,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "glendive": {
+    "name": "Glendive",
+    "medianHomeValue": 176900,
+    "medianRent": 832,
+    "medianHouseholdIncome": 71063,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "grass-range": {
+    "name": "Grass Range",
+    "medianHomeValue": null,
+    "medianRent": 900,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "great-falls": {
+    "name": "Great Falls",
+    "medianHomeValue": 237400,
+    "medianRent": 866,
+    "medianHouseholdIncome": 63934,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hamilton": {
+    "name": "Hamilton",
+    "medianHomeValue": 299800,
+    "medianRent": 958,
+    "medianHouseholdIncome": 52917,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hardin": {
+    "name": "Hardin",
+    "medianHomeValue": 142800,
+    "medianRent": 726,
+    "medianHouseholdIncome": 60463,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "harlem": {
+    "name": "Harlem",
+    "medianHomeValue": 89700,
+    "medianRent": 770,
+    "medianHouseholdIncome": 74545,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "harlowton": {
+    "name": "Harlowton",
+    "medianHomeValue": 178800,
+    "medianRent": 766,
+    "medianHouseholdIncome": 53750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "havre": {
+    "name": "Havre",
+    "medianHomeValue": 197600,
+    "medianRent": 802,
+    "medianHouseholdIncome": 58000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "helena": {
+    "name": "Helena",
+    "medianHomeValue": 355100,
+    "medianRent": 1058,
+    "medianHouseholdIncome": 69341,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hingham": {
+    "name": "Hingham",
+    "medianHomeValue": 93800,
+    "medianRent": null,
+    "medianHouseholdIncome": 85000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hobson": {
+    "name": "Hobson",
+    "medianHomeValue": 112500,
+    "medianRent": 619,
+    "medianHouseholdIncome": 34750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hot-springs": {
+    "name": "Hot Springs",
+    "medianHomeValue": 139100,
+    "medianRent": 683,
+    "medianHouseholdIncome": 21319,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "hysham": {
+    "name": "Hysham",
+    "medianHomeValue": 117500,
+    "medianRent": 594,
+    "medianHouseholdIncome": 46000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "ismay": {
+    "name": "Ismay",
+    "medianHomeValue": null,
+    "medianRent": null,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "joliet": {
+    "name": "Joliet",
+    "medianHomeValue": 237100,
+    "medianRent": null,
+    "medianHouseholdIncome": 75469,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "jordan": {
+    "name": "Jordan",
+    "medianHomeValue": 110200,
+    "medianRent": 835,
+    "medianHouseholdIncome": 43594,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "judith-gap": {
+    "name": "Judith Gap",
+    "medianHomeValue": 106500,
+    "medianRent": 525,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "kalispell": {
+    "name": "Kalispell",
+    "medianHomeValue": 381400,
+    "medianRent": 1019,
+    "medianHouseholdIncome": 61590,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "kevin": {
+    "name": "Kevin",
+    "medianHomeValue": 60800,
+    "medianRent": null,
+    "medianHouseholdIncome": 35625,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "laurel": {
+    "name": "Laurel",
+    "medianHomeValue": 232700,
+    "medianRent": 953,
+    "medianHouseholdIncome": 66382,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "lavina": {
+    "name": "Lavina",
+    "medianHomeValue": 123600,
+    "medianRent": 725,
+    "medianHouseholdIncome": 66875,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "lewistown": {
+    "name": "Lewistown",
+    "medianHomeValue": 159500,
+    "medianRent": 896,
+    "medianHouseholdIncome": 44195,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "libby": {
+    "name": "Libby",
+    "medianHomeValue": 218500,
+    "medianRent": 679,
+    "medianHouseholdIncome": 39261,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "lima": {
+    "name": "Lima",
+    "medianHomeValue": 183100,
+    "medianRent": null,
+    "medianHouseholdIncome": 53906,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "livingston": {
+    "name": "Livingston",
+    "medianHomeValue": 348700,
+    "medianRent": 987,
+    "medianHouseholdIncome": 65187,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "lodge-grass": {
+    "name": "Lodge Grass",
+    "medianHomeValue": null,
+    "medianRent": 635,
+    "medianHouseholdIncome": 50000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "malta": {
+    "name": "Malta",
+    "medianHomeValue": 139000,
+    "medianRent": 693,
+    "medianHouseholdIncome": 59449,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "manhattan": {
+    "name": "Manhattan",
+    "medianHomeValue": 460400,
+    "medianRent": 1700,
+    "medianHouseholdIncome": 69671,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "medicine-lake": {
+    "name": "Medicine Lake",
+    "medianHomeValue": 95000,
+    "medianRent": 492,
+    "medianHouseholdIncome": 41000,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "melstone": {
+    "name": "Melstone",
+    "medianHomeValue": null,
+    "medianRent": null,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "miles-city": {
+    "name": "Miles City",
+    "medianHomeValue": 182700,
+    "medianRent": 932,
+    "medianHouseholdIncome": 60732,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "missoula": {
+    "name": "Missoula",
+    "medianHomeValue": 427400,
+    "medianRent": 1120,
+    "medianHouseholdIncome": 65329,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "moore": {
+    "name": "Moore",
+    "medianHomeValue": 180200,
+    "medianRent": 805,
+    "medianHouseholdIncome": 45972,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "nashua": {
+    "name": "Nashua",
+    "medianHomeValue": 140300,
+    "medianRent": 675,
+    "medianHouseholdIncome": 72500,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "neihart": {
+    "name": "Neihart",
+    "medianHomeValue": 205600,
+    "medianRent": null,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "opheim": {
+    "name": "Opheim",
+    "medianHomeValue": 49400,
+    "medianRent": null,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "outlook": {
+    "name": "Outlook",
+    "medianHomeValue": 103100,
+    "medianRent": null,
+    "medianHouseholdIncome": 50313,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "philipsburg": {
+    "name": "Philipsburg",
+    "medianHomeValue": 304200,
+    "medianRent": 871,
+    "medianHouseholdIncome": 40096,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "pinesdale": {
+    "name": "Pinesdale",
+    "medianHomeValue": 198100,
+    "medianRent": 1292,
+    "medianHouseholdIncome": 70694,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "plains": {
+    "name": "Plains",
+    "medianHomeValue": 209200,
+    "medianRent": 782,
+    "medianHouseholdIncome": 24661,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "plentywood": {
+    "name": "Plentywood",
+    "medianHomeValue": 148800,
+    "medianRent": 755,
+    "medianHouseholdIncome": 62163,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "plevna": {
+    "name": "Plevna",
+    "medianHomeValue": 304300,
+    "medianRent": null,
+    "medianHouseholdIncome": 73750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "polson": {
+    "name": "Polson",
+    "medianHomeValue": 321000,
+    "medianRent": 921,
+    "medianHouseholdIncome": 51463,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "poplar": {
+    "name": "Poplar",
+    "medianHomeValue": 91700,
+    "medianRent": 680,
+    "medianHouseholdIncome": 45104,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "red-lodge": {
+    "name": "Red Lodge",
+    "medianHomeValue": 374900,
+    "medianRent": 805,
+    "medianHouseholdIncome": 43857,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "rexford": {
+    "name": "Rexford",
+    "medianHomeValue": 135700,
+    "medianRent": null,
+    "medianHouseholdIncome": 48875,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "richey": {
+    "name": "Richey",
+    "medianHomeValue": 105600,
+    "medianRent": 455,
+    "medianHouseholdIncome": 66250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "ronan": {
+    "name": "Ronan",
+    "medianHomeValue": 201700,
+    "medianRent": 798,
+    "medianHouseholdIncome": 41429,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "roundup": {
+    "name": "Roundup",
+    "medianHomeValue": 118300,
+    "medianRent": 886,
+    "medianHouseholdIncome": 57632,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "ryegate": {
+    "name": "Ryegate",
+    "medianHomeValue": 126900,
+    "medianRent": 820,
+    "medianHouseholdIncome": 48750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "saco": {
+    "name": "Saco",
+    "medianHomeValue": 64400,
+    "medianRent": 900,
+    "medianHouseholdIncome": 51250,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "scobey": {
+    "name": "Scobey",
+    "medianHomeValue": 184800,
+    "medianRent": 585,
+    "medianHouseholdIncome": 49797,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "seeley-lake": {
+    "name": "Seeley Lake",
+    "medianHomeValue": 270400,
+    "medianRent": 1028,
+    "medianHouseholdIncome": 46031,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "shelby": {
+    "name": "Shelby",
+    "medianHomeValue": 206000,
+    "medianRent": 769,
+    "medianHouseholdIncome": 53357,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "sheridan": {
+    "name": "Sheridan",
+    "medianHomeValue": 298600,
+    "medianRent": null,
+    "medianHouseholdIncome": 83264,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "sidney": {
+    "name": "Sidney",
+    "medianHomeValue": 249100,
+    "medianRent": 890,
+    "medianHouseholdIncome": 62992,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "st-ignatius": {
+    "name": "St. Ignatius",
+    "medianHomeValue": 194200,
+    "medianRent": 792,
+    "medianHouseholdIncome": 50781,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "stanford": {
+    "name": "Stanford",
+    "medianHomeValue": 170100,
+    "medianRent": 425,
+    "medianHouseholdIncome": 52045,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "stevensville": {
+    "name": "Stevensville",
+    "medianHomeValue": 336500,
+    "medianRent": 1013,
+    "medianHouseholdIncome": 52745,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "sunburst": {
+    "name": "Sunburst",
+    "medianHomeValue": 135600,
+    "medianRent": 1042,
+    "medianHouseholdIncome": 80938,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "superior": {
+    "name": "Superior",
+    "medianHomeValue": 260300,
+    "medianRent": 682,
+    "medianHouseholdIncome": 43750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "terry": {
+    "name": "Terry",
+    "medianHomeValue": 104300,
+    "medianRent": null,
+    "medianHouseholdIncome": 36154,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "thompson-falls": {
+    "name": "Thompson Falls",
+    "medianHomeValue": 182200,
+    "medianRent": 575,
+    "medianHouseholdIncome": 53203,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "three-forks": {
+    "name": "Three Forks",
+    "medianHomeValue": 382400,
+    "medianRent": 1263,
+    "medianHouseholdIncome": 80394,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "townsend": {
+    "name": "Townsend",
+    "medianHomeValue": 212800,
+    "medianRent": 976,
+    "medianHouseholdIncome": 70774,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "troy": {
+    "name": "Troy",
+    "medianHomeValue": 182100,
+    "medianRent": 573,
+    "medianHouseholdIncome": 36641,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "twin-bridges": {
+    "name": "Twin Bridges",
+    "medianHomeValue": 220800,
+    "medianRent": null,
+    "medianHouseholdIncome": 52292,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "valier": {
+    "name": "Valier",
+    "medianHomeValue": 124300,
+    "medianRent": 780,
+    "medianHouseholdIncome": 44432,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "virginia-city": {
+    "name": "Virginia City",
+    "medianHomeValue": 288600,
+    "medianRent": 875,
+    "medianHouseholdIncome": null,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "walkerville": {
+    "name": "Walkerville",
+    "medianHomeValue": 147200,
+    "medianRent": 1065,
+    "medianHouseholdIncome": 44226,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "west-glacier": {
+    "name": "West Glacier",
+    "medianHomeValue": 565500,
+    "medianRent": 800,
+    "medianHouseholdIncome": 87344,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "west-yellowstone": {
+    "name": "West Yellowstone",
+    "medianHomeValue": 402600,
+    "medianRent": 1035,
+    "medianHouseholdIncome": 57167,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "westby": {
+    "name": "Westby",
+    "medianHomeValue": 61900,
+    "medianRent": 575,
+    "medianHouseholdIncome": 24583,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "white-sulphur-springs": {
+    "name": "White Sulphur Springs",
+    "medianHomeValue": 231700,
+    "medianRent": 940,
+    "medianHouseholdIncome": 56424,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "whitefish": {
+    "name": "Whitefish",
+    "medianHomeValue": 648200,
+    "medianRent": 1313,
+    "medianHouseholdIncome": 71110,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "whitehall": {
+    "name": "Whitehall",
+    "medianHomeValue": 180600,
+    "medianRent": 689,
+    "medianHouseholdIncome": 38750,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "wibaux": {
+    "name": "Wibaux",
+    "medianHomeValue": 89400,
+    "medianRent": 931,
+    "medianHouseholdIncome": 64115,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "winifred": {
+    "name": "Winifred",
+    "medianHomeValue": null,
+    "medianRent": 557,
+    "medianHouseholdIncome": 75089,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "winnett": {
+    "name": "Winnett",
+    "medianHomeValue": 117500,
+    "medianRent": null,
+    "medianHouseholdIncome": 66875,
+    "source": "US Census ACS 2023 (5-year)"
+  },
+  "wolf-point": {
+    "name": "Wolf Point",
+    "medianHomeValue": 124600,
+    "medianRent": 730,
+    "medianHouseholdIncome": 48750,
+    "source": "US Census ACS 2023 (5-year)"
+  }
+}

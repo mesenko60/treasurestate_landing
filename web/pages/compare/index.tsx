@@ -43,6 +43,9 @@ type TownEntry = {
   schoolEnrollment: number | null;
   nearestAirport: string | null;
   nearestAirportMiles: number | null;
+  medianHomeValue: number | null;
+  medianRent: number | null;
+  medianHouseholdIncome: number | null;
   climate: ClimateSummary | null;
   recreation: RecPlace[] | null;
 };
@@ -347,6 +350,28 @@ export default function CompareTool({ towns }: Props) {
                   />
 
                   <tr style={{ background: '#f8f9fa' }}>
+                    <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living</td>
+                  </tr>
+                  <CompareRow
+                    label="Median Home Value"
+                    valA={townA.medianHomeValue ? `$${townA.medianHomeValue.toLocaleString()}` : '—'}
+                    valB={townB.medianHomeValue ? `$${townB.medianHomeValue.toLocaleString()}` : '—'}
+                    highlightLower
+                  />
+                  <CompareRow
+                    label="Median Rent"
+                    valA={townA.medianRent ? `$${townA.medianRent.toLocaleString()}/mo` : '—'}
+                    valB={townB.medianRent ? `$${townB.medianRent.toLocaleString()}/mo` : '—'}
+                    highlightLower
+                  />
+                  <CompareRow
+                    label="Median Household Income"
+                    valA={townA.medianHouseholdIncome ? `$${townA.medianHouseholdIncome.toLocaleString()}` : '—'}
+                    valB={townB.medianHouseholdIncome ? `$${townB.medianHouseholdIncome.toLocaleString()}` : '—'}
+                    highlightHigher
+                  />
+
+                  <tr style={{ background: '#f8f9fa' }}>
                     <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Access &amp; Location</td>
                   </tr>
                   <CompareRow
@@ -466,6 +491,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const airportData = load('town-airport-distances.json');
   const nicknames = load('town-nicknames.json');
   const coords = load('town-coordinates.json');
+  const housingData = load('town-housing.json');
 
   const towns: TownEntry[] = Object.keys(coords)
     .map(slug => {
@@ -511,6 +537,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         schoolEnrollment: d.schoolEnrollment || null,
         nearestAirport,
         nearestAirportMiles,
+        medianHomeValue: housingData[slug]?.medianHomeValue || null,
+        medianRent: housingData[slug]?.medianRent || null,
+        medianHouseholdIncome: housingData[slug]?.medianHouseholdIncome || null,
         climate,
         recreation: recData[slug]?.places?.slice(0, 4) || null,
       };

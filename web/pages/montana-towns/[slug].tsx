@@ -19,6 +19,7 @@ import TownQuickFacts from '../../components/TownQuickFacts';
 import ClimateTable from '../../components/ClimateTable';
 import NearbyRecreation from '../../components/NearbyRecreation';
 import SchoolInfo from '../../components/SchoolInfo';
+import TownHousing from '../../components/TownHousing';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
 
@@ -75,9 +76,10 @@ type Props = {
   townFacts: TownFactsData | null;
   climateMonths: MonthClimate[] | null;
   recreationPlaces: RecreationPlace[] | null;
+  housing: { medianHomeValue: number | null; medianRent: number | null; medianHouseholdIncome: number | null } | null;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing }: Props) {
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana — ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -143,6 +145,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
+          {housing && <TownHousing medianHomeValue={housing.medianHomeValue} medianRent={housing.medianRent} medianHouseholdIncome={housing.medianHouseholdIncome} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -283,6 +286,22 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   }
   const recreationPlaces = allRecreation[slug]?.places || null;
 
+  let allHousingData: Record<string, any> = {};
+  try {
+    const housingPath = path.resolve(process.cwd(), 'data', 'town-housing.json');
+    if (fs.existsSync(housingPath)) {
+      allHousingData = JSON.parse(fs.readFileSync(housingPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load housing data", e);
+  }
+  const rawHousing = allHousingData[slug];
+  const housing = rawHousing ? {
+    medianHomeValue: rawHousing.medianHomeValue || null,
+    medianRent: rawHousing.medianRent || null,
+    medianHouseholdIncome: rawHousing.medianHouseholdIncome || null,
+  } : null;
+
   return { 
     props: { 
       slug, 
@@ -297,7 +316,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       airportDistances,
       townFacts,
       climateMonths,
-      recreationPlaces
+      recreationPlaces,
+      housing
     } 
   };
 };
