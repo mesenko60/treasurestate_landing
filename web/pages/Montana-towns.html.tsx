@@ -39,6 +39,11 @@ export default function TownsIndex({ towns }: { towns: any[] }) {
         <link rel="canonical" href="https://treasurestate.com/Montana-towns/" />
         <title>Montana Cities and Towns - Treasure State</title>
         <meta name="description" content="Browse Montana cities and towns. Find guides, things to do, and lodging." />
+        <meta property="og:title" content="Montana Cities and Towns - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta property="og:url" content="https://treasurestate.com/Montana-towns/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <Hero title="Montana Cities and Towns" subtitle="Explore communities across Big Sky Country" image="/images/hero-image.jpg" alt="Montana" small />

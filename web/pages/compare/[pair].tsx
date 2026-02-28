@@ -130,7 +130,13 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
         <meta name="description" content={metaDesc} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="article" />
         <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDesc} />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(compareSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>

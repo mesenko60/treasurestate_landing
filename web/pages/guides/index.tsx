@@ -44,6 +44,11 @@ export default function GuidesIndex({ guides }: Props) {
         <meta property="og:description" content="Everything you need to know about moving to Montana." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Montana Relocation Guides" />
+        <meta name="twitter:description" content="Everything you need to know about moving to Montana." />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </Head>
       <Header />

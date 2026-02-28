@@ -89,7 +89,9 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
         <meta property="og:description" content={guide.metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:title" content={guide.title} />
         <meta name="twitter:description" content={guide.metaDescription} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />

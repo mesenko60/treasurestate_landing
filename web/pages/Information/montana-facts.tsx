@@ -14,6 +14,11 @@ export default function MontanaFacts() {
         <title>Montana Facts - Treasure State</title>
         <meta name="description" content="Discover fascinating facts about Montana, the Treasure State. Learn about Montana's geography, history, wildlife, and unique characteristics." />
         <meta name="keywords" content="Montana Facts, Treasure State, Montana History, Montana Geography, Montana Wildlife, Montana Celebrities, Montana Weather" />
+        <meta property="og:title" content="Montana Facts - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta property="og:url" content="https://treasurestate.com/Information/montana-facts/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <Hero

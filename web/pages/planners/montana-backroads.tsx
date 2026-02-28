@@ -14,6 +14,11 @@ export default function MontanaBackroads() {
         <link rel="canonical" href="https://treasurestate.com/planners/montana-backroads/" />
         <title>Montana's Backroads: A Scenic Travel Guide - Treasure State</title>
         <meta name="description" content="Discover the hidden gems of Big Sky Country with our guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures." />
+        <meta property="og:title" content="Montana's Backroads: A Scenic Travel Guide - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta property="og:url" content="https://treasurestate.com/planners/montana-backroads/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <Hero

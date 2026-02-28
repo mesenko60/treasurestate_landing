@@ -122,7 +122,9 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
         <meta property="og:description" content={page.metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:title" content={page.title} />
         <meta name="twitter:description" content={page.metaDescription} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />

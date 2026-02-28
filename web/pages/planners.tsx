@@ -12,6 +12,11 @@ export default function Planners() {
         <link rel="canonical" href="https://treasurestate.com/planners/" />
         <title>Montana Travel Planners & Guides - Treasure State</title>
         <meta name="description" content="Plan your perfect Montana adventure with our comprehensive travel planners, scenic routes, and thematic guides." />
+        <meta property="og:title" content="Montana Travel Planners & Guides - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta property="og:url" content="https://treasurestate.com/planners/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <Hero

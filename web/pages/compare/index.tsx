@@ -280,6 +280,13 @@ export default function CompareTool({ towns }: Props) {
         <meta name="description" content={desc} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://treasurestate.com/compare/" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={desc} />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
 
       <Header />

@@ -46,7 +46,11 @@ export default function BestOfIndex() {
         <meta property="og:description" content="Data-driven rankings of Montana's best towns. Find your perfect community." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best of Montana — Town Rankings & Guides" />
+        <meta name="twitter:description" content="Data-driven rankings of Montana's best towns. Find your perfect community." />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </Head>
       <Header />

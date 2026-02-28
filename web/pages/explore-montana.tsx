@@ -12,6 +12,11 @@ export default function ExploreMontana() {
         <link rel="canonical" href="https://treasurestate.com/explore-montana.html" />
         <title>Explore Montana - Treasure State</title>
         <meta name="description" content="Explore Montana: Discover upcoming features and adventures on Treasure State." />
+        <meta property="og:title" content="Explore Montana - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta property="og:url" content="https://treasurestate.com/explore-montana.html" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <Hero

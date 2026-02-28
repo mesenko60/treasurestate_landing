@@ -8,6 +8,10 @@ export default function Custom404() {
     <>
       <Head>
         <title>Page Not Found - Treasure State</title>
+        <meta property="og:title" content="Page Not Found - Treasure State" />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
       <main style={{ textAlign: 'center', padding: '100px 20px', minHeight: '60vh' }}>

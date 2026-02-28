@@ -103,9 +103,10 @@ type Props = {
     nearestHospitalDist: number | null;
   } | null;
   crossLinks: { label: string; href: string }[];
+  ogImage: string;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, ogImage }: Props) {
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana — ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -128,12 +129,11 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         <meta property="og:description" content={metaDesc} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`https://treasurestate.com/images/towns/${slug}.jpg`} />
-        
+        <meta property="og:image" content={ogImage} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={metaDesc} />
-        <meta name="twitter:image" content={`https://treasurestate.com/images/towns/${slug}.jpg`} />
+        <meta name="twitter:image" content={ogImage} />
       </Head>
 
       <Schema
@@ -437,6 +437,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         nearestHospitalDist: rawHealthcare.nearestHospitalDist ?? null,
       } : null,
       crossLinks,
+      ogImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
+        ? `https://treasurestate.com/images/towns/${slug}.jpg`
+        : 'https://treasurestate.com/images/hero-image.jpg',
     } 
   };
 };
