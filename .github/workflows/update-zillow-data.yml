@@ -1,0 +1,40 @@
+name: Update Zillow Housing Data
+
+on:
+  schedule:
+    # Zillow updates on the 16th of each month; run on the 18th to ensure data is available
+    - cron: '0 10 18 * *'
+  workflow_dispatch: # Allow manual trigger from GitHub Actions UI
+
+jobs:
+  update-zillow:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Download and process Zillow data
+        working-directory: web
+        run: node scripts/collect-zillow-data.js
+
+      - name: Check for data changes
+        id: changes
+        run: |
+          git diff --quiet web/data/town-housing.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/data/town-housing.json
+          git commit -m "chore: Update Zillow housing data (automated monthly)"
+          git push
