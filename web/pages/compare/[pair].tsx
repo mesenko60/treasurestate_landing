@@ -132,7 +132,7 @@ export default function ComparePage({ townA, townB }: Props) {
                 <CompareRow label="Annual Snowfall" valA={townA.annualSnow ? `${townA.annualSnow}"` : '—'} valB={townB.annualSnow ? `${townB.annualSnow}"` : '—'} />
 
                 <tr style={{ background: '#f8f9fa' }}>
-                  <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living</td>
+                  <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living <span style={{ fontWeight: 400, fontSize: '0.75rem', color: '#888' }}>(ACS 2019–2023)</span></td>
                 </tr>
                 <CompareRow label="Median Home Value" valA={townA.medianHomeValue ? `$${townA.medianHomeValue.toLocaleString()}` : '—'} valB={townB.medianHomeValue ? `$${townB.medianHomeValue.toLocaleString()}` : '—'} />
                 <CompareRow label="Median Rent" valA={townA.medianRent ? `$${townA.medianRent.toLocaleString()}/mo` : '—'} valB={townB.medianRent ? `$${townB.medianRent.toLocaleString()}/mo` : '—'} />

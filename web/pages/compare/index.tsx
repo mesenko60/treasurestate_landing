@@ -350,7 +350,7 @@ export default function CompareTool({ towns }: Props) {
                   />
 
                   <tr style={{ background: '#f8f9fa' }}>
-                    <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living</td>
+                    <td colSpan={3} style={{ padding: '0.7rem 0.8rem', fontWeight: 700, color: '#204051', borderBottom: '2px solid #204051' }}>Housing &amp; Cost of Living <span style={{ fontWeight: 400, fontSize: '0.75rem', color: '#888' }}>(ACS 2019–2023)</span></td>
                   </tr>
                   <CompareRow
                     label="Median Home Value"

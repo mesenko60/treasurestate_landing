@@ -71,7 +71,7 @@ export default function TownHousing({ medianHomeValue, medianRent, medianHouseho
       )}
 
       <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center' }}>
-        Source: US Census ACS 2023 (5-year estimates)
+        Source: U.S. Census Bureau, American Community Survey 5-Year Estimates (2019–2023)
       </div>
     </section>
   );
