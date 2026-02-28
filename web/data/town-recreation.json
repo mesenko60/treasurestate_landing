@@ -543,41 +543,6 @@
         "distMiles": 27
       },
       {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
         "name": "Full Curl Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 27
@@ -950,11 +915,6 @@
       {
         "name": "Terrace Falls",
         "type": "Waterfall",
-        "distMiles": 43
-      },
-      {
-        "name": "crab cooker",
-        "type": "Lake",
         "distMiles": 43
       },
       {
@@ -1653,11 +1613,6 @@
         "distMiles": 21
       },
       {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
-        "distMiles": 21
-      },
-      {
         "name": "Grant-Kohrs Ranch NHS",
         "type": "Historic Site",
         "distMiles": 22
@@ -1725,11 +1680,6 @@
       {
         "name": "Carpp Creek Trailhead",
         "type": "Trailhead",
-        "distMiles": 24
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 24
       },
       {
@@ -2523,11 +2473,6 @@
         "distMiles": 28
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 28
-      },
-      {
         "name": "Sidney Country Club",
         "type": "Golf",
         "distMiles": 29
@@ -2903,11 +2848,6 @@
         "distMiles": 29
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 29
-      },
-      {
         "name": "Sage Creek Campground",
         "type": "Campground",
         "distMiles": 30
@@ -3198,11 +3138,6 @@
         "distMiles": 7
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 7
-      },
-      {
         "name": "Drinking Horse Mountain",
         "type": "Trailhead",
         "distMiles": 8
@@ -3288,18 +3223,8 @@
         "distMiles": 10
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
         "name": "Michael P. Malone Centennial Mall",
         "type": "Historic Site",
-        "distMiles": 10
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 10
       },
       {
@@ -3315,11 +3240,6 @@
       {
         "name": "Valley View Golf Club",
         "type": "Golf",
-        "distMiles": 11
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 11
       },
       {
@@ -3403,11 +3323,6 @@
         "distMiles": 19
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 19
-      },
-      {
         "name": "Headwaters Heritage Museum",
         "type": "Museum",
         "distMiles": 20
@@ -3415,11 +3330,6 @@
       {
         "name": "Headwaters Railroad & Trident Heritage Center",
         "type": "Museum",
-        "distMiles": 20
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
         "distMiles": 20
       },
       {
@@ -3620,11 +3530,6 @@
       {
         "name": "Paradise",
         "type": "Boat Launch",
-        "distMiles": 35
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 35
       },
       {
@@ -4113,11 +4018,6 @@
         "distMiles": 17
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 17
-      },
-      {
         "name": "C.M. Russell Museum",
         "type": "Museum",
         "distMiles": 18
@@ -4248,11 +4148,6 @@
         "distMiles": 32
       },
       {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
         "name": "Lewis, Clark, and Sacagawea Memorial",
         "type": "Historic Site",
         "distMiles": 32
@@ -4355,11 +4250,6 @@
       {
         "name": "Judith Basin County Museum",
         "type": "Museum",
-        "distMiles": 37
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
         "distMiles": 37
       },
       {
@@ -4523,11 +4413,6 @@
         "distMiles": 0
       },
       {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "Little Sandy Coulee Recreation Site",
         "type": "Campground",
         "distMiles": 10
@@ -4578,11 +4463,6 @@
         "distMiles": 28
       },
       {
-        "name": "North Star Pool",
-        "type": "Lake",
-        "distMiles": 30
-      },
-      {
         "name": "Fresno Tailwater Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 30
@@ -4625,11 +4505,6 @@
       {
         "name": "Slaughter River (Float-In)",
         "type": "Campground",
-        "distMiles": 35
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 35
       },
       {
@@ -4823,11 +4698,6 @@
         "distMiles": 50
       },
       {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 50
-      },
-      {
         "name": "Square Butte Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 50
@@ -4885,11 +4755,6 @@
       {
         "name": "Big Sky Visitors Information Center & Chamber of Commerce",
         "type": "Museum",
-        "distMiles": 3
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 3
       },
       {
@@ -5393,11 +5258,6 @@
         "distMiles": 32
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
         "name": "2 Story Outhouse",
         "type": "Historic Site",
         "distMiles": 32
@@ -5478,11 +5338,6 @@
         "distMiles": 35
       },
       {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 35
-      },
-      {
         "name": "Drinking Horse Mountain",
         "type": "Trailhead",
         "distMiles": 36
@@ -5510,11 +5365,6 @@
       {
         "name": "Paradise",
         "type": "Boat Launch",
-        "distMiles": 36
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 36
       },
       {
@@ -5588,16 +5438,6 @@
         "distMiles": 39
       },
       {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 39
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 39
-      },
-      {
         "name": "Crevice Lake",
         "type": "Campground",
         "distMiles": 40
@@ -5625,11 +5465,6 @@
       {
         "name": "Yellowstone Park KOA",
         "type": "Campground",
-        "distMiles": 40
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
         "distMiles": 40
       },
       {
@@ -6113,11 +5948,6 @@
         "distMiles": 33
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 33
-      },
-      {
         "name": "Pine Creek Falls",
         "type": "Waterfall",
         "distMiles": 34
@@ -6218,11 +6048,6 @@
         "distMiles": 41
       },
       {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 41
-      },
-      {
         "name": "Grass Lake National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 41
@@ -6260,11 +6085,6 @@
       {
         "name": "E57B - the Last Electric Locomotive",
         "type": "Historic Site",
-        "distMiles": 42
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
         "distMiles": 42
       },
       {
@@ -6373,16 +6193,6 @@
         "distMiles": 50
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 50
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 50
-      },
-      {
         "name": "Story Mill Community Park",
         "type": "State Park",
         "distMiles": 52
@@ -6391,11 +6201,6 @@
         "name": "Story Mill Nature Reserve",
         "type": "Wildlife Refuge",
         "distMiles": 52
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 53
       },
       {
         "name": "Red Lodge Mountain",
@@ -7143,11 +6948,6 @@
         "distMiles": 32
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 32
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 32
@@ -7510,11 +7310,6 @@
       {
         "name": "McDonald Falls",
         "type": "Waterfall",
-        "distMiles": 41
-      },
-      {
-        "name": "crab cooker",
-        "type": "Lake",
         "distMiles": 41
       },
       {
@@ -8128,11 +7923,6 @@
         "distMiles": 1
       },
       {
-        "name": "South Park Pool",
-        "type": "Lake",
-        "distMiles": 1
-      },
-      {
         "name": "Place Where the White Horse Went Down Historical Marker",
         "type": "Historic Site",
         "distMiles": 1
@@ -8185,11 +7975,6 @@
       {
         "name": "Yellowstone Country Club",
         "type": "Golf",
-        "distMiles": 4
-      },
-      {
-        "name": "Rose Park Pool",
-        "type": "Lake",
         "distMiles": 4
       },
       {
@@ -8440,11 +8225,6 @@
       {
         "name": "Bull Springs",
         "type": "Fishing Access",
-        "distMiles": 49
-      },
-      {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
         "distMiles": 49
       },
       {
@@ -8778,11 +8558,6 @@
         "distMiles": 25
       },
       {
-        "name": "Swimming Pool",
-        "type": "Lake",
-        "distMiles": 25
-      },
-      {
         "name": "Centennial Monument",
         "type": "Historic Site",
         "distMiles": 25
@@ -8855,11 +8630,6 @@
       {
         "name": "Bank Building",
         "type": "Museum",
-        "distMiles": 26
-      },
-      {
-        "name": "East Helena City Pool",
-        "type": "Lake",
         "distMiles": 26
       },
       {
@@ -9005,11 +8775,6 @@
       {
         "name": "Powell County Museum",
         "type": "Museum",
-        "distMiles": 31
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 31
       },
       {
@@ -9428,11 +9193,6 @@
         "distMiles": 56
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 59
-      },
-      {
         "name": "Scapegoat Wilderness",
         "type": "Wilderness",
         "distMiles": 65
@@ -9528,11 +9288,6 @@
         "distMiles": 1
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 1
-      },
-      {
         "name": "Michael P. Malone Centennial Mall",
         "type": "Historic Site",
         "distMiles": 1
@@ -9570,16 +9325,6 @@
       {
         "name": "College 'M'",
         "type": "Viewpoint",
-        "distMiles": 4
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 4
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 4
       },
       {
@@ -9633,11 +9378,6 @@
         "distMiles": 9
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 9
-      },
-      {
         "name": "Bridger Bowl",
         "type": "Ski Area",
         "distMiles": 12
@@ -9645,16 +9385,6 @@
       {
         "name": "Bridger Bowl Ridge Trailhead",
         "type": "Trailhead",
-        "distMiles": 12
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 12
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
         "distMiles": 12
       },
       {
@@ -9920,11 +9650,6 @@
       {
         "name": "The Reserve at Moonlight Basin",
         "type": "Golf",
-        "distMiles": 32
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 32
       },
       {
@@ -10618,11 +10343,6 @@
         "distMiles": 30
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 30
-      },
-      {
         "name": "M-K Campground",
         "type": "Campground",
         "distMiles": 31
@@ -10788,11 +10508,6 @@
         "distMiles": 38
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
         "name": "Stillwater River",
         "type": "River",
         "distMiles": 39
@@ -10840,11 +10555,6 @@
       {
         "name": "Moss Mansion Museum",
         "type": "Museum",
-        "distMiles": 39
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 39
       },
       {
@@ -11038,21 +10748,6 @@
         "distMiles": 69
       },
       {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 69
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 69
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
-        "distMiles": 69
-      },
-      {
         "name": "Range Riders Museum",
         "type": "Museum",
         "distMiles": 70
@@ -11061,11 +10756,6 @@
         "name": "WaterWorks Art Museum",
         "type": "Museum",
         "distMiles": 70
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
-        "distMiles": 71
       },
       {
         "name": "Terminal monument, North Dakota South Dakota boundary",
@@ -11081,11 +10771,6 @@
         "name": "Rosebud Battlefield SP",
         "type": "State Park",
         "distMiles": 76
-      },
-      {
-        "name": "MT FWP",
-        "type": "Wildlife Refuge",
-        "distMiles": 78
       },
       {
         "name": "O'Fallon Historical Museum",
@@ -11203,11 +10888,6 @@
         "distMiles": 26
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 26
-      },
-      {
         "name": "Yellowstone Country Club",
         "type": "Golf",
         "distMiles": 27
@@ -11280,11 +10960,6 @@
       {
         "name": "Musselshell Valley Historical Museum",
         "type": "Museum",
-        "distMiles": 29
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 29
       },
       {
@@ -11443,11 +11118,6 @@
         "distMiles": 47
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "Cooney Reservoir State Park Red Lodge Arm",
         "type": "Campground",
         "distMiles": 49
@@ -11505,11 +11175,6 @@
       {
         "name": "Sleeping Wolf Campground",
         "type": "Campground",
-        "distMiles": 1
-      },
-      {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
         "distMiles": 1
       },
       {
@@ -12658,11 +12323,6 @@
         "distMiles": 60
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 60
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 60
@@ -12821,11 +12481,6 @@
         "name": "Bank Building",
         "type": "Museum",
         "distMiles": 1
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
-        "distMiles": 2
       },
       {
         "name": "Highland View Par-3 Course",
@@ -13060,11 +12715,6 @@
       {
         "name": "Powell County Museum",
         "type": "Museum",
-        "distMiles": 28
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 28
       },
       {
@@ -13653,11 +13303,6 @@
         "distMiles": 50
       },
       {
-        "name": "East Helena City Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Norris Hot Springs",
         "type": "Hot Spring",
         "distMiles": 51
@@ -13803,11 +13448,6 @@
         "distMiles": 12
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 12
-      },
-      {
         "name": "Missouri River (Great Falls)",
         "type": "River",
         "distMiles": 13
@@ -13891,11 +13531,6 @@
         "name": "Crooked Falls",
         "type": "Waterfall",
         "distMiles": 16
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
-        "distMiles": 18
       },
       {
         "name": "Big Falls",
@@ -14070,11 +13705,6 @@
       {
         "name": "Montana Agricultural Center",
         "type": "Museum",
-        "distMiles": 46
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 46
       },
       {
@@ -14328,11 +13958,6 @@
         "distMiles": 20
       },
       {
-        "name": "North Star Pool",
-        "type": "Lake",
-        "distMiles": 25
-      },
-      {
         "name": "Whitlash 4-H Campground",
         "type": "Campground",
         "distMiles": 28
@@ -14350,11 +13975,6 @@
       {
         "name": "Marias Museum of History and Art",
         "type": "Museum",
-        "distMiles": 41
-      },
-      {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
         "distMiles": 41
       },
       {
@@ -14385,11 +14005,6 @@
       {
         "name": "Decision Point Overlook",
         "type": "Viewpoint",
-        "distMiles": 46
-      },
-      {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
         "distMiles": 46
       },
       {
@@ -14455,11 +14070,6 @@
       {
         "name": "Covered Picnic Table",
         "type": "Campground",
-        "distMiles": 50
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 50
       },
       {
@@ -14548,11 +14158,6 @@
         "distMiles": 2
       },
       {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 3
-      },
-      {
         "name": "Fresno Reservoir",
         "type": "Lake",
         "distMiles": 19
@@ -14596,11 +14201,6 @@
         "name": "Rookery Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 26
-      },
-      {
-        "name": "US DOD",
-        "type": "Wildlife Refuge",
-        "distMiles": 28
       },
       {
         "name": "Fresno Tailwater Wildlife Management Area",
@@ -14648,11 +14248,6 @@
         "distMiles": 49
       },
       {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Cow Creek Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 53
@@ -14666,11 +14261,6 @@
         "name": "Sturgeon Island",
         "type": "Wildlife Refuge",
         "distMiles": 55
-      },
-      {
-        "name": "US BOR",
-        "type": "Wildlife Refuge",
-        "distMiles": 59
       },
       {
         "name": "Woodhawk Wilderness Study Area",
@@ -14700,11 +14290,6 @@
       {
         "name": "Teton Antique Tractor & Steam Engines",
         "type": "Museum",
-        "distMiles": 0
-      },
-      {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
         "distMiles": 0
       },
       {
@@ -14873,11 +14458,6 @@
         "distMiles": 41
       },
       {
-        "name": "Atkinson Pool",
-        "type": "Lake",
-        "distMiles": 43
-      },
-      {
         "name": "Earle E Heikka Museum",
         "type": "Museum",
         "distMiles": 44
@@ -15003,11 +14583,6 @@
         "distMiles": 49
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Rainbow Dam Overlook",
         "type": "Viewpoint",
         "distMiles": 50
@@ -15025,11 +14600,6 @@
       {
         "name": "Crooked Falls",
         "type": "Waterfall",
-        "distMiles": 50
-      },
-      {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
         "distMiles": 50
       },
       {
@@ -15268,16 +14838,6 @@
         "distMiles": 16
       },
       {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 16
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 16
-      },
-      {
         "name": "Fairy Lake Campground",
         "type": "Campground",
         "distMiles": 17
@@ -15338,21 +14898,6 @@
         "distMiles": 22
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 22
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 22
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 22
-      },
-      {
         "name": "Bridger Creek Golf Course",
         "type": "Golf",
         "distMiles": 23
@@ -15405,11 +14950,6 @@
       {
         "name": "Children's Museum of Bozeman",
         "type": "Museum",
-        "distMiles": 25
-      },
-      {
-        "name": "Bozeman Pool",
-        "type": "Lake",
         "distMiles": 25
       },
       {
@@ -15968,11 +15508,6 @@
         "distMiles": 48
       },
       {
-        "name": "MT FWP",
-        "type": "Wildlife Refuge",
-        "distMiles": 49
-      },
-      {
         "name": "Bighorn River",
         "type": "River",
         "distMiles": 50
@@ -15980,11 +15515,6 @@
       {
         "name": "Pirogue Island State Park",
         "type": "State Park",
-        "distMiles": 53
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
         "distMiles": 53
       },
       {
@@ -16159,11 +15689,6 @@
       },
       {
         "name": "Whitey's",
-        "type": "Ski Area",
-        "distMiles": 11
-      },
-      {
-        "name": "NBC",
         "type": "Ski Area",
         "distMiles": 11
       },
@@ -17973,11 +17498,6 @@
         "distMiles": 11
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 12
-      },
-      {
         "name": "Absaroka",
         "type": "Fishing Access",
         "distMiles": 13
@@ -18213,11 +17733,6 @@
         "distMiles": 34
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 34
-      },
-      {
         "name": "Silver Run Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 34
@@ -18335,11 +17850,6 @@
       {
         "name": "Chief Plenty Coups House",
         "type": "Museum",
-        "distMiles": 37
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 37
       },
       {
@@ -18558,11 +18068,6 @@
         "distMiles": 24
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 24
-      },
-      {
         "name": "Lewis & Clark Camping",
         "type": "Campground",
         "distMiles": 25
@@ -18595,11 +18100,6 @@
       {
         "name": "Teton Antique Tractor & Steam Engines",
         "type": "Museum",
-        "distMiles": 27
-      },
-      {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
         "distMiles": 27
       },
       {
@@ -18813,11 +18313,6 @@
         "distMiles": 25
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 25
-      },
-      {
         "name": "Poplar Museum",
         "type": "Museum",
         "distMiles": 30
@@ -18938,11 +18433,6 @@
         "distMiles": 23
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 23
-      },
-      {
         "name": "Marias Valley Golf & Country Club",
         "type": "Golf",
         "distMiles": 24
@@ -18960,11 +18450,6 @@
       {
         "name": "Sleeping Wolf Campground",
         "type": "Campground",
-        "distMiles": 32
-      },
-      {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
         "distMiles": 32
       },
       {
@@ -20553,11 +20038,6 @@
         "distMiles": 28
       },
       {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
-        "distMiles": 28
-      },
-      {
         "name": "Grant-Kohrs Ranch NHS",
         "type": "Historic Site",
         "distMiles": 29
@@ -20580,11 +20060,6 @@
       {
         "name": "Lick Creek Saddle Trailhead",
         "type": "Trailhead",
-        "distMiles": 29
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 29
       },
       {
@@ -21593,11 +21068,6 @@
         "distMiles": 48
       },
       {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "Lewis, Clark, and Sacagawea Memorial",
         "type": "Historic Site",
         "distMiles": 48
@@ -22373,11 +21843,6 @@
         "distMiles": 4
       },
       {
-        "name": "US BOR",
-        "type": "Wildlife Refuge",
-        "distMiles": 11
-      },
-      {
         "name": "Early Day Outlaws",
         "type": "Historic Site",
         "distMiles": 13
@@ -22441,16 +21906,6 @@
         "name": "Sleeping Buffalo Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 36
-      },
-      {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 38
-      },
-      {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 45
       },
       {
         "name": "Blaine County Museum",
@@ -22770,11 +22225,6 @@
       {
         "name": "Powell County Museum",
         "type": "Museum",
-        "distMiles": 27
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 27
       },
       {
@@ -24058,11 +23508,6 @@
         "distMiles": 22
       },
       {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
-        "distMiles": 22
-      },
-      {
         "name": "Benton Lake National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 22
@@ -24193,11 +23638,6 @@
         "distMiles": 32
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
         "name": "Malmstrom Museum",
         "type": "Museum",
         "distMiles": 33
@@ -24230,11 +23670,6 @@
       {
         "name": "South Bootlegger Recreation Area",
         "type": "Campground",
-        "distMiles": 39
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
         "distMiles": 39
       },
       {
@@ -24328,11 +23763,6 @@
         "distMiles": 46
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
         "name": "Cave Mountain campground",
         "type": "Campground",
         "distMiles": 47
@@ -24390,11 +23820,6 @@
       {
         "name": "Montana Agricultural Center",
         "type": "Museum",
-        "distMiles": 49
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 49
       },
       {
@@ -24615,11 +24040,6 @@
       {
         "name": "Sleeping Wolf Campground",
         "type": "Campground",
-        "distMiles": 12
-      },
-      {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
         "distMiles": 12
       },
       {
@@ -25893,11 +25313,6 @@
         "distMiles": 51
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 51
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 51
@@ -26012,11 +25427,6 @@
   "east-helena": {
     "name": "East Helena",
     "places": [
-      {
-        "name": "East Helena City Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
       {
         "name": "Fox Ridge Golf Course",
         "type": "Golf",
@@ -26558,11 +25968,6 @@
         "distMiles": 41
       },
       {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
-        "distMiles": 41
-      },
-      {
         "name": "Smith River",
         "type": "River",
         "distMiles": 42
@@ -26643,11 +26048,6 @@
         "distMiles": 48
       },
       {
-        "name": "Atkinson Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "Our Lady of the Rockies",
         "type": "Historic Site",
         "distMiles": 48
@@ -26700,11 +26100,6 @@
       {
         "name": "Copper King Mansion",
         "type": "Museum",
-        "distMiles": 50
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 50
       },
       {
@@ -26883,21 +26278,6 @@
         "distMiles": 68
       },
       {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 70
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 70
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
-        "distMiles": 70
-      },
-      {
         "name": "Miles City Town and Country Club",
         "type": "Golf",
         "distMiles": 71
@@ -26920,11 +26300,6 @@
       {
         "name": "Prairie County Museum",
         "type": "Museum",
-        "distMiles": 72
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
         "distMiles": 72
       },
       {
@@ -27230,11 +26605,6 @@
       {
         "name": "McAtee Bridge Fishing Access Site",
         "type": "Fishing Access",
-        "distMiles": 18
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 18
       },
       {
@@ -27678,11 +27048,6 @@
         "distMiles": 41
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 41
-      },
-      {
         "name": "East Fork Blacktail Deer Creek Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 41
@@ -27773,16 +27138,6 @@
         "distMiles": 44
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 44
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 44
-      },
-      {
         "name": "Hebgen Lake",
         "type": "Lake",
         "distMiles": 45
@@ -27840,11 +27195,6 @@
       {
         "name": "Glen Fishing Access Site",
         "type": "Fishing Access",
-        "distMiles": 46
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
         "distMiles": 46
       },
       {
@@ -27941,16 +27291,6 @@
         "name": "Red Rock Lakes Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 50
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 51
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 51
       },
       {
         "name": "Bridger Bowl",
@@ -28478,11 +27818,6 @@
         "distMiles": 42
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 42
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 42
@@ -28848,11 +28183,6 @@
         "distMiles": 17
       },
       {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
-        "distMiles": 17
-      },
-      {
         "name": "Tower Rock State Park",
         "type": "State Park",
         "distMiles": 19
@@ -28871,11 +28201,6 @@
         "name": "Benton Lake NWR",
         "type": "Wildlife Refuge",
         "distMiles": 26
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
-        "distMiles": 27
       },
       {
         "name": "Teton Pass Ski Area",
@@ -29010,11 +28335,6 @@
       {
         "name": "Cataract Falls",
         "type": "Waterfall",
-        "distMiles": 35
-      },
-      {
-        "name": "Water Tower Pool",
-        "type": "Lake",
         "distMiles": 35
       },
       {
@@ -29303,11 +28623,6 @@
         "distMiles": 49
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Richey Historical Museum",
         "type": "Museum",
         "distMiles": 50
@@ -29317,11 +28632,6 @@
   "flaxville": {
     "name": "Flaxville",
     "places": [
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 11
-      },
       {
         "name": "Scobey Golf Course",
         "type": "Golf",
@@ -29355,11 +28665,6 @@
       {
         "name": "Medicine Lake NWR",
         "type": "Wildlife Refuge",
-        "distMiles": 37
-      },
-      {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
         "distMiles": 37
       },
       {
@@ -29441,26 +28746,6 @@
         "name": "Miles City Town and Country Club",
         "type": "Golf",
         "distMiles": 41
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
-        "distMiles": 41
-      },
-      {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 42
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 42
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
-        "distMiles": 42
       },
       {
         "name": "Pirogue Island State Park",
@@ -29560,11 +28845,6 @@
       {
         "name": "Montana Agricultural Center",
         "type": "Museum",
-        "distMiles": 1
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 1
       },
       {
@@ -29733,11 +29013,6 @@
         "distMiles": 35
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
         "name": "Cascade County Historical Society Museum",
         "type": "Museum",
         "distMiles": 36
@@ -29760,11 +29035,6 @@
       {
         "name": "Vinegar Jones Cabin",
         "type": "Museum",
-        "distMiles": 36
-      },
-      {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
         "distMiles": 36
       },
       {
@@ -29988,19 +29258,9 @@
         "distMiles": 42
       },
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 43
-      },
-      {
         "name": "Sleeping Buffalo Hot Springs",
         "type": "Hot Spring",
         "distMiles": 45
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 46
       },
       {
         "name": "Bitter Creek Wilderness Study Area",
@@ -30051,11 +29311,6 @@
         "name": "Medicine Lake NWR",
         "type": "Wildlife Refuge",
         "distMiles": 11
-      },
-      {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 12
       },
       {
         "name": "Culbertson Museum",
@@ -30338,11 +29593,6 @@
         "distMiles": 28
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 28
-      },
-      {
         "name": "Shiloh Conservation Area",
         "type": "Wildlife Refuge",
         "distMiles": 28
@@ -30395,11 +29645,6 @@
       {
         "name": "Pictograph Cave State Park",
         "type": "State Park",
-        "distMiles": 32
-      },
-      {
-        "name": "Rose Park Pool",
-        "type": "Lake",
         "distMiles": 32
       },
       {
@@ -30460,11 +29705,6 @@
       {
         "name": "Moss Mansion Museum",
         "type": "Museum",
-        "distMiles": 33
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 33
       },
       {
@@ -31218,11 +30458,6 @@
         "distMiles": 35
       },
       {
-        "name": "Hot tub",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
         "name": "Absaroka–Beartooth Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 35
@@ -31413,11 +30648,6 @@
         "distMiles": 44
       },
       {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 44
-      },
-      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 45
@@ -31458,11 +30688,6 @@
         "distMiles": 45
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 45
-      },
-      {
         "name": "Woodbine Campground",
         "type": "Campground",
         "distMiles": 46
@@ -31478,11 +30703,6 @@
         "distMiles": 46
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
         "name": "Story Mill Community Park",
         "type": "State Park",
         "distMiles": 47
@@ -31490,11 +30710,6 @@
       {
         "name": "College 'M'",
         "type": "Viewpoint",
-        "distMiles": 47
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 47
       },
       {
@@ -31520,11 +30735,6 @@
       {
         "name": "Bozeman Hot Springs Campground",
         "type": "Campground",
-        "distMiles": 48
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 48
       },
       {
@@ -31556,11 +30766,6 @@
         "name": "Bridger Bowl",
         "type": "Ski Area",
         "distMiles": 54
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 55
       },
       {
         "name": "Red Rock Lakes National Wildlife Refuge",
@@ -31680,11 +30885,6 @@
       {
         "name": "Montana Agricultural Center",
         "type": "Museum",
-        "distMiles": 24
-      },
-      {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
         "distMiles": 24
       },
       {
@@ -31848,11 +31048,6 @@
         "distMiles": 40
       },
       {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
-        "distMiles": 40
-      },
-      {
         "name": "Ackley Lake State Park",
         "type": "State Park",
         "distMiles": 41
@@ -31980,11 +31175,6 @@
       {
         "name": "Eagle Falls Golf Club",
         "type": "Golf",
-        "distMiles": 46
-      },
-      {
-        "name": "Water Tower Pool",
-        "type": "Lake",
         "distMiles": 46
       },
       {
@@ -32148,16 +31338,6 @@
         "distMiles": 30
       },
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 31
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 33
-      },
-      {
         "name": "Bitter Creek Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 34
@@ -32241,11 +31421,6 @@
         "name": "Seven Blackfoot Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 58
-      },
-      {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 60
       }
     ]
   },
@@ -32431,11 +31606,6 @@
         "name": "War Horse National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 13
-      },
-      {
-        "name": "Winnett Community Pool",
-        "type": "Lake",
-        "distMiles": 21
       },
       {
         "name": "East Fork Reservoir Campground",
@@ -32733,11 +31903,6 @@
         "distMiles": 2
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 2
-      },
-      {
         "name": "Steamboat Island Scenic Overlook",
         "type": "Viewpoint",
         "distMiles": 3
@@ -32811,11 +31976,6 @@
         "name": "Eden Bridge Access",
         "type": "Boat Launch",
         "distMiles": 19
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
-        "distMiles": 25
       },
       {
         "name": "Sun River",
@@ -32933,11 +32093,6 @@
         "distMiles": 37
       },
       {
-        "name": "Fort Benton City Pool",
-        "type": "Lake",
-        "distMiles": 37
-      },
-      {
         "name": "Shep",
         "type": "Historic Site",
         "distMiles": 37
@@ -33030,11 +32185,6 @@
       {
         "name": "Old Trail Museum",
         "type": "Museum",
-        "distMiles": 47
-      },
-      {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
         "distMiles": 47
       },
       {
@@ -34758,11 +33908,6 @@
         "distMiles": 43
       },
       {
-        "name": "South Park Pool",
-        "type": "Lake",
-        "distMiles": 43
-      },
-      {
         "name": "Veterans Memorial",
         "type": "Historic Site",
         "distMiles": 43
@@ -34790,16 +33935,6 @@
       {
         "name": "Yellowstone Country Club",
         "type": "Golf",
-        "distMiles": 46
-      },
-      {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
-        "name": "MT FWP",
-        "type": "Wildlife Refuge",
         "distMiles": 46
       },
       {
@@ -34888,11 +34023,6 @@
         "distMiles": 18
       },
       {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 19
-      },
-      {
         "name": "Black Coulee National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 20
@@ -34923,18 +34053,8 @@
         "distMiles": 27
       },
       {
-        "name": "US BOR",
-        "type": "Wildlife Refuge",
-        "distMiles": 38
-      },
-      {
         "name": "Early Day Outlaws",
         "type": "Historic Site",
-        "distMiles": 39
-      },
-      {
-        "name": "US DOD",
-        "type": "Wildlife Refuge",
         "distMiles": 39
       },
       {
@@ -35041,11 +34161,6 @@
         "name": "Antelope Creek Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 55
-      },
-      {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 56
       },
       {
         "name": "Cree Crossing Wildlife Management Area",
@@ -35383,11 +34498,6 @@
         "distMiles": 21
       },
       {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 22
-      },
-      {
         "name": "Fresno Reservoir Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 25
@@ -35403,23 +34513,8 @@
         "distMiles": 33
       },
       {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
-        "distMiles": 33
-      },
-      {
-        "name": "North Star Pool",
-        "type": "Lake",
-        "distMiles": 34
-      },
-      {
         "name": "Bear Paw Ski Bowl",
         "type": "Ski Area",
-        "distMiles": 36
-      },
-      {
-        "name": "US DOD",
-        "type": "Wildlife Refuge",
         "distMiles": 36
       },
       {
@@ -35635,11 +34730,6 @@
       {
         "name": "Head Lane Trailhead",
         "type": "Trailhead",
-        "distMiles": 6
-      },
-      {
-        "name": "East Helena City Pool",
-        "type": "Lake",
         "distMiles": 6
       },
       {
@@ -36018,11 +35108,6 @@
         "distMiles": 36
       },
       {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
-        "distMiles": 36
-      },
-      {
         "name": "Freedom Point PIcnic Area",
         "type": "Campground",
         "distMiles": 37
@@ -36223,11 +35308,6 @@
         "distMiles": 48
       },
       {
-        "name": "Swimming Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "The Lunch Room",
         "type": "Campground",
         "distMiles": 49
@@ -36245,11 +35325,6 @@
       {
         "name": "Jefferson Valley Museum",
         "type": "Museum",
-        "distMiles": 50
-      },
-      {
-        "name": "Atkinson Pool",
-        "type": "Lake",
         "distMiles": 50
       },
       {
@@ -36393,11 +35468,6 @@
     "name": "Hingham",
     "places": [
       {
-        "name": "North Star Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "Rudyard Museum",
         "type": "Museum",
         "distMiles": 6
@@ -36430,11 +35500,6 @@
       {
         "name": "Big Sandy Historical Society Museum",
         "type": "Museum",
-        "distMiles": 30
-      },
-      {
-        "name": "Big Sandy Swimming Pool",
-        "type": "Lake",
         "distMiles": 30
       },
       {
@@ -36566,11 +35631,6 @@
         "name": "Bear Paw Ski Bowl",
         "type": "Ski Area",
         "distMiles": 51
-      },
-      {
-        "name": "US Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 56
       }
     ]
   },
@@ -36868,11 +35928,6 @@
     "name": "Hot Springs",
     "places": [
       {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "LaRue Hot Springs Museum",
         "type": "Museum",
         "distMiles": 1
@@ -36916,41 +35971,6 @@
         "name": "Roundhorn Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 19
-      },
-      {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 20
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
-        "distMiles": 20
       },
       {
         "name": "Cascade Campground",
@@ -37923,11 +36943,6 @@
         "distMiles": 63
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 63
-      },
-      {
         "name": "Teepee",
         "type": "Ski Area",
         "distMiles": 63
@@ -38243,16 +37258,6 @@
         "distMiles": 48
       },
       {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Range Riders Museum",
         "type": "Museum",
         "distMiles": 50
@@ -38260,16 +37265,6 @@
       {
         "name": "Miles City Town and Country Club",
         "type": "Golf",
-        "distMiles": 50
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
         "distMiles": 50
       },
       {
@@ -38413,11 +37408,6 @@
         "distMiles": 22
       },
       {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
-        "distMiles": 23
-      },
-      {
         "name": "Absaroka",
         "type": "Fishing Access",
         "distMiles": 24
@@ -38485,11 +37475,6 @@
       {
         "name": "Nichols Creek Trailhead",
         "type": "Trailhead",
-        "distMiles": 28
-      },
-      {
-        "name": "Rose Park Pool",
-        "type": "Lake",
         "distMiles": 28
       },
       {
@@ -38575,11 +37560,6 @@
       {
         "name": "Moss Mansion Museum",
         "type": "Museum",
-        "distMiles": 30
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 30
       },
       {
@@ -39633,11 +38613,6 @@
         "distMiles": 21
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 21
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 21
@@ -40438,11 +39413,6 @@
         "distMiles": 44
       },
       {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 44
-      },
-      {
         "name": "Symes Hot Springs",
         "type": "Hot Spring",
         "distMiles": 45
@@ -40978,11 +39948,6 @@
         "distMiles": 17
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 17
-      },
-      {
         "name": "Veterans Memorial Park",
         "type": "Historic Site",
         "distMiles": 18
@@ -41093,11 +40058,6 @@
         "distMiles": 50
       },
       {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Glacier National Park (East Glacier)",
         "type": "National Park",
         "distMiles": 61
@@ -41163,11 +40123,6 @@
         "distMiles": 12
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 13
-      },
-      {
         "name": "South Hills",
         "type": "Fishing Access",
         "distMiles": 14
@@ -41220,11 +40175,6 @@
       {
         "name": "Western Heritage Center",
         "type": "Museum",
-        "distMiles": 15
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 15
       },
       {
@@ -41385,11 +40335,6 @@
       {
         "name": "Bull Springs",
         "type": "Fishing Access",
-        "distMiles": 34
-      },
-      {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
         "distMiles": 34
       },
       {
@@ -41728,11 +40673,6 @@
         "distMiles": 39
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 39
-      },
-      {
         "name": "Big Snowy Mountains Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 39
@@ -41810,11 +40750,6 @@
       {
         "name": "Huntley Project Museum",
         "type": "Museum",
-        "distMiles": 42
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 42
       },
       {
@@ -42803,11 +41738,6 @@
         "distMiles": 57
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 57
-      },
-      {
         "name": "Chair 7 Big Creek Express",
         "type": "Ski Area",
         "distMiles": 57
@@ -43178,16 +42108,6 @@
         "distMiles": 11
       },
       {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 11
-      },
-      {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 12
-      },
-      {
         "name": "Mallards Rest",
         "type": "Boat Launch",
         "distMiles": 13
@@ -43238,18 +42158,8 @@
         "distMiles": 20
       },
       {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 20
-      },
-      {
         "name": "Chico Hot Springs",
         "type": "Hot Spring",
-        "distMiles": 21
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 21
       },
       {
@@ -43363,11 +42273,6 @@
         "distMiles": 23
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 23
-      },
-      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 24
@@ -43420,11 +42325,6 @@
       {
         "name": "Grey Bear",
         "type": "Fishing Access",
-        "distMiles": 26
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
         "distMiles": 26
       },
       {
@@ -43788,11 +42688,6 @@
         "distMiles": 47
       },
       {
-        "name": "Hot tub",
-        "type": "Lake",
-        "distMiles": 47
-      },
-      {
         "name": "Big Sky Resort",
         "type": "Ski Area",
         "distMiles": 48
@@ -43988,11 +42883,6 @@
         "distMiles": 18
       },
       {
-        "name": "MT FWP",
-        "type": "Wildlife Refuge",
-        "distMiles": 19
-      },
-      {
         "name": "Rosebud Battlefield SP",
         "type": "State Park",
         "distMiles": 22
@@ -44128,11 +43018,6 @@
         "distMiles": 4
       },
       {
-        "name": "US BOR",
-        "type": "Wildlife Refuge",
-        "distMiles": 7
-      },
-      {
         "name": "Bowdoin NWR",
         "type": "Wildlife Refuge",
         "distMiles": 10
@@ -44171,11 +43056,6 @@
         "name": "Dodson Dam Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 21
-      },
-      {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 31
       },
       {
         "name": "Black Coulee National Wildlife Refuge",
@@ -44318,11 +43198,6 @@
         "distMiles": 14
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 14
-      },
-      {
         "name": "Bozeman Hot Springs Campground",
         "type": "Campground",
         "distMiles": 15
@@ -44418,18 +43293,8 @@
         "distMiles": 19
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 19
-      },
-      {
         "name": "Michael P. Malone Centennial Mall",
         "type": "Historic Site",
-        "distMiles": 19
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 19
       },
       {
@@ -44450,11 +43315,6 @@
       {
         "name": "Sappington Bridge",
         "type": "Boat Launch",
-        "distMiles": 20
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 20
       },
       {
@@ -44538,11 +43398,6 @@
         "distMiles": 27
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 27
-      },
-      {
         "name": "Spanish Creek Trailhead",
         "type": "Trailhead",
         "distMiles": 28
@@ -44550,11 +43405,6 @@
       {
         "name": "Spire Rock Campground",
         "type": "Campground",
-        "distMiles": 29
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
         "distMiles": 29
       },
       {
@@ -44755,11 +43605,6 @@
       {
         "name": "Livingston Depot",
         "type": "Museum",
-        "distMiles": 40
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 40
       },
       {
@@ -45123,11 +43968,6 @@
         "distMiles": 0
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 5
@@ -45178,11 +44018,6 @@
         "distMiles": 41
       },
       {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
         "name": "Scobey Golf Course",
         "type": "Golf",
         "distMiles": 47
@@ -45231,11 +44066,6 @@
         "name": "Musselshell Breaks Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 35
-      },
-      {
-        "name": "Winnett Community Pool",
-        "type": "Lake",
-        "distMiles": 36
       },
       {
         "name": "Amelia Island Wildlife Management Area",
@@ -45321,26 +44151,6 @@
         "name": "WaterWorks Art Museum",
         "type": "Museum",
         "distMiles": 1
-      },
-      {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 1
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
-        "distMiles": 1
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 2
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
-        "distMiles": 2
       },
       {
         "name": "Pirogue Island State Park",
@@ -46868,41 +45678,6 @@
         "distMiles": 49
       },
       {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Silver Fox Golf Course",
         "type": "Golf",
         "distMiles": 50
@@ -47293,19 +46068,9 @@
         "distMiles": 36
       },
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 36
-      },
-      {
         "name": "Pack It In & Pack It Out Camping",
         "type": "Campground",
         "distMiles": 38
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 39
       },
       {
         "name": "Hinsdale Wildlife Management Area",
@@ -47533,11 +46298,6 @@
         "distMiles": 46
       },
       {
-        "name": "Water Tower Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
         "name": "Missouri River (Great Falls)",
         "type": "River",
         "distMiles": 47
@@ -47733,16 +46493,6 @@
     "name": "Opheim",
     "places": [
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 16
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 16
-      },
-      {
         "name": "Bitter Creek Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 20
@@ -47788,11 +46538,6 @@
         "distMiles": 45
       },
       {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 45
-      },
-      {
         "name": "Valley County Pioneer Museum",
         "type": "Museum",
         "distMiles": 46
@@ -47801,11 +46546,6 @@
         "name": "Sleeping Buffalo Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 54
-      },
-      {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 55
       },
       {
         "name": "Cree Crossing Wildlife Management Area",
@@ -47845,16 +46585,6 @@
       {
         "name": "Daniels County Museum",
         "type": "Museum",
-        "distMiles": 30
-      },
-      {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 30
-      },
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
         "distMiles": 30
       },
       {
@@ -48285,11 +47015,6 @@
       {
         "name": "Powell County Museum",
         "type": "Museum",
-        "distMiles": 27
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 27
       },
       {
@@ -48905,11 +47630,6 @@
       {
         "name": "Belmont Creek Fishing Access",
         "type": "Fishing Access",
-        "distMiles": 45
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 45
       },
       {
@@ -51008,41 +49728,6 @@
         "distMiles": 10
       },
       {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
-        "distMiles": 10
-      },
-      {
         "name": "Cascade Campground",
         "type": "Campground",
         "distMiles": 11
@@ -51071,11 +49756,6 @@
         "name": "Wild Horse Hot Springs",
         "type": "Hot Spring",
         "distMiles": 13
-      },
-      {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 14
       },
       {
         "name": "Quinn's Hot Springs",
@@ -51788,11 +50468,6 @@
         "distMiles": 19
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 19
-      },
-      {
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 23
@@ -51806,11 +50481,6 @@
         "name": "Brush Lake State Park Campground",
         "type": "Campground",
         "distMiles": 24
-      },
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 39
       },
       {
         "name": "Scobey Golf Course",
@@ -52258,11 +50928,6 @@
         "distMiles": 23
       },
       {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 24
-      },
-      {
         "name": "National Bison Range",
         "type": "Wildlife Refuge",
         "distMiles": 25
@@ -52645,41 +51310,6 @@
       {
         "name": "Lakeside Lolo (Old Alva) Campground",
         "type": "Campground",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 38
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
         "distMiles": 38
       },
       {
@@ -53168,11 +51798,6 @@
         "distMiles": 56
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 56
-      },
-      {
         "name": "Bad Medicine",
         "type": "Ski Area",
         "distMiles": 56
@@ -53343,11 +51968,6 @@
         "distMiles": 42
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 42
-      },
-      {
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 43
@@ -53370,11 +51990,6 @@
       {
         "name": "Pioneer Town",
         "type": "Museum",
-        "distMiles": 48
-      },
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
         "distMiles": 48
       },
       {
@@ -53615,11 +52230,6 @@
       {
         "name": "Impasse Falls",
         "type": "Waterfall",
-        "distMiles": 25
-      },
-      {
-        "name": "Absarokee Swimming Pool",
-        "type": "Lake",
         "distMiles": 25
       },
       {
@@ -54438,11 +53048,6 @@
         "distMiles": 47
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 47
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 47
@@ -55128,11 +53733,6 @@
         "distMiles": 27
       },
       {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
         "name": "Lake Mary Ronan",
         "type": "Lake",
         "distMiles": 28
@@ -55330,41 +53930,6 @@
       {
         "name": "Loon Lake Fishing Access",
         "type": "Fishing Access",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 35
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
         "distMiles": 35
       },
       {
@@ -56313,11 +54878,6 @@
         "distMiles": 68
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 68
-      },
-      {
         "name": "Don's Descent",
         "type": "Ski Area",
         "distMiles": 68
@@ -56448,11 +55008,6 @@
         "distMiles": 40
       },
       {
-        "name": "Winnett Community Pool",
-        "type": "Lake",
-        "distMiles": 40
-      },
-      {
         "name": "War Horse National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 40
@@ -56535,16 +55090,6 @@
       {
         "name": "Moss Mansion Museum",
         "type": "Museum",
-        "distMiles": 46
-      },
-      {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 46
-      },
-      {
-        "name": "South Park Pool",
-        "type": "Lake",
         "distMiles": 46
       },
       {
@@ -56773,11 +55318,6 @@
         "distMiles": 48
       },
       {
-        "name": "Rose Park Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "Yellowstone Country Club",
         "type": "Golf",
         "distMiles": 49
@@ -56933,11 +55473,6 @@
         "distMiles": 25
       },
       {
-        "name": "County",
-        "type": "Wildlife Refuge",
-        "distMiles": 25
-      },
-      {
         "name": "Early Day Outlaws",
         "type": "Historic Site",
         "distMiles": 29
@@ -56948,29 +55483,14 @@
         "distMiles": 31
       },
       {
-        "name": "US BOR",
-        "type": "Wildlife Refuge",
-        "distMiles": 32
-      },
-      {
         "name": "Sunnyside Country Club",
         "type": "Golf",
-        "distMiles": 36
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
         "distMiles": 36
       },
       {
         "name": "Valley County Pioneer Museum",
         "type": "Museum",
         "distMiles": 37
-      },
-      {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 39
       },
       {
         "name": "Dodson Creek Wildlife Management Area",
@@ -57013,11 +55533,6 @@
     "name": "Scobey",
     "places": [
       {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "Scobey Golf Course",
         "type": "Golf",
         "distMiles": 1
@@ -57058,11 +55573,6 @@
         "distMiles": 47
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 47
-      },
-      {
         "name": "Poplar Museum",
         "type": "Museum",
         "distMiles": 48
@@ -57093,11 +55603,6 @@
         "distMiles": 50
       },
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 52
-      },
-      {
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 52
@@ -57106,11 +55611,6 @@
         "name": "Medicine Lake National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 52
-      },
-      {
-        "name": "Local Government",
-        "type": "Wildlife Refuge",
-        "distMiles": 55
       }
     ]
   },
@@ -58518,11 +57018,6 @@
         "distMiles": 1
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 1
-      },
-      {
         "name": "Williamson Park Campground",
         "type": "Campground",
         "distMiles": 6
@@ -58663,11 +57158,6 @@
         "distMiles": 50
       },
       {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Blackleaf Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 51
@@ -58733,11 +57223,6 @@
         "distMiles": 18
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 18
-      },
-      {
         "name": "Medicine Lake National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 21
@@ -58751,11 +57236,6 @@
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 22
-      },
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 41
       },
       {
         "name": "Scobey Golf Course",
@@ -59563,41 +58043,6 @@
         "distMiles": 32
       },
       {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
         "name": "Vietnam Veterans Memorial",
         "type": "Historic Site",
         "distMiles": 32
@@ -59770,11 +58215,6 @@
       {
         "name": "The Highlands Golf Club",
         "type": "Golf",
-        "distMiles": 34
-      },
-      {
-        "name": "crab cooker",
-        "type": "Lake",
         "distMiles": 34
       },
       {
@@ -62383,11 +60823,6 @@
         "distMiles": 26
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 26
-      },
-      {
         "name": "Veterans Memorial Park",
         "type": "Historic Site",
         "distMiles": 26
@@ -62560,41 +60995,6 @@
       {
         "name": "Trestle Creek Golf Course",
         "type": "Golf",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 11
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
         "distMiles": 11
       },
       {
@@ -62775,11 +61175,6 @@
       {
         "name": "LaRue Hot Springs Museum",
         "type": "Museum",
-        "distMiles": 31
-      },
-      {
-        "name": "crab cooker",
-        "type": "Lake",
         "distMiles": 31
       },
       {
@@ -63528,16 +61923,6 @@
         "distMiles": 36
       },
       {
-        "name": "SureStay Pool",
-        "type": "Lake",
-        "distMiles": 36
-      },
-      {
-        "name": "MT DOT",
-        "type": "Wildlife Refuge",
-        "distMiles": 36
-      },
-      {
         "name": "Range Riders Museum",
         "type": "Museum",
         "distMiles": 37
@@ -63560,16 +61945,6 @@
       {
         "name": "Glendive Dinosaur & Fossil Museum",
         "type": "Museum",
-        "distMiles": 37
-      },
-      {
-        "name": "Miles City Hotel Pool",
-        "type": "Lake",
-        "distMiles": 37
-      },
-      {
-        "name": "Miles City Hotel & Suites Pool",
-        "type": "Lake",
         "distMiles": 37
       },
       {
@@ -63778,11 +62153,6 @@
         "distMiles": 31
       },
       {
-        "name": "crab cooker",
-        "type": "Lake",
-        "distMiles": 31
-      },
-      {
         "name": "Noxon Reservoir",
         "type": "Lake",
         "distMiles": 32
@@ -63810,41 +62180,6 @@
       {
         "name": "LaRue Hot Springs Museum",
         "type": "Museum",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #7",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #6",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #5",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #1",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #2",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #3",
-        "type": "Lake",
-        "distMiles": 32
-      },
-      {
-        "name": "Pool #4",
-        "type": "Lake",
         "distMiles": 32
       },
       {
@@ -64218,11 +62553,6 @@
         "distMiles": 25
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 25
-      },
-      {
         "name": "Corbly Gulch Trailhead",
         "type": "Trailhead",
         "distMiles": 26
@@ -64328,18 +62658,8 @@
         "distMiles": 29
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 29
-      },
-      {
         "name": "Michael P. Malone Centennial Mall",
         "type": "Historic Site",
-        "distMiles": 29
-      },
-      {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
         "distMiles": 29
       },
       {
@@ -64385,11 +62705,6 @@
       {
         "name": "Old Baldy Golf Course",
         "type": "Golf",
-        "distMiles": 31
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 31
       },
       {
@@ -64513,11 +62828,6 @@
         "distMiles": 38
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 38
-      },
-      {
         "name": "The Lunch Room",
         "type": "Campground",
         "distMiles": 39
@@ -64545,11 +62855,6 @@
       {
         "name": "Ennis Fishing Access",
         "type": "Fishing Access",
-        "distMiles": 39
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
         "distMiles": 39
       },
       {
@@ -64620,11 +62925,6 @@
       {
         "name": "Scenic Overlook",
         "type": "Viewpoint",
-        "distMiles": 43
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 43
       },
       {
@@ -64750,11 +63050,6 @@
       {
         "name": "Kiskadden’s Stone Block",
         "type": "Museum",
-        "distMiles": 46
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 46
       },
       {
@@ -65193,11 +63488,6 @@
         "distMiles": 27
       },
       {
-        "name": "East Helena City Pool",
-        "type": "Lake",
-        "distMiles": 27
-      },
-      {
         "name": "Hauser Lake",
         "type": "Lake",
         "distMiles": 28
@@ -65563,11 +63853,6 @@
         "distMiles": 41
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 41
-      },
-      {
         "name": "Lady Smith",
         "type": "Campground",
         "distMiles": 42
@@ -65703,11 +63988,6 @@
         "distMiles": 48
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 48
-      },
-      {
         "name": "Sleeping Giant Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 48
@@ -65783,18 +64063,8 @@
         "distMiles": 50
       },
       {
-        "name": "Bozeman Pool",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Michael P. Malone Centennial Mall",
         "type": "Historic Site",
-        "distMiles": 50
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 50
       },
       {
@@ -65828,16 +64098,6 @@
         "distMiles": 54
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 54
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
-        "distMiles": 56
-      },
-      {
         "name": "Canyon Creek Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 57
@@ -65845,11 +64105,6 @@
       {
         "name": "Gallatin National Forest",
         "type": "National Forest",
-        "distMiles": 58
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 58
       },
       {
@@ -66328,11 +64583,6 @@
         "distMiles": 72
       },
       {
-        "name": "NBC",
-        "type": "Ski Area",
-        "distMiles": 72
-      },
-      {
         "name": "Bigfoot T-Bar (T-bar 2)",
         "type": "Ski Area",
         "distMiles": 72
@@ -66670,11 +64920,6 @@
       {
         "name": "Our Lady of the Rockies Viewport",
         "type": "Viewpoint",
-        "distMiles": 32
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 32
       },
       {
@@ -67168,11 +65413,6 @@
         "distMiles": 50
       },
       {
-        "name": "Hot tub",
-        "type": "Lake",
-        "distMiles": 50
-      },
-      {
         "name": "Lee Metcalf Wilderness (Madison Range)",
         "type": "Wilderness",
         "distMiles": 51
@@ -67318,11 +65558,6 @@
         "distMiles": 22
       },
       {
-        "name": "Shelby Swimming Pool",
-        "type": "Lake",
-        "distMiles": 22
-      },
-      {
         "name": "Lewis & Clark Camping",
         "type": "Campground",
         "distMiles": 23
@@ -67383,11 +65618,6 @@
         "distMiles": 34
       },
       {
-        "name": "Choteau Lions Club Swim Pool",
-        "type": "Lake",
-        "distMiles": 34
-      },
-      {
         "name": "West Fork Teton Campground",
         "type": "Campground",
         "distMiles": 35
@@ -67421,11 +65651,6 @@
         "name": "Ear Mountain Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 38
-      },
-      {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
-        "distMiles": 39
       },
       {
         "name": "Sleeping Wolf Campground",
@@ -67750,11 +65975,6 @@
       {
         "name": "Biltmore Hot Springs",
         "type": "Hot Spring",
-        "distMiles": 28
-      },
-      {
-        "name": "Hot tub",
-        "type": "Lake",
         "distMiles": 28
       },
       {
@@ -68343,24 +66563,9 @@
         "distMiles": 53
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 55
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 55
-      },
-      {
         "name": "Dome Mountain Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 55
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 56
       },
       {
         "name": "Farlin Creek Wilderness Study Area",
@@ -68495,11 +66700,6 @@
       {
         "name": "Deluxe Tent Water & Power",
         "type": "Campground",
-        "distMiles": 3
-      },
-      {
-        "name": "Swimming Pool",
-        "type": "Lake",
         "distMiles": 3
       },
       {
@@ -68745,11 +66945,6 @@
       {
         "name": "Powell County Museum",
         "type": "Museum",
-        "distMiles": 27
-      },
-      {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
         "distMiles": 27
       },
       {
@@ -69318,11 +67513,6 @@
         "distMiles": 49
       },
       {
-        "name": "East Helena City Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Missouri Headwaters State Park",
         "type": "State Park",
         "distMiles": 50
@@ -69774,11 +67964,6 @@
       },
       {
         "name": "Whitey's",
-        "type": "Ski Area",
-        "distMiles": 16
-      },
-      {
-        "name": "NBC",
         "type": "Ski Area",
         "distMiles": 16
       },
@@ -71138,11 +69323,6 @@
         "distMiles": 44
       },
       {
-        "name": "Browning Swimming Pool",
-        "type": "Lake",
-        "distMiles": 44
-      },
-      {
         "name": "Spotted Bear Campground",
         "type": "Campground",
         "distMiles": 45
@@ -71738,11 +69918,6 @@
         "distMiles": 45
       },
       {
-        "name": "Hot tub",
-        "type": "Lake",
-        "distMiles": 45
-      },
-      {
         "name": "Scenic Overlook",
         "type": "Viewpoint",
         "distMiles": 46
@@ -71848,11 +70023,6 @@
         "distMiles": 33
       },
       {
-        "name": "Medicine Lake Pool",
-        "type": "Lake",
-        "distMiles": 33
-      },
-      {
         "name": "Medicine Lake Wilderness",
         "type": "Wildlife Refuge",
         "distMiles": 33
@@ -71880,11 +70050,6 @@
       {
         "name": "Pioneer Town",
         "type": "Museum",
-        "distMiles": 63
-      },
-      {
-        "name": "Scobey Pool",
-        "type": "Lake",
         "distMiles": 63
       },
       {
@@ -72303,11 +70468,6 @@
         "distMiles": 48
       },
       {
-        "name": "East Helena City Pool",
-        "type": "Lake",
-        "distMiles": 48
-      },
-      {
         "name": "Gates of the Mountains Wilderness",
         "type": "Wilderness",
         "distMiles": 49
@@ -72340,11 +70500,6 @@
       {
         "name": "Bridger Bowl",
         "type": "Ski Area",
-        "distMiles": 51
-      },
-      {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
         "distMiles": 51
       },
       {
@@ -72383,11 +70538,6 @@
         "distMiles": 56
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 57
-      },
-      {
         "name": "Sleeping Giant Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 57
@@ -72398,23 +70548,8 @@
         "distMiles": 57
       },
       {
-        "name": "State Trust",
-        "type": "Wildlife Refuge",
-        "distMiles": 58
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
-        "distMiles": 58
-      },
-      {
         "name": "Story Mill Community Park",
         "type": "State Park",
-        "distMiles": 59
-      },
-      {
-        "name": "BLM",
-        "type": "Wildlife Refuge",
         "distMiles": 59
       },
       {
@@ -72559,11 +70694,6 @@
       },
       {
         "name": "Whitey's",
-        "type": "Ski Area",
-        "distMiles": 6
-      },
-      {
-        "name": "NBC",
         "type": "Ski Area",
         "distMiles": 6
       },
@@ -74498,11 +72628,6 @@
         "distMiles": 19
       },
       {
-        "name": "Swimming Pool",
-        "type": "Lake",
-        "distMiles": 21
-      },
-      {
         "name": "Potosi Campground",
         "type": "Campground",
         "distMiles": 22
@@ -75033,11 +73158,6 @@
         "distMiles": 47
       },
       {
-        "name": "MT Corrections",
-        "type": "Wildlife Refuge",
-        "distMiles": 47
-      },
-      {
         "name": "Axolotl Lakes Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 47
@@ -75253,11 +73373,6 @@
         "distMiles": 50
       },
       {
-        "name": "MT University",
-        "type": "Wildlife Refuge",
-        "distMiles": 51
-      },
-      {
         "name": "Blue Eyed Nellie Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 51
@@ -75288,11 +73403,6 @@
         "distMiles": 53
       },
       {
-        "name": "Public Land",
-        "type": "Wildlife Refuge",
-        "distMiles": 54
-      },
-      {
         "name": "Bear Creek Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 54
@@ -75300,11 +73410,6 @@
       {
         "name": "Gallatin National Forest",
         "type": "National Forest",
-        "distMiles": 55
-      },
-      {
-        "name": "USFWS",
-        "type": "Wildlife Refuge",
         "distMiles": 55
       },
       {
@@ -75798,11 +73903,6 @@
     "name": "Winnett",
     "places": [
       {
-        "name": "Winnett Community Pool",
-        "type": "Lake",
-        "distMiles": 0
-      },
-      {
         "name": "War Horse National Wildlife Refuge",
         "type": "Wildlife Refuge",
         "distMiles": 8
@@ -76003,27 +74103,12 @@
         "distMiles": 49
       },
       {
-        "name": "Scobey Pool",
-        "type": "Lake",
-        "distMiles": 49
-      },
-      {
         "name": "Fox Lake Wildlife Management Area",
         "type": "Wildlife Refuge",
         "distMiles": 53
       },
       {
-        "name": "State",
-        "type": "Wildlife Refuge",
-        "distMiles": 56
-      },
-      {
         "name": "Medicine Lake NWR",
-        "type": "Wildlife Refuge",
-        "distMiles": 60
-      },
-      {
-        "name": "Local Government",
         "type": "Wildlife Refuge",
         "distMiles": 60
       }

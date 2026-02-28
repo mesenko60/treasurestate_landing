@@ -274,17 +274,26 @@ function buildRecreation() {
     'Nature Reserve': 'Wildlife Refuge',
     'Picnic Area': 'Campground',
     'Visitor Center': 'Museum',
-    'Swimming Area': 'Lake',
   };
 
+  // Drop junk OSM entries: generic labels, unnamed pools, institutional land parcels
+  const JUNK_RE = /^(Pool\s*#?\d*|#\d+|Swimming Pool|Hot tub|crab cooker|BLM|MT University|Public Land|State Trust|USFWS|US BOR|US DOD|MT DOT|MT FWP|MT Corrections|US Government|Local Government|County|State|NBC|Private)$/i;
+
+  const DROP_TYPES = new Set(['Swimming Area']);
+
+  let dropped = 0;
   for (const osm of osmSites) {
     const key = osm.name.toLowerCase().trim();
-    if (!seenNames.has(key)) {
-      seenNames.add(key);
-      const type = TYPE_MAP[osm.type] || osm.type;
-      allSites.push({ ...osm, type });
-    }
+    if (seenNames.has(key)) continue;
+    if (JUNK_RE.test(osm.name.trim())) { dropped++; continue; }
+    if (osm.name.trim().length <= 3) { dropped++; continue; }
+    if (DROP_TYPES.has(osm.type)) { dropped++; continue; }
+
+    seenNames.add(key);
+    const type = TYPE_MAP[osm.type] || osm.type;
+    allSites.push({ ...osm, type });
   }
+  console.log(`Filtered out ${dropped} low-quality OSM entries`);
 
   console.log(`Merged database: ${allSites.length} total sites (${CURATED_SITES.length} curated + ${allSites.length - CURATED_SITES.length} from OSM)`);
 
