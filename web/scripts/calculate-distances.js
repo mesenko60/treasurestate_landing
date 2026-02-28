@@ -2,12 +2,21 @@ const fs = require('fs');
 const path = require('path');
 
 const AIRPORTS = {
-  BZN: { name: 'Bozeman Yellowstone Int. Airport', lat: 45.7772, lng: -111.1520 },
-  BIL: { name: 'Billings Logan Int. Airport', lat: 45.8077, lng: -108.5429 },
-  MSO: { name: 'Missoula Montana Airport', lat: 46.9163, lng: -114.0906 },
-  FCA: { name: 'Glacier Park Int. Airport (Kalispell)', lat: 48.3106, lng: -114.2562 },
-  GTF: { name: 'Great Falls Int. Airport', lat: 47.4820, lng: -111.3707 },
-  HLN: { name: 'Helena Regional Airport', lat: 46.6068, lng: -111.9828 }
+  // Major commercial airports
+  BZN: { name: 'Bozeman Yellowstone Intl', lat: 45.7772, lng: -111.1520 },
+  BIL: { name: 'Billings Logan Intl', lat: 45.8077, lng: -108.5429 },
+  MSO: { name: 'Missoula Intl', lat: 46.9163, lng: -114.0906 },
+  FCA: { name: 'Glacier Park Intl (Kalispell)', lat: 48.3106, lng: -114.2562 },
+  GTF: { name: 'Great Falls Intl', lat: 47.4820, lng: -111.3707 },
+  HLN: { name: 'Helena Regional', lat: 46.6068, lng: -111.9828 },
+  BTM: { name: 'Bert Mooney (Butte)', lat: 45.9548, lng: -112.4972 },
+  WYS: { name: 'Yellowstone (West Yellowstone)', lat: 44.6884, lng: -111.1176 },
+  // Essential Air Service airports
+  SDY: { name: 'Sidney-Richland', lat: 47.7069, lng: -104.1926 },
+  GGW: { name: 'Glasgow (Wokal Field)', lat: 48.2125, lng: -106.6147 },
+  OLF: { name: 'Wolf Point Intl', lat: 48.0944, lng: -105.5750 },
+  GDV: { name: 'Glendive (Dawson)', lat: 47.1386, lng: -104.8072 },
+  HVR: { name: 'Havre City-County', lat: 48.5430, lng: -109.7622 },
 };
 
 // Haversine formula to calculate straight-line distance in miles

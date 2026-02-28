@@ -49,6 +49,9 @@ type Props = {
 const AIRPORT_NAMES: Record<string, string> = {
   BZN: 'Bozeman', BIL: 'Billings', MSO: 'Missoula',
   FCA: 'Kalispell', GTF: 'Great Falls', HLN: 'Helena',
+  BTM: 'Butte', WYS: 'West Yellowstone',
+  SDY: 'Sidney', GGW: 'Glasgow', OLF: 'Wolf Point',
+  GDV: 'Glendive', HVR: 'Havre',
 };
 
 const REC_ICONS: Record<string, string> = {

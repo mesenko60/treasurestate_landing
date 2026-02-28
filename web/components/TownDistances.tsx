@@ -10,13 +10,20 @@ type TownDistancesProps = {
   distances: Record<string, AirportDistance>;
 };
 
-const AIRPORTS = {
+const AIRPORTS: Record<string, { name: string; icon: string }> = {
   BZN: { name: 'Bozeman (BZN)', icon: '✈️' },
   BIL: { name: 'Billings (BIL)', icon: '✈️' },
   MSO: { name: 'Missoula (MSO)', icon: '✈️' },
   FCA: { name: 'Kalispell (FCA)', icon: '✈️' },
   GTF: { name: 'Great Falls (GTF)', icon: '✈️' },
-  HLN: { name: 'Helena (HLN)', icon: '✈️' }
+  HLN: { name: 'Helena (HLN)', icon: '✈️' },
+  BTM: { name: 'Butte (BTM)', icon: '✈️' },
+  WYS: { name: 'West Yellowstone (WYS)', icon: '✈️' },
+  SDY: { name: 'Sidney (SDY)', icon: '🛩️' },
+  GGW: { name: 'Glasgow (GGW)', icon: '🛩️' },
+  OLF: { name: 'Wolf Point (OLF)', icon: '🛩️' },
+  GDV: { name: 'Glendive (GDV)', icon: '🛩️' },
+  HVR: { name: 'Havre (HVR)', icon: '🛩️' },
 };
 
 export default function TownDistances({ distances }: TownDistancesProps) {
@@ -49,7 +56,7 @@ export default function TownDistances({ distances }: TownDistancesProps) {
         {sortedAirports.map(([code, data]) => (
           <div key={code} style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px solid #eee' }}>
             <div style={{ fontWeight: 'bold', color: '#3b6978', marginBottom: '0.5rem' }}>
-              {(AIRPORTS as any)[code]?.icon} {(AIRPORTS as any)[code]?.name || data.airportName || code}
+              {AIRPORTS[code]?.icon || '✈️'} {AIRPORTS[code]?.name || data.airportName || code}
             </div>
             <div style={{ color: '#555', fontSize: '0.95rem' }}>
               {data.distanceMiles} miles
