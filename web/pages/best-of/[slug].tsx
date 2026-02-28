@@ -17,6 +17,7 @@ type RankedTown = {
   population: number | null;
   highlight: string;
   stats: { label: string; value: string }[];
+  hasGuide: boolean;
 };
 
 type PageData = {
@@ -38,7 +39,9 @@ type DataFreshness = {
   environmental?: string;
 };
 
-type Props = { page: PageData; freshness: DataFreshness };
+type RelatedRanking = { slug: string; title: string };
+
+type Props = { page: PageData; freshness: DataFreshness; relatedRankings: RelatedRanking[] };
 
 function fmt(n: number | null | undefined): string {
   if (n == null) return '—';
@@ -56,7 +59,7 @@ function fmtFresh(dateStr?: string): string {
   return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 
-export default function BestOfPage({ page, freshness }: Props) {
+export default function BestOfPage({ page, freshness, relatedRankings }: Props) {
   const url = `https://treasurestate.com/best-of/${page.slug}/`;
 
   const breadcrumbs = [
@@ -177,14 +180,21 @@ export default function BestOfPage({ page, freshness }: Props) {
                     ))}
                   </div>
 
-                  <div style={{ marginTop: '0.6rem' }}>
+                  <div style={{ marginTop: '0.6rem', display: 'flex', flexWrap: 'wrap', gap: '0.25rem 1rem' }}>
                     <Link href={`/montana-towns/${town.slug}/`} style={{
                       fontSize: '0.82rem', color: '#3b6978', fontWeight: 500, textDecoration: 'none',
                     }}>
                       Explore {town.name} →
                     </Link>
+                    {town.hasGuide && (
+                      <Link href={`/guides/moving-to-${town.slug}-montana/`} style={{
+                        fontSize: '0.82rem', color: '#3b6978', textDecoration: 'none',
+                      }}>
+                        Moving Guide
+                      </Link>
+                    )}
                     <Link href={`/compare?a=${town.slug}`} style={{
-                      fontSize: '0.82rem', color: '#888', marginLeft: '1rem', textDecoration: 'none',
+                      fontSize: '0.82rem', color: '#888', textDecoration: 'none',
                     }}>
                       Compare
                     </Link>
@@ -215,6 +225,26 @@ export default function BestOfPage({ page, freshness }: Props) {
             Rankings are updated when data is refreshed. Check individual town profiles for details.
           </p>
         </div>
+
+        {relatedRankings.length > 0 && (
+          <div style={{ marginTop: '2rem' }}>
+            <h3 style={{ fontSize: '1rem', color: '#204051', marginBottom: '0.75rem' }}>
+              Explore More Rankings
+            </h3>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+              {relatedRankings.map(r => (
+                <Link key={r.slug} href={`/best-of/${r.slug}/`} style={{
+                  display: 'inline-block', padding: '0.4rem 0.85rem',
+                  background: '#f5f8f5', border: '1px solid #dde8dd', borderRadius: '20px',
+                  color: '#3b6978', fontSize: '0.82rem', fontWeight: 500,
+                  textDecoration: 'none',
+                }}>
+                  {r.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <Link href="/best-of/" style={{
@@ -806,6 +836,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   filtered.sort(ranking.sort);
   const top = filtered.slice(0, ranking.count);
 
+  const { hasGuide, getRelatedRankings } = await import('../../lib/cross-links');
+
   const towns: RankedTown[] = top.map((t, i) => ({
     rank: i + 1,
     slug: t.slug,
@@ -814,7 +846,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     population: t.population,
     highlight: ranking.highlight(t),
     stats: ranking.stats(t),
+    hasGuide: hasGuide(t.slug),
   }));
+
+  const relatedRankings = getRelatedRankings(slug);
 
   return {
     props: {
@@ -835,6 +870,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         healthcare: rawFreshness.healthcare?.lastCollected ?? null,
         environmental: rawFreshness.environmental?.lastCollected ?? null,
       },
+      relatedRankings,
     },
   };
 };

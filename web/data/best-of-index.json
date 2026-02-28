@@ -1,0 +1,254 @@
+{
+  "flaxville": [
+    "most-affordable-towns"
+  ],
+  "dodson": [
+    "most-affordable-towns"
+  ],
+  "hingham": [
+    "most-affordable-towns"
+  ],
+  "froid": [
+    "most-affordable-towns"
+  ],
+  "nashua": [
+    "most-affordable-towns"
+  ],
+  "bearcreek": [
+    "most-affordable-towns",
+    "best-ski-towns",
+    "best-fishing-towns",
+    "best-towns-for-retirees"
+  ],
+  "culbertson": [
+    "most-affordable-towns"
+  ],
+  "kevin": [
+    "most-affordable-towns"
+  ],
+  "sunburst": [
+    "most-affordable-towns"
+  ],
+  "glasgow": [
+    "most-affordable-towns",
+    "best-towns-for-young-professionals"
+  ],
+  "alberton": [
+    "best-outdoor-recreation"
+  ],
+  "anaconda": [
+    "best-outdoor-recreation",
+    "towns-near-hot-springs"
+  ],
+  "big-timber": [
+    "best-outdoor-recreation",
+    "best-fishing-towns",
+    "best-housing-availability"
+  ],
+  "bigfork": [
+    "best-outdoor-recreation",
+    "best-towns-near-glacier-yellowstone",
+    "best-climate"
+  ],
+  "boulder": [
+    "best-outdoor-recreation",
+    "towns-near-hot-springs"
+  ],
+  "bozeman": [
+    "best-outdoor-recreation",
+    "best-ski-towns",
+    "towns-near-hot-springs"
+  ],
+  "browning": [
+    "best-outdoor-recreation",
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "butte": [
+    "best-outdoor-recreation"
+  ],
+  "choteau": [
+    "best-outdoor-recreation",
+    "best-towns-for-retirees",
+    "best-climate",
+    "best-towns-for-families"
+  ],
+  "darby": [
+    "best-outdoor-recreation",
+    "best-small-towns",
+    "best-towns-for-families"
+  ],
+  "red-lodge": [
+    "best-ski-towns",
+    "best-fishing-towns"
+  ],
+  "big-sky": [
+    "best-ski-towns",
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "whitefish": [
+    "best-ski-towns",
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "philipsburg": [
+    "best-ski-towns",
+    "best-housing-availability"
+  ],
+  "neihart": [
+    "best-ski-towns"
+  ],
+  "columbia-falls": [
+    "best-ski-towns",
+    "best-towns-near-glacier-yellowstone",
+    "best-climate"
+  ],
+  "kalispell": [
+    "best-ski-towns",
+    "best-towns-near-glacier-yellowstone",
+    "best-climate"
+  ],
+  "libby": [
+    "best-ski-towns"
+  ],
+  "columbus": [
+    "best-fishing-towns"
+  ],
+  "joliet": [
+    "best-fishing-towns",
+    "best-towns-for-retirees"
+  ],
+  "bridger": [
+    "best-fishing-towns",
+    "best-small-towns",
+    "best-towns-for-retirees",
+    "best-towns-for-families"
+  ],
+  "fromberg": [
+    "best-fishing-towns"
+  ],
+  "gardiner": [
+    "best-fishing-towns",
+    "towns-near-hot-springs",
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "livingston": [
+    "best-fishing-towns"
+  ],
+  "stevensville": [
+    "best-fishing-towns",
+    "best-towns-for-retirees",
+    "best-housing-availability"
+  ],
+  "white-sulphur-springs": [
+    "towns-near-hot-springs",
+    "best-small-towns",
+    "best-housing-availability"
+  ],
+  "helena": [
+    "towns-near-hot-springs"
+  ],
+  "hot-springs": [
+    "towns-near-hot-springs",
+    "best-housing-availability"
+  ],
+  "east-helena": [
+    "towns-near-hot-springs"
+  ],
+  "whitehall": [
+    "towns-near-hot-springs",
+    "best-climate"
+  ],
+  "twin-bridges": [
+    "towns-near-hot-springs"
+  ],
+  "conrad": [
+    "best-small-towns",
+    "best-towns-for-retirees",
+    "best-towns-for-families",
+    "best-towns-for-young-professionals"
+  ],
+  "thompson-falls": [
+    "best-small-towns",
+    "best-housing-availability"
+  ],
+  "baker": [
+    "best-small-towns",
+    "best-towns-for-retirees",
+    "best-towns-for-families"
+  ],
+  "ennis": [
+    "best-small-towns",
+    "best-towns-for-families",
+    "best-housing-availability"
+  ],
+  "deer-lodge": [
+    "best-small-towns",
+    "best-towns-for-retirees",
+    "best-towns-for-families",
+    "best-towns-for-young-professionals"
+  ],
+  "dillon": [
+    "best-small-towns",
+    "best-towns-for-young-professionals"
+  ],
+  "glendive": [
+    "best-small-towns",
+    "best-towns-for-families",
+    "best-towns-for-young-professionals"
+  ],
+  "east-glacier": [
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "west-glacier": [
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "west-yellowstone": [
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "hardin": [
+    "best-towns-for-retirees",
+    "best-towns-for-young-professionals"
+  ],
+  "fort-benton": [
+    "best-towns-for-retirees",
+    "best-towns-for-families"
+  ],
+  "eureka": [
+    "best-climate"
+  ],
+  "rexford": [
+    "best-climate"
+  ],
+  "harlowton": [
+    "best-climate"
+  ],
+  "polson": [
+    "best-climate"
+  ],
+  "drummond": [
+    "best-climate"
+  ],
+  "chinook": [
+    "best-towns-for-families"
+  ],
+  "shelby": [
+    "best-towns-for-young-professionals"
+  ],
+  "malta": [
+    "best-towns-for-young-professionals"
+  ],
+  "belgrade": [
+    "best-towns-for-young-professionals"
+  ],
+  "miles-city": [
+    "best-towns-for-young-professionals"
+  ],
+  "belt": [
+    "best-housing-availability"
+  ],
+  "sheridan": [
+    "best-housing-availability"
+  ],
+  "roundup": [
+    "best-housing-availability"
+  ]
+}

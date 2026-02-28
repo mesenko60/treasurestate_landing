@@ -537,6 +537,15 @@ export default function CompareTool({ towns }: Props) {
             </div>
           </div>
         )}
+
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2.5rem', flexWrap: 'wrap' }}>
+          <Link href="/best-of/" style={{ padding: '0.6rem 1.25rem', background: '#f5f8f5', border: '1px solid #dde8dd', borderRadius: '6px', color: '#3b6978', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
+            Best Of Rankings
+          </Link>
+          <Link href="/guides/" style={{ padding: '0.6rem 1.25rem', background: '#f5f8f5', border: '1px solid #dde8dd', borderRadius: '6px', color: '#3b6978', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
+            Moving Guides
+          </Link>
+        </div>
       </main>
 
       <Footer />

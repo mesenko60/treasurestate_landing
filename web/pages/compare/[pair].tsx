@@ -42,9 +42,13 @@ type TownData = {
   recreation: RecSummary | null;
 };
 
+type GuideLink = { name: string; href: string } | null;
+
 type Props = {
   townA: TownData;
   townB: TownData;
+  guideA: GuideLink;
+  guideB: GuideLink;
 };
 
 const AIRPORT_NAMES: Record<string, string> = {
@@ -83,7 +87,7 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
   );
 }
 
-export default function ComparePage({ townA, townB }: Props) {
+export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
   const title = `${townA.name} vs ${townB.name}, Montana — Side by Side Comparison`;
   const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side — population, climate, schools, recreation, and more.`;
   const url = `https://treasurestate.com/compare/${townA.slug}-vs-${townB.slug}/`;
@@ -242,6 +246,21 @@ export default function ComparePage({ townA, townB }: Props) {
             </Link>
           </div>
 
+          {(guideA || guideB) && (
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap' }}>
+              {guideA && (
+                <Link href={guideA.href} style={{ fontSize: '0.88rem', color: '#3b6978', fontWeight: 500, textDecoration: 'none' }}>
+                  Moving to {guideA.name} Guide →
+                </Link>
+              )}
+              {guideB && (
+                <Link href={guideB.href} style={{ fontSize: '0.88rem', color: '#3b6978', fontWeight: 500, textDecoration: 'none' }}>
+                  Moving to {guideB.name} Guide →
+                </Link>
+              )}
+            </div>
+          )}
+
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <Link href="/compare/" style={{ color: '#3b6978', fontWeight: 500 }}>
               ← Compare different towns
@@ -396,10 +415,14 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     };
   }
 
+  const { guideLink } = await import('../../lib/cross-links');
+
   return {
     props: {
       townA: buildTown(slugA),
       townB: buildTown(slugB),
+      guideA: guideLink(slugA) ? { name: townData[slugA]?.name || slugA, href: `/guides/moving-to-${slugA}-montana/` } : null,
+      guideB: guideLink(slugB) ? { name: townData[slugB]?.name || slugB, href: `/guides/moving-to-${slugB}-montana/` } : null,
     }
   };
 };

@@ -78,6 +78,12 @@ if $DO_ALL; then
   echo ""
 fi
 
+# --- Pre-build index ---
+
+echo ">>> Generating best-of cross-link index..."
+node scripts/generate-best-of-index.js
+echo ""
+
 # --- Rebuild ---
 
 if $DO_BUILD; then

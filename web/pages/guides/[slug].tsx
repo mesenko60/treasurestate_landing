@@ -27,7 +27,9 @@ type GuideData = {
 
 type FreshnessMap = Record<string, { lastCollected?: string; vintage?: string }>;
 
-type Props = { guide: GuideData; freshness: FreshnessMap };
+type RankingLink = { label: string; href: string };
+
+type Props = { guide: GuideData; freshness: FreshnessMap; rankings: RankingLink[] };
 
 /* ─── Page Component ─────────────────────────────────────── */
 
@@ -37,7 +39,7 @@ function fmtFresh(dateStr?: string): string {
   return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 
-export default function GuidePage({ guide, freshness }: Props) {
+export default function GuidePage({ guide, freshness, rankings }: Props) {
   const url = `https://treasurestate.com/guides/${guide.slug}/`;
 
   const breadcrumbs = [
@@ -142,6 +144,26 @@ export default function GuidePage({ guide, freshness }: Props) {
             All data reflects conditions at the time of collection and may not represent current conditions.
             Verify critical information (housing prices, job availability, school enrollment) directly with local sources before making relocation decisions.
           </div>
+
+          {rankings.length > 0 && (
+            <div style={{ marginTop: '2rem', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
+              <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
+                {guide.townName} in Our Rankings
+              </h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                {rankings.map(r => (
+                  <Link key={r.href} href={r.href} style={{
+                    display: 'inline-block', padding: '0.4rem 0.85rem',
+                    background: '#fff', border: '1px solid #cddccd', borderRadius: '20px',
+                    color: '#3b6978', fontSize: '0.85rem', fontWeight: 500,
+                    textDecoration: 'none',
+                  }}>
+                    {r.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="cta-box" style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#204051' }}>Ready to learn more?</p>
@@ -528,5 +550,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
 
   const guide = movingGuide(bundle);
 
-  return { props: { guide, freshness: rawFreshness } };
+  const { rankingLinks } = await import('../../lib/cross-links');
+  const rankings = rankingLinks(townSlug);
+
+  return { props: { guide, freshness: rawFreshness, rankings } };
 };

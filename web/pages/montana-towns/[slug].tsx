@@ -102,9 +102,10 @@ type Props = {
     nearestHospital: string | null;
     nearestHospitalDist: number | null;
   } | null;
+  crossLinks: { label: string; href: string }[];
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks }: Props) {
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana — ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -174,6 +175,25 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
+          {crossLinks.length > 0 && (
+            <div style={{ margin: '2rem 0', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
+              <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
+                {townName} in Our Rankings &amp; Guides
+              </h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                {crossLinks.map(link => (
+                  <Link key={link.href} href={link.href} style={{
+                    display: 'inline-block', padding: '0.4rem 0.85rem',
+                    background: '#fff', border: '1px solid #cddccd', borderRadius: '20px',
+                    color: '#3b6978', fontSize: '0.85rem', fontWeight: 500,
+                    textDecoration: 'none', transition: 'background 0.2s',
+                  }}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
             <Link href={`/compare?a=${slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
               Compare {townName} with Another Town
@@ -349,6 +369,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     }
   } catch (e) { /* ignore */ }
 
+  const { allCrossLinks } = await import('../../lib/cross-links');
+  const crossLinks = allCrossLinks(slug);
+
   const rawEconomy = allEconomyData[slug];
   const rawHealthcare = allHealthcareData[slug];
   const rawHousing = allHousingData[slug];
@@ -407,6 +430,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         nearestHospital: rawHealthcare.nearestHospital ?? null,
         nearestHospitalDist: rawHealthcare.nearestHospitalDist ?? null,
       } : null,
+      crossLinks,
     } 
   };
 };
