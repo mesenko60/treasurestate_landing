@@ -86,6 +86,24 @@ const CURATED_SITES = [
   { name: 'Lake Mary Ronan', type: 'Lake', lat: 47.8900, lng: -114.3900 },
   { name: 'Tiber Reservoir', type: 'Lake', lat: 48.3000, lng: -111.1000 },
   { name: 'Deadmans Basin Reservoir', type: 'Lake', lat: 46.3200, lng: -109.4200 },
+  { name: 'Lindbergh Lake', type: 'Lake', lat: 47.4000, lng: -113.6700 },
+  { name: 'Lake Inez', type: 'Lake', lat: 47.2000, lng: -113.5200 },
+  { name: 'Placid Lake', type: 'Lake', lat: 47.1500, lng: -113.5500 },
+  { name: 'Lake Alva', type: 'Lake', lat: 47.2300, lng: -113.5600 },
+  { name: 'Rainy Lake', type: 'Lake', lat: 47.2500, lng: -113.5400 },
+  { name: 'Browns Lake', type: 'Lake', lat: 47.3100, lng: -113.5300 },
+  { name: 'Clearwater Lake', type: 'Lake', lat: 47.2000, lng: -113.5000 },
+  { name: 'Upsata Lake', type: 'Lake', lat: 47.0900, lng: -113.3600 },
+  { name: 'Blanchard Lake', type: 'Lake', lat: 47.1000, lng: -113.5800 },
+  { name: 'Ennis Lake', type: 'Lake', lat: 45.5200, lng: -111.7200 },
+  { name: 'Wade Lake', type: 'Lake', lat: 44.8800, lng: -111.6400 },
+  { name: 'Lake Como', type: 'Lake', lat: 46.0600, lng: -114.2200 },
+  { name: 'Painted Rocks Reservoir', type: 'Lake', lat: 45.6800, lng: -114.3000 },
+  { name: 'Elbow Lake', type: 'Lake', lat: 47.2600, lng: -113.5000 },
+  { name: 'Big Salmon Lake', type: 'Lake', lat: 47.3500, lng: -113.2000 },
+  { name: 'Cliff Lake', type: 'Lake', lat: 44.8200, lng: -111.5100 },
+  { name: 'Dailey Lake', type: 'Lake', lat: 45.4800, lng: -110.7100 },
+  { name: 'Hyalite Reservoir', type: 'Lake', lat: 45.5300, lng: -111.0400 },
 
   // === RIVERS (blue-ribbon fishing) ===
   { name: 'Missouri River (Great Falls)', type: 'River', lat: 47.5100, lng: -111.2800 },
@@ -240,6 +258,8 @@ const RADIUS_BY_TYPE = {
   'State Park': 60,
   'Hot Spring': 60,
   'Wildlife Refuge': 60,
+  'Lake': 60,
+  'River': 60,
 };
 const DEFAULT_RADIUS = 50;
 const MIN_SITES = 10;

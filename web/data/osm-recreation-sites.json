@@ -10012,5 +10012,4319 @@
     "type": "Nature Reserve",
     "lat": 48.2817051,
     "lng": -114.9015521
+  },
+  {
+    "name": "Abandoned Lake",
+    "type": "Lake",
+    "lat": 45.0096,
+    "lng": -109.6032
+  },
+  {
+    "name": "Abel Reservoir",
+    "type": "Lake",
+    "lat": 45.7253,
+    "lng": -104.1888
+  },
+  {
+    "name": "Adair Reservoir",
+    "type": "Lake",
+    "lat": 48.6402,
+    "lng": -107.6629
+  },
+  {
+    "name": "Aeneas Lake",
+    "type": "Lake",
+    "lat": 48.1395,
+    "lng": -113.9079
+  },
+  {
+    "name": "Aichele Lake",
+    "type": "Lake",
+    "lat": 46.3293,
+    "lng": -114.3651
+  },
+  {
+    "name": "Ainger Lake",
+    "type": "Lake",
+    "lat": 45.9292,
+    "lng": -110.9689
+  },
+  {
+    "name": "Aitken Reservoir",
+    "type": "Lake",
+    "lat": 48.118,
+    "lng": -106.7203
+  },
+  {
+    "name": "Albicaulis Lake",
+    "type": "Lake",
+    "lat": 46.3326,
+    "lng": -113.0613
+  },
+  {
+    "name": "Albino Lake",
+    "type": "Lake",
+    "lat": 45.0142,
+    "lng": -109.5808
+  },
+  {
+    "name": "Aldridge Lake",
+    "type": "Lake",
+    "lat": 45.0912,
+    "lng": -110.8119
+  },
+  {
+    "name": "Aldrin Reservoir",
+    "type": "Lake",
+    "lat": 48.0987,
+    "lng": -106.8812
+  },
+  {
+    "name": "Alp Lake",
+    "type": "Lake",
+    "lat": 45.0543,
+    "lng": -109.6481
+  },
+  {
+    "name": "Alpine Lake",
+    "type": "Lake",
+    "lat": 45.4626,
+    "lng": -110.418
+  },
+  {
+    "name": "Anchor Lake",
+    "type": "Lake",
+    "lat": 45.4341,
+    "lng": -113.0014
+  },
+  {
+    "name": "Anderson Lake",
+    "type": "Lake",
+    "lat": 47.4712,
+    "lng": -112.5886
+  },
+  {
+    "name": "Anvil Lake",
+    "type": "Lake",
+    "lat": 45.1002,
+    "lng": -109.9634
+  },
+  {
+    "name": "Arapooash Lake",
+    "type": "Lake",
+    "lat": 45.2461,
+    "lng": -109.8476
+  },
+  {
+    "name": "Arod Lakes",
+    "type": "Lake",
+    "lat": 47.9948,
+    "lng": -112.0258
+  },
+  {
+    "name": "Arrastra Lake",
+    "type": "Lake",
+    "lat": 45.2413,
+    "lng": -110.6171
+  },
+  {
+    "name": "Arrowhead Lake",
+    "type": "Lake",
+    "lat": 45.0326,
+    "lng": -109.6057
+  },
+  {
+    "name": "Asteroid Lake",
+    "type": "Lake",
+    "lat": 45.2716,
+    "lng": -110.0151
+  },
+  {
+    "name": "Astral Lake",
+    "type": "Lake",
+    "lat": 45.0931,
+    "lng": -109.9019
+  },
+  {
+    "name": "Avalanche Lake",
+    "type": "Lake",
+    "lat": 45.1821,
+    "lng": -109.811
+  },
+  {
+    "name": "B and B Fishpond",
+    "type": "Lake",
+    "lat": 46.0735,
+    "lng": -112.416
+  },
+  {
+    "name": "Badger Reservoir",
+    "type": "Lake",
+    "lat": 48.1228,
+    "lng": -106.8217
+  },
+  {
+    "name": "Bailey Lake",
+    "type": "Lake",
+    "lat": 48.471,
+    "lng": -114.1327
+  },
+  {
+    "name": "Baker Lake",
+    "type": "Lake",
+    "lat": 45.8917,
+    "lng": -114.2631
+  },
+  {
+    "name": "Barb Reservoir",
+    "type": "Lake",
+    "lat": 47.9011,
+    "lng": -106.802
+  },
+  {
+    "name": "Barker Lakes",
+    "type": "Lake",
+    "lat": 46.1033,
+    "lng": -113.1226
+  },
+  {
+    "name": "Barrier Lake",
+    "type": "Lake",
+    "lat": 45.2503,
+    "lng": -110.0551
+  },
+  {
+    "name": "Basin Creek Lake",
+    "type": "Lake",
+    "lat": 45.1457,
+    "lng": -109.4292
+  },
+  {
+    "name": "Bass Lake",
+    "type": "Lake",
+    "lat": 48.824,
+    "lng": -114.9583
+  },
+  {
+    "name": "Bean Lake",
+    "type": "Lake",
+    "lat": 47.3057,
+    "lng": -112.4305
+  },
+  {
+    "name": "Bear Lake",
+    "type": "Lake",
+    "lat": 47.6217,
+    "lng": -112.9944
+  },
+  {
+    "name": "Beast Reservoir",
+    "type": "Lake",
+    "lat": 47.8865,
+    "lng": -106.8974
+  },
+  {
+    "name": "Beauty Lake",
+    "type": "Lake",
+    "lat": 45.1058,
+    "lng": -109.9712
+  },
+  {
+    "name": "Beckwourth Lake",
+    "type": "Lake",
+    "lat": 45.2115,
+    "lng": -109.8952
+  },
+  {
+    "name": "Beechnut Reservoir",
+    "type": "Lake",
+    "lat": 48.1364,
+    "lng": -107.1048
+  },
+  {
+    "name": "Beley Pond",
+    "type": "Lake",
+    "lat": 45.8672,
+    "lng": -109.9935
+  },
+  {
+    "name": "Bend Reservoir",
+    "type": "Lake",
+    "lat": 48.0118,
+    "lng": -107.1449
+  },
+  {
+    "name": "Berger Reservoir",
+    "type": "Lake",
+    "lat": 47.8877,
+    "lng": -106.6812
+  },
+  {
+    "name": "Bielenberg Lake",
+    "type": "Lake",
+    "lat": 46.4206,
+    "lng": -113.0896
+  },
+  {
+    "name": "Big Butte Lake",
+    "type": "Lake",
+    "lat": 45.0616,
+    "lng": -109.7025
+  },
+  {
+    "name": "Big Creek Lake 1",
+    "type": "Lake",
+    "lat": 46.4859,
+    "lng": -114.3649
+  },
+  {
+    "name": "Big Creek Lake 2",
+    "type": "Lake",
+    "lat": 46.4821,
+    "lng": -114.3931
+  },
+  {
+    "name": "Big Creek Lake 4",
+    "type": "Lake",
+    "lat": 46.4962,
+    "lng": -114.3952
+  },
+  {
+    "name": "Big Foot Lake",
+    "type": "Lake",
+    "lat": 45.18,
+    "lng": -109.8795
+  },
+  {
+    "name": "Big Fork Reservoir",
+    "type": "Lake",
+    "lat": 48.051,
+    "lng": -106.794
+  },
+  {
+    "name": "Big Hawk Lake",
+    "type": "Lake",
+    "lat": 48.0988,
+    "lng": -113.8578
+  },
+  {
+    "name": "Big Moose Lake",
+    "type": "Lake",
+    "lat": 45.0021,
+    "lng": -109.7635
+  },
+  {
+    "name": "Big Park Lake",
+    "type": "Lake",
+    "lat": 45.1247,
+    "lng": -109.7223
+  },
+  {
+    "name": "Big Pozega Lake",
+    "type": "Lake",
+    "lat": 46.2845,
+    "lng": -113.0719
+  },
+  {
+    "name": "Big Rock Detention Reservoir",
+    "type": "Lake",
+    "lat": 48.088,
+    "lng": -106.9633
+  },
+  {
+    "name": "Big Salmon Lake",
+    "type": "Lake",
+    "lat": 47.6025,
+    "lng": -113.3904
+  },
+  {
+    "name": "Bighorn Lake",
+    "type": "Lake",
+    "lat": 47.1883,
+    "lng": -112.6059
+  },
+  {
+    "name": "Bill Lake",
+    "type": "Lake",
+    "lat": 45.2961,
+    "lng": -110.0038
+  },
+  {
+    "name": "Birch Lake",
+    "type": "Lake",
+    "lat": 48.1396,
+    "lng": -113.9154
+  },
+  {
+    "name": "Bismark Reservoir",
+    "type": "Lake",
+    "lat": 45.6079,
+    "lng": -112.0535
+  },
+  {
+    "name": "Bison Retriever Lake",
+    "type": "Lake",
+    "lat": 46.0694,
+    "lng": -112.4224
+  },
+  {
+    "name": "Black Canyon Lake",
+    "type": "Lake",
+    "lat": 45.069,
+    "lng": -109.534
+  },
+  {
+    "name": "Black Lake",
+    "type": "Lake",
+    "lat": 47.1947,
+    "lng": -113.7154
+  },
+  {
+    "name": "Black Sea Reservoir",
+    "type": "Lake",
+    "lat": 46.6651,
+    "lng": -107.3168
+  },
+  {
+    "name": "Blackfoot Lake",
+    "type": "Lake",
+    "lat": 48.1829,
+    "lng": -113.9225
+  },
+  {
+    "name": "Blacktail Lake",
+    "type": "Lake",
+    "lat": 45.5348,
+    "lng": -110.4282
+  },
+  {
+    "name": "Blanchard Lake",
+    "type": "Lake",
+    "lat": 47.0192,
+    "lng": -113.3819
+  },
+  {
+    "name": "Blanchard Reservoir",
+    "type": "Lake",
+    "lat": 48.06,
+    "lng": -106.7295
+  },
+  {
+    "name": "Bliss Reservoir",
+    "type": "Lake",
+    "lat": 48.0148,
+    "lng": -106.8764
+  },
+  {
+    "name": "Blue Lake",
+    "type": "Lake",
+    "lat": 48.6578,
+    "lng": -114.7672
+  },
+  {
+    "name": "Bob Lake",
+    "type": "Lake",
+    "lat": 45.0864,
+    "lng": -109.9187
+  },
+  {
+    "name": "Bohn Lake",
+    "type": "Lake",
+    "lat": 46.3152,
+    "lng": -112.9605
+  },
+  {
+    "name": "Bond Lake",
+    "type": "Lake",
+    "lat": 45.4453,
+    "lng": -112.8759
+  },
+  {
+    "name": "Boot Lake",
+    "type": "Lake",
+    "lat": 45.4312,
+    "lng": -112.9741
+  },
+  {
+    "name": "Boundary Lake",
+    "type": "Lake",
+    "lat": 48.9962,
+    "lng": -112.4453
+  },
+  {
+    "name": "Boundary Reservoir",
+    "type": "Lake",
+    "lat": 48.0281,
+    "lng": -106.9187
+  },
+  {
+    "name": "Bowback Lake",
+    "type": "Lake",
+    "lat": 45.122,
+    "lng": -109.6006
+  },
+  {
+    "name": "Braziel Lake",
+    "type": "Lake",
+    "lat": 46.7885,
+    "lng": -112.8303
+  },
+  {
+    "name": "Brent Lake",
+    "type": "Lake",
+    "lat": 45.1738,
+    "lng": -109.7556
+  },
+  {
+    "name": "Bridge Lake",
+    "type": "Lake",
+    "lat": 45.266,
+    "lng": -110.3459
+  },
+  {
+    "name": "Broadwater Lake",
+    "type": "Lake",
+    "lat": 45.0618,
+    "lng": -109.8491
+  },
+  {
+    "name": "Broadwater Meadow Lake",
+    "type": "Lake",
+    "lat": 45.0432,
+    "lng": -109.8478
+  },
+  {
+    "name": "Brown Lake",
+    "type": "Lake",
+    "lat": 45.2078,
+    "lng": -109.8741
+  },
+  {
+    "name": "Bryan Lake",
+    "type": "Lake",
+    "lat": 46.4196,
+    "lng": -114.3783
+  },
+  {
+    "name": "Buck Lake",
+    "type": "Lake",
+    "lat": 45.8688,
+    "lng": -113.6631
+  },
+  {
+    "name": "Buckingham Reservoir",
+    "type": "Lake",
+    "lat": 46.6576,
+    "lng": -110.9538
+  },
+  {
+    "name": "Bunker Lake",
+    "type": "Lake",
+    "lat": 47.8723,
+    "lng": -113.6552
+  },
+  {
+    "name": "Burgess Reservoir",
+    "type": "Lake",
+    "lat": 48.0162,
+    "lng": -104.1359
+  },
+  {
+    "name": "Burke Lake",
+    "type": "Lake",
+    "lat": 48.9901,
+    "lng": -115.9572
+  },
+  {
+    "name": "Burnt Bacon Lake",
+    "type": "Lake",
+    "lat": 45.0121,
+    "lng": -109.6599
+  },
+  {
+    "name": "Burnt Fork Lake",
+    "type": "Lake",
+    "lat": 46.3011,
+    "lng": -113.8398
+  },
+  {
+    "name": "Bynum Reservoir",
+    "type": "Lake",
+    "lat": 47.946,
+    "lng": -112.4349
+  },
+  {
+    "name": "Cameron Lake",
+    "type": "Lake",
+    "lat": 48.9982,
+    "lng": -114.054
+  },
+  {
+    "name": "Camp Reservoir",
+    "type": "Lake",
+    "lat": 47.8766,
+    "lng": -107.1045
+  },
+  {
+    "name": "Campfire Lake",
+    "type": "Lake",
+    "lat": 46.069,
+    "lng": -110.4013
+  },
+  {
+    "name": "Canyon Lake",
+    "type": "Lake",
+    "lat": 46.2449,
+    "lng": -114.3318
+  },
+  {
+    "name": "Carpenter Lake",
+    "type": "Lake",
+    "lat": 45.12,
+    "lng": -110.3985
+  },
+  {
+    "name": "Caruthers Lake",
+    "type": "Lake",
+    "lat": 46.3336,
+    "lng": -113.0105
+  },
+  {
+    "name": "Castle Lake",
+    "type": "Lake",
+    "lat": 45.1414,
+    "lng": -110.612
+  },
+  {
+    "name": "Castle Rock Lake",
+    "type": "Lake",
+    "lat": 45.8931,
+    "lng": -106.6419
+  },
+  {
+    "name": "Cataract Lake",
+    "type": "Lake",
+    "lat": 45.2799,
+    "lng": -109.8969
+  },
+  {
+    "name": "Cave Lake",
+    "type": "Lake",
+    "lat": 46.0702,
+    "lng": -110.3223
+  },
+  {
+    "name": "Cavity Lake",
+    "type": "Lake",
+    "lat": 45.1345,
+    "lng": -109.9187
+  },
+  {
+    "name": "Cedar Lake",
+    "type": "Lake",
+    "lat": 48.4305,
+    "lng": -114.1922
+  },
+  {
+    "name": "Chalice Lake",
+    "type": "Lake",
+    "lat": 45.3155,
+    "lng": -110.066
+  },
+  {
+    "name": "Charlie White Lake",
+    "type": "Lake",
+    "lat": 45.1243,
+    "lng": -110.5173
+  },
+  {
+    "name": "Chessman Reservoir",
+    "type": "Lake",
+    "lat": 46.4706,
+    "lng": -112.189
+  },
+  {
+    "name": "Chilled Lakes",
+    "type": "Lake",
+    "lat": 45.3743,
+    "lng": -111.381
+  },
+  {
+    "name": "Christopher Lake",
+    "type": "Lake",
+    "lat": 47.783,
+    "lng": -113.1396
+  },
+  {
+    "name": "Chrome Lake",
+    "type": "Lake",
+    "lat": 45.3507,
+    "lng": -109.7969
+  },
+  {
+    "name": "Cimmerian Lake",
+    "type": "Lake",
+    "lat": 45.2954,
+    "lng": -110.0272
+  },
+  {
+    "name": "Cirque Lake",
+    "type": "Lake",
+    "lat": 45.2373,
+    "lng": -110.085
+  },
+  {
+    "name": "Cladocera Lake",
+    "type": "Lake",
+    "lat": 45.0723,
+    "lng": -109.6611
+  },
+  {
+    "name": "Clam Lake",
+    "type": "Lake",
+    "lat": 45.2661,
+    "lng": -110.0649
+  },
+  {
+    "name": "Clear Lake",
+    "type": "Lake",
+    "lat": 47.2692,
+    "lng": -115.4078
+  },
+  {
+    "name": "Cliff Lake",
+    "type": "Lake",
+    "lat": 44.7701,
+    "lng": -111.5468
+  },
+  {
+    "name": "Clover Reservoir",
+    "type": "Lake",
+    "lat": 48.0228,
+    "lng": -107.214
+  },
+  {
+    "name": "Cold Lake",
+    "type": "Lake",
+    "lat": 45.1928,
+    "lng": -109.8084
+  },
+  {
+    "name": "Colley Lake",
+    "type": "Lake",
+    "lat": 45.2286,
+    "lng": -110.4335
+  },
+  {
+    "name": "Collins Reservoir",
+    "type": "Lake",
+    "lat": 47.8981,
+    "lng": -106.8948
+  },
+  {
+    "name": "Comet Lake",
+    "type": "Lake",
+    "lat": 45.2759,
+    "lng": -110.015
+  },
+  {
+    "name": "Companion Lake",
+    "type": "Lake",
+    "lat": 45.0824,
+    "lng": -109.9035
+  },
+  {
+    "name": "Conleys Lake",
+    "type": "Lake",
+    "lat": 46.3868,
+    "lng": -112.8514
+  },
+  {
+    "name": "Copeland Lake",
+    "type": "Lake",
+    "lat": 45.0057,
+    "lng": -109.7267
+  },
+  {
+    "name": "Copepod Lake",
+    "type": "Lake",
+    "lat": 45.07,
+    "lng": -109.6521
+  },
+  {
+    "name": "Copper Lake",
+    "type": "Lake",
+    "lat": 47.4236,
+    "lng": -115.705
+  },
+  {
+    "name": "Corkscrew Lake",
+    "type": "Lake",
+    "lat": 45.1972,
+    "lng": -109.9551
+  },
+  {
+    "name": "Corner Lake",
+    "type": "Lake",
+    "lat": 45.0714,
+    "lng": -109.9004
+  },
+  {
+    "name": "Corner Reservoir",
+    "type": "Lake",
+    "lat": 45.2711,
+    "lng": -106.3003
+  },
+  {
+    "name": "Cott Lake",
+    "type": "Lake",
+    "lat": 47.1041,
+    "lng": -113.3412
+  },
+  {
+    "name": "Cottonwood Lake",
+    "type": "Lake",
+    "lat": 46.0384,
+    "lng": -110.342
+  },
+  {
+    "name": "Cottonwood Reservoir",
+    "type": "Lake",
+    "lat": 47.9058,
+    "lng": -106.918
+  },
+  {
+    "name": "Cracker Lake",
+    "type": "Lake",
+    "lat": 48.7441,
+    "lng": -113.6437
+  },
+  {
+    "name": "Cradle Lake",
+    "type": "Lake",
+    "lat": 45.0698,
+    "lng": -109.7737
+  },
+  {
+    "name": "Crag Lake",
+    "type": "Lake",
+    "lat": 45.0578,
+    "lng": -110.9789
+  },
+  {
+    "name": "Crater Lake",
+    "type": "Lake",
+    "lat": 45.3146,
+    "lng": -109.6479
+  },
+  {
+    "name": "Creedman Reservoir",
+    "type": "Lake",
+    "lat": 48.9643,
+    "lng": -109.762
+  },
+  {
+    "name": "Cresent Lake",
+    "type": "Lake",
+    "lat": 45.474,
+    "lng": -110.9632
+  },
+  {
+    "name": "Crimson Lake",
+    "type": "Lake",
+    "lat": 47.3001,
+    "lng": -113.3426
+  },
+  {
+    "name": "Crisafulli Lake",
+    "type": "Lake",
+    "lat": 47.1321,
+    "lng": -104.7473
+  },
+  {
+    "name": "Crow Lake",
+    "type": "Lake",
+    "lat": 45.1784,
+    "lng": -109.5711
+  },
+  {
+    "name": "Crystal Lake",
+    "type": "Lake",
+    "lat": 45.3683,
+    "lng": -110.3932
+  },
+  {
+    "name": "Curl Lake",
+    "type": "Lake",
+    "lat": 45.0522,
+    "lng": -109.8422
+  },
+  {
+    "name": "Cutler Lake",
+    "type": "Lake",
+    "lat": 45.152,
+    "lng": -110.8282
+  },
+  {
+    "name": "Dailey Lake",
+    "type": "Lake",
+    "lat": 45.2625,
+    "lng": -110.8162
+  },
+  {
+    "name": "Dallmann Lake",
+    "type": "Lake",
+    "lat": 45.9646,
+    "lng": -109.2371
+  },
+  {
+    "name": "Daly Lake",
+    "type": "Lake",
+    "lat": 45.0453,
+    "lng": -109.4678
+  },
+  {
+    "name": "Dead Dog Lake",
+    "type": "Lake",
+    "lat": 48.545,
+    "lng": -113.0229
+  },
+  {
+    "name": "Dead Lake",
+    "type": "Lake",
+    "lat": 46.3272,
+    "lng": -113.0619
+  },
+  {
+    "name": "Deadman Lake",
+    "type": "Lake",
+    "lat": 44.4405,
+    "lng": -112.8604
+  },
+  {
+    "name": "Deep Creek Lake",
+    "type": "Lake",
+    "lat": 47.0436,
+    "lng": -115.0056
+  },
+  {
+    "name": "Deep Cut Reservoir",
+    "type": "Lake",
+    "lat": 48.0824,
+    "lng": -106.7945
+  },
+  {
+    "name": "Deerborn Reservoir",
+    "type": "Lake",
+    "lat": 47.0487,
+    "lng": -112.0736
+  },
+  {
+    "name": "Deerhead Lake",
+    "type": "Lake",
+    "lat": 45.4374,
+    "lng": -112.9141
+  },
+  {
+    "name": "Desolation Lake",
+    "type": "Lake",
+    "lat": 45.0668,
+    "lng": -109.7161
+  },
+  {
+    "name": "Diamond Lake",
+    "type": "Lake",
+    "lat": 46.0602,
+    "lng": -110.3676
+  },
+  {
+    "name": "Dick Lake",
+    "type": "Lake",
+    "lat": 45.0854,
+    "lng": -109.9196
+  },
+  {
+    "name": "Dicks Reservoir",
+    "type": "Lake",
+    "lat": 48.0985,
+    "lng": -106.8402
+  },
+  {
+    "name": "Dime Reservoir",
+    "type": "Lake",
+    "lat": 47.9098,
+    "lng": -106.7738
+  },
+  {
+    "name": "Divide Creek Lake",
+    "type": "Lake",
+    "lat": 45.38,
+    "lng": -110.1128
+  },
+  {
+    "name": "Do Reservoir",
+    "type": "Lake",
+    "lat": 48.0272,
+    "lng": -106.834
+  },
+  {
+    "name": "Dog Creek Reservoir",
+    "type": "Lake",
+    "lat": 47.987,
+    "lng": -106.8363
+  },
+  {
+    "name": "Dollar Lake",
+    "type": "Lake",
+    "lat": 45.0515,
+    "lng": -109.82
+  },
+  {
+    "name": "Doney Lake",
+    "type": "Lake",
+    "lat": 46.4467,
+    "lng": -112.9553
+  },
+  {
+    "name": "Dora Thorn LAke",
+    "type": "Lake",
+    "lat": 46.34,
+    "lng": -113.1568
+  },
+  {
+    "name": "Double Crossing Reservoir",
+    "type": "Lake",
+    "lat": 47.9861,
+    "lng": -107.0527
+  },
+  {
+    "name": "Double Reservoir",
+    "type": "Lake",
+    "lat": 47.872,
+    "lng": -106.788
+  },
+  {
+    "name": "Dougcliff Reservoir",
+    "type": "Lake",
+    "lat": 47.8106,
+    "lng": -112.377
+  },
+  {
+    "name": "Dreary Lake",
+    "type": "Lake",
+    "lat": 45.2784,
+    "lng": -110.0627
+  },
+  {
+    "name": "Druckmiller Lake",
+    "type": "Lake",
+    "lat": 46.0313,
+    "lng": -110.3101
+  },
+  {
+    "name": "Dry Creek-Krezelok Reservoir",
+    "type": "Lake",
+    "lat": 47.448,
+    "lng": -112.2138
+  },
+  {
+    "name": "Dry Lake",
+    "type": "Lake",
+    "lat": 45.9304,
+    "lng": -109.1037
+  },
+  {
+    "name": "Dryad Lake",
+    "type": "Lake",
+    "lat": 45.2849,
+    "lng": -110.0253
+  },
+  {
+    "name": "Duck Creek Pond",
+    "type": "Lake",
+    "lat": 44.7786,
+    "lng": -111.1004
+  },
+  {
+    "name": "Dude Lake",
+    "type": "Lake",
+    "lat": 45.1362,
+    "lng": -109.5858
+  },
+  {
+    "name": "Duet Reservoir",
+    "type": "Lake",
+    "lat": 48.1117,
+    "lng": -106.8194
+  },
+  {
+    "name": "Duffy Lake",
+    "type": "Lake",
+    "lat": 46.6422,
+    "lng": -114.2577
+  },
+  {
+    "name": "Duggan Lake",
+    "type": "Lake",
+    "lat": 45.1178,
+    "lng": -109.7391
+  },
+  {
+    "name": "Dunkirk Reservoir",
+    "type": "Lake",
+    "lat": 48.4881,
+    "lng": -111.6711
+  },
+  {
+    "name": "East Fork Reservoir",
+    "type": "Lake",
+    "lat": 46.1171,
+    "lng": -113.3758
+  },
+  {
+    "name": "East Rosebud Lake",
+    "type": "Lake",
+    "lat": 45.1957,
+    "lng": -109.6426
+  },
+  {
+    "name": "Echo Lake",
+    "type": "Lake",
+    "lat": 45.1305,
+    "lng": -109.7489
+  },
+  {
+    "name": "Edith Lake",
+    "type": "Lake",
+    "lat": 46.4377,
+    "lng": -111.2102
+  },
+  {
+    "name": "Eedica Lake",
+    "type": "Lake",
+    "lat": 45.1898,
+    "lng": -109.8989
+  },
+  {
+    "name": "Eighteen Reservoir",
+    "type": "Lake",
+    "lat": 47.9266,
+    "lng": -106.8725
+  },
+  {
+    "name": "Eightmile Springs",
+    "type": "Lake",
+    "lat": 47.8103,
+    "lng": -110.8358
+  },
+  {
+    "name": "Elbow Lake",
+    "type": "Lake",
+    "lat": 45.3744,
+    "lng": -110.4841
+  },
+  {
+    "name": "Elephant Lake",
+    "type": "Lake",
+    "lat": 45.1232,
+    "lng": -109.6601
+  },
+  {
+    "name": "Elk Horn Lake",
+    "type": "Lake",
+    "lat": 45.0423,
+    "lng": -109.4889
+  },
+  {
+    "name": "Elk Lake",
+    "type": "Lake",
+    "lat": 45.2276,
+    "lng": -110.3144
+  },
+  {
+    "name": "Elpestrine Lake",
+    "type": "Lake",
+    "lat": 45.0883,
+    "lng": -109.7213
+  },
+  {
+    "name": "Emerald Lake",
+    "type": "Lake",
+    "lat": 45.2563,
+    "lng": -109.6942
+  },
+  {
+    "name": "Erratic Lake",
+    "type": "Lake",
+    "lat": 45.0565,
+    "lng": -109.6725
+  },
+  {
+    "name": "Estler Lake",
+    "type": "Lake",
+    "lat": 45.3736,
+    "lng": -112.9763
+  },
+  {
+    "name": "Eyraud Lakes",
+    "type": "Lake",
+    "lat": 49.002,
+    "lng": -112.0047
+  },
+  {
+    "name": "Factory Lake",
+    "type": "Lake",
+    "lat": 47.7118,
+    "lng": -104.1309
+  },
+  {
+    "name": "Falls Creek Lake",
+    "type": "Lake",
+    "lat": 45.101,
+    "lng": -109.712
+  },
+  {
+    "name": "Farley Lake",
+    "type": "Lake",
+    "lat": 45.0349,
+    "lng": -109.7086
+  },
+  {
+    "name": "Favonius Lake",
+    "type": "Lake",
+    "lat": 45.2185,
+    "lng": -110.0976
+  },
+  {
+    "name": "Fawn Lake",
+    "type": "Lake",
+    "lat": 45.077,
+    "lng": -110.5362
+  },
+  {
+    "name": "Finn Reservoir",
+    "type": "Lake",
+    "lat": 47.9337,
+    "lng": -107.2182
+  },
+  {
+    "name": "Fire Lake",
+    "type": "Lake",
+    "lat": 45.3816,
+    "lng": -110.5094
+  },
+  {
+    "name": "First Creek Reservoir",
+    "type": "Lake",
+    "lat": 45.8784,
+    "lng": -109.7447
+  },
+  {
+    "name": "First Rock Lake",
+    "type": "Lake",
+    "lat": 45.0862,
+    "lng": -109.5483
+  },
+  {
+    "name": "Fish Lake",
+    "type": "Lake",
+    "lat": 45.1517,
+    "lng": -110.629
+  },
+  {
+    "name": "Fisher Lake",
+    "type": "Lake",
+    "lat": 46.3082,
+    "lng": -113.1009
+  },
+  {
+    "name": "Fishtail Lake",
+    "type": "Lake",
+    "lat": 45.3233,
+    "lng": -109.8103
+  },
+  {
+    "name": "Fitzpatrick Lake",
+    "type": "Lake",
+    "lat": 45.6484,
+    "lng": -110.3586
+  },
+  {
+    "name": "Five Point Reservoir",
+    "type": "Lake",
+    "lat": 47.9014,
+    "lng": -106.6487
+  },
+  {
+    "name": "Flecher Reservoir",
+    "type": "Lake",
+    "lat": 47.9658,
+    "lng": -104.0758
+  },
+  {
+    "name": "Florence Lake",
+    "type": "Lake",
+    "lat": 47.2695,
+    "lng": -113.4804
+  },
+  {
+    "name": "Fool Hen Lake",
+    "type": "Lake",
+    "lat": 46.2729,
+    "lng": -113.8797
+  },
+  {
+    "name": "Forest Lake",
+    "type": "Lake",
+    "lat": 46.2428,
+    "lng": -110.4329
+  },
+  {
+    "name": "Forrest Reservoir",
+    "type": "Lake",
+    "lat": 47.8886,
+    "lng": -106.9573
+  },
+  {
+    "name": "Four Horns Lake",
+    "type": "Lake",
+    "lat": 48.352,
+    "lng": -112.7092
+  },
+  {
+    "name": "Fowler Reservoir",
+    "type": "Lake",
+    "lat": 48.2227,
+    "lng": -111.4374
+  },
+  {
+    "name": "Fox Lake",
+    "type": "Lake",
+    "lat": 45.0273,
+    "lng": -109.8008
+  },
+  {
+    "name": "Frazier Lake",
+    "type": "Lake",
+    "lat": 45.9244,
+    "lng": -110.9737
+  },
+  {
+    "name": "Fred Burr Lake",
+    "type": "Lake",
+    "lat": 46.3292,
+    "lng": -114.4173
+  },
+  {
+    "name": "Frenco Lake",
+    "type": "Lake",
+    "lat": 45.2133,
+    "lng": -109.8843
+  },
+  {
+    "name": "Fritter Lake",
+    "type": "Lake",
+    "lat": 45.0287,
+    "lng": -109.716
+  },
+  {
+    "name": "Frog Pond Lake",
+    "type": "Lake",
+    "lat": 45.6845,
+    "lng": -114.0184
+  },
+  {
+    "name": "Frosty Lake",
+    "type": "Lake",
+    "lat": 45.0328,
+    "lng": -109.5508
+  },
+  {
+    "name": "Froze-to-Death Lake",
+    "type": "Lake",
+    "lat": 45.1807,
+    "lng": -109.7455
+  },
+  {
+    "name": "Fulcrum Lake",
+    "type": "Lake",
+    "lat": 45.0878,
+    "lng": -109.7998
+  },
+  {
+    "name": "Fuse Lake",
+    "type": "Lake",
+    "lat": 46.248,
+    "lng": -113.7232
+  },
+  {
+    "name": "Gallery Lake",
+    "type": "Lake",
+    "lat": 45.0745,
+    "lng": -109.7646
+  },
+  {
+    "name": "Game Reservoir",
+    "type": "Lake",
+    "lat": 47.8234,
+    "lng": -106.1008
+  },
+  {
+    "name": "Garrard Lake",
+    "type": "Lake",
+    "lat": 46.3261,
+    "lng": -114.3539
+  },
+  {
+    "name": "Gartside Reservoir",
+    "type": "Lake",
+    "lat": 47.5848,
+    "lng": -104.2758
+  },
+  {
+    "name": "Gem Lake",
+    "type": "Lake",
+    "lat": 45.8934,
+    "lng": -114.2783
+  },
+  {
+    "name": "George Lake",
+    "type": "Lake",
+    "lat": 45.4555,
+    "lng": -110.5319
+  },
+  {
+    "name": "Ghost Lake",
+    "type": "Lake",
+    "lat": 45.0402,
+    "lng": -109.6367
+  },
+  {
+    "name": "Gibson Reservoir",
+    "type": "Lake",
+    "lat": 47.6079,
+    "lng": -112.8008
+  },
+  {
+    "name": "Gildar Lakes",
+    "type": "Lake",
+    "lat": 47.8311,
+    "lng": -113.6706
+  },
+  {
+    "name": "Gipsy Lake",
+    "type": "Lake",
+    "lat": 46.5026,
+    "lng": -111.2117
+  },
+  {
+    "name": "Glacier Green Lake",
+    "type": "Lake",
+    "lat": 45.1438,
+    "lng": -109.9251
+  },
+  {
+    "name": "Glacier Lake",
+    "type": "Lake",
+    "lat": 46.0474,
+    "lng": -110.3425
+  },
+  {
+    "name": "Glass Lindsay Lakes Lower Reservoir",
+    "type": "Lake",
+    "lat": 46.0077,
+    "lng": -109.8276
+  },
+  {
+    "name": "Gleason Lake",
+    "type": "Lake",
+    "lat": 46.2986,
+    "lng": -113.8971
+  },
+  {
+    "name": "Glen Lake",
+    "type": "Lake",
+    "lat": 45.7043,
+    "lng": -111.0386
+  },
+  {
+    "name": "Glen Reservoir",
+    "type": "Lake",
+    "lat": 47.9148,
+    "lng": -106.7327
+  },
+  {
+    "name": "Glissade Lake",
+    "type": "Lake",
+    "lat": 45.0972,
+    "lng": -109.7144
+  },
+  {
+    "name": "Goat Lake",
+    "type": "Lake",
+    "lat": 45.9829,
+    "lng": -114.3548
+  },
+  {
+    "name": "Goeddertz Reservoir",
+    "type": "Lake",
+    "lat": 48.7547,
+    "lng": -111.9496
+  },
+  {
+    "name": "Goedertz Lake",
+    "type": "Lake",
+    "lat": 48.7479,
+    "lng": -111.9707
+  },
+  {
+    "name": "Gold Creek Reservoir",
+    "type": "Lake",
+    "lat": 46.4408,
+    "lng": -113.0585
+  },
+  {
+    "name": "Goldberg Reservoir",
+    "type": "Lake",
+    "lat": 46.5014,
+    "lng": -113.0716
+  },
+  {
+    "name": "Goose Lake",
+    "type": "Lake",
+    "lat": 45.117,
+    "lng": -109.9138
+  },
+  {
+    "name": "Grand View Lake",
+    "type": "Lake",
+    "lat": 48.2248,
+    "lng": -114.3211
+  },
+  {
+    "name": "Granite Lake",
+    "type": "Lake",
+    "lat": 46.034,
+    "lng": -110.2934
+  },
+  {
+    "name": "Gravel Lake",
+    "type": "Lake",
+    "lat": 45.0606,
+    "lng": -109.6892
+  },
+  {
+    "name": "Gravelly Range Lake",
+    "type": "Lake",
+    "lat": 46.8313,
+    "lng": -112.3707
+  },
+  {
+    "name": "Green Canyon Lake",
+    "type": "Lake",
+    "lat": 46.0532,
+    "lng": -113.6385
+  },
+  {
+    "name": "Green Lake",
+    "type": "Lake",
+    "lat": 45.1593,
+    "lng": -110.8888
+  },
+  {
+    "name": "Greenough Lake",
+    "type": "Lake",
+    "lat": 45.0514,
+    "lng": -109.4174
+  },
+  {
+    "name": "Grinnell Lake",
+    "type": "Lake",
+    "lat": 48.7658,
+    "lng": -113.7052
+  },
+  {
+    "name": "Hackney Lake",
+    "type": "Lake",
+    "lat": 46.0823,
+    "lng": -114.4459
+  },
+  {
+    "name": "Hairpin Lake",
+    "type": "Lake",
+    "lat": 45.0459,
+    "lng": -109.4992
+  },
+  {
+    "name": "Halfpint Reservoir",
+    "type": "Lake",
+    "lat": 47.8768,
+    "lng": -107.1261
+  },
+  {
+    "name": "Hamen Reservoir",
+    "type": "Lake",
+    "lat": 46.308,
+    "lng": -110.7092
+  },
+  {
+    "name": "Hankins Reservoirs",
+    "type": "Lake",
+    "lat": 47.7705,
+    "lng": -110.6055
+  },
+  {
+    "name": "Hanson Reservoir",
+    "type": "Lake",
+    "lat": 46.5344,
+    "lng": -111.0346
+  },
+  {
+    "name": "Hardpan Reservoir",
+    "type": "Lake",
+    "lat": 48.0331,
+    "lng": -106.9146
+  },
+  {
+    "name": "Hart Lake",
+    "type": "Lake",
+    "lat": 45.947,
+    "lng": -114.3213
+  },
+  {
+    "name": "Hatchet Lake",
+    "type": "Lake",
+    "lat": 45.0371,
+    "lng": -109.7197
+  },
+  {
+    "name": "Hauf Lake",
+    "type": "Lake",
+    "lat": 46.2957,
+    "lng": -114.3223
+  },
+  {
+    "name": "Hawkins Lakes",
+    "type": "Lake",
+    "lat": 48.9689,
+    "lng": -115.9668
+  },
+  {
+    "name": "Hazel Lake",
+    "type": "Lake",
+    "lat": 47.2729,
+    "lng": -115.3661
+  },
+  {
+    "name": "Heart Lake",
+    "type": "Lake",
+    "lat": 45.0241,
+    "lng": -109.6392
+  },
+  {
+    "name": "Hebgen Lake",
+    "type": "Lake",
+    "lat": 44.7243,
+    "lng": -111.2228
+  },
+  {
+    "name": "Hedstorm Reservoir",
+    "type": "Lake",
+    "lat": 47.215,
+    "lng": -106.1049
+  },
+  {
+    "name": "Heinrich Lake",
+    "type": "Lake",
+    "lat": 46.3136,
+    "lng": -114.4202
+  },
+  {
+    "name": "Hellroaring Lake",
+    "type": "Lake",
+    "lat": 45.0427,
+    "lng": -109.4741
+  },
+  {
+    "name": "Hellroaring Reservoir",
+    "type": "Lake",
+    "lat": 47.7082,
+    "lng": -114.0214
+  },
+  {
+    "name": "Hen Reservoir",
+    "type": "Lake",
+    "lat": 47.8781,
+    "lng": -106.9392
+  },
+  {
+    "name": "Hermit Lake",
+    "type": "Lake",
+    "lat": 45.2686,
+    "lng": -110.0232
+  },
+  {
+    "name": "Hewitt Lake",
+    "type": "Lake",
+    "lat": 48.5381,
+    "lng": -107.5923
+  },
+  {
+    "name": "Hidden Lake",
+    "type": "Lake",
+    "lat": 45.0639,
+    "lng": -110.2743
+  },
+  {
+    "name": "Higgins Reservoir",
+    "type": "Lake",
+    "lat": 46.2975,
+    "lng": -110.7393
+  },
+  {
+    "name": "High Pass Lake",
+    "type": "Lake",
+    "lat": 45.058,
+    "lng": -109.6074
+  },
+  {
+    "name": "Hollecker Lake",
+    "type": "Lake",
+    "lat": 47.1283,
+    "lng": -104.7283
+  },
+  {
+    "name": "Holloway Lake",
+    "type": "Lake",
+    "lat": 46.6361,
+    "lng": -114.2627
+  },
+  {
+    "name": "Homestead Lake",
+    "type": "Lake",
+    "lat": 48.3989,
+    "lng": -104.5615
+  },
+  {
+    "name": "Hopkins Lake",
+    "type": "Lake",
+    "lat": 45.4631,
+    "lng": -113.037
+  },
+  {
+    "name": "Horseman Flats Lake",
+    "type": "Lake",
+    "lat": 45.4164,
+    "lng": -109.8723
+  },
+  {
+    "name": "Hub Lake",
+    "type": "Lake",
+    "lat": 47.2759,
+    "lng": -115.3758
+  },
+  {
+    "name": "Huckleberry Lake",
+    "type": "Lake",
+    "lat": 45.2104,
+    "lng": -109.8059
+  },
+  {
+    "name": "Hump Reservoir",
+    "type": "Lake",
+    "lat": 48.1151,
+    "lng": -106.8085
+  },
+  {
+    "name": "Hunter Lake",
+    "type": "Lake",
+    "lat": 45.8349,
+    "lng": -109.0442
+  },
+  {
+    "name": "Hunters Lake",
+    "type": "Lake",
+    "lat": 46.2679,
+    "lng": -113.0507
+  },
+  {
+    "name": "Hurricane Reservoir",
+    "type": "Lake",
+    "lat": 48.0857,
+    "lng": -107.1029
+  },
+  {
+    "name": "Hyalite Reservoir",
+    "type": "Lake",
+    "lat": 45.4809,
+    "lng": -110.9689
+  },
+  {
+    "name": "In-thlam-keh Lake",
+    "type": "Lake",
+    "lat": 48.1301,
+    "lng": -113.9091
+  },
+  {
+    "name": "Incisor Lake",
+    "type": "Lake",
+    "lat": 45.1348,
+    "lng": -109.9132
+  },
+  {
+    "name": "Indian Knife Lake",
+    "type": "Lake",
+    "lat": 45.0543,
+    "lng": -109.7316
+  },
+  {
+    "name": "Ingormar Lake",
+    "type": "Lake",
+    "lat": 46.2168,
+    "lng": -114.4043
+  },
+  {
+    "name": "Itcaina Reservoir",
+    "type": "Lake",
+    "lat": 48.0052,
+    "lng": -106.981
+  },
+  {
+    "name": "Jackson Lake",
+    "type": "Lake",
+    "lat": 45.5812,
+    "lng": -112.1008
+  },
+  {
+    "name": "James Lake",
+    "type": "Lake",
+    "lat": 47.0752,
+    "lng": -113.2122
+  },
+  {
+    "name": "January Reservoir",
+    "type": "Lake",
+    "lat": 48.0815,
+    "lng": -106.7595
+  },
+  {
+    "name": "Jasper Lake",
+    "type": "Lake",
+    "lat": 45.3457,
+    "lng": -110.041
+  },
+  {
+    "name": "Jawbone Lake",
+    "type": "Lake",
+    "lat": 45.2576,
+    "lng": -109.7615
+  },
+  {
+    "name": "Jay Lake",
+    "type": "Lake",
+    "lat": 45.3065,
+    "lng": -110.067
+  },
+  {
+    "name": "Jays Reservoir",
+    "type": "Lake",
+    "lat": 47.8346,
+    "lng": -106.0949
+  },
+  {
+    "name": "Jenny Lake",
+    "type": "Lake",
+    "lat": 45.0327,
+    "lng": -109.7408
+  },
+  {
+    "name": "Jewel Lake",
+    "type": "Lake",
+    "lat": 45.4875,
+    "lng": -110.4669
+  },
+  {
+    "name": "Jim Reservoir",
+    "type": "Lake",
+    "lat": 48.0304,
+    "lng": -107.0671
+  },
+  {
+    "name": "John Reservoir",
+    "type": "Lake",
+    "lat": 47.9973,
+    "lng": -106.7941
+  },
+  {
+    "name": "Jones Lake",
+    "type": "Lake",
+    "lat": 47.0427,
+    "lng": -113.1431
+  },
+  {
+    "name": "Jordan Lake",
+    "type": "Lake",
+    "lat": 45.2348,
+    "lng": -110.0784
+  },
+  {
+    "name": "Jordan Reservoir",
+    "type": "Lake",
+    "lat": 48.0725,
+    "lng": -106.9069
+  },
+  {
+    "name": "Jorden Lake",
+    "type": "Lake",
+    "lat": 45.0455,
+    "lng": -109.7164
+  },
+  {
+    "name": "Judy Reservoir",
+    "type": "Lake",
+    "lat": 48.0836,
+    "lng": -106.8264
+  },
+  {
+    "name": "Jumbo Lake",
+    "type": "Lake",
+    "lat": 48.6675,
+    "lng": -114.7849
+  },
+  {
+    "name": "Kaiser Lake",
+    "type": "Lake",
+    "lat": 46.1006,
+    "lng": -113.5209
+  },
+  {
+    "name": "Kaulitski Reservoir",
+    "type": "Lake",
+    "lat": 48.0543,
+    "lng": -106.968
+  },
+  {
+    "name": "Kelly Lake",
+    "type": "Lake",
+    "lat": 45.3097,
+    "lng": -113.636
+  },
+  {
+    "name": "Kelly Reservoir",
+    "type": "Lake",
+    "lat": 44.9631,
+    "lng": -111.7659
+  },
+  {
+    "name": "Kendena Lake",
+    "type": "Lake",
+    "lat": 45.6946,
+    "lng": -111.0871
+  },
+  {
+    "name": "Kerney Reservoir",
+    "type": "Lake",
+    "lat": 48.1221,
+    "lng": -106.8614
+  },
+  {
+    "name": "Kerns Lake",
+    "type": "Lake",
+    "lat": 46.4006,
+    "lng": -112.8452
+  },
+  {
+    "name": "Kersey Lake",
+    "type": "Lake",
+    "lat": 45.0277,
+    "lng": -109.8408
+  },
+  {
+    "name": "Keyser Brown Lake",
+    "type": "Lake",
+    "lat": 45.0882,
+    "lng": -109.5313
+  },
+  {
+    "name": "Kid Lake",
+    "type": "Lake",
+    "lat": 45.1728,
+    "lng": -109.874
+  },
+  {
+    "name": "Kidney Lake",
+    "type": "Lake",
+    "lat": 45.0238,
+    "lng": -109.642
+  },
+  {
+    "name": "Killenbeck Reservoir",
+    "type": "Lake",
+    "lat": 48.8652,
+    "lng": -105.7305
+  },
+  {
+    "name": "Kintla Lake",
+    "type": "Lake",
+    "lat": 48.956,
+    "lng": -114.2961
+  },
+  {
+    "name": "Knaack Lake",
+    "type": "Lake",
+    "lat": 46.3312,
+    "lng": -114.3614
+  },
+  {
+    "name": "Kneaves Lake",
+    "type": "Lake",
+    "lat": 46.2776,
+    "lng": -113.8716
+  },
+  {
+    "name": "Knob Reservoir",
+    "type": "Lake",
+    "lat": 47.8752,
+    "lng": -106.8037
+  },
+  {
+    "name": "Knott Lake",
+    "type": "Lake",
+    "lat": 45.1608,
+    "lng": -109.8861
+  },
+  {
+    "name": "Koch Lake",
+    "type": "Lake",
+    "lat": 46.0825,
+    "lng": -114.3884
+  },
+  {
+    "name": "Kookoo Lake",
+    "type": "Lake",
+    "lat": 45.1221,
+    "lng": -109.5881
+  },
+  {
+    "name": "Kreger Reservoir",
+    "type": "Lake",
+    "lat": 46.8364,
+    "lng": -106.1345
+  },
+  {
+    "name": "La Velle Lake",
+    "type": "Lake",
+    "lat": 45.1698,
+    "lng": -109.8843
+  },
+  {
+    "name": "Lady of the Lake",
+    "type": "Lake",
+    "lat": 45.0692,
+    "lng": -109.8904
+  },
+  {
+    "name": "Lamoose Lake",
+    "type": "Lake",
+    "lat": 48.2365,
+    "lng": -114.0248
+  },
+  {
+    "name": "Last Reservoir",
+    "type": "Lake",
+    "lat": 48.0004,
+    "lng": -106.8807
+  },
+  {
+    "name": "Late Lake",
+    "type": "Lake",
+    "lat": 47.8042,
+    "lng": -113.558
+  },
+  {
+    "name": "Leaky Raft Lake",
+    "type": "Lake",
+    "lat": 45.1174,
+    "lng": -109.845
+  },
+  {
+    "name": "Leech Lake",
+    "type": "Lake",
+    "lat": 45.0478,
+    "lng": -111.0012
+  },
+  {
+    "name": "Lena Lake",
+    "type": "Lake",
+    "lat": 47.4654,
+    "lng": -113.4668
+  },
+  {
+    "name": "Lightning Lake",
+    "type": "Lake",
+    "lat": 45.3353,
+    "lng": -110.0708
+  },
+  {
+    "name": "Lillis Lake",
+    "type": "Lake",
+    "lat": 45.0176,
+    "lng": -109.8405
+  },
+  {
+    "name": "Lily Pad Lake",
+    "type": "Lake",
+    "lat": 45.3108,
+    "lng": -109.6403
+  },
+  {
+    "name": "Lima Reservoir",
+    "type": "Lake",
+    "lat": 44.6328,
+    "lng": -112.2589
+  },
+  {
+    "name": "Lindsay Reservoir",
+    "type": "Lake",
+    "lat": 47.218,
+    "lng": -105.1551
+  },
+  {
+    "name": "Line Lake",
+    "type": "Lake",
+    "lat": 45.0056,
+    "lng": -109.3755
+  },
+  {
+    "name": "Lion Lake",
+    "type": "Lake",
+    "lat": 46.0638,
+    "lng": -113.3275
+  },
+  {
+    "name": "Lisk Creek Reservoir",
+    "type": "Lake",
+    "lat": 47.1385,
+    "lng": -105.8579
+  },
+  {
+    "name": "Little Arch Lake",
+    "type": "Lake",
+    "lat": 45.1736,
+    "lng": -109.7281
+  },
+  {
+    "name": "Little Fish Lake",
+    "type": "Lake",
+    "lat": 46.0852,
+    "lng": -113.6864
+  },
+  {
+    "name": "Little Fred Burr Lake",
+    "type": "Lake",
+    "lat": 46.3135,
+    "lng": -113.1768
+  },
+  {
+    "name": "Little Goat Lake",
+    "type": "Lake",
+    "lat": 46.3386,
+    "lng": -113.0154
+  },
+  {
+    "name": "Little Goose Lake",
+    "type": "Lake",
+    "lat": 45.1259,
+    "lng": -109.9071
+  },
+  {
+    "name": "Little Green Lake",
+    "type": "Lake",
+    "lat": 45.098,
+    "lng": -109.9018
+  },
+  {
+    "name": "Little Hawk Lake",
+    "type": "Lake",
+    "lat": 45.5975,
+    "lng": -106.9233
+  },
+  {
+    "name": "Little Joe Lake",
+    "type": "Lake",
+    "lat": 45.0579,
+    "lng": -110.8345
+  },
+  {
+    "name": "Little Molar Lake",
+    "type": "Lake",
+    "lat": 45.064,
+    "lng": -109.8156
+  },
+  {
+    "name": "Little Phantom Lake",
+    "type": "Lake",
+    "lat": 47.5705,
+    "lng": -110.1048
+  },
+  {
+    "name": "Little Pozega Lake",
+    "type": "Lake",
+    "lat": 46.2784,
+    "lng": -113.0748
+  },
+  {
+    "name": "Little Scat Lake",
+    "type": "Lake",
+    "lat": 45.1085,
+    "lng": -109.7138
+  },
+  {
+    "name": "Little Warm Reservoir",
+    "type": "Lake",
+    "lat": 48.0624,
+    "lng": -108.142
+  },
+  {
+    "name": "Liver Lake",
+    "type": "Lake",
+    "lat": 45.0268,
+    "lng": -109.6361
+  },
+  {
+    "name": "Lockwood Lake",
+    "type": "Lake",
+    "lat": 46.3184,
+    "lng": -114.4178
+  },
+  {
+    "name": "Lodge Grass Storage Reservoir",
+    "type": "Lake",
+    "lat": 45.158,
+    "lng": -107.6095
+  },
+  {
+    "name": "Logging Lake",
+    "type": "Lake",
+    "lat": 48.7558,
+    "lng": -114.0784
+  },
+  {
+    "name": "Lone Lake",
+    "type": "Lake",
+    "lat": 45.0598,
+    "lng": -109.9066
+  },
+  {
+    "name": "Long Lake",
+    "type": "Lake",
+    "lat": 45.082,
+    "lng": -109.9115
+  },
+  {
+    "name": "Looking Glass Lake",
+    "type": "Lake",
+    "lat": 45.1104,
+    "lng": -109.8101
+  },
+  {
+    "name": "Lost Lake",
+    "type": "Lake",
+    "lat": 47.6351,
+    "lng": -110.4843
+  },
+  {
+    "name": "Lost McMenomey Reservoir",
+    "type": "Lake",
+    "lat": 47.8859,
+    "lng": -106.71
+  },
+  {
+    "name": "Lowary Lake",
+    "type": "Lake",
+    "lat": 45.1561,
+    "lng": -109.7935
+  },
+  {
+    "name": "Lower Arch Lake",
+    "type": "Lake",
+    "lat": 45.1649,
+    "lng": -109.7217
+  },
+  {
+    "name": "Lower Basin Creek Lake",
+    "type": "Lake",
+    "lat": 45.1503,
+    "lng": -109.4126
+  },
+  {
+    "name": "Lower Bowman Lake",
+    "type": "Lake",
+    "lat": 46.313,
+    "lng": -113.0233
+  },
+  {
+    "name": "Lower Coal Creek Reservoir",
+    "type": "Lake",
+    "lat": 45.5854,
+    "lng": -106.1553
+  },
+  {
+    "name": "Lower Crow Reservoir",
+    "type": "Lake",
+    "lat": 47.5052,
+    "lng": -114.2179
+  },
+  {
+    "name": "Lower Elliot Lake",
+    "type": "Lake",
+    "lat": 46.3375,
+    "lng": -112.9982
+  },
+  {
+    "name": "Lower Lake",
+    "type": "Lake",
+    "lat": 45.3553,
+    "lng": -110.7976
+  },
+  {
+    "name": "Lower Lone Tree Reservoir",
+    "type": "Lake",
+    "lat": 47.9486,
+    "lng": -106.9047
+  },
+  {
+    "name": "Lower Rumble Creek Lake",
+    "type": "Lake",
+    "lat": 47.5277,
+    "lng": -113.5982
+  },
+  {
+    "name": "Lower Taylor Reservoir",
+    "type": "Lake",
+    "lat": 46.408,
+    "lng": -112.8286
+  },
+  {
+    "name": "Lower Twin Lake",
+    "type": "Lake",
+    "lat": 46.1559,
+    "lng": -114.4966
+  },
+  {
+    "name": "Lower Willow Creek Reservoir",
+    "type": "Lake",
+    "lat": 46.5558,
+    "lng": -113.3241
+  },
+  {
+    "name": "Lunch Reservoir",
+    "type": "Lake",
+    "lat": 48.1228,
+    "lng": -106.788
+  },
+  {
+    "name": "Lush Reservoir",
+    "type": "Lake",
+    "lat": 47.9483,
+    "lng": -106.8803
+  },
+  {
+    "name": "Mahan and Hoyt Reservoir",
+    "type": "Lake",
+    "lat": 48.1915,
+    "lng": -106.7464
+  },
+  {
+    "name": "Margaret Lake",
+    "type": "Lake",
+    "lat": 45.0161,
+    "lng": -109.8305
+  },
+  {
+    "name": "Marker Lake",
+    "type": "Lake",
+    "lat": 45.1138,
+    "lng": -109.6042
+  },
+  {
+    "name": "Marsh Lake",
+    "type": "Lake",
+    "lat": 45.0585,
+    "lng": -109.8715
+  },
+  {
+    "name": "Martes Lake",
+    "type": "Lake",
+    "lat": 45.2496,
+    "lng": -110.0856
+  },
+  {
+    "name": "Martin Lake",
+    "type": "Lake",
+    "lat": 45.1155,
+    "lng": -109.712
+  },
+  {
+    "name": "Mary Lake",
+    "type": "Lake",
+    "lat": 47.273,
+    "lng": -115.3781
+  },
+  {
+    "name": "McCalla Lake",
+    "type": "Lake",
+    "lat": 46.498,
+    "lng": -114.2467
+  },
+  {
+    "name": "McDonald Lake",
+    "type": "Lake",
+    "lat": 47.421,
+    "lng": -113.9756
+  },
+  {
+    "name": "McIlwain Lake",
+    "type": "Lake",
+    "lat": 48.2429,
+    "lng": -104.9211
+  },
+  {
+    "name": "McLaren Reservoir",
+    "type": "Lake",
+    "lat": 48.8178,
+    "lng": -109.4267
+  },
+  {
+    "name": "Meadow Lake",
+    "type": "Lake",
+    "lat": 45.0881,
+    "lng": -111.2901
+  },
+  {
+    "name": "Medicine Lake",
+    "type": "Lake",
+    "lat": 46.1254,
+    "lng": -113.6775
+  },
+  {
+    "name": "Melcott Reservoir",
+    "type": "Lake",
+    "lat": 48.491,
+    "lng": -111.73
+  },
+  {
+    "name": "Memidgi Lake",
+    "type": "Lake",
+    "lat": 45.2276,
+    "lng": -109.8718
+  },
+  {
+    "name": "Metcalf Lake",
+    "type": "Lake",
+    "lat": 47.7572,
+    "lng": -113.8416
+  },
+  {
+    "name": "Meyers Lake",
+    "type": "Lake",
+    "lat": 45.6825,
+    "lng": -111.0994
+  },
+  {
+    "name": "Middle Bowman Lake",
+    "type": "Lake",
+    "lat": 46.3159,
+    "lng": -113.0261
+  },
+  {
+    "name": "Middle Fork Lakes",
+    "type": "Lake",
+    "lat": 46.552,
+    "lng": -114.3215
+  },
+  {
+    "name": "Mikes Pond",
+    "type": "Lake",
+    "lat": 47.8847,
+    "lng": -114.3007
+  },
+  {
+    "name": "Miller Lake",
+    "type": "Lake",
+    "lat": 46.6755,
+    "lng": -112.9638
+  },
+  {
+    "name": "Miller Reservoir",
+    "type": "Lake",
+    "lat": 48.5698,
+    "lng": -110.3108
+  },
+  {
+    "name": "Milo Lake",
+    "type": "Lake",
+    "lat": 46.1674,
+    "lng": -113.5467
+  },
+  {
+    "name": "Mobray Reservoir Number 2",
+    "type": "Lake",
+    "lat": 45.7077,
+    "lng": -104.1864
+  },
+  {
+    "name": "Mobray Reservoir Number 3",
+    "type": "Lake",
+    "lat": 45.7092,
+    "lng": -104.1903
+  },
+  {
+    "name": "Moccasin Lake",
+    "type": "Lake",
+    "lat": 45.4918,
+    "lng": -110.0075
+  },
+  {
+    "name": "Moccasin Reservoir",
+    "type": "Lake",
+    "lat": 48.0915,
+    "lng": -107.1097
+  },
+  {
+    "name": "Molar Lake",
+    "type": "Lake",
+    "lat": 45.0778,
+    "lng": -109.8132
+  },
+  {
+    "name": "Moon Lake",
+    "type": "Lake",
+    "lat": 45.0374,
+    "lng": -109.5371
+  },
+  {
+    "name": "Moore Lake",
+    "type": "Lake",
+    "lat": 47.1804,
+    "lng": -115.2524
+  },
+  {
+    "name": "Moose Lake",
+    "type": "Lake",
+    "lat": 46.0676,
+    "lng": -110.387
+  },
+  {
+    "name": "Morgan Jones Lake",
+    "type": "Lake",
+    "lat": 45.5521,
+    "lng": -113.8043
+  },
+  {
+    "name": "Moulton Distribution Reservoir",
+    "type": "Lake",
+    "lat": 46.0371,
+    "lng": -112.5344
+  },
+  {
+    "name": "Moulton Reservoir Number One",
+    "type": "Lake",
+    "lat": 46.0894,
+    "lng": -112.5058
+  },
+  {
+    "name": "Mountain Ben Lake",
+    "type": "Lake",
+    "lat": 46.3348,
+    "lng": -113.0271
+  },
+  {
+    "name": "Mountain View Lake",
+    "type": "Lake",
+    "lat": 45.3872,
+    "lng": -109.9015
+  },
+  {
+    "name": "Mountaineer Lake",
+    "type": "Lake",
+    "lat": 47.3381,
+    "lng": -113.8713
+  },
+  {
+    "name": "Mud Lake",
+    "type": "Lake",
+    "lat": 46.2323,
+    "lng": -113.7574
+  },
+  {
+    "name": "Mud Run Reservoir",
+    "type": "Lake",
+    "lat": 48.0088,
+    "lng": -106.6356
+  },
+  {
+    "name": "Mudhole Lake",
+    "type": "Lake",
+    "lat": 45.7782,
+    "lng": -114.4432
+  },
+  {
+    "name": "Mutt Lake",
+    "type": "Lake",
+    "lat": 45.0918,
+    "lng": -109.9367
+  },
+  {
+    "name": "Mystery Lake",
+    "type": "Lake",
+    "lat": 48.6328,
+    "lng": -114.6014
+  },
+  {
+    "name": "Mystic Lake",
+    "type": "Lake",
+    "lat": 45.5475,
+    "lng": -110.9192
+  },
+  {
+    "name": "Navajo Tarn",
+    "type": "Lake",
+    "lat": 45.0849,
+    "lng": -109.6403
+  },
+  {
+    "name": "Needle Lake",
+    "type": "Lake",
+    "lat": 45.2803,
+    "lng": -110.0218
+  },
+  {
+    "name": "Neil Reservoir",
+    "type": "Lake",
+    "lat": 47.8976,
+    "lng": -106.7725
+  },
+  {
+    "name": "Nevada Lake",
+    "type": "Lake",
+    "lat": 46.794,
+    "lng": -112.7948
+  },
+  {
+    "name": "Nightmare Lake",
+    "type": "Lake",
+    "lat": 45.306,
+    "lng": -109.8829
+  },
+  {
+    "name": "Nilan Reservoir",
+    "type": "Lake",
+    "lat": 47.4802,
+    "lng": -112.5387
+  },
+  {
+    "name": "No Bones Lake",
+    "type": "Lake",
+    "lat": 45.0979,
+    "lng": -109.8209
+  },
+  {
+    "name": "No Man Lake",
+    "type": "Lake",
+    "lat": 45.0704,
+    "lng": -111.4904
+  },
+  {
+    "name": "North Beaver Reservoir",
+    "type": "Lake",
+    "lat": 48.1323,
+    "lng": -107.1118
+  },
+  {
+    "name": "North Chinook Reservoir",
+    "type": "Lake",
+    "lat": 48.7741,
+    "lng": -109.3423
+  },
+  {
+    "name": "North Hidden Lake",
+    "type": "Lake",
+    "lat": 45.02,
+    "lng": -109.6367
+  },
+  {
+    "name": "North Kootenai Lake",
+    "type": "Lake",
+    "lat": 46.5579,
+    "lng": -114.3261
+  },
+  {
+    "name": "North Lake",
+    "type": "Lake",
+    "lat": 45.6957,
+    "lng": -111.0894
+  },
+  {
+    "name": "North Picket Pin Lake",
+    "type": "Lake",
+    "lat": 45.4307,
+    "lng": -110.0409
+  },
+  {
+    "name": "North Totem Lake",
+    "type": "Lake",
+    "lat": 46.3799,
+    "lng": -114.402
+  },
+  {
+    "name": "Northern Pacific Reservoir",
+    "type": "Lake",
+    "lat": 46.5532,
+    "lng": -111.9037
+  },
+  {
+    "name": "Nugget Lake",
+    "type": "Lake",
+    "lat": 45.2067,
+    "lng": -109.8973
+  },
+  {
+    "name": "Nymph Lake",
+    "type": "Lake",
+    "lat": 45.0695,
+    "lng": -109.7938
+  },
+  {
+    "name": "Okaga Lake",
+    "type": "Lake",
+    "lat": 48.9319,
+    "lng": -115.5894
+  },
+  {
+    "name": "Ola Reservoir",
+    "type": "Lake",
+    "lat": 48.1026,
+    "lng": -106.7875
+  },
+  {
+    "name": "Olor Lake",
+    "type": "Lake",
+    "lat": 47.7516,
+    "lng": -113.6313
+  },
+  {
+    "name": "Olson Reservoir",
+    "type": "Lake",
+    "lat": 48.0111,
+    "lng": -106.7707
+  },
+  {
+    "name": "Oly Lake",
+    "type": "Lake",
+    "lat": 45.1098,
+    "lng": -109.777
+  },
+  {
+    "name": "Omega Lake",
+    "type": "Lake",
+    "lat": 45.0913,
+    "lng": -109.6191
+  },
+  {
+    "name": "Otis Lake",
+    "type": "Lake",
+    "lat": 47.3242,
+    "lng": -113.3959
+  },
+  {
+    "name": "Otter Lake",
+    "type": "Lake",
+    "lat": 45.0536,
+    "lng": -109.7435
+  },
+  {
+    "name": "Ottertail Lake",
+    "type": "Lake",
+    "lat": 45.818,
+    "lng": -111.6958
+  },
+  {
+    "name": "Our Lake",
+    "type": "Lake",
+    "lat": 47.8362,
+    "lng": -112.8106
+  },
+  {
+    "name": "Ouzel Lake",
+    "type": "Lake",
+    "lat": 45.0762,
+    "lng": -109.7884
+  },
+  {
+    "name": "Ovis Lake",
+    "type": "Lake",
+    "lat": 45.078,
+    "lng": -109.9188
+  },
+  {
+    "name": "Owl Lake",
+    "type": "Lake",
+    "lat": 45.2761,
+    "lng": -110.1002
+  },
+  {
+    "name": "Pablo Reservoir",
+    "type": "Lake",
+    "lat": 47.6356,
+    "lng": -114.157
+  },
+  {
+    "name": "Pacabo Dam",
+    "type": "Lake",
+    "lat": 45.8966,
+    "lng": -111.5057
+  },
+  {
+    "name": "Paddle Lake",
+    "type": "Lake",
+    "lat": 45.0977,
+    "lng": -109.8363
+  },
+  {
+    "name": "Pallisade Lake",
+    "type": "Lake",
+    "lat": 47.6875,
+    "lng": -113.5769
+  },
+  {
+    "name": "Panhandle Lake",
+    "type": "Lake",
+    "lat": 45.0991,
+    "lng": -109.9399
+  },
+  {
+    "name": "Pass Lake",
+    "type": "Lake",
+    "lat": 45.7227,
+    "lng": -114.0813
+  },
+  {
+    "name": "Pat Lake",
+    "type": "Lake",
+    "lat": 45.0223,
+    "lng": -109.7354
+  },
+  {
+    "name": "Paul Resevoir",
+    "type": "Lake",
+    "lat": 47.9186,
+    "lng": -106.6754
+  },
+  {
+    "name": "Peanut Lake",
+    "type": "Lake",
+    "lat": 45.0868,
+    "lng": -109.8546
+  },
+  {
+    "name": "Pear Lake",
+    "type": "Lake",
+    "lat": 46.0246,
+    "lng": -110.3052
+  },
+  {
+    "name": "Pearl Lake",
+    "type": "Lake",
+    "lat": 46.4575,
+    "lng": -114.3767
+  },
+  {
+    "name": "Pearson Reservoir",
+    "type": "Lake",
+    "lat": 48.0846,
+    "lng": -114.8763
+  },
+  {
+    "name": "Peck Lake",
+    "type": "Lake",
+    "lat": 47.6188,
+    "lng": -113.8069
+  },
+  {
+    "name": "Pendant Lake",
+    "type": "Lake",
+    "lat": 47.4737,
+    "lng": -113.5276
+  },
+  {
+    "name": "Pentad Lake",
+    "type": "Lake",
+    "lat": 45.2239,
+    "lng": -110.1018
+  },
+  {
+    "name": "Phantom Coulee Reservoir",
+    "type": "Lake",
+    "lat": 47.5998,
+    "lng": -110.1417
+  },
+  {
+    "name": "Phlox Lake",
+    "type": "Lake",
+    "lat": 45.8327,
+    "lng": -113.7014
+  },
+  {
+    "name": "Picket Lake",
+    "type": "Lake",
+    "lat": 45.0513,
+    "lng": -109.7308
+  },
+  {
+    "name": "Picnic Lakes",
+    "type": "Lake",
+    "lat": 48.1561,
+    "lng": -113.9293
+  },
+  {
+    "name": "Picture Lake",
+    "type": "Lake",
+    "lat": 47.7495,
+    "lng": -113.4621
+  },
+  {
+    "name": "Pilgrim Lakes",
+    "type": "Lake",
+    "lat": 48.1055,
+    "lng": -113.8733
+  },
+  {
+    "name": "Pine Creek Lake",
+    "type": "Lake",
+    "lat": 45.4843,
+    "lng": -110.4643
+  },
+  {
+    "name": "Pipit Lake",
+    "type": "Lake",
+    "lat": 45.2728,
+    "lng": -110.1053
+  },
+  {
+    "name": "Piquett Lake",
+    "type": "Lake",
+    "lat": 45.7381,
+    "lng": -114.1893
+  },
+  {
+    "name": "Planaria Lake",
+    "type": "Lake",
+    "lat": 45.0576,
+    "lng": -109.723
+  },
+  {
+    "name": "Plum Reservoir",
+    "type": "Lake",
+    "lat": 48.635,
+    "lng": -107.6717
+  },
+  {
+    "name": "Plunket Lake Dam",
+    "type": "Lake",
+    "lat": 46.0771,
+    "lng": -111.5815
+  },
+  {
+    "name": "Pneumonia Lake",
+    "type": "Lake",
+    "lat": 45.0977,
+    "lng": -109.844
+  },
+  {
+    "name": "Porcupine Lake",
+    "type": "Lake",
+    "lat": 46.2747,
+    "lng": -113.0565
+  },
+  {
+    "name": "Potato Lake",
+    "type": "Lake",
+    "lat": 46.3986,
+    "lng": -113.098
+  },
+  {
+    "name": "Princess Lake",
+    "type": "Lake",
+    "lat": 45.1979,
+    "lng": -109.8134
+  },
+  {
+    "name": "Production Lake",
+    "type": "Lake",
+    "lat": 45.1025,
+    "lng": -109.834
+  },
+  {
+    "name": "Pyramid Lake",
+    "type": "Lake",
+    "lat": 47.267,
+    "lng": -113.3823
+  },
+  {
+    "name": "Racetrack Lake",
+    "type": "Lake",
+    "lat": 46.3091,
+    "lng": -113.1349
+  },
+  {
+    "name": "Rachel Lake",
+    "type": "Lake",
+    "lat": 45.0327,
+    "lng": -109.6303
+  },
+  {
+    "name": "Rainbow Lake",
+    "type": "Lake",
+    "lat": 45.0223,
+    "lng": -110.7405
+  },
+  {
+    "name": "Ram Lake",
+    "type": "Lake",
+    "lat": 45.2693,
+    "lng": -109.7663
+  },
+  {
+    "name": "Ravin Lake",
+    "type": "Lake",
+    "lat": 45.2879,
+    "lng": -110.0545
+  },
+  {
+    "name": "Recluse Lake",
+    "type": "Lake",
+    "lat": 47.6728,
+    "lng": -113.4794
+  },
+  {
+    "name": "Red Storm Lake",
+    "type": "Lake",
+    "lat": 45.0265,
+    "lng": -109.6959
+  },
+  {
+    "name": "Redfield Lake",
+    "type": "Lake",
+    "lat": 45.5653,
+    "lng": -110.31
+  },
+  {
+    "name": "Reed Lake",
+    "type": "Lake",
+    "lat": 45.0073,
+    "lng": -109.8355
+  },
+  {
+    "name": "Rhoda Lake",
+    "type": "Lake",
+    "lat": 46.9688,
+    "lng": -110.5964
+  },
+  {
+    "name": "Rice Lake",
+    "type": "Lake",
+    "lat": 47.0927,
+    "lng": -113.1786
+  },
+  {
+    "name": "Richmond Reservoir",
+    "type": "Lake",
+    "lat": 48.798,
+    "lng": -109.0188
+  },
+  {
+    "name": "Rimrock Lake",
+    "type": "Lake",
+    "lat": 45.1446,
+    "lng": -109.6879
+  },
+  {
+    "name": "Ripple Lake",
+    "type": "Lake",
+    "lat": 45.9315,
+    "lng": -113.5582
+  },
+  {
+    "name": "River Rock Lake",
+    "type": "Lake",
+    "lat": 45.7753,
+    "lng": -111.2187
+  },
+  {
+    "name": "Robble Lake",
+    "type": "Lake",
+    "lat": 45.0585,
+    "lng": -109.6765
+  },
+  {
+    "name": "Rock Creek Lake",
+    "type": "Lake",
+    "lat": 46.4204,
+    "lng": -112.9497
+  },
+  {
+    "name": "Rock Lake",
+    "type": "Lake",
+    "lat": 47.9046,
+    "lng": -113.6863
+  },
+  {
+    "name": "Rock Tree Lake",
+    "type": "Lake",
+    "lat": 45.0617,
+    "lng": -109.7434
+  },
+  {
+    "name": "Rogers Lake",
+    "type": "Lake",
+    "lat": 48.6605,
+    "lng": -113.9396
+  },
+  {
+    "name": "Roosevelt Lake",
+    "type": "Lake",
+    "lat": 45.2507,
+    "lng": -109.9735
+  },
+  {
+    "name": "Round Lake",
+    "type": "Lake",
+    "lat": 45.0743,
+    "lng": -109.907
+  },
+  {
+    "name": "Rubble Lake",
+    "type": "Lake",
+    "lat": 47.498,
+    "lng": -113.574
+  },
+  {
+    "name": "Rudie Lake",
+    "type": "Lake",
+    "lat": 47.2883,
+    "lng": -115.4169
+  },
+  {
+    "name": "Ruins Reservoir",
+    "type": "Lake",
+    "lat": 47.9394,
+    "lng": -107.225
+  },
+  {
+    "name": "Russell Lake",
+    "type": "Lake",
+    "lat": 45.0612,
+    "lng": -109.7905
+  },
+  {
+    "name": "Ryan Lake",
+    "type": "Lake",
+    "lat": 46.3129,
+    "lng": -112.9865
+  },
+  {
+    "name": "Rydberg Lake",
+    "type": "Lake",
+    "lat": 45.0432,
+    "lng": -109.4623
+  },
+  {
+    "name": "Saderbalm Lake",
+    "type": "Lake",
+    "lat": 45.3427,
+    "lng": -110.0175
+  },
+  {
+    "name": "Sage Hen Reservoir",
+    "type": "Lake",
+    "lat": 48.09,
+    "lng": -106.9689
+  },
+  {
+    "name": "Saint Mary Lake",
+    "type": "Lake",
+    "lat": 46.5055,
+    "lng": -114.2804
+  },
+  {
+    "name": "Saint Marys Lake",
+    "type": "Lake",
+    "lat": 47.2619,
+    "lng": -113.9207
+  },
+  {
+    "name": "Scat Lake",
+    "type": "Lake",
+    "lat": 45.1106,
+    "lng": -109.7136
+  },
+  {
+    "name": "Seagull Reservoir",
+    "type": "Lake",
+    "lat": 48.0875,
+    "lng": -106.7538
+  },
+  {
+    "name": "Sears Lake",
+    "type": "Lake",
+    "lat": 46.2995,
+    "lng": -114.3712
+  },
+  {
+    "name": "Second Rock Lake",
+    "type": "Lake",
+    "lat": 45.0804,
+    "lng": -109.564
+  },
+  {
+    "name": "Sedge Lake",
+    "type": "Lake",
+    "lat": 45.0542,
+    "lng": -109.8179
+  },
+  {
+    "name": "Seeley Lake",
+    "type": "Lake",
+    "lat": 47.1933,
+    "lng": -113.5055
+  },
+  {
+    "name": "Senal Lake",
+    "type": "Lake",
+    "lat": 45.1375,
+    "lng": -109.5809
+  },
+  {
+    "name": "September Morn Lake",
+    "type": "Lake",
+    "lat": 45.0989,
+    "lng": -109.5435
+  },
+  {
+    "name": "Seven Acres Lakes",
+    "type": "Lake",
+    "lat": 48.1561,
+    "lng": -113.8833
+  },
+  {
+    "name": "Seventeen Reservoir",
+    "type": "Lake",
+    "lat": 47.9231,
+    "lng": -106.8568
+  },
+  {
+    "name": "Seventh Reservoir",
+    "type": "Lake",
+    "lat": 47.8882,
+    "lng": -106.805
+  },
+  {
+    "name": "Shadow Lake",
+    "type": "Lake",
+    "lat": 45.1964,
+    "lng": -109.6732
+  },
+  {
+    "name": "Shannon Lake",
+    "type": "Lake",
+    "lat": 46.0548,
+    "lng": -114.2285
+  },
+  {
+    "name": "Shaw Reservoir",
+    "type": "Lake",
+    "lat": 46.9476,
+    "lng": -107.888
+  },
+  {
+    "name": "Sheep Lake",
+    "type": "Lake",
+    "lat": 45.0185,
+    "lng": -109.5584
+  },
+  {
+    "name": "Shelf Lake",
+    "type": "Lake",
+    "lat": 45.0263,
+    "lng": -109.5228
+  },
+  {
+    "name": "Shelter Lake",
+    "type": "Lake",
+    "lat": 45.111,
+    "lng": -109.8394
+  },
+  {
+    "name": "Ship Lake",
+    "type": "Lake",
+    "lat": 45.1169,
+    "lng": -109.5969
+  },
+  {
+    "name": "Shooting Star Lake",
+    "type": "Lake",
+    "lat": 45.0888,
+    "lng": -110.9608
+  },
+  {
+    "name": "Shotgun Reservoir",
+    "type": "Lake",
+    "lat": 48.1753,
+    "lng": -104.2288
+  },
+  {
+    "name": "Shrew Lake",
+    "type": "Lake",
+    "lat": 45.023,
+    "lng": -109.7169
+  },
+  {
+    "name": "Shrimp Lake",
+    "type": "Lake",
+    "lat": 45.0498,
+    "lng": -109.7233
+  },
+  {
+    "name": "Sidney Lake",
+    "type": "Lake",
+    "lat": 46.3442,
+    "lng": -113.1487
+  },
+  {
+    "name": "Sienna Lake",
+    "type": "Lake",
+    "lat": 45.2597,
+    "lng": -109.9986
+  },
+  {
+    "name": "Silver King Lake",
+    "type": "Lake",
+    "lat": 47.0815,
+    "lng": -112.545
+  },
+  {
+    "name": "Silver Lake",
+    "type": "Lake",
+    "lat": 45.3607,
+    "lng": -110.3508
+  },
+  {
+    "name": "Silver Run Lakes",
+    "type": "Lake",
+    "lat": 45.1286,
+    "lng": -109.4881
+  },
+  {
+    "name": "Silver Tarn",
+    "type": "Lake",
+    "lat": 45.0457,
+    "lng": -109.5874
+  },
+  {
+    "name": "Sioux Charley Lake",
+    "type": "Lake",
+    "lat": 45.3304,
+    "lng": -109.931
+  },
+  {
+    "name": "Skull Lake",
+    "type": "Lake",
+    "lat": 45.0854,
+    "lng": -109.803
+  },
+  {
+    "name": "Sky Pilot Lake",
+    "type": "Lake",
+    "lat": 45.0641,
+    "lng": -109.6055
+  },
+  {
+    "name": "Slate Lake",
+    "type": "Lake",
+    "lat": 45.7343,
+    "lng": -114.186
+  },
+  {
+    "name": "Sliderock Lake",
+    "type": "Lake",
+    "lat": 45.0385,
+    "lng": -109.5125
+  },
+  {
+    "name": "Smeller Lake",
+    "type": "Lake",
+    "lat": 46.0043,
+    "lng": -110.3022
+  },
+  {
+    "name": "Smethurst Lake",
+    "type": "Lake",
+    "lat": 45.0414,
+    "lng": -109.4704
+  },
+  {
+    "name": "Smiley Slough",
+    "type": "Lake",
+    "lat": 47.4397,
+    "lng": -114.8634
+  },
+  {
+    "name": "Smith Lake",
+    "type": "Lake",
+    "lat": 48.4959,
+    "lng": -114.423
+  },
+  {
+    "name": "Snail Lake",
+    "type": "Lake",
+    "lat": 45.0556,
+    "lng": -109.7211
+  },
+  {
+    "name": "Snow Blind reservoir",
+    "type": "Lake",
+    "lat": 47.9047,
+    "lng": -106.825
+  },
+  {
+    "name": "Snow Lake",
+    "type": "Lake",
+    "lat": 45.1048,
+    "lng": -109.9036
+  },
+  {
+    "name": "Snowbank Lake",
+    "type": "Lake",
+    "lat": 45.1003,
+    "lng": -109.7612
+  },
+  {
+    "name": "Snyder Pond",
+    "type": "Lake",
+    "lat": 48.0437,
+    "lng": -111.8778
+  },
+  {
+    "name": "Soap Creek Dam",
+    "type": "Lake",
+    "lat": 47.3489,
+    "lng": -112.3439
+  },
+  {
+    "name": "Sodalite Lake",
+    "type": "Lake",
+    "lat": 45.0844,
+    "lng": -109.8185
+  },
+  {
+    "name": "Somers Reservoir",
+    "type": "Lake",
+    "lat": 48.1043,
+    "lng": -107.2019
+  },
+  {
+    "name": "Sourdough Lake",
+    "type": "Lake",
+    "lat": 45.1144,
+    "lng": -109.9685
+  },
+  {
+    "name": "South Bear Lake",
+    "type": "Lake",
+    "lat": 46.3711,
+    "lng": -114.41
+  },
+  {
+    "name": "South Fork Crow Creek Lakes",
+    "type": "Lake",
+    "lat": 46.2808,
+    "lng": -111.8251
+  },
+  {
+    "name": "South Fork Lake",
+    "type": "Lake",
+    "lat": 46.4494,
+    "lng": -114.3709
+  },
+  {
+    "name": "South Fork Reservoir",
+    "type": "Lake",
+    "lat": 45.8573,
+    "lng": -112.7506
+  },
+  {
+    "name": "South Kootenai Lake",
+    "type": "Lake",
+    "lat": 46.5383,
+    "lng": -114.3204
+  },
+  {
+    "name": "South Picket Pin Lake",
+    "type": "Lake",
+    "lat": 45.4264,
+    "lng": -110.0467
+  },
+  {
+    "name": "South Pond",
+    "type": "Lake",
+    "lat": 45.663,
+    "lng": -108.7845
+  },
+  {
+    "name": "Spadefoot Reservoir",
+    "type": "Lake",
+    "lat": 46.5992,
+    "lng": -111.8018
+  },
+  {
+    "name": "Spider Lake",
+    "type": "Lake",
+    "lat": 45.1193,
+    "lng": -109.966
+  },
+  {
+    "name": "Splinter Lake",
+    "type": "Lake",
+    "lat": 45.0907,
+    "lng": -109.8536
+  },
+  {
+    "name": "Spogen Lake",
+    "type": "Lake",
+    "lat": 45.026,
+    "lng": -109.6501
+  },
+  {
+    "name": "Spook Lake",
+    "type": "Lake",
+    "lat": 47.0733,
+    "lng": -113.5713
+  },
+  {
+    "name": "Spoon Lake",
+    "type": "Lake",
+    "lat": 48.4742,
+    "lng": -114.1462
+  },
+  {
+    "name": "Spotted Bear Lake",
+    "type": "Lake",
+    "lat": 47.9237,
+    "lng": -113.4944
+  },
+  {
+    "name": "Spring Creek Reservoir",
+    "type": "Lake",
+    "lat": 48.1959,
+    "lng": -114.3346
+  },
+  {
+    "name": "Spring Creek Trout Hatchery",
+    "type": "Lake",
+    "lat": 47.032,
+    "lng": -109.3977
+  },
+  {
+    "name": "Spring Meadow Lake",
+    "type": "Lake",
+    "lat": 46.6112,
+    "lng": -112.0753
+  },
+  {
+    "name": "Square Lake",
+    "type": "Lake",
+    "lat": 47.2642,
+    "lng": -115.36
+  },
+  {
+    "name": "St. Regis Lake",
+    "type": "Lake",
+    "lat": 47.4265,
+    "lng": -115.7439
+  },
+  {
+    "name": "Stafford Reservoir",
+    "type": "Lake",
+    "lat": 47.5645,
+    "lng": -109.3986
+  },
+  {
+    "name": "Star Dust Lake",
+    "type": "Lake",
+    "lat": 45.0983,
+    "lng": -109.9523
+  },
+  {
+    "name": "Star Lake",
+    "type": "Lake",
+    "lat": 45.169,
+    "lng": -109.8635
+  },
+  {
+    "name": "Stash Lake",
+    "type": "Lake",
+    "lat": 45.092,
+    "lng": -109.8364
+  },
+  {
+    "name": "Stephens Reservoir",
+    "type": "Lake",
+    "lat": 46.1975,
+    "lng": -113.5878
+  },
+  {
+    "name": "Stevensville Reservoir",
+    "type": "Lake",
+    "lat": 46.5009,
+    "lng": -114.0462
+  },
+  {
+    "name": "Stewart Lake",
+    "type": "Lake",
+    "lat": 46.3642,
+    "lng": -113.2355
+  },
+  {
+    "name": "Stoner Lake",
+    "type": "Lake",
+    "lat": 47.4693,
+    "lng": -113.732
+  },
+  {
+    "name": "Stony Lake",
+    "type": "Lake",
+    "lat": 46.2772,
+    "lng": -113.7458
+  },
+  {
+    "name": "Storm Lake",
+    "type": "Lake",
+    "lat": 46.0706,
+    "lng": -113.2656
+  },
+  {
+    "name": "Stratton Reservoir",
+    "type": "Lake",
+    "lat": 47.8141,
+    "lng": -107.7839
+  },
+  {
+    "name": "Strawberry Lake",
+    "type": "Lake",
+    "lat": 48.2086,
+    "lng": -113.9793
+  },
+  {
+    "name": "Stump Lake",
+    "type": "Lake",
+    "lat": 48.7854,
+    "lng": -113.6654
+  },
+  {
+    "name": "Summers Reservoir",
+    "type": "Lake",
+    "lat": 48.4947,
+    "lng": -111.7828
+  },
+  {
+    "name": "Summit Lake",
+    "type": "Lake",
+    "lat": 45.1076,
+    "lng": -109.6847
+  },
+  {
+    "name": "Sun Lake",
+    "type": "Lake",
+    "lat": 47.3487,
+    "lng": -112.8789
+  },
+  {
+    "name": "Sunburst Lake",
+    "type": "Lake",
+    "lat": 47.7356,
+    "lng": -113.6113
+  },
+  {
+    "name": "Sundance Lake",
+    "type": "Lake",
+    "lat": 45.1096,
+    "lng": -109.5775
+  },
+  {
+    "name": "Sundown Lake",
+    "type": "Lake",
+    "lat": 45.2329,
+    "lng": -110.1032
+  },
+  {
+    "name": "Sunken Rock Lake",
+    "type": "Lake",
+    "lat": 45.2456,
+    "lng": -110.0916
+  },
+  {
+    "name": "Sunlight Lake",
+    "type": "Lake",
+    "lat": 46.1097,
+    "lng": -110.3897
+  },
+  {
+    "name": "Surprise Lake",
+    "type": "Lake",
+    "lat": 45.0876,
+    "lng": -109.8321
+  },
+  {
+    "name": "Surveyor Lake",
+    "type": "Lake",
+    "lat": 46.8218,
+    "lng": -114.759
+  },
+  {
+    "name": "Swamp Lake",
+    "type": "Lake",
+    "lat": 45.0627,
+    "lng": -109.8811
+  },
+  {
+    "name": "Swift Reservoir",
+    "type": "Lake",
+    "lat": 48.1523,
+    "lng": -112.886
+  },
+  {
+    "name": "T C Drop Dam Reservoir",
+    "type": "Lake",
+    "lat": 47.9846,
+    "lng": -106.9871
+  },
+  {
+    "name": "T U Reservoir",
+    "type": "Lake",
+    "lat": 48.0951,
+    "lng": -109.2824
+  },
+  {
+    "name": "Tag Alder Lake",
+    "type": "Lake",
+    "lat": 46.2941,
+    "lng": -114.2683
+  },
+  {
+    "name": "Target Detention Reservoir",
+    "type": "Lake",
+    "lat": 47.9327,
+    "lng": -106.7847
+  },
+  {
+    "name": "Tash Pond",
+    "type": "Lake",
+    "lat": 45.1867,
+    "lng": -112.691
+  },
+  {
+    "name": "Taylor Lake",
+    "type": "Lake",
+    "lat": 47.2683,
+    "lng": -109.4679
+  },
+  {
+    "name": "Teds Reservoir",
+    "type": "Lake",
+    "lat": 47.8178,
+    "lng": -106.0797
+  },
+  {
+    "name": "Tenmile Lake",
+    "type": "Lake",
+    "lat": 46.1746,
+    "lng": -114.4365
+  },
+  {
+    "name": "Terrace lakes",
+    "type": "Lake",
+    "lat": 47.5077,
+    "lng": -113.5564
+  },
+  {
+    "name": "Terrace Reservoir",
+    "type": "Lake",
+    "lat": 45.3259,
+    "lng": -106.3342
+  },
+  {
+    "name": "Thiel Lake",
+    "type": "Lake",
+    "lat": 45.0071,
+    "lng": -109.6456
+  },
+  {
+    "name": "Think Reservoir",
+    "type": "Lake",
+    "lat": 47.8778,
+    "lng": -106.7828
+  },
+  {
+    "name": "Thompson Lake",
+    "type": "Lake",
+    "lat": 45.1734,
+    "lng": -110.5581
+  },
+  {
+    "name": "Thornton Lake",
+    "type": "Lake",
+    "lat": 46.2586,
+    "lng": -113.0383
+  },
+  {
+    "name": "Three Eagles Lakes",
+    "type": "Lake",
+    "lat": 48.1174,
+    "lng": -113.8687
+  },
+  {
+    "name": "Three Mile Reservoir",
+    "type": "Lake",
+    "lat": 46.697,
+    "lng": -112.1844
+  },
+  {
+    "name": "Throop Lake",
+    "type": "Lake",
+    "lat": 45.0134,
+    "lng": -109.6303
+  },
+  {
+    "name": "Thunderhead Pit Reservoir",
+    "type": "Lake",
+    "lat": 48.0711,
+    "lng": -106.8741
+  },
+  {
+    "name": "Till Lake",
+    "type": "Lake",
+    "lat": 45.0598,
+    "lng": -109.6834
+  },
+  {
+    "name": "Timberline Lake",
+    "type": "Lake",
+    "lat": 45.1357,
+    "lng": -109.5052
+  },
+  {
+    "name": "Tin Cup Lake",
+    "type": "Lake",
+    "lat": 46.3889,
+    "lng": -112.856
+  },
+  {
+    "name": "Tolean Lake",
+    "type": "Lake",
+    "lat": 46.4176,
+    "lng": -113.038
+  },
+  {
+    "name": "Tom Tom Lake",
+    "type": "Lake",
+    "lat": 48.0687,
+    "lng": -113.8656
+  },
+  {
+    "name": "Tote Road Lake",
+    "type": "Lake",
+    "lat": 47.1021,
+    "lng": -113.3734
+  },
+  {
+    "name": "Totem Peak Lake",
+    "type": "Lake",
+    "lat": 46.3763,
+    "lng": -114.3873
+  },
+  {
+    "name": "Trail Lake",
+    "type": "Lake",
+    "lat": 45.0304,
+    "lng": -109.651
+  },
+  {
+    "name": "Trailerhouse Reservoir",
+    "type": "Lake",
+    "lat": 48.1481,
+    "lng": -107.2048
+  },
+  {
+    "name": "Trapper Lake",
+    "type": "Lake",
+    "lat": 45.9091,
+    "lng": -114.3588
+  },
+  {
+    "name": "Tree Reservoir",
+    "type": "Lake",
+    "lat": 48.0355,
+    "lng": -106.8695
+  },
+  {
+    "name": "Triangle Lake",
+    "type": "Lake",
+    "lat": 45.0571,
+    "lng": -109.7344
+  },
+  {
+    "name": "Triple Crossing Reservoir",
+    "type": "Lake",
+    "lat": 47.979,
+    "lng": -107.1296
+  },
+  {
+    "name": "Triple Lake Reservoir",
+    "type": "Lake",
+    "lat": 47.919,
+    "lng": -110.4473
+  },
+  {
+    "name": "Trish Reservoir",
+    "type": "Lake",
+    "lat": 48.1022,
+    "lng": -106.8386
+  },
+  {
+    "name": "Triskele Lake",
+    "type": "Lake",
+    "lat": 45.0405,
+    "lng": -109.6067
+  },
+  {
+    "name": "Trout Lake",
+    "type": "Lake",
+    "lat": 45.338,
+    "lng": -110.2303
+  },
+  {
+    "name": "Tub Lake",
+    "type": "Lake",
+    "lat": 45.4178,
+    "lng": -112.9994
+  },
+  {
+    "name": "Tweedy Lake",
+    "type": "Lake",
+    "lat": 44.6744,
+    "lng": -111.1939
+  },
+  {
+    "name": "Twelvemile Lake",
+    "type": "Lake",
+    "lat": 46.1634,
+    "lng": -114.4558
+  },
+  {
+    "name": "Twin Forks Reservoir",
+    "type": "Lake",
+    "lat": 47.9999,
+    "lng": -107.1031
+  },
+  {
+    "name": "Twin Outlets Lake",
+    "type": "Lake",
+    "lat": 45.115,
+    "lng": -109.7508
+  },
+  {
+    "name": "Two Bits Lake",
+    "type": "Lake",
+    "lat": 45.0462,
+    "lng": -109.6032
+  },
+  {
+    "name": "Two Reservoir",
+    "type": "Lake",
+    "lat": 47.9905,
+    "lng": -106.8569
+  },
+  {
+    "name": "ULT Reservoir",
+    "type": "Lake",
+    "lat": 47.9529,
+    "lng": -107.1579
+  },
+  {
+    "name": "Upper Aero Lake",
+    "type": "Lake",
+    "lat": 45.1267,
+    "lng": -109.8422
+  },
+  {
+    "name": "Upper Baldy Lake",
+    "type": "Lake",
+    "lat": 46.4392,
+    "lng": -111.2413
+  },
+  {
+    "name": "Upper Blossom Lake",
+    "type": "Lake",
+    "lat": 47.547,
+    "lng": -115.7482
+  },
+  {
+    "name": "Upper Bowman Lake",
+    "type": "Lake",
+    "lat": 46.3187,
+    "lng": -113.0251
+  },
+  {
+    "name": "Upper Branham Lake",
+    "type": "Lake",
+    "lat": 45.5184,
+    "lng": -111.9926
+  },
+  {
+    "name": "Upper Carters Pond",
+    "type": "Lake",
+    "lat": 47.154,
+    "lng": -109.4252
+  },
+  {
+    "name": "Upper Corkscrew Lake",
+    "type": "Lake",
+    "lat": 45.1878,
+    "lng": -109.9537
+  },
+  {
+    "name": "Upper Dry Fork Reservoir",
+    "type": "Lake",
+    "lat": 47.7523,
+    "lng": -114.6858
+  },
+  {
+    "name": "Upper Elliot Lake",
+    "type": "Lake",
+    "lat": 46.3419,
+    "lng": -112.9928
+  },
+  {
+    "name": "Upper Grinnell Lake",
+    "type": "Lake",
+    "lat": 48.7567,
+    "lng": -113.73
+  },
+  {
+    "name": "Upper Holland Lake",
+    "type": "Lake",
+    "lat": 47.4619,
+    "lng": -113.5268
+  },
+  {
+    "name": "Upper Kintla Lake",
+    "type": "Lake",
+    "lat": 48.9758,
+    "lng": -114.1737
+  },
+  {
+    "name": "Upper Lake",
+    "type": "Lake",
+    "lat": 45.3434,
+    "lng": -110.8104
+  },
+  {
+    "name": "Upper Rumble Creek Lake",
+    "type": "Lake",
+    "lat": 47.5306,
+    "lng": -113.5877
+  },
+  {
+    "name": "Upper St. Regis Lake",
+    "type": "Lake",
+    "lat": 47.4261,
+    "lng": -115.7486
+  },
+  {
+    "name": "Upper Taylor Reservoir",
+    "type": "Lake",
+    "lat": 46.409,
+    "lng": -112.8397
+  },
+  {
+    "name": "Upper Twin Lake",
+    "type": "Lake",
+    "lat": 46.1624,
+    "lng": -114.5013
+  },
+  {
+    "name": "Upper Whitefish Lake",
+    "type": "Lake",
+    "lat": 48.6867,
+    "lng": -114.5792
+  },
+  {
+    "name": "Upper Wilbur Reservoir",
+    "type": "Lake",
+    "lat": 45.5987,
+    "lng": -105.9452
+  },
+  {
+    "name": "Upsata Lake",
+    "type": "Lake",
+    "lat": 47.0779,
+    "lng": -113.2225
+  },
+  {
+    "name": "Varve Lake",
+    "type": "Lake",
+    "lat": 45.0798,
+    "lng": -109.6332
+  },
+  {
+    "name": "Verden Lake",
+    "type": "Lake",
+    "lat": 48.5505,
+    "lng": -111.9188
+  },
+  {
+    "name": "Vernon Lake",
+    "type": "Lake",
+    "lat": 45.009,
+    "lng": -109.8327
+  },
+  {
+    "name": "Virden Lake",
+    "type": "Lake",
+    "lat": 48.5238,
+    "lng": -111.8881
+  },
+  {
+    "name": "Vogel Lake",
+    "type": "Lake",
+    "lat": 45.1103,
+    "lng": -109.7331
+  },
+  {
+    "name": "Voldseth Reservoir",
+    "type": "Lake",
+    "lat": 46.3861,
+    "lng": -110.5042
+  },
+  {
+    "name": "Wales Creek Reservoir",
+    "type": "Lake",
+    "lat": 46.9106,
+    "lng": -113.1424
+  },
+  {
+    "name": "Wall Lake",
+    "type": "Lake",
+    "lat": 45.1033,
+    "lng": -109.9213
+  },
+  {
+    "name": "Wand Lake",
+    "type": "Lake",
+    "lat": 45.0659,
+    "lng": -109.7684
+  },
+  {
+    "name": "War Horse Lake",
+    "type": "Lake",
+    "lat": 47.1178,
+    "lng": -108.5579
+  },
+  {
+    "name": "Washtub Lake",
+    "type": "Lake",
+    "lat": 45.082,
+    "lng": -109.8623
+  },
+  {
+    "name": "Watchtower Lake",
+    "type": "Lake",
+    "lat": 45.8454,
+    "lng": -114.4867
+  },
+  {
+    "name": "Weasel Lake",
+    "type": "Lake",
+    "lat": 45.0886,
+    "lng": -109.8364
+  },
+  {
+    "name": "Weeluna Lake",
+    "type": "Lake",
+    "lat": 45.2337,
+    "lng": -109.8692
+  },
+  {
+    "name": "West Boulder Lake",
+    "type": "Lake",
+    "lat": 45.3772,
+    "lng": -110.361
+  },
+  {
+    "name": "West Side Reservoir",
+    "type": "Lake",
+    "lat": 46.0238,
+    "lng": -112.552
+  },
+  {
+    "name": "Whetstone Lake",
+    "type": "Lake",
+    "lat": 46.0718,
+    "lng": -113.6228
+  },
+  {
+    "name": "Whitcomb Lake",
+    "type": "Lake",
+    "lat": 45.024,
+    "lng": -109.6565
+  },
+  {
+    "name": "White Lake",
+    "type": "Lake",
+    "lat": 46.0865,
+    "lng": -114.402
+  },
+  {
+    "name": "White Rock Reservoir",
+    "type": "Lake",
+    "lat": 47.9176,
+    "lng": -106.9179
+  },
+  {
+    "name": "Whitetail Reservoir",
+    "type": "Lake",
+    "lat": 47.9558,
+    "lng": -107.1158
+  },
+  {
+    "name": "Widewater Lake",
+    "type": "Lake",
+    "lat": 45.0132,
+    "lng": -109.7768
+  },
+  {
+    "name": "Widowed Lake",
+    "type": "Lake",
+    "lat": 45.0541,
+    "lng": -109.7112
+  },
+  {
+    "name": "Wiedy Lake",
+    "type": "Lake",
+    "lat": 45.0611,
+    "lng": -109.8731
+  },
+  {
+    "name": "Wild Bill Lake",
+    "type": "Lake",
+    "lat": 45.1565,
+    "lng": -109.3692
+  },
+  {
+    "name": "Wildcat Lake",
+    "type": "Lake",
+    "lat": 48.197,
+    "lng": -113.9516
+  },
+  {
+    "name": "Wilderness Reservoir",
+    "type": "Lake",
+    "lat": 47.9795,
+    "lng": -106.8396
+  },
+  {
+    "name": "Willow Bunch Reservoir",
+    "type": "Lake",
+    "lat": 47.993,
+    "lng": -107.0734
+  },
+  {
+    "name": "Willow Creek Reservoir",
+    "type": "Lake",
+    "lat": 45.7015,
+    "lng": -111.7127
+  },
+  {
+    "name": "Wilson Reservoir",
+    "type": "Lake",
+    "lat": 48.0952,
+    "lng": -106.8017
+  },
+  {
+    "name": "Windfall Lake",
+    "type": "Lake",
+    "lat": 47.0061,
+    "lng": -114.9291
+  },
+  {
+    "name": "Winter Day Reservoir",
+    "type": "Lake",
+    "lat": 47.9922,
+    "lng": -106.8691
+  },
+  {
+    "name": "Wolf Voice Lake",
+    "type": "Lake",
+    "lat": 45.1567,
+    "lng": -109.9177
+  },
+  {
+    "name": "Wood Lake",
+    "type": "Lake",
+    "lat": 47.431,
+    "lng": -112.7995
+  },
+  {
+    "name": "Woodbine Lake",
+    "type": "Lake",
+    "lat": 45.2995,
+    "lng": -109.8761
+  },
+  {
+    "name": "Wright Lake",
+    "type": "Lake",
+    "lat": 45.0285,
+    "lng": -109.6451
+  },
+  {
+    "name": "Wrong Lake",
+    "type": "Lake",
+    "lat": 45.137,
+    "lng": -109.9636
+  },
+  {
+    "name": "Yankee Jim Lake",
+    "type": "Lake",
+    "lat": 45.1492,
+    "lng": -110.8672
+  },
+  {
+    "name": "Z Lake",
+    "type": "Lake",
+    "lat": 45.0639,
+    "lng": -109.7471
+  },
+  {
+    "name": "Zimmer Lake",
+    "type": "Lake",
+    "lat": 45.1201,
+    "lng": -109.8838
+  },
+  {
+    "name": "Zoeteman Lake",
+    "type": "Lake",
+    "lat": 45.413,
+    "lng": -109.8623
   }
 ]
