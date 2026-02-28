@@ -50,6 +50,17 @@ function url(loc, lastmod = new Date()) {
     entries.push(url(`${baseUrl}/montana-towns/${t.slug}/`));
   }
 
+  // Best Of pages
+  entries.push(url(`${baseUrl}/best-of/`));
+  const bestOfDir = path.join(outDir, 'best-of');
+  if (fs.existsSync(bestOfDir)) {
+    for (const f of fs.readdirSync(bestOfDir)) {
+      if (fs.statSync(path.join(bestOfDir, f)).isDirectory()) {
+        entries.push(url(`${baseUrl}/best-of/${f}/`));
+      }
+    }
+  }
+
   // Comparison pages
   const compareDir = path.join(outDir, 'compare');
   if (fs.existsSync(compareDir)) {

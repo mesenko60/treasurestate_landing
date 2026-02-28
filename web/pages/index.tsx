@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/" />
         <title>Treasure State - Explore the Wonders of Montana</title>
         <meta
           name="description"

@@ -26,6 +26,11 @@ export default function MobileBottomNav() {
         <div className="icon">⚖️</div>
         <span>Compare</span>
       </Link>
+
+      <Link href="/best-of" className={isActive('/best-of') ? 'active' : ''}>
+        <div className="icon">🏆</div>
+        <span>Best Of</span>
+      </Link>
       
       <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer">
         <div className="icon">🛍️</div>

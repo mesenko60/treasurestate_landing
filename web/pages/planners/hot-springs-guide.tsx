@@ -10,6 +10,7 @@ export default function HotSpringsGuide() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/planners/hot-springs-guide/" />
         <title>Montana Hot Springs Guide - Treasure State</title>
         <meta name="description" content="A comprehensive guide to the best natural and developed hot springs across Montana. Relax and soak in the Treasure State." />
       </Head>

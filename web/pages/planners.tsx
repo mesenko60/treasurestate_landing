@@ -9,6 +9,7 @@ export default function Planners() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/planners/" />
         <title>Montana Travel Planners & Guides - Treasure State</title>
         <meta name="description" content="Plan your perfect Montana adventure with our comprehensive travel planners, scenic routes, and thematic guides." />
       </Head>

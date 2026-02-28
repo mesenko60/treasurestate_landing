@@ -97,6 +97,7 @@ export default function ComparePage({ townA, townB }: Props) {
   return (
     <>
       <Head>
+        <link rel="canonical" href={url} />
         <title>{title}</title>
         <meta name="description" content={metaDesc} />
         <meta property="og:title" content={title} />

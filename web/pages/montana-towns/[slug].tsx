@@ -99,6 +99,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
   return (
     <>
       <Head>
+        <link rel="canonical" href={url} />
         <title>{title}</title>
         <meta name="description" content={metaDesc} />
         

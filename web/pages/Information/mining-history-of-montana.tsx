@@ -10,6 +10,7 @@ export default function MiningHistoryOfMontana() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/Information/mining-history-of-montana/" />
         <title>Mining History of Montana - Treasure State</title>
         <meta name="description" content="Explore the rich and complex history of gold mining in Montana, from its earliest discoveries to its lasting legacy." />
         <meta name="keywords" content="Montana mining history, gold rush, Bannack, Virginia City, Alder Gulch, Last Chance Gulch, Butte, copper mining, Montana Vigilantes, environmental legacy, Treasure State" />

@@ -275,6 +275,7 @@ export default function CompareTool({ towns }: Props) {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/compare/" />
         <title>{title}</title>
         <meta name="description" content={desc} />
         <meta property="og:title" content={title} />

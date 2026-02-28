@@ -12,6 +12,7 @@ export default function StoryOfMontanaVigilantes() {
     <>
       <Head>
         <title>The Noose of Doubt: Montana’s Vigilante Legacy - Treasure State</title>
+        <link rel="canonical" href="https://treasurestate.com/Information/story-of-montana-vigilantes/" />
         <meta name="description" content="Uncover the unsettling story of Montana's vigilante era—where law was uncertain, justice was swift, and the line between hero and executioner blurred." />
         <meta name="keywords" content="Montana vigilantes, Henry Plummer, Bannack, Virginia City, frontier justice, gold camps, extralegal executions, 3-7-77, Montana history, vigilante timeline" />
       </Head>

@@ -10,6 +10,7 @@ export default function MontanaFacts() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/Information/montana-facts/" />
         <title>Montana Facts - Treasure State</title>
         <meta name="description" content="Discover fascinating facts about Montana, the Treasure State. Learn about Montana's geography, history, wildlife, and unique characteristics." />
         <meta name="keywords" content="Montana Facts, Treasure State, Montana History, Montana Geography, Montana Wildlife, Montana Celebrities, Montana Weather" />

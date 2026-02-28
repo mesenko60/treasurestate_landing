@@ -11,6 +11,7 @@ export default function MontanaBackroads() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/planners/montana-backroads/" />
         <title>Montana's Backroads: A Scenic Travel Guide - Treasure State</title>
         <meta name="description" content="Discover the hidden gems of Big Sky Country with our guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures." />
       </Head>

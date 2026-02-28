@@ -10,6 +10,7 @@ export default function Header() {
       <Link href="/">Home</Link>
       <Link href="/Montana-towns" className={isActive('/Montana-towns') ? 'active' : ''}>Cities and Towns</Link>
       <Link href="/compare" className={isActive('/compare') ? 'active' : ''}>Compare Towns</Link>
+      <Link href="/best-of" className={router.asPath.startsWith('/best-of') ? 'active' : ''}>Best Of</Link>
       <Link href="/planners" className={isActive('/planners') ? 'active' : ''}>Travel Planners</Link>
       <Link href="/Information/Montana-Facts.html" className={isActive('/Information/Montana-Facts.html') ? 'active' : ''}>Montana Facts</Link>
       <Link href="/explore-montana.html" className={isActive('/explore-montana.html') ? 'active' : ''}>Explore Montana</Link>

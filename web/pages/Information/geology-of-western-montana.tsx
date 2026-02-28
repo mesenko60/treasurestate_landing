@@ -10,6 +10,7 @@ export default function GeologyOfWesternMontana() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/Information/geology-of-western-montana/" />
         <title>Geology of Western Montana - Treasure State</title>
         <meta name="description" content="Explore the fascinating geological history of Western Montana, from ancient seas to glacial landscapes and tectonic forces that shaped the region." />
         <meta name="keywords" content="Montana geology, Western Montana, glacial Lake Missoula, Rocky Mountains, geology of Montana, tectonic plates, glaciers, geological history" />

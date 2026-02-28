@@ -9,6 +9,7 @@ export default function ExploreMontana() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://treasurestate.com/explore-montana.html" />
         <title>Explore Montana - Treasure State</title>
         <meta name="description" content="Explore Montana: Discover upcoming features and adventures on Treasure State." />
       </Head>
