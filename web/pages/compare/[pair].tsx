@@ -48,6 +48,20 @@ const AIRPORT_NAMES: Record<string, string> = {
   FCA: 'Kalispell', GTF: 'Great Falls', HLN: 'Helena',
 };
 
+const REC_ICONS: Record<string, string> = {
+  'National Park': '🏔️', 'National Forest': '🌲', 'Wilderness': '🏕️',
+  'State Park': '🌳', 'Lake': '🏞️', 'River': '🎣', 'Hot Spring': '♨️',
+  'Ski Area': '⛷️', 'Scenic Drive': '🛣️', 'Wildlife Refuge': '🦅',
+  'Historic Site': '🏛️', 'National Rec Area': '🏞️', 'Golf': '⛳', 'Museum': '🏛️',
+};
+
+const REC_COLORS: Record<string, string> = {
+  'National Park': '#2d7d46', 'National Forest': '#3a7d44', 'Wilderness': '#4a7c59',
+  'State Park': '#5a8f3c', 'Lake': '#3b6978', 'River': '#2980b9', 'Hot Spring': '#c0392b',
+  'Ski Area': '#5b6abf', 'Scenic Drive': '#d68910', 'Wildlife Refuge': '#7d6608',
+  'Historic Site': '#8b4513', 'National Rec Area': '#2e86ab', 'Golf': '#27ae60', 'Museum': '#6c3483',
+};
+
 function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: string }) {
   return (
     <tr>
@@ -152,15 +166,21 @@ export default function ComparePage({ townA, townB }: Props) {
           {/* Nearby recreation */}
           {(townA.recreation || townB.recreation) && (
             <div style={{ marginTop: '2rem' }}>
-              <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem', textAlign: 'center' }}>Nearby Outdoor Recreation</h3>
+              <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem', textAlign: 'center' }}>Outdoor Recreation &amp; Attractions</h3>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 {[townA, townB].map((town, idx) => (
                   <div key={town.slug}>
                     <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.95rem', textAlign: 'center' }}>{town.name}</div>
                     {town.recreation?.map((p, i) => (
-                      <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.35rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.85rem' }}>
-                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', marginRight: '0.5rem' }}>{p.name}</span>
-                        <span style={{ color: '#888', flexShrink: 0 }}>{p.distMiles} mi</span>
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem' }}>
+                        <span style={{ flexShrink: 0 }}>{REC_ICONS[p.type] || '📍'}</span>
+                        <div style={{ minWidth: 0, flex: 1 }}>
+                          <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontWeight: 500, color: '#204051' }}>{p.name}</div>
+                          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <span style={{ fontSize: '0.7rem', color: REC_COLORS[p.type] || '#888', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.3px' }}>{p.type}</span>
+                            <span style={{ fontSize: '0.75rem', color: '#888' }}>{p.distMiles} mi</span>
+                          </div>
+                        </div>
                       </div>
                     )) || <div style={{ color: '#999', fontSize: '0.85rem', textAlign: 'center' }}>No data</div>}
                   </div>
@@ -308,7 +328,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       annualPrecip: months ? months.reduce((s, m) => s + m.precipIn, 0).toFixed(1) : null,
       annualSnow: months ? months.reduce((s, m) => s + (m.snowIn || 0), 0).toFixed(1) : null,
       climateMonths: months || null,
-      recreation: recData[slug]?.places?.slice(0, 4) || null,
+      recreation: recData[slug]?.places || null,
     };
   }
 
