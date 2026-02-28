@@ -83,6 +83,17 @@ export default function StoryOfMontanaVigilantes() {
 
           <p>The vigilante movement later spread northward to <Link href="/montana-towns/helena/">Helena</Link> in 1865, where the Committee of Safety continued the practice of extralegal justice. In January 1870, Chinese worker Ah Chow was lynched in <Link href="/montana-towns/helena/">Helena</Link> from what became known as the "Old Hangman's Tree." The last documented vigilante execution in <Link href="/montana-towns/helena/">Helena</Link> occurred on April 27, 1870, when Joseph Wilson and Arthur Compton were hanged from the same tree for robbery and attempted murder. This hanging was photographed, and the widely circulated image helped dampen public enthusiasm for vigilante justice.</p>
 
+          <figure style={{ margin: '2rem auto', maxWidth: '600px', textAlign: 'center' }}>
+            <img
+              src="/images/information/old-hangmans-tree.png"
+              alt="The Old Hangman's Tree in Helena, Montana, used for vigilante executions in the 1860s and 1870s"
+              style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}
+            />
+            <figcaption style={{ marginTop: '0.75rem', fontSize: '0.9rem', color: '#666', fontStyle: 'italic', lineHeight: 1.5 }}>
+              The Old Hangman's Tree in Helena, Montana. Between 1865 and 1870, vigilance committees used this tree to carry out extralegal executions, including the 1870 lynching of Ah Chow and the final documented hanging of Joseph Wilson and Arthur Compton.
+            </figcaption>
+          </figure>
+
           <p>In total, historians estimate that between 1863 and 1870, vigilance committees in Montana Territory executed approximately 57 men. The sites of these hangings, once marked in towns across Montana, have largely disappeared from the landscape, though some locations like Bannack State Park and <Link href="/montana-towns/virginia-city/">Virginia City</Link> maintain their historical connections to this dark chapter of Montana history.</p>
 
           <p>The brutal nature of these executions speaks to a darkness that goes beyond the clinical application of frontier justice. After men were hanged, their bodies were sometimes left swinging for days as warnings to others. The infamous "3-7-77" warning, allegedly the dimensions of a grave, was painted on doors of those marked for execution, a psychological terror tactic designed to break the spirit before breaking the neck.</p>
