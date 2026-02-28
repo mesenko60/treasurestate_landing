@@ -242,6 +242,7 @@ const CURATED_SITES = [
   { name: 'Five Valleys Land Trust', type: 'National HQ', lat: 46.8710, lng: -113.9930 },
   { name: 'Heart of the Rockies Initiative HQ', type: 'National HQ', lat: 46.8700, lng: -113.9900 },
   { name: 'Greater Yellowstone Coalition HQ', type: 'National HQ', lat: 45.6790, lng: -111.0400 },
+  { name: 'Wild Sheep Foundation HQ', type: 'National HQ', lat: 45.6830, lng: -111.0500 },
   { name: 'Montana Wilderness Association HQ', type: 'National HQ', lat: 46.5850, lng: -112.0300 },
   { name: 'Montana Wildlife Federation HQ', type: 'National HQ', lat: 46.5860, lng: -112.0200 },
 

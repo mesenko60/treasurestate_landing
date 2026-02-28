@@ -5398,6 +5398,11 @@
         "distMiles": 9
       },
       {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 9
+      },
+      {
         "name": "Sypes Canyon Trailhead",
         "type": "Trailhead",
         "distMiles": 9
@@ -8069,6 +8074,11 @@
       },
       {
         "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
         "type": "National HQ",
         "distMiles": 32
       },
@@ -14584,6 +14594,11 @@
     "places": [
       {
         "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
         "type": "National HQ",
         "distMiles": 0
       },
@@ -23210,6 +23225,11 @@
       {
         "name": "Pine Creek Falls",
         "type": "Waterfall",
+        "distMiles": 26
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
         "distMiles": 26
       },
       {
@@ -40408,6 +40428,11 @@
         "distMiles": 40
       },
       {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 40
+      },
+      {
         "name": "Specimen Creek Jct",
         "type": "Campground",
         "distMiles": 40
@@ -47099,6 +47124,11 @@
       },
       {
         "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
         "type": "National HQ",
         "distMiles": 46
       },
@@ -64583,6 +64613,11 @@
         "distMiles": 23
       },
       {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 24
+      },
+      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 24
@@ -67210,6 +67245,11 @@
       {
         "name": "Sacajawea Peak",
         "type": "Trailhead",
+        "distMiles": 18
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
         "distMiles": 18
       },
       {
@@ -95223,6 +95263,11 @@
         "distMiles": 28
       },
       {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 28
+      },
+      {
         "name": "Potosi Campground",
         "type": "Campground",
         "distMiles": 28
@@ -97035,6 +97080,11 @@
       {
         "name": "Story Mill Community Park",
         "type": "State Park",
+        "distMiles": 49
+      },
+      {
+        "name": "Wild Sheep Foundation HQ",
+        "type": "National HQ",
         "distMiles": 49
       },
       {
