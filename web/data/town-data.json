@@ -791,7 +791,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Geraldine Public Schools",
     "schoolEnrollment": 60,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 317
   },
   "glasgow": {
     "name": "Glasgow",
@@ -805,7 +806,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Glasgow Public Schools",
     "schoolEnrollment": 700,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 3190
   },
   "glendive": {
     "name": "Glendive",
@@ -834,7 +836,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Grass Range Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 125
   },
   "great-falls": {
     "name": "Great Falls",
@@ -878,7 +881,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Hardin Public Schools",
     "schoolEnrollment": 900,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 3742
   },
   "harlem": {
     "name": "Harlem",
@@ -892,7 +896,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Harlem Public Schools",
     "schoolEnrollment": 300,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 822
   },
   "harlowton": {
     "name": "Harlowton",
@@ -906,7 +911,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Harlowton Public Schools",
     "schoolEnrollment": 160,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 1058
   },
   "havre": {
     "name": "Havre",
@@ -950,7 +956,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Hingham Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 127
   },
   "hobson": {
     "name": "Hobson",
@@ -964,7 +971,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Hobson Public Schools",
     "schoolEnrollment": 80,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 160
   },
   "hot-springs": {
     "name": "Hot Springs",
@@ -993,7 +1001,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Hysham Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 251
   },
   "ismay": {
     "name": "Ismay",
@@ -1007,7 +1016,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Ismay Public Schools",
     "schoolEnrollment": 10,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 1
   },
   "joliet": {
     "name": "Joliet",
@@ -1021,7 +1031,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Joliet Public Schools",
     "schoolEnrollment": 200,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 613
   },
   "jordan": {
     "name": "Jordan",
@@ -1035,7 +1046,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Garfield County Schools",
     "schoolEnrollment": 80,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 321
   },
   "judith-gap": {
     "name": "Judith Gap",
@@ -1049,7 +1061,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Judith Gap Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 140
   },
   "kalispell": {
     "name": "Kalispell",
@@ -1078,7 +1091,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Kevin Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 108
   },
   "laurel": {
     "name": "Laurel",
@@ -1092,7 +1106,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Laurel Public Schools",
     "schoolEnrollment": 1800,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 7215
   },
   "lavina": {
     "name": "Lavina",
@@ -1106,7 +1121,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Lavina Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 134
   },
   "lewistown": {
     "name": "Lewistown",
@@ -1150,7 +1166,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Lima Public Schools",
     "schoolEnrollment": 30,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 218
   },
   "livingston": {
     "name": "Livingston",
@@ -1194,7 +1211,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Malta Public Schools",
     "schoolEnrollment": 400,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 2100
   },
   "manhattan": {
     "name": "Manhattan",
@@ -1208,7 +1226,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Manhattan Public Schools",
     "schoolEnrollment": 500,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 2288
   },
   "medicine-lake": {
     "name": "Medicine Lake",
@@ -1222,7 +1241,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Medicine Lake Public Schools",
     "schoolEnrollment": 80,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 213
   },
   "melstone": {
     "name": "Melstone",
@@ -1236,7 +1256,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Melstone Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 80
   },
   "miles-city": {
     "name": "Miles City",
@@ -1280,7 +1301,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Moore Public Schools",
     "schoolEnrollment": 60,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 224
   },
   "nashua": {
     "name": "Nashua",
@@ -1294,7 +1316,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Nashua Public Schools",
     "schoolEnrollment": 80,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 279
   },
   "neihart": {
     "name": "Neihart",
@@ -1308,7 +1331,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Neihart Public Schools",
     "schoolEnrollment": 10,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 39
   },
   "opheim": {
     "name": "Opheim",
@@ -1322,7 +1346,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Opheim Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 86
   },
   "outlook": {
     "name": "Outlook",
@@ -1336,7 +1361,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Outlook Public Schools",
     "schoolEnrollment": 20,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 51
   },
   "philipsburg": {
     "name": "Philipsburg",
@@ -1365,7 +1391,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Pinesdale School District",
     "schoolEnrollment": 80,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 833
   },
   "plains": {
     "name": "Plains",
@@ -1409,7 +1436,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Plevna Public Schools",
     "schoolEnrollment": 60,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 209
   },
   "polson": {
     "name": "Polson",
@@ -1438,7 +1466,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Poplar Public Schools",
     "schoolEnrollment": 500,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 635
   },
   "red-lodge": {
     "name": "Red Lodge",
@@ -1467,7 +1496,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Rexford Public Schools",
     "schoolEnrollment": 30,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 134
   },
   "richey": {
     "name": "Richey",
@@ -1481,7 +1511,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Richey Public Schools",
     "schoolEnrollment": 60,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 238
   },
   "ronan": {
     "name": "Ronan",
@@ -1510,7 +1541,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Roundup Public Schools",
     "schoolEnrollment": 350,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 2003
   },
   "ryegate": {
     "name": "Ryegate",
@@ -1524,7 +1556,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Ryegate Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 273
   },
   "saco": {
     "name": "Saco",
@@ -1538,7 +1571,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Saco Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 140
   },
   "scobey": {
     "name": "Scobey",
@@ -1552,7 +1586,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Scobey Public Schools",
     "schoolEnrollment": 200,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 861
   },
   "seeley-lake": {
     "name": "Seeley Lake",
@@ -1596,7 +1631,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Sheridan Public Schools",
     "schoolEnrollment": 200,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 869
   },
   "sidney": {
     "name": "Sidney",
@@ -1610,7 +1646,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Sidney Public Schools",
     "schoolEnrollment": 1200,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 6171
   },
   "st-ignatius": {
     "name": "St. Ignatius",
@@ -1639,7 +1676,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Stanford Public Schools",
     "schoolEnrollment": 100,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 268
   },
   "stevensville": {
     "name": "Stevensville",
@@ -1668,7 +1706,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Sunburst Public Schools",
     "schoolEnrollment": 60,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 301
   },
   "superior": {
     "name": "Superior",
@@ -1682,7 +1721,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Superior Public Schools",
     "schoolEnrollment": 250,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 896
   },
   "terry": {
     "name": "Terry",
@@ -1696,7 +1736,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Terry Public Schools",
     "schoolEnrollment": 120,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 537
   },
   "thompson-falls": {
     "name": "Thompson Falls",
@@ -1740,7 +1781,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Townsend Public Schools",
     "schoolEnrollment": 500,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 1967
   },
   "troy": {
     "name": "Troy",
@@ -1784,7 +1826,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Valier Public Schools",
     "schoolEnrollment": 130,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 573
   },
   "virginia-city": {
     "name": "Virginia City",
@@ -1813,7 +1856,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Walkerville Public Schools",
     "schoolEnrollment": 100,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 700
   },
   "west-glacier": {
     "name": "West Glacier",
@@ -1857,7 +1901,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Westby Public Schools",
     "schoolEnrollment": 40,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 290
   },
   "white-sulphur-springs": {
     "name": "White Sulphur Springs",
@@ -1901,7 +1946,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Whitehall Public Schools",
     "schoolEnrollment": 350,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 1156
   },
   "wibaux": {
     "name": "Wibaux",
@@ -1915,7 +1961,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Wibaux Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 672
   },
   "winifred": {
     "name": "Winifred",
@@ -1929,7 +1976,8 @@
     "timeZone": "Mountain Time (MT)",
     "schoolDistrict": "Winifred Public Schools",
     "schoolEnrollment": 50,
-    "schoolWebsite": null
+    "schoolWebsite": null,
+    "population": 263
   },
   "winnett": {
     "name": "Winnett",
