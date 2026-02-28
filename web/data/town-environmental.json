@@ -1,0 +1,1102 @@
+{
+  "alberton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "anaconda": {
+    "environmentalConcernLevel": "critical",
+    "environmentalScore": 1,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Anaconda Co. Smelter"
+    ],
+    "notes": "Major Superfund site from over a century of copper smelting. Extensive soil and water contamination.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "bainville": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "baker": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "bearcreek": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "belgrade": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "belt": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "big-sandy": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "big-sky": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "big-timber": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "bigfork": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "billings": {
+    "environmentalConcernLevel": "low",
+    "environmentalScore": 7,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Lockwood Solvents"
+    ],
+    "notes": "Lockwood Solvents site near Billings involves localized groundwater contamination.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "boulder": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "bozeman": {
+    "environmentalConcernLevel": "low",
+    "environmentalScore": 7,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Idaho Pole (Bozeman)"
+    ],
+    "notes": "Idaho Pole wood treatment Superfund site was largely remediated by 1998.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "bridger": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "broadus": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "broadview": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "browning": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "butte": {
+    "environmentalConcernLevel": "critical",
+    "environmentalScore": 1,
+    "superfundSites": 2,
+    "superfundSiteNames": [
+      "Silver Bow Creek/Butte Area (Berkeley Pit)",
+      "Montana Pole and Treating Plant"
+    ],
+    "notes": "Home to two EPA Superfund sites including the Berkeley Pit, one of the largest Superfund complexes in the U.S.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "cascade": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "chester": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "chinook": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "choteau": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "circle": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "clyde-park": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "colstrip": {
+    "environmentalConcernLevel": "high",
+    "environmentalScore": 3,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Colstrip Steam Electric Station"
+    ],
+    "notes": "Coal-fired power plant with documented groundwater contamination from coal ash ponds. Subject to ongoing environmental remediation orders.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "columbia-falls": {
+    "environmentalConcernLevel": "moderate",
+    "environmentalScore": 5,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Anaconda Aluminum Co. Reduction Plant"
+    ],
+    "notes": "Former aluminum reduction plant Superfund site with groundwater contamination.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "columbus": {
+    "environmentalConcernLevel": "low",
+    "environmentalScore": 7,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Mouat Industries (Columbus)"
+    ],
+    "notes": "Mouat Industries chromium site is partially deleted from NPL following cleanup.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "conrad": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "culbertson": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "cut-bank": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "darby": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "deer-lodge": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "denton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "dillon": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "dodson": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "drummond": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "dutton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "east-glacier": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "east-helena": {
+    "environmentalConcernLevel": "high",
+    "environmentalScore": 3,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "East Helena ASARCO Lead Smelter"
+    ],
+    "notes": "EPA Superfund site from former ASARCO lead smelter. Lead contamination in soil and groundwater.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "ekalaka": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "ennis": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "eureka": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "fairfield": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "fairview": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "flaxville": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "forsyth": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "fort-benton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "fort-peck": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "froid": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "fromberg": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "gardiner": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "geraldine": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "glasgow": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "glendive": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "grass-range": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "great-falls": {
+    "environmentalConcernLevel": "moderate",
+    "environmentalScore": 5,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "ACM Smelter and Refinery (Black Eagle)"
+    ],
+    "notes": "ACM Smelter Superfund site in nearby Black Eagle with arsenic and lead contamination.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hamilton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hardin": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "harlem": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "harlowton": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "havre": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "helena": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hingham": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hobson": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hot-springs": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "hysham": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "ismay": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "joliet": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "jordan": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "judith-gap": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "kalispell": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "kevin": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "laurel": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "lavina": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "lewistown": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "libby": {
+    "environmentalConcernLevel": "critical",
+    "environmentalScore": 1,
+    "superfundSites": 2,
+    "superfundSiteNames": [
+      "Libby Asbestos",
+      "Libby Ground Water"
+    ],
+    "notes": "Two Superfund sites including the Libby Asbestos site. EPA declared a public health emergency in 2009 due to asbestos-related illness and death.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "lima": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "livingston": {
+    "environmentalConcernLevel": "moderate",
+    "environmentalScore": 5,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Burlington Northern Livingston Shop Complex"
+    ],
+    "notes": "Burlington Northern railroad shop Superfund site with petroleum and VOC contamination of the aquifer.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "lodge-grass": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "malta": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "manhattan": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "medicine-lake": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "melstone": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "miles-city": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "missoula": {
+    "environmentalConcernLevel": "low",
+    "environmentalScore": 7,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Milltown Reservoir Sediments"
+    ],
+    "notes": "Milltown Reservoir Superfund site upstream was largely remediated with dam removal in 2008.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "moore": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "nashua": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "neihart": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "opheim": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "outlook": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "philipsburg": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "pinesdale": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "plains": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "plentywood": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "plevna": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "polson": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "poplar": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "red-lodge": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "rexford": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "richey": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "ronan": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "roundup": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "ryegate": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "saco": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "scobey": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "seeley-lake": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "shelby": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "sheridan": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "sidney": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "st-ignatius": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "stanford": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "stevensville": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "sunburst": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "superior": {
+    "environmentalConcernLevel": "moderate",
+    "environmentalScore": 5,
+    "superfundSites": 1,
+    "superfundSiteNames": [
+      "Flat Creek IMM"
+    ],
+    "notes": "Mine tailings from Flat Creek IMM site were used as fill in town, causing arsenic and lead contamination.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "terry": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "thompson-falls": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "three-forks": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "townsend": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "troy": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "twin-bridges": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "valier": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "virginia-city": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "walkerville": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "west-glacier": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "west-yellowstone": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "westby": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "white-sulphur-springs": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "whitefish": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "whitehall": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "wibaux": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "winifred": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "winnett": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  },
+  "wolf-point": {
+    "environmentalConcernLevel": "none",
+    "environmentalScore": 10,
+    "superfundSites": 0,
+    "superfundSiteNames": [],
+    "notes": "No known EPA Superfund sites or major environmental concerns.",
+    "source": "EPA National Priorities List (NPL) / Superfund Program"
+  }
+}

@@ -10,6 +10,18 @@ type Props = {
   rentPercentile: number | null;
   incomePercentile: number | null;
   affordabilityRatio: number | null;
+  forSaleInventory: number | null;
+  forSaleInventoryDate: string | null;
+  inventoryYoY: number | null;
+  medianListPrice: number | null;
+  newListings: number | null;
+  totalHousingUnits: number | null;
+  vacancyRate: number | null;
+  unemploymentRate?: number | null;
+  laborForceParticipation?: number | null;
+  employed?: number | null;
+  laborForce?: number | null;
+  topIndustries?: { name: string; pct: number }[] | null;
 };
 
 function formatDate(dateStr: string | null): string {
@@ -49,6 +61,9 @@ export default function TownHousing({
   medianHomeValue, medianRent, medianHouseholdIncome,
   zillowHomeValue, zillowHomeValueDate, zillowRent, zillowRentDate,
   homeValuePercentile, rentPercentile, incomePercentile, affordabilityRatio,
+  forSaleInventory, forSaleInventoryDate, inventoryYoY, medianListPrice,
+  newListings, totalHousingUnits, vacancyRate,
+  unemploymentRate, laborForceParticipation, employed, laborForce, topIndustries,
 }: Props) {
   if (!medianHomeValue && !medianRent && !medianHouseholdIncome && !zillowHomeValue) return null;
 
@@ -148,12 +163,139 @@ export default function TownHousing({
         </div>
       )}
 
+      {/* Housing Market Activity */}
+      {(forSaleInventory != null || totalHousingUnits != null) && (
+        <div style={{ marginTop: '1.25rem', padding: '1rem', background: '#fff', borderRadius: '8px', border: '1px solid #eee' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+            Housing Availability
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem' }}>
+            {forSaleInventory != null && (
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#204051' }}>
+                  {forSaleInventory.toLocaleString()}
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>Homes for Sale</div>
+                {inventoryYoY != null && (
+                  <div style={{ fontSize: '0.72rem', marginTop: '2px', color: inventoryYoY > 0 ? '#27ae60' : inventoryYoY < 0 ? '#c0392b' : '#888' }}>
+                    {inventoryYoY > 0 ? '↑' : inventoryYoY < 0 ? '↓' : '→'} {Math.abs(inventoryYoY)}% vs last year
+                  </div>
+                )}
+              </div>
+            )}
+            {medianListPrice != null && (
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#204051' }}>
+                  ${medianListPrice.toLocaleString()}
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>Median List Price</div>
+              </div>
+            )}
+            {newListings != null && (
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#204051' }}>
+                  {newListings}
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>New Listings/Month</div>
+              </div>
+            )}
+            {totalHousingUnits != null && (
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#204051' }}>
+                  {totalHousingUnits.toLocaleString()}
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>Total Housing Units</div>
+              </div>
+            )}
+            {vacancyRate != null && (
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: vacancyRate >= 10 ? '#27ae60' : vacancyRate >= 5 ? '#f39c12' : '#c0392b' }}>
+                  {vacancyRate}%
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>Vacancy Rate</div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Employment & Economy */}
+      {(unemploymentRate != null || (topIndustries && topIndustries.length > 0)) && (
+        <div style={{ marginTop: '1.25rem', padding: '1rem', background: '#fff', borderRadius: '8px', border: '1px solid #eee' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+            Employment &amp; Economy
+          </div>
+          {unemploymentRate != null && (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem' }}>
+              <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                <div style={{
+                  fontSize: '1.25rem', fontWeight: 700,
+                  color: unemploymentRate <= 3 ? '#27ae60' : unemploymentRate <= 6 ? '#f39c12' : '#c0392b',
+                }}>
+                  {unemploymentRate}%
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#666' }}>Unemployment Rate</div>
+                <div style={{ fontSize: '0.68rem', color: '#999', marginTop: '2px' }}>
+                  MT avg: ~3.5%
+                </div>
+              </div>
+              {laborForceParticipation != null && (
+                <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                  <div style={{
+                    fontSize: '1.25rem', fontWeight: 700,
+                    color: laborForceParticipation >= 70 ? '#27ae60' : laborForceParticipation >= 60 ? '#f39c12' : '#c0392b',
+                  }}>
+                    {laborForceParticipation}%
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#666' }}>Labor Force Participation</div>
+                </div>
+              )}
+              {employed != null && (
+                <div style={{ textAlign: 'center', padding: '0.5rem', background: '#f5f8f5', borderRadius: '6px' }}>
+                  <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#204051' }}>
+                    {employed.toLocaleString()}
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#666' }}>Employed Residents</div>
+                </div>
+              )}
+            </div>
+          )}
+          {topIndustries && topIndustries.length > 0 && (
+            <div style={{ marginTop: unemploymentRate != null ? '0.75rem' : 0 }}>
+              <div style={{ fontSize: '0.75rem', color: '#888', marginBottom: '0.4rem' }}>Top Industries</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                {topIndustries.slice(0, 5).map((ind, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div style={{ width: '110px', fontSize: '0.75rem', color: '#555', flexShrink: 0, textAlign: 'right' }}>
+                      {ind.name}
+                    </div>
+                    <div style={{ flex: 1, height: '14px', background: '#eef2ee', borderRadius: '3px', overflow: 'hidden' }}>
+                      <div style={{
+                        width: `${Math.min(ind.pct * 2, 100)}%`, height: '100%',
+                        background: i === 0 ? '#3b6978' : i === 1 ? '#5a8a99' : '#8cb4c0',
+                        borderRadius: '3px',
+                      }} />
+                    </div>
+                    <div style={{ width: '36px', fontSize: '0.72rem', fontWeight: 600, color: '#204051', textAlign: 'right' }}>
+                      {ind.pct}%
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center', lineHeight: 1.6 }}>
         {zillowHomeValue && (
           <>Home value data from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Home Value Index</a> ({formatDate(zillowHomeValueDate)}). </>
         )}
+        {forSaleInventory != null && (
+          <>Inventory from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Research</a> ({formatDate(forSaleInventoryDate)}). </>
+        )}
         {medianHouseholdIncome && (
-          <>Income{!zillowHomeValue && medianHomeValue ? ' and home value' : ''} from U.S. Census Bureau, ACS 5-Year Estimates (2019–2023).</>
+          <>Income{!zillowHomeValue && medianHomeValue ? ', home value,' : ''}{totalHousingUnits ? ', vacancy,' : ''}{unemploymentRate != null ? ' and employment' : ''} from U.S. Census Bureau, ACS 5-Year Estimates (2019–2023).</>
         )}
       </div>
     </section>

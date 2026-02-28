@@ -16,7 +16,9 @@ const RANKINGS = [
   { slug: 'best-towns-near-glacier-yellowstone', title: '10 Best Towns Near Glacier & Yellowstone', icon: '🦌', description: 'Gateway communities to America\'s most iconic national parks.' },
   { slug: 'best-towns-for-retirees', title: '10 Best Towns for Retirees', icon: '🌅', description: 'Combining affordability, mild climate, recreation, and quality of life for your golden years.' },
   { slug: 'best-climate', title: '10 Towns with the Best Climate', icon: '☀️', description: 'Where Montana\'s winters are (relatively) gentle. Ranked by temperature, snowfall, and sunshine.' },
-  { slug: 'best-towns-for-families', title: '10 Best Towns for Families', icon: '👨‍👩‍👧‍👦', description: 'Great schools, affordable housing, and family-friendly recreation. Where Montana families thrive.' },
+  { slug: 'best-towns-for-families', title: '10 Best Towns for Families', icon: '👨‍👩‍👧‍👦', description: 'Top schools, safe communities, strong job markets, and family-friendly recreation. Where Montana families thrive.' },
+  { slug: 'best-towns-for-young-professionals', title: '10 Best Towns for Young Professionals', icon: '💼', description: 'Low unemployment, strong labor markets, and unbeatable quality of life. Build your career in Big Sky Country.' },
+  { slug: 'best-housing-availability', title: '10 Towns with Best Housing Availability', icon: '🏘️', description: 'Where you can actually find a home to buy. Ranked by current inventory, vacancy rates, and market activity.' },
 ];
 
 export default function BestOfIndex() {

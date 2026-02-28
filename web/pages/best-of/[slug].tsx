@@ -240,6 +240,33 @@ type TownRaw = {
   trailCount: number;
   campgroundCount: number;
   wildernessMiles: number | null;
+  safetyScore: number | null;
+  environmentalScore: number | null;
+  environmentalConcernLevel: string | null;
+  superfundSites: number;
+  violentCrimeRate: number | null;
+  propertyCrimeRate: number | null;
+  totalCrimeRate: number | null;
+  forSaleInventory: number | null;
+  inventoryYoY: number | null;
+  medianListPrice: number | null;
+  totalHousingUnits: number | null;
+  vacancyRate: number | null;
+  unemploymentRate: number | null;
+  laborForceParticipation: number | null;
+  jobScore: number | null;
+  graduationRate: number | null;
+  schoolScore: number | null;
+  perPupilSpending: number | null;
+  mainIndustry: string | null;
+  topIndustries: { name: string; pct: number }[] | null;
+  healthcareScore: number | null;
+  nearestHospitalDist: number | null;
+  nearestHospitalName: string | null;
+  nearestMajorHospitalDist: number | null;
+  nearestMajorHospitalName: string | null;
+  hasLocalHospital: boolean;
+  hospitalsWithin30: number;
   julHigh: number | null;
   janLow: number | null;
   annualSnow: number | null;
@@ -264,6 +291,15 @@ function computeRecScore(places: any[]): number {
   const nearest = notable.length > 0 ? notable[0].distMiles : 50;
   const proximity = Math.max(1 - nearest / 50, 0) * 1.5;
   return Math.min(Math.round((diversity + volume + quality + proximity) * 10) / 10, 10);
+}
+
+function housingAvailScore(t: TownRaw): number {
+  const vacScore = t.vacancyRate != null ? Math.min(t.vacancyRate / 3, 3) : 1.5;
+  const invScore = t.forSaleInventory != null && t.population
+    ? Math.min((t.forSaleInventory / Math.max(t.population, 1)) * 1000 / 5, 3)
+    : 1;
+  const yoyBonus = t.inventoryYoY != null && t.inventoryYoY > 0 ? Math.min(t.inventoryYoY / 20, 1) : 0;
+  return vacScore + invScore + yoyBonus;
 }
 
 type RankingDef = {
@@ -294,13 +330,15 @@ const RANKINGS: RankingDef[] = [
     highlight: t => {
       const ratio = t.affordabilityRatio!;
       const label = ratio <= 2 ? 'extremely affordable' : ratio <= 3 ? 'very affordable' : 'affordable';
-      return `With a price-to-income ratio of ${ratio}x, ${t.name} is ${label}. ${t.county ? `Located in ${t.county} County` : 'Located'} with a population of ${fmt(t.population)}, it offers small-town Montana living at a fraction of the cost of larger cities.`;
+      const inv = t.forSaleInventory ? ` There are currently ${t.forSaleInventory} homes for sale.` : '';
+      const indNote = t.mainIndustry ? ` The local economy is driven by ${t.mainIndustry.toLowerCase()}.` : '';
+      return `With a price-to-income ratio of ${ratio}x, ${t.name} is ${label}. ${t.county ? `Located in ${t.county} County` : 'Located'} with a population of ${fmt(t.population)}, it offers small-town Montana living at a fraction of the cost of larger cities.${indNote}${inv}`;
     },
     stats: t => [
       { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
-      { label: 'Rent', value: fmtDollar(t.zillowRent ?? t.medianRent) + '/mo' },
-      { label: 'Income', value: fmtDollar(t.medianHouseholdIncome) },
+      ...(t.mainIndustry ? [{ label: 'Top Industry', value: t.mainIndustry }] : []),
       { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
+      ...(t.forSaleInventory ? [{ label: 'For Sale', value: fmt(t.forSaleInventory) + ' homes' }] : [{ label: 'Income', value: fmtDollar(t.medianHouseholdIncome) }]),
     ],
   },
   {
@@ -380,23 +418,36 @@ const RANKINGS: RankingDef[] = [
   {
     slug: 'best-small-towns',
     title: '10 Best Small Towns in Montana',
-    metaDescription: 'Discover Montana\'s best small towns — charming communities under 5,000 people with big character, stunning scenery, and outdoor access.',
+    metaDescription: 'Discover Montana\'s best small towns — charming communities under 5,000 with great schools, available housing, low crime, and stunning scenery.',
     heroSubtitle: 'Small-Town Charm Meets Big Sky Country',
-    intro: 'Some of Montana\'s most special places are its smallest communities. These towns under 5,000 people offer the quintessential Montana experience — genuine character, stunning natural settings, and a pace of life that lets you breathe. We ranked them by a blend of recreation access, affordability, and the kind of charm that makes people fall in love with a place.',
-    methodology: 'Limited to towns with population under 5,000. Ranked by a composite score of recreation score (×3), affordability (inverted ratio ×2), and category diversity. Towns with higher recreation access and lower cost of living rank highest.',
+    intro: 'Some of Montana\'s most special places are its smallest communities. These towns under 5,000 people offer the quintessential Montana experience — genuine character, stunning natural settings, good schools, available housing, and a pace of life that lets you breathe. We ranked them by a blend of safety, school quality, housing availability, employment, recreation access, and affordability.',
+    methodology: 'Limited to towns with population under 5,000. Ranked by a composite score of safety (FBI UCR, ×3), school quality (graduation rate, ×3), housing availability (vacancy rate + inventory, ×2), environmental health (EPA Superfund, ×2), job market (Census unemployment, ×2), recreation score (×3), and affordability (×2). Housing data from Zillow Research and Census ACS.',
     count: 10,
     filter: t => t.population != null && t.population > 0 && t.population < 5000 && t.affordabilityRatio != null,
     sort: (a, b) => {
-      const scoreA = a.recScore * 3 + Math.max(6 - (a.affordabilityRatio ?? 6), 0) * 2;
-      const scoreB = b.recScore * 3 + Math.max(6 - (b.affordabilityRatio ?? 6), 0) * 2;
+      const safetyA = a.safetyScore != null ? a.safetyScore : 5;
+      const safetyB = b.safetyScore != null ? b.safetyScore : 5;
+      const schoolA = a.schoolScore ?? 8.5;
+      const schoolB = b.schoolScore ?? 8.5;
+      const jobA = a.jobScore ?? 8;
+      const jobB = b.jobScore ?? 8;
+      const scoreA = safetyA * 3 + schoolA * 3 + housingAvailScore(a) * 2 + (a.environmentalScore ?? 10) * 2 + jobA * 2 + a.recScore * 3 + Math.max(6 - (a.affordabilityRatio ?? 6), 0) * 2;
+      const scoreB = safetyB * 3 + schoolB * 3 + housingAvailScore(b) * 2 + (b.environmentalScore ?? 10) * 2 + jobB * 2 + b.recScore * 3 + Math.max(6 - (b.affordabilityRatio ?? 6), 0) * 2;
       return scoreB - scoreA;
     },
-    highlight: t => `With just ${fmt(t.population)} residents, ${t.name} ${t.nickname !== 'A Montana Community' ? `("${t.nickname}") ` : ''}offers ${t.recTotal} recreation sites nearby and a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : 'moderate'} cost of living. ${t.county ? `Nestled in ${t.county} County` : 'Nestled'} at ${fmt(t.elevation)} feet, it\'s authentic Montana.`,
+    highlight: t => {
+      const safety = t.safetyScore != null ? ` with a safety score of ${t.safetyScore}/10` : '';
+      const gradNote = t.graduationRate != null ? ` The local graduation rate is ${t.graduationRate}%.` : '';
+      const jobNote = t.unemploymentRate != null ? ` Unemployment: ${t.unemploymentRate}%.` : '';
+      const invNote = t.forSaleInventory != null ? ` ${t.forSaleInventory} homes currently for sale.` : (t.vacancyRate != null ? ` Vacancy rate: ${t.vacancyRate}%.` : '');
+      const indNote = t.mainIndustry ? ` Main industry: ${t.mainIndustry.toLowerCase()}.` : '';
+      return `With just ${fmt(t.population)} residents, ${t.name} ${t.nickname !== 'A Montana Community' ? `("${t.nickname}") ` : ''}offers ${t.recTotal} recreation sites nearby${safety} and a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : 'moderate'} cost of living.${gradNote}${jobNote}${indNote}${invNote} ${t.county ? `Nestled in ${t.county} County` : 'Nestled'} at ${fmt(t.elevation)} feet, it\'s authentic Montana.`;
+    },
     stats: t => [
       { label: 'Population', value: fmt(t.population) },
+      ...(t.graduationRate != null ? [{ label: 'Grad Rate', value: t.graduationRate + '%' }] : []),
+      ...(t.forSaleInventory != null ? [{ label: 'For Sale', value: fmt(t.forSaleInventory) }] : [{ label: 'Vacancy', value: (t.vacancyRate ?? 0) + '%' }]),
       { label: 'Rec Score', value: t.recScore + '/10' },
-      { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
-      { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
     ],
   },
   {
@@ -420,31 +471,49 @@ const RANKINGS: RankingDef[] = [
   {
     slug: 'best-towns-for-retirees',
     title: '10 Best Montana Towns for Retirees',
-    metaDescription: 'The best Montana towns to retire in — combining affordability, mild climate, outdoor access, and small-town quality of life.',
+    metaDescription: 'The best Montana towns to retire in — combining healthcare access, safety, housing availability, affordability, mild climate, and outdoor recreation.',
     heroSubtitle: 'Your Golden Years in Big Sky Country',
-    intro: 'Montana is increasingly popular with retirees seeking clean air, stunning scenery, low crime, and a relaxed pace of life — all without state income tax on retirement income. We ranked Montana\'s towns by the factors that matter most to retirees: affordability, climate mildness, recreation access, and community amenities like nearby hot springs and cultural attractions.',
-    methodology: 'Ranked by a composite retiree score factoring in affordability ratio (×3, lower is better), climate mildness (January low temperature, ×2, higher is better), recreation score (×2), and proximity to hot springs and museums (×1 each). Montana has no state income tax, a major benefit for retirees.',
+    intro: 'Montana is increasingly popular with retirees seeking clean air, stunning scenery, low crime, and a relaxed pace of life — all without state income tax on retirement income. We ranked Montana\'s towns by the factors that matter most to retirees: healthcare access, safety, housing availability, affordability, climate mildness, environmental quality, and recreation.',
+    methodology: 'Ranked by a composite retiree score factoring in healthcare access (distance to hospitals + trauma center level, ×4), safety (FBI UCR crime rate, ×3), environmental health (EPA Superfund data, ×3), affordability ratio (×3), housing availability (×2), climate mildness (×2), recreation score (×2), and proximity to hot springs/museums (×1 each). Healthcare data from Montana DPHHS Trauma Facility Designations.',
     count: 10,
     filter: t => t.affordabilityRatio != null && t.janLow != null,
     sort: (a, b) => {
-      const scoreA = Math.max(8 - (a.affordabilityRatio ?? 8), 0) * 3
+      const safetyA = a.safetyScore != null ? a.safetyScore : 5;
+      const safetyB = b.safetyScore != null ? b.safetyScore : 5;
+      const healthA = a.healthcareScore ?? 3;
+      const healthB = b.healthcareScore ?? 3;
+      const scoreA = healthA * 4
+        + safetyA * 3
+        + (a.environmentalScore ?? 10) * 3
+        + Math.max(8 - (a.affordabilityRatio ?? 8), 0) * 3
+        + housingAvailScore(a) * 2
         + Math.max((a.janLow ?? -20) + 20, 0) / 5 * 2
         + a.recScore * 2
         + (a.nearestHotSpringMiles != null && a.nearestHotSpringMiles <= 30 ? 2 : 0)
         + Math.min((a.recByType['Museum'] ?? 0) / 3, 2);
-      const scoreB = Math.max(8 - (b.affordabilityRatio ?? 8), 0) * 3
+      const scoreB = healthB * 4
+        + safetyB * 3
+        + (b.environmentalScore ?? 10) * 3
+        + Math.max(8 - (b.affordabilityRatio ?? 8), 0) * 3
+        + housingAvailScore(b) * 2
         + Math.max((b.janLow ?? -20) + 20, 0) / 5 * 2
         + b.recScore * 2
         + (b.nearestHotSpringMiles != null && b.nearestHotSpringMiles <= 30 ? 2 : 0)
         + Math.min((b.recByType['Museum'] ?? 0) / 3, 2);
       return scoreB - scoreA;
     },
-    highlight: t => `${t.name} offers ${(t.affordabilityRatio ?? 0) <= 3 ? 'excellent' : (t.affordabilityRatio ?? 0) <= 5 ? 'good' : 'moderate'} affordability (${t.affordabilityRatio}x ratio) with January lows averaging ${t.janLow}°F. With a recreation score of ${t.recScore}/10 and ${t.recTotal} nearby attractions, there\'s always something to do.${t.nearestHotSpringMiles != null && t.nearestHotSpringMiles <= 30 ? ` ${t.nearestHotSpringName} is just ${t.nearestHotSpringMiles} miles away for a relaxing soak.` : ''}`,
+    highlight: t => {
+      const safety = t.safetyScore != null ? ` Safety: ${t.safetyScore}/10.` : '';
+      const healthNote = t.nearestHospitalName ? ` ${t.hasLocalHospital ? `Has a local hospital (${t.nearestHospitalName})` : `${t.nearestHospitalName} is ${t.nearestHospitalDist} mi away`}${t.nearestMajorHospitalDist != null && t.nearestMajorHospitalDist <= 60 ? `, with ${t.nearestMajorHospitalName} (Level ${t.nearestMajorHospitalDist <= 5 ? '' : t.nearestMajorHospitalDist + ' mi'}${t.nearestMajorHospitalDist <= 5 ? 'in town' : ''}) for advanced care` : ''}.` : '';
+      const invNote = t.forSaleInventory != null ? ` ${t.forSaleInventory} homes for sale.` : '';
+      const envNote = t.superfundSites > 0 ? ` Note: ${t.superfundSites} EPA Superfund site(s) nearby.` : '';
+      return `${t.name} offers ${(t.affordabilityRatio ?? 0) <= 3 ? 'excellent' : (t.affordabilityRatio ?? 0) <= 5 ? 'good' : 'moderate'} affordability (${t.affordabilityRatio}x ratio) with January lows averaging ${t.janLow}°F.${healthNote}${safety}${invNote} Recreation score: ${t.recScore}/10 with ${t.recTotal} nearby attractions.${t.nearestHotSpringMiles != null && t.nearestHotSpringMiles <= 30 ? ` ${t.nearestHotSpringName} is just ${t.nearestHotSpringMiles} miles away.` : ''}${envNote}`;
+    },
     stats: t => [
+      { label: 'Healthcare', value: (t.healthcareScore ?? 0) + '/10' },
+      ...(t.safetyScore != null ? [{ label: 'Safety', value: t.safetyScore + '/10' }] : []),
       { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
-      { label: 'Jan Low', value: (t.janLow ?? 0) + '°F' },
-      { label: 'Rec Score', value: t.recScore + '/10' },
-      { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
+      { label: 'Hospital', value: t.nearestHospitalDist != null ? (t.nearestHospitalDist <= 5 ? 'In town' : t.nearestHospitalDist + ' mi') : '—' },
     ],
   },
   {
@@ -472,29 +541,128 @@ const RANKINGS: RankingDef[] = [
   {
     slug: 'best-towns-for-families',
     title: '10 Best Montana Towns for Families',
-    metaDescription: 'The best Montana towns to raise a family — ranked by schools, affordability, recreation, and community.',
+    metaDescription: 'The best Montana towns to raise a family — ranked by school quality, safety, healthcare, housing availability, jobs, affordability, and recreation.',
     heroSubtitle: 'Where Montana Families Thrive',
-    intro: 'Raising a family in Montana means clean air, safe communities, and kids who grow up exploring the outdoors. But which towns offer the best combination of good schools, affordable housing, and family-friendly recreation? We analyzed every Montana community across the factors that matter most to families.',
-    methodology: 'Ranked by a composite family score: school enrollment (indicates community investment in education, ×2), affordability ratio (lower is better, ×3), recreation score (×2), and population (mid-size towns preferred for services and community, ×1). Towns without school data were excluded.',
+    intro: 'Raising a family in Montana means clean air, safe communities, and kids who grow up exploring the outdoors. But which towns offer the best combination of good schools, available housing, hospital access, strong job markets, and family-friendly recreation? We analyzed every Montana community across the factors that matter most to families.',
+    methodology: 'Ranked by a composite family score: safety (FBI UCR crime rate, ×4), school quality (graduation rate, ×4), environmental health (EPA Superfund data, ×3), job market (Census unemployment rate, ×3), affordability ratio (×3), healthcare access (hospital proximity + trauma level, ×2), housing availability (×2), school enrollment (×2), recreation score (×2), and population (×1). Healthcare data from Montana DPHHS.',
     count: 10,
     filter: t => t.schoolEnrollment != null && t.schoolEnrollment > 100 && t.affordabilityRatio != null,
     sort: (a, b) => {
-      const scoreA = Math.min((a.schoolEnrollment ?? 0) / 500, 3) * 2
+      const safetyA = a.safetyScore != null ? a.safetyScore : 5;
+      const safetyB = b.safetyScore != null ? b.safetyScore : 5;
+      const schoolA = a.schoolScore ?? 8.5;
+      const schoolB = b.schoolScore ?? 8.5;
+      const jobA = a.jobScore ?? 8;
+      const jobB = b.jobScore ?? 8;
+      const healthA = a.healthcareScore ?? 3;
+      const healthB = b.healthcareScore ?? 3;
+      const scoreA = safetyA * 4
+        + schoolA * 4
+        + (a.environmentalScore ?? 10) * 3
+        + jobA * 3
         + Math.max(8 - (a.affordabilityRatio ?? 8), 0) * 3
+        + healthA * 2
+        + housingAvailScore(a) * 2
+        + Math.min((a.schoolEnrollment ?? 0) / 500, 3) * 2
         + a.recScore * 2
         + Math.min((a.population ?? 0) / 5000, 2);
-      const scoreB = Math.min((b.schoolEnrollment ?? 0) / 500, 3) * 2
+      const scoreB = safetyB * 4
+        + schoolB * 4
+        + (b.environmentalScore ?? 10) * 3
+        + jobB * 3
         + Math.max(8 - (b.affordabilityRatio ?? 8), 0) * 3
+        + healthB * 2
+        + housingAvailScore(b) * 2
+        + Math.min((b.schoolEnrollment ?? 0) / 500, 3) * 2
         + b.recScore * 2
         + Math.min((b.population ?? 0) / 5000, 2);
       return scoreB - scoreA;
     },
-    highlight: t => `${t.name}${t.nickname !== 'A Montana Community' ? ` ("${t.nickname}")` : ''} has ${fmt(t.schoolEnrollment)} students in the ${t.schoolDistrict || t.name} school district. With a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : (t.affordabilityRatio ?? 0) <= 5 ? 'moderate' : 'higher'} cost of living and ${t.recTotal} recreation sites nearby, it\'s a great place to raise kids.`,
+    highlight: t => {
+      const safetyLabel = t.safetyScore != null ? (t.safetyScore >= 8 ? 'very safe' : t.safetyScore >= 6 ? 'safe' : t.safetyScore >= 4 ? 'moderate safety' : 'higher crime rates') : '';
+      const gradNote = t.graduationRate != null ? ` The local high school graduation rate is ${t.graduationRate}%.` : '';
+      const jobNote = t.unemploymentRate != null ? ` Unemployment is ${t.unemploymentRate}%.` : '';
+      const hospNote = t.hasLocalHospital ? ` Has a local hospital.` : (t.nearestHospitalDist != null && t.nearestHospitalDist <= 30 ? ` Nearest hospital: ${t.nearestHospitalDist} mi.` : '');
+      const indNote = t.mainIndustry ? ` Top industry: ${t.mainIndustry.toLowerCase()}.` : '';
+      const envNote = t.superfundSites > 0 ? ` Note: ${t.superfundSites} EPA Superfund site(s) nearby.` : '';
+      return `${t.name}${t.nickname !== 'A Montana Community' ? ` ("${t.nickname}")` : ''} has ${fmt(t.schoolEnrollment)} students in the ${t.schoolDistrict || t.name} school district.${gradNote} ${safetyLabel ? `The community has ${safetyLabel} (${t.safetyScore}/10).` : ''}${jobNote}${indNote}${hospNote} With a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : (t.affordabilityRatio ?? 0) <= 5 ? 'moderate' : 'higher'} cost of living and ${t.recTotal} recreation sites nearby, it\'s a great place to raise kids.${envNote}`;
+    },
     stats: t => [
-      { label: 'Schools', value: t.schoolDistrict ?? '—' },
-      { label: 'Enrollment', value: fmt(t.schoolEnrollment) },
+      ...(t.safetyScore != null ? [{ label: 'Safety', value: t.safetyScore + '/10' }] : []),
+      ...(t.graduationRate != null ? [{ label: 'Grad Rate', value: t.graduationRate + '%' }] : []),
+      { label: 'Hospital', value: t.nearestHospitalDist != null ? (t.nearestHospitalDist <= 5 ? 'In town' : t.nearestHospitalDist + ' mi') : '—' },
+      { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
+    ],
+  },
+  {
+    slug: 'best-towns-for-young-professionals',
+    title: '10 Best Montana Towns for Young Professionals',
+    metaDescription: 'Montana towns with the best job markets, available housing, lowest unemployment, and highest quality of life for young professionals and remote workers.',
+    heroSubtitle: 'Build Your Career in Big Sky Country',
+    intro: 'Montana isn\'t just a place to retire or vacation — it\'s increasingly a destination for young professionals and remote workers drawn by the quality of life, outdoor access, and growing local economies. We ranked Montana towns by the factors that matter most to career-minded residents: job availability, housing you can actually buy, affordability, safety, recreation, and community vitality.',
+    methodology: 'Ranked by a composite score: job market health (Census unemployment rate + labor force participation, ×5), housing availability (vacancy rate + inventory, ×3), affordability ratio (×3), safety (FBI UCR, ×3), recreation score (×2), population vitality (×1), and environmental health (×1). Housing data from Zillow Research and Census ACS.',
+    count: 10,
+    filter: t => t.unemploymentRate != null && t.affordabilityRatio != null && t.population != null && t.population > 500,
+    sort: (a, b) => {
+      const safetyA = a.safetyScore != null ? a.safetyScore : 5;
+      const safetyB = b.safetyScore != null ? b.safetyScore : 5;
+      const jobA = (a.jobScore ?? 5) + Math.min((a.laborForceParticipation ?? 60) / 10, 8);
+      const jobB = (b.jobScore ?? 5) + Math.min((b.laborForceParticipation ?? 60) / 10, 8);
+      const scoreA = jobA * 5
+        + housingAvailScore(a) * 3
+        + Math.max(8 - (a.affordabilityRatio ?? 8), 0) * 3
+        + safetyA * 3
+        + a.recScore * 2
+        + Math.min((a.population ?? 0) / 5000, 2)
+        + (a.environmentalScore ?? 10) * 1;
+      const scoreB = jobB * 5
+        + housingAvailScore(b) * 3
+        + Math.max(8 - (b.affordabilityRatio ?? 8), 0) * 3
+        + safetyB * 3
+        + b.recScore * 2
+        + Math.min((b.population ?? 0) / 5000, 2)
+        + (b.environmentalScore ?? 10) * 1;
+      return scoreB - scoreA;
+    },
+    highlight: t => {
+      const safetyNote = t.safetyScore != null ? ` Safety: ${t.safetyScore}/10.` : '';
+      const invNote = t.forSaleInventory != null ? ` There are ${t.forSaleInventory} homes currently for sale.` : (t.vacancyRate != null ? ` Vacancy rate: ${t.vacancyRate}%.` : '');
+      const indNote = t.mainIndustry ? ` The local economy is led by ${t.mainIndustry.toLowerCase()}${t.topIndustries && t.topIndustries.length >= 2 ? ` (${t.topIndustries[0].pct}%) and ${t.topIndustries[1].name.toLowerCase()} (${t.topIndustries[1].pct}%)` : ''}.` : '';
+      return `${t.name} has a ${t.unemploymentRate}% unemployment rate with ${t.laborForceParticipation}% labor force participation.${indNote} ${(t.affordabilityRatio ?? 99) <= 4 ? 'Housing is affordable' : 'Housing is moderate'} at a ${t.affordabilityRatio}x price-to-income ratio.${invNote}${safetyNote}`;
+    },
+    stats: t => [
+      { label: 'Unemp', value: t.unemploymentRate + '%' },
+      ...(t.mainIndustry ? [{ label: 'Top Industry', value: t.mainIndustry }] : []),
       { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
       { label: 'Rec Score', value: t.recScore + '/10' },
+    ],
+  },
+  {
+    slug: 'best-housing-availability',
+    title: '10 Montana Towns with the Best Housing Availability',
+    metaDescription: 'Montana towns with the most homes for sale right now — ranked by current Zillow inventory, vacancy rates, and market activity.',
+    heroSubtitle: 'Where You Can Actually Find a Home to Buy',
+    intro: 'Montana\'s housing market has been notoriously tight in recent years, with bidding wars and limited inventory frustrating buyers across the state. But not every town is equally competitive. We ranked Montana communities by current housing availability using real-time Zillow inventory data and Census vacancy rates to help you find towns where homes are actually on the market.',
+    methodology: 'Ranked by a housing availability score combining: Zillow for-sale inventory per 1,000 residents (×3 weight, higher means more options relative to town size), Census vacancy rate (×2, higher means more housing turnover), and year-over-year inventory change (×1, increasing inventory is positive). Data from Zillow Research (Jan 2026) and U.S. Census ACS 5-Year Estimates (2019–2023). Towns without sufficient data were excluded.',
+    count: 10,
+    filter: t => t.forSaleInventory != null && t.forSaleInventory > 0 && t.totalHousingUnits != null && t.population != null && t.population > 500,
+    sort: (a, b) => {
+      const invPerCapA = (a.forSaleInventory ?? 0) / Math.max(a.population ?? 1, 1) * 1000;
+      const invPerCapB = (b.forSaleInventory ?? 0) / Math.max(b.population ?? 1, 1) * 1000;
+      const scoreA = invPerCapA * 3 + (a.vacancyRate ?? 0) * 0.3 + Math.max(a.inventoryYoY ?? 0, 0) * 0.1;
+      const scoreB = invPerCapB * 3 + (b.vacancyRate ?? 0) * 0.3 + Math.max(b.inventoryYoY ?? 0, 0) * 0.1;
+      return scoreB - scoreA;
+    },
+    highlight: t => {
+      const perCap = Math.round((t.forSaleInventory ?? 0) / Math.max(t.population ?? 1, 1) * 1000 * 10) / 10;
+      const yoy = t.inventoryYoY != null ? (t.inventoryYoY > 0 ? `, up ${t.inventoryYoY}% from last year` : t.inventoryYoY < 0 ? `, down ${Math.abs(t.inventoryYoY)}% from last year` : '') : '';
+      return `${t.name} currently has ${t.forSaleInventory} homes for sale (${perCap} per 1,000 residents${yoy}). With ${t.totalHousingUnits?.toLocaleString()} total housing units and a ${t.vacancyRate}% vacancy rate, buyers have more options here than in most Montana communities.`;
+    },
+    stats: t => [
+      { label: 'For Sale', value: fmt(t.forSaleInventory) + ' homes' },
+      { label: 'Per 1,000', value: (Math.round((t.forSaleInventory ?? 0) / Math.max(t.population ?? 1, 1) * 1000 * 10) / 10).toString() },
+      { label: 'Vacancy', value: (t.vacancyRate ?? 0) + '%' },
+      { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
     ],
   },
 ];
@@ -523,6 +691,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const climate = load('town-climate.json');
   const nicknames = load('town-nicknames.json');
   const coords = load('town-coordinates.json');
+  const crime = load('town-crime.json');
+  const envData = load('town-environmental.json');
+  const economy = load('town-economy.json');
+  const healthcare = load('town-healthcare.json');
 
   const allTowns: TownRaw[] = Object.keys(coords).map(s => {
     const d = townData[s] || {};
@@ -571,6 +743,33 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       trailCount: recByType['Trailhead'] || 0,
       campgroundCount: recByType['Campground'] || 0,
       wildernessMiles: wild.miles,
+      safetyScore: crime[s]?.safetyScore ?? null,
+      violentCrimeRate: crime[s]?.violentCrimeRate ?? null,
+      propertyCrimeRate: crime[s]?.propertyCrimeRate ?? null,
+      totalCrimeRate: crime[s]?.totalCrimeRate ?? null,
+      environmentalScore: envData[s]?.environmentalScore ?? 10,
+      environmentalConcernLevel: envData[s]?.environmentalConcernLevel ?? 'none',
+      superfundSites: envData[s]?.superfundSites ?? 0,
+      forSaleInventory: h.forSaleInventory ?? null,
+      inventoryYoY: h.inventoryYoY ?? null,
+      medianListPrice: h.medianListPrice ?? null,
+      totalHousingUnits: h.totalHousingUnits ?? null,
+      vacancyRate: h.vacancyRate ?? null,
+      unemploymentRate: economy[s]?.unemploymentRate ?? null,
+      laborForceParticipation: economy[s]?.laborForceParticipation ?? null,
+      jobScore: economy[s]?.jobScore ?? null,
+      graduationRate: economy[s]?.graduationRate ?? null,
+      schoolScore: economy[s]?.schoolScore ?? null,
+      perPupilSpending: economy[s]?.perPupilSpending ?? null,
+      mainIndustry: economy[s]?.mainIndustry ?? null,
+      topIndustries: economy[s]?.topIndustries ?? null,
+      healthcareScore: healthcare[s]?.healthcareScore ?? null,
+      nearestHospitalDist: healthcare[s]?.nearestHospitalDist ?? null,
+      nearestHospitalName: healthcare[s]?.nearestHospital ?? null,
+      nearestMajorHospitalDist: healthcare[s]?.nearestMajorHospitalDist ?? null,
+      nearestMajorHospitalName: healthcare[s]?.nearestMajorHospital ?? null,
+      hasLocalHospital: healthcare[s]?.hasLocalHospital ?? false,
+      hospitalsWithin30: healthcare[s]?.hospitalsWithin30 ?? 0,
       julHigh: clim?.[6]?.avgHigh ?? null,
       janLow: clim?.[0]?.avgLow ?? null,
       annualSnow: clim ? Math.round(clim.reduce((s: number, m: any) => s + (m.snowIn || 0), 0)) : null,

@@ -82,10 +82,26 @@ type Props = {
     zillowRent: number | null; zillowRentDate: string | null;
     homeValuePercentile: number | null; rentPercentile: number | null;
     incomePercentile: number | null; affordabilityRatio: number | null;
+    forSaleInventory: number | null; forSaleInventoryDate: string | null;
+    inventoryYoY: number | null; medianListPrice: number | null;
+    newListings: number | null; totalHousingUnits: number | null;
+    vacancyRate: number | null;
+    unemploymentRate: number | null; laborForceParticipation: number | null;
+    employed: number | null; laborForce: number | null;
+    topIndustries: { name: string; pct: number }[] | null;
+  } | null;
+  economy: {
+    graduationRate: number | null;
+    perPupilSpending: number | null;
+    mainIndustry: string | null;
+  } | null;
+  healthcare: {
+    nearestHospital: string | null;
+    nearestHospitalDist: number | null;
   } | null;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare }: Props) {
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana — ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -147,13 +163,13 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           <TableOfContents contentSelector=".content-section" />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
-          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} />}
+          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
-          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} />}
+          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
             <Link href={`/compare?a=${slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
@@ -302,6 +318,28 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   } catch (e) {
     console.error("Failed to load housing data", e);
   }
+
+  let allEconomyData: Record<string, any> = {};
+  try {
+    const econPath = path.resolve(process.cwd(), 'data', 'town-economy.json');
+    if (fs.existsSync(econPath)) {
+      allEconomyData = JSON.parse(fs.readFileSync(econPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load economy data", e);
+  }
+  let allHealthcareData: Record<string, any> = {};
+  try {
+    const healthPath = path.resolve(process.cwd(), 'data', 'town-healthcare.json');
+    if (fs.existsSync(healthPath)) {
+      allHealthcareData = JSON.parse(fs.readFileSync(healthPath, 'utf8'));
+    }
+  } catch (e) {
+    console.error("Failed to load healthcare data", e);
+  }
+
+  const rawEconomy = allEconomyData[slug];
+  const rawHealthcare = allHealthcareData[slug];
   const rawHousing = allHousingData[slug];
   const housing = rawHousing ? {
     medianHomeValue: rawHousing.medianHomeValue || null,
@@ -315,6 +353,18 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     rentPercentile: rawHousing.rentPercentile ?? null,
     incomePercentile: rawHousing.incomePercentile ?? null,
     affordabilityRatio: rawHousing.affordabilityRatio ?? null,
+    forSaleInventory: rawHousing.forSaleInventory ?? null,
+    forSaleInventoryDate: rawHousing.forSaleInventoryDate ?? null,
+    inventoryYoY: rawHousing.inventoryYoY ?? null,
+    medianListPrice: rawHousing.medianListPrice ?? null,
+    newListings: rawHousing.newListings ?? null,
+    totalHousingUnits: rawHousing.totalHousingUnits ?? null,
+    vacancyRate: rawHousing.vacancyRate ?? null,
+    unemploymentRate: rawEconomy?.unemploymentRate ?? null,
+    laborForceParticipation: rawEconomy?.laborForceParticipation ?? null,
+    employed: rawEconomy?.employed ?? null,
+    laborForce: rawEconomy?.laborForce ?? null,
+    topIndustries: rawEconomy?.topIndustries ?? null,
   } : null;
 
   return { 
@@ -332,7 +382,16 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       townFacts,
       climateMonths,
       recreationPlaces,
-      housing
+      housing,
+      economy: rawEconomy ? {
+        graduationRate: rawEconomy.graduationRate ?? null,
+        perPupilSpending: rawEconomy.perPupilSpending ?? null,
+        mainIndustry: rawEconomy.mainIndustry ?? null,
+      } : null,
+      healthcare: rawHealthcare ? {
+        nearestHospital: rawHealthcare.nearestHospital ?? null,
+        nearestHospitalDist: rawHealthcare.nearestHospitalDist ?? null,
+      } : null,
     } 
   };
 };

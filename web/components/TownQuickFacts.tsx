@@ -8,14 +8,23 @@ type TownDataProps = {
   areaCode?: string | null;
   timeZone?: string | null;
   population?: number | null;
+  nearestHospital?: string | null;
+  nearestHospitalDist?: number | null;
+  mainIndustry?: string | null;
 };
 
-export default function TownQuickFacts({ elevation, county, region, zipCode, areaCode, timeZone, population }: TownDataProps) {
+export default function TownQuickFacts({ elevation, county, region, zipCode, areaCode, timeZone, population, nearestHospital, nearestHospitalDist, mainIndustry }: TownDataProps) {
+  const hospitalValue = nearestHospitalDist != null
+    ? (nearestHospitalDist <= 5 ? `${nearestHospital} (in town)` : `${nearestHospital} (${nearestHospitalDist} mi)`)
+    : null;
+
   const facts = [
     population && { label: 'Population', value: population.toLocaleString() },
     county && { label: 'County', value: county },
     region && { label: 'Region', value: `${region} Montana` },
     elevation && { label: 'Elevation', value: `${elevation.toLocaleString()} ft` },
+    mainIndustry && { label: 'Top Industry', value: mainIndustry },
+    hospitalValue && { label: 'Nearest Hospital', value: hospitalValue },
     zipCode && { label: 'Zip Code', value: zipCode },
     areaCode && { label: 'Area Code', value: areaCode },
     timeZone && { label: 'Time Zone', value: timeZone },

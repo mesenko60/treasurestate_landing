@@ -1,0 +1,389 @@
+{
+  "baker": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 55.04,
+    "propertyCrimes": 7,
+    "propertyCrimeRate": 385.25,
+    "totalCrimeRate": 440.29,
+    "source": "FBI UCR 2023",
+    "safetyScore": 9.5
+  },
+  "belgrade": {
+    "violentCrimes": 35,
+    "violentCrimeRate": 276.35,
+    "propertyCrimes": 183,
+    "propertyCrimeRate": 1444.93,
+    "totalCrimeRate": 1721.28,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.2
+  },
+  "billings": {
+    "violentCrimes": 1078,
+    "violentCrimeRate": 888.23,
+    "propertyCrimes": 4401,
+    "propertyCrimeRate": 3626.25,
+    "totalCrimeRate": 4514.48,
+    "source": "FBI UCR 2023",
+    "safetyScore": 2.3
+  },
+  "bozeman": {
+    "violentCrimes": 225,
+    "violentCrimeRate": 391.82,
+    "propertyCrimes": 1097,
+    "propertyCrimeRate": 1910.35,
+    "totalCrimeRate": 2302.17,
+    "source": "FBI UCR 2023",
+    "safetyScore": 6.2
+  },
+  "bridger": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 138.5,
+    "propertyCrimes": 0,
+    "propertyCrimeRate": 0,
+    "totalCrimeRate": 138.5,
+    "source": "FBI UCR 2023",
+    "safetyScore": 10
+  },
+  "chinook": {
+    "violentCrimes": 3,
+    "violentCrimeRate": 258.18,
+    "propertyCrimes": 9,
+    "propertyCrimeRate": 774.53,
+    "totalCrimeRate": 1032.71,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.4
+  },
+  "colstrip": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 49.73,
+    "propertyCrimes": 5,
+    "propertyCrimeRate": 248.63,
+    "totalCrimeRate": 298.36,
+    "source": "FBI UCR 2023",
+    "safetyScore": 9.7
+  },
+  "columbia-falls": {
+    "violentCrimes": 23,
+    "violentCrimeRate": 396.96,
+    "propertyCrimes": 105,
+    "propertyCrimeRate": 1812.22,
+    "totalCrimeRate": 2209.18,
+    "source": "FBI UCR 2023",
+    "safetyScore": 6.4
+  },
+  "columbus": {
+    "violentCrimes": 7,
+    "violentCrimeRate": 364.2,
+    "propertyCrimes": 47,
+    "propertyCrimeRate": 2445.37,
+    "totalCrimeRate": 2809.57,
+    "source": "FBI UCR 2023",
+    "safetyScore": 5.3
+  },
+  "conrad": {
+    "violentCrimes": 6,
+    "violentCrimeRate": 247.32,
+    "propertyCrimes": 25,
+    "propertyCrimeRate": 1030.5,
+    "totalCrimeRate": 1277.82,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8
+  },
+  "cut-bank": {
+    "violentCrimes": 19,
+    "violentCrimeRate": 627.68,
+    "propertyCrimes": 114,
+    "propertyCrimeRate": 3766.11,
+    "totalCrimeRate": 4393.79,
+    "source": "FBI UCR 2023",
+    "safetyScore": 2.5
+  },
+  "darby": {
+    "violentCrimes": 0,
+    "violentCrimeRate": 0,
+    "propertyCrimes": 0,
+    "propertyCrimeRate": 0,
+    "totalCrimeRate": 0,
+    "source": "FBI UCR 2023",
+    "safetyScore": 10.2
+  },
+  "deer-lodge": {
+    "violentCrimes": 12,
+    "violentCrimeRate": 395.52,
+    "propertyCrimes": 34,
+    "propertyCrimeRate": 1120.63,
+    "totalCrimeRate": 1516.15,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.6
+  },
+  "dillon": {
+    "violentCrimes": 15,
+    "violentCrimeRate": 355.37,
+    "propertyCrimes": 23,
+    "propertyCrimeRate": 544.9,
+    "totalCrimeRate": 900.27,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.7
+  },
+  "east-helena": {
+    "violentCrimes": 16,
+    "violentCrimeRate": 790.12,
+    "propertyCrimes": 35,
+    "propertyCrimeRate": 1728.4,
+    "totalCrimeRate": 2518.52,
+    "source": "FBI UCR 2023",
+    "safetyScore": 5.8
+  },
+  "ennis": {
+    "violentCrimes": 0,
+    "violentCrimeRate": 0,
+    "propertyCrimes": 13,
+    "propertyCrimeRate": 1235.74,
+    "totalCrimeRate": 1235.74,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.1
+  },
+  "glasgow": {
+    "violentCrimes": 17,
+    "violentCrimeRate": 532.58,
+    "propertyCrimes": 42,
+    "propertyCrimeRate": 1315.79,
+    "totalCrimeRate": 1848.37,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7
+  },
+  "glendive": {
+    "violentCrimes": 18,
+    "violentCrimeRate": 376.18,
+    "propertyCrimes": 21,
+    "propertyCrimeRate": 438.87,
+    "totalCrimeRate": 815.05,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.8
+  },
+  "great-falls": {
+    "violentCrimes": 342,
+    "violentCrimeRate": 566.62,
+    "propertyCrimes": 2837,
+    "propertyCrimeRate": 4700.29,
+    "totalCrimeRate": 5266.91,
+    "source": "FBI UCR 2023",
+    "safetyScore": 1
+  },
+  "hamilton": {
+    "violentCrimes": 33,
+    "violentCrimeRate": 611,
+    "propertyCrimes": 140,
+    "propertyCrimeRate": 2592.11,
+    "totalCrimeRate": 3203.11,
+    "source": "FBI UCR 2023",
+    "safetyScore": 4.6
+  },
+  "hardin": {
+    "violentCrimes": 21,
+    "violentCrimeRate": 566.96,
+    "propertyCrimes": 65,
+    "propertyCrimeRate": 1754.86,
+    "totalCrimeRate": 2321.82,
+    "source": "FBI UCR 2023",
+    "safetyScore": 6.2
+  },
+  "havre": {
+    "violentCrimes": 77,
+    "violentCrimeRate": 841.07,
+    "propertyCrimes": 457,
+    "propertyCrimeRate": 4991.81,
+    "totalCrimeRate": 5832.88,
+    "source": "FBI UCR 2023",
+    "safetyScore": 0
+  },
+  "helena": {
+    "violentCrimes": 235,
+    "violentCrimeRate": 676.38,
+    "propertyCrimes": 1043,
+    "propertyCrimeRate": 3001.96,
+    "totalCrimeRate": 3678.34,
+    "source": "FBI UCR 2023",
+    "safetyScore": 3.8
+  },
+  "hot-springs": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 160,
+    "propertyCrimes": 5,
+    "propertyCrimeRate": 800,
+    "totalCrimeRate": 960,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.6
+  },
+  "kalispell": {
+    "violentCrimes": 127,
+    "violentCrimeRate": 416.46,
+    "propertyCrimes": 748,
+    "propertyCrimeRate": 2452.86,
+    "totalCrimeRate": 2869.32,
+    "source": "FBI UCR 2023",
+    "safetyScore": 5.2
+  },
+  "laurel": {
+    "violentCrimes": 35,
+    "violentCrimeRate": 486.45,
+    "propertyCrimes": 223,
+    "propertyCrimeRate": 3099.38,
+    "totalCrimeRate": 3585.83,
+    "source": "FBI UCR 2023",
+    "safetyScore": 3.9
+  },
+  "lewistown": {
+    "violentCrimes": 33,
+    "violentCrimeRate": 538.34,
+    "propertyCrimes": 34,
+    "propertyCrimeRate": 554.65,
+    "totalCrimeRate": 1092.99,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.3
+  },
+  "libby": {
+    "violentCrimes": 5,
+    "violentCrimeRate": 153.37,
+    "propertyCrimes": 27,
+    "propertyCrimeRate": 828.22,
+    "totalCrimeRate": 981.59,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.5
+  },
+  "livingston": {
+    "violentCrimes": 47,
+    "violentCrimeRate": 524.26,
+    "propertyCrimes": 198,
+    "propertyCrimeRate": 2208.59,
+    "totalCrimeRate": 2732.85,
+    "source": "FBI UCR 2023",
+    "safetyScore": 5.4
+  },
+  "manhattan": {
+    "violentCrimes": 4,
+    "violentCrimeRate": 187.35,
+    "propertyCrimes": 12,
+    "propertyCrimeRate": 562.06,
+    "totalCrimeRate": 749.41,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.9
+  },
+  "miles-city": {
+    "violentCrimes": 9,
+    "violentCrimeRate": 105.46,
+    "propertyCrimes": 84,
+    "propertyCrimeRate": 984.3,
+    "totalCrimeRate": 1089.76,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.3
+  },
+  "missoula": {
+    "violentCrimes": 429,
+    "violentCrimeRate": 548.11,
+    "propertyCrimes": 2921,
+    "propertyCrimeRate": 3732,
+    "totalCrimeRate": 4280.11,
+    "source": "FBI UCR 2023",
+    "safetyScore": 2.7
+  },
+  "plains": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 80.19,
+    "propertyCrimes": 7,
+    "propertyCrimeRate": 561.35,
+    "totalCrimeRate": 641.54,
+    "source": "FBI UCR 2023",
+    "safetyScore": 9.1
+  },
+  "polson": {
+    "violentCrimes": 49,
+    "violentCrimeRate": 868.49,
+    "propertyCrimes": 222,
+    "propertyCrimeRate": 3934.78,
+    "totalCrimeRate": 4803.27,
+    "source": "FBI UCR 2023",
+    "safetyScore": 1.8
+  },
+  "ronan": {
+    "violentCrimes": 19,
+    "violentCrimeRate": 853.55,
+    "propertyCrimes": 83,
+    "propertyCrimeRate": 3728.66,
+    "totalCrimeRate": 4582.21,
+    "source": "FBI UCR 2023",
+    "safetyScore": 2.2
+  },
+  "sidney": {
+    "violentCrimes": 33,
+    "violentCrimeRate": 543.57,
+    "propertyCrimes": 35,
+    "propertyCrimeRate": 576.51,
+    "totalCrimeRate": 1120.08,
+    "source": "FBI UCR 2023",
+    "safetyScore": 8.3
+  },
+  "stevensville": {
+    "violentCrimes": 7,
+    "violentCrimeRate": 307.29,
+    "propertyCrimes": 9,
+    "propertyCrimeRate": 395.08,
+    "totalCrimeRate": 702.37,
+    "source": "FBI UCR 2023",
+    "safetyScore": 9
+  },
+  "st-ignatius": {
+    "violentCrimes": 3,
+    "violentCrimeRate": 361.45,
+    "propertyCrimes": 36,
+    "propertyCrimeRate": 4337.35,
+    "totalCrimeRate": 4698.8,
+    "source": "FBI UCR 2023",
+    "safetyScore": 2
+  },
+  "thompson-falls": {
+    "violentCrimes": 4,
+    "violentCrimeRate": 266.13,
+    "propertyCrimes": 20,
+    "propertyCrimeRate": 1330.67,
+    "totalCrimeRate": 1596.8,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.4
+  },
+  "troy": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 108.34,
+    "propertyCrimes": 12,
+    "propertyCrimeRate": 1300.11,
+    "totalCrimeRate": 1408.45,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.8
+  },
+  "west-yellowstone": {
+    "violentCrimes": 1,
+    "violentCrimeRate": 81.24,
+    "propertyCrimes": 20,
+    "propertyCrimeRate": 1624.7,
+    "totalCrimeRate": 1705.94,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.2
+  },
+  "whitefish": {
+    "violentCrimes": 17,
+    "violentCrimeRate": 178.87,
+    "propertyCrimes": 124,
+    "propertyCrimeRate": 1304.71,
+    "totalCrimeRate": 1483.58,
+    "source": "FBI UCR 2023",
+    "safetyScore": 7.6
+  },
+  "wolf-point": {
+    "violentCrimes": 34,
+    "violentCrimeRate": 1332.29,
+    "propertyCrimes": 34,
+    "propertyCrimeRate": 1332.29,
+    "totalCrimeRate": 2664.58,
+    "source": "FBI UCR 2023",
+    "safetyScore": 5.6
+  }
+}

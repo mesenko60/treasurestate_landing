@@ -11,7 +11,17 @@
     "rentPercentile": 68,
     "incomePercentile": 58,
     "affordabilityRatio": 6.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 10,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 0,
+    "inventoryPer1000": 22.1,
+    "totalHousingUnits": 246,
+    "occupiedUnits": 230,
+    "vacantUnits": 16,
+    "vacantForSale": null,
+    "vacancyRate": 6.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "anaconda": {
     "name": "Anaconda",
@@ -25,7 +35,21 @@
     "rentPercentile": 13,
     "incomePercentile": 24,
     "affordabilityRatio": 5.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 42,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -20.8,
+    "inventoryPer1000": 4.5,
+    "newListings": 5,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 318167,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 5506,
+    "occupiedUnits": 4560,
+    "vacantUnits": 946,
+    "vacantForSale": 106,
+    "vacancyRate": 17.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "bainville": {
     "name": "Bainville",
@@ -35,7 +59,13 @@
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "rentPercentile": 22,
     "incomePercentile": 89,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 112,
+    "occupiedUnits": 96,
+    "vacantUnits": 16,
+    "vacantForSale": null,
+    "vacancyRate": 14.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "baker": {
     "name": "Baker",
@@ -49,7 +79,17 @@
     "rentPercentile": 26,
     "incomePercentile": 68,
     "affordabilityRatio": 2.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 19,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 137.5,
+    "inventoryPer1000": 10.7,
+    "totalHousingUnits": 854,
+    "occupiedUnits": 678,
+    "vacantUnits": 176,
+    "vacantForSale": 33,
+    "vacancyRate": 20.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "bearcreek": {
     "name": "Bearcreek",
@@ -61,7 +101,13 @@
     "rentPercentile": 36,
     "incomePercentile": 88,
     "affordabilityRatio": 1.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 39,
+    "occupiedUnits": 34,
+    "vacantUnits": 5,
+    "vacantForSale": null,
+    "vacancyRate": 12.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "belgrade": {
     "name": "Belgrade",
@@ -77,7 +123,21 @@
     "rentPercentile": 94,
     "incomePercentile": 76,
     "affordabilityRatio": 6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 96,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 23.1,
+    "inventoryPer1000": 7.7,
+    "newListings": 17,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 606650,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 4858,
+    "occupiedUnits": 4727,
+    "vacantUnits": 131,
+    "vacantForSale": 116,
+    "vacancyRate": 2.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "belt": {
     "name": "Belt",
@@ -91,7 +151,17 @@
     "rentPercentile": 45,
     "incomePercentile": 60,
     "affordabilityRatio": 5.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 15,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 50,
+    "inventoryPer1000": 29.1,
+    "totalHousingUnits": 255,
+    "occupiedUnits": 203,
+    "vacantUnits": 52,
+    "vacantForSale": 24,
+    "vacancyRate": 20.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "big-sandy": {
     "name": "Big Sandy",
@@ -105,7 +175,16 @@
     "rentPercentile": 9,
     "incomePercentile": 39,
     "affordabilityRatio": 4.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 5,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 8.3,
+    "totalHousingUnits": 330,
+    "occupiedUnits": 279,
+    "vacantUnits": 51,
+    "vacantForSale": 7,
+    "vacancyRate": 15.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "big-sky": {
     "name": "Big Sky",
@@ -119,7 +198,21 @@
     "rentPercentile": 87,
     "incomePercentile": 84,
     "affordabilityRatio": 17.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 115,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 9.5,
+    "inventoryPer1000": 32,
+    "newListings": 16,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 2391667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 3118,
+    "occupiedUnits": 1093,
+    "vacantUnits": 2025,
+    "vacantForSale": 90,
+    "vacancyRate": 64.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "big-timber": {
     "name": "Big Timber",
@@ -133,7 +226,19 @@
     "rentPercentile": 56,
     "incomePercentile": 47,
     "affordabilityRatio": 6.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 29,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 45,
+    "inventoryPer1000": 16.9,
+    "medianListPrice": 522667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 775,
+    "occupiedUnits": 675,
+    "vacantUnits": 100,
+    "vacantForSale": 34,
+    "vacancyRate": 12.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "bigfork": {
     "name": "Bigfork",
@@ -147,7 +252,21 @@
     "rentPercentile": 64,
     "incomePercentile": 71,
     "affordabilityRatio": 9.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 101,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -2.9,
+    "inventoryPer1000": 20.2,
+    "newListings": 7,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 993000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 3207,
+    "occupiedUnits": 2277,
+    "vacantUnits": 930,
+    "vacantForSale": 87,
+    "vacancyRate": 29,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "billings": {
     "name": "Billings",
@@ -163,7 +282,21 @@
     "rentPercentile": 79,
     "incomePercentile": 59,
     "affordabilityRatio": 5.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 546,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -2.7,
+    "inventoryPer1000": 4.7,
+    "newListings": 112,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 389150,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 53537,
+    "occupiedUnits": 50340,
+    "vacantUnits": 3197,
+    "vacantForSale": 850,
+    "vacancyRate": 6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "boulder": {
     "name": "Boulder",
@@ -177,7 +310,16 @@
     "rentPercentile": 16,
     "incomePercentile": 44,
     "affordabilityRatio": 5.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 15,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 12.5,
+    "totalHousingUnits": 585,
+    "occupiedUnits": 526,
+    "vacantUnits": 59,
+    "vacantForSale": null,
+    "vacancyRate": 10.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "bozeman": {
     "name": "Bozeman",
@@ -193,7 +335,21 @@
     "rentPercentile": 94,
     "incomePercentile": 68,
     "affordabilityRatio": 8.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 339,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 6.3,
+    "inventoryPer1000": 5.8,
+    "newListings": 49,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 744100,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 24846,
+    "occupiedUnits": 23131,
+    "vacantUnits": 1715,
+    "vacantForSale": 561,
+    "vacancyRate": 6.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "bridger": {
     "name": "Bridger",
@@ -206,7 +362,17 @@
     "homeValuePercentile": 71,
     "incomePercentile": 94,
     "affordabilityRatio": 2.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 9,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 12.5,
+    "inventoryPer1000": 12.5,
+    "totalHousingUnits": 67,
+    "occupiedUnits": 46,
+    "vacantUnits": 21,
+    "vacantForSale": null,
+    "vacancyRate": 31.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "broadus": {
     "name": "Broadus",
@@ -220,7 +386,13 @@
     "rentPercentile": 7,
     "incomePercentile": 33,
     "affordabilityRatio": 4.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 293,
+    "occupiedUnits": 186,
+    "vacantUnits": 107,
+    "vacantForSale": 15,
+    "vacancyRate": 36.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "broadview": {
     "name": "Broadview",
@@ -233,7 +405,13 @@
     "homeValuePercentile": 67,
     "incomePercentile": 52,
     "affordabilityRatio": 5.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 72,
+    "occupiedUnits": 63,
+    "vacantUnits": 9,
+    "vacantForSale": null,
+    "vacancyRate": 12.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "browning": {
     "name": "Browning",
@@ -247,7 +425,13 @@
     "rentPercentile": 9,
     "incomePercentile": 6,
     "affordabilityRatio": 3.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 356,
+    "occupiedUnits": 302,
+    "vacantUnits": 54,
+    "vacantForSale": 12,
+    "vacancyRate": 15.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "butte": {
     "name": "Butte",
@@ -263,7 +447,21 @@
     "rentPercentile": 76,
     "incomePercentile": 38,
     "affordabilityRatio": 4.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 153,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 4.8,
+    "inventoryPer1000": 4.4,
+    "newListings": 24,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 289417,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 17034,
+    "occupiedUnits": 15048,
+    "vacantUnits": 1986,
+    "vacantForSale": 609,
+    "vacancyRate": 11.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "cascade": {
     "name": "Cascade",
@@ -277,7 +475,19 @@
     "rentPercentile": 37,
     "incomePercentile": 22,
     "affordabilityRatio": 8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 22,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -4.3,
+    "inventoryPer1000": 38.5,
+    "medianListPrice": 503000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 345,
+    "occupiedUnits": 277,
+    "vacantUnits": 68,
+    "vacantForSale": 27,
+    "vacancyRate": 19.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "chester": {
     "name": "Chester",
@@ -291,7 +501,17 @@
     "rentPercentile": 13,
     "incomePercentile": 31,
     "affordabilityRatio": 3.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 6,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -14.3,
+    "inventoryPer1000": 7.2,
+    "totalHousingUnits": 387,
+    "occupiedUnits": 327,
+    "vacantUnits": 60,
+    "vacantForSale": null,
+    "vacancyRate": 15.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "chinook": {
     "name": "Chinook",
@@ -305,7 +525,17 @@
     "rentPercentile": 32,
     "incomePercentile": 59,
     "affordabilityRatio": 2.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 8,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 60,
+    "inventoryPer1000": 6.9,
+    "totalHousingUnits": 728,
+    "occupiedUnits": 640,
+    "vacantUnits": 88,
+    "vacantForSale": 12,
+    "vacancyRate": 12.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "choteau": {
     "name": "Choteau",
@@ -319,7 +549,17 @@
     "rentPercentile": 18,
     "incomePercentile": 31,
     "affordabilityRatio": 5.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 18,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 100,
+    "inventoryPer1000": 10.5,
+    "totalHousingUnits": 834,
+    "occupiedUnits": 732,
+    "vacantUnits": 102,
+    "vacantForSale": 13,
+    "vacancyRate": 12.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "circle": {
     "name": "Circle",
@@ -333,7 +573,13 @@
     "rentPercentile": 5,
     "incomePercentile": 70,
     "affordabilityRatio": 2.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 312,
+    "occupiedUnits": 252,
+    "vacantUnits": 60,
+    "vacantForSale": 6,
+    "vacancyRate": 19.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "clyde-park": {
     "name": "Clyde Park",
@@ -347,7 +593,13 @@
     "rentPercentile": 56,
     "incomePercentile": 38,
     "affordabilityRatio": 7.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 185,
+    "occupiedUnits": 176,
+    "vacantUnits": 9,
+    "vacantForSale": null,
+    "vacancyRate": 4.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "colstrip": {
     "name": "Colstrip",
@@ -361,7 +613,16 @@
     "rentPercentile": 10,
     "incomePercentile": 74,
     "affordabilityRatio": 2.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 9,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 4.4,
+    "totalHousingUnits": 980,
+    "occupiedUnits": 886,
+    "vacantUnits": 94,
+    "vacantForSale": 48,
+    "vacancyRate": 9.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "columbia-falls": {
     "name": "Columbia Falls",
@@ -375,7 +636,21 @@
     "rentPercentile": 56,
     "incomePercentile": 50,
     "affordabilityRatio": 8.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 84,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -18.4,
+    "inventoryPer1000": 15.8,
+    "newListings": 8,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 809833,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 2364,
+    "occupiedUnits": 2140,
+    "vacantUnits": 224,
+    "vacantForSale": 32,
+    "vacancyRate": 9.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "columbus": {
     "name": "Columbus",
@@ -389,7 +664,17 @@
     "rentPercentile": 47,
     "incomePercentile": 46,
     "affordabilityRatio": 6.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 21,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -44.7,
+    "inventoryPer1000": 10.4,
+    "totalHousingUnits": 887,
+    "occupiedUnits": 838,
+    "vacantUnits": 49,
+    "vacantForSale": 5,
+    "vacancyRate": 5.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "conrad": {
     "name": "Conrad",
@@ -403,7 +688,17 @@
     "rentPercentile": 43,
     "incomePercentile": 20,
     "affordabilityRatio": 5.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 19,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 58.3,
+    "inventoryPer1000": 8.2,
+    "totalHousingUnits": 1260,
+    "occupiedUnits": 1004,
+    "vacantUnits": 256,
+    "vacantForSale": 51,
+    "vacancyRate": 20.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "culbertson": {
     "name": "Culbertson",
@@ -417,7 +712,16 @@
     "rentPercentile": 59,
     "incomePercentile": 85,
     "affordabilityRatio": 1.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 6,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 8.5,
+    "totalHousingUnits": 301,
+    "occupiedUnits": 216,
+    "vacantUnits": 85,
+    "vacantForSale": 14,
+    "vacancyRate": 28.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "cut-bank": {
     "name": "Cut Bank",
@@ -431,7 +735,19 @@
     "rentPercentile": 47,
     "incomePercentile": 35,
     "affordabilityRatio": 3.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 26,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 0,
+    "inventoryPer1000": 8.5,
+    "medianListPrice": 230583,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1382,
+    "occupiedUnits": 1157,
+    "vacantUnits": 225,
+    "vacantForSale": null,
+    "vacancyRate": 16.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "darby": {
     "name": "Darby",
@@ -445,7 +761,19 @@
     "rentPercentile": 42,
     "incomePercentile": 12,
     "affordabilityRatio": 13.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 24,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 4.3,
+    "inventoryPer1000": 30.7,
+    "medianListPrice": 667400,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 354,
+    "occupiedUnits": 292,
+    "vacantUnits": 62,
+    "vacantForSale": 6,
+    "vacancyRate": 17.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "deer-lodge": {
     "name": "Deer Lodge",
@@ -459,7 +787,19 @@
     "rentPercentile": 28,
     "incomePercentile": 31,
     "affordabilityRatio": 5.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 23,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 15,
+    "inventoryPer1000": 7.6,
+    "medianListPrice": 326267,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1651,
+    "occupiedUnits": 1476,
+    "vacantUnits": 175,
+    "vacantForSale": 6,
+    "vacancyRate": 10.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "denton": {
     "name": "Denton",
@@ -473,7 +813,13 @@
     "rentPercentile": 60,
     "incomePercentile": 38,
     "affordabilityRatio": 5.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 128,
+    "occupiedUnits": 92,
+    "vacantUnits": 36,
+    "vacantForSale": null,
+    "vacancyRate": 28.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "dillon": {
     "name": "Dillon",
@@ -487,7 +833,19 @@
     "rentPercentile": 33,
     "incomePercentile": 27,
     "affordabilityRatio": 7.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 33,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -23.3,
+    "inventoryPer1000": 8.5,
+    "medianListPrice": 467000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1836,
+    "occupiedUnits": 1646,
+    "vacantUnits": 190,
+    "vacantForSale": 67,
+    "vacancyRate": 10.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "dodson": {
     "name": "Dodson",
@@ -498,7 +856,13 @@
     "homeValuePercentile": 2,
     "incomePercentile": 12,
     "affordabilityRatio": 1.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 65,
+    "occupiedUnits": 60,
+    "vacantUnits": 5,
+    "vacantForSale": null,
+    "vacancyRate": 7.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "drummond": {
     "name": "Drummond",
@@ -512,7 +876,17 @@
     "rentPercentile": 8,
     "incomePercentile": 16,
     "affordabilityRatio": 8.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 12,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 0,
+    "inventoryPer1000": 44.1,
+    "totalHousingUnits": 131,
+    "occupiedUnits": 98,
+    "vacantUnits": 33,
+    "vacantForSale": null,
+    "vacancyRate": 25.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "dutton": {
     "name": "Dutton",
@@ -526,7 +900,13 @@
     "rentPercentile": 29,
     "incomePercentile": 34,
     "affordabilityRatio": 4.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 171,
+    "occupiedUnits": 139,
+    "vacantUnits": 32,
+    "vacantForSale": 8,
+    "vacancyRate": 18.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "east-glacier": {
     "name": "East Glacier",
@@ -538,7 +918,13 @@
     "rentPercentile": 40,
     "incomePercentile": 9,
     "affordabilityRatio": 4.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 175,
+    "occupiedUnits": 100,
+    "vacantUnits": 75,
+    "vacantForSale": 3,
+    "vacancyRate": 42.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "east-helena": {
     "name": "East Helena",
@@ -552,7 +938,21 @@
     "rentPercentile": 57,
     "incomePercentile": 31,
     "affordabilityRatio": 7.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 39,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -7.1,
+    "inventoryPer1000": 17.2,
+    "newListings": 8,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 472450,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 903,
+    "occupiedUnits": 888,
+    "vacantUnits": 15,
+    "vacantForSale": null,
+    "vacancyRate": 1.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "ekalaka": {
     "name": "Ekalaka",
@@ -566,7 +966,13 @@
     "rentPercentile": 14,
     "incomePercentile": 18,
     "affordabilityRatio": 3.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 264,
+    "occupiedUnits": 211,
+    "vacantUnits": 53,
+    "vacantForSale": 3,
+    "vacancyRate": 20.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "ennis": {
     "name": "Ennis",
@@ -580,7 +986,19 @@
     "rentPercentile": 31,
     "incomePercentile": 43,
     "affordabilityRatio": 10.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 41,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 41.4,
+    "inventoryPer1000": 44.7,
+    "medianListPrice": 701617,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 403,
+    "occupiedUnits": 299,
+    "vacantUnits": 104,
+    "vacantForSale": 18,
+    "vacancyRate": 25.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "eureka": {
     "name": "Eureka",
@@ -594,7 +1012,19 @@
     "rentPercentile": 56,
     "incomePercentile": 15,
     "affordabilityRatio": 11.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 68,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 6.3,
+    "inventoryPer1000": 49.3,
+    "medianListPrice": 647997,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 694,
+    "occupiedUnits": 625,
+    "vacantUnits": 69,
+    "vacantForSale": null,
+    "vacancyRate": 9.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "fairfield": {
     "name": "Fairfield",
@@ -608,7 +1038,17 @@
     "rentPercentile": 15,
     "incomePercentile": 52,
     "affordabilityRatio": 5.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 10,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -9.1,
+    "inventoryPer1000": 12.4,
+    "totalHousingUnits": 355,
+    "occupiedUnits": 321,
+    "vacantUnits": 34,
+    "vacantForSale": null,
+    "vacancyRate": 9.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "fairview": {
     "name": "Fairview",
@@ -622,7 +1062,13 @@
     "rentPercentile": 16,
     "incomePercentile": 69,
     "affordabilityRatio": 3.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 443,
+    "occupiedUnits": 339,
+    "vacantUnits": 104,
+    "vacantForSale": 26,
+    "vacancyRate": 23.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "flaxville": {
     "name": "Flaxville",
@@ -633,7 +1079,13 @@
     "homeValuePercentile": 20,
     "incomePercentile": 84,
     "affordabilityRatio": 1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 70,
+    "occupiedUnits": 36,
+    "vacantUnits": 34,
+    "vacantForSale": 5,
+    "vacancyRate": 48.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "forsyth": {
     "name": "Forsyth",
@@ -647,7 +1099,17 @@
     "rentPercentile": 23,
     "incomePercentile": 39,
     "affordabilityRatio": 3.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 8,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 14.3,
+    "inventoryPer1000": 4.9,
+    "totalHousingUnits": 817,
+    "occupiedUnits": 689,
+    "vacantUnits": 128,
+    "vacantForSale": 11,
+    "vacancyRate": 15.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "fort-benton": {
     "name": "Fort Benton",
@@ -661,7 +1123,17 @@
     "rentPercentile": 23,
     "incomePercentile": 53,
     "affordabilityRatio": 4.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 13,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 160,
+    "inventoryPer1000": 9,
+    "totalHousingUnits": 732,
+    "occupiedUnits": 573,
+    "vacantUnits": 159,
+    "vacantForSale": null,
+    "vacancyRate": 21.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "fort-peck": {
     "name": "Fort Peck",
@@ -674,7 +1146,13 @@
     "homeValuePercentile": 62,
     "incomePercentile": 76,
     "affordabilityRatio": 3.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 136,
+    "occupiedUnits": 96,
+    "vacantUnits": 40,
+    "vacantForSale": 4,
+    "vacancyRate": 29.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "froid": {
     "name": "Froid",
@@ -685,7 +1163,13 @@
     "homeValuePercentile": 13,
     "incomePercentile": 58,
     "affordabilityRatio": 1.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 126,
+    "occupiedUnits": 72,
+    "vacantUnits": 54,
+    "vacantForSale": null,
+    "vacancyRate": 42.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "fromberg": {
     "name": "Fromberg",
@@ -699,7 +1183,17 @@
     "rentPercentile": 41,
     "incomePercentile": 40,
     "affordabilityRatio": 6.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 11,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 57.1,
+    "inventoryPer1000": 28.1,
+    "totalHousingUnits": 210,
+    "occupiedUnits": 187,
+    "vacantUnits": 23,
+    "vacantForSale": null,
+    "vacancyRate": 11,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "gardiner": {
     "name": "Gardiner",
@@ -713,7 +1207,16 @@
     "rentPercentile": 30,
     "incomePercentile": 38,
     "affordabilityRatio": 12.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 10,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 12.6,
+    "totalHousingUnits": 528,
+    "occupiedUnits": 427,
+    "vacantUnits": 101,
+    "vacantForSale": 33,
+    "vacancyRate": 19.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "geraldine": {
     "name": "Geraldine",
@@ -727,7 +1230,13 @@
     "rentPercentile": 6,
     "incomePercentile": 14,
     "affordabilityRatio": 5.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 159,
+    "occupiedUnits": 129,
+    "vacantUnits": 30,
+    "vacantForSale": null,
+    "vacancyRate": 18.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "glasgow": {
     "name": "Glasgow",
@@ -741,7 +1250,17 @@
     "rentPercentile": 30,
     "incomePercentile": 66,
     "affordabilityRatio": 1.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 14,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -26.3,
+    "inventoryPer1000": 4.4,
+    "totalHousingUnits": 1453,
+    "occupiedUnits": 1329,
+    "vacantUnits": 124,
+    "vacantForSale": 31,
+    "vacancyRate": 8.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "glendive": {
     "name": "Glendive",
@@ -755,7 +1274,21 @@
     "rentPercentile": 35,
     "incomePercentile": 58,
     "affordabilityRatio": 2.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 59,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 20.4,
+    "inventoryPer1000": 12.1,
+    "newListings": 9,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 199667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 2279,
+    "occupiedUnits": 1975,
+    "vacantUnits": 304,
+    "vacantForSale": null,
+    "vacancyRate": 13.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "grass-range": {
     "name": "Grass Range",
@@ -767,7 +1300,13 @@
     "zillowHomeValueDate": "2026-01-31",
     "homeValuePercentile": 61,
     "rentPercentile": 44,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 89,
+    "occupiedUnits": 73,
+    "vacantUnits": 16,
+    "vacantForSale": null,
+    "vacancyRate": 18,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "great-falls": {
     "name": "Great Falls",
@@ -783,7 +1322,21 @@
     "rentPercentile": 77,
     "incomePercentile": 48,
     "affordabilityRatio": 5.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 284,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 31.5,
+    "inventoryPer1000": 4.7,
+    "newListings": 52,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 375250,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 28333,
+    "occupiedUnits": 26010,
+    "vacantUnits": 2323,
+    "vacantForSale": 490,
+    "vacancyRate": 8.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hamilton": {
     "name": "Hamilton",
@@ -797,7 +1350,21 @@
     "rentPercentile": 51,
     "incomePercentile": 30,
     "affordabilityRatio": 9.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 100,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 11.1,
+    "inventoryPer1000": 21.5,
+    "newListings": 13,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 703267,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 2849,
+    "occupiedUnits": 2549,
+    "vacantUnits": 300,
+    "vacantForSale": 180,
+    "vacancyRate": 10.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hardin": {
     "name": "Hardin",
@@ -811,7 +1378,19 @@
     "rentPercentile": 20,
     "incomePercentile": 42,
     "affordabilityRatio": 3.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 36,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 111.8,
+    "inventoryPer1000": 9.6,
+    "medianListPrice": 236333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1454,
+    "occupiedUnits": 1328,
+    "vacantUnits": 126,
+    "vacantForSale": 24,
+    "vacancyRate": 8.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "harlem": {
     "name": "Harlem",
@@ -825,7 +1404,16 @@
     "rentPercentile": 26,
     "incomePercentile": 63,
     "affordabilityRatio": 2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 5,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 6.1,
+    "totalHousingUnits": 426,
+    "occupiedUnits": 334,
+    "vacantUnits": 92,
+    "vacantForSale": 21,
+    "vacancyRate": 21.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "harlowton": {
     "name": "Harlowton",
@@ -839,7 +1427,13 @@
     "rentPercentile": 26,
     "incomePercentile": 31,
     "affordabilityRatio": 2.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 565,
+    "occupiedUnits": 427,
+    "vacantUnits": 138,
+    "vacantForSale": 27,
+    "vacancyRate": 24.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "havre": {
     "name": "Havre",
@@ -853,7 +1447,21 @@
     "rentPercentile": 31,
     "incomePercentile": 38,
     "affordabilityRatio": 3.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 54,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -19.4,
+    "inventoryPer1000": 5.8,
+    "newListings": 7,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 241000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 4230,
+    "occupiedUnits": 3780,
+    "vacantUnits": 450,
+    "vacantForSale": 199,
+    "vacancyRate": 10.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "helena": {
     "name": "Helena",
@@ -869,7 +1477,21 @@
     "rentPercentile": 82,
     "incomePercentile": 56,
     "affordabilityRatio": 6.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 244,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 19,
+    "inventoryPer1000": 7.4,
+    "newListings": 35,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 517167,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 16574,
+    "occupiedUnits": 15471,
+    "vacantUnits": 1103,
+    "vacantForSale": 381,
+    "vacancyRate": 6.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hingham": {
     "name": "Hingham",
@@ -880,7 +1502,13 @@
     "homeValuePercentile": 18,
     "incomePercentile": 73,
     "affordabilityRatio": 1.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 58,
+    "occupiedUnits": 46,
+    "vacantUnits": 12,
+    "vacantForSale": null,
+    "vacancyRate": 20.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hobson": {
     "name": "Hobson",
@@ -894,7 +1522,13 @@
     "rentPercentile": 9,
     "incomePercentile": 6,
     "affordabilityRatio": 8.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 93,
+    "occupiedUnits": 74,
+    "vacantUnits": 19,
+    "vacantForSale": 2,
+    "vacancyRate": 20.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hot-springs": {
     "name": "Hot Springs",
@@ -908,7 +1542,17 @@
     "rentPercentile": 15,
     "incomePercentile": 1,
     "affordabilityRatio": 11.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 17,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 112.5,
+    "inventoryPer1000": 30.5,
+    "totalHousingUnits": 357,
+    "occupiedUnits": 273,
+    "vacantUnits": 84,
+    "vacantForSale": 10,
+    "vacancyRate": 23.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "hysham": {
     "name": "Hysham",
@@ -922,7 +1566,13 @@
     "rentPercentile": 8,
     "incomePercentile": 18,
     "affordabilityRatio": 4.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 179,
+    "occupiedUnits": 148,
+    "vacantUnits": 31,
+    "vacantForSale": null,
+    "vacancyRate": 17.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "ismay": {
     "name": "Ismay",
@@ -930,7 +1580,13 @@
     "medianRent": null,
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 1,
+    "occupiedUnits": 1,
+    "vacantUnits": null,
+    "vacantForSale": null,
+    "vacancyRate": 0,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "joliet": {
     "name": "Joliet",
@@ -943,7 +1599,17 @@
     "homeValuePercentile": 84,
     "incomePercentile": 64,
     "affordabilityRatio": 6.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 11,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 10,
+    "inventoryPer1000": 17.9,
+    "totalHousingUnits": 259,
+    "occupiedUnits": 239,
+    "vacantUnits": 20,
+    "vacantForSale": null,
+    "vacancyRate": 7.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "jordan": {
     "name": "Jordan",
@@ -957,7 +1623,13 @@
     "rentPercentile": 35,
     "incomePercentile": 15,
     "affordabilityRatio": 4.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 209,
+    "occupiedUnits": 155,
+    "vacantUnits": 54,
+    "vacantForSale": 15,
+    "vacancyRate": 25.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "judith-gap": {
     "name": "Judith Gap",
@@ -969,7 +1641,13 @@
     "zillowHomeValueDate": "2026-01-31",
     "homeValuePercentile": 38,
     "rentPercentile": 4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 74,
+    "occupiedUnits": 74,
+    "vacantUnits": null,
+    "vacantForSale": null,
+    "vacancyRate": 0,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "kalispell": {
     "name": "Kalispell",
@@ -985,7 +1663,21 @@
     "rentPercentile": 92,
     "incomePercentile": 44,
     "affordabilityRatio": 8.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 371,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 6,
+    "inventoryPer1000": 12.4,
+    "newListings": 45,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 630667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 11650,
+    "occupiedUnits": 11108,
+    "vacantUnits": 542,
+    "vacantForSale": 24,
+    "vacancyRate": 4.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "kevin": {
     "name": "Kevin",
@@ -996,7 +1688,13 @@
     "homeValuePercentile": 5,
     "incomePercentile": 7,
     "affordabilityRatio": 1.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 84,
+    "occupiedUnits": 51,
+    "vacantUnits": 33,
+    "vacantForSale": null,
+    "vacancyRate": 39.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "laurel": {
     "name": "Laurel",
@@ -1012,7 +1710,19 @@
     "rentPercentile": 68,
     "incomePercentile": 52,
     "affordabilityRatio": 5.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 44,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 15.8,
+    "inventoryPer1000": 6.1,
+    "medianListPrice": 378267,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 3250,
+    "occupiedUnits": 3088,
+    "vacantUnits": 162,
+    "vacantForSale": 101,
+    "vacancyRate": 5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "lavina": {
     "name": "Lavina",
@@ -1026,7 +1736,13 @@
     "rentPercentile": 20,
     "incomePercentile": 52,
     "affordabilityRatio": 3.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 68,
+    "occupiedUnits": 59,
+    "vacantUnits": 9,
+    "vacantForSale": null,
+    "vacancyRate": 13.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "lewistown": {
     "name": "Lewistown",
@@ -1040,7 +1756,21 @@
     "rentPercentile": 44,
     "incomePercentile": 16,
     "affordabilityRatio": 6.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 59,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 31.1,
+    "inventoryPer1000": 9.9,
+    "newListings": 11,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 348333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 3047,
+    "occupiedUnits": 2823,
+    "vacantUnits": 224,
+    "vacantForSale": 29,
+    "vacancyRate": 7.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "libby": {
     "name": "Libby",
@@ -1054,7 +1784,21 @@
     "rentPercentile": 14,
     "incomePercentile": 10,
     "affordabilityRatio": 8.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 72,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -10,
+    "inventoryPer1000": 25.9,
+    "newListings": 8,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 375500,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1535,
+    "occupiedUnits": 1427,
+    "vacantUnits": 108,
+    "vacantForSale": 21,
+    "vacancyRate": 7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "lima": {
     "name": "Lima",
@@ -1067,7 +1811,16 @@
     "homeValuePercentile": 52,
     "incomePercentile": 31,
     "affordabilityRatio": 5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 6,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 27.5,
+    "totalHousingUnits": 158,
+    "occupiedUnits": 108,
+    "vacantUnits": 50,
+    "vacantForSale": null,
+    "vacancyRate": 31.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "livingston": {
     "name": "Livingston",
@@ -1083,7 +1836,21 @@
     "rentPercentile": 90,
     "incomePercentile": 50,
     "affordabilityRatio": 7.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 55,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -8.3,
+    "inventoryPer1000": 6.8,
+    "newListings": 8,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 524967,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 4220,
+    "occupiedUnits": 4087,
+    "vacantUnits": 133,
+    "vacantForSale": 23,
+    "vacancyRate": 3.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "lodge-grass": {
     "name": "Lodge Grass",
@@ -1097,7 +1864,13 @@
     "rentPercentile": 11,
     "incomePercentile": 25,
     "affordabilityRatio": 2.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 130,
+    "occupiedUnits": 98,
+    "vacantUnits": 32,
+    "vacantForSale": null,
+    "vacancyRate": 24.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "malta": {
     "name": "Malta",
@@ -1111,7 +1884,17 @@
     "rentPercentile": 16,
     "incomePercentile": 41,
     "affordabilityRatio": 3.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 15,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 25,
+    "inventoryPer1000": 7.1,
+    "totalHousingUnits": 931,
+    "occupiedUnits": 837,
+    "vacantUnits": 94,
+    "vacantForSale": 28,
+    "vacancyRate": 10.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "manhattan": {
     "name": "Manhattan",
@@ -1125,7 +1908,17 @@
     "rentPercentile": 87,
     "incomePercentile": 56,
     "affordabilityRatio": 9.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 18,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -28,
+    "inventoryPer1000": 7.9,
+    "totalHousingUnits": 909,
+    "occupiedUnits": 894,
+    "vacantUnits": 15,
+    "vacantForSale": null,
+    "vacancyRate": 1.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "medicine-lake": {
     "name": "Medicine Lake",
@@ -1139,7 +1932,13 @@
     "rentPercentile": 3,
     "incomePercentile": 12,
     "affordabilityRatio": 2.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 143,
+    "occupiedUnits": 110,
+    "vacantUnits": 33,
+    "vacantForSale": 5,
+    "vacancyRate": 23.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "melstone": {
     "name": "Melstone",
@@ -1147,7 +1946,13 @@
     "medianRent": null,
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 37,
+    "occupiedUnits": 36,
+    "vacantUnits": 1,
+    "vacantForSale": null,
+    "vacancyRate": 2.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "miles-city": {
     "name": "Miles City",
@@ -1163,7 +1968,21 @@
     "rentPercentile": 23,
     "incomePercentile": 43,
     "affordabilityRatio": 3.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 53,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -1.9,
+    "inventoryPer1000": 6.3,
+    "newListings": 9,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 266667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 4124,
+    "occupiedUnits": 3688,
+    "vacantUnits": 436,
+    "vacantForSale": 68,
+    "vacancyRate": 10.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "missoula": {
     "name": "Missoula",
@@ -1179,7 +1998,21 @@
     "rentPercentile": 82,
     "incomePercentile": 50,
     "affordabilityRatio": 8.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 369,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 15,
+    "inventoryPer1000": 4.7,
+    "newListings": 44,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 598333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 36310,
+    "occupiedUnits": 33958,
+    "vacantUnits": 2352,
+    "vacantForSale": 733,
+    "vacancyRate": 6.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "moore": {
     "name": "Moore",
@@ -1193,7 +2026,13 @@
     "rentPercentile": 31,
     "incomePercentile": 18,
     "affordabilityRatio": 6.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 105,
+    "occupiedUnits": 93,
+    "vacantUnits": 12,
+    "vacantForSale": 3,
+    "vacancyRate": 11.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "nashua": {
     "name": "Nashua",
@@ -1207,7 +2046,13 @@
     "rentPercentile": 14,
     "incomePercentile": 60,
     "affordabilityRatio": 1.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 178,
+    "occupiedUnits": 128,
+    "vacantUnits": 50,
+    "vacantForSale": 6,
+    "vacancyRate": 28.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "neihart": {
     "name": "Neihart",
@@ -1218,7 +2063,13 @@
     "zillowHomeValue": 247657,
     "zillowHomeValueDate": "2026-01-31",
     "homeValuePercentile": 46,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 135,
+    "occupiedUnits": 20,
+    "vacantUnits": 115,
+    "vacantForSale": null,
+    "vacancyRate": 85.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "opheim": {
     "name": "Opheim",
@@ -1229,7 +2080,13 @@
     "zillowHomeValue": 185594,
     "zillowHomeValueDate": "2026-01-31",
     "homeValuePercentile": 27,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 56,
+    "occupiedUnits": 41,
+    "vacantUnits": 15,
+    "vacantForSale": null,
+    "vacancyRate": 26.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "outlook": {
     "name": "Outlook",
@@ -1240,7 +2097,13 @@
     "homeValuePercentile": 22,
     "incomePercentile": 25,
     "affordabilityRatio": 2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 21,
+    "occupiedUnits": 21,
+    "vacantUnits": null,
+    "vacantForSale": null,
+    "vacancyRate": 0,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "philipsburg": {
     "name": "Philipsburg",
@@ -1254,7 +2117,19 @@
     "rentPercentile": 41,
     "incomePercentile": 11,
     "affordabilityRatio": 10.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 27,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 35,
+    "inventoryPer1000": 32.1,
+    "medianListPrice": 659667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 567,
+    "occupiedUnits": 425,
+    "vacantUnits": 142,
+    "vacantForSale": 9,
+    "vacancyRate": 25,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "pinesdale": {
     "name": "Pinesdale",
@@ -1266,7 +2141,13 @@
     "rentPercentile": 74,
     "incomePercentile": 58,
     "affordabilityRatio": 2.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 199,
+    "occupiedUnits": 193,
+    "vacantUnits": 6,
+    "vacantForSale": 4,
+    "vacancyRate": 3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "plains": {
     "name": "Plains",
@@ -1280,7 +2161,19 @@
     "rentPercentile": 28,
     "incomePercentile": 2,
     "affordabilityRatio": 15.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 34,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 6.3,
+    "inventoryPer1000": 30.7,
+    "medianListPrice": 634150,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 699,
+    "occupiedUnits": 609,
+    "vacantUnits": 90,
+    "vacantForSale": 16,
+    "vacancyRate": 12.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "plentywood": {
     "name": "Plentywood",
@@ -1294,7 +2187,17 @@
     "rentPercentile": 24,
     "incomePercentile": 45,
     "affordabilityRatio": 2.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 11,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 57.1,
+    "inventoryPer1000": 6.6,
+    "totalHousingUnits": 980,
+    "occupiedUnits": 721,
+    "vacantUnits": 259,
+    "vacantForSale": 72,
+    "vacancyRate": 26.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "plevna": {
     "name": "Plevna",
@@ -1307,7 +2210,13 @@
     "homeValuePercentile": 38,
     "incomePercentile": 62,
     "affordabilityRatio": 3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 96,
+    "occupiedUnits": 65,
+    "vacantUnits": 31,
+    "vacantForSale": 4,
+    "vacancyRate": 32.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "polson": {
     "name": "Polson",
@@ -1321,7 +2230,21 @@
     "rentPercentile": 47,
     "incomePercentile": 27,
     "affordabilityRatio": 10.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 77,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -17.2,
+    "inventoryPer1000": 15,
+    "newListings": 5,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 576333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 2743,
+    "occupiedUnits": 2280,
+    "vacantUnits": 463,
+    "vacantForSale": 45,
+    "vacancyRate": 16.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "poplar": {
     "name": "Poplar",
@@ -1333,7 +2256,13 @@
     "rentPercentile": 15,
     "incomePercentile": 17,
     "affordabilityRatio": 2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 334,
+    "occupiedUnits": 213,
+    "vacantUnits": 121,
+    "vacantForSale": 28,
+    "vacancyRate": 36.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "red-lodge": {
     "name": "Red Lodge",
@@ -1347,7 +2276,21 @@
     "rentPercentile": 31,
     "incomePercentile": 16,
     "affordabilityRatio": 11.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 53,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -13.1,
+    "inventoryPer1000": 22.1,
+    "newListings": 4,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 673250,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1944,
+    "occupiedUnits": 1414,
+    "vacantUnits": 530,
+    "vacantForSale": 96,
+    "vacancyRate": 27.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "rexford": {
     "name": "Rexford",
@@ -1360,7 +2303,19 @@
     "homeValuePercentile": 83,
     "incomePercentile": 23,
     "affordabilityRatio": 9.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 26,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -7.1,
+    "inventoryPer1000": 194,
+    "medianListPrice": 652783,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 91,
+    "occupiedUnits": 71,
+    "vacantUnits": 20,
+    "vacantForSale": null,
+    "vacancyRate": 22,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "richey": {
     "name": "Richey",
@@ -1374,7 +2329,13 @@
     "rentPercentile": 2,
     "incomePercentile": 52,
     "affordabilityRatio": 2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 142,
+    "occupiedUnits": 95,
+    "vacantUnits": 47,
+    "vacantForSale": 2,
+    "vacancyRate": 33.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "ronan": {
     "name": "Ronan",
@@ -1388,7 +2349,19 @@
     "rentPercentile": 30,
     "incomePercentile": 13,
     "affordabilityRatio": 9.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 33,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 0,
+    "inventoryPer1000": 16.9,
+    "medianListPrice": 508000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 875,
+    "occupiedUnits": 754,
+    "vacantUnits": 121,
+    "vacantForSale": 47,
+    "vacancyRate": 13.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "roundup": {
     "name": "Roundup",
@@ -1402,7 +2375,19 @@
     "rentPercentile": 43,
     "incomePercentile": 38,
     "affordabilityRatio": 3.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 33,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 17.9,
+    "inventoryPer1000": 16.5,
+    "medianListPrice": 358333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1048,
+    "occupiedUnits": 868,
+    "vacantUnits": 180,
+    "vacantForSale": null,
+    "vacancyRate": 17.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "ryegate": {
     "name": "Ryegate",
@@ -1416,7 +2401,16 @@
     "rentPercentile": 33,
     "incomePercentile": 22,
     "affordabilityRatio": 4.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 6,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 22,
+    "totalHousingUnits": 153,
+    "occupiedUnits": 125,
+    "vacantUnits": 28,
+    "vacantForSale": null,
+    "vacancyRate": 18.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "saco": {
     "name": "Saco",
@@ -1430,7 +2424,13 @@
     "rentPercentile": 44,
     "incomePercentile": 27,
     "affordabilityRatio": 2.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 109,
+    "occupiedUnits": 79,
+    "vacantUnits": 30,
+    "vacantForSale": null,
+    "vacancyRate": 27.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "scobey": {
     "name": "Scobey",
@@ -1444,7 +2444,17 @@
     "rentPercentile": 7,
     "incomePercentile": 24,
     "affordabilityRatio": 3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 7,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -53.3,
+    "inventoryPer1000": 8.1,
+    "totalHousingUnits": 623,
+    "occupiedUnits": 443,
+    "vacantUnits": 180,
+    "vacantForSale": 23,
+    "vacancyRate": 28.9,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "seeley-lake": {
     "name": "Seeley Lake",
@@ -1458,7 +2468,17 @@
     "rentPercentile": 57,
     "incomePercentile": 18,
     "affordabilityRatio": 11.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 17,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -10.5,
+    "inventoryPer1000": 10.1,
+    "totalHousingUnits": 1197,
+    "occupiedUnits": 715,
+    "vacantUnits": 482,
+    "vacantForSale": null,
+    "vacancyRate": 40.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "shelby": {
     "name": "Shelby",
@@ -1472,7 +2492,19 @@
     "rentPercentile": 26,
     "incomePercentile": 30,
     "affordabilityRatio": 3.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 27,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 145.5,
+    "inventoryPer1000": 8.5,
+    "medianListPrice": 184500,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 1407,
+    "occupiedUnits": 1154,
+    "vacantUnits": 253,
+    "vacantForSale": 68,
+    "vacancyRate": 18,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "sheridan": {
     "name": "Sheridan",
@@ -1485,7 +2517,19 @@
     "homeValuePercentile": 82,
     "incomePercentile": 72,
     "affordabilityRatio": 5.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 21,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 90.9,
+    "inventoryPer1000": 24.2,
+    "medianListPrice": 645667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 377,
+    "occupiedUnits": 341,
+    "vacantUnits": 36,
+    "vacantForSale": 8,
+    "vacancyRate": 9.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "sidney": {
     "name": "Sidney",
@@ -1499,7 +2543,21 @@
     "rentPercentile": 43,
     "incomePercentile": 47,
     "affordabilityRatio": 4.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 24,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 4.3,
+    "inventoryPer1000": 3.9,
+    "newListings": 6,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 278333,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 3260,
+    "occupiedUnits": 2602,
+    "vacantUnits": 658,
+    "vacantForSale": 143,
+    "vacancyRate": 20.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "st-ignatius": {
     "name": "St. Ignatius",
@@ -1511,7 +2569,13 @@
     "rentPercentile": 29,
     "incomePercentile": 26,
     "affordabilityRatio": 3.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 356,
+    "occupiedUnits": 325,
+    "vacantUnits": 31,
+    "vacantForSale": 2,
+    "vacancyRate": 8.7,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "stanford": {
     "name": "Stanford",
@@ -1525,7 +2589,16 @@
     "rentPercentile": 1,
     "incomePercentile": 28,
     "affordabilityRatio": 4.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 5,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 18.7,
+    "totalHousingUnits": 180,
+    "occupiedUnits": 148,
+    "vacantUnits": 32,
+    "vacantForSale": 7,
+    "vacancyRate": 17.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "stevensville": {
     "name": "Stevensville",
@@ -1539,7 +2612,21 @@
     "rentPercentile": 56,
     "incomePercentile": 29,
     "affordabilityRatio": 11.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 73,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 17.7,
+    "inventoryPer1000": 54.6,
+    "newListings": 8,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 722867,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 997,
+    "occupiedUnits": 889,
+    "vacantUnits": 108,
+    "vacantForSale": 18,
+    "vacancyRate": 10.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "sunburst": {
     "name": "Sunburst",
@@ -1551,7 +2638,13 @@
     "rentPercentile": 59,
     "incomePercentile": 69,
     "affordabilityRatio": 1.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 176,
+    "occupiedUnits": 132,
+    "vacantUnits": 44,
+    "vacantForSale": 3,
+    "vacancyRate": 25,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "superior": {
     "name": "Superior",
@@ -1565,7 +2658,17 @@
     "rentPercentile": 15,
     "incomePercentile": 15,
     "affordabilityRatio": 8.3,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 8,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -66.7,
+    "inventoryPer1000": 8.9,
+    "totalHousingUnits": 521,
+    "occupiedUnits": 457,
+    "vacantUnits": 64,
+    "vacantForSale": 27,
+    "vacancyRate": 12.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "terry": {
     "name": "Terry",
@@ -1578,7 +2681,13 @@
     "homeValuePercentile": 7,
     "incomePercentile": 7,
     "affordabilityRatio": 3.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 360,
+    "occupiedUnits": 234,
+    "vacantUnits": 126,
+    "vacantForSale": 8,
+    "vacancyRate": 35,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "thompson-falls": {
     "name": "Thompson Falls",
@@ -1592,7 +2701,19 @@
     "rentPercentile": 6,
     "incomePercentile": 30,
     "affordabilityRatio": 7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 27,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 58.8,
+    "inventoryPer1000": 20.2,
+    "medianListPrice": 609000,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 746,
+    "occupiedUnits": 628,
+    "vacantUnits": 118,
+    "vacantForSale": 10,
+    "vacancyRate": 15.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "three-forks": {
     "name": "Three Forks",
@@ -1606,7 +2727,19 @@
     "rentPercentile": 73,
     "incomePercentile": 69,
     "affordabilityRatio": 6.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 46,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 35.3,
+    "inventoryPer1000": 23.1,
+    "medianListPrice": 679967,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 895,
+    "occupiedUnits": 879,
+    "vacantUnits": 16,
+    "vacantForSale": null,
+    "vacancyRate": 1.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "townsend": {
     "name": "Townsend",
@@ -1620,7 +2753,21 @@
     "rentPercentile": 53,
     "incomePercentile": 58,
     "affordabilityRatio": 6.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 42,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 20,
+    "inventoryPer1000": 21.4,
+    "newListings": 3,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 462300,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 978,
+    "occupiedUnits": 917,
+    "vacantUnits": 61,
+    "vacantForSale": 17,
+    "vacancyRate": 6.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "troy": {
     "name": "Troy",
@@ -1634,7 +2781,21 @@
     "rentPercentile": 6,
     "incomePercentile": 8,
     "affordabilityRatio": 10.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 48,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 2.1,
+    "inventoryPer1000": 48.7,
+    "newListings": 3,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 573967,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 388,
+    "occupiedUnits": 321,
+    "vacantUnits": 67,
+    "vacantForSale": null,
+    "vacancyRate": 17.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "twin-bridges": {
     "name": "Twin Bridges",
@@ -1647,7 +2808,16 @@
     "homeValuePercentile": 83,
     "incomePercentile": 29,
     "affordabilityRatio": 9.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 9,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 27.3,
+    "totalHousingUnits": 154,
+    "occupiedUnits": 107,
+    "vacantUnits": 47,
+    "vacantForSale": null,
+    "vacancyRate": 30.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "valier": {
     "name": "Valier",
@@ -1661,7 +2831,17 @@
     "rentPercentile": 28,
     "incomePercentile": 16,
     "affordabilityRatio": 6.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 6,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -45.5,
+    "inventoryPer1000": 10.5,
+    "totalHousingUnits": 349,
+    "occupiedUnits": 289,
+    "vacantUnits": 60,
+    "vacantForSale": null,
+    "vacancyRate": 17.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "virginia-city": {
     "name": "Virginia City",
@@ -1671,7 +2851,13 @@
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "homeValuePercentile": 73,
     "rentPercentile": 41,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 140,
+    "occupiedUnits": 58,
+    "vacantUnits": 82,
+    "vacantForSale": null,
+    "vacancyRate": 58.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "walkerville": {
     "name": "Walkerville",
@@ -1685,7 +2871,13 @@
     "rentPercentile": 61,
     "incomePercentile": 16,
     "affordabilityRatio": 3.6,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 362,
+    "occupiedUnits": 299,
+    "vacantUnits": 63,
+    "vacantForSale": 7,
+    "vacancyRate": 17.4,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "west-glacier": {
     "name": "West Glacier",
@@ -1697,7 +2889,13 @@
     "rentPercentile": 30,
     "incomePercentile": 75,
     "affordabilityRatio": 6.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 193,
+    "occupiedUnits": 107,
+    "vacantUnits": 86,
+    "vacantForSale": 6,
+    "vacancyRate": 44.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "west-yellowstone": {
     "name": "West Yellowstone",
@@ -1711,7 +2909,17 @@
     "rentPercentile": 58,
     "incomePercentile": 37,
     "affordabilityRatio": 10.5,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 14,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 16.7,
+    "inventoryPer1000": 11,
+    "totalHousingUnits": 956,
+    "occupiedUnits": 514,
+    "vacantUnits": 442,
+    "vacantForSale": 82,
+    "vacancyRate": 46.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "westby": {
     "name": "Westby",
@@ -1725,7 +2933,13 @@
     "rentPercentile": 6,
     "incomePercentile": 2,
     "affordabilityRatio": 6.9,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 132,
+    "occupiedUnits": 90,
+    "vacantUnits": 42,
+    "vacantForSale": null,
+    "vacancyRate": 31.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "white-sulphur-springs": {
     "name": "White Sulphur Springs",
@@ -1739,7 +2953,17 @@
     "rentPercentile": 49,
     "incomePercentile": 36,
     "affordabilityRatio": 5.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 20,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 100,
+    "inventoryPer1000": 19.1,
+    "totalHousingUnits": 572,
+    "occupiedUnits": 449,
+    "vacantUnits": 123,
+    "vacantForSale": 8,
+    "vacancyRate": 21.5,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "whitefish": {
     "name": "Whitefish",
@@ -1755,7 +2979,21 @@
     "rentPercentile": 97,
     "incomePercentile": 58,
     "affordabilityRatio": 11.7,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 237,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -2.5,
+    "inventoryPer1000": 26.6,
+    "newListings": 23,
+    "newListingsDate": "2026-01-31",
+    "medianListPrice": 1291667,
+    "medianListPriceDate": "2026-01-31",
+    "totalHousingUnits": 5079,
+    "occupiedUnits": 4101,
+    "vacantUnits": 978,
+    "vacantForSale": 138,
+    "vacancyRate": 19.3,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "whitehall": {
     "name": "Whitehall",
@@ -1769,7 +3007,17 @@
     "rentPercentile": 16,
     "incomePercentile": 10,
     "affordabilityRatio": 11.4,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 20,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": -4.8,
+    "inventoryPer1000": 17.3,
+    "totalHousingUnits": 538,
+    "occupiedUnits": 480,
+    "vacantUnits": 58,
+    "vacantForSale": 21,
+    "vacancyRate": 10.8,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "wibaux": {
     "name": "Wibaux",
@@ -1783,7 +3031,13 @@
     "rentPercentile": 48,
     "incomePercentile": 49,
     "affordabilityRatio": 3.1,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 394,
+    "occupiedUnits": 311,
+    "vacantUnits": 83,
+    "vacantForSale": 22,
+    "vacancyRate": 21.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "winifred": {
     "name": "Winifred",
@@ -1793,7 +3047,13 @@
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "rentPercentile": 5,
     "incomePercentile": 63,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "totalHousingUnits": 108,
+    "occupiedUnits": 102,
+    "vacantUnits": 6,
+    "vacantForSale": null,
+    "vacancyRate": 5.6,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "winnett": {
     "name": "Winnett",
@@ -1806,7 +3066,16 @@
     "homeValuePercentile": 15,
     "incomePercentile": 52,
     "affordabilityRatio": 2.2,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 5,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryPer1000": 24.9,
+    "totalHousingUnits": 133,
+    "occupiedUnits": 93,
+    "vacantUnits": 40,
+    "vacantForSale": null,
+    "vacancyRate": 30.1,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   },
   "wolf-point": {
     "name": "Wolf Point",
@@ -1820,6 +3089,16 @@
     "rentPercentile": 21,
     "incomePercentile": 22,
     "affordabilityRatio": 2.8,
-    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023",
+    "forSaleInventory": 16,
+    "forSaleInventoryDate": "2026-01-31",
+    "inventoryYoY": 23.1,
+    "inventoryPer1000": 6.4,
+    "totalHousingUnits": 1100,
+    "occupiedUnits": 790,
+    "vacantUnits": 310,
+    "vacantForSale": 40,
+    "vacancyRate": 28.2,
+    "censusVacancySource": "ACS 5-Year 2019-2023"
   }
 }
