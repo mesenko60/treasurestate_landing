@@ -6,7 +6,12 @@
     "medianHouseholdIncome": 71250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 490534,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 84,
+    "rentPercentile": 68,
+    "incomePercentile": 58,
+    "affordabilityRatio": 6.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "anaconda": {
     "name": "Anaconda",
@@ -15,14 +20,22 @@
     "medianHouseholdIncome": 49533,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 280297,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 54,
+    "rentPercentile": 13,
+    "incomePercentile": 24,
+    "affordabilityRatio": 5.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "bainville": {
     "name": "Bainville",
     "medianHomeValue": null,
     "medianRent": 739,
     "medianHouseholdIncome": 115000,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "rentPercentile": 22,
+    "incomePercentile": 89,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "baker": {
     "name": "Baker",
@@ -31,14 +44,24 @@
     "medianHouseholdIncome": 78971,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 169994,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 22,
+    "rentPercentile": 26,
+    "incomePercentile": 68,
+    "affordabilityRatio": 2.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "bearcreek": {
     "name": "Bearcreek",
     "medianHomeValue": 191700,
     "medianRent": 840,
     "medianHouseholdIncome": 111500,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 54,
+    "rentPercentile": 36,
+    "incomePercentile": 88,
+    "affordabilityRatio": 1.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "belgrade": {
     "name": "Belgrade",
@@ -49,7 +72,12 @@
     "zillowHomeValue": 536633,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 2111,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 87,
+    "rentPercentile": 94,
+    "incomePercentile": 76,
+    "affordabilityRatio": 6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "belt": {
     "name": "Belt",
@@ -58,7 +86,12 @@
     "medianHouseholdIncome": 72083,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 379422,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 73,
+    "rentPercentile": 45,
+    "incomePercentile": 60,
+    "affordabilityRatio": 5.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "big-sandy": {
     "name": "Big Sandy",
@@ -67,7 +100,12 @@
     "medianHouseholdIncome": 58083,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 245965,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 45,
+    "rentPercentile": 9,
+    "incomePercentile": 39,
+    "affordabilityRatio": 4.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "big-sky": {
     "name": "Big Sky",
@@ -76,7 +114,12 @@
     "medianHouseholdIncome": 103625,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 1784845,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 99,
+    "rentPercentile": 87,
+    "incomePercentile": 84,
+    "affordabilityRatio": 17.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "big-timber": {
     "name": "Big Timber",
@@ -85,7 +128,12 @@
     "medianHouseholdIncome": 63514,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 416669,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 78,
+    "rentPercentile": 56,
+    "incomePercentile": 47,
+    "affordabilityRatio": 6.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "bigfork": {
     "name": "Bigfork",
@@ -94,7 +142,12 @@
     "medianHouseholdIncome": 82648,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 758524,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 94,
+    "rentPercentile": 64,
+    "incomePercentile": 71,
+    "affordabilityRatio": 9.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "billings": {
     "name": "Billings",
@@ -105,7 +158,12 @@
     "zillowHomeValue": 384994,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1404,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 74,
+    "rentPercentile": 79,
+    "incomePercentile": 59,
+    "affordabilityRatio": 5.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "boulder": {
     "name": "Boulder",
@@ -114,7 +172,12 @@
     "medianHouseholdIncome": 61250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 339694,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 67,
+    "rentPercentile": 16,
+    "incomePercentile": 44,
+    "affordabilityRatio": 5.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "bozeman": {
     "name": "Bozeman",
@@ -125,7 +188,12 @@
     "zillowHomeValue": 703092,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 2114,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 93,
+    "rentPercentile": 94,
+    "incomePercentile": 68,
+    "affordabilityRatio": 8.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "bridger": {
     "name": "Bridger",
@@ -134,7 +202,11 @@
     "medianHouseholdIncome": 136154,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 363621,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 71,
+    "incomePercentile": 94,
+    "affordabilityRatio": 2.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "broadus": {
     "name": "Broadus",
@@ -143,7 +215,12 @@
     "medianHouseholdIncome": 54792,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 231669,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 41,
+    "rentPercentile": 7,
+    "incomePercentile": 33,
+    "affordabilityRatio": 4.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "broadview": {
     "name": "Broadview",
@@ -152,7 +229,11 @@
     "medianHouseholdIncome": 66250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 340617,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 67,
+    "incomePercentile": 52,
+    "affordabilityRatio": 5.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "browning": {
     "name": "Browning",
@@ -161,7 +242,12 @@
     "medianHouseholdIncome": 34318,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 126005,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 9,
+    "rentPercentile": 9,
+    "incomePercentile": 6,
+    "affordabilityRatio": 3.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "butte": {
     "name": "Butte",
@@ -172,7 +258,12 @@
     "zillowHomeValue": 271170,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1341,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 52,
+    "rentPercentile": 76,
+    "incomePercentile": 38,
+    "affordabilityRatio": 4.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "cascade": {
     "name": "Cascade",
@@ -181,7 +272,12 @@
     "medianHouseholdIncome": 48750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 390787,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 75,
+    "rentPercentile": 37,
+    "incomePercentile": 22,
+    "affordabilityRatio": 8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "chester": {
     "name": "Chester",
@@ -190,7 +286,12 @@
     "medianHouseholdIncome": 53583,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 199376,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 31,
+    "rentPercentile": 13,
+    "incomePercentile": 31,
+    "affordabilityRatio": 3.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "chinook": {
     "name": "Chinook",
@@ -199,7 +300,12 @@
     "medianHouseholdIncome": 71500,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 201583,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 32,
+    "rentPercentile": 32,
+    "incomePercentile": 59,
+    "affordabilityRatio": 2.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "choteau": {
     "name": "Choteau",
@@ -208,7 +314,12 @@
     "medianHouseholdIncome": 53929,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 283281,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 55,
+    "rentPercentile": 18,
+    "incomePercentile": 31,
+    "affordabilityRatio": 5.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "circle": {
     "name": "Circle",
@@ -217,7 +328,12 @@
     "medianHouseholdIncome": 81250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 226945,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 40,
+    "rentPercentile": 5,
+    "incomePercentile": 70,
+    "affordabilityRatio": 2.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "clyde-park": {
     "name": "Clyde Park",
@@ -226,7 +342,12 @@
     "medianHouseholdIncome": 57813,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 418926,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 78,
+    "rentPercentile": 56,
+    "incomePercentile": 38,
+    "affordabilityRatio": 7.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "colstrip": {
     "name": "Colstrip",
@@ -235,7 +356,12 @@
     "medianHouseholdIncome": 86000,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 220250,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 38,
+    "rentPercentile": 10,
+    "incomePercentile": 74,
+    "affordabilityRatio": 2.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "columbia-falls": {
     "name": "Columbia Falls",
@@ -244,7 +370,12 @@
     "medianHouseholdIncome": 65313,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 581522,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 89,
+    "rentPercentile": 56,
+    "incomePercentile": 50,
+    "affordabilityRatio": 8.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "columbus": {
     "name": "Columbus",
@@ -253,7 +384,12 @@
     "medianHouseholdIncome": 62500,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 420229,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 78,
+    "rentPercentile": 47,
+    "incomePercentile": 46,
+    "affordabilityRatio": 6.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "conrad": {
     "name": "Conrad",
@@ -262,7 +398,12 @@
     "medianHouseholdIncome": 47348,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 240496,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 44,
+    "rentPercentile": 43,
+    "incomePercentile": 20,
+    "affordabilityRatio": 5.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "culbertson": {
     "name": "Culbertson",
@@ -271,7 +412,12 @@
     "medianHouseholdIncome": 103750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 172533,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 23,
+    "rentPercentile": 59,
+    "incomePercentile": 85,
+    "affordabilityRatio": 1.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "cut-bank": {
     "name": "Cut Bank",
@@ -280,7 +426,12 @@
     "medianHouseholdIncome": 55848,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 172566,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 23,
+    "rentPercentile": 47,
+    "incomePercentile": 35,
+    "affordabilityRatio": 3.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "darby": {
     "name": "Darby",
@@ -289,7 +440,12 @@
     "medianHouseholdIncome": 40943,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 540903,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 87,
+    "rentPercentile": 42,
+    "incomePercentile": 12,
+    "affordabilityRatio": 13.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "deer-lodge": {
     "name": "Deer Lodge",
@@ -298,7 +454,12 @@
     "medianHouseholdIncome": 53676,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 277204,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 54,
+    "rentPercentile": 28,
+    "incomePercentile": 31,
+    "affordabilityRatio": 5.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "denton": {
     "name": "Denton",
@@ -307,7 +468,12 @@
     "medianHouseholdIncome": 57500,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 320090,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 63,
+    "rentPercentile": 60,
+    "incomePercentile": 38,
+    "affordabilityRatio": 5.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "dillon": {
     "name": "Dillon",
@@ -316,14 +482,23 @@
     "medianHouseholdIncome": 51458,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 374266,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 72,
+    "rentPercentile": 33,
+    "incomePercentile": 27,
+    "affordabilityRatio": 7.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "dodson": {
     "name": "Dodson",
     "medianHomeValue": 44700,
     "medianRent": null,
     "medianHouseholdIncome": 41172,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 2,
+    "incomePercentile": 12,
+    "affordabilityRatio": 1.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "drummond": {
     "name": "Drummond",
@@ -332,7 +507,12 @@
     "medianHouseholdIncome": 44375,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 365693,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 71,
+    "rentPercentile": 8,
+    "incomePercentile": 16,
+    "affordabilityRatio": 8.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "dutton": {
     "name": "Dutton",
@@ -341,14 +521,24 @@
     "medianHouseholdIncome": 55469,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 266228,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 51,
+    "rentPercentile": 29,
+    "incomePercentile": 34,
+    "affordabilityRatio": 4.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "east-glacier": {
     "name": "East Glacier",
     "medianHomeValue": 170800,
     "medianRent": 867,
     "medianHouseholdIncome": 37500,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 48,
+    "rentPercentile": 40,
+    "incomePercentile": 9,
+    "affordabilityRatio": 4.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "east-helena": {
     "name": "East Helena",
@@ -357,7 +547,12 @@
     "medianHouseholdIncome": 53611,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 423963,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 78,
+    "rentPercentile": 57,
+    "incomePercentile": 31,
+    "affordabilityRatio": 7.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "ekalaka": {
     "name": "Ekalaka",
@@ -366,7 +561,12 @@
     "medianHouseholdIncome": 45417,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 141740,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 13,
+    "rentPercentile": 14,
+    "incomePercentile": 18,
+    "affordabilityRatio": 3.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "ennis": {
     "name": "Ennis",
@@ -375,7 +575,12 @@
     "medianHouseholdIncome": 60880,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 614545,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 91,
+    "rentPercentile": 31,
+    "incomePercentile": 43,
+    "affordabilityRatio": 10.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "eureka": {
     "name": "Eureka",
@@ -384,7 +589,12 @@
     "medianHouseholdIncome": 43750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 503617,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 85,
+    "rentPercentile": 56,
+    "incomePercentile": 15,
+    "affordabilityRatio": 11.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "fairfield": {
     "name": "Fairfield",
@@ -393,7 +603,12 @@
     "medianHouseholdIncome": 66544,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 365999,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 71,
+    "rentPercentile": 15,
+    "incomePercentile": 52,
+    "affordabilityRatio": 5.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "fairview": {
     "name": "Fairview",
@@ -402,14 +617,23 @@
     "medianHouseholdIncome": 80903,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 253703,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 48,
+    "rentPercentile": 16,
+    "incomePercentile": 69,
+    "affordabilityRatio": 3.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "flaxville": {
     "name": "Flaxville",
     "medianHomeValue": 98200,
     "medianRent": null,
     "medianHouseholdIncome": 102727,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 20,
+    "incomePercentile": 84,
+    "affordabilityRatio": 1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "forsyth": {
     "name": "Forsyth",
@@ -418,7 +642,12 @@
     "medianHouseholdIncome": 58375,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 208714,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 34,
+    "rentPercentile": 23,
+    "incomePercentile": 39,
+    "affordabilityRatio": 3.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "fort-benton": {
     "name": "Fort Benton",
@@ -427,7 +656,12 @@
     "medianHouseholdIncome": 67171,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 272071,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 52,
+    "rentPercentile": 23,
+    "incomePercentile": 53,
+    "affordabilityRatio": 4.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "fort-peck": {
     "name": "Fort Peck",
@@ -436,14 +670,22 @@
     "medianHouseholdIncome": 88333,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 314826,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 62,
+    "incomePercentile": 76,
+    "affordabilityRatio": 3.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "froid": {
     "name": "Froid",
     "medianHomeValue": 85000,
     "medianRent": null,
     "medianHouseholdIncome": 70750,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 13,
+    "incomePercentile": 58,
+    "affordabilityRatio": 1.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "fromberg": {
     "name": "Fromberg",
@@ -452,7 +694,12 @@
     "medianHouseholdIncome": 59028,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 371267,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 72,
+    "rentPercentile": 41,
+    "incomePercentile": 40,
+    "affordabilityRatio": 6.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "gardiner": {
     "name": "Gardiner",
@@ -461,7 +708,12 @@
     "medianHouseholdIncome": 57835,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 716797,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 94,
+    "rentPercentile": 30,
+    "incomePercentile": 38,
+    "affordabilityRatio": 12.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "geraldine": {
     "name": "Geraldine",
@@ -470,7 +722,12 @@
     "medianHouseholdIncome": 42639,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 246604,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 46,
+    "rentPercentile": 6,
+    "incomePercentile": 14,
+    "affordabilityRatio": 5.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "glasgow": {
     "name": "Glasgow",
@@ -479,7 +736,12 @@
     "medianHouseholdIncome": 76985,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 148250,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 15,
+    "rentPercentile": 30,
+    "incomePercentile": 66,
+    "affordabilityRatio": 1.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "glendive": {
     "name": "Glendive",
@@ -488,7 +750,12 @@
     "medianHouseholdIncome": 71063,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 182993,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 26,
+    "rentPercentile": 35,
+    "incomePercentile": 58,
+    "affordabilityRatio": 2.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "grass-range": {
     "name": "Grass Range",
@@ -497,7 +764,10 @@
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 310165,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 61,
+    "rentPercentile": 44,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "great-falls": {
     "name": "Great Falls",
@@ -508,7 +778,12 @@
     "zillowHomeValue": 327514,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1352,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 65,
+    "rentPercentile": 77,
+    "incomePercentile": 48,
+    "affordabilityRatio": 5.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hamilton": {
     "name": "Hamilton",
@@ -517,7 +792,12 @@
     "medianHouseholdIncome": 52917,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 504784,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 85,
+    "rentPercentile": 51,
+    "incomePercentile": 30,
+    "affordabilityRatio": 9.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hardin": {
     "name": "Hardin",
@@ -526,7 +806,12 @@
     "medianHouseholdIncome": 60463,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 203489,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 33,
+    "rentPercentile": 20,
+    "incomePercentile": 42,
+    "affordabilityRatio": 3.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "harlem": {
     "name": "Harlem",
@@ -535,7 +820,12 @@
     "medianHouseholdIncome": 74545,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 149732,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 16,
+    "rentPercentile": 26,
+    "incomePercentile": 63,
+    "affordabilityRatio": 2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "harlowton": {
     "name": "Harlowton",
@@ -544,7 +834,12 @@
     "medianHouseholdIncome": 53750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 141601,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 13,
+    "rentPercentile": 26,
+    "incomePercentile": 31,
+    "affordabilityRatio": 2.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "havre": {
     "name": "Havre",
@@ -553,7 +848,12 @@
     "medianHouseholdIncome": 58000,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 223148,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 39,
+    "rentPercentile": 31,
+    "incomePercentile": 38,
+    "affordabilityRatio": 3.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "helena": {
     "name": "Helena",
@@ -564,14 +864,23 @@
     "zillowHomeValue": 459029,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1490,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 82,
+    "rentPercentile": 82,
+    "incomePercentile": 56,
+    "affordabilityRatio": 6.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hingham": {
     "name": "Hingham",
     "medianHomeValue": 93800,
     "medianRent": null,
     "medianHouseholdIncome": 85000,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 18,
+    "incomePercentile": 73,
+    "affordabilityRatio": 1.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hobson": {
     "name": "Hobson",
@@ -580,7 +889,12 @@
     "medianHouseholdIncome": 34750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 290752,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 57,
+    "rentPercentile": 9,
+    "incomePercentile": 6,
+    "affordabilityRatio": 8.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hot-springs": {
     "name": "Hot Springs",
@@ -589,7 +903,12 @@
     "medianHouseholdIncome": 21319,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 240837,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 44,
+    "rentPercentile": 15,
+    "incomePercentile": 1,
+    "affordabilityRatio": 11.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "hysham": {
     "name": "Hysham",
@@ -598,14 +917,20 @@
     "medianHouseholdIncome": 46000,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 187920,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 27,
+    "rentPercentile": 8,
+    "incomePercentile": 18,
+    "affordabilityRatio": 4.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "ismay": {
     "name": "Ismay",
     "medianHomeValue": null,
     "medianRent": null,
     "medianHouseholdIncome": null,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "joliet": {
     "name": "Joliet",
@@ -614,7 +939,11 @@
     "medianHouseholdIncome": 75469,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 486408,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 84,
+    "incomePercentile": 64,
+    "affordabilityRatio": 6.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "jordan": {
     "name": "Jordan",
@@ -623,7 +952,12 @@
     "medianHouseholdIncome": 43594,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 213442,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 36,
+    "rentPercentile": 35,
+    "incomePercentile": 15,
+    "affordabilityRatio": 4.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "judith-gap": {
     "name": "Judith Gap",
@@ -632,7 +966,10 @@
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 220497,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 38,
+    "rentPercentile": 4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "kalispell": {
     "name": "Kalispell",
@@ -643,14 +980,23 @@
     "zillowHomeValue": 538312,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1950,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 87,
+    "rentPercentile": 92,
+    "incomePercentile": 44,
+    "affordabilityRatio": 8.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "kevin": {
     "name": "Kevin",
     "medianHomeValue": 60800,
     "medianRent": null,
     "medianHouseholdIncome": 35625,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 5,
+    "incomePercentile": 7,
+    "affordabilityRatio": 1.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "laurel": {
     "name": "Laurel",
@@ -661,7 +1007,12 @@
     "zillowHomeValue": 362158,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1160,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 71,
+    "rentPercentile": 68,
+    "incomePercentile": 52,
+    "affordabilityRatio": 5.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "lavina": {
     "name": "Lavina",
@@ -670,7 +1021,12 @@
     "medianHouseholdIncome": 66875,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 231330,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 41,
+    "rentPercentile": 20,
+    "incomePercentile": 52,
+    "affordabilityRatio": 3.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "lewistown": {
     "name": "Lewistown",
@@ -679,7 +1035,12 @@
     "medianHouseholdIncome": 44195,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 271126,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 52,
+    "rentPercentile": 44,
+    "incomePercentile": 16,
+    "affordabilityRatio": 6.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "libby": {
     "name": "Libby",
@@ -688,7 +1049,12 @@
     "medianHouseholdIncome": 39261,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 333880,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 66,
+    "rentPercentile": 14,
+    "incomePercentile": 10,
+    "affordabilityRatio": 8.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "lima": {
     "name": "Lima",
@@ -697,7 +1063,11 @@
     "medianHouseholdIncome": 53906,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 269981,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 52,
+    "incomePercentile": 31,
+    "affordabilityRatio": 5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "livingston": {
     "name": "Livingston",
@@ -708,7 +1078,12 @@
     "zillowHomeValue": 510282,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1839,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 86,
+    "rentPercentile": 90,
+    "incomePercentile": 50,
+    "affordabilityRatio": 7.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "lodge-grass": {
     "name": "Lodge Grass",
@@ -717,7 +1092,12 @@
     "medianHouseholdIncome": 50000,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 131049,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 11,
+    "rentPercentile": 11,
+    "incomePercentile": 25,
+    "affordabilityRatio": 2.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "malta": {
     "name": "Malta",
@@ -726,7 +1106,12 @@
     "medianHouseholdIncome": 59449,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 230768,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 41,
+    "rentPercentile": 16,
+    "incomePercentile": 41,
+    "affordabilityRatio": 3.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "manhattan": {
     "name": "Manhattan",
@@ -735,7 +1120,12 @@
     "medianHouseholdIncome": 69671,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 638352,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 91,
+    "rentPercentile": 87,
+    "incomePercentile": 56,
+    "affordabilityRatio": 9.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "medicine-lake": {
     "name": "Medicine Lake",
@@ -744,14 +1134,20 @@
     "medianHouseholdIncome": 41000,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 115632,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 7,
+    "rentPercentile": 3,
+    "incomePercentile": 12,
+    "affordabilityRatio": 2.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "melstone": {
     "name": "Melstone",
     "medianHomeValue": null,
     "medianRent": null,
     "medianHouseholdIncome": null,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "miles-city": {
     "name": "Miles City",
@@ -762,7 +1158,12 @@
     "zillowHomeValue": 229084,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 750,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 41,
+    "rentPercentile": 23,
+    "incomePercentile": 43,
+    "affordabilityRatio": 3.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "missoula": {
     "name": "Missoula",
@@ -773,7 +1174,12 @@
     "zillowHomeValue": 547072,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 1526,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 88,
+    "rentPercentile": 82,
+    "incomePercentile": 50,
+    "affordabilityRatio": 8.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "moore": {
     "name": "Moore",
@@ -782,7 +1188,12 @@
     "medianHouseholdIncome": 45972,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 293638,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 58,
+    "rentPercentile": 31,
+    "incomePercentile": 18,
+    "affordabilityRatio": 6.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "nashua": {
     "name": "Nashua",
@@ -791,7 +1202,12 @@
     "medianHouseholdIncome": 72500,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 113471,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 7,
+    "rentPercentile": 14,
+    "incomePercentile": 60,
+    "affordabilityRatio": 1.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "neihart": {
     "name": "Neihart",
@@ -800,7 +1216,9 @@
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 247657,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 46,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "opheim": {
     "name": "Opheim",
@@ -809,14 +1227,20 @@
     "medianHouseholdIncome": null,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 185594,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 27,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "outlook": {
     "name": "Outlook",
     "medianHomeValue": 103100,
     "medianRent": null,
     "medianHouseholdIncome": 50313,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 22,
+    "incomePercentile": 25,
+    "affordabilityRatio": 2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "philipsburg": {
     "name": "Philipsburg",
@@ -825,14 +1249,24 @@
     "medianHouseholdIncome": 40096,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 418912,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 78,
+    "rentPercentile": 41,
+    "incomePercentile": 11,
+    "affordabilityRatio": 10.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "pinesdale": {
     "name": "Pinesdale",
     "medianHomeValue": 198100,
     "medianRent": 1292,
     "medianHouseholdIncome": 70694,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 56,
+    "rentPercentile": 74,
+    "incomePercentile": 58,
+    "affordabilityRatio": 2.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "plains": {
     "name": "Plains",
@@ -841,7 +1275,12 @@
     "medianHouseholdIncome": 24661,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 389894,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 74,
+    "rentPercentile": 28,
+    "incomePercentile": 2,
+    "affordabilityRatio": 15.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "plentywood": {
     "name": "Plentywood",
@@ -850,7 +1289,12 @@
     "medianHouseholdIncome": 62163,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 151762,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 16,
+    "rentPercentile": 24,
+    "incomePercentile": 45,
+    "affordabilityRatio": 2.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "plevna": {
     "name": "Plevna",
@@ -859,7 +1303,11 @@
     "medianHouseholdIncome": 73750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 220525,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 38,
+    "incomePercentile": 62,
+    "affordabilityRatio": 3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "polson": {
     "name": "Polson",
@@ -868,14 +1316,24 @@
     "medianHouseholdIncome": 51463,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 541265,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 87,
+    "rentPercentile": 47,
+    "incomePercentile": 27,
+    "affordabilityRatio": 10.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "poplar": {
     "name": "Poplar",
     "medianHomeValue": 91700,
     "medianRent": 680,
     "medianHouseholdIncome": 45104,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 17,
+    "rentPercentile": 15,
+    "incomePercentile": 17,
+    "affordabilityRatio": 2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "red-lodge": {
     "name": "Red Lodge",
@@ -884,7 +1342,12 @@
     "medianHouseholdIncome": 43857,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 490019,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 84,
+    "rentPercentile": 31,
+    "incomePercentile": 16,
+    "affordabilityRatio": 11.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "rexford": {
     "name": "Rexford",
@@ -893,7 +1356,11 @@
     "medianHouseholdIncome": 48875,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 476313,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 83,
+    "incomePercentile": 23,
+    "affordabilityRatio": 9.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "richey": {
     "name": "Richey",
@@ -902,7 +1369,12 @@
     "medianHouseholdIncome": 66250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 134528,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 11,
+    "rentPercentile": 2,
+    "incomePercentile": 52,
+    "affordabilityRatio": 2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "ronan": {
     "name": "Ronan",
@@ -911,7 +1383,12 @@
     "medianHouseholdIncome": 41429,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 407960,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 77,
+    "rentPercentile": 30,
+    "incomePercentile": 13,
+    "affordabilityRatio": 9.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "roundup": {
     "name": "Roundup",
@@ -920,7 +1397,12 @@
     "medianHouseholdIncome": 57632,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 222110,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 38,
+    "rentPercentile": 43,
+    "incomePercentile": 38,
+    "affordabilityRatio": 3.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "ryegate": {
     "name": "Ryegate",
@@ -929,7 +1411,12 @@
     "medianHouseholdIncome": 48750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 198646,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 31,
+    "rentPercentile": 33,
+    "incomePercentile": 22,
+    "affordabilityRatio": 4.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "saco": {
     "name": "Saco",
@@ -938,7 +1425,12 @@
     "medianHouseholdIncome": 51250,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 126629,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 9,
+    "rentPercentile": 44,
+    "incomePercentile": 27,
+    "affordabilityRatio": 2.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "scobey": {
     "name": "Scobey",
@@ -947,7 +1439,12 @@
     "medianHouseholdIncome": 49797,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 149557,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 16,
+    "rentPercentile": 7,
+    "incomePercentile": 24,
+    "affordabilityRatio": 3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "seeley-lake": {
     "name": "Seeley Lake",
@@ -956,7 +1453,12 @@
     "medianHouseholdIncome": 46031,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 520520,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 86,
+    "rentPercentile": 57,
+    "incomePercentile": 18,
+    "affordabilityRatio": 11.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "shelby": {
     "name": "Shelby",
@@ -965,7 +1467,12 @@
     "medianHouseholdIncome": 53357,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 170299,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 22,
+    "rentPercentile": 26,
+    "incomePercentile": 30,
+    "affordabilityRatio": 3.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "sheridan": {
     "name": "Sheridan",
@@ -974,7 +1481,11 @@
     "medianHouseholdIncome": 83264,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 463881,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 82,
+    "incomePercentile": 72,
+    "affordabilityRatio": 5.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "sidney": {
     "name": "Sidney",
@@ -983,14 +1494,24 @@
     "medianHouseholdIncome": 62992,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 257663,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 49,
+    "rentPercentile": 43,
+    "incomePercentile": 47,
+    "affordabilityRatio": 4.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "st-ignatius": {
     "name": "St. Ignatius",
     "medianHomeValue": 194200,
     "medianRent": 792,
     "medianHouseholdIncome": 50781,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 55,
+    "rentPercentile": 29,
+    "incomePercentile": 26,
+    "affordabilityRatio": 3.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "stanford": {
     "name": "Stanford",
@@ -999,7 +1520,12 @@
     "medianHouseholdIncome": 52045,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 223139,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 39,
+    "rentPercentile": 1,
+    "incomePercentile": 28,
+    "affordabilityRatio": 4.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "stevensville": {
     "name": "Stevensville",
@@ -1008,14 +1534,24 @@
     "medianHouseholdIncome": 52745,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 590029,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 90,
+    "rentPercentile": 56,
+    "incomePercentile": 29,
+    "affordabilityRatio": 11.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "sunburst": {
     "name": "Sunburst",
     "medianHomeValue": 135600,
     "medianRent": 1042,
     "medianHouseholdIncome": 80938,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 36,
+    "rentPercentile": 59,
+    "incomePercentile": 69,
+    "affordabilityRatio": 1.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "superior": {
     "name": "Superior",
@@ -1024,7 +1560,12 @@
     "medianHouseholdIncome": 43750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 363467,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 71,
+    "rentPercentile": 15,
+    "incomePercentile": 15,
+    "affordabilityRatio": 8.3,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "terry": {
     "name": "Terry",
@@ -1033,7 +1574,11 @@
     "medianHouseholdIncome": 36154,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 115524,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 7,
+    "incomePercentile": 7,
+    "affordabilityRatio": 3.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "thompson-falls": {
     "name": "Thompson Falls",
@@ -1042,7 +1587,12 @@
     "medianHouseholdIncome": 53203,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 373766,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 72,
+    "rentPercentile": 6,
+    "incomePercentile": 30,
+    "affordabilityRatio": 7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "three-forks": {
     "name": "Three Forks",
@@ -1051,7 +1601,12 @@
     "medianHouseholdIncome": 80394,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 535753,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 87,
+    "rentPercentile": 73,
+    "incomePercentile": 69,
+    "affordabilityRatio": 6.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "townsend": {
     "name": "Townsend",
@@ -1060,7 +1615,12 @@
     "medianHouseholdIncome": 70774,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 431165,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 79,
+    "rentPercentile": 53,
+    "incomePercentile": 58,
+    "affordabilityRatio": 6.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "troy": {
     "name": "Troy",
@@ -1069,7 +1629,12 @@
     "medianHouseholdIncome": 36641,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 396411,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 75,
+    "rentPercentile": 6,
+    "incomePercentile": 8,
+    "affordabilityRatio": 10.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "twin-bridges": {
     "name": "Twin Bridges",
@@ -1078,7 +1643,11 @@
     "medianHouseholdIncome": 52292,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 475230,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 83,
+    "incomePercentile": 29,
+    "affordabilityRatio": 9.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "valier": {
     "name": "Valier",
@@ -1087,14 +1656,22 @@
     "medianHouseholdIncome": 44432,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 277276,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 54,
+    "rentPercentile": 28,
+    "incomePercentile": 16,
+    "affordabilityRatio": 6.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "virginia-city": {
     "name": "Virginia City",
     "medianHomeValue": 288600,
     "medianRent": 875,
     "medianHouseholdIncome": null,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 73,
+    "rentPercentile": 41,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "walkerville": {
     "name": "Walkerville",
@@ -1103,14 +1680,24 @@
     "medianHouseholdIncome": 44226,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 157607,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 18,
+    "rentPercentile": 61,
+    "incomePercentile": 16,
+    "affordabilityRatio": 3.6,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "west-glacier": {
     "name": "West Glacier",
     "medianHomeValue": 565500,
     "medianRent": 800,
     "medianHouseholdIncome": 87344,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "homeValuePercentile": 91,
+    "rentPercentile": 30,
+    "incomePercentile": 75,
+    "affordabilityRatio": 6.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "west-yellowstone": {
     "name": "West Yellowstone",
@@ -1119,7 +1706,12 @@
     "medianHouseholdIncome": 57167,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 601098,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 90,
+    "rentPercentile": 58,
+    "incomePercentile": 37,
+    "affordabilityRatio": 10.5,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "westby": {
     "name": "Westby",
@@ -1128,7 +1720,12 @@
     "medianHouseholdIncome": 24583,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 170372,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 22,
+    "rentPercentile": 6,
+    "incomePercentile": 2,
+    "affordabilityRatio": 6.9,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "white-sulphur-springs": {
     "name": "White Sulphur Springs",
@@ -1137,7 +1734,12 @@
     "medianHouseholdIncome": 56424,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 305085,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 60,
+    "rentPercentile": 49,
+    "incomePercentile": 36,
+    "affordabilityRatio": 5.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "whitefish": {
     "name": "Whitefish",
@@ -1148,7 +1750,12 @@
     "zillowHomeValue": 834744,
     "zillowHomeValueDate": "2026-01-31",
     "zillowRent": 2436,
-    "zillowRentDate": "2026-01-31"
+    "zillowRentDate": "2026-01-31",
+    "homeValuePercentile": 96,
+    "rentPercentile": 97,
+    "incomePercentile": 58,
+    "affordabilityRatio": 11.7,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "whitehall": {
     "name": "Whitehall",
@@ -1157,7 +1764,12 @@
     "medianHouseholdIncome": 38750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 440610,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 80,
+    "rentPercentile": 16,
+    "incomePercentile": 10,
+    "affordabilityRatio": 11.4,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "wibaux": {
     "name": "Wibaux",
@@ -1166,14 +1778,22 @@
     "medianHouseholdIncome": 64115,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 195842,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 30,
+    "rentPercentile": 48,
+    "incomePercentile": 49,
+    "affordabilityRatio": 3.1,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "winifred": {
     "name": "Winifred",
     "medianHomeValue": null,
     "medianRent": 557,
     "medianHouseholdIncome": 75089,
-    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)"
+    "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
+    "rentPercentile": 5,
+    "incomePercentile": 63,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "winnett": {
     "name": "Winnett",
@@ -1182,7 +1802,11 @@
     "medianHouseholdIncome": 66875,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 147904,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 15,
+    "incomePercentile": 52,
+    "affordabilityRatio": 2.2,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   },
   "wolf-point": {
     "name": "Wolf Point",
@@ -1191,6 +1815,11 @@
     "medianHouseholdIncome": 48750,
     "source": "U.S. Census Bureau, ACS 5-Year Estimates (2019–2023)",
     "zillowHomeValue": 135042,
-    "zillowHomeValueDate": "2026-01-31"
+    "zillowHomeValueDate": "2026-01-31",
+    "homeValuePercentile": 11,
+    "rentPercentile": 21,
+    "incomePercentile": 22,
+    "affordabilityRatio": 2.8,
+    "nationalRankingsSource": "Zillow ZHVI (2026-01-31) + Census ACS 2023"
   }
 }

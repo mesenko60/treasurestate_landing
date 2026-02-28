@@ -80,6 +80,8 @@ type Props = {
     medianHomeValue: number | null; medianRent: number | null; medianHouseholdIncome: number | null;
     zillowHomeValue: number | null; zillowHomeValueDate: string | null;
     zillowRent: number | null; zillowRentDate: string | null;
+    homeValuePercentile: number | null; rentPercentile: number | null;
+    incomePercentile: number | null; affordabilityRatio: number | null;
   } | null;
 };
 
@@ -308,6 +310,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     zillowHomeValueDate: rawHousing.zillowHomeValueDate || null,
     zillowRent: rawHousing.zillowRent || null,
     zillowRentDate: rawHousing.zillowRentDate || null,
+    homeValuePercentile: rawHousing.homeValuePercentile ?? null,
+    rentPercentile: rawHousing.rentPercentile ?? null,
+    incomePercentile: rawHousing.incomePercentile ?? null,
+    affordabilityRatio: rawHousing.affordabilityRatio ?? null,
   } : null;
 
   return { 

@@ -25,6 +25,10 @@ jobs:
         working-directory: web
         run: node scripts/collect-zillow-data.js
 
+      - name: Compute national percentile rankings
+        working-directory: web
+        run: node scripts/compute-national-rankings.js
+
       - name: Check for data changes
         id: changes
         run: |
