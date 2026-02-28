@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Head>
         <link rel="canonical" href="https://treasurestate.com/" />
+        <link rel="preload" as="image" href="/images/hero-image.jpg" />
         <title>Treasure State - Explore the Wonders of Montana</title>
         <meta
           name="description"
