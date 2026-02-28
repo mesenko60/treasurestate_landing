@@ -61,7 +61,7 @@ const REC_ICONS: Record<string, string> = {
   'Ski Area': '⛷️', 'Scenic Drive': '🛣️', 'Wildlife Refuge': '🦅',
   'Historic Site': '📜', 'National Rec Area': '🏞️', 'Golf': '⛳', 'Museum': '🏛️',
   'Campground': '⛺', 'Trailhead': '🥾', 'Waterfall': '💧',
-  'Fishing Access': '🐟', 'Boat Launch': '🚣', 'Viewpoint': '👀',
+  'Fishing Access': '🐟', 'Boat Launch': '🚣', 'Viewpoint': '👀', 'National HQ': '🏢',
 };
 
 const REC_COLORS: Record<string, string> = {
@@ -70,7 +70,7 @@ const REC_COLORS: Record<string, string> = {
   'Ski Area': '#5b6abf', 'Scenic Drive': '#d68910', 'Wildlife Refuge': '#7d6608',
   'Historic Site': '#8b4513', 'National Rec Area': '#2e86ab', 'Golf': '#27ae60', 'Museum': '#6c3483',
   'Campground': '#6b8e23', 'Trailhead': '#8b6914', 'Waterfall': '#2e86ab',
-  'Fishing Access': '#2471a3', 'Boat Launch': '#1a5276', 'Viewpoint': '#a04000',
+  'Fishing Access': '#2471a3', 'Boat Launch': '#1a5276', 'Viewpoint': '#a04000', 'National HQ': '#1a5276',
 };
 
 function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: string }) {

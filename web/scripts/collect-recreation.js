@@ -232,6 +232,19 @@ const CURATED_SITES = [
   { name: 'Drinking Horse Mountain', type: 'Trailhead', lat: 45.7400, lng: -111.0300 },
   { name: 'Story Mill Community Park', type: 'State Park', lat: 45.7000, lng: -111.0200 },
 
+  // === NATIONAL ORGANIZATION HEADQUARTERS ===
+  { name: 'Rocky Mountain Elk Foundation HQ & Visitor Center', type: 'National HQ', lat: 46.9100, lng: -114.0900 },
+  { name: 'Boone and Crockett Club National HQ', type: 'National HQ', lat: 46.8700, lng: -114.0000 },
+  { name: 'Adventure Cycling Association HQ', type: 'National HQ', lat: 46.8720, lng: -113.9940 },
+  { name: 'Wilderness Watch National HQ', type: 'National HQ', lat: 46.8700, lng: -113.9900 },
+  { name: 'Vital Ground Foundation HQ', type: 'National HQ', lat: 46.8700, lng: -113.9900 },
+  { name: 'International Wildlife Film Festival', type: 'National HQ', lat: 46.8720, lng: -113.9940 },
+  { name: 'Five Valleys Land Trust', type: 'National HQ', lat: 46.8710, lng: -113.9930 },
+  { name: 'Heart of the Rockies Initiative HQ', type: 'National HQ', lat: 46.8700, lng: -113.9900 },
+  { name: 'Greater Yellowstone Coalition HQ', type: 'National HQ', lat: 45.6790, lng: -111.0400 },
+  { name: 'Montana Wilderness Association HQ', type: 'National HQ', lat: 46.5850, lng: -112.0300 },
+  { name: 'Montana Wildlife Federation HQ', type: 'National HQ', lat: 46.5860, lng: -112.0200 },
+
   // === MUSEUMS (curated top-tier) ===
   { name: 'Museum of the Rockies', type: 'Museum', lat: 45.6603, lng: -111.0485 },
   { name: 'C.M. Russell Museum', type: 'Museum', lat: 47.5062, lng: -111.2774 },

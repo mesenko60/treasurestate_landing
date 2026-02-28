@@ -31,7 +31,8 @@ const TYPE_META: Record<string, { icon: string; color: string; label: string; pr
   'Scenic Drive':      { icon: '🛣️', color: '#d68910', label: 'Scenic Drives',          priority: 17, weight: 4 },
   'Wildlife Refuge':   { icon: '🦅', color: '#7d6608', label: 'Wildlife',               priority: 18, weight: 3 },
   'National Rec Area': { icon: '🏞️', color: '#2e86ab', label: 'Rec Areas',              priority: 19, weight: 4 },
-  'Viewpoint':         { icon: '👀', color: '#a04000', label: 'Viewpoints',             priority: 20, weight: 1 },
+  'National HQ':       { icon: '🏢', color: '#1a5276', label: 'National Headquarters',   priority: 6,  weight: 5 },
+  'Viewpoint':         { icon: '👀', color: '#a04000', label: 'Viewpoints',             priority: 21, weight: 1 },
 };
 
 function computeScore(places: RecreationPlace[]): number {

@@ -173,6 +173,11 @@
         "distMiles": 19
       },
       {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
+        "distMiles": 19
+      },
+      {
         "name": "Lolo Hot Springs Campground",
         "type": "Campground",
         "distMiles": 19
@@ -298,6 +303,11 @@
         "distMiles": 24
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 24
+      },
+      {
         "name": "Heart Lake Trailhead",
         "type": "Trailhead",
         "distMiles": 24
@@ -365,6 +375,36 @@
       {
         "name": "Rattlesnake Wilderness",
         "type": "Wilderness",
+        "distMiles": 25
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
         "distMiles": 25
       },
       {
@@ -5388,6 +5428,11 @@
         "distMiles": 10
       },
       {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 10
+      },
+      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 10
@@ -8020,6 +8065,11 @@
       {
         "name": "Cliff Lake",
         "type": "Lake",
+        "distMiles": 32
+      },
+      {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
         "distMiles": 32
       },
       {
@@ -13368,6 +13418,11 @@
         "distMiles": 23
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 24
+      },
+      {
         "name": "Cromwell Dixon Campground",
         "type": "Campground",
         "distMiles": 24
@@ -13440,6 +13495,11 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 25
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
         "distMiles": 25
       },
       {
@@ -14522,6 +14582,11 @@
   "bozeman": {
     "name": "Bozeman",
     "places": [
+      {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
       {
         "name": "Children's Museum of Bozeman",
         "type": "Museum",
@@ -20623,6 +20688,11 @@
         "distMiles": 46
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
         "name": "Selfie Spot",
         "type": "Viewpoint",
         "distMiles": 46
@@ -20680,6 +20750,11 @@
       {
         "name": "Elkhorn Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 47
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
         "distMiles": 47
       },
       {
@@ -23101,6 +23176,11 @@
         "name": "Glen Lake",
         "type": "Lake",
         "distMiles": 24
+      },
+      {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 25
       },
       {
         "name": "Burk Park Trail",
@@ -34963,6 +35043,36 @@
         "distMiles": 42
       },
       {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
         "name": "Mud Lake Campground",
         "type": "Campground",
         "distMiles": 42
@@ -35115,6 +35225,11 @@
       {
         "name": "Clark Fork River",
         "type": "River",
+        "distMiles": 43
+      },
+      {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
         "distMiles": 43
       },
       {
@@ -35505,6 +35620,11 @@
       {
         "name": "Browns Lake",
         "type": "Lake",
+        "distMiles": 48
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
         "distMiles": 48
       },
       {
@@ -38293,6 +38413,16 @@
         "distMiles": 5
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 5
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
+        "distMiles": 5
+      },
+      {
         "name": "Montana Historical Society",
         "type": "Museum",
         "distMiles": 5
@@ -40271,6 +40401,11 @@
         "name": "Pacabo Dam",
         "type": "Lake",
         "distMiles": 39
+      },
+      {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 40
       },
       {
         "name": "Specimen Creek Jct",
@@ -46963,6 +47098,11 @@
         "distMiles": 46
       },
       {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
         "name": "Woodbine Campground",
         "type": "Campground",
         "distMiles": 46
@@ -51343,6 +51483,41 @@
         "distMiles": 44
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 44
+      },
+      {
         "name": "Alta Campground",
         "type": "Campground",
         "distMiles": 44
@@ -51456,6 +51631,11 @@
         "name": "Stewart Lake",
         "type": "Lake",
         "distMiles": 45
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
+        "distMiles": 46
       },
       {
         "name": "Marshall Mountain Bike Access",
@@ -52975,6 +53155,16 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 1
+      },
+      {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 1
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
         "distMiles": 1
       },
       {
@@ -64323,6 +64513,11 @@
         "distMiles": 23
       },
       {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 23
+      },
+      {
         "name": "Aspen Campground",
         "type": "Campground",
         "distMiles": 23
@@ -67068,6 +67263,11 @@
         "distMiles": 19
       },
       {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 19
+      },
+      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 19
@@ -68433,6 +68633,41 @@
         "distMiles": 0
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 0
+      },
+      {
         "name": "E3 Convergance Gallery",
         "type": "Museum",
         "distMiles": 0
@@ -68660,6 +68895,11 @@
       {
         "name": "Rattlesnake Wilderness",
         "type": "Wilderness",
+        "distMiles": 5
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
         "distMiles": 5
       },
       {
@@ -73943,6 +74183,41 @@
         "distMiles": 50
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 50
+      },
+      {
         "name": "American Legion Memorial Park Campground",
         "type": "Campground",
         "distMiles": 50
@@ -75668,6 +75943,41 @@
         "distMiles": 39
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 39
+      },
+      {
         "name": "Rombo Creek Campground",
         "type": "Campground",
         "distMiles": 39
@@ -75785,6 +76095,11 @@
       {
         "name": "Milltown State Park",
         "type": "State Park",
+        "distMiles": 41
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
         "distMiles": 41
       },
       {
@@ -83298,6 +83613,11 @@
         "distMiles": 43
       },
       {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
+        "distMiles": 43
+      },
+      {
         "name": "Woods Gulch",
         "type": "Trailhead",
         "distMiles": 43
@@ -83500,6 +83820,41 @@
       {
         "name": "Clark Fork River",
         "type": "River",
+        "distMiles": 46
+      },
+      {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 46
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
         "distMiles": 46
       },
       {
@@ -86143,6 +86498,36 @@
         "distMiles": 32
       },
       {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 32
+      },
+      {
         "name": "Moose Creek campground (free)",
         "type": "Campground",
         "distMiles": 32
@@ -86230,6 +86615,11 @@
       {
         "name": "Kim Williams Nature Trail",
         "type": "Trailhead",
+        "distMiles": 33
+      },
+      {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
         "distMiles": 33
       },
       {
@@ -86365,6 +86755,11 @@
       {
         "name": "Ninepipe NWR",
         "type": "Wildlife Refuge",
+        "distMiles": 35
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
         "distMiles": 35
       },
       {
@@ -88368,6 +88763,11 @@
         "distMiles": 28
       },
       {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
+        "distMiles": 28
+      },
+      {
         "name": "Hidden Lake Camground",
         "type": "Campground",
         "distMiles": 28
@@ -88565,6 +88965,41 @@
       {
         "name": "Greenough Park",
         "type": "State Park",
+        "distMiles": 31
+      },
+      {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 31
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
         "distMiles": 31
       },
       {
@@ -90973,6 +91408,41 @@
         "distMiles": 25
       },
       {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
+        "distMiles": 25
+      },
+      {
         "name": "Crystal Creek Campground",
         "type": "Campground",
         "distMiles": 25
@@ -91170,6 +91640,11 @@
       {
         "name": "Welcome Creek Wilderness",
         "type": "Wilderness",
+        "distMiles": 28
+      },
+      {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
         "distMiles": 28
       },
       {
@@ -93128,6 +93603,11 @@
         "distMiles": 41
       },
       {
+        "name": "Rocky Mountain Elk Foundation HQ & Visitor Center",
+        "type": "National HQ",
+        "distMiles": 42
+      },
+      {
         "name": "South Fork Lolo Trailhead",
         "type": "Trailhead",
         "distMiles": 42
@@ -93315,6 +93795,41 @@
       {
         "name": "Greenough Park",
         "type": "State Park",
+        "distMiles": 48
+      },
+      {
+        "name": "Boone and Crockett Club National HQ",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "Adventure Cycling Association HQ",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "Wilderness Watch National HQ",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "Vital Ground Foundation HQ",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "International Wildlife Film Festival",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "Five Valleys Land Trust",
+        "type": "National HQ",
+        "distMiles": 48
+      },
+      {
+        "name": "Heart of the Rockies Initiative HQ",
+        "type": "National HQ",
         "distMiles": 48
       },
       {
@@ -94758,6 +95273,11 @@
         "distMiles": 29
       },
       {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 29
+      },
+      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 29
@@ -95948,6 +96468,16 @@
         "distMiles": 30
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 30
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
+        "distMiles": 30
+      },
+      {
         "name": "Montana Historical Society",
         "type": "Museum",
         "distMiles": 30
@@ -96551,6 +97081,11 @@
         "name": "Voldseth Reservoir",
         "type": "Lake",
         "distMiles": 49
+      },
+      {
+        "name": "Greater Yellowstone Coalition HQ",
+        "type": "National HQ",
+        "distMiles": 50
       },
       {
         "name": "Burk Park Trail",
@@ -100763,6 +101298,11 @@
         "distMiles": 45
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 45
+      },
+      {
         "name": "Dinner Station Campground",
         "type": "Campground",
         "distMiles": 45
@@ -100845,6 +101385,11 @@
       {
         "name": "Maverick Mountain",
         "type": "Ski Area",
+        "distMiles": 46
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
         "distMiles": 46
       },
       {
@@ -107708,6 +108253,11 @@
         "distMiles": 49
       },
       {
+        "name": "Montana Wilderness Association HQ",
+        "type": "National HQ",
+        "distMiles": 49
+      },
+      {
         "name": "Lost Creek Campground",
         "type": "Campground",
         "distMiles": 49
@@ -107815,6 +108365,11 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 50
+      },
+      {
+        "name": "Montana Wildlife Federation HQ",
+        "type": "National HQ",
         "distMiles": 50
       },
       {
