@@ -111,25 +111,18 @@ export default function GuidesIndex({ guides }: Props) {
   );
 }
 
-const GUIDE_TOWNS = [
-  'missoula', 'bozeman', 'billings', 'great-falls', 'helena', 'butte',
-  'kalispell', 'whitefish', 'livingston', 'hamilton', 'belgrade', 'columbia-falls',
-  'polson', 'bigfork', 'big-sky', 'red-lodge', 'dillon', 'miles-city',
-  'havre', 'sidney', 'lewistown', 'anaconda', 'big-timber', 'ennis',
-  'west-yellowstone', 'gardiner',
-];
-
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const dataDir = path.resolve(process.cwd(), 'data');
   const load = (f: string) => {
     const p = path.join(dataDir, f);
     return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
   };
+  const coords = load('town-coordinates.json');
   const townData = load('town-data.json');
   const housing = load('town-housing.json');
   const recreation = load('town-recreation.json');
 
-  const guides: GuideLink[] = GUIDE_TOWNS
+  const guides: GuideLink[] = Object.keys(coords)
     .filter(s => townData[s])
     .map(s => {
       const td = townData[s];

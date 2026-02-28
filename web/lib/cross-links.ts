@@ -3,13 +3,20 @@ import path from 'path';
 
 export type CrossLink = { label: string; href: string };
 
-const GUIDE_TOWNS = new Set([
-  'missoula', 'bozeman', 'billings', 'great-falls', 'helena', 'butte',
-  'kalispell', 'whitefish', 'livingston', 'hamilton', 'belgrade', 'columbia-falls',
-  'polson', 'bigfork', 'big-sky', 'red-lodge', 'dillon', 'miles-city',
-  'havre', 'sidney', 'lewistown', 'anaconda', 'big-timber', 'ennis',
-  'west-yellowstone', 'gardiner',
-]);
+let _coordsCache: Set<string> | null = null;
+
+function getTownSlugs(): Set<string> {
+  if (_coordsCache) return _coordsCache;
+  try {
+    const p = path.resolve(process.cwd(), 'data', 'town-coordinates.json');
+    if (fs.existsSync(p)) {
+      _coordsCache = new Set(Object.keys(JSON.parse(fs.readFileSync(p, 'utf8'))));
+      return _coordsCache;
+    }
+  } catch { /* ignore */ }
+  _coordsCache = new Set();
+  return _coordsCache;
+}
 
 const RANKING_TITLES: Record<string, string> = {
   'most-affordable-towns': 'Most Affordable Towns',
@@ -46,11 +53,11 @@ function loadRankingIndex(): Record<string, string[]> {
 }
 
 export function hasGuide(townSlug: string): boolean {
-  return GUIDE_TOWNS.has(townSlug);
+  return getTownSlugs().has(townSlug);
 }
 
 export function guideLink(townSlug: string): CrossLink | null {
-  if (!GUIDE_TOWNS.has(townSlug)) return null;
+  if (!getTownSlugs().has(townSlug)) return null;
   return {
     label: 'Moving Guide',
     href: `/guides/moving-to-${townSlug}-montana/`,
