@@ -352,6 +352,59 @@ const COMPARISON_PAIRS = [
   ['ennis', 'virginia-city'],
   ['choteau', 'fairfield'],
   ['conrad', 'shelby'],
+  // Gallatin / Park corridor
+  ['bozeman', 'manhattan'],
+  ['bozeman', 'three-forks'],
+  ['belgrade', 'manhattan'],
+  ['livingston', 'gardiner'],
+  ['livingston', 'clyde-park'],
+  // Flathead / Lake
+  ['whitefish', 'bigfork'],
+  ['bigfork', 'polson'],
+  ['ronan', 'st-ignatius'],
+  // Carbon / Stillwater
+  ['red-lodge', 'bridger'],
+  ['fromberg', 'bridger'],
+  // Ravalli / Bitterroot
+  ['hamilton', 'darby'],
+  ['darby', 'stevensville'],
+  // Lincoln / NW Montana
+  ['libby', 'eureka'],
+  ['eureka', 'troy'],
+  // Missoula area
+  ['missoula', 'seeley-lake'],
+  ['missoula', 'superior'],
+  ['alberton', 'superior'],
+  // Madison / Jefferson
+  ['ennis', 'twin-bridges'],
+  ['twin-bridges', 'virginia-city'],
+  ['boulder', 'whitehall'],
+  // Butte / Deer Lodge
+  ['butte', 'deer-lodge'],
+  ['anaconda', 'deer-lodge'],
+  // Glacier gateway
+  ['browning', 'east-glacier'],
+  ['cut-bank', 'browning'],
+  ['whitefish', 'west-glacier'],
+  // Eastern Montana
+  ['miles-city', 'forsyth'],
+  ['havre', 'chinook'],
+  ['glasgow', 'malta'],
+  ['sidney', 'fairview'],
+  ['glendive', 'baker'],
+  ['billings', 'hardin'],
+  ['laurel', 'broadview'],
+  // Central
+  ['great-falls', 'fort-benton'],
+  ['lewistown', 'harlowton'],
+  ['helena', 'east-helena'],
+  ['dillon', 'lima'],
+  ['philipsburg', 'drummond'],
+  // Cross-region relocation
+  ['great-falls', 'bozeman'],
+  ['great-falls', 'missoula'],
+  ['helena', 'billings'],
+  ['helena', 'missoula'],
 ];
 
 export const getStaticPaths: GetStaticPaths = async () => {
