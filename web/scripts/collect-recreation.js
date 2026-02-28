@@ -2,31 +2,35 @@ const fs = require('fs');
 const path = require('path');
 
 const CURATED_SITES = [
-  // === NATIONAL PARKS ===
-  { name: 'Glacier National Park', type: 'National Park', lat: 48.7596, lng: -113.7870 },
-  { name: 'Yellowstone National Park', type: 'National Park', lat: 44.4280, lng: -110.5885 },
+  // === NATIONAL PARKS (use nearest major entrance) ===
+  { name: 'Glacier National Park (West Glacier)', type: 'National Park', lat: 48.4957, lng: -113.9810 },
+  { name: 'Glacier National Park (East Glacier)', type: 'National Park', lat: 48.4472, lng: -113.2250 },
+  { name: 'Yellowstone National Park (West Entrance)', type: 'National Park', lat: 44.6571, lng: -111.0937 },
+  { name: 'Yellowstone National Park (North Entrance)', type: 'National Park', lat: 45.0283, lng: -110.7043 },
 
-  // === NATIONAL FORESTS ===
-  { name: 'Flathead National Forest', type: 'National Forest', lat: 48.1000, lng: -114.0000 },
-  { name: 'Gallatin National Forest', type: 'National Forest', lat: 45.4000, lng: -111.0000 },
+  // === NATIONAL FORESTS (use ranger district offices / main access) ===
+  { name: 'Flathead National Forest', type: 'National Forest', lat: 48.2300, lng: -114.0100 },
+  { name: 'Gallatin National Forest', type: 'National Forest', lat: 45.5500, lng: -111.0500 },
   { name: 'Helena-Lewis & Clark NF', type: 'National Forest', lat: 46.7000, lng: -112.0000 },
-  { name: 'Lolo National Forest', type: 'National Forest', lat: 47.0000, lng: -114.2000 },
-  { name: 'Bitterroot National Forest', type: 'National Forest', lat: 46.0000, lng: -114.0000 },
-  { name: 'Kootenai National Forest', type: 'National Forest', lat: 48.5000, lng: -115.5000 },
-  { name: 'Custer-Gallatin NF (East)', type: 'National Forest', lat: 45.5000, lng: -109.5000 },
+  { name: 'Lolo National Forest', type: 'National Forest', lat: 46.9500, lng: -114.1000 },
+  { name: 'Bitterroot National Forest', type: 'National Forest', lat: 46.2500, lng: -114.1000 },
+  { name: 'Kootenai National Forest', type: 'National Forest', lat: 48.2200, lng: -115.5500 },
+  { name: 'Custer-Gallatin NF', type: 'National Forest', lat: 45.5000, lng: -109.5000 },
   { name: 'Beaverhead-Deerlodge NF', type: 'National Forest', lat: 45.8000, lng: -113.0000 },
 
-  // === WILDERNESS AREAS ===
-  { name: 'Bob Marshall Wilderness', type: 'Wilderness', lat: 47.5000, lng: -112.8500 },
-  { name: 'Absaroka-Beartooth Wilderness', type: 'Wilderness', lat: 45.2000, lng: -109.8000 },
-  { name: 'Scapegoat Wilderness', type: 'Wilderness', lat: 47.1000, lng: -112.5000 },
-  { name: 'Selway-Bitterroot Wilderness', type: 'Wilderness', lat: 46.1000, lng: -114.7000 },
-  { name: 'Lee Metcalf Wilderness', type: 'Wilderness', lat: 45.1500, lng: -111.3500 },
-  { name: 'Mission Mountains Wilderness', type: 'Wilderness', lat: 47.3500, lng: -113.8000 },
-  { name: 'Great Bear Wilderness', type: 'Wilderness', lat: 47.9000, lng: -113.2000 },
-  { name: 'Anaconda-Pintler Wilderness', type: 'Wilderness', lat: 46.0500, lng: -113.2000 },
-  { name: 'Cabinet Mountains Wilderness', type: 'Wilderness', lat: 47.9500, lng: -115.6500 },
-  { name: 'Welcome Creek Wilderness', type: 'Wilderness', lat: 46.6500, lng: -113.5000 },
+  // === WILDERNESS AREAS (use nearest primary trailhead / access point) ===
+  { name: 'Bob Marshall Wilderness', type: 'Wilderness', lat: 47.3600, lng: -113.1000 },
+  { name: 'Absaroka-Beartooth Wilderness', type: 'Wilderness', lat: 45.1700, lng: -109.5500 },
+  { name: 'Scapegoat Wilderness', type: 'Wilderness', lat: 47.0600, lng: -112.8000 },
+  { name: 'Selway-Bitterroot Wilderness', type: 'Wilderness', lat: 46.3800, lng: -114.2500 },
+  { name: 'Rattlesnake Wilderness', type: 'Wilderness', lat: 46.9350, lng: -113.9500 },
+  { name: 'Lee Metcalf Wilderness (Spanish Peaks)', type: 'Wilderness', lat: 45.4200, lng: -111.3500 },
+  { name: 'Lee Metcalf Wilderness (Madison Range)', type: 'Wilderness', lat: 45.2100, lng: -111.4000 },
+  { name: 'Mission Mountains Wilderness', type: 'Wilderness', lat: 47.3200, lng: -113.8500 },
+  { name: 'Great Bear Wilderness', type: 'Wilderness', lat: 47.8500, lng: -113.3000 },
+  { name: 'Anaconda-Pintler Wilderness', type: 'Wilderness', lat: 46.0500, lng: -113.1500 },
+  { name: 'Cabinet Mountains Wilderness', type: 'Wilderness', lat: 47.9700, lng: -115.6000 },
+  { name: 'Welcome Creek Wilderness', type: 'Wilderness', lat: 46.6800, lng: -113.5500 },
   { name: 'Gates of the Mountains Wilderness', type: 'Wilderness', lat: 46.8500, lng: -111.8500 },
 
   // === STATE PARKS ===
@@ -191,6 +195,25 @@ const CURATED_SITES = [
   { name: 'Big Sky Golf Course', type: 'Golf', lat: 45.2700, lng: -111.3700 },
   { name: 'Hamilton Golf Club', type: 'Golf', lat: 46.2600, lng: -114.1500 },
 
+  // === NOTABLE HIKES & NATURAL FEATURES (not in OSM) ===
+  { name: 'Natural Bridge Falls', type: 'Waterfall', lat: 45.5850, lng: -109.9150 },
+  { name: 'Lost Creek Falls', type: 'Waterfall', lat: 46.1300, lng: -112.8500 },
+  { name: 'Pine Creek Falls', type: 'Waterfall', lat: 45.5250, lng: -110.4900 },
+  { name: 'Sweathouse Falls', type: 'Waterfall', lat: 46.6800, lng: -114.3500 },
+  { name: 'Woodbine Falls', type: 'Waterfall', lat: 45.3800, lng: -109.8100 },
+  { name: 'Passage Falls', type: 'Waterfall', lat: 45.3900, lng: -111.3500 },
+  { name: 'Hyalite Canyon', type: 'Trailhead', lat: 45.5500, lng: -111.0200 },
+  { name: 'Sacajawea Peak', type: 'Trailhead', lat: 45.8900, lng: -110.9700 },
+  { name: 'Jewel Basin Hiking Area', type: 'Trailhead', lat: 48.0700, lng: -113.7000 },
+  { name: 'Danny On Trail', type: 'Trailhead', lat: 48.4700, lng: -114.3600 },
+  { name: 'Bear Canyon Trail', type: 'Trailhead', lat: 45.6300, lng: -111.0800 },
+  { name: 'Greenough Park', type: 'State Park', lat: 46.8800, lng: -113.9900 },
+  { name: 'Grizzly Peak', type: 'Trailhead', lat: 45.3000, lng: -111.4200 },
+  { name: 'M Trail (Mount Sentinel)', type: 'Trailhead', lat: 46.8580, lng: -113.9760 },
+  { name: 'Kim Williams Nature Trail', type: 'Trailhead', lat: 46.8500, lng: -113.9800 },
+  { name: 'Drinking Horse Mountain', type: 'Trailhead', lat: 45.7400, lng: -111.0300 },
+  { name: 'Story Mill Community Park', type: 'State Park', lat: 45.7000, lng: -111.0200 },
+
   // === MUSEUMS (curated top-tier) ===
   { name: 'Museum of the Rockies', type: 'Museum', lat: 45.6603, lng: -111.0485 },
   { name: 'C.M. Russell Museum', type: 'Museum', lat: 47.5062, lng: -111.2774 },
@@ -206,9 +229,25 @@ const CURATED_SITES = [
   { name: 'Miracle of America Museum', type: 'Museum', lat: 47.6930, lng: -114.1500 },
 ];
 
-const RADIUS_MILES = 50;
-const MIN_SITES = 8;
-const EXTENDED_RADIUS = 75;
+// Tiered radius: major landmarks visible from farther away
+const RADIUS_BY_TYPE = {
+  'National Park': 100,
+  'Wilderness': 100,
+  'National Forest': 75,
+  'National Rec Area': 75,
+  'Scenic Drive': 75,
+  'Ski Area': 75,
+  'State Park': 60,
+  'Hot Spring': 60,
+  'Wildlife Refuge': 60,
+};
+const DEFAULT_RADIUS = 50;
+const MIN_SITES = 10;
+const FALLBACK_RADIUS = 100;
+
+function getRadius(type) {
+  return RADIUS_BY_TYPE[type] || DEFAULT_RADIUS;
+}
 
 function haversineMiles(lat1, lon1, lat2, lon2) {
   const R = 3959;
@@ -264,12 +303,12 @@ function buildRecreation() {
     }))
       .sort((a, b) => a.distMiles - b.distMiles);
 
-    // Take everything within the radius
-    let nearby = all.filter(p => p.distMiles <= RADIUS_MILES);
+    // Each site type has its own radius
+    let nearby = all.filter(p => p.distMiles <= getRadius(p.type));
 
-    // If too few results, extend the radius
+    // If too few results, extend all types to fallback radius
     if (nearby.length < MIN_SITES) {
-      nearby = all.filter(p => p.distMiles <= EXTENDED_RADIUS);
+      nearby = all.filter(p => p.distMiles <= FALLBACK_RADIUS);
     }
 
     // Still ensure at least MIN_SITES by taking closest if needed
