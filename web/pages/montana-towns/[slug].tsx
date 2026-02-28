@@ -136,7 +136,13 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         <meta name="twitter:image" content={`https://treasurestate.com/images/towns/${slug}.jpg`} />
       </Head>
 
-      <Schema townName={townName} slug={slug} description={metaDesc} aeoData={aeoData || undefined} />
+      <Schema
+        townName={townName} slug={slug} description={metaDesc}
+        population={townFacts?.population} elevation={townFacts?.elevation} county={townFacts?.county}
+        lat={currentTownCoords?.lat} lng={currentTownCoords?.lng}
+        recreationPlaces={recreationPlaces}
+        aeoData={aeoData || undefined}
+      />
 
       <Header />
       

@@ -78,9 +78,13 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
     itemListElement: page.towns.map(t => ({
       '@type': 'ListItem',
       position: t.rank,
-      name: `${t.name}, Montana`,
-      url: `https://treasurestate.com/montana-towns/${t.slug}/`,
-      description: t.highlight,
+      item: {
+        '@type': 'Place',
+        name: `${t.name}, Montana`,
+        url: `https://treasurestate.com/montana-towns/${t.slug}/`,
+        description: t.highlight,
+        address: { '@type': 'PostalAddress', addressLocality: t.name, addressRegion: 'MT', addressCountry: 'US' },
+      },
     })),
   };
 
@@ -95,6 +99,17 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
       name: 'Treasure State',
       url: 'https://treasurestate.com',
     },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: b.url.startsWith('/') ? `https://treasurestate.com${b.url}` : b.url,
+    })),
   };
 
   return (
@@ -112,6 +127,7 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
         <meta name="twitter:description" content={page.metaDescription} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
       <Header />
       <Hero title={page.title} subtitle={page.heroSubtitle} image="/images/hero-image.jpg" alt={page.title} small />

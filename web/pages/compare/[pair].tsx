@@ -98,6 +98,30 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
     { name: `${townA.name} vs ${townB.name}`, url },
   ];
 
+  const compareSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: metaDesc,
+    url,
+    about: [
+      { '@type': 'City', name: townA.name, address: { '@type': 'PostalAddress', addressRegion: 'MT', addressCountry: 'US' } },
+      { '@type': 'City', name: townB.name, address: { '@type': 'PostalAddress', addressRegion: 'MT', addressCountry: 'US' } },
+    ],
+    publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: b.url,
+    })),
+  };
+
   return (
     <>
       <Head>
@@ -107,6 +131,8 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:url" content={url} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(compareSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <Header />

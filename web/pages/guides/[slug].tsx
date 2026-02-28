@@ -58,6 +58,17 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
     about: { '@type': 'City', name: guide.townName, containedInPlace: { '@type': 'State', name: 'Montana' } },
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: b.url.startsWith('/') ? `https://treasurestate.com${b.url}` : b.url,
+    })),
+  };
+
   const faqSchema = guide.faqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -82,6 +93,7 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
         <meta name="twitter:title" content={guide.title} />
         <meta name="twitter:description" content={guide.metaDescription} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       </Head>
       <Header />
