@@ -94,4 +94,6 @@ const LEVEL_SCORES = { 'critical': 1, 'high': 3, 'moderate': 5, 'low': 7 };
   const outPath = path.join(dataDir, 'town-environmental.json');
   fs.writeFileSync(outPath, JSON.stringify(envData, null, 2));
   console.log(`\nSaved to ${outPath}`);
+
+  require('./stamp-freshness').stamp('environmental');
 })();

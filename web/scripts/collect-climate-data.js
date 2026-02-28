@@ -102,6 +102,7 @@ async function collectClimateData() {
   }
 
   console.log(`\nClimate data complete for ${Object.keys(results).length} towns.`);
+  require('./stamp-freshness').stamp('climate');
 }
 
 collectClimateData().catch(console.error);

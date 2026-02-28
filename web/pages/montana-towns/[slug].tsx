@@ -94,6 +94,9 @@ type Props = {
     graduationRate: number | null;
     perPupilSpending: number | null;
     mainIndustry: string | null;
+    schoolsVintage: string | null;
+    industryVintage: string | null;
+    healthcareVintage: string | null;
   } | null;
   healthcare: {
     nearestHospital: string | null;
@@ -163,13 +166,13 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           <TableOfContents contentSelector=".content-section" />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
-          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} />}
+          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
-          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} />}
+          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
             <Link href={`/compare?a=${slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
@@ -338,6 +341,14 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     console.error("Failed to load healthcare data", e);
   }
 
+  let freshness: Record<string, any> = {};
+  try {
+    const freshnessPath = path.resolve(process.cwd(), 'data', 'data-freshness.json');
+    if (fs.existsSync(freshnessPath)) {
+      freshness = JSON.parse(fs.readFileSync(freshnessPath, 'utf8'));
+    }
+  } catch (e) { /* ignore */ }
+
   const rawEconomy = allEconomyData[slug];
   const rawHealthcare = allHealthcareData[slug];
   const rawHousing = allHousingData[slug];
@@ -365,6 +376,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     employed: rawEconomy?.employed ?? null,
     laborForce: rawEconomy?.laborForce ?? null,
     topIndustries: rawEconomy?.topIndustries ?? null,
+    censusVintage: freshness.censusEmployment?.vintage ?? null,
   } : null;
 
   return { 
@@ -387,6 +399,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         graduationRate: rawEconomy.graduationRate ?? null,
         perPupilSpending: rawEconomy.perPupilSpending ?? null,
         mainIndustry: rawEconomy.mainIndustry ?? null,
+        schoolsVintage: freshness.schools?.vintage ?? null,
+        industryVintage: freshness.censusIndustry?.vintage ?? null,
+        healthcareVintage: freshness.healthcare?.vintage ?? null,
       } : null,
       healthcare: rawHealthcare ? {
         nearestHospital: rawHealthcare.nearestHospital ?? null,

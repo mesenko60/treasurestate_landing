@@ -29,7 +29,16 @@ type PageData = {
   towns: RankedTown[];
 };
 
-type Props = { page: PageData };
+type DataFreshness = {
+  zillowInventory?: string;
+  censusEmployment?: string;
+  crime?: string;
+  schools?: string;
+  healthcare?: string;
+  environmental?: string;
+};
+
+type Props = { page: PageData; freshness: DataFreshness };
 
 function fmt(n: number | null | undefined): string {
   if (n == null) return '—';
@@ -41,7 +50,13 @@ function fmtDollar(n: number | null | undefined): string {
   return '$' + n.toLocaleString('en-US');
 }
 
-export default function BestOfPage({ page }: Props) {
+function fmtFresh(dateStr?: string): string {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
+export default function BestOfPage({ page, freshness }: Props) {
   const url = `https://treasurestate.com/best-of/${page.slug}/`;
 
   const breadcrumbs = [
@@ -190,6 +205,15 @@ export default function BestOfPage({ page }: Props) {
           <p style={{ fontSize: '0.84rem', color: '#666', lineHeight: 1.6, margin: 0 }}>
             {page.methodology}
           </p>
+          <p style={{ fontSize: '0.72rem', color: '#aaa', margin: '0.6rem 0 0', fontStyle: 'italic', lineHeight: 1.5 }}>
+            Data last collected: Zillow Research ({fmtFresh(freshness.zillowInventory) || 'Jan 2026'}),
+            U.S. Census ACS ({fmtFresh(freshness.censusEmployment) || '2019–2023'}),
+            FBI UCR ({fmtFresh(freshness.crime) || '2023'}),
+            Montana OPI/NCES ({fmtFresh(freshness.schools) || '2022–23'}),
+            Montana DPHHS ({fmtFresh(freshness.healthcare) || '2024'}),
+            EPA NPL ({fmtFresh(freshness.environmental) || '2024'}).
+            Rankings are updated when data is refreshed. Check individual town profiles for details.
+          </p>
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
@@ -323,7 +347,7 @@ const RANKINGS: RankingDef[] = [
     metaDescription: 'Discover Montana\'s most affordable places to live. Ranked by home prices, rent, and price-to-income ratio using Census and Zillow data.',
     heroSubtitle: 'Where Your Dollar Goes Furthest in Big Sky Country',
     intro: 'Montana\'s stunning landscapes don\'t have to come with a steep price tag. While towns like Bozeman and Whitefish have seen prices soar, many Montana communities still offer an affordable cost of living paired with incredible quality of life. We ranked every Montana town by affordability using median home values, rent, household income, and the critical price-to-income ratio.',
-    methodology: 'Rankings based on affordability ratio (median home value ÷ median household income), with preference for towns with lower absolute home values and rent. Data from U.S. Census Bureau ACS 5-Year Estimates (2019–2023) and Zillow Home Value Index (2026). Towns without sufficient housing data were excluded.',
+    methodology: 'Rankings based on affordability ratio (median home value ÷ median household income), with preference for towns with lower absolute home values and rent. Data from U.S. Census Bureau ACS 5-Year Estimates and Zillow Home Value Index. Towns without sufficient housing data were excluded. See collection dates below.',
     count: 10,
     filter: t => t.affordabilityRatio != null && t.affordabilityRatio > 0 && t.medianHomeValue != null,
     sort: (a, b) => (a.affordabilityRatio ?? 99) - (b.affordabilityRatio ?? 99),
@@ -643,7 +667,7 @@ const RANKINGS: RankingDef[] = [
     metaDescription: 'Montana towns with the most homes for sale right now — ranked by current Zillow inventory, vacancy rates, and market activity.',
     heroSubtitle: 'Where You Can Actually Find a Home to Buy',
     intro: 'Montana\'s housing market has been notoriously tight in recent years, with bidding wars and limited inventory frustrating buyers across the state. But not every town is equally competitive. We ranked Montana communities by current housing availability using real-time Zillow inventory data and Census vacancy rates to help you find towns where homes are actually on the market.',
-    methodology: 'Ranked by a housing availability score combining: Zillow for-sale inventory per 1,000 residents (×3 weight, higher means more options relative to town size), Census vacancy rate (×2, higher means more housing turnover), and year-over-year inventory change (×1, increasing inventory is positive). Data from Zillow Research (Jan 2026) and U.S. Census ACS 5-Year Estimates (2019–2023). Towns without sufficient data were excluded.',
+    methodology: 'Ranked by a housing availability score combining: Zillow for-sale inventory per 1,000 residents (×3 weight, higher means more options relative to town size), Census vacancy rate (×2, higher means more housing turnover), and year-over-year inventory change (×1, increasing inventory is positive). Data from Zillow Research and U.S. Census ACS 5-Year Estimates. Towns without sufficient data were excluded. See collection dates below.',
     count: 10,
     filter: t => t.forSaleInventory != null && t.forSaleInventory > 0 && t.totalHousingUnits != null && t.population != null && t.population > 500,
     sort: (a, b) => {
@@ -695,6 +719,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const envData = load('town-environmental.json');
   const economy = load('town-economy.json');
   const healthcare = load('town-healthcare.json');
+  const rawFreshness = load('data-freshness.json');
 
   const allTowns: TownRaw[] = Object.keys(coords).map(s => {
     const d = townData[s] || {};
@@ -801,6 +826,14 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         intro: ranking.intro,
         methodology: ranking.methodology,
         towns,
+      },
+      freshness: {
+        zillowInventory: rawFreshness.zillowInventory?.lastCollected ?? null,
+        censusEmployment: rawFreshness.censusEmployment?.lastCollected ?? null,
+        crime: rawFreshness.crime?.lastCollected ?? null,
+        schools: rawFreshness.schools?.lastCollected ?? null,
+        healthcare: rawFreshness.healthcare?.lastCollected ?? null,
+        environmental: rawFreshness.environmental?.lastCollected ?? null,
       },
     },
   };

@@ -146,4 +146,6 @@ function getLatestValue(row, headers) {
 
   fs.writeFileSync(housingPath, JSON.stringify(housing, null, 2));
   console.log(`\nSaved updated housing data to ${housingPath}`);
+
+  require('./stamp-freshness').stamp('zillowValues');
 })();

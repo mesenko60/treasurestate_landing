@@ -11,9 +11,11 @@ type TownDataProps = {
   nearestHospital?: string | null;
   nearestHospitalDist?: number | null;
   mainIndustry?: string | null;
+  industryVintage?: string | null;
+  healthcareVintage?: string | null;
 };
 
-export default function TownQuickFacts({ elevation, county, region, zipCode, areaCode, timeZone, population, nearestHospital, nearestHospitalDist, mainIndustry }: TownDataProps) {
+export default function TownQuickFacts({ elevation, county, region, zipCode, areaCode, timeZone, population, nearestHospital, nearestHospitalDist, mainIndustry, industryVintage, healthcareVintage }: TownDataProps) {
   const hospitalValue = nearestHospitalDist != null
     ? (nearestHospitalDist <= 5 ? `${nearestHospital} (in town)` : `${nearestHospital} (${nearestHospitalDist} mi)`)
     : null;
@@ -55,6 +57,11 @@ export default function TownQuickFacts({ elevation, county, region, zipCode, are
           </div>
         </div>
       ))}
+      {(mainIndustry || nearestHospital) && (
+        <div style={{ gridColumn: '1 / -1', fontSize: '0.68rem', color: '#bbb', textAlign: 'center', fontStyle: 'italic' }}>
+          {mainIndustry ? `Industry: Census ${industryVintage || 'ACS 2019–2023'}` : ''}{mainIndustry && nearestHospital ? ' · ' : ''}{nearestHospital ? `Hospital: ${healthcareVintage || 'MT DPHHS 2024'}` : ''}
+        </div>
+      )}
     </div>
   );
 }

@@ -25,11 +25,19 @@ type GuideData = {
   faqs: FAQ[];
 };
 
-type Props = { guide: GuideData };
+type FreshnessMap = Record<string, { lastCollected?: string; vintage?: string }>;
+
+type Props = { guide: GuideData; freshness: FreshnessMap };
 
 /* ─── Page Component ─────────────────────────────────────── */
 
-export default function GuidePage({ guide }: Props) {
+function fmtFresh(dateStr?: string): string {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
+export default function GuidePage({ guide, freshness }: Props) {
   const url = `https://treasurestate.com/guides/${guide.slug}/`;
 
   const breadcrumbs = [
@@ -123,6 +131,18 @@ export default function GuidePage({ guide }: Props) {
             </section>
           )}
 
+          <div style={{ marginTop: '2rem', padding: '1rem', background: '#f8f9fa', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.72rem', color: '#999', lineHeight: 1.6 }}>
+            <strong style={{ color: '#888' }}>Data Sources & Freshness:</strong>{' '}
+            Housing values and inventory from Zillow Research ({fmtFresh(freshness.zillowInventory?.lastCollected) || 'Jan 2026'}).{' '}
+            Income, vacancy, employment, and industry data from U.S. Census Bureau {freshness.censusEmployment?.vintage || 'ACS 5-Year (2019–2023)'}.{' '}
+            Crime statistics from {freshness.crime?.vintage || 'FBI UCR (2023)'}.{' '}
+            Graduation rates from {freshness.schools?.vintage || 'Montana OPI / NCES CCD (2022–23)'}.{' '}
+            Hospital data from {freshness.healthcare?.vintage || 'Montana DPHHS (2024)'}.{' '}
+            Environmental data from {freshness.environmental?.vintage || 'EPA NPL (2024)'}.{' '}
+            All data reflects conditions at the time of collection and may not represent current conditions.
+            Verify critical information (housing prices, job availability, school enrollment) directly with local sources before making relocation decisions.
+          </div>
+
           <div className="cta-box" style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#204051' }}>Ready to learn more?</p>
             <Link href={`/montana-towns/${guide.townSlug}/`} style={{ marginRight: '1rem' }}>
@@ -163,6 +183,7 @@ function climateRow(m: any): string {
 type TownBundle = {
   slug: string; name: string; nickname: string;
   td: any; h: any; clim: any; rec: any; air: any; econ: any; health: any;
+  freshness: FreshnessMap;
 };
 
 function movingGuide(t: TownBundle): GuideData {
@@ -242,6 +263,7 @@ function movingGuide(t: TownBundle): GuideData {
           ${vacancy != null ? statCard(vacancy + '%', 'Vacancy Rate') : ''}
           ${invYoY != null ? statCard((invYoY > 0 ? '+' : '') + invYoY + '%', 'Inventory YoY') : ''}
         </div>
+        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Inventory data from Zillow Research (${t.h?.forSaleInventoryDate ? new Date(t.h.forSaleInventoryDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'recent'}). Vacancy &amp; housing units from U.S. Census Bureau ${t.freshness.censusVacancy?.vintage || 'ACS 5-Year (2019–2023)'}. Market conditions change — verify current listings before making decisions.</p>
         <div class="cta-box">
           <p>See detailed housing data and percentile rankings on the <a href="/montana-towns/${t.slug}/">full ${t.name} profile</a>.</p>
         </div>
@@ -314,6 +336,7 @@ function movingGuide(t: TownBundle): GuideData {
           <tbody>${topInd.map((i: any) => `<tr><td>${i.name}</td><td>${i.pct}%</td></tr>`).join('')}</tbody>
         </table>` : ''}
         <p>Montana has <strong>no state sales tax</strong> and <strong>no tax on retirement income</strong>, making it attractive for both workers and retirees.</p>
+        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Employment and industry data from U.S. Census Bureau ${t.freshness.censusEmployment?.vintage || 'ACS 5-Year (2019–2023)'}. Current conditions may differ.</p>
       `,
     });
   }
@@ -334,6 +357,7 @@ function movingGuide(t: TownBundle): GuideData {
           ${perPupil != null ? statCard($(perPupil), 'Per-Pupil Spending') : ''}
         </div>` : ''}
         ${pop > 20000 ? `<p>${t.name} also has access to higher education institutions and continuing education programs.</p>` : ''}
+        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Graduation rates from ${t.freshness.schools?.vintage || 'Montana OPI / NCES CCD (2022–23)'}. Per-pupil spending from Montana OPI fiscal data.</p>
       `,
     });
   }
@@ -355,6 +379,7 @@ function movingGuide(t: TownBundle): GuideData {
           ${statCard(n(hc.hospitalsWithin60), 'Hospitals < 60 mi')}
         </div>
         ${hc.healthcareScore < 4 ? `<p><em>Note: Healthcare access in ${t.name} is limited. If you have ongoing medical needs, consider proximity to ${hc.nearestMajorHospital || 'a major hospital'} when making your decision.</em></p>` : ''}
+        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Hospital data from ${t.freshness.healthcare?.vintage || 'Montana DPHHS Trauma Facility Designations (2024)'}. Verify services directly with facilities.</p>
       `,
     });
   }
@@ -426,7 +451,7 @@ function movingGuide(t: TownBundle): GuideData {
     { q: `What is the cost of living in ${t.name}, Montana?`, a: `${homeVal ? `The typical home value is ${$(homeVal)}` : `Housing costs vary`}${rent ? ` and rent averages ${$(rent)}/month` : ''}. ${income ? `The median household income is ${$(income)}.` : ''} Montana has no state sales tax, which helps offset costs.` },
     { q: `What are winters like in ${t.name}?`, a: `${janLow != null ? `January lows average ${janLow}°F` : 'Winters are cold'}${annualSnow ? ` with about ${annualSnow}" of annual snowfall` : ''}. ${janLow != null && janLow > 10 ? 'Compared to eastern Montana, winters here are relatively mild.' : 'Winter driving skills and proper vehicle preparation are essential.'}` },
     { q: `Is ${t.name} a good place to live?`, a: `${t.name} offers ${places.length} nearby recreation sites, ${ratio ? `a ${ratio <= 4 ? 'favorable' : ratio <= 6 ? 'moderate' : 'higher'} affordability ratio of ${ratio}x` : 'Montana quality of life'}, and four distinct seasons. ${nearestPark ? `It's ${nearestPark.distMiles} miles from ${nearestPark.name}.` : ''} Montana's lack of sales tax and retirement income tax are significant benefits.` },
-    { q: `How many homes are for sale in ${t.name}?`, a: `${inv ? `There are currently ${n(inv)} homes for sale in ${t.name}` : `Housing availability varies`}${invYoY != null ? `, ${invYoY > 0 ? `up ${invYoY}%` : `down ${Math.abs(invYoY)}%`} from last year` : ''}. ${units ? `The community has ${n(units)} total housing units with a ${vacancy}% vacancy rate.` : ''}` },
+    { q: `How many homes are for sale in ${t.name}?`, a: `${inv ? `As of early 2026, there were ${n(inv)} homes for sale in ${t.name}` : `Housing availability varies`}${invYoY != null ? `, ${invYoY > 0 ? `up ${invYoY}%` : `down ${Math.abs(invYoY)}%`} from the prior year` : ''}. ${units ? `The community has ${n(units)} total housing units with a ${vacancy}% vacancy rate (Census ACS 2019–2023).` : ''} Check Zillow or local MLS for the most current listings.` },
     ...(unemp != null ? [{ q: `What is the job market like in ${t.name}?`, a: `${t.name} has a ${unemp}% unemployment rate${unemp <= 3.5 ? ', which is at or below the state average' : unemp <= 6 ? '' : ', which is above the state average'}.${lfpr != null ? ` Labor force participation is ${lfpr}%.` : ''} ${employed ? `About ${n(employed)} residents are employed locally.` : ''} ${mainInd ? `The leading industry is ${mainInd.toLowerCase()}.` : ''} Montana has no state sales tax, which benefits both businesses and consumers.` }] : []),
     ...(gradRate != null ? [{ q: `How are the schools in ${t.name}?`, a: `The ${t.td.schoolDistrict || t.name} school district has a graduation rate of ${gradRate}%${gradRate >= 90 ? ', above the Montana state average of ~87%' : gradRate >= 85 ? ', near the state average' : ', below the state average of ~87%'}.${t.td.schoolEnrollment ? ` Approximately ${n(t.td.schoolEnrollment)} students are enrolled.` : ''}${perPupil ? ` Per-pupil spending is approximately ${$(perPupil)}.` : ''}` }] : []),
     ...(hc ? [{ q: `What healthcare is available in ${t.name}?`, a: `${hc.hasLocalHospital ? `${t.name} has a local hospital, ${hc.nearestHospital}` : `The nearest hospital is ${hc.nearestHospital} in ${hc.nearestHospitalCity} (${hc.nearestHospitalDist} miles)`}.${hc.nearestMajorHospitalDist != null ? ` The nearest major trauma center is ${hc.nearestMajorHospital} in ${hc.nearestMajorHospitalCity}, ${hc.nearestMajorHospitalDist} miles away.` : ''} There are ${hc.hospitalsWithin60} hospitals within 60 miles.` }] : []),
@@ -479,6 +504,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const airports = load('town-airport-distances.json');
   const economy = load('town-economy.json');
   const healthcareData = load('town-healthcare.json');
+  const rawFreshness = load('data-freshness.json');
 
   const match = rawSlug.match(/^moving-to-(.+)-montana$/);
   if (!match) return { notFound: true };
@@ -497,9 +523,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     air: airports[townSlug] || null,
     econ: economy[townSlug] || null,
     health: healthcareData[townSlug] || null,
+    freshness: rawFreshness,
   };
 
   const guide = movingGuide(bundle);
 
-  return { props: { guide } };
+  return { props: { guide, freshness: rawFreshness } };
 };

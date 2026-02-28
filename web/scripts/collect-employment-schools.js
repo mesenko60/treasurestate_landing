@@ -169,4 +169,7 @@ const PER_PUPIL_SPENDING = {
   const outPath = path.join(dataDir, 'town-economy.json');
   fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
   console.log(`\nSaved to ${outPath}`);
+
+  require('./stamp-freshness').stamp('censusEmployment');
+  require('./stamp-freshness').stamp('schools');
 })();

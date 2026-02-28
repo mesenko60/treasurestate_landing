@@ -172,3 +172,5 @@ console.log(`0-2: ${buckets[0]}, 2-4: ${buckets[1]}, 4-6: ${buckets[2]}, 6-8: ${
 const outPath = path.join(dataDir, 'town-healthcare.json');
 fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
 console.log(`\nSaved to ${outPath}`);
+
+require('./stamp-freshness').stamp('healthcare');

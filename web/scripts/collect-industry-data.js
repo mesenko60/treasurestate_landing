@@ -127,4 +127,6 @@ const INDUSTRY_LABELS = [
 
   fs.writeFileSync(econPath, JSON.stringify(economy, null, 2));
   console.log(`\nSaved to ${econPath}`);
+
+  require('./stamp-freshness').stamp('censusIndustry');
 })();

@@ -389,3 +389,4 @@ function buildRecreation() {
 }
 
 buildRecreation();
+require('./stamp-freshness').stamp('recreation');

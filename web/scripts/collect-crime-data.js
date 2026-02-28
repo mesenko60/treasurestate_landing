@@ -104,4 +104,6 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
   const outPath = path.join(dataDir, 'town-crime.json');
   fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
   console.log(`\nSaved to ${outPath}`);
+
+  require('./stamp-freshness').stamp('crime');
 })();

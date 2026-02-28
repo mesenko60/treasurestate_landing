@@ -193,4 +193,6 @@ const SLUG_ALIASES = {
 
   fs.writeFileSync(path.join(dataDir, 'town-housing.json'), JSON.stringify(housing, null, 2));
   console.log(`\nSaved to town-housing.json`);
+
+  require('./stamp-freshness').stamp('zillowInventory');
 })();

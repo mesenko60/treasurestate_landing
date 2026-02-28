@@ -22,6 +22,7 @@ type Props = {
   employed?: number | null;
   laborForce?: number | null;
   topIndustries?: { name: string; pct: number }[] | null;
+  censusVintage?: string | null;
 };
 
 function formatDate(dateStr: string | null): string {
@@ -64,6 +65,7 @@ export default function TownHousing({
   forSaleInventory, forSaleInventoryDate, inventoryYoY, medianListPrice,
   newListings, totalHousingUnits, vacancyRate,
   unemploymentRate, laborForceParticipation, employed, laborForce, topIndustries,
+  censusVintage,
 }: Props) {
   if (!medianHomeValue && !medianRent && !medianHouseholdIncome && !zillowHomeValue) return null;
 
@@ -166,8 +168,15 @@ export default function TownHousing({
       {/* Housing Market Activity */}
       {(forSaleInventory != null || totalHousingUnits != null) && (
         <div style={{ marginTop: '1.25rem', padding: '1rem', background: '#fff', borderRadius: '8px', border: '1px solid #eee' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-            Housing Availability
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.6rem' }}>
+            <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              Housing Availability
+            </div>
+            {forSaleInventoryDate && (
+              <div style={{ fontSize: '0.68rem', color: '#aaa', fontStyle: 'italic' }}>
+                Updated {formatDate(forSaleInventoryDate)}
+              </div>
+            )}
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem' }}>
             {forSaleInventory != null && (
@@ -222,8 +231,13 @@ export default function TownHousing({
       {/* Employment & Economy */}
       {(unemploymentRate != null || (topIndustries && topIndustries.length > 0)) && (
         <div style={{ marginTop: '1.25rem', padding: '1rem', background: '#fff', borderRadius: '8px', border: '1px solid #eee' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-            Employment &amp; Economy
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.6rem' }}>
+            <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              Employment &amp; Economy
+            </div>
+            <div style={{ fontSize: '0.68rem', color: '#aaa', fontStyle: 'italic' }}>
+              {censusVintage || 'ACS 2019–2023'}
+            </div>
           </div>
           {unemploymentRate != null && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem' }}>
@@ -289,14 +303,15 @@ export default function TownHousing({
 
       <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center', lineHeight: 1.6 }}>
         {zillowHomeValue && (
-          <>Home value data from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Home Value Index</a> ({formatDate(zillowHomeValueDate)}). </>
+          <>Home values from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow ZHVI</a> ({formatDate(zillowHomeValueDate)}). </>
         )}
         {forSaleInventory != null && (
-          <>Inventory from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Research</a> ({formatDate(forSaleInventoryDate)}). </>
+          <>Inventory, list prices &amp; new listings from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Research</a> ({formatDate(forSaleInventoryDate)}). </>
         )}
         {medianHouseholdIncome && (
-          <>Income{!zillowHomeValue && medianHomeValue ? ', home value,' : ''}{totalHousingUnits ? ', vacancy,' : ''}{unemploymentRate != null ? ' and employment' : ''} from U.S. Census Bureau, ACS 5-Year Estimates (2019–2023).</>
+          <>Income{!zillowHomeValue && medianHomeValue ? ', home values,' : ''}{totalHousingUnits ? ', vacancy,' : ''}{unemploymentRate != null ? ', employment, industry,' : ''} from U.S. Census Bureau {censusVintage || 'ACS 5-Year (2019–2023)'}. </>
         )}
+        Data may not reflect current conditions. <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Check Zillow</a> for the latest market data.
       </div>
     </section>
   );

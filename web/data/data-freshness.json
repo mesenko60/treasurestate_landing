@@ -1,0 +1,75 @@
+{
+  "zillowValues": {
+    "label": "Zillow Home Values & Rent (ZHVI/ZORI)",
+    "lastCollected": "2026-01-31",
+    "frequency": "monthly",
+    "script": "collect-zillow-data.js"
+  },
+  "zillowInventory": {
+    "label": "Zillow Inventory, List Prices & New Listings",
+    "lastCollected": "2026-01-31",
+    "frequency": "monthly",
+    "script": "collect-zillow-inventory.js"
+  },
+  "censusVacancy": {
+    "label": "U.S. Census ACS Housing Units & Vacancy",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "ACS 5-Year 2019–2023",
+    "script": "collect-census-vacancy.js"
+  },
+  "censusEmployment": {
+    "label": "U.S. Census ACS Employment & Schools",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "ACS 5-Year 2019–2023",
+    "script": "collect-employment-schools.js"
+  },
+  "censusIndustry": {
+    "label": "U.S. Census ACS Industry Data",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "ACS 5-Year 2019–2023",
+    "script": "collect-industry-data.js"
+  },
+  "crime": {
+    "label": "FBI UCR Crime Statistics",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "FBI UCR 2023",
+    "script": "collect-crime-data.js"
+  },
+  "healthcare": {
+    "label": "Montana Hospital & Trauma Facilities",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "MT DPHHS 2024",
+    "script": "collect-healthcare-data.js"
+  },
+  "environmental": {
+    "label": "EPA Superfund / National Priorities List",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "EPA NPL 2024",
+    "script": "collect-environmental-data.js"
+  },
+  "schools": {
+    "label": "Montana OPI / NCES Graduation Rates",
+    "lastCollected": "2026-01-20",
+    "frequency": "annual",
+    "vintage": "OPI/NCES 2022–23",
+    "script": "collect-employment-schools.js"
+  },
+  "recreation": {
+    "label": "Recreation & Outdoor Sites (OSM + Editorial)",
+    "lastCollected": "2026-01-15",
+    "frequency": "quarterly",
+    "script": "collect-recreation.js"
+  },
+  "climate": {
+    "label": "Climate & Weather Averages",
+    "lastCollected": "2026-01-15",
+    "frequency": "annual",
+    "script": "collect-climate-data.js"
+  }
+}

@@ -6,9 +6,10 @@ type SchoolInfoProps = {
   website: string | null;
   graduationRate?: number | null;
   perPupilSpending?: number | null;
+  schoolsVintage?: string | null;
 };
 
-export default function SchoolInfo({ district, enrollment, website, graduationRate, perPupilSpending }: SchoolInfoProps) {
+export default function SchoolInfo({ district, enrollment, website, graduationRate, perPupilSpending, schoolsVintage }: SchoolInfoProps) {
   const hasExtras = graduationRate != null || perPupilSpending != null;
 
   return (
@@ -68,11 +69,11 @@ export default function SchoolInfo({ district, enrollment, website, graduationRa
               </div>
             </div>
           )}
-          {graduationRate != null && (
-            <div style={{ fontSize: '0.75rem', color: '#999', alignSelf: 'center' }}>
-              MT avg: ~87% · Source: Montana OPI / NCES
-            </div>
-          )}
+          <div style={{ fontSize: '0.72rem', color: '#999', alignSelf: 'center', fontStyle: 'italic' }}>
+            {graduationRate != null ? `Graduation rate: ${schoolsVintage || 'Montana OPI / NCES CCD 2022–23'}. ` : ''}
+            {perPupilSpending != null ? 'Per-pupil spending: Montana OPI fiscal data. ' : ''}
+            {graduationRate != null ? 'MT state avg: ~87%.' : ''}
+          </div>
         </div>
       )}
     </div>
