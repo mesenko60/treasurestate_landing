@@ -45,9 +45,18 @@ function url(loc, lastmod = new Date()) {
     }
   }
 
-  // Town pages
+  // Town pages + cluster subpages
   for (const t of towns) {
     entries.push(url(`${baseUrl}/montana-towns/${t.slug}/`));
+    const townOutDir = path.join(outDir, 'montana-towns', t.slug);
+    if (fs.existsSync(townOutDir)) {
+      for (const sub of fs.readdirSync(townOutDir)) {
+        const subPath = path.join(townOutDir, sub);
+        if (fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'))) {
+          entries.push(url(`${baseUrl}/montana-towns/${t.slug}/${sub}/`));
+        }
+      }
+    }
   }
 
   // Guide pages

@@ -3,26 +3,27 @@ import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
-import Header from '../../components/Header';
-import Hero from '../../components/Hero';
-import StaysCTA from '../../components/StaysCTA';
-import { injectStaysCTA } from '../../lib/affiliate-urls';
-import Footer from '../../components/Footer';
-import Schema from '../../components/Schema';
-import Breadcrumbs from '../../components/Breadcrumbs';
-import NearbyTowns from '../../components/NearbyTowns';
-import TableOfContents from '../../components/TableOfContents';
-import SingleTownMap from '../../components/SingleTownMap';
-import TownWeather from '../../components/TownWeather';
-import TownDistances from '../../components/TownDistances';
-import StoreBanner from '../../components/StoreBanner';
-import TownQuickFacts from '../../components/TownQuickFacts';
-import ClimateTable from '../../components/ClimateTable';
-import NearbyRecreation from '../../components/NearbyRecreation';
-import SchoolInfo from '../../components/SchoolInfo';
-import TownHousing from '../../components/TownHousing';
-import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../lib/towns';
-import { readTownMarkdownByTownName, AEOData } from '../../lib/markdown';
+import Header from '../../../components/Header';
+import Hero from '../../../components/Hero';
+import StaysCTA from '../../../components/StaysCTA';
+import { injectStaysCTA } from '../../../lib/affiliate-urls';
+import Footer from '../../../components/Footer';
+import Schema from '../../../components/Schema';
+import Breadcrumbs from '../../../components/Breadcrumbs';
+import NearbyTowns from '../../../components/NearbyTowns';
+import TableOfContents from '../../../components/TableOfContents';
+import SingleTownMap from '../../../components/SingleTownMap';
+import TownWeather from '../../../components/TownWeather';
+import TownDistances from '../../../components/TownDistances';
+import StoreBanner from '../../../components/StoreBanner';
+import TownQuickFacts from '../../../components/TownQuickFacts';
+import ClimateTable from '../../../components/ClimateTable';
+import NearbyRecreation from '../../../components/NearbyRecreation';
+import SchoolInfo from '../../../components/SchoolInfo';
+import TownHousing from '../../../components/TownHousing';
+import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../../lib/towns';
+import { readTownMarkdownByTownName, AEOData } from '../../../lib/markdown';
+import { getClusterConfig } from '../../../components/town/cluster-data';
 
 type TownCoordinate = {
   name: string;
@@ -114,6 +115,12 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
 
   const { html: enrichedHtml, injected: staysInjected } = injectStaysCTA(contentHtml, townName, slug);
 
+  const cluster = getClusterConfig(slug);
+
+  const schemaFaqs = cluster
+    ? { faqs: cluster.faqs.map(f => ({ question: f.question, answer: f.answer })) }
+    : aeoData || undefined;
+
   const breadcrumbItems = [
     { name: 'Home', url: 'https://treasurestate.com/' },
     { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
@@ -126,8 +133,6 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         <link rel="canonical" href={url} />
         <title>{title}</title>
         <meta name="description" content={metaDesc} />
-        
-        {/* OpenGraph / Social Meta Tags */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:type" content="article" />
@@ -144,11 +149,10 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         population={townFacts?.population} elevation={townFacts?.elevation} county={townFacts?.county}
         lat={currentTownCoords?.lat} lng={currentTownCoords?.lng}
         recreationPlaces={recreationPlaces}
-        aeoData={aeoData || undefined}
+        aeoData={schemaFaqs}
       />
 
       <Header />
-      
       <Breadcrumbs items={breadcrumbItems} />
 
       <Hero
@@ -158,24 +162,52 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         alt={`${townName} - Scenic View`}
         small
       />
-      
+
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
         <style dangerouslySetInnerHTML={{__html: `
-          .toc-desktop {
-            display: none;
-          }
+          .toc-desktop { display: none; }
           @media (min-width: 1024px) {
-            .toc-desktop {
-              display: block;
-              width: 300px;
-              flex-shrink: 0;
-            }
+            .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
           }
+          .hub-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; margin: 1.25rem 0 2rem; }
+          .hub-card { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; background: #f8faf8; border: 1px solid #e2ebe2; border-radius: 10px; text-decoration: none; color: #204051; font-size: 0.9rem; transition: box-shadow 0.2s, transform 0.2s; }
+          .hub-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+          .hub-card-icon { font-size: 1.35rem; flex-shrink: 0; }
+          .hub-card-body { min-width: 0; }
+          .hub-card-title { font-weight: 600; font-family: var(--font-primary); margin-bottom: 0.15rem; }
+          .hub-card-desc { font-size: 0.8rem; color: #666; line-height: 1.4; }
+          .hub-faq-item { margin-bottom: 1.25rem; }
+          .hub-faq-q { font-weight: 600; font-size: 0.95rem; color: #204051; margin-bottom: 0.35rem; }
+          .hub-faq-a { font-size: 0.9rem; color: #555; line-height: 1.6; }
         `}} />
         <div className="toc-desktop">
           <TableOfContents contentSelector=".content-section" />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
+
+          {cluster && (
+            <>
+              <div className="content-section" style={{ marginBottom: '0' }}>
+                <div dangerouslySetInnerHTML={{ __html: cluster.hubIntro.replace(/\n/g, '</p><p>') }} style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#444' }} />
+              </div>
+
+              <div className="content-section" style={{ marginTop: '0.5rem' }}>
+                <h2 id="explore-guides" style={{ fontSize: '1.25rem', color: '#204051', marginBottom: '0.5rem' }}>Explore {townName} Guides</h2>
+                <div className="hub-cards">
+                  {cluster.guides.map(g => (
+                    <Link key={g.topic} href={`/montana-towns/${slug}/${g.topic}/`} className="hub-card">
+                      <span className="hub-card-icon">{g.icon}</span>
+                      <div className="hub-card-body">
+                        <div className="hub-card-title">{g.title}</div>
+                        <div className="hub-card-desc">{g.description}</div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+
           {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
@@ -210,11 +242,24 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           </div>
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
+
+          {cluster && (
+            <div className="content-section" style={{ marginTop: '1.5rem' }}>
+              <h2 id="faqs">Frequently Asked Questions About {townName}</h2>
+              {cluster.faqs.map((faq, i) => (
+                <div key={i} className="hub-faq-item">
+                  <div className="hub-faq-q">{faq.question}</div>
+                  <div className="hub-faq-a">{faq.answer}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
           {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
           <StoreBanner />
         </div>
       </main>
-      
+
       <Footer />
     </>
   );
@@ -246,9 +291,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const description = md?.excerpt || '';
   const aeoData = md?.aeoData || null;
   
-  // Try to use the specifically parsed nearby destinations from the markdown file first.
-  // If the markdown file doesn't have any, fall back to our deterministic algorithm.
-  let relatedTowns = [];
+  let relatedTowns: { name: string; slug: string }[] = [];
   if (md?.nearbyDestinations && md.nearbyDestinations.length > 0) {
     const allTowns = getTownList();
     relatedTowns = md.nearbyDestinations.map(name => {
@@ -256,7 +299,6 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       return match ? { name: match.name, slug: match.slug } : null;
     }).filter(Boolean) as { name: string; slug: string }[];
     
-    // If we only found 1 or 2 valid ones, pad it out with the fallback algorithm so it looks full
     if (relatedTowns.length < 3) {
       const fallbacks = getRelatedTowns(slug, 3);
       for (const fallback of fallbacks) {
@@ -378,7 +420,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     }
   } catch (e) { /* ignore */ }
 
-  const { allCrossLinks } = await import('../../lib/cross-links');
+  const { allCrossLinks } = await import('../../../lib/cross-links');
   const crossLinks = allCrossLinks(slug);
 
   const rawEconomy = allEconomyData[slug];
