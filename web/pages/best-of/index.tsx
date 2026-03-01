@@ -8,7 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 
 const RANKINGS = [
   { slug: 'most-affordable-towns', title: '10 Most Affordable Towns', icon: '💰', description: 'Where your dollar goes furthest in Big Sky Country. Ranked by home prices, rent, and price-to-income ratio.' },
-  { slug: 'best-outdoor-recreation', title: '10 Best Towns for Outdoor Recreation', icon: '🏔️', description: 'The ultimate outdoor adventure towns — scored by trails, parks, rivers, ski areas, and wilderness access.' },
+  { slug: 'best-outdoor-recreation', title: '10 Best Towns for Outdoor Recreation', icon: '🏔️', description: 'The ultimate outdoor adventure towns, scored by trails, parks, rivers, ski areas, and wilderness access.' },
   { slug: 'best-ski-towns', title: '10 Best Ski Towns', icon: '⛷️', description: 'Montana\'s premier mountain communities for powder chasers. Ranked by distance to the nearest ski area.' },
   { slug: 'best-fishing-towns', title: '10 Best Towns for Fly Fishing', icon: '🎣', description: 'Where world-class trout water is minutes away. Ranked by rivers, fishing access, and lakes.' },
   { slug: 'towns-near-hot-springs', title: '10 Best Towns Near Hot Springs', icon: '♨️', description: 'Soak in Montana\'s natural geothermal waters. Ranked by proximity to hot springs.' },
@@ -31,7 +31,7 @@ export default function BestOfIndex() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Best of Montana — Town Rankings & Guides',
+    name: 'Best of Montana: Town Rankings & Guides',
     description: 'Data-driven rankings of Montana\'s best towns for recreation, affordability, skiing, fishing, families, retirees, and more.',
     url,
   };
@@ -39,16 +39,16 @@ export default function BestOfIndex() {
   return (
     <>
       <Head>
-        <title>Best of Montana — Town Rankings & Guides | Treasure State</title>
+        <title>Best of Montana: Town Rankings & Guides | Treasure State</title>
         <meta name="description" content="Data-driven rankings of Montana's best towns for recreation, affordability, skiing, fishing, families, retirees, and more. Find your perfect Montana community." />
         <link rel="canonical" href={url} />
-        <meta property="og:title" content="Best of Montana — Town Rankings & Guides" />
+        <meta property="og:title" content="Best of Montana: Town Rankings & Guides" />
         <meta property="og:description" content="Data-driven rankings of Montana's best towns. Find your perfect community." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best of Montana — Town Rankings & Guides" />
+        <meta name="twitter:title" content="Best of Montana: Town Rankings & Guides" />
         <meta name="twitter:description" content="Data-driven rankings of Montana's best towns. Find your perfect community." />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -65,8 +65,8 @@ export default function BestOfIndex() {
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '1.5rem 1rem 3rem' }}>
         <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '2rem' }}>
           Whether you're planning a visit, considering a move, or just curious about Montana's communities,
-          our rankings use real data — Census housing figures, Zillow home values, climate records, and
-          2,500+ mapped recreation sites — to help you discover the best Montana has to offer.
+          our rankings use real data: Census housing figures, Zillow home values, climate records, and
+          2,500+ mapped recreation sites to help you discover the best Montana has to offer.
         </p>
 
         <div style={{

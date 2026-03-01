@@ -261,7 +261,7 @@ export default function CompareTool({ towns }: Props) {
     ? `${townA.name} vs ${townB.name} - Montana Town Comparison`
     : 'Compare Montana Towns - Find Your Ideal Community';
   const desc = townA && townB
-    ? `Compare ${townA.name} and ${townB.name}, Montana side by side — population, climate, schools, recreation, and more.`
+    ? `Compare ${townA.name} and ${townB.name}, Montana side by side: population, climate, schools, recreation, and more.`
     : 'Compare any two Montana towns side by side. Explore population, climate, schools, outdoor recreation, and more to find your ideal community.';
 
   const breadcrumbs = [

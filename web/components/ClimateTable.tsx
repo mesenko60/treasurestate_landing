@@ -43,7 +43,7 @@ export default function ClimateTable({ townName, months }: ClimateTableProps) {
   return (
     <div style={{ marginBottom: '2rem', overflowX: 'auto' }}>
       <h3 style={{ fontSize: '1.2rem', color: '#204051', marginBottom: '0.75rem' }}>
-        Average Monthly Climate — {townName}
+        Average Monthly Climate: {townName}
       </h3>
       <table style={tableStyle}>
         <thead>

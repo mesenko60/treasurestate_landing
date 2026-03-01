@@ -30,14 +30,14 @@ export default function GuidesIndex({ guides }: Props) {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Montana Relocation Guides',
-    description: 'Comprehensive moving guides for Montana cities and towns — housing costs, climate, recreation, schools, and more.',
+    description: 'Comprehensive moving guides for Montana cities and towns. Housing costs, climate, recreation, schools, and more.',
     url,
   };
 
   return (
     <>
       <Head>
-        <title>Montana Relocation Guides — Moving to Montana | Treasure State</title>
+        <title>Montana Relocation Guides | Moving to Montana | Treasure State</title>
         <meta name="description" content="Complete relocation guides for Montana cities and towns. Housing costs, climate data, recreation, schools, and everything you need to know about moving to Montana." />
         <link rel="canonical" href={url} />
         <meta property="og:title" content="Montana Relocation Guides" />
@@ -58,7 +58,7 @@ export default function GuidesIndex({ guides }: Props) {
         <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '2rem' }}>
           Thinking about moving to Montana? Our comprehensive relocation guides cover everything from housing
           costs and climate to outdoor recreation, schools, and quality of life. Each guide is built from
-          real data — Census figures, Zillow market data, and 2,500+ mapped recreation sites — to give
+          real data: Census figures, Zillow market data, and 2,500+ mapped recreation sites to give
           you an honest picture of what life is really like in each community.
         </p>
 

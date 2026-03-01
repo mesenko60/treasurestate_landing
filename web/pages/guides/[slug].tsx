@@ -256,7 +256,7 @@ function movingGuide(t: TownBundle): GuideData {
     id: 'overview',
     heading: `Why Move to ${t.name}?`,
     html: `
-      <p>${t.name} is a ${sizeLabel} of ${n(pop)} people${county ? ` in ${county} County` : ''}, sitting at ${n(elev)} feet in elevation. ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} combines the best of Montana living — stunning natural beauty, outdoor recreation, and a strong community — ${pop > 20000 ? 'with the amenities of a mid-size city' : pop > 5000 ? 'with small-city conveniences' : 'with authentic small-town charm'}.</p>
+      <p>${t.name} is a ${sizeLabel} of ${n(pop)} people${county ? ` in ${county} County` : ''}, sitting at ${n(elev)} feet in elevation. ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} combines the best of Montana living: stunning natural beauty, outdoor recreation, and a strong community, ${pop > 20000 ? 'with the amenities of a mid-size city' : pop > 5000 ? 'with small-city conveniences' : 'with authentic small-town charm'}.</p>
       <p>Montana has no state sales tax and no tax on retirement income, making it financially attractive for both working professionals and retirees. ${t.name} specifically offers ${places.length} recreation and attraction sites nearby, ${ratio ? `a housing affordability ratio of ${ratio}x` : 'a growing community'}, and four distinct seasons.</p>
       <div class="stat-grid">
         ${statCard(n(pop), 'Population')}
@@ -273,7 +273,7 @@ function movingGuide(t: TownBundle): GuideData {
     heading: `Cost of Living in ${t.name}`,
     html: `
       <p>${homeVal ? `The typical home value in ${t.name} is ${$(homeVal)}` : `Housing data for ${t.name}`}${listPrice ? `, with homes currently listing at a median of ${$(listPrice)}` : ''}. ${rent ? `Renters can expect to pay around ${$(rent)} per month.` : ''} ${income ? `The median household income is ${$(income)}.` : ''}</p>
-      ${ratio ? `<p>The affordability ratio (home price ÷ income) is <strong>${ratio}x</strong>, which is ${ratio <= 3 ? 'very affordable by national standards' : ratio <= 5 ? 'moderate and comparable to the national average' : ratio <= 7 ? 'above average — plan your budget carefully' : 'on the expensive side, reflecting strong demand'}.</p>` : ''}
+      ${ratio ? `<p>The affordability ratio (home price ÷ income) is <strong>${ratio}x</strong>, which is ${ratio <= 3 ? 'very affordable by national standards' : ratio <= 5 ? 'moderate and comparable to the national average' : ratio <= 7 ? 'above average: plan your budget carefully' : 'on the expensive side, reflecting strong demand'}.</p>` : ''}
       <div class="stat-grid">
         ${homeVal ? statCard($(homeVal), 'Typical Home Value') : ''}
         ${rent ? statCard($(rent) + '/mo', 'Typical Rent') : ''}
@@ -292,14 +292,14 @@ function movingGuide(t: TownBundle): GuideData {
       id: 'housing-market',
       heading: `${t.name} Housing Market`,
       html: `
-        <p>${inv ? `There are currently <strong>${n(inv)} homes for sale</strong> in ${t.name}` : `${t.name}`}${invYoY != null ? ` — ${invYoY > 0 ? `up ${invYoY}% from last year, indicating a loosening market` : invYoY < 0 ? `down ${Math.abs(invYoY)}% from last year, indicating tightening supply` : 'flat compared to last year'}` : ''}. ${units ? `The community has ${n(units)} total housing units with a ${vacancy}% vacancy rate${marketTight ? ' — a tight market where buyers should be prepared to act quickly' : marketLoose ? ', suggesting more options and negotiating room for buyers' : ''}.` : ''}</p>
+        <p>${inv ? `There are currently <strong>${n(inv)} homes for sale</strong> in ${t.name}` : `${t.name}`}${invYoY != null ? `: ${invYoY > 0 ? `up ${invYoY}% from last year, indicating a loosening market` : invYoY < 0 ? `down ${Math.abs(invYoY)}% from last year, indicating tightening supply` : 'flat compared to last year'}` : ''}. ${units ? `The community has ${n(units)} total housing units with a ${vacancy}% vacancy rate${marketTight ? ': a tight market where buyers should be prepared to act quickly' : marketLoose ? ', suggesting more options and negotiating room for buyers' : ''}.` : ''}</p>
         <div class="stat-grid">
           ${inv ? statCard(n(inv), 'Homes for Sale') : ''}
           ${units ? statCard(n(units), 'Total Housing Units') : ''}
           ${vacancy != null ? statCard(vacancy + '%', 'Vacancy Rate') : ''}
           ${invYoY != null ? statCard((invYoY > 0 ? '+' : '') + invYoY + '%', 'Inventory YoY') : ''}
         </div>
-        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Inventory data from Zillow Research (${t.h?.forSaleInventoryDate ? new Date(t.h.forSaleInventoryDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'recent'}). Vacancy &amp; housing units from U.S. Census Bureau ${t.freshness.censusVacancy?.vintage || 'ACS 5-Year (2019–2023)'}. Market conditions change — verify current listings before making decisions.</p>
+        <p style="font-size: 0.78rem; color: #999; font-style: italic;">Inventory data from Zillow Research (${t.h?.forSaleInventoryDate ? new Date(t.h.forSaleInventoryDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'recent'}). Vacancy &amp; housing units from U.S. Census Bureau ${t.freshness.censusVacancy?.vintage || 'ACS 5-Year (2019–2023)'}. Market conditions change. Verify current listings before making decisions.</p>
         <div class="cta-box">
           <p>See detailed housing data and percentile rankings on the <a href="/montana-towns/${t.slug}/">full ${t.name} profile</a>.</p>
         </div>
@@ -333,11 +333,11 @@ function movingGuide(t: TownBundle): GuideData {
         ${highlights.length > 0 ? `
         <h3>Top Nearby Attractions</h3>
         <ul>
-          ${highlights.map((p: any) => `<li><strong>${p.name}</strong> (${p.type}) — ${p.distMiles} miles</li>`).join('')}
+          ${highlights.map((p: any) => `<li><strong>${p.name}</strong> (${p.type}): ${p.distMiles} miles</li>`).join('')}
         </ul>` : ''}
         ${rivers.length > 0 ? `<h3>Rivers</h3><p>${rivers.map((r: any) => r.name).join(', ')} ${rivers.length > 1 ? 'are all' : 'is'} within reach for fishing, floating, and kayaking.</p>` : ''}
         ${lakes.length > 0 ? `<h3>Lakes</h3><p>Nearby lakes include ${lakes.map((l: any) => l.name).join(', ')}.</p>` : ''}
-        ${hotSprings.length > 0 ? `<h3>Hot Springs</h3><p>${hotSprings.map((h: any) => `${h.name} (${h.distMiles} mi)`).join(', ')} — perfect for soaking after a day on the trails.</p>` : ''}
+        ${hotSprings.length > 0 ? `<h3>Hot Springs</h3><p>${hotSprings.map((h: any) => `${h.name} (${h.distMiles} mi)`).join(', ')}: perfect for soaking after a day on the trails.</p>` : ''}
         <div class="cta-box">
           <p>Explore all ${places.length} recreation sites on the <a href="/montana-towns/${t.slug}/">full ${t.name} profile</a>.</p>
         </div>
@@ -357,7 +357,7 @@ function movingGuide(t: TownBundle): GuideData {
       id: 'jobs-economy',
       heading: `Jobs & Economy in ${t.name}`,
       html: `
-        ${unemp != null ? `<p>${t.name} has an unemployment rate of <strong>${unemp}%</strong>${unemp <= 3.5 ? ', which is at or below the state average — indicating a healthy local job market' : unemp <= 6 ? ', which is moderate' : ', which is above the state average and may present challenges for job seekers'}. ${lfpr != null ? `The labor force participation rate is ${lfpr}%${lfpr >= 70 ? ', reflecting an active and engaged workforce' : lfpr >= 60 ? '' : ', which is below average — common in retirement and college communities'}.` : ''}</p>` : ''}
+        ${unemp != null ? `<p>${t.name} has an unemployment rate of <strong>${unemp}%</strong>${unemp <= 3.5 ? ', which is at or below the state average: indicating a healthy local job market' : unemp <= 6 ? ', which is moderate' : ', which is above the state average and may present challenges for job seekers'}. ${lfpr != null ? `The labor force participation rate is ${lfpr}%${lfpr >= 70 ? ', reflecting an active and engaged workforce' : lfpr >= 60 ? '' : ', which is below average: common in retirement and college communities'}.` : ''}</p>` : ''}
         ${topInd ? `<p>The top industries by employment are ${indList}.${employed ? ` Approximately ${n(employed)} residents are employed locally.` : ''}</p>` : (employed ? `<p>Approximately ${n(employed)} residents are employed locally.</p>` : '')}
         <div class="stat-grid">
           ${unemp != null ? statCard(unemp + '%', 'Unemployment Rate') : ''}
@@ -407,7 +407,7 @@ function movingGuide(t: TownBundle): GuideData {
       id: 'healthcare',
       heading: `Healthcare in ${t.name}`,
       html: `
-        <p>${hc.hasLocalHospital ? `${t.name} has its own hospital — <strong>${hc.nearestHospital}</strong>${hc.nearestHospitalBeds ? ` (${hc.nearestHospitalBeds} beds)` : ''}.` : `The nearest hospital is <strong>${hc.nearestHospital}</strong> in ${hc.nearestHospitalCity}, ${hospDist} miles away.`} ${majorDist != null && majorDist <= 100 ? `For advanced or emergency care, <strong>${hc.nearestMajorHospital}</strong> in ${hc.nearestMajorHospitalCity} (Level ${hc.nearestMajorTraumaLevel} Trauma Center) is ${majorDist} miles away.` : majorDist != null ? `The nearest major trauma center is ${hc.nearestMajorHospital} in ${hc.nearestMajorHospitalCity}, ${majorDist} miles away — plan accordingly for emergencies.` : ''}</p>
+        <p>${hc.hasLocalHospital ? `${t.name} has its own hospital: <strong>${hc.nearestHospital}</strong>${hc.nearestHospitalBeds ? ` (${hc.nearestHospitalBeds} beds)` : ''}.` : `The nearest hospital is <strong>${hc.nearestHospital}</strong> in ${hc.nearestHospitalCity}, ${hospDist} miles away.`} ${majorDist != null && majorDist <= 100 ? `For advanced or emergency care, <strong>${hc.nearestMajorHospital}</strong> in ${hc.nearestMajorHospitalCity} (Level ${hc.nearestMajorTraumaLevel} Trauma Center) is ${majorDist} miles away.` : majorDist != null ? `The nearest major trauma center is ${hc.nearestMajorHospital} in ${hc.nearestMajorHospitalCity}, ${majorDist} miles away. Plan accordingly for emergencies.` : ''}</p>
         <div class="stat-grid">
           ${statCard(hc.healthcareScore + '/10', 'Healthcare Score')}
           ${statCard(hospDist <= 5 ? 'In Town' : hospDist + ' mi', 'Nearest Hospital')}
@@ -430,7 +430,7 @@ function movingGuide(t: TownBundle): GuideData {
         <p>${t.name} is accessible via the following airports:</p>
         <ul>
           ${airportEntries.slice(0, 5).map(([code, d]: [string, any]) =>
-            `<li><strong>${d.airportName || code}</strong> — ${d.distanceMiles} miles (${Math.round(d.durationSeconds / 60)} min drive)</li>`
+            `<li><strong>${d.airportName || code}</strong>: ${d.distanceMiles} miles (${Math.round(d.durationSeconds / 60)} min drive)</li>`
           ).join('')}
         </ul>
       `,
@@ -500,7 +500,7 @@ function movingGuide(t: TownBundle): GuideData {
     townName: t.name,
     title: `Moving to ${t.name}, Montana: Everything You Need to Know`,
     metaDescription: `Complete guide to moving to ${t.name}, MT. ${homeVal ? `Home values at ${$(homeVal)}` : 'Housing costs'}, ${janLow != null ? `${janLow}°F winter lows` : 'four-season climate'}, ${places.length} recreation sites, schools, and more.`,
-    heroSubtitle: `Your Complete Relocation Guide to ${t.nickname !== 'A Montana Community' ? `"${t.nickname}" — ` : ''}${t.name}, Montana`,
+    heroSubtitle: `Your Complete Relocation Guide to ${t.nickname !== 'A Montana Community' ? `"${t.nickname}" | ` : ''}${t.name}, Montana`,
     sections,
     faqs,
   };

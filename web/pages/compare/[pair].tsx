@@ -88,8 +88,8 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
 }
 
 export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
-  const title = `${townA.name} vs ${townB.name}, Montana — Side by Side Comparison`;
-  const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side — population, climate, schools, recreation, and more.`;
+  const title = `${townA.name} vs ${townB.name}, Montana | Side by Side Comparison`;
+  const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side: population, climate, schools, recreation, and more.`;
   const url = `https://treasurestate.com/compare/${townA.slug}-vs-${townB.slug}/`;
 
   const breadcrumbs = [

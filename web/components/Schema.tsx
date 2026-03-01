@@ -73,7 +73,7 @@ export default function Schema({
           '@type': 'TouristAttraction',
           name: a.name,
           touristType: a.type,
-          description: `${a.name} (${a.type}) — ${a.distMiles} miles from ${townName}, Montana`,
+          description: `${a.name} (${a.type}), ${a.distMiles} miles from ${townName}, Montana`,
           isAccessibleForFree: true,
           containedInPlace: { '@type': 'State', name: 'Montana' },
         });

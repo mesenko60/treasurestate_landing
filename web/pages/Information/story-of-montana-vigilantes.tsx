@@ -13,7 +13,7 @@ export default function StoryOfMontanaVigilantes() {
       <Head>
         <title>The Noose of Doubt: Montana’s Vigilante Legacy - Treasure State</title>
         <link rel="canonical" href="https://treasurestate.com/Information/story-of-montana-vigilantes/" />
-        <meta name="description" content="Uncover the unsettling story of Montana's vigilante era—where law was uncertain, justice was swift, and the line between hero and executioner blurred." />
+        <meta name="description" content="Uncover the unsettling story of Montana's vigilante era, where law was uncertain, justice was swift, and the line between hero and executioner blurred." />
         <meta name="keywords" content="Montana vigilantes, Henry Plummer, Bannack, Virginia City, frontier justice, gold camps, extralegal executions, 3-7-77, Montana history, vigilante timeline" />
         <meta property="og:title" content="The Noose of Doubt: Montana's Vigilante Legacy - Treasure State" />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
@@ -124,7 +124,7 @@ export default function StoryOfMontanaVigilantes() {
 
           <p>This educational indoctrination helped cement the vigilante myth in Montana's collective consciousness. Today, though Montana history is no longer required curriculum in many schools, the simplified narrative persists in popular culture and tourist attractions. The myth has become so deeply embedded in Montana's identity that questioning it can feel almost like challenging the legitimacy of the state itself.</p>
 
-          <p>What lessons should we draw from this blood-soaked chapter of Montana's past? Perhaps the most important is the danger of certainty—the absolute conviction that one knows who deserves to live and who deserves to die. The vigilantes, whatever their motives, acted with a righteousness that left no room for doubt, no space for the possibility that their judgment might be flawed. In doing so, they closed the door on mercy, on due process, on the fundamental idea that even the guilty deserve a fair hearing before their fate is decided.</p>
+          <p>What lessons should we draw from this blood-soaked chapter of Montana's past? Perhaps the most important is the danger of certainty: the absolute conviction that one knows who deserves to live and who deserves to die. The vigilantes, whatever their motives, acted with a righteousness that left no room for doubt, no space for the possibility that their judgment might be flawed. In doing so, they closed the door on mercy, on due process, on the fundamental idea that even the guilty deserve a fair hearing before their fate is decided.</p>
 
           <p>History isn't served by simple narratives of heroes and villains. The men who formed the vigilance committee were not purely evil, just as their victims were not purely innocent or purely guilty. They were human beings caught in a chaotic moment, making decisions that would haunt Montana for generations to come. Some genuinely believed they were serving justice; others may have had darker motives. The truth, as always, lies somewhere in the tangle of human complexity.</p>
 
