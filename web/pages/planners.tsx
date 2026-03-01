@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import AffiliateBanner from '../components/AffiliateBanner';
+import StaysCTA from '../components/StaysCTA';
 import Footer from '../components/Footer';
 
 export default function Planners() {
@@ -49,7 +49,7 @@ export default function Planners() {
             </Link>
           </div>
         </section>
-        <AffiliateBanner />
+        <StaysCTA />
       </main>
       <Footer />
     </>

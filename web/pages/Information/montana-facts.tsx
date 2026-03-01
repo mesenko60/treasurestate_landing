@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
-import AffiliateBanner from '../../components/AffiliateBanner';
+import StaysCTA from '../../components/StaysCTA';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
@@ -64,7 +64,7 @@ export default function MontanaFacts() {
           <h3>More Montana Marvels: History, Economy, and Unique Quirks</h3>
           <p>Montana's intrigue extends beyond its landscapes and celebrity connections into its rich history and unique characteristics. The state's motto, "Oro y Plata," Spanish for "Gold and Silver," directly reflects the mineral wealth that shaped its early development and earned it the nickname "The Treasure State." The town of Bannack, now a meticulously preserved ghost town, served as Montana's first territorial capital, offering a tangible link to its frontier past. Economically, Montana stands out as one of only five U.S. states that do not levy a general sales tax, a feature undoubtedly appreciated by its residents and visitors alike. The mining industry, particularly copper, played a monumental role in Montana's history. In the 1880s, the mines of Butte were so productive that they supplied an astonishing 30% of the nation's copper and 15% of the world's supply. The legacy of this era is complex, exemplified by the Berkeley Pit, a massive former open-pit copper mine in Butte. Once a source of immense wealth, it is now a Superfund site due to its high toxicity, yet it has also become a rather unusual tourist attraction. Reinforcing its status as a haven for wildlife, it's noteworthy that no other U.S. state boasts more species of mammals than Montana. The first permanent European settlement in what would become Montana was St. Mary Mission, established in 1831, marking an early chapter in the state's multicultural story.</p>
         </section>
-        <AffiliateBanner />
+        <StaysCTA />
         <ComingSoon />
         </div>
       </main>

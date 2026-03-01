@@ -336,9 +336,9 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                   <span className="hp-adv-icon" aria-hidden="true">🛣️</span>
                   <span className="hp-adv-label">Scenic Backroads</span>
                 </Link>
-                <Link href="/best-of/best-climate" className="hp-adv-card">
-                  <span className="hp-adv-icon" aria-hidden="true">☀️</span>
-                  <span className="hp-adv-label">Best Climate Towns</span>
+                <Link href="/planners" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🏨</span>
+                  <span className="hp-adv-label">Where to Stay</span>
                 </Link>
                 <Link href="/best-of/best-small-towns" className="hp-adv-card">
                   <span className="hp-adv-icon" aria-hidden="true">🏡</span>

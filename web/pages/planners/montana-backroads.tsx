@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
-import AffiliateBanner from '../../components/AffiliateBanner';
+import StaysCTA from '../../components/StaysCTA';
 import StoreBanner from '../../components/StoreBanner';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
@@ -70,7 +70,7 @@ export default function MontanaBackroads() {
             </ul>
           </section>
           <StoreBanner />
-          <AffiliateBanner />
+          <StaysCTA />
         </div>
       </main>
       <Footer />

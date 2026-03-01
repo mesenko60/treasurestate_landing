@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import AffiliateBanner from '../components/AffiliateBanner';
+import StaysCTA from '../components/StaysCTA';
 import ComingSoon from '../components/ComingSoon';
 import Footer from '../components/Footer';
 
@@ -27,7 +27,7 @@ export default function ExploreMontana() {
         small
       />
       <main>
-        <AffiliateBanner />
+        <StaysCTA />
         <ComingSoon />
       </main>
       <Footer />

@@ -5,7 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
-import AffiliateBanner from '../../components/AffiliateBanner';
+import StaysCTA from '../../components/StaysCTA';
+import { injectStaysCTA } from '../../lib/affiliate-urls';
 import Footer from '../../components/Footer';
 import Schema from '../../components/Schema';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -111,6 +112,8 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
 
+  const { html: enrichedHtml, injected: staysInjected } = injectStaysCTA(contentHtml, townName, slug);
+
   const breadcrumbItems = [
     { name: 'Home', url: 'https://treasurestate.com/' },
     { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
@@ -176,7 +179,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
-          <article className="content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
@@ -207,8 +210,8 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           </div>
           <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
           <NearbyTowns towns={relatedTowns} />
+          {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
           <StoreBanner />
-          <AffiliateBanner />
         </div>
       </main>
       
