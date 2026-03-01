@@ -240,6 +240,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  kalispell: {
+    hubIntro: `Kalispell is the commercial hub of Montana's Flathead Valley, home to 29,886 residents and the gateway to Glacier National Park — just 25 miles to the northeast. Whether you're planning a move or a visit, this guide covers everything you need to know — from <a href="/montana-towns/kalispell/cost-of-living/">housing costs</a> and <a href="/montana-towns/kalispell/jobs/">job opportunities</a> to <a href="/montana-towns/kalispell/hiking/">hiking trails</a> and a <a href="/montana-towns/kalispell/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nFlathead Lake, the largest natural freshwater lake west of the Mississippi, begins 14 miles south of town. Whitefish Mountain Resort is 19 miles north. Blacktail Mountain ski area is 11 miles west. The Flathead River flows 8 miles from downtown. At 2,959 feet, Kalispell sits lower than most Montana cities, giving it milder winters than the mountain towns to the south. With 371 recreation sites within 50 miles, world-class scenery, and a growing healthcare-driven economy, Kalispell is one of northwest Montana's most compelling communities.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Kalispell, Montana',
+        metaTitle: 'Cost of Living in Kalispell, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Kalispell? Median home value $538K, rent $1,950/mo, income $61,590. Affordability ratios and Flathead Valley cost breakdown.',
+        description: 'A detailed breakdown of what it costs to live in Kalispell — housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '💰',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Kalispell, Montana Housing Market',
+        metaTitle: 'Kalispell, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Kalispell housing market data: median home value $538K, 371 active listings, 6% inventory increase YoY. Zillow trends, rental rates, and market analysis.',
+        description: 'Current housing market data for Kalispell including home values, rental rates, inventory trends, and market analysis.',
+        icon: '🏠',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Kalispell, Montana',
+        metaTitle: 'Jobs & Economy in Kalispell, Montana (2026) | Treasure State',
+        metaDescription: 'Kalispell job market: 3.6% unemployment, job score 9.1/10, led by education & healthcare (29.5%). Major employers, tourism economy, and workforce data.',
+        description: "Kalispell's job market by the numbers — top industries, a 3.6% unemployment rate, major employers, and economic outlook.",
+        icon: '💼',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Kalispell, Montana',
+        metaTitle: 'Schools in Kalispell, Montana — K-12 & College Guide | Treasure State',
+        metaDescription: 'Guide to Kalispell schools: Kalispell Public Schools (4,200 students, 86% graduation rate), Flathead Valley Community College, and per-pupil spending.',
+        description: 'Guide to Kalispell schools from K-12 through Flathead Valley Community College, including enrollment, graduation rates, and spending.',
+        icon: '🎓',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Kalispell, Montana',
+        metaTitle: 'Best Hiking Near Kalispell, Montana — Trails & Routes | Treasure State',
+        metaDescription: '70 trailheads near Kalispell plus Glacier National Park trails. Lone Pine State Park, Jewel Basin, and Danny On Trail at Whitefish Mountain.',
+        description: 'The best hiking trails near Kalispell — from Lone Pine State Park to Glacier National Park, with distances and seasonal tips.',
+        icon: '🥾',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Kalispell, Montana',
+        metaTitle: 'Fishing Near Kalispell, Montana — Lakes, Rivers & Guide | Treasure State',
+        metaDescription: 'Fishing near Kalispell on Flathead Lake, Whitefish Lake, and the Flathead River. 11 access sites, 52 lakes, species guide, and seasonal tips.',
+        description: 'Fishing near Kalispell on Flathead Lake, Whitefish Lake, and the Flathead River — 52 lakes within 50 miles and 11 public access sites.',
+        icon: '🎣',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Kalispell, Montana',
+        metaTitle: 'Weekend in Kalispell, Montana — 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Kalispell: Glacier National Park, Flathead Lake, downtown exploring, skiing, and local breweries. A 3-day itinerary.',
+        description: 'How to spend a weekend in Kalispell — a day-by-day guide covering Glacier National Park, Flathead Lake, and local culture.',
+        icon: '📅',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Kalispell, Montana?',
+        answer: "Kalispell's median household income is $61,590 with a median home value of $538,312 (Zillow, January 2026). The affordability ratio of 8.7 means housing costs are high relative to local incomes. Median rent is $1,950 per month. Home values rank in the 87th percentile among Montana towns. Montana has no state sales tax, providing some offset on everyday expenses.",
+      },
+      {
+        question: 'How far is Kalispell from Glacier National Park?',
+        answer: "Kalispell is 25 miles from Glacier National Park's west entrance at West Glacier, about a 30-minute drive via US-2. The east side of the park at East Glacier is 53 miles away. Going-to-the-Sun Road, the park's iconic scenic drive, typically opens fully in late June or early July and closes in mid-October.",
+      },
+      {
+        question: 'What are winters like in Kalispell?',
+        answer: "Kalispell winters are cold but milder than higher-elevation Montana cities, thanks to its 2,959-foot elevation. January averages a high of 34\u00B0F and a low of 21\u00B0F. The Flathead Valley receives moderate snowfall. Whitefish Mountain Resort (19 miles) and Blacktail Mountain (11 miles) provide skiing, while the valley floor stays accessible for driving.",
+      },
+      {
+        question: 'Is Kalispell a good place for families?',
+        answer: "Kalispell offers solid schools through Kalispell Public Schools, serving 4,200 students with an 86% graduation rate and $10,900 per-pupil spending. Flathead Valley Community College provides local higher education. With 371 recreation sites within 50 miles, Glacier National Park nearby, and Flathead Lake for summer activities, families find abundant outdoor opportunities.",
+      },
+      {
+        question: 'What outdoor recreation is near Kalispell?',
+        answer: "Kalispell has 371 recreation sites within 50 miles, including 70 trailheads, 11 fishing access sites, 5 state parks, and 52 lakes. Glacier National Park is 25 miles away. Flathead Lake, the largest natural freshwater lake west of the Mississippi, begins 14 miles south. Whitefish Mountain Resort offers skiing in winter and mountain biking in summer.",
+      },
+      {
+        question: 'When is the best time to visit Kalispell?',
+        answer: "Summer (June\u2013August) is peak season with highs of 71\u201381\u00B0F and full access to Glacier National Park. Going-to-the-Sun Road typically opens fully by early July. Fall brings golden larch trees and fewer crowds. Winter visitors come for skiing at Whitefish Mountain Resort and Blacktail Mountain. Spring is cool and wet.",
+      },
+      {
+        question: 'What are the main industries in Kalispell?',
+        answer: "Education and healthcare is Kalispell's largest employment sector at 29.5%, anchored by Kalispell Regional Healthcare, the valley's largest employer. Retail (15.1%) and tourism and hospitality (11.3%) round out the top three. The unemployment rate is 3.6% with a job score of 9.1 out of 10.",
+      },
+      {
+        question: 'Is Kalispell a good place to retire?',
+        answer: "Kalispell is a popular retirement destination thanks to Glacier National Park access, Flathead Lake, quality healthcare at Kalispell Regional Medical Center, and a milder climate than higher-elevation Montana cities. Housing costs rank in the 87th percentile, which can strain fixed incomes. Montana has no state sales tax and relatively low property taxes.",
+      },
+      {
+        question: 'What is the housing market like in Kalispell?',
+        answer: "As of January 2026, Kalispell's median home value is $538,312 (Zillow) with 371 homes for sale. Inventory has increased 6% year-over-year. The median list price is $630,667. Median rent is $1,950 per month, ranking in the 92nd percentile among Montana towns. The vacancy rate across 11,650 total housing units is 4.7%.",
+      },
+      {
+        question: 'Can you fly into Kalispell?',
+        answer: "Yes, Glacier Park International Airport (FCA) serves the Flathead Valley with daily flights to Denver, Seattle, Salt Lake City, Minneapolis, and seasonal routes to other cities. The airport is about 8 miles northeast of downtown Kalispell. Kalispell is also accessible via US-93 and US-2.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

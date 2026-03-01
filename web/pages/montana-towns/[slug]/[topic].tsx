@@ -28,6 +28,14 @@ import BzmHiking from '../../../components/town/topics/bozeman/Hiking';
 import BzmFishing from '../../../components/town/topics/bozeman/Fishing';
 import BzmWeekendItinerary from '../../../components/town/topics/bozeman/WeekendItinerary';
 
+import KalCostOfLiving from '../../../components/town/topics/kalispell/CostOfLiving';
+import KalHousing from '../../../components/town/topics/kalispell/Housing';
+import KalJobs from '../../../components/town/topics/kalispell/Jobs';
+import KalSchools from '../../../components/town/topics/kalispell/Schools';
+import KalHiking from '../../../components/town/topics/kalispell/Hiking';
+import KalFishing from '../../../components/town/topics/kalispell/Fishing';
+import KalWeekendItinerary from '../../../components/town/topics/kalispell/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -85,6 +93,15 @@ export default function TopicPage(props: Props) {
       'hiking': BzmHiking,
       'fishing': BzmFishing,
       'weekend-itinerary': BzmWeekendItinerary,
+    },
+    kalispell: {
+      'cost-of-living': KalCostOfLiving,
+      'housing': KalHousing,
+      'jobs': KalJobs,
+      'schools': KalSchools,
+      'hiking': KalHiking,
+      'fishing': KalFishing,
+      'weekend-itinerary': KalWeekendItinerary,
     },
   };
 
