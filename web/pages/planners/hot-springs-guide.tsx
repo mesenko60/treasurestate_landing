@@ -1,84 +1,275 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import { GetStaticProps } from 'next';
+import fs from 'fs';
+import path from 'path';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
-import AffiliateBanner from '../../components/AffiliateBanner';
-import StoreBanner from '../../components/StoreBanner';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
-import TableOfContents from '../../components/TableOfContents';
 
-export default function HotSpringsGuide() {
+type HotSpring = {
+  name: string;
+  slug: string;
+  type: 'resort' | 'community' | 'primitive';
+  lat: number;
+  lng: number;
+  nearestTown: string;
+  nearestTownName: string;
+  location: string;
+  tempF: string;
+  hours: string;
+  cost: string;
+  access: string;
+  hikeMiles: number | null;
+  website: string | null;
+  description: string;
+  yearRound: boolean;
+  clothingOptional: boolean;
+  state?: string;
+};
+
+type Props = {
+  resorts: HotSpring[];
+  community: HotSpring[];
+  primitive: HotSpring[];
+  nearBorder: HotSpring[];
+  totalCount: number;
+};
+
+const TYPE_LABELS: Record<string, string> = {
+  resort: 'Resort',
+  community: 'Community',
+  primitive: 'Primitive / Backcountry',
+};
+
+const TYPE_COLORS: Record<string, string> = {
+  resort: '#3b6978',
+  community: '#d8973c',
+  primitive: '#5a8a5c',
+};
+
+function SpringCard({ s }: { s: HotSpring }) {
+  const color = TYPE_COLORS[s.type] || '#3b6978';
+  return (
+    <div id={s.slug} style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 10px rgba(0,0,0,0.06)', overflow: 'hidden', marginBottom: '1rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.25rem 0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <h3 style={{ margin: 0, fontSize: '1.15rem', color: '#204051' }}>{s.name}</h3>
+        <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.25rem 0.6rem', borderRadius: '4px', background: color, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+          {TYPE_LABELS[s.type]}
+        </span>
+      </div>
+      <div style={{ padding: '0.5rem 1.25rem 1.25rem' }}>
+        <p style={{ fontSize: '0.92rem', color: '#555', lineHeight: 1.6, margin: '0 0 0.75rem' }}>{s.description}</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '0.5rem 1rem', fontSize: '0.85rem', color: '#555' }}>
+          <div><strong>Location:</strong> {s.location}{s.state === 'ID' ? ' (Idaho)' : ''}</div>
+          <div><strong>Temperature:</strong> {s.tempF}°F</div>
+          <div><strong>Hours:</strong> {s.hours}</div>
+          <div><strong>Cost:</strong> {s.cost}</div>
+          <div><strong>Access:</strong> {s.access}{s.hikeMiles ? ` (${s.hikeMiles} mi)` : ''}</div>
+          <div><strong>Season:</strong> {s.yearRound ? 'Year-round' : 'Seasonal'}</div>
+        </div>
+        <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
+          <Link href={`/montana-towns/${s.nearestTown}`} style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 600 }}>
+            {s.nearestTownName} Town Profile →
+          </Link>
+          {s.website && (
+            <a href={s.website} target="_blank" rel="noopener noreferrer" style={{ color: '#999', textDecoration: 'none' }}>
+              Official Website →
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function HotSpringsGuide({ resorts, community, primitive, nearBorder, totalCount }: Props) {
+  const url = 'https://treasurestate.com/planners/hot-springs-guide/';
+  const title = `Montana Hot Springs Directory: All ${totalCount} Springs You Can Visit`;
+  const desc = `Complete guide to every publicly accessible hot spring in and near Montana. ${resorts.length} resorts, ${community.length} community pools, and ${primitive.length + nearBorder.length} primitive backcountry soaks with temperatures, hours, costs, and access details.`;
+
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Travel Guides', url: '/planners' },
+    { name: 'Hot Springs Directory', url },
+  ];
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: desc,
+    url,
+    publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+  };
+
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Montana Hot Springs',
+    numberOfItems: totalCount,
+    itemListElement: [...resorts, ...community, ...primitive, ...nearBorder].map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'TouristAttraction',
+        name: s.name,
+        description: s.description,
+        geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lng },
+        isAccessibleForFree: s.cost === 'Free',
+      },
+    })),
+  };
+
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://treasurestate.com/planners/hot-springs-guide/" />
-        <title>Montana Hot Springs Guide - Treasure State</title>
-        <meta name="description" content="A comprehensive guide to the best natural and developed hot springs across Montana. Relax and soak in the Treasure State." />
-        <meta property="og:title" content="Montana Hot Springs Guide - Treasure State" />
+        <link rel="canonical" href={url} />
+        <title>{title} | Treasure State</title>
+        <meta name="description" content={desc} />
+        <meta name="keywords" content="Montana hot springs, Montana soaking, hot springs near me, backcountry hot springs Montana, primitive hot springs Montana, Montana hot springs resorts, hot springs Idaho Montana border" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={desc} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={url} />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <meta property="og:url" content="https://treasurestate.com/planners/hot-springs-guide/" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={desc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       </Head>
       <Header />
-      <Hero
-        title="Montana Hot Springs Guide"
-        subtitle="Soak in the Treasure State's Natural Geothermal Waters"
-        image="/images/hero-image.jpg"
-        alt="Relaxing in a natural hot spring pool"
-        small
-      />
-      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
-        <style dangerouslySetInnerHTML={{__html: `
-          .toc-desktop {
-            display: none;
-          }
-          @media (min-width: 1024px) {
-            .toc-desktop {
-              display: block;
-              width: 300px;
-              flex-shrink: 0;
-            }
-          }
-        `}} />
-        <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
+      <Hero title="Montana Hot Springs Directory" subtitle={`${totalCount} springs: resorts, community pools, and backcountry soaks`} image="/images/hero-image.jpg" alt="Natural hot spring in Montana" small />
+      <Breadcrumbs items={breadcrumbs} />
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        .hs-page { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .hs-toc { background: #fff; border-radius: 10px; padding: 1.25rem 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+        .hs-toc h2 { font-size: 1rem; margin: 0 0 0.75rem; color: #204051; }
+        .hs-toc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.35rem 1rem; }
+        .hs-toc-grid a { font-size: 0.85rem; color: #3b6978; text-decoration: none; }
+        .hs-toc-grid a:hover { text-decoration: underline; }
+        .hs-section-title { font-family: var(--font-primary); font-size: 1.4rem; color: #204051; margin: 2rem 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e0e0; }
+        .hs-section-count { font-size: 0.85rem; color: #999; font-weight: 400; }
+        .hs-safety { background: #fff8e1; border-left: 4px solid #d8973c; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+        .hs-safety h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #8a6d3b; }
+        .hs-safety ul { margin: 0; padding-left: 1.25rem; }
+        .hs-safety li { font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 0.25rem; }
+        .hs-cta { text-align: center; margin-top: 2rem; }
+        .hs-cta a { display: inline-block; padding: 0.75rem 1.75rem; border-radius: 8px; font-weight: 700; font-family: var(--font-primary); font-size: 0.95rem; text-decoration: none; margin: 0 0.5rem 0.5rem; }
+        .hs-cta-primary { background: #3b6978; color: #fff; }
+        .hs-cta-secondary { background: #f5f5f5; color: #204051; border: 1px solid #ddd; }
+        @media (max-width: 600px) {
+          .hs-toc-grid { grid-template-columns: 1fr; }
+        }
+      `}} />
+
+      <main className="hs-page">
+
+        {/* Jump-to directory */}
+        <div className="hs-toc">
+          <h2>Jump to a Spring</h2>
+          <div className="hs-toc-grid">
+            {[...resorts, ...community, ...primitive, ...nearBorder].map(s => (
+              <a key={s.slug} href={`#${s.slug}`}>{s.name}</a>
+            ))}
+          </div>
         </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <section className="content-section">
-            <h2>The Healing Waters of Big Sky Country</h2>
-            <p>Montana's rich geothermal activity, a product of its mountainous terrain and volcanic history, has gifted the state with dozens of stunning natural hot springs. Ranging from primitive backcountry pools only accessible by foot, to luxurious historic resorts, these thermal waters have been attracting travelers seeking relaxation and rejuvenation for over a century.</p>
 
-            <h3>Chico Hot Springs (Pray, MT)</h3>
-            <p>Nestled in the breathtaking Paradise Valley near Livingston, Chico Hot Springs Resort & Day Spa has been a beloved destination since 1900. This rustic yet elegant resort features two large, open-air mineral pools naturally heated by geothermal waters. Beyond the soaking, Chico is renowned for its historic fine dining room, horseback riding, dog sledding, and proximity to Yellowstone National Park.</p>
+        <p style={{ fontSize: '1rem', lineHeight: 1.7, color: '#444', marginBottom: '1.5rem' }}>
+          Montana sits atop one of the most geothermally active regions in North America. With {totalCount} publicly
+          accessible hot springs ranging from full-service resorts to primitive backcountry pools reached only by trail,
+          there is a soak for every type of traveler. This directory covers every spring you can visit, including three
+          popular springs just across the Idaho border that Montana locals consider part of their backyard.
+        </p>
 
-            <h3>Quinn's Hot Springs (Paradise, MT)</h3>
-            <p>Located along the Clark Fork River in Western Montana, Quinn's Hot Springs Resort offers a spectacular terraced canyon setting. The resort boasts six distinct pools of varying temperatures, ranging from a brisk cold plunge to a steamy 106°F mineral bath. Known for its family-friendly atmosphere and the historic Harwood House restaurant, Quinn's is an ideal getaway year-round.</p>
+        {/* ─── RESORTS ─── */}
+        <h2 className="hs-section-title">
+          ♨️ Hot Spring Resorts <span className="hs-section-count">({resorts.length})</span>
+        </h2>
+        <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
+          Developed facilities with pools, lodging, dining, and amenities. Admission fees apply.
+        </p>
+        {resorts.map(s => <SpringCard key={s.slug} s={s} />)}
 
-            <h3>Norris Hot Springs (Norris, MT)</h3>
-            <p>Often referred to as the "Water of the Gods," Norris Hot Springs is an eclectic, artsy destination just west of Bozeman. The pool itself is framed by rustic wood and features a unique geodesic dome structure over a performance stage. Visitors can soak in the 120°F water (cooled by natural artesian springs) while enjoying live music, organic food sourced from their on-site garden, and local craft beer.</p>
+        {/* ─── COMMUNITY ─── */}
+        <h2 className="hs-section-title">
+          🏘️ Community Hot Springs <span className="hs-section-count">({community.length})</span>
+        </h2>
+        <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
+          Locally operated pools with basic facilities, changing rooms, and affordable admission.
+        </p>
+        {community.map(s => <SpringCard key={s.slug} s={s} />)}
 
-            <h3>Symes Hot Springs (Hot Springs, MT)</h3>
-            <p>Tucked away in the quirky town of Hot Springs, Montana, the Symes Hot Springs Hotel & Mineral Baths offers a true step back in time. This historic, 1928 mission-style hotel boasts one of the few "hot artesian" flows in the world, renowned for its high mineral content and purported healing properties. The atmosphere is laid-back, vintage, and fiercely independent.</p>
+        {/* ─── PRIMITIVE ─── */}
+        <h2 className="hs-section-title">
+          🏔️ Primitive &amp; Backcountry Springs <span className="hs-section-count">({primitive.length})</span>
+        </h2>
+        <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
+          Undeveloped natural pools: free, no facilities, and often requiring a hike to reach. Bring bear spray and pack out all trash.
+        </p>
+        {primitive.map(s => <SpringCard key={s.slug} s={s} />)}
 
-            <h3>Sleeping Child Hot Springs (Bitterroot Valley)</h3>
-            <p>For those seeking luxury and absolute privacy, Sleeping Child Hot Springs is a massive 25,000-square-foot resort property located deep in the Bitterroot Mountains. Available primarily as an exclusive, private rental, it features a massive multi-level pool, incredible architecture, and absolute seclusion.</p>
+        {/* ─── NEAR-BORDER ─── */}
+        <h2 className="hs-section-title">
+          🗺️ Near-Border Springs (Idaho) <span className="hs-section-count">({nearBorder.length})</span>
+        </h2>
+        <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
+          These popular backcountry springs are just across the Idaho border, easily accessible from western Montana towns via Highway 12 or Highway 93.
+        </p>
+        {nearBorder.map(s => <SpringCard key={s.slug} s={s} />)}
 
-            <h3>Undeveloped & Natural Soaks</h3>
-            <p>If resorts aren't your style, Montana also offers incredible primitive hot springs for the adventurous hiker. <strong>Boiling River</strong> (in Yellowstone, though access varies), <strong>Jerry Johnson Hot Springs</strong> (just over the border in Idaho off Highway 12), and <strong>Lolo Hot Springs</strong> backcountry pools provide rugged, natural soaking experiences surrounded completely by wilderness.</p>
+        {/* ─── SAFETY ─── */}
+        <div className="hs-safety">
+          <h3>Hot Springs Safety &amp; Etiquette</h3>
+          <ul>
+            <li><strong>Hydrate:</strong> Geothermal water and high altitudes cause rapid dehydration. Bring plenty of drinking water.</li>
+            <li><strong>Bear country:</strong> Backcountry springs are in bear habitat. Carry bear spray and make noise on trails.</li>
+            <li><strong>Leave no trace:</strong> Pack out all trash. Never bring glass containers to primitive springs.</li>
+            <li><strong>No soap or shampoo:</strong> Chemicals contaminate natural pools and harm aquatic life.</li>
+            <li><strong>Check conditions:</strong> Springs close for fires, floods, and high water. Verify access before traveling.</li>
+            <li><strong>Test temperature:</strong> Source water can exceed 140°F. Always test before entering and mix with cool water.</li>
+            <li><strong>Respect closures:</strong> Nighttime closures at some primitive springs are enforced with citations.</li>
+          </ul>
+        </div>
 
-            <h3>Hot Springs Etiquette</h3>
-            <ul>
-              <li><strong>Hydrate:</strong> Geothermal water and high altitudes can quickly cause dehydration. Bring plenty of fresh drinking water.</li>
-              <li><strong>Respect the Peace:</strong> Hot springs are generally places of quiet relaxation. Keep noise to a minimum, especially in primitive pools.</li>
-              <li><strong>Leave No Trace:</strong> Pack out all trash, especially if visiting undeveloped backcountry springs.</li>
-              <li><strong>Check Restrictions:</strong> Some hot springs (like Boiling River) close during spring runoff for safety. Always verify accessibility before you travel.</li>
-            </ul>
-          </section>
-          <StoreBanner />
-          <AffiliateBanner />
+        {/* ─── PHOTOGRAPHY CREDIT ─── */}
+        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
+          Hours, prices, and seasonal availability may change. Contact individual springs to confirm before visiting.
+          All photography original and locally captured.
+        </p>
+
+        {/* ─── CTAs ─── */}
+        <div className="hs-cta">
+          <Link href="/best-of/towns-near-hot-springs" className="hs-cta-primary">Top 10 Towns Near Hot Springs</Link>
+          <Link href="/Montana-towns" className="hs-cta-secondary">Browse All 134 Towns</Link>
         </div>
       </main>
+
       <Footer />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const dataPath = path.join(process.cwd(), 'data', 'hot-springs.json');
+  const all: HotSpring[] = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+
+  const resorts = all.filter(s => s.type === 'resort' && !s.state);
+  const community = all.filter(s => s.type === 'community' && !s.state);
+  const primitive = all.filter(s => s.type === 'primitive' && !s.state);
+  const nearBorder = all.filter(s => s.state === 'ID');
+
+  return {
+    props: {
+      resorts,
+      community,
+      primitive,
+      nearBorder,
+      totalCount: all.length,
+    },
+  };
+};

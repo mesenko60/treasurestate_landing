@@ -136,9 +136,17 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
       <Breadcrumbs items={breadcrumbs} />
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '1.5rem 1rem 3rem' }}>
 
-        <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '2rem' }}>
+        <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '1rem' }}>
           {page.intro}
         </p>
+
+        {page.slug === 'towns-near-hot-springs' && (
+          <p style={{ fontSize: '0.95rem', marginBottom: '2rem' }}>
+            <Link href="/planners/hot-springs-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+              Browse all 31 hot springs in our complete directory →
+            </Link>
+          </p>
+        )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           {page.towns.map(town => (

@@ -130,7 +130,7 @@ const CURATED_SITES = [
   { name: 'Stillwater River', type: 'River', lat: 45.6500, lng: -109.5500 },
   { name: 'Boulder River', type: 'River', lat: 45.7000, lng: -110.0000 },
 
-  // === HOT SPRINGS ===
+  // === HOT SPRINGS (Developed Resorts) ===
   { name: 'Chico Hot Springs', type: 'Hot Spring', lat: 45.3550, lng: -110.6210 },
   { name: 'Yellowstone Hot Springs', type: 'Hot Spring', lat: 45.1130, lng: -110.7850 },
   { name: 'Bozeman Hot Springs', type: 'Hot Spring', lat: 45.6330, lng: -111.1110 },
@@ -146,9 +146,23 @@ const CURATED_SITES = [
   { name: 'Boulder Hot Springs', type: 'Hot Spring', lat: 46.2100, lng: -112.1200 },
   { name: 'Alameda Hot Springs', type: 'Hot Spring', lat: 47.6100, lng: -114.7500 },
   { name: 'Wild Horse Hot Springs', type: 'Hot Spring', lat: 47.6350, lng: -114.7900 },
-  { name: 'Spa Hot Springs', type: 'Hot Spring', lat: 46.5500, lng: -110.9000 },
+  { name: 'Spa Hot Springs (White Sulphur Springs)', type: 'Hot Spring', lat: 46.5500, lng: -110.9000 },
   { name: 'Alhambra Hot Springs', type: 'Hot Spring', lat: 46.4200, lng: -112.0500 },
   { name: 'Potosi Hot Springs', type: 'Hot Spring', lat: 45.7700, lng: -112.0100 },
+  { name: 'Lost Trail Hot Springs', type: 'Hot Spring', lat: 45.7519, lng: -113.9434 },
+  { name: 'Sleeping Child Hot Springs', type: 'Hot Spring', lat: 46.1700, lng: -114.0300 },
+  { name: 'K Bar L Ranch / Medicine Springs', type: 'Hot Spring', lat: 47.5400, lng: -112.7800 },
+
+  // === HOT SPRINGS (Primitive / Backcountry) ===
+  { name: 'Nimrod Hot Springs', type: 'Hot Spring', lat: 46.6700, lng: -113.4600 },
+  { name: 'Boiling River (Yellowstone)', type: 'Hot Spring', lat: 45.1290, lng: -110.6960 },
+  { name: 'Gigantic Warm Spring', type: 'Hot Spring', lat: 47.1800, lng: -109.4200 },
+  { name: 'The Landusky Plunge', type: 'Hot Spring', lat: 47.8430, lng: -108.5980 },
+
+  // === HOT SPRINGS (Near-border, Idaho, accessible from MT) ===
+  { name: 'Jerry Johnson Hot Springs (ID)', type: 'Hot Spring', lat: 46.4150, lng: -115.1600 },
+  { name: 'Weir Creek Hot Springs (ID)', type: 'Hot Spring', lat: 46.5100, lng: -115.0800 },
+  { name: 'Goldbug Hot Springs (ID)', type: 'Hot Spring', lat: 44.9300, lng: -113.7100 },
 
   // === SKI AREAS ===
   { name: 'Whitefish Mountain Resort', type: 'Ski Area', lat: 48.4817, lng: -114.3497 },
@@ -270,7 +284,7 @@ const RADIUS_BY_TYPE = {
   'Scenic Drive': 75,
   'Ski Area': 75,
   'State Park': 60,
-  'Hot Spring': 60,
+  'Hot Spring': 75,
   'Wildlife Refuge': 60,
   'Lake': 60,
   'River': 60,

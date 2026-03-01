@@ -164,6 +164,13 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         .hp-travel-link--ghost { background: rgba(255,255,255,0.15); color: var(--white); border: 1px solid rgba(255,255,255,0.3); }
         .hp-travel-link--ghost:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
 
+        /* Adventure grid */
+        .hp-adventure-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 0.25rem; }
+        .hp-adv-card { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; padding: 1rem 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; text-decoration: none; color: var(--white); transition: background 0.2s, transform 0.2s; }
+        .hp-adv-card:hover { background: rgba(255,255,255,0.2); transform: translateY(-3px); }
+        .hp-adv-icon { font-size: 1.75rem; }
+        .hp-adv-label { font-family: var(--font-primary); font-size: 0.8rem; font-weight: 600; text-align: center; line-height: 1.3; }
+
         /* Featured towns */
         .hp-towns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
         .hp-town-card { background: var(--white); border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); overflow: hidden; text-decoration: none; color: var(--dark); transition: transform 0.2s, box-shadow 0.2s; }
@@ -214,6 +221,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           .hp-towns { grid-template-columns: repeat(2, 1fr); }
           .hp-travel-cta { flex-direction: column; text-align: center; gap: 1.5rem; }
           .hp-travel-links { justify-content: center; }
+          .hp-adventure-grid { grid-template-columns: repeat(4, 1fr); }
           .hp-shop { flex-direction: column; text-align: center; }
         }
         @media (max-width: 600px) {
@@ -228,6 +236,9 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           .hp-relo-cta { padding: 2rem 1.25rem; border-radius: 10px; }
           .hp-relo-cta h2 { font-size: 1.3rem; }
           .hp-travel-cta { padding: 2rem 1.25rem; border-radius: 10px; }
+          .hp-adventure-grid { grid-template-columns: repeat(2, 1fr); }
+          .hp-adv-icon { font-size: 1.5rem; }
+          .hp-adv-card { padding: 0.75rem 0.4rem; }
           .hp-town-stats { gap: 0.75rem; }
           .hp-cred-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -298,14 +309,44 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <div className="hp-travel-cta-text">
               <h2>Explore Montana&rsquo;s Best Adventures</h2>
               <p>
-                From soaking in natural hot springs to driving Montana&rsquo;s legendary backroads. Discover what makes Big Sky Country unforgettable.
+                World-class skiing, legendary fly fishing, natural hot springs, stunning national parks, scenic backroads, and wide-open wilderness. Discover what makes Big Sky Country unforgettable.
               </p>
-              <div className="hp-travel-links">
-                <Link href="/planners" className="hp-travel-link hp-travel-link--primary">Travel Guides</Link>
-                <Link href="/best-of/best-ski-towns" className="hp-travel-link hp-travel-link--ghost">Ski Towns</Link>
-                <Link href="/best-of/best-fishing-towns" className="hp-travel-link hp-travel-link--ghost">Fly Fishing</Link>
-                <Link href="/best-of/towns-near-hot-springs" className="hp-travel-link hp-travel-link--ghost">Hot Springs</Link>
-                <Link href="/best-of/best-towns-near-glacier-yellowstone" className="hp-travel-link hp-travel-link--ghost">Glacier &amp; Yellowstone</Link>
+              <div className="hp-adventure-grid">
+                <Link href="/best-of/best-ski-towns" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">⛷️</span>
+                  <span className="hp-adv-label">Skiing &amp; Snowboarding</span>
+                </Link>
+                <Link href="/best-of/best-fishing-towns" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🎣</span>
+                  <span className="hp-adv-label">Fly Fishing</span>
+                </Link>
+                <Link href="/planners/hot-springs-guide" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">♨️</span>
+                  <span className="hp-adv-label">Hot Springs</span>
+                </Link>
+                <Link href="/best-of/best-towns-near-glacier-yellowstone" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🏞️</span>
+                  <span className="hp-adv-label">Glacier &amp; Yellowstone</span>
+                </Link>
+                <Link href="/best-of/best-outdoor-recreation" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🥾</span>
+                  <span className="hp-adv-label">Hiking &amp; Trails</span>
+                </Link>
+                <Link href="/planners/montana-backroads" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🛣️</span>
+                  <span className="hp-adv-label">Scenic Backroads</span>
+                </Link>
+                <Link href="/best-of/best-climate" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">☀️</span>
+                  <span className="hp-adv-label">Best Climate Towns</span>
+                </Link>
+                <Link href="/best-of/best-small-towns" className="hp-adv-card">
+                  <span className="hp-adv-icon" aria-hidden="true">🏡</span>
+                  <span className="hp-adv-label">Charming Small Towns</span>
+                </Link>
+              </div>
+              <div style={{ marginTop: '1.25rem', textAlign: 'center' }}>
+                <Link href="/planners" className="hp-travel-link hp-travel-link--primary">All Travel Guides</Link>
               </div>
             </div>
           </div>
