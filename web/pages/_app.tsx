@@ -27,7 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-adsense-account" content="ca-pub-8089329941656548" />
         <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preload" href="/fonts/opensans-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="stylesheet" href="/css/modern-style.css" />
@@ -51,12 +50,6 @@ footer p{margin:0.3rem 0}
 @media(max-width:768px){.hero-text h1{font-size:2.5rem}.hero-text p{font-size:1.2rem}.content-section h2{font-size:1.8rem}main{margin:1rem auto}}
 @media(max-width:480px){.hero-text h1{font-size:2rem}.hero-text p{font-size:1rem}.content-section{padding:1.5rem}.content-section h2{font-size:1.5rem}}
         ` }} />
-        {/* AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8089329941656548"
-          crossOrigin="anonymous"
-        />
       </Head>
 
       {/* Global Site Tag (gtag.js) - Google Analytics */}
