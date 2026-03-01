@@ -30,8 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="google-adsense-account" content="ca-pub-8089329941656548" />
         <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preload" href="/fonts/opensans-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
-        <link rel="preload" href="/css/modern-style.css" as="style" />
-        <link rel="stylesheet" href="/css/modern-style.css" media="print" onLoad={(e) => { (e.target as HTMLLinkElement).media = 'all'; }} />
+        <link rel="stylesheet" href="/css/modern-style.css" />
         <style dangerouslySetInnerHTML={{ __html: `
 body{font-family:'Arial',sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333;line-height:1.6;font-size:16px;overflow-x:hidden}
 .hero-section{position:relative;height:70vh;min-height:400px;color:#fff;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden}
