@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
@@ -79,7 +78,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
     <>
       <Head>
         <link rel="canonical" href="https://treasurestate.com/" />
-        <link rel="preload" as="image" href="/images/hero-image.jpg" />
+        <link rel="preload" as="image" href="/images/hero-image-480.webp" type="image/webp" imageSrcSet="/images/hero-image-480.webp 480w, /images/hero-image-800.webp 800w, /images/hero-image.webp 1500w" imageSizes="100vw" />
         <title>{siteTitle}</title>
         <meta name="description" content={siteDesc} />
         <meta name="keywords" content="Montana towns, move to Montana, visit Montana, Montana travel, Montana cost of living, Montana recreation, Montana skiing, Montana fishing, Montana hot springs" />
@@ -98,14 +97,21 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
 
       {/* ─── HERO ─── */}
       <header className="hero-section" style={{ position: 'relative' }}>
-        <Image
-          src="/images/hero-image.jpg"
-          alt="Montana mountain landscape with blue sky"
-          className="hero-image"
-          fill
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
-          priority
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/hero-image-480.webp 480w, /images/hero-image-800.webp 800w, /images/hero-image.webp 1500w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/hero-image.jpg"
+            alt="Montana mountain landscape with blue sky"
+            className="hero-image"
+            style={{ position: 'absolute', height: '100%', width: '100%', inset: '0', objectFit: 'cover', objectPosition: 'center' }}
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
         <div className="hero-text">
           <h1>Find Yourself in Montana<sup style={{ fontSize: '0.28em', verticalAlign: 'super', fontWeight: 400 }}>&trade;</sup></h1>
           <p style={{ maxWidth: '660px', margin: '0.5rem auto 0', fontSize: '1.15rem' }}>
@@ -382,13 +388,19 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             {featuredTowns.map(t => (
               <Link key={t.slug} href={`/montana-towns/${t.slug}`} className="hp-town-card">
                 <div className="hp-town-img">
-                  <Image
-                    src={t.hasImage ? `/images/towns/${t.slug}.jpg` : '/images/towns/default-town.jpg'}
-                    alt={`${t.name}, Montana`}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-                  />
+                  <picture>
+                    {t.hasImage ? (
+                      <source type="image/webp" srcSet={`/images/towns/${t.slug}-480.webp 480w, /images/towns/${t.slug}-800.webp 800w, /images/towns/${t.slug}.webp 1500w`} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+                    ) : (
+                      <source type="image/webp" srcSet="/images/towns/default-town-480.webp 480w, /images/towns/default-town-800.webp 800w, /images/towns/default-town.webp 1500w" sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+                    )}
+                    <img
+                      src={t.hasImage ? `/images/towns/${t.slug}.jpg` : '/images/towns/default-town.jpg'}
+                      alt={`${t.name}, Montana`}
+                      loading="lazy"
+                      style={{ position: 'absolute', height: '100%', width: '100%', inset: '0', objectFit: 'cover' }}
+                    />
+                  </picture>
                 </div>
                 <div className="hp-town-body">
                   <div className="hp-town-name">{t.name}</div>
