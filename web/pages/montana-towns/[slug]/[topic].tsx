@@ -20,12 +20,21 @@ import Hiking from '../../../components/town/topics/Hiking';
 import Fishing from '../../../components/town/topics/Fishing';
 import WeekendItinerary from '../../../components/town/topics/WeekendItinerary';
 
+import BzmCostOfLiving from '../../../components/town/topics/bozeman/CostOfLiving';
+import BzmHousing from '../../../components/town/topics/bozeman/Housing';
+import BzmJobs from '../../../components/town/topics/bozeman/Jobs';
+import BzmSchools from '../../../components/town/topics/bozeman/Schools';
+import BzmHiking from '../../../components/town/topics/bozeman/Hiking';
+import BzmFishing from '../../../components/town/topics/bozeman/Fishing';
+import BzmWeekendItinerary from '../../../components/town/topics/bozeman/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
   slug: string;
   topic: string;
   townName: string;
+  heroImage: string;
   ogImage: string;
   housing: any | null;
   economy: any | null;
@@ -58,30 +67,40 @@ export default function TopicPage(props: Props) {
     { name: guide.title, url: `https://treasurestate.com/montana-towns/${slug}/${topic}/` },
   ];
 
-  let content: React.ReactNode = null;
-  switch (topic) {
-    case 'cost-of-living':
-      content = <CostOfLiving townName={townName} slug={slug} housing={props.housing} economy={props.economy} />;
-      break;
-    case 'housing':
-      content = <Housing townName={townName} slug={slug} housing={props.housing} />;
-      break;
-    case 'jobs':
-      content = <Jobs townName={townName} slug={slug} economy={props.economy} population={props.population} />;
-      break;
-    case 'schools':
-      content = <Schools townName={townName} slug={slug} schoolDistrict={props.schoolDistrict} schoolEnrollment={props.schoolEnrollment} schoolWebsite={props.schoolWebsite} graduationRate={props.graduationRate} perPupilSpending={props.perPupilSpending} population={props.population} />;
-      break;
-    case 'hiking':
-      content = <Hiking townName={townName} slug={slug} trails={props.trails} wilderness={props.wilderness} stateParks={props.stateParks} />;
-      break;
-    case 'fishing':
-      content = <Fishing townName={townName} slug={slug} fishingAccess={props.fishingAccess} rivers={props.rivers} lakes={props.lakes} />;
-      break;
-    case 'weekend-itinerary':
-      content = <WeekendItinerary townName={townName} slug={slug} climate={props.climate} highlights={props.highlights} />;
-      break;
-  }
+  const topicComponents: Record<string, Record<string, React.ComponentType<any>>> = {
+    missoula: {
+      'cost-of-living': CostOfLiving,
+      'housing': Housing,
+      'jobs': Jobs,
+      'schools': Schools,
+      'hiking': Hiking,
+      'fishing': Fishing,
+      'weekend-itinerary': WeekendItinerary,
+    },
+    bozeman: {
+      'cost-of-living': BzmCostOfLiving,
+      'housing': BzmHousing,
+      'jobs': BzmJobs,
+      'schools': BzmSchools,
+      'hiking': BzmHiking,
+      'fishing': BzmFishing,
+      'weekend-itinerary': BzmWeekendItinerary,
+    },
+  };
+
+  const TopicComponent = topicComponents[slug]?.[topic] ?? topicComponents.missoula[topic];
+
+  const topicProps: Record<string, Record<string, unknown>> = {
+    'cost-of-living': { townName, slug, housing: props.housing, economy: props.economy },
+    'housing': { townName, slug, housing: props.housing },
+    'jobs': { townName, slug, economy: props.economy, population: props.population },
+    'schools': { townName, slug, schoolDistrict: props.schoolDistrict, schoolEnrollment: props.schoolEnrollment, schoolWebsite: props.schoolWebsite, graduationRate: props.graduationRate, perPupilSpending: props.perPupilSpending, population: props.population },
+    'hiking': { townName, slug, trails: props.trails, wilderness: props.wilderness, stateParks: props.stateParks },
+    'fishing': { townName, slug, fishingAccess: props.fishingAccess, rivers: props.rivers, lakes: props.lakes },
+    'weekend-itinerary': { townName, slug, climate: props.climate, highlights: props.highlights },
+  };
+
+  const content = TopicComponent ? <TopicComponent {...(topicProps[topic] || {})} /> : null;
 
   return (
     <>
@@ -111,7 +130,7 @@ export default function TopicPage(props: Props) {
 
       <Hero
         title={guide.h1}
-        image={`/images/towns/${slug}.jpg`}
+        image={props.heroImage}
         alt={`${townName}, Montana`}
         small
       />
@@ -209,6 +228,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       slug,
       topic,
       townName,
+      heroImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
+        ? `/images/towns/${slug}.jpg`
+        : '/images/towns/default-town.jpg',
       ogImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
         ? `https://treasurestate.com/images/towns/${slug}.jpg`
         : 'https://treasurestate.com/images/hero-image.jpg',

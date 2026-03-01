@@ -105,10 +105,11 @@ type Props = {
     nearestHospitalDist: number | null;
   } | null;
   crossLinks: { label: string; href: string }[];
+  heroImage: string;
   ogImage: string;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, ogImage }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, heroImage, ogImage }: Props) {
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -158,7 +159,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
       <Hero
         title={townName}
         subtitle={nickname}
-        image={`/images/towns/${slug}.jpg`}
+        image={heroImage}
         alt={`${townName} - Scenic View`}
         small
       />
@@ -482,6 +483,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         nearestHospitalDist: rawHealthcare.nearestHospitalDist ?? null,
       } : null,
       crossLinks,
+      heroImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
+        ? `/images/towns/${slug}.jpg`
+        : '/images/towns/default-town.jpg',
       ogImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
         ? `https://treasurestate.com/images/towns/${slug}.jpg`
         : 'https://treasurestate.com/images/hero-image.jpg',
