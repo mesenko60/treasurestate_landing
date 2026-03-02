@@ -196,6 +196,15 @@ const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
     'fishing': dynamic(() => import('../../../components/town/topics/deer-lodge/Fishing')),
     'weekend-itinerary': dynamic(() => import('../../../components/town/topics/deer-lodge/WeekendItinerary')),
   },
+  'choteau': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/choteau/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/choteau/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/choteau/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/choteau/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/choteau/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/choteau/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/choteau/WeekendItinerary')),
+  },
   'three-forks': {
     'cost-of-living': dynamic(() => import('../../../components/town/topics/three-forks/CostOfLiving')),
     'housing': dynamic(() => import('../../../components/town/topics/three-forks/Housing')),

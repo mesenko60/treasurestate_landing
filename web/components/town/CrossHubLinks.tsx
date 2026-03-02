@@ -23,6 +23,7 @@ const CITY_NAMES: Record<string, string> = {
   bigfork: 'Bigfork',
   'deer-lodge': 'Deer Lodge',
   'three-forks': 'Three Forks',
+  'choteau': 'Choteau',
 };
 
 type Props = {

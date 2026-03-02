@@ -2221,6 +2221,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'choteau': {
+    hubIntro: `Choteau is the county seat of Teton County, population 1,721, sitting at 3,816 feet elevation where the Rocky Mountain Front rises dramatically from the Great Plains. Named for French fur merchant Pierre Chouteau Jr., the town was established as a trading post in 1873, platted in 1883, and incorporated in 1913. It sits at the convergence of U.S. Route 89 and Highway 287, approximately 60 miles northwest of Great Falls and strategically positioned between Glacier and Yellowstone National Parks.\n\nChoteau is internationally recognized for two remarkable natural phenomena. Egg Mountain, discovered by paleontologist Jack Horner in the 1970s, is one of the world\u2019s most important dinosaur nesting sites and revolutionized our understanding of dinosaur behavior. The Maiasaura fossils found here became the Montana state fossil. Ten miles south, Freezout Lake Wildlife Management Area hosts one of the continent\u2019s most spectacular waterfowl migrations, with hundreds of thousands of snow geese and tundra swans stopping during spring and fall, and 230 documented bird species.\n\nTo the west, the Bob Marshall Wilderness and Lewis and Clark National Forest offer pristine backcountry. Teton Pass Ski Area is 16 miles west. Within 50 miles there are 105 recreation sites including 29 lakes, 17 museums, 11 campgrounds, 9 wildlife refuges, 5 trailheads, 5 wilderness areas, and 3 state parks. David Letterman owns a 2,700-acre ranch nearby and married at the Teton County Courthouse in 2009. Pulitzer Prize\u2013winning novelist A.B. Guthrie Jr. called this region home. Below you\u2019ll find detailed guides covering cost of living, schools, hiking, fishing, and more.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Choteau, Montana',
+        metaTitle: 'Cost of Living in Choteau, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Choteau? Median home $195K, rent $713, affordability ratio 5.3. One of Montana\u2019s most affordable small towns on the Rocky Mountain Front.',
+        description: 'A detailed breakdown of what it costs to live in Choteau \u2014 housing, income, affordability, and how this Rocky Mountain Front gateway compares.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Choteau, Montana Housing Market',
+        metaTitle: 'Choteau, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Choteau housing: Zillow value $283K, census median $195K, 18 active listings, 12.2% vacancy. Affordable Rocky Mountain Front living.',
+        description: 'Current housing market data for Choteau including home values, inventory, vacancy rates, and what makes this market uniquely affordable.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Choteau, Montana',
+        metaTitle: 'Jobs & Economy in Choteau, Montana (2026) | Treasure State',
+        metaDescription: 'Choteau job market: 1% unemployment, job score 9.8. Education & healthcare lead at 24.8%, tourism 15.5%. County seat economy.',
+        description: 'Choteau\u2019s economy by the numbers \u2014 from agriculture and healthcare to growing tourism, with workforce data and industry breakdown.',
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Choteau, Montana',
+        metaTitle: 'Schools & Education in Choteau, Montana (2026) | Treasure State',
+        metaDescription: 'Choteau schools: 93% graduation rate, 350 enrolled, school score 9.3. Small-town district with dinosaur paleontology in its backyard.',
+        description: 'School district information, graduation rates, and what families should know about education in Choteau.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Choteau, Montana',
+        metaTitle: 'Hiking Near Choteau, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Choteau: Rocky Mountain Front, Bob Marshall Wilderness, Ear Mountain, 5 trailheads. Trail guides and backcountry access.',
+        description: 'The best trails and hikes near Choteau \u2014 from Rocky Mountain Front day hikes to Bob Marshall Wilderness expeditions.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Choteau, Montana',
+        metaTitle: 'Fishing Near Choteau, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Choteau: Sun River, Teton River, 29 lakes, Bob Marshall Wilderness streams. Front Range trout fishing guide.',
+        description: 'Complete fishing guide for Choteau \u2014 from Teton River and Sun River trout to backcountry streams in the Bob Marshall Wilderness.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Choteau, Montana',
+        metaTitle: 'Weekend in Choteau, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Choteau: dinosaur fossils, Freezout Lake birds, Rocky Mountain Front hikes, Teton Pass skiing. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Choteau \u2014 dinosaur paleontology, bird migrations, mountain trails, and frontier heritage.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Choteau, Montana?',
+        answer: 'Choteau is one of Montana\u2019s most affordable small towns. The census median home value is $194,900, with the Zillow Home Value Index at $283,281 as of January 2026. Median household income is $53,929, giving an affordability ratio of 5.3 \u2014 meaning homes cost about 5.3 times the median income. Median rent is just $713 per month (18th percentile nationally). The 12.2% vacancy rate means housing is more available than in most Montana towns. With 834 total housing units, the market is small but accessible.',
+      },
+      {
+        question: 'What is Egg Mountain and why is Choteau famous for dinosaurs?',
+        answer: 'Egg Mountain, located near Choteau, is one of the world\u2019s most important dinosaur nesting sites. Paleontologist Jack Horner discovered it in the 1970s and found extensive Maiasaura nesting grounds that revolutionized scientific understanding of dinosaur parenting behavior. The Maiasaura (\u201Cgood mother lizard\u201D) became the Montana state fossil. The Old Trail Museum in Choteau displays these fossils, and the Montana Dinosaur Center in nearby Bynum (13 miles north) houses additional collections, including what is believed to be the world\u2019s longest dinosaur, a diplodocus.',
+      },
+      {
+        question: 'What is Freezout Lake?',
+        answer: 'Freezout Lake Wildlife Management Area, 10 miles south of Choteau, is one of North America\u2019s most spectacular waterfowl staging areas. During spring migration (typically late March), hundreds of thousands of snow geese and tundra swans stop here en route to Arctic breeding grounds, creating a breathtaking natural spectacle. The area has 230 documented bird species and offers year-round birding, waterfowl hunting in season, and wildlife photography opportunities. The fall migration (October\u2013November) brings another wave of birds.',
+      },
+      {
+        question: 'How far is Choteau from Glacier National Park?',
+        answer: 'Choteau is approximately 100 miles southeast of the east entrance to Glacier National Park via U.S. Route 89. The drive takes about 2 hours. Great Falls International Airport is the nearest commercial airport, approximately 60 miles southeast. Choteau sits between Glacier and Yellowstone along U.S. 89, making it a natural stopover for travelers exploring Montana\u2019s national parks. The town is often called \u201Cnext to everything\u201D because of its central position along this corridor.',
+      },
+      {
+        question: 'What is the Rocky Mountain Front?',
+        answer: 'The Rocky Mountain Front is the dramatic eastern edge of the Rocky Mountains where the peaks rise abruptly from the Great Plains. This transition zone runs roughly 200 miles along Montana\u2019s western border and is renowned for its biodiversity, including grizzly bears, wolves, elk, mountain goats, and golden eagles. Choteau sits directly at the base of this escarpment, providing unmatched access to the Bob Marshall Wilderness, the Sun River Game Preserve, and the Lewis and Clark National Forest. It\u2019s one of the few places in the lower 48 where the full suite of large predators still roams.',
+      },
+      {
+        question: 'Who famous lives near Choteau?',
+        answer: 'David Letterman, the iconic late-night television host, owns a 2,700-acre ranch near Choteau. He married his longtime partner Regina Lasko at the Teton County Courthouse in Choteau in 2009 and has mentioned the town on his show. Pulitzer Prize\u2013winning novelist A.B. Guthrie Jr., known for \u201CThe Big Sky\u201D and \u201CThe Way West,\u201D lived in the Choteau area and helped shape the literary identity of Montana. Former Montana Governor John Edward Erickson was born near Choteau, and famous rodeo entertainer Flint Rasmussen has ties to the area.',
+      },
+      {
+        question: 'What outdoor activities are available near Choteau?',
+        answer: 'Choteau offers year-round outdoor recreation. Summer brings hiking, backpacking, and horseback riding in the Bob Marshall Wilderness and along the Rocky Mountain Front. Fishing is excellent on the Teton River, Sun River, and numerous alpine lakes. Freezout Lake provides world-class birding. In winter, Teton Pass Ski Area (16 miles west) offers downhill skiing, and the surrounding mountains have cross-country skiing and snowmobiling trails. Hunting for elk, deer, upland birds, and waterfowl is popular in fall. The area also has 11 campgrounds and several hot springs within 50 miles.',
+      },
+      {
+        question: 'What is Teton Pass Ski Area?',
+        answer: 'Teton Pass Ski Area is a small, community-oriented ski hill located 16 miles west of Choteau on the Rocky Mountain Front. It offers affordable, uncrowded downhill skiing with a family-friendly atmosphere. The ski area provides an authentic Montana skiing experience without the crowds and prices of larger resorts. Backcountry skiing and snowmobiling are also popular in the surrounding Lewis and Clark National Forest. The area receives moderate snowfall, with the mountain location providing more reliable snow than the valley floor.',
+      },
+      {
+        question: 'What is the job market like in Choteau?',
+        answer: 'Choteau has remarkably low unemployment at 1%, with a job score of 9.8 out of 10. As the Teton County seat, government services provide stable employment. Education and healthcare lead the economy at 24.8%, anchored by Choteau Public Schools and Benefis Teton Medical Center. Tourism and hospitality account for 15.5%, reflecting the growing visitor economy from the Rocky Mountain Front, dinosaur sites, and Freezout Lake. Agriculture and mining contribute 9%. The labor force participation rate of 54.3% is lower than the state average, partly reflecting a retirement-age population.',
+      },
+      {
+        question: 'What should I know before visiting Choteau?',
+        answer: 'Choteau is a genuine small Montana town, not a tourist resort. Services are limited \u2014 fill up on gas and stock up on supplies before heading into the backcountry. The Stage Stop Inn (77 rooms) is the largest hotel. Cell service can be spotty in the mountains. The best time to visit depends on your interests: late March for snow goose migration at Freezout Lake, summer (June\u2013August) for hiking and fishing, fall for hunting and bird migration, and winter for Teton Pass skiing. Book accommodations in advance during migration season. Bear country precautions are essential when hiking the Rocky Mountain Front.',
+      },
+    ],
+  },
   'three-forks': {
     hubIntro: `Three Forks is a small town of 1,989 residents in Gallatin County, sitting at 4,075 feet elevation at the exact spot where the Jefferson, Madison, and Gallatin Rivers converge to form the Missouri River. Meriwether Lewis named these three rivers on July 27, 1805, for President Jefferson, Secretary of State Madison, and Treasury Secretary Gallatin — making this confluence one of the most significant geographic landmarks in American exploration history.\n\nMissouri Headwaters State Park preserves the confluence 4 miles northeast of town and is a U.S. National Historic Landmark. Sacagawea, who guided Lewis and Clark, was captured near this site in 1800 and later returned with the expedition. The historic Sacajawea Hotel (1910) anchors downtown. Three Forks sits on Interstate 90 just 31 miles west of Bozeman and 64 miles east of Butte. Within 50 miles there are 244 recreation sites including 28 trailheads, 59 lakes, 43 campgrounds, 4 state parks, 13 hot springs, and 33 museums. Lewis & Clark Caverns State Park is 16 miles west, and Madison Buffalo Jump State Park is 15 miles southeast.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
