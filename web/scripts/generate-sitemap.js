@@ -5,16 +5,19 @@ const path = require('path');
 function getTownList(repoRoot) {
   const listPath = path.join(repoRoot, 'cities_towns_list', 'towns.txt');
   if (!fs.existsSync(listPath)) return [];
+  const seen = new Set();
   return fs
     .readFileSync(listPath, 'utf8')
     .split(/\r?\n/)
     .map((l) => l.trim())
     .filter(Boolean)
-    .map((name) => ({ name, slug: name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-') }));
+    .map((name) => ({ name, slug: name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-') }))
+    .filter((t) => { if (seen.has(t.slug)) return false; seen.add(t.slug); return true; });
 }
 
-function url(loc, lastmod = new Date()) {
-  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod.toISOString()}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`;
+function url(loc, priority = 0.5, changefreq = 'monthly') {
+  const lastmod = new Date().toISOString();
+  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }
 
 (function main() {
@@ -24,69 +27,80 @@ function url(loc, lastmod = new Date()) {
   const baseUrl = process.env.SITE_URL || 'https://treasurestate.com';
 
   const towns = getTownList(repoRoot);
-
+  const seen = new Set();
   const entries = [];
-  // Core pages
-  entries.push(url(`${baseUrl}/`));
-  entries.push(url(`${baseUrl}/Montana-towns/`));
-  entries.push(url(`${baseUrl}/compare/`));
-  entries.push(url(`${baseUrl}/planners/`));
-  entries.push(url(`${baseUrl}/planners/montana-backroads/`));
-  entries.push(url(`${baseUrl}/planners/hot-springs-guide/`));
 
-  // Information pages discovered in out/Information (assuming they still exist in Next.js pages)
+  function add(loc, priority, changefreq) {
+    if (seen.has(loc)) return;
+    seen.add(loc);
+    entries.push(url(loc, priority, changefreq));
+  }
+
+  add(`${baseUrl}/`, 1.0, 'weekly');
+  add(`${baseUrl}/montana-towns/`, 0.9, 'weekly');
+  add(`${baseUrl}/compare/`, 0.6, 'monthly');
+  add(`${baseUrl}/planners/`, 0.7, 'monthly');
+  add(`${baseUrl}/planners/montana-backroads/`, 0.7, 'monthly');
+  add(`${baseUrl}/planners/hot-springs-guide/`, 0.7, 'monthly');
+
   const infoDir = path.join(outDir, 'Information');
   if (fs.existsSync(infoDir)) {
     for (const f of fs.readdirSync(infoDir)) {
-      if (f.endsWith('.html') || fs.statSync(path.join(infoDir, f)).isDirectory()) {
+      const full = path.join(infoDir, f);
+      const isPage = f.endsWith('.html') ||
+        (fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.html')));
+      if (isPage) {
         const slug = f.replace('.html', '');
-        entries.push(url(`${baseUrl}/Information/${slug}/`));
+        add(`${baseUrl}/Information/${slug}/`, 0.7, 'monthly');
       }
     }
   }
 
-  // Town pages + cluster subpages
   for (const t of towns) {
-    entries.push(url(`${baseUrl}/montana-towns/${t.slug}/`));
     const townOutDir = path.join(outDir, 'montana-towns', t.slug);
+    const hasTopics = fs.existsSync(townOutDir) &&
+      fs.readdirSync(townOutDir).some((sub) => {
+        const subPath = path.join(townOutDir, sub);
+        return fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'));
+      });
+
+    add(`${baseUrl}/montana-towns/${t.slug}/`, hasTopics ? 0.9 : 0.7, hasTopics ? 'weekly' : 'monthly');
+
     if (fs.existsSync(townOutDir)) {
       for (const sub of fs.readdirSync(townOutDir)) {
         const subPath = path.join(townOutDir, sub);
         if (fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'))) {
-          entries.push(url(`${baseUrl}/montana-towns/${t.slug}/${sub}/`));
+          add(`${baseUrl}/montana-towns/${t.slug}/${sub}/`, 0.8, 'monthly');
         }
       }
     }
   }
 
-  // Guide pages
-  entries.push(url(`${baseUrl}/guides/`));
+  add(`${baseUrl}/guides/`, 0.7, 'monthly');
   const guidesDir = path.join(outDir, 'guides');
   if (fs.existsSync(guidesDir)) {
     for (const f of fs.readdirSync(guidesDir)) {
       if (fs.statSync(path.join(guidesDir, f)).isDirectory()) {
-        entries.push(url(`${baseUrl}/guides/${f}/`));
+        add(`${baseUrl}/guides/${f}/`, 0.6, 'monthly');
       }
     }
   }
 
-  // Best Of pages
-  entries.push(url(`${baseUrl}/best-of/`));
+  add(`${baseUrl}/best-of/`, 0.6, 'monthly');
   const bestOfDir = path.join(outDir, 'best-of');
   if (fs.existsSync(bestOfDir)) {
     for (const f of fs.readdirSync(bestOfDir)) {
       if (fs.statSync(path.join(bestOfDir, f)).isDirectory()) {
-        entries.push(url(`${baseUrl}/best-of/${f}/`));
+        add(`${baseUrl}/best-of/${f}/`, 0.6, 'monthly');
       }
     }
   }
 
-  // Comparison pages
   const compareDir = path.join(outDir, 'compare');
   if (fs.existsSync(compareDir)) {
     for (const f of fs.readdirSync(compareDir)) {
       if (fs.statSync(path.join(compareDir, f)).isDirectory()) {
-        entries.push(url(`${baseUrl}/compare/${f}/`));
+        add(`${baseUrl}/compare/${f}/`, 0.5, 'monthly');
       }
     }
   }
@@ -94,7 +108,7 @@ function url(loc, lastmod = new Date()) {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
   if (fs.existsSync(outDir)) {
     fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
-    console.log('sitemap.xml generated in out/');
+    console.log(`sitemap.xml generated in out/ (${entries.length} URLs)`);
   } else {
     console.log('out/ directory does not exist, sitemap.xml skipped.');
   }
