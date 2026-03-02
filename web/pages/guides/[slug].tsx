@@ -243,7 +243,9 @@ function movingGuide(t: TownBundle): GuideData {
   const annualSnow = months ? Math.round(months.reduce((s: number, m: any) => s + (m.snowIn || 0), 0)) : null;
 
   const sizeLabel = pop > 50000 ? 'city' : pop > 10000 ? 'city' : pop > 3000 ? 'town' : 'small town';
-  const nearestSki = places.find((p: any) => p.type === 'Ski Area');
+  const skiAreas = places.filter((p: any) => p.type === 'Ski Area').slice(0, 2);
+  const nearestSki = skiAreas[0] ?? null;
+  const secondSki = skiAreas[1] ?? null;
   const nearestPark = places.find((p: any) => p.type === 'National Park');
   const rivers = places.filter((p: any) => p.type === 'River').slice(0, 5);
   const lakes = places.filter((p: any) => p.type === 'Lake').slice(0, 5);
@@ -329,7 +331,7 @@ function movingGuide(t: TownBundle): GuideData {
       id: 'outdoor-recreation',
       heading: `Outdoor Recreation Near ${t.name}`,
       html: `
-        <p>${t.name} has access to <strong>${places.length} recreation and attraction sites</strong> spanning ${recTypes.size} categories. ${nearestPark ? `${nearestPark.name} is just ${nearestPark.distMiles} miles away.` : ''} ${nearestSki ? `For skiing, ${nearestSki.name} is ${nearestSki.distMiles} miles from town.` : ''}</p>
+        <p>${t.name} has access to <strong>${places.length} recreation and attraction sites</strong> spanning ${recTypes.size} categories. ${nearestPark ? `${nearestPark.name} is just ${nearestPark.distMiles} miles away.` : ''} ${nearestSki ? `For skiing, ${nearestSki.name} is ${nearestSki.distMiles} miles from town${secondSki ? ` and ${secondSki.name} is ${secondSki.distMiles} miles` : ''}.` : ''}</p>
         ${highlights.length > 0 ? `
         <h3>Top Nearby Attractions</h3>
         <ul>
@@ -445,7 +447,7 @@ function movingGuide(t: TownBundle): GuideData {
     gradRate != null && gradRate >= 90 ? `Strong schools (${gradRate}% grad rate)` : null,
     janLow != null && janLow > 10 ? 'Milder winters than eastern Montana' : null,
     ratio != null && ratio <= 4 ? 'Affordable cost of living' : null,
-    nearestSki ? `Skiing at ${nearestSki.name} (${nearestSki.distMiles} mi)` : null,
+    nearestSki ? `Skiing at ${nearestSki.name} (${nearestSki.distMiles} mi)${secondSki ? ` and ${secondSki.name} (${secondSki.distMiles} mi)` : ''}` : null,
     nearestPark ? `Near ${nearestPark.name}` : null,
     hc && hc.hasLocalHospital ? 'Has a local hospital' : null,
     hc && hc.healthcareScore >= 7 ? 'Strong healthcare access' : null,
@@ -491,7 +493,7 @@ function movingGuide(t: TownBundle): GuideData {
     ...(unemp != null ? [{ q: `What is the job market like in ${t.name}?`, a: `${t.name} has a ${unemp}% unemployment rate${unemp <= 3.5 ? ', which is at or below the state average' : unemp <= 6 ? '' : ', which is above the state average'}.${lfpr != null ? ` Labor force participation is ${lfpr}%.` : ''} ${employed ? `About ${n(employed)} residents are employed locally.` : ''} ${mainInd ? `The leading industry is ${mainInd.toLowerCase()}.` : ''} Montana has no state sales tax, which benefits both businesses and consumers.` }] : []),
     ...(gradRate != null ? [{ q: `How are the schools in ${t.name}?`, a: `The ${t.td.schoolDistrict || t.name} school district has a graduation rate of ${gradRate}%${gradRate >= 90 ? ', above the Montana state average of ~87%' : gradRate >= 85 ? ', near the state average' : ', below the state average of ~87%'}.${t.td.schoolEnrollment ? ` Approximately ${n(t.td.schoolEnrollment)} students are enrolled.` : ''}${perPupil ? ` Per-pupil spending is approximately ${$(perPupil)}.` : ''}` }] : []),
     ...(hc ? [{ q: `What healthcare is available in ${t.name}?`, a: `${hc.hasLocalHospital ? `${t.name} has a local hospital, ${hc.nearestHospital}` : `The nearest hospital is ${hc.nearestHospital} in ${hc.nearestHospitalCity} (${hc.nearestHospitalDist} miles)`}.${hc.nearestMajorHospitalDist != null ? ` The nearest major trauma center is ${hc.nearestMajorHospital} in ${hc.nearestMajorHospitalCity}, ${hc.nearestMajorHospitalDist} miles away.` : ''} There are ${hc.hospitalsWithin60} hospitals within 60 miles.` }] : []),
-    ...(nearestSki ? [{ q: `Where is the nearest skiing to ${t.name}?`, a: `${nearestSki.name} is ${nearestSki.distMiles} miles from ${t.name}. ${annualSnow ? `The area receives about ${annualSnow}" of snow annually.` : ''}` }] : []),
+    ...(nearestSki ? [{ q: `Where is the nearest skiing to ${t.name}?`, a: `${nearestSki.name} is ${nearestSki.distMiles} miles from ${t.name}${secondSki ? ` and ${secondSki.name} is ${secondSki.distMiles} miles away` : ''}. ${annualSnow ? `${t.name} itself receives about ${annualSnow}" of snow annually, while ski areas in the region receive significantly more.` : ''}` }] : []),
   ];
 
   return {
