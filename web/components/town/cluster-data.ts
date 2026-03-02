@@ -1890,6 +1890,117 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+
+  anaconda: {
+    hubIntro: `Anaconda is a historic smelter city of 9,421 residents in Deer Lodge County, sitting at 5,335 feet elevation at the foot of the Anaconda Range. Founded in 1883 by Copper King Marcus Daly as the processing center for Butte's mines, Anaconda operated the world's largest non-ferrous smelting plant for nearly a century before reinventing itself as a recreation gateway.\n\nThe 585-foot Washoe Smelter Stack — once the tallest freestanding masonry structure in the world — still dominates the skyline. The city runs a consolidated city-county government with Deer Lodge County. Georgetown Lake lies 15 miles west, the Anaconda-Pintler Wilderness begins 11 miles south, and Discovery Ski Area is 20 miles west along the Pintler Scenic Route. Within 50 miles there are 308 recreation sites including 86 lakes, 43 trailheads, 70 campgrounds, 7 fishing access sites, 10 wilderness areas, 14 hot springs, and 3 ski areas. Fairmont Hot Springs is just 8 miles east and the Jack Nicklaus-designed Old Works Golf Course occupies reclaimed smelter land right in town.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Anaconda, Montana',
+        metaTitle: 'Cost of Living in Anaconda, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Anaconda? Median home value $210K, rent $661, affordability ratio 5.7. One of southwest Montana\u2019s most affordable towns.',
+        description: 'A detailed breakdown of what it costs to live in Anaconda \u2014 housing, income, affordability, and how it compares to nearby Butte and Philipsburg.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Anaconda, Montana Housing Market',
+        metaTitle: 'Anaconda, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Anaconda housing data: Zillow value $280K, 42 active listings, inventory down 20.8%. Affordable homes in Montana\u2019s copper heritage city.',
+        description: 'Current housing market data for Anaconda including home values, inventory trends, and affordability compared to nearby mountain towns.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Anaconda, Montana',
+        metaTitle: 'Jobs & Economy in Anaconda, Montana (2026) | Treasure State',
+        metaDescription: 'Anaconda job market: 4.9% unemployment, education & healthcare lead at 25.8%. Post-smelter transition to tourism, recreation, and trades.',
+        description: "Anaconda's economy by the numbers \u2014 from copper smelting legacy to diversified workforce, plus top employers and industry data.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Anaconda, Montana',
+        metaTitle: 'Schools & Education in Anaconda, Montana (2026) | Treasure State',
+        metaDescription: 'Anaconda schools: 83% graduation rate, 1,600 enrolled, $11K per-pupil spending. District info and what families need to know.',
+        description: 'School district information, graduation rates, and what families should know about education in Anaconda.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Anaconda, Montana',
+        metaTitle: 'Hiking Near Anaconda, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Anaconda: 43 trailheads, Anaconda-Pintler Wilderness, Lost Creek Falls, Continental Divide. Trail guides and difficulty ratings.',
+        description: 'The best trails and hikes near Anaconda \u2014 from Pintler Wilderness alpine lakes to Lost Creek State Park waterfalls.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Anaconda, Montana',
+        metaTitle: 'Fishing Near Anaconda, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Anaconda: Georgetown Lake, 86 lakes, 7 access sites, 5 rivers. Trout, kokanee, and ice fishing in the Pintler Range.',
+        description: 'Complete fishing guide for Anaconda \u2014 from Georgetown Lake kokanee to backcountry Pintler Wilderness cutthroat.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Anaconda, Montana',
+        metaTitle: 'Weekend in Anaconda, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Anaconda: Old Works Golf, Georgetown Lake, Lost Creek Falls, Washoe Theater, Fairmont Hot Springs. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Anaconda \u2014 smelter heritage, mountain lakes, hot springs, and Pintler wilderness.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Anaconda, Montana?',
+        answer: "Anaconda is one of southwest Montana's most affordable communities. The census median home value is $209,700 with the Zillow Home Value Index at $280,297 as of January 2026. Median rent is just $661 — well below Montana averages. The median household income of $49,533 produces an affordability ratio of 5.7, significantly better than nearby Butte (4.4) and far below resort towns like Big Sky. The 17.2% vacancy rate reflects seasonal and second-home ownership patterns.",
+      },
+      {
+        question: 'What is the Washoe Smelter Stack?',
+        answer: "The Washoe Smelter Stack is a 585-foot-tall masonry smokestack built in 1919 for the Anaconda Copper Mining Company's Washoe Reduction Works. When completed, it was the tallest freestanding masonry structure in the world. The stack is visible for miles and remains Anaconda's most iconic landmark. The smelter processed copper ore from Butte's mines from the 1880s until 1980. The site is now part of a Superfund cleanup area, and the adjacent land was transformed into the Old Works Golf Course.",
+      },
+      {
+        question: 'How far is Anaconda from Butte?',
+        answer: 'Anaconda is 26 miles (about 30 minutes) west of Butte via Montana Highway 1 (Pintler Scenic Route) or Interstate 90. The two cities share deep copper mining history — Butte mined the ore and Anaconda smelted it. Despite their proximity, Anaconda has a distinct identity: smaller (9,421 vs 34,000), more affordable, and oriented toward outdoor recreation rather than Butte\u2019s urban amenities. Many residents commute between the two cities.',
+      },
+      {
+        question: 'What is Georgetown Lake?',
+        answer: "Georgetown Lake is a 2,800-acre reservoir at 6,330 feet elevation, 15 miles west of Anaconda along the Pintler Scenic Route (MT-1). It's one of Montana's most popular year-round recreation lakes. Summer brings fishing (rainbow trout, brook trout, kokanee salmon), boating, kayaking, and swimming. Winter transforms it into one of the state's top ice fishing destinations. The lake is surrounded by Deerlodge National Forest with numerous campgrounds, cabins, and resorts. Discovery Ski Area is nearby.",
+      },
+      {
+        question: 'What outdoor activities are available near Anaconda?',
+        answer: "Anaconda offers exceptional outdoor recreation. The Anaconda-Pintler Wilderness (11 miles south) provides 158,000 acres of alpine backcountry. Georgetown Lake (15 miles) is a premier fishing and boating destination. Discovery Ski Area (20 miles) offers downhill skiing. Lost Creek State Park (5 miles) features a dramatic waterfall and limestone canyon. Fairmont Hot Springs (8 miles) has natural hot spring pools. The Old Works Golf Course is a Jack Nicklaus-designed championship course built on reclaimed smelter land. Within 50 miles there are 308 recreation sites.",
+      },
+      {
+        question: 'What is Lost Creek State Park?',
+        answer: "Lost Creek State Park is a scenic park just 5 miles from Anaconda, nestled in a dramatic limestone canyon. The park's centerpiece is Lost Creek Falls, a waterfall that drops through a narrow gorge carved from billion-year-old limestone. Mountain goats are regularly spotted on the canyon walls. The park has 25 campsites, picnic areas, and short hiking trails. It's open May through November and is one of the most accessible and scenic state parks in southwest Montana.",
+      },
+      {
+        question: 'What is the Old Works Golf Course?',
+        answer: "The Old Works Golf Course is a Jack Nicklaus Signature Design championship course built on the reclaimed site of Anaconda's historic copper smelter. It opened in 1997 as part of the Superfund cleanup and features distinctive black slag sand bunkers made from actual smelting waste. The 18-hole, par-72 course plays at 7,705 yards from the tips and is consistently rated one of Montana's finest public courses. Green fees are affordable compared to resort courses, making it a must-play for Montana golfers.",
+      },
+      {
+        question: 'What are winters like in Anaconda?',
+        answer: "Anaconda winters are cold and snowy at 5,335 feet elevation. January averages a high of 33\u00B0F and low of 12\u00B0F. Total annual snowfall is moderate with accumulations from October through April. Discovery Ski Area (20 miles west) offers 15 runs and reliable powder. Georgetown Lake is a top ice fishing destination. Snowmobiling on hundreds of miles of groomed trails through the Deerlodge and Beaverhead-Deerlodge National Forests is popular. Fairmont Hot Springs (8 miles) provides a warm retreat in the coldest months.",
+      },
+      {
+        question: 'Who was Marcus Daly?',
+        answer: "Marcus Daly (1841\u20131900) was one of Montana's famous 'Copper Kings' and the founder of Anaconda. Born in Ireland, he came to Montana and discovered the richest copper vein in Butte, then built the massive Washoe Reduction Works in Anaconda to smelt the ore. He founded the Anaconda Copper Mining Company, which became one of the world's largest corporations. Daly also attempted to make Anaconda Montana's state capital, losing to Helena in the 1894 referendum. His legacy shapes the city to this day.",
+      },
+      {
+        question: 'How do I get to Anaconda?',
+        answer: "Anaconda is on Montana Highway 1 (Pintler Veterans Memorial Scenic Route), 26 miles west of Butte and 120 miles southeast of Missoula. From Interstate 90, take the Anaconda exit at Warm Springs or the Opportunity exit. The nearest commercial airport is Bert Mooney Airport (BTM) in Butte, 26 miles east. Bowman Field is a small public airstrip 3 miles northeast of town. Anaconda sits roughly halfway between Yellowstone and Glacier National Parks, making it a natural stop on a Montana road trip.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

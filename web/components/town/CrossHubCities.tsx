@@ -19,6 +19,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   polson: { name: 'Polson', tagline: 'Flathead Lake gateway' },
   dillon: { name: 'Dillon', tagline: 'Blue-ribbon fishing & frontier heritage' },
   'columbia-falls': { name: 'Columbia Falls', tagline: 'Gateway to Glacier National Park' },
+  anaconda: { name: 'Anaconda', tagline: 'Copper heritage & Pintler wilderness' },
 };
 
 type Props = {
