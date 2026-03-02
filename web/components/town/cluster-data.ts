@@ -460,6 +460,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  helena: {
+    hubIntro: `Helena is the state capital of Montana, home to 33,100 residents and the seat of state government in Lewis and Clark County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/helena/cost-of-living/">housing costs</a> and <a href="/montana-towns/helena/jobs/">job opportunities</a> to <a href="/montana-towns/helena/hiking/">hiking trails</a> and a <a href="/montana-towns/helena/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nFounded during the 1864 gold rush at Last Chance Gulch \u2014 now the city's historic downtown pedestrian mall \u2014 Helena became Montana's territorial capital in 1875 and its state capital in 1889. The city sits in a valley at the eastern edge of the Continental Divide, flanked by Mount Helena City Park to the south and the Helena-Lewis and Clark National Forest on three sides. The Gates of the Mountains Wilderness is 20 miles north along the Missouri River, Canyon Ferry Lake is 15 miles east, and Broadwater Hot Springs is just 1 mile from downtown. With 188 recreation sites within 50 miles, state government anchoring a stable economy, and the most affordable housing of any major Montana city, Helena offers a quality of life that balances history, outdoor access, and economic security.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Helena, Montana',
+        metaTitle: 'Cost of Living in Helena, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Helena? Median home value $459K, rent $1,490/mo, income $69K. Affordability ratio 6.6 and how Helena compares statewide.',
+        description: 'A detailed breakdown of what it costs to live in Helena \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Helena, Montana Housing Market',
+        metaTitle: 'Helena, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Helena housing market data: median home value $459K, 244 active listings, 19% inventory increase YoY. Zillow trends, rental rates, and market analysis.',
+        description: 'Current housing market data for Helena including home values, rental rates, inventory trends, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Helena, Montana',
+        metaTitle: 'Jobs & Economy in Helena, Montana (2026) | Treasure State',
+        metaDescription: 'Helena job market: 3.1% unemployment, job score 9.2/10, led by education & healthcare (27.1%) and state government (15.5%). Workforce data and outlook.',
+        description: "Helena's job market by the numbers \u2014 state government, top industries, a 3.1% unemployment rate, and economic outlook.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Helena, Montana',
+        metaTitle: 'Schools in Helena, Montana \u2014 K-12 & College Guide | Treasure State',
+        metaDescription: 'Guide to Helena schools: Helena Public Schools (7,800 students, 88% graduation rate), Carroll College, and per-pupil spending of $11,600.',
+        description: 'Guide to Helena schools from K-12 through Carroll College, including enrollment, graduation rates, and spending.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Helena, Montana',
+        metaTitle: 'Best Hiking Near Helena, Montana \u2014 Trails & Routes | Treasure State',
+        metaDescription: '14 trailheads near Helena including Mount Helena City Park, Gates of the Mountains, and Continental Divide trails. Distances and seasonal tips.',
+        description: 'The best hiking trails near Helena \u2014 from Mount Helena City Park to the Gates of the Mountains Wilderness, with distances and tips.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Helena, Montana',
+        metaTitle: 'Fishing Near Helena, Montana \u2014 Rivers, Lakes & Guide | Treasure State',
+        metaDescription: 'Fishing near Helena on the Missouri River at Craig, Canyon Ferry Lake, and Holter Lake. Blue-ribbon trout water, walleye, and seasonal tips.',
+        description: 'World-class fishing near Helena on the Missouri River tailwater at Craig, Canyon Ferry Lake, and the surrounding mountain lakes.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Helena, Montana',
+        metaTitle: 'Weekend in Helena, Montana \u2014 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Helena: Last Chance Gulch, Cathedral of St. Helena, Gates of the Mountains, hot springs, and local breweries.',
+        description: 'How to spend a weekend in Helena \u2014 a day-by-day guide covering the state capital, outdoor adventures, and gold-rush history.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Helena, Montana?',
+        answer: "Helena's median household income is $69,341 with a median home value of $459,029 (Zillow, January 2026). The affordability ratio of 6.6 is the most manageable among Montana's larger cities. Median rent is $1,490 per month. Home values rank in the 82nd percentile among Montana towns. State government employment provides stable, well-paying jobs that support a balanced housing market.",
+      },
+      {
+        question: 'Is Helena the capital of Montana?',
+        answer: "Yes, Helena has been Montana's state capital since 1889, when Montana became the 41st state. The city was originally the territorial capital beginning in 1875. The Montana State Capitol building, completed in 1902, sits on a hill overlooking downtown and is open for public tours. State government is the second-largest employment sector at 15.5% of jobs.",
+      },
+      {
+        question: 'What are winters like in Helena?',
+        answer: "Helena winters are cold and dry. January averages a high of 36\u00B0F and a low of 17\u00B0F. Annual precipitation is just 11\u201312 inches, making Helena one of the driest cities in Montana. The Continental Divide shelters the city from heavy Pacific moisture. Chinook winds occasionally bring rapid warming during winter months.",
+      },
+      {
+        question: 'Is Helena a good place for families?',
+        answer: "Helena offers solid schools through Helena Public Schools, serving 7,800 students with an 88% graduation rate and $11,600 per-pupil spending. Carroll College provides local higher education. With 188 recreation sites within 50 miles, Mount Helena City Park, Canyon Ferry Lake, and the most affordable housing among Montana's larger cities, families find Helena very livable.",
+      },
+      {
+        question: 'What outdoor recreation is near Helena?',
+        answer: "Helena has 188 recreation sites within 50 miles, including 14 trailheads, 43 lakes, 9 wilderness areas, and 10 hot springs. Mount Helena City Park offers 620 acres of trails at the city's edge. Canyon Ferry Lake (15 miles) provides boating and fishing. The Gates of the Mountains Wilderness is 20 miles north. The Missouri River at Craig (32 miles) is world-class trout water.",
+      },
+      {
+        question: 'When is the best time to visit Helena?',
+        answer: "Summer (June\u2013August) offers the best weather with highs of 73\u201384\u00B0F and access to Canyon Ferry Lake, Gates of the Mountains boat tours, and hiking. Fall brings crisp air and smaller crowds. Winter is cold but dry, with skiing at Discovery (62 miles) and Showdown (65 miles). Spring is cool with wildflowers on Mount Helena by May.",
+      },
+      {
+        question: 'What are the main industries in Helena?',
+        answer: "Education and healthcare leads at 27.1% of employment, followed by government at 15.5% \u2014 reflecting Helena's role as the state capital. State of Montana agencies are the city's largest employer. Retail accounts for 12.1%. The unemployment rate is 3.1% with a job score of 9.2 out of 10.",
+      },
+      {
+        question: 'Is Helena a good place to retire?',
+        answer: "Helena is increasingly popular with retirees thanks to affordable housing (the best value among Montana's larger cities), quality healthcare at St. Peter's Health, a dry mild-winter climate, and abundant outdoor recreation. Montana has no state sales tax. The state capital offers cultural amenities \u2014 museums, a historic downtown, and community events \u2014 that smaller Montana towns lack.",
+      },
+      {
+        question: 'What is the housing market like in Helena?',
+        answer: "As of January 2026, Helena's median home value is $459,029 (Zillow) with 244 homes for sale. Inventory has increased 19% year-over-year \u2014 the largest supply gain among Montana's major cities \u2014 giving buyers significantly more options. The median list price is $517,167. The vacancy rate across 16,574 total housing units is 6.7%.",
+      },
+      {
+        question: 'Can you fly into Helena?',
+        answer: "Yes, Helena Regional Airport (HLN) offers daily flights to Salt Lake City, Denver, and Minneapolis through Delta and United. The airport is about 3 miles east of downtown. Helena is also accessible via I-15 (north-south) and US-12 (east-west). The city is roughly 110 miles north of Butte and 115 miles south of Great Falls on I-15.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
