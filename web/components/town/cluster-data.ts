@@ -570,6 +570,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  billings: {
+    hubIntro: `Billings is the largest city in Montana with 117,116 residents, serving as the economic and medical hub of the northern Great Plains from its seat in Yellowstone County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/billings/cost-of-living/">housing costs</a> and <a href="/montana-towns/billings/jobs/">job opportunities</a> to <a href="/montana-towns/billings/fishing/">world-class fishing</a> and a <a href="/montana-towns/billings/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nKnown as "The Magic City" for its rapid growth after the Northern Pacific Railroad arrived in 1882, Billings sits on the Yellowstone River beneath dramatic sandstone cliffs called the Rimrocks. The city is the regional center for healthcare, energy, agriculture, and finance across eastern Montana, Wyoming, and the Dakotas. With 78 recreation sites within 50 miles \u2014 including 20 fishing access sites on the Yellowstone and Bighorn rivers, Pictograph Cave State Park with 4,500-year-old rock art, and the gateway to the Beartooth Highway and Yellowstone National Park \u2014 Billings pairs big-city amenities with genuine outdoor access.\n\nAt an affordability ratio of 5.4, Billings offers the most affordable housing of any major Montana city. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Billings, Montana',
+        metaTitle: 'Cost of Living in Billings, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Billings? Median home value $385K, rent $1,404/mo, income $72K. Affordability ratio 5.4 \u2014 the most affordable major city in Montana.',
+        description: 'A detailed breakdown of what it costs to live in Billings \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Billings, Montana Housing Market',
+        metaTitle: 'Billings, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Billings housing market data: median home value $385K, 546 active listings, 112 new listings/month. Montana\u2019s largest and most liquid housing market.',
+        description: 'Current housing market data for Billings including home values, rental rates, inventory trends, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Billings, Montana',
+        metaTitle: 'Jobs & Economy in Billings, Montana (2026) | Treasure State',
+        metaDescription: 'Billings job market: 3.5% unemployment, job score 9.1/10, led by education & healthcare (26.2%). Montana\u2019s largest workforce at 62,604.',
+        description: "Billings\u2019 job market by the numbers \u2014 healthcare, energy, agriculture, and a labor force of 62,604.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Billings, Montana',
+        metaTitle: 'Schools in Billings, Montana \u2014 K-12 & College Guide | Treasure State',
+        metaDescription: 'Guide to Billings schools: Billings Public Schools (16,000 students), three AA high schools, MSU Billings, and Rocky Mountain College.',
+        description: 'Guide to Billings schools from K-12 through college, including enrollment, graduation rates, and higher education options.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Billings, Montana',
+        metaTitle: 'Best Hiking Near Billings, Montana \u2014 Rimrocks, Trails & Routes | Treasure State',
+        metaDescription: 'Hiking near Billings along the Rimrocks, Four Dances Natural Area, Pictograph Cave, and day trips to the Absaroka-Beartooth Wilderness.',
+        description: 'The best hiking near Billings \u2014 from the Rimrocks and city trails to the Absaroka-Beartooth Wilderness, with distances and tips.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Billings, Montana',
+        metaTitle: 'Fishing Near Billings, Montana \u2014 Yellowstone & Bighorn Rivers | Treasure State',
+        metaDescription: 'Fishing near Billings on the Yellowstone River, Bighorn River tailwater, and 20 FWP fishing access sites. Blue-ribbon trout water and seasonal tips.',
+        description: 'World-class fishing near Billings on the Yellowstone and Bighorn rivers, with 20 fishing access sites and seasonal tips.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Billings, Montana',
+        metaTitle: 'Weekend in Billings, Montana \u2014 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Billings: Rimrocks, Pictograph Cave, Yellowstone Art Museum, Beartooth Highway, breweries, and local dining.',
+        description: 'How to spend a weekend in Billings \u2014 a day-by-day guide covering Montana\u2019s largest city, the Rimrocks, and eastern Montana adventures.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Billings, Montana?',
+        answer: "Billings\u2019 median household income is $71,855 with a median home value of $384,994 (Zillow, January 2026). The affordability ratio of 5.4 makes Billings the most affordable major city in Montana. Median rent is $1,404 per month. With 546 homes for sale and 112 new listings per month, Billings has by far Montana\u2019s largest and most liquid housing market.",
+      },
+      {
+        question: 'Is Billings a good place to live?',
+        answer: "Billings offers big-city amenities \u2014 two major hospitals, Montana\u2019s busiest airport, a university, and diverse dining and shopping \u2014 with the most affordable housing of any large Montana city. The Yellowstone River and Rimrocks provide outdoor access, and the Beartooth Highway to Yellowstone is about 2 hours away. The climate is warmer and drier than western Montana with July highs reaching 89\u00B0F.",
+      },
+      {
+        question: 'How big is Billings compared to other Montana cities?',
+        answer: "At 117,116 residents, Billings is Montana\u2019s largest city by a wide margin \u2014 more than three times the size of Missoula (73,489) and nearly four times Great Falls (60,442). The Billings metro area serves as the regional hub for roughly 500,000 people across eastern Montana, northern Wyoming, and western North Dakota.",
+      },
+      {
+        question: 'What outdoor recreation is near Billings?',
+        answer: "Billings has 78 recreation sites within 50 miles, including 20 fishing access sites, 3 state parks, and trails along the Rimrocks. The Yellowstone River flows near the city, and the Bighorn River (41 miles south) is world-class trout water. The Absaroka-Beartooth Wilderness is 67 miles away, and the Beartooth Highway provides access to Yellowstone National Park.",
+      },
+      {
+        question: 'What are the main industries in Billings?',
+        answer: "Education and healthcare leads at 26.2% of employment, anchored by Billings Clinic and St. Vincent Healthcare \u2014 the largest hospital systems between Minneapolis and Seattle. Retail (12.1%) and tourism/hospitality (10.9%) follow. Energy is also significant, with two oil refineries in the city. First Interstate BancSystem is headquartered in Billings.",
+      },
+      {
+        question: 'What are winters like in Billings?',
+        answer: "Billings winters are cold but drier and milder than western Montana. January averages a high of 40\u00B0F and a low of 22\u00B0F. At 3,123 feet elevation \u2014 lower than most Montana cities \u2014 Billings gets less snow. Chinook winds regularly bring warm breaks during winter. Annual precipitation is about 14 inches.",
+      },
+      {
+        question: 'Is Billings a good place for families?',
+        answer: "Billings offers Montana\u2019s most affordable housing (ratio 5.4), the state\u2019s largest school district (16,000 students across three AA high schools), two major hospitals, and family-friendly attractions including ZooMontana, Pictograph Cave State Park, and Lake Elmo. The diverse economy with healthcare and energy provides stable employment.",
+      },
+      {
+        question: 'Can you fly into Billings?',
+        answer: "Yes, Billings Logan International Airport (BIL) is Montana\u2019s busiest airport with daily nonstop flights to Denver, Salt Lake City, Minneapolis, Seattle, Las Vegas, and Phoenix. The airport is about 2 miles from downtown. Billings sits at the junction of I-90 and I-94, making it easily accessible by car from all directions.",
+      },
+      {
+        question: 'What is the housing market like in Billings?',
+        answer: "As of January 2026, Billings\u2019 median home value is $384,994 (Zillow) with 546 homes for sale and 112 new listings per month \u2014 by far Montana\u2019s most liquid housing market. The median list price is $389,150. Inventory dipped 2.7% year-over-year. Across 53,537 total housing units, the vacancy rate is 6.0%.",
+      },
+      {
+        question: 'How far is Billings from Yellowstone National Park?',
+        answer: "Billings is roughly 120 miles from the northeast entrance of Yellowstone National Park via the Beartooth Highway (US-212), often called the most beautiful drive in America. The drive takes about 3 hours when the highway is open (late May through mid-October). Red Lodge, the gateway town at the base of the Beartooth, is 58 miles southwest of Billings.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

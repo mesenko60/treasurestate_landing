@@ -52,6 +52,14 @@ import HelHiking from '../../../components/town/topics/helena/Hiking';
 import HelFishing from '../../../components/town/topics/helena/Fishing';
 import HelWeekendItinerary from '../../../components/town/topics/helena/WeekendItinerary';
 
+import BilCostOfLiving from '../../../components/town/topics/billings/CostOfLiving';
+import BilHousing from '../../../components/town/topics/billings/Housing';
+import BilJobs from '../../../components/town/topics/billings/Jobs';
+import BilSchools from '../../../components/town/topics/billings/Schools';
+import BilHiking from '../../../components/town/topics/billings/Hiking';
+import BilFishing from '../../../components/town/topics/billings/Fishing';
+import BilWeekendItinerary from '../../../components/town/topics/billings/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -136,6 +144,15 @@ export default function TopicPage(props: Props) {
       'hiking': HelHiking,
       'fishing': HelFishing,
       'weekend-itinerary': HelWeekendItinerary,
+    },
+    billings: {
+      'cost-of-living': BilCostOfLiving,
+      'housing': BilHousing,
+      'jobs': BilJobs,
+      'schools': BilSchools,
+      'hiking': BilHiking,
+      'fishing': BilFishing,
+      'weekend-itinerary': BilWeekendItinerary,
     },
   };
 
