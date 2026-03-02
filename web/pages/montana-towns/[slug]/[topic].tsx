@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import type { GetStaticPaths, GetStaticProps } from 'next';
+import type { ComponentType } from 'react';
+import dynamic from 'next/dynamic';
 import fs from 'fs';
 import path from 'path';
 import Header from '../../../components/Header';
@@ -13,117 +15,134 @@ import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
 import { getTownNameFromSlug } from '../../../lib/towns';
 
-import CostOfLiving from '../../../components/town/topics/CostOfLiving';
-import Housing from '../../../components/town/topics/Housing';
-import Jobs from '../../../components/town/topics/Jobs';
-import Schools from '../../../components/town/topics/Schools';
-import Hiking from '../../../components/town/topics/Hiking';
-import Fishing from '../../../components/town/topics/Fishing';
-import WeekendItinerary from '../../../components/town/topics/WeekendItinerary';
-
-import BzmCostOfLiving from '../../../components/town/topics/bozeman/CostOfLiving';
-import BzmHousing from '../../../components/town/topics/bozeman/Housing';
-import BzmJobs from '../../../components/town/topics/bozeman/Jobs';
-import BzmSchools from '../../../components/town/topics/bozeman/Schools';
-import BzmHiking from '../../../components/town/topics/bozeman/Hiking';
-import BzmFishing from '../../../components/town/topics/bozeman/Fishing';
-import BzmWeekendItinerary from '../../../components/town/topics/bozeman/WeekendItinerary';
-
-import KalCostOfLiving from '../../../components/town/topics/kalispell/CostOfLiving';
-import KalHousing from '../../../components/town/topics/kalispell/Housing';
-import KalJobs from '../../../components/town/topics/kalispell/Jobs';
-import KalSchools from '../../../components/town/topics/kalispell/Schools';
-import KalHiking from '../../../components/town/topics/kalispell/Hiking';
-import KalFishing from '../../../components/town/topics/kalispell/Fishing';
-import KalWeekendItinerary from '../../../components/town/topics/kalispell/WeekendItinerary';
-
-import WfCostOfLiving from '../../../components/town/topics/whitefish/CostOfLiving';
-import WfHousing from '../../../components/town/topics/whitefish/Housing';
-import WfJobs from '../../../components/town/topics/whitefish/Jobs';
-import WfSchools from '../../../components/town/topics/whitefish/Schools';
-import WfHiking from '../../../components/town/topics/whitefish/Hiking';
-import WfFishing from '../../../components/town/topics/whitefish/Fishing';
-import WfWeekendItinerary from '../../../components/town/topics/whitefish/WeekendItinerary';
-
-import HelCostOfLiving from '../../../components/town/topics/helena/CostOfLiving';
-import HelHousing from '../../../components/town/topics/helena/Housing';
-import HelJobs from '../../../components/town/topics/helena/Jobs';
-import HelSchools from '../../../components/town/topics/helena/Schools';
-import HelHiking from '../../../components/town/topics/helena/Hiking';
-import HelFishing from '../../../components/town/topics/helena/Fishing';
-import HelWeekendItinerary from '../../../components/town/topics/helena/WeekendItinerary';
-
-import BilCostOfLiving from '../../../components/town/topics/billings/CostOfLiving';
-import BilHousing from '../../../components/town/topics/billings/Housing';
-import BilJobs from '../../../components/town/topics/billings/Jobs';
-import BilSchools from '../../../components/town/topics/billings/Schools';
-import BilHiking from '../../../components/town/topics/billings/Hiking';
-import BilFishing from '../../../components/town/topics/billings/Fishing';
-import BilWeekendItinerary from '../../../components/town/topics/billings/WeekendItinerary';
-
-import GfCostOfLiving from '../../../components/town/topics/great-falls/CostOfLiving';
-import GfHousing from '../../../components/town/topics/great-falls/Housing';
-import GfJobs from '../../../components/town/topics/great-falls/Jobs';
-import GfSchools from '../../../components/town/topics/great-falls/Schools';
-import GfHiking from '../../../components/town/topics/great-falls/Hiking';
-import GfFishing from '../../../components/town/topics/great-falls/Fishing';
-import GfWeekendItinerary from '../../../components/town/topics/great-falls/WeekendItinerary';
-
-import BtCostOfLiving from '../../../components/town/topics/butte/CostOfLiving';
-import BtHousing from '../../../components/town/topics/butte/Housing';
-import BtJobs from '../../../components/town/topics/butte/Jobs';
-import BtSchools from '../../../components/town/topics/butte/Schools';
-import BtHiking from '../../../components/town/topics/butte/Hiking';
-import BtFishing from '../../../components/town/topics/butte/Fishing';
-import BtWeekendItinerary from '../../../components/town/topics/butte/WeekendItinerary';
-
-import LvCostOfLiving from '../../../components/town/topics/livingston/CostOfLiving';
-import LvHousing from '../../../components/town/topics/livingston/Housing';
-import LvJobs from '../../../components/town/topics/livingston/Jobs';
-import LvSchools from '../../../components/town/topics/livingston/Schools';
-import LvHiking from '../../../components/town/topics/livingston/Hiking';
-import LvFishing from '../../../components/town/topics/livingston/Fishing';
-import LvWeekendItinerary from '../../../components/town/topics/livingston/WeekendItinerary';
-
-import RlCostOfLiving from '../../../components/town/topics/red-lodge/CostOfLiving';
-import RlHousing from '../../../components/town/topics/red-lodge/Housing';
-import RlJobs from '../../../components/town/topics/red-lodge/Jobs';
-import RlSchools from '../../../components/town/topics/red-lodge/Schools';
-import RlHiking from '../../../components/town/topics/red-lodge/Hiking';
-import RlFishing from '../../../components/town/topics/red-lodge/Fishing';
-import RlWeekendItinerary from '../../../components/town/topics/red-lodge/WeekendItinerary';
-
-import HamCostOfLiving from '../../../components/town/topics/hamilton/CostOfLiving';
-import HamHousing from '../../../components/town/topics/hamilton/Housing';
-import HamJobs from '../../../components/town/topics/hamilton/Jobs';
-import HamSchools from '../../../components/town/topics/hamilton/Schools';
-import HamHiking from '../../../components/town/topics/hamilton/Hiking';
-import HamFishing from '../../../components/town/topics/hamilton/Fishing';
-import HamWeekendItinerary from '../../../components/town/topics/hamilton/WeekendItinerary';
-
-import WyCostOfLiving from '../../../components/town/topics/west-yellowstone/CostOfLiving';
-import WyHousing from '../../../components/town/topics/west-yellowstone/Housing';
-import WyJobs from '../../../components/town/topics/west-yellowstone/Jobs';
-import WySchools from '../../../components/town/topics/west-yellowstone/Schools';
-import WyHiking from '../../../components/town/topics/west-yellowstone/Hiking';
-import WyFishing from '../../../components/town/topics/west-yellowstone/Fishing';
-import WyWeekendItinerary from '../../../components/town/topics/west-yellowstone/WeekendItinerary';
-
-import BsCostOfLiving from '../../../components/town/topics/big-sky/CostOfLiving';
-import BsHousing from '../../../components/town/topics/big-sky/Housing';
-import BsJobs from '../../../components/town/topics/big-sky/Jobs';
-import BsSchools from '../../../components/town/topics/big-sky/Schools';
-import BsHiking from '../../../components/town/topics/big-sky/Hiking';
-import BsFishing from '../../../components/town/topics/big-sky/Fishing';
-import BsWeekendItinerary from '../../../components/town/topics/big-sky/WeekendItinerary';
-
-import McCostOfLiving from '../../../components/town/topics/miles-city/CostOfLiving';
-import McHousing from '../../../components/town/topics/miles-city/Housing';
-import McJobs from '../../../components/town/topics/miles-city/Jobs';
-import McSchools from '../../../components/town/topics/miles-city/Schools';
-import McHiking from '../../../components/town/topics/miles-city/Hiking';
-import McFishing from '../../../components/town/topics/miles-city/Fishing';
-import McWeekendItinerary from '../../../components/town/topics/miles-city/WeekendItinerary';
+const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
+  missoula: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/WeekendItinerary')),
+  },
+  bozeman: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/bozeman/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/bozeman/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/bozeman/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/bozeman/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/bozeman/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/bozeman/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/bozeman/WeekendItinerary')),
+  },
+  kalispell: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/kalispell/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/kalispell/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/kalispell/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/kalispell/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/kalispell/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/kalispell/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/kalispell/WeekendItinerary')),
+  },
+  whitefish: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/whitefish/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/whitefish/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/whitefish/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/whitefish/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/whitefish/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/whitefish/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/whitefish/WeekendItinerary')),
+  },
+  helena: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/helena/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/helena/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/helena/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/helena/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/helena/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/helena/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/helena/WeekendItinerary')),
+  },
+  billings: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/billings/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/billings/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/billings/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/billings/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/billings/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/billings/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/billings/WeekendItinerary')),
+  },
+  'great-falls': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/great-falls/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/great-falls/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/great-falls/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/great-falls/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/great-falls/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/great-falls/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/great-falls/WeekendItinerary')),
+  },
+  butte: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/butte/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/butte/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/butte/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/butte/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/butte/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/butte/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/butte/WeekendItinerary')),
+  },
+  livingston: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/livingston/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/livingston/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/livingston/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/livingston/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/livingston/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/livingston/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/livingston/WeekendItinerary')),
+  },
+  'red-lodge': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/red-lodge/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/red-lodge/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/red-lodge/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/red-lodge/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/red-lodge/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/red-lodge/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/red-lodge/WeekendItinerary')),
+  },
+  hamilton: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/hamilton/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/hamilton/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/hamilton/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/hamilton/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/hamilton/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/hamilton/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/hamilton/WeekendItinerary')),
+  },
+  'west-yellowstone': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/west-yellowstone/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/west-yellowstone/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/west-yellowstone/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/west-yellowstone/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/west-yellowstone/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/west-yellowstone/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/west-yellowstone/WeekendItinerary')),
+  },
+  'big-sky': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/big-sky/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/big-sky/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/big-sky/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/big-sky/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/big-sky/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/big-sky/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/big-sky/WeekendItinerary')),
+  },
+  'miles-city': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/miles-city/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/miles-city/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/miles-city/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/miles-city/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/miles-city/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/miles-city/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/miles-city/WeekendItinerary')),
+  },
+};
 
 type RecPlace = { name: string; type: string; distMiles: number };
 
@@ -163,135 +182,6 @@ export default function TopicPage(props: Props) {
     { name: townName, url: `https://treasurestate.com/montana-towns/${slug}/` },
     { name: guide.title, url: `https://treasurestate.com/montana-towns/${slug}/${topic}/` },
   ];
-
-  const topicComponents: Record<string, Record<string, React.ComponentType<any>>> = {
-    missoula: {
-      'cost-of-living': CostOfLiving,
-      'housing': Housing,
-      'jobs': Jobs,
-      'schools': Schools,
-      'hiking': Hiking,
-      'fishing': Fishing,
-      'weekend-itinerary': WeekendItinerary,
-    },
-    bozeman: {
-      'cost-of-living': BzmCostOfLiving,
-      'housing': BzmHousing,
-      'jobs': BzmJobs,
-      'schools': BzmSchools,
-      'hiking': BzmHiking,
-      'fishing': BzmFishing,
-      'weekend-itinerary': BzmWeekendItinerary,
-    },
-    kalispell: {
-      'cost-of-living': KalCostOfLiving,
-      'housing': KalHousing,
-      'jobs': KalJobs,
-      'schools': KalSchools,
-      'hiking': KalHiking,
-      'fishing': KalFishing,
-      'weekend-itinerary': KalWeekendItinerary,
-    },
-    whitefish: {
-      'cost-of-living': WfCostOfLiving,
-      'housing': WfHousing,
-      'jobs': WfJobs,
-      'schools': WfSchools,
-      'hiking': WfHiking,
-      'fishing': WfFishing,
-      'weekend-itinerary': WfWeekendItinerary,
-    },
-    helena: {
-      'cost-of-living': HelCostOfLiving,
-      'housing': HelHousing,
-      'jobs': HelJobs,
-      'schools': HelSchools,
-      'hiking': HelHiking,
-      'fishing': HelFishing,
-      'weekend-itinerary': HelWeekendItinerary,
-    },
-    billings: {
-      'cost-of-living': BilCostOfLiving,
-      'housing': BilHousing,
-      'jobs': BilJobs,
-      'schools': BilSchools,
-      'hiking': BilHiking,
-      'fishing': BilFishing,
-      'weekend-itinerary': BilWeekendItinerary,
-    },
-    'great-falls': {
-      'cost-of-living': GfCostOfLiving,
-      'housing': GfHousing,
-      'jobs': GfJobs,
-      'schools': GfSchools,
-      'hiking': GfHiking,
-      'fishing': GfFishing,
-      'weekend-itinerary': GfWeekendItinerary,
-    },
-    butte: {
-      'cost-of-living': BtCostOfLiving,
-      'housing': BtHousing,
-      'jobs': BtJobs,
-      'schools': BtSchools,
-      'hiking': BtHiking,
-      'fishing': BtFishing,
-      'weekend-itinerary': BtWeekendItinerary,
-    },
-    livingston: {
-      'cost-of-living': LvCostOfLiving,
-      'housing': LvHousing,
-      'jobs': LvJobs,
-      'schools': LvSchools,
-      'hiking': LvHiking,
-      'fishing': LvFishing,
-      'weekend-itinerary': LvWeekendItinerary,
-    },
-    'red-lodge': {
-      'cost-of-living': RlCostOfLiving,
-      'housing': RlHousing,
-      'jobs': RlJobs,
-      'schools': RlSchools,
-      'hiking': RlHiking,
-      'fishing': RlFishing,
-      'weekend-itinerary': RlWeekendItinerary,
-    },
-    hamilton: {
-      'cost-of-living': HamCostOfLiving,
-      'housing': HamHousing,
-      'jobs': HamJobs,
-      'schools': HamSchools,
-      'hiking': HamHiking,
-      'fishing': HamFishing,
-      'weekend-itinerary': HamWeekendItinerary,
-    },
-    'west-yellowstone': {
-      'cost-of-living': WyCostOfLiving,
-      'housing': WyHousing,
-      'jobs': WyJobs,
-      'schools': WySchools,
-      'hiking': WyHiking,
-      'fishing': WyFishing,
-      'weekend-itinerary': WyWeekendItinerary,
-    },
-    'big-sky': {
-      'cost-of-living': BsCostOfLiving,
-      'housing': BsHousing,
-      'jobs': BsJobs,
-      'schools': BsSchools,
-      'hiking': BsHiking,
-      'fishing': BsFishing,
-      'weekend-itinerary': BsWeekendItinerary,
-    },
-    'miles-city': {
-      'cost-of-living': McCostOfLiving,
-      'housing': McHousing,
-      'jobs': McJobs,
-      'schools': McSchools,
-      'hiking': McHiking,
-      'fishing': McFishing,
-      'weekend-itinerary': McWeekendItinerary,
-    },
-  };
 
   const TopicComponent = topicComponents[slug]?.[topic] ?? topicComponents.missoula[topic];
 
