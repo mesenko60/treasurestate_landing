@@ -20,6 +20,7 @@ const CITY_NAMES: Record<string, string> = {
   dillon: 'Dillon',
   'columbia-falls': 'Columbia Falls',
   anaconda: 'Anaconda',
+  bigfork: 'Bigfork',
 };
 
 type Props = {

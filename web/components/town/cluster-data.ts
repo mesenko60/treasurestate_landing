@@ -2001,6 +2001,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  bigfork: {
+    hubIntro: `Bigfork is a resort village of roughly 5,000 residents in Flathead County, sitting at 2,940 feet elevation on the northeast shore of Flathead Lake — the largest natural freshwater lake west of the Mississippi. Often called the "Village by the Bay," Bigfork has been recognized as one of the 100 Best Small Art Towns in the Nation, blending a thriving gallery scene with world-class outdoor recreation.\n\nThe Swan River flows through the heart of town before emptying into Flathead Lake. Glacier Park International Airport in Kalispell is a 30-minute drive, and the west entrance to Glacier National Park is about an hour north. Jewel Basin Hiking Area, with 35+ miles of trails and alpine lakes, begins just 10 miles east. Within 50 miles there are 392 recreation sites including 69 trailheads, 72 lakes, 29 waterfalls, 91 campgrounds, 11 fishing access sites, 5 state parks, 7 wilderness areas, and 22 ski areas. Whitefish Mountain Resort is 25 miles north, and Blacktail Mountain ski area is 25 miles south.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Bigfork, Montana',
+        metaTitle: 'Cost of Living in Bigfork, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Bigfork? Median home value $614K, income $83K, affordability ratio 9.2. Living costs in Flathead Lake\u2019s premier art village.',
+        description: 'A detailed breakdown of what it costs to live in Bigfork \u2014 housing, income, affordability, and how it compares to nearby Kalispell and Whitefish.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Bigfork, Montana Housing Market',
+        metaTitle: 'Bigfork, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Bigfork housing data: Zillow value $759K, 101 active listings, median list $993K. Resort-driven market on Flathead Lake\u2019s northeast shore.',
+        description: 'Current housing market data for Bigfork including home values, inventory trends, and the impact of resort and second-home demand.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Bigfork, Montana',
+        metaTitle: 'Jobs & Economy in Bigfork, Montana (2026) | Treasure State',
+        metaDescription: 'Bigfork job market: 2.9% unemployment, tourism and arts-driven economy. Job score 9.3 with strong professional services sector.',
+        description: "Bigfork's economy by the numbers \u2014 from tourism and arts to professional services, plus workforce data and seasonal employment patterns.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Bigfork, Montana',
+        metaTitle: 'Schools & Education in Bigfork, Montana (2026) | Treasure State',
+        metaDescription: 'Bigfork schools: 93% graduation rate, 900 enrolled, school score 9.3. District info and what families moving to the Flathead need to know.',
+        description: 'School district information, graduation rates, and what families should know about education in Bigfork.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Bigfork, Montana',
+        metaTitle: 'Hiking Near Bigfork, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Bigfork: Jewel Basin (35+ miles of trails), 69 trailheads, 29 waterfalls, Swan Range wilderness. Trail guides and conditions.',
+        description: 'The best trails and hikes near Bigfork \u2014 from Jewel Basin alpine lakes to Swan River nature walks and Flathead Lake shoreline paths.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Bigfork, Montana',
+        metaTitle: 'Fishing Near Bigfork, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Bigfork: Flathead Lake, Swan River, 72 lakes, 11 access sites. Lake trout, bull trout, cutthroat, and kokanee salmon.',
+        description: 'Complete fishing guide for Bigfork \u2014 from Flathead Lake mackinaw to Swan River fly fishing and high-alpine lake trout.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Bigfork, Montana',
+        metaTitle: 'Weekend in Bigfork, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Bigfork: Flathead Lake, art galleries, Jewel Basin hiking, Swan River, Summer Playhouse. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Bigfork \u2014 lakeside village, mountain trails, gallery walks, and summer theater.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Bigfork, Montana?',
+        answer: "Bigfork is a premium Flathead Valley community. The census median home value is $614,300 with the Zillow Home Value Index at $758,524 as of January 2026. The median list price of $993,000 reflects strong demand for lakefront and view properties. Median household income is $82,648, producing an affordability ratio of 9.2. Median rent is $1,103. The 29% vacancy rate \u2014 highest in the Flathead Valley \u2014 reflects the large share of second homes and vacation properties. Bigfork is less expensive than Whitefish but more costly than Kalispell or Columbia Falls.",
+      },
+      {
+        question: 'What is Flathead Lake?',
+        answer: "Flathead Lake is the largest natural freshwater lake west of the Mississippi River, covering nearly 200 square miles with 185 miles of shoreline. The lake sits at 2,893 feet elevation and reaches a maximum depth of 370 feet. Bigfork is situated on the northeast shore where the Swan River enters the lake. The lake supports lake trout (mackinaw), bull trout, yellow perch, whitefish, and westslope cutthroat. Wild Horse Island State Park, a 2,163-acre island with wild horses and bighorn sheep, is accessible by boat from Bigfork. The Flathead cherries grown along the east shore are famous throughout Montana.",
+      },
+      {
+        question: 'What is the Jewel Basin Hiking Area?',
+        answer: "Jewel Basin is a 15,349-acre designated hiking area in the Flathead National Forest, about 10 miles east of Bigfork. It offers over 35 miles of trails through alpine terrain with 27 named alpine lakes. Unlike designated wilderness, Jewel Basin was set aside exclusively for hikers (no motorized or horse use). Popular destinations include Black Lake, Birch Lake, Twin Lakes, and the panoramic views from Mount Aeneas (7,528 ft). Trails range from moderate day hikes to multi-day backpacking loops. The area is typically snow-free from July through mid-October.",
+      },
+      {
+        question: 'What is the Bigfork Summer Playhouse?',
+        answer: "The Bigfork Summer Playhouse is a professional repertory theater that has been producing Broadway-caliber musicals and plays since 1960. Often called \u201CBroadway in the Rockies,\u201D it stages multiple full-scale productions each summer (typically late May through early September) in a 450-seat theater on Electric Avenue. The company draws talented actors, directors, and designers from across the country. It\u2019s one of the longest-running summer repertory theaters in the Northwest and a cultural anchor of the village.",
+      },
+      {
+        question: 'What fishing is available near Bigfork?',
+        answer: "Bigfork offers exceptional fishing. Flathead Lake (the town\u2019s front yard) holds trophy lake trout (mackinaw up to 30+ pounds), bull trout (catch-and-release), yellow perch, and whitefish. The Swan River flowing through town provides trout fishing. Within 50 miles there are 11 fishing access sites and 72 lakes. Echo Lake (3 miles), Loon Lake (6 miles), and the numerous Jewel Basin alpine lakes offer variety. The Flathead River system (10 miles) provides additional river fishing. Montana fishing license required; bull trout are catch-and-release only.",
+      },
+      {
+        question: 'How far is Bigfork from Glacier National Park?',
+        answer: "Bigfork is approximately 45 miles (about 1 hour) from the west entrance of Glacier National Park at West Glacier. The drive follows MT-35 north to Kalispell, then US-2 east. Going-to-the-Sun Road, one of America\u2019s most iconic scenic drives, begins at West Glacier. While Bigfork isn\u2019t the closest gateway town to Glacier (Columbia Falls and Whitefish are nearer), it offers a quieter, arts-focused alternative base with lakeside charm. Many visitors split their time between Glacier exploration and Flathead Lake recreation from Bigfork.",
+      },
+      {
+        question: 'What events happen in Bigfork?',
+        answer: "Bigfork has a packed events calendar. The Bigfork Whitewater Festival (late May) features kayak and raft competitions on the Swan River\u2019s Wild Mile. The Festival of the Arts (first weekend of August) is one of Montana\u2019s premier art fairs, drawing 100+ artists. Rumble in the Bay is a popular classic car show. The weekly Bigfork Community Market runs May through October. The Bigfork Summer Playhouse stages productions all summer. The Christmas Stroll in December transforms downtown with lights and festivities. The Tamarack Festival & Brewfest celebrates local craft beverages.",
+      },
+      {
+        question: 'What are winters like in Bigfork?',
+        answer: "Bigfork winters are cold but moderated by Flathead Lake. January averages 35\u00B0F high and 23\u00B0F low, with moderate snowfall. The lake effect keeps Bigfork slightly warmer than inland areas. Whitefish Mountain Resort (25 miles north) offers 3,000 acres of skiing. Blacktail Mountain (25 miles south) is a locals\u2019 favorite. Cross-country skiing and snowshoeing are popular in the Swan River Nature Trail and Jewel Basin lower trails. Ice fishing on smaller lakes (Echo Lake, Swan Lake) is a winter tradition. The community slows from the summer rush, offering a quieter, cozy village atmosphere.",
+      },
+      {
+        question: 'Is Bigfork a good place to retire?',
+        answer: "Bigfork is a popular retirement destination. The median household income of $82,648 and 48% labor force participation rate suggest a significant retired population. Attractions include the arts community, mild-by-Montana-standards winters (lake moderation), Flathead Lake recreation, excellent healthcare access in Kalispell (20 miles), low crime, and a walkable village center. Challenges include the high cost of housing (affordability ratio 9.2), seasonal tourism crowds, and limited local shopping. Montana has no sales tax, which benefits retirees. Many retirees split time between Bigfork and warmer climates.",
+      },
+      {
+        question: 'How do I get to Bigfork?',
+        answer: "Bigfork is on Montana Highway 35 along Flathead Lake\u2019s east shore, about 17 miles southeast of Kalispell and 35 miles south of Whitefish. Glacier Park International Airport (FCA) in Kalispell is a 30-minute drive, with daily flights to Denver, Minneapolis, Salt Lake City, Seattle, and other hubs. From Missoula, Bigfork is about 115 miles north via US-93 and MT-35. The scenic east-shore drive along MT-35 from Polson (45 miles south) is one of Montana\u2019s most beautiful routes, passing cherry orchards and lakeside communities.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
