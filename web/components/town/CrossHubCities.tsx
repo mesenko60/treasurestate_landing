@@ -24,6 +24,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   'deer-lodge': { name: 'Deer Lodge', tagline: 'Frontier ranching heritage & prison history' },
   'three-forks': { name: 'Three Forks', tagline: 'Birthplace of the Missouri River' },
   'choteau': { name: 'Choteau', tagline: 'Rocky Mountain Front & dinosaur country' },
+  'libby': { name: 'Libby', tagline: 'Kootenai Falls & Cabinet Mountains gateway' },
 };
 
 type Props = {

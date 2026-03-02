@@ -5871,6 +5871,26 @@
         "name": "Construction",
         "fullName": "Construction",
         "pct": 13.4
+      },
+      {
+        "name": "Professional Services",
+        "fullName": "Professional, Scientific & Technical Services",
+        "pct": 12.6
+      },
+      {
+        "name": "Tourism & Hospitality",
+        "fullName": "Accommodation, Food Services & Recreation",
+        "pct": 7.8
+      },
+      {
+        "name": "Agriculture & Mining",
+        "fullName": "Agriculture, Forestry, Fishing, Mining",
+        "pct": 7.6
+      },
+      {
+        "name": "Transportation",
+        "fullName": "Transportation & Warehousing",
+        "pct": 6.6
       }
     ],
     "mainIndustry": "Education & Healthcare",

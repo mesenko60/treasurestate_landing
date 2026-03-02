@@ -2331,6 +2331,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'libby': {
+    hubIntro: `Libby is a town of 2,775 residents in Lincoln County, sitting at 2,096 feet elevation in Montana\u2019s rugged northwest corner at the confluence of Libby Creek and the Kootenai River. Founded in 1892 when the Great Northern Railway arrived, Libby is surrounded by over 2 million acres of wilderness, including the Cabinet Mountains Wilderness (94,360 acres) and Kootenai National Forest. The turquoise Kootenai River runs through town and is renowned for world-class trout fishing.\n\nKootenai Falls, 11 miles east, is Montana\u2019s largest undammed waterfall and has been featured in \u201CThe River Wild\u201D and \u201CThe Revenant.\u201D A thrilling suspension bridge crosses 90 feet above the churning waters. Ross Creek Cedars Scenic Area offers ancient western red cedars over 1,000 years old. Libby Dam (1975) created 90-mile Lake Koocanusa. Turner Mountain Ski Area, 12 miles away, is known as \u201Cthe best little ski hill in Montana.\u201D Within 50 miles there are 140 recreation sites including 59 campgrounds, 20 ski areas, 17 lakes, 15 wildlife refuges, 3 hot springs, and 2 waterfalls.\n\nLibby sits on U.S. Highway 2, 35 miles from the Idaho border, 90 miles from Kalispell, and 160 miles from Spokane. Below you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Libby, Montana',
+        metaTitle: 'Cost of Living in Libby, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Libby? Median home $219K, rent $679, affordability ratio 8.5. Northwest Montana wilderness gateway.',
+        description: 'A detailed breakdown of what it costs to live in Libby \u2014 housing, income, affordability, and how it compares to nearby towns.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Libby, Montana Housing Market',
+        metaTitle: 'Libby, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Libby housing: Zillow value $334K, 72 active listings, 7% vacancy. Cabinet Mountains gateway market.',
+        description: 'Current housing market data for Libby including home values, inventory trends, and Kootenai River corridor dynamics.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Libby, Montana',
+        metaTitle: 'Jobs & Economy in Libby, Montana (2026) | Treasure State',
+        metaDescription: 'Libby job market: 1.9% unemployment, education & healthcare lead at 26.5%. Job score 9.5, tourism economy growing.',
+        description: "Libby's economy by the numbers \u2014 from healthcare and retail to growing recreation tourism, with workforce data.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Libby, Montana',
+        metaTitle: 'Schools & Education in Libby, Montana (2026) | Treasure State',
+        metaDescription: 'Libby schools: 83% graduation rate, 1,100 enrolled, school score 8.3. Lincoln County district.',
+        description: 'School district information, graduation rates, and what families should know about education in Libby.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Libby, Montana',
+        metaTitle: 'Hiking Near Libby, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Libby: Kootenai Falls, Cabinet Mountains Wilderness, Ross Creek Cedars, 6 trailheads. Trail guides.',
+        description: 'The best trails and hikes near Libby \u2014 from Kootenai Falls to Cabinet Mountains Wilderness and Ross Creek Cedars.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Libby, Montana',
+        metaTitle: 'Fishing Near Libby, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Libby: Kootenai River world-class trout, Lake Koocanusa, 17 lakes. Fly fishing guide.',
+        description: 'Complete fishing guide for Libby \u2014 Kootenai River trout, Lake Koocanusa, and backcountry streams.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Libby, Montana',
+        metaTitle: 'Weekend in Libby, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Libby: Kootenai Falls, Ross Creek Cedars, Cabinet Mountains, Turner Mountain. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Libby \u2014 waterfalls, ancient cedars, wilderness, and world-class fishing.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Libby, Montana?',
+        answer: "Libby offers relatively affordable housing for a Montana recreation town. The census median home value is $218,500, with the Zillow Home Value Index at $333,880 as of January 2026. Median household income is $39,261 (10th percentile nationally), producing an affordability ratio of 8.5. Median rent is $679 per month (14th percentile). The 7% vacancy rate indicates moderate availability. Libby has 1,535 housing units with 72 active listings. The low income reflects the town's transition from timber and mining to a more service-based economy, though housing remains cheaper than Kalispell or Whitefish.",
+      },
+      {
+        question: 'What is Kootenai Falls?',
+        answer: "Kootenai Falls, 11 miles east of Libby on U.S. Highway 2, is Montana's largest undammed waterfall. The Kootenai River drops through a dramatic gorge with turquoise water churning 90 feet below. A suspension bridge crosses the river, offering thrilling views. The falls have been featured in the 1994 thriller \u201CThe River Wild\u201D (Meryl Streep, Kevin Bacon) and the 2015 Oscar-winning \u201CThe Revenant\u201D (Leonardo DiCaprio). The Kootenai Falls Wildlife Management Area and Kootenai Falls Park provide access. The site is sacred to the Kootenai Tribe, who have used the river as a travel corridor for centuries.",
+      },
+      {
+        question: 'What is the Cabinet Mountains Wilderness?',
+        answer: "The Cabinet Mountains Wilderness covers 94,360 acres of pristine backcountry in the Cabinet Range, with peaks reaching 8,712 feet. The wilderness features rugged terrain, crystal-clear alpine lakes, ancient cedar groves, and abundant wildlife including grizzly bears, mountain goats, and elk. Ross Creek Cedars Scenic Area, on the wilderness edge, contains western red cedars over 1,000 years old and 12 feet in diameter. The Cabinet Mountains offer hiking, backpacking, and mountaineering. Access is from various trailheads along the Libby-Troy corridor. Bear country precautions are essential.",
+      },
+      {
+        question: 'What is Lake Koocanusa?',
+        answer: "Lake Koocanusa is a 90-mile-long reservoir created by Libby Dam, completed in 1975. The name combines Kootenai, Canada, and USA. The lake straddles the U.S.-Canada border and is popular for boating, fishing, water skiing, and camping. Lake Koocanusa Resort & Marina offers waterfront cabins. The dam itself, 11 miles northeast of Libby, is a notable viewpoint. The lake holds kokanee salmon, rainbow trout, and other species. The scenic drive along the lake to Eureka (65 miles northeast) is one of Montana's most beautiful routes.",
+      },
+      {
+        question: 'What is Turner Mountain Ski Area?',
+        answer: "Turner Mountain Ski Area, 12 miles from Libby, is a community-owned ski hill known as \u201Cthe best little ski hill in Montana.\u201D It offers 2,110 feet of vertical drop, uncrowded slopes, and affordable lift tickets. The area has a loyal local following and a family-friendly atmosphere. Snowmobiling and cross-country skiing are also popular in the surrounding Kootenai National Forest. The 20 ski areas within 50 miles of Libby reflect the region's strong winter recreation culture.",
+      },
+      {
+        question: 'How far is Libby from Glacier National Park?',
+        answer: "Libby is approximately 90 miles northwest of Glacier National Park's west entrance via U.S. Highway 2 and Montana Highway 37. The drive takes about 2 hours. Kalispell is the nearest major airport (90 miles southeast). Libby is also 35 miles from the Idaho border and 160 miles from Spokane, Washington. The scenic drive to Libby along U.S. 2 passes through the Kootenai National Forest and some of Montana's most spectacular landscapes.",
+      },
+      {
+        question: 'What is the fishing like in Libby?',
+        answer: "The Kootenai River, which runs through Libby, is world-class trout water. The river holds rainbow trout, cutthroat trout, and bull trout (native, protected). Lake Koocanusa offers kokanee salmon, rainbow trout, and lake trout. There are 17 lakes within 50 miles. The fishing season runs year-round with varying techniques. Fly fishing is popular on the Kootenai. Local outfitters and guides offer float trips. Kootenai Angler Guest Cabins cater specifically to fishing enthusiasts. A Montana fishing license is required.",
+      },
+      {
+        question: 'What is Libby\u2019s history?',
+        answer: "Libby's history includes the Kootenai Tribe's use of the river corridor, British explorer David Thompson's visit in the early 19th century, and a gold rush in 1866 when 500 prospectors flocked to Libby Creek. The Great Northern Railway arrived in 1892, establishing the town. Timber dominated the economy for decades; the J. Neils (later St. Regis) lumber mill employed over 1,500 at its peak. Vermiculite mining supplied 80% of the world's vermiculite until closure in 1990. Libby Dam construction (1966\u20131975) employed 2,000 workers. The Heritage Museum preserves this history.",
+      },
+      {
+        question: 'What events happen in Libby?',
+        answer: "Libby Logger Days celebrates the town's timber heritage. The Kootenai River Stampede Rodeo brings traditional rodeo action. The Riverfront Blues Festival draws music fans. Ignite the Nites is a popular car show. Nordicfest celebrates Scandinavian heritage. A Christmas tree lighting ceremony marks the holiday season. The area also hosts fishing tournaments and outdoor recreation events throughout the year.",
+      },
+      {
+        question: 'What should I know before visiting Libby?',
+        answer: "Libby is remote \u2014 the \u201Cright kind of remote.\u201D Fill up on gas before heading into the backcountry. Cell service can be spotty. Accommodations include the Evergreen Motel, Country Inn, Caboose Motel, Sandman Motel, and cabin rentals like Kootenai Angler Guest Cabins. Lake Koocanusa Resort offers waterfront stays. The Kootenai National Forest has multiple campgrounds. Best times to visit: summer for fishing and hiking, fall for hunting and fall colors, winter for Turner Mountain skiing. Bear country precautions apply when hiking the Cabinet Mountains.",
+      },
+    ],
+  },
   'three-forks': {
     hubIntro: `Three Forks is a small town of 1,989 residents in Gallatin County, sitting at 4,075 feet elevation at the exact spot where the Jefferson, Madison, and Gallatin Rivers converge to form the Missouri River. Meriwether Lewis named these three rivers on July 27, 1805, for President Jefferson, Secretary of State Madison, and Treasury Secretary Gallatin — making this confluence one of the most significant geographic landmarks in American exploration history.\n\nMissouri Headwaters State Park preserves the confluence 4 miles northeast of town and is a U.S. National Historic Landmark. Sacagawea, who guided Lewis and Clark, was captured near this site in 1800 and later returned with the expedition. The historic Sacajawea Hotel (1910) anchors downtown. Three Forks sits on Interstate 90 just 31 miles west of Bozeman and 64 miles east of Butte. Within 50 miles there are 244 recreation sites including 28 trailheads, 59 lakes, 43 campgrounds, 4 state parks, 13 hot springs, and 33 museums. Lewis & Clark Caverns State Park is 16 miles west, and Madison Buffalo Jump State Park is 15 miles southeast.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
