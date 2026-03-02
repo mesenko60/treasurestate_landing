@@ -34,7 +34,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at 3,816 feet on the high plains east of the Rocky Mountain Front in
-        north-central Montana, the seat of Teton County, 60 miles west of Great Falls. With{' '}
+        north-central Montana, the seat of Teton County, 60 miles northwest of Great Falls. With{' '}
         <strong>29 lakes</strong> within 50 miles, <strong>1 fishing access site</strong>,
         and rivers flowing east from the Bob Marshall Wilderness, {townName} offers a mix of
         prairie reservoir fishing, freestone river trout fishing, and bucket-list backcountry

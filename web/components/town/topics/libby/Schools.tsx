@@ -85,7 +85,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
       <p>
         Wildlife biology, ecology, and conservation are not abstract concepts here — they are the
         landscape students see every day. Grizzly bears, elk, mountain goats, and other wildlife
-        inhabit the Cabinet Mountains west of town. This proximity to intact ecosystems creates a
+        inhabit the Cabinet Mountains east of town. This proximity to intact ecosystems creates a
         natural curriculum for environmental science, biology, and outdoor recreation that
         enriches classroom learning in ways that urban and suburban districts cannot replicate.
       </p>

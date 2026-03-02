@@ -76,7 +76,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         <li><strong>Best months:</strong> Late March for snow goose migration; June{'\u2013'}August for hiking, dinosaur digs, and fishing; September{'\u2013'}October for fall migration and hunting</li>
         {summerClimate && <li><strong>Summer weather:</strong> Highs around {summerClimate.avgHigh}{'\u00B0'}F, lows near {summerClimate.avgLow}{'\u00B0'}F</li>}
         {winterClimate && <li><strong>Winter weather:</strong> Highs around {winterClimate.avgHigh}{'\u00B0'}F, lows near {winterClimate.avgLow}{'\u00B0'}F with significant wind chill along the Front</li>}
-        <li><strong>Getting here:</strong> US-89 from Great Falls (60 miles south); {townName} sits between Glacier and Yellowstone on the US-89 corridor</li>
+        <li><strong>Getting here:</strong> US-89 from Great Falls (60 miles southeast); {townName} sits between Glacier and Yellowstone on the US-89 corridor</li>
         <li><strong>Getting around:</strong> Car essential; attractions range from in-town to 28 miles into the mountains</li>
         <li><strong>Budget tip:</strong> Montana has no sales tax; {townName} lodging and dining are well below resort-town prices</li>
         <li><strong>Key distances:</strong> Freezout Lake WMA 10 mi, Bynum/Montana Dinosaur Center 13 mi, Teton Pass Ski Area 16 mi, Ear Mountain WMA 22 mi, Blackleaf Canyon 25 mi, Great Falls 60 mi</li>
@@ -367,7 +367,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         destination, and prices reflect that.
       </p>
       <p>
-        Great Falls (60 miles south on US-89) provides additional hotel options,
+        Great Falls (60 miles southeast on US-89) provides additional hotel options,
         restaurants, and the Lewis and Clark Interpretive Center if you want to
         extend your trip. Many visitors use {townName} as a base for exploring
         the Rocky Mountain Front and the Bob Marshall Wilderness, or as a stop

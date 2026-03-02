@@ -124,8 +124,8 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
       <p>
         The Stage Stop Inn, local outfitters, hunting guides, and guest ranches provide tourism
         employment. The Montana Dinosaur Center in Bynum (13 miles away) adds to the regional draw.
-        Seasonal tourism brings a summer employment surge, but winter quiets significantly — a
-        pattern typical of Front Range communities without a ski area.
+        Seasonal tourism brings a summer employment surge, but winter quiets significantly —
+        though Teton Pass Ski Area (16 miles west) provides some winter recreation traffic.
       </p>
 
       <h2>Healthcare and Government</h2>
