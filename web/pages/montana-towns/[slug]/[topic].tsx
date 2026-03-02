@@ -160,6 +160,15 @@ const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
     'fishing': dynamic(() => import('../../../components/town/topics/dillon/Fishing')),
     'weekend-itinerary': dynamic(() => import('../../../components/town/topics/dillon/WeekendItinerary')),
   },
+  'columbia-falls': {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/columbia-falls/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/columbia-falls/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/columbia-falls/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/columbia-falls/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/columbia-falls/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/columbia-falls/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/columbia-falls/WeekendItinerary')),
+  },
 };
 
 type RecPlace = { name: string; type: string; distMiles: number };

@@ -1780,6 +1780,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'columbia-falls': {
+    hubIntro: `Columbia Falls is a gateway town of 5,308 residents in Flathead County, sitting at 3,077 feet elevation just 17 miles from the west entrance of Glacier National Park. Once an aluminum-smelting and timber hub, the town has evolved into Northwest Montana's most accessible basecamp for exploring Glacier and the surrounding wilderness.\n\nGlacier Park International Airport is just 8 miles south, and Going-to-the-Sun Road\u2009—\u2009one of America's most iconic scenic drives\u2009—\u2009begins 17 miles east. The North Fork Road starts in Columbia Falls and leads to the park's remote northwest corner. Within 50 miles there are 439 recreation sites including 84 trailheads, 44 waterfalls, 59 lakes, 131 campgrounds, 16 viewpoints, 5 wilderness areas, and 5 state parks. Whitefish Mountain Resort is 11 miles north, Hungry Horse Reservoir stretches 34 miles along the park's southern boundary, and the Great Bear Wilderness begins 55 miles east.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Columbia Falls, Montana',
+        metaTitle: 'Cost of Living in Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Columbia Falls? Median home value $347K, income $65K, affordability ratio 8.9. Living costs at Glacier National Park\u2019s doorstep.',
+        description: 'A detailed breakdown of what it costs to live in Columbia Falls\u2009\u2014\u2009housing, income, affordability, and how it compares to nearby Whitefish and Kalispell.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Columbia Falls, Montana Housing Market',
+        metaTitle: 'Columbia Falls, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Columbia Falls housing data: Zillow value $582K, 84 active listings, inventory down 18.4%. Market trends near Glacier National Park.',
+        description: 'Current housing market data for Columbia Falls including home values, inventory trends, and the impact of Glacier Park proximity.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Columbia Falls, Montana',
+        metaTitle: 'Jobs & Economy in Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Columbia Falls job market: 6.8% unemployment, tourism-driven economy. Post-aluminum transition, construction boom, and Glacier Park employment.',
+        description: "Columbia Falls' economy by the numbers\u2009\u2014\u2009from aluminum smelter legacy to tourism gateway, plus top employers and workforce data.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Columbia Falls, Montana',
+        metaTitle: 'Schools & Education in Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Columbia Falls schools: 87% graduation rate, 1,800 enrolled. District info, FVCC, and what families moving to the Glacier corridor need to know.',
+        description: 'School district information, graduation rates, and what families should know about education in Columbia Falls.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Columbia Falls, Montana',
+        metaTitle: 'Hiking Near Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Columbia Falls: 84 trailheads, 44 waterfalls, Glacier National Park trails, Great Bear Wilderness. Trail guides and conditions.',
+        description: 'The best trails and hikes near Columbia Falls\u2009\u2014\u2009from Glacier Park icons to hidden waterfalls and wilderness adventures.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Columbia Falls, Montana',
+        metaTitle: 'Fishing Near Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Columbia Falls: Flathead River, Hungry Horse Reservoir, 11 access sites, 59 lakes. Species, access, and Glacier-area fishing guides.',
+        description: 'Complete fishing guide for Columbia Falls\u2009\u2014\u2009from Flathead River cutthroat to Hungry Horse Reservoir lake trout.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Columbia Falls, Montana',
+        metaTitle: 'A Weekend in Columbia Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Plan a weekend in Columbia Falls: Glacier National Park, Going-to-the-Sun Road, Hungry Horse Dam, waterfalls. Day-by-day itinerary.',
+        description: 'A day-by-day guide for a perfect weekend in Columbia Falls\u2009\u2014\u2009Glacier Park, waterfalls, river adventures, and mountain views.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Columbia Falls, Montana?',
+        answer: "Columbia Falls has a median household income of $65,313 with a census median home value of $346,700. The Zillow Home Value Index as of January 2026 is $581,522, reflecting strong demand driven by Glacier Park proximity and Flathead Valley growth. The affordability ratio of 8.9 makes Columbia Falls more affordable than neighboring Whitefish but increasingly expensive. Median rent is $1,003. The 9.5% vacancy rate is moderate, with some seasonal tourism influence.",
+      },
+      {
+        question: 'How far is Columbia Falls from Glacier National Park?',
+        answer: "Columbia Falls is 17 miles (about 25 minutes) from the west entrance of Glacier National Park at West Glacier. Going-to-the-Sun Road, Apgar Village, and Lake McDonald are all within a 30-minute drive. The North Fork Road to Polebridge and the park\u2019s remote northwest corner begins in Columbia Falls. This proximity\u2009\u2014\u2009closer than Kalispell (32 miles) or Whitefish (25 miles)\u2009\u2014\u2009makes Columbia Falls the most convenient gateway town for daily park visits.",
+      },
+      {
+        question: 'What happened to the Columbia Falls Aluminum Company?',
+        answer: "The Columbia Falls Aluminum Company operated for over 60 years, opening in the 1950s and becoming the town's largest employer and economic anchor. The smelter closed permanently in 2015 due to high electricity costs and global aluminum market conditions. The closure was a significant economic blow, but the town has diversified into tourism, construction, and small manufacturing. The site is being remediated and redeveloped. Columbia Falls' transition from industrial town to Glacier gateway community is ongoing.",
+      },
+      {
+        question: 'What are winters like in Columbia Falls?',
+        answer: "Columbia Falls winters are cold and snowy. January averages 34\u00B0F high and 20\u00B0F low. The town receives significant snowfall, though less than the mountain passes. Whitefish Mountain Resort is just 11 miles north, offering 3,000 acres of skiable terrain. Going-to-the-Sun Road closes for winter (typically mid-October to late June), but the park\u2019s west side remains accessible for snowshoeing and cross-country skiing. Snowmobiling on Flathead National Forest trails is popular.",
+      },
+      {
+        question: 'Is Columbia Falls cheaper than Whitefish?',
+        answer: "Yes. Columbia Falls is significantly more affordable than Whitefish. The Zillow home value in Columbia Falls ($581K) is well below Whitefish ($835K+). Median income is similar, but Columbia Falls\u2019 affordability ratio (8.9) is better than Whitefish (11.7). Rents are also lower. Many people who work in Whitefish or at Glacier National Park live in Columbia Falls for the lower housing costs while maintaining easy access to both destinations (11 miles to Whitefish, 17 miles to Glacier).",
+      },
+      {
+        question: 'What fishing is available near Columbia Falls?',
+        answer: "Columbia Falls offers excellent fishing. The Flathead River system (Middle and South Forks, mainstem) provides trout fishing within 20 miles. Hungry Horse Reservoir (11 miles) is a 34-mile-long reservoir with lake trout, bull trout, and westslope cutthroat. Within 50 miles there are 11 fishing access sites and 59 lakes. Whitefish Lake (9 miles) is popular for lake trout and whitefish. Glacier National Park waters require a park pass but no additional fishing license. Bull trout are catch-and-release only throughout the region.",
+      },
+      {
+        question: 'What waterfalls are near Columbia Falls?',
+        answer: "Columbia Falls has extraordinary waterfall access with 44 waterfalls within 50 miles, primarily in Glacier National Park. Notable falls include McDonald Falls (24 miles), Red Rock Falls (28 miles), Baring Falls, St. Mary Falls, Virginia Falls, and Running Eagle Falls (Trick Falls). Many are accessible via short hikes from Going-to-the-Sun Road or Two Medicine. Outside the park, trails in the Flathead National Forest and Hungry Horse area also lead to cascades.",
+      },
+      {
+        question: 'What is Hungry Horse Dam?',
+        answer: "Hungry Horse Dam is a 564-foot-high concrete arch dam on the South Fork of the Flathead River, completed in 1953. It created Hungry Horse Reservoir, a 34-mile-long lake surrounded by the Flathead National Forest. The reservoir offers boating, fishing, and camping. A visitor center at the dam provides interpretive displays and panoramic views. The dam is 11 miles east of Columbia Falls along US-2 and is a popular stop on the way to Glacier National Park.",
+      },
+      {
+        question: 'What events happen in Columbia Falls?',
+        answer: "Columbia Falls\u2019 signature event is Heritage Days (last weekend in July), featuring parades, a carnival, live music, and the unique tradition of running wild horses through town. Other events include the Night of Lights Parade in December, the Columbia Falls Community Market (Thursdays, May\u2013September), and various Glacier Park-related seasonal events. Big Sky Waterpark operates during summer. The town also hosts the Montana Vortex\u2009\u2014\u2009a quirky roadside attraction with optical illusions.",
+      },
+      {
+        question: 'How do I get to Columbia Falls?',
+        answer: "Columbia Falls is on US Highway 2 in northwest Montana, 15 miles northeast of Kalispell and 17 miles from Glacier National Park\u2019s west entrance. Glacier Park International Airport (FCA) is just 8 miles south, with daily flights to Denver, Minneapolis, Salt Lake City, Seattle, and other hubs. Amtrak\u2019s Empire Builder stops in nearby Whitefish (16 miles) and West Glacier (17 miles). From Missoula, Columbia Falls is about 130 miles north via US-93. The town sits at the junction of US-2 and MT-206.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
