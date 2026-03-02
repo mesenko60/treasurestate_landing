@@ -237,10 +237,36 @@ export default function TopicPage(props: Props) {
         <meta name="twitter:description" content={guide.metaDescription} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: breadcrumbItems.map((item, i) => ({
-            '@type': 'ListItem', position: i + 1, name: item.name, item: item.url,
-          })),
+          '@type': 'Article',
+          headline: guide.h1,
+          description: guide.metaDescription,
+          url: `https://treasurestate.com/montana-towns/${slug}/${topic}/`,
+          image: ogImage,
+          datePublished: '2026-01-15T00:00:00-07:00',
+          dateModified: '2026-02-21T00:00:00-07:00',
+          author: {
+            '@type': 'Organization',
+            name: 'Treasure State',
+            url: 'https://treasurestate.com',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Treasure State',
+            url: 'https://treasurestate.com',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://treasurestate.com/favicon-512x512.png',
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `https://treasurestate.com/montana-towns/${slug}/${topic}/`,
+          },
+          about: {
+            '@type': 'City',
+            name: townName,
+            containedInPlace: { '@type': 'State', name: 'Montana' },
+          },
         }) }} />
       </Head>
 

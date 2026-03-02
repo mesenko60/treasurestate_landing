@@ -7,9 +7,15 @@ export default function GlobalSchema() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${websiteUrl}/#organization`,
     name: 'Treasure State',
     url: websiteUrl,
-    logo: `${websiteUrl}/images/hero-image.jpg`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${websiteUrl}/favicon-512x512.png`,
+      width: 512,
+      height: 512,
+    },
     description: 'Your ultimate travel guide and directory for exploring the cities, towns, and history of Montana, The Treasure State.',
   };
 
