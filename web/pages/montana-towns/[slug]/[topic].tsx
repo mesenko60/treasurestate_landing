@@ -76,6 +76,14 @@ import BtHiking from '../../../components/town/topics/butte/Hiking';
 import BtFishing from '../../../components/town/topics/butte/Fishing';
 import BtWeekendItinerary from '../../../components/town/topics/butte/WeekendItinerary';
 
+import LvCostOfLiving from '../../../components/town/topics/livingston/CostOfLiving';
+import LvHousing from '../../../components/town/topics/livingston/Housing';
+import LvJobs from '../../../components/town/topics/livingston/Jobs';
+import LvSchools from '../../../components/town/topics/livingston/Schools';
+import LvHiking from '../../../components/town/topics/livingston/Hiking';
+import LvFishing from '../../../components/town/topics/livingston/Fishing';
+import LvWeekendItinerary from '../../../components/town/topics/livingston/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -187,6 +195,15 @@ export default function TopicPage(props: Props) {
       'hiking': BtHiking,
       'fishing': BtFishing,
       'weekend-itinerary': BtWeekendItinerary,
+    },
+    livingston: {
+      'cost-of-living': LvCostOfLiving,
+      'housing': LvHousing,
+      'jobs': LvJobs,
+      'schools': LvSchools,
+      'hiking': LvHiking,
+      'fishing': LvFishing,
+      'weekend-itinerary': LvWeekendItinerary,
     },
   };
 

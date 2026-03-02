@@ -900,6 +900,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  livingston: {
+    hubIntro: `Livingston is a small city of 8,040 residents at the mouth of Paradise Valley in Park County, serving as the original gateway to Yellowstone National Park since the Northern Pacific Railroad first brought tourists here in the 1880s. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/livingston/cost-of-living/">housing costs</a> and <a href="/montana-towns/livingston/jobs/">job opportunities</a> to <a href="/montana-towns/livingston/fishing/">world-class fly fishing</a> and a <a href="/montana-towns/livingston/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSitting at 4,501 feet where the Yellowstone River exits the Absaroka Range, Livingston pairs a well-preserved historic downtown with a vibrant arts and literary community \u2014 home over the years to writers like Tom McGuane, Jim Harrison, and Tim Cahill. The north entrance of Yellowstone is 44 miles south through Paradise Valley, Chico Hot Springs is 21 miles away, and Bridger Bowl ski area is just 19 miles to the west. With 301 recreation sites within 50 miles, including 28 trailheads, 145 lakes, and the Yellowstone River flowing right through town, Livingston offers outdoor access that rivals cities many times its size.\n\nAt an affordability ratio of 7.8, Livingston is more expensive than Montana\u2019s larger cities but far more accessible than neighboring Bozeman. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Livingston, Montana',
+        metaTitle: 'Cost of Living in Livingston, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Livingston? Median home value $510K, rent $1,839/mo, income $65K. Affordability ratio 7.8 and how Livingston compares statewide.',
+        description: 'A detailed breakdown of what it costs to live in Livingston \u2014 housing, income, affordability, and how it compares to Bozeman and the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Livingston, Montana Housing Market',
+        metaTitle: 'Livingston, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Livingston housing market data: median home value $510K, 55 active listings, 3.2% vacancy rate. A tight market at the gateway to Yellowstone.',
+        description: 'Current housing market data for Livingston including home values, rental rates, inventory trends, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Livingston, Montana',
+        metaTitle: 'Jobs & Economy in Livingston, Montana (2026) | Treasure State',
+        metaDescription: 'Livingston job market: 3.4% unemployment, 70.6% labor participation, led by professional services (17.3%) and tourism (13.2%). Creative economy insights.',
+        description: "Livingston\u2019s job market by the numbers \u2014 a creative economy, Yellowstone tourism, and the highest labor force participation in Montana.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Livingston, Montana',
+        metaTitle: 'Schools in Livingston, Montana \u2014 K-12 Guide | Treasure State',
+        metaDescription: 'Guide to Livingston schools: Livingston Public Schools (1,400 students, 88% graduation rate), Park High School, and proximity to MSU Bozeman.',
+        description: 'Guide to Livingston schools from K-12 through nearby college options, including enrollment, graduation rates, and spending.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Livingston, Montana',
+        metaTitle: 'Best Hiking Near Livingston, Montana \u2014 Trails & Routes | Treasure State',
+        metaDescription: '28 trailheads near Livingston including Pine Creek, Absaroka Range, and Yellowstone access. Paradise Valley trails and seasonal tips.',
+        description: 'The best hiking near Livingston \u2014 from Paradise Valley to the Absaroka Range and Yellowstone, with distances and tips.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Livingston, Montana',
+        metaTitle: 'Fishing Near Livingston, Montana \u2014 Yellowstone River & More | Treasure State',
+        metaDescription: 'Fishing near Livingston on the Yellowstone River, spring creeks, and 145 mountain lakes. Legendary dry-fly water, Dan Bailey\u2019s, and seasonal tips.',
+        description: 'World-class fly fishing near Livingston on the Yellowstone River, Paradise Valley spring creeks, and 145 mountain lakes within 50 miles.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Livingston, Montana',
+        metaTitle: 'Weekend in Livingston, Montana \u2014 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Livingston: Paradise Valley, Chico Hot Springs, Yellowstone day trip, historic downtown galleries, and local dining.',
+        description: 'How to spend a weekend in Livingston \u2014 a day-by-day guide covering the gateway to Yellowstone, Paradise Valley, and Montana\u2019s arts town.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Livingston, Montana?',
+        answer: "Livingston\u2019s median household income is $65,187 with a median home value of $510,282 (Zillow, January 2026). The affordability ratio of 7.8 reflects Livingston\u2019s desirability as a Yellowstone gateway and arts community. Median rent is $1,839 per month. While more expensive than Great Falls or Butte, Livingston remains more affordable than Bozeman (25 miles west) for comparable access to the same outdoor recreation.",
+      },
+      {
+        question: 'How far is Livingston from Yellowstone National Park?',
+        answer: "Livingston is 44 miles from the north entrance of Yellowstone National Park at Gardiner, about a 55-minute drive south through Paradise Valley along the Yellowstone River. The west entrance at West Yellowstone is 74 miles away. Livingston was the original gateway to Yellowstone when the Northern Pacific Railroad first brought tourists in the 1880s.",
+      },
+      {
+        question: 'Is Livingston a good place to live?',
+        answer: "Livingston offers a rare combination: a vibrant arts and literary community, a historic downtown with galleries and restaurants, the Yellowstone River flowing through town, and 301 recreation sites within 50 miles \u2014 all in a city of just 8,040 people. The 70.6% labor force participation rate (highest of any profiled city) reflects an entrepreneurial, self-employed culture. The trade-offs are wind, a tight housing market (3.2% vacancy), and limited healthcare facilities.",
+      },
+      {
+        question: 'What outdoor recreation is near Livingston?',
+        answer: "Livingston has 301 recreation sites within 50 miles, including 28 trailheads, 145 lakes, 7 fishing access sites, and 7 hot springs. Yellowstone National Park is 44 miles south. Chico Hot Springs (21 miles) is a historic resort in Paradise Valley. Bridger Bowl (19 miles) and Big Sky Resort (48 miles) provide skiing. The Yellowstone River flows through town for year-round fly fishing.",
+      },
+      {
+        question: 'Why is Livingston so windy?',
+        answer: "Livingston sits at the mouth of the Yellowstone River valley where it exits a narrow canyon into the open Shields Valley. This geographic funnel accelerates winds from the southwest, making Livingston one of the windiest places in Montana. Winter Chinook winds can gust past 60 mph. Locals embrace the wind as part of the town\u2019s character \u2014 it keeps the crowds away, they say.",
+      },
+      {
+        question: 'What are the main industries in Livingston?',
+        answer: "Livingston\u2019s economy is unusually diversified for a small town. Education and healthcare leads at 18%, but professional services (17.3%) is nearly equal \u2014 reflecting the writers, artists, consultants, and remote workers who call Livingston home. Tourism and hospitality (13.2%) is driven by Yellowstone proximity. The 70.6% labor force participation rate is the highest of any city in this guide.",
+      },
+      {
+        question: 'Is there good fishing near Livingston?',
+        answer: "Livingston is one of Montana\u2019s premier fly-fishing destinations. The Yellowstone River flows through town and is blue-ribbon trout water for its entire length through Paradise Valley. Dan Bailey\u2019s Fly Shop, founded in 1938, helped put Livingston on the fly-fishing map. The Boulder River (27 miles), Gallatin River (31 miles), and 145 mountain lakes add variety. Seven fishing access sites provide public river entry.",
+      },
+      {
+        question: 'What is the housing market like in Livingston?',
+        answer: "As of January 2026, Livingston\u2019s median home value is $510,282 (Zillow) with just 55 homes for sale and 8 new listings per month \u2014 one of Montana\u2019s tightest markets. Inventory has declined 8.3% year-over-year. The 3.2% vacancy rate reflects demand from second-home buyers and vacation rentals. Across 4,220 total housing units, the median list price is $524,967.",
+      },
+      {
+        question: 'What is Paradise Valley?',
+        answer: "Paradise Valley is the 50-mile stretch of the Yellowstone River valley between Livingston and Gardiner (the north entrance to Yellowstone). Flanked by the Absaroka Range to the east and the Gallatin Range to the west, it\u2019s one of Montana\u2019s most scenic corridors. Chico Hot Springs resort, Pine Creek Falls, and Dailey Lake are along the route. The valley is home to ranches, writers\u2019 retreats, and some of the state\u2019s best fly fishing.",
+      },
+      {
+        question: 'Can you fly into Livingston?',
+        answer: "Livingston does not have commercial air service. The nearest airport is Bozeman Yellowstone International Airport (BZN), about 30 miles west \u2014 Montana\u2019s busiest airport with daily flights to major hubs. Livingston sits on I-90, about 25 miles east of Bozeman and 116 miles west of Billings. US-89 runs south through Paradise Valley to Yellowstone.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
