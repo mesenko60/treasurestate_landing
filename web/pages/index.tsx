@@ -65,6 +65,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Treasure State',
+    alternateName: 'TreasureState',
     url: 'https://treasurestate.com',
     description: siteDesc,
     potentialAction: {
