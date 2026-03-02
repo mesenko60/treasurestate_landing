@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
-import TownDirectory from '../components/TownDirectory';
-import { getTownList } from '../lib/towns';
+import Header from '../../components/Header';
+import Hero from '../../components/Hero';
+import Footer from '../../components/Footer';
+import TownDirectory from '../../components/TownDirectory';
+import { getTownList } from '../../lib/towns';
 import fs from 'fs';
 import path from 'path';
 
@@ -36,13 +36,16 @@ export default function TownsIndex({ towns }: { towns: any[] }) {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://treasurestate.com/Montana-towns/" />
+        <link rel="canonical" href="https://treasurestate.com/montana-towns/" />
         <title>Montana Cities and Towns - Treasure State</title>
         <meta name="description" content="Browse Montana cities and towns. Find guides, things to do, and lodging." />
         <meta property="og:title" content="Montana Cities and Towns - Treasure State" />
+        <meta property="og:description" content="Browse Montana cities and towns. Find guides, things to do, and lodging." />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <meta property="og:url" content="https://treasurestate.com/Montana-towns/" />
+        <meta property="og:url" content="https://treasurestate.com/montana-towns/" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Montana Cities and Towns - Treasure State" />
+        <meta name="twitter:description" content="Browse Montana cities and towns. Find guides, things to do, and lodging." />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />

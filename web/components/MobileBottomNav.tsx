@@ -17,7 +17,7 @@ export default function MobileBottomNav() {
         <span>Home</span>
       </Link>
       
-      <Link href="/Montana-towns" className={isActive('/Montana-towns') || isActive('/montana-towns') ? 'active' : ''}>
+      <Link href="/montana-towns" className={isActive('/montana-towns') ? 'active' : ''}>
         <div className="icon">🗺️</div>
         <span>Towns</span>
       </Link>

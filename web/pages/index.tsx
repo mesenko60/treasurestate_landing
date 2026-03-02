@@ -69,7 +69,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
     description: siteDesc,
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://treasurestate.com/Montana-towns?q={search_term_string}',
+      target: 'https://treasurestate.com/montana-towns?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
@@ -261,7 +261,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             Data-driven relocation tools: compare cost of living, housing, jobs, schools, and healthcare across {totalTowns} towns.
           </div>
           <div className="hp-path-links">
-            <Link href="/Montana-towns" className="hp-path-link">Town Profiles</Link>
+            <Link href="/montana-towns" className="hp-path-link">Town Profiles</Link>
             <Link href="/compare" className="hp-path-link">Compare Towns</Link>
             <Link href="/guides" className="hp-path-link">Moving Guides</Link>
             <Link href="/best-of/most-affordable-towns" className="hp-path-link">Most Affordable</Link>
@@ -293,7 +293,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           <p className="hp-section-sub">Everything you need to find the right Montana town</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
             {[
-              { href: '/Montana-towns', icon: '🗺️', label: 'Browse Towns', desc: `${totalTowns} detailed profiles` },
+              { href: '/montana-towns', icon: '🗺️', label: 'Browse Towns', desc: `${totalTowns} detailed profiles` },
               { href: '/compare', icon: '⚖️', label: 'Compare Towns', desc: `${totalComparisons} side-by-side pairs` },
               { href: '/guides', icon: '📋', label: 'Moving Guides', desc: `${totalGuides} relocation guides` },
               { href: '/best-of', icon: '🏆', label: 'Best Of Rankings', desc: `${totalRankings} data-driven lists` },
@@ -421,7 +421,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '1.25rem' }}>
-            <Link href="/Montana-towns" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'none', fontSize: '0.95rem' }}>
+            <Link href="/montana-towns" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'none', fontSize: '0.95rem' }}>
               Browse all {totalTowns} towns →
             </Link>
           </div>

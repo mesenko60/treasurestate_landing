@@ -205,7 +205,7 @@ export default function TopicPage(props: Props) {
 
   const breadcrumbItems = [
     { name: 'Home', url: 'https://treasurestate.com/' },
-    { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
+    { name: 'Cities and Towns', url: 'https://treasurestate.com/montana-towns/' },
     { name: townName, url: `https://treasurestate.com/montana-towns/${slug}/` },
     { name: guide.title, url: `https://treasurestate.com/montana-towns/${slug}/${topic}/` },
   ];
@@ -238,6 +238,7 @@ export default function TopicPage(props: Props) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guide.metaTitle} />
         <meta name="twitter:description" content={guide.metaDescription} />
+        <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Article',

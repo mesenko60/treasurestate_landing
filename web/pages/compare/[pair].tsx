@@ -94,7 +94,7 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
 
   const breadcrumbs = [
     { name: 'Home', url: 'https://treasurestate.com/' },
-    { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
+    { name: 'Cities and Towns', url: 'https://treasurestate.com/montana-towns/' },
     { name: `${townA.name} vs ${townB.name}`, url },
   ];
 

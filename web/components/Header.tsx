@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <nav className="menu-bar">
       <Link href="/">Home</Link>
-      <Link href="/Montana-towns" className={isActive('/Montana-towns') ? 'active' : ''}>Towns</Link>
+      <Link href="/montana-towns" className={isActive('/montana-towns') ? 'active' : ''}>Towns</Link>
       <Link href="/compare" className={isActive('/compare') ? 'active' : ''}>Compare</Link>
       <Link href="/best-of" className={router.asPath.startsWith('/best-of') ? 'active' : ''}>Best Of</Link>
       <Link href="/guides" className={router.asPath.startsWith('/guides') ? 'active' : ''}>Guides</Link>

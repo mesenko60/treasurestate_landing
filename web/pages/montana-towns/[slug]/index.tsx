@@ -125,7 +125,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
 
   const breadcrumbItems = [
     { name: 'Home', url: 'https://treasurestate.com/' },
-    { name: 'Cities and Towns', url: 'https://treasurestate.com/Montana-towns/' },
+    { name: 'Cities and Towns', url: 'https://treasurestate.com/montana-towns/' },
     { name: townName, url: url }
   ];
 
