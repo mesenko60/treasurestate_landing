@@ -85,6 +85,46 @@ import LvHiking from '../../../components/town/topics/livingston/Hiking';
 import LvFishing from '../../../components/town/topics/livingston/Fishing';
 import LvWeekendItinerary from '../../../components/town/topics/livingston/WeekendItinerary';
 
+import RlCostOfLiving from '../../../components/town/topics/red-lodge/CostOfLiving';
+import RlHousing from '../../../components/town/topics/red-lodge/Housing';
+import RlJobs from '../../../components/town/topics/red-lodge/Jobs';
+import RlSchools from '../../../components/town/topics/red-lodge/Schools';
+import RlHiking from '../../../components/town/topics/red-lodge/Hiking';
+import RlFishing from '../../../components/town/topics/red-lodge/Fishing';
+import RlWeekendItinerary from '../../../components/town/topics/red-lodge/WeekendItinerary';
+
+import HamCostOfLiving from '../../../components/town/topics/hamilton/CostOfLiving';
+import HamHousing from '../../../components/town/topics/hamilton/Housing';
+import HamJobs from '../../../components/town/topics/hamilton/Jobs';
+import HamSchools from '../../../components/town/topics/hamilton/Schools';
+import HamHiking from '../../../components/town/topics/hamilton/Hiking';
+import HamFishing from '../../../components/town/topics/hamilton/Fishing';
+import HamWeekendItinerary from '../../../components/town/topics/hamilton/WeekendItinerary';
+
+import WyCostOfLiving from '../../../components/town/topics/west-yellowstone/CostOfLiving';
+import WyHousing from '../../../components/town/topics/west-yellowstone/Housing';
+import WyJobs from '../../../components/town/topics/west-yellowstone/Jobs';
+import WySchools from '../../../components/town/topics/west-yellowstone/Schools';
+import WyHiking from '../../../components/town/topics/west-yellowstone/Hiking';
+import WyFishing from '../../../components/town/topics/west-yellowstone/Fishing';
+import WyWeekendItinerary from '../../../components/town/topics/west-yellowstone/WeekendItinerary';
+
+import BsCostOfLiving from '../../../components/town/topics/big-sky/CostOfLiving';
+import BsHousing from '../../../components/town/topics/big-sky/Housing';
+import BsJobs from '../../../components/town/topics/big-sky/Jobs';
+import BsSchools from '../../../components/town/topics/big-sky/Schools';
+import BsHiking from '../../../components/town/topics/big-sky/Hiking';
+import BsFishing from '../../../components/town/topics/big-sky/Fishing';
+import BsWeekendItinerary from '../../../components/town/topics/big-sky/WeekendItinerary';
+
+import McCostOfLiving from '../../../components/town/topics/miles-city/CostOfLiving';
+import McHousing from '../../../components/town/topics/miles-city/Housing';
+import McJobs from '../../../components/town/topics/miles-city/Jobs';
+import McSchools from '../../../components/town/topics/miles-city/Schools';
+import McHiking from '../../../components/town/topics/miles-city/Hiking';
+import McFishing from '../../../components/town/topics/miles-city/Fishing';
+import McWeekendItinerary from '../../../components/town/topics/miles-city/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -205,6 +245,51 @@ export default function TopicPage(props: Props) {
       'hiking': LvHiking,
       'fishing': LvFishing,
       'weekend-itinerary': LvWeekendItinerary,
+    },
+    'red-lodge': {
+      'cost-of-living': RlCostOfLiving,
+      'housing': RlHousing,
+      'jobs': RlJobs,
+      'schools': RlSchools,
+      'hiking': RlHiking,
+      'fishing': RlFishing,
+      'weekend-itinerary': RlWeekendItinerary,
+    },
+    hamilton: {
+      'cost-of-living': HamCostOfLiving,
+      'housing': HamHousing,
+      'jobs': HamJobs,
+      'schools': HamSchools,
+      'hiking': HamHiking,
+      'fishing': HamFishing,
+      'weekend-itinerary': HamWeekendItinerary,
+    },
+    'west-yellowstone': {
+      'cost-of-living': WyCostOfLiving,
+      'housing': WyHousing,
+      'jobs': WyJobs,
+      'schools': WySchools,
+      'hiking': WyHiking,
+      'fishing': WyFishing,
+      'weekend-itinerary': WyWeekendItinerary,
+    },
+    'big-sky': {
+      'cost-of-living': BsCostOfLiving,
+      'housing': BsHousing,
+      'jobs': BsJobs,
+      'schools': BsSchools,
+      'hiking': BsHiking,
+      'fishing': BsFishing,
+      'weekend-itinerary': BsWeekendItinerary,
+    },
+    'miles-city': {
+      'cost-of-living': McCostOfLiving,
+      'housing': McHousing,
+      'jobs': McJobs,
+      'schools': McSchools,
+      'hiking': McHiking,
+      'fishing': McFishing,
+      'weekend-itinerary': McWeekendItinerary,
     },
   };
 

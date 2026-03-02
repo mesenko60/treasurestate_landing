@@ -11,6 +11,11 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   'great-falls': { name: 'Great Falls', tagline: 'The Electric City' },
   butte: { name: 'Butte', tagline: 'The Richest Hill on Earth' },
   livingston: { name: 'Livingston', tagline: 'Gateway to Yellowstone' },
+  'red-lodge': { name: 'Red Lodge', tagline: 'Beartooth Highway gateway' },
+  hamilton: { name: 'Hamilton', tagline: 'Bitterroot Valley' },
+  'west-yellowstone': { name: 'West Yellowstone', tagline: 'Yellowstone west entrance' },
+  'big-sky': { name: 'Big Sky', tagline: 'Mountain resort destination' },
+  'miles-city': { name: 'Miles City', tagline: 'Cow Capital of Montana' },
 };
 
 type Props = {

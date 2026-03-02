@@ -11,6 +11,11 @@ const CITY_NAMES: Record<string, string> = {
   'great-falls': 'Great Falls',
   butte: 'Butte',
   livingston: 'Livingston',
+  'red-lodge': 'Red Lodge',
+  hamilton: 'Hamilton',
+  'west-yellowstone': 'West Yellowstone',
+  'big-sky': 'Big Sky',
+  'miles-city': 'Miles City',
 };
 
 type Props = {
