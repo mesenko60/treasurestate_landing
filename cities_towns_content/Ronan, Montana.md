@@ -48,7 +48,7 @@ Healthcare has emerged as a growing sector in Ronan's economy, anchored by moder
 
 ## History & Heritage
 
-The story of Ronan begins with the indigenous peoples who have called this land home since time immemorial. The area sits within the Flathead Indian Reservation, the ancestral homeland of the Confederated Salish and Kootenai Tribes. These tribes—the Bitterroot Salish, Upper Pend d'Oreille, and Lower Kutenai—have shaped the cultural landscape of the region for countless generations, developing deep connections to the land, waters, and wildlife that define this spectacular corner of Montana.
+The story of Ronan begins with the indigenous peoples who have called this land home since time immemorial. The area sits within the Flathead Indian Reservation, the ancestral homeland of the Confederated Salish and Kootenai Tribes. These tribes—the Bitterroot Salish, Upper Pend d'Oreille (Ql̓ispé), and Kootenai (Ksanka)—have shaped the cultural landscape of the region for countless generations, developing deep connections to the land, waters, and wildlife that define this spectacular corner of Montana.
 
 The reservation itself was established through the Hellgate Treaty of July 16, 1855, a pivotal moment that formalized relations between the tribes and the United States government. This treaty, while resulting in significant changes for the indigenous inhabitants, recognized their sovereignty and established the framework for their continued presence and influence in the region.
 
