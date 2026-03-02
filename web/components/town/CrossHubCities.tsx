@@ -22,6 +22,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   anaconda: { name: 'Anaconda', tagline: 'Copper heritage & Pintler wilderness' },
   bigfork: { name: 'Bigfork', tagline: 'Flathead Lake arts village' },
   'deer-lodge': { name: 'Deer Lodge', tagline: 'Frontier ranching heritage & prison history' },
+  'three-forks': { name: 'Three Forks', tagline: 'Birthplace of the Missouri River' },
 };
 
 type Props = {

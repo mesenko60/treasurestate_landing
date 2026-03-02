@@ -2221,6 +2221,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'three-forks': {
+    hubIntro: `Three Forks is a small town of 1,989 residents in Gallatin County, sitting at 4,075 feet elevation at the exact spot where the Jefferson, Madison, and Gallatin Rivers converge to form the Missouri River. Meriwether Lewis named these three rivers on July 27, 1805, for President Jefferson, Secretary of State Madison, and Treasury Secretary Gallatin — making this confluence one of the most significant geographic landmarks in American exploration history.\n\nMissouri Headwaters State Park preserves the confluence 4 miles northeast of town and is a U.S. National Historic Landmark. Sacagawea, who guided Lewis and Clark, was captured near this site in 1800 and later returned with the expedition. The historic Sacajawea Hotel (1910) anchors downtown. Three Forks sits on Interstate 90 just 31 miles west of Bozeman and 64 miles east of Butte. Within 50 miles there are 244 recreation sites including 28 trailheads, 59 lakes, 43 campgrounds, 4 state parks, 13 hot springs, and 33 museums. Lewis & Clark Caverns State Park is 16 miles west, and Madison Buffalo Jump State Park is 15 miles southeast.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Three Forks, Montana',
+        metaTitle: 'Cost of Living in Three Forks, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Three Forks? Median home $382K, income $80K, affordability ratio 6.7. Living costs 31 miles from Bozeman at the Missouri headwaters.',
+        description: 'A detailed breakdown of what it costs to live in Three Forks \u2014 housing, income, affordability, and how it compares to nearby Bozeman and the Gallatin Valley.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Three Forks, Montana Housing Market',
+        metaTitle: 'Three Forks, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Three Forks housing: Zillow value $536K, 46 active listings, inventory up 35.3%. Bozeman-adjacent market at the Missouri headwaters.',
+        description: 'Current housing market data for Three Forks including home values, inventory trends, and Bozeman spillover demand dynamics.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Three Forks, Montana',
+        metaTitle: 'Jobs & Economy in Three Forks, Montana (2026) | Treasure State',
+        metaDescription: 'Three Forks job market: 1.1% unemployment, retail and construction lead. Job score 9.7 with cement plant, talc mill, and Bozeman commuter access.',
+        description: "Three Forks' economy by the numbers \u2014 from industrial employers to Bozeman commuters, plus workforce data and industry breakdown.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Three Forks, Montana',
+        metaTitle: 'Schools & Education in Three Forks, Montana (2026) | Treasure State',
+        metaDescription: 'Three Forks schools: 94% graduation rate, 500 enrolled, school score 9.4. Small-town district with Montana State University 31 miles away.',
+        description: 'School district information, graduation rates, and what families should know about education in Three Forks.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Three Forks, Montana',
+        metaTitle: 'Hiking Near Three Forks, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Three Forks: Missouri Headwaters trails, Lewis & Clark Caverns, Madison Buffalo Jump, 28 trailheads. Trail guides and access.',
+        description: 'The best trails and hikes near Three Forks \u2014 from headwaters river walks to cavern hikes and Bridger Range trails.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Three Forks, Montana',
+        metaTitle: 'Fishing Near Three Forks, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Three Forks: Jefferson, Madison, and Gallatin Rivers at the Missouri headwaters. Blue-ribbon trout water and 59 lakes.',
+        description: 'Complete fishing guide for Three Forks \u2014 from Missouri headwaters trout to Madison River blue-ribbon fly fishing.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Three Forks, Montana',
+        metaTitle: 'Weekend in Three Forks, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Three Forks: Missouri Headwaters, Lewis & Clark Caverns, Sacajawea Hotel, Madison Buffalo Jump. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Three Forks \u2014 river confluence, caverns, frontier history, and blue-ribbon fishing.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Three Forks, Montana?',
+        answer: "Three Forks offers a more affordable alternative to Bozeman, 31 miles east. The census median home value is $382,400, with the Zillow Home Value Index at $535,753 as of January 2026. Median household income is $80,394, producing an affordability ratio of 6.7 \u2014 significantly better than Bozeman (ratio ~10). Median rent is $1,263. The 1.8% vacancy rate is extremely low, reflecting strong demand from Bozeman commuters and limited housing stock (only 895 total units). The median list price of $679,967 shows a premium for new construction and larger properties.",
+      },
+      {
+        question: 'What is the Missouri Headwaters State Park?',
+        answer: "Missouri Headwaters State Park preserves the exact confluence where the Jefferson, Madison, and Gallatin Rivers merge to form the Missouri River. Meriwether Lewis named these three rivers on July 27, 1805, during the Lewis and Clark Expedition. The site is a U.S. National Historic Landmark located 4 miles northeast of Three Forks. The park offers hiking trails along the river bluffs, interpretive displays about Lewis and Clark and Sacagawea, fishing access, 17 campsites, and tipi rentals. It\u2019s one of the most historically significant sites in the American West.",
+      },
+      {
+        question: 'What are Lewis & Clark Caverns?',
+        answer: "Lewis & Clark Caverns State Park, 16 miles west of Three Forks, contains one of the largest known limestone caverns in the Northwest. Guided cave tours descend through chambers of stalactites, stalagmites, columns, and helictites. The park also offers camping, hiking trails, and mountain biking. Despite the name, Lewis and Clark did not actually visit the caverns. The caves were Montana\u2019s first state park, established in 1937. Tours run from May through September, with the cave maintaining a constant 50\u00B0F year-round.",
+      },
+      {
+        question: 'How far is Three Forks from Bozeman?',
+        answer: "Three Forks is 31 miles (about 30 minutes) west of Bozeman via Interstate 90. Bozeman Yellowstone International Airport is approximately 35 minutes away. Many Three Forks residents commute to Bozeman for work, shopping, and Montana State University access while enjoying lower housing costs and small-town living. The I-90 corridor between the two towns passes through Belgrade (21 miles from Three Forks), another growing Gallatin Valley community.",
+      },
+      {
+        question: 'What fishing is available near Three Forks?',
+        answer: "Three Forks sits at the convergence of three legendary trout rivers. The Madison River is one of Montana\u2019s most famous blue-ribbon trout streams, renowned for dry-fly fishing. The Jefferson River offers excellent brown trout fishing in a less-crowded setting. The Gallatin River, featured in \u201CA River Runs Through It,\u201D provides crystal-clear water and mountain scenery. The Missouri River itself begins here and offers productive fishing downstream. Within 50 miles there are 59 lakes and fishing access sites. Norris Hot Springs (24 miles) offers a post-fishing soak.",
+      },
+      {
+        question: 'What is the Sacajawea Hotel?',
+        answer: "The Sacajawea Hotel is a historic hotel in downtown Three Forks, originally built in 1910 when the town was founded as a Milwaukee Road railroad division point. The hotel has been elegantly restored and offers luxury accommodations, fine dining, and a full-service bar. It\u2019s named for Sacagawea, the Lemhi Shoshone woman who guided Lewis and Clark through this region. The hotel is listed on the National Register of Historic Places and is considered one of Montana\u2019s premier boutique hotels.",
+      },
+      {
+        question: 'What is the Madison Buffalo Jump?',
+        answer: "Madison Buffalo Jump State Park, 15 miles southeast of Three Forks, preserves a cliff site where Native Americans drove bison herds over a precipice for an estimated 2,000 years. The jump site features interpretive trails explaining this ancient hunting technique, which predated the introduction of horses. The park offers hiking, wildlife viewing, and panoramic views of the Madison Valley. It\u2019s one of the best-preserved and most accessible pishkun (buffalo jump) sites in Montana.",
+      },
+      {
+        question: 'What events happen in Three Forks?',
+        answer: "Three Forks hosts several distinctive events. The Three Forks NRA Rodeo (mid-July) is a traditional rodeo with bronc riding, barrel racing, and community festivities. Rappin\u2019 the Rivers Festival (mid-August) is Montana\u2019s biggest 2-day rap, hip-hop, and EDM music festival, drawing crowds from across the state. The Magpie Renaissance Faire (mid-September) brings costumes, jousting, and medieval performances. The Christmas Stroll in early December features a tree lighting, parade, and local shopping. Weekly farmers markets run through the summer.",
+      },
+      {
+        question: 'What are winters like in Three Forks?',
+        answer: "Three Forks winters are cold but relatively dry for Montana. January averages a high of 37\u00B0F and low of 20\u00B0F. The valley location means less snowfall than nearby mountain towns, though chinook winds can bring dramatic temperature swings. Ice fishing, cross-country skiing, and snowshoeing are popular winter activities. Bridger Bowl ski area is about 50 miles east (via Bozeman), and Big Sky Resort is approximately 60 miles south. The low precipitation and open valley create beautiful winter landscapes.",
+      },
+      {
+        question: 'How do I get to Three Forks?',
+        answer: "Three Forks is on Interstate 90 in southwest Montana, 31 miles west of Bozeman and 64 miles east of Butte. Take I-90 Exit 274 or Exit 278. Bozeman Yellowstone International Airport (BZN) is the nearest commercial airport, about 35 minutes east. Three Forks sits at the junction of I-90 and US-287, which runs south toward Ennis and Virginia City. The town is roughly 90 miles north of Yellowstone\u2019s west entrance, making it a convenient base for park visitors seeking a quieter, more affordable alternative to Big Sky or West Yellowstone.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
