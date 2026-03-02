@@ -1670,6 +1670,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  dillon: {
+    hubIntro: `Dillon is a historic railroad town of 3,880 residents in Beaverhead County, sitting at 5,095 feet elevation in the sweeping Beaverhead Valley of southwest Montana. Home to the University of Montana Western and surrounded by the Beaverhead-Deerlodge National Forest, Dillon blends frontier heritage with world-class outdoor recreation.\n\nThe Beaverhead River runs through town\u2009—\u2009one of Montana's premier blue-ribbon trout streams\u2009—\u2009and three more legendary rivers (Big Hole, Madison, Jefferson) lie within 51 miles. Dillon is 65 miles south of Butte on I-15 and serves as the gateway to Bannack State Park (Montana's first territorial capital), the Pioneer Mountains, and 10 natural hot springs within 75 miles.\n\nWithin 50 miles there are 152 recreation sites including 24 lakes, 14 fishing access sites, 8 trailheads, 37 campgrounds, 10 hot springs, and 6 historic sites. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Dillon, Montana',
+        metaTitle: 'Cost of Living in Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Dillon? Median home value $237K, income $51K, affordability ratio 7.3. Detailed breakdown of living costs in this southwest Montana college town.',
+        description: 'A detailed breakdown of what it costs to live in Dillon\u2009\u2014\u2009housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Dillon, Montana Housing Market',
+        metaTitle: 'Dillon, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Dillon housing market data: Zillow home value $374K, 33 active listings, inventory down 23%. Market trends, analysis, and what buyers need to know.',
+        description: 'Current housing market data for Dillon including home values, inventory trends, vacancy rates, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Dillon, Montana',
+        metaTitle: 'Jobs & Economy in Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'Dillon job market: 4.2% unemployment, education/healthcare and tourism-driven economy. UM Western, ranching, and workforce data.',
+        description: "Dillon's job market by the numbers\u2009\u2014\u2009top industries, major employers, the role of ranching and tourism, and economic outlook.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Dillon, Montana',
+        metaTitle: 'Schools & Education in Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'Dillon schools: 90% graduation rate, $12,200 per-pupil spending. Plus the University of Montana Western and its unique Experience One program.',
+        description: 'School district information, graduation rates, UM Western, and what families should know about education in Dillon.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Dillon, Montana',
+        metaTitle: 'Hiking Near Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Dillon: Pioneer Mountains, Bannack ghost town, 8 trailheads, alpine lakes. Trail guides and conditions for southwest Montana.',
+        description: 'The best trails and hikes near Dillon\u2009\u2014\u2009from Pioneer Mountain ridgelines to Bannack ghost town explorations.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Dillon, Montana',
+        metaTitle: 'Fishing Near Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Dillon: Beaverhead River blue-ribbon trout, Big Hole River, 14 fishing access sites, 24 lakes. Species, access, and seasonal guides.',
+        description: 'Complete fishing guide for Dillon\u2009\u2014\u2009from the legendary Beaverhead River to Pioneer Mountain alpine lakes.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Dillon, Montana',
+        metaTitle: 'A Weekend in Dillon, Montana (2026) | Treasure State',
+        metaDescription: 'Plan a weekend in Dillon: Beaverhead River fishing, Bannack ghost town, hot springs, Pioneer Mountains. Day-by-day itinerary for visitors.',
+        description: 'A day-by-day guide for a perfect weekend in Dillon\u2009\u2014\u2009blue-ribbon fishing, ghost towns, hot springs, and mountain adventures.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Dillon, Montana?',
+        answer: "Dillon's median household income is $51,458 with a census median home value of $237,500. The Zillow Home Value Index as of January 2026 is $374,266, reflecting appreciation driven by remote workers and outdoor enthusiasts. The affordability ratio of 7.3 makes Dillon one of the more affordable communities in western Montana. Median rent is $821\u2009\u2014\u2009significantly lower than Bozeman or Missoula. The 10.3% vacancy rate is moderate, with some seasonal variation tied to university enrollment and tourism.",
+      },
+      {
+        question: 'What is the Beaverhead River like for fly fishing?',
+        answer: "The Beaverhead River is one of Montana's premier blue-ribbon trout streams, running directly through Dillon. Fed by Clark Canyon Reservoir (20 miles south), the river maintains consistent flows and cold water temperatures ideal for trophy brown and rainbow trout. Fish commonly reach 18\u201322 inches. The river is known for technical fishing requiring precise presentations\u2009\u2014\u2009nymphing and dry-fly fishing are both productive. There are 14 fishing access sites within 50 miles of Dillon, many along the Beaverhead.",
+      },
+      {
+        question: 'What is Bannack State Park?',
+        answer: "Bannack State Park preserves Montana's first territorial capital, a gold rush ghost town established in 1862 after gold was discovered at Grasshopper Creek. The park is 18 miles west of Dillon and features over 50 historic structures including the Hotel Meade, the Masonic Lodge, and the territorial governor's mansion. Bannack is a National Historic Landmark and hosts Bannack Days each summer, a living-history event with gold panning, stagecoach rides, and period demonstrations. The park is open year-round for self-guided walking tours.",
+      },
+      {
+        question: 'What is the University of Montana Western?',
+        answer: "The University of Montana Western (UMW) is a public university in Dillon offering bachelor's degrees through its distinctive Experience One program\u2009\u2014\u2009students take one course at a time in intensive 18-day blocks rather than juggling multiple classes. This approach emphasizes hands-on, experiential learning. UMW has about 1,600 students and is known for its education, equestrian studies, natural horsemanship, environmental science, and outdoor recreation programs. The campus is a significant economic anchor for Dillon.",
+      },
+      {
+        question: 'What are winters like in Dillon?',
+        answer: "Dillon winters are cold and dry at 5,095 feet elevation. January averages a high of 33\u00B0F and a low of 15\u00B0F. The Beaverhead Valley is a high-desert environment that receives relatively little precipitation, though cold snaps can be severe. Maverick Mountain ski area is 38 miles west, offering uncrowded, affordable skiing. Winter activities include cross-country skiing, ice fishing at Clark Canyon Reservoir, and soaking in nearby hot springs (Elkhorn, Jackson, or Biltmore).",
+      },
+      {
+        question: 'Are there hot springs near Dillon?',
+        answer: "Yes\u2009\u2014\u2009Dillon has exceptional access to natural hot springs. Within 75 miles there are 10 hot springs including Biltmore Hot Springs (19 miles), Elkhorn Hot Springs (30 miles, with a rustic lodge and outdoor pool), Jackson Hot Springs (40 miles, with a lodge and restaurant), Norris Hot Springs (52 miles, with live music), and Fairmont Hot Springs (64 miles, a full resort). This concentration of hot springs is among the highest of any Montana town.",
+      },
+      {
+        question: 'Is Dillon a good place to retire?',
+        answer: "Dillon attracts retirees who want affordable living, blue-ribbon fishing, and mountain scenery without resort-town prices. The 7.3 affordability ratio is much better than Bozeman (11.4) or Whitefish. Barrett Hospital and Healthcare provides local medical services, with larger facilities in Butte (65 miles). The town has a walkable downtown, a golf course, and abundant outdoor recreation. The university brings cultural events and a younger energy. Winters are cold but dry, and the valley's lower snowfall means easier driving.",
+      },
+      {
+        question: 'What fishing rivers are near Dillon?',
+        answer: "Dillon is uniquely positioned near four of Montana's legendary rivers. The Beaverhead River runs through town (0 miles)\u2009\u2014\u2009a blue-ribbon brown and rainbow trout fishery. The Big Hole River (44 miles) is Montana's last river supporting fluvial Arctic grayling. The Madison River near Ennis (45 miles) is one of the most famous trout rivers in the world. The Jefferson River (51 miles) offers excellent float fishing. Combined with 14 fishing access sites and 24 alpine lakes, Dillon is arguably Montana's best-positioned fishing basecamp.",
+      },
+      {
+        question: 'What events happen in Dillon?',
+        answer: "Dillon hosts the Beaverhead County Fair and PRCA rodeo each summer, Bannack Days (living-history event at the ghost town), the Ratpod cycling event, Brats for the Brave (honoring military and first responders), and the Parade of Lights Christmas Stroll. The university campus hosts concerts, lectures, and sporting events. Virginia City (34 miles) adds summer theater and living-history events at the nearby Nevada City open-air museum.",
+      },
+      {
+        question: 'How do I get to Dillon?',
+        answer: "Dillon is on Interstate 15 in southwest Montana, 65 miles south of Butte and 120 miles north of Idaho Falls, Idaho. The nearest commercial airport is Bert Mooney Airport (BTM) in Butte, with limited service. Bozeman Yellowstone International Airport (BZN) is about 110 miles northeast and has the most flights. Dillon is also accessible from the south via I-15 from Salt Lake City or Idaho Falls. The town sits at the junction of I-15 and MT-41, making it a natural stopping point between Yellowstone and Glacier national parks.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

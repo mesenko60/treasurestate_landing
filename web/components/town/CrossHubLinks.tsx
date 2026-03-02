@@ -17,6 +17,7 @@ const CITY_NAMES: Record<string, string> = {
   'big-sky': 'Big Sky',
   'miles-city': 'Miles City',
   polson: 'Polson',
+  dillon: 'Dillon',
 };
 
 type Props = {
