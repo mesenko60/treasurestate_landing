@@ -680,6 +680,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'great-falls': {
+    hubIntro: `Great Falls is Montana's third-largest city with 60,000 residents, known as "The Electric City" for the hydroelectric dams that harness the Missouri River's five great falls first documented by Lewis and Clark in 1805. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/great-falls/cost-of-living/">housing costs</a> and <a href="/montana-towns/great-falls/jobs/">job opportunities</a> to <a href="/montana-towns/great-falls/fishing/">fishing on the Missouri River</a> and a <a href="/montana-towns/great-falls/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSituated in Cascade County where the Great Plains meet the Rocky Mountain Front, Great Falls is anchored by Malmstrom Air Force Base, Benefis Health System, and a legacy of western art centered on the C.M. Russell Museum. Giant Springs State Park \u2014 home to one of the largest freshwater springs in the world \u2014 sits just 4 miles from downtown, and the Missouri River flows right through the city with 60-plus miles of the River\u2019s Edge Trail along its banks. First Peoples Buffalo Jump State Park (11 miles) preserves a mile-long cliff used for over 2,000 years by Native Americans.\n\nWith an affordability ratio of 5.1, Great Falls offers the most affordable housing of any major Montana city and a 31.5% year-over-year inventory increase. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Great Falls, Montana',
+        metaTitle: 'Cost of Living in Great Falls, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Great Falls? Median home value $328K, rent $1,352/mo, income $64K. Affordability ratio 5.1 \u2014 the most affordable major city in Montana.',
+        description: 'A detailed breakdown of what it costs to live in Great Falls \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Great Falls, Montana Housing Market',
+        metaTitle: 'Great Falls, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Great Falls housing market data: median home value $328K, 284 active listings, 31.5% inventory increase YoY. Montana\u2019s most affordable major market.',
+        description: 'Current housing market data for Great Falls including home values, rental rates, inventory trends, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Great Falls, Montana',
+        metaTitle: 'Jobs & Economy in Great Falls, Montana (2026) | Treasure State',
+        metaDescription: 'Great Falls job market: 3.2% unemployment, job score 9.2/10, anchored by Malmstrom AFB, Benefis Health System, and education & healthcare (28.1%).',
+        description: "Great Falls\u2019 job market by the numbers \u2014 military, healthcare, and a 3.2% unemployment rate in The Electric City.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Great Falls, Montana',
+        metaTitle: 'Schools in Great Falls, Montana \u2014 K-12 & College Guide | Treasure State',
+        metaDescription: 'Guide to Great Falls schools: Great Falls Public Schools (10,000 students), Great Falls High, CMR High, Great Falls College MSU, and University of Providence.',
+        description: 'Guide to Great Falls schools from K-12 through college, including enrollment, graduation rates, and higher education options.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Great Falls, Montana',
+        metaTitle: 'Best Hiking Near Great Falls, Montana \u2014 Trails & Routes | Treasure State',
+        metaDescription: 'Hiking near Great Falls along the River\u2019s Edge Trail, Giant Springs, and day trips to the Rocky Mountain Front and Bob Marshall Wilderness.',
+        description: 'The best hiking near Great Falls \u2014 from the River\u2019s Edge Trail to the Rocky Mountain Front, with distances and seasonal tips.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Great Falls, Montana',
+        metaTitle: 'Fishing Near Great Falls, Montana \u2014 Missouri River & More | Treasure State',
+        metaDescription: 'Fishing near Great Falls on the Missouri River, Sun River, and Smith River. Giant Springs trout hatchery, blue-ribbon water, and seasonal tips.',
+        description: 'World-class fishing near Great Falls on the Missouri River, Sun River, and the legendary Smith River float, with access points and tips.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Great Falls, Montana',
+        metaTitle: 'Weekend in Great Falls, Montana \u2014 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Great Falls: Giant Springs, C.M. Russell Museum, Lewis & Clark Interpretive Center, River\u2019s Edge Trail, and local dining.',
+        description: 'How to spend a weekend in Great Falls \u2014 a day-by-day guide covering The Electric City, western art, and Missouri River adventures.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Great Falls, Montana?',
+        answer: "Great Falls\u2019 median household income is $63,934 with a median home value of $327,514 (Zillow, January 2026). The affordability ratio of 5.1 makes Great Falls the most affordable major city in Montana. Median rent is $1,352 per month. Inventory has surged 31.5% year-over-year, giving buyers significantly more options than any other Montana market.",
+      },
+      {
+        question: 'Why is Great Falls called The Electric City?',
+        answer: "Great Falls earned its nickname from the hydroelectric dams built on the Missouri River\u2019s five waterfalls. Ryan Dam (1915), Rainbow Dam, Black Eagle Dam, Morony Dam, and Cochrane Dam together generate electricity for much of Montana. Lewis and Clark first documented these falls during their 1805 expedition, calling the 18-mile portage around them one of their greatest challenges.",
+      },
+      {
+        question: 'Is Malmstrom Air Force Base in Great Falls?',
+        answer: "Yes, Malmstrom Air Force Base is located on the east side of Great Falls. It\u2019s home to the 341st Missile Wing, which operates Minuteman III intercontinental ballistic missiles. The base employs thousands of military and civilian personnel, making it one of the city\u2019s largest employers and a stabilizing economic force.",
+      },
+      {
+        question: 'What outdoor recreation is near Great Falls?',
+        answer: "Great Falls has 85 recreation sites within 50 miles, highlighted by Giant Springs State Park (4 miles) \u2014 one of the world\u2019s largest freshwater springs. The Missouri River flows through the city with 60-plus miles of River\u2019s Edge Trail. First Peoples Buffalo Jump State Park (11 miles) preserves a 2,000-year-old cliff. The Bob Marshall Wilderness is accessible within 85 miles.",
+      },
+      {
+        question: 'What are winters like in Great Falls?',
+        answer: "Great Falls winters are cold and windy \u2014 the city is one of the windiest in the U.S. January averages a high of 38\u00B0F and a low of 24\u00B0F. However, Chinook winds regularly bring sudden warming, sometimes raising temperatures 30\u201340\u00B0F in hours. Annual precipitation is about 15 inches, and the city sits at 3,340 feet elevation.",
+      },
+      {
+        question: 'Is Great Falls a good place for families?',
+        answer: "Great Falls offers Montana\u2019s most affordable housing (ratio 5.1), stable military and healthcare employment, and family-friendly attractions including Giant Springs State Park, the Children\u2019s Museum of Montana, and the River\u2019s Edge Trail. Great Falls Public Schools serves 10,000 students with a 79% graduation rate. Two colleges provide local higher education options.",
+      },
+      {
+        question: 'What are the main industries in Great Falls?',
+        answer: "Education and healthcare leads at 28.1% of employment, anchored by Benefis Health System. Retail (13.2%) and tourism/hospitality (11.2%) follow. Malmstrom Air Force Base provides significant military employment. The Montana Air National Guard\u2019s 120th Airlift Wing also operates from Great Falls International Airport. The unemployment rate is 3.2% with a job score of 9.2.",
+      },
+      {
+        question: 'Can you fly into Great Falls?',
+        answer: "Yes, Great Falls International Airport (GTF) offers daily flights to Denver, Salt Lake City, Minneapolis, and Seattle. The airport is about 4 miles southwest of downtown. Great Falls sits along I-15 (north-south) and US-87/US-89, roughly 90 miles north of Helena and 215 miles north of Yellowstone National Park.",
+      },
+      {
+        question: 'What is the housing market like in Great Falls?',
+        answer: "As of January 2026, Great Falls\u2019 median home value is $327,514 (Zillow) with 284 homes for sale. Inventory has surged 31.5% year-over-year \u2014 the largest supply increase of any major Montana city. The median list price is $375,250. Across 28,333 total housing units, the vacancy rate is 8.2%, the highest among Montana\u2019s larger cities.",
+      },
+      {
+        question: 'What is Giant Springs State Park?',
+        answer: "Giant Springs State Park, 4 miles from downtown Great Falls, is home to one of the largest freshwater springs in the world, producing roughly 156 million gallons of water per day. The park includes a fish hatchery, the Roe River (one of the shortest rivers in the world), picnic areas, and access to the River\u2019s Edge Trail along the Missouri River.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

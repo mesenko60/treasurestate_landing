@@ -60,6 +60,14 @@ import BilHiking from '../../../components/town/topics/billings/Hiking';
 import BilFishing from '../../../components/town/topics/billings/Fishing';
 import BilWeekendItinerary from '../../../components/town/topics/billings/WeekendItinerary';
 
+import GfCostOfLiving from '../../../components/town/topics/great-falls/CostOfLiving';
+import GfHousing from '../../../components/town/topics/great-falls/Housing';
+import GfJobs from '../../../components/town/topics/great-falls/Jobs';
+import GfSchools from '../../../components/town/topics/great-falls/Schools';
+import GfHiking from '../../../components/town/topics/great-falls/Hiking';
+import GfFishing from '../../../components/town/topics/great-falls/Fishing';
+import GfWeekendItinerary from '../../../components/town/topics/great-falls/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -153,6 +161,15 @@ export default function TopicPage(props: Props) {
       'hiking': BilHiking,
       'fishing': BilFishing,
       'weekend-itinerary': BilWeekendItinerary,
+    },
+    'great-falls': {
+      'cost-of-living': GfCostOfLiving,
+      'housing': GfHousing,
+      'jobs': GfJobs,
+      'schools': GfSchools,
+      'hiking': GfHiking,
+      'fishing': GfFishing,
+      'weekend-itinerary': GfWeekendItinerary,
     },
   };
 
