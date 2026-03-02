@@ -68,6 +68,14 @@ import GfHiking from '../../../components/town/topics/great-falls/Hiking';
 import GfFishing from '../../../components/town/topics/great-falls/Fishing';
 import GfWeekendItinerary from '../../../components/town/topics/great-falls/WeekendItinerary';
 
+import BtCostOfLiving from '../../../components/town/topics/butte/CostOfLiving';
+import BtHousing from '../../../components/town/topics/butte/Housing';
+import BtJobs from '../../../components/town/topics/butte/Jobs';
+import BtSchools from '../../../components/town/topics/butte/Schools';
+import BtHiking from '../../../components/town/topics/butte/Hiking';
+import BtFishing from '../../../components/town/topics/butte/Fishing';
+import BtWeekendItinerary from '../../../components/town/topics/butte/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -170,6 +178,15 @@ export default function TopicPage(props: Props) {
       'hiking': GfHiking,
       'fishing': GfFishing,
       'weekend-itinerary': GfWeekendItinerary,
+    },
+    butte: {
+      'cost-of-living': BtCostOfLiving,
+      'housing': BtHousing,
+      'jobs': BtJobs,
+      'schools': BtSchools,
+      'hiking': BtHiking,
+      'fishing': BtFishing,
+      'weekend-itinerary': BtWeekendItinerary,
     },
   };
 

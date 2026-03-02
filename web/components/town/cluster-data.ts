@@ -790,6 +790,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  butte: {
+    hubIntro: `Butte is a city of 34,494 residents built on copper, silver, and grit, perched at 5,741 feet on the Continental Divide in Silver Bow County. Once called "The Richest Hill on Earth" for the billions of dollars in ore pulled from its underground mines, Butte today blends a vast National Historic Landmark District with a college-town energy centered on Montana Tech. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/butte/cost-of-living/">housing costs</a> and <a href="/montana-towns/butte/jobs/">job opportunities</a> to <a href="/montana-towns/butte/hiking/">hiking trails</a> and a <a href="/montana-towns/butte/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nButte's skyline is defined by historic mine headframes, the 90-foot Our Lady of the Rockies statue on the Continental Divide, and the Berkeley Pit \u2014 a mile-wide former open-pit copper mine now a Superfund site and unlikely tourist attraction. With 246 recreation sites within 50 miles, four ski areas, 14 hot springs (including Fairmont at just 15 miles), and world-class fishing on the Big Hole and Jefferson rivers, the outdoor access rivals any city in western Montana.\n\nAt an affordability ratio of 4.7, Butte offers the lowest housing costs of any city profiled in this guide \u2014 a reflection of both its working-class heritage and the population decline that followed the mine closures of the 1980s. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Butte, Montana',
+        metaTitle: 'Cost of Living in Butte, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Butte? Median home value $271K, rent $1,341/mo, income $58K. Affordability ratio 4.7 \u2014 the most affordable city in this guide.',
+        description: 'A detailed breakdown of what it costs to live in Butte \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Butte, Montana Housing Market',
+        metaTitle: 'Butte, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Butte housing market data: median home value $271K, 153 listings, 11.7% vacancy rate. Historic homes, affordable pricing, and market trends.',
+        description: 'Current housing market data for Butte including home values, rental rates, inventory trends, and market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Butte, Montana',
+        metaTitle: 'Jobs & Economy in Butte, Montana (2026) | Treasure State',
+        metaDescription: 'Butte job market: 4.3% unemployment, job score 8.9/10, led by education & healthcare (23.5%). Montana Tech, mining legacy, and economic outlook.',
+        description: "Butte's job market by the numbers \u2014 mining legacy, Montana Tech, healthcare, and the path forward for The Richest Hill on Earth.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Butte, Montana',
+        metaTitle: 'Schools in Butte, Montana \u2014 K-12 & College Guide | Treasure State',
+        metaDescription: 'Guide to Butte schools: Butte Public Schools (4,200 students, 80% graduation rate), Montana Tech, and Highland College.',
+        description: 'Guide to Butte schools from K-12 through Montana Tech, including enrollment, graduation rates, and engineering programs.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Butte, Montana',
+        metaTitle: 'Best Hiking Near Butte, Montana \u2014 Trails & Routes | Treasure State',
+        metaDescription: '25 trailheads near Butte including Humbug Spires, Anaconda-Pintler Wilderness, and Pioneer Mountains. High-elevation trails and seasonal tips.',
+        description: 'The best hiking near Butte \u2014 from Humbug Spires to the Anaconda-Pintler Wilderness, with distances and tips.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Butte, Montana',
+        metaTitle: 'Fishing Near Butte, Montana \u2014 Big Hole, Jefferson & More | Treasure State',
+        metaDescription: 'Fishing near Butte on the Big Hole River, Jefferson River, and 69 mountain lakes. Blue-ribbon trout water, Arctic grayling, and seasonal tips.',
+        description: 'World-class fishing near Butte on the Big Hole River (home to Montana\u2019s last Arctic grayling), Jefferson River, and 69 mountain lakes.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Butte, Montana',
+        metaTitle: 'Weekend in Butte, Montana \u2014 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Butte: Berkeley Pit, World Museum of Mining, Copper King Mansion, Our Lady of the Rockies, Fairmont Hot Springs.',
+        description: 'How to spend a weekend in Butte \u2014 a day-by-day guide covering mining history, hot springs, and Montana\u2019s most colorful city.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Butte, Montana?',
+        answer: "Butte's median household income is $57,633 with a median home value of $271,170 (Zillow, January 2026). The affordability ratio of 4.7 is the lowest of any city profiled in this guide, making Butte one of the most affordable places to live in Montana. Median rent is $1,341 per month, and the 11.7% vacancy rate means housing is readily available.",
+      },
+      {
+        question: 'What is the Berkeley Pit?',
+        answer: "The Berkeley Pit is a former open-pit copper mine, roughly one mile wide and 1,780 feet deep, now partially filled with acidic, metal-laden water. It operated from 1955 to 1982 and is a designated Superfund site. A viewing stand (1 mile from downtown) is open to tourists and offers a stark look at the scale of Butte\u2019s mining past. Despite its toxicity, it\u2019s one of Montana\u2019s most visited attractions.",
+      },
+      {
+        question: 'Is Butte a good place to live?',
+        answer: "Butte offers the most affordable housing of any Montana city in this guide (ratio 4.7), a tight-knit community with deep Irish and immigrant heritage, Montana Tech for STEM education, and extraordinary outdoor access \u2014 246 recreation sites within 50 miles including four ski areas and 14 hot springs. The trade-offs are a higher unemployment rate (4.3%), cold high-elevation winters, and ongoing Superfund cleanup.",
+      },
+      {
+        question: 'What outdoor recreation is near Butte?',
+        answer: "Butte has 246 recreation sites within 50 miles \u2014 one of the highest counts in Montana. This includes 25 trailheads, 69 lakes, 14 hot springs, four ski areas (Discovery, Maverick Mountain, Lost Trail, Big Sky), and nine wilderness areas. The Big Hole River (38 miles) is blue-ribbon trout water and home to Montana\u2019s last native Arctic grayling population. Fairmont Hot Springs is just 15 miles away.",
+      },
+      {
+        question: 'What is Montana Tech?',
+        answer: "Montana Technological University (Montana Tech) is a public university in Butte with roughly 1,800 students. Founded in 1900 as the Montana School of Mines, it\u2019s known for strong programs in engineering, geology, petroleum engineering, environmental science, and computer science. Graduates are recruited nationally by mining, energy, and tech companies. Highland College, its two-year affiliate, offers technical and vocational programs.",
+      },
+      {
+        question: 'What are winters like in Butte?',
+        answer: "Butte has the coldest winters of any major Montana city, a consequence of its 5,741-foot elevation on the Continental Divide. January averages a high of 28\u00B0F and a low of 10\u00B0F. February is even colder at 25\u00B0F/7\u00B0F. Annual precipitation is about 13 inches. Four ski areas are within 75 miles, and the cold, dry snow at elevation makes for good powder.",
+      },
+      {
+        question: 'What are the main industries in Butte?',
+        answer: "Education and healthcare leads at 23.5%, anchored by St. James Healthcare and Montana Tech. Retail (11.4%) and tourism/hospitality (10.2%) follow. Montana Resources continues limited copper and molybdenum mining from the Continental Pit. NorthWestern Energy has a significant presence. The unemployment rate of 4.3% is the highest among Montana\u2019s larger cities, reflecting the transition from mining to a diversified economy.",
+      },
+      {
+        question: 'What is Our Lady of the Rockies?',
+        answer: "Our Lady of the Rockies is a 90-foot statue of the Virgin Mary perched on the Continental Divide at 8,510 feet elevation, overlooking Butte from the east. Built entirely by volunteers between 1979 and 1985, it was dedicated as a tribute to all women, especially mothers. Shuttle tours depart from the Butte Plaza Mall. It\u2019s the second-tallest statue in the United States after the Statue of Liberty.",
+      },
+      {
+        question: 'Can you fly into Butte?',
+        answer: "Bert Mooney Airport (BTM) in Butte offers limited commercial service, primarily to Salt Lake City. Most visitors fly into Bozeman Yellowstone International Airport (BZN), about 80 miles east, or Missoula International Airport (MSO), about 120 miles northwest. Butte is on I-90, roughly midway between Missoula and Bozeman.",
+      },
+      {
+        question: 'What is the housing market like in Butte?',
+        answer: "As of January 2026, Butte\u2019s median home value is $271,170 (Zillow) with 153 homes for sale. The median list price is $289,417. Inventory has increased 4.8% year-over-year. Across 17,034 total housing units, the vacancy rate is 11.7% \u2014 the highest among Montana\u2019s cities, reflecting historic population decline from a peak of over 100,000 during the mining era.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
