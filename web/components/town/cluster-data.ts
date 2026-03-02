@@ -2441,6 +2441,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'glendive': {
+    hubIntro: `Glendive is the county seat of Dawson County, population 4,873, sitting at 2,064 feet elevation in eastern Montana where the Yellowstone River flows through dramatic badlands terrain. Founded in 1881 as a Northern Pacific Railway hub, the town is named after a tributary that Sir George Gore named during an 1855 hunting expedition. Glendive sits on Interstate 94, approximately 220 miles east of Billings, 80 miles east of Miles City, and 90 miles west of Theodore Roosevelt National Park in North Dakota.\n\nMakoshika State Park, Montana\u2019s largest state park at over 11,500 acres, rises directly at the edge of town. The park\u2019s badlands formations were sculpted over 65 million years and have yielded significant dinosaur fossils, including Triceratops and Tyrannosaurus rex specimens. The Glendive Dinosaur & Fossil Museum and the Frontier Gateway Museum preserve the region\u2019s paleontological and pioneer heritage. Each spring, the Yellowstone River draws anglers for the paddlefish season \u2014 one of the few places in the country where these prehistoric, 100-pound fish can be caught.\n\nGlendive holds Montana\u2019s all-time high temperature record of 117\u00B0F, set July 20, 1893. Within 50 miles there are 40 recreation sites including 11 museums, 7 viewpoints, 6 campgrounds, 6 lakes, 5 wildlife refuges, and 2 state parks. The Short Pines OHV Recreation Area offers 2,800 acres of off-road adventure. Below you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Glendive, Montana',
+        metaTitle: 'Cost of Living in Glendive, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Glendive? Median home $177K, income $71K, affordability ratio 2.6 \u2014 one of Montana\u2019s most affordable towns.',
+        description: 'A detailed breakdown of what it costs to live in Glendive \u2014 housing, income, affordability, and eastern Montana comparisons.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Glendive, Montana Housing Market',
+        metaTitle: 'Glendive, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Glendive housing: Zillow value $183K, 59 active listings, 13.3% vacancy. One of Montana\u2019s most affordable markets.',
+        description: 'Current housing market data for Glendive including home values, inventory trends, and eastern Montana market dynamics.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Glendive, Montana',
+        metaTitle: 'Jobs & Economy in Glendive, Montana (2026) | Treasure State',
+        metaDescription: 'Glendive job market: 5.2% unemployment, education & healthcare 23.4%, transportation 16.9%. Eastern Montana hub.',
+        description: "Glendive's economy by the numbers \u2014 from transportation and healthcare to agriculture and growing tourism.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Glendive, Montana',
+        metaTitle: 'Schools & Education in Glendive, Montana (2026) | Treasure State',
+        metaDescription: 'Glendive schools: 89% graduation rate, 1,000 enrolled, school score 8.9. Dawson Community College in town.',
+        description: 'School district information, graduation rates, and what families should know about education in Glendive.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Glendive, Montana',
+        metaTitle: 'Hiking Near Glendive, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Glendive: Makoshika State Park badlands, 7 viewpoints, Caprock Trail. Trail guides for eastern Montana.',
+        description: 'The best trails and hikes near Glendive \u2014 from Makoshika badlands to Yellowstone River walks and prairie viewpoints.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Glendive, Montana',
+        metaTitle: 'Fishing Near Glendive, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Glendive: Yellowstone River paddlefish, walleye, catfish. 6 lakes. Eastern Montana fishing guide.',
+        description: 'Complete fishing guide for Glendive \u2014 Yellowstone River paddlefish, warmwater species, and eastern Montana waters.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Glendive, Montana',
+        metaTitle: 'Weekend in Glendive, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Glendive: Makoshika badlands, dinosaur museums, Yellowstone River, paddlefish. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Glendive \u2014 badlands hiking, dinosaur fossils, paddlefish, and frontier heritage.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Glendive, Montana?',
+        answer: "Glendive is one of Montana\u2019s most affordable towns. The census median home value is $176,900, with the Zillow Home Value Index at $182,993 as of January 2026 \u2014 remarkably close, indicating a stable market. Median household income is $71,063 (58th percentile nationally), producing an affordability ratio of just 2.6, the lowest of any Montana hub we cover. Median rent is $832 per month (35th percentile). The 13.3% vacancy rate means housing is readily available. Glendive has 2,279 total housing units with 59 active listings and a median list price of about $200,000.",
+      },
+      {
+        question: 'What is Makoshika State Park?',
+        answer: "Makoshika State Park is Montana\u2019s largest state park at over 11,500 acres, located at the edge of Glendive. The name comes from a Lakota word meaning \u201Cbad land\u201D or \u201Cbad earth.\u201D The park features spectacular badlands formations sculpted over 65 million years, with exposed geological layers from the late Cretaceous period. Significant dinosaur fossils have been found here, including Triceratops and Tyrannosaurus rex specimens. The park offers hiking trails through eroded buttes and canyons, scenic viewpoints (Caines Coulee Overlook, Eyeful Vista Point, Artists Vista), a disc golf course, camping (28 sites), and an archery range. The visitor center displays fossil specimens and geological exhibits.",
+      },
+      {
+        question: 'What is paddlefish fishing in Glendive?',
+        answer: "Glendive is one of the few places in the country where anglers can catch paddlefish \u2014 a prehistoric species whose lineage dates back over 125 million years to the Cretaceous period and can weigh over 100 pounds. The paddlefish season on the Yellowstone River typically runs from mid-May through June. Anglers use heavy tackle and snag the fish, as paddlefish are filter feeders that don\u2019t take bait. A special Montana FWP permit is required. The paddlefish season draws anglers from across the region and is a major event in Glendive\u2019s calendar.",
+      },
+      {
+        question: 'How far is Glendive from other Montana cities?',
+        answer: "Glendive is on Interstate 94 in eastern Montana, approximately 220 miles east of Billings, 80 miles east of Miles City, and 35 miles west of the North Dakota border. Theodore Roosevelt National Park in North Dakota is about 90 miles east. Sidney is approximately 50 miles north. Billings Logan International Airport is the nearest major commercial airport (220 miles, about 3 hours). Glendive is remote but well-connected via I-94, which runs east-west through town.",
+      },
+      {
+        question: 'What is the Frontier Gateway Museum?',
+        answer: "The Frontier Gateway Museum in Glendive preserves the region\u2019s history from prehistoric times through the pioneer era. Exhibits cover Native American artifacts, the Northern Pacific Railway, early ranching and agriculture, and the development of Dawson County. The museum is one of 11 museums and cultural sites within 50 miles of Glendive, reflecting the area\u2019s rich heritage. The Glendive Dinosaur & Fossil Museum provides additional paleontological exhibits focused on dinosaur fossils found in the region.",
+      },
+      {
+        question: 'What is the weather like in Glendive?',
+        answer: "Glendive has a continental climate with extreme temperature swings. Summers are hot \u2014 July averages 86\u00B0F high and 63\u00B0F low, and Glendive holds Montana\u2019s all-time high temperature record of 117\u00B0F (July 20, 1893). Winters are cold with January averaging 33\u00B0F high and 15\u00B0F low. Annual precipitation is modest at about 15 inches, typical of the eastern Montana plains. Snowfall is moderate. The best times to visit are May\u2013June (paddlefish season) and September\u2013October (cooler temperatures, fall colors in the badlands).",
+      },
+      {
+        question: 'What outdoor activities are available near Glendive?',
+        answer: "Makoshika State Park offers hiking, camping, disc golf, archery, and fossil hunting across 11,500 acres of badlands. The Yellowstone River provides fishing (paddlefish, walleye, catfish, smallmouth bass), floating, and kayaking. Short Pines OHV Recreation Area (2,800 acres) offers off-road vehicle trails. Bird watching is excellent year-round. The minimal light pollution makes Glendive an outstanding stargazing location. Theodore Roosevelt National Park (90 miles east) offers additional hiking and wildlife viewing.",
+      },
+      {
+        question: 'What is the job market like in Glendive?',
+        answer: "Glendive has 5.2% unemployment with a job score of 8.7. Education and healthcare lead at 23.4%, followed by transportation at 16.9% (reflecting the I-94 corridor and BNSF railroad presence). Retail accounts for 15.2%. The median household income is $71,063 \u2014 strong for the region, boosted by transportation and energy-sector wages. Agriculture and ranching remain important in the broader Dawson County economy. Oil and gas activity from the nearby Williston Basin provides periodic economic stimulus. The labor force participation rate is 56.7%.",
+      },
+      {
+        question: 'Is there a college in Glendive?',
+        answer: "Yes \u2014 Dawson Community College is located in Glendive. It\u2019s a two-year public college offering associate degrees and certificates in fields including agriculture, business, health sciences, and trades. The college serves as a workforce development resource for the region and provides transfer pathways to four-year Montana universities. Its presence distinguishes Glendive from many small Montana towns that lack any post-secondary institution.",
+      },
+      {
+        question: 'What should I know before visiting Glendive?',
+        answer: "Glendive is in eastern Montana \u2014 remote, spacious, and authentic. Fill up on gas before leaving I-94 corridor. Summers are hot (bring plenty of water for Makoshika hikes). Rattlesnakes are present in the badlands \u2014 watch your step on trails. Paddlefish season (mid-May to June) requires advance permits. Hotels include La Quinta, Holiday Inn Express, Yellowstone River Inn, and Riverside Inn. Makoshika State Park campground has 28 sites. Cell service is adequate in town but spotty in the backcountry. The Glendive Dinosaur & Fossil Museum and Frontier Gateway Museum are worth visiting.",
+      },
+    ],
+  },
   'lewistown': {
     hubIntro: `Lewistown is a town of 5,952 residents in Fergus County, sitting at 4,121 feet elevation in the exact geographic center of Montana. Founded in 1879 by Métis settlers, Lewistown sits at the intersection of U.S. Highway 87 and U.S. Route 191, roughly 125 miles from both Great Falls and Billings. The town serves as the regional hub for central Montana, with distinctive stone architecture built by Croatian stonemasons and a downtown that preserves its frontier character.\n\nBig Spring Creek, a blue-ribbon trout stream fed by one of the largest springs in the West, flows through town. The Charlie Russell Chew Choo dinner train travels across historic trestles through pristine countryside. The Big Snowy Mountains and Judith Mountains rise to the south and east. Bear Gulch Pictographs and the American Prairie Reserve are within day-trip range. Within 50 miles there are 65 recreation sites including 20 campgrounds, 16 wildlife refuges, 9 lakes, 7 museums, 2 hot springs (including Gigantic Warm Spring 8 miles away), and 2 ski areas. The Central Montana Museum and Central Montana Historical Society preserve the region\u2019s heritage.\n\nBelow you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
     guides: [
