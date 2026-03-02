@@ -16,6 +16,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   'west-yellowstone': { name: 'West Yellowstone', tagline: 'Yellowstone west entrance' },
   'big-sky': { name: 'Big Sky', tagline: 'Mountain resort destination' },
   'miles-city': { name: 'Miles City', tagline: 'Cow Capital of Montana' },
+  polson: { name: 'Polson', tagline: 'Flathead Lake gateway' },
 };
 
 type Props = {

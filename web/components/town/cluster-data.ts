@@ -1560,6 +1560,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  polson: {
+    hubIntro: `Polson is a lakeside town of 5,148 residents in Lake County, sitting at 2,930 feet elevation on the southern shore of Flathead Lake\u2009—\u2009the largest natural freshwater lake west of the Mississippi. Located on the Flathead Indian Reservation, homeland of the Confederated Salish and Kootenai Tribes, Polson blends outdoor recreation with rich tribal culture and small-town charm.\n\nThe town lies roughly equidistant between Missoula (70 miles south) and Kalispell (55 miles north) along US-93. Within 50 miles there are 325 recreation sites including 80 lakes, 47 trailheads, 13 fishing access sites, 9 state parks, and 8 wilderness areas. Wild Horse Island State Park sits just 7 miles offshore, the Mission Mountains Tribal Wilderness\u2009—\u2009the only tribally designated wilderness in the United States\u2009—\u2009rises to the east, and Blacktail Mountain ski area is 27 miles north.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Polson, Montana',
+        metaTitle: 'Cost of Living in Polson, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Polson? Median home value $321K, income $51K, affordability ratio 10.5. Detailed breakdown of living costs on Flathead Lake.',
+        description: 'A detailed breakdown of what it costs to live in Polson\u2009\u2014\u2009housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Polson, Montana Housing Market',
+        metaTitle: 'Polson, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Polson housing market data: Zillow home value $541K, 77 active listings, 16.9% vacancy rate. Lakefront trends, inventory, and market analysis.',
+        description: 'Current housing market data for Polson including home values, inventory trends, vacancy rates, and lakefront market analysis.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Polson, Montana',
+        metaTitle: 'Jobs & Economy in Polson, Montana (2026) | Treasure State',
+        metaDescription: 'Polson job market: 6.9% unemployment, education/healthcare and retail-driven economy. Cherry orchards, tourism, and workforce data.',
+        description: "Polson's job market by the numbers\u2009\u2014\u2009top industries, employment rates, major employers, and the role of agriculture and tourism.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Polson, Montana',
+        metaTitle: 'Schools & Education in Polson, Montana (2026) | Treasure State',
+        metaDescription: 'Polson schools: 83% graduation rate, 1,400 students enrolled. School district info, per-pupil spending, and what families need to know.',
+        description: 'School district information, graduation rates, and what families should know about education in Polson.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Polson, Montana',
+        metaTitle: 'Hiking Near Polson, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Polson: 47 trailheads, Mission Mountains Tribal Wilderness, Wild Horse Island. Trail guides and seasonal info.',
+        description: 'The best trails and hikes near Polson\u2009\u2014\u2009from Mission Mountain ridgelines to Wild Horse Island explorations.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Polson, Montana',
+        metaTitle: 'Fishing Near Polson, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Polson: Flathead Lake trophy lake trout, 13 fishing access sites, 80 lakes. Species, access points, and seasonal guide.',
+        description: 'Complete fishing guide for Polson\u2009\u2014\u2009from Flathead Lake trophy trout to Mission Mountain alpine lakes.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Polson, Montana',
+        metaTitle: 'A Weekend in Polson, Montana (2026) | Treasure State',
+        metaDescription: 'Plan a weekend in Polson: Flathead Lake boating, Wild Horse Island, cherry orchards, Mission Mountains. Day-by-day itinerary.',
+        description: 'A day-by-day guide for a perfect weekend in Polson\u2009\u2014\u2009lake adventures, tribal culture, local flavor, and mountain scenery.',
+        icon: '\uD83D\uDCC5',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Polson, Montana?',
+        answer: "Polson's median household income is $51,463 with a census median home value of $321,000. However, the Zillow Home Value Index as of January 2026 is $541,265, reflecting strong demand for lakefront and lake-view properties. The affordability ratio of 10.5 makes Polson moderately expensive for Montana. Median rent is $921, well below Whitefish or Bozeman. The 16.9% vacancy rate reflects significant seasonal and vacation housing near Flathead Lake.",
+      },
+      {
+        question: 'What is Flathead Lake?',
+        answer: "Flathead Lake is the largest natural freshwater lake west of the Mississippi River, covering nearly 200 square miles with 185 miles of shoreline. The lake reaches depths of 370 feet and is renowned for its crystal-clear water. It supports populations of lake trout, bull trout, yellow perch, and lake whitefish. Wild Horse Island State Park\u2009—\u2009home to bighorn sheep, wild horses, and mule deer\u2009—\u2009sits in the lake's west bay, accessible only by boat.",
+      },
+      {
+        question: 'How far is Polson from Glacier National Park?',
+        answer: "Polson is approximately 70 miles (about 1.5 hours) from the west entrance of Glacier National Park in West Glacier. Kalispell is about 55 miles north along US-93, and Glacier Park International Airport (FCA) is about 60 miles away. Polson's location makes it a quieter, more affordable alternative base for exploring Glacier while offering Flathead Lake recreation that the park gateway towns don't have.",
+      },
+      {
+        question: 'What is the Mission Mountains Tribal Wilderness?',
+        answer: "The Mission Mountains Tribal Wilderness is the only tribally designated wilderness area in the United States, established by the Confederated Salish and Kootenai Tribes in 1982. The rugged range rises dramatically east of Polson, with peaks exceeding 9,800 feet. The tribal wilderness area requires a tribal recreation permit (available locally) and is managed separately from the adjacent Mission Mountains Wilderness on the national forest side. It protects critical grizzly bear habitat.",
+      },
+      {
+        question: 'What are winters like in Polson?',
+        answer: "Polson winters are moderate by Montana standards, thanks to the thermal influence of Flathead Lake. January averages 35\u00B0F high and 23\u00B0F low. The lake rarely freezes completely, moderating temperatures. Blacktail Mountain ski area is 27 miles north, and Whitefish Mountain Resort is 55 miles away. Winter activities include ice fishing (on smaller lakes), cross-country skiing, and snowmobiling in the surrounding national forest.",
+      },
+      {
+        question: 'Is Polson a good place to retire?',
+        answer: "Polson attracts retirees drawn to Flathead Lake's beauty, moderate climate (by Montana standards), and lower costs compared to Whitefish or Kalispell. The 16.9% vacancy rate indicates seasonal housing availability. Providence St. Joseph Medical Center serves the area, with larger hospitals in Missoula (70 miles) and Kalispell (55 miles). The town has a walkable downtown, a golf course, and cultural amenities including the Miracle of America Museum. Cherry orchards and wineries add to the quality of life.",
+      },
+      {
+        question: 'What fishing is available near Polson?',
+        answer: "Polson is a premier fishing destination. Flathead Lake yields trophy lake trout (Mackinaw) exceeding 30 pounds, plus bull trout, yellow perch, and lake whitefish. Within 50 miles there are 13 fishing access sites and 80 lakes. The Flathead River below the Seli'\u0161 Ksanka Qlispe' Dam offers excellent trout fishing. Lake Mary Ronan (17 miles) is a popular warmwater and trout fishery. A tribal recreation permit is required to fish on reservation waters.",
+      },
+      {
+        question: 'What events happen in Polson?',
+        answer: "Polson's signature event is the Flathead Cherry Festival in July, celebrating the region's cherry orchards with food, entertainment, and cherry pit-spitting contests. Other events include the Fourth of July parade and fireworks over Flathead Lake, the Flathead Lake Blues Festival, farmers markets (summer), the Polson Main Street events, and various tribal cultural events hosted by the Confederated Salish and Kootenai Tribes throughout the year.",
+      },
+      {
+        question: 'What is Wild Horse Island?',
+        answer: "Wild Horse Island State Park is a 2,163-acre island in Flathead Lake, located about 7 miles from Polson by boat. It's home to bighorn sheep, mule deer, songbirds, falcons, eagles, and a small herd of wild horses. The island has hiking trails with panoramic views of Flathead Lake and the Mission Mountains. There are no facilities or ferry service\u2009—\u2009visitors must arrive by private boat or kayak. It's one of Montana's most unique state parks.",
+      },
+      {
+        question: 'How do I get to Polson?',
+        answer: "Polson is on US-93 in northwest Montana, approximately 70 miles north of Missoula and 55 miles south of Kalispell. The nearest commercial airports are Glacier Park International Airport (FCA) in Kalispell (60 miles) and Missoula Montana Airport (MSO) in Missoula (70 miles). Both airports offer daily flights to major hubs. Polson is a natural stop along the US-93 corridor between Missoula and Glacier National Park.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
