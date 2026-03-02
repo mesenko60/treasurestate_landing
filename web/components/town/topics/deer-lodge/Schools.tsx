@@ -66,8 +66,8 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
         across the entire district, class sizes are genuinely small — teachers know every student by
         name and can provide the kind of individualized attention that larger districts cannot match.
         Phil Jackson, the legendary NBA coach who led the Chicago Bulls and Los Angeles Lakers to 11
-        championships, attended Deer Lodge High School and has spoken about how the small-town
-        environment shaped his formative years.
+        championships, was born in Deer Lodge in 1945 before his family moved to North Dakota — a
+        connection that still resonates with the community.
       </p>
       {schoolWebsite && (
         <p>

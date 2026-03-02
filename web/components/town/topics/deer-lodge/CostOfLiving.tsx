@@ -214,7 +214,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         Where {townName} stands out is the combination of genuine affordability with a
         government-stabilized economy and proximity to serious outdoor recreation. Georgetown
         Lake is 13 miles southwest, the Anaconda-Pintler Wilderness is 3 miles south, and the
-        Clark Fork River runs through town. Phil Jackson grew up here — it's the kind of quiet,
+        Clark Fork River runs through town. NBA legend Phil Jackson was born here — it's the kind of quiet,
         working Montana town that hasn't been discovered by the remote-work migration the way
         Flathead Valley or Gallatin Valley towns have. For buyers looking at southwest Montana,
         {townName} offers a rare combination: sub-$300K homes, stable government employment,

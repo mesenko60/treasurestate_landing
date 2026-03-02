@@ -43,7 +43,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         the Anaconda-Pintler Wilderness rising to the south, {townName} is a town of
         roughly 3,000 where ranching history, mountain wilderness, and the Clark Fork
         River converge. Phil Jackson{'\u2014'}basketball Hall of Famer and winner of 11 NBA
-        championships{'\u2014'}grew up here, and the town{'\u2019'}s Victorian-era Main Street
+        championships{'\u2014'}was born here in 1945, and the town{'\u2019'}s Victorian-era Main Street
         still reflects the grit and character of its frontier roots. This two-day
         itinerary covers the essentials. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
