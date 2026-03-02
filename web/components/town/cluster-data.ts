@@ -350,6 +350,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  whitefish: {
+    hubIntro: `Whitefish is a classic Montana ski town of 8,915 residents nestled between Whitefish Lake and Whitefish Mountain Resort in the Flathead Valley of northwest Montana. Whether you're weighing a move or planning a visit, this guide covers everything you need to know — from <a href="/montana-towns/whitefish/cost-of-living/">housing costs</a> and <a href="/montana-towns/whitefish/jobs/">job opportunities</a> to <a href="/montana-towns/whitefish/hiking/">hiking trails</a> and a <a href="/montana-towns/whitefish/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nWhitefish Mountain Resort — one of Montana's premier ski areas with over 3,000 acres of terrain — is just 5 miles from downtown. Glacier National Park's west entrance is 17 miles northeast, making Whitefish the closest town of any size to the park. Whitefish Lake, a glacially carved 3,300-acre lake, borders the town's eastern edge. The Amtrak Empire Builder stops daily at the historic Whitefish Depot, making it one of the few Montana towns accessible by rail. With 408 recreation sites within 50 miles, a charming walkable downtown on Central Avenue, and a year-round resort-town energy, Whitefish has become one of the most sought-after small towns in the American West — and its housing prices reflect that demand.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Whitefish, Montana',
+        metaTitle: 'Cost of Living in Whitefish, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Whitefish? Median home value $835K, rent $2,436/mo, income $71K. Affordability ratio of 11.7 and how Whitefish compares statewide.',
+        description: 'A detailed breakdown of what it costs to live in Whitefish — housing, income, affordability, and how it compares to the rest of Montana.',
+        icon: '💰',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Whitefish, Montana Housing Market',
+        metaTitle: 'Whitefish, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Whitefish housing market data: median home value $835K, 237 active listings, median list price $1.29M, and a 19.3% vacancy rate driven by vacation homes.',
+        description: 'Current housing market data for Whitefish including home values, rental rates, inventory trends, and market analysis.',
+        icon: '🏠',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Whitefish, Montana',
+        metaTitle: 'Jobs & Economy in Whitefish, Montana (2026) | Treasure State',
+        metaDescription: 'Whitefish job market: 2% unemployment, job score 9.5/10, led by education & healthcare (21.1%). Resort economy, tourism, and workforce data.',
+        description: "Whitefish's job market by the numbers — top industries, a 2% unemployment rate, resort economy, and workforce outlook.",
+        icon: '💼',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools in Whitefish, Montana',
+        metaTitle: 'Schools in Whitefish, Montana — K-12 Guide | Treasure State',
+        metaDescription: 'Guide to Whitefish schools: Whitefish School District (1,800 students, 95% graduation rate), $12,500 per-pupil spending, and nearby FVCC.',
+        description: 'Guide to Whitefish schools from K-12 through nearby higher education options, including enrollment, graduation rates, and spending.',
+        icon: '🎓',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Whitefish, Montana',
+        metaTitle: 'Best Hiking Near Whitefish, Montana — Trails & Routes | Treasure State',
+        metaDescription: '80 trailheads near Whitefish including Danny On Trail, Big Mountain, and Glacier National Park just 17 miles away. Trail guide with distances.',
+        description: 'The best hiking trails near Whitefish — from Danny On Trail and Big Mountain to Glacier National Park, 17 miles away.',
+        icon: '🥾',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Whitefish, Montana',
+        metaTitle: 'Fishing Near Whitefish, Montana — Lakes, Rivers & Guide | Treasure State',
+        metaDescription: 'Fishing near Whitefish on Whitefish Lake, Flathead Lake, and the Flathead River. 11 access sites, 45 lakes, species guide, and seasonal tips.',
+        description: 'Fishing near Whitefish on the namesake lake, Flathead Lake, and the Flathead River — 45 lakes within 50 miles and 11 public access sites.',
+        icon: '🎣',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Whitefish, Montana',
+        metaTitle: 'Weekend in Whitefish, Montana — 3-Day Itinerary | Treasure State',
+        metaDescription: 'How to spend a weekend in Whitefish: Central Avenue, Whitefish Mountain Resort, Glacier National Park, Whitefish Lake. A 3-day itinerary.',
+        description: 'How to spend a weekend in Whitefish — a day-by-day guide covering the ski resort, Glacier National Park, and downtown charm.',
+        icon: '📅',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Whitefish, Montana?',
+        answer: "Whitefish's median household income is $71,110 with a median home value of $834,744 (Zillow, January 2026). The affordability ratio of 11.7 makes Whitefish one of the most expensive places to live in Montana. Median rent is $2,436 per month. Home values rank in the 96th percentile among Montana towns. The extreme pricing reflects resort-town demand driven by Whitefish Mountain Resort and Glacier National Park proximity.",
+      },
+      {
+        question: 'How far is Whitefish from Glacier National Park?',
+        answer: "Whitefish is 17 miles from Glacier National Park's west entrance at West Glacier, about a 20-minute drive via US-2. This makes Whitefish the closest town of any size to the park. The east side of the park at East Glacier is 51 miles away. Going-to-the-Sun Road, the park's iconic scenic drive, typically opens fully in late June or early July.",
+      },
+      {
+        question: 'What are winters like in Whitefish?',
+        answer: "Whitefish winters are cold and snowy — ideal for skiing. January averages a high of 33°F and a low of 18°F. Whitefish Mountain Resort, just 5 miles from downtown, receives over 300 inches of snow annually and offers over 3,000 acres of skiable terrain. The town embraces winter with Nordic skiing, snowshoeing, and a vibrant après-ski scene on Central Avenue.",
+      },
+      {
+        question: 'Is Whitefish a good place for families?',
+        answer: "Whitefish offers an excellent small-town school system through Whitefish School District, serving 1,800 students with a 95% graduation rate and $12,500 per-pupil spending. Whitefish Lake and the ski resort provide year-round family activities. The walkable downtown is safe and family-friendly. The main challenge is housing cost — home values rank in the 96th percentile for Montana.",
+      },
+      {
+        question: 'What outdoor recreation is near Whitefish?',
+        answer: "Whitefish has 408 recreation sites within 50 miles, including 80 trailheads, 45 lakes, 11 fishing access sites, and 5 state parks. Whitefish Mountain Resort (5 miles) offers skiing, mountain biking, and scenic chairlift rides. Glacier National Park is 17 miles away. Whitefish Lake borders town for swimming, paddling, and fishing. The Whitefish Trail system provides extensive multi-use trails.",
+      },
+      {
+        question: 'When is the best time to visit Whitefish?',
+        answer: "Summer (June–August) offers warm days with highs of 70–80°F, full Glacier National Park access, and lake activities. Winter (December–March) is ski season at Whitefish Mountain Resort. Fall brings golden larch trees and fewer crowds. The shoulder seasons offer value — ski season rates drop significantly in April and November, while early June avoids peak summer pricing.",
+      },
+      {
+        question: 'What are the main industries in Whitefish?',
+        answer: "Education and healthcare leads at 21.1% of employment, followed by retail (15.5%) and professional services (11.5%). Tourism and hospitality drive a significant portion of the economy through Whitefish Mountain Resort and Glacier National Park visitor traffic. The unemployment rate is just 2% with a job score of 9.5 out of 10, though many positions are seasonal.",
+      },
+      {
+        question: 'Is Whitefish a good place to retire?',
+        answer: "Whitefish is a popular retirement destination thanks to world-class skiing, Glacier National Park access, Whitefish Lake, and a charming downtown. Montana has no state sales tax. However, home values rank in the 96th percentile for Montana — the median home value is $835K and the median list price exceeds $1.29M. Healthcare requires travel to Kalispell (15 miles) for major services.",
+      },
+      {
+        question: 'What is the housing market like in Whitefish?',
+        answer: "As of January 2026, Whitefish's median home value is $834,744 (Zillow) with 237 homes for sale and a median list price of $1,291,667. The vacancy rate of 19.3% — one of the highest in Montana — reflects the town's large stock of vacation homes and short-term rentals. Inventory has decreased 2.5% year-over-year, keeping the market tight for year-round buyers.",
+      },
+      {
+        question: 'Can you fly into Whitefish?',
+        answer: "Yes, Glacier Park International Airport (FCA) is 11 miles south of Whitefish, offering daily flights to Denver, Seattle, Salt Lake City, Minneapolis, and seasonal routes. Whitefish is also served by Amtrak's Empire Builder — one of the most scenic train routes in the U.S. — with daily stops at the historic Whitefish Depot. By car, US-93 and US-2 provide highway access.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {

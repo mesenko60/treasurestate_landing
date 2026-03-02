@@ -36,6 +36,14 @@ import KalHiking from '../../../components/town/topics/kalispell/Hiking';
 import KalFishing from '../../../components/town/topics/kalispell/Fishing';
 import KalWeekendItinerary from '../../../components/town/topics/kalispell/WeekendItinerary';
 
+import WfCostOfLiving from '../../../components/town/topics/whitefish/CostOfLiving';
+import WfHousing from '../../../components/town/topics/whitefish/Housing';
+import WfJobs from '../../../components/town/topics/whitefish/Jobs';
+import WfSchools from '../../../components/town/topics/whitefish/Schools';
+import WfHiking from '../../../components/town/topics/whitefish/Hiking';
+import WfFishing from '../../../components/town/topics/whitefish/Fishing';
+import WfWeekendItinerary from '../../../components/town/topics/whitefish/WeekendItinerary';
+
 type RecPlace = { name: string; type: string; distMiles: number };
 
 type Props = {
@@ -102,6 +110,15 @@ export default function TopicPage(props: Props) {
       'hiking': KalHiking,
       'fishing': KalFishing,
       'weekend-itinerary': KalWeekendItinerary,
+    },
+    whitefish: {
+      'cost-of-living': WfCostOfLiving,
+      'housing': WfHousing,
+      'jobs': WfJobs,
+      'schools': WfSchools,
+      'hiking': WfHiking,
+      'fishing': WfFishing,
+      'weekend-itinerary': WfWeekendItinerary,
     },
   };
 
