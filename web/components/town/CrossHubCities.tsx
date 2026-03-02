@@ -21,6 +21,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   'columbia-falls': { name: 'Columbia Falls', tagline: 'Gateway to Glacier National Park' },
   anaconda: { name: 'Anaconda', tagline: 'Copper heritage & Pintler wilderness' },
   bigfork: { name: 'Bigfork', tagline: 'Flathead Lake arts village' },
+  'deer-lodge': { name: 'Deer Lodge', tagline: 'Frontier ranching heritage & prison history' },
 };
 
 type Props = {

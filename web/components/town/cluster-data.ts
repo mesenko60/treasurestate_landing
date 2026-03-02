@@ -2111,6 +2111,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'deer-lodge': {
+    hubIntro: `Deer Lodge is a frontier heritage town of 3,033 residents in Powell County, sitting at 4,521 feet elevation in the broad Deer Lodge Valley where the Clark Fork River and Cottonwood Creek converge. Named for a warm-spring mound that attracted deer and resembled a Native American lodge from a distance, the town has been a crossroads of Montana history since the 1860s.\n\nDeer Lodge is home to the Grant-Kohrs Ranch National Historic Site — one of the best-preserved 19th-century cattle ranches in the country and a unit of the National Park Service. The Old Montana Prison Museum Complex houses five museums within the imposing sandstone walls of the former state penitentiary. NBA coaching legend Phil Jackson grew up here. The town sits on Interstate 90, 37 miles northwest of Butte and 80 miles southeast of Missoula. Within 50 miles there are 321 recreation sites including 91 lakes, 47 trailheads, 73 campgrounds, 8 fishing access sites, 9 wilderness areas, 13 hot springs, and 3 ski areas. Georgetown Lake is 13 miles southwest, and the Anaconda-Pintler Wilderness begins just 3 miles south.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Deer Lodge, Montana',
+        metaTitle: 'Cost of Living in Deer Lodge, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Deer Lodge? Median home $196K, rent $781, affordability ratio 5.2. One of Montana\u2019s most affordable I-90 corridor towns.',
+        description: 'A detailed breakdown of what it costs to live in Deer Lodge \u2014 housing, income, affordability, and how it compares to nearby Butte and Anaconda.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Deer Lodge, Montana Housing Market',
+        metaTitle: 'Deer Lodge, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Deer Lodge housing: Zillow value $277K, 23 active listings, inventory up 15%. Affordable homes in Montana\u2019s heritage ranching valley.',
+        description: 'Current housing market data for Deer Lodge including home values, inventory trends, and affordability in the Deer Lodge Valley.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Deer Lodge, Montana',
+        metaTitle: 'Jobs & Economy in Deer Lodge, Montana (2026) | Treasure State',
+        metaDescription: 'Deer Lodge job market: 2.3% unemployment, government 20.8%, tourism 20.4%. Montana State Prison, Grant-Kohrs Ranch, and museum economy.',
+        description: "Deer Lodge's economy by the numbers \u2014 from state prison employment to heritage tourism, plus workforce data and industry breakdown.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Deer Lodge, Montana',
+        metaTitle: 'Schools & Education in Deer Lodge, Montana (2026) | Treasure State',
+        metaDescription: 'Deer Lodge schools: 82% graduation rate, 450 enrolled. Small-town education with access to Grant-Kohrs Ranch and Montana\u2019s outdoor classroom.',
+        description: 'School district information, graduation rates, and what families should know about education in Deer Lodge.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Deer Lodge, Montana',
+        metaTitle: 'Hiking Near Deer Lodge, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Deer Lodge: 47 trailheads, Anaconda-Pintler Wilderness (3 mi), Flint Creek Range. Trail guides and backcountry access.',
+        description: 'The best trails and hikes near Deer Lodge \u2014 from Pintler Wilderness alpine lakes to Flint Creek Range ridge walks.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Deer Lodge, Montana',
+        metaTitle: 'Fishing Near Deer Lodge, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Deer Lodge: Clark Fork River, Georgetown Lake, 91 lakes, 8 access sites. Trout, kokanee, and high-mountain cutthroat.',
+        description: 'Complete fishing guide for Deer Lodge \u2014 from Clark Fork River trout to Georgetown Lake kokanee and Pintler Wilderness backcountry lakes.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Deer Lodge, Montana',
+        metaTitle: 'Weekend in Deer Lodge, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Deer Lodge: Grant-Kohrs Ranch, Old Montana Prison, Pintler Scenic Route, Georgetown Lake. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Deer Lodge \u2014 frontier ranching history, prison museums, mountain lakes, and scenic drives.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Deer Lodge, Montana?',
+        answer: "Deer Lodge is one of the most affordable communities along Montana's I-90 corridor. The census median home value is $196,400, with the Zillow Home Value Index at $277,204 as of January 2026. Median rent is $781 and median household income is $53,676, producing an affordability ratio of 5.2 \u2014 better than most Montana towns. The 10.6% vacancy rate is moderate. Deer Lodge is significantly cheaper than nearby Anaconda and much less than resort destinations like Big Sky or Whitefish.",
+      },
+      {
+        question: 'What is Grant-Kohrs Ranch National Historic Site?',
+        answer: "Grant-Kohrs Ranch is a unit of the National Park Service preserving one of the best-known 19th-century cattle ranches in the country. Johnny Grant established the ranch in 1862, and Conrad Kohrs later expanded it into a vast cattle empire. Today, visitors can tour the original ranch house, outbuildings, and corrals. NPS rangers conduct living-history demonstrations of ranching skills including blacksmithing, horseshoeing, and cattle work. The ranch is free to visit and sits right at the north edge of town. It\u2019s one of the few National Historic Sites in Montana and a must-see for western history enthusiasts.",
+      },
+      {
+        question: 'What is the Old Montana Prison?',
+        answer: "The Old Montana Prison is a museum complex occupying the former Montana State Penitentiary, which operated from 1871 to 1979. The imposing sandstone walls and cell blocks are open for self-guided tours. The complex houses five museums: the prison itself, the Montana Auto Museum (120+ vintage vehicles), Frontier Montana (Old West artifacts), Desert John\u2019s Saloon (frontier nightlife recreation), and Yesterday\u2019s Playthings (antique toys). The prison is one of Montana\u2019s most visited historical attractions and has been featured in paranormal investigation shows.",
+      },
+      {
+        question: 'Who is Phil Jackson from Deer Lodge?',
+        answer: "Phil Jackson, one of basketball\u2019s greatest coaches, grew up in Deer Lodge where his parents were Pentecostal ministers. He played basketball at Deer Lodge High School before going on to play 13 seasons in the NBA. As a coach, he won 11 NBA championships \u2014 six with the Chicago Bulls (Michael Jordan era) and five with the Los Angeles Lakers (Shaq/Kobe era). His record of 11 titles is the most in NBA history. Jackson\u2019s Montana roots and philosophy of mindfulness influenced his famous \u201CZen Master\u201D coaching style.",
+      },
+      {
+        question: 'How far is Deer Lodge from Butte and Missoula?',
+        answer: 'Deer Lodge sits on Interstate 90, approximately 37 miles (40 minutes) northwest of Butte and 80 miles (1 hour 15 minutes) southeast of Missoula. Anaconda is 23 miles south, Helena is about 60 miles northeast via Highway 12, and Philipsburg is 37 miles southwest. The town\u2019s central I-90 location makes it an easy day-trip destination or overnight stop between Montana\u2019s larger cities.',
+      },
+      {
+        question: 'What outdoor activities are available near Deer Lodge?',
+        answer: "Deer Lodge is surrounded by outdoor recreation. The Anaconda-Pintler Wilderness begins just 3 miles south, offering 158,000 acres of alpine backcountry. Georgetown Lake (13 miles) provides fishing, boating, and ice fishing. The Flint Creek Range to the west has ridge hiking and hunting. The Clark Fork River flows through the valley for trout fishing. Within 50 miles there are 321 recreation sites including 91 lakes, 47 trailheads, and 73 campgrounds. Discovery Ski Area (25 miles) offers winter downhill skiing.",
+      },
+      {
+        question: 'What is the Montana State Prison?',
+        answer: "The Montana State Prison is a major employer in the Deer Lodge area. The original prison in town (Old Montana Prison) operated from 1871 to 1979 and is now a museum. The current Montana State Prison facility is located south of town and remains one of the region\u2019s largest employers, contributing to the 20.8% government employment sector. The prison\u2019s presence provides economic stability but also shapes the town\u2019s character and housing market, with corrections staff making up a significant portion of the workforce.",
+      },
+      {
+        question: 'What is the Pintler Scenic Route?',
+        answer: "The Pintler Veterans Memorial Scenic Route (Montana Highway 1) is a 63-mile scenic byway running from Anaconda through Georgetown Lake and Philipsburg. The route passes within 10 miles of Deer Lodge and offers spectacular mountain views, access to Georgetown Lake, Discovery Ski Area, and historic mining towns. It\u2019s one of Montana\u2019s most beautiful alternative routes to Interstate 90 and a popular fall color drive. The route connects to I-90 at both Anaconda and Drummond.",
+      },
+      {
+        question: 'What are winters like in Deer Lodge?',
+        answer: "Deer Lodge winters are cold in the high valley. January averages a high of 22\u00B0F and low of 10\u00B0F, with regular snowfall from October through April. The Deer Lodge Valley can experience temperature inversions that trap cold air. Discovery Ski Area (25 miles) offers downhill skiing, and Georgetown Lake (13 miles) is one of Montana\u2019s premier ice fishing destinations. Cross-country skiing and snowmobiling are available in the surrounding national forests. The town\u2019s low elevation compared to nearby mountain passes makes road travel generally manageable.",
+      },
+      {
+        question: 'How do I get to Deer Lodge?',
+        answer: "Deer Lodge is on Interstate 90 in southwest Montana, 37 miles northwest of Butte and 80 miles southeast of Missoula. Take I-90 Exit 184 (Main Street). The nearest commercial airport is Bert Mooney Airport (BTM) in Butte, 37 miles southeast. Missoula Montana Airport (MSO) is 80 miles northwest. Deer Lodge sits at the intersection of I-90 and Montana Highway 12, which connects east to Helena (60 miles). The town is roughly midway between Yellowstone and Glacier National Parks along the I-90 corridor.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
