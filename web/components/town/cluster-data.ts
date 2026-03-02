@@ -2441,6 +2441,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'lewistown': {
+    hubIntro: `Lewistown is a town of 5,952 residents in Fergus County, sitting at 4,121 feet elevation in the exact geographic center of Montana. Founded in 1879 by Métis settlers, Lewistown sits at the intersection of U.S. Highway 87 and U.S. Route 191, roughly 125 miles from both Great Falls and Billings. The town serves as the regional hub for central Montana, with distinctive stone architecture built by Croatian stonemasons and a downtown that preserves its frontier character.\n\nBig Spring Creek, a blue-ribbon trout stream fed by one of the largest springs in the West, flows through town. The Charlie Russell Chew Choo dinner train travels across historic trestles through pristine countryside. The Big Snowy Mountains and Judith Mountains rise to the south and east. Bear Gulch Pictographs and the American Prairie Reserve are within day-trip range. Within 50 miles there are 65 recreation sites including 20 campgrounds, 16 wildlife refuges, 9 lakes, 7 museums, 2 hot springs (including Gigantic Warm Spring 8 miles away), and 2 ski areas. The Central Montana Museum and Central Montana Historical Society preserve the region\u2019s heritage.\n\nBelow you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Lewistown, Montana',
+        metaTitle: 'Cost of Living in Lewistown, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Lewistown? Median home $160K, rent $896, affordability ratio 6.1. Geographic center of Montana.',
+        description: 'A detailed breakdown of what it costs to live in Lewistown \u2014 housing, income, affordability, and regional comparisons.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Lewistown, Montana Housing Market',
+        metaTitle: 'Lewistown, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Lewistown housing: Zillow value $271K, 59 active listings, 7.4% vacancy. Central Montana regional hub market.',
+        description: 'Current housing market data for Lewistown including home values, inventory trends, and regional hub dynamics.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Lewistown, Montana',
+        metaTitle: 'Jobs & Economy in Lewistown, Montana (2026) | Treasure State',
+        metaDescription: 'Lewistown job market: 6.8% unemployment, education & healthcare lead at 29.6%. Agriculture backbone, regional hub.',
+        description: "Lewistown's economy by the numbers \u2014 from agriculture and healthcare to regional retail and government services.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Lewistown, Montana',
+        metaTitle: 'Schools & Education in Lewistown, Montana (2026) | Treasure State',
+        metaDescription: 'Lewistown schools: 92% graduation rate, 1,200 enrolled, $11,800 per-pupil spending. Fergus County district.',
+        description: 'School district information, graduation rates, and what families should know about education in Lewistown.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Lewistown, Montana',
+        metaTitle: 'Hiking Near Lewistown, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Lewistown: Big Snowy Mountains, Judith Mountains, Bear Gulch Pictographs. Trail guides.',
+        description: 'The best trails and hikes near Lewistown \u2014 from Big Snowy Mountains to Judith Mountains and prairie landscapes.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Lewistown, Montana',
+        metaTitle: 'Fishing Near Lewistown, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Lewistown: Big Spring Creek blue-ribbon trout, flows through town. Central Montana fishing guide.',
+        description: 'Complete fishing guide for Lewistown \u2014 Big Spring Creek and surrounding waters in central Montana.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Lewistown, Montana',
+        metaTitle: 'Weekend in Lewistown, Montana \u2014 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Lewistown: Charlie Russell Chew Choo, Big Spring Creek, Big Snowy Mountains. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Lewistown \u2014 dinner train, trout fishing, mountain hikes, and frontier heritage.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Lewistown, Montana?',
+        answer: "Lewistown offers affordable housing for a regional hub. The census median home value is $159,500, with the Zillow Home Value Index at $271,126 as of January 2026. Median household income is $44,195 (16th percentile nationally), producing an affordability ratio of 6.1. Median rent is $896 per month (44th percentile). The 7.4% vacancy rate indicates moderate availability. Lewistown has 3,047 housing units with 59 active listings. As the geographic center of Montana and a regional hub for healthcare, retail, and government, Lewistown provides services to a large rural area while maintaining lower costs than Billings or Great Falls.",
+      },
+      {
+        question: 'What is Big Spring Creek?',
+        answer: "Big Spring Creek is a blue-ribbon trout stream that flows through Lewistown, fed by one of the largest springs in the American West. The crystal-clear, spring-fed water supports excellent populations of rainbow and brown trout. The creek runs right through town, offering convenient access for fly fishing. Spring Creek Trout Hatchery, 3 miles from town, raises fish for stocking. Big Spring Creek is one of Montana's premier small-stream fisheries and a major draw for anglers visiting central Montana.",
+      },
+      {
+        question: 'What is the Charlie Russell Chew Choo?',
+        answer: "The Charlie Russell Chew Choo is a popular dinner train that travels through central Montana's countryside. Passengers enjoy a meal while the train crosses historic trestles and passes through pristine landscapes. The experience combines Montana's railroad heritage with scenic views of the Judith Basin and surrounding mountains. The train operates seasonally; reservations are recommended. It's named for Charles M. Russell, the famed western artist who captured Montana's frontier life.",
+      },
+      {
+        question: 'Where is the geographic center of Montana?',
+        answer: "Lewistown sits in the approximate geographic center of Montana, at the intersection of U.S. Highway 87 and U.S. Route 191. The town is roughly 125 miles from Great Falls to the northwest and 125 miles from Billings to the southeast, making it a natural hub for central Montana. This central location has historically made Lewistown a gathering point for agriculture, commerce, and travel. The Lewistown Municipal Airport serves private aircraft.",
+      },
+      {
+        question: 'What are the Big Snowy Mountains?',
+        answer: "The Big Snowy Mountains rise south of Lewistown and offer hiking, camping, and wilderness recreation. The Big Snowy Mountains Wilderness Study Area (21 miles from town) protects backcountry terrain. The range provides a dramatic backdrop to the Judith Basin and is accessible for day hikes and longer backpacking trips. Two ski areas within 50 miles serve winter recreation. The mountains are part of the island range geology typical of central Montana \u2014 isolated ranges rising from the plains.",
+      },
+      {
+        question: 'What is Bear Gulch Pictographs?',
+        answer: "Bear Gulch Pictographs is a significant rock art site featuring Native American pictographs and petroglyphs. The site preserves images created by indigenous peoples over thousands of years. It's within day-trip range of Lewistown and offers a unique glimpse into the region's pre-European history. The area was originally territory of the Blackfoot. Visitors should respect the site's cultural significance and follow access guidelines.",
+      },
+      {
+        question: 'What is the American Prairie Reserve?',
+        answer: "The American Prairie Reserve is a large-scale conservation project in northeastern Montana, working to restore a functioning prairie ecosystem with bison and native wildlife. The reserve is within day-trip range of Lewistown and offers wildlife viewing, hiking, and a chance to experience the Great Plains as they once were. The project aims to create the largest nature reserve in the continental United States, connecting existing public lands.",
+      },
+      {
+        question: 'What events happen in Lewistown?',
+        answer: "Lewistown hosts the Montana Winter Fair, Chokecherry Festival (August), Christmas Stroll, and Charlie Russell Chew Choo dinner train excursions. The Central Montana Fair brings rodeo, exhibits, and community celebration. An Ag Tour showcases local agricultural operations. Golf tournaments, the North Pole Adventure train ride in winter, and various community events run throughout the year. The town's historic downtown provides a charming backdrop for festivals.",
+      },
+      {
+        question: 'What is Lewistown\u2019s history?',
+        answer: "Fort Lewis was established in 1874 to protect travelers on the Carroll Trail. Métis settlers founded Lewistown in 1879, with Pierre Berger credited as the town's founder. Gold was discovered in the Judith Mountains in 1880, triggering a rush. The town incorporated in 1899 and became the eastern terminus of the Montana Railroad. Croatian stonemasons built many of the distinctive stone buildings still standing today. During World War II, a B-17 training base operated west of town. The last Norden bombsight storage facility from WWII remains in Lewistown.",
+      },
+      {
+        question: 'What should I know before visiting Lewistown?',
+        answer: "Lewistown is an authentic western town, not a tourist resort. The Yogo Inn is a landmark hotel. Accommodations include historic properties, cabins, lodges, and campgrounds. Fill up on gas \u2014 the town is 125 miles from the nearest major cities. Big Spring Creek fishing is best in summer and fall. The Charlie Russell Chew Choo requires reservations. The Central Montana Museum and Central Montana Historical Society offer excellent introductions to the region's history. Lewistown Municipal Airport serves private aircraft.",
+      },
+    ],
+  },
   'three-forks': {
     hubIntro: `Three Forks is a small town of 1,989 residents in Gallatin County, sitting at 4,075 feet elevation at the exact spot where the Jefferson, Madison, and Gallatin Rivers converge to form the Missouri River. Meriwether Lewis named these three rivers on July 27, 1805, for President Jefferson, Secretary of State Madison, and Treasury Secretary Gallatin — making this confluence one of the most significant geographic landmarks in American exploration history.\n\nMissouri Headwaters State Park preserves the confluence 4 miles northeast of town and is a U.S. National Historic Landmark. Sacagawea, who guided Lewis and Clark, was captured near this site in 1800 and later returned with the expedition. The historic Sacajawea Hotel (1910) anchors downtown. Three Forks sits on Interstate 90 just 31 miles west of Bozeman and 64 miles east of Butte. Within 50 miles there are 244 recreation sites including 28 trailheads, 59 lakes, 43 campgrounds, 4 state parks, 13 hot springs, and 33 museums. Lewis & Clark Caverns State Park is 16 miles west, and Madison Buffalo Jump State Park is 15 miles southeast.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [

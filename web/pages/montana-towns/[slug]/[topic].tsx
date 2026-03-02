@@ -205,6 +205,15 @@ const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
     'fishing': dynamic(() => import('../../../components/town/topics/libby/Fishing')),
     'weekend-itinerary': dynamic(() => import('../../../components/town/topics/libby/WeekendItinerary')),
   },
+  lewistown: {
+    'cost-of-living': dynamic(() => import('../../../components/town/topics/lewistown/CostOfLiving')),
+    'housing': dynamic(() => import('../../../components/town/topics/lewistown/Housing')),
+    'jobs': dynamic(() => import('../../../components/town/topics/lewistown/Jobs')),
+    'schools': dynamic(() => import('../../../components/town/topics/lewistown/Schools')),
+    'hiking': dynamic(() => import('../../../components/town/topics/lewistown/Hiking')),
+    'fishing': dynamic(() => import('../../../components/town/topics/lewistown/Fishing')),
+    'weekend-itinerary': dynamic(() => import('../../../components/town/topics/lewistown/WeekendItinerary')),
+  },
   'choteau': {
     'cost-of-living': dynamic(() => import('../../../components/town/topics/choteau/CostOfLiving')),
     'housing': dynamic(() => import('../../../components/town/topics/choteau/Housing')),

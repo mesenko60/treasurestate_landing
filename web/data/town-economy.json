@@ -5786,6 +5786,31 @@
         "name": "Transportation",
         "fullName": "Transportation, Warehousing & Utilities",
         "pct": 9.3
+      },
+      {
+        "name": "Professional Services",
+        "fullName": "Professional, Scientific & Technical Services",
+        "pct": 8.2
+      },
+      {
+        "name": "Other Services",
+        "fullName": "Other Services",
+        "pct": 7.3
+      },
+      {
+        "name": "Tourism & Hospitality",
+        "fullName": "Arts, Entertainment, Recreation, Accommodation & Food",
+        "pct": 6.9
+      },
+      {
+        "name": "Construction",
+        "fullName": "Construction",
+        "pct": 6
+      },
+      {
+        "name": "Manufacturing",
+        "fullName": "Manufacturing",
+        "pct": 5.4
       }
     ],
     "mainIndustry": "Education & Healthcare",

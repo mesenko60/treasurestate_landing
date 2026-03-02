@@ -25,6 +25,7 @@ const CITY_META: Record<string, { name: string; tagline: string }> = {
   'three-forks': { name: 'Three Forks', tagline: 'Birthplace of the Missouri River' },
   'choteau': { name: 'Choteau', tagline: 'Rocky Mountain Front & dinosaur country' },
   'libby': { name: 'Libby', tagline: 'Kootenai Falls & Cabinet Mountains gateway' },
+  'lewistown': { name: 'Lewistown', tagline: 'Geographic center of Montana' },
 };
 
 type Props = {
