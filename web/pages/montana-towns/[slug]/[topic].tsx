@@ -9,6 +9,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 import StaysCTA from '../../../components/StaysCTA';
 import StoreBanner from '../../../components/StoreBanner';
 import RelatedGuides from '../../../components/town/RelatedGuides';
+import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
 import { getTownNameFromSlug } from '../../../lib/towns';
 
@@ -283,6 +284,7 @@ export default function TopicPage(props: Props) {
       <main style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
         {content}
         <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
+        <CrossHubLinks slug={slug} topic={topic} townName={townName} />
         <StaysCTA townName={townName} slug={slug} />
         <StoreBanner />
       </main>

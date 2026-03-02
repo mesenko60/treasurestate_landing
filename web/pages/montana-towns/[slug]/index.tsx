@@ -24,6 +24,7 @@ import TownHousing from '../../../components/TownHousing';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../../lib/markdown';
 import { getClusterConfig } from '../../../components/town/cluster-data';
+import CrossHubCities from '../../../components/town/CrossHubCities';
 
 type TownCoordinate = {
   name: string;
@@ -255,6 +256,8 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               ))}
             </div>
           )}
+
+          {cluster && <CrossHubCities slug={slug} townName={townName} />}
 
           {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
           <StoreBanner />
