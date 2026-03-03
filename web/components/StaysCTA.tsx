@@ -19,6 +19,7 @@ export default function StaysCTA({ townName, slug }: Props) {
       marginBottom: '2rem',
       color: '#fff',
       boxShadow: '0 4px 20px rgba(0,0,0,0.12)',
+      textAlign: 'center',
     }}>
       <h3 style={{
         fontSize: '1.25rem',
@@ -41,6 +42,7 @@ export default function StaysCTA({ townName, slug }: Props) {
         display: 'flex',
         gap: '0.75rem',
         flexWrap: 'wrap',
+        justifyContent: 'center',
       }}>
         <a
           href={vrbo}
