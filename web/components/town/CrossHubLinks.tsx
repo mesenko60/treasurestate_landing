@@ -27,6 +27,7 @@ const CITY_NAMES: Record<string, string> = {
   'libby': 'Libby',
   'lewistown': 'Lewistown',
   'glendive': 'Glendive',
+  'hardin': 'Hardin',
 };
 
 type Props = {

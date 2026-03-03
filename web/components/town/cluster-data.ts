@@ -2771,6 +2771,116 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
     ],
   },
+  'hardin': {
+    hubIntro: `Hardin is the county seat of Big Horn County, population 3,818, sitting at 2,900 feet elevation in southeastern Montana where the Bighorn River meets the Little Bighorn. Founded in 1907 and named after cattleman Samuel Hardin, the town was incorporated in 1911 and became the county seat when Big Horn County was established in 1913. Hardin sits on Interstate 90, approximately 46 miles east of Billings and 14 miles north of the Little Bighorn Battlefield National Monument.\n\nThe Battle of the Little Bighorn — fought June 25–26, 1876 — is the defining historical event of this region. Lt. Col. George Armstrong Custer and five companies of the 7th Cavalry were annihilated by a combined force of Lakota Sioux, Northern Cheyenne, and Arapaho warriors in what became known as "Custer's Last Stand." The battlefield draws over 300,000 visitors annually. The Crow Fair, held each August at Crow Agency just south of Hardin, is the largest Northern Native American gathering — known as the "Teepee Capital of the World" with over 1,500 teepees and 45,000 attendees.\n\nWithin 50 miles there are 59 recreation sites including 12 museums, 8 wildlife refuges, 7 historic sites, 6 fishing access points, 6 golf courses, 4 state parks, 3 campgrounds, 3 lakes, 2 rivers, and 2 viewpoints. The Bighorn River below Yellowtail Dam is a world-class tailwater trout fishery. Bighorn Canyon National Recreation Area, Chief Plenty Coups State Park, Rosebud Battlefield State Park, and Pompeys Pillar National Monument are all within day-trip range. Below you'll find guides covering cost of living, schools, hiking, fishing, and more.`,
+    guides: [
+      {
+        topic: 'cost-of-living',
+        title: 'Cost of Living',
+        h1: 'Cost of Living in Hardin, Montana',
+        metaTitle: 'Cost of Living in Hardin, Montana (2026) | Treasure State',
+        metaDescription: 'What does it cost to live in Hardin? Median home $203K, income $60K, affordability ratio 3.4. Gateway to Little Bighorn.',
+        description: 'A detailed breakdown of what it costs to live in Hardin — housing, income, affordability, and southeastern Montana comparisons.',
+        icon: '\uD83D\uDCB0',
+      },
+      {
+        topic: 'housing',
+        title: 'Housing Market',
+        h1: 'Hardin, Montana Housing Market',
+        metaTitle: 'Hardin, Montana Housing Market (2026) | Treasure State',
+        metaDescription: 'Hardin housing: Zillow value $203K, 36 listings, 8.7% vacancy. Affordable southeastern Montana market near Billings.',
+        description: 'Current housing market data for Hardin including home values, inventory trends, and southeastern Montana market dynamics.',
+        icon: '\uD83C\uDFE0',
+      },
+      {
+        topic: 'jobs',
+        title: 'Jobs & Economy',
+        h1: 'Jobs & Economy in Hardin, Montana',
+        metaTitle: 'Jobs & Economy in Hardin, Montana (2026) | Treasure State',
+        metaDescription: 'Hardin job market: 6.1% unemployment, education & healthcare 34.8%, tourism 16.7%. Little Bighorn gateway economy.',
+        description: "Hardin's economy by the numbers — from healthcare and tourism to agriculture and tribal employment.",
+        icon: '\uD83D\uDCBC',
+      },
+      {
+        topic: 'schools',
+        title: 'Schools & Education',
+        h1: 'Schools & Education in Hardin, Montana',
+        metaTitle: 'Schools & Education in Hardin, Montana (2026) | Treasure State',
+        metaDescription: 'Hardin schools: 900 enrolled, 72% graduation rate. Serving a diverse community on the Crow Reservation edge.',
+        description: 'School district information, graduation rates, and what families should know about education in Hardin.',
+        icon: '\uD83C\uDF93',
+      },
+      {
+        topic: 'hiking',
+        title: 'Hiking & Trails',
+        h1: 'Hiking Near Hardin, Montana',
+        metaTitle: 'Hiking Near Hardin, Montana (2026) | Treasure State',
+        metaDescription: 'Best hikes near Hardin: Bighorn Canyon trails, Chief Plenty Coups, Rosebud Battlefield. Southeastern Montana trail guide.',
+        description: 'The best trails and hikes near Hardin — from Bighorn Canyon overlooks to battlefield walks and Crow heritage sites.',
+        icon: '\uD83E\uDD7E',
+      },
+      {
+        topic: 'fishing',
+        title: 'Fishing',
+        h1: 'Fishing Near Hardin, Montana',
+        metaTitle: 'Fishing Near Hardin, Montana (2026) | Treasure State',
+        metaDescription: 'Fishing near Hardin: world-class Bighorn River trout, Bighorn Lake walleye, Yellowstone River. Complete guide.',
+        description: 'Complete fishing guide for Hardin — Bighorn River tailwater trout, Bighorn Lake, and southeastern Montana waters.',
+        icon: '\uD83C\uDFA3',
+      },
+      {
+        topic: 'weekend-itinerary',
+        title: 'Weekend Itinerary',
+        h1: 'A Weekend in Hardin, Montana',
+        metaTitle: 'Weekend in Hardin, Montana — 2-Day Itinerary (2026) | Treasure State',
+        metaDescription: 'How to spend a weekend in Hardin: Little Bighorn Battlefield, Bighorn River, Crow heritage, Pompeys Pillar. 2-day itinerary.',
+        description: 'A 2-day plan for experiencing the best of Hardin — battlefields, world-class fishing, Crow culture, and frontier history.',
+        icon: '\uD83D\uDDFA\uFE0F',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the cost of living in Hardin, Montana?',
+        answer: "Hardin is an affordable southeastern Montana town. The census median home value is $142,800, with the Zillow Home Value Index at $203,489 as of January 2026. Median household income is $60,463 (42nd percentile), producing an affordability ratio of 3.4. Median rent is $726 per month (20th percentile). The 8.7% vacancy rate indicates moderate availability. Hardin has 1,454 total housing units with 36 active listings and a median list price of about $236,000. Montana has no state sales tax.",
+      },
+      {
+        question: 'What is the Little Bighorn Battlefield?',
+        answer: "Little Bighorn Battlefield National Monument preserves the site of the June 25\u201326, 1876 battle between Lt. Col. George Armstrong Custer\u2019s 7th Cavalry and combined forces of Lakota Sioux, Northern Cheyenne, and Arapaho warriors. The battle was a decisive victory for the Native American forces and the most significant military engagement of the Great Sioux War of 1876. The monument is 14 miles south of Hardin and draws over 300,000 visitors annually. It features a visitor center with museum exhibits, a 4.5-mile self-guided tour road, the Custer Battlefield, the Reno-Benteen Battlefield, and an Indian Memorial dedicated in 2003.",
+      },
+      {
+        question: 'What is Crow Fair?',
+        answer: "Crow Fair is the largest Northern Native American gathering, held annually in August at Crow Agency, just south of Hardin. Known as the \u201CTeepee Capital of the World,\u201D the event features over 1,500 teepees and draws 45,000 to 50,000 attendees. Created in 1904, Crow Fair showcases Aps\u00E1alooke (Crow) culture through evening powwows with grand entries, daily morning parades featuring traditional beadwork and regalia, an INFR-sanctioned All-Indian rodeo, horse racing, and Indian relay races. The 2026 celebration is scheduled for August 12\u201317.",
+      },
+      {
+        question: 'How far is Hardin from other Montana cities?',
+        answer: "Hardin is on Interstate 90 in southeastern Montana, approximately 46 miles east of Billings (about 45 minutes). Billings Logan International Airport is the nearest major commercial airport. Miles City is roughly 140 miles east, and Sheridan, Wyoming is about 100 miles south. Hardin sits at the junction of I-90 and Montana Highway 47, which runs south past the Little Bighorn Battlefield to Crow Agency. The town is well-positioned as a base for exploring southeastern Montana.",
+      },
+      {
+        question: 'What is the Bighorn River fishing like?',
+        answer: "The Bighorn River below Yellowtail Dam is one of the world\u2019s premier tailwater trout fisheries. The cold, clear, nutrient-rich water flowing from the dam near Fort Smith (about 45 miles south of Hardin) supports exceptional populations of brown and rainbow trout, with fish averaging 14\u201320 inches. The river supports fly fishing year-round, with peak dry fly fishing in July (PMDs, caddis, tricos, hoppers) and excellent streamer fishing in winter. Guided drift boat trips run $525\u2013$625 per day. Fort Smith, at the dam, is the primary access point.",
+      },
+      {
+        question: 'What is Bighorn Canyon National Recreation Area?',
+        answer: "Bighorn Canyon National Recreation Area spans over 120,000 acres across Montana and Wyoming, created by Yellowtail Dam on the Bighorn River. The north district, accessed from Fort Smith (about 45 miles south of Hardin), offers boating, fishing, and hiking. The recreation area features dramatic canyon walls, Bighorn Lake (71 miles long), and approximately 17 miles of trails. The Yellowtail Dam Visitor Center is open Memorial Day through Labor Day. Note that the north and south districts are separated by about three hours of driving.",
+      },
+      {
+        question: 'What is Chief Plenty Coups State Park?',
+        answer: "Chief Plenty Coups State Park in Pryor, Montana (about 31 miles southwest of Hardin), preserves the home and farmstead of the last traditional chief of the Crow Nation. Plenty Coups (Aleek-chea-ahoosh, meaning \u201Cmany achievements\u201D) lived from about 1848 to 1932 and guided his people through the transition to reservation life. The 195-acre park is a National Historic Landmark featuring his original log home, a sacred spring, a visitor center, and walking trails. Admission is $5 per vehicle.",
+      },
+      {
+        question: 'What is the weather like in Hardin?',
+        answer: "Hardin has a semi-arid continental climate with warm summers and cold winters. July averages 90\u00B0F high and 63\u00B0F low, while January averages 40\u00B0F high and 20\u00B0F low. Annual precipitation is modest at about 15 inches. Snowfall is light compared to western Montana. The best times to visit are June (around the June 25 Little Bighorn anniversary), August (Crow Fair), and September\u2013October (cooler temperatures, fall colors). Summer is peak tourism season with two-thirds of battlefield visitors arriving June through August.",
+      },
+      {
+        question: 'What is Rosebud Battlefield State Park?',
+        answer: "Rosebud Battlefield State Park preserves the site of the June 17, 1876 battle — eight days before Little Bighorn — where Crazy Horse and Northern Cheyenne warriors engaged General Crook\u2019s forces along Rosebud Creek. The six-hour battle effectively stopped Crook\u2019s advance, contributing to Custer\u2019s defeat at Little Bighorn. The park covers approximately 3,000 acres of largely undeveloped prairie about 36 miles south of Hardin near Busby. Designated a National Historic Landmark in 2008, it offers hiking, hunting, and wildlife viewing in a remote setting.",
+      },
+      {
+        question: 'What should I know before visiting Hardin?',
+        answer: "Hardin is 46 miles east of Billings on I-90, making it an easy day trip or overnight. The Little Bighorn Battlefield charges $10 per vehicle. Crow Fair (August) is a major event \u2014 book lodging well in advance. Big Horn County Memorial Hospital provides 24/7 emergency care. The Bighorn River\u2019s best fishing access is at Fort Smith, about 45 miles south. Much of the surrounding area is Crow Indian Reservation land \u2014 respect tribal boundaries and posted signs. The Big Horn County Historical Museum in Hardin provides excellent local context. Gas up in Hardin before heading to more remote sites.",
+      },
+    ],
+  },
 };
 
 export function getClusterConfig(slug: string): ClusterConfig | null {
