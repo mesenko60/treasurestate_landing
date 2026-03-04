@@ -396,6 +396,29 @@ type RankingDef = {
   stats: (t: TownRaw) => { label: string; value: string }[];
 };
 
+const SKI_AREA_SNOWFALL: Record<string, number> = {
+  'Whitefish Mountain Resort': 221,
+  'Big Sky Resort': 265,
+  'Bridger Bowl': 188,
+  'Red Lodge Mountain': 143,
+  'Snowbowl': 300,
+  'Lost Trail Powder Mountain': 325,
+  'Discovery Ski Area': 132,
+  'Showdown Montana': 165,
+  'Maverick Mountain': 75,
+  'Blacktail Mountain': 138,
+  'Turner Mountain': 250,
+  'Bear Paw Ski Bowl': 140,
+};
+
+function skiSnow(skiName: string | null): number | null {
+  if (!skiName) return null;
+  for (const [key, val] of Object.entries(SKI_AREA_SNOWFALL)) {
+    if (skiName.includes(key) || key.includes(skiName)) return val;
+  }
+  return null;
+}
+
 const RANKINGS: RankingDef[] = [
   {
     slug: 'most-affordable-towns',
@@ -448,13 +471,20 @@ const RANKINGS: RankingDef[] = [
     count: 10,
     filter: t => t.nearestSkiMiles != null,
     sort: (a, b) => (a.nearestSkiMiles ?? 999) - (b.nearestSkiMiles ?? 999),
-    highlight: t => `${t.name} is just ${t.nearestSkiMiles} miles from ${t.nearestSkiName}.${t.annualSnow != null ? ` The area receives ${t.annualSnow}" of snow annually.` : ''} ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} offers year-round mountain living with world-class winter sports on your doorstep.`,
-    stats: t => [
-      { label: 'Nearest Ski', value: t.nearestSkiName ?? '—' },
-      { label: 'Distance', value: (t.nearestSkiMiles ?? 0) + ' mi' },
-      { label: 'Annual Snow', value: (t.annualSnow ?? 0) + '"' },
-      { label: 'Elevation', value: fmt(t.elevation) + ' ft' },
-    ],
+    highlight: t => {
+      const resortSnow = skiSnow(t.nearestSkiName);
+      const snowNote = resortSnow ? ` ${t.nearestSkiName} averages ${resortSnow}" of snow annually.` : '';
+      return `${t.name} is just ${t.nearestSkiMiles} miles from ${t.nearestSkiName}.${snowNote} ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} offers year-round mountain living with world-class winter sports on your doorstep.`;
+    },
+    stats: t => {
+      const resortSnow = skiSnow(t.nearestSkiName);
+      return [
+        { label: 'Nearest Ski', value: t.nearestSkiName ?? '—' },
+        { label: 'Distance', value: (t.nearestSkiMiles ?? 0) + ' mi' },
+        { label: 'Resort Snow', value: resortSnow ? resortSnow + '"' : '—' },
+        { label: 'Elevation', value: fmt(t.elevation) + ' ft' },
+      ];
+    },
   },
   {
     slug: 'best-fishing-towns',
