@@ -9,6 +9,191 @@
 
 # Redirects and headers
 
+# --- Legacy site directories (pre-2025 content → homepage) ---
+[[redirects]]
+  from = "/diesel/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diesel"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ronz/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/btbeemers/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bighole/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bighole"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mcaa/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mcaa"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/timeaftertime/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/timeaftertime"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/beetleworks/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/beetleworks"
+  to = "/"
+  status = 301
+  force = true
+
+# --- Legacy root-level pages ---
+[[redirects]]
+  from = "/mtbmwriders"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montanabuffalo"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mtnwtf"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/MTNWTF"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mnhc"
+  to = "/"
+  status = 301
+  force = true
+
+# --- Information pages at wrong path ---
+[[redirects]]
+  from = "/montana-facts"
+  to = "/Information/montana-facts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montana-facts.html"
+  to = "/Information/montana-facts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/geology-of-western-montana"
+  to = "/Information/geology-of-western-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/geology-of-western-montana.html"
+  to = "/Information/geology-of-western-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mining-history-of-montana"
+  to = "/Information/mining-history-of-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mining-history-of-montana.html"
+  to = "/Information/mining-history-of-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/story-of-montana-vigilantes"
+  to = "/Information/story-of-montana-vigilantes/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/story-of-montana-vigilantes.html"
+  to = "/Information/story-of-montana-vigilantes/"
+  status = 301
+  force = true
+
+# --- Town page .html extensions and typos ---
+[[redirects]]
+  from = "/montana-towns/west-glacier.html"
+  to = "/montana-towns/west-glacier/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montana-towns/gardiner.html"
+  to = "/montana-towns/gardiner/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montana-towns/polan.html"
+  to = "/montana-towns/polson/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montana-towns/seeley-lake.html"
+  to = "/montana-towns/seeley-lake/"
+  status = 301
+  force = true
+
+# --- Catch-all: any remaining .htm files ---
+[[redirects]]
+  from = "/*.htm"
+  to = "/"
+  status = 301
+  force = true
+
 # Pretty URLs
 [[redirects]]
   from = "/*.html"
