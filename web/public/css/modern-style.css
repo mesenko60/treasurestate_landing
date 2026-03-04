@@ -643,3 +643,131 @@ footer p {
     font-size: 1.3rem;
   }
 }
+
+/* Featured Hub City Cards */
+.hub-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.hub-featured-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.25rem;
+  background: linear-gradient(135deg, #f0f7f4 0%, #e8f0ee 100%);
+  border: 1px solid #d0ddd7;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #204051;
+  transition: box-shadow 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.hub-featured-card:hover {
+  box-shadow: 0 6px 20px rgba(59, 105, 120, 0.15);
+  transform: translateY(-3px);
+}
+.hub-featured-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  margin-bottom: 0.2rem;
+}
+.hub-featured-tagline {
+  font-size: 0.85rem;
+  color: #5a7a6a;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.hub-featured-pop {
+  font-size: 0.78rem;
+  color: #888;
+}
+.hub-featured-badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.75rem;
+  background: #3b6978;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+/* A-Z Letter Bar */
+.az-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.az-letter {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  background: transparent;
+  color: #ccc;
+  transition: background 0.2s, color 0.2s;
+}
+.az-letter--active {
+  color: #204051;
+  background: #f0f4f3;
+}
+.az-letter--active:hover {
+  background: #3b6978;
+  color: #fff;
+}
+.az-letter:disabled {
+  cursor: default;
+}
+
+/* A-Z Letter Group */
+.az-group {
+  margin-bottom: 1.75rem;
+}
+.az-group-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3b6978;
+  border-bottom: 2px solid #e2ebe2;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Hub dot indicator in A-Z list */
+.town-link--hub {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.town-hub-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3b6978;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .hub-featured-grid {
+    grid-template-columns: 1fr;
+  }
+  .az-letter {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 0.75rem;
+  }
+}
