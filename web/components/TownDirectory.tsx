@@ -71,6 +71,19 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
   return (
     <div className="town-directory" ref={directoryRef}>
 
+      {/* Search */}
+      <div style={{ marginBottom: '1.5rem' }}>
+        <input
+          type="text"
+          placeholder="Search for a town..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="town-search-input"
+          onFocus={(e) => e.target.style.borderColor = '#3b6978'}
+          onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
+        />
+      </div>
+
       {/* Featured Hub Cities */}
       <div style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>
@@ -117,19 +130,6 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
               {letter}
             </button>
           ))}
-        </div>
-
-        {/* Search */}
-        <div style={{ marginBottom: '1.5rem' }}>
-          <input
-            type="text"
-            placeholder="Search for a town..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="town-search-input"
-            onFocus={(e) => e.target.style.borderColor = '#3b6978'}
-            onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
-          />
         </div>
 
         {/* Grouped town list */}
