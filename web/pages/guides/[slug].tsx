@@ -20,6 +20,7 @@ type GuideData = {
   townName: string;
   title: string;
   metaDescription: string;
+  heroTitle: string;
   heroSubtitle: string;
   sections: { id: string; heading: string; html: string }[];
   faqs: FAQ[];
@@ -99,7 +100,7 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
         {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       </Head>
       <Header />
-      <Hero title={guide.title} subtitle={guide.heroSubtitle} image="/images/hero-image.jpg" alt={guide.title} small />
+      <Hero title={guide.heroTitle} subtitle={guide.heroSubtitle} image="/images/hero-image.jpg" alt={guide.title} small />
       <Breadcrumbs items={breadcrumbs} />
 
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1100px', margin: '0 auto', padding: '0 20px 3rem', position: 'relative' }}>
@@ -502,7 +503,8 @@ function movingGuide(t: TownBundle): GuideData {
     townName: t.name,
     title: `Moving to ${t.name}, Montana: Everything You Need to Know`,
     metaDescription: `Complete guide to moving to ${t.name}, MT. ${homeVal ? `Home values at ${$(homeVal)}` : 'Housing costs'}, ${janLow != null ? `${janLow}°F winter lows` : 'four-season climate'}, ${places.length} recreation sites, schools, and more.`,
-    heroSubtitle: `Your Complete Relocation Guide to ${t.nickname !== 'A Montana Community' ? `"${t.nickname}" | ` : ''}${t.name}, Montana`,
+    heroTitle: `Moving to ${t.name}`,
+    heroSubtitle: t.nickname !== 'A Montana Community' ? t.nickname : 'Montana Relocation Guide',
     sections,
     faqs,
   };
