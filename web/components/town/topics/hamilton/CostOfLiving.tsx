@@ -95,7 +95,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         reflecting the multi-year survey window. For a town of 4,659 people, an affordability
         ratio of {h?.affordabilityRatio ?? 9.5} is striking{'\u2014'}driven by out-of-state buyers,
         remote workers with coastal salaries, and retirees drawn to the Bitterroot Valley{'\u2019'}s
-        mild climate and mountain scenery.
+        mild climate — the valley is known as the "Banana Belt of Montana" — and mountain scenery.
       </p>
       <p>
         Rental data for {townName} is limited{'\u2014'}Zillow does not publish a rent index for the

@@ -18,9 +18,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
   return (
     <article className="content-section">
       <p>
-        {townName} sits at 3,573 feet in the heart of the Bitterroot Valley, flanked by two
-        mountain ranges{'\u2014'}the rugged Bitterroot Range rising to the west and the gentler
-        Sapphire Mountains to the east. With 100 trailheads within 50 miles{'\u2014'}the most of any
+        {townName} sits at 3,573 feet in the heart of the Bitterroot Valley{'\u2014'}Montana{'\u2019'}s
+        {'\u201C'}Banana Belt{'\u201D'}{'\u2014'}flanked by two mountain ranges: the rugged Bitterroot Range
+        rising to the west and the gentler Sapphire Mountains to the east. The valley{'\u2019'}s
+        mild climate extends the hiking season in both directions. With 100 trailheads
+        within 50 miles{'\u2014'}the most of any
         hub city in our analysis{'\u2014'}{townName} offers an extraordinary density of hiking options
         ranging from valley-floor river walks to remote wilderness traverses in the
         Selway-Bitterroot, one of the largest wilderness areas in the Lower 48. Seven federally

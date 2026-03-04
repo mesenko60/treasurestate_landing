@@ -23,7 +23,8 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
   return (
     <article className="content-section">
       <p>
-        A weekend in {townName} puts you in the heart of Montana{'\u2019'}s Bitterroot Valley{'\u2014'}a
+        A weekend in {townName} puts you in the heart of Montana{'\u2019'}s Bitterroot Valley
+        {'\u2014'}known as the {'\u201C'}Banana Belt of Montana{'\u201D'} for its remarkably mild climate{'\u2014'}a
         small town of 4,659 people flanked by the dramatic Bitterroot Range to the west and
         the gentler Sapphire Mountains to the east. The Bitterroot River flows through the
         valley floor, the Selway-Bitterroot Wilderness begins just 10 miles from downtown,
