@@ -194,11 +194,12 @@
   status = 301
   force = true
 
-# Pretty URLs
+# Redirect .html URLs to clean canonical paths
 [[redirects]]
   from = "/*.html"
-  to = "/:splat"
-  status = 200
+  to = "/:splat/"
+  status = 301
+  force = true
 
 [build.environment]
   NODE_VERSION = "18"
