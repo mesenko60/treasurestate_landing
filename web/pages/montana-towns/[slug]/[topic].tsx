@@ -365,7 +365,7 @@ export default function TopicPage(props: Props) {
         small
       />
 
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
+      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         {content}
         <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
         <CrossHubLinks slug={slug} topic={topic} townName={townName} />

@@ -50,7 +50,7 @@ export default function TownsIndex({ towns }: { towns: any[] }) {
       </Head>
       <Header />
       <Hero title="Montana Cities and Towns" subtitle="Explore communities across Big Sky Country" image="/images/hero-image.jpg" alt="Montana" small />
-      <main>
+      <main style={{ position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         <section className="content-section">
           <h2>All Towns</h2>
           <TownDirectory towns={towns} />

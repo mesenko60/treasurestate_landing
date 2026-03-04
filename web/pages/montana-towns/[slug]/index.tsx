@@ -165,7 +165,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         small
       />
 
-      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative' }}>
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         <style dangerouslySetInnerHTML={{__html: `
           .toc-desktop { display: none; }
           @media (min-width: 1024px) {

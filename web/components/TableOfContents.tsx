@@ -21,10 +21,13 @@ export default function TableOfContents({ contentSelector = '.content-section' }
     setActiveId('');
 
     const timer = setTimeout(() => {
-      const contentArea = document.querySelector(contentSelector);
-      if (!contentArea) return;
+      const contentAreas = document.querySelectorAll(contentSelector);
+      if (contentAreas.length === 0) return;
 
-      const elements = Array.from(contentArea.querySelectorAll('h2, h3'));
+      const elements: Element[] = [];
+      contentAreas.forEach(area => {
+        elements.push(...Array.from(area.querySelectorAll('h2, h3')));
+      });
 
       const items: TOCItem[] = elements.map((elem) => {
         if (!elem.id) {
