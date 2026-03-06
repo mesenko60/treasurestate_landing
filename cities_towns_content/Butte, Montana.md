@@ -61,7 +61,7 @@ Butte is strategically positioned at the crossroads of Interstate 90 (east-west)
 
 ## Where to Stay in Butte
 
-{{ paragraph_about_lodging }}
+Butte offers a range of lodging options that reflect the city's character. The historic Uptown district features boutique and heritage properties housed in beautifully restored turn-of-the-century buildings, giving visitors a taste of old Butte. Along the Interstate 90/15 corridor you'll find familiar national chain hotels with modern amenities, easy highway access, and competitive rates. Budget-friendly motels are available as well. For a more immersive experience, several bed-and-breakfasts occupy grand Victorian homes in the National Historic Landmark District. RV travelers and campers can set up at nearby campgrounds with access to the surrounding national forest. Whatever your style, booking ahead is recommended during peak events like the Montana Folk Festival and An Rí Rá Irish Festival, when rooms fill quickly.
 
 ---
 
