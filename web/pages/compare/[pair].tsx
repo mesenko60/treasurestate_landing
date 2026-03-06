@@ -147,7 +147,7 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
         title={`${townA.name} vs ${townB.name}`}
         subtitle="Montana Town Comparison"
         image="/images/hero-image.jpg"
-        alt="Montana landscape"
+        alt="Compare Montana towns side by side"
         small
       />
 

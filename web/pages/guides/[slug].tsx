@@ -502,7 +502,12 @@ function movingGuide(t: TownBundle): GuideData {
     townSlug: t.slug,
     townName: t.name,
     title: `Moving to ${t.name}, Montana: Everything You Need to Know`,
-    metaDescription: `Complete guide to moving to ${t.name}, MT. ${homeVal ? `Home values at ${$(homeVal)}` : 'Housing costs'}, ${janLow != null ? `${janLow}°F winter lows` : 'four-season climate'}, ${places.length} recreation sites, schools, and more.`,
+    metaDescription: (() => {
+      let desc = `Complete guide to moving to ${t.name}, MT. ${homeVal ? `Home values at ${$(homeVal)}` : 'Housing costs'}, ${janLow != null ? `${janLow}°F winter lows` : 'four-season climate'}, ${places.length} recreation sites, schools, and more.`;
+      if (desc.length < 120 && county) desc = desc.replace(' and more.', `, jobs in ${county}, and more.`);
+      if (desc.length > 160) desc = desc.slice(0, 157) + '...';
+      return desc;
+    })(),
     heroTitle: `Moving to ${t.name}`,
     heroSubtitle: t.nickname !== 'A Montana Community' ? t.nickname : 'Montana Relocation Guide',
     sections,

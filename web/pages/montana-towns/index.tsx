@@ -90,7 +90,7 @@ export default function TownsIndex({ towns }: { towns: any[] }) {
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
       <Header />
-      <Hero title="Montana Cities and Towns" subtitle="Explore communities across Big Sky Country" image="/images/hero-image.jpg" alt="Montana" small />
+      <Hero title="Montana Cities and Towns" subtitle="Explore communities across Big Sky Country" image="/images/hero-image.jpg" alt="Montana cities and towns directory" small />
       <main style={{ position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         <section className="content-section">
           <TownDirectory towns={towns} />

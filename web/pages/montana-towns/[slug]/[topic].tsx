@@ -276,10 +276,11 @@ type Props = {
   lakes: RecPlace[];
   climate: { month: string; avgHigh: number; avgLow: number }[] | null;
   highlights: RecPlace[];
+  buildDate: string;
 };
 
 export default function TopicPage(props: Props) {
-  const { slug, topic, townName, ogImage } = props;
+  const { slug, topic, townName, ogImage, buildDate } = props;
   const config = getClusterConfig(slug);
   const guide = config?.guides.find(g => g.topic === topic);
   if (!guide) return null;
@@ -328,7 +329,7 @@ export default function TopicPage(props: Props) {
           url: `https://treasurestate.com/montana-towns/${slug}/${topic}/`,
           image: ogImage,
           datePublished: '2026-01-15T00:00:00-07:00',
-          dateModified: '2026-02-21T00:00:00-07:00',
+          dateModified: buildDate,
           author: {
             '@type': 'Organization',
             name: 'Treasure State',
@@ -454,11 +455,14 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const lakeTypes = new Set(['Lake']);
   const highlightTypes = new Set(['Museum', 'State Park', 'Hot Spring', 'Ski Area']);
 
+  const buildDate = new Date().toISOString();
+
   return {
     props: {
       slug,
       topic,
       townName,
+      buildDate,
       heroImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
         ? `/images/towns/${slug}.jpg`
         : '/images/towns/default-town.jpg',
