@@ -68,6 +68,11 @@
         "distMiles": 10
       },
       {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 11
+      },
+      {
         "name": "King Ranch Golf Course",
         "type": "Golf",
         "distMiles": 11
@@ -193,6 +198,11 @@
         "distMiles": 20
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 21
+      },
+      {
         "name": "Lee Creek Campground",
         "type": "Campground",
         "distMiles": 21
@@ -231,6 +241,11 @@
         "name": "Hellgate Meadows Village",
         "type": "Historic Site",
         "distMiles": 22
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 23
       },
       {
         "name": "Sweathouse Falls",
@@ -571,6 +586,11 @@
         "name": "Allard Complex",
         "type": "Museum",
         "distMiles": 28
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 29
       },
       {
         "name": "Pattee Canyon Recreation Area",
@@ -928,6 +948,11 @@
         "distMiles": 40
       },
       {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 41
+      },
+      {
         "name": "Thibodeau Campground",
         "type": "Campground",
         "distMiles": 41
@@ -1238,6 +1263,11 @@
         "distMiles": 47
       },
       {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "Lake Inez Campground",
         "type": "Campground",
         "distMiles": 47
@@ -1415,6 +1445,11 @@
       {
         "name": "Elbow Lake",
         "type": "Lake",
+        "distMiles": 49
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 49
       },
       {
@@ -1968,6 +2003,11 @@
         "distMiles": 22
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 22
+      },
+      {
         "name": "Frontier Montana Museum",
         "type": "Museum",
         "distMiles": 22
@@ -2076,6 +2116,11 @@
         "name": "Kaiser Lake",
         "type": "Lake",
         "distMiles": 27
+      },
+      {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 28
       },
       {
         "name": "Lady Smith",
@@ -2798,6 +2843,11 @@
         "distMiles": 49
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "Twin Bridges Bike Camp",
         "type": "Campground",
         "distMiles": 50
@@ -2846,6 +2896,11 @@
         "name": "Homestead Lake",
         "type": "Lake",
         "distMiles": 24
+      },
+      {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
       },
       {
         "name": "Medicine Lake NWR",
@@ -4713,6 +4768,11 @@
         "distMiles": 7
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 8
+      },
+      {
         "name": "Drinking Horse Mountain",
         "type": "Trailhead",
         "distMiles": 8
@@ -5223,6 +5283,11 @@
         "distMiles": 37
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
         "name": "Pine Creek Falls",
         "type": "Waterfall",
         "distMiles": 38
@@ -5245,6 +5310,11 @@
       {
         "name": "Madison River (Ennis)",
         "type": "River",
+        "distMiles": 39
+      },
+      {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 39
       },
       {
@@ -5848,6 +5918,11 @@
         "distMiles": 19
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 19
+      },
+      {
         "name": "Anaconda Hills Golf Course",
         "type": "Golf",
         "distMiles": 19
@@ -6246,6 +6321,11 @@
         "name": "Rookery Wildlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 31
+      },
+      {
+        "name": "MSU-Northern Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 32
       },
       {
         "name": "Evans Bend",
@@ -6763,6 +6843,11 @@
         "distMiles": 21
       },
       {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 22
+      },
+      {
         "name": "Cresent Lake",
         "type": "Lake",
         "distMiles": 22
@@ -6998,6 +7083,11 @@
         "distMiles": 29
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 30
+      },
+      {
         "name": "Museum of the Rockies",
         "type": "Museum",
         "distMiles": 30
@@ -7095,6 +7185,11 @@
       {
         "name": "Cliff Lake",
         "type": "Lake",
+        "distMiles": 32
+      },
+      {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 32
       },
       {
@@ -8778,6 +8873,11 @@
         "distMiles": 50
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "VanGoBoon",
         "type": "Campground",
         "distMiles": 50
@@ -8995,6 +9095,16 @@
       {
         "name": "Blacktail Mountain",
         "type": "Ski Area",
+        "distMiles": 13
+      },
+      {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 13
       },
       {
@@ -9248,6 +9358,11 @@
         "distMiles": 20
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 21
+      },
+      {
         "name": "Point Pleasant Campground",
         "type": "Campground",
         "distMiles": 21
@@ -9336,6 +9451,11 @@
         "name": "Metcalf Lake",
         "type": "Lake",
         "distMiles": 25
+      },
+      {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 26
       },
       {
         "name": "Miracle of America Museum",
@@ -9811,6 +9931,11 @@
         "name": "Pearson Reservoir",
         "type": "Lake",
         "distMiles": 36
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 37
       },
       {
         "name": "McDonald Lake Campground",
@@ -10668,6 +10793,11 @@
         "distMiles": 2
       },
       {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 2
+      },
+      {
         "name": "Yellowstone River Campground",
         "type": "Campground",
         "distMiles": 2
@@ -10716,6 +10846,11 @@
         "name": "Shiloh Conservation Area",
         "type": "Nature Reserve",
         "distMiles": 7
+      },
+      {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 9
       },
       {
         "name": "Eagle Rock Golf Course",
@@ -11063,6 +11198,11 @@
         "distMiles": 17
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 18
+      },
+      {
         "name": "B and B Fishpond",
         "type": "Lake",
         "distMiles": 18
@@ -11121,6 +11261,11 @@
         "name": "Our Lady of the Rockies",
         "type": "Historic Site",
         "distMiles": 23
+      },
+      {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 24
       },
       {
         "name": "Cromwell Dixon Campground",
@@ -11190,6 +11335,11 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 25
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
         "distMiles": 25
       },
       {
@@ -11358,6 +11508,11 @@
         "distMiles": 29
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 29
+      },
+      {
         "name": "Toll Mtn Campground",
         "type": "Campground",
         "distMiles": 29
@@ -11411,6 +11566,11 @@
         "name": "Canyon Ferry Wildlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 30
+      },
+      {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 31
       },
       {
         "name": "Frontier Montana Museum",
@@ -12123,6 +12283,11 @@
         "distMiles": 1
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 2
+      },
+      {
         "name": "Story Mill Community Park",
         "type": "State Park",
         "distMiles": 2
@@ -12498,6 +12663,11 @@
         "distMiles": 28
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 29
+      },
+      {
         "name": "Pine Creek Falls",
         "type": "Waterfall",
         "distMiles": 29
@@ -12725,6 +12895,11 @@
       {
         "name": "Madison River (Ennis)",
         "type": "River",
+        "distMiles": 40
+      },
+      {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 40
       },
       {
@@ -13788,6 +13963,16 @@
         "distMiles": 37
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
         "name": "Emerald Lake Campground",
         "type": "Campground",
         "distMiles": 38
@@ -14828,6 +15013,11 @@
         "distMiles": 20
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 21
+      },
+      {
         "name": "Chief Joseph",
         "type": "Historic Site",
         "distMiles": 22
@@ -14865,6 +15055,11 @@
       {
         "name": "Moss Mansion (Billings)",
         "type": "Historic Site",
+        "distMiles": 28
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 28
       },
       {
@@ -16453,6 +16648,11 @@
         "distMiles": 7
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 9
+      },
+      {
         "name": "Lowland Campground",
         "type": "Campground",
         "distMiles": 9
@@ -16621,6 +16821,11 @@
         "name": "Racetrack Campground",
         "type": "Campground",
         "distMiles": 27
+      },
+      {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 28
       },
       {
         "name": "Deer Park",
@@ -17133,6 +17338,11 @@
         "distMiles": 40
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 41
+      },
+      {
         "name": "Little Joe Campground",
         "type": "Campground",
         "distMiles": 41
@@ -17353,6 +17563,16 @@
         "distMiles": 47
       },
       {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "Montana Historical Society",
         "type": "Museum",
         "distMiles": 47
@@ -17536,6 +17756,11 @@
         "name": "Helena-Lewis and Clark National Forest",
         "type": "Nature Reserve",
         "distMiles": 8
+      },
+      {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 11
       },
       {
         "name": "Meadow Lark Country Club",
@@ -18318,6 +18543,11 @@
         "distMiles": 20
       },
       {
+        "name": "MSU-Northern Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 21
+      },
+      {
         "name": "Havre Beneath the Streets",
         "type": "Museum",
         "distMiles": 21
@@ -18436,6 +18666,11 @@
         "name": "Old Trail Museum",
         "type": "Museum",
         "distMiles": 1
+      },
+      {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 2
       },
       {
         "name": "Blackfeet and Buffalo Historical Marker",
@@ -18743,6 +18978,11 @@
         "distMiles": 47
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "C.M. Russell Museum",
         "type": "Museum",
         "distMiles": 47
@@ -18883,6 +19123,11 @@
         "distMiles": 44
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Kempton RV Campground",
         "type": "Campground",
         "distMiles": 45
@@ -18966,6 +19211,11 @@
         "name": "Kreger Reservoir",
         "type": "Lake",
         "distMiles": 48
+      },
+      {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 49
       },
       {
         "name": "Caines Coulee Overlook",
@@ -19246,6 +19496,11 @@
         "name": "Children's Museum of Bozeman",
         "type": "Museum",
         "distMiles": 25
+      },
+      {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 26
       },
       {
         "name": "Pine Creek Falls",
@@ -19560,6 +19815,11 @@
       {
         "name": "Gallatin River",
         "type": "River",
+        "distMiles": 38
+      },
+      {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 38
       },
       {
@@ -19943,6 +20203,11 @@
         "distMiles": 26
       },
       {
+        "name": "Forsyth Riverside Park DG",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Rosebud County Pioneer Museum",
         "type": "Museum",
         "distMiles": 27
@@ -20063,6 +20328,11 @@
     "name": "Columbia Falls",
     "places": [
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "Cedar Lake",
         "type": "Lake",
         "distMiles": 4
@@ -20081,6 +20351,11 @@
         "name": "Stumptown Historical Society Museum",
         "type": "Museum",
         "distMiles": 7
+      },
+      {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 8
       },
       {
         "name": "North American Wildlife Museum",
@@ -20281,6 +20556,11 @@
         "name": "Ray Kuhns WIldlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 11
+      },
+      {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 12
       },
       {
         "name": "West Glacier KOA",
@@ -20816,6 +21096,11 @@
         "name": "Beaver Chief Falls",
         "type": "Waterfall",
         "distMiles": 25
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 26
       },
       {
         "name": "Lake Ellen Wilson",
@@ -22308,6 +22593,11 @@
         "distMiles": 29
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 30
+      },
+      {
         "name": "Duck Creek Bridge",
         "type": "Fishing Access",
         "distMiles": 30
@@ -22495,6 +22785,11 @@
       {
         "name": "Boulder River",
         "type": "River",
+        "distMiles": 36
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 36
       },
       {
@@ -23958,6 +24253,11 @@
         "distMiles": 27
       },
       {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 28
+      },
+      {
         "name": "South Bootlegger Recreation Area",
         "type": "Campground",
         "distMiles": 31
@@ -24188,6 +24488,11 @@
         "distMiles": 32
       },
       {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 33
+      },
+      {
         "name": "Sidney Country Club",
         "type": "Golf",
         "distMiles": 33
@@ -24246,6 +24551,11 @@
         "name": "Plentywood Golf Club",
         "type": "Golf",
         "distMiles": 44
+      },
+      {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
       },
       {
         "name": "Elk Island Wildlife Management Area",
@@ -24512,6 +24822,11 @@
   "darby": {
     "name": "Darby",
     "places": [
+      {
+        "name": "Darby Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
       {
         "name": "Historic Forest Service Museum",
         "type": "Museum",
@@ -24783,6 +25098,11 @@
         "distMiles": 16
       },
       {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 16
+      },
+      {
         "name": "Sula Resort",
         "type": "Campground",
         "distMiles": 16
@@ -25031,6 +25351,11 @@
         "name": "Fool Hen Lake",
         "type": "Lake",
         "distMiles": 22
+      },
+      {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 23
       },
       {
         "name": "Fales Flat Campground",
@@ -26378,6 +26703,11 @@
         "distMiles": 27
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 28
+      },
+      {
         "name": "Lowland Campground",
         "type": "Campground",
         "distMiles": 28
@@ -26521,6 +26851,11 @@
         "name": "Buck Lake",
         "type": "Lake",
         "distMiles": 31
+      },
+      {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 32
       },
       {
         "name": "Cy's Place",
@@ -28138,6 +28473,11 @@
         "distMiles": 45
       },
       {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Madison River Fishing Access",
         "type": "Campground",
         "distMiles": 45
@@ -28161,6 +28501,11 @@
         "name": "Kelly Reservoir",
         "type": "Lake",
         "distMiles": 46
+      },
+      {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
       },
       {
         "name": "Beaverdam campground",
@@ -28718,6 +29063,11 @@
         "distMiles": 26
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Frontier Montana Museum",
         "type": "Museum",
         "distMiles": 27
@@ -29180,6 +29530,16 @@
       {
         "name": "Old Works Golf Course",
         "type": "Golf",
+        "distMiles": 38
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 38
       },
       {
@@ -29718,6 +30078,11 @@
         "distMiles": 44
       },
       {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "Morrell Falls Trailhead",
         "type": "Trailhead",
         "distMiles": 44
@@ -29900,6 +30265,11 @@
       {
         "name": "Bitterroot River",
         "type": "River",
+        "distMiles": 47
+      },
+      {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 47
       },
       {
@@ -30183,6 +30553,11 @@
         "distMiles": 22
       },
       {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 24
+      },
+      {
         "name": "Conrad Transportation and Historical Museum",
         "type": "Museum",
         "distMiles": 25
@@ -30255,6 +30630,11 @@
       {
         "name": "Missouri River (Great Falls)",
         "type": "River",
+        "distMiles": 31
+      },
+      {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
         "distMiles": 31
       },
       {
@@ -31833,6 +32213,11 @@
         "distMiles": 43
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "Big Creek Campground",
         "type": "Campground",
         "distMiles": 44
@@ -32148,6 +32533,11 @@
     "name": "East Helena",
     "places": [
       {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 3
+      },
+      {
         "name": "Northern Pacific Reservoir",
         "type": "Lake",
         "distMiles": 3
@@ -32160,6 +32550,11 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 5
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
         "distMiles": 5
       },
       {
@@ -32295,6 +32690,11 @@
       {
         "name": "Helena-Lewis & Clark NF",
         "type": "National Forest",
+        "distMiles": 9
+      },
+      {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 9
       },
       {
@@ -32668,6 +33068,11 @@
         "distMiles": 41
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 41
+      },
+      {
         "name": "Frontier Montana Museum",
         "type": "Museum",
         "distMiles": 41
@@ -32976,6 +33381,11 @@
         "name": "Ennis Fishing Access",
         "type": "Fishing Access",
         "distMiles": 0
+      },
+      {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
       },
       {
         "name": "Madison Valley History Museum",
@@ -33583,6 +33993,11 @@
         "distMiles": 39
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 40
+      },
+      {
         "name": "Specimen Creek Jct",
         "type": "Campground",
         "distMiles": 40
@@ -33948,6 +34363,11 @@
         "distMiles": 50
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "The Lunch Room",
         "type": "Campground",
         "distMiles": 50
@@ -34001,6 +34421,11 @@
         "name": "Tobacco River Campground",
         "type": "Campground",
         "distMiles": 4
+      },
+      {
+        "name": "Wilderness Club Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 5
       },
       {
         "name": "Rexford Bench Campground",
@@ -34236,6 +34661,11 @@
         "name": "Akokala Creek Trailhead",
         "type": "Trailhead",
         "distMiles": 33
+      },
+      {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 34
       },
       {
         "name": "Loon Lake Campground",
@@ -34633,6 +35063,11 @@
         "distMiles": 45
       },
       {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 46
+      },
+      {
         "name": "Adir",
         "type": "Campground",
         "distMiles": 46
@@ -34675,6 +35110,11 @@
       {
         "name": "Meadow Lake Golf Resort",
         "type": "Golf",
+        "distMiles": 48
+      },
+      {
+        "name": "Timber Beast Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 48
       },
       {
@@ -34813,6 +35253,11 @@
         "distMiles": 17
       },
       {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 18
+      },
+      {
         "name": "Tower Rock State Park",
         "type": "State Park",
         "distMiles": 19
@@ -34940,6 +35385,11 @@
       {
         "name": "Missouri River (Great Falls)",
         "type": "River",
+        "distMiles": 33
+      },
+      {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
         "distMiles": 33
       },
       {
@@ -35223,6 +35673,11 @@
     "name": "Fairview",
     "places": [
       {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 7
+      },
+      {
         "name": "Flecher Reservoir",
         "type": "Lake",
         "distMiles": 8
@@ -35408,6 +35863,11 @@
     "name": "Forsyth",
     "places": [
       {
+        "name": "Forsyth Riverside Park DG",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
+      {
         "name": "Rosebud County Pioneer Museum",
         "type": "Museum",
         "distMiles": 0
@@ -35456,6 +35916,11 @@
         "name": "WaterWorks Art Museum",
         "type": "Museum",
         "distMiles": 40
+      },
+      {
+        "name": "Woodruff Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 41
       },
       {
         "name": "Range Riders Museum",
@@ -35783,6 +36248,11 @@
         "distMiles": 36
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 37
+      },
+      {
         "name": "The History Museum",
         "type": "Museum",
         "distMiles": 37
@@ -35913,6 +36383,11 @@
     "name": "Fort Peck",
     "places": [
       {
+        "name": "The Fortress Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "Powerhouse Museum",
         "type": "Museum",
         "distMiles": 2
@@ -35946,6 +36421,11 @@
         "name": "Berger Reservoir",
         "type": "Lake",
         "distMiles": 14
+      },
+      {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 15
       },
       {
         "name": "Aitken Reservoir",
@@ -36393,6 +36873,11 @@
         "distMiles": 41
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 42
+      },
+      {
         "name": "Hinsdale Wildlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 42
@@ -36501,6 +36986,11 @@
         "name": "Fort Peck Tribal Museum",
         "type": "Museum",
         "distMiles": 35
+      },
+      {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
       },
       {
         "name": "Sidney Country Club",
@@ -36783,6 +37273,11 @@
         "distMiles": 31
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 31
+      },
+      {
         "name": "Timberline Lake Trailhead",
         "type": "Trailhead",
         "distMiles": 31
@@ -36810,6 +37305,11 @@
       {
         "name": "Pictograph Cave State Park",
         "type": "State Park",
+        "distMiles": 32
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 32
       },
       {
@@ -38188,6 +38688,11 @@
         "distMiles": 19
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 20
+      },
+      {
         "name": "Daily Creek TH",
         "type": "Trailhead",
         "distMiles": 20
@@ -39518,6 +40023,11 @@
         "distMiles": 48
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
         "name": "Bozeman Hot Springs Campground",
         "type": "Campground",
         "distMiles": 48
@@ -40218,6 +40728,11 @@
         "distMiles": 49
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 49
+      },
+      {
         "name": "Logging Creek Campground",
         "type": "Campground",
         "distMiles": 49
@@ -40267,6 +40782,11 @@
   "glasgow": {
     "name": "Glasgow",
     "places": [
+      {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
       {
         "name": "Valley County Pioneer Museum",
         "type": "Museum",
@@ -40401,6 +40921,11 @@
         "name": "Tree Reservoir",
         "type": "Lake",
         "distMiles": 15
+      },
+      {
+        "name": "The Fortress Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 16
       },
       {
         "name": "Powerhouse Museum",
@@ -40823,6 +41348,11 @@
         "distMiles": 2
       },
       {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 2
+      },
+      {
         "name": "Glendive Campground",
         "type": "Campground",
         "distMiles": 2
@@ -41238,6 +41768,11 @@
         "distMiles": 1
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "C.M. Russell Museum",
         "type": "Museum",
         "distMiles": 1
@@ -41588,6 +42123,11 @@
         "distMiles": 47
       },
       {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
         "name": "Arod Lakes",
         "type": "Lake",
         "distMiles": 48
@@ -41642,6 +42182,11 @@
   "hamilton": {
     "name": "Hamilton",
     "places": [
+      {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
       {
         "name": "Bitterroot Chamber of Commerce",
         "type": "Museum",
@@ -41740,6 +42285,11 @@
       {
         "name": "Sleeping Child Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 8
+      },
+      {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 8
       },
       {
@@ -41991,6 +42541,11 @@
         "name": "Twelvemile Lake",
         "type": "Lake",
         "distMiles": 15
+      },
+      {
+        "name": "Darby Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 16
       },
       {
         "name": "Gold Creek Campground",
@@ -42858,6 +43413,11 @@
         "distMiles": 40
       },
       {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 40
+      },
+      {
         "name": "Blue Mountain",
         "type": "Trailhead",
         "distMiles": 40
@@ -42886,6 +43446,11 @@
         "name": "Rock Creek Confluence",
         "type": "Nature Reserve",
         "distMiles": 40
+      },
+      {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 41
       },
       {
         "name": "Historical Museum at Fort Missoula",
@@ -42970,6 +43535,11 @@
       {
         "name": "Beavertail Hill State Park",
         "type": "State Park",
+        "distMiles": 42
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 42
       },
       {
@@ -43236,6 +43806,11 @@
         "name": "Stewart Lake",
         "type": "Lake",
         "distMiles": 45
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 46
       },
       {
         "name": "Marshall Mountain Bike Access",
@@ -43608,6 +44183,11 @@
         "distMiles": 44
       },
       {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Hilands Golf Club",
         "type": "Golf",
         "distMiles": 45
@@ -43751,6 +44331,11 @@
         "name": "Lake Thibadeau National Wildlife Refuge",
         "type": "Nature Reserve",
         "distMiles": 40
+      },
+      {
+        "name": "MSU-Northern Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 41
       },
       {
         "name": "Havre Beneath the Streets",
@@ -44133,6 +44718,11 @@
     "name": "Havre",
     "places": [
       {
+        "name": "MSU-Northern Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
+      {
         "name": "Havre Beneath the Streets",
         "type": "Museum",
         "distMiles": 0
@@ -44303,6 +44893,11 @@
         "distMiles": 1
       },
       {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "Montana Historical Society",
         "type": "Museum",
         "distMiles": 1
@@ -44393,6 +44988,11 @@
         "distMiles": 2
       },
       {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 3
+      },
+      {
         "name": "Helena Campground and RV Park",
         "type": "Campground",
         "distMiles": 4
@@ -44406,6 +45006,11 @@
         "name": "Head Lane Trailhead",
         "type": "Trailhead",
         "distMiles": 6
+      },
+      {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 7
       },
       {
         "name": "Echo Lane Trailhead",
@@ -44755,6 +45360,11 @@
       {
         "name": "Grant-Kohrs Ranch NHS",
         "type": "Historic Site",
+        "distMiles": 36
+      },
+      {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 36
       },
       {
@@ -45211,6 +45821,11 @@
         "name": "H Earl Clack Memorial Museum",
         "type": "Museum",
         "distMiles": 33
+      },
+      {
+        "name": "MSU-Northern Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 34
       },
       {
         "name": "Havre Beneath the Streets",
@@ -45853,6 +46468,11 @@
         "distMiles": 27
       },
       {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 28
+      },
+      {
         "name": "CSKT Bison Range",
         "type": "Nature Reserve",
         "distMiles": 28
@@ -45933,6 +46553,11 @@
         "distMiles": 31
       },
       {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 31
+      },
+      {
         "name": "McGregor Lake Campground",
         "type": "Campground",
         "distMiles": 31
@@ -45971,6 +46596,11 @@
         "name": "Hellroaring Reservoir",
         "type": "Lake",
         "distMiles": 31
+      },
+      {
+        "name": "Bad Rock Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 32
       },
       {
         "name": "Cabin City Campground",
@@ -46453,6 +47083,11 @@
         "distMiles": 44
       },
       {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Morgan's Campsite",
         "type": "Campground",
         "distMiles": 45
@@ -46733,6 +47368,11 @@
         "distMiles": 24
       },
       {
+        "name": "Forsyth Riverside Park DG",
+        "type": "Disc Golf",
+        "distMiles": 26
+      },
+      {
         "name": "Black Sea Reservoir",
         "type": "Lake",
         "distMiles": 26
@@ -46888,6 +47528,11 @@
         "distMiles": 41
       },
       {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 41
+      },
+      {
         "name": "Makoshika State Park Visitors Center",
         "type": "Museum",
         "distMiles": 41
@@ -46956,6 +47601,11 @@
         "name": "Pirogue Island State Park",
         "type": "State Park",
         "distMiles": 48
+      },
+      {
+        "name": "Woodruff Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
       },
       {
         "name": "Range Riders Museum",
@@ -47148,6 +47798,11 @@
         "distMiles": 27
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Nichols Creek Trail",
         "type": "Trailhead",
         "distMiles": 27
@@ -47186,6 +47841,11 @@
         "name": "Big Lake Wildlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 28
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 29
       },
       {
         "name": "Silver Run Trailhead",
@@ -49003,6 +49663,11 @@
         "distMiles": 0
       },
       {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "Buffalo Hill Golf Course",
         "type": "Golf",
         "distMiles": 1
@@ -49103,6 +49768,16 @@
         "distMiles": 12
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
+      },
+      {
         "name": "Flathead National Forest",
         "type": "National Forest",
         "distMiles": 14
@@ -49120,6 +49795,11 @@
       {
         "name": "Meadow Lake Golf Resort",
         "type": "Golf",
+        "distMiles": 14
+      },
+      {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 14
       },
       {
@@ -50613,6 +51293,16 @@
         "distMiles": 47
       },
       {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
         "name": "Two Medicine",
         "type": "Campground",
         "distMiles": 48
@@ -51058,6 +51748,11 @@
         "distMiles": 9
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 11
+      },
+      {
         "name": "Yegen Golf Club",
         "type": "Golf",
         "distMiles": 11
@@ -51066,6 +51761,11 @@
         "name": "Yellowstone Country Club",
         "type": "Golf",
         "distMiles": 12
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
       },
       {
         "name": "South Hills",
@@ -51623,6 +52323,11 @@
         "distMiles": 32
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 35
+      },
+      {
         "name": "Eagle Rock Golf Course",
         "type": "Golf",
         "distMiles": 37
@@ -51665,6 +52370,11 @@
       {
         "name": "Moss Mansion (Billings)",
         "type": "Historic Site",
+        "distMiles": 41
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 41
       },
       {
@@ -52158,6 +52868,11 @@
         "distMiles": 9
       },
       {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 11
+      },
+      {
         "name": "Dunn Creek Campground",
         "type": "Campground",
         "distMiles": 11
@@ -52226,6 +52941,11 @@
         "name": "Barron Creek Boat Ramp",
         "type": "Campground",
         "distMiles": 15
+      },
+      {
+        "name": "Timber Beast Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 16
       },
       {
         "name": "Dorr Skeels Campground",
@@ -52476,6 +53196,11 @@
         "name": "Blue Lake",
         "type": "Lake",
         "distMiles": 41
+      },
+      {
+        "name": "Wilderness Club Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 42
       },
       {
         "name": "The Bicycle Station",
@@ -53088,6 +53813,11 @@
         "distMiles": 22
       },
       {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 23
+      },
+      {
         "name": "Hyalite Canyon",
         "type": "Trailhead",
         "distMiles": 23
@@ -53190,6 +53920,11 @@
       {
         "name": "Hyalite Reservoir",
         "type": "Lake",
+        "distMiles": 25
+      },
+      {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 25
       },
       {
@@ -54878,6 +55613,11 @@
         "distMiles": 16
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 17
+      },
+      {
         "name": "Drinking Horse Mountain",
         "type": "Trailhead",
         "distMiles": 17
@@ -55248,6 +55988,11 @@
         "distMiles": 38
       },
       {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 39
+      },
+      {
         "name": "Grizzly Peak",
         "type": "Trailhead",
         "distMiles": 39
@@ -55526,6 +56271,11 @@
         "name": "Elkhorn Wilderness Study Area",
         "type": "Nature Reserve",
         "distMiles": 46
+      },
+      {
+        "name": "Chico Hot Springs Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
       },
       {
         "name": "Pine Creek Falls",
@@ -55933,6 +56683,11 @@
     "name": "Miles City",
     "places": [
       {
+        "name": "Woodruff Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
+      {
         "name": "Range Riders Museum",
         "type": "Museum",
         "distMiles": 0
@@ -55981,6 +56736,11 @@
         "name": "Prairie County Museum",
         "type": "Museum",
         "distMiles": 37
+      },
+      {
+        "name": "Forsyth Riverside Park DG",
+        "type": "Disc Golf",
+        "distMiles": 41
       },
       {
         "name": "Rosebud County Pioneer Museum",
@@ -56183,6 +56943,11 @@
         "distMiles": 3
       },
       {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 4
+      },
+      {
         "name": "Marshall Mountain Bike Access",
         "type": "Trailhead",
         "distMiles": 4
@@ -56223,6 +56988,11 @@
         "distMiles": 5
       },
       {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 5
+      },
+      {
         "name": "Historical Museum at Fort Missoula",
         "type": "Museum",
         "distMiles": 5
@@ -56260,6 +57030,11 @@
       {
         "name": "Milltown State Park",
         "type": "State Park",
+        "distMiles": 6
+      },
+      {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 6
       },
       {
@@ -56361,6 +57136,11 @@
         "name": "K. Ross Toole Fishing Access",
         "type": "Fishing Access",
         "distMiles": 13
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 14
       },
       {
         "name": "West Fork Gold Creek",
@@ -56938,6 +57718,11 @@
         "distMiles": 33
       },
       {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 33
+      },
+      {
         "name": "Big Pine Fishing Access",
         "type": "Campground",
         "distMiles": 33
@@ -57145,6 +57930,11 @@
       {
         "name": "Browns Lake",
         "type": "Lake",
+        "distMiles": 37
+      },
+      {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 37
       },
       {
@@ -57548,6 +58338,11 @@
         "distMiles": 44
       },
       {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "Holland Lake Campground Larch Loop",
         "type": "Campground",
         "distMiles": 44
@@ -57626,6 +58421,11 @@
         "name": "Windfall Lake",
         "type": "Lake",
         "distMiles": 45
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 46
       },
       {
         "name": "Crystal Creek Campground",
@@ -58133,6 +58933,11 @@
     "name": "Nashua",
     "places": [
       {
+        "name": "The Fortress Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 9
+      },
+      {
         "name": "Powerhouse Museum",
         "type": "Museum",
         "distMiles": 9
@@ -58141,6 +58946,11 @@
         "name": "Old Fort Peck Historical Marker",
         "type": "Historic Site",
         "distMiles": 11
+      },
+      {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
       },
       {
         "name": "Valley County Pioneer Museum",
@@ -58563,6 +59373,11 @@
         "distMiles": 37
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
         "name": "Pack It In & Pack It Out Camping",
         "type": "Campground",
         "distMiles": 38
@@ -58868,6 +59683,11 @@
         "distMiles": 47
       },
       {
+        "name": "Flag Hill at Warden Park",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "C.M. Russell Museum",
         "type": "Museum",
         "distMiles": 47
@@ -59066,6 +59886,11 @@
         "name": "Pioneer Town",
         "type": "Museum",
         "distMiles": 45
+      },
+      {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 46
       },
       {
         "name": "Valley County Pioneer Museum",
@@ -59763,6 +60588,11 @@
         "distMiles": 27
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Burnt Fork Trailhead",
         "type": "Trailhead",
         "distMiles": 27
@@ -60213,6 +61043,11 @@
         "distMiles": 42
       },
       {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 42
+      },
+      {
         "name": "World Museum of Mining",
         "type": "Museum",
         "distMiles": 42
@@ -60295,6 +61130,11 @@
       {
         "name": "Butte Historic District",
         "type": "Historic Site",
+        "distMiles": 43
+      },
+      {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 43
       },
       {
@@ -60503,6 +61343,11 @@
         "distMiles": 46
       },
       {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 46
+      },
+      {
         "name": "Blodgett Canyon Campground",
         "type": "Campground",
         "distMiles": 46
@@ -60650,6 +61495,11 @@
       {
         "name": "Lake Como",
         "type": "Lake",
+        "distMiles": 48
+      },
+      {
+        "name": "Darby Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 48
       },
       {
@@ -60858,6 +61708,16 @@
         "distMiles": 50
       },
       {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "Greenough Park",
         "type": "State Park",
         "distMiles": 50
@@ -61023,6 +61883,11 @@
         "distMiles": 1
       },
       {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 2
+      },
+      {
         "name": "Fred Burr Trailhead",
         "type": "Trailhead",
         "distMiles": 2
@@ -61090,6 +61955,11 @@
       {
         "name": "Hamilton Golf Club",
         "type": "Golf",
+        "distMiles": 6
+      },
+      {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 6
       },
       {
@@ -61533,6 +62403,11 @@
         "distMiles": 20
       },
       {
+        "name": "Darby Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 21
+      },
+      {
         "name": "Bad News Camp",
         "type": "Campground",
         "distMiles": 21
@@ -61938,6 +62813,16 @@
         "distMiles": 34
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 35
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 35
+      },
+      {
         "name": "Jennings Camp Campground",
         "type": "Campground",
         "distMiles": 35
@@ -62081,6 +62966,11 @@
         "name": "Watchtower Lake",
         "type": "Lake",
         "distMiles": 36
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 37
       },
       {
         "name": "Copper Creek Campground",
@@ -62295,6 +63185,11 @@
       {
         "name": "Welcome Creek Wilderness",
         "type": "Wilderness",
+        "distMiles": 40
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
         "distMiles": 40
       },
       {
@@ -62973,6 +63868,11 @@
         "distMiles": 23
       },
       {
+        "name": "Bad Rock Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 24
+      },
+      {
         "name": "Old Jail Museum",
         "type": "Museum",
         "distMiles": 24
@@ -63170,6 +64070,11 @@
       {
         "name": "Ninepipe NWR",
         "type": "Wildlife Refuge",
+        "distMiles": 37
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
         "distMiles": 37
       },
       {
@@ -63403,6 +64308,11 @@
         "distMiles": 44
       },
       {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Schley Mountain Trailhead",
         "type": "Trailhead",
         "distMiles": 45
@@ -63455,6 +64365,11 @@
       {
         "name": "Cabinet Mountains Wilderness",
         "type": "Wilderness",
+        "distMiles": 48
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
         "distMiles": 48
       },
       {
@@ -63693,6 +64608,11 @@
         "distMiles": 47
       },
       {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "Makoshika State Park Visitors Center",
         "type": "Museum",
         "distMiles": 47
@@ -63841,6 +64761,11 @@
         "name": "Johnson Homestead",
         "type": "Historic Site",
         "distMiles": 11
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 12
       },
       {
         "name": "Flathead Lake",
@@ -64026,6 +64951,11 @@
         "name": "Mission Mountains Tribal Wilderness",
         "type": "Nature Reserve",
         "distMiles": 23
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 24
       },
       {
         "name": "National Bison Range",
@@ -64483,6 +65413,11 @@
         "distMiles": 35
       },
       {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 36
+      },
+      {
         "name": "Rainy Lake Campground",
         "type": "Campground",
         "distMiles": 36
@@ -64873,6 +65808,11 @@
         "distMiles": 47
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "Clark Memorial Campground",
         "type": "Campground",
         "distMiles": 47
@@ -64925,6 +65865,11 @@
       {
         "name": "Seeley Lake",
         "type": "Lake",
+        "distMiles": 48
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 48
       },
       {
@@ -65013,6 +65958,11 @@
         "distMiles": 49
       },
       {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "The River's Edge RV Resort",
         "type": "Campground",
         "distMiles": 50
@@ -65066,6 +66016,11 @@
         "name": "Fort Peck Tribal Museum",
         "type": "Museum",
         "distMiles": 1
+      },
+      {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 16
       },
       {
         "name": "McIlwain Lake",
@@ -66878,6 +67833,11 @@
         "distMiles": 2
       },
       {
+        "name": "Wilderness Club Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 3
+      },
+      {
         "name": "Camp 32",
         "type": "Campground",
         "distMiles": 4
@@ -67086,6 +68046,11 @@
         "name": "Timberlane Campground",
         "type": "Campground",
         "distMiles": 33
+      },
+      {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 34
       },
       {
         "name": "Dog Creek Campgrounds",
@@ -67316,6 +68281,11 @@
         "name": "Smith Lake",
         "type": "Lake",
         "distMiles": 44
+      },
+      {
+        "name": "Timber Beast Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
       },
       {
         "name": "Quartz Creek",
@@ -67578,6 +68548,11 @@
         "distMiles": 36
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 37
+      },
+      {
         "name": "Gartside Reservoir",
         "type": "Lake",
         "distMiles": 37
@@ -67673,6 +68648,11 @@
         "distMiles": 42
       },
       {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 43
+      },
+      {
         "name": "MonDak Heritage Center",
         "type": "Museum",
         "distMiles": 43
@@ -67718,6 +68698,11 @@
         "distMiles": 45
       },
       {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 46
+      },
+      {
         "name": "Vista View Trailhead",
         "type": "Trailhead",
         "distMiles": 46
@@ -67761,6 +68746,11 @@
         "name": "Garden of the Rockies Museum",
         "type": "Museum",
         "distMiles": 0
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 1
       },
       {
         "name": "Pablo NWR",
@@ -68453,6 +69443,11 @@
         "distMiles": 36
       },
       {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 36
+      },
+      {
         "name": "Wayfarers State Park Campground",
         "type": "Campground",
         "distMiles": 36
@@ -68585,6 +69580,11 @@
       {
         "name": "Eagle Bend Golf Club",
         "type": "Golf",
+        "distMiles": 38
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 38
       },
       {
@@ -68840,6 +69840,11 @@
       {
         "name": "Big Salmon Lake",
         "type": "Lake",
+        "distMiles": 44
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
         "distMiles": 44
       },
       {
@@ -69238,6 +70243,16 @@
         "distMiles": 48
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
         "name": "Historical Museum at Fort Missoula",
         "type": "Museum",
         "distMiles": 48
@@ -69315,6 +70330,16 @@
       {
         "name": "Flathead National Forest",
         "type": "National Forest",
+        "distMiles": 49
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 49
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 49
       },
       {
@@ -69498,6 +70523,11 @@
         "distMiles": 43
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "Peter Yegen Jr. Yellowstone County Museum",
         "type": "Museum",
         "distMiles": 44
@@ -69535,6 +70565,11 @@
       {
         "name": "Moss Mansion (Billings)",
         "type": "Historic Site",
+        "distMiles": 46
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 46
       },
       {
@@ -69748,6 +70783,11 @@
         "distMiles": 39
       },
       {
+        "name": "Diamond X Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 43
+      },
+      {
         "name": "Indian Fort",
         "type": "Campground",
         "distMiles": 43
@@ -69866,6 +70906,11 @@
         "name": "South Pond",
         "type": "Lake",
         "distMiles": 49
+      },
+      {
+        "name": "Pioneer Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
       },
       {
         "name": "Halfmoon Campground",
@@ -70208,6 +71253,11 @@
         "distMiles": 37
       },
       {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
         "name": "Big Fork Reservoir",
         "type": "Lake",
         "distMiles": 38
@@ -70493,6 +71543,11 @@
         "distMiles": 49
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 50
+      },
+      {
         "name": "Homestad RV & Camping",
         "type": "Campground",
         "distMiles": 50
@@ -70530,6 +71585,11 @@
       {
         "name": "Seeley Lake",
         "type": "Lake",
+        "distMiles": 2
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 2
       },
       {
@@ -71183,6 +72243,11 @@
         "distMiles": 31
       },
       {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 32
+      },
+      {
         "name": "Greenough Park",
         "type": "State Park",
         "distMiles": 32
@@ -71518,6 +72583,11 @@
         "distMiles": 37
       },
       {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 37
+      },
+      {
         "name": "Historical Museum at Fort Missoula",
         "type": "Museum",
         "distMiles": 37
@@ -71555,6 +72625,11 @@
       {
         "name": "Beavertail Hill State Park",
         "type": "State Park",
+        "distMiles": 38
+      },
+      {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 38
       },
       {
@@ -71636,6 +72711,11 @@
         "name": "Braziel Lake",
         "type": "Lake",
         "distMiles": 39
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 40
       },
       {
         "name": "Van Lake Campground",
@@ -71776,6 +72856,11 @@
         "name": "Olor Lake",
         "type": "Lake",
         "distMiles": 42
+      },
+      {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 43
       },
       {
         "name": "Dalles Campground",
@@ -72408,6 +73493,11 @@
         "distMiles": 2
       },
       {
+        "name": "Richland Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 4
+      },
+      {
         "name": "Seven Sisters Wildlife Management Area",
         "type": "Nature Reserve",
         "distMiles": 11
@@ -72495,6 +73585,11 @@
       {
         "name": "Makoshika State Park",
         "type": "State Park",
+        "distMiles": 50
+      },
+      {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
         "distMiles": 50
       },
       {
@@ -72611,6 +73706,11 @@
         "name": "Lower Crow Reservoir",
         "type": "Lake",
         "distMiles": 14
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 15
       },
       {
         "name": "North Fork Jocko Campground",
@@ -73103,6 +74203,11 @@
         "distMiles": 29
       },
       {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 30
+      },
+      {
         "name": "Big Larch Campground",
         "type": "Campground",
         "distMiles": 30
@@ -73180,6 +74285,11 @@
       {
         "name": "Seeley-Swan Scenic Drive",
         "type": "Scenic Drive",
+        "distMiles": 31
+      },
+      {
+        "name": "Blackhawk Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 31
       },
       {
@@ -73343,6 +74453,11 @@
         "distMiles": 33
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 33
+      },
+      {
         "name": "Kim Williams Nature Trail",
         "type": "Trailhead",
         "distMiles": 33
@@ -73481,6 +74596,16 @@
         "name": "Pyramid Lake",
         "type": "Lake",
         "distMiles": 34
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 35
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 35
       },
       {
         "name": "Big Pine Fishing Access",
@@ -74088,6 +75213,11 @@
         "distMiles": 48
       },
       {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 49
+      },
+      {
         "name": "Loon Lake Fishing Access",
         "type": "Fishing Access",
         "distMiles": 49
@@ -74653,6 +75783,11 @@
         "distMiles": 12
       },
       {
+        "name": "Spiritwood Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 12
+      },
+      {
         "name": "Gold Creek Campground",
         "type": "Campground",
         "distMiles": 12
@@ -74833,6 +75968,11 @@
         "distMiles": 18
       },
       {
+        "name": "Blodgett Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 18
+      },
+      {
         "name": "Blodgett Canyon Campground",
         "type": "Campground",
         "distMiles": 18
@@ -75008,6 +76148,16 @@
         "distMiles": 21
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 22
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 22
+      },
+      {
         "name": "Big Horn Campground",
         "type": "Campground",
         "distMiles": 22
@@ -75056,6 +76206,11 @@
         "name": "Canyon Lake",
         "type": "Lake",
         "distMiles": 22
+      },
+      {
+        "name": "Pattee Canyon Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 23
       },
       {
         "name": "Historical Museum at Fort Missoula",
@@ -75473,6 +76628,11 @@
         "distMiles": 28
       },
       {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 29
+      },
+      {
         "name": "Woods Gulch",
         "type": "Trailhead",
         "distMiles": 29
@@ -75646,6 +76806,11 @@
         "name": "White Lake",
         "type": "Lake",
         "distMiles": 33
+      },
+      {
+        "name": "Darby Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 34
       },
       {
         "name": "Sheep Mountain Trailhead",
@@ -76853,9 +78018,19 @@
         "distMiles": 35
       },
       {
+        "name": "Gilman Gauntlet",
+        "type": "Disc Golf",
+        "distMiles": 35
+      },
+      {
         "name": "Old Jail Museum",
         "type": "Museum",
         "distMiles": 35
+      },
+      {
+        "name": "Bad Rock Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 36
       },
       {
         "name": "Earl Tennant Campground",
@@ -76988,6 +78163,16 @@
         "distMiles": 43
       },
       {
+        "name": "Blue Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
+        "name": "Salish Kootenai College DG",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "Sweathouse Falls",
         "type": "Waterfall",
         "distMiles": 44
@@ -77081,6 +78266,11 @@
         "name": "Saint Marys Lake",
         "type": "Lake",
         "distMiles": 46
+      },
+      {
+        "name": "Linda Vista Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
       },
       {
         "name": "North Hills Froehlich Trailhead",
@@ -77483,6 +78673,11 @@
         "distMiles": 36
       },
       {
+        "name": "Woodruff Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 36
+      },
+      {
         "name": "Pine-on-the-Rock Campground",
         "type": "Campground",
         "distMiles": 36
@@ -77511,6 +78706,11 @@
         "name": "Hollecker Lake",
         "type": "Lake",
         "distMiles": 36
+      },
+      {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
+        "distMiles": 37
       },
       {
         "name": "Range Riders Museum",
@@ -77581,6 +78781,11 @@
         "name": "Old Jail Museum",
         "type": "Museum",
         "distMiles": 0
+      },
+      {
+        "name": "Bad Rock Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
       },
       {
         "name": "David Thompson Monument",
@@ -78178,6 +79383,11 @@
         "distMiles": 27
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Drinking Horse Mountain",
         "type": "Trailhead",
         "distMiles": 27
@@ -78468,6 +79678,11 @@
         "distMiles": 38
       },
       {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
+      },
+      {
         "name": "Mill Creek Camgpround",
         "type": "Campground",
         "distMiles": 38
@@ -78613,6 +79828,11 @@
         "distMiles": 44
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 44
+      },
+      {
         "name": "White Earth Campground",
         "type": "Campground",
         "distMiles": 44
@@ -78741,6 +79961,11 @@
         "name": "Place of Discovery",
         "type": "Historic Site",
         "distMiles": 46
+      },
+      {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
       },
       {
         "name": "Berkeley Pit Viewing Stand",
@@ -79118,8 +80343,18 @@
         "distMiles": 27
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
+      },
+      {
         "name": "Hauser Lake",
         "type": "Lake",
+        "distMiles": 28
+      },
+      {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
         "distMiles": 28
       },
       {
@@ -79160,6 +80395,11 @@
       {
         "name": "Boulder Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 30
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
         "distMiles": 30
       },
       {
@@ -79658,6 +80898,11 @@
         "distMiles": 48
       },
       {
+        "name": "Rose Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
+      },
+      {
         "name": "Bozeman Hot Springs Campground",
         "type": "Campground",
         "distMiles": 48
@@ -79777,6 +81022,11 @@
   "troy": {
     "name": "Troy",
     "places": [
+      {
+        "name": "Timber Beast Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 0
+      },
       {
         "name": "Troy Museum",
         "type": "Museum",
@@ -79911,6 +81161,11 @@
         "name": "Whitetail Campground",
         "type": "Campground",
         "distMiles": 26
+      },
+      {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 27
       },
       {
         "name": "Big Eddy Campground",
@@ -80076,6 +81331,11 @@
         "name": "Lost Trail Conservation Area",
         "type": "Nature Reserve",
         "distMiles": 47
+      },
+      {
+        "name": "Wilderness Club Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 48
       },
       {
         "name": "Logan State Park Campground",
@@ -80278,6 +81538,11 @@
         "distMiles": 25
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 25
+      },
+      {
         "name": "Jefferson Valley Museum",
         "type": "Museum",
         "distMiles": 25
@@ -80445,6 +81710,11 @@
       {
         "name": "Norris Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 31
+      },
+      {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 31
       },
       {
@@ -81158,6 +82428,11 @@
         "distMiles": 33
       },
       {
+        "name": "Teton Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 34
+      },
+      {
         "name": "Museum of the Plains Indian",
         "type": "Museum",
         "distMiles": 34
@@ -81405,6 +82680,11 @@
       {
         "name": "Madison River (Ennis)",
         "type": "River",
+        "distMiles": 11
+      },
+      {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 11
       },
       {
@@ -82098,6 +83378,11 @@
         "distMiles": 49
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 49
+      },
+      {
         "name": "Crescent Lake",
         "type": "Campground",
         "distMiles": 49
@@ -82343,6 +83628,11 @@
         "distMiles": 8
       },
       {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 10
+      },
+      {
         "name": "The Lunch Room",
         "type": "Campground",
         "distMiles": 11
@@ -82505,6 +83795,11 @@
       {
         "name": "Jefferson River",
         "type": "River",
+        "distMiles": 27
+      },
+      {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 27
       },
       {
@@ -82998,6 +84293,11 @@
         "distMiles": 39
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 40
+      },
+      {
         "name": "East Fork Trailhead",
         "type": "Trailhead",
         "distMiles": 40
@@ -83205,6 +84505,16 @@
       {
         "name": "Maverick Mountain",
         "type": "Ski Area",
+        "distMiles": 46
+      },
+      {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 46
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
         "distMiles": 46
       },
       {
@@ -83668,6 +84978,11 @@
         "distMiles": 12
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 13
+      },
+      {
         "name": "Lake Ellen Wilson",
         "type": "Campground",
         "distMiles": 13
@@ -83910,6 +85225,11 @@
       {
         "name": "Going-to-the-Sun Road",
         "type": "Scenic Drive",
+        "distMiles": 18
+      },
+      {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
         "distMiles": 18
       },
       {
@@ -84246,6 +85566,11 @@
         "name": "Grinnell Lake",
         "type": "Lake",
         "distMiles": 23
+      },
+      {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 24
       },
       {
         "name": "Oldman Lake",
@@ -85131,6 +86456,11 @@
         "name": "Whale Creek Falls",
         "type": "Waterfall",
         "distMiles": 37
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 38
       },
       {
         "name": "Glacier Elkhorn Cabins & Campground",
@@ -86518,6 +87848,11 @@
         "distMiles": 0
       },
       {
+        "name": "Smith Lake Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 1
+      },
+      {
         "name": "Whitefish Lake State Park",
         "type": "State Park",
         "distMiles": 2
@@ -86683,6 +88018,11 @@
         "distMiles": 7
       },
       {
+        "name": "River's Edge Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 8
+      },
+      {
         "name": "Bailey Lake",
         "type": "Lake",
         "distMiles": 10
@@ -86726,6 +88066,11 @@
         "name": "Grand View Lake",
         "type": "Lake",
         "distMiles": 13
+      },
+      {
+        "name": "Lawrence Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 14
       },
       {
         "name": "Under Canvas Glacier",
@@ -87246,6 +88591,11 @@
         "name": "Seven Acres Lakes",
         "type": "Lake",
         "distMiles": 27
+      },
+      {
+        "name": "Blacktail Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 28
       },
       {
         "name": "Sperry",
@@ -88308,6 +89658,11 @@
         "distMiles": 45
       },
       {
+        "name": "Kooky Noosa Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 45
+      },
+      {
         "name": "Two Medicine",
         "type": "Campground",
         "distMiles": 45
@@ -88621,6 +89976,11 @@
         "name": "Black Sage Wilderness Study Area",
         "type": "Nature Reserve",
         "distMiles": 17
+      },
+      {
+        "name": "Eagle's Nest Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 18
       },
       {
         "name": "Lake Louise Trailhead",
@@ -88953,6 +90313,11 @@
         "distMiles": 38
       },
       {
+        "name": "Sky View Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 39
+      },
+      {
         "name": "Glen Campground",
         "type": "Campground",
         "distMiles": 39
@@ -89103,6 +90468,11 @@
         "distMiles": 42
       },
       {
+        "name": "Sheep Mountain Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 43
+      },
+      {
         "name": "Cottonwood Campground",
         "type": "Campground",
         "distMiles": 43
@@ -89198,6 +90568,11 @@
         "distMiles": 46
       },
       {
+        "name": "Arrowstone Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 47
+      },
+      {
         "name": "Gorge Lakes Trailhead",
         "type": "Trailhead",
         "distMiles": 47
@@ -89281,6 +90656,11 @@
         "name": "Northern Pacific Reservoir",
         "type": "Lake",
         "distMiles": 48
+      },
+      {
+        "name": "South Hills (Hyzer Hills)",
+        "type": "Disc Golf",
+        "distMiles": 49
       },
       {
         "name": "Passage Falls",
@@ -89390,6 +90770,11 @@
       {
         "name": "Broadwater Hot Springs",
         "type": "Hot Spring",
+        "distMiles": 50
+      },
+      {
+        "name": "The Wooden Hollow",
+        "type": "Disc Golf",
         "distMiles": 50
       },
       {
@@ -89555,6 +90940,11 @@
       {
         "name": "Makoshika State Park",
         "type": "State Park",
+        "distMiles": 25
+      },
+      {
+        "name": "Makoshika Disc Golf (Buccaneer Flats)",
+        "type": "Disc Golf",
         "distMiles": 25
       },
       {
@@ -90048,6 +91438,11 @@
         "distMiles": 3
       },
       {
+        "name": "Lewis & Clark Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 5
+      },
+      {
         "name": "Fort Peck Tribal Museum",
         "type": "Museum",
         "distMiles": 21
@@ -90083,6 +91478,11 @@
         "distMiles": 36
       },
       {
+        "name": "The Fortress Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 37
+      },
+      {
         "name": "Old Fort Peck Historical Marker",
         "type": "Historic Site",
         "distMiles": 39
@@ -90091,6 +91491,11 @@
         "name": "Richey Historical Museum",
         "type": "Museum",
         "distMiles": 41
+      },
+      {
+        "name": "Centennial Park Disc Golf",
+        "type": "Disc Golf",
+        "distMiles": 46
       },
       {
         "name": "Mud Run Reservoir",

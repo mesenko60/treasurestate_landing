@@ -30,6 +30,7 @@ const TYPE_META: Record<string, { icon: string; color: string; label: string; pr
   'Museum':            { icon: '🏛️', color: '#6c3483', label: 'Museums',                priority: 14, weight: 3 },
   'Historic Site':     { icon: '📜', color: '#8b4513', label: 'Historic',               priority: 15, weight: 3 },
   'Golf':              { icon: '⛳', color: '#27ae60', label: 'Golf',                   priority: 16, weight: 2 },
+  'Disc Golf':         { icon: '🥏', color: '#e67e22', label: 'Disc Golf',             priority: 16, weight: 2 },
   'Scenic Drive':      { icon: '🛣️', color: '#d68910', label: 'Scenic Drives',          priority: 17, weight: 4 },
   'Wildlife Refuge':   { icon: '🦅', color: '#7d6608', label: 'Wildlife',               priority: 18, weight: 3 },
   'National Rec Area': { icon: '🏞️', color: '#2e86ab', label: 'Rec Areas',              priority: 19, weight: 4 },
