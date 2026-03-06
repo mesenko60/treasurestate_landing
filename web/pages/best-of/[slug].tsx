@@ -351,6 +351,8 @@ type TownRaw = {
   janLow: number | null;
   annualSnow: number | null;
   annualPrecip: number | null;
+  nearestAirportMiles: number | null;
+  nearestAirportName: string | null;
 };
 
 function computeRecScore(places: any[]): number {
@@ -775,6 +777,48 @@ const RANKINGS: RankingDef[] = [
       { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
     ],
   },
+  {
+    slug: 'best-towns-for-digital-nomads',
+    title: '10 Best Montana Towns for Digital Nomads',
+    metaDescription: 'The best Montana towns for digital nomads and remote workers: ranked by internet infrastructure, airport access, affordability, recreation, safety, and quality of life.',
+    heroSubtitle: 'Remote Work Meets the Last Best Place',
+    intro: 'Montana is emerging as one of the top destinations for digital nomads and remote workers. No state income tax, affordable housing compared to coastal cities, world-class outdoor recreation, and improving broadband infrastructure make Big Sky Country a compelling home base. Whether you\'re a freelancer, remote employee, or location-independent entrepreneur, these Montana towns offer the best combination of connectivity, airport access, cost of living, and the legendary Montana lifestyle.',
+    methodology: 'Ranked by a composite digital nomad score: internet infrastructure (population as broadband availability proxy, ×5), airport access (road miles to nearest commercial airport, ×4), affordability (price-to-income ratio, ×3), outdoor recreation (diversity and proximity of sites, ×3), safety (FBI UCR crime rates, ×2), climate mildness (January lows, ×2), and community amenities (healthcare, cafes, coworking proxy via population density, ×1). Towns under 2,000 population excluded due to unreliable broadband.',
+    count: 10,
+    filter: t => t.population != null && t.population >= 2000 && t.affordabilityRatio != null && t.nearestAirportMiles != null,
+    sort: (a, b) => {
+      const internetA = Math.min(Math.log10(Math.max(a.population ?? 1, 1)) / Math.log10(100000), 1) * 10;
+      const internetB = Math.min(Math.log10(Math.max(b.population ?? 1, 1)) / Math.log10(100000), 1) * 10;
+      const airportA = Math.max(10 - (a.nearestAirportMiles ?? 200) / 20, 0);
+      const airportB = Math.max(10 - (b.nearestAirportMiles ?? 200) / 20, 0);
+      const affordA = Math.max(8 - (a.affordabilityRatio ?? 8), 0) * 1.25;
+      const affordB = Math.max(8 - (b.affordabilityRatio ?? 8), 0) * 1.25;
+      const safetyA = a.safetyScore ?? 5;
+      const safetyB = b.safetyScore ?? 5;
+      const climateA = Math.max((a.janLow ?? -20) + 20, 0) / 4;
+      const climateB = Math.max((b.janLow ?? -20) + 20, 0) / 4;
+      const amenityA = Math.min((a.population ?? 0) / 10000, 1) * 5 + (a.healthcareScore ?? 3) * 0.5;
+      const amenityB = Math.min((b.population ?? 0) / 10000, 1) * 5 + (b.healthcareScore ?? 3) * 0.5;
+      const scoreA = internetA * 5 + airportA * 4 + affordA * 3 + a.recScore * 3 + safetyA * 2 + climateA * 2 + amenityA;
+      const scoreB = internetB * 5 + airportB * 4 + affordB * 3 + b.recScore * 3 + safetyB * 2 + climateB * 2 + amenityB;
+      return scoreB - scoreA;
+    },
+    highlight: t => {
+      const airportNote = t.nearestAirportMiles != null && t.nearestAirportName
+        ? `${t.nearestAirportName} is ${t.nearestAirportMiles} miles away for easy travel.`
+        : '';
+      const affordLabel = (t.affordabilityRatio ?? 99) <= 3 ? 'very affordable' : (t.affordabilityRatio ?? 99) <= 5 ? 'affordable' : 'moderate';
+      const indNote = t.mainIndustry ? ` The local economy is anchored by ${t.mainIndustry.toLowerCase()}.` : '';
+      const safetyNote = t.safetyScore != null ? ` Safety: ${t.safetyScore}/10.` : '';
+      return `${t.name} combines ${affordLabel} living (${t.affordabilityRatio}x ratio) with ${t.recScore}/10 recreation access, making it an ideal remote work base in Montana. ${airportNote}${indNote}${safetyNote} Population: ${fmt(t.population)}.`;
+    },
+    stats: t => [
+      { label: 'Airport', value: t.nearestAirportMiles != null ? t.nearestAirportMiles + ' mi' : '—' },
+      { label: 'Affordability', value: (t.affordabilityRatio ?? 0) + 'x' },
+      { label: 'Rec Score', value: t.recScore + '/10' },
+      { label: 'Population', value: fmt(t.population) },
+    ],
+  },
 ];
 
 // ─── Static Generation ──────────────────────────────────────────────
@@ -805,6 +849,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const envData = load('town-environmental.json');
   const economy = load('town-economy.json');
   const healthcare = load('town-healthcare.json');
+  const airportDist = load('town-airport-distances.json');
   const rawFreshness = load('data-freshness.json');
 
   const allTowns: TownRaw[] = Object.keys(coords).map(s => {
@@ -885,6 +930,24 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       janLow: clim?.[0]?.avgLow ?? null,
       annualSnow: clim ? Math.round(clim.reduce((s: number, m: any) => s + (m.snowIn || 0), 0)) : null,
       annualPrecip: clim ? Math.round(clim.reduce((s: number, m: any) => s + m.precipIn, 0) * 10) / 10 : null,
+      nearestAirportMiles: (() => {
+        const ap = airportDist[s] as Record<string, { distanceMiles: number; airportName: string }> | undefined;
+        if (!ap) return null;
+        const entries = Object.values(ap);
+        if (entries.length === 0) return null;
+        const closest = entries.reduce((best, cur) =>
+          cur.distanceMiles < best.distanceMiles ? cur : best);
+        return closest.distanceMiles;
+      })(),
+      nearestAirportName: (() => {
+        const ap = airportDist[s] as Record<string, { distanceMiles: number; airportName: string }> | undefined;
+        if (!ap) return null;
+        const entries = Object.values(ap);
+        if (entries.length === 0) return null;
+        const closest = entries.reduce((best, cur) =>
+          cur.distanceMiles < best.distanceMiles ? cur : best);
+        return closest.airportName;
+      })(),
     };
   });
 

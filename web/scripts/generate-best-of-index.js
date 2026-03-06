@@ -22,6 +22,7 @@ const crime = load('town-crime.json');
 const envData = load('town-environmental.json');
 const economy = load('town-economy.json');
 const healthcare = load('town-healthcare.json');
+const airportDist = load('town-airport-distances.json');
 
 function recScore(places) {
   if (!places || places.length === 0) return 0;
@@ -71,6 +72,13 @@ const allTowns = Object.keys(coords).map(s => {
     graduationRate: economy[s]?.graduationRate ?? null,
     schoolScore: economy[s]?.schoolScore ?? null,
     healthcareScore: healthcare[s]?.healthcareScore ?? null,
+    nearestAirportMiles: (() => {
+      const ap = airportDist[s];
+      if (!ap) return null;
+      const closest = Object.values(ap).reduce((best, cur) =>
+        !best || cur.distanceMiles < best.distanceMiles ? cur : best, null);
+      return closest?.distanceMiles ?? null;
+    })(),
   };
 });
 
@@ -209,6 +217,22 @@ const rankings = [
     slug: 'best-housing-availability', count: 10,
     filter: t => t.forSaleInventory != null && t.forSaleInventory > 0 && t.totalHousingUnits != null && t.population != null && t.population > 500,
     sort: (a, b) => housingAvailScore(b) - housingAvailScore(a),
+  },
+  {
+    slug: 'best-towns-for-digital-nomads', count: 10,
+    filter: t => t.population != null && t.population >= 2000 && t.affordabilityRatio != null && t.nearestAirportMiles != null,
+    sort: (a, b) => {
+      const sc = (t) => {
+        const internet = Math.min(Math.log10(Math.max(t.population ?? 1, 1)) / Math.log10(100000), 1) * 10;
+        const airport = Math.max(10 - (t.nearestAirportMiles ?? 200) / 20, 0);
+        const afford = Math.max(8 - (t.affordabilityRatio ?? 8), 0) * 1.25;
+        const safety = (t.safetyScore ?? 5);
+        const climate = Math.max(((t.janLow ?? -20) + 20), 0) / 4;
+        const amenity = Math.min((t.population ?? 0) / 10000, 1) * 5 + (t.healthcareScore ?? 3) * 0.5;
+        return internet * 5 + airport * 4 + afford * 3 + t.recScore * 3 + safety * 2 + climate * 2 + amenity;
+      };
+      return sc(b) - sc(a);
+    },
   },
 ];
 

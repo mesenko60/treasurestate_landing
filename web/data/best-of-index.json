@@ -57,14 +57,16 @@
   "bozeman": [
     "best-outdoor-recreation",
     "best-ski-towns",
-    "towns-near-hot-springs"
+    "towns-near-hot-springs",
+    "best-towns-for-digital-nomads"
   ],
   "browning": [
     "best-outdoor-recreation",
     "best-towns-near-glacier-yellowstone"
   ],
   "butte": [
-    "best-outdoor-recreation"
+    "best-outdoor-recreation",
+    "best-towns-for-digital-nomads"
   ],
   "choteau": [
     "best-outdoor-recreation",
@@ -87,7 +89,8 @@
   ],
   "whitefish": [
     "best-ski-towns",
-    "best-towns-near-glacier-yellowstone"
+    "best-towns-near-glacier-yellowstone",
+    "best-towns-for-digital-nomads"
   ],
   "philipsburg": [
     "best-ski-towns",
@@ -104,7 +107,8 @@
   "kalispell": [
     "best-ski-towns",
     "best-towns-near-glacier-yellowstone",
-    "best-climate"
+    "best-climate",
+    "best-towns-for-digital-nomads"
   ],
   "libby": [
     "best-ski-towns"
@@ -144,7 +148,8 @@
     "best-housing-availability"
   ],
   "helena": [
-    "towns-near-hot-springs"
+    "towns-near-hot-springs",
+    "best-towns-for-digital-nomads"
   ],
   "hot-springs": [
     "towns-near-hot-springs",
@@ -193,7 +198,8 @@
   "glendive": [
     "best-small-towns",
     "best-towns-for-families",
-    "best-towns-for-young-professionals"
+    "best-towns-for-young-professionals",
+    "best-towns-for-digital-nomads"
   ],
   "east-glacier": [
     "best-towns-near-glacier-yellowstone"
@@ -237,7 +243,8 @@
     "best-towns-for-young-professionals"
   ],
   "belgrade": [
-    "best-towns-for-young-professionals"
+    "best-towns-for-young-professionals",
+    "best-towns-for-digital-nomads"
   ],
   "miles-city": [
     "best-towns-for-young-professionals"
@@ -250,5 +257,14 @@
   ],
   "roundup": [
     "best-housing-availability"
+  ],
+  "great-falls": [
+    "best-towns-for-digital-nomads"
+  ],
+  "billings": [
+    "best-towns-for-digital-nomads"
+  ],
+  "missoula": [
+    "best-towns-for-digital-nomads"
   ]
 }

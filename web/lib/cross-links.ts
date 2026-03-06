@@ -31,6 +31,7 @@ const RANKING_TITLES: Record<string, string> = {
   'best-towns-for-families': 'Best for Families',
   'best-towns-for-young-professionals': 'Best for Young Professionals',
   'best-housing-availability': 'Best Housing Availability',
+  'best-towns-for-digital-nomads': 'Best for Digital Nomads',
 };
 
 let _rankingCache: Record<string, string[]> | null = null;
