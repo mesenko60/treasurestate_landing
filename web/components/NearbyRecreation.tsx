@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { filterNearbyRecreation } from '../lib/recreation';
+import { trackDirectoryExpand } from '../lib/gtag';
 
 type RecreationPlace = {
   name: string;
@@ -300,7 +301,7 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
         borderTop: '1px solid #eee', paddingTop: '0.75rem',
       }}>
         <button
-          onClick={() => setShowDirectory(!showDirectory)}
+          onClick={() => { if (!showDirectory) trackDirectoryExpand('recreation', townName); setShowDirectory(!showDirectory); }}
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
             width: '100%', padding: '0.6rem', background: showDirectory ? '#f0f4f0' : '#fff',

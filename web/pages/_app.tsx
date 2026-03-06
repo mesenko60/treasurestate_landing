@@ -11,14 +11,22 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
+    gtag.initScrollTracking()
+    gtag.initReadTracking()
+    gtag.initOutboundTracking()
+
     const handleRouteChange = (url: string) => {
       gtag.pageview(url)
+      gtag.resetScrollTracking()
+      gtag.clearReadTracking()
+      gtag.initReadTracking()
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     router.events.on('hashChangeComplete', handleRouteChange)
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
       router.events.off('hashChangeComplete', handleRouteChange)
+      gtag.clearReadTracking()
     }
   }, [router.events])
 
@@ -74,6 +82,19 @@ footer p{margin:0.3rem 0}
             gtag('js', new Date());
             gtag('config', '${gtag.GA_TRACKING_ID}', {
               page_path: window.location.pathname,
+              content_group: (function() {
+                var p = window.location.pathname;
+                if (p === '/') return 'home';
+                if (p === '/montana-towns' || p === '/montana-towns/') return 'directory';
+                if (/^\\/montana-towns\\/[^/]+\\/[^/]+/.test(p)) return 'topic';
+                if (/^\\/montana-towns\\/[^/]+/.test(p)) return 'hub';
+                if (/^\\/guides\\//.test(p)) return 'guide';
+                if (p === '/best-of' || p === '/best-of/') return 'rankings_index';
+                if (/^\\/best-of\\//.test(p)) return 'ranking';
+                if (p === '/compare' || p === '/compare/') return 'compare_tool';
+                if (/^\\/compare\\//.test(p)) return 'comparison';
+                return 'other';
+              })(),
             });
           `,
         }}

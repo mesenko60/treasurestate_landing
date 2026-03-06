@@ -1,6 +1,7 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { trackSearch, trackHubCityClick } from '../lib/gtag';
 
 const TownMap = dynamic(() => import('./TownMap'), {
   ssr: false,
@@ -29,6 +30,7 @@ const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
   const [searchTerm, setSearchTerm] = useState('');
   const directoryRef = useRef<HTMLDivElement>(null);
+  const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const hubCities = useMemo(() =>
     towns
@@ -77,7 +79,17 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
           type="text"
           placeholder="Search for a town..."
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            const val = e.target.value;
+            setSearchTerm(val);
+            if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
+            if (val.trim().length >= 2) {
+              searchTimerRef.current = setTimeout(() => {
+                const count = towns.filter(t => t.name.toLowerCase().includes(val.toLowerCase())).length;
+                trackSearch(val.trim(), count);
+              }, 1000);
+            }
+          }}
           className="town-search-input"
           onFocus={(e) => e.target.style.borderColor = '#3b6978'}
           onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
@@ -94,7 +106,7 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
         </p>
         <div className="hub-featured-grid">
           {hubCities.map(city => (
-            <Link key={city.slug} href={`/montana-towns/${city.slug}/`} className="hub-featured-card">
+            <Link key={city.slug} href={`/montana-towns/${city.slug}/`} className="hub-featured-card" onClick={() => trackHubCityClick(city.name)}>
               <span className="hub-featured-name">{city.name}</span>
               <span className="hub-featured-tagline">{city.hubTagline || city.nickname}</span>
               {city.population && (

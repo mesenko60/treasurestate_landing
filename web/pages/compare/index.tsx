@@ -9,6 +9,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { filterNearbyRecreation } from '../../lib/recreation';
+import { trackCompare } from '../../lib/gtag';
 
 type MonthClimate = {
   month: string;
@@ -254,8 +255,14 @@ export default function CompareTool({ towns }: Props) {
     }
   }, [router]);
 
-  const handleA = (slug: string) => { setSlugA(slug); updateUrl(slug, slugB); };
-  const handleB = (slug: string) => { setSlugB(slug); updateUrl(slugA, slug); };
+  const handleA = (slug: string) => {
+    setSlugA(slug); updateUrl(slug, slugB);
+    if (slug && slugB) trackCompare(slug, slugB);
+  };
+  const handleB = (slug: string) => {
+    setSlugB(slug); updateUrl(slugA, slug);
+    if (slugA && slug) trackCompare(slugA, slug);
+  };
   const handleSwap = () => { setSlugA(slugB); setSlugB(slugA); updateUrl(slugB, slugA); };
 
   const title = townA && townB
@@ -527,7 +534,7 @@ export default function CompareTool({ towns }: Props) {
                   return (
                     <button
                       key={`${a}-${b}`}
-                      onClick={() => { setSlugA(a); setSlugB(b); updateUrl(a, b); }}
+                      onClick={() => { setSlugA(a); setSlugB(b); updateUrl(a, b); trackCompare(a, b); }}
                       style={{
                         padding: '0.6rem', border: '1px solid #e0e0e0', borderRadius: '6px',
                         background: '#fff', cursor: 'pointer', fontSize: '0.9rem',

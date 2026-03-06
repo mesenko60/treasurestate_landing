@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { trackMapInteraction } from '../lib/gtag';
 
 // Fix Leaflet marker issue in Next.js
 const customIcon = new L.Icon({
@@ -55,6 +56,7 @@ export default function TownMap({
             title={town.name}
             eventHandlers={{
               click: () => {
+                trackMapInteraction(`marker_click:${town.name}`);
                 window.location.href = `/montana-towns/${town.slug}/`;
               }
             }}

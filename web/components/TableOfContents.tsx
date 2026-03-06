@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { trackTocClick } from '../lib/gtag';
 
 interface TOCItem {
   id: string;
@@ -105,6 +106,7 @@ export default function TableOfContents({ contentSelector = '.content-section' }
                 }}
                 onClick={(e) => {
                   e.preventDefault();
+                  trackTocClick(heading.id, heading.text);
                   document.getElementById(heading.id)?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
