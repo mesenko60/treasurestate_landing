@@ -18,7 +18,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} is a mountain fishing town at 5,568 feet where Rock Creek{'\u2014'}a cold, clear
         freestone stream fed by snowmelt from the Beartooth Mountains{'\u2014'}flows directly through
-        the center of town. With 23 FWP fishing access sites and 255 lakes within 50 miles,
+        the center of town. With 23 FWP fishing access sites and 241 lakes within 50 miles,
         {townName} offers an extraordinary range of water: from Rock Creek's accessible in-town
         riffles to the alpine lakes of the Absaroka-Beartooth Wilderness to the Stillwater River's
         remote canyon water. The Beartooth Highway{'\u2014'}one of America's most spectacular alpine
@@ -31,7 +31,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>255 lakes</strong> within 50 miles</li>
+        <li><strong>241 lakes</strong> within 50 miles</li>
         <li><strong>23 FWP fishing access sites</strong> within 50 miles</li>
         <li><strong>3 rivers</strong> within range</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, Yellowstone cutthroat trout, brook trout, mountain whitefish</li>
@@ -85,7 +85,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Alpine Lakes</h2>
       <p>
-        With 255 lakes within 50 miles{'\u2014'}and the broader Beartooth Plateau holding over
+        With 241 lakes within 50 miles{'\u2014'}and the broader Beartooth Plateau holding over
         700{'\u2014'}{townName} offers alpine lake fishing on a scale matched by few places in the
         Lower 48. The Beartooth Highway provides roadside access to several high-elevation lakes
         above 9,000 feet, including Beartooth Lake, Island Lake, and Long Lake, which hold
@@ -214,7 +214,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         fishing in {townName} is a quiet, solitary experience{'\u2014'}January highs average 31°F,
         and the creek runs low and clear through snow-covered banks. Alpine lakes are frozen and
         inaccessible. The Beartooth Highway is closed. After a cold session on the creek, the
-        hot springs within 50 miles offer a welcome warm-up.
+        region's hot springs farther afield offer a welcome warm-up on a separate outing.
       </p>
 
       <h2>Local Resources</h2>

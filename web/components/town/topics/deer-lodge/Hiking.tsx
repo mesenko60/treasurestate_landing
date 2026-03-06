@@ -43,8 +43,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <h2>At a Glance</h2>
       <ul>
         <li><strong>47 trailheads</strong> within 50 miles</li>
-        <li><strong>9 wilderness areas</strong> within 50 miles</li>
-        <li><strong>3 state parks</strong> within 50 miles</li>
+        <li><strong>2 wilderness areas</strong> within 50 miles</li>
+        <li><strong>1 state park</strong> within 50 miles</li>
         <li><strong>3 waterfalls</strong> within 50 miles including Lost Creek Falls</li>
         <li><strong>73 campgrounds</strong> within 50 miles</li>
         <li><strong>Closest trailhead:</strong> Seymour Creek Trailhead, 7 miles</li>
@@ -176,8 +176,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Nine federally designated wilderness areas lie within 50 miles of {townName}, an
-        extraordinary concentration of protected wildlands. The{' '}
+        Two federally designated wilderness areas lie within 50 miles of {townName}, giving the
+        town unusually fast access to protected backcountry. The{' '}
         <strong>Anaconda-Pintler Wilderness</strong> (3 miles south) is the closest and most
         significant, encompassing 158,000 acres of the Continental Divide with alpine lakes, high
         peaks, and the CDT. The surrounding wilderness areas extend the network of roadless terrain
@@ -209,8 +209,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName}, featuring a dramatic limestone canyon, the Lost Creek Falls waterfall, and
         regular sightings of mountain goats and bighorn sheep on the canyon walls. The park has
         a campground, picnic area, and well-maintained trail system that makes it an easy
-        half-day outing from town. Additional state parks within 50 miles provide further trail
-        options across the region.
+        half-day outing from town. It is the primary state-park hiking destination within 50 miles
+        of town.
       </p>
       {stateParks.length > 0 && (
         <table style={tableStyle}>

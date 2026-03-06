@@ -58,7 +58,6 @@ const CURATED_SITES = [
   { name: 'Wayfarers State Park', type: 'State Park', lat: 48.0833, lng: -114.0667 },
   { name: 'Thompson Falls State Park', type: 'State Park', lat: 47.5967, lng: -115.3400 },
   { name: 'Ackley Lake State Park', type: 'State Park', lat: 47.0600, lng: -109.8900 },
-  { name: 'Fort Owen State Park', type: 'State Park', lat: 46.5100, lng: -114.0800 },
   { name: 'Tower Rock State Park', type: 'State Park', lat: 47.3500, lng: -111.8833 },
   { name: 'Clark\'s Lookout State Park', type: 'State Park', lat: 45.1200, lng: -112.6300 },
   { name: 'Beavertail Hill State Park', type: 'State Park', lat: 46.6100, lng: -113.4400 },
@@ -275,27 +274,7 @@ const CURATED_SITES = [
   { name: 'Miracle of America Museum', type: 'Museum', lat: 47.6930, lng: -114.1500 },
 ];
 
-// Tiered radius: major landmarks visible from farther away
-const RADIUS_BY_TYPE = {
-  'National Park': 100,
-  'Wilderness': 100,
-  'National Forest': 75,
-  'National Rec Area': 75,
-  'Scenic Drive': 75,
-  'Ski Area': 75,
-  'State Park': 60,
-  'Hot Spring': 75,
-  'Wildlife Refuge': 60,
-  'Lake': 60,
-  'River': 60,
-};
 const DEFAULT_RADIUS = 50;
-const MIN_SITES = 10;
-const FALLBACK_RADIUS = 100;
-
-function getRadius(type) {
-  return RADIUS_BY_TYPE[type] || DEFAULT_RADIUS;
-}
 
 function haversineMiles(lat1, lon1, lat2, lon2) {
   const R = 3959;
@@ -319,21 +298,25 @@ function buildRecreation() {
 
   const TYPE_MAP = {
     'Golf Course': 'Golf',
-    'Nature Reserve': 'Wildlife Refuge',
-    'Picnic Area': 'Campground',
     'Visitor Center': 'Museum',
   };
 
   // Drop junk OSM entries: generic labels, unnamed pools, institutional land parcels
   const JUNK_RE = /^(Pool\s*#?\d*|#\d+|Swimming Pool|Hot tub|crab cooker|BLM|MT University|Public Land|State Trust|USFWS|US BOR|US DOD|MT DOT|MT FWP|MT Corrections|US Government|Local Government|County|State|NBC|Private)$/i;
+  const JUNK_NAME_RE = /(^Selfie Spot$|^Picnic Area$|^10 Commandments$|^Practice Bunker\b|LLC$|Services$| HQ\b)/i;
+  const DROP_NAMES = new Set([
+    'Yellowstone National Park',
+  ]);
 
-  const DROP_TYPES = new Set(['Swimming Area']);
+  const DROP_TYPES = new Set(['Swimming Area', 'Picnic Area', 'National HQ']);
 
   let dropped = 0;
   for (const osm of osmSites) {
     const key = osm.name.toLowerCase().trim();
     if (seenNames.has(key)) continue;
     if (JUNK_RE.test(osm.name.trim())) { dropped++; continue; }
+    if (JUNK_NAME_RE.test(osm.name.trim())) { dropped++; continue; }
+    if (DROP_NAMES.has(osm.name.trim())) { dropped++; continue; }
     if (osm.name.trim().length <= 3) { dropped++; continue; }
     if (DROP_TYPES.has(osm.type)) { dropped++; continue; }
 
@@ -353,25 +336,18 @@ function buildRecreation() {
   let maxTown = '';
 
   for (const [slug, town] of Object.entries(coordinates)) {
-    const all = allSites.map(site => ({
+    const all = allSites.filter(site => (
+      site.type !== 'National HQ'
+      && !JUNK_NAME_RE.test(site.name.trim())
+      && !DROP_NAMES.has(site.name.trim())
+    )).map(site => ({
       name: site.name,
       type: site.type,
       distMiles: Math.round(haversineMiles(town.lat, town.lng, site.lat, site.lng)),
     }))
       .sort((a, b) => a.distMiles - b.distMiles);
 
-    // Each site type has its own radius
-    let nearby = all.filter(p => p.distMiles <= getRadius(p.type));
-
-    // If too few results, extend all types to fallback radius
-    if (nearby.length < MIN_SITES) {
-      nearby = all.filter(p => p.distMiles <= FALLBACK_RADIUS);
-    }
-
-    // Still ensure at least MIN_SITES by taking closest if needed
-    if (nearby.length < MIN_SITES) {
-      nearby = all.slice(0, MIN_SITES);
-    }
+    const nearby = all.filter(p => p.distMiles <= DEFAULT_RADIUS);
 
     totalPlaces += nearby.length;
     if (nearby.length < minPlaces) { minPlaces = nearby.length; minTown = slug; }

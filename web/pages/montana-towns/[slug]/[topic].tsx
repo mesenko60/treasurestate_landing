@@ -14,6 +14,7 @@ import RelatedGuides from '../../../components/town/RelatedGuides';
 import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
 import { getTownNameFromSlug } from '../../../lib/towns';
+import { filterNearbyRecreation } from '../../../lib/recreation';
 
 const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
   missoula: {
@@ -413,7 +414,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const rawHousing = allHousing[slug];
   const rawEconomy = allEconomy[slug];
   const rawTown = allTownData[slug];
-  const recPlaces: RecPlace[] = allRecreation[slug]?.places || [];
+  const recPlaces: RecPlace[] = filterNearbyRecreation(allRecreation[slug]?.places || []);
   const climateMonths = allClimate[slug]?.months || null;
 
   const housing = rawHousing ? {

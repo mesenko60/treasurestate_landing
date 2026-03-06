@@ -111,8 +111,8 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         The affordability ratio{'\u2014'}median home value divided by median household income{'\u2014'}is{' '}
         {h?.affordabilityRatio ?? '\u2014'}. For context, the commonly cited national benchmark is around 3.0 to 5.0.
         At {h?.affordabilityRatio ?? 'this level'}, {townName} is stretched but far less than Whitefish (11.7),
-        Bozeman (8.8), or Kalispell (8.5){'\u2014'}making it the best value among Montana's larger cities
-        for homebuyers earning local wages.
+        Bozeman (8.8), or Kalispell (8.5){'\u2014'}making it more attainable than several of Montana's
+        priciest larger cities for homebuyers earning local wages.
       </p>
       <p>
         The State of Montana is {townName}'s single largest employer, providing a steady base of

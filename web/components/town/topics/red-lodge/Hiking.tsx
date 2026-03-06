@@ -35,7 +35,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <h2>At a Glance</h2>
       <ul>
         <li><strong>13 trailheads</strong> within 50 miles</li>
-        <li><strong>364 recreation sites</strong> within 50 miles</li>
+        <li><strong>338 recreation sites</strong> within 50 miles</li>
         <li><strong>1 wilderness area</strong> directly accessible: Absaroka-Beartooth (15 mi)</li>
         <li><strong>3 state parks</strong> within range</li>
         <li><strong>5 waterfalls</strong> within 50 miles</li>
@@ -43,7 +43,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         <li><strong>Closest wilderness:</strong> Absaroka-Beartooth Wilderness, 15 miles</li>
         <li><strong>National parks:</strong> Yellowstone (72 mi via Beartooth Highway)</li>
         <li><strong>Ski area:</strong> Red Lodge Mountain (4 mi)</li>
-        <li><strong>Hot springs:</strong> 3 within 50 miles</li>
+        <li><strong>Hot springs:</strong> none within 50 miles</li>
         <li><strong>Scenic drive:</strong> Beartooth Highway (All-American Road), 15 miles to summit</li>
       </ul>
 

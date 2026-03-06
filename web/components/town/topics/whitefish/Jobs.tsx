@@ -149,9 +149,9 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
 
       <h2>Remote Work & New Economy</h2>
       <p>
-        {townName} has become a magnet for remote workers, particularly since 2020. The
+        {townName} has become a draw for remote workers, particularly since 2020. The
         combination of outdoor lifestyle, a walkable downtown with good coffee and coworking
-        options, reliable internet, and daily Amtrak service has attracted professionals in
+        options, and daily Amtrak service has attracted professionals in
         tech, finance, consulting, and creative industries who earn coastal salaries while
         living in a mountain town. This influx has driven up housing prices and brought new
         spending power to the local economy, but it has also widened the gap between newcomer

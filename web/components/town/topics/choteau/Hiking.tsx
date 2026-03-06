@@ -44,11 +44,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <h2>At a Glance</h2>
       <ul>
         <li><strong>5 trailheads</strong> within 50 miles</li>
-        <li><strong>5 wilderness areas</strong> within 50 miles</li>
-        <li><strong>3 state parks</strong> within 50 miles</li>
+        <li><strong>0 federally designated wilderness areas</strong> within 50 miles</li>
+        <li><strong>2 state parks</strong> within 50 miles</li>
         <li><strong>4 waterfalls</strong> within 50 miles</li>
         <li><strong>11 campgrounds</strong> within 50 miles</li>
-        <li><strong>9 wildlife refuges/WMAs</strong> within 50 miles</li>
+        <li><strong>8 wildlife refuges/WMAs</strong> within 50 miles</li>
         <li><strong>Closest trailhead:</strong> South Fork Teton Trailhead, 28 miles</li>
         <li><strong>Closest wilderness:</strong> North Fork Sun River WSA, 26 miles</li>
         <li><strong>Ski area:</strong> Teton Pass Ski Area, 16 miles</li>
@@ -159,13 +159,12 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Five federally designated wilderness areas and wilderness study areas lie within 50 miles
-        of {townName}, anchored by the Bob Marshall Wilderness Complex to the west. The{' '}
+        No federally designated wilderness areas lie within 50 miles of {townName}, but the Rocky
+        Mountain Front still gives the town quick access to exceptionally wild country. The{' '}
         <strong>North Fork Sun River WSA</strong> (26 miles) is the closest designated area,
         protecting wild country along the Sun River drainage on the eastern slope of the
-        Continental Divide. Together these wilderness areas form one of the largest blocks of
-        protected wildland in the contiguous United States, offering essentially limitless
-        backcountry hiking for multi-day and multi-week expeditions.
+        Continental Divide. The core of the Bob Marshall Wilderness Complex sits farther west and
+        is better thought of as a longer outing than a truly nearby hike.
       </p>
       {wilderness.length > 0 && (
         <table style={tableStyle}>
@@ -188,7 +187,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        Three state parks lie within 50 miles of {townName}, providing maintained trail systems
+        Two state parks lie within 50 miles of {townName}, providing maintained trail systems
         and day-use facilities. These parks offer accessible alternatives to the more remote
         wilderness trails along the Front, with established paths, interpretive signage, and
         campground access for visitors seeking a less rugged outing within easy reach of town.

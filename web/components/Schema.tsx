@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { filterNearbyRecreation } from '../lib/recreation';
 
 interface RecreationPlace {
   name: string;
@@ -24,7 +25,7 @@ interface SchemaProps {
 
 const ATTRACTION_TYPES = new Set([
   'National Park', 'Wilderness', 'National Forest', 'Ski Area',
-  'Hot Spring', 'Scenic Drive', 'National HQ', 'State Park',
+  'Hot Spring', 'Scenic Drive', 'State Park',
 ]);
 
 export default function Schema({
@@ -62,7 +63,7 @@ export default function Schema({
   schemas.push(citySchema);
 
   if (recreationPlaces && recreationPlaces.length > 0) {
-    const attractions = recreationPlaces
+    const attractions = filterNearbyRecreation(recreationPlaces)
       .filter(p => ATTRACTION_TYPES.has(p.type))
       .slice(0, 10);
 

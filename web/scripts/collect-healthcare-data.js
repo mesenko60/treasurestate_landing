@@ -95,11 +95,13 @@ for (const [slug, town] of Object.entries(coords)) {
   })).sort((a, b) => a.dist - b.dist);
 
   const nearest = hospitalsWithDist[0];
-  const nearestMajor = hospitalsWithDist.find(h => h.trauma <= 3);
+  const nearestMajor = hospitalsWithDist.find(h => h.trauma >= 1 && h.trauma <= 3);
   const hasLocalHospital = hospitalsWithDist.some(h => h.dist <= 5);
   const hospitalsWithin30 = hospitalsWithDist.filter(h => h.dist <= 30).length;
   const hospitalsWithin60 = hospitalsWithDist.filter(h => h.dist <= 60).length;
-  const bestTraumaWithin60 = hospitalsWithDist.filter(h => h.dist <= 60).reduce((best, h) => Math.min(best, h.trauma || 99), 99);
+  const bestTraumaWithin60 = hospitalsWithDist
+    .filter(h => h.dist <= 60 && h.trauma >= 1)
+    .reduce((best, h) => Math.min(best, h.trauma), 99);
 
   // Healthcare access score (0-10)
   // Factors: distance to nearest hospital, distance to major trauma center, 

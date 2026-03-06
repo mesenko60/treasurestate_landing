@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { filterNearbyRecreation } from '../lib/recreation';
 
 type RecreationPlace = {
   name: string;
@@ -31,7 +32,6 @@ const TYPE_META: Record<string, { icon: string; color: string; label: string; pr
   'Scenic Drive':      { icon: '🛣️', color: '#d68910', label: 'Scenic Drives',          priority: 17, weight: 4 },
   'Wildlife Refuge':   { icon: '🦅', color: '#7d6608', label: 'Wildlife',               priority: 18, weight: 3 },
   'National Rec Area': { icon: '🏞️', color: '#2e86ab', label: 'Rec Areas',              priority: 19, weight: 4 },
-  'National HQ':       { icon: '🏢', color: '#1a5276', label: 'National Headquarters',   priority: 6,  weight: 5 },
   'Viewpoint':         { icon: '👀', color: '#a04000', label: 'Viewpoints',             priority: 21, weight: 1 },
 };
 
@@ -187,14 +187,15 @@ function FullDirectory({ grouped, sortedTypes }: { grouped: Record<string, Recre
 
 export default function NearbyRecreation({ townName, places }: NearbyRecreationProps) {
   const [showDirectory, setShowDirectory] = useState(false);
+  const visiblePlaces = filterNearbyRecreation(places);
 
-  if (!places || places.length === 0) return null;
+  if (visiblePlaces.length === 0) return null;
 
-  const score = computeScore(places);
-  const highlights = pickHighlights(places);
+  const score = computeScore(visiblePlaces);
+  const highlights = pickHighlights(visiblePlaces);
 
   const grouped: Record<string, RecreationPlace[]> = {};
-  for (const p of places) {
+  for (const p of visiblePlaces) {
     if (!grouped[p.type]) grouped[p.type] = [];
     grouped[p.type].push(p);
   }
@@ -222,7 +223,7 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
               {getScoreLabel(score)}
             </div>
             <div style={{ fontSize: '0.76rem', color: '#888', marginTop: '2px' }}>
-              {places.length} sites within 50 mi
+              {visiblePlaces.length} sites within 50 mi
             </div>
             <div style={{ fontSize: '0.72rem', color: '#aaa' }}>
               {sortedTypes.length} categories

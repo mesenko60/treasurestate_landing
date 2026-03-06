@@ -105,7 +105,7 @@
     "propertyCrimeRate": 0,
     "totalCrimeRate": 0,
     "source": "FBI UCR 2023",
-    "safetyScore": 10.2
+    "safetyScore": 10
   },
   "deer-lodge": {
     "violentCrimes": 12,

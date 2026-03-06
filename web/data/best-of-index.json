@@ -31,7 +31,8 @@
   ],
   "glasgow": [
     "most-affordable-towns",
-    "best-towns-for-young-professionals"
+    "best-towns-for-young-professionals",
+    "best-towns-for-digital-nomads"
   ],
   "alberton": [
     "best-outdoor-recreation"
@@ -40,19 +41,10 @@
     "best-outdoor-recreation",
     "towns-near-hot-springs"
   ],
-  "big-timber": [
-    "best-outdoor-recreation",
-    "best-fishing-towns",
-    "best-housing-availability"
-  ],
   "bigfork": [
     "best-outdoor-recreation",
     "best-towns-near-glacier-yellowstone",
     "best-climate"
-  ],
-  "boulder": [
-    "best-outdoor-recreation",
-    "towns-near-hot-springs"
   ],
   "bozeman": [
     "best-outdoor-recreation",
@@ -60,24 +52,33 @@
     "towns-near-hot-springs",
     "best-towns-for-digital-nomads"
   ],
-  "browning": [
-    "best-outdoor-recreation",
-    "best-towns-near-glacier-yellowstone"
-  ],
-  "butte": [
-    "best-outdoor-recreation",
-    "best-towns-for-digital-nomads"
-  ],
-  "choteau": [
-    "best-outdoor-recreation",
-    "best-towns-for-retirees",
-    "best-climate",
-    "best-towns-for-families"
-  ],
   "darby": [
     "best-outdoor-recreation",
     "best-small-towns",
     "best-towns-for-families"
+  ],
+  "drummond": [
+    "best-outdoor-recreation",
+    "best-climate"
+  ],
+  "east-glacier": [
+    "best-outdoor-recreation",
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "eureka": [
+    "best-outdoor-recreation",
+    "best-climate"
+  ],
+  "hamilton": [
+    "best-outdoor-recreation",
+    "towns-near-hot-springs"
+  ],
+  "kalispell": [
+    "best-outdoor-recreation",
+    "best-ski-towns",
+    "best-towns-near-glacier-yellowstone",
+    "best-climate",
+    "best-towns-for-digital-nomads"
   ],
   "red-lodge": [
     "best-ski-towns",
@@ -104,21 +105,11 @@
     "best-towns-near-glacier-yellowstone",
     "best-climate"
   ],
-  "kalispell": [
-    "best-ski-towns",
-    "best-towns-near-glacier-yellowstone",
-    "best-climate",
-    "best-towns-for-digital-nomads"
-  ],
   "libby": [
     "best-ski-towns"
   ],
   "columbus": [
     "best-fishing-towns"
-  ],
-  "joliet": [
-    "best-fishing-towns",
-    "best-towns-for-retirees"
   ],
   "bridger": [
     "best-fishing-towns",
@@ -126,30 +117,41 @@
     "best-towns-for-retirees",
     "best-towns-for-families"
   ],
-  "fromberg": [
-    "best-fishing-towns"
-  ],
   "gardiner": [
     "best-fishing-towns",
     "towns-near-hot-springs",
     "best-towns-near-glacier-yellowstone"
   ],
-  "livingston": [
+  "fromberg": [
     "best-fishing-towns"
+  ],
+  "joliet": [
+    "best-fishing-towns",
+    "best-towns-for-retirees"
   ],
   "stevensville": [
     "best-fishing-towns",
+    "best-small-towns",
     "best-towns-for-retirees",
+    "best-towns-for-families",
     "best-housing-availability"
+  ],
+  "missoula": [
+    "best-fishing-towns",
+    "best-towns-for-digital-nomads"
+  ],
+  "livingston": [
+    "best-fishing-towns"
   ],
   "white-sulphur-springs": [
     "towns-near-hot-springs",
-    "best-small-towns",
     "best-housing-availability"
   ],
   "helena": [
-    "towns-near-hot-springs",
-    "best-towns-for-digital-nomads"
+    "towns-near-hot-springs"
+  ],
+  "boulder": [
+    "towns-near-hot-springs"
   ],
   "hot-springs": [
     "towns-near-hot-springs",
@@ -162,10 +164,12 @@
     "towns-near-hot-springs",
     "best-climate"
   ],
-  "hamilton": [
-    "towns-near-hot-springs"
+  "baker": [
+    "best-small-towns",
+    "best-towns-for-retirees",
+    "best-towns-for-families"
   ],
-  "conrad": [
+  "deer-lodge": [
     "best-small-towns",
     "best-towns-for-retirees",
     "best-towns-for-families",
@@ -175,34 +179,24 @@
     "best-small-towns",
     "best-housing-availability"
   ],
-  "baker": [
+  "glendive": [
     "best-small-towns",
     "best-towns-for-retirees",
-    "best-towns-for-families"
+    "best-towns-for-families",
+    "best-towns-for-young-professionals",
+    "best-towns-for-digital-nomads"
   ],
   "ennis": [
     "best-small-towns",
     "best-towns-for-families",
     "best-housing-availability"
   ],
-  "deer-lodge": [
-    "best-small-towns",
-    "best-towns-for-retirees",
-    "best-towns-for-families",
-    "best-towns-for-young-professionals"
+  "plains": [
+    "best-small-towns"
   ],
-  "dillon": [
+  "chinook": [
     "best-small-towns",
-    "best-towns-for-young-professionals"
-  ],
-  "glendive": [
-    "best-small-towns",
-    "best-towns-for-families",
-    "best-towns-for-young-professionals",
-    "best-towns-for-digital-nomads"
-  ],
-  "east-glacier": [
-    "best-towns-near-glacier-yellowstone"
+    "best-towns-for-families"
   ],
   "west-glacier": [
     "best-towns-near-glacier-yellowstone"
@@ -210,16 +204,21 @@
   "west-yellowstone": [
     "best-towns-near-glacier-yellowstone"
   ],
+  "browning": [
+    "best-towns-near-glacier-yellowstone"
+  ],
+  "conrad": [
+    "best-towns-for-retirees",
+    "best-towns-for-families",
+    "best-towns-for-young-professionals"
+  ],
   "hardin": [
     "best-towns-for-retirees",
     "best-towns-for-young-professionals"
   ],
-  "fort-benton": [
+  "roundup": [
     "best-towns-for-retirees",
-    "best-towns-for-families"
-  ],
-  "eureka": [
-    "best-climate"
+    "best-housing-availability"
   ],
   "rexford": [
     "best-climate"
@@ -227,44 +226,45 @@
   "harlowton": [
     "best-climate"
   ],
+  "choteau": [
+    "best-climate"
+  ],
   "polson": [
     "best-climate"
   ],
-  "drummond": [
-    "best-climate"
-  ],
-  "chinook": [
-    "best-towns-for-families"
-  ],
-  "shelby": [
-    "best-towns-for-young-professionals"
+  "belgrade": [
+    "best-towns-for-families",
+    "best-towns-for-young-professionals",
+    "best-towns-for-digital-nomads"
   ],
   "malta": [
     "best-towns-for-young-professionals"
   ],
-  "belgrade": [
-    "best-towns-for-young-professionals",
-    "best-towns-for-digital-nomads"
-  ],
   "miles-city": [
+    "best-towns-for-young-professionals"
+  ],
+  "shelby": [
+    "best-towns-for-young-professionals"
+  ],
+  "dillon": [
     "best-towns-for-young-professionals"
   ],
   "belt": [
     "best-housing-availability"
   ],
+  "big-timber": [
+    "best-housing-availability"
+  ],
   "sheridan": [
     "best-housing-availability"
   ],
-  "roundup": [
-    "best-housing-availability"
-  ],
-  "great-falls": [
+  "butte": [
     "best-towns-for-digital-nomads"
   ],
   "billings": [
     "best-towns-for-digital-nomads"
   ],
-  "missoula": [
+  "great-falls": [
     "best-towns-for-digital-nomads"
   ]
 }

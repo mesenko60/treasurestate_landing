@@ -9,6 +9,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import TableOfContents from '../../components/TableOfContents';
+import { filterNearbyRecreation } from '../../lib/recreation';
 
 /* ─── Types ──────────────────────────────────────────────── */
 
@@ -237,7 +238,7 @@ function movingGuide(t: TownBundle): GuideData {
   const vacancy = t.h?.vacancyRate;
   const units = t.h?.totalHousingUnits;
   const months = t.clim?.months;
-  const places = t.rec?.places || [];
+  const places = filterNearbyRecreation(t.rec?.places || []);
   const recTypes = new Set(places.map((p: any) => p.type));
   const janLow = months?.[0]?.avgLow;
   const julHigh = months?.[6]?.avgHigh;
@@ -332,7 +333,7 @@ function movingGuide(t: TownBundle): GuideData {
       id: 'outdoor-recreation',
       heading: `Outdoor Recreation Near ${t.name}`,
       html: `
-        <p>${t.name} has access to <strong>${places.length} recreation and attraction sites</strong> spanning ${recTypes.size} categories. ${nearestPark ? `${nearestPark.name} is just ${nearestPark.distMiles} miles away.` : ''} ${nearestSki ? `For skiing, ${nearestSki.name} is ${nearestSki.distMiles} miles from town${secondSki ? ` and ${secondSki.name} is ${secondSki.distMiles} miles` : ''}.` : ''}</p>
+        <p>${t.name} has access to <strong>${places.length} recreation and attraction sites</strong> spanning ${recTypes.size} categories. ${nearestPark ? `${nearestPark.name} is about ${nearestPark.distMiles} miles away.` : ''} ${nearestSki ? `For skiing, ${nearestSki.name} is about ${nearestSki.distMiles} miles from town${secondSki ? ` and ${secondSki.name} is about ${secondSki.distMiles} miles` : ''}.` : ''}</p>
         ${highlights.length > 0 ? `
         <h3>Top Nearby Attractions</h3>
         <ul>
@@ -489,7 +490,7 @@ function movingGuide(t: TownBundle): GuideData {
   const faqs: FAQ[] = [
     { q: `What is the cost of living in ${t.name}, Montana?`, a: `${homeVal ? `The typical home value is ${$(homeVal)}` : `Housing costs vary`}${rent ? ` and rent averages ${$(rent)}/month` : ''}. ${income ? `The median household income is ${$(income)}.` : ''} Montana has no state sales tax, which helps offset costs.` },
     { q: `What are winters like in ${t.name}?`, a: `${janLow != null ? `January lows average ${janLow}°F` : 'Winters are cold'}${annualSnow ? ` with about ${annualSnow}" of annual snowfall` : ''}. ${janLow != null && janLow > 10 ? 'Compared to eastern Montana, winters here are relatively mild.' : 'Winter driving skills and proper vehicle preparation are essential.'}` },
-    { q: `Is ${t.name} a good place to live?`, a: `${t.name} offers ${places.length} nearby recreation sites, ${ratio ? `a ${ratio <= 4 ? 'favorable' : ratio <= 6 ? 'moderate' : 'higher'} affordability ratio of ${ratio}x` : 'Montana quality of life'}, and four distinct seasons. ${nearestPark ? `It's ${nearestPark.distMiles} miles from ${nearestPark.name}.` : ''} Montana's lack of sales tax and retirement income tax are significant benefits.` },
+    { q: `Is ${t.name} a good place to live?`, a: `${t.name} offers ${places.length} nearby recreation sites, ${ratio ? `a ${ratio <= 4 ? 'favorable' : ratio <= 6 ? 'moderate' : 'higher'} affordability ratio of ${ratio}x` : 'Montana quality of life'}, and four distinct seasons. ${nearestPark ? `It's about ${nearestPark.distMiles} miles from ${nearestPark.name}.` : ''} Montana's lack of sales tax can help offset some day-to-day costs.` },
     { q: `How many homes are for sale in ${t.name}?`, a: `${inv ? `As of early 2026, there were ${n(inv)} homes for sale in ${t.name}` : `Housing availability varies`}${invYoY != null ? `, ${invYoY > 0 ? `up ${invYoY}%` : `down ${Math.abs(invYoY)}%`} from the prior year` : ''}. ${units ? `The community has ${n(units)} total housing units with a ${vacancy}% vacancy rate (Census ACS 2019–2023).` : ''} Check Zillow or local MLS for the most current listings.` },
     ...(unemp != null ? [{ q: `What is the job market like in ${t.name}?`, a: `${t.name} has a ${unemp}% unemployment rate${unemp <= 3.5 ? ', which is at or below the state average' : unemp <= 6 ? '' : ', which is above the state average'}.${lfpr != null ? ` Labor force participation is ${lfpr}%.` : ''} ${employed ? `About ${n(employed)} residents are employed locally.` : ''} ${mainInd ? `The leading industry is ${mainInd.toLowerCase()}.` : ''} Montana has no state sales tax, which benefits both businesses and consumers.` }] : []),
     ...(gradRate != null ? [{ q: `How are the schools in ${t.name}?`, a: `The ${t.td.schoolDistrict || t.name} school district has a graduation rate of ${gradRate}%${gradRate >= 90 ? ', above the Montana state average of ~87%' : gradRate >= 85 ? ', near the state average' : ', below the state average of ~87%'}.${t.td.schoolEnrollment ? ` Approximately ${n(t.td.schoolEnrollment)} students are enrolled.` : ''}${perPupil ? ` Per-pupil spending is approximately ${$(perPupil)}.` : ''}` }] : []),

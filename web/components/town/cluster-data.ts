@@ -542,7 +542,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is Helena a good place for families?',
-        answer: "Helena offers solid schools through Helena Public Schools, serving 7,800 students with an 88% graduation rate and $11,600 per-pupil spending. Carroll College provides local higher education. With 188 recreation sites within 50 miles, Mount Helena City Park, Canyon Ferry Lake, and the most affordable housing among Montana's larger cities, families find Helena very livable.",
+        answer: "Helena offers solid schools through Helena Public Schools, serving 7,800 students with an 88% graduation rate and $11,600 per-pupil spending. Carroll College provides local higher education. With 188 recreation sites within 50 miles, Mount Helena City Park, Canyon Ferry Lake, and more moderate housing costs than some of Montana's pricier growth markets, families find Helena very livable.",
       },
       {
         question: 'What outdoor recreation is near Helena?',
@@ -550,7 +550,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'When is the best time to visit Helena?',
-        answer: "Summer (June\u2013August) offers the best weather with highs of 73\u201384\u00B0F and access to Canyon Ferry Lake, Gates of the Mountains boat tours, and hiking. Fall brings crisp air and smaller crowds. Winter is cold but dry, with skiing at Discovery (62 miles) and Showdown (65 miles). Spring is cool with wildflowers on Mount Helena by May.",
+        answer: "Summer (June\u2013August) offers the best weather with highs of 73\u201384\u00B0F and access to Canyon Ferry Lake, Gates of the Mountains boat tours, and hiking. Fall brings crisp air and smaller crowds. Winter is cold but dry, with local trails on Mount Helena, nearby hot springs, and snowshoeing in the surrounding hills. Spring is cool with wildflowers on Mount Helena by May.",
       },
       {
         question: 'What are the main industries in Helena?',
@@ -558,7 +558,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is Helena a good place to retire?',
-        answer: "Helena is increasingly popular with retirees thanks to affordable housing (the best value among Montana's larger cities), quality healthcare at St. Peter's Health, a dry mild-winter climate, and abundant outdoor recreation. Montana has no state sales tax. The state capital offers cultural amenities \u2014 museums, a historic downtown, and community events \u2014 that smaller Montana towns lack.",
+        answer: "Helena is increasingly popular with retirees thanks to comparatively moderate housing costs among Montana's larger cities, quality healthcare at St. Peter's Health, a dry mild-winter climate, and abundant outdoor recreation. Montana has no state sales tax. The state capital offers cultural amenities \u2014 museums, a historic downtown, and community events \u2014 that smaller Montana towns lack.",
       },
       {
         question: 'What is the housing market like in Helena?',
@@ -652,7 +652,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What outdoor recreation is near Billings?',
-        answer: "Billings has 78 recreation sites within 50 miles, including 20 fishing access sites, 3 state parks, and trails along the Rimrocks. The Yellowstone River flows near the city, and the Bighorn River (41 miles south) is world-class trout water. The Absaroka-Beartooth Wilderness is 67 miles away, and the Beartooth Highway provides access to Yellowstone National Park.",
+        answer: "Billings has 78 recreation sites within 50 miles, including 20 fishing access sites, 3 state parks, and trails along the Rimrocks. The Yellowstone River flows near the city, and the Bighorn River (41 miles south) is world-class trout water. Pictograph Cave State Park and the Rimrocks provide easy day-trip outdoor access close to town.",
       },
       {
         question: 'What are the main industries in Billings?',
@@ -762,7 +762,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What outdoor recreation is near Great Falls?',
-        answer: "Great Falls has 85 recreation sites within 50 miles, highlighted by Giant Springs State Park (4 miles) \u2014 one of the world\u2019s largest freshwater springs. The Missouri River flows through the city with 60-plus miles of River\u2019s Edge Trail. First Peoples Buffalo Jump State Park (11 miles) preserves a 2,000-year-old cliff. The Bob Marshall Wilderness is accessible within 85 miles.",
+        answer: "Great Falls has 85 recreation sites within 50 miles, highlighted by Giant Springs State Park (4 miles) \u2014 one of the world\u2019s largest freshwater springs. The Missouri River flows through the city with 60-plus miles of River\u2019s Edge Trail. First Peoples Buffalo Jump State Park (11 miles) preserves a 2,000-year-old cliff. The Rocky Mountain Front begins roughly 50 miles west of town.",
       },
       {
         question: 'What are winters like in Great Falls?',
@@ -2103,7 +2103,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is Bigfork a good place to retire?',
-        answer: "Bigfork is a popular retirement destination. The median household income of $82,648 and 48% labor force participation rate suggest a significant retired population. Attractions include the arts community, mild-by-Montana-standards winters (lake moderation), Flathead Lake recreation, excellent healthcare access in Kalispell (20 miles), low crime, and a walkable village center. Challenges include the high cost of housing (affordability ratio 9.2), seasonal tourism crowds, and limited local shopping. Montana has no sales tax, which benefits retirees. Many retirees split time between Bigfork and warmer climates.",
+        answer: "Bigfork is a popular retirement destination. The median household income of $82,648 and 48% labor force participation rate suggest a significant retired population. Attractions include the arts community, mild-by-Montana-standards winters (lake moderation), Flathead Lake recreation, excellent healthcare access in Kalispell (20 miles), and a walkable village center. Challenges include the high cost of housing (affordability ratio 9.2), seasonal tourism crowds, and limited local shopping. Montana has no sales tax, which benefits retirees. Many retirees split time between Bigfork and warmer climates.",
       },
       {
         question: 'How do I get to Bigfork?',

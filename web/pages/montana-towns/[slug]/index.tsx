@@ -24,6 +24,7 @@ import TownHousing from '../../../components/TownHousing';
 import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../../lib/towns';
 import { readTownMarkdownByTownName, AEOData } from '../../../lib/markdown';
 import { getClusterConfig } from '../../../components/town/cluster-data';
+import { filterNearbyRecreation } from '../../../lib/recreation';
 import CrossHubCities from '../../../components/town/CrossHubCities';
 
 type TownCoordinate = {
@@ -385,7 +386,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   } catch (e) {
     console.error("Failed to load recreation data", e);
   }
-  const recreationPlaces = allRecreation[slug]?.places || null;
+  const recreationPlaces = filterNearbyRecreation(allRecreation[slug]?.places || null);
 
   let allHousingData: Record<string, any> = {};
   try {

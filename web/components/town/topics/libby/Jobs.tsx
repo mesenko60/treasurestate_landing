@@ -144,13 +144,13 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
         {townName}'s {e?.laborForceParticipation != null ? `${e.laborForceParticipation}%` : '—'}{' '}
         labor force participation rate is well below Montana's statewide average near 63%. This
         reflects the community's demographic profile: a significant share of the population is
-        retired or semi-retired, drawn by affordable housing, clean air, and proximity to
+        retired or semi-retired, drawn by affordable housing, open space, and proximity to
         world-class outdoor recreation. With a labor force of only {fmt(e?.laborForce ?? null)} and{' '}
         {fmt(e?.employed ?? null)} employed, {townName} operates a micro-scale economy where
         virtually every available worker has a job — the {e?.unemploymentRate != null ? `${e.unemploymentRate}%` : '—'}
         unemployment rate is remarkably low. Remote work has added a new dimension: the scenic
-        Kootenai River setting and reliable internet have begun attracting telecommuters who bring
-        outside income into the local economy.
+        Kootenai River setting has helped attract telecommuters who bring outside income into the
+        local economy.
       </p>
 
       <h2>Commuting to Kalispell and Spokane</h2>

@@ -34,9 +34,10 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at 4,521 feet in the Deer Lodge Valley of Powell County, Montana,
-        37 miles northwest of Butte along I-90. With <strong>91 lakes</strong> within
-        50 miles, <strong>8 fishing access sites</strong>, and <strong>5 rivers</strong> within
-        driving distance, {townName} commands one of the highest densities of fishable water for
+        37 miles northwest of Butte along I-90. With <strong>73 lakes</strong> within
+        50 miles, <strong>8 fishing access sites</strong>, and access to the{' '}
+        <strong>Clark Fork</strong> plus other blue-ribbon rivers within easy driving distance,
+        {townName} commands one of the highest densities of fishable water for
         any town in Montana. The <strong>Clark Fork River</strong> flows directly through the
         valley, <strong>Georgetown Lake</strong>{'\u2014'}13 miles southwest{'\u2014'}is the
         premier fishery: a 2,800-acre mountain lake stocked with rainbow trout, brook trout, and
@@ -50,8 +51,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>At a Glance</h2>
       <ul>
         <li><strong>8 fishing access sites</strong> within 50 miles</li>
-        <li><strong>91 lakes</strong> within 50 miles</li>
-        <li><strong>5 rivers</strong> within driving distance</li>
+        <li><strong>73 lakes</strong> within 50 miles</li>
+        <li><strong>2 rivers</strong> within 50 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, brook trout, westslope cutthroat trout, kokanee salmon, mountain whitefish</li>
         <li><strong>Star fishery:</strong> Georgetown Lake{'\u2014'}rainbow trout, brook trout, kokanee salmon, ice fishing</li>
         <li><strong>Closest fishing access:</strong> Comers Point and Red Bridge, 13 miles</li>
@@ -222,7 +223,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        An extraordinary <strong>91 lakes</strong> lie within 50 miles of {townName}{'\u2014'}one
+        An extraordinary <strong>73 lakes</strong> lie within 50 miles of {townName}{'\u2014'}one
         of the highest densities of fishable lakes for any town in Montana. <strong>Barker
         Lakes</strong> (3 miles) are the closest, followed by <strong>Storm Lake</strong> (8
         miles), <strong>Lion Lake</strong> (11 miles), <strong>Georgetown Lake</strong> (13
@@ -260,7 +261,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         After a day on the water, <strong>Fairmont Hot Springs</strong> (approximately 20 miles
         from {townName}) offers natural hot springs pools for soaking.{' '}
         <strong>Warm Springs</strong>, nearby to the south, provides additional thermal waters in
-        the area. An additional 13 hot springs lie within 50 miles, making the {townName} area a
+        the area. An additional 7 hot springs lie within 50 miles, making the {townName} area a
         rare combination of outstanding fishing and easily accessible thermal
         springs{'\u2014'}a welcome recovery option after long days of wading and hiking to
         backcountry lakes.

@@ -8,6 +8,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import { filterNearbyRecreation } from '../../lib/recreation';
 
 type MonthClimate = {
   month: string; avgHigh: number; avgLow: number; precipIn: number; snowIn?: number;
@@ -480,7 +481,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       annualSnow: months ? months.reduce((s, m) => s + (m.snowIn || 0), 0).toFixed(1) : null,
       climateMonths: months || null,
       recreation: (() => {
-        const places: RecPlace[] = recData[slug]?.places || [];
+        const places: RecPlace[] = filterNearbyRecreation(recData[slug]?.places || []);
         if (!places.length) return null;
         const byCategory: Record<string, number> = {};
         for (const p of places) byCategory[p.type] = (byCategory[p.type] || 0) + 1;

@@ -91,7 +91,7 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
   const minRate = Math.min(...rates);
   for (const [slug, data] of Object.entries(results)) {
     const normalized = (data.totalCrimeRate - minRate) / (maxRate - minRate);
-    data.safetyScore = Math.round((1 - normalized) * 100) / 10;
+    data.safetyScore = Math.max(0, Math.min(10, Math.round((1 - normalized) * 100) / 10));
   }
 
   // Sort by safety

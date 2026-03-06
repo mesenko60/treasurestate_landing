@@ -34,14 +34,14 @@
   },
   "crime": {
     "label": "FBI UCR Crime Statistics",
-    "lastCollected": "2026-01-20",
+    "lastCollected": "2026-03-06",
     "frequency": "annual",
     "vintage": "FBI UCR 2023",
     "script": "collect-crime-data.js"
   },
   "healthcare": {
     "label": "Montana Hospital & Trauma Facilities",
-    "lastCollected": "2026-01-20",
+    "lastCollected": "2026-03-06",
     "frequency": "annual",
     "vintage": "MT DPHHS 2024",
     "script": "collect-healthcare-data.js"
@@ -62,7 +62,7 @@
   },
   "recreation": {
     "label": "Recreation & Outdoor Sites (OSM + Editorial)",
-    "lastCollected": "2026-03-01",
+    "lastCollected": "2026-03-06",
     "frequency": "quarterly",
     "script": "collect-recreation.js"
   },

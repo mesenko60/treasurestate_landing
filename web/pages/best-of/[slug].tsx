@@ -8,6 +8,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import { filterNearbyRecreation } from '../../lib/recreation';
 
 type RankedTown = {
   rank: number;
@@ -585,7 +586,7 @@ const RANKINGS: RankingDef[] = [
     title: '10 Best Montana Towns for Retirees',
     metaDescription: 'The best Montana towns to retire in: combining healthcare access, safety, housing availability, affordability, mild climate, and outdoor recreation.',
     heroSubtitle: 'Your Golden Years in Big Sky Country',
-    intro: 'Montana is increasingly popular with retirees seeking clean air, stunning scenery, low crime, and a relaxed pace of life, all without state income tax on retirement income. We ranked Montana\'s towns by the factors that matter most to retirees: healthcare access, safety, housing availability, affordability, climate mildness, environmental quality, and recreation.',
+    intro: 'Montana is increasingly popular with retirees seeking stunning scenery, low crime, and a relaxed pace of life, along with no state sales tax. We ranked Montana\'s towns by the factors that matter most to retirees: healthcare access, safety, housing availability, affordability, climate mildness, environmental quality, and recreation.',
     methodology: 'Ranked by a composite retiree score factoring in healthcare access (distance to hospitals + trauma center level, ×4), safety (FBI UCR crime rate, ×3), environmental health (EPA Superfund data, ×3), affordability ratio (×3), housing availability (×2), climate mildness (×2), recreation score (×2), and proximity to hot springs/museums (×1 each). Healthcare data from Montana DPHHS Trauma Facility Designations.',
     count: 10,
     filter: t => t.affordabilityRatio != null && t.janLow != null,
@@ -642,7 +643,7 @@ const RANKINGS: RankingDef[] = [
       const scoreB = ((b.janLow ?? -20) + 20) * 3 - (b.annualSnow ?? 100) * 0.5 - Math.abs((b.julHigh ?? 85) - 85) * 0.5;
       return scoreB - scoreA;
     },
-    highlight: t => `${t.name} enjoys January lows averaging ${t.janLow}°F and July highs around ${t.julHigh}°F, with ${t.annualSnow}" of annual snowfall. At ${fmt(t.elevation)} feet in ${t.county ? t.county + ' County' : 'western Montana'}, it benefits from Pacific-moderated weather patterns.`,
+    highlight: t => `${t.name} enjoys January lows averaging ${t.janLow}°F and July highs around ${t.julHigh}°F, with ${t.annualSnow}" of annual snowfall. At ${fmt(t.elevation)} feet in ${t.county ? t.county + ' County' : 'Montana'}, it stands out for comparatively mild winters by Montana standards.`,
     stats: t => [
       { label: 'Jan Low', value: (t.janLow ?? 0) + '°F' },
       { label: 'Jul High', value: (t.julHigh ?? 0) + '°F' },
@@ -655,7 +656,7 @@ const RANKINGS: RankingDef[] = [
     title: '10 Best Montana Towns for Families',
     metaDescription: 'The best Montana towns to raise a family: ranked by school quality, safety, healthcare, housing availability, jobs, affordability, and recreation.',
     heroSubtitle: 'Where Montana Families Thrive',
-    intro: 'Raising a family in Montana means clean air, safe communities, and kids who grow up exploring the outdoors. But which towns offer the best combination of good schools, available housing, hospital access, strong job markets, and family-friendly recreation? We analyzed every Montana community across the factors that matter most to families.',
+    intro: 'Raising a family in Montana often means outdoor access, close-knit communities, and kids who grow up exploring the outdoors. But which towns offer the best combination of good schools, available housing, hospital access, strong job markets, and family-friendly recreation? We analyzed every Montana community across the factors that matter most to families.',
     methodology: 'Ranked by a composite family score: safety (FBI UCR crime rate, ×4), school quality (graduation rate, ×4), environmental health (EPA Superfund data, ×3), job market (Census unemployment rate, ×3), affordability ratio (×3), healthcare access (hospital proximity + trauma level, ×2), housing availability (×2), school enrollment (×2), recreation score (×2), and population (×1). Healthcare data from Montana DPHHS.',
     count: 10,
     filter: t => t.schoolEnrollment != null && t.schoolEnrollment > 100 && t.affordabilityRatio != null,
@@ -782,7 +783,7 @@ const RANKINGS: RankingDef[] = [
     title: '10 Best Montana Towns for Digital Nomads',
     metaDescription: 'The best Montana towns for digital nomads and remote workers: ranked by internet infrastructure, airport access, affordability, recreation, safety, and quality of life.',
     heroSubtitle: 'Remote Work Meets the Last Best Place',
-    intro: 'Montana is emerging as one of the top destinations for digital nomads and remote workers. Affordable housing compared to coastal cities, no state sales tax, world-class outdoor recreation, and improving broadband infrastructure make Big Sky Country a compelling home base. Whether you\'re a freelancer, remote employee, or location-independent entrepreneur, these Montana towns offer the best combination of connectivity, airport access, cost of living, and the legendary Montana lifestyle.',
+    intro: 'Montana is emerging as an appealing destination for digital nomads and remote workers. Affordable housing compared to coastal cities, no state sales tax, world-class outdoor recreation, and access to larger regional service centers make Big Sky Country a compelling home base. Whether you\'re a freelancer, remote employee, or location-independent entrepreneur, these Montana towns offer the best combination of airport access, cost of living, and the legendary Montana lifestyle.',
     methodology: 'Ranked by a composite digital nomad score: internet infrastructure (population as broadband availability proxy, ×5), airport access (road miles to nearest commercial airport, ×4), affordability (price-to-income ratio, ×3), outdoor recreation (diversity and proximity of sites, ×3), safety (FBI UCR crime rates, ×2), climate mildness (January lows, ×2), and community amenities (healthcare, cafes, coworking proxy via population density, ×1). Towns under 2,000 population excluded due to unreliable broadband.',
     count: 10,
     filter: t => t.population != null && t.population >= 2000 && t.affordabilityRatio != null && t.nearestAirportMiles != null,
@@ -810,7 +811,7 @@ const RANKINGS: RankingDef[] = [
       const affordLabel = (t.affordabilityRatio ?? 99) <= 3 ? 'very affordable' : (t.affordabilityRatio ?? 99) <= 5 ? 'affordable' : 'moderate';
       const indNote = t.mainIndustry ? ` The local economy is anchored by ${t.mainIndustry.toLowerCase()}.` : '';
       const safetyNote = t.safetyScore != null ? ` Safety: ${t.safetyScore}/10.` : '';
-      return `${t.name} combines ${affordLabel} living (${t.affordabilityRatio}x ratio) with ${t.recScore}/10 recreation access, making it an ideal remote work base in Montana. ${airportNote}${indNote}${safetyNote} Population: ${fmt(t.population)}.`;
+      return `${t.name} combines ${affordLabel} living (${t.affordabilityRatio}x ratio) with ${t.recScore}/10 recreation access, making it a strong remote work base in Montana. ${airportNote}${indNote}${safetyNote} Population: ${fmt(t.population)}.`;
     },
     stats: t => [
       { label: 'Airport', value: t.nearestAirportMiles != null ? t.nearestAirportMiles + ' mi' : '—' },
@@ -855,7 +856,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const allTowns: TownRaw[] = Object.keys(coords).map(s => {
     const d = townData[s] || {};
     const h = housing[s] || {};
-    const rec = recreation[s]?.places || [];
+    const rec = filterNearbyRecreation(recreation[s]?.places || []);
     const clim = climate[s]?.months;
 
     const recByType: Record<string, number> = {};

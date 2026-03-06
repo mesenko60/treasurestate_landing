@@ -22,8 +22,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         National Park{'\u2014'}one mile from the West Entrance gate. The town is surrounded on
         three sides by Gallatin National Forest and bordered to the east by the world's first
         national park, creating hiking access that is virtually unmatched in the Northern Rockies.
-        With 20 trailheads within 50 miles, 140 recreation sites, and direct access to
-        Yellowstone's geyser basins, backcountry trails, and the Lee Metcalf Wilderness, {townName}{' '}
+        With 20 trailheads within 50 miles, 118 recreation sites, and direct access to
+        Yellowstone's geyser basins, backcountry trails, and nearby wilderness terrain, {townName}{' '}
         offers everything from boardwalk strolls past erupting geysers to multi-day
         backpacking trips through grizzly country. The elevation is high, the winters are
         brutal (January averages 24/8°F), and the terrain demands respect. This guide organizes
@@ -34,13 +34,13 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <h2>At a Glance</h2>
       <ul>
         <li><strong>20 trailheads</strong> within 50 miles</li>
-        <li><strong>140 recreation sites</strong> within 50 miles</li>
-        <li><strong>3 wilderness areas</strong> accessible from {townName}</li>
+        <li><strong>118 recreation sites</strong> within 50 miles</li>
+        <li><strong>1 wilderness area</strong> within 50 miles</li>
         <li><strong>Closest trailhead:</strong> Rendezvous Ski Trails, in town</li>
-        <li><strong>Closest wilderness:</strong> Lee Metcalf Wilderness, within 20 miles</li>
+        <li><strong>Closest wilderness:</strong> Lee Metcalf Wilderness, about 41 miles</li>
         <li><strong>National park:</strong> Yellowstone West Entrance, 1 mile</li>
         <li><strong>Ski areas:</strong> Big Sky Resort (45 mi), cross-country at Rendezvous Trails (in town)</li>
-        <li><strong>Hot springs:</strong> Firehole River swimming area (Yellowstone, 16 mi), 5 within 50 miles</li>
+        <li><strong>Hot springs:</strong> Firehole River swimming area (Yellowstone, 16 mi), 2 within 50 miles</li>
       </ul>
 
       <h2>In-Town & Urban Trails (Within 8 Miles)</h2>
