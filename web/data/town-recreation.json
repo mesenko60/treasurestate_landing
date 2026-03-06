@@ -938,11 +938,6 @@
         "distMiles": 38
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 39
-      },
-      {
         "name": "Rainbow Lake North Campground",
         "type": "Campground",
         "distMiles": 39
@@ -3330,11 +3325,6 @@
       {
         "name": "Helena-Lewis & Clark NF",
         "type": "National Forest",
-        "distMiles": 60
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
         "distMiles": 60
       },
       {
@@ -30493,11 +30483,6 @@
         "distMiles": 33
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 34
-      },
-      {
         "name": "Cy's Place",
         "type": "Campground",
         "distMiles": 34
@@ -32636,11 +32621,6 @@
         "name": "Shannon Lake",
         "type": "Lake",
         "distMiles": 55
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 56
       },
       {
         "name": "Potosi Hot Springs",
@@ -35851,11 +35831,6 @@
         "name": "Medicine Lake",
         "type": "Lake",
         "distMiles": 45
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 46
       },
       {
         "name": "Historical Museum at Fort Missoula",
@@ -50971,11 +50946,6 @@
         "name": "Upper Twin Lake",
         "type": "Lake",
         "distMiles": 18
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 19
       },
       {
         "name": "Hannon Memorial campground",
@@ -69973,11 +69943,6 @@
         "distMiles": 25
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 25
-      },
-      {
         "name": "Blanchard Lake",
         "type": "Lake",
         "distMiles": 25
@@ -74128,11 +74093,6 @@
         "distMiles": 39
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 39
-      },
-      {
         "name": "Jennings Camp Campground",
         "type": "Campground",
         "distMiles": 39
@@ -75801,11 +75761,6 @@
         "name": "Saint Mary Lake",
         "type": "Lake",
         "distMiles": 13
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 14
       },
       {
         "name": "Sleeping Child Hot Springs",
@@ -88403,11 +88358,6 @@
         "distMiles": 53
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 54
-      },
-      {
         "name": "Quigg West Wilderness Study Area",
         "type": "Wildlife Refuge",
         "distMiles": 54
@@ -91008,11 +90958,6 @@
         "distMiles": 55
       },
       {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 56
-      },
-      {
         "name": "Bear Lake",
         "type": "Lake",
         "distMiles": 56
@@ -91646,11 +91591,6 @@
         "name": "Stevensville Historical Museum",
         "type": "Museum",
         "distMiles": 0
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "State Park",
-        "distMiles": 1
       },
       {
         "name": "Stevensville Reservoir",
