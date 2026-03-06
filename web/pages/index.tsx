@@ -43,7 +43,7 @@ const FEATURED_RANKINGS: Ranking[] = [
   { slug: 'most-affordable-towns', title: 'Most Affordable', icon: '💰' },
   { slug: 'best-outdoor-recreation', title: 'Best Recreation', icon: '🏔️' },
   { slug: 'best-ski-towns', title: 'Best Ski Towns', icon: '⛷️' },
-  { slug: 'best-fishing-towns', title: 'Best for Fishing', icon: '🎣' },
+  { slug: 'best-towns-for-digital-nomads', title: 'Best for Digital Nomads', icon: '💻' },
 ];
 
 function fmt(n: number | null): string {
@@ -546,7 +546,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       featuredTowns,
       totalTowns,
       totalGuides,
-      totalRankings: 12,
+      totalRankings: 13,
       totalComparisons,
       featuredRankings: FEATURED_RANKINGS,
       dataSources,
