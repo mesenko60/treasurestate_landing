@@ -10,9 +10,17 @@ interface TOCItem {
 
 interface TableOfContentsProps {
   contentSelector?: string;
+  variant?: 'sidebar' | 'compact';
+  title?: string;
+  initiallyOpen?: boolean;
 }
 
-export default function TableOfContents({ contentSelector = '.content-section' }: TableOfContentsProps) {
+export default function TableOfContents({
+  contentSelector = '.content-section',
+  variant = 'sidebar',
+  title,
+  initiallyOpen = false,
+}: TableOfContentsProps) {
   const [headings, setHeadings] = useState<TOCItem[]>([]);
   const [activeId, setActiveId] = useState<string>('');
   const router = useRouter();
@@ -67,6 +75,79 @@ export default function TableOfContents({ contentSelector = '.content-section' }
 
   if (headings.length === 0) return null;
 
+  const nav = (
+    <nav aria-label={title || 'Table of Contents'}>
+      <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+        {headings.map((heading) => (
+          <li
+            key={heading.id}
+            style={{
+              marginBottom: '8px',
+              paddingLeft: heading.level === 3 ? '15px' : '0px'
+            }}
+          >
+            <a
+              href={`#${heading.id}`}
+              style={{
+                textDecoration: 'none',
+                color: activeId === heading.id ? '#0a5cff' : '#555',
+                fontWeight: activeId === heading.id ? '600' : '400',
+                transition: 'color 0.2s',
+                display: 'block',
+                fontSize: '0.95rem',
+                lineHeight: '1.4'
+              }}
+              onClick={(e) => {
+                e.preventDefault();
+                trackTocClick(heading.id, heading.text);
+                const el = document.getElementById(heading.id);
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+              }}
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+
+  if (variant === 'compact') {
+    return (
+      <section
+        className="table-of-contents table-of-contents-compact"
+        aria-label={title || 'Quick jumps'}
+        style={{
+          marginBottom: '1rem',
+          padding: '0.85rem 1rem',
+          backgroundColor: '#f8f9fa',
+          borderRadius: '8px',
+          border: '1px solid #ddd',
+        }}
+      >
+        <details open={initiallyOpen}>
+          <summary
+            style={{
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: 700,
+              color: '#333',
+              listStyle: 'none',
+            }}
+          >
+            {title || 'Quick jumps'}
+          </summary>
+          <div style={{ marginTop: '0.85rem' }}>
+            {nav}
+          </div>
+        </details>
+      </section>
+    );
+  }
+
   return (
     <aside 
       className="table-of-contents" 
@@ -82,44 +163,8 @@ export default function TableOfContents({ contentSelector = '.content-section' }
         minWidth: '250px'
       }}
     >
-      <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '1.2rem', color: '#333' }}>Table of Contents</h3>
-      <nav aria-label="Table of Contents">
-        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-          {headings.map((heading) => (
-            <li 
-              key={heading.id} 
-              style={{ 
-                marginBottom: '8px',
-                paddingLeft: heading.level === 3 ? '15px' : '0px'
-              }}
-            >
-              <a 
-                href={`#${heading.id}`}
-                style={{
-                  textDecoration: 'none',
-                  color: activeId === heading.id ? '#0a5cff' : '#555',
-                  fontWeight: activeId === heading.id ? '600' : '400',
-                  transition: 'color 0.2s',
-                  display: 'block',
-                  fontSize: '0.95rem',
-                  lineHeight: '1.4'
-                }}
-                onClick={(e) => {
-                  e.preventDefault();
-                  trackTocClick(heading.id, heading.text);
-                  const el = document.getElementById(heading.id);
-                  if (el) {
-                    const y = el.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }
-                }}
-              >
-                {heading.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '1.2rem', color: '#333' }}>{title || 'Table of Contents'}</h3>
+      {nav}
     </aside>
   );
 }

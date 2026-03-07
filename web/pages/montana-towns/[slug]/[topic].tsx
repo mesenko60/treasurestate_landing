@@ -487,8 +487,10 @@ export default function TopicPage(props: Props) {
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         <style dangerouslySetInnerHTML={{ __html: `
           .toc-desktop { display: none; }
+          .toc-mobile { display: block; }
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
+            .toc-mobile { display: none; }
           }
           .topic-page-content { flex: 1; min-width: 0; }
           .topic-map-row { cursor: pointer; }
@@ -513,6 +515,13 @@ export default function TopicPage(props: Props) {
           onClick={handleTopicContentClick}
           onKeyDown={handleTopicContentKeyDown}
         >
+          <div className="toc-mobile">
+            <TableOfContents
+              contentSelector=".topic-page-content .content-section"
+              variant="compact"
+              title="Quick jumps"
+            />
+          </div>
           {shouldShowTopicMap && currentTopicMap && (
             <SingleTownMap
               currentTown={props.currentTownCoords}
