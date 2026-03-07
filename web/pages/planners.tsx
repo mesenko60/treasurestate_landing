@@ -55,6 +55,14 @@ export default function Planners() {
                 <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
               </div>
             </Link>
+
+            <Link href="/planners/hiking-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Hiking Trails &amp; Trailheads</h3>
+                <p>60+ hiking destinations across Montana — Glacier National Park trails, state park hikes, waterfall treks, and community trailheads with ratings and directions.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
           </div>
         </section>
         <StaysCTA />

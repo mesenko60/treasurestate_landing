@@ -167,18 +167,27 @@ function FullDirectory({ grouped, sortedTypes }: { grouped: Record<string, Recre
                 gap: '0.3rem', padding: '0 0.5rem 0.6rem',
               }}>
                 {items.map((p, i) => (
-                  <div key={i} style={{
-                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                    padding: '0.3rem 0.6rem', background: '#fafafa', borderRadius: '4px',
-                    borderLeft: `3px solid ${meta.color}`,
-                    fontSize: '0.82rem',
-                  }}>
+                  <a
+                    key={i}
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                      padding: '0.3rem 0.6rem', background: '#fafafa', borderRadius: '4px',
+                      borderLeft: `3px solid ${meta.color}`,
+                      fontSize: '0.82rem', textDecoration: 'none',
+                      transition: 'background 0.15s',
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f4f0'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = '#fafafa'; }}
+                  >
                     <span style={{
                       color: '#204051', overflow: 'hidden', textOverflow: 'ellipsis',
                       whiteSpace: 'nowrap', flex: 1, marginRight: '0.4rem',
                     }}>{p.name}</span>
                     <span style={{ color: '#aaa', flexShrink: 0, fontSize: '0.76rem' }}>{p.distMiles} mi</span>
-                  </div>
+                  </a>
                 ))}
               </div>
             )}
@@ -271,11 +280,20 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
           {highlights.map((place, i) => {
             const meta = TYPE_META[place.type] || { icon: '📍', color: '#3b6978', label: place.type };
             return (
-              <div key={i} style={{
-                display: 'flex', alignItems: 'center', gap: '0.6rem',
-                padding: '0.6rem 0.8rem', background: '#fff', borderRadius: '8px',
-                border: '1px solid #eee', boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-              }}>
+              <a
+                key={i}
+                href={`https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '0.6rem',
+                  padding: '0.6rem 0.8rem', background: '#fff', borderRadius: '8px',
+                  border: '1px solid #eee', boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                  textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s',
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = meta.color; e.currentTarget.style.boxShadow = '0 2px 6px rgba(0,0,0,0.08)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#eee'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
+              >
                 <span style={{ fontSize: '1.3rem', flexShrink: 0 }}>{meta.icon}</span>
                 <div style={{ minWidth: 0, flex: 1 }}>
                   <div style={{
@@ -293,7 +311,7 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
                     </span>
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

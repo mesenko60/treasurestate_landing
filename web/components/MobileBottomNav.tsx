@@ -31,11 +31,11 @@ export default function MobileBottomNav() {
         <div className="icon">🏆</div>
         <span>Best Of</span>
       </Link>
-      
-      <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer">
-        <div className="icon">🛍️</div>
-        <span>Shop</span>
-      </a>
+
+      <Link href="/planners" className={isActive('/planners') ? 'active' : ''}>
+        <div className="icon">🧭</div>
+        <span>Planners</span>
+      </Link>
     </nav>
   );
 }

@@ -42,6 +42,8 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   add(`${baseUrl}/planners/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/montana-backroads/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/hot-springs-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/planners/campgrounds-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/planners/hiking-guide/`, 0.7, 'monthly');
 
   const infoDir = path.join(outDir, 'Information');
   if (fs.existsSync(infoDir)) {
