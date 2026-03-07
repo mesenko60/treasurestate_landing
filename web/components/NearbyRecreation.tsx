@@ -142,8 +142,7 @@ function scrollToMap(place: RecreationPlace, onSelect?: (place: RecreationPlace)
   }
 }
 
-function FullDirectory({ grouped, sortedTypes, onSelectPlace }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[]; onSelectPlace?: (place: RecreationPlace) => void }) {
-  const [openType, setOpenType] = useState<string | null>(null);
+function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenType }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[]; onSelectPlace?: (place: RecreationPlace) => void; openType: string | null; setOpenType: (t: string | null) => void }) {
 
   return (
     <div style={{ marginTop: '0.5rem' }}>
@@ -209,6 +208,7 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace }: { grouped: Recor
 
 export default function NearbyRecreation({ townName, places, onSelectPlace }: NearbyRecreationProps) {
   const [showDirectory, setShowDirectory] = useState(false);
+  const [openType, setOpenType] = useState<string | null>(null);
   const visiblePlaces = filterNearbyRecreation(places);
 
   if (visiblePlaces.length === 0) return null;
@@ -259,16 +259,33 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
           {sortedTypes.map(type => {
             const meta = TYPE_META[type] || { icon: '📍', color: '#888', label: type };
             return (
-              <span key={type} style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.25rem',
-                padding: '0.2rem 0.55rem', borderRadius: '12px',
-                background: `${meta.color}10`, border: `1px solid ${meta.color}25`,
-                fontSize: '0.74rem', color: meta.color, fontWeight: 500,
-                whiteSpace: 'nowrap',
-              }}>
+              <button
+                key={type}
+                onClick={() => {
+                  setShowDirectory(true);
+                  setOpenType(type);
+                  setTimeout(() => {
+                    const el = document.getElementById('rec-directory');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  }, 50);
+                }}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '0.25rem',
+                  padding: '0.2rem 0.55rem', borderRadius: '12px',
+                  background: `${meta.color}10`, border: `1px solid ${meta.color}25`,
+                  fontSize: '0.74rem', color: meta.color, fontWeight: 500,
+                  whiteSpace: 'nowrap', cursor: 'pointer',
+                  transition: 'background 0.15s, border-color 0.15s',
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = `${meta.color}20`; e.currentTarget.style.borderColor = `${meta.color}50`; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = `${meta.color}10`; e.currentTarget.style.borderColor = `${meta.color}25`; }}
+              >
                 <span style={{ fontSize: '0.85rem' }}>{meta.icon}</span>
                 {grouped[type].length}
-              </span>
+              </button>
             );
           })}
         </div>
@@ -327,11 +344,11 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
       </div>
 
       {/* Full Directory Toggle */}
-      <div style={{
+      <div id="rec-directory" style={{
         borderTop: '1px solid #eee', paddingTop: '0.75rem',
       }}>
         <button
-          onClick={() => { if (!showDirectory) trackDirectoryExpand('recreation', townName); setShowDirectory(!showDirectory); }}
+          onClick={() => { if (!showDirectory) trackDirectoryExpand('recreation', townName); setShowDirectory(!showDirectory); if (showDirectory) setOpenType(null); }}
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
             width: '100%', padding: '0.6rem', background: showDirectory ? '#f0f4f0' : '#fff',
@@ -344,7 +361,7 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
         </button>
 
         {showDirectory && (
-          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} onSelectPlace={onSelectPlace} />
+          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} onSelectPlace={onSelectPlace} openType={openType} setOpenType={setOpenType} />
         )}
       </div>
 
