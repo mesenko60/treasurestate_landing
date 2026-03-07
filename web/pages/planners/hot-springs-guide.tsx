@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
+import { expediaUrl, vrboUrl } from '../../lib/affiliate-urls';
 import fs from 'fs';
 import path from 'path';
 import dynamic from 'next/dynamic';
@@ -82,9 +83,21 @@ function SpringCard({ s }: { s: HotSpring }) {
             </span>
           )}
         </div>
-        <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.25rem 0.6rem', borderRadius: '4px', background: color, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-          {TYPE_LABELS[s.type]}
-        </span>
+        {s.type === 'resort' ? (
+          <a
+            href={expediaUrl(s.nearestTownName, s.nearestTown)}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.25rem 0.6rem', borderRadius: '999px', background: color, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px', textDecoration: 'none', display: 'inline-block' }}
+            title="Find hotels near this resort on Expedia"
+          >
+            {TYPE_LABELS[s.type]}
+          </a>
+        ) : (
+          <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.25rem 0.6rem', borderRadius: '4px', background: color, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+            {TYPE_LABELS[s.type]}
+          </span>
+        )}
       </div>
       <div style={{ padding: '0.5rem 1.25rem 1.25rem' }}>
         <p style={{ fontSize: '0.92rem', color: '#555', lineHeight: 1.6, margin: '0 0 0.75rem' }}>{s.description}</p>
@@ -102,6 +115,16 @@ function SpringCard({ s }: { s: HotSpring }) {
           <Link href={`/montana-towns/${s.nearestTown}`} style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 600 }}>
             {s.nearestTownName} Town Profile →
           </Link>
+          {s.type === 'resort' && (
+            <>
+              <a href={expediaUrl(s.nearestTownName, s.nearestTown)} target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#204051', textDecoration: 'none', fontWeight: 600 }}>
+                Find Hotels →
+              </a>
+              <a href={vrboUrl(s.nearestTownName, s.nearestTown)} target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#204051', textDecoration: 'none', fontWeight: 600 }}>
+                Find Vacation Rentals →
+              </a>
+            </>
+          )}
           {s.website && (
             <a href={s.website} target="_blank" rel="noopener noreferrer" style={{ color: '#999', textDecoration: 'none' }}>
               Official Website →
