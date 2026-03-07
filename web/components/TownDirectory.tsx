@@ -67,7 +67,10 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
 
   function scrollToLetter(letter: string) {
     const el = document.getElementById(`letter-${letter}`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 
   return (

@@ -107,7 +107,11 @@ export default function TableOfContents({ contentSelector = '.content-section' }
                 onClick={(e) => {
                   e.preventDefault();
                   trackTocClick(heading.id, heading.text);
-                  document.getElementById(heading.id)?.scrollIntoView({ behavior: 'smooth' });
+                  const el = document.getElementById(heading.id);
+                  if (el) {
+                    const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }
                 }}
               >
                 {heading.text}
