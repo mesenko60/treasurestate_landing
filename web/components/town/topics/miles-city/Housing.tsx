@@ -87,7 +87,7 @@ export default function Housing({ townName, slug, housing }: Props) {
       <p>
         The Zillow Home Value Index puts {townName}{'\u2019'}s typical home value at {fmtDollar(h?.zillowHomeValue ?? null)},
         while the median list price for currently active listings is {fmtDollar(h?.medianListPrice ?? null)}.
-        These figures make {townName} the most affordable hub city in our Montana analysis{'\u2014'}less
+        These figures make {townName} one of the more affordable hub cities in our Montana analysis{'\u2014'}less
         than half the cost of Bozeman, Whitefish, or Livingston, and well below Helena or Kalispell.
       </p>
       <p>
@@ -143,7 +143,7 @@ export default function Housing({ townName, slug, housing }: Props) {
         With an affordability ratio of {h?.affordabilityRatio ?? '\u2014'} (median home value divided
         by median household income), buying in {townName} is genuinely within reach for working
         households. At 3.8, this ratio is one of the healthiest in Montana{'\u2014'}comparable to Great
-        Falls (3.7) and dramatically better than Missoula (7.9), Bozeman (8.8), or Whitefish (11.7).
+        Falls (5.1) and dramatically better than Missoula (7.9), Bozeman (8.8), or Whitefish (11.7).
         A single-income household earning the median can qualify for a conventional mortgage on a
         median-priced home, something that is increasingly impossible in western Montana.
       </p>

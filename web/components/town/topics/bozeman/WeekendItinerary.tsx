@@ -90,7 +90,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         Falls — an easy 1.2-mile roundtrip to a dramatic 80-foot waterfall on a paved,
         wheelchair-accessible trail. For a longer outing, continue up the canyon to Emerald
         and Heather Lakes, a moderate out-and-back through subalpine forest with rewarding
-        alpine lake payoffs. In winter, swap Hyalite for Bridger Bowl (12 miles north), a
+        alpine lake payoffs. In winter, swap Hyalite for Bridger Bowl (16 miles northeast), a
         community-owned ski area beloved by locals for its steep terrain and affordable
         lift tickets. See our{' '}
         <Link href={`/montana-towns/${slug}/hiking/`}>hiking guide</Link> for detailed trail
@@ -176,8 +176,8 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
 
       <h2>Seasonal Adjustments</h2>
       <p>
-        <strong>Winter weekends:</strong> Bridger Bowl (12 miles north) is the local
-        favorite — steep, affordable, and community-owned. Big Sky Resort (32 miles south)
+        <strong>Winter weekends:</strong> Bridger Bowl (16 miles northeast) is the local
+        favorite — steep, affordable, and community-owned. Big Sky Resort (45 miles southwest)
         offers massive terrain across four mountains and some of the biggest vertical in
         North America. For cross-country skiing, Bohart Ranch Nordic Center has groomed
         trails with mountain views. End any ski day at Bozeman Hot Springs for a soak.

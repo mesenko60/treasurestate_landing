@@ -17,7 +17,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at the doorstep of one of the finest trout fisheries in North America.
-        The Missouri River below Holter Dam — just 32 miles north at the town of Craig — is a
+        The Missouri River below Holter Dam — about 43 miles north at the town of Craig — is a
         world-class tailwater carrying over 4,000 trout per mile, drawing fly anglers from
         around the globe. But the Missouri is only the headline. Canyon Ferry, Hauser, and
         Holter lakes form a chain of Missouri River impoundments within 20 miles, Spring Meadow
@@ -32,7 +32,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <ul>
         <li><strong>10 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, walleye, yellow perch, kokanee salmon, mountain whitefish</li>
-        <li><strong>Signature fishery:</strong> Missouri River tailwater at Craig (32 mi) — 4,000+ trout per mile</li>
+        <li><strong>Signature fishery:</strong> Missouri River tailwater at Craig (43 mi) — 4,000+ trout per mile</li>
         <li><strong>Closest lake:</strong> Spring Meadow Lake, 2 miles (catch-and-release)</li>
         <li><strong>Closest reservoir:</strong> Hauser Lake, 11 miles</li>
         <li><strong>Permit-only float:</strong> Smith River (47 mi) — lottery system for float permits</li>

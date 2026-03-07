@@ -101,7 +101,7 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
         {townName}'s economic rhythm is dictated by Yellowstone National Park's visitation
         patterns. The West Entrance typically opens to vehicle traffic in mid-April and sees
         peak volumes from mid-June through early September, when the town's population can swell
-        from 1,272 year-round residents to an effective daytime population of 10,000 or more.
+        from 1,202 year-round residents to an effective daytime population of 10,000 or more.
         Hotels fill, restaurants run double shifts, raft and fishing outfitters operate dawn to dusk,
         and the main drag of Canyon Street hums with visitors heading to and from the park gate.
       </p>

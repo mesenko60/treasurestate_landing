@@ -66,7 +66,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         {townName} is a historic railroad and ranching town of roughly 3,880 people in Beaverhead
         County, set in a broad high-desert valley at 5,095 feet elevation along I-15, about 65 miles
         south of Butte. Home to the University of Montana Western{'\u2014'}a small public university
-        with roughly 1,600 students{'\u2014'}{townName} blends an agricultural and mining heritage with
+        with roughly 1,284 students{'\u2014'}{townName} blends an agricultural and mining heritage with
         a growing appeal to remote workers, fly-fishing enthusiasts, and retirees drawn by blue-ribbon
         trout streams, Bannack ghost town, and hot springs. Despite its remote location, home values
         have surged in recent years, though {townName} remains one of the more affordable communities
@@ -175,7 +175,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
 
       <h2>University Impact on the Rental Market</h2>
       <p>
-        The University of Montana Western enrolls roughly 1,600 students, and their presence shapes
+        The University of Montana Western enrolls roughly 1,284 students, and their presence shapes
         {townName}'s rental landscape in ways that set it apart from other small western Montana towns.
         Student demand concentrates in the cheapest tier of the rental market{'\u2014'}older apartments,
         shared houses, and converted single-family homes near campus{'\u2014'}which keeps the Census median

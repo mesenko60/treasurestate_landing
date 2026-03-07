@@ -657,7 +657,10 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const lakeTypes = new Set(['Lake']);
   const highlightTypes = new Set(['Museum', 'State Park', 'Hot Spring', 'Ski Area']);
   const generalMapTypes = new Set(['Museum', 'State Park', 'Hot Spring', 'Ski Area', 'Trailhead', 'Fishing Access', 'Lake', 'River', 'Campground', 'Waterfall', 'National Park', 'National Forest', 'Wilderness']);
-  const generalMapPlaces = recPlaces
+  const filteredRecPlaces = slug === 'missoula'
+    ? recPlaces.filter((place) => !(place.type === 'River' && place.name === 'Rock Creek'))
+    : recPlaces;
+  const generalMapPlaces = filteredRecPlaces
     .filter((place) => generalMapTypes.has(place.type))
     .sort((a, b) => a.distMiles - b.distMiles)
     .slice(0, 24);
@@ -686,15 +689,15 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       perPupilSpending: rawEconomy?.perPupilSpending ?? null,
       currentTownCoords: allTownCoordinates[slug] ? { ...allTownCoordinates[slug], slug } : null,
       relatedTownCoords,
-      trails: recPlaces.filter(p => trailTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
-      wilderness: recPlaces.filter(p => wildTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
-      stateParks: recPlaces.filter(p => parkTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
-      fishingAccess: recPlaces.filter(p => fishTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
-      rivers: recPlaces.filter(p => riverTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
-      lakes: recPlaces.filter(p => lakeTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 15),
+      trails: filteredRecPlaces.filter(p => trailTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
+      wilderness: filteredRecPlaces.filter(p => wildTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
+      stateParks: filteredRecPlaces.filter(p => parkTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
+      fishingAccess: filteredRecPlaces.filter(p => fishTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
+      rivers: filteredRecPlaces.filter(p => riverTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
+      lakes: filteredRecPlaces.filter(p => lakeTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 15),
       climate: climateMonths,
-      highlights: recPlaces.filter(p => highlightTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 20),
-      generalMapPlaces: generalMapPlaces.length > 0 ? generalMapPlaces : recPlaces.slice(0, 24),
+      highlights: filteredRecPlaces.filter(p => highlightTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 20),
+      generalMapPlaces: generalMapPlaces.length > 0 ? generalMapPlaces : filteredRecPlaces.slice(0, 24),
     },
   };
 };

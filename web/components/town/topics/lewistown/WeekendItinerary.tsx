@@ -37,7 +37,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
     <article className="content-section">
       <p>
         A weekend in {townName} drops you into Montana{'\u2019'}s geographic
-        center{'\u2014'}Fergus County, where a town of 5,952 sits at 4,121 feet
+        center{'\u2014'}Fergus County, where a town of 6,204 sits at 4,121 feet
         elevation, 125 miles from both Great Falls and Billings. Big Spring
         Creek, a blue-ribbon trout stream fed by one of the largest springs in
         the West, flows through town. The Charlie Russell Chew Choo dinner train

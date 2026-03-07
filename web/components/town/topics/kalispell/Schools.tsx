@@ -135,8 +135,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
 
       <h2>Libraries & Continuing Education</h2>
       <p>
-        The Imaginary Nest Public Library, {townName}'s main public library, and the ImagineIF
-        Library system serve the broader Flathead Valley with branches in Columbia Falls, Bigfork,
+        ImagineIF Libraries, the Flathead Valley's public library system with branches in {townName}, Columbia Falls, Bigfork,
         and Marion. The {townName} branch offers children's reading programs, digital literacy
         classes, community meeting rooms, and a growing collection of digital resources. The
         library system reflects the valley's community-oriented culture and serves as a gathering

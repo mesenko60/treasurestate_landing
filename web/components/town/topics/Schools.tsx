@@ -46,9 +46,9 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
       <p>
         {schoolDistrict ?? `${townName}'s public school district`} serves approximately{' '}
         {fmt(schoolEnrollment)} students across elementary, middle, and high school levels.
-        The district operates multiple elementary schools, two middle schools (Washington and
-        Meadow Hill), and two comprehensive high schools{' '}—{' '}Sentinel High School and Hellgate
-        High School{' '}—{' '}plus Big Sky High School in the surrounding area.
+        The district operates multiple elementary schools, three middle schools (Washington,
+        Meadow Hill, and C.S. Porter), and three comprehensive high schools{' '}—{' '}Sentinel,
+        Hellgate, and Big Sky.
       </p>
       <p>
         The graduation rate stands at {graduationRate != null ? `${graduationRate}%` : 'a competitive level'},
@@ -92,7 +92,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
       <p>
         UM's presence shapes the city in profound ways{' '}—{' '}from the cultural events and Division I
         athletics (the Montana Grizzlies) to the restaurants, shops, and housing market that cater
-        to a student population. The university is also the city's largest single employer.
+        to a student population. The university is also one of the city's major employers.
       </p>
 
       <h2>Missoula College</h2>
@@ -106,7 +106,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
 
       <h2>Continuing Education & Libraries</h2>
       <p>
-        The Missoula Public Library, which opened a modern new building in 2022, serves as a community
+        The Missoula Public Library, which opened its modern new building in 2021, serves as a community
         education hub offering digital literacy classes, children's programs, and access to technology.
         The university's Mansfield Library is also open to the public for research purposes.
         Several community organizations offer adult education, ESL classes, and professional

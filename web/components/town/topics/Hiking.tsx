@@ -108,8 +108,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         The Selway-Bitterroot Wilderness (36 miles) is one of the largest wilderness areas in the
         contiguous U.S. at 1.3 million acres. The Welcome Creek Wilderness (25 miles) is smaller
         but rugged, with dense forests and steep terrain. And the Bob Marshall Wilderness
-        complex{' '}—{' '}over a million acres of roadless backcountry{' '}—{' '}is
-        reachable within about an hour's drive.
+        complex{' '}—{' '}over a million acres of roadless backcountry{' '}—{' '}is accessible from
+        trailheads farther northeast via the Seeley Lake corridor.
       </p>
       {wilderness.length > 0 && (
         <table style={{ width: '100%', borderCollapse: 'collapse', margin: '1rem 0', fontSize: '0.92rem' }}>

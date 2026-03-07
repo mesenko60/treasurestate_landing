@@ -91,7 +91,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
         expedition and the broader story of westward expansion.
       </p>
       <p>
-        Lewis & Clark Caverns State Park, Montana's first state park, is 15 miles west and offers
+        Lewis & Clark Caverns State Park, Montana's first state park, is 16 miles west and offers
         geology field trips through its limestone cavern system. The Madison, Jefferson, and Gallatin
         rivers provide hands-on learning in aquatic biology, fly fishing, and river ecology. The
         surrounding Gallatin and Madison valleys offer habitat studies, wildlife observation, and

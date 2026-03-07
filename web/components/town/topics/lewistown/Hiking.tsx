@@ -27,7 +27,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
     <article className="content-section">
       <p>
         {townName} sits at 4,121 feet in the exact geographic center of Montana, the seat of
-        Fergus County and home to 5,952 people. The town is surrounded by island-range geology{'\u2014'}
+        Fergus County and home to 6,204 people. The town is surrounded by island-range geology{'\u2014'}
         isolated mountain ranges rising from the plains, including the <strong>Big Snowy Mountains</strong>{'\u2014'}
         Wilderness Study Area (21 miles) and the <strong>Judith Mountains</strong>. With{' '}
         <strong>17 campgrounds</strong>, <strong>3 nature reserves</strong>, <strong>3 lakes</strong>,{' '}

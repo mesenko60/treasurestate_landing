@@ -1,6 +1,6 @@
 # Seeley Lake, Montana: Change Your Pace
 
-Nestled between the towering peaks of the Mission Mountains and the vast Bob Marshall Wilderness, Seeley Lake beckons adventurers with its pristine waters and endless outdoor possibilities. This hidden gem in Montana's Crown of the Continent offers a wilderness experience unlike any other, where crystal-clear lakes mirror snow-capped mountains and ancient forests harbor secrets waiting to be discovered. From paddling the chain of pristine lakes to hiking backcountry trails that few have tread, Seeley Lake stands as a gateway to wild Montana—a place where the legendary Blackfoot River flows with stories immortalized in Norman Maclean's "A River Runs Through It," and where each season brings new adventures for those bold enough to seek them. Here, the modern world fades away as you immerse yourself in a landscape where wildlife roams free and the night sky explodes with stars, offering a true taste of Montana's untamed spirit.
+Nestled between the towering peaks of the Mission Mountains and the vast Bob Marshall Wilderness, Seeley Lake beckons adventurers with its pristine waters and endless outdoor possibilities. This hidden gem in Montana's Crown of the Continent offers a wilderness experience unlike any other, where crystal-clear lakes mirror snow-capped mountains and ancient forests harbor secrets waiting to be discovered. From paddling the chain of pristine lakes to hiking backcountry trails that few have tread, Seeley Lake stands as a gateway to wild Montana—a place where the Blackfoot, Clearwater, and Swan Rivers flow—including the legendary Blackfoot immortalized in Norman Maclean's "A River Runs Through It," and where each season brings new adventures for those bold enough to seek them. Here, the modern world fades away as you immerse yourself in a landscape where wildlife roams free and the night sky explodes with stars, offering a true taste of Montana's untamed spirit.
 
 ---
 
@@ -11,7 +11,7 @@ Nestled between the towering peaks of the Mission Mountains and the vast Bob Mar
 - **Founded:** Early 20th century (first major timber sale)
 - **Elevation:** 4,020 ft (1,225 meters)
 - **Known For:** Chain of pristine lakes, world-class fishing, gateway to Bob Marshall Wilderness
-- **Nearby Landmarks:** Bob Marshall Wilderness Complex, Mission Mountains, Blackfoot River, Morrell Falls
+- **Nearby Landmarks:** Bob Marshall Wilderness Complex, Mission Mountains, Blackfoot River, Clearwater River, Swan River, Morrell Falls
 - **Fun Fact:** Seeley Lake is part of the last natural chain of lakes in the northwestern region, connected by the Clearwater and Swan Rivers.
 
 ---
@@ -47,7 +47,7 @@ The rich history of Seeley Lake is deeply intertwined with Montana's natural lan
 
 ## Seasonal Activities & Local Events
 
-- **Spring/Summer:** The warmer months transform Seeley Lake into a water lover's paradise with swimming, boating, canoeing, and kayaking on the valley's chain of lakes. Hiking trails burst with wildflowers, while anglers enjoy world-class fishing on the Blackfoot River and surrounding lakes. Mountain biking on the Seeley Creek Trails offers adventures for all skill levels, and golfers can challenge themselves at the championship Double Arrow Golf Course. The Seeley Lake Sunday Market runs throughout summer, featuring handcrafted goods and homegrown produce.
+- **Spring/Summer:** The warmer months transform Seeley Lake into a water lover's paradise with swimming, boating, canoeing, and kayaking on the valley's chain of lakes. Hiking trails burst with wildflowers, while anglers enjoy world-class fishing on the Blackfoot, Clearwater, and Swan Rivers and surrounding lakes. Mountain biking on the Seeley Creek Trails offers adventures for all skill levels, and golfers can challenge themselves at the championship Double Arrow Golf Course. The Seeley Lake Sunday Market runs throughout summer, featuring handcrafted goods and homegrown produce.
 
 - **Fall/Winter:** When snow blankets the landscape, Seeley Lake becomes a major destination for winter sports enthusiasts. The area boasts extensive snowmobile trails and the Seeley Lake Nordic Trails provide exceptional cross-country skiing with a warming yurt for skiers. Ice fishing tournaments like the Pike on Ice draw competitors to frozen lakes, while snowshoeing offers a quieter way to explore the winter wonderland. The annual Winterfest celebration includes a Mystery Theater Dinner, ice fishing tournament, and the Torchlight Parade and Bonfire.
 

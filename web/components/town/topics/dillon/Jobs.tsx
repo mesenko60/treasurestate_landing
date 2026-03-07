@@ -102,7 +102,7 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
       <h2>University of Montana Western{'\u2014'}The Town{'\u2019'}s Anchor</h2>
       <p>
         The University of Montana Western is {townName}{'\u2019'}s largest institutional employer and
-        the defining presence in the community. With approximately 1,600 students and a
+        the defining presence in the community. With approximately 1,284 students and a
         full complement of faculty, staff, and administrators, UM Western generates a steady
         flow of wages, housing demand, and consumer spending that ripples through the local
         economy. The university is nationally recognized for its Experience One program{'\u2014'}a

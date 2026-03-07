@@ -78,7 +78,7 @@ export default function Housing({ townName, slug, housing }: Props) {
   return (
     <article className="content-section">
       <p>
-        {townName} sits in central Montana at 4,121 feet — a town of roughly 5,952 people and the
+        {townName} sits in central Montana at 4,121 feet — a town of roughly 6,204 people and the
         Fergus County seat, with a housing market shaped by its position as the geographic center
         of Montana and regional hub for central Montana. Big Spring Creek flows through town,
         with the Big Snowy Mountains and Judith Mountains rising to the south and east. The

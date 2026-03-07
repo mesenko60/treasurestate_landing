@@ -24,7 +24,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
     <article className="content-section">
       <p>
         A weekend in {townName} puts you one mile from the busiest entrance to
-        Yellowstone National Park{'\u2014'}a tiny gateway town of 1,272 year-round
+        Yellowstone National Park{'\u2014'}a tiny gateway town of 1,202 year-round
         residents at 6,667 feet where the entire community exists to connect
         visitors with the world's first national park. Canyon Street, the main
         drag, is lined with fly shops, outfitters, restaurants, and souvenir

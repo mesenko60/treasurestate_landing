@@ -63,7 +63,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
   return (
     <article className="content-section">
       <p>
-        {townName} is a tiny gateway community of roughly 1,272 people in Gallatin County, perched
+        {townName} is a tiny gateway community of roughly 1,202 people in Gallatin County, perched
         at 6,667 feet on the western boundary of Yellowstone National Park. The West Entrance to
         Yellowstone sits barely a mile from town{'\u2014'}making {townName} the most park-adjacent
         gateway community and the busiest entrance corridor during summer months. Despite its
@@ -91,7 +91,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         at {fmtDollar(h?.zillowHomeValue ?? null)} according to Zillow's Home Value Index
         {h?.zillowHomeValueDate ? ` as of ${new Date(h.zillowHomeValueDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}` : ''}.
         The U.S. Census Bureau's American Community Survey puts the figure at {fmtDollar(h?.medianHomeValue ?? null)},
-        reflecting the multi-year survey window. For a town of 1,272 year-round residents, these
+        reflecting the multi-year survey window. For a town of 1,202 year-round residents, these
         numbers are staggering{'\u2014'}driven by {townName}'s position at Yellowstone's busiest
         entrance, the dominance of short-term vacation rentals, and the extreme scarcity of
         properties that actually come to market.

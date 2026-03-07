@@ -64,7 +64,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Missoula, Montana',
         metaTitle: 'Best Hiking Near Missoula, Montana \u2014 Trails & Routes | Treasure State',
-        metaDescription: '90 trailheads near Missoula from the iconic M Trail to Rattlesnake Wilderness. Trail distances, difficulty, and seasonal recommendations.',
+        metaDescription: '49 trailheads near Missoula from the iconic M Trail to Rattlesnake Wilderness. Trail distances, difficulty, and seasonal recommendations.',
         description: 'The best hiking trails near Missoula\u2009—\u2009from the iconic M Trail to backcountry wilderness routes, with distances and difficulty.',
         icon: '\uD83E\uDD7E',
       },
@@ -73,8 +73,8 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Missoula, Montana',
         metaTitle: 'Fishing Near Missoula, Montana \u2014 Rivers, Access & Guide | Treasure State',
-        metaDescription: 'Fly fishing near Missoula on the Clark Fork, Blackfoot, and Bitterroot rivers. 44 fishing access sites, species, seasons, and river guide.',
-        description: 'World-class fly fishing near Missoula on the Clark Fork, Blackfoot, and Bitterroot rivers, plus 44 fishing access sites.',
+        metaDescription: 'Fly fishing near Missoula on the Clark Fork, Blackfoot, and Bitterroot rivers. 28 fishing access sites, species, seasons, and river guide.',
+        description: 'World-class fly fishing near Missoula on the Clark Fork, Blackfoot, and Bitterroot rivers, plus 28 fishing access sites.',
         icon: '\uD83C\uDFA3',
       },
       {
@@ -131,7 +131,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   bozeman: {
-    hubIntro: `Bozeman sits in the Gallatin Valley of southwestern Montana, home to 58,000 residents and Montana State University. Whether you're considering a move or planning a visit, this guide covers everything you need to know — from <a href="/montana-towns/bozeman/cost-of-living/">housing costs</a> and <a href="/montana-towns/bozeman/jobs/">job opportunities</a> to <a href="/montana-towns/bozeman/hiking/">hiking trails</a> and a <a href="/montana-towns/bozeman/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nBozeman is one of the fastest-growing cities in Montana, driven by its proximity to Yellowstone National Park (48 miles), two ski areas — Bridger Bowl and Big Sky Resort — and a booming tech and professional services sector. The city combines a walkable downtown centered on Main Street with immediate access to the Bridger Mountains, Gallatin River, and Hyalite Canyon. With 91 recreation sites within 30 miles and a nationally recognized university, Bozeman draws outdoor enthusiasts, entrepreneurs, and families seeking Montana's quality of life.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Bozeman sits in the Gallatin Valley of southwestern Montana, home to 58,000 residents and Montana State University. Whether you're considering a move or planning a visit, this guide covers everything you need to know — from <a href="/montana-towns/bozeman/cost-of-living/">housing costs</a> and <a href="/montana-towns/bozeman/jobs/">job opportunities</a> to <a href="/montana-towns/bozeman/hiking/">hiking trails</a> and a <a href="/montana-towns/bozeman/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nBozeman is one of the fastest-growing cities in Montana, driven by its proximity to Yellowstone National Park (71 miles to the west entrance at West Yellowstone), two ski areas — Bridger Bowl (16 miles) and Big Sky Resort (45 miles) — and a booming tech and professional services sector. The city combines a walkable downtown centered on Main Street with immediate access to the Bridger Mountains, Gallatin River, and Hyalite Canyon. With 91 recreation sites within 30 miles and a nationally recognized university, Bozeman draws outdoor enthusiasts, entrepreneurs, and families seeking Montana's quality of life.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -174,7 +174,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Bozeman, Montana',
         metaTitle: 'Best Hiking Near Bozeman, Montana — Trails & Routes | Treasure State',
-        metaDescription: '42 trailheads near Bozeman from Hyalite Canyon to the Bridger Ridge. Trail distances, difficulty, and seasonal recommendations.',
+        metaDescription: '16 trailheads near Bozeman from Hyalite Canyon to the Bridger Ridge. Trail distances, difficulty, and seasonal recommendations.',
         description: 'The best hiking trails near Bozeman — from Hyalite Canyon and the Bridger Ridge to backcountry wilderness routes.',
         icon: '🥾',
       },
@@ -204,7 +204,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What are winters like in Bozeman?',
-        answer: "Bozeman winters are cold and snowy, typical of a mountain valley at 4,826 feet. January averages a high of 35\u00B0F and a low of 17\u00B0F. The Gallatin Valley receives significant snowfall, making it ideal for skiing at Bridger Bowl (12 miles) or Big Sky Resort (32 miles). Temperature inversions can settle into the valley during prolonged cold spells.",
+        answer: "Bozeman winters are cold and snowy, typical of a mountain valley at 4,826 feet. January averages a high of 35\u00B0F and a low of 17\u00B0F. The Gallatin Valley receives significant snowfall, making it ideal for skiing at Bridger Bowl (16 miles northeast) or Big Sky Resort (45 miles southwest). Temperature inversions can settle into the valley during prolonged cold spells.",
       },
       {
         question: 'Is Bozeman a good place for families?',
@@ -212,11 +212,11 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What outdoor recreation is near Bozeman?',
-        answer: "Bozeman has 91 recreation sites within 30 miles, including 16 trailheads, 16 lakes, 1 wilderness area, and 1 ski area (Bridger Bowl and Big Sky). Hyalite Canyon offers hiking, ice climbing, and reservoir fishing 10 miles south. Yellowstone National Park's north entrance is 48 miles away. The Gallatin River provides world-class fly fishing.",
+        answer: "Bozeman has 91 recreation sites within 30 miles, including 16 trailheads, 16 lakes, and 1 wilderness area. Bridger Bowl ski area is 16 miles northeast; Big Sky Resort is 45 miles southwest. Hyalite Canyon offers hiking, ice climbing, and reservoir fishing 10 miles south. Yellowstone's west entrance at West Yellowstone is 71 miles away. The Gallatin River provides world-class fly fishing.",
       },
       {
         question: 'How far is Bozeman from Yellowstone National Park?',
-        answer: "Bozeman is 48 miles from Yellowstone's north entrance at Gardiner (about 1 hour via US-89 South) and 71 miles from the west entrance at West Yellowstone (about 1.5 hours via US-191). The drive south through the Gallatin Canyon is one of Montana's most scenic routes, following the Gallatin River through a narrow mountain canyon.",
+        answer: "Bozeman is 71 miles from Yellowstone's west entrance at West Yellowstone (about 1.5 hours via US-191) and about 80 miles from the north entrance at Gardiner (via US-89 South). The drive south through the Gallatin Canyon is one of Montana's most scenic routes, following the Gallatin River through a narrow mountain canyon.",
       },
       {
         question: 'When is the best time to visit Bozeman?',
@@ -293,7 +293,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Kalispell, Montana',
         metaTitle: 'Fishing Near Kalispell, Montana — Lakes, Rivers & Guide | Treasure State',
-        metaDescription: 'Fishing near Kalispell on Flathead Lake, Whitefish Lake, and the Flathead River. 11 access sites, 52 lakes, species guide, and seasonal tips.',
+        metaDescription: 'Fishing near Kalispell on Flathead Lake, Whitefish Lake, and the Flathead River. 10 access sites, 27 lakes within 30 miles, species guide, and seasonal tips.',
         description: 'Fishing near Kalispell on Flathead Lake, Whitefish Lake, and the Flathead River — 27 lakes within 30 miles and 10 public access sites.',
         icon: '🎣',
       },
@@ -351,7 +351,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   whitefish: {
-    hubIntro: `Whitefish is a classic Montana ski town of 8,915 residents nestled between Whitefish Lake and Whitefish Mountain Resort in the Flathead Valley of northwest Montana. Whether you're weighing a move or planning a visit, this guide covers everything you need to know — from <a href="/montana-towns/whitefish/cost-of-living/">housing costs</a> and <a href="/montana-towns/whitefish/jobs/">job opportunities</a> to <a href="/montana-towns/whitefish/hiking/">hiking trails</a> and a <a href="/montana-towns/whitefish/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nWhitefish Mountain Resort — one of Montana's premier ski areas with over 3,000 acres of terrain — is just 5 miles from downtown. Glacier National Park's west entrance is 17 miles northeast, making Whitefish the closest town of any size to the park. Whitefish Lake, a glacially carved 3,300-acre lake, borders the town's eastern edge. The Amtrak Empire Builder stops daily at the historic Whitefish Depot, making it one of the few Montana towns accessible by rail. With 181 recreation sites within 30 miles, a charming walkable downtown on Central Avenue, and a year-round resort-town energy, Whitefish has become one of the most sought-after small towns in the American West — and its housing prices reflect that demand.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Whitefish is a classic Montana ski town of 8,915 residents nestled between Whitefish Lake and Whitefish Mountain Resort in the Flathead Valley of northwest Montana. Whether you're weighing a move or planning a visit, this guide covers everything you need to know — from <a href="/montana-towns/whitefish/cost-of-living/">housing costs</a> and <a href="/montana-towns/whitefish/jobs/">job opportunities</a> to <a href="/montana-towns/whitefish/hiking/">hiking trails</a> and a <a href="/montana-towns/whitefish/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nWhitefish Mountain Resort — one of Montana's premier ski areas with over 3,000 acres of terrain — is just 5 miles from downtown. Glacier National Park's west entrance is 17 miles northeast, making Whitefish among the closest towns of any size to the park. Whitefish Lake, a glacially carved 3,300-acre lake, borders the town's eastern edge. The Amtrak Empire Builder stops daily at the historic Whitefish Depot, making it one of the few Montana towns accessible by rail. With 181 recreation sites within 30 miles, a charming walkable downtown on Central Avenue, and a year-round resort-town energy, Whitefish has become one of the most sought-after small towns in the American West — and its housing prices reflect that demand.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -403,7 +403,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Whitefish, Montana',
         metaTitle: 'Fishing Near Whitefish, Montana — Lakes, Rivers & Guide | Treasure State',
-        metaDescription: 'Fishing near Whitefish on Whitefish Lake, Flathead Lake, and the Flathead River. 11 access sites, 45 lakes, species guide, and seasonal tips.',
+        metaDescription: 'Fishing near Whitefish on Whitefish Lake, Flathead Lake, and the Flathead River. 8 access sites within 30 miles, 26 lakes, species guide, and seasonal tips.',
         description: 'Fishing near Whitefish on the namesake lake, Flathead Lake, and the Flathead River — 26 lakes within 30 miles and 8 public access sites.',
         icon: '🎣',
       },
@@ -424,7 +424,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'How far is Whitefish from Glacier National Park?',
-        answer: "Whitefish is 17 miles from Glacier National Park's west entrance at West Glacier, about a 20-minute drive via US-2. This makes Whitefish the closest town of any size to the park. The east side of the park at East Glacier is 51 miles away. Going-to-the-Sun Road, the park's iconic scenic drive, typically opens fully in late June or early July.",
+        answer: "Whitefish is 17 miles from Glacier National Park's west entrance at West Glacier, about a 20-minute drive via US-2. Whitefish and Columbia Falls are both about 17 miles from the west entrance, among the closest towns of any size to the park. The east side of the park at East Glacier is 51 miles away. Going-to-the-Sun Road, the park's iconic scenic drive, typically opens fully in late June or early July.",
       },
       {
         question: 'What are winters like in Whitefish?',
@@ -461,7 +461,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   helena: {
-    hubIntro: `Helena is the state capital of Montana, home to 33,100 residents and the seat of state government in Lewis and Clark County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/helena/cost-of-living/">housing costs</a> and <a href="/montana-towns/helena/jobs/">job opportunities</a> to <a href="/montana-towns/helena/hiking/">hiking trails</a> and a <a href="/montana-towns/helena/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nFounded during the 1864 gold rush at Last Chance Gulch \u2014 now the city's historic downtown pedestrian mall \u2014 Helena became Montana's territorial capital in 1875 and its state capital in 1889. The city sits in a valley at the eastern edge of the Continental Divide, flanked by Mount Helena City Park to the south and the Helena-Lewis and Clark National Forest on three sides. The Gates of the Mountains Wilderness is 20 miles north along the Missouri River, Canyon Ferry Lake is 15 miles east, and Broadwater Hot Springs is just 1 mile from downtown. With 91 recreation sites within 30 miles, state government anchoring a stable economy, and the most affordable housing of any major Montana city, Helena offers a quality of life that balances history, outdoor access, and economic security.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Helena is the state capital of Montana, home to 33,100 residents and the seat of state government in Lewis and Clark County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/helena/cost-of-living/">housing costs</a> and <a href="/montana-towns/helena/jobs/">job opportunities</a> to <a href="/montana-towns/helena/hiking/">hiking trails</a> and a <a href="/montana-towns/helena/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nFounded during the 1864 gold rush at Last Chance Gulch \u2014 now the city's historic downtown pedestrian mall \u2014 Helena became Montana's territorial capital in 1875 and its state capital in 1889. The city sits in a valley at the eastern edge of the Continental Divide, flanked by Mount Helena City Park to the south and the Helena-Lewis and Clark National Forest on three sides. The Gates of the Mountains Wilderness is 20 miles north along the Missouri River, Canyon Ferry Lake is 15 miles east, and Broadwater Hot Springs is just 1 mile from downtown. With 91 recreation sites within 30 miles and state government anchoring a stable economy, Helena offers a quality of life that balances history, outdoor access, and economic security.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -504,7 +504,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Helena, Montana',
         metaTitle: 'Best Hiking Near Helena, Montana \u2014 Trails & Routes | Treasure State',
-        metaDescription: '14 trailheads near Helena including Mount Helena City Park, Gates of the Mountains, and Continental Divide trails. Distances and seasonal tips.',
+        metaDescription: '11 trailheads near Helena including Mount Helena City Park, Gates of the Mountains, and Continental Divide trails. Distances and seasonal tips.',
         description: 'The best hiking trails near Helena \u2014 from Mount Helena City Park to the Gates of the Mountains Wilderness, with distances and tips.',
         icon: '\uD83E\uDD7E',
       },
@@ -546,7 +546,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What outdoor recreation is near Helena?',
-        answer: "Helena has 91 recreation sites within 30 miles, including 11 trailheads, 10 lakes, 1 wilderness area, and 3 hot springs. Mount Helena City Park offers 620 acres of trails at the city's edge. Canyon Ferry Lake (15 miles) provides boating and fishing. The Gates of the Mountains Wilderness is 20 miles north. The Missouri River at Craig (32 miles) is world-class trout water.",
+        answer: "Helena has 91 recreation sites within 30 miles, including 11 trailheads, 10 lakes, 1 wilderness area, and 3 hot springs. Mount Helena City Park offers 620 acres of trails at the city's edge. Canyon Ferry Lake (15 miles) provides boating and fishing. The Gates of the Mountains Wilderness is 20 miles north. The Missouri River at Craig (43 miles north) is world-class trout water.",
       },
       {
         question: 'When is the best time to visit Helena?',
@@ -571,14 +571,14 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   billings: {
-    hubIntro: `Billings is the largest city in Montana with 117,116 residents, serving as the economic and medical hub of the northern Great Plains from its seat in Yellowstone County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/billings/cost-of-living/">housing costs</a> and <a href="/montana-towns/billings/jobs/">job opportunities</a> to <a href="/montana-towns/billings/fishing/">world-class fishing</a> and a <a href="/montana-towns/billings/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nKnown as "The Magic City" for its rapid growth after the Northern Pacific Railroad arrived in 1882, Billings sits on the Yellowstone River beneath dramatic sandstone cliffs called the Rimrocks. The city is the regional center for healthcare, energy, agriculture, and finance across eastern Montana, Wyoming, and the Dakotas. With 39 recreation sites within 30 miles \u2014 including 8 fishing access sites on the Yellowstone and Bighorn rivers, Pictograph Cave State Park with 4,500-year-old rock art, and the gateway to the Beartooth Highway and Yellowstone National Park \u2014 Billings pairs big-city amenities with genuine outdoor access.\n\nAt an affordability ratio of 5.4, Billings offers the most affordable housing of any major Montana city. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Billings is the largest city in Montana with 117,116 residents, serving as the economic and medical hub of the northern Great Plains from its seat in Yellowstone County. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/billings/cost-of-living/">housing costs</a> and <a href="/montana-towns/billings/jobs/">job opportunities</a> to <a href="/montana-towns/billings/fishing/">world-class fishing</a> and a <a href="/montana-towns/billings/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nKnown as "The Magic City" for its rapid growth after the Northern Pacific Railroad arrived in 1882, Billings sits on the Yellowstone River beneath dramatic sandstone cliffs called the Rimrocks. The city is the regional center for healthcare, energy, agriculture, and finance across eastern Montana, Wyoming, and the Dakotas. With 39 recreation sites within 30 miles \u2014 including 8 fishing access sites on the Yellowstone and Bighorn rivers, Pictograph Cave State Park with 4,500-year-old rock art, and the gateway to the Beartooth Highway and Yellowstone National Park \u2014 Billings pairs big-city amenities with genuine outdoor access.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
         title: 'Cost of Living',
         h1: 'Cost of Living in Billings, Montana',
         metaTitle: 'Cost of Living in Billings, Montana (2026) | Treasure State',
-        metaDescription: 'What does it cost to live in Billings? Median home value $385K, rent $1,404/mo, income $72K. Affordability ratio 5.4 \u2014 the most affordable major city in Montana.',
+        metaDescription: 'What does it cost to live in Billings? Median home value $385K, rent $1,404/mo, income $72K. Affordability ratio 5.4 and how Billings compares to other Montana cities.',
         description: 'A detailed breakdown of what it costs to live in Billings \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
         icon: '\uD83D\uDCB0',
       },
@@ -605,7 +605,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Schools & Education',
         h1: 'Schools in Billings, Montana',
         metaTitle: 'Schools in Billings, Montana \u2014 K-12 & College Guide | Treasure State',
-        metaDescription: 'Guide to Billings schools: Billings Public Schools (16,000 students), three AA high schools, MSU Billings, and Rocky Mountain College.',
+        metaDescription: 'Guide to Billings schools: Billings Public Schools (16,570 students), three AA high schools, MSU Billings, and Rocky Mountain College.',
         description: 'Guide to Billings schools from K-12 through college, including enrollment, graduation rates, and higher education options.',
         icon: '\uD83C\uDF93',
       },
@@ -623,8 +623,8 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Billings, Montana',
         metaTitle: 'Fishing Near Billings, Montana \u2014 Yellowstone & Bighorn Rivers | Treasure State',
-        metaDescription: 'Fishing near Billings on the Yellowstone River, Bighorn River tailwater, and 20 FWP fishing access sites. Blue-ribbon trout water and seasonal tips.',
-        description: 'World-class fishing near Billings on the Yellowstone and Bighorn rivers, with 20 fishing access sites and seasonal tips.',
+        metaDescription: 'Fishing near Billings on the Yellowstone River, Bighorn River tailwater, and 8 FWP fishing access sites within 30 miles. Blue-ribbon trout water and seasonal tips.',
+        description: 'World-class fishing near Billings on the Yellowstone and Bighorn rivers, with 8 fishing access sites within 30 miles and seasonal tips.',
         icon: '\uD83C\uDFA3',
       },
       {
@@ -640,11 +640,11 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     faqs: [
       {
         question: 'What is the cost of living in Billings, Montana?',
-        answer: "Billings\u2019 median household income is $71,855 with a median home value of $384,994 (Zillow, January 2026). The affordability ratio of 5.4 makes Billings the most affordable major city in Montana. Median rent is $1,404 per month. With 546 homes for sale and 112 new listings per month, Billings has by far Montana\u2019s largest and most liquid housing market.",
+        answer: "Billings\u2019 median household income is $71,855 with a median home value of $384,994 (Zillow, January 2026). The affordability ratio of 5.4 is among the more competitive among Montana's major cities. Median rent is $1,404 per month. With 546 homes for sale and 112 new listings per month, Billings has by far Montana\u2019s largest and most liquid housing market.",
       },
       {
         question: 'Is Billings a good place to live?',
-        answer: "Billings offers big-city amenities \u2014 two major hospitals, Montana\u2019s busiest airport, a university, and diverse dining and shopping \u2014 with the most affordable housing of any large Montana city. The Yellowstone River and Rimrocks provide outdoor access, and the Beartooth Highway to Yellowstone is about 2 hours away. The climate is warmer and drier than western Montana with July highs reaching 89\u00B0F.",
+        answer: "Billings offers big-city amenities \u2014 two major hospitals, Montana\u2019s busiest airport, a university, and diverse dining and shopping \u2014 with relatively affordable housing among Montana's larger cities. The Yellowstone River and Rimrocks provide outdoor access, and the Beartooth Highway to Yellowstone is about 2 hours away. The climate is warmer and drier than western Montana with July highs reaching 89\u00B0F.",
       },
       {
         question: 'How big is Billings compared to other Montana cities?',
@@ -664,7 +664,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is Billings a good place for families?',
-        answer: "Billings offers Montana\u2019s most affordable housing (ratio 5.4), the state\u2019s largest school district (16,000 students across three AA high schools), two major hospitals, and family-friendly attractions including ZooMontana, Pictograph Cave State Park, and Lake Elmo. The diverse economy with healthcare and energy provides stable employment.",
+        answer: "Billings offers relatively affordable housing (ratio 5.4), the state\u2019s largest school district (16,570 students across three AA high schools), two major hospitals, and family-friendly attractions including ZooMontana, Pictograph Cave State Park, and Lake Elmo. The diverse economy with healthcare and energy provides stable employment.",
       },
       {
         question: 'Can you fly into Billings?',
@@ -681,14 +681,14 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   'great-falls': {
-    hubIntro: `Great Falls is Montana's third-largest city with 60,000 residents, known as "The Electric City" for the hydroelectric dams that harness the Missouri River's five great falls first documented by Lewis and Clark in 1805. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/great-falls/cost-of-living/">housing costs</a> and <a href="/montana-towns/great-falls/jobs/">job opportunities</a> to <a href="/montana-towns/great-falls/fishing/">fishing on the Missouri River</a> and a <a href="/montana-towns/great-falls/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSituated in Cascade County where the Great Plains meet the Rocky Mountain Front, Great Falls is anchored by Malmstrom Air Force Base, Benefis Health System, and a legacy of western art centered on the C.M. Russell Museum. Giant Springs State Park \u2014 home to one of the largest freshwater springs in the world \u2014 sits just 4 miles from downtown, and the Missouri River flows right through the city with 60-plus miles of the River\u2019s Edge Trail along its banks. First Peoples Buffalo Jump State Park (11 miles) preserves a mile-long cliff used for over 2,000 years by Native Americans.\n\nWith an affordability ratio of 5.1, Great Falls offers the most affordable housing of any major Montana city and a 31.5% year-over-year inventory increase. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Great Falls is Montana's third-largest city with 60,000 residents, known as "The Electric City" for the hydroelectric dams that harness the Missouri River's five great falls first documented by Lewis and Clark in 1805. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/great-falls/cost-of-living/">housing costs</a> and <a href="/montana-towns/great-falls/jobs/">job opportunities</a> to <a href="/montana-towns/great-falls/fishing/">fishing on the Missouri River</a> and a <a href="/montana-towns/great-falls/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSituated in Cascade County where the Great Plains meet the Rocky Mountain Front, Great Falls is anchored by Malmstrom Air Force Base, Benefis Health System, and a legacy of western art centered on the C.M. Russell Museum. Giant Springs State Park \u2014 home to one of the largest freshwater springs in the world \u2014 sits just 4 miles from downtown, and the Missouri River flows right through the city with 60-plus miles of the River\u2019s Edge Trail along its banks. First Peoples Buffalo Jump State Park (11 miles) preserves a mile-long cliff used for over 2,000 years by Native Americans.\n\nWith an affordability ratio of 5.1, Great Falls offers among the most affordable housing of Montana's major cities and a 31.5% year-over-year inventory increase. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
         title: 'Cost of Living',
         h1: 'Cost of Living in Great Falls, Montana',
         metaTitle: 'Cost of Living in Great Falls, Montana (2026) | Treasure State',
-        metaDescription: 'What does it cost to live in Great Falls? Median home value $328K, rent $1,352/mo, income $64K. Affordability ratio 5.1 \u2014 the most affordable major city in Montana.',
+        metaDescription: 'What does it cost to live in Great Falls? Median home value $328K, rent $1,352/mo, income $64K. Affordability ratio 5.1 and how Great Falls compares statewide.',
         description: 'A detailed breakdown of what it costs to live in Great Falls \u2014 housing, income, affordability, and how it compares to the rest of Montana.',
         icon: '\uD83D\uDCB0',
       },
@@ -750,7 +750,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     faqs: [
       {
         question: 'What is the cost of living in Great Falls, Montana?',
-        answer: "Great Falls\u2019 median household income is $63,934 with a median home value of $327,514 (Zillow, January 2026). The affordability ratio of 5.1 makes Great Falls the most affordable major city in Montana. Median rent is $1,352 per month. Inventory has surged 31.5% year-over-year, giving buyers significantly more options than any other Montana market.",
+        answer: "Great Falls\u2019 median household income is $63,934 with a median home value of $327,514 (Zillow, January 2026). The affordability ratio of 5.1 is among the best among Montana's major cities. Median rent is $1,352 per month. Inventory has surged 31.5% year-over-year, giving buyers significantly more options than any other Montana market.",
       },
       {
         question: 'Why is Great Falls called The Electric City?',
@@ -770,7 +770,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is Great Falls a good place for families?',
-        answer: "Great Falls offers Montana\u2019s most affordable housing (ratio 5.1), stable military and healthcare employment, and family-friendly attractions including Giant Springs State Park, the Children\u2019s Museum of Montana, and the River\u2019s Edge Trail. Great Falls Public Schools serves 10,000 students with a 79% graduation rate. Two colleges provide local higher education options.",
+        answer: "Great Falls offers among the most affordable housing of Montana's major cities (ratio 5.1), stable military and healthcare employment, and family-friendly attractions including Giant Springs State Park, the Children\u2019s Museum of Montana, and the River\u2019s Edge Trail. Great Falls Public Schools serves 10,000 students with a 79% graduation rate. Two colleges provide local higher education options.",
       },
       {
         question: 'What are the main industries in Great Falls?',
@@ -834,7 +834,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Butte, Montana',
         metaTitle: 'Best Hiking Near Butte, Montana \u2014 Trails & Routes | Treasure State',
-        metaDescription: '25 trailheads near Butte including Humbug Spires, Anaconda-Pintler Wilderness, and Pioneer Mountains. High-elevation trails and seasonal tips.',
+        metaDescription: '4 trailheads near Butte including Humbug Spires, Anaconda-Pintler Wilderness, and Pioneer Mountains. High-elevation trails and seasonal tips.',
         description: 'The best hiking near Butte \u2014 from Humbug Spires to the Anaconda-Pintler Wilderness, with distances and tips.',
         icon: '\uD83E\uDD7E',
       },
@@ -901,7 +901,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   livingston: {
-    hubIntro: `Livingston is a small city of 8,040 residents at the mouth of Paradise Valley in Park County, serving as the original gateway to Yellowstone National Park since the Northern Pacific Railroad first brought tourists here in the 1880s. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/livingston/cost-of-living/">housing costs</a> and <a href="/montana-towns/livingston/jobs/">job opportunities</a> to <a href="/montana-towns/livingston/fishing/">world-class fly fishing</a> and a <a href="/montana-towns/livingston/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSitting at 4,501 feet where the Yellowstone River exits the Absaroka Range, Livingston pairs a well-preserved historic downtown with a vibrant arts and literary community \u2014 home over the years to writers like Tom McGuane, Jim Harrison, and Tim Cahill. The north entrance of Yellowstone is 44 miles south through Paradise Valley, Chico Hot Springs is 21 miles away, and Bridger Bowl ski area is just 19 miles to the west. With 106 recreation sites within 30 miles, including 12 trailheads, 40 lakes, and the Yellowstone River flowing right through town, Livingston offers outdoor access that rivals cities many times its size.\n\nAt an affordability ratio of 7.8, Livingston is more expensive than Montana\u2019s larger cities but far more accessible than neighboring Bozeman. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends.`,
+    hubIntro: `Livingston is a small city of 8,040 residents at the mouth of Paradise Valley in Park County, serving as the original gateway to Yellowstone National Park since the Northern Pacific Railroad first brought tourists here in the 1880s. Whether you're considering a move or planning a visit, this guide covers everything you need to know \u2014 from <a href="/montana-towns/livingston/cost-of-living/">housing costs</a> and <a href="/montana-towns/livingston/jobs/">job opportunities</a> to <a href="/montana-towns/livingston/fishing/">world-class fly fishing</a> and a <a href="/montana-towns/livingston/weekend-itinerary/">weekend itinerary</a> for first-time visitors.\n\nSitting at 4,501 feet where the Yellowstone River exits the Absaroka Range, Livingston pairs a well-preserved historic downtown with a vibrant arts and literary community \u2014 home over the years to writers like Tom McGuane, Jim Harrison, and Tim Cahill. The north entrance of Yellowstone is about 60 miles south through Paradise Valley, Chico Hot Springs is 21 miles away, and Bridger Bowl ski area is just 19 miles to the west. With 106 recreation sites within 30 miles, including 12 trailheads, 40 lakes, and the Yellowstone River flowing right through town, Livingston offers outdoor access that rivals cities many times its size.\n\nAt an affordability ratio of 7.8, Livingston is more expensive than Montana\u2019s larger cities but far more accessible than neighboring Bozeman. Below you'll find a complete profile including cost of living data, school information, climate details, and housing market trends.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -953,7 +953,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Livingston, Montana',
         metaTitle: 'Fishing Near Livingston, Montana \u2014 Yellowstone River & More | Treasure State',
-        metaDescription: 'Fishing near Livingston on the Yellowstone River, spring creeks, and 145 mountain lakes. Legendary dry-fly water, Dan Bailey\u2019s, and seasonal tips.',
+        metaDescription: 'Fishing near Livingston on the Yellowstone River, spring creeks, and 40 mountain lakes within 30 miles. Legendary dry-fly water, Dan Bailey\u2019s, and seasonal tips.',
         description: 'World-class fly fishing near Livingston on the Yellowstone River, Paradise Valley spring creeks, and 40 mountain lakes within 30 miles.',
         icon: '\uD83C\uDFA3',
       },
@@ -974,7 +974,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'How far is Livingston from Yellowstone National Park?',
-        answer: "Livingston is 44 miles from the north entrance of Yellowstone National Park at Gardiner, about a 55-minute drive south through Paradise Valley along the Yellowstone River. The west entrance at West Yellowstone is 74 miles away. Livingston was the original gateway to Yellowstone when the Northern Pacific Railroad first brought tourists in the 1880s.",
+        answer: "Livingston is about 60 miles from the north entrance of Yellowstone National Park at Gardiner, roughly a 1-hour drive south through Paradise Valley along the Yellowstone River. The west entrance at West Yellowstone is 74 miles away. Livingston was the original gateway to Yellowstone when the Northern Pacific Railroad first brought tourists in the 1880s.",
       },
       {
         question: 'Is Livingston a good place to live?',
@@ -982,7 +982,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What outdoor recreation is near Livingston?',
-        answer: "Livingston has 106 recreation sites within 30 miles, including 12 trailheads, 40 lakes, 2 fishing access sites, and 2 hot springs. Yellowstone National Park is 44 miles south. Chico Hot Springs (21 miles) is a historic resort in Paradise Valley. Bridger Bowl (19 miles) and Big Sky Resort (48 miles) provide skiing. The Yellowstone River flows through town for year-round fly fishing.",
+        answer: "Livingston has 106 recreation sites within 30 miles, including 12 trailheads, 40 lakes, 2 fishing access sites, and 2 hot springs. Yellowstone National Park's north entrance at Gardiner is about 60 miles south. Chico Hot Springs (21 miles) is a historic resort in Paradise Valley. Bridger Bowl (19 miles) and Big Sky Resort (48 miles) provide skiing. The Yellowstone River flows through town for year-round fly fishing.",
       },
       {
         question: 'Why is Livingston so windy?',
@@ -994,7 +994,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'Is there good fishing near Livingston?',
-        answer: "Livingston is one of Montana\u2019s premier fly-fishing destinations. The Yellowstone River flows through town and is blue-ribbon trout water for its entire length through Paradise Valley. Dan Bailey\u2019s Fly Shop, founded in 1938, helped put Livingston on the fly-fishing map. The Boulder River (27 miles), Gallatin River (31 miles), and 145 mountain lakes add variety. Seven fishing access sites provide public river entry.",
+        answer: "Livingston is one of Montana\u2019s premier fly-fishing destinations. The Yellowstone River flows through town and is blue-ribbon trout water for its entire length through Paradise Valley. Dan Bailey\u2019s Fly Shop, founded in 1938, helped put Livingston on the fly-fishing map. The Boulder River (27 miles), Gallatin River (31 miles), and 40 mountain lakes within 30 miles add variety. Two fishing access sites within 30 miles provide public river entry.",
       },
       {
         question: 'What is the housing market like in Livingston?',
@@ -1011,7 +1011,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   'red-lodge': {
-    hubIntro: `Red Lodge is a small mountain town of 2,399 residents in Carbon County, sitting at 5,568 feet elevation at the base of the Beartooth Mountains. Best known as the northern gateway to the Beartooth Highway\u2009—\u2009one of America's most spectacular alpine drives\u2009—\u2009Red Lodge blends Old West heritage with year-round outdoor recreation.\n\nThe town lies 60 miles southwest of Billings and serves as the launching point for the 68-mile Beartooth Highway (US-212), which climbs to 10,947 feet before descending to the northeast entrance of Yellowstone National Park. Red Lodge Mountain ski area is just 4 miles from downtown, the Absaroka-Beartooth Wilderness begins 15 miles away, and there are 200 recreation sites within 30 miles including 149 lakes, 12 trailheads, and 15 fishing access points.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `Red Lodge is a small mountain town of approximately 2,700 residents in Carbon County, sitting at 5,568 feet elevation at the base of the Beartooth Mountains. Best known as the northern gateway to the Beartooth Highway\u2009—\u2009one of America's most spectacular alpine drives\u2009—\u2009Red Lodge blends Old West heritage with year-round outdoor recreation.\n\nThe town lies 60 miles southwest of Billings and serves as the launching point for the 68-mile Beartooth Highway (US-212), which climbs to 10,947 feet before descending to the northeast entrance of Yellowstone National Park. Red Lodge Mountain ski area is just 4 miles from downtown, the Absaroka-Beartooth Wilderness begins 15 miles away, and there are 200 recreation sites within 30 miles including 149 lakes, 12 trailheads, and 15 fishing access points.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -1054,7 +1054,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Red Lodge, Montana',
         metaTitle: 'Hiking Near Red Lodge, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Red Lodge: 13 trailheads, Absaroka-Beartooth Wilderness, Beartooth Highway alpine trails. Trail guides and conditions.',
+        metaDescription: 'Best hikes near Red Lodge: 12 trailheads within 30 miles, Absaroka-Beartooth Wilderness, Beartooth Highway alpine trails. Trail guides and conditions.',
         description: 'The best trails and hikes near Red Lodge\u2009\u2014\u2009from Beartooth Highway alpine lakes to wilderness adventures.',
         icon: '\uD83E\uDD7E',
       },
@@ -1063,7 +1063,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Red Lodge, Montana',
         metaTitle: 'Fishing Near Red Lodge, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Red Lodge: 23 fishing access sites, 255 lakes, Rock Creek, Stillwater River. Species, access, and seasonal guides.',
+        metaDescription: 'Fishing near Red Lodge: 15 fishing access sites, 149 lakes within 30 miles, Rock Creek, Stillwater River. Species, access, and seasonal guides.',
         description: 'Complete fishing guide for Red Lodge\u2009\u2014\u2009from Rock Creek trout to high-alpine Beartooth lakes.',
         icon: '\uD83C\uDFA3',
       },
@@ -1206,7 +1206,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What are winters like in Hamilton?',
-        answer: "Hamilton has relatively mild winters for Montana at 3,573 feet elevation. January averages 40\u00B0F highs and 22\u00B0F lows. The valley receives moderate snow but significantly less than mountain communities like Big Sky or West Yellowstone. Lost Trail Powder Mountain (40 miles south) and Discovery Ski Area (43 miles east) provide nearby skiing. The Bitterroot Valley's east\u2013west orientation allows some winter sun.",
+        answer: "Hamilton has relatively mild winters for Montana at 3,573 feet elevation. January averages 40\u00B0F highs and 22\u00B0F lows. The valley receives moderate snow but significantly less than mountain communities like Big Sky or West Yellowstone. Lost Trail Powder Mountain (62 miles south) and Discovery Ski Area (59 miles east) provide nearby skiing. The Bitterroot Valley's east\u2013west orientation allows some winter sun.",
       },
       {
         question: 'What is the job market like in Hamilton?',
@@ -1231,7 +1231,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   'west-yellowstone': {
-    hubIntro: `West Yellowstone is a small gateway community of 1,272 year-round residents in Gallatin County, sitting at 6,667 feet elevation\u2009\u2014\u2009directly at the west entrance of Yellowstone National Park. As one of the most visited entry points to America's first national park, the town's economy and identity are built almost entirely around Yellowstone tourism.\n\nDespite its small size, West Yellowstone draws millions of visitors annually. The west entrance to Yellowstone is just 1 mile from downtown, and the town serves as a year-round basecamp with world-class snowmobiling and cross-country skiing in winter. With 49 recreation sites within 30 miles including Yellowstone itself and 10 lakes, the area offers extraordinary natural diversity.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
+    hubIntro: `West Yellowstone is a small gateway community of 1,202 year-round residents in Gallatin County, sitting at 6,667 feet elevation\u2009\u2014\u2009directly at the west entrance of Yellowstone National Park. As one of the most visited entry points to America's first national park, the town's economy and identity are built almost entirely around Yellowstone tourism.\n\nDespite its small size, West Yellowstone draws millions of visitors annually. The west entrance to Yellowstone is just 1 mile from downtown, and the town serves as a year-round basecamp with world-class snowmobiling and cross-country skiing in winter. With 49 recreation sites within 30 miles including Yellowstone itself and 10 lakes, the area offers extraordinary natural diversity.\n\nBelow you'll find a complete profile including cost of living data, school information, climate details, and housing market trends. For deeper coverage, explore our dedicated guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -1274,7 +1274,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near West Yellowstone, Montana',
         metaTitle: 'Hiking Near West Yellowstone, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near West Yellowstone: 20 trailheads, Yellowstone backcountry, Lee Metcalf Wilderness. Trail guides for the Yellowstone gateway.',
+        metaDescription: 'Best hikes near West Yellowstone: 13 trailheads within 30 miles, Yellowstone backcountry, Lee Metcalf Wilderness. Trail guides for the Yellowstone gateway.',
         description: 'The best trails and hikes near West Yellowstone\u2009\u2014\u2009from Yellowstone geyser basins to wilderness peaks.',
         icon: '\uD83E\uDD7E',
       },
@@ -1283,7 +1283,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near West Yellowstone, Montana',
         metaTitle: 'Fishing Near West Yellowstone, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near West Yellowstone: Madison River, Yellowstone rivers, 37 lakes. World-class fly fishing species, access, and seasonal guides.',
+        metaDescription: 'Fishing near West Yellowstone: Madison River, Yellowstone rivers, 10 lakes within 30 miles. World-class fly fishing species, access, and seasonal guides.',
         description: 'Complete fishing guide for West Yellowstone\u2009\u2014\u2009Madison River, Yellowstone Park waters, and backcountry lakes.',
         icon: '\uD83C\uDFA3',
       },
@@ -1312,11 +1312,11 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What is the job market like in West Yellowstone?',
-        answer: "West Yellowstone has just 0.9% unemployment but extreme seasonality. Tourism and hospitality dominate, with the population swelling from 1,272 to several thousand during summer. Most jobs are in lodging, restaurants, guiding, and park services. Year-round employment is available in the school district, government, and some outfitting businesses. Labor force participation is high at 75.1%, reflecting the working nature of this small community.",
+        answer: "West Yellowstone has just 0.9% unemployment but extreme seasonality. Tourism and hospitality dominate, with the population swelling from 1,202 to several thousand during summer. Most jobs are in lodging, restaurants, guiding, and park services. Year-round employment is available in the school district, government, and some outfitting businesses. Labor force participation is high at 75.1%, reflecting the working nature of this small community.",
       },
       {
         question: 'Can you live in West Yellowstone year-round?',
-        answer: "Yes, about 1,272 people live in West Yellowstone year-round. Winter living requires cold tolerance (regular subzero temperatures), a reliable vehicle, and acceptance that many businesses close from November to mid-December and again from March to April during shoulder seasons. The town has a grocery store, schools, medical clinic, and essential services. Many residents enjoy the quiet winter months and the snowmobiling and skiing access.",
+        answer: "Yes, about 1,202 people live in West Yellowstone year-round. Winter living requires cold tolerance (regular subzero temperatures), a reliable vehicle, and acceptance that many businesses close from November to mid-December and again from March to April during shoulder seasons. The town has a grocery store, schools, medical clinic, and essential services. Many residents enjoy the quiet winter months and the snowmobiling and skiing access.",
       },
       {
         question: 'What fishing is available near West Yellowstone?',
@@ -1341,7 +1341,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   'big-sky': {
-    hubIntro: `Big Sky is an unincorporated resort community of 3,591 residents in Gallatin County, centered around Big Sky Resort\u2009\u2014\u2009one of the largest ski areas in North America with 5,800 skiable acres. Sitting at 6,319 feet in the Madison Range along the Gallatin River canyon, Big Sky combines world-class alpine recreation with a mountain lifestyle that draws visitors and residents from around the world.\n\nBig Sky sits 45 miles south of Bozeman on US-191, roughly midway between Bozeman and Yellowstone's north entrance. The resort's 4,350 feet of vertical drop and 300+ inches of annual snowfall make it a premier winter destination, while summer brings hiking, mountain biking, golf, and fly fishing. With 105 recreation sites within 30 miles, including 2 wilderness areas, 3 hot springs, and 23 trailheads, the area offers extraordinary year-round outdoor access.\n\nBelow you'll find a complete profile including cost of living data, housing market trends, and outdoor recreation guides.`,
+    hubIntro: `Big Sky is an unincorporated resort community of 3,591 residents in Gallatin County, centered around Big Sky Resort\u2009\u2014\u2009one of the largest ski areas in North America with 5,800 skiable acres. Sitting at 6,319 feet in the Madison Range along the Gallatin River canyon, Big Sky combines world-class alpine recreation with a mountain lifestyle that draws visitors and residents from around the world.\n\nBig Sky sits 45 miles south of Bozeman on US-191, with Yellowstone's north entrance at Gardiner about 35 miles farther south. The resort's 4,350 feet of vertical drop and 300+ inches of annual snowfall make it a premier winter destination, while summer brings hiking, mountain biking, golf, and fly fishing. With 105 recreation sites within 30 miles, including 2 wilderness areas, 3 hot springs, and 23 trailheads, the area offers extraordinary year-round outdoor access.\n\nBelow you'll find a complete profile including cost of living data, housing market trends, and outdoor recreation guides.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -1384,7 +1384,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Big Sky, Montana',
         metaTitle: 'Hiking Near Big Sky, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Big Sky: 42 trailheads, Lee Metcalf Wilderness, Gallatin Canyon. Trail guides for Montana\'s premier mountain resort.',
+        metaDescription: 'Best hikes near Big Sky: 23 trailheads within 30 miles, Lee Metcalf Wilderness, Gallatin Canyon. Trail guides for Montana\'s premier mountain resort.',
         description: 'The best trails and hikes near Big Sky\u2009\u2014\u2009from alpine lake scrambles to Gallatin Canyon classics.',
         icon: '\uD83E\uDD7E',
       },
@@ -1393,7 +1393,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Big Sky, Montana',
         metaTitle: 'Fishing Near Big Sky, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Big Sky: Gallatin River, Madison River, 75 lakes. World-class fly fishing guides, species, and access points.',
+        metaDescription: 'Fishing near Big Sky: Gallatin River, Madison River, 18 lakes within 30 miles. World-class fly fishing guides, species, and access points.',
         description: 'Complete fishing guide for Big Sky\u2009\u2014\u2009Gallatin River, Madison River, and high-alpine lakes.',
         icon: '\uD83C\uDFA3',
       },
@@ -1458,7 +1458,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Cost of Living',
         h1: 'Cost of Living in Miles City, Montana',
         metaTitle: 'Cost of Living in Miles City, Montana (2026) | Treasure State',
-        metaDescription: 'What does it cost to live in Miles City? Median home value $229K, rent $750/mo, income $61K. Montana\'s most affordable cities with an affordability ratio of 3.8.',
+        metaDescription: 'What does it cost to live in Miles City? Median home value $229K, rent $750/mo, income $61K. Affordability ratio 3.8. Eastern Montana ranching hub.',
         description: 'A detailed breakdown of what it costs to live in Miles City\u2009\u2014\u2009housing, income, affordability, and why it\'s one of Montana\'s best values.',
         icon: '\uD83D\uDCB0',
       },
@@ -1467,7 +1467,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Housing Market',
         h1: 'Miles City, Montana Housing Market',
         metaTitle: 'Miles City, Montana Housing Market (2026) | Treasure State',
-        metaDescription: 'Miles City housing market: median home value $229K, rent $750/mo, 53 listings. Market data for Montana\'s most affordable city.',
+        metaDescription: 'Miles City housing market: median home value $229K, rent $750/mo, 53 listings. Affordable eastern Montana ranching hub.',
         description: 'Current housing market data for Miles City including home values, rental rates, inventory, and market analysis.',
         icon: '\uD83C\uDFE0',
       },
@@ -1723,7 +1723,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Dillon, Montana',
         metaTitle: 'Fishing Near Dillon, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Dillon: Beaverhead River blue-ribbon trout, Big Hole River, 14 fishing access sites, 24 lakes. Species, access, and seasonal guides.',
+        metaDescription: 'Fishing near Dillon: Beaverhead River blue-ribbon trout, Big Hole River, 12 fishing access sites, 24 lakes. Species, access, and seasonal guides.',
         description: 'Complete fishing guide for Dillon\u2009\u2014\u2009from the legendary Beaverhead River to Pioneer Mountain alpine lakes.',
         icon: '\uD83C\uDFA3',
       },
@@ -1752,7 +1752,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What is the University of Montana Western?',
-        answer: "The University of Montana Western (UMW) is a public university in Dillon offering bachelor's degrees through its distinctive Experience One program\u2009\u2014\u2009students take one course at a time in intensive 18-day blocks rather than juggling multiple classes. This approach emphasizes hands-on, experiential learning. UMW has about 1,600 students and is known for its education, equestrian studies, natural horsemanship, environmental science, and outdoor recreation programs. The campus is a significant economic anchor for Dillon.",
+        answer: "The University of Montana Western (UMW) is a public university in Dillon offering bachelor's degrees through its distinctive Experience One program\u2009\u2014\u2009students take one course at a time in intensive 18-day blocks rather than juggling multiple classes. This approach emphasizes hands-on, experiential learning. UMW has about 1,284 students and is known for its education, equestrian studies, natural horsemanship, environmental science, and outdoor recreation programs. The campus is a significant economic anchor for Dillon.",
       },
       {
         question: 'What are winters like in Dillon?',
@@ -1768,7 +1768,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'What fishing rivers are near Dillon?',
-        answer: "Dillon is uniquely positioned near four of Montana's legendary rivers. The Beaverhead River runs through town (0 miles)\u2009\u2014\u2009a blue-ribbon brown and rainbow trout fishery. The Big Hole River (44 miles) is Montana's last river supporting fluvial Arctic grayling. The Madison River near Ennis (45 miles) is one of the most famous trout rivers in the world. The Jefferson River (51 miles) offers excellent float fishing. Combined with 14 fishing access sites and 24 alpine lakes, Dillon is arguably Montana's best-positioned fishing basecamp.",
+        answer: "Dillon is uniquely positioned near four of Montana's legendary rivers. The Beaverhead River runs through town (0 miles)\u2009\u2014\u2009a blue-ribbon brown and rainbow trout fishery. The Big Hole River (44 miles) is Montana's last river supporting fluvial Arctic grayling. The Madison River near Ennis (45 miles) is one of the most famous trout rivers in the world. The Jefferson River (51 miles) offers excellent float fishing. Combined with 12 fishing access sites and 24 alpine lakes, Dillon is arguably Montana's best-positioned fishing basecamp.",
       },
       {
         question: 'What events happen in Dillon?',
@@ -1854,7 +1854,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
       },
       {
         question: 'How far is Columbia Falls from Glacier National Park?',
-        answer: "Columbia Falls is 17 miles (about 25 minutes) from the west entrance of Glacier National Park at West Glacier. Going-to-the-Sun Road, Apgar Village, and Lake McDonald are all within a 30-minute drive. The North Fork Road to Polebridge and the park\u2019s remote northwest corner begins in Columbia Falls. This proximity\u2009\u2014\u2009closer than Kalispell (32 miles) or Whitefish (25 miles)\u2009\u2014\u2009makes Columbia Falls the most convenient gateway town for daily park visits.",
+        answer: "Columbia Falls is 17 miles (about 25 minutes) from the west entrance of Glacier National Park at West Glacier. Going-to-the-Sun Road, Apgar Village, and Lake McDonald are all within a 30-minute drive. The North Fork Road to Polebridge and the park\u2019s remote northwest corner begins in Columbia Falls. Columbia Falls and Whitefish are both about 17 miles from the west entrance, among the closest gateway towns for daily park visits.",
       },
       {
         question: 'What happened to the Columbia Falls Aluminum Company?',
@@ -1935,7 +1935,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Anaconda, Montana',
         metaTitle: 'Hiking Near Anaconda, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Anaconda: 43 trailheads, Anaconda-Pintler Wilderness, Lost Creek Falls, Continental Divide. Trail guides and difficulty ratings.',
+        metaDescription: 'Best hikes near Anaconda: 9 trailheads, Anaconda-Pintler Wilderness, Lost Creek Falls, Continental Divide. Trail guides and difficulty ratings.',
         description: 'The best trails and hikes near Anaconda \u2014 from Pintler Wilderness alpine lakes to Lost Creek State Park waterfalls.',
         icon: '\uD83E\uDD7E',
       },
@@ -1944,7 +1944,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Anaconda, Montana',
         metaTitle: 'Fishing Near Anaconda, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Anaconda: Georgetown Lake, 86 lakes, 7 access sites, 5 rivers. Trout, kokanee, and ice fishing in the Pintler Range.',
+        metaDescription: 'Fishing near Anaconda: Georgetown Lake, 48 lakes, 2 access sites, 5 rivers. Trout, kokanee, and ice fishing in the Pintler Range.',
         description: 'Complete fishing guide for Anaconda \u2014 from Georgetown Lake kokanee to backcountry Pintler Wilderness cutthroat.',
         icon: '\uD83C\uDFA3',
       },
@@ -2045,7 +2045,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Bigfork, Montana',
         metaTitle: 'Hiking Near Bigfork, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Bigfork: Jewel Basin (35+ miles of trails), 69 trailheads, 29 waterfalls, Swan Range wilderness. Trail guides and conditions.',
+        metaDescription: 'Best hikes near Bigfork: Jewel Basin (35+ miles of trails), 25 trailheads within 30 miles, Swan Range wilderness. Trail guides and conditions.',
         description: 'The best trails and hikes near Bigfork \u2014 from Jewel Basin alpine lakes to Swan River nature walks and Flathead Lake shoreline paths.',
         icon: '\uD83E\uDD7E',
       },
@@ -2054,7 +2054,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Bigfork, Montana',
         metaTitle: 'Fishing Near Bigfork, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Bigfork: Flathead Lake, Swan River, 72 lakes, 11 access sites. Lake trout, bull trout, cutthroat, and kokanee salmon.',
+        metaDescription: 'Fishing near Bigfork: Flathead Lake, Swan River, 32 lakes and 10 access sites within 30 miles. Lake trout, bull trout, cutthroat, and kokanee salmon.',
         description: 'Complete fishing guide for Bigfork \u2014 from Flathead Lake mackinaw to Swan River fly fishing and high-alpine lake trout.',
         icon: '\uD83C\uDFA3',
       },
@@ -2155,7 +2155,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Deer Lodge, Montana',
         metaTitle: 'Hiking Near Deer Lodge, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Deer Lodge: 47 trailheads, Anaconda-Pintler Wilderness (3 mi), Flint Creek Range. Trail guides and backcountry access.',
+        metaDescription: 'Best hikes near Deer Lodge: 10 trailheads, Anaconda-Pintler Wilderness (3 mi), Flint Creek Range. Trail guides and backcountry access.',
         description: 'The best trails and hikes near Deer Lodge \u2014 from Pintler Wilderness alpine lakes to Flint Creek Range ridge walks.',
         icon: '\uD83E\uDD7E',
       },
@@ -2164,7 +2164,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Deer Lodge, Montana',
         metaTitle: 'Fishing Near Deer Lodge, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Deer Lodge: Clark Fork River, Georgetown Lake, 91 lakes, 8 access sites. Trout, kokanee, and high-mountain cutthroat.',
+        metaDescription: 'Fishing near Deer Lodge: Clark Fork River, Georgetown Lake, 52 lakes, 3 access sites. Trout, kokanee, and high-mountain cutthroat.',
         description: 'Complete fishing guide for Deer Lodge \u2014 from Clark Fork River trout to Georgetown Lake kokanee and Pintler Wilderness backcountry lakes.',
         icon: '\uD83C\uDFA3',
       },
@@ -2265,7 +2265,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Choteau, Montana',
         metaTitle: 'Hiking Near Choteau, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Choteau: Rocky Mountain Front, Bob Marshall Wilderness, Ear Mountain, 5 trailheads. Trail guides and backcountry access.',
+        metaDescription: 'Best hikes near Choteau: Rocky Mountain Front, Bob Marshall Wilderness, Ear Mountain, 1 trailhead. Trail guides and backcountry access.',
         description: 'The best trails and hikes near Choteau \u2014 from Rocky Mountain Front day hikes to Bob Marshall Wilderness expeditions.',
         icon: '\uD83E\uDD7E',
       },
@@ -2274,7 +2274,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Choteau, Montana',
         metaTitle: 'Fishing Near Choteau, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Choteau: Sun River, Teton River, 29 lakes, Bob Marshall Wilderness streams. Front Range trout fishing guide.',
+        metaDescription: 'Fishing near Choteau: Sun River, Teton River, 8 lakes, Bob Marshall Wilderness streams. No formal FWP fishing access within 30 miles. Front Range trout fishing guide.',
         description: 'Complete fishing guide for Choteau \u2014 from Teton River and Sun River trout to backcountry streams in the Bob Marshall Wilderness.',
         icon: '\uD83C\uDFA3',
       },
@@ -2375,7 +2375,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Libby, Montana',
         metaTitle: 'Hiking Near Libby, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Libby: Kootenai Falls, Cabinet Mountains Wilderness, Ross Creek Cedars, 6 trailheads. Trail guides.',
+        metaDescription: 'Best hikes near Libby: Kootenai Falls, Cabinet Mountains Wilderness, Ross Creek Cedars, 4 trailheads. Trail guides.',
         description: 'The best trails and hikes near Libby \u2014 from Kootenai Falls to Cabinet Mountains Wilderness and Ross Creek Cedars.',
         icon: '\uD83E\uDD7E',
       },
@@ -2384,7 +2384,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Libby, Montana',
         metaTitle: 'Fishing Near Libby, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Libby: Kootenai River world-class trout, Lake Koocanusa, 17 lakes. Fly fishing guide.',
+        metaDescription: 'Fishing near Libby: Kootenai River world-class trout, Lake Koocanusa, 1 lake. Fly fishing guide.',
         description: 'Complete fishing guide for Libby \u2014 Kootenai River trout, Lake Koocanusa, and backcountry streams.',
         icon: '\uD83C\uDFA3',
       },
@@ -2494,7 +2494,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Glendive, Montana',
         metaTitle: 'Fishing Near Glendive, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Glendive: Yellowstone River paddlefish, walleye, catfish. 6 lakes. Eastern Montana fishing guide.',
+        metaDescription: 'Fishing near Glendive: Yellowstone River paddlefish, walleye, catfish. 3 lakes within 30 miles. Eastern Montana fishing guide.',
         description: 'Complete fishing guide for Glendive \u2014 Yellowstone River paddlefish, warmwater species, and eastern Montana waters.',
         icon: '\uD83C\uDFA3',
       },
@@ -2552,7 +2552,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
     ],
   },
   'lewistown': {
-    hubIntro: `Lewistown is a town of 5,952 residents in Fergus County, sitting at 4,121 feet elevation in the exact geographic center of Montana. Founded in 1879 by Métis settlers, Lewistown sits at the intersection of U.S. Highway 87 and U.S. Route 191, roughly 125 miles from both Great Falls and Billings. The town serves as the regional hub for central Montana, with distinctive stone architecture built by Croatian stonemasons and a downtown that preserves its frontier character.\n\nBig Spring Creek, a blue-ribbon trout stream fed by one of the largest springs in the West, flows through town. The Charlie Russell Chew Choo dinner train travels across historic trestles through pristine countryside. The Big Snowy Mountains and Judith Mountains rise to the south and east. Bear Gulch Pictographs and the American Prairie Reserve are within day-trip range. Within 30 miles there are 29 recreation sites including 17 campgrounds, 3 lakes, 2 museums, 3 nature reserves, 1 hot spring (including Gigantic Warm Spring 8 miles away), 1 state park, and 2 golf courses. The Central Montana Museum and Central Montana Historical Society preserve the region\u2019s heritage.\n\nBelow you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
+    hubIntro: `Lewistown is a town of 6,204 residents in Fergus County, sitting at 4,121 feet elevation in the exact geographic center of Montana. Founded in 1879 by Métis settlers, Lewistown sits at the intersection of U.S. Highway 87 and U.S. Route 191, roughly 125 miles from both Great Falls and Billings. The town serves as the regional hub for central Montana, with distinctive stone architecture built by Croatian stonemasons and a downtown that preserves its frontier character.\n\nBig Spring Creek, a blue-ribbon trout stream fed by one of the largest springs in the West, flows through town. The Charlie Russell Chew Choo dinner train travels across historic trestles through pristine countryside. The Big Snowy Mountains and Judith Mountains rise to the south and east. Bear Gulch Pictographs and the American Prairie Reserve are within day-trip range. Within 30 miles there are 29 recreation sites including 17 campgrounds, 3 lakes, 2 museums, 3 nature reserves, 1 hot spring (including Gigantic Warm Spring 8 miles away), 1 state park, and 2 golf courses. The Central Montana Museum and Central Montana Historical Society preserve the region\u2019s heritage.\n\nBelow you\u2019ll find guides covering cost of living, schools, hiking, fishing, and more.`,
     guides: [
       {
         topic: 'cost-of-living',
@@ -2705,7 +2705,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Hiking & Trails',
         h1: 'Hiking Near Three Forks, Montana',
         metaTitle: 'Hiking Near Three Forks, Montana (2026) | Treasure State',
-        metaDescription: 'Best hikes near Three Forks: Missouri Headwaters trails, Lewis & Clark Caverns, Madison Buffalo Jump, 28 trailheads. Trail guides and access.',
+        metaDescription: 'Best hikes near Three Forks: Missouri Headwaters trails, Lewis & Clark Caverns, Madison Buffalo Jump, 14 trailheads. Trail guides and access.',
         description: 'The best trails and hikes near Three Forks \u2014 from headwaters river walks to cavern hikes and Bridger Range trails.',
         icon: '\uD83E\uDD7E',
       },
@@ -2714,7 +2714,7 @@ export const clusterConfigs: Record<string, ClusterConfig> = {
         title: 'Fishing',
         h1: 'Fishing Near Three Forks, Montana',
         metaTitle: 'Fishing Near Three Forks, Montana (2026) | Treasure State',
-        metaDescription: 'Fishing near Three Forks: Jefferson, Madison, and Gallatin Rivers at the Missouri headwaters. Blue-ribbon trout water and 59 lakes.',
+        metaDescription: 'Fishing near Three Forks: Jefferson, Madison, and Gallatin Rivers at the Missouri headwaters. Blue-ribbon trout water and 13 lakes.',
         description: 'Complete fishing guide for Three Forks \u2014 from Missouri headwaters trout to Madison River blue-ribbon fly fishing.',
         icon: '\uD83C\uDFA3',
       },

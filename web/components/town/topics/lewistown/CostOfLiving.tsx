@@ -63,7 +63,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
   return (
     <article className="content-section">
       <p>
-        {townName} is a town of roughly 5,952 people and the county seat of Fergus County,
+        {townName} is a town of roughly 6,204 people and the county seat of Fergus County,
         sitting at 4,121 feet in the exact geographic center of Montana along US-87 and US-191 —
         about 125 miles from both Great Falls and Billings. Big Spring Creek flows through town,
         with the Big Snowy Mountains and Judith Mountains rising to the south and east. The

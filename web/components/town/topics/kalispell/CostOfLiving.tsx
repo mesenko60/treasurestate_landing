@@ -64,8 +64,8 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
     <article className="content-section">
       <p>
         {townName} sits at the heart of Montana's Flathead Valley, just 25 miles from the west entrance
-        of Glacier National Park. With a population of roughly 29,886 in Flathead County, it serves as
-        the commercial hub for northwest Montana — and its cost of living reflects a town caught between
+        of Glacier National Park. With a population of roughly 29,886, it serves as
+        the commercial hub of Montana's Flathead Valley — and its cost of living reflects a town caught between
         a tourism-driven economy and wages that haven't kept pace with soaring housing demand. This guide
         breaks down housing, income, affordability, and employment data so you know what it actually costs
         to live here.

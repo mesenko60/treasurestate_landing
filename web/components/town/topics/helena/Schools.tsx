@@ -28,8 +28,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
     <article className="content-section">
       <p>
         {townName} — Montana's state capital — offers a well-regarded K-12 education system anchored
-        by {schoolDistrict ?? 'Helena Public Schools'}, complemented by Carroll College, the city's
-        sole institution of higher education. With a population of {fmt(population)} and a stable
+        by {schoolDistrict ?? 'Helena Public Schools'}, complemented by Carroll College and Helena College University of Montana. With a population of {fmt(population)} and a stable
         economy rooted in state government and healthcare, {townName}'s schools benefit from a
         community that values public investment in education. The two-high-school structure, strong
         graduation rates, and career-focused programs make the district a genuine draw for families

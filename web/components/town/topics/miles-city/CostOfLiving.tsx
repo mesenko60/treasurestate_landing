@@ -114,7 +114,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         The affordability ratio{'\u2014'}median home value divided by median household income{'\u2014'}is{' '}
         {h?.affordabilityRatio ?? '\u2014'}. The commonly cited national benchmark for a healthy
         housing market is 3.0 to 5.0. At {h?.affordabilityRatio ?? 'this level'}, {townName} sits
-        squarely in the affordable zone{'\u2014'}comparable to Great Falls (3.7) and dramatically better
+        squarely in the affordable zone{'\u2014'}comparable to Great Falls (5.1) and dramatically better
         than Bozeman (8.8), Whitefish (11.7), or even Helena (6.6). A household earning the median
         income can realistically purchase a median-priced home with a conventional mortgage and
         still have room in the budget.
@@ -194,7 +194,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
       <h2>How {townName} Compares</h2>
       <p>
         {townName}{'\u2019'}s most natural comparisons are other eastern Montana towns and Montana{'\u2019'}s
-        more affordable cities. Great Falls (affordability ratio 3.7) is the closest match in
+        more affordable cities. Great Falls (affordability ratio 5.1) is the closest match in
         price-to-income terms, though Great Falls is three times larger and has Malmstrom Air
         Force Base anchoring its economy. Billings (145 miles west) is the regional metropolis
         with far more amenities, restaurants, and flights{'\u2014'}but also higher housing costs.
@@ -213,7 +213,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
 
       <h2>Key Takeaways</h2>
       <ul>
-        <li>An affordability ratio of {h?.affordabilityRatio ?? '\u2014'} makes {townName} one of the most affordable hub cities in Montana{'\u2014'}a median-income household can realistically buy a median-priced home.</li>
+        <li>An affordability ratio of {h?.affordabilityRatio ?? '\u2014'} makes {townName} an affordable hub city in Montana{'\u2014'}a median-income household can realistically buy a median-priced home.</li>
         <li>Rents around {h?.zillowRent ? `$${fmt(h.zillowRent)}/mo` : '$750/mo'} are among the lowest in the state, and a {h?.vacancyRate ?? 10.6}% vacancy rate means renters have real options.</li>
         <li>The economy is built on agriculture, healthcare (Holy Rosary), and education (Miles Community College){'\u2014'}stable but not fast-growing.</li>
         <li>Montana{'\u2019'}s zero state sales tax offsets daily costs, and {townName}{'\u2019'}s low elevation keeps winters shorter than mountain towns, though summers run hot.</li>

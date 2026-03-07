@@ -63,7 +63,7 @@ export default function Housing({ townName, slug, housing }: Props) {
         {fmt(h?.totalHousingUnits ?? null)} total housing units where nearly half sit vacant or are
         used seasonally, only {fmt(h?.forSaleInventory ?? null)} homes are listed for sale at any
         given time, and short-term vacation rentals dominate the available stock. With Yellowstone's
-        busiest entrance one mile away and a year-round population of just 1,272, this is a market
+        busiest entrance one mile away and a year-round population of just 1,202, this is a market
         driven almost entirely by tourism investment and second-home demand rather than local housing
         needs. Whether you're buying, renting, or investing, this guide covers current values,
         inventory dynamics, and what makes {townName}'s market one of the most constrained and
@@ -87,7 +87,7 @@ export default function Housing({ townName, slug, housing }: Props) {
       <p>
         The Zillow Home Value Index puts {townName}'s typical home value at {fmtDollar(h?.zillowHomeValue ?? null)},
         while the median list price for currently active listings is {fmtDollar(h?.medianListPrice ?? null)}.
-        These are extraordinary numbers for a town of 1,272 year-round residents and reflect the
+        These are extraordinary numbers for a town of 1,202 year-round residents and reflect the
         premium buyers pay for proximity to Yellowstone National Park and the income-generating
         potential of vacation rental properties.
       </p>

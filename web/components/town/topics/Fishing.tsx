@@ -30,7 +30,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>At a Glance</h2>
       <ul>
         <li><strong>28 fishing access sites</strong> within 30 miles</li>
-        <li><strong>5 major rivers</strong> within driving distance</li>
+        <li><strong>3 signature rivers</strong> in the Missoula area</li>
         <li><strong>13 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, westslope cutthroat trout, bull trout</li>
         <li><strong>Closest river access:</strong> Clark Fork River, flows through downtown</li>
@@ -69,15 +69,6 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         fly season (late June) and the fall brown trout spawning run. Access is good
         throughout the valley, with numerous fishing access sites maintained by Montana
         Fish, Wildlife & Parks.
-      </p>
-
-      <h3>Rock Creek</h3>
-      <p>
-        Rock Creek enters the Clark Fork about 30 miles east of {townName} and is one of
-        Montana's most renowned small trout streams. Blue-ribbon status, wild fish,
-        and a narrow canyon setting make it a favorite of experienced fly anglers. The
-        lower reaches are accessible from I-90, while the upper stretches require a
-        longer drive on a gravel road. Catch-and-release regulations apply on some sections.
       </p>
 
       {rivers.length > 0 && (

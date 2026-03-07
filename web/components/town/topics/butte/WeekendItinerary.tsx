@@ -198,7 +198,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
       <p>
         <strong>Winter weekends:</strong> {townName} winters are cold at 5,741 feet, but the
         city's indoor attractions — museums, mansions, breweries, and restaurants — make a
-        winter weekend viable if you dress for it. Discovery Ski Area (25 miles west near
+        winter weekend viable if you dress for it. Discovery Ski Area (38 miles west near
         Anaconda) offers uncrowded runs and affordable lift tickets. Fairmont Hot Springs is
         especially appealing in winter, with steam rising from the outdoor pools against a
         snowy backdrop.

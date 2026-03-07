@@ -97,7 +97,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
       <h2>University of Montana Western{'\u2014'}Experience One</h2>
       <p>
         The University of Montana Western is what makes {townName}{'\u2019'}s education landscape
-        genuinely distinctive. With approximately 1,600 students, UM Western is a small
+        genuinely distinctive. With approximately 1,284 students, UM Western is a small
         public university with a national reputation built on a single innovation: Experience
         One block scheduling. Instead of juggling four or five courses simultaneously,
         students take one course at a time in intensive 18-day blocks. Each block is an

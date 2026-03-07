@@ -24,7 +24,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
     <article className="content-section">
       <p>
         A weekend in {townName} puts you at the foot of the Beartooth Mountains in a
-        former coal-mining town of 2,399 people that has reinvented itself around skiing,
+        former coal-mining town of 2,700 people that has reinvented itself around skiing,
         the Beartooth Highway, and Old West heritage. Downtown Broadway Avenue is lined
         with historic brick storefronts housing independent shops, galleries, restaurants,
         and bars that feel authentically Montana{'\u2014'}no chain stores, no manufactured

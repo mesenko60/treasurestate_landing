@@ -33,7 +33,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         park at 11,500 acres, dominates the landscape south of town. With{' '}
         <strong>7 viewpoints</strong> within 7 miles, <strong>3 campgrounds</strong>,{' '}
         <strong>1 nature reserve</strong>, <strong>1 state park</strong>,{' '}
-        and <strong>11 museums</strong>, {townName} offers a hiking experience unlike anywhere else in
+        and <strong>6 museums</strong> within 30 miles, {townName} offers a hiking experience unlike anywhere else in
         Montana{'\u2014'}open, arid, fossil-rich terrain where dinosaur bones erode from canyon walls.
         For the full town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>

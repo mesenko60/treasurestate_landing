@@ -63,7 +63,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
   return (
     <article className="content-section">
       <p>
-        {townName} is a former coal-mining town of roughly 2,399 people in Carbon County, tucked
+        {townName} is a former coal-mining town of roughly 2,700 people in Carbon County, tucked
         against the base of the Beartooth Mountains at 5,568 feet elevation. The Beartooth Highway
         {'\u2014'}one of America's most spectacular alpine drives{'\u2014'}begins just south of town and
         climbs to nearly 11,000 feet on its way to Yellowstone National Park's northeast entrance
@@ -92,7 +92,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         at {fmtDollar(h?.zillowHomeValue ?? null)} according to Zillow's Home Value Index
         {h?.zillowHomeValueDate ? ` as of ${new Date(h.zillowHomeValueDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}` : ''}.
         The U.S. Census Bureau's American Community Survey puts the figure at {fmtDollar(h?.medianHomeValue ?? null)},
-        reflecting the multi-year survey window. For a town of 2,399 people, these are remarkable
+        reflecting the multi-year survey window. For a town of 2,700 people, these are remarkable
         numbers{'\u2014'}driven by {townName}'s ski-resort proximity, Beartooth Highway tourism, and
         a second-home market fueled by buyers from Billings (60 miles northeast) and beyond.
       </p>
@@ -202,7 +202,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
         jobs at wages that align with its housing costs. Many {townName} residents commute to
         Billings for medical appointments, major shopping, and air travel (Billings Logan International
         Airport), underscoring how dependent the town remains on its larger neighbor for services
-        that a community of 2,399 cannot sustain independently.
+        that a community of 2,700 cannot sustain independently.
       </p>
       <p>
         Among Montana resort and gateway communities, {townName}'s affordability ratio of{' '}

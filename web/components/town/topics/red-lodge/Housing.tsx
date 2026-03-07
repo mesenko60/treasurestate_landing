@@ -59,7 +59,7 @@ export default function Housing({ townName, slug, housing }: Props) {
   return (
     <article className="content-section">
       <p>
-        {townName}'s housing market operates under resort-town dynamics in a community of just 2,399
+        {townName}'s housing market operates under resort-town dynamics in a community of just 2,700
         people. With {fmt(h?.totalHousingUnits ?? null)} total housing units, a vacancy rate of{' '}
         {h?.vacancyRate != null ? `${h.vacancyRate}%` : '\u2014'} (overwhelmingly seasonal and
         recreational properties), and only {fmt(h?.forSaleInventory ?? null)} active listings at any
