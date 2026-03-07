@@ -31,11 +31,25 @@ export default function Planners() {
           <h2>Thematic Travel Guides</h2>
           <p>Explore Montana through our curated travel guides designed to help you discover the state's most unique destinations and experiences.</p>
           
+          <div style={{ marginBottom: '2rem' }}>
+            <Link href="/planners/backroads-planner" style={{ textDecoration: 'none', display: 'block' }}>
+              <div className="planner-card" style={{ background: 'linear-gradient(135deg, #1a1e2e, #2d3348)', color: '#e0e4ec', border: '2px solid #3b82f6', textAlign: 'left' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem' }}>
+                  <span style={{ background: '#3b82f6', color: '#fff', fontSize: '0.7rem', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Interactive</span>
+                  <span style={{ background: '#27ae60', color: '#fff', fontSize: '0.7rem', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>New</span>
+                </div>
+                <h3 style={{ color: '#fff', margin: '0 0 0.5rem' }}>Backroads Travel Planner</h3>
+                <p style={{ color: '#a0a8b8', margin: '0 0 1rem' }}>Full-page interactive map with 13 scenic corridors, 850+ points of interest, and trip-building tools. Explore Montana&rsquo;s backroads your way.</p>
+                <span className="waitlist-btn" style={{ background: '#3b82f6', color: '#fff' }}>Open Planner →</span>
+              </div>
+            </Link>
+          </div>
+
           <div className="planners-grid">
             <Link href="/planners/montana-backroads" style={{ textDecoration: 'none' }}>
               <div className="planner-card">
-                <h3>Montana's Backroads</h3>
-                <p>Discover the hidden gems of Big Sky Country with our guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures.</p>
+                <h3>Montana's Backroads Guide</h3>
+                <p>Discover the hidden gems of Big Sky Country with our written guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures.</p>
                 <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
               </div>
             </Link>

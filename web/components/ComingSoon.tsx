@@ -5,12 +5,16 @@ export default function ComingSoon() {
     <section id="coming-soon" className="content-section planners-section">
       <h2>Montana Travel Planners</h2>
       <div className="planners-grid">
-        <Link href="/planners/montana-backroads" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <h3>Montana Backroads Travel Planner</h3>
+        <Link href="/planners/backroads-planner" className="planner-card" style={{ textDecoration: 'none', color: 'inherit', border: '2px solid #3b82f6' }}>
+          <div style={{ display: 'flex', gap: '6px', justifyContent: 'center', marginBottom: '8px' }}>
+            <span style={{ background: '#3b82f6', color: '#fff', fontSize: '0.65rem', padding: '2px 6px', borderRadius: '3px', fontWeight: 700, textTransform: 'uppercase' }}>Interactive</span>
+            <span style={{ background: '#27ae60', color: '#fff', fontSize: '0.65rem', padding: '2px 6px', borderRadius: '3px', fontWeight: 700, textTransform: 'uppercase' }}>New</span>
+          </div>
+          <h3>Backroads Travel Planner</h3>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/beaten_path_logo.png" alt="Off the Beaten Path Logo" style={{maxWidth:'202.5px', display:'block', margin:'0 auto 8px auto'}} />
-          <p>Map out true adventures off the beaten path across Montana&apos;s scenic backroads.</p>
-          <span className="waitlist-btn" style={{ pointerEvents: 'none' }}>EXPLORE NOW</span>
+          <p>Full-page interactive map with 13 scenic corridors, 850+ POIs, and trip-building tools.</p>
+          <span className="waitlist-btn" style={{ pointerEvents: 'none', background: '#3b82f6', color: '#fff' }}>OPEN PLANNER →</span>
         </Link>
         <Link href="/planners/hot-springs-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>Hot Springs Guide</h3>

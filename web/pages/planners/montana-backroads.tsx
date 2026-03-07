@@ -46,6 +46,14 @@ export default function MontanaBackroads() {
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <section className="content-section">
+            <div style={{ background: 'linear-gradient(135deg, #1a1e2e, #2d3348)', padding: '20px 24px', borderRadius: '12px', marginBottom: '1.5rem' }}>
+              <p style={{ color: '#a0a8b8', margin: '0 0 12px', fontSize: '0.92rem' }}>
+                Want to explore these routes on an interactive map? Try our full-page travel planner with 13 corridors and 850+ points of interest.
+              </p>
+              <Link href="/planners/backroads-planner" style={{ color: '#3b82f6', fontWeight: 700, fontSize: '0.95rem', textDecoration: 'none' }}>
+                Open Interactive Planner →
+              </Link>
+            </div>
             <h2>The Road Less Traveled</h2>
             <p>While the interstate highways offer the fastest routes between Montana's major cities, the true heart of the Treasure State is found along its dusty backroads, winding scenic byways, and remote mountain passes. These uncrowded routes take you through forgotten ghost towns, expansive agricultural valleys, and towering alpine landscapes that most visitors never see.</p>
 
