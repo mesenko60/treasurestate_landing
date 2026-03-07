@@ -47,6 +47,14 @@ export default function Planners() {
                 <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
               </div>
             </Link>
+
+            <Link href="/planners/campgrounds-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Campgrounds &amp; RV Parks</h3>
+                <p>Directory of 100+ campgrounds and RV parks across Montana — KOAs, state parks, national forest sites, and private camps with ratings and contact info.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
           </div>
         </section>
         <StaysCTA />
