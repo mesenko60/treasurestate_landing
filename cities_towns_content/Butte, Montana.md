@@ -12,15 +12,18 @@ Nestled in the grandeur of the Rocky Mountains of Southwest Montana, between Yel
 - **Elevation:** 5,824 ft
 - **Known For:** Rich mining history (The Richest Hill on Earth), National Historic Landmark District, Irish heritage, resilience, and outdoor recreation.
 - **Nearby Landmarks:** Our Lady of the Rockies, World Museum of Mining, Berkeley Pit, Granite Mountain Memorial Overlook, Continental Divide National Scenic Trail
-- **Fun Fact:** It is estimated that there are 10,000 miles of underground tunnels beneath the city.
+- **Fun Fact:** An estimated 10,000 miles of underground tunnels lie beneath Butte. At peak (1896), Butte produced 51% of U.S. copper. The 1917 Speculator Mine disaster killed 168 miners—deadliest hard-rock mining event in U.S. history. The Dumas Brothel operated ~1890–1982. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- Evel Knievel – Famed American stunt performer and entertainer.
-- Martha Jane Cannary (Calamity Jane) – Legendary American frontierswoman, scout, and acquaintance of Wild Bill Hickok, known for her adventurous life and appearances in Wild West shows. While not born in Butte, her adventurous spirit embodies the character of the region and she is a significant figure in the lore of the American West, which Butte is a part of.
-- The TV Series "1923" - Set in Butte, it portrays the challenges of the Dutton family during a period of hardship, including Prohibition and the Great Depression, reflecting the rugged and adventurous spirit of early 20th-century Montana.
+- **Evel Knievel** – Famed stunt performer, born in Butte. (Source: Grokipedia)
+- **Marcus Daly** – Irish-born miner who developed the Anaconda claim (1875); founded Anaconda Copper. (Source: Grokipedia)
+- **Frank Little** – IWW organizer lynched in Butte, August 1, 1917. (Source: Grokipedia)
+- **William A. Clark** – Copper magnate; the Copper King Mansion (1884–1888) was built for him. (Source: Grokipedia)
+- **Calamity Jane** – Legendary frontierswoman; her spirit embodies the region's lore. (Source: Grokipedia)
+- **"1923" (TV Series)** – Set in Butte; portrays the Dutton family during Prohibition and the Great Depression. (Source: Grokipedia)
 
 ---
 
@@ -41,7 +44,7 @@ Butte's economy, historically rooted in its rich mining heritage that once produ
 
 ## History & Heritage
 
-Butte, Montana, often referred to as "The Richest Hill on Earth," has a storied past deeply intertwined with the mining industry. Originally inhabited by Native American tribes, the area saw its first significant influx of settlers during the Montana Gold Rush in the 1860s. However, it was the discovery of vast copper deposits that truly shaped Butte's destiny. By the late 19th century, Butte had become one of the largest and most prosperous copper mining towns in the world. This boom attracted a diverse population of immigrants from Europe, particularly Ireland, as well as from Asia, creating a unique cultural melting pot. The city played a crucial role in the electrification of America, as copper was essential for conducting electricity. The wealth generated from mining led to the construction of impressive Victorian architecture, much of which still stands today. However, the mining industry also brought challenges, including labor disputes and environmental concerns. The legacy of mining is still visible in Butte, with historic mine headframes dotting the landscape and the Berkeley Pit, a former open-pit copper mine that is now a Superfund site. Today, Butte embraces its rich history while looking towards the future, with efforts to preserve its heritage and diversify its economy.
+Butte, Montana, "The Richest Hill on Earth," has a storied past. Marcus Daly arrived in 1876 and discovered rich copper sulfides underlying silver veins; by 1896 Butte produced 51% of U.S. copper. The district yielded over $22 billion in production from the 1880s to 1980s. Irish laborers comprised up to one-quarter of the population by 1900; ethnic enclaves included Dublin Gulch and Cork Town. The Butte Miners' Union formed in 1878. The 1917 Granite Mountain/Speculator Mine fire killed 168 miners. The Berkeley Pit opened in 1955; mining ceased in 1982. Butte-Silver Bow consolidated in 1977—Montana's first city-county merger. The Uptown Historic District encompasses nearly 6,000 contributing properties. Montana Resources' Continental Pit resumed operations in 1986. The World Museum of Mining, Dumas Brothel Museum, and Mai Wah Museum preserve this heritage. (Source: Grokipedia)
 
 ---
 

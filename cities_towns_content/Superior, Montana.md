@@ -1,8 +1,8 @@
 ### Quick Facts
 
-- **Population:** ~TBD (Source: U.S. Census Bureau estimates)
-- **County:** TBD County
-- **Elevation:** TBD ft
+- **Population:** 835 (2020 Census)
+- **County:** Mineral County
+- **Elevation:** 2,759 ft
 - **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
 
 ### History & Heritage

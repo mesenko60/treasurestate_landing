@@ -13,7 +13,7 @@ Welcome to Shelby, MT, where champions and trains cross paths! This charming tow
 - **Elevation:** 3,297 ft (1,005 m)
 - **Known For:** Historic 1923 Dempsey-Gibbons heavyweight boxing match, railroad junction, transportation hub
 - **Nearby Landmarks:** Sweet Grass Hills, Glacier National Park (80 miles), Marias River, Lake Shel-oole
-- **Fun Fact:** The 1923 heavyweight championship boxing match between Jack Dempsey and Tommy Gibbons nearly bankrupted the town but cemented Shelby's place in sports history.
+- **Fun Fact:** The 1923 heavyweight championship boxing match between Jack Dempsey and Tommy Gibbons nearly bankrupted the town but cemented Shelby's place in sports history. Montana's first major oil find was at Kevin-Sunburst in 1922. The 1964 Marias River flood devastated the area. "Camp Collie" (2002) rescued over 170 dogs from a hoarding situation. The Well Done Foundation, which plugs orphaned oil wells, established its headquarters in Shelby in 2019. (Source: Grokipedia)
 
 ---
 
@@ -42,7 +42,7 @@ Shelby's strategic location has shaped its economy as a natural transportation c
 
 ## History & Heritage
 
-Shelby's story begins in 1892 when a railroad station was established at the junction of the Great Northern Railway and the Great Falls & Canada Railway. The town was named in honor of Peter O. Shelby, General Manager of the Montana Central Railway. Shelby's most famous historical moment came on July 4, 1923, when it hosted the heavyweight boxing championship match between Jack Dempsey and Tommy Gibbons. This ambitious undertaking nearly bankrupted the town but secured Shelby's place in sports history. The match, held in a hastily constructed 40,000-seat arena, drew national attention to this small Montana community. Throughout the 20th century, Shelby evolved as a transportation hub, with its economy shifting between agricultural booms, oil development, and railroad expansion. The town's resilience through economic challenges reflects the pioneering spirit of its residents. Today, Shelby proudly preserves its heritage through the Marias Museum of History and Art, which houses memorabilia from the famous boxing match, and Champions Park, which commemorates this legendary sporting event. The historic downtown area, with its well-preserved buildings, offers visitors a glimpse into Shelby's past while showcasing its ongoing vitality.
+Shelby's story begins in 1892 when a railroad station was established at the junction of the Great Northern Railway and the Great Falls & Canada Railway. The town was named in honor of Peter O. Shelby, General Manager of the Montana Central Railway. Shelby's most famous historical moment came on July 4, 1923, when it hosted the heavyweight boxing championship match between Jack Dempsey and Tommy Gibbons. This ambitious undertaking nearly bankrupted the town but secured Shelby's place in sports history. The match, held in a hastily constructed 40,000-seat arena, drew national attention to this small Montana community. Throughout the 20th century, Shelby evolved as a transportation hub, with its economy shifting between agricultural booms, oil development, and railroad expansion. The town's resilience through economic challenges reflects the pioneering spirit of its residents. Today, Shelby proudly preserves its heritage through the Marias Museum of History and Art, which houses memorabilia from the famous boxing match, and Champions Park, which commemorates this legendary sporting event. The historic downtown area, with its well-preserved buildings, offers visitors a glimpse into Shelby's past while showcasing its ongoing vitality. A water reservoir built in 1896 addressed shortages from the distant Marias River. The restored 1936 Shelby Carousel operates at the Highway 2 rest area. (Source: Grokipedia)
 
 ---
 
@@ -69,3 +69,9 @@ Shelby offers a variety of accommodations to suit every traveler's needs. The to
 ## Plan Your Visit
 
 Ready to explore Shelby? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From the legendary boxing heritage to the natural beauty of the surrounding landscape, this northern frontier town offers unexpected discoveries at every turn. Experience the warm hospitality of a community where champions and trains have crossed paths for generations, creating a unique destination that captures the spirit of Montana's past while embracing its future.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Shelby,_Montana), U.S. Census Bureau*

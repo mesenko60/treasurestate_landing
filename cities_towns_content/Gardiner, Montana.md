@@ -12,7 +12,7 @@ Embark on an unforgettable journey to Gardiner, Montana, the historic northern g
 - **Elevation:** 5,259 ft
 - **Known For:** Being the original northern entrance to Yellowstone National Park, the historic Roosevelt Arch, abundant wildlife including resident elk herds, and year-round access to Yellowstone's Northern Range.
 - **Nearby Landmarks:** Yellowstone National Park, Roosevelt Arch, Mammoth Hot Springs, Absaroka-Beartooth Wilderness, Gallatin National Forest.
-- **Fun Fact:** Gardiner is so close to Yellowstone National Park that its main thoroughfare, Park Street, literally runs along the park's northern boundary – step off the sidewalk and you're in the park!
+- **Fun Fact:** Gardiner is so close to Yellowstone National Park that its main thoroughfare, Park Street, literally runs along the park's northern boundary – step off the sidewalk and you're in the park! The Roosevelt Arch was dedicated by President Theodore Roosevelt on April 24, 1903; the Northern Pacific Railroad arrived July 3, 1902. Gardiner is the only year-round vehicle entrance to Yellowstone. Wolf watching contributes approximately $82.7 million annually to local economies. (Source: Grokipedia)
 
 ---
 
@@ -43,7 +43,7 @@ Gardiner's economy is intrinsically linked to its prime location as the only yea
 
 ## History & Heritage
 
-Gardiner's saga is a thrilling chronicle of frontier spirit and the dawn of conservation. Established in 1880 by James McCartney, a character as rugged as the surrounding landscape, the town quickly became the primary northern portal to the newly formed Yellowstone National Park. Its very streets were laid out in a rush, hugging the park boundary, a testament to its symbiotic relationship with the wilderness it served. Imagine the early days: a rough-and-tumble outpost catering to intrepid explorers, miners seeking fortune, and the first wave of tourists eager to witness Yellowstone's rumored wonders. The arrival of the Northern Pacific Railway in 1903, the same year President Theodore Roosevelt dedicated the majestic Roosevelt Arch, cemented Gardiner's role as a vital hub. This arch, inscribed with "For the Benefit and Enjoyment of the People," stands as a powerful symbol of America's burgeoning conservation ethic. Gardiner has weathered gold rushes, the comings and goings of the railroad, and the challenges of a remote mountain existence, all while retaining its adventurous heart and its deep connection to the wild Yellowstone country.
+Gardiner's saga is a thrilling chronicle of frontier spirit and the dawn of conservation. Johnson Gardner, a mountain man and trapper, operated in the Yellowstone valley during the winter of 1830–1831; the Washburn-Langford-Doane Expedition named the settlement Gardiner (adding an "i") in 1870. James C. McCartney, evicted from Mammoth Hot Springs inside the park, founded the town in 1880 near the confluence of the Gardner and Yellowstone Rivers. The Northern Pacific Railroad arrived July 3, 1902, completing a 51-mile spur from Livingston; the Roosevelt Arch was dedicated April 24, 1903, by President Theodore Roosevelt, who laid its cornerstone. Passenger rail service continued until 1948. The June 2022 floods destroyed sections of the North Entrance Road; a temporary road opened October 30, 2022. Yellowstone generated an estimated $828 million in economic output and 8,560 jobs for gateway communities in 2023. (Source: Grokipedia)
 
 ---
 
@@ -58,6 +58,11 @@ Gardiner's saga is a thrilling chronicle of frontier spirit and the dawn of cons
 ## Getting There & Nearby Destinations
 
 Gardiner is located in southwestern Montana, on US Highway 89, approximately 55 miles south of Livingston, Montana, and Interstate 90. It's the only entrance to Yellowstone National Park open to wheeled vehicles year-round. From Gardiner, you have direct access to Mammoth Hot Springs (5 miles south) and the park's Northern Range. Nearby towns worth exploring include Livingston, known for its vibrant arts scene and fly-fishing, and Bozeman (approx. 80 miles northwest), a larger city with an international airport (BZN - Bozeman Yellowstone International Airport) and more amenities. The scenic Paradise Valley stretches north from Gardiner along the Yellowstone River, offering stunning views and access to outdoor recreation.
+
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Gardiner,_Montana), National Park Service, U.S. Census Bureau*
 
 ---
 

@@ -1,8 +1,8 @@
 ### Quick Facts
 
-- **Population:** ~TBD (Source: U.S. Census Bureau estimates)
-- **County:** TBD County
-- **Elevation:** TBD ft
+- **Population:** 1,787 (2020 Census)
+- **County:** Broadwater County
+- **Elevation:** 3,825 ft
 - **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
 
 ### History & Heritage

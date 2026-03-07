@@ -6,7 +6,7 @@ Embark on an unforgettable journey to Browning, Montana, the vibrant heart of th
 
 ## Quick Facts
 
-- **Population:** Approximately 1,000 (Note: This is a general estimate, official census data can vary; Browning is the largest community on the Blackfeet Indian Reservation which has a larger total population.)
+- **Population:** 1,018 (2020 Census). Browning is the largest community on the Blackfeet Indian Reservation, which has a larger total population.
 - **County:** Glacier County
 - **Founded:** Established as a town in the late 19th/early 20th century, with deep ancestral roots for the Blackfeet people long before.
 - **Elevation:** Approximately 4,377 ft

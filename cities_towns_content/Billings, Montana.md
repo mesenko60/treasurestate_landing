@@ -12,15 +12,17 @@ Embark on an unforgettable journey in Billings, Montana, where the spirit of the
 - **Elevation:** 3,123 ft (952 m)
 - **Known For:** Being Montana's largest city, its vibrant craft beer scene (Billings Brew Trail), and as a gateway to Yellowstone National Park.
 - **Nearby Landmarks:** Pompey's Pillar National Monument, Pictograph Cave State Park, Little Bighorn Battlefield National Monument.
-- **Fun Fact:** Billings was nicknamed the "Magic City" because of its rapid growth from its founding as a railroad town in March 1882.
+- **Fun Fact:** Billings was nicknamed the "Magic City" for its rapid growth from a tent camp to a thriving boomtown within months. William Clark carved his signature at Pompeys Pillar (28 miles northeast) on July 25, 1806. Pictograph Cave State Park holds over 100 pictographs; designated National Historic Landmark 1964. (Source: Grokipedia, NPS)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Brent Musburger** – Renowned American sportscaster, known for his work on CBS Sports, ABC Sports, and ESPN. He was the lead voice for many major sporting events.
-- **Jeff Kober** – Actor known for his roles in films like "Out of Bounds" and television series such as "China Beach", "The Walking Dead", and "Sons of Anarchy".
-- **Yellowstone (TV Series)** – While not filmed exclusively in Billings, the highly popular Paramount Network series "Yellowstone," created by Taylor Sheridan and John Linson, is set in Montana and often references its cities and culture, bringing significant pop culture attention to the state, including regions around Billings. The series portrays the conflicts along the shared borders of a large cattle ranch, an Indian reservation, and land developers, resonating with the broader Montana experience.
+- **Frederick H. Billings** – Northern Pacific Railway president (1879–1881) for whom the city is named. The Minnesota and Montana Land and Improvement Company platted the town in 1881–1882. (Source: Grokipedia)
+- **Brent Musburger** – Renowned American sportscaster (CBS Sports, ABC Sports, ESPN). (Source: Grokipedia)
+- **Jeff Kober** – Actor known for "Out of Bounds," "China Beach," "The Walking Dead," and "Sons of Anarchy." (Source: Grokipedia)
+- **Lewis and Clark** – William Clark inscribed his signature at Pompeys Pillar on July 25, 1806. (Source: Grokipedia, NPS)
+- **Yellowstone (TV Series)** – Paramount Network series set in Montana, bringing pop culture attention to the state. (Source: Grokipedia)
 
 ---
 
@@ -41,7 +43,7 @@ Billings, Montana, stands as a significant regional hub for commerce, serving an
 
 ## History & Heritage
 
-Billings, Montana, often called the "Magic City" due to its rapid growth after its founding in March 1882 as a railroad town by the Northern Pacific Railroad, boasts a rich and layered history. The city is named after Frederick H. Billings, a former president of the railroad. Before its formal establishment, the area, known as Clark's Fork Bottom, was a significant point for the Crow and Cheyenne peoples, who referred to it as _Ammalapáshkuua_ and _É'êxováhtóva_ respectively, meaning 'where they cut wood,' due to an early sawmill. The region's human history dates back over 2,000 years, evidenced by the pictographs and artifacts found in Pictograph Cave State Park. The Lewis and Clark Expedition passed through in 1806, with William Clark carving his name at Pompey's Pillar, a lasting testament to their journey. The earlier settlement of Coulson, a rough-and-tumble frontier town, eventually gave way to Billings with the arrival of the railroad, though its legacy is remembered at Boothill Cemetery and Coulson Park. Throughout its history, Billings has served as a vital trade and distribution center for eastern Montana, driven by agriculture, energy (including significant oil refining and coal resources), and its strategic location. The city has a strong commitment to preserving its past, supported by entities like the Yellowstone Historic Preservation Board, which works to survey, inventory, and protect historic and prehistoric properties, ensuring that the heritage of Billings and the surrounding Yellowstone County endures for future generations. This includes reviewing National Register nominations and encouraging public participation in preservation efforts.
+Billings, Montana, often called the "Magic City" due to its rapid growth after its founding in March 1882 as a railroad town by the Northern Pacific Railroad, boasts a rich and layered history. The city is named after Frederick H. Billings, a former president of the railroad. The region's human history dates back over 13,000 years—Pictograph Cave State Park holds over 100 pictographs and artifacts from Archaic and Woodland periods. The Crow (Apsáalooke) maintained semi-nomadic villages here before treaty cessions in the 1860s. William Clark led a detachment down the Yellowstone in 1806 and inscribed his signature at Pompeys Pillar on July 25—one of the few physical remnants of the expedition. Coulson (1877) preceded Billings as a steamboat landing but was bypassed when the railroad chose a site two miles west. The Billings Sugar Factory (1906) marked key industrial development; the Cat Creek (1920) and Kevin-Sunburst (1922) oil fields drew refining investment. Today Billings serves a regional trade area exceeding 500,000 people, with three major refineries (Par Montana, Phillips 66, Cenex in Laurel) and healthcare (Billings Clinic, St. Vincent) as major employers. (Source: Grokipedia, NPS)
 
 ---
 

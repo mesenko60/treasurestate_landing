@@ -1,8 +1,8 @@
 ### Quick Facts
 
-- **Population:** ~TBD (Source: U.S. Census Bureau estimates)
-- **County:** TBD County
-- **Elevation:** TBD ft
+- **Population:** 1,860 (2020 Census)
+- **County:** Phillips County
+- **Elevation:** 2,254 ft
 - **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
 
 ### History & Heritage

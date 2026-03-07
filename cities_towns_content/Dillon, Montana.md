@@ -13,15 +13,17 @@ Nestled in the sweeping Beaverhead Valley and surrounded by snow-capped mountain
 - **Elevation:** 5,102 ft
 - **Known For:** Blue-ribbon fly fishing, historic railroad heritage, University of Montana Western
 - **Nearby Landmarks:** Bannack State Park, Pioneer Mountains, Beaverhead-Deerlodge National Forest
-- **Fun Fact:** A circus elephant named Old Pitt was struck by lightning in 1943 and is buried at the Dillon fairgrounds
+- **Fun Fact:** A circus elephant named Pitt (Cole Brothers Circus) was struck by lightning and killed during a thunderstorm at the Beaverhead County Fairgrounds in August 1943; a granite memorial honors her as the last of the John Robinson herd. Dillon was Montana's largest wool exporter in the late 19th and early 20th centuries. Bannack State Park attracted ~46,831 visitors in 2024. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Troy Andersen** – NFL linebacker who grew up in Dillon before playing for the Atlanta Falcons
-- **Frank W. Hazelbaker** – Prominent Montana politician who served as Speaker of the Montana House and Lieutenant Governor
-- **Bannack State Park** – Featured in numerous documentaries about the American West and ghost towns, this nearby historic site was Montana's first territorial capital
+- **Sidney Dillon** – Railroad executive and president of the Utah and Northern Railway; the town was renamed in his honor in 1881 when platted along the new rail route. (Source: Grokipedia)
+- **John White** – Prospector whose July 28, 1862 gold discovery on Grasshopper Creek ignited Montana's first major gold rush and led to the founding of Bannack. (Source: Grokipedia)
+- **Thomas Savage** – Novelist who grew up on a ranch near Dillon; his acclaimed *The Power of the Dog* (1967) drew from his Montana upbringing. (Source: Grokipedia)
+- **Troy Andersen** – NFL linebacker who grew up in Dillon before playing for the Atlanta Falcons. (Source: Grokipedia)
+- **Frank W. Hazelbaker** – Prominent Montana politician who served as Speaker of the Montana House and Lieutenant Governor. (Source: Grokipedia)
 
 ---
 
@@ -42,11 +44,7 @@ Dillon's economy blends its historic foundations with modern enterprise, creatin
 
 ## History & Heritage
 
-Dillon's story begins in 1880 as a strategic railroad settlement originally named "Terminus," marking the temporary northernmost stop of the Utah and Northern Railway. In 1881, the community was renamed for Union Pacific Railroad President Sidney Dillon, who directed the project of bringing the railroad through to Butte. The railroad company strategically selected the location for its proximity to the booming gold mines that had drawn fortune seekers since 1862, when gold was discovered at nearby Grasshopper Creek.
-
-While silver was the first ore discovered in the Dillon area, it was gold that precipitated the flood of immigration and established the region's early economy. As Dillon grew, it engaged in a contentious battle with Bannack to become the county seat of Beaverhead County—a contest Dillon ultimately won. The first brick building appeared in 1882, and by 1884, Dillon had become an incorporated town with permanent dwellings and sidewalks.
-
-The establishment of Montana Normal College (now University of Montana Western) in 1892 added an educational dimension to the community that continues to this day. While many surrounding gold mining towns eventually died out, Dillon thrived thanks to its railroad connections, agricultural development, and talc mining operations. The introduction of cattle ranching in 1865 and sheep farming in 1869 transformed the agriculturally rich Beaverhead Valley, with Dillon eventually becoming Montana's largest exporter of sheep wool—a heritage that connects the town's past to its present identity as a center of ranching and outdoor recreation.
+Dillon originated in 1880 when the Utah and Northern Railway extended into Montana Territory, reaching the site via Monida Pass on May 9 and platting the tent camp initially known as Terminus. The first train arrived that year, transforming the location into a vital supply hub. In 1881, the town was renamed Dillon in honor of Sidney Dillon, president of the Union Pacific Railroad. Dillon won the county seat election in February 1881 by a vote of 665 to 495 over Bannack. The first brick building appeared in 1882; Dillon incorporated in 1884. Montana State Normal School (now University of Montana Western) was founded in 1893—Montana's first normal school to train teachers. The university's signature "Experience One" block scheduling model, implemented in 2005, is the only such system offered at scale by a public U.S. institution. Barretts Minerals (now High Divide Minerals) initiated talc operations in 1943. On September 3, 1979, a Montana Air National Guard F-106 jet crashed into a grain elevator during a Labor Day parade flyover, killing pilot Captain Joel Rude and injuring 19 spectators. The Dillon Jaycee PRCA Rodeo, "Montana's Biggest Weekend," marked its 69th year in 2025. (Source: Grokipedia)
 
 ---
 
@@ -67,6 +65,12 @@ Dillon is situated in southwestern Montana, accessible via Interstate 15, making
 ## Where to Stay in Dillon
 
 Dillon offers a diverse range of accommodations to suit every traveler's needs, from comfortable chain hotels to unique local lodging experiences. Visitors seeking traditional hotel amenities can choose from well-appointed options like the Best Western Paradise Inn, FairBridge Inn, or Super 8 by Wyndham, all conveniently located along Montana Street. For those looking to immerse themselves in the area's outdoor recreation, specialty lodging like the Angler Village Inn caters specifically to fishing enthusiasts with easy access to the Beaverhead River. The historic downtown area features charming boutique accommodations, while those seeking a true Montana ranch experience can stay at Goose Down Ranch, offering an authentic glimpse into the region's agricultural heritage. Multiple RV parks and campgrounds provide options for travelers bringing their accommodations with them, allowing for an immersive experience in the beautiful Beaverhead Valley landscape. Whatever your preference, Dillon's lodging options provide the perfect basecamp for exploring southwestern Montana's natural wonders and historic treasures.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Dillon,_Montana), U.S. Census Bureau, Montana State Parks*
 
 ---
 

@@ -13,16 +13,17 @@ Source: https://discoverkalispell.com/
 - **Elevation:** Approximately 2,956 ft
 - **Known For:** Gateway to Glacier National Park, outdoor recreation, vibrant downtown, and stunning natural scenery.
 - **Nearby Landmarks:** Glacier National Park, Flathead Lake, Whitefish Mountain Resort, Blacktail Mountain Ski Area, Hungry Horse Dam.
-- **Fun Fact:** The name Kalispell is a Salish word meaning "flat land above the lake," referring to its location near Flathead Lake.
+- **Fun Fact:** Kalispell is named after the Kalispel people; the name means "flat land above the lake." The Great Northern Railway's first steam engine arrived January 1, 1892; ~3,500 people gathered to celebrate. Montana's fastest-growing city (~27% growth 2020–2024). (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Brad Bird** – Renowned animator, film director, screenwriter, producer, and voice actor, known for his work on animated films such as *The Iron Giant*, *The Incredibles*, and *Ratatouille*.
-- **Lily Gladstone** – Critically acclaimed actress known for her roles in films like *Certain Women* and *Killers of the Flower Moon*, for which she received numerous accolades.
-- **Michelle Williams** – Award-winning actress known for her versatile performances in films such as *Brokeback Mountain*, *Manchester by the Sea*, and *My Week with Marilyn*.
-- **Heaven's Gate (1980)** – This American epic Western film, directed by Michael Cimino, was notably filmed in and around the Kalispell area, capturing the scenic landscapes of Montana.
+- **Charles E. Conrad** – Businessman who selected the townsite in 1891; built the Conrad Mansion (1895), now a museum. (Source: Grokipedia)
+- **Brad Bird** – Oscar-winning animator/director (*The Incredibles*, *Ratatouille*), born in Kalispell. (Source: Grokipedia, IMDb)
+- **Lily Gladstone** – Critically acclaimed actress (*Killers of the Flower Moon*), raised in the area. (Source: Grokipedia)
+- **Michelle Williams** – Award-winning actress with ties to the region. (Source: Grokipedia)
+- **Heaven's Gate (1980)** – Epic Western filmed in and around Kalispell. (Source: Grokipedia, IMDb)
 
 ---
 

@@ -13,7 +13,7 @@ Nestled between the majestic peaks of southwest Montana, Ennis invites adventure
 - **Elevation:** 4,941 ft
 - **Known For:** World-class fly fishing, western heritage, and gateway to outdoor adventures
 - **Nearby Landmarks:** Madison River, Ennis Lake, Yellowstone National Park, Virginia City, Lewis and Clark Caverns
-- **Fun Fact:** The town was founded by Irish immigrant William Ennis, who was born on St. Patrick's Day in 1828
+- **Fun Fact:** The town was founded by Irish immigrant William Ennis, who was born on St. Patrick's Day in 1828. Ennis is known as the "Cowboy Capital of Montana." The Madison River supports over 2,500 trout per mile in key stretches. The Ennis Rodeo has been a tradition since 1935. (Source: Grokipedia)
 
 ---
 
@@ -57,6 +57,11 @@ The story of Ennis begins with William Ennis, an Irish immigrant born on St. Pat
 ## Getting There & Nearby Destinations
 
 Ennis sits at the crossroads of adventure in southwest Montana, perfectly positioned for exploration. Located along Highway 287, the town is easily accessible by car, with Bozeman Yellowstone International Airport just over an hour's drive away. Yellowstone National Park lies 70 miles to the south, making Ennis an ideal basecamp for day trips to this natural wonder. History buffs will appreciate the proximity to Virginia City and Nevada City, preserved gold rush towns where you can step back in time and even pan for gold. For relaxation after outdoor adventures, Norris Hot Springs offers natural geothermal soaking just a short drive away. The Lewis and Clark Caverns provide underground exploration opportunities within easy reach. Neighboring communities like West Yellowstone, Big Sky, and Bozeman complement an Ennis-centered itinerary, creating endless possibilities for Montana discovery.
+
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Ennis,_Montana), Ennis Chamber of Commerce, U.S. Census Bureau*
 
 ---
 

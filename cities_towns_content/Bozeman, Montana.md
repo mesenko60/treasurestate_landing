@@ -41,7 +41,7 @@ Bozeman boasts a diverse and growing economy, significantly influenced by touris
 
 ## History & Heritage
 
-Founded in 1864 by John Bozeman as a stop along the Bozeman Trail, the city quickly became an agricultural center and a supply point for nearby mining camps. The arrival of the Northern Pacific Railway in 1883 further spurred its growth. Montana State University, established in 1893 (originally as the Agricultural College of the State of Montana), has played a pivotal role in shaping the city's development and character. Bozeman's rich history is preserved in its historic downtown architecture and through institutions like the Gallatin History Museum.
+Founded in 1864 by John Bozeman as a stop along the Bozeman Trail, the city quickly became an agricultural center and supply point for miners in Virginia City and Alder Gulch. The trail violated the 1851 Treaty of Fort Laramie by traversing Lakota, Cheyenne, and Arapaho hunting grounds, contributing to Red Cloud's War (1866–1868). Fort Ellis (1867) provided military protection. Montana Agricultural College was founded in 1893, evolving into Montana State University by 1965. The Museum of the Rockies houses extensive dinosaur collections including a Tyrannosaurus rex; the Gallatin History Museum holds the Big Horn Gun from the 1876 Battle of the Little Bighorn. Oracle's 2012 acquisition of RightNow Technologies established Bozeman as Montana's tech hub. (Source: Grokipedia)
 
 ---
 

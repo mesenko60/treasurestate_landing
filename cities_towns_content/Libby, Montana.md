@@ -13,7 +13,7 @@ Nestled in the rugged northwest corner of Montana, Libby beckons the adventurous
 - **Elevation:** 2,096 ft (640 m)
 - **Known For:** Kootenai Falls, Cabinet Mountains Wilderness, world-class fishing, and outdoor recreation
 - **Nearby Landmarks:** Cabinet Mountains, Kootenai National Forest, Libby Dam, Lake Koocanusa
-- **Fun Fact:** Libby was once the exporter of 80% of the world's vermiculite, and the spectacular Kootenai Falls has been featured in Hollywood films including "The River Wild" and "The Revenant"
+- **Fun Fact:** Libby supplied ~80% of the world's vermiculite (Zonolite/W.R. Grace, 1923–1990). The ore contained amphibole asbestos; EPA designated the site Superfund in 2002. Kootenai Falls appeared in *The River Wild* (1994) and *The Revenant* (2015). Libby Creek was named in 1867 after a prospector's daughter. (Source: Grokipedia)
 
 ---
 
@@ -44,11 +44,7 @@ The construction of Libby Dam in the early 1970s brought another economic boom, 
 
 ## History & Heritage
 
-Libby's story begins with the Kootenai Tribe, who for centuries used the Kootenai River as a travel corridor between Idaho and British Columbia. While no tribe made a permanent settlement in the area, the Kootenai people frequently hunted, fished, and conducted spiritual ceremonies at Kootenai Falls, which remains a sacred site to this day. The early 19th century brought British-Canadian explorer David Thompson to the region, followed by fur trappers and traders who were drawn to the abundant wildlife along the river and its tributaries.
-
-The first major influx of settlers arrived in 1866 when 500 prospectors flocked to Libby Creek in search of gold. Though most left within a year as deposits proved shallow, a few hardy souls remained to establish homesteads. The arrival of the Great Northern Railway in 1892 transformed the fledgling settlement, shortening its name from Libbysville to Libby and connecting it to the wider world. The early 1900s saw the establishment of the first large-scale lumber mill, marking the beginning of Libby's identity as a timber town.
-
-The mid-20th century brought dramatic changes with the construction of Libby Dam between 1966 and 1975, creating the 90-mile-long Lake Koocanusa and forever altering the landscape. While the dam project temporarily boosted the economy, the subsequent decades brought challenges, including the closure of the vermiculite mine in 1990 and later the timber mill. Despite these setbacks, Libby has preserved its rich heritage through institutions like the Heritage Museum, which showcases exhibits on Native Americans, lumbermen, trappers, and early pioneers, keeping the area's colorful past alive for future generations.
+The Kootenai Tribe used the river for travel and ceremonies; Kootenai Falls remains sacred. David Thompson entered the region in 1809. Prospectors established Libbysville in 1867 (500–600 miners); the creek was named that year. Great Northern Railway platted the townsite in 1890; first train arrived May 3, 1892. Zonolite Company began vermiculite extraction in 1923; W.R. Grace acquired operations in 1963. The mine supplied ~80% of global vermiculite until closure in December 1990; ore contained amphibole asbestos. EPA designated the site Superfund in 2002. J. Neils Lumber (later St. Regis) operated a major mill 1910–1960s; last mill closed 2002. Libby Dam (1966–1975) created 90-mile Lake Koocanusa. (Source: Grokipedia)
 
 ---
 
@@ -79,3 +75,9 @@ Lake Koocanusa Resort & Marina offers waterfront cabins perfect for boating and 
 ## Plan Your Visit
 
 Ready to explore Libby? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Libby,_Montana), U.S. Census Bureau*

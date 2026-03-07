@@ -13,15 +13,15 @@ Nestled in the vast rolling plains of north-central Montana, Conrad beckons adve
 - **Elevation:** 3,514 ft
 - **Known For:** Agricultural heritage, Whoop-Up Trail Days celebration, gateway to outdoor adventures
 - **Nearby Landmarks:** Rocky Mountain Front, Glacier National Park (2 hours away)
-- **Fun Fact:** Conrad is nicknamed "The Heart of Montana's Golden Triangle" due to its location in one of the state's premier grain-producing regions
+- **Fun Fact:** Conrad is nicknamed "The Heart of Montana's Golden Triangle" due to its location in one of the state's premier grain-producing regions. Named for William G. Conrad, who with brothers built a 200,000-acre ranch and mercantile empire from Fort Benton. A proposed Cold War-era Safeguard antiballistic missile site near Conrad in the late 1960s was cancelled in 1976 after partial construction. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- LeRoy H. Anderson – Montana politician who served as a U.S. Representative from Montana
-- Wylie Gustafson – Renowned western music singer, yodeler, and rancher known for his band "Wylie & the Wild West"
-- Conrad serves as a filming location for independent filmmakers seeking authentic Montana landscapes and small-town Americana backdrops
+- **William G. Conrad & Charles E. Conrad** – Brothers who arrived in Montana Territory in 1868; built mercantile, banking, and ranching enterprises from Fort Benton; assembled a 200,000-acre ranch and platted the Conrad townsite in 1902. (Source: Grokipedia)
+- **LeRoy H. Anderson** – Montana politician who served as a U.S. Representative from Montana. (Source: Grokipedia)
+- **Wylie Gustafson** – Renowned western music singer, yodeler, and rancher known for his band "Wylie & the Wild West." (Source: Grokipedia)
 
 ---
 
@@ -42,7 +42,7 @@ Conrad's economic foundation rests firmly on the fertile soil that surrounds it.
 
 ## History & Heritage
 
-Conrad's story begins with the expansion of the Great Northern Railway, which brought settlers to this fertile region in the late 19th century. Officially incorporated in 1908, the town was established as the county seat of Pondera County and quickly became a vital hub for the surrounding agricultural communities. Named for William G. Conrad, a prominent Montana businessman and banker, the town grew alongside the booming wheat industry that transformed the prairie landscape. Throughout its history, Conrad has weathered the economic cycles typical of agricultural communities, demonstrating remarkable resilience during challenging times like the Dust Bowl era. The Conrad Transportation and Historical Museum preserves this rich heritage, housing artifacts and exhibits that chronicle the town's evolution from frontier settlement to modern agricultural center. Today, Conrad proudly maintains its historic downtown district, where buildings dating back to the early 1900s stand as testaments to the town's enduring legacy.
+The Conrad brothers arrived in Montana Territory in 1868 and built mercantile and ranching enterprises from Fort Benton. In 1889 they assembled a 200,000-acre ranch from Dupuyer to the Marias River. M.S. Darling, engineer for the Conrad Investment Company, platted the townsite in 1902. The Great Northern Railway completed the Lethbridge-Great Falls line in 1902; the company deeded 600 acres to the railroad. Conrad incorporated September 24, 1908. The Lake Frances irrigation project commenced to enable dryland farming. Population peaked at 3,074 in 1980. The 1917–1930s droughts devastated agriculture; wheat harvests fell up to 80% in severe years. A proposed Safeguard antiballistic missile site in the late 1960s was cancelled in 1976 after partial construction. The Western Triangle Agricultural Research Center addresses regional drought and pest challenges. (Source: Grokipedia)
 
 ---
 
@@ -63,6 +63,12 @@ Conrad is conveniently located along Interstate 15, with easy access from Exits 
 ## Where to Stay in Conrad
 
 Conrad offers a selection of comfortable accommodations that provide a welcoming respite for travelers exploring Montana's northern frontier. The Super 8 by Wyndham Conrad provides reliable chain-hotel amenities, while the locally-owned Northgate Motel offers a more personalized stay with Montana hospitality. For those seeking a more immersive outdoor experience, the Pondera RV Park and Pondera RV Resort provide well-maintained facilities for campers and recreational vehicles. Visitors looking for a unique Montana experience might consider the nearby SK Ranch, which offers authentic rural accommodations. While Conrad's lodging options may be modest compared to larger tourist destinations, they deliver the genuine warmth and friendly service characteristic of small-town Montana, ensuring a restful base for adventures throughout the region.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Conrad,_Montana), U.S. Census Bureau*
 
 ---
 

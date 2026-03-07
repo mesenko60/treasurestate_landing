@@ -1,4 +1,3 @@
-```markdown
 # Explore East Glacier, Montana: Your Gateway to Alpine Adventure!
 
 Nestled where the majestic Rocky Mountains greet the expansive Montana prairies, East Glacier Park beckons thrill-seekers and nature lovers alike. For over a century, this historic village has served as the eastern portal to the untamed wilderness of Glacier National Park, offering a timeless escape into a realm of towering peaks, pristine lakes, and trails that whisper tales of epic journeys. Prepare to unleash your adventurous spirit and discover the legendary mountain hospitality that defines this captivating corner of Big Sky Country.
@@ -11,15 +10,15 @@ Nestled where the majestic Rocky Mountains greet the expansive Montana prairies,
 - **Elevation:** 4,823 ft
 - **Known For:** Eastern gateway to Glacier National Park, stunning scenery, Blackfeet Nation history, Great Northern Railway.
 - **Nearby Landmarks:** Glacier National Park, Two Medicine Lake, Marias Pass, Glacier Park Lodge.
-- **Fun Fact:** The historic Glacier Park Lodge, known as the "Big Tree Lodge," was built in 1912-13 by the Great Northern Railway and is known for its massive Douglas fir log construction.
+- **Fun Fact:** The historic Glacier Park Lodge, known as the "Big Tree Lodge," was built in 1912-13 by the Great Northern Railway and is known for its massive Douglas fir log construction. Originally platted as Midvale in the early 1890s; renamed Glacier Park in 1913 to avoid mail confusion; adopted East Glacier Park in 1949. The village sits on the Blackfeet Indian Reservation. Glacier National Park attracted 3.2 million visitors in 2024. (Source: Grokipedia)
 
 ## Notable People & Pop Culture
 
 East Glacier Park and the surrounding region have inspired artists and adventurers for generations. While not a bustling metropolis, its natural beauty and rich history have drawn notable figures and left their mark.
 
-- **John L. Clarke (Cutapuis):** A renowned Blackfeet sculptor whose work is celebrated locally and beyond.
-- **James Willard Schultz:** A prolific Western writer who lived in the area and captured its essence in his stories.
-- **Winold Reiss:** A German-born artist who created iconic portraits of the Blackfeet people, some of which were featured on Great Northern Railway calendars.
+- **John L. Clarke (Cutapuis)** – Renowned Blackfeet sculptor and painter born in 1881; lived and worked in East Glacier until his death in 1970. (Source: Grokipedia)
+- **James Willard Schultz** – Prolific Western writer who lived in the area and captured its essence in his stories. (Source: Grokipedia)
+- **Winold Reiss** – German-born artist who created iconic portraits of the Blackfeet people, featured on Great Northern Railway calendars. (Source: Grokipedia)
 
 ## Top Things to Do in East Glacier Park
 
@@ -35,7 +34,7 @@ The economy of East Glacier Park is primarily driven by tourism, thanks to its p
 
 ## History & Heritage
 
-East Glacier Park has a rich history. Originally inhabited by the Blackfeet Nation, the area saw the arrival of European settlers with the westward expansion and the construction of the Great Northern Railway in the late 19th century. The town, initially known as Midvale, played a crucial role as a gateway to Glacier National Park, established in 1910. The historic Glacier Park Lodge, built in 1912-13, stands as a testament to this era, welcoming visitors to explore the natural wonders of the region.
+The Blackfeet Tribe has utilized the area for millennia. The Great Northern Railway completed Marias Pass in 1891 and platted Midvale in the early 1890s. The first post office opened in 1891. Renamed Glacier Park in 1913 to capitalize on proximity to the newly created national park; adopted East Glacier Park in 1949. Glacier Park Lodge was constructed 1912–1914 and opened in 1913. The East Glacier Ranger Station Historic District (1921–1937) and Glacier Park Women's Club building (1933, CCC-built) are on the National Register of Historic Places. The village is a census-designated place on the Blackfeet Indian Reservation. (Source: Grokipedia)
 
 ## Seasonal Activities & Local Events
 
@@ -52,4 +51,8 @@ Accommodation options in East Glacier Park range from the historic Glacier Park 
 ## Plan Your Visit
 
 Ready to explore East Glacier Park? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Remember to check current conditions and any park alerts before your visit.
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/East_Glacier_Park_Village,_Montana), U.S. Census Bureau, National Park Service*
 

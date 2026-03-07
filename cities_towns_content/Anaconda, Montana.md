@@ -13,13 +13,13 @@ Nestled at the foot of the majestic Anaconda Range and just a stone's throw from
 - **Elevation:** 5,335 ft
 - **Known For:** Historic copper smelting, Jack Nicklaus-designed golf course, gateway to outdoor recreation
 - **Nearby Landmarks:** Anaconda Range, Georgetown Lake, Discovery Ski Area, Continental Divide
-- **Fun Fact:** The Washoe Smelter Stack, at 585 feet tall, was once the tallest masonry structure in the world and remains a visible landmark of Anaconda's copper legacy
+- **Fun Fact:** The Anaconda Smelter Stack, at 585 feet tall, is the tallest freestanding masonry structure in the world and remains a visible landmark of Anaconda's copper legacy. The smelter employed up to 26,000 workers at its peak and produced over half of U.S. copper supply during World War I. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Marcus Daly** – Copper King and founder of Anaconda who built the town around his copper smelting empire
+- **Marcus Daly** – Copper King and founder of Anaconda who built the town around his copper smelting empire; selected the Warm Springs Creek site in 1883 for its favorable elevation, water supply, and accessibility compared to Butte. (Source: Grokipedia)
 - **Lucille Ball** – Legendary actress and comedian who lived in Anaconda briefly as a child
 - **Return to Lonesome Dove** – This popular TV miniseries filmed scenes in Anaconda, showcasing the town's historic western architecture
 
@@ -42,11 +42,9 @@ Anaconda's economic story is one of remarkable transformation. Founded as a comp
 
 ## History & Heritage
 
-Anaconda's rich history began with copper and the ambitions of Marcus Daly, one of Montana's famous "Copper Kings." On June 25, 1883, Daly filed a town plat for what he initially wanted to call "Copperopolis," but the name was already taken by another Montana mining town. Instead, he accepted "Anaconda," and a company town was born. The Anaconda Copper Mining Company built the massive Washoe Reduction Works to process ore from the nearby Butte mines, creating what would become the world's largest non-ferrous processing plant. The town's fortunes were tied to copper, and Daly even lobbied unsuccessfully to make Anaconda Montana's capital, losing to Helena in the 1894 referendum.
+Anaconda's rich history began with copper and the ambitions of Marcus Daly, one of Montana's famous "Copper Kings." On June 25, 1883, Daly filed a town plat for what he initially wanted to call "Copperopolis," but the name was already taken by another Montana mining town. Instead, he accepted "Anaconda" after his prolific Anaconda copper claim in Butte. The first smelter (Upper Works) entered operation in 1884 with a daily capacity five times that of contemporaneous Butte smelters. Marcus Daly & Company Bank was founded in 1883. The Butte, Anaconda and Pacific Railway was completed in the early 1890s for ore haulage. By 1895, the Anaconda Copper Mining Company had $30 million capitalization and controlled over half of U.S. copper output. (Source: Grokipedia)
 
-The early 1900s saw political intrigue when the Socialist Party won control of the city government in 1903, marking their first victory west of the Mississippi. However, the company systematically undermined their power. By 1919, the Washoe Reduction Works boasted a 585-foot smokestack—then the tallest masonry structure in the world. For decades, Anaconda thrived as a smelting center until 1980, when Atlantic Richfield Company closed the operation, ending nearly a century of copper processing.
-
-The city reinvented itself in the following decades. In 1977, Anaconda joined with Deer Lodge County to form a consolidated city-county government. Environmental cleanup efforts transformed the former industrial site into the acclaimed Old Works Golf Course. Today, Anaconda proudly preserves its architectural treasures, including the Washoe Theater, Club Moderne, and Hearst Free Library—all listed on the National Register of Historic Places. The Butte-Anaconda Historic District stands as a testament to the region's industrial heritage and architectural significance, while the city continues to write new chapters in its storied history.
+The 585-foot brick stack was completed in 1918. The smelter operated from 1884 to 1980, employing up to 26,000 workers at its peak and producing over half of U.S. copper during World War I. Designated a Superfund site in 1983, the area has undergone extensive remediation; the Jack Nicklaus-designed Old Works Golf Course was built on reclaimed land. In 1977, Anaconda joined with Deer Lodge County to form a consolidated city-county government. Lodge tax revenue tripled from 2020 to 2022; approximately 500,000 visitors came in 2024. Today, Anaconda proudly preserves its architectural treasures, including the Washoe Theater, Club Moderne, and Hearst Free Library—all listed on the National Register of Historic Places. (Source: Grokipedia)
 
 ---
 
@@ -76,4 +74,7 @@ Ready to explore Anaconda? Add it to your Montana travel itinerary and discover 
 
 ---
 
-*Sources: Discover Anaconda (official tourism website), Grokipedia, U.S. Census Bureau, Britannica, TripAdvisor*
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Anaconda,_Montana), Discover Anaconda, U.S. Census Bureau, Britannica*

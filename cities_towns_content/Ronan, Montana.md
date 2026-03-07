@@ -1,7 +1,7 @@
 # Ronan, Montana: Gateway to Wilderness Adventure in the Heart of Mission Valley
 Our Home in the Mission Valley
 
-Nestled in the shadow of the towering Mission Mountains, Ronan beckons the adventurous spirit with its breathtaking wilderness and untamed landscapes. This hidden gem in Montana's Mission Valley serves as the perfect gateway to outdoor exploration, where crystal-clear springs bubble up from ancient glacial terrain and pristine wilderness stretches as far as the eye can see. Originally named for the natural springs that flow into the nearby Flathead River, Ronan offers intrepid travelers a basecamp for discovering the rugged beauty of the Mission Mountain Wilderness, the teeming wildlife of Ninepipe National Wildlife Refuge, and the expansive waters of Flathead Lake just minutes away. Whether you're scaling mountain trails, tracking wildlife through wetland preserves, or casting a line in one of the region's legendary fishing spots, Ronan promises adventure seekers an authentic Montana experience where wilderness and western heritage converge in spectacular fashion.
+Nestled in the shadow of the towering Mission Mountains, Ronan beckons the adventurous spirit with its breathtaking wilderness and untamed landscapes. This hidden gem in Montana's Mission Valley serves as the perfect gateway to outdoor exploration, where crystal-clear springs bubble up from ancient glacial terrain and pristine wilderness stretches as far as the eye can see. Originally named for the natural springs that flow into the nearby Flathead River, Ronan offers intrepid travelers a basecamp for discovering the rugged beauty of the Mission Mountain Wilderness, the teeming wildlife of Ninepipe National Wildlife Refuge, and the expansive waters of Flathead Lake just minutes away. Whether you're scaling mountain trails, tracking wildlife through wetland preserves, or casting a line at nearby Flathead Lake or Lake Mary Ronan, Ronan promises adventure seekers an authentic Montana experience where wilderness and western heritage converge in spectacular fashion.
 
 ---
 
@@ -19,7 +19,8 @@ Nestled in the shadow of the towering Mission Mountains, Ronan beckons the adven
 
 ## Notable People & Pop Culture
 
-- **Marvin Camel** – Professional boxer who made history as a two-time cruiserweight world champion and the first Native American to win a world boxing title
+- **Marvin Camel** – Professional boxer who made history as a two-time cruiserweight world champion and the first Native American to win a world boxing title; inducted into the Nevada Boxing Hall of Fame in 2024 (Source: Grokipedia)
+- **Shane Morigeau** – Montana state senator (District 48) since 2021, raised in Ronan; advocates for public lands, tribal sovereignty, and environmental policy (Source: Grokipedia)
 - **Corwin "Corky" Clairmont** – Celebrated contemporary American Indian artist, activist, and educator whose work has been exhibited in prestigious galleries nationwide
 - **A River Runs Through It** – While not set specifically in Ronan, this acclaimed film showcases Montana's spectacular landscapes and fly-fishing culture characteristic of the region including the Flathead River area near Ronan
 
@@ -30,7 +31,7 @@ Nestled in the shadow of the towering Mission Mountains, Ronan beckons the adven
 - ✧ **Mission Mountain Wilderness** – Experience breathtaking alpine scenery with pristine lakes, dramatic peaks, and abundant wildlife in this spectacular wilderness area (permit required)
 - ✧ **Ninepipe National Wildlife Refuge** – Explore an exceptional wetland complex with over 800 glacial potholes and observe approximately 200 bird species in their natural habitat
 - ✧ **Garden of the Rockies Museum** – Discover the rich cultural heritage and history of the Mission Valley through fascinating exhibits and artifacts
-- ✧ **Mission Mountain Golf Course** – Play a round at one of Montana's finest golf courses, featuring lush fairways and spectacular views of the Mission Mountains
+- ✧ **Mission Mountain Golf Course** – Play a round at this scenic 18-hole course (GolfPass 4.1/5) featuring lush fairways and spectacular views of the Mission Mountains
 
 ---
 

@@ -5,6 +5,7 @@
 - **Founded:** 1860 (as Hellgate Trading Post) (Source: Grokipedia)
 - **Elevation:** 3,209 ft (978 m) (Source: Grokipedia, destinationmissoula.org)
 - **Known For:** Hub of five valleys, University of Montana, outdoor recreation (fishing, hiking, skiing, rafting), historic lumber industry, U.S. Forest Service regional headquarters, breweries (Source: Grokipedia, destinationmissoula.org)
+- **Fun Fact:** The Missoula Valley floor was shaped by Glacial Lake Missoula—a prehistoric lake covering ~3,000 sq mi and depths exceeding 2,000 ft—whose outburst floods carved the landscape 15,000–13,000 years ago. The U.S. Forest Service Aerial Fire Depot (1954) centralized smokejumper operations; the 1949 Mann Gulch Fire, 20 miles northeast, killed 13 smokejumpers. Missoula is designated the "Garden City" for its fertile surroundings. (Source: Grokipedia)
 
 ### Notable People & Pop Culture
 
@@ -34,7 +35,7 @@ Missoula's economy has diversified from its historical reliance on the lumber in
 
 ### History & Heritage
 
-Missoula's history dates back to its establishment as Hellgate Trading Post in 1860. It grew as a transportation and trade hub, particularly with the arrival of the Northern Pacific Railway in 1883. The lumber industry was historically significant. Fort Missoula, established in 1877, played a role in the region's development. The city is also home to the University of Montana, founded in 1893. (Source: Grokipedia, Montana Historical Society)
+Christopher P. Higgins and Francis L. Worden established Hellgate Trading Post in June 1860 in Hell Gate Ronde. In 1865 they relocated east, building a sawmill and gristmill at the confluence of Rattlesnake Creek and the Clark Fork—Missoula Mills. The county seat moved to Missoula Mills Dec 14, 1866. Fort Missoula was established in 1877. The Northern Pacific Railway arrived June 23, 1883; the city incorporated that year. Missoula Mercantile Company formed in the early 1880s (A.B. Hammond, E.L. Bonner, R.A. Eddy). Population grew from 4,366 (1900) to 12,896 (1910) on lumber; Polley's Lumber ran a major mill 1910–1955. The U.S. Forest Service Aerial Fire Depot (1954) centralized smokejumpers. University of Montana chartered 1893, opened 1895. (Source: Grokipedia, Montana Historical Society)
 
 ### Seasonal Activities & Local Events
 
@@ -64,3 +65,7 @@ Missoula offers a range of accommodation options:
 - **Campgrounds:** For those who prefer the outdoors, there are campgrounds in the surrounding national forests and some private RV parks.
 
 This information is based on general knowledge and publicly available information. For specific details like current event schedules, opening hours, or booking accommodation, it's always best to check official local tourism websites or contact the venues directly.
+
+### Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Missoula,_Montana), U.S. Census Bureau, destinationmissoula.org, Montana Historical Society*

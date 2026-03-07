@@ -13,16 +13,16 @@ Nestled between the rushing waters of the Yellowstone and Boulder Rivers, Big Ti
 - **Elevation:** 4,101 ft
 - **Known For:** Historic wool production, gateway to the Crazy Mountains, rodeo culture
 - **Nearby Landmarks:** Crazy Mountains, Yellowstone River, Boulder River, Natural Bridge Falls
-- **Fun Fact:** At one time, Big Timber shipped more wool than any other city in the United States
+- **Fun Fact:** At one time, Big Timber shipped more wool than any other city in the United States. By 1895 it was the largest wool market in the U.S., shipping over five million pounds that year. William Clark named Big Timber Creek on July 17, 1806, for the large cottonwood trees along its banks. A devastating fire on March 13, 1908, sparked by a Northern Pacific locomotive, destroyed one-third of the city. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- Judy Martz – Montana's first female governor (2001-2005), born in Big Timber
+- **Judy Martz** – Montana's first female governor (2001-2005), born in Big Timber to ranching parents. (Source: Grokipedia)
 - Bobby Hauck – Renowned college football coach with Montana roots
-- Tom Brokaw – Legendary NBC news anchor who owns a ranch near Big Timber
-- Michael Keaton – Award-winning actor with property in the Big Timber area
+- **Tom Brokaw** – Legendary NBC news anchor who owned the 4,128-acre West Boulder Ranch from 1989 until its sale in 2018. (Source: Grokipedia)
+- **Lindsay Burns** – Olympic silver medalist in women's lightweight double sculls rowing (1996 Atlanta Games), born in Big Timber. (Source: Grokipedia)
 
 ---
 

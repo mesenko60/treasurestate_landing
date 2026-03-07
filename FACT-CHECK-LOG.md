@@ -123,6 +123,55 @@ Executed per `FACT-CHECK-PLAN.md` (narrative focus). Summary of changes made.
 
 ---
 
+## Phase 8: Weirdness Pass & Grokipedia Enrichment
+
+### Overstated popularity / proximity assumptions
+- **Cut Bank:** "one of Montana's premier fishing destinations" → "local trout stream; check flow conditions before visiting, as water levels vary seasonally" (Cut Bank Creek is a trout fishery but not widely ranked as premier)
+- **Ronan:** "legendary fishing spots" → "casting a line at nearby Flathead Lake or Lake Mary Ronan" (legendary fishing is at Flathead Lake 12 mi away, not Ronan itself)
+- **Mission Mountain Golf Course (Ronan):** "one of Montana's finest" → "this scenic 18-hole course (GolfPass 4.1/5)" (rated 20th in Montana per Core Four Golf)
+
+### Pond/lake accuracy
+- **Spring Meadow Lake (Helena Fishing.tsx):** Corrected "30-acre spring-fed lake" → "13.7-acre spring-fed pond (officially named Spring Meadow Lake)" (Montana FWP classifies it as a pond)
+
+### Typos
+- **Troy:** "perfect basements" → "perfect basecamps"
+
+### Grokipedia enrichment
+- **Darby:** Added "First All-Woman Town Council" — In 1930, Darby elected the first all-woman town council in Montana (Source: Grokipedia)
+- **Ronan:** Added Marvin Camel Nevada Boxing Hall of Fame 2024; added Shane Morigeau (state senator since 2021)
+
+---
+
+---
+
+## Phase 9: Data Enrichment & Multi-Source Verification
+
+### Duplicate "County County" fixes
+- **Miles City:** Custer County County → Custer County
+- **Colstrip:** Rosebud County County → Rosebud County
+
+### TBD fills (Census + town-data verification)
+- **Glasgow:** 3,194 (2020 Census), Valley County, 2,096 ft
+- **Hardin:** 3,807 (2020 Census), Big Horn County, 2,910 ft
+- **Harlem:** 769 (2020 Census), Blaine County, 2,372 ft
+- **Jordan:** 356 (2020 Census), Garfield County, 2,608 ft
+- **Sidney:** 6,346 (2020 Census), Richland County, 1,939 ft
+- **Superior:** 835 (2020 Census), Mineral County, 2,759 ft
+- **Malta:** 1,860 (2020 Census), Phillips County, 2,254 ft
+- **Scobey:** 996 (2020 Census), Daniels County, 2,470 ft
+- **Townsend:** 1,787 (2020 Census), Broadwater County, 3,825 ft
+
+### Population & spelling fixes
+- **Bigfork:** "Approximately 5,000" → 5,118 (2020 Census)
+- **Browning:** "Approximately 1,000" → 1,018 (2020 Census)
+- **Philipsburg:** Standardized spelling (Philipsburg, one L — official per townofphilipsburgmt.com); cleaned Quick Facts formatting; added source for Fun Fact
+
+### Multi-source attribution
+- **Darby:** First all-woman town council — added Wikipedia as second source (Grokipedia, Wikipedia)
+- **Miles City:** Maurice Hilleman — enriched with birth date, MSU, vaccine list; added NIH as second source
+
+---
+
 ## Sources Used for Verification
 
 - U.S. Census Bureau QuickFacts (population estimates)
@@ -130,3 +179,5 @@ Executed per `FACT-CHECK-PLAN.md` (narrative focus). Summary of changes made.
 - Web search (West Yellowstone -66°F, Yellowstone TV filming, Livingston population)
 - `web/data/town-recreation.json` (recreation counts)
 - `web/data/town-housing.json` (housing data)
+- town-data.json (population, county, elevation for TBD fills)
+- Grokipedia (notable people, history)

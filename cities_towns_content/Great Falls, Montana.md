@@ -12,15 +12,17 @@ Embark on an unforgettable journey in Great Falls, Montana, where the wild front
 - **Elevation:** 3,330 ft
 - **Known For:** The five waterfalls of the Missouri River, C.M. Russell Museum, Lewis and Clark National Historic Trail Interpretive Center
 - **Nearby Landmarks:** Giant Springs State Park, Sluice Boxes State Park, First Peoples Buffalo Jump State Park
-- **Fun Fact:** Great Falls is home to one of the shortest rivers in the world, the Roe River (201 feet), which flows into the Missouri River.
+- **Fun Fact:** The Roe River (201 feet) was once recognized by Guinness as the world's shortest river. Lewis and Clark reached the five falls on June 13, 1805, executing an 18-mile portage over 28 days. Black Eagle Dam (1890–1892) was Montana's first major hydroelectric facility. Malmstrom AFB became the first operational Minuteman ICBM base in 1961. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- Charlie Russell (Charles M. Russell) – Famed Western artist whose work vividly depicted cowboy life, Native American culture, and Montana landscapes. He lived and worked in Great Falls for many years.
-- Ryan Leaf – Former professional American football quarterback, born in Great Falls, who played in the NFL after a notable college career.
-- The Untouchables (1987 film) – Several scenes for this acclaimed crime film, particularly those representing the U.S.-Canada border shootout, were filmed in and around Great Falls, utilizing the local architecture and landscapes.
+- **Charles M. Russell** – Famed Western artist who lived and worked in Great Falls; the C.M. Russell Museum preserves his studio and home. (Source: Grokipedia)
+- **Paris Gibson** – Founded Great Falls in 1883, envisioning hydropower from the five falls; platted the town with James J. Hill. (Source: Grokipedia)
+- **Ryan Leaf** – Former NFL quarterback, born in Great Falls. (Source: Grokipedia)
+- **Einar Axel Malmstrom** – Colonel for whom Malmstrom AFB is named; killed in a 1954 crash. (Source: Grokipedia)
+- **The Untouchables (1987)** – Several scenes filmed in Great Falls. (Source: Grokipedia, IMDb)
 
 ---
 
@@ -41,7 +43,7 @@ Great Falls serves as a vital economic hub for central Montana. Its diverse econ
 
 ## History & Heritage
 
-Founded in 1883 by Paris Gibson and railroad magnate James J. Hill, Great Falls was strategically planned to harness the power of the Missouri River's five waterfalls for industry. Its history is deeply connected to the Lewis and Clark Expedition, who documented and portaged the falls in 1805. The city quickly grew as a center for commerce, transportation, and agriculture. The iconic Western artist Charles M. Russell made Great Falls his home, and his legacy is a cornerstone of the city's rich cultural heritage, drawing visitors from around the world.
+Founded in 1883 by Paris Gibson with support from James J. Hill, Great Falls was planned to harness the Missouri River's five waterfalls (total drop 612 feet). Lewis and Clark reached the falls on June 13, 1805, executing an 18-mile portage over 28 days amid grizzly attacks and hailstorms. Black Eagle Dam (1890–1892) was Montana's first major hydroelectric facility. The Boston and Montana Smelter (1891) employed over 1,000 workers; Anaconda Copper later controlled refining. Great Falls Army Air Base (1942) supported the Northwest Staging Route, ferrying Lend-Lease aircraft to Alaska. Malmstrom AFB (1955) became the first operational Minuteman ICBM base. Charles M. Russell made Great Falls his home; the C.M. Russell Museum preserves his legacy. (Source: Grokipedia)
 
 ---
 

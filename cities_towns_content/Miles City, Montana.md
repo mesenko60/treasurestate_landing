@@ -7,7 +7,7 @@ Unleash your inner explorer in Miles City, Montana, a legendary Western town whe
 ## Quick Facts
 
 - **Population:** 8,412
-- **County:** Custer County County
+- **County:** Custer County
 - **Founded:** 1876
 - **Elevation:** 2,359 ft
 - **Known For:** Rich Western history, the annual Bucking Horse Sale, livestock auctions, and its location at the confluence of the Yellowstone and Tongue Rivers.
@@ -18,7 +18,7 @@ Unleash your inner explorer in Miles City, Montana, a legendary Western town whe
 
 ## Notable People & Pop Culture
 
-- Dr. Maurice Hilleman – World-renowned vaccinologist born in Miles City, credited with developing over 40 important vaccines and saving millions of lives.
+- **Dr. Maurice Hilleman** – World-renowned vaccinologist born in Miles City (Aug 30, 1919); developed over 40 vaccines including MMR, hepatitis B, and chickenpox; graduated from Montana State; credited with saving millions of lives (Source: Grokipedia, NIH)
 - George Montgomery – Hollywood actor known for Western films, who spent part of his youth in Montana and embodied the Western spirit. (Note: While Montgomery is associated with Montana, specific strong ties to Miles City itself might be limited; the connection is more broadly to the state's Western image he portrayed.)
 - Lonesome Dove – The epic Western novel and miniseries, while not filmed in Miles City, captures the spirit of the cattle drives and frontier life that are integral to the history of towns like Miles City, which was a key stop on cattle trails.
 

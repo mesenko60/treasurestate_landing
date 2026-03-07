@@ -13,7 +13,7 @@ Virginia City invites modern-day explorers to step back in time and experience t
 - **Elevation:** 5,804 ft
 - **Known For:** Montana Territorial Capital (1865-1875), preserved Victorian-era architecture, gold rush history
 - **Nearby Landmarks:** Nevada City (1 mile away), Alder Gulch, Madison River Valley, Yellowstone National Park (50 miles east/90 miles by road)
-- **Fun Fact:** The town was originally going to be named "Varina" after Jefferson Davis's wife, but the Union-supporting judge, Dr. G.G. Bissell, changed it to Virginia City when filing official documents.
+- **Fun Fact:** The town was originally going to be named "Varina" after Jefferson Davis's wife, but the Union-supporting judge, Dr. G.G. Bissell, changed it to Virginia City when filing official documents. Alder Gulch placers yielded an estimated $30 million in gold during the first three mining seasons (1863–1865); total district production exceeded $40 million. The vigilantes' signal "3-7-77" was left on bodies or doors to warn suspected criminals. (Source: Grokipedia)
 
 ---
 
@@ -21,6 +21,8 @@ Virginia City invites modern-day explorers to step back in time and experience t
 
 - **Nelson Story Sr.** – Pioneer entrepreneur who made $30,000 in gold from Virginia City mines, then led the first cattle drive from Texas to Montana in 1866, inspiring the novel "Lonesome Dove."
 - **Sarah Gammon Brown Bickford** – Born into slavery, she became the first and only woman in Montana—and probably the nation's only female African American—to own a utility when she purchased the Virginia City Water Company.
+- **Thomas Francis Meagher** – Irish revolutionary and Civil War general; served as acting Territorial Governor (1866–1867) and resided in a house on Idaho Street. (Source: Grokipedia)
+- **Wilbur F. Sanders, Nathaniel P. Langford, John X. Beidler** – Formed the Vigilance Committee of Alder Gulch on December 21, 1863, to combat road agents. (Source: Grokipedia)
 - **"The Ballad of Lefty Brown" (2017)** – Western film starring Bill Pullman that was filmed in Virginia City, showcasing the town's authentic 19th-century architecture and landscape.
 
 ---
@@ -44,13 +46,11 @@ The town operates on a highly seasonal rhythm, with most businesses open from Me
 
 ## History & Heritage
 
-Virginia City's story began with a lucky strike on May 26, 1863, when prospectors discovered gold in Alder Gulch. Within weeks, thousands of fortune seekers flooded the area, transforming a remote mountain gulch into a bustling boomtown. The settlement grew so rapidly that by 1864, Virginia City had become the largest community in the newly created Montana Territory, and in 1865, it was designated the territorial capital, a position it held for a decade.
+Virginia City's story began with a lucky strike on May 26, 1863, when prospectors including Bill Fairweather, Henry Edgar, and Barney Hughes discovered gold in Alder Gulch. The first pan yielded $2.40 in gold. Within weeks, thousands of fortune seekers flooded the area; by fall 1864 the population reached an estimated 10,000. Sluice boxes and hydraulic methods lined the 30-mile gulch, extracting approximately $30 million in gold during the first three mining seasons (1863–1865). The town was platted June 16, 1863, initially as Varina (after Varina Davis); the name soon shifted to Virginia City. In 1865, it was designated the territorial capital, a position it held until 1875 when the capital moved to Helena. (Source: Grokipedia)
 
-The town's early days were marked by lawlessness that gave rise to the famous Montana Vigilantes, who took justice into their own hands when the local sheriff, Henry Plummer, was discovered to be leading a gang of road agents. In a dramatic chapter of frontier justice, vigilantes hanged 21 men, including Plummer himself, from various makeshift gallows around town.
+The town's early days were marked by lawlessness. Henry Plummer, elected sheriff of Bannack in May 1863, was later identified as leader of a gang responsible for over 100 deaths. On December 21, 1863, Wilbur F. Sanders, Nathaniel P. Langford, and John X. Beidler formed the Vigilance Committee of Alder Gulch. The vigilantes executed at least 21 road agents, including Plummer and deputies Jack Gallagher and Buck Stinson on January 10, 1864. The signal "3-7-77" derived from Masonic influences among members. (Source: Grokipedia)
 
-As surface gold diminished, miners introduced hydraulic methods and later massive dredging operations that reworked the gulch between the 1890s and 1930s. Unlike many mining towns that became completely abandoned, Virginia City never entirely died out. When the gold ran out, there was still enough wealth to keep homes and businesses occupied, but not enough to modernize the buildings—effectively freezing the town in time.
-
-This preservation miracle was enhanced in the 1940s when Charles and Sue Bovey began purchasing and restoring historic structures. Their efforts culminated in 1997 when the State of Montana acquired the Bovey properties, ensuring the long-term protection of this national treasure. Today, Virginia City stands as a living testament to Montana's territorial days, with over 150 original buildings certified authentic by the Montana Historical Society.
+As surface gold diminished, dredging operations revived activity in the late 1890s. Charles and Sue Bovey began purchasing and restoring historic structures in the 1940s; the Virginia City Historic District was designated a National Historic Landmark in 1961. In 1997, the Montana Legislature created the Montana Heritage Commission (MHC), which now manages 248 historic structures across 160 acres. Annual visitor numbers exceed 566,000; operations and visitor spending contribute over $74 million annually to Montana's economy. (Source: Grokipedia)
 
 ---
 
@@ -83,3 +83,8 @@ Most accommodations operate seasonally from Memorial Day through Labor Day, with
 ## Plan Your Visit
 
 Ready to explore Virginia City? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're panning for gold, watching a melodrama at the Opera House, or simply strolling the boardwalks, Virginia City offers an authentic journey into Montana's colorful past that will create lasting memories for adventurers of all ages.
+
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Virginia_City,_Montana), Montana Heritage Commission, U.S. Census Bureau*

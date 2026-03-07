@@ -1,4 +1,3 @@
-"""
 # Explore Bigfork, Montana: Your Gateway to Untamed Adventures!
 
 Nestled on the shores of the majestic Flathead Lake, Bigfork, Montana, isn't just a picturesque village; it's a vibrant launchpad for thrill-seekers and nature lovers alike! Prepare to be captivated by its stunning natural beauty, from towering mountain peaks to crystal-clear waters, offering an unparalleled playground for exploration and unforgettable experiences. Whether you're craving adrenaline-pumping escapades or serene moments in pristine wilderness, Bigfork beckons with open arms and a spirit of adventure that's as wild as the surrounding landscapes.
@@ -7,21 +6,19 @@ Nestled on the shores of the majestic Flathead Lake, Bigfork, Montana, isn't jus
 
 ## Quick Facts
 
-- **Population:** Approximately 5,000 (Please verify with latest census data)
+- **Population:** 5,118 (2020 Census)
 - **County:** Flathead County
 - **Founded:** 1902
 - **Elevation:** Approximately 2,900 ft
 - **Known For:** Flathead Lake, Art Galleries, Bigfork Summer Playhouse, Outdoor Recreation, Swan River
 - **Nearby Landmarks:** Glacier National Park, Swan River, Jewel Basin Hiking Area, Flathead National Forest
-- **Fun Fact:** Bigfork is often called the "Village by the Bay" and has been recognized as one of the "100 Best Small Art Towns in the Nation."
+- **Fun Fact:** Bigfork is often called the "Village by the Bay" and has been recognized as one of the "100 Best Small Art Towns in the Nation." The town derives its name from the prominent "big fork" in the Swan River where it enters Flathead Lake. Main Street is named Electric Avenue due to the hydroelectric power plant operational since 1901. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-While Bigfork maintains a charming small-town feel, the broader Flathead Valley region has attracted notable individuals and inspired creative works. When specific well-known individuals directly from Bigfork are scarce, the influence of the region is still felt.
-
-- **J.K. Simmons** – The Academy Award-winning actor, known for his versatile roles in films like "Whiplash" and the "Spider-Man" series, has strong ties to Montana and owns property in the Flathead Valley area, often enjoying the region's natural beauty and tranquility.
+- **J.K. Simmons** – Academy Award winner (Whiplash, Spider-Man's J. Jonah Jameson) credits the Bigfork Summer Playhouse with launching his career; he performed there from 1977 to 1982. (Source: Grokipedia)
 - **Maile Meloy** – This critically acclaimed author, hailing from Montana, often draws deep inspiration from the state's unique landscapes and culture in her celebrated novels and short stories, reflecting the spirit of the region.
 - **Outdoor Adventure Films & Photography** – The stunning natural backdrop of Bigfork and the surrounding Flathead National Forest, including the Swan and Flathead Rivers, has frequently served as a breathtaking location and inspiration for outdoor adventure films, documentaries, and world-class photography, showcasing its wild, adventurous appeal.
 
@@ -44,7 +41,7 @@ Bigfork's adventurous spirit is mirrored in its dynamic local economy, which thr
 
 ## History & Heritage
 
-Bigfork's adventurous past is etched into its very foundations, with its official establishment in 1902 marking the culmination of pioneering spirit. Early homesteaders, drawn by the fertile lands surrounding the Swan River and the vast expanse of Flathead Lake, carved out a life in this rugged wilderness. The town rapidly grew as a pivotal hub for the burgeoning logging industry and agricultural pursuits, with historic steamboats navigating the lake, ferrying goods and connecting communities. Over the ensuing decades, Bigfork masterfully evolved, transforming its raw natural beauty into a beacon for artists, intrepid explorers, and those seeking a community that harmoniously blends tranquility with a vibrant, adventurous lifestyle, all while cherishing and preserving its rich historical tapestry.
+Bigfork's adventurous past is etched into its very foundations. Everit L. Sliter arrived in 1889, purchased 139.6 acres from homesteader George Lakin for $1,380, and opened the Flathead Valley's first general store at the Swan River–Flathead Lake confluence in 1892. He planted 500 fruit trees and platted the town in 1901; the main street was named Electric Avenue for the hydroelectric plant operational since 1901. The Bigfork Summer Playhouse, founded in 1960 by Dr. Firman "Bo" Brown, has operated for over 65 years and received the Montana Governor's Award for the Arts. The annual Bigfork Festival of the Arts, held the first weekend of August since 1978, features over 145 booths. (Source: Grokipedia)
 
 ---
 
@@ -71,4 +68,8 @@ After a day of thrilling adventures, Bigfork offers a welcoming range of accommo
 ## Plan Your Visit
 
 Ready to explore Bigfork? Add this jewel of Montana to your travel itinerary and discover the untamed charm, rich history, and boundless adventure waiting for you in Big Sky Country. Your unforgettable journey starts here!
-"""
+
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Bigfork,_Montana), U.S. Census Bureau*

@@ -12,15 +12,16 @@ Fort Benton beckons the adventurous spirit with its dramatic riverside setting a
 - **Elevation:** 2,651 ft (808 m)
 - **Known For:** Being the "Birthplace of Montana" and the "World's Innermost Port"
 - **Nearby Landmarks:** Upper Missouri River Breaks National Monument, Lewis & Clark Trail, Highwood Mountains
-- **Fun Fact:** Fort Benton is the oldest continuously occupied settlement in Montana, and Forbes named it one of the fifteen prettiest towns in America
+- **Fun Fact:** Fort Benton is the oldest continuously occupied settlement in Montana (est. 1846). Forbes named it one of the fifteen prettiest towns in America. Renamed Christmas Day 1850 in honor of Senator Thomas Hart Benton. First steamboats arrived July 2, 1860; 70 arrivals in 1866–1867 alone. Front Street between 15th and 16th was called the "bloodiest block in the West." Fort Benton Historic District became a National Historic Landmark July 4, 1961. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Denise Curry** – Olympic gold medalist and basketball Hall of Famer who was born in Fort Benton
-- **U.S. Grant Sharp, Jr.** – Admiral who commanded U.S. Naval forces during the early years of the Vietnam War
-- **Shep the Dog** – Fort Benton's famous loyal dog who waited at the train station for his deceased owner for over five years, becoming a national symbol of loyalty
+- **Alexander Culbertson** – American Fur Company agent who established Fort Benton in 1846; married Natawista (Blood Blackfeet); oversaw relocation from Fort Lewis. (Source: Grokipedia)
+- **Denise Curry** – Olympic gold medalist and basketball Hall of Famer, born in Fort Benton. (Source: Grokipedia)
+- **U.S. Grant Sharp, Jr.** – Admiral who commanded U.S. Naval forces during the early years of the Vietnam War. (Source: Grokipedia)
+- **Shep the Dog** – Fort Benton's famous loyal dog who waited at the train station for his deceased owner for over five years, becoming a national symbol of loyalty. (Source: Grokipedia)
 
 ---
 
@@ -41,7 +42,7 @@ Fort Benton's economy stands firmly rooted in its agricultural heritage while em
 
 ## History & Heritage
 
-Fort Benton's story flows as dramatically as the Missouri River that shaped its destiny. Established in 1846 as a fur trading post by Alexander Culbertson for the American Fur Company, the settlement quickly became the economic lifeline of the northern plains. For three decades, Fort Benton reigned as the "World's Innermost Port," with steamboats navigating 3,500 miles from New Orleans to deliver supplies and passengers before railroad expansion changed transportation forever. The town witnessed the gold rush era, served as the eastern terminus of the 642-mile Mullan Road connecting the Missouri and Columbia Rivers, and weathered violent conflicts between settlers and Native American tribes. When Montana achieved territorial status, Fort Benton had already established itself as the region's commercial hub, earning its nickname as the "Birthplace of Montana." The town's remarkably preserved levee, historic fort, and grand 19th-century buildings—now protected as a National Historic Landmark District—tell the story of a frontier community that played an outsized role in western expansion. From fur traders and steamboat captains to gold seekers and cattle barons, Fort Benton's heritage embodies the adventurous spirit that defined America's westward journey.
+Fort Benton originated as an American Fur Company trading post in 1846; Alexander Culbertson relocated from Fort Lewis (18 miles upstream) after Blackfeet leaders requested a site closer to hunting grounds. Adobe construction completed by 1860. Renamed Fort Benton Christmas Day 1850 for Senator Thomas Hart Benton. First steamboats (Chippewa, Key West) arrived July 2, 1860; 23 vessels by 1865; ~70 arrivals in 1866–1867. Served as head of navigation for Montana gold rushes; eastern terminus of the 642-mile Mullan Road. Front Street earned infamy as the "bloodiest block in the West." Montana Central Railway arrived September 1887; population fell from 1,624 (1880) to 624 (1890). Fort Benton Historic District designated National Historic Landmark July 4, 1961. (Source: Grokipedia)
 
 ---
 
@@ -68,3 +69,9 @@ Fort Benton offers accommodations that blend historic charm with modern comfort,
 ## Plan Your Visit
 
 Ready to explore Fort Benton? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Fort_Benton,_Montana), U.S. Census Bureau*

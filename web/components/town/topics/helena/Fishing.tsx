@@ -102,7 +102,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h3>Spring Meadow Lake</h3>
       <p>
         Spring Meadow Lake State Park (2 miles from downtown) is {townName}'s urban fishing
-        gem — a crystal-clear, 30-acre spring-fed lake managed as catch-and-release for trout.
+        gem — a crystal-clear, 13.7-acre spring-fed pond (officially named Spring Meadow Lake)
+        managed as catch-and-release for trout.
         The lake's spring water maintains cold temperatures year-round, supporting healthy
         rainbow trout that test light-tackle anglers in gin-clear conditions. It's a rare
         opportunity to fish for trout on a lunch break from the state capitol. Fly fishing

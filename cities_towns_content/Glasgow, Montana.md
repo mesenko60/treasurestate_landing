@@ -1,36 +1,69 @@
-### Quick Facts
+# Glasgow, Montana: Gateway to Fort Peck and the Hi-Line
+The Most Isolated Incorporated Town in the Lower 48
 
-- **Population:** ~TBD (Source: U.S. Census Bureau estimates)
-- **County:** TBD County
-- **Elevation:** TBD ft
-- **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
+Glasgow is the county seat of Valley County in northeastern Montana, with a population of 3,194. It holds the distinction of being the most isolated incorporated municipality in the contiguous United States, situated over 140 miles from the nearest town of comparable size. Founded in 1887 as a Great Northern Railway siding in the Milk River Valley, Glasgow grew dramatically during the Cold War era when Glasgow Air Force Base operated from 1957 to 1976, peaking at around 6,400 residents. Today, agriculture, ranching, and commerce sustain the community amid the vast rural expanse of Montana's Hi-Line.
 
-### History & Heritage
+---
 
-The quiet town of Glasgow represents the vast, enduring frontier spirit of Montana.
+## Quick Facts
 
-The history of Glasgow is closely tied to the pioneering spirit of early Montana. Founded during the homesteading or railroad eras, the town grew as a central hub for the surrounding farmers and ranchers who worked the expansive plains and river valleys. Today, it retains its deep agricultural heritage and stands as a testament to the resilience of rural Montana communities.
+- **Population:** 3,194 (2020 Census)
+- **County:** Valley County
+- **Founded:** 1887 (railroad siding); post office 1888
+- **Elevation:** 2,093 ft (638 m)
+- **Known For:** Most isolated town in lower 48, Glasgow AFB history, Fort Peck Reservoir, Milk River Valley
+- **Nearby Landmarks:** Fort Peck Reservoir, Milk River, Valley County Pioneer Museum
+- **Fun Fact:** Glasgow was reportedly named when a railway clerk spun a globe and pointed at Glasgow, Scotland. Glasgow AFB hosted F-101 Voodoo interceptors and later B-52 bombers; its 1976 closure led to ~16,000 residents departing. Record low -59°F (Feb 15, 1936). (Source: Grokipedia)
 
-### Top Things to Do in Glasgow
+---
 
-- **Explore the Surrounding Wilderness:** Glasgow serves as a fantastic, quiet basecamp for exploring the vast public lands, rivers, and mountain ranges that define this region of Montana.
-- **Experience Local Culture:** Visit the local businesses, cafes, and historic sites in town to experience the genuine, welcoming hospitality of a classic Montana ranching community.
-- **Hunting and Fishing:** The surrounding agricultural fields, prairies, and waterways provide excellent, uncrowded opportunities for seasonal hunting and fishing.
+## Notable People & Pop Culture
 
-### Local Industry & Economy
+*(Grokipedia did not list specific notable residents; local history emphasizes pioneer and military-era community.)*
 
-The economy of Glasgow is primarily driven by agriculture. The vast expanses of land surrounding the town are dedicated to cattle ranching and dryland farming (primarily wheat, barley, and hay). Small, locally-owned businesses provide essential services and goods to the community, while the local school district often serves as one of the primary civic anchors and employers in town.
+---
 
-### Getting There & Nearby Destinations
+## Top Things to Do in Glasgow
 
-- **Getting There:** Glasgow is accessible via Montana's network of scenic state highways and local county roads, offering a beautiful drive no matter which direction you approach from.
-- **Nearby Destinations:**
-    - **Regional Hubs:** Larger neighboring cities offer comprehensive dining, shopping, and commercial airports.
-    - **State Parks and Public Lands:** Visitors can easily take day trips to nearby state parks, national forests, or wildlife refuges.
+- **Fort Peck Reservoir** – Montana's largest body of water (134 miles long); fishing for 50+ species, boating, camping
+- **Valley County Pioneer Museum** – Restored Great Northern caboose, pioneer artifacts, taxidermy
+- **Children's Museum of Northeast Montana** – Hands-on exhibits for ages 2–12
+- **Glasgow Base Pond & Faraasen Park** – Milk River fishing access, picnicking
+- **Hunting** – Antelope, mule deer, upland birds in Valley County
 
-### Where to Stay in Glasgow
+---
 
-Because Glasgow is a smaller, residential community, traditional commercial lodging can be limited.
-- **Local Motels:** There may be small, independent motels in or near town offering basic accommodations for highway travelers and hunters.
-- **Nearby Cities:** Many visitors choose to stay in larger regional hubs a short drive away, utilizing Glasgow as a scenic day-trip destination.
-- **Camping:** For outdoor enthusiasts, nearby public lands often provide beautiful, rustic camping options.
+## Local Industry & Economy
+
+Agriculture dominates: dryland farming (wheat, barley, peas, lentils, chickpeas, flax), cattle ranching, and irrigated production along the Milk River. Glasgow Stockyards hosts the leading livestock auction in northeastern Montana. Median household income: ~$77,000 (2023). Tourism targets Fort Peck Lake, the Montana Dinosaur Trail, and Native American heritage. Unemployment ~2.2% (Nov 2024). (Source: Grokipedia)
+
+---
+
+## History & Heritage
+
+Founded 1887 as a Great Northern Railway siding; name reportedly from Glasgow, Scotland (clerk spun globe). Post office opened June 19, 1888. Valley County created 1893 with Glasgow as seat. First National Bank established 1891. Glasgow Air Force Base opened 1957 (F-101 interceptors); SAC assumed control 1960; B-52/KC-135 operations from 1962. Population peaked ~6,400 in mid-1960s. Base closed 1976; ~16,000 departed; St. Marie largely abandoned. Population declined to ~2,889 (2009); stabilized ~3,200. (Source: Grokipedia)
+
+---
+
+## Getting There & Nearby Destinations
+
+- **Getting There:** U.S. Highway 2 passes through Glasgow. Glasgow Valley County Airport (former AFB) serves general aviation.
+- **Nearby Destinations:** Fort Peck Reservoir, Malta, Wolf Point, Sidney; Little Rocky Mountains ~100 miles SW
+
+---
+
+## Where to Stay in Glasgow
+
+Limited commercial lodging; motels and campgrounds available. Fort Peck Reservoir offers camping and recreation.
+
+---
+
+## Plan Your Visit
+
+Ready to explore Glasgow? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From Fort Peck's vast waters to pioneer heritage and the legacy of the Cold War air base, Glasgow offers an authentic Hi-Line experience.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Glasgow,_Montana), U.S. Census Bureau*

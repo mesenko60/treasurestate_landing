@@ -1,13 +1,22 @@
 ### Quick Facts
 
-- **Population:** ~2,015 (Source: U.S. Census Bureau estimates)
+- **Population:** 1,857 (2020 Census); ~1,990 (2025 estimate)
 - **County:** Stillwater County (County Seat)
+- **Founded:** 1874 (trading post), platted late 19th century, incorporated 1907
 - **Elevation:** 3,586 ft (1,093 m)
 - **Known For:** The confluence of the Stillwater and Yellowstone Rivers, gateway to the Beartooth Mountains, and the nearby Sibanye-Stillwater palladium/platinum mine.
+- **Fun Fact:** The early trading post earned the nickname "Sheep Dip" due to notoriously foul-tasting whiskey sold there. The name changed from Stillwater to Columbus in 1894 to avoid postal confusion with Stillwater, Minnesota, aligning with the World's Columbian Exposition. Montana Silversmiths has been headquartered in Columbus since 1973. (Source: Grokipedia)
+
+### Notable People & Pop Culture
+
+- **Dwan Edwards** – Born in Billings, raised in Columbus; two-time all-state linebacker at Columbus High School; 11-year NFL career with Ravens, Panthers, Bills, Chargers; Super Bowl XLVII appearance. (Source: Grokipedia)
+- **Annie Duke** – Professional poker player and decision strategist; resided in Columbus in the early 1990s; won 2004 World Series of Poker bracelet; author of *Thinking in Bets* (2018). (Source: Grokipedia)
+- **Jack H. Vaughn** – World War II veteran, Peace Corps director (1966–1969), U.S. ambassador to Panama and Colombia; born and raised in Columbus. (Source: Grokipedia)
+- **Mary Frances Garrigus** – One of Montana's first Native American women admitted to the bar (1918); nurse and pioneering lawyer born in Columbus. (Source: Grokipedia)
 
 ### History & Heritage
 
-Columbus sits beautifully at the junction where the sparkling waters of the Stillwater River flow into the mighty Yellowstone River. Originally known as "Sheep Dip" and then "Stillwater," the town was eventually renamed Columbus. It grew as a vital stagecoach stop and later as a key station along the Northern Pacific Railway in the late 19th century. The town served as the agricultural shipping hub for the fertile Yellowstone Valley and the rugged mountain ranches to the south. Today, Columbus retains its historic downtown charm while serving as the bustling county seat of Stillwater County, blending its rich pioneer history with modern industry and recreation.
+William Clark noted the site in 1806 during his return journey down the Yellowstone River. Horace Countryman established a trading post west of the current townsite in 1874 to supply the Crow. By 1876 it was the Stillwater stage station on the Yellowstone Wagon Road. The community relocated eastward in the early 1880s and adopted the name Stillwater. The Northern Pacific Railroad arrived in 1882. The name changed to Columbus in 1894 to avoid postal confusion with Stillwater, Minnesota. Columbus incorporated in 1907 and became county seat when Stillwater County was created in 1913. The Stillwater Mine opened in 1985, extracting platinum and palladium from the Stillwater Igneous Complex; Sibanye-Stillwater's Montana operations employ ~1,050 workers. The historic Atlas Block reflects the town's architectural heritage. (Source: Grokipedia)
 
 ### Top Things to Do in Columbus
 
@@ -35,3 +44,7 @@ Thanks to its location on I-90 and the nearby mining industry, Columbus offers e
 - **Major Hotels:** There are a few recognizable chain hotels located right off the interstate providing modern, comfortable amenities.
 - **Historic and Boutique Stays:** The town features historic local motels and bed-and-breakfasts closer to the downtown area.
 - **Camping:** Itch-Kep-Pe Park is a local favorite, offering wonderful, affordable riverside camping right on the edge of town. There are also private RV parks available along the interstate corridor.
+
+### Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Columbus,_Montana), U.S. Census Bureau, Sibanye-Stillwater*

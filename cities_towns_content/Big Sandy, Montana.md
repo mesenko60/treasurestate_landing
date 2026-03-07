@@ -7,20 +7,21 @@ Nestled among the undulating hills of golden wheat fields, Big Sandy beckons the
 
 ## Quick Facts
 
-- **Population:** 605
+- **Population:** 605 (2020 Census); peak 703 (2000)
 - **County:** Chouteau County
-- **Founded:** 1887
-- **Elevation:** 2,747 ft
-- **Known For:** Agricultural heritage, being part of Montana's "Golden Triangle" wheat region, and hometown of Pearl Jam bassist Jeff Ament
+- **Founded:** 1887 (post office Dec 22; St. Paul, Minneapolis & Manitoba Railway)
+- **Elevation:** 2,704 ft (824 m)
+- **Known For:** Agricultural heritage, Montana's "Golden Triangle" wheat region, hometown of Pearl Jam bassist Jeff Ament and U.S. Senator Jon Tester
 - **Nearby Landmarks:** Bear Paw Mountains, Lonesome Lake, Missouri River
-- **Fun Fact:** Big Bud 747, claimed to be the largest farm tractor in the world, was located here from 1997 until 2009, and returned in 2020
+- **Fun Fact:** Big Bud 747, the world's largest farm tractor (1,100 hp, 27×20×14 ft), was located near Big Sandy from 1997–2009 and returned in Sept 2020. Since 2019, residents have embraced "The Puddle"—a persistent puddle on Main Street—as a quirky landmark, with a Puddle Preservation Society and Puddlepalooza events. The Quinn Institute for Regenerative Agriculture opened in 2024 on 700 acres. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Jeff Ament** – Bass player for Pearl Jam who was raised in Big Sandy and later built the town's skatepark through his Montana Pool Service non-profit
-- **Jon Tester** – Former Democratic U.S. Senator and organic farmer who served on the Big Sandy school board and taught music at F.E. Miley Elementary
+- **Jeff Ament** – Pearl Jam bassist; grew up in Big Sandy, graduated Big Sandy High School 1981. Funded the town's skatepark in 2010 ($40,000 gift); built his first ramp in Big Sandy in 1976. (Source: Grokipedia)
+- **Jon Tester** – Third-generation farmer raised near Big Sandy; U.S. Senator (D-MT) 2007–2025. Served on Big Sandy School Board 1983–1990; manages an 1,800-acre organic farm west of town. Returned to the family farm in Jan 2025. (Source: Grokipedia)
+- **Bob Quinn** – Fourth-generation farmer; pioneered organic KAMUT® khorasan wheat in the 1980s. Founded Quinn Institute (2024), Big Sandy Organics (2015), and Oil Barn (2012). PhD in plant biochemistry from MSU. (Source: Grokipedia)
 - **Charlie Russell Connection** – The famed western artist once worked as a ranch hand in the Big Sandy area
 
 ---
@@ -42,7 +43,7 @@ Big Sandy continues to thrive as a vital trade center for farmers and ranchers w
 
 ## History & Heritage
 
-Big Sandy's story begins with its namesake creek and a colorful tale of a muleskinner known as "Big Sandy" Lane, who allegedly cursed a flooded crossing so effectively that the waters immediately receded. The town officially took root in 1887 with the arrival of the St. Paul, Minneapolis & Manitoba Railway (later the Great Northern Railway). By 1900, the McNamara Cattle Company had established the town's first store, and a homesteading boom followed from 1909 through the next decade. The settlement served as a crucial junction for supply routes from the Missouri River to Fort Assiniboine, becoming an important stopping place between Fort Benton, Judith Landing, Virgelle, and Havre. This rich frontier heritage is preserved and celebrated at the Big Sandy Historical Society Museum, where visitors can step back in time to experience the town's evolution from railway stop to agricultural community.
+Big Sandy originated as a railroad station in 1887 when the St. Paul, Minneapolis & Manitoba Railway (later Great Northern) extended its line from Great Falls toward Canada. The name derives from Big Sandy Creek and, by legend, muleskinner "Big Sandy" Lane who encountered flooding there. Leigh Marlow became the first postmaster (Dec 22, 1887). McNamara & Marlow established an early general store; Cornelius J. McNamara and Thomas A. Marlow built expansive ranches. The Enlarged Homestead Act of 1909 (320-acre claims) spurred a population boom through the 1910s. During WWI, Big Sandy emerged as a key trade center for wheat and barley in Montana's Golden Triangle. The Great Depression and Dust Bowl brought severe hardship. The historic water tower was dismantled in 1993. Mayor-council government established 1912. Big Sandy Historical Society Museum occupies the former Great Northern depot. (Source: Grokipedia)
 
 ---
 
@@ -69,3 +70,9 @@ Visitors to Big Sandy can experience the quiet charm of small-town Montana with 
 ## Plan Your Visit
 
 Ready to explore Big Sandy? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Big_Sandy,_Montana), U.S. Census Bureau, Big Sandy Historical Society*

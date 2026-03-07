@@ -1,13 +1,15 @@
 ### Quick Facts
 
-- **Population:** ~2,055 (Source: U.S. Census Bureau estimates)
-- **County:** Rosebud County County
+- **Population:** 2,156 (2023); 2,096 (2020 Census)
+- **County:** Rosebud County
+- **Founded:** 1924 (Northern Pacific Railway company town)
 - **Elevation:** 3,222 ft (982 m)
 - **Known For:** Being the "Energy Capital of Montana," massive coal mining operations, the Colstrip Power Plant, and surprisingly lush city parks.
+- **Fun Fact:** The Colstrip Power Plant has a total capacity of 2,094 megawatts—the second-largest coal-fired facility west of the Mississippi. Water for the town's 22 parks is piped ~40 miles from the Yellowstone River. Units 1 and 2 retired in 2020; Units 3 and 4 (1,480 MW) remain operational. Rosebud Mine expansion approved in August 2025 extends operations through 2039. (Source: Grokipedia)
 
 ### History & Heritage
 
-Colstrip’s history is entirely defined by energy. The town was established in 1923 by the Northern Pacific Railway to provide a steady supply of coal for their newly introduced steam locomotives. The town literally grew out of the prairie alongside the massive open-pit coal mines. When the railroad transitioned from coal to diesel in the late 1950s, the town nearly vanished. However, in the 1970s, the Montana Power Company purchased the rights to the coal and built a massive, multi-unit coal-fired electrical generating station right next to the mine. This sparked a massive economic and population boom, transforming Colstrip into a modern, planned company town with excellent infrastructure.
+Colstrip was established in 1924 by the Northern Pacific Railway as a company town to support coal mining for steam locomotives. The Foley brothers received extraction contracts in 1923; Northern Pacific extracted approximately 34 million tons before dieselization. The strip mine closed by the late 1950s. Montana Power Company initiated planning for the Colstrip Steam Electric Station in the late 1960s. Units 1 and 2 entered service in 1975–1976 (333 MW each); Units 3 and 4 followed in 1984–1986 (~740 MW each). Units 1 and 2 retired in January 2020. The Rosebud Mine delivers 7.7–9.95 million tons annually via conveyor systems. Coal plant and mine properties accounted for ~80% of Rosebud County's tax base in 2017. Median household income in 2023 was $86,000. A 2025 federal approval authorized an additional 71 million tons from the Rosebud Mine expansion. (Source: Grokipedia)
 
 ### Top Things to Do in Colstrip
 
@@ -35,3 +37,7 @@ Because Colstrip regularly hosts visiting engineers, contractors, and energy wor
 - **Local Hotels:** The town features a few modern, comfortable hotels and motels catering to business and leisure travelers alike.
 - **Rustic Lodge B&B:** A unique, cozy bed-and-breakfast option available locally.
 - **RV Parks:** There are facilities for RV travelers and contractors staying in the area.
+
+### Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Colstrip,_Montana), U.S. Census Bureau*

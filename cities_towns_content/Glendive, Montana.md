@@ -13,12 +13,16 @@ Nestled between the winding Yellowstone River and the dramatic badlands of Makos
 - **Elevation:** 2,064 ft
 - **Known For:** Makoshika State Park, dinosaur fossils, Yellowstone River fishing
 - **Nearby Landmarks:** Theodore Roosevelt National Park (ND), Yellowstone River, Short Pines OHV Recreation Area
-- **Fun Fact:** Glendive holds Montana's all-time high temperature record of 117°F (47°C), recorded on July 20, 1893
+- **Fun Fact:** Glendive Creek was named in 1856 by Sir George Gore after a stream in Ireland. Glendive was the first railroad town in the Yellowstone Valley (Northern Pacific, 1881). Makoshika State Park preserves Hell Creek Formation fossils including T. rex and Triceratops. A 2015 pipeline spill contaminated the municipal water supply for weeks. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
+- **Sir George Gore** – Irish baronet who named Glendive Creek in 1856 during his hunting expedition through the Yellowstone Valley. (Source: Grokipedia)
+- **Hank Worden** – Character actor raised near Glendive; appeared in over 140 Westerns including *The Searchers* and *Twin Peaks*. (Source: Grokipedia)
+- **James Verne Dusenberry** – Anthropologist who taught at Dawson County High School; authored *The Montana Cree: A Study in Religious Persistence* (1962). (Source: Grokipedia)
+- **Pamela Harr** – Bronze sculptor inducted into the National Cowgirl Museum and Hall of Fame; donated life-sized sculptures to Glendive. (Source: Grokipedia)
 - **Tim M. Babcock** – 16th Governor of Montana, grew up on a ranch near Glendive and graduated from Dawson County High School
 - **Matt Rosendale** – Montana State Auditor, U.S. Representative for Montana's at-large congressional district (2020-)
 - **Mike Person** – NFL offensive lineman who played for the San Francisco 49ers
@@ -47,7 +51,7 @@ The area that would become Glendive was first named by Sir George Gore, a wealth
 
 The Montana territorial legislature created Dawson County in 1869 but did not initially designate a county seat. In 1881, Glendive citizens successfully petitioned to name their growing community as the county seat, cementing its importance in the region. The town served as the headquarters for the Yellowstone Division of the Northern Pacific Railway, which encompassed 875 route miles, establishing it as an important transportation hub in eastern Montana.
 
-Throughout its history, Glendive has experienced various economic phases, evolving from a railroad town to an agricultural and ranching center, with periodic influence from the oil industry. The city's cultural identity is deeply tied to its natural surroundings, particularly the Yellowstone River and the badlands formations of Makoshika State Park, with the discovery of dinosaur fossils contributing significantly to the city's heritage and tourism appeal.
+Throughout its history, Glendive has experienced various economic phases, evolving from a railroad town to an agricultural and ranching center, with periodic influence from the oil industry. The city's cultural identity is deeply tied to its natural surroundings, particularly the Yellowstone River and the badlands formations of Makoshika State Park, with the discovery of dinosaur fossils contributing significantly to the city's heritage and tourism appeal. Williston Basin oil discoveries in 1951 briefly doubled Montana's oil production. Recurrent Yellowstone River ice jams have caused damaging floods about 30 times since 1890; a 2015 pipeline rupture spilled 30,000–40,000 barrels of crude upstream, contaminating Glendive's water supply. (Source: Grokipedia)
 
 ---
 
@@ -76,3 +80,9 @@ For those seeking a more immersive outdoor experience, Makoshika State Park Camp
 ## Plan Your Visit
 
 Ready to explore Glendive? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're drawn to the prehistoric wonders of Makoshika State Park, the fishing opportunities on the Yellowstone River, or the welcoming atmosphere of this eastern Montana community, Glendive offers a genuine Montana experience off the beaten path.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Glendive,_Montana), U.S. Census Bureau*

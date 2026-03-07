@@ -13,14 +13,17 @@ Nestled in the heart of Montana's Madison Range, Big Sky isn't just a destinatio
 - **Elevation:** 6,200 ft (Meadow area) to 11,166 ft (Lone Mountain summit)
 - **Known For:** World-class skiing, proximity to Yellowstone National Park, Blue Ribbon trout fishing
 - **Nearby Landmarks:** Yellowstone National Park, Gallatin River, Madison Range, Lone Mountain
-- **Fun Fact:** Big Sky Resort markets itself as having the "Biggest Skiing in America" with over 5,800 acres of skiable terrain and receives approximately 400 inches of snowfall annually at higher elevations.
+- **Fun Fact:** Big Sky Resort markets itself as having the "Biggest Skiing in America" with over 5,800 acres of skiable terrain and receives approximately 400 inches of snowfall annually at higher elevations. The Yellowstone Club, founded in 1997 by Tim Blixseth, requires a $300,000 initiation fee. Wolf watching contributes approximately $82.7 million annually to local economies. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Chet Huntley** – Legendary NBC news anchor who co-hosted "The Huntley-Brinkley Report" (1956-1970), winning 8 Emmy Awards and 2 Peabody Awards. As Big Sky's visionary founder, he transformed this Montana wilderness into a world-class resort destination before his untimely death in 1974.
-- **Justin Timberlake and Jessica Biel** – This A-list Hollywood power couple owns property in the area and frequently visits Big Sky. Timberlake, a Grammy-winning musician and actor, and Biel, an acclaimed actress and producer, are among the most recognizable celebrities associated with the region.
+- **Chet Huntley** – Legendary NBC news anchor who co-hosted "The Huntley-Brinkley Report" (1956-1970), winning 8 Emmy Awards and 2 Peabody Awards. As Big Sky's visionary founder, he acquired nearly 11,000 acres of ranchland in the late 1960s and opened Big Sky Resort in December 1973; he died from cancer in 1974. (Source: Grokipedia)
+- **Justin Timberlake and Jessica Biel** – This A-list Hollywood power couple has owned property at the Yellowstone Club since 2015, raising their family there. (Source: Grokipedia)
+- **Bill Gates** – Microsoft co-founder is a longtime Yellowstone Club member and frequent visitor. (Source: Grokipedia)
+- **Tom Brady** – Former NFL quarterback joined the Yellowstone Club around 2022. (Source: Grokipedia)
+- **Ben Affleck** – Past resident with a home in Big Sky during the early 2010s. (Source: Grokipedia)
 - **"A River Runs Through It"** – The 1992 film, directed by Robert Redford and starring Brad Pitt, featured the Gallatin River which runs through Big Sky, bringing national attention to the area's spectacular fly fishing opportunities and pristine natural beauty.
 
 ---
@@ -42,7 +45,9 @@ Big Sky's economy pulses with the rhythm of outdoor adventure, primarily driven 
 
 ## History & Heritage
 
-Big Sky's story begins relatively recently in Montana's rich history, emerging from pristine wilderness to world-class destination in just a few decades. Before development, the area was primarily ranch land, with the Crail Ranch (established in 1902) being one of the most significant historical properties still preserved today. The pivotal moment came when renowned NBC news anchor Chet Huntley, a Montana native, envisioned creating a mountain resort in his home state. Huntley began conceptualizing the resort in 1968 while still at NBC, and after retiring in 1970, he returned to Montana with his wife Tippy to transform his dream into reality. He purchased Crail Ranch and assembled investors to develop what would become Big Sky Resort. The resort officially opened for its first winter season in December 1973, initially featuring just four chairlifts and a gondola. Tragically, Huntley died from lung cancer on March 19, 1974, just months after the resort's opening, never fully witnessing how his vision would flourish. Despite this loss, development continued, with the area growing steadily through the decades. A significant milestone came in 1995 with the construction of the Lone Peak Tram, taking skiing to higher altitudes at 11,166 feet. In 2013, Big Sky Resort merged with neighboring Moonlight Basin, creating what they market as the "Biggest Skiing in America" with over 5,800 acres of terrain. Throughout its development, Big Sky has maintained three distinct areas: the "Meadow" (an alpine valley at 6,200 feet), the "Mountain" (base elevation of 7,400 feet where the ski resorts are located), and the "Canyon" (along the Gallatin River). While lacking the century-old mining or railroad heritage of many Montana towns, Big Sky's history represents American entrepreneurship and the vision to transform untamed wilderness into a world-renowned destination while preserving the natural beauty that makes Montana "Big Sky Country."
+Big Sky's story begins relatively recently in Montana's rich history, emerging from pristine wilderness to world-class destination in just a few decades. Augustus Franklin Crail established the first homestead in 1901 on 160 acres in what is now Meadow Village for $150; by 1910 the sparse population numbered just 47. The pivotal moment came when NBC news anchor Chet Huntley began acquiring nearly 11,000 acres in the late 1960s, including the historic Crail Ranch. Big Sky Resort opened in December 1973 with four chairlifts and the Huntley Lodge; Boyne Resorts acquired it for $8.5 million in 1976. The Yellowstone Club was founded in 1997 by Tim Blixseth on 13,600 acres. In 2013, Boyne merged with Moonlight Basin and Spanish Peaks, creating over 5,800 acres of contiguous terrain. The Big Sky Resort Area District collects a 4% resort tax, generating approximately $21.3 million in FY 2024 for roads, fire protection, and sanitation. (Source: Grokipedia)
+
+Throughout its development, Big Sky has maintained three distinct areas: the "Meadow" (alpine valley at 6,200 feet), the "Mountain" (base 7,400 feet), and the "Canyon" (along the Gallatin River). The Big Sky Resort Area District's resort tax was extended through 2065 by voters in May 2025. While lacking century-old mining heritage, Big Sky's history represents American entrepreneurship—transforming wilderness into a world-renowned destination while preserving the natural beauty that makes Montana "Big Sky Country." (Source: Grokipedia)
 
 ---
 
@@ -57,6 +62,11 @@ Big Sky's story begins relatively recently in Montana's rich history, emerging f
 ## Getting There & Nearby Destinations
 
 Big Sky sits nestled along the scenic U.S. Highway 191 corridor, approximately 45 miles southwest of Bozeman and 45 miles north of West Yellowstone. Most visitors arrive via Bozeman Yellowstone International Airport (BZN), Montana's busiest airport, which offers direct flights from major U.S. cities and seamless connections worldwide. From the airport, the drive to Big Sky takes about an hour along the Gallatin Canyon, a spectacular journey that follows the rushing Gallatin River through towering rock formations and dense forests—keep your eyes peeled for wildlife sightings along this stretch. For those driving from further afield, Big Sky is 320 miles from Spokane, 420 miles from Salt Lake City, and 450 miles from Calgary. Once in Big Sky, a rental car is recommended for exploring the region, though free shuttle services connect the Mountain Village with other areas during ski season. Nearby destinations worth exploring include Yellowstone National Park (the west entrance is just 45 miles south), the vibrant college town of Bozeman with its museums and dining scene, the historic fishing town of Ennis on the Madison River (50 miles west), and the charming gateway community of West Yellowstone. The surrounding Gallatin National Forest offers endless opportunities for backcountry adventures in virtually every direction.
+
+---
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Big_Sky,_Montana), Visit Big Sky, U.S. Census Bureau*
 
 ---
 

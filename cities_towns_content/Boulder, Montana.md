@@ -12,15 +12,15 @@ Boulder, Montana is a rugged frontier town nestled in a beautiful valley surroun
 - **Elevation:** 4,990 ft
 - **Known For:** Hot springs, radon health mines, historic buildings, gateway to outdoor recreation
 - **Nearby Landmarks:** Boulder Batholith, Boulder River, Elkhorn Mountains, Continental Divide
-- **Fun Fact:** Boulder was once a candidate to become Montana's state capital in 1892, though it finished last in the voting with only 295 votes.
+- **Fun Fact:** Boulder was once a candidate to become Montana's state capital in 1892, though it finished last in the voting with only 295 votes. Boulder Hot Springs hosted U.S. presidents Theodore Roosevelt, Warren G. Harding, and Franklin D. Roosevelt. The Montana School for the Deaf and Blind originated in Boulder in 1893. The Merry Widow Health Mine draws thousands of visitors annually for radon therapy. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- Patrick Duffy – Actor known for "Dallas" and "Step by Step," born in Townsend, Montana (his parents later owned the Boulder Bar in Montana).
-- James E. Riley – Pioneer and prospector who built the first structure on the site of what would become the Boulder Hot Springs in 1863.
-- Montana Developmental Center – While not a person, this historic institution has been featured in various documentaries about healthcare and social services in rural America.
+- **Patrick Duffy** – Actor known for *Dallas* (Bobby Ewing) and *Step by Step*; spent early childhood in Boulder where his parents owned the Owl Bar tavern. His parents were tragically murdered in an armed robbery at the Owl Bar in 1986. (Source: Grokipedia)
+- **James E. Riley** – Pioneer and prospector who built the first structure (saloon and bathhouse) on the Boulder Hot Springs site in 1863. (Source: Grokipedia)
+- **James A. Murray** – Wealthy investor who purchased and renovated Boulder Hot Springs in 1909–1910, adding Mission-style architecture; the resort attracted U.S. presidents. (Source: Grokipedia)
 
 ---
 
@@ -41,7 +41,7 @@ Boulder's economy is deeply rooted in healthcare, social services, and governmen
 
 ## History & Heritage
 
-Named for the many large boulders scattered throughout the valley, Boulder began as a stagecoach station in the early 1860s, serving travelers on the route between Fort Benton and Virginia City. The settlement quickly evolved into a trading center for nearby agricultural areas and the Elkhorn, Comet, and Baltimore mining districts, with the discovery of gold in the region fueling its early growth. A significant development came in 1888 when the Great Northern Railway branch line from Helena to Butte reached Boulder, enhancing transportation and commerce. In 1892, state schools for the deaf, blind, and developmentally disabled were established in the city, institutions that would shape Boulder's identity and economy for generations to come. Originally called Boulder Valley, the town's name was shortened to Boulder in 1897. The area's geological history is equally fascinating, with the Boulder Batholith—a massive intrusive body of granitic rock formed 81 to 74 million years ago—extending from Helena to Butte and hosting valuable mineral ores that attracted miners to the region. Today, Boulder preserves its heritage through three buildings listed on the National Register of Historic Places: the Jefferson County Courthouse (added 1980), the Montana Deaf and Dumb Asylum (added 1985), and the Boulder Hot Springs Hotel.
+Named for the many large boulders scattered throughout the valley, Boulder began as a stagecoach station in the early 1860s on the Fort Benton to Virginia City route. James E. Riley built the first structure at Boulder Hot Springs in 1863. The Great Northern Railway branch from Helena to Butte reached Boulder in 1888. The State Deaf and Dumb School opened in 1893 in a leased frame house; it evolved into the Montana Developmental Center, which peaked at over 1,100 residents in the 1960s and closed in 2017. The Montana School for the Deaf and Blind relocated to Great Falls in 1937. James A. Murray purchased Boulder Hot Springs in 1909–1910, adding Mission-style architecture; the resort hosted Theodore Roosevelt, Warren G. Harding, and Franklin D. Roosevelt. The Riverside Youth Correctional Facility was established in 1997. The Boulder Batholith—granitic rock formed 81–74 million years ago—underlies the region. Three buildings are on the National Register: Jefferson County Courthouse (1980), Montana Deaf and Dumb Asylum (1985), Boulder Hot Springs Hotel (1979). (Source: Grokipedia)
 
 ---
 
@@ -62,6 +62,12 @@ Boulder is strategically located at the intersection of Interstate 15 and Montan
 ## Where to Stay in Boulder
 
 Accommodation options in Boulder cater to various preferences, with the historic Boulder Hot Springs Inn & Spa serving as the premier lodging destination. This historic hotel offers guests access to natural mineral hot springs along with comfortable rooms in a building listed on the National Register of Historic Places. For travelers seeking more budget-friendly options, the Mine Motel and O-Z Motel provide clean, comfortable rooms with convenient access to Boulder's attractions and main thoroughfares. RV travelers can find parking at Veteran's Memorial Park on Main Street, which offers green space and picnic tables. While Boulder's accommodation options are limited compared to larger Montana cities, the authentic experience and proximity to natural attractions make it an ideal base for exploring Jefferson County and southwestern Montana.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Boulder,_Montana), U.S. Census Bureau*
 
 ---
 

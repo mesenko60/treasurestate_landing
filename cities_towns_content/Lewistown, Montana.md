@@ -13,15 +13,16 @@ Nestled in the exact geographic center of Montana, Lewistown stands as a hidden 
 - **Elevation:** 4,121 ft (1,256 m)
 - **Known For:** Geographic center of Montana, Big Spring Creek, historic architecture, Charlie Russell Chew Choo dinner train
 - **Nearby Landmarks:** Big Snowy Mountains, Judith Mountains, Bear Gulch Pictographs, American Prairie Reserve
-- **Fun Fact:** Lewistown is home to the last remaining Norden bombsight storage facility from World War II, used to keep this critical device safe from enemy spies.
+- **Fun Fact:** Lewistown is home to the last remaining Norden bombsight storage facility from World War II. Big Spring Creek discharges over 50 million gallons daily from one of the world's largest artesian springs. Designated Montana's World War II Heritage City in 2023. Six historic districts preserve stone buildings from Croatian stonemasons. (Source: Grokipedia)
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Loren Acton** – NASA astronaut and physicist who flew on Space Shuttle mission STS-51-F as a Payload Specialist
-- **Alma Smith Jacobs** – First African American Montana State Librarian and influential civil rights advocate
-- **Bobby Petrino** – Well-known college football coach who began his career in Lewistown
+- **Pierre Berger** – Métis trader and hunter credited as Lewistown's founder; led ~25 Métis families from the Milk River to the Judith Basin in 1879. (Source: Grokipedia)
+- **Loren Acton** – NASA astronaut and physicist; flew on Space Shuttle mission STS-51-F as Payload Specialist. (Source: Grokipedia)
+- **Alma Smith Jacobs** – First African American Montana State Librarian and influential civil rights advocate. (Source: Grokipedia)
+- **Bobby Petrino** – College football coach who began his career in Lewistown. (Source: Grokipedia)
 
 ---
 
@@ -71,3 +72,9 @@ Lewistown offers a variety of accommodations to suit different preferences and b
 ## Plan Your Visit
 
 Ready to explore Lewistown? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Lewistown,_Montana), U.S. Census Bureau*
