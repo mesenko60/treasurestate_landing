@@ -19,7 +19,7 @@ type MonthClimate = {
   snowIn?: number;
 };
 
-type RecPlace = { name: string; type: string; distMiles: number };
+type RecPlace = { name: string; type: string; lat: number; lng: number; distMiles: number };
 type RecSummary = { total: number; byCategory: { type: string; count: number }[]; highlights: RecPlace[] };
 
 type ClimateSummary = {

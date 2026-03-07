@@ -383,6 +383,8 @@ function buildRecreation() {
     )).map(site => ({
       name: site.name,
       type: site.type,
+      lat: site.lat,
+      lng: site.lng,
       distMiles: Math.round(haversineMiles(town.lat, town.lng, site.lat, site.lng)),
     }))
       .sort((a, b) => a.distMiles - b.distMiles);

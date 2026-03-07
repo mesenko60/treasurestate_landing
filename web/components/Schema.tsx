@@ -5,6 +5,8 @@ import { filterNearbyRecreation } from '../lib/recreation';
 interface RecreationPlace {
   name: string;
   type: string;
+  lat: number;
+  lng: number;
   distMiles: number;
 }
 

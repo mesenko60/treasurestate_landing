@@ -1,6 +1,8 @@
 export type RecreationPlace = {
   name: string;
   type: string;
+  lat: number;
+  lng: number;
   distMiles: number;
 };
 
