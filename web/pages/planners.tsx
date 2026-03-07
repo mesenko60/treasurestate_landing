@@ -54,6 +54,14 @@ export default function Planners() {
               </div>
             </Link>
 
+            <Link href="/planners/fly-fishing-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Fly Fishing Guide</h3>
+                <p>Montana&rsquo;s trout legacy from 1919 to today. History of the Madison, Gallatin, Yellowstone, and Glacier waters that made Montana the fly fishing capital of America.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
             <Link href="/planners/hot-springs-guide" style={{ textDecoration: 'none' }}>
               <div className="planner-card">
                 <h3>Hot Springs Guide</h3>

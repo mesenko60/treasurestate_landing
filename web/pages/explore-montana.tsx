@@ -12,6 +12,7 @@ const SECTIONS = [
     links: [
       { href: '/planners/backroads-planner', label: 'Backroads Travel Planner', desc: 'Interactive map with 13 corridors & 850+ POIs' },
       { href: '/planners/montana-backroads', label: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path' },
+      { href: '/planners/fly-fishing-guide', label: 'Fly Fishing Guide', desc: 'Montana trout legacy from 1919 to today' },
       { href: '/planners/hot-springs-guide', label: 'Hot Springs Guide', desc: '20+ natural hot springs with ratings & maps' },
       { href: '/planners/campgrounds-guide', label: 'Campgrounds & RV Parks', desc: '100+ campgrounds across the state' },
       { href: '/planners/hiking-guide', label: 'Hiking Trails & Trailheads', desc: '60+ trails with ratings & directions' },

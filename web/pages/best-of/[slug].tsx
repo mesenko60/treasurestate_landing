@@ -153,6 +153,14 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
           </p>
         )}
 
+        {page.slug === 'best-fishing-towns' && (
+          <p style={{ fontSize: '0.95rem', marginBottom: '2rem' }}>
+            <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+              Read our Fly Fishing Guide: Montana&rsquo;s trout legacy from 1919 to today →
+            </Link>
+          </p>
+        )}
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           {page.towns.map(town => (
             <article key={town.slug} style={{
