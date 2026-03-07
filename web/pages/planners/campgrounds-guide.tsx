@@ -3,10 +3,13 @@ import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
+import dynamic from 'next/dynamic';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
+
+const DirectoryMap = dynamic(() => import('../../components/DirectoryMap'), { ssr: false });
 
 type Campground = {
   name: string;
@@ -93,6 +96,9 @@ function CampCard({ c }: { c: Campground }) {
               Official Website →
             </a>
           )}
+          <a href={`https://www.google.com/maps/dir/?api=1&destination=${c.lat},${c.lng}`} target="_blank" rel="noopener noreferrer" style={{ color: '#5a8a5c', textDecoration: 'none', fontWeight: 600 }}>
+            Get Directions →
+          </a>
         </div>
       </div>
     </div>
@@ -211,6 +217,13 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
           but mountains and wildlife. This directory covers {totalCount} campgrounds and RV parks across
           the state, organized by type and sorted by visitor reviews.
         </p>
+
+        <DirectoryMap
+          items={[...koa, ...state, ...publicLand, ...rv, ...privateCamps].map(c => ({ name: c.name, slug: c.slug, lat: c.lat, lng: c.lng, category: c.category, rating: c.rating, reviews: c.reviews, address: c.address }))}
+          categoryColors={CAT_COLORS}
+          categoryLabels={CAT_LABELS}
+          height="400px"
+        />
 
         {/* ─── KOA ─── */}
         <h2 id="koa" className="cg-section-title">

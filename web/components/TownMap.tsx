@@ -1,19 +1,9 @@
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+import React, { useState, useCallback } from 'react';
+import Map, { Marker, Popup, NavigationControl } from 'react-map-gl/mapbox';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import { trackMapInteraction } from '../lib/gtag';
 
-// Fix Leaflet marker issue in Next.js
-const customIcon = new L.Icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 type TownCoordinate = {
   name: string;
@@ -22,54 +12,158 @@ type TownCoordinate = {
   lng: number;
 };
 
-// Component to handle dynamic center/zoom updates
-function MapUpdater({ center, zoom }: { center: [number, number], zoom: number }) {
-  const map = useMap();
-  useEffect(() => {
-    map.setView(center, zoom);
-  }, [center, zoom, map]);
-  return null;
-}
+type RecMarker = {
+  name: string;
+  type: string;
+  lat: number;
+  lng: number;
+  distMiles?: number;
+};
 
-export default function TownMap({ 
-  towns, 
+const REC_ICONS: Record<string, string> = {
+  'Hot Spring': '♨️',
+  'Campground': '⛺',
+  'Trailhead': '🥾',
+  'Lake': '🏞️',
+  'Fishing Access': '🎣',
+  'Ski Area': '⛷️',
+  'Golf': '⛳',
+  'Disc Golf': '🥏',
+  'State Park': '🌲',
+  'National Park': '🏔️',
+  'National Forest': '🌿',
+  'Wilderness': '🏔️',
+  'Waterfall': '💧',
+  'Museum': '🏛️',
+  'Historic Site': '🏚️',
+  'Viewpoint': '👁️',
+  'Boat Launch': '🚤',
+  'River': '🏞️',
+  'Nature Reserve': '🦅',
+  'Wildlife Refuge': '🦌',
+  'Scenic Drive': '🛣️',
+};
+
+export default function TownMap({
+  towns,
   center = [46.9653, -109.5337],
-  zoom = 6 
-}: { 
+  zoom = 6,
+  recreation,
+  highlightTown,
+}: {
   towns: TownCoordinate[];
   center?: [number, number];
   zoom?: number;
+  recreation?: RecMarker[];
+  highlightTown?: string;
 }) {
+  const [selected, setSelected] = useState<(TownCoordinate & { _kind: 'town' }) | (RecMarker & { _kind: 'rec' }) | null>(null);
+
+  const onTownClick = useCallback((town: TownCoordinate) => {
+    trackMapInteraction(`marker_click:${town.name}`);
+    setSelected({ ...town, _kind: 'town' });
+  }, []);
+
+  const onRecClick = useCallback((rec: RecMarker) => {
+    trackMapInteraction(`rec_click:${rec.name}`);
+    setSelected({ ...rec, _kind: 'rec', slug: '' } as any);
+  }, []);
+
   return (
     <div className="town-map-container">
-      <MapContainer center={center} zoom={zoom} scrollWheelZoom={false} style={{ height: '100%', width: '100%', zIndex: 1 }}>
-        <MapUpdater center={center} zoom={zoom} />
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {towns.map((town) => (
-          <Marker 
-            key={town.slug} 
-            position={[town.lat, town.lng]} 
-            icon={customIcon}
-            title={town.name}
-            eventHandlers={{
-              click: () => {
-                trackMapInteraction(`marker_click:${town.name}`);
-                window.location.href = `/montana-towns/${town.slug}/`;
-              }
-            }}
+      <Map
+        initialViewState={{ longitude: center[1], latitude: center[0], zoom }}
+        style={{ width: '100%', height: '100%' }}
+        mapStyle="mapbox://styles/mapbox/outdoors-v12"
+        mapboxAccessToken={MAPBOX_TOKEN}
+        cooperativeGestures={true}
+        onClick={() => setSelected(null)}
+      >
+        <NavigationControl position="top-right" />
+
+        {/* Recreation markers (render first so town markers are on top) */}
+        {recreation?.map((rec, i) => (
+          <Marker
+            key={`rec-${i}-${rec.name}`}
+            longitude={rec.lng}
+            latitude={rec.lat}
+            anchor="center"
+            onClick={(e) => { e.originalEvent.stopPropagation(); onRecClick(rec); }}
           >
-            <Popup>
-              <div style={{ textAlign: 'center' }}>
-                <strong>{town.name}</strong><br/>
-                <span style={{ fontSize: '0.85em', color: '#666' }}>Click marker to visit page</span>
-              </div>
-            </Popup>
+            <span style={{ fontSize: '16px', cursor: 'pointer', filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' }} title={rec.name}>
+              {REC_ICONS[rec.type] || '📍'}
+            </span>
           </Marker>
         ))}
-      </MapContainer>
+
+        {/* Town markers */}
+        {towns.map((town) => {
+          const isHighlighted = highlightTown && town.slug === highlightTown;
+          return (
+            <Marker
+              key={town.slug}
+              longitude={town.lng}
+              latitude={town.lat}
+              anchor="bottom"
+              onClick={(e) => { e.originalEvent.stopPropagation(); onTownClick(town); }}
+            >
+              <div style={{
+                width: isHighlighted ? 18 : 12,
+                height: isHighlighted ? 18 : 12,
+                borderRadius: '50%',
+                background: isHighlighted ? '#c0392b' : '#3b6978',
+                border: `2px solid ${isHighlighted ? '#fff' : 'rgba(255,255,255,0.8)'}`,
+                boxShadow: isHighlighted ? '0 0 8px rgba(192,57,43,0.6)' : '0 1px 4px rgba(0,0,0,0.3)',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }} />
+            </Marker>
+          );
+        })}
+
+        {/* Popup */}
+        {selected && (
+          <Popup
+            longitude={selected.lng}
+            latitude={selected.lat}
+            anchor="bottom"
+            offset={selected._kind === 'town' ? 16 : 10}
+            onClose={() => setSelected(null)}
+            closeButton={true}
+            closeOnClick={false}
+            maxWidth="220px"
+          >
+            {selected._kind === 'town' ? (
+              <div style={{ textAlign: 'center', padding: '4px 2px' }}>
+                <strong style={{ fontSize: '0.95rem', color: '#204051' }}>{selected.name}</strong>
+                <br />
+                <a
+                  href={`/montana-towns/${(selected as TownCoordinate).slug}/`}
+                  style={{ fontSize: '0.8rem', color: '#3b6978', textDecoration: 'none', fontWeight: 600 }}
+                >
+                  View Town Profile →
+                </a>
+              </div>
+            ) : (
+              <div style={{ padding: '4px 2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: '#204051' }}>{selected.name}</strong>
+                <div style={{ fontSize: '0.78rem', color: '#888', marginTop: '2px' }}>{(selected as RecMarker).type}</div>
+                {(selected as RecMarker).distMiles != null && (
+                  <div style={{ fontSize: '0.78rem', color: '#666', marginTop: '2px' }}>{(selected as RecMarker).distMiles} mi away</div>
+                )}
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${selected.lat},${selected.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: '0.78rem', color: '#3b6978', textDecoration: 'none', fontWeight: 600, display: 'inline-block', marginTop: '4px' }}
+                >
+                  Get Directions →
+                </a>
+              </div>
+            )}
+          </Popup>
+        )}
+      </Map>
     </div>
   );
 }

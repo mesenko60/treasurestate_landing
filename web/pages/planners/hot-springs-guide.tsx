@@ -3,10 +3,13 @@ import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
+import dynamic from 'next/dynamic';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
+
+const DirectoryMap = dynamic(() => import('../../components/DirectoryMap'), { ssr: false });
 
 type HotSpring = {
   name: string;
@@ -104,6 +107,9 @@ function SpringCard({ s }: { s: HotSpring }) {
               Official Website →
             </a>
           )}
+          <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" style={{ color: '#5a8a5c', textDecoration: 'none', fontWeight: 600 }}>
+            Get Directions →
+          </a>
         </div>
       </div>
     </div>
@@ -222,6 +228,13 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
           there is a soak for every type of traveler. This directory covers every spring you can visit, including three
           popular springs just across the Idaho border that Montana locals consider part of their backyard.
         </p>
+
+        <DirectoryMap
+          items={allSprings.map(s => ({ name: s.name, slug: s.slug, lat: s.lat, lng: s.lng, category: s.type, rating: s.rating, reviews: s.reviews, address: s.address }))}
+          categoryColors={{ resort: '#3b6978', community: '#d8973c', primitive: '#5a8a5c' }}
+          categoryLabels={{ resort: 'Resort', community: 'Community', primitive: 'Primitive' }}
+          height="400px"
+        />
 
         {/* ─── RESORTS ─── */}
         <h2 className="hs-section-title">

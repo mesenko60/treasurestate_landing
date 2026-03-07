@@ -6,6 +6,10 @@
 # venv/
 # env/
 
+# Environment files
+.env.local
+web/.env.local
+
 # Node / Next.js
 node_modules/
 web/node_modules/

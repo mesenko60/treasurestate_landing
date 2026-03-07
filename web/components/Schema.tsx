@@ -71,7 +71,7 @@ export default function Schema({
 
     if (attractions.length > 0) {
       for (const a of attractions) {
-        schemas.push({
+        const attraction: Record<string, unknown> = {
           '@context': 'https://schema.org',
           '@type': 'TouristAttraction',
           name: a.name,
@@ -79,7 +79,11 @@ export default function Schema({
           description: `${a.name} (${a.type}), ${a.distMiles} miles from ${townName}, Montana`,
           isAccessibleForFree: true,
           containedInPlace: { '@type': 'State', name: 'Montana' },
-        });
+        };
+        if (a.lat && a.lng) {
+          attraction.geo = { '@type': 'GeoCoordinates', latitude: a.lat, longitude: a.lng };
+        }
+        schemas.push(attraction);
       }
     }
   }

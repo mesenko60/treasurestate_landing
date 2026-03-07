@@ -245,7 +245,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               Compare {townName} with Another Town
             </Link>
           </div>
-          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} />
+          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} recreation={recreationPlaces?.filter(p => ['Hot Spring','Campground','Trailhead','Lake','Ski Area','State Park','National Park','Fishing Access','Waterfall'].includes(p.type)).slice(0, 60) ?? undefined} />
           <NearbyTowns towns={relatedTowns} />
 
           {cluster && (
