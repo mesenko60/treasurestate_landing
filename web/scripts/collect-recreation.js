@@ -141,6 +141,7 @@ const CURATED_SITES = [
   { name: 'Jackson Hot Springs', type: 'Hot Spring', lat: 45.3700, lng: -113.4200 },
   { name: 'Elkhorn Hot Springs', type: 'Hot Spring', lat: 45.4700, lng: -113.1400 },
   { name: 'Symes Hot Springs', type: 'Hot Spring', lat: 47.6200, lng: -114.7700 },
+  { name: 'Big Medicine Hot Springs', type: 'Hot Spring', lat: 47.6145, lng: -114.6658 },
   { name: 'Sleeping Buffalo Hot Springs', type: 'Hot Spring', lat: 48.5000, lng: -107.1000 },
   { name: 'Boulder Hot Springs', type: 'Hot Spring', lat: 46.2100, lng: -112.1200 },
   { name: 'Alameda Hot Springs', type: 'Hot Spring', lat: 47.6100, lng: -114.7500 },

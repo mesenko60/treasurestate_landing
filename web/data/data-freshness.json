@@ -62,7 +62,7 @@
   },
   "recreation": {
     "label": "Recreation & Outdoor Sites (OSM + Editorial)",
-    "lastCollected": "2026-03-06",
+    "lastCollected": "2026-03-07",
     "frequency": "quarterly",
     "script": "collect-recreation.js"
   },

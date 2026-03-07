@@ -23,9 +23,13 @@ type HotSpring = {
   access: string;
   hikeMiles: number | null;
   website: string | null;
+  phone: string | null;
+  address: string | null;
   description: string;
   yearRound: boolean;
   clothingOptional: boolean;
+  rating: number | null;
+  reviews: number | null;
   state?: string;
 };
 
@@ -49,12 +53,33 @@ const TYPE_COLORS: Record<string, string> = {
   primitive: '#5a8a5c',
 };
 
+function Stars({ rating }: { rating: number }) {
+  const full = Math.floor(rating);
+  const half = rating - full >= 0.3;
+  const empty = 5 - full - (half ? 1 : 0);
+  return (
+    <span aria-label={`${rating} out of 5 stars`} style={{ letterSpacing: '1px', fontSize: '0.95rem' }}>
+      {'★'.repeat(full)}{half ? '⯨' : ''}{'☆'.repeat(empty)}
+    </span>
+  );
+}
+
 function SpringCard({ s }: { s: HotSpring }) {
   const color = TYPE_COLORS[s.type] || '#3b6978';
   return (
     <div id={s.slug} style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 10px rgba(0,0,0,0.06)', overflow: 'hidden', marginBottom: '1rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.25rem 0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-        <h3 style={{ margin: 0, fontSize: '1.15rem', color: '#204051' }}>{s.name}</h3>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+          <h3 style={{ margin: 0, fontSize: '1.15rem', color: '#204051' }}>{s.name}</h3>
+          {s.rating != null && (
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.85rem', color: '#d8973c' }}>
+              <Stars rating={s.rating} />
+              <span style={{ color: '#888', fontSize: '0.78rem', fontWeight: 500 }}>
+                {s.rating.toFixed(1)}{s.reviews ? ` (${s.reviews.toLocaleString()})` : ''}
+              </span>
+            </span>
+          )}
+        </div>
         <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.25rem 0.6rem', borderRadius: '4px', background: color, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
           {TYPE_LABELS[s.type]}
         </span>
@@ -68,6 +93,8 @@ function SpringCard({ s }: { s: HotSpring }) {
           <div><strong>Cost:</strong> {s.cost}</div>
           <div><strong>Access:</strong> {s.access}{s.hikeMiles ? ` (${s.hikeMiles} mi)` : ''}</div>
           <div><strong>Season:</strong> {s.yearRound ? 'Year-round' : 'Seasonal'}</div>
+          {s.address && <div><strong>Address:</strong> {s.address}</div>}
+          {s.phone && <div><strong>Phone:</strong> <a href={`tel:${s.phone.replace(/[^+\d]/g, '')}`} style={{ color: '#3b6978', textDecoration: 'none' }}>{s.phone}</a></div>}
         </div>
         <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
           <Link href={`/montana-towns/${s.nearestTown}`} style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 600 }}>
@@ -104,22 +131,33 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 
+  const allSprings = [...resorts, ...community, ...primitive, ...nearBorder];
+
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Montana Hot Springs',
     numberOfItems: totalCount,
-    itemListElement: [...resorts, ...community, ...primitive, ...nearBorder].map((s, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
+    itemListElement: allSprings.map((s, i) => {
+      const item: Record<string, unknown> = {
         '@type': 'TouristAttraction',
         name: s.name,
         description: s.description,
         geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lng },
         isAccessibleForFree: s.cost === 'Free',
-      },
-    })),
+      };
+      if (s.address) item.address = s.address;
+      if (s.phone) item.telephone = s.phone;
+      if (s.rating != null && s.reviews) {
+        item.aggregateRating = {
+          '@type': 'AggregateRating',
+          ratingValue: s.rating,
+          bestRating: 5,
+          ratingCount: s.reviews,
+        };
+      }
+      return { '@type': 'ListItem', position: i + 1, item };
+    }),
   };
 
   return (

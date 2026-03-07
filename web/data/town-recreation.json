@@ -1013,6 +1013,11 @@
         "distMiles": 43
       },
       {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 43
+      },
+      {
         "name": "Bear Creek Overlook Trailhead",
         "type": "Trailhead",
         "distMiles": 43
@@ -10126,6 +10131,11 @@
         "name": "Recluse Lake",
         "type": "Lake",
         "distMiles": 40
+      },
+      {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 41
       },
       {
         "name": "Snyder Lake",
@@ -46258,6 +46268,11 @@
     "name": "Hot Springs",
     "places": [
       {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 0
+      },
+      {
         "name": "LaRue Hot Springs Museum",
         "type": "Museum",
         "distMiles": 1
@@ -50921,6 +50936,11 @@
         "name": "Spotted Bear Lake",
         "type": "Lake",
         "distMiles": 43
+      },
+      {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 44
       },
       {
         "name": "Going-to-the-Sun Road",
@@ -63773,6 +63793,11 @@
         "distMiles": 15
       },
       {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 15
+      },
+      {
         "name": "St Regis Fishing Access",
         "type": "Fishing Access",
         "distMiles": 15
@@ -64951,6 +64976,11 @@
         "name": "Mission Mountains Tribal Wilderness",
         "type": "Nature Reserve",
         "distMiles": 23
+      },
+      {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 24
       },
       {
         "name": "Blacktail Mountain Disc Golf",
@@ -69141,6 +69171,11 @@
         "name": "Mikes Pond",
         "type": "Lake",
         "distMiles": 26
+      },
+      {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 27
       },
       {
         "name": "Rainy Lake Campground",
@@ -74453,6 +74488,11 @@
         "distMiles": 33
       },
       {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 33
+      },
+      {
         "name": "Blue Mountain Disc Golf",
         "type": "Disc Golf",
         "distMiles": 33
@@ -77953,6 +77993,11 @@
         "distMiles": 30
       },
       {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
+        "distMiles": 31
+      },
+      {
         "name": "Wild Horse Hot Springs",
         "type": "Hot Spring",
         "distMiles": 31
@@ -79020,6 +79065,11 @@
       {
         "name": "Noxon Reservoir",
         "type": "Lake",
+        "distMiles": 32
+      },
+      {
+        "name": "Big Medicine Hot Springs",
+        "type": "Hot Spring",
         "distMiles": 32
       },
       {
