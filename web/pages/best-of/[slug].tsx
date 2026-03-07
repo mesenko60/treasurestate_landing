@@ -76,17 +76,21 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
     description: page.metaDescription,
     url,
     numberOfItems: page.towns.length,
-    itemListElement: page.towns.map(t => ({
-      '@type': 'ListItem',
-      position: t.rank,
-      item: {
-        '@type': 'Place',
-        name: `${t.name}, Montana`,
-        url: `https://treasurestate.com/montana-towns/${t.slug}/`,
-        description: t.highlight,
-        address: { '@type': 'PostalAddress', addressLocality: t.name, addressRegion: 'MT', addressCountry: 'US' },
-      },
-    })),
+    itemListElement: page.towns.map(t => {
+      const townUrl = `https://treasurestate.com/montana-towns/${t.slug}/`;
+      return {
+        '@type': 'ListItem',
+        position: t.rank,
+        item: {
+          '@type': 'Place',
+          '@id': townUrl,
+          name: `${t.name}, Montana`,
+          url: townUrl,
+          description: t.highlight,
+          address: { '@type': 'PostalAddress', addressLocality: t.name, addressRegion: 'MT', addressCountry: 'US' },
+        },
+      };
+    }),
   };
 
   const articleSchema = {

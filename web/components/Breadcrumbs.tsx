@@ -11,6 +11,12 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
 }
 
+const BASE_URL = 'https://treasurestate.com';
+
+function toAbsoluteUrl(url: string): string {
+  return url.startsWith('http') ? url : `${BASE_URL}${url.startsWith('/') ? '' : '/'}${url}`;
+}
+
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   const schema = {
     '@context': 'https://schema.org',
@@ -19,7 +25,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: toAbsoluteUrl(item.url),
     })),
   };
 
