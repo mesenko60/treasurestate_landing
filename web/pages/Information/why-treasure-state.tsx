@@ -58,7 +58,7 @@ export default function WhyTreasureState() {
             The origins of "The Treasure State" moniker can be traced back to the mid-1800s, a period marked by significant
             mineral discoveries across the mountainous regions of what would eventually become Montana. The first substantial
             <Link href="/Information/mining-history-of-montana/"> gold strikes</Link> occurred in the early
-            1860s, igniting a rush of fortune-seekers to areas like Bannack, Virginia City, and Helena. These discoveries were
+            1860s, igniting a rush of fortune-seekers to areas like Bannack, <Link href="/montana-towns/virginia-city/" style={{ color: '#3b6978' }}>Virginia City</Link>, and <Link href="/montana-towns/helena/" style={{ color: '#3b6978' }}>Helena</Link>. These discoveries were
             not isolated incidents but rather the beginning of a sustained period of mining activity that would unearth vast
             quantities of gold, silver, copper, lead, zinc, manganese, and coal. The sheer abundance and variety of these mineral
             deposits solidified Montana's reputation as a land of hidden riches, a veritable treasure chest waiting to be unlocked.

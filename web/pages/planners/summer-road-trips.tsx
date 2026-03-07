@@ -107,9 +107,9 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Paradise Valley &amp; Yellowstone</h2>
             <p>
-              US-89 from Livingston to Gardiner follows the Yellowstone River through a broad valley
+              US-89 from <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner follows the Yellowstone River through a broad valley
               framed by the Absaroka Range and the Gallatin Range. This is classic Montana ranch country —
-              hay fields, fly fishing access points, and the warm mineral waters at Chico Hot Springs.
+              hay fields, fly fishing access points, and the warm mineral waters at Chico <Link href="/planners/hot-springs-guide/">Hot Springs</Link>.
               The route ends at Yellowstone&apos;s North Entrance, the only park gate open year-round.
             </p>
             <div className="road-trip-stats">
@@ -160,8 +160,8 @@ export default function SummerRoadTrips() {
             <p>
               Circle Montana&apos;s largest natural freshwater lake on a route that passes cherry orchards,
               state parks, tribal heritage sites, and dozens of boat launches. The west shore (MT-35)
-              is quieter and more scenic; the east shore (US-93) offers faster travel and access to
-              Polson and Bigfork.
+              is quieter and more scenic;               the east shore (US-93) offers faster travel and access to
+              <Link href="/montana-towns/polson/">Polson</Link> and <Link href="/montana-towns/bigfork/">Bigfork</Link>.
             </p>
             <div className="road-trip-stats">
               <span><strong>Distance:</strong> ~85 miles (full loop)</span>
@@ -175,7 +175,7 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Skalkaho Highway</h2>
             <p>
-              This gravel mountain pass connects the Bitterroot Valley to the Philipsburg area through
+              This gravel mountain pass connects the <Link href="/planners/bitterroot-valley/">Bitterroot Valley</Link> to the <Link href="/montana-towns/philipsburg/">Philipsburg</Link> area through
               the Sapphire Mountains. The highlight is Skalkaho Falls, a powerful cascade that crashes
               right next to the narrow roadway. High-clearance vehicles are recommended, and the route
               is not suitable for large RVs or trailers.
@@ -192,7 +192,7 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Pioneer Mountains Scenic Byway</h2>
             <p>
-              This 49-mile paved backcountry route between Wise River and Dillon passes through
+              This 49-mile paved backcountry route between Wise River and <Link href="/montana-towns/dillon/">Dillon</Link> passes through
               the Beaverhead-Deerlodge National Forest. Highlights include Crystal Park (dig your
               own quartz crystals), the Coolidge ghost town, and wide alpine meadows surrounded
               by the rugged Pioneer range.

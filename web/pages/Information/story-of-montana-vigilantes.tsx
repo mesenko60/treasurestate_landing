@@ -76,7 +76,7 @@ export default function StoryOfMontanaVigilantes() {
             <li><strong>January 18, 1864 - Cottonwood Ranch (Ruby River):</strong> Bill Bunton was captured at his ranch and executed.</li>
             <li><strong>January 24, 1864 - Hell Gate (near present-day <Link href="/montana-towns/missoula/">Missoula</Link>):</strong> Cyrus Skinner, Aleck Carter, and John Cooper were arrested, tried in the Worden &amp; Higgins store, and hanged outside the building on the same day.</li>
             <li><strong>January 25, 1864 - Hell Gate area:</strong> Bob Zachary was captured outside Hell Gate and brought into town to be hanged.</li>
-            <li><strong>January 25, 1864 - Bitterroot Valley:</strong> George Shears was captured in a cabin and hanged there.</li>
+            <li><strong>January 25, 1864 - <Link href="/planners/bitterroot-valley/" style={{ color: '#3b6978' }}>Bitterroot Valley</Link>:</strong> George Shears was captured in a cabin and hanged there.</li>
             <li><strong>January 26, 1864 - Fort Owen:</strong> "Whiskey Bill" Graves was arrested and hanged the same day.</li>
             <li><strong>February 17, 1864 - <Link href="/montana-towns/virginia-city/">Virginia City</Link>:</strong> An unknown man was hanged.</li>
             <li><strong>March 10, 1864 - <Link href="/montana-towns/virginia-city/">Virginia City</Link>:</strong> J.A. "Jack" Slade, not accused of any capital crime but notorious for drunken, violent behavior, was hanged by vigilantes in one of their most controversial actions.</li>

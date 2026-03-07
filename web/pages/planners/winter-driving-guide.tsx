@@ -104,7 +104,7 @@ export default function WinterDrivingGuide() {
               are all part of the reality. Not every scenic corridor that&apos;s accessible in July will
               be open in January — several mountain passes close entirely for the season. But for
               prepared drivers, winter travel in Montana offers its own rewards: uncrowded roads,
-              dramatic frozen landscapes, and access to world-class skiing and hot springs.
+              dramatic frozen landscapes, and access to world-class skiing and <Link href="/planners/hot-springs-guide/">hot springs</Link>.
             </p>
 
             <h2 style={{ color: '#204051' }}>Year-Round Routes</h2>
@@ -116,7 +116,7 @@ export default function WinterDrivingGuide() {
               <li>
                 <div className="route-name">Paradise Valley (US-89)</div>
                 <div className="route-detail">
-                  Livingston to Gardiner along the Yellowstone River. In winter, the valley is quiet
+                  <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner along the Yellowstone River. In winter, the valley is quiet
                   and elk herds gather on the flats. Yellowstone&apos;s North Entrance is the only
                   park gate open year-round, making this a reliable winter route to the park.
                 </div>
@@ -125,7 +125,7 @@ export default function WinterDrivingGuide() {
               <li>
                 <div className="route-name">Bitterroot Valley (US-93)</div>
                 <div className="route-detail">
-                  Missoula to Hamilton and south through the Bitterroot Valley. Relatively mild winters
+                  <Link href="/montana-towns/missoula/">Missoula</Link> to <Link href="/montana-towns/hamilton/">Hamilton</Link> and south through the Bitterroot Valley. Relatively mild winters
                   compared to mountain passes. Access to Lost Trail Powder Mountain ski area near the
                   Idaho border.
                 </div>
@@ -134,11 +134,11 @@ export default function WinterDrivingGuide() {
               <li>
                 <div className="route-name">Highway 200 Corridor</div>
                 <div className="route-detail">
-                  East–west route through central Montana connecting Great Falls to Missoula. Passes
+                  East–west route through central Montana connecting <Link href="/montana-towns/great-falls/">Great Falls</Link> to <Link href="/montana-towns/missoula/">Missoula</Link>. Passes
                   through the Blackfoot Valley — well-maintained and plowed regularly, though whiteout
                   conditions can occur on open stretches.
                 </div>
-                <Link href="/planners/corridors/highway200/" className="corridor-link">View corridor →</Link>
+                <Link href="/planners/corridors/hwy200/" className="corridor-link">View corridor →</Link>
               </li>
               <li>
                 <div className="route-name">Missouri Breaks Country (US-87)</div>
@@ -198,7 +198,7 @@ export default function WinterDrivingGuide() {
                 </div>
                 <div className="route-detail">
                   The high-elevation section between Wise River and Polaris closes in November.
-                  Lower portions near Dillon may remain accessible, but the full scenic drive
+                  Lower portions near <Link href="/montana-towns/dillon/">Dillon</Link> may remain accessible, but the full scenic drive
                   is a summer-only experience.
                 </div>
                 <Link href="/planners/corridors/pioneer/" className="corridor-link">View corridor →</Link>
@@ -230,6 +230,7 @@ export default function WinterDrivingGuide() {
                   Mountains. The byway stays open year-round and offers winter access to downhill
                   skiing, snowmobiling, and backcountry skiing near Kings Hill Pass (7,393 feet).
                 </div>
+                <Link href="/planners/corridors/kings_hill/" className="corridor-link">View corridor →</Link>
               </li>
               <li>
                 <div className="route-name">Seeley-Swan Corridor (MT-83)</div>
