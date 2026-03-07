@@ -7,7 +7,7 @@ Unleash your inner explorer in Miles City, Montana, a legendary Western town whe
 ## Quick Facts
 
 - **Population:** 8,412
-- **County:** Custer County
+- **County:** Custer County County
 - **Founded:** 1876
 - **Elevation:** 2,359 ft
 - **Known For:** Rich Western history, the annual Bucking Horse Sale, livestock auctions, and its location at the confluence of the Yellowstone and Tongue Rivers.

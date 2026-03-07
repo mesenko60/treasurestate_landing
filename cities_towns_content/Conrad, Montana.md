@@ -8,7 +8,7 @@ Nestled in the vast rolling plains of north-central Montana, Conrad beckons adve
 ## Quick Facts
 
 - **Population:** 2,318
-- **County:** Pondera (County Seat)
+- **County:** Pondera County
 - **Founded:** 1908
 - **Elevation:** 3,514 ft
 - **Known For:** Agricultural heritage, Whoop-Up Trail Days celebration, gateway to outdoor adventures

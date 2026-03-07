@@ -7,13 +7,13 @@ Source: https://discoverkalispell.com/
 
 ## Quick Facts
 
-- **Population:** ** 29,886
-- **County:** ** Flathead County
-- **Founded:** ** Officially incorporated in 1892
-- **Elevation:** ** Approximately 2,956 ft ft
-- **Known For:** ** Gateway to Glacier National Park, outdoor recreation, vibrant downtown, and stunning natural scenery.
-- **Nearby Landmarks:** ** Glacier National Park, Flathead Lake, Whitefish Mountain Resort, Blacktail Mountain Ski Area, Hungry Horse Dam.
-- **Fun Fact:** ** The name Kalispell is a Salish word meaning "flat land above the lake," referring to its location near Flathead Lake.
+- **Population:** 29,886 (U.S. Census Bureau, July 1, 2023 estimate)
+- **County:** Flathead County
+- **Founded:** Officially incorporated in 1892
+- **Elevation:** Approximately 2,956 ft
+- **Known For:** Gateway to Glacier National Park, outdoor recreation, vibrant downtown, and stunning natural scenery.
+- **Nearby Landmarks:** Glacier National Park, Flathead Lake, Whitefish Mountain Resort, Blacktail Mountain Ski Area, Hungry Horse Dam.
+- **Fun Fact:** The name Kalispell is a Salish word meaning "flat land above the lake," referring to its location near Flathead Lake.
 
 ---
 

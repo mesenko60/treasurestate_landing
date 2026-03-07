@@ -8,7 +8,7 @@ Nestled between the rushing waters of the Yellowstone and Boulder Rivers, Big Ti
 ## Quick Facts
 
 - **Population:** 1,715
-- **County:** Sweet Grass (County Seat)
+- **County:** Sweet Grass County
 - **Founded:** 1883
 - **Elevation:** 4,101 ft
 - **Known For:** Historic wool production, gateway to the Crazy Mountains, rodeo culture

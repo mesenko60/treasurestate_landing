@@ -6,7 +6,7 @@ Dare to discover Helena, Montana – a city forged in the heart of the Gold Rush
 
 ## Quick Facts
 
-- **Population:** Approximately 33,100 (2023)
+- **Population:** 34,464 (U.S. Census Bureau, July 1, 2023 estimate)
 - **County:** Lewis and Clark County
 - **Founded:** October 30, 1864
 - **Elevation:** 3,996 ft

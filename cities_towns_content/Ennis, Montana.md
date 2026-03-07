@@ -8,7 +8,7 @@ Nestled between the majestic peaks of southwest Montana, Ennis invites adventure
 ## Quick Facts
 
 - **Population:** 917
-- **County:** Madison
+- **County:** Madison County
 - **Founded:** 1863
 - **Elevation:** 4,941 ft
 - **Known For:** World-class fly fishing, western heritage, and gateway to outdoor adventures

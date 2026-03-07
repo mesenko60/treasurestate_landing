@@ -8,7 +8,7 @@ Nestled along the winding Missouri River in northeastern Montana, Wolf Point bec
 ## Quick Facts
 
 - **Population:** 2,517 (2020 Census)
-- **County:** Roosevelt
+- **County:** Roosevelt County
 - **Founded:** 1915 (incorporated)
 - **Elevation:** 2,000 ft
 - **Known For:** Montana's oldest professional rodeo - the Wild Horse Stampede

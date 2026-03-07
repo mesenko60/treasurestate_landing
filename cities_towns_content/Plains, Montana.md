@@ -8,7 +8,7 @@ Nestled in the scenic Clark Fork River valley of Sanders County, Plains, Montana
 ## Quick Facts
 
 - **Population:** 1,106 (2020 Census)
-- **County:** Sanders
+- **County:** Sanders County
 - **Founded:** 1883 (as a Northern Pacific Railroad station); officially incorporated in 1907
 - **Elevation:** 2,474 ft
 - **Known For:** Wild horse history, outdoor recreation, Clark Fork River access

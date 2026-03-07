@@ -6,7 +6,7 @@ Bozeman, Montana, is a vibrant city nestled in the heart of the Rocky Mountains,
 
 ## Quick Facts
 
-- **Population:** Approximately 58,000 (as of recent estimates)
+- **Population:** 57,305 (U.S. Census Bureau, July 1, 2023 estimate)
 - **County:** Gallatin County
 - **Founded:** 1864
 - **Elevation:** 4,820 ft

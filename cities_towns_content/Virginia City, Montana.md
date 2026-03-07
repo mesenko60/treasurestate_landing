@@ -8,7 +8,7 @@ Virginia City invites modern-day explorers to step back in time and experience t
 ## Quick Facts
 
 - **Population:** 148
-- **County:** Madison
+- **County:** Madison County
 - **Founded:** 1863
 - **Elevation:** 5,804 ft
 - **Known For:** Montana Territorial Capital (1865-1875), preserved Victorian-era architecture, gold rush history

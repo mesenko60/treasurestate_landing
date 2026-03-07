@@ -7,7 +7,7 @@ Nestled at the majestic western entrance to Glacier National Park, West Glacier 
 ## Quick Facts
 
 - **Population:** 221 (as of 2020 census)
-- **County:** Flathead
+- **County:** Flathead County
 - **Founded:** Originally Belton (post office 1900), renamed West Glacier in 1949
 - **Elevation:** 3,169 ft
 - **Known For:** Being the primary western gateway to Glacier National Park, the iconic Going-to-the-Sun Road, and a hub for thrilling outdoor recreation.

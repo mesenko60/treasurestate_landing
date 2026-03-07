@@ -8,7 +8,7 @@ Nestled in the rugged mountains of northwest Montana, Troy beckons the adventuro
 ## Quick Facts
 
 - **Population:** 985
-- **County:** Lincoln
+- **County:** Lincoln County
 - **Founded:** 1892
 - **Elevation:** 1,892 ft (lowest elevation in Montana)
 - **Known For:** Kootenai Falls, ancient cedar groves, outdoor recreation, and mining heritage

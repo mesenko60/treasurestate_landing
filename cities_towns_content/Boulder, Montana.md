@@ -18,7 +18,7 @@ Boulder, Montana is a rugged frontier town nestled in a beautiful valley surroun
 
 ## Notable People & Pop Culture
 
-- Patrick Duffy – Actor known for his roles in the television series "Dallas" and "Step by Step," born and raised in Boulder.
+- Patrick Duffy – Actor known for "Dallas" and "Step by Step," born in Townsend, Montana (his parents later owned the Boulder Bar in Montana).
 - James E. Riley – Pioneer and prospector who built the first structure on the site of what would become the Boulder Hot Springs in 1863.
 - Montana Developmental Center – While not a person, this historic institution has been featured in various documentaries about healthcare and social services in rural America.
 

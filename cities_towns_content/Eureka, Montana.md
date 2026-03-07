@@ -8,7 +8,7 @@ Nestled in the spectacular Tobacco Valley of northwestern Montana, Eureka beckon
 ## Quick Facts
 
 - **Population:** 1,380
-- **County:** Lincoln
+- **County:** Lincoln County
 - **Founded:** Early 1880s
 - **Elevation:** 2,707 ft
 - **Known For:** Former "Christmas Tree Capital of the World," outdoor recreation, mild microclimate

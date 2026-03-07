@@ -1,6 +1,6 @@
 # Explore Gardiner, Montana: Yellowstone's Wild Frontier
 
-Embark on an unforgettable journey to Gardiner, Montana, the historic northern gateway to Yellowstone National Park! This rugged outpost, nestled at the confluence of the Gardner and Yellowstone Rivers, is more than just a town; it's a portal to untamed wilderness, a haven for wildlife enthusiasts, and a living testament to the adventurous spirit of the American West. Prepare to be captivated by dramatic landscapes, encounter iconic creatures in their natural habitat, and delve into a rich history that echoes with the footsteps of explorers, trappers, and pioneers. Gardiner isn't just a destination; it's an invitation to adventure, where the call of the wild is a daily symphony and every vista promises a new discovery.
+Embark on an unforgettable journey to Gardiner, Montana, the historic northern gateway to Yellowstone National Park! This rugged outpost, nestled at the confluence of the Gardner River and Yellowstone River, is more than just a town; it's a portal to untamed wilderness, a haven for wildlife enthusiasts, and a living testament to the adventurous spirit of the American West. Prepare to be captivated by dramatic landscapes, encounter iconic creatures in their natural habitat, and delve into a rich history that echoes with the footsteps of explorers, trappers, and pioneers. Gardiner isn't just a destination; it's an invitation to adventure, where the call of the wild is a daily symphony and every vista promises a new discovery.
 
 ---
 

@@ -7,8 +7,8 @@ Nestled along the Clark Fork River in western Montana, Alberton invites thrill-s
 
 ## Quick Facts
 
-- **Population:** 452 (2020 Census)
-- **County:** Mineral
+- **Population:** 451 (2020 Census)
+- **County:** Mineral County
 - **Founded:** 1908
 - **Elevation:** 3,022 ft
 - **Known For:** Alberton Gorge whitewater rafting, Railroad heritage, 1996 chlorine spill

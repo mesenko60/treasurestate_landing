@@ -8,7 +8,7 @@ Nestled in the heart of Montana's Smith River Valley, White Sulphur Springs beck
 ## Quick Facts
 
 - **Population:** 1,046
-- **County:** Meagher
+- **County:** Meagher County
 - **Founded:** 1866
 - **Elevation:** 5,091 ft
 - **Known For:** Healing mineral hot springs, Red Ants Pants Music Festival, gateway to Smith River

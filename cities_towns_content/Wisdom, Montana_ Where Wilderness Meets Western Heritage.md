@@ -7,7 +7,7 @@ Nestled in the heart of Montana's breathtaking Big Hole Valley, Wisdom beckons t
 ## Quick Facts
 
 - **Population:** 134 (2025 estimate)
-- **County:** Beaverhead
+- **County:** Beaverhead County
 - **Founded:** 1880s (Post office established 1884)
 - **Elevation:** 6,245 ft (1,903 m)
 - **Known For:** Blue ribbon trout fishing, fluvial arctic grayling, traditional "beaverslide" hay stacking

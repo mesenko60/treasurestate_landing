@@ -8,7 +8,7 @@ Nestled in the exact geographic center of Montana, Lewistown stands as a hidden 
 ## Quick Facts
 
 - **Population:** 5,952 (2020 Census)
-- **County:** Fergus
+- **County:** Fergus County
 - **Founded:** 1879
 - **Elevation:** 4,121 ft (1,256 m)
 - **Known For:** Geographic center of Montana, Big Spring Creek, historic architecture, Charlie Russell Chew Choo dinner train

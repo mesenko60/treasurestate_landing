@@ -8,7 +8,7 @@ Nestled in the spectacular Bitterroot mountains of western Montana, Darby is a p
 ## Quick Facts
 
 - **Population:** 783
-- **County:** Ravalli
+- **County:** Ravalli County
 - **Founded:** 1889
 - **Elevation:** 3,885 ft
 - **Known For:** Outdoor recreation, rodeo events, and being home to the first USDA Forest Service ranger station

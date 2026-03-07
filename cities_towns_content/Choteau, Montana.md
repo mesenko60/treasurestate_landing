@@ -9,7 +9,7 @@ Nestled at the foot of the majestic Rocky Mountain Front, Choteau stands as Mont
 ## Quick Facts
 
 - **Population:** 1,721 (2020 census)
-- **County:** Teton (county seat)
+- **County:** Teton County
 - **Founded:** 1873 (trading post), 1883 (platted), 1913 (incorporated)
 - **Elevation:** 3,816 ft
 - **Known For:** Gateway to Rocky Mountain Front, dinosaur paleontology, bird watching at Freezout Lake

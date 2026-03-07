@@ -8,7 +8,7 @@ Nestled between the winding Yellowstone River and the dramatic badlands of Makos
 ## Quick Facts
 
 - **Population:** 4,873 (2020 census)
-- **County:** Dawson (county seat)
+- **County:** Dawson County
 - **Founded:** 1881
 - **Elevation:** 2,064 ft
 - **Known For:** Makoshika State Park, dinosaur fossils, Yellowstone River fishing

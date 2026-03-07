@@ -7,7 +7,7 @@ Nestled at the doorstep of Glacier National Park, Columbia Falls invites adventu
 ## Quick Facts
 
 - **Population:** 5,308 (2020 Census)
-- **County:** Flathead
+- **County:** Flathead County
 - **Founded:** 1891, incorporated on April 26, 1909
 - **Elevation:** 3,087 ft
 - **Known For:** Gateway to Glacier National Park, outdoor recreation, Montana Veterans Home

@@ -11,7 +11,7 @@
 - **David Lynch:** Film director, born in Missoula. (Source: Grokipedia, IMDb)
 - **Dana Carvey:** Comedian and actor, born in Missoula. (Source: Grokipedia, IMDb)
 - **Hank Green:** YouTuber and author, attended University of Montana and resides in Missoula. (Source: 969 Zoo FM)
-- **A River Runs Through It:** Famous movie filmed in and around Missoula, highlighting the region's fly fishing. (Source: General Knowledge - to be verified with a quick search if critical, but commonly known)
+- **A River Runs Through It:** Norman Maclean's story is set in Missoula, but the 1992 film was primarily filmed in Livingston, Bozeman, and Paradise Valley (Gallatin and Yellowstone rivers). It captures Montana's fly-fishing culture central to the region. (Source: IMDb, Wikipedia)
 
 ### Top Things to Do in Missoula
 

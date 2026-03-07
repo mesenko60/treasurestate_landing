@@ -7,7 +7,7 @@ Nestled along the banks of the mighty Yellowstone River and surrounded by four m
 
 ## Quick Facts
 
-- **Population:** 8,040 (2020 census), growing to approximately 9,196 (2025)
+- **Population:** 8,483 (2020 census); ~8,900 (U.S. Census Bureau, July 1, 2023 estimate)
 - **County:** Park County (county seat)
 - **Founded:** December 21, 1882
 - **Elevation:** 4,500 ft
@@ -21,7 +21,7 @@ Nestled along the banks of the mighty Yellowstone River and surrounded by four m
 
 - **Margot Kidder** – Actress known for her role as Lois Lane in the Superman films, who made Livingston her home
 - **Jim Harrison** – Acclaimed author and poet who wrote "Legends of the Fall" while living in the Livingston area
-- **Yellowstone (TV series)** – The hit television drama starring Kevin Costner is set in the Livingston area, showcasing the region's stunning landscapes and ranch culture
+- **Yellowstone (TV series)** – The hit television drama starring Kevin Costner is set in Montana; creator Taylor Sheridan initially conceived the series in Livingston, though much of the filming occurs in the Bitterroot Valley (Chief Joseph Ranch near Darby) and other Montana locations.
 
 ---
 

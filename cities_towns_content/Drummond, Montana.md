@@ -8,7 +8,7 @@ Nestled between the rolling hills of Granite County and the majestic Pintler Mou
 ## Quick Facts
 
 - **Population:** 272
-- **County:** Granite
+- **County:** Granite County
 - **Founded:** 1883
 - **Elevation:** 3,963 ft
 - **Known For:** World Famous "Bullshippers," cattle ranching, and agricultural heritage

@@ -8,7 +8,7 @@ Nestled among the undulating hills of golden wheat fields, Big Sandy beckons the
 ## Quick Facts
 
 - **Population:** 605
-- **County:** Chouteau
+- **County:** Chouteau County
 - **Founded:** 1887
 - **Elevation:** 2,747 ft
 - **Known For:** Agricultural heritage, being part of Montana's "Golden Triangle" wheat region, and hometown of Pearl Jam bassist Jeff Ament

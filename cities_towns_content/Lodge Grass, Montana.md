@@ -8,7 +8,7 @@ Nestled in the heart of the Crow Indian Reservation along the banks of the Littl
 ## Quick Facts
 
 - **Population:** 441 (2020 Census)
-- **County:** Big Horn
+- **County:** Big Horn County
 - **Founded:** Early 1900s (incorporated in 1907)
 - **Elevation:** 3,366 ft (1,026 m)
 - **Known For:** Crow Indian culture, ranching heritage, proximity to Little Bighorn Battlefield

@@ -8,7 +8,7 @@ Nestled in the breathtaking Bitterroot Valley, Stevensville beckons adventurers 
 ## Quick Facts
 
 - **Population:** 1,337 (town) / 16,082 (Stevensville Census County Division)
-- **County:** Ravalli
+- **County:** Ravalli County
 - **Founded:** 1841 (St. Mary's Mission) / 1864 (town)
 - **Elevation:** 3,323 ft
 - **Known For:** Montana's first permanent non-Indigenous settlement; St. Mary's Mission; Lee Metcalf National Wildlife Refuge

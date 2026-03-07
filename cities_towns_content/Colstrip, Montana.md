@@ -1,7 +1,7 @@
 ### Quick Facts
 
 - **Population:** ~2,055 (Source: U.S. Census Bureau estimates)
-- **County:** Rosebud County
+- **County:** Rosebud County County
 - **Elevation:** 3,222 ft (982 m)
 - **Known For:** Being the "Energy Capital of Montana," massive coal mining operations, the Colstrip Power Plant, and surprisingly lush city parks.
 

@@ -7,7 +7,7 @@ Nestled between the towering peaks of the Mission Mountains and the vast Bob Mar
 ## Quick Facts
 
 - **Population:** 1,682 (2020 Census)
-- **County:** Missoula
+- **County:** Missoula County
 - **Founded:** Early 20th century (first major timber sale)
 - **Elevation:** 4,020 ft (1,225 meters)
 - **Known For:** Chain of pristine lakes, world-class fishing, gateway to Bob Marshall Wilderness

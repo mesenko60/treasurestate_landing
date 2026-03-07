@@ -8,7 +8,7 @@ Nestled against the rugged backdrop of Montana's highest peaks, Red Lodge beckon
 ## Quick Facts
 
 - **Population:** 2,399
-- **County:** Carbon
+- **County:** Carbon County
 - **Founded:** 1884
 - **Elevation:** 5,571 ft
 - **Known For:** Gateway to Beartooth Highway, world-class skiing, historic downtown
@@ -21,7 +21,7 @@ Nestled against the rugged backdrop of Montana's highest peaks, Red Lodge beckon
 
 - **Bill Linderman** – Legendary rodeo champion known as "King of the Cowboys" who called Red Lodge home and helped establish the town's rodeo heritage.
 - **Gary Ferguson** – Acclaimed nature writer and conservationist whose works have been inspired by the wilderness surrounding Red Lodge.
-- **"The Horse Whisperer"** – Parts of this 1998 Robert Redford film were shot in the stunning landscapes surrounding Red Lodge, showcasing the area's natural beauty.
+- **"The Horse Whisperer"** – Parts of this 1998 Robert Redford film were shot in Montana, including the Absaroka-Beartooth Wilderness and areas near Red Lodge, showcasing the region's natural beauty.
 
 ---
 

@@ -8,7 +8,7 @@ Nestled at the confluence of three pristine rivers, Twin Bridges is the perfect 
 ## Quick Facts
 
 - **Population:** 330
-- **County:** Madison
+- **County:** Madison County
 - **Founded:** 1864
 - **Elevation:** 4,593 ft
 - **Known For:** World-class fly fishing, being at the confluence of three rivers

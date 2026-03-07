@@ -7,7 +7,7 @@ Nestled along the winding Yellowstone River in Montana's northeastern frontier, 
 ## Quick Facts
 
 - **Population:** 6,346 (2020 Census)
-- **County:** Richland
+- **County:** Richland County
 - **Founded:** 1911 (incorporated)
 - **Elevation:** 1,949 ft
 - **Known For:** Agriculture, oil production, wildlife abundance, and the MonDak Heritage Center

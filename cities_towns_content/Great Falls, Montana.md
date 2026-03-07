@@ -6,7 +6,7 @@ Embark on an unforgettable journey in Great Falls, Montana, where the wild front
 
 ## Quick Facts
 
-- **Population:** Around 60,000 (approx. 2023)
+- **Population:** 60,422 (U.S. Census Bureau, July 1, 2023 estimate)
 - **County:** Cascade County
 - **Founded:** 1883
 - **Elevation:** 3,330 ft

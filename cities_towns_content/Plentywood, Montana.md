@@ -8,7 +8,7 @@ Nestled in the northeastern corner of Montana, Plentywood stands as a testament 
 ## Quick Facts
 
 - **Population:** 1,669 (2020 Census)
-- **County:** Sheridan
+- **County:** Sheridan County
 - **Founded:** 1912 (incorporated)
 - **Elevation:** 2,041 ft
 - **Known For:** Historic Outlaw Trail crossing, agricultural heritage, frontier history

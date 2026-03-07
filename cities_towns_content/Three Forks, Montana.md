@@ -8,7 +8,7 @@ Nestled at the confluence of the Jefferson, Madison, and Gallatin Rivers, Three 
 ## Quick Facts
 
 - **Population:** 1,989
-- **County:** Gallatin
+- **County:** Gallatin County
 - **Founded:** 1908
 - **Elevation:** 4,075 ft
 - **Known For:** The birthplace of the Missouri River, where three rivers converge
