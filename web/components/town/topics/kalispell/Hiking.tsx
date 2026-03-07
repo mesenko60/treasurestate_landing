@@ -20,7 +20,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <p>
         {townName} sits in the broad Flathead Valley of northwest Montana, flanked by the
         Swan Range to the east, the Salish Mountains to the west, and Glacier National Park
-        just 30 miles to the northeast. With 70 trailheads within 50 miles, the hiking here
+        just 30 miles to the northeast. With 26 trailheads within 30 miles, the hiking here
         ranges from gentle valley walks with views over Flathead Lake to world-renowned alpine
         trails along the Continental Divide. The proximity to Glacier National Park sets{' '}
         {townName} apart from every other Montana trail town — no other city offers a gateway
@@ -32,7 +32,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>70 trailheads</strong> within 50 miles</li>
+        <li><strong>26 trailheads</strong> within 30 miles</li>
         <li><strong>4 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>5 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> Lone Pine State Park, 3 miles from downtown</li>

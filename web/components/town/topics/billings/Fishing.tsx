@@ -23,8 +23,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         headline fishery lies 41 miles south: the <strong>Bighorn River</strong> below Yellowtail
         Dam is a world-class tailwater holding 5,000 or more trout per mile — rivaling the
         legendary Missouri at Craig and drawing fly anglers from around the globe. Add the
-        Stillwater River's freestone mountain water, 20 FWP fishing access sites (the most of
-        any hub city in the state), and Lake Elmo's urban stocked fishery two miles from
+        Stillwater River's freestone mountain water, 8 FWP fishing access sites within 30 miles,
+        and Lake Elmo's urban stocked fishery two miles from
         downtown, and {townName} offers fishing diversity that few Montana cities can match. For
         the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -32,7 +32,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>20 FWP fishing access sites</strong> — the most of any Montana hub city</li>
+        <li><strong>8 FWP fishing access sites</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Brown trout, rainbow trout, smallmouth bass, channel catfish, sauger, walleye, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Bighorn River tailwater (41 mi) — 5,000+ trout per mile</li>
         <li><strong>Through-town river:</strong> Yellowstone River — Montana's longest free-flowing river</li>
@@ -163,8 +163,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        {townName} has 20 FWP-designated fishing access sites within 50 miles — more than any
-        other hub city in Montana. Most of these line the Yellowstone River corridor, providing
+        {townName} has 8 FWP-designated fishing access sites within 30 miles. Most of these
+        line the Yellowstone River corridor, providing
         boat ramps, shore access, and wade-fishing entry points at regular intervals upstream
         and downstream of the city. The closest sites — East Bridge (1 mile), South Hills
         (3 miles), and Duck Creek Bridge (10 miles) — put anglers on the Yellowstone within

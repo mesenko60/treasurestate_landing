@@ -22,7 +22,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         can summit a mountain on your lunch break. The city nestles into the eastern flank of
         the Continental Divide in the Prickly Pear Valley, with the Helena National Forest
         wrapping around three sides and the broad Missouri River valley opening to the north.
-        With 14 trailheads within 50 miles, {townName} has fewer total trailheads than the big
+        With 11 trailheads within 30 miles, {townName} has fewer total trailheads than the big
         western Montana trail towns — but what it lacks in sheer count it makes up for in
         immediacy and quality. Mount Helena City Park puts a 620-acre trail network at the
         literal edge of downtown, the Scratchgravel Hills offer wide-open ridgeline rambling
@@ -34,7 +34,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>14 trailheads</strong> within 50 miles</li>
+        <li><strong>11 trailheads</strong> within 30 miles</li>
         <li><strong>9 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>4 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> Rodney Street Trailhead (Mount Helena), 1 mile from downtown</li>

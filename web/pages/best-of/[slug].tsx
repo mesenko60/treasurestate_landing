@@ -450,7 +450,7 @@ const RANKINGS: RankingDef[] = [
   {
     slug: 'best-outdoor-recreation',
     title: '10 Best Montana Towns for Outdoor Recreation',
-    metaDescription: 'The top Montana towns for outdoor adventure: ranked by access to trails, parks, rivers, ski areas, and wilderness within 50 miles.',
+    metaDescription: 'The top Montana towns for outdoor adventure: ranked by access to trails, parks, rivers, ski areas, and wilderness within 30 miles.',
     heroSubtitle: 'Where Adventure Is Always Just Outside Your Door',
     intro: 'Montana is an outdoor paradise, but some towns are better positioned than others. We scored every Montana community based on the variety, quality, and proximity of nearby recreation: from national parks and wilderness areas to trailheads, rivers, ski resorts, and hot springs. These are the towns where the outdoors isn\'t just nearby, it\'s your backyard.',
     methodology: 'Recreation Score (0–10) computed from four factors: category diversity (how many types of recreation are nearby), total volume of sites, quality weighting (national parks and wilderness count more than viewpoints), and proximity of the nearest notable attraction. Data sourced from OpenStreetMap and editorial research, using a tiered radius system (50–100 miles depending on site significance).',

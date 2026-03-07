@@ -35,26 +35,24 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} sits at 2,096 feet in Montana{'\u2019'}s rugged northwest corner at the
         confluence of Libby Creek and the <strong>Kootenai River</strong>. With{' '}
-        <strong>17 lakes</strong> within 50 miles, <strong>1 fishing access site</strong> in the
-        data, and the turquoise Kootenai flowing through town, {townName} offers world-class trout
+        <strong>Lake Koocanusa</strong> within 30 miles and the turquoise Kootenai flowing through
+        town, {townName} offers world-class trout
         fishing in one of Montana{'\u2019'}s most scenic river corridors. The Kootenai River (1 mile
         from town) holds rainbow, cutthroat, and bull trout and is renowned for fly fishing. Lake
         Koocanusa, created by Libby Dam, offers kokanee, rainbow trout, and lake trout. Bull trout
-        are native and protected{'\u2014'}catch-and-release regulations apply. Three hot springs
-        within 50 miles provide post-fishing recovery. For the full town profile, see
+        are native and protected{'\u2014'}catch-and-release regulations apply. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>1 fishing access site</strong> within 50 miles</li>
-        <li><strong>17 lakes</strong> within 50 miles</li>
+        <li><strong>1 lake</strong> within 30 miles (Lake Koocanusa)</li>
         <li><strong>Primary species:</strong> Rainbow trout, cutthroat trout, bull trout (native, protected), kokanee, lake trout</li>
         <li><strong>Star fishery:</strong> Kootenai River{'\u2014'}world-class trout, fly fishing popular</li>
         <li><strong>Closest river:</strong> Kootenai River, 1 mile</li>
         <li><strong>Major lake:</strong> Lake Koocanusa (kokanee, rainbow, lake trout)</li>
         <li><strong>Bull trout:</strong> Native and protected{'\u2014'}catch-and-release required</li>
-        <li><strong>Hot springs:</strong> 3 within 50 miles for post-fishing recovery</li>
+        <li><strong>Hot springs:</strong> Nearest hot springs are beyond 30 miles</li>
         <li><strong>License required:</strong> Montana fishing license (available at local shops and{' '}
           <a href="https://fwp.mt.gov" target="_blank" rel="noopener noreferrer">fwp.mt.gov</a>)</li>
       </ul>
@@ -119,8 +117,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 1 public fishing access site within 50 miles of
-        {townName} in the data. Additional access to fishing waters is available through wildlife
+        No Montana Fish, Wildlife & Parks fishing access sites fall within 30 miles of
+        {townName} in the data. Access to fishing waters is available through wildlife
         management areas, national forest lands, and bridge crossings on public roads. The Kootenai
         River corridor offers multiple access points along U.S. Highway 2.
       </p>
@@ -145,11 +143,10 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        <strong>17 lakes</strong> lie within 50 miles of {townName}, a mix of reservoirs and
-        mountain lakes. Lake Koocanusa is the dominant fishery, with kokanee, rainbow trout, and
-        lake trout. Smaller lakes in the Cabinet Mountains and Kootenai National Forest hold
-        cutthroat and other species, many accessible only by trail. The combination of river and
-        lake fishing within a short drive makes {townName} a versatile base for anglers.
+        <strong>Lake Koocanusa</strong> (27 miles) is the sole lake within 30 miles of {townName}
+        and the dominant fishery in the area, offering kokanee, rainbow trout, and lake trout.
+        The combination of the Kootenai River through town and Lake Koocanusa within an easy
+        drive makes {townName} a versatile base for anglers.
       </p>
       {nearLakes.length > 0 && (
         <table style={tableStyle}>
@@ -171,16 +168,15 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 
       <h2>Hot Springs</h2>
       <p>
-        Three hot springs lie within 50 miles of {townName}, offering a welcome recovery option
-        after long days of wading the Kootenai or fishing Lake Koocanusa. The combination of
-        world-class trout fishing and accessible thermal springs is a rare pairing in northwest
-        Montana.
+        No hot springs fall within 30 miles of {townName}. The nearest thermal springs
+        are farther afield, but the Kootenai River and Lake Koocanusa keep anglers well
+        occupied without the need for a nearby soak.
       </p>
 
       <h2>Species Guide</h2>

@@ -32,7 +32,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         <strong>Anaconda-Pintler Wilderness</strong>{'\u2014'}158,000 acres of alpine
         backcountry{'\u2014'}begins just <strong>3 miles south</strong> of town, making {townName} one
         of the closest basecamp towns to a major wilderness area in Montana. With{' '}
-        <strong>47 trailheads</strong> within 50 miles, the hiking spans everything from easy river
+        <strong>10 trailheads</strong> within 30 miles, the hiking spans everything from easy river
         valley walks to strenuous summit routes above treeline on the Continental Divide. Lost Creek
         State Park lies 12 miles away with its limestone canyon and waterfall, and Georgetown Lake
         sits 13 miles southwest with lakeside trails. This guide covers every major hiking zone
@@ -42,11 +42,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>47 trailheads</strong> within 50 miles</li>
-        <li><strong>2 wilderness areas</strong> within 50 miles</li>
-        <li><strong>1 state park</strong> within 50 miles</li>
-        <li><strong>3 waterfalls</strong> within 50 miles including Lost Creek Falls</li>
-        <li><strong>73 campgrounds</strong> within 50 miles</li>
+        <li><strong>10 trailheads</strong> within 30 miles</li>
+        <li><strong>1 wilderness area</strong> within 30 miles</li>
+        <li><strong>2 waterfalls</strong> within 30 miles</li>
+        <li><strong>23 campgrounds</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> Seymour Creek Trailhead, 7 miles</li>
         <li><strong>Closest wilderness:</strong> Anaconda-Pintler Wilderness, 3 miles south</li>
         <li><strong>Continental Divide Trail:</strong> Passes through the Pintler range</li>
@@ -176,13 +175,13 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Two federally designated wilderness areas lie within 50 miles of {townName}, giving the
+        One federally designated wilderness area lies within 30 miles of {townName}, giving the
         town unusually fast access to protected backcountry. The{' '}
         <strong>Anaconda-Pintler Wilderness</strong> (3 miles south) is the closest and most
         significant, encompassing 158,000 acres of the Continental Divide with alpine lakes, high
-        peaks, and the CDT. The surrounding wilderness areas extend the network of roadless terrain
-        across southwestern Montana, providing seemingly limitless backcountry hiking options for
-        multi-day trips.
+        peaks, and the CDT. Additional wilderness areas beyond 30 miles extend the network of
+        roadless terrain across southwestern Montana, providing seemingly limitless backcountry
+        hiking options for multi-day trips.
       </p>
       {wilderness.length > 0 && (
         <table style={tableStyle}>
@@ -205,12 +204,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        <strong>Lost Creek State Park</strong> (12 miles) is the premier state park near{' '}
+        <strong>Lost Creek State Park</strong> (12 miles) is the nearest state park to{' '}
         {townName}, featuring a dramatic limestone canyon, the Lost Creek Falls waterfall, and
         regular sightings of mountain goats and bighorn sheep on the canyon walls. The park has
         a campground, picnic area, and well-maintained trail system that makes it an easy
-        half-day outing from town. It is the primary state-park hiking destination within 50 miles
-        of town.
+        half-day outing from town.
       </p>
       {stateParks.length > 0 && (
         <table style={tableStyle}>

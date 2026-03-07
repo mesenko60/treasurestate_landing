@@ -16,21 +16,21 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
   return (
     <article className="content-section">
       <p>
-        {townName} may have only five public fishing access sites within 50 miles, but what it
+        {townName} may have only one public fishing access site within 30 miles, but what it
         lacks in access-site density it more than compensates for with the quality of the water.
         The Gallatin, Madison, and Yellowstone rivers — three of the most celebrated trout
         streams in North America — all flow within an hour's drive, and the upper Gallatin runs
         right through Gallatin Canyon just 13 miles south of town. Add the Jefferson, the
-        Boulder, Hyalite Reservoir, and 69 lakes within 50 miles, and {townName} offers a
+        Boulder, Hyalite Reservoir, and 16 lakes within 30 miles, and {townName} offers a
         fishing portfolio that rivals any mountain town in the West. For the full city profile,
         see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>5 fishing access sites</strong> within 50 miles</li>
+        <li><strong>1 fishing access site</strong> within 30 miles</li>
         <li><strong>5 major rivers</strong> within driving distance</li>
-        <li><strong>69 lakes</strong> within 50 miles</li>
+        <li><strong>16 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, cutthroat trout, mountain whitefish</li>
         <li><strong>Closest river access:</strong> Gallatin River, 13 miles south via US-191</li>
         <li><strong>License required:</strong> Montana fishing license (available at local shops and{' '}
@@ -116,7 +116,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>Fishing Access Sites</h2>
       <p>
         Montana Fish, Wildlife & Parks maintains public fishing access sites in the{' '}
-        {townName} area. With only five sites within 50 miles, the list is short — but
+        {townName} area. With only one site within 30 miles, the list is short — but
         each provides reliable access to quality water with parking and, in most cases,
         boat launch facilities.
       </p>

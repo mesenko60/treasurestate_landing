@@ -36,16 +36,18 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         {townName} sits at 4,121 feet in the exact geographic center of Montana. <strong>Big Spring
         Creek</strong>, a blue-ribbon trout stream, flows through town. Spring-fed and crystal-clear,
         it supports excellent populations of <strong>rainbow trout</strong> and{' '}
-        <strong>brown trout</strong>. With <strong>9 lakes</strong> within 50 miles,{' '}
+        <strong>brown trout</strong>.         With <strong>3 lakes</strong> within 30 miles,{' '}
         <strong>1 river</strong> in the data, and central Montana streams throughout the region,{' '}
         {townName} offers premier trout fishing in one of Montana{'\u2019'}s most distinctive
-        landscapes. Spring Creek Trout Hatchery (3 miles) raises fish for stocking. For the full
+        landscapes. With <strong>3 lakes</strong> within 30 miles and 1 hot spring nearby, the
+        region{'\u2019'}s spring-fed waters are the main draw. Spring Creek Trout Hatchery (3 miles)
+        raises fish for stocking. For the full
         town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>9 lakes</strong> within 50 miles</li>
+        <li><strong>3 lakes</strong> within 30 miles</li>
         <li><strong>1 river</strong> in the data</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout</li>
         <li><strong>Star fishery:</strong> Big Spring Creek{'\u2014'}blue-ribbon trout, flows through town</li>
@@ -107,10 +109,9 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains public fishing access sites within 50 miles of{' '}
-        {townName}. Additional access to fishing waters is available through wildlife management
-        areas and bridge crossings on public roads. Big Spring Creek offers multiple access points
-        along the creek corridor.
+        No formal FWP fishing access sites lie within 30 miles of {townName}. Access to fishing
+        waters is available through wildlife management areas and bridge crossings on public roads.
+        Big Spring Creek offers multiple access points along the creek corridor.
       </p>
       {sortedAccess.length > 0 && (
         <table style={tableStyle}>
@@ -133,7 +134,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        <strong>9 lakes</strong> lie within 50 miles of {townName}, a mix of reservoirs and
+        <strong>3 lakes</strong> lie within 30 miles of {townName}, a mix of reservoirs and
         natural lakes. These waters provide still-water fishing opportunities to complement the
         stream fishing on Big Spring Creek. The combination of creek and lake fishing within a
         short drive makes {townName} a versatile base for anglers.
@@ -158,7 +159,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

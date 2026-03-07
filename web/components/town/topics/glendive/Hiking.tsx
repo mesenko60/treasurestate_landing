@@ -31,8 +31,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         eroded buttes, hoodoos, cap rocks, and exposed Late Cretaceous formations up to 65 million
         years old. <strong>Makoshika State Park</strong> (2 miles), Montana{'\u2019'}s largest state
         park at 11,500 acres, dominates the landscape south of town. With{' '}
-        <strong>7 viewpoints</strong> within 7 miles, <strong>6 campgrounds</strong>,{' '}
-        <strong>6 lakes</strong>, <strong>5 wildlife refuges</strong>, <strong>2 state parks</strong>,{' '}
+        <strong>7 viewpoints</strong> within 7 miles, <strong>3 campgrounds</strong>,{' '}
+        <strong>1 nature reserve</strong>, <strong>1 state park</strong>,{' '}
         and <strong>11 museums</strong>, {townName} offers a hiking experience unlike anywhere else in
         Montana{'\u2014'}open, arid, fossil-rich terrain where dinosaur bones erode from canyon walls.
         For the full town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -40,11 +40,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>40 recreation sites</strong> within 50 miles</li>
+        <li><strong>24 recreation sites</strong> within 30 miles</li>
         <li><strong>7 viewpoints</strong> within 7 miles (all inside Makoshika State Park)</li>
-        <li><strong>6 campgrounds</strong> within 50 miles</li>
-        <li><strong>5 wildlife refuges</strong> within 50 miles</li>
-        <li><strong>2 state parks</strong> within 50 miles (Makoshika, 2 mi)</li>
+        <li><strong>3 campgrounds</strong> within 30 miles</li>
+        <li><strong>1 nature reserve</strong> within 30 miles</li>
+        <li><strong>1 state park</strong> within 30 miles (Makoshika, 2 mi)</li>
         <li><strong>1 formal trailhead:</strong> Vista View Trailhead, 5 miles</li>
         <li><strong>No wilderness areas</strong>{'\u2014'}this is prairie and badlands, not mountains</li>
         <li><strong>Best seasons:</strong> Spring (April{'\u2013'}May) and fall (September{'\u2013'}October)</li>
@@ -86,7 +86,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         <>
           <h2>State Parks</h2>
           <p>
-            Two state parks lie within 50 miles of {townName}. Makoshika dominates outdoor recreation
+            One state park lies within 30 miles of {townName}. Makoshika dominates outdoor recreation
             in the immediate area, offering maintained trails, campgrounds, and visitor facilities
             within a badlands landscape found nowhere else in Montana.
           </p>

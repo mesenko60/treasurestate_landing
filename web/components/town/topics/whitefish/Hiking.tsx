@@ -20,7 +20,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <p>
         {townName} sits at the base of Big Mountain in the Flathead Valley of northwest Montana,
         with Glacier National Park's west entrance just 17 miles northeast, closer than any
-        other town of significant size. With 80 trailheads within 50 miles, the hiking here
+        other town of significant size. With 33 trailheads within 30 miles, the hiking here
         ranges from summit trails at Whitefish Mountain Resort to world-renowned alpine routes
         along the Continental Divide in Glacier. The combination of a deep local trail network
         and proximity to one of America's most iconic national parks makes {townName} one of
@@ -31,7 +31,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>80 trailheads</strong> within 50 miles</li>
+        <li><strong>33 trailheads</strong> within 30 miles</li>
         <li><strong>4 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>5 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> Danny On Trail, 4 miles from downtown</li>

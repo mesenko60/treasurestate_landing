@@ -36,16 +36,16 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         {townName} sits on the southern shore of Flathead Lake — the largest natural freshwater
         lake west of the Mississippi — making it one of Montana's premier fishing destinations.
         Flathead Lake covers roughly 200 square miles with depths reaching 370 feet, producing
-        trophy lake trout that regularly exceed 30 pounds. Beyond the lake, 13 public fishing
-        access sites and 80 lakes lie within 50 miles, along with the Flathead River system below
+        trophy lake trout that regularly exceed 30 pounds. Beyond the lake, 5 public fishing
+        access sites and 24 lakes lie within 30 miles, along with the Flathead River system below
         Seli'š Ksanka Qlispe' Dam. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>13 fishing access sites</strong> within 50 miles</li>
-        <li><strong>80 lakes</strong> within 50 miles</li>
+        <li><strong>5 fishing access sites</strong> within 30 miles</li>
+        <li><strong>24 lakes</strong> within 30 miles</li>
         <li><strong>3 rivers</strong> within driving distance</li>
         <li><strong>Primary species:</strong> Lake trout (mackinaw), yellow perch, lake whitefish, bull trout (C&R only), rainbow trout, kokanee salmon</li>
         <li><strong>Closest lake:</strong> Pablo Reservoir, 4 miles (tribal permit required)</li>
@@ -168,7 +168,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 13 public fishing access sites within 50 miles
+        Montana Fish, Wildlife & Parks maintains 5 public fishing access sites within 30 miles
         of {townName}. These provide parking, boat launch facilities, and shore access to Flathead
         Lake, the Flathead River, and surrounding waters.
       </p>
@@ -193,7 +193,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        Beyond Flathead Lake, 80 lakes lie within 50 miles of {townName}. Pablo Reservoir and
+        Beyond Flathead Lake, 24 lakes lie within 30 miles of {townName}. Pablo Reservoir and
         Hellroaring Reservoir are the closest options (4 and 7 miles respectively, tribal permit
         required). Flathead Lake, Lower Crow Reservoir, and numerous mountain lakes in the Mission
         Mountains and Swan Range offer additional variety. Many of the smaller alpine lakes hold
@@ -220,7 +220,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

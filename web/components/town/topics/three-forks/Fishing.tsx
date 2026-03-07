@@ -36,7 +36,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         {townName} sits at 4,075 feet at the confluence of the Jefferson, Madison, and Gallatin
         Rivers{'\u2014'}the exact point where the Missouri River is born. This is the fishing
         holy grail of Montana: three legendary trout rivers meeting in a single valley, 31 miles
-        west of Bozeman in Gallatin County. With <strong>59 lakes</strong> within 50 miles,
+        west of Bozeman in Gallatin County. With <strong>13 lakes</strong> within 30 miles,
         dedicated fishing access sites, and three of Montana{'\u2019'}s most storied rivers
         flowing through or immediately adjacent to town, {townName} commands one of the most
         extraordinary concentrations of world-class fishing water in the American West. The
@@ -49,7 +49,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>At a Glance</h2>
       <ul>
         <li><strong>3 legendary rivers</strong> converge at {townName}{'\u2014'}Jefferson, Madison, Gallatin</li>
-        <li><strong>59 lakes</strong> within 50 miles</li>
+        <li><strong>13 lakes</strong> within 30 miles</li>
         <li><strong>Fishing access sites</strong> along the river corridors</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, mountain whitefish, westslope cutthroat trout</li>
         <li><strong>Star fishery:</strong> Madison River{'\u2014'}one of Montana{'\u2019'}s most famous blue-ribbon trout streams</li>
@@ -181,7 +181,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        Beyond the rivers, <strong>59 lakes</strong> lie within 50 miles of {townName}.{' '}
+        Beyond the rivers, <strong>13 lakes</strong> lie within 30 miles of {townName}.{' '}
         <strong>Pacabo Dam</strong> (2 miles) is the closest stillwater option, practically at
         the edge of town. <strong>Ottertail Lake</strong> (9 miles),{' '}
         <strong>Plunket Lake Dam</strong> (13 miles), and{' '}
@@ -210,7 +210,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

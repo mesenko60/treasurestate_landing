@@ -46,7 +46,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} sits at 3,077 feet in the Flathead Valley of northwest Montana, just 17 miles
         from the west entrance of Glacier National Park. No other town in Montana offers a closer
         basecamp to one of America{'\u2019'}s most iconic wilderness parks. With{' '}
-        <strong>84 trailheads</strong> and <strong>44 waterfalls</strong> within 50 miles, the
+        <strong>31 trailheads</strong> and <strong>9 waterfalls</strong> within 30 miles, the
         hiking here spans everything from gentle river walks in town to world-renowned alpine
         traverses along the Continental Divide. Going-to-the-Sun Road{'\u2014'}one of the great
         engineering feats of the American West{'\u2014'}begins less than 20 miles east and unlocks
@@ -60,10 +60,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>84 trailheads</strong> within 50 miles</li>
-        <li><strong>44 waterfalls</strong> within 50 miles</li>
-        <li><strong>131 campgrounds</strong> within 50 miles</li>
-        <li><strong>16 viewpoints</strong> within 50 miles</li>
+        <li><strong>31 trailheads</strong> within 30 miles</li>
+        <li><strong>9 waterfalls</strong> within 30 miles</li>
+        <li><strong>48 campgrounds</strong> within 30 miles</li>
+        <li><strong>6 viewpoints</strong> within 30 miles</li>
         <li><strong>5 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>5 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> River{'\u2019'}s Edge Park, in town</li>
@@ -217,7 +217,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Waterfall Guide</h2>
       <p>
-        With <strong>44 named waterfalls</strong> within 50 miles, {townName} has a legitimate
+        With <strong>9 named waterfalls</strong> within 30 miles, {townName} has a legitimate
         claim as the waterfall capital of Montana. The vast majority are concentrated in Glacier
         National Park, fed by snowmelt and glacial runoff cascading down cirque headwalls and
         narrow gorges. Many are visible from trails along Going-to-the-Sun Road; others require

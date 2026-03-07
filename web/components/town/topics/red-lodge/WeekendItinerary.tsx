@@ -140,7 +140,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
       <p>
         After the drive back to {townName}, keep dinner casual on Broadway. You've
         earned a quiet evening after a full day of high-altitude driving and exploration.
-        The hot springs within 50 miles of {townName} offer an excellent post-drive soak
+        Regional hot springs offer an excellent post-drive soak
         if you have the energy.
       </p>
 
@@ -204,7 +204,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         feet of skiing with uncrowded runs and mountain-town character that contrasts
         sharply with larger destination resorts. After skiing, Broadway Avenue's
         restaurants and bars are at their liveliest during ski season, and the hot springs
-        within 50 miles provide a perfect apr&egrave;s-ski soak.
+        in the wider region provide a perfect apr&egrave;s-ski soak.
       </p>
       <p>
         <strong>Shoulder seasons:</strong> Late May brings the first tentative openings

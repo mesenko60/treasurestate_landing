@@ -21,8 +21,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} sits at 3,573 feet in the heart of the Bitterroot Valley{'\u2014'}Montana{'\u2019'}s
         {'\u201C'}Banana Belt{'\u201D'}{'\u2014'}flanked by two mountain ranges: the rugged Bitterroot Range
         rising to the west and the gentler Sapphire Mountains to the east. The valley{'\u2019'}s
-        mild climate extends the hiking season in both directions. With 100 trailheads
-        within 50 miles{'\u2014'}the most of any
+        mild climate extends the hiking season in both directions. With 47 trailheads
+        within 30 miles{'\u2014'}the most of any
         hub city in our analysis{'\u2014'}{townName} offers an extraordinary density of hiking options
         ranging from valley-floor river walks to remote wilderness traverses in the
         Selway-Bitterroot, one of the largest wilderness areas in the Lower 48. Seven federally
@@ -34,14 +34,14 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>100 trailheads</strong> within 50 miles{'\u2014'}most of any hub city we track</li>
-        <li><strong>411 recreation sites</strong> within 50 miles</li>
+        <li><strong>47 trailheads</strong> within 30 miles{'\u2014'}most of any hub city we track</li>
+        <li><strong>182 recreation sites</strong> within 30 miles</li>
         <li><strong>7 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>6 state parks</strong> within range</li>
         <li><strong>Closest wilderness:</strong> Selway-Bitterroot, 10 miles west</li>
         <li><strong>Signature hike:</strong> Blodgett Canyon, 7 miles from town</li>
         <li><strong>Ski areas:</strong> Lost Trail Powder Mountain (62 mi), Discovery (59 mi), Snowbowl (57 mi), Lookout Pass (120 mi)</li>
-        <li><strong>Hot springs:</strong> Sleeping Child (8 mi), Lolo Hot Springs (48 mi), and 8 more within 50 miles</li>
+        <li><strong>Hot springs:</strong> Sleeping Child Hot Springs (8 mi)</li>
         <li><strong>Lake Como:</strong> 16 miles south{'\u2014'}swimming, trails, and Bitterroot Range access</li>
       </ul>
 

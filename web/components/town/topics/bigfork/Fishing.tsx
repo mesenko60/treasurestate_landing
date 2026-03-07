@@ -36,8 +36,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         {townName} sits at 2,940 feet on the northeast shore of{' '}
         <strong>Flathead Lake</strong>{'\u2014'}the largest natural freshwater lake west of the
         Mississippi{'\u2014'}in Flathead County, Montana. The Swan River flows directly through
-        town, and <strong>72 lakes</strong> lie within 50 miles alongside{' '}
-        <strong>11 fishing access sites</strong> and multiple blue-ribbon rivers.{' '}
+        town, and <strong>32 lakes</strong> lie within 30 miles alongside{' '}
+        <strong>10 fishing access sites</strong> and multiple blue-ribbon rivers.{' '}
         <strong>Flathead Lake</strong> itself is the star fishery{'\u2014'}trophy lake trout
         (mackinaw) exceeding 30 pounds, bull trout, yellow perch, and westslope cutthroat draw
         anglers from across the region. The Jewel Basin alpine lakes offer backcountry cutthroat
@@ -49,8 +49,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>11 fishing access sites</strong> within 50 miles</li>
-        <li><strong>72 lakes</strong> within 50 miles</li>
+        <li><strong>10 fishing access sites</strong> within 30 miles</li>
+        <li><strong>32 lakes</strong> within 30 miles</li>
         <li><strong>Key rivers:</strong> Swan River (through town), Flathead River (10 miles)</li>
         <li><strong>Primary species:</strong> Lake trout (mackinaw), bull trout, westslope cutthroat trout, yellow perch, lake whitefish, mountain whitefish</li>
         <li><strong>Star fishery:</strong> Flathead Lake{'\u2014'}trophy mackinaw up to 30+ lbs</li>
@@ -165,8 +165,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains <strong>11 public fishing access
-        sites</strong> within 50 miles of {townName}. The closest are{' '}
+        Montana Fish, Wildlife & Parks maintains <strong>10 public fishing access
+        sites</strong> within 30 miles of {townName}. The closest are{' '}
         <strong>South Shore</strong> (2 miles) and <strong>Sportsman{'\u2019'}s Bridge</strong>{' '}
         (2 miles), providing quick access to Flathead Lake and the Swan River respectively.{' '}
         <strong>Kearney Rapids</strong> (3 miles) and <strong>Loon Lake</strong> (6 miles) expand
@@ -194,8 +194,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        Beyond Flathead Lake and Echo Lake, an extraordinary <strong>72 lakes</strong> lie within
-        50 miles of {townName}. <strong>Aeneas Lake</strong> (10 miles),{' '}
+        Beyond Flathead Lake and Echo Lake, an extraordinary <strong>32 lakes</strong> lie within
+        30 miles of {townName}. <strong>Aeneas Lake</strong> (10 miles),{' '}
         <strong>Birch Lake</strong> (10 miles), and <strong>Picnic Lakes</strong> (10 miles) are
         among the closest in the Jewel Basin. <strong>Big Hawk Lake</strong> (11 miles),{' '}
         <strong>Strawberry Lake</strong> (11 miles), <strong>Tom Tom Lake</strong> (11 miles),
@@ -223,7 +223,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

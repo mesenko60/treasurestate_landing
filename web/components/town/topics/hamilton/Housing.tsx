@@ -185,8 +185,8 @@ export default function Housing({ townName, slug, housing }: Props) {
         Key factors to watch include Missoula{'\u2019'}s growth trajectory (which pushes spillover demand
         south along US-93), remote-work trends among tech and professional-services workers, and
         the pace of new construction in the broader Bitterroot Valley. {townName}{'\u2019'}s fundamental
-        appeal{'\u2014'}the Bitterroot River, Selway-Bitterroot Wilderness 10 miles west, 100 trailheads
-        within 50 miles, Rocky Mountain Laboratories providing stable federal employment, and a
+        appeal{'\u2014'}the Bitterroot River, Selway-Bitterroot Wilderness 10 miles west, 47 trailheads
+        within 30 miles, Rocky Mountain Laboratories providing stable federal employment, and a
         mild valley climate{'\u2014'}ensures sustained interest from buyers well beyond Ravalli County.
       </p>
     </article>

@@ -6,7 +6,7 @@ export type RecreationPlace = {
   distMiles: number;
 };
 
-export const MAX_RECREATION_DISTANCE_MILES = 50;
+export const MAX_RECREATION_DISTANCE_MILES = 30;
 
 const EXCLUDED_TYPES = new Set([
   'National HQ',

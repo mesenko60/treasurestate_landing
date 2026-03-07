@@ -22,7 +22,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         dramatic peak that anchors Big Sky Resort and dominates the skyline from every angle.
         The community is flanked by the Madison Range to the west, the Gallatin Range to the east,
         and the Gallatin Canyon to the north, with Yellowstone National Park just 50 miles south.
-        With 42 trailheads within 50 miles, three wilderness areas, and direct access to some of
+        With 23 trailheads within 30 miles, two wilderness areas, and direct access to some of
         the most spectacular alpine terrain in the Northern Rockies, {townName} is a hiking
         destination of the first order. Summer brings the Lone Peak Tram to 11,166 feet for
         summit access without the climb, while hundreds of miles of trail through the Lee
@@ -34,9 +34,9 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>42 trailheads</strong> within 50 miles</li>
-        <li><strong>283 recreation sites</strong> within 50 miles</li>
-        <li><strong>3 wilderness areas</strong> accessible from {townName}</li>
+        <li><strong>23 trailheads</strong> within 30 miles</li>
+        <li><strong>105 recreation sites</strong> within 30 miles</li>
+        <li><strong>2 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>3 state parks</strong> within range</li>
         <li><strong>Closest trailhead:</strong> Big Sky Resort trail network, in town</li>
         <li><strong>Closest wilderness:</strong> Lee Metcalf Wilderness (Madison Range), 6 miles</li>
@@ -140,7 +140,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness &amp; Backcountry</h2>
       <p>
-        Three federally designated wilderness areas are accessible from {townName}. The
+        Two federally designated wilderness areas are accessible from {townName}. The
         <strong> Lee Metcalf Wilderness</strong> is the closest and most significant{'\u2014'}its
         Madison Range and Spanish Peaks units rise directly from the {townName} area, with
         trailheads as close as 6 miles from the community center. The Spanish Peaks unit offers

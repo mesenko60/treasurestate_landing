@@ -139,7 +139,7 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
         The Bitterroot Valley has experienced a significant influx of remote workers since 2020,
         and {townName} sits at the center of this trend. Professionals in tech, finance, marketing,
         and consulting who can work from anywhere have been drawn to the valley{'\u2019'}s combination
-        of mountain scenery, outdoor recreation (100 trailheads within 50 miles), mild climate,
+        of mountain scenery, outdoor recreation (47 trailheads within 30 miles), mild climate,
         and proximity to Missoula{'\u2019'}s airport and amenities. These workers bring incomes that
         often exceed local medians by a significant margin, contributing to the housing
         affordability challenges documented in

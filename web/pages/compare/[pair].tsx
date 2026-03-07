@@ -215,7 +215,7 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
           {/* Nearby recreation */}
           {(townA.recreation || townB.recreation) && (
             <div style={{ marginTop: '2rem' }}>
-              <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>Outdoor Recreation &amp; Attractions (within 50 mi)</h3>
+              <h3 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>Outdoor Recreation &amp; Attractions (within 30 mi)</h3>
               <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#888', margin: '0 0 1rem' }}>
                 {townA.name}: {townA.recreation?.total || 0} sites | {townB.name}: {townB.recreation?.total || 0} sites
               </p>

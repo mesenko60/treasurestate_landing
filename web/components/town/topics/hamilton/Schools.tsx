@@ -98,7 +98,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
       <p>
         Few school districts in Montana can match {townName}{'\u2019'}s outdoor classroom. The Bitterroot
         National Forest surrounds the town, the Selway-Bitterroot Wilderness begins just 10
-        miles west, and 100 trailheads lie within 50 miles. The Bitterroot River{'\u2014'}a renowned
+        miles west, and 47 trailheads lie within 30 miles. The Bitterroot River{'\u2014'}a renowned
         trout stream{'\u2014'}flows through the valley floor within reach of every school in the
         district. This geography shapes the educational experience in ways that extend far beyond
         textbooks: ecology field trips along the river corridor, conservation studies in the

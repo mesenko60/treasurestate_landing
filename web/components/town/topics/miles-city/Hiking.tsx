@@ -17,7 +17,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} sits at 2,365 feet on the open prairie of southeastern Montana, where the
         Tongue River flows into the Yellowstone River and the landscape stretches flat to the
         horizon in nearly every direction. This is not mountain country{'\u2014'}there are no alpine
-        trailheads within 50 miles, no wilderness areas on the doorstep, and no ski resorts over
+        trailheads within 30 miles, no wilderness areas on the doorstep, and no ski resorts over
         the next ridge. What {townName} offers instead is a different kind of outdoor experience:
         river corridors lined with cottonwoods, prairie walks through sagebrush and grassland,
         island state parks, world-class bird watching, and some of the best hunting country in
@@ -28,7 +28,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>17 recreation sites</strong> within 50 miles</li>
+        <li><strong>7 recreation sites</strong> within 30 miles</li>
         <li><strong>1 state park:</strong> Pirogue Island State Park (in town)</li>
         <li><strong>2 wildlife refuges</strong> within range</li>
         <li><strong>Primary rivers:</strong> Yellowstone River (through town), Tongue River (through town)</li>

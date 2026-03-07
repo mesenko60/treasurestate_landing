@@ -41,14 +41,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         <strong>sauger</strong>. But {townName}{'\u2019'}s signature fishery is the{' '}
         <strong>paddlefish</strong>{'\u2014'}a prehistoric species dating to the age of the dinosaurs,
         reaching 100+ pounds, found in the Yellowstone and Missouri rivers. With{' '}
-        <strong>6 lakes</strong> within 50 miles and the Yellowstone running through the heart of
+        <strong>3 lakes</strong> within 30 miles and the Yellowstone running through the heart of
         town, {townName} offers a fishing experience unlike anywhere else in Montana. For the full
         town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>6 lakes</strong> within 50 miles</li>
+        <li><strong>3 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Walleye, channel catfish, smallmouth bass, sauger, paddlefish</li>
         <li><strong>Signature fishery:</strong> Paddlefish{'\u2014'}prehistoric, 100+ lbs, mid-May to June</li>
         <li><strong>Main access:</strong> MT FWP Black Bridge Fishing Site, 1 mile</li>
@@ -141,7 +141,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        <strong>6 lakes</strong> lie within 50 miles of {townName}. <strong>Crisafulli
+        <strong>3 lakes</strong> lie within 30 miles of {townName}. <strong>Crisafulli
         Lake</strong> (2 mi) and <strong>Hollecker Lake</strong> (2 mi) are the closest, offering
         still-water fishing just minutes from town. <strong>Lindsay Reservoir</strong> (22 mi)
         provides a larger impoundment for day trips. These prairie lakes and reservoirs complement
@@ -168,7 +168,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

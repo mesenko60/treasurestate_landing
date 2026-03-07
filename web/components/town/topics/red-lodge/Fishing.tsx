@@ -18,7 +18,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} is a mountain fishing town at 5,568 feet where Rock Creek{'\u2014'}a cold, clear
         freestone stream fed by snowmelt from the Beartooth Mountains{'\u2014'}flows directly through
-        the center of town. With 23 FWP fishing access sites and 241 lakes within 50 miles,
+        the center of town. With 15 FWP fishing access sites and 149 lakes within 30 miles,
         {townName} offers an extraordinary range of water: from Rock Creek's accessible in-town
         riffles to the alpine lakes of the Absaroka-Beartooth Wilderness to the Stillwater River's
         remote canyon water. The Beartooth Highway{'\u2014'}one of America's most spectacular alpine
@@ -31,8 +31,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>241 lakes</strong> within 50 miles</li>
-        <li><strong>23 FWP fishing access sites</strong> within 50 miles</li>
+        <li><strong>149 lakes</strong> within 30 miles</li>
+        <li><strong>15 FWP fishing access sites</strong> within 30 miles</li>
         <li><strong>3 rivers</strong> within range</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, Yellowstone cutthroat trout, brook trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Rock Creek{'\u2014'}flows through town, accessible freestone water</li>
@@ -85,7 +85,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Alpine Lakes</h2>
       <p>
-        With 241 lakes within 50 miles{'\u2014'}and the broader Beartooth Plateau holding over
+        With 149 lakes within 30 miles{'\u2014'}and the broader Beartooth Plateau holding over
         700{'\u2014'}{townName} offers alpine lake fishing on a scale matched by few places in the
         Lower 48. The Beartooth Highway provides roadside access to several high-elevation lakes
         above 9,000 feet, including Beartooth Lake, Island Lake, and Long Lake, which hold
@@ -154,7 +154,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        {townName} benefits from 23 FWP fishing access sites within 50 miles{'\u2014'}a strong
+        {townName} benefits from 15 FWP fishing access sites within 30 miles{'\u2014'}a strong
         number that reflects Carbon County's extensive public-water access along Rock Creek, the
         Stillwater River, and surrounding waters. Rock Creek access points in and near town put
         anglers on the water within minutes of downtown. The Stillwater and Clark's Fork corridors

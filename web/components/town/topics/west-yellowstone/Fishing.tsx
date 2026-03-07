@@ -25,15 +25,15 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         for brown and rainbow trout. Inside Yellowstone, the Firehole River, Gibbon River, and
         Madison River provide fishing in a setting of erupting geysers and steaming thermal
         features found nowhere else on earth. With {fishingAccess.length} FWP fishing access
-        {fishingAccess.length === 1 ? ' site' : ' sites'} and 37 lakes within 50 miles, {townName}{' '}
+        {fishingAccess.length === 1 ? ' site' : ' sites'} and 10 lakes within 30 miles, {townName}{' '}
         puts world-class water at your doorstep. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>37 lakes</strong> within 50 miles</li>
-        <li><strong>{fishingAccess.length} FWP fishing access {fishingAccess.length === 1 ? 'site' : 'sites'}</strong> within 50 miles</li>
+        <li><strong>10 lakes</strong> within 30 miles</li>
+        <li><strong>{fishingAccess.length} FWP fishing access {fishingAccess.length === 1 ? 'site' : 'sites'}</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, Yellowstone cutthroat trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Madison River{'\u2014'}world-class dry-fly and nymph water minutes from town</li>
         <li><strong>Major stillwater:</strong> Hebgen Lake{'\u2014'}12-mile reservoir with trophy brown trout</li>
@@ -167,7 +167,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>Fishing Access Sites</h2>
       <p>
         {townName} has {fishingAccess.length} FWP fishing access{' '}
-        {fishingAccess.length === 1 ? 'site' : 'sites'} within 50 miles. Given the town's small
+        {fishingAccess.length === 1 ? 'site' : 'sites'} within 30 miles. Given the town's small
         size and the dominance of national park and national forest land, formal FWP access sites
         are fewer here than in towns on larger river corridors. However, the Madison River's Highway
         287 corridor provides numerous informal pullouts and access points, and Hebgen Lake has

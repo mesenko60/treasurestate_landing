@@ -31,7 +31,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         Mississippi{'\u2014'}in Flathead County, Montana. The Swan River flows directly through
         town, and the <strong>Jewel Basin Hiking Area</strong> rises just 10 miles to the east
         with 35+ miles of trails and 27 alpine lakes reserved exclusively for hikers. With{' '}
-        <strong>69 trailheads</strong> within 50 miles, 29 waterfalls, and{' '}
+        <strong>25 trailheads</strong> within 30 miles and{' '}
         <strong>Glacier National Park</strong> only 45 miles north, {townName} is one of
         northwest Montana{'\u2019'}s premier hiking basecamps. This guide covers every major
         hiking zone accessible from {townName}. For the full town profile, see
@@ -40,15 +40,13 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>69 trailheads</strong> within 50 miles</li>
-        <li><strong>7 wilderness areas</strong> within 50 miles</li>
-        <li><strong>5 state parks</strong> within 50 miles (Wayfarers State Park just 2 miles)</li>
-        <li><strong>29 waterfalls</strong> within 50 miles{'\u2014'}more than almost any other Montana hub</li>
-        <li><strong>91 campgrounds</strong> within 50 miles</li>
+        <li><strong>25 trailheads</strong> within 30 miles</li>
+        <li><strong>5 state parks</strong> within 30 miles (Wayfarers State Park just 2 miles)</li>
+        <li><strong>27 campgrounds</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> Swan River West Trailhead, 1 mile</li>
         <li><strong>Marquee hiking:</strong> Jewel Basin Hiking Area{'\u2014'}15,349 acres, hikers-only, 27 alpine lakes</li>
         <li><strong>Day-trip range:</strong> Glacier National Park, 45 miles north</li>
-        <li><strong>Ski areas:</strong> 22 within 50 miles</li>
+        <li><strong>Ski area:</strong> Whitefish Mountain Resort within 30 miles</li>
         <li><strong>Peak season:</strong> Late June through mid-October (Jewel Basin snow-free July{'\u2013'}October)</li>
       </ul>
 
@@ -191,10 +189,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Seven federally designated wilderness areas lie within 50 miles of {townName}, reflecting
-        the extraordinary concentration of protected wildlands in northwest Montana. The{' '}
+        While no federally designated wilderness areas fall within 30 miles of {townName},
+        several are accessible as longer day drives. The{' '}
         <strong>Bob Marshall Wilderness</strong> and <strong>Great Bear Wilderness</strong> to
-        the east form one of the largest contiguous wilderness complexes in the lower 48 states.
+        the east form one of the largest contiguous wilderness complexes in the lower 48 states,
+        reachable via trailheads roughly 40{'\u2013'}60 miles away.
         The <strong>Mission Mountains Wilderness</strong> rises across Flathead Lake to the west.
         These wilderness areas provide limitless backcountry hiking for multi-day trips into some
         of the most remote terrain in the Northern Rockies.
@@ -224,7 +223,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         situated on the northeast shore of Flathead Lake with lakeside trails, a campground, and
         a swim beach. The park{'\u2019'}s short trails wind through old-growth ponderosa pine
         with views across the lake to the Mission Mountains and Wild Horse Island. Four
-        additional state parks lie within 50 miles, providing further trail options across the
+        additional state parks lie within 30 miles, providing further trail options across the
         Flathead region.
       </p>
       {stateParks.length > 0 && (
@@ -272,8 +271,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       </p>
       <p>
         <strong>Winter (November{'\u2013'}March):</strong> High-elevation trails in Jewel Basin
-        and the Swan Range are buried under snow. Twenty-two ski areas lie within 50 miles,
-        including Whitefish Mountain Resort and Blacktail Mountain. Lower-elevation trails near
+        and the Swan Range are buried under snow. Whitefish Mountain Resort lies within 30 miles,
+        and Blacktail Mountain is a short drive beyond. Lower-elevation trails near
         Flathead Lake can be snowshoed when conditions allow. Cross-country skiing is available
         throughout the Flathead Valley. Avalanche awareness is essential for any backcountry
         winter travel in the Swan Range.

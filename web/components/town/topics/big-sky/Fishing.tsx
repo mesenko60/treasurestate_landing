@@ -21,7 +21,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         the Robert Redford film adaptation{'\u2014'}flows through the Gallatin Canyon just minutes from
         town, carrying wild rainbow and brown trout through a dramatic boulder-strewn canyon. The
         legendary Madison River is 30 miles west, offering 50-fish days of dry-fly action that draw
-        anglers from around the world. With 75 lakes within 50 miles, 3 FWP fishing access sites,
+        anglers from around the world. With 18 lakes within 30 miles, 2 FWP fishing access sites,
         4 major river systems within day-trip range, and proximity to Yellowstone National Park's
         native cutthroat trout waters, {townName} provides access to a fishery that rivals any in
         North America. The Gallatin Canyon corridor is lined with fly shops and outfitters, and
@@ -32,8 +32,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>75 lakes</strong> within 50 miles</li>
-        <li><strong>3 FWP fishing access sites</strong> within 50 miles</li>
+        <li><strong>18 lakes</strong> within 30 miles</li>
+        <li><strong>2 FWP fishing access sites</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, Yellowstone cutthroat trout, brook trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Gallatin River{'\u2014'}flows through the canyon minutes from town, legendary pocket water</li>
         <li><strong>Blue-ribbon water:</strong> Madison River (30 mi west), Yellowstone River (75 mi east via Paradise Valley)</li>
@@ -91,7 +91,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Lakes</h2>
       <p>
-        With 75 lakes within 50 miles, {townName} offers outstanding stillwater fishing to
+        With 18 lakes within 30 miles, {townName} offers outstanding stillwater fishing to
         complement its river credentials. Alpine lakes in the Lee Metcalf Wilderness and the
         Spanish Peaks hold populations of Yellowstone cutthroat trout and brook trout in spectacular
         mountain settings. Many of these high-country lakes see light fishing pressure due to the
@@ -169,7 +169,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        {townName} has 3 FWP fishing access sites within 50 miles. The Gallatin Canyon corridor
+        {townName} has 2 FWP fishing access sites within 30 miles. The Gallatin Canyon corridor
         along US-191 provides the most convenient access{'\u2014'}roadside pullouts and informal
         parking areas offer wade-fishing entry points every mile or so through the canyon without
         formal FWP signage. The formal fishing access sites serve as designated put-in/take-out

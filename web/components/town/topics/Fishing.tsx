@@ -22,16 +22,16 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         the Blackfoot, and the Bitterroot{' '}—{' '}making it one of the premier fly fishing
         destinations in the American West. Norman Maclean's <em>A River Runs Through It</em> was
         set on these waters, and the fishing here lives up to the literary reputation. With
-        44 public fishing access sites and 75+ lakes within 50 miles, {townName} offers
+        28 public fishing access sites and 13 lakes within 30 miles, {townName} offers
         year-round angling opportunities for every skill level. For the full city profile,
         see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>44 fishing access sites</strong> within 50 miles</li>
+        <li><strong>28 fishing access sites</strong> within 30 miles</li>
         <li><strong>5 major rivers</strong> within driving distance</li>
-        <li><strong>75+ lakes</strong> within 50 miles</li>
+        <li><strong>13 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, westslope cutthroat trout, bull trout</li>
         <li><strong>Closest river access:</strong> Clark Fork River, flows through downtown</li>
         <li><strong>License required:</strong> Montana fishing license (available at local shops and <a href="https://fwp.mt.gov" target="_blank" rel="noopener noreferrer">fwp.mt.gov</a>)</li>
@@ -126,7 +126,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       {farAccess.length > 0 && (
         <details style={{ margin: '0.5rem 0 1.5rem' }}>
           <summary style={{ cursor: 'pointer', color: '#3b6978', fontWeight: 600, fontSize: '0.9rem' }}>
-            {farAccess.length} more access sites (25–50 miles) &rsaquo;
+            {farAccess.length} more access sites (25–30 miles) &rsaquo;
           </summary>
           <table style={{ width: '100%', borderCollapse: 'collapse', margin: '0.5rem 0', fontSize: '0.92rem' }}>
             <tbody>
@@ -144,7 +144,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <h2>Lake Fishing</h2>
       <p>
         While {townName} is best known for its river fishing, the surrounding mountains hold
-        over 75 lakes within 50 miles. Many are alpine or sub-alpine lakes accessible by
+        13 lakes within 30 miles. Many are alpine or sub-alpine lakes accessible by
         trail, offering solitude and the chance to catch native westslope cutthroat trout
         in stunning settings. Placid Lake and Seeley Lake (both about 30 miles northeast)
         are popular drive-to options with developed access and boat ramps.

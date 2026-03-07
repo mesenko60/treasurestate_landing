@@ -58,8 +58,8 @@ function computeScore(places: RecreationPlace[]): number {
 
   // Proximity: how close is the nearest notable site (0-1.5 pts)
   const notable = places.filter(p => (TYPE_META[p.type]?.weight ?? 0) >= 4);
-  const nearestNotable = notable.length > 0 ? notable[0].distMiles : 50;
-  const proximity = Math.max(1 - nearestNotable / 50, 0) * 1.5;
+  const nearestNotable = notable.length > 0 ? notable[0].distMiles : 30;
+  const proximity = Math.max(1 - nearestNotable / 30, 0) * 1.5;
 
   return Math.min(Math.round((diversity + volume + quality + proximity) * 10) / 10, 10);
 }
@@ -245,7 +245,7 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
               {getScoreLabel(score)}
             </div>
             <div style={{ fontSize: '0.76rem', color: '#888', marginTop: '2px' }}>
-              {visiblePlaces.length} sites within 50 mi
+              {visiblePlaces.length} sites within 30 mi
             </div>
             <div style={{ fontSize: '0.72rem', color: '#aaa' }}>
               {sortedTypes.length} categories

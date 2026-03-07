@@ -261,7 +261,7 @@ function movingGuide(t: TownBundle): GuideData {
     heading: `Why Move to ${t.name}?`,
     html: `
       <p>${t.name} is a ${sizeLabel} of ${n(pop)} people${county ? ` in ${county} County` : ''}, sitting at ${n(elev)} feet in elevation. ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} combines the best of Montana living: stunning natural beauty, outdoor recreation, and a strong community, ${pop > 20000 ? 'with the amenities of a mid-size city' : pop > 5000 ? 'with small-city conveniences' : 'with authentic small-town charm'}.</p>
-      <p>Montana has no state sales tax and no tax on retirement income, making it financially attractive for both working professionals and retirees. ${t.name} specifically offers ${places.length} recreation and attraction sites nearby, ${ratio ? `a housing affordability ratio of ${ratio}x` : 'a growing community'}, and four distinct seasons.</p>
+      <p>Montana has no state sales tax and does not tax Social Security benefits or most pension income, making it financially attractive for both working professionals and retirees. ${t.name} specifically offers ${places.length} recreation and attraction sites nearby, ${ratio ? `a housing affordability ratio of ${ratio}x` : 'a growing community'}, and four distinct seasons.</p>
       <div class="stat-grid">
         ${statCard(n(pop), 'Population')}
         ${statCard(n(elev) + ' ft', 'Elevation')}
@@ -284,7 +284,7 @@ function movingGuide(t: TownBundle): GuideData {
         ${income ? statCard($(income), 'Median Income') : ''}
         ${ratio ? statCard(ratio + 'x', 'Affordability Ratio') : ''}
       </div>
-      <p>Montana has <strong>no state sales tax</strong>, which saves residents money on everyday purchases. The state also has no tax on Social Security or other retirement income. Property taxes are moderate, based on assessed value.</p>
+      <p>Montana has <strong>no state sales tax</strong>, which saves residents money on everyday purchases. The state also has no tax on Social Security benefits or most pension income. Property taxes are moderate, based on assessed value.</p>
     `,
   });
 
@@ -375,7 +375,7 @@ function movingGuide(t: TownBundle): GuideData {
           <thead><tr><th>Industry</th><th>Share of Employment</th></tr></thead>
           <tbody>${topInd.map((i: any) => `<tr><td>${i.name}</td><td>${i.pct}%</td></tr>`).join('')}</tbody>
         </table>` : ''}
-        <p>Montana has <strong>no state sales tax</strong> and <strong>no tax on retirement income</strong>, making it attractive for both workers and retirees.</p>
+        <p>Montana has <strong>no state sales tax</strong> and <strong>no tax on Social Security benefits or most pension income</strong>, making it attractive for both workers and retirees.</p>
         <p style="font-size: 0.78rem; color: #999; font-style: italic;">Employment and industry data from U.S. Census Bureau ${t.freshness.censusEmployment?.vintage || 'ACS 5-Year (2019–2023)'}. Current conditions may differ.</p>
       `,
     });
@@ -454,7 +454,7 @@ function movingGuide(t: TownBundle): GuideData {
     hc && hc.hasLocalHospital ? 'Has a local hospital' : null,
     hc && hc.healthcareScore >= 7 ? 'Strong healthcare access' : null,
     pop > 15000 ? 'Good amenities and services' : 'Authentic small-town community',
-    'No state income tax on retirement',
+    'No state tax on Social Security or most pensions',
   ].filter(Boolean);
 
   const cons = [

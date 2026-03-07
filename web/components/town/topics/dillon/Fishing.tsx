@@ -57,7 +57,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>24 lakes</strong> within 50 miles</li>
+        <li><strong>8 lakes</strong> within 30 miles</li>
         <li><strong>14 FWP fishing access sites</strong> within 20 miles</li>
         <li><strong>4 major rivers</strong> within day-trip range</li>
         <li><strong>Primary species:</strong> Brown trout, rainbow trout, westslope cutthroat, Arctic grayling, mountain whitefish</li>
@@ -253,7 +253,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Alpine Lakes</h2>
       <p>
-        The Pioneer Mountains west of {townName} hold two dozen lakes within 50 miles, many
+        The Pioneer Mountains west of {townName} hold 8 lakes within 30 miles, many
         accessible only by hiking trails that climb into alpine basins between 7,500 and 9,500
         feet. These high-country lakes hold populations of westslope cutthroat trout and brook
         trout{'\u2014'}smaller fish than the Beaverhead{'\u2019'}s trophies, but eager surface feeders in

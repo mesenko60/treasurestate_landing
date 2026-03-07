@@ -21,8 +21,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         concentration of fishable water. The Bitterroot and its major forks (East Fork and
         West Fork) carry wild populations of brown trout, rainbow trout, westslope cutthroat
         trout, and bull trout through mountain canyons and cottonwood-lined valley stretches
-        that define western Montana fly fishing. With 31 FWP fishing access sites and 104
-        lakes within 50 miles, {townName} offers a fishery that ranges from technical dry-fly
+        that define western Montana fly fishing. With 14 FWP fishing access sites and 55
+        lakes within 30 miles, {townName} offers a fishery that ranges from technical dry-fly
         water on the main Bitterroot to remote alpine lake fishing in the Selway-Bitterroot
         Wilderness. The Bitterroot{'\u2019'}s fall brown trout run{'\u2014'}when large fish move upstream
         from the Clark Fork to spawn{'\u2014'}is one of the signature fishing events in western
@@ -32,8 +32,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>104 lakes</strong> within 50 miles</li>
-        <li><strong>31 FWP fishing access sites</strong> within 50 miles</li>
+        <li><strong>55 lakes</strong> within 30 miles</li>
+        <li><strong>14 FWP fishing access sites</strong> within 30 miles</li>
         <li><strong>5 rivers</strong> within range</li>
         <li><strong>Primary species:</strong> Brown trout, rainbow trout, westslope cutthroat trout, bull trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Bitterroot River{'\u2014'}flows through the valley, renowned dry-fly and streamer water</li>
@@ -101,7 +101,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Lakes</h2>
       <p>
-        With 104 lakes within 50 miles, {townName} offers extensive stillwater fishing to complement
+        With 55 lakes within 30 miles, {townName} offers extensive stillwater fishing to complement
         its river credentials. <strong>Lake Como</strong> (16 miles south) is the most accessible
         and popular{'\u2014'}a scenic mountain reservoir at the base of the Bitterroot Range stocked
         with rainbow trout and kokanee salmon, with facilities for bank fishing, float tubes,
@@ -168,7 +168,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        {townName} benefits from 31 FWP fishing access sites within 50 miles{'\u2014'}an outstanding
+        {townName} benefits from 14 FWP fishing access sites within 30 miles{'\u2014'}an outstanding
         number that reflects the Bitterroot Valley{'\u2019'}s status as a premier fishing destination.
         Access sites are distributed along the main Bitterroot River, the East Fork, and the
         West Fork, providing numerous put-in and take-out options for float trips and convenient

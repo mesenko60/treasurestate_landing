@@ -34,9 +34,9 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at 5,335 feet at the foot of the Anaconda Range in southwestern Montana,
-        26 miles west of Butte and 120 miles from Missoula. With <strong>86 lakes</strong> within
-        50 miles, <strong>7 fishing access sites</strong>, and <strong>5 rivers</strong> within
-        driving distance, {townName} commands an extraordinary density of fishable water.{' '}
+        26 miles west of Butte and 120 miles from Missoula. With <strong>48 lakes</strong> within
+        30 miles, <strong>2 fishing access sites</strong>, and <strong>5 rivers</strong> within
+        driving distance, {townName} commands a remarkable density of fishable water.{' '}
         <strong>Georgetown Lake</strong>{'\u2014'}15 miles west{'\u2014'}is the premier fishery:
         a 2,800-acre mountain lake at 6,330 feet stocked with rainbow trout, brook trout, and
         kokanee salmon, and widely regarded as Montana{'\u2019'}s ice fishing capital. The
@@ -49,8 +49,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>7 fishing access sites</strong> within 50 miles</li>
-        <li><strong>86 lakes</strong> within 50 miles</li>
+        <li><strong>2 fishing access sites</strong> within 30 miles</li>
+        <li><strong>48 lakes</strong> within 30 miles</li>
         <li><strong>5 rivers</strong> within driving distance</li>
         <li><strong>Primary species:</strong> Rainbow trout, brook trout, westslope cutthroat trout, kokanee salmon, brown trout, mountain whitefish</li>
         <li><strong>Star fishery:</strong> Georgetown Lake{'\u2014'}rainbow trout, brook trout, kokanee salmon, ice fishing</li>
@@ -167,7 +167,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 7 public fishing access sites within 50 miles
+        Montana Fish, Wildlife & Parks maintains 2 public fishing access sites within 30 miles
         of {townName}. These sites provide reliable access to the Clark Fork River, Georgetown
         Lake, and surrounding waters, with parking and, in most cases, boat launch facilities.
       </p>
@@ -192,7 +192,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        Beyond Georgetown Lake, an extraordinary <strong>86 lakes</strong> lie within 50 miles
+        Beyond Georgetown Lake, an impressive <strong>48 lakes</strong> lie within 30 miles
         of {townName}{'\u2014'}one of the highest densities of fishable lakes for any town in
         Montana. <strong>Barker Lakes</strong> (8 miles), <strong>Thornton Lake</strong> (10
         miles), and <strong>Hunters Lake</strong> (11 miles) are among the closest options.{' '}
@@ -222,15 +222,15 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 
       <h2>Hot Springs</h2>
       <p>
         After a day on the water, <strong>Fairmont Hot Springs</strong> (8 miles from {townName})
-        offers natural hot springs pools for soaking. An additional 13 hot springs lie within 50
-        miles, making the {townName} area a rare combination of outstanding fishing and easily
+        offers natural hot springs pools for soaking. An additional 13 hot springs lie within
+        the wider area, making the {townName} area a rare combination of outstanding fishing and easily
         accessible thermal springs{'\u2014'}a welcome recovery option after long days of wading
         and hiking to backcountry lakes.
       </p>

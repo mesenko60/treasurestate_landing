@@ -20,8 +20,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Northern Rockies. Flathead Lake — the largest natural freshwater lake west of the
         Mississippi at 197 square miles — sits just 14 miles south, while the Flathead River
         system threads through the valley with three major forks draining Glacier National
-        Park and the surrounding wilderness. With 11 public fishing access sites and 52 lakes
-        within 50 miles, {townName} offers everything from trophy lake trout trolling on
+        Park and the surrounding wilderness. With 10 public fishing access sites and 27 lakes
+        within 30 miles, {townName} offers everything from trophy lake trout trolling on
         Flathead Lake to delicate cutthroat dry-fly fishing on pristine mountain streams. For
         the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -29,8 +29,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>11 fishing access sites</strong> within 50 miles</li>
-        <li><strong>52 lakes</strong> within 50 miles</li>
+        <li><strong>10 fishing access sites</strong> within 30 miles</li>
+        <li><strong>27 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Lake trout (mackinaw), cutthroat trout, bull trout (C&R only), rainbow trout, northern pike, yellow perch, mountain whitefish</li>
         <li><strong>Closest lake:</strong> Flathead Lake, 14 miles south</li>
         <li><strong>Closest river:</strong> Flathead River, 8 miles</li>
@@ -115,8 +115,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 11 public fishing access sites within 50
-        miles of {townName} — more than double what many Montana cities offer. These sites
+        Montana Fish, Wildlife & Parks maintains 10 public fishing access sites within 30
+        miles of {townName}. These sites
         provide reliable access to the Flathead River system and surrounding lakes, with
         parking and, in most cases, boat launch facilities. Several sites along Flathead Lake
         offer both shore fishing and ramp access for trolling.
@@ -142,7 +142,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Mountain Lakes</h2>
       <p>
-        Beyond the headline lakes, 52 lakes lie within 50 miles of {townName}, many offering
+        Beyond the headline lakes, 27 lakes lie within 30 miles of {townName}, many offering
         quality fishing with far less traffic. Ashley Lake (14 miles west) is a 3,200-acre
         lake with good kokanee salmon and cutthroat trout fishing and a Forest Service
         campground. Echo Lake (16 miles south) provides easy access and consistent fishing for

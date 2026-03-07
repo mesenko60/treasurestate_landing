@@ -30,7 +30,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         Rivers in southwestern Montana{'\u2014'}the exact point where the Missouri River begins.
         Located 31 miles west of Bozeman in Gallatin County, the town of 1,989 is surrounded by
         river bottomland, rolling foothills, and easy access to mountain ranges in every direction.
-        With <strong>28 trailheads</strong> within 50 miles, the hiking spans everything from
+        With <strong>14 trailheads</strong> within 30 miles, the hiking spans everything from
         interpretive river bluff trails at Missouri Headwaters State Park to guided limestone
         cavern tours at Lewis & Clark Caverns and ancient bison-hunting sites at Madison Buffalo
         Jump. The Bridger Range and Hyalite Canyon near Bozeman add alpine options within a short
@@ -40,11 +40,9 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>28 trailheads</strong> within 50 miles</li>
-        <li><strong>5 wilderness areas</strong> within 50 miles</li>
-        <li><strong>4+ state parks</strong> within 50 miles</li>
-        <li><strong>2 waterfalls</strong> within 50 miles</li>
-        <li><strong>43 campgrounds</strong> within 50 miles</li>
+        <li><strong>14 trailheads</strong> within 30 miles</li>
+        <li><strong>3 state parks</strong> within 30 miles</li>
+        <li><strong>6 campgrounds</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> The Rim TH, 8 miles</li>
         <li><strong>Closest state park:</strong> Missouri Headwaters State Park, 4 miles</li>
         <li><strong>Iconic attraction:</strong> Lewis & Clark Caverns State Park, 16 miles</li>
@@ -174,14 +172,14 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Five federally designated wilderness areas lie within 50 miles of {townName}, providing
-        access to some of Montana{'\u2019'}s most pristine backcountry. The{' '}
+        No federally designated wilderness areas fall within 30 miles of {townName}, but several
+        are accessible as day trips. The{' '}
         <strong>Lee Metcalf Wilderness</strong> in the Madison Range and the{' '}
-        <strong>Absaroka-Beartooth Wilderness</strong> to the southeast anchor the network of
-        protected wildlands surrounding the greater Gallatin Valley. These wilderness areas offer
-        multi-day backpacking trips through alpine terrain, with trails accessing high lakes,
-        ridgeline traverses, and remote valleys. Most wilderness trails involve significant
-        elevation gain and require backcountry preparedness including bear spray, water
+        <strong>Absaroka-Beartooth Wilderness</strong> to the southeast lie within roughly 35{'\u2013'}50
+        miles, anchoring the network of protected wildlands surrounding the greater Gallatin Valley.
+        These wilderness areas offer multi-day backpacking trips through alpine terrain, with trails
+        accessing high lakes, ridgeline traverses, and remote valleys. Most wilderness trails involve
+        significant elevation gain and require backcountry preparedness including bear spray, water
         purification, and navigation tools.
       </p>
       {wilderness.length > 0 && (

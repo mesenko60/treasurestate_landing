@@ -19,8 +19,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
     <article className="content-section">
       <p>
         {townName} sits at the southern tip of Flathead Lake, Montana's largest natural
-        freshwater lake, with the Mission Mountains rising dramatically to the east. With 47
-        trailheads within 50 miles, the hiking here spans lakeshore walks, waterfall trails,
+        freshwater lake, with the Mission Mountains rising dramatically to the east. With 24
+        trailheads within 30 miles, the hiking here spans lakeshore walks, waterfall trails,
         and rugged alpine routes that climb nearly 7,000 vertical feet from lake level to the
         peaks of the Mission Range. What sets {townName} apart is its proximity to the{' '}
         <strong>Mission Mountains Tribal Wilderness</strong> — the only tribally designated
@@ -33,7 +33,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>47 trailheads</strong> within 50 miles</li>
+        <li><strong>24 trailheads</strong> within 30 miles</li>
         <li><strong>8 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>9 state parks</strong> with trail access</li>
         <li><strong>Closest trailhead:</strong> Mud Lake, 8 miles east</li>
@@ -163,8 +163,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        {townName} has exceptional state park access, with nine Montana state parks within 50
-        miles. Beyond Wild Horse Island, <strong>Flathead Lake State Park</strong> (11 miles)
+        {townName} has exceptional state park access, with several Montana state parks within
+        driving distance. Beyond Wild Horse Island, <strong>Flathead Lake State Park</strong> (11 miles)
         maintains multiple units around the lake — including Finley Point, Yellow Bay, and Big
         Arm — each with shoreline trails, swimming beaches, and campgrounds.{' '}
         <strong>Wayfarers State Park</strong> (28 miles, near Bigfork) offers lakeside walks

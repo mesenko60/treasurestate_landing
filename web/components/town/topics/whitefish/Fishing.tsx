@@ -21,16 +21,16 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Lake, a 3,300-acre glacial lake, borders the town's eastern edge just 2 miles from
         Central Avenue. Flathead Lake, the largest natural freshwater lake west of the
         Mississippi, is 20 miles south. The Flathead River system threads through the valley,
-        and Glacier National Park's pristine streams are 17 miles northeast. With 11 public
-        fishing access sites and 45 lakes within 50 miles, {townName} offers everything from
+        and Glacier National Park's pristine streams are 17 miles northeast. With 8 public
+        fishing access sites and 26 lakes within 30 miles, {townName} offers everything from
         trophy lake trout to delicate cutthroat on mountain streams. For the full town
         profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>11 fishing access sites</strong> within 50 miles</li>
-        <li><strong>45 lakes</strong> within 50 miles</li>
+        <li><strong>8 fishing access sites</strong> within 30 miles</li>
+        <li><strong>26 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Mountain whitefish, lake trout (mackinaw), cutthroat trout, northern pike, yellow perch, bull trout (C&R only), rainbow trout</li>
         <li><strong>Closest lake:</strong> Whitefish Lake, 2 miles</li>
         <li><strong>Closest river:</strong> Flathead River, 22 miles</li>
@@ -110,7 +110,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 11 public fishing access sites within 50
+        Montana Fish, Wildlife & Parks maintains 8 public fishing access sites within 30
         miles of {townName}. These sites provide reliable access to the Flathead River system,
         Whitefish Lake, and surrounding lakes, with parking and, in most cases, boat launch
         facilities. Glacier Rim River Access (11 miles) and Blankenship Bridge Boat Launch
@@ -137,7 +137,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Mountain Lakes</h2>
       <p>
-        Beyond the headline waters, 45 lakes lie within 50 miles of {townName}. Cedar Lake
+        Beyond the headline waters, 26 lakes lie within 30 miles of {townName}. Cedar Lake
         and Smith Lake (7 miles) offer quiet forest-lake fishing close to town. Bailey Lake
         and Spoon Lake (10 miles) provide secluded shoreline access. Ashley Lake (19 miles
         west) is a 3,200-acre lake with kokanee salmon and cutthroat trout fishing and a

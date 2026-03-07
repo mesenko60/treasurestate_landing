@@ -314,7 +314,7 @@ const CURATED_SITES = [
   { name: 'Miracle of America Museum', type: 'Museum', lat: 47.6930, lng: -114.1500 },
 ];
 
-const DEFAULT_RADIUS = 50;
+const DEFAULT_RADIUS = 30;
 
 function haversineMiles(lat1, lon1, lat2, lon2) {
   const R = 3959;

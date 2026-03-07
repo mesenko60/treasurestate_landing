@@ -30,9 +30,9 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         Fergus County and home to 5,952 people. The town is surrounded by island-range geology{'\u2014'}
         isolated mountain ranges rising from the plains, including the <strong>Big Snowy Mountains</strong>{'\u2014'}
         Wilderness Study Area (21 miles) and the <strong>Judith Mountains</strong>. With{' '}
-        <strong>20 campgrounds</strong>, <strong>16 wildlife refuges</strong>, <strong>9 lakes</strong>,{' '}
-        <strong>7 museums</strong>, <strong>2 hot springs</strong> (including Gigantic Warm Spring 8 miles
-        away), and <strong>2 ski areas</strong> within 50 miles, {townName} is a gateway to prairie
+        <strong>17 campgrounds</strong>, <strong>3 nature reserves</strong>, <strong>3 lakes</strong>,{' '}
+        <strong>2 museums</strong>, <strong>1 hot spring</strong> (Gigantic Warm Spring, 8 miles
+        away) within 30 miles, {townName} is a gateway to prairie
         landscapes, rock art, and mountain backcountry. Bear Gulch Pictographs and the American Prairie
         Reserve are within day-trip range. Spring Creek Trout Hatchery area is 3 miles from town. For
         the full town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -40,12 +40,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>20 campgrounds</strong> within 50 miles</li>
-        <li><strong>16 wildlife refuges</strong> within 50 miles</li>
-        <li><strong>9 lakes</strong> within 50 miles</li>
-        <li><strong>7 museums</strong> within 50 miles</li>
-        <li><strong>2 hot springs</strong> within 50 miles (Gigantic Warm Spring, 8 mi)</li>
-        <li><strong>2 ski areas</strong> within 50 miles</li>
+        <li><strong>17 campgrounds</strong> within 30 miles</li>
+        <li><strong>3 nature reserves</strong> within 30 miles</li>
+        <li><strong>3 lakes</strong> within 30 miles</li>
+        <li><strong>2 museums</strong> within 30 miles</li>
+        <li><strong>1 hot spring</strong> within 30 miles (Gigantic Warm Spring, 8 mi)</li>
         <li><strong>Closest wilderness:</strong> Big Snowy Mountains Wilderness Study Area, 21 miles</li>
         <li><strong>Spring Creek Trout Hatchery area:</strong> 3 miles</li>
         <li><strong>Peak season:</strong> June through October</li>
@@ -153,7 +152,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         <>
           <h2>State Parks</h2>
           <p>
-            State parks within 50 miles of {townName} provide maintained trail systems and
+            State parks within 30 miles of {townName} provide maintained trail systems and
             day-use facilities, offering accessible alternatives to more remote backcountry.
           </p>
           <table style={tableStyle}>
@@ -195,7 +194,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       </p>
       <p>
         <strong>Winter (November{'\u2013'}March):</strong> High-elevation trails and the Big Snowy
-        Mountains are buried under snow. Two ski areas within 50 miles provide downhill skiing. Lower-
+        Mountains are buried under snow. The nearest downhill skiing is beyond 30 miles, but lower-
         elevation areas near {townName} can be walked when conditions allow, but expect cold and snow.
       </p>
 

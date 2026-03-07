@@ -24,8 +24,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         way to Yellowstone National Park's northeast entrance, passing through a world of alpine
         tundra, glacial lakes, and granite peaks that rivals anything in the Lower 48. The
         Absaroka-Beartooth Wilderness (15 miles south) protects over 943,000 acres of alpine
-        plateaus, peaks exceeding 12,000 feet, and more than 700 alpine lakes. With 13 trailheads
-        within 50 miles, {townName} offers an unusual combination of in-town creek-side walks,
+        plateaus, peaks exceeding 12,000 feet, and more than 700 alpine lakes. With 12 trailheads
+        within 30 miles, {townName} offers an unusual combination of in-town creek-side walks,
         high-alpine scrambles, and direct access to one of Montana's most spectacular wilderness
         areas. This guide organizes trails by distance from {townName} and covers seasonal
         considerations. For the full city profile, see
@@ -34,16 +34,16 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>13 trailheads</strong> within 50 miles</li>
-        <li><strong>338 recreation sites</strong> within 50 miles</li>
+        <li><strong>12 trailheads</strong> within 30 miles</li>
+        <li><strong>200 recreation sites</strong> within 30 miles</li>
         <li><strong>1 wilderness area</strong> directly accessible: Absaroka-Beartooth (15 mi)</li>
         <li><strong>3 state parks</strong> within range</li>
-        <li><strong>5 waterfalls</strong> within 50 miles</li>
+        <li><strong>4 waterfalls</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> Rock Creek trails, in town</li>
         <li><strong>Closest wilderness:</strong> Absaroka-Beartooth Wilderness, 15 miles</li>
         <li><strong>National parks:</strong> Yellowstone (72 mi via Beartooth Highway)</li>
         <li><strong>Ski area:</strong> Red Lodge Mountain (4 mi)</li>
-        <li><strong>Hot springs:</strong> none within 50 miles</li>
+        <li><strong>Hot springs:</strong> none within 30 miles</li>
         <li><strong>Scenic drive:</strong> Beartooth Highway (All-American Road), 15 miles to summit</li>
       </ul>
 

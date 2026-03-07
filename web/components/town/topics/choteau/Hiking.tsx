@@ -33,7 +33,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         transitions on Earth. To the west lies the{' '}
         <strong>Bob Marshall Wilderness Complex</strong>, over 1 million acres of roadless
         wilderness that ranks among the largest contiguous wilderness areas in the lower 48.
-        With <strong>5 trailheads</strong> within 50 miles, {townName} is a launching point for
+        With <strong>1 trailhead</strong> within 30 miles, {townName} is a launching point for
         everything from day hikes along the Front to multi-day expeditions deep into the
         {'\u201C'}Bob.{'\u201D'} Nine wildlife management areas, Lewis and Clark National Forest
         lands, and a full suite of Rocky Mountain predators make this some of the wildest hiking
@@ -43,12 +43,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>5 trailheads</strong> within 50 miles</li>
-        <li><strong>0 federally designated wilderness areas</strong> within 50 miles</li>
-        <li><strong>2 state parks</strong> within 50 miles</li>
-        <li><strong>4 waterfalls</strong> within 50 miles</li>
-        <li><strong>11 campgrounds</strong> within 50 miles</li>
-        <li><strong>8 wildlife refuges/WMAs</strong> within 50 miles</li>
+        <li><strong>1 trailhead</strong> within 30 miles</li>
+        <li><strong>0 federally designated wilderness areas</strong> within 30 miles</li>
+        <li><strong>2 campgrounds</strong> within 30 miles</li>
+        <li><strong>5 nature reserves</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> South Fork Teton Trailhead, 28 miles</li>
         <li><strong>Closest wilderness:</strong> North Fork Sun River WSA, 26 miles</li>
         <li><strong>Ski area:</strong> Teton Pass Ski Area, 16 miles</li>
@@ -159,7 +157,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        No federally designated wilderness areas lie within 50 miles of {townName}, but the Rocky
+        No federally designated wilderness areas lie within 30 miles of {townName}, but the Rocky
         Mountain Front still gives the town quick access to exceptionally wild country. The{' '}
         <strong>North Fork Sun River WSA</strong> (26 miles) is the closest designated area,
         protecting wild country along the Sun River drainage on the eastern slope of the
@@ -187,10 +185,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        Two state parks lie within 50 miles of {townName}, providing maintained trail systems
-        and day-use facilities. These parks offer accessible alternatives to the more remote
-        wilderness trails along the Front, with established paths, interpretive signage, and
-        campground access for visitors seeking a less rugged outing within easy reach of town.
+        No state parks lie within 30 miles of {townName}. The nearest state parks are beyond
+        the 30-mile radius but remain day-trip options for visitors seeking maintained trail
+        systems and day-use facilities as alternatives to the more remote wilderness trails
+        along the Front.
       </p>
       {stateParks.length > 0 && (
         <table style={tableStyle}>

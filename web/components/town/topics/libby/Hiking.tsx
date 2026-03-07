@@ -29,21 +29,19 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} sits at 2,096 feet in Montana{'\u2019'}s rugged northwest corner, the seat of
         Lincoln County and home to 2,775 people. The town is surrounded by over 2 million acres of
         wilderness, anchored by the <strong>Cabinet Mountains Wilderness</strong> (94,360 acres) and
-        Kootenai National Forest. With <strong>6 trailheads</strong> within 50 miles, {townName} is
+        Kootenai National Forest. With <strong>4 trailheads</strong> within 30 miles, {townName} is
         a gateway to Montana{'\u2019'}s largest undammed waterfall, ancient cedar groves, and
-        pristine backcountry. One wilderness area, three state parks, two waterfalls, and 59
-        campgrounds within 50 miles make this some of the most accessible yet wild hiking country
-        in northwest Montana. For the full town profile, see
+        pristine backcountry. One wilderness area, two waterfalls, and 23 campgrounds within 30
+        miles make this some of the most accessible yet wild hiking country in northwest Montana. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>6 trailheads</strong> within 50 miles</li>
-        <li><strong>1 wilderness area</strong> within 50 miles</li>
-        <li><strong>3 state parks</strong> within 50 miles</li>
-        <li><strong>2 waterfalls</strong> within 50 miles</li>
-        <li><strong>59 campgrounds</strong> within 50 miles</li>
+        <li><strong>4 trailheads</strong> within 30 miles</li>
+        <li><strong>1 wilderness area</strong> within 30 miles</li>
+        <li><strong>2 waterfalls</strong> within 30 miles</li>
+        <li><strong>23 campgrounds</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> Kootenai Falls area, 11 miles</li>
         <li><strong>Closest wilderness:</strong> Cabinet Mountains Wilderness, 94,360 acres</li>
         <li><strong>Ski area:</strong> Turner Mountain, 12 miles (winter)</li>
@@ -151,10 +149,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        Three state parks lie within 50 miles of {townName}, providing maintained trail systems and
-        day-use facilities. These parks offer accessible alternatives to the more remote wilderness
-        trails in the Cabinet Mountains, with established paths, interpretive signage, and
-        campground access for visitors seeking a less rugged outing within easy reach of town.
+        No state parks lie within 30 miles of {townName}. The nearest state parks are beyond the
+        30-mile radius but remain day-trip options for visitors seeking maintained trail systems,
+        interpretive signage, and campground access as alternatives to the more remote wilderness
+        trails in the Cabinet Mountains.
       </p>
       {stateParks.length > 0 && (
         <table style={tableStyle}>

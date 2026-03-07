@@ -21,12 +21,12 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} sits at 5,741 feet on the western slope of the Continental Divide — one of
         the highest-elevation cities in Montana and a place where the divide literally runs
         through town. The surrounding landscape is defined by high-altitude basins, exposed
-        ridgelines, and the rugged peaks of the Anaconda Range and Pioneer Mountains. With 25
-        trailheads within 50 miles and 246 recreation sites in the area, {townName} offers a
+        ridgelines, and the rugged peaks of the Anaconda Range and Pioneer Mountains. With 4
+        trailheads within 30 miles and 79 recreation sites in the area, {townName} offers a
         hiking experience built around mining-era history, dramatic geology, and genuine
         high-country solitude. Humbug Spires' 600-foot granite pinnacles rise just 19 miles
         south, the Anaconda-Pintler Wilderness puts alpine lakes and Continental Divide Trail
-        access within 30 miles, and the Pioneer Mountains offer some of the most remote terrain
+        access within reach, and the Pioneer Mountains offer some of the most remote terrain
         in southwestern Montana. This guide organizes trails by distance from {townName} and
         covers seasonal considerations. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -34,8 +34,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>25 trailheads</strong> within 50 miles</li>
-        <li><strong>246 recreation sites</strong> in the surrounding area</li>
+        <li><strong>4 trailheads</strong> within 30 miles</li>
+        <li><strong>79 recreation sites</strong> in the surrounding area</li>
         <li><strong>9 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>4 state parks</strong> within reach</li>
         <li><strong>Elevation:</strong> 5,741 feet — shorter hiking season than lower valleys</li>

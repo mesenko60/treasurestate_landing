@@ -17,7 +17,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         {townName} is Montana's third-largest city and the only one built around a series of
         waterfalls on the Missouri River. The city sits where the Great Plains meet the Rocky
         Mountain Front — a dramatic geological boundary where the mountains rise abruptly from
-        the prairie with no foothills in between. With only 3 formal trailheads within 50 miles,
+        the prairie with no foothills in between. With only 1 formal trailhead within 30 miles,
         {townName} is not a traditional trail town in the way Missoula or Whitefish are. But
         what it offers is something different and arguably more distinctive: the River's Edge
         Trail system — 60+ miles of paved and unpaved paths tracing the Missouri River through
@@ -29,8 +29,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>85 recreation sites</strong> within 50 miles</li>
-        <li><strong>3 trailheads</strong> within 50 miles</li>
+        <li><strong>32 recreation sites</strong> within 30 miles</li>
+        <li><strong>1 trailhead</strong> within 30 miles</li>
         <li><strong>4 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>3 state parks</strong> with trails and interpretive walks</li>
         <li><strong>River's Edge Trail:</strong> 60+ miles of urban trail along the Missouri River</li>
@@ -82,15 +82,15 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         waterfowl.
       </p>
 
-      <h2>Trailheads Within 50 Miles</h2>
+      <h2>Trailheads Within 30 Miles</h2>
       <p>
-        {townName}'s formal trailhead count is modest — just three within 50 miles — reflecting
+        {townName}'s formal trailhead count is modest — just one within 30 miles — reflecting
         the city's prairie setting rather than a lack of outdoor opportunity. Sulphur Springs
         (12 miles) is the closest, offering access to rolling terrain in the foothills east of
-        the Rockies. Taylor Hills (37 miles) and South Pilgrim (40 miles) push further into the
-        transition zone between prairie and mountains, where grassland gives way to scattered
-        ponderosa pine and Douglas fir. These trailheads see minimal traffic compared to western
-        Montana trails, offering genuine solitude.
+        the Rockies. Additional trailheads lie beyond 30 miles in the transition zone between
+        prairie and mountains, where grassland gives way to scattered ponderosa pine and Douglas
+        fir. These trailheads see minimal traffic compared to western Montana trails, offering
+        genuine solitude.
       </p>
       {trails.length > 0 && (
         <table style={{ width: '100%', borderCollapse: 'collapse', margin: '1rem 0', fontSize: '0.92rem' }}>

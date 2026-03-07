@@ -19,7 +19,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
     <article className="content-section">
       <p>
         {townName} sits at the north end of the Gallatin Valley, framed by the Bridger Mountains
-        to the northeast and the Gallatin Range to the south. With 42 trailheads within 50 miles,
+        to the northeast and the Gallatin Range to the south. With 16 trailheads within 30 miles,
         it's a compact but remarkably varied hiking base — from gentle riverside walks in town to
         exposed alpine ridgelines above 9,000 feet. Home to Montana State University and a
         thriving outdoor culture, {townName} treats trail access as a daily amenity rather than
@@ -30,7 +30,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>42 trailheads</strong> within 50 miles</li>
+        <li><strong>16 trailheads</strong> within 30 miles</li>
         <li><strong>2 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>3 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> Peet's Hill / Burke Park Trail, 1 mile from downtown</li>

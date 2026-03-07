@@ -26,16 +26,16 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         within easy reach: the legendary Paradise Valley spring creeks — DePuy, Armstrong, and
         Nelson — offer some of the most technically demanding and rewarding trout fishing on earth,
         while the Boulder River, the Gallatin River (made famous by <em>A River Runs Through
-        It</em>), and 145 mountain lakes within 50 miles round out a fishery that rivals any in
-        North America. With 7 FWP fishing access sites and Mayor's Landing just 1 mile from town,
+        It</em>), and 40 mountain lakes within 30 miles round out a fishery that rivals any in
+        North America. With 2 FWP fishing access sites and Mayor's Landing just 1 mile from town,
         {townName} puts serious trout water at your feet. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>145 lakes</strong> within 50 miles (260 total in the wider region)</li>
-        <li><strong>7 FWP fishing access sites</strong> within 50 miles</li>
+        <li><strong>40 lakes</strong> within 30 miles</li>
+        <li><strong>2 FWP fishing access sites</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, Yellowstone cutthroat trout, brook trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Yellowstone River — flows through town, legendary dry-fly water</li>
         <li><strong>Spring creeks:</strong> DePuy, Armstrong, Nelson — world-famous private-access spring creek fishing</li>
@@ -94,7 +94,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Lakes</h2>
       <p>
-        With 145 lakes within 50 miles — and 260 in the wider region — {townName} offers
+        With 40 lakes within 30 miles, {townName} offers
         extraordinary stillwater fishing to complement its river credentials. Alpine lakes in the
         Absaroka Range east of Paradise Valley hold populations of Yellowstone cutthroat trout and
         brook trout in spectacular mountain settings. Pine Creek Lake, accessible via the popular
@@ -176,7 +176,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        {townName} benefits from 7 FWP fishing access sites within 50 miles — a strong number that
+        {townName} benefits from 2 FWP fishing access sites within 30 miles — a strong number that
         reflects the region's status as a fishing destination. <strong>Mayor's Landing</strong>{' '}
         (1 mile from downtown) is the crown jewel — a fully developed access site on the
         Yellowstone River practically in town, with a boat ramp for drift-boat launches and bank

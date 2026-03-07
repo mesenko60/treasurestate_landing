@@ -22,8 +22,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         into the broad sweep of Paradise Valley — one of the most dramatic landscape transitions in
         the Northern Rockies. The town perches at 4,501 feet on the Yellowstone's north bank, with
         the Absaroka Range rising steeply to the east, the Gallatin Range and Bridger Mountains to
-        the west, and the Crazy Mountains visible to the northeast. With 28 trailheads within
-        50 miles, {townName} offers an unusual combination of river-corridor walks, rugged alpine
+        the west, and the Crazy Mountains visible to the northeast. With 12 trailheads within
+        30 miles, {townName} offers an unusual combination of river-corridor walks, rugged alpine
         scrambles, and direct access to Yellowstone National Park just 44 miles south through
         Paradise Valley. Wind is part of the deal — {townName} is one of the windiest towns in
         Montana, and exposed ridgeline hikes require planning around gusts that can exceed 60 mph.
@@ -33,8 +33,8 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>28 trailheads</strong> within 50 miles</li>
-        <li><strong>301 recreation sites</strong> within 50 miles</li>
+        <li><strong>12 trailheads</strong> within 30 miles</li>
+        <li><strong>106 recreation sites</strong> within 30 miles</li>
         <li><strong>3 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>2 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> Yellowstone River corridor trails, in town</li>

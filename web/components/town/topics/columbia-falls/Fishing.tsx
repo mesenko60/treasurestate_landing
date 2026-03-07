@@ -36,12 +36,12 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         {townName} sits at 3,077 feet in the Flathead Valley of northwest Montana, 17 miles
         from the west entrance of Glacier National Park and 11 miles from Hungry Horse
         Reservoir. The Flathead River system{'\u2014'}Middle Fork, South Fork, and
-        mainstem{'\u2014'}threads through the surrounding landscape, and 59 lakes lie within 50
+        mainstem{'\u2014'}threads through the surrounding landscape, and 26 lakes lie within 30
         miles. Westslope cutthroat trout, the native species and the star fish of the region,
         inhabit the cold streams draining Glacier{'\u2019'}s peaks and the Great Bear Wilderness.
         Hungry Horse Reservoir offers deep-water mackinaw fishing in a 34-mile-long canyon
         setting, and Whitefish Lake provides year-round opportunity just 9 miles northwest. With
-        11 public fishing access sites, pristine national park waters, and ice fishing through
+        10 public fishing access sites, pristine national park waters, and ice fishing through
         winter, {townName} is a quiet basecamp for some of the finest freshwater fishing in the
         Northern Rockies. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
@@ -49,8 +49,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>11 fishing access sites</strong> within 50 miles</li>
-        <li><strong>59 lakes</strong> within 50 miles</li>
+        <li><strong>10 fishing access sites</strong> within 30 miles</li>
+        <li><strong>26 lakes</strong> within 30 miles</li>
         <li><strong>2 major rivers</strong> within driving distance (Flathead River, Swan River)</li>
         <li><strong>Primary species:</strong> Westslope cutthroat trout, lake trout (mackinaw), mountain whitefish, northern pike, yellow perch, bull trout (C&R only), kokanee salmon</li>
         <li><strong>Star species:</strong> Westslope cutthroat trout{'\u2014'}the native trout of the Flathead drainage</li>
@@ -191,7 +191,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 11 public fishing access sites within 50 miles
+        Montana Fish, Wildlife & Parks maintains 10 public fishing access sites within 30 miles
         of {townName}. These sites provide reliable access to the Flathead River system, Hungry
         Horse Reservoir, and surrounding lakes, with parking and, in most cases, boat launch
         facilities. Glacier Rim River Access and Blankenship Bridge (both 9 miles) are the closest
@@ -218,7 +218,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        Beyond the headline waters, 59 lakes lie within 50 miles of {townName}. Cedar Lake (4
+        Beyond the headline waters, 26 lakes lie within 30 miles of {townName}. Cedar Lake (4
         miles) is the closest lake to town and offers a quiet forest-lake setting for casual
         fishing. Bailey Lake and Spoon Lake (8 miles) provide secluded shoreline access in the
         Flathead National Forest. <strong>Ashley Lake</strong> (22 miles west) is a 3,200-acre
@@ -248,7 +248,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 

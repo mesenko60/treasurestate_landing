@@ -23,14 +23,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Holter lakes form a chain of Missouri River impoundments within 20 miles, Spring Meadow
         Lake offers catch-and-release trout fishing two miles from the capitol building, and the
         permit-only Smith River float is one of Montana's most coveted angling experiences. With
-        43 lakes and multiple blue-ribbon rivers within reach, {townName} is among the strongest
+        10 lakes within 30 miles and multiple blue-ribbon rivers within reach, {townName} is among the strongest
         fishing bases in the state. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>43 lakes</strong> within 50 miles</li>
+        <li><strong>10 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Rainbow trout, brown trout, walleye, yellow perch, kokanee salmon, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Missouri River tailwater at Craig (32 mi) — 4,000+ trout per mile</li>
         <li><strong>Closest lake:</strong> Spring Meadow Lake, 2 miles (catch-and-release)</li>
@@ -167,9 +167,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Formal FWP fishing access sites near {townName} are limited compared to western
-        Montana towns, with only one designated site within 50 miles (Pelican Point at Canyon
-        Ferry, 44 miles). However, boat ramps and public access points are available at
+        No formal FWP fishing access sites lie within 30 miles of {townName}. However,
+        boat ramps and public access points are available at
         Canyon Ferry, Hauser, and Holter lakes through Bureau of Reclamation facilities and
         county-maintained sites. The Missouri River below Holter Dam has multiple access
         points at bridge crossings and boat launches near Craig. Spring Meadow Lake State

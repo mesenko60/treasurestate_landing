@@ -35,7 +35,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} sits at 3,816 feet on the high plains east of the Rocky Mountain Front in
         north-central Montana, the seat of Teton County, 60 miles northwest of Great Falls. With{' '}
-        <strong>29 lakes</strong> within 50 miles, <strong>1 fishing access site</strong>,
+        <strong>8 lakes</strong> within 30 miles
         and rivers flowing east from the Bob Marshall Wilderness, {townName} offers a mix of
         prairie reservoir fishing, freestone river trout fishing, and bucket-list backcountry
         fishing in one of the most remote wilderness areas in the lower 48. The{' '}
@@ -50,15 +50,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>1 fishing access site</strong> within 50 miles</li>
-        <li><strong>29 lakes</strong> within 50 miles</li>
+        <li><strong>8 lakes</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Westslope cutthroat trout (native), rainbow trout, brown trout, brook trout</li>
         <li><strong>Star fishery:</strong> Bob Marshall Wilderness{'\u2014'}native westslope cutthroat in pristine backcountry</li>
         <li><strong>Closest lake:</strong> Dougcliff Reservoir, 9 miles</li>
         <li><strong>Major rivers:</strong> Teton River (through area), Sun River (28 miles)</li>
         <li><strong>Backcountry fishing:</strong> Bob Marshall Wilderness streams and alpine lakes{'\u2014'}pack-in trips</li>
         <li><strong>Float fishing:</strong> Lower Teton River and Sun River</li>
-        <li><strong>Hot springs:</strong> 2 within 50 miles for post-fishing recovery</li>
+        <li><strong>Hot springs:</strong> Nearest hot springs are beyond 30 miles</li>
         <li><strong>License required:</strong> Montana fishing license (available at local shops and{' '}
           <a href="https://fwp.mt.gov" target="_blank" rel="noopener noreferrer">fwp.mt.gov</a>)</li>
       </ul>
@@ -155,9 +154,9 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Montana Fish, Wildlife & Parks maintains 1 public fishing access site within 50 miles
-        of {townName}. Additional access to fishing waters is available through wildlife
-        management areas, national forest lands, and bridge crossings on public roads.
+        No formal FWP fishing access sites lie within 30 miles of {townName}. Access to
+        fishing waters is available through wildlife management areas, national forest lands,
+        and bridge crossings on public roads.
       </p>
       {sortedAccess.length > 0 && (
         <table style={tableStyle}>
@@ -180,14 +179,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Lakes Near {townName}</h2>
       <p>
-        <strong>29 lakes</strong> lie within 50 miles of {townName}, a mix of prairie reservoirs
+        <strong>8 lakes</strong> lie within 30 miles of {townName}, a mix of prairie reservoirs
         and mountain lakes. <strong>Dougcliff Reservoir</strong> (9 miles) is the closest,
         followed by <strong>Arod Lakes</strong> (15 miles), <strong>Bynum Reservoir</strong> (15
         miles), and <strong>Willow Creek Reservoir</strong> (15 miles). The reservoirs offer
-        warmwater species and some trout fishing, while alpine lakes in the Bob Marshall
-        Wilderness and along the Front hold native cutthroat trout accessible only by trail.{' '}
+        warmwater species and some trout fishing, while alpine lakes along the Front hold
+        native cutthroat trout accessible only by trail.{' '}
         <strong>Nilan Reservoir</strong> (28 miles) and <strong>Our Lake</strong> (29 miles)
-        expand the options further. Many of the mountain lakes are small, remote, and lightly
+        round out the options. Many of the mountain lakes are small, remote, and lightly
         fished{'\u2014'}ideal for anglers seeking solitude in stunning Rocky Mountain Front
         settings.
       </p>
@@ -211,16 +210,15 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       )}
       {lakes.length > nearLakes.length && (
         <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.25rem' }}>
-          +{lakes.length - nearLakes.length} more lakes within 50 miles.
+          +{lakes.length - nearLakes.length} more lakes within 30 miles.
         </p>
       )}
 
       <h2>Hot Springs</h2>
       <p>
-        Two hot springs lie within 50 miles of {townName}, offering a welcome recovery option
-        after long days of wading rivers or packing into backcountry lakes along the Rocky
-        Mountain Front. The combination of remote wilderness fishing and accessible thermal
-        springs is a rare pairing in Montana.
+        No hot springs lie within 30 miles of {townName}. The nearest thermal springs are
+        farther afield but remain day-trip options for post-fishing recovery after long days
+        of wading rivers or packing into backcountry lakes along the Rocky Mountain Front.
       </p>
 
       <h2>Species Guide</h2>

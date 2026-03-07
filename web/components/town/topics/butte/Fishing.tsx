@@ -24,17 +24,17 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         its native river habitat. The Beaverhead River, a tailwater below Clark Canyon Dam 55
         miles south, holds over 3,000 trout per mile with brown trout regularly exceeding 20
         inches. The Jefferson River flows just 27 miles east as {townName}'s closest major
-        river, and the legendary Madison River at Ennis lies 60 miles southeast. With 69 lakes
-        within 50 miles — many of them high-mountain cirque lakes holding brook trout and
-        cutthroat — and five FWP fishing access sites, {townName} is one of Montana's
+        river, and the legendary Madison River at Ennis lies 60 miles southeast. With 13 lakes
+        within 30 miles — many of them high-mountain cirque lakes holding brook trout and
+        cutthroat — and 1 FWP fishing access site, {townName} is one of Montana's
         most underrated fishing bases. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>69 lakes</strong> within 50 miles</li>
-        <li><strong>5 fishing access sites</strong> within 50 miles</li>
+        <li><strong>13 lakes</strong> within 30 miles</li>
+        <li><strong>1 fishing access site</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Brown trout, rainbow trout, brook trout, Arctic grayling, cutthroat trout, mountain whitefish</li>
         <li><strong>Signature fishery:</strong> Big Hole River (38 mi) — blue-ribbon trout river, only fluvial Arctic grayling in the lower 48</li>
         <li><strong>Closest major river:</strong> Jefferson River, 27 miles east</li>
@@ -131,7 +131,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Mountain Lakes</h2>
       <p>
-        With 69 lakes within 50 miles, {townName} has access to an exceptional network of
+        With 13 lakes within 30 miles, {townName} has access to an exceptional network of
         stillwater fishing. Georgetown Lake, approximately 30 miles west near Anaconda, is
         the most popular — a shallow, nutrient-rich lake at 6,300 feet that produces large
         rainbow trout and brook trout. Georgetown is well known for consistent hatches of
@@ -203,15 +203,11 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Five Montana FWP fishing access sites lie within 50 miles of {townName}, concentrated
-        along the Jefferson River corridor to the east. Cardwell Bridge (30 miles) is the
-        closest, providing boat and wade access to the Jefferson near the mouth of the Boulder
-        River. Glen (38 miles) and Red Bridge (38 miles) offer access to the upper Jefferson
-        near its formation at Twin Bridges. Comers Point (39 miles) and Notch Bottom (40 miles)
-        round out the options along the Jefferson. Additional informal access points exist on
-        the Big Hole River and at Georgetown Lake, though formal FWP sites are more limited
-        in the immediate {townName} area. Always check current access conditions and respect
-        private land boundaries.
+        One Montana FWP fishing access site lies within 30 miles of {townName}. Additional
+        formal access sites are located beyond 30 miles along the Jefferson River corridor to
+        the east. Informal access points exist on the Big Hole River and at Georgetown Lake,
+        though formal FWP sites are limited in the immediate {townName} area. Always check
+        current access conditions and respect private land boundaries.
       </p>
       {fishingAccess.length > 0 && (
         <table style={{ width: '100%', borderCollapse: 'collapse', margin: '1rem 0', fontSize: '0.92rem' }}>

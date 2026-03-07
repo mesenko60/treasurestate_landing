@@ -30,7 +30,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         26 miles west of Butte and 120 miles from Missoula. The town is the gateway to the{' '}
         <strong>Anaconda-Pintler Wilderness</strong>{'\u2014'}158,000 acres of alpine lakes,
         10,000-foot peaks, and Continental Divide ridgeline stretching along the border of
-        Deer Lodge and Beaverhead counties. With <strong>43 trailheads</strong> within 50 miles,
+        Deer Lodge and Beaverhead counties. With <strong>9 trailheads</strong> within 30 miles,
         the hiking spans everything from easy canyon walks at Lost Creek State Park to strenuous
         Pintler summit routes above treeline. Georgetown Lake sits 15 miles west with lakeside
         trails, and the Continental Divide Trail passes through the Pintler range just south of
@@ -40,11 +40,10 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>43 trailheads</strong> within 50 miles</li>
-        <li><strong>10 wilderness areas</strong> within 50 miles</li>
-        <li><strong>4 state parks</strong> within 50 miles</li>
-        <li><strong>3 waterfalls</strong> within 50 miles including Lost Creek Falls</li>
-        <li><strong>70 campgrounds</strong> within 50 miles</li>
+        <li><strong>9 trailheads</strong> within 30 miles</li>
+        <li><strong>1 wilderness area</strong> within 30 miles (Anaconda-Pintler, 11 miles)</li>
+        <li><strong>1 waterfall</strong> within 30 miles (Lost Creek Falls, 5 miles)</li>
+        <li><strong>19 campgrounds</strong> within 30 miles</li>
         <li><strong>Closest trailhead:</strong> Lost Creek Falls, 5 miles</li>
         <li><strong>Closest wilderness:</strong> Anaconda-Pintler Wilderness, 11 miles south</li>
         <li><strong>Continental Divide Trail:</strong> Passes through the Pintler range</li>
@@ -156,13 +155,12 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>Wilderness Areas</h2>
       <p>
-        Ten federally designated wilderness areas lie within 50 miles of {townName}, an
-        extraordinary concentration of protected wildlands. The{' '}
-        <strong>Anaconda-Pintler Wilderness</strong> (11 miles south) is the closest and most
-        significant, encompassing 158,000 acres of the Continental Divide with alpine lakes, high
-        peaks, and the CDT. The <strong>Lee Metcalf Wilderness</strong> and other surrounding
-        wilderness areas extend the network of roadless terrain across southwestern Montana,
-        providing seemingly limitless backcountry hiking options for multi-day trips.
+        The <strong>Anaconda-Pintler Wilderness</strong> (11 miles south) is the one federally
+        designated wilderness area within 30 miles of {townName} and the most significant,
+        encompassing 158,000 acres of the Continental Divide with alpine lakes, high peaks, and
+        the CDT. Additional wilderness areas lie beyond the 30-mile radius across southwestern
+        Montana, extending the network of roadless terrain and providing seemingly limitless
+        backcountry hiking options for multi-day trips.
       </p>
       {wilderness.length > 0 && (
         <table style={tableStyle}>
@@ -185,12 +183,11 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>State Parks</h2>
       <p>
-        <strong>Lost Creek State Park</strong> (5 miles) is the premier state park near{' '}
-        {townName}, featuring a dramatic limestone canyon, the Lost Creek Falls waterfall, and
-        regular sightings of mountain goats and bighorn sheep on the canyon walls. The park has
-        a campground, picnic area, and well-maintained trail system that makes it an easy
-        half-day outing from town. Additional state parks within 50 miles provide further trail
-        options across the region.
+        No state parks lie within 30 miles of {townName}. <strong>Lost Creek State Park</strong>
+        (5 miles) is nearby but classified differently in the recreation data. It features a
+        dramatic limestone canyon, the Lost Creek Falls waterfall, and regular sightings of
+        mountain goats and bighorn sheep on the canyon walls. The park has a campground, picnic
+        area, and well-maintained trail system that makes it an easy half-day outing from town.
       </p>
       {stateParks.length > 0 && (
         <table style={tableStyle}>

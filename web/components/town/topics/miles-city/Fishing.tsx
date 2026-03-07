@@ -23,15 +23,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         iconic paddlefish{'\u2014'}species that thrive in the warm, turbid waters of the lower
         Yellowstone and its tributaries. The paddlefish snagging season on the Yellowstone
         (typically May through June) draws anglers from across Montana and beyond for a chance
-        at these prehistoric giants, some exceeding 100 pounds. With 6 lakes and 2 reservoirs
-        within range, plus the two rivers flowing through town, {townName} offers more fishing
-        variety than its prairie setting might suggest. For the full city profile, see
+        at these prehistoric giants, some exceeding 100 pounds. With the two rivers flowing through town and reservoirs in the surrounding
+        region, {townName} offers more fishing variety than its prairie setting might suggest. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>6 lakes</strong> within 50 miles</li>
+        <li><strong>Stillwater:</strong> Prairie reservoirs and stock dams in the wider region</li>
         <li><strong>Primary rivers:</strong> Yellowstone River (through town), Tongue River (through town)</li>
         <li><strong>Target species:</strong> Walleye, sauger, channel catfish, smallmouth bass, paddlefish, northern pike, burbot</li>
         <li><strong>Signature fishery:</strong> Yellowstone River paddlefish snagging (May{'\u2013'}June)</li>
@@ -105,8 +104,9 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Lakes</h2>
       <p>
-        With 6 lakes within 50 miles, {townName}{'\u2019'}s stillwater options are modest compared to
-        western Montana{'\u2019'}s mountain lakes, but they provide additional fishing variety. Prairie
+        There are no natural lakes within 30 miles of {townName}, but prairie
+        reservoirs and stock dams in the wider region provide additional fishing variety beyond
+        the rivers. Prairie
         reservoirs and stock dams in the region hold warm-water species including northern pike,
         walleye, yellow perch, and largemouth bass. <strong>Tongue River Reservoir</strong>{' '}
         (70 miles south) is the premier stillwater destination{'\u2014'}a 12-mile-long impoundment

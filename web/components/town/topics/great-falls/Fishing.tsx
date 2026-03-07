@@ -24,14 +24,14 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         holding 4,000+ trout per mile in cold, dam-regulated water. The Sun River drains the
         Bob Marshall Wilderness 29 miles to the west, the legendary Smith River awaits
         permit-holders 39 miles away, and Giant Springs State Park houses one of Montana's
-        most important fish hatcheries. With 11 lakes and multiple rivers within reach,
+        most important fish hatcheries. With multiple rivers within reach,
         {townName} is an underappreciated fishing base. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>11 lakes</strong> within 50 miles</li>
+        <li><strong>1 lake</strong> within 30 miles</li>
         <li><strong>Primary species:</strong> Brown trout, rainbow trout, mountain whitefish, walleye, northern pike</li>
         <li><strong>In-town fishery:</strong> Missouri River at {townName} — 1 mile from downtown</li>
         <li><strong>Signature tailwater:</strong> Missouri River at Craig (46 mi) — 4,000+ trout per mile</li>
@@ -123,8 +123,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>The Lakes</h2>
       <p>
-        {townName} has 11 lakes within 50 miles — fewer than Helena's reservoir chain but
-        offering a mix of fishing opportunities. Several smaller lakes and reservoirs in the
+        {townName} has 1 lake within 30 miles, with additional options further afield offering
+        a mix of fishing opportunities. Several smaller lakes and reservoirs in the
         surrounding prairie provide warmwater fishing for walleye, northern pike, and perch,
         while mountain lakes along the Rocky Mountain Front hold trout in alpine settings.
         Lake access on the plains is generally straightforward with developed boat ramps and
@@ -185,8 +185,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
 
       <h2>Fishing Access Sites</h2>
       <p>
-        Formal FWP fishing access sites near {townName} are limited — only one designated site,
-        Pelican Point FAS (31 miles), falls within 50 miles. However, public fishing access is
+        Formal FWP fishing access sites near {townName} are limited — the nearest designated site,
+        Pelican Point FAS, sits just beyond 30 miles at 31 miles. However, public fishing access is
         more abundant than the formal count suggests. Giant Springs State Park provides excellent
         Missouri River shore access within the city, and multiple city park access points along
         the River's Edge Trail reach the Missouri's banks. The Craig tailwater has well-developed

@@ -18,7 +18,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
   return (
     <article className="content-section">
       <p>
-        {townName} is one of the best hiking bases in Montana, with 90 trailheads within 50 miles
+        {townName} is one of the best hiking bases in Montana, with 49 trailheads within 30 miles
         of the city. From a quick after-work climb up the M Trail to multi-day backpacking trips in
         the Rattlesnake Wilderness, the range of options here is exceptional for a city of any size.
         This guide organizes trails by distance from {townName} and covers seasonal considerations.
@@ -27,7 +27,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
 
       <h2>At a Glance</h2>
       <ul>
-        <li><strong>90 trailheads</strong> within 50 miles</li>
+        <li><strong>49 trailheads</strong> within 30 miles</li>
         <li><strong>8 wilderness areas</strong> accessible from {townName}</li>
         <li><strong>6 state parks</strong> with trail systems</li>
         <li><strong>Closest trailhead:</strong> M Trail (Mount Sentinel), 1 mile from downtown</li>
