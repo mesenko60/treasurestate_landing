@@ -13,6 +13,7 @@ type RecreationPlace = {
 type NearbyRecreationProps = {
   townName: string;
   places: RecreationPlace[];
+  onSelectPlace?: (place: RecreationPlace) => void;
 };
 
 const TYPE_META: Record<string, { icon: string; color: string; label: string; priority: number; weight: number }> = {
@@ -132,7 +133,16 @@ function ScoreRing({ score }: { score: number }) {
   );
 }
 
-function FullDirectory({ grouped, sortedTypes }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[] }) {
+function scrollToMap(place: RecreationPlace, onSelect?: (place: RecreationPlace) => void) {
+  if (onSelect) onSelect(place);
+  const el = document.getElementById('town-map');
+  if (el) {
+    const y = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+function FullDirectory({ grouped, sortedTypes, onSelectPlace }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[]; onSelectPlace?: (place: RecreationPlace) => void }) {
   const [openType, setOpenType] = useState<string | null>(null);
 
   return (
@@ -169,15 +179,14 @@ function FullDirectory({ grouped, sortedTypes }: { grouped: Record<string, Recre
                 {items.map((p, i) => (
                   <a
                     key={i}
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#town-map"
+                    onClick={(e) => { e.preventDefault(); scrollToMap(p, onSelectPlace); }}
                     style={{
                       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                       padding: '0.3rem 0.6rem', background: '#fafafa', borderRadius: '4px',
                       borderLeft: `3px solid ${meta.color}`,
                       fontSize: '0.82rem', textDecoration: 'none',
-                      transition: 'background 0.15s',
+                      cursor: 'pointer', transition: 'background 0.15s',
                     }}
                     onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f4f0'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.background = '#fafafa'; }}
@@ -198,7 +207,7 @@ function FullDirectory({ grouped, sortedTypes }: { grouped: Record<string, Recre
   );
 }
 
-export default function NearbyRecreation({ townName, places }: NearbyRecreationProps) {
+export default function NearbyRecreation({ townName, places, onSelectPlace }: NearbyRecreationProps) {
   const [showDirectory, setShowDirectory] = useState(false);
   const visiblePlaces = filterNearbyRecreation(places);
 
@@ -282,14 +291,14 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
             return (
               <a
                 key={i}
-                href={`https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#town-map"
+                onClick={(e) => { e.preventDefault(); scrollToMap(place, onSelectPlace); }}
                 style={{
                   display: 'flex', alignItems: 'center', gap: '0.6rem',
                   padding: '0.6rem 0.8rem', background: '#fff', borderRadius: '8px',
                   border: '1px solid #eee', boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-                  textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s',
+                  textDecoration: 'none', cursor: 'pointer',
+                  transition: 'border-color 0.2s, box-shadow 0.2s',
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = meta.color; e.currentTarget.style.boxShadow = '0 2px 6px rgba(0,0,0,0.08)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#eee'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
@@ -335,7 +344,7 @@ export default function NearbyRecreation({ townName, places }: NearbyRecreationP
         </button>
 
         {showDirectory && (
-          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} />
+          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} onSelectPlace={onSelectPlace} />
         )}
       </div>
 

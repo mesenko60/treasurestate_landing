@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
@@ -114,6 +115,7 @@ type Props = {
 };
 
 export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, heroImage, ogImage }: Props) {
+  const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
@@ -220,7 +222,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
-          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} />}
+          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
           {crossLinks.length > 0 && (
             <div style={{ margin: '2rem 0', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
               <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
@@ -245,7 +247,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               Compare {townName} with Another Town
             </Link>
           </div>
-          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} recreation={recreationPlaces?.filter(p => ['Hot Spring','Campground','Trailhead','Lake','Ski Area','State Park','National Park','Fishing Access','Waterfall'].includes(p.type)).slice(0, 60) ?? undefined} />
+          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} recreation={recreationPlaces?.filter(p => ['Hot Spring','Campground','Trailhead','Lake','Ski Area','State Park','National Park','Fishing Access','Waterfall'].includes(p.type)).slice(0, 60) ?? undefined} focusedRec={focusedRec} />
           <NearbyTowns towns={relatedTowns} />
 
           {cluster && (

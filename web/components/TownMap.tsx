@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import Map, { Marker, Popup, NavigationControl } from 'react-map-gl/mapbox';
+import type { MapRef } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { trackMapInteraction } from '../lib/gtag';
 
@@ -50,14 +51,28 @@ export default function TownMap({
   zoom = 6,
   recreation,
   highlightTown,
+  focusedRec,
 }: {
   towns: TownCoordinate[];
   center?: [number, number];
   zoom?: number;
   recreation?: RecMarker[];
   highlightTown?: string;
+  focusedRec?: RecMarker | null;
 }) {
+  const mapRef = useRef<MapRef>(null);
   const [selected, setSelected] = useState<(TownCoordinate & { _kind: 'town' }) | (RecMarker & { _kind: 'rec' }) | null>(null);
+
+  useEffect(() => {
+    if (focusedRec && mapRef.current) {
+      mapRef.current.flyTo({
+        center: [focusedRec.lng, focusedRec.lat],
+        zoom: 11,
+        duration: 1200,
+      });
+      setSelected({ ...focusedRec, _kind: 'rec', slug: '' } as any);
+    }
+  }, [focusedRec]);
 
   const onTownClick = useCallback((town: TownCoordinate) => {
     trackMapInteraction(`marker_click:${town.name}`);
@@ -72,6 +87,7 @@ export default function TownMap({
   return (
     <div className="town-map-container">
       <Map
+        ref={mapRef}
         initialViewState={{ longitude: center[1], latitude: center[0], zoom }}
         style={{ width: '100%', height: '100%' }}
         mapStyle="mapbox://styles/mapbox/outdoors-v12"
