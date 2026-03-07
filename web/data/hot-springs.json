@@ -412,7 +412,10 @@
     "yearRound": true,
     "clothingOptional": true,
     "rating": 3.9,
-    "reviews": 23
+    "reviews": 23,
+    "trailhead": "Upper Potosi trailhead (Beaverhead-Deerlodge NF)",
+    "trailUrl": "https://www.alltrails.com/trail/us/montana/upper-potosi-hot-springs",
+    "landManagerUrl": "https://www.fs.usda.gov/bdnf"
   },
   {
     "name": "Lost Trail Hot Springs",
@@ -496,7 +499,11 @@
     "yearRound": true,
     "clothingOptional": false,
     "rating": 4.2,
-    "reviews": 56
+    "reviews": 56,
+    "directions": "I-90 exit at Bearmouth (Mile 138), north on Drummond Front Rd, left at Fishing Access sign, park at berm. ~0.5 mi walk west.",
+    "trailhead": "Bearmouth / Drummond Front Rd parking",
+    "trailUrl": "https://discoveringmontana.com/hot-springs/nimrod/",
+    "landManagerUrl": "https://www.fs.usda.gov/lolo"
   },
   {
     "name": "Boiling River (Yellowstone)",
@@ -632,7 +639,11 @@
     "description": "Three hot spring sources with natural rock pools along Warm Springs Creek. Crosses a pack bridge over the Lochsa River. Just across the Montana border in Idaho on Hwy 12. Clothing-optional. Nighttime closure enforced.",
     "yearRound": true,
     "clothingOptional": true,
-    "state": "ID"
+    "state": "ID",
+    "directions": "US Hwy 12, ~25 mi W of Lolo Pass. Trailhead at Warm Springs Pack Bridge (between mile markers 152–153). Cross bridge, follow Warm Springs Creek ~1.5 mi.",
+    "trailhead": "Warm Springs Trailhead (Hwy 12, milepost 152)",
+    "trailUrl": "https://www.alltrails.com/trail/us/idaho/jerry-johnson-hot-springs",
+    "landManagerUrl": "https://www.fs.usda.gov/nezperceclearwater"
   },
   {
     "name": "Weir Creek Hot Springs",
@@ -652,7 +663,10 @@
     "description": "Small natural hot springs along Weir Creek near Lolo Pass, just across the Montana border in Idaho. Steep trail access. Nighttime closure enforced.",
     "yearRound": true,
     "clothingOptional": true,
-    "state": "ID"
+    "state": "ID",
+    "trailhead": "Weir Creek trailhead (Hwy 12, Idaho)",
+    "trailUrl": "https://www.alltrails.com/trail/us/idaho/weir-creek-hot-springs",
+    "landManagerUrl": "https://www.fs.usda.gov/nezperceclearwater"
   },
   {
     "name": "Goldbug Hot Springs",
@@ -672,6 +686,9 @@
     "description": "Waterfall-fed canyon pools reached by a steep 2-mile hike. Source temperature 113°F. One of the most scenic backcountry soaks in the region. Clothing-optional. Heavily visited in summer.",
     "yearRound": true,
     "clothingOptional": true,
-    "state": "ID"
+    "state": "ID",
+    "trailhead": "Goldbug trailhead (Salmon-Challis NF, Idaho)",
+    "trailUrl": "https://www.alltrails.com/trail/us/idaho/goldbug-hot-springs",
+    "landManagerUrl": "https://www.fs.usda.gov/scnf"
   }
 ]

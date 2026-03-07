@@ -35,6 +35,14 @@ type HotSpring = {
   rating: number | null;
   reviews: number | null;
   state?: string;
+  /** Step-by-step directions (primitive springs). Filled as we research. */
+  directions?: string;
+  /** Trailhead name or address (primitive springs). */
+  trailhead?: string;
+  /** AllTrails or similar trail page URL. */
+  trailUrl?: string;
+  /** USFS/BLM ranger district or info page URL. */
+  landManagerUrl?: string;
 };
 
 type Props = {
@@ -109,8 +117,25 @@ function SpringCard({ s }: { s: HotSpring }) {
           <div><strong>Access:</strong> {s.access}{s.hikeMiles ? ` (${s.hikeMiles} mi)` : ''}</div>
           <div><strong>Season:</strong> {s.yearRound ? 'Year-round' : 'Seasonal'}</div>
           {s.address && <div><strong>Address:</strong> {s.address}</div>}
+          {s.trailhead && <div><strong>Trailhead:</strong> {s.trailhead}</div>}
+          {s.directions && <div style={{ gridColumn: '1 / -1' }}><strong>Directions:</strong> {s.directions}</div>}
           {s.phone && <div><strong>Phone:</strong> <a href={`tel:${s.phone.replace(/[^+\d]/g, '')}`} style={{ color: '#3b6978', textDecoration: 'none' }}>{s.phone}</a></div>}
         </div>
+        {(s.type === 'primitive' || s.state === 'ID') && (
+          <p style={{ fontSize: '0.8rem', color: '#8a6d3b', background: '#fffbf0', borderLeft: '3px solid #d8973c', padding: '0.5rem 0.75rem', margin: '0.75rem 0 0', borderRadius: '0 4px 4px 0' }}>
+            <strong>Verify before visiting.</strong> Directions here are intentionally general. Trails, road conditions, and access change with fires, floods, and seasons. Consult{' '}
+            {(s.trailUrl || s.landManagerUrl) ? (
+              <>
+                {s.trailUrl && <a href={s.trailUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#5a8a5c', fontWeight: 600 }}>trail info</a>}
+                {s.trailUrl && s.landManagerUrl && ' or '}
+                {s.landManagerUrl && <a href={s.landManagerUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#5a8a5c', fontWeight: 600 }}>USFS/BLM</a>}
+              </>
+            ) : (
+              <a href="https://www.alltrails.com" target="_blank" rel="noopener noreferrer" style={{ color: '#5a8a5c', fontWeight: 600 }}>AllTrails</a>
+            )}
+            , local ranger districts, or recent trip reports before you go.
+          </p>
+        )}
         <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
           <Link href={`/montana-towns/${s.nearestTown}`} style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 600 }}>
             {s.nearestTownName} Town Profile →
@@ -221,6 +246,9 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         .hs-section-title { font-family: var(--font-primary); font-size: 1.4rem; color: #204051; margin: 2rem 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e0e0; }
         .hs-section-count { font-size: 0.85rem; color: #999; font-weight: 400; }
         .hs-safety { background: #fff8e1; border-left: 4px solid #d8973c; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+        .hs-primitive-disclaimer { background: #fff8e1; border-left: 4px solid #8a6d3b; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 0 0 1.25rem; }
+        .hs-primitive-disclaimer h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #8a6d3b; }
+        .hs-primitive-disclaimer p { margin: 0; font-size: 0.9rem; color: #555; line-height: 1.6; }
         .hs-safety h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #8a6d3b; }
         .hs-safety ul { margin: 0; padding-left: 1.25rem; }
         .hs-safety li { font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 0.25rem; }
@@ -281,6 +309,12 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         <h2 className="hs-section-title">
           🏔️ Primitive &amp; Backcountry Springs <span className="hs-section-count">({primitive.length})</span>
         </h2>
+        <div className="hs-primitive-disclaimer">
+          <h3>⚠️ Important: Directions Are General</h3>
+          <p>
+            We intentionally keep primitive spring directions vague to protect fragile sites and because access changes constantly. Trails wash out, roads close for fire or flood, and private land boundaries shift. <strong>Do not rely on this guide alone.</strong> Before visiting any primitive spring, consult current trail reports (AllTrails, Gaia, etc.), the local USFS or BLM ranger district, and recent trip reports. Conditions can be dangerous—source water often exceeds 140°F, and backcountry travel carries inherent risk.
+          </p>
+        </div>
         <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
           Undeveloped natural pools: free, no facilities, and often requiring a hike to reach. Bring bear spray and pack out all trash.
         </p>
@@ -290,6 +324,12 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         <h2 className="hs-section-title">
           🗺️ Near-Border Springs (Idaho) <span className="hs-section-count">({nearBorder.length})</span>
         </h2>
+        <div className="hs-primitive-disclaimer">
+          <h3>⚠️ Same Caveats Apply</h3>
+          <p>
+            These springs are in Idaho but popular with Montana visitors. Directions are general—verify trailhead locations, road conditions, and closures (e.g., Jerry Johnson and Weir Creek enforce 6am–8pm hours) before you go.
+          </p>
+        </div>
         <p style={{ fontSize: '0.92rem', color: '#666', marginBottom: '1rem' }}>
           These popular backcountry springs are just across the Idaho border, easily accessible from western Montana towns via Highway 12 or Highway 93.
         </p>
