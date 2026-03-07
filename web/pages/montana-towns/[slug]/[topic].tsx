@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import type { GetStaticPaths, GetStaticProps } from 'next';
-import type { ComponentType } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ComponentType } from 'react';
 import dynamic from 'next/dynamic';
 import fs from 'fs';
 import path from 'path';
@@ -10,6 +10,8 @@ import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import StaysCTA from '../../../components/StaysCTA';
 import StoreBanner from '../../../components/StoreBanner';
+import SingleTownMap from '../../../components/SingleTownMap';
+import TableOfContents from '../../../components/TableOfContents';
 import RelatedGuides from '../../../components/town/RelatedGuides';
 import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
@@ -253,7 +255,14 @@ const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
   },
 };
 
-type RecPlace = { name: string; type: string; distMiles: number };
+type TownCoordinate = {
+  name: string;
+  slug: string;
+  lat: number;
+  lng: number;
+};
+
+type RecPlace = { name: string; type: string; lat: number; lng: number; distMiles: number };
 
 type Props = {
   slug: string;
@@ -269,6 +278,7 @@ type Props = {
   schoolWebsite: string | null;
   graduationRate: number | null;
   perPupilSpending: number | null;
+  currentTownCoords: TownCoordinate | null;
   trails: RecPlace[];
   wilderness: RecPlace[];
   stateParks: RecPlace[];
@@ -285,6 +295,113 @@ export default function TopicPage(props: Props) {
   const config = getClusterConfig(slug);
   const guide = config?.guides.find(g => g.topic === topic);
   if (!guide) return null;
+  const [focusedRec, setFocusedRec] = useState<RecPlace | null>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const uniqueMapPlaces = (places: RecPlace[]) => {
+    const seen = new Set<string>();
+    return places.filter((place) => {
+      const key = `${place.type}:${place.name}:${place.lat}:${place.lng}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  };
+
+  const topicMapConfig: Record<string, { places: RecPlace[]; heading: string; description: string; googleMapsLabel: string } | null> = {
+    hiking: {
+      places: uniqueMapPlaces([...props.trails, ...props.wilderness, ...props.stateParks]),
+      heading: `Hiking Map Near ${townName}`,
+      description: `Explore trailheads, wilderness areas, and state parks around ${townName} on the interactive map. Select a marker to see what is closest and focus the map on that location.`,
+      googleMapsLabel: `Open ${townName} hiking area in Google Maps`,
+    },
+    fishing: {
+      places: uniqueMapPlaces([...props.fishingAccess, ...props.rivers, ...props.lakes]),
+      heading: `Fishing Map Near ${townName}`,
+      description: `Explore fishing access sites, lakes, and river locations near ${townName} on the interactive map. Select a marker to focus the map on a specific water or access point.`,
+      googleMapsLabel: `Open ${townName} fishing area in Google Maps`,
+    },
+    'weekend-itinerary': {
+      places: uniqueMapPlaces(props.highlights),
+      heading: `${townName} Weekend Map`,
+      description: `Use the interactive map to see key museums, parks, hot springs, ski areas, and other itinerary highlights around ${townName}.`,
+      googleMapsLabel: `Open ${townName} highlights in Google Maps`,
+    },
+    'cost-of-living': null,
+    housing: null,
+    jobs: null,
+    schools: null,
+  };
+  const currentTopicMap = topicMapConfig[topic] || null;
+  const shouldShowTopicMap = !!props.currentTownCoords && !!currentTopicMap && currentTopicMap.places.length > 0;
+  const placeLookup = useMemo(() => {
+    const lookup = new Map<string, RecPlace>();
+    if (!currentTopicMap) return lookup;
+    for (const place of currentTopicMap.places) {
+      const key = place.name.trim().toLowerCase();
+      if (!lookup.has(key)) lookup.set(key, place);
+    }
+    return lookup;
+  }, [currentTopicMap]);
+
+  const focusPlaceOnMap = useCallback((place: RecPlace) => {
+    setFocusedRec(place);
+    const mapEl = document.getElementById('town-map');
+    if (!mapEl) return;
+    const y = mapEl.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
+    if (!shouldShowTopicMap || !contentRef.current) return;
+
+    const rows = Array.from(contentRef.current.querySelectorAll('table tbody tr'));
+    for (const row of rows) {
+      const firstCell = row.querySelector('td');
+      const name = firstCell?.textContent?.trim().toLowerCase();
+      if (!name) continue;
+
+      if (placeLookup.has(name)) {
+        row.setAttribute('data-map-place', name);
+        row.setAttribute('tabindex', '0');
+        row.setAttribute('role', 'button');
+        row.setAttribute('aria-label', `Show ${firstCell?.textContent?.trim()} on the map`);
+        row.classList.add('topic-map-row');
+      }
+    }
+
+    return () => {
+      if (!contentRef.current) return;
+      const enhancedRows = contentRef.current.querySelectorAll('tr.topic-map-row');
+      enhancedRows.forEach((row) => {
+        row.removeAttribute('data-map-place');
+        row.removeAttribute('tabindex');
+        row.removeAttribute('role');
+        row.removeAttribute('aria-label');
+        row.classList.remove('topic-map-row');
+      });
+    };
+  }, [placeLookup, shouldShowTopicMap]);
+
+  const handleTopicContentClick = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
+    const row = (event.target as HTMLElement).closest<HTMLTableRowElement>('tr[data-map-place]');
+    if (!row) return;
+    const key = row.getAttribute('data-map-place');
+    if (!key) return;
+    const place = placeLookup.get(key);
+    if (place) focusPlaceOnMap(place);
+  }, [focusPlaceOnMap, placeLookup]);
+
+  const handleTopicContentKeyDown = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const row = (event.target as HTMLElement).closest<HTMLTableRowElement>('tr[data-map-place]');
+    if (!row) return;
+    event.preventDefault();
+    const key = row.getAttribute('data-map-place');
+    if (!key) return;
+    const place = placeLookup.get(key);
+    if (place) focusPlaceOnMap(place);
+  }, [focusPlaceOnMap, placeLookup]);
 
   const breadcrumbItems = [
     { name: 'Home', url: 'https://treasurestate.com/' },
@@ -367,12 +484,52 @@ export default function TopicPage(props: Props) {
         small
       />
 
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
-        {content}
-        <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
-        <CrossHubLinks slug={slug} topic={topic} townName={townName} />
-        <StaysCTA townName={townName} slug={slug} />
-        <StoreBanner />
+      <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
+        <style dangerouslySetInnerHTML={{ __html: `
+          .toc-desktop { display: none; }
+          @media (min-width: 1024px) {
+            .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
+          }
+          .topic-page-content { flex: 1; min-width: 0; }
+          .topic-map-row { cursor: pointer; }
+          .topic-map-row td { transition: background 0.15s ease; }
+          .topic-map-row:hover td,
+          .topic-map-row:focus td {
+            background: #eef5ee !important;
+          }
+          .topic-map-row:focus {
+            outline: 2px solid #3b6978;
+            outline-offset: 2px;
+          }
+        ` }} />
+
+        <div className="toc-desktop">
+          <TableOfContents contentSelector=".topic-page-content .content-section" />
+        </div>
+
+        <div
+          ref={contentRef}
+          className="topic-page-content"
+          onClick={handleTopicContentClick}
+          onKeyDown={handleTopicContentKeyDown}
+        >
+          {shouldShowTopicMap && currentTopicMap && (
+            <SingleTownMap
+              currentTown={props.currentTownCoords}
+              relatedTowns={[]}
+              recreation={currentTopicMap.places}
+              focusedRec={focusedRec}
+              heading={currentTopicMap.heading}
+              description={currentTopicMap.description}
+              googleMapsLabel={currentTopicMap.googleMapsLabel}
+            />
+          )}
+          {content}
+          <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
+          <CrossHubLinks slug={slug} topic={topic} townName={townName} />
+          <StaysCTA townName={townName} slug={slug} />
+          <StoreBanner />
+        </div>
       </main>
 
       <Footer />
@@ -410,6 +567,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const allTownData = loadJson('town-data.json');
   const allRecreation = loadJson('town-recreation.json');
   const allClimate = loadJson('town-climate.json');
+  const allTownCoordinates = loadJson('town-coordinates.json');
 
   const rawHousing = allHousing[slug];
   const rawEconomy = allEconomy[slug];
@@ -478,6 +636,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       schoolWebsite: rawTown?.schoolWebsite ?? null,
       graduationRate: rawEconomy?.graduationRate ?? null,
       perPupilSpending: rawEconomy?.perPupilSpending ?? null,
+      currentTownCoords: allTownCoordinates[slug] ? { ...allTownCoordinates[slug], slug } : null,
       trails: recPlaces.filter(p => trailTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
       wilderness: recPlaces.filter(p => wildTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
       stateParks: recPlaces.filter(p => parkTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),

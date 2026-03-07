@@ -30,11 +30,17 @@ export default function SingleTownMap({
   relatedTowns,
   recreation,
   focusedRec,
+  heading,
+  description,
+  googleMapsLabel,
 }: { 
   currentTown?: TownCoordinate | null;
   relatedTowns: TownCoordinate[];
   recreation?: RecMarker[];
   focusedRec?: RecMarker | null;
+  heading?: string;
+  description?: string;
+  googleMapsLabel?: string;
 }) {
   const towns = [...(currentTown ? [currentTown] : []), ...relatedTowns];
   
@@ -52,6 +58,9 @@ export default function SingleTownMap({
   const googleMapsHref = currentTown
     ? `https://www.google.com/maps/search/?api=1&query=${currentTown.lat},${currentTown.lng}`
     : null;
+  const mapHeading = heading || 'Map & Nearby';
+  const mapDescription = description || `Explore ${areaName} on the interactive map${mapSummary ? ` with ${mapSummary}` : ''}. Use the zoom controls or select a recreation item to focus it on the map.`;
+  const mapsCta = googleMapsLabel || 'Open Area in Google Maps';
 
   return (
     <section
@@ -74,10 +83,10 @@ export default function SingleTownMap({
             id="town-map-heading"
             style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.35rem', borderBottom: '1px solid #e0e0e0', paddingBottom: '0.5rem' }}
           >
-            Map &amp; Nearby
+            {mapHeading}
           </h2>
           <p id="town-map-description" style={{ margin: 0, color: '#555', fontSize: '0.92rem', lineHeight: 1.6 }}>
-            Explore {areaName} on the interactive map{mapSummary ? ` with ${mapSummary}` : ''}. Use the zoom controls or select a recreation item to focus it on the map.
+            {mapDescription}
           </p>
         </div>
         {googleMapsHref && (
@@ -100,7 +109,7 @@ export default function SingleTownMap({
               whiteSpace: 'nowrap',
             }}
           >
-            Open Area in Google Maps
+            {mapsCta}
           </a>
         )}
       </div>
