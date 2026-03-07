@@ -52,6 +52,7 @@ export default function TownMap({
   recreation,
   highlightTown,
   focusedRec,
+  ariaLabel,
 }: {
   towns: TownCoordinate[];
   center?: [number, number];
@@ -59,6 +60,7 @@ export default function TownMap({
   recreation?: RecMarker[];
   highlightTown?: string;
   focusedRec?: RecMarker | null;
+  ariaLabel?: string;
 }) {
   const mapRef = useRef<MapRef>(null);
   const [selected, setSelected] = useState<(TownCoordinate & { _kind: 'town' }) | (RecMarker & { _kind: 'rec' }) | null>(null);
@@ -85,7 +87,7 @@ export default function TownMap({
   }, []);
 
   return (
-    <div className="town-map-container">
+    <div className="town-map-container" role="region" aria-label={ariaLabel || 'Interactive map'}>
       <Map
         ref={mapRef}
         initialViewState={{ longitude: center[1], latitude: center[0], zoom }}
@@ -93,6 +95,7 @@ export default function TownMap({
         mapStyle="mapbox://styles/mapbox/outdoors-v12"
         mapboxAccessToken={MAPBOX_TOKEN}
         cooperativeGestures={true}
+        keyboard={true}
         onClick={() => setSelected(null)}
       >
         <NavigationControl position="top-right" />

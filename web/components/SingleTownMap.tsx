@@ -43,10 +43,67 @@ export default function SingleTownMap({
   const center: [number, number] = currentTown 
     ? [currentTown.lat, currentTown.lng]
     : [46.9653, -109.5337];
+  const areaName = currentTown?.name || 'this area';
+  const nearbyTownCount = Math.max(towns.length - (currentTown ? 1 : 0), 0);
+  const mapSummary = [
+    nearbyTownCount > 0 ? `${nearbyTownCount} nearby ${nearbyTownCount === 1 ? 'town' : 'towns'}` : null,
+    recreation && recreation.length > 0 ? `${recreation.length} highlighted recreation sites` : null,
+  ].filter(Boolean).join(' and ');
+  const googleMapsHref = currentTown
+    ? `https://www.google.com/maps/search/?api=1&query=${currentTown.lat},${currentTown.lng}`
+    : null;
 
   return (
-    <div id="town-map" style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-      <h3 style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '1rem', borderBottom: '1px solid #e0e0e0', paddingBottom: '0.5rem' }}>Map &amp; Nearby</h3>
+    <section
+      id="town-map"
+      className="content-section"
+      aria-labelledby="town-map-heading"
+      aria-describedby="town-map-description"
+      style={{ marginTop: '1rem', marginBottom: '2rem', scrollMarginTop: '90px' }}
+    >
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
+        gap: '1rem',
+        marginBottom: '1rem',
+        flexWrap: 'wrap',
+      }}>
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <h2
+            id="town-map-heading"
+            style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.35rem', borderBottom: '1px solid #e0e0e0', paddingBottom: '0.5rem' }}
+          >
+            Map &amp; Nearby
+          </h2>
+          <p id="town-map-description" style={{ margin: 0, color: '#555', fontSize: '0.92rem', lineHeight: 1.6 }}>
+            Explore {areaName} on the interactive map{mapSummary ? ` with ${mapSummary}` : ''}. Use the zoom controls or select a recreation item to focus it on the map.
+          </p>
+        </div>
+        {googleMapsHref && (
+          <a
+            href={googleMapsHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.35rem',
+              padding: '0.55rem 0.85rem',
+              borderRadius: '999px',
+              border: '1px solid #cfd8dc',
+              background: '#fff',
+              color: '#3b6978',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '0.85rem',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Open Area in Google Maps
+          </a>
+        )}
+      </div>
       <TownMap
         towns={towns}
         center={center}
@@ -54,7 +111,8 @@ export default function SingleTownMap({
         recreation={recreation}
         highlightTown={currentTown?.slug}
         focusedRec={focusedRec}
+        ariaLabel={`Interactive map of ${areaName} and nearby recreation`}
       />
-    </div>
+    </section>
   );
 }

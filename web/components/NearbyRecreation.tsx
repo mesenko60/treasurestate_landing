@@ -226,10 +226,43 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
   );
 
   return (
-    <section style={{ marginBottom: '2rem' }}>
-      <h3 style={{ fontSize: '1.2rem', color: '#204051', marginBottom: '1rem' }}>
-        Outdoor Recreation Near {townName}
-      </h3>
+    <section
+      className="content-section"
+      style={{ marginBottom: '2rem', scrollMarginTop: '90px' }}
+      aria-labelledby="outdoor-recreation-heading"
+    >
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
+        gap: '0.75rem',
+        marginBottom: '1rem',
+        flexWrap: 'wrap',
+      }}>
+        <h2 id="outdoor-recreation-heading" style={{ fontSize: '1.2rem', color: '#204051', margin: 0 }}>
+          Outdoor Recreation Near {townName}
+        </h2>
+        <a
+          href="#town-map"
+          onClick={(e) => {
+            e.preventDefault();
+            const mapEl = document.getElementById('town-map');
+            if (mapEl) {
+              const y = mapEl.getBoundingClientRect().top + window.scrollY - 80;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          }}
+          style={{
+            color: '#3b6978',
+            textDecoration: 'none',
+            fontSize: '0.82rem',
+            fontWeight: 600,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          Jump to map →
+        </a>
+      </div>
 
       {/* Score + Category Badges */}
       <div style={{

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type MouseEvent } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
@@ -135,6 +135,15 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
     { name: 'Cities and Towns', url: 'https://treasurestate.com/montana-towns/' },
     { name: townName, url: url }
   ];
+  const featuredMapRecreation = recreationPlaces?.filter(p => ['Hot Spring','Campground','Trailhead','Lake','Ski Area','State Park','National Park','Fishing Access','Waterfall'].includes(p.type)).slice(0, 60) ?? undefined;
+
+  const scrollToSection = (id: string) => (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -188,6 +197,16 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           .hub-faq-item { margin-bottom: 1.25rem; }
           .hub-faq-q { font-weight: 600; font-size: 0.95rem; color: #204051; margin-bottom: 0.35rem; }
           .hub-faq-a { font-size: 0.9rem; color: #555; line-height: 1.6; }
+          .map-jump-links { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 0 0 1.5rem; }
+          .map-jump-link {
+            display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.7rem 0.95rem;
+            border-radius: 999px; border: 1px solid #d8e2d8; background: #f8faf8;
+            color: #2e5c66; text-decoration: none; font-size: 0.87rem; font-weight: 600;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+          }
+          .map-jump-link:hover {
+            background: #eef5ee; transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+          }
         `}} />
         <div className="toc-desktop">
           <TableOfContents contentSelector=".content-section" />
@@ -220,6 +239,24 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
+          <div className="map-jump-links" aria-label={`${townName} quick navigation`}>
+            <a href="#town-map" className="map-jump-link" onClick={scrollToSection('town-map')}>
+              <span aria-hidden="true">🗺️</span>
+              Jump to map
+            </a>
+            {recreationPlaces && recreationPlaces.length > 0 && (
+              <a href="#outdoor-recreation-heading" className="map-jump-link" onClick={scrollToSection('outdoor-recreation-heading')}>
+                <span aria-hidden="true">🥾</span>
+                Browse recreation
+              </a>
+            )}
+          </div>
+          <SingleTownMap
+            currentTown={currentTownCoords}
+            relatedTowns={relatedTownCoords}
+            recreation={featuredMapRecreation}
+            focusedRec={focusedRec}
+          />
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
@@ -291,7 +328,6 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               Compare {townName} with Another Town
             </Link>
           </div>
-          <SingleTownMap currentTown={currentTownCoords} relatedTowns={relatedTownCoords} recreation={recreationPlaces?.filter(p => ['Hot Spring','Campground','Trailhead','Lake','Ski Area','State Park','National Park','Fishing Access','Waterfall'].includes(p.type)).slice(0, 60) ?? undefined} focusedRec={focusedRec} />
           <NearbyTowns towns={relatedTowns} />
 
           {cluster && (
