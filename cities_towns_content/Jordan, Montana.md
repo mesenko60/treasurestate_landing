@@ -3,34 +3,41 @@
 - **Population:** 356 (2020 Census)
 - **County:** Garfield County
 - **Elevation:** 2,608 ft
-- **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
+- **Known For:** Hell Creek Formation paleontology (first T. rex identified nearby, 1902), Garfield County Museum, Montana Freemen standoff (1996), and vast ranching country.
+- **Fun Fact:** Barnum Brown discovered one of the first Tyrannosaurus rex specimens in the Hell Creek Formation near Jordan in 1902. Jerry Kramer (Pro Football Hall of Fame, Green Bay Packers) was born here in 1936. The 81-day Montana Freemen standoff (March–June 1996) occurred 25 miles northeast at Justus Ranch. (Source: Grokipedia)
+
+### Notable People
+
+- **Jerry Kramer** (b. 1936): Pro Football Hall of Fame offensive guard; five NFL championships with Green Bay Packers; "Ice Bowl" participant; author of Instant Replay (1968).
+- **Barnum Brown** (1873–1963): Paleontologist who discovered one of the first T. rex specimens near Jordan in 1902. (Source: Grokipedia)
 
 ### History & Heritage
 
-The quiet town of Jordan represents the vast, enduring frontier spirit of Montana.
-
-The history of Jordan is closely tied to the pioneering spirit of early Montana. Founded during the homesteading or railroad eras, the town grew as a central hub for the surrounding farmers and ranchers who worked the expansive plains and river valleys. Today, it retains its deep agricultural heritage and stands as a testament to the resilience of rural Montana communities.
+Jordan was settled in 1896 by Arthur J. Jordan along Big Dry Creek; post office established July 11, 1899. Garfield County created 1915 with Jordan as seat (1919). Population peaked at 457 (1920) during the homestead boom; 1920s bust and 1930s droughts reversed gains. Incorporated 1951. New Deal built high school/dormitory (1936). The Montana Freemen standoff (March 25–June 13, 1996) brought national attention: ~12 armed sovereign-citizen adherents barricaded at Justus Ranch 25 miles northeast; 81-day siege ended peacefully with 16 surrenders. Garfield County Museum houses T. rex and Triceratops replicas, Stygimoloch skull; part of Montana Dinosaur Trail. Hell Creek State Park, Charles M. Russell National Wildlife Refuge (Jordan Wildlife Station) nearby. (Source: Grokipedia)
 
 ### Top Things to Do in Jordan
 
-- **Explore the Surrounding Wilderness:** Jordan serves as a fantastic, quiet basecamp for exploring the vast public lands, rivers, and mountain ranges that define this region of Montana.
-- **Experience Local Culture:** Visit the local businesses, cafes, and historic sites in town to experience the genuine, welcoming hospitality of a classic Montana ranching community.
-- **Hunting and Fishing:** The surrounding agricultural fields, prairies, and waterways provide excellent, uncrowded opportunities for seasonal hunting and fishing.
+- **Garfield County Museum:** Montana Dinosaur Trail; T. rex and Triceratops replicas, Hell Creek fossils.
+- **Hell Creek State Park:** Fort Peck Reservoir access; boating, fishing (walleye, sauger), hiking.
+- **Charles M. Russell National Wildlife Refuge:** 1.3 million acres; hunting, birdwatching, primitive camping.
+- **PaleoWorld Research Foundation / Paleo X:** Guided fossil digs in the badlands.
 
 ### Local Industry & Economy
 
-The economy of Jordan is primarily driven by agriculture. The vast expanses of land surrounding the town are dedicated to cattle ranching and dryland farming (primarily wheat, barley, and hay). Small, locally-owned businesses provide essential services and goods to the community, while the local school district often serves as one of the primary civic anchors and employers in town.
+Agriculture dominates (cattle ranching, dryland farming); ~48% of county employment. Garfield County: 238 farms (2022), beef cattle primary. Oil/gas modest. Retail, healthcare support local needs. (Source: Grokipedia)
 
 ### Getting There & Nearby Destinations
 
-- **Getting There:** Jordan is accessible via Montana's network of scenic state highways and local county roads, offering a beautiful drive no matter which direction you approach from.
-- **Nearby Destinations:**
-    - **Regional Hubs:** Larger neighboring cities offer comprehensive dining, shopping, and commercial airports.
-    - **State Parks and Public Lands:** Visitors can easily take day trips to nearby state parks, national forests, or wildlife refuges.
+- **Getting There:** Montana Highway 200 (east–west). Jordan Airport (JDN) for general aviation. ~84 miles to Miles City.
+- **Nearby:** Miles City, Lewistown, Fort Peck Reservoir, CMR Refuge.
 
 ### Where to Stay in Jordan
 
-Because Jordan is a smaller, residential community, traditional commercial lodging can be limited.
-- **Local Motels:** There may be small, independent motels in or near town offering basic accommodations for highway travelers and hunters.
-- **Nearby Cities:** Many visitors choose to stay in larger regional hubs a short drive away, utilizing Jordan as a scenic day-trip destination.
-- **Camping:** For outdoor enthusiasts, nearby public lands often provide beautiful, rustic camping options.
+- **Local Motels:** Basic accommodations for travelers and hunters.
+- **Camping:** Hell Creek State Park, CMR Refuge primitive sites, nearby public lands.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Jordan,_Montana), U.S. Census Bureau*

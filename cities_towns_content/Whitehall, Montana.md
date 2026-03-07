@@ -69,11 +69,8 @@ Whitehall and its surrounding areas offer numerous activities for outdoor enthus
 
 10. **Downtown Exploration** - Wander through Whitehall's downtown area to discover local shops, restaurants, and the town's historic architecture.
 
-## Sources
-1. Whitehall Chamber of Commerce - https://www.whitehallchamberofcommerce.com/
-2. Explore Whitehall Tourism Website - https://explorewhitehall.com/
-3. Town of Whitehall Official Website - https://townofwhitehallmt.com/
-4. Playback.fm (Notable People) - https://playback.fm/born-in-city/whitehall-mt
-5. WeatherSpark (Climate Data) - https://weatherspark.com/y/2542/Average-Weather-in-Whitehall-Montana-United-States-Year-Round
-6. Jefferson Inn - https://jeffersoninnwhitehall.com/
-7. TripAdvisor (Accommodations) - https://www.tripadvisor.com/Hotels-g45403-Whitehall_Montana-Hotels.html
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Whitehall,_Montana), U.S. Census Bureau, Whitehall Chamber of Commerce, Explore Whitehall*

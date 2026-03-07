@@ -1,36 +1,38 @@
 ### Quick Facts
 
-- **Population:** 1,787 (2020 Census)
+- **Population:** 2,209 (2024 estimate)
 - **County:** Broadwater County
 - **Elevation:** 3,825 ft
-- **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
+- **Known For:** "Banana Belt" milder climate, Canyon Ferry Lake recreation, Broadwater County Museum, and gateway to Missouri River valley.
+- **Fun Fact:** Named for Susan Townsend, wife of Northern Pacific Railroad president Charles Barstow Wright. Founded 1883 as a railroad shipping point; town lots sold for $5 each. Lewis and Clark noted the Crimson Bluffs here in July 1805. Canyon Ferry Dam (1898) submerged historic Canton village. (Source: Grokipedia)
 
 ### History & Heritage
 
-The quiet town of Townsend represents the vast, enduring frontier spirit of Montana.
-
-The history of Townsend is closely tied to the pioneering spirit of early Montana. Founded during the homesteading or railroad eras, the town grew as a central hub for the surrounding farmers and ranchers who worked the expansive plains and river valleys. Today, it retains its deep agricultural heritage and stands as a testament to the resilience of rural Montana communities.
+Townsend was founded in 1883 by the Northern Pacific Railroad as a shipping hub for regional gold mines and agriculture. Named for Susan Townsend. Broadwater County created 1897 with Townsend as seat. Lewis and Clark passed through July 1805; Confederate Gulch gold rush (1864) drew thousands. Commercial Hotel (1889) still operates. Canyon Ferry Dam expansion (1954) submerged Canton. Broadwater County Museum (1976) preserves Native American to pioneer history. Economy shifted from mining/rail to agriculture, tourism, and small business. Canyon Ferry Walleye Festival, Broadwater County Fair and Rodeo. (Source: Grokipedia)
 
 ### Top Things to Do in Townsend
 
-- **Explore the Surrounding Wilderness:** Townsend serves as a fantastic, quiet basecamp for exploring the vast public lands, rivers, and mountain ranges that define this region of Montana.
-- **Experience Local Culture:** Visit the local businesses, cafes, and historic sites in town to experience the genuine, welcoming hospitality of a classic Montana ranching community.
-- **Hunting and Fishing:** The surrounding agricultural fields, prairies, and waterways provide excellent, uncrowded opportunities for seasonal hunting and fishing.
+- **Canyon Ferry Lake:** Boating, fishing (walleye), camping; Montana's third-largest reservoir.
+- **Broadwater County Museum:** Native American, mining, homesteading, Lewis and Clark exhibits.
+- **Big Belt & Elkhorn Mountains:** Hiking, hunting, public lands access.
+- **Canyon Ferry Walleye Festival & Broadwater County Fair:** Annual events.
 
 ### Local Industry & Economy
 
-The economy of Townsend is primarily driven by agriculture. The vast expanses of land surrounding the town are dedicated to cattle ranching and dryland farming (primarily wheat, barley, and hay). Small, locally-owned businesses provide essential services and goods to the community, while the local school district often serves as one of the primary civic anchors and employers in town.
+Agriculture (wheat, barley, potatoes, hay, livestock); Graymont lime plant; tourism (Canyon Ferry); retail; Billings Clinic Broadwater (healthcare). Accommodation/food services, retail, construction top employment. (Source: Grokipedia)
 
 ### Getting There & Nearby Destinations
 
-- **Getting There:** Townsend is accessible via Montana's network of scenic state highways and local county roads, offering a beautiful drive no matter which direction you approach from.
-- **Nearby Destinations:**
-    - **Regional Hubs:** Larger neighboring cities offer comprehensive dining, shopping, and commercial airports.
-    - **State Parks and Public Lands:** Visitors can easily take day trips to nearby state parks, national forests, or wildlife refuges.
+- **Getting There:** U.S. Highways 12 and 287 intersect. Townsend Airport (8U8). ~35 miles SE of Helena.
+- **Nearby:** Helena, Bozeman, Canyon Ferry Lake, Missouri River.
 
 ### Where to Stay in Townsend
 
-Because Townsend is a smaller, residential community, traditional commercial lodging can be limited.
-- **Local Motels:** There may be small, independent motels in or near town offering basic accommodations for highway travelers and hunters.
-- **Nearby Cities:** Many visitors choose to stay in larger regional hubs a short drive away, utilizing Townsend as a scenic day-trip destination.
-- **Camping:** For outdoor enthusiasts, nearby public lands often provide beautiful, rustic camping options.
+- **Local Motels & Hotels:** Commercial Hotel (historic), local accommodations.
+- **Camping:** Canyon Ferry Lake, nearby public lands.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Townsend,_Montana), U.S. Census Bureau*

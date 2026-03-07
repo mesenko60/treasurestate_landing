@@ -4,10 +4,11 @@
 - **County:** Carter County (County Seat)
 - **Elevation:** 3,435 ft (1,047 m)
 - **Known For:** The Carter County Museum (dinosaur fossils), Medicine Rocks State Park, and its deep isolation in the rugged expanses of southeastern Montana.
+- **Fun Fact:** Named after Ijkalaka (Ekalaka), an Oglala Lakota woman—niece of Chief Red Cloud and wife of settler David Russell—whose name means "Restless" or "Moving About." Russell married her in 1874 at Fort Laramie with eight horses and 100 pounds of sugar as bride price. Carter County Museum (1936) was Montana's first county museum and first to display dinosaur fossils. (Source: Grokipedia)
 
 ### History & Heritage
 
-Ekalaka is one of the most remote county seats in the contiguous United States, surrounded by the vast, beautiful, and empty prairies of southeastern Montana. The town was named after Ekalaka, an Oglala Sioux woman who was the niece of Chief Sitting Bull and the wife of David Harrison Russell, an early scout, frontiersman, and settler in the area. Established in the late 19th century, the town grew slowly as a vital supply center for the massive, isolated cattle and sheep ranches that sprawled across the region. Today, Ekalaka retains a profound frontier spirit, preserving a way of life that feels deeply connected to the pioneer days.
+Ekalaka is one of the most remote county seats in the contiguous United States, surrounded by the vast, beautiful, and empty prairies of southeastern Montana. David Harrison Russell founded the town in 1885, naming it for his wife Ijkalaka (Oglala Lakota, niece of Chief Red Cloud). Originally known as Puptown. Carter County created 1917 with Ekalaka as seat. Carter County Museum founded 1936; first Montana county museum and first to display dinosaur fossils. Oil pipeline infrastructure contributes >90% of county tax base. Dino Shindig draws paleontologists annually. (Source: Grokipedia) Established in the late 19th century, the town grew slowly as a vital supply center for the massive, isolated cattle and sheep ranches that sprawled across the region. Today, Ekalaka retains a profound frontier spirit, preserving a way of life that feels deeply connected to the pioneer days.
 
 ### Top Things to Do in Ekalaka
 
@@ -34,3 +35,9 @@ The economy of Ekalaka and Carter County is defined almost exclusively by agricu
 Given its extreme remoteness, Ekalaka is a destination rather than a pass-through town. It offers limited but welcoming accommodations:
 - **Local Motels:** There are small, independent motels in town (such as the Guest House Motel) providing essential, comfortable lodging for hunters, dinosaur enthusiasts, and visiting ranchers.
 - **Camping and RV Parks:** The town offers basic RV facilities, and there are beautiful, rustic camping options available at nearby Medicine Rocks State Park and within the surrounding National Forest lands.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Ekalaka,_Montana), U.S. Census Bureau*

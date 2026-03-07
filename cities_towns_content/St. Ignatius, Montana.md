@@ -13,7 +13,7 @@ Nestled beneath the towering Mission Mountains, St. Ignatius invites adventurers
 - **Elevation:** 2,940 ft
 - **Known For:** Historic St. Ignatius Mission, dramatic Mission Mountains backdrop, Tribal Wilderness
 - **Nearby Landmarks:** National Bison Range, Flathead Lake, Mission Falls
-- **Fun Fact:** The St. Ignatius Mission features 58 original ceiling and wall murals painted by Brother Joseph Carignano, who was the mission's cook with no formal art training
+- **Fun Fact:** The St. Ignatius Mission features 58 original ceiling and wall murals painted by Brother Joseph Carignano (mission cook, no formal art training). A 2022 restoration ($1.6M) preserved the murals. CSKT regained National Bison Range management in 2020. (Source: Grokipedia)
 
 ---
 
@@ -73,3 +73,9 @@ Accommodations in St. Ignatius offer authentic Montana hospitality with options 
 ## Plan Your Visit
 
 Ready to explore St. Ignatius? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're drawn to the spiritual tranquility of the historic mission, the adrenaline rush of mountain exploration, or the cultural richness of the Flathead Reservation, St. Ignatius offers a genuine Montana experience where wilderness adventure and sacred heritage create unforgettable memories.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/St._Ignatius,_Montana), U.S. Census Bureau*

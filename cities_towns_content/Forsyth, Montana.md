@@ -4,10 +4,11 @@
 - **County:** Rosebud County (County Seat)
 - **Elevation:** 2,516 ft (767 m)
 - **Known For:** Its location on the banks of the Yellowstone River, historic downtown architecture, and agate hunting.
+- **Fun Fact:** First settlement on the Yellowstone River; platted 1882 by Northern Pacific Railroad. Named for General James William Forsyth, 7th Cavalry commander. Rosebud County created 1901 with Forsyth as seat. Milwaukee Road arrived 1907. Rosebud County Courthouse built 1914. 1917 typhoid outbreak and 1918 flu epidemic strained resources. (Source: Grokipedia)
 
 ### History & Heritage
 
-Forsyth is a historic railroad and river town situated beautifully along the Yellowstone River in southeastern Montana. The town was founded in 1876 when the first steamboat landed at the site, but its true development was spurred by the arrival of the Northern Pacific Railway in 1882. It was named after General James W. Forsyth, a U.S. Army officer who was a passenger on that first steamboat. Forsyth quickly grew into a bustling transportation, agricultural, and commercial hub for the massive cattle ranches spanning the surrounding plains. Today, the town serves as the county seat of Rosebud County and boasts a downtown area rich with preserved early 20th-century architecture, reflecting its prosperous pioneer past.
+Forsyth is a historic railroad and river town situated beautifully along the Yellowstone River in southeastern Montana. Northern Pacific platted the townsite in 1882 as a secondary operational base; named for General James W. Forsyth. Post office opened 1882. Rosebud County created 1901 with Forsyth as seat. Incorporated 1904 (pop. 726). Milwaukee Road arrived 1907. Rosebud County Courthouse built 1914. 1918 drought and homestead bust reversed gains. Roxy Theatre opened 1930. BNSF yard handles coal and grain. (Source: Grokipedia) Forsyth quickly grew into a bustling transportation, agricultural, and commercial hub for the massive cattle ranches spanning the surrounding plains. Today, the town serves as the county seat of Rosebud County and boasts a downtown area rich with preserved early 20th-century architecture, reflecting its prosperous pioneer past.
 
 ### Top Things to Do in Forsyth
 
@@ -35,3 +36,9 @@ Forsyth's economy is diverse for its size. Agriculture—primarily cattle ranchi
 Because of its strategic location on Interstate 94 and the Yellowstone River, Forsyth offers excellent lodging options for travelers:
 - **Major Hotels and Motels:** The town features several well-maintained motels and recognizable chain hotels situated near the interstate interchanges, catering to road-trippers and business travelers.
 - **RV Parks and Camping:** There are several private RV parks in town, as well as camping opportunities near the Yellowstone River for those traveling with campers or tents.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Forsyth,_Montana), U.S. Census Bureau*

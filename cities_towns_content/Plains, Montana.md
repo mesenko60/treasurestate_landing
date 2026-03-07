@@ -69,3 +69,9 @@ Visitors to Plains, Montana can choose from a variety of charming accommodations
 ## Plan Your Visit
 
 Ready to explore Plains? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Plains,_Montana), U.S. Census Bureau*

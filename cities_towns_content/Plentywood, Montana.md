@@ -75,3 +75,9 @@ Visitors to Plentywood can choose from several lodging options that offer comfor
 ## Plan Your Visit
 
 Ready to explore Plentywood? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Plentywood,_Montana), U.S. Census Bureau*

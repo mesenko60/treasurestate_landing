@@ -13,7 +13,7 @@ Nestled along the mighty Missouri River in northeastern Montana, Fort Peck becko
 - **Elevation:** 2,178 ft
 - **Known For:** Fort Peck Dam (one of the largest earth-filled dams in the world), Fort Peck Lake, dinosaur fossils, summer theater
 - **Nearby Landmarks:** Charles M. Russell National Wildlife Refuge, Missouri River Breaks, Fort Peck Interpretive Center
-- **Fun Fact:** Fort Peck Dam and its construction were featured on the first cover of Life Magazine in November 1936, photographed by Margaret Bourke-White
+- **Fun Fact:** Fort Peck Dam and its construction were featured on the first cover of Life Magazine in November 1936, photographed by Margaret Bourke-White. Town built 1933–1934 as Corps of Engineers company town; peak workforce 11,000. Dam is largest hydraulically filled earthen dam in the U.S. Wheeler and other boomtowns housed thousands in shanty settlements. 1938 landslide delayed completion. (Source: Grokipedia)
 
 ---
 
@@ -79,3 +79,9 @@ For outdoor enthusiasts seeking a more immersive connection with Fort Peck's nat
 ## Plan Your Visit
 
 Ready to explore Fort Peck? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Fort_Peck,_Montana), U.S. Census Bureau, U.S. Army Corps of Engineers*

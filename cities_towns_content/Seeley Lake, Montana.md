@@ -70,3 +70,9 @@ Seeley Lake offers a diverse range of accommodations that capture the authentic 
 ## Plan Your Visit
 
 Ready to explore Seeley Lake? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+
+---
+
+## Data Collection
+
+*Sources: Grokipedia (https://grokipedia.com/page/Seeley_Lake,_Montana), U.S. Census Bureau*
