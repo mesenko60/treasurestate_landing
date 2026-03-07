@@ -15,6 +15,8 @@ const SECTIONS = [
       { href: '/planners/hot-springs-guide', label: 'Hot Springs Guide', desc: '20+ natural hot springs with ratings & maps' },
       { href: '/planners/campgrounds-guide', label: 'Campgrounds & RV Parks', desc: '100+ campgrounds across the state' },
       { href: '/planners/hiking-guide', label: 'Hiking Trails & Trailheads', desc: '60+ trails with ratings & directions' },
+      { href: '/planners/summer-road-trips', label: 'Summer Road Trips', desc: 'Best scenic drives June–September' },
+      { href: '/planners/winter-driving-guide', label: 'Winter Driving Guide', desc: 'Year-round routes & safety tips' },
     ],
   },
   {

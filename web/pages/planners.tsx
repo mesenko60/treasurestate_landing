@@ -77,6 +77,22 @@ export default function Planners() {
                 <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
               </div>
             </Link>
+
+            <Link href="/planners/summer-road-trips" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Summer Road Trips</h3>
+                <p>The best scenic drives to take June through September — alpine passes, glacier parks, and wildflower meadows.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
+            <Link href="/planners/winter-driving-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Winter Driving Guide</h3>
+                <p>Year-round routes, seasonal closures, and essential winter driving tips for Montana.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
           </div>
         </section>
         <StaysCTA />
