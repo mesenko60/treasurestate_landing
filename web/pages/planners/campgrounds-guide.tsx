@@ -49,12 +49,11 @@ const CAT_COLORS: Record<string, string> = {
 };
 
 function Stars({ rating }: { rating: number }) {
-  const full = Math.floor(rating);
-  const half = rating - full >= 0.3;
-  const empty = 5 - full - (half ? 1 : 0);
+  const pct = (rating / 5) * 100;
   return (
-    <span aria-label={`${rating} out of 5 stars`} style={{ letterSpacing: '1px', fontSize: '0.95rem' }}>
-      {'★'.repeat(full)}{half ? '⯨' : ''}{'☆'.repeat(empty)}
+    <span aria-label={`${rating} out of 5 stars`} style={{ position: 'relative', display: 'inline-block', fontSize: '0.95rem', letterSpacing: '1px' }}>
+      <span style={{ color: '#ddd' }}>{'★★★★★'}</span>
+      <span style={{ position: 'absolute', left: 0, top: 0, overflow: 'hidden', whiteSpace: 'nowrap', width: `${pct}%`, color: '#d8973c' }}>{'★★★★★'}</span>
     </span>
   );
 }
