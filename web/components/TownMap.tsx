@@ -53,6 +53,7 @@ export default function TownMap({
   highlightTown,
   focusedRec,
   ariaLabel,
+  containerStyle,
 }: {
   towns: TownCoordinate[];
   center?: [number, number];
@@ -61,6 +62,7 @@ export default function TownMap({
   highlightTown?: string;
   focusedRec?: RecMarker | null;
   ariaLabel?: string;
+  containerStyle?: React.CSSProperties;
 }) {
   const mapRef = useRef<MapRef>(null);
   const [selected, setSelected] = useState<(TownCoordinate & { _kind: 'town' }) | (RecMarker & { _kind: 'rec' }) | null>(null);
@@ -87,7 +89,7 @@ export default function TownMap({
   }, []);
 
   return (
-    <div className="town-map-container" role="region" aria-label={ariaLabel || 'Interactive map'}>
+    <div className="town-map-container" role="region" aria-label={ariaLabel || 'Interactive map'} style={containerStyle}>
       <Map
         ref={mapRef}
         initialViewState={{ longitude: center[1], latitude: center[0], zoom }}

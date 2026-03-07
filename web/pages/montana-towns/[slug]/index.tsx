@@ -253,11 +253,11 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             recreation={featuredMapRecreation}
             focusedRec={focusedRec}
           />
+          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
-          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
           {scenicDrives.length > 0 && (
             <div className="content-section" style={{ margin: '2rem 0' }}>
               <h2 id="scenic-drives">Scenic Drives Near {townName}</h2>

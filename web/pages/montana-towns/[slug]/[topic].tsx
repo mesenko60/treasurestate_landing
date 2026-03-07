@@ -15,7 +15,7 @@ import TableOfContents from '../../../components/TableOfContents';
 import RelatedGuides from '../../../components/town/RelatedGuides';
 import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
-import { getTownNameFromSlug } from '../../../lib/towns';
+import { getRelatedTowns, getTownNameFromSlug } from '../../../lib/towns';
 import { filterNearbyRecreation } from '../../../lib/recreation';
 
 const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
@@ -279,6 +279,7 @@ type Props = {
   graduationRate: number | null;
   perPupilSpending: number | null;
   currentTownCoords: TownCoordinate | null;
+  relatedTownCoords: TownCoordinate[];
   trails: RecPlace[];
   wilderness: RecPlace[];
   stateParks: RecPlace[];
@@ -287,6 +288,7 @@ type Props = {
   lakes: RecPlace[];
   climate: { month: string; avgHigh: number; avgLow: number }[] | null;
   highlights: RecPlace[];
+  generalMapPlaces: RecPlace[];
   buildDate: string;
 };
 
@@ -308,29 +310,56 @@ export default function TopicPage(props: Props) {
     });
   };
 
-  const topicMapConfig: Record<string, { places: RecPlace[]; heading: string; description: string; googleMapsLabel: string } | null> = {
+  const topicMapConfig: Record<string, { places: RecPlace[]; heading: string; description: string; googleMapsLabel: string; relatedTowns: TownCoordinate[] } | null> = {
     hiking: {
       places: uniqueMapPlaces([...props.trails, ...props.wilderness, ...props.stateParks]),
       heading: `${townName} hiking map`,
       description: `Explore trailheads, wilderness areas, and state parks around ${townName} on the interactive map. Select a marker to see what is closest and focus the map on that location.`,
       googleMapsLabel: `Open ${townName} hiking area in Google Maps`,
+      relatedTowns: [],
     },
     fishing: {
       places: uniqueMapPlaces([...props.fishingAccess, ...props.rivers, ...props.lakes]),
       heading: `${townName} fishing map`,
       description: `Explore fishing access sites, lakes, and river locations near ${townName} on the interactive map. Select a marker to focus the map on a specific water or access point.`,
       googleMapsLabel: `Open ${townName} fishing area in Google Maps`,
+      relatedTowns: [],
     },
     'weekend-itinerary': {
       places: uniqueMapPlaces(props.highlights),
       heading: `${townName} weekend map`,
       description: `Use the interactive map to see key museums, parks, hot springs, ski areas, and other itinerary highlights around ${townName}.`,
       googleMapsLabel: `Open ${townName} highlights in Google Maps`,
+      relatedTowns: [],
     },
-    'cost-of-living': null,
-    housing: null,
-    jobs: null,
-    schools: null,
+    'cost-of-living': {
+      places: uniqueMapPlaces(props.generalMapPlaces),
+      heading: `${townName} area map`,
+      description: `Use the interactive map to orient yourself to ${townName}, nearby communities, and everyday recreation while comparing living costs and affordability.`,
+      googleMapsLabel: `Open ${townName} in Google Maps`,
+      relatedTowns: props.relatedTownCoords,
+    },
+    housing: {
+      places: uniqueMapPlaces(props.generalMapPlaces),
+      heading: `${townName} area map`,
+      description: `Use the interactive map to see ${townName}, nearby communities, and nearby recreation while reviewing housing market conditions in the area.`,
+      googleMapsLabel: `Open ${townName} in Google Maps`,
+      relatedTowns: props.relatedTownCoords,
+    },
+    jobs: {
+      places: uniqueMapPlaces(props.generalMapPlaces),
+      heading: `${townName} area map`,
+      description: `Use the interactive map to place ${townName} in its regional context, with nearby towns and recreation that shape the local economy and daily life.`,
+      googleMapsLabel: `Open ${townName} in Google Maps`,
+      relatedTowns: props.relatedTownCoords,
+    },
+    schools: {
+      places: uniqueMapPlaces(props.generalMapPlaces),
+      heading: `${townName} area map`,
+      description: `Use the interactive map to see ${townName}, nearby communities, and local recreation while reviewing schools and family-oriented context around the area.`,
+      googleMapsLabel: `Open ${townName} in Google Maps`,
+      relatedTowns: props.relatedTownCoords,
+    },
   };
   const currentTopicMap = topicMapConfig[topic] || null;
   const shouldShowTopicMap = !!props.currentTownCoords && !!currentTopicMap && currentTopicMap.places.length > 0;
@@ -525,7 +554,7 @@ export default function TopicPage(props: Props) {
           {shouldShowTopicMap && currentTopicMap && (
             <SingleTownMap
               currentTown={props.currentTownCoords}
-              relatedTowns={[]}
+              relatedTowns={currentTopicMap.relatedTowns}
               recreation={currentTopicMap.places}
               focusedRec={focusedRec}
               heading={currentTopicMap.heading}
@@ -561,6 +590,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const slug = String(ctx.params?.slug);
   const topic = String(ctx.params?.topic);
   const townName = getTownNameFromSlug(slug);
+  const relatedTowns = getRelatedTowns(slug);
 
   const dataDir = path.resolve(process.cwd(), 'data');
 
@@ -584,6 +614,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const rawTown = allTownData[slug];
   const recPlaces: RecPlace[] = filterNearbyRecreation(allRecreation[slug]?.places || []);
   const climateMonths = allClimate[slug]?.months || null;
+  const relatedTownCoords = relatedTowns
+    .map((town) => allTownCoordinates[town.slug] ? { ...allTownCoordinates[town.slug], slug: town.slug } : null)
+    .filter(Boolean) as TownCoordinate[];
 
   const housing = rawHousing ? {
     medianHomeValue: rawHousing.medianHomeValue || null,
@@ -623,6 +656,11 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const riverTypes = new Set(['River']);
   const lakeTypes = new Set(['Lake']);
   const highlightTypes = new Set(['Museum', 'State Park', 'Hot Spring', 'Ski Area']);
+  const generalMapTypes = new Set(['Museum', 'State Park', 'Hot Spring', 'Ski Area', 'Trailhead', 'Fishing Access', 'Lake', 'River', 'Campground', 'Waterfall', 'National Park', 'National Forest', 'Wilderness']);
+  const generalMapPlaces = recPlaces
+    .filter((place) => generalMapTypes.has(place.type))
+    .sort((a, b) => a.distMiles - b.distMiles)
+    .slice(0, 24);
 
   const buildDate = new Date().toISOString();
 
@@ -647,6 +685,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       graduationRate: rawEconomy?.graduationRate ?? null,
       perPupilSpending: rawEconomy?.perPupilSpending ?? null,
       currentTownCoords: allTownCoordinates[slug] ? { ...allTownCoordinates[slug], slug } : null,
+      relatedTownCoords,
       trails: recPlaces.filter(p => trailTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
       wilderness: recPlaces.filter(p => wildTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
       stateParks: recPlaces.filter(p => parkTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles),
@@ -655,6 +694,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       lakes: recPlaces.filter(p => lakeTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 15),
       climate: climateMonths,
       highlights: recPlaces.filter(p => highlightTypes.has(p.type)).sort((a, b) => a.distMiles - b.distMiles).slice(0, 20),
+      generalMapPlaces: generalMapPlaces.length > 0 ? generalMapPlaces : recPlaces.slice(0, 24),
     },
   };
 };

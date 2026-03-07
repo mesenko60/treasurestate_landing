@@ -82,7 +82,7 @@ export default function SingleTownMap({
       justifyContent: 'space-between',
       gap: '1rem',
       marginBottom: isMapFirstLayout ? 0 : '1rem',
-      marginTop: isMapFirstLayout ? '0.9rem' : 0,
+      marginTop: 0,
       flexWrap: 'wrap',
     }}>
       <div style={{ minWidth: 0, flex: 1 }}>
@@ -144,7 +144,13 @@ export default function SingleTownMap({
       className="content-section"
       aria-labelledby="town-map-heading"
       aria-describedby="town-map-description"
-      style={{ marginTop: '1rem', marginBottom: '2rem', scrollMarginTop: '90px' }}
+      style={{
+        marginTop: isMapFirstLayout ? 0 : '1rem',
+        marginBottom: '2rem',
+        scrollMarginTop: '90px',
+        padding: isMapFirstLayout ? 0 : undefined,
+        overflow: isMapFirstLayout ? 'hidden' : undefined,
+      }}
     >
       {isMapFirstLayout ? <h2 id="town-map-heading" style={srOnlyStyle}>{mapHeading}</h2> : mapMeta}
       <TownMap
@@ -155,8 +161,13 @@ export default function SingleTownMap({
         highlightTown={currentTown?.slug}
         focusedRec={focusedRec}
         ariaLabel={`Interactive map of ${areaName} and nearby recreation`}
+        containerStyle={isMapFirstLayout ? { marginBottom: 0, borderRadius: 0 } : undefined}
       />
-      {isMapFirstLayout ? mapMeta : null}
+      {isMapFirstLayout ? (
+        <div style={{ padding: '1.25rem 2rem 2rem' }}>
+          {mapMeta}
+        </div>
+      ) : null}
     </section>
   );
 }
