@@ -107,9 +107,9 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Paradise Valley &amp; Yellowstone</h2>
             <p>
-              US-89 from <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner follows the Yellowstone River through a broad valley
+              US-89 from <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner follows the <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978' }}>Yellowstone River</Link> through a broad valley
               framed by the Absaroka Range and the Gallatin Range. This is classic Montana ranch country —
-              hay fields, fly fishing access points, and the warm mineral waters at Chico <Link href="/planners/hot-springs-guide/">Hot Springs</Link>.
+              hay fields, <Link href="/planners/fly-fishing-guide/">fly fishing</Link> access points, and the warm mineral waters at Chico <Link href="/planners/hot-springs-guide/">Hot Springs</Link>.
               The route ends at Yellowstone&apos;s North Entrance, the only park gate open year-round.
             </p>
             <div className="road-trip-stats">

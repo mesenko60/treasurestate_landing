@@ -40,10 +40,10 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         <strong>Georgetown Lake</strong>{'\u2014'}15 miles west{'\u2014'}is the premier fishery:
         a 2,800-acre mountain lake at 6,330 feet stocked with rainbow trout, brook trout, and
         kokanee salmon, and widely regarded as Montana{'\u2019'}s ice fishing capital. The
-        Anaconda-Pintler Wilderness holds backcountry lakes with pure westslope cutthroat trout,
+        Anaconda-Pintler Wilderness holds backcountry lakes with pure <Link href="/planners/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>westslope cutthroat trout</Link>,
         while Silver Bow Creek{'\u2014'}the headwaters of the Clark Fork River{'\u2014'}has been
         restored from Superfund dead water to a productive trout stream. This guide covers every
-        major fishing zone accessible from {townName}. For the full town profile, see
+        major fishing zone accessible from {townName}. For Montana's fly fishing heritage and alpine lake fishing, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#alpine-lakes" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

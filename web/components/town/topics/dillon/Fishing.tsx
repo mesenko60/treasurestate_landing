@@ -51,7 +51,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         lakes in the Pioneer Mountains, and the scope of the fishery becomes extraordinary.
         {townName}{'\u2019'}s fly shops and guide services have built their reputations on this
         concentration of quality water{'\u2014'}there is simply no bad direction to drive from town
-        if you{'\u2019'}re carrying a rod. For the full city profile, see
+        if you{'\u2019'}re carrying a rod. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#big-hole-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

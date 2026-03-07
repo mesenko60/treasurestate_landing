@@ -40,8 +40,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         <strong>1 river</strong> in the data, and central Montana streams throughout the region,{' '}
         {townName} offers premier trout fishing in one of Montana{'\u2019'}s most distinctive
         landscapes. With <strong>3 lakes</strong> within 30 miles and 1 hot spring nearby, the
-        region{'\u2019'}s spring-fed waters are the main draw. Spring Creek Trout Hatchery (3 miles)
-        raises fish for stocking. For the full
+        region{'\u2019'}s spring-fed waters are the main draw.         Spring Creek Trout Hatchery (3 miles)
+        raises fish for stocking. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full
         town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

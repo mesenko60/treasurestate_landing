@@ -290,6 +290,7 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
 
         <div className="cg-cta">
           <Link href="/planners/hot-springs-guide" className="cg-cta-primary">Hot Springs Directory</Link>
+          <Link href="/planners/fly-fishing-guide" className="cg-cta-secondary">Fly Fishing Guide</Link>
           <Link href="/montana-towns" className="cg-cta-secondary">Browse All 134 Towns</Link>
         </div>
       </main>

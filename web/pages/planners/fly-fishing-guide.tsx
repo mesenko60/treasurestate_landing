@@ -112,6 +112,11 @@ export default function FlyFishingGuide() {
         </p>
 
         <h2 className="ff-section-title">Legendary Rivers of Montana</h2>
+        <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
+          <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+            Deeper dive: geography, history, species & conservation for each river →
+          </Link>
+        </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Madison River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
@@ -131,6 +136,9 @@ export default function FlyFishingGuide() {
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444', marginTop: '1rem' }}>
           The Bitterroot is especially famous for the <strong>Skwala hatch</strong>, one of the earliest significant dry-fly opportunities of the year in Montana. Skwalas are large stoneflies that emerge from late February through April, often peaking in late March through mid-April. When water temperatures rise and flows stabilize between roughly 1,500 and 2,000 CFS, trout key on these insects drifting along foam lines, inside seams, and the tail-outs of pools. Anglers often fish with single dry flies—Chubby Chernobyls, Stimulators, and similar patterns—in sizes 8–10. The Skwala hatch draws anglers from across the region for early-season dry-fly fishing on the Bitterroot, often producing solid trout in the 15–18 inch range, including native westslope cutthroat.
         </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#bitterroot-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: East/West Fork confluence, Lewis & Clark, spring runoff →</Link>
+        </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Big Hole River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
@@ -139,35 +147,56 @@ export default function FlyFishingGuide() {
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444', marginTop: '1rem' }}>
           The river also became known for its native Arctic grayling population, one of the few remaining in the lower 48 states. Historic fishing accounts describe anglers camping along the riverbanks for extended fishing trips. The surrounding landscape of open meadows and distant mountains provided a dramatic setting for trout fishing. Today the Big Hole River is still regarded as one of Montana&rsquo;s most distinctive fisheries.
         </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#big-hole-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Beaverhead Mountains, Arctic grayling, Battle of the Big Hole →</Link>
+        </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Gallatin River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           The Gallatin River flows north from Yellowstone National Park through a steep mountain canyon before entering Montana&rsquo;s Gallatin Valley. Early anglers praised the river for its fast-moving water and abundant trout. Its rocky runs and pocket water created excellent conditions for fly fishing. Because the river flows through narrow canyon terrain, many stretches remained relatively untouched for decades. This helped preserve strong trout populations. The Gallatin eventually became widely known through fishing literature and later through popular culture, helping establish Montana as a world-class fly-fishing destination.
+        </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Albert Gallatin, Gallatin Canyon, A River Runs Through It →</Link>
         </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Yellowstone River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           The Yellowstone River begins in Yellowstone National Park and flows north through Montana before joining the Missouri River. Early explorers and anglers described the river as one of the richest trout fisheries in the Rocky Mountains. Its long stretches of free-flowing water created extensive habitat for trout. The upper Yellowstone supported large populations of native Yellowstone cutthroat trout. Downstream sections later developed strong populations of rainbow and brown trout. Because the river flows through a wide range of landscapes—from mountain valleys to prairie country—it offers a variety of fishing experiences. The Yellowstone River continues to be one of Montana&rsquo;s most important natural waterways for both recreation and wildlife.
         </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Longest undammed river in lower 48, 692 miles to North Dakota →</Link>
+        </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Flathead River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           The Flathead River system drains the mountainous region surrounding Glacier National Park. Its clear water and remote setting have long attracted anglers seeking wilderness fishing opportunities. Early travel accounts describe the Flathead as a wild and scenic river with excellent fishing for native trout. The system includes three main forks—the North Fork, Middle Fork, and South Fork Flathead River—each flowing through rugged mountain terrain before joining near the town of Columbia Falls. Today the Flathead River remains one of the most scenic fishing areas in Montana, particularly for anglers seeking native westslope cutthroat trout.
+        </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Three forks, Glacier boundaries, bull trout →</Link>
         </p>
 
         <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: '1.5rem' }}>The Missouri River</h3>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           Although the Missouri River is often associated with the Great Plains, its headwaters in Montana create one of the most productive trout fisheries in the West. Near the town of Craig, Montana, the river flows through a series of dams that create stable water temperatures and abundant aquatic insects. These conditions produce exceptionally large trout populations. Modern anglers often describe this stretch as one of the most consistent dry-fly fisheries in North America. Historical fishing accounts from the early twentieth century noted the river&rsquo;s strong trout populations long before the modern fly-fishing boom. Today the Missouri River remains a central destination for Montana anglers.
         </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Three Forks origin, Holter Dam, mayfly & caddis hatches →</Link>
+        </p>
 
         <h2 className="ff-section-title">Mountain Lake Fishing</h2>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           Beyond its famous rivers, Montana contains thousands of alpine lakes that offer excellent fishing opportunities. Many of these lakes were originally stocked with trout during the early twentieth century to create recreational fisheries. Anglers traveling into Montana&rsquo;s mountain ranges often pack fishing gear along with camping equipment. Reaching these remote lakes typically requires hiking or horseback travel. Because of their isolation, many alpine lakes remain lightly fished. The clear water and dramatic mountain scenery make them memorable destinations for outdoor recreation.
         </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#alpine-lakes" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Glacial origins, stocked species, cutthroat/rainbow/brook/golden →</Link>
+        </p>
 
         <h2 className="ff-section-title">Native Cutthroat Trout</h2>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
           Cutthroat trout are one of the most important native fish species in the Rocky Mountains. Several subspecies historically inhabited Montana&rsquo;s rivers and streams. The most widespread in western Montana is the westslope cutthroat trout. These fish evolved in cold mountain streams and lakes throughout the region. Early fishing literature frequently described cutthroat trout as aggressive feeders that readily rose to dry flies. Today conservation efforts focus on protecting remaining native populations and restoring habitat throughout Montana watersheds. Preserving these native fish helps maintain the ecological balance of mountain streams.
+        </p>
+        <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <Link href="/planners/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>Deeper dive: Columbia basin native, red slash marks, conservation →</Link>
         </p>
 
         <h2 className="ff-section-title">Early Tourism and Fishing</h2>
@@ -193,7 +222,9 @@ export default function FlyFishingGuide() {
         </p>
 
         <div className="ff-cta">
-          <Link href="/best-of/best-fishing-towns" className="ff-cta-primary">10 Best Towns for Fly Fishing</Link>
+          <Link href="/planners/fly-fishing-rivers" className="ff-cta-primary">Rivers Deep Dive</Link>
+          <Link href="/best-of/best-fishing-towns" className="ff-cta-secondary">10 Best Towns for Fly Fishing</Link>
+          <Link href="/planners/hot-springs-guide" className="ff-cta-secondary">Hot Springs Guide</Link>
           <Link href="/planners" className="ff-cta-secondary">All Travel Guides</Link>
         </div>
       </main>

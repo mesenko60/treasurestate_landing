@@ -23,7 +23,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Mississippi, is 20 miles south. The Flathead River system threads through the valley,
         and Glacier National Park's pristine streams are 17 miles northeast. With 8 public
         fishing access sites and 26 lakes within 30 miles, {townName} offers everything from
-        trophy lake trout to delicate cutthroat on mountain streams. For the full town
+        trophy lake trout to delicate cutthroat on mountain streams. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town
         profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

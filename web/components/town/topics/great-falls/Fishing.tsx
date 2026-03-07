@@ -24,8 +24,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         holding 4,000+ trout per mile in cold, dam-regulated water. The Sun River drains the
         Bob Marshall Wilderness 29 miles to the west, the legendary Smith River awaits
         permit-holders 39 miles away, and Giant Springs State Park houses one of Montana's
-        most important fish hatcheries. With multiple rivers within reach,
-        {townName} is an underappreciated fishing base. For the full city profile, see
+        most important fish hatcheries.         With multiple rivers within reach,
+        {townName} is an underappreciated fishing base. For Montana's fly fishing heritage and the Missouri River tailwater, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

@@ -156,7 +156,11 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
         {page.slug === 'best-fishing-towns' && (
           <p style={{ fontSize: '0.95rem', marginBottom: '2rem' }}>
             <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
-              Read our Fly Fishing Guide: Montana&rsquo;s trout legacy from 1919 to today →
+              Fly Fishing Guide
+            </Link>
+            {' — '}
+            <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+              Rivers Deep Dive
             </Link>
           </p>
         )}

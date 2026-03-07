@@ -17,7 +17,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits in the heart of some of the finest fly-fishing water in the American West.
-        The Gallatin River{'\u2014'}immortalized in Norman Maclean's <em>A River Runs Through It</em> and
+        The <Link href="/planners/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Gallatin River</Link>{'\u2014'}immortalized in Norman Maclean's <em>A River Runs Through It</em> and
         the Robert Redford film adaptation{'\u2014'}flows through the Gallatin Canyon just minutes from
         town, carrying wild rainbow and brown trout through a dramatic boulder-strewn canyon. The
         legendary Madison River is 30 miles west, offering 50-fish days of dry-fly action that draw
@@ -26,7 +26,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         native cutthroat trout waters, {townName} provides access to a fishery that rivals any in
         North America. The Gallatin Canyon corridor is lined with fly shops and outfitters, and
         guided trips on the Gallatin, Madison, and Yellowstone rivers are available year-round.
-        For the full community profile, see
+        For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full community profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

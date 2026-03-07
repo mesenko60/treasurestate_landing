@@ -18,11 +18,11 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} may have only one public fishing access site within 30 miles, but what it
         lacks in access-site density it more than compensates for with the quality of the water.
-        The Gallatin, Madison, and Yellowstone rivers — three of the most celebrated trout
+        The <Link href="/planners/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Gallatin</Link>, <Link href="/planners/fly-fishing-rivers#madison-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Madison</Link>, and <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Yellowstone</Link> rivers — three of the most celebrated trout
         streams in North America — all flow within an hour's drive, and the upper Gallatin runs
         right through Gallatin Canyon just 13 miles south of town. Add the Jefferson, the
-        Boulder, Hyalite Reservoir, and 16 lakes within 30 miles, and {townName} offers a
-        fishing portfolio that rivals any mountain town in the West. For the full city profile,
+        Boulder, Hyalite Reservoir,         and 16 lakes within 30 miles, and {townName} offers a
+        fishing portfolio that rivals any mountain town in the West. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full city profile,
         see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

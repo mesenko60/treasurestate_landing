@@ -40,7 +40,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         fishing in one of Montana{'\u2019'}s most scenic river corridors. The Kootenai River (1 mile
         from town) holds rainbow, cutthroat, and bull trout and is renowned for fly fishing. Lake
         Koocanusa, created by Libby Dam, offers kokanee, rainbow trout, and lake trout. Bull trout
-        are native and protected{'\u2014'}catch-and-release regulations apply. For the full town profile, see
+        are native and protected{'\u2014'}catch-and-release regulations apply. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

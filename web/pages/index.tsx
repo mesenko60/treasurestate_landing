@@ -280,6 +280,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           <div className="hp-path-links">
             <Link href="/best-of/best-ski-towns" className="hp-path-link">Ski Towns</Link>
             <Link href="/best-of/best-fishing-towns" className="hp-path-link">Fishing</Link>
+            <Link href="/planners/fly-fishing-guide" className="hp-path-link">Fly Fishing Guide</Link>
             <Link href="/best-of/towns-near-hot-springs" className="hp-path-link">Hot Springs</Link>
             <Link href="/planners" className="hp-path-link">Travel Guides</Link>
           </div>

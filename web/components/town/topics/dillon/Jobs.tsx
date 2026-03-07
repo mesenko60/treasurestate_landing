@@ -38,9 +38,9 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
       <p>
         {townName} is the county seat of Beaverhead County in southwestern Montana{'\u2014'}a
         ranching town of {fmt(population)} people tucked into the Beaverhead Valley where the
-        Beaverhead River winds north toward its confluence with the Big Hole. The economy blends
+        Beaverhead River winds north toward its confluence with the <Link href="/planners/fly-fishing-rivers#big-hole-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Big Hole</Link>. The economy blends
         higher education, healthcare, agriculture, mining, and a growing tourism sector built
-        around world-class fly fishing, hot springs, and proximity to Bannack State Park. With
+        around world-class <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>fly fishing</Link>, hot springs, and proximity to Bannack State Park. With
         a {e?.unemploymentRate ?? 4.2}% unemployment rate and a labor force participation rate
         of {e?.laborForceParticipation ?? 61.2}%, {townName}{'\u2019'}s job market is characteristic
         of a small western Montana college town{'\u2014'}stable but modest, with the University of

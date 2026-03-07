@@ -43,7 +43,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         anglers from across the region. The Jewel Basin alpine lakes offer backcountry cutthroat
         fishing, while Echo Lake and the Swan and Flathead rivers round out an extraordinary
         range of fishable water. This guide covers every major fishing zone accessible
-        from {townName}. For the full town profile, see
+        from {townName}. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

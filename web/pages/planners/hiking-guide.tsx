@@ -270,6 +270,7 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
 
         <div className="hk-cta">
           <Link href="/planners/campgrounds-guide" className="hk-cta-primary">Campgrounds Directory</Link>
+          <Link href="/planners/fly-fishing-guide" className="hk-cta-secondary">Fly Fishing Guide</Link>
           <Link href="/planners/hot-springs-guide" className="hk-cta-secondary">Hot Springs Guide</Link>
         </div>
       </main>

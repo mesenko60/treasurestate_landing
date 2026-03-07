@@ -25,10 +25,10 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         only on the Yellowstone itself but on an extraordinary concentration of world-class water
         within easy reach: the legendary Paradise Valley spring creeks — DePuy, Armstrong, and
         Nelson — offer some of the most technically demanding and rewarding trout fishing on earth,
-        while the Boulder River, the Gallatin River (made famous by <em>A River Runs Through
+        while the Boulder River, the <Link href="/planners/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Gallatin River</Link> (made famous by <em>A River Runs Through
         It</em>), and 40 mountain lakes within 30 miles round out a fishery that rivals any in
-        North America. With 2 FWP fishing access sites and Mayor's Landing just 1 mile from town,
-        {townName} puts serious trout water at your feet. For the full city profile, see
+        North America.         With 2 FWP fishing access sites and Mayor's Landing just 1 mile from town,
+        {townName} puts serious trout water at your feet. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

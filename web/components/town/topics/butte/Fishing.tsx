@@ -18,7 +18,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} sits at the crossroads of southwestern Montana's finest trout rivers — a
         region where blue-ribbon water, rare native fish, and sheer variety of angling
-        opportunities rival anywhere in the Rocky Mountain West. The Big Hole River, 38 miles
+        opportunities rival anywhere in the Rocky Mountain West.         The <Link href="/planners/fly-fishing-rivers#big-hole-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Big Hole River</Link>, 38 miles
         southwest, carries the last fluvial population of Arctic grayling in the contiguous
         United States — a living relic of the Ice Age found nowhere else in the lower 48 in
         its native river habitat. The Beaverhead River, a tailwater below Clark Canyon Dam 55
@@ -27,7 +27,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         river, and the legendary Madison River at Ennis lies 60 miles southeast. With 13 lakes
         within 30 miles — many of them high-mountain cirque lakes holding brook trout and
         cutthroat — and 1 FWP fishing access site, {townName} is one of Montana's
-        most underrated fishing bases. For the full city profile, see
+        most underrated fishing bases. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

@@ -36,8 +36,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Smith{'\u2014'}is a world-class tailwater holding brown trout and rainbow trout averaging 14 to
         20 inches, drawing fly anglers from around the globe. Add Bighorn Canyon National
         Recreation Area{'\u2019'}s 71-mile-long Bighorn Lake, the Afterbay Reservoir, the Tongue River
-        to the east, and multiple FWP fishing access sites along the Yellowstone River corridor,
-        and {townName} offers a fishing base that punches far above its weight. For the full town
+        to the east,         and multiple FWP fishing access sites along the <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Yellowstone River</Link> corridor,
+        and {townName} offers a fishing base that punches far above its weight. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town
         profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

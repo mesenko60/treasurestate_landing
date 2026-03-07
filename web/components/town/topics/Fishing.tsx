@@ -19,11 +19,11 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at the confluence of three legendary trout rivers{' '}—{' '}the Clark Fork,
-        the Blackfoot, and the Bitterroot{' '}—{' '}making it one of the premier fly fishing
+        the Blackfoot, and the <Link href="/planners/fly-fishing-rivers#bitterroot-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Bitterroot</Link>{' '}—{' '}making it one of the premier fly fishing
         destinations in the American West. Norman Maclean's <em>A River Runs Through It</em> was
         set on these waters, and the fishing here lives up to the literary reputation. With
         28 public fishing access sites and 13 lakes within 30 miles, {townName} offers
-        year-round angling opportunities for every skill level. For the full city profile,
+        year-round angling opportunities for every skill level. For Montana's fly fishing heritage and the Skwala hatch, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full city profile,
         see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

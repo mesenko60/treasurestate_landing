@@ -17,7 +17,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} is Montana's largest city — and quietly one of its strongest fishing bases.
-        The Yellowstone River, Montana's longest undammed river, flows directly through the
+        The <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Yellowstone River</Link>, Montana's longest undammed river, flows directly through the
         {townName} metro area, carrying brown trout, smallmouth bass, channel catfish, and
         sauger through a corridor of cottonwood-lined banks and sandstone bluffs. But the
         headline fishery lies 41 miles south: the <strong>Bighorn River</strong> below Yellowtail
@@ -25,7 +25,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         legendary Missouri at Craig and drawing fly anglers from around the globe. Add the
         Stillwater River's freestone mountain water, 8 FWP fishing access sites within 30 miles,
         and Lake Elmo's urban stocked fishery two miles from
-        downtown, and {townName} offers fishing diversity that few Montana cities can match. For
+        downtown, and {townName} offers fishing diversity that few Montana cities can match. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For
         the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>

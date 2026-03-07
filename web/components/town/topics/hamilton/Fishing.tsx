@@ -16,7 +16,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
   return (
     <article className="content-section">
       <p>
-        {townName} sits on the Bitterroot River{'\u2014'}one of Montana{'\u2019'}s most celebrated trout
+        {townName} sits on the <Link href="/planners/fly-fishing-rivers#bitterroot-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Bitterroot River</Link>{'\u2014'}one of Montana{'\u2019'}s most celebrated trout
         streams{'\u2014'}in the heart of the Bitterroot Valley, surrounded by an extraordinary
         concentration of fishable water. The Bitterroot and its major forks (East Fork and
         West Fork) carry wild populations of brown trout, rainbow trout, westslope cutthroat
@@ -26,7 +26,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         water on the main Bitterroot to remote alpine lake fishing in the Selway-Bitterroot
         Wilderness. The Bitterroot{'\u2019'}s fall brown trout run{'\u2014'}when large fish move upstream
         from the Clark Fork to spawn{'\u2014'}is one of the signature fishing events in western
-        Montana. For the full city profile, see
+        Montana. For Montana's fly fishing heritage and the Skwala hatch, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 
