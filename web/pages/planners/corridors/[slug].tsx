@@ -238,6 +238,7 @@ export default function CorridorDetailPage({
   const pageTitle = `${corridor.name} Scenic Drive — Montana Backroads | Treasure State`;
   const pageDescription = `Drive the ${corridor.name} (${corridor.highways.join(', ')}): ${corridor.distanceMiles} miles through Montana from ${slugToName(corridor.startTown)} to ${slugToName(corridor.endTown)}. ${corridor.description}`;
   const canonicalUrl = `https://treasurestate.com/planners/corridors/${corridor.id}/`;
+  const ogImage = `https://treasurestate.com/images/corridors/${corridor.id}.png`;
 
   const centerCoord = corridor.geometry.coordinates[Math.floor(corridor.geometry.coordinates.length / 2)];
 
@@ -283,9 +284,13 @@ export default function CorridorDetailPage({
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImage} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -295,7 +300,7 @@ export default function CorridorDetailPage({
       <Hero
         title={corridor.name}
         subtitle={corridor.highways.join(' · ')}
-        image="/images/hero-image.jpg"
+        image={`/images/corridors/${corridor.id}.png`}
         alt={`${corridor.name} scenic drive through Montana`}
         small
       />
