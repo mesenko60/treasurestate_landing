@@ -26,6 +26,7 @@ import { getTownList, getTownNameFromSlug, getRelatedTowns } from '../../../lib/
 import { readTownMarkdownByTownName, AEOData } from '../../../lib/markdown';
 import { getClusterConfig } from '../../../components/town/cluster-data';
 import { filterNearbyRecreation } from '../../../lib/recreation';
+import { getCorridorsForTown, TownCorridor } from '../../../lib/town-corridors';
 import CrossHubCities from '../../../components/town/CrossHubCities';
 
 type TownCoordinate = {
@@ -110,11 +111,12 @@ type Props = {
     nearestHospitalDist: number | null;
   } | null;
   crossLinks: { label: string; href: string }[];
+  scenicDrives: TownCorridor[];
   heroImage: string;
   ogImage: string;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, heroImage, ogImage }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage }: Props) {
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
@@ -223,6 +225,48 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
+          {scenicDrives.length > 0 && (
+            <div className="content-section" style={{ margin: '2rem 0' }}>
+              <h2 id="scenic-drives">Scenic Drives Near {townName}</h2>
+              <p style={{ fontSize: '0.92rem', color: '#555', lineHeight: 1.6, marginBottom: '1rem' }}>
+                {townName} is located along or near {scenicDrives.length === 1 ? 'a scenic corridor' : `${scenicDrives.length} scenic corridors`} in Montana.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '0.75rem' }}>
+                {scenicDrives.map(drive => (
+                  <Link
+                    key={drive.id}
+                    href={`/planners/corridors/${drive.id}/`}
+                    style={{
+                      display: 'block', padding: '1rem 1.15rem', background: '#f8faf8',
+                      border: '1px solid #e2ebe2', borderRadius: '10px', textDecoration: 'none',
+                      color: '#204051', transition: 'box-shadow 0.2s, transform 0.2s',
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                      <span style={{ width: 10, height: 10, borderRadius: '50%', background: drive.color, flexShrink: 0 }} />
+                      <strong style={{ fontSize: '0.95rem' }}>{drive.name}</strong>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#666', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                      <span>{drive.highways.join(', ')}</span>
+                      <span>{drive.distanceMiles} mi</span>
+                      <span style={{ color: drive.difficulty === 'easy' ? '#27ae60' : drive.difficulty === 'moderate' ? '#f39c12' : '#c0392b', fontWeight: 600 }}>
+                        {drive.difficulty.charAt(0).toUpperCase() + drive.difficulty.slice(1)}
+                      </span>
+                      <span style={{ color: '#999', fontStyle: 'italic' }}>
+                        {drive.relation === 'start' ? 'Starts here' : drive.relation === 'end' ? 'Ends here' : drive.relation === 'through' ? 'Passes through' : 'Nearby'}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                <Link href="/planners/backroads-planner" style={{ color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}>
+                  Explore all routes on the interactive planner →
+                </Link>
+              </div>
+            </div>
+          )}
+
           {crossLinks.length > 0 && (
             <div style={{ margin: '2rem 0', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
               <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
@@ -431,6 +475,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
 
   const { allCrossLinks } = await import('../../../lib/cross-links');
   const crossLinks = allCrossLinks(slug);
+  const scenicDrives = getCorridorsForTown(slug);
 
   const rawEconomy = allEconomyData[slug];
   const rawHealthcare = allHealthcareData[slug];
@@ -491,6 +536,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         nearestHospitalDist: rawHealthcare.nearestHospitalDist ?? null,
       } : null,
       crossLinks,
+      scenicDrives,
       heroImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
         ? `/images/towns/${slug}.jpg`
         : '/images/towns/default-town.jpg',

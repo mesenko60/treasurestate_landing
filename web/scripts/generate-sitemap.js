@@ -46,6 +46,14 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   add(`${baseUrl}/planners/hiking-guide/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/backroads-planner/`, 0.8, 'weekly');
 
+  const corridorsPath = path.join(webDir, 'data', 'corridors.json');
+  if (fs.existsSync(corridorsPath)) {
+    const corridors = JSON.parse(fs.readFileSync(corridorsPath, 'utf8'));
+    for (const c of corridors) {
+      add(`${baseUrl}/planners/corridors/${c.id}/`, 0.7, 'monthly');
+    }
+  }
+
   const infoDir = path.join(outDir, 'Information');
   if (fs.existsSync(infoDir)) {
     for (const f of fs.readdirSync(infoDir)) {

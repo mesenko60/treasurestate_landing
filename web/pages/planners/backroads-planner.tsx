@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
 import Map, { Source, Layer, Marker, Popup, NavigationControl, MapRef } from 'react-map-gl/mapbox';
@@ -72,6 +73,7 @@ export default function BackroadsPlanner({
   corridors: Corridor[];
   townCoords: TownCoords;
 }) {
+  const router = useRouter();
   const mapRef = useRef<MapRef>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [trip, setTrip] = useState<string[]>([]);
@@ -80,6 +82,31 @@ export default function BackroadsPlanner({
   const [poiFilter, setPoiFilter] = useState<string | null>(null);
   const [hoveredPoi, setHoveredPoi] = useState<POI | null>(null);
   const [mobileTab, setMobileTab] = useState<'corridors' | 'trip'>('corridors');
+
+  // Restore trip from URL on mount
+  useEffect(() => {
+    const routes = router.query.routes;
+    if (typeof routes === 'string' && routes.length > 0) {
+      const ids = routes.split(',').filter(id => corridors.some(c => c.id === id));
+      if (ids.length > 0) setTrip(ids);
+    }
+    const focus = router.query.focus;
+    if (typeof focus === 'string' && corridors.some(c => c.id === focus)) {
+      setSelected(focus);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Sync trip to URL
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (trip.length > 0) params.set('routes', trip.join(','));
+    if (selected) params.set('focus', selected);
+    const qs = params.toString();
+    const newUrl = qs ? `${router.pathname}?${qs}` : router.pathname;
+    if (newUrl !== router.asPath) {
+      router.replace(newUrl, undefined, { shallow: true });
+    }
+  }, [trip, selected]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const corridorMap = useMemo(() => {
     const m: Record<string, Corridor> = {};
@@ -568,7 +595,18 @@ export default function BackroadsPlanner({
                       <div className="trip-total-miles">{tripStats.totalMiles} miles</div>
                       <div className="trip-total-label">{tripStats.totalPois} points of interest</div>
                     </div>
-                    <button className="action-btn secondary" onClick={() => setTrip([])}>Clear</button>
+                    <div style={{ display: 'flex', gap: '6px' }}>
+                      <button className="action-btn primary" onClick={() => {
+                        const url = `${window.location.origin}/planners/backroads-planner?routes=${trip.join(',')}`;
+                        navigator.clipboard.writeText(url).then(() => {
+                          const btn = document.getElementById('share-btn');
+                          if (btn) { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Share Trip'; }, 2000); }
+                        });
+                      }}>
+                        <span id="share-btn">Share Trip</span>
+                      </button>
+                      <button className="action-btn secondary" onClick={() => setTrip([])}>Clear</button>
+                    </div>
                   </div>
                 </>
               )}
@@ -727,7 +765,27 @@ export const getStaticProps: GetStaticProps = async () => {
   const path = await import('path');
 
   const corridorsPath = path.join(process.cwd(), 'data', 'corridors.json');
-  const corridors: Corridor[] = JSON.parse(fs.readFileSync(corridorsPath, 'utf-8'));
+  const raw: Corridor[] = JSON.parse(fs.readFileSync(corridorsPath, 'utf-8'));
+
+  const round = (n: number, d: number) => Math.round(n * 10 ** d) / 10 ** d;
+
+  const corridors = raw.map(c => ({
+    ...c,
+    geometry: {
+      type: c.geometry.type,
+      coordinates: c.geometry.coordinates.map(([lng, lat]) => [round(lng, 3), round(lat, 3)]),
+    },
+    pois: c.pois.slice(0, 40).map(p => ({
+      name: p.name,
+      category: p.category,
+      lat: round(p.lat, 4),
+      lng: round(p.lng, 4),
+      distFromRoute: round(p.distFromRoute, 1),
+      rating: p.rating != null ? round(p.rating, 1) : null,
+      reviews: p.reviews || null,
+      type: p.type,
+    })),
+  }));
 
   const townCoordsPath = path.join(process.cwd(), 'data', 'town-coordinates.json');
   const townCoords: TownCoords = JSON.parse(fs.readFileSync(townCoordsPath, 'utf-8'));
