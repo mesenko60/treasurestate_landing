@@ -33,6 +33,7 @@ export default function SingleTownMap({
   heading,
   description,
   googleMapsLabel,
+  layout,
 }: { 
   currentTown?: TownCoordinate | null;
   relatedTowns: TownCoordinate[];
@@ -41,6 +42,7 @@ export default function SingleTownMap({
   heading?: string;
   description?: string;
   googleMapsLabel?: string;
+  layout?: 'default' | 'mapFirst';
 }) {
   const towns = [...(currentTown ? [currentTown] : []), ...relatedTowns];
   
@@ -61,6 +63,80 @@ export default function SingleTownMap({
   const mapHeading = heading || 'Map & Nearby';
   const mapDescription = description || `Explore ${areaName} on the interactive map${mapSummary ? ` with ${mapSummary}` : ''}. Use the zoom controls or select a recreation item to focus it on the map.`;
   const mapsCta = googleMapsLabel || 'Open Area in Google Maps';
+  const isMapFirstLayout = layout === 'mapFirst';
+  const srOnlyStyle: React.CSSProperties = {
+    position: 'absolute',
+    width: 1,
+    height: 1,
+    padding: 0,
+    margin: -1,
+    overflow: 'hidden',
+    clip: 'rect(0, 0, 0, 0)',
+    whiteSpace: 'nowrap',
+    border: 0,
+  };
+  const mapMeta = (
+    <div style={{
+      display: 'flex',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      gap: '1rem',
+      marginBottom: isMapFirstLayout ? 0 : '1rem',
+      marginTop: isMapFirstLayout ? '0.9rem' : 0,
+      flexWrap: 'wrap',
+    }}>
+      <div style={{ minWidth: 0, flex: 1 }}>
+        {isMapFirstLayout ? (
+          <div
+            style={{
+              fontSize: '1.6rem',
+              color: '#204051',
+              marginBottom: '0.35rem',
+              borderBottom: '1px solid #e0e0e0',
+              paddingBottom: '0.5rem',
+              fontWeight: 700,
+              fontFamily: 'var(--font-primary)',
+            }}
+          >
+            {mapHeading}
+          </div>
+        ) : (
+          <h2
+            id="town-map-heading"
+            style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.35rem', borderBottom: '1px solid #e0e0e0', paddingBottom: '0.5rem' }}
+          >
+            {mapHeading}
+          </h2>
+        )}
+        <p id="town-map-description" style={{ margin: 0, color: '#555', fontSize: '0.92rem', lineHeight: 1.6 }}>
+          {mapDescription}
+        </p>
+      </div>
+      {googleMapsHref && (
+        <a
+          href={googleMapsHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.35rem',
+            padding: '0.55rem 0.85rem',
+            borderRadius: '999px',
+            border: '1px solid #cfd8dc',
+            background: '#fff',
+            color: '#3b6978',
+            textDecoration: 'none',
+            fontWeight: 600,
+            fontSize: '0.85rem',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {mapsCta}
+        </a>
+      )}
+    </div>
+  );
 
   return (
     <section
@@ -70,49 +146,7 @@ export default function SingleTownMap({
       aria-describedby="town-map-description"
       style={{ marginTop: '1rem', marginBottom: '2rem', scrollMarginTop: '90px' }}
     >
-      <div style={{
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'space-between',
-        gap: '1rem',
-        marginBottom: '1rem',
-        flexWrap: 'wrap',
-      }}>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <h2
-            id="town-map-heading"
-            style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.35rem', borderBottom: '1px solid #e0e0e0', paddingBottom: '0.5rem' }}
-          >
-            {mapHeading}
-          </h2>
-          <p id="town-map-description" style={{ margin: 0, color: '#555', fontSize: '0.92rem', lineHeight: 1.6 }}>
-            {mapDescription}
-          </p>
-        </div>
-        {googleMapsHref && (
-          <a
-            href={googleMapsHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.35rem',
-              padding: '0.55rem 0.85rem',
-              borderRadius: '999px',
-              border: '1px solid #cfd8dc',
-              background: '#fff',
-              color: '#3b6978',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '0.85rem',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {mapsCta}
-          </a>
-        )}
-      </div>
+      {isMapFirstLayout ? <h2 id="town-map-heading" style={srOnlyStyle}>{mapHeading}</h2> : mapMeta}
       <TownMap
         towns={towns}
         center={center}
@@ -122,6 +156,7 @@ export default function SingleTownMap({
         focusedRec={focusedRec}
         ariaLabel={`Interactive map of ${areaName} and nearby recreation`}
       />
+      {isMapFirstLayout ? mapMeta : null}
     </section>
   );
 }

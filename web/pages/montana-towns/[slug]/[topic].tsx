@@ -311,19 +311,19 @@ export default function TopicPage(props: Props) {
   const topicMapConfig: Record<string, { places: RecPlace[]; heading: string; description: string; googleMapsLabel: string } | null> = {
     hiking: {
       places: uniqueMapPlaces([...props.trails, ...props.wilderness, ...props.stateParks]),
-      heading: `Hiking Map Near ${townName}`,
+      heading: `${townName} hiking map`,
       description: `Explore trailheads, wilderness areas, and state parks around ${townName} on the interactive map. Select a marker to see what is closest and focus the map on that location.`,
       googleMapsLabel: `Open ${townName} hiking area in Google Maps`,
     },
     fishing: {
       places: uniqueMapPlaces([...props.fishingAccess, ...props.rivers, ...props.lakes]),
-      heading: `Fishing Map Near ${townName}`,
+      heading: `${townName} fishing map`,
       description: `Explore fishing access sites, lakes, and river locations near ${townName} on the interactive map. Select a marker to focus the map on a specific water or access point.`,
       googleMapsLabel: `Open ${townName} fishing area in Google Maps`,
     },
     'weekend-itinerary': {
       places: uniqueMapPlaces(props.highlights),
-      heading: `${townName} Weekend Map`,
+      heading: `${townName} weekend map`,
       description: `Use the interactive map to see key museums, parks, hot springs, ski areas, and other itinerary highlights around ${townName}.`,
       googleMapsLabel: `Open ${townName} highlights in Google Maps`,
     },
@@ -531,6 +531,7 @@ export default function TopicPage(props: Props) {
               heading={currentTopicMap.heading}
               description={currentTopicMap.description}
               googleMapsLabel={currentTopicMap.googleMapsLabel}
+              layout="mapFirst"
             />
           )}
           {content}
