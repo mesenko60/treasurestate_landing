@@ -410,6 +410,11 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                       Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)
                     </div>
                   )}
+                  {t.slug === 'bozeman' && (
+                    <div style={{ position: 'absolute', bottom: '4px', right: '6px', fontSize: '0.6rem', color: 'rgba(255,255,255,0.9)', textShadow: '0 1px 2px rgba(0,0,0,0.6)' }}>
+                      Photo: Chris06 / Wikimedia Commons (CC BY-SA 3.0)
+                    </div>
+                  )}
                 </div>
                 <div className="hp-town-body">
                   <div className="hp-town-name">{t.name}</div>
