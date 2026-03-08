@@ -186,6 +186,17 @@ export function trackSearch(query: string, resultCount: number) {
   });
 }
 
+export function trackSearchResultClick(query: string, resultTitle: string, resultUrl: string, resultType: string) {
+  gtag()?.('event', 'search_result_click', {
+    search_term: query,
+    event_category: 'engagement',
+    event_label: resultTitle,
+    result_url: resultUrl,
+    result_type: resultType,
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  });
+}
+
 export function trackCompare(townA: string, townB: string) {
   gtag()?.('event', 'compare_towns', {
     event_category: 'engagement',

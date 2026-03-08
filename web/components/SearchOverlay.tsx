@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Fuse, { FuseResult } from 'fuse.js';
+import { trackSearch, trackSearchResultClick } from '../lib/gtag';
 
 type SearchEntry = {
   type: string;
@@ -37,6 +38,7 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
   const [selectedIdx, setSelectedIdx] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -78,6 +80,13 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
     const r = fuse.search(query, { limit: 20 });
     setResults(r);
     setSelectedIdx(-1);
+
+    if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
+    searchTimerRef.current = setTimeout(() => {
+      trackSearch(query.trim(), r.length);
+    }, 800);
+
+    return () => { if (searchTimerRef.current) clearTimeout(searchTimerRef.current); };
   }, [query, fuse]);
 
   useEffect(() => {
@@ -86,10 +95,13 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
     return () => router.events.off('routeChangeStart', handleRouteChange);
   }, [router.events, onClose]);
 
-  const navigate = useCallback((url: string) => {
+  const navigate = useCallback((url: string, title?: string, type?: string) => {
+    if (query.trim()) {
+      trackSearchResultClick(query.trim(), title || url, url, type || 'unknown');
+    }
     onClose();
     router.push(url);
-  }, [onClose, router]);
+  }, [onClose, router, query]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Escape') { onClose(); return; }
@@ -102,7 +114,8 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
       setSelectedIdx(i => Math.max(i - 1, 0));
     }
     if (e.key === 'Enter' && selectedIdx >= 0 && results[selectedIdx]) {
-      navigate(results[selectedIdx].item.url);
+      const item = results[selectedIdx].item;
+      navigate(item.url, item.title, item.type);
     }
   };
 
@@ -206,7 +219,7 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
                 return (
                   <div
                     key={r.item.url}
-                    onClick={() => navigate(r.item.url)}
+                    onClick={() => navigate(r.item.url, r.item.title, r.item.type)}
                     style={{
                       padding: '10px 20px', cursor: 'pointer', display: 'flex',
                       alignItems: 'flex-start', gap: '12px',

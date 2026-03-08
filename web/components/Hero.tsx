@@ -53,10 +53,10 @@ export default function Hero({ title, subtitle, image, alt, small, showSearch = 
             aria-label="Open search"
             style={{
               display: 'flex', alignItems: 'center', gap: '10px',
-              background: 'rgba(255,255,255,0.95)', border: 'none', borderRadius: '10px',
-              padding: '12px 20px', margin: '1.25rem auto 0', cursor: 'pointer',
+              background: 'rgba(255,255,255,0.95)', border: 'none', borderRadius: '8px',
+              padding: '10px 18px', margin: '1.75rem auto 0', cursor: 'pointer',
               boxShadow: '0 4px 20px rgba(0,0,0,0.25)',
-              minWidth: '280px', maxWidth: '420px', width: '90%',
+              maxWidth: '340px', width: 'auto',
               transition: 'box-shadow 0.2s, transform 0.2s',
             }}
             onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,0,0,0.35)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}

@@ -125,7 +125,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
 
       <style dangerouslySetInnerHTML={{ __html: `
         /* Hero search bar */
-        .hp-hero-search { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.95); border: none; border-radius: 10px; padding: 12px 20px; margin: 1.25rem auto 0; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); min-width: 280px; max-width: 420px; width: 90%; transition: box-shadow 0.2s, transform 0.2s; }
+        .hp-hero-search { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.95); border: none; border-radius: 8px; padding: 10px 18px; margin: 2.5rem auto 0; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); max-width: 340px; width: auto; transition: box-shadow 0.2s, transform 0.2s; }
         .hp-hero-search:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.35); transform: translateY(-2px); }
 
         /* Hero buttons */
