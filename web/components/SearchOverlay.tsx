@@ -126,11 +126,11 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
   }, [selectedIdx]);
 
   useEffect(() => {
+    if (!open) return;
     const handleGlobalKey = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      if (e.key === 'Escape') {
         e.preventDefault();
-        if (open) onClose();
-        else onClose(); // parent toggle handles open
+        onClose();
       }
     };
     window.addEventListener('keydown', handleGlobalKey);

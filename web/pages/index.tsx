@@ -116,7 +116,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
               <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
             <span style={{ flex: 1, textAlign: 'left', color: '#9ca3af', fontFamily: "'Montserrat', sans-serif", fontSize: '0.95rem', fontWeight: 500 }}>
-              Search towns, guides, rankings...
+              Search Montana...
             </span>
             <kbd style={{ fontSize: '0.7rem', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', color: '#9ca3af', background: '#f9fafb' }}>⌘K</kbd>
           </button>

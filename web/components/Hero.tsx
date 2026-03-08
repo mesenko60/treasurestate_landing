@@ -69,7 +69,7 @@ export default function Hero({ title, subtitle, image, alt, small, showSearch = 
               flex: 1, textAlign: 'left', color: '#9ca3af',
               fontFamily: "'Montserrat', sans-serif", fontSize: '0.95rem', fontWeight: 500,
             }}>
-              Search towns, guides, rankings...
+              Search Montana...
             </span>
             <kbd style={{
               fontSize: '0.7rem', padding: '2px 6px', borderRadius: '4px',
