@@ -673,12 +673,18 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       topic,
       townName,
       buildDate,
-      heroImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
-        ? `/images/towns/${slug}.jpg`
-        : '/images/towns/default-town.jpg',
-      ogImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
-        ? `https://treasurestate.com/images/towns/${slug}.jpg`
-        : 'https://treasurestate.com/images/hero-image.jpg',
+      heroImage: (() => {
+        const topicImg = slug === 'missoula' ? 'missoula-topic.jpg' : `${slug}.jpg`;
+        return fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', topicImg))
+          ? `/images/towns/${topicImg}`
+          : '/images/towns/default-town.jpg';
+      })(),
+      ogImage: (() => {
+        const topicImg = slug === 'missoula' ? 'missoula-topic.jpg' : `${slug}.jpg`;
+        return fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', topicImg))
+          ? `https://treasurestate.com/images/towns/${topicImg}`
+          : 'https://treasurestate.com/images/hero-image.jpg';
+      })(),
       housing,
       economy,
       population: rawTown?.population ?? null,
