@@ -11,13 +11,14 @@ globs: web/public/images/**/*, web/scripts/convert-images-to-webp.js, images/**/
 ### Town Images
 
 1. **Place source image** in `images/towns/` (repo root) or `web/public/images/towns/`
-2. **Name by town slug**: `billings.jpg`, `missoula.jpg`, etc. (JPG or PNG)
+2. **Name by town slug**: `billings.jpg`, `missoula.jpg`, `whitefish.jpg`, etc. (JPG or PNG)
 3. **Recommended size**: 1920×800 px or similar landscape aspect
-4. **Run WebP conversion**:
+4. **Hero usage**: The town hero image (`{slug}.jpg`) is used for both the main town page and all topic pages (cost-of-living, housing, jobs, schools, hiking, fishing, weekend-itinerary) by default. Exceptions (e.g. Missoula topic pages using `missoula-topic.jpg`) are configured in `[topic].tsx`.
+5. **Run WebP conversion**:
    ```bash
    cd web && npm run images:convert
    ```
-5. **Add photo credit** if required (see Credits below)
+6. **Add photo credit** if required (see Credits below)
 
 ### Hero / Site Images
 

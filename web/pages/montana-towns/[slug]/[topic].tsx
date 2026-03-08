@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import { useCallback, useEffect, useMemo, useRef, useState, type ComponentType } from 'react';
 import dynamic from 'next/dynamic';
@@ -565,6 +566,17 @@ export default function TopicPage(props: Props) {
           )}
           {content}
           <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
+          {!getClusterConfig(slug) && (
+            <div style={{ margin: '2rem 0', padding: '1.25rem 1.5rem', background: '#f0f7fa', borderRadius: '10px', border: '1px solid #d4e4ec' }}>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: '#204051', lineHeight: 1.7 }}>
+                Thinking about moving to {townName}? Read our complete{' '}
+                <Link href={`/guides/moving-to-${slug}-montana/`} style={{ color: '#3b6978', fontWeight: 600 }}>
+                  Moving to {townName} Guide
+                </Link>{' '}
+                for everything you need to know about housing, schools, jobs, and lifestyle.
+              </p>
+            </div>
+          )}
           <CrossHubLinks slug={slug} topic={topic} townName={townName} />
           <StaysCTA townName={townName} slug={slug} />
           <StoreBanner />

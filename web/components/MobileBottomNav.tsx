@@ -22,13 +22,13 @@ export default function MobileBottomNav() {
 
   return (
     <>
-      <nav className="mobile-bottom-nav">
-        <Link href="/" className={isActive('/') ? 'active' : ''}>
+      <nav className="mobile-bottom-nav" aria-hidden="true">
+        <Link href="/" className={isActive('/') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🏠</div>
           <span>Home</span>
         </Link>
         
-        <Link href="/montana-towns" className={isActive('/montana-towns') ? 'active' : ''}>
+        <Link href="/montana-towns" className={isActive('/montana-towns') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🗺️</div>
           <span>Towns</span>
         </Link>
@@ -36,6 +36,7 @@ export default function MobileBottomNav() {
         <button
           onClick={toggleSearch}
           aria-label="Search"
+          tabIndex={-1}
           style={{
             background: 'none', border: 'none', cursor: 'pointer',
             display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -47,12 +48,12 @@ export default function MobileBottomNav() {
           <span>Search</span>
         </button>
 
-        <Link href="/best-of" className={isActive('/best-of') ? 'active' : ''}>
+        <Link href="/best-of" className={isActive('/best-of') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🏆</div>
           <span>Best Of</span>
         </Link>
 
-        <Link href="/planners" className={isActive('/planners') ? 'active' : ''}>
+        <Link href="/planners" className={isActive('/planners') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🧭</div>
           <span>Planners</span>
         </Link>

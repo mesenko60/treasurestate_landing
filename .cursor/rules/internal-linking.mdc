@@ -1,0 +1,63 @@
+---
+description: Internal linking standards for SEO and site architecture
+alwaysApply: false
+globs: web/pages/**/*.tsx, web/components/**/*.tsx, web/components/town/cluster-data.ts, cities_towns_content/*.md
+---
+
+# Internal Linking Standards
+
+Follow these rules whenever adding or modifying pages, navigation, footer, or content on the site.
+
+## 1. No Duplicate Navigation Links
+
+- The desktop nav (`Header.tsx` / `.menu-bar`) and mobile nav (`MobileBottomNav.tsx` / `.mobile-bottom-nav`) are **two separate DOM elements** shown via CSS media queries.
+- The mobile nav carries `aria-hidden="true"` and `tabIndex={-1}` on all interactive elements to reduce duplicate link weight for search engines and assistive technology.
+- **Do NOT** add the same destination links to the footer that already appear in the nav. The footer is reserved for under-linked pages that need more internal link equity.
+
+## 2. Footer Link Policy
+
+The footer (`Footer.tsx`) should contain links to pages that are **not** in the main navigation and would otherwise be under-linked:
+- `/information/why-treasure-state/`
+- `/information/mining-history-of-montana/`
+- `/information/geology-of-western-montana/`
+- `/planners/summer-road-trips/`
+- `/planners/winter-driving-guide/`
+- `/explore-montana/`
+
+If a new page is added that isn't reachable from the nav or from contextual links on at least 3 other pages, consider adding it to the footer.
+
+## 3. Moving Guide Cross-Links
+
+Every town sub-page (`/montana-towns/{slug}/{topic}/`) must link to the corresponding moving guide (`/guides/moving-to-{slug}-montana/`). This is handled two ways:
+- **Hub towns** (those with `clusterConfigs` entries): The `RelatedGuides` component includes a "Moving to {Town} Guide" link.
+- **Non-hub towns**: A standalone CTA block in `[topic].tsx` renders when `getClusterConfig(slug)` returns null.
+
+When adding a **new town cluster config**, verify that the `RelatedGuides` component still renders the moving guide link correctly.
+
+## 4. Contextual Linking Targets
+
+Maintain at least **3 inbound internal links** to each of these pages from contextually relevant content:
+
+| Page | Link from |
+|------|-----------|
+| `/information/mining-history-of-montana/` | Butte, Anaconda, Helena hub intros; Montana Facts page |
+| `/information/geology-of-western-montana/` | Missoula, Kalispell hub intros; Montana Facts page |
+| `/information/why-treasure-state/` | Montana Facts page (2 links); footer |
+| `/planners/summer-road-trips/` | Whitefish, Bozeman, Kalispell hub intros; Big Sky, Red Lodge, West Yellowstone markdown; footer |
+| `/planners/winter-driving-guide/` | Whitefish, Bozeman hub intros; Big Sky, Red Lodge, West Yellowstone markdown; footer |
+
+When adding a **new information or planner page**, add at least 3 contextual inbound links from topically relevant town pages or hub intros before considering the page complete.
+
+## 5. New Page Linking Checklist
+
+Before marking any new page as done:
+1. Confirm the page has **at least 1 inbound link** (no orphans).
+2. Confirm the page **links out to at least 1 other page** (no dead ends).
+3. For information/planner pages: confirm **at least 3 inbound** contextual links.
+4. For guide pages: confirm the corresponding town sub-pages link to it.
+5. Check that the page does **not** duplicate links already in the nav or footer unless contextually appropriate.
+
+## 6. Anchor Text
+
+- **Never** use generic anchor text like "click here," "read more," or "learn more" as the sole link text.
+- Anchor text must be descriptive and keyword-relevant (e.g., "Montana's mining history," "winter driving guide," "Moving to Bozeman Guide").

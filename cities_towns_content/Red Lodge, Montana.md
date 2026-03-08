@@ -1,7 +1,7 @@
 # Red Lodge, Montana: Where Adventure Meets Mountain Majesty
 Base Camp to the Beartooths
 
-Nestled against the rugged backdrop of Montana's highest peaks, Red Lodge beckons adventurers with its perfect blend of outdoor thrills and small-town charm. This historic mountain town serves as the gateway to the breathtaking Beartooth Highway and Yellowstone National Park, offering year-round excitement for outdoor enthusiasts. Whether you're carving fresh powder at Red Lodge Mountain, hiking pristine alpine trails, or simply soaking in the genuine Western hospitality, Red Lodge delivers an authentic Montana experience where wilderness adventure awaits at every turn.
+Nestled against the rugged backdrop of Montana's highest peaks, Red Lodge beckons adventurers with its perfect blend of outdoor thrills and small-town charm. This historic mountain town serves as the gateway to the breathtaking Beartooth Highway and Yellowstone National Park, offering year-round excitement for outdoor enthusiasts. Whether you're carving fresh powder at Red Lodge Mountain, hiking pristine alpine trails, or simply soaking in the genuine Western hospitality, Red Lodge delivers an authentic Montana experience where wilderness adventure awaits at every turn. It's a highlight on any [Montana summer road trip](/planners/summer-road-trips/), and if you're visiting in winter, be sure to read our [winter driving guide](/planners/winter-driving-guide/) before tackling mountain roads.
 
 ---
 

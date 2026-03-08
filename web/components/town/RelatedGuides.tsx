@@ -12,6 +12,7 @@ export default function RelatedGuides({ slug, townName, currentTopic }: Props) {
   if (!config) return null;
 
   const siblings = config.guides.filter(g => g.topic !== currentTopic);
+  const guideHref = `/guides/moving-to-${slug}-montana/`;
 
   return (
     <div style={{ margin: '2.5rem 0', padding: '1.5rem', background: '#f8faf8', borderRadius: '12px', border: '1px solid #e2ebe2' }}>
@@ -35,15 +36,28 @@ export default function RelatedGuides({ slug, townName, currentTopic }: Props) {
           </Link>
         ))}
       </div>
-      <Link
-        href={`/montana-towns/${slug}/`}
-        style={{
-          display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
-          color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none',
-        }}
-      >
-        &larr; Back to {townName} Guide
-      </Link>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem' }}>
+        <Link
+          href={`/montana-towns/${slug}/`}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
+            color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none',
+          }}
+        >
+          &larr; Back to {townName} Guide
+        </Link>
+        <span style={{ color: '#ccc' }}>|</span>
+        <Link
+          href={guideHref}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
+            color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none',
+          }}
+        >
+          Moving to {townName} Guide &rarr;
+        </Link>
+      </div>
     </div>
   );
 }
