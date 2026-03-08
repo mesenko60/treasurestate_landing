@@ -120,6 +120,7 @@ type Props = {
 const HERO_CREDITS: Record<string, string> = {
   billings: 'Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)',
   bozeman: 'Photo: Chris06 / Wikimedia Commons (CC BY-SA 3.0)',
+  helena: 'Photo: RTC / Wikimedia Commons (CC BY-SA 3.0)',
 };
 
 export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit }: Props) {
