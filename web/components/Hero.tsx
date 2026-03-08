@@ -6,7 +6,7 @@ type Props = {
   image: string;
   alt: string;
   small?: boolean;
-  showSearch?: boolean;
+  showSearch?: boolean; // defaults to true
 };
 
 function webpSrcSet(basePath: string): string | null {
@@ -16,7 +16,7 @@ function webpSrcSet(basePath: string): string | null {
   return `${base}-480.webp 480w, ${base}-800.webp 800w, ${base}.webp 1500w`;
 }
 
-export default function Hero({ title, subtitle, image, alt, small, showSearch }: Props) {
+export default function Hero({ title, subtitle, image, alt, small, showSearch = true }: Props) {
   const [imgSrc, setImgSrc] = useState(image);
   const srcSet = webpSrcSet(imgSrc);
 
