@@ -164,7 +164,7 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
           {rankings.length > 0 && (
             <div style={{ marginTop: '2rem', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
               <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
-                {guide.townName} in Our Rankings
+                {guide.townName} in Our Rankings &amp; Guides
               </h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {rankings.map(r => (
@@ -577,8 +577,8 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
 
   const guide = movingGuide(bundle);
 
-  const { rankingLinks } = await import('../../lib/cross-links');
-  const rankings = rankingLinks(townSlug);
+  const { rankingLinks, plannerLinks } = await import('../../lib/cross-links');
+  const rankings = [...rankingLinks(townSlug), ...plannerLinks(townSlug)];
 
   return { props: { guide, freshness: rawFreshness, rankings } };
 };

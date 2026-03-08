@@ -74,11 +74,18 @@ export function rankingLinks(townSlug: string): CrossLink[] {
   }));
 }
 
+export function plannerLinks(_townSlug: string): CrossLink[] {
+  return [
+    { label: 'Hunting Guide', href: '/planners/hunting-guide/' },
+  ];
+}
+
 export function allCrossLinks(townSlug: string): CrossLink[] {
   const links: CrossLink[] = [];
   const guide = guideLink(townSlug);
   if (guide) links.push(guide);
   links.push(...rankingLinks(townSlug));
+  links.push(...plannerLinks(townSlug));
   return links;
 }
 
