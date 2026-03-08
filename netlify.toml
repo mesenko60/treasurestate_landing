@@ -113,6 +113,13 @@
   status = 301
   force = true
 
+# --- Lowercase /information/ → canonical /Information/ ---
+[[redirects]]
+  from = "/information/*"
+  to = "/Information/:splat"
+  status = 301
+  force = true
+
 # --- Information pages at wrong path ---
 [[redirects]]
   from = "/montana-facts"

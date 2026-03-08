@@ -61,20 +61,6 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
   const siteTitle = 'Find Yourself in Montana | Treasure State';
   const siteDesc = `The complete guide to living and exploring Montana. Compare housing, cost of living, schools, and outdoor recreation across ${totalTowns} towns. Plan your move or your next adventure.`;
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Treasure State',
-    alternateName: 'TreasureState',
-    url: 'https://treasurestate.com',
-    description: siteDesc,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://treasurestate.com/montana-towns?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
   return (
     <>
       <Head>
@@ -92,7 +78,6 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDesc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </Head>
       <Header />
 

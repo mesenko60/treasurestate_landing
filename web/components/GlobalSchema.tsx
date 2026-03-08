@@ -22,18 +22,12 @@ export default function GlobalSchema() {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Montana - The Treasure State',
-    alternateName: ['Treasure State', 'TreasureState'],
+    '@id': `${websiteUrl}/#website`,
+    name: 'Treasure State',
+    alternateName: 'TreasureState',
     url: websiteUrl,
-    description: 'Explore the wonders of Montana with our comprehensive town directory and travel planners.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${websiteUrl}/search?q={search_term_string}`
-      },
-      'query-input': 'required name=search_term_string'
-    }
+    description: 'The complete guide to living and exploring Montana. Compare housing, cost of living, schools, and outdoor recreation across 130+ towns.',
+    publisher: { '@id': `${websiteUrl}/#organization` },
   };
 
   return (
