@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/copy-assets.js",
+    "prebuild": "node scripts/copy-assets.js && node scripts/generate-search-index.js",
     "build": "next build && next export && node scripts/generate-sitemap.js",
     "start": "serve out",
     "postexport": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.19.1",

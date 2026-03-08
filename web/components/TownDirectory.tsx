@@ -99,37 +99,41 @@ export default function TownDirectory({ towns }: { towns: TownEntry[] }) {
         />
       </div>
 
-      {/* Featured Hub Cities */}
-      <div style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>
-          Featured Cities
-        </h2>
-        <p style={{ textAlign: 'center', color: '#666', fontSize: '0.95rem', marginBottom: '1.25rem', lineHeight: 1.5 }}>
-          In-depth guides covering cost of living, housing, jobs, schools, hiking, fishing &amp; weekend itineraries
-        </p>
-        <div className="hub-featured-grid">
-          {hubCities.map(city => (
-            <Link key={city.slug} href={`/montana-towns/${city.slug}/`} className="hub-featured-card" onClick={() => trackHubCityClick(city.name)}>
-              <span className="hub-featured-name">{city.name}</span>
-              <span className="hub-featured-tagline">{city.hubTagline || city.nickname}</span>
-              {city.population && (
-                <span className="hub-featured-pop">Pop. {city.population.toLocaleString()}</span>
-              )}
-              <span className="hub-featured-badge">
-                {city.hubGuideCount || 7} Guides
-              </span>
-            </Link>
-          ))}
+      {/* Featured Hub Cities — hidden during search */}
+      {!searchTerm.trim() && (
+        <div style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '0.25rem', textAlign: 'center' }}>
+            Featured Cities
+          </h2>
+          <p style={{ textAlign: 'center', color: '#666', fontSize: '0.95rem', marginBottom: '1.25rem', lineHeight: 1.5 }}>
+            In-depth guides covering cost of living, housing, jobs, schools, hiking, fishing &amp; weekend itineraries
+          </p>
+          <div className="hub-featured-grid">
+            {hubCities.map(city => (
+              <Link key={city.slug} href={`/montana-towns/${city.slug}/`} className="hub-featured-card" onClick={() => trackHubCityClick(city.name)}>
+                <span className="hub-featured-name">{city.name}</span>
+                <span className="hub-featured-tagline">{city.hubTagline || city.nickname}</span>
+                {city.population && (
+                  <span className="hub-featured-pop">Pop. {city.population.toLocaleString()}</span>
+                )}
+                <span className="hub-featured-badge">
+                  {city.hubGuideCount || 7} Guides
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Map */}
-      <TownMap towns={mapTowns as any} />
+      {/* Map — hidden during search */}
+      {!searchTerm.trim() && <TownMap towns={mapTowns as any} />}
 
       {/* A-Z Directory */}
       <div style={{ marginTop: '1rem' }}>
         <h2 style={{ fontSize: '1.6rem', color: '#204051', marginBottom: '1rem', textAlign: 'center' }}>
-          All Towns A–Z
+          {searchTerm.trim()
+            ? `${filteredTowns.length} result${filteredTowns.length !== 1 ? 's' : ''} for "${searchTerm.trim()}"`
+            : 'All Towns A\u2013Z'}
         </h2>
 
         {/* Letter bar */}
