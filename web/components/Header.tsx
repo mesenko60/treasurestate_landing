@@ -8,6 +8,7 @@ export default function Header() {
   const isActive = (href: string) => router.asPath === href;
   const [searchOpen, setSearchOpen] = useState(false);
 
+  const openSearch = useCallback(() => setSearchOpen(true), []);
   const toggleSearch = useCallback(() => setSearchOpen(v => !v), []);
 
   useEffect(() => {
@@ -17,9 +18,14 @@ export default function Header() {
         toggleSearch();
       }
     };
+    const handleOpenEvent = () => openSearch();
     window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [toggleSearch]);
+    window.addEventListener('openSearch', handleOpenEvent);
+    return () => {
+      window.removeEventListener('keydown', handleKey);
+      window.removeEventListener('openSearch', handleOpenEvent);
+    };
+  }, [toggleSearch, openSearch]);
 
   return (
     <>

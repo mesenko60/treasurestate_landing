@@ -107,10 +107,27 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <a href="#relocate" className="hp-hero-btn hp-hero-btn--primary">I&rsquo;m Moving</a>
             <a href="#visit" className="hp-hero-btn hp-hero-btn--secondary">I&rsquo;m Visiting</a>
           </div>
+          <button
+            onClick={() => window.dispatchEvent(new Event('openSearch'))}
+            aria-label="Open search"
+            className="hp-hero-search"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <span style={{ flex: 1, textAlign: 'left', color: '#9ca3af', fontFamily: "'Montserrat', sans-serif", fontSize: '0.95rem', fontWeight: 500 }}>
+              Search towns, guides, rankings...
+            </span>
+            <kbd style={{ fontSize: '0.7rem', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', color: '#9ca3af', background: '#f9fafb' }}>⌘K</kbd>
+          </button>
         </div>
       </header>
 
       <style dangerouslySetInnerHTML={{ __html: `
+        /* Hero search bar */
+        .hp-hero-search { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.95); border: none; border-radius: 10px; padding: 12px 20px; margin: 1.25rem auto 0; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); min-width: 280px; max-width: 420px; width: 90%; transition: box-shadow 0.2s, transform 0.2s; }
+        .hp-hero-search:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.35); transform: translateY(-2px); }
+
         /* Hero buttons */
         .hp-hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
         .hp-hero-btn { display: inline-block; padding: 0.85rem 2.25rem; border-radius: 8px; font-family: var(--font-primary); font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; letter-spacing: 0.3px; }

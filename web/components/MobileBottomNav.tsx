@@ -1,12 +1,19 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import SearchOverlay from './SearchOverlay';
 
 export default function MobileBottomNav() {
   const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
+  const openSearch = useCallback(() => setSearchOpen(true), []);
   const toggleSearch = useCallback(() => setSearchOpen(v => !v), []);
+
+  useEffect(() => {
+    const handleOpenEvent = () => openSearch();
+    window.addEventListener('openSearch', handleOpenEvent);
+    return () => window.removeEventListener('openSearch', handleOpenEvent);
+  }, [openSearch]);
 
   const isActive = (href: string) => {
     if (href === '/') return router.asPath === '/';
