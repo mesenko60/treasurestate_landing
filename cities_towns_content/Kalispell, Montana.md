@@ -3,6 +3,9 @@
 This is Kalispell, Montana, a vibrant mountain town that believes in boundless adventures, loving the earth and venturing boldly. It’s also a place that welcomes you to breathe deeply and live with intention, all while soaking up our storybook-like community and jaw-dropping views. Here in Kalispell, you’ll find welcoming accommodations, diverse activities, things to do year-round, a walkable downtown and a robust culinary scene. You’ll also find a place that’s committed to recreating responsibly, taking care of our wild places and wide-open spaces, and supporting the community. From scenic drives to paddling on Flathead Lake and visiting Glacier National Park, there’s so much to experience in northwest Montana. Come venture boldly in Kalispell.
 Source: https://discoverkalispell.com/
 
+![Flathead River near Kalispell](/images/towns/kalispell-flathead-river.jpg)
+*Flathead River near Kalispell. ©Mark Mesenko*
+
 ---
 
 ## Quick Facts
