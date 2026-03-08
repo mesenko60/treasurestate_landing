@@ -18,7 +18,7 @@ Unleash your inner explorer in Miles City, Montana, a legendary Western town whe
 
 ## Notable People & Pop Culture
 
-- **Dr. Maurice Hilleman** – World-renowned vaccinologist born in Miles City (Aug 30, 1919); developed over 40 vaccines including MMR, hepatitis B, and chickenpox; graduated from Montana State; credited with saving millions of lives (Source: Grokipedia, NIH)
+- **Dr. Maurice Hilleman** – World-renowned vaccinologist born in Miles City (Aug 30, 1919); developed over 40 vaccines including MMR, hepatitis B, and chickenpox; graduated from Montana State; credited with saving millions of lives
 - George Montgomery – Hollywood actor known for Western films, who spent part of his youth in Montana and embodied the Western spirit. (Note: While Montgomery is associated with Montana, specific strong ties to Miles City itself might be limited; the connection is more broadly to the state's Western image he portrayed.)
 - Lonesome Dove – The epic Western novel and miniseries, while not filmed in Miles City, captures the spirit of the cattle drives and frontier life that are integral to the history of towns like Miles City, which was a key stop on cattle trails.
 
@@ -68,3 +68,4 @@ Miles City offers a range of accommodation options to suit various preferences a
 ## Plan Your Visit
 
 Ready to explore Miles City? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+

@@ -76,3 +76,4 @@ During peak summer fishing season and winter snowmobiling months, accommodations
 ## Plan Your Visit
 
 Ready to explore Lincoln? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're casting a line on the legendary Blackfoot River, hiking through sculpture-adorned wilderness, or snowmobiling across pristine winter landscapes, Lincoln offers an authentic Montana experience that will call you back season after season.
+

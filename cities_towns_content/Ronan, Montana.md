@@ -19,8 +19,8 @@ Nestled in the shadow of the towering Mission Mountains, Ronan beckons the adven
 
 ## Notable People & Pop Culture
 
-- **Marvin Camel** – Professional boxer who made history as a two-time cruiserweight world champion and the first Native American to win a world boxing title; inducted into the Nevada Boxing Hall of Fame in 2024 (Source: Grokipedia)
-- **Shane Morigeau** – Montana state senator (District 48) since 2021, raised in Ronan; advocates for public lands, tribal sovereignty, and environmental policy (Source: Grokipedia)
+- **Marvin Camel** – Professional boxer who made history as a two-time cruiserweight world champion and the first Native American to win a world boxing title; inducted into the Nevada Boxing Hall of Fame in 2024
+- **Shane Morigeau** – Montana state senator (District 48) since 2021, raised in Ronan; advocates for public lands, tribal sovereignty, and environmental policy
 - **Corwin "Corky" Clairmont** – Celebrated contemporary American Indian artist, activist, and educator whose work has been exhibited in prestigious galleries nationwide
 - **A River Runs Through It** – While not set specifically in Ronan, this acclaimed film showcases Montana's spectacular landscapes and fly-fishing culture characteristic of the region including the Flathead River area near Ronan
 
@@ -92,3 +92,4 @@ Budget-conscious travelers will find the Starlite Motel provides clean, basic ac
 ## Plan Your Visit
 
 Ready to explore Ronan? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. With its spectacular mountain backdrop, rich cultural heritage, and gateway position to some of Montana's most breathtaking wilderness areas, Ronan offers adventurous travelers an authentic Montana experience that combines natural wonders with small-town hospitality. Whether you're seeking outdoor thrills in the Mission Mountains, a glimpse into Native American culture, or simply a peaceful retreat in one of America's most beautiful landscapes, Ronan welcomes you to experience the wild heart of Montana's Mission Valley.
+

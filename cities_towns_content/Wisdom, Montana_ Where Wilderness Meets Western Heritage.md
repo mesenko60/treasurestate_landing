@@ -68,3 +68,4 @@ Despite its small size, Wisdom offers several comfortable lodging options for vi
 ## Plan Your Visit
 
 Ready to explore Wisdom? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're casting a line in the legendary Big Hole River, hiking through pristine wilderness, or stepping back in time at historic sites, Wisdom offers an authentic Montana experience far from the crowds. Pack layers for the variable mountain weather, bring your sense of adventure, and prepare to be captivated by this small town with a big heart in the "Valley of 10,000 Haystacks."
+

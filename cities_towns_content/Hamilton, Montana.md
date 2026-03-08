@@ -13,18 +13,18 @@ Nestled in the heart of Montana's breathtaking Bitterroot Valley, Hamilton becko
 - **Elevation:** 3,573 ft
 - **Known For:** Outdoor recreation, Bitterroot Stock Farm, Rocky Mountain Laboratories
 - **Nearby Landmarks:** Bitterroot National Forest, Daly Mansion, Skalkaho Falls
-- **Fun Fact:** Hamilton was founded by copper king Marcus Daly, who built it out of his own pocket after being denied the opportunity to establish business in nearby Grantsdale. The town was named for James W. Hamilton, Daly's engineer who surveyed the site. Willy Burgdorfer discovered the bacterium causing Lyme disease at Rocky Mountain Laboratories in Hamilton in 1982. (Source: Grokipedia)
+- **Fun Fact:** Hamilton was founded by copper king Marcus Daly, who built it out of his own pocket after being denied the opportunity to establish business in nearby Grantsdale. The town was named for James W. Hamilton, Daly's engineer who surveyed the site. Willy Burgdorfer discovered the bacterium causing Lyme disease at Rocky Mountain Laboratories in Hamilton in 1982.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Marcus Daly** – Copper magnate who founded Hamilton in 1890 and established the 22,000-acre Bitterroot Stock Farm for thoroughbred horse breeding and agriculture. The town was platted by his engineer James W. Hamilton, after whom it was named. (Source: Grokipedia)
-- **Willy Burgdorfer** – Entomologist and microbiologist who identified *Borrelia burgdorferi* as the spirochete causing Lyme disease in 1982 through studies of tick vectors at Rocky Mountain Laboratories, where he worked for 35 years. (Source: Grokipedia)
-- **Herald Rea Cox** – Bacteriologist who advanced rickettsial disease research at RML in the 1930s, developing the yolk-sac method for cultivating rickettsia and enabling mass production of vaccines for Rocky Mountain spotted fever and typhus. (Source: Grokipedia)
-- **Val Skinner** – Professional golfer, winner of six LPGA Tour events. (Source: Grokipedia)
-- **Suzanna Son** – Film actress known for her role in "Red Rocket." (Source: Grokipedia)
-- **A River Runs Through It** – While set in Missoula, many scenes from this iconic Robert Redford film showcase the Bitterroot Valley's stunning landscapes and fly fishing opportunities. (Source: Grokipedia)
+- **Marcus Daly** – Copper magnate who founded Hamilton in 1890 and established the 22,000-acre Bitterroot Stock Farm for thoroughbred horse breeding and agriculture. The town was platted by his engineer James W. Hamilton, after whom it was named.
+- **Willy Burgdorfer** – Entomologist and microbiologist who identified *Borrelia burgdorferi* as the spirochete causing Lyme disease in 1982 through studies of tick vectors at Rocky Mountain Laboratories, where he worked for 35 years.
+- **Herald Rea Cox** – Bacteriologist who advanced rickettsial disease research at RML in the 1930s, developing the yolk-sac method for cultivating rickettsia and enabling mass production of vaccines for Rocky Mountain spotted fever and typhus.
+- **Val Skinner** – Professional golfer, winner of six LPGA Tour events.
+- **Suzanna Son** – Film actress known for her role in "Red Rocket."
+- **A River Runs Through It** – While set in Missoula, many scenes from this iconic Robert Redford film showcase the Bitterroot Valley's stunning landscapes and fly fishing opportunities.
 
 ---
 
@@ -45,7 +45,7 @@ Hamilton's economy blends historic roots with modern innovation. Originally buil
 
 ## History & Heritage
 
-Hamilton was established in 1890 as a planned community by Marcus Daly, the Irish-born copper magnate whose Anaconda Copper Mining Company dominated Montana's mining industry. Daly acquired thousands of acres starting in 1886 and directed the platting of the townsite by his engineer James W. Hamilton, after whom the town was named. The settlement was formally incorporated October 16, 1894. Daly established the 22,000-acre Bitterroot Stock Farm focused on thoroughbred horse breeding and agriculture, initiating irrigation ditches that irrigated over 10,000 acres. By 1898, Hamilton was designated the seat of Ravalli County. The Rocky Mountain Laboratory opened in 1928 to study Rocky Mountain spotted fever and other tick-borne diseases, marking Hamilton's entry into biomedical research; today it is a National Institutes of Health facility specializing in infectious disease. The Daly Mansion, completed in 1910 as the summer home of Daly's widow Margaret, features 42 rooms and is preserved by the Daly Mansion Preservation Trust. GlaxoSmithKline's Hamilton biologics campus, established in 1981, produces vaccine adjuvants. (Source: Grokipedia)
+Hamilton was established in 1890 as a planned community by Marcus Daly, the Irish-born copper magnate whose Anaconda Copper Mining Company dominated Montana's mining industry. Daly acquired thousands of acres starting in 1886 and directed the platting of the townsite by his engineer James W. Hamilton, after whom the town was named. The settlement was formally incorporated October 16, 1894. Daly established the 22,000-acre Bitterroot Stock Farm focused on thoroughbred horse breeding and agriculture, initiating irrigation ditches that irrigated over 10,000 acres. By 1898, Hamilton was designated the seat of Ravalli County. The Rocky Mountain Laboratory opened in 1928 to study Rocky Mountain spotted fever and other tick-borne diseases, marking Hamilton's entry into biomedical research; today it is a National Institutes of Health facility specializing in infectious disease. The Daly Mansion, completed in 1910 as the summer home of Daly's widow Margaret, features 42 rooms and is preserved by the Daly Mansion Preservation Trust. GlaxoSmithKline's Hamilton biologics campus, established in 1981, produces vaccine adjuvants.
 
 ---
 
@@ -67,14 +67,3 @@ Hamilton is conveniently located on U.S. Highway 93, approximately 47 miles sout
 
 Hamilton offers accommodations to suit every adventure seeker's needs. For those desiring modern comforts, the city features several well-appointed hotels and motels, including the Quality Inn and Bitterroot River Inn & Conference Center, both providing convenient access to downtown amenities. Travelers seeking more intimate experiences can choose from numerous bed and breakfasts, such as the charming Bitterroot River Bed & Breakfast, where personalized service and local knowledge enhance your stay. Outdoor enthusiasts might prefer camping at nearby sites like Lake Como Recreation Area or Blodgett Canyon Campground, where starlit skies and morning birdsong create unforgettable memories. For extended stays, vacation rentals and cabins dot the valley, offering privacy and often spectacular mountain views. During peak summer and fall seasons, advance reservations are recommended as Hamilton's popularity as a basecamp for Bitterroot adventures continues to grow.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Hamilton,_Montana), U.S. Census Bureau, NIH Rocky Mountain Laboratories*
-
----
-
-## Plan Your Visit
-
-Ready to explore Hamilton? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.

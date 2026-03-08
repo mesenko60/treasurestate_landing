@@ -13,16 +13,16 @@ Nestled against the rugged backdrop of Montana's highest peaks, Red Lodge beckon
 - **Elevation:** 5,571 ft
 - **Known For:** Gateway to Beartooth Highway, world-class skiing, historic downtown
 - **Nearby Landmarks:** Beartooth Mountains, Yellowstone National Park, Custer Gallatin National Forest
-- **Fun Fact:** The Beartooth Highway, which begins in Red Lodge, was called "the most beautiful drive in America" by CBS correspondent Charles Kuralt. The town's name derives from a traditional Crow structure built of red willow branches and painted with vermilion clay. Red Lodge Mountain has a base elevation of 7,100 feet and a peak of 9,416 feet. (Source: Grokipedia)
+- **Fun Fact:** The Beartooth Highway, which begins in Red Lodge, was called "the most beautiful drive in America" by CBS correspondent Charles Kuralt. The town's name derives from a traditional Crow structure built of red willow branches and painted with vermilion clay. Red Lodge Mountain has a base elevation of 7,100 feet and a peak of 9,416 feet.
 
 ---
 
 ## Notable People & Pop Culture
 
 - **Bill Linderman** – Legendary rodeo champion known as "King of the Cowboys" who called Red Lodge home and helped establish the town's rodeo heritage.
-- **Gary Ferguson** – Acclaimed nature writer and conservationist whose works have been inspired by the wilderness surrounding Red Lodge. (Source: Grokipedia)
+- **Gary Ferguson** – Acclaimed nature writer and conservationist whose works have been inspired by the wilderness surrounding Red Lodge.
 - **"The Horse Whisperer"** – Parts of this 1998 Robert Redford film were shot in Montana, including the Absaroka-Beartooth Wilderness and areas near Red Lodge, showcasing the region's natural beauty.
-- **Festival of Nations** – Annual event since 1950, originating from a veterans' memorial dedication to foster unity through cultural celebrations of European immigrant heritages (Italians, Finns, Slavs, Scandinavians) who worked the coal mines. (Source: Grokipedia)
+- **Festival of Nations** – Annual event since 1950, originating from a veterans' memorial dedication to foster unity through cultural celebrations of European immigrant heritages (Italians, Finns, Slavs, Scandinavians) who worked the coal mines.
 
 ---
 
@@ -43,9 +43,9 @@ Red Lodge's economy has transformed dramatically over its history, evolving from
 
 ## History & Heritage
 
-Long before European settlers arrived, the valley where Red Lodge now stands was Crow country, serving as hunting grounds and a place of significance for the indigenous people. The area was part of the Crow Reservation until 1877, when lands were withdrawn for coal extraction. A Northern Pacific construction camp was established in 1882, initially named Smithville; the post office opened December 6, 1884. The Rocky Fork Coal Company opened the region's first major mine in 1887; the Northern Pacific's branch line arrived in 1889, and by 1900 the census recorded 2,152 inhabitants. Coal production peaked in the 1920s at approximately 1 million tons per year, with over 1,000 miners working the district. (Source: Grokipedia)
+Long before European settlers arrived, the valley where Red Lodge now stands was Crow country, serving as hunting grounds and a place of significance for the indigenous people. The area was part of the Crow Reservation until 1877, when lands were withdrawn for coal extraction. A Northern Pacific construction camp was established in 1882, initially named Smithville; the post office opened December 6, 1884. The Rocky Fork Coal Company opened the region's first major mine in 1887; the Northern Pacific's branch line arrived in 1889, and by 1900 the census recorded 2,152 inhabitants. Coal production peaked in the 1920s at approximately 1 million tons per year, with over 1,000 miners working the district.
 
-The Smith Mine disaster on February 27, 1943—a methane gas ignition triggering a coal dust explosion—killed 74 of 77 miners present, Montana's deadliest coal mining accident. The tragedy accelerated the industry's decline. The Beartooth Highway (U.S. 212) opened in 1936, climbing to over 10,000 feet and connecting Red Lodge to Yellowstone's Northeast Entrance 68 miles away. Red Lodge Mountain (originally Grizzly Peak) opened in 1960 with one chairlift and three runs. The historic downtown features 23 structures on the National Register, including the 1893 Spofford Hotel and 1917 Roman Theater. The Carbon County Historical Society & Museum highlights the town's diverse immigrant past. (Source: Grokipedia)
+The Smith Mine disaster on February 27, 1943—a methane gas ignition triggering a coal dust explosion—killed 74 of 77 miners present, Montana's deadliest coal mining accident. The tragedy accelerated the industry's decline. The Beartooth Highway (U.S. 212) opened in 1936, climbing to over 10,000 feet and connecting Red Lodge to Yellowstone's Northeast Entrance 68 miles away. Red Lodge Mountain (originally Grizzly Peak) opened in 1960 with one chairlift and three runs. The historic downtown features 23 structures on the National Register, including the 1893 Spofford Hotel and 1917 Roman Theater. The Carbon County Historical Society & Museum highlights the town's diverse immigrant past.
 
 ---
 
@@ -73,7 +73,3 @@ Red Lodge offers accommodations to suit every preference, from historic luxury t
 
 Ready to explore Red Lodge? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're seeking adrenaline-pumping outdoor activities or a peaceful mountain retreat, Red Lodge delivers authentic Montana experiences in a spectacular natural setting that will leave you planning your return before you've even departed.
 
----
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Red_Lodge,_Montana), U.S. Census Bureau*

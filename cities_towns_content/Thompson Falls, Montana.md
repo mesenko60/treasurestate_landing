@@ -20,7 +20,6 @@ Nestled in the heart of Montana's stunning Clark Fork Valley, Thompson Falls bec
 
 - Marc Racicot – Former Governor of Montana and lobbyist.
 - Jennifer Fielder – Former member of the Montana Senate.
-- Film/TV Show Not Specified – Information on specific film or TV references for Thompson Falls was not prominently found during this research.
 
 ---
 
@@ -68,16 +67,4 @@ Visitors to Thompson Falls will find a welcoming range of accommodation options 
 ## Plan Your Visit
 
 Ready to explore Thompson Falls? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
-
----
-
-## Sources Used
-
-- Grokipedia contributors. "Thompson Falls, Montana." Grokipedia, The Free Encyclopedia. (https://grokipedia.com/page/Thompson_Falls,_Montana)
-- Thompson Falls Chamber of Commerce. (https://www.thompsonfallschamber.org/)
-- Playback.fm. "Famous People From Thompson Falls, Montana." (https://playback.fm/born-in-city/thompson-falls-mt)
-- Montana Fish, Wildlife & Parks. "Thompson Falls State Park." (https://fwp.mt.gov/thompson-falls)
-- City of Thompson Falls Official Website (as referenced, e.g., cityofthompsonfalls.com, though primary content drawn from thompsonfalls.org for general city info if different)
-- Thompsonfalls.org. (https://thompsonfalls.org/)
-- Various travel and booking websites (e.g., TripAdvisor, Yelp, Booking.com, Expedia, Kayak) for aggregated information on attractions, lodging, and dining.
 

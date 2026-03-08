@@ -4,7 +4,7 @@
 - **County:** Musselshell County
 - **Elevation:** 3,229 ft
 - **Known For:** Historic cattle roundups (town's namesake), Signal Peak Coal Mine (Montana's only active underground coal mine), Musselshell Valley Historical Museum, and R.I.D.E. (Roundup Independence Days Extravaganza).
-- **Fun Fact:** Roundup's name comes from its role as a natural gathering point for cattle roundups along the Musselshell River in the 1880s. The Milwaukee Road platted the town in 1908; first coal car loaded Sept. 25, 1908. Signal Peak's Bull Mountains Mine employs ~250 and produces ~7 million tons/year. The 2011 Musselshell flood and 2012 Dahl Fire tested community resilience. (Source: Grokipedia)
+- **Fun Fact:** Roundup's name comes from its role as a natural gathering point for cattle roundups along the Musselshell River in the 1880s. The Milwaukee Road platted the town in 1908; first coal car loaded Sept. 25, 1908. Signal Peak's Bull Mountains Mine employs ~250 and produces ~7 million tons/year. The 2011 Musselshell flood and 2012 Dahl Fire tested community resilience.
 
 ### Notable People
 
@@ -12,11 +12,11 @@
 - **Vic Lindskog** (1914–2003): NFL center/linebacker, Philadelphia Eagles; Montana Football Hall of Fame.
 - **Shane Collins** (b. 1969): NFL defensive end, Washington Redskins; Montana Football Hall of Fame.
 - **Vern Countryman** (1917–1999): Harvard Law professor; bankruptcy and commercial law scholar.
-- **Daniel Zolnikov** (b. 1987): Montana legislator; Montana Consumer Data Privacy Act (2023) author. (Source: Grokipedia)
+- **Daniel Zolnikov** (b. 1987): Montana legislator; Montana Consumer Data Privacy Act (2023) author.
 
 ### History & Heritage
 
-Post office established 1883 on McMillan Ranch; Milwaukee Road platted town 1908. Incorporated 1909; Musselshell County seat 1911. Coal mining boomed (Roundup Coal Mining Co., 1920s–30s); population peaked 2,856 (1950). Milwaukee Road abandonment (1980) and mine closures led to decline. Signal Peak Energy's Bull Mountains Mine reopened 2009; federal expansion approved June 2025. 2011 Musselshell flood damaged 50+ homes; 2012 Dahl Fire destroyed 160+ structures. Musselshell Valley Historical Museum (1973): coal mining, ranching, dinosaur fossils; joining Montana Dinosaur Trail 2026. Annual cattle drive reenactments, R.I.D.E. (July 4th), Musselshell-Golden Valley 4-H Fair. (Source: Grokipedia)
+Post office established 1883 on McMillan Ranch; Milwaukee Road platted town 1908. Incorporated 1909; Musselshell County seat 1911. Coal mining boomed (Roundup Coal Mining Co., 1920s–30s); population peaked 2,856 (1950). Milwaukee Road abandonment (1980) and mine closures led to decline. Signal Peak Energy's Bull Mountains Mine reopened 2009; federal expansion approved June 2025. 2011 Musselshell flood damaged 50+ homes; 2012 Dahl Fire destroyed 160+ structures. Musselshell Valley Historical Museum (1973): coal mining, ranching, dinosaur fossils; joining Montana Dinosaur Trail 2026. Annual cattle drive reenactments, R.I.D.E. (July 4th), Musselshell-Golden Valley 4-H Fair.
 
 ### Top Things to Do in Roundup
 
@@ -28,7 +28,7 @@ Post office established 1883 on McMillan Ranch; Milwaukee Road platted town 1908
 
 ### Local Industry & Economy
 
-Agriculture (cattle, hay, wheat); Signal Peak Coal Mine (~250 jobs); Amazon prep centers (~100 jobs); retail, healthcare, education. Roundup Memorial Healthcare (critical access). (Source: Grokipedia)
+Agriculture (cattle, hay, wheat); Signal Peak Coal Mine (~250 jobs); Amazon prep centers (~100 jobs); retail, healthcare, education. Roundup Memorial Healthcare (critical access).
 
 ### Getting There & Nearby Destinations
 
@@ -40,8 +40,3 @@ Agriculture (cattle, hay, wheat); Signal Peak Coal Mine (~250 jobs); Amazon prep
 - **Motels & Inns:** Local accommodations for travelers and hunters.
 - **Camping:** BLM sites, Horsethief Recreation Area, primitive camping.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Roundup,_Montana), U.S. Census Bureau*

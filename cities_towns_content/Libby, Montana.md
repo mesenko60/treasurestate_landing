@@ -13,7 +13,7 @@ Nestled in the rugged northwest corner of Montana, Libby beckons the adventurous
 - **Elevation:** 2,096 ft (640 m)
 - **Known For:** Kootenai Falls, Cabinet Mountains Wilderness, world-class fishing, and outdoor recreation
 - **Nearby Landmarks:** Cabinet Mountains, Kootenai National Forest, Libby Dam, Lake Koocanusa
-- **Fun Fact:** Libby supplied ~80% of the world's vermiculite (Zonolite/W.R. Grace, 1923–1990). The ore contained amphibole asbestos; EPA designated the site Superfund in 2002. Kootenai Falls appeared in *The River Wild* (1994) and *The Revenant* (2015). Libby Creek was named in 1867 after a prospector's daughter. (Source: Grokipedia)
+- **Fun Fact:** Libby supplied ~80% of the world's vermiculite (Zonolite/W.R. Grace, 1923–1990). The ore contained amphibole asbestos; EPA designated the site Superfund in 2002. Kootenai Falls appeared in *The River Wild* (1994) and *The Revenant* (2015). Libby Creek was named in 1867 after a prospector's daughter.
 
 ---
 
@@ -44,7 +44,7 @@ The construction of Libby Dam in the early 1970s brought another economic boom, 
 
 ## History & Heritage
 
-The Kootenai Tribe used the river for travel and ceremonies; Kootenai Falls remains sacred. David Thompson entered the region in 1809. Prospectors established Libbysville in 1867 (500–600 miners); the creek was named that year. Great Northern Railway platted the townsite in 1890; first train arrived May 3, 1892. Zonolite Company began vermiculite extraction in 1923; W.R. Grace acquired operations in 1963. The mine supplied ~80% of global vermiculite until closure in December 1990; ore contained amphibole asbestos. EPA designated the site Superfund in 2002. J. Neils Lumber (later St. Regis) operated a major mill 1910–1960s; last mill closed 2002. Libby Dam (1966–1975) created 90-mile Lake Koocanusa. (Source: Grokipedia)
+The Kootenai Tribe used the river for travel and ceremonies; Kootenai Falls remains sacred. David Thompson entered the region in 1809. Prospectors established Libbysville in 1867 (500–600 miners); the creek was named that year. Great Northern Railway platted the townsite in 1890; first train arrived May 3, 1892. Zonolite Company began vermiculite extraction in 1923; W.R. Grace acquired operations in 1963. The mine supplied ~80% of global vermiculite until closure in December 1990; ore contained amphibole asbestos. EPA designated the site Superfund in 2002. J. Neils Lumber (later St. Regis) operated a major mill 1910–1960s; last mill closed 2002. Libby Dam (1966–1975) created 90-mile Lake Koocanusa.
 
 ---
 
@@ -76,8 +76,3 @@ Lake Koocanusa Resort & Marina offers waterfront cabins perfect for boating and 
 
 Ready to explore Libby? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Libby,_Montana), U.S. Census Bureau*

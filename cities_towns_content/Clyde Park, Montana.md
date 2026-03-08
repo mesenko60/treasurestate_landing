@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~355 (Source: U.S. Census Bureau estimates)
+- **Population:** ~355
 - **County:** Park County
 - **Elevation:** 4,879 ft (1,487 m)
 - **Known For:** Scenic location in the beautiful Shields Valley, sweeping views of the Crazy Mountains, and agricultural heritage.
@@ -34,3 +34,4 @@ The economy of Clyde Park is almost entirely dependent on agriculture. The ferti
 As a very small rural community, traditional lodging in Clyde Park is virtually non-existent.
 - **Vacation Rentals:** There are several charming vacation rentals, historic cabins, and farm stays available in the surrounding Shields Valley via platforms like Airbnb and VRBO.
 - **Livingston (20 miles South):** The vast majority of visitors base themselves in Livingston, which offers historic hotels (like the Murray Hotel), numerous modern motels, and extensive dining options, making the short, beautiful drive into the Shields Valley for day trips.
+

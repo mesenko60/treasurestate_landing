@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~719 (Source: U.S. Census Bureau estimates)
+- **Population:** ~719
 - **County:** Carbon County
 - **Elevation:** 3,675 ft (1,120 m)
 - **Known For:** Gateway to Bighorn Canyon National Recreation Area, the Pryor Mountains Wild Horse Range, and historic agriculture.
@@ -35,3 +35,4 @@ While Bridger is a small community, it offers a few cozy options for travelers w
 - **The Bridger Motel:** A classic, locally-owned roadside motel offering clean and convenient accommodations right in town.
 - **Guest Ranches and B&Bs:** Properties like the Lonesome Spur Ranch offer immersive, western-style lodging experiences just outside of town.
 - **Billings (45 miles North) or Red Lodge (30 miles West):** For visitors seeking a wider variety of major hotels, resorts, or extensive dining options, both Billings and Red Lodge make excellent basecamps for exploring the Bridger area.
+

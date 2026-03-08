@@ -13,16 +13,16 @@ Nestled in the spectacular Tobacco Valley of northwestern Montana, Eureka beckon
 - **Elevation:** 2,707 ft
 - **Known For:** Former "Christmas Tree Capital of the World," outdoor recreation, mild microclimate
 - **Nearby Landmarks:** Lake Koocanusa, Kootenai National Forest, Canadian Border
-- **Fun Fact:** Eureka enjoys a unique microclimate that's notably warmer than surrounding areas, earning the region the nickname "banana belt" of northwestern Montana. Designated "Christmas Tree Capital of the World" around 1937 by Colliers Magazine. Originally incorporated as Deweyville in 1903; renamed Eureka in 1904 when the Great Northern Railway arrived. President Harry S. Truman delivered a speech in Eureka during his 1952 whistle-stop campaign. (Source: Grokipedia)
+- **Fun Fact:** Eureka enjoys a unique microclimate that's notably warmer than surrounding areas, earning the region the nickname "banana belt" of northwestern Montana. Designated "Christmas Tree Capital of the World" around 1937 by Colliers Magazine. Originally incorporated as Deweyville in 1903; renamed Eureka in 1904 when the Great Northern Railway arrived. President Harry S. Truman delivered a speech in Eureka during his 1952 whistle-stop campaign.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **David Thompson** – Fur trader and cartographer who entered the Tobacco Plains in 1808, naming the area Tobacco Meadows; mapped the Kootenai River and surrounding terrain. (Source: Grokipedia)
-- **John McIntire** – Accomplished character actor known for roles in classic Westerns and television series including "Wagon Train" and "The Virginian." (Source: Grokipedia)
-- **Jeanette Nolan** – Acclaimed actress with a career spanning radio, film, and television, including four Emmy nominations. (Source: Grokipedia)
-- **Tim McIntire** – Actor and musician who followed in his parents' footsteps. (Source: Grokipedia)
+- **David Thompson** – Fur trader and cartographer who entered the Tobacco Plains in 1808, naming the area Tobacco Meadows; mapped the Kootenai River and surrounding terrain.
+- **John McIntire** – Accomplished character actor known for roles in classic Westerns and television series including "Wagon Train" and "The Virginian."
+- **Jeanette Nolan** – Acclaimed actress with a career spanning radio, film, and television, including four Emmy nominations.
+- **Tim McIntire** – Actor and musician who followed in his parents' footsteps.
 
 ---
 
@@ -43,7 +43,7 @@ Eureka's economy has evolved significantly since its founding as a logging commu
 
 ## History & Heritage
 
-The Kootenai Tribe cultivated wild tobacco in the valley; David Thompson entered the area in 1808 and named it Tobacco Meadows. The Deweyville Townsite Company incorporated the community on April 28, 1903, naming it Deweyville in honor of Amine Dewey. The Great Northern Railway arrived in 1904 and rerouted its main line through the Tobacco Valley; the town was renamed Eureka. The Owens & Hurst Lumber Company mill (formerly Kennedy-Stevens) employed over 200 workers at its peak before closing in May 2005. President Harry S. Truman delivered a speech in Eureka on October 1, 1952, during his whistle-stop campaign. The Eureka Community Hall (1942, WPA-funded) is on the National Register of Historic Places. The Tobacco Valley Historical Village preserves over ten relocated structures from the 1880s–1920s. The Pacific Northwest National Scenic Trail passes through Eureka. (Source: Grokipedia)
+The Kootenai Tribe cultivated wild tobacco in the valley; David Thompson entered the area in 1808 and named it Tobacco Meadows. The Deweyville Townsite Company incorporated the community on April 28, 1903, naming it Deweyville in honor of Amine Dewey. The Great Northern Railway arrived in 1904 and rerouted its main line through the Tobacco Valley; the town was renamed Eureka. The Owens & Hurst Lumber Company mill (formerly Kennedy-Stevens) employed over 200 workers at its peak before closing in May 2005. President Harry S. Truman delivered a speech in Eureka on October 1, 1952, during his whistle-stop campaign. The Eureka Community Hall (1942, WPA-funded) is on the National Register of Historic Places. The Tobacco Valley Historical Village preserves over ten relocated structures from the 1880s–1920s. The Pacific Northwest National Scenic Trail passes through Eureka.
 
 ---
 
@@ -65,14 +65,3 @@ Eureka is conveniently located along Highway 93, which runs through town as Dewe
 
 Eureka offers a diverse range of accommodations that cater to every type of traveler seeking to experience Montana's natural splendor. The Riverstone Family Lodge provides comfortable rooms in a rustic setting, perfect for families exploring the area. For those seeking luxury amid wilderness, the Wilderness Club Resort combines upscale lodging with championship golf and recreational activities. Visitors preferring a more intimate connection with nature can choose the Homestead Cabin Resort in nearby Fortine, featuring charming cabins nestled among towering pines. RV enthusiasts have excellent options at Blue Mountains RV Park and the RV Resort at Indian Springs Montana, both offering full hookups and amenities in scenic settings. The Suites at Indian Springs Montana provide another upscale option with easy access to golf and events. Whether you're planning a romantic getaway, family vacation, or outdoor adventure, Eureka's accommodations combine Montana hospitality with the perfect base for exploring the spectacular Tobacco Valley and surrounding wilderness areas.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Eureka,_Montana), U.S. Census Bureau*
-
----
-
-## Plan Your Visit
-
-Ready to explore Eureka? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.

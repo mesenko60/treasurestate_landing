@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~515 (Source: U.S. Census Bureau estimates)
+- **Population:** ~515
 - **County:** Cascade County
 - **Elevation:** 3,500 ft (1,067 m)
 - **Known For:** Historic coal mining heritage, Sluice Boxes State Park, Harvest Moon Brewing Company, and the iconic Belt Butte.
@@ -38,3 +38,4 @@ Lodging directly in Belt is quite limited, as the town retains a quiet, resident
 - **Vacation Rentals:** There are a few historic homes and modern cabins available on platforms like Airbnb and VRBO within the town and along Belt Creek.
 - **Great Falls (20 miles Northwest):** The vast majority of visitors explore Belt as a day trip while staying in Great Falls, which offers dozens of major hotel chains, independent motels, and RV parks.
 - **Camping:** For outdoor enthusiasts, there are camping options available in the nearby Little Belt Mountains and the Lewis and Clark National Forest.
+

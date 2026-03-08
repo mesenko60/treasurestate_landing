@@ -12,7 +12,7 @@ Nestled at the edge of the majestic Glacier National Park and cradled by the rug
 - **Elevation:** Approximately 3,033 ft (924 m)
 - **Known For:** World-class skiing at Whitefish Mountain Resort, gateway to Glacier National Park, year-round outdoor recreation, vibrant downtown.
 - **Nearby Landmarks:** Glacier National Park, Flathead Lake, Whitefish Lake, Big Mountain.
-- **Fun Fact:** Whitefish was originally known as "Stumptown" due to the vast amount of timber that had to be cleared to build the town and the railroad. The town was named for the plentiful whitefish (Coregonus clupeaformis) observed by trappers in Whitefish Lake in the mid-1850s. Big Mountain Ski Area opened December 14, 1947, founded by local entrepreneurs Ed Schenck and George Prentice as a community-supported public company. (Source: Grokipedia)
+- **Fun Fact:** Whitefish was originally known as "Stumptown" due to the vast amount of timber that had to be cleared to build the town and the railroad. The town was named for the plentiful whitefish (Coregonus clupeaformis) observed by trappers in Whitefish Lake in the mid-1850s. Big Mountain Ski Area opened December 14, 1947, founded by local entrepreneurs Ed Schenck and George Prentice as a community-supported public company.
 
 ---
 
@@ -20,9 +20,9 @@ Nestled at the edge of the majestic Glacier National Park and cradled by the rug
 
 Whitefish, Montana, has been associated with a variety of notable individuals across different fields, contributing to its cultural fabric and recognition. While it may not be a sprawling metropolis churning out global superstars daily, its charm and unique environment have attracted or produced several figures of note.
 
-- **Constance Towers** – Accomplished actress and singer born in Whitefish, known for her work in film, television, and on stage with a career spanning decades. (Source: Grokipedia)
-- **Maggie Voisin** – Professional freestyle skier from Whitefish, who has represented the United States in multiple Winter Olympics and X Games, achieving significant success. (Source: Grokipedia)
-- **Brian Schweitzer** – Former Governor of Montana, who has resided in Whitefish and whose political career brought statewide and national attention. (Source: Grokipedia)
+- **Constance Towers** – Accomplished actress and singer born in Whitefish, known for her work in film, television, and on stage with a career spanning decades.
+- **Maggie Voisin** – Professional freestyle skier from Whitefish, who has represented the United States in multiple Winter Olympics and X Games, achieving significant success.
+- **Brian Schweitzer** – Former Governor of Montana, who has resided in Whitefish and whose political career brought statewide and national attention.
 - **David Graham** – Professional golfer and winner of two major championships (1979 PGA Championship, 1981 U.S. Open), associated with Whitefish.
 - **Deric McCabe** – Young actor born in Whitefish, known for his roles in films like "A Wrinkle in Time."
 - **Dorothy M. Johnson** – Celebrated author of Western stories, including "The Man Who Shot Liberty Valance" and "A Man Called Horse," had connections to Whitefish.
@@ -47,9 +47,9 @@ Whitefish, Montana, boasts a vibrant and dynamic tourism-based economy that thri
 
 ## History & Heritage
 
-The history and heritage of Whitefish, Montana, are deeply intertwined with its development as a community-driven recreation hub and its connection to the railway. Permanent non-Native settlement began in 1883 when homesteader John Morton erected the first cabin at the lake's outlet. Fred B. Grinnell acquired over 167 acres in 1902, surveyed and platted the townsite, and the Whitefish Town-site Company incorporated in July 1903. The Great Northern Railway rerouted its mainline south of Whitefish Lake in 1901; the first passenger rail cars reached the site in October 1904. Previously known as Stumptown, the settlement was renamed Whitefish when the railroad established a division point there, shifting operations from Kalispell. The town was formally incorporated April 18, 1905. (Source: Grokipedia)
+The history and heritage of Whitefish, Montana, are deeply intertwined with its development as a community-driven recreation hub and its connection to the railway. Permanent non-Native settlement began in 1883 when homesteader John Morton erected the first cabin at the lake's outlet. Fred B. Grinnell acquired over 167 acres in 1902, surveyed and platted the townsite, and the Whitefish Town-site Company incorporated in July 1903. The Great Northern Railway rerouted its mainline south of Whitefish Lake in 1901; the first passenger rail cars reached the site in October 1904. Previously known as Stumptown, the settlement was renamed Whitefish when the railroad established a division point there, shifting operations from Kalispell. The town was formally incorporated April 18, 1905.
 
-The historic Whitefish Depot, built in 1927 and still serving Amtrak passengers today, stands as a prominent landmark. Unlike many resort towns established by outside investors, Whitefish's growth was spearheaded by its own residents. Local entrepreneurs Ed Schenck and George Prentice opened Big Mountain Ski Area on December 14, 1947, with rope tows and a T-bar; lift tickets cost $2. Chair 1 was installed by 1960, and the resort has since expanded to over 3,000 acres. By the 2020s, tourism supported 43% of local jobs; Glacier National Park drew over 3 million annual visitors pre-pandemic. Whitefish Legacy Partners has secured over 1,500 acres in the Beaver Lakes area for public recreation and conservation since 2014. (Source: Grokipedia)
+The historic Whitefish Depot, built in 1927 and still serving Amtrak passengers today, stands as a prominent landmark. Unlike many resort towns established by outside investors, Whitefish's growth was spearheaded by its own residents. Local entrepreneurs Ed Schenck and George Prentice opened Big Mountain Ski Area on December 14, 1947, with rope tows and a T-bar; lift tickets cost $2. Chair 1 was installed by 1960, and the resort has since expanded to over 3,000 acres. By the 2020s, tourism supported 43% of local jobs; Glacier National Park drew over 3 million annual visitors pre-pandemic. Whitefish Legacy Partners has secured over 1,500 acres in the Beaver Lakes area for public recreation and conservation since 2014.
 
 ---
 
@@ -76,9 +76,4 @@ Whitefish offers a diverse array of accommodation options to suit various prefer
 ## Plan Your Visit
 
 Ready to explore Whitefish? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Be sure to check local event calendars and book accommodations and popular tours in advance, especially during peak seasons.
-
----
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Whitefish,_Montana), Explore Whitefish (explorewhitefish.com), Whitefish Chamber of Commerce, U.S. Census Bureau, City of Whitefish*
 

@@ -12,16 +12,16 @@ Fort Benton beckons the adventurous spirit with its dramatic riverside setting a
 - **Elevation:** 2,651 ft (808 m)
 - **Known For:** Being the "Birthplace of Montana" and the "World's Innermost Port"
 - **Nearby Landmarks:** Upper Missouri River Breaks National Monument, Lewis & Clark Trail, Highwood Mountains
-- **Fun Fact:** Fort Benton is the oldest continuously occupied settlement in Montana (est. 1846). Forbes named it one of the fifteen prettiest towns in America. Renamed Christmas Day 1850 in honor of Senator Thomas Hart Benton. First steamboats arrived July 2, 1860; 70 arrivals in 1866–1867 alone. Front Street between 15th and 16th was called the "bloodiest block in the West." Fort Benton Historic District became a National Historic Landmark July 4, 1961. (Source: Grokipedia)
+- **Fun Fact:** Fort Benton is the oldest continuously occupied settlement in Montana (est. 1846). Forbes named it one of the fifteen prettiest towns in America. Renamed Christmas Day 1850 in honor of Senator Thomas Hart Benton. First steamboats arrived July 2, 1860; 70 arrivals in 1866–1867 alone. Front Street between 15th and 16th was called the "bloodiest block in the West." Fort Benton Historic District became a National Historic Landmark July 4, 1961.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Alexander Culbertson** – American Fur Company agent who established Fort Benton in 1846; married Natawista (Blood Blackfeet); oversaw relocation from Fort Lewis. (Source: Grokipedia)
-- **Denise Curry** – Olympic gold medalist and basketball Hall of Famer, born in Fort Benton. (Source: Grokipedia)
-- **U.S. Grant Sharp, Jr.** – Admiral who commanded U.S. Naval forces during the early years of the Vietnam War. (Source: Grokipedia)
-- **Shep the Dog** – Fort Benton's famous loyal dog who waited at the train station for his deceased owner for over five years, becoming a national symbol of loyalty. (Source: Grokipedia)
+- **Alexander Culbertson** – American Fur Company agent who established Fort Benton in 1846; married Natawista (Blood Blackfeet); oversaw relocation from Fort Lewis.
+- **Denise Curry** – Olympic gold medalist and basketball Hall of Famer, born in Fort Benton.
+- **U.S. Grant Sharp, Jr.** – Admiral who commanded U.S. Naval forces during the early years of the Vietnam War.
+- **Shep the Dog** – Fort Benton's famous loyal dog who waited at the train station for his deceased owner for over five years, becoming a national symbol of loyalty.
 
 ---
 
@@ -42,7 +42,7 @@ Fort Benton's economy stands firmly rooted in its agricultural heritage while em
 
 ## History & Heritage
 
-Fort Benton originated as an American Fur Company trading post in 1846; Alexander Culbertson relocated from Fort Lewis (18 miles upstream) after Blackfeet leaders requested a site closer to hunting grounds. Adobe construction completed by 1860. Renamed Fort Benton Christmas Day 1850 for Senator Thomas Hart Benton. First steamboats (Chippewa, Key West) arrived July 2, 1860; 23 vessels by 1865; ~70 arrivals in 1866–1867. Served as head of navigation for Montana gold rushes; eastern terminus of the 642-mile Mullan Road. Front Street earned infamy as the "bloodiest block in the West." Montana Central Railway arrived September 1887; population fell from 1,624 (1880) to 624 (1890). Fort Benton Historic District designated National Historic Landmark July 4, 1961. (Source: Grokipedia)
+Fort Benton originated as an American Fur Company trading post in 1846; Alexander Culbertson relocated from Fort Lewis (18 miles upstream) after Blackfeet leaders requested a site closer to hunting grounds. Adobe construction completed by 1860. Renamed Fort Benton Christmas Day 1850 for Senator Thomas Hart Benton. First steamboats (Chippewa, Key West) arrived July 2, 1860; 23 vessels by 1865; ~70 arrivals in 1866–1867. Served as head of navigation for Montana gold rushes; eastern terminus of the 642-mile Mullan Road. Front Street earned infamy as the "bloodiest block in the West." Montana Central Railway arrived September 1887; population fell from 1,624 (1880) to 624 (1890). Fort Benton Historic District designated National Historic Landmark July 4, 1961.
 
 ---
 
@@ -70,8 +70,3 @@ Fort Benton offers accommodations that blend historic charm with modern comfort,
 
 Ready to explore Fort Benton? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Fort_Benton,_Montana), U.S. Census Bureau*

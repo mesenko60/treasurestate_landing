@@ -72,10 +72,3 @@ Polson offers a range of lodging options to suit various preferences and budgets
 
 Ready to explore Polson? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From the sparkling waters of Flathead Lake to the majestic Mission Mountains, Polson offers an authentic Montana experience that will leave you with lasting memories.
 
----
-## References
-
-- Polson Chamber of Commerce (www.polsonchamber.com)
-- Visit Montana (www.visitmt.com)
-- Grokipedia (grokipedia.com/page/Polson,_Montana & grokipedia.com/page/Category:People_from_Polson,_Montana)
-- City of Polson (www.cityofpolson.com)

@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~136 (Source: U.S. Census Bureau estimates)
+- **Population:** ~136
 - **County:** Yellowstone County
 - **Elevation:** 3,888 ft (1,185 m)
 - **Known For:** Proximity to Hailstone National Wildlife Refuge and serving as a quiet agricultural outpost along Highway 3 near Billings.
@@ -31,3 +31,4 @@ The local economy of Broadview is entirely driven by agriculture, particularly d
 Because Broadview is essentially a rural residential and agricultural community, it does not have traditional lodging facilities like hotels or motels.
 - **Billings (31 miles Southeast):** The overwhelming majority of visitors exploring the area base themselves in Billings, which offers dozens of accommodation options ranging from luxury downtown hotels to budget-friendly motels and extensive RV parks.
 - **Roundup (50 miles Northeast):** For those heading further into central Montana, Roundup offers a few small motels and local lodging options.
+

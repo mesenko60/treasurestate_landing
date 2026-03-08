@@ -34,3 +34,4 @@ Because Harlem is a smaller, residential community, traditional commercial lodgi
 - **Local Motels:** There may be small, independent motels in or near town offering basic accommodations for highway travelers and hunters.
 - **Nearby Cities:** Many visitors choose to stay in larger regional hubs a short drive away, utilizing Harlem as a scenic day-trip destination.
 - **Camping:** For outdoor enthusiasts, nearby public lands often provide beautiful, rustic camping options.
+

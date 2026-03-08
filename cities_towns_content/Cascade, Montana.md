@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~572 (Source: U.S. Census Bureau estimates)
+- **Population:** ~572
 - **County:** Cascade County
 - **Elevation:** 3,392 ft (1,034 m)
 - **Known For:** World-class fly fishing and floating on the Missouri River, the stunning Crown Butte Preserve, and being a quintessential western ranching community.
@@ -34,3 +34,4 @@ For visitors exploring the Missouri River, Cascade offers excellent, specialized
 - **Local Motels & Lodges:** Accommodations like the Bobkat Mountain Motel and On DeMark Lodge provide comfortable, rustic stays directly in town.
 - **Riverfront Cabins and Rentals:** There are numerous private cabins, vacation homes, and specialized fishing lodges available for rent along the Missouri River corridor surrounding Cascade.
 - **Camping:** There are several state fishing access sites and RV parks in the immediate area that offer tent camping and full RV hookups for visitors wanting to sleep under the Big Sky.
+

@@ -18,10 +18,10 @@ Dare to discover Helena, Montana – a city forged in the heart of the Gold Rush
 
 ## Notable People & Pop Culture
 
-- **Gary Cooper** – Legendary American actor, born in Helena; won two Academy Awards; starred in iconic Westerns. (Source: Grokipedia, IMDb)
-- **Myrna Loy** – Acclaimed actress of the Golden Age of Hollywood, born in Helena; celebrated for "The Thin Man" series. The Myrna Loy Center in Helena honors her legacy. (Source: Grokipedia, IMDb)
-- **Wilmot J. Collins** – Helena's mayor since 2017; former refugee from Liberia who became Montana's first Black mayor. (Source: Grokipedia)
-- **"The Untouchables" (1987)** – Parts filmed in Helena, utilizing historic architecture to represent 1930s Chicago. (Source: Grokipedia, IMDb)
+- **Gary Cooper** – Legendary American actor, born in Helena; won two Academy Awards; starred in iconic Westerns.
+- **Myrna Loy** – Acclaimed actress of the Golden Age of Hollywood, born in Helena; celebrated for "The Thin Man" series. The Myrna Loy Center in Helena honors her legacy.
+- **Wilmot J. Collins** – Helena's mayor since 2017; former refugee from Liberia who became Montana's first Black mayor.
+- **"The Untouchables" (1987)** – Parts filmed in Helena, utilizing historic architecture to represent 1930s Chicago.
 
 ---
 
@@ -42,7 +42,7 @@ Helena's economy is a resilient blend of government, healthcare, small business,
 
 ## History & Heritage
 
-Helena's saga is a thrilling chronicle of gold, grit, and glory. On July 14, 1864, four prospectors—John Cowan, John Crab, D.J. Miller, and Bob Stanley—discovered rich placer gold in the Prickly Pear Valley, naming the site Last Chance Gulch. By October 30, 1864, Helena was formally established. Last Chance Gulch yielded approximately $19 million in gold by 1868. Helena became territorial capital in 1875; Montana achieved statehood in 1889. In the 1894 runoff, Helena secured permanent capital status over Anaconda by roughly 2,000 votes. The Montana State Capitol was dedicated in 1902. The 1935 Helena earthquake sequence (magnitude 6.3, October 18) caused two deaths and over $4 million in damage; reconstruction was aided by New Deal programs. Carroll College (1909) and Helena College (1939) anchor higher education. Today Helena hosts the Montana Legislature, state agencies, and the Montana Historical Society's extensive archives. (Source: Grokipedia)
+Helena's saga is a thrilling chronicle of gold, grit, and glory. On July 14, 1864, four prospectors—John Cowan, John Crab, D.J. Miller, and Bob Stanley—discovered rich placer gold in the Prickly Pear Valley, naming the site Last Chance Gulch. By October 30, 1864, Helena was formally established. Last Chance Gulch yielded approximately $19 million in gold by 1868. Helena became territorial capital in 1875; Montana achieved statehood in 1889. In the 1894 runoff, Helena secured permanent capital status over Anaconda by roughly 2,000 votes. The Montana State Capitol was dedicated in 1902. The 1935 Helena earthquake sequence (magnitude 6.3, October 18) caused two deaths and over $4 million in damage; reconstruction was aided by New Deal programs. Carroll College (1909) and Helena College (1939) anchor higher education. Today Helena hosts the Montana Legislature, state agencies, and the Montana Historical Society's extensive archives.
 
 ---
 
@@ -69,3 +69,4 @@ Whether you seek the rustic charm of a historic inn, the comfort of a modern hot
 ## Plan Your Visit
 
 Ready to explore Helena? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+

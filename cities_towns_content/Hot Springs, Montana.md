@@ -71,12 +71,3 @@ Accommodation in Hot Springs centers around its famous mineral waters, offering 
 
 Ready to explore Hot Springs? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Sources
-
-- Town of Hot Springs, Montana Official Website: https://townofhotspringsmt.com/
-- Hot Springs Montana Chamber of Commerce: https://www.hotspringsmtchamber.org/
-- Grokipedia - Hot Springs, Montana: https://grokipedia.com/page/Hot_Springs,_Montana
-- Various search results for elevation and specific facts.
-

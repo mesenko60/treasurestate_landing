@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~201 (Source: U.S. Census Bureau estimates)
+- **Population:** ~201
 - **County:** Petroleum County (County Seat)
 - **Elevation:** 2,972 ft (906 m)
 - **Known For:** Being the gateway to the remote Missouri Breaks, excellent elk hunting, and offering some of the darkest stargazing skies in the lower 48 states.
@@ -35,3 +35,4 @@ Winnett provides essential, friendly lodging tailored directly to hunters, ranch
 - **Local Motels & B&Bs:** The town offers a few independent, locally-owned motels and small bed-and-breakfasts that provide a cozy, authentic western stay.
 - **RV Parks and Camping:** There are RV sites available in town, as well as primitive camping opportunities at nearby reservoirs and vast stretches of BLM public land.
 - **Vacation Rentals:** Several homes and cabins in the area are available as short-term rentals, particularly popular during the fall hunting season.
+

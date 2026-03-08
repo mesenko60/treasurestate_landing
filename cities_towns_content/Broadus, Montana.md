@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~470 (Source: U.S. Census Bureau estimates)
+- **Population:** ~470
 - **County:** Powder River County (County Seat)
 - **Elevation:** 3,031 ft (924 m)
 - **Known For:** Being the "Capital of the Powder River," situated on the historic Warrior Trail (Highway 212), and its rich Old West, ranching, and Native American history.
@@ -35,3 +35,4 @@ The economy of Broadus and Powder River County is quintessentially Montanan, dri
 Given its location on a long stretch of highway between major destinations, Broadus provides essential lodging for travelers:
 - **Local Motels:** There are a few independent, locally-owned motels in town (such as the Broadus Motel and others) that offer clean, basic accommodations for road-trippers and hunters.
 - **Camping and RV Parks:** There are small, private RV parks in town, as well as opportunities for dispersed camping on nearby public lands (BLM and National Forest) for those equipped for self-sufficient outdoor stays.
+

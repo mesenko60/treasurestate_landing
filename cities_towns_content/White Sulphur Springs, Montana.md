@@ -78,8 +78,3 @@ Visitors looking for a true Montana ranch experience can explore several guest r
 
 Ready to explore White Sulphur Springs? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're seeking the healing powers of the mineral springs, the thrill of outdoor adventures, or simply a genuine slice of Montana's rich heritage, White Sulphur Springs offers an authentic experience that will call you back season after season.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/White_Sulphur_Springs,_Montana), U.S. Census Bureau*

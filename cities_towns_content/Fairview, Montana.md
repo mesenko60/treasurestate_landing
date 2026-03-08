@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~832 (Source: U.S. Census Bureau estimates)
+- **Population:** ~832
 - **County:** Richland County
 - **Elevation:** 1,913 ft (583 m)
 - **Known For:** Being the easternmost town in Montana, straddling the North Dakota border, agriculture (sugar beets), and the historic Fairview Bridge.
@@ -33,3 +33,4 @@ Fairview's economy is driven by two massive regional industries: agriculture and
 While Fairview itself is small, it supports the regional agricultural and oilfield workforce:
 - **Local Motels & RV Parks:** The town has a few small motels and several RV parks designed to accommodate seasonal workers, hunters, and travelers.
 - **Sidney (12 miles Southwest):** The vast majority of visitors and business travelers stay in nearby Sidney, which offers a wide selection of major hotel chains (like the Best Western Golden Prairie Inn & Suites), dining options (including local breweries like 1035 Brewing), and comprehensive amenities.
+

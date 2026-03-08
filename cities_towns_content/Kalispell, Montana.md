@@ -16,26 +16,26 @@ Source: https://discoverkalispell.com/
 - **Elevation:** Approximately 2,956 ft
 - **Known For:** Gateway to Glacier National Park, outdoor recreation, vibrant downtown, and stunning natural scenery.
 - **Nearby Landmarks:** Glacier National Park, Flathead Lake, Whitefish Mountain Resort, Blacktail Mountain Ski Area, Hungry Horse Dam.
-- **Fun Fact:** Kalispell is named after the Kalispel people; the name means "flat land above the lake." The Great Northern Railway's first steam engine arrived January 1, 1892; ~3,500 people gathered to celebrate. Montana's fastest-growing city (~27% growth 2020–2024). (Source: Grokipedia)
+- **Fun Fact:** Kalispell is named after the Kalispel people; the name means "flat land above the lake." The Great Northern Railway's first steam engine arrived January 1, 1892; ~3,500 people gathered to celebrate. Montana's fastest-growing city (~27% growth 2020–2024).
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Charles E. Conrad** – Businessman who selected the townsite in 1891; built the Conrad Mansion (1895), now a museum. (Source: Grokipedia)
-- **Brad Bird** – Oscar-winning animator/director (*The Incredibles*, *Ratatouille*), born in Kalispell. (Source: Grokipedia, IMDb)
-- **Lily Gladstone** – Critically acclaimed actress (*Killers of the Flower Moon*), raised in the area. (Source: Grokipedia)
-- **Michelle Williams** – Award-winning actress with ties to the region. (Source: Grokipedia)
-- **Heaven's Gate (1980)** – Epic Western filmed in and around Kalispell. (Source: Grokipedia, IMDb)
+- **Charles E. Conrad** – Businessman who selected the townsite in 1891; built the Conrad Mansion (1895), now a museum.
+- **Brad Bird** – Oscar-winning animator/director (*The Incredibles*, *Ratatouille*), born in Kalispell.
+- **Lily Gladstone** – Critically acclaimed actress (*Killers of the Flower Moon*), raised in the area.
+- **Michelle Williams** – Award-winning actress with ties to the region.
+- **Heaven's Gate (1980)** – Epic Western filmed in and around Kalispell.
 
 ---
 
 ## Top Things to Do in Kalispell
 
-- **Explore Glacier National Park:** A short drive from Kalispell, this iconic park offers unparalleled natural beauty. Hike scenic trails, spot wildlife, and marvel at glaciers and pristine lakes. An adventurer's paradise! (Source: discoverkalispell.com)
-- **Discover Flathead Lake:** The largest freshwater lake west of the Mississippi. Enjoy boating, fishing, swimming, or simply relax by its shores. Don't miss Wild Horse Island, home to wild horses and bighorn sheep. (Source: discoverkalispell.com, visitmt.com)
-- **Visit the Conrad Mansion Museum:** Step back in time at this beautifully preserved Victorian mansion, a testament to the city's rich history. Learn about Kalispell's founding family and the early days of the city. (Source: ConradMansion.com, discoverkalispell.com)
-- **Wander through Historic Downtown Kalispell:** Experience the charm of Kalispell with its unique local shops, art galleries, breweries, and diverse restaurants. A perfect way to spend an afternoon or evening soaking in the local culture. (Source: discoverkalispell.com)
+- **Explore Glacier National Park:** A short drive from Kalispell, this iconic park offers unparalleled natural beauty. Hike scenic trails, spot wildlife, and marvel at glaciers and pristine lakes. An adventurer's paradise!
+- **Discover Flathead Lake:** The largest freshwater lake west of the Mississippi. Enjoy boating, fishing, swimming, or simply relax by its shores. Don't miss Wild Horse Island, home to wild horses and bighorn sheep.
+- **Visit the Conrad Mansion Museum:** Step back in time at this beautifully preserved Victorian mansion, a testament to the city's rich history. Learn about Kalispell's founding family and the early days of the city.
+- **Wander through Historic Downtown Kalispell:** Experience the charm of Kalispell with its unique local shops, art galleries, breweries, and diverse restaurants. A perfect way to spend an afternoon or evening soaking in the local culture.
 
 ---
 
@@ -127,13 +127,3 @@ These are just a few examples, and many other hotels, motels, bed & breakfasts, 
 
 Ready to explore Kalispell? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Sources
-
-- https://discoverkalispell.com/
-- https://discoverkalispell.com/about-kalispell/history/
-- https://grokipedia.com/page/Category:People_from_Kalispell,_Montana
-- https://grokipedia.com/page/Kalispell,_Montana
-- https://www.census.gov/quickfacts/fact/table/kalispellcitymontana/PST045223
-- https://www.famousbirthdays.com/city/kalispell-mt.html

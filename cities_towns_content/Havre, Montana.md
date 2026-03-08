@@ -13,17 +13,17 @@ Nestled along the iconic U.S. Highway 2, known as the Hi-Line, Havre is a hidden
 - **Elevation:** 2,493 ft
 - **Known For:** Underground city tour, railroad history, Native American heritage
 - **Nearby Landmarks:** Bears Paw Mountains, Beaver Creek Park, Fort Assinniboine
-- **Fun Fact:** Originally named "Bullhook Bottoms" for the butte and creek; renamed Havre in 1891 to honor Le Havre, France—birthplace of settlers Simon Pepin and Gus Descelles. A January 1904 fire destroyed ~60 businesses; merchants operated from basements during rebuild, creating "Havre Beneath the Streets." A June 1938 cloudburst flood claimed 10 lives. (Source: Grokipedia)
+- **Fun Fact:** Originally named "Bullhook Bottoms" for the butte and creek; renamed Havre in 1891 to honor Le Havre, France—birthplace of settlers Simon Pepin and Gus Descelles. A January 1904 fire destroyed ~60 businesses; merchants operated from basements during rebuild, creating "Havre Beneath the Streets." A June 1938 cloudburst flood claimed 10 lives.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Simon Pepin** – "Father of Havre"; French-Canadian homesteader whose family ties influenced the 1893 vote to rename Bullhook Bottoms to Havre. (Source: Grokipedia)
-- **Jeff Ament** – Pearl Jam bassist; grew up in Big Sandy (nearby). (Source: Grokipedia)
-- **Jon Tester** – U.S. Senator from Montana; organic farmer from Big Sandy area. (Source: Grokipedia)
-- **Brian Schweitzer** – Former Governor of Montana (2005–2013). (Source: Grokipedia)
-- **Marc Mariani** – Former NFL Pro Bowl kick returner. (Source: Grokipedia)
+- **Simon Pepin** – "Father of Havre"; French-Canadian homesteader whose family ties influenced the 1893 vote to rename Bullhook Bottoms to Havre.
+- **Jeff Ament** – Pearl Jam bassist; grew up in Big Sandy (nearby).
+- **Jon Tester** – U.S. Senator from Montana; organic farmer from Big Sandy area.
+- **Brian Schweitzer** – Former Governor of Montana (2005–2013).
+- **Marc Mariani** – Former NFL Pro Bowl kick returner.
 
 ---
 
@@ -44,7 +44,7 @@ Havre's economy is remarkably diverse and stable, making it less susceptible to 
 
 ## History & Heritage
 
-Squatters settled near Fort Assinniboine (1879) in the lowlands called Bullhook Bottoms. James J. Hill's Great Northern Railway reached the area in October 1890; the site became a division point. Renamed Havre in 1891 following Marias Pass completion. Incorporated September 5, 1893. A January 14, 1904 fire—reportedly started by intoxicated individuals—destroyed ~4 blocks and ~60 businesses; merchants operated from basements during winter rebuild, creating "Havre Beneath the Streets." A June 22, 1938 cloudburst flood from the Bear Paws claimed 10 lives. Northern Montana College (now MSU-Northern) opened 1929. Designated Hill County seat in 1912. (Source: Grokipedia)
+Squatters settled near Fort Assinniboine (1879) in the lowlands called Bullhook Bottoms. James J. Hill's Great Northern Railway reached the area in October 1890; the site became a division point. Renamed Havre in 1891 following Marias Pass completion. Incorporated September 5, 1893. A January 14, 1904 fire—reportedly started by intoxicated individuals—destroyed ~4 blocks and ~60 businesses; merchants operated from basements during winter rebuild, creating "Havre Beneath the Streets." A June 22, 1938 cloudburst flood from the Bear Paws claimed 10 lives. Northern Montana College (now MSU-Northern) opened 1929. Designated Hill County seat in 1912.
 
 ---
 
@@ -72,8 +72,3 @@ Whether you're looking for the comfort of a hotel, the charm of a local motel, o
 
 Ready to explore Havre? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Havre,_Montana), U.S. Census Bureau*

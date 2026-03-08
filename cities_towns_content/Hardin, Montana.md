@@ -13,15 +13,15 @@ Hardin is the county seat of Big Horn County in south-central Montana, with a po
 - **Elevation:** 2,902 ft (885 m)
 - **Known For:** Little Bighorn Battlefield NM, Crow Reservation adjacency, Big Horn County Museum, agriculture
 - **Nearby Landmarks:** Little Bighorn Battlefield (15 mi), Crow Agency, Yellowtail Dam, Bighorn River
-- **Fun Fact:** Hardin was named for Samuel H. Hardin, a Colorado cattleman. The town was briefly proclaimed Montana's state capital for a day on December 8, 1983. The Two Rivers Regional Detention Facility (464 beds) opened 2007 but closed by 2016 after failed federal contracts. (Source: Grokipedia)
+- **Fun Fact:** Hardin was named for Samuel H. Hardin, a Colorado cattleman. The town was briefly proclaimed Montana's state capital for a day on December 8, 1983. The Two Rivers Regional Detention Facility (464 beds) opened 2007 but closed by 2016 after failed federal contracts.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Kroy Biermann** – Former NFL defensive end (Atlanta Falcons, 2008–2016); born in Hardin. (Source: Grokipedia)
-- **Kendall Cross** – Olympic gold medalist in freestyle wrestling (57 kg, 1996 Atlanta Games); born in Hardin. (Source: Grokipedia)
-- **Bill Christiansen** – 25th Lieutenant Governor of Montana (1973–1977); relocated to Hardin in 1947, co-owned Hardin Auto Company. (Source: Grokipedia)
+- **Kroy Biermann** – Former NFL defensive end (Atlanta Falcons, 2008–2016); born in Hardin.
+- **Kendall Cross** – Olympic gold medalist in freestyle wrestling (57 kg, 1996 Atlanta Games); born in Hardin.
+- **Bill Christiansen** – 25th Lieutenant Governor of Montana (1973–1977); relocated to Hardin in 1947, co-owned Hardin Auto Company.
 
 ---
 
@@ -37,13 +37,13 @@ Hardin is the county seat of Big Horn County in south-central Montana, with a po
 
 ## Local Industry & Economy
 
-Agriculture: wheat, barley, sugar beets, hay; beef and sheep ranching. Bighorn River irrigates ~65,000 acres. Crow tribal coal mining (Absaloka Mine) provides regional employment. Big Horn County poverty rate 23.6%. Median household income ~$56,680. Two Rivers jail and Marathon bitcoin mining (2022) failed to sustain diversification. (Source: Grokipedia)
+Agriculture: wheat, barley, sugar beets, hay; beef and sheep ranching. Bighorn River irrigates ~65,000 acres. Crow tribal coal mining (Absaloka Mine) provides regional employment. Big Horn County poverty rate 23.6%. Median household income ~$56,680. Two Rivers jail and Marathon bitcoin mining (2022) failed to sustain diversification.
 
 ---
 
 ## History & Heritage
 
-Cattle ranchers arrived 1880s–1890s; 1885 agreement granted ranchers ~3M acres on Crow land. Crow ceded surplus lands 1904; opened to homesteading 1906. Lincoln Land Company platted Hardin 1907; CB&Q Railroad arrived same year. Incorporated Jan 3, 1911. Big Horn County formed 1913; Hardin designated seat. First depot assembled from Fort Custer sections. Population 1,312 by 1920. Two Rivers jail built 2007; BIA contract 2014–2015; closed 2016; debt exceeded $40M. (Source: Grokipedia)
+Cattle ranchers arrived 1880s–1890s; 1885 agreement granted ranchers ~3M acres on Crow land. Crow ceded surplus lands 1904; opened to homesteading 1906. Lincoln Land Company platted Hardin 1907; CB&Q Railroad arrived same year. Incorporated Jan 3, 1911. Big Horn County formed 1913; Hardin designated seat. First depot assembled from Fort Custer sections. Population 1,312 by 1920. Two Rivers jail built 2007; BIA contract 2014–2015; closed 2016; debt exceeded $40M.
 
 ---
 
@@ -64,8 +64,3 @@ Motels and limited lodging; many visitors stay in Billings. Camping at nearby pu
 
 Ready to explore Hardin? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From the Little Bighorn Battlefield to the Big Horn County Museum and Big Horn Days, Hardin offers a genuine Montana experience at the crossroads of rivers and history.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Hardin,_Montana), U.S. Census Bureau*

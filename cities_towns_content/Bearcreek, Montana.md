@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~107 (Source: U.S. Census Bureau estimates)
+- **Population:** ~107
 - **County:** Carbon County
 - **Elevation:** 4,826 ft (1,471 m)
 - **Known For:** Historic coal mining, the Smith Mine disaster, Bear Creek Saloon & Steakhouse, and the famous Bear Creek Downs Pig Races.
@@ -34,3 +34,4 @@ Today, Bearcreek's economy is very small and heavily reliant on regional tourism
 Because Bearcreek is a very small community, there are generally no major hotels within the town limits. 
 - **Red Lodge (7 miles West):** The vast majority of visitors to the Bearcreek area stay in Red Lodge, which boasts a wide array of accommodations including historic hotels (like The Pollard), modern motels, bed and breakfasts, and numerous vacation rentals.
 - **Camping:** There are several U.S. Forest Service campgrounds and private RV parks in the surrounding Beartooth Mountains near Red Lodge.
+

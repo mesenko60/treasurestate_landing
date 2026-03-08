@@ -69,8 +69,3 @@ Whitehall and its surrounding areas offer numerous activities for outdoor enthus
 
 10. **Downtown Exploration** - Wander through Whitehall's downtown area to discover local shops, restaurants, and the town's historic architecture.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Whitehall,_Montana), U.S. Census Bureau, Whitehall Chamber of Commerce, Explore Whitehall*

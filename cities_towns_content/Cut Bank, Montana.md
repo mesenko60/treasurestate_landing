@@ -13,16 +13,16 @@ Perched at the edge of adventure, Cut Bank stands as a rugged outpost where the 
 - **Elevation:** 3,773 ft
 - **Known For:** Gateway to Glacier National Park, extreme temperature fluctuations, oil industry heritage, and proximity to Blackfeet Indian Reservation
 - **Nearby Landmarks:** Glacier National Park, Camp Disappointment, Meriwether Lewis Fight Site, Cut Bank Creek Gorge
-- **Fun Fact:** Cut Bank has claimed the title of "Coldest Spot in the Nation" and is frequently one of the coldest locations in the lower 48 states during winter arctic air invasions. A record low of -47°F (-44°C) was set February 15, 1936. A 27-foot-tall concrete penguin statue erected in 1989 promotes the town as the coldest spot. Meriwether Lewis camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806. Camp Disappointment, the northernmost point reached by Lewis and Clark, is a National Historic Landmark about 12 miles northeast. (Source: Grokipedia)
+- **Fun Fact:** Cut Bank has claimed the title of "Coldest Spot in the Nation" and is frequently one of the coldest locations in the lower 48 states during winter arctic air invasions. A record low of -47°F (-44°C) was set February 15, 1936. A 27-foot-tall concrete penguin statue erected in 1989 promotes the town as the coldest spot. Meriwether Lewis camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806. Camp Disappointment, the northernmost point reached by Lewis and Clark, is a National Historic Landmark about 12 miles northeast.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Meriwether Lewis** – Camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806; Camp Disappointment and the Meriwether Lewis Fight Site (July 27, 1806 skirmish with Blackfeet) are nearby National Historic Landmarks. (Source: Grokipedia)
-- **Gerard Jones** – Comic book writer and author known for works with Marvel and DC Comics, born in Cut Bank. (Source: Grokipedia)
-- **J. Hugo Aronson** – Former Governor of Montana (1953–1961) known as "The Galloping Swede," had strong ties to Cut Bank's oil industry. (Source: Grokipedia)
-- **"Cut Bank" (2014 film)** – Crime thriller starring Liam Hemsworth, John Malkovich, and Billy Bob Thornton set in the town. (Source: Grokipedia)
+- **Meriwether Lewis** – Camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806; Camp Disappointment and the Meriwether Lewis Fight Site (July 27, 1806 skirmish with Blackfeet) are nearby National Historic Landmarks.
+- **Gerard Jones** – Comic book writer and author known for works with Marvel and DC Comics, born in Cut Bank.
+- **J. Hugo Aronson** – Former Governor of Montana (1953–1961) known as "The Galloping Swede," had strong ties to Cut Bank's oil industry.
+- **"Cut Bank" (2014 film)** – Crime thriller starring Liam Hemsworth, John Malkovich, and Billy Bob Thornton set in the town.
 
 ---
 
@@ -43,7 +43,7 @@ Cut Bank's economy has been shaped by three major industries that have defined i
 
 ## History & Heritage
 
-Meriwether Lewis camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806. The Great Northern Railway reached the area in 1890; a post office was established December 14, 1892. The 1894–1895 Montana Business Directory recorded just 26 residents. Cut Bank incorporated in 1911 with ~600 residents. Glacier County was created in 1919 with Cut Bank as county seat. Oil discovery in 1926 and natural gas development in 1929–1930 transformed the economy; by 1931 a 20-inch pipeline connected Cut Bank fields to Butte and Anaconda. Population nearly tripled to 2,509 by 1940; Cut Bank became Montana's leading oil-producing area through the 1930s. The Cut Bank Airport operated as a satellite of Great Falls Army Air Base during WWII, training B-17 pilots; the original B-17 hangar remains. The airport is the only 24/7 U.S. Customs port of entry in northern Montana for general aviation. (Source: Grokipedia)
+Meriwether Lewis camped along the north fork of the Marias River near present-day Cut Bank on July 21, 1806. The Great Northern Railway reached the area in 1890; a post office was established December 14, 1892. The 1894–1895 Montana Business Directory recorded just 26 residents. Cut Bank incorporated in 1911 with ~600 residents. Glacier County was created in 1919 with Cut Bank as county seat. Oil discovery in 1926 and natural gas development in 1929–1930 transformed the economy; by 1931 a 20-inch pipeline connected Cut Bank fields to Butte and Anaconda. Population nearly tripled to 2,509 by 1940; Cut Bank became Montana's leading oil-producing area through the 1930s. The Cut Bank Airport operated as a satellite of Great Falls Army Air Base during WWII, training B-17 pilots; the original B-17 hangar remains. The airport is the only 24/7 U.S. Customs port of entry in northern Montana for general aviation.
 
 ---
 
@@ -65,14 +65,3 @@ Cut Bank is strategically located along U.S. Route 2, the northernmost east-west
 
 Accommodations in Cut Bank offer travelers comfortable and convenient options for exploring this gateway to Glacier National Park. The Super 8 on West Main Street provides reliable lodging right in town, while the Santa Rita RV Park offers spaces for recreational vehicles just 4 miles north of Cut Bank. For those seeking additional options, nearby Shelby (22 miles east) features the Best Western Shelby Inn & Suites and Comfort Inn of Shelby. Visitors planning extended adventures in the region can also find a variety of dining establishments in Cut Bank, including the Garden of Eat-In, Village Dining & Lounge, and Pizza Hut, along with several local bars and casinos offering Montana's distinctive hospitality. While accommodations may be limited compared to larger tourist destinations, the authentic small-town atmosphere and proximity to wilderness areas make Cut Bank an appealing base for adventurous travelers seeking to experience Montana's spectacular northern frontier.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Cut_Bank,_Montana), U.S. Census Bureau, National Park Service*
-
----
-
-## Plan Your Visit
-
-Ready to explore Cut Bank? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're seeking outdoor thrills in Glacier National Park, following the historic trail of Lewis and Clark, or simply experiencing authentic small-town Montana life, Cut Bank offers a genuine gateway to the wild beauty of the northern Rockies.

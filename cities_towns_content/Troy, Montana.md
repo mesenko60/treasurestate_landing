@@ -72,8 +72,3 @@ Accommodations in Troy offer visitors a chance to experience authentic Montana h
 
 Ready to explore Troy? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're seeking heart-pounding outdoor thrills or a peaceful retreat into nature's grandeur, Troy offers an authentic Montana experience that will leave you with lasting memories and stories to tell.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Troy,_Montana), U.S. Census Bureau*

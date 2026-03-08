@@ -13,7 +13,7 @@ Nestled along the banks of the mighty Yellowstone River and surrounded by four m
 - **Elevation:** 4,500 ft
 - **Known For:** Original gateway to Yellowstone National Park, world-class fly fishing, vibrant arts scene, historic railroad town
 - **Nearby Landmarks:** Yellowstone National Park, Paradise Valley, Absaroka and Gallatin Mountain Ranges, Yellowstone River
-- **Fun Fact:** Livingston is known for its exceptionally windy conditions, with gusts that can exceed 75 mph, earning it the nickname "the windiest city in Montana." Mission Field Airport is one of the windiest in Montana, with an average wind speed of 15.2 mph. (Source: Grokipedia)
+- **Fun Fact:** Livingston is known for its exceptionally windy conditions, with gusts that can exceed 75 mph, earning it the nickname "the windiest city in Montana." Mission Field Airport is one of the windiest in Montana, with an average wind speed of 15.2 mph.
 
 ---
 
@@ -22,7 +22,7 @@ Nestled along the banks of the mighty Yellowstone River and surrounded by four m
 - **Margot Kidder** – Actress known for her role as Lois Lane in the Superman films, who made Livingston her home
 - **Jim Harrison** – Acclaimed author and poet who wrote "Legends of the Fall" while living in the Livingston area
 - **Yellowstone (TV series)** – The hit television drama starring Kevin Costner is set in Montana; creator Taylor Sheridan initially conceived the series in Livingston, though much of the filming occurs in the Bitterroot Valley (Chief Joseph Ranch near Darby) and other Montana locations.
-- **Fly Fishers International** – The organization's headquarters is located in Livingston, organizing educational fly fishing expos and tying literary traditions to the area's angling heritage. (Source: Grokipedia)
+- **Fly Fishers International** – The organization's headquarters is located in Livingston, organizing educational fly fishing expos and tying literary traditions to the area's angling heritage.
 
 ---
 
@@ -47,11 +47,11 @@ The creative economy has become increasingly significant, with Livingston attrac
 
 The land where Livingston now stands has been a significant crossroads for millennia, with Indigenous peoples, particularly the Crow Tribe, utilizing the area for hunting and as a pathway to the abundant resources of what would later become Yellowstone National Park. The first documented European-American visit came in July 1806, when Captain William Clark of the Lewis and Clark Expedition camped near present-day Livingston while exploring the Yellowstone River.
 
-Livingston's formal beginnings trace to 1882, when the Northern Pacific Railway established a critical service point at the foot of Bozeman Pass. Gold discoveries in nearby Emigrant Gulch in 1863 spurred initial settlement, but the Northern Pacific's arrival on November 22, 1882—at a site then known as Clark City—marked the town's founding. On December 21, 1882, the town was officially incorporated as Livingston, named after Johnston Livingston, a Northern Pacific Railway director and stockholder. The railroad's 1901–1902 shop expansions doubled local rail employment. (Source: Grokipedia)
+Livingston's formal beginnings trace to 1882, when the Northern Pacific Railway established a critical service point at the foot of Bozeman Pass. Gold discoveries in nearby Emigrant Gulch in 1863 spurred initial settlement, but the Northern Pacific's arrival on November 22, 1882—at a site then known as Clark City—marked the town's founding. On December 21, 1882, the town was officially incorporated as Livingston, named after Johnston Livingston, a Northern Pacific Railway director and stockholder. The railroad's 1901–1902 shop expansions doubled local rail employment.
 
-The town's strategic location made it the original gateway to Yellowstone National Park, America's first national park. The Northern Pacific heavily promoted Yellowstone to eastern tourists, who would disembark in Livingston before continuing south through Paradise Valley to the park's northern entrance. A dedicated spur line to Cinnabar near the park's north entrance was completed by 1883. In 1887, Livingston became the seat of newly formed Park County. The iconic Livingston Depot, a restored 1902 Northern Pacific structure on the National Register of Historic Places, symbolizes this rail legacy. The Yellowstone Gateway Museum, housed in a restored 1906 schoolhouse, explores 12,000 years of regional history. (Source: Grokipedia)
+The town's strategic location made it the original gateway to Yellowstone National Park, America's first national park. The Northern Pacific heavily promoted Yellowstone to eastern tourists, who would disembark in Livingston before continuing south through Paradise Valley to the park's northern entrance. A dedicated spur line to Cinnabar near the park's north entrance was completed by 1883. In 1887, Livingston became the seat of newly formed Park County. The iconic Livingston Depot, a restored 1902 Northern Pacific structure on the National Register of Historic Places, symbolizes this rail legacy. The Yellowstone Gateway Museum, housed in a restored 1906 schoolhouse, explores 12,000 years of regional history.
 
-Throughout the 20th century, Livingston weathered economic changes as railroad importance diminished—population peaked at 8,229 in 1960—reinventing itself through its natural and cultural assets. Tourism generated over $1 billion in visitor spending across the Greater Yellowstone region in 2023. Today, with over 30 properties and districts listed on the National Register in Park County (including the Commercial Historic District), the town proudly preserves its architectural heritage while embracing its evolution into a hub for outdoor adventure, artistic expression, and authentic Montana experiences. (Source: Grokipedia)
+Throughout the 20th century, Livingston weathered economic changes as railroad importance diminished—population peaked at 8,229 in 1960—reinventing itself through its natural and cultural assets. Tourism generated over $1 billion in visitor spending across the Greater Yellowstone region in 2023. Today, with over 30 properties and districts listed on the National Register in Park County (including the Commercial Historic District), the town proudly preserves its architectural heritage while embracing its evolution into a hub for outdoor adventure, artistic expression, and authentic Montana experiences.
 
 ---
 
@@ -85,7 +85,3 @@ Adventure-minded visitors might prefer the numerous vacation rentals available t
 
 Ready to explore Livingston? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Livingston,_Montana), U.S. Census Bureau*

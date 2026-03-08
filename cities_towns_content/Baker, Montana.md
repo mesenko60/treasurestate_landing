@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~1,780 (Source: U.S. Census Bureau estimates)
+- **Population:** ~1,780
 - **County:** Fallon County (County Seat)
 - **Elevation:** 2,933 ft (894 m)
 - **Known For:** O'Fallon Historical Museum, Baker Lake recreation, agriculture, and oil and gas development in the Williston Basin.
@@ -34,3 +34,4 @@ Baker's economy is distinctively dual-pillared. It relies heavily on agriculture
 For a rural community, Baker offers a solid selection of accommodations, largely to support travelers, hunters, and energy industry workers:
 - **Hotels and Motels:** There are several comfortable, modern hotel and motel options located along the main highway routes through town, offering standard amenities.
 - **RV Parks and Camping:** Baker offers options for RV parking and camping, particularly around the Baker Lake area and private local RV parks, catering to summer road-trippers and seasonal workers.
+

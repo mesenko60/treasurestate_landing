@@ -13,19 +13,19 @@ Nestled in the pristine Deer Lodge Valley with the Clark Fork River and towering
 - **Elevation:** 4,521 ft
 - **Known For:** Historic Old Montana Prison, Grant-Kohrs Ranch National Historic Site, western heritage
 - **Nearby Landmarks:** Flint Creek Mountain Range, Anaconda-Pintler Wilderness, Georgetown Lake
-- **Fun Fact:** The town's name derives from a natural salt lick at Warm Springs Mound that attracted deer; from a distance, the 40-foot tall mound with billowing steam resembled an Indian lodge. The Montana Territorial Penitentiary, established in 1871, was the inaugural territorial prison in the western United States. The Old Montana Prison Museum complex encompasses over 160 vintage automobiles, doll collections, and reconstructed western town facades. Grant-Kohrs Ranch once controlled 10 million acres. (Source: Grokipedia)
+- **Fun Fact:** The town's name derives from a natural salt lick at Warm Springs Mound that attracted deer; from a distance, the 40-foot tall mound with billowing steam resembled an Indian lodge. The Montana Territorial Penitentiary, established in 1871, was the inaugural territorial prison in the western United States. The Old Montana Prison Museum complex encompasses over 160 vintage automobiles, doll collections, and reconstructed western town facades. Grant-Kohrs Ranch once controlled 10 million acres.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Phil Jackson** – Born in Deer Lodge September 17, 1945; legendary NBA coach who won 11 championships with the Chicago Bulls and LA Lakers, including six with Michael Jordan's Bulls teams (1991–1998). (Source: Grokipedia)
-- **Jean Parker** – Born Lois Mae Green in Deer Lodge August 11, 1915; actress who appeared in over 70 films including Beth March in the 1933 adaptation of *Little Women*. (Source: Grokipedia)
-- **Johnny Grant** – Métis fur trader who established a permanent ranch in the Deer Lodge Valley in 1862, laying the foundation for open-range ranching in Montana; his holdings became the Grant-Kohrs Ranch National Historic Site. (Source: Grokipedia)
-- **Frank Conley** – Served as warden of the Montana Territorial and State Prison from 1890 to 1921, also acting as mayor of Deer Lodge for multiple terms. (Source: Grokipedia)
-- **William Andrews Clark** – Copper King and U.S. Senator who helped shape Montana's early development. (Source: Grokipedia)
-- **Conrad Kohrs** – Cattle baron whose ranch became the Grant-Kohrs National Historic Site. (Source: Grokipedia)
-- **The Old Montana Prison** – Featured in films including *Fast Walking* (1982), *Runaway Train* (1985), *Diggstown* (1992), and *The Last Ride* (2012), and in a *Ghost Adventures* episode. (Source: Grokipedia)
+- **Phil Jackson** – Born in Deer Lodge September 17, 1945; legendary NBA coach who won 11 championships with the Chicago Bulls and LA Lakers, including six with Michael Jordan's Bulls teams (1991–1998).
+- **Jean Parker** – Born Lois Mae Green in Deer Lodge August 11, 1915; actress who appeared in over 70 films including Beth March in the 1933 adaptation of *Little Women*.
+- **Johnny Grant** – Métis fur trader who established a permanent ranch in the Deer Lodge Valley in 1862, laying the foundation for open-range ranching in Montana; his holdings became the Grant-Kohrs Ranch National Historic Site.
+- **Frank Conley** – Served as warden of the Montana Territorial and State Prison from 1890 to 1921, also acting as mayor of Deer Lodge for multiple terms.
+- **William Andrews Clark** – Copper King and U.S. Senator who helped shape Montana's early development.
+- **Conrad Kohrs** – Cattle baron whose ranch became the Grant-Kohrs National Historic Site.
+- **The Old Montana Prison** – Featured in films including *Fast Walking* (1982), *Runaway Train* (1985), *Diggstown* (1992), and *The Last Ride* (2012), and in a *Ghost Adventures* episode.
 
 ---
 
@@ -48,7 +48,7 @@ Deer Lodge's economy has evolved dramatically since its frontier days while main
 
 The story of Deer Lodge begins with a geological curiosity – a warm spring mound that attracted deer with its natural salt deposits, appearing from a distance like a Native American lodge. Gold was first discovered in Montana in 1852 on Gold Creek, about 20 miles north. Johnny Grant established a trading post and cattle operation in 1857 and built a two-story home in 1862 at what would become the Grant-Kohrs Ranch. A town committee laid out Deer Lodge City (initially Cottonwood or Spanish Fork) in 1862 as a supply hub for miners. Conrad Kohrs acquired Grant's ranch in 1866 and expanded it into one of the largest cattle enterprises in the West; the Grant-Kohrs Ranch National Historic Site preserves over 160 original structures from an empire that once controlled 10 million acres.
 
-The Montana Territorial Penitentiary was approved in 1867 and received its first inmate July 2, 1871—the inaugural territorial prison in the western United States. Under Warden Frank Conley (1890–1921), a 400-man cellblock was completed in 1912. A 1959 riot left Deputy Warden Ted Rothe dead and 26 staff hostage for 36 hours until the National Guard rescued them. The prison closed in 1979 and was repurposed as the Old Montana Prison Museum. Deer Lodge became a division point for the Chicago, Milwaukee, St. Paul and Pacific Railroad until the line's 1977 bankruptcy. The College of Montana, the state's first institution of higher learning, was established in Deer Lodge in 1878. (Source: Grokipedia)
+The Montana Territorial Penitentiary was approved in 1867 and received its first inmate July 2, 1871—the inaugural territorial prison in the western United States. Under Warden Frank Conley (1890–1921), a 400-man cellblock was completed in 1912. A 1959 riot left Deputy Warden Ted Rothe dead and 26 staff hostage for 36 hours until the National Guard rescued them. The prison closed in 1979 and was repurposed as the Old Montana Prison Museum. Deer Lodge became a division point for the Chicago, Milwaukee, St. Paul and Pacific Railroad until the line's 1977 bankruptcy. The College of Montana, the state's first institution of higher learning, was established in Deer Lodge in 1878.
 
 ---
 
@@ -70,14 +70,3 @@ Deer Lodge is conveniently located along Interstate 90, approximately 37 miles n
 
 Visitors to Deer Lodge can choose from a selection of accommodations that blend western hospitality with modern comfort. The historic Deer Lodge Motor Inn offers clean, comfortable rooms in the heart of downtown, providing easy access to the town's museums and attractions. For those seeking a more intimate experience, the Sanders Bed & Breakfast provides charming rooms in a beautifully restored Victorian home with period furnishings and a delicious homemade breakfast. Several chain hotels offer reliable accommodations with standard amenities, while the nearby KOA campground caters to RV travelers and tent campers looking to connect with Montana's natural beauty. For a truly unique stay, inquire about guest ranches in the surrounding valley that offer authentic western experiences including horseback riding and cattle drives. The Powell County Chamber of Commerce can provide up-to-date information on all local accommodations and seasonal availability.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Deer_Lodge,_Montana), U.S. Census Bureau, National Park Service (Grant-Kohrs Ranch)*
-
----
-
-## Plan Your Visit
-
-Ready to explore Deer Lodge? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're tracing the footsteps of cattle barons, exploring prison history, or using the town as a base for outdoor exploration, Deer Lodge offers an authentic Montana experience away from the crowds of more well-known destinations.

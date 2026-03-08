@@ -71,3 +71,4 @@ Accommodations in Lodge Grass itself are limited but authentic, offering visitor
 ## Plan Your Visit
 
 Ready to explore Lodge Grass? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're tracing the footsteps of history at the Little Bighorn Battlefield, experiencing the vibrant traditions of the Crow people, or simply enjoying the peaceful beauty of the rolling grasslands, Lodge Grass offers an authentic glimpse into a corner of Montana where Native American heritage and natural splendor create an unforgettable adventure.
+

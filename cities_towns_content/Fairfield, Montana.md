@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~805 (Source: U.S. Census Bureau estimates)
+- **Population:** ~805
 - **County:** Teton County
 - **Elevation:** 3,983 ft (1,214 m)
 - **Known For:** Being the "Malting Barley Capital of the World," the nearby Freezout Lake Wildlife Management Area, and its location on the scenic Rocky Mountain Front.
@@ -35,3 +35,4 @@ Fairfield offers convenient, quiet lodging tailored to birdwatchers, hunters, an
 - **Local Motels:** The town features a few comfortable, independent motels (such as the Bella Vista Motel) that offer clean accommodations right on the main highway.
 - **Great Falls (35 miles Southeast):** Many visitors choose to stay in Great Falls, which provides a massive array of hotels, motels, and dining options, and make the short drive up to Fairfield for birdwatching at Freezout Lake.
 - **Camping:** There are limited, primitive camping options available near Freezout Lake, catering primarily to hunters and hardcore birdwatchers.
+

@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~58 (Source: U.S. Census Bureau estimates)
+- **Population:** ~58
 - **County:** Daniels County
 - **Elevation:** 2,785 ft (849 m)
 - **Known For:** Deep agricultural roots, extreme rural isolation on the high plains, and its historic grain elevators.
@@ -35,3 +35,4 @@ Due to its extremely small population, there are no commercial lodging options w
 - **Scobey (12 miles West):** Visitors to the area stay in nearby Scobey, which offers a few comfortable, independent motels and an RV park.
 - **Plentywood (30 miles East):** Travelers heading east can find larger motels, dining, and RV accommodations in Plentywood.
 - **Camping:** For outdoor enthusiasts, nearby Whitetail Reservoir offers basic, primitive camping options.
+

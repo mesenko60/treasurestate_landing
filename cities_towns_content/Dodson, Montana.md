@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~128 (Source: U.S. Census Bureau estimates)
+- **Population:** ~128
 - **County:** Phillips County
 - **Elevation:** 2,293 ft (699 m)
 - **Known For:** Historic agricultural roots and serving as a quiet Hi-Line outpost along the Milk River.
@@ -33,3 +33,4 @@ The economy of Dodson is entirely reliant on agriculture. The surrounding lands 
 Because Dodson is an exceptionally small, rural community, there are no commercial hotels or motels located within the town itself.
 - **Malta (18 miles East):** The vast majority of travelers stay in nearby Malta, which offers several reliable motels (like the Maltana Motel and Edgewater Inn), RV parks, and dining options.
 - **Havre (50 miles West):** For travelers heading west, Havre provides comprehensive accommodations, including major hotel chains and larger RV parks.
+

@@ -13,7 +13,7 @@ Nestled in the breathtaking Bitterroot Valley, Stevensville beckons adventurers 
 - **Elevation:** 3,323 ft
 - **Known For:** Montana's first permanent non-Indigenous settlement; St. Mary's Mission; Lee Metcalf National Wildlife Refuge
 - **Nearby Landmarks:** Bitterroot Mountains, Sapphire Mountains, Bitterroot River, Selway-Bitterroot Wilderness
-- **Fun Fact:** Stevensville was founded 48 years before Montana achieved statehood, making it truly "where Montana began." St. Mary's Mission (1841) was Montana's first permanent non-Indigenous settlement. The Etna Mutual Ditch Company (1871) was the valley's first cooperative irrigation effort. Montana's first cheese factory and creamery opened three miles south in 1895. (Source: Grokipedia)
+- **Fun Fact:** Stevensville was founded 48 years before Montana achieved statehood, making it truly "where Montana began." St. Mary's Mission (1841) was Montana's first permanent non-Indigenous settlement. The Etna Mutual Ditch Company (1871) was the valley's first cooperative irrigation effort. Montana's first cheese factory and creamery opened three miles south in 1895.
 
 ---
 
@@ -22,7 +22,7 @@ Nestled in the breathtaking Bitterroot Valley, Stevensville beckons adventurers 
 - **Huey Lewis** – Iconic rock musician and frontman of Huey Lewis and the News who has called Stevensville home since 1987, drawn to the area's natural beauty and outdoor lifestyle.
 - **Lee Metcalf** – Influential U.S. Senator from Montana (1961-1978) whose conservation legacy lives on in the Lee Metcalf National Wildlife Refuge located near Stevensville.
 - **"A River Runs Through It" connections** – While not filmed in Stevensville specifically, this iconic Montana-based film showcases the Bitterroot River region, bringing attention to the spectacular fly fishing opportunities in the area.
-- **Tyler Bradt** – Whitewater kayaker raised in Stevensville; completed first descent of Palouse Falls (186 ft), setting a world record. (Source: Grokipedia)
+- **Tyler Bradt** – Whitewater kayaker raised in Stevensville; completed first descent of Palouse Falls (186 ft), setting a world record.
 
 ---
 
@@ -43,7 +43,7 @@ Stevensville's economy reflects the resilient, independent spirit of Montana's f
 
 ## History & Heritage
 
-Stevensville's story begins with the Salish (Flathead) Native Americans, who called the fertile Bitterroot Valley home for generations before European contact. The pivotal moment in the town's history came in 1841, when Jesuit priest Father Pierre-Jean De Smet established St. Mary's Mission at the request of the Salish people, creating what would become Montana's first permanent non-Indigenous settlement. The mission introduced agriculture to the region, including Montana's first cattle herd and the state's first harvest of wheat and oats. In 1850, Major John Owen purchased the abandoned mission site and established Fort Owen, a vital trading post that served as a lifeline for early settlers. The town was officially named Stevensville in 1864, honoring territorial governor Isaac Stevens. When the Salish were forcibly removed to the Flathead Reservation in 1891, it marked a tragic chapter in the area's history. Throughout the late 19th and early 20th centuries, Stevensville grew as a center for agriculture, logging, and commerce, with the arrival of the railroad in 1888 further connecting this frontier outpost to the wider world. Today, the town proudly preserves its historic buildings and cultural heritage, offering visitors a genuine glimpse into Montana's pioneering past while maintaining its authentic small-town character. Stevensville was Ravalli County's initial county seat (1893) until Hamilton won the role in 1898. Glacier Tool and Montana Fabrication Works provide precision machining and metal fabrication. SemiLink Materials announced a $20 million facility in 2025. (Source: Grokipedia)
+Stevensville's story begins with the Salish (Flathead) Native Americans, who called the fertile Bitterroot Valley home for generations before European contact. The pivotal moment in the town's history came in 1841, when Jesuit priest Father Pierre-Jean De Smet established St. Mary's Mission at the request of the Salish people, creating what would become Montana's first permanent non-Indigenous settlement. The mission introduced agriculture to the region, including Montana's first cattle herd and the state's first harvest of wheat and oats. In 1850, Major John Owen purchased the abandoned mission site and established Fort Owen, a vital trading post that served as a lifeline for early settlers. The town was officially named Stevensville in 1864, honoring territorial governor Isaac Stevens. When the Salish were forcibly removed to the Flathead Reservation in 1891, it marked a tragic chapter in the area's history. Throughout the late 19th and early 20th centuries, Stevensville grew as a center for agriculture, logging, and commerce, with the arrival of the railroad in 1888 further connecting this frontier outpost to the wider world. Today, the town proudly preserves its historic buildings and cultural heritage, offering visitors a genuine glimpse into Montana's pioneering past while maintaining its authentic small-town character. Stevensville was Ravalli County's initial county seat (1893) until Hamilton won the role in 1898. Glacier Tool and Montana Fabrication Works provide precision machining and metal fabrication. SemiLink Materials announced a $20 million facility in 2025.
 
 ---
 
@@ -71,8 +71,3 @@ Stevensville offers a range of accommodations that capture the authentic charm a
 
 Ready to explore Stevensville? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From tracing the footsteps of Montana's earliest settlers to casting a line in world-class fishing waters or hiking trails with breathtaking mountain vistas, Stevensville offers an authentic Montana experience where wilderness adventure meets frontier heritage.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Stevensville,_Montana), U.S. Census Bureau*

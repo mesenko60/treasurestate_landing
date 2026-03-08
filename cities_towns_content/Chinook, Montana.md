@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~1,154 (Source: U.S. Census Bureau estimates)
+- **Population:** ~1,154
 - **County:** Blaine County (County Seat)
 - **Elevation:** 2,408 ft (734 m)
 - **Known For:** Historic Bear Paw Battlefield, the Blaine County Museum, its location on the Hi-Line, and its famous namesake warm winter "Chinook" winds.
@@ -36,3 +36,4 @@ Chinook serves as the agricultural heart and county seat of Blaine County. Its e
 As a smaller community on the Hi-Line, lodging in Chinook is convenient but limited:
 - **Local Motels & RV Parks:** There are a couple of independent motels and small RV parks located in or near town, providing essential accommodations for travelers and history enthusiasts visiting the battlefield.
 - **Havre (21 miles West):** Many visitors choose to stay in nearby Havre, which boasts numerous major hotel chains, comprehensive amenities, and diverse dining options, making it an excellent basecamp for exploring Chinook and the Bear Paw Battlefield.
+

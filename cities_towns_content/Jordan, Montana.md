@@ -4,16 +4,16 @@
 - **County:** Garfield County
 - **Elevation:** 2,608 ft
 - **Known For:** Hell Creek Formation paleontology (first T. rex identified nearby, 1902), Garfield County Museum, Montana Freemen standoff (1996), and vast ranching country.
-- **Fun Fact:** Barnum Brown discovered one of the first Tyrannosaurus rex specimens in the Hell Creek Formation near Jordan in 1902. Jerry Kramer (Pro Football Hall of Fame, Green Bay Packers) was born here in 1936. The 81-day Montana Freemen standoff (March–June 1996) occurred 25 miles northeast at Justus Ranch. (Source: Grokipedia)
+- **Fun Fact:** Barnum Brown discovered one of the first Tyrannosaurus rex specimens in the Hell Creek Formation near Jordan in 1902. Jerry Kramer (Pro Football Hall of Fame, Green Bay Packers) was born here in 1936. The 81-day Montana Freemen standoff (March–June 1996) occurred 25 miles northeast at Justus Ranch.
 
 ### Notable People
 
 - **Jerry Kramer** (b. 1936): Pro Football Hall of Fame offensive guard; five NFL championships with Green Bay Packers; "Ice Bowl" participant; author of Instant Replay (1968).
-- **Barnum Brown** (1873–1963): Paleontologist who discovered one of the first T. rex specimens near Jordan in 1902. (Source: Grokipedia)
+- **Barnum Brown** (1873–1963): Paleontologist who discovered one of the first T. rex specimens near Jordan in 1902.
 
 ### History & Heritage
 
-Jordan was settled in 1896 by Arthur J. Jordan along Big Dry Creek; post office established July 11, 1899. Garfield County created 1915 with Jordan as seat (1919). Population peaked at 457 (1920) during the homestead boom; 1920s bust and 1930s droughts reversed gains. Incorporated 1951. New Deal built high school/dormitory (1936). The Montana Freemen standoff (March 25–June 13, 1996) brought national attention: ~12 armed sovereign-citizen adherents barricaded at Justus Ranch 25 miles northeast; 81-day siege ended peacefully with 16 surrenders. Garfield County Museum houses T. rex and Triceratops replicas, Stygimoloch skull; part of Montana Dinosaur Trail. Hell Creek State Park, Charles M. Russell National Wildlife Refuge (Jordan Wildlife Station) nearby. (Source: Grokipedia)
+Jordan was settled in 1896 by Arthur J. Jordan along Big Dry Creek; post office established July 11, 1899. Garfield County created 1915 with Jordan as seat (1919). Population peaked at 457 (1920) during the homestead boom; 1920s bust and 1930s droughts reversed gains. Incorporated 1951. New Deal built high school/dormitory (1936). The Montana Freemen standoff (March 25–June 13, 1996) brought national attention: ~12 armed sovereign-citizen adherents barricaded at Justus Ranch 25 miles northeast; 81-day siege ended peacefully with 16 surrenders. Garfield County Museum houses T. rex and Triceratops replicas, Stygimoloch skull; part of Montana Dinosaur Trail. Hell Creek State Park, Charles M. Russell National Wildlife Refuge (Jordan Wildlife Station) nearby.
 
 ### Top Things to Do in Jordan
 
@@ -24,7 +24,7 @@ Jordan was settled in 1896 by Arthur J. Jordan along Big Dry Creek; post office 
 
 ### Local Industry & Economy
 
-Agriculture dominates (cattle ranching, dryland farming); ~48% of county employment. Garfield County: 238 farms (2022), beef cattle primary. Oil/gas modest. Retail, healthcare support local needs. (Source: Grokipedia)
+Agriculture dominates (cattle ranching, dryland farming); ~48% of county employment. Garfield County: 238 farms (2022), beef cattle primary. Oil/gas modest. Retail, healthcare support local needs.
 
 ### Getting There & Nearby Destinations
 
@@ -36,8 +36,3 @@ Agriculture dominates (cattle ranching, dryland farming); ~48% of county employm
 - **Local Motels:** Basic accommodations for travelers and hunters.
 - **Camping:** Hell Creek State Park, CMR Refuge primitive sites, nearby public lands.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Jordan,_Montana), U.S. Census Bureau*

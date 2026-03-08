@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~2,264 (Source: U.S. Census Bureau estimates)
+- **Population:** ~2,264
 - **County:** Lewis and Clark County
 - **Elevation:** 3,894 ft (1,187 m)
 - **Known For:** Historic lead smelting industry, rapid recent residential growth, and proximity to the Missouri River reservoirs (Canyon Ferry, Hauser, and Holter lakes).
@@ -33,3 +33,4 @@ Following the closure of the ASARCO smelter, East Helena’s economy shifted dra
 
 - **Helena:** Because East Helena is so close to the state capital, the vast majority of visitors utilize the extensive lodging options in Helena, which include major hotel chains, historic downtown hotels, and bed-and-breakfasts.
 - **Camping at the Lakes:** For outdoor enthusiasts, there are numerous excellent state and federal campgrounds located just minutes east of town at Canyon Ferry and Hauser lakes, offering both tent sites and full RV hookups right on the water.
+

@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~560 (Source: U.S. Census Bureau estimates)
+- **Population:** ~560
 - **County:** McCone County (County Seat)
 - **Elevation:** 2,434 ft (742 m)
 - **Known For:** Being the heart of Montana's "Missouri River Country," the McCone County Museum, and serving as a critical crossroads on the Big Sky Back Country Byway.
@@ -35,3 +35,4 @@ Lodging in Circle caters primarily to highway travelers passing through the remo
 - **Local Motels:** There are a few independent motels located in town offering clean, basic, and friendly accommodations.
 - **Horse Creek RV & Trailer Park:** A convenient option for visitors traveling by RV or looking to camp.
 - **Regional Hubs:** For a wider variety of major hotels and dining, travelers often stay in Glendive or Miles City, using Circle as a scenic stopover on the Big Sky Back Country Byway.
+

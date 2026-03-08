@@ -13,13 +13,13 @@ Glasgow is the county seat of Valley County in northeastern Montana, with a popu
 - **Elevation:** 2,093 ft (638 m)
 - **Known For:** Most isolated town in lower 48, Glasgow AFB history, Fort Peck Reservoir, Milk River Valley
 - **Nearby Landmarks:** Fort Peck Reservoir, Milk River, Valley County Pioneer Museum
-- **Fun Fact:** Glasgow was reportedly named when a railway clerk spun a globe and pointed at Glasgow, Scotland. Glasgow AFB hosted F-101 Voodoo interceptors and later B-52 bombers; its 1976 closure led to ~16,000 residents departing. Record low -59°F (Feb 15, 1936). (Source: Grokipedia)
+- **Fun Fact:** Glasgow was reportedly named when a railway clerk spun a globe and pointed at Glasgow, Scotland. Glasgow AFB hosted F-101 Voodoo interceptors and later B-52 bombers; its 1976 closure led to ~16,000 residents departing. Record low -59°F (Feb 15, 1936).
 
 ---
 
 ## Notable People & Pop Culture
 
-*(Grokipedia did not list specific notable residents; local history emphasizes pioneer and military-era community.)*
+*Local history emphasizes pioneer and military-era community.*
 
 ---
 
@@ -35,13 +35,13 @@ Glasgow is the county seat of Valley County in northeastern Montana, with a popu
 
 ## Local Industry & Economy
 
-Agriculture dominates: dryland farming (wheat, barley, peas, lentils, chickpeas, flax), cattle ranching, and irrigated production along the Milk River. Glasgow Stockyards hosts the leading livestock auction in northeastern Montana. Median household income: ~$77,000 (2023). Tourism targets Fort Peck Lake, the Montana Dinosaur Trail, and Native American heritage. Unemployment ~2.2% (Nov 2024). (Source: Grokipedia)
+Agriculture dominates: dryland farming (wheat, barley, peas, lentils, chickpeas, flax), cattle ranching, and irrigated production along the Milk River. Glasgow Stockyards hosts the leading livestock auction in northeastern Montana. Median household income: ~$77,000 (2023). Tourism targets Fort Peck Lake, the Montana Dinosaur Trail, and Native American heritage. Unemployment ~2.2% (Nov 2024).
 
 ---
 
 ## History & Heritage
 
-Founded 1887 as a Great Northern Railway siding; name reportedly from Glasgow, Scotland (clerk spun globe). Post office opened June 19, 1888. Valley County created 1893 with Glasgow as seat. First National Bank established 1891. Glasgow Air Force Base opened 1957 (F-101 interceptors); SAC assumed control 1960; B-52/KC-135 operations from 1962. Population peaked ~6,400 in mid-1960s. Base closed 1976; ~16,000 departed; St. Marie largely abandoned. Population declined to ~2,889 (2009); stabilized ~3,200. (Source: Grokipedia)
+Founded 1887 as a Great Northern Railway siding; name reportedly from Glasgow, Scotland (clerk spun globe). Post office opened June 19, 1888. Valley County created 1893 with Glasgow as seat. First National Bank established 1891. Glasgow Air Force Base opened 1957 (F-101 interceptors); SAC assumed control 1960; B-52/KC-135 operations from 1962. Population peaked ~6,400 in mid-1960s. Base closed 1976; ~16,000 departed; St. Marie largely abandoned. Population declined to ~2,889 (2009); stabilized ~3,200.
 
 ---
 
@@ -62,8 +62,3 @@ Limited commercial lodging; motels and campgrounds available. Fort Peck Reservoi
 
 Ready to explore Glasgow? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From Fort Peck's vast waters to pioneer heritage and the legacy of the Cold War air base, Glasgow offers an authentic Hi-Line experience.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Glasgow,_Montana), U.S. Census Bureau*

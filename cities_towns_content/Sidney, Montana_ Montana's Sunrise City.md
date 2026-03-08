@@ -69,3 +69,4 @@ Sidney offers a variety of accommodations to suit different traveler needs. The 
 ## Plan Your Visit
 
 Ready to explore Sidney? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+

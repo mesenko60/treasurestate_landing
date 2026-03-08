@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~392 (Source: U.S. Census Bureau estimates)
+- **Population:** ~392
 - **County:** Carbon County
 - **Elevation:** 3,524 ft (1,074 m)
 - **Known For:** Historic agricultural roots in the Clarks Fork Valley, the Clarks Fork Valley Museum, and its scenic location south of Billings.
@@ -35,3 +35,4 @@ Fromberg is a small residential community and has very limited commercial lodgin
 - **Bridger (10 miles South):** Visitors can find a few local motels and bed-and-breakfast options just a short drive down the highway in Bridger.
 - **Red Lodge (30 miles Southwest):** For those seeking a resort-town atmosphere, Red Lodge offers historic hotels, mountain lodges, and extensive vacation rentals.
 - **Billings (36 miles North):** The vast majority of travelers use Billings as their primary basecamp, offering dozens of major hotel chains and RV parks, making Fromberg an easy and scenic day trip.
+

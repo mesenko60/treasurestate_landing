@@ -4,11 +4,11 @@
 - **County:** Broadwater County
 - **Elevation:** 3,825 ft
 - **Known For:** "Banana Belt" milder climate, Canyon Ferry Lake recreation, Broadwater County Museum, and gateway to Missouri River valley.
-- **Fun Fact:** Named for Susan Townsend, wife of Northern Pacific Railroad president Charles Barstow Wright. Founded 1883 as a railroad shipping point; town lots sold for $5 each. Lewis and Clark noted the Crimson Bluffs here in July 1805. Canyon Ferry Dam (1898) submerged historic Canton village. (Source: Grokipedia)
+- **Fun Fact:** Named for Susan Townsend, wife of Northern Pacific Railroad president Charles Barstow Wright. Founded 1883 as a railroad shipping point; town lots sold for $5 each. Lewis and Clark noted the Crimson Bluffs here in July 1805. Canyon Ferry Dam (1898) submerged historic Canton village.
 
 ### History & Heritage
 
-Townsend was founded in 1883 by the Northern Pacific Railroad as a shipping hub for regional gold mines and agriculture. Named for Susan Townsend. Broadwater County created 1897 with Townsend as seat. Lewis and Clark passed through July 1805; Confederate Gulch gold rush (1864) drew thousands. Commercial Hotel (1889) still operates. Canyon Ferry Dam expansion (1954) submerged Canton. Broadwater County Museum (1976) preserves Native American to pioneer history. Economy shifted from mining/rail to agriculture, tourism, and small business. Canyon Ferry Walleye Festival, Broadwater County Fair and Rodeo. (Source: Grokipedia)
+Townsend was founded in 1883 by the Northern Pacific Railroad as a shipping hub for regional gold mines and agriculture. Named for Susan Townsend. Broadwater County created 1897 with Townsend as seat. Lewis and Clark passed through July 1805; Confederate Gulch gold rush (1864) drew thousands. Commercial Hotel (1889) still operates. Canyon Ferry Dam expansion (1954) submerged Canton. Broadwater County Museum (1976) preserves Native American to pioneer history. Economy shifted from mining/rail to agriculture, tourism, and small business. Canyon Ferry Walleye Festival, Broadwater County Fair and Rodeo.
 
 ### Top Things to Do in Townsend
 
@@ -19,7 +19,7 @@ Townsend was founded in 1883 by the Northern Pacific Railroad as a shipping hub 
 
 ### Local Industry & Economy
 
-Agriculture (wheat, barley, potatoes, hay, livestock); Graymont lime plant; tourism (Canyon Ferry); retail; Billings Clinic Broadwater (healthcare). Accommodation/food services, retail, construction top employment. (Source: Grokipedia)
+Agriculture (wheat, barley, potatoes, hay, livestock); Graymont lime plant; tourism (Canyon Ferry); retail; Billings Clinic Broadwater (healthcare). Accommodation/food services, retail, construction top employment.
 
 ### Getting There & Nearby Destinations
 
@@ -31,8 +31,3 @@ Agriculture (wheat, barley, potatoes, hay, livestock); Graymont lime plant; tour
 - **Local Motels & Hotels:** Commercial Hotel (historic), local accommodations.
 - **Camping:** Canyon Ferry Lake, nearby public lands.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Townsend,_Montana), U.S. Census Bureau*

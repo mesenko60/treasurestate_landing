@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~180 (Source: U.S. Census Bureau estimates)
+- **Population:** ~180
 - **County:** Roosevelt County
 - **Elevation:** 2,031 ft (619 m)
 - **Known For:** Agricultural heritage and proximity to the Medicine Lake National Wildlife Refuge.
@@ -34,3 +34,4 @@ Due to its very small size, there are no commercial lodging facilities (hotels o
 - **Culbertson (15 miles South):** The most convenient lodging for visitors is in Culbertson, which offers several comfortable motels and RV parks right along the Highway 2 corridor.
 - **Medicine Lake (25 miles North):** There are limited lodging and camping options available in the town of Medicine Lake, catering mostly to hunters and refuge visitors.
 - **Sidney:** For a wider array of major hotel chains and dining options, travelers often base themselves in Sidney and explore Froid and the wildlife refuge as a day trip.
+

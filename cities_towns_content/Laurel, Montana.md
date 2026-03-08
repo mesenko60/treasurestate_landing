@@ -13,14 +13,14 @@ Laurel is a city in Yellowstone County, Montana, located along Interstate 90 app
 - **Elevation:** 3,301 ft (1,006 m)
 - **Known For:** Railroad junction (largest terminal yard between Minneapolis and Seattle), CHS Inc. oil refinery, BNSF operations
 - **Nearby Landmarks:** Yellowstone River, Billings, Battle of Canyon Creek site
-- **Fun Fact:** Captain William Clark encamped at the site in 1806 during the Lewis and Clark return. Renamed from Carlton to Laurel in 1882 after a shrub from a North Carolina railroad official's hometown. A German POW camp operated at Riverside Park during World War II. (Source: Grokipedia)
+- **Fun Fact:** Captain William Clark encamped at the site in 1806 during the Lewis and Clark return. Renamed from Carlton to Laurel in 1882 after a shrub from a North Carolina railroad official's hometown. A German POW camp operated at Riverside Park during World War II.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **William Clark** – Encamped at the Laurel site in 1806 during the Lewis and Clark Expedition return journey. (Source: Grokipedia)
-- **Volga Germans** – German immigrants from the Volga River region settled prominently by 1908, contributing to the community's cultural fabric. (Source: Grokipedia)
+- **William Clark** – Encamped at the Laurel site in 1806 during the Lewis and Clark Expedition return journey.
+- **Volga Germans** – German immigrants from the Volga River region settled prominently by 1908, contributing to the community's cultural fabric.
 
 ---
 
@@ -34,13 +34,13 @@ Laurel is a city in Yellowstone County, Montana, located along Interstate 90 app
 
 ## Local Industry & Economy
 
-Laurel's economy is anchored by the BNSF Railway yard (largest terminal between Minneapolis and Seattle), the CHS Inc. Laurel Refinery (~60,000 barrels/day), and the Laurel School District (~1,800 students, 357 staff). Agriculture, retail, and health care round out employment. Median household income: $66,382 (2023). NorthWestern Energy's Yellowstone County Generating Station (175 MW) began operation in 2024. (Source: Grokipedia)
+Laurel's economy is anchored by the BNSF Railway yard (largest terminal between Minneapolis and Seattle), the CHS Inc. Laurel Refinery (~60,000 barrels/day), and the Laurel School District (~1,800 students, 357 staff). Agriculture, retail, and health care round out employment. Median household income: $66,382 (2023). NorthWestern Energy's Yellowstone County Generating Station (175 MW) began operation in 2024.
 
 ---
 
 ## History & Heritage
 
-Settlement began in 1879 along the Yellowstone River. The 1877 Battle of Canyon Creek, involving Nez Perce and U.S. Cavalry, occurred ~7 miles north. Northern Pacific Railway arrived in 1882; the community was renamed Laurel in 1882. By 1890, Laurel served as the convergence point for Northern Pacific, Great Northern, and Chicago, Burlington & Quincy lines. Incorporated August 20, 1908. Laurel Leaf Refinery constructed in the late 1920s. German POW camp operated at Riverside Park during WWII. (Source: Grokipedia)
+Settlement began in 1879 along the Yellowstone River. The 1877 Battle of Canyon Creek, involving Nez Perce and U.S. Cavalry, occurred ~7 miles north. Northern Pacific Railway arrived in 1882; the community was renamed Laurel in 1882. By 1890, Laurel served as the convergence point for Northern Pacific, Great Northern, and Chicago, Burlington & Quincy lines. Incorporated August 20, 1908. Laurel Leaf Refinery constructed in the late 1920s. German POW camp operated at Riverside Park during WWII.
 
 ---
 
@@ -61,8 +61,3 @@ Laurel offers limited commercial lodging; many visitors stay in Billings. Campin
 
 Ready to explore Laurel? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Laurel,_Montana), U.S. Census Bureau*

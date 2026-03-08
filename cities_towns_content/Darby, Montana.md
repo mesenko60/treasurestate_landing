@@ -19,7 +19,7 @@ Nestled in the spectacular Bitterroot mountains of western Montana, Darby is a p
 
 ## Notable People & Pop Culture
 
-- **First All-Woman Town Council** – In 1930, Darby elected the first all-woman town council in Montana (Source: Grokipedia, Wikipedia)
+- **First All-Woman Town Council** – In 1930, Darby elected the first all-woman town council in Montana
 - **Officer Dylan Edmunds** – Local law enforcement officer who graduated from the Montana Law Enforcement Academy, representing Darby's commitment to community service
 - **Salish Native Americans** – The original inhabitants of the area who called the region south of Darby "nɫpapʔá" in their language
 - **Yellowstone TV Series** – While not filmed directly in Darby, the popular series is filmed in the Bitterroot Valley region, bringing attention to the area's stunning landscapes and western heritage
@@ -70,3 +70,4 @@ Darby offers a variety of accommodations that capture the town's western charm a
 ## Plan Your Visit
 
 Ready to explore Darby? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. From thrilling outdoor activities to authentic western heritage, this small frontier town offers big experiences for every traveler seeking the true spirit of Montana.
+

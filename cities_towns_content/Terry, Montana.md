@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~TBD (Source: U.S. Census Bureau estimates)
+- **Population:** ~TBD
 - **County:** TBD County
 - **Elevation:** TBD ft
 - **Known For:** Historical agricultural roots, stunning Montana landscapes, and quiet small-town charm.
@@ -34,3 +34,4 @@ Because Terry is a smaller, residential community, traditional commercial lodgin
 - **Local Motels:** There may be small, independent motels in or near town offering basic accommodations for highway travelers and hunters.
 - **Nearby Cities:** Many visitors choose to stay in larger regional hubs a short drive away, utilizing Terry as a scenic day-trip destination.
 - **Camping:** For outdoor enthusiasts, nearby public lands often provide beautiful, rustic camping options.
+

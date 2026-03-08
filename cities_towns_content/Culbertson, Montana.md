@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~706 (Source: U.S. Census Bureau estimates)
+- **Population:** ~706
 - **County:** Roosevelt County
 - **Elevation:** 1,923 ft (586 m)
 - **Known For:** Agricultural heritage, proximity to the Missouri River, and nearby access to the Medicine Lake National Wildlife Refuge.
@@ -35,3 +35,4 @@ Despite its small size, Culbertson is an important waypoint on U.S. Highway 2 an
 - **Local Motels & Hotels:** The town features accommodations like The Kings Inn Motel and the Hi Line Inn & Suites, which provide comfortable, modern amenities for highway travelers and hunters.
 - **Culbertson RV Park:** Provides convenient hookups and spaces for those traveling via motorhome or camper.
 - **Regional Hubs:** For a wider variety of options, travelers sometimes stay in Sidney (to the south) or Williston, ND (to the east).
+

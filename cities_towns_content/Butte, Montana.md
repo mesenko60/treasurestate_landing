@@ -12,18 +12,18 @@ Nestled in the grandeur of the Rocky Mountains of Southwest Montana, between Yel
 - **Elevation:** 5,824 ft
 - **Known For:** Rich mining history (The Richest Hill on Earth), National Historic Landmark District, Irish heritage, resilience, and outdoor recreation.
 - **Nearby Landmarks:** Our Lady of the Rockies, World Museum of Mining, Berkeley Pit, Granite Mountain Memorial Overlook, Continental Divide National Scenic Trail
-- **Fun Fact:** An estimated 10,000 miles of underground tunnels lie beneath Butte. At peak (1896), Butte produced 51% of U.S. copper. The 1917 Speculator Mine disaster killed 168 miners—deadliest hard-rock mining event in U.S. history. The Dumas Brothel operated ~1890–1982. (Source: Grokipedia)
+- **Fun Fact:** An estimated 10,000 miles of underground tunnels lie beneath Butte. At peak (1896), Butte produced 51% of U.S. copper. The 1917 Speculator Mine disaster killed 168 miners—deadliest hard-rock mining event in U.S. history. The Dumas Brothel operated ~1890–1982.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **Evel Knievel** – Famed stunt performer, born in Butte. (Source: Grokipedia)
-- **Marcus Daly** – Irish-born miner who developed the Anaconda claim (1875); founded Anaconda Copper. (Source: Grokipedia)
-- **Frank Little** – IWW organizer lynched in Butte, August 1, 1917. (Source: Grokipedia)
-- **William A. Clark** – Copper magnate; the Copper King Mansion (1884–1888) was built for him. (Source: Grokipedia)
-- **Calamity Jane** – Legendary frontierswoman; her spirit embodies the region's lore. (Source: Grokipedia)
-- **"1923" (TV Series)** – Set in Butte; portrays the Dutton family during Prohibition and the Great Depression. (Source: Grokipedia)
+- **Evel Knievel** – Famed stunt performer, born in Butte.
+- **Marcus Daly** – Irish-born miner who developed the Anaconda claim (1875); founded Anaconda Copper.
+- **Frank Little** – IWW organizer lynched in Butte, August 1, 1917.
+- **William A. Clark** – Copper magnate; the Copper King Mansion (1884–1888) was built for him.
+- **Calamity Jane** – Legendary frontierswoman; her spirit embodies the region's lore.
+- **"1923" (TV Series)** – Set in Butte; portrays the Dutton family during Prohibition and the Great Depression.
 
 ---
 
@@ -44,7 +44,7 @@ Butte's economy, historically rooted in its rich mining heritage that once produ
 
 ## History & Heritage
 
-Butte, Montana, "The Richest Hill on Earth," has a storied past. Marcus Daly arrived in 1876 and discovered rich copper sulfides underlying silver veins; by 1896 Butte produced 51% of U.S. copper. The district yielded over $22 billion in production from the 1880s to 1980s. Irish laborers comprised up to one-quarter of the population by 1900; ethnic enclaves included Dublin Gulch and Cork Town. The Butte Miners' Union formed in 1878. The 1917 Granite Mountain/Speculator Mine fire killed 168 miners. The Berkeley Pit opened in 1955; mining ceased in 1982. Butte-Silver Bow consolidated in 1977—Montana's first city-county merger. The Uptown Historic District encompasses nearly 6,000 contributing properties. Montana Resources' Continental Pit resumed operations in 1986. The World Museum of Mining, Dumas Brothel Museum, and Mai Wah Museum preserve this heritage. (Source: Grokipedia)
+Butte, Montana, "The Richest Hill on Earth," has a storied past. Marcus Daly arrived in 1876 and discovered rich copper sulfides underlying silver veins; by 1896 Butte produced 51% of U.S. copper. The district yielded over $22 billion in production from the 1880s to 1980s. Irish laborers comprised up to one-quarter of the population by 1900; ethnic enclaves included Dublin Gulch and Cork Town. The Butte Miners' Union formed in 1878. The 1917 Granite Mountain/Speculator Mine fire killed 168 miners. The Berkeley Pit opened in 1955; mining ceased in 1982. Butte-Silver Bow consolidated in 1977—Montana's first city-county merger. The Uptown Historic District encompasses nearly 6,000 contributing properties. Montana Resources' Continental Pit resumed operations in 1986. The World Museum of Mining, Dumas Brothel Museum, and Mai Wah Museum preserve this heritage.
 
 ---
 
@@ -71,3 +71,4 @@ Butte offers a range of lodging options that reflect the city's character. The h
 ## Plan Your Visit
 
 Ready to explore Butte? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+

@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~829 (Source: U.S. Census Bureau estimates)
+- **Population:** ~829
 - **County:** Liberty County (County Seat)
 - **Elevation:** 3,283 ft (1,001 m)
 - **Known For:** Lake Elwell and Tiber Dam, rich agricultural heritage, and serving as the heart of Liberty County on Montana's Hi-Line.
@@ -35,3 +35,4 @@ Because of its remote location on the Hi-Line, lodging options in Chester are li
 - **Local Motels:** There are a few small, independent motels located in or near town offering basic, comfortable accommodations.
 - **Camping at Lake Elwell:** The most popular overnight option for visitors is camping. There are several developed campgrounds and marinas around Lake Elwell (Tiber Reservoir) south of town, providing stunning sunsets over the water.
 - **Nearby Hubs:** For those requiring major hotel chains, travelers typically stay in Havre (east) or Shelby (west).
+

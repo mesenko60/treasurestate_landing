@@ -11,17 +11,17 @@ Nestled in the heart of Montana's stunning Pintler Scenic Loop, Philipsburg beck
 - **Elevation:** 5,270 ft
 - **Known For:** Rich mining history (silver and sapphires), preserved Victorian architecture, gateway to Georgetown Lake and Pintler Wilderness, The Sweet Palace
 - **Nearby Landmarks:** Georgetown Lake, Discovery Ski Area, Granite Ghost Town State Park, Pintler Scenic Route, Anaconda-Pintler Wilderness
-- **Fun Fact:** Philipsburg was once growing at the rate of one house per day during its silver boom in the late 1860s. The Sweet Palace produces over 1,100 nostalgic confections daily—one of the largest candy stores in the Northwest. Philipsburg Theatre is Montana's oldest operating opera house (1891). The town won Sunset Magazine's 2015 Best Municipal Makeover award. (Source: Grokipedia, townofphilipsburgmt.com, Visit Montana)
+- **Fun Fact:** Philipsburg was once growing at the rate of one house per day during its silver boom in the late 1860s. The Sweet Palace produces over 1,100 nostalgic confections daily—one of the largest candy stores in the Northwest. Philipsburg Theatre is Montana's oldest operating opera house (1891). The town won Sunset Magazine's 2015 Best Municipal Makeover award.
 
 --
 ## Notable People & Pop Culture
 
-- **Philip Deidesheimer** – German mining engineer for whom the town is named; designed the Hope Smelter and platted the townsite in 1867. The St. Louis and Montana Mining Company invested $100,000 in the venture by 1865. (Source: Grokipedia)
-- **Kate Bosworth** – Married director Michael Polish at The Ranch at Rock Creek, Aug 31, 2013. (Source: Grokipedia, People.com)
-- **Scarlett Johansson** – Married Romain Dauriac in Philipsburg, Oct 1, 2014. (Source: Grokipedia, Vanity Fair)
-- **Richard Hugo** – Poem "Degrees of Gray in Philipsburg" (1975), from *What Thou Lovest Well, Remains American*, portrays the town's mining-era melancholy through vivid imagery of empty streets and faded dreams. (Source: Grokipedia)
-- **Zane Glenn Murfitt** – Montana Hall of Fame inductee for Fast Pitch Softball; State Championship 1949. (Source: Grokipedia)
-- **Films:** *Father Stu* (2022) and *The Call of the Wild* (2020) filmed in Philipsburg, leveraging the preserved 19th-century mining-era architecture. (Source: Grokipedia, IMDb)
+- **Philip Deidesheimer** – German mining engineer for whom the town is named; designed the Hope Smelter and platted the townsite in 1867. The St. Louis and Montana Mining Company invested $100,000 in the venture by 1865.
+- **Kate Bosworth** – Married director Michael Polish at The Ranch at Rock Creek, Aug 31, 2013.
+- **Scarlett Johansson** – Married Romain Dauriac in Philipsburg, Oct 1, 2014.
+- **Richard Hugo** – Poem "Degrees of Gray in Philipsburg" (1975), from *What Thou Lovest Well, Remains American*, portrays the town's mining-era melancholy through vivid imagery of empty streets and faded dreams.
+- **Zane Glenn Murfitt** – Montana Hall of Fame inductee for Fast Pitch Softball; State Championship 1949.
+- **Films:** *Father Stu* (2022) and *The Call of the Wild* (2020) filmed in Philipsburg, leveraging the preserved 19th-century mining-era architecture.
 
 --
 ## Top Things to Do in Philipsburg
@@ -34,7 +34,7 @@ Philipsburg's economy, once fiercely dominated by the adventurous and often peri
 --
 ## History & Heritage
 
-Step into a living chronicle of the American West in Philipsburg, a town whose very foundations are built upon the adventurous spirit of discovery and the relentless pursuit of fortune. Born from the silver rush of the 1860s, Philipsburg's saga began when prospectors, lured by whispers of rich veins, first struck silver south of the present-day town in 1864. The establishment of the Hope Mill and the ingenious engineering of Philip Deidesheimer, for whom the town is named, ignited a boom that saw Philipsburg spring to life, with structures rising at an astonishing pace—one building per day in the late 1880s. The Granite Mountain Mining Company shipped over $21 million in bullion between 1883 and 1898; the BiMetallic Mine added nearly $6.5 million. During World War I, the district's manganese mines produced up to 40% of U.S. output, peaking at over 127,000 tons shipped by 1918. The Philipsburg Historic District was added to the National Register of Historic Places in 1982, encompassing 87 acres of commercial, residential, governmental, and religious buildings. The 21st-century revival earned national recognition: Sunset Magazine's 2015 Best Municipal Makeover award acknowledged the town's transformation from a declining mining community into a vibrant tourist hub. The Philipsburg Brewing Company opened in 2012 in a restored historic vault; the Broadway Hotel reopened in 2003. Though the silver boom eventually waned, the discovery of high-quality sapphires added another glittering chapter, ensuring Philipsburg's legacy as a gem of the Treasure State. (Source: Grokipedia, NPS, townofphilipsburgmt.com)
+Step into a living chronicle of the American West in Philipsburg, a town whose very foundations are built upon the adventurous spirit of discovery and the relentless pursuit of fortune. Born from the silver rush of the 1860s, Philipsburg's saga began when prospectors, lured by whispers of rich veins, first struck silver south of the present-day town in 1864. The establishment of the Hope Mill and the ingenious engineering of Philip Deidesheimer, for whom the town is named, ignited a boom that saw Philipsburg spring to life, with structures rising at an astonishing pace—one building per day in the late 1880s. The Granite Mountain Mining Company shipped over $21 million in bullion between 1883 and 1898; the BiMetallic Mine added nearly $6.5 million. During World War I, the district's manganese mines produced up to 40% of U.S. output, peaking at over 127,000 tons shipped by 1918. The Philipsburg Historic District was added to the National Register of Historic Places in 1982, encompassing 87 acres of commercial, residential, governmental, and religious buildings. The 21st-century revival earned national recognition: Sunset Magazine's 2015 Best Municipal Makeover award acknowledged the town's transformation from a declining mining community into a vibrant tourist hub. The Philipsburg Brewing Company opened in 2012 in a restored historic vault; the Broadway Hotel reopened in 2003. Though the silver boom eventually waned, the discovery of high-quality sapphires added another glittering chapter, ensuring Philipsburg's legacy as a gem of the Treasure State.
 
 --
 ## Seasonal Activities & Local Events
@@ -58,7 +58,3 @@ After a thrilling day of adventuring in and around Philipsburg, you'll find a we
 
 Ready to explore Philipsburg? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
 
----
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Philipsburg,_Montana), townofphilipsburgmt.com, Visit Montana, NPS National Register, IMDb, People.com, Vanity Fair*

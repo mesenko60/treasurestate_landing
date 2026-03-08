@@ -69,6 +69,3 @@ Columbia Falls offers a diverse range of accommodations that cater to every type
 
 Ready to explore Columbia Falls? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. Whether you're seeking thrilling outdoor experiences in Glacier National Park, a relaxing float down the Flathead River, or an authentic taste of Montana culture, Columbia Falls offers the perfect blend of wilderness access and small-town hospitality.
 
----
-
-*Sources: Columbia Falls Area Chamber of Commerce, City of Columbia Falls, Columbia Falls Historical Society, Montana Office of Tourism, Grokipedia, Tripadvisor*

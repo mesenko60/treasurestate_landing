@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~318 (Source: U.S. Census Bureau estimates)
+- **Population:** ~318
 - **County:** Teton County
 - **Elevation:** 3,694 ft (1,126 m)
 - **Known For:** Being a premier wheat-growing community on the rolling plains of central Montana.
@@ -33,3 +33,4 @@ As a small farming community, lodging options within Dutton are very limited.
 - **Great Falls (35 miles Southeast):** The overwhelming majority of visitors exploring the area base themselves in Great Falls, which offers dozens of major hotel chains, independent motels, and RV parks.
 - **Conrad (45 miles Northwest):** Travelers heading north along I-15 can find several comfortable motels and RV accommodations in Conrad.
 - **Local Vacation Rentals:** During hunting season, some local farmhouses or cabins may be available for short-term rent in the surrounding rural area.
+

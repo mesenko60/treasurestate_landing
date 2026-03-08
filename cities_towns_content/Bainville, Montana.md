@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~313 (Source: U.S. Census Bureau estimates)
+- **Population:** ~313
 - **County:** Roosevelt County
 - **Founded:** 1904 (Post office opened, named after Charles Bain)
 - **Elevation:** 1,952 ft (595 m)
@@ -35,3 +35,4 @@ Because of its very small size, lodging directly within Bainville is extremely l
 - **Culbertson (West):** Offers a few small motels and local inns.
 - **Sidney (South):** Provides a much wider array of standard hotels, motels, and dining options.
 - **Williston, ND (East):** Offers major hotel chains and comprehensive amenities for travelers exploring the broader region.
+

@@ -1,6 +1,6 @@
 ### Quick Facts
 
-- **Population:** ~215 (Source: U.S. Census Bureau estimates)
+- **Population:** ~215
 - **County:** Fergus County
 - **Elevation:** 3,615 ft (1,102 m)
 - **Known For:** Being a leading agricultural community in the Judith Basin, fantastic upland bird hunting, and serving as the turnaround point for the famous Charlie Russell Chew Choo.
@@ -34,3 +34,4 @@ Because Denton is a very small, deeply rural community, it does not host major c
 - **Lewistown (35 miles Southeast):** The vast majority of visitors to the Denton area stay in Lewistown, which boasts several excellent hotels (like the historic Calvert Hotel), modern motels, bed and breakfasts, and extensive dining options.
 - **Local Vacation Rentals/Hunters' Cabins:** During the fall hunting season, some local property owners rent out farmhouses or cabins to visiting hunters.
 - **Camping:** For those equipped for the outdoors, there are beautiful camping opportunities in the nearby Lewis and Clark National Forest (such as the Dry Wolf Creek area).
+

@@ -12,16 +12,16 @@ Embark on an unforgettable journey in West Yellowstone, Montana, a vibrant town 
 - **Elevation:** 6,660 ft
 - **Known For:** Being the West Entrance to Yellowstone National Park, world-class snowmobiling, blue-ribbon trout fishing, Grizzly & Wolf Discovery Center.
 - **Nearby Landmarks:** Yellowstone National Park (Old Faithful, Grand Prismatic Spring, Grand Canyon of the Yellowstone), Hebgen Lake, Gallatin National Forest.
-- **Fun Fact:** West Yellowstone holds the record for the all-time lowest temperature recorded in a residential community in the contiguous United States at -66°F (-54°C), set February 9, 1933. Approximately 75% of Yellowstone National Park's visitors pass through the West Entrance annually; the park welcomed 4.74 million visitors in 2024. The town was originally named Riverside (1908), then Yellowstone (1909), before adopting West Yellowstone in 1920 to avoid mail confusion with the park. (Source: Grokipedia)
+- **Fun Fact:** West Yellowstone holds the record for the all-time lowest temperature recorded in a residential community in the contiguous United States at -66°F (-54°C), set February 9, 1933. Approximately 75% of Yellowstone National Park's visitors pass through the West Entrance annually; the park welcomed 4.74 million visitors in 2024. The town was originally named Riverside (1908), then Yellowstone (1909), before adopting West Yellowstone in 1920 to avoid mail confusion with the park.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **John Colter** – Lewis and Clark Expedition member who became the first non-Native person to describe Yellowstone's geothermal features and vast wilderness west of the Continental Divide during his solo winter journey in 1807–1808. (Source: Grokipedia)
-- **Nathaniel P. Langford** and the **Washburn-Langford-Doane Expedition** – Pivotal in bringing Yellowstone's wonders to national attention and championing the creation of Yellowstone National Park in 1872, indirectly shaping West Yellowstone as a key access point. (Source: Grokipedia)
-- **Iron Will** (1994) – Disney adventure film shot in West Yellowstone's snowy landscapes, highlighting the region's rugged terrain as a backdrop for survival narratives. (Source: Grokipedia)
-- The town and its surrounding landscapes have served as inspiration and backdrop for numerous **nature documentaries and photography** capturing the essence of Yellowstone. (Source: Grokipedia)
+- **John Colter** – Lewis and Clark Expedition member who became the first non-Native person to describe Yellowstone's geothermal features and vast wilderness west of the Continental Divide during his solo winter journey in 1807–1808.
+- **Nathaniel P. Langford** and the **Washburn-Langford-Doane Expedition** – Pivotal in bringing Yellowstone's wonders to national attention and championing the creation of Yellowstone National Park in 1872, indirectly shaping West Yellowstone as a key access point.
+- **Iron Will** (1994) – Disney adventure film shot in West Yellowstone's snowy landscapes, highlighting the region's rugged terrain as a backdrop for survival narratives.
+- The town and its surrounding landscapes have served as inspiration and backdrop for numerous **nature documentaries and photography** capturing the essence of Yellowstone.
 
 ---
 
@@ -42,7 +42,7 @@ West Yellowstone's economy is overwhelmingly driven by tourism, thanks to its st
 
 ## History & Heritage
 
-West Yellowstone's story began in June 1908 with the completion of the Oregon Short Line Railroad branch from St. Anthony, Idaho, transforming a remote area into a bustling entry point for Yellowstone visitors. The first passenger train arrived June 11, 1908; the construction site was informally known as "Boundary" due to its location at the Montana-Idaho line and park edge. The U.S. Postal Service established a post office named Riverside in October 1908, renamed Yellowstone in 1909, and West Yellowstone in 1920 to avoid mail confusion with the park. Railroad service profoundly shaped early development until passenger trains ceased in 1960. The historic Union Pacific Depot, built in 1909, now houses the Museum of the Yellowstone with exhibits on railroad history, early park visitation, and transportation evolution. The Union Pacific Dining Lodge, constructed in 1925, serves as an event venue. By 1973, the town boasted 71 motels within 24 blocks to accommodate over 2.5 million park visitors passing through the west entrance. West Yellowstone was formally incorporated June 6, 1966. The town features a subarctic climate (Köppen Dfc) with annual snowfall around 150 inches and a record high of 97°F (August 11, 2018). (Source: Grokipedia)
+West Yellowstone's story began in June 1908 with the completion of the Oregon Short Line Railroad branch from St. Anthony, Idaho, transforming a remote area into a bustling entry point for Yellowstone visitors. The first passenger train arrived June 11, 1908; the construction site was informally known as "Boundary" due to its location at the Montana-Idaho line and park edge. The U.S. Postal Service established a post office named Riverside in October 1908, renamed Yellowstone in 1909, and West Yellowstone in 1920 to avoid mail confusion with the park. Railroad service profoundly shaped early development until passenger trains ceased in 1960. The historic Union Pacific Depot, built in 1909, now houses the Museum of the Yellowstone with exhibits on railroad history, early park visitation, and transportation evolution. The Union Pacific Dining Lodge, constructed in 1925, serves as an event venue. By 1973, the town boasted 71 motels within 24 blocks to accommodate over 2.5 million park visitors passing through the west entrance. West Yellowstone was formally incorporated June 6, 1966. The town features a subarctic climate (Köppen Dfc) with annual snowfall around 150 inches and a record high of 97°F (August 11, 2018).
 
 ---
 
@@ -64,14 +64,3 @@ West Yellowstone is located in southwestern Montana, at the western entrance of 
 
 As a premier gateway to Yellowstone National Park, West Yellowstone offers a wide array of lodging options to suit every preference and budget, ensuring visitors have a comfortable base for their adventures. Accommodations range from well-known hotel and motel chains providing reliable comfort and amenities, to charming independent lodges and inns that offer a more local, rustic Montana experience. For those seeking more space or a home-like atmosphere, numerous vacation rentals, cabins, and cottages are available, often nestled in scenic spots. RV parks and campgrounds cater to travelers looking to connect more closely with nature, providing facilities for various camping styles. Many establishments are conveniently located within walking distance of shops, restaurants, and the park entrance. Given the town's popularity, especially during peak summer and winter seasons, booking accommodations well in advance is highly recommended to secure the best choices and rates. The local Chamber of Commerce and visitor information center are excellent resources for finding up-to-date lodging information and availability.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/West_Yellowstone,_Montana), National Park Service, U.S. Census Bureau*
-
----
-
-## Plan Your Visit
-
-Ready to explore West Yellowstone? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.

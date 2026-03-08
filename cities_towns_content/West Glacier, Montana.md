@@ -70,3 +70,4 @@ Rest your adventurous spirit in accommodations that range from historic grandeur
 ## Plan Your Visit
 
 Ready to explore West Glacier? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country.
+

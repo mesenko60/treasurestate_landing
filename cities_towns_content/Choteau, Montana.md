@@ -14,17 +14,17 @@ Nestled at the foot of the majestic Rocky Mountain Front, Choteau stands as Mont
 - **Elevation:** 3,816 ft
 - **Known For:** Gateway to Rocky Mountain Front, dinosaur paleontology, bird watching at Freezout Lake
 - **Nearby Landmarks:** Rocky Mountain Front, Teton Pass Ski Area, Freezout Lake, Old Trail Museum
-- **Fun Fact:** Named after French fur merchant and explorer Pierre Chouteau, Jr. Egg Mountain, discovered in the late 1970s, provided empirical evidence of dinosaur nesting behavior and parental care—the Maiasaura fossils reshaped scientific understanding of reptilian reproduction. Freezout Lake hosts up to 150,000 snow geese during March and April migrations. Chinook winds near Choteau reached 143 mph on February 21, 2002. (Source: Grokipedia)
+- **Fun Fact:** Named after French fur merchant and explorer Pierre Chouteau, Jr. Egg Mountain, discovered in the late 1970s, provided empirical evidence of dinosaur nesting behavior and parental care—the Maiasaura fossils reshaped scientific understanding of reptilian reproduction. Freezout Lake hosts up to 150,000 snow geese during March and April migrations. Chinook winds near Choteau reached 143 mph on February 21, 2002.
 
 ---
 
 ## Notable People & Pop Culture
 
-- **David Letterman** – Iconic late-night talk show host who owns a 2,700-acre ranch near Choteau; married at the Teton County Courthouse in Choteau in 2009. (Source: Grokipedia)
-- **Jack Horner** – Paleontologist who discovered Egg Mountain nearby in the 1970s, one of the world's most important dinosaur nesting sites; the Maiasaura became Montana's state fossil. (Source: Grokipedia)
-- **A.B. Hamilton** – Established the trading post in 1873 that became Choteau; became the area's first postmaster in 1875. (Source: Grokipedia)
-- **A.B. Guthrie Jr.** – Pulitzer Prize-winning novelist known for authentic portrayals of the American West. (Source: Grokipedia)
-- **John Edward Erickson** – Former Governor of Montana, born in Stoughton near Choteau. (Source: Grokipedia)
+- **David Letterman** – Iconic late-night talk show host who owns a 2,700-acre ranch near Choteau; married at the Teton County Courthouse in Choteau in 2009.
+- **Jack Horner** – Paleontologist who discovered Egg Mountain nearby in the 1970s, one of the world's most important dinosaur nesting sites; the Maiasaura became Montana's state fossil.
+- **A.B. Hamilton** – Established the trading post in 1873 that became Choteau; became the area's first postmaster in 1875.
+- **A.B. Guthrie Jr.** – Pulitzer Prize-winning novelist known for authentic portrayals of the American West.
+- **John Edward Erickson** – Former Governor of Montana, born in Stoughton near Choteau.
 
 ---
 
@@ -60,7 +60,7 @@ The rich tapestry of Choteau's history begins long before the town itself existe
 
 The town's namesake, Pierre Chouteau, Jr., was a prominent French fur merchant, trader, and explorer whose influence extended throughout the American West. Though Chouteau himself never established the town, his legacy lives on in its name, just as it does in Chouteau County, Montana, and the South Dakota communities of Fort Pierre and Pierre.
 
-Choteau originated as a trading post established in 1873 by A.B. Hamilton on the Teton River near the Old Agency. Hamilton partnered with I.N. Hazlett; goods were transported by steamboat from Fort Benton to supply the Blackfeet. Hazlett platted the townsite on August 29, 1883. The name honors Pierre Chouteau Jr., a prominent 19th-century French fur trader. Choteau was incorporated as a city in 1913. The region was part of Piegan (Pikuni) Blackfeet territory; the Old North Trail passed through or near the area. In the late 1970s, Jack Horner's discovery of Maiasaura fossils at Egg Mountain in the Two Medicine Formation provided empirical evidence of dinosaur nesting behavior and parental care. The Old Trail Museum houses Maiasaura skeletons and eggshells. Teton County agriculture generated $51.2 million in value-added output in 2017; the county has long led Montana in barley production. (Source: Grokipedia)
+Choteau originated as a trading post established in 1873 by A.B. Hamilton on the Teton River near the Old Agency. Hamilton partnered with I.N. Hazlett; goods were transported by steamboat from Fort Benton to supply the Blackfeet. Hazlett platted the townsite on August 29, 1883. The name honors Pierre Chouteau Jr., a prominent 19th-century French fur trader. Choteau was incorporated as a city in 1913. The region was part of Piegan (Pikuni) Blackfeet territory; the Old North Trail passed through or near the area. In the late 1970s, Jack Horner's discovery of Maiasaura fossils at Egg Mountain in the Two Medicine Formation provided empirical evidence of dinosaur nesting behavior and parental care. The Old Trail Museum houses Maiasaura skeletons and eggshells. Teton County agriculture generated $51.2 million in value-added output in 2017; the county has long led Montana in barley production.
 
 Throughout its history, Choteau has maintained a strong sense of community and self-reliance. As one local saying captured on the city's website notes, "While there are many things to see and do in Choteau, the true treasure is the citizens of this small Montana town." This spirit is embodied in the town's motto: "Where neighbors helping neighbors is not a tagline, but a way of life."
 
@@ -104,14 +104,3 @@ For outdoor enthusiasts preferring to sleep under the stars, several campgrounds
 
 As the official tourism website notes, "From a full-service motel with a swimming pool and conference facility to mom-and-pop businesses with local friendliness, Choteau has a room for you!" This variety ensures that every visitor can find accommodations that match their preferences and budget. During peak tourist season, particularly summer months and during special events, advance reservations are highly recommended as this gateway to adventure becomes increasingly popular with travelers seeking authentic Montana experiences away from the crowds.
 
----
-
-## Data Collection
-
-*Sources: Grokipedia (https://grokipedia.com/page/Choteau,_Montana), U.S. Census Bureau*
-
----
-
-## Plan Your Visit
-
-Ready to explore Choteau? Add it to your Montana travel itinerary and discover the charm, history, and adventure waiting in Big Sky Country. This little town at the foot of the Rocky Mountain Front offers the perfect blend of outdoor adventure, western heritage, and small-town hospitality—all without the crowds of Montana's more famous destinations. Whether you come for the dinosaurs, the birds, the mountains, or simply to experience authentic Montana, Choteau welcomes you to a place where adventure awaits around every corner.
