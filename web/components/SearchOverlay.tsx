@@ -15,16 +15,26 @@ type SR = FuseResult<SearchEntry>;
 
 const TYPE_LABELS: Record<string, string> = {
   town: 'Towns',
-  guide: 'Guides & Planners',
+  topic: 'Town Guides',
+  guide: 'Travel Guides',
   ranking: 'Best-Of Rankings',
+  comparison: 'Town Comparisons',
+  hotspring: 'Hot Springs',
+  campground: 'Campgrounds',
+  trail: 'Trails & Parks',
   article: 'Articles',
   tool: 'Tools',
 };
 
 const TYPE_ICONS: Record<string, string> = {
   town: '🏔️',
+  topic: '📊',
   guide: '🧭',
   ranking: '🏆',
+  comparison: '⚖️',
+  hotspring: '♨️',
+  campground: '⛺',
+  trail: '🥾',
   article: '📖',
   tool: '⚙️',
 };
