@@ -482,7 +482,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <p style={{ fontSize: '0.82rem', color: '#aaa', fontStyle: 'italic', marginBottom: '0.5rem' }}>
               All photography original and locally captured.
             </p>
-            <Link href="/Information/why-treasure-state" className="hp-about-link">Read the full story →</Link>
+            <Link href="/information/why-treasure-state" className="hp-about-link">Read the full story →</Link>
           </div>
         </section>
 

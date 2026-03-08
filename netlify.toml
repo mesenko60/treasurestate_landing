@@ -113,59 +113,59 @@
   status = 301
   force = true
 
-# --- Lowercase /information/ → canonical /Information/ ---
+# --- Uppercase /Information/ → canonical /information/ (Netlify lowercases static URLs) ---
 [[redirects]]
-  from = "/information/*"
-  to = "/Information/:splat"
+  from = "/Information/*"
+  to = "/information/:splat"
   status = 301
   force = true
 
 # --- Information pages at wrong path ---
 [[redirects]]
   from = "/montana-facts"
-  to = "/Information/montana-facts/"
+  to = "/information/montana-facts/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/montana-facts.html"
-  to = "/Information/montana-facts/"
+  to = "/information/montana-facts/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/geology-of-western-montana"
-  to = "/Information/geology-of-western-montana/"
+  to = "/information/geology-of-western-montana/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/geology-of-western-montana.html"
-  to = "/Information/geology-of-western-montana/"
+  to = "/information/geology-of-western-montana/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/mining-history-of-montana"
-  to = "/Information/mining-history-of-montana/"
+  to = "/information/mining-history-of-montana/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/mining-history-of-montana.html"
-  to = "/Information/mining-history-of-montana/"
+  to = "/information/mining-history-of-montana/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/story-of-montana-vigilantes"
-  to = "/Information/story-of-montana-vigilantes/"
+  to = "/information/story-of-montana-vigilantes/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/story-of-montana-vigilantes.html"
-  to = "/Information/story-of-montana-vigilantes/"
+  to = "/information/story-of-montana-vigilantes/"
   status = 301
   force = true
 

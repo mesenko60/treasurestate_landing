@@ -40,7 +40,7 @@ copyDir(path.join(repoRoot, 'includes'), path.join(publicDir, 'includes'));
 
 // Copy js/ to root for legacy scripts; also mirror under Information/js for relative paths
 copyDir(path.join(repoRoot, 'js'), path.join(publicDir, 'js'));
-copyDir(path.join(repoRoot, 'js'), path.join(publicDir, 'Information', 'js'));
+copyDir(path.join(repoRoot, 'js'), path.join(publicDir, 'information', 'js'));
 
 // Copy root _redirects if present
 const redirectsSrc = path.join(repoRoot, '_redirects');

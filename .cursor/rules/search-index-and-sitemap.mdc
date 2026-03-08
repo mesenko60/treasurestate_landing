@@ -17,7 +17,7 @@ When adding new content to the site, you MUST ensure it is discoverable via sear
 | New planner/guide page | Add to `planners` array | Add `add(baseUrl + '/planners/your-page/', ...)` |
 | New best-of ranking | Add to `rankings` array | Auto-discovered from `out/best-of/` |
 | New comparison pair | Add to `COMPARISON_PAIRS` | Auto-discovered from `out/compare/` |
-| New Information article | Add to `infoPages` array | Auto-discovered from `out/Information/` |
+| New Information article | Add to `infoPages` array | Auto-discovered from `out/information/` |
 | New topic type (e.g. climate) | Add to `topicLabels` in index | Auto-discovered from town topic dirs |
 | New tool page | Add to "Other pages" section | Add explicit `add()` if not under scanned dirs |
 

@@ -268,11 +268,11 @@ function fmtPop(n) {
 
   // ═══ 11. INFORMATION ARTICLES ═══
   const infoPages = [
-    { title: 'Montana Facts', desc: 'Key facts about the Treasure State', url: '/Information/montana-facts/', kw: 'facts statistics state capital population area' },
-    { title: 'Mining History of Montana', desc: 'Gold, silver, and copper — the story of Montana mining', url: '/Information/mining-history-of-montana/', kw: 'mining gold silver copper Butte Anaconda smelter' },
-    { title: 'Geology of Western Montana', desc: 'Ancient seas, volcanic rock, and glacial floods', url: '/Information/geology-of-western-montana/', kw: 'geology rocks glacial Lake Missoula Sapphire Mountains' },
-    { title: 'Story of the Montana Vigilantes', desc: 'Frontier justice in the 1860s gold camps', url: '/Information/story-of-montana-vigilantes/', kw: 'vigilantes Henry Plummer Virginia City Bannack frontier justice' },
-    { title: 'Why "The Treasure State"?', desc: "The story behind Montana's nickname", url: '/Information/why-treasure-state/', kw: 'treasure state nickname origin history gold silver sapphire Yogo' },
+    { title: 'Montana Facts', desc: 'Key facts about the Treasure State', url: '/information/montana-facts/', kw: 'facts statistics state capital population area' },
+    { title: 'Mining History of Montana', desc: 'Gold, silver, and copper — the story of Montana mining', url: '/information/mining-history-of-montana/', kw: 'mining gold silver copper Butte Anaconda smelter' },
+    { title: 'Geology of Western Montana', desc: 'Ancient seas, volcanic rock, and glacial floods', url: '/information/geology-of-western-montana/', kw: 'geology rocks glacial Lake Missoula Sapphire Mountains' },
+    { title: 'Story of the Montana Vigilantes', desc: 'Frontier justice in the 1860s gold camps', url: '/information/story-of-montana-vigilantes/', kw: 'vigilantes Henry Plummer Virginia City Bannack frontier justice' },
+    { title: 'Why "The Treasure State"?', desc: "The story behind Montana's nickname", url: '/information/why-treasure-state/', kw: 'treasure state nickname origin history gold silver sapphire Yogo' },
   ];
   for (const p of infoPages) {
     entries.push({ type: 'article', title: p.title, description: p.desc, url: p.url, keywords: p.title + ' ' + p.desc + ' ' + p.kw });

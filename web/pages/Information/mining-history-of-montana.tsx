@@ -11,13 +11,13 @@ export default function MiningHistoryOfMontana() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://treasurestate.com/Information/mining-history-of-montana/" />
+        <link rel="canonical" href="https://treasurestate.com/information/mining-history-of-montana/" />
         <title>Mining History of Montana - Treasure State</title>
         <meta name="description" content="Explore the rich and complex history of gold mining in Montana, from its earliest discoveries to its lasting legacy." />
         <meta name="keywords" content="Montana mining history, gold rush, Bannack, Virginia City, Alder Gulch, Last Chance Gulch, Butte, copper mining, Montana Vigilantes, environmental legacy, Treasure State" />
         <meta property="og:title" content="Mining History of Montana - Treasure State" />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <meta property="og:url" content="https://treasurestate.com/Information/mining-history-of-montana/" />
+        <meta property="og:url" content="https://treasurestate.com/information/mining-history-of-montana/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
@@ -70,7 +70,7 @@ export default function MiningHistoryOfMontana() {
           
           <p>Yet these riches came with their toll. The mining frontier was a place where law arrived after disorder had already established squatter's rights. In the early days at Bannack and Virginia City, with the nearest federal court in Denver and no effective territorial government, the miners created their own legal framework in the tradition of the California diggings. Claim dimensions were established, water rights allocated, and basic rules of conduct enforced by miners' courts that dispensed rapid if rough justice.</p>
           
-          <p>But for serious crimes, the miners had few effective remedies until they took matters into their own hands with the formation of the <a href="/Information/story-of-montana-vigilantes" className="mining-link">Montana Vigilantes</a> in December 1863. The story has been told and retold, how the secret society identified and dispatched road agents who had been terrorizing the trails between Bannack and Virginia City, robbing and murdering travelers. Between December 1863 and February 1864, the Vigilantes hanged at least twenty-two men, including Henry Plummer, the sheriff of Bannack who was alleged to be the leader of the road agent gang.</p>
+          <p>But for serious crimes, the miners had few effective remedies until they took matters into their own hands with the formation of the <a href="/information/story-of-montana-vigilantes" className="mining-link">Montana Vigilantes</a> in December 1863. The story has been told and retold, how the secret society identified and dispatched road agents who had been terrorizing the trails between Bannack and Virginia City, robbing and murdering travelers. Between December 1863 and February 1864, the Vigilantes hanged at least twenty-two men, including Henry Plummer, the sheriff of Bannack who was alleged to be the leader of the road agent gang.</p>
           
           <p>Beyond the violence lay the quieter devastation of the land itself. Hydraulic mining introduced high-pressure water cannons that literally washed away hillsides. Sluice boxes and stamp mills used mercury to amalgamate with gold, sending the toxic metal downstream. Smelters processing ore belched arsenic and lead into mountain air. Forests were felled for timbers to shore up mine tunnels and feed the voracious appetite of stamp mills and smelter furnaces. The scars from this first massive resource extraction remain written on Montana's landscape today, in tailings piles that still leach acid, in stream courses rearranged by human hands, in bald mountainsides that have yet to heal after a century and a half.</p>
           

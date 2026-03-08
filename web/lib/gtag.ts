@@ -45,7 +45,7 @@ export function getContentGroup(path: string): string {
   if (/^\/best-of\//.test(path)) return 'ranking';
   if (path === '/compare' || path === '/compare/') return 'compare_tool';
   if (/^\/compare\//.test(path)) return 'comparison';
-  if (/^\/Information\//.test(path)) return 'legacy';
+  if (/^\/information\//.test(path)) return 'legacy';
   return 'other';
 }
 

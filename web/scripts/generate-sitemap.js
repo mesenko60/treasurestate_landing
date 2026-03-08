@@ -58,7 +58,7 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
     }
   }
 
-  const infoDir = path.join(outDir, 'Information');
+  const infoDir = path.join(outDir, 'information');
   if (fs.existsSync(infoDir)) {
     for (const f of fs.readdirSync(infoDir)) {
       const full = path.join(infoDir, f);
@@ -66,7 +66,7 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
         (fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.html')));
       if (isPage) {
         const slug = f.replace('.html', '');
-        add(`${baseUrl}/Information/${slug}/`, 0.7, 'monthly');
+        add(`${baseUrl}/information/${slug}/`, 0.7, 'monthly');
       }
     }
   }

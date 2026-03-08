@@ -40,11 +40,11 @@ const SECTIONS = [
     title: 'Montana History & Facts',
     description: 'Stories and facts that make Montana unique.',
     links: [
-      { href: '/Information/montana-facts', label: 'Montana Facts', desc: 'Key facts about the Treasure State' },
-      { href: '/Information/why-treasure-state', label: 'Why "Treasure State"?', desc: 'The story behind the name' },
-      { href: '/Information/mining-history-of-montana', label: 'Mining History', desc: 'Gold, silver, and copper' },
-      { href: '/Information/geology-of-western-montana', label: 'Geology', desc: 'Ancient seas and glacial floods' },
-      { href: '/Information/story-of-montana-vigilantes', label: 'Montana Vigilantes', desc: 'Frontier justice in the 1860s' },
+      { href: '/information/montana-facts', label: 'Montana Facts', desc: 'Key facts about the Treasure State' },
+      { href: '/information/why-treasure-state', label: 'Why "Treasure State"?', desc: 'The story behind the name' },
+      { href: '/information/mining-history-of-montana', label: 'Mining History', desc: 'Gold, silver, and copper' },
+      { href: '/information/geology-of-western-montana', label: 'Geology', desc: 'Ancient seas and glacial floods' },
+      { href: '/information/story-of-montana-vigilantes', label: 'Montana Vigilantes', desc: 'Frontier justice in the 1860s' },
     ],
   },
 ];
