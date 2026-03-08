@@ -86,6 +86,14 @@ export default function Planners() {
               </div>
             </Link>
 
+            <Link href="/planners/hunting-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Montana Hunting Guide</h3>
+                <p>Season dates, license fees, 21 WMAs and public hunting areas, and species profiles for deer, elk, antelope, bear, turkey, waterfowl, and more.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
             <Link href="/planners/summer-road-trips" style={{ textDecoration: 'none' }}>
               <div className="planner-card">
                 <h3>Summer Road Trips</h3>

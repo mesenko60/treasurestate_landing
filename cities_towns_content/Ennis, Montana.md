@@ -1,7 +1,7 @@
 # Ennis, Montana: Where Adventure Flows with the Madison River
 Reel in the Memories
 
-Nestled between the majestic peaks of southwest Montana, Ennis invites adventurers to discover a pristine wilderness paradise where the legendary Madison River carves its path through a valley the Native Americans aptly named "Land of the Shining Mountains." This charming frontier town offers an authentic taste of the Old West while serving as the gateway to world-class outdoor experiences. Whether you're casting a line into the crystal-clear waters that have made this region a fly-fishing mecca, exploring the vibrant downtown filled with western character, or using Ennis as your basecamp for Yellowstone adventures, this hidden gem delivers an exhilarating Montana experience that will leave you yearning to return.
+Nestled between the majestic peaks of southwest Montana, Ennis invites adventurers to discover a pristine wilderness paradise where the legendary Madison River carves its path through a valley the Native Americans aptly named "Land of the Shining Mountains." This charming frontier town offers an authentic taste of the Old West while serving as the gateway to world-class outdoor experiences. Whether you're casting a line into the crystal-clear waters that have made this region a fly-fishing mecca, exploring the vibrant downtown filled with western character, or using Ennis as your basecamp for Yellowstone adventures, this hidden gem delivers an exhilarating Montana experience that will leave you yearning to return. The nearby Wall Creek WMA is a premier [Montana hunting](/planners/hunting-guide/) area for elk and moose in the Madison Valley.
 
 ---
 

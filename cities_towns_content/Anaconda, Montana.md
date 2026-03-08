@@ -1,7 +1,7 @@
 # Anaconda, Montana: Gateway to Rugged Mountain Adventures
 Where Copper Heritage Meets Wilderness Exploration
 
-Nestled at the foot of the majestic Anaconda Range and just a stone's throw from the Continental Divide, Anaconda invites adventurers to discover a perfect blend of rich industrial heritage and untamed natural beauty. This historic mining town has transformed from its copper smelting roots into a basecamp for outdoor enthusiasts seeking mountain lakes, pristine forests, and year-round recreation. With the rugged Pintler Wilderness as its backdrop and a downtown filled with historic architecture, Anaconda offers explorers a genuine Montana experience where mining history and mountain adventures converge.
+Nestled at the foot of the majestic Anaconda Range and just a stone's throw from the Continental Divide, Anaconda invites adventurers to discover a perfect blend of rich industrial heritage and untamed natural beauty. This historic mining town has transformed from its copper smelting roots into a basecamp for outdoor enthusiasts seeking mountain lakes, pristine forests, and year-round recreation. With the rugged Pintler Wilderness as its backdrop and a downtown filled with historic architecture, Anaconda offers explorers a genuine Montana experience where mining history and mountain adventures converge. The 60,000-acre Mount Haggin WMA — Montana's largest — lies just south of town, making Anaconda a top destination for [big-game hunting](/planners/hunting-guide/) in the Pintler Mountains.
 
 ---
 

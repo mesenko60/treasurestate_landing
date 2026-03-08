@@ -1,0 +1,494 @@
+[
+  {
+    "category": "Base Licenses",
+    "description": "Required base licenses that all hunters must purchase before buying species-specific licenses.",
+    "licenses": [
+      {
+        "name": "Conservation License",
+        "slug": "conservation-license",
+        "residentFee": 8.00,
+        "nonresidentFee": 10.00,
+        "notes": "Required for all hunters and anglers. Must be purchased before any hunting or fishing license.",
+        "required": true
+      },
+      {
+        "name": "Base Hunting License",
+        "slug": "base-hunting-license",
+        "residentFee": 28.00,
+        "nonresidentFee": 70.00,
+        "notes": "Required base license for all hunters. Must be purchased before any species-specific hunting license.",
+        "required": true
+      }
+    ]
+  },
+  {
+    "category": "Combination & Sportsman Licenses",
+    "description": "Bundled licenses that include multiple species and offer cost savings for hunters pursuing multiple species.",
+    "licenses": [
+      {
+        "name": "Resident Sportsman License",
+        "slug": "resident-sportsman-license",
+        "residentFee": 186.00,
+        "nonresidentFee": null,
+        "notes": "Includes Conservation License, Base Hunting License, deer combo, elk, fishing, and more. Best value for resident hunters who pursue multiple species.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Combination (Deer, Elk, Fishing)",
+        "slug": "nr-combination-deer-elk-fishing",
+        "residentFee": null,
+        "nonresidentFee": 1040.00,
+        "notes": "Includes Conservation License, Base Hunting License, deer combo, elk, and fishing license. Best value for nonresident hunters pursuing deer and elk.",
+        "required": false
+      },
+      {
+        "name": "Resident Deer Combo (Deer A + Deer B)",
+        "slug": "resident-deer-combo",
+        "residentFee": 40.00,
+        "nonresidentFee": null,
+        "notes": "Includes one general deer license (Deer A) and one antlerless deer license (Deer B). Resident only.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Deer Licenses",
+    "description": "Licenses for mule deer and white-tailed deer hunting.",
+    "licenses": [
+      {
+        "name": "Resident General Deer License (Deer A)",
+        "slug": "resident-deer-a",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Resident general deer license. Allows harvest of 1 deer (either sex unless restricted by district). Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Nonresident General Deer License",
+        "slug": "nonresident-deer",
+        "residentFee": null,
+        "nonresidentFee": 220.00,
+        "notes": "Nonresident general deer license. Allows harvest of 1 deer. Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Resident Deer B License (Antlerless)",
+        "slug": "resident-deer-b",
+        "residentFee": 12.00,
+        "nonresidentFee": null,
+        "notes": "Antlerless deer license. Available over-the-counter in select districts; by drawing in others. Resident only.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Deer B License (Antlerless)",
+        "slug": "nonresident-deer-b",
+        "residentFee": null,
+        "nonresidentFee": 40.00,
+        "notes": "Antlerless deer license for nonresidents. Available by drawing in select districts.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Elk Licenses",
+    "description": "Licenses for Rocky Mountain elk hunting.",
+    "licenses": [
+      {
+        "name": "Resident General Elk License",
+        "slug": "resident-elk",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Resident general elk license. Allows harvest of 1 bull elk (antlerless by Elk B only). Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Nonresident General Elk License",
+        "slug": "nonresident-elk",
+        "residentFee": null,
+        "nonresidentFee": 1003.00,
+        "notes": "Nonresident general elk license. Allows harvest of 1 bull elk. Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Resident Elk B License (Antlerless)",
+        "slug": "resident-elk-b",
+        "residentFee": 12.00,
+        "nonresidentFee": null,
+        "notes": "Antlerless elk license. Available over-the-counter or by drawing depending on district.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Elk B License (Antlerless)",
+        "slug": "nonresident-elk-b",
+        "residentFee": null,
+        "nonresidentFee": 40.00,
+        "notes": "Antlerless elk license for nonresidents. Available by drawing in select districts.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Antelope (Pronghorn) Licenses",
+    "description": "Licenses for pronghorn antelope hunting. All antelope licenses are by special drawing.",
+    "licenses": [
+      {
+        "name": "Resident Antelope License",
+        "slug": "resident-antelope",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Resident antelope license. By special drawing; application deadline June 1.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Antelope License",
+        "slug": "nonresident-antelope",
+        "residentFee": null,
+        "nonresidentFee": 350.00,
+        "notes": "Nonresident antelope license. By special drawing; application deadline June 1.",
+        "required": false
+      },
+      {
+        "name": "Resident Antelope B License (Antlerless)",
+        "slug": "resident-antelope-b",
+        "residentFee": 12.00,
+        "nonresidentFee": null,
+        "notes": "Antlerless antelope license for residents. By drawing in select districts.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Antelope B License (Antlerless)",
+        "slug": "nonresident-antelope-b",
+        "residentFee": null,
+        "nonresidentFee": 40.00,
+        "notes": "Antlerless antelope license for nonresidents. By drawing in select districts.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Black Bear Licenses",
+    "description": "Licenses for black bear hunting. Over-the-counter for both residents and nonresidents.",
+    "licenses": [
+      {
+        "name": "Resident Black Bear License",
+        "slug": "resident-black-bear",
+        "residentFee": 19.00,
+        "nonresidentFee": null,
+        "notes": "Over-the-counter. First-time buyers must complete the Black Bear Identification Test online before purchasing.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Black Bear License",
+        "slug": "nonresident-black-bear",
+        "residentFee": null,
+        "nonresidentFee": 350.00,
+        "notes": "Over-the-counter. First-time buyers must complete the Black Bear Identification Test online before purchasing.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Special Drawing Licenses (Big Game)",
+    "description": "Licenses for trophy species available only through the annual special drawing process. Application fees are non-refundable.",
+    "licenses": [
+      {
+        "name": "Resident Bighorn Sheep License",
+        "slug": "resident-bighorn-sheep",
+        "residentFee": 125.00,
+        "nonresidentFee": null,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Extremely limited tags; very low odds.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Bighorn Sheep License",
+        "slug": "nonresident-bighorn-sheep",
+        "residentFee": null,
+        "nonresidentFee": 1250.00,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Nonresident quota is 10% of available tags.",
+        "required": false
+      },
+      {
+        "name": "Resident Moose License",
+        "slug": "resident-moose",
+        "residentFee": 125.00,
+        "nonresidentFee": null,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Very limited tags.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Moose License",
+        "slug": "nonresident-moose",
+        "residentFee": null,
+        "nonresidentFee": 1250.00,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Nonresident quota is 10% of available tags.",
+        "required": false
+      },
+      {
+        "name": "Resident Mountain Goat License",
+        "slug": "resident-mountain-goat",
+        "residentFee": 125.00,
+        "nonresidentFee": null,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Very limited tags.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Mountain Goat License",
+        "slug": "nonresident-mountain-goat",
+        "residentFee": null,
+        "nonresidentFee": 1250.00,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Nonresident quota is 10% of available tags.",
+        "required": false
+      },
+      {
+        "name": "Resident Bison License",
+        "slug": "resident-bison",
+        "residentFee": 125.00,
+        "nonresidentFee": null,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Extremely limited tags.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Bison License",
+        "slug": "nonresident-bison",
+        "residentFee": null,
+        "nonresidentFee": 1250.00,
+        "applicationFee": 10.00,
+        "notes": "By special drawing. Application deadline May 1. Nonresident quota is 10% of available tags.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Mountain Lion Licenses",
+    "description": "Licenses for mountain lion (cougar) hunting. Available over-the-counter in most districts; quota-based system.",
+    "licenses": [
+      {
+        "name": "Resident Mountain Lion License",
+        "slug": "resident-mountain-lion",
+        "residentFee": 19.00,
+        "nonresidentFee": null,
+        "notes": "Over-the-counter in most districts. Season closes when district quota is met. Check current quota status before hunting.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Mountain Lion License",
+        "slug": "nonresident-mountain-lion",
+        "residentFee": null,
+        "nonresidentFee": 350.00,
+        "notes": "Over-the-counter in most districts. Season closes when district quota is met. Check current quota status before hunting.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Upland Game Bird Licenses",
+    "description": "Licenses for pheasant, grouse, partridge, and other upland game birds.",
+    "licenses": [
+      {
+        "name": "Resident Upland Game Bird License",
+        "slug": "resident-upland-bird",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Covers pheasant, grouse (all species), partridge, and other upland game birds. Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Upland Game Bird License",
+        "slug": "nonresident-upland-bird",
+        "residentFee": null,
+        "nonresidentFee": 100.00,
+        "notes": "Covers pheasant, grouse (all species), partridge, and other upland game birds. Over-the-counter.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Wild Turkey Licenses",
+    "description": "Licenses for spring and fall wild turkey hunting. Over-the-counter.",
+    "licenses": [
+      {
+        "name": "Resident Wild Turkey License (Spring)",
+        "slug": "resident-turkey-spring",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Spring turkey license. Over-the-counter. Gobblers and bearded hens only.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Wild Turkey License (Spring)",
+        "slug": "nonresident-turkey-spring",
+        "residentFee": null,
+        "nonresidentFee": 75.00,
+        "notes": "Spring turkey license. Over-the-counter. Gobblers and bearded hens only.",
+        "required": false
+      },
+      {
+        "name": "Resident Wild Turkey License (Fall)",
+        "slug": "resident-turkey-fall",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Fall turkey license. Over-the-counter. Either-sex in most districts.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Wild Turkey License (Fall)",
+        "slug": "nonresident-turkey-fall",
+        "residentFee": null,
+        "nonresidentFee": 75.00,
+        "notes": "Fall turkey license. Over-the-counter. Either-sex in most districts.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Migratory Bird Licenses",
+    "description": "Licenses for waterfowl and other migratory bird hunting. Federal duck stamp also required.",
+    "licenses": [
+      {
+        "name": "Resident Migratory Bird License",
+        "slug": "resident-migratory-bird",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "notes": "Covers ducks, geese, coots, and other migratory birds. Federal duck stamp ($27) also required. Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Migratory Bird License",
+        "slug": "nonresident-migratory-bird",
+        "residentFee": null,
+        "nonresidentFee": 75.00,
+        "notes": "Covers ducks, geese, coots, and other migratory birds. Federal duck stamp ($27) also required. Over-the-counter.",
+        "required": false
+      },
+      {
+        "name": "Federal Duck Stamp",
+        "slug": "federal-duck-stamp",
+        "residentFee": 27.00,
+        "nonresidentFee": 27.00,
+        "notes": "Required for all waterfowl hunters age 16 and older. Purchase at post offices, sporting goods stores, or online at store.usgs.gov.",
+        "required": true
+      },
+      {
+        "name": "Resident Sandhill Crane License",
+        "slug": "resident-sandhill-crane",
+        "residentFee": 28.00,
+        "nonresidentFee": null,
+        "applicationFee": 5.00,
+        "notes": "By special drawing. Application deadline June 1. Available in select zones.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Sandhill Crane License",
+        "slug": "nonresident-sandhill-crane",
+        "residentFee": null,
+        "nonresidentFee": 75.00,
+        "applicationFee": 5.00,
+        "notes": "By special drawing. Application deadline June 1. Available in select zones.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Wolf Licenses",
+    "description": "Licenses for wolf hunting and trapping. Over-the-counter.",
+    "licenses": [
+      {
+        "name": "Resident Wolf License",
+        "slug": "resident-wolf",
+        "residentFee": 19.00,
+        "nonresidentFee": null,
+        "notes": "Over-the-counter. First wolf license included with Sportsman license at $10. Quota-based by district.",
+        "required": false
+      },
+      {
+        "name": "Nonresident Wolf License",
+        "slug": "nonresident-wolf",
+        "residentFee": null,
+        "nonresidentFee": 350.00,
+        "notes": "Over-the-counter. Quota-based by district. Season closes when district quota is met.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "Youth Licenses",
+    "description": "Discounted licenses for hunters under 12 years of age.",
+    "licenses": [
+      {
+        "name": "Youth Conservation License (Under 12)",
+        "slug": "youth-conservation-license",
+        "residentFee": 0.00,
+        "nonresidentFee": 0.00,
+        "notes": "Free for hunters under 12 years of age.",
+        "required": true
+      },
+      {
+        "name": "Youth Base Hunting License (Under 12)",
+        "slug": "youth-base-hunting-license",
+        "residentFee": 0.00,
+        "nonresidentFee": 0.00,
+        "notes": "Free for hunters under 12 years of age. Hunter education required.",
+        "required": true
+      },
+      {
+        "name": "Youth Deer License (Under 12)",
+        "slug": "youth-deer-license",
+        "residentFee": 0.00,
+        "nonresidentFee": 0.00,
+        "notes": "Free for hunters under 12 years of age.",
+        "required": false
+      },
+      {
+        "name": "Youth Elk License (Under 12)",
+        "slug": "youth-elk-license",
+        "residentFee": 0.00,
+        "nonresidentFee": 0.00,
+        "notes": "Free for hunters under 12 years of age.",
+        "required": false
+      }
+    ]
+  },
+  {
+    "category": "License Application Deadlines",
+    "description": "Key application deadlines for special drawing licenses.",
+    "deadlines": [
+      {
+        "license": "Deer, Elk, Antelope Special Permits",
+        "deadline": "April 1",
+        "applicationFee": 5.00,
+        "notes": "Apply online at fwp.mt.gov or at any FWP office."
+      },
+      {
+        "license": "Antelope General License (Drawing)",
+        "deadline": "June 1",
+        "applicationFee": 5.00,
+        "notes": "Apply online at fwp.mt.gov or at any FWP office."
+      },
+      {
+        "license": "Moose, Sheep, Goat, Bison",
+        "deadline": "May 1",
+        "applicationFee": 10.00,
+        "notes": "Apply online at fwp.mt.gov or at any FWP office."
+      },
+      {
+        "license": "Sandhill Crane",
+        "deadline": "June 1",
+        "applicationFee": 5.00,
+        "notes": "Apply online at fwp.mt.gov or at any FWP office."
+      },
+      {
+        "license": "Mountain Lion (Special Districts)",
+        "deadline": "August 1",
+        "applicationFee": 5.00,
+        "notes": "Only for districts requiring a drawing. Most districts are OTC."
+      }
+    ]
+  }
+]

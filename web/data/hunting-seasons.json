@@ -1,0 +1,595 @@
+[
+  {
+    "species": "Deer (Mule & White-tailed)",
+    "speciesSlug": "deer",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-10-19",
+        "displayDates": "Sept. 6 – Oct. 19, 2025",
+        "notes": "Statewide archery season for both mule deer and white-tailed deer."
+      },
+      {
+        "type": "Youth (Deer Only)",
+        "openDate": "2025-10-16",
+        "closeDate": "2025-10-17",
+        "displayDates": "Oct. 16 – 17, 2025",
+        "notes": "Youth-only deer season preceding the general opener."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-10-25",
+        "closeDate": "2025-11-30",
+        "displayDates": "Oct. 25 – Nov. 30, 2025",
+        "notes": "Statewide general rifle season. General deer license required."
+      },
+      {
+        "type": "Muzzleloader",
+        "openDate": "2025-12-13",
+        "closeDate": "2025-12-21",
+        "displayDates": "Dec. 13 – 21, 2025",
+        "notes": "Statewide muzzleloader season following the general season."
+      },
+      {
+        "type": "Shoulder Seasons",
+        "openDate": "2025-08-15",
+        "closeDate": "2026-02-15",
+        "displayDates": "Aug. 15 – Feb. 15 (varying dates by district)",
+        "notes": "Shoulder seasons available in select hunting districts before and after archery and general seasons. Check district-specific regulations."
+      },
+      {
+        "type": "Backcountry (HD 150, 250)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-28",
+        "displayDates": "Sept. 15 – Nov. 28, 2025",
+        "notes": "Special backcountry season in Hunting Districts 150 and 250."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 deer per general deer license; additional Deer B tags available by drawing and over-the-counter",
+      "deerB": "1 antlerless deer per Deer B tag",
+      "notes": "Check the Deer, Elk, and Antelope regulation booklet for district-specific limits. CWD check stations required in some areas."
+    },
+    "licenseRequired": ["General Deer License", "Deer B (optional, by drawing or OTC)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "April 1 (special permits); General license over-the-counter",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Elk",
+    "speciesSlug": "elk",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-10-19",
+        "displayDates": "Sept. 6 – Oct. 19, 2025",
+        "notes": "Statewide archery elk season. General elk license required."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-10-25",
+        "closeDate": "2025-11-30",
+        "displayDates": "Oct. 25 – Nov. 30, 2025",
+        "notes": "Statewide general rifle elk season. General elk license required."
+      },
+      {
+        "type": "Muzzleloader",
+        "openDate": "2025-12-13",
+        "closeDate": "2025-12-21",
+        "displayDates": "Dec. 13 – 21, 2025",
+        "notes": "Statewide muzzleloader elk season."
+      },
+      {
+        "type": "Shoulder Seasons",
+        "openDate": "2025-08-15",
+        "closeDate": "2026-02-15",
+        "displayDates": "Aug. 15 – Feb. 15 (varying dates by district)",
+        "notes": "Elk shoulder seasons in select districts. Check district-specific regulations."
+      },
+      {
+        "type": "Backcountry (HD 150, 250)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-28",
+        "displayDates": "Sept. 15 – Nov. 28, 2025",
+        "notes": "Special backcountry elk season in Hunting Districts 150 and 250."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 bull elk per general elk license; antlerless elk by Elk B tag only",
+      "elkB": "1 antlerless elk per Elk B tag (by drawing or OTC in select districts)",
+      "notes": "Check the Deer, Elk, and Antelope regulation booklet for district-specific antler restrictions and antlerless opportunities."
+    },
+    "licenseRequired": ["General Elk License", "Elk B (optional, by drawing or OTC)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "April 1 (special permits); General license over-the-counter",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Antelope (Pronghorn)",
+    "speciesSlug": "antelope",
+    "seasons": [
+      {
+        "type": "900 Series (Combined)",
+        "openDate": "2025-08-15",
+        "closeDate": "2025-11-09",
+        "displayDates": "Aug. 15 – Nov. 9, 2025",
+        "notes": "900 series licenses cover the full combined season window."
+      },
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-10-10",
+        "displayDates": "Sept. 6 – Oct. 10, 2025",
+        "notes": "Archery-only antelope season."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-10-11",
+        "closeDate": "2025-11-09",
+        "displayDates": "Oct. 11 – Nov. 9, 2025",
+        "notes": "General rifle antelope season. License required by special drawing."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 antelope per license; Antelope B tag available for antlerless in select districts",
+      "notes": "Check the Deer, Elk, and Antelope regulation booklet for district-specific limits and antlerless opportunities."
+    },
+    "licenseRequired": ["Antelope License (Special Drawing)", "Antelope B (Special Drawing)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "June 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Black Bear",
+    "speciesSlug": "black-bear",
+    "seasons": [
+      {
+        "type": "Spring (Archery & Rifle)",
+        "openDate": "2025-04-15",
+        "closeDate": "2025-06-15",
+        "displayDates": "Apr. 15 – End dates vary by district",
+        "notes": "Spring bear season. Dates vary by hunting district. Check current regulations."
+      },
+      {
+        "type": "Fall (Archery)",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Fall archery-only bear season."
+      },
+      {
+        "type": "Fall (General)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-30",
+        "displayDates": "Sept. 15 – Nov. 30, 2025",
+        "notes": "Fall general (rifle) bear season."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 black bear per license",
+      "notes": "First-time buyers must complete the Black Bear Identification Test before purchasing a license. Check current regulations for district-specific quotas."
+    },
+    "licenseRequired": ["Black Bear License (OTC)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Bighorn Sheep",
+    "speciesSlug": "bighorn-sheep",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Archery-only bighorn sheep season."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-30",
+        "displayDates": "Sept. 15 – Nov. 30, 2025",
+        "notes": "General rifle bighorn sheep season."
+      },
+      {
+        "type": "Winter",
+        "openDate": "2025-11-15",
+        "closeDate": "2026-02-15",
+        "displayDates": "Nov. 15 – Feb. 15, 2026",
+        "notes": "Winter bighorn sheep season in select districts."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 bighorn sheep per license (lifetime limit of 1 ram in some districts)",
+      "notes": "Extremely limited tags. Nonresident quota is 10% of available tags. Odds of drawing are very low."
+    },
+    "licenseRequired": ["Bighorn Sheep License (Special Drawing)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "May 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Moose",
+    "speciesSlug": "moose",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Archery-only moose season."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-30",
+        "displayDates": "Sept. 15 – Nov. 30, 2025",
+        "notes": "General rifle moose season."
+      },
+      {
+        "type": "Winter",
+        "openDate": "2025-11-15",
+        "closeDate": "2026-02-15",
+        "displayDates": "Nov. 15 – Feb. 15, 2026",
+        "notes": "Winter moose season in select districts."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 moose per license",
+      "notes": "Very limited tags. Nonresident quota is 10% of available tags. Odds of drawing are very low."
+    },
+    "licenseRequired": ["Moose License (Special Drawing)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "May 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Mountain Goat",
+    "speciesSlug": "mountain-goat",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Archery-only mountain goat season."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-30",
+        "displayDates": "Sept. 15 – Nov. 30, 2025",
+        "notes": "General rifle mountain goat season."
+      },
+      {
+        "type": "Winter",
+        "openDate": "2025-11-15",
+        "closeDate": "2026-02-15",
+        "displayDates": "Nov. 15 – Feb. 15, 2026",
+        "notes": "Winter mountain goat season in select districts."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 mountain goat per license",
+      "notes": "Extremely limited tags. Nonresident quota is 10% of available tags. Odds of drawing are very low."
+    },
+    "licenseRequired": ["Mountain Goat License (Special Drawing)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "May 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Mountain Lion",
+    "speciesSlug": "mountain-lion",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-10-19",
+        "displayDates": "Sept. 6 – Oct. 19, 2025",
+        "notes": "Archery-only mountain lion season."
+      },
+      {
+        "type": "Fall (General)",
+        "openDate": "2025-10-25",
+        "closeDate": "2025-11-30",
+        "displayDates": "Oct. 25 – Nov. 30, 2025",
+        "notes": "Fall general mountain lion season."
+      },
+      {
+        "type": "Winter",
+        "openDate": "2025-12-01",
+        "closeDate": "2026-04-14",
+        "displayDates": "Dec. 1, 2025 – Apr. 14, 2026",
+        "notes": "Winter mountain lion season. Hound hunting permitted in some districts."
+      }
+    ],
+    "bagLimits": {
+      "general": "Varies by district; quota-based system with season closures when quotas are met",
+      "notes": "Check current quotas and district closures before hunting. Restricted, Limited, and Unlimited license types available depending on district."
+    },
+    "licenseRequired": ["Mountain Lion License (OTC or Drawing depending on district)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Aug. 1 (special licenses); OTC available for most districts",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Wild Turkey",
+    "speciesSlug": "turkey",
+    "seasons": [
+      {
+        "type": "Spring",
+        "openDate": "2025-04-15",
+        "closeDate": "2025-05-31",
+        "displayDates": "Apr. 15 – May 31, 2025",
+        "notes": "Spring turkey season. Gobblers and bearded hens only. Check district-specific regulations."
+      },
+      {
+        "type": "Fall",
+        "openDate": "2025-09-01",
+        "closeDate": "2026-01-01",
+        "displayDates": "Sept. 1 – Jan. 1, 2026",
+        "notes": "Fall turkey season. Either-sex in most districts."
+      }
+    ],
+    "bagLimits": {
+      "spring": "1 gobbler or bearded hen per spring license",
+      "fall": "1 turkey per fall license; some districts allow 2",
+      "notes": "Check the Turkey regulation brochure for district-specific rules. Turkey regulations are typically posted in early March."
+    },
+    "licenseRequired": ["Turkey License (OTC)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations/turkey"
+  },
+  {
+    "species": "Pheasant",
+    "speciesSlug": "pheasant",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-10-11",
+        "closeDate": "2026-01-01",
+        "displayDates": "Oct. 11 – Jan. 1, 2026",
+        "notes": "Roosters only. Statewide season."
+      }
+    ],
+    "bagLimits": {
+      "general": "3 roosters per day; 3 roosters in possession (3x daily limit)",
+      "notes": "Hens are protected. Hunting is best in eastern Montana agricultural areas."
+    },
+    "licenseRequired": ["Upland Game Bird License (or Sportsman License)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Mountain Grouse (Ruffed, Dusky/Blue, Spruce)",
+    "speciesSlug": "mountain-grouse",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-09-01",
+        "closeDate": "2026-01-01",
+        "displayDates": "Sept. 1 – Jan. 1, 2026",
+        "notes": "Statewide season for ruffed, dusky (blue), and spruce grouse."
+      }
+    ],
+    "bagLimits": {
+      "general": "3 per day in aggregate; 4x daily limit in possession",
+      "notes": "All three mountain grouse species count toward the combined aggregate limit."
+    },
+    "licenseRequired": ["Upland Game Bird License (or Sportsman License)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Sharp-tailed Grouse",
+    "speciesSlug": "sharp-tailed-grouse",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-09-01",
+        "closeDate": "2026-01-01",
+        "displayDates": "Sept. 1 – Jan. 1, 2026",
+        "notes": "Statewide season. Best hunting in eastern Montana prairies and grasslands."
+      }
+    ],
+    "bagLimits": {
+      "general": "4 per day; 4x daily limit in possession",
+      "notes": "Sharp-tailed grouse do not count toward the mountain grouse aggregate limit."
+    },
+    "licenseRequired": ["Upland Game Bird License (or Sportsman License)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Sage Grouse",
+    "speciesSlug": "sage-grouse",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-10-11",
+        "closeDate": "2026-01-01",
+        "displayDates": "Oct. 11 – Jan. 1, 2026",
+        "notes": "Limited season in select districts in eastern Montana sagebrush country."
+      }
+    ],
+    "bagLimits": {
+      "general": "2 per day; 2x daily limit in possession",
+      "notes": "Season and districts subject to change based on population surveys. Check current regulations."
+    },
+    "licenseRequired": ["Upland Game Bird License (or Sportsman License)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Gray Partridge (Hungarian Partridge)",
+    "speciesSlug": "partridge",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-09-01",
+        "closeDate": "2026-01-01",
+        "displayDates": "Sept. 1 – Jan. 1, 2026",
+        "notes": "Statewide season. Best hunting in agricultural areas of central and eastern Montana."
+      }
+    ],
+    "bagLimits": {
+      "general": "8 per day in aggregate with other partridge species; 4x daily limit in possession",
+      "notes": "Coveys can be large in good habitat years."
+    },
+    "licenseRequired": ["Upland Game Bird License (or Sportsman License)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Ducks & Mergansers (Waterfowl)",
+    "speciesSlug": "ducks",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-10-04",
+        "closeDate": "2026-01-18",
+        "displayDates": "Oct. 4 – Jan. 18, 2026 (varies by zone)",
+        "notes": "Season dates vary by Pacific and Central Flyway zones. Check current federal and state regulations."
+      }
+    ],
+    "bagLimits": {
+      "pacificFlyway": "7 per day combined ducks and mergansers; 3x daily limit in possession",
+      "centralFlyway": "6 per day combined; 3x daily limit in possession",
+      "notes": "Species-specific restrictions apply (e.g., canvasback, redhead, pintail). Federal duck stamp required in addition to state license."
+    },
+    "licenseRequired": ["Migratory Bird License (State)", "Federal Duck Stamp", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Canada Geese & Other Dark Geese",
+    "speciesSlug": "geese",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-10-04",
+        "closeDate": "2026-01-18",
+        "displayDates": "Oct. 4 – Jan. 18, 2026 (varies by zone)",
+        "notes": "Season dates vary by flyway zone. Check current federal and state regulations."
+      },
+      {
+        "type": "Spring Light Goose Conservation Order",
+        "openDate": "2026-03-01",
+        "closeDate": "2026-05-15",
+        "displayDates": "Mar. 1 – May 15, 2026",
+        "notes": "Light goose (snow geese, Ross's geese) conservation order with relaxed restrictions to manage overpopulation."
+      }
+    ],
+    "bagLimits": {
+      "darkGeese": "5 per day (Pacific & Central Flyways combined); 3x daily limit in possession",
+      "lightGeese": "20 per day during conservation order; 3x daily limit in possession",
+      "notes": "Federal duck stamp required. Electronic calls permitted during light goose conservation order."
+    },
+    "licenseRequired": ["Migratory Bird License (State)", "Federal Duck Stamp", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Sandhill Crane",
+    "speciesSlug": "sandhill-crane",
+    "seasons": [
+      {
+        "type": "General",
+        "openDate": "2025-09-01",
+        "closeDate": "2025-10-31",
+        "displayDates": "Sept. 1 – Oct. 31, 2025 (varies by zone)",
+        "notes": "Season available in select zones. Check current regulations for open zones."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 or 2 per day depending on license type",
+      "notes": "Application deadline June 1. Check zone-specific regulations."
+    },
+    "licenseRequired": ["Sandhill Crane License (Drawing)", "Migratory Bird License (State)", "Federal Duck Stamp", "Conservation License"],
+    "applicationDeadline": "June 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Wolf",
+    "speciesSlug": "wolf",
+    "seasons": [
+      {
+        "type": "Archery",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Archery-only wolf season."
+      },
+      {
+        "type": "General (Rifle)",
+        "openDate": "2025-09-15",
+        "closeDate": "2026-03-15",
+        "displayDates": "Sept. 15, 2025 – Mar. 15, 2026",
+        "notes": "General rifle wolf season."
+      },
+      {
+        "type": "Trapping",
+        "openDate": "2025-11-01",
+        "closeDate": "2026-02-28",
+        "displayDates": "See regulations book for specific dates",
+        "notes": "Wolf trapping season. See regulations for district-specific dates."
+      }
+    ],
+    "bagLimits": {
+      "general": "Quota-based; varies by hunting district. Season closes when quota is met.",
+      "notes": "Wolf license is over-the-counter. First wolf license included with Sportsman license at $10; additional licenses $12."
+    },
+    "licenseRequired": ["Wolf License (OTC)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "Over-the-counter; no drawing required",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  },
+  {
+    "species": "Bison",
+    "speciesSlug": "bison",
+    "seasons": [
+      {
+        "type": "Spring",
+        "openDate": "2025-04-15",
+        "closeDate": "2025-06-30",
+        "displayDates": "Apr. 15 – End dates vary",
+        "notes": "Spring bison season. Extremely limited tags."
+      },
+      {
+        "type": "Fall (Archery)",
+        "openDate": "2025-09-06",
+        "closeDate": "2025-09-14",
+        "displayDates": "Sept. 6 – Sept. 14, 2025",
+        "notes": "Fall archery bison season."
+      },
+      {
+        "type": "Fall (General)",
+        "openDate": "2025-09-15",
+        "closeDate": "2025-11-30",
+        "displayDates": "Sept. 15 – Nov. 30, 2025",
+        "notes": "Fall general bison season."
+      }
+    ],
+    "bagLimits": {
+      "general": "1 bison per license",
+      "notes": "Extremely limited tags. Application deadline May 1. $10 application fee."
+    },
+    "licenseRequired": ["Bison License (Special Drawing)", "Conservation License", "Base Hunting License"],
+    "applicationDeadline": "May 1",
+    "source": "https://fwp.mt.gov/hunt/seasons",
+    "regulationsUrl": "https://fwp.mt.gov/hunt/regulations"
+  }
+]

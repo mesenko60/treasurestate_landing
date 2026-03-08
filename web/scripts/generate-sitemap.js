@@ -46,6 +46,7 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   add(`${baseUrl}/planners/hot-springs-guide/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/campgrounds-guide/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/hiking-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/planners/hunting-guide/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/backroads-planner/`, 0.8, 'weekly');
   add(`${baseUrl}/planners/summer-road-trips/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/winter-driving-guide/`, 0.7, 'monthly');

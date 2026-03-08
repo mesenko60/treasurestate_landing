@@ -118,6 +118,7 @@ function fmtPop(n) {
     { title: 'Hot Springs Guide', desc: 'Natural and developed geothermal hot springs across Montana', url: '/planners/hot-springs-guide/', kw: 'hot springs soaking geothermal resort primitive' },
     { title: 'Campgrounds & RV Parks', desc: '100+ campgrounds and RV parks across Montana', url: '/planners/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
     { title: 'Hiking Guide', desc: "Montana's best trails, wilderness areas, and national park hikes", url: '/planners/hiking-guide/', kw: 'hiking trails trailhead wilderness backpacking state park national park' },
+    { title: 'Montana Hunting Guide', desc: 'Seasons, licenses, WMAs, and public land access for deer, elk, antelope, bear, turkey, and more', url: '/planners/hunting-guide/', kw: 'hunting elk deer antelope bear turkey grouse waterfowl WMA FWP license season public land' },
     { title: 'Summer Road Trips', desc: 'Scenic drives through Montana for summer travel', url: '/planners/summer-road-trips/', kw: 'road trip scenic drive summer vacation' },
     { title: 'Winter Driving Guide', desc: 'Safe winter travel tips and road conditions for Montana', url: '/planners/winter-driving-guide/', kw: 'winter driving snow ice road conditions chains traction' },
     { title: 'Bitterroot Valley Guide', desc: 'Complete guide to the Bitterroot Valley in western Montana', url: '/planners/bitterroot-valley/', kw: 'Bitterroot Valley Hamilton Stevensville Darby western Montana' },
