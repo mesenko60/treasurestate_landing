@@ -1,0 +1,48 @@
+---
+description: Ensure new content is included in search index and sitemap
+alwaysApply: false
+globs: web/scripts/generate-search-index.js, web/scripts/generate-sitemap.js, web/pages/**/*.tsx, web/data/*.json
+---
+
+# Search Index & Sitemap: New Content Checklist
+
+When adding new content to the site, you MUST ensure it is discoverable via search and sitemap.
+
+## Mandatory Updates
+
+**When adding any of the following, update BOTH scripts:**
+
+| Content Type | Search Index (`web/scripts/generate-search-index.js`) | Sitemap (`web/scripts/generate-sitemap.js`) |
+|--------------|--------------------------------------------------------|---------------------------------------------|
+| New planner/guide page | Add to `planners` array | Add `add(baseUrl + '/planners/your-page/', ...)` |
+| New best-of ranking | Add to `rankings` array | Auto-discovered from `out/best-of/` |
+| New comparison pair | Add to `COMPARISON_PAIRS` | Auto-discovered from `out/compare/` |
+| New Information article | Add to `infoPages` array | Auto-discovered from `out/Information/` |
+| New topic type (e.g. climate) | Add to `topicLabels` in index | Auto-discovered from town topic dirs |
+| New tool page | Add to "Other pages" section | Add explicit `add()` if not under scanned dirs |
+
+## Auto-Discovered (No Manual Update Needed)
+
+These are pulled from data files or build output—new entries are included automatically:
+
+- **Towns** — from `cities_towns_list/towns.txt`
+- **Corridors** — from `web/data/corridors.json`
+- **Hot springs** — from `web/data/hot-springs.json`
+- **Campgrounds** — from `web/data/campgrounds.json`
+- **Trails** — from `web/data/hiking.json`
+- **Moving guides** — one per town (from towns list)
+- **Town topic pages** — for new hub dirs under `web/components/town/topics/`
+- **Sitemap**: guides, best-of, compare, Information, town topics — scanned from `out/` after build
+
+## Workflow
+
+1. Add the new page or data.
+2. If it's a **new page type** (planner, article, tool): update both `generate-search-index.js` and `generate-sitemap.js`.
+3. If it's **new data** (town, corridor, hot spring, etc.): no script changes—next build includes it.
+4. Run `npm run build` in `web/` to regenerate index and sitemap.
+5. Verify: `web/public/search-index.json` and `web/out/sitemap.xml` contain the new content.
+
+## Reference
+
+- Search index: `web/scripts/generate-search-index.js` (runs in `prebuild`)
+- Sitemap: `web/scripts/generate-sitemap.js` (runs after `next export`)

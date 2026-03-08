@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/copy-assets.js && node scripts/generate-search-index.js",
+    "prebuild": "node scripts/copy-assets.js && node scripts/convert-images-to-webp.js && node scripts/generate-search-index.js",
+    "images:convert": "node scripts/convert-images-to-webp.js",
     "build": "next build && next export && node scripts/generate-sitemap.js",
     "start": "serve out",
     "postexport": "node scripts/generate-sitemap.js"
@@ -27,6 +28,7 @@
     "@types/node": "24.3.0",
     "@types/react": "19.1.11",
     "serve": "^14.2.3",
+    "sharp": "^0.34.5",
     "typescript": "5.9.2"
   }
 }

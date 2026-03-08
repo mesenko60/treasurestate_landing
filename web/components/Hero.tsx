@@ -7,6 +7,7 @@ type Props = {
   alt: string;
   small?: boolean;
   showSearch?: boolean; // defaults to true
+  credit?: string;
 };
 
 function webpSrcSet(basePath: string): string | null {
@@ -16,7 +17,7 @@ function webpSrcSet(basePath: string): string | null {
   return `${base}-480.webp 480w, ${base}-800.webp 800w, ${base}.webp 1500w`;
 }
 
-export default function Hero({ title, subtitle, image, alt, small, showSearch = true }: Props) {
+export default function Hero({ title, subtitle, image, alt, small, showSearch = true, credit }: Props) {
   const [imgSrc, setImgSrc] = useState(image);
   const srcSet = webpSrcSet(imgSrc);
 
@@ -78,6 +79,15 @@ export default function Hero({ title, subtitle, image, alt, small, showSearch = 
           </button>
         )}
       </div>
+      {credit && (
+        <div style={{
+          position: 'absolute', bottom: '8px', right: '12px',
+          fontSize: '0.7rem', color: 'rgba(255,255,255,0.85)', textShadow: '0 1px 2px rgba(0,0,0,0.5)',
+          fontFamily: "'Montserrat', sans-serif",
+        }}>
+          {credit}
+        </div>
+      )}
     </header>
   );
 }

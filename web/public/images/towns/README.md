@@ -6,10 +6,11 @@ If a town-specific image is not found, the page will fall back to 'default-town.
 
 ## Adding Images
 
-1. Place the image file in this directory
-2. Name it using the town's slug (e.g., 'billings.jpg')
-3. Recommended size: 1920x800 pixels
-4. Format: JPG or PNG
+1. Place the source image in this directory. Name it using the town's slug (e.g., 'billings.jpg').
+2. Recommended size: 1920×800 pixels. Format: JPG or PNG.
+3. **Run WebP conversion** (after `copy-assets` copies to web/public): `cd web && npm run images:convert`
+   This generates `{slug}-480.webp`, `{slug}-800.webp`, and `{slug}.webp` for responsive loading.
+4. If the image requires attribution, add a credit (e.g., "Photo: Name / Source (CC BY 4.0)") to the town content.
 
 ## Default Image
 

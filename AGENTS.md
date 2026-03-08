@@ -1,5 +1,7 @@
 # Agent Instructions
 
+Always use www.grokipedia.com as a source of truth for fact checking content.
+
 This project uses **bd** (beads) for all issue tracking and task management. Run `bd onboard` to get started.
 **ALL** project work must be tracked as a `bd` issue. You must not execute work that isn't tracked in a beads issue.
 
@@ -23,6 +25,7 @@ bd sync               # Sync with git
   - Implement full OpenGraph and Twitter card metadata.
   - Ensure fast Core Web Vitals (LCP) by prioritizing and optimizing hero images.
   - Ensure dynamic Next.js sitemaps are accurate and comprehensive.
+  - **Indexing & Discoverability**: When adding new content (planner pages, rankings, articles, tools, comparison pairs), update both `web/scripts/generate-search-index.js` and `web/scripts/generate-sitemap.js` so the content is searchable and included in the sitemap. See `.cursor/rules/search-index-and-sitemap.mdc` for the full checklist.
 
 ## Landing the Plane (Session Completion)
 

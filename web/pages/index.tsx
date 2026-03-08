@@ -391,7 +391,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           <div className="hp-towns">
             {featuredTowns.map(t => (
               <Link key={t.slug} href={`/montana-towns/${t.slug}`} className="hp-town-card">
-                <div className="hp-town-img">
+                <div className="hp-town-img" style={{ position: 'relative' }}>
                   <picture>
                     {t.hasImage ? (
                       <source type="image/webp" srcSet={`/images/towns/${t.slug}-480.webp 480w, /images/towns/${t.slug}-800.webp 800w, /images/towns/${t.slug}.webp 1500w`} sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
@@ -405,6 +405,11 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                       style={{ position: 'absolute', height: '100%', width: '100%', inset: '0', objectFit: 'cover' }}
                     />
                   </picture>
+                  {t.slug === 'billings' && (
+                    <div style={{ position: 'absolute', bottom: '4px', right: '6px', fontSize: '0.6rem', color: 'rgba(255,255,255,0.9)', textShadow: '0 1px 2px rgba(0,0,0,0.6)' }}>
+                      Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)
+                    </div>
+                  )}
                 </div>
                 <div className="hp-town-body">
                   <div className="hp-town-name">{t.name}</div>

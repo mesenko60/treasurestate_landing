@@ -1,0 +1,61 @@
+---
+description: How to add and process images (WebP conversion, credits)
+alwaysApply: false
+globs: web/public/images/**/*, web/scripts/convert-images-to-webp.js, images/**/*
+---
+
+# Image Handling
+
+## Adding New Images
+
+### Town Images
+
+1. **Place source image** in `images/towns/` (repo root) or `web/public/images/towns/`
+2. **Name by town slug**: `billings.jpg`, `missoula.jpg`, etc. (JPG or PNG)
+3. **Recommended size**: 1920×800 px or similar landscape aspect
+4. **Run WebP conversion**:
+   ```bash
+   cd web && npm run images:convert
+   ```
+5. **Add photo credit** if required (see Credits below)
+
+### Hero / Site Images
+
+- Hero image: `images/hero-image.jpg` (copied to `web/public/images/`)
+- Same conversion: `npm run images:convert` generates `hero-image-480.webp`, `hero-image-800.webp`, `hero-image.webp`
+
+## WebP Conversion
+
+The build automatically runs `convert-images-to-webp.js` during `prebuild`. It generates:
+
+| Output | Width | Use |
+|--------|-------|-----|
+| `{name}-480.webp` | 480px | Mobile / small screens |
+| `{name}-800.webp` | 800px | Tablet |
+| `{name}.webp` | Full (max 1500px) | Desktop |
+
+**Manual run** (when adding images without a full build):
+
+```bash
+cd web && npm run images:convert
+```
+
+**Source locations**: `web/public/images/hero-image.jpg`, `web/public/images/towns/*.jpg`
+
+Images are copied from `images/` (repo root) by `copy-assets.js` before conversion. If adding images directly to `web/public/images/`, run `images:convert` after placing them.
+
+## Credits
+
+When using third-party or licensed images, add credits:
+
+- **In content**: e.g. "Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)"
+- **Town page**: Add a credit line near the hero image or in a footer
+- **Homepage featured towns**: Credit in the card or a site-wide credits section
+
+Store credit text in the town's content or a central credits file so it can be rendered consistently.
+
+## Reference
+
+- Conversion script: `web/scripts/convert-images-to-webp.js`
+- Town images README: `web/public/images/towns/README.md`
+- Uses `sharp` (Node.js) for WebP generation

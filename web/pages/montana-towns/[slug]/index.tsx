@@ -114,9 +114,14 @@ type Props = {
   scenicDrives: TownCorridor[];
   heroImage: string;
   ogImage: string;
+  heroCredit?: string;
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage }: Props) {
+const HERO_CREDITS: Record<string, string> = {
+  billings: 'Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)',
+};
+
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit }: Props) {
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
@@ -179,6 +184,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         image={heroImage}
         alt={`${townName} - Scenic View`}
         small
+        credit={heroCredit}
       />
 
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
@@ -575,6 +581,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       ogImage: fs.existsSync(path.resolve(process.cwd(), 'public', 'images', 'towns', `${slug}.jpg`))
         ? `https://treasurestate.com/images/towns/${slug}.jpg`
         : 'https://treasurestate.com/images/hero-image.jpg',
+      ...(HERO_CREDITS[slug] ? { heroCredit: HERO_CREDITS[slug] } : {}),
     } 
   };
 };
