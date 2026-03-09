@@ -558,8 +558,9 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
         {/* ─── CTAs ─── */}
         <div className="hunt-cta">
           <Link href="/planners/fly-fishing-guide" className="hunt-cta-primary">Fly Fishing Guide</Link>
-          <Link href="/planners/hiking-guide" className="hunt-cta-secondary">Hiking Guide</Link>
-          <Link href="/planners/campgrounds-guide" className="hunt-cta-secondary">Campgrounds Guide</Link>
+          <Link href="/planners/wildlife-guide" className="hunt-cta-secondary">Wildlife Guide</Link>
+          <Link href="/planners/skiing-guide" className="hunt-cta-secondary">Skiing Guide</Link>
+          <Link href="/planners/state-parks-guide" className="hunt-cta-secondary">State Parks Guide</Link>
           <Link href="/montana-towns" className="hunt-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

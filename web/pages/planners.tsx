@@ -94,6 +94,38 @@ export default function Planners() {
               </div>
             </Link>
 
+            <Link href="/planners/skiing-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Skiing &amp; Snowboarding Guide</h3>
+                <p>All 16 Montana ski areas — from Big Sky&rsquo;s 5,800 acres to Bear Paw&rsquo;s $25 lift tickets. Vertical drop, snowfall, pass affiliations, and insider tips.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
+            <Link href="/planners/state-parks-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>State Parks Guide</h3>
+                <p>20 Montana state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River float. Camping, fees, activities, and directions.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
+            <Link href="/planners/wildlife-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Wildlife Viewing Guide</h3>
+                <p>Best places to see grizzly bears, wolves, bison, elk, bighorn sheep, and 300,000 snow geese. 15 verified locations with species lists and seasons.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
+            <Link href="/planners/photography-guide" style={{ textDecoration: 'none' }}>
+              <div className="planner-card">
+                <h3>Photographer&rsquo;s Guide</h3>
+                <p>18 photography locations — Glacier&rsquo;s iconic landscapes, Yellowstone wildlife, badlands astrophotography, and more. GPS coordinates, best times, and gear tips.</p>
+                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
+              </div>
+            </Link>
+
             <Link href="/planners/summer-road-trips" style={{ textDecoration: 'none' }}>
               <div className="planner-card">
                 <h3>Summer Road Trips</h3>
