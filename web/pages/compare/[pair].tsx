@@ -253,16 +253,22 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
                   <div key={town.slug}>
                     <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>Top Highlights</div>
                     {town.recreation?.highlights.map((p, i) => (
-                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem' }}>
+                      <a
+                        key={i}
+                        href={`https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem', textDecoration: 'none', color: 'inherit' }}
+                      >
                         <span style={{ flexShrink: 0 }}>{REC_ICONS[p.type] || '📍'}</span>
                         <div style={{ minWidth: 0, flex: 1 }}>
-                          <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontWeight: 500, color: '#204051' }}>{p.name}</div>
+                          <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontWeight: 500, color: '#3b6978' }}>{p.name}</div>
                           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <span style={{ fontSize: '0.7rem', color: REC_COLORS[p.type] || '#888', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.3px' }}>{p.type}</span>
                             <span style={{ fontSize: '0.75rem', color: '#888' }}>{p.distMiles} mi</span>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     )) || <div style={{ color: '#999', fontSize: '0.85rem', textAlign: 'center' }}>No data</div>}
                   </div>
                 ))}
