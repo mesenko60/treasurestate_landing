@@ -1,4 +1,5 @@
-import { useState, type MouseEvent } from 'react';
+import { useState, useEffect, type MouseEvent } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
@@ -124,7 +125,26 @@ const HERO_CREDITS: Record<string, string> = {
 };
 
 export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit }: Props) {
+  const router = useRouter();
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
+
+  useEffect(() => {
+    const { focusName, focusLat, focusLng, focusType } = router.query;
+    if (typeof focusName === 'string' && typeof focusLat === 'string' && typeof focusLng === 'string') {
+      const place: RecreationPlace = {
+        name: focusName,
+        type: (typeof focusType === 'string' ? focusType : '') as string,
+        lat: parseFloat(focusLat),
+        lng: parseFloat(focusLng),
+        distMiles: 0,
+      };
+      setFocusedRec(place);
+      setTimeout(() => {
+        document.getElementById('town-map')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 400);
+    }
+  }, [router.query]);
+
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
   const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;

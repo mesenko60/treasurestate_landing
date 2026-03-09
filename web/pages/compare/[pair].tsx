@@ -253,11 +253,9 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
                   <div key={town.slug}>
                     <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>Top Highlights</div>
                     {town.recreation?.highlights.map((p, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href={`https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={`/montana-towns/${town.slug}/?focusName=${encodeURIComponent(p.name)}&focusLat=${p.lat}&focusLng=${p.lng}&focusType=${encodeURIComponent(p.type)}#town-map`}
                         style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem', textDecoration: 'none', color: 'inherit' }}
                       >
                         <span style={{ flexShrink: 0 }}>{REC_ICONS[p.type] || '📍'}</span>
@@ -268,7 +266,7 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
                             <span style={{ fontSize: '0.75rem', color: '#888' }}>{p.distMiles} mi</span>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     )) || <div style={{ color: '#999', fontSize: '0.85rem', textAlign: 'center' }}>No data</div>}
                   </div>
                 ))}
