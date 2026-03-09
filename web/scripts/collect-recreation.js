@@ -332,9 +332,13 @@ function buildRecreation() {
   const coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
   const osmSites = JSON.parse(fs.readFileSync(osmPath, 'utf8'));
 
-  // Merge curated + OSM, curated wins on name collisions
-  const allSites = [...CURATED_SITES];
-  const seenNames = new Set(CURATED_SITES.map(s => s.name.toLowerCase().trim()));
+  const gnisFishingPath = path.resolve(__dirname, '..', 'data', 'gnis-fishing-access.json');
+  const gnisFishing = fs.existsSync(gnisFishingPath) ? JSON.parse(fs.readFileSync(gnisFishingPath, 'utf8')) : [];
+  if (gnisFishing.length) console.log(`Loaded ${gnisFishing.length} GNIS fishing access sites`);
+
+  // Merge curated + GNIS fishing + OSM, curated wins on name collisions
+  const allSites = [...CURATED_SITES, ...gnisFishing];
+  const seenNames = new Set(allSites.map(s => s.name.toLowerCase().trim()));
 
   const TYPE_MAP = {
     'Golf Course': 'Golf',
