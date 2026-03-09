@@ -53,9 +53,9 @@ export default function MobileBottomNav() {
           <span>Best Of</span>
         </Link>
 
-        <Link href="/planners" className={isActive('/planners') ? 'active' : ''} tabIndex={-1}>
-          <div className="icon">🧭</div>
-          <span>Planners</span>
+        <Link href="/guides" className={isActive('/guides') ? 'active' : ''} tabIndex={-1}>
+          <div className="icon">📖</div>
+          <span>Guides</span>
         </Link>
       </nav>
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />

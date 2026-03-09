@@ -5,7 +5,7 @@ import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
 
-const url = 'https://treasurestate.com/planners/fly-fishing-rivers/';
+const url = 'https://treasurestate.com/guides/fly-fishing-rivers/';
 const title = 'Montana Fly Fishing Rivers: A Deep Dive';
 const desc = 'Detailed guides to the Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, and Missouri Rivers. History, geography, species, and conservation.';
 
@@ -13,7 +13,7 @@ export default function FlyFishingRivers() {
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Travel Guides', url: '/planners' },
-    { name: 'Fly Fishing Guide', url: '/planners/fly-fishing-guide/' },
+    { name: 'Fly Fishing Guide', url: '/guides/fly-fishing-guide/' },
     { name: 'Rivers Deep Dive', url },
   ];
 
@@ -60,11 +60,11 @@ export default function FlyFishingRivers() {
 
       <main className="ffr-page">
         <p className="ffr-back">
-          <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 500 }}>← Back to Fly Fishing Guide</Link>
+          <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none', fontWeight: 500 }}>← Back to Fly Fishing Guide</Link>
         </p>
 
         <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '1.5rem' }}>
-          This deep dive covers Montana&rsquo;s most iconic trout rivers: their origins, history, species, and what makes each one unique. For the broader story of Montana fly fishing—including early techniques, Glacier and Yellowstone, and the Skwala hatch—see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600 }}>Fly Fishing Guide</Link>.
+          This deep dive covers Montana&rsquo;s most iconic trout rivers: their origins, history, species, and what makes each one unique. For the broader story of Montana fly fishing—including early techniques, Glacier and Yellowstone, and the Skwala hatch—see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600 }}>Fly Fishing Guide</Link>.
         </p>
 
         <nav className="ffr-toc" aria-label="Table of contents">
@@ -96,7 +96,7 @@ export default function FlyFishingRivers() {
 
         <h2 id="bitterroot-river" className="ffr-section-title">The Bitterroot River and the Valley It Shaped</h2>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444' }}>
-          The Bitterroot River flows north through the <Link href="/planners/bitterroot-valley/">Bitterroot Valley</Link> of western Montana before joining the Clark Fork River near <Link href="/montana-towns/missoula/">Missoula</Link>. The river is formed by the confluence of the East Fork and West Fork near the town of Conner.
+          The Bitterroot River flows north through the <Link href="/guides/bitterroot-valley/">Bitterroot Valley</Link> of western Montana before joining the Clark Fork River near <Link href="/montana-towns/missoula/">Missoula</Link>. The river is formed by the confluence of the East Fork and West Fork near the town of Conner.
         </p>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#444', marginTop: '1rem' }}>
           Lewis and Clark passed through the Bitterroot Valley in 1805 while traveling west toward the Pacific. Their journals describe the region&rsquo;s abundant wildlife and extensive river systems.
@@ -210,7 +210,7 @@ export default function FlyFishingRivers() {
         </p>
 
         <div style={{ marginTop: '2.5rem', padding: '1.25rem', background: '#f8faf8', borderRadius: '8px', border: '1px solid #e8ede8', textAlign: 'center' }}>
-          <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+          <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
             ← Back to Fly Fishing Guide
           </Link>
           <span style={{ margin: '0 0.5rem', color: '#ccc' }}>|</span>
@@ -218,7 +218,7 @@ export default function FlyFishingRivers() {
             10 Best Towns for Fly Fishing
           </Link>
           <span style={{ margin: '0 0.5rem', color: '#ccc' }}>|</span>
-          <Link href="/planners/hot-springs-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+          <Link href="/guides/hot-springs-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
             Hot Springs Guide
           </Link>
         </div>

@@ -34,7 +34,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
     <article className="content-section">
       <p>
         {townName} sits at 4,075 feet at the confluence of the Jefferson, Madison, and Gallatin
-        Rivers{'\u2014'}the exact point where the <Link href="/planners/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Missouri River</Link> is born. This is the fishing
+        Rivers{'\u2014'}the exact point where the <Link href="/guides/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Missouri River</Link> is born. This is the fishing
         holy grail of Montana: three legendary trout rivers meeting in a single valley, 31 miles
         west of Bozeman in Gallatin County. With <strong>13 lakes</strong> within 30 miles,
         dedicated fishing access sites, and three of Montana{'\u2019'}s most storied rivers
@@ -42,7 +42,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         extraordinary concentrations of world-class fishing water in the American West. The
         Madison is a blue-ribbon icon, the Jefferson is an underrated brown trout haven, and the
         Gallatin runs crystal-clear from Yellowstone. This guide covers every major fishing zone
-        accessible from {townName}. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
+        accessible from {townName}. For Montana's fly fishing heritage and river guides, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

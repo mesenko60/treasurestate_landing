@@ -24,7 +24,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Lake offers catch-and-release trout fishing two miles from the capitol building, and the
         permit-only Smith River float is one of Montana's most coveted angling experiences. With
         10 lakes within 30 miles and multiple blue-ribbon rivers within reach, {townName} is among the strongest
-        fishing bases in the state. For Montana's fly fishing heritage and the Missouri River tailwater, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
+        fishing bases in the state. For Montana's fly fishing heritage and the Missouri River tailwater, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

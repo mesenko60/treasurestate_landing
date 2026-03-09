@@ -300,7 +300,7 @@ export default function CorridorDetailPage({
       <Hero
         title={corridor.name}
         subtitle={corridor.highways.join(' · ')}
-        image={`/images/corridors/${corridor.id}.png`}
+        image="/images/hero-image.jpg"
         alt={`${corridor.name} scenic drive through Montana`}
         small
       />

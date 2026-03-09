@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
 
 export default function SummerRoadTrips() {
-  const url = 'https://treasurestate.com/planners/summer-road-trips/';
+  const url = 'https://treasurestate.com/guides/summer-road-trips/';
   const title = 'Best Montana Summer Road Trips — Scenic Drives June through September';
   const desc = 'Discover the best summer road trips in Montana — alpine passes, glacier parks, wildflower meadows, and lake loops. Plan scenic drives from June through September.';
 
@@ -107,9 +107,9 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Paradise Valley &amp; Yellowstone</h2>
             <p>
-              US-89 from <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner follows the <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978' }}>Yellowstone River</Link> through a broad valley
+              US-89 from <Link href="/montana-towns/livingston/">Livingston</Link> to Gardiner follows the <Link href="/guides/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978' }}>Yellowstone River</Link> through a broad valley
               framed by the Absaroka Range and the Gallatin Range. This is classic Montana ranch country —
-              hay fields, <Link href="/planners/fly-fishing-guide/">fly fishing</Link> access points, and the warm mineral waters at Chico <Link href="/planners/hot-springs-guide/">Hot Springs</Link>.
+              hay fields, <Link href="/guides/fly-fishing-guide/">fly fishing</Link> access points, and the warm mineral waters at Chico <Link href="/guides/hot-springs-guide/">Hot Springs</Link>.
               The route ends at Yellowstone&apos;s North Entrance, the only park gate open year-round.
             </p>
             <div className="road-trip-stats">
@@ -175,7 +175,7 @@ export default function SummerRoadTrips() {
 
             <h2 style={{ color: '#204051' }}>Skalkaho Highway</h2>
             <p>
-              This gravel mountain pass connects the <Link href="/planners/bitterroot-valley/">Bitterroot Valley</Link> to the <Link href="/montana-towns/philipsburg/">Philipsburg</Link> area through
+              This gravel mountain pass connects the <Link href="/guides/bitterroot-valley/">Bitterroot Valley</Link> to the <Link href="/montana-towns/philipsburg/">Philipsburg</Link> area through
               the Sapphire Mountains. The highlight is Skalkaho Falls, a powerful cascade that crashes
               right next to the narrow roadway. High-clearance vehicles are recommended, and the route
               is not suitable for large RVs or trailers.

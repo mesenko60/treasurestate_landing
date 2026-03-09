@@ -25,7 +25,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         drives{'\u2014'}opens access to high-country lakes above 9,000 feet that hold populations
         of brook trout and Yellowstone cutthroat trout in settings that rival anywhere in the
         Lower 48. Three rivers flow within reach of {townName}, and the Beartooth Plateau's 700+
-        alpine lakes provide a lifetime of stillwater exploration. For Montana's fly fishing heritage and alpine lake fishing, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#alpine-lakes" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
+        alpine lakes provide a lifetime of stillwater exploration. For Montana's fly fishing heritage and alpine lake fishing, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers#alpine-lakes" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

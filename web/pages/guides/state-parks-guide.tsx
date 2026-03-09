@@ -170,7 +170,7 @@ function AreaCard({ a }: { a: StatePark }) {
 /* ─── Page Component ───────────────────────────────── */
 
 export default function StateParksGuide({ parks, contentHtml }: Props) {
-  const url = 'https://treasurestate.com/planners/state-parks-guide/';
+  const url = 'https://treasurestate.com/guides/state-parks-guide/';
   const title = 'Montana State Parks Guide';
   const desc = `Montana's state parks — from Makoshika's badlands to the Smith River float corridor. Camping, fees, activities, and directions for ${parks.length} parks.`;
 
@@ -178,7 +178,7 @@ export default function StateParksGuide({ parks, contentHtml }: Props) {
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
-    { name: 'Travel Guides', url: '/planners/' },
+    { name: 'Travel Guides', url: '/guides/' },
     { name: 'State Parks Guide', url },
   ];
 
@@ -377,10 +377,10 @@ export default function StateParksGuide({ parks, contentHtml }: Props) {
 
         {/* ─── CTAs ─── */}
         <div className="guide-cta">
-          <Link href="/planners/wildlife-guide" className="guide-cta-primary">Wildlife Guide</Link>
-          <Link href="/planners/photography-guide" className="guide-cta-secondary">Photography Guide</Link>
-          <Link href="/planners/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
-          <Link href="/planners/hiking-guide" className="guide-cta-secondary">Hiking Guide</Link>
+          <Link href="/guides/wildlife-guide" className="guide-cta-primary">Wildlife Guide</Link>
+          <Link href="/guides/photography-guide" className="guide-cta-secondary">Photography Guide</Link>
+          <Link href="/guides/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
+          <Link href="/guides/hiking-guide" className="guide-cta-secondary">Hiking Guide</Link>
           <Link href="/montana-towns" className="guide-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

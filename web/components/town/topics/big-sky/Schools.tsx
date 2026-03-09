@@ -100,7 +100,7 @@ export default function Schools({ townName, slug, schoolDistrict, schoolEnrollme
         {townName}'s location provides extraordinary outdoor education opportunities.
         Yellowstone National Park is approximately 50 miles south via US-191, and the Lee
         Metcalf Wilderness (Madison Range and Spanish Peaks units) rises directly from the
-        valley floor.         The <Link href="/planners/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Gallatin River</Link>{'\u2014'}a blue-ribbon trout stream made famous by
+        valley floor.         The <Link href="/guides/fly-fishing-rivers#gallatin-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Gallatin River</Link>{'\u2014'}a blue-ribbon trout stream made famous by
         {' '}<em>A River Runs Through It</em>{'\u2014'}flows through the Gallatin Canyon just
         minutes from school. This landscape shapes the educational experience in ways that go
         well beyond traditional classrooms: ecology field studies in Yellowstone's geothermal

@@ -7,38 +7,38 @@ import Footer from '../components/Footer';
 
 const SECTIONS = [
   {
-    title: 'Travel Planners',
-    description: 'Interactive guides to help you plan the perfect Montana trip.',
+    title: 'Trip Planner',
+    description: 'Interactive map tool to plan your Montana road trip.',
     links: [
-      { href: '/planners/backroads-planner', label: 'Backroads Travel Planner', desc: 'Interactive map with 13 corridors & 850+ POIs' },
-      { href: '/planners/montana-backroads', label: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path' },
-      { href: '/planners/fly-fishing-guide', label: 'Fly Fishing Guide', desc: 'Montana trout legacy from 1919 to today' },
-      { href: '/planners/hot-springs-guide', label: 'Hot Springs Guide', desc: '20+ natural hot springs with ratings & maps' },
-      { href: '/planners/campgrounds-guide', label: 'Campgrounds & RV Parks', desc: '100+ campgrounds across the state' },
-      { href: '/planners/hiking-guide', label: 'Hiking Trails & Trailheads', desc: '60+ trails with ratings & directions' },
-      { href: '/planners/hunting-guide', label: 'Montana Hunting Guide', desc: 'Seasons, licenses & public hunting areas' },
-      { href: '/planners/skiing-guide', label: 'Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas with stats & maps' },
-      { href: '/planners/state-parks-guide', label: 'State Parks Guide', desc: '20 parks — badlands, caves, ghost towns & more' },
-      { href: '/planners/wildlife-guide', label: 'Wildlife Viewing Guide', desc: 'Bears, wolves, bison, elk & 15 verified sites' },
-      { href: '/planners/photography-guide', label: "Photographer's Guide", desc: '18 locations with GPS, best times & gear tips' },
-      { href: '/planners/summer-road-trips', label: 'Summer Road Trips', desc: 'Best scenic drives June–September' },
-      { href: '/planners/winter-driving-guide', label: 'Winter Driving Guide', desc: 'Year-round routes & safety tips' },
+      { href: '/planners/backroads-planner', label: 'Backroads Trip Planner', desc: 'Interactive map with 13 corridors & 850+ POIs' },
     ],
   },
   {
-    title: 'Town Guides',
-    description: 'Deep dives into Montana\'s cities and towns — housing, schools, outdoor recreation, and more.',
+    title: 'Travel Guides',
+    description: 'Curated guides to Montana\u2019s best outdoor activities, destinations, and experiences.',
+    links: [
+      { href: '/guides/skiing-guide', label: 'Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas with stats & maps' },
+      { href: '/guides/fly-fishing-guide', label: 'Fly Fishing Guide', desc: 'Montana trout legacy from 1919 to today' },
+      { href: '/guides/hiking-guide', label: 'Hiking Trails & Trailheads', desc: '60+ trails with ratings & directions' },
+      { href: '/guides/hunting-guide', label: 'Montana Hunting Guide', desc: 'Seasons, licenses & public hunting areas' },
+      { href: '/guides/state-parks-guide', label: 'State Parks Guide', desc: '20 parks \u2014 badlands, caves, ghost towns & more' },
+      { href: '/guides/wildlife-guide', label: 'Wildlife Viewing Guide', desc: 'Bears, wolves, bison, elk & 15 verified sites' },
+      { href: '/guides/photography-guide', label: "Photographer's Guide", desc: '18 locations with GPS, best times & gear tips' },
+      { href: '/guides/hot-springs-guide', label: 'Hot Springs Guide', desc: '20+ natural hot springs with ratings & maps' },
+      { href: '/guides/campgrounds-guide', label: 'Campgrounds & RV Parks', desc: '100+ campgrounds across the state' },
+      { href: '/guides/montana-backroads', label: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path' },
+      { href: '/guides/summer-road-trips', label: 'Summer Road Trips', desc: 'Best scenic drives June\u2013September' },
+      { href: '/guides/winter-driving-guide', label: 'Winter Driving Guide', desc: 'Year-round routes & safety tips' },
+    ],
+  },
+  {
+    title: 'Town Profiles & Relocation',
+    description: 'Explore Montana\u2019s cities and towns \u2014 housing, schools, recreation, and relocation guides.',
     links: [
       { href: '/montana-towns', label: 'Browse All Towns', desc: '130+ Montana communities' },
       { href: '/compare', label: 'Compare Towns', desc: 'Side-by-side town comparisons' },
       { href: '/best-of', label: 'Best-Of Rankings', desc: 'Top towns by category' },
-    ],
-  },
-  {
-    title: 'Relocation Guides',
-    description: 'Everything you need to know before moving to Montana.',
-    links: [
-      { href: '/guides', label: 'Browse Guides', desc: 'Cost of living, housing, jobs & more' },
+      { href: '/guides', label: 'Relocation Guides', desc: 'Everything you need to know about moving to Montana' },
     ],
   },
   {

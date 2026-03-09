@@ -106,7 +106,7 @@ function CampCard({ c }: { c: Campground }) {
 }
 
 export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCamps, totalCount }: Props) {
-  const url = 'https://treasurestate.com/planners/campgrounds-guide/';
+  const url = 'https://treasurestate.com/guides/campgrounds-guide/';
   const title = `Montana Campgrounds Directory: ${totalCount} Campgrounds & RV Parks`;
   const desc = `Complete guide to ${totalCount} campgrounds and RV parks across Montana. ${koa.length} KOA locations, ${state.length} state park campgrounds, ${rv.length} RV parks, and ${privateCamps.length} private campgrounds with ratings, addresses, and phone numbers.`;
 
@@ -289,8 +289,8 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
         </p>
 
         <div className="cg-cta">
-          <Link href="/planners/hot-springs-guide" className="cg-cta-primary">Hot Springs Directory</Link>
-          <Link href="/planners/fly-fishing-guide" className="cg-cta-secondary">Fly Fishing Guide</Link>
+          <Link href="/guides/hot-springs-guide" className="cg-cta-primary">Hot Springs Directory</Link>
+          <Link href="/guides/fly-fishing-guide" className="cg-cta-secondary">Fly Fishing Guide</Link>
           <Link href="/montana-towns" className="cg-cta-secondary">Browse All 134 Towns</Link>
         </div>
       </main>

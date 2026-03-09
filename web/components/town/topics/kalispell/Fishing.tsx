@@ -22,7 +22,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         system threads through the valley with three major forks draining Glacier National
         Park and the surrounding wilderness. With 10 public fishing access sites and 27 lakes
         within 30 miles, {townName} offers everything from trophy lake trout trolling on
-        Flathead Lake to delicate cutthroat dry-fly fishing on pristine mountain streams. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For
+        Flathead Lake to delicate cutthroat dry-fly fishing on pristine mountain streams. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For
         the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>

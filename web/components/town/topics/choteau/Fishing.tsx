@@ -43,8 +43,8 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         trout from the Rocky Mountain Front, while the <strong>Sun River</strong> (28 miles)
         provides excellent trout water draining the vast Sun River Game Preserve. For those
         willing to pack in, the <strong>Bob Marshall Wilderness</strong> holds pristine streams
-        and alpine lakes with native <Link href="/planners/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>westslope cutthroat trout</Link>. This guide covers every major
-        fishing zone accessible from {townName}. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town profile, see
+        and alpine lakes with native <Link href="/guides/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>westslope cutthroat trout</Link>. This guide covers every major
+        fishing zone accessible from {townName}. For Montana's fly fishing heritage, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

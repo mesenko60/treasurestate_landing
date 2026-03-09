@@ -16,17 +16,17 @@ export default function ComingSoon() {
           <p>Full-page interactive map with 13 scenic corridors, 850+ POIs, and trip-building tools.</p>
           <span className="waitlist-btn" style={{ pointerEvents: 'none', background: '#3b82f6', color: '#fff' }}>OPEN PLANNER →</span>
         </Link>
-        <Link href="/planners/hot-springs-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/guides/hot-springs-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>Hot Springs Guide</h3>
           <p>Discover Montana&apos;s rejuvenating natural hot springs with ratings, directions, and an interactive map.</p>
           <span className="waitlist-btn" style={{ pointerEvents: 'none' }}>EXPLORE NOW</span>
         </Link>
-        <Link href="/planners/campgrounds-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/guides/campgrounds-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>Campgrounds &amp; RV Parks</h3>
           <p>Browse 100+ campgrounds across Montana — KOAs, state parks, public land, and RV parks.</p>
           <span className="waitlist-btn" style={{ pointerEvents: 'none' }}>EXPLORE NOW</span>
         </Link>
-        <Link href="/planners/hiking-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link href="/guides/hiking-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>Hiking Trails &amp; Trailheads</h3>
           <p>60+ trails across Montana with Google ratings, directions, and nearby town profiles.</p>
           <span className="waitlist-btn" style={{ pointerEvents: 'none' }}>EXPLORE NOW</span>

@@ -112,20 +112,20 @@ function fmtPop(n) {
   const planners = [
     { title: 'Montana Travel Planners', desc: 'Plan your perfect Montana adventure', url: '/planners/' },
     { title: 'Backroads Travel Planner', desc: 'Interactive map with 13 scenic corridors and 850+ points of interest', url: '/planners/backroads-planner/' },
-    { title: "Montana's Backroads Guide", desc: 'Hidden gems, scenic byways, and off-the-beaten-path adventures', url: '/planners/montana-backroads/' },
-    { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/planners/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
-    { title: 'Fly Fishing Rivers Deep Dive', desc: 'Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, Missouri', url: '/planners/fly-fishing-rivers/', kw: 'rivers deep dive Madison Bitterroot Big Hole Gallatin Yellowstone Flathead Missouri alpine lakes westslope cutthroat Skwala hatch' },
-    { title: 'Hot Springs Guide', desc: 'Natural and developed geothermal hot springs across Montana', url: '/planners/hot-springs-guide/', kw: 'hot springs soaking geothermal resort primitive' },
-    { title: 'Campgrounds & RV Parks', desc: '100+ campgrounds and RV parks across Montana', url: '/planners/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
-    { title: 'Hiking Guide', desc: "Montana's best trails, wilderness areas, and national park hikes", url: '/planners/hiking-guide/', kw: 'hiking trails trailhead wilderness backpacking state park national park' },
-    { title: 'Montana Hunting Guide', desc: 'Seasons, licenses, WMAs, and public land access for deer, elk, antelope, bear, turkey, and more', url: '/planners/hunting-guide/', kw: 'hunting elk deer antelope bear turkey grouse waterfowl WMA FWP license season public land' },
-    { title: 'Montana Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas with vertical drop, acreage, snowfall, lift ticket prices, and pass affiliations', url: '/planners/skiing-guide/', kw: 'skiing snowboarding ski area Big Sky Whitefish Bridger Bowl lift ticket Ikon Indy Pass snow winter' },
-    { title: 'Montana State Parks Guide', desc: "Montana's state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River float", url: '/planners/state-parks-guide/', kw: 'state park Makoshika Bannack Lewis Clark Caverns Smith River camping ghost town badlands FWP' },
-    { title: 'Montana Wildlife Viewing Guide', desc: 'Best places to see grizzly bears, wolves, bison, elk, bighorn sheep, and more in Montana', url: '/planners/wildlife-guide/', kw: 'wildlife viewing grizzly bear wolf bison elk bighorn sheep mountain goat eagle Lamar Valley Glacier' },
-    { title: "Montana Photographer's Guide", desc: 'Best photography locations in Montana — landscape, wildlife, astrophotography, and badlands', url: '/planners/photography-guide/', kw: 'photography landscape wildlife astrophotography Glacier Yellowstone Beartooth badlands sunrise sunset camera' },
-    { title: 'Summer Road Trips', desc: 'Scenic drives through Montana for summer travel', url: '/planners/summer-road-trips/', kw: 'road trip scenic drive summer vacation' },
-    { title: 'Winter Driving Guide', desc: 'Safe winter travel tips and road conditions for Montana', url: '/planners/winter-driving-guide/', kw: 'winter driving snow ice road conditions chains traction' },
-    { title: 'Bitterroot Valley Guide', desc: 'Complete guide to the Bitterroot Valley in western Montana', url: '/planners/bitterroot-valley/', kw: 'Bitterroot Valley Hamilton Stevensville Darby western Montana' },
+    { title: "Montana's Backroads Guide", desc: 'Hidden gems, scenic byways, and off-the-beaten-path adventures', url: '/guides/montana-backroads/' },
+    { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/guides/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
+    { title: 'Fly Fishing Rivers Deep Dive', desc: 'Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, Missouri', url: '/guides/fly-fishing-rivers/', kw: 'rivers deep dive Madison Bitterroot Big Hole Gallatin Yellowstone Flathead Missouri alpine lakes westslope cutthroat Skwala hatch' },
+    { title: 'Hot Springs Guide', desc: 'Natural and developed geothermal hot springs across Montana', url: '/guides/hot-springs-guide/', kw: 'hot springs soaking geothermal resort primitive' },
+    { title: 'Campgrounds & RV Parks', desc: '100+ campgrounds and RV parks across Montana', url: '/guides/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
+    { title: 'Hiking Guide', desc: "Montana's best trails, wilderness areas, and national park hikes", url: '/guides/hiking-guide/', kw: 'hiking trails trailhead wilderness backpacking state park national park' },
+    { title: 'Montana Hunting Guide', desc: 'Seasons, licenses, WMAs, and public land access for deer, elk, antelope, bear, turkey, and more', url: '/guides/hunting-guide/', kw: 'hunting elk deer antelope bear turkey grouse waterfowl WMA FWP license season public land' },
+    { title: 'Montana Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas with vertical drop, acreage, snowfall, lift ticket prices, and pass affiliations', url: '/guides/skiing-guide/', kw: 'skiing snowboarding ski area Big Sky Whitefish Bridger Bowl lift ticket Ikon Indy Pass snow winter' },
+    { title: 'Montana State Parks Guide', desc: "Montana's state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River float", url: '/guides/state-parks-guide/', kw: 'state park Makoshika Bannack Lewis Clark Caverns Smith River camping ghost town badlands FWP' },
+    { title: 'Montana Wildlife Viewing Guide', desc: 'Best places to see grizzly bears, wolves, bison, elk, bighorn sheep, and more in Montana', url: '/guides/wildlife-guide/', kw: 'wildlife viewing grizzly bear wolf bison elk bighorn sheep mountain goat eagle Lamar Valley Glacier' },
+    { title: "Montana Photographer's Guide", desc: 'Best photography locations in Montana — landscape, wildlife, astrophotography, and badlands', url: '/guides/photography-guide/', kw: 'photography landscape wildlife astrophotography Glacier Yellowstone Beartooth badlands sunrise sunset camera' },
+    { title: 'Summer Road Trips', desc: 'Scenic drives through Montana for summer travel', url: '/guides/summer-road-trips/', kw: 'road trip scenic drive summer vacation' },
+    { title: 'Winter Driving Guide', desc: 'Safe winter travel tips and road conditions for Montana', url: '/guides/winter-driving-guide/', kw: 'winter driving snow ice road conditions chains traction' },
+    { title: 'Bitterroot Valley Guide', desc: 'Complete guide to the Bitterroot Valley in western Montana', url: '/guides/bitterroot-valley/', kw: 'Bitterroot Valley Hamilton Stevensville Darby western Montana' },
   ];
   for (const p of planners) {
     entries.push({
@@ -187,7 +187,7 @@ function fmtPop(n) {
         type: 'hotspring',
         title: hs.name,
         description: [hs.location, hs.type, hs.tempF ? `${hs.tempF}°F` : ''].filter(Boolean).join(' · '),
-        url: '/planners/hot-springs-guide/',
+        url: '/guides/hot-springs-guide/',
         keywords: `${hs.name} ${hs.nearestTownName || ''} hot spring ${hs.type || ''} ${hs.location || ''} soaking geothermal`,
       });
     }
@@ -201,7 +201,7 @@ function fmtPop(n) {
         type: 'campground',
         title: cg.name,
         description: [`Near ${cg.nearestTownName || ''}`, cg.category || ''].filter(Boolean).join(' · '),
-        url: '/planners/campgrounds-guide/',
+        url: '/guides/campgrounds-guide/',
         keywords: `${cg.name} ${cg.nearestTownName || ''} campground camping ${cg.category || ''} RV tent`,
       });
     }
@@ -215,7 +215,7 @@ function fmtPop(n) {
         type: 'trail',
         title: h.name,
         description: [`Near ${h.nearestTownName || ''}`, h.category === 'state_park' ? 'State Park' : 'Trail'].filter(Boolean).join(' · '),
-        url: '/planners/hiking-guide/',
+        url: '/guides/hiking-guide/',
         keywords: `${h.name} ${h.nearestTownName || ''} ${h.category === 'state_park' ? 'state park' : 'trail trailhead hiking'}`,
       });
     }

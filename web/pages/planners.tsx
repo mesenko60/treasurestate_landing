@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import StaysCTA from '../components/StaysCTA';
 import Footer from '../components/Footer';
 
 export default function Planners() {
@@ -10,9 +9,9 @@ export default function Planners() {
     <>
       <Head>
         <link rel="canonical" href="https://treasurestate.com/planners/" />
-        <title>Montana Travel Planners & Guides - Treasure State</title>
-        <meta name="description" content="Plan your perfect Montana adventure with our comprehensive travel planners, scenic routes, and thematic guides." />
-        <meta property="og:title" content="Montana Travel Planners & Guides - Treasure State" />
+        <title>Montana Trip Planner — Interactive Backroads Map | Treasure State</title>
+        <meta name="description" content="Plan your Montana road trip with our interactive backroads planner — 13 scenic corridors, 850+ points of interest, and trip-building tools." />
+        <meta property="og:title" content="Montana Trip Planner — Interactive Backroads Map" />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta property="og:url" content="https://treasurestate.com/planners/" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -20,130 +19,55 @@ export default function Planners() {
       </Head>
       <Header />
       <Hero
-        title="Montana Travel Planners"
-        subtitle="Plan your perfect Montana adventure"
+        title="Montana Trip Planner"
+        subtitle="Plan your perfect Montana road trip"
         image="/images/hero-image.jpg"
-        alt="Scenic Montana Landscape - The Treasure State"
+        alt="Scenic Montana Landscape"
         small
       />
-      <main>
-        <section className="content-section" style={{ textAlign: 'center' }}>
-          <h2>Thematic Travel Guides</h2>
-          <p>Explore Montana through our curated travel guides designed to help you discover the state's most unique destinations and experiences.</p>
-          
-          <div style={{ marginBottom: '2rem' }}>
-            <Link href="/planners/backroads-planner" style={{ textDecoration: 'none', display: 'block' }}>
-              <div className="planner-card" style={{ background: 'linear-gradient(135deg, #1a1e2e, #2d3348)', color: '#e0e4ec', border: '2px solid #3b82f6', textAlign: 'left' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.5rem' }}>
-                  <span style={{ background: '#3b82f6', color: '#fff', fontSize: '0.7rem', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Interactive</span>
-                  <span style={{ background: '#27ae60', color: '#fff', fontSize: '0.7rem', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>New</span>
-                </div>
-                <h3 style={{ color: '#fff', margin: '0 0 0.5rem' }}>Backroads Travel Planner</h3>
-                <p style={{ color: '#a0a8b8', margin: '0 0 1rem' }}>Full-page interactive map with 13 scenic corridors, 850+ points of interest, and trip-building tools. Explore Montana&rsquo;s backroads your way.</p>
-                <span className="waitlist-btn" style={{ background: '#3b82f6', color: '#fff' }}>Open Planner →</span>
-              </div>
-            </Link>
-          </div>
-
-          <div className="planners-grid">
-            <Link href="/planners/montana-backroads" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Montana's Backroads Guide</h3>
-                <p>Discover the hidden gems of Big Sky Country with our written guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/fly-fishing-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Fly Fishing Guide</h3>
-                <p>Montana&rsquo;s trout legacy from 1919 to today. History of the Madison, Gallatin, Yellowstone, and Glacier waters that made Montana the fly fishing capital of America.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/hot-springs-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Hot Springs Guide</h3>
-                <p>A comprehensive guide to the best natural and developed geothermal hot springs across Montana. Relax and soak in the Treasure State.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/campgrounds-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Campgrounds &amp; RV Parks</h3>
-                <p>Directory of 100+ campgrounds and RV parks across Montana — KOAs, state parks, national forest sites, and private camps with ratings and contact info.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/hiking-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Hiking Trails &amp; Trailheads</h3>
-                <p>60+ hiking destinations across Montana — Glacier National Park trails, state park hikes, waterfall treks, and community trailheads with ratings and directions.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/hunting-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Montana Hunting Guide</h3>
-                <p>Season dates, license fees, 21 WMAs and public hunting areas, and species profiles for deer, elk, antelope, bear, turkey, waterfowl, and more.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/skiing-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Skiing &amp; Snowboarding Guide</h3>
-                <p>All 16 Montana ski areas — from Big Sky&rsquo;s 5,800 acres to Bear Paw&rsquo;s $25 lift tickets. Vertical drop, snowfall, pass affiliations, and insider tips.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/state-parks-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>State Parks Guide</h3>
-                <p>20 Montana state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River float. Camping, fees, activities, and directions.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/wildlife-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Wildlife Viewing Guide</h3>
-                <p>Best places to see grizzly bears, wolves, bison, elk, bighorn sheep, and 300,000 snow geese. 15 verified locations with species lists and seasons.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/photography-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Photographer&rsquo;s Guide</h3>
-                <p>18 photography locations — Glacier&rsquo;s iconic landscapes, Yellowstone wildlife, badlands astrophotography, and more. GPS coordinates, best times, and gear tips.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/summer-road-trips" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Summer Road Trips</h3>
-                <p>The best scenic drives to take June through September — alpine passes, glacier parks, and wildflower meadows.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-
-            <Link href="/planners/winter-driving-guide" style={{ textDecoration: 'none' }}>
-              <div className="planner-card">
-                <h3>Winter Driving Guide</h3>
-                <p>Year-round routes, seasonal closures, and essential winter driving tips for Montana.</p>
-                <span className="waitlist-btn" style={{ marginTop: '1rem' }}>Read Guide</span>
-              </div>
-            </Link>
-          </div>
+      <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem 1rem 3rem' }}>
+        <section style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.4rem', color: '#204051', marginBottom: '0.75rem' }}>Backroads Travel Planner</h2>
+          <p style={{ fontSize: '1.05rem', color: '#555', lineHeight: 1.7, maxWidth: '600px', margin: '0 auto 1.5rem' }}>
+            Our full-page interactive map lets you explore 13 scenic corridors and 850+ points of
+            interest across Montana. Build your route, discover hidden gems, and plan your road trip.
+          </p>
+          <Link
+            href="/planners/backroads-planner"
+            style={{
+              display: 'inline-block', padding: '0.85rem 2rem',
+              background: 'linear-gradient(135deg, #1a1e2e, #2d3348)', color: '#fff',
+              borderRadius: '8px', textDecoration: 'none', fontWeight: 700,
+              fontSize: '1.05rem', border: '2px solid #3b82f6',
+              transition: 'transform 0.2s, box-shadow 0.2s',
+            }}
+          >
+            Open Trip Planner &rarr;
+          </Link>
         </section>
-        <StaysCTA />
+
+        <section style={{
+          padding: '1.5rem', background: '#f8faf8', borderRadius: '10px',
+          border: '1px solid #e8ede8', textAlign: 'center',
+        }}>
+          <h3 style={{ fontSize: '1.1rem', color: '#204051', marginTop: 0, marginBottom: '0.5rem' }}>
+            Looking for Travel Guides?
+          </h3>
+          <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '1rem' }}>
+            Skiing, fly fishing, hiking, hunting, state parks, wildlife viewing, and more &mdash;
+            browse all our Montana travel and relocation guides.
+          </p>
+          <Link
+            href="/guides"
+            style={{
+              display: 'inline-block', padding: '0.7rem 1.5rem',
+              background: '#3b6978', color: '#fff', borderRadius: '6px',
+              textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem',
+            }}
+          >
+            Browse All Guides &rarr;
+          </Link>
+        </section>
       </main>
       <Footer />
     </>

@@ -38,7 +38,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Flathead Lake covers roughly 200 square miles with depths reaching 370 feet, producing
         trophy lake trout that regularly exceed 30 pounds. Beyond the lake, 5 public fishing
         access sites and 24 lakes lie within 30 miles, along with the Flathead River system below
-        Seli'š Ksanka Qlispe' Dam. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
+        Seli'š Ksanka Qlispe' Dam. For Montana's fly fishing heritage and the Flathead River system, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

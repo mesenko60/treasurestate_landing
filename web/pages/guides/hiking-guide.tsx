@@ -102,7 +102,7 @@ function HikeCard({ h }: { h: HikingSite }) {
 }
 
 export default function HikingGuide({ trails, stateParks, nationalPark, waterfalls, totalCount }: Props) {
-  const url = 'https://treasurestate.com/planners/hiking-guide/';
+  const url = 'https://treasurestate.com/guides/hiking-guide/';
   const title = `Montana Hiking Guide: ${totalCount} Trails, State Parks & Trailheads`;
   const desc = `Explore ${totalCount} hiking trails and outdoor destinations across Montana. ${trails.length} trailheads, ${stateParks.length} state parks, ${nationalPark.length} national park trails, and ${waterfalls.length} waterfall hikes with Google ratings and directions.`;
 
@@ -269,9 +269,9 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
         </p>
 
         <div className="hk-cta">
-          <Link href="/planners/campgrounds-guide" className="hk-cta-primary">Campgrounds Directory</Link>
-          <Link href="/planners/fly-fishing-guide" className="hk-cta-secondary">Fly Fishing Guide</Link>
-          <Link href="/planners/hot-springs-guide" className="hk-cta-secondary">Hot Springs Guide</Link>
+          <Link href="/guides/campgrounds-guide" className="hk-cta-primary">Campgrounds Directory</Link>
+          <Link href="/guides/fly-fishing-guide" className="hk-cta-secondary">Fly Fishing Guide</Link>
+          <Link href="/guides/hot-springs-guide" className="hk-cta-secondary">Hot Springs Guide</Link>
         </div>
       </main>
 

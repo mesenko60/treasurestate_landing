@@ -42,9 +42,9 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         valley, <strong>Georgetown Lake</strong>{'\u2014'}13 miles southwest{'\u2014'}is the
         premier fishery: a 2,800-acre mountain lake stocked with rainbow trout, brook trout, and
         kokanee salmon, and widely regarded as Montana{'\u2019'}s ice fishing capital. The
-        Anaconda-Pintler Wilderness holds backcountry lakes with pure <Link href="/planners/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>westslope cutthroat trout</Link>
+        Anaconda-Pintler Wilderness holds backcountry lakes with pure <Link href="/guides/fly-fishing-rivers#westslope-cutthroat" style={{ color: '#3b6978', textDecoration: 'none' }}>westslope cutthroat trout</Link>
         just 3 miles from town. This guide covers every major fishing zone accessible from{' '}
-        {townName}. For Montana's fly fishing heritage, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town profile, see
+        {townName}. For Montana's fly fishing heritage, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

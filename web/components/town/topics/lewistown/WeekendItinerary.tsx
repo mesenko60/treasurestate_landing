@@ -103,7 +103,7 @@ export default function WeekendItinerary({ townName, slug, climate, highlights }
         supports excellent populations of rainbow and brown trout. The creek runs
         right through town, offering convenient access for fly fishing. See our{' '}
         <Link href={`/montana-towns/${slug}/fishing/`}>{townName} fishing guide</Link> and our{' '}
-        <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> for
+        <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> for
         species details and access points.
       </p>
 

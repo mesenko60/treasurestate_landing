@@ -398,6 +398,9 @@ export default function BackroadsPlanner({
               <div className="sidebar-header">
                 <h1>Montana Backroads</h1>
                 <p>{corridors.length} scenic corridors · 850+ points of interest</p>
+                <Link href="/guides" style={{ display: 'inline-block', marginTop: '8px', fontSize: '0.72rem', color: '#6b9fff', textDecoration: 'none' }}>
+                  Looking for travel guides? &rarr;
+                </Link>
               </div>
               <div className="filter-bar">
                 {['easy', 'moderate', 'challenging'].map(d => (

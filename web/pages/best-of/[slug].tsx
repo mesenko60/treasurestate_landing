@@ -147,7 +147,7 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
 
         {page.slug === 'towns-near-hot-springs' && (
           <p style={{ fontSize: '0.95rem', marginBottom: '2rem' }}>
-            <Link href="/planners/hot-springs-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+            <Link href="/guides/hot-springs-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
               Browse all 31 hot springs in our complete directory →
             </Link>
           </p>
@@ -155,11 +155,11 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
 
         {page.slug === 'best-fishing-towns' && (
           <p style={{ fontSize: '0.95rem', marginBottom: '2rem' }}>
-            <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+            <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
               Fly Fishing Guide
             </Link>
             {' — '}
-            <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+            <Link href="/guides/fly-fishing-rivers" style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
               Rivers Deep Dive
             </Link>
           </p>

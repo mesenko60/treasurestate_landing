@@ -294,7 +294,7 @@ function LicenseTables({ categories }: { categories: LicenseCategory[] }) {
 /* ─── Page Component ───────────────────────────────── */
 
 export default function HuntingGuide({ areas, seasons, licenses }: Props) {
-  const url = 'https://treasurestate.com/planners/hunting-guide/';
+  const url = 'https://treasurestate.com/guides/hunting-guide/';
   const title = 'Montana Hunting Guide: Seasons, Licenses, and Public Land Access';
   const desc = `Complete guide to hunting in Montana — season dates for ${seasons.length} species, license fees, ${areas.length} WMAs and public hunting areas, and species profiles for deer, elk, antelope, bear, turkey, and more.`;
 
@@ -303,7 +303,7 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
-    { name: 'Travel Guides', url: '/planners/' },
+    { name: 'Travel Guides', url: '/guides/' },
     { name: 'Hunting Guide', url },
   ];
 
@@ -557,10 +557,10 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
 
         {/* ─── CTAs ─── */}
         <div className="hunt-cta">
-          <Link href="/planners/fly-fishing-guide" className="hunt-cta-primary">Fly Fishing Guide</Link>
-          <Link href="/planners/wildlife-guide" className="hunt-cta-secondary">Wildlife Guide</Link>
-          <Link href="/planners/skiing-guide" className="hunt-cta-secondary">Skiing Guide</Link>
-          <Link href="/planners/state-parks-guide" className="hunt-cta-secondary">State Parks Guide</Link>
+          <Link href="/guides/fly-fishing-guide" className="hunt-cta-primary">Fly Fishing Guide</Link>
+          <Link href="/guides/wildlife-guide" className="hunt-cta-secondary">Wildlife Guide</Link>
+          <Link href="/guides/skiing-guide" className="hunt-cta-secondary">Skiing Guide</Link>
+          <Link href="/guides/state-parks-guide" className="hunt-cta-secondary">State Parks Guide</Link>
           <Link href="/montana-towns" className="hunt-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

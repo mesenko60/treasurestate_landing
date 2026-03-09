@@ -40,20 +40,21 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   add(`${baseUrl}/montana-towns/`, 0.9, 'weekly');
   add(`${baseUrl}/compare/`, 0.6, 'monthly');
   add(`${baseUrl}/planners/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/montana-backroads/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/fly-fishing-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/fly-fishing-rivers/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/hot-springs-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/campgrounds-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/hiking-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/hunting-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/skiing-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/state-parks-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/wildlife-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/photography-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/montana-backroads/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/fly-fishing-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/fly-fishing-rivers/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/hot-springs-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/campgrounds-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/hiking-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/hunting-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/skiing-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/state-parks-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/wildlife-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/photography-guide/`, 0.7, 'monthly');
   add(`${baseUrl}/planners/backroads-planner/`, 0.8, 'weekly');
-  add(`${baseUrl}/planners/summer-road-trips/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/winter-driving-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/summer-road-trips/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/winter-driving-guide/`, 0.7, 'monthly');
+  add(`${baseUrl}/guides/bitterroot-valley/`, 0.7, 'monthly');
 
   const corridorsPath = path.join(webDir, 'data', 'corridors.json');
   if (fs.existsSync(corridorsPath)) {

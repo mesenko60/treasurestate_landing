@@ -18,7 +18,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} is one of the great fly-fishing destinations in North America{'\u2014'}a gateway
         town where the Madison River, Yellowstone Park waters, Hebgen Lake, and dozens of mountain
-        streams converge within easy reach of a single base camp.         The <Link href="/planners/fly-fishing-rivers#madison-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Madison River</Link>, flowing north
+        streams converge within easy reach of a single base camp.         The <Link href="/guides/fly-fishing-rivers#madison-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Madison River</Link>, flowing north
         from its origin at the confluence of the Firehole and Gibbon Rivers inside Yellowstone, is
         one of the most celebrated trout rivers in the world and runs just minutes from town.
         Hebgen Lake, a 12-mile-long reservoir on the Madison, offers outstanding stillwater fishing
@@ -26,7 +26,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         Madison River provide fishing in a setting of erupting geysers and steaming thermal
         features found nowhere else on earth. With {fishingAccess.length} FWP fishing access
         {fishingAccess.length === 1 ? ' site' : ' sites'} and 10 lakes within 30 miles, {townName}{' '}
-        puts world-class water at your doorstep. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
+        puts world-class water at your doorstep. For Montana's fly fishing heritage and river guides, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full city profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

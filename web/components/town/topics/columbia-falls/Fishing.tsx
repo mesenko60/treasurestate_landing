@@ -35,7 +35,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
       <p>
         {townName} sits at 3,077 feet in the Flathead Valley of northwest Montana, 17 miles
         from the west entrance of Glacier National Park and 11 miles from Hungry Horse
-        Reservoir.         The <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Flathead River</Link> system{'\u2014'}Middle Fork, South Fork, and
+        Reservoir.         The <Link href="/guides/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Flathead River</Link> system{'\u2014'}Middle Fork, South Fork, and
         mainstem{'\u2014'}threads through the surrounding landscape, and 26 lakes lie within 30
         miles. Westslope cutthroat trout, the native species and the star fish of the region,
         inhabit the cold streams draining Glacier{'\u2019'}s peaks and the Great Bear Wilderness.
@@ -43,7 +43,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         setting, and Whitefish Lake provides year-round opportunity just 9 miles northwest. With
         10 public fishing access sites, pristine national park waters, and ice fishing through
         winter, {townName} is a quiet basecamp for some of the finest freshwater fishing in the
-        Northern Rockies. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/planners/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
+        Northern Rockies. For Montana's fly fishing heritage and river guides, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link> and <Link href="/guides/fly-fishing-rivers#flathead-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Rivers Deep Dive</Link>. For the full town profile, see
         our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

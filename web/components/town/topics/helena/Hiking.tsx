@@ -183,7 +183,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
         surrounded by walking paths, popular for lunchtime strolls and catch-and-release trout
         fishing. It's one of the closest state parks to any Montana city center. Missouri
         Headwaters State Park (52 miles southeast) marks the exact spot where the Jefferson,
-        Madison, and Gallatin rivers converge to form the <Link href="/planners/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Missouri River</Link> — a site of immense
+        Madison, and Gallatin rivers converge to form the <Link href="/guides/fly-fishing-rivers#missouri-river" style={{ color: '#3b6978', textDecoration: 'none' }}>Missouri River</Link> — a site of immense
         historical significance explored by Lewis and Clark in 1805. The park offers riverside
         trails through cottonwood bottoms with interpretive exhibits on the expedition.
       </p>
@@ -267,7 +267,7 @@ export default function Hiking({ townName, slug, trails, wilderness, stateParks 
       <p>
         For more outdoor activities, see our{' '}
         <Link href={`/montana-towns/${slug}/fishing/`}>{townName} fishing guide</Link>, our{' '}
-        <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>, and
+        <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>, and
         the <Link href={`/montana-towns/${slug}/weekend-itinerary/`}>{townName} weekend itinerary</Link>.
       </p>
     </article>

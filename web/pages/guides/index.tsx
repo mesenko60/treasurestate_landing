@@ -19,91 +19,137 @@ type GuideLink = {
 
 type Props = { guides: GuideLink[] };
 
+const TRAVEL_GUIDES = [
+  { href: '/guides/skiing-guide', title: 'Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas — from Big Sky\u2019s 5,800 acres to Bear Paw\u2019s $25 lift tickets.' },
+  { href: '/guides/fly-fishing-guide', title: 'Fly Fishing Guide', desc: 'Montana\u2019s trout legacy from 1919 to today — Madison, Gallatin, Yellowstone, and Glacier waters.' },
+  { href: '/guides/hiking-guide', title: 'Hiking Trails & Trailheads', desc: '60+ hiking destinations across Montana with difficulty ratings, directions, and tips.' },
+  { href: '/guides/hunting-guide', title: 'Montana Hunting Guide', desc: 'Season dates, license fees, 21 WMAs, and species profiles for deer, elk, antelope, and more.' },
+  { href: '/guides/state-parks-guide', title: 'State Parks Guide', desc: '20 Montana state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River.' },
+  { href: '/guides/wildlife-guide', title: 'Wildlife Viewing Guide', desc: 'Grizzly bears, wolves, bison, elk, bighorn sheep — 15 verified locations with species and seasons.' },
+  { href: '/guides/photography-guide', title: 'Photographer\u2019s Guide', desc: '18 photography locations with GPS coordinates, best times, recommended lenses, and gear tips.' },
+  { href: '/guides/hot-springs-guide', title: 'Hot Springs Guide', desc: '20+ natural and developed geothermal hot springs across Montana.' },
+  { href: '/guides/campgrounds-guide', title: 'Campgrounds & RV Parks', desc: '100+ campgrounds — KOAs, state parks, national forest sites, and private camps.' },
+  { href: '/guides/montana-backroads', title: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path — hidden gems of Big Sky Country.' },
+  { href: '/guides/summer-road-trips', title: 'Summer Road Trips', desc: 'The best scenic drives June through September — alpine passes and wildflower meadows.' },
+  { href: '/guides/winter-driving-guide', title: 'Winter Driving Guide', desc: 'Year-round routes, seasonal closures, and essential winter driving tips.' },
+];
+
 export default function GuidesIndex({ guides }: Props) {
   const url = 'https://treasurestate.com/guides/';
   const breadcrumbs = [
     { name: 'Home', url: '/' },
-    { name: 'Relocation Guides', url },
+    { name: 'Guides', url },
   ];
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Montana Relocation Guides',
-    description: 'Comprehensive moving guides for Montana cities and towns. Housing costs, climate, recreation, schools, and more.',
+    name: 'Montana Guides — Travel & Relocation',
+    description: 'Travel guides for skiing, fishing, hiking, and more, plus comprehensive relocation guides for Montana cities and towns.',
     url,
   };
 
   return (
     <>
       <Head>
-        <title>Montana Relocation Guides | Moving to Montana | Treasure State</title>
-        <meta name="description" content="Complete relocation guides for Montana cities and towns. Housing costs, climate data, recreation, schools, and everything you need to know about moving to Montana." />
+        <title>Montana Guides — Travel, Outdoors & Relocation | Treasure State</title>
+        <meta name="description" content="Montana travel guides for skiing, fly fishing, hiking, hunting, state parks, wildlife viewing, and more. Plus relocation guides for 55+ Montana towns." />
         <link rel="canonical" href={url} />
-        <meta property="og:title" content="Montana Relocation Guides" />
-        <meta property="og:description" content="Everything you need to know about moving to Montana." />
+        <meta property="og:title" content="Montana Guides — Travel, Outdoors & Relocation" />
+        <meta property="og:description" content="Travel guides and relocation guides for Montana." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Montana Relocation Guides" />
-        <meta name="twitter:description" content="Everything you need to know about moving to Montana." />
+        <meta name="twitter:title" content="Montana Guides — Travel, Outdoors & Relocation" />
+        <meta name="twitter:description" content="Travel guides and relocation guides for Montana." />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </Head>
       <Header />
-      <Hero title="Montana Relocation Guides" subtitle="Everything You Need to Know About Moving to Big Sky Country" image="/images/hero-image.jpg" alt="Montana relocation guides" small />
+      <Hero title="Montana Guides" subtitle="Travel, Outdoors & Relocation" image="/images/hero-image.jpg" alt="Montana guides" small />
       <Breadcrumbs items={breadcrumbs} />
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '1.5rem 1rem 3rem' }}>
-        <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#333', marginBottom: '2rem' }}>
-          Thinking about moving to Montana? Our comprehensive relocation guides cover everything from housing
-          costs and climate to outdoor recreation, schools, and quality of life. Each guide is built from
-          real data: Census figures, Zillow market data, and 2,500+ mapped recreation sites to give
-          you an honest picture of what life is really like in each community.
-        </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
-          {guides.map(g => (
-            <Link key={g.slug} href={`/guides/${g.slug}/`} style={{
-              display: 'block', padding: '1.25rem', background: '#fff',
-              borderRadius: '10px', border: '1px solid #e8ede8', textDecoration: 'none',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-              transition: 'box-shadow 0.2s, transform 0.2s',
-            }}>
-              <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#204051', marginBottom: '0.4rem' }}>
-                Moving to {g.townName}
-              </div>
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.78rem', color: '#666', marginBottom: '0.5rem' }}>
-                <span>Pop. {g.population.toLocaleString()}</span>
-                <span>{g.homeValue}</span>
-                <span>{g.recCount} rec sites</span>
-              </div>
-              <div style={{ fontSize: '0.82rem', color: '#3b6978', fontWeight: 500 }}>
-                Read Guide →
-              </div>
-            </Link>
-          ))}
-        </div>
+        {/* Travel Guides */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '1.3rem', color: '#204051', marginBottom: '0.4rem' }}>Travel Guides</h2>
+          <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '1.25rem' }}>
+            Explore Montana through our curated guides covering skiing, fishing, hiking, wildlife, photography, and more.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
+            {TRAVEL_GUIDES.map(g => (
+              <Link key={g.href} href={g.href} style={{
+                display: 'block', padding: '1.25rem', background: '#fff',
+                borderRadius: '10px', border: '1px solid #e8ede8', textDecoration: 'none',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                transition: 'box-shadow 0.2s, transform 0.2s, border-color 0.2s',
+              }}>
+                <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#204051', marginBottom: '0.4rem' }}>
+                  {g.title}
+                </div>
+                <div style={{ fontSize: '0.85rem', color: '#666', lineHeight: 1.5, marginBottom: '0.5rem' }}>
+                  {g.desc}
+                </div>
+                <div style={{ fontSize: '0.82rem', color: '#3b6978', fontWeight: 500 }}>
+                  Read Guide &rarr;
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Relocation Guides */}
+        <section>
+          <h2 style={{ fontSize: '1.3rem', color: '#204051', marginBottom: '0.4rem' }}>Relocation Guides</h2>
+          <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '1.25rem' }}>
+            Thinking about moving to Montana? Our comprehensive relocation guides cover housing costs,
+            climate, outdoor recreation, schools, and quality of life — built from Census, Zillow, and
+            2,500+ mapped recreation sites.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
+            {guides.map(g => (
+              <Link key={g.slug} href={`/guides/${g.slug}/`} style={{
+                display: 'block', padding: '1.25rem', background: '#fff',
+                borderRadius: '10px', border: '1px solid #e8ede8', textDecoration: 'none',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                transition: 'box-shadow 0.2s, transform 0.2s',
+              }}>
+                <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#204051', marginBottom: '0.4rem' }}>
+                  Moving to {g.townName}
+                </div>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.78rem', color: '#666', marginBottom: '0.5rem' }}>
+                  <span>Pop. {g.population.toLocaleString()}</span>
+                  <span>{g.homeValue}</span>
+                  <span>{g.recCount} rec sites</span>
+                </div>
+                <div style={{ fontSize: '0.82rem', color: '#3b6978', fontWeight: 500 }}>
+                  Read Guide &rarr;
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <div style={{
           marginTop: '2.5rem', padding: '1.25rem', background: '#f8faf8',
           borderRadius: '8px', border: '1px solid #e8ede8', textAlign: 'center',
         }}>
-          <h3 style={{ fontSize: '0.95rem', color: '#204051', marginTop: 0 }}>Comparing Towns?</h3>
+          <h3 style={{ fontSize: '0.95rem', color: '#204051', marginTop: 0 }}>Planning a Road Trip?</h3>
           <p style={{ fontSize: '0.88rem', color: '#666', marginBottom: '1rem' }}>
-            Use our tools to find the perfect Montana community for you.
+            Use our interactive backroads planner to build your perfect Montana route.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/best-of/" style={{
+            <Link href="/planners/backroads-planner" style={{
               display: 'inline-block', padding: '0.6rem 1.25rem',
-              background: '#3b6978', color: '#fff', borderRadius: '6px',
+              background: '#204051', color: '#fff', borderRadius: '6px',
               textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem',
             }}>
-              Best Of Rankings
+              Open Trip Planner
             </Link>
             <Link href="/compare/" style={{
               display: 'inline-block', padding: '0.6rem 1.25rem',
-              background: '#204051', color: '#fff', borderRadius: '6px',
+              background: '#3b6978', color: '#fff', borderRadius: '6px',
               textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem',
             }}>
               Compare Towns
@@ -138,7 +184,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         slug: `moving-to-${s}-montana`,
         townName: td.name,
         population: td.population || 0,
-        homeValue: hv ? '$' + hv.toLocaleString() : '—',
+        homeValue: hv ? '$' + hv.toLocaleString() : '\u2014',
         recCount: rec.length,
       };
     })

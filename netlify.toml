@@ -194,6 +194,175 @@
   status = 301
   force = true
 
+# --- Guides moved from /planners/ to /guides/ (Feb 2026) ---
+[[redirects]]
+  from = "/planners/fly-fishing-guide/*"
+  to = "/guides/fly-fishing-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/fly-fishing-guide"
+  to = "/guides/fly-fishing-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/fly-fishing-rivers/*"
+  to = "/guides/fly-fishing-rivers/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/fly-fishing-rivers"
+  to = "/guides/fly-fishing-rivers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hot-springs-guide/*"
+  to = "/guides/hot-springs-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hot-springs-guide"
+  to = "/guides/hot-springs-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/campgrounds-guide/*"
+  to = "/guides/campgrounds-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/campgrounds-guide"
+  to = "/guides/campgrounds-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hiking-guide/*"
+  to = "/guides/hiking-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hiking-guide"
+  to = "/guides/hiking-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hunting-guide/*"
+  to = "/guides/hunting-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/hunting-guide"
+  to = "/guides/hunting-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/skiing-guide/*"
+  to = "/guides/skiing-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/skiing-guide"
+  to = "/guides/skiing-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/state-parks-guide/*"
+  to = "/guides/state-parks-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/state-parks-guide"
+  to = "/guides/state-parks-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/wildlife-guide/*"
+  to = "/guides/wildlife-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/wildlife-guide"
+  to = "/guides/wildlife-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/photography-guide/*"
+  to = "/guides/photography-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/photography-guide"
+  to = "/guides/photography-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/summer-road-trips/*"
+  to = "/guides/summer-road-trips/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/summer-road-trips"
+  to = "/guides/summer-road-trips/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/winter-driving-guide/*"
+  to = "/guides/winter-driving-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/winter-driving-guide"
+  to = "/guides/winter-driving-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/montana-backroads/*"
+  to = "/guides/montana-backroads/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/montana-backroads"
+  to = "/guides/montana-backroads/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/bitterroot-valley/*"
+  to = "/guides/bitterroot-valley/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/planners/bitterroot-valley"
+  to = "/guides/bitterroot-valley/"
+  status = 301
+  force = true
+
 # --- Catch-all: any remaining .htm files ---
 [[redirects]]
   from = "/*.htm"

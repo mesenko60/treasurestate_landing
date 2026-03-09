@@ -264,7 +264,7 @@ function ValleyMap({ corridor, townCoords }: { corridor: Corridor; townCoords: R
 }
 
 export default function BitterrootValleyPlanner({ corridor, connectedCorridors, towns, townCoords }: Props) {
-  const canonicalUrl = 'https://treasurestate.com/planners/bitterroot-valley/';
+  const canonicalUrl = 'https://treasurestate.com/guides/bitterroot-valley/';
   const pageTitle = 'Bitterroot Valley Travel Planner — Montana\'s Premier Valley | Treasure State';
   const pageDescription = 'Plan your trip to Montana\'s Bitterroot Valley. Explore 75 miles of scenic US-93 from Missoula through Stevensville, Hamilton, and Darby with an interactive map, recreation highlights, scenic routes, and travel tips.';
 
@@ -380,7 +380,7 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
               The Bitterroot Valley stretches 75 miles south from Missoula along US-93, passing through
               Stevensville, Hamilton, and Darby before reaching the rugged backcountry of the Selway-Bitterroot
               Wilderness. Flanked by the dramatic Bitterroot Range to the west and the gentler Sapphire Mountains
-              to the east, the valley is fed by the <Link href="/planners/fly-fishing-rivers#bitterroot-river" style={{ color: '#3b6978' }}>Bitterroot River</Link> — one of Montana&#39;s premier fly-fishing
+              to the east, the valley is fed by the <Link href="/guides/fly-fishing-rivers#bitterroot-river" style={{ color: '#3b6978' }}>Bitterroot River</Link> — one of Montana&#39;s premier fly-fishing
               streams. Known for its small-town charm, world-class hiking, and a climate milder than much of
               the state, the Bitterroot is a year-round destination that rewards slow exploration.
             </p>

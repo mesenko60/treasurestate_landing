@@ -33,7 +33,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
   return (
     <article className="content-section">
       <p>
-        {townName} sits at 2,064 feet on the <Link href="/planners/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}><strong>Yellowstone River</strong></Link> in eastern Montana,
+        {townName} sits at 2,064 feet on the <Link href="/guides/fly-fishing-rivers#yellowstone-river" style={{ color: '#3b6978', textDecoration: 'none' }}><strong>Yellowstone River</strong></Link> in eastern Montana,
         the seat of Dawson County and home to 4,873 people. This is <strong>warmwater fishing
         country</strong>{'\u2014'}not the blue-ribbon trout streams of western Montana. The
         Yellowstone River flows directly through town, carrying <strong>walleye</strong>,{' '}
@@ -42,7 +42,7 @@ export default function Fishing({ townName, slug, fishingAccess, rivers, lakes }
         <strong>paddlefish</strong>{'\u2014'}a prehistoric species dating to the age of the dinosaurs,
         reaching 100+ pounds, found in the Yellowstone and Missouri rivers. With{' '}
         <strong>3 lakes</strong> within 30 miles and the Yellowstone running through the heart of
-        town, {townName} offers a fishing experience unlike anywhere else in Montana. For Montana's fly fishing heritage and river guides, see our <Link href="/planners/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full
+        town, {townName} offers a fishing experience unlike anywhere else in Montana. For Montana's fly fishing heritage and river guides, see our <Link href="/guides/fly-fishing-guide" style={{ color: '#3b6978', textDecoration: 'none' }}>Fly Fishing Guide</Link>. For the full
         town profile, see our <Link href={`/montana-towns/${slug}/`}>{townName} guide</Link>.
       </p>
 

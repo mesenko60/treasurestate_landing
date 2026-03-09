@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
 
 export default function WinterDrivingGuide() {
-  const url = 'https://treasurestate.com/planners/winter-driving-guide/';
+  const url = 'https://treasurestate.com/guides/winter-driving-guide/';
   const title = 'Winter Driving in Montana — Safe Routes & Scenic Drives';
   const desc = 'Plan safe winter travel in Montana with year-round routes, seasonal closure info, winter-specific drives, and essential cold-weather driving tips.';
 
@@ -104,7 +104,7 @@ export default function WinterDrivingGuide() {
               are all part of the reality. Not every scenic corridor that&apos;s accessible in July will
               be open in January — several mountain passes close entirely for the season. But for
               prepared drivers, winter travel in Montana offers its own rewards: uncrowded roads,
-              dramatic frozen landscapes, and access to world-class skiing and <Link href="/planners/hot-springs-guide/">hot springs</Link>.
+              dramatic frozen landscapes, and access to world-class skiing and <Link href="/guides/hot-springs-guide/">hot springs</Link>.
             </p>
 
             <h2 style={{ color: '#204051' }}>Year-Round Routes</h2>

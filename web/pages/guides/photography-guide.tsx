@@ -146,7 +146,7 @@ function AreaCard({ a }: { a: PhotoLocation }) {
 /* ─── Page Component ───────────────────────────────── */
 
 export default function PhotographyGuide({ locations, contentHtml }: Props) {
-  const url = 'https://treasurestate.com/planners/photography-guide/';
+  const url = 'https://treasurestate.com/guides/photography-guide/';
   const title = "Montana Photographer's Guide";
   const desc = `Best photography locations in Montana — landscape, wildlife, astrophotography, and badlands. ${locations.length} verified locations with GPS coordinates, best times, and gear recommendations.`;
 
@@ -154,7 +154,7 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
-    { name: 'Travel Guides', url: '/planners/' },
+    { name: 'Travel Guides', url: '/guides/' },
     { name: "Photographer's Guide", url },
   ];
 
@@ -348,10 +348,10 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
 
         {/* ─── CTAs ─── */}
         <div className="guide-cta">
-          <Link href="/planners/wildlife-guide" className="guide-cta-primary">Wildlife Guide</Link>
-          <Link href="/planners/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
-          <Link href="/planners/state-parks-guide" className="guide-cta-secondary">State Parks Guide</Link>
-          <Link href="/planners/hunting-guide" className="guide-cta-secondary">Hunting Guide</Link>
+          <Link href="/guides/wildlife-guide" className="guide-cta-primary">Wildlife Guide</Link>
+          <Link href="/guides/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
+          <Link href="/guides/state-parks-guide" className="guide-cta-secondary">State Parks Guide</Link>
+          <Link href="/guides/hunting-guide" className="guide-cta-secondary">Hunting Guide</Link>
           <Link href="/montana-towns" className="guide-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

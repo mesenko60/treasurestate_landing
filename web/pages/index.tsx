@@ -282,7 +282,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           <div className="hp-path-links">
             <Link href="/best-of/best-ski-towns" className="hp-path-link">Ski Towns</Link>
             <Link href="/best-of/best-fishing-towns" className="hp-path-link">Fishing</Link>
-            <Link href="/planners/fly-fishing-guide" className="hp-path-link">Fly Fishing Guide</Link>
+            <Link href="/guides/fly-fishing-guide" className="hp-path-link">Fly Fishing Guide</Link>
             <Link href="/best-of/towns-near-hot-springs" className="hp-path-link">Hot Springs</Link>
             <Link href="/planners" className="hp-path-link">Travel Guides</Link>
           </div>
@@ -330,7 +330,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                   <span className="hp-adv-icon" aria-hidden="true">🎣</span>
                   <span className="hp-adv-label">Fly Fishing</span>
                 </Link>
-                <Link href="/planners/hot-springs-guide" className="hp-adv-card">
+                <Link href="/guides/hot-springs-guide" className="hp-adv-card">
                   <span className="hp-adv-icon" aria-hidden="true">♨️</span>
                   <span className="hp-adv-label">Hot Springs</span>
                 </Link>
@@ -342,7 +342,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                   <span className="hp-adv-icon" aria-hidden="true">🥾</span>
                   <span className="hp-adv-label">Hiking &amp; Trails</span>
                 </Link>
-                <Link href="/planners/montana-backroads" className="hp-adv-card">
+                <Link href="/guides/montana-backroads" className="hp-adv-card">
                   <span className="hp-adv-icon" aria-hidden="true">🛣️</span>
                   <span className="hp-adv-label">Scenic Backroads</span>
                 </Link>
