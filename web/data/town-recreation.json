@@ -143,6 +143,13 @@
         "distMiles": 10
       },
       {
+        "name": "Frenchtown Pond State Park",
+        "type": "State Park",
+        "lat": 47.02437,
+        "lng": -114.2579,
+        "distMiles": 10
+      },
+      {
         "name": "Ralph's Takeout",
         "type": "Fishing Access",
         "lat": 47.0076236,
@@ -267,6 +274,13 @@
         "lat": 46.7742078,
         "lng": -114.4339393,
         "distMiles": 16
+      },
+      {
+        "name": "Council Grove State Park",
+        "type": "State Park",
+        "lat": 46.91242,
+        "lng": -114.15095,
+        "distMiles": 17
       },
       {
         "name": "Clearwater Crossing Campground",
@@ -469,6 +483,13 @@
         "type": "Fishing Access",
         "lat": 47.18937,
         "lng": -114.87985,
+        "distMiles": 23
+      },
+      {
+        "name": "Snowshoe Falls",
+        "type": "Waterfall",
+        "lat": 46.67535,
+        "lng": -114.57135,
         "distMiles": 23
       },
       {
@@ -794,6 +815,13 @@
         "distMiles": 26
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 47.30208,
+        "lng": -114.8264,
+        "distMiles": 26
+      },
+      {
         "name": "Poe Meadows",
         "type": "Campground",
         "lat": 46.9525888,
@@ -1058,6 +1086,13 @@
         "distMiles": 1
       },
       {
+        "name": "Anaconda Smelter Stack State Park",
+        "type": "State Park",
+        "lat": 46.11104,
+        "lng": -112.91337,
+        "distMiles": 2
+      },
+      {
         "name": "Stucky Ridge Wildlife Management Area",
         "type": "Nature Reserve",
         "lat": 46.1724571,
@@ -1084,6 +1119,13 @@
         "lat": 46.194079,
         "lng": -112.9381629,
         "distMiles": 5
+      },
+      {
+        "name": "Lost Creek State Park",
+        "type": "State Park",
+        "lat": 46.21076,
+        "lng": -113.00477,
+        "distMiles": 6
       },
       {
         "name": "Lost Creek Campground",
@@ -1427,6 +1469,20 @@
         "lat": 46.3442,
         "lng": -113.1487,
         "distMiles": 18
+      },
+      {
+        "name": "Rock Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.41021,
+        "lng": -112.96255,
+        "distMiles": 19
+      },
+      {
+        "name": "Granite State Park",
+        "type": "State Park",
+        "lat": 46.31743,
+        "lng": -113.2445,
+        "distMiles": 19
       },
       {
         "name": "Orofino Campground",
@@ -1926,6 +1982,13 @@
         "distMiles": 29
       },
       {
+        "name": "Pintler Falls",
+        "type": "Waterfall",
+        "lat": 45.85992,
+        "lng": -113.44562,
+        "distMiles": 30
+      },
+      {
         "name": "Blackfoot Meadows Trailhead",
         "type": "Trailhead",
         "lat": 46.4253823,
@@ -2088,6 +2151,13 @@
         "lat": 46.62,
         "lng": -104.47,
         "distMiles": 20
+      },
+      {
+        "name": "Medicine Rocks State Park",
+        "type": "State Park",
+        "lat": 46.04444,
+        "lng": -104.47134,
+        "distMiles": 24
       }
     ]
   },
@@ -2412,15 +2482,15 @@
       {
         "name": "Calamity Falls",
         "type": "Waterfall",
-        "lat": 45.1616441,
-        "lng": -109.5208972,
+        "lat": 45.16159,
+        "lng": -109.521,
         "distMiles": 18
       },
       {
         "name": "Sentinel Falls",
         "type": "Waterfall",
-        "lat": 45.156457,
-        "lng": -109.5284335,
+        "lat": 45.15646,
+        "lng": -109.5285,
         "distMiles": 18
       },
       {
@@ -2442,6 +2512,13 @@
         "type": "Wilderness",
         "lat": 45.17,
         "lng": -109.55,
+        "distMiles": 19
+      },
+      {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
         "distMiles": 19
       },
       {
@@ -2977,6 +3054,13 @@
         "distMiles": 28
       },
       {
+        "name": "Charlie Falls",
+        "type": "Waterfall",
+        "lat": 45.12217,
+        "lng": -109.72434,
+        "distMiles": 28
+      },
+      {
         "name": "Big Park Lake",
         "type": "Lake",
         "lat": 45.1247,
@@ -3075,17 +3159,17 @@
         "distMiles": 29
       },
       {
+        "name": "Impasse Falls",
+        "type": "Waterfall",
+        "lat": 45.11772,
+        "lng": -109.7424,
+        "distMiles": 29
+      },
+      {
         "name": "Jeffrey's Landing",
         "type": "Fishing Access",
         "lat": 45.5377158,
         "lng": -109.4188651,
-        "distMiles": 29
-      },
-      {
-        "name": "Impasse Falls",
-        "type": "Waterfall",
-        "lat": 45.1177135,
-        "lng": -109.7416966,
         "distMiles": 29
       },
       {
@@ -3682,6 +3766,13 @@
         "distMiles": 18
       },
       {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
+        "distMiles": 18
+      },
+      {
         "name": "Pacabo Dam",
         "type": "Lake",
         "lat": 45.8966,
@@ -3801,6 +3892,27 @@
         "distMiles": 23
       },
       {
+        "name": "Palisade Falls",
+        "type": "Waterfall",
+        "lat": 45.4716,
+        "lng": -110.93633,
+        "distMiles": 24
+      },
+      {
+        "name": "Palisades Falls",
+        "type": "Waterfall",
+        "lat": 45.47077,
+        "lng": -110.92855,
+        "distMiles": 24
+      },
+      {
+        "name": "Parker Homestead State Park",
+        "type": "State Park",
+        "lat": 45.84993,
+        "lng": -111.66748,
+        "distMiles": 24
+      },
+      {
         "name": "Spanish Creek Trailhead",
         "type": "Trailhead",
         "lat": 45.4473272,
@@ -3812,13 +3924,6 @@
         "type": "Trailhead",
         "lat": 45.4685833,
         "lng": -110.938711,
-        "distMiles": 24
-      },
-      {
-        "name": "Palisade Falls",
-        "type": "Waterfall",
-        "lat": 45.4693453,
-        "lng": -110.9309704,
         "distMiles": 24
       },
       {
@@ -3850,6 +3955,34 @@
         "distMiles": 26
       },
       {
+        "name": "Arch Falls",
+        "type": "Waterfall",
+        "lat": 45.42715,
+        "lng": -110.96105,
+        "distMiles": 26
+      },
+      {
+        "name": "Grotto Falls",
+        "type": "Waterfall",
+        "lat": 45.43577,
+        "lng": -110.96383,
+        "distMiles": 26
+      },
+      {
+        "name": "Horsetail Falls",
+        "type": "Waterfall",
+        "lat": 45.44077,
+        "lng": -110.91633,
+        "distMiles": 26
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 45.43021,
+        "lng": -110.97661,
+        "distMiles": 26
+      },
+      {
         "name": "Willow Creek Reservoir",
         "type": "Lake",
         "lat": 45.7015,
@@ -3861,6 +3994,27 @@
         "type": "Fishing Access",
         "lat": 45.80465,
         "lng": -111.75053,
+        "distMiles": 27
+      },
+      {
+        "name": "Hoodoo Cascade",
+        "type": "Waterfall",
+        "lat": 45.38298,
+        "lng": -111.24523,
+        "distMiles": 27
+      },
+      {
+        "name": "Pioneer Falls",
+        "type": "Waterfall",
+        "lat": 45.41579,
+        "lng": -111.40733,
+        "distMiles": 27
+      },
+      {
+        "name": "Silken Skein Falls",
+        "type": "Waterfall",
+        "lat": 45.41993,
+        "lng": -110.95244,
         "distMiles": 27
       },
       {
@@ -3878,6 +4032,27 @@
         "distMiles": 28
       },
       {
+        "name": "Apex Falls",
+        "type": "Waterfall",
+        "lat": 45.39715,
+        "lng": -110.95605,
+        "distMiles": 28
+      },
+      {
+        "name": "Champagne Falls",
+        "type": "Waterfall",
+        "lat": 45.40771,
+        "lng": -110.95828,
+        "distMiles": 28
+      },
+      {
+        "name": "Shower Falls",
+        "type": "Waterfall",
+        "lat": 45.39938,
+        "lng": -110.95689,
+        "distMiles": 28
+      },
+      {
         "name": "Plunket Lake Dam",
         "type": "Lake",
         "lat": 46.0771,
@@ -3889,6 +4064,13 @@
         "type": "Hot Spring",
         "lat": 45.56,
         "lng": -111.69,
+        "distMiles": 29
+      },
+      {
+        "name": "Alpine Falls",
+        "type": "Waterfall",
+        "lat": 45.39271,
+        "lng": -110.953,
         "distMiles": 29
       },
       {
@@ -3939,13 +4121,6 @@
         "distMiles": 15
       },
       {
-        "name": "Big Falls",
-        "type": "Waterfall",
-        "lat": 47.5687343,
-        "lng": -111.1232359,
-        "distMiles": 15
-      },
-      {
         "name": "Helena-Lewis and Clark National Forest",
         "type": "Nature Reserve",
         "lat": 47.2672922,
@@ -3960,6 +4135,27 @@
         "distMiles": 16
       },
       {
+        "name": "Big Falls",
+        "type": "Waterfall",
+        "lat": 47.56996,
+        "lng": -111.12302,
+        "distMiles": 16
+      },
+      {
+        "name": "Crooked Falls",
+        "type": "Waterfall",
+        "lat": 47.53611,
+        "lng": -111.19629,
+        "distMiles": 16
+      },
+      {
+        "name": "Rainbow Falls",
+        "type": "Waterfall",
+        "lat": 47.53319,
+        "lng": -111.20567,
+        "distMiles": 16
+      },
+      {
         "name": "Rainbow Dam Overlook",
         "type": "Viewpoint",
         "lat": 47.5314615,
@@ -3967,17 +4163,17 @@
         "distMiles": 16
       },
       {
-        "name": "Crooked Falls",
-        "type": "Waterfall",
-        "lat": 47.5359063,
-        "lng": -111.1963539,
-        "distMiles": 16
-      },
-      {
         "name": "White Bear Fishing Access Area",
         "type": "Fishing Access",
         "lat": 47.43385,
         "lng": -111.29247,
+        "distMiles": 17
+      },
+      {
+        "name": "Giant Springs Heritage State Park",
+        "type": "State Park",
+        "lat": 47.5344,
+        "lng": -111.2297,
         "distMiles": 17
       },
       {
@@ -4009,6 +4205,13 @@
         "distMiles": 18
       },
       {
+        "name": "Black Eagle Falls",
+        "type": "Waterfall",
+        "lat": 47.52079,
+        "lng": -111.26192,
+        "distMiles": 18
+      },
+      {
         "name": "Steamboat Island Scenic Overlook",
         "type": "Viewpoint",
         "lat": 47.526209,
@@ -4034,13 +4237,6 @@
         "type": "Museum",
         "lat": 47.5058674,
         "lng": -111.2826694,
-        "distMiles": 18
-      },
-      {
-        "name": "Black Eagle Falls",
-        "type": "Waterfall",
-        "lat": 47.5195964,
-        "lng": -111.2631162,
         "distMiles": 18
       },
       {
@@ -4156,6 +4352,13 @@
         "distMiles": 27
       },
       {
+        "name": "Castner Falls",
+        "type": "Waterfall",
+        "lat": 47.30477,
+        "lng": -111.49694,
+        "distMiles": 27
+      },
+      {
         "name": "Taylor Hills Trailhead",
         "type": "Trailhead",
         "lat": 46.9977503,
@@ -4196,6 +4399,13 @@
         "lat": 46.9784927,
         "lng": -110.9173628,
         "distMiles": 28
+      },
+      {
+        "name": "First Peoples Buffalo Jump State Park",
+        "type": "State Park",
+        "lat": 47.48968,
+        "lng": -111.52914,
+        "distMiles": 29
       },
       {
         "name": "First Peoples Buffalo Jump SP",
@@ -4355,6 +4565,13 @@
     "name": "Big Sky",
     "places": [
       {
+        "name": "Ousel Falls",
+        "type": "Waterfall",
+        "lat": 45.2391,
+        "lng": -111.34162,
+        "distMiles": 2
+      },
+      {
         "name": "Ousel Falls Trailhead",
         "type": "Trailhead",
         "lat": 45.2440979,
@@ -4453,6 +4670,13 @@
         "distMiles": 9
       },
       {
+        "name": "Hoodoo Cascade",
+        "type": "Waterfall",
+        "lat": 45.38298,
+        "lng": -111.24523,
+        "distMiles": 9
+      },
+      {
         "name": "Moose Creek Flat Campground",
         "type": "Campground",
         "lat": 45.3560098,
@@ -4481,11 +4705,25 @@
         "distMiles": 9
       },
       {
+        "name": "Cedar Falls",
+        "type": "Waterfall",
+        "lat": 45.23854,
+        "lng": -111.51719,
+        "distMiles": 10
+      },
+      {
         "name": "Lee Metcalf Wilderness (Spanish Peaks)",
         "type": "Wilderness",
         "lat": 45.42,
         "lng": -111.35,
         "distMiles": 11
+      },
+      {
+        "name": "Pioneer Falls",
+        "type": "Waterfall",
+        "lat": 45.41579,
+        "lng": -111.40733,
+        "distMiles": 12
       },
       {
         "name": "Jack Creek Trailhead",
@@ -4572,6 +4810,13 @@
         "distMiles": 15
       },
       {
+        "name": "Taylor Falls",
+        "type": "Waterfall",
+        "lat": 45.03659,
+        "lng": -111.40746,
+        "distMiles": 16
+      },
+      {
         "name": "No Man Lake",
         "type": "Lake",
         "lat": 45.0704,
@@ -4628,6 +4873,48 @@
         "distMiles": 19
       },
       {
+        "name": "Alpine Falls",
+        "type": "Waterfall",
+        "lat": 45.39271,
+        "lng": -110.953,
+        "distMiles": 20
+      },
+      {
+        "name": "Apex Falls",
+        "type": "Waterfall",
+        "lat": 45.39715,
+        "lng": -110.95605,
+        "distMiles": 20
+      },
+      {
+        "name": "Arch Falls",
+        "type": "Waterfall",
+        "lat": 45.42715,
+        "lng": -110.96105,
+        "distMiles": 20
+      },
+      {
+        "name": "Champagne Falls",
+        "type": "Waterfall",
+        "lat": 45.40771,
+        "lng": -110.95828,
+        "distMiles": 20
+      },
+      {
+        "name": "Shower Falls",
+        "type": "Waterfall",
+        "lat": 45.39938,
+        "lng": -110.95689,
+        "distMiles": 20
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 45.43021,
+        "lng": -110.97661,
+        "distMiles": 20
+      },
+      {
         "name": "Specimen Creek Jct",
         "type": "Campground",
         "lat": 45.0288338,
@@ -4681,6 +4968,20 @@
         "type": "Fishing Access",
         "lat": 45.36882,
         "lng": -111.70303,
+        "distMiles": 21
+      },
+      {
+        "name": "Grotto Falls",
+        "type": "Waterfall",
+        "lat": 45.43577,
+        "lng": -110.96383,
+        "distMiles": 21
+      },
+      {
+        "name": "Silken Skein Falls",
+        "type": "Waterfall",
+        "lat": 45.41993,
+        "lng": -110.95244,
         "distMiles": 21
       },
       {
@@ -4789,6 +5090,20 @@
         "distMiles": 23
       },
       {
+        "name": "Horsetail Falls",
+        "type": "Waterfall",
+        "lat": 45.44077,
+        "lng": -110.91633,
+        "distMiles": 23
+      },
+      {
+        "name": "Palisade Falls",
+        "type": "Waterfall",
+        "lat": 45.4716,
+        "lng": -110.93633,
+        "distMiles": 23
+      },
+      {
         "name": "High Lake Outlet",
         "type": "Campground",
         "lat": 45.0554761,
@@ -4831,13 +5146,6 @@
         "distMiles": 23
       },
       {
-        "name": "Palisade Falls",
-        "type": "Waterfall",
-        "lat": 45.4693453,
-        "lng": -110.9309704,
-        "distMiles": 23
-      },
-      {
         "name": "Yankee Jim Lake",
         "type": "Lake",
         "lat": 45.1492,
@@ -4863,6 +5171,13 @@
         "type": "Fishing Access",
         "lat": 45.16632,
         "lng": -110.83966,
+        "distMiles": 24
+      },
+      {
+        "name": "Palisades Falls",
+        "type": "Waterfall",
+        "lat": 45.47077,
+        "lng": -110.92855,
         "distMiles": 24
       },
       {
@@ -5277,6 +5592,13 @@
         "distMiles": 6
       },
       {
+        "name": "Greycliff Prairie Dog Town State Park",
+        "type": "State Park",
+        "lat": 45.7616,
+        "lng": -109.78963,
+        "distMiles": 9
+      },
+      {
         "name": "Boulder River",
         "type": "River",
         "lat": 45.7,
@@ -5338,6 +5660,13 @@
         "lat": 45.7180293,
         "lng": -109.6318819,
         "distMiles": 18
+      },
+      {
+        "name": "Upper Big Timber Falls",
+        "type": "Waterfall",
+        "lat": 46.04022,
+        "lng": -110.24769,
+        "distMiles": 20
       },
       {
         "name": "Halfmoon Campground",
@@ -5407,6 +5736,13 @@
         "type": "Fishing Access",
         "lat": 45.7316,
         "lng": -110.40853,
+        "distMiles": 23
+      },
+      {
+        "name": "Natural Bridge State Park",
+        "type": "State Park",
+        "lat": 45.5491,
+        "lng": -110.2063,
         "distMiles": 23
       },
       {
@@ -5639,6 +5975,20 @@
         "distMiles": 1
       },
       {
+        "name": "Flathead Lake State Park - Wayfarers Unit",
+        "type": "State Park",
+        "lat": 48.0544,
+        "lng": -114.08206,
+        "distMiles": 1
+      },
+      {
+        "name": "Wayfarers State Park",
+        "type": "State Park",
+        "lat": 48.05273,
+        "lng": -114.07734,
+        "distMiles": 1
+      },
+      {
         "name": "Wayfarers State Park Campground",
         "type": "Campground",
         "lat": 48.0528521,
@@ -5756,6 +6106,13 @@
         "lat": 47.9562744,
         "lng": -114.0337326,
         "distMiles": 8
+      },
+      {
+        "name": "Flathead Lake State Park - West Shore Unit",
+        "type": "State Park",
+        "lat": 47.94939,
+        "lng": -114.18845,
+        "distMiles": 9
       },
       {
         "name": "Camp Misery Trailhead",
@@ -5968,6 +6325,20 @@
         "distMiles": 14
       },
       {
+        "name": "Flathead Lake State Park - Yellow Bay Unit",
+        "type": "State Park",
+        "lat": 47.87633,
+        "lng": -114.03289,
+        "distMiles": 14
+      },
+      {
+        "name": "Lone Pine State Park",
+        "type": "State Park",
+        "lat": 48.17857,
+        "lng": -114.34152,
+        "distMiles": 14
+      },
+      {
         "name": "Learn Lane Trailhead",
         "type": "Trailhead",
         "lat": 48.1825304,
@@ -6091,6 +6462,20 @@
         "type": "Fishing Access",
         "lat": 48.11662,
         "lng": -114.43513,
+        "distMiles": 16
+      },
+      {
+        "name": "Flathead Lake State Park - Wild Horse Island Unit",
+        "type": "State Park",
+        "lat": 47.84161,
+        "lng": -114.20929,
+        "distMiles": 16
+      },
+      {
+        "name": "Lake Mary Ronan State Park",
+        "type": "State Park",
+        "lat": 47.93189,
+        "lng": -114.38624,
         "distMiles": 16
       },
       {
@@ -6276,6 +6661,13 @@
         "distMiles": 20
       },
       {
+        "name": "Flathead Lake State Park - Big Arm Unit",
+        "type": "State Park",
+        "lat": 47.813,
+        "lng": -114.31012,
+        "distMiles": 20
+      },
+      {
         "name": "Emery Bay Campground",
         "type": "Campground",
         "lat": 48.3342832,
@@ -6322,6 +6714,13 @@
         "type": "Fishing Access",
         "lat": 48.36524,
         "lng": -114.17401,
+        "distMiles": 21
+      },
+      {
+        "name": "Flathead Lake State Park - Finley Point Unit",
+        "type": "State Park",
+        "lat": 47.76383,
+        "lng": -114.07872,
         "distMiles": 21
       },
       {
@@ -6626,6 +7025,13 @@
         "distMiles": 28
       },
       {
+        "name": "Whitefish Lake State Park",
+        "type": "State Park",
+        "lat": 48.42496,
+        "lng": -114.37041,
+        "distMiles": 28
+      },
+      {
         "name": "Spotted Bear Campground",
         "type": "Campground",
         "lat": 47.9263621,
@@ -6672,6 +7078,13 @@
         "type": "Fishing Access",
         "lat": 48.4283,
         "lng": -114.40986,
+        "distMiles": 29
+      },
+      {
+        "name": "Little Bitterroot Lake State Park",
+        "type": "State Park",
+        "lat": 48.13968,
+        "lng": -114.71819,
         "distMiles": 29
       },
       {
@@ -6925,6 +7338,13 @@
         "distMiles": 4
       },
       {
+        "name": "Pictograph Cave State Park",
+        "type": "State Park",
+        "lat": 45.73745,
+        "lng": -108.43152,
+        "distMiles": 5
+      },
+      {
         "name": "Pictograph Caves Visitor Center",
         "type": "Museum",
         "lat": 45.7369777,
@@ -7051,6 +7471,13 @@
         "distMiles": 23
       },
       {
+        "name": "Chief Plenty Coups State Park",
+        "type": "State Park",
+        "lat": 45.42912,
+        "lng": -108.54902,
+        "distMiles": 25
+      },
+      {
         "name": "Chief Plenty Coups Museum",
         "type": "Museum",
         "lat": 45.4269128,
@@ -7140,6 +7567,13 @@
         "distMiles": 3
       },
       {
+        "name": "Elkhorn State Park",
+        "type": "State Park",
+        "lat": 46.27465,
+        "lng": -111.94582,
+        "distMiles": 9
+      },
+      {
         "name": "Elkhorn Wilderness Study Area",
         "type": "Nature Reserve",
         "lat": 46.3297255,
@@ -7208,6 +7642,13 @@
         "lat": 46.4706,
         "lng": -112.189,
         "distMiles": 16
+      },
+      {
+        "name": "Crow Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.33799,
+        "lng": -111.79082,
+        "distMiles": 17
       },
       {
         "name": "Whitehouse Campground",
@@ -7553,6 +7994,13 @@
         "distMiles": 26
       },
       {
+        "name": "Spring Meadow Lake State Park",
+        "type": "State Park",
+        "lat": 46.61216,
+        "lng": -112.07583,
+        "distMiles": 26
+      },
+      {
         "name": "MTBcity",
         "type": "Campground",
         "lat": 46.6085625,
@@ -7760,6 +8208,13 @@
         "type": "Fishing Access",
         "lat": 46.64355,
         "lng": -111.88082,
+        "distMiles": 30
+      },
+      {
+        "name": "Lewis & Clark Caverns State Park",
+        "type": "State Park",
+        "lat": 45.83909,
+        "lng": -111.88665,
         "distMiles": 30
       },
       {
@@ -8104,6 +8559,20 @@
         "distMiles": 15
       },
       {
+        "name": "Palisade Falls",
+        "type": "Waterfall",
+        "lat": 45.4716,
+        "lng": -110.93633,
+        "distMiles": 15
+      },
+      {
+        "name": "Palisades Falls",
+        "type": "Waterfall",
+        "lat": 45.47077,
+        "lng": -110.92855,
+        "distMiles": 15
+      },
+      {
         "name": "Chisholm Campground",
         "type": "Campground",
         "lat": 45.4746011,
@@ -8153,17 +8622,17 @@
         "distMiles": 16
       },
       {
-        "name": "Palisade Falls",
-        "type": "Waterfall",
-        "lat": 45.4693453,
-        "lng": -110.9309704,
-        "distMiles": 16
-      },
-      {
         "name": "Four Corners Fishing Access Site",
         "type": "Fishing Access",
         "lat": 45.86048,
         "lng": -111.29051,
+        "distMiles": 17
+      },
+      {
+        "name": "Grotto Falls",
+        "type": "Waterfall",
+        "lat": 45.43577,
+        "lng": -110.96383,
         "distMiles": 17
       },
       {
@@ -8172,6 +8641,34 @@
         "lat": 45.9244,
         "lng": -110.9737,
         "distMiles": 17
+      },
+      {
+        "name": "Arch Falls",
+        "type": "Waterfall",
+        "lat": 45.42715,
+        "lng": -110.96105,
+        "distMiles": 18
+      },
+      {
+        "name": "Horsetail Falls",
+        "type": "Waterfall",
+        "lat": 45.44077,
+        "lng": -110.91633,
+        "distMiles": 18
+      },
+      {
+        "name": "Silken Skein Falls",
+        "type": "Waterfall",
+        "lat": 45.41993,
+        "lng": -110.95244,
+        "distMiles": 18
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 45.43021,
+        "lng": -110.97661,
+        "distMiles": 18
       },
       {
         "name": "Spire Rock Campground",
@@ -8188,6 +8685,13 @@
         "distMiles": 18
       },
       {
+        "name": "Champagne Falls",
+        "type": "Waterfall",
+        "lat": 45.40771,
+        "lng": -110.95828,
+        "distMiles": 19
+      },
+      {
         "name": "Manhattan Area Museum",
         "type": "Museum",
         "lat": 45.8560206,
@@ -8199,6 +8703,27 @@
         "type": "Fishing Access",
         "lat": 45.88965,
         "lng": -111.32774,
+        "distMiles": 20
+      },
+      {
+        "name": "Alpine Falls",
+        "type": "Waterfall",
+        "lat": 45.39271,
+        "lng": -110.953,
+        "distMiles": 20
+      },
+      {
+        "name": "Apex Falls",
+        "type": "Waterfall",
+        "lat": 45.39715,
+        "lng": -110.95605,
+        "distMiles": 20
+      },
+      {
+        "name": "Shower Falls",
+        "type": "Waterfall",
+        "lat": 45.39938,
+        "lng": -110.95689,
         "distMiles": 20
       },
       {
@@ -8262,6 +8787,13 @@
         "type": "Fishing Access",
         "lat": 45.70187,
         "lng": -111.51413,
+        "distMiles": 23
+      },
+      {
+        "name": "Hoodoo Cascade",
+        "type": "Waterfall",
+        "lat": 45.38298,
+        "lng": -111.24523,
         "distMiles": 23
       },
       {
@@ -8374,6 +8906,13 @@
         "type": "Fishing Access",
         "lat": 45.51167,
         "lng": -110.58314,
+        "distMiles": 25
+      },
+      {
+        "name": "Pioneer Falls",
+        "type": "Waterfall",
+        "lat": 45.41579,
+        "lng": -111.40733,
         "distMiles": 25
       },
       {
@@ -8549,6 +9088,20 @@
         "type": "Fishing Access",
         "lat": 45.89493,
         "lng": -111.5358,
+        "distMiles": 28
+      },
+      {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 45.46966,
+        "lng": -110.56021,
+        "distMiles": 28
+      },
+      {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
         "distMiles": 28
       },
       {
@@ -8760,6 +9313,13 @@
         "distMiles": 16
       },
       {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
+        "distMiles": 18
+      },
+      {
         "name": "Cooney Reservoir State Park Red Lodge Arm",
         "type": "Campground",
         "lat": 45.440522,
@@ -8786,6 +9346,13 @@
         "lat": 45.137292,
         "lng": -109.2372087,
         "distMiles": 19
+      },
+      {
+        "name": "Chief Plenty Coups State Park",
+        "type": "State Park",
+        "lat": 45.42912,
+        "lng": -108.54902,
+        "distMiles": 20
       },
       {
         "name": "Palisades Trail",
@@ -9447,6 +10014,13 @@
         "distMiles": 10
       },
       {
+        "name": "Two Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.46543,
+        "lng": -113.22153,
+        "distMiles": 11
+      },
+      {
         "name": "Glacier National Park (East Glacier)",
         "type": "National Park",
         "lat": 48.4472,
@@ -9475,24 +10049,31 @@
         "distMiles": 12
       },
       {
-        "name": "Running Eagle Falls Trailhead",
-        "type": "Trailhead",
-        "lat": 48.4961247,
-        "lng": -113.3481051,
-        "distMiles": 16
-      },
-      {
-        "name": "Running Eagle Falls",
-        "type": "Viewpoint",
-        "lat": 48.498254,
-        "lng": -113.3510834,
-        "distMiles": 16
+        "name": "Dawson Falls",
+        "type": "Waterfall",
+        "lat": 48.42334,
+        "lng": -113.20917,
+        "distMiles": 13
       },
       {
         "name": "Appistoki Falls",
         "type": "Waterfall",
-        "lat": 48.482673,
-        "lng": -113.35252,
+        "lat": 48.48193,
+        "lng": -113.35266,
+        "distMiles": 16
+      },
+      {
+        "name": "Running Eagle Falls",
+        "type": "Waterfall",
+        "lat": 48.49805,
+        "lng": -113.35256,
+        "distMiles": 16
+      },
+      {
+        "name": "Running Eagle Falls Trailhead",
+        "type": "Trailhead",
+        "lat": 48.4961247,
+        "lng": -113.3481051,
         "distMiles": 16
       },
       {
@@ -9540,9 +10121,23 @@
       {
         "name": "Rockwell Falls",
         "type": "Waterfall",
-        "lat": 48.452999,
-        "lng": -113.403705,
+        "lat": 48.4531,
+        "lng": -113.40419,
         "distMiles": 19
+      },
+      {
+        "name": "Atlantic Falls",
+        "type": "Waterfall",
+        "lat": 48.57358,
+        "lng": -113.45095,
+        "distMiles": 20
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 48.4765,
+        "lng": -113.4268,
+        "distMiles": 20
       },
       {
         "name": "Cobalt Lake",
@@ -9577,20 +10172,6 @@
         "type": "Campground",
         "lat": 48.57545,
         "lng": -113.45363,
-        "distMiles": 20
-      },
-      {
-        "name": "Atlantic Falls",
-        "type": "Waterfall",
-        "lat": 48.573734,
-        "lng": -113.451206,
-        "distMiles": 20
-      },
-      {
-        "name": "Twin Falls",
-        "type": "Waterfall",
-        "lat": 48.476911,
-        "lng": -113.427866,
         "distMiles": 20
       },
       {
@@ -9769,6 +10350,27 @@
         "distMiles": 27
       },
       {
+        "name": "Baring Falls",
+        "type": "Waterfall",
+        "lat": 48.67696,
+        "lng": -113.59354,
+        "distMiles": 28
+      },
+      {
+        "name": "Saint Mary Falls",
+        "type": "Waterfall",
+        "lat": 48.66803,
+        "lng": -113.61733,
+        "distMiles": 28
+      },
+      {
+        "name": "Virginia Falls",
+        "type": "Waterfall",
+        "lat": 48.66018,
+        "lng": -113.61321,
+        "distMiles": 28
+      },
+      {
         "name": "Ole Creek",
         "type": "Campground",
         "lat": 48.30635,
@@ -9790,20 +10392,6 @@
         "distMiles": 28
       },
       {
-        "name": "Saint Mary Falls",
-        "type": "Waterfall",
-        "lat": 48.6679725,
-        "lng": -113.6151092,
-        "distMiles": 28
-      },
-      {
-        "name": "Baring Falls",
-        "type": "Waterfall",
-        "lat": 48.6770309,
-        "lng": -113.5935804,
-        "distMiles": 28
-      },
-      {
         "name": "Upper Virginia Falls",
         "type": "Waterfall",
         "lat": 48.660579,
@@ -9816,6 +10404,13 @@
         "lat": 48.6609293,
         "lng": -113.6130761,
         "distMiles": 28
+      },
+      {
+        "name": "Deadwood Falls",
+        "type": "Waterfall",
+        "lat": 48.66672,
+        "lng": -113.63729,
+        "distMiles": 29
       },
       {
         "name": "Coal Creek",
@@ -9850,13 +10445,6 @@
         "type": "Campground",
         "lat": 48.251273,
         "lng": -113.4640423,
-        "distMiles": 29
-      },
-      {
-        "name": "Deadwood Falls",
-        "type": "Waterfall",
-        "lat": 48.666685,
-        "lng": -113.637237,
         "distMiles": 29
       },
       {
@@ -10138,6 +10726,13 @@
         "distMiles": 18
       },
       {
+        "name": "Anaconda Smelter Stack State Park",
+        "type": "State Park",
+        "lat": 46.11104,
+        "lng": -112.91337,
+        "distMiles": 19
+      },
+      {
         "name": "Humbug Spires Wilderness Study Area",
         "type": "Nature Reserve",
         "lat": 45.7574573,
@@ -10303,6 +10898,13 @@
         "type": "Fishing Access",
         "lat": 45.68659,
         "lng": -112.28472,
+        "distMiles": 26
+      },
+      {
+        "name": "Lost Creek State Park",
+        "type": "State Park",
+        "lat": 46.21076,
+        "lng": -113.00477,
         "distMiles": 26
       },
       {
@@ -10563,6 +11165,13 @@
         "distMiles": 8
       },
       {
+        "name": "Castner Falls",
+        "type": "Waterfall",
+        "lat": 47.30477,
+        "lng": -111.49694,
+        "distMiles": 8
+      },
+      {
         "name": "Helena-Lewis and Clark National Forest",
         "type": "Nature Reserve",
         "lat": 47.2672922,
@@ -10675,6 +11284,13 @@
         "distMiles": 14
       },
       {
+        "name": "Black Eagle Falls",
+        "type": "Waterfall",
+        "lat": 47.52079,
+        "lng": -111.26192,
+        "distMiles": 14
+      },
+      {
         "name": "Steamboat Island Scenic Overlook",
         "type": "Viewpoint",
         "lat": 47.526209,
@@ -10703,18 +11319,32 @@
         "distMiles": 14
       },
       {
-        "name": "Black Eagle Falls",
-        "type": "Waterfall",
-        "lat": 47.5195964,
-        "lng": -111.2631162,
-        "distMiles": 14
-      },
-      {
         "name": "First Peoples Buffalo Jump SP",
         "type": "Historic Site",
         "lat": 47.4791135,
         "lng": -111.5245114,
         "distMiles": 14
+      },
+      {
+        "name": "Rainbow Falls",
+        "type": "Waterfall",
+        "lat": 47.53319,
+        "lng": -111.20567,
+        "distMiles": 15
+      },
+      {
+        "name": "First Peoples Buffalo Jump State Park",
+        "type": "State Park",
+        "lat": 47.48968,
+        "lng": -111.52914,
+        "distMiles": 15
+      },
+      {
+        "name": "Giant Springs Heritage State Park",
+        "type": "State Park",
+        "lat": 47.5344,
+        "lng": -111.2297,
+        "distMiles": 15
       },
       {
         "name": "Rainbow Dam Overlook",
@@ -10740,15 +11370,15 @@
       {
         "name": "Crooked Falls",
         "type": "Waterfall",
-        "lat": 47.5359063,
-        "lng": -111.1963539,
+        "lat": 47.53611,
+        "lng": -111.19629,
         "distMiles": 16
       },
       {
         "name": "Big Falls",
         "type": "Waterfall",
-        "lat": 47.5687343,
-        "lng": -111.1232359,
+        "lat": 47.56996,
+        "lng": -111.12302,
         "distMiles": 19
       },
       {
@@ -10840,6 +11470,13 @@
         "type": "River",
         "lat": 46.95,
         "lng": -111.2,
+        "distMiles": 27
+      },
+      {
+        "name": "Buffalo Falls",
+        "type": "Waterfall",
+        "lat": 47.36308,
+        "lng": -111.90793,
         "distMiles": 27
       },
       {
@@ -11334,6 +11971,13 @@
         "distMiles": 28
       },
       {
+        "name": "Mill Falls",
+        "type": "Waterfall",
+        "lat": 47.85904,
+        "lng": -112.77516,
+        "distMiles": 28
+      },
+      {
         "name": "South Fork Teton Trailhead",
         "type": "Trailhead",
         "lat": 47.847532,
@@ -11635,6 +12279,13 @@
         "type": "Fishing Access",
         "lat": 45.74243,
         "lng": -110.23214,
+        "distMiles": 20
+      },
+      {
+        "name": "Upper Big Timber Falls",
+        "type": "Waterfall",
+        "lat": 46.04022,
+        "lng": -110.24769,
         "distMiles": 20
       },
       {
@@ -12009,6 +12660,13 @@
         "distMiles": 29
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 45.46966,
+        "lng": -110.56021,
+        "distMiles": 29
+      },
+      {
         "name": "Lock Leven",
         "type": "Boat Launch",
         "lat": 45.4636342,
@@ -12048,6 +12706,13 @@
         "type": "Fishing Access",
         "lat": 45.45994,
         "lng": -110.61604,
+        "distMiles": 30
+      },
+      {
+        "name": "Natural Bridge State Park",
+        "type": "State Park",
+        "lat": 45.5491,
+        "lng": -110.2063,
         "distMiles": 30
       },
       {
@@ -12140,6 +12805,13 @@
         "distMiles": 26
       },
       {
+        "name": "West Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.26333,
+        "lng": -106.69504,
+        "distMiles": 26
+      },
+      {
         "name": "Forsyth Country Club",
         "type": "Golf",
         "lat": 46.247926,
@@ -12158,6 +12830,13 @@
         "type": "Fishing Access",
         "lat": 46.27388,
         "lng": -106.67753,
+        "distMiles": 27
+      },
+      {
+        "name": "East Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.27444,
+        "lng": -106.67837,
         "distMiles": 27
       },
       {
@@ -12296,6 +12975,13 @@
         "type": "Golf",
         "lat": 48.41,
         "lng": -114.38,
+        "distMiles": 9
+      },
+      {
+        "name": "Whitefish Lake State Park",
+        "type": "State Park",
+        "lat": 48.42496,
+        "lng": -114.37041,
         "distMiles": 9
       },
       {
@@ -12761,6 +13447,13 @@
         "distMiles": 15
       },
       {
+        "name": "Lone Pine State Park",
+        "type": "State Park",
+        "lat": 48.17857,
+        "lng": -114.34152,
+        "distMiles": 15
+      },
+      {
         "name": "Learn Lane Trailhead",
         "type": "Trailhead",
         "lat": 48.1825304,
@@ -13104,6 +13797,13 @@
         "distMiles": 22
       },
       {
+        "name": "Flathead Lake State Park - Wayfarers Unit",
+        "type": "State Park",
+        "lat": 48.0544,
+        "lng": -114.08206,
+        "distMiles": 22
+      },
+      {
         "name": "Harrison Lake",
         "type": "Campground",
         "lat": 48.52368,
@@ -13151,6 +13851,13 @@
         "lat": 48.2136329,
         "lng": -114.6161102,
         "distMiles": 22
+      },
+      {
+        "name": "Wayfarers State Park",
+        "type": "State Park",
+        "lat": 48.05273,
+        "lng": -114.07734,
+        "distMiles": 23
       },
       {
         "name": "Lower Nyack Creek",
@@ -13237,6 +13944,27 @@
         "distMiles": 24
       },
       {
+        "name": "Beaver Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.60164,
+        "lng": -113.79623,
+        "distMiles": 24
+      },
+      {
+        "name": "McDonald Falls",
+        "type": "Waterfall",
+        "lat": 48.64025,
+        "lng": -113.86317,
+        "distMiles": 24
+      },
+      {
+        "name": "Sacred Dancing Cascade",
+        "type": "Waterfall",
+        "lat": 48.64219,
+        "lng": -113.85234,
+        "distMiles": 24
+      },
+      {
         "name": "Lincoln Lake",
         "type": "Campground",
         "lat": 48.58926,
@@ -13279,20 +14007,6 @@
         "distMiles": 24
       },
       {
-        "name": "McDonald Falls",
-        "type": "Waterfall",
-        "lat": 48.639507,
-        "lng": -113.8642433,
-        "distMiles": 24
-      },
-      {
-        "name": "Beaver Medicine Falls",
-        "type": "Waterfall",
-        "lat": 48.6017457,
-        "lng": -113.7971202,
-        "distMiles": 24
-      },
-      {
         "name": "Big Hawk Lake",
         "type": "Lake",
         "lat": 48.0988,
@@ -13311,6 +14025,27 @@
         "type": "Fishing Access",
         "lat": 48.04495,
         "lng": -113.97511,
+        "distMiles": 25
+      },
+      {
+        "name": "Akaiyan Falls",
+        "type": "Waterfall",
+        "lat": 48.61414,
+        "lng": -113.78484,
+        "distMiles": 25
+      },
+      {
+        "name": "Beaver Chief Falls",
+        "type": "Waterfall",
+        "lat": 48.59386,
+        "lng": -113.76456,
+        "distMiles": 25
+      },
+      {
+        "name": "Feather Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.61164,
+        "lng": -113.779,
         "distMiles": 25
       },
       {
@@ -13342,27 +14077,6 @@
         "distMiles": 25
       },
       {
-        "name": "Feather Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.611662,
-        "lng": -113.779569,
-        "distMiles": 25
-      },
-      {
-        "name": "Akaiyan Falls",
-        "type": "Waterfall",
-        "lat": 48.613968,
-        "lng": -113.785776,
-        "distMiles": 25
-      },
-      {
-        "name": "Beaver Chief Falls",
-        "type": "Waterfall",
-        "lat": 48.593906,
-        "lng": -113.764392,
-        "distMiles": 25
-      },
-      {
         "name": "Blacktail Mountain Disc Golf",
         "type": "Disc Golf",
         "lat": 48.0114,
@@ -13388,6 +14102,13 @@
         "type": "Fishing Access",
         "lat": 48.00439,
         "lng": -114.06622,
+        "distMiles": 26
+      },
+      {
+        "name": "Martin Falls",
+        "type": "Waterfall",
+        "lat": 48.56691,
+        "lng": -114.68626,
         "distMiles": 26
       },
       {
@@ -13426,6 +14147,13 @@
         "distMiles": 26
       },
       {
+        "name": "Monument Falls",
+        "type": "Waterfall",
+        "lat": 48.64997,
+        "lng": -113.77206,
+        "distMiles": 27
+      },
+      {
         "name": "Coal Creek",
         "type": "Campground",
         "lat": 48.41253,
@@ -13451,13 +14179,6 @@
         "type": "Campground",
         "lat": 48.6772318,
         "lng": -113.8180795,
-        "distMiles": 27
-      },
-      {
-        "name": "Monument Falls",
-        "type": "Waterfall",
-        "lat": 48.649734,
-        "lng": -113.77255,
         "distMiles": 27
       },
       {
@@ -13517,6 +14238,27 @@
         "distMiles": 28
       },
       {
+        "name": "Siksika Falls",
+        "type": "Waterfall",
+        "lat": 48.61737,
+        "lng": -113.68851,
+        "distMiles": 29
+      },
+      {
+        "name": "Flathead Lake State Park - West Shore Unit",
+        "type": "State Park",
+        "lat": 47.94939,
+        "lng": -114.18845,
+        "distMiles": 29
+      },
+      {
+        "name": "Little Bitterroot Lake State Park",
+        "type": "State Park",
+        "lat": 48.13968,
+        "lng": -114.71819,
+        "distMiles": 29
+      },
+      {
         "name": "Beaver Woman Lake",
         "type": "Campground",
         "lat": 48.48336,
@@ -13573,11 +14315,11 @@
         "distMiles": 29
       },
       {
-        "name": "Siksika Falls",
+        "name": "Florence Falls",
         "type": "Waterfall",
-        "lat": 48.617651,
-        "lng": -113.687083,
-        "distMiles": 29
+        "lat": 48.65066,
+        "lng": -113.69279,
+        "distMiles": 30
       },
       {
         "name": "Upper Nyack Creek",
@@ -13612,13 +14354,6 @@
         "type": "Viewpoint",
         "lat": 48.6872091,
         "lng": -113.74167,
-        "distMiles": 30
-      },
-      {
-        "name": "Florence Falls",
-        "type": "Waterfall",
-        "lat": 48.650669,
-        "lng": -113.692823,
         "distMiles": 30
       }
     ]
@@ -13722,6 +14457,13 @@
         "type": "River",
         "lat": 45.65,
         "lng": -109.55,
+        "distMiles": 14
+      },
+      {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
         "distMiles": 14
       },
       {
@@ -13967,6 +14709,13 @@
         "type": "Fishing Access",
         "lat": 45.46272,
         "lng": -109.75629,
+        "distMiles": 27
+      },
+      {
+        "name": "Greycliff Prairie Dog Town State Park",
+        "type": "State Park",
+        "lat": 45.7616,
+        "lng": -109.78963,
         "distMiles": 27
       },
       {
@@ -14753,6 +15502,13 @@
         "distMiles": 12
       },
       {
+        "name": "Boulder Falls",
+        "type": "Waterfall",
+        "lat": 45.85979,
+        "lng": -114.30797,
+        "distMiles": 13
+      },
+      {
         "name": "Yellowstone Camp",
         "type": "Campground",
         "lat": 46.1262204,
@@ -14764,13 +15520,6 @@
         "type": "Trailhead",
         "lat": 45.847148,
         "lng": -114.2646254,
-        "distMiles": 13
-      },
-      {
-        "name": "Boulder Falls",
-        "type": "Waterfall",
-        "lat": 45.859724,
-        "lng": -114.3079367,
         "distMiles": 13
       },
       {
@@ -14977,6 +15726,13 @@
         "distMiles": 16
       },
       {
+        "name": "Canyon Falls",
+        "type": "Waterfall",
+        "lat": 46.2452,
+        "lng": -114.32093,
+        "distMiles": 17
+      },
+      {
         "name": "Blodgett Canyon Campground",
         "type": "Campground",
         "lat": 46.2695896,
@@ -14988,13 +15744,6 @@
         "type": "Trailhead",
         "lat": 46.2685804,
         "lng": -114.2430601,
-        "distMiles": 17
-      },
-      {
-        "name": "Canyon Falls",
-        "type": "Waterfall",
-        "lat": 46.2450409,
-        "lng": -114.3213878,
         "distMiles": 17
       },
       {
@@ -15187,6 +15936,13 @@
         "distMiles": 22
       },
       {
+        "name": "Overwhich Falls",
+        "type": "Waterfall",
+        "lat": 45.71834,
+        "lng": -114.07702,
+        "distMiles": 22
+      },
+      {
         "name": "Watchtower Creek Trailhead",
         "type": "Trailhead",
         "lat": 45.7531188,
@@ -15264,6 +16020,13 @@
         "distMiles": 23
       },
       {
+        "name": "Skalkaho Falls",
+        "type": "Waterfall",
+        "lat": 46.25742,
+        "lng": -113.82648,
+        "distMiles": 23
+      },
+      {
         "name": "Fales Flat Campground",
         "type": "Campground",
         "lat": 45.745999,
@@ -15317,13 +16080,6 @@
         "type": "Fishing Access",
         "lat": 45.6979288,
         "lng": -114.2874674,
-        "distMiles": 23
-      },
-      {
-        "name": "Skalkaho Falls",
-        "type": "Waterfall",
-        "lat": 46.2576967,
-        "lng": -113.8268418,
         "distMiles": 23
       },
       {
@@ -15663,6 +16419,13 @@
         "distMiles": 29
       },
       {
+        "name": "Star Falls",
+        "type": "Waterfall",
+        "lat": 45.91189,
+        "lng": -113.59806,
+        "distMiles": 29
+      },
+      {
         "name": "Gold Creek Campground",
         "type": "Campground",
         "lat": 46.3974341,
@@ -15695,13 +16458,6 @@
         "type": "Fishing Access",
         "lat": 46.4443556,
         "lng": -114.1243933,
-        "distMiles": 29
-      },
-      {
-        "name": "Star Falls",
-        "type": "Waterfall",
-        "lat": 45.9118237,
-        "lng": -113.5979871,
         "distMiles": 29
       },
       {
@@ -15815,6 +16571,13 @@
         "distMiles": 8
       },
       {
+        "name": "Anaconda Smelter Stack State Park",
+        "type": "State Park",
+        "lat": 46.11104,
+        "lng": -112.91337,
+        "distMiles": 9
+      },
+      {
         "name": "Storm Lake Trailhead",
         "type": "Trailhead",
         "lat": 46.0745995,
@@ -15833,6 +16596,13 @@
         "type": "Scenic Drive",
         "lat": 46.17,
         "lng": -113.25,
+        "distMiles": 10
+      },
+      {
+        "name": "Lost Creek State Park",
+        "type": "State Park",
+        "lat": 46.21076,
+        "lng": -113.00477,
         "distMiles": 10
       },
       {
@@ -16088,6 +16858,13 @@
         "distMiles": 17
       },
       {
+        "name": "Granite State Park",
+        "type": "State Park",
+        "lat": 46.31743,
+        "lng": -113.2445,
+        "distMiles": 18
+      },
+      {
         "name": "Albicaulis Lake",
         "type": "Lake",
         "lat": 46.3326,
@@ -16263,6 +17040,13 @@
         "distMiles": 23
       },
       {
+        "name": "Pintler Falls",
+        "type": "Waterfall",
+        "lat": 45.85992,
+        "lng": -113.44562,
+        "distMiles": 23
+      },
+      {
         "name": "Pintler Campground",
         "type": "Campground",
         "lat": 45.8391283,
@@ -16281,6 +17065,13 @@
         "type": "Fishing Access",
         "lat": 45.7777,
         "lng": -112.83475,
+        "distMiles": 24
+      },
+      {
+        "name": "Rock Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.41021,
+        "lng": -112.96255,
         "distMiles": 24
       },
       {
@@ -16445,6 +17236,13 @@
         "distMiles": 27
       },
       {
+        "name": "Star Falls",
+        "type": "Waterfall",
+        "lat": 45.91189,
+        "lng": -113.59806,
+        "distMiles": 27
+      },
+      {
         "name": "Divide Bridge Campground",
         "type": "Campground",
         "lat": 45.7533446,
@@ -16512,13 +17310,6 @@
         "type": "Museum",
         "lat": 46.0144756,
         "lng": -112.5402687,
-        "distMiles": 27
-      },
-      {
-        "name": "Star Falls",
-        "type": "Waterfall",
-        "lat": 45.9118237,
-        "lng": -113.5979871,
         "distMiles": 27
       },
       {
@@ -16746,8 +17537,8 @@
       {
         "name": "Wolf Creek Falls",
         "type": "Waterfall",
-        "lat": 47.5346991,
-        "lng": -109.6698939,
+        "lat": 47.53498,
+        "lng": -109.66935,
         "distMiles": 20
       },
       {
@@ -16884,6 +17675,13 @@
         "distMiles": 25
       },
       {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
+        "distMiles": 26
+      },
+      {
         "name": "Gigantic Warm Spring",
         "type": "Hot Spring",
         "lat": 47.18,
@@ -16973,6 +17771,13 @@
         "distMiles": 1
       },
       {
+        "name": "Clarks Lookout State Park",
+        "type": "State Park",
+        "lat": 45.23603,
+        "lng": -112.63141,
+        "distMiles": 2
+      },
+      {
         "name": "Poindexter Slough Fishing Access Site",
         "type": "Fishing Access",
         "lat": 45.18353,
@@ -17050,6 +17855,13 @@
         "distMiles": 14
       },
       {
+        "name": "Beaverhead Rock State Park",
+        "type": "State Park",
+        "lat": 45.38326,
+        "lng": -112.45918,
+        "distMiles": 14
+      },
+      {
         "name": "Henneberry Fishing Access",
         "type": "Fishing Access",
         "lat": 45.0549603,
@@ -17103,6 +17915,13 @@
         "type": "Fishing Access",
         "lat": 45.46659,
         "lng": -112.66891,
+        "distMiles": 18
+      },
+      {
+        "name": "Bannack State Park",
+        "type": "State Park",
+        "lat": 45.15909,
+        "lng": -112.99865,
         "distMiles": 18
       },
       {
@@ -17711,6 +18530,13 @@
         "distMiles": 19
       },
       {
+        "name": "Rock Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.41021,
+        "lng": -112.96255,
+        "distMiles": 20
+      },
+      {
         "name": "Beavertail Pond Fishing Access Site",
         "type": "Fishing Access",
         "lat": 46.72854,
@@ -17729,6 +18555,13 @@
         "type": "Fishing Access",
         "lat": 46.93966,
         "lng": -112.93283,
+        "distMiles": 21
+      },
+      {
+        "name": "Beavertail Hill State Park",
+        "type": "State Park",
+        "lat": 46.71993,
+        "lng": -113.58009,
         "distMiles": 21
       },
       {
@@ -17995,6 +18828,13 @@
         "type": "Fishing Access",
         "lat": 46.66243,
         "lng": -113.67176,
+        "distMiles": 25
+      },
+      {
+        "name": "Granite State Park",
+        "type": "State Park",
+        "lat": 46.31743,
+        "lng": -113.2445,
         "distMiles": 25
       },
       {
@@ -18439,6 +19279,13 @@
         "distMiles": 30
       },
       {
+        "name": "Hooper State Park",
+        "type": "State Park",
+        "lat": 46.95438,
+        "lng": -112.67087,
+        "distMiles": 30
+      },
+      {
         "name": "Big Nelson Campground",
         "type": "Campground",
         "lat": 47.0703091,
@@ -18612,6 +19459,13 @@
         "distMiles": 25
       },
       {
+        "name": "First Peoples Buffalo Jump State Park",
+        "type": "State Park",
+        "lat": 47.48968,
+        "lng": -111.52914,
+        "distMiles": 26
+      },
+      {
         "name": "Pondera Golf Club",
         "type": "Golf",
         "lat": 48.1718546,
@@ -18722,6 +19576,13 @@
         "distMiles": 0
       },
       {
+        "name": "Two Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.46543,
+        "lng": -113.22153,
+        "distMiles": 1
+      },
+      {
         "name": "Y Lazy R",
         "type": "Campground",
         "lat": 48.4394542,
@@ -18729,11 +19590,25 @@
         "distMiles": 1
       },
       {
+        "name": "Dawson Falls",
+        "type": "Waterfall",
+        "lat": 48.42334,
+        "lng": -113.20917,
+        "distMiles": 2
+      },
+      {
         "name": "Red Eagle Campground",
         "type": "Campground",
         "lat": 48.4893947,
         "lng": -113.2624026,
         "distMiles": 3
+      },
+      {
+        "name": "Appistoki Falls",
+        "type": "Waterfall",
+        "lat": 48.48193,
+        "lng": -113.35266,
+        "distMiles": 6
       },
       {
         "name": "Running Eagle Falls Trailhead",
@@ -18744,17 +19619,10 @@
       },
       {
         "name": "Running Eagle Falls",
-        "type": "Viewpoint",
-        "lat": 48.498254,
-        "lng": -113.3510834,
-        "distMiles": 6
-      },
-      {
-        "name": "Appistoki Falls",
         "type": "Waterfall",
-        "lat": 48.482673,
-        "lng": -113.35252,
-        "distMiles": 6
+        "lat": 48.49805,
+        "lng": -113.35256,
+        "distMiles": 7
       },
       {
         "name": "Two Medicine",
@@ -18785,6 +19653,13 @@
         "distMiles": 7
       },
       {
+        "name": "Rockwell Falls",
+        "type": "Waterfall",
+        "lat": 48.4531,
+        "lng": -113.40419,
+        "distMiles": 8
+      },
+      {
         "name": "Ole Lake",
         "type": "Campground",
         "lat": 48.38222,
@@ -18792,11 +19667,11 @@
         "distMiles": 8
       },
       {
-        "name": "Rockwell Falls",
+        "name": "Twin Falls",
         "type": "Waterfall",
-        "lat": 48.452999,
-        "lng": -113.403705,
-        "distMiles": 8
+        "lat": 48.4765,
+        "lng": -113.4268,
+        "distMiles": 9
       },
       {
         "name": "Cobalt Lake",
@@ -18810,13 +19685,6 @@
         "type": "Trailhead",
         "lat": 48.3365945,
         "lng": -113.3279336,
-        "distMiles": 9
-      },
-      {
-        "name": "Twin Falls",
-        "type": "Waterfall",
-        "lat": 48.476911,
-        "lng": -113.427866,
         "distMiles": 9
       },
       {
@@ -18890,6 +19758,13 @@
         "distMiles": 12
       },
       {
+        "name": "Atlantic Falls",
+        "type": "Waterfall",
+        "lat": 48.57358,
+        "lng": -113.45095,
+        "distMiles": 13
+      },
+      {
         "name": "Atlantic Creek",
         "type": "Campground",
         "lat": 48.57545,
@@ -18908,13 +19783,6 @@
         "type": "Trailhead",
         "lat": 48.6024653,
         "lng": -113.3836756,
-        "distMiles": 13
-      },
-      {
-        "name": "Atlantic Falls",
-        "type": "Waterfall",
-        "lat": 48.573734,
-        "lng": -113.451206,
         "distMiles": 13
       },
       {
@@ -19065,6 +19933,27 @@
         "distMiles": 22
       },
       {
+        "name": "Baring Falls",
+        "type": "Waterfall",
+        "lat": 48.67696,
+        "lng": -113.59354,
+        "distMiles": 23
+      },
+      {
+        "name": "Saint Mary Falls",
+        "type": "Waterfall",
+        "lat": 48.66803,
+        "lng": -113.61733,
+        "distMiles": 23
+      },
+      {
+        "name": "Virginia Falls",
+        "type": "Waterfall",
+        "lat": 48.66018,
+        "lng": -113.61321,
+        "distMiles": 23
+      },
+      {
         "name": "Saint Mary Campground",
         "type": "Campground",
         "lat": 48.7528899,
@@ -19076,20 +19965,6 @@
         "type": "Trailhead",
         "lat": 48.6785487,
         "lng": -113.5954952,
-        "distMiles": 23
-      },
-      {
-        "name": "Saint Mary Falls",
-        "type": "Waterfall",
-        "lat": 48.6679725,
-        "lng": -113.6151092,
-        "distMiles": 23
-      },
-      {
-        "name": "Baring Falls",
-        "type": "Waterfall",
-        "lat": 48.6770309,
-        "lng": -113.5935804,
         "distMiles": 23
       },
       {
@@ -19114,6 +19989,20 @@
         "distMiles": 23
       },
       {
+        "name": "Deadwood Falls",
+        "type": "Waterfall",
+        "lat": 48.66672,
+        "lng": -113.63729,
+        "distMiles": 24
+      },
+      {
+        "name": "Siksika Falls",
+        "type": "Waterfall",
+        "lat": 48.61737,
+        "lng": -113.68851,
+        "distMiles": 24
+      },
+      {
         "name": "Reynolds Creek",
         "type": "Campground",
         "lat": 48.66685,
@@ -19121,18 +20010,11 @@
         "distMiles": 24
       },
       {
-        "name": "Siksika Falls",
+        "name": "Florence Falls",
         "type": "Waterfall",
-        "lat": 48.617651,
-        "lng": -113.687083,
-        "distMiles": 24
-      },
-      {
-        "name": "Deadwood Falls",
-        "type": "Waterfall",
-        "lat": 48.666685,
-        "lng": -113.637237,
-        "distMiles": 24
+        "lat": 48.65066,
+        "lng": -113.69279,
+        "distMiles": 25
       },
       {
         "name": "Gunsight Lake",
@@ -19177,13 +20059,6 @@
         "distMiles": 25
       },
       {
-        "name": "Florence Falls",
-        "type": "Waterfall",
-        "lat": 48.650669,
-        "lng": -113.692823,
-        "distMiles": 25
-      },
-      {
         "name": "Camp Disappointment",
         "type": "Historic Site",
         "lat": 48.6644061,
@@ -19198,6 +20073,13 @@
         "distMiles": 25
       },
       {
+        "name": "Beaver Chief Falls",
+        "type": "Waterfall",
+        "lat": 48.59386,
+        "lng": -113.76456,
+        "distMiles": 26
+      },
+      {
         "name": "Lake Ellen Wilson",
         "type": "Campground",
         "lat": 48.60516,
@@ -19209,13 +20091,6 @@
         "type": "Campground",
         "lat": 48.16391,
         "lng": -112.8635895,
-        "distMiles": 26
-      },
-      {
-        "name": "Beaver Chief Falls",
-        "type": "Waterfall",
-        "lat": 48.593906,
-        "lng": -113.764392,
         "distMiles": 26
       },
       {
@@ -19233,6 +20108,20 @@
         "distMiles": 27
       },
       {
+        "name": "Feather Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.61164,
+        "lng": -113.779,
+        "distMiles": 27
+      },
+      {
+        "name": "Piegan Falls",
+        "type": "Waterfall",
+        "lat": 48.71001,
+        "lng": -113.67782,
+        "distMiles": 27
+      },
+      {
         "name": "Lincoln Lake",
         "type": "Campground",
         "lat": 48.58926,
@@ -19247,24 +20136,38 @@
         "distMiles": 27
       },
       {
-        "name": "Feather Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.611662,
-        "lng": -113.779569,
-        "distMiles": 27
-      },
-      {
-        "name": "Piegan Falls",
-        "type": "Waterfall",
-        "lat": 48.7100093,
-        "lng": -113.6778767,
-        "distMiles": 27
-      },
-      {
         "name": "Going-to-the-Sun Road",
         "type": "Scenic Drive",
         "lat": 48.6967,
         "lng": -113.7217,
+        "distMiles": 28
+      },
+      {
+        "name": "Akaiyan Falls",
+        "type": "Waterfall",
+        "lat": 48.61414,
+        "lng": -113.78484,
+        "distMiles": 28
+      },
+      {
+        "name": "Beaver Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.60164,
+        "lng": -113.79623,
+        "distMiles": 28
+      },
+      {
+        "name": "Monument Falls",
+        "type": "Waterfall",
+        "lat": 48.64997,
+        "lng": -113.77206,
+        "distMiles": 28
+      },
+      {
+        "name": "Oberlin Falls",
+        "type": "Waterfall",
+        "lat": 48.6997,
+        "lng": -113.72345,
         "distMiles": 28
       },
       {
@@ -19310,39 +20213,18 @@
         "distMiles": 28
       },
       {
-        "name": "Monument Falls",
-        "type": "Waterfall",
-        "lat": 48.649734,
-        "lng": -113.77255,
-        "distMiles": 28
-      },
-      {
-        "name": "Akaiyan Falls",
-        "type": "Waterfall",
-        "lat": 48.613968,
-        "lng": -113.785776,
-        "distMiles": 28
-      },
-      {
-        "name": "Oberlin Falls",
-        "type": "Waterfall",
-        "lat": 48.6998306,
-        "lng": -113.7238962,
-        "distMiles": 28
-      },
-      {
-        "name": "Beaver Medicine Falls",
-        "type": "Waterfall",
-        "lat": 48.6017457,
-        "lng": -113.7971202,
-        "distMiles": 28
-      },
-      {
         "name": "Cracker Lake",
         "type": "Lake",
         "lat": 48.7441,
         "lng": -113.6437,
         "distMiles": 28
+      },
+      {
+        "name": "Morning Eagle Falls",
+        "type": "Waterfall",
+        "lat": 48.73559,
+        "lng": -113.69809,
+        "distMiles": 29
       },
       {
         "name": "Snyder Lake",
@@ -19380,13 +20262,6 @@
         "distMiles": 29
       },
       {
-        "name": "Morning Eagle Falls",
-        "type": "Waterfall",
-        "lat": 48.7359821,
-        "lng": -113.6984394,
-        "distMiles": 29
-      },
-      {
         "name": "Riverside Boat Ramp",
         "type": "Boat Launch",
         "lat": 48.2724342,
@@ -19401,6 +20276,20 @@
         "distMiles": 29
       },
       {
+        "name": "Bird Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.70803,
+        "lng": -113.74762,
+        "distMiles": 30
+      },
+      {
+        "name": "Feather Plume Falls",
+        "type": "Waterfall",
+        "lat": 48.75107,
+        "lng": -113.70289,
+        "distMiles": 30
+      },
+      {
         "name": "Elk Island Campground",
         "type": "Campground",
         "lat": 48.2411363,
@@ -19412,20 +20301,6 @@
         "type": "Viewpoint",
         "lat": 48.727474,
         "lng": -113.72487,
-        "distMiles": 30
-      },
-      {
-        "name": "Bird Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.7080383,
-        "lng": -113.7479889,
-        "distMiles": 30
-      },
-      {
-        "name": "Feather Plume Falls",
-        "type": "Waterfall",
-        "lat": 48.751068,
-        "lng": -113.702886,
         "distMiles": 30
       }
     ]
@@ -19651,6 +20526,13 @@
         "distMiles": 8
       },
       {
+        "name": "Spring Meadow Lake State Park",
+        "type": "State Park",
+        "lat": 46.61216,
+        "lng": -112.07583,
+        "distMiles": 8
+      },
+      {
         "name": "MTBcity",
         "type": "Campground",
         "lat": 46.6085625,
@@ -19819,6 +20701,13 @@
         "distMiles": 11
       },
       {
+        "name": "Black Sandy State Park",
+        "type": "State Park",
+        "lat": 46.75688,
+        "lng": -111.88971,
+        "distMiles": 12
+      },
+      {
         "name": "Jo Bonner Campground",
         "type": "Campground",
         "lat": 46.6438487,
@@ -19903,6 +20792,13 @@
         "distMiles": 18
       },
       {
+        "name": "Crow Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.33799,
+        "lng": -111.79082,
+        "distMiles": 18
+      },
+      {
         "name": "Vigilante campground",
         "type": "Campground",
         "lat": 46.7669449,
@@ -19950,6 +20846,13 @@
         "lat": 46.8871333,
         "lng": -111.8974839,
         "distMiles": 21
+      },
+      {
+        "name": "Elkhorn State Park",
+        "type": "State Park",
+        "lat": 46.27465,
+        "lng": -111.94582,
+        "distMiles": 22
       },
       {
         "name": "South Fork Crow Creek Lakes",
@@ -20078,6 +20981,13 @@
         "distMiles": 28
       },
       {
+        "name": "Paradise Falls",
+        "type": "Waterfall",
+        "lat": 46.75167,
+        "lng": -112.46389,
+        "distMiles": 28
+      },
+      {
         "name": "Deep Dale Fishing Access Site",
         "type": "Fishing Access",
         "lat": 46.27604,
@@ -20130,6 +21040,13 @@
         "lat": 45.89099,
         "lng": -104.5464445,
         "distMiles": 0
+      },
+      {
+        "name": "Medicine Rocks State Park",
+        "type": "State Park",
+        "lat": 46.04444,
+        "lng": -104.47134,
+        "distMiles": 11
       },
       {
         "name": "Abel Reservoir",
@@ -20340,6 +21257,13 @@
         "distMiles": 12
       },
       {
+        "name": "Cedar Falls",
+        "type": "Waterfall",
+        "lat": 45.23854,
+        "lng": -111.51719,
+        "distMiles": 13
+      },
+      {
         "name": "The Reserve at Moonlight Basin",
         "type": "Golf",
         "lat": 45.3199707,
@@ -20394,6 +21318,13 @@
         "lat": 45.3,
         "lng": -111.42,
         "distMiles": 15
+      },
+      {
+        "name": "Pioneer Falls",
+        "type": "Waterfall",
+        "lat": 45.41579,
+        "lng": -111.40733,
+        "distMiles": 16
       },
       {
         "name": "Big Sky Resort",
@@ -20501,6 +21432,13 @@
         "distMiles": 19
       },
       {
+        "name": "Ousel Falls",
+        "type": "Waterfall",
+        "lat": 45.2391,
+        "lng": -111.34162,
+        "distMiles": 20
+      },
+      {
         "name": "Summit Lake Trailhead",
         "type": "Trailhead",
         "lat": 45.2847086,
@@ -20554,6 +21492,13 @@
         "type": "Fishing Access",
         "lat": 45.69937,
         "lng": -111.70775,
+        "distMiles": 24
+      },
+      {
+        "name": "Hoodoo Cascade",
+        "type": "Waterfall",
+        "lat": 45.38298,
+        "lng": -111.24523,
         "distMiles": 24
       },
       {
@@ -20631,6 +21576,13 @@
         "type": "Fishing Access",
         "lat": 45.70187,
         "lng": -111.51413,
+        "distMiles": 27
+      },
+      {
+        "name": "Taylor Falls",
+        "type": "Waterfall",
+        "lat": 45.03659,
+        "lng": -111.40746,
         "distMiles": 27
       },
       {
@@ -20772,6 +21724,13 @@
         "distMiles": 6
       },
       {
+        "name": "Pinkham Falls",
+        "type": "Waterfall",
+        "lat": 48.83913,
+        "lng": -115.17184,
+        "distMiles": 6
+      },
+      {
         "name": "Bass Lake",
         "type": "Lake",
         "lat": 48.824,
@@ -20898,6 +21857,13 @@
         "distMiles": 12
       },
       {
+        "name": "Sutton Creek Falls",
+        "type": "Waterfall",
+        "lat": 48.77024,
+        "lng": -115.26628,
+        "distMiles": 12
+      },
+      {
         "name": "Clarence creek campground",
         "type": "Campground",
         "lat": 48.8905392,
@@ -20926,11 +21892,25 @@
         "distMiles": 16
       },
       {
+        "name": "Little North Fork Falls",
+        "type": "Waterfall",
+        "lat": 48.75996,
+        "lng": -115.37573,
+        "distMiles": 17
+      },
+      {
         "name": "Lake Koocanusa Scenic Byway",
         "type": "Scenic Drive",
         "lat": 48.65,
         "lng": -115.25,
         "distMiles": 18
+      },
+      {
+        "name": "Tenmile Falls",
+        "type": "Waterfall",
+        "lat": 48.61857,
+        "lng": -115.17183,
+        "distMiles": 19
       },
       {
         "name": "Jumbo Lake",
@@ -20961,6 +21941,13 @@
         "distMiles": 20
       },
       {
+        "name": "Whale Creek Falls",
+        "type": "Waterfall",
+        "lat": 48.85108,
+        "lng": -114.60265,
+        "distMiles": 21
+      },
+      {
         "name": "Caribou Campground",
         "type": "Campground",
         "lat": 48.9488187,
@@ -20975,11 +21962,11 @@
         "distMiles": 21
       },
       {
-        "name": "Whale Creek Falls",
+        "name": "Turner Falls",
         "type": "Waterfall",
-        "lat": 48.851137,
-        "lng": -114.603279,
-        "distMiles": 21
+        "lat": 48.86885,
+        "lng": -115.58018,
+        "distMiles": 24
       },
       {
         "name": "Red Meadow Lake Campground",
@@ -21017,6 +22004,13 @@
         "distMiles": 26
       },
       {
+        "name": "Martin Falls",
+        "type": "Waterfall",
+        "lat": 48.56691,
+        "lng": -114.68626,
+        "distMiles": 27
+      },
+      {
         "name": "Barron Creek Boat Ramp",
         "type": "Campground",
         "lat": 48.5155041,
@@ -21029,6 +22023,13 @@
         "lat": 48.6328,
         "lng": -114.6014,
         "distMiles": 27
+      },
+      {
+        "name": "Lower Falls",
+        "type": "Waterfall",
+        "lat": 48.93551,
+        "lng": -115.68157,
+        "distMiles": 29
       },
       {
         "name": "Dog Creek Campgrounds",
@@ -21050,6 +22051,13 @@
         "lat": 48.9056007,
         "lng": -114.4194869,
         "distMiles": 29
+      },
+      {
+        "name": "Upper Falls",
+        "type": "Waterfall",
+        "lat": 48.93134,
+        "lng": -115.71713,
+        "distMiles": 30
       }
     ]
   },
@@ -21134,6 +22142,13 @@
         "distMiles": 18
       },
       {
+        "name": "Buffalo Falls",
+        "type": "Waterfall",
+        "lat": 47.36308,
+        "lng": -111.90793,
+        "distMiles": 18
+      },
+      {
         "name": "Tower Rock State Park",
         "type": "State Park",
         "lat": 47.35,
@@ -21166,6 +22181,13 @@
         "type": "Fishing Access",
         "lat": 47.68162,
         "lng": -112.46531,
+        "distMiles": 23
+      },
+      {
+        "name": "First Peoples Buffalo Jump State Park",
+        "type": "State Park",
+        "lat": 47.48968,
+        "lng": -111.52914,
         "distMiles": 23
       },
       {
@@ -21576,6 +22598,20 @@
         "distMiles": 1
       },
       {
+        "name": "East Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.27444,
+        "lng": -106.67837,
+        "distMiles": 1
+      },
+      {
+        "name": "West Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.26333,
+        "lng": -106.69504,
+        "distMiles": 1
+      },
+      {
         "name": "Forsyth Country Club",
         "type": "Golf",
         "lat": 46.247926,
@@ -21877,8 +22913,8 @@
       {
         "name": "Big Falls",
         "type": "Waterfall",
-        "lat": 47.5687343,
-        "lng": -111.1232359,
+        "lat": 47.56996,
+        "lng": -111.12302,
         "distMiles": 27
       },
       {
@@ -22108,6 +23144,13 @@
         "type": "Fishing Access",
         "lat": 47.76668,
         "lng": -106.28003,
+        "distMiles": 18
+      },
+      {
+        "name": "Rock Creek State Park",
+        "type": "State Park",
+        "lat": 47.76584,
+        "lng": -106.28808,
         "distMiles": 18
       },
       {
@@ -22618,6 +23661,13 @@
         "distMiles": 15
       },
       {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
+        "distMiles": 15
+      },
+      {
         "name": "Beartooth Farm Field Tent Site",
         "type": "Campground",
         "lat": 45.297511,
@@ -22699,6 +23749,13 @@
         "type": "Fishing Access",
         "lat": 45.26467,
         "lng": -109.21932,
+        "distMiles": 18
+      },
+      {
+        "name": "Chief Plenty Coups State Park",
+        "type": "State Park",
+        "lat": 45.42912,
+        "lng": -108.54902,
         "distMiles": 18
       },
       {
@@ -23078,6 +24135,13 @@
         "distMiles": 6
       },
       {
+        "name": "Knowles Falls",
+        "type": "Waterfall",
+        "lat": 45.01201,
+        "lng": -110.5946,
+        "distMiles": 7
+      },
+      {
         "name": "Timber Camp",
         "type": "Campground",
         "lat": 45.0959612,
@@ -23202,6 +24266,13 @@
         "lat": 45.0888,
         "lng": -110.9608,
         "distMiles": 11
+      },
+      {
+        "name": "Specimen Falls",
+        "type": "Waterfall",
+        "lat": 45.05739,
+        "lng": -110.48046,
+        "distMiles": 12
       },
       {
         "name": "Canyon Campground",
@@ -23363,6 +24434,13 @@
         "lat": 45.12,
         "lng": -110.3985,
         "distMiles": 17
+      },
+      {
+        "name": "Passage Falls",
+        "type": "Waterfall",
+        "lat": 45.24216,
+        "lng": -110.49715,
+        "distMiles": 18
       },
       {
         "name": "Upper Dailey Creek",
@@ -23568,6 +24646,27 @@
         "distMiles": 26
       },
       {
+        "name": "Alpine Falls",
+        "type": "Waterfall",
+        "lat": 45.39271,
+        "lng": -110.953,
+        "distMiles": 26
+      },
+      {
+        "name": "Apex Falls",
+        "type": "Waterfall",
+        "lat": 45.39715,
+        "lng": -110.95605,
+        "distMiles": 26
+      },
+      {
+        "name": "Shower Falls",
+        "type": "Waterfall",
+        "lat": 45.39938,
+        "lng": -110.95689,
+        "distMiles": 26
+      },
+      {
         "name": "Upper Slough Creek Stock Camp - North",
         "type": "Campground",
         "lat": 45.0060783,
@@ -23587,6 +24686,13 @@
         "lat": 44.7786,
         "lng": -111.1004,
         "distMiles": 26
+      },
+      {
+        "name": "Champagne Falls",
+        "type": "Waterfall",
+        "lat": 45.40771,
+        "lng": -110.95828,
+        "distMiles": 27
       },
       {
         "name": "Upper Slough Creek",
@@ -23617,6 +24723,27 @@
         "distMiles": 27
       },
       {
+        "name": "Arch Falls",
+        "type": "Waterfall",
+        "lat": 45.42715,
+        "lng": -110.96105,
+        "distMiles": 28
+      },
+      {
+        "name": "Horsetail Falls",
+        "type": "Waterfall",
+        "lat": 45.44077,
+        "lng": -110.91633,
+        "distMiles": 28
+      },
+      {
+        "name": "Silken Skein Falls",
+        "type": "Waterfall",
+        "lat": 45.41993,
+        "lng": -110.95244,
+        "distMiles": 28
+      },
+      {
         "name": "Meadow Creek Trailhead",
         "type": "Trailhead",
         "lat": 45.0712788,
@@ -23642,6 +24769,20 @@
         "type": "Fishing Access",
         "lat": 45.45994,
         "lng": -110.61604,
+        "distMiles": 29
+      },
+      {
+        "name": "Grotto Falls",
+        "type": "Waterfall",
+        "lat": 45.43577,
+        "lng": -110.96383,
+        "distMiles": 29
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 45.43021,
+        "lng": -110.97661,
         "distMiles": 29
       },
       {
@@ -23701,6 +24842,13 @@
         "distMiles": 30
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 45.46966,
+        "lng": -110.56021,
+        "distMiles": 30
+      },
+      {
         "name": "Moose Creek Flat Campground",
         "type": "Campground",
         "lat": 45.3560098,
@@ -23719,13 +24867,6 @@
         "type": "Campground",
         "lat": 44.7054202,
         "lng": -111.1001148,
-        "distMiles": 30
-      },
-      {
-        "name": "Palisade Falls",
-        "type": "Waterfall",
-        "lat": 45.4693453,
-        "lng": -110.9309704,
         "distMiles": 30
       },
       {
@@ -24002,8 +25143,8 @@
       {
         "name": "Wolf Creek Falls",
         "type": "Waterfall",
-        "lat": 47.5346991,
-        "lng": -109.6698939,
+        "lat": 47.53498,
+        "lng": -109.66935,
         "distMiles": 28
       },
       {
@@ -24752,6 +25893,13 @@
         "distMiles": 3
       },
       {
+        "name": "Makoshika State Park",
+        "type": "State Park",
+        "lat": 47.05557,
+        "lng": -104.67718,
+        "distMiles": 4
+      },
+      {
         "name": "Pine-on-the-Rock Campground",
         "type": "Campground",
         "lat": 47.0581106,
@@ -25035,6 +26183,13 @@
         "distMiles": 1
       },
       {
+        "name": "Black Eagle Falls",
+        "type": "Waterfall",
+        "lat": 47.52079,
+        "lng": -111.26192,
+        "distMiles": 2
+      },
+      {
         "name": "Anaconda Hills Golf Course",
         "type": "Golf",
         "lat": 47.527169,
@@ -25060,13 +26215,6 @@
         "type": "Golf",
         "lat": 47.4989804,
         "lng": -111.3301667,
-        "distMiles": 2
-      },
-      {
-        "name": "Black Eagle Falls",
-        "type": "Waterfall",
-        "lat": 47.5195964,
-        "lng": -111.2631162,
         "distMiles": 2
       },
       {
@@ -25098,6 +26246,20 @@
         "distMiles": 4
       },
       {
+        "name": "Rainbow Falls",
+        "type": "Waterfall",
+        "lat": 47.53319,
+        "lng": -111.20567,
+        "distMiles": 4
+      },
+      {
+        "name": "Giant Springs Heritage State Park",
+        "type": "State Park",
+        "lat": 47.5344,
+        "lng": -111.2297,
+        "distMiles": 4
+      },
+      {
         "name": "Malmstrom Museum",
         "type": "Museum",
         "lat": 47.5062426,
@@ -25112,17 +26274,17 @@
         "distMiles": 5
       },
       {
+        "name": "Crooked Falls",
+        "type": "Waterfall",
+        "lat": 47.53611,
+        "lng": -111.19629,
+        "distMiles": 5
+      },
+      {
         "name": "Rainbow Dam Overlook",
         "type": "Viewpoint",
         "lat": 47.5314615,
         "lng": -111.203581,
-        "distMiles": 5
-      },
-      {
-        "name": "Crooked Falls",
-        "type": "Waterfall",
-        "lat": 47.5359063,
-        "lng": -111.1963539,
         "distMiles": 5
       },
       {
@@ -25135,8 +26297,8 @@
       {
         "name": "Big Falls",
         "type": "Waterfall",
-        "lat": 47.5687343,
-        "lng": -111.1232359,
+        "lat": 47.56996,
+        "lng": -111.12302,
         "distMiles": 9
       },
       {
@@ -25158,6 +26320,13 @@
         "type": "Fishing Access",
         "lat": 47.39384,
         "lng": -111.44886,
+        "distMiles": 11
+      },
+      {
+        "name": "First Peoples Buffalo Jump State Park",
+        "type": "State Park",
+        "lat": 47.48968,
+        "lng": -111.52914,
         "distMiles": 11
       },
       {
@@ -25203,6 +26372,13 @@
         "distMiles": 13
       },
       {
+        "name": "Castner Falls",
+        "type": "Waterfall",
+        "lat": 47.30477,
+        "lng": -111.49694,
+        "distMiles": 17
+      },
+      {
         "name": "Helena-Lewis and Clark National Forest",
         "type": "Nature Reserve",
         "lat": 47.2672922,
@@ -25242,6 +26418,13 @@
         "type": "State Park",
         "lat": 47.35,
         "lng": -111.8833,
+        "distMiles": 30
+      },
+      {
+        "name": "Buffalo Falls",
+        "type": "Waterfall",
+        "lat": 47.36308,
+        "lng": -111.90793,
         "distMiles": 30
       },
       {
@@ -25418,17 +26601,17 @@
         "distMiles": 8
       },
       {
+        "name": "Canyon Falls",
+        "type": "Waterfall",
+        "lat": 46.2452,
+        "lng": -114.32093,
+        "distMiles": 8
+      },
+      {
         "name": "Fred Burr Trailhead",
         "type": "Trailhead",
         "lat": 46.3536404,
         "lng": -114.2322471,
-        "distMiles": 8
-      },
-      {
-        "name": "Canyon Falls",
-        "type": "Waterfall",
-        "lat": 46.2450409,
-        "lng": -114.3213878,
         "distMiles": 8
       },
       {
@@ -25810,6 +26993,13 @@
         "distMiles": 16
       },
       {
+        "name": "Skalkaho Falls",
+        "type": "Waterfall",
+        "lat": 46.25742,
+        "lng": -113.82648,
+        "distMiles": 16
+      },
+      {
         "name": "Gold Creek Campground",
         "type": "Campground",
         "lat": 46.3974341,
@@ -25835,13 +27025,6 @@
         "type": "Museum",
         "lat": 46.0206723,
         "lng": -114.1779035,
-        "distMiles": 16
-      },
-      {
-        "name": "Skalkaho Falls",
-        "type": "Waterfall",
-        "lat": 46.2576967,
-        "lng": -113.8268418,
         "distMiles": 16
       },
       {
@@ -25985,6 +27168,13 @@
         "distMiles": 19
       },
       {
+        "name": "Fort Owen State Park",
+        "type": "State Park",
+        "lat": 46.51937,
+        "lng": -114.09677,
+        "distMiles": 19
+      },
+      {
         "name": "Hannon Memorial campground",
         "type": "Campground",
         "lat": 45.9707465,
@@ -26003,13 +27193,6 @@
         "type": "Trailhead",
         "lat": 46.1157459,
         "lng": -114.4926104,
-        "distMiles": 19
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "Museum",
-        "lat": 46.5200693,
-        "lng": -114.0971121,
         "distMiles": 19
       },
       {
@@ -26391,6 +27574,13 @@
         "distMiles": 28
       },
       {
+        "name": "Boulder Falls",
+        "type": "Waterfall",
+        "lat": 45.85979,
+        "lng": -114.30797,
+        "distMiles": 28
+      },
+      {
         "name": "Spring Gulch Forestry Campground",
         "type": "Campground",
         "lat": 45.8585685,
@@ -26423,13 +27613,6 @@
         "type": "Trailhead",
         "lat": 45.9566208,
         "lng": -113.7343775,
-        "distMiles": 28
-      },
-      {
-        "name": "Boulder Falls",
-        "type": "Waterfall",
-        "lat": 45.859724,
-        "lng": -114.3079367,
         "distMiles": 28
       },
       {
@@ -27249,6 +28432,13 @@
         "distMiles": 2
       },
       {
+        "name": "Spring Meadow Lake State Park",
+        "type": "State Park",
+        "lat": 46.61216,
+        "lng": -112.07583,
+        "distMiles": 2
+      },
+      {
         "name": "MTBcity",
         "type": "Campground",
         "lat": 46.6085625,
@@ -27438,6 +28628,13 @@
         "distMiles": 12
       },
       {
+        "name": "Black Sandy State Park",
+        "type": "State Park",
+        "lat": 46.75688,
+        "lng": -111.88971,
+        "distMiles": 13
+      },
+      {
         "name": "Devils Elbow Campground",
         "type": "Campground",
         "lat": 46.6999604,
@@ -27585,11 +28782,25 @@
         "distMiles": 21
       },
       {
+        "name": "Crow Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.33799,
+        "lng": -111.79082,
+        "distMiles": 21
+      },
+      {
         "name": "Mann Gulch Firefighter Memorial",
         "type": "Historic Site",
         "lat": 46.8871333,
         "lng": -111.8974839,
         "distMiles": 21
+      },
+      {
+        "name": "Elkhorn State Park",
+        "type": "State Park",
+        "lat": 46.27465,
+        "lng": -111.94582,
+        "distMiles": 22
       },
       {
         "name": "Vigilante campground",
@@ -27611,6 +28822,13 @@
         "lat": 46.4392507,
         "lng": -112.4477785,
         "distMiles": 22
+      },
+      {
+        "name": "Paradise Falls",
+        "type": "Waterfall",
+        "lat": 46.75167,
+        "lng": -112.46389,
+        "distMiles": 23
       },
       {
         "name": "Goose Bay Marina & Campground",
@@ -27887,6 +29105,13 @@
         "lat": 47.06,
         "lng": -109.89,
         "distMiles": 4
+      },
+      {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
+        "distMiles": 5
       },
       {
         "name": "Sod Buster Museum",
@@ -28251,6 +29476,20 @@
         "distMiles": 20
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 47.30208,
+        "lng": -114.8264,
+        "distMiles": 22
+      },
+      {
+        "name": "Flathead Lake State Park - Big Arm Unit",
+        "type": "State Park",
+        "lat": 47.813,
+        "lng": -114.31012,
+        "distMiles": 22
+      },
+      {
         "name": "Cascade Campground",
         "type": "Campground",
         "lat": 47.3054485,
@@ -28363,6 +29602,13 @@
         "distMiles": 25
       },
       {
+        "name": "Lake Mary Ronan State Park",
+        "type": "State Park",
+        "lat": 47.93189,
+        "lng": -114.38624,
+        "distMiles": 26
+      },
+      {
         "name": "Bend Guard Station",
         "type": "Campground",
         "lat": 47.9007067,
@@ -28468,6 +29714,13 @@
         "distMiles": 27
       },
       {
+        "name": "Flathead Lake State Park - Wild Horse Island Unit",
+        "type": "State Park",
+        "lat": 47.84161,
+        "lng": -114.20929,
+        "distMiles": 27
+      },
+      {
         "name": "Flathead Lake Scenic Overlook",
         "type": "Viewpoint",
         "lat": 47.6715083,
@@ -28528,6 +29781,13 @@
         "type": "Fishing Access",
         "lat": 47.30215,
         "lng": -115.0893,
+        "distMiles": 29
+      },
+      {
+        "name": "Flathead Lake State Park - Finley Point Unit",
+        "type": "State Park",
+        "lat": 47.76383,
+        "lng": -114.07872,
         "distMiles": 29
       },
       {
@@ -28683,6 +29943,20 @@
         "distMiles": 26
       },
       {
+        "name": "East Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.27444,
+        "lng": -106.67837,
+        "distMiles": 26
+      },
+      {
+        "name": "West Rosebud State Park",
+        "type": "State Park",
+        "lat": 46.26333,
+        "lng": -106.69504,
+        "distMiles": 26
+      },
+      {
         "name": "Black Sea Reservoir",
         "type": "Lake",
         "lat": 46.6651,
@@ -28810,6 +30084,13 @@
         "lat": 45.6331687,
         "lng": -108.9170074,
         "distMiles": 11
+      },
+      {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
+        "distMiles": 12
       },
       {
         "name": "Bluewater Fish Hatchery Fishing Access Site",
@@ -28964,6 +30245,13 @@
         "lat": 45.264744,
         "lng": -109.2196059,
         "distMiles": 19
+      },
+      {
+        "name": "Chief Plenty Coups State Park",
+        "type": "State Park",
+        "lat": 45.42912,
+        "lng": -108.54902,
+        "distMiles": 21
       },
       {
         "name": "Duck Creek Bridge",
@@ -29307,6 +30595,13 @@
         "distMiles": 19
       },
       {
+        "name": "Hell Creek State Park",
+        "type": "State Park",
+        "lat": 47.61667,
+        "lng": -106.89229,
+        "distMiles": 20
+      },
+      {
         "name": "Billy Creek Wilderness Study Area",
         "type": "Nature Reserve",
         "lat": 47.601477,
@@ -29366,6 +30661,13 @@
         "lat": 46.7569245,
         "lng": -109.4089512,
         "distMiles": 17
+      },
+      {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
+        "distMiles": 21
       },
       {
         "name": "Haymaker Wildlife Management Area",
@@ -29532,6 +30834,13 @@
         "lat": 48.1959,
         "lng": -114.3346,
         "distMiles": 1
+      },
+      {
+        "name": "Lone Pine State Park",
+        "type": "State Park",
+        "lat": 48.17857,
+        "lng": -114.34152,
+        "distMiles": 2
       },
       {
         "name": "Learn Lane Trailhead",
@@ -29814,6 +31123,20 @@
         "distMiles": 15
       },
       {
+        "name": "Flathead Lake State Park - Wayfarers Unit",
+        "type": "State Park",
+        "lat": 48.0544,
+        "lng": -114.08206,
+        "distMiles": 15
+      },
+      {
+        "name": "Wayfarers State Park",
+        "type": "State Park",
+        "lat": 48.05273,
+        "lng": -114.07734,
+        "distMiles": 15
+      },
+      {
         "name": "Wayfarers State Park Campground",
         "type": "Campground",
         "lat": 48.0528521,
@@ -29860,6 +31183,13 @@
         "type": "Fishing Access",
         "lat": 48.4283,
         "lng": -114.40986,
+        "distMiles": 16
+      },
+      {
+        "name": "Whitefish Lake State Park",
+        "type": "State Park",
+        "lat": 48.42496,
+        "lng": -114.37041,
         "distMiles": 16
       },
       {
@@ -29961,6 +31291,13 @@
         "distMiles": 18
       },
       {
+        "name": "Flathead Lake State Park - West Shore Unit",
+        "type": "State Park",
+        "lat": 47.94939,
+        "lng": -114.18845,
+        "distMiles": 18
+      },
+      {
         "name": "Lost Johnny Point Campground",
         "type": "Campground",
         "lat": 48.3105891,
@@ -30021,6 +31358,20 @@
         "type": "Fishing Access",
         "lat": 48.04495,
         "lng": -113.97511,
+        "distMiles": 19
+      },
+      {
+        "name": "Lake Mary Ronan State Park",
+        "type": "State Park",
+        "lat": 47.93189,
+        "lng": -114.38624,
+        "distMiles": 19
+      },
+      {
+        "name": "Little Bitterroot Lake State Park",
+        "type": "State Park",
+        "lat": 48.13968,
+        "lng": -114.71819,
         "distMiles": 19
       },
       {
@@ -30458,6 +31809,13 @@
         "distMiles": 25
       },
       {
+        "name": "Flathead Lake State Park - Wild Horse Island Unit",
+        "type": "State Park",
+        "lat": 47.84161,
+        "lng": -114.20929,
+        "distMiles": 25
+      },
+      {
         "name": "Sylvia Lake Campground",
         "type": "Campground",
         "lat": 48.3446969,
@@ -30500,6 +31858,13 @@
         "distMiles": 25
       },
       {
+        "name": "Flathead Lake State Park - Yellow Bay Unit",
+        "type": "State Park",
+        "lat": 47.87633,
+        "lng": -114.03289,
+        "distMiles": 26
+      },
+      {
         "name": "Boundary Trailhead",
         "type": "Trailhead",
         "lat": 48.5001805,
@@ -30525,6 +31890,13 @@
         "type": "Fishing Access",
         "lat": 47.81105,
         "lng": -114.26596,
+        "distMiles": 27
+      },
+      {
+        "name": "Flathead Lake State Park - Big Arm Unit",
+        "type": "State Park",
+        "lat": 47.813,
+        "lng": -114.31012,
         "distMiles": 27
       },
       {
@@ -30644,6 +32016,13 @@
         "type": "Trailhead",
         "lat": 48.07,
         "lng": -113.7,
+        "distMiles": 30
+      },
+      {
+        "name": "Martin Falls",
+        "type": "Waterfall",
+        "lat": 48.56691,
+        "lng": -114.68626,
         "distMiles": 30
       },
       {
@@ -31028,6 +32407,13 @@
         "distMiles": 17
       },
       {
+        "name": "Pictograph Cave State Park",
+        "type": "State Park",
+        "lat": 45.73745,
+        "lng": -108.43152,
+        "distMiles": 17
+      },
+      {
         "name": "East Bridge",
         "type": "Fishing Access",
         "lat": 45.7967006,
@@ -31067,6 +32453,13 @@
         "type": "State Park",
         "lat": 45.56,
         "lng": -109.16,
+        "distMiles": 20
+      },
+      {
+        "name": "Chief Plenty Coups State Park",
+        "type": "State Park",
+        "lat": 45.42912,
+        "lng": -108.54902,
         "distMiles": 20
       },
       {
@@ -31159,6 +32552,13 @@
         "lat": 45.6163165,
         "lng": -109.294523,
         "distMiles": 26
+      },
+      {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
+        "distMiles": 27
       },
       {
         "name": "Cooney Reservoir State Park Red Lodge Arm",
@@ -31563,6 +32963,13 @@
         "distMiles": 22
       },
       {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
+        "distMiles": 25
+      },
+      {
         "name": "Beckman Wildlife Management Area",
         "type": "Nature Reserve",
         "lat": 47.3648549,
@@ -31638,6 +33045,13 @@
         "distMiles": 11
       },
       {
+        "name": "Kootenai Falls",
+        "type": "Waterfall",
+        "lat": 48.4555,
+        "lng": -115.76322,
+        "distMiles": 11
+      },
+      {
         "name": "Dunn Creek Campground",
         "type": "Campground",
         "lat": 48.3809051,
@@ -31677,13 +33091,6 @@
         "type": "Viewpoint",
         "lat": 48.4084639,
         "lng": -115.3104777,
-        "distMiles": 11
-      },
-      {
-        "name": "Kootenai Falls",
-        "type": "Waterfall",
-        "lat": 48.4561818,
-        "lng": -115.7636834,
         "distMiles": 11
       },
       {
@@ -31813,6 +33220,13 @@
         "distMiles": 23
       },
       {
+        "name": "Yaak Falls",
+        "type": "Waterfall",
+        "lat": 48.64856,
+        "lng": -115.8849,
+        "distMiles": 23
+      },
+      {
         "name": "Yaak Falls Campground",
         "type": "Campground",
         "lat": 48.6447519,
@@ -31827,11 +33241,11 @@
         "distMiles": 23
       },
       {
-        "name": "Yaak Falls",
-        "type": "Viewpoint",
-        "lat": 48.6481401,
-        "lng": -115.8855855,
-        "distMiles": 23
+        "name": "Tenmile Falls",
+        "type": "Waterfall",
+        "lat": 48.61857,
+        "lng": -115.17183,
+        "distMiles": 24
       },
       {
         "name": "Lake Creek Campground",
@@ -31852,6 +33266,13 @@
         "type": "Lake",
         "lat": 48.75,
         "lng": -115.35,
+        "distMiles": 27
+      },
+      {
+        "name": "Little North Fork Falls",
+        "type": "Waterfall",
+        "lat": 48.75996,
+        "lng": -115.37573,
         "distMiles": 27
       },
       {
@@ -31887,6 +33308,13 @@
         "type": "Fishing Access",
         "lat": 48.06273,
         "lng": -115.1296,
+        "distMiles": 30
+      },
+      {
+        "name": "Sutton Creek Falls",
+        "type": "Waterfall",
+        "lat": 48.77024,
+        "lng": -115.26628,
         "distMiles": 30
       },
       {
@@ -32236,6 +33664,13 @@
         "distMiles": 13
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 45.46966,
+        "lng": -110.56021,
+        "distMiles": 13
+      },
+      {
         "name": "Mallards Rest",
         "type": "Boat Launch",
         "lat": 45.4831228,
@@ -32338,6 +33773,13 @@
         "type": "Fishing Access",
         "lat": 45.3991,
         "lng": -110.7016,
+        "distMiles": 19
+      },
+      {
+        "name": "Natural Bridge State Park",
+        "type": "State Park",
+        "lat": 45.5491,
+        "lng": -110.2063,
         "distMiles": 19
       },
       {
@@ -32446,6 +33888,20 @@
         "distMiles": 22
       },
       {
+        "name": "Palisade Falls",
+        "type": "Waterfall",
+        "lat": 45.4716,
+        "lng": -110.93633,
+        "distMiles": 22
+      },
+      {
+        "name": "Palisades Falls",
+        "type": "Waterfall",
+        "lat": 45.47077,
+        "lng": -110.92855,
+        "distMiles": 22
+      },
+      {
         "name": "Tiny Town Campground",
         "type": "Campground",
         "lat": 45.37061,
@@ -32478,13 +33934,6 @@
         "type": "Trailhead",
         "lat": 45.764866,
         "lng": -110.988319,
-        "distMiles": 22
-      },
-      {
-        "name": "Palisade Falls",
-        "type": "Waterfall",
-        "lat": 45.4693453,
-        "lng": -110.9309704,
         "distMiles": 22
       },
       {
@@ -32541,6 +33990,13 @@
         "type": "Fishing Access",
         "lat": 45.5866,
         "lng": -111.023,
+        "distMiles": 23
+      },
+      {
+        "name": "Horsetail Falls",
+        "type": "Waterfall",
+        "lat": 45.44077,
+        "lng": -110.91633,
         "distMiles": 23
       },
       {
@@ -32719,6 +34175,27 @@
         "distMiles": 25
       },
       {
+        "name": "Arch Falls",
+        "type": "Waterfall",
+        "lat": 45.42715,
+        "lng": -110.96105,
+        "distMiles": 25
+      },
+      {
+        "name": "Grotto Falls",
+        "type": "Waterfall",
+        "lat": 45.43577,
+        "lng": -110.96383,
+        "distMiles": 25
+      },
+      {
+        "name": "Silken Skein Falls",
+        "type": "Waterfall",
+        "lat": 45.41993,
+        "lng": -110.95244,
+        "distMiles": 25
+      },
+      {
         "name": "Yellowstone Bible Camp",
         "type": "Campground",
         "lat": 45.3008429,
@@ -32738,6 +34215,34 @@
         "lat": 45.3434,
         "lng": -110.8104,
         "distMiles": 25
+      },
+      {
+        "name": "Apex Falls",
+        "type": "Waterfall",
+        "lat": 45.39715,
+        "lng": -110.95605,
+        "distMiles": 26
+      },
+      {
+        "name": "Champagne Falls",
+        "type": "Waterfall",
+        "lat": 45.40771,
+        "lng": -110.95828,
+        "distMiles": 26
+      },
+      {
+        "name": "Shower Falls",
+        "type": "Waterfall",
+        "lat": 45.39938,
+        "lng": -110.95689,
+        "distMiles": 26
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 45.43021,
+        "lng": -110.97661,
+        "distMiles": 26
       },
       {
         "name": "Fairy Lake Campground",
@@ -32796,6 +34301,13 @@
         "distMiles": 27
       },
       {
+        "name": "Alpine Falls",
+        "type": "Waterfall",
+        "lat": 45.39271,
+        "lng": -110.953,
+        "distMiles": 27
+      },
+      {
         "name": "Hells Canyon Campground",
         "type": "Campground",
         "lat": 45.3621561,
@@ -32850,6 +34362,13 @@
         "lat": 45.338,
         "lng": -110.2303,
         "distMiles": 28
+      },
+      {
+        "name": "Passage Falls",
+        "type": "Waterfall",
+        "lat": 45.24216,
+        "lng": -110.49715,
+        "distMiles": 29
       },
       {
         "name": "Black Bull",
@@ -32933,6 +34452,13 @@
         "type": "Fishing Access",
         "lat": 45.26855,
         "lng": -110.81716,
+        "distMiles": 30
+      },
+      {
+        "name": "Upper Big Timber Falls",
+        "type": "Waterfall",
+        "lat": 46.04022,
+        "lng": -110.24769,
         "distMiles": 30
       },
       {
@@ -33030,6 +34556,13 @@
         "lat": 45.5704813,
         "lng": -107.4270296,
         "distMiles": 18
+      },
+      {
+        "name": "Rosebud Battlefield State Park",
+        "type": "State Park",
+        "lat": 45.23053,
+        "lng": -106.99785,
+        "distMiles": 19
       },
       {
         "name": "Rosebud Battlefield SP",
@@ -33266,6 +34799,13 @@
         "distMiles": 8
       },
       {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
+        "distMiles": 9
+      },
+      {
         "name": "Pacabo Dam",
         "type": "Lake",
         "lat": 45.8966,
@@ -33396,6 +34936,13 @@
         "type": "Fishing Access",
         "lat": 45.72437,
         "lng": -111.06967,
+        "distMiles": 16
+      },
+      {
+        "name": "Parker Homestead State Park",
+        "type": "State Park",
+        "lat": 45.84993,
+        "lng": -111.66748,
         "distMiles": 16
       },
       {
@@ -33805,6 +35352,13 @@
         "distMiles": 27
       },
       {
+        "name": "Lewis & Clark Caverns State Park",
+        "type": "State Park",
+        "lat": 45.83909,
+        "lng": -111.88665,
+        "distMiles": 27
+      },
+      {
         "name": "Spanish Creek Trailhead",
         "type": "Trailhead",
         "lat": 45.4473272,
@@ -34006,6 +35560,13 @@
         "type": "State Park",
         "lat": 46.3833,
         "lng": -105.7833,
+        "distMiles": 3
+      },
+      {
+        "name": "Pirogue Island State Park",
+        "type": "State Park",
+        "lat": 46.44056,
+        "lng": -105.81722,
         "distMiles": 3
       },
       {
@@ -34539,6 +36100,13 @@
         "distMiles": 8
       },
       {
+        "name": "Council Grove State Park",
+        "type": "State Park",
+        "lat": 46.91242,
+        "lng": -114.15095,
+        "distMiles": 8
+      },
+      {
         "name": "O'Brien Creek Trailhead",
         "type": "Trailhead",
         "lat": 46.8525745,
@@ -34718,6 +36286,13 @@
         "type": "Fishing Access",
         "lat": 46.64353,
         "lng": -114.05594,
+        "distMiles": 16
+      },
+      {
+        "name": "Frenchtown Pond State Park",
+        "type": "State Park",
+        "lat": 47.02437,
+        "lng": -114.2579,
         "distMiles": 16
       },
       {
@@ -34987,6 +36562,13 @@
         "distMiles": 22
       },
       {
+        "name": "Beavertail Hill State Park",
+        "type": "State Park",
+        "lat": 46.71993,
+        "lng": -113.58009,
+        "distMiles": 22
+      },
+      {
         "name": "Corricks Riverbend Campground",
         "type": "Campground",
         "lat": 46.9510149,
@@ -35106,6 +36688,13 @@
         "distMiles": 25
       },
       {
+        "name": "Fort Owen State Park",
+        "type": "State Park",
+        "lat": 46.51937,
+        "lng": -114.09677,
+        "distMiles": 25
+      },
+      {
         "name": "Dalles Campground",
         "type": "Campground",
         "lat": 46.5573497,
@@ -35145,13 +36734,6 @@
         "type": "Fishing Access",
         "lat": 46.5886325,
         "lng": -113.6710622,
-        "distMiles": 25
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "Museum",
-        "lat": 46.5200693,
-        "lng": -114.0971121,
         "distMiles": 25
       },
       {
@@ -35379,6 +36961,13 @@
         "distMiles": 29
       },
       {
+        "name": "Placid Lake State Park",
+        "type": "State Park",
+        "lat": 47.13049,
+        "lng": -113.51758,
+        "distMiles": 29
+      },
+      {
         "name": "Wiloughby 40 Environmental Trail",
         "type": "Trailhead",
         "lat": 46.4574479,
@@ -35404,13 +36993,6 @@
         "type": "Fishing Access",
         "lat": 46.9375409,
         "lng": -113.3876142,
-        "distMiles": 29
-      },
-      {
-        "name": "Placid Lake State Park",
-        "type": "Nature Reserve",
-        "lat": 47.1243638,
-        "lng": -113.5124527,
         "distMiles": 29
       },
       {
@@ -35446,6 +37028,13 @@
         "type": "Fishing Access",
         "lat": 47.00438,
         "lng": -113.3823,
+        "distMiles": 30
+      },
+      {
+        "name": "Snowshoe Falls",
+        "type": "Waterfall",
+        "lat": 46.67535,
+        "lng": -114.57135,
         "distMiles": 30
       },
       {
@@ -35493,6 +37082,13 @@
         "type": "State Park",
         "lat": 47.06,
         "lng": -109.89,
+        "distMiles": 11
+      },
+      {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
         "distMiles": 11
       },
       {
@@ -36117,6 +37713,13 @@
         "distMiles": 26
       },
       {
+        "name": "Rock Creek State Park",
+        "type": "State Park",
+        "lat": 47.76584,
+        "lng": -106.28808,
+        "distMiles": 26
+      },
+      {
         "name": "Barb Reservoir",
         "type": "Lake",
         "lat": 47.9011,
@@ -36287,6 +37890,13 @@
         "type": "Scenic Drive",
         "lat": 46.89,
         "lng": -110.73,
+        "distMiles": 3
+      },
+      {
+        "name": "Memorial Falls",
+        "type": "Waterfall",
+        "lat": 46.91536,
+        "lng": -110.69295,
         "distMiles": 3
       },
       {
@@ -36527,6 +38137,13 @@
         "lat": 46.3316274,
         "lng": -113.294837,
         "distMiles": 0
+      },
+      {
+        "name": "Granite State Park",
+        "type": "State Park",
+        "lat": 46.31743,
+        "lng": -113.2445,
+        "distMiles": 3
       },
       {
         "name": "Stewart Lake",
@@ -36823,6 +38440,13 @@
         "distMiles": 15
       },
       {
+        "name": "Lost Creek State Park",
+        "type": "State Park",
+        "lat": 46.21076,
+        "lng": -113.00477,
+        "distMiles": 16
+      },
+      {
         "name": "Lost Creek Campground",
         "type": "Campground",
         "lat": 46.2094224,
@@ -36877,6 +38501,13 @@
         "lat": 46.5558,
         "lng": -113.3241,
         "distMiles": 16
+      },
+      {
+        "name": "Rock Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.41021,
+        "lng": -112.96255,
+        "distMiles": 17
       },
       {
         "name": "Racetrack Campground",
@@ -37166,6 +38797,13 @@
         "distMiles": 23
       },
       {
+        "name": "Anaconda Smelter Stack State Park",
+        "type": "State Park",
+        "lat": 46.11104,
+        "lng": -112.91337,
+        "distMiles": 24
+      },
+      {
         "name": "Drummond Campground",
         "type": "Campground",
         "lat": 46.6611176,
@@ -37306,6 +38944,13 @@
         "distMiles": 26
       },
       {
+        "name": "Skalkaho Falls",
+        "type": "Waterfall",
+        "lat": 46.25742,
+        "lng": -113.82648,
+        "distMiles": 26
+      },
+      {
         "name": "Harrys Flat Campground",
         "type": "Campground",
         "lat": 46.5373232,
@@ -37352,13 +38997,6 @@
         "type": "Fishing Access",
         "lat": 46.6212087,
         "lng": -113.6520019,
-        "distMiles": 26
-      },
-      {
-        "name": "Skalkaho Falls",
-        "type": "Waterfall",
-        "lat": 46.2576967,
-        "lng": -113.8268418,
         "distMiles": 26
       },
       {
@@ -37570,6 +39208,13 @@
         "lat": 46.2986,
         "lng": -113.8971,
         "distMiles": 29
+      },
+      {
+        "name": "Beavertail Hill State Park",
+        "type": "State Park",
+        "lat": 46.71993,
+        "lng": -113.58009,
+        "distMiles": 30
       },
       {
         "name": "Willow Creek Trailhead",
@@ -37822,17 +39467,17 @@
         "distMiles": 8
       },
       {
+        "name": "Canyon Falls",
+        "type": "Waterfall",
+        "lat": 46.2452,
+        "lng": -114.32093,
+        "distMiles": 8
+      },
+      {
         "name": "Glen Lake Trailhead",
         "type": "Trailhead",
         "lat": 46.4357072,
         "lng": -114.252521,
-        "distMiles": 8
-      },
-      {
-        "name": "Canyon Falls",
-        "type": "Waterfall",
-        "lat": 46.2450409,
-        "lng": -114.3213878,
         "distMiles": 8
       },
       {
@@ -38025,6 +39670,13 @@
         "distMiles": 14
       },
       {
+        "name": "Fort Owen State Park",
+        "type": "State Park",
+        "lat": 46.51937,
+        "lng": -114.09677,
+        "distMiles": 14
+      },
+      {
         "name": "Willow Creek Trailhead",
         "type": "Trailhead",
         "lat": 46.2951234,
@@ -38050,13 +39702,6 @@
         "type": "Trailhead",
         "lat": 46.4574479,
         "lng": -113.9905113,
-        "distMiles": 14
-      },
-      {
-        "name": "Fort Owen State Park",
-        "type": "Museum",
-        "lat": 46.5200693,
-        "lng": -114.0971121,
         "distMiles": 14
       },
       {
@@ -38319,6 +39964,13 @@
         "distMiles": 19
       },
       {
+        "name": "Skalkaho Falls",
+        "type": "Waterfall",
+        "lat": 46.25742,
+        "lng": -113.82648,
+        "distMiles": 19
+      },
+      {
         "name": "Yellowstone Camp",
         "type": "Campground",
         "lat": 46.1262204,
@@ -38337,13 +39989,6 @@
         "type": "Fishing Access",
         "lat": 46.5859722,
         "lng": -114.0711762,
-        "distMiles": 19
-      },
-      {
-        "name": "Skalkaho Falls",
-        "type": "Waterfall",
-        "lat": 46.2576967,
-        "lng": -113.8268418,
         "distMiles": 19
       },
       {
@@ -38711,6 +40356,13 @@
         "distMiles": 29
       },
       {
+        "name": "Snowshoe Falls",
+        "type": "Waterfall",
+        "lat": 46.67535,
+        "lng": -114.57135,
+        "distMiles": 29
+      },
+      {
         "name": "Stony Creek Campground",
         "type": "Campground",
         "lat": 46.3489836,
@@ -38874,6 +40526,13 @@
         "type": "Fishing Access",
         "lat": 47.54188,
         "lng": -115.08181,
+        "distMiles": 11
+      },
+      {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 47.30208,
+        "lng": -114.8264,
         "distMiles": 11
       },
       {
@@ -39108,6 +40767,20 @@
         "distMiles": 25
       },
       {
+        "name": "Lost Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.11493,
+        "lng": -115.11741,
+        "distMiles": 26
+      },
+      {
+        "name": "Thompson Falls State Park",
+        "type": "State Park",
+        "lat": 47.61799,
+        "lng": -115.38849,
+        "distMiles": 26
+      },
+      {
         "name": "Moore Lake Campground",
         "type": "Campground",
         "lat": 47.1814661,
@@ -39211,6 +40884,13 @@
         "lat": 47.2883,
         "lng": -115.4169,
         "distMiles": 28
+      },
+      {
+        "name": "Graves Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.72087,
+        "lng": -115.3781,
+        "distMiles": 29
       },
       {
         "name": "Deep Creek Lake",
@@ -39326,6 +41006,13 @@
         "lat": 46.59806,
         "lng": -104.27188,
         "distMiles": 17
+      },
+      {
+        "name": "Medicine Rocks State Park",
+        "type": "State Park",
+        "lat": 46.04444,
+        "lng": -104.47134,
+        "distMiles": 26
       }
     ]
   },
@@ -39403,6 +41090,13 @@
         "distMiles": 5
       },
       {
+        "name": "Flathead Lake State Park - Finley Point Unit",
+        "type": "State Park",
+        "lat": 47.76383,
+        "lng": -114.07872,
+        "distMiles": 6
+      },
+      {
         "name": "Wild Horse Island State Park",
         "type": "State Park",
         "lat": 47.7833,
@@ -39447,8 +41141,8 @@
       {
         "name": "Mud Creek Falls",
         "type": "Waterfall",
-        "lat": 47.6167171,
-        "lng": -114.0059062,
+        "lat": 47.61605,
+        "lng": -114.00594,
         "distMiles": 9
       },
       {
@@ -39470,6 +41164,20 @@
         "type": "State Park",
         "lat": 47.85,
         "lng": -114.2,
+        "distMiles": 11
+      },
+      {
+        "name": "Flathead Lake State Park - Big Arm Unit",
+        "type": "State Park",
+        "lat": 47.813,
+        "lng": -114.31012,
+        "distMiles": 11
+      },
+      {
+        "name": "Flathead Lake State Park - Wild Horse Island Unit",
+        "type": "State Park",
+        "lat": 47.84161,
+        "lng": -114.20929,
         "distMiles": 11
       },
       {
@@ -39529,10 +41237,17 @@
         "distMiles": 13
       },
       {
+        "name": "Flathead Lake State Park - Yellow Bay Unit",
+        "type": "State Park",
+        "lat": 47.87633,
+        "lng": -114.03289,
+        "distMiles": 14
+      },
+      {
         "name": "Terrace Falls",
         "type": "Waterfall",
-        "lat": 47.5198217,
-        "lng": -113.9489913,
+        "lat": 47.51993,
+        "lng": -113.94899,
         "distMiles": 15
       },
       {
@@ -39585,6 +41300,13 @@
         "distMiles": 17
       },
       {
+        "name": "Flathead Lake State Park - West Shore Unit",
+        "type": "State Park",
+        "lat": 47.94939,
+        "lng": -114.18845,
+        "distMiles": 18
+      },
+      {
         "name": "Van Lake Campground",
         "type": "Campground",
         "lat": 47.698803,
@@ -39632,6 +41354,13 @@
         "lat": 47.9562744,
         "lng": -114.0337326,
         "distMiles": 19
+      },
+      {
+        "name": "Lake Mary Ronan State Park",
+        "type": "State Park",
+        "lat": 47.93189,
+        "lng": -114.38624,
+        "distMiles": 20
       },
       {
         "name": "Soup Creek Campground",
@@ -39809,6 +41538,20 @@
         "distMiles": 25
       },
       {
+        "name": "Flathead Lake State Park - Wayfarers Unit",
+        "type": "State Park",
+        "lat": 48.0544,
+        "lng": -114.08206,
+        "distMiles": 25
+      },
+      {
+        "name": "Wayfarers State Park",
+        "type": "State Park",
+        "lat": 48.05273,
+        "lng": -114.07734,
+        "distMiles": 25
+      },
+      {
         "name": "Wayfarers State Park Campground",
         "type": "Campground",
         "lat": 48.0528521,
@@ -39956,6 +41699,20 @@
         "distMiles": 27
       },
       {
+        "name": "Elizabeth Falls",
+        "type": "Waterfall",
+        "lat": 47.3391,
+        "lng": -113.92871,
+        "distMiles": 27
+      },
+      {
+        "name": "Mission Falls",
+        "type": "Waterfall",
+        "lat": 47.3366,
+        "lng": -113.93927,
+        "distMiles": 27
+      },
+      {
         "name": "Glacier Creek Trailhead",
         "type": "Trailhead",
         "lat": 47.3816232,
@@ -39974,20 +41731,6 @@
         "type": "Trailhead",
         "lat": 47.3190937,
         "lng": -114.0222229,
-        "distMiles": 27
-      },
-      {
-        "name": "Mission Falls",
-        "type": "Waterfall",
-        "lat": 47.3358051,
-        "lng": -113.9414725,
-        "distMiles": 27
-      },
-      {
-        "name": "Elizabeth Falls",
-        "type": "Waterfall",
-        "lat": 47.3393096,
-        "lng": -113.9292094,
         "distMiles": 27
       },
       {
@@ -40486,8 +42229,8 @@
       {
         "name": "Calamity Falls",
         "type": "Waterfall",
-        "lat": 45.1616441,
-        "lng": -109.5208972,
+        "lat": 45.16159,
+        "lng": -109.521,
         "distMiles": 13
       },
       {
@@ -40496,6 +42239,13 @@
         "lat": 45.1357,
         "lng": -109.5052,
         "distMiles": 13
+      },
+      {
+        "name": "Sentinel Falls",
+        "type": "Waterfall",
+        "lat": 45.15646,
+        "lng": -109.5285,
+        "distMiles": 14
       },
       {
         "name": "M-K Campground",
@@ -40509,13 +42259,6 @@
         "type": "Trailhead",
         "lat": 45.038021,
         "lng": -109.452262,
-        "distMiles": 14
-      },
-      {
-        "name": "Sentinel Falls",
-        "type": "Waterfall",
-        "lat": 45.156457,
-        "lng": -109.5284335,
         "distMiles": 14
       },
       {
@@ -40678,6 +42421,13 @@
         "lat": 45.1096,
         "lng": -109.5775,
         "distMiles": 17
+      },
+      {
+        "name": "Cooney Reservoir State Park",
+        "type": "State Park",
+        "lat": 45.44022,
+        "lng": -109.2146,
+        "distMiles": 18
       },
       {
         "name": "Cooney Reservoir State Park Red Lodge Arm",
@@ -41107,6 +42857,13 @@
         "distMiles": 24
       },
       {
+        "name": "Charlie Falls",
+        "type": "Waterfall",
+        "lat": 45.12217,
+        "lng": -109.72434,
+        "distMiles": 24
+      },
+      {
         "name": "Bluewater Spring",
         "type": "Fishing Access",
         "lat": 45.33153,
@@ -41186,8 +42943,8 @@
       {
         "name": "Impasse Falls",
         "type": "Waterfall",
-        "lat": 45.1177135,
-        "lng": -109.7416966,
+        "lat": 45.11772,
+        "lng": -109.7424,
         "distMiles": 25
       },
       {
@@ -41763,6 +43520,13 @@
         "distMiles": 4
       },
       {
+        "name": "Pinkham Falls",
+        "type": "Waterfall",
+        "lat": 48.83913,
+        "lng": -115.17184,
+        "distMiles": 4
+      },
+      {
         "name": "Camp 32",
         "type": "Campground",
         "lat": 48.8366635,
@@ -41840,6 +43604,13 @@
         "distMiles": 10
       },
       {
+        "name": "Sutton Creek Falls",
+        "type": "Waterfall",
+        "lat": 48.77024,
+        "lng": -115.26628,
+        "distMiles": 10
+      },
+      {
         "name": "Bass Lake",
         "type": "Lake",
         "lat": 48.824,
@@ -41851,6 +43622,13 @@
         "type": "Lake",
         "lat": 48.75,
         "lng": -115.35,
+        "distMiles": 13
+      },
+      {
+        "name": "Little North Fork Falls",
+        "type": "Waterfall",
+        "lat": 48.75996,
+        "lng": -115.37573,
         "distMiles": 13
       },
       {
@@ -41973,6 +43751,20 @@
         "distMiles": 18
       },
       {
+        "name": "Tenmile Falls",
+        "type": "Waterfall",
+        "lat": 48.61857,
+        "lng": -115.17183,
+        "distMiles": 19
+      },
+      {
+        "name": "Turner Falls",
+        "type": "Waterfall",
+        "lat": 48.86885,
+        "lng": -115.58018,
+        "distMiles": 19
+      },
+      {
         "name": "Okaga Lake",
         "type": "Lake",
         "lat": 48.9319,
@@ -41987,11 +43779,25 @@
         "distMiles": 20
       },
       {
+        "name": "Lower Falls",
+        "type": "Waterfall",
+        "lat": 48.93551,
+        "lng": -115.68157,
+        "distMiles": 23
+      },
+      {
         "name": "Jumbo Lake",
         "type": "Lake",
         "lat": 48.6675,
         "lng": -114.7849,
         "distMiles": 24
+      },
+      {
+        "name": "Upper Falls",
+        "type": "Waterfall",
+        "lat": 48.93134,
+        "lng": -115.71713,
+        "distMiles": 25
       },
       {
         "name": "Blue Lake Campground",
@@ -42008,17 +43814,17 @@
         "distMiles": 25
       },
       {
+        "name": "Whale Creek Falls",
+        "type": "Waterfall",
+        "lat": 48.85108,
+        "lng": -114.60265,
+        "distMiles": 26
+      },
+      {
         "name": "Tuchuck Campground",
         "type": "Campground",
         "lat": 48.9228918,
         "lng": -114.5998515,
-        "distMiles": 26
-      },
-      {
-        "name": "Whale Creek Falls",
-        "type": "Waterfall",
-        "lat": 48.851137,
-        "lng": -114.603279,
         "distMiles": 26
       },
       {
@@ -42172,10 +43978,17 @@
         "distMiles": 6
       },
       {
+        "name": "Mud Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.61605,
+        "lng": -114.00594,
+        "distMiles": 7
+      },
+      {
         "name": "Terrace Falls",
         "type": "Waterfall",
-        "lat": 47.5198217,
-        "lng": -113.9489913,
+        "lat": 47.51993,
+        "lng": -113.94899,
         "distMiles": 7
       },
       {
@@ -42184,13 +43997,6 @@
         "lat": 47.4354528,
         "lng": -114.1184492,
         "distMiles": 7
-      },
-      {
-        "name": "Mud Creek Falls",
-        "type": "Waterfall",
-        "lat": 47.6167171,
-        "lng": -114.0059062,
-        "distMiles": 8
       },
       {
         "name": "Pablo Wildlife Management Area",
@@ -42340,24 +44146,24 @@
         "distMiles": 14
       },
       {
-        "name": "Kakashe Trailhead",
-        "type": "Trailhead",
-        "lat": 47.3190937,
-        "lng": -114.0222229,
+        "name": "Elizabeth Falls",
+        "type": "Waterfall",
+        "lat": 47.3391,
+        "lng": -113.92871,
         "distMiles": 15
       },
       {
         "name": "Mission Falls",
         "type": "Waterfall",
-        "lat": 47.3358051,
-        "lng": -113.9414725,
+        "lat": 47.3366,
+        "lng": -113.93927,
         "distMiles": 15
       },
       {
-        "name": "Elizabeth Falls",
-        "type": "Waterfall",
-        "lat": 47.3393096,
-        "lng": -113.9292094,
+        "name": "Kakashe Trailhead",
+        "type": "Trailhead",
+        "lat": 47.3190937,
+        "lng": -114.0222229,
         "distMiles": 15
       },
       {
@@ -42373,6 +44179,13 @@
         "lat": 47.6188,
         "lng": -113.8069,
         "distMiles": 15
+      },
+      {
+        "name": "Flathead Lake State Park - Finley Point Unit",
+        "type": "State Park",
+        "lat": 47.76383,
+        "lng": -114.07872,
+        "distMiles": 16
       },
       {
         "name": "Hemlock Lake Trailhead",
@@ -42536,6 +44349,20 @@
         "distMiles": 22
       },
       {
+        "name": "Flathead Lake State Park - Big Arm Unit",
+        "type": "State Park",
+        "lat": 47.813,
+        "lng": -114.31012,
+        "distMiles": 22
+      },
+      {
+        "name": "Flathead Lake State Park - Wild Horse Island Unit",
+        "type": "State Park",
+        "lat": 47.84161,
+        "lng": -114.20929,
+        "distMiles": 22
+      },
+      {
         "name": "Twin Lakes",
         "type": "Campground",
         "lat": 47.2430624,
@@ -42603,6 +44430,13 @@
         "type": "Lake",
         "lat": 47.45,
         "lng": -113.6,
+        "distMiles": 24
+      },
+      {
+        "name": "Flathead Lake State Park - Yellow Bay Unit",
+        "type": "State Park",
+        "lat": 47.87633,
+        "lng": -114.03289,
         "distMiles": 24
       },
       {
@@ -42767,11 +44601,32 @@
         "distMiles": 28
       },
       {
+        "name": "Barrier Falls",
+        "type": "Waterfall",
+        "lat": 47.56661,
+        "lng": -113.49536,
+        "distMiles": 28
+      },
+      {
+        "name": "Big Salmon Falls",
+        "type": "Waterfall",
+        "lat": 47.51306,
+        "lng": -113.51211,
+        "distMiles": 28
+      },
+      {
         "name": "Lake Alva Campground",
         "type": "Campground",
         "lat": 47.3244362,
         "lng": -113.5826569,
         "distMiles": 28
+      },
+      {
+        "name": "Flathead Lake State Park - West Shore Unit",
+        "type": "State Park",
+        "lat": 47.94939,
+        "lng": -114.18845,
+        "distMiles": 29
       },
       {
         "name": "Lakeside Lolo (Old Alva) Campground",
@@ -43331,6 +45186,13 @@
         "distMiles": 4
       },
       {
+        "name": "Placid Lake State Park",
+        "type": "State Park",
+        "lat": 47.13049,
+        "lng": -113.51758,
+        "distMiles": 4
+      },
+      {
         "name": "Seeley Lake Lolo Campground",
         "type": "Campground",
         "lat": 47.1916771,
@@ -43345,13 +45207,6 @@
         "distMiles": 4
       },
       {
-        "name": "Placid Lake State Park",
-        "type": "Nature Reserve",
-        "lat": 47.1243638,
-        "lng": -113.5124527,
-        "distMiles": 4
-      },
-      {
         "name": "Lake Inez",
         "type": "Lake",
         "lat": 47.2,
@@ -43363,6 +45218,13 @@
         "type": "Lake",
         "lat": 47.15,
         "lng": -113.55,
+        "distMiles": 5
+      },
+      {
+        "name": "Salmon Lake State Park",
+        "type": "State Park",
+        "lat": 47.09299,
+        "lng": -113.39674,
         "distMiles": 5
       },
       {
@@ -43485,17 +45347,17 @@
         "distMiles": 10
       },
       {
+        "name": "Morrell Falls",
+        "type": "Waterfall",
+        "lat": 47.30105,
+        "lng": -113.46285,
+        "distMiles": 10
+      },
+      {
         "name": "Harpers Lake",
         "type": "Campground",
         "lat": 47.0210032,
         "lng": -113.3896042,
-        "distMiles": 10
-      },
-      {
-        "name": "Morrell Falls",
-        "type": "Waterfall",
-        "lat": 47.3006292,
-        "lng": -113.4636474,
         "distMiles": 10
       },
       {
@@ -43678,6 +45540,13 @@
         "type": "Fishing Access",
         "lat": 46.94354,
         "lng": -113.4348,
+        "distMiles": 15
+      },
+      {
+        "name": "Monture Falls",
+        "type": "Waterfall",
+        "lat": 47.26466,
+        "lng": -113.17589,
         "distMiles": 15
       },
       {
@@ -44122,6 +45991,13 @@
         "distMiles": 25
       },
       {
+        "name": "Big Salmon Falls",
+        "type": "Waterfall",
+        "lat": 47.51306,
+        "lng": -113.51211,
+        "distMiles": 25
+      },
+      {
         "name": "Big Nelson Campground",
         "type": "Campground",
         "lat": 47.0703091,
@@ -44171,6 +46047,27 @@
         "distMiles": 26
       },
       {
+        "name": "Elizabeth Falls",
+        "type": "Waterfall",
+        "lat": 47.3391,
+        "lng": -113.92871,
+        "distMiles": 26
+      },
+      {
+        "name": "Mission Falls",
+        "type": "Waterfall",
+        "lat": 47.3366,
+        "lng": -113.93927,
+        "distMiles": 26
+      },
+      {
+        "name": "North Fork Falls",
+        "type": "Waterfall",
+        "lat": 47.19411,
+        "lng": -112.89477,
+        "distMiles": 26
+      },
+      {
         "name": "Poe Meadows",
         "type": "Campground",
         "lat": 46.9525888,
@@ -44182,27 +46079,6 @@
         "type": "Fishing Access",
         "lat": 46.8972546,
         "lng": -113.0592676,
-        "distMiles": 26
-      },
-      {
-        "name": "North Fork Falls",
-        "type": "Waterfall",
-        "lat": 47.1940749,
-        "lng": -112.8947701,
-        "distMiles": 26
-      },
-      {
-        "name": "Mission Falls",
-        "type": "Waterfall",
-        "lat": 47.3358051,
-        "lng": -113.9414725,
-        "distMiles": 26
-      },
-      {
-        "name": "Elizabeth Falls",
-        "type": "Waterfall",
-        "lat": 47.3393096,
-        "lng": -113.9292094,
         "distMiles": 26
       },
       {
@@ -44273,6 +46149,13 @@
         "type": "Fishing Access",
         "lat": 46.86743,
         "lng": -113.88483,
+        "distMiles": 29
+      },
+      {
+        "name": "Barrier Falls",
+        "type": "Waterfall",
+        "lat": 47.56661,
+        "lng": -113.49536,
         "distMiles": 29
       },
       {
@@ -44781,22 +46664,22 @@
       {
         "name": "Mission Falls",
         "type": "Waterfall",
-        "lat": 47.3358051,
-        "lng": -113.9414725,
+        "lat": 47.3366,
+        "lng": -113.93927,
         "distMiles": 7
+      },
+      {
+        "name": "Elizabeth Falls",
+        "type": "Waterfall",
+        "lat": 47.3391,
+        "lng": -113.92871,
+        "distMiles": 8
       },
       {
         "name": "Ninepipes Museum of Early Montana",
         "type": "Museum",
         "lat": 47.4399013,
         "lng": -114.09609,
-        "distMiles": 8
-      },
-      {
-        "name": "Elizabeth Falls",
-        "type": "Waterfall",
-        "lat": 47.3393096,
-        "lng": -113.9292094,
         "distMiles": 8
       },
       {
@@ -44877,6 +46760,13 @@
         "distMiles": 15
       },
       {
+        "name": "Terrace Falls",
+        "type": "Waterfall",
+        "lat": 47.51993,
+        "lng": -113.94899,
+        "distMiles": 15
+      },
+      {
         "name": "North Fork Jocko Campground",
         "type": "Campground",
         "lat": 47.2298668,
@@ -44902,13 +46792,6 @@
         "type": "Museum",
         "lat": 47.5299344,
         "lng": -114.103723,
-        "distMiles": 15
-      },
-      {
-        "name": "Terrace Falls",
-        "type": "Waterfall",
-        "lat": 47.5198217,
-        "lng": -113.9489913,
         "distMiles": 15
       },
       {
@@ -45045,6 +46928,13 @@
         "distMiles": 21
       },
       {
+        "name": "Mud Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.61605,
+        "lng": -114.00594,
+        "distMiles": 21
+      },
+      {
         "name": "Pineridge",
         "type": "Campground",
         "lat": 47.441295,
@@ -45066,11 +46956,11 @@
         "distMiles": 21
       },
       {
-        "name": "Mud Creek Falls",
-        "type": "Waterfall",
-        "lat": 47.6167171,
-        "lng": -114.0059062,
-        "distMiles": 21
+        "name": "Frenchtown Pond State Park",
+        "type": "State Park",
+        "lat": 47.02437,
+        "lng": -114.2579,
+        "distMiles": 22
       },
       {
         "name": "Mud Lake Trailhead",
@@ -45437,6 +47327,13 @@
         "distMiles": 28
       },
       {
+        "name": "Council Grove State Park",
+        "type": "State Park",
+        "lat": 46.91242,
+        "lng": -114.15095,
+        "distMiles": 28
+      },
+      {
         "name": "Hidden Lake Camground",
         "type": "Campground",
         "lat": 47.1432802,
@@ -45619,6 +47516,27 @@
         "distMiles": 30
       },
       {
+        "name": "Big Salmon Falls",
+        "type": "Waterfall",
+        "lat": 47.51306,
+        "lng": -113.51211,
+        "distMiles": 30
+      },
+      {
+        "name": "Morrell Falls",
+        "type": "Waterfall",
+        "lat": 47.30105,
+        "lng": -113.46285,
+        "distMiles": 30
+      },
+      {
+        "name": "Placid Lake State Park",
+        "type": "State Park",
+        "lat": 47.13049,
+        "lng": -113.51758,
+        "distMiles": 30
+      },
+      {
         "name": "Big Larch Campground",
         "type": "Campground",
         "lat": 47.1848908,
@@ -45679,13 +47597,6 @@
         "type": "Fishing Access",
         "lat": 47.015041,
         "lng": -114.5397851,
-        "distMiles": 30
-      },
-      {
-        "name": "Morrell Falls",
-        "type": "Waterfall",
-        "lat": 47.3006292,
-        "lng": -113.4636474,
         "distMiles": 30
       },
       {
@@ -45750,6 +47661,13 @@
         "distMiles": 18
       },
       {
+        "name": "Ackley Lake State Park",
+        "type": "State Park",
+        "lat": 46.94719,
+        "lng": -109.93686,
+        "distMiles": 19
+      },
+      {
         "name": "Square Butte Wilderness Study Area",
         "type": "Nature Reserve",
         "lat": 47.4666682,
@@ -45769,6 +47687,13 @@
         "lat": 46.8323137,
         "lng": -110.4788889,
         "distMiles": 25
+      },
+      {
+        "name": "Memorial Falls",
+        "type": "Waterfall",
+        "lat": 46.91536,
+        "lng": -110.69295,
+        "distMiles": 28
       },
       {
         "name": "Thain Creek Camp Ground",
@@ -45819,9 +47744,9 @@
       },
       {
         "name": "Fort Owen State Park",
-        "type": "Museum",
-        "lat": 46.5200693,
-        "lng": -114.0971121,
+        "type": "State Park",
+        "lat": 46.51937,
+        "lng": -114.09677,
         "distMiles": 1
       },
       {
@@ -46560,6 +48485,13 @@
         "distMiles": 20
       },
       {
+        "name": "Canyon Falls",
+        "type": "Waterfall",
+        "lat": 46.2452,
+        "lng": -114.32093,
+        "distMiles": 21
+      },
+      {
         "name": "Grizzly Campground",
         "type": "Campground",
         "lat": 46.5733963,
@@ -46595,13 +48527,6 @@
         "distMiles": 21
       },
       {
-        "name": "Canyon Falls",
-        "type": "Waterfall",
-        "lat": 46.2450409,
-        "lng": -114.3213878,
-        "distMiles": 21
-      },
-      {
         "name": "Heinrich Lake",
         "type": "Lake",
         "lat": 46.3136,
@@ -46627,6 +48552,13 @@
         "type": "Fishing Access",
         "lat": 46.82909,
         "lng": -114.0565,
+        "distMiles": 22
+      },
+      {
+        "name": "Skalkaho Falls",
+        "type": "Waterfall",
+        "lat": 46.25742,
+        "lng": -113.82648,
         "distMiles": 22
       },
       {
@@ -46683,13 +48615,6 @@
         "type": "Golf",
         "lat": 46.8229244,
         "lng": -114.0580329,
-        "distMiles": 22
-      },
-      {
-        "name": "Skalkaho Falls",
-        "type": "Waterfall",
-        "lat": 46.2576967,
-        "lng": -113.8268418,
         "distMiles": 22
       },
       {
@@ -46963,6 +48888,13 @@
         "type": "Fishing Access",
         "lat": 46.86659,
         "lng": -114.09983,
+        "distMiles": 25
+      },
+      {
+        "name": "Snowshoe Falls",
+        "type": "Waterfall",
+        "lat": 46.67535,
+        "lng": -114.57135,
         "distMiles": 25
       },
       {
@@ -47257,6 +49189,20 @@
         "type": "Wilderness",
         "lat": 46.68,
         "lng": -113.55,
+        "distMiles": 28
+      },
+      {
+        "name": "Beavertail Hill State Park",
+        "type": "State Park",
+        "lat": 46.71993,
+        "lng": -113.58009,
+        "distMiles": 28
+      },
+      {
+        "name": "Council Grove State Park",
+        "type": "State Park",
+        "lat": 46.91242,
+        "lng": -114.15095,
         "distMiles": 28
       },
       {
@@ -47641,6 +49587,13 @@
         "distMiles": 7
       },
       {
+        "name": "Cascade Falls",
+        "type": "Waterfall",
+        "lat": 47.30208,
+        "lng": -114.8264,
+        "distMiles": 8
+      },
+      {
         "name": "Cascade Campground",
         "type": "Campground",
         "lat": 47.3054485,
@@ -47708,6 +49661,13 @@
         "type": "Fishing Access",
         "lat": 47.30215,
         "lng": -115.0893,
+        "distMiles": 12
+      },
+      {
+        "name": "Lost Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.11493,
+        "lng": -115.11741,
         "distMiles": 12
       },
       {
@@ -48176,6 +50136,13 @@
         "distMiles": 1
       },
       {
+        "name": "Thompson Falls State Park",
+        "type": "State Park",
+        "lat": 47.61799,
+        "lng": -115.38849,
+        "distMiles": 3
+      },
+      {
         "name": "Mount Silcox Wildlife Management Area",
         "type": "Nature Reserve",
         "lat": 47.5937002,
@@ -48211,6 +50178,13 @@
         "distMiles": 8
       },
       {
+        "name": "Graves Creek Falls",
+        "type": "Waterfall",
+        "lat": 47.72087,
+        "lng": -115.3781,
+        "distMiles": 9
+      },
+      {
         "name": "McKay Landing Fishing Access Site",
         "type": "Fishing Access",
         "lat": 47.54188,
@@ -48244,6 +50218,13 @@
         "lat": 47.8164385,
         "lng": -115.1480416,
         "distMiles": 18
+      },
+      {
+        "name": "Vermilion Falls",
+        "type": "Waterfall",
+        "lat": 47.879,
+        "lng": -115.35559,
+        "distMiles": 19
       },
       {
         "name": "Willow Creek Campground",
@@ -48559,11 +50540,25 @@
         "distMiles": 2
       },
       {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
+        "distMiles": 3
+      },
+      {
         "name": "Missouri Headwaters State Park",
         "type": "State Park",
         "lat": 45.93,
         "lng": -111.5,
         "distMiles": 4
+      },
+      {
+        "name": "Parker Homestead State Park",
+        "type": "State Park",
+        "lat": 45.84993,
+        "lng": -111.66748,
+        "distMiles": 6
       },
       {
         "name": "Cobblestone Fishing Access Site",
@@ -48738,6 +50733,13 @@
         "type": "Fishing Access",
         "lat": 45.77382,
         "lng": -111.23968,
+        "distMiles": 17
+      },
+      {
+        "name": "Lewis & Clark Caverns State Park",
+        "type": "State Park",
+        "lat": 45.83909,
+        "lng": -111.88665,
         "distMiles": 17
       },
       {
@@ -49194,6 +51196,13 @@
         "distMiles": 11
       },
       {
+        "name": "Crow Creek Falls",
+        "type": "Waterfall",
+        "lat": 46.33799,
+        "lng": -111.79082,
+        "distMiles": 13
+      },
+      {
         "name": "White Earth Campground",
         "type": "Campground",
         "lat": 46.5220963,
@@ -49268,6 +51277,13 @@
         "type": "Fishing Access",
         "lat": 46.02771,
         "lng": -111.4183,
+        "distMiles": 21
+      },
+      {
+        "name": "Elkhorn State Park",
+        "type": "State Park",
+        "lat": 46.27465,
+        "lng": -111.94582,
         "distMiles": 21
       },
       {
@@ -49429,6 +51445,13 @@
         "type": "Fishing Access",
         "lat": 46.64355,
         "lng": -111.88082,
+        "distMiles": 28
+      },
+      {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
         "distMiles": 28
       },
       {
@@ -49607,8 +51630,8 @@
       {
         "name": "Kootenai Falls",
         "type": "Waterfall",
-        "lat": 48.4561818,
-        "lng": -115.7636834,
+        "lat": 48.4555,
+        "lng": -115.76322,
         "distMiles": 6
       },
       {
@@ -49640,17 +51663,17 @@
         "distMiles": 9
       },
       {
+        "name": "Yaak Falls",
+        "type": "Waterfall",
+        "lat": 48.64856,
+        "lng": -115.8849,
+        "distMiles": 13
+      },
+      {
         "name": "Yaak Falls Campground",
         "type": "Campground",
         "lat": 48.6447519,
         "lng": -115.8857686,
-        "distMiles": 13
-      },
-      {
-        "name": "Yaak Falls",
-        "type": "Viewpoint",
-        "lat": 48.6481401,
-        "lng": -115.8855855,
         "distMiles": 13
       },
       {
@@ -49915,6 +51938,13 @@
         "type": "Fishing Access",
         "lat": 45.43909,
         "lng": -112.56418,
+        "distMiles": 13
+      },
+      {
+        "name": "Beaverhead Rock State Park",
+        "type": "State Park",
+        "lat": 45.38326,
+        "lng": -112.45918,
         "distMiles": 13
       },
       {
@@ -50191,6 +52221,13 @@
         "distMiles": 26
       },
       {
+        "name": "Clarks Lookout State Park",
+        "type": "State Park",
+        "lat": 45.23603,
+        "lng": -112.63141,
+        "distMiles": 26
+      },
+      {
         "name": "The Lunch Room",
         "type": "Campground",
         "lat": 45.9182953,
@@ -50349,6 +52386,13 @@
         "type": "Fishing Access",
         "lat": 45.18353,
         "lng": -112.68336,
+        "distMiles": 30
+      },
+      {
+        "name": "Lewis & Clark Caverns State Park",
+        "type": "State Park",
+        "lat": 45.83909,
+        "lng": -111.88665,
         "distMiles": 30
       },
       {
@@ -50859,6 +52903,13 @@
         "distMiles": 20
       },
       {
+        "name": "Cedar Falls",
+        "type": "Waterfall",
+        "lat": 45.23854,
+        "lng": -111.51719,
+        "distMiles": 21
+      },
+      {
         "name": "Jackson Lake",
         "type": "Lake",
         "lat": 45.5812,
@@ -50943,6 +52994,13 @@
         "distMiles": 26
       },
       {
+        "name": "Beaverhead Rock State Park",
+        "type": "State Park",
+        "lat": 45.38326,
+        "lng": -112.45918,
+        "distMiles": 26
+      },
+      {
         "name": "Twin Bridges Bike Camp",
         "type": "Campground",
         "lat": 45.5448468,
@@ -50961,6 +53019,13 @@
         "type": "Fishing Access",
         "lat": 45.54743,
         "lng": -112.36834,
+        "distMiles": 27
+      },
+      {
+        "name": "Pioneer Falls",
+        "type": "Waterfall",
+        "lat": 45.41579,
+        "lng": -111.40733,
         "distMiles": 27
       },
       {
@@ -51052,6 +53117,13 @@
         "type": "Fishing Access",
         "lat": 45.69937,
         "lng": -111.70775,
+        "distMiles": 30
+      },
+      {
+        "name": "Ousel Falls",
+        "type": "Waterfall",
+        "lat": 45.2391,
+        "lng": -111.34162,
         "distMiles": 30
       },
       {
@@ -51333,6 +53405,13 @@
         "distMiles": 17
       },
       {
+        "name": "Anaconda Smelter Stack State Park",
+        "type": "State Park",
+        "lat": 46.11104,
+        "lng": -112.91337,
+        "distMiles": 19
+      },
+      {
         "name": "Old Works Golf Club",
         "type": "Golf",
         "lat": 46.133824,
@@ -51463,6 +53542,13 @@
         "type": "Fishing Access",
         "lat": 45.84298,
         "lng": -112.05694,
+        "distMiles": 26
+      },
+      {
+        "name": "Lost Creek State Park",
+        "type": "State Park",
+        "lat": 46.21076,
+        "lng": -113.00477,
         "distMiles": 26
       },
       {
@@ -51968,6 +54054,20 @@
         "distMiles": 10
       },
       {
+        "name": "Beaver Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.60164,
+        "lng": -113.79623,
+        "distMiles": 11
+      },
+      {
+        "name": "McDonald Falls",
+        "type": "Waterfall",
+        "lat": 48.64025,
+        "lng": -113.86317,
+        "distMiles": 11
+      },
+      {
         "name": "Lincoln Lake",
         "type": "Campground",
         "lat": 48.58926,
@@ -52010,20 +54110,6 @@
         "distMiles": 11
       },
       {
-        "name": "McDonald Falls",
-        "type": "Waterfall",
-        "lat": 48.639507,
-        "lng": -113.8642433,
-        "distMiles": 11
-      },
-      {
-        "name": "Beaver Medicine Falls",
-        "type": "Waterfall",
-        "lat": 48.6017457,
-        "lng": -113.7971202,
-        "distMiles": 11
-      },
-      {
         "name": "Abbot Bay Boat Launch",
         "type": "Boat Launch",
         "lat": 48.3427157,
@@ -52036,6 +54122,34 @@
         "lat": 48.4305,
         "lng": -114.1922,
         "distMiles": 11
+      },
+      {
+        "name": "Akaiyan Falls",
+        "type": "Waterfall",
+        "lat": 48.61414,
+        "lng": -113.78484,
+        "distMiles": 12
+      },
+      {
+        "name": "Beaver Chief Falls",
+        "type": "Waterfall",
+        "lat": 48.59386,
+        "lng": -113.76456,
+        "distMiles": 12
+      },
+      {
+        "name": "Feather Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.61164,
+        "lng": -113.779,
+        "distMiles": 12
+      },
+      {
+        "name": "Sacred Dancing Cascade",
+        "type": "Waterfall",
+        "lat": 48.64219,
+        "lng": -113.85234,
+        "distMiles": 12
       },
       {
         "name": "Sperry",
@@ -52063,27 +54177,6 @@
         "type": "Trailhead",
         "lat": 48.6524007,
         "lng": -114.0728815,
-        "distMiles": 12
-      },
-      {
-        "name": "Feather Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.611662,
-        "lng": -113.779569,
-        "distMiles": 12
-      },
-      {
-        "name": "Akaiyan Falls",
-        "type": "Waterfall",
-        "lat": 48.613968,
-        "lng": -113.785776,
-        "distMiles": 12
-      },
-      {
-        "name": "Beaver Chief Falls",
-        "type": "Waterfall",
-        "lat": 48.593906,
-        "lng": -113.764392,
         "distMiles": 12
       },
       {
@@ -52157,17 +54250,17 @@
         "distMiles": 14
       },
       {
+        "name": "Monument Falls",
+        "type": "Waterfall",
+        "lat": 48.64997,
+        "lng": -113.77206,
+        "distMiles": 14
+      },
+      {
         "name": "Fire Island Campground",
         "type": "Campground",
         "lat": 48.2953837,
         "lng": -113.8968526,
-        "distMiles": 14
-      },
-      {
-        "name": "Monument Falls",
-        "type": "Waterfall",
-        "lat": 48.649734,
-        "lng": -113.77255,
         "distMiles": 14
       },
       {
@@ -52217,6 +54310,13 @@
         "type": "Lake",
         "lat": 48.3,
         "lng": -113.7833,
+        "distMiles": 16
+      },
+      {
+        "name": "Siksika Falls",
+        "type": "Waterfall",
+        "lat": 48.61737,
+        "lng": -113.68851,
         "distMiles": 16
       },
       {
@@ -52283,13 +54383,6 @@
         "distMiles": 16
       },
       {
-        "name": "Siksika Falls",
-        "type": "Waterfall",
-        "lat": 48.617651,
-        "lng": -113.687083,
-        "distMiles": 16
-      },
-      {
         "name": "Whitefish Mountain Resort",
         "type": "Ski Area",
         "lat": 48.4817,
@@ -52301,6 +54394,13 @@
         "type": "Trailhead",
         "lat": 48.47,
         "lng": -114.36,
+        "distMiles": 17
+      },
+      {
+        "name": "Florence Falls",
+        "type": "Waterfall",
+        "lat": 48.65066,
+        "lng": -113.69279,
         "distMiles": 17
       },
       {
@@ -52430,13 +54530,6 @@
         "distMiles": 17
       },
       {
-        "name": "Florence Falls",
-        "type": "Waterfall",
-        "lat": 48.650669,
-        "lng": -113.692823,
-        "distMiles": 17
-      },
-      {
         "name": "Riverside Boat Ramp",
         "type": "Boat Launch",
         "lat": 48.2724342,
@@ -52476,6 +54569,27 @@
         "type": "Fishing Access",
         "lat": 48.32107,
         "lng": -114.28041,
+        "distMiles": 18
+      },
+      {
+        "name": "Bird Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.70803,
+        "lng": -113.74762,
+        "distMiles": 18
+      },
+      {
+        "name": "Oberlin Falls",
+        "type": "Waterfall",
+        "lat": 48.6997,
+        "lng": -113.72345,
+        "distMiles": 18
+      },
+      {
+        "name": "Whitefish Lake State Park",
+        "type": "State Park",
+        "lat": 48.42496,
+        "lng": -114.37041,
         "distMiles": 18
       },
       {
@@ -52525,20 +54639,6 @@
         "type": "Viewpoint",
         "lat": 48.6996065,
         "lng": -113.7252145,
-        "distMiles": 18
-      },
-      {
-        "name": "Bird Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.7080383,
-        "lng": -113.7479889,
-        "distMiles": 18
-      },
-      {
-        "name": "Oberlin Falls",
-        "type": "Waterfall",
-        "lat": 48.6998306,
-        "lng": -113.7238962,
         "distMiles": 18
       },
       {
@@ -52623,6 +54723,34 @@
         "type": "Fishing Access",
         "lat": 48.32163,
         "lng": -113.6301,
+        "distMiles": 20
+      },
+      {
+        "name": "Deadwood Falls",
+        "type": "Waterfall",
+        "lat": 48.66672,
+        "lng": -113.63729,
+        "distMiles": 20
+      },
+      {
+        "name": "Piegan Falls",
+        "type": "Waterfall",
+        "lat": 48.71001,
+        "lng": -113.67782,
+        "distMiles": 20
+      },
+      {
+        "name": "Saint Mary Falls",
+        "type": "Waterfall",
+        "lat": 48.66803,
+        "lng": -113.61733,
+        "distMiles": 20
+      },
+      {
+        "name": "Virginia Falls",
+        "type": "Waterfall",
+        "lat": 48.66018,
+        "lng": -113.61321,
         "distMiles": 20
       },
       {
@@ -52724,24 +54852,10 @@
         "distMiles": 20
       },
       {
-        "name": "Deadwood Falls",
-        "type": "Waterfall",
-        "lat": 48.666685,
-        "lng": -113.637237,
-        "distMiles": 20
-      },
-      {
         "name": "Lower Virginia Falls",
         "type": "Waterfall",
         "lat": 48.6609293,
         "lng": -113.6130761,
-        "distMiles": 20
-      },
-      {
-        "name": "Piegan Falls",
-        "type": "Waterfall",
-        "lat": 48.7100093,
-        "lng": -113.6778767,
         "distMiles": 20
       },
       {
@@ -52757,6 +54871,20 @@
         "lat": 48.2086,
         "lng": -113.9793,
         "distMiles": 20
+      },
+      {
+        "name": "Morning Eagle Falls",
+        "type": "Waterfall",
+        "lat": 48.73559,
+        "lng": -113.69809,
+        "distMiles": 21
+      },
+      {
+        "name": "Salamander Falls",
+        "type": "Waterfall",
+        "lat": 48.75548,
+        "lng": -113.73592,
+        "distMiles": 21
       },
       {
         "name": "Granite Park campsite",
@@ -52815,27 +54943,6 @@
         "distMiles": 21
       },
       {
-        "name": "Saint Mary Falls",
-        "type": "Waterfall",
-        "lat": 48.6679725,
-        "lng": -113.6151092,
-        "distMiles": 21
-      },
-      {
-        "name": "Morning Eagle Falls",
-        "type": "Waterfall",
-        "lat": 48.7359821,
-        "lng": -113.6984394,
-        "distMiles": 21
-      },
-      {
-        "name": "Salamander Falls",
-        "type": "Waterfall",
-        "lat": 48.7554976,
-        "lng": -113.7358722,
-        "distMiles": 21
-      },
-      {
         "name": "Upper Grinnell Lake",
         "type": "Lake",
         "lat": 48.7567,
@@ -52848,6 +54955,27 @@
         "lat": 48.197,
         "lng": -113.9516,
         "distMiles": 21
+      },
+      {
+        "name": "Baring Falls",
+        "type": "Waterfall",
+        "lat": 48.67696,
+        "lng": -113.59354,
+        "distMiles": 22
+      },
+      {
+        "name": "Feather Plume Falls",
+        "type": "Waterfall",
+        "lat": 48.75107,
+        "lng": -113.70289,
+        "distMiles": 22
+      },
+      {
+        "name": "Grinnell Falls",
+        "type": "Waterfall",
+        "lat": 48.76275,
+        "lng": -113.72019,
+        "distMiles": 22
       },
       {
         "name": "Piegan Pass at Sun Point Trailhead",
@@ -52871,27 +54999,6 @@
         "distMiles": 22
       },
       {
-        "name": "Grinnell Falls",
-        "type": "Waterfall",
-        "lat": 48.7627147,
-        "lng": -113.7207466,
-        "distMiles": 22
-      },
-      {
-        "name": "Baring Falls",
-        "type": "Waterfall",
-        "lat": 48.6770309,
-        "lng": -113.5935804,
-        "distMiles": 22
-      },
-      {
-        "name": "Feather Plume Falls",
-        "type": "Waterfall",
-        "lat": 48.751068,
-        "lng": -113.702886,
-        "distMiles": 22
-      },
-      {
         "name": "Pine Grove Historic School Bell",
         "type": "Historic Site",
         "lat": 48.2499241,
@@ -52904,6 +55011,13 @@
         "lat": 48.1829,
         "lng": -113.9225,
         "distMiles": 22
+      },
+      {
+        "name": "Hidden Falls",
+        "type": "Waterfall",
+        "lat": 48.76595,
+        "lng": -113.69569,
+        "distMiles": 23
       },
       {
         "name": "Park Creek",
@@ -52941,13 +55055,6 @@
         "distMiles": 23
       },
       {
-        "name": "Hidden Falls",
-        "type": "Waterfall",
-        "lat": 48.766331,
-        "lng": -113.6950249,
-        "distMiles": 23
-      },
-      {
         "name": "Cracker Lake",
         "type": "Lake",
         "lat": 48.7441,
@@ -52980,6 +55087,13 @@
         "type": "Fishing Access",
         "lat": 48.20857,
         "lng": -114.25568,
+        "distMiles": 24
+      },
+      {
+        "name": "Redrock Falls",
+        "type": "Waterfall",
+        "lat": 48.79485,
+        "lng": -113.71123,
         "distMiles": 24
       },
       {
@@ -53039,13 +55153,6 @@
         "distMiles": 24
       },
       {
-        "name": "Redrock Falls",
-        "type": "Viewpoint",
-        "lat": 48.7951755,
-        "lng": -113.7108017,
-        "distMiles": 24
-      },
-      {
         "name": "Ray Kuhns WIldlife Management Area",
         "type": "Nature Reserve",
         "lat": 48.3273287,
@@ -53072,6 +55179,20 @@
         "lat": 48.1561,
         "lng": -113.8833,
         "distMiles": 24
+      },
+      {
+        "name": "Atlantic Falls",
+        "type": "Waterfall",
+        "lat": 48.57358,
+        "lng": -113.45095,
+        "distMiles": 25
+      },
+      {
+        "name": "Twin Falls",
+        "type": "Waterfall",
+        "lat": 48.4765,
+        "lng": -113.4268,
+        "distMiles": 25
       },
       {
         "name": "Upper Park Creek",
@@ -53235,20 +55356,6 @@
         "distMiles": 25
       },
       {
-        "name": "Atlantic Falls",
-        "type": "Waterfall",
-        "lat": 48.573734,
-        "lng": -113.451206,
-        "distMiles": 25
-      },
-      {
-        "name": "Twin Falls",
-        "type": "Waterfall",
-        "lat": 48.476911,
-        "lng": -113.427866,
-        "distMiles": 25
-      },
-      {
         "name": "Memorial Bench",
         "type": "Historic Site",
         "lat": 48.2103519,
@@ -53282,6 +55389,34 @@
         "lat": 48.7854,
         "lng": -113.6654,
         "distMiles": 25
+      },
+      {
+        "name": "Ipasha Falls",
+        "type": "Waterfall",
+        "lat": 48.84853,
+        "lng": -113.80748,
+        "distMiles": 26
+      },
+      {
+        "name": "Ptarmigan Falls",
+        "type": "Waterfall",
+        "lat": 48.82144,
+        "lng": -113.71159,
+        "distMiles": 26
+      },
+      {
+        "name": "Raven Quiver Falls",
+        "type": "Waterfall",
+        "lat": 48.86528,
+        "lng": -113.84739,
+        "distMiles": 26
+      },
+      {
+        "name": "Swiftcurrent Falls",
+        "type": "Waterfall",
+        "lat": 48.79985,
+        "lng": -113.65517,
+        "distMiles": 26
       },
       {
         "name": "Cobalt Lake",
@@ -53347,34 +55482,6 @@
         "distMiles": 26
       },
       {
-        "name": "Raven Quiver Falls",
-        "type": "Waterfall",
-        "lat": 48.865384,
-        "lng": -113.847496,
-        "distMiles": 26
-      },
-      {
-        "name": "Ipasha Falls",
-        "type": "Waterfall",
-        "lat": 48.848702,
-        "lng": -113.807545,
-        "distMiles": 26
-      },
-      {
-        "name": "Swiftcurrent Falls",
-        "type": "Waterfall",
-        "lat": 48.8001127,
-        "lng": -113.6551195,
-        "distMiles": 26
-      },
-      {
-        "name": "Ptarmigan Falls",
-        "type": "Waterfall",
-        "lat": 48.8216417,
-        "lng": -113.7116642,
-        "distMiles": 26
-      },
-      {
         "name": "Riverbed Swim",
         "type": "Nature Reserve",
         "lat": 48.208606,
@@ -53394,6 +55501,48 @@
         "lat": 48.1959,
         "lng": -114.3346,
         "distMiles": 26
+      },
+      {
+        "name": "Apikuni Falls",
+        "type": "Waterfall",
+        "lat": 48.81429,
+        "lng": -113.64306,
+        "distMiles": 27
+      },
+      {
+        "name": "Atsina Falls",
+        "type": "Waterfall",
+        "lat": 48.87367,
+        "lng": -113.85078,
+        "distMiles": 27
+      },
+      {
+        "name": "Mokowanis Cascade",
+        "type": "Waterfall",
+        "lat": 48.87664,
+        "lng": -113.84123,
+        "distMiles": 27
+      },
+      {
+        "name": "Paiota Falls",
+        "type": "Waterfall",
+        "lat": 48.87212,
+        "lng": -113.84976,
+        "distMiles": 27
+      },
+      {
+        "name": "Rockwell Falls",
+        "type": "Waterfall",
+        "lat": 48.4531,
+        "lng": -113.40419,
+        "distMiles": 27
+      },
+      {
+        "name": "Lone Pine State Park",
+        "type": "State Park",
+        "lat": 48.17857,
+        "lng": -114.34152,
+        "distMiles": 27
       },
       {
         "name": "Mokowanis Lake Camp",
@@ -53445,41 +55594,6 @@
         "distMiles": 27
       },
       {
-        "name": "Mokowanis Cascade",
-        "type": "Waterfall",
-        "lat": 48.876526,
-        "lng": -113.84154,
-        "distMiles": 27
-      },
-      {
-        "name": "Atsina Falls",
-        "type": "Waterfall",
-        "lat": 48.8736939,
-        "lng": -113.8508063,
-        "distMiles": 27
-      },
-      {
-        "name": "Paiota Falls",
-        "type": "Waterfall",
-        "lat": 48.8720579,
-        "lng": -113.8496983,
-        "distMiles": 27
-      },
-      {
-        "name": "Apikuni Falls",
-        "type": "Waterfall",
-        "lat": 48.8144121,
-        "lng": -113.6433322,
-        "distMiles": 27
-      },
-      {
-        "name": "Rockwell Falls",
-        "type": "Waterfall",
-        "lat": 48.452999,
-        "lng": -113.403705,
-        "distMiles": 27
-      },
-      {
         "name": "Family Life Christian Church Large Wooden Cross",
         "type": "Historic Site",
         "lat": 48.1852172,
@@ -53505,6 +55619,13 @@
         "type": "State Park",
         "lat": 48.17,
         "lng": -114.36,
+        "distMiles": 28
+      },
+      {
+        "name": "White Quiver Falls",
+        "type": "Waterfall",
+        "lat": 48.8859,
+        "lng": -113.81481,
         "distMiles": 28
       },
       {
@@ -53606,13 +55727,6 @@
         "distMiles": 28
       },
       {
-        "name": "White Quiver Falls",
-        "type": "Waterfall",
-        "lat": 48.885896,
-        "lng": -113.814807,
-        "distMiles": 28
-      },
-      {
         "name": "Aster falls",
         "type": "Waterfall",
         "lat": 48.4714016,
@@ -53645,6 +55759,20 @@
         "type": "Fishing Access",
         "lat": 48.09162,
         "lng": -114.11345,
+        "distMiles": 29
+      },
+      {
+        "name": "Appistoki Falls",
+        "type": "Waterfall",
+        "lat": 48.48193,
+        "lng": -113.35266,
+        "distMiles": 29
+      },
+      {
+        "name": "Running Eagle Falls",
+        "type": "Waterfall",
+        "lat": 48.49805,
+        "lng": -113.35256,
         "distMiles": 29
       },
       {
@@ -53694,20 +55822,6 @@
         "type": "Fishing Access",
         "lat": 48.0913984,
         "lng": -114.1165574,
-        "distMiles": 29
-      },
-      {
-        "name": "Running Eagle Falls",
-        "type": "Viewpoint",
-        "lat": 48.498254,
-        "lng": -113.3510834,
-        "distMiles": 29
-      },
-      {
-        "name": "Appistoki Falls",
-        "type": "Waterfall",
-        "lat": 48.482673,
-        "lng": -113.35252,
         "distMiles": 29
       },
       {
@@ -54150,6 +56264,13 @@
         "distMiles": 30
       },
       {
+        "name": "Taylor Falls",
+        "type": "Waterfall",
+        "lat": 45.03659,
+        "lng": -111.40746,
+        "distMiles": 30
+      },
+      {
         "name": "Shelf Lake West",
         "type": "Campground",
         "lat": 45.0912923,
@@ -54405,6 +56526,13 @@
         "distMiles": 26
       },
       {
+        "name": "Memorial Falls",
+        "type": "Waterfall",
+        "lat": 46.91536,
+        "lng": -110.69295,
+        "distMiles": 27
+      },
+      {
         "name": "Charles M Bair Family Museum",
         "type": "Museum",
         "lat": 46.4657336,
@@ -54477,6 +56605,13 @@
         "type": "Golf",
         "lat": 48.41,
         "lng": -114.38,
+        "distMiles": 2
+      },
+      {
+        "name": "Whitefish Lake State Park",
+        "type": "State Park",
+        "lat": 48.42496,
+        "lng": -114.37041,
         "distMiles": 2
       },
       {
@@ -54900,6 +57035,13 @@
         "distMiles": 15
       },
       {
+        "name": "Lone Pine State Park",
+        "type": "State Park",
+        "lat": 48.17857,
+        "lng": -114.34152,
+        "distMiles": 16
+      },
+      {
         "name": "Glacier Campground",
         "type": "Campground",
         "lat": 48.4817137,
@@ -55079,6 +57221,13 @@
         "type": "Fishing Access",
         "lat": 48.21357,
         "lng": -114.61708,
+        "distMiles": 19
+      },
+      {
+        "name": "Martin Falls",
+        "type": "Waterfall",
+        "lat": 48.56691,
+        "lng": -114.68626,
         "distMiles": 19
       },
       {
@@ -55404,6 +57553,13 @@
         "distMiles": 26
       },
       {
+        "name": "Little Bitterroot Lake State Park",
+        "type": "State Park",
+        "lat": 48.13968,
+        "lng": -114.71819,
+        "distMiles": 26
+      },
+      {
         "name": "Blue Lake Campground",
         "type": "Campground",
         "lat": 48.6562274,
@@ -55502,6 +57658,34 @@
         "distMiles": 27
       },
       {
+        "name": "McDonald Falls",
+        "type": "Waterfall",
+        "lat": 48.64025,
+        "lng": -113.86317,
+        "distMiles": 27
+      },
+      {
+        "name": "Sacred Dancing Cascade",
+        "type": "Waterfall",
+        "lat": 48.64219,
+        "lng": -113.85234,
+        "distMiles": 27
+      },
+      {
+        "name": "Flathead Lake State Park - Wayfarers Unit",
+        "type": "State Park",
+        "lat": 48.0544,
+        "lng": -114.08206,
+        "distMiles": 27
+      },
+      {
+        "name": "Wayfarers State Park",
+        "type": "State Park",
+        "lat": 48.05273,
+        "lng": -114.07734,
+        "distMiles": 27
+      },
+      {
         "name": "Harrison Lake",
         "type": "Campground",
         "lat": 48.52368,
@@ -55544,13 +57728,6 @@
         "distMiles": 27
       },
       {
-        "name": "McDonald Falls",
-        "type": "Waterfall",
-        "lat": 48.639507,
-        "lng": -113.8642433,
-        "distMiles": 27
-      },
-      {
         "name": "Aeneas Lake",
         "type": "Lake",
         "lat": 48.1395,
@@ -55590,6 +57767,13 @@
         "type": "Disc Golf",
         "lat": 48.0114,
         "lng": -114.3647,
+        "distMiles": 28
+      },
+      {
+        "name": "Beaver Medicine Falls",
+        "type": "Waterfall",
+        "lat": 48.60164,
+        "lng": -113.79623,
         "distMiles": 28
       },
       {
@@ -55656,13 +57840,6 @@
         "distMiles": 28
       },
       {
-        "name": "Beaver Medicine Falls",
-        "type": "Waterfall",
-        "lat": 48.6017457,
-        "lng": -113.7971202,
-        "distMiles": 28
-      },
-      {
         "name": "Lost Trail Conservation Area",
         "type": "Nature Reserve",
         "lat": 48.2817051,
@@ -55675,6 +57852,27 @@
         "lat": 48.1301,
         "lng": -113.9091,
         "distMiles": 28
+      },
+      {
+        "name": "Akaiyan Falls",
+        "type": "Waterfall",
+        "lat": 48.61414,
+        "lng": -113.78484,
+        "distMiles": 29
+      },
+      {
+        "name": "Beaver Chief Falls",
+        "type": "Waterfall",
+        "lat": 48.59386,
+        "lng": -113.76456,
+        "distMiles": 29
+      },
+      {
+        "name": "Feather Woman Falls",
+        "type": "Waterfall",
+        "lat": 48.61164,
+        "lng": -113.779,
+        "distMiles": 29
       },
       {
         "name": "Lower Nyack Creek",
@@ -55702,27 +57900,6 @@
         "type": "Trailhead",
         "lat": 48.8367787,
         "lng": -114.3365959,
-        "distMiles": 29
-      },
-      {
-        "name": "Feather Woman Falls",
-        "type": "Waterfall",
-        "lat": 48.611662,
-        "lng": -113.779569,
-        "distMiles": 29
-      },
-      {
-        "name": "Akaiyan Falls",
-        "type": "Waterfall",
-        "lat": 48.613968,
-        "lng": -113.785776,
-        "distMiles": 29
-      },
-      {
-        "name": "Beaver Chief Falls",
-        "type": "Waterfall",
-        "lat": 48.593906,
-        "lng": -113.764392,
         "distMiles": 29
       },
       {
@@ -55878,6 +58055,13 @@
         "distMiles": 9
       },
       {
+        "name": "Lewis & Clark Caverns State Park",
+        "type": "State Park",
+        "lat": 45.83909,
+        "lng": -111.88665,
+        "distMiles": 10
+      },
+      {
         "name": "Lewis and Clark Caverns",
         "type": "State Park",
         "lat": 45.8333,
@@ -56030,6 +58214,13 @@
         "lat": 45.818,
         "lng": -111.6958,
         "distMiles": 20
+      },
+      {
+        "name": "Parker Homestead State Park",
+        "type": "State Park",
+        "lat": 45.84993,
+        "lng": -111.66748,
+        "distMiles": 21
       },
       {
         "name": "B and B Fishpond",
@@ -56319,6 +58510,20 @@
         "distMiles": 29
       },
       {
+        "name": "Elkhorn State Park",
+        "type": "State Park",
+        "lat": 46.27465,
+        "lng": -111.94582,
+        "distMiles": 29
+      },
+      {
+        "name": "Missouri River Headwaters State Park",
+        "type": "State Park",
+        "lat": 45.92076,
+        "lng": -111.49802,
+        "distMiles": 29
+      },
+      {
         "name": "Pacabo Dam",
         "type": "Lake",
         "lat": 45.8966,
@@ -56450,6 +58655,13 @@
         "distMiles": 23
       },
       {
+        "name": "Makoshika State Park",
+        "type": "State Park",
+        "lat": 47.05557,
+        "lng": -104.67718,
+        "distMiles": 24
+      },
+      {
         "name": "Caines Coulee Overlook",
         "type": "Viewpoint",
         "lat": 47.0633541,
@@ -56569,8 +58781,8 @@
       {
         "name": "Wolf Creek Falls",
         "type": "Waterfall",
-        "lat": 47.5346991,
-        "lng": -109.6698939,
+        "lat": 47.53498,
+        "lng": -109.66935,
         "distMiles": 14
       },
       {

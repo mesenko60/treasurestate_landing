@@ -332,12 +332,24 @@ function buildRecreation() {
   const coordinates = JSON.parse(fs.readFileSync(coordsPath, 'utf8'));
   const osmSites = JSON.parse(fs.readFileSync(osmPath, 'utf8'));
 
-  const gnisFishingPath = path.resolve(__dirname, '..', 'data', 'gnis-fishing-access.json');
-  const gnisFishing = fs.existsSync(gnisFishingPath) ? JSON.parse(fs.readFileSync(gnisFishingPath, 'utf8')) : [];
-  if (gnisFishing.length) console.log(`Loaded ${gnisFishing.length} GNIS fishing access sites`);
+  const gnisDataDir = path.resolve(__dirname, '..', 'data');
+  const gnisFiles = [
+    { file: 'gnis-fishing-access.json', label: 'fishing access sites' },
+    { file: 'gnis-waterfalls.json', label: 'waterfalls' },
+    { file: 'gnis-state-parks.json', label: 'state parks' },
+  ];
+  const gnisSites = [];
+  for (const { file, label } of gnisFiles) {
+    const p = path.resolve(gnisDataDir, file);
+    if (fs.existsSync(p)) {
+      const data = JSON.parse(fs.readFileSync(p, 'utf8'));
+      console.log(`Loaded ${data.length} GNIS ${label}`);
+      gnisSites.push(...data);
+    }
+  }
 
-  // Merge curated + GNIS fishing + OSM, curated wins on name collisions
-  const allSites = [...CURATED_SITES, ...gnisFishing];
+  // Merge curated + GNIS + OSM, curated wins on name collisions
+  const allSites = [...CURATED_SITES, ...gnisSites];
   const seenNames = new Set(allSites.map(s => s.name.toLowerCase().trim()));
 
   const TYPE_MAP = {
