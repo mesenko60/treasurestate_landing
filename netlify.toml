@@ -113,10 +113,10 @@
   status = 301
   force = true
 
-# --- Uppercase /Information/ → canonical /information/ (Netlify lowercases static URLs) ---
+# --- Uppercase /Information/ → canonical /information/ ---
 [[redirects]]
   from = "/Information/*"
-  to = "/information/:splat"
+  to = "/information/:splat/"
   status = 301
   force = true
 
@@ -130,6 +130,18 @@
 [[redirects]]
   from = "/montana-facts.html"
   to = "/information/montana-facts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Montana-Facts.html"
+  to = "/information/montana-facts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/montana-towns/index.html"
+  to = "/montana-towns/"
   status = 301
   force = true
 
