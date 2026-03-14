@@ -3,7 +3,6 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { marked } from 'marked';
 import { markdownToHtml } from './markdown';
 
 const LODGING_DIR = path.resolve(process.cwd(), '..', 'lodging_pages');

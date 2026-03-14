@@ -40,7 +40,7 @@ export default function MobileBottomNav() {
           style={{
             background: 'none', border: 'none', cursor: 'pointer',
             display: 'flex', flexDirection: 'column', alignItems: 'center',
-            justifyContent: 'center', color: '#6b7280', width: '25%', height: '100%',
+            justifyContent: 'center', color: '#6b7280',
             fontFamily: "'Montserrat', sans-serif", fontSize: '0.75rem', fontWeight: 500,
           }}
         >
