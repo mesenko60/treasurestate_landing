@@ -17,7 +17,7 @@ You can also read our full [Polson town guide](/montana-towns/polson/) for thing
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
 | Red Lion Ridgewater Inn & Suites Polson | chain hotel | Polson | families, business, budget | $$ $100–175 |
-| Kwataqnuk Resort & Casino | resort | On the shores of Flathead Lake, Polson | couples, families, outdoor adventurers | $$ $100–175 |
+| [Kwataqnuk Resort & Casino](https://www.expedia.com/Polson-Hotels-KwaTaqNuk-Resort-Casino.h6835.Hotel-Information?camref=1011l52GG6&adref=polson-kwataqnuk-table) | resort | On the shores of Flathead Lake, Polson | couples, families, outdoor adventurers | $$ $100–175 |
 | Ninepipes Lodge | boutique hotel | Charlo (20 miles from Polson) | outdoor adventurers, couples | $$ $100–175 |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
@@ -28,7 +28,7 @@ You can also read our full [Polson town guide](/montana-towns/polson/) for thing
 
 **Red Lion Ridgewater Inn & Suites Polson** is located in Polson and is best suited for families, business, budget. Hot tub, indoor pool, free WiFi, free parking, complimentary continental breakfast, clean and spacious rooms Nightly rates typically fall in the $$ $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Polson%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=polson-red-lion-ridgewater-inn-&-suit).
 
-**Kwataqnuk Resort & Casino** is located in On the shores of Flathead Lake, Polson and is best suited for couples, families, outdoor adventurers. Casino, lake views, marina, hot tub, sauna, WiFi, restaurant, modern amenities Nightly rates typically fall in the $$ $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Polson%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=polson-kwataqnuk-resort-&-casino).
+**Kwataqnuk Resort & Casino** is located in On the shores of Flathead Lake, Polson and is best suited for couples, families, outdoor adventurers. Casino, lake views, marina, hot tub, sauna, WiFi, restaurant, modern amenities Nightly rates typically fall in the $$ $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Polson-Hotels-KwaTaqNuk-Resort-Casino.h6835.Hotel-Information?camref=1011l52GG6&adref=polson-kwataqnuk).
 
 **Ninepipes Lodge** is located in Charlo (20 miles from Polson) and is best suited for outdoor adventurers, couples. Mountain views, on-site restaurant and sports bar, free Wi-Fi, daily breakfast, saltwater spa access Nightly rates typically fall in the $$ $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Polson%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=polson-ninepipes-lodge).
 

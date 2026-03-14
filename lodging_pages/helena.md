@@ -22,7 +22,7 @@ You can also read our full [Helena town guide](/montana-towns/helena/) for thing
 | Holiday Inn Express and Suites Helena by IHG | Chain Hotel | Helena, 1.9 miles from Helena College | Families, business travelers, short stays | $$ |
 | Fairfield by Marriott Inn & Suites Helena North | Chain Hotel | Helena, 1.1 miles from Helena College | Families, business travelers, short stays | $$ |
 | Comfort Suites Helena Airport | Chain Hotel | Helena, 2.5 miles from Helena College | Families, business travelers, airport access | $$ |
-| Best Western Helena - Capitol Hotel | Chain Hotel | Helena | Budget-conscious travelers, casino enthusiasts | $ |
+| [Best Western Helena - Capitol Hotel](https://www.expedia.com/Helena-Hotels-Jorgensons-Inn-Suites.h40040.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-capitol-table) | Chain Hotel | Helena | Budget-conscious travelers, casino enthusiasts | $ |
 | Hampton Inn Helena | Chain Hotel | Helena | Families, business travelers, short stays | $$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
@@ -43,7 +43,7 @@ You can also read our full [Helena town guide](/montana-towns/helena/) for thing
 
 **Comfort Suites Helena Airport** is located in Helena, 2.5 miles from Helena College and is best suited for Families, business travelers, airport access. Free WiFi, free parking, breakfast Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-comfort-suites-helena-airport).
 
-**Best Western Helena - Capitol Hotel** is located in Helena and is best suited for Budget-conscious travelers, casino enthusiasts. Adjacent to a casino with slot machines and restaurant, daily hot breakfast Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-best-western-helena---capitol-).
+**Best Western Helena - Capitol Hotel** is located in Helena and is best suited for Budget-conscious travelers, casino enthusiasts. Adjacent to a casino with slot machines and restaurant, daily hot breakfast Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Helena-Hotels-Jorgensons-Inn-Suites.h40040.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-capitol).
 
 **Hampton Inn Helena** is located in Helena and is best suited for Families, business travelers, short stays. Free breakfast, free WiFi, airport shuttle Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-hampton-inn-helena).
 
