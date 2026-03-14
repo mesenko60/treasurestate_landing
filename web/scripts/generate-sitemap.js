@@ -98,6 +98,17 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   }
 
   add(`${baseUrl}/guides/`, 0.7, 'monthly');
+  add(`${baseUrl}/lodging/`, 0.75, 'monthly');
+  const lodgingDir = path.join(outDir, 'lodging');
+  if (fs.existsSync(lodgingDir)) {
+    for (const f of fs.readdirSync(lodgingDir)) {
+      const full = path.join(lodgingDir, f);
+      if (fs.statSync(full).isDirectory()) {
+        add(`${baseUrl}/lodging/${f}/`, 0.7, 'monthly');
+      }
+    }
+  }
+
   const guidesDir = path.join(outDir, 'guides');
   if (fs.existsSync(guidesDir)) {
     for (const f of fs.readdirSync(guidesDir)) {

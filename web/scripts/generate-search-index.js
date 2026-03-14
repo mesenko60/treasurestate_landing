@@ -283,7 +283,26 @@ function fmtPop(n) {
     entries.push({ type: 'article', title: p.title, description: p.desc, url: p.url, keywords: p.title + ' ' + p.desc + ' ' + p.kw });
   }
 
-  // ═══ 12. OTHER PAGES ═══
+  // ═══ 12. LODGING PAGES ═══
+  const lodgingDir = path.join(repoRoot, 'lodging_pages');
+  if (fs.existsSync(lodgingDir)) {
+    entries.push({ type: 'guide', title: 'Where to Stay in Montana', description: 'Lodging guide by town — hotels, B&Bs, cabins, vacation rentals', url: '/lodging/', keywords: 'where to stay Montana hotels cabins B&B vacation rentals lodging' });
+    const lodgingFiles = fs.readdirSync(lodgingDir).filter(f => f.endsWith('.md') && f !== 'index.md' && !f.startsWith('_'));
+    for (const f of lodgingFiles) {
+      const slug = f.replace(/\.md$/, '');
+      let townName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      if (slug === 'anaconda-montana') townName = 'Anaconda';
+      entries.push({
+        type: 'lodging',
+        title: `Where to Stay in ${townName}, Montana`,
+        description: `Hotels, B&Bs, cabins, and vacation rentals in ${townName}`,
+        url: `/lodging/${slug}/`,
+        keywords: `where to stay ${townName} Montana hotels lodging cabins B&B vacation rentals`,
+      });
+    }
+  }
+
+  // ═══ 13. OTHER PAGES ═══
   entries.push({ type: 'tool', title: 'Compare Towns', description: 'Side-by-side comparison of Montana towns', url: '/compare/', keywords: 'compare towns side by side housing cost climate' });
   entries.push({ type: 'tool', title: 'Moving Guides', description: 'Relocation guides for every Montana town', url: '/guides/', keywords: 'moving guide relocation relocate' });
   entries.push({ type: 'tool', title: 'Best of Montana', description: 'Data-driven rankings of Montana towns', url: '/best-of/', keywords: 'best of rankings top 10 Montana towns' });

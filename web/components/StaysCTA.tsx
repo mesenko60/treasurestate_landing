@@ -1,4 +1,10 @@
+import Link from 'next/link';
 import { vrboUrl, expediaUrl } from '../lib/affiliate-urls';
+
+/** Town slug to lodging page slug (anaconda uses anaconda-montana) */
+function toLodgingSlug(townSlug: string): string {
+  return townSlug === 'anaconda' ? 'anaconda-montana' : townSlug;
+}
 
 type Props = {
   townName?: string;
@@ -10,6 +16,7 @@ export default function StaysCTA({ townName, slug }: Props) {
   const s = slug || 'montana';
   const vrbo = vrboUrl(name, s);
   const expedia = expediaUrl(name, s);
+  const lodgingSlug = toLodgingSlug(s);
 
   return (
     <section style={{
@@ -87,6 +94,11 @@ export default function StaysCTA({ townName, slug }: Props) {
           <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via Expedia</span>
         </a>
       </div>
+      {townName && (
+        <p style={{ fontSize: '0.85rem', margin: '1rem 0 0', opacity: 0.9 }}>
+          See our full <Link href={`/lodging/${lodgingSlug}/`} style={{ color: '#d8973c', fontWeight: 600, textDecoration: 'underline' }}>Where to Stay in {name} guide</Link> for hotels, B&Bs, cabins, and vacation rentals.
+        </p>
+      )}
       <p style={{
         fontSize: '0.7rem',
         margin: '1rem 0 0',

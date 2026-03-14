@@ -57,6 +57,11 @@ export default function MobileBottomNav() {
           <div className="icon">📖</div>
           <span>Guides</span>
         </Link>
+
+        <Link href="/lodging" className={isActive('/lodging') ? 'active' : ''} tabIndex={-1}>
+          <div className="icon">🏨</div>
+          <span>Lodging</span>
+        </Link>
       </nav>
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>

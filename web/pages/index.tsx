@@ -284,6 +284,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <Link href="/best-of/best-fishing-towns" className="hp-path-link">Fishing</Link>
             <Link href="/guides/fly-fishing-guide" className="hp-path-link">Fly Fishing Guide</Link>
             <Link href="/best-of/towns-near-hot-springs" className="hp-path-link">Hot Springs</Link>
+            <Link href="/lodging" className="hp-path-link">Find Lodging</Link>
             <Link href="/planners" className="hp-path-link">Travel Guides</Link>
           </div>
         </div>
@@ -346,7 +347,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                   <span className="hp-adv-icon" aria-hidden="true">🛣️</span>
                   <span className="hp-adv-label">Scenic Backroads</span>
                 </Link>
-                <Link href="/planners" className="hp-adv-card">
+                <Link href="/lodging" className="hp-adv-card">
                   <span className="hp-adv-icon" aria-hidden="true">🏨</span>
                   <span className="hp-adv-label">Where to Stay</span>
                 </Link>
