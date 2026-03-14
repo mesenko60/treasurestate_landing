@@ -22,7 +22,7 @@ You can also read our full [Billings town guide](/montana-towns/billings/) for t
 | Hyatt Place Billings | Chain Hotel | Billings, MT | Modern travelers | $$$ |
 | Residence Inn by Marriott Billings | Chain Hotel (Extended Stay) | Billings, MT | Extended stays, families | $$$ |
 | Best Western Plus Clocktower Inn | Motel | Downtown, within walking distance of museum, shops & theaters | Tourists, budget-conscious travelers | $$ |
-| Best Western Plus Kelly Inn & Suites | Chain Hotel | Billings, MT | General travelers | $$ |
+| [Best Western Plus Kelly Inn & Suites](https://www.expedia.com/Billings-Hotels-Best-Western-Plus-Kelly-Inn-Suites.h1608100.Hotel-Information?camref=1011l52GG6&adref=billings-best-western-kelly-table) | Chain Hotel | Billings, MT | General travelers | $$ |
 | Billings Hotel & Convention Center | Hotel & Convention Center | Billings, MT | Business travelers, event attendees | $$ |
 | Country Inn & Suites Billings | Motor Inn | Billings, MT | Business or leisure travelers | $$ |
 | La Quinta Inn & Suites | Chain Hotel | Near shopping centers and restaurants | Budget-conscious travelers | $ |
@@ -45,7 +45,7 @@ You can also read our full [Billings town guide](/montana-towns/billings/) for t
 
 **Best Western Plus Clocktower Inn** is located in Downtown, within walking distance of museum, shops & theaters and is best suited for Tourists, budget-conscious travelers. Central location, easy access to attractions Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-best-western-plus-clocktower-i).
 
-**Best Western Plus Kelly Inn & Suites** is located in Billings, MT and is best suited for General travelers. Renovated in 2018 Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-best-western-plus-kelly-inn-&-).
+**Best Western Plus Kelly Inn & Suites** is located in Billings, MT and is best suited for General travelers. Renovated in 2018 Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Billings-Hotels-Best-Western-Plus-Kelly-Inn-Suites.h1608100.Hotel-Information?camref=1011l52GG6&adref=billings-best-western-kelly).
 
 **Billings Hotel & Convention Center** is located in Billings, MT and is best suited for Business travelers, event attendees. Largest indoor convention space in Montana Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-billings-hotel-&-convention-ce).
 

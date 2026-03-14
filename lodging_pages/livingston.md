@@ -16,7 +16,9 @@ You can also read our full [Livingston town guide](/montana-towns/livingston/) f
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| (See text below for lodging options) | | | | |
+| [Murray Hotel](https://www.expedia.com/Livingston-Hotels-Murray-Hotel.h5925.Hotel-Information?camref=1011l52GG6&adref=livingston-murray-hotel-table) | Historic Hotel | Downtown | Couples, History enthusiasts | $$$ |
+| [Super 8 by Wyndham Livingston Yellowstone](https://www.expedia.com/Hotel-Search?destination=Livingston%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=livingston-super-8-table) | Chain Motel | Off I-90 | Budget, Park visitors | $ |
+| [Comfort Inn & Suites Livingston](https://www.expedia.com/Hotel-Search?destination=Livingston%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=livingston-comfort-inn-table) | Chain Hotel | West Park St | Families, Budget | $$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -24,7 +26,11 @@ You can also read our full [Livingston town guide](/montana-towns/livingston/) f
 
 ## Hotels & Motels
 
+**Murray Hotel** is located in Downtown Livingston and is best suited for Couples, History enthusiasts. Historic 1904 property, rooftop patio, 2nd Street Bistro, Murray Bar with live music, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Livingston-Hotels-Murray-Hotel.h5925.Hotel-Information?camref=1011l52GG6&adref=livingston-murray-hotel).
 
+**Super 8 by Wyndham Livingston Yellowstone** is located off I-90 and is best suited for Budget travelers, Park visitors. Free light breakfast, free WiFi, pet-friendly, near Yellowstone north entrance. Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Livingston%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=livingston-super-8).
+
+**Comfort Inn & Suites Livingston** is located on West Park Street and is best suited for Families, Budget-conscious travelers. Free breakfast, indoor pool, convenient to Yellowstone. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Livingston%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=livingston-comfort-inn).
 
 ---
 

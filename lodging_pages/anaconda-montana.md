@@ -18,7 +18,7 @@ You can also read our full [Anaconda town guide](/montana-towns/anaconda/) for t
 |---|---|---|---|---|
 | The Forge Hotel, BW Signature Collection | chain hotel | near the heart of town | couples, business, general travelers | $$ |
 | Copperhead Lodge | boutique motel | 1421 E Park Ave, Anaconda, MT 59711 | independent travelers, couples | $$ |
-| Fairmont Hot Springs Resort | resort | 1500 Fairmont Rd., Anaconda, MT | families, couples, spa & golf enthusiasts | $$$$ |
+| [Fairmont Hot Springs Resort](https://www.expedia.com/Butte-Hotels-Fairmont-Hot-Springs-Resort.h2462673.Hotel-Information?camref=1011l52GG6&adref=anaconda-fairmont-table) | resort | 1500 Fairmont Rd., Anaconda, MT | families, couples, spa & golf enthusiasts | $$$$ |
 | Marcus Daly Motel | motel | 119 W. Park Ave., Anaconda, MT | budget travelers, business travelers | $ |
 | Hickory House Inn | inn | 218 E Park Ave, Anaconda, MT | families, groups, historical enthusiasts | $$$ |
 | Pintler's Portal Hostel | hostel | downtown Anaconda | outdoor enthusiasts, adventure travelers, budget travelers | $ |
@@ -33,7 +33,7 @@ You can also read our full [Anaconda town guide](/montana-towns/anaconda/) for t
 
 **Copperhead Lodge** is located in 1421 E Park Ave, Anaconda, MT 59711 and is best suited for independent travelers, couples. remodeled in 2023. operates like an Airbnb. unique and personalized lodging experience Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Anaconda%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=anaconda-montana-copperhead-lodge).
 
-**Fairmont Hot Springs Resort** is located in 1500 Fairmont Rd., Anaconda, MT and is best suited for families, couples, spa & golf enthusiasts. four naturally heated hot springs pools. 350’ enclosed waterslide. 18-hole golf course. full-service spa Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Anaconda%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=anaconda-montana-fairmont-hot-springs-resort).
+**Fairmont Hot Springs Resort** is located in 1500 Fairmont Rd., Anaconda, MT and is best suited for families, couples, spa & golf enthusiasts. four naturally heated hot springs pools. 350’ enclosed waterslide. 18-hole golf course. full-service spa Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Butte-Hotels-Fairmont-Hot-Springs-Resort.h2462673.Hotel-Information?camref=1011l52GG6&adref=anaconda-fairmont-hot-springs).
 
 **Marcus Daly Motel** is located in 119 W. Park Ave., Anaconda, MT and is best suited for budget travelers, business travelers. centrally located. enclosed parking. winter plug-ins. Grab & Go morning snack Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Anaconda%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=anaconda-montana-marcus-daly-motel).
 

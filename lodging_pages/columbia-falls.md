@@ -19,7 +19,7 @@ You can also read our full [Columbia Falls town guide](/montana-towns/columbia-f
 | Glacier Acres Guest Ranch | Guest Ranch | Columbia Falls (MT) | Families, outdoor adventurers | $$-$$$ |
 | Wonderstone at Glacier | Boutique Hotel | Columbia Falls (MT) | Couples, modern travelers | $$-$$$ |
 | Meadow Lake Resort & Condos | Resort & Condos | Columbia Falls (MT) | Families, couples, luxury travelers | $$$-$$$$ |
-| Cedar Creek Lodge & Conference Center | Lodge & Conference Center | Columbia Falls (MT) | Families, business, couples | $$$-$$$$ |
+| [Cedar Creek Lodge & Conference Center](https://www.expedia.com/Whitefish-Hotels-Cedar-Creek-Lodge-And-Conference-Center.h15070743.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-cedar-creek-table) | Lodge & Conference Center | Columbia Falls (MT) | Families, business, couples | $$$-$$$$ |
 | Glacier International Lodge | Hotel | Kalispell, Columbia Falls (MT) | Families, couples | $$$-$$$$ |
 | Glacier Inn Motel | Motel | Columbia Falls, MT | Budget travelers, couples | $$ |
 
@@ -35,7 +35,7 @@ You can also read our full [Columbia Falls town guide](/montana-towns/columbia-f
 
 **Meadow Lake Resort & Condos** is located in Columbia Falls (MT) and is best suited for Families, couples, luxury travelers. Free Wi-Fi, Swimming pool, Free parking, Spa, Spacious rooms Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Columbia%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=columbia-falls-meadow-lake-resort-&-condos).
 
-**Cedar Creek Lodge & Conference Center** is located in Columbia Falls (MT) and is best suited for Families, business, couples. Free Wi-Fi, Swimming pool, Free parking, Hearty breakfast buffet, inviting terrace, lobby fireplace, spa tub Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Columbia%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=columbia-falls-cedar-creek-lodge-&-conference).
+**Cedar Creek Lodge & Conference Center** is located in Columbia Falls (MT) and is best suited for Families, business, couples. Free Wi-Fi, Swimming pool, Free parking, Hearty breakfast buffet, inviting terrace, lobby fireplace, spa tub Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Whitefish-Hotels-Cedar-Creek-Lodge-And-Conference-Center.h15070743.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-cedar-creek).
 
 **Glacier International Lodge** is located in Kalispell, Columbia Falls (MT) and is best suited for Families, couples. Free Wi-Fi, Swimming pool, Free parking, Spa Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Columbia%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=columbia-falls-glacier-international-lodge).
 

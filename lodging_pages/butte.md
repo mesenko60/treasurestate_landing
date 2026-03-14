@@ -16,7 +16,7 @@ You can also read our full [Butte town guide](/montana-towns/butte/) for things 
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| Copper King Convention Center | Full-service hotel | Butte | Upscale travelers, those seeking amenities, pet owners, business travelers | $$ |
+| [Copper King Convention Center](https://www.expedia.com/Butte-Hotels-Copper-King-Convention-Center.h1070.Hotel-Information?camref=1011l52GG6&adref=butte-copper-king-table) | Full-service hotel | Butte | Upscale travelers, those seeking amenities, pet owners, business travelers | $$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -24,7 +24,7 @@ You can also read our full [Butte town guide](/montana-towns/butte/) for things 
 
 ## Hotels & Motels
 
-**Copper King Convention Center** is located in Butte and is best suited for Upscale travelers, those seeking amenities, pet owners, business travelers. Free hot breakfast, indoor pool, hot tub, sauna, fitness center, dog-friendly rooms, on-site Rib and Chop House restaurant, spa, outdoor patio with bonfire pit, local shuttle service. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Butte%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=butte-copper-king-convention-center).
+**Copper King Convention Center** is located in Butte and is best suited for Upscale travelers, those seeking amenities, pet owners, business travelers. Free hot breakfast, indoor pool, hot tub, sauna, fitness center, dog-friendly rooms, on-site Rib and Chop House restaurant, spa, outdoor patio with bonfire pit, local shuttle service. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Butte-Hotels-Copper-King-Convention-Center.h1070.Hotel-Information?camref=1011l52GG6&adref=butte-copper-king).
 
 ---
 

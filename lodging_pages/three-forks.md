@@ -16,7 +16,7 @@ You can also read our full [Three Forks town guide](/montana-towns/three-forks/)
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| Sacajawea Hotel | Historic Hotel | Downtown Three Forks | History aficionados, outdoor enthusiasts, discerning travelers | $$$- |
+| [Sacajawea Hotel](https://www.expedia.com/Three-Forks-Hotels-The-Sacajawea-Hotel.h10768705.Hotel-Information?camref=1011l52GG6&adref=three-forks-sacajawea-table) | Historic Hotel | Downtown Three Forks | History aficionados, outdoor enthusiasts, discerning travelers | $$$- |
 | Travelodge by Wyndham Three Forks | Chain Hotel/Motel | Off I-90, 10776 US Highway 287 | Convenience, budget-conscious, families, outdoor adventurers | $$ |
 | Broken Spur Motel | Motel | 124 W Elm St, Three Forks | Budget travelers, national park visitors, outdoor enthusiasts | $- |
 | Lewis & Clark Motel of Three Forks | Motel | 510 South Main Street, Three Forks | Comfortable, clean, quiet lodging | $- |
@@ -27,7 +27,7 @@ You can also read our full [Three Forks town guide](/montana-towns/three-forks/)
 
 ## Hotels & Motels
 
-**Sacajawea Hotel** is located in Downtown Three Forks and is best suited for History aficionados, outdoor enthusiasts, discerning travelers. Rich history, modern amenities, fine dining, luxury accommodations, Historic Hotels of America destination Nightly rates typically fall in the $$$- range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Three%20Forks%2C%20MT&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=three-forks-sacajawea-hotel).
+**Sacajawea Hotel** is located in Downtown Three Forks and is best suited for History aficionados, outdoor enthusiasts, discerning travelers. Rich history, modern amenities, fine dining, luxury accommodations, Historic Hotels of America destination Nightly rates typically fall in the $$$- range. Check current rates on [Expedia](https://www.expedia.com/Three-Forks-Hotels-The-Sacajawea-Hotel.h10768705.Hotel-Information?camref=1011l52GG6&adref=three-forks-sacajawea).
 
 **Travelodge by Wyndham Three Forks** is located in Off I-90, 10776 US Highway 287 and is best suited for Convenience, budget-conscious, families, outdoor adventurers. Free WiFi, free parking, onsite laundry, pet-friendly rooms, mini-refrigerator, microwave Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Three%20Forks%2C%20MT&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=three-forks-travelodge-by-wyndham-three-fo).
 
