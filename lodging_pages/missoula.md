@@ -8,19 +8,21 @@
 
 Downtown Missoula is highlighted as the best area for walkability and access to local attractions, museums, and art. The University District is also mentioned as an academic enclave. Other areas like Grant Creek neighborhood are noted for specific hotels. Missoula is frequently described as an ultimate basecamp for exploring Glacier National Park and Yellowstone National Park, as well as other iconic Montana parks. It's also a gateway to various wilderness areas and outdoor adventures.
 
+You can also read our full [Missoula town guide](/montana-towns/missoula/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| Holiday Inn Missoula Downtown | Chain Hotel | Downtown | General travelers | $$-$$$ |
+| [Holiday Inn Missoula Downtown](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Downtown-Missoula.h9471.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-downtown-table) | Chain Hotel | Downtown | General travelers | $$-$$$ |
 | Staybridge Suites Missoula | Chain Hotel | Further from downtown | Extended stays | $$-$$$ |
 | Super 8 by Wyndham Missoula/Reserve St. | Motel | Reserve St. | Budget travelers | $ |
 | Days Inn and Suites by Wyndham Downtown Missoula-University | Chain Hotel | Downtown/University area | Budget travelers | $ |
 | Loge Camps Missoula | Boutique/Unique | Near Mobash Skate Park | Adventurous travelers | $$-$$$ |
 | Courtyard Missoula | Chain Hotel | (Not specified | General travelers | $$-$$$ |
-| Residence Inn Missoula Downtown | Chain Hotel | Downtown | General travelers | $$$-$$$$ |
+| [Residence Inn Missoula Downtown](https://www.expedia.com/Missoula-Hotels-Residence-Inn-By-Marriott-Missoula-Downtown.h33291172.Hotel-Information?camref=1011l52GG6&adref=missoula-residence-inn-table) | Chain Hotel | Downtown | General travelers | $$$-$$$$ |
 | Holiday Inn Express & Suites Northwest | Chain Hotel | Northwest Missoula | Pet owners | $$-$$$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
@@ -29,7 +31,7 @@ Downtown Missoula is highlighted as the best area for walkability and access to 
 
 ## Hotels & Motels
 
-**Holiday Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Convenient downtown location Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-holiday-inn-missoula-downtown).
+**Holiday Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Convenient downtown location Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Downtown-Missoula.h9471.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-downtown).
 
 **Staybridge Suites Missoula** is located in Further from downtown and is best suited for Extended stays. Good amenities Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-staybridge-suites-missoula).
 
@@ -41,7 +43,7 @@ Downtown Missoula is highlighted as the best area for walkability and access to 
 
 **Courtyard Missoula** is located in (Not specified and is best suited for General travelers. Indoor pools Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-courtyard-missoula).
 
-**Residence Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Very high rating Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-residence-inn-missoula-downtow).
+**Residence Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Very high rating Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Residence-Inn-By-Marriott-Missoula-Downtown.h33291172.Hotel-Information?camref=1011l52GG6&adref=missoula-residence-inn).
 
 **Holiday Inn Express & Suites Northwest** is located in Northwest Missoula and is best suited for Pet owners. Pet-friendly. Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-holiday-inn-express-&-suites-n).
 
@@ -69,7 +71,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Missou
 
 Peak Booking Periods: June to August are peak travel months with higher tourist numbers due to sunny weather. Parking Notes: Many hotels offer free parking. Downtown parking garages, such as the one across from Residence Inn by Marriott Missoula Downtown, may offer free parking on weekends. Seasonal Pricing Patterns: Accommodation prices are generally lower during off-peak months, typically from December to February.
 
-**Moving to Missoula?** If you are visiting to scout a potential relocation, read our full [Moving to Missoula Guide](/guides/moving-to-missoula-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Missoula to other cities](/compare/).
+**Moving to Missoula?** If you are visiting to scout a potential relocation, read our full [Moving to Missoula Guide](/guides/moving-to-missoula-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Missoula to other cities](/compare/).
+
+**Also nearby:** [Hamilton](/lodging/hamilton/) · [Kalispell](/lodging/kalispell/) · [Polson](/lodging/polson/)
 
 ---
 

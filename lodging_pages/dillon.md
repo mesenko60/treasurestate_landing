@@ -8,6 +8,8 @@
 
 Dillon, Montana serves as a central hub for visitors exploring Southwest Montana, strategically located where major highways converge. It is particularly renowned for its access to premier trout streams, including the Beaverhead, Big Hole, and Ruby Rivers. The town acts as a basecamp for outdoor activities such as rockhounding at Crystal Park and historical explorations at Bannack State Park, Montana's first gold strike site.
 
+You can also read our full [Dillon town guide](/montana-towns/dillon/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -65,7 +67,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Dillon
 
 To secure the best lodging options in Dillon, Montana, it is advisable to book well in advance, especially if planning a trip during peak fishing seasons (late April, June, and September) or during local events such as rodeos or University of Montana Western activities. Parking in the Town Core is free for up to 3 hours daily from 10 AM to 8 PM, but overnight parking is not permitted, and campus parking requires a permit. Expect seasonal pricing fluctuations, with higher rates during popular periods and potentially lower rates during the off-season.
 
-**Moving to Dillon?** If you are visiting to scout a potential relocation, read our full [Moving to Dillon Guide](/guides/moving-to-dillon-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Dillon to other cities](/compare/).
+**Moving to Dillon?** If you are visiting to scout a potential relocation, read our full [Moving to Dillon Guide](/guides/moving-to-dillon-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Dillon to other cities](/compare/).
+
+**Also nearby:** [Butte](/lodging/butte/) · [Bozeman](/lodging/bozeman/)
 
 ---
 

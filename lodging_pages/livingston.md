@@ -8,6 +8,8 @@
 
 Livingston, Montana, is nestled in the heart of Paradise Valley, making it a prime basecamp for exploring the northern entrance of Yellowstone National Park. Visitors also use it as a hub for world-class fly fishing on the Yellowstone River, hiking in the Absaroka Mountains, and other outdoor activities in the surrounding four wild mountain ranges. Lodging options are diverse, ranging from historic hotels to rustic motels, with some properties located along the Yellowstone River.
 
+You can also read our full [Livingston town guide](/montana-towns/livingston/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -44,7 +46,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Living
 
 For Livingston, Montana, peak booking periods generally align with the summer months (June-August) due to its proximity to Yellowstone National Park and various outdoor activities like fly fishing and hiking. Early fall can also be busy with pleasant weather. Conversely, hotel prices tend to be lower during the off-peak months of January to March. When visiting, be aware that while short-term parking is available downtown, longer stays might require utilizing designated long-term parking areas, which are typically within a short walk of the main attractions.
 
-**Moving to Livingston?** If you are visiting to scout a potential relocation, read our full [Moving to Livingston Guide](/guides/moving-to-livingston-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Livingston to other cities](/compare/).
+**Moving to Livingston?** If you are visiting to scout a potential relocation, read our full [Moving to Livingston Guide](/guides/moving-to-livingston-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Livingston to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [Red Lodge](/lodging/red-lodge/) · [Big Sky](/lodging/big-sky/)
 
 ---
 

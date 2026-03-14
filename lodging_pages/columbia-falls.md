@@ -8,6 +8,8 @@
 
 Columbia Falls is nestled in the Flathead Valley, serving as a primary gateway to Glacier National Park, particularly for those entering through the West side. It is also conveniently located near other outdoor attractions like the Flathead National Forest and Big Sky Waterpark, making it an ideal basecamp for year-round outdoor adventures.
 
+You can also read our full [Columbia Falls town guide](/montana-towns/columbia-falls/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -63,7 +65,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Columb
 
 Peak booking periods for Columbia Falls, Montana, especially for lodging near Glacier National Park, are typically during the summer months (June-September). It is highly recommended to book accommodations well in advance for these periods, as they fill up quickly. Parking can be a concern, particularly when visiting popular attractions like Glacier National Park; arriving early (e.g., by 6:00 AM for Logan Pass) is often necessary to secure a spot. Seasonal pricing patterns show higher rates during the summer peak season, with potentially lower prices during the spring and fall shoulder seasons.
 
-**Moving to Columbia Falls?** If you are visiting to scout a potential relocation, read our full [Moving to Columbia Falls Guide](/guides/moving-to-columbia-falls-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Columbia Falls to other cities](/compare/).
+**Moving to Columbia Falls?** If you are visiting to scout a potential relocation, read our full [Moving to Columbia Falls Guide](/guides/moving-to-columbia-falls-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Columbia Falls to other cities](/compare/).
+
+**Also nearby:** [Whitefish](/lodging/whitefish/) · [Kalispell](/lodging/kalispell/) · [Polson](/lodging/polson/)
 
 ---
 

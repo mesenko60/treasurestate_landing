@@ -8,6 +8,8 @@
 
 Glendive is tucked between the badlands and the Yellowstone River, serving as a hub for the rich inland agricultural area of eastern Montana and western North Dakota. Makoshika State Park, known for its unusual rock formations and prehistoric fossils, borders the southern edge of Glendive, making the town a basecamp for exploring this impressive state park.
 
+You can also read our full [Glendive town guide](/montana-towns/glendive/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -59,7 +61,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Glendi
 
 Peak booking periods in Glendive, Montana, align with the outdoor recreation season, particularly from late May through September, when Makoshika State Park campsites are reservable. Travelers should book accommodations well in advance, especially during major holidays or local events, potentially 6-8 months ahead for flights and popular lodging. Parking in downtown Glendive is generally free on the streets. However, visitors with wheeled trailers should note that city code restricts parking on city streets to no more than five consecutive days between April 1 and October 31. Seasonal pricing is evident, with average hotel rates higher during peak season (around $119) compared to the low season (around $83).
 
-**Moving to Glendive?** If you are visiting to scout a potential relocation, read our full [Moving to Glendive Guide](/guides/moving-to-glendive-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Glendive to other cities](/compare/).
+**Moving to Glendive?** If you are visiting to scout a potential relocation, read our full [Moving to Glendive Guide](/guides/moving-to-glendive-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Glendive to other cities](/compare/).
+
+**Also nearby:** [Billings](/lodging/billings/) · [Miles City](/lodging/miles-city/)
 
 ---
 

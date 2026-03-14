@@ -8,6 +8,8 @@
 
 Three Forks, Montana, offers lodging primarily in its downtown area and along major routes like I-90 and US Highway 287. The town serves as an excellent basecamp for exploring Yellowstone National Park (90 minutes away), Missouri Headwaters State Park, Lewis & Clark Caverns State Park, and the surrounding Helena National Forest and Beaverhead-Deerlodge National Forest, making it ideal for outdoor enthusiasts and history aficionados.
 
+You can also read our full [Three Forks town guide](/montana-towns/three-forks/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -53,7 +55,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Three 
 
 Peak booking periods are likely during summer months (June-August) due to proximity to Yellowstone National Park and outdoor activities. Seasonal pricing patterns show higher rates in June ($567/night average) and lower rates in January ($86/night average). Parking is generally available at motels like Travelodge and Broken Spur, which offer free parking for various vehicle types. Always check specific property policies for parking and pet-friendliness.
 
-**Moving to Three Forks?** If you are visiting to scout a potential relocation, read our full [Moving to Three Forks Guide](/guides/moving-to-three-forks-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Three Forks to other cities](/compare/).
+**Moving to Three Forks?** If you are visiting to scout a potential relocation, read our full [Moving to Three Forks Guide](/guides/moving-to-three-forks-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Three Forks to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [Helena](/lodging/helena/) · [Butte](/lodging/butte/)
 
 ---
 

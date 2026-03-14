@@ -8,18 +8,20 @@
 
 Big Sky's lodging is primarily concentrated in three distinct areas: The Mountain Village, ideal for ski-first travelers with slopeside access to Big Sky Resort; the Meadow Village & Town Center, a walkable social hub with shops and restaurants, seven miles from the lifts; and the Canyon Area, offering a peaceful, natural escape along the Gallatin River, perfect for anglers and hikers. Big Sky serves as an excellent basecamp for skiing and snowboarding at Big Sky Resort, exploring Yellowstone National Park, and engaging in various outdoor activities like hiking, biking, and fishing.
 
+You can also read our full [Big Sky town guide](/montana-towns/big-sky/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| Montage Big Sky | Luxury Resort | Spanish Peaks mountain range, near Lewis & Clark Chairlift | Luxury travelers, families, couples | $$$$ |
-| The Summit Hotel at Big Sky Resort | Resort | Mountain Village, base of Lone Mountain | Skiers, snowboarders, families | $$$$ |
-| Huntley Lodge at Big Sky Resort | Hotel | Mountain Village, slopeside | Skiers, families, couples | $$$ |
-| Residence Inn by Marriott Big Sky/The Wilson Hotel | Chain Hotel | Heart of Big Sky, Meadow Village | Families, extended stays, business travelers | $$$ |
-| Lone Mountain Ranch | Guest Ranch / Boutique Hotel | Big Sky, 18 miles from Yellowstone | Outdoor adventurers, couples, families | $$$$ |
-| One&Only Moonlight Basin | Luxury Resort | Moonlight Basin, secluded setting | Luxury travelers, skiers, couples | $$$$ |
+| [Montage Big Sky](https://www.expedia.com/Big-Sky-Hotels-Montage-Big-Sky.h68142664.Hotel-Information?camref=1011l52GG6&adref=big-sky-montage-table) | Luxury Resort | Spanish Peaks mountain range, near Lewis & Clark Chairlift | Luxury travelers, families, couples | $$$$ |
+| [The Summit Hotel at Big Sky Resort](https://www.expedia.com/Big-Sky-Hotels-The-Summit-Hotel-At-Big-Sky-Resort.h870405.Hotel-Information?camref=1011l52GG6&adref=big-sky-summit-table) | Resort | Mountain Village, base of Lone Mountain | Skiers, snowboarders, families | $$$$ |
+| [Huntley Lodge at Big Sky Resort](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-huntley-table) | Hotel | Mountain Village, slopeside | Skiers, families, couples | $$$ |
+| [Residence Inn by Marriott Big Sky/The Wilson Hotel](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-residence-inn-table) | Chain Hotel | Heart of Big Sky, Meadow Village | Families, extended stays, business travelers | $$$ |
+| [Lone Mountain Ranch](https://www.expedia.com/Bozeman-Hotels-Lone-Mountain-Ranch.h13081110.Hotel-Information?camref=1011l52GG6&adref=big-sky-lone-mountain-ranch-table) | Guest Ranch / Boutique Hotel | Big Sky, 18 miles from Yellowstone | Outdoor adventurers, couples, families | $$$$ |
+| [One&Only Moonlight Basin](https://www.expedia.com/Big-Sky-Hotels-OneOnly-Moonlight-Basin.h111948049.Hotel-Information?camref=1011l52GG6&adref=big-sky-oneandonly-table) | Luxury Resort | Moonlight Basin, secluded setting | Luxury travelers, skiers, couples | $$$$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -27,17 +29,17 @@ Big Sky's lodging is primarily concentrated in three distinct areas: The Mountai
 
 ## Hotels & Motels
 
-**Montage Big Sky** is located in Spanish Peaks mountain range, near Lewis & Clark Chairlift and is best suited for Luxury travelers, families, couples. 139 rooms and 39 residences, 45 minutes from Yellowstone, ski-in/ski-out access, multiple dining options, spa. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-montage-big-sky).
+**Montage Big Sky** is located in Spanish Peaks mountain range, near Lewis & Clark Chairlift and is best suited for Luxury travelers, families, couples. 139 rooms and 39 residences, 45 minutes from Yellowstone, ski-in/ski-out access, multiple dining options, spa. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Big-Sky-Hotels-Montage-Big-Sky.h68142664.Hotel-Information?camref=1011l52GG6&adref=big-sky-montage).
 
-**The Summit Hotel at Big Sky Resort** is located in Mountain Village, base of Lone Mountain and is best suited for Skiers, snowboarders, families. Slopeside access, contemporary mountain lodge, two restaurants, free WiFi, free parking. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-the-summit-hotel-at-big-sky-re).
+**The Summit Hotel at Big Sky Resort** is located in Mountain Village, base of Lone Mountain and is best suited for Skiers, snowboarders, families. Slopeside access, contemporary mountain lodge, two restaurants, free WiFi, free parking. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Big-Sky-Hotels-The-Summit-Hotel-At-Big-Sky-Resort.h870405.Hotel-Information?camref=1011l52GG6&adref=big-sky-summit).
 
 **Huntley Lodge at Big Sky Resort** is located in Mountain Village, slopeside and is best suited for Skiers, families, couples. Slopeside access, outdoor pool & hot tubs, fitness center, breakfast included, free Wi-Fi. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-huntley-lodge-at-big-sky-resor).
 
 **Residence Inn by Marriott Big Sky/The Wilson Hotel** is located in Heart of Big Sky, Meadow Village and is best suited for Families, extended stays, business travelers. Luxury studios and suites, free breakfast, free WiFi, free parking, pool, fitness center, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-residence-inn-by-marriott-big-).
 
-**Lone Mountain Ranch** is located in Big Sky, 18 miles from Yellowstone and is best suited for Outdoor adventurers, couples, families. Private log cabins, all-inclusive packages, equestrian facilities, cross-country skiing, fine dining. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-lone-mountain-ranch).
+**Lone Mountain Ranch** is located in Big Sky, 18 miles from Yellowstone and is best suited for Outdoor adventurers, couples, families. Private log cabins, all-inclusive packages, equestrian facilities, cross-country skiing, fine dining. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Bozeman-Hotels-Lone-Mountain-Ranch.h13081110.Hotel-Information?camref=1011l52GG6&adref=big-sky-lone-mountain-ranch).
 
-**One&Only Moonlight Basin** is located in Moonlight Basin, secluded setting and is best suited for Luxury travelers, skiers, couples. Ski-in/ski-out access, private heated gondola, gourmet dining, luxurious accommodations, stunning views. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Big%20Sky%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=big-sky-one&only-moonlight-basin).
+**One&Only Moonlight Basin** is located in Moonlight Basin, secluded setting and is best suited for Luxury travelers, skiers, couples. Ski-in/ski-out access, private heated gondola, gourmet dining, luxurious accommodations, stunning views. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Big-Sky-Hotels-OneOnly-Moonlight-Basin.h111948049.Hotel-Information?camref=1011l52GG6&adref=big-sky-oneandonly).
 
 ---
 
@@ -59,7 +61,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Big Sk
 
 Peak booking periods in Big Sky, Montana, are primarily during the winter ski season (November to April) and the summer months (June to August) due to proximity to Yellowstone National Park and outdoor activities. Booking lift tickets, lessons, rentals, and lodging early, especially for winter, can secure the best prices. Most parking at Big Sky Resort is complimentary, with shuttles servicing further Mountain Village lots in winter. Seasonal pricing is evident, with promotions available during shoulder seasons (e.g., Spring Series Send Off) and specific periods like January offering discounts.
 
-**Moving to Big Sky?** If you are visiting to scout a potential relocation, read our full [Moving to Big Sky Guide](/guides/moving-to-big-sky-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Big Sky to other cities](/compare/).
+**Moving to Big Sky?** If you are visiting to scout a potential relocation, read our full [Moving to Big Sky Guide](/guides/moving-to-big-sky-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Big Sky to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [West Yellowstone](/lodging/west-yellowstone/) · [Livingston](/lodging/livingston/)
 
 ---
 

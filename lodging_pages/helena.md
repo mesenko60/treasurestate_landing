@@ -8,6 +8,8 @@
 
 Helena offers diverse lodging options throughout the city, with a notable concentration in the historic downtown area, particularly around Last Chance Gulch. The city serves as a convenient basecamp for exploring outdoor attractions like the Helena National Forest and Mount Helena City Park, which offer numerous trails and scenic views. Additionally, Helena is strategically located between Montana’s National Parks, making it a suitable hub for broader regional exploration.
 
+You can also read our full [Helena town guide](/montana-towns/helena/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -16,7 +18,7 @@ Helena offers diverse lodging options throughout the city, with a notable concen
 |---|---|---|---|---|
 | Residence Inn by Marriott Helena | Chain Hotel / Extended Stay | Helena, 2.9 miles from Helena College | Extended stays, business travelers, families | $$ |
 | Home2 Suites By Hilton Helena | Chain Hotel / Extended Stay | Helena, 2.3 miles from Helena College | Extended stays, families, pet-friendly travelers | $$ |
-| Best Western Premier Helena Great Northern Hotel | Chain Hotel | Helena | Leisure, business, travelers seeking amenities | $$ |
+| [Best Western Premier Helena Great Northern Hotel](https://www.expedia.com/Helena-Hotels-Best-Western-Premier-Helena-Great-Northern-Hotel.h970516.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-premier-table) | Chain Hotel | Helena | Leisure, business, travelers seeking amenities | $$ |
 | Holiday Inn Express and Suites Helena by IHG | Chain Hotel | Helena, 1.9 miles from Helena College | Families, business travelers, short stays | $$ |
 | Fairfield by Marriott Inn & Suites Helena North | Chain Hotel | Helena, 1.1 miles from Helena College | Families, business travelers, short stays | $$ |
 | Comfort Suites Helena Airport | Chain Hotel | Helena, 2.5 miles from Helena College | Families, business travelers, airport access | $$ |
@@ -33,7 +35,7 @@ Helena offers diverse lodging options throughout the city, with a notable concen
 
 **Home2 Suites By Hilton Helena** is located in Helena, 2.3 miles from Helena College and is best suited for Extended stays, families, pet-friendly travelers. Fitness center, non-smoking rooms, free WiFi, shared lounge Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-home2-suites-by-hilton-helena).
 
-**Best Western Premier Helena Great Northern Hotel** is located in Helena and is best suited for Leisure, business, travelers seeking amenities. Fitness center, shared lounge, restaurant, bar Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-best-western-premier-helena-gr).
+**Best Western Premier Helena Great Northern Hotel** is located in Helena and is best suited for Leisure, business, travelers seeking amenities. Fitness center, shared lounge, restaurant, bar Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Helena-Hotels-Best-Western-Premier-Helena-Great-Northern-Hotel.h970516.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-premier).
 
 **Holiday Inn Express and Suites Helena by IHG** is located in Helena, 1.9 miles from Helena College and is best suited for Families, business travelers, short stays. Fitness center, free private parking, shared lounge Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Helena%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=helena-holiday-inn-express-and-suites).
 
@@ -67,7 +69,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Helena
 
 For optimal availability, especially for campsites and popular lodging, book at least three months in advance, particularly for stays between May and September. When staying downtown, take advantage of free on-street parking after 5 PM on weekdays, and all day on weekends and federal holidays. Be aware of seasonal pricing fluctuations; vacation rentals tend to be more expensive on Sundays and cheaper on Tuesdays.
 
-**Moving to Helena?** If you are visiting to scout a potential relocation, read our full [Moving to Helena Guide](/guides/moving-to-helena-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Helena to other cities](/compare/).
+**Moving to Helena?** If you are visiting to scout a potential relocation, read our full [Moving to Helena Guide](/guides/moving-to-helena-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Helena to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [Butte](/lodging/butte/) · [Great Falls](/lodging/great-falls/)
 
 ---
 

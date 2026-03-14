@@ -8,6 +8,8 @@
 
 Hardin, Montana, serves as a convenient basecamp for visitors exploring the historic Little Bighorn Battlefield National Monument, which is a primary draw to the area. Other nearby attractions include the Yellowtail Reservoir and the scenic Bighorn Canyon National Recreation Area. Lodging options are primarily found along major routes such as I-90 and Highway 47, as well as within the town center, offering accessibility to these key sites.
 
+You can also read our full [Hardin town guide](/montana-towns/hardin/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -55,7 +57,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Hardin
 
 Peak booking periods in Hardin are likely to coincide with major local events, such as the annual Little Big Horn Days (June 25th-28th, 2026). Visitors should anticipate higher demand and potentially increased prices during this time. General seasonal pricing patterns would likely see higher rates in the summer months due to tourism for historical sites and outdoor activities. Parking is generally available at most motels and campgrounds.
 
-**Moving to Hardin?** If you are visiting to scout a potential relocation, read our full [Moving to Hardin Guide](/guides/moving-to-hardin-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Hardin to other cities](/compare/).
+**Moving to Hardin?** If you are visiting to scout a potential relocation, read our full [Moving to Hardin Guide](/guides/moving-to-hardin-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Hardin to other cities](/compare/).
+
+**Also nearby:** [Billings](/lodging/billings/) · [Red Lodge](/lodging/red-lodge/)
 
 ---
 

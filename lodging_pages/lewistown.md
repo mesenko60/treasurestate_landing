@@ -8,6 +8,8 @@
 
 Lewistown is centrally located in Montana, nestled among five mountain ranges, including the Snowies and Judiths. It serves as a basecamp for diverse outdoor activities such as fishing, hunting, hiking, and biking, with easy access to public lands, rivers, lakes, and streams.
 
+You can also read our full [Lewistown town guide](/montana-towns/lewistown/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -58,7 +60,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Lewist
 
 Peak booking periods for Lewistown include June to July and September for vacation rentals, and September to November for hotels. Parking in downtown Lewistown may have restrictions, with some areas prohibiting parking from 2:00 AM to 6:00 AM daily. Seasonal pricing patterns indicate that January to March are generally the cheapest months for hotel stays.
 
-**Moving to Lewistown?** If you are visiting to scout a potential relocation, read our full [Moving to Lewistown Guide](/guides/moving-to-lewistown-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Lewistown to other cities](/compare/).
+**Moving to Lewistown?** If you are visiting to scout a potential relocation, read our full [Moving to Lewistown Guide](/guides/moving-to-lewistown-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Lewistown to other cities](/compare/).
+
+**Also nearby:** [Great Falls](/lodging/great-falls/) · [Billings](/lodging/billings/)
 
 ---
 

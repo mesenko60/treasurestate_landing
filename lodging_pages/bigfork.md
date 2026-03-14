@@ -8,6 +8,8 @@
 
 Bigfork's main lodging areas are concentrated in the village center, especially along Electric Avenue and Grand Drive. This central location provides easy access to shops, art galleries, restaurants, Flathead Lake, and the Swan River. Bigfork serves as an excellent basecamp for outdoor adventures, offering breathtaking scenery and proximity to Flathead Lake for various water activities and winter sports.
 
+You can also read our full [Bigfork town guide](/montana-towns/bigfork/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -56,7 +58,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Bigfor
 
 Peak booking periods in Bigfork are typically from June to August, with July being the busiest month. It is highly recommended to book accommodations 6-9 months in advance for these summer months due to high demand. Parking in downtown Bigfork can be challenging during the summer, with bike racks installed to encourage alternative transportation. Street parking is available at Flathead Lake pulloffs. Seasonal pricing varies, with lower rates and potential discounts available during the off-peak season from September through May.
 
-**Moving to Bigfork?** If you are visiting to scout a potential relocation, read our full [Moving to Bigfork Guide](/guides/moving-to-bigfork-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Bigfork to other cities](/compare/).
+**Moving to Bigfork?** If you are visiting to scout a potential relocation, read our full [Moving to Bigfork Guide](/guides/moving-to-bigfork-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Bigfork to other cities](/compare/).
+
+**Also nearby:** [Whitefish](/lodging/whitefish/) · [Kalispell](/lodging/kalispell/) · [Polson](/lodging/polson/)
 
 ---
 

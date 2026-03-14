@@ -8,6 +8,8 @@
 
 Miles City's lodging is primarily concentrated along the Interstate 94 corridor, particularly near Exit 138, offering convenient access to travelers. The town serves as a basecamp for exploring Eastern Montana's rich history, including the Range Riders Museum and the annual Bucking Horse Sale. Visitors also use it as a starting point for outdoor activities such as hunting, fishing in the Yellowstone River, and golfing.
 
+You can also read our full [Miles City town guide](/montana-towns/miles-city/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -63,7 +65,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Miles 
 
 Peak booking periods in Miles City include November (highest demand) and the annual Miles City Bucking Horse Sale in May. Hunting seasons from August to November also contribute to increased demand. February typically sees the lowest demand. Many hotels offer free parking, and Miles City has reduced parking minimums. Seasonal pricing patterns mean prices can vary significantly throughout the year, so booking in advance, especially for peak times, is advisable.
 
-**Moving to Miles City?** If you are visiting to scout a potential relocation, read our full [Moving to Miles City Guide](/guides/moving-to-miles-city-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Miles City to other cities](/compare/).
+**Moving to Miles City?** If you are visiting to scout a potential relocation, read our full [Moving to Miles City Guide](/guides/moving-to-miles-city-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Miles City to other cities](/compare/).
+
+**Also nearby:** [Billings](/lodging/billings/) · [Glendive](/lodging/glendive/)
 
 ---
 

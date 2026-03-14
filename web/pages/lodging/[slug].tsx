@@ -14,7 +14,7 @@ type Props = {
   excerpt: string;
 };
 
-export default function LodgingTownPage({ slug, townName, title, contentHtml, excerpt }: Props) {
+export default function LodgingTownPage({ slug, townName, title, contentHtml, excerpt: _excerpt }: Props) {
   const url = `https://treasurestate.com/lodging/${slug}/`;
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -24,8 +24,7 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
 
   const metaTitle = `Where to Stay in ${townName}, Montana — Hotels, Cabins & B&Bs`;
   const metaDescription =
-    excerpt ||
-    `Find the best hotels, B&Bs, cabins, and vacation rentals in ${townName}, Montana. Includes price ranges, traveler tips, and direct links to Expedia and VRBO.`;
+    `Find the best hotels, B&Bs, cabins, and vacation rentals in ${townName}, Montana. Compare properties, read booking tips, and check current rates on Expedia and VRBO.`;
 
   const schema = {
     '@context': 'https://schema.org',

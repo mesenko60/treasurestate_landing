@@ -8,6 +8,8 @@
 
 Butte offers lodging primarily in its historic city center, particularly Uptown Butte, and along the I-15 and I-90 corridors for easy access. The town serves as a basecamp for outdoor recreation, exploring rugged mountains, and soaking in local history, with nearby attractions including Lewis and Clark Caverns State Park, and within a few hours drive of Yellowstone and Glacier National Parks.
 
+You can also read our full [Butte town guide](/montana-towns/butte/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -44,7 +46,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Butte,
 
 Peak booking periods for Butte, Montana are typically during the summer months (May, June, July) due to more enjoyable weather for outdoor attractions. Winter and Spring are generally less popular, with December being the cheapest month for hotels. Booking early, especially during peak times, can help secure better rates and a wider selection. Many hotels offer free parking, and on-street parking is available in the city.
 
-**Moving to Butte?** If you are visiting to scout a potential relocation, read our full [Moving to Butte Guide](/guides/moving-to-butte-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Butte to other cities](/compare/).
+**Moving to Butte?** If you are visiting to scout a potential relocation, read our full [Moving to Butte Guide](/guides/moving-to-butte-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Butte to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [Helena](/lodging/helena/) · [Anaconda](/lodging/anaconda-montana/)
 
 ---
 

@@ -8,6 +8,8 @@
 
 Havre's lodging is primarily concentrated along Highway 2 and in the downtown area. The town serves as a basecamp for exploring Northern Montana's open plains, including attractions like Buffalo Jump, Havre Beneath the Streets, Fort Assinniboine, Beaver Creek Park, Fresno Reservoir for fishing and boating, and Bear Paw Battlefield. It's also a convenient stop for travelers using Amtrak or heading towards the Canadian border.
 
+You can also read our full [Havre town guide](/montana-towns/havre/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -59,7 +61,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Havre,
 
 For Havre, Montana, peak booking periods generally occur from May to July, with July being the most popular and expensive month. Another period of higher prices can be observed between September and November. Conversely, January tends to be the cheapest month for lodging. Many hotels in Havre offer free parking, including options for oversized vehicles, so it's advisable to check with individual properties. Prices can also fluctuate during the week, with Tuesdays potentially seeing higher rates.
 
-**Moving to Havre?** If you are visiting to scout a potential relocation, read our full [Moving to Havre Guide](/guides/moving-to-havre-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Havre to other cities](/compare/).
+**Moving to Havre?** If you are visiting to scout a potential relocation, read our full [Moving to Havre Guide](/guides/moving-to-havre-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Havre to other cities](/compare/).
+
+**Also nearby:** [Great Falls](/lodging/great-falls/) · [Helena](/lodging/helena/)
 
 ---
 

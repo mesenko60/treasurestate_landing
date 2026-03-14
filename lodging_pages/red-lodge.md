@@ -8,13 +8,15 @@
 
 Red Lodge is a quaint, historic mountain town nestled against the Beartooth Mountains, Montana’s highest mountain peaks. It serves as a gateway to Yellowstone National Park via the scenic Beartooth Highway and is considered a base camp for exploring the Beartooths for world-class outdoor recreation.
 
+You can also read our full [Red Lodge town guide](/montana-towns/red-lodge/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| The Pollard Hotel | Boutique hotel | Red Lodge (Downtown) | Couples, Business | $$ |
+| [The Pollard Hotel](https://www.expedia.com/Red-Lodge-Hotels-The-Pollard-Hotel.h28629.Hotel-Information?camref=1011l52GG6&adref=red-lodge-pollard-table) | Boutique hotel | Red Lodge (Downtown) | Couples, Business | $$ |
 | Beartooth Hideaway Inn & Cabins | Inn/Cabins | Red Lodge | Families, Outdoor Adventurers | $$ |
 | Yodeler Motel | Motel | Red Lodge | Budget, Travelers Passing Through | $$ |
 | Alpine Lodge | Lodge | Red Lodge | Outdoor Adventurers, Families | $$ |
@@ -28,7 +30,7 @@ Red Lodge is a quaint, historic mountain town nestled against the Beartooth Moun
 
 ## Hotels & Motels
 
-**The Pollard Hotel** is located in Red Lodge (Downtown) and is best suited for Couples, Business. Free WiFi. American cuisine restaurant. Free private parking. 9.4/10 rating Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Red%20Lodge%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=red-lodge-the-pollard-hotel).
+**The Pollard Hotel** is located in Red Lodge (Downtown) and is best suited for Couples, Business. Free WiFi. American cuisine restaurant. Free private parking. 9.4/10 rating Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Red-Lodge-Hotels-The-Pollard-Hotel.h28629.Hotel-Information?camref=1011l52GG6&adref=red-lodge-pollard).
 
 **Beartooth Hideaway Inn & Cabins** is located in Red Lodge and is best suited for Families, Outdoor Adventurers. Indoor pool. Free WiFi. TV, desk, and air conditioning in rooms. 8.3/10 rating Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Red%20Lodge%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=red-lodge-beartooth-hideaway-inn-&-cabin).
 
@@ -62,7 +64,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Red Lo
 
 Red Lodge experiences peak booking periods during the ski season (Thanksgiving to mid-April) and the warm season (mid-June to early September), especially in August. It is advisable to book accommodations well in advance for these times, as prices and availability can fluctuate seasonally. While parking at Red Lodge Mountain is free, visitors should be aware of potential parking regulations and fees within the city of Red Lodge itself.
 
-**Moving to Red Lodge?** If you are visiting to scout a potential relocation, read our full [Moving to Red Lodge Guide](/guides/moving-to-red-lodge-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Red Lodge to other cities](/compare/).
+**Moving to Red Lodge?** If you are visiting to scout a potential relocation, read our full [Moving to Red Lodge Guide](/guides/moving-to-red-lodge-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Red Lodge to other cities](/compare/).
+
+**Also nearby:** [Billings](/lodging/billings/) · [Livingston](/lodging/livingston/)
 
 ---
 

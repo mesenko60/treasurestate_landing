@@ -8,6 +8,8 @@
 
 Anaconda, Montana, nestled in a mile-high valley within the Deer Lodge National Forest, serves as a basecamp for outdoor enthusiasts exploring the Pintler Mountains, Georgetown Lake, and Discovery Ski Area. Lodging options are concentrated around the town center and extend towards these recreational areas.
 
+You can also read our full [Anaconda town guide](/montana-towns/anaconda/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -59,7 +61,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Anacon
 
 Peak season for Anaconda is generally from June to August, with July being the busiest month, leading to higher hotel prices. Parking is generally free in Anaconda, and some motels offer enclosed parking or winter plug-ins. Seasonal pricing patterns show higher rates during the summer months and potentially during ski season due to proximity to Discovery Ski Area.
 
-**Moving to Anaconda?** If you are visiting to scout a potential relocation, read our full [Moving to Anaconda Guide](/guides/moving-to-anaconda-montana-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Anaconda to other cities](/compare/).
+**Moving to Anaconda?** If you are visiting to scout a potential relocation, read our full [Moving to Anaconda Guide](/guides/moving-to-anaconda-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Anaconda to other cities](/compare/).
+
+**Also nearby:** [Butte](/lodging/butte/) · [Deer Lodge](/lodging/deer-lodge/) · [Helena](/lodging/helena/)
 
 ---
 

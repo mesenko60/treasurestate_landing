@@ -8,6 +8,8 @@
 
 Hamilton, Montana, is situated in the Bitterroot Valley, with lodging options often found along Highway 93 and near the Bitterroot River. The town serves as a central basecamp for exploring the Bitterroot Valley, the Bitterroot Mountains, and engaging in various outdoor recreational activities.
 
+You can also read our full [Hamilton town guide](/montana-towns/hamilton/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -63,7 +65,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Hamilt
 
 Peak Booking Periods: The summer months, especially July and August, are generally peak season due to proximity to national parks and outdoor activities. It is advisable to book 6-9 months in advance for visits during these months. Memorial Day to Labor Day is also considered peak season for areas like Lake Como Campground. Parking: Many lodging options in Hamilton, such as Super 8 by Wyndham Hamilton and Quality Inn Hamilton Bitterroot Valley, offer free parking. Downtown Hamilton also has ticket-free parking options, including the Hamilton Post Office parking lot, which is convenient for extended stays near Main Street. Seasonal Pricing Patterns: Hotel rates in Montana, including Hamilton, tend to be higher during the peak summer season (July/August). Booking during the shoulder seasons (spring and fall) or winter might offer better value. For example, some lodges offer specific spring ski season rates. General Advice: For popular tours and restaurants, especially during peak periods, it's recommended to book several months in advance to secure reservations.
 
-**Moving to Hamilton?** If you are visiting to scout a potential relocation, read our full [Moving to Hamilton Guide](/guides/moving-to-hamilton-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Hamilton to other cities](/compare/).
+**Moving to Hamilton?** If you are visiting to scout a potential relocation, read our full [Moving to Hamilton Guide](/guides/moving-to-hamilton-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Hamilton to other cities](/compare/).
+
+**Also nearby:** [Missoula](/lodging/missoula/) · [Kalispell](/lodging/kalispell/)
 
 ---
 

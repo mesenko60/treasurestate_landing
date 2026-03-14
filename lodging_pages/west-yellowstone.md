@@ -8,13 +8,18 @@
 
 West Yellowstone's lodging is primarily concentrated around the town center and near the west entrance of Yellowstone National Park, providing convenient access to park activities, shops, and restaurants. The town serves as a crucial basecamp for visitors exploring Yellowstone National Park, offering access to various outdoor activities such as fly fishing, river rafting, mountain biking, and hiking in the summer, and snowmobiling, cross-country skiing, and dog sledding in the winter.
 
+You can also read our full [West Yellowstone town guide](/montana-towns/west-yellowstone/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| (See text below for lodging options) | | | | |
+| [Gray Wolf Inn & Suites](https://www.expedia.com/West-Yellowstone-Hotels-Gray-Wolf-Inn-Suites.h62797.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-gray-wolf-inn-table) | Hotel | Near West Entrance | Families, Park visitors | $$$ |
+| [Holiday Inn West Yellowstone](https://www.expedia.com/Hotel-Search?destination=West%20Yellowstone%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=west-yellowstone-holiday-inn-table) | Chain Hotel | Downtown, near West Entrance | Families, Business | $$$ |
+| [Yellowstone Park Hotel](https://www.expedia.com/West-Yellowstone-Hotels-Yellowstone-Park-Hotel.h1731576.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-yellowstone-park-hotel-table) | Hotel | Near West Entrance | Families, Park visitors | $$ |
+| West Yellowstone Bed and Breakfast | B&B | Gallatin National Forest | Couples, Quiet retreat | $$$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -22,7 +27,11 @@ West Yellowstone's lodging is primarily concentrated around the town center and 
 
 ## Hotels & Motels
 
+**Gray Wolf Inn & Suites** is located two blocks from Yellowstone's West Entrance and is best suited for Families, Park visitors. Indoor pool, hot tub, free breakfast, free bike rentals, family suites with kitchens. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/West-Yellowstone-Hotels-Gray-Wolf-Inn-Suites.h62797.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-gray-wolf-inn).
 
+**Holiday Inn West Yellowstone** is located downtown near the West Entrance and is best suited for Families, Business travelers. Indoor pool, hot tub, The Branch Restaurant & Bar, game room, free airport shuttle, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=West%20Yellowstone%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=west-yellowstone-holiday-inn).
+
+**Yellowstone Park Hotel** is located near the West Entrance and is best suited for Families, Park visitors. Indoor pool, hot tub, firepit, free bike rentals, arcade, gym. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/West-Yellowstone-Hotels-Yellowstone-Park-Hotel.h1731576.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-yellowstone-park-hotel).
 
 ---
 
@@ -44,7 +53,9 @@ For the full selection of vacation rentals, cabins, and unique stays near West Y
 
 Peak booking periods for West Yellowstone are typically during the summer months (June-August) and winter for snowmobiling and skiing. It is highly recommended to book lodging at least 6-12 months in advance, especially for summer visits, as accommodations fill up quickly. Parking is generally available along downtown streets and at the West Yellowstone Visitor Center. Seasonal pricing patterns show higher rates during peak seasons (summer and winter) and lower rates during shoulder seasons (spring and fall).
 
-**Moving to West Yellowstone?** If you are visiting to scout a potential relocation, read our full [Moving to West Yellowstone Guide](/guides/moving-to-west-yellowstone-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare West Yellowstone to other cities](/compare/).
+**Moving to West Yellowstone?** If you are visiting to scout a potential relocation, read our full [Moving to West Yellowstone Guide](/guides/moving-to-west-yellowstone-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare West Yellowstone to other cities](/compare/).
+
+**Also nearby:** [Bozeman](/lodging/bozeman/) · [Big Sky](/lodging/big-sky/) · [Livingston](/lodging/livingston/)
 
 ---
 

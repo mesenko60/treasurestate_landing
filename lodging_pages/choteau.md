@@ -8,6 +8,8 @@
 
 Choteau, Montana, serves as a primary gateway to the stunning Rocky Mountain Front, making it an ideal basecamp for exploring the Bob Marshall Wilderness Complex and the eastern entrances of Glacier National Park. Lodging options are primarily concentrated within the town itself, offering convenient access to local amenities and serving as a launchpad for outdoor adventures in the surrounding wilderness areas and nearby Teton Pass Ski Area.
 
+You can also read our full [Choteau town guide](/montana-towns/choteau/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -50,7 +52,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Chotea
 
 Peak booking periods for Choteau are during the summer (July-August) for general tourism and access to Glacier National Park, and in the fall (mid-September to end of November) for hunting season. It is highly recommended to book accommodations early during these times. Parking is generally available, with various lots in town and most lodging properties offering on-site parking. Seasonal pricing is common, with higher rates expected during peak seasons. Travelers looking for more budget-friendly options might consider visiting during the off-season, such as October-December (excluding holidays), when lower rates and bundled deals may be available.
 
-**Moving to Choteau?** If you are visiting to scout a potential relocation, read our full [Moving to Choteau Guide](/guides/moving-to-choteau-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Choteau to other cities](/compare/).
+**Moving to Choteau?** If you are visiting to scout a potential relocation, read our full [Moving to Choteau Guide](/guides/moving-to-choteau-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Choteau to other cities](/compare/).
+
+**Also nearby:** [Great Falls](/lodging/great-falls/) · [Helena](/lodging/helena/)
 
 ---
 

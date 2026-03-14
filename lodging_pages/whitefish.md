@@ -8,13 +8,20 @@
 
 Whitefish, Montana, offers a diverse range of lodging options, including lodges, inns, hotels, guest ranches, condos, and vacation homes. Visitors typically stay in the downtown area for convenient access to amenities or near Whitefish Lake for scenic views and water activities. Whitefish serves as a primary basecamp for exploring Glacier National Park, enjoying winter sports at Whitefish Mountain Resort, and accessing various wilderness areas in Northwest Montana.
 
+You can also read our full [Whitefish town guide](/montana-towns/whitefish/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| (See text below for lodging options) | | | | |
+| [Lodge at Whitefish Lake](https://www.expedia.com/Whitefish-Hotels-Lodge-At-Whitefish-Lake.h1492496.Hotel-Information?camref=1011l52GG6&adref=whitefish-lodge-at-whitefish-lake-table) | Resort | Whitefish Lake | Luxury, Families, Couples | $$$$ |
+| [Grouse Mountain Lodge](https://www.expedia.com/Whitefish-Hotels-Grouse-Mountain-Lodge.h15527.Hotel-Information?camref=1011l52GG6&adref=whitefish-grouse-mountain-lodge-table) | Lodge | Near Whitefish Lake Golf Club | Golf, Families, Outdoor | $$$ |
+| [Hampton Inn & Suites Whitefish](https://www.expedia.com/Whitefish-Hotels-Hampton-Inn-Suites-Whitefish.h15178119.Hotel-Information?camref=1011l52GG6&adref=whitefish-hampton-inn-suites-table) | Chain Hotel | US Hwy 93 South | Families, Budget-conscious | $$ |
+| Good Medicine Lodge | B&B | Whitefish | Couples, Gourmet breakfast | $$$ |
+| Garden Wall Inn | B&B | Near Glacier National Park | Couples, Luxury | $$$ |
+| Haymoon Resort | B&B | Whitefish | Couples, Mountain views | $$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -22,7 +29,11 @@ Whitefish, Montana, offers a diverse range of lodging options, including lodges,
 
 ## Hotels & Motels
 
+**Lodge at Whitefish Lake** is located on the shore of Whitefish Lake and is best suited for Luxury, Families, Couples. Lakefront suites, full-service spa, Boat Club Restaurant, marina, indoor/outdoor pools. Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Whitefish-Hotels-Lodge-At-Whitefish-Lake.h1492496.Hotel-Information?camref=1011l52GG6&adref=whitefish-lodge-at-whitefish-lake).
 
+**Grouse Mountain Lodge** is located near Whitefish Lake Golf Club and is best suited for Golf, Families, Outdoor adventurers. Mountain views, indoor pool, Logan's Bar and Grill, ski shuttle, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Whitefish-Hotels-Grouse-Mountain-Lodge.h15527.Hotel-Information?camref=1011l52GG6&adref=whitefish-grouse-mountain-lodge).
+
+**Hampton Inn & Suites Whitefish** is located on US Hwy 93 South and is best suited for Families, Budget-conscious travelers. Free breakfast, indoor pool, hot tub, free airport shuttle, ski pass sales. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Whitefish-Hotels-Hampton-Inn-Suites-Whitefish.h15178119.Hotel-Information?camref=1011l52GG6&adref=whitefish-hampton-inn-suites).
 
 ---
 
@@ -48,7 +59,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Whitef
 
 Peak booking periods in Whitefish include the summer months (especially for Glacier National Park access) and the winter ski season (around holidays and for night skiing). Lodging reservations, particularly for popular times, can be made up to a year in advance. Parking in downtown Whitefish is free with 2-hour on-street parking and three 3-hour parking lots, but paid parking is available at Whitefish Mountain Resort. Seasonal pricing patterns show that May and September-October offer maximum value, while November-early December and April have the lowest absolute prices. Some properties require minimum stays of two or more nights during summer and five nights during winter.
 
-**Moving to Whitefish?** If you are visiting to scout a potential relocation, read our full [Moving to Whitefish Guide](/guides/moving-to-whitefish-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Whitefish to other cities](/compare/).
+**Moving to Whitefish?** If you are visiting to scout a potential relocation, read our full [Moving to Whitefish Guide](/guides/moving-to-whitefish-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Whitefish to other cities](/compare/).
+
+**Also nearby:** [Kalispell](/lodging/kalispell/) · [Columbia Falls](/lodging/columbia-falls/) · [Bigfork](/lodging/bigfork/)
 
 ---
 

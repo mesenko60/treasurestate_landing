@@ -8,6 +8,8 @@
 
 Libby, Montana, is nestled in the Kootenai River Valley, surrounded by the Kootenai National Forest and the Cabinet Mountains. It serves as a basecamp for exploring the Cabinet Mountains Wilderness Area, the 90-mile long Lake Koocanusa, the Northwest Peaks Scenic Area, and the Ten Lakes Scenic Area. Visitors often stay in the downtown area or near the Kootenai River for easy access to outdoor activities.
 
+You can also read our full [Libby town guide](/montana-towns/libby/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -50,7 +52,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Libby,
 
 For optimal availability and pricing, book accommodations in Libby well in advance, especially for stays during August, when guests typically book 82 days ahead. Be aware of seasonal parking restrictions in Libby; parking is prohibited on north/south streets from 4:00 AM to 8:00 AM and on east/west streets during other specified hours between November 1 and March 30. Seasonal pricing varies significantly, with February offering the cheapest rates (around $96/night) and June being the most expensive (around $192/night).
 
-**Moving to Libby?** If you are visiting to scout a potential relocation, read our full [Moving to Libby Guide](/guides/moving-to-libby-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Libby to other cities](/compare/).
+**Moving to Libby?** If you are visiting to scout a potential relocation, read our full [Moving to Libby Guide](/guides/moving-to-libby-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Libby to other cities](/compare/).
+
+**Also nearby:** [Kalispell](/lodging/kalispell/) · [Whitefish](/lodging/whitefish/)
 
 ---
 

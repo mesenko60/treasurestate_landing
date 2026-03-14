@@ -8,6 +8,8 @@
 
 The Deer Lodge Area, settled by ranchers, offers an outdoor paradise for recreators, extending north to Ovando and Lincoln. Visitors use it as a basecamp for fishing the Little Blackfoot, cross-country skiing on MacDonald Pass, and scenic drives along Highway 141.
 
+You can also read our full [Deer Lodge town guide](/montana-towns/deer-lodge/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -64,7 +66,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Deer L
 
 Peak booking periods for Deer Lodge are typically during the summer and fall seasons, especially for cabins and national forest experiences. March, April, and May are also considered peak season for a fun-filled trip. For parking, many lodging options like Old Montana Inn and Western Big Sky Inn offer free parking, including semi-truck parking. Overnight parking at Montana rest areas is allowed for a maximum of 12 hours. Seasonal pricing patterns indicate that hotel prices in Deer Lodge are cheapest in February, and can vary significantly based on the time of year.
 
-**Moving to Deer Lodge?** If you are visiting to scout a potential relocation, read our full [Moving to Deer Lodge Guide](/guides/moving-to-deer-lodge-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Deer Lodge to other cities](/compare/).
+**Moving to Deer Lodge?** If you are visiting to scout a potential relocation, read our full [Moving to Deer Lodge Guide](/guides/moving-to-deer-lodge-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Deer Lodge to other cities](/compare/).
+
+**Also nearby:** [Butte](/lodging/butte/) · [Anaconda](/lodging/anaconda-montana/) · [Helena](/lodging/helena/)
 
 ---
 

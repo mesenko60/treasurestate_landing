@@ -8,6 +8,8 @@
 
 Visitors to Great Falls can find lodging concentrated in several key areas: downtown, offering proximity to historic sites and entertainment; near the Great Falls International Airport, providing convenience for travelers; and along the Missouri River, with easy access to the scenic River’s Edge Trail. Great Falls serves as a basecamp for outdoor adventures, including the Bob Marshall Wilderness Complex, Freezeout Lake, and Glacier National Park.
 
+You can also read our full [Great Falls town guide](/montana-towns/great-falls/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -16,7 +18,7 @@ Visitors to Great Falls can find lodging concentrated in several key areas: down
 |---|---|---|---|---|
 | Best Western Plus Riverfront | chain hotel | On the Missouri River, immediate access to the River’s Edge Trail, quick access to downtown Great Falls. | outdoor adventurers, families, couples | $100–175 |
 | Aisling Suites | motel | Downtown Great Falls, across from historic Brother Van House, near downtown shopping and dining district. | couples | $100–175 |
-| Hotel Arvon | boutique hotel | Downtown Great Falls, 116 1st Ave S. | business, couples | $175–300 |
+| [Hotel Arvon](https://www.expedia.com/Great-Falls-Hotels-Hotel-Arvon.h12236389.Hotel-Information?camref=1011l52GG6&adref=great-falls-hotel-arvon-table) | boutique hotel | Downtown Great Falls, 116 1st Ave S. | business, couples | $175–300 |
 | Best Resting Motel | motel | East end of Great Falls, minutes from Malmstrom Air Force Base, Lewis and Clark Interpretive Center, and Giant Springs State Park. | outdoor adventurers | $100–175 |
 | Hampton Inn | chain hotel | Great Falls, near Great Falls International Airport. | business | $100–175 |
 | Heritage Inn | chain hotel | Great Falls, near shopping, dining, and the River’s Edge Trail. | outdoor adventurers, families | $175–300 |
@@ -37,7 +39,7 @@ Visitors to Great Falls can find lodging concentrated in several key areas: down
 
 **Aisling Suites** is located in Downtown Great Falls, across from historic Brother Van House, near downtown shopping and dining district. and is best suited for couples. Pet friendly. Nightly rates typically fall in the $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Great%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=great-falls-aisling-suites).
 
-**Hotel Arvon** is located in Downtown Great Falls, 116 1st Ave S. and is best suited for business, couples. 33 room hotel, contemporary Art Gallery, in-house Irish Pub, secure & covered parking, complimentary airport shuttle, on-site fitness center, guest laundry, air-conditioned, Wi-Fi, pet friendly. Nightly rates typically fall in the $175–300 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Great%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=great-falls-hotel-arvon).
+**Hotel Arvon** is located in Downtown Great Falls, 116 1st Ave S. and is best suited for business, couples. 33 room hotel, contemporary Art Gallery, in-house Irish Pub, secure & covered parking, complimentary airport shuttle, on-site fitness center, guest laundry, air-conditioned, Wi-Fi, pet friendly. Nightly rates typically fall in the $175–300 range. Check current rates on [Expedia](https://www.expedia.com/Great-Falls-Hotels-Hotel-Arvon.h12236389.Hotel-Information?camref=1011l52GG6&adref=great-falls-hotel-arvon).
 
 **Best Resting Motel** is located in East end of Great Falls, minutes from Malmstrom Air Force Base, Lewis and Clark Interpretive Center, and Giant Springs State Park. and is best suited for outdoor adventurers. Two rooms, full kitchens, outdoor balcony, free wireless internet, expanded cable, free local and long distance calls, onsite laundry, free coffee bar, pet friendly. Nightly rates typically fall in the $100–175 range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Great%20Falls%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=great-falls-best-resting-motel).
 
@@ -81,7 +83,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Great 
 
 Peak booking periods in Great Falls are generally during the summer months (June-August), with July and August being the busiest due to warm temperatures and open attractions. Expect higher prices and crowds during this time, and it is strongly recommended to book 3-6 months in advance. Winter (December-March) is popular for snow sports. For more affordable options, consider visiting during the off-peak season, typically November to January, where hotel rates can be lower. In downtown Great Falls, metered parking is available, with hourly rates of $1.50 along Central Avenue and escalating fines for violations.
 
-**Moving to Great Falls?** If you are visiting to scout a potential relocation, read our full [Moving to Great Falls Guide](/guides/moving-to-great-falls-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Great Falls to other cities](/compare/).
+**Moving to Great Falls?** If you are visiting to scout a potential relocation, read our full [Moving to Great Falls Guide](/guides/moving-to-great-falls-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Great Falls to other cities](/compare/).
+
+**Also nearby:** [Helena](/lodging/helena/) · [Havre](/lodging/havre/) · [Choteau](/lodging/choteau/)
 
 ---
 

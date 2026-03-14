@@ -8,6 +8,8 @@
 
 Polson is situated on the southern end of Flathead Lake within the Flathead Indian Reservation, offering picturesque lakeside lodging options. It serves as a popular basecamp for exploring Flathead Lake, the Mission Mountains, and is approximately an hour's drive from Glacier National Park, making it ideal for outdoor enthusiasts.
 
+You can also read our full [Polson town guide](/montana-towns/polson/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
@@ -54,7 +56,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Polson
 
 Peak booking periods for Polson, Montana, are typically during the summer months, especially July, with guests booking vacation rentals up to 119 days in advance. Minimum stays for cabin and lodging rentals are often 2 nights in peak season and 3 nights over major holidays like Fourth of July, Memorial Day, and Labor Day. Seasonal pricing patterns show higher rates during the high season (summer) and lower rates during the low season (November-April). Parking notes indicate that all vehicles must park in the direction of travel according to Montana ordinances.
 
-**Moving to Polson?** If you are visiting to scout a potential relocation, read our full [Moving to Polson Guide](/guides/moving-to-polson-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Polson to other cities](/compare/).
+**Moving to Polson?** If you are visiting to scout a potential relocation, read our full [Moving to Polson Guide](/guides/moving-to-polson-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Polson to other cities](/compare/).
+
+**Also nearby:** [Kalispell](/lodging/kalispell/) · [Bigfork](/lodging/bigfork/) · [Missoula](/lodging/missoula/)
 
 ---
 

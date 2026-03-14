@@ -8,13 +8,15 @@
 
 Kalispell is located in the Flathead Valley, serving as a central basecamp for numerous outdoor activities. These include Glacier National Park, the Jewel Basin wilderness hiking area, Whitefish Mountain Resort, Blacktail Mountain Ski Area, and various rivers and lakes such as Whitefish Lake and Flathead Lake. Lodging options range from flagship hotels and historic lodges to budget-friendly motels and RV parks, with secluded cabin rentals, lakefront lodging, and downtown homes also available.
 
+You can also read our full [Kalispell town guide](/montana-towns/kalispell/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| Kalispell Grand Hotel | Historic Hotel | Downtown Kalispell | Couples, history enthusiasts, pet owners | $$ |
+| [Kalispell Grand Hotel](https://www.expedia.com/Kalispell-Hotels-Kalispell-Grand-Hotel.h7749911.Hotel-Information?camref=1011l52GG6&adref=kalispell-grand-hotel-table) | Historic Hotel | Downtown Kalispell | Couples, history enthusiasts, pet owners | $$ |
 | Hilton Garden Inn Kalispell | Chain Hotel | Near Glacier Park International Airport | Business travelers, early/late flights, vacationers | $$ |
 | Red Lion Hotel Kalispell | Chain Hotel | Close to downtown Kalispell | Travelers seeking comfort and convenience | $$ |
 | SpringHill Suites by Marriott Kalispell | Chain Hotel (All-suite) | Near shopping and dining, short drive from Flathead Lake and Glacier National Park | Families, extended stays, road travelers, pet-friendly | $$ |
@@ -33,7 +35,7 @@ Kalispell is located in the Flathead Valley, serving as a central basecamp for n
 
 ## Hotels & Motels
 
-**Kalispell Grand Hotel** is located in Downtown Kalispell and is best suited for Couples, history enthusiasts, pet owners. Vintage charm, homemade breakfast, pet-friendly rooms, central location Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Kalispell%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=kalispell-kalispell-grand-hotel).
+**Kalispell Grand Hotel** is located in Downtown Kalispell and is best suited for Couples, history enthusiasts, pet owners. Vintage charm, homemade breakfast, pet-friendly rooms, central location Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Kalispell-Hotels-Kalispell-Grand-Hotel.h7749911.Hotel-Information?camref=1011l52GG6&adref=kalispell-grand-hotel).
 
 **Hilton Garden Inn Kalispell** is located in Near Glacier Park International Airport and is best suited for Business travelers, early/late flights, vacationers. Modern amenities, event spaces, on-site dining, indoor pool, fitness center Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Kalispell%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=kalispell-hilton-garden-inn-kalispell).
 
@@ -79,7 +81,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Kalisp
 
 Booking in advance is crucial, especially for July, which is peak season. While Glacier National Park may not require vehicle reservations in 2026, expect heavy traffic and potential diversions during busy periods. Downtown Kalispell parking can be challenging due to time restrictions and obscured signage; consider alternative transportation or off-site parking. Lodging prices fluctuate seasonally, with higher rates during peak tourist seasons, so booking during off-peak times or well in advance for peak season can help secure better rates.
 
-**Moving to Kalispell?** If you are visiting to scout a potential relocation, read our full [Moving to Kalispell Guide](/guides/moving-to-kalispell-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Kalispell to other cities](/compare/).
+**Moving to Kalispell?** If you are visiting to scout a potential relocation, read our full [Moving to Kalispell Guide](/guides/moving-to-kalispell-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Kalispell to other cities](/compare/).
+
+**Also nearby:** [Whitefish](/lodging/whitefish/) · [Columbia Falls](/lodging/columbia-falls/) · [Bigfork](/lodging/bigfork/)
 
 ---
 

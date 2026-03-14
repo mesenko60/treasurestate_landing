@@ -8,14 +8,16 @@
 
 Billings, Montana, as the largest city in the state, offers diverse lodging options across several vibrant neighborhoods including the West End, Downtown, Heights, Shiloh, Midtown, North Elevation, and South Billings. The city serves as a basecamp for visitors interested in historical landmarks, ZooMontana, and the Billings Brew Trail, reflecting its appeal for those seeking adventure, history, and cultural experiences.
 
+You can also read our full [Billings town guide](/montana-towns/billings/) for things to do, local history, and seasonal events.
+
 ---
 
 ## Quick Comparison
 
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
-| The Northern Hotel | Boutique Hotel | Downtown Billings | Luxury travelers, those seeking historic charm | $$$$ |
-| DoubleTree by Hilton Hotel Billings | Chain Hotel | Downtown, near Metra Park Civic Auditorium & Arena | Business travelers, event attendees | $$$ |
+| [The Northern Hotel](https://www.expedia.com/Billings-Hotels-Northern-Hotel.h7928.Hotel-Information?camref=1011l52GG6&adref=billings-northern-hotel-table) | Boutique Hotel | Downtown Billings | Luxury travelers, those seeking historic charm | $$$$ |
+| [DoubleTree by Hilton Hotel Billings](https://www.expedia.com/Billings-Hotels-DoubleTree-By-Hilton-Hotel-Billings.h26156.Hotel-Information?camref=1011l52GG6&adref=billings-doubletree-table) | Chain Hotel | Downtown, near Metra Park Civic Auditorium & Arena | Business travelers, event attendees | $$$ |
 | Homewood Suites by Hilton | Chain Hotel (All-suite) | Billings, MT | Families, longer stays | $$$ |
 | Hyatt Place Billings | Chain Hotel | Billings, MT | Modern travelers | $$$ |
 | Residence Inn by Marriott Billings | Chain Hotel (Extended Stay) | Billings, MT | Extended stays, families | $$$ |
@@ -31,9 +33,9 @@ Billings, Montana, as the largest city in the state, offers diverse lodging opti
 
 ## Hotels & Motels
 
-**The Northern Hotel** is located in Downtown Billings and is best suited for Luxury travelers, those seeking historic charm. Elegantly restored, modern amenities, rooftop terrace, historic charm Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-the-northern-hotel).
+**The Northern Hotel** is located in Downtown Billings and is best suited for Luxury travelers, those seeking historic charm. Elegantly restored, modern amenities, rooftop terrace, historic charm Nightly rates typically fall in the $300+/night range. Check current rates on [Expedia](https://www.expedia.com/Billings-Hotels-Northern-Hotel.h7928.Hotel-Information?camref=1011l52GG6&adref=billings-northern-hotel).
 
-**DoubleTree by Hilton Hotel Billings** is located in Downtown, near Metra Park Civic Auditorium & Arena and is best suited for Business travelers, event attendees. Elegant high-rise, convenient to civic auditorium Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-doubletree-by-hilton-hotel-bil).
+**DoubleTree by Hilton Hotel Billings** is located in Downtown, near Metra Park Civic Auditorium & Arena and is best suited for Business travelers, event attendees. Elegant high-rise, convenient to civic auditorium Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Billings-Hotels-DoubleTree-By-Hilton-Hotel-Billings.h26156.Hotel-Information?camref=1011l52GG6&adref=billings-doubletree).
 
 **Homewood Suites by Hilton** is located in Billings, MT and is best suited for Families, longer stays. Spacious suites with kitchens and living areas, complimentary breakfast Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Billings%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=billings-homewood-suites-by-hilton).
 
@@ -73,7 +75,9 @@ For the full selection of vacation rentals, cabins, and unique stays near Billin
 
 Peak booking periods in Billings generally align with summer months, especially July and August, when visitors often use the city as a base for exploring nearby national parks. It is advisable to book 6-9 months in advance for these periods. Many hotels in Billings offer free parking, so it's worth checking this amenity when booking. Seasonal pricing can vary, with high season average prices around $150 and low season around $142, though resort rates may not fluctuate significantly.
 
-**Moving to Billings?** If you are visiting to scout a potential relocation, read our full [Moving to Billings Guide](/guides/moving-to-billings-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. You can also explore all [Montana towns](/montana-towns/) or [compare Billings to other cities](/compare/).
+**Moving to Billings?** If you are visiting to scout a potential relocation, read our full [Moving to Billings Guide](/guides/moving-to-billings-montana/) for a detailed breakdown of neighborhoods, housing costs, schools, and job market data. Explore all [Montana towns](/montana-towns/) or [compare Billings to other cities](/compare/).
+
+**Also nearby:** [Red Lodge](/lodging/red-lodge/) · [Hardin](/lodging/hardin/) · [Miles City](/lodging/miles-city/)
 
 ---
 
