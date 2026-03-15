@@ -89,7 +89,7 @@ export default function Jobs({ townName, slug, economy, population }: Props) {
           </tbody>
         </table>
       )}
-      <p style={{ fontSize: '0.8rem', color: '#999', fontStyle: 'italic' }}>
+      <p style={{ fontSize: '0.85rem', color: '#555555', fontStyle: 'italic' }}>
         Source: U.S. Census Bureau, ACS 5-Year Estimates (2019–2023).
       </p>
 

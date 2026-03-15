@@ -164,7 +164,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
           ))}
         </tbody>
       </table>
-      <p style={{ fontSize: '0.8rem', color: '#999', fontStyle: 'italic' }}>
+      <p style={{ fontSize: '0.85rem', color: '#555555', fontStyle: 'italic' }}>
         Estimates based on local medians and regional cost indices. Actual costs vary.
         Utilities reflect {townName}'s prairie climate with cold winters and persistent wind; Chinook events can temporarily reduce heating demand.
       </p>

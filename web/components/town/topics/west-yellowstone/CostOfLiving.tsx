@@ -166,7 +166,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
           ))}
         </tbody>
       </table>
-      <p style={{ fontSize: '0.8rem', color: '#999', fontStyle: 'italic' }}>
+      <p style={{ fontSize: '0.85rem', color: '#555555', fontStyle: 'italic' }}>
         Estimates based on local medians and regional cost indices. Actual costs vary.
         Utilities reflect {townName}'s extreme elevation (6,667 ft) and harsh winters{'\u2014'}expect
         significantly higher heating bills than lower-elevation Montana towns. Groceries run higher

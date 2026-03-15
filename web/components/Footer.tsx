@@ -13,7 +13,7 @@ export default function Footer() {
         <Link href="/explore-montana/" style={{ color: '#ddd', textDecoration: 'none' }}>Explore Montana</Link>
       </nav>
       <div style={{ marginBottom: '1rem' }}>
-        <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#d8973c', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>
+        <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#f5c97a', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>
       </div>
       <p>&copy; <span>{year}</span> treasurestate.com - All Rights Reserved.</p>
       <p>Your Gateway to Montana&rsquo;s Treasures</p>

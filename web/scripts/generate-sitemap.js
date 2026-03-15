@@ -15,8 +15,37 @@ function getTownList(repoRoot) {
     .filter((t) => { if (seen.has(t.slug)) return false; seen.add(t.slug); return true; });
 }
 
-function url(loc, priority = 0.5, changefreq = 'monthly') {
-  const lastmod = new Date().toISOString();
+function getLastmod(loc) {
+  if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
+  if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
+  if (loc.includes('/montana-towns/')) return '2026-03-01';
+  if (loc.includes('/compare/')) return '2026-03-01';
+  if (loc.includes('/best-of/')) return '2026-02-01';
+  if (loc.includes('/information/')) return '2026-03-14';
+  if (loc.includes('/guides/')) return '2026-03-01';
+  if (loc.includes('/planners/')) return '2026-03-01';
+  return '2026-01-01';
+}
+
+function getPriority(loc, baseUrl) {
+  if (loc === baseUrl + '/') return 1.0;
+  if (loc === baseUrl + '/montana-towns/') return 0.9;
+  if (/\/montana-towns\/[^/]+\/$/.test(loc)) return 0.9;
+  if (/\/guides\/moving-to-/.test(loc)) return 0.8;
+  if (/\/lodging\/[^/]+\//.test(loc)) return 0.8;
+  if (loc === baseUrl + '/lodging/') return 0.75;
+  if (/\/montana-towns\/[^/]+\/[^/]+\//.test(loc)) return 0.7;
+  if (/\/guides\//.test(loc)) return 0.7;
+  if (/\/best-of\//.test(loc)) return 0.7;
+  if (/\/planners\//.test(loc)) return 0.7;
+  if (/\/information\//.test(loc)) return 0.6;
+  if (/\/compare\//.test(loc)) return 0.5;
+  return 0.6;
+}
+
+function url(loc, baseUrl, changefreq = 'monthly') {
+  const lastmod = getLastmod(loc);
+  const priority = getPriority(loc, baseUrl);
   return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }
 
@@ -30,37 +59,37 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   const seen = new Set();
   const entries = [];
 
-  function add(loc, priority, changefreq) {
+  function add(loc, changefreq = 'monthly') {
     if (seen.has(loc)) return;
     seen.add(loc);
-    entries.push(url(loc, priority, changefreq));
+    entries.push(url(loc, baseUrl, changefreq));
   }
 
-  add(`${baseUrl}/`, 1.0, 'weekly');
-  add(`${baseUrl}/montana-towns/`, 0.9, 'weekly');
-  add(`${baseUrl}/compare/`, 0.6, 'monthly');
-  add(`${baseUrl}/planners/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/montana-backroads/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/fly-fishing-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/fly-fishing-rivers/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/hot-springs-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/campgrounds-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/hiking-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/hunting-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/skiing-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/state-parks-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/wildlife-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/photography-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/planners/backroads-planner/`, 0.8, 'weekly');
-  add(`${baseUrl}/guides/summer-road-trips/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/winter-driving-guide/`, 0.7, 'monthly');
-  add(`${baseUrl}/guides/bitterroot-valley/`, 0.7, 'monthly');
+  add(`${baseUrl}/`, 'weekly');
+  add(`${baseUrl}/montana-towns/`, 'weekly');
+  add(`${baseUrl}/compare/`);
+  add(`${baseUrl}/planners/`);
+  add(`${baseUrl}/guides/montana-backroads/`);
+  add(`${baseUrl}/guides/fly-fishing-guide/`);
+  add(`${baseUrl}/guides/fly-fishing-rivers/`);
+  add(`${baseUrl}/guides/hot-springs-guide/`);
+  add(`${baseUrl}/guides/campgrounds-guide/`);
+  add(`${baseUrl}/guides/hiking-guide/`);
+  add(`${baseUrl}/guides/hunting-guide/`);
+  add(`${baseUrl}/guides/skiing-guide/`);
+  add(`${baseUrl}/guides/state-parks-guide/`);
+  add(`${baseUrl}/guides/wildlife-guide/`);
+  add(`${baseUrl}/guides/photography-guide/`);
+  add(`${baseUrl}/planners/backroads-planner/`, 'weekly');
+  add(`${baseUrl}/guides/summer-road-trips/`);
+  add(`${baseUrl}/guides/winter-driving-guide/`);
+  add(`${baseUrl}/guides/bitterroot-valley/`);
 
   const corridorsPath = path.join(webDir, 'data', 'corridors.json');
   if (fs.existsSync(corridorsPath)) {
     const corridors = JSON.parse(fs.readFileSync(corridorsPath, 'utf8'));
     for (const c of corridors) {
-      add(`${baseUrl}/planners/corridors/${c.id}/`, 0.7, 'monthly');
+      add(`${baseUrl}/planners/corridors/${c.id}/`);
     }
   }
 
@@ -72,7 +101,7 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
         (fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.html')));
       if (isPage) {
         const slug = f.replace('.html', '');
-        add(`${baseUrl}/information/${slug}/`, 0.7, 'monthly');
+        add(`${baseUrl}/information/${slug}/`);
       }
     }
   }
@@ -85,26 +114,26 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
         return fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'));
       });
 
-    add(`${baseUrl}/montana-towns/${t.slug}/`, hasTopics ? 0.9 : 0.7, hasTopics ? 'weekly' : 'monthly');
+    add(`${baseUrl}/montana-towns/${t.slug}/`, hasTopics ? 'weekly' : 'monthly');
 
     if (fs.existsSync(townOutDir)) {
       for (const sub of fs.readdirSync(townOutDir)) {
         const subPath = path.join(townOutDir, sub);
         if (fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'))) {
-          add(`${baseUrl}/montana-towns/${t.slug}/${sub}/`, 0.8, 'monthly');
+          add(`${baseUrl}/montana-towns/${t.slug}/${sub}/`);
         }
       }
     }
   }
 
-  add(`${baseUrl}/guides/`, 0.7, 'monthly');
-  add(`${baseUrl}/lodging/`, 0.75, 'monthly');
+  add(`${baseUrl}/guides/`);
+  add(`${baseUrl}/lodging/`);
   const lodgingDir = path.join(outDir, 'lodging');
   if (fs.existsSync(lodgingDir)) {
     for (const f of fs.readdirSync(lodgingDir)) {
       const full = path.join(lodgingDir, f);
       if (fs.statSync(full).isDirectory()) {
-        add(`${baseUrl}/lodging/${f}/`, 0.7, 'monthly');
+        add(`${baseUrl}/lodging/${f}/`);
       }
     }
   }
@@ -113,17 +142,17 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   if (fs.existsSync(guidesDir)) {
     for (const f of fs.readdirSync(guidesDir)) {
       if (fs.statSync(path.join(guidesDir, f)).isDirectory()) {
-        add(`${baseUrl}/guides/${f}/`, 0.6, 'monthly');
+        add(`${baseUrl}/guides/${f}/`);
       }
     }
   }
 
-  add(`${baseUrl}/best-of/`, 0.6, 'monthly');
+  add(`${baseUrl}/best-of/`);
   const bestOfDir = path.join(outDir, 'best-of');
   if (fs.existsSync(bestOfDir)) {
     for (const f of fs.readdirSync(bestOfDir)) {
       if (fs.statSync(path.join(bestOfDir, f)).isDirectory()) {
-        add(`${baseUrl}/best-of/${f}/`, 0.6, 'monthly');
+        add(`${baseUrl}/best-of/${f}/`);
       }
     }
   }
@@ -132,7 +161,7 @@ function url(loc, priority = 0.5, changefreq = 'monthly') {
   if (fs.existsSync(compareDir)) {
     for (const f of fs.readdirSync(compareDir)) {
       if (fs.statSync(path.join(compareDir, f)).isDirectory()) {
-        add(`${baseUrl}/compare/${f}/`, 0.5, 'monthly');
+        add(`${baseUrl}/compare/${f}/`);
       }
     }
   }

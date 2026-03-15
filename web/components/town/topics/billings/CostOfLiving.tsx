@@ -162,7 +162,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
           ))}
         </tbody>
       </table>
-      <p style={{ fontSize: '0.8rem', color: '#999', fontStyle: 'italic' }}>
+      <p style={{ fontSize: '0.85rem', color: '#555555', fontStyle: 'italic' }}>
         Estimates based on local medians and regional cost indices. Actual costs vary.
         Utilities reflect {townName}'s warmer, drier climate and lower elevation (3,123 ft) compared to western Montana cities.
       </p>

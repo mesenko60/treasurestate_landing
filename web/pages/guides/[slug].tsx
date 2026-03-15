@@ -119,6 +119,7 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
           .guide-content .stat-card .lbl { font-size: 0.78rem; color: #666; margin-top: 2px; }
           .guide-content .cta-box { margin: 1.5rem 0; padding: 1rem 1.25rem; background: #f0f5f0; border-radius: 8px; border-left: 4px solid #3b6978; }
           .guide-content .cta-box a { color: #3b6978; font-weight: 600; }
+          .guide-content a[href^="/"] { color: #925f14; }
           .guide-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
           .guide-content th { background: #204051; color: #fff; padding: 0.5rem 0.75rem; text-align: left; font-weight: 600; }
           .guide-content td { padding: 0.4rem 0.75rem; border-bottom: 1px solid #eee; }
@@ -149,7 +150,7 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
             </section>
           )}
 
-          <div style={{ marginTop: '2rem', padding: '1rem', background: '#f8f9fa', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.72rem', color: '#999', lineHeight: 1.6 }}>
+          <div style={{ marginTop: '2rem', padding: '1rem', background: '#f8f9fa', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem', color: '#555555', lineHeight: 1.6 }}>
             <strong style={{ color: '#888' }}>Data Sources & Freshness:</strong>{' '}
             Housing values and inventory from Zillow Research ({fmtFresh(freshness.zillowInventory?.lastCollected) || 'Jan 2026'}).{' '}
             Income, vacancy, employment, and industry data from U.S. Census Bureau {freshness.censusEmployment?.vintage || 'ACS 5-Year (2019–2023)'}.{' '}

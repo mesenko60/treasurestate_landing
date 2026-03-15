@@ -174,7 +174,7 @@ export default function CostOfLiving({ townName, slug, housing, economy }: Props
           ))}
         </tbody>
       </table>
-      <p style={{ fontSize: '0.8rem', color: '#999', fontStyle: 'italic' }}>
+      <p style={{ fontSize: '0.85rem', color: '#555555', fontStyle: 'italic' }}>
         Estimates based on local medians and regional cost indices. Actual costs vary.
         {townName}'s position on I-90 — just 46 miles from Billings — keeps retail costs
         reasonable, and the absence of a state sales tax reduces everyday expenses compared

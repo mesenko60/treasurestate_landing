@@ -26,7 +26,7 @@ export default function StoreBanner() {
         rel="noopener noreferrer"
         style={{
           display: 'inline-block',
-          background: '#d8973c',
+          background: '#925f14',
           color: '#fff',
           padding: '0.8rem 2rem',
           borderRadius: '4px',
@@ -35,10 +35,10 @@ export default function StoreBanner() {
           textTransform: 'uppercase',
           letterSpacing: '1px',
           transition: 'background 0.2s',
-          boxShadow: '0 2px 5px rgba(216, 151, 60, 0.4)'
+          boxShadow: '0 2px 5px rgba(146, 95, 20, 0.4)'
         }}
-        onMouseOver={(e) => e.currentTarget.style.background = '#c68532'}
-        onMouseOut={(e) => e.currentTarget.style.background = '#d8973c'}
+        onMouseOver={(e) => e.currentTarget.style.background = '#7a4f10'}
+        onMouseOut={(e) => e.currentTarget.style.background = '#925f14'}
       >
         Shop Now
       </a>

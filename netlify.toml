@@ -170,6 +170,18 @@
   force = true
 
 [[redirects]]
+  from = "/information/mining-history"
+  to = "/information/mining-history-of-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/information/geology-of-montana"
+  to = "/information/geology-of-western-montana/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/story-of-montana-vigilantes"
   to = "/information/story-of-montana-vigilantes/"
   status = 301

@@ -173,7 +173,7 @@ export default function TownHousing({
               Housing Availability
             </div>
             {forSaleInventoryDate && (
-              <div style={{ fontSize: '0.68rem', color: '#aaa', fontStyle: 'italic' }}>
+              <div style={{ fontSize: '0.8rem', color: '#555555', fontStyle: 'italic' }}>
                 Updated {formatDate(forSaleInventoryDate)}
               </div>
             )}
@@ -235,7 +235,7 @@ export default function TownHousing({
             <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#204051', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
               Employment &amp; Economy
             </div>
-            <div style={{ fontSize: '0.68rem', color: '#aaa', fontStyle: 'italic' }}>
+            <div style={{ fontSize: '0.8rem', color: '#555555', fontStyle: 'italic' }}>
               {censusVintage || 'ACS 2019–2023'}
             </div>
           </div>
@@ -301,17 +301,17 @@ export default function TownHousing({
         </div>
       )}
 
-      <div style={{ marginTop: '0.75rem', fontSize: '0.72rem', color: '#aaa', textAlign: 'center', lineHeight: 1.6 }}>
+      <div style={{ marginTop: '0.75rem', fontSize: '0.85rem', color: '#555555', textAlign: 'center', lineHeight: 1.6 }}>
         {zillowHomeValue && (
-          <>Home values from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow ZHVI</a> ({formatDate(zillowHomeValueDate)}). </>
+          <>Home values from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#555555' }}>Zillow ZHVI</a> ({formatDate(zillowHomeValueDate)}). </>
         )}
         {forSaleInventory != null && (
-          <>Inventory, list prices &amp; new listings from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Zillow Research</a> ({formatDate(forSaleInventoryDate)}). </>
+          <>Inventory, list prices &amp; new listings from <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#555555' }}>Zillow Research</a> ({formatDate(forSaleInventoryDate)}). </>
         )}
         {medianHouseholdIncome && (
           <>Income{!zillowHomeValue && medianHomeValue ? ', home values,' : ''}{totalHousingUnits ? ', vacancy,' : ''}{unemploymentRate != null ? ', employment, industry,' : ''} from U.S. Census Bureau {censusVintage || 'ACS 5-Year (2019–2023)'}. </>
         )}
-        Data may not reflect current conditions. <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>Check Zillow</a> for the latest market data.
+        Data may not reflect current conditions. <a href="https://www.zillow.com/research/data/" target="_blank" rel="noopener noreferrer" style={{ color: '#555555' }}>Check Zillow</a> for the latest market data.
       </div>
     </section>
   );
