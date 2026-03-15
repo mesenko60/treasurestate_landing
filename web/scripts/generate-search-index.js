@@ -221,54 +221,25 @@ function fmtPop(n) {
     }
   }
 
-  // ═══ 10. COMPARISON PAGES ═══
-  const COMPARISON_PAIRS = [
-    ['bozeman', 'missoula'], ['bozeman', 'billings'], ['bozeman', 'helena'],
-    ['bozeman', 'great-falls'], ['bozeman', 'kalispell'], ['bozeman', 'whitefish'],
-    ['bozeman', 'belgrade'], ['bozeman', 'livingston'], ['missoula', 'billings'],
-    ['missoula', 'helena'], ['missoula', 'great-falls'], ['missoula', 'kalispell'],
-    ['missoula', 'hamilton'], ['missoula', 'stevensville'], ['billings', 'great-falls'],
-    ['billings', 'helena'], ['billings', 'miles-city'], ['billings', 'laurel'],
-    ['helena', 'great-falls'], ['helena', 'butte'], ['kalispell', 'whitefish'],
-    ['kalispell', 'columbia-falls'], ['kalispell', 'bigfork'], ['kalispell', 'polson'],
-    ['whitefish', 'columbia-falls'], ['butte', 'anaconda'], ['butte', 'helena'],
-    ['butte', 'dillon'], ['great-falls', 'havre'], ['livingston', 'big-timber'],
-    ['red-lodge', 'big-timber'], ['west-yellowstone', 'big-sky'],
-    ['west-yellowstone', 'gardiner'], ['dillon', 'butte'], ['lewistown', 'great-falls'],
-    ['glasgow', 'wolf-point'], ['glendive', 'miles-city'], ['sidney', 'glendive'],
-    ['cut-bank', 'shelby'], ['libby', 'troy'], ['hamilton', 'stevensville'],
-    ['polson', 'ronan'], ['thompson-falls', 'plains'], ['columbus', 'red-lodge'],
-    ['three-forks', 'manhattan'], ['belgrade', 'livingston'], ['big-sky', 'bozeman'],
-    ['ennis', 'virginia-city'], ['choteau', 'fairfield'], ['conrad', 'shelby'],
-    ['bozeman', 'manhattan'], ['bozeman', 'three-forks'], ['belgrade', 'manhattan'],
-    ['livingston', 'gardiner'], ['livingston', 'clyde-park'], ['whitefish', 'bigfork'],
-    ['bigfork', 'polson'], ['ronan', 'st-ignatius'], ['red-lodge', 'bridger'],
-    ['fromberg', 'bridger'], ['hamilton', 'darby'], ['darby', 'stevensville'],
-    ['libby', 'eureka'], ['eureka', 'troy'], ['missoula', 'seeley-lake'],
-    ['missoula', 'superior'], ['alberton', 'superior'], ['ennis', 'twin-bridges'],
-    ['twin-bridges', 'virginia-city'], ['boulder', 'whitehall'], ['butte', 'deer-lodge'],
-    ['anaconda', 'deer-lodge'], ['browning', 'east-glacier'], ['cut-bank', 'browning'],
-    ['whitefish', 'west-glacier'], ['miles-city', 'forsyth'], ['havre', 'chinook'],
-    ['glasgow', 'malta'], ['sidney', 'fairview'], ['glendive', 'baker'],
-    ['billings', 'hardin'], ['laurel', 'broadview'], ['great-falls', 'fort-benton'],
-    ['lewistown', 'harlowton'], ['helena', 'east-helena'], ['dillon', 'lima'],
-    ['philipsburg', 'drummond'], ['great-falls', 'bozeman'], ['great-falls', 'missoula'],
-    ['helena', 'billings'], ['helena', 'missoula'],
-  ];
-
+  // ═══ 10. COMPARISON PAGES (all town pairs, canonical alphabetical URLs) ═══
   const townNameMap = {};
   for (const t of towns) { townNameMap[t.slug] = t.name; }
 
-  for (const [a, b] of COMPARISON_PAIRS) {
-    const nameA = townNameMap[a] || a.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    const nameB = townNameMap[b] || b.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    entries.push({
-      type: 'comparison',
-      title: `${nameA} vs ${nameB}`,
-      description: 'Side-by-side comparison of housing, climate, schools, recreation',
-      url: `/compare/${a}-vs-${b}/`,
-      keywords: `${nameA} ${nameB} compare comparison vs versus`,
-    });
+  const slugs = towns.map((t) => t.slug);
+  for (let i = 0; i < slugs.length; i++) {
+    for (let j = i + 1; j < slugs.length; j++) {
+      const a = slugs[i];
+      const b = slugs[j];
+      const nameA = townNameMap[a] || a.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      const nameB = townNameMap[b] || b.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      entries.push({
+        type: 'comparison',
+        title: `${nameA} vs ${nameB}`,
+        description: 'Side-by-side comparison of housing, climate, schools, recreation',
+        url: `/compare/${a}-vs-${b}/`,
+        keywords: `${nameA} ${nameB} compare comparison vs versus`,
+      });
+    }
   }
 
   // ═══ 11. INFORMATION ARTICLES ═══

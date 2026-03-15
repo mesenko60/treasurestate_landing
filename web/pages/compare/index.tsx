@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -249,11 +249,28 @@ export default function CompareTool({ towns }: Props) {
   const townA = useMemo(() => towns.find(t => t.slug === slugA) || null, [towns, slugA]);
   const townB = useMemo(() => towns.find(t => t.slug === slugB) || null, [towns, slugB]);
 
-  const updateUrl = useCallback((a: string, b: string) => {
-    if (a && b) {
-      router.replace({ pathname: '/compare', query: { a, b } }, undefined, { shallow: true });
+  // Redirect query-param URLs to clean URLs (e.g. ?a=X&b=Y -> /compare/X-vs-Y/)
+  useEffect(() => {
+    const a = router.query.a as string | undefined;
+    const b = router.query.b as string | undefined;
+    if (a && b && a !== b && router.isReady) {
+      const [x, y] = [a, b].sort();
+      router.replace(`/compare/${x}-vs-${y}/`, undefined, { shallow: false });
     }
-  }, [router]);
+  }, [router.query.a, router.query.b, router.isReady, router]);
+
+  const pairSlug = useCallback((a: string, b: string) => {
+    if (!a || !b || a === b) return '';
+    const [x, y] = [a, b].sort();
+    return `${x}-vs-${y}`;
+  }, []);
+
+  const updateUrl = useCallback((a: string, b: string) => {
+    if (a && b && a !== b) {
+      const slug = pairSlug(a, b);
+      if (slug) router.replace(`/compare/${slug}/`, undefined, { shallow: false });
+    }
+  }, [router, pairSlug]);
 
   const handleA = (slug: string) => {
     setSlugA(slug); updateUrl(slug, slugB);

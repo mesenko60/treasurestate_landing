@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { getTownList } from '../../lib/towns';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
@@ -91,12 +92,13 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
 export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
   const title = `${townA.name} vs ${townB.name}, Montana | Side by Side Comparison`;
   const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side: population, climate, schools, recreation, and more.`;
-  const url = `https://treasurestate.com/compare/${townA.slug}-vs-${townB.slug}/`;
+  const [canonicalSlugA, canonicalSlugB] = [townA.slug, townB.slug].sort();
+  const canonicalUrl = `https://treasurestate.com/compare/${canonicalSlugA}-vs-${canonicalSlugB}/`;
 
   const breadcrumbs = [
     { name: 'Home', url: 'https://treasurestate.com/' },
     { name: 'Cities and Towns', url: 'https://treasurestate.com/montana-towns/' },
-    { name: `${townA.name} vs ${townB.name}`, url },
+    { name: `${townA.name} vs ${townB.name}`, url: canonicalUrl },
   ];
 
   const compareSchema = {
@@ -104,7 +106,7 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
     '@type': 'Article',
     headline: title,
     description: metaDesc,
-    url,
+    url: canonicalUrl,
     about: [
       { '@type': 'City', name: townA.name, address: { '@type': 'PostalAddress', addressRegion: 'MT', addressCountry: 'US' } },
       { '@type': 'City', name: townB.name, address: { '@type': 'PostalAddress', addressRegion: 'MT', addressCountry: 'US' } },
@@ -126,13 +128,13 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
   return (
     <>
       <Head>
-        <link rel="canonical" href={url} />
+        <link rel="canonical" href={canonicalUrl} />
         <title>{title}</title>
         <meta name="description" content={metaDesc} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={url} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
@@ -311,117 +313,24 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
   );
 }
 
-// Top comparison pairs: major cities, commonly compared towns, geographic neighbors
-const COMPARISON_PAIRS = [
-  ['bozeman', 'missoula'],
-  ['bozeman', 'billings'],
-  ['bozeman', 'helena'],
-  ['bozeman', 'great-falls'],
-  ['bozeman', 'kalispell'],
-  ['bozeman', 'whitefish'],
-  ['bozeman', 'belgrade'],
-  ['bozeman', 'livingston'],
-  ['missoula', 'billings'],
-  ['missoula', 'helena'],
-  ['missoula', 'great-falls'],
-  ['missoula', 'kalispell'],
-  ['missoula', 'hamilton'],
-  ['missoula', 'stevensville'],
-  ['billings', 'great-falls'],
-  ['billings', 'helena'],
-  ['billings', 'miles-city'],
-  ['billings', 'laurel'],
-  ['helena', 'great-falls'],
-  ['helena', 'butte'],
-  ['kalispell', 'whitefish'],
-  ['kalispell', 'columbia-falls'],
-  ['kalispell', 'bigfork'],
-  ['kalispell', 'polson'],
-  ['whitefish', 'columbia-falls'],
-  ['butte', 'anaconda'],
-  ['butte', 'helena'],
-  ['butte', 'dillon'],
-  ['great-falls', 'havre'],
-  ['livingston', 'big-timber'],
-  ['red-lodge', 'big-timber'],
-  ['west-yellowstone', 'big-sky'],
-  ['west-yellowstone', 'gardiner'],
-  ['dillon', 'butte'],
-  ['lewistown', 'great-falls'],
-  ['glasgow', 'wolf-point'],
-  ['glendive', 'miles-city'],
-  ['sidney', 'glendive'],
-  ['cut-bank', 'shelby'],
-  ['libby', 'troy'],
-  ['hamilton', 'stevensville'],
-  ['polson', 'ronan'],
-  ['thompson-falls', 'plains'],
-  ['columbus', 'red-lodge'],
-  ['three-forks', 'manhattan'],
-  ['belgrade', 'livingston'],
-  ['big-sky', 'bozeman'],
-  ['ennis', 'virginia-city'],
-  ['choteau', 'fairfield'],
-  ['conrad', 'shelby'],
-  // Gallatin / Park corridor
-  ['bozeman', 'manhattan'],
-  ['bozeman', 'three-forks'],
-  ['belgrade', 'manhattan'],
-  ['livingston', 'gardiner'],
-  ['livingston', 'clyde-park'],
-  // Flathead / Lake
-  ['whitefish', 'bigfork'],
-  ['bigfork', 'polson'],
-  ['ronan', 'st-ignatius'],
-  // Carbon / Stillwater
-  ['red-lodge', 'bridger'],
-  ['fromberg', 'bridger'],
-  // Ravalli / Bitterroot
-  ['hamilton', 'darby'],
-  ['darby', 'stevensville'],
-  // Lincoln / NW Montana
-  ['libby', 'eureka'],
-  ['eureka', 'troy'],
-  // Missoula area
-  ['missoula', 'seeley-lake'],
-  ['missoula', 'superior'],
-  ['alberton', 'superior'],
-  // Madison / Jefferson
-  ['ennis', 'twin-bridges'],
-  ['twin-bridges', 'virginia-city'],
-  ['boulder', 'whitehall'],
-  // Butte / Deer Lodge
-  ['butte', 'deer-lodge'],
-  ['anaconda', 'deer-lodge'],
-  // Glacier gateway
-  ['browning', 'east-glacier'],
-  ['cut-bank', 'browning'],
-  ['whitefish', 'west-glacier'],
-  // Eastern Montana
-  ['miles-city', 'forsyth'],
-  ['havre', 'chinook'],
-  ['glasgow', 'malta'],
-  ['sidney', 'fairview'],
-  ['glendive', 'baker'],
-  ['billings', 'hardin'],
-  ['laurel', 'broadview'],
-  // Central
-  ['great-falls', 'fort-benton'],
-  ['lewistown', 'harlowton'],
-  ['helena', 'east-helena'],
-  ['dillon', 'lima'],
-  ['philipsburg', 'drummond'],
-  // Cross-region relocation
-  ['great-falls', 'bozeman'],
-  ['great-falls', 'missoula'],
-  ['helena', 'billings'],
-  ['helena', 'missoula'],
-];
+/** All unique town pairs for clean URLs. Includes both orderings (a-vs-b and b-vs-a) so either URL works; canonical uses alphabetical order. */
+function getAllComparisonPaths(): { params: { pair: string } }[] {
+  const towns = getTownList();
+  const slugs = towns.map(t => t.slug);
+  const paths: { params: { pair: string } }[] = [];
+  for (let i = 0; i < slugs.length; i++) {
+    for (let j = i + 1; j < slugs.length; j++) {
+      const a = slugs[i];
+      const b = slugs[j];
+      paths.push({ params: { pair: `${a}-vs-${b}` } });
+      paths.push({ params: { pair: `${b}-vs-${a}` } });
+    }
+  }
+  return paths;
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = COMPARISON_PAIRS.map(([a, b]) => ({
-    params: { pair: `${a}-vs-${b}` }
-  }));
+  const paths = getAllComparisonPaths();
   return { paths, fallback: false };
 };
 
