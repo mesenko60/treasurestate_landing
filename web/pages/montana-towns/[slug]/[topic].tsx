@@ -502,6 +502,37 @@ export default function TopicPage(props: Props) {
             containedInPlace: { '@type': 'State', name: 'Montana' },
           },
         }) }} />
+        {topic === 'weekend-itinerary' && props.highlights?.length > 0 && (
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'TouristTrip',
+            name: `${townName} Weekend Itinerary`,
+            description: guide.metaDescription,
+            url: `https://treasurestate.com/montana-towns/${slug}/${topic}/`,
+            touristType: 'First-time visitors, couples, families, solo travelers',
+            itinerary: {
+              '@type': 'ItemList',
+              numberOfItems: props.highlights.length,
+              itemListElement: props.highlights.map((h, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'TouristAttraction',
+                  name: h.name,
+                  touristType: h.type,
+                  description: `${h.name} (${h.type}), ${h.distMiles} miles from ${townName}`,
+                  ...(h.lat != null && h.lng != null && { geo: { '@type': 'GeoCoordinates', latitude: h.lat, longitude: h.lng } }),
+                  containedInPlace: { '@type': 'City', name: townName, containedInPlace: { '@type': 'State', name: 'Montana' } },
+                },
+              })),
+            },
+            about: {
+              '@type': 'City',
+              name: townName,
+              containedInPlace: { '@type': 'State', name: 'Montana' },
+            },
+          }) }} />
+        )}
       </Head>
 
       <Header />

@@ -5,6 +5,7 @@ import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
 import { readLodgingPage, getLodgingSlugs } from '../../lib/lodging';
+import { schemaTypeFromLodgingType, type LodgingAccommodation } from '../../lib/lodging-schema';
 
 type Props = {
   slug: string;
@@ -12,9 +13,10 @@ type Props = {
   title: string;
   contentHtml: string;
   excerpt: string;
+  accommodations: LodgingAccommodation[];
 };
 
-export default function LodgingTownPage({ slug, townName, title, contentHtml, excerpt: _excerpt }: Props) {
+export default function LodgingTownPage({ slug, townName, title, contentHtml, excerpt: _excerpt, accommodations }: Props) {
   const url = `https://treasurestate.com/lodging/${slug}/`;
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -26,13 +28,28 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
   const metaDescription =
     `Find the best hotels, B&Bs, cabins, and vacation rentals in ${townName}, Montana. Compare properties, read booking tips, and check current rates on Expedia and VRBO.`;
 
-  const schema = {
+  const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: metaTitle,
     description: metaDescription,
     url,
   };
+
+  const lodgingSchemas = accommodations.map((a) => ({
+    '@context': 'https://schema.org',
+    '@type': schemaTypeFromLodgingType(a.type),
+    name: a.name,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: townName,
+      addressRegion: 'MT',
+      addressCountry: 'US',
+    },
+    ...(a.location && { description: `Located in ${a.location}, ${townName}, Montana` }),
+    ...(a.priceRange && { priceRange: a.priceRange }),
+    ...(a.url && { url: a.url }),
+  }));
 
   return (
     <>
@@ -49,7 +66,10 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+        {lodgingSchemas.map((s, i) => (
+          <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+        ))}
       </Head>
       <Header />
       <Hero
@@ -97,6 +117,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
       title: data.title,
       contentHtml: data.contentHtml,
       excerpt: data.excerpt,
+      accommodations: data.accommodations,
     },
   };
 };

@@ -76,6 +76,7 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
     description: page.metaDescription,
     url,
     numberOfItems: page.towns.length,
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
     itemListElement: page.towns.map(t => {
       const townUrl = `https://treasurestate.com/montana-towns/${t.slug}/`;
       return {
