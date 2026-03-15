@@ -19,6 +19,17 @@ export default function MontanaBackroads() {
         <meta property="og:url" content="https://treasurestate.com/guides/montana-backroads/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: "Montana's Backroads: A Scenic Travel Guide",
+          description: "Discover the hidden gems of Big Sky Country with our guide to Montana's best backroads, scenic byways, and off-the-beaten-path adventures.",
+          url: 'https://treasurestate.com/guides/montana-backroads/',
+          author: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+          datePublished: '2026-01-15T00:00:00-07:00',
+          dateModified: '2026-03-14T00:00:00-07:00',
+          publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+        }) }} />
       </Head>
       <Header />
       <Hero

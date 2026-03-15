@@ -47,7 +47,7 @@ export default function Schema({
     url,
     containedInPlace: {
       '@type': 'AdministrativeArea',
-      name: county ? `${county} County` : 'Montana',
+      name: county ? (county.replace(/ County$/i, '').trim() + ' County') : 'Montana',
       containedInPlace: { '@type': 'State', name: 'Montana', containedInPlace: { '@type': 'Country', name: 'United States' } },
     },
   };

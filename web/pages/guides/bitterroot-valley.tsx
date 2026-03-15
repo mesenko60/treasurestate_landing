@@ -274,7 +274,19 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
     { name: 'Bitterroot Valley', url: canonicalUrl },
   ];
 
-  const jsonLd = {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: pageTitle,
+    description: pageDescription,
+    url: canonicalUrl,
+    author: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+    datePublished: '2026-01-15T00:00:00-07:00',
+    dateModified: '2026-03-14T00:00:00-07:00',
+    publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+  };
+
+  const destinationSchema = {
     '@context': 'https://schema.org',
     '@type': 'TouristDestination',
     name: 'Bitterroot Valley',
@@ -325,7 +337,8 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(destinationSchema) }} />
       </Head>
       <Header />
       <Hero

@@ -118,6 +118,38 @@ type Props = {
   heroCredit?: string;
 };
 
+function formatHomeValueForMeta(val: number): string {
+  if (val >= 1_000_000) return `$${(val / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
+  if (val >= 1_000) return `$${Math.round(val / 1_000)}K`;
+  return `$${val.toLocaleString()}`;
+}
+
+function buildDataDrivenMetaDesc(
+  townName: string,
+  recreationPlaces: RecreationPlace[] | null,
+  housing: Props['housing'],
+  population: number | null | undefined
+): string | null {
+  const recCount = recreationPlaces?.length ?? 0;
+  const homeVal = housing?.zillowHomeValue ?? housing?.medianHomeValue ?? null;
+  const pop = population ?? null;
+
+  const parts: string[] = [];
+  if (recCount > 0) parts.push(`${recCount} recreation sites`);
+  if (homeVal != null) parts.push(`${formatHomeValueForMeta(homeVal)} housing market`);
+  if (pop != null) parts.push(`${pop.toLocaleString()} residents`);
+
+  if (parts.length === 0) return null;
+
+  const dataPhrase = parts.length === 1
+    ? parts[0]
+    : parts.length === 2
+      ? `${parts[0]} and ${parts[1]}`
+      : `${parts[0]}, ${parts[1]}, and ${parts[2]}`;
+
+  return `Explore ${townName}'s ${dataPhrase} — the complete ${townName}, Montana guide for visitors and future residents.`;
+}
+
 const HERO_CREDITS: Record<string, string> = {
   billings: 'Photo: Quintin Soloviev / Wikimedia Commons (CC BY 4.0)',
   bozeman: 'Photo: Chris06 / Wikimedia Commons (CC BY-SA 3.0)',
@@ -146,7 +178,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
   }, [router.query]);
 
   const title = `${townName}, Montana - ${nickname} | Travel Guide & Things to Do`;
-  const metaDesc = description || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
+  const metaDesc = description || buildDataDrivenMetaDesc(townName, recreationPlaces, housing, townFacts?.population) || `Discover ${townName}, Montana: ${nickname}. Explore top attractions, outdoor activities, history, and where to stay in ${townName}. Your ultimate travel guide.`;
   const url = `https://treasurestate.com/montana-towns/${slug}/`;
 
   const { html: enrichedHtml, injected: staysInjected } = injectStaysCTA(contentHtml, townName, slug);

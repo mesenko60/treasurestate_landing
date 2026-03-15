@@ -56,6 +56,9 @@ export default function GuidePage({ guide, freshness, rankings }: Props) {
     headline: guide.title,
     description: guide.metaDescription,
     url,
+    author: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
+    datePublished: '2026-01-15T00:00:00-07:00',
+    dateModified: '2026-03-14T00:00:00-07:00',
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
     about: { '@type': 'City', name: guide.townName, containedInPlace: { '@type': 'State', name: 'Montana' } },
   };
