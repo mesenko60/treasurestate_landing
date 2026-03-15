@@ -123,30 +123,6 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Montana Hiking Trails & Outdoor Sites',
-    numberOfItems: totalCount,
-    itemListElement: allHikes.map((h, i) => {
-      const item: Record<string, unknown> = {
-        '@type': 'TouristAttraction',
-        name: h.name,
-        geo: { '@type': 'GeoCoordinates', latitude: h.lat, longitude: h.lng },
-      };
-      if (h.address) item.address = h.address;
-      if (h.rating != null && h.reviews) {
-        item.aggregateRating = {
-          '@type': 'AggregateRating',
-          ratingValue: h.rating,
-          bestRating: 5,
-          ratingCount: h.reviews,
-        };
-      }
-      return { '@type': 'ListItem', position: i + 1, item };
-    }),
-  };
-
   return (
     <>
       <Head>
@@ -164,7 +140,6 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
         <meta name="twitter:description" content={desc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       </Head>
       <Header />
       <Hero title="Montana Hiking Guide" subtitle={`${totalCount} trails, state parks & trailheads`} image="/images/hero-image.jpg" alt="Hiking trail through Montana mountains" small />

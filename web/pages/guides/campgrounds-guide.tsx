@@ -127,31 +127,6 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Montana Campgrounds & RV Parks',
-    numberOfItems: totalCount,
-    itemListElement: allCamps.map((c, i) => {
-      const item: Record<string, unknown> = {
-        '@type': 'Campground',
-        name: c.name,
-        geo: { '@type': 'GeoCoordinates', latitude: c.lat, longitude: c.lng },
-      };
-      if (c.address) item.address = c.address;
-      if (c.phone) item.telephone = c.phone;
-      if (c.rating != null && c.reviews) {
-        item.aggregateRating = {
-          '@type': 'AggregateRating',
-          ratingValue: c.rating,
-          bestRating: 5,
-          ratingCount: c.reviews,
-        };
-      }
-      return { '@type': 'ListItem', position: i + 1, item };
-    }),
-  };
-
   return (
     <>
       <Head>
@@ -169,7 +144,6 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
         <meta name="twitter:description" content={desc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       </Head>
       <Header />
       <Hero title="Montana Campgrounds Directory" subtitle={`${totalCount} campgrounds & RV parks across Big Sky Country`} image="/images/hero-image.jpg" alt="Campsite in the Montana mountains" small />

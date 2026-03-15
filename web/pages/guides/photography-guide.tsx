@@ -167,23 +167,6 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Montana Photography Locations',
-    numberOfItems: locations.length,
-    itemListElement: locations.map((a, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
-        '@type': 'Place',
-        name: a.name,
-        description: a.description,
-        geo: { '@type': 'GeoCoordinates', latitude: a.lat, longitude: a.lng },
-      },
-    })),
-  };
-
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -239,7 +222,6 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
         <meta name="twitter:description" content={desc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
       <Header />

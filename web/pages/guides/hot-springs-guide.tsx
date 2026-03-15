@@ -186,33 +186,6 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
 
   const allSprings = [...resorts, ...community, ...primitive, ...nearBorder];
 
-  const itemListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Montana Hot Springs',
-    numberOfItems: totalCount,
-    itemListElement: allSprings.map((s, i) => {
-      const item: Record<string, unknown> = {
-        '@type': 'TouristAttraction',
-        name: s.name,
-        description: s.description,
-        geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lng },
-        isAccessibleForFree: s.cost === 'Free',
-      };
-      if (s.address) item.address = s.address;
-      if (s.phone) item.telephone = s.phone;
-      if (s.rating != null && s.reviews) {
-        item.aggregateRating = {
-          '@type': 'AggregateRating',
-          ratingValue: s.rating,
-          bestRating: 5,
-          ratingCount: s.reviews,
-        };
-      }
-      return { '@type': 'ListItem', position: i + 1, item };
-    }),
-  };
-
   return (
     <>
       <Head>
@@ -230,7 +203,6 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         <meta name="twitter:description" content={desc} />
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       </Head>
       <Header />
       <Hero title="Montana Hot Springs Directory" subtitle={`${totalCount} springs: resorts, community pools, and backcountry soaks`} image="/images/hero-image.jpg" alt="Natural hot spring in Montana" small />
