@@ -17,6 +17,7 @@ function getTownList(repoRoot) {
 
 function getLastmod(loc) {
   if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
+  if (loc.includes('/explore-montana/')) return '2026-03-01';
   if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
   if (loc.includes('/montana-towns/')) return '2026-03-01';
   if (loc.includes('/compare/')) return '2026-03-01';
@@ -30,6 +31,7 @@ function getLastmod(loc) {
 function getPriority(loc, baseUrl) {
   if (loc === baseUrl + '/') return 1.0;
   if (loc === baseUrl + '/montana-towns/') return 0.9;
+  if (loc === baseUrl + '/explore-montana/') return 0.85;
   if (/\/montana-towns\/[^/]+\/$/.test(loc)) return 0.9;
   if (/\/guides\/moving-to-/.test(loc)) return 0.8;
   if (/\/lodging\/[^/]+\//.test(loc)) return 0.8;
@@ -67,6 +69,7 @@ function url(loc, baseUrl, changefreq = 'monthly') {
 
   add(`${baseUrl}/`, 'weekly');
   add(`${baseUrl}/montana-towns/`, 'weekly');
+  add(`${baseUrl}/explore-montana/`, 'weekly');
   add(`${baseUrl}/compare/`);
   add(`${baseUrl}/planners/`);
   add(`${baseUrl}/guides/montana-backroads/`);
