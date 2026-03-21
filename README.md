@@ -74,6 +74,8 @@ Content is file-based; there is no CMS. **Publishing = merge to the deploy branc
 
 **Note:** Slugs that already exist as dedicated `.tsx` pages under `pages/Information/` or `pages/guides/` are not duplicated by dynamic routes—avoid filename collisions.
 
+**Important (Git + case sensitivity):** The repo uses `web/pages/Information/` (capital **I**) for Montana Facts routes. Markdown articles are rendered by `web/pages/Information/[slug].tsx` — this file **must be committed** or production will 404 on `/information/<slug>/` even though links work locally on case-insensitive macOS.
+
 ### Field notes
 
 1. Edit `web/data/field-notes.json` or run `node web/scripts/new-field-note.js` (adds a **stored** note).
