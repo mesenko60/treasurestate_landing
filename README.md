@@ -38,9 +38,9 @@ npm run build
 
 This runs:
 
-1. **prebuild** — asset copy, WebP conversion, `generate-search-index.js` → `public/search-index.json`
-2. **next build** + **next export** — static HTML to `web/out/`
-3. **generate-sitemap.js** — writes `web/out/sitemap.xml`
+1. **prebuild:** asset copy, WebP conversion, `generate-search-index.js` → `public/search-index.json`
+2. **next build** + **next export:** static HTML to `web/out/`
+3. **generate-sitemap.js:** writes `web/out/sitemap.xml`
 
 Preview the static site locally:
 
@@ -72,9 +72,9 @@ Content is file-based; there is no CMS. **Publishing = merge to the deploy branc
 2. Ensure body meets project rules: sufficient word count, internal links, headings as needed.
 3. Commit and push. The next build generates routes, search index entries, and sitemap URLs automatically.
 
-**Note:** Slugs that already exist as dedicated `.tsx` pages under `pages/Information/` or `pages/guides/` are not duplicated by dynamic routes—avoid filename collisions.
+**Note:** Slugs that already exist as dedicated `.tsx` pages under `pages/Information/` or `pages/guides/` are not duplicated by dynamic routes. Avoid filename collisions.
 
-**Important (Git + case sensitivity):** The repo uses `web/pages/Information/` (capital **I**) for Montana Facts routes. Markdown articles are rendered by `web/pages/Information/[slug].tsx` — this file **must be committed** or production will 404 on `/information/<slug>/` even though links work locally on case-insensitive macOS.
+**Important (Git + case sensitivity):** The repo uses `web/pages/Information/` (capital **I**) for Montana Facts routes. Markdown articles are rendered by `web/pages/Information/[slug].tsx`. This file **must be committed** or production will 404 on `/information/<slug>/` even though links work locally on case-insensitive macOS.
 
 ### Field notes
 
@@ -84,7 +84,7 @@ Content is file-based; there is no CMS. **Publishing = merge to the deploy branc
 
 ### Feature flag
 
-`web/lib/feature-flags.ts` — `content_hub_enabled` gates article paths, homepage culture module, related modules, etc. Set to `false` to disable those surfaces without removing content files.
+`web/lib/feature-flags.ts`: `content_hub_enabled` gates article paths, homepage culture module, related modules, etc. Set to `false` to disable those surfaces without removing content files.
 
 ### After adding routes or new page types
 
