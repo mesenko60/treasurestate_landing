@@ -8,6 +8,9 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ArticleCard from '../../components/ArticleCard';
+import { isEnabled } from '../../lib/feature-flags';
+import { getArticleSummaries, type ArticleSummary } from '../../lib/articles';
 
 type GuideLink = {
   slug: string;
@@ -17,7 +20,7 @@ type GuideLink = {
   recCount: number;
 };
 
-type Props = { guides: GuideLink[] };
+type Props = { guides: GuideLink[]; cultureGuides: ArticleSummary[] };
 
 const TRAVEL_GUIDES = [
   { href: '/guides/skiing-guide', title: 'Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas — from Big Sky\u2019s 5,800 acres to Bear Paw\u2019s $25 lift tickets.' },
@@ -34,7 +37,7 @@ const TRAVEL_GUIDES = [
   { href: '/guides/winter-driving-guide', title: 'Winter Driving Guide', desc: 'Year-round routes, seasonal closures, and essential winter driving tips.' },
 ];
 
-export default function GuidesIndex({ guides }: Props) {
+export default function GuidesIndex({ guides, cultureGuides }: Props) {
   const url = 'https://treasurestate.com/guides/';
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -98,6 +101,30 @@ export default function GuidesIndex({ guides }: Props) {
             ))}
           </div>
         </section>
+
+        {/* Culture & Living Guides */}
+        {cultureGuides.length >= 2 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{ fontSize: '1.3rem', color: '#204051', marginBottom: '0.4rem' }}>Culture &amp; Living</h2>
+            <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '1.25rem' }}>
+              Local knowledge, etiquette, and cultural guides for understanding Montana life.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1rem' }}>
+              {cultureGuides.map(a => (
+                <ArticleCard
+                  key={a.slug}
+                  slug={a.slug}
+                  title={a.title}
+                  excerpt={a.excerpt}
+                  type={a.type}
+                  heroImage={a.hero_image}
+                  heroAlt={a.hero_alt}
+                  datePublished={a.date_published}
+                />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Relocation Guides */}
         <section>
@@ -190,5 +217,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     })
     .sort((a, b) => b.population - a.population);
 
-  return { props: { guides } };
+  const cultureGuides: ArticleSummary[] = isEnabled('content_hub_enabled')
+    ? getArticleSummaries('guides')
+    : [];
+
+  return { props: { guides, cultureGuides } };
 };

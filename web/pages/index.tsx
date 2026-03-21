@@ -5,6 +5,9 @@ import fs from 'fs';
 import path from 'path';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import HomepageCultureModule from '../components/HomepageCultureModule';
+import { isEnabled } from '../lib/feature-flags';
+import { getFeaturedArticles, getFeaturedFieldNotes, type ArticleSummary, type FieldNote } from '../lib/articles';
 
 type FeaturedTown = {
   slug: string;
@@ -35,6 +38,8 @@ type Props = {
   totalComparisons: number;
   featuredRankings: Ranking[];
   dataSources: DataSource[];
+  cultureArticles: ArticleSummary[];
+  cultureFieldNotes: FieldNote[];
 };
 
 const FEATURED_RANKINGS: Ranking[] = [
@@ -57,7 +62,7 @@ function fmtDollar(n: number | null): string {
   return `$${Math.round(n / 1000).toLocaleString('en-US')}K`;
 }
 
-export default function Home({ featuredTowns, totalTowns, totalGuides, totalRankings, totalComparisons, featuredRankings, dataSources }: Props) {
+export default function Home({ featuredTowns, totalTowns, totalGuides, totalRankings, totalComparisons, featuredRankings, dataSources, cultureArticles, cultureFieldNotes }: Props) {
   const siteTitle = 'Find Yourself in Montana | Treasure State';
   const siteDesc = `The complete guide to living and exploring Montana. Compare housing, cost of living, schools, and outdoor recreation across ${totalTowns} towns. Plan your move or your next adventure.`;
 
@@ -487,6 +492,9 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           </div>
         </section>
 
+        {/* ═══ 9. MONTANA CULTURE MODULE ═══ */}
+        <HomepageCultureModule articles={cultureArticles} fieldNotes={cultureFieldNotes} />
+
       </main>
 
       {/* ═══ 9. DATA CREDIBILITY FOOTER ═══ */}
@@ -560,6 +568,13 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     .map((v: any) => ({ label: v.label, lastCollected: v.lastCollected }))
     .sort((a: DataSource, b: DataSource) => b.lastCollected.localeCompare(a.lastCollected));
 
+  const cultureArticles: ArticleSummary[] = isEnabled('content_hub_enabled')
+    ? getFeaturedArticles()
+    : [];
+  const cultureFieldNotes: FieldNote[] = isEnabled('content_hub_enabled')
+    ? getFeaturedFieldNotes()
+    : [];
+
   return {
     props: {
       featuredTowns,
@@ -569,6 +584,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       totalComparisons,
       featuredRankings: FEATURED_RANKINGS,
       dataSources,
+      cultureArticles,
+      cultureFieldNotes,
     },
   };
 };

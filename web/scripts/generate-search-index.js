@@ -273,7 +273,64 @@ function fmtPop(n) {
     }
   }
 
-  // ═══ 13. OTHER PAGES ═══
+  // ═══ 13. CONTENT HUB ARTICLES ═══
+  const articlesInfoDir = path.join(repoRoot, 'articles_information');
+  if (fs.existsSync(articlesInfoDir)) {
+    const mdFiles = fs.readdirSync(articlesInfoDir).filter(f => f.endsWith('.md'));
+    for (const f of mdFiles) {
+      try {
+        const raw = fs.readFileSync(path.join(articlesInfoDir, f), 'utf8');
+        const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
+        if (fmMatch) {
+          const titleMatch = fmMatch[1].match(/^title:\s*"?(.+?)"?\s*$/m);
+          const excerptMatch = fmMatch[1].match(/^excerpt:\s*"?(.+?)"?\s*$/m);
+          const slugMatch = fmMatch[1].match(/^slug:\s*(.+?)\s*$/m);
+          const tagsMatch = fmMatch[1].match(/^tags:\s*\[(.+?)\]/m);
+          const slug = slugMatch ? slugMatch[1] : f.replace(/\.md$/, '');
+          const title = titleMatch ? titleMatch[1] : slug;
+          const desc = excerptMatch ? excerptMatch[1] : '';
+          const tags = tagsMatch ? tagsMatch[1] : '';
+          entries.push({
+            type: 'article',
+            title,
+            description: desc,
+            url: `/information/${slug}/`,
+            keywords: `${title} ${desc} ${tags} Montana`,
+          });
+        }
+      } catch { /* skip malformed files */ }
+    }
+  }
+
+  const articlesGuidesDir = path.join(repoRoot, 'articles_guides');
+  if (fs.existsSync(articlesGuidesDir)) {
+    const mdFiles = fs.readdirSync(articlesGuidesDir).filter(f => f.endsWith('.md'));
+    for (const f of mdFiles) {
+      try {
+        const raw = fs.readFileSync(path.join(articlesGuidesDir, f), 'utf8');
+        const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
+        if (fmMatch) {
+          const titleMatch = fmMatch[1].match(/^title:\s*"?(.+?)"?\s*$/m);
+          const excerptMatch = fmMatch[1].match(/^excerpt:\s*"?(.+?)"?\s*$/m);
+          const slugMatch = fmMatch[1].match(/^slug:\s*(.+?)\s*$/m);
+          const tagsMatch = fmMatch[1].match(/^tags:\s*\[(.+?)\]/m);
+          const slug = slugMatch ? slugMatch[1] : f.replace(/\.md$/, '');
+          const title = titleMatch ? titleMatch[1] : slug;
+          const desc = excerptMatch ? excerptMatch[1] : '';
+          const tags = tagsMatch ? tagsMatch[1] : '';
+          entries.push({
+            type: 'article',
+            title,
+            description: desc,
+            url: `/guides/${slug}/`,
+            keywords: `${title} ${desc} ${tags} Montana guide`,
+          });
+        }
+      } catch { /* skip malformed files */ }
+    }
+  }
+
+  // ═══ 14. OTHER PAGES ═══
   entries.push({ type: 'tool', title: 'Compare Towns', description: 'Side-by-side comparison of Montana towns', url: '/compare/', keywords: 'compare towns side by side housing cost climate' });
   entries.push({ type: 'tool', title: 'Moving Guides', description: 'Relocation guides for every Montana town', url: '/guides/', keywords: 'moving guide relocation relocate' });
   entries.push({ type: 'tool', title: 'Best of Montana', description: 'Data-driven rankings of Montana towns', url: '/best-of/', keywords: 'best of rankings top 10 Montana towns' });

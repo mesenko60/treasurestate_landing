@@ -45,7 +45,7 @@ export function getContentGroup(path: string): string {
   if (/^\/best-of\//.test(path)) return 'ranking';
   if (path === '/compare' || path === '/compare/') return 'compare_tool';
   if (/^\/compare\//.test(path)) return 'comparison';
-  if (/^\/information\//.test(path)) return 'legacy';
+  if (/^\/information\//.test(path)) return 'montana_facts';
   return 'other';
 }
 
@@ -233,6 +233,32 @@ export function trackMapInteraction(action: string) {
   gtag()?.('event', 'map_interaction', {
     event_category: 'engagement',
     event_label: action,
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  });
+}
+
+export function trackArticleView(slug: string, type: string) {
+  gtag()?.('event', 'article_view', {
+    event_category: 'content',
+    event_label: slug,
+    article_type: type,
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  });
+}
+
+export function trackShopCTAClick(articleSlug: string, ctaUrl: string) {
+  gtag()?.('event', 'shop_cta_click', {
+    event_category: 'conversion',
+    event_label: articleSlug,
+    outbound_url: ctaUrl,
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  });
+}
+
+export function trackArticleTownClick(articleSlug: string, townSlug: string) {
+  gtag()?.('event', 'article_town_click', {
+    event_category: 'navigation',
+    event_label: `${articleSlug} → ${townSlug}`,
     page_path: typeof window !== 'undefined' ? window.location.pathname : '',
   });
 }

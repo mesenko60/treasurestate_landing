@@ -29,6 +29,9 @@ import { getClusterConfig } from '../../../components/town/cluster-data';
 import { filterNearbyRecreation } from '../../../lib/recreation';
 import { getCorridorsForTown, TownCorridor } from '../../../lib/town-corridors';
 import CrossHubCities from '../../../components/town/CrossHubCities';
+import RelatedContent from '../../../components/RelatedContent';
+import { isEnabled } from '../../../lib/feature-flags';
+import { getArticlesForTown, getFeaturedArticles, type ArticleSummary } from '../../../lib/articles';
 
 type TownCoordinate = {
   name: string;
@@ -113,6 +116,7 @@ type Props = {
   } | null;
   crossLinks: { label: string; href: string }[];
   scenicDrives: TownCorridor[];
+  relatedArticles: ArticleSummary[];
   heroImage: string;
   ogImage: string;
   heroCredit?: string;
@@ -156,7 +160,7 @@ const HERO_CREDITS: Record<string, string> = {
   helena: 'Photo: RTC / Wikimedia Commons (CC BY-SA 3.0)',
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles }: Props) {
   const router = useRouter();
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
 
@@ -402,6 +406,9 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
 
           {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
           <StoreBanner />
+          {relatedArticles.length > 0 && (
+            <RelatedContent articles={relatedArticles} title="Related Reading" />
+          )}
         </div>
       </main>
 
@@ -636,6 +643,13 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         ? `https://treasurestate.com/images/towns/${slug}.jpg`
         : 'https://treasurestate.com/images/hero-image.jpg',
       ...(HERO_CREDITS[slug] ? { heroCredit: HERO_CREDITS[slug] } : {}),
+      relatedArticles: isEnabled('content_hub_enabled')
+        ? (() => {
+            const townArticles = getArticlesForTown(slug);
+            if (townArticles.length > 0) return townArticles.slice(0, 3);
+            return getFeaturedArticles().slice(0, 3);
+          })()
+        : [],
     } 
   };
 };

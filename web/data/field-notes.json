@@ -1,0 +1,67 @@
+[
+  {
+    "id": "fn-001",
+    "content": "Spring in Montana is just winter arguing with mud. The calendar says April but the sky has other plans, and your truck knows it.",
+    "status": "published",
+    "publish_as_article": false,
+    "tags": ["humor", "seasonal"],
+    "related_topics": [],
+    "featured": true,
+    "social_ready": true,
+    "social_caption": "Spring in Montana is just winter arguing with mud.",
+    "image": null,
+    "date_created": "2026-03-15"
+  },
+  {
+    "id": "fn-002",
+    "content": "You can tell who is local by how they react to a moose in the yard. Newcomers reach for their phone. Residents reach for the dog.",
+    "status": "published",
+    "publish_as_article": false,
+    "tags": ["humor", "wildlife", "culture"],
+    "related_topics": [],
+    "featured": true,
+    "social_ready": true,
+    "social_caption": "You can tell who's local by how they react to a moose in the yard.",
+    "image": null,
+    "date_created": "2026-03-16"
+  },
+  {
+    "id": "fn-003",
+    "content": "Montana distances recalibrate everything. After a year here, a 45-minute drive to the grocery store stops feeling long and starts feeling normal. An hour to the airport is close. Three hours to the nearest city is just what Saturday looks like.",
+    "status": "published",
+    "publish_as_article": false,
+    "tags": ["culture", "relocation"],
+    "related_topics": ["living-in-montana-vs-visiting"],
+    "featured": true,
+    "social_ready": true,
+    "social_caption": "Montana distances recalibrate everything.",
+    "image": null,
+    "date_created": "2026-03-17"
+  },
+  {
+    "id": "fn-004",
+    "content": "The first real Chinook wind of winter feels like the state exhaling. Forty degrees warmer in three hours, snow melting off the roof in sheets, and everyone outside in shirt sleeves looking dazed and grateful.",
+    "status": "published",
+    "publish_as_article": false,
+    "tags": ["seasonal", "weather"],
+    "related_topics": ["montana-slang"],
+    "featured": false,
+    "social_ready": true,
+    "social_caption": "The first Chinook of winter feels like the state exhaling.",
+    "image": null,
+    "date_created": "2026-03-18"
+  },
+  {
+    "id": "fn-005",
+    "content": "Nobody moves to Montana for the convenience. They move here because something in the landscape matches something in them — a need for quiet, for space, for sky that goes on longer than the eye can follow.",
+    "status": "stored",
+    "publish_as_article": false,
+    "tags": ["identity", "relocation"],
+    "related_topics": ["living-in-montana-vs-visiting"],
+    "featured": false,
+    "social_ready": true,
+    "social_caption": "Nobody moves to Montana for the convenience.",
+    "image": null,
+    "date_created": "2026-03-19"
+  }
+]

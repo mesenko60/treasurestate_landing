@@ -8,7 +8,31 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import RelatedContent from '../../components/RelatedContent';
 import { filterNearbyRecreation } from '../../lib/recreation';
+import { isEnabled } from '../../lib/feature-flags';
+import { getRelatedArticles, type ArticleSummary } from '../../lib/articles';
+
+const SLUG_TAG_MAP: Record<string, string[]> = {
+  'most-affordable-towns': ['relocation', 'cost-of-living'],
+  'best-outdoor-recreation': ['outdoor', 'recreation'],
+  'best-ski-towns': ['skiing', 'winter'],
+  'best-fishing-towns': ['fishing', 'outdoor'],
+  'towns-near-hot-springs': ['outdoor', 'travel'],
+  'best-small-towns': ['culture', 'travel'],
+  'best-towns-near-glacier-yellowstone': ['travel', 'outdoor'],
+  'best-towns-for-retirees': ['relocation', 'culture'],
+  'best-climate': ['travel', 'relocation'],
+  'best-towns-for-families': ['relocation', 'culture'],
+  'best-towns-for-young-professionals': ['relocation', 'culture'],
+  'best-towns-for-digital-nomads': ['relocation', 'culture'],
+  'safest-towns': ['relocation'],
+  'best-housing-availability': ['relocation', 'cost-of-living'],
+};
+
+function deriveTagsFromSlug(slug: string): string[] {
+  return SLUG_TAG_MAP[slug] || ['culture', 'travel'];
+}
 
 type RankedTown = {
   rank: number;
@@ -42,7 +66,7 @@ type DataFreshness = {
 
 type RelatedRanking = { slug: string; title: string };
 
-type Props = { page: PageData; freshness: DataFreshness; relatedRankings: RelatedRanking[] };
+type Props = { page: PageData; freshness: DataFreshness; relatedRankings: RelatedRanking[]; relatedArticles: ArticleSummary[] };
 
 function fmt(n: number | null | undefined): string {
   if (n == null) return '—';
@@ -60,7 +84,7 @@ function fmtFresh(dateStr?: string): string {
   return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 
-export default function BestOfPage({ page, freshness, relatedRankings }: Props) {
+export default function BestOfPage({ page, freshness, relatedRankings, relatedArticles }: Props) {
   const url = `https://treasurestate.com/best-of/${page.slug}/`;
 
   const breadcrumbs = [
@@ -121,7 +145,7 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
   return (
     <>
       <Head>
-        <title>{page.title} | Treasure State</title>
+        <title>{`${page.title} | Treasure State`}</title>
         <meta name="description" content={page.metaDescription} />
         <link rel="canonical" href={url} />
         <meta property="og:title" content={page.title} />
@@ -299,6 +323,11 @@ export default function BestOfPage({ page, freshness, relatedRankings }: Props) 
             View All Rankings
           </Link>
         </div>
+        {relatedArticles.length > 0 && (
+          <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 20px' }}>
+            <RelatedContent articles={relatedArticles} title="Related Reading" />
+          </div>
+        )}
       </main>
       <Footer />
     </>
@@ -1008,6 +1037,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         environmental: rawFreshness.environmental?.lastCollected ?? null,
       },
       relatedRankings,
+      relatedArticles: isEnabled('content_hub_enabled')
+        ? getRelatedArticles({ tags: deriveTagsFromSlug(slug), limit: 3 })
+        : [],
     },
   };
 };
