@@ -1,0 +1,184 @@
+# IndexNow Implementation Guide
+
+## What is IndexNow?
+
+IndexNow is a push-based protocol that notifies search engines immediately when content changes, reducing indexing time from weeks to hours/minutes.
+
+**Supported Search Engines:**
+- Microsoft Bing
+- Yahoo (via Bing)
+- DuckDuckGo (via Bing)
+- Yandex
+- Seznam (Czech)
+- Naver (Korea)
+
+**NOT Supported:** Google (use Google Search Console + Indexing API separately)
+
+## Why Implement IndexNow for TreasureState?
+
+1. **Faster Bing/DuckDuckGo indexing** — New lodging pages, events, guides get discovered immediately
+2. **Free and simple** — No rate limits, no complex auth
+3. **One submission = all partners** — Submit to Bing, automatically shared with Yandex, DuckDuckGo, etc.
+4. **Complements existing SEO** — Works alongside sitemaps and Google Search Console
+
+## Implementation Plan
+
+### Step 1: Generate API Key (Manual)
+
+1. Go to [Bing Webmaster Tools](https://www.bing.com/webmasters)
+2. Add/verify `treasurestate.com` if not already done
+3. Navigate to IndexNow section
+4. Generate an API key (8-128 hex characters)
+
+### Step 2: Add Key File to Public Directory
+
+Create `web/public/{YOUR_KEY}.txt` containing only the key:
+
+```txt
+f34f184d10c049ef99aa7637cdc4ef04
+```
+
+This proves domain ownership. The file must be accessible at:
+`https://treasurestate.com/{YOUR_KEY}.txt`
+
+### Step 3: Create IndexNow Submission Script
+
+Create `web/scripts/push-indexnow.js`:
+
+```javascript
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+
+const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
+const DOMAIN = 'treasurestate.com';
+const SITEMAP_PATH = path.join(__dirname, '../out/sitemap.xml');
+
+if (!INDEXNOW_KEY) {
+  console.error('INDEXNOW_KEY environment variable not set');
+  process.exit(1);
+}
+
+// Parse sitemap.xml to extract URLs
+const sitemap = fs.readFileSync(SITEMAP_PATH, 'utf8');
+const urlMatches = sitemap.match(/<loc>(.*?)<\/loc>/g) || [];
+const urls = urlMatches.map(m => m.replace(/<\/?loc>/g, ''));
+
+console.log(`Found ${urls.length} URLs in sitemap`);
+
+// Submit to IndexNow (Bing endpoint)
+const payload = JSON.stringify({
+  host: DOMAIN,
+  key: INDEXNOW_KEY,
+  urlList: urls.slice(0, 10000) // Max 10,000 per request
+});
+
+const options = {
+  hostname: 'api.indexnow.org',
+  path: '/indexnow',
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Content-Length': Buffer.byteLength(payload)
+  }
+};
+
+const req = https.request(options, (res) => {
+  console.log(`IndexNow response: ${res.statusCode}`);
+  if (res.statusCode === 200 || res.statusCode === 202) {
+    console.log('URLs submitted successfully');
+  } else {
+    console.error('Submission failed');
+    process.exit(1);
+  }
+});
+
+req.on('error', (e) => {
+  console.error(`Request error: ${e.message}`);
+  process.exit(1);
+});
+
+req.write(payload);
+req.end();
+```
+
+### Step 4: Add to Build Process
+
+Update `web/package.json`:
+
+```json
+{
+  "scripts": {
+    "build": "next build && next export",
+    "postbuild": "npm run generate:sitemap && npm run indexnow",
+    "indexnow": "node scripts/push-indexnow.js"
+  }
+}
+```
+
+### Step 5: Configure Netlify Environment Variable
+
+In Netlify dashboard:
+1. Site settings → Environment variables
+2. Add `INDEXNOW_KEY` with your API key value
+
+### Step 6: Update netlify.toml
+
+Add to build command:
+
+```toml
+[build]
+  command = "npm install && npm run build && npm run indexnow"
+```
+
+## Alternative: Netlify Function (Event-Driven)
+
+For more control, create a Netlify Function triggered on deploy success:
+
+Create `netlify/functions/indexnow-notify.js`:
+
+```javascript
+exports.handler = async (event, context) => {
+  // Only run on deploy-succeeded events
+  if (event.headers['x-netlify-event'] !== 'deploy-succeeded') {
+    return { statusCode: 200, body: 'Skipped' };
+  }
+  
+  // Fetch and submit sitemap URLs
+  // ... implementation similar to script above
+};
+```
+
+## Response Codes
+
+| Code | Meaning |
+|------|---------|
+| 200 | Success |
+| 202 | Accepted, key validation pending |
+| 400 | Invalid format |
+| 403 | Invalid key |
+| 422 | URLs don't match host |
+| 429 | Rate limited (spam) |
+
+## Best Practices
+
+1. **Submit changed URLs only** — Track previously submitted URLs in a cache file
+2. **Don't over-submit** — IndexNow is for new/updated content, not every deploy
+3. **Use alongside Google** — IndexNow doesn't help Google; continue using GSC
+4. **Monitor results** — Check Bing Webmaster Tools for indexing stats
+
+## Related Files
+
+- `web/scripts/generate-sitemap.js` — Sitemap generator (URLs come from here)
+- `netlify.toml` — Build configuration
+- `web/public/sitemap.xml` — Generated sitemap
+
+## Beads Issue
+
+Create a beads issue to track implementation:
+```bash
+bd create "Implement IndexNow for faster Bing/DuckDuckGo indexing" \
+  --description="Add IndexNow API integration to notify search engines on deploy. See .cursor/rules/indexnow-implementation.mdc for full plan." \
+  -t feature -p 2
+```
