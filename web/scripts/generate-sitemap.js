@@ -1,6 +1,8 @@
-/* Generate sitemap.xml into out/ after next export */
+/* Generate sitemap index and individual sitemaps into out/ after next export */
 const fs = require('fs');
 const path = require('path');
+
+const baseUrl = process.env.SITE_URL || 'https://treasurestate.com';
 
 function getTownList(repoRoot) {
   const listPath = path.join(repoRoot, 'cities_towns_list', 'towns.txt');
@@ -29,7 +31,7 @@ function getLastmod(loc) {
   return '2026-01-01';
 }
 
-function getPriority(loc, baseUrl) {
+function getPriority(loc) {
   if (loc === baseUrl + '/') return 1.0;
   if (loc === baseUrl + '/montana-towns/') return 0.9;
   if (loc === baseUrl + '/explore-montana/') return 0.85;
@@ -47,136 +49,199 @@ function getPriority(loc, baseUrl) {
   return 0.6;
 }
 
-function url(loc, baseUrl, changefreq = 'monthly') {
+function urlEntry(loc, changefreq = 'monthly') {
   const lastmod = getLastmod(loc);
-  const priority = getPriority(loc, baseUrl);
+  const priority = getPriority(loc);
   return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+}
+
+function writeSitemap(outDir, filename, entries) {
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
+  fs.writeFileSync(path.join(outDir, filename), xml, 'utf8');
+  return entries.length;
+}
+
+function writeSitemapIndex(outDir, sitemaps, today) {
+  const entries = sitemaps.map(name => 
+    `  <sitemap>\n    <loc>${baseUrl}/${name}</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>`
+  );
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</sitemapindex>\n`;
+  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
 }
 
 (function main() {
   const webDir = path.resolve(__dirname, '..');
   const outDir = path.join(webDir, 'out');
   const repoRoot = path.resolve(__dirname, '..', '..');
-  const baseUrl = process.env.SITE_URL || 'https://treasurestate.com';
+  const today = new Date().toISOString().split('T')[0];
+
+  if (!fs.existsSync(outDir)) {
+    console.log('out/ directory does not exist, sitemap generation skipped.');
+    return;
+  }
 
   const towns = getTownList(repoRoot);
-  const seen = new Set();
-  const entries = [];
+  const sitemaps = [];
+  const stats = {};
 
-  function add(loc, changefreq = 'monthly') {
-    if (seen.has(loc)) return;
-    seen.add(loc);
-    entries.push(url(loc, baseUrl, changefreq));
-  }
-
-  add(`${baseUrl}/`, 'weekly');
-  add(`${baseUrl}/montana-towns/`, 'weekly');
-  add(`${baseUrl}/explore-montana/`, 'weekly');
-  add(`${baseUrl}/compare/`);
-  add(`${baseUrl}/planners/`);
-  add(`${baseUrl}/guides/montana-backroads/`);
-  add(`${baseUrl}/guides/fly-fishing-guide/`);
-  add(`${baseUrl}/guides/fly-fishing-rivers/`);
-  add(`${baseUrl}/guides/hot-springs-guide/`);
-  add(`${baseUrl}/guides/campgrounds-guide/`);
-  add(`${baseUrl}/guides/hiking-guide/`);
-  add(`${baseUrl}/guides/hunting-guide/`);
-  add(`${baseUrl}/guides/skiing-guide/`);
-  add(`${baseUrl}/guides/state-parks-guide/`);
-  add(`${baseUrl}/guides/wildlife-guide/`);
-  add(`${baseUrl}/guides/photography-guide/`);
-  add(`${baseUrl}/planners/backroads-planner/`, 'weekly');
-  add(`${baseUrl}/guides/summer-road-trips/`);
-  add(`${baseUrl}/guides/winter-driving-guide/`);
-  add(`${baseUrl}/guides/bitterroot-valley/`);
-  add(`${baseUrl}/events/`, 'monthly');
-
-  const corridorsPath = path.join(webDir, 'data', 'corridors.json');
-  if (fs.existsSync(corridorsPath)) {
-    const corridors = JSON.parse(fs.readFileSync(corridorsPath, 'utf8'));
-    for (const c of corridors) {
-      add(`${baseUrl}/planners/corridors/${c.id}/`);
+  // Helper to collect URLs
+  function collectUrls(name, collector) {
+    const seen = new Set();
+    const entries = [];
+    const add = (loc, changefreq = 'monthly') => {
+      if (seen.has(loc)) return;
+      seen.add(loc);
+      entries.push(urlEntry(loc, changefreq));
+    };
+    collector(add);
+    if (entries.length > 0) {
+      const filename = `sitemap-${name}.xml`;
+      stats[name] = writeSitemap(outDir, filename, entries);
+      sitemaps.push(filename);
     }
   }
 
-  const infoDir = path.join(outDir, 'information');
-  if (fs.existsSync(infoDir)) {
-    for (const f of fs.readdirSync(infoDir)) {
-      const full = path.join(infoDir, f);
-      const isPage = f.endsWith('.html') ||
-        (fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.html')));
-      if (isPage) {
-        const slug = f.replace('.html', '');
-        add(`${baseUrl}/information/${slug}/`);
-      }
-    }
-  }
+  // ═══ 1. CORE PAGES (homepage, hubs, key landing pages) ═══
+  collectUrls('core', (add) => {
+    add(`${baseUrl}/`, 'weekly');
+    add(`${baseUrl}/montana-towns/`, 'weekly');
+    add(`${baseUrl}/explore-montana/`, 'weekly');
+    add(`${baseUrl}/guides/`);
+    add(`${baseUrl}/lodging/`);
+    add(`${baseUrl}/events/`, 'monthly');
+    add(`${baseUrl}/compare/`);
+    add(`${baseUrl}/planners/`);
+    add(`${baseUrl}/best-of/`);
+  });
 
-  for (const t of towns) {
-    const townOutDir = path.join(outDir, 'montana-towns', t.slug);
-    const hasTopics = fs.existsSync(townOutDir) &&
-      fs.readdirSync(townOutDir).some((sub) => {
-        const subPath = path.join(townOutDir, sub);
-        return fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'));
-      });
-
-    add(`${baseUrl}/montana-towns/${t.slug}/`, hasTopics ? 'weekly' : 'monthly');
-
-    if (fs.existsSync(townOutDir)) {
-      for (const sub of fs.readdirSync(townOutDir)) {
-        const subPath = path.join(townOutDir, sub);
-        if (fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'))) {
-          add(`${baseUrl}/montana-towns/${t.slug}/${sub}/`);
+  // ═══ 2. INFORMATION (Montana Facts articles) ═══
+  collectUrls('information', (add) => {
+    const infoDir = fs.existsSync(path.join(outDir, 'information'))
+      ? path.join(outDir, 'information')
+      : path.join(outDir, 'Information');
+    if (fs.existsSync(infoDir)) {
+      for (const f of fs.readdirSync(infoDir)) {
+        if (f === 'js') continue;
+        const full = path.join(infoDir, f);
+        const isPage = f.endsWith('.html') ||
+          (fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.html')));
+        if (isPage) {
+          const slug = f.replace('.html', '');
+          add(`${baseUrl}/information/${slug}/`);
         }
       }
     }
-  }
+  });
 
-  add(`${baseUrl}/guides/`);
-  add(`${baseUrl}/lodging/`);
-  const lodgingDir = path.join(outDir, 'lodging');
-  if (fs.existsSync(lodgingDir)) {
-    for (const f of fs.readdirSync(lodgingDir)) {
-      const full = path.join(lodgingDir, f);
-      if (fs.statSync(full).isDirectory()) {
-        add(`${baseUrl}/lodging/${f}/`);
+  // ═══ 3. GUIDES (activity guides, moving guides) ═══
+  collectUrls('guides', (add) => {
+    // Manually add key guides first
+    const keyGuides = [
+      'montana-backroads', 'fly-fishing-guide', 'fly-fishing-rivers', 'hot-springs-guide',
+      'campgrounds-guide', 'hiking-guide', 'hunting-guide', 'skiing-guide', 'state-parks-guide',
+      'wildlife-guide', 'photography-guide', 'summer-road-trips', 'winter-driving-guide', 'bitterroot-valley'
+    ];
+    for (const g of keyGuides) {
+      add(`${baseUrl}/guides/${g}/`);
+    }
+    // Add any other guides from output
+    const guidesDir = path.join(outDir, 'guides');
+    if (fs.existsSync(guidesDir)) {
+      for (const f of fs.readdirSync(guidesDir)) {
+        if (fs.statSync(path.join(guidesDir, f)).isDirectory()) {
+          add(`${baseUrl}/guides/${f}/`);
+        }
       }
     }
-  }
+  });
 
-  const guidesDir = path.join(outDir, 'guides');
-  if (fs.existsSync(guidesDir)) {
-    for (const f of fs.readdirSync(guidesDir)) {
-      if (fs.statSync(path.join(guidesDir, f)).isDirectory()) {
-        add(`${baseUrl}/guides/${f}/`);
+  // ═══ 4. PLANNERS ═══
+  collectUrls('planners', (add) => {
+    add(`${baseUrl}/planners/backroads-planner/`, 'weekly');
+    const corridorsPath = path.join(webDir, 'data', 'corridors.json');
+    if (fs.existsSync(corridorsPath)) {
+      const corridors = JSON.parse(fs.readFileSync(corridorsPath, 'utf8'));
+      for (const c of corridors) {
+        add(`${baseUrl}/planners/corridors/${c.id}/`);
       }
     }
-  }
+  });
 
-  add(`${baseUrl}/best-of/`);
-  const bestOfDir = path.join(outDir, 'best-of');
-  if (fs.existsSync(bestOfDir)) {
-    for (const f of fs.readdirSync(bestOfDir)) {
-      if (fs.statSync(path.join(bestOfDir, f)).isDirectory()) {
-        add(`${baseUrl}/best-of/${f}/`);
+  // ═══ 5. LODGING (town lodging pages) ═══
+  collectUrls('lodging', (add) => {
+    const lodgingDir = path.join(outDir, 'lodging');
+    if (fs.existsSync(lodgingDir)) {
+      for (const f of fs.readdirSync(lodgingDir)) {
+        const full = path.join(lodgingDir, f);
+        if (fs.statSync(full).isDirectory()) {
+          add(`${baseUrl}/lodging/${f}/`);
+        }
       }
     }
-  }
+  });
 
-  const compareDir = path.join(outDir, 'compare');
-  if (fs.existsSync(compareDir)) {
-    for (const f of fs.readdirSync(compareDir)) {
-      if (fs.statSync(path.join(compareDir, f)).isDirectory()) {
-        add(`${baseUrl}/compare/${f}/`);
+  // ═══ 6. TOWNS (main town pages) ═══
+  collectUrls('towns', (add) => {
+    for (const t of towns) {
+      const townOutDir = path.join(outDir, 'montana-towns', t.slug);
+      const hasTopics = fs.existsSync(townOutDir) &&
+        fs.readdirSync(townOutDir).some((sub) => {
+          const subPath = path.join(townOutDir, sub);
+          return fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'));
+        });
+      add(`${baseUrl}/montana-towns/${t.slug}/`, hasTopics ? 'weekly' : 'monthly');
+    }
+  });
+
+  // ═══ 7. TOWN TOPICS (sub-pages: things-to-do, history, etc.) ═══
+  collectUrls('town-topics', (add) => {
+    for (const t of towns) {
+      const townOutDir = path.join(outDir, 'montana-towns', t.slug);
+      if (fs.existsSync(townOutDir)) {
+        for (const sub of fs.readdirSync(townOutDir)) {
+          const subPath = path.join(townOutDir, sub);
+          if (fs.statSync(subPath).isDirectory() && fs.existsSync(path.join(subPath, 'index.html'))) {
+            add(`${baseUrl}/montana-towns/${t.slug}/${sub}/`);
+          }
+        }
       }
     }
-  }
+  });
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
-  if (fs.existsSync(outDir)) {
-    fs.writeFileSync(path.join(outDir, 'sitemap.xml'), xml, 'utf8');
-    console.log(`sitemap.xml generated in out/ (${entries.length} URLs)`);
-  } else {
-    console.log('out/ directory does not exist, sitemap.xml skipped.');
+  // ═══ 8. BEST-OF (rankings) ═══
+  collectUrls('best-of', (add) => {
+    const bestOfDir = path.join(outDir, 'best-of');
+    if (fs.existsSync(bestOfDir)) {
+      for (const f of fs.readdirSync(bestOfDir)) {
+        if (fs.statSync(path.join(bestOfDir, f)).isDirectory()) {
+          add(`${baseUrl}/best-of/${f}/`);
+        }
+      }
+    }
+  });
+
+  // ═══ 9. COMPARE (town comparisons - lower priority) ═══
+  collectUrls('compare', (add) => {
+    const compareDir = path.join(outDir, 'compare');
+    if (fs.existsSync(compareDir)) {
+      for (const f of fs.readdirSync(compareDir)) {
+        if (fs.statSync(path.join(compareDir, f)).isDirectory()) {
+          add(`${baseUrl}/compare/${f}/`);
+        }
+      }
+    }
+  });
+
+  // Write sitemap index
+  writeSitemapIndex(outDir, sitemaps, today);
+
+  // Summary
+  console.log('Sitemaps generated:');
+  let total = 0;
+  for (const [name, count] of Object.entries(stats)) {
+    console.log(`  sitemap-${name}.xml: ${count} URLs`);
+    total += count;
   }
+  console.log(`  sitemap.xml (index): ${sitemaps.length} sitemaps`);
+  console.log(`Total: ${total} URLs`);
 })();
