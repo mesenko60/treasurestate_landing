@@ -54,7 +54,7 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
   return (
     <>
       <Head>
-        <title>{metaTitle} | Treasure State</title>
+        <title>{`${metaTitle} | Treasure State`}</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={url} />
         <meta property="og:title" content={metaTitle} />

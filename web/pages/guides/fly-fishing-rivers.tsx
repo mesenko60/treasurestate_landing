@@ -33,7 +33,7 @@ export default function FlyFishingRivers() {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Madison River, Bitterroot River, Big Hole River, Gallatin River, Yellowstone River, Flathead River, Missouri River, Montana trout fishing, Montana fly fishing rivers" />
         <meta property="og:title" content={title} />

@@ -28,7 +28,7 @@ export default function SummerRoadTrips() {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana summer road trips, Montana scenic drives, Beartooth Highway, Going-to-the-Sun Road, Flathead Lake, Montana summer driving, best drives Montana" />
         <meta property="og:title" content={title} />

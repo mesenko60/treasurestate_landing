@@ -28,7 +28,7 @@ export default function WinterDrivingGuide() {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana winter driving, Montana road closures, Montana winter routes, winter driving tips Montana, Montana snow driving, safe Montana winter travel" />
         <meta property="og:title" content={title} />
