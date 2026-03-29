@@ -7,6 +7,8 @@
     "prebuild": "node scripts/copy-assets.js && node scripts/convert-images-to-webp.js && node scripts/generate-search-index.js",
     "images:convert": "node scripts/convert-images-to-webp.js",
     "build": "next build && next export && node scripts/generate-sitemap.js",
+    "indexnow": "node scripts/push-indexnow.js",
+    "indexnow:force": "node scripts/push-indexnow.js --force",
     "start": "serve out",
     "postexport": "node scripts/generate-sitemap.js"
   },

@@ -24,3 +24,6 @@ dist/
 # Dolt database files (added by bd init)
 .dolt/
 *.db
+
+# IndexNow cache (tracks previously submitted URLs)
+web/.indexnow-cache.json
