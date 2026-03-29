@@ -193,7 +193,7 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana hot springs, Montana soaking, hot springs near me, backcountry hot springs Montana, primitive hot springs Montana, Montana hot springs resorts, hot springs Idaho Montana border" />
         <meta property="og:title" content={title} />
@@ -325,7 +325,7 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         </div>
 
         {/* ─── PHOTOGRAPHY CREDIT ─── */}
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
           Hours, prices, and seasonal availability may change. Contact individual springs to confirm before visiting.
           All photography original and locally captured.
         </p>

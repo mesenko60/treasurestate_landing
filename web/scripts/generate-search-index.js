@@ -273,7 +273,16 @@ function fmtPop(n) {
     }
   }
 
-  // ═══ 13. CONTENT HUB ARTICLES ═══
+  // ═══ 13. EVENTS PAGE ═══
+  entries.push({
+    type: 'guide',
+    title: 'Montana Events & Festivals 2026',
+    description: 'Annual calendar of Montana events — Sweet Pea Festival, Montana Folk Festival, rodeos, music festivals, and more',
+    url: '/events/',
+    keywords: 'Montana events festivals Sweet Pea Festival Montana Folk Festival Crow Fair rodeo Montana State Fair music festival',
+  });
+
+  // ═══ 14. CONTENT HUB ARTICLES ═══
   const articlesInfoDir = path.join(repoRoot, 'articles_information');
   if (fs.existsSync(articlesInfoDir)) {
     const mdFiles = fs.readdirSync(articlesInfoDir).filter(f => f.endsWith('.md'));

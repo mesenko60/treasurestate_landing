@@ -17,13 +17,13 @@ You can also read our full [Missoula town guide](/montana-towns/missoula/) for t
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
 | [Holiday Inn Missoula Downtown](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Downtown-Missoula.h9471.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-downtown-table) | Chain Hotel | Downtown | General travelers | $$-$$$ |
-| Staybridge Suites Missoula | Chain Hotel | Further from downtown | Extended stays | $$-$$$ |
-| Super 8 by Wyndham Missoula/Reserve St. | Motel | Reserve St. | Budget travelers | $ |
-| Days Inn and Suites by Wyndham Downtown Missoula-University | Chain Hotel | Downtown/University area | Budget travelers | $ |
-| Loge Camps Missoula | Boutique/Unique | Near Mobash Skate Park | Adventurous travelers | $$-$$$ |
+| [Staybridge Suites Missoula](https://www.expedia.com/Missoula-Hotels-Staybridge-Suites-Missoula.h1990315.Hotel-Information?camref=1011l52GG6&adref=missoula-staybridge-suites-table) | Chain Hotel | Further from downtown | Extended stays | $$-$$$ |
+| [Super 8 by Wyndham Missoula/Reserve St.](https://www.expedia.com/Missoula-Hotels-Super-8-by-Wyndham-Missoula-Reserve-St.h123701.Hotel-Information?camref=1011l52GG6&adref=missoula-super-8-table) | Motel | Reserve St. | Budget travelers | $ |
+| [Days Inn and Suites by Wyndham Downtown Missoula-University](https://www.expedia.com/Missoula-Hotels-Days-Inn-and-Suites-by-Wyndham-Downtown-Missoula-University.h9823477.Hotel-Information?camref=1011l52GG6&adref=missoula-days-inn-table) | Chain Hotel | Downtown/University area | Budget travelers | $ |
+| [LOGE Missoula](https://www.expedia.com/Missoula-Hotels-LOGE-Missoula.h102118196.Hotel-Information?camref=1011l52GG6&adref=missoula-loge-table) | Boutique/Unique | Near Mobash Skate Park | Adventurous travelers | $$-$$$ |
 | Courtyard Missoula | Chain Hotel | (Not specified | General travelers | $$-$$$ |
 | [Residence Inn Missoula Downtown](https://www.expedia.com/Missoula-Hotels-Residence-Inn-By-Marriott-Missoula-Downtown.h33291172.Hotel-Information?camref=1011l52GG6&adref=missoula-residence-inn-table) | Chain Hotel | Downtown | General travelers | $$$-$$$$ |
-| Holiday Inn Express & Suites Northwest | Chain Hotel | Northwest Missoula | Pet owners | $$-$$$ |
+| [Holiday Inn Express & Suites Missoula](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Express-Hotel-Suites-Missoula-by-IHG.h4319184.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-express-table) | Chain Hotel | Northwest Missoula | Pet owners | $$-$$$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -33,19 +33,19 @@ You can also read our full [Missoula town guide](/montana-towns/missoula/) for t
 
 **Holiday Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Convenient downtown location Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Downtown-Missoula.h9471.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-downtown).
 
-**Staybridge Suites Missoula** is located in Further from downtown and is best suited for Extended stays. Good amenities Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-staybridge-suites-missoula).
+**Staybridge Suites Missoula** is located in Further from downtown and is best suited for Extended stays. Good amenities Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Staybridge-Suites-Missoula.h1990315.Hotel-Information?camref=1011l52GG6&adref=missoula-staybridge-suites).
 
-**Super 8 by Wyndham Missoula/Reserve St.** is located in Reserve St. and is best suited for Budget travelers. Excellent value Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-super-8-by-wyndham-missoula-re).
+**Super 8 by Wyndham Missoula/Reserve St.** is located in Reserve St. and is best suited for Budget travelers. Excellent value Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Super-8-by-Wyndham-Missoula-Reserve-St.h123701.Hotel-Information?camref=1011l52GG6&adref=missoula-super-8).
 
-**Days Inn and Suites by Wyndham Downtown Missoula-University** is located in Downtown/University area and is best suited for Budget travelers. Good balance of price and location. Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-days-inn-and-suites-by-wyndham).
+**Days Inn and Suites by Wyndham Downtown Missoula-University** is located in Downtown/University area and is best suited for Budget travelers. Good balance of price and location. Nightly rates typically fall in the under $100/night range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Days-Inn-and-Suites-by-Wyndham-Downtown-Missoula-University.h9823477.Hotel-Information?camref=1011l52GG6&adref=missoula-days-inn).
 
-**Loge Camps Missoula** is located in Near Mobash Skate Park and is best suited for Adventurous travelers. Different kind of experience Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-loge-camps-missoula).
+**Loge Camps Missoula** is located in Near Mobash Skate Park and is best suited for Adventurous travelers. Different kind of experience Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-LOGE-Missoula.h102118196.Hotel-Information?camref=1011l52GG6&adref=missoula-loge).
 
 **Courtyard Missoula** is located in (Not specified and is best suited for General travelers. Indoor pools Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-courtyard-missoula).
 
 **Residence Inn Missoula Downtown** is located in Downtown and is best suited for General travelers. Very high rating Nightly rates typically fall in the $$$-$$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Residence-Inn-By-Marriott-Missoula-Downtown.h33291172.Hotel-Information?camref=1011l52GG6&adref=missoula-residence-inn).
 
-**Holiday Inn Express & Suites Northwest** is located in Northwest Missoula and is best suited for Pet owners. Pet-friendly. Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=Missoula%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=missoula-holiday-inn-express-&-suites-n).
+**Holiday Inn Express & Suites Northwest** is located in Northwest Missoula and is best suited for Pet owners. Pet-friendly. Nightly rates typically fall in the $$-$$$ range. Check current rates on [Expedia](https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Express-Hotel-Suites-Missoula-by-IHG.h4319184.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-express).
 
 ---
 

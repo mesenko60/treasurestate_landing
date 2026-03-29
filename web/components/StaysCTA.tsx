@@ -96,7 +96,7 @@ export default function StaysCTA({ townName, slug }: Props) {
       </div>
       {townName && (
         <p style={{ fontSize: '0.85rem', margin: '1rem 0 0', opacity: 0.9 }}>
-          For a full breakdown of hotels, B&Bs, cabins, and vacation rentals — including current rates and booking tips — see our complete <Link href={`/lodging/${lodgingSlug}/`} style={{ color: '#d8973c', fontWeight: 600, textDecoration: 'underline' }}>Where to Stay in {name} guide</Link>.
+          For a full breakdown of hotels, B&Bs, cabins, and vacation rentals — including current rates and booking tips — see our complete <Link href={`/lodging/${lodgingSlug}/`} style={{ color: '#f5c97a', fontWeight: 600, textDecoration: 'underline' }}>Where to Stay in {name} guide</Link>.
         </p>
       )}
       <p style={{

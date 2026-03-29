@@ -130,7 +130,7 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana hiking trails, Montana trailheads, Montana state parks hiking, Glacier National Park trails, Montana waterfall hikes, best hikes Montana, hiking near Missoula, hiking near Bozeman" />
         <meta property="og:title" content={title} />
@@ -242,7 +242,7 @@ export default function HikingGuide({ trails, stateParks, nationalPark, waterfal
           </ul>
         </div>
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
           Trail conditions change seasonally. Many high-elevation trails are snow-covered through June. Check local ranger districts for current conditions.
         </p>
 

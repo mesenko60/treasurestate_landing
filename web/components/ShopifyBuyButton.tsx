@@ -71,11 +71,11 @@ export default function ShopifyBuyButton({
                   'color': '#ffffff',
                   ':hover': {
                     'color': '#ffffff',
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   },
-                  'background-color': '#d8973c',
+                  'background-color': '#925f14',
                   ':focus': {
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   },
                   'border-radius': '4px'
                 },
@@ -101,11 +101,11 @@ export default function ShopifyBuyButton({
                   'color': '#ffffff',
                   ':hover': {
                     'color': '#ffffff',
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   },
-                  'background-color': '#d8973c',
+                  'background-color': '#925f14',
                   ':focus': {
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   },
                   'border-radius': '4px'
                 },
@@ -122,12 +122,12 @@ export default function ShopifyBuyButton({
               styles: {
                 toggle: {
                   'font-family': 'Montserrat, sans-serif',
-                  'background-color': '#d8973c',
+                  'background-color': '#925f14',
                   ':hover': {
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   },
                   ':focus': {
-                    'background-color': '#c68532'
+                    'background-color': '#7a4f10'
                   }
                 }
               }

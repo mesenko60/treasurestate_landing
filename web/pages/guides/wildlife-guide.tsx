@@ -203,7 +203,7 @@ export default function WildlifeGuide({ areas, contentHtml }: Props) {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana wildlife viewing, Montana grizzly bear viewing, Montana wolf watching, Yellowstone wildlife, Glacier National Park wildlife, Montana bison, Montana elk viewing, Montana wildlife guide" />
         <meta property="og:title" content={title} />
@@ -323,9 +323,9 @@ export default function WildlifeGuide({ areas, contentHtml }: Props) {
 
         <div className="guide-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
           All locations and details sourced from Montana Fish, Wildlife &amp; Parks, the National Park Service, and the U.S. Fish &amp; Wildlife Service.
-          Always verify current conditions and closures at <a href="https://fwp.mt.gov" style={{ color: '#aaa' }}>fwp.mt.gov</a> or the relevant park/refuge website before visiting.
+          Always verify current conditions and closures at <a href="https://fwp.mt.gov" style={{ color: '#555' }}>fwp.mt.gov</a> or the relevant park/refuge website before visiting.
         </p>
 
         {/* ─── CTAs ─── */}

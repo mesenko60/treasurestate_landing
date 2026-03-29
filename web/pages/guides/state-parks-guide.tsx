@@ -239,7 +239,7 @@ export default function StateParksGuide({ parks, contentHtml }: Props) {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content="Montana's state parks — from Makoshika's badlands to the Smith River float corridor. Camping, fees, activities, and directions." />
         <meta name="keywords" content="Montana state parks, Montana camping, Makoshika State Park, Lewis and Clark Caverns, Bannack ghost town, Smith River float, Montana FWP, Montana parks guide" />
         <meta property="og:title" content={title} />
@@ -355,9 +355,9 @@ export default function StateParksGuide({ parks, contentHtml }: Props) {
 
         <div className="guide-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
           All fees, campsite counts, and park details reflect current information from Montana Fish, Wildlife &amp; Parks.
-          Always verify at <a href="https://fwp.mt.gov/stateparks" style={{ color: '#aaa' }}>fwp.mt.gov/stateparks</a> before visiting.
+          Always verify at <a href="https://fwp.mt.gov/stateparks" style={{ color: '#555' }}>fwp.mt.gov/stateparks</a> before visiting.
         </p>
 
         {/* ─── CTAs ─── */}

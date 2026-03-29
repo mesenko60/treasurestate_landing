@@ -200,7 +200,7 @@ export default function SkiingGuide({ areas, contentHtml }: Props) {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana skiing, Montana ski areas, Montana snowboarding, Montana ski resorts, Big Sky Resort, Whitefish Mountain, Bridger Bowl, Montana powder, Montana ski guide" />
         <meta property="og:title" content={title} />
@@ -298,7 +298,7 @@ export default function SkiingGuide({ areas, contentHtml }: Props) {
 
         <div className="guide-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
           All lift ticket prices, terrain stats, and season dates reflect 2024–2025 information from individual resort websites
           and the Montana Office of Tourism. Always verify current conditions and pricing directly with each ski area before visiting.
         </p>

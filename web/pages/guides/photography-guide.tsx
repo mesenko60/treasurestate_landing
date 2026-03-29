@@ -212,7 +212,7 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana photography, Montana landscape photography, Montana wildlife photography, Montana astrophotography, Glacier National Park photography, Beartooth Highway, Lamar Valley, Makoshika State Park, Montana dark skies" />
         <meta property="og:title" content={title} />
@@ -326,7 +326,7 @@ export default function PhotographyGuide({ locations, contentHtml }: Props) {
 
         <div className="guide-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
           All locations, fees, and access details reflect current information from the National Park Service,
           Montana Fish Wildlife &amp; Parks, USFS, and BLM. Always verify current conditions before visiting.
         </p>

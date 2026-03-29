@@ -67,7 +67,23 @@ export async function markdownToHtml(md: string, currentTownName?: string): Prom
     }
   }
   
-  return tokens.join('');
+  let html = tokens.join('');
+  
+  // Add rel="sponsored noopener" and target="_blank" to affiliate links (Expedia, VRBO)
+  html = html.replace(
+    /<a href="(https:\/\/www\.expedia\.com[^"]*)">/g,
+    '<a href="$1" rel="sponsored noopener" target="_blank">'
+  );
+  html = html.replace(
+    /<a href="(https:\/\/vrbo\.com[^"]*)">/g,
+    '<a href="$1" rel="sponsored noopener" target="_blank">'
+  );
+  html = html.replace(
+    /<a href="(https:\/\/www\.vrbo\.com[^"]*)">/g,
+    '<a href="$1" rel="sponsored noopener" target="_blank">'
+  );
+  
+  return html;
 }
 
 export function extractAEOData(md: string, townName: string): AEOData {

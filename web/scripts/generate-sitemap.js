@@ -17,6 +17,7 @@ function getTownList(repoRoot) {
 
 function getLastmod(loc) {
   if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
+  if (loc.includes('/events/')) return '2026-03-21';
   if (loc.includes('/explore-montana/')) return '2026-03-01';
   if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
   if (loc.includes('/montana-towns/')) return '2026-03-01';
@@ -36,6 +37,7 @@ function getPriority(loc, baseUrl) {
   if (/\/guides\/moving-to-/.test(loc)) return 0.8;
   if (/\/lodging\/[^/]+\//.test(loc)) return 0.8;
   if (loc === baseUrl + '/lodging/') return 0.75;
+  if (loc === baseUrl + '/events/') return 0.75;
   if (/\/montana-towns\/[^/]+\/[^/]+\//.test(loc)) return 0.7;
   if (/\/guides\//.test(loc)) return 0.7;
   if (/\/best-of\//.test(loc)) return 0.7;
@@ -87,6 +89,7 @@ function url(loc, baseUrl, changefreq = 'monthly') {
   add(`${baseUrl}/guides/summer-road-trips/`);
   add(`${baseUrl}/guides/winter-driving-guide/`);
   add(`${baseUrl}/guides/bitterroot-valley/`);
+  add(`${baseUrl}/events/`, 'monthly');
 
   const corridorsPath = path.join(webDir, 'data', 'corridors.json');
   if (fs.existsSync(corridorsPath)) {

@@ -32,7 +32,7 @@ export default function FlyFishingGuide() {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana fly fishing, Montana trout fishing, Madison River, Bitterroot River, Skwala hatch, Big Hole River, Gallatin River, Yellowstone River, Flathead River, Missouri River, Montana fishing history, fly fishing Montana" />
         <meta property="og:title" content={title} />
@@ -220,7 +220,7 @@ export default function FlyFishingGuide() {
           Reading early accounts like <em>Fly Fishing in Wonderland</em> offers a fascinating glimpse into the origins of Montana&rsquo;s fly-fishing reputation—a reputation that continues to attract anglers from around the world.
         </p>
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', marginTop: '2rem' }}>
           Historic content drawn from public-domain sources including <em>Fly Fishing in Wonderland</em> (1919) by Orange Perry Barnes.
         </p>
 

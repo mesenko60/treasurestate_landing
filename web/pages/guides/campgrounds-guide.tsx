@@ -134,7 +134,7 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana campgrounds, Montana RV parks, Montana camping, KOA Montana, state park campgrounds Montana, free camping Montana, dispersed camping Montana, Montana camp sites" />
         <meta property="og:title" content={title} />
@@ -261,7 +261,7 @@ export default function CampgroundsGuide({ koa, state, publicLand, rv, privateCa
           </ul>
         </div>
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '1.5rem' }}>
           Rates, availability, and seasonal hours may change. Contact individual campgrounds to confirm before visiting.
         </p>
 

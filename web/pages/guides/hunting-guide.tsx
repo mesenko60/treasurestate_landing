@@ -335,7 +335,7 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
     <>
       <Head>
         <link rel="canonical" href={url} />
-        <title>{title} | Treasure State</title>
+        <title>{`${title} | Treasure State`}</title>
         <meta name="description" content={desc} />
         <meta name="keywords" content="Montana hunting, Montana elk hunting, Montana deer hunting, Montana hunting seasons, Montana hunting license, Montana WMA, Montana public land hunting, Montana FWP" />
         <meta property="og:title" content={title} />
@@ -535,9 +535,9 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
           </ul>
         </div>
 
-        <p style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
+        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem' }}>
           All season dates, license fees, and regulations reflect 2025–2026 information from Montana Fish, Wildlife &amp; Parks.
-          Always verify current regulations at <a href="https://fwp.mt.gov" style={{ color: '#aaa' }}>fwp.mt.gov</a> before hunting.
+          Always verify current regulations at <a href="https://fwp.mt.gov" style={{ color: '#555' }}>fwp.mt.gov</a> before hunting.
         </p>
 
         {/* ─── CTAs ─── */}

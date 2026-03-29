@@ -19,9 +19,9 @@ You can also read our full [Whitefish town guide](/montana-towns/whitefish/) for
 | [Lodge at Whitefish Lake](https://www.expedia.com/Whitefish-Hotels-Lodge-At-Whitefish-Lake.h1492496.Hotel-Information?camref=1011l52GG6&adref=whitefish-lodge-at-whitefish-lake-table) | Resort | Whitefish Lake | Luxury, Families, Couples | $$$$ |
 | [Grouse Mountain Lodge](https://www.expedia.com/Whitefish-Hotels-Grouse-Mountain-Lodge.h15527.Hotel-Information?camref=1011l52GG6&adref=whitefish-grouse-mountain-lodge-table) | Lodge | Near Whitefish Lake Golf Club | Golf, Families, Outdoor | $$$ |
 | [Hampton Inn & Suites Whitefish](https://www.expedia.com/Whitefish-Hotels-Hampton-Inn-Suites-Whitefish.h15178119.Hotel-Information?camref=1011l52GG6&adref=whitefish-hampton-inn-suites-table) | Chain Hotel | US Hwy 93 South | Families, Budget-conscious | $$ |
-| Good Medicine Lodge | B&B | Whitefish | Couples, Gourmet breakfast | $$$ |
+| [Good Medicine Lodge](https://www.expedia.com/Whitefish-Hotels-Good-Medicine-Lodge-Bed-Breakfast.h1210336.Hotel-Information?camref=1011l52GG6&adref=whitefish-good-medicine-lodge-table) | B&B | Whitefish | Couples, Gourmet breakfast | $$$ |
 | Garden Wall Inn | B&B | Near Glacier National Park | Couples, Luxury | $$$ |
-| Haymoon Resort | B&B | Whitefish | Couples, Mountain views | $$ |
+| [Haymoon Resort](https://www.expedia.com/Whitefish-Hotels-Haymoon-Resort.h38716643.Hotel-Information?camref=1011l52GG6&adref=whitefish-haymoon-resort-table) | B&B | Whitefish | Couples, Mountain views | $$ |
 
 *Price ranges: $ = under $100/night · $$ = $100–$175 · $$$ = $175–$300 · $$$$ = $300+*
 
@@ -39,11 +39,11 @@ You can also read our full [Whitefish town guide](/montana-towns/whitefish/) for
 
 ## Bed & Breakfasts and Inns
 
-**Good Medicine Lodge** is situated in Whitefish, Montana. Highly acclaimed, perfect home base for northwestern Montana, warm and hearty breakfasts made with fresh, organic, and local ingredients. Check availability on [Expedia](https://www.expedia.com/Hotel-Search?destination=Whitefish%2C%20Montana%2C%20United%2520States%2520of%2520America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=whitefish-good-medicine-lodge).
+**Good Medicine Lodge** is situated in Whitefish, Montana. Highly acclaimed, perfect home base for northwestern Montana, warm and hearty breakfasts made with fresh, organic, and local ingredients. Check availability on [Expedia](https://www.expedia.com/Whitefish-Hotels-Good-Medicine-Lodge-Bed-Breakfast.h1210336.Hotel-Information?camref=1011l52GG6&adref=whitefish-good-medicine-lodge).
 
 **Garden Wall Inn** is situated in Whitefish, Montana (near Glacier National Park). Luxurious hotel-style lodging, famous for gourmet breakfasts. Check availability on [Expedia](https://www.expedia.com/Hotel-Search?destination=Whitefish%2C%20Montana%2C%20United%2520States%2520of%2520America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=whitefish-garden-wall-inn).
 
-**Haymoon Resort** is situated in Whitefish, Montana. Charming bed and breakfast, cozy accommodations, delicious breakfasts, stunning mountain views. Check availability on [Expedia](https://www.expedia.com/Hotel-Search?destination=Whitefish%2C%20Montana%2C%20United%2520States%2520of%2520America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=whitefish-haymoon-resort).
+**Haymoon Resort** is situated in Whitefish, Montana. Charming bed and breakfast, cozy accommodations, delicious breakfasts, stunning mountain views. Check availability on [Expedia](https://www.expedia.com/Whitefish-Hotels-Haymoon-Resort.h38716643.Hotel-Information?camref=1011l52GG6&adref=whitefish-haymoon-resort).
 
 ---
 

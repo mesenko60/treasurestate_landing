@@ -17,7 +17,7 @@ You can also read our full [West Yellowstone town guide](/montana-towns/west-yel
 | Property | Type | Location | Best For | Price Range |
 |---|---|---|---|---|
 | [Gray Wolf Inn & Suites](https://www.expedia.com/West-Yellowstone-Hotels-Gray-Wolf-Inn-Suites.h62797.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-gray-wolf-inn-table) | Hotel | Near West Entrance | Families, Park visitors | $$$ |
-| [Holiday Inn West Yellowstone](https://www.expedia.com/Hotel-Search?destination=West%20Yellowstone%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=west-yellowstone-holiday-inn-table) | Chain Hotel | Downtown, near West Entrance | Families, Business | $$$ |
+| [Holiday Inn West Yellowstone](https://www.expedia.com/West-Yellowstone-Hotels-Holiday-Inn-West-Yellowstone-by-IHG.h24043.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-holiday-inn-table) | Chain Hotel | Downtown, near West Entrance | Families, Business | $$$ |
 | [Yellowstone Park Hotel](https://www.expedia.com/West-Yellowstone-Hotels-Yellowstone-Park-Hotel.h1731576.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-yellowstone-park-hotel-table) | Hotel | Near West Entrance | Families, Park visitors | $$ |
 | West Yellowstone Bed and Breakfast | B&B | Gallatin National Forest | Couples, Quiet retreat | $$$ |
 
@@ -29,7 +29,7 @@ You can also read our full [West Yellowstone town guide](/montana-towns/west-yel
 
 **Gray Wolf Inn & Suites** is located two blocks from Yellowstone's West Entrance and is best suited for Families, Park visitors. Indoor pool, hot tub, free breakfast, free bike rentals, family suites with kitchens. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/West-Yellowstone-Hotels-Gray-Wolf-Inn-Suites.h62797.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-gray-wolf-inn).
 
-**Holiday Inn West Yellowstone** is located downtown near the West Entrance and is best suited for Families, Business travelers. Indoor pool, hot tub, The Branch Restaurant & Bar, game room, free airport shuttle, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/Hotel-Search?destination=West%20Yellowstone%2C%20Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=west-yellowstone-holiday-inn).
+**Holiday Inn West Yellowstone** is located downtown near the West Entrance and is best suited for Families, Business travelers. Indoor pool, hot tub, The Branch Restaurant & Bar, game room, free airport shuttle, pet-friendly. Nightly rates typically fall in the $175–$300/night range. Check current rates on [Expedia](https://www.expedia.com/West-Yellowstone-Hotels-Holiday-Inn-West-Yellowstone-by-IHG.h24043.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-holiday-inn).
 
 **Yellowstone Park Hotel** is located near the West Entrance and is best suited for Families, Park visitors. Indoor pool, hot tub, firepit, free bike rentals, arcade, gym. Nightly rates typically fall in the $100–$175/night range. Check current rates on [Expedia](https://www.expedia.com/West-Yellowstone-Hotels-Yellowstone-Park-Hotel.h1731576.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-yellowstone-park-hotel).
 

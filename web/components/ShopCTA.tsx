@@ -33,7 +33,7 @@ export default function ShopCTA({ label, url, articleSlug }: Props) {
         style={{
           display: 'inline-block',
           padding: '0.55rem 1.25rem',
-          background: '#d8973c',
+          background: '#925f14',
           color: '#fff',
           borderRadius: '6px',
           textDecoration: 'none',
@@ -41,15 +41,15 @@ export default function ShopCTA({ label, url, articleSlug }: Props) {
           fontSize: '0.85rem',
           fontFamily: "var(--font-primary, 'Montserrat', sans-serif)",
           transition: 'transform 0.2s, box-shadow 0.2s',
-          boxShadow: '0 2px 8px rgba(216,151,60,0.25)',
+          boxShadow: '0 2px 8px rgba(146,95,20,0.25)',
         }}
         onMouseEnter={e => {
           (e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(216,151,60,0.35)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(146,95,20,0.35)';
         }}
         onMouseLeave={e => {
           (e.currentTarget as HTMLElement).style.transform = 'none';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 8px rgba(216,151,60,0.25)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 8px rgba(146,95,20,0.25)';
         }}
       >
         Visit Shop &rarr;
