@@ -3,7 +3,10 @@
  * Parse Montana Historic Markers CSV and generate JSON data files
  *
  * All display text is normalized via scripts/lib/historic-marker-text.js (HMDB junk,
- * spacing, entities). Edit that module to change cleaning rules site-wide.
+ * spacing, entities). Site-wide regex belongs there only for unambiguous metadata
+ * stripping — not for narrative formatting (orphan line breaks, kiosk typos, etc.).
+ * Those are fixed one marker at a time in historic-marker-inscription-overrides.json
+ * (agent-reviewed). Use scripts/audit-historic-marker-text.js to find candidates.
  *
  * Input: Historic_markers/Montana_Historic_Markers_Directory.csv
  * Output:
@@ -24,6 +27,17 @@ const CSV_PATH = path.join(__dirname, '../../Historic_markers/Montana_Historic_M
 const TOWN_COORDS_PATH = path.join(__dirname, '../data/town-coordinates.json');
 const OUTPUT_PATH = path.join(__dirname, '../data/historic-markers.json');
 const CURATED_OUTPUT_PATH = path.join(__dirname, '../data/historic-markers-curated.json');
+const OVERRIDES_PATH = path.join(__dirname, '../data/historic-marker-inscription-overrides.json');
+
+function loadInscriptionOverrides() {
+  try {
+    const raw = fs.readFileSync(OVERRIDES_PATH, 'utf8');
+    const obj = JSON.parse(raw);
+    return obj && typeof obj === 'object' ? obj : {};
+  } catch {
+    return {};
+  }
+}
 
 // Topic normalization map
 const TOPIC_MAP = {
@@ -249,7 +263,9 @@ function main() {
   const records = parseCSV(csvContent);
   
   console.log(`Parsed ${records.length} raw records`);
-  
+
+  const inscriptionOverrides = loadInscriptionOverrides();
+
   // Process markers
   const markers = [];
   const curated = [];
@@ -305,6 +321,20 @@ function main() {
     const subtitleClean = subtitleRaw ? cleanMarkerTitle(subtitleRaw) : '';
 
     const rawInscription = record['Inscription'] || '';
+    const ov = inscriptionOverrides[String(id)];
+
+    let inscription = cleanMarkerInscription(rawInscription);
+    if (ov && typeof ov.inscription === 'string' && ov.inscription.trim() !== '') {
+      inscription = cleanMarkerInscription(ov.inscription);
+    }
+
+    let erectedBy = record['Erected By']
+      ? cleanMarkerShortField(record['Erected By']) || null
+      : null;
+    if (ov && typeof ov.erectedBy === 'string' && ov.erectedBy.trim() !== '') {
+      erectedBy = cleanMarkerShortField(ov.erectedBy);
+    }
+
     const marker = {
       id,
       slug: slugify(rawTitle, id),
@@ -315,14 +345,12 @@ function main() {
       town: record['City or Town'] || null,
       townSlug,
       county: county.replace(' County', '').replace(' Parish', ''),
-      inscription: cleanMarkerInscription(rawInscription),
+      inscription,
       topics,
       yearErected: record['Year Erected']
         ? cleanMarkerShortField(record['Year Erected']) || null
         : null,
-      erectedBy: record['Erected By']
-        ? cleanMarkerShortField(record['Erected By']) || null
-        : null,
+      erectedBy,
       hmdbLink: record['Link'] || null,
       nearbyMarkers: record['Nearby Markers']
         ? record['Nearby Markers']
