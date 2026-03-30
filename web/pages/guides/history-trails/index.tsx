@@ -1,0 +1,213 @@
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import type { GetStaticProps } from 'next';
+import fs from 'fs';
+import path from 'path';
+import Header from '../../../components/Header';
+import Hero from '../../../components/Hero';
+import Footer from '../../../components/Footer';
+import Breadcrumbs from '../../../components/Breadcrumbs';
+
+type Trail = {
+  id: string;
+  name: string;
+  description: string;
+  difficulty: string;
+  estimatedDays: string;
+  totalMiles: number;
+  markerCount: number;
+  regions: string[];
+  highlights: string[];
+};
+
+type Props = {
+  trails: Trail[];
+  totalMarkers: number;
+};
+
+const difficultyColors: Record<string, string> = {
+  'easy': '#27ae60',
+  'moderate': '#f39c12',
+  'multi-day': '#8e44ad',
+};
+
+export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
+  const url = 'https://treasurestate.com/guides/history-trails/';
+  const title = 'Montana History Trails — Historic Marker Road Trips';
+  const desc = `Explore Montana's history through ${trails.length} curated driving trails featuring ${totalMarkers}+ historic markers. From Lewis & Clark to the Indian Wars, discover the stories that shaped Big Sky Country.`;
+
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Guides', url: '/guides/' },
+    { name: 'History Trails', url },
+  ];
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description: desc,
+    url,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: trails.length,
+      itemListElement: trails.map((t, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'TouristTrip',
+          name: t.name,
+          description: t.description,
+          url: `${url}${t.id}/`,
+        },
+      })),
+    },
+  };
+
+  return (
+    <>
+      <Head>
+        <title>{`${title} | Treasure State`}</title>
+        <meta name="description" content={desc} />
+        <link rel="canonical" href={url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={desc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={desc} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      </Head>
+      <Header />
+      <Hero
+        title="Montana History Trails"
+        subtitle="Historic Marker Road Trips"
+        image="/images/hero-image.jpg"
+        alt="Historic marker in Montana"
+        small
+      />
+      <Breadcrumbs items={breadcrumbs} />
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        .history-trails-page { max-width: 1000px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .trails-intro { margin-bottom: 2rem; }
+        .trails-intro h1 { font-size: 1.5rem; color: #204051; margin-bottom: 0.5rem; }
+        .trails-intro p { font-size: 1rem; color: #555; line-height: 1.6; }
+        .trails-stats { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
+        .trails-stats .stat { text-align: center; }
+        .trails-stats .stat-value { font-size: 2rem; font-weight: 700; color: #204051; }
+        .trails-stats .stat-label { font-size: 0.85rem; color: #666; }
+        .trails-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .trail-card {
+          background: #fff; border-radius: 12px; border: 1px solid #e8ede8;
+          padding: 1.5rem; text-decoration: none; display: block;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+          transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .trail-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .trail-card h2 { font-size: 1.15rem; color: #204051; margin: 0 0 0.5rem; }
+        .trail-card p { font-size: 0.9rem; color: #555; line-height: 1.5; margin: 0 0 1rem; }
+        .trail-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+        .trail-badge {
+          font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px;
+          background: #f0f4f0; color: #555;
+        }
+        .trail-badge.difficulty { color: #fff; }
+        .trail-highlights { font-size: 0.82rem; color: #666; margin-top: 0.75rem; }
+        .trail-highlights strong { color: #204051; }
+        .trail-cta { font-size: 0.85rem; color: #3b6978; font-weight: 600; margin-top: 1rem; }
+        .explore-all {
+          margin-top: 2.5rem; padding: 1.5rem; background: #f8faf8;
+          border-radius: 10px; border: 1px solid #e8ede8; text-align: center;
+        }
+        .explore-all h3 { font-size: 1.1rem; color: #204051; margin: 0 0 0.5rem; }
+        .explore-all p { font-size: 0.9rem; color: #666; margin-bottom: 1rem; }
+        .explore-all a {
+          display: inline-block; padding: 0.7rem 1.5rem; background: #204051;
+          color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;
+        }
+      `}} />
+
+      <main className="history-trails-page">
+        <section className="trails-intro">
+          <h1>Discover Montana&apos;s History on the Road</h1>
+          <p>
+            Montana&apos;s landscape is marked by thousands of historic markers telling the stories of
+            explorers, miners, soldiers, and native peoples. We&apos;ve organized them into {trails.length} themed
+            driving trails — each a journey through a different chapter of Montana history.
+          </p>
+          <div className="trails-stats">
+            <div className="stat">
+              <div className="stat-value">{trails.length}</div>
+              <div className="stat-label">History Trails</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">{totalMarkers.toLocaleString()}+</div>
+              <div className="stat-label">Historic Markers</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">{trails.reduce((sum, t) => sum + t.markerCount, 0)}</div>
+              <div className="stat-label">Trail Markers</div>
+            </div>
+          </div>
+        </section>
+
+        <div className="trails-grid">
+          {trails.map(trail => (
+            <Link key={trail.id} href={`/guides/history-trails/${trail.id}/`} className="trail-card">
+              <div className="trail-meta">
+                <span
+                  className="trail-badge difficulty"
+                  style={{ background: difficultyColors[trail.difficulty] || '#666' }}
+                >
+                  {trail.estimatedDays} days
+                </span>
+                <span className="trail-badge">{trail.markerCount} markers</span>
+                <span className="trail-badge">{trail.totalMiles} mi</span>
+              </div>
+              <h2>{trail.name}</h2>
+              <p>{trail.description}</p>
+              <div className="trail-highlights">
+                <strong>Highlights:</strong> {trail.highlights.slice(0, 2).join(' • ')}
+              </div>
+              <div className="trail-cta">View Trail &rarr;</div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="explore-all">
+          <h3>Explore All Historic Markers</h3>
+          <p>
+            Browse our interactive map of {totalMarkers.toLocaleString()}+ historic markers across Montana.
+            Filter by topic, region, or find markers near any town.
+          </p>
+          <Link href="/historic-markers/">Open Marker Explorer</Link>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const trailsPath = path.join(process.cwd(), 'data', 'history-trails.json');
+  const markersPath = path.join(process.cwd(), 'data', 'historic-markers.json');
+
+  const trails: Trail[] = fs.existsSync(trailsPath)
+    ? JSON.parse(fs.readFileSync(trailsPath, 'utf8'))
+    : [];
+
+  const markers = fs.existsSync(markersPath)
+    ? JSON.parse(fs.readFileSync(markersPath, 'utf8'))
+    : [];
+
+  return {
+    props: {
+      trails,
+      totalMarkers: markers.length,
+    },
+  };
+};

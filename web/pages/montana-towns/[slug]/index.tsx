@@ -30,6 +30,7 @@ import { filterNearbyRecreation } from '../../../lib/recreation';
 import { getCorridorsForTown, TownCorridor } from '../../../lib/town-corridors';
 import CrossHubCities from '../../../components/town/CrossHubCities';
 import RelatedContent from '../../../components/RelatedContent';
+import HistoricMarkers from '../../../components/town/HistoricMarkers';
 import { isEnabled } from '../../../lib/feature-flags';
 import { getArticlesForTown, getFeaturedArticles, type ArticleSummary } from '../../../lib/articles';
 
@@ -72,6 +73,15 @@ type RecreationPlace = {
   lat: number;
   lng: number;
   distMiles: number;
+};
+
+type HistoricMarkerSummary = {
+  id: string;
+  slug: string;
+  title: string;
+  inscription: string;
+  topics: string[];
+  isCurated: boolean;
 };
 
 type Props = {
@@ -117,6 +127,7 @@ type Props = {
   crossLinks: { label: string; href: string }[];
   scenicDrives: TownCorridor[];
   relatedArticles: ArticleSummary[];
+  historicMarkers: HistoricMarkerSummary[];
   heroImage: string;
   ogImage: string;
   heroCredit?: string;
@@ -160,7 +171,7 @@ const HERO_CREDITS: Record<string, string> = {
   helena: 'Photo: RTC / Wikimedia Commons (CC BY-SA 3.0)',
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles, historicMarkers }: Props) {
   const router = useRouter();
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
 
@@ -318,6 +329,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             focusedRec={focusedRec}
           />
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
+          {historicMarkers && historicMarkers.length > 0 && <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} />}
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
@@ -576,6 +588,32 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const crossLinks = allCrossLinks(slug);
   const scenicDrives = getCorridorsForTown(slug);
 
+  // Load historic markers for this town
+  let historicMarkers: HistoricMarkerSummary[] = [];
+  try {
+    const markersPath = path.resolve(process.cwd(), 'data', 'historic-markers.json');
+    const curatedPath = path.resolve(process.cwd(), 'data', 'historic-markers-curated.json');
+    if (fs.existsSync(markersPath)) {
+      const allMarkers = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
+      const curatedSlugs = fs.existsSync(curatedPath)
+        ? new Set(JSON.parse(fs.readFileSync(curatedPath, 'utf8')).map((m: { slug: string }) => m.slug))
+        : new Set<string>();
+      historicMarkers = allMarkers
+        .filter((m: { townSlug: string | null }) => m.townSlug === slug)
+        .slice(0, 20)
+        .map((m: { id: string; slug: string; title: string; inscription: string; topics: string[] }) => ({
+          id: m.id,
+          slug: m.slug,
+          title: m.title,
+          inscription: m.inscription.substring(0, 200),
+          topics: m.topics.slice(0, 3),
+          isCurated: curatedSlugs.has(m.slug),
+        }));
+    }
+  } catch (e) {
+    console.error("Failed to load historic markers", e);
+  }
+
   const rawEconomy = allEconomyData[slug];
   const rawHealthcare = allHealthcareData[slug];
   const rawHousing = allHousingData[slug];
@@ -650,6 +688,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
             return getFeaturedArticles().slice(0, 3);
           })()
         : [],
+      historicMarkers,
     } 
   };
 };

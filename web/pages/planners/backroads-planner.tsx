@@ -42,6 +42,16 @@ type Corridor = {
 
 type TownCoords = Record<string, { name: string; lat: number; lng: number }>;
 
+type HistoricMarker = {
+  id: string;
+  slug: string;
+  title: string;
+  lat: number;
+  lng: number;
+  town: string | null;
+  inscription: string;
+};
+
 const CATEGORY_ICONS: Record<string, string> = {
   hotspring: '♨️',
   campground: '⛺',
@@ -69,9 +79,11 @@ function slugToName(slug: string) {
 export default function BackroadsPlanner({
   corridors,
   townCoords,
+  historicMarkers,
 }: {
   corridors: Corridor[];
   townCoords: TownCoords;
+  historicMarkers: HistoricMarker[];
 }) {
   const router = useRouter();
   const mapRef = useRef<MapRef>(null);
@@ -82,6 +94,8 @@ export default function BackroadsPlanner({
   const [poiFilter, setPoiFilter] = useState<string | null>(null);
   const [hoveredPoi, setHoveredPoi] = useState<POI | null>(null);
   const [mobileTab, setMobileTab] = useState<'corridors' | 'trip'>('corridors');
+  const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
+  const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
 
   // Restore trip from URL on mount
   useEffect(() => {
@@ -418,6 +432,15 @@ export default function BackroadsPlanner({
                     {CATEGORY_ICONS[k]} {v}
                   </button>
                 ))}
+                <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer', marginLeft: 'auto' }}>
+                  <input
+                    type="checkbox"
+                    checked={showHistoricMarkers}
+                    onChange={e => setShowHistoricMarkers(e.target.checked)}
+                    style={{ accentColor: '#c0392b' }}
+                  />
+                  📜 Historic Markers ({historicMarkers.length})
+                </label>
               </div>
               <div className="corridor-list">
                 {filtered.map(c => (
@@ -689,6 +712,65 @@ export default function BackroadsPlanner({
               </Marker>
             ))}
 
+            {/* Historic markers layer */}
+            {showHistoricMarkers && historicMarkers.map(m => (
+              <Marker
+                key={`hist-${m.id}`}
+                longitude={m.lng}
+                latitude={m.lat}
+                anchor="center"
+                onClick={(e) => { e.originalEvent.stopPropagation(); setSelectedHistoricMarker(m); }}
+              >
+                <div style={{
+                  width: 10, height: 10, borderRadius: '2px',
+                  background: '#8b4513',
+                  border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
+                  cursor: 'pointer', transform: 'rotate(45deg)',
+                }} />
+              </Marker>
+            ))}
+
+            {selectedHistoricMarker && (
+              <Popup
+                longitude={selectedHistoricMarker.lng}
+                latitude={selectedHistoricMarker.lat}
+                anchor="bottom"
+                offset={10}
+                onClose={() => setSelectedHistoricMarker(null)}
+                closeButton={true}
+                closeOnClick={false}
+                maxWidth="260px"
+              >
+                <div style={{ padding: '4px 2px' }}>
+                  <strong style={{ fontSize: '0.85rem', color: '#204051' }}>{selectedHistoricMarker.title}</strong>
+                  {selectedHistoricMarker.town && (
+                    <div style={{ fontSize: '0.72rem', color: '#888', marginTop: '2px' }}>
+                      📍 {selectedHistoricMarker.town}
+                    </div>
+                  )}
+                  <div style={{ fontSize: '0.78rem', color: '#555', marginTop: '4px', lineHeight: 1.4 }}>
+                    {selectedHistoricMarker.inscription.substring(0, 150)}...
+                  </div>
+                  <div style={{ marginTop: '6px', display: 'flex', gap: '10px' }}>
+                    <a
+                      href={`/historic-markers/${selectedHistoricMarker.slug}/`}
+                      style={{ fontSize: '0.75rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
+                    >
+                      Read More →
+                    </a>
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${selectedHistoricMarker.lat},${selectedHistoricMarker.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: '0.75rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
+                    >
+                      Directions
+                    </a>
+                  </div>
+                </div>
+              </Popup>
+            )}
+
             {hoveredPoi && (
               <Popup
                 longitude={hoveredPoi.lng}
@@ -793,5 +875,24 @@ export const getStaticProps: GetStaticProps = async () => {
   const townCoordsPath = path.join(process.cwd(), 'data', 'town-coordinates.json');
   const townCoords: TownCoords = JSON.parse(fs.readFileSync(townCoordsPath, 'utf-8'));
 
-  return { props: { corridors, townCoords } };
+  // Load historic markers (limited subset for performance)
+  const markersPath = path.join(process.cwd(), 'data', 'historic-markers.json');
+  let historicMarkers: HistoricMarker[] = [];
+  if (fs.existsSync(markersPath)) {
+    const allMarkers = JSON.parse(fs.readFileSync(markersPath, 'utf-8'));
+    // Take a sample for performance (every 3rd marker to get ~750)
+    historicMarkers = allMarkers
+      .filter((_: unknown, i: number) => i % 3 === 0)
+      .map((m: { id: string; slug: string; title: string; lat: number; lng: number; town: string | null; inscription: string }) => ({
+        id: m.id,
+        slug: m.slug,
+        title: m.title,
+        lat: round(m.lat, 4),
+        lng: round(m.lng, 4),
+        town: m.town,
+        inscription: m.inscription.substring(0, 200),
+      }));
+  }
+
+  return { props: { corridors, townCoords, historicMarkers } };
 };

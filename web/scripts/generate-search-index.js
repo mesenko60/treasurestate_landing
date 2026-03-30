@@ -282,6 +282,50 @@ function fmtPop(n) {
     keywords: 'Montana events festivals Sweet Pea Festival Montana Folk Festival Crow Fair rodeo Montana State Fair music festival',
   });
 
+  // ═══ 14. HISTORY TRAILS ═══
+  entries.push({
+    type: 'guide',
+    title: 'Montana History Trails',
+    description: 'Curated driving routes connecting historic markers — Lewis & Clark, Mining Heritage, Battlefields, and more',
+    url: '/guides/history-trails/',
+    keywords: 'Montana history trails Lewis Clark mining heritage battlefields Little Bighorn historic markers driving routes',
+  });
+  const trailsPath = path.join(dataDir, 'history-trails.json');
+  if (fs.existsSync(trailsPath)) {
+    const trails = JSON.parse(fs.readFileSync(trailsPath, 'utf8'));
+    for (const t of trails) {
+      entries.push({
+        type: 'guide',
+        title: t.name,
+        description: t.description.substring(0, 150),
+        url: `/guides/history-trails/${t.id}/`,
+        keywords: `${t.name} ${t.highlights.join(' ')} Montana history trail driving route`,
+      });
+    }
+  }
+
+  // ═══ 15. HISTORIC MARKERS ═══
+  entries.push({
+    type: 'guide',
+    title: 'Montana Historic Markers Explorer',
+    description: 'Interactive map of 2,200+ historic markers across Montana — filter by topic, county, or search',
+    url: '/historic-markers/',
+    keywords: 'Montana historic markers explorer map history landmarks monuments plaques roadside',
+  });
+  const curatedMarkersPath = path.join(dataDir, 'historic-markers-curated.json');
+  if (fs.existsSync(curatedMarkersPath)) {
+    const markers = JSON.parse(fs.readFileSync(curatedMarkersPath, 'utf8'));
+    for (const m of markers.slice(0, 100)) { // Index top 100 for search performance
+      entries.push({
+        type: 'article',
+        title: m.title,
+        description: m.inscription.substring(0, 120),
+        url: `/historic-markers/${m.slug}/`,
+        keywords: `${m.title} ${m.town || ''} ${m.county || ''} Montana historic marker`,
+      });
+    }
+  }
+
   // ═══ 14. CONTENT HUB ARTICLES ═══
   const articlesInfoDir = path.join(repoRoot, 'articles_information');
   if (fs.existsSync(articlesInfoDir)) {

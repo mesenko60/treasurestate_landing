@@ -20,6 +20,8 @@ function getTownList(repoRoot) {
 function getLastmod(loc) {
   if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
   if (loc.includes('/events/')) return '2026-03-21';
+  if (loc.includes('/historic-markers/')) return '2026-03-29';
+  if (loc.includes('/history-trails/')) return '2026-03-29';
   if (loc.includes('/explore-montana/')) return '2026-03-01';
   if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
   if (loc.includes('/montana-towns/')) return '2026-03-01';
@@ -40,6 +42,10 @@ function getPriority(loc) {
   if (/\/lodging\/[^/]+\//.test(loc)) return 0.8;
   if (loc === baseUrl + '/lodging/') return 0.75;
   if (loc === baseUrl + '/events/') return 0.75;
+  if (loc === baseUrl + '/historic-markers/') return 0.75;
+  if (loc === baseUrl + '/guides/history-trails/') return 0.75;
+  if (/\/history-trails\/[^/]+\//.test(loc)) return 0.7;
+  if (/\/historic-markers\/[^/]+\//.test(loc)) return 0.6;
   if (/\/montana-towns\/[^/]+\/[^/]+\//.test(loc)) return 0.7;
   if (/\/guides\//.test(loc)) return 0.7;
   if (/\/best-of\//.test(loc)) return 0.7;
@@ -151,6 +157,30 @@ function writeSitemapIndex(outDir, sitemaps, today) {
         if (fs.statSync(path.join(guidesDir, f)).isDirectory()) {
           add(`${baseUrl}/guides/${f}/`);
         }
+      }
+    }
+  });
+
+  // ═══ 3b. HISTORY TRAILS ═══
+  collectUrls('history-trails', (add) => {
+    add(`${baseUrl}/guides/history-trails/`);
+    const trailsPath = path.join(webDir, 'data', 'history-trails.json');
+    if (fs.existsSync(trailsPath)) {
+      const trails = JSON.parse(fs.readFileSync(trailsPath, 'utf8'));
+      for (const t of trails) {
+        add(`${baseUrl}/guides/history-trails/${t.id}/`);
+      }
+    }
+  });
+
+  // ═══ 3c. HISTORIC MARKERS (curated only) ═══
+  collectUrls('historic-markers', (add) => {
+    add(`${baseUrl}/historic-markers/`);
+    const curatedPath = path.join(webDir, 'data', 'historic-markers-curated.json');
+    if (fs.existsSync(curatedPath)) {
+      const markers = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
+      for (const m of markers) {
+        add(`${baseUrl}/historic-markers/${m.slug}/`);
       }
     }
   });
