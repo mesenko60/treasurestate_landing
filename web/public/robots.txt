@@ -1,7 +1,6 @@
 # robots.txt for treasurestate.com
-# Allow all search engines to crawl everything
 User-agent: *
-Disallow:
+Disallow: /_next/
 
 # Sitemap location
 Sitemap: https://treasurestate.com/sitemap.xml
