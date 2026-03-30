@@ -50,6 +50,7 @@ type HistoricMarker = {
   lng: number;
   town: string | null;
   inscription: string;
+  isCurated: boolean;
 };
 
 const CATEGORY_ICONS: Record<string, string> = {
@@ -748,16 +749,18 @@ export default function BackroadsPlanner({
                       📍 {selectedHistoricMarker.town}
                     </div>
                   )}
-                  <div style={{ fontSize: '0.78rem', color: '#555', marginTop: '4px', lineHeight: 1.4 }}>
-                    {selectedHistoricMarker.inscription.substring(0, 150)}...
+                  <div style={{ fontSize: '0.78rem', color: '#555', marginTop: '4px', lineHeight: 1.4, maxHeight: '120px', overflowY: 'auto' }}>
+                    {selectedHistoricMarker.inscription}{selectedHistoricMarker.inscription.length >= 295 ? '...' : ''}
                   </div>
                   <div style={{ marginTop: '6px', display: 'flex', gap: '10px' }}>
-                    <a
-                      href={`/historic-markers/${selectedHistoricMarker.slug}/`}
-                      style={{ fontSize: '0.75rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
-                    >
-                      Read More →
-                    </a>
+                    {selectedHistoricMarker.isCurated && (
+                      <a
+                        href={`/historic-markers/${selectedHistoricMarker.slug}/`}
+                        style={{ fontSize: '0.75rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
+                      >
+                        View Full Page →
+                      </a>
+                    )}
                     <a
                       href={`https://www.google.com/maps/dir/?api=1&destination=${selectedHistoricMarker.lat},${selectedHistoricMarker.lng}`}
                       target="_blank"
@@ -877,9 +880,15 @@ export const getStaticProps: GetStaticProps = async () => {
 
   // Load historic markers (limited subset for performance)
   const markersPath = path.join(process.cwd(), 'data', 'historic-markers.json');
+  const curatedPath = path.join(process.cwd(), 'data', 'historic-markers-curated.json');
   let historicMarkers: HistoricMarker[] = [];
   if (fs.existsSync(markersPath)) {
     const allMarkers = JSON.parse(fs.readFileSync(markersPath, 'utf-8'));
+    const curatedSlugs = new Set(
+      fs.existsSync(curatedPath)
+        ? JSON.parse(fs.readFileSync(curatedPath, 'utf-8')).map((m: { slug: string }) => m.slug)
+        : []
+    );
     // Take a sample for performance (every 3rd marker to get ~750)
     historicMarkers = allMarkers
       .filter((_: unknown, i: number) => i % 3 === 0)
@@ -890,7 +899,8 @@ export const getStaticProps: GetStaticProps = async () => {
         lat: round(m.lat, 4),
         lng: round(m.lng, 4),
         town: m.town,
-        inscription: m.inscription.substring(0, 200),
+        inscription: m.inscription.substring(0, 300),
+        isCurated: curatedSlugs.has(m.slug),
       }));
   }
 
