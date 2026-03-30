@@ -4,6 +4,10 @@
  *
  * Does not rewrite historical wording — strips site metadata, fixes spacing, and
  * removes errant HMDB / photo-guide insertions.
+ *
+ * polishMarkerInscription() applies high-confidence typo and punctuation fixes
+ * (duplicate words, known CSV glitches). Intentional archaic spellings inside
+ * old quotations are largely preserved; only unambiguous mechanical errors are changed.
  */
 
 'use strict';
@@ -64,7 +68,17 @@ function cleanMarkerShortField(text) {
   let t = normalizeTextBasics(text);
   t = stripHtmlTags(decodeHtmlEntities(t));
   t = t.replace(/\s+/g, ' ').trim();
+  t = polishShortAttribution(t);
   return t;
+}
+
+/** Typos in attribution / sponsor lines (not inscription body). */
+function polishShortAttribution(t) {
+  if (!t) return '';
+  return t
+    .replace(/\bGalsgow\b/g, 'Glasgow')
+    .replace(/\bArmy\s+Corp\s+of\s+Engineers\b/gi, 'Army Corps of Engineers')
+    .replace(/\bCorp\.?\s+of\s+Discovery\b/g, 'Corps of Discovery');
 }
 
 /**
@@ -127,6 +141,8 @@ function filterInscriptionLines(lines) {
     if (/^\d+\s+.+,\s*.+MT\s+\d{5}/i.test(t)) continue;
     if (/^\(\d{3}\)\s*[\d\-]{7,}/.test(t)) continue;
 
+    if (/^The marker is on\b/i.test(t)) continue;
+
     out.push(raw);
   }
 
@@ -158,7 +174,7 @@ function cleanMarkerInscription(text) {
   t = t.replace(/Paid Advertisement/gi, '');
 
   t = t.replace(/\nMarker at the [^\n]*\s*/gi, '\n');
-  t = t.replace(/\nThe marker is on the (left|right)\.?\s*\n?/gi, '\n');
+  t = t.replace(/\nThe marker is on the [^\n]+\n?/gi, '\n');
 
   t = t.replace(/Topics\.\s*$/gm, '');
   t = t.replace(/^\s*Topics and series\.?\s*$/gim, '');
@@ -185,7 +201,54 @@ function cleanMarkerInscription(text) {
   t = t.replace(/\n{3,}/g, '\n\n');
   t = t.trim();
 
+  t = polishMarkerInscription(t);
+
   return t;
+}
+
+/**
+ * High-confidence spelling/punctuation fixes after structural cleaning.
+ * Order: specific phrases first, then duplicate-word collapse.
+ */
+function polishMarkerInscription(t) {
+  if (!t) return '';
+
+  let s = t;
+
+  const pairs = [
+    [/incorrect;\s*u\s+been/gi, 'incorrectly been'],
+    [/\bcoal\s+coal\b/gi, 'coal'],
+    [/\ban\s+some\b/gi, 'and some'],
+    [/\bwent\s+went\b/gi, 'went'],
+    [/\bfirst\s+sed\s+the\b/gi, 'first used the'],
+    [/\bcompass\s+brings\b/gi, 'compass bearings'],
+    [/\bfo\s+form\b/gi, 'to form'],
+    [/\bA\s+a\s+result\b/g, 'As a result'],
+    [/\bto\s+to\s+Chief\b/g, 'to Chief'],
+    [/\bin\s+in\s+the\b/gi, 'in the'],
+    [/\bhttp;\/\//g, 'http://'],
+    [/\bCorp\.?\s+of\s+Discovery\b/g, 'Corps of Discovery'],
+    [/\bArmy\s+Corp\s+of\s+Engineers\b/gi, 'Army Corps of Engineers'],
+    [/\bGalsgow\b/g, 'Glasgow'],
+    [/\b(\d[\d,]*)\s+mils\b/gi, '$1 miles'],
+    [/This stream,{2,}\s+/g, 'This stream... '],
+    [/\bhas it origins\b/gi, 'has its origins'],
+  ];
+
+  for (const [re, rep] of pairs) {
+    s = s.replace(re, rep);
+  }
+
+  s = s.replace(/\bthat\s+that\b(?! (nation|might)\b)/gi, 'that');
+  s = s.replace(/\b(the|of|to|and)\s+\1\b/gi, '$1');
+
+  s = s
+    .split('\n')
+    .map((line) => line.replace(/[ \t]{2,}/g, ' ').replace(/[ \t]+$/g, ''))
+    .join('\n');
+
+  s = s.replace(/\n{3,}/g, '\n\n').trim();
+  return s;
 }
 
 module.exports = {
@@ -194,4 +257,5 @@ module.exports = {
   cleanMarkerTitle,
   cleanMarkerShortField,
   cleanMarkerInscription,
+  polishMarkerInscription,
 };
