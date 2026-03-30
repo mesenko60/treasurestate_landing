@@ -244,9 +244,15 @@ function cleanInscription(text) {
     .replace(/\u200b/g, '')
     .replace(/\ufeff/g, '');
 
+  // HMDB insertions mid-inscription (GeoTour / photo index — NOT on the physical marker)
+  t = t.replace(/\n?\s*Paid Advertisement\s*\n?/gi, '\n');
+  // Remove each Photographed-by line only (do NOT cut from first occurrence to EOF — that drops real text)
+  t = t.replace(/\nPhotographed by[^\n]+/gi, '');
+  // Catalog lines like "2. Black Gold Marker on left"
+  t = t.replace(/\n\d+\.\s*[^\n]*\bMarker\b[^\n]*/gi, '');
+
   // HMDB tails (order: broad cuts that include everything after the header)
   t = t.replace(/\s*Topics and series\.?[\s\S]*$/im, '');
-  t = t.replace(/\nPhotographed by[^\n]*[\s\S]*$/i, '');
 
   // Fragments if Topics line was missing or malformed
   t = t.replace(/\s*This historical marker is listed in these topic\s*\n*\s*lists?:[\s\S]*$/im, '');
@@ -259,19 +265,29 @@ function cleanInscription(text) {
 
   t = t.replace(/Paid Advertisement/gi, '');
 
-  // HMDB photo-guide lines sometimes left between body and Photographed
-  t = t.replace(/\n\d+\.\s*"[^"]*"\s*Marker\s*\n?/gi, '\n');
+  // HMDB photo-guide lines (quoted-title variant; numbered Marker lines handled above)
   t = t.replace(/\nMarker at the [^\n]*\s*/gi, '\n');
   t = t.replace(/\nThe marker is on the (left|right)\.?\s*\n?/gi, '\n');
 
   // Legacy single-line patterns
   t = t.replace(/Topics\.\s*$/gm, '');
+  t = t.replace(/^\s*Topics and series\.?\s*$/gim, '');
   t = t.replace(/This historical marker is listed in these topic lists:.*$/gm, '');
   t = t.replace(/This historical marker is listed in this topic list:.*$/gm, '');
   t = t.replace(/Location\.\s*Marker (is|was) located.*$/gm, '');
   t = t.replace(/Touch for map\..*$/gm, '');
 
   t = stripHtmlTags(decodeHtmlEntities(t));
+
+  // Rejoin narrative broken when HMDB lines were removed (e.g. "paleontologists" / "identified")
+  let prevJoin;
+  do {
+    prevJoin = t;
+    t = t.replace(/([a-z,;])\s*\n+\s*([a-z])/g, '$1 $2');
+  } while (t !== prevJoin);
+
+  // Clear section headers from HMDB GeoTour panels (keep bullet content; spacing only)
+  t = t.replace(/\n(GeoFacts:|Geo-Activities:)\s*\n/g, '\n\n$1\n\n');
 
   t = t.replace(/\n{3,}/g, '\n\n');
   t = t
