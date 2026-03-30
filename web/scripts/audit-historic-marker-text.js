@@ -16,6 +16,15 @@ const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '../data/historic-markers.json');
 
+function looksLikeBinomialLine(line) {
+  const t = line.trim();
+  const parts = t.split(/\s+/);
+  if (parts.length !== 2) return false;
+  if (!/^[A-Z][a-z]+$/.test(parts[0])) return false;
+  if (!/^[a-z][a-z.]+$/.test(parts[1])) return false;
+  return true;
+}
+
 function auditInscription(text) {
   const issues = [];
   if (!text || !text.trim()) return issues;
@@ -35,6 +44,7 @@ function auditInscription(text) {
     const prev = (lines[i - 1] || '').trim();
     const next = (lines[i + 1] || '').trim();
     if (!next || !/^[A-Z]/.test(next)) continue;
+    if (looksLikeBinomialLine(next)) continue;
     if (/:$/.test(prev)) continue;
     if (/^(Geo|Topics|Erected)/i.test(next)) continue;
     issues.push(`possible_orphan_line:${t}`);

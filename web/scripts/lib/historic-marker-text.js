@@ -5,13 +5,13 @@
  * Does not rewrite historical wording — strips site metadata, fixes spacing, and
  * removes errant HMDB / photo-guide insertions.
  *
- * Narrative problems (orphan line breaks like a lone “Earl”, wrong kiosk headings,
- * ambiguous punctuation inside the marker body) must be judged **per marker** by an
- * agent and stored in `web/data/historic-marker-inscription-overrides.json`, not
- * solved with new bulk regex here. Use `web/scripts/audit-historic-marker-text.js`
- * to list likely candidates. Visual structure (Geo-Facts headings, bullet lists,
- * “Erected by” footer) is applied at render time in `web/lib/parseMarkerInscription.ts`
- * and `web/components/MarkerInscription.tsx`, not in this file.
+ * Odd **line breaks** (CSV / HMDB hard wraps, title-plaque stacks, split names) are
+ * normalized in `normalizeInscriptionParagraphLineBreaks()` — wording is unchanged,
+ * only whitespace between tokens. Truly ambiguous copy errors still belong in
+ * `historic-marker-inscription-overrides.json` (agent-reviewed). Run
+ * `web/scripts/audit-historic-marker-text.js` to spot stragglers. Visual structure
+ * (Geo-Facts headings, bullets, “Erected by”) is applied at render time in
+ * `web/lib/parseMarkerInscription.ts` and `web/components/MarkerInscription.tsx`.
  *
  * polishMarkerInscription() applies high-confidence typo and punctuation fixes
  * (duplicate words, known CSV glitches). Intentional archaic spellings inside
@@ -157,6 +157,169 @@ function filterInscriptionLines(lines) {
   return out;
 }
 
+const TITLE_SMALL_WORDS = new Set([
+  'a', 'an', 'and', 'as', 'at', 'by', 'for', 'in', 'of', 'on', 'or', 'to', 'with',
+  'the', 'from', 'into', 'upon',
+]);
+
+/**
+ * Latin-style binomial (e.g. "Amelanchier alnifolia") — do not merge a lone
+ * common-name line into this line (keeps plant labels readable).
+ */
+function looksLikeBinomialLine(line) {
+  const t = line.trim();
+  const parts = t.split(/\s+/);
+  if (parts.length !== 2) return false;
+  if (!/^[A-Z][a-z]+$/.test(parts[0])) return false;
+  if (!/^[a-z][a-z.]+$/.test(parts[1])) return false;
+  return true;
+}
+
+const PLAQUE_MID_WORDS = /^(Historical|National|Natural|Federal|Cooperation|Register)$/i;
+const PLAQUE_TAIL_WORDS = /^(Society|Interior|District|Places|States|Terminus|Foundation)$/i;
+
+/** One-word lines before a name or unit (casualty rolls, etc.). */
+const ROLE_OR_UNIT_LINE =
+  /^(Musician|Artificer|Corporal|Sergeant|Sergt\.?|Captain|Private|Killed|Dr\.|Lt\.?|Lieut\.?)$/i;
+
+function isTitleCasePlaqueLine(line) {
+  const t = line.trim();
+  if (t.length === 0) return false;
+  const maxLen = /\s/.test(t) ? 240 : 52;
+  if (t.length > maxLen) return false;
+  if (/[,']/.test(t) || /[.!?]$/.test(t)) return false;
+  if (/^Geo[\s-]?(Facts|Activity|Activities)\s*:/i.test(t)) return false;
+  if (/^Erected by\b/i.test(t) || /^[•\-\*●]/.test(t)) return false;
+  const words = t.split(/\s+/);
+  return words.every((w) => {
+    const lw = w.toLowerCase();
+    if (TITLE_SMALL_WORDS.has(lw)) return true;
+    if (/^\d+(st|nd|rd|th)?$/i.test(w)) return true;
+    return /^[A-Z][a-zA-Z'-]*$/.test(w) || /^[A-Z]{2,3}$/.test(w);
+  });
+}
+
+function isSingleTitleCaseWord(line) {
+  const s = line.trim();
+  return /^[A-Z][a-z]{2,}$/.test(s) && !/\s/.test(s);
+}
+
+/**
+ * Join spurious hard line breaks inside paragraph blocks (between blank lines).
+ * Preserves every word and punctuation character; only inserts spaces where lines
+ * were incorrectly split in the source export.
+ */
+function normalizeInscriptionParagraphLineBreaks(t) {
+  if (!t || !t.trim()) return t;
+
+  const blocks = t.split(/\n\n+/);
+  const merged = blocks.map((block) => {
+    const raw = block.split('\n').map((l) =>
+      l.replace(/^[ \t]+/g, '').replace(/[ \t]+$/g, ''),
+    );
+    const lines = [];
+    for (const line of raw) {
+      if (line === '' && lines.length && lines[lines.length - 1] !== '') {
+        continue;
+      }
+      if (line === '') continue;
+      lines.push(line);
+    }
+
+    const out = [];
+    let i = 0;
+    while (i < lines.length) {
+      let acc = lines[i];
+      i += 1;
+      while (i < lines.length && shouldJoinInscriptionLines(acc, lines[i])) {
+        acc = `${acc} ${lines[i]}`;
+        i += 1;
+      }
+      out.push(acc);
+    }
+    return out.join('\n');
+  });
+
+  return merged.join('\n\n');
+}
+
+function shouldJoinInscriptionLines(prev, next) {
+  if (!next || !prev) return false;
+  if (/^[•\-\*●]/.test(next)) return false;
+  if (/^Erected by\b/i.test(next)) return false;
+
+  const pt = prev.trim();
+  const nt = next.trim();
+
+  if (/^Geo[\s-]?(Facts|Activity|Activities)\s*:/i.test(nt)) return false;
+  if (/^Geo[\s-]?(Facts|Activity|Activities)\s*:/i.test(pt)) return false;
+  if (/:$/.test(pt)) return false;
+  if (/^\([^)]+\)$/.test(pt) && pt.length < 140) return false;
+
+  if (/-$/.test(pt) && /^[a-z]/i.test(nt)) return true;
+
+  if (/[,;]\s*$/.test(pt) && /^[a-z0-9('"(\u201c]/.test(nt)) return true;
+
+  if (!/[.!?]\s*$/.test(pt) && /^[a-z0-9('"(\u201c]/.test(nt)) return true;
+
+  if (!/[.!?]\s*$/.test(pt) && /^(Who|Which|Where|When|As)\s+/i.test(nt)) return true;
+
+  if (!/[.!?]\s*$/.test(pt) && /^And\s+[A-Z][a-z]+/.test(nt)) return true;
+
+  if (!/[.!?]\s*$/.test(pt) && /^In(\s+[a-z]|\s+\d)/i.test(nt)) return true;
+
+  if (
+    !/[.!?]\s*$/.test(pt) &&
+    /\b(at|near|from|in)\s*$/i.test(pt) &&
+    /^[A-Z][a-z]{1,22}(\s+[A-Z][a-z]{1,22})?$/.test(nt) &&
+    nt.length < 44
+  ) {
+    return true;
+  }
+
+  if (/^(To|And|But|In|Of|By|On|At)$/i.test(pt) && /^[A-Z\d]/.test(nt)) return true;
+
+  if (
+    ROLE_OR_UNIT_LINE.test(pt) &&
+    (/^\d/.test(nt) || /^[A-Z][a-z]{2,}\s+[A-Z]/.test(nt))
+  ) {
+    return true;
+  }
+
+  if (
+    /^[A-Z][a-z]{1,4}$/.test(pt) &&
+    pt.length <= 5 &&
+    !looksLikeBinomialLine(nt) &&
+    !/^(And|Or|But)\s+/i.test(nt) &&
+    (/^[A-Z][a-z]+\s+\S/.test(nt) || /^\d/.test(nt))
+  ) {
+    return true;
+  }
+
+  if (isTitleCasePlaqueLine(pt) && isTitleCasePlaqueLine(nt)) {
+    if (
+      isSingleTitleCaseWord(pt) &&
+      isSingleTitleCaseWord(nt) &&
+      pt.trim().length >= 5 &&
+      nt.trim().length >= 5
+    ) {
+      const ns = nt.trim();
+      const ps = pt.trim();
+      if (
+        PLAQUE_MID_WORDS.test(ns) ||
+        PLAQUE_TAIL_WORDS.test(ns) ||
+        /^(The|A|An)$/i.test(ps)
+      ) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }
+
+  return false;
+}
+
 /**
  * Full inscription cleanup: HMDB tails, mid-insertions, then line filter, then spacing.
  */
@@ -199,12 +362,17 @@ function cleanMarkerInscription(text) {
     t = t.replace(/([a-z,;])\s*\n+\s*([a-z])/g, '$1 $2');
   } while (t !== prevJoin);
 
-  t = t.replace(/\n(GeoFacts:|Geo-Activities:)\s*\n/g, '\n\n$1\n\n');
+  t = t.replace(
+    /\n(GeoFacts:|Geo-Facts:|Geo-Activity:|Geo-Activities:)\s*\n/gi,
+    '\n\n$1\n\n',
+  );
 
   t = t
     .split('\n')
     .map((line) => line.replace(/[ \t]+$/g, '').replace(/^[ \t]+/g, ''));
   t = filterInscriptionLines(t).join('\n');
+
+  t = normalizeInscriptionParagraphLineBreaks(t);
 
   t = t.replace(/\n{3,}/g, '\n\n');
   t = t.trim();
@@ -266,4 +434,6 @@ module.exports = {
   cleanMarkerShortField,
   cleanMarkerInscription,
   polishMarkerInscription,
+  normalizeInscriptionParagraphLineBreaks,
+  shouldJoinInscriptionLines,
 };
