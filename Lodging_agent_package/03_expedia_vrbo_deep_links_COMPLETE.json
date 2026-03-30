@@ -1,0 +1,2741 @@
+[
+  {
+    "town": "Anaconda",
+    "property_name": "Copperhead Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "97065200",
+    "body_link_url": "https://www.expedia.com/Anaconda-Hotels-Copperhead-Lodge.h97065200.Hotel-Information?camref=1011l52GG6&adref=anaconda-copperhead-lodge",
+    "adref_body": "anaconda-copperhead-lodge",
+    "adref_table": "anaconda-copperhead-lodge-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "Gunslinger Gulch Guest Ranch",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "anaconda-gunslinger-gulch-guest-ranch",
+    "adref_table": "anaconda-gunslinger-gulch-guest-ranch-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:anaconda-montana?camref=1011l52GGp&creativeref=1101l63118&adref=anaconda-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:anaconda-montana?camref=1011l52GGp&creativeref=1101l63118&adref=anaconda-vrbo-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "Hickory House Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "11517690",
+    "body_link_url": "https://www.expedia.com/Anaconda-Hotels-Hickory-House-Inn.h11517690.Hotel-Information?camref=1011l52GG6&adref=anaconda-hickory-house-inn",
+    "adref_body": "anaconda-hickory-house-inn",
+    "adref_table": "anaconda-hickory-house-inn-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "Marcus Daly Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "115618957",
+    "body_link_url": "https://www.expedia.com/Anaconda-Hotels-Marcus-Daly-Motel.h115618957.Hotel-Information?camref=1011l52GG6&adref=anaconda-marcus-daly-motel",
+    "adref_body": "anaconda-marcus-daly-motel",
+    "adref_table": "anaconda-marcus-daly-motel-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "Sugar Loaf Lodge & Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "24321222",
+    "body_link_url": "https://www.expedia.com/Anaconda-Hotels-Sugar-Loaf-Lodge-Cabins.h24321222.Hotel-Information?camref=1011l52GG6&adref=anaconda-sugar-loaf-lodge-cabins",
+    "adref_body": "anaconda-sugar-loaf-lodge-cabins",
+    "adref_table": "anaconda-sugar-loaf-lodge-cabins-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "The Forge Hotel, BW Signature Collection",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "2179148896",
+    "body_link_url": "https://www.expedia.com/Anaconda-Hotels-The-Forge-Hotel-BW-Signature-Collection.h2179148896.Hotel-Information?camref=1011l52GG6&adref=anaconda-the-forge-hotel-bw-signature-collection",
+    "adref_body": "anaconda-the-forge-hotel-bw-signature-collection",
+    "adref_table": "anaconda-the-forge-hotel-bw-signature-collection-table"
+  },
+  {
+    "town": "Anaconda",
+    "property_name": "The Lakehouse at Georgetown Lake",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "anaconda-the-lakehouse-at-georgetown-lake",
+    "adref_table": "anaconda-the-lakehouse-at-georgetown-lake-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "Huntley Lodge at Big Sky Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "870404",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-Huntley-Lodge-At-Big-Sky-Resort.h870404.Hotel-Information?camref=1011l52GG6&adref=big-sky-huntley-lodge-at-big-sky-resort",
+    "adref_body": "big-sky-huntley-lodge-at-big-sky-resort",
+    "adref_table": "big-sky-huntley-lodge-at-big-sky-resort-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "Lone Mountain Ranch",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "big-sky-lone-mountain-ranch",
+    "adref_table": "big-sky-lone-mountain-ranch-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:big-sky-montana?camref=1011l52GGp&creativeref=1101l63118&adref=big-sky-lone-mountain-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:big-sky-montana?camref=1011l52GGp&creativeref=1101l63118&adref=big-sky-lone-mountain-ranch-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "Montage Big Sky",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "68142664",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-Montage-Big-Sky.h68142664.Hotel-Information?camref=1011l52GG6&adref=big-sky-montage-big-sky",
+    "adref_body": "big-sky-montage-big-sky",
+    "adref_table": "big-sky-montage-big-sky-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "One&Only Moonlight Basin",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "111948049",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-One-Only-Moonlight-Basin.h111948049.Hotel-Information?camref=1011l52GG6&adref=big-sky-one-only-moonlight-basin",
+    "adref_body": "big-sky-one-only-moonlight-basin",
+    "adref_table": "big-sky-one-only-moonlight-basin-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "Rainbow Ranch Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "894027",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-Rainbow-Ranch-Lodge.h894027.Hotel-Information?camref=1011l52GG6&adref=big-sky-rainbow-ranch-lodge",
+    "adref_body": "big-sky-rainbow-ranch-lodge",
+    "adref_table": "big-sky-rainbow-ranch-lodge-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "Residence Inn by Marriott Big Sky/The Wilson Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "34424112",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-Residence-Inn-by-Marriott-Big-Sky-The-Wilson-Hotel.h34424112.Hotel-Information?camref=1011l52GG6&adref=big-sky-residence-inn-by-marriott-big-sky-the-wilson-hotel",
+    "adref_body": "big-sky-residence-inn-by-marriott-big-sky-the-wilson-hotel",
+    "adref_table": "big-sky-residence-inn-by-marriott-big-sky-the-wilson-hotel-table"
+  },
+  {
+    "town": "Big Sky",
+    "property_name": "The Summit Hotel at Big Sky Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "870405",
+    "body_link_url": "https://www.expedia.com/Big-Sky-Hotels-The-Summit-Hotel-At-Big-Sky-Resort.h870405.Hotel-Information?camref=1011l52GG6&adref=big-sky-the-summit-hotel-at-big-sky-resort",
+    "adref_body": "big-sky-the-summit-hotel-at-big-sky-resort",
+    "adref_table": "big-sky-the-summit-hotel-at-big-sky-resort-table"
+  },
+  {
+    "town": "Big Timber",
+    "property_name": "Sweet Grass (Dude) Ranch",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "big-timber-sweet-grass-dude-ranch",
+    "adref_table": "big-timber-sweet-grass-dude-ranch-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:big-timber-montana?camref=1011l52GGp&creativeref=1101l63118&adref=big-timber-sweet-grass-dude-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:big-timber-montana?camref=1011l52GGp&creativeref=1101l63118&adref=big-timber-sweet-grass-dude-ranch-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "Bridge Street Cottages",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "19811629",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Bridge-Street-Cottages.h19811629.Hotel-Information?camref=1011l52GG6&adref=bigfork-bridge-street-cottages",
+    "adref_body": "bigfork-bridge-street-cottages",
+    "adref_table": "bigfork-bridge-street-cottages-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "Flathead Lake Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "72091028",
+    "body_link_url": "https://www.expedia.com/Bigfork-Hotels-Flathead-Lake-Resort.h72091028.Hotel-Information?camref=1011l52GG6&adref=bigfork-flathead-lake-lodge",
+    "adref_body": "bigfork-flathead-lake-lodge",
+    "adref_table": "bigfork-flathead-lake-lodge-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "Glamping at Angel Lake",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "bigfork-glamping-at-angel-lake",
+    "adref_table": "bigfork-glamping-at-angel-lake-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "Mountain Lake Lodge",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "bigfork-mountain-lake-lodge",
+    "adref_table": "bigfork-mountain-lake-lodge-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "The Inn on Bigfork Bay",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "46006271",
+    "body_link_url": "https://www.expedia.com/Bigfork-Hotels-The-INN-On-Bigfork-Bay.h46006271.Hotel-Information?camref=1011l52GG6&adref=bigfork-the-inn-on-bigfork-bay",
+    "adref_body": "bigfork-the-inn-on-bigfork-bay",
+    "adref_table": "bigfork-the-inn-on-bigfork-bay-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "The Islander Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "35113295",
+    "body_link_url": "https://www.expedia.com/Bigfork-Hotels-The-Islander-Inn.h35113295.Hotel-Information?camref=1011l52GG6&adref=bigfork-the-islander-inn",
+    "adref_body": "bigfork-the-islander-inn",
+    "adref_table": "bigfork-the-islander-inn-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "The Stillwater at Stoner Creek Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "90137987",
+    "body_link_url": "https://www.expedia.com/Bigfork-Hotels-The-Stillwater-At-Stoner-Creek-Cabins.h90137987.Hotel-Information?camref=1011l52GG6&adref=bigfork-stillwater-getaway",
+    "adref_body": "bigfork-stillwater-getaway",
+    "adref_table": "bigfork-stillwater-getaway-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "The Swan River Retreat",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "bigfork-the-swan-river-retreat",
+    "adref_table": "bigfork-the-swan-river-retreat-table",
+    "vrbo_listing_id": "600622",
+    "vrbo_body_link": "https://www.vrbo.com/600622?camref=1011l52GGp&creativeref=1101l63118&adref=bigfork-the-swan-river-retreat",
+    "vrbo_table_link": "https://www.vrbo.com/600622?camref=1011l52GGp&creativeref=1101l63118&adref=bigfork-the-swan-river-retreat-table"
+  },
+  {
+    "town": "Bigfork",
+    "property_name": "Timbers Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "8768852",
+    "body_link_url": "https://www.expedia.com/Bigfork-Hotels-Timbers-Motel.h8768852.Hotel-Information?camref=1011l52GG6&adref=bigfork-timbers-motel",
+    "adref_body": "bigfork-timbers-motel",
+    "adref_table": "bigfork-timbers-motel-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Best Western Plus Clocktower Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "26437",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-Best-Western-Plus-Clocktower-Inn.h26437.Hotel-Information?camref=1011l52GG6&adref=billings-best-western-plus-clocktower-inn",
+    "adref_body": "billings-best-western-plus-clocktower-inn",
+    "adref_table": "billings-best-western-plus-clocktower-inn-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Billings Hotel and Convention Center",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "27953",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-Billings-Hotel-And-Convention-Center.h27953.Hotel-Information?camref=1011l52GG6&adref=billings-billings-hotel-and-convention-center",
+    "adref_body": "billings-billings-hotel-and-convention-center",
+    "adref_table": "billings-billings-hotel-and-convention-center-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Country Inn & Suites Billings",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "billings-country-inn-suites-billings",
+    "adref_table": "billings-country-inn-suites-billings-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Homewood Suites By Hilton Billings, MT",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "8370310",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-Homewood-Suites-By-Hilton-Billings.h8370310.Hotel-Information?camref=1011l52GG6&adref=billings-homewood-suites-by-hilton-billings",
+    "adref_body": "billings-homewood-suites-by-hilton-billings",
+    "adref_table": "billings-homewood-suites-by-hilton-billings-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Hyatt Place Billings",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "112736041",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-Hyatt-Place-Billings.h112736041.Hotel-Information?camref=1011l52GG6&adref=billings-hyatt-place-billings",
+    "adref_body": "billings-hyatt-place-billings",
+    "adref_table": "billings-hyatt-place-billings-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "La Quinta Inn & Suites by Wyndham Billings",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "8796844",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-La-Quinta-Inn-Suites-By-Wyndham-Billings.h8796844.Hotel-Information?camref=1011l52GG6&adref=billings-la-quinta-inn-suites-by-wyndham-billings",
+    "adref_body": "billings-la-quinta-inn-suites-by-wyndham-billings",
+    "adref_table": "billings-la-quinta-inn-suites-by-wyndham-billings-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "Residence Inn by Marriott Billings",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1695950",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-Residence-Inn-By-Marriott-Billings.h1695950.Hotel-Information?camref=1011l52GG6&adref=billings-residence-inn-by-marriott-billings",
+    "adref_body": "billings-residence-inn-by-marriott-billings",
+    "adref_table": "billings-residence-inn-by-marriott-billings-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "The Crossings Bed & Breakfast Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "36246024",
+    "body_link_url": "https://www.expedia.com/Billings-Hotels-The-Crossings-Bed-Breakfast-Inn.h36246024.Hotel-Information?camref=1011l52GG6&adref=billings-the-crossings-bed-breakfast-inn",
+    "adref_body": "billings-the-crossings-bed-breakfast-inn",
+    "adref_table": "billings-the-crossings-bed-breakfast-inn-table"
+  },
+  {
+    "town": "Billings",
+    "property_name": "The Josephine Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "billings-the-josephine-bed-and-breakfast",
+    "adref_table": "billings-the-josephine-bed-and-breakfast-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Gallatin River Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "9786643",
+    "body_link_url": "https://www.expedia.com/Bozeman-Hotels-Gallatin-River-Lodge.h9786643.Hotel-Information?camref=1011l52GG6&adref=bozeman-gallatin-river-lodge",
+    "adref_body": "bozeman-gallatin-river-lodge",
+    "adref_table": "bozeman-gallatin-river-lodge-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Hardscrabble Ranch",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "bozeman-hardscrabble-ranch",
+    "adref_table": "bozeman-hardscrabble-ranch-table",
+    "vrbo_listing_id": "1906204",
+    "vrbo_body_link": "https://www.vrbo.com/1906204?camref=1011l52GGp&creativeref=1101l63118&adref=bozeman-hardscrabble-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/1906204?camref=1011l52GGp&creativeref=1101l63118&adref=bozeman-hardscrabble-ranch-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Heritage Ranch",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "bozeman-heritage-ranch",
+    "adref_table": "bozeman-heritage-ranch-table",
+    "vrbo_listing_id": "7500933",
+    "vrbo_body_link": "https://www.vrbo.com/7500933?camref=1011l52GGp&creativeref=1101l63118&adref=bozeman-the-cabin-at-heritage-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/7500933?camref=1011l52GGp&creativeref=1101l63118&adref=bozeman-the-cabin-at-heritage-ranch-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Lakeshore Cabin & Campgrounds",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "bozeman-lakeshore-cabin-campgrounds",
+    "adref_table": "bozeman-lakeshore-cabin-campgrounds-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Lehrkind Mansion Bed and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "bozeman-lehrkind-mansion-bed-and-breakfast",
+    "adref_table": "bozeman-lehrkind-mansion-bed-and-breakfast-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Mountain Sky Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "bozeman-mountain-sky-guest-ranch",
+    "adref_table": "bozeman-mountain-sky-guest-ranch-table"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Nine Quarter Circle Ranch",
+    "status": "NOT_ON_VRBO",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "bozeman-nine-quarter-circle-ranch",
+    "adref_table": "bozeman-nine-quarter-circle-ranch-table",
+    "vrbo_listing_id": "NOT_ON_VRBO"
+  },
+  {
+    "town": "Bozeman",
+    "property_name": "Rainbow Ranch Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "894027",
+    "body_link_url": "https://www.expedia.com/Bozeman-Hotels-Rainbow-Ranch-Lodge.h894027.Hotel-Information?camref=1011l52GG6&adref=bozeman-rainbow-ranch-lodge",
+    "adref_body": "bozeman-rainbow-ranch-lodge",
+    "adref_table": "bozeman-rainbow-ranch-lodge-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "1-bedroom cabin in the mountains just outside Boulder",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "butte-1-bedroom-cabin-in-the-mountains-just-outside-boulder",
+    "adref_table": "butte-1-bedroom-cabin-in-the-mountains-just-outside-boulder-table",
+    "vrbo_listing_id": "4945653",
+    "vrbo_body_link": "https://www.vrbo.com/4945653?camref=1011l52GGp&creativeref=1101l63118&adref=butte-1-bedroom-cabin-in-the",
+    "vrbo_table_link": "https://www.vrbo.com/4945653?camref=1011l52GGp&creativeref=1101l63118&adref=butte-1-bedroom-cabin-in-the-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "Comfort Inn Butte City Center I-15/I-90",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "34162",
+    "body_link_url": "https://www.expedia.com/Butte-Hotels-Comfort-Inn-Butte-City-Center-I-15-I-90.h34162.Hotel-Information?camref=1011l52GG6&adref=butte-comfort-inn-butte-city-center-i-15-i-90",
+    "adref_body": "butte-comfort-inn-butte-city-center-i-15-i-90",
+    "adref_table": "butte-comfort-inn-butte-city-center-i-15-i-90-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "Hampton Inn Butte",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "531182",
+    "body_link_url": "https://www.expedia.com/Butte-Hotels-Hampton-Inn-Butte.h531182.Hotel-Information?camref=1011l52GG6&adref=butte-hampton-inn-butte",
+    "adref_body": "butte-hampton-inn-butte",
+    "adref_table": "butte-hampton-inn-butte-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "Hodgens Ryan Mansion",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "butte-hodgens-ryan-mansion",
+    "adref_table": "butte-hodgens-ryan-mansion-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "Ramada by Wyndham Butte",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "butte-ramada-by-wyndham-butte",
+    "adref_table": "butte-ramada-by-wyndham-butte-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "The Copper King Mansion",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "butte-the-copper-king-mansion",
+    "adref_table": "butte-the-copper-king-mansion-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "Toad Hall Manor",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "95314032",
+    "body_link_url": "https://www.expedia.com/Butte-Hotels-Toad-Hall-Manor.h95314032.Hotel-Information?camref=1011l52GG6&adref=butte-toad-hall-manor",
+    "adref_body": "butte-toad-hall-manor",
+    "adref_table": "butte-toad-hall-manor-table"
+  },
+  {
+    "town": "Butte",
+    "property_name": "VRBO (general selection)",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "butte-vrbo-general-selection",
+    "adref_table": "butte-vrbo-general-selection-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:butte-montana?camref=1011l52GGp&creativeref=1101l63118&adref=butte-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:butte-montana?camref=1011l52GGp&creativeref=1101l63118&adref=butte-vrbo-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "7 Lazy P Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-7-lazy-p-guest-ranch",
+    "adref_table": "choteau-7-lazy-p-guest-ranch-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Bella Vista Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-bella-vista-motel",
+    "adref_table": "choteau-bella-vista-motel-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Big Sky Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "3761110944",
+    "body_link_url": "https://www.expedia.com/Choteau-Hotels-Big-Sky-Motel.h3761110944.Hotel-Information?camref=1011l52GG6&adref=choteau-big-sky-motel",
+    "adref_body": "choteau-big-sky-motel",
+    "adref_table": "choteau-big-sky-motel-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Charming Choteau Cottage: Ski & Fish Nearby!",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "94375023",
+    "body_link_url": "https://www.expedia.com/Choteau-Hotels-Charming-Choteau-Cottage-Ski-Fish-Nearby.h94375023.Hotel-Information?camref=1011l52GG6&adref=choteau-charming-choteau-cottage",
+    "adref_body": "choteau-charming-choteau-cottage",
+    "adref_table": "choteau-charming-choteau-cottage-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Choteau Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-choteau-motel",
+    "adref_table": "choteau-choteau-motel-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Choteau Stage Stop Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "41451",
+    "body_link_url": "https://www.expedia.com/Choteau-Hotels-Stage-Stop-Inn.h41451.Hotel-Information?camref=1011l52GG6&adref=choteau-stage-stop-inn",
+    "adref_body": "choteau-stage-stop-inn",
+    "adref_table": "choteau-stage-stop-inn-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Cozy Augusta Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "choteau-cozy-augusta-cabin",
+    "adref_table": "choteau-cozy-augusta-cabin-table",
+    "vrbo_listing_id": "9638789",
+    "vrbo_body_link": "https://www.vrbo.com/9638789?camref=1011l52GGp&creativeref=1101l63118&adref=choteau-cozy-augusta-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/9638789?camref=1011l52GGp&creativeref=1101l63118&adref=choteau-cozy-augusta-cabin-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Deep Canyon Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-deep-canyon-guest-ranch",
+    "adref_table": "choteau-deep-canyon-guest-ranch-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Gunbarrel Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "choteau-gunbarrel-cabin",
+    "adref_table": "choteau-gunbarrel-cabin-table",
+    "vrbo_listing_id": "3750706",
+    "vrbo_body_link": "https://www.vrbo.com/3750706?camref=1011l52GGp&creativeref=1101l63118&adref=choteau-gunbarrel-studio-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/3750706?camref=1011l52GGp&creativeref=1101l63118&adref=choteau-gunbarrel-studio-cabin-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Gunther Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-gunther-motel",
+    "adref_table": "choteau-gunther-motel-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "Pine Butte Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-pine-butte-guest-ranch",
+    "adref_table": "choteau-pine-butte-guest-ranch-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "The Coffey House",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "83505883",
+    "body_link_url": "https://www.expedia.com/Choteau-Hotels-The-Coffey-House.h83505883.Hotel-Information?camref=1011l52GG6&adref=choteau-the-coffey-house",
+    "adref_body": "choteau-the-coffey-house",
+    "adref_table": "choteau-the-coffey-house-table"
+  },
+  {
+    "town": "Choteau",
+    "property_name": "West Fork Cabin",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "choteau-west-fork-cabin",
+    "adref_table": "choteau-west-fork-cabin-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Bad Rock Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-bad-rock-bed-and-breakfast",
+    "adref_table": "columbia-falls-bad-rock-bed-and-breakfast-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Bad Rock Bed and Breakfast Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "7118452",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Bad-Rock-Bed-And-Breakfast-Inn.h7118452.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-bad-rock-bed-and-breakfast-inn",
+    "adref_body": "columbia-falls-bad-rock-bed-and-breakfast-inn",
+    "adref_table": "columbia-falls-bad-rock-bed-and-breakfast-inn-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Clydesdale Outpost",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "91771832",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Clydesdale-Outpost.h91771832.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-clydesdale-outpost",
+    "adref_body": "columbia-falls-clydesdale-outpost",
+    "adref_table": "columbia-falls-clydesdale-outpost-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Gentry River Ranch",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "columbia-falls-gentry-river-ranch",
+    "adref_table": "columbia-falls-gentry-river-ranch-table",
+    "vrbo_listing_id": "1818298",
+    "vrbo_body_link": "https://www.vrbo.com/1818298?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-gentry-river-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/1818298?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-gentry-river-ranch-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Glacier Acres Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-glacier-acres-guest-ranch",
+    "adref_table": "columbia-falls-glacier-acres-guest-ranch-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Glacier Guides Lodge",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-glacier-guides-lodge",
+    "adref_table": "columbia-falls-glacier-guides-lodge-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Glacier Inn Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-glacier-inn-motel",
+    "adref_table": "columbia-falls-glacier-inn-motel-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Glacier International Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "24304507",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Glacier-International-Lodge.h24304507.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-glacier-international-lodge",
+    "adref_body": "columbia-falls-glacier-international-lodge",
+    "adref_table": "columbia-falls-glacier-international-lodge-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Good Creek Meadows",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-good-creek-meadows",
+    "adref_table": "columbia-falls-good-creek-meadows-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Kintla at 406 Glacier Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "83481711",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Kintla-At-406-Glacier-Cabins.h83481711.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-406-glacier-cabins",
+    "adref_body": "columbia-falls-406-glacier-cabins",
+    "adref_table": "columbia-falls-406-glacier-cabins-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Macker Cabin",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "columbia-falls-macker-cabin",
+    "adref_table": "columbia-falls-macker-cabin-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:columbia-falls-montana?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-macker-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:columbia-falls-montana?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-macker-cabin-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Meadow Lake Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "74431751",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Meadow-Lake-Resort-Access-To-Glacier-National-Park-Flathead-Lake.h74431751.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-meadow-lake-resort",
+    "adref_body": "columbia-falls-meadow-lake-resort",
+    "adref_table": "columbia-falls-meadow-lake-resort-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Meadow Lake View Bed and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-meadow-lake-view-bed-and-breakfast",
+    "adref_table": "columbia-falls-meadow-lake-view-bed-and-breakfast-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Moss Mountain Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-moss-mountain-inn",
+    "adref_table": "columbia-falls-moss-mountain-inn-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "North Forty Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "111347931",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-North-Forty-Resort.h111347931.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-north-forty-resort",
+    "adref_body": "columbia-falls-north-forty-resort",
+    "adref_table": "columbia-falls-north-forty-resort-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Reclusive Moose Cabins",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-reclusive-moose-cabins",
+    "adref_table": "columbia-falls-reclusive-moose-cabins-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Smoky Bear Ranch Bed & Breakfast & Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "11576186",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Smoky-Bear-Ranch-Bed-Breakfast-Cabins.h11576186.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-smoky-bear-ranch",
+    "adref_body": "columbia-falls-smoky-bear-ranch",
+    "adref_table": "columbia-falls-smoky-bear-ranch-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "The Kabins",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "columbia-falls-the-kabins",
+    "adref_table": "columbia-falls-the-kabins-table",
+    "vrbo_listing_id": "3634676",
+    "vrbo_body_link": "https://www.vrbo.com/3634676?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-the-kabins",
+    "vrbo_table_link": "https://www.vrbo.com/3634676?camref=1011l52GGp&creativeref=1101l63118&adref=columbia-falls-the-kabins-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Vintage Airstream Glamping",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "columbia-falls-vintage-airstream-glamping",
+    "adref_table": "columbia-falls-vintage-airstream-glamping-table"
+  },
+  {
+    "town": "Columbia Falls",
+    "property_name": "Wonderstone at Glacier",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "460105",
+    "body_link_url": "https://www.expedia.com/Columbia-Falls-Hotels-Wonderstone-at-Glacier.h460105.Hotel-Information?camref=1011l52GG6&adref=columbia-falls-wonderstone-at-glacier",
+    "adref_body": "columbia-falls-wonderstone-at-glacier",
+    "adref_table": "columbia-falls-wonderstone-at-glacier-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Burnt Hollow Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-burnt-hollow-ranch",
+    "adref_table": "deer-lodge-burnt-hollow-ranch-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Coleman-Gould Homestead B&B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-coleman-gould-homestead-b&b",
+    "adref_table": "deer-lodge-coleman-gould-homestead-b&b-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Copperhead Lodge",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-copperhead-lodge",
+    "adref_table": "deer-lodge-copperhead-lodge-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Cottonwood Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "deer-lodge-cottonwood-cabin",
+    "adref_table": "deer-lodge-cottonwood-cabin-table",
+    "vrbo_listing_id": "1371693",
+    "vrbo_body_link": "https://www.vrbo.com/1371693?camref=1011l52GGp&creativeref=1101l63118&adref=deer-lodge-cottonwood-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/1371693?camref=1011l52GGp&creativeref=1101l63118&adref=deer-lodge-cottonwood-cabin-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Hickory House Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "11517690",
+    "body_link_url": "https://www.expedia.com/Deer-Lodge-Hotels-Hickory-House-Inn.h11517690.Hotel-Information?camref=1011l52GG6&adref=deer-lodge-hickory-house-inn",
+    "adref_body": "deer-lodge-hickory-house-inn",
+    "adref_table": "deer-lodge-hickory-house-inn-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Marcus Daly Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-marcus-daly-motel",
+    "adref_table": "deer-lodge-marcus-daly-motel-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Mountain Sky Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-mountain-sky-guest-ranch",
+    "adref_table": "deer-lodge-mountain-sky-guest-ranch-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Old Montana Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "89571080",
+    "body_link_url": "https://www.expedia.com/Deer-Lodge-Hotels-Old-Montana-Inn.h89571080.Hotel-Information?camref=1011l52GG6&adref=deer-lodge-old-montana-inn",
+    "adref_body": "deer-lodge-old-montana-inn",
+    "adref_table": "deer-lodge-old-montana-inn-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Racetrack Cabin",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-racetrack-cabin",
+    "adref_table": "deer-lodge-racetrack-cabin-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Rich Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-rich-ranch",
+    "adref_table": "deer-lodge-rich-ranch-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Scharf's Motor Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-scharfs-motor-inn",
+    "adref_table": "deer-lodge-scharfs-motor-inn-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Super 8 by Wyndham Deer Lodge",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-super-8-by-wyndham-deer-lodge",
+    "adref_table": "deer-lodge-super-8-by-wyndham-deer-lodge-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "The Forge Hotel, BW Signature Collection",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "68067153",
+    "body_link_url": "https://www.expedia.com/Deer-Lodge-Hotels-The-Forge-Hotel-BW-Signature-Collection.h68067153.Hotel-Information?camref=1011l52GG6&adref=deer-lodge-the-forge-hotel-bw-signature-collection",
+    "adref_body": "deer-lodge-the-forge-hotel-bw-signature-collection",
+    "adref_table": "deer-lodge-the-forge-hotel-bw-signature-collection-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "The Ranch at Rock Creek",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-the-ranch-at-rock-creek",
+    "adref_table": "deer-lodge-the-ranch-at-rock-creek-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Travelodge by Wyndham Deer Lodge Montana",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "861450",
+    "body_link_url": "https://www.expedia.com/Deer-Lodge-Hotels-Travelodge-By-Wyndham-Deer-Lodge.h861450.Hotel-Information?camref=1011l52GG6&adref=deer-lodge-travelodge-by-wyndham-deer-lodge",
+    "adref_body": "deer-lodge-travelodge-by-wyndham-deer-lodge",
+    "adref_table": "deer-lodge-travelodge-by-wyndham-deer-lodge-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Vonnie Louise Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-vonnie-louise-inn",
+    "adref_table": "deer-lodge-vonnie-louise-inn-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "VRBO (general)",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "deer-lodge-vrbo-general",
+    "adref_table": "deer-lodge-vrbo-general-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:deer-lodge-montana?camref=1011l52GGp&creativeref=1101l63118&adref=deer-lodge-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:deer-lodge-montana?camref=1011l52GGp&creativeref=1101l63118&adref=deer-lodge-vrbo-table"
+  },
+  {
+    "town": "Deer Lodge",
+    "property_name": "Western Big Sky Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "deer-lodge-western-big-sky-inn",
+    "adref_table": "deer-lodge-western-big-sky-inn-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Beaverhead Rock Ranch",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "dillon-beaverhead-rock-ranch",
+    "adref_table": "dillon-beaverhead-rock-ranch-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:dillon-montana?camref=1011l52GGp&creativeref=1101l63118&adref=dillon-beaverhead-rock-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:dillon-montana?camref=1011l52GGp&creativeref=1101l63118&adref=dillon-beaverhead-rock-ranch-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Best Western Paradise Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "10807",
+    "body_link_url": "https://www.expedia.com/Dillon-Hotels-Best-Western-Paradise-Inn.h10807.Hotel-Information?camref=1011l52GG6&adref=dillon-best-western-paradise-inn",
+    "adref_body": "dillon-best-western-paradise-inn",
+    "adref_table": "dillon-best-western-paradise-inn-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Centennial Inn Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-centennial-inn-bed-&-breakfast",
+    "adref_table": "dillon-centennial-inn-bed-&-breakfast-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Comfort Inn Dillon",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-comfort-inn-dillon",
+    "adref_table": "dillon-comfort-inn-dillon-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Elijah's Rest Cabins and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-elijahs-rest-cabins-and-breakfast",
+    "adref_table": "dillon-elijahs-rest-cabins-and-breakfast-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "FairBridge Inn Express Dillon",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "282315",
+    "body_link_url": "https://www.expedia.com/Dillon-Hotels-FairBridge-Inn-Express.h282315.Hotel-Information?camref=1011l52GG6&adref=dillon-fairbridge-inn-express-dillon",
+    "adref_body": "dillon-fairbridge-inn-express-dillon",
+    "adref_table": "dillon-fairbridge-inn-express-dillon-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Greyhouse Inn Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-greyhouse-inn-bed-&-breakfast",
+    "adref_table": "dillon-greyhouse-inn-bed-&-breakfast-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Halcyon Days",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-halcyon-days",
+    "adref_table": "dillon-halcyon-days-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Quality Inn Dillon I-15",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "28326",
+    "body_link_url": "https://www.expedia.com/Dillon-Hotels-Quality-Inn-Dillon-I-15.h28326.Hotel-Information?camref=1011l52GG6&adref=dillon-quality-inn-dillon-i-15",
+    "adref_body": "dillon-quality-inn-dillon-i-15",
+    "adref_table": "dillon-quality-inn-dillon-i-15-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "Super 8 by Wyndham Dillon",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "459724",
+    "body_link_url": "https://www.expedia.com/Dillon-Hotels-Super-8-By-Wyndham-Dillon.h459724.Hotel-Information?camref=1011l52GG6&adref=dillon-super-8-by-wyndham-dillon",
+    "adref_body": "dillon-super-8-by-wyndham-dillon",
+    "adref_table": "dillon-super-8-by-wyndham-dillon-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "The Andrus Hotel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "dillon-the-andrus-hotel",
+    "adref_table": "dillon-the-andrus-hotel-table"
+  },
+  {
+    "town": "Dillon",
+    "property_name": "The Beaverhead Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1321648",
+    "body_link_url": "https://www.expedia.com/Dillon-Hotels-Beaverhead-Lodge-Dillon.h1321648.Hotel-Information?camref=1011l52GG6&adref=dillon-the-beaverhead-lodge",
+    "adref_body": "dillon-the-beaverhead-lodge",
+    "adref_table": "dillon-the-beaverhead-lodge-table"
+  },
+  {
+    "town": "Ennis",
+    "property_name": "Luxury cabin rentals in Ennis",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "ennis-luxury-cabin-rentals",
+    "adref_table": "ennis-luxury-cabin-rentals-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:ennis-montana?camref=1011l52GGp&creativeref=1101l63118&adref=ennis-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:ennis-montana?camref=1011l52GGp&creativeref=1101l63118&adref=ennis-vrbo-table"
+  },
+  {
+    "town": "Gallatin Gateway",
+    "property_name": "320 Guest Ranch",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "2179303",
+    "body_link_url": "https://www.expedia.com/Gallatin-Gateway-Hotels-320-Guest-Ranch.h2179303.Hotel-Information?camref=1011l52GG6&adref=gallatin-gateway-320-guest-ranch",
+    "adref_body": "gallatin-gateway-320-guest-ranch",
+    "adref_table": "gallatin-gateway-320-guest-ranch-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Charley Montana Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-charley-montana-bed-&-breakfast",
+    "adref_table": "glendive-charley-montana-bed-&-breakfast-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Comfort Inn Glendive",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-comfort-inn-glendive",
+    "adref_table": "glendive-comfort-inn-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Days Inn by Wyndham Glendive",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-days-inn-by-wyndham-glendive",
+    "adref_table": "glendive-days-inn-by-wyndham-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "E C Ranch West",
+    "status": "NOT_ON_VRBO",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "glendive-e-c-ranch-west",
+    "adref_table": "glendive-e-c-ranch-west-table",
+    "vrbo_listing_id": "NOT_ON_VRBO"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "FairBridge Inn & Suites Glendive",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-fairbridge-inn-suites-glendive",
+    "adref_table": "glendive-fairbridge-inn-suites-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Glendive Tiny Modern Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "glendive-glendive-tiny-modern-cabin",
+    "adref_table": "glendive-glendive-tiny-modern-cabin-table",
+    "vrbo_listing_id": "4495671",
+    "vrbo_body_link": "https://www.vrbo.com/4495671?camref=1011l52GGp&creativeref=1101l63118&adref=glendive-glendive-tiny-modern-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/4495671?camref=1011l52GGp&creativeref=1101l63118&adref=glendive-glendive-tiny-modern-cabin-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Holiday Inn Express & Suites Glendive",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-holiday-inn-express-suites-glendive",
+    "adref_table": "glendive-holiday-inn-express-suites-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Holiday Inn Express & Suites Glendive by IHG",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "7661986",
+    "body_link_url": "https://www.expedia.com/Glendive-Hotels-Holiday-Inn-Express-Hotel-Suites-Glendive.h7661986.Hotel-Information?camref=1011l52GG6&adref=glendive-holiday-inn-express-glendive",
+    "adref_body": "glendive-holiday-inn-express-glendive",
+    "adref_table": "glendive-holiday-inn-express-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Hostetler House Bed and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-hostetler-house-bed-and-breakfast",
+    "adref_table": "glendive-hostetler-house-bed-and-breakfast-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "La Quinta Inn & Suites by Wyndham Glendive",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "7597699",
+    "body_link_url": "https://www.expedia.com/Glendive-Hotels-La-Quinta-Inn-Suites-By-Wyndham-Glendive.h7597699.Hotel-Information?camref=1011l52GG6&adref=glendive-la-quinta-inn-suites-by-wyndham-glendive",
+    "adref_body": "glendive-la-quinta-inn-suites-by-wyndham-glendive",
+    "adref_table": "glendive-la-quinta-inn-suites-by-wyndham-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Mahlstedt Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-mahlstedt-ranch",
+    "adref_table": "glendive-mahlstedt-ranch-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Makoshika Campground",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-makoshika-campground",
+    "adref_table": "glendive-makoshika-campground-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Spark by Hilton Glendive",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "5955648",
+    "body_link_url": "https://www.expedia.com/Glendive-Hotels-Spark-By-Hilton-Glendive.h5955648.Hotel-Information?camref=1011l52GG6&adref=glendive-spark-by-hilton-glendive",
+    "adref_body": "glendive-spark-by-hilton-glendive",
+    "adref_table": "glendive-spark-by-hilton-glendive-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "SureStay by Best Western Glendive Yellowstone River",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "17763",
+    "body_link_url": "https://www.expedia.com/Glendive-Hotels-SureStay-by-Best-Western-Glendive-Yellowstone-River.h17763.Hotel-Information?camref=1011l52GG6&adref=glendive-surestay-by-best-western-glendive-yellowstone-river",
+    "adref_body": "glendive-surestay-by-best-western-glendive-yellowstone-river",
+    "adref_table": "glendive-surestay-by-best-western-glendive-yellowstone-river-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Yellowstone River Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "10517735",
+    "body_link_url": "https://www.expedia.com/Glendive-Hotels-Yellowstone-River-Inn.h10517735.Hotel-Information?camref=1011l52GG6&adref=glendive-yellowstone-river-inn",
+    "adref_body": "glendive-yellowstone-river-inn",
+    "adref_table": "glendive-yellowstone-river-inn-table"
+  },
+  {
+    "town": "Glendive",
+    "property_name": "Yellowstone River Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "glendive-yellowstone-river-ranch",
+    "adref_table": "glendive-yellowstone-river-ranch-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Aisling Suites",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-aisling-suites",
+    "adref_table": "great-falls-aisling-suites-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Best Resting Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-best-resting-motel",
+    "adref_table": "great-falls-best-resting-motel-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Blacktail Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-blacktail-ranch",
+    "adref_table": "great-falls-blacktail-ranch-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Collins Mansion Bed & Breakfast-Catering",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-collins-mansion-bed-and-breakfast-catering",
+    "adref_table": "great-falls-collins-mansion-bed-and-breakfast-catering-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Comfort Inn Great Falls South",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "14424",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Comfort-Inn-Great-Falls.h14424.Hotel-Information?camref=1011l52GG6&adref=great-falls-comfort-inn-great-falls",
+    "adref_body": "great-falls-comfort-inn-great-falls",
+    "adref_table": "great-falls-comfort-inn-great-falls-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Great Falls KOA",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-great-falls-koa",
+    "adref_table": "great-falls-great-falls-koa-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Hampton Inn Great Falls",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "913208",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Hampton-Inn-Great-Falls.h913208.Hotel-Information?camref=1011l52GG6&adref=great-falls-hampton-inn-great-falls",
+    "adref_body": "great-falls-hampton-inn-great-falls",
+    "adref_table": "great-falls-hampton-inn-great-falls-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Heritage Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-heritage-inn",
+    "adref_table": "great-falls-heritage-inn-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Hilton Garden Inn Great Falls",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "2172809",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Hilton-Garden-Inn-Great-Falls.h2172809.Hotel-Information?camref=1011l52GG6&adref=great-falls-hilton-garden-inn-great-falls",
+    "adref_body": "great-falls-hilton-garden-inn-great-falls",
+    "adref_table": "great-falls-hilton-garden-inn-great-falls-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Holiday Inn Great Falls- Convention Center",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "19923",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Holiday-Inn-Great-Falls-Convention-Center.h19923.Hotel-Information?camref=1011l52GG6&adref=great-falls-holiday-inn-great-falls-convention-center",
+    "adref_body": "great-falls-holiday-inn-great-falls-convention-center",
+    "adref_table": "great-falls-holiday-inn-great-falls-convention-center-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Hotel Arvon",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "12236389",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Hotel-Arvon.h12236389.Hotel-Information?camref=1011l52GG6&adref=great-falls-hotel-arvon",
+    "adref_body": "great-falls-hotel-arvon",
+    "adref_table": "great-falls-hotel-arvon-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "La Quinta Inn & Suites Great Falls",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-la-quinta-inn-suites-great-falls",
+    "adref_table": "great-falls-la-quinta-inn-suites-great-falls-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Little Belt Getaway! 3 bedroom 2 bath cabin with WiFi and hot tub.",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "great-falls-little-belt-getaway",
+    "adref_table": "great-falls-little-belt-getaway-table",
+    "vrbo_listing_id": "4281070",
+    "vrbo_body_link": "https://www.vrbo.com/4281070?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-little-belt-getaway-3-b",
+    "vrbo_table_link": "https://www.vrbo.com/4281070?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-little-belt-getaway-3-b-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Murphy's House Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-murphys-house-bed-breakfast",
+    "adref_table": "great-falls-murphys-house-bed-breakfast-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Old Oak Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-old-oak-inn",
+    "adref_table": "great-falls-old-oak-inn-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Ranches at Belt Creek",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "great-falls-ranches-at-belt-creek",
+    "adref_table": "great-falls-ranches-at-belt-creek-table",
+    "vrbo_listing_id": "2804709",
+    "vrbo_body_link": "https://www.vrbo.com/2804709?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-ranches-at-belt-creek",
+    "vrbo_table_link": "https://www.vrbo.com/2804709?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-ranches-at-belt-creek-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Sky Walker Dude Ranch",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "great-falls-sky-walker-dude-ranch",
+    "adref_table": "great-falls-sky-walker-dude-ranch-table",
+    "vrbo_listing_id": "928876",
+    "vrbo_body_link": "https://www.vrbo.com/928876?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-skywalker-ranch-estate",
+    "vrbo_table_link": "https://www.vrbo.com/928876?camref=1011l52GGp&creativeref=1101l63118&adref=great-falls-skywalker-ranch-estate-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Skywater Cabins",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-skywater-cabins",
+    "adref_table": "great-falls-skywater-cabins-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Staybridge Suites Great Falls",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "2759004",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-Staybridge-Suites-Great-Falls.h2759004.Hotel-Information?camref=1011l52GG6&adref=great-falls-staybridge-suites",
+    "adref_body": "great-falls-staybridge-suites",
+    "adref_table": "great-falls-staybridge-suites-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "The Gibson Hotel Great Falls, an Ascend Collection Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "6579457",
+    "body_link_url": "https://www.expedia.com/Great-Falls-Hotels-The-Gibson.h6579457.Hotel-Information?camref=1011l52GG6&adref=great-falls-the-gibson",
+    "adref_body": "great-falls-the-gibson",
+    "adref_table": "great-falls-the-gibson-table"
+  },
+  {
+    "town": "Great Falls",
+    "property_name": "Townhouse Inn Great Falls",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "great-falls-townhouse-inn-great-falls",
+    "adref_table": "great-falls-townhouse-inn-great-falls-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "ABC acres",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "hamilton-abc-acres",
+    "adref_table": "hamilton-abc-acres-table",
+    "vrbo_listing_id": "2066081",
+    "vrbo_body_link": "https://www.vrbo.com/2066081?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-abc-acres",
+    "vrbo_table_link": "https://www.vrbo.com/2066081?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-abc-acres-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Bitterroot River Inn & Conference Center",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "520027",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-Bitterroot-River-Inn-and-Conference-Center.h520027.Hotel-Information?camref=1011l52GG6&adref=hamilton-bitterroot-river-inn-and-conference-center",
+    "adref_body": "hamilton-bitterroot-river-inn-and-conference-center",
+    "adref_table": "hamilton-bitterroot-river-inn-and-conference-center-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Chief Joseph Ranch",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "hamilton-chief-joseph-ranch",
+    "adref_table": "hamilton-chief-joseph-ranch-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:hamilton-montana?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:hamilton-montana?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-vrbo-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "City Center Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "92263172",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-City-Center-Motel.h92263172.Hotel-Information?camref=1011l52GG6&adref=hamilton-city-center-motel",
+    "adref_body": "hamilton-city-center-motel",
+    "adref_table": "hamilton-city-center-motel-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Comfort Inn Hamilton",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hamilton-comfort-inn-hamilton",
+    "adref_table": "hamilton-comfort-inn-hamilton-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Glamping At Anglers Roost",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hamilton-glamping-at-anglers-roost",
+    "adref_table": "hamilton-glamping-at-anglers-roost-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Lost Horse Lodge - Double Queen Cabin",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "106241173",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-Lost-Horse-Lodge-Double-Queen-Cabin.h106241173.Hotel-Information?camref=1011l52GG6&adref=hamilton-lost-horse-lodge",
+    "adref_body": "hamilton-lost-horse-lodge",
+    "adref_table": "hamilton-lost-horse-lodge-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Pineview Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "78598192",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-Pineview-Lodge.h78598192.Hotel-Information?camref=1011l52GG6&adref=hamilton-pineview-lodge",
+    "adref_body": "hamilton-pineview-lodge",
+    "adref_table": "hamilton-pineview-lodge-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Quality Inn Hamilton Bitterroot Valley",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "27520",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-Quality-Inn-Hamilton-Bitterroot-Valley.h27520.Hotel-Information?camref=1011l52GG6&adref=hamilton-quality-inn-hamilton-bitterroot-valley",
+    "adref_body": "hamilton-quality-inn-hamilton-bitterroot-valley",
+    "adref_table": "hamilton-quality-inn-hamilton-bitterroot-valley-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Rye Creek Lodge",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "hamilton-rye-creek-lodge",
+    "adref_table": "hamilton-rye-creek-lodge-table",
+    "vrbo_listing_id": "668267",
+    "vrbo_body_link": "https://www.vrbo.com/668267?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-rye-creek-lodge",
+    "vrbo_table_link": "https://www.vrbo.com/668267?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-rye-creek-lodge-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "SkyWater Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "102132063",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-SkyWater-Cabins.h102132063.Hotel-Information?camref=1011l52GG6&adref=hamilton-skywater-cabins",
+    "adref_body": "hamilton-skywater-cabins",
+    "adref_table": "hamilton-skywater-cabins-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Super 8 by Wyndham Hamilton",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "123468",
+    "body_link_url": "https://www.expedia.com/Hamilton-Hotels-Super-8-By-Wyndham-Hamilton.h123468.Hotel-Information?camref=1011l52GG6&adref=hamilton-super-8-by-wyndham-hamilton",
+    "adref_body": "hamilton-super-8-by-wyndham-hamilton",
+    "adref_table": "hamilton-super-8-by-wyndham-hamilton-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "The Cabins at Deer Crossing",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hamilton-the-cabins-at-deer-crossing",
+    "adref_table": "hamilton-the-cabins-at-deer-crossing-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "The Moraine Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hamilton-the-moraine-bed-&-breakfast",
+    "adref_table": "hamilton-the-moraine-bed-&-breakfast-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Travellers Rest Cabins & RV Park",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hamilton-travellers-rest-cabins-rv-park",
+    "adref_table": "hamilton-travellers-rest-cabins-rv-park-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Triple Creek Ranch",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "199269",
+    "body_link_url": "https://www.expedia.com/Darby-Hotels-Triple-Creek-Ranch.h199269.Hotel-Information?camref=1011l52GG6&adref=darby-triple-creek-ranch",
+    "adref_body": "darby-triple-creek-ranch",
+    "adref_table": "darby-triple-creek-ranch-table"
+  },
+  {
+    "town": "Hamilton",
+    "property_name": "Withy Gate Lodgings",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "hamilton-withy-gate-lodgings",
+    "adref_table": "hamilton-withy-gate-lodgings-table",
+    "vrbo_listing_id": "275459",
+    "vrbo_body_link": "https://www.vrbo.com/275459?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-withy-gate-lodgings",
+    "vrbo_table_link": "https://www.vrbo.com/275459?camref=1011l52GGp&creativeref=1101l63118&adref=hamilton-withy-gate-lodgings-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Hardin Lodge Little Bighorn Battle Field I-90",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "3445192896",
+    "body_link_url": "https://www.expedia.com/Hardin-Hotels-Hardin-Lodge-Little-Bighorn-Battle-Field-I-90.h3445192896.Hotel-Information?camref=1011l52GG6&adref=hardin-hardin-lodge-little-bighorn-battle-field-i-90",
+    "adref_body": "hardin-hardin-lodge-little-bighorn-battle-field-i-90",
+    "adref_table": "hardin-hardin-lodge-little-bighorn-battle-field-i-90-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Homestead Inn and Suites",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "36994500",
+    "body_link_url": "https://www.expedia.com/Hardin-Hotels-Homestead-Inn-And-Suites.h36994500.Hotel-Information?camref=1011l52GG6&adref=hardin-homestead-inn-suites-hardin",
+    "adref_body": "hardin-homestead-inn-suites-hardin",
+    "adref_table": "hardin-homestead-inn-suites-hardin-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Hotel Becker Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hardin-hotel-becker-bed-and-breakfast",
+    "adref_table": "hardin-hotel-becker-bed-and-breakfast-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Kendrick House Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hardin-kendrick-house-inn",
+    "adref_table": "hardin-kendrick-house-inn-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Lariat Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "15410612",
+    "body_link_url": "https://www.expedia.com/Hardin-Hotels-Lariat-Motel.h15410612.Hotel-Information?camref=1011l52GG6&adref=hardin-lariat-motel",
+    "adref_body": "hardin-lariat-motel",
+    "adref_table": "hardin-lariat-motel-table"
+  },
+  {
+    "town": "Hardin",
+    "property_name": "Western Motel Hardin",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "hardin-western-motel-hardin",
+    "adref_table": "hardin-western-motel-hardin-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "AmericInn by Wyndham Havre",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1518527",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-AmericInn-By-Wyndham-Havre.h1518527.Hotel-Information?camref=1011l52GG6&adref=havre-americinn-by-wyndham-havre",
+    "adref_body": "havre-americinn-by-wyndham-havre",
+    "adref_table": "havre-americinn-by-wyndham-havre-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Best Western Plus Great Northern Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "119269",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Best-Western-Plus-Great-Northern-Inn.h119269.Hotel-Information?camref=1011l52GG6&adref=havre-best-western-plus-great-northern-inn",
+    "adref_body": "havre-best-western-plus-great-northern-inn",
+    "adref_table": "havre-best-western-plus-great-northern-inn-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Best Western Plus Havre Inn & Suites",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "10086424",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Best-Western-Plus-Havre-Inn-Suites.h10086424.Hotel-Information?camref=1011l52GG6&adref=havre-best-western-plus-havre-inn-suites",
+    "adref_body": "havre-best-western-plus-havre-inn-suites",
+    "adref_table": "havre-best-western-plus-havre-inn-suites-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Evergreen Campground",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "havre-evergreen-campground",
+    "adref_table": "havre-evergreen-campground-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "FOOTHILLS LOOKOUT INN -Come home to Montana!",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "63643333",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Foothills-Lookout-Inn-Come-Home-To-Montana.h63643333.Hotel-Information?camref=1011l52GG6&adref=havre-foothills-lookout-inn-come-home-to-montana",
+    "adref_body": "havre-foothills-lookout-inn-come-home-to-montana",
+    "adref_table": "havre-foothills-lookout-inn-come-home-to-montana-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Lark and Laurel Bed and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "havre-lark-and-laurel-bed-and-breakfast",
+    "adref_table": "havre-lark-and-laurel-bed-and-breakfast-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Quality Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "27603",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Quality-Inn.h27603.Hotel-Information?camref=1011l52GG6&adref=havre-quality-inn",
+    "adref_body": "havre-quality-inn",
+    "adref_table": "havre-quality-inn-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Sage Safaris",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "havre-sage-safaris",
+    "adref_table": "havre-sage-safaris-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Siesta Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "40152862",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Siesta-Motel.h40152862.Hotel-Information?camref=1011l52GG6&adref=havre-siesta-motel",
+    "adref_body": "havre-siesta-motel",
+    "adref_table": "havre-siesta-motel-table"
+  },
+  {
+    "town": "Havre",
+    "property_name": "Super 8 by Wyndham Havre",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "855554",
+    "body_link_url": "https://www.expedia.com/Havre-Hotels-Super-8-By-Wyndham-Havre.h855554.Hotel-Information?camref=1011l52GG6&adref=havre-super-8-by-wyndham-havre",
+    "adref_body": "havre-super-8-by-wyndham-havre",
+    "adref_table": "havre-super-8-by-wyndham-havre-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Best Western Helena - Capitol Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "40040",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Best-Western-Helena-Capitol-Hotel.h40040.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-helena-capitol-hotel",
+    "adref_body": "helena-best-western-helena-capitol-hotel",
+    "adref_table": "helena-best-western-helena-capitol-hotel-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Best Western Helena/Capitol Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "40040",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Best-Western-HelenaCapitol-Hotel.h40040.Hotel-Information?camref=1011l52GG6&adref=helena-bestwesternhelenacapitolhotel",
+    "adref_body": "helena-bestwesternhelenacapitolhotel",
+    "adref_table": "helena-bestwesternhelenacapitolhotel-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Best Western Premier Helena Great Northern Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "970516",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Best-Western-Premier-Helena-Great-Northern-Hotel.h970516.Hotel-Information?camref=1011l52GG6&adref=helena-best-western-premier-helena-great-northern-hotel",
+    "adref_body": "helena-best-western-premier-helena-great-northern-hotel",
+    "adref_table": "helena-best-western-premier-helena-great-northern-hotel-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Comfort Suites Helena Airport",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "helena-comfort-suites-helena-airport",
+    "adref_table": "helena-comfort-suites-helena-airport-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Fairfield by Marriott Inn & Suites Helena North",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "790807",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Fairfield-By-Marriott-Inn-And-Suites-Helena-North.h790807.Hotel-Information?camref=1011l52GG6&adref=helena-fairfield-by-marriott-inn-and-suites-helena-north",
+    "adref_body": "helena-fairfield-by-marriott-inn-and-suites-helena-north",
+    "adref_table": "helena-fairfield-by-marriott-inn-and-suites-helena-north-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Hampton Inn Helena",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "894538",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Hampton-Inn-Helena.h894538.Hotel-Information?camref=1011l52GG6&adref=helena-hampton-inn-helena",
+    "adref_body": "helena-hampton-inn-helena",
+    "adref_table": "helena-hampton-inn-helena-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Holiday Inn Express Hotel & Suites Helena",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "4236001",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Holiday-Inn-Express-Hotel-Suites-Helena.h4236001.Hotel-Information?camref=1011l52GG6&adref=helena-holiday-inn-express-hotel-suites-helena",
+    "adref_body": "helena-holiday-inn-hotel-suites-helena",
+    "adref_table": "helena-holiday-inn-hotel-suites-helena-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Home2 Suites by Hilton Helena",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "21599842",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Home2-Suites-By-Hilton-Helena.h21599842.Hotel-Information?camref=1011l52GG6&adref=helena-home2-suites-by-hilton-helena",
+    "adref_body": "helena-home2-suites-by-hilton-helena",
+    "adref_table": "helena-home2-suites-by-hilton-helena-table"
+  },
+  {
+    "town": "Helena",
+    "property_name": "Residence Inn by Marriott Helena",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "3791925",
+    "body_link_url": "https://www.expedia.com/Helena-Hotels-Residence-Inn-By-Marriott-Helena.h3791925.Hotel-Information?camref=1011l52GG6&adref=helena-residence-inn-by-marriott-helena",
+    "adref_body": "helena-residence-inn-by-marriott-helena",
+    "adref_table": "helena-residence-inn-by-marriott-helena-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Judith Mountain Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "34989889",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-Judith-Mountain-Lodge.h34989889.Hotel-Information?camref=1011l52GG6&adref=lewistown-judith-mountain-lodge",
+    "adref_body": "lewistown-judith-mountain-lodge",
+    "adref_table": "lewistown-judith-mountain-lodge-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Pheasant Tales Bed & Bistro/The Bears' Den Guest House",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "lewistown-pheasant-tales-bed-bistro-the-bears-den-guest-house",
+    "adref_table": "lewistown-pheasant-tales-bed-bistro-the-bears-den-guest-house-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Super 8 by Wyndham Lewistown",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "40032",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-Super-8-By-Wyndham-Lewistown.h40032.Hotel-Information?camref=1011l52GG6&adref=lewistown-super-8-by-wyndham-lewistown",
+    "adref_body": "lewistown-super-8-by-wyndham-lewistown",
+    "adref_table": "lewistown-super-8-by-wyndham-lewistown-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Symmes-Wicks House Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "lewistown-symmes-wicks-house-bed-&-breakfast",
+    "adref_table": "lewistown-symmes-wicks-house-bed-&-breakfast-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "The B&B Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "96265735",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-The-BB-Motel.h96265735.Hotel-Information?camref=1011l52GG6&adref=lewistown-the-bb-motel",
+    "adref_body": "lewistown-the-bb-motel",
+    "adref_table": "lewistown-the-bb-motel-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "The Calvert Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "46231456",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-The-Calvert-Hotel.h46231456.Hotel-Information?camref=1011l52GG6&adref=lewistown-the-calvert-hotel",
+    "adref_body": "lewistown-the-calvert-hotel",
+    "adref_table": "lewistown-the-calvert-hotel-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "The Perfect Get Away Beautifully Crafted Log Cabin On Private Reservoir",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "31175537",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-The-Perfect-Get-Away-Beautifully-Crafted-Log-Cabin-On-Private-Reservoir.h31175537.Hotel-Information?camref=1011l52GG6&adref=lewistown-cottonwood-log-cabins",
+    "adref_body": "lewistown-cottonwood-log-cabins",
+    "adref_table": "lewistown-cottonwood-log-cabins-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Trails End Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "14842966",
+    "body_link_url": "https://www.expedia.com/Lewistown-Hotels-Trails-End-Motel.h14842966.Hotel-Information?camref=1011l52GG6&adref=lewistown-trails-end-motel",
+    "adref_body": "lewistown-trails-end-motel",
+    "adref_table": "lewistown-trails-end-motel-table"
+  },
+  {
+    "town": "Lewistown",
+    "property_name": "Yogo Inn Lewistown",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "lewistown-yogo-inn-lewistown",
+    "adref_table": "lewistown-yogo-inn-lewistown-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "Caboose Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1503318",
+    "body_link_url": "https://www.expedia.com/Libby-Hotels-Caboose-Motel.h1503318.Hotel-Information?camref=1011l52GG6&adref=libby-caboose-motel",
+    "adref_body": "libby-caboose-motel",
+    "adref_table": "libby-caboose-motel-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "Evergreen Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "11696995",
+    "body_link_url": "https://www.expedia.com/Libby-Hotels-Evergreen-Motel.h11696995.Hotel-Information?camref=1011l52GG6&adref=libby-evergreen-motel-libby",
+    "adref_body": "libby-evergreen-motel",
+    "adref_table": "libby-evergreen-motel-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "Herons Roost Cabin Vacation Rental",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "libby-herons-roost-cabin-vacation-rental",
+    "adref_table": "libby-herons-roost-cabin-vacation-rental-table",
+    "vrbo_listing_id": "4810778",
+    "vrbo_body_link": "https://www.vrbo.com/4810778?camref=1011l52GGp&creativeref=1101l63118&adref=libby-herons-roost-cabin-vacation",
+    "vrbo_table_link": "https://www.vrbo.com/4810778?camref=1011l52GGp&creativeref=1101l63118&adref=libby-herons-roost-cabin-vacation-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "Huckleberry House Bed & Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "libby-huckleberry-house-bed-and-breakfast",
+    "adref_table": "libby-huckleberry-house-bed-and-breakfast-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "McGinnis Meadows Cattle & Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "libby-mcginnis-meadows-cattle-guest-ranch",
+    "adref_table": "libby-mcginnis-meadows-cattle-guest-ranch-table"
+  },
+  {
+    "town": "Libby",
+    "property_name": "Venture Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "9392901",
+    "body_link_url": "https://www.expedia.com/Libby-Hotels-Venture-Inn.h9392901.Hotel-Information?camref=1011l52GG6&adref=libby-venture-inn-libby",
+    "adref_body": "libby-venture-inn-libby",
+    "adref_table": "libby-venture-inn-libby-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "B Bar Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "livingston-b-bar-ranch",
+    "adref_table": "livingston-b-bar-ranch-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Comfort Inn & Suites Livingston",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "77067420",
+    "body_link_url": "https://www.expedia.com/Livingston-Hotels-Comfort-Inn-Suites-Livingston.h77067420.Hotel-Information?camref=1011l52GG6&adref=livingston-comfort-inn-suites-livingston",
+    "adref_body": "livingston-comfort-inn-suites-livingston",
+    "adref_table": "livingston-comfort-inn-suites-livingston-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Mountain Sky Guest Ranch Livingston",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "livingston-mountain-sky-guest-ranch-livingston",
+    "adref_table": "livingston-mountain-sky-guest-ranch-livingston-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Pitch Yellowstone",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "livingston-pitch-yellowstone",
+    "adref_table": "livingston-pitch-yellowstone-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:livingston-montana?camref=1011l52GGp&creativeref=1101l63118&adref=livingston-montana-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:livingston-montana?camref=1011l52GGp&creativeref=1101l63118&adref=livingston-montana-vrbo-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Super 8 by Wyndham Livingston Yellowstone",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "459869",
+    "body_link_url": "https://www.expedia.com/Livingston-Hotels-Super-8-by-Wyndham-Livingston-Yellowstone.h459869.Hotel-Information?camref=1011l52GG6&adref=livingston-super-8-by-wyndham-livingston-yellowstone",
+    "adref_body": "livingston-super-8-by-wyndham-livingston-yellowstone",
+    "adref_table": "livingston-super-8-by-wyndham-livingston-yellowstone-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Under Canvas North Yellowstone",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "89326520",
+    "body_link_url": "https://www.expedia.com/Livingston-Hotels-Under-Canvas-North-Yellowstone.h89326520.Hotel-Information?camref=1011l52GG6&adref=livingston-under-canvas-north-yellowstone",
+    "adref_body": "livingston-under-canvas-north-yellowstone",
+    "adref_table": "livingston-under-canvas-north-yellowstone-table"
+  },
+  {
+    "town": "Livingston",
+    "property_name": "Yellowstone Valley Lodge, an Ascend Collection Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "4501686",
+    "body_link_url": "https://www.expedia.com/Livingston-Hotels-The-Yellowstone-Valley-Lodge.h4501686.Hotel-Information?camref=1011l52GG6&adref=livingston-the-yellowstone-valley-lodge",
+    "adref_body": "livingston-the-yellowstone-valley-lodge",
+    "adref_table": "livingston-the-yellowstone-valley-lodge-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Econo Lodge Miles City",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-econo-lodge-miles-city",
+    "adref_table": "miles-city-econo-lodge-miles-city-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "FairBridge Inn & Suites Miles City",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "459097",
+    "body_link_url": "https://www.expedia.com/Miles-City-Hotels-Fairbridge-Inn-Suites.h459097.Hotel-Information?camref=1011l52GG6&adref=miles-city-fairbridge-inn-suites-miles-city",
+    "adref_body": "miles-city-fairbridge-inn-suites-miles-city",
+    "adref_table": "miles-city-fairbridge-inn-suites-miles-city-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Horton House B&B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-horton-house-b-and-b",
+    "adref_table": "miles-city-horton-house-b-and-b-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "J 7 Quarter Circle Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-j-7-quarter-circle-ranch",
+    "adref_table": "miles-city-j-7-quarter-circle-ranch-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Miles City Hotel & Suites",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-miles-city-hotel-suites",
+    "adref_table": "miles-city-miles-city-hotel-suites-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Miles City KOA",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-miles-city-koa",
+    "adref_table": "miles-city-miles-city-koa-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Montana Theatre \u2013 Airbnb",
+    "status": "NOT_ON_VRBO",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "miles-city-montana-theatre-airbnb",
+    "adref_table": "miles-city-montana-theatre-airbnb-table",
+    "vrbo_listing_id": "NOT_ON_VRBO"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Morlock Guest House",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-morlock-guest-house",
+    "adref_table": "miles-city-morlock-guest-house-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Sleep Inn & Suites Miles City I-94",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "41443",
+    "body_link_url": "https://www.expedia.com/Miles-City-Hotels-Sleep-Inn-Suites-Miles-City-I-94.h41443.Hotel-Information?camref=1011l52GG6&adref=miles-city-sleep-inn-suites-miles-city-i-94",
+    "adref_body": "miles-city-sleep-inn-suites-miles-city-i-94",
+    "adref_table": "miles-city-sleep-inn-suites-miles-city-i-94-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Super 8 by Wyndham Miles City",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "855579",
+    "body_link_url": "https://www.expedia.com/Miles-City-Hotels-Super-8-by-Wyndham-Miles-City.h855579.Hotel-Information?camref=1011l52GG6&adref=miles-city-super-8-by-wyndham-miles-city",
+    "adref_body": "miles-city-super-8-by-wyndham-miles-city",
+    "adref_table": "miles-city-super-8-by-wyndham-miles-city-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "The Olive Hotel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-the-olive-hotel",
+    "adref_table": "miles-city-the-olive-hotel-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Tongue River Winery and B & B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-tongue-river-winery-and-b-b",
+    "adref_table": "miles-city-tongue-river-winery-and-b-b-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Tongue River Winery and B&B",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "miles-city-tongue-river-winery-and-b-and-b",
+    "adref_table": "miles-city-tongue-river-winery-and-b-and-b-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:miles-city-montana?camref=1011l52GGp&creativeref=1101l63118&adref=miles-city-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:miles-city-montana?camref=1011l52GGp&creativeref=1101l63118&adref=miles-city-vrbo-table"
+  },
+  {
+    "town": "Miles City",
+    "property_name": "Wagon Wheel Campground",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "miles-city-wagon-wheel-campground",
+    "adref_table": "miles-city-wagon-wheel-campground-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Alberton Orchards",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-alberton-orchards",
+    "adref_table": "missoula-alberton-orchards-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Beavertail Hill State Park",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-beavertail-hill",
+    "adref_table": "missoula-beavertail-hill-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Bitterroot Cat Ranch",
+    "status": "NOT_ON_VRBO",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "missoula-bitterroot-cat-ranch",
+    "adref_table": "missoula-bitterroot-cat-ranch-table",
+    "vrbo_listing_id": "NOT_ON_VRBO"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Blue Mountain B&B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-blue-mountain-b-b",
+    "adref_table": "missoula-blue-mountain-b-b-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Butler Creek Lodge",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "missoula-butler-creek-lodge",
+    "adref_table": "missoula-butler-creek-lodge-table",
+    "vrbo_listing_id": "433415",
+    "vrbo_body_link": "https://www.vrbo.com/433415?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-butler-creek-lodge",
+    "vrbo_table_link": "https://www.vrbo.com/433415?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-butler-creek-lodge-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Courtyard Missoula",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-courtyard-missoula",
+    "adref_table": "missoula-courtyard-missoula-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Days Inn and Suites by Wyndham Downtown Missoula-University",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "9823477",
+    "body_link_url": "https://www.expedia.com/Missoula-Hotels-Days-Inn-and-Suites-by-Wyndham-Downtown-Missoula-University.h9823477.Hotel-Information?camref=1011l52GG6&adref=missoula-days-inn-and-suites-by-wyndham-downtown-missoula-university",
+    "adref_body": "missoula-days-inn-and-suites-by-wyndham-downtown-missoula-university",
+    "adref_table": "missoula-days-inn-and-suites-by-wyndham-downtown-missoula-university-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Dunrovin Ranch, LLC",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-dunrovin-ranch-llc",
+    "adref_table": "missoula-dunrovin-ranch-llc-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Goldsmith's B&B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-goldsmiths-b-and-b",
+    "adref_table": "missoula-goldsmiths-b-and-b-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Holiday Inn Express Hotel & Suites Missoula by IHG",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "4319184",
+    "body_link_url": "https://www.expedia.com/Missoula-Hotels-Holiday-Inn-Express-Hotel-Suites-Missoula-by-IHG.h4319184.Hotel-Information?camref=1011l52GG6&adref=missoula-holiday-inn-express-hotel-suites-missoula-by-ihg",
+    "adref_body": "missoula-holiday-inn-express-hotel-suites-missoula-by-ihg",
+    "adref_table": "missoula-holiday-inn-express-hotel-suites-missoula-by-ihg-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "LOGE Missoula",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "102118196",
+    "body_link_url": "https://www.expedia.com/Missoula-Hotels-LOGE-Missoula.h102118196.Hotel-Information?camref=1011l52GG6&adref=missoula-loge-missoula",
+    "adref_body": "missoula-loge-missoula",
+    "adref_table": "missoula-loge-missoula-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Lolo National Forest",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-lolo-national-forest",
+    "adref_table": "missoula-lolo-national-forest-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Missoula KOA Holiday",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-missoula-koa-holiday",
+    "adref_table": "missoula-missoula-koa-holiday-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Staybridge Suites Missoula",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1990315",
+    "body_link_url": "https://www.expedia.com/Missoula-Hotels-Staybridge-Suites-Missoula.h1990315.Hotel-Information?camref=1011l52GG6&adref=missoula-staybridge-suites-missoula",
+    "adref_body": "missoula-staybridge-suites-missoula",
+    "adref_table": "missoula-staybridge-suites-missoula-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "Super 8 by Wyndham Missoula/Reserve St.",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "123701",
+    "body_link_url": "https://www.expedia.com/Missoula-Hotels-Super-8-by-Wyndham-Missoula-Reserve-St.h123701.Hotel-Information?camref=1011l52GG6&adref=missoula-super-8-by-wyndham-missoula-reserve-st",
+    "adref_body": "missoula-super-8-by-wyndham-missoula-reserve-st",
+    "adref_table": "missoula-super-8-by-wyndham-missoula-reserve-st-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "The Hohnstead",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "missoula-the-hohnstead",
+    "adref_table": "missoula-the-hohnstead-table",
+    "vrbo_listing_id": "3888526",
+    "vrbo_body_link": "https://www.vrbo.com/3888526?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-the-hohnstead",
+    "vrbo_table_link": "https://www.vrbo.com/3888526?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-the-hohnstead-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "The Holmestead Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "missoula-the-holmestead-cabin",
+    "adref_table": "missoula-the-holmestead-cabin-table",
+    "vrbo_listing_id": "2724147",
+    "vrbo_body_link": "https://www.vrbo.com/2724147?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-holmestead-cabin",
+    "vrbo_table_link": "https://www.vrbo.com/2724147?camref=1011l52GGp&creativeref=1101l63118&adref=missoula-holmestead-cabin-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "The Ranch at Rock Creek Missoula",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-the-ranch-at-rock-creek-missoula",
+    "adref_table": "missoula-the-ranch-at-rock-creek-missoula-table"
+  },
+  {
+    "town": "Missoula",
+    "property_name": "The Resort at Paws Up",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "missoula-the-resort-at-paws-up",
+    "adref_table": "missoula-the-resort-at-paws-up-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Americas Best Value Port Polson Inn",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "565013",
+    "body_link_url": "https://www.expedia.com/Polson-Hotels-Americas-Best-Value-Port-Polson-Inn.h565013.Hotel-Information?camref=1011l52GG6&adref=polson-port-polson-inn",
+    "adref_body": "polson-port-polson-inn",
+    "adref_table": "polson-port-polson-inn-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Bayview Inn Polson",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "polson-bayview-inn-polson",
+    "adref_table": "polson-bayview-inn-polson-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Flathead Lake Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "polson-flathead-lake-inn",
+    "adref_table": "polson-flathead-lake-inn-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Flathead Lake Lodge",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "polson-flathead-lake-lodge",
+    "adref_table": "polson-flathead-lake-lodge-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "KwaTaqNuk Resort & Casino",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "6835",
+    "body_link_url": "https://www.expedia.com/Polson-Hotels-KwaTaqNuk-Resort-&-Casino.h6835.Hotel-Information?camref=1011l52GG6&adref=polson-kwataqnuk-resort-casino",
+    "adref_body": "polson-kwataqnuk-resort-casino",
+    "adref_table": "polson-kwataqnuk-resort-casino-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Polson Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "polson-polson-motel",
+    "adref_table": "polson-polson-motel-table"
+  },
+  {
+    "town": "Polson",
+    "property_name": "Wilderness Club Resort",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "polson-wilderness-club-resort",
+    "adref_table": "polson-wilderness-club-resort-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "a 1400 Sqft Cabin",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "red-lodge-a-1400-sqft-cabin",
+    "adref_table": "red-lodge-a-1400-sqft-cabin-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Alpine Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "124943874",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Alpine-Lodge.h124943874.Hotel-Information?camref=1011l52GG6&adref=red-lodge-alpine-lodge",
+    "adref_body": "red-lodge-alpine-lodge",
+    "adref_table": "red-lodge-alpine-lodge-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Beartooth Hideaway Inn and Cabins",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "27430761",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Beartooth-Hideaway-Inn-And-Cabins.h27430761.Hotel-Information?camref=1011l52GG6&adref=red-lodge-beartooth-hideaway-inn-and-cabins",
+    "adref_body": "red-lodge-beartooth-hideaway-inn-and-cabins",
+    "adref_table": "red-lodge-beartooth-hideaway-inn-and-cabins-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Blue Sky Cabins",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "red-lodge-blue-sky-cabins",
+    "adref_table": "red-lodge-blue-sky-cabins-table",
+    "vrbo_listing_id": "2670516",
+    "vrbo_body_link": "https://www.vrbo.com/2670516?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-blue-sky-lodge",
+    "vrbo_table_link": "https://www.vrbo.com/2670516?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-blue-sky-lodge-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Glamping at Tucker Ranch",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "red-lodge-glamping-at-tucker-ranch",
+    "adref_table": "red-lodge-glamping-at-tucker-ranch-table",
+    "vrbo_listing_id": "3545519",
+    "vrbo_body_link": "https://www.vrbo.com/3545519?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-glamping-at-tucker-ranch",
+    "vrbo_table_link": "https://www.vrbo.com/3545519?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-glamping-at-tucker-ranch-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Inn on the Beartooth B&B",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "red-lodge-inn-on-the-beartooth-b-and-b",
+    "adref_table": "red-lodge-inn-on-the-beartooth-b-and-b-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Lazy E-L Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "red-lodge-lazy-e-l-ranch",
+    "adref_table": "red-lodge-lazy-e-l-ranch-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Lupine Inn Red Lodge MT",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1000",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Lupine-Inn-Red-Lodge-MT.h1000.Hotel-Information?camref=1011l52GG6&adref=red-lodge-lupine-inn-red-lodge-mt",
+    "adref_body": "red-lodge-lupine-inn-red-lodge-mt",
+    "adref_table": "red-lodge-lupine-inn-red-lodge-mt-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Quality Inn Red Lodge Gateway To Yellowstone",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "41418",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Quality-Inn-Red-Lodge-Gateway-To-Yellowstone.h41418.Hotel-Information?camref=1011l52GG6&adref=red-lodge-quality-inn-red-lodge-gateway-to-yellowstone",
+    "adref_body": "red-lodge-quality-inn-red-lodge-gateway-to-yellowstone",
+    "adref_table": "red-lodge-quality-inn-red-lodge-gateway-to-yellowstone-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Red Lodge Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "red-lodge-red-lodge-guest-ranch",
+    "adref_table": "red-lodge-red-lodge-guest-ranch-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Rock Creek Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "111698787",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Rock-Creek-Resort.h111698787.Hotel-Information?camref=1011l52GG6&adref=red-lodge-rock-creek-resort",
+    "adref_body": "red-lodge-rock-creek-resort",
+    "adref_table": "red-lodge-rock-creek-resort-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Rock Creek Retreat Creekside Cabin",
+    "status": "VRBO_DEEP_LINK",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "red-lodge-rock-creek-retreat-creekside-cabin",
+    "adref_table": "red-lodge-rock-creek-retreat-creekside-cabin-table",
+    "vrbo_listing_id": "9620945",
+    "vrbo_body_link": "https://www.vrbo.com/9620945?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-rock-creek-retreat",
+    "vrbo_table_link": "https://www.vrbo.com/9620945?camref=1011l52GGp&creativeref=1101l63118&adref=red-lodge-rock-creek-retreat-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "The Pollard Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "28629",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-The-Pollard-Hotel.h28629.Hotel-Information?camref=1011l52GG6&adref=red-lodge-the-pollard-hotel",
+    "adref_body": "red-lodge-the-pollard-hotel",
+    "adref_table": "red-lodge-the-pollard-hotel-table"
+  },
+  {
+    "town": "Red Lodge",
+    "property_name": "Yodeler Motel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "107261249",
+    "body_link_url": "https://www.expedia.com/Red-Lodge-Hotels-Yodeler-Motel.h107261249.Hotel-Information?camref=1011l52GG6&adref=red-lodge-yodeler-motel",
+    "adref_body": "red-lodge-yodeler-motel",
+    "adref_table": "red-lodge-yodeler-motel-table"
+  },
+  {
+    "town": "Rosebud",
+    "property_name": "Bungalow cabin along the Yellowstone River in Eastern Montana",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "107596940",
+    "body_link_url": "https://www.expedia.com/Rosebud-Hotels-Bungalow-Cabin-Along-The-Yellowstone-River-In-Eastern-Montana.h107596940.Hotel-Information?camref=1011l52GG6&adref=rosebud-bungalow-cabin-along-the-yellowstone-river-in-eastern-montana",
+    "adref_body": "rosebud-bungalow-cabin-along-the-yellowstone-river-in-eastern-montana",
+    "adref_table": "rosebud-bungalow-cabin-along-the-yellowstone-river-in-eastern-montana-table"
+  },
+  {
+    "town": "Three Forks",
+    "property_name": "Broken Spur Motel",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "three-forks-broken-spur-motel",
+    "adref_table": "three-forks-broken-spur-motel-table"
+  },
+  {
+    "town": "Three Forks",
+    "property_name": "Lewis & Clark Motel of Three Forks",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "three-forks-lewis-clark-motel-of-three-forks",
+    "adref_table": "three-forks-lewis-clark-motel-of-three-forks-table"
+  },
+  {
+    "town": "Three Forks",
+    "property_name": "Missouri Headwaters State Park",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "three-forks-missouri-headwaters-state-park",
+    "adref_table": "three-forks-missouri-headwaters-state-park-table"
+  },
+  {
+    "town": "Three Forks",
+    "property_name": "Sacajawea Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "9759990",
+    "body_link_url": "https://www.expedia.com/Three-Forks-Hotels-Sacajawea-Hotel.h9759990.Hotel-Information?camref=1011l52GG6&adref=three-forks-sacajawea-hotel",
+    "adref_body": "three-forks-sacajawea-hotel",
+    "adref_table": "three-forks-sacajawea-hotel-table"
+  },
+  {
+    "town": "Three Forks",
+    "property_name": "Travelodge by Wyndham Three Forks",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "19332491",
+    "body_link_url": "https://www.expedia.com/Three-Forks-Hotels-Travelodge-by-Wyndham-Three-Forks.h19332491.Hotel-Information?camref=1011l52GG6&adref=three-forks-travelodge-by-wyndham-three-forks",
+    "adref_body": "three-forks-travelodge-by-wyndham-three-forks",
+    "adref_table": "three-forks-travelodge-by-wyndham-three-forks-table"
+  },
+  {
+    "town": "West Glacier",
+    "property_name": "Paddle Ridge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "9985919",
+    "body_link_url": "https://www.expedia.com/West-Glacier-Hotels-Paddle-Ridge.h9985919.Hotel-Information?camref=1011l52GG6&adref=west-glacier-paddle-ridge",
+    "adref_body": "west-glacier-paddle-ridge",
+    "adref_table": "west-glacier-paddle-ridge-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Bar N Ranch",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "11548135",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Bar-N-Ranch.h11548135.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-bar-n-ranch",
+    "adref_body": "west-yellowstone-bar-n-ranch",
+    "adref_table": "west-yellowstone-bar-n-ranch-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Explorer Cabins at Yellowstone",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "6603615",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Explorer-Cabins-At-Yellowstone.h6603615.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-explorer-cabins-at-yellowstone",
+    "adref_body": "west-yellowstone-explorer-cabins-at-yellowstone",
+    "adref_table": "west-yellowstone-explorer-cabins-at-yellowstone-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Gray Wolf Inn & Suites",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "62797",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Gray-Wolf-Inn-Suites.h62797.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-gray-wolf-inn-suites",
+    "adref_body": "west-yellowstone-gray-wolf-inn-suites",
+    "adref_table": "west-yellowstone-gray-wolf-inn-suites-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Holiday Inn West Yellowstone by IHG.",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "24043",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Holiday-Inn-West-Yellowstone-by-IHG.h24043.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-holiday-inn-west-yellowstone-by-ihg",
+    "adref_body": "west-yellowstone-holiday-inn-west-yellowstone-by-ihg",
+    "adref_table": "west-yellowstone-holiday-inn-west-yellowstone-by-ihg-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Parade Rest Guest Ranch",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "west-yellowstone-parade-rest-guest-ranch",
+    "adref_table": "west-yellowstone-parade-rest-guest-ranch-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Under Canvas West Yellowstone",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "5037786",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Under-Canvas-West-Yellowstone.h5037786.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-under-canvas-west-yellowstone",
+    "adref_body": "west-yellowstone-under-canvas-west-yellowstone",
+    "adref_table": "west-yellowstone-under-canvas-west-yellowstone-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "VRBO",
+    "status": "VRBO_SEARCH",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "west-yellowstone-vrbo",
+    "adref_table": "west-yellowstone-vrbo-table",
+    "vrbo_listing_id": "TOWN_SEARCH",
+    "vrbo_body_link": "https://www.vrbo.com/search/keywords:west-yellowstone-montana?camref=1011l52GGp&creativeref=1101l63118&adref=west-yellowstone-vrbo",
+    "vrbo_table_link": "https://www.vrbo.com/search/keywords:west-yellowstone-montana?camref=1011l52GGp&creativeref=1101l63118&adref=west-yellowstone-vrbo-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "West Yellowstone Bed and Breakfast",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "west-yellowstone-west-yellowstone-bed-and-breakfast",
+    "adref_table": "west-yellowstone-west-yellowstone-bed-and-breakfast-table"
+  },
+  {
+    "town": "West Yellowstone",
+    "property_name": "Yellowstone Park Hotel",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1731576",
+    "body_link_url": "https://www.expedia.com/West-Yellowstone-Hotels-Yellowstone-Park-Hotel.h1731576.Hotel-Information?camref=1011l52GG6&adref=west-yellowstone-yellowstone-park-hotel",
+    "adref_body": "west-yellowstone-yellowstone-park-hotel",
+    "adref_table": "west-yellowstone-yellowstone-park-hotel-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Garden Wall Inn",
+    "status": "NOT_ON_EXPEDIA",
+    "expedia_hotel_id": "0",
+    "body_link_url": "NOT_ON_EXPEDIA",
+    "adref_body": "whitefish-garden-wall-inn",
+    "adref_table": "whitefish-garden-wall-inn-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Good Medicine Lodge Bed & Breakfast",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1210336",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Good-Medicine-Lodge-Bed-Breakfast.h1210336.Hotel-Information?camref=1011l52GG6&adref=whitefish-good-medicine-lodge-bed-breakfast",
+    "adref_body": "whitefish-good-medicine-lodge-bed-breakfast",
+    "adref_table": "whitefish-good-medicine-lodge-bed-breakfast-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Grouse Mountain Lodge",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "15527",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Grouse-Mountain-Lodge.h15527.Hotel-Information?camref=1011l52GG6&adref=whitefish-grouse-mountain-lodge",
+    "adref_body": "whitefish-grouse-mountain-lodge",
+    "adref_table": "whitefish-grouse-mountain-lodge-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Hampton Inn & Suites Whitefish",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "15178119",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Hampton-Inn-Suites-Whitefish.h15178119.Hotel-Information?camref=1011l52GG6&adref=whitefish-hampton-inn-suites-whitefish",
+    "adref_body": "whitefish-hampton-inn-suites-whitefish",
+    "adref_table": "whitefish-hampton-inn-suites-whitefish-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Haymoon Resort",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "38716643",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Haymoon-Resort.h38716643.Hotel-Information?camref=1011l52GG6&adref=whitefish-haymoon-resort",
+    "adref_body": "whitefish-haymoon-resort",
+    "adref_table": "whitefish-haymoon-resort-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Lodge at Whitefish Lake",
+    "status": "DEEP_LINK",
+    "expedia_hotel_id": "1492496",
+    "body_link_url": "https://www.expedia.com/Whitefish-Hotels-Lodge-At-Whitefish-Lake.h1492496.Hotel-Information?camref=1011l52GG6&adref=whitefish-lodge-at-whitefish-lake",
+    "adref_body": "whitefish-lodge-at-whitefish-lake",
+    "adref_table": "whitefish-lodge-at-whitefish-lake-table"
+  },
+  {
+    "town": "Whitefish",
+    "property_name": "Rich's Montana Guest Ranch",
+    "status": "NOT_ON_VRBO",
+    "expedia_hotel_id": "0",
+    "body_link_url": "VRBO_ONLY",
+    "adref_body": "whitefish-richs-montana-guest-ranch",
+    "adref_table": "whitefish-richs-montana-guest-ranch-table",
+    "vrbo_listing_id": "NOT_ON_VRBO",
+    "note": "Direct booking only via richranch.com \u2014 not listed on VRBO or Expedia"
+  }
+]

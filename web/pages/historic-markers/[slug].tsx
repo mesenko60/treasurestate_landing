@@ -222,11 +222,6 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
                 >
                   Get Directions
                 </a>
-                {marker.hmdbLink && (
-                  <a href={marker.hmdbLink} target="_blank" rel="noopener noreferrer">
-                    View on HMDB.org
-                  </a>
-                )}
               </div>
 
               <dl className="marker-meta">
