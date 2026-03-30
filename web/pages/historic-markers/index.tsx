@@ -266,46 +266,40 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                     closeOnClick={false}
                     anchor="bottom"
                     offset={15}
-                    maxWidth="400px"
+                    maxWidth="600px"
                   >
-                    <div style={{ maxWidth: 380, padding: '0.5rem' }}>
-                      <h4 style={{ margin: '0 0 0.3rem', fontSize: '0.95rem', color: '#204051' }}>
+                    <div style={{ maxWidth: 580, padding: '0.75rem' }}>
+                      <h4 style={{ margin: '0 0 0.4rem', fontSize: '1.1rem', color: '#204051' }}>
                         {selectedMarker.title}
                       </h4>
-                      <p style={{ fontSize: '0.8rem', color: '#888', margin: '0 0 0.5rem' }}>
+                      <p style={{ fontSize: '0.85rem', color: '#888', margin: '0 0 0.6rem' }}>
                         📍 {selectedMarker.town || selectedMarker.county}
                         {selectedMarker.town && selectedMarker.county && `, ${selectedMarker.county} County`}
                       </p>
                       {selectedMarker.topics.length > 0 && (
-                        <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
-                          {selectedMarker.topics.slice(0, 3).map(t => (
-                            <span key={t} style={{ fontSize: '0.7rem', padding: '0.15rem 0.4rem', background: '#e8f4f8', borderRadius: '3px', color: '#3b6978' }}>
+                        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
+                          {selectedMarker.topics.slice(0, 4).map(t => (
+                            <span key={t} style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
                               {TOPIC_LABELS[t] || t}
                             </span>
                           ))}
                         </div>
                       )}
                       <div style={{ 
-                        fontSize: '0.82rem', 
-                        color: '#555', 
-                        lineHeight: 1.5, 
-                        margin: '0 0 0.75rem',
-                        maxHeight: curatedSet.has(selectedMarker.slug) ? '120px' : '250px',
-                        overflowY: 'auto',
-                        paddingRight: '0.5rem'
+                        fontSize: '0.9rem', 
+                        color: '#444', 
+                        lineHeight: 1.6, 
+                        margin: '0 0 1rem'
                       }}>
-                        {curatedSet.has(selectedMarker.slug) 
-                          ? selectedMarker.inscription.substring(0, 300) + (selectedMarker.inscription.length > 300 ? '...' : '')
-                          : selectedMarker.inscription.split('\n').map((para, i) => (
-                              <p key={i} style={{ margin: '0 0 0.5rem' }}>{para}</p>
-                            ))
-                        }
+                        {selectedMarker.inscription.split('\n').map((para, i) => (
+                          <p key={i} style={{ margin: '0 0 0.6rem' }}>{para}</p>
+                        ))}
                       </div>
-                      <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', paddingTop: '0.5rem', borderTop: '1px solid #eee' }}>
+                      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.75rem', borderTop: '1px solid #e8ede8' }}>
                         {curatedSet.has(selectedMarker.slug) && (
                           <Link
                             href={`/historic-markers/${selectedMarker.slug}/`}
-                            style={{ fontSize: '0.85rem', color: '#27ae60', fontWeight: 600 }}
+                            style={{ fontSize: '0.9rem', color: '#27ae60', fontWeight: 600 }}
                           >
                             View Full Page →
                           </Link>
@@ -314,7 +308,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                           href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ fontSize: '0.85rem', color: '#3b6978' }}
+                          style={{ fontSize: '0.9rem', color: '#3b6978' }}
                         >
                           Get Directions
                         </a>

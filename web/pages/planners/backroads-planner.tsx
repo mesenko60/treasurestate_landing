@@ -740,23 +740,27 @@ export default function BackroadsPlanner({
                 onClose={() => setSelectedHistoricMarker(null)}
                 closeButton={true}
                 closeOnClick={false}
-                maxWidth="260px"
+                maxWidth="550px"
               >
-                <div style={{ padding: '4px 2px' }}>
-                  <strong style={{ fontSize: '0.85rem', color: '#204051' }}>{selectedHistoricMarker.title}</strong>
+                <div style={{ padding: '0.75rem', maxWidth: 520 }}>
+                  <strong style={{ fontSize: '1.05rem', color: '#204051', display: 'block', marginBottom: '0.4rem' }}>
+                    {selectedHistoricMarker.title}
+                  </strong>
                   {selectedHistoricMarker.town && (
-                    <div style={{ fontSize: '0.72rem', color: '#888', marginTop: '2px' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.6rem' }}>
                       📍 {selectedHistoricMarker.town}
                     </div>
                   )}
-                  <div style={{ fontSize: '0.78rem', color: '#555', marginTop: '4px', lineHeight: 1.4, maxHeight: '120px', overflowY: 'auto' }}>
-                    {selectedHistoricMarker.inscription}{selectedHistoricMarker.inscription.length >= 295 ? '...' : ''}
+                  <div style={{ fontSize: '0.88rem', color: '#444', lineHeight: 1.6, marginBottom: '0.75rem' }}>
+                    {selectedHistoricMarker.inscription.split('\n').map((para, i) => (
+                      <p key={i} style={{ margin: '0 0 0.5rem' }}>{para}</p>
+                    ))}
                   </div>
-                  <div style={{ marginTop: '6px', display: 'flex', gap: '10px' }}>
+                  <div style={{ paddingTop: '0.6rem', borderTop: '1px solid #e8ede8', display: 'flex', gap: '1rem' }}>
                     {selectedHistoricMarker.isCurated && (
                       <a
                         href={`/historic-markers/${selectedHistoricMarker.slug}/`}
-                        style={{ fontSize: '0.75rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
+                        style={{ fontSize: '0.85rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
                       >
                         View Full Page →
                       </a>
@@ -765,9 +769,9 @@ export default function BackroadsPlanner({
                       href={`https://www.google.com/maps/dir/?api=1&destination=${selectedHistoricMarker.lat},${selectedHistoricMarker.lng}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontSize: '0.75rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
+                      style={{ fontSize: '0.85rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
                     >
-                      Directions
+                      Get Directions
                     </a>
                   </div>
                 </div>
@@ -899,7 +903,7 @@ export const getStaticProps: GetStaticProps = async () => {
         lat: round(m.lat, 4),
         lng: round(m.lng, 4),
         town: m.town,
-        inscription: m.inscription.substring(0, 300),
+        inscription: m.inscription,
         isCurated: curatedSlugs.has(m.slug),
       }));
   }
