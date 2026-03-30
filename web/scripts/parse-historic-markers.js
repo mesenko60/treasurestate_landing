@@ -1,15 +1,24 @@
 #!/usr/bin/env node
 /**
  * Parse Montana Historic Markers CSV and generate JSON data files
- * 
+ *
+ * All display text is normalized via scripts/lib/historic-marker-text.js (HMDB junk,
+ * spacing, entities). Edit that module to change cleaning rules site-wide.
+ *
  * Input: Historic_markers/Montana_Historic_Markers_Directory.csv
- * Output: 
+ * Output:
  *   - web/data/historic-markers.json (all markers)
  *   - web/data/historic-markers-curated.json (high-value markers for individual pages)
  */
 
 const fs = require('fs');
 const path = require('path');
+
+const {
+  cleanMarkerTitle,
+  cleanMarkerShortField,
+  cleanMarkerInscription,
+} = require('./lib/historic-marker-text');
 
 const CSV_PATH = path.join(__dirname, '../../Historic_markers/Montana_Historic_Markers_Directory.csv');
 const TOWN_COORDS_PATH = path.join(__dirname, '../data/town-coordinates.json');
@@ -193,112 +202,6 @@ function normalizeTopics(topicsStr) {
   return Array.from(normalized);
 }
 
-/** Decode common HTML entities (numeric + a few named). */
-function decodeHtmlEntities(text) {
-  if (!text) return '';
-  return text
-    .replace(/&#(\d+);/g, (_, n) => {
-      const code = parseInt(n, 10);
-      if (!Number.isFinite(code) || code < 0 || code > 0x10ffff) return _;
-      return String.fromCodePoint(code);
-    })
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => {
-      const code = parseInt(h, 16);
-      if (!Number.isFinite(code) || code < 0 || code > 0x10ffff) return _;
-      return String.fromCodePoint(code);
-    })
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'");
-}
-
-/** Strip simple HTML tags (HMDB sometimes wraps titles in <i>). */
-function stripHtmlTags(text) {
-  if (!text) return '';
-  return text.replace(/<\/?[a-z][a-z0-9]*(?:\s[^>]*)?>\s*/gi, '');
-}
-
-/** Plain-text title/subtitle for display; slugs still use raw CSV title. */
-function cleanTitle(text) {
-  if (!text) return '';
-  let t = decodeHtmlEntities(text);
-  t = stripHtmlTags(t);
-  t = t.replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
-  return t;
-}
-
-/**
- * Remove HMDB directory boilerplate and normalize whitespace.
- * Does not rewrite marker wording — only strips site metadata and fixes spacing.
- */
-function cleanInscription(text) {
-  if (!text) return '';
-
-  let t = text
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n')
-    .replace(/\u00a0/g, ' ')
-    .replace(/\u200b/g, '')
-    .replace(/\ufeff/g, '');
-
-  // HMDB insertions mid-inscription (GeoTour / photo index — NOT on the physical marker)
-  t = t.replace(/\n?\s*Paid Advertisement\s*\n?/gi, '\n');
-  // Remove each Photographed-by line only (do NOT cut from first occurrence to EOF — that drops real text)
-  t = t.replace(/\nPhotographed by[^\n]+/gi, '');
-  // Catalog lines like "2. Black Gold Marker on left"
-  t = t.replace(/\n\d+\.\s*[^\n]*\bMarker\b[^\n]*/gi, '');
-
-  // HMDB tails (order: broad cuts that include everything after the header)
-  t = t.replace(/\s*Topics and series\.?[\s\S]*$/im, '');
-
-  // Fragments if Topics line was missing or malformed
-  t = t.replace(/\s*This historical marker is listed in these topic\s*\n*\s*lists?:[\s\S]*$/im, '');
-  t = t.replace(/\s*This historical marker is listed in this topic\s*\n*\s*list:[\s\S]*$/im, '');
-  t = t.replace(/\s*Location\.[\s\S]*$/im, '');
-  t = t.replace(/\s*Touch for map\.[\s\S]*$/im, '');
-  t = t.replace(/\s*Other nearby markers\.[\s\S]*$/im, '');
-  t = t.replace(/\s*More about this marker\.[\s\S]*$/im, '');
-  t = t.replace(/\s*Additional keywords\.[\s\S]*$/im, '');
-
-  t = t.replace(/Paid Advertisement/gi, '');
-
-  // HMDB photo-guide lines (quoted-title variant; numbered Marker lines handled above)
-  t = t.replace(/\nMarker at the [^\n]*\s*/gi, '\n');
-  t = t.replace(/\nThe marker is on the (left|right)\.?\s*\n?/gi, '\n');
-
-  // Legacy single-line patterns
-  t = t.replace(/Topics\.\s*$/gm, '');
-  t = t.replace(/^\s*Topics and series\.?\s*$/gim, '');
-  t = t.replace(/This historical marker is listed in these topic lists:.*$/gm, '');
-  t = t.replace(/This historical marker is listed in this topic list:.*$/gm, '');
-  t = t.replace(/Location\.\s*Marker (is|was) located.*$/gm, '');
-  t = t.replace(/Touch for map\..*$/gm, '');
-
-  t = stripHtmlTags(decodeHtmlEntities(t));
-
-  // Rejoin narrative broken when HMDB lines were removed (e.g. "paleontologists" / "identified")
-  let prevJoin;
-  do {
-    prevJoin = t;
-    t = t.replace(/([a-z,;])\s*\n+\s*([a-z])/g, '$1 $2');
-  } while (t !== prevJoin);
-
-  // Clear section headers from HMDB GeoTour panels (keep bullet content; spacing only)
-  t = t.replace(/\n(GeoFacts:|Geo-Activities:)\s*\n/g, '\n\n$1\n\n');
-
-  t = t.replace(/\n{3,}/g, '\n\n');
-  t = t
-    .split('\n')
-    .map((line) => line.replace(/[ \t]+$/g, '').replace(/^[ \t]+/g, ''))
-    .join('\n');
-  t = t.trim();
-
-  return t;
-}
-
 // Determine if marker qualifies for individual page (~150-200 target)
 // Tier3 threshold below 2000 because cleaned inscriptions drop HMDB boilerplate length.
 function isCuratedMarker(marker) {
@@ -326,8 +229,8 @@ function isCuratedMarker(marker) {
     return true;
   }
   
-  // Tier 3: Exceptional length markers (post-clean text; threshold tuned vs pre-clean ~2000)
-  if (inscriptionLength > 1880) {
+  // Tier 3: Exceptional length markers (post-clean text; threshold tuned as cleaning rules evolve)
+  if (inscriptionLength > 1874) {
     return true;
   }
   
@@ -379,7 +282,7 @@ function main() {
     
     const id = record['MarkerID'] || `m${stats.total}`;
     const rawTitle = record['Title'] || 'Unknown Marker';
-    const title = cleanTitle(rawTitle) || 'Unknown Marker';
+    const title = cleanMarkerTitle(rawTitle) || 'Unknown Marker';
     const townSlug = matchTown(record['City or Town'], townCoords);
     
     if (townSlug) {
@@ -399,7 +302,7 @@ function main() {
     }
     
     const subtitleRaw = record['Subtitle'] || '';
-    const subtitleClean = subtitleRaw ? cleanTitle(subtitleRaw) : '';
+    const subtitleClean = subtitleRaw ? cleanMarkerTitle(subtitleRaw) : '';
 
     const rawInscription = record['Inscription'] || '';
     const marker = {
@@ -412,16 +315,25 @@ function main() {
       town: record['City or Town'] || null,
       townSlug,
       county: county.replace(' County', '').replace(' Parish', ''),
-      inscription: cleanInscription(rawInscription),
+      inscription: cleanMarkerInscription(rawInscription),
       topics,
-      yearErected: record['Year Erected'] || null,
-      erectedBy: record['Erected By'] || null,
+      yearErected: record['Year Erected']
+        ? cleanMarkerShortField(record['Year Erected']) || null
+        : null,
+      erectedBy: record['Erected By']
+        ? cleanMarkerShortField(record['Erected By']) || null
+        : null,
       hmdbLink: record['Link'] || null,
       nearbyMarkers: record['Nearby Markers']
         ? record['Nearby Markers']
             .split('|')
-            .map((s) => s.trim())
-            .filter((s) => s && s !== 'Marker')
+            .map((s) => cleanMarkerTitle(s.trim()))
+            .filter(
+              (s) =>
+                s &&
+                s !== 'Marker' &&
+                !/^paid advertisement$/i.test(s)
+            )
             .slice(0, 5)
         : [],
     };

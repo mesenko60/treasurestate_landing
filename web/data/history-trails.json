@@ -5,7 +5,7 @@
     "description": "Follow the path of the Corps of Discovery across Montana. From the Missouri River headwaters to the Bitterroot Mountains, experience the landmarks where Lewis and Clark made history in 1805-1806.",
     "difficulty": "multi-day",
     "estimatedDays": "3-5",
-    "totalMiles": 1072,
+    "totalMiles": 1075,
     "markerCount": 35,
     "regions": [
       "Southwest Montana",
@@ -45,7 +45,6 @@
       "109625",
       "144160",
       "123099",
-      "123738",
       "109502",
       "109500",
       "256077",
@@ -53,7 +52,8 @@
       "219981",
       "124227",
       "124222",
-      "219846"
+      "219846",
+      "144057"
     ]
   },
   {
