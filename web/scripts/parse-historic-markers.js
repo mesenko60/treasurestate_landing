@@ -193,21 +193,98 @@ function normalizeTopics(topicsStr) {
   return Array.from(normalized);
 }
 
-// Clean inscription text
+/** Decode common HTML entities (numeric + a few named). */
+function decodeHtmlEntities(text) {
+  if (!text) return '';
+  return text
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = parseInt(n, 10);
+      if (!Number.isFinite(code) || code < 0 || code > 0x10ffff) return _;
+      return String.fromCodePoint(code);
+    })
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => {
+      const code = parseInt(h, 16);
+      if (!Number.isFinite(code) || code < 0 || code > 0x10ffff) return _;
+      return String.fromCodePoint(code);
+    })
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'");
+}
+
+/** Strip simple HTML tags (HMDB sometimes wraps titles in <i>). */
+function stripHtmlTags(text) {
+  if (!text) return '';
+  return text.replace(/<\/?[a-z][a-z0-9]*(?:\s[^>]*)?>\s*/gi, '');
+}
+
+/** Plain-text title/subtitle for display; slugs still use raw CSV title. */
+function cleanTitle(text) {
+  if (!text) return '';
+  let t = decodeHtmlEntities(text);
+  t = stripHtmlTags(t);
+  t = t.replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+  return t;
+}
+
+/**
+ * Remove HMDB directory boilerplate and normalize whitespace.
+ * Does not rewrite marker wording — only strips site metadata and fixes spacing.
+ */
 function cleanInscription(text) {
   if (!text) return '';
-  
-  return text
-    .replace(/Paid Advertisement/g, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .replace(/Topics\.\s*$/gm, '')
-    .replace(/This historical marker is listed in these topic lists:.*$/gm, '')
-    .replace(/Location\.\s*Marker (is|was) located.*$/gm, '')
-    .replace(/Touch for map\..*$/gm, '')
-    .trim();
+
+  let t = text
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .replace(/\u00a0/g, ' ')
+    .replace(/\u200b/g, '')
+    .replace(/\ufeff/g, '');
+
+  // HMDB tails (order: broad cuts that include everything after the header)
+  t = t.replace(/\s*Topics and series\.?[\s\S]*$/im, '');
+  t = t.replace(/\nPhotographed by[^\n]*[\s\S]*$/i, '');
+
+  // Fragments if Topics line was missing or malformed
+  t = t.replace(/\s*This historical marker is listed in these topic\s*\n*\s*lists?:[\s\S]*$/im, '');
+  t = t.replace(/\s*This historical marker is listed in this topic\s*\n*\s*list:[\s\S]*$/im, '');
+  t = t.replace(/\s*Location\.[\s\S]*$/im, '');
+  t = t.replace(/\s*Touch for map\.[\s\S]*$/im, '');
+  t = t.replace(/\s*Other nearby markers\.[\s\S]*$/im, '');
+  t = t.replace(/\s*More about this marker\.[\s\S]*$/im, '');
+  t = t.replace(/\s*Additional keywords\.[\s\S]*$/im, '');
+
+  t = t.replace(/Paid Advertisement/gi, '');
+
+  // HMDB photo-guide lines sometimes left between body and Photographed
+  t = t.replace(/\n\d+\.\s*"[^"]*"\s*Marker\s*\n?/gi, '\n');
+  t = t.replace(/\nMarker at the [^\n]*\s*/gi, '\n');
+  t = t.replace(/\nThe marker is on the (left|right)\.?\s*\n?/gi, '\n');
+
+  // Legacy single-line patterns
+  t = t.replace(/Topics\.\s*$/gm, '');
+  t = t.replace(/This historical marker is listed in these topic lists:.*$/gm, '');
+  t = t.replace(/This historical marker is listed in this topic list:.*$/gm, '');
+  t = t.replace(/Location\.\s*Marker (is|was) located.*$/gm, '');
+  t = t.replace(/Touch for map\..*$/gm, '');
+
+  t = stripHtmlTags(decodeHtmlEntities(t));
+
+  t = t.replace(/\n{3,}/g, '\n\n');
+  t = t
+    .split('\n')
+    .map((line) => line.replace(/[ \t]+$/g, '').replace(/^[ \t]+/g, ''))
+    .join('\n');
+  t = t.trim();
+
+  return t;
 }
 
 // Determine if marker qualifies for individual page (~150-200 target)
+// Tier3 threshold below 2000 because cleaned inscriptions drop HMDB boilerplate length.
 function isCuratedMarker(marker) {
   const inscriptionLength = marker.inscription.length;
   const topicCount = marker.topics.length;
@@ -233,8 +310,8 @@ function isCuratedMarker(marker) {
     return true;
   }
   
-  // Tier 3: Exceptional length markers
-  if (inscriptionLength > 2000) {
+  // Tier 3: Exceptional length markers (post-clean text; threshold tuned vs pre-clean ~2000)
+  if (inscriptionLength > 1880) {
     return true;
   }
   
@@ -285,7 +362,8 @@ function main() {
     }
     
     const id = record['MarkerID'] || `m${stats.total}`;
-    const title = record['Title'] || 'Unknown Marker';
+    const rawTitle = record['Title'] || 'Unknown Marker';
+    const title = cleanTitle(rawTitle) || 'Unknown Marker';
     const townSlug = matchTown(record['City or Town'], townCoords);
     
     if (townSlug) {
@@ -304,23 +382,32 @@ function main() {
       stats.byCounty[county] = (stats.byCounty[county] || 0) + 1;
     }
     
+    const subtitleRaw = record['Subtitle'] || '';
+    const subtitleClean = subtitleRaw ? cleanTitle(subtitleRaw) : '';
+
+    const rawInscription = record['Inscription'] || '';
     const marker = {
       id,
-      slug: slugify(title, id),
+      slug: slugify(rawTitle, id),
       title,
-      subtitle: record['Subtitle'] || null,
+      subtitle: subtitleClean || null,
       lat,
       lng,
       town: record['City or Town'] || null,
       townSlug,
       county: county.replace(' County', '').replace(' Parish', ''),
-      inscription: cleanInscription(record['Inscription']),
+      inscription: cleanInscription(rawInscription),
       topics,
       yearErected: record['Year Erected'] || null,
       erectedBy: record['Erected By'] || null,
       hmdbLink: record['Link'] || null,
-      nearbyMarkers: record['Nearby Markers'] ? 
-        record['Nearby Markers'].split('|').map(s => s.trim()).filter(Boolean).slice(0, 5) : [],
+      nearbyMarkers: record['Nearby Markers']
+        ? record['Nearby Markers']
+            .split('|')
+            .map((s) => s.trim())
+            .filter((s) => s && s !== 'Marker')
+            .slice(0, 5)
+        : [],
     };
     
     markers.push(marker);

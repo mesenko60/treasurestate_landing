@@ -5,7 +5,7 @@
     "description": "Follow the path of the Corps of Discovery across Montana. From the Missouri River headwaters to the Bitterroot Mountains, experience the landmarks where Lewis and Clark made history in 1805-1806.",
     "difficulty": "multi-day",
     "estimatedDays": "3-5",
-    "totalMiles": 954,
+    "totalMiles": 1195,
     "markerCount": 35,
     "regions": [
       "Southwest Montana",
@@ -25,7 +25,6 @@
       "123129",
       "123127",
       "123126",
-      "123241",
       "123124",
       "123595",
       "123237",
@@ -44,16 +43,17 @@
       "123622",
       "123630",
       "109625",
-      "144160",
       "123099",
-      "123738",
       "109502",
       "109500",
       "256077",
       "161505",
       "219981",
       "124227",
-      "124222"
+      "124222",
+      "219846",
+      "144057",
+      "124268"
     ]
   },
   {
@@ -275,7 +275,7 @@
     "description": "Step back in time to Montana's abandoned mining camps and ghost towns. From Bannack to Virginia City, explore the remnants of the gold rush era when fortunes rose and fell overnight.",
     "difficulty": "easy",
     "estimatedDays": "1-2",
-    "totalMiles": 760,
+    "totalMiles": 728,
     "markerCount": 20,
     "regions": [
       "Southwest Montana"
@@ -294,7 +294,6 @@
       "161034",
       "219655",
       "123125",
-      "123510",
       "219845",
       "144206",
       "123096",
@@ -306,7 +305,8 @@
       "219981",
       "45223",
       "49540",
-      "49545"
+      "49545",
+      "49544"
     ]
   },
   {
@@ -400,7 +400,7 @@
     "description": "Trace Montana's great river from Three Forks to Fort Benton. Follow the route of steamboats, explorers, and settlers who used the Missouri as their highway to the frontier.",
     "difficulty": "moderate",
     "estimatedDays": "2-3",
-    "totalMiles": 1143,
+    "totalMiles": 1205,
     "markerCount": 20,
     "regions": [
       "Central Montana",
@@ -418,9 +418,7 @@
       "219341",
       "160023",
       "160125",
-      "123124",
       "102213",
-      "128453",
       "123330",
       "123331",
       "123333",
@@ -431,8 +429,10 @@
       "109500",
       "123101",
       "144057",
-      "212232",
-      "124302"
+      "124302",
+      "256263",
+      "161235",
+      "128356"
     ]
   },
   {
@@ -441,7 +441,7 @@
     "description": "Walk in the footsteps of emigrants who traveled the Bozeman Trail to the Montana gold fields. This shortcut through Sioux territory was one of the most dangerous routes in the West.",
     "difficulty": "moderate",
     "estimatedDays": "1-2",
-    "totalMiles": 656,
+    "totalMiles": 681,
     "markerCount": 15,
     "regions": [
       "South-Central Montana"
@@ -466,8 +466,8 @@
       "29079",
       "29084",
       "191980",
-      "253557",
-      "98296"
+      "98296",
+      "191798"
     ]
   }
 ]
