@@ -264,11 +264,11 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                     onClose={() => setSelectedMarker(null)}
                     closeButton
                     closeOnClick={false}
-                    anchor="bottom"
+                    anchor="top"
                     offset={15}
-                    maxWidth="600px"
+                    maxWidth="550px"
                   >
-                    <div style={{ maxWidth: 580, padding: '0.75rem' }}>
+                    <div style={{ maxWidth: 520, maxHeight: '60vh', overflowY: 'auto', padding: '0.75rem' }}>
                       <h4 style={{ margin: '0 0 0.4rem', fontSize: '1.1rem', color: '#204051' }}>
                         {selectedMarker.title}
                       </h4>

@@ -735,14 +735,14 @@ export default function BackroadsPlanner({
               <Popup
                 longitude={selectedHistoricMarker.lng}
                 latitude={selectedHistoricMarker.lat}
-                anchor="bottom"
+                anchor="top"
                 offset={10}
                 onClose={() => setSelectedHistoricMarker(null)}
                 closeButton={true}
                 closeOnClick={false}
-                maxWidth="550px"
+                maxWidth="500px"
               >
-                <div style={{ padding: '0.75rem', maxWidth: 520 }}>
+                <div style={{ padding: '0.75rem', maxWidth: 480, maxHeight: '60vh', overflowY: 'auto' }}>
                   <strong style={{ fontSize: '1.05rem', color: '#204051', display: 'block', marginBottom: '0.4rem' }}>
                     {selectedHistoricMarker.title}
                   </strong>
