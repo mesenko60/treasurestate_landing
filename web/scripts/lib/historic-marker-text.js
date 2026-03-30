@@ -124,7 +124,10 @@ function filterInscriptionLines(lines) {
       skippingPictureCaptions = true;
       continue;
     }
-    if (/^\[[\s]*photo captions[\s]*\]$/i.test(t)) {
+    if (
+      /^\[[\s]*photo captions[\s]*\]$/i.test(t) ||
+      /^\(\s*Photo\s+caption\s*:?\s*\)\s*$/i.test(t)
+    ) {
       skippingPhotoCaptionBlock = true;
       continue;
     }
@@ -140,6 +143,12 @@ function filterInscriptionLines(lines) {
     if (/^marker background picture caption:/i.test(t)) continue;
     if (/^Marker photo caption:/i.test(t)) continue;
     if (/^\[Photo caption:\]/i.test(t)) continue;
+
+    if (/^\(\s*Background\s+photograph\s*:?\s*\)\s*$/i.test(t)) continue;
+    if (/^\[\s*Background\s+photograph\s*:?\s*\]\s*$/i.test(t)) continue;
+    if (/^Background\s+photograph\s*:?\s*$/i.test(t)) continue;
+    if (/^Background\s+photo\s+caption\b/i.test(t)) continue;
+    if (/^Inset\s+photo\s+caption\b/i.test(t)) continue;
 
     if (/^For more information:/i.test(t)) continue;
     if (/^For more information on viewing\b/i.test(t) && /\bcontact:/i.test(t)) continue;
@@ -355,6 +364,8 @@ function cleanMarkerInscription(text) {
   t = t.replace(/Touch for map\..*$/gm, '');
 
   t = stripHtmlTags(decodeHtmlEntities(t));
+
+  t = t.replace(/\n\(\s*Background\s+photograph\s*:?\s*\)\s*\n/gi, '\n');
 
   let prevJoin;
   do {

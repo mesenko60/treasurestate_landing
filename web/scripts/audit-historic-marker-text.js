@@ -30,6 +30,18 @@ function auditInscription(text) {
   if (!text || !text.trim()) return issues;
 
   if (/Geo-Actiivity|Actiivity/i.test(text)) issues.push('typo_Geo-Activity_heading');
+  if (/\(\s*Background\s+photograph\s*:?\s*\)/i.test(text)) {
+    issues.push('background_photograph_label');
+  }
+  if (/(^|\n)Background\s+photo\s+caption\b/i.test(text)) {
+    issues.push('background_photo_caption_line');
+  }
+  if (/(^|\n)Inset\s+photo\s+caption\b/i.test(text)) {
+    issues.push('inset_photo_caption_line');
+  }
+  if (/\(\s*Photo\s+caption\s*:?\s*\)/i.test(text)) {
+    issues.push('photo_caption_block');
+  }
   if (/\nPhotographed by\b/i.test(text)) issues.push('photographed_by_line');
   if (/Topics and series/i.test(text)) issues.push('topics_and_series_tail');
   if (/\n\d+\.\s+.+\bMarker on\b/i.test(text)) issues.push('numbered_marker_photo_caption');
