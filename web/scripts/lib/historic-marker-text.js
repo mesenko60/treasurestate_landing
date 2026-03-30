@@ -9,7 +9,9 @@
  * ambiguous punctuation inside the marker body) must be judged **per marker** by an
  * agent and stored in `web/data/historic-marker-inscription-overrides.json`, not
  * solved with new bulk regex here. Use `web/scripts/audit-historic-marker-text.js`
- * to list likely candidates.
+ * to list likely candidates. Visual structure (Geo-Facts headings, bullet lists,
+ * “Erected by” footer) is applied at render time in `web/lib/parseMarkerInscription.ts`
+ * and `web/components/MarkerInscription.tsx`, not in this file.
  *
  * polishMarkerInscription() applies high-confidence typo and punctuation fixes
  * (duplicate words, known CSV glitches). Intentional archaic spellings inside

@@ -9,6 +9,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import MarkerInscription from '../../components/MarkerInscription';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
@@ -285,15 +286,11 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                           ))}
                         </div>
                       )}
-                      <div style={{ 
-                        fontSize: '0.9rem', 
-                        color: '#444', 
-                        lineHeight: 1.6, 
-                        margin: '0 0 1rem'
-                      }}>
-                        {selectedMarker.inscription.split('\n').map((para, i) => (
-                          <p key={i} style={{ margin: '0 0 0.6rem' }}>{para}</p>
-                        ))}
+                      <div style={{ margin: '0 0 1rem', color: '#444' }}>
+                        <MarkerInscription
+                          text={selectedMarker.inscription}
+                          variant="compact"
+                        />
                       </div>
                       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.75rem', borderTop: '1px solid #e8ede8' }}>
                         {curatedSet.has(selectedMarker.slug) && (

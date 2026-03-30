@@ -9,6 +9,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import MarkerInscription from '../../components/MarkerInscription';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
@@ -95,8 +96,6 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
     isAccessibleForFree: true,
   };
 
-  const paragraphs = marker.inscription.split(/\n\n+/).filter(p => p.trim());
-
   return (
     <>
       <Head>
@@ -126,8 +125,7 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
         .topic-badge { font-size: 0.8rem; padding: 0.3rem 0.7rem; background: #e8f4f8; border-radius: 4px; color: #3b6978; }
         .marker-content { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; }
         @media (max-width: 768px) { .marker-content { grid-template-columns: 1fr; } }
-        .marker-inscription { line-height: 1.8; color: #333; }
-        .marker-inscription p { margin-bottom: 1rem; }
+        .marker-inscription { color: #333; }
         .marker-sidebar {}
         .marker-map { height: 250px; border-radius: 10px; overflow: hidden; border: 1px solid #e0e0e0; margin-bottom: 1rem; }
         .marker-actions { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
@@ -188,9 +186,7 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
           <div className="marker-content">
             <div className="marker-inscription">
               <h2 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem' }}>Marker Inscription</h2>
-              {paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              <MarkerInscription text={marker.inscription} />
             </div>
 
             <aside className="marker-sidebar">

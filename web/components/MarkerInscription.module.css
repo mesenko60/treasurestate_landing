@@ -1,0 +1,79 @@
+.root {
+  line-height: 1.8;
+  color: #333;
+}
+
+.compact {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #204051;
+  margin: 1.5rem 0 0.6rem;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #c5dde6;
+}
+
+.compact .sectionTitle {
+  font-size: 0.88rem;
+  margin: 1rem 0 0.45rem;
+  padding-bottom: 0.25rem;
+}
+
+.root > .sectionTitle:first-child {
+  margin-top: 0;
+}
+
+.paragraph {
+  margin: 0 0 1rem;
+}
+
+.compact .paragraph {
+  margin-bottom: 0.65rem;
+}
+
+.list {
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 1.1rem;
+  list-style: none;
+}
+
+.compact .list {
+  margin-bottom: 0.65rem;
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 0.55rem;
+  padding-left: 0.35rem;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: -0.85rem;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: #3b6978;
+  border-radius: 50%;
+}
+
+.attribution {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8ede8;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.compact .attribution {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  font-size: 0.88rem;
+}

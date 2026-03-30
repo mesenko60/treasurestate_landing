@@ -7,6 +7,7 @@ import Map, { Source, Layer, Marker, Popup, NavigationControl, MapRef } from 're
 import type { LayerProps } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
+import MarkerInscription from '../../components/MarkerInscription';
 import { trackMapInteraction } from '../../lib/gtag';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -751,10 +752,11 @@ export default function BackroadsPlanner({
                       📍 {selectedHistoricMarker.town}
                     </div>
                   )}
-                  <div style={{ fontSize: '0.88rem', color: '#444', lineHeight: 1.6, marginBottom: '0.75rem' }}>
-                    {selectedHistoricMarker.inscription.split('\n').map((para, i) => (
-                      <p key={i} style={{ margin: '0 0 0.5rem' }}>{para}</p>
-                    ))}
+                  <div style={{ color: '#444', marginBottom: '0.75rem' }}>
+                    <MarkerInscription
+                      text={selectedHistoricMarker.inscription}
+                      variant="compact"
+                    />
                   </div>
                   <div style={{ paddingTop: '0.6rem', borderTop: '1px solid #e8ede8', display: 'flex', gap: '1rem' }}>
                     {selectedHistoricMarker.isCurated && (
