@@ -42,6 +42,15 @@ function auditInscription(text) {
   if (/\(\s*Photo\s+caption\s*:?\s*\)/i.test(text)) {
     issues.push('photo_caption_block');
   }
+  if (/\n\([^)]*\b[Cc]aption[s]?\b[^)]*\)\s*\n/.test(text)) {
+    issues.push('caption_parenthetical_line');
+  }
+  if (/\[\s*caption\s*\d*\s*\]/i.test(text)) {
+    issues.push('bracket_caption_prefix');
+  }
+  if (/\(\s*photo\s+on\s+(the\s+)?(left|right)\s*\)/i.test(text)) {
+    issues.push('photo_on_left_right');
+  }
   if (/\nPhotographed by\b/i.test(text)) issues.push('photographed_by_line');
   if (/Topics and series/i.test(text)) issues.push('topics_and_series_tail');
   if (/\n\d+\.\s+.+\bMarker on\b/i.test(text)) issues.push('numbered_marker_photo_caption');

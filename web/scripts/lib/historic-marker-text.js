@@ -100,21 +100,25 @@ function filterInscriptionLines(lines) {
 
   for (const line of lines) {
     const raw = line;
-    const t = line.trim();
+    let t = line.trim();
     if (t === '') {
       out.push(raw);
       continue;
     }
 
+    t = t.replace(/^\[\s*caption\s*\d*\s*\]\s*/i, '').trim();
+    t = t.replace(/^\[\s*background\s+image\s+caption\s*\]\s*/i, '').trim();
+    if (t === '') continue;
+
     if (skippingPhotoCaptionBlock) {
       if (/^Erected by\b/i.test(t)) {
         skippingPhotoCaptionBlock = false;
-        out.push(raw);
+        out.push(t);
         continue;
       }
       if (/^[\u201c"]/.test(t) && t.length > 55) {
         skippingPhotoCaptionBlock = false;
-        out.push(raw);
+        out.push(t);
         continue;
       }
       continue;
@@ -150,6 +154,24 @@ function filterInscriptionLines(lines) {
     if (/^Background\s+photo\s+caption\b/i.test(t)) continue;
     if (/^Inset\s+photo\s+caption\b/i.test(t)) continue;
 
+    if (
+      /^\([^)]*\b[Cc]aption[s]?\b[^)]*\)\s*$/i.test(t) &&
+      t.length <= 240
+    ) {
+      continue;
+    }
+
+    if (
+      /^\(\s*photo\s+on\s+(the\s+)?(left|right|center|centre|top|bottom)\s*\)\s*$/i.test(
+        t,
+      )
+    ) {
+      continue;
+    }
+
+    if (/^photo captions\b/i.test(t)) continue;
+    if (/^Photo Captions\b/i.test(t)) continue;
+
     if (/^For more information:/i.test(t)) continue;
     if (/^For more information on viewing\b/i.test(t) && /\bcontact:/i.test(t)) continue;
     if (/website:\s*https?:/i.test(t) || /website:\s*http;/i.test(t)) continue;
@@ -160,7 +182,7 @@ function filterInscriptionLines(lines) {
 
     if (/^The marker is on\b/i.test(t)) continue;
 
-    out.push(raw);
+    out.push(t);
   }
 
   return out;
@@ -366,6 +388,7 @@ function cleanMarkerInscription(text) {
   t = stripHtmlTags(decodeHtmlEntities(t));
 
   t = t.replace(/\n\(\s*Background\s+photograph\s*:?\s*\)\s*\n/gi, '\n');
+  t = t.replace(/\(\s*Caption[^)]*\)\s*/gi, '');
 
   let prevJoin;
   do {

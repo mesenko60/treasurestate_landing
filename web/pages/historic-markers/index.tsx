@@ -10,6 +10,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
+import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
@@ -37,25 +38,6 @@ type Props = {
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
-
-const TOPIC_LABELS: Record<string, string> = {
-  'architecture': 'Architecture',
-  'industry': 'Industry & Commerce',
-  'exploration': 'Exploration',
-  'native-american': 'Native American',
-  'settlements': 'Settlements',
-  'military': 'Military & Wars',
-  'nature': 'Nature & Wildlife',
-  'transportation': 'Transportation',
-  'disasters': 'Disasters',
-  'culture': 'Culture & Entertainment',
-  'railroads': 'Railroads',
-  'mining': 'Mining',
-  'people': 'Notable People',
-  'landmarks': 'Landmarks',
-  'cemeteries': 'Cemeteries',
-  'parks': 'Parks',
-};
 
 export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCounts, countyCounts }: Props) {
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
@@ -202,7 +184,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                   .sort((a, b) => b[1] - a[1])
                   .map(([topic, count]) => (
                     <option key={topic} value={topic}>
-                      {TOPIC_LABELS[topic] || topic} ({count})
+                      {MARKER_TOPIC_LABELS[topic] || topic} ({count})
                     </option>
                   ))}
               </select>
@@ -281,7 +263,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                         <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
                           {selectedMarker.topics.slice(0, 4).map(t => (
                             <span key={t} style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
-                              {TOPIC_LABELS[t] || t}
+                              {MARKER_TOPIC_LABELS[t] || t}
                             </span>
                           ))}
                         </div>
@@ -338,7 +320,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 <div className="excerpt">{m.inscription.substring(0, 100)}...</div>
                 <div className="topics">
                   {m.topics.slice(0, 3).map(t => (
-                    <span key={t} className="topic-tag">{TOPIC_LABELS[t] || t}</span>
+                    <span key={t} className="topic-tag">{MARKER_TOPIC_LABELS[t] || t}</span>
                   ))}
                 </div>
                 {curatedSet.has(m.slug) && (

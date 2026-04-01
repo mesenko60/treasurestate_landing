@@ -10,6 +10,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
+import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
@@ -45,25 +46,6 @@ type Props = {
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
-
-const TOPIC_LABELS: Record<string, string> = {
-  'architecture': 'Architecture',
-  'industry': 'Industry & Commerce',
-  'exploration': 'Exploration',
-  'native-american': 'Native American Heritage',
-  'settlements': 'Settlements & Settlers',
-  'military': 'Military & Wars',
-  'nature': 'Nature & Wildlife',
-  'transportation': 'Transportation',
-  'disasters': 'Disasters',
-  'culture': 'Culture & Entertainment',
-  'railroads': 'Railroads',
-  'mining': 'Mining History',
-  'people': 'Notable People',
-  'landmarks': 'Landmarks',
-  'cemeteries': 'Cemeteries',
-  'parks': 'Parks & Recreation',
-};
 
 export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Props) {
   const url = `https://treasurestate.com/historic-markers/${marker.slug}/`;
@@ -178,7 +160,7 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
           {marker.topics.length > 0 && (
             <div className="marker-topics">
               {marker.topics.map(t => (
-                <span key={t} className="topic-badge">{TOPIC_LABELS[t] || t}</span>
+                <span key={t} className="topic-badge">{MARKER_TOPIC_LABELS[t] || t}</span>
               ))}
             </div>
           )}

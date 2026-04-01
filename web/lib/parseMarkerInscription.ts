@@ -75,10 +75,11 @@ export function parseMarkerInscription(text: string): InscriptionBlock[] {
 
     if (
       PANEL_LINE.test(t) &&
-      t.length < 140 &&
+      t.length < 240 &&
       !/^\(sic\)$/i.test(t) &&
       !/background\s+photograph/i.test(t) &&
-      !/^\(\s*Photo\s+caption/i.test(t)
+      !/^\(\s*Photo\s+caption/i.test(t) &&
+      !/\b[Cc]aption[s]?\b/i.test(t)
     ) {
       flushList();
       flushPara();
