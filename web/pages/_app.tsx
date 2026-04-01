@@ -51,11 +51,12 @@ body{font-family:'Arial',sans-serif;margin:0;padding:0;background-color:#f4f4f4;
 header.hero-section.hero-section--small{height:35vh!important;min-height:200px!important}
 .hero-image{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;filter:brightness(0.6)}
 .hero-image--small{height:100%;min-height:180px}
-.hero-text{z-index:1}
+.hero-text{z-index:1;width:100%;max-width:1000px;box-sizing:border-box;padding:2rem;text-align:center}
 .hero-text--small h1{font-size:2rem}
 .hero-text--small p{font-size:1rem}
-.hero-text h1{font-size:3rem;margin-bottom:0.5rem;font-weight:bold;text-shadow:2px 2px 4px rgba(0,0,0,0.7)}
-.hero-text p{font-size:1.5rem;text-shadow:1px 1px 3px rgba(0,0,0,0.7)}
+.hero-text h1{font-size:3rem;margin-bottom:0.5rem;font-weight:bold;text-shadow:2px 2px 4px rgba(0,0,0,0.7);text-align:center}
+.hero-text p{font-size:1.5rem;text-shadow:1px 1px 3px rgba(0,0,0,0.7);text-align:center;max-width:40rem;margin-left:auto;margin-right:auto;line-height:1.45}
+@media(min-width:1200px){.hero-section--small .hero-text h1{white-space:normal}}
 main{max-width:960px;margin:2rem auto;padding:0 1rem}
 .content-section{background-color:#fff;padding:2rem;margin-bottom:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
 .content-section h2{font-size:2rem;color:#2c3e50;margin-bottom:1rem;text-align:center;border-bottom:2px solid #e0e0e0;padding-bottom:0.5rem}
