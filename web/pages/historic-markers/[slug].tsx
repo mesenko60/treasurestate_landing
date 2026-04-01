@@ -47,7 +47,18 @@ type Props = {
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
+/** Marker slug → companion information article (e.g. narrative beyond the inscription). */
+const MARKER_DEEP_READS: Record<string, { href: string; title: string; description: string }> = {
+  'building-from-the-ashes-45509': {
+    href: '/information/1910_fire/',
+    title: 'Building From the Ashes — full narrative',
+    description:
+      'A longer account of the 1910 Big Blowup, East Portal, rescue trains, and how Missoula and the forests recovered—written as companion reading to this marker.',
+  },
+};
+
 export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Props) {
+  const deepRead = MARKER_DEEP_READS[marker.slug];
   const url = `https://treasurestate.com/historic-markers/${marker.slug}/`;
   const title = marker.title;
   const desc = marker.inscription.substring(0, 160).replace(/\n/g, ' ') + '...';
@@ -132,6 +143,10 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
         .trails-section { margin-top: 1.5rem; }
         .trails-section h3 { font-size: 0.95rem; color: #204051; margin-bottom: 0.5rem; }
         .trail-link { display: inline-block; margin-right: 1rem; font-size: 0.9rem; color: #3b6978; }
+        .marker-deep-read { margin-top: 1.5rem; padding: 1rem 1.25rem; background: #fdf9f3; border-left: 4px solid #d8973c; border-radius: 0 6px 6px 0; }
+        .marker-deep-read h3 { font-size: 1rem; color: #204051; margin: 0 0 0.5rem; }
+        .marker-deep-read p { margin: 0; color: #333; line-height: 1.6; font-size: 0.95rem; }
+        .marker-deep-read a { color: #925f14; font-weight: 600; }
         .map-marker-icon {
           width: 20px; height: 20px; background: #c0392b; border: 2px solid #fff;
           border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -169,6 +184,16 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
             <div className="marker-inscription">
               <h2 style={{ fontSize: '1.1rem', color: '#204051', marginBottom: '1rem' }}>Marker Inscription</h2>
               <MarkerInscription text={marker.inscription} />
+              {deepRead && (
+                <div className="marker-deep-read">
+                  <h3>Further reading</h3>
+                  <p>
+                    <Link href={deepRead.href}>{deepRead.title}</Link>
+                    {' — '}
+                    {deepRead.description}
+                  </p>
+                </div>
+              )}
             </div>
 
             <aside className="marker-sidebar">
