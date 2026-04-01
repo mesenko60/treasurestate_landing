@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import inscriptionStyles from '../MarkerInscription.module.css';
+import { renderTextWith1910FireArticleLinks } from '../../lib/renderMontana1910FireArticleLinks';
 
 type Marker = {
   id: string;
@@ -59,7 +61,10 @@ export default function HistoricMarkers({ markers, townName, townSlug }: Props) 
               {m.title}
             </h3>
             <p style={{ fontSize: '0.88rem', color: '#555', lineHeight: 1.5, margin: '0 0 0.5rem' }}>
-              {m.inscription.substring(0, 150)}...
+              {renderTextWith1910FireArticleLinks(m.inscription.substring(0, 150), {
+                linkClassName: inscriptionStyles.fireArticleLink,
+              })}
+              ...
             </p>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
               {m.topics.slice(0, 2).map(t => (

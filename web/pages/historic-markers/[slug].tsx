@@ -10,6 +10,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
+import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
@@ -46,16 +47,6 @@ type Props = {
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
-
-/** Marker slug → companion information article (e.g. narrative beyond the inscription). */
-const MARKER_DEEP_READS: Record<string, { href: string; title: string; description: string }> = {
-  'building-from-the-ashes-45509': {
-    href: '/information/1910_fire/',
-    title: 'Building From the Ashes — full narrative',
-    description:
-      'A longer account of the 1910 Big Blowup, East Portal, rescue trains, and how Missoula and the forests recovered—written as companion reading to this marker.',
-  },
-};
 
 export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Props) {
   const deepRead = MARKER_DEEP_READS[marker.slug];

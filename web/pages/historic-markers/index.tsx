@@ -10,7 +10,10 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
+import inscriptionStyles from '../../components/MarkerInscription.module.css';
+import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
+import { renderTextWith1910FireArticleLinks } from '../../lib/renderMontana1910FireArticleLinks';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
@@ -41,6 +44,7 @@ const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCounts, countyCounts }: Props) {
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
+  const popupDeepRead = selectedMarker ? MARKER_DEEP_READS[selectedMarker.slug] : undefined;
   const [topicFilter, setTopicFilter] = useState<string>('');
   const [countyFilter, setCountyFilter] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState('');
@@ -283,6 +287,14 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                             View Full Page →
                           </Link>
                         )}
+                        {popupDeepRead && (
+                          <Link
+                            href={popupDeepRead.href}
+                            style={{ fontSize: '0.9rem', color: '#925f14', fontWeight: 600 }}
+                          >
+                            {popupDeepRead.title} →
+                          </Link>
+                        )}
                         <a
                           href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
                           target="_blank"
@@ -317,7 +329,12 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 <div className="loc">
                   {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
                 </div>
-                <div className="excerpt">{m.inscription.substring(0, 100)}...</div>
+                <div className="excerpt">
+                  {renderTextWith1910FireArticleLinks(m.inscription.substring(0, 100), {
+                    linkClassName: inscriptionStyles.fireArticleLink,
+                  })}
+                  ...
+                </div>
                 <div className="topics">
                   {m.topics.slice(0, 3).map(t => (
                     <span key={t} className="topic-tag">{MARKER_TOPIC_LABELS[t] || t}</span>

@@ -9,6 +9,10 @@ import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
+import MarkerInscription from '../../../components/MarkerInscription';
+import inscriptionStyles from '../../../components/MarkerInscription.module.css';
+import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
+import { renderTextWith1910FireArticleLinks } from '../../../lib/renderMontana1910FireArticleLinks';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Source = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Source), { ssr: false });
@@ -228,17 +232,32 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                     anchor="bottom"
                     offset={15}
                   >
-                    <div style={{ maxWidth: 280, padding: '0.5rem' }}>
+                    <div style={{ maxWidth: 400, padding: '0.5rem' }}>
                       <h4 style={{ margin: '0 0 0.3rem', fontSize: '0.95rem', color: '#204051' }}>
                         {selectedMarker.title}
                       </h4>
                       <p style={{ fontSize: '0.8rem', color: '#888', margin: '0 0 0.5rem' }}>
                         {selectedMarker.town || selectedMarker.county}
                       </p>
-                      <p style={{ fontSize: '0.82rem', color: '#555', lineHeight: 1.4, margin: 0 }}>
-                        {selectedMarker.inscription.substring(0, 200)}...
-                      </p>
-                      <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.5rem' }}>
+                      <div
+                        style={{
+                          maxHeight: '42vh',
+                          overflowY: 'auto',
+                          marginBottom: '0.5rem',
+                          color: '#555',
+                        }}
+                      >
+                        <MarkerInscription text={selectedMarker.inscription} variant="compact" />
+                      </div>
+                      <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                        {MARKER_DEEP_READS[selectedMarker.slug] && (
+                          <Link
+                            href={MARKER_DEEP_READS[selectedMarker.slug].href}
+                            style={{ fontSize: '0.8rem', color: '#925f14', fontWeight: 600 }}
+                          >
+                            {MARKER_DEEP_READS[selectedMarker.slug].title} →
+                          </Link>
+                        )}
                         <a
                           href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
                           target="_blank"
@@ -283,7 +302,10 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                   {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
                 </div>
                 <div className="marker-excerpt">
-                  {m.inscription.substring(0, 120)}...
+                  {renderTextWith1910FireArticleLinks(m.inscription.substring(0, 120), {
+                    linkClassName: inscriptionStyles.fireArticleLink,
+                  })}
+                  ...
                 </div>
               </div>
             ))}

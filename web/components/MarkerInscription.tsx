@@ -3,6 +3,7 @@ import {
   parseMarkerInscription,
   type InscriptionBlock,
 } from '../lib/parseMarkerInscription';
+import { renderTextWith1910FireArticleLinks } from '../lib/renderMontana1910FireArticleLinks';
 import styles from './MarkerInscription.module.css';
 
 type Props = {
@@ -18,7 +19,7 @@ function renderParagraph(lines: string[], key: number) {
       {lines.map((line, j) => (
         <React.Fragment key={j}>
           {j > 0 ? <br /> : null}
-          {line}
+          {renderTextWith1910FireArticleLinks(line, { linkClassName: styles.fireArticleLink })}
         </React.Fragment>
       ))}
     </p>
@@ -40,7 +41,7 @@ function renderBlock(block: InscriptionBlock, i: number) {
         <ul key={i} className={styles.list} role="list">
           {block.items.map((item, j) => (
             <li key={j} className={styles.listItem}>
-              {item}
+              {renderTextWith1910FireArticleLinks(item, { linkClassName: styles.fireArticleLink })}
             </li>
           ))}
         </ul>
@@ -48,7 +49,7 @@ function renderBlock(block: InscriptionBlock, i: number) {
     case 'attribution':
       return (
         <p key={i} className={styles.attribution}>
-          {block.text}
+          {renderTextWith1910FireArticleLinks(block.text, { linkClassName: styles.fireArticleLink })}
         </p>
       );
     default:
