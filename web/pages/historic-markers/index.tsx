@@ -113,7 +113,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
 
       <style dangerouslySetInnerHTML={{ __html: `
         .markers-page { max-width: 1400px; margin: 0 auto; padding: 1rem; }
-        .markers-layout { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; min-height: 600px; }
+        .markers-layout { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; min-height: 800px; }
         @media (max-width: 900px) { .markers-layout { grid-template-columns: 1fr; } }
         .markers-sidebar { background: #fff; border-radius: 10px; border: 1px solid #e8ede8; padding: 1rem; height: fit-content; }
         .markers-sidebar h2 { font-size: 1rem; color: #204051; margin: 0 0 1rem; }
@@ -127,7 +127,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         .filter-stats { font-size: 0.85rem; color: #888; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; }
         .clear-filters { font-size: 0.85rem; color: #3b6978; background: none; border: none; cursor: pointer; padding: 0; margin-top: 0.5rem; }
         .clear-filters:hover { text-decoration: underline; }
-        .markers-map-container { height: 600px; border-radius: 10px; overflow: hidden; border: 1px solid #e0e0e0; }
+        .markers-map-container { height: 75vh; min-height: 600px; max-height: 900px; border-radius: 10px; overflow: visible; border: 1px solid #e0e0e0; position: relative; }
         .map-marker {
           width: 12px; height: 12px; background: #c0392b; border: 2px solid #fff;
           border-radius: 50%; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.3);
@@ -247,11 +247,11 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                     onClose={() => setSelectedMarker(null)}
                     closeButton
                     closeOnClick={false}
-                    anchor="top"
-                    offset={15}
-                    maxWidth="550px"
+                    anchor="bottom"
+                    offset={[0, -8]}
+                    maxWidth="480px"
                   >
-                    <div style={{ maxWidth: 520, maxHeight: '60vh', overflowY: 'auto', padding: '0.75rem' }}>
+                    <div style={{ maxWidth: 460, maxHeight: '50vh', overflowY: 'auto', padding: '0.75rem' }}>
                       <h4 style={{ margin: '0 0 0.4rem', fontSize: '1.1rem', color: '#204051' }}>
                         {selectedMarker.title}
                       </h4>
