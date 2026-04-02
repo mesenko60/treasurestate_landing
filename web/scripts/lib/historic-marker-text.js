@@ -268,7 +268,7 @@ function normalizeInscriptionParagraphLineBreaks(t) {
       }
       out.push(acc);
     }
-    return out.join('\n');
+    return out.join('\n\n');
   });
 
   return merged.join('\n\n');
