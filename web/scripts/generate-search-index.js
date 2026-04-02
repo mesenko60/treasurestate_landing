@@ -31,6 +31,25 @@ function fmtPop(n) {
   return `${n} residents`;
 }
 
+/** Relative paths to each `.md` under absDir (recursive), sorted. */
+function walkMarkdownFilesSorted(absDir) {
+  if (!fs.existsSync(absDir)) return [];
+  const results = [];
+  function walk(sub) {
+    const abs = sub ? path.join(absDir, sub) : absDir;
+    const entries = fs.readdirSync(abs, { withFileTypes: true });
+    for (const e of entries) {
+      if (e.name.startsWith('.')) continue;
+      const childRel = sub ? path.join(sub, e.name) : e.name;
+      if (e.isDirectory()) walk(childRel);
+      else if (e.isFile() && e.name.endsWith('.md')) results.push(childRel);
+    }
+  }
+  walk('');
+  results.sort((a, b) => a.localeCompare(b, 'en'));
+  return results;
+}
+
 (function main() {
   const webDir = path.resolve(__dirname, '..');
   const repoRoot = path.resolve(webDir, '..');
@@ -328,18 +347,21 @@ function fmtPop(n) {
 
   // ═══ 14. CONTENT HUB ARTICLES ═══
   const articlesInfoDir = path.join(repoRoot, 'articles_information');
+  const seenInformationSlugs = new Set();
   if (fs.existsSync(articlesInfoDir)) {
-    const mdFiles = fs.readdirSync(articlesInfoDir).filter(f => f.endsWith('.md'));
-    for (const f of mdFiles) {
+    for (const rel of walkMarkdownFilesSorted(articlesInfoDir)) {
       try {
-        const raw = fs.readFileSync(path.join(articlesInfoDir, f), 'utf8');
+        const raw = fs.readFileSync(path.join(articlesInfoDir, rel), 'utf8');
         const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
         if (fmMatch) {
           const titleMatch = fmMatch[1].match(/^title:\s*"?(.+?)"?\s*$/m);
           const excerptMatch = fmMatch[1].match(/^excerpt:\s*"?(.+?)"?\s*$/m);
           const slugMatch = fmMatch[1].match(/^slug:\s*(.+?)\s*$/m);
           const tagsMatch = fmMatch[1].match(/^tags:\s*\[(.+?)\]/m);
-          const slug = slugMatch ? slugMatch[1] : f.replace(/\.md$/, '');
+          const base = path.basename(rel, '.md');
+          const slug = slugMatch ? slugMatch[1].trim() : base;
+          if (seenInformationSlugs.has(slug)) continue;
+          seenInformationSlugs.add(slug);
           const title = titleMatch ? titleMatch[1] : slug;
           const desc = excerptMatch ? excerptMatch[1] : '';
           const tags = tagsMatch ? tagsMatch[1] : '';

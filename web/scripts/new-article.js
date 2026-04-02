@@ -31,9 +31,14 @@ async function main() {
   const type = typeChoice.trim() === '2' ? 'guides' : 'montana-facts';
 
   const slug = slugify(title);
-  const dir = type === 'montana-facts'
-    ? path.resolve(__dirname, '..', '..', 'articles_information')
-    : path.resolve(__dirname, '..', '..', 'articles_guides');
+  let dir;
+  if (type === 'guides') {
+    dir = path.resolve(__dirname, '..', '..', 'articles_guides');
+  } else {
+    const rootInfo = path.resolve(__dirname, '..', '..', 'articles_information');
+    const loc = await ask('Montana facts folder: (1) root  (2) markers (historic marker deep reads)  → ');
+    dir = loc.trim() === '2' ? path.join(rootInfo, 'markers') : rootInfo;
+  }
 
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 

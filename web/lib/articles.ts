@@ -85,17 +85,66 @@ const FRONTMATTER_DEFAULTS: Partial<ArticleFrontmatter> = {
 
 /* ─── Helpers ────────────────────────────────────────────── */
 
-function contentDir(type: ArticleType): string {
-  return type === 'montana-facts' ? INFO_DIR : GUIDES_DIR;
-}
-
-function dirForArticleType(type: ArticleType): string {
-  return type === 'montana-facts' ? INFO_DIR : GUIDES_DIR;
-}
-
 function readDir(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => f.endsWith('.md'));
+}
+
+/** Relative paths to every `.md` under `absDir` (recursive), sorted for stable slug resolution. */
+function walkMarkdownFilesSorted(absDir: string): string[] {
+  if (!fs.existsSync(absDir)) return [];
+  const results: string[] = [];
+  function walk(sub: string) {
+    const abs = sub ? path.join(absDir, sub) : absDir;
+    const entries = fs.readdirSync(abs, { withFileTypes: true });
+    for (const e of entries) {
+      if (e.name.startsWith('.')) continue;
+      const childRel = sub ? path.join(sub, e.name) : e.name;
+      if (e.isDirectory()) walk(childRel);
+      else if (e.isFile() && e.name.endsWith('.md')) results.push(childRel);
+    }
+  }
+  walk('');
+  results.sort((a, b) => a.localeCompare(b, 'en'));
+  return results;
+}
+
+function effectiveInfoSlug(rel: string, fm: ArticleFrontmatter): string {
+  return (fm.slug || path.basename(rel, '.md')).trim();
+}
+
+function readMontanaFactsSummaries(): ArticleSummary[] {
+  const bySlug = new Map<string, ArticleSummary>();
+  for (const rel of walkMarkdownFilesSorted(INFO_DIR)) {
+    const fp = path.join(INFO_DIR, rel);
+    const raw = matter(fs.readFileSync(fp, 'utf8'));
+    const fm = parseFrontmatter(raw);
+    const slug = effectiveInfoSlug(rel, fm);
+    if (bySlug.has(slug)) continue;
+    bySlug.set(slug, {
+      slug,
+      title: fm.title,
+      type: 'montana-facts',
+      tags: fm.tags,
+      featured: fm.featured,
+      excerpt: fm.excerpt,
+      hero_image: fm.hero_image,
+      hero_alt: fm.hero_alt,
+      date_published: fm.date_published,
+      date_modified: fm.date_modified,
+    });
+  }
+  return Array.from(bySlug.values());
+}
+
+function findMontanaFactsSource(slug: string): matter.GrayMatterFile<string> | null {
+  for (const rel of walkMarkdownFilesSorted(INFO_DIR)) {
+    const fp = path.join(INFO_DIR, rel);
+    const raw = matter(fs.readFileSync(fp, 'utf8'));
+    const fm = parseFrontmatter(raw);
+    if (effectiveInfoSlug(rel, fm) === slug) return raw;
+  }
+  return null;
 }
 
 function countWords(text: string): number {
@@ -185,35 +234,43 @@ function parseFrontmatter(raw: matter.GrayMatterFile<string>): ArticleFrontmatte
   };
 }
 
-export async function getArticle(slug: string, type?: ArticleType): Promise<Article | null> {
-  const dirs = type ? [dirForArticleType(type)] : [INFO_DIR, GUIDES_DIR];
+async function buildArticleFromParsed(raw: matter.GrayMatterFile<string>): Promise<Article> {
+  const fm = parseFrontmatter(raw);
 
-  for (const dir of dirs) {
-    const filePath = path.join(dir, `${slug}.md`);
-    if (!fs.existsSync(filePath)) continue;
-
-    const raw = matter(fs.readFileSync(filePath, 'utf8'));
-    const fm = parseFrontmatter(raw);
-
-    const fieldNoteMap = new Map<string, FieldNote>();
-    if (fm.field_notes.length > 0) {
-      const allNotes = getAllFieldNotes();
-      for (const fnId of fm.field_notes) {
-        const note = allNotes.find(n => n.id === fnId);
-        if (note) fieldNoteMap.set(fnId, note);
-      }
+  const fieldNoteMap = new Map<string, FieldNote>();
+  if (fm.field_notes.length > 0) {
+    const allNotes = getAllFieldNotes();
+    for (const fnId of fm.field_notes) {
+      const note = allNotes.find(n => n.id === fnId);
+      if (note) fieldNoteMap.set(fnId, note);
     }
+  }
 
-    let contentHtml = await markdownToHtml(raw.content);
-    contentHtml = resolveFieldNotes(contentHtml, fieldNoteMap);
+  let contentHtml = await markdownToHtml(raw.content);
+  contentHtml = resolveFieldNotes(contentHtml, fieldNoteMap);
 
-    const wordCount = countWords(contentHtml);
-    const h2Count = countH2s(contentHtml);
-    const internalLinkCount = countInternalLinks(contentHtml);
+  const wordCount = countWords(contentHtml);
+  const h2Count = countH2s(contentHtml);
+  const internalLinkCount = countInternalLinks(contentHtml);
 
-    const noindex = wordCount < 300 || internalLinkCount < 2;
+  const noindex = wordCount < 300 || internalLinkCount < 2;
 
-    return { frontmatter: fm, contentHtml, wordCount, h2Count, internalLinkCount, noindex };
+  return { frontmatter: fm, contentHtml, wordCount, h2Count, internalLinkCount, noindex };
+}
+
+export async function getArticle(slug: string, type?: ArticleType): Promise<Article | null> {
+  if (type === 'montana-facts' || !type) {
+    const raw = findMontanaFactsSource(slug);
+    if (raw) return buildArticleFromParsed(raw);
+    if (type === 'montana-facts') return null;
+  }
+
+  if (type === 'guides' || !type) {
+    const filePath = path.join(GUIDES_DIR, `${slug}.md`);
+    if (fs.existsSync(filePath)) {
+      const raw = matter(fs.readFileSync(filePath, 'utf8'));
+      return buildArticleFromParsed(raw);
+    }
   }
 
   return null;
@@ -246,22 +303,22 @@ function readSummariesFromDir(dir: string, type: ArticleType): ArticleSummary[] 
 }
 
 export function getArticleSlugs(type?: ArticleType): string[] {
-  if (type) {
-    return readDir(contentDir(type)).map(f => f.replace(/\.md$/, ''));
+  if (type === 'montana-facts') {
+    return readMontanaFactsSummaries().map(s => s.slug);
+  }
+  if (type === 'guides') {
+    return readDir(GUIDES_DIR).map(f => f.replace(/\.md$/, ''));
   }
   return [
-    ...readDir(INFO_DIR).map(f => f.replace(/\.md$/, '')),
+    ...readMontanaFactsSummaries().map(s => s.slug),
     ...readDir(GUIDES_DIR).map(f => f.replace(/\.md$/, '')),
   ];
 }
 
 export function getArticleSummaries(type?: ArticleType): ArticleSummary[] {
-  if (type === 'montana-facts') return readSummariesFromDir(INFO_DIR, 'montana-facts');
+  if (type === 'montana-facts') return readMontanaFactsSummaries();
   if (type === 'guides') return readSummariesFromDir(GUIDES_DIR, 'guides');
-  return [
-    ...readSummariesFromDir(INFO_DIR, 'montana-facts'),
-    ...readSummariesFromDir(GUIDES_DIR, 'guides'),
-  ];
+  return [...readMontanaFactsSummaries(), ...readSummariesFromDir(GUIDES_DIR, 'guides')];
 }
 
 export function getFeaturedArticles(): ArticleSummary[] {
@@ -273,19 +330,54 @@ export function getArticlesByTag(tag: string): ArticleSummary[] {
 }
 
 export function getArticlesForTown(townSlug: string): ArticleSummary[] {
-  const all = getArticleSummaries();
-  return all.filter(a => {
-    const raw = matter(
-      fs.readFileSync(
-        path.join(contentDir(a.type), `${a.slug}.md`),
-        'utf8',
-      ),
-    );
+  const out: ArticleSummary[] = [];
+
+  for (const rel of walkMarkdownFilesSorted(INFO_DIR)) {
+    const fp = path.join(INFO_DIR, rel);
+    const raw = matter(fs.readFileSync(fp, 'utf8'));
     const towns: string[] = Array.isArray(raw.data.related_towns)
-      ? raw.data.related_towns
+      ? raw.data.related_towns.map(String)
       : [];
-    return towns.includes(townSlug);
-  });
+    if (!towns.includes(townSlug)) continue;
+    const fm = parseFrontmatter(raw);
+    const slug = effectiveInfoSlug(rel, fm);
+    out.push({
+      slug,
+      title: fm.title,
+      type: 'montana-facts',
+      tags: fm.tags,
+      featured: fm.featured,
+      excerpt: fm.excerpt,
+      hero_image: fm.hero_image,
+      hero_alt: fm.hero_alt,
+      date_published: fm.date_published,
+      date_modified: fm.date_modified,
+    });
+  }
+
+  for (const file of readDir(GUIDES_DIR)) {
+    const fp = path.join(GUIDES_DIR, file);
+    const raw = matter(fs.readFileSync(fp, 'utf8'));
+    const towns: string[] = Array.isArray(raw.data.related_towns)
+      ? raw.data.related_towns.map(String)
+      : [];
+    if (!towns.includes(townSlug)) continue;
+    const fm = parseFrontmatter(raw);
+    out.push({
+      slug: fm.slug || file.replace(/\.md$/, ''),
+      title: fm.title,
+      type: 'guides',
+      tags: fm.tags,
+      featured: fm.featured,
+      excerpt: fm.excerpt,
+      hero_image: fm.hero_image,
+      hero_alt: fm.hero_alt,
+      date_published: fm.date_published,
+      date_modified: fm.date_modified,
+    });
+  }
+
+  return out;
 }
 
 /* ─── Related Content Resolution ─────────────────────────── */
