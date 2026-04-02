@@ -521,9 +521,9 @@
     ]
   },
   {
-    "id": "mullan-trail",
-    "name": "Mullan Trail",
-    "description": "Follow the Mullan Trail (the 1860s Mullan Military Road)—the first all-weather wagon road across the Rockies in the northern U.S.—through western and southwestern Montana. Markers tie Lieutenant John Mullan’s survey and construction to today’s passes, rivers, and towns.",
+    "id": "mullan-road",
+    "name": "Mullan Military Road",
+    "description": "Follow the path of Lieutenant John Mullan’s 1860s military wagon road—the first all-weather wagon road across the Rockies in the northern U.S.—through western and southwestern Montana. Markers tie Mullan’s survey and construction to today’s passes, rivers, and towns.",
     "difficulty": "moderate",
     "estimatedDays": "2-3",
     "totalMiles": 624,

@@ -387,19 +387,6 @@
   status = 301
   force = true
 
-# --- History trails: Mullan canonical slug ---
-[[redirects]]
-  from = "/guides/history-trails/mullan-road"
-  to = "/guides/history-trails/mullan-trail/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/guides/history-trails/mullan-road/"
-  to = "/guides/history-trails/mullan-trail/"
-  status = 301
-  force = true
-
 # --- Catch-all: any remaining .htm files ---
 [[redirects]]
   from = "/*.htm"
