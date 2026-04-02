@@ -1,0 +1,115 @@
+# Adding Historic Marker Deep-Read Articles
+
+This rule documents the process for adding a companion "deep read" article that expands on a historic marker's inscription.
+
+## File locations
+
+- **Article markdown**: `articles_information/markers/<slug>.md`
+- **Deep-read registry**: `web/lib/markerDeepReads.ts`
+- **Marker data**: `web/data/historic-markers.json`
+- **History trails**: `web/data/history-trails.json`
+
+## Step-by-step process
+
+### 1. Create the article file
+
+Place the markdown file in `articles_information/markers/`. The filename should match the marker slug (e.g., `lewis-and-clark-in-salish-territory-123385.md`).
+
+**Required frontmatter:**
+
+```yaml
+---
+title: "Article Title"
+slug: marker-slug-with-id
+type: montana-facts
+tags: [history, relevant-tags]
+featured: false
+excerpt: "One-sentence summary for search and social."
+hero_image: /images/hero-image.jpg
+hero_alt: "Descriptive alt text"
+meta_description: "SEO description, 150-160 chars."
+related_towns: [town-slug]
+related_topics: []
+date_published: YYYY-MM-DD
+date_modified: YYYY-MM-DD
+---
+```
+
+**Content guidelines:**
+- Minimum 600 words (300 absolute minimum for indexing)
+- At least 2 internal links (to towns, other articles, or guides)
+- Include a "See also" section linking back to the marker and related towns
+
+### 2. Verify the marker exists
+
+```bash
+grep '"id": "123385"' web/data/historic-markers.json
+```
+
+Confirm the marker slug matches what you'll use in `markerDeepReads.ts`.
+
+### 3. Link article to marker page
+
+Edit `web/lib/markerDeepReads.ts` and add an entry:
+
+```typescript
+'marker-slug-with-id': {
+  href: '/information/marker-slug-with-id/',
+  title: 'Article Title — full narrative',
+  description: "Brief description of what the article covers.",
+},
+```
+
+**Important:** Use double quotes (`"`) for strings containing apostrophes to avoid TypeScript parse errors.
+
+### 4. Check if marker is in a history trail
+
+```bash
+grep '"123385"' web/data/history-trails.json
+```
+
+If found, the marker page will show the trail badge automatically.
+
+### 5. Build and verify
+
+```bash
+cd web && npm run build
+```
+
+**Verify these items:**
+- Article page exists: `ls out/information/<slug>/`
+- In search index: `grep '<slug>' public/search-index.json`
+- In sitemap: `grep '<slug>' out/sitemap-information.xml`
+- Deep-read link on marker: check `out/historic-markers/<slug>/index.html` for "Further reading" section
+
+### 6. Commit and push
+
+```bash
+git add articles_information/markers/<file>.md web/lib/markerDeepReads.ts web/public/search-index.json
+git commit -m "Add <title> deep-read article
+
+Marker companion article at /information/<slug>/
+linked from the historic marker page via markerDeepReads.ts."
+git push
+```
+
+## Checklist summary
+
+- [ ] Article in `articles_information/markers/`
+- [ ] Frontmatter complete (title, slug, meta_description, related_towns, dates)
+- [ ] Content ≥600 words with ≥2 internal links
+- [ ] "See also" section links to marker + related towns
+- [ ] Entry added to `web/lib/markerDeepReads.ts`
+- [ ] Build succeeds (`npm run build`)
+- [ ] Article in sitemap and search index
+- [ ] Deep-read link visible on marker page
+- [ ] Committed and pushed
+
+## Scaling notes
+
+When the number of deep-read articles grows large, consider:
+1. Moving `MARKER_DEEP_READS` to a JSON data file
+2. Auto-generating links from frontmatter `related_marker_slugs: [...]`
+3. Build-time reverse lookup (marker page queries articles that reference it)
+
+For now, manual registry in `markerDeepReads.ts` works for dozens of articles.
