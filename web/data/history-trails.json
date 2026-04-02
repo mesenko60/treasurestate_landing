@@ -1,8 +1,8 @@
 [
   {
     "id": "lewis-and-clark",
-    "name": "Lewis & Clark Expedition Trail",
-    "description": "Follow the path of the Corps of Discovery across Montana. From the Missouri River headwaters to the Bitterroot Mountains, experience the landmarks where Lewis and Clark made history in 1805-1806.",
+    "name": "Lewis and Clark National Historic Trail",
+    "description": "Follow the path of the Corps of Discovery across Montana on the federally designated Lewis and Clark National Historic Trail. From the Missouri River headwaters to the Bitterroot Mountains, experience the landmarks where Lewis and Clark made history in 1805-1806.",
     "difficulty": "multi-day",
     "estimatedDays": "3-5",
     "totalMiles": 1075,
@@ -468,6 +468,152 @@
       "191980",
       "98296",
       "191798"
+    ]
+  },
+  {
+    "id": "roosevelt-highway",
+    "name": "Roosevelt Highway (US 2 / Hi-Line)",
+    "description": "Drive the Montana stretch of the early transcontinental Theodore Roosevelt International Highway—today U.S. Highway 2—across the Hi-Line from the Dakotas toward Glacier. Markers highlight auto tourism, Great Northern towns, and roadside history along the northern tier.",
+    "difficulty": "multi-day",
+    "estimatedDays": "2-4",
+    "totalMiles": 660,
+    "markerCount": 8,
+    "regions": [
+      "North-Central Montana",
+      "Western Montana"
+    ],
+    "highlights": [
+      "Hi-Line towns and the Great Northern Railway",
+      "Early motor tourism toward Glacier",
+      "Marias Pass and the Continental Divide",
+      "Roadside service-station era along US 2"
+    ],
+    "markerIds": [
+      "142927",
+      "142887",
+      "252324",
+      "161478",
+      "142925",
+      "142926",
+      "161505",
+      "167201"
+    ]
+  },
+  {
+    "id": "old-north-trail",
+    "name": "Old North Trail",
+    "description": "Explore markers that reference the Old North Trail—the ancient north–south travel corridor along the Rocky Mountain front used by Indigenous nations and later described by travelers and scholars. Coverage in this guide follows markers that name the trail explicitly; more front-range sites can be added over time.",
+    "difficulty": "moderate",
+    "estimatedDays": "1-2",
+    "totalMiles": 400,
+    "markerCount": 2,
+    "regions": [
+      "North-Central Montana",
+      "Central Montana"
+    ],
+    "highlights": [
+      "Chief Mountain and the eastern front",
+      "Indian trails to modern highways (Cascade)"
+    ],
+    "markerIds": [
+      "220323",
+      "245895"
+    ]
+  },
+  {
+    "id": "mullan-road",
+    "name": "Mullan Military Road",
+    "description": "Follow the path of Lieutenant John Mullan’s 1860s military wagon road—the first all-weather wagon road across the Rockies in the northern U.S.—through western and southwestern Montana. Markers tie Mullan’s survey and construction to today’s passes, rivers, and towns.",
+    "difficulty": "moderate",
+    "estimatedDays": "2-3",
+    "totalMiles": 624,
+    "markerCount": 11,
+    "regions": [
+      "Western Montana",
+      "Southwest Montana"
+    ],
+    "highlights": [
+      "Mullan Pass and the Continental Divide",
+      "Clark Fork and Bitterroot crossings",
+      "Fort connections along the route"
+    ],
+    "markerIds": [
+      "71950",
+      "123054",
+      "123060",
+      "123025",
+      "141986",
+      "142246",
+      "142484",
+      "209641",
+      "123510",
+      "144021",
+      "144758"
+    ]
+  },
+  {
+    "id": "yellowstone-trail",
+    "name": "Yellowstone Trail (auto trail)",
+    "description": "Trace Montana’s piece of the Yellowstone Trail, the early coast-to-coast automobile route that promoted good roads and tourism. Markers recall how Yellowstone National Park and gateway towns drew motorists in the auto-age West.",
+    "difficulty": "multi-day",
+    "estimatedDays": "2-4",
+    "totalMiles": 800,
+    "markerCount": 6,
+    "regions": [
+      "Southwest Montana",
+      "Western Montana"
+    ],
+    "highlights": [
+      "West Yellowstone gateway",
+      "Auto-tourism and park access",
+      "Historic road associations and routing"
+    ],
+    "markerIds": [
+      "165449",
+      "246450",
+      "190771",
+      "165322",
+      "202882",
+      "253651"
+    ]
+  },
+  {
+    "id": "nez-perce-national-historic-trail",
+    "name": "Nez Perce (Nee-Me-Poo) National Historic Trail",
+    "description": "Visit Montana sites associated with the Nez Perce War of 1877 and the federally designated Nez Perce (Nee-Me-Poo) National Historic Trail—from the Bitterroot to the Bear Paw Mountains. These markers overlap thematically with other Indian Wars sites but focus on the Nez Perce flight and surrender corridor.",
+    "difficulty": "multi-day",
+    "estimatedDays": "3-5",
+    "totalMiles": 520,
+    "markerCount": 17,
+    "regions": [
+      "Western Montana",
+      "Central Montana",
+      "North-Central Montana"
+    ],
+    "highlights": [
+      "Big Hole National Battlefield",
+      "Bear Paw and the end of the flight",
+      "Bitterroot Valley passage",
+      "Chief Joseph and the 1877 route"
+    ],
+    "markerIds": [
+      "123743",
+      "123755",
+      "123812",
+      "49537",
+      "142830",
+      "142802",
+      "142869",
+      "142838",
+      "142831",
+      "161591",
+      "142215",
+      "168015",
+      "143628",
+      "123126",
+      "188961",
+      "154503",
+      "142865"
     ]
   }
 ]
