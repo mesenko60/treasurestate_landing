@@ -16,7 +16,7 @@ function fire1910Read(title: string): MarkerDeepRead {
 }
 
 /**
- * Marker slug → companion /information/1910_fire/ article.
+ * Marker slug → companion /information/ article.
  * Covers the East Portal (Lolo NF, 2010) fire series and related markers that name the event in inscription text.
  */
 export const MARKER_DEEP_READS: Record<string, MarkerDeepRead> = {
@@ -27,4 +27,11 @@ export const MARKER_DEEP_READS: Record<string, MarkerDeepRead> = {
   'an-unlikely-safe-haven-45511': fire1910Read('The 1910 fires — full narrative'),
   'douse-the-flames-and-climb-aboard-45510': fire1910Read('The 1910 fires — full narrative'),
   'sliderock-lookout-tower-123285': fire1910Read('The 1910 fires — full narrative'),
+
+  'lewis-and-clark-in-salish-territory-123385': {
+    href: '/information/lewis-and-clark-in-salish-territory-123385/',
+    title: 'Lewis and Clark in Salish Territory — full narrative',
+    description:
+      "The Corps of Discovery's encounters with the Salish at Tmsmli, the horse trade, the Lolo Trail crossing, and the decision to divide the Corps in 1806.",
+  },
 };
