@@ -588,7 +588,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const crossLinks = allCrossLinks(slug);
   const scenicDrives = getCorridorsForTown(slug);
 
-  // Load historic markers for this town
+  // Load historic markers for this town (dedupe by title to avoid showing near-identical markers)
   let historicMarkers: HistoricMarkerSummary[] = [];
   try {
     const markersPath = path.resolve(process.cwd(), 'data', 'historic-markers.json');
@@ -598,8 +598,15 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       const curatedSlugs = fs.existsSync(curatedPath)
         ? new Set(JSON.parse(fs.readFileSync(curatedPath, 'utf8')).map((m: { slug: string }) => m.slug))
         : new Set<string>();
+      const seenTitles = new Set<string>();
       historicMarkers = allMarkers
         .filter((m: { townSlug: string | null }) => m.townSlug === slug)
+        .filter((m: { title: string }) => {
+          const key = m.title.toLowerCase().trim();
+          if (seenTitles.has(key)) return false;
+          seenTitles.add(key);
+          return true;
+        })
         .slice(0, 20)
         .map((m: { id: string; slug: string; title: string; inscription: string; topics: string[] }) => ({
           id: m.id,
