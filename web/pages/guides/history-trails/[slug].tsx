@@ -139,6 +139,13 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
         .trail-header { margin-bottom: 1.5rem; }
         .trail-header h1 { font-size: 1.6rem; color: #204051; margin-bottom: 0.5rem; }
         .trail-header p { font-size: 1rem; color: #555; line-height: 1.6; }
+        .trail-route-notice {
+          margin-bottom: 1.5rem; padding: 1rem 1.15rem;
+          background: #f5f9f8; border: 1px solid #e0ebe8; border-radius: 8px;
+          font-size: 0.92rem; color: #444; line-height: 1.55;
+        }
+        .trail-route-notice strong { color: #204051; }
+        .trail-route-notice a { color: #3b6978; font-weight: 600; }
         .trail-meta-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
         .trail-meta-item { font-size: 0.9rem; color: #666; }
         .trail-meta-item strong { color: #204051; }
@@ -183,6 +190,13 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
             <div className="trail-meta-item">Regions: {trail.regions.join(', ')}</div>
           </div>
         </section>
+
+        <aside className="trail-route-notice" role="note">
+          <strong>About this map.</strong> Stops are historic markers grouped by theme for reading and research.
+          They are not laid out along one continuous highway, and a marker may only reference this topic briefly.
+          For <strong>roadway routes</strong> drawn on actual US/state highways, use the{' '}
+          <Link href="/planners/backroads-planner/">Backroads Planner</Link>.
+        </aside>
 
         <div className="trail-layout">
           <div className="trail-map-container">

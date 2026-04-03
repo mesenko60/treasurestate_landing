@@ -34,8 +34,8 @@ const difficultyColors: Record<string, string> = {
 
 export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
   const url = 'https://treasurestate.com/guides/history-trails/';
-  const title = 'Montana History Trails — Historic Marker Road Trips';
-  const desc = `Explore Montana's history through ${trails.length} curated driving trails featuring ${totalMarkers}+ historic markers. From Lewis & Clark to the Indian Wars, discover the stories that shaped Big Sky Country.`;
+  const title = 'Montana History Trails — Thematic Historic Marker Collections';
+  const desc = `${trails.length} themed collections of Montana historic markers (Lewis & Clark, mining, battlefields, and more). Markers are grouped by topic for reading—not aligned to a single highway. For real roadway routes along US and state highways, use the Backroads Planner.`;
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -84,7 +84,7 @@ export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
       <Header />
       <Hero
         title="Montana History Trails"
-        subtitle="Historic Marker Road Trips"
+        subtitle="Thematic marker collections by topic — not highway-by-highway routes"
         image="/images/hero-image.jpg"
         alt="Historic marker in Montana"
         small
@@ -129,15 +129,32 @@ export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
           display: inline-block; padding: 0.7rem 1.5rem; background: #204051;
           color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;
         }
+        .highway-callout {
+          margin-bottom: 2rem; padding: 1.25rem 1.35rem;
+          background: linear-gradient(135deg, #e8f4f8 0%, #f0f7fa 100%);
+          border: 1px solid #c5dde6; border-radius: 10px;
+        }
+        .highway-callout h2 { font-size: 1.1rem; color: #204051; margin: 0 0 0.5rem; }
+        .highway-callout p { font-size: 0.95rem; color: #444; line-height: 1.55; margin: 0 0 0.85rem; }
+        .highway-callout .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .highway-callout a.primary {
+          display: inline-block; padding: 0.55rem 1.1rem; background: #204051;
+          color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+        }
+        .highway-callout a.secondary {
+          font-size: 0.88rem; color: #3b6978; font-weight: 600;
+        }
       `}} />
 
       <main className="history-trails-page">
         <section className="trails-intro">
-          <h1>Discover Montana&apos;s History on the Road</h1>
+          <h1>Discover Montana&apos;s History by Theme</h1>
           <p>
-            Montana&apos;s landscape is marked by thousands of historic markers telling the stories of
-            explorers, miners, soldiers, and native peoples. We&apos;ve organized them into {trails.length} themed
-            driving trails — each a journey through a different chapter of Montana history.
+            Montana has thousands of roadside markers. We group them into {trails.length} <strong>thematic
+            collections</strong> (Lewis &amp; Clark, mining, railroads, and more) so you can explore related
+            stories. <strong>These lists are not a single driveable highway route:</strong> markers were placed
+            where topics happened, and many only mention the theme in passing. The map line connects stops for
+            browsing—it does not follow one road.
           </p>
           <div className="trails-stats">
             <div className="stat">
@@ -154,6 +171,19 @@ export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
             </div>
           </div>
         </section>
+
+        <aside className="highway-callout" aria-label="Highway-based scenic routes">
+          <h2>Want actual highway driving routes?</h2>
+          <p>
+            Our <strong>Backroads Planner</strong> uses real corridors—US and state highways with mapped road
+            geometry, distances, towns, and services. Examples include the Beartooth (US-212), Paradise Valley
+            (US-89), Skalkaho, and Montana Highway 200. Those routes are independent of marker themes.
+          </p>
+          <div className="actions">
+            <Link href="/planners/backroads-planner/" className="primary">Open Backroads Planner</Link>
+            <Link href="/guides/montana-backroads/" className="secondary">Montana backroads &amp; byways guide →</Link>
+          </div>
+        </aside>
 
         <div className="trails-grid">
           {trails.map(trail => (
