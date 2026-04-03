@@ -144,15 +144,15 @@ function parseCSVLine(line) {
   return values;
 }
 
-// Generate URL-safe slug from title
-function slugify(text, id) {
-  const base = text
+// Generate URL-safe slug from title (base only, no ID)
+function slugifyBase(text) {
+  return text
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, '')
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
-    .substring(0, 60);
-  return `${base}-${id}`;
+    .substring(0, 60)
+    .replace(/-$/, '');
 }
 
 // Match marker town to our town slugs
@@ -337,7 +337,7 @@ function main() {
 
     const marker = {
       id,
-      slug: slugify(rawTitle, id),
+      slug: slugifyBase(rawTitle),
       title,
       subtitle: subtitleClean || null,
       lat,
@@ -376,6 +376,27 @@ function main() {
   
   // Sort markers by title
   markers.sort((a, b) => a.title.localeCompare(b.title));
+  
+  // Deduplicate slugs: add -2, -3, etc. for collisions
+  const slugCounts = {};
+  for (const m of markers) {
+    const base = m.slug;
+    if (slugCounts[base] === undefined) {
+      slugCounts[base] = 1;
+    } else {
+      slugCounts[base]++;
+      m.slug = `${base}-${slugCounts[base]}`;
+    }
+  }
+  
+  // Rebuild curated list with updated slugs
+  const markerById = Object.fromEntries(markers.map(m => [m.id, m]));
+  curated.length = 0;
+  for (const m of markers) {
+    if (isCuratedMarker(m)) {
+      curated.push(m);
+    }
+  }
   curated.sort((a, b) => a.title.localeCompare(b.title));
   
   // Write output files
