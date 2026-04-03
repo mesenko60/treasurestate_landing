@@ -335,10 +335,11 @@ function walkMarkdownFilesSorted(absDir) {
   if (fs.existsSync(curatedMarkersPath)) {
     const markers = JSON.parse(fs.readFileSync(curatedMarkersPath, 'utf8'));
     for (const m of markers.slice(0, 100)) { // Index top 100 for search performance
+      const body = m.inscription.replace(/\s+/g, ' ').trim();
       entries.push({
         type: 'article',
         title: m.title,
-        description: m.inscription.substring(0, 120),
+        description: body,
         url: `/historic-markers/${m.slug}/`,
         keywords: `${m.title} ${m.town || ''} ${m.county || ''} Montana historic marker`,
       });

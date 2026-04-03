@@ -10,12 +10,9 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
-import inscriptionStyles from '../../components/MarkerInscription.module.css';
 import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
-import { renderTextWith1910FireArticleLinks } from '../../lib/renderMontana1910FireArticleLinks';
-
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
 const Popup = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Popup), { ssr: false });
@@ -148,7 +145,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         .marker-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .marker-card h3 { font-size: 0.95rem; color: #204051; margin: 0 0 0.3rem; }
         .marker-card .loc { font-size: 0.8rem; color: #888; margin-bottom: 0.4rem; }
-        .marker-card .excerpt { font-size: 0.85rem; color: #555; line-height: 1.4; }
+        .marker-card .excerpt { font-size: 0.85rem; color: #555; line-height: 1.4; margin-top: 0.35rem; }
         .marker-card .topics { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.5rem; }
         .marker-card .topic-tag { font-size: 0.7rem; padding: 0.15rem 0.4rem; background: #f0f4f0; border-radius: 3px; color: #666; }
         .view-more-link { font-size: 0.82rem; color: #3b6978; margin-top: 0.5rem; display: inline-block; }
@@ -339,10 +336,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                   {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
                 </div>
                 <div className="excerpt">
-                  {renderTextWith1910FireArticleLinks(m.inscription.substring(0, 100), {
-                    linkClassName: inscriptionStyles.fireArticleLink,
-                  })}
-                  ...
+                  <MarkerInscription text={m.inscription} variant="compact" />
                 </div>
                 <div className="topics">
                   {m.topics.slice(0, 3).map(t => (

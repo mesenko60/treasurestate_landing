@@ -10,10 +10,8 @@ import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import MarkerInscription from '../../../components/MarkerInscription';
-import inscriptionStyles from '../../../components/MarkerInscription.module.css';
 import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
-import { renderTextWith1910FireArticleLinks } from '../../../lib/renderMontana1910FireArticleLinks';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Source = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Source), { ssr: false });
@@ -294,10 +292,7 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                   {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
                 </div>
                 <div className="marker-excerpt">
-                  {renderTextWith1910FireArticleLinks(m.inscription.substring(0, 120), {
-                    linkClassName: inscriptionStyles.fireArticleLink,
-                  })}
-                  ...
+                  <MarkerInscription text={m.inscription} variant="compact" />
                 </div>
               </div>
             ))}

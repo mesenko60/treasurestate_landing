@@ -605,7 +605,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
           id: m.id,
           slug: m.slug,
           title: m.title,
-          inscription: m.inscription.substring(0, 200),
+          inscription: m.inscription,
           topics: m.topics.slice(0, 3),
           isCurated: curatedSlugs.has(m.slug),
         }));
