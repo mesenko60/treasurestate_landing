@@ -9,6 +9,11 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
 import MarkerInscription from '../../components/MarkerInscription';
 import { trackMapInteraction } from '../../lib/gtag';
+import {
+  orderStopsNearestNeighborFromEast,
+  buildLineSegmentsLngLat,
+  HISTORY_TRAIL_MAX_EDGE_MILES,
+} from '../../lib/historyTrailMapOrder';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
@@ -59,8 +64,9 @@ type HistoryTrailMapData = {
   id: string;
   name: string;
   markerCount: number;
-  /** [lng, lat] vertices in trail order for LineString */
-  coordinates: [number, number][];
+  /** One or more [lng,lat] paths; long jumps omitted between segments */
+  lineSegments: [number, number][][];
+  /** Stops in map visualization order (nearest-neighbor from east), not markerIds file order */
   stops: HistoricMarker[];
 };
 
@@ -281,21 +287,19 @@ export default function BackroadsPlanner({
   }, []);
 
   const historyTrailLineGeo = useMemo(() => {
-    if (!activeHistoryTrail || activeHistoryTrail.coordinates.length < 2) {
+    if (!activeHistoryTrail || activeHistoryTrail.lineSegments.length === 0) {
       return { type: 'FeatureCollection' as const, features: [] };
     }
     return {
       type: 'FeatureCollection' as const,
-      features: [
-        {
-          type: 'Feature' as const,
-          properties: { id: activeHistoryTrail.id },
-          geometry: {
-            type: 'LineString' as const,
-            coordinates: activeHistoryTrail.coordinates,
-          },
+      features: activeHistoryTrail.lineSegments.map((coords, i) => ({
+        type: 'Feature' as const,
+        properties: { id: activeHistoryTrail!.id, seg: i },
+        geometry: {
+          type: 'LineString' as const,
+          coordinates: coords,
         },
-      ],
+      })),
     };
   }, [activeHistoryTrail]);
 
@@ -618,7 +622,7 @@ export default function BackroadsPlanner({
               {activeHistoryTrail && (
                 <div className="history-trail-active-bar">
                   <strong>{activeHistoryTrail.name}</strong>
-                  <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops on map</span>
+                  <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops · lines skip jumps over ~{HISTORY_TRAIL_MAX_EDGE_MILES} mi</span>
                   <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
                   <button
                     type="button"
@@ -643,7 +647,7 @@ export default function BackroadsPlanner({
                     </summary>
                     <div className="history-trails-body">
                       <p className="history-trails-intro">
-                        Click a trail to show its markers and route on the map. Use Guide for the full trail page.
+                        Click a trail to plot stops on the map. Lines connect nearby markers in a sensible order and omit very long gaps — they are not turn-by-turn driving routes. Which markers appear depends on our collection; many trails do not span the full width of Montana.
                       </p>
                       {historyTrails.map(t => (
                         <div
@@ -1201,7 +1205,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const INSCRIPTION_PREVIEW = 1200;
     historyTrails = [...rawTrails]
       .map((t): HistoryTrailMapData => {
-        const stops: HistoricMarker[] = [];
+        const rawStops: HistoricMarker[] = [];
         for (const mid of t.markerIds) {
           const raw = idLookup.get(mid);
           if (!raw) continue;
@@ -1209,7 +1213,7 @@ export const getStaticProps: GetStaticProps = async () => {
           if (inscription.length > INSCRIPTION_PREVIEW) {
             inscription = `${inscription.slice(0, INSCRIPTION_PREVIEW)}…`;
           }
-          stops.push({
+          rawStops.push({
             id: raw.id,
             slug: raw.slug,
             title: raw.title,
@@ -1220,12 +1224,13 @@ export const getStaticProps: GetStaticProps = async () => {
             isCurated: curatedSlugsForTrail.has(raw.slug),
           });
         }
-        const coordinates = stops.map(s => [s.lng, s.lat] as [number, number]);
+        const stops = orderStopsNearestNeighborFromEast(rawStops);
+        const lineSegments = buildLineSegmentsLngLat(stops, HISTORY_TRAIL_MAX_EDGE_MILES);
         return {
           id: t.id,
           name: t.name,
           markerCount: t.markerCount,
-          coordinates,
+          lineSegments,
           stops,
         };
       })
