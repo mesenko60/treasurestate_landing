@@ -17,6 +17,7 @@ import type {
 } from '../../components/trip-builder/types';
 import { ACTIVITY_TYPES } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
+import type { MutableRefObject } from 'react';
 
 const UnifiedMap = dynamic(() => import('../../components/trip-builder/UnifiedMap'), {
   ssr: false,
@@ -53,7 +54,7 @@ export default function BackroadsPlanner({
   historyTrails: HistoryTrailMapData[];
 }) {
   const router = useRouter();
-  const mapRef = useRef<UnifiedMapHandle>(null);
+  const mapRef = useRef<UnifiedMapHandle | null>(null) as MutableRefObject<UnifiedMapHandle | null>;
 
   // --- Corridor / explore state ---
   const [selected, setSelected] = useState<string | null>(null);
@@ -546,7 +547,7 @@ export default function BackroadsPlanner({
 
         <div style={{ flex: 1, position: 'relative' }}>
           <UnifiedMap
-            ref={mapRef}
+            handleRef={mapRef}
             corridors={corridors}
             selectedCorridorId={selected}
             tripCorridorIds={tripCorridorIds}

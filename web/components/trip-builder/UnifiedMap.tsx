@@ -36,6 +36,8 @@ interface UnifiedMapProps {
   onPoiClick: (poi: CorridorPOI) => void;
   onCloseHistoricMarkerPopup: () => void;
   onClosePoiPopup: () => void;
+  /** Bypass for next/dynamic not forwarding refs — pass a MutableRefObject here */
+  handleRef?: React.MutableRefObject<UnifiedMapHandle | null>;
 }
 
 function isMapAlive(map: mapboxgl.Map | null): map is mapboxgl.Map {
@@ -54,7 +56,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     dimCorridors, activeHistoryTrail, itinerary, historicMarkers,
     showHistoricMarkers, filteredPois, selectedHistoricMarker, hoveredPoi,
     onCorridorClick, onHistoricMarkerClick, onPoiClick,
-    onCloseHistoricMarkerPopup, onClosePoiPopup,
+    onCloseHistoricMarkerPopup, onClosePoiPopup, handleRef,
   } = props;
 
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -84,11 +86,18 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   const onClosePoiPopupRef = useRef(onClosePoiPopup);
   onClosePoiPopupRef.current = onClosePoiPopup;
 
-  useImperativeHandle(ref, () => ({
+  const handle: UnifiedMapHandle = React.useMemo(() => ({
     flyTo: (opts) => { try { mapRef.current?.flyTo(opts); } catch { /* map destroyed */ } },
     fitBounds: (bounds, opts) => { try { mapRef.current?.fitBounds(bounds, opts); } catch { /* map destroyed */ } },
     getMap: () => mapRef.current,
-  }));
+  }), []);
+
+  useImperativeHandle(ref, () => handle);
+
+  useEffect(() => {
+    if (handleRef) handleRef.current = handle;
+    return () => { if (handleRef) handleRef.current = null; };
+  }, [handle, handleRef]);
 
   // Initialize map
   useEffect(() => {
