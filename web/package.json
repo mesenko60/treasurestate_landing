@@ -13,6 +13,8 @@
     "postexport": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "@hello-pangea/dnd": "^18.0.1",
+    "@supabase/supabase-js": "^2.101.1",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",

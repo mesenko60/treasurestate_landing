@@ -130,6 +130,7 @@ function walkMarkdownFilesSorted(absDir) {
   // ═══ 4. PLANNERS & TRAVEL GUIDES ═══
   const planners = [
     { title: 'Montana Travel Planners', desc: 'Plan your perfect Montana adventure', url: '/planners/' },
+    { title: 'Trip Builder', desc: 'Build your Montana road trip with interactive routing, real-time distances, and activities along the way', url: '/planners/trip-builder/', kw: 'trip builder planner road trip itinerary route directions driving distance activities camping hiking hot springs' },
     { title: 'Backroads Travel Planner', desc: 'Interactive map with 13 scenic corridors and 850+ points of interest', url: '/planners/backroads-planner/' },
     { title: "Montana's Backroads Guide", desc: 'Hidden gems, scenic byways, and off-the-beaten-path adventures', url: '/guides/montana-backroads/' },
     { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/guides/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
