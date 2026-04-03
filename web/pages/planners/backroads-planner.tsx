@@ -320,6 +320,19 @@ export default function BackroadsPlanner({
     setHoveredPoi(poi);
   }, []);
 
+  const deselectCorridor = useCallback(() => setSelected(null), []);
+  const clearHistoryTrail = useCallback(() => { setActiveHistoryTrailId(null); setSelectedHistoricMarker(null); }, []);
+  const toggleSidebar = useCallback(() => setSidebarOpen((o) => !o), []);
+  const handleHistoricMarkerClick = useCallback((m: HistoricMarker) => setSelectedHistoricMarker(m), []);
+  const handlePoiClick = useCallback((p: CorridorPOI) => setHoveredPoi(p), []);
+  const closeHistoricMarkerPopup = useCallback(() => setSelectedHistoricMarker(null), []);
+  const closePoiPopup = useCallback(() => setHoveredPoi(null), []);
+
+  const enabledItinerary = useMemo(
+    () => itinerary.filter((i) => i.itemType === 'city' || i.enabled !== false),
+    [itinerary],
+  );
+
   return (
     <>
       <Head>
@@ -507,9 +520,9 @@ export default function BackroadsPlanner({
           activeCorridor={activeCorridor}
           filteredPois={filteredPois}
           onSelectCorridor={selectCorridor}
-          onDeselectCorridor={useCallback(() => setSelected(null), [])}
+          onDeselectCorridor={deselectCorridor}
           onSelectHistoryTrail={selectHistoryTrail}
-          onClearHistoryTrail={useCallback(() => { setActiveHistoryTrailId(null); setSelectedHistoricMarker(null); }, [])}
+          onClearHistoryTrail={clearHistoryTrail}
           onAddToTrip={addToTrip}
           onRemoveFromTrip={removeFromTrip}
           onSetDifficultyFilter={setDifficultyFilter}
@@ -528,7 +541,7 @@ export default function BackroadsPlanner({
           setSelectedActivityTypes={setSelectedActivityTypes}
           supabaseReady={supabaseReady}
           sidebarOpen={sidebarOpen}
-          onToggleSidebar={useCallback(() => setSidebarOpen((o) => !o), [])}
+          onToggleSidebar={toggleSidebar}
         />
 
         <div style={{ flex: 1, position: 'relative' }}>
@@ -540,17 +553,17 @@ export default function BackroadsPlanner({
             filteredCorridorIds={filteredCorridorIds}
             dimCorridors={!!activeHistoryTrailId}
             activeHistoryTrail={activeHistoryTrail}
-            itinerary={itinerary.filter((i) => i.itemType === 'city' || i.enabled !== false)}
+            itinerary={enabledItinerary}
             historicMarkers={historicMarkers}
             showHistoricMarkers={showHistoricMarkers}
             filteredPois={filteredPois}
             selectedHistoricMarker={selectedHistoricMarker}
             hoveredPoi={hoveredPoi}
             onCorridorClick={selectCorridor}
-            onHistoricMarkerClick={useCallback((m: HistoricMarker) => setSelectedHistoricMarker(m), [])}
-            onPoiClick={useCallback((p: CorridorPOI) => setHoveredPoi(p), [])}
-            onCloseHistoricMarkerPopup={useCallback(() => setSelectedHistoricMarker(null), [])}
-            onClosePoiPopup={useCallback(() => setHoveredPoi(null), [])}
+            onHistoricMarkerClick={handleHistoricMarkerClick}
+            onPoiClick={handlePoiClick}
+            onCloseHistoricMarkerPopup={closeHistoricMarkerPopup}
+            onClosePoiPopup={closePoiPopup}
           />
 
           <button

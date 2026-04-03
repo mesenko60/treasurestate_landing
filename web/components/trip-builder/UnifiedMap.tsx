@@ -38,25 +38,23 @@ interface UnifiedMapProps {
   onClosePoiPopup: () => void;
 }
 
+function isMapAlive(map: mapboxgl.Map | null): map is mapboxgl.Map {
+  if (!map) return false;
+  try {
+    map.getCanvas();
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function UnifiedMap(props, ref) {
   const {
-    corridors,
-    selectedCorridorId,
-    tripCorridorIds,
-    filteredCorridorIds,
-    dimCorridors,
-    activeHistoryTrail,
-    itinerary,
-    historicMarkers,
-    showHistoricMarkers,
-    filteredPois,
-    selectedHistoricMarker,
-    hoveredPoi,
-    onCorridorClick,
-    onHistoricMarkerClick,
-    onPoiClick,
-    onCloseHistoricMarkerPopup,
-    onClosePoiPopup,
+    corridors, selectedCorridorId, tripCorridorIds, filteredCorridorIds,
+    dimCorridors, activeHistoryTrail, itinerary, historicMarkers,
+    showHistoricMarkers, filteredPois, selectedHistoricMarker, hoveredPoi,
+    onCorridorClick, onHistoricMarkerClick, onPoiClick,
+    onCloseHistoricMarkerPopup, onClosePoiPopup,
   } = props;
 
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -74,9 +72,21 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   const [isDrawingRoute, setIsDrawingRoute] = useState(false);
   const lastItineraryKeyRef = useRef<string>('');
 
+  // Stable refs for callbacks so effects don't re-run when callbacks change
+  const onCorridorClickRef = useRef(onCorridorClick);
+  onCorridorClickRef.current = onCorridorClick;
+  const onHistoricMarkerClickRef = useRef(onHistoricMarkerClick);
+  onHistoricMarkerClickRef.current = onHistoricMarkerClick;
+  const onPoiClickRef = useRef(onPoiClick);
+  onPoiClickRef.current = onPoiClick;
+  const onCloseHistoricMarkerPopupRef = useRef(onCloseHistoricMarkerPopup);
+  onCloseHistoricMarkerPopupRef.current = onCloseHistoricMarkerPopup;
+  const onClosePoiPopupRef = useRef(onClosePoiPopup);
+  onClosePoiPopupRef.current = onClosePoiPopup;
+
   useImperativeHandle(ref, () => ({
-    flyTo: (opts) => mapRef.current?.flyTo(opts),
-    fitBounds: (bounds, opts) => mapRef.current?.fitBounds(bounds, opts),
+    flyTo: (opts) => { try { mapRef.current?.flyTo(opts); } catch { /* map destroyed */ } },
+    fitBounds: (bounds, opts) => { try { mapRef.current?.fitBounds(bounds, opts); } catch { /* map destroyed */ } },
     getMap: () => mapRef.current,
   }));
 
@@ -102,79 +112,62 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     mapRef.current = map;
 
     map.on('load', () => {
-      map.addSource('mapbox-dem', {
-        type: 'raster-dem',
-        url: 'mapbox://mapbox.terrain-rgb',
-        tileSize: 512,
-        maxzoom: 14,
-      });
-      map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
-      map.setFog({
-        range: [0.5, 10],
-        color: '#dbeafe',
-        'high-color': '#f0f9ff',
-        'space-color': '#bcdff1',
-        'horizon-blend': 0.05,
-      });
+      try {
+        map.addSource('mapbox-dem', {
+          type: 'raster-dem',
+          url: 'mapbox://mapbox.terrain-rgb',
+          tileSize: 512,
+          maxzoom: 14,
+        });
+        map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
+        map.setFog({
+          range: [0.5, 10],
+          color: '#dbeafe',
+          'high-color': '#f0f9ff',
+          'space-color': '#bcdff1',
+          'horizon-blend': 0.05,
+        });
+      } catch { /* ignore terrain setup errors */ }
 
       fetch('/montana-border.geojson')
         .then((r) => r.json())
         .then((geojson) => {
-          if (!map.getSource('montana-border')) {
-            map.addSource('montana-border', { type: 'geojson', data: geojson });
-            map.addLayer({
-              id: 'montana-border-line',
-              type: 'line',
-              source: 'montana-border',
-              paint: { 'line-color': '#fff', 'line-width': 2, 'line-opacity': 0.7 },
-            });
-          }
+          try {
+            if (isMapAlive(map) && !map.getSource('montana-border')) {
+              map.addSource('montana-border', { type: 'geojson', data: geojson });
+              map.addLayer({
+                id: 'montana-border-line',
+                type: 'line',
+                source: 'montana-border',
+                paint: { 'line-color': '#fff', 'line-width': 2, 'line-opacity': 0.7 },
+              });
+            }
+          } catch { /* map may have been destroyed */ }
         })
         .catch(() => {})
-        .finally(() => setMapReady(true));
+        .finally(() => {
+          if (mapRef.current === map) setMapReady(true);
+        });
     });
 
     return () => {
-      mapRef.current?.remove();
       mapRef.current = null;
-      setMapReady(false);
+      try { map.remove(); } catch { /* already removed */ }
     };
   }, []);
 
-  // Corridor GeoJSON lines
+  // One-time corridor layer setup (separate from data updates)
+  const corridorLayersAdded = useRef(false);
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!map || !mapReady || corridorLayersAdded.current) return;
 
-    const filteredSet = new Set(filteredCorridorIds);
-    const tripSet = new Set(tripCorridorIds);
-
-    const geojson: GeoJSON.FeatureCollection = {
-      type: 'FeatureCollection',
-      features: corridors.map((c) => ({
-        type: 'Feature' as const,
-        properties: {
-          id: c.id,
-          color: c.color,
-          isSelected: c.id === selectedCorridorId,
-          inTrip: tripSet.has(c.id),
-          isFiltered: filteredSet.has(c.id),
-          dim: dimCorridors ? 1 : 0,
-        },
-        geometry: { type: 'LineString' as const, coordinates: c.geometry.coordinates },
-      })),
-    };
-
-    const src = map.getSource('corridors') as mapboxgl.GeoJSONSource | undefined;
-    if (src) {
-      src.setData(geojson);
-    } else {
-      map.addSource('corridors', { type: 'geojson', data: geojson });
+    try {
+      const emptyGeo: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: [] };
+      map.addSource('corridors', { type: 'geojson', data: emptyGeo });
 
       map.addLayer({
-        id: 'corridor-lines-casing',
-        type: 'line',
-        source: 'corridors',
+        id: 'corridor-lines-casing', type: 'line', source: 'corridors',
         paint: {
           'line-color': '#fff',
           'line-width': ['case', ['get', 'isSelected'], 8, ['==', ['get', 'dim'], 1], 0, ['get', 'inTrip'], 7, 0],
@@ -184,19 +177,15 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       });
 
       map.addLayer({
-        id: 'corridor-lines',
-        type: 'line',
-        source: 'corridors',
+        id: 'corridor-lines', type: 'line', source: 'corridors',
         paint: {
           'line-color': ['get', 'color'],
           'line-width': ['case', ['get', 'isSelected'], 5, ['get', 'inTrip'], 4, 2.5],
           'line-opacity': [
-            'case',
-            ['get', 'isSelected'], 1,
+            'case', ['get', 'isSelected'], 1,
             ['==', ['get', 'dim'], 1], 0.14,
             ['get', 'inTrip'], 0.9,
-            ['get', 'isFiltered'], 0.6,
-            0.15,
+            ['get', 'isFiltered'], 0.6, 0.15,
           ],
         },
         layout: { 'line-cap': 'round', 'line-join': 'round' },
@@ -205,18 +194,76 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       map.on('click', 'corridor-lines', (e) => {
         if (e.features && e.features.length > 0) {
           const id = e.features[0].properties?.id;
-          if (id) onCorridorClick(id);
+          if (id) onCorridorClickRef.current(id);
         }
       });
       map.on('mouseenter', 'corridor-lines', () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', 'corridor-lines', () => { map.getCanvas().style.cursor = ''; });
-    }
-  }, [corridors, selectedCorridorId, tripCorridorIds, filteredCorridorIds, dimCorridors, mapReady, onCorridorClick]);
 
-  // History trail lines
+      corridorLayersAdded.current = true;
+    } catch (err) {
+      console.error('Corridor layer setup error:', err);
+    }
+  }, [mapReady]);
+
+  // Corridor GeoJSON data updates only
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!map || !mapReady || !corridorLayersAdded.current) return;
+
+    const filteredSet = new Set(filteredCorridorIds);
+    const tripSet = new Set(tripCorridorIds);
+
+    const geojson: GeoJSON.FeatureCollection = {
+      type: 'FeatureCollection',
+      features: corridors.map((c) => ({
+        type: 'Feature' as const,
+        properties: {
+          id: c.id, color: c.color,
+          isSelected: c.id === selectedCorridorId,
+          inTrip: tripSet.has(c.id),
+          isFiltered: filteredSet.has(c.id),
+          dim: dimCorridors ? 1 : 0,
+        },
+        geometry: { type: 'LineString' as const, coordinates: c.geometry.coordinates },
+      })),
+    };
+
+    try {
+      const src = map.getSource('corridors') as mapboxgl.GeoJSONSource | undefined;
+      if (src) src.setData(geojson);
+    } catch { /* map may be destroyed */ }
+  }, [corridors, selectedCorridorId, tripCorridorIds, filteredCorridorIds, dimCorridors, mapReady]);
+
+  // One-time history trail layer setup
+  const trailLayersAdded = useRef(false);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || trailLayersAdded.current) return;
+
+    try {
+      const emptyGeo: GeoJSON.FeatureCollection = { type: 'FeatureCollection', features: [] };
+      map.addSource('history-trail-line', { type: 'geojson', data: emptyGeo });
+      map.addLayer({
+        id: 'history-trail-line-casing', type: 'line', source: 'history-trail-line',
+        paint: { 'line-color': '#fff', 'line-width': HISTORY_TRAIL_LINE_WIDTH + 5, 'line-opacity': 0.45 },
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+      });
+      map.addLayer({
+        id: 'history-trail-line-layer', type: 'line', source: 'history-trail-line',
+        paint: { 'line-color': HISTORY_TRAIL_LINE_COLOR, 'line-width': HISTORY_TRAIL_LINE_WIDTH, 'line-opacity': 0.95 },
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+      });
+      trailLayersAdded.current = true;
+    } catch (err) {
+      console.error('Trail layer setup error:', err);
+    }
+  }, [mapReady]);
+
+  // History trail data updates
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || !trailLayersAdded.current) return;
 
     const geojson: GeoJSON.FeatureCollection = {
       type: 'FeatureCollection',
@@ -229,34 +276,18 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         : [],
     };
 
-    const src = map.getSource('history-trail-line') as mapboxgl.GeoJSONSource | undefined;
-    if (src) {
-      src.setData(geojson);
-    } else {
-      map.addSource('history-trail-line', { type: 'geojson', data: geojson });
-      map.addLayer({
-        id: 'history-trail-line-casing',
-        type: 'line',
-        source: 'history-trail-line',
-        paint: { 'line-color': '#fff', 'line-width': HISTORY_TRAIL_LINE_WIDTH + 5, 'line-opacity': 0.45 },
-        layout: { 'line-cap': 'round', 'line-join': 'round' },
-      });
-      map.addLayer({
-        id: 'history-trail-line-layer',
-        type: 'line',
-        source: 'history-trail-line',
-        paint: { 'line-color': HISTORY_TRAIL_LINE_COLOR, 'line-width': HISTORY_TRAIL_LINE_WIDTH, 'line-opacity': 0.95 },
-        layout: { 'line-cap': 'round', 'line-join': 'round' },
-      });
-    }
+    try {
+      const src = map.getSource('history-trail-line') as mapboxgl.GeoJSONSource | undefined;
+      if (src) src.setData(geojson);
+    } catch { /* map may be destroyed */ }
   }, [activeHistoryTrail, mapReady]);
 
   // History trail stop markers
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
-    trailStopMarkersRef.current.forEach((m) => m.remove());
+    trailStopMarkersRef.current.forEach((m) => { try { m.remove(); } catch { /* already removed */ } });
     trailStopMarkersRef.current = [];
 
     if (!activeHistoryTrail) return;
@@ -271,19 +302,21 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         fontSize: '0.65rem', fontWeight: '800', color: '#1a1e2e',
       });
       el.textContent = `${idx + 1}`;
-      el.addEventListener('click', (e) => { e.stopPropagation(); onHistoricMarkerClick(stop); });
+      el.addEventListener('click', (e) => { e.stopPropagation(); onHistoricMarkerClickRef.current(stop); });
 
-      const marker = new mapboxgl.Marker({ element: el }).setLngLat([stop.lng, stop.lat]).addTo(map);
-      trailStopMarkersRef.current.push(marker);
+      try {
+        const marker = new mapboxgl.Marker({ element: el }).setLngLat([stop.lng, stop.lat]).addTo(map);
+        trailStopMarkersRef.current.push(marker);
+      } catch { /* map may be destroyed */ }
     });
-  }, [activeHistoryTrail, mapReady, onHistoricMarkerClick]);
+  }, [activeHistoryTrail, mapReady]);
 
   // Corridor start/end markers
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
-    corridorStartEndRef.current.forEach((m) => m.remove());
+    corridorStartEndRef.current.forEach((m) => { try { m.remove(); } catch { /* noop */ } });
     corridorStartEndRef.current = [];
 
     const corridor = corridors.find((c) => c.id === selectedCorridorId);
@@ -302,17 +335,19 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       return el;
     };
 
-    const start = new mapboxgl.Marker({ element: makeEl('S') }).setLngLat(coords[0] as [number, number]).addTo(map);
-    const end = new mapboxgl.Marker({ element: makeEl('E') }).setLngLat(coords[coords.length - 1] as [number, number]).addTo(map);
-    corridorStartEndRef.current = [start, end];
+    try {
+      const start = new mapboxgl.Marker({ element: makeEl('S') }).setLngLat(coords[0] as [number, number]).addTo(map);
+      const end = new mapboxgl.Marker({ element: makeEl('E') }).setLngLat(coords[coords.length - 1] as [number, number]).addTo(map);
+      corridorStartEndRef.current = [start, end];
+    } catch { /* map may be destroyed */ }
   }, [selectedCorridorId, corridors, mapReady]);
 
   // Corridor POI markers
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
-    poiMarkersRef.current.forEach((m) => m.remove());
+    poiMarkersRef.current.forEach((m) => { try { m.remove(); } catch { /* noop */ } });
     poiMarkersRef.current = [];
 
     filteredPois.slice(0, 60).forEach((p) => {
@@ -323,19 +358,21 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
         cursor: 'pointer',
       });
-      el.addEventListener('click', (e) => { e.stopPropagation(); onPoiClick(p); });
+      el.addEventListener('click', (e) => { e.stopPropagation(); onPoiClickRef.current(p); });
 
-      const marker = new mapboxgl.Marker({ element: el }).setLngLat([p.lng, p.lat]).addTo(map);
-      poiMarkersRef.current.push(marker);
+      try {
+        const marker = new mapboxgl.Marker({ element: el }).setLngLat([p.lng, p.lat]).addTo(map);
+        poiMarkersRef.current.push(marker);
+      } catch { /* map may be destroyed */ }
     });
-  }, [filteredPois, mapReady, onPoiClick]);
+  }, [filteredPois, mapReady]);
 
   // Historic markers
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
-    historicMarkersRef.current.forEach((m) => m.remove());
+    historicMarkersRef.current.forEach((m) => { try { m.remove(); } catch { /* noop */ } });
     historicMarkersRef.current = [];
 
     if (!showHistoricMarkers) return;
@@ -347,20 +384,22 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
         cursor: 'pointer', transform: 'rotate(45deg)',
       });
-      el.addEventListener('click', (e) => { e.stopPropagation(); onHistoricMarkerClick(m); });
+      el.addEventListener('click', (e) => { e.stopPropagation(); onHistoricMarkerClickRef.current(m); });
 
-      const marker = new mapboxgl.Marker({ element: el }).setLngLat([m.lng, m.lat]).addTo(map);
-      historicMarkersRef.current.push(marker);
+      try {
+        const marker = new mapboxgl.Marker({ element: el }).setLngLat([m.lng, m.lat]).addTo(map);
+        historicMarkersRef.current.push(marker);
+      } catch { /* map may be destroyed */ }
     });
-  }, [showHistoricMarkers, historicMarkers, mapReady, onHistoricMarkerClick]);
+  }, [showHistoricMarkers, historicMarkers, mapReady]);
 
-  // Historic marker popup
+  // Historic marker / POI popup
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
     if (popupRef.current) {
-      popupRef.current.remove();
+      try { popupRef.current.remove(); } catch { /* noop */ }
       popupRef.current = null;
     }
 
@@ -378,13 +417,14 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
           </div>
         </div>`;
 
-      const popup = new mapboxgl.Popup({ maxWidth: '460px', closeButton: true, closeOnClick: false, anchor: 'top', offset: 10 })
-        .setLngLat([m.lng, m.lat])
-        .setHTML(html)
-        .addTo(map);
-
-      popup.on('close', onCloseHistoricMarkerPopup);
-      popupRef.current = popup;
+      try {
+        const popup = new mapboxgl.Popup({ maxWidth: '460px', closeButton: true, closeOnClick: false, anchor: 'top', offset: 10 })
+          .setLngLat([m.lng, m.lat])
+          .setHTML(html)
+          .addTo(map);
+        popup.on('close', () => onCloseHistoricMarkerPopupRef.current());
+        popupRef.current = popup;
+      } catch { /* map may be destroyed */ }
     } else if (hoveredPoi) {
       const p = hoveredPoi;
       const html = `
@@ -396,22 +436,23 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
           <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem;color:#3b6978;font-weight:600;text-decoration:none;margin-top:4px;display:inline-block;">Directions &rarr;</a>
         </div>`;
 
-      const popup = new mapboxgl.Popup({ maxWidth: '220px', closeButton: true, closeOnClick: false, anchor: 'bottom', offset: 10 })
-        .setLngLat([p.lng, p.lat])
-        .setHTML(html)
-        .addTo(map);
-
-      popup.on('close', onClosePoiPopup);
-      popupRef.current = popup;
+      try {
+        const popup = new mapboxgl.Popup({ maxWidth: '220px', closeButton: true, closeOnClick: false, anchor: 'bottom', offset: 10 })
+          .setLngLat([p.lng, p.lat])
+          .setHTML(html)
+          .addTo(map);
+        popup.on('close', () => onClosePoiPopupRef.current());
+        popupRef.current = popup;
+      } catch { /* map may be destroyed */ }
     }
-  }, [selectedHistoricMarker, hoveredPoi, mapReady, onCloseHistoricMarkerPopup, onClosePoiPopup]);
+  }, [selectedHistoricMarker, hoveredPoi, mapReady]);
 
   // Itinerary stop markers
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady) return;
+    if (!isMapAlive(map) || !mapReady) return;
 
-    itineraryMarkersRef.current.forEach((m) => m.remove());
+    itineraryMarkersRef.current.forEach((m) => { try { m.remove(); } catch { /* noop */ } });
     itineraryMarkersRef.current = [];
 
     if (itinerary.length === 0) return;
@@ -437,11 +478,12 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
           ${poi.rating ? `<p style="font-size:0.75rem;margin:4px 0 0;">&#11088; ${poi.rating}</p>` : ''}
         </div>`;
 
-      const popup = new mapboxgl.Popup({ offset: 20, closeButton: false, maxWidth: '320px' }).setHTML(popupHtml);
-      const marker = new mapboxgl.Marker({ element: el }).setLngLat([poi.lon, poi.lat]).setPopup(popup).addTo(map);
-      el.addEventListener('click', () => marker.togglePopup());
-
-      itineraryMarkersRef.current.push(marker);
+      try {
+        const popup = new mapboxgl.Popup({ offset: 20, closeButton: false, maxWidth: '320px' }).setHTML(popupHtml);
+        const marker = new mapboxgl.Marker({ element: el }).setLngLat([poi.lon, poi.lat]).setPopup(popup).addTo(map);
+        el.addEventListener('click', () => marker.togglePopup());
+        itineraryMarkersRef.current.push(marker);
+      } catch { /* map may be destroyed */ }
     });
   }, [itinerary, mapReady]);
 
@@ -453,14 +495,14 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       routeRef.current.layers.forEach((id) => { if (map.getLayer(id)) map.removeLayer(id); });
       if (routeRef.current.source && map.getSource('route')) map.removeSource('route');
       routeRef.current = { source: false, layers: [] };
-    } catch (err) {
-      console.error('Route cleanup error:', err);
+    } catch {
+      routeRef.current = { source: false, layers: [] };
     }
   }, []);
 
   const drawRoute = useCallback(async () => {
     const map = mapRef.current;
-    if (!map || !mapReady || isDrawingRoute) return;
+    if (!isMapAlive(map) || !mapReady || isDrawingRoute) return;
 
     const enabledPOIs = itinerary.filter(
       (p) => p.enabled !== false && p.lon != null && p.lat != null && !isNaN(p.lon) && !isNaN(p.lat)
@@ -481,6 +523,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       const data = await resp.json();
       if (!data.routes?.length) return;
 
+      if (!isMapAlive(mapRef.current)) return;
       const route = data.routes[0] as RouteData;
 
       map.addSource('route', {
@@ -534,14 +577,16 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   // Fit to itinerary when stops change
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady || itinerary.length === 0) return;
+    if (!isMapAlive(map) || !mapReady || itinerary.length === 0) return;
 
     const enabled = itinerary.filter((p) => p.enabled !== false);
     if (enabled.length === 0) return;
 
-    const bounds = new mapboxgl.LngLatBounds();
-    enabled.forEach((p) => bounds.extend([p.lon, p.lat]));
-    map.fitBounds(bounds, { padding: 150, duration: 1200, maxZoom: 8 });
+    try {
+      const bounds = new mapboxgl.LngLatBounds();
+      enabled.forEach((p) => bounds.extend([p.lon, p.lat]));
+      map.fitBounds(bounds, { padding: 150, duration: 1200, maxZoom: 8 });
+    } catch { /* map may be destroyed */ }
   }, [itinerary.length, mapReady]);
 
   return (
