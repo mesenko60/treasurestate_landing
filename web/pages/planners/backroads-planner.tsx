@@ -666,6 +666,7 @@ export const getStaticProps: GetStaticProps = async () => {
       name: string;
       markerCount: number;
       markerIds: string[];
+      routeGeometry?: [number, number][][];
     }>;
     const allMarkersRaw = JSON.parse(fs.readFileSync(markersPath, 'utf-8')) as Array<{
       id: string;
@@ -700,7 +701,9 @@ export const getStaticProps: GetStaticProps = async () => {
           });
         }
         const stops = orderStopsNearestNeighborFromEast(rawStops);
-        const lineSegments = buildLineSegmentsLngLat(stops, HISTORY_TRAIL_MAX_EDGE_MILES);
+        const lineSegments = t.routeGeometry && t.routeGeometry.length > 0
+          ? t.routeGeometry
+          : buildLineSegmentsLngLat(stops, HISTORY_TRAIL_MAX_EDGE_MILES);
         return { id: t.id, name: t.name, markerCount: t.markerCount, lineSegments, stops };
       })
       .filter(t => t.stops.length > 0)
