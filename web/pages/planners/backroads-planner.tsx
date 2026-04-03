@@ -15,7 +15,7 @@ import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
   City, POI, ItineraryPOI,
 } from '../../components/trip-builder/types';
-import { ACTIVITY_TYPES } from '../../components/trip-builder/types';
+import { ACTIVITY_TYPES, POI_LAYER_CATEGORIES, MONTANA_BOUNDS } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
 import type { MutableRefObject } from 'react';
 
@@ -74,6 +74,9 @@ export default function BackroadsPlanner({
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
   const [selectedActivityTypes, setSelectedActivityTypes] = useState<string[]>([...ACTIVITY_TYPES]);
   const [supabaseReady, setSupabaseReady] = useState(false);
+  const [showSupabasePois, setShowSupabasePois] = useState(false);
+  const [supabasePoiCategories, setSupabasePoiCategories] = useState<string[]>(Object.keys(POI_LAYER_CATEGORIES));
+  const [selectedSupabasePoi, setSelectedSupabasePoi] = useState<POI | null>(null);
 
   // --- Derived state ---
   const historyTrailById = useMemo(() => {
@@ -107,6 +110,37 @@ export default function BackroadsPlanner({
     if (!activeCorridor) return [];
     return activeCorridor.pois.filter((p) => !poiFilter || p.category === poiFilter);
   }, [activeCorridor, poiFilter]);
+
+  // --- Supabase POI layer (deduped + filtered by category) ---
+  const visibleSupabasePois = useMemo(() => {
+    if (!showSupabasePois || allPOIs.length === 0) return [];
+
+    const allowedTypes = new Set<string>();
+    for (const catKey of supabasePoiCategories) {
+      const cat = POI_LAYER_CATEGORIES[catKey];
+      if (cat) cat.types.forEach((t) => allowedTypes.add(t));
+    }
+
+    const typed = allPOIs.filter((p) => p.type && allowedTypes.has(p.type));
+
+    const corridorCoords = corridors.flatMap((c) =>
+      c.pois.map((cp) => ({ lat: cp.lat, lng: cp.lng, name: cp.name.toLowerCase().trim() })),
+    );
+
+    return typed.filter((p) => {
+      const pName = p.name.toLowerCase().trim();
+      for (const cp of corridorCoords) {
+        const dlat = p.lat - cp.lat;
+        const dlng = p.lon - cp.lng;
+        const dist = Math.sqrt(dlat * dlat + dlng * dlng);
+        if (dist < 0.002 && pName === cp.name) return false;
+      }
+      return true;
+    });
+  }, [showSupabasePois, allPOIs, supabasePoiCategories, corridors]);
+
+  const handleSupabasePoiClick = useCallback((p: POI) => setSelectedSupabasePoi(p), []);
+  const closeSupabasePoiPopup = useCallback(() => setSelectedSupabasePoi(null), []);
 
   // --- URL sync ---
   useEffect(() => {
@@ -194,7 +228,11 @@ export default function BackroadsPlanner({
           .select('id, place_id, name, description, latitude, longitude, type, category, rating, reviews, website, thumbnail')
           .not('latitude', 'is', null)
           .not('longitude', 'is', null)
-          .not('name', 'is', null);
+          .not('name', 'is', null)
+          .gte('latitude', MONTANA_BOUNDS.minLat)
+          .lte('latitude', MONTANA_BOUNDS.maxLat)
+          .gte('longitude', MONTANA_BOUNDS.minLng)
+          .lte('longitude', MONTANA_BOUNDS.maxLng);
 
         const pois: POI[] = (poiData || []).map((p) => ({
           id: p.place_id || String(p.id),
@@ -543,6 +581,11 @@ export default function BackroadsPlanner({
           supabaseReady={supabaseReady}
           sidebarOpen={sidebarOpen}
           onToggleSidebar={toggleSidebar}
+          showSupabasePois={showSupabasePois}
+          onSetShowSupabasePois={setShowSupabasePois}
+          supabasePoiCategories={supabasePoiCategories}
+          onSetSupabasePoiCategories={setSupabasePoiCategories}
+          supabasePoiCount={visibleSupabasePois.length}
         />
 
         <div style={{ flex: 1, position: 'relative' }}>
@@ -565,6 +608,10 @@ export default function BackroadsPlanner({
             onPoiClick={handlePoiClick}
             onCloseHistoricMarkerPopup={closeHistoricMarkerPopup}
             onClosePoiPopup={closePoiPopup}
+            supabasePois={visibleSupabasePois}
+            selectedSupabasePoi={selectedSupabasePoi}
+            onSupabasePoiClick={handleSupabasePoiClick}
+            onCloseSupabasePoiPopup={closeSupabasePoiPopup}
           />
 
           <button

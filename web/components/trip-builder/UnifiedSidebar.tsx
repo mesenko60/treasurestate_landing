@@ -5,7 +5,7 @@ import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
   City, ItineraryPOI, POI,
 } from './types';
-import { ACTIVITY_TYPES } from './types';
+import { ACTIVITY_TYPES, POI_LAYER_CATEGORIES } from './types';
 import { formatDriveTime, formatDistance } from './utils';
 import { HISTORY_TRAIL_MAX_EDGE_MILES } from '../../lib/historyTrailMapOrder';
 
@@ -67,6 +67,12 @@ interface UnifiedSidebarProps {
 
   sidebarOpen: boolean;
   onToggleSidebar: () => void;
+
+  showSupabasePois: boolean;
+  onSetShowSupabasePois: (val: boolean) => void;
+  supabasePoiCategories: string[];
+  onSetSupabasePoiCategories: React.Dispatch<React.SetStateAction<string[]>>;
+  supabasePoiCount: number;
 }
 
 export default function UnifiedSidebar(props: UnifiedSidebarProps) {
@@ -82,6 +88,8 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
     itinerary, setItinerary, allPOIs,
     selectedActivityTypes, setSelectedActivityTypes,
     supabaseReady, sidebarOpen, onToggleSidebar,
+    showSupabasePois, onSetShowSupabasePois,
+    supabasePoiCategories, onSetSupabasePoiCategories, supabasePoiCount,
   } = props;
 
   const [tab, setTab] = useState<SidebarTab>('explore');
@@ -268,6 +276,38 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
               />
               Historic Markers ({historicMarkers.length})
             </label>
+          </div>
+
+          {/* Supabase POI layer toggle + category chips */}
+          <div style={{ padding: '6px 18px 8px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer', marginBottom: showSupabasePois ? '6px' : 0 }}>
+              <input
+                type="checkbox"
+                checked={showSupabasePois}
+                onChange={(e) => onSetShowSupabasePois(e.target.checked)}
+                style={{ accentColor: '#3498db' }}
+              />
+              Points of Interest{showSupabasePois ? ` (${supabasePoiCount})` : ''}
+            </label>
+            {showSupabasePois && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                {Object.entries(POI_LAYER_CATEGORIES).map(([key, cat]) => {
+                  const active = supabasePoiCategories.includes(key);
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => onSetSupabasePoiCategories((prev) =>
+                        active ? prev.filter((k) => k !== key) : [...prev, key]
+                      )}
+                      className={`filter-chip ${active ? 'active' : ''}`}
+                      style={active ? { borderColor: cat.color, color: cat.color } : {}}
+                    >
+                      {cat.icon} {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {activeHistoryTrail && (

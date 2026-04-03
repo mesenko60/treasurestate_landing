@@ -58,6 +58,40 @@ export const ACTIVITY_TYPES = [
   'Boat ramp',
 ] as const;
 
+export const POI_LAYER_CATEGORIES: Record<string, { label: string; icon: string; color: string; types: string[] }> = {
+  outdoors: {
+    label: 'Outdoors',
+    icon: '🏕️',
+    color: '#27ae60',
+    types: ['Campground', 'Hiking area', 'Park', 'State park', 'RV park', 'Boat ramp', 'Fishing area', 'Fishing camp', 'Fishing', 'Fishing pier', 'Fishing charter', 'Picnic ground', 'Wildlife refuge', 'Wildlife park', 'Natural feature', 'River', 'Spring'],
+  },
+  attractions: {
+    label: 'Attractions',
+    icon: '⭐',
+    color: '#e67e22',
+    types: ['Tourist attraction', 'Hot spring', 'Thermal baths', 'Health resort', 'Resort hotel', 'Hotel', 'Motel', 'Capsule hotel', 'Swimming pool', 'Recreation center'],
+  },
+  food: {
+    label: 'Food & Coffee',
+    icon: '☕',
+    color: '#8e44ad',
+    types: ['Coffee shop', 'Coffee stand', 'Coffee roasters', 'Espresso bar', 'Cafe', 'Restaurant', 'American restaurant', 'Fine dining restaurant', 'Bakery', 'Bar', 'Bar & grill', 'Deli', 'Distillery'],
+  },
+  services: {
+    label: 'Services',
+    icon: '⛽',
+    color: '#3498db',
+    types: ['Gas station', 'Grocery store', 'Supermarket', 'Convenience store', 'General store', 'Dollar store', 'Electric vehicle charging station', 'Compressed natural gas station'],
+  },
+};
+
+export const MONTANA_BOUNDS = {
+  minLat: 44.0,
+  maxLat: 49.0,
+  minLng: -116.5,
+  maxLng: -104.0,
+};
+
 export type CorridorPOI = {
   name: string;
   type: string;

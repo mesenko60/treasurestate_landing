@@ -367,7 +367,7 @@ function cleanMarkerInscription(text) {
 
   t = t.replace(/\s*This historical marker is listed in these topic\s*\n*\s*lists?:[\s\S]*$/im, '');
   t = t.replace(/\s*This historical marker is listed in this topic\s*\n*\s*list:[\s\S]*$/im, '');
-  t = t.replace(/\s*Location\.[\s\S]*$/im, '');
+  t = t.replace(/\s*Location\.\s*Marker (is|was) located[\s\S]*$/im, '');
   t = t.replace(/\s*Touch for map\.[\s\S]*$/im, '');
   t = t.replace(/\s*Other nearby markers\.[\s\S]*$/im, '');
   t = t.replace(/\s*More about this marker\.[\s\S]*$/im, '');

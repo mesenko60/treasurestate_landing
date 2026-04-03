@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState, useCallback, useImperativeHandle, forwardRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import type { ItineraryPOI, Corridor, HistoricMarker, HistoryTrailMapData, CorridorPOI, RouteData } from './types';
+import type { ItineraryPOI, Corridor, HistoricMarker, HistoryTrailMapData, CorridorPOI, RouteData, POI } from './types';
+import { POI_LAYER_CATEGORIES } from './types';
 
 const HISTORY_TRAIL_LINE_COLOR = '#c9a227';
 const HISTORY_TRAIL_LINE_WIDTH = 4;
@@ -36,6 +37,10 @@ interface UnifiedMapProps {
   onPoiClick: (poi: CorridorPOI) => void;
   onCloseHistoricMarkerPopup: () => void;
   onClosePoiPopup: () => void;
+  supabasePois: POI[];
+  selectedSupabasePoi: POI | null;
+  onSupabasePoiClick: (poi: POI) => void;
+  onCloseSupabasePoiPopup: () => void;
   /** Bypass for next/dynamic not forwarding refs — pass a MutableRefObject here */
   handleRef?: React.MutableRefObject<UnifiedMapHandle | null>;
 }
@@ -56,7 +61,9 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     dimCorridors, activeHistoryTrail, itinerary, historicMarkers,
     showHistoricMarkers, filteredPois, selectedHistoricMarker, hoveredPoi,
     onCorridorClick, onHistoricMarkerClick, onPoiClick,
-    onCloseHistoricMarkerPopup, onClosePoiPopup, handleRef,
+    onCloseHistoricMarkerPopup, onClosePoiPopup,
+    supabasePois, selectedSupabasePoi, onSupabasePoiClick, onCloseSupabasePoiPopup,
+    handleRef,
   } = props;
 
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -67,6 +74,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   const corridorStartEndRef = useRef<mapboxgl.Marker[]>([]);
   const poiMarkersRef = useRef<mapboxgl.Marker[]>([]);
   const historicMarkersRef = useRef<mapboxgl.Marker[]>([]);
+  const supabasePoiMarkersRef = useRef<mapboxgl.Marker[]>([]);
   const trailStopMarkersRef = useRef<mapboxgl.Marker[]>([]);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
 
@@ -85,6 +93,10 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   onCloseHistoricMarkerPopupRef.current = onCloseHistoricMarkerPopup;
   const onClosePoiPopupRef = useRef(onClosePoiPopup);
   onClosePoiPopupRef.current = onClosePoiPopup;
+  const onSupabasePoiClickRef = useRef(onSupabasePoiClick);
+  onSupabasePoiClickRef.current = onSupabasePoiClick;
+  const onCloseSupabasePoiPopupRef = useRef(onCloseSupabasePoiPopup);
+  onCloseSupabasePoiPopupRef.current = onCloseSupabasePoiPopup;
 
   const handle: UnifiedMapHandle = React.useMemo(() => ({
     flyTo: (opts) => { try { mapRef.current?.flyTo(opts); } catch { /* map destroyed */ } },
@@ -402,6 +414,39 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     });
   }, [showHistoricMarkers, historicMarkers, mapReady]);
 
+  // Supabase POI markers
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!isMapAlive(map) || !mapReady) return;
+
+    supabasePoiMarkersRef.current.forEach((m) => { try { m.remove(); } catch { /* noop */ } });
+    supabasePoiMarkersRef.current = [];
+
+    if (supabasePois.length === 0) return;
+
+    const typeToColor: Record<string, string> = {};
+    for (const cat of Object.values(POI_LAYER_CATEGORIES)) {
+      for (const t of cat.types) typeToColor[t] = cat.color;
+    }
+
+    supabasePois.forEach((p) => {
+      const el = document.createElement('div');
+      const color = (p.type && typeToColor[p.type]) || '#3498db';
+      Object.assign(el.style, {
+        width: '9px', height: '9px', borderRadius: '50%',
+        background: color,
+        border: '1.5px solid rgba(255,255,255,0.85)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
+        cursor: 'pointer',
+      });
+      el.addEventListener('click', (e) => { e.stopPropagation(); onSupabasePoiClickRef.current(p); });
+
+      try {
+        const marker = new mapboxgl.Marker({ element: el }).setLngLat([p.lon, p.lat]).addTo(map);
+        supabasePoiMarkersRef.current.push(marker);
+      } catch { /* map may be destroyed */ }
+    });
+  }, [supabasePois, mapReady]);
+
   // Historic marker / POI popup
   useEffect(() => {
     const map = mapRef.current;
@@ -434,6 +479,29 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         popup.on('close', () => onCloseHistoricMarkerPopupRef.current());
         popupRef.current = popup;
       } catch { /* map may be destroyed */ }
+    } else if (selectedSupabasePoi) {
+      const p = selectedSupabasePoi;
+      const desc = p.description ? `<div style="font-size:0.78rem;color:#9aa0b0;margin:4px 0;line-height:1.45;max-height:120px;overflow-y:auto;">${p.description}</div>` : '';
+      const html = `
+        <div style="padding:0.6rem;max-width:320px;">
+          <strong style="font-size:0.92rem;color:#204051;">${p.name}</strong>
+          ${p.type ? `<div style="font-size:0.72rem;color:#6b7890;margin-top:2px;">${p.type}</div>` : ''}
+          ${desc}
+          ${p.rating != null ? `<div style="font-size:0.75rem;color:#d8973c;margin-top:4px;">&#9733; ${p.rating.toFixed(1)}${p.reviews ? ` (${p.reviews.toLocaleString()})` : ''}</div>` : ''}
+          <div style="margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem;color:#3b6978;font-weight:600;text-decoration:none;">Directions &rarr;</a>
+            ${p.website ? `<a href="${p.website}" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem;color:#3b6978;font-weight:600;text-decoration:none;">Website &rarr;</a>` : ''}
+          </div>
+        </div>`;
+
+      try {
+        const popup = new mapboxgl.Popup({ maxWidth: '340px', closeButton: true, closeOnClick: false, anchor: 'bottom', offset: 10 })
+          .setLngLat([p.lon, p.lat])
+          .setHTML(html)
+          .addTo(map);
+        popup.on('close', () => onCloseSupabasePoiPopupRef.current());
+        popupRef.current = popup;
+      } catch { /* map may be destroyed */ }
     } else if (hoveredPoi) {
       const p = hoveredPoi;
       const html = `
@@ -454,7 +522,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
         popupRef.current = popup;
       } catch { /* map may be destroyed */ }
     }
-  }, [selectedHistoricMarker, hoveredPoi, mapReady]);
+  }, [selectedHistoricMarker, selectedSupabasePoi, hoveredPoi, mapReady]);
 
   // Itinerary stop markers
   useEffect(() => {
