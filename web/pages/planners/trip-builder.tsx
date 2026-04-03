@@ -2,7 +2,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import React, { useState, useEffect, useCallback } from 'react';
 import Header from '../../components/Header';
-import { supabase } from '../../lib/supabaseClient';
+import { getSupabase } from '../../lib/supabaseClient';
 import type { City, POI, ItineraryPOI } from '../../components/trip-builder/types';
 import { ACTIVITY_TYPES } from '../../components/trip-builder/types';
 
@@ -70,6 +70,8 @@ export default function TripBuilderPage() {
       setError(null);
 
       try {
+        const supabase = getSupabase();
+
         const { data: townData, error: townError } = await supabase
           .from('montana_town_coords')
           .select('gnis_id, city, latitude, longitude')
