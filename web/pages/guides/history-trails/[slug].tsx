@@ -11,6 +11,7 @@ import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import MarkerInscription from '../../../components/MarkerInscription';
 import inscriptionStyles from '../../../components/MarkerInscription.module.css';
+import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
 import { renderTextWith1910FireArticleLinks } from '../../../lib/renderMontana1910FireArticleLinks';
 
@@ -231,28 +232,30 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                     anchor="bottom"
                     offset={15}
                   >
-                    <div style={{ maxWidth: 400, padding: '0.5rem' }}>
-                      <h4 style={{ margin: '0 0 0.3rem', fontSize: '0.95rem', color: '#204051' }}>
+                    <div
+                      style={{
+                        maxWidth: 420,
+                        maxHeight: 'min(78vh, 560px)',
+                        padding: '0.5rem',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 0,
+                      }}
+                    >
+                      <h4 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#204051', flexShrink: 0 }}>
                         {selectedMarker.title}
                       </h4>
-                      <p style={{ fontSize: '0.8rem', color: '#888', margin: '0 0 0.5rem' }}>
+                      <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.4rem', flexShrink: 0 }}>
                         {selectedMarker.town || selectedMarker.county}
                       </p>
-                      <div
-                        style={{
-                          maxHeight: '42vh',
-                          overflowY: 'auto',
-                          marginBottom: '0.5rem',
-                          color: '#555',
-                        }}
-                      >
-                        <MarkerInscription text={selectedMarker.inscription} variant="compact" />
+                      <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.45rem' }}>
+                        <MarkerInscription text={selectedMarker.inscription} variant="popup" />
                       </div>
-                      <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', flexShrink: 0 }}>
                         {MARKER_DEEP_READS[selectedMarker.slug] && (
                           <Link
                             href={MARKER_DEEP_READS[selectedMarker.slug].href}
-                            style={{ fontSize: '0.8rem', color: '#925f14', fontWeight: 600 }}
+                            style={{ fontSize: '0.78rem', color: '#925f14', fontWeight: 600 }}
                           >
                             {MARKER_DEEP_READS[selectedMarker.slug].title} →
                           </Link>
@@ -261,7 +264,7 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                           href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ fontSize: '0.8rem', color: '#3b6978' }}
+                          style={{ fontSize: '0.78rem', color: '#3b6978' }}
                         >
                           Directions
                         </a>

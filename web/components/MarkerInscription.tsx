@@ -8,8 +8,8 @@ import styles from './MarkerInscription.module.css';
 
 type Props = {
   text: string;
-  /** Smaller type and spacing for map popups */
-  variant?: 'default' | 'compact';
+  /** compact: list/map cards; popup: Mapbox marker popups (smaller type, tighter leading) */
+  variant?: 'default' | 'compact' | 'popup';
   className?: string;
 };
 
@@ -63,10 +63,12 @@ export default function MarkerInscription({
   className = '',
 }: Props) {
   const blocks = parseMarkerInscription(text);
-  const rootClass =
-    variant === 'compact'
-      ? `${styles.root} ${styles.compact} ${className}`.trim()
-      : `${styles.root} ${className}`.trim();
+  const rootClass = (() => {
+    const base = `${styles.root} ${className}`.trim();
+    if (variant === 'compact') return `${base} ${styles.compact}`.trim();
+    if (variant === 'popup') return `${base} ${styles.popup}`.trim();
+    return base;
+  })();
 
   if (blocks.length === 0) {
     return null;

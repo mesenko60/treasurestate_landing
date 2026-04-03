@@ -8,6 +8,7 @@ import type { LayerProps } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
 import MarkerInscription from '../../components/MarkerInscription';
+import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { trackMapInteraction } from '../../lib/gtag';
 import {
   orderStopsNearestNeighborFromEast,
@@ -1011,37 +1012,46 @@ export default function BackroadsPlanner({
                 closeOnClick={false}
                 maxWidth="500px"
               >
-                <div style={{ padding: '0.75rem', maxWidth: 480, maxHeight: '60vh', overflowY: 'auto' }}>
-                  <strong style={{ fontSize: '1.05rem', color: '#204051', display: 'block', marginBottom: '0.4rem' }}>
+                <div
+                  style={{
+                    padding: '0.75rem',
+                    maxWidth: 480,
+                    maxHeight: 'min(78vh, 560px)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 0,
+                  }}
+                >
+                  <strong style={{ fontSize: '0.98rem', color: '#204051', display: 'block', marginBottom: '0.35rem', flexShrink: 0 }}>
                     {selectedHistoricMarker.title}
                   </strong>
                   {selectedHistoricMarker.town && (
-                    <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.6rem' }}>
+                    <div style={{ fontSize: '0.76rem', color: '#888', marginBottom: '0.45rem', flexShrink: 0 }}>
                       📍 {selectedHistoricMarker.town}
                     </div>
                   )}
-                  <div style={{ color: '#444', marginBottom: '0.75rem' }}>
+                  <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.5rem' }}>
                     <MarkerInscription
                       text={selectedHistoricMarker.inscription}
-                      variant="compact"
+                      variant="popup"
                     />
                   </div>
-                  <div style={{ paddingTop: '0.6rem', borderTop: '1px solid #e8ede8', display: 'flex', gap: '1rem' }}>
+                  <div style={{ paddingTop: '0.55rem', borderTop: '1px solid #e8ede8', display: 'flex', gap: '1rem', flexWrap: 'wrap', flexShrink: 0 }}>
                     {selectedHistoricMarker.isCurated && (
                       <a
                         href={`/historic-markers/${selectedHistoricMarker.slug}/`}
-                        style={{ fontSize: '0.85rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
+                        style={{ fontSize: '0.82rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
                       >
-                        View Full Page →
+                        View full page →
                       </a>
                     )}
                     <a
                       href={`https://www.google.com/maps/dir/?api=1&destination=${selectedHistoricMarker.lat},${selectedHistoricMarker.lng}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontSize: '0.85rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
+                      style={{ fontSize: '0.82rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
                     >
-                      Get Directions
+                      Get directions
                     </a>
                   </div>
                 </div>
@@ -1202,17 +1212,13 @@ export const getStaticProps: GetStaticProps = async () => {
         ? JSON.parse(fs.readFileSync(curatedPath, 'utf-8')).map((m: { slug: string }) => m.slug)
         : []
     );
-    const INSCRIPTION_PREVIEW = 1200;
     historyTrails = [...rawTrails]
       .map((t): HistoryTrailMapData => {
         const rawStops: HistoricMarker[] = [];
         for (const mid of t.markerIds) {
           const raw = idLookup.get(mid);
           if (!raw) continue;
-          let inscription = raw.inscription;
-          if (inscription.length > INSCRIPTION_PREVIEW) {
-            inscription = `${inscription.slice(0, INSCRIPTION_PREVIEW)}…`;
-          }
+          const inscription = raw.inscription;
           rawStops.push({
             id: raw.id,
             slug: raw.slug,

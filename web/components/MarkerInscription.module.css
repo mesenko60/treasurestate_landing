@@ -8,6 +8,41 @@
   font-size: 0.9rem;
 }
 
+/* Map popups: fit more text; keep hierarchy readable at small sizes */
+.popup {
+  line-height: 1.45;
+  font-size: 0.8125rem;
+  color: #3a3a3a;
+}
+
+.popup .sectionTitle {
+  font-size: 0.78rem;
+  margin: 0.75rem 0 0.35rem;
+  padding-bottom: 0.2rem;
+}
+
+.popup > .sectionTitle:first-child {
+  margin-top: 0;
+}
+
+.popup .paragraph {
+  margin-bottom: 0.5rem;
+}
+
+.popup .list {
+  margin-bottom: 0.5rem;
+}
+
+.popup .listItem {
+  margin-bottom: 0.4rem;
+}
+
+.popup .attribution {
+  margin-top: 0.65rem;
+  padding-top: 0.55rem;
+  font-size: 0.78rem;
+}
+
 .sectionTitle {
   font-size: 1rem;
   font-weight: 700;

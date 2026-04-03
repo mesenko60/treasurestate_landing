@@ -11,6 +11,7 @@ import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
 import inscriptionStyles from '../../components/MarkerInscription.module.css';
+import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
 import { renderTextWith1910FireArticleLinks } from '../../lib/renderMontana1910FireArticleLinks';
@@ -254,42 +255,51 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                     offset={[0, -8]}
                     maxWidth="480px"
                   >
-                    <div style={{ maxWidth: 460, maxHeight: '50vh', overflowY: 'auto', padding: '0.75rem' }}>
-                      <h4 style={{ margin: '0 0 0.4rem', fontSize: '1.1rem', color: '#204051' }}>
+                    <div
+                      style={{
+                        maxWidth: 460,
+                        maxHeight: 'min(78vh, 560px)',
+                        padding: '0.75rem',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 0,
+                      }}
+                    >
+                      <h4 style={{ margin: '0 0 0.35rem', fontSize: '0.98rem', color: '#204051', flexShrink: 0 }}>
                         {selectedMarker.title}
                       </h4>
-                      <p style={{ fontSize: '0.85rem', color: '#888', margin: '0 0 0.6rem' }}>
+                      <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.45rem', flexShrink: 0 }}>
                         📍 {selectedMarker.town || selectedMarker.county}
                         {selectedMarker.town && selectedMarker.county && `, ${selectedMarker.county} County`}
                       </p>
                       {selectedMarker.topics.length > 0 && (
-                        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
+                        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.45rem', flexShrink: 0 }}>
                           {selectedMarker.topics.slice(0, 4).map(t => (
-                            <span key={t} style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
+                            <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
                               {MARKER_TOPIC_LABELS[t] || t}
                             </span>
                           ))}
                         </div>
                       )}
-                      <div style={{ margin: '0 0 1rem', color: '#444' }}>
+                      <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.5rem' }}>
                         <MarkerInscription
                           text={selectedMarker.inscription}
-                          variant="compact"
+                          variant="popup"
                         />
                       </div>
-                      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.75rem', borderTop: '1px solid #e8ede8' }}>
+                      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.55rem', borderTop: '1px solid #e8ede8', flexShrink: 0 }}>
                         {curatedSet.has(selectedMarker.slug) && (
                           <Link
                             href={`/historic-markers/${selectedMarker.slug}/`}
-                            style={{ fontSize: '0.9rem', color: '#27ae60', fontWeight: 600 }}
+                            style={{ fontSize: '0.82rem', color: '#27ae60', fontWeight: 600 }}
                           >
-                            View Full Page →
+                            View full page →
                           </Link>
                         )}
                         {popupDeepRead && (
                           <Link
                             href={popupDeepRead.href}
-                            style={{ fontSize: '0.9rem', color: '#925f14', fontWeight: 600 }}
+                            style={{ fontSize: '0.82rem', color: '#925f14', fontWeight: 600 }}
                           >
                             {popupDeepRead.title} →
                           </Link>
@@ -298,9 +308,9 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                           href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ fontSize: '0.9rem', color: '#3b6978' }}
+                          style={{ fontSize: '0.82rem', color: '#3b6978' }}
                         >
-                          Get Directions
+                          Get directions
                         </a>
                       </div>
                     </div>
