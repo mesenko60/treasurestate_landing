@@ -54,6 +54,12 @@ type HistoricMarker = {
   isCurated: boolean;
 };
 
+type HistoryTrailLink = {
+  id: string;
+  name: string;
+  markerCount: number;
+};
+
 const CATEGORY_ICONS: Record<string, string> = {
   hotspring: '♨️',
   campground: '⛺',
@@ -82,10 +88,12 @@ export default function BackroadsPlanner({
   corridors,
   townCoords,
   historicMarkers,
+  historyTrails,
 }: {
   corridors: Corridor[];
   townCoords: TownCoords;
   historicMarkers: HistoricMarker[];
+  historyTrails: HistoryTrailLink[];
 }) {
   const router = useRouter();
   const mapRef = useRef<MapRef>(null);
@@ -306,6 +314,32 @@ export default function BackroadsPlanner({
         .filter-chip:hover { border-color: rgba(255,255,255,0.3); color: #d0d4dc; }
         .filter-chip.active { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); color: #fff; }
         .corridor-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+        .history-trails-details {
+          margin: 4px 12px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12);
+          background: rgba(255,255,255,0.04); flex-shrink: 0;
+        }
+        .history-trails-details summary {
+          list-style: none; cursor: pointer; padding: 12px 14px; display: flex; align-items: center; gap: 10px;
+          font-size: 0.92rem; font-weight: 600; color: #fff; user-select: none;
+        }
+        .history-trails-details summary::-webkit-details-marker { display: none; }
+        .history-trails-chevron { font-size: 0.75rem; color: #8892a4; transition: transform 0.2s ease; margin-left: auto; }
+        .history-trails-details[open] .history-trails-chevron { transform: rotate(90deg); }
+        .history-trails-badge {
+          font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+          background: rgba(59,130,246,0.25); color: #93c5fd;
+        }
+        .history-trails-body { padding: 0 8px 10px 14px; border-top: 1px solid rgba(255,255,255,0.06); }
+        .history-trails-intro { font-size: 0.72rem; color: #8892a4; line-height: 1.45; margin: 10px 0 8px; padding-right: 6px; }
+        .history-trails-link {
+          display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+          padding: 8px 8px 8px 6px; margin: 0 -6px; border-radius: 8px; text-decoration: none; color: #c8d0e0;
+          font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .history-trails-link:last-child { border-bottom: none; }
+        .history-trails-link:hover { background: rgba(255,255,255,0.06); color: #fff; }
+        .history-trails-link-name { flex: 1; min-width: 0; line-height: 1.35; }
+        .history-trails-meta { font-size: 0.68rem; color: #6b7890; white-space: nowrap; flex-shrink: 0; }
         .corridor-list::-webkit-scrollbar { width: 5px; }
         .corridor-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
         .corridor-card {
@@ -445,6 +479,32 @@ export default function BackroadsPlanner({
                 </label>
               </div>
               <div className="corridor-list">
+                {historyTrails.length > 0 && (
+                  <details className="history-trails-details">
+                    <summary>
+                      <span aria-hidden="true">📜</span>
+                      <span>History trails &amp; routes</span>
+                      <span className="history-trails-badge">{historyTrails.length}</span>
+                      <span className="history-trails-chevron" aria-hidden="true">▸</span>
+                    </summary>
+                    <div className="history-trails-body">
+                      <p className="history-trails-intro">
+                        Guides for Montana historic routes — markers, maps, and stories on each trail page.
+                      </p>
+                      {historyTrails.map(t => (
+                        <Link
+                          key={t.id}
+                          href={`/guides/history-trails/${t.id}/`}
+                          className="history-trails-link"
+                          prefetch={false}
+                        >
+                          <span className="history-trails-link-name">{t.name}</span>
+                          <span className="history-trails-meta">{t.markerCount} markers</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </details>
+                )}
                 {filtered.map(c => (
                   <div key={c.id} className={`corridor-card ${selected === c.id ? 'selected' : ''}`} onClick={() => selectCorridor(c.id)}>
                     <div className="corridor-card-name">
@@ -910,5 +970,18 @@ export const getStaticProps: GetStaticProps = async () => {
       }));
   }
 
-  return { props: { corridors, townCoords, historicMarkers } };
+  const trailsPath = path.join(process.cwd(), 'data', 'history-trails.json');
+  let historyTrails: HistoryTrailLink[] = [];
+  if (fs.existsSync(trailsPath)) {
+    const rawTrails = JSON.parse(fs.readFileSync(trailsPath, 'utf-8')) as Array<{
+      id: string;
+      name: string;
+      markerCount: number;
+    }>;
+    historyTrails = [...rawTrails]
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
+      .map(t => ({ id: t.id, name: t.name, markerCount: t.markerCount }));
+  }
+
+  return { props: { corridors, townCoords, historicMarkers, historyTrails } };
 };
