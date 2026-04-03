@@ -3,6 +3,32 @@
  * Content stays as authored (CSV + agent overrides); this only shapes presentation.
  */
 
+/** Kiosk interpretive panels often duplicate a "(sidebar)" column; strip that block for web reading. */
+const SIDEBAR_LABEL = /(?:^|\n)\s*\([^)]*\bsidebar\b[^)]*\)\s*\n/gi;
+
+/**
+ * Removes text from a line like "(sidebar)" or "(sidebar on right:)" through the line
+ * before "Erected by …". If there is no attribution, removes from the sidebar label to EOF.
+ */
+export function stripMarkerSidebarSection(text: string): string {
+  let out = text;
+  for (;;) {
+    SIDEBAR_LABEL.lastIndex = 0;
+    const m = SIDEBAR_LABEL.exec(out);
+    if (!m) break;
+    const start = m.index;
+    const matched = m[0];
+    const tail = out.slice(start + matched.length);
+    const erected = /\nErected by\b/i.exec(tail);
+    if (erected) {
+      out = out.slice(0, start) + tail.slice(erected.index);
+    } else {
+      out = out.slice(0, start);
+    }
+  }
+  return out.replace(/\n{3,}/g, '\n\n').trimEnd();
+}
+
 export type InscriptionBlock =
   | { type: 'heading'; label: string }
   | { type: 'paragraph'; lines: string[] }
@@ -18,9 +44,10 @@ const ERECTED = /^Erected by\b/i;
 const PANEL_LINE = /^\([^)]+\)\s*$/;
 
 export function parseMarkerInscription(text: string): InscriptionBlock[] {
-  if (!text || !text.trim()) return [];
+  const cleaned = stripMarkerSidebarSection(text);
+  if (!cleaned || !cleaned.trim()) return [];
 
-  const lines = text.split('\n');
+  const lines = cleaned.split('\n');
   const blocks: InscriptionBlock[] = [];
   let para: string[] = [];
   let list: string[] | null = null;
