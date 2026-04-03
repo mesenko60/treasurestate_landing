@@ -30,7 +30,6 @@ type MarkerData = {
   county: string;
   inscription: string;
   topics: string[];
-  hmdbLink: string | null;
 };
 
 type Props = {

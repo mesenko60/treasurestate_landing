@@ -2,8 +2,8 @@
 /**
  * Parse Montana Historic Markers CSV and generate JSON data files
  *
- * All display text is normalized via scripts/lib/historic-marker-text.js (HMDB junk,
- * spacing, entities). Site-wide regex belongs there only for unambiguous metadata
+ * All display text is normalized via scripts/lib/historic-marker-text.js (source-metadata
+ * junk, spacing, entities). Site-wide regex belongs there only for unambiguous metadata
  * stripping — not for narrative formatting (orphan line breaks, kiosk typos, etc.).
  * Those are fixed one marker at a time in historic-marker-inscription-overrides.json
  * (agent-reviewed). Use scripts/audit-historic-marker-text.js to find candidates.
@@ -217,7 +217,7 @@ function normalizeTopics(topicsStr) {
 }
 
 // Determine if marker qualifies for individual page (~150-200 target)
-// Tier3 threshold below 2000 because cleaned inscriptions drop HMDB boilerplate length.
+// Tier3 threshold below 2000 because cleaned inscriptions drop boilerplate length.
 function isCuratedMarker(marker) {
   const inscriptionLength = marker.inscription.length;
   const topicCount = marker.topics.length;
@@ -351,7 +351,6 @@ function main() {
         ? cleanMarkerShortField(record['Year Erected']) || null
         : null,
       erectedBy,
-      hmdbLink: record['Link'] || null,
       nearbyMarkers: record['Nearby Markers']
         ? record['Nearby Markers']
             .split('|')

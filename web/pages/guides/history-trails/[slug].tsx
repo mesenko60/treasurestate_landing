@@ -31,7 +31,6 @@ type MarkerData = {
   county: string;
   inscription: string;
   topics: string[];
-  hmdbLink: string | null;
 };
 
 type Trail = {
@@ -266,16 +265,6 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                         >
                           Directions
                         </a>
-                        {selectedMarker.hmdbLink && (
-                          <a
-                            href={selectedMarker.hmdbLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ fontSize: '0.8rem', color: '#3b6978' }}
-                          >
-                            HMDB
-                          </a>
-                        )}
                       </div>
                     </div>
                   </Popup>

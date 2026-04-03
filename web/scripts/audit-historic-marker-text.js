@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * List historic markers whose inscriptions still look like they need agent review
- * (orphan words, HMDB cruft, kiosk heading typos). Output is JSON for triage — do not
+ * (orphan words, leftover metadata cruft, kiosk heading typos). Output is JSON for triage — do not
  * auto-apply fixes. After review, add entries to historic-marker-inscription-overrides.json
  * and re-run parse-historic-markers.js.
  *

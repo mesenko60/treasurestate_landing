@@ -1,11 +1,11 @@
 /**
- * Single source of truth for cleaning Montana historic marker text from HMDB exports.
+ * Single source of truth for cleaning Montana historic marker text from source CSV exports.
  * Used by parse-historic-markers.js so all marker copy is normalized consistently.
  *
  * Does not rewrite historical wording — strips site metadata, fixes spacing, and
- * removes errant HMDB / photo-guide insertions.
+ * removes errant site-metadata / photo-guide insertions.
  *
- * Odd **line breaks** (CSV / HMDB hard wraps, title-plaque stacks, split names) are
+ * Odd **line breaks** (CSV hard wraps, title-plaque stacks, split names) are
  * normalized in `normalizeInscriptionParagraphLineBreaks()` — wording is unchanged,
  * only whitespace between tokens. Truly ambiguous copy errors still belong in
  * `historic-marker-inscription-overrides.json` (agent-reviewed). Run
@@ -42,7 +42,7 @@ function decodeHtmlEntities(text) {
     .replace(/&apos;/g, "'");
 }
 
-/** Strip simple HTML tags (HMDB sometimes wraps titles in <i>). */
+/** Strip simple HTML tags (some source exports wrap titles in <i>). */
 function stripHtmlTags(text) {
   if (!text) return '';
   return text.replace(/<\/?[a-z][a-z0-9]*(?:\s[^>]*)?>\s*/gi, '');
@@ -90,11 +90,11 @@ function polishShortAttribution(t) {
 }
 
 /**
- * Drop HMDB / kiosk lines that are not part of the marker narrative.
+ * Drop kiosk / site-metadata lines that are not part of the marker narrative.
  */
 function filterInscriptionLines(lines) {
   let skippingPictureCaptions = false;
-  /** Skip HMDB [photo captions] blocks until a long quoted journal line or Erected by */
+  /** Skip [photo captions] blocks until a long quoted journal line or Erected by */
   let skippingPhotoCaptionBlock = false;
   const out = [];
 
@@ -352,7 +352,7 @@ function shouldJoinInscriptionLines(prev, next) {
 }
 
 /**
- * Full inscription cleanup: HMDB tails, mid-insertions, then line filter, then spacing.
+ * Full inscription cleanup: metadata tails, mid-insertions, then line filter, then spacing.
  */
 function cleanMarkerInscription(text) {
   if (!text) return '';

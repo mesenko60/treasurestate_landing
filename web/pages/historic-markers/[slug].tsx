@@ -30,7 +30,6 @@ type MarkerData = {
   topics: string[];
   yearErected: string | null;
   erectedBy: string | null;
-  hmdbLink: string | null;
   nearbyMarkers: string[];
 };
 
