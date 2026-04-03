@@ -10,9 +10,9 @@ This project uses **bd** (beads) for all issue tracking and task management. Run
 ```bash
 bd ready              # Find available work
 bd show <id>          # View issue details
-bd update <id> --status in_progress  # Claim work
+bd update <id> --claim --json   # Claim work (prefer --json for agents)
 bd close <id>         # Complete work
-bd sync               # Sync with git
+# Issues live in .beads/ — commit & push with git (see “Syncing beads” below). There is no `bd sync` in this CLI.
 ```
 
 ## AEO / SEO Rules
@@ -36,10 +36,9 @@ bd sync               # Sync with git
 1. **File issues for remaining work** - Create issues using `bd` for anything that needs follow-up
 2. **Run quality gates** (if code changed) - Tests, linters, builds
 3. **Update issue status** - Close finished work (`bd close <id>`), update in-progress items
-4. **PUSH TO REMOTE** - This is MANDATORY:
+4. **PUSH TO REMOTE** - This is MANDATORY (commit all work first, including **`.beads/`** when issue data changed):
    ```bash
    git pull --rebase
-   bd sync
    git push
    git status  # MUST show "up to date with origin"
    ```
@@ -53,6 +52,7 @@ bd sync               # Sync with git
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
 - NEVER include `Co-authored-by: Cursor <cursoragent@cursor.com>` in any commits, code, or pages.
+- **Beads**: There is no `bd sync` in this CLI. When you create/close/update issues, **commit tracked files under `.beads/`** (e.g. `issues.jsonl`) with the rest of your changes before push.
 
 <!-- BEGIN BEADS INTEGRATION -->
 ## Issue Tracking with bd (beads)
@@ -62,7 +62,7 @@ bd sync               # Sync with git
 ### Why bd?
 
 - Dependency-aware: Track blockers and relationships between issues
-- Git-friendly: Dolt-powered version control with native sync
+- Git-friendly: Issue history is tracked in `.beads/issues.jsonl` (and related files) committed with the repo
 - Agent-optimized: JSON output, ready work detection, discovered-from links
 - Prevents duplicate tracking systems and confusion
 
@@ -119,13 +119,11 @@ bd close bd-42 --reason "Completed" --json
    - `bd create "Found bug" --description="Details about what was found" -p 1 --deps discovered-from:<parent-id>`
 5. **Complete**: `bd close <id> --reason "Done"`
 
-### Auto-Sync
+### Syncing beads (Git vs Dolt)
 
-bd automatically syncs via Dolt:
-
-- Each write auto-commits to Dolt history
-- Use `bd dolt push`/`bd dolt pull` for remote sync
-- No manual export/import needed!
+- **Primary team sync**: Tracked files under **`.beads/`** (e.g. `issues.jsonl`, `metadata.json`, `backup/*`) — **stage, commit, and `git push`** with your code. The local **`.beads/dolt/`** directory is gitignored; Dolt is used on-machine by `bd` and is not the shared source of truth in this repo.
+- **Optional Dolt remote**: To use **`bd dolt push`** / **`bd dolt pull`**, configure a remote first, e.g. `bd dolt remote add origin <your-dolt-remote-url>`. Without a remote, `bd dolt push` will fail with “remote not found” — that is expected; rely on **git** for sharing issues.
+- Hooks under **`.beads/hooks/`** may update JSONL when you commit; always **`git status`** and include **`.beads/`** in commits when it shows changes.
 
 ### Important Rules
 
@@ -148,10 +146,9 @@ For more details, see README.md and docs/QUICKSTART.md.
 1. **File issues for remaining work** - Create issues for anything that needs follow-up
 2. **Run quality gates** (if code changed) - Tests, linters, builds
 3. **Update issue status** - Close finished work, update in-progress items
-4. **PUSH TO REMOTE** - This is MANDATORY:
+4. **PUSH TO REMOTE** - This is MANDATORY (commit all work first, including **`.beads/`** when issue data changed):
    ```bash
    git pull --rebase
-   bd sync
    git push
    git status  # MUST show "up to date with origin"
    ```
@@ -164,5 +161,6 @@ For more details, see README.md and docs/QUICKSTART.md.
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
+- Commit **`.beads/`** when issue data changed; there is no `bd sync` command here.
 
 <!-- END BEADS INTEGRATION -->
