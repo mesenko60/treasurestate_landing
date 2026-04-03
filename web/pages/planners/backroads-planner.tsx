@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
-import Map, { Source, Layer, Marker, Popup, NavigationControl, MapRef } from 'react-map-gl/mapbox';
+import MapGL, { Source, Layer, Marker, Popup, NavigationControl, MapRef } from 'react-map-gl/mapbox';
 import type { LayerProps } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
@@ -54,11 +54,18 @@ type HistoricMarker = {
   isCurated: boolean;
 };
 
-type HistoryTrailLink = {
+/** History trail with map geometry built from marker order in history-trails.json */
+type HistoryTrailMapData = {
   id: string;
   name: string;
   markerCount: number;
+  /** [lng, lat] vertices in trail order for LineString */
+  coordinates: [number, number][];
+  stops: HistoricMarker[];
 };
+
+const HISTORY_TRAIL_LINE_COLOR = '#c9a227';
+const HISTORY_TRAIL_LINE_WIDTH = 4;
 
 const CATEGORY_ICONS: Record<string, string> = {
   hotspring: '♨️',
@@ -93,7 +100,7 @@ export default function BackroadsPlanner({
   corridors: Corridor[];
   townCoords: TownCoords;
   historicMarkers: HistoricMarker[];
-  historyTrails: HistoryTrailLink[];
+  historyTrails: HistoryTrailMapData[];
 }) {
   const router = useRouter();
   const mapRef = useRef<MapRef>(null);
@@ -106,31 +113,76 @@ export default function BackroadsPlanner({
   const [mobileTab, setMobileTab] = useState<'corridors' | 'trip'>('corridors');
   const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
   const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
+  const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
 
-  // Restore trip from URL on mount
+  const historyTrailById = useMemo(() => {
+    const m: Record<string, HistoryTrailMapData> = {};
+    historyTrails.forEach(t => { m[t.id] = t; });
+    return m;
+  }, [historyTrails]);
+
+  const activeHistoryTrail = activeHistoryTrailId ? historyTrailById[activeHistoryTrailId] : null;
+
+  // Restore trip + focus + history trail from URL on mount
   useEffect(() => {
     const routes = router.query.routes;
     if (typeof routes === 'string' && routes.length > 0) {
       const ids = routes.split(',').filter(id => corridors.some(c => c.id === id));
       if (ids.length > 0) setTrip(ids);
     }
-    const focus = router.query.focus;
-    if (typeof focus === 'string' && corridors.some(c => c.id === focus)) {
-      setSelected(focus);
+    const trail = router.query.trail;
+    if (typeof trail === 'string' && historyTrails.some(t => t.id === trail)) {
+      setActiveHistoryTrailId(trail);
+    } else {
+      const focus = router.query.focus;
+      if (typeof focus === 'string' && corridors.some(c => c.id === focus)) {
+        setSelected(focus);
+      }
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Sync trip to URL
+  // Sync trip / focus / trail to URL
   useEffect(() => {
     const params = new URLSearchParams();
     if (trip.length > 0) params.set('routes', trip.join(','));
     if (selected) params.set('focus', selected);
+    if (activeHistoryTrailId) params.set('trail', activeHistoryTrailId);
     const qs = params.toString();
     const newUrl = qs ? `${router.pathname}?${qs}` : router.pathname;
     if (newUrl !== router.asPath) {
       router.replace(newUrl, undefined, { shallow: true });
     }
-  }, [trip, selected]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [trip, selected, activeHistoryTrailId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Fit map to active history trail (delayed so Map ref exists after first paint / deep link)
+  useEffect(() => {
+    if (!activeHistoryTrail || activeHistoryTrail.stops.length === 0) return;
+    const pts = activeHistoryTrail.stops;
+    let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
+    pts.forEach(p => {
+      if (p.lng < minLng) minLng = p.lng;
+      if (p.lng > maxLng) maxLng = p.lng;
+      if (p.lat < minLat) minLat = p.lat;
+      if (p.lat > maxLat) maxLat = p.lat;
+    });
+    const padLng = Math.max(0.2, (maxLng - minLng) * 0.12);
+    const padLat = Math.max(0.15, (maxLat - minLat) * 0.12);
+    const bounds: [[number, number], [number, number]] = [
+      [minLng - padLng, minLat - padLat],
+      [maxLng + padLng, maxLat + padLat],
+    ];
+    const padding = { top: 60, bottom: 60, left: sidebarOpen ? 380 : 60, right: 60 };
+    const run = () => {
+      mapRef.current?.fitBounds(bounds, { duration: 1200, padding });
+    };
+    run();
+    const t = window.setTimeout(run, 120);
+    const t2 = window.setTimeout(run, 450);
+    return () => {
+      window.clearTimeout(t);
+      window.clearTimeout(t2);
+    };
+  }, [activeHistoryTrail, sidebarOpen]);
 
   const corridorMap = useMemo(() => {
     const m: Record<string, Corridor> = {};
@@ -157,13 +209,14 @@ export default function BackroadsPlanner({
         isSelected: c.id === selected,
         inTrip: trip.includes(c.id),
         isFiltered: filtered.some(f => f.id === c.id),
+        dim: activeHistoryTrailId ? 1 : 0,
       },
       geometry: {
         type: 'LineString' as const,
         coordinates: c.geometry.coordinates,
       },
     })),
-  }), [corridors, selected, trip, filtered]);
+  }), [corridors, selected, trip, filtered, activeHistoryTrailId]);
 
   const activeCorridor = selected ? corridorMap[selected] : null;
 
@@ -190,10 +243,19 @@ export default function BackroadsPlanner({
 
   const selectCorridor = useCallback((id: string) => {
     trackMapInteraction(`corridor_select:${id}`);
+    setActiveHistoryTrailId(null);
     setSelected(id);
     const c = corridorMap[id];
     if (c) flyToCorridor(c);
   }, [corridorMap, flyToCorridor]);
+
+  const selectHistoryTrail = useCallback((id: string) => {
+    trackMapInteraction(`history_trail_map:${id}`);
+    setSelected(null);
+    setSelectedHistoricMarker(null);
+    setHoveredPoi(null);
+    setActiveHistoryTrailId(id);
+  }, []);
 
   const addToTrip = useCallback((id: string) => {
     setTrip(prev => prev.includes(id) ? prev : [...prev, id]);
@@ -214,7 +276,28 @@ export default function BackroadsPlanner({
   const resetView = useCallback(() => {
     mapRef.current?.flyTo({ center: [-109.5, 46.8], zoom: 5.5, duration: 1000 });
     setSelected(null);
+    setActiveHistoryTrailId(null);
+    setSelectedHistoricMarker(null);
   }, []);
+
+  const historyTrailLineGeo = useMemo(() => {
+    if (!activeHistoryTrail || activeHistoryTrail.coordinates.length < 2) {
+      return { type: 'FeatureCollection' as const, features: [] };
+    }
+    return {
+      type: 'FeatureCollection' as const,
+      features: [
+        {
+          type: 'Feature' as const,
+          properties: { id: activeHistoryTrail.id },
+          geometry: {
+            type: 'LineString' as const,
+            coordinates: activeHistoryTrail.coordinates,
+          },
+        },
+      ],
+    };
+  }, [activeHistoryTrail]);
 
   const lineLayer: LayerProps = {
     id: 'corridor-lines',
@@ -230,6 +313,7 @@ export default function BackroadsPlanner({
       'line-opacity': [
         'case',
         ['get', 'isSelected'], 1,
+        ['==', ['get', 'dim'], 1], 0.14,
         ['get', 'inTrip'], 0.9,
         ['get', 'isFiltered'], 0.6,
         0.15,
@@ -249,15 +333,45 @@ export default function BackroadsPlanner({
       'line-width': [
         'case',
         ['get', 'isSelected'], 8,
+        ['==', ['get', 'dim'], 1], 0,
         ['get', 'inTrip'], 7,
         0,
       ],
       'line-opacity': [
         'case',
         ['get', 'isSelected'], 0.8,
+        ['==', ['get', 'dim'], 1], 0,
         ['get', 'inTrip'], 0.5,
         0,
       ],
+    },
+    layout: {
+      'line-cap': 'round',
+      'line-join': 'round',
+    },
+  };
+
+  const historyTrailLineCasing: LayerProps = {
+    id: 'history-trail-line-casing',
+    type: 'line',
+    paint: {
+      'line-color': '#fff',
+      'line-width': HISTORY_TRAIL_LINE_WIDTH + 5,
+      'line-opacity': 0.45,
+    },
+    layout: {
+      'line-cap': 'round',
+      'line-join': 'round',
+    },
+  };
+
+  const historyTrailLineLayer: LayerProps = {
+    id: 'history-trail-line',
+    type: 'line',
+    paint: {
+      'line-color': HISTORY_TRAIL_LINE_COLOR,
+      'line-width': HISTORY_TRAIL_LINE_WIDTH,
+      'line-opacity': 0.95,
     },
     layout: {
       'line-cap': 'round',
@@ -331,13 +445,36 @@ export default function BackroadsPlanner({
         }
         .history-trails-body { padding: 0 8px 10px 14px; border-top: 1px solid rgba(255,255,255,0.06); }
         .history-trails-intro { font-size: 0.72rem; color: #8892a4; line-height: 1.45; margin: 10px 0 8px; padding-right: 6px; }
-        .history-trails-link {
-          display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
-          padding: 8px 8px 8px 6px; margin: 0 -6px; border-radius: 8px; text-decoration: none; color: #c8d0e0;
-          font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+        .history-trail-active-bar {
+          margin: 0 18px 10px; padding: 10px 12px; border-radius: 8px;
+          background: rgba(201, 162, 39, 0.12); border: 1px solid rgba(201, 162, 39, 0.35);
+          font-size: 0.78rem; color: #e8d9b0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
         }
-        .history-trails-link:last-child { border-bottom: none; }
-        .history-trails-link:hover { background: rgba(255,255,255,0.06); color: #fff; }
+        .history-trail-active-bar strong { color: #fff; font-weight: 600; }
+        .history-trail-active-bar a { color: #93c5fd; text-decoration: none; font-weight: 600; font-size: 0.72rem; }
+        .history-trail-active-bar a:hover { text-decoration: underline; }
+        .history-trail-active-bar .trail-clear-btn {
+          margin-left: auto; font-size: 0.72rem; padding: 4px 10px; border-radius: 6px;
+          border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.06); color: #c0c8d8; cursor: pointer;
+        }
+        .history-trail-active-bar .trail-clear-btn:hover { background: rgba(255,255,255,0.1); }
+        .history-trails-row {
+          display: flex; align-items: stretch; margin: 0 0 4px; border-radius: 8px;
+          border: 1px solid transparent; overflow: hidden;
+        }
+        .history-trails-row.active { border-color: rgba(201, 162, 39, 0.45); background: rgba(201, 162, 39, 0.08); }
+        .history-trails-map-btn {
+          flex: 1; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+          padding: 8px 8px 8px 6px; margin: 0; border: none; border-radius: 8px 0 0 8px; cursor: pointer;
+          background: transparent; text-align: left; color: #c8d0e0; font-size: 0.8rem; font-family: inherit;
+        }
+        .history-trails-map-btn:hover { background: rgba(255,255,255,0.06); color: #fff; }
+        .history-trails-guide {
+          display: flex; align-items: center; padding: 0 10px; font-size: 0.68rem; font-weight: 600; color: #6b9fff;
+          text-decoration: none; white-space: nowrap; border-left: 1px solid rgba(255,255,255,0.08);
+          background: rgba(255,255,255,0.02);
+        }
+        .history-trails-guide:hover { color: #93c5fd; text-decoration: underline; }
         .history-trails-link-name { flex: 1; min-width: 0; line-height: 1.35; }
         .history-trails-meta { font-size: 0.68rem; color: #6b7890; white-space: nowrap; flex-shrink: 0; }
         .corridor-list::-webkit-scrollbar { width: 5px; }
@@ -478,6 +615,23 @@ export default function BackroadsPlanner({
                   📜 Historic Markers ({historicMarkers.length})
                 </label>
               </div>
+              {activeHistoryTrail && (
+                <div className="history-trail-active-bar">
+                  <strong>{activeHistoryTrail.name}</strong>
+                  <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops on map</span>
+                  <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
+                  <button
+                    type="button"
+                    className="trail-clear-btn"
+                    onClick={() => {
+                      setActiveHistoryTrailId(null);
+                      setSelectedHistoricMarker(null);
+                    }}
+                  >
+                    Clear trail
+                  </button>
+                </div>
+              )}
               <div className="corridor-list">
                 {historyTrails.length > 0 && (
                   <details className="history-trails-details">
@@ -489,18 +643,30 @@ export default function BackroadsPlanner({
                     </summary>
                     <div className="history-trails-body">
                       <p className="history-trails-intro">
-                        Guides for Montana historic routes — markers, maps, and stories on each trail page.
+                        Click a trail to show its markers and route on the map. Use Guide for the full trail page.
                       </p>
                       {historyTrails.map(t => (
-                        <Link
+                        <div
                           key={t.id}
-                          href={`/guides/history-trails/${t.id}/`}
-                          className="history-trails-link"
-                          prefetch={false}
+                          className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}
                         >
-                          <span className="history-trails-link-name">{t.name}</span>
-                          <span className="history-trails-meta">{t.markerCount} markers</span>
-                        </Link>
+                          <button
+                            type="button"
+                            className="history-trails-map-btn"
+                            onClick={() => selectHistoryTrail(t.id)}
+                          >
+                            <span className="history-trails-link-name">{t.name}</span>
+                            <span className="history-trails-meta">{t.stops.length} stops</span>
+                          </button>
+                          <Link
+                            href={`/guides/history-trails/${t.id}/`}
+                            className="history-trails-guide"
+                            prefetch={false}
+                            onClick={e => e.stopPropagation()}
+                          >
+                            Guide
+                          </Link>
+                        </div>
                       ))}
                     </div>
                   </details>
@@ -704,7 +870,7 @@ export default function BackroadsPlanner({
 
         {/* Map */}
         <div style={{ flex: 1, position: 'relative' }}>
-          <Map
+          <MapGL
             ref={mapRef}
             initialViewState={{ longitude: -109.5, latitude: 46.8, zoom: 5.5 }}
             style={{ width: '100%', height: '100%' }}
@@ -728,6 +894,13 @@ export default function BackroadsPlanner({
               <Layer {...lineLayerCasing} />
               <Layer {...lineLayer} />
             </Source>
+
+            {historyTrailLineGeo.features.length > 0 && (
+              <Source id="history-trail-line" type="geojson" data={historyTrailLineGeo}>
+                <Layer {...historyTrailLineCasing} />
+                <Layer {...historyTrailLineLayer} />
+              </Source>
+            )}
 
             {/* Start/end markers for selected corridor */}
             {activeCorridor && (() => {
@@ -771,6 +944,37 @@ export default function BackroadsPlanner({
                   border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
                   cursor: 'pointer',
                 }} />
+              </Marker>
+            ))}
+
+            {/* History trail numbered stops */}
+            {activeHistoryTrail && activeHistoryTrail.stops.map((m, idx) => (
+              <Marker
+                key={`htrail-${m.id}`}
+                longitude={m.lng}
+                latitude={m.lat}
+                anchor="center"
+                onClick={(e) => { e.originalEvent.stopPropagation(); setSelectedHistoricMarker(m); }}
+              >
+                <div style={{
+                  minWidth: 22,
+                  height: 22,
+                  padding: '0 5px',
+                  borderRadius: '50%',
+                  background: HISTORY_TRAIL_LINE_COLOR,
+                  border: '2px solid rgba(255,255,255,0.95)',
+                  boxShadow: '0 2px 5px rgba(0,0,0,0.35)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.65rem',
+                  fontWeight: 800,
+                  color: '#1a1e2e',
+                }}
+                >
+                  {idx + 1}
+                </div>
               </Marker>
             ))}
 
@@ -875,7 +1079,7 @@ export default function BackroadsPlanner({
                 </div>
               </Popup>
             )}
-          </Map>
+          </MapGL>
 
           {/* Map overlay: reset button */}
           <button
@@ -971,16 +1175,62 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 
   const trailsPath = path.join(process.cwd(), 'data', 'history-trails.json');
-  let historyTrails: HistoryTrailLink[] = [];
-  if (fs.existsSync(trailsPath)) {
+  let historyTrails: HistoryTrailMapData[] = [];
+  if (fs.existsSync(trailsPath) && fs.existsSync(markersPath)) {
     const rawTrails = JSON.parse(fs.readFileSync(trailsPath, 'utf-8')) as Array<{
       id: string;
       name: string;
       markerCount: number;
+      markerIds: string[];
     }>;
+    const allMarkersRaw = JSON.parse(fs.readFileSync(markersPath, 'utf-8')) as Array<{
+      id: string;
+      slug: string;
+      title: string;
+      lat: number;
+      lng: number;
+      town: string | null;
+      inscription: string;
+    }>;
+    const idLookup = new Map(allMarkersRaw.map(m => [m.id, m]));
+    const curatedSlugsForTrail = new Set(
+      fs.existsSync(curatedPath)
+        ? JSON.parse(fs.readFileSync(curatedPath, 'utf-8')).map((m: { slug: string }) => m.slug)
+        : []
+    );
+    const INSCRIPTION_PREVIEW = 1200;
     historyTrails = [...rawTrails]
-      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
-      .map(t => ({ id: t.id, name: t.name, markerCount: t.markerCount }));
+      .map((t): HistoryTrailMapData => {
+        const stops: HistoricMarker[] = [];
+        for (const mid of t.markerIds) {
+          const raw = idLookup.get(mid);
+          if (!raw) continue;
+          let inscription = raw.inscription;
+          if (inscription.length > INSCRIPTION_PREVIEW) {
+            inscription = `${inscription.slice(0, INSCRIPTION_PREVIEW)}…`;
+          }
+          stops.push({
+            id: raw.id,
+            slug: raw.slug,
+            title: raw.title,
+            lat: round(raw.lat, 4),
+            lng: round(raw.lng, 4),
+            town: raw.town,
+            inscription,
+            isCurated: curatedSlugsForTrail.has(raw.slug),
+          });
+        }
+        const coordinates = stops.map(s => [s.lng, s.lat] as [number, number]);
+        return {
+          id: t.id,
+          name: t.name,
+          markerCount: t.markerCount,
+          coordinates,
+          stops,
+        };
+      })
+      .filter(t => t.stops.length > 0)
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   }
 
   return { props: { corridors, townCoords, historicMarkers, historyTrails } };
