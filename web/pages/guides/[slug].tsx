@@ -566,15 +566,18 @@ function movingGuide(t: TownBundle): GuideData {
     });
   }
 
-  // Visitor Lodging (where to stay while scouting)
+  // Visitor Lodging (where to stay while scouting) — only if lodging page exists
   const lodgingSlug = t.slug === 'anaconda' ? 'anaconda-montana' : t.slug;
-  sections.push({
-    id: 'visitor-lodging',
-    heading: `Where to Stay While You Scout ${t.name}`,
-    html: `
-      <p>If you're visiting to scout the area before moving, see our <a href="/lodging/${lodgingSlug}/">Where to Stay in ${t.name} guide</a> for hotels, B&Bs, cabins, and vacation rentals with price ranges and direct links to Expedia and VRBO.</p>
-    `,
-  });
+  const lodgingPath = path.resolve(process.cwd(), '..', 'lodging_pages', `${lodgingSlug}.md`);
+  if (fs.existsSync(lodgingPath)) {
+    sections.push({
+      id: 'visitor-lodging',
+      heading: `Where to Stay While You Scout ${t.name}`,
+      html: `
+        <p>If you're visiting to scout the area before moving, see our <a href="/lodging/${lodgingSlug}/">Where to Stay in ${t.name} guide</a> for hotels, B&Bs, cabins, and vacation rentals with price ranges and direct links to Expedia and VRBO.</p>
+      `,
+    });
+  }
 
   // Pros and Cons
   const pros = [
