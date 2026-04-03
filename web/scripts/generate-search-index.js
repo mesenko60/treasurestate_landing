@@ -130,8 +130,7 @@ function walkMarkdownFilesSorted(absDir) {
   // ═══ 4. PLANNERS & TRAVEL GUIDES ═══
   const planners = [
     { title: 'Montana Travel Planners', desc: 'Plan your perfect Montana adventure', url: '/planners/' },
-    { title: 'Trip Builder', desc: 'Build your Montana road trip with interactive routing, real-time distances, and activities along the way', url: '/planners/trip-builder/', kw: 'trip builder planner road trip itinerary route directions driving distance activities camping hiking hot springs' },
-    { title: 'Backroads Travel Planner', desc: 'Interactive map with 13 scenic corridors and 850+ points of interest', url: '/planners/backroads-planner/' },
+    { title: 'Backroads & Trip Planner', desc: 'Interactive map with 13 scenic corridors, 850+ points of interest, and city-to-city road trip routing with 3D terrain', url: '/planners/backroads-planner/', kw: 'trip builder planner road trip itinerary route directions driving distance activities camping hiking hot springs backroads scenic corridors' },
     { title: "Montana's Backroads Guide", desc: 'Hidden gems, scenic byways, and off-the-beaten-path adventures', url: '/guides/montana-backroads/' },
     { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/guides/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
     { title: 'Fly Fishing Rivers Deep Dive', desc: 'Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, Missouri', url: '/guides/fly-fishing-rivers/', kw: 'rivers deep dive Madison Bitterroot Big Hole Gallatin Yellowstone Flathead Missouri alpine lakes westslope cutthroat Skwala hatch' },

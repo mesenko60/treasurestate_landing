@@ -1,102 +1,45 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
+import dynamic from 'next/dynamic';
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
-import MapGL, { Source, Layer, Marker, Popup, NavigationControl, MapRef } from 'react-map-gl/mapbox';
-import type { LayerProps } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
-import MarkerInscription from '../../components/MarkerInscription';
-import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { trackMapInteraction } from '../../lib/gtag';
 import {
   orderStopsNearestNeighborFromEast,
   buildLineSegmentsLngLat,
   HISTORY_TRAIL_MAX_EDGE_MILES,
 } from '../../lib/historyTrailMapOrder';
+import type {
+  Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
+  City, POI, ItineraryPOI,
+} from '../../components/trip-builder/types';
+import { ACTIVITY_TYPES } from '../../components/trip-builder/types';
+import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
 
-const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
+const UnifiedMap = dynamic(() => import('../../components/trip-builder/UnifiedMap'), {
+  ssr: false,
+  loading: () => (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', background: '#111827' }}>
+      <span style={{ color: '#6b7890' }}>Loading map...</span>
+    </div>
+  ),
+});
 
-type POI = {
-  name: string;
-  type: string;
-  category: string;
-  lat: number;
-  lng: number;
-  distFromRoute: number;
-  rating?: number | null;
-  reviews?: number | null;
-};
-
-type Corridor = {
-  id: string;
-  name: string;
-  description: string;
-  highways: string[];
-  distanceMiles: number;
-  elevationRange: [number, number];
-  season: string;
-  difficulty: string;
-  color: string;
-  startTown: string;
-  endTown: string;
-  throughTowns: string[];
-  connections: string[];
-  geometry: { type: string; coordinates: number[][] };
-  pois: POI[];
-};
+const UnifiedSidebar = dynamic(() => import('../../components/trip-builder/UnifiedSidebar'), {
+  ssr: false,
+});
 
 type TownCoords = Record<string, { name: string; lat: number; lng: number }>;
 
-type HistoricMarker = {
-  id: string;
-  slug: string;
-  title: string;
-  lat: number;
-  lng: number;
-  town: string | null;
-  inscription: string;
-  isCurated: boolean;
-};
-
-/** History trail with map geometry built from marker order in history-trails.json */
-type HistoryTrailMapData = {
-  id: string;
-  name: string;
-  markerCount: number;
-  /** One or more [lng,lat] paths; long jumps omitted between segments */
-  lineSegments: [number, number][][];
-  /** Stops in map visualization order (nearest-neighbor from east), not markerIds file order */
-  stops: HistoricMarker[];
-};
-
-const HISTORY_TRAIL_LINE_COLOR = '#c9a227';
-const HISTORY_TRAIL_LINE_WIDTH = 4;
-
-const CATEGORY_ICONS: Record<string, string> = {
-  hotspring: '♨️',
-  campground: '⛺',
-  hiking: '🥾',
-  recreation: '🏔️',
-};
-
-const CATEGORY_LABELS: Record<string, string> = {
-  hotspring: 'Hot Springs',
-  campground: 'Campgrounds',
-  hiking: 'Hiking',
-  recreation: 'Recreation',
-};
-
-const DIFFICULTY_COLORS: Record<string, string> = {
-  easy: '#27ae60',
-  moderate: '#f39c12',
-  challenging: '#c0392b',
-};
-
-function slugToName(slug: string) {
-  return slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-}
+const MAJOR_CITIES = [
+  'Billings', 'Missoula', 'Great Falls', 'Bozeman', 'Butte', 'Helena',
+  'Kalispell', 'Havre', 'Anaconda', 'Miles City', 'Livingston', 'Whitefish',
+  'Lewistown', 'Sidney', 'Glendive', 'Dillon', 'Hamilton', 'Cut Bank',
+  'Shelby', 'Glasgow', 'Wolf Point', 'Polson', 'Libby', 'Red Lodge',
+  'Big Timber', 'Deer Lodge', 'Hardin', 'Roundup', 'Conrad', 'Chinook',
+];
 
 export default function BackroadsPlanner({
   corridors,
@@ -110,48 +53,81 @@ export default function BackroadsPlanner({
   historyTrails: HistoryTrailMapData[];
 }) {
   const router = useRouter();
-  const mapRef = useRef<MapRef>(null);
+  const mapRef = useRef<UnifiedMapHandle>(null);
+
+  // --- Corridor / explore state ---
   const [selected, setSelected] = useState<string | null>(null);
-  const [trip, setTrip] = useState<string[]>([]);
+  const [tripCorridorIds, setTripCorridorIds] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [difficultyFilter, setDifficultyFilter] = useState<string | null>(null);
   const [poiFilter, setPoiFilter] = useState<string | null>(null);
-  const [hoveredPoi, setHoveredPoi] = useState<POI | null>(null);
-  const [mobileTab, setMobileTab] = useState<'corridors' | 'trip'>('corridors');
+  const [hoveredPoi, setHoveredPoi] = useState<CorridorPOI | null>(null);
   const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
   const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
   const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
 
+  // --- Trip builder state ---
+  const [cities, setCities] = useState<City[]>([]);
+  const [allPOIs, setAllPOIs] = useState<POI[]>([]);
+  const [itinerary, setItinerary] = useState<ItineraryPOI[]>([]);
+  const [selectedCities, setSelectedCities] = useState<string[]>([]);
+  const [selectedActivityTypes, setSelectedActivityTypes] = useState<string[]>([...ACTIVITY_TYPES]);
+  const [supabaseReady, setSupabaseReady] = useState(false);
+
+  // --- Derived state ---
   const historyTrailById = useMemo(() => {
     const m: Record<string, HistoryTrailMapData> = {};
-    historyTrails.forEach(t => { m[t.id] = t; });
+    historyTrails.forEach((t) => { m[t.id] = t; });
     return m;
   }, [historyTrails]);
 
   const activeHistoryTrail = activeHistoryTrailId ? historyTrailById[activeHistoryTrailId] : null;
 
-  // Restore trip + focus + history trail from URL on mount
+  const corridorMap = useMemo(() => {
+    const m: Record<string, Corridor> = {};
+    corridors.forEach((c) => { m[c.id] = c; });
+    return m;
+  }, [corridors]);
+
+  const filteredCorridors = useMemo(
+    () => corridors.filter((c) => {
+      if (difficultyFilter && c.difficulty !== difficultyFilter) return false;
+      if (poiFilter && !c.pois.some((p) => p.category === poiFilter)) return false;
+      return true;
+    }),
+    [corridors, difficultyFilter, poiFilter],
+  );
+
+  const filteredCorridorIds = useMemo(() => filteredCorridors.map((c) => c.id), [filteredCorridors]);
+
+  const activeCorridor = selected ? corridorMap[selected] : null;
+
+  const filteredPois = useMemo(() => {
+    if (!activeCorridor) return [];
+    return activeCorridor.pois.filter((p) => !poiFilter || p.category === poiFilter);
+  }, [activeCorridor, poiFilter]);
+
+  // --- URL sync ---
   useEffect(() => {
     const routes = router.query.routes;
     if (typeof routes === 'string' && routes.length > 0) {
-      const ids = routes.split(',').filter(id => corridors.some(c => c.id === id));
-      if (ids.length > 0) setTrip(ids);
+      const ids = routes.split(',').filter((id) => corridors.some((c) => c.id === id));
+      if (ids.length > 0) setTripCorridorIds(ids);
     }
     const trail = router.query.trail;
-    if (typeof trail === 'string' && historyTrails.some(t => t.id === trail)) {
+    if (typeof trail === 'string' && historyTrails.some((t) => t.id === trail)) {
       setActiveHistoryTrailId(trail);
     } else {
       const focus = router.query.focus;
-      if (typeof focus === 'string' && corridors.some(c => c.id === focus)) {
+      if (typeof focus === 'string' && corridors.some((c) => c.id === focus)) {
         setSelected(focus);
       }
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Sync trip / focus / trail to URL
   useEffect(() => {
     const params = new URLSearchParams();
-    if (trip.length > 0) params.set('routes', trip.join(','));
+    if (tripCorridorIds.length > 0) params.set('routes', tripCorridorIds.join(','));
     if (selected) params.set('focus', selected);
     if (activeHistoryTrailId) params.set('trail', activeHistoryTrailId);
     const qs = params.toString();
@@ -159,14 +135,14 @@ export default function BackroadsPlanner({
     if (newUrl !== router.asPath) {
       router.replace(newUrl, undefined, { shallow: true });
     }
-  }, [trip, selected, activeHistoryTrailId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [tripCorridorIds, selected, activeHistoryTrailId]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Fit map to active history trail (delayed so Map ref exists after first paint / deep link)
+  // --- Fit map to history trail ---
   useEffect(() => {
     if (!activeHistoryTrail || activeHistoryTrail.stops.length === 0) return;
     const pts = activeHistoryTrail.stops;
     let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
-    pts.forEach(p => {
+    pts.forEach((p) => {
       if (p.lng < minLng) minLng = p.lng;
       if (p.lng > maxLng) maxLng = p.lng;
       if (p.lat < minLat) minLat = p.lat;
@@ -179,61 +155,120 @@ export default function BackroadsPlanner({
       [maxLng + padLng, maxLat + padLat],
     ];
     const padding = { top: 60, bottom: 60, left: sidebarOpen ? 380 : 60, right: 60 };
-    const run = () => {
-      mapRef.current?.fitBounds(bounds, { duration: 1200, padding });
-    };
+    const run = () => mapRef.current?.fitBounds(bounds, { duration: 1200, padding });
     run();
-    const t = window.setTimeout(run, 120);
-    const t2 = window.setTimeout(run, 450);
-    return () => {
-      window.clearTimeout(t);
-      window.clearTimeout(t2);
-    };
+    const t = setTimeout(run, 120);
+    const t2 = setTimeout(run, 450);
+    return () => { clearTimeout(t); clearTimeout(t2); };
   }, [activeHistoryTrail, sidebarOpen]);
 
-  const corridorMap = useMemo(() => {
-    const m: Record<string, Corridor> = {};
-    corridors.forEach(c => { m[c.id] = c; });
-    return m;
-  }, [corridors]);
+  // --- Supabase data loading ---
+  useEffect(() => {
+    async function loadSupabase() {
+      try {
+        const { getSupabase } = await import('../../lib/supabaseClient');
+        const supabase = getSupabase();
 
-  const filtered = useMemo(() => {
-    return corridors.filter(c => {
-      if (difficultyFilter && c.difficulty !== difficultyFilter) return false;
-      if (poiFilter && !c.pois.some(p => p.category === poiFilter)) return false;
-      return true;
-    });
-  }, [corridors, difficultyFilter, poiFilter]);
+        const { data: townData } = await supabase
+          .from('montana_town_coords')
+          .select('gnis_id, city, latitude, longitude')
+          .not('city', 'is', null)
+          .not('latitude', 'is', null)
+          .not('longitude', 'is', null);
 
-  const geojsonLines = useMemo(() => ({
-    type: 'FeatureCollection' as const,
-    features: corridors.map(c => ({
-      type: 'Feature' as const,
-      properties: {
-        id: c.id,
-        name: c.name,
-        color: c.color,
-        isSelected: c.id === selected,
-        inTrip: trip.includes(c.id),
-        isFiltered: filtered.some(f => f.id === c.id),
-        dim: activeHistoryTrailId ? 1 : 0,
-      },
-      geometry: {
-        type: 'LineString' as const,
-        coordinates: c.geometry.coordinates,
-      },
-    })),
-  }), [corridors, selected, trip, filtered, activeHistoryTrailId]);
+        const majorSet = new Set(MAJOR_CITIES.map((c) => c.toLowerCase()));
+        const filteredCities: City[] = (townData || [])
+          .filter((t) => t.city && majorSet.has(t.city.toLowerCase()))
+          .map((t) => ({
+            id: String(t.gnis_id || `${t.latitude}_${t.longitude}`),
+            name: t.city!,
+            lat: t.latitude!,
+            lon: t.longitude!,
+          }))
+          .sort((a, b) => a.name.localeCompare(b.name));
+        setCities(filteredCities);
 
-  const activeCorridor = selected ? corridorMap[selected] : null;
+        const { data: poiData } = await supabase
+          .from('places')
+          .select('id, place_id, name, description, latitude, longitude, type, category, rating, reviews, website, thumbnail')
+          .not('latitude', 'is', null)
+          .not('longitude', 'is', null)
+          .not('name', 'is', null);
 
-  const filteredPois = useMemo(() => {
-    if (!activeCorridor) return [];
-    return activeCorridor.pois.filter(p => !poiFilter || p.category === poiFilter);
-  }, [activeCorridor, poiFilter]);
+        const pois: POI[] = (poiData || []).map((p) => ({
+          id: p.place_id || String(p.id),
+          name: p.name!,
+          description: p.description || undefined,
+          lat: p.latitude!,
+          lon: p.longitude!,
+          type: p.type || undefined,
+          category: p.category || undefined,
+          rating: p.rating ? Number(p.rating) : undefined,
+          reviews: p.reviews ? Number(p.reviews) : undefined,
+          website: p.website || undefined,
+          thumbnail: p.thumbnail || undefined,
+        }));
+        setAllPOIs(pois);
+        setSupabaseReady(true);
+      } catch {
+        setSupabaseReady(false);
+      }
+    }
+    loadSupabase();
+  }, []);
 
+  // --- Build itinerary from selected cities ---
+  const buildItinerary = useCallback(() => {
+    if (!selectedCities.length || cities.length === 0) {
+      setItinerary([]);
+      return;
+    }
+    const result: ItineraryPOI[] = [];
+    for (let i = 0; i < selectedCities.length; i++) {
+      const city = cities.find((c) => c.id === selectedCities[i]);
+      if (!city) continue;
+      result.push({ id: city.id, name: city.name, lat: city.lat, lon: city.lon, itemType: 'city', enabled: true });
+
+      if (i < selectedCities.length - 1) {
+        const next = cities.find((c) => c.id === selectedCities[i + 1]);
+        if (!next) continue;
+        const pad = 0.5;
+        const minLat = Math.min(city.lat, next.lat) - pad;
+        const maxLat = Math.max(city.lat, next.lat) + pad;
+        const minLon = Math.min(city.lon, next.lon) - pad;
+        const maxLon = Math.max(city.lon, next.lon) + pad;
+
+        const dx = next.lon - city.lon;
+        const dy = next.lat - city.lat;
+        const len2 = dx * dx + dy * dy;
+
+        const near = allPOIs
+          .filter((p) => {
+            const inBox = p.lat >= minLat && p.lat <= maxLat && p.lon >= minLon && p.lon <= maxLon;
+            const matchType = selectedActivityTypes.length === 0 || (p.type && selectedActivityTypes.includes(p.type));
+            return inBox && matchType;
+          })
+          .map((p) => {
+            const t = len2 > 0 ? ((p.lon - city.lon) * dx + (p.lat - city.lat) * dy) / len2 : 0;
+            const cross = Math.abs((p.lat - city.lat) * dx - (p.lon - city.lon) * dy);
+            const dist = len2 > 0 ? cross / Math.sqrt(len2) : 0;
+            return { poi: p, t, near: dist <= 0.3 && t >= -0.1 && t <= 1.1 };
+          })
+          .filter((x) => x.near)
+          .sort((a, b) => a.t - b.t)
+          .slice(0, 5)
+          .map(({ poi }) => ({ ...poi, itemType: 'activity' as const, enabled: true }));
+
+        result.push(...near);
+      }
+    }
+    setItinerary(result);
+  }, [selectedCities, cities, allPOIs, selectedActivityTypes]);
+
+  useEffect(() => { buildItinerary(); }, [buildItinerary]);
+
+  // --- Corridor actions ---
   const flyToCorridor = useCallback((c: Corridor) => {
-    if (!mapRef.current) return;
     const coords = c.geometry.coordinates;
     let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
     coords.forEach(([lng, lat]) => {
@@ -242,9 +277,9 @@ export default function BackroadsPlanner({
       if (lat < minLat) minLat = lat;
       if (lat > maxLat) maxLat = lat;
     });
-    mapRef.current.fitBounds(
+    mapRef.current?.fitBounds(
       [[minLng - 0.15, minLat - 0.1], [maxLng + 0.15, maxLat + 0.1]],
-      { duration: 1200, padding: { top: 60, bottom: 60, left: sidebarOpen ? 380 : 60, right: 60 } }
+      { duration: 1200, padding: { top: 60, bottom: 60, left: sidebarOpen ? 380 : 60, right: 60 } },
     );
   }, [sidebarOpen]);
 
@@ -265,20 +300,13 @@ export default function BackroadsPlanner({
   }, []);
 
   const addToTrip = useCallback((id: string) => {
-    setTrip(prev => prev.includes(id) ? prev : [...prev, id]);
+    setTripCorridorIds((prev) => prev.includes(id) ? prev : [...prev, id]);
     trackMapInteraction(`trip_add:${id}`);
   }, []);
 
   const removeFromTrip = useCallback((id: string) => {
-    setTrip(prev => prev.filter(t => t !== id));
+    setTripCorridorIds((prev) => prev.filter((t) => t !== id));
   }, []);
-
-  const tripStats = useMemo(() => {
-    const routes = trip.map(id => corridorMap[id]).filter(Boolean);
-    const totalMiles = routes.reduce((s, r) => s + r.distanceMiles, 0);
-    const totalPois = routes.reduce((s, r) => s + r.pois.length, 0);
-    return { totalMiles, totalPois, routes };
-  }, [trip, corridorMap]);
 
   const resetView = useCallback(() => {
     mapRef.current?.flyTo({ center: [-109.5, 46.8], zoom: 5.5, duration: 1000 });
@@ -287,118 +315,26 @@ export default function BackroadsPlanner({
     setSelectedHistoricMarker(null);
   }, []);
 
-  const historyTrailLineGeo = useMemo(() => {
-    if (!activeHistoryTrail || activeHistoryTrail.lineSegments.length === 0) {
-      return { type: 'FeatureCollection' as const, features: [] };
-    }
-    return {
-      type: 'FeatureCollection' as const,
-      features: activeHistoryTrail.lineSegments.map((coords, i) => ({
-        type: 'Feature' as const,
-        properties: { id: activeHistoryTrail!.id, seg: i },
-        geometry: {
-          type: 'LineString' as const,
-          coordinates: coords,
-        },
-      })),
-    };
-  }, [activeHistoryTrail]);
-
-  const lineLayer: LayerProps = {
-    id: 'corridor-lines',
-    type: 'line',
-    paint: {
-      'line-color': ['get', 'color'],
-      'line-width': [
-        'case',
-        ['get', 'isSelected'], 5,
-        ['get', 'inTrip'], 4,
-        2.5,
-      ],
-      'line-opacity': [
-        'case',
-        ['get', 'isSelected'], 1,
-        ['==', ['get', 'dim'], 1], 0.14,
-        ['get', 'inTrip'], 0.9,
-        ['get', 'isFiltered'], 0.6,
-        0.15,
-      ],
-    },
-    layout: {
-      'line-cap': 'round',
-      'line-join': 'round',
-    },
-  };
-
-  const lineLayerCasing: LayerProps = {
-    id: 'corridor-lines-casing',
-    type: 'line',
-    paint: {
-      'line-color': '#fff',
-      'line-width': [
-        'case',
-        ['get', 'isSelected'], 8,
-        ['==', ['get', 'dim'], 1], 0,
-        ['get', 'inTrip'], 7,
-        0,
-      ],
-      'line-opacity': [
-        'case',
-        ['get', 'isSelected'], 0.8,
-        ['==', ['get', 'dim'], 1], 0,
-        ['get', 'inTrip'], 0.5,
-        0,
-      ],
-    },
-    layout: {
-      'line-cap': 'round',
-      'line-join': 'round',
-    },
-  };
-
-  const historyTrailLineCasing: LayerProps = {
-    id: 'history-trail-line-casing',
-    type: 'line',
-    paint: {
-      'line-color': '#fff',
-      'line-width': HISTORY_TRAIL_LINE_WIDTH + 5,
-      'line-opacity': 0.45,
-    },
-    layout: {
-      'line-cap': 'round',
-      'line-join': 'round',
-    },
-  };
-
-  const historyTrailLineLayer: LayerProps = {
-    id: 'history-trail-line',
-    type: 'line',
-    paint: {
-      'line-color': HISTORY_TRAIL_LINE_COLOR,
-      'line-width': HISTORY_TRAIL_LINE_WIDTH,
-      'line-opacity': 0.95,
-    },
-    layout: {
-      'line-cap': 'round',
-      'line-join': 'round',
-    },
-  };
+  const handlePoiFlyTo = useCallback((poi: CorridorPOI) => {
+    mapRef.current?.flyTo({ center: [poi.lng, poi.lat], zoom: 12, duration: 800 });
+    setHoveredPoi(poi);
+  }, []);
 
   return (
     <>
       <Head>
         <link rel="canonical" href="https://treasurestate.com/planners/backroads-planner/" />
-        <title>Montana Backroads Travel Planner — Interactive Scenic Route Map</title>
-        <meta name="description" content="Plan your Montana backroads adventure with our interactive map. Explore 13 scenic corridors, discover hot springs, campgrounds, hiking trails, and chain routes for the ultimate road trip." />
-        <meta property="og:title" content="Montana Backroads Travel Planner — Interactive Scenic Route Map" />
+        <title>Montana Backroads &amp; Trip Planner — Interactive Scenic Route Map</title>
+        <meta name="description" content="Plan your Montana adventure with our unified trip planner. Explore 13 scenic corridors, build city-to-city road trips, discover hot springs, campgrounds, hiking trails, and get real driving routes with 3D terrain." />
+        <meta property="og:title" content="Montana Backroads & Trip Planner — Interactive Scenic Route Map" />
         <meta property="og:image" content="https://treasurestate.com/images/hero-image.jpg" />
         <meta property="og:url" content="https://treasurestate.com/planners/backroads-planner/" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'TravelAction',
-          name: 'Montana Backroads Travel Planner',
-          description: 'Interactive scenic route planner for Montana backroads, covering 13 scenic corridors with 850+ points of interest.',
+          name: 'Montana Backroads & Trip Planner',
+          description: 'Interactive scenic route planner and trip builder for Montana, covering 13 scenic corridors with 850+ points of interest and city-to-city road trip routing.',
           target: {
             '@type': 'EntryPoint',
             urlTemplate: 'https://treasurestate.com/planners/backroads-planner/',
@@ -502,7 +438,6 @@ export default function BackroadsPlanner({
         .action-btn.secondary { background: rgba(255,255,255,0.08); color: #c0c8d8; }
         .action-btn.secondary:hover { background: rgba(255,255,255,0.14); }
         .action-btn.danger { background: rgba(239,68,68,0.15); color: #f87171; }
-
         .detail-panel { flex: 1; overflow-y: auto; padding: 0; }
         .detail-header { padding: 16px 18px; border-bottom: 1px solid rgba(255,255,255,0.06); }
         .detail-back { font-size: 0.78rem; color: #6b7890; cursor: pointer; border: none; background: none; padding: 0; margin-bottom: 8px; }
@@ -527,39 +462,21 @@ export default function BackroadsPlanner({
           border-radius: 6px; background: rgba(255,255,255,0.06); color: #a0a8b8; cursor: pointer;
         }
         .connection-chip:hover { background: rgba(255,255,255,0.12); color: #fff; }
-
-        .trip-panel { padding: 16px 18px; }
-        .trip-panel h2 { font-size: 0.92rem; color: #fff; margin: 0 0 10px; }
-        .trip-empty { font-size: 0.8rem; color: #6b7890; text-align: center; padding: 24px 0; }
         .trip-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
         .trip-num { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: #fff; }
         .trip-item-name { font-size: 0.82rem; color: #e0e4ec; flex: 1; }
         .trip-item-miles { font-size: 0.72rem; color: #6b7890; }
         .trip-remove { background: none; border: none; color: #6b7890; cursor: pointer; font-size: 0.9rem; padding: 2px 6px; }
         .trip-remove:hover { color: #f87171; }
-        .trip-total { padding: 12px 0 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 8px; display: flex; justify-content: space-between; align-items: center; }
-        .trip-total-miles { font-size: 1rem; font-weight: 700; color: #fff; }
-        .trip-total-label { font-size: 0.78rem; color: #6b7890; }
-
-        .mobile-tabs { display: none; }
-
+        .mobile-handle {
+          width: 36px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px;
+          margin: 8px auto 4px; cursor: pointer; display: none;
+        }
         @media (max-width: 768px) {
           .planner-sidebar { width: 100%; position: absolute; bottom: 0; left: 0; right: 0; top: auto; height: 55vh; border-radius: 16px 16px 0 0; margin-left: 0 !important; }
           .planner-sidebar.collapsed { transform: translateY(calc(100% - 48px)); }
           .sidebar-toggle { display: none; }
-          .mobile-tabs {
-            display: flex; gap: 0; border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0;
-          }
-          .mobile-tab {
-            flex: 1; text-align: center; padding: 10px; font-size: 0.8rem; font-weight: 600;
-            color: #6b7890; background: none; border: none; cursor: pointer;
-            border-bottom: 2px solid transparent;
-          }
-          .mobile-tab.active { color: #fff; border-bottom-color: #3b82f6; }
-          .mobile-handle {
-            width: 36px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px;
-            margin: 8px auto 4px; cursor: pointer;
-          }
+          .mobile-handle { display: block; }
         }
       `}} />
 
@@ -574,552 +491,93 @@ export default function BackroadsPlanner({
           {sidebarOpen ? '◀' : '▶'}
         </button>
 
-        <aside className={`planner-sidebar ${sidebarOpen ? '' : 'collapsed'}`}>
-          <div className="mobile-handle" onClick={() => setSidebarOpen(!sidebarOpen)} />
-          <div className="mobile-tabs">
-            <button className={`mobile-tab ${mobileTab === 'corridors' ? 'active' : ''}`} onClick={() => setMobileTab('corridors')}>
-              Routes
-            </button>
-            <button className={`mobile-tab ${mobileTab === 'trip' ? 'active' : ''}`} onClick={() => setMobileTab('trip')}>
-              My Trip {trip.length > 0 && `(${trip.length})`}
-            </button>
-          </div>
+        <UnifiedSidebar
+          corridors={corridors}
+          corridorMap={corridorMap}
+          historyTrails={historyTrails}
+          historicMarkers={historicMarkers}
+          selectedCorridorId={selected}
+          activeHistoryTrailId={activeHistoryTrailId}
+          activeHistoryTrail={activeHistoryTrail}
+          tripCorridorIds={tripCorridorIds}
+          difficultyFilter={difficultyFilter}
+          poiFilter={poiFilter}
+          showHistoricMarkers={showHistoricMarkers}
+          filteredCorridors={filteredCorridors}
+          activeCorridor={activeCorridor}
+          filteredPois={filteredPois}
+          onSelectCorridor={selectCorridor}
+          onDeselectCorridor={useCallback(() => setSelected(null), [])}
+          onSelectHistoryTrail={selectHistoryTrail}
+          onClearHistoryTrail={useCallback(() => { setActiveHistoryTrailId(null); setSelectedHistoricMarker(null); }, [])}
+          onAddToTrip={addToTrip}
+          onRemoveFromTrip={removeFromTrip}
+          onSetDifficultyFilter={setDifficultyFilter}
+          onSetPoiFilter={setPoiFilter}
+          onSetShowHistoricMarkers={setShowHistoricMarkers}
+          onPoiHover={setHoveredPoi}
+          onPoiFlyTo={handlePoiFlyTo}
+          onResetView={resetView}
+          cities={cities}
+          selectedCities={selectedCities}
+          setSelectedCities={setSelectedCities}
+          itinerary={itinerary}
+          setItinerary={setItinerary}
+          allPOIs={allPOIs}
+          selectedActivityTypes={selectedActivityTypes}
+          setSelectedActivityTypes={setSelectedActivityTypes}
+          supabaseReady={supabaseReady}
+          sidebarOpen={sidebarOpen}
+          onToggleSidebar={useCallback(() => setSidebarOpen((o) => !o), [])}
+        />
 
-          {(mobileTab === 'corridors' || typeof window === 'undefined' || window.innerWidth > 768) && !selected && (
-            <>
-              <div className="sidebar-header">
-                <h1>Montana Backroads</h1>
-                <p>{corridors.length} scenic corridors · 850+ points of interest</p>
-                <Link href="/guides" style={{ display: 'inline-block', marginTop: '8px', fontSize: '0.72rem', color: '#6b9fff', textDecoration: 'none' }}>
-                  Looking for travel guides? &rarr;
-                </Link>
-              </div>
-              <div className="filter-bar">
-                {['easy', 'moderate', 'challenging'].map(d => (
-                  <button key={d} className={`filter-chip ${difficultyFilter === d ? 'active' : ''}`}
-                    onClick={() => setDifficultyFilter(difficultyFilter === d ? null : d)}
-                  >
-                    {d.charAt(0).toUpperCase() + d.slice(1)}
-                  </button>
-                ))}
-                <span style={{ width: '100%', height: 0 }} />
-                {Object.entries(CATEGORY_LABELS).map(([k, v]) => (
-                  <button key={k} className={`filter-chip ${poiFilter === k ? 'active' : ''}`}
-                    onClick={() => setPoiFilter(poiFilter === k ? null : k)}
-                  >
-                    {CATEGORY_ICONS[k]} {v}
-                  </button>
-                ))}
-                <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer', marginLeft: 'auto' }}>
-                  <input
-                    type="checkbox"
-                    checked={showHistoricMarkers}
-                    onChange={e => setShowHistoricMarkers(e.target.checked)}
-                    style={{ accentColor: '#c0392b' }}
-                  />
-                  📜 Historic Markers ({historicMarkers.length})
-                </label>
-              </div>
-              {activeHistoryTrail && (
-                <div className="history-trail-active-bar">
-                  <strong>{activeHistoryTrail.name}</strong>
-                  <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops · lines skip jumps over ~{HISTORY_TRAIL_MAX_EDGE_MILES} mi</span>
-                  <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
-                  <button
-                    type="button"
-                    className="trail-clear-btn"
-                    onClick={() => {
-                      setActiveHistoryTrailId(null);
-                      setSelectedHistoricMarker(null);
-                    }}
-                  >
-                    Clear trail
-                  </button>
-                </div>
-              )}
-              <div className="corridor-list">
-                {historyTrails.length > 0 && (
-                  <details className="history-trails-details">
-                    <summary>
-                      <span aria-hidden="true">📜</span>
-                      <span>History trails &amp; routes</span>
-                      <span className="history-trails-badge">{historyTrails.length}</span>
-                      <span className="history-trails-chevron" aria-hidden="true">▸</span>
-                    </summary>
-                    <div className="history-trails-body">
-                      <p className="history-trails-intro">
-                        Click a trail to plot stops on the map. Lines connect nearby markers in a sensible order and omit very long gaps — they are not turn-by-turn driving routes. Which markers appear depends on our collection; many trails do not span the full width of Montana.
-                      </p>
-                      {historyTrails.map(t => (
-                        <div
-                          key={t.id}
-                          className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}
-                        >
-                          <button
-                            type="button"
-                            className="history-trails-map-btn"
-                            onClick={() => selectHistoryTrail(t.id)}
-                          >
-                            <span className="history-trails-link-name">{t.name}</span>
-                            <span className="history-trails-meta">{t.stops.length} stops</span>
-                          </button>
-                          <Link
-                            href={`/guides/history-trails/${t.id}/`}
-                            className="history-trails-guide"
-                            prefetch={false}
-                            onClick={e => e.stopPropagation()}
-                          >
-                            Guide
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </details>
-                )}
-                {filtered.map(c => (
-                  <div key={c.id} className={`corridor-card ${selected === c.id ? 'selected' : ''}`} onClick={() => selectCorridor(c.id)}>
-                    <div className="corridor-card-name">
-                      <span style={{ width: 10, height: 10, borderRadius: '50%', background: c.color, flexShrink: 0 }} />
-                      {c.name}
-                    </div>
-                    <div className="corridor-card-meta">
-                      <span>{c.distanceMiles} mi</span>
-                      <span style={{ color: DIFFICULTY_COLORS[c.difficulty] }}>{c.difficulty}</span>
-                      <span>{c.highways.join(', ')}</span>
-                    </div>
-                    <div className="corridor-card-desc">{c.description}</div>
-                    <div className="corridor-card-actions">
-                      <button className="action-btn primary" onClick={(e) => { e.stopPropagation(); selectCorridor(c.id); }}>
-                        Explore
-                      </button>
-                      {!trip.includes(c.id) ? (
-                        <button className="action-btn secondary" onClick={(e) => { e.stopPropagation(); addToTrip(c.id); }}>
-                          + Add to Trip
-                        </button>
-                      ) : (
-                        <button className="action-btn danger" onClick={(e) => { e.stopPropagation(); removeFromTrip(c.id); }}>
-                          Remove
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                ))}
-                {filtered.length === 0 && (
-                  <div style={{ padding: '24px', textAlign: 'center', color: '#6b7890', fontSize: '0.85rem' }}>
-                    No corridors match your filters.
-                    <br />
-                    <button className="filter-chip" style={{ marginTop: '8px' }} onClick={() => { setDifficultyFilter(null); setPoiFilter(null); }}>
-                      Clear filters
-                    </button>
-                  </div>
-                )}
-              </div>
-            </>
-          )}
-
-          {selected && activeCorridor && mobileTab === 'corridors' && (
-            <div className="detail-panel">
-              <div className="detail-header">
-                <button className="detail-back" onClick={() => setSelected(null)}>← All Routes</button>
-                <h2 className="detail-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ width: 12, height: 12, borderRadius: '50%', background: activeCorridor.color }} />
-                  {activeCorridor.name}
-                </h2>
-                <div className="detail-subtitle">
-                  {activeCorridor.highways.join(' / ')} · {slugToName(activeCorridor.startTown)} → {slugToName(activeCorridor.endTown)}
-                </div>
-              </div>
-
-              <div className="detail-stats">
-                <div className="stat-box">
-                  <div className="stat-val">{activeCorridor.distanceMiles} mi</div>
-                  <div className="stat-label">Distance</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-val" style={{ color: DIFFICULTY_COLORS[activeCorridor.difficulty] }}>
-                    {activeCorridor.difficulty.charAt(0).toUpperCase() + activeCorridor.difficulty.slice(1)}
-                  </div>
-                  <div className="stat-label">Difficulty</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-val">{activeCorridor.elevationRange[0].toLocaleString()} – {activeCorridor.elevationRange[1].toLocaleString()}'</div>
-                  <div className="stat-label">Elevation Range</div>
-                </div>
-                <div className="stat-box">
-                  <div className="stat-val">{activeCorridor.season}</div>
-                  <div className="stat-label">Season</div>
-                </div>
-              </div>
-
-              <div style={{ padding: '8px 18px' }}>
-                <p style={{ fontSize: '0.82rem', color: '#9aa0b0', lineHeight: 1.5, margin: 0 }}>
-                  {activeCorridor.description}
-                </p>
-                <div className="corridor-card-actions" style={{ marginTop: '10px' }}>
-                  {!trip.includes(activeCorridor.id) ? (
-                    <button className="action-btn primary" onClick={() => addToTrip(activeCorridor.id)}>
-                      + Add to My Trip
-                    </button>
-                  ) : (
-                    <button className="action-btn danger" onClick={() => removeFromTrip(activeCorridor.id)}>
-                      Remove from Trip
-                    </button>
-                  )}
-                </div>
-              </div>
-
-              {activeCorridor.pois.length > 0 && (
-                <div className="poi-section">
-                  <h3>Nearby Points of Interest ({filteredPois.length})</h3>
-                  <div className="filter-bar" style={{ padding: '0 0 8px' }}>
-                    <button className={`filter-chip ${!poiFilter ? 'active' : ''}`} onClick={() => setPoiFilter(null)}>All</button>
-                    {Object.entries(CATEGORY_LABELS).map(([k, v]) => {
-                      const count = activeCorridor.pois.filter(p => p.category === k).length;
-                      if (count === 0) return null;
-                      return (
-                        <button key={k} className={`filter-chip ${poiFilter === k ? 'active' : ''}`} onClick={() => setPoiFilter(poiFilter === k ? null : k)}>
-                          {CATEGORY_ICONS[k]} {v} ({count})
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {filteredPois.slice(0, 30).map((p, i) => (
-                    <div key={`${p.name}-${i}`} className="poi-item"
-                      onMouseEnter={() => setHoveredPoi(p)}
-                      onMouseLeave={() => setHoveredPoi(null)}
-                      onClick={() => {
-                        mapRef.current?.flyTo({ center: [p.lng, p.lat], zoom: 12, duration: 800 });
-                        setHoveredPoi(p);
-                      }}
-                    >
-                      <span>{CATEGORY_ICONS[p.category] || '📍'}</span>
-                      <span>{p.name}</span>
-                      {p.rating != null && <span style={{ fontSize: '0.72rem', color: '#d8973c' }}>★ {p.rating.toFixed(1)}</span>}
-                      <span className="poi-dist">{p.distFromRoute.toFixed(1)} mi</span>
-                    </div>
-                  ))}
-                  {filteredPois.length > 30 && (
-                    <div style={{ fontSize: '0.75rem', color: '#6b7890', padding: '8px 0', textAlign: 'center' }}>
-                      +{filteredPois.length - 30} more
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {activeCorridor.connections.length > 0 && (
-                <div className="connections-section">
-                  <h3 style={{ fontSize: '0.82rem', color: '#8892a4', margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                    Connecting Routes
-                  </h3>
-                  {activeCorridor.connections.map(cId => {
-                    const conn = corridorMap[cId];
-                    if (!conn) return null;
-                    return (
-                      <span key={cId} className="connection-chip" onClick={() => selectCorridor(cId)}>
-                        <span style={{ width: 8, height: 8, borderRadius: '50%', background: conn.color, display: 'inline-block', marginRight: 5 }} />
-                        {conn.name}
-                      </span>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-          )}
-
-          {mobileTab === 'trip' && (
-            <div className="trip-panel">
-              <h2>My Trip</h2>
-              {trip.length === 0 ? (
-                <div className="trip-empty">
-                  Click &ldquo;+ Add to Trip&rdquo; on any route to start building your adventure.
-                </div>
-              ) : (
-                <>
-                  {trip.map((id, i) => {
-                    const c = corridorMap[id];
-                    if (!c) return null;
-                    return (
-                      <div key={id} className="trip-item">
-                        <div className="trip-num" style={{ background: c.color }}>{i + 1}</div>
-                        <span className="trip-item-name" style={{ cursor: 'pointer' }} onClick={() => selectCorridor(id)}>
-                          {c.name}
-                        </span>
-                        <span className="trip-item-miles">{c.distanceMiles} mi</span>
-                        <button className="trip-remove" onClick={() => removeFromTrip(id)}>✕</button>
-                      </div>
-                    );
-                  })}
-                  <div className="trip-total">
-                    <div>
-                      <div className="trip-total-miles">{tripStats.totalMiles} miles</div>
-                      <div className="trip-total-label">{tripStats.totalPois} points of interest</div>
-                    </div>
-                    <div style={{ display: 'flex', gap: '6px' }}>
-                      <button className="action-btn primary" onClick={() => {
-                        const url = `${window.location.origin}/planners/backroads-planner?routes=${trip.join(',')}`;
-                        navigator.clipboard.writeText(url).then(() => {
-                          const btn = document.getElementById('share-btn');
-                          if (btn) { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Share Trip'; }, 2000); }
-                        });
-                      }}>
-                        <span id="share-btn">Share Trip</span>
-                      </button>
-                      <button className="action-btn secondary" onClick={() => setTrip([])}>Clear</button>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-          )}
-        </aside>
-
-        {/* Map */}
         <div style={{ flex: 1, position: 'relative' }}>
-          <MapGL
+          <UnifiedMap
             ref={mapRef}
-            initialViewState={{ longitude: -109.5, latitude: 46.8, zoom: 5.5 }}
-            style={{ width: '100%', height: '100%' }}
-            mapStyle="mapbox://styles/mapbox/outdoors-v12"
-            mapboxAccessToken={MAPBOX_TOKEN}
-            onClick={(e) => {
-              const features = e.target.queryRenderedFeatures(e.point, { layers: ['corridor-lines'] });
-              if (features && features.length > 0) {
-                const id = features[0].properties?.id;
-                if (id) selectCorridor(id);
-              } else {
-                setHoveredPoi(null);
-              }
-            }}
-            interactiveLayerIds={['corridor-lines']}
-            cursor="pointer"
-          >
-            <NavigationControl position="top-right" />
+            corridors={corridors}
+            selectedCorridorId={selected}
+            tripCorridorIds={tripCorridorIds}
+            filteredCorridorIds={filteredCorridorIds}
+            dimCorridors={!!activeHistoryTrailId}
+            activeHistoryTrail={activeHistoryTrail}
+            itinerary={itinerary.filter((i) => i.itemType === 'city' || i.enabled !== false)}
+            historicMarkers={historicMarkers}
+            showHistoricMarkers={showHistoricMarkers}
+            filteredPois={filteredPois}
+            selectedHistoricMarker={selectedHistoricMarker}
+            hoveredPoi={hoveredPoi}
+            onCorridorClick={selectCorridor}
+            onHistoricMarkerClick={useCallback((m: HistoricMarker) => setSelectedHistoricMarker(m), [])}
+            onPoiClick={useCallback((p: CorridorPOI) => setHoveredPoi(p), [])}
+            onCloseHistoricMarkerPopup={useCallback(() => setSelectedHistoricMarker(null), [])}
+            onClosePoiPopup={useCallback(() => setHoveredPoi(null), [])}
+          />
 
-            <Source id="corridors" type="geojson" data={geojsonLines}>
-              <Layer {...lineLayerCasing} />
-              <Layer {...lineLayer} />
-            </Source>
-
-            {historyTrailLineGeo.features.length > 0 && (
-              <Source id="history-trail-line" type="geojson" data={historyTrailLineGeo}>
-                <Layer {...historyTrailLineCasing} />
-                <Layer {...historyTrailLineLayer} />
-              </Source>
-            )}
-
-            {/* Start/end markers for selected corridor */}
-            {activeCorridor && (() => {
-              const coords = activeCorridor.geometry.coordinates;
-              const startCoord = coords[0];
-              const endCoord = coords[coords.length - 1];
-              return (
-                <>
-                  <Marker longitude={startCoord[0]} latitude={startCoord[1]} anchor="center">
-                    <div style={{
-                      width: 18, height: 18, borderRadius: '50%', background: activeCorridor.color,
-                      border: '3px solid #fff', boxShadow: '0 2px 6px rgba(0,0,0,0.3)',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontSize: '0.55rem', color: '#fff', fontWeight: 700,
-                    }}>S</div>
-                  </Marker>
-                  <Marker longitude={endCoord[0]} latitude={endCoord[1]} anchor="center">
-                    <div style={{
-                      width: 18, height: 18, borderRadius: '50%', background: activeCorridor.color,
-                      border: '3px solid #fff', boxShadow: '0 2px 6px rgba(0,0,0,0.3)',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontSize: '0.55rem', color: '#fff', fontWeight: 700,
-                    }}>E</div>
-                  </Marker>
-                </>
-              );
-            })()}
-
-            {/* POI markers for selected corridor */}
-            {filteredPois.slice(0, 60).map((p, i) => (
-              <Marker
-                key={`poi-${p.name}-${i}`}
-                longitude={p.lng}
-                latitude={p.lat}
-                anchor="center"
-                onClick={(e) => { e.originalEvent.stopPropagation(); setHoveredPoi(p); }}
-              >
-                <div style={{
-                  width: 10, height: 10, borderRadius: '50%',
-                  background: p.category === 'hotspring' ? '#e74c3c' : p.category === 'campground' ? '#27ae60' : p.category === 'hiking' ? '#8e44ad' : '#3b6978',
-                  border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
-                  cursor: 'pointer',
-                }} />
-              </Marker>
-            ))}
-
-            {/* History trail numbered stops */}
-            {activeHistoryTrail && activeHistoryTrail.stops.map((m, idx) => (
-              <Marker
-                key={`htrail-${m.id}`}
-                longitude={m.lng}
-                latitude={m.lat}
-                anchor="center"
-                onClick={(e) => { e.originalEvent.stopPropagation(); setSelectedHistoricMarker(m); }}
-              >
-                <div style={{
-                  minWidth: 22,
-                  height: 22,
-                  padding: '0 5px',
-                  borderRadius: '50%',
-                  background: HISTORY_TRAIL_LINE_COLOR,
-                  border: '2px solid rgba(255,255,255,0.95)',
-                  boxShadow: '0 2px 5px rgba(0,0,0,0.35)',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '0.65rem',
-                  fontWeight: 800,
-                  color: '#1a1e2e',
-                }}
-                >
-                  {idx + 1}
-                </div>
-              </Marker>
-            ))}
-
-            {/* Historic markers layer */}
-            {showHistoricMarkers && historicMarkers.map(m => (
-              <Marker
-                key={`hist-${m.id}`}
-                longitude={m.lng}
-                latitude={m.lat}
-                anchor="center"
-                onClick={(e) => { e.originalEvent.stopPropagation(); setSelectedHistoricMarker(m); }}
-              >
-                <div style={{
-                  width: 10, height: 10, borderRadius: '2px',
-                  background: '#8b4513',
-                  border: '2px solid rgba(255,255,255,0.9)', boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
-                  cursor: 'pointer', transform: 'rotate(45deg)',
-                }} />
-              </Marker>
-            ))}
-
-            {selectedHistoricMarker && (
-              <Popup
-                longitude={selectedHistoricMarker.lng}
-                latitude={selectedHistoricMarker.lat}
-                anchor="top"
-                offset={10}
-                onClose={() => setSelectedHistoricMarker(null)}
-                closeButton={true}
-                closeOnClick={false}
-                maxWidth="500px"
-              >
-                <div
-                  style={{
-                    padding: '0.75rem',
-                    maxWidth: 480,
-                    maxHeight: 'min(78vh, 560px)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 0,
-                  }}
-                >
-                  <strong style={{ fontSize: '0.98rem', color: '#204051', display: 'block', marginBottom: '0.35rem', flexShrink: 0 }}>
-                    {selectedHistoricMarker.title}
-                  </strong>
-                  {selectedHistoricMarker.town && (
-                    <div style={{ fontSize: '0.76rem', color: '#888', marginBottom: '0.45rem', flexShrink: 0 }}>
-                      📍 {selectedHistoricMarker.town}
-                    </div>
-                  )}
-                  <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.5rem' }}>
-                    <MarkerInscription
-                      text={selectedHistoricMarker.inscription}
-                      variant="popup"
-                    />
-                  </div>
-                  <div style={{ paddingTop: '0.55rem', borderTop: '1px solid #e8ede8', display: 'flex', gap: '1rem', flexWrap: 'wrap', flexShrink: 0 }}>
-                    {selectedHistoricMarker.isCurated && (
-                      <a
-                        href={`/historic-markers/${selectedHistoricMarker.slug}/`}
-                        style={{ fontSize: '0.82rem', color: '#27ae60', fontWeight: 600, textDecoration: 'none' }}
-                      >
-                        View full page →
-                      </a>
-                    )}
-                    <a
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${selectedHistoricMarker.lat},${selectedHistoricMarker.lng}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ fontSize: '0.82rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}
-                    >
-                      Get directions
-                    </a>
-                  </div>
-                </div>
-              </Popup>
-            )}
-
-            {hoveredPoi && (
-              <Popup
-                longitude={hoveredPoi.lng}
-                latitude={hoveredPoi.lat}
-                anchor="bottom"
-                offset={10}
-                onClose={() => setHoveredPoi(null)}
-                closeButton={true}
-                closeOnClick={false}
-                maxWidth="220px"
-              >
-                <div style={{ padding: '4px 2px' }}>
-                  <strong style={{ fontSize: '0.85rem', color: '#204051' }}>{hoveredPoi.name}</strong>
-                  <div style={{ fontSize: '0.72rem', color: '#888', marginTop: '2px' }}>
-                    {CATEGORY_ICONS[hoveredPoi.category]} {CATEGORY_LABELS[hoveredPoi.category] || hoveredPoi.type}
-                  </div>
-                  {hoveredPoi.rating != null && (
-                    <div style={{ fontSize: '0.75rem', color: '#d8973c', marginTop: '2px' }}>
-                      ★ {hoveredPoi.rating.toFixed(1)} {hoveredPoi.reviews ? `(${hoveredPoi.reviews.toLocaleString()})` : ''}
-                    </div>
-                  )}
-                  <div style={{ fontSize: '0.72rem', color: '#6b7890', marginTop: '2px' }}>
-                    {hoveredPoi.distFromRoute.toFixed(1)} mi from route
-                  </div>
-                  <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${hoveredPoi.lat},${hoveredPoi.lng}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontSize: '0.75rem', color: '#3b6978', fontWeight: 600, textDecoration: 'none', marginTop: '4px', display: 'inline-block' }}
-                  >
-                    Directions →
-                  </a>
-                </div>
-              </Popup>
-            )}
-          </MapGL>
-
-          {/* Map overlay: reset button */}
           <button
             onClick={resetView}
             style={{
               position: 'absolute', bottom: 24, right: 16, background: '#1a1e2e', color: '#e0e4ec',
               border: 'none', padding: '8px 14px', borderRadius: '8px', fontSize: '0.78rem',
-              cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', fontWeight: 600,
+              cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', fontWeight: 600, zIndex: 5,
             }}
           >
             Show All Routes
           </button>
 
-          {/* Trip summary overlay */}
-          {trip.length > 0 && (
+          {tripCorridorIds.length > 0 && (
             <div style={{
               position: 'absolute', bottom: 24, left: 16, background: '#1a1e2e', color: '#e0e4ec',
               padding: '10px 16px', borderRadius: '10px', boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
-              fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '12px',
+              fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '12px', zIndex: 5,
             }}>
               <div>
-                <strong>{trip.length} route{trip.length > 1 ? 's' : ''}</strong>
-                <span style={{ color: '#6b7890', marginLeft: '8px' }}>{tripStats.totalMiles} mi</span>
+                <strong>{tripCorridorIds.length} route{tripCorridorIds.length > 1 ? 's' : ''}</strong>
+                <span style={{ color: '#6b7890', marginLeft: '8px' }}>
+                  {tripCorridorIds.map((id) => corridorMap[id]).filter(Boolean).reduce((s, r) => s + r.distanceMiles, 0)} mi
+                </span>
               </div>
               <div style={{ display: 'flex', gap: '4px' }}>
-                {trip.map(id => {
+                {tripCorridorIds.map((id) => {
                   const c = corridorMap[id];
                   return c ? <span key={id} style={{ width: 10, height: 10, borderRadius: '50%', background: c.color }} /> : null;
                 })}
@@ -1162,7 +620,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const townCoordsPath = path.join(process.cwd(), 'data', 'town-coordinates.json');
   const townCoords: TownCoords = JSON.parse(fs.readFileSync(townCoordsPath, 'utf-8'));
 
-  // Load historic markers (limited subset for performance)
   const markersPath = path.join(process.cwd(), 'data', 'historic-markers.json');
   const curatedPath = path.join(process.cwd(), 'data', 'historic-markers-curated.json');
   let historicMarkers: HistoricMarker[] = [];
@@ -1173,7 +630,6 @@ export const getStaticProps: GetStaticProps = async () => {
         ? JSON.parse(fs.readFileSync(curatedPath, 'utf-8')).map((m: { slug: string }) => m.slug)
         : []
     );
-    // Take a sample for performance (every 3rd marker to get ~750)
     historicMarkers = allMarkers
       .filter((_: unknown, i: number) => i % 3 === 0)
       .map((m: { id: string; slug: string; title: string; lat: number; lng: number; town: string | null; inscription: string }) => ({
@@ -1218,7 +674,6 @@ export const getStaticProps: GetStaticProps = async () => {
         for (const mid of t.markerIds) {
           const raw = idLookup.get(mid);
           if (!raw) continue;
-          const inscription = raw.inscription;
           rawStops.push({
             id: raw.id,
             slug: raw.slug,
@@ -1226,19 +681,13 @@ export const getStaticProps: GetStaticProps = async () => {
             lat: round(raw.lat, 4),
             lng: round(raw.lng, 4),
             town: raw.town,
-            inscription,
+            inscription: raw.inscription,
             isCurated: curatedSlugsForTrail.has(raw.slug),
           });
         }
         const stops = orderStopsNearestNeighborFromEast(rawStops);
         const lineSegments = buildLineSegmentsLngLat(stops, HISTORY_TRAIL_MAX_EDGE_MILES);
-        return {
-          id: t.id,
-          name: t.name,
-          markerCount: t.markerCount,
-          lineSegments,
-          stops,
-        };
+        return { id: t.id, name: t.name, markerCount: t.markerCount, lineSegments, stops };
       })
       .filter(t => t.stops.length > 0)
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));

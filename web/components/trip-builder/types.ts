@@ -57,3 +57,51 @@ export const ACTIVITY_TYPES = [
   'RV park',
   'Boat ramp',
 ] as const;
+
+export type CorridorPOI = {
+  name: string;
+  type: string;
+  category: string;
+  lat: number;
+  lng: number;
+  distFromRoute: number;
+  rating?: number | null;
+  reviews?: number | null;
+};
+
+export type Corridor = {
+  id: string;
+  name: string;
+  description: string;
+  highways: string[];
+  distanceMiles: number;
+  elevationRange: [number, number];
+  season: string;
+  difficulty: string;
+  color: string;
+  startTown: string;
+  endTown: string;
+  throughTowns: string[];
+  connections: string[];
+  geometry: { type: string; coordinates: number[][] };
+  pois: CorridorPOI[];
+};
+
+export type HistoricMarker = {
+  id: string;
+  slug: string;
+  title: string;
+  lat: number;
+  lng: number;
+  town: string | null;
+  inscription: string;
+  isCurated: boolean;
+};
+
+export type HistoryTrailMapData = {
+  id: string;
+  name: string;
+  markerCount: number;
+  lineSegments: [number, number][][];
+  stops: HistoricMarker[];
+};
