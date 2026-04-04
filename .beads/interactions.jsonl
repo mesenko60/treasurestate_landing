@@ -1,0 +1,1 @@
+{"id":"int-0cdcc60e","kind":"field_change","created_at":"2026-04-04T14:40:16.386276Z","actor":"boonecrockett","issue_id":"treasurestate_landing-0l6","extra":{"field":"status","new_value":"closed","old_value":"in_progress","reason":"generate-redirects.js added to prebuild; copy-assets.js no longer overwrites _redirects; 2264 marker redirects verified."}}
