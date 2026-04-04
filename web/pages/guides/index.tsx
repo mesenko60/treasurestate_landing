@@ -31,7 +31,7 @@ const TRAVEL_GUIDES = [
   { href: '/guides/wildlife-guide', title: 'Wildlife Viewing Guide', desc: 'Grizzly bears, wolves, bison, elk, bighorn sheep — 15 verified locations with species and seasons.' },
   { href: '/guides/photography-guide', title: 'Photographer\u2019s Guide', desc: '18 photography locations with GPS coordinates, best times, recommended lenses, and gear tips.' },
   { href: '/guides/hot-springs-guide', title: 'Hot Springs Guide', desc: '20+ natural and developed geothermal hot springs across Montana.' },
-  { href: '/guides/campgrounds-guide', title: 'Campgrounds & RV Parks', desc: '100+ campgrounds — KOAs, state parks, national forest sites, and private camps.' },
+  { href: '/guides/campgrounds-guide', title: 'Campgrounds & RV Parks', desc: 'Campgrounds and RV parks from our places database — KOAs, state sites, public land, and private camps.' },
   { href: '/guides/montana-backroads', title: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path — hidden gems of Big Sky Country.' },
   { href: '/guides/summer-road-trips', title: 'Summer Road Trips', desc: 'The best scenic drives June through September — alpine passes and wildflower meadows.' },
   { href: '/guides/winter-driving-guide', title: 'Winter Driving Guide', desc: 'Year-round routes, seasonal closures, and essential winter driving tips.' },

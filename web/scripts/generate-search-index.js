@@ -62,6 +62,8 @@ function walkMarkdownFilesSorted(absDir) {
   const housing = loadJson(path.join(dataDir, 'town-housing.json')) || {};
   const climate = loadJson(path.join(dataDir, 'town-climate.json')) || {};
   const coords = loadJson(path.join(dataDir, 'town-coordinates.json')) || {};
+  const campgroundsList = loadJson(path.join(dataDir, 'campgrounds.json')) || [];
+  const campgroundCount = Array.isArray(campgroundsList) ? campgroundsList.length : 0;
 
   // ═══ 1. TOWNS — enriched with county, population, region, elevation ═══
   for (const t of towns) {
@@ -135,7 +137,7 @@ function walkMarkdownFilesSorted(absDir) {
     { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/guides/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
     { title: 'Fly Fishing Rivers Deep Dive', desc: 'Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, Missouri', url: '/guides/fly-fishing-rivers/', kw: 'rivers deep dive Madison Bitterroot Big Hole Gallatin Yellowstone Flathead Missouri alpine lakes westslope cutthroat Skwala hatch' },
     { title: 'Hot Springs Guide', desc: 'Natural and developed geothermal hot springs across Montana', url: '/guides/hot-springs-guide/', kw: 'hot springs soaking geothermal resort primitive' },
-    { title: 'Campgrounds & RV Parks', desc: '100+ campgrounds and RV parks across Montana', url: '/guides/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
+    { title: 'Campgrounds & RV Parks', desc: `${campgroundCount} campgrounds and RV parks across Montana (Supabase places)`, url: '/guides/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
     { title: 'Hiking Guide', desc: "Montana's best trails, wilderness areas, and national park hikes", url: '/guides/hiking-guide/', kw: 'hiking trails trailhead wilderness backpacking state park national park' },
     { title: 'Montana Hunting Guide', desc: 'Seasons, licenses, WMAs, and public land access for deer, elk, antelope, bear, turkey, and more', url: '/guides/hunting-guide/', kw: 'hunting elk deer antelope bear turkey grouse waterfowl WMA FWP license season public land' },
     { title: 'Montana Skiing & Snowboarding Guide', desc: 'All 16 Montana ski areas with vertical drop, acreage, snowfall, lift ticket prices, and pass affiliations', url: '/guides/skiing-guide/', kw: 'skiing snowboarding ski area Big Sky Whitefish Bridger Bowl lift ticket Ikon Indy Pass snow winter' },
@@ -213,9 +215,8 @@ function walkMarkdownFilesSorted(absDir) {
   }
 
   // ═══ 8. INDIVIDUAL CAMPGROUNDS ═══
-  const campgrounds = loadJson(path.join(dataDir, 'campgrounds.json'));
-  if (Array.isArray(campgrounds)) {
-    for (const cg of campgrounds) {
+  if (Array.isArray(campgroundsList)) {
+    for (const cg of campgroundsList) {
       entries.push({
         type: 'campground',
         title: cg.name,

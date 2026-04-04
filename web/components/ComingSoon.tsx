@@ -23,7 +23,7 @@ export default function ComingSoon() {
         </Link>
         <Link href="/guides/campgrounds-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>Campgrounds &amp; RV Parks</h3>
-          <p>Browse 100+ campgrounds across Montana — KOAs, state parks, public land, and RV parks.</p>
+          <p>Browse campgrounds and RV parks across Montana — KOAs, state parks, public land, and more (places database).</p>
           <span className="waitlist-btn" style={{ pointerEvents: 'none' }}>EXPLORE NOW</span>
         </Link>
         <Link href="/guides/hiking-guide" className="planner-card" style={{ textDecoration: 'none', color: 'inherit' }}>
