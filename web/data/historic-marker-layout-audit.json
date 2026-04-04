@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-04-04T02:07:51.133Z",
+  "description": "Markers whose inscription matches layout/kiosk token patterns. For agent/human triage only.",
+  "patternCodes": [
+    "paren_side_bar",
+    "bracket_sidebar",
+    "three_panels_marker",
+    "across_the_bottom",
+    "illustrated_map",
+    "arrow_pointing_to",
+    "paren_panel_kiosk",
+    "compass_clockwise",
+    "paren_inset",
+    "photo_caption_paren",
+    "sidebar_standalone_line",
+    "sidebar_word_line"
+  ],
+  "count": 0,
+  "countCurated": 0,
+  "ids": [],
+  "idsCurated": [],
+  "markers": []
+}

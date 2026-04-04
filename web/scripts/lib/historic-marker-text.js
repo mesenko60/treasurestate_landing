@@ -9,7 +9,10 @@
  * normalized in `normalizeInscriptionParagraphLineBreaks()` — wording is unchanged,
  * only whitespace between tokens. Truly ambiguous copy errors still belong in
  * `historic-marker-inscription-overrides.json` (agent-reviewed). Run
- * `web/scripts/audit-historic-marker-text.js` to spot stragglers. Visual structure
+ * `web/scripts/audit-historic-marker-text.js` to spot stragglers; use
+ * `audit-historic-marker-text.js --layout-artifacts` for kiosk/layout ID lists.
+ * Narrative wording fixes stay in `historic-marker-inscription-overrides.json`.
+ * Visual structure
  * (Geo-Facts headings, bullets, “Erected by”) is applied at render time in
  * `web/lib/parseMarkerInscription.ts` and `web/components/MarkerInscription.tsx`.
  *
@@ -91,6 +94,7 @@ function polishShortAttribution(t) {
 
 /**
  * Drop kiosk / site-metadata lines that are not part of the marker narrative.
+ * Whole-line HMdb layout tokens only; ambiguous or inline copy belongs in overrides.
  */
 function filterInscriptionLines(lines) {
   let skippingPictureCaptions = false;
@@ -109,6 +113,27 @@ function filterInscriptionLines(lines) {
     t = t.replace(/^\[\s*caption\s*\d*\s*\]\s*/i, '').trim();
     t = t.replace(/^\[\s*background\s+image\s+caption\s*\]\s*/i, '').trim();
     if (t === '') continue;
+
+    t = t.replace(/^\(\s*arrow\s+pointing\s+to\s*:\)\s*/i, '').trim();
+    if (t === '') continue;
+
+    if (/^\([^)]*side[\s-]*bar[^)]*\)\s*$/i.test(t)) continue;
+    if (/^\[\s*Sidebar\s*:?\s*\]\s*$/i.test(t)) continue;
+    if (/^\(\s*Three\s+panels\s+make\s+up\s+this\s+marker\s*:?\s*\)\s*$/i.test(t)) continue;
+    if (/^Three\s+panels\s+make\s+up\s+this\s+marker\.?\s*$/i.test(t)) continue;
+    if (/^\(\s*Two\s+panels\s+make\s+up\s+this\s+marker\.?\s*\)\s*$/i.test(t)) continue;
+    if (/^\(?\s*sidebar\s*\)?\s*$/i.test(t)) continue;
+    if (/^sidebar\s*:?\s*$/i.test(t)) continue;
+    if (/^This\s+marker\s+is\s+in\s+front\s+of\b/i.test(t)) continue;
+    if (
+      /^\([^)]*\billustrated\s+map\b[^)]*\bacross\s+the\s+bottom\b[^)]*\)\s*$/i.test(t)
+    ) {
+      continue;
+    }
+    if (/^\([^)]*\billustrated\s+map\b[^)]*\)\s*$/i.test(t)) continue;
+    if (/^\([^)]*\bacross\s+the\s+bottom[^)]*\)\s*$/i.test(t)) continue;
+    if (/\bcompass\s+points\s+clockwise\b/i.test(t)) continue;
+    if (/^\([^)]*\binset\b[^)]*\)\s*$/i.test(t)) continue;
 
     if (skippingPhotoCaptionBlock) {
       if (/^Erected by\b/i.test(t)) {
