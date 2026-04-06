@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -15,6 +15,7 @@ import MarkerInscription from '../../components/MarkerInscription';
 import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
+import type { MapRef } from 'react-map-gl/mapbox';
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
 const Popup = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Popup), { ssr: false });
@@ -43,6 +44,7 @@ const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCounts, countyCounts }: Props) {
   const router = useRouter();
+  const mapRef = useRef<MapRef | null>(null);
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
   const popupDeepRead = selectedMarker ? MARKER_DEEP_READS[selectedMarker.slug] : undefined;
   const [topicFilter, setTopicFilter] = useState<string>('');
@@ -66,25 +68,55 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
 
   const filteredTownName = townSlugFilter ? formatTownNameFromSlug(townSlugFilter) : '';
 
+  /** When arriving from a town page (?town=), fit the map to those markers (tight zoom). */
   useEffect(() => {
     if (!townSlugFilter || markers.length === 0) return;
     const subset = markers.filter((m) => m.townSlug === townSlugFilter);
     if (subset.length === 0) return;
-    let minLat = 90;
-    let maxLat = -90;
-    let minLng = 180;
-    let maxLng = -180;
-    subset.forEach((m) => {
-      minLat = Math.min(minLat, m.lat);
-      maxLat = Math.max(maxLat, m.lat);
-      minLng = Math.min(minLng, m.lng);
-      maxLng = Math.max(maxLng, m.lng);
-    });
-    const lat = (minLat + maxLat) / 2;
-    const lng = (minLng + maxLng) / 2;
-    const span = Math.max(maxLat - minLat, maxLng - minLng, 0.04);
-    const zoom = Math.min(11, Math.max(7.2, 9.2 - Math.log2(span * 25)));
-    setViewState({ latitude: lat, longitude: lng, zoom });
+
+    const fit = () => {
+      const ref = mapRef.current;
+      if (!ref) return;
+      let minLat = 90;
+      let maxLat = -90;
+      let minLng = 180;
+      let maxLng = -180;
+      subset.forEach((m) => {
+        minLat = Math.min(minLat, m.lat);
+        maxLat = Math.max(maxLat, m.lat);
+        minLng = Math.min(minLng, m.lng);
+        maxLng = Math.max(maxLng, m.lng);
+      });
+      const eps = 0.004;
+      if (maxLng - minLng < eps) {
+        minLng -= eps;
+        maxLng += eps;
+      }
+      if (maxLat - minLat < eps) {
+        minLat -= eps;
+        maxLat += eps;
+      }
+      try {
+        ref.fitBounds(
+          [
+            [minLng, minLat],
+            [maxLng, maxLat],
+          ],
+          { padding: 72, maxZoom: 14, duration: 900 },
+        );
+      } catch {
+        /* ignore fit errors during teardown */
+      }
+    };
+
+    const t1 = window.setTimeout(fit, 120);
+    const t2 = window.setTimeout(fit, 500);
+    const t3 = window.setTimeout(fit, 1200);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+      window.clearTimeout(t3);
+    };
   }, [townSlugFilter, markers]);
 
   const url = 'https://treasurestate.com/historic-markers/';
@@ -284,9 +316,10 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
             )}
           </aside>
 
-          <div className="markers-map-container">
+          <div className="markers-map-container" id="markers-explorer-map">
             {MAPBOX_TOKEN && (
               <Map
+                ref={mapRef}
                 {...viewState}
                 onMove={evt => setViewState(evt.viewState)}
                 mapStyle="mapbox://styles/mapbox/outdoors-v12"

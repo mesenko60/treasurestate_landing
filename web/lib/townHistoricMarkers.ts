@@ -13,7 +13,7 @@ export function formatTownNameFromSlug(slug: string): string {
 
 /** Explorer URL filtered to markers matched to this town slug in the statewide dataset. */
 export function townHistoricMarkersDirectoryHref(townSlug: string): string {
-  return `/historic-markers/?town=${encodeURIComponent(townSlug)}`;
+  return `/historic-markers/?town=${encodeURIComponent(townSlug)}#markers-explorer-map`;
 }
 
 /** County string from town-data.json (e.g. "Cascade County") → marker JSON county field (e.g. "Cascade"). */

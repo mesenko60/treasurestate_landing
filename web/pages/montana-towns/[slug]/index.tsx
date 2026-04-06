@@ -607,7 +607,6 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
           seenTitles.add(key);
           return true;
         })
-        .slice(0, 20)
         .map((m: { id: string; slug: string; title: string; inscription: string; topics: string[] }) => ({
           id: m.id,
           slug: m.slug,
