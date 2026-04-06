@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191659
+Slug: at-the-yellowstone
+Title: "At the Yellowstone"
+Town: Livingston
+County: Park
+Lat / Lng: 45.65507, -110.55727
+Topics: exploration, native-american, people
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+This statue commemorates Sacajawea, whose loyalty, courage and devotion were instrumental in the success of the Lewis and Clark expedition of 1803-1806.
+
+Holding her infant son Jean Baptiste Charbonneau (nicknamed "Pomp" by Capt. Wm. Clark), she sits astride a horse, pausing to drink from the waters of the Yellowstone River. The day is July 15, 1806, Clark and several members of the Corps of Discovery are headed downstream to rendezvous with Meriwether Lewis and the remainder of the explorers.
+
+Sacajawea was instrumental to the success of the expedition for a variety of skills and attributes that she embodied. She was an interpreter for her Shoshone people and was able to negotiate and obtain horses from them. She knew of native food sources and local geography. As a woman, her presence among the armed soldiers signaled a peaceful intent to the tribes which the Corps encountered. Carrying an infant to the Pacific and back, she extended a calming influence as a wife, mother, sister, and friend.
+
+A cloud of uncertainty hangs over every aspect of her life, from the spelling of her name (Sacagawea and Sakakawea), the origins of her ancestors, and her demise. This much is certain, the Sacajawea of American culture and mythology is a larger-than-life, and she has in two hundred years outshone every other member of the expedition with the possible exceptions of Meriwether Lewis and William Clark.
+
+This teenager has become a unique blend of legend, historical fact, myth, iconography and multicultural embrace. Upon the expedition's departure from her Mandan Village in North Dakota and heading back to St. Louis, William Clark wrote a remarkable letter to her husband Toussaint Charbonneau "you woman who accompanied you that long dangerous fatiguing route to the Pacific Ocean and back deserves greater reward for her attention and service on the route than we had in our power to give her at the Mandan...Aug. 20, 1806"
+
+May her spirit continue to embrace us, to flow with the waters of the Yellowstone, and be permanently etched in the history of his country.

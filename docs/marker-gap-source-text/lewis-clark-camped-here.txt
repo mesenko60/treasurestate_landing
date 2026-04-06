@@ -1,0 +1,44 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128400
+Slug: lewis-clark-camped-here
+Title: Lewis & Clark Camped Here
+Subtitle: A Missing Note & A Side Trip Up the Big Hole River
+Town: Twin Bridges
+County: Madison
+Lat / Lng: 45.59561, -112.31736
+Topics: 
+Year erected: 
+Erected by: Montana Lewis & Clark Bicentennial Commission and National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+Which Fork to Take?
+
+Meriwether Lewis, traveling ahead with 3 men, reached this spot two days ahead of William Clark and the main party. After exploring the river courses, Lewis left a note telling Clark to stay on the Jefferson River. Clark never found it and started up the Big Hole instead.
+
+The men pulled the boats upstream about nine miles before meeting one of Lewis’ men. Their return trip resulted in a near disaster which almost killed a man.
+
+The expedition was reunited and made camp near here on August 7th. They spent a day drying out their baggage. After repacking, they decided to leave one dugout behind, hidden in a thicket.
+
+”…arrived at the confluence of the two rivers where I left the note. this note had unfortunately been placed on a green pole which the beaver had cut and carried off together with the note; the possibility of such an occurrence never once occurred to me when I placed it on the green pole… Capt. Clark… ascended it (Big Hole River) with much difficulty…”
+
+Meriwether Lewis
+
+August 5th, 1805
+
+”Whitehouse had been thrown out of one of the canoes… a great part of our most valuable stores were wet and much damaged on this occasion… all the baggage wet, the medicine box… lost a shot pouch and horn with all the implements for one rifle lost and never recovered…”
+
+Meriwether Lewis
+
+August 6th, 1805
+
+”…the Indian woman recognized the point of a high plain to our right which she informed us was not very distant from the summer retreat of her nation on a river beyond the mountains which runs to the west, this she says here nation calls the beaver’s head…”
+
+Meriwether Lewis
+
+August 8th, 1805
+
+One of the most famous landmarks in Southwest Montana, named for its resemblance to the head of a swimming beaver.
+
+Erected by Montana Lewis & Clark Bicentennial Commission and National Park Service, U.S. Department of the Interior.

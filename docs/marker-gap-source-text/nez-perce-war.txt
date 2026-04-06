@@ -1,0 +1,19 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142215
+Slug: nez-perce-war
+Title: Nez Perce War
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.82116, -110.66261
+Topics: native-american
+Year erected: 
+Erected by: Fort Benton Community Improvement Association
+
+--- Inscription (as stored for the site) ---
+
+In September 1877 the Nez Perce traveled across the Judith Basin headed for Canada. In anticipation of trouble, Major Ilges (commandant at Fort Benton) organized a party of fifty volunteers, mostly Fort Benton's Irish Fenians. They loaded the mountain howitzer onto a mackinaw boat and the rest of the party set out on horseback to protect Fort Claggett and the freight at the Cow Island steamboat landing.
+
+Arriving at Cow Island too late to prevent the Indians from crossing the river, the volunteers pursued Chief Joseph and the bands of Nez Perce up the Cow Island Trail ... and found more Indians than they had bargained for. After one volunteer was killed and another was wounded, they let discretion be the better part of valor and retreated back to the landing to wait for the U.S. Army. The military finally caught up with the Nez Perce at Snake Creek in the Bear's Paw Mts. After a battle lasting several days, Chief Joseph surrendered to General Howard and Colonel Miles.
+
+Erected by Fort Benton Community Improvement Association.

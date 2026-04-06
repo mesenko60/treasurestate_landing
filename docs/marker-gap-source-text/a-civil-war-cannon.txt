@@ -1,0 +1,54 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191726
+Slug: a-civil-war-cannon
+Title: A Civil War Cannon:
+Subtitle: Liberty and Union, Now and Forever
+Town: Livingston
+County: Park
+Lat / Lng: 45.66324, -110.55633
+Topics: 
+Year erected: 
+Erected by: Yellowstone Gateway Museum
+
+--- Inscription (as stored for the site) ---
+
+The US War Department gave this 3-inch Ordnance Rifle, the most widely used cannon during the war, to the Grand Army of the Republic (GAR), Farragut Post 7.
+
+GAR members voted to include the above slogan, and the dates of the Civil War, 1861-1865, on the marble slab in front of the cannon when it was placed on the old courthouse lawn on May 11, 1912. A newspaper article from that day stated that it had seen service at Gettysburg and was later sent to General Nelson A. Miles.
+
+The local Woman's Relief Corps, WRC, auxiliary group to the GAR, paid $10 for the carriage and was later reimbursed by the GAR. It was delivered free-of-charge to Livingston from Fort Harrison in Helena. The WRC raised money for its placement on the lawn of the old courthouse.
+
+The Legacy of the GAR and the WRC
+
+The national GAR was formed in 1866 on the principle of fraternity, charity, and loyalty. Members provided relief for veterans, worked for the accurate portrayal of the war in popular culture, and promoted nationalism.
+
+Many servicemen and their families - from both North and South - migrated to the West after the Civil War. Veterans formed a post in Livingston in 1886, naming it in honor of David Glasgow Farragut, the first admiral of the US Navy.
+
+The GAR faded away when its last member passed away in 1956. But the group laid the foundation for other veterans organizations.
+
+The WRC, an organization of women, is still functioning today. Its members perpetuate the memory of the GAR, assist veterans of all wars, and maintain true allegiance to the US.
+
+Cannon Specs
+
+Material: Wrought Iron
+
+Bore: 3.0"
+
+Length: 69"
+
+Weight: 820 lbs
+
+Projectile: 9.5 lbs
+
+Charge: 1.0 lb
+
+Velocity: 1,215' per second
+
+Range: 1,830 yds at 5º
+
+Manufactured by the Phoenix Iron Company, Phoenixville, Pennsylvania, the rifle barrels were produced using a unique rolling process, making them extremely durable and resistant to bursting.
+
+Please visit the Yellowstone Gateway Museum, 118 W. Chinook St., 222-4184, for more information about these and other Park County veterans.
+
+Erected by Yellowstone Gateway Museum.

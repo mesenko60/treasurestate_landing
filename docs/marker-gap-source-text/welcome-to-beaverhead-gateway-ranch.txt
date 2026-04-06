@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193129
+Slug: welcome-to-beaverhead-gateway-ranch
+Title: Welcome to Beaverhead Gateway Ranch
+Subtitle: Ancient Grazing Lands Today
+Town: Twin Bridges
+County: Madison
+Lat / Lng: 45.3746, -112.46185
+Topics: 
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+Many of the rangelands in this valley still look largely as they did even before the Lewis and Clark Expedition walked here. Yet people and animals have traveled through and use the lands around you since prehistoric times. Montana Highway 41, and several other roads here, began as aboriginal trails that converged near the landmark now called Beaverhead Rock. It was the sight of this natural limestone outcrop that brought long-sought relief to the Corps of Discovery in 1805. Barely 60 years later, the pathway here had become part of the well-traveled Montana-Utah Road. Originally used by ranchers, it was later a primary shipping route after gold was discovered in nearby Grasshopper and Alder Gulches in the early 1860s. For a 22-year period in the mid-1800s, the present-day ranchlands also contained a hotel, saloon, post office and stage coach stop. For most of the last 200 years, these landscapes have continued to sustain livestock and wildlife, both coexisting much as prehistoric animals did when grazing together here millions of years ago.
+
+Today, the Beaverhead Gateway Ranch borders federal land and Beaverhead State Park. The ranch features an 118-acre wetland, teeming with birds and wildlife year-around, developed by the Montana Department of Transportation in 1997. With the help of a program called Undaunted Stewardship®, the private ranch property is managed so that livestock grazing will sustain historic vegetative patterns and enhance wildlife and waterfowl habitat. Welcome to a glimpse of this area's ghosts, its life and its future-enjoy your visit.
+
+The lands here have yielded some of the best discoveries in North America of the remains of small mammals that lived at least 37-38 million years ago. Some of the species found here are new to science, and still haven't been found elsewhere. Today, these lands continue to be used for grazing by numerous species of wildlife, including an occasional moose, mule deer, and pronghorn antelope.
+
+Erected by Undaunted Stewardship.

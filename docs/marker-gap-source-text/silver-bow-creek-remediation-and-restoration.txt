@@ -1,0 +1,45 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 183608
+Slug: silver-bow-creek-remediation-and-restoration
+Title: Silver Bow Creek Remediation and Restoration
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.09264, -112.808
+Topics: 
+Year erected: 2010
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+This sign was dedicated in fall 2010 to the purpose and goals of the Silver Creek environmental cleanup.
+
+• Remedial cleanup covers 22 stream miles of Silver Bow Creek, extending from Butte to the Warm Springs Ponds.
+
+This work is funded from a settlement with Atlantic Richfield Corporation (ARCO) completed under federal Superfund law.
+
+• The Silver Bow Creek remediation and restoration project is over $120 million.
+
+More than 80 people a year have been employed during the decade plus remediation and restoration work.
+
+• Trout have returned to portions of the creek and deer, elk and other wildlife are regularly seen on site. A mink and trumpeter swan were also seen in the remediated wetlands, indicating the ecosystem is returning.
+
+• The remediation and restoration of Silver Bow Creek, perhaps the largest project of its type in the United States, has won local, national and international awards for environmental excellence.
+
+• Silver Bow Creek remediation and restoration has been conducted by the Montana Department of Environmental Quality, in partnership with the Natural Resources Damage Program of the Montana Department of Justice and the Greenway Service District, and in consultation with the U.S. Environment Protection Agency.
+
+• Century old contamination was caused by flood events that discharged tailings and other mine wastes containing elevated concentrations of metals to Silver Bow Creek. These toxic discharges polluted the stream and floodplain, eliminating aquatic life.
+
+Since the 1999 start of remediation and restoration of Silver Bow Creek, significant improvements have occurred in the ecosystem including :
+
+Improved Water Quality - The water quality of both surface water and groundwater within the area has improved greatly compared to pre-cleanup levels. The cleanup of Silver Bow Creek along with upstream cleanup work in Butte is responsible for the improvement in stream quality. Sampling of Silver Bow Creek in the remediated areas found no metals concentrations above drinking water standards and metals concentrations much closer to meeting aquatic life standards than prior to cleanup.
+
+Stabilized Stream Channel - The new stream channel constructed in Silver Bow Creek has been successful and vegetation is well established on its banks. Pools and other habitat features added by restoration funding are functioning as designed and providing increased aquatic habitat diversity.
+
+Better Biological Diversity - Biological indicators such as aquatic insect diversity already show improvement from cleanup efforts completed at the site. Algal composition has also changed since remedial actions have begun with a greater presence of species that are sensitive to metals.
+
+Administrative Success - The State of Montana has shown that it can manage both remedy and restoration activities as one integrated project and still maintain clear distinctions between the funding sources for accounting purposes.
+
+Successful Revegetation - Through replacement of tailings and contaminated soils in the floodplain of upper Silver Bow Creek with clean materials and organic matter, revegetation efforts have been successful. Grasses and plants are well established through much of the remediated area, and the supplemental plantings resulting from activities funded by restoration grants have enhanced habitat. As the construction workers have revegetated the area, they have also implemented an aggressive weed management program.
+
+Erected 2010 by Montana Department of Transportation.

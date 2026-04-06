@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 180831
+Slug: keep-watching-the-skies
+Title: Keep Watching The Skies!
+Town: Silver Bow
+County: Silver Bow
+Lat / Lng: 45.83496, -112.68385
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+For a time during the Cold War, civilian volunteers were important to the nation's defense. The U.S. Air Force relied on citizen volunteers to watch the skies for bombers from the Soviet Union. The Ground Observer Corps was made up of civilians from all walks of life who were interested in civil defense. The Air Force officially activated the Corps in 1952 under Operation Skywatch. Armed with binoculars, the aircraft identification guide, and a plastic card that helped to determine altitude and distance, skywatchers served, sometimes in sub-zero weather, in two hour shifts on rooftops, towers, balconies or wherever they had a clear unobstructed view of the sky. When a volunteer spotted an unidentified aircraft, he or she telephoned the information into a filter center, which plotted the data and integrated information received from other skywatchers. It the identity of the plane could not be determined, the filter center contacted the nearest Air Force base which scrambled jet fighters to intercept the bogie. From 1952 to 1959, the Air Force depended on this system to augment its national defense efforts. Ground Observer Corps volunteers received medals and commendations for the Air Force based on the number of hours they volunteered each year.
+
+Military strategists believed Montana's wide open spaces and space population made an ideal air route for a potential air attack on the United States by the Soviet Union. Montanans rose to the call when Operation Skywatch began in 1952. At its peak in 1954, nearly 12,000 Montanans throughout the state volunteered either as skywatchers or in one of the two filter centers in Billings and Helena. Many of those were housewives and teenagers. The nearby community of Divide boasted a group of dedicated skywatchers. In 1955, Divide volunteers complained to the Air Force that they hadn't seen an airplane in over a month and that their skills as skywatchers had become rusty. In response a few days later, 13 jet fighters from Malmstrom Air Force Base in Great Falls buzzed the Divide observation post to provide the volunteers with some practical experience.
+
+By 1959, improved radar technology and the establishment of radar bases throughout the country rendered the Ground Observer Corps obsolete and it was disbanded. One Kalispell resident told an interviewer that of her experience as a skywatcher: "It is important and we learned something as well with experiencing the feeling of having accomplished something for the good of the country and well-being of our fellow men."
+
+The marker is in the distance near the American Flag pole.
+
+Erected by Montana Department of Transportation.

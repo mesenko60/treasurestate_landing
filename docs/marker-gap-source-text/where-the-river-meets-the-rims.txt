@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 167882
+Slug: where-the-river-meets-the-rims
+Title: Where the River Meets the Rims
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79819, -108.48756
+Topics: 
+Year erected: 
+Erected by: Western Heritage Center
+
+--- Inscription (as stored for the site) ---
+
+River of the "Yellow Stone"
+
+The snowfall in the mountains surrounding Yellowstone National Park feeds the Yellowstone River and its tributaries. Along the Yellowstone River's 678 miles are changes in water temperature, turbidity (sediment) and fish species. Near Billings the Yellowstone River begins its transition to warmer water and wider braided channels, where you might as easily hook a brown trout (a cold water species) as a sauger (a warm water species). The Yellowstone's flow at Billings, at mile 194 varies from 2500 cubic feet per second (cfs) during winter months to over 25000 cfs during late spring flooding.
+
+Called La Roche Jaune by earlier French fur traders, the "River of the Yellow Rock" or "Yellow Stone" River, takes its name from the distinctive orange and tan colored rimrocks rising from the river valley.
+
+The Rimrocks
+
+A visitor returning to Billings in 1926 after a long absence was amazed by the growth of the city, but then commented, "The Rimrocks haven't changed much." The cliffs or rims surrounding Billings are composed of cemented layers of fine-grained sand and silty mud known a Upper Cretaceous Eagle Sandstone, deposited 70 to 80 million years ago in the offshore bars of a great inland sea. The rimrocks north of the city where Swords Park is located tilt to the north toward Alkali Creek.
+
+No Country Like Crow Country "The Crow (Apsaalooke) Country is in exactly the right place. It has snowy mountains and sunny plains, all kinds of climates and good things for every season. When the summer heat scorches the prairies, you can draw up under the mountains, where the air is sweet and cool, the grass fresh, and the bright streams come tumbling out of the snow banks. There you can hunt the elk, the deer and the antelope when their skins are fit for dressing, there you will find plenty of white (silver tip Grizzly) bears and mountain sheep. In the autumn when your horses are fat and strong from the mountains and pastures, you can go down into the plains and hunt the buffalo, or even trap beaver on the streams. And when winter comes on, you can take shelter in the woody bottoms along the rivers, or you can winter in the Wind River Valley where there is salt in abundance. The Crow Country is in exactly the right place. Everything good is to be found there. There is no country like Crow Country." -- Oration by Crow Chief Arapooish cited in The Adventures of Captain Bonneville by Washington Irving, 1837
+
+"From the rim rocks can be obtained on of the most remarkable views of the city I have every seen and I have spent the past several years traveling over the nation. At one's feet lies your snug little city, bright and above in the sunshine. Every detail can be seen distinctly..." -- Reverend Dr. Aasgaard, Norwegian Lutheran Church, June 1924
+
+Erected by Western Heritage Center.

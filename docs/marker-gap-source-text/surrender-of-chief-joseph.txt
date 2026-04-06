@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142801
+Slug: surrender-of-chief-joseph
+Title: Surrender of Chief Joseph
+Town: Chinook
+County: Blaine
+Lat / Lng: 48.37803, -109.21217
+Topics: 
+Year erected: 1930
+Erected by: U.S. Congress
+
+--- Inscription (as stored for the site) ---
+
+From where the sun now stands I will fight no more forever.
+
+October 5 1877 Surrender of Chief Joseph to Colonel Nelson A Miles
+
+To the valor and devotion of those both red and white who struggled here
+
+Erected by the Congress of the United States
+
+Under the authority of an Act approved April 15, 1930
+
+Erected 1930 by U.S. Congress.

@@ -1,0 +1,60 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 202998
+Slug: clarks-footprints-to-eastern-montanas-future
+Title: Clark's Footprints To Eastern Montana's Future
+Subtitle: Clark on the Yellowstone
+Town: Glendive
+County: Dawson
+Lat / Lng: 47.1252, -104.69038
+Topics: exploration, native-american, industry
+Year erected: 
+Erected by: Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission
+
+--- Inscription (as stored for the site) ---
+
+"On our return we shal probably pass down the yellow stone river, which from Indian informations, waters one of the fairest portions of this continent."
+
+— Captain Meriwether Lewis, letter to President Thomas Jefferson, dated April 7, 1805 and sent from Fort Mandan via keelboat on its return trip to St. Louis
+
+Clark on the Yellowstone
+
+Captain Clark led a party of thirteen eastward to the Yellowstone River. The group included Sergeant Pryor, and Privates Gibson, Bratton, Hall, Labich, Shannon, Shields and Windsor. Toussaint Charbonneau, Sacagawea and their son, Jean Baptiste (Pomp), and Clark's servant, York, were also with the party. Clark noted that "the indian woman who has been of great Service to me as a pilot through the Country recommends a gap in the mountain more South which I shall cross." Clark's party entered the watershed of the Yellowstone River, near the present-day Bozeman Pass, and reached the river on July 15, 1806.
+
+11,500 years ago - Paleo Indians arrived in the Eastern Montana region. Early remains have been found in the Lindsay area.
+
+Mid 1700's - Fur traders came onto the scene due to the popularity of beaver hats.
+
+1803 - Louisiana Purchase which brought the area soon to be known as Montana into land owned by the United States. First known encounter of local tribes by French fur traders.
+
+1805 - Lewis and Clark and the Corps of Discovery enter Montana.
+
+1806 - Lewis and Clark pass through Montana on their return trip.
+
+1819 - Steamboat traffic was introduced on the Missouri River.
+
+1828 - Fort Union Trading Post was built near the confluence of the Yellowstone and Missouri Rivers, dominating the fur trade on the Upper Missouri River.
+
+1862 - Fisk Wagon Trail established connecting upper Midwest to Fort Benton.
+
+1864 - Montana becomes a territory.
+
+1876 - Battle of the Little Big Horn.
+
+1881- First train stops in Glendive, Montana.
+
+1889 - Montana becomes a state.
+
+1909 - In April, the headgates constructed by the Bureau of Reclamation for Irrigation Diversion Project were opened for the first time delivering water to 67 farms in Eastern Montana.
+
+1910 - Homesteading boom is in full swing, and agriculture replaces mining as Montana's top industry.
+
+1951 - Oil boom begins in Williston Basin, producing from the highly productive fields of western North Dakota, southern Saskatchewan, and eastern Montana.
+
+1969 - Three major railroads, the (leftmost of three markers in the Clark on the Yellowstone kiosk)
+
+Northern Pacific, the Great Northern, and the Burlington, merge as Burlington Northern.
+
+2003 - 2006 200 year anniversary of the Lewis and Clark Expedition.
+
+Erected by Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission.

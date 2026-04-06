@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 185047
+Slug: anaconda-road
+Title: Anaconda Road
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.0164, -112.53307
+Topics: 
+Year erected: 
+Erected by: St. Mary's Neighborhoods
+
+--- Inscription (as stored for the site) ---
+
+Copper Is King
+
+Future Copper King Marcus Daly acquired his first property in the area in 1880, a silver mine near the top of Butte Hill called Anaconda. Although the Anaconda was purchased as a silver mine, Daly soon discovered rich veins of copper. During the 1880s and 1890s, copper became a tremendous commodity as the country and world began to electrify. Daly bought out smaller mining interests on the Butte Hill that surrounded the Anaconda. Under Daly's leadership, and back-breaking labor of his miners, Butte would become a leading copper producer in the world.
+
+Faith and Education As the population and the number of families grew, homes and boarding houses were built along the Anaconda Road and in Dublin Gulch. The need for schools and churches became essential. With deep religious faith, people of the Anaconda Road soon grew to love St. Mary's Parish. From these early beginnings, a great neighborhood with a rich history developed. The people from the neighborhood still display the traits inherited from those who came before. Such is the legacy of St. Mary's neighborhoods.
+
+An Opportunity
+
+The world demand for copper required a demand for miners in Butte. As the Anaconda Mine and Butte Hill developed and flourished, the Cornish, Welsh, Italian, Norwegian, Croatian, Serbian, Slovenian and especially Irish came seeking opportunity. Possessing traits necessary for the development of family and community - integrity, honesty, perseverance, strong morality, and an impeccable work ethic, many of these immigrants found their American dream. The miners, with lunch buckets under their arms, walked up the road to the Anaconda, Neversweat, High Ore, Diamond, Badger, and later the Kelley mines. They worked 8- or 10-hour shifts in the bowels of the earth in often dangerous conditions so they and their families could have a better life.
+
+Erected by St. Mary's Neighborhoods. (Marker Number 1.)

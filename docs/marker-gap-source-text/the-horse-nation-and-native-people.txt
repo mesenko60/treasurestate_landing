@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163882
+Slug: the-horse-nation-and-native-people
+Title: The Horse Nation and Native People
+Town: Miles City
+County: Custer
+Lat / Lng: 46.40508, -105.85222
+Topics: 
+Year erected: 
+Erected by: Range Riders Museum
+
+--- Inscription (as stored for the site) ---
+
+The modern day horse found its way to the Americas on Spanish ships around 1680, landing on Mexican shores. Some horses escaped the Conquistadors, and Native Americans quickly discovered the utility of the horse. The Plains Indians became experts at horse riding. By the late 1700s, every tribe in the West was mounted. The Horse Nation formed spiritual bonds with the Native Peoples who embraced them as a brother in the spirit. The images of horses on ceremonial objects of Native Peoples signify beauty, energy, and healing powers, and represent this spiritual connection and deep respect for the horse.
+
+The Tsehtsehstaheso (Cheyenne) ancestral land was in Ontario, Canada. They were forced out by the Assiniboine, Ojibwa and Cree who were already in possession of guns. The Cheyenne tribe eventually made their way to North Dakota. By ca. 1710 horses had first reached the Arapaho and then the Tsehtsehstaheso in 1730. The Tsehtsehstaheso were still in North Dakota at their village - the Biesterfeldt Site - during this time. Another tribe called the Sotae'eo'o were coming in from southern Canada and met the Tsehtsehstaheso. These two tribes were strangers to the others, but their language was identical with some slight differences in dialect. Together these two tribes moved onto the Great Plains and soon became a single tribe, "The Cheyenne Tribe." The Tsehtsehstaheso were already becoming a horse culture. In 1819 a small band of young Blackfeet men met with the Cheyenne on their way to steal horses from the Comanche in which the raid was successful. They returned to the Cheyenne camp and told great stories of the horse herds with the Southern Tribes. Immediately Cheyenne men gathered and headed south. They raided the Kiowa, Comanche, and Apache tribes and drove the horse herds north.
+
+The horse soon became a symbol of wealth for the Cheyenne, often giving away the horses as gifts. The more horses a man had, he was considered rich. In Battle, the Cheyenne would decorate the horses with charms and designs so that the rider would come out of battle victorious. The horse became a part of the Cheyenne and helped them win many battles with their enemies. In Cheyenne as we call the horse mo'éhno'ha: horse. This term derives from Algonquian 'elk' - wemaškoosw - plus a noun, the final meaning 'dog'-a'Oemwa. In Cheyenne, historical development of the final o'ha(m) extended to mean 'domesticated animal'. Apparently to the Cheyenne, a horse looked something like and elk, but the horse was a domesticated animal and so we might say that the literal meaning (at a late stage of etymology) for mo'éhno'ha is '\domesticated elk'.
+
+Christian Barthelmess, Fort Keogh Post Photographer
+
+Christian Barthelmess (1854-1906) was a soldier, musician, and photographer. Barthelmess developed a keen interest in the customs and lifestyle of the Indians living on the Western Frontier. He documented Native Americans at many of the Western posts where he took hundreds of photographs, some of them commissioned by the government. In 1888 he was stationed at Fort Keogh, Montana and was the post photographed, continuing with the job after his retirement in 1903 and until his death in 1906. Although he has a studio at Fort Keogh, most of his photographs were framed with his subjects in their natural environment. This was unusual for that time, and it made Barthelmess one of the most important chroniclers of the way people and life looked along the Frontier in the last quarter of the 19th Century. Today his pictures are an important part of collections at the National Museum of Natural History, the Smithsonian Institution, the Montana Historical Society and the Range Riders Museum in Miles City, Montana. The Range Riders Museum was established by his son and was run for many years by his grandson, Bob Bartheless. As of 2020 the museum is still in the family, operated by his great-granddaughter,
+
+Bunnu Miller, and her husband Gary.
+
+Credit to National Museum of the American Indian, exhibit 2011: A Song for the Horse Nation: Horses in Native American Culture.
+
+Erected by Range Riders Museum.

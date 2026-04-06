@@ -1,0 +1,36 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 116506
+Slug: the-night-the-earth-cracked
+Title: The Night the Earth Cracked
+Subtitle: The Stuff of Fairy Tales
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.87223, -111.341
+Topics: events
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+A quiet August night in a popular Forest Service campground just below Hebgen Dam. Nearby Cabin Creek murmurs softly, and the moon filters through the pines.
+
+Abruptly, the ground trembles, then jolts...then with a roar a crack appears, slicing through the campground and across Cabin Creek. The earth shudders like gelatin and trees whip back and forth as the crack widens, the earth on one side drops down between 5 to 20 feet. As the quake subsides, confused and frightened campers gape at the newly-exposed wall of earth and a waterfall!
+
+Subsidence along the Hebgen Fault created a waterfall at Cabin Creek. It was short-lived, within a week the creek had cut down through the scarp.
+
+The Hebgen Lake Fault Block covers some 125 square miles and extends across the West Yellowstone Basin. The earth stretched causing one side of the fault to drop.
+
+The 20-foot cliff in front of you appeared suddenly on the night of August 17,1959. It is a fault scarp created when the Hebgen Lake Fault Block (a large section of the Earth’s crust) dropped. The descent was a rough one, as the bedrock walls of the deep fault rubbed against each other. It may even have dropped in abrupt jerks: several eyewitnesses said it felt as if the ground were repeatedly dropping out from under them.
+
+Scarps such as this one are clues to the dynamic history of the Basin and Range Province. Old scarps throughout this area tell of other earthquakes that created similar displacements.
+
+Fault Types
+
+Geologists classify faults by the direction in which their sides displace.
+
+For example, the San Andreas Fault in California is a strike-slip fault, in which the eastern side of the San Andreas Fault is moving toward the southeast and the western side is moving toward the northwest.
+
+Thrust faults occur when one side pushes up and over the other.
+
+The fault at nearby Cabin Creek Campground is what is known as a normal fault, where stretching of the Earth’s crust causes one side of the fault to drop or subside relative to the other.

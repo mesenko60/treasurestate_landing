@@ -1,0 +1,66 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161037
+Slug: a-fine-day-for-a-sail
+Title: A Fine Day for a Sail
+Subtitle: Lewis and Clark on the Missouri
+Town: Roy
+County: Fergus
+Lat / Lng: 47.63026, -108.6865
+Topics: exploration, nature
+Year erected: 
+Erected by: Bureau of Land Management and The University of Montana, Western
+
+--- Inscription (as stored for the site) ---
+
+The Lewis and Clark Expedition was sailing when it passed by here!
+
+We set out at a early hour this morning and proceed on principally by the chord untill about 9 A.M. when a fine breeze sprung up for the S.E. and enabled us though the ballance of the day to employ our sails to advantage... Meriwether Lewis, May 24, 1805
+
+An ancient seaside landscape
+
+Sailing would have been even better over 70 million years ago!
+
+During much of the Cretaceous Period, an expedition across North America would have required ocean-going boats. Shallow seas advance from both the north and south and sometimes met to completely split the continent. At the same time, the early Rocky Mountains were rising. Some of the mountains were explosive volcanoes, spewing volcanic ash across the whole area. Dinosaurs stomped across the land. What a time!
+
+The modern landscape
+
+...The country high and broken, a considerable portion of black rock and brown sandy rock appear in the faces of the hills...the whole producing but little grass... - Meriwether Lewis, May 23, 1805
+
+The present hills and river valley were sculpted by erosion of the old Cretaceous sedimentary rocks. Most of that happened in the last 5 million years. When Lewis and Clark sailed by in 1805, the Missouri River was not where you see it today! It was flowing up against the cut bank on the opposite (south) side of the valley.
+
+Since then, the river has snaked across its floodplain (the valley floor), as all meandering rivers will if they can. Across the river you can see a channel cut into older rocks. The little draw at its head probably used to angle down to the Missouri River when it was on the other side of the valley.
+
+The Influence of ice In the last two million years, glaciers advanced several times from the north. At least once the ice extended past this location. A melting glacier dumped the scattered large boulders you can see around the main kiosk and on the hills all around here.
+
+Salts
+
+Sodium, calcium, and magnesium salts originally deposited in the ancient marine sediments are still dissolving out of the rocks into modern streams and groundwater. The salts plagued the Lewis and Clark Expedition all across central and eastern Montana. One day earlier, Lewis described the small tributaries to the Missouri:
+
+...they afford but little water...and that is so strongly impregnated with these salts that it is unfit for use;...I have tryed it by way of experiment & find it moderately pergative, but painfull to the intestens in it's operation. - Meriwether Lewis, May 23 1805
+
+Big clear gypsum crystals litter some exposed surfaces of the Bearpaw Shale. They grew there from minerals dissolved out of the shale. Lewis and Clark's journals consistently misidentified this mineral as "quarts" (quartz)
+
+Geologists map of the Late Cretaceous Rocks here as two formations.
+
+The soft sedimentary rocks of the hills and riverbanks are mud and sand eroded from the young Rocky Mountains. They were transported eastward by rivers and deposited here in the seaway and its coastal plain.
+
+Bearpaw Shale Over 70 million years ago, the Late Cretaceous seaway covered this whole area. Mud that collected offshore in the sea is now soft, gray, thinly layered shale. It erodes to form the gently rolling hills all around you. Bearpaw Shale makes a "gumbo" soil that is very sticky and slippery when wet.
+
+Judith River Formation Before the Bearpaw shale, about 75 million years ago, the sea was just a little east of here. The lighter colored sand and mud and thin black coal layers of this formation record estuaries, deltas, swamps, lagoons and river floodplains. The rocks are famous for dinosaur fossils - over 40 different species so far!
+
+The Geologic Time Scale (not shown to scale)
+
+• Divisions of geologic time were defined in the 19th Century by major changes in the fossil record.
+
+• Most of the boundaries are marked by worldwide extinction events.
+
+• Numerical dates were added in the 20th Century using modern rock-dating techniques.
+
+Mesozoic Era 250 million years ago: Triassic 208 million years ago: Jurassic 144 million years ago: Cretaceous Inland seas advance and retreat across North America, Rocky Mountains formed, Judith River and Bearpaw Shale sediments deposited in the Late Cretaceous
+
+Cenozoic Era 66 million years ago: Tertiary Erosion began, ancestral Missouri River drainage established 2 million years ago: Quaternary Ice Ages, present landscape and river established
+
+Present Day
+
+Erected by Bureau of Land Management and The University of Montana, Western.

@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141650
+Slug: lewis-and-clark-caverns-entrance-building
+Title: Lewis and Clark Caverns Entrance Building
+Town: Cardwell
+County: Jefferson
+Lat / Lng: 45.8225, -111.8513
+Topics: 
+Year erected: 
+Erected by: Montana State Parks
+
+--- Inscription (as stored for the site) ---
+
+This is the former site of the Lewis and Clark Caverns Park Entrance Building, a simple A-frame which welcomed visitors to the park for over fifty years.
+
+In 1939, park management began plans to build a greeting center and caretaker residence at the entrance to the park. These plans were put on hold when the park closed during the latter half of World War II. However, in 1948, the State Parks Commission finally hired its own architect, Burt Gewalt, to begin work on a park entrance building, which was completed in 1950. Gewalt's work can also be found in Glacier National Park at Lake McDonald.
+
+This building became Montana's first park visitor entrance building. Gewalt's A-frame design was heavily influenced by Civilian Conservation Corps (CCC) buildings of the Great Depression. The rock work, drinking fountain, flagstaff, sidewalks, parking spaces, signs, and landscaping were all reminiscent of the CCC era architecture.
+
+Erected by Montana State Parks.

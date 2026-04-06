@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123740
+Slug: a-story-of-fires-to-be-continued
+Title: A Story of Fires… to be continued
+Town: Wisdom
+County: Beaverhead
+Lat / Lng: 45.6545, -113.7805
+Topics: disasters, exploration
+Year erected: 
+Erected by: Forest Service, U.S. Department of Agriculture
+
+--- Inscription (as stored for the site) ---
+
+"on each side of those glades the timber is small and great proportions of it killed by the fires" - William Clark, July 8 1806
+
+Two hundred years ago William Clark saw a forest of young trees, many killed by fire. Very open stands of trees were probably common along the meadows. Scars in tree rings show that minor fires occurred in Trail Creek every 30 to 40 years. These low intensity fires cleared underbrush and thinned the forest. Since the early 1900s however, we have prevented and suppressed forest fires. Today's forest matured in the absence of fire. The stands are denser and contain more old trees, dead wood, and underbrush than they did in Clark's day.
+
+Trees established 130-200 years ago are now mature. As they weaken and die, forest insects and diseases take hold. Dead wood builds up fuel, and underbrush creates a "ladder" for fire to travel from the ground into the forest canopy. Drought adds to the fire danger. When a fire starts, it can quickly grow into a large, severe wildfire. Since 2000, high intensity wildfires have burned thousands of acres in and around Trail Creek.
+
+"Blazing" A Trail
+
+In Trail Creek, fires have burned more frequently in the last 1,700 years than might be expected due to lightning.
+
+Indians used fire in many ways. Fires started by Indians probably kept the forest open, improving travel for large parties of hundreds of people and their horses. For centuries this was the main route between the Bitterroot and Big Hole valleys.
+
+Erected by Forest Service, U.S. Department of Agriculture.

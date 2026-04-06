@@ -1,0 +1,56 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86806
+Slug: peace-through-unity
+Title: Peace Through Unity
+Subtitle: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.57084, -107.42807
+Topics: native-american, military
+Year erected: 
+Erected by: National Patk Service
+
+--- Inscription (as stored for the site) ---
+
+Indian descendants of participants in the Battle of the Little Bighorn helped form the vision of the Indian Memorial. The “Peace Through Unity” theme was conceived by the late Enos Poor Bear, Sr. and Austin Two Moons. Together, they were an inspiration for others and instrumental in providing their wisdom, guidance, and prayers toward the important goal of an Indian Memorial at Little Bighorn Battlefield National Monument.
+
+The seeds for peace and reconciliation were sewn earlier in 1926, during the Semi-Centennial observance of the Battle of the Little Bighorn, when former adversaries, including General Edward S. Godfrey, 7th Cavalry, and White Bull, nephew of Sitting Bull, both veterans of the battle, gathered on the battlefield, shook hands, exchanged gifts, and symbolically buried the hatchet.
+
+On June 25, 1985, Austin Two Moons started the annual Prayer for World Peace event. Over the years the sacred ceremony (which is open to the public) has become an important tradition at the battlefield. After Austin’s death in 1994, the ceremony was passed to Donlin Many Bad Horses, Northern Cheyenne elder, who now carries on the important prayer ceremony annually on June 25.
+
+Before me Peaceful
+
+Behind me Peaceful
+
+Over me Peaceful
+
+Under me Peaceful
+
+All around me Peaceful
+
+American Indian Prayer
+
+“We want peace on earth, and that’s what I have strived for . . . I’ve prayed here every June 25th; every summer for the future of our young . . . I don’t want no war here again in the United States. I need your help . . . . to get your minds and your hearts together. Pray together. Ask the creator for peace throughout the country and throughout the world.”
+
+- Austin Two Moons, Northern Cheyenne Elder, November 11, 1993
+
+“Forty years ago I fought Custer . . . until all were dead . . . . I was then the enemy of the whiteman. Now I am the friend and brother, living under the flag of our country.”
+
+- Chief Two Moons, Northern Cheyenne, June 25, 1916
+
+“The hatchet has been with the Red race, the symbol of war. We now unite in the ceremony of burying the hatchet, holding it a covenant of our common citizenship and everlasting peace.”
+
+- General Edward S. Godfrey, 7th Cavalry ret., June 26, 1926
+
+“If this memorial is to serve its purpose, it must not only be a tribute to the dead; it must contain a message for the living . . . . power through unity
+
+. . . . ”
+
+- Enos Poor Bear, Oglala Lakota Elder
+
+“Give them now the flowering stick that they may flourish, and the sacred pipe that they may know the power that is peace.”
+
+- Black Elk, Oglala Lakota
+
+Erected by National Park Service.

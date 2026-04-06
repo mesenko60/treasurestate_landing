@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142530
+Slug: an-island-on-the-plains
+Title: An Island on the Plains
+Subtitle: The Bears Paw Mountains
+Town: Big Sandy
+County: Chouteau
+Lat / Lng: 48.17941, -110.11166
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Fifty-five to thirty-four million years ago, volcanoes erupted in several areas of central Montana. The upwelling of magma which fed these volcanoes was largely responsible for the Bears Paw Uplift and for several other isolated mountain ranges in central Montana. In some places, as the molten rock pushed its way upward toward the surface, it up-arched the layered rocks above it to form a magma dome called a laccolith. In other places, the magma rose vertically to form dikes. The dikes now look like old fallen-down stone walls protruding up through the grass of the ranchlands. Some of the magma crystallized into shonkinite, a rare rock, named for exposures near the town of Shonkin, Montana. Some of the laccoliths eroded to form large buttes, the most prominent are Square Butte northeast of Box Elder and Centennial Mountain north east of Big Sandy. While the mountains were rising, an east-west rift developed near the crest, and rocks slid both to the north and south on Cretaceous marine shales. The sliding produced many faults in the adjacent Great Plains. The faults south of the mountains are especially prominent; while most of those to the north are covered by glacial deposits.
+
+It is not known how the mountain range got its name. According to one legend, many generations ago, an Indian man killed a deer while hunting in the mountains. Before he could return to his camp, he encountered a bear, which knocked him down and pinned him to the ground. The hunter appealed to the Great Spirit for help, who answered by filling the heavens with lightning and thunder, which killed the bear and severed his paw, releasing the hunter. Or perhaps one of the range's mountains resembles a bear's paw and gave the mountain range its name. Another tale states that to Indians looking down from the summit of one of the peaks, the ridges spread out below them resembled a bear's paw.
+
+Geo-Facts:
+
+• The Bears Paw Mountains were formed about 40 to 50 million years ago.
+
+• The oldest rocks exposed in the mountain range are about 350 million years old and are composed of Madison limestone.
+
+• Glacial ice during several glacial periods reached the lower slopes of the mountains except on the south.
+
+Geo-Activity:
+
+• See if you can spot any dikes, which look like deteriorating stone walls of ancient castle popping up throughout the grasslands. These dikes are cooled magma and are one clue that the area was once the site of significant volcanic activity.
+
+Erected by
+
+Montana Department of Transportation.

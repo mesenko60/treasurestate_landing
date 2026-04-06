@@ -1,0 +1,26 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161481
+Slug: the-little-shell-chippewa
+Title: The Little Shell Chippewa
+Subtitle: Tribe in Search of Recognition
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81048, -110.67256
+Topics: 
+Year erected: 
+Erected by: Missouri Breaks Interpretive Center
+
+--- Inscription (as stored for the site) ---
+
+You stand now on the ancestral homeland of nomadic native tribes whose territories overlapped in the Missouri River area-all of them drawn by the rich diversity of life sustained by the river itself. Blackfeet, Gros Ventre, Sioux and Assiniboine all considered this area home. So, too, did the Little Shell Chippewa, a tribe comprised of the Chippewa and the Métis, ("May-Tee", a French word for "mixed blood").
+
+The story of the Little Shell begins with the Pembina Chippewa tribe which migrated westward from present-day Minnesota in the 1750s. The Pembina Chippewa settled in the Red River area overlapping Canada and North Dakota, where they adopted the customs of plains tribes. Many of the women married French and Scots-Irish fur trappers and traders, resulting in a new culture called the Métis.
+
+In 1892, the Little Shell Chippewa and Métis were based on the Turtle Mountain Reservation in Dakota Territory when Chief Little Shell refused to sell their land to homesteaders. The government retaliated by removing Little Shell and his followers fro the reservation membership list, leaving the group with no place to call home. They migrated westward to present-day Montana, hunting buffalo. Welcomed nowhere, they eventually scattered throughout central and northern Montana, and have worked ever since to reacquire formal recognition by the federal government.
+
+Seal of the Little Shell Chippewa Tribe
+
+The Little Shell tribal flag and seal features the buffalo facing west to symbolize the westward migration of the Pembina Chippewa. The Eagle Staff represents the traditional Chippewa culture and spiritualism. The "Assiniboia" flag reflects the mixed-blood heritage of the Little Shell Chippewa: the reds and white background indicates the mixing of Native and non-Native, the "fleur-de-lis" represents the French ancestry and the "shamrock"" represents the Irish and Scot ancestry.
+
+Erected by Missouri Breaks Interpretive Center.

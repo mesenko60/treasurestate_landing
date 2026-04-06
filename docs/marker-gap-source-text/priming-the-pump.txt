@@ -1,0 +1,28 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161579
+Slug: priming-the-pump
+Title: Priming the Pump
+Subtitle: Public Works in Fort Benton
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81034, -110.67253
+Topics: 
+Year erected: 
+Erected by: Missouri Breaks Interpretive Center
+
+--- Inscription (as stored for the site) ---
+
+Civilizations have always established themselves around water sources, and the founding of Fort Benton continued the pattern. As the population grew and the community developed, a water treatment plant became necessary.
+
+Montana's first water treatment plant was constructed in 1888 where the Interpretive Center stands today. Fort Benton's water treatment plant used an ancient technology developed by the Egyptians as early as 1500 B.C., which used alum (or potash). River water was pumped into a series of settling ponds, where alum was added, causing sediments to fall to the bottom. The clear surface water was then pumped through wooden pipes to people's homes.
+
+By the time of the Great Depression, Fort Benton's entire water system-the state's oldest-was decaying and in need of repairs. In 1933, Congress created the Public Works Administration, and budgeted $6 billion for projects that would improve public welfare while also "priming the pump" for the nation's economy, by creating jobs and reviving industry. Modernizing Fort Benton's drinking water plant was one of the projects.
+
+The small circular brick building in front of you was built then, and served as the pump-house that pulled water from the river to the treatment system, which used chlorine to disinfect the water. In 1987, a newer water treatment plant was constructed down river from here, but the round pump-house was left intact.
+
+Fort Benton has remained in the forefront of water treatment solutions. Its current facility was the first municipal water treatment plant in the U.S. to use ultraviolet light as its primary means of making the river water clean and healthy to drink.
+
+"Tuesday afternoon a River Press reporter in quest of information strolled through the upper end of town, and doubtless obeying the law of gravitation soon found his steps directed toward the city water works plant. It is a neat comely brick building that attracts the attention of the visitor, and its thirty-inch smokestack that towers seventy feet in the air is suggestive of a manufacturing industry. Such, in fact, it is, for not only does it handle water in wholesale quantities, but manufactures light. Strange, isn't it, what man's ingenuity and inventive genius has accomplished in the modern days in which we are living." Fort Benton River Press, February 22, 1888
+
+Erected by Missouri Breaks Interpretive Center.

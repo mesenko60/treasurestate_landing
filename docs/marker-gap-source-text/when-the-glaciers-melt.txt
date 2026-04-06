@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 45058
+Slug: when-the-glaciers-melt
+Title: When the Glaciers Melt
+Town: Polebridge
+County: Glacier
+Lat / Lng: 48.79653, -113.65652
+Topics: nature
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Only about 26 glaciers remain from the 150 that were here in 1850. That number is dropping steadily. If the weather is clear, you might be able to see what is left of five glaciers in the Many Glacier Valley. As climate changes, both the visible and not-so-visible features of the park will be altered. In just a couple of decades, the view from this spot may look dramatically different.
+
+As climate warms, rainfall and snowfall are also likely to change. This will affect soil moisture, runoff and stream flow, as well as landscape disturbance processes such as fire and avalanches. These kind of changes will impact park ecosystems.
+
+Climate plays an important role in determining what flora and fauna exist in a habitat. Every species has a temperature range in which it can thrive. For example, the elevation where trees stop growing, known as treeline, is strongly related to temperature and moisture. As climate warms, more trees wil encroach on alpine meadows and treeline will migrate to higher elevations.
+
+Changes in the distribution of forest and other vegetation may cause animals to seek higher ground or to migrate north to find suitable habitat. Some impacts from climate change may not be well understood but it is clear that the landscape we see today will look different in the future.
+
+Earth's Rising Temperature
+
+It's Getting Hotter Faster!
+
+In the last 100 years the Earth's surface temperature has increased about 1.5°F, with accelerated warming in the last few decades. Recent years have been warmer yet, with the 6 hottest years on record, in rank order, being 2005, 1998, 2002, 2003, 2006, and 2004.
+
+We're Not Just Losing Ice!
+
+Habitat Change = Potential Species Loss
+
+The changes that are taking place will have a direct effect on many plants and animals. Vegetation from lower elevations and latitudes may move to higher ground and more northerly locations as climate warms. Wildlife populations will likely be forced to migrate along with the changing vegetation. In cold alpine environments, with no place to go, some species may not survive.

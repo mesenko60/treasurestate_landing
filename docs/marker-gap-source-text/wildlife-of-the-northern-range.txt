@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 40576
+Slug: wildlife-of-the-northern-range
+Title: Wildlife of the Northern Range
+Town: Gardiner
+County: Park
+Lat / Lng: 45.01916, -110.6913
+Topics: nature
+Year erected: 
+Erected by: This exhibit made possible by a generous grant to the Yellowstone Park Foundation in memory of Katie L. Rhoads
+
+--- Inscription (as stored for the site) ---
+
+Elk - Sometimes called "wapiti" (the Shawnee word for "one with a white rump"), elk are often seen in large herds in open areas where they graze on grasses and forbs. Bull elk have antlers that they shed every year. Each spring as the elk age, the new antlers grow larger, and the branching increases. Calves, born in June, are spotted for the first few months of their life, which helps camouflage the from predators.
+
+Bison - Bison, also called "buffalo," can weigh up to one ton, and both sexes have horns. Calves are born in late April and May and are reddish brown. Bison may appear tame and slow but are unpredictable and dangerous. Every year, a number of visitors approach bison too closely and are injured.
+
+Pronghorn - Pronghorn are unique to the plains of western North America. Both sexes of this distinctly colored animal have horns, but males have a black band from their eyes to their snout and also on their necks. Pronghorn have keen eyesight and escape predators by sprinting away at nearly 50 miles per hour, making them the fastest animal on the continent.
+
+Bighorn Sheep - Bighorn sheep live in rocky, cliffy terrain. The bottoms of their hooves are concave, which makes them sure-footed in this habitat. Males (rams) have distinctive curved horns, which become larger and more curled as they grow older. Females (ewes) have smaller horns that curve backward over their heads.
+
+Mule Deer - Mule deer are so named because of their large, mule-like ears. They also have black-tipped tails, leading some to call them "black-tailed deer." Males (bucks) have antlers, and females (does) do not. Mule deer are browsers, eating more leaves, twigs, and shrubs than grasses.
+
+Wolf - Reintroduced into Yellowstone in 1995, wolves have made a dramatic recovery. Wolves live in family groups, called packs, and hunt elk, bison, moose, and smaller animals cooperatively in their pack's territory. Wolves come in colors ranging from black to gray to white and have long legs, bushy tails, and short rounded ears. Five to seven pups are born in the spring and are cared for by the entire pack.
+
+Coyote - Coyotes are often seen in the park - and often mistakenly identified as wolves. Coyotes are smaller and more slender than wolves and have larger ears, which are pointed. Coyotes are most often seen alone or in pairs hunting for mice and voles in open meadows, although cooperative pack hunting for larger animals like deer and elk occurs in Yellowstone.
+
+This exhibit made possible by a generous grant to the Yellowstone Park Foundation in memory of Katie L. Rhoads.

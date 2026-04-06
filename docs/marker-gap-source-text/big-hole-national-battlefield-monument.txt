@@ -1,0 +1,57 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123812
+Slug: big-hole-national-battlefield-monument
+Title: Big Hole National Battlefield Monument
+Town: Wisdom
+County: Beaverhead
+Lat / Lng: 45.64725, -113.65216
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+On This Field 17 officers and 133 enlisted men of the 7th U.S. Infantry under its Colonel
+
+Bvt. Major General John Gibbon with 8 other soldiers and 36 citizens surprised and fought all day a superior force of Nez Perce Indians more than one-third of command being killed and wounded.
+
+To The officers and soldiers of the Army
+
+And Citizens of Montana Who fell at Big Hole
+
+August 9th, 1877 In battle with Nez-Perce Indians
+
+Killed 7th Infantry
+
+Captain William Logan 1st Lieut. James H Bradley, 1st Lieut. William English 1st. Sergt. Robert L. Foseworth, Co.G. 1st. Sergt. Frederick Stortz, Co.K.
+
+Sergt. Michael Hogan, Co. I. Sergt Wm. H. Martin, Co. C. Sergt. Wm. W. Watson, Co. F.
+
+Corporal Wm. H. Payne, Co. D. Corporal Robt. E. Sale, Co. C
+
+Corporal Daniel McCaffery. Co. I. Corporal Dominick O'Connor, Co. C
+
+Corporal Jacob Eisenhut, Co. D
+
+Musician Michael Gallaghar, Co. D. Musician Thomas Stinebaker, Co. K
+
+Artificer John Kleis, Co. K
+
+Privates: Matthew Butterly, Co. E. William D. Pomeroy, Co. F.
+
+James McGuire, Co. F. John O'Brien, Co. G.
+
+Gottlob Mauz, Co. G. McKinora L. Drake, Co. H.
+
+Hermann Broetz, Co. I. John B. Smith, Co. A.
+
+Sergt. Edward Page, Co. L. 2nd Cavalry
+
+H.S. Botsvack (?), Post Guide at Fort Shaw
+
+Citizen Volunteers
+
+L.C. Elliott, John Armstrong, David Morrow,
+
+Alvin Lockwood, Campbell Mitchell.

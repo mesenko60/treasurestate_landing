@@ -1,0 +1,69 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128182
+Slug: reliable-landmarks
+Title: Reliable Landmarks
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 45.23525, -112.63304
+Topics: exploration
+Year erected: 
+Erected by: Montana State Parks and University of Montana Western
+
+--- Inscription (as stored for the site) ---
+
+”…you will take careful observations of …objects distinguished by such natural marks & characters of a durable kind…”
+
+—President Thomas Jefferson
+
+There is a remarkable view from the crest of Clark's Lookout and it is easy to see why Clark chose this rocky outcrop. Look south to see the Blacktail Deer Range and the Tendoy Mountains; the Sweetwater and Ruby Ranges rise to the east; the Tobacco Root and Highland Mountains are to the north; and the Pioneer Mountains dominate to the west. These mountain ranges, and the valleys that lie between them, have been forming for approximately 20 million years as a result of the Earth's crust pulling apart (see cross section). The sinuous and shallow rivers that developed in these broad, flat valleys presented a time-consuming and demanding physical challenge for the Corps of Discovery. Clark noted in his journal that on August 11th they traveled 14 miles by water for 5 miles in a direct line. On August 12th he wrote:
+
+”…men complain verry much of the emence labour they arte obliged to undergo and wish very much to leave the river. I passify them.”
+
+—William Clark, August 12, 1805
+
+This exposed chunk of limestone originated as shell material that settled to the bottom of a shallow tropical sea, which covered the area about 360 million years ago. Look carefully at the rock and you might find the shells of animals that lived in this ocean. The limestone was heaved upward by movements along faults in the Earth during the process of mountain building. Similar faults have uplifted entire mountain ranges, including the ones you can observe from the top of Clark’s Lookout. The limestone has not been eroded away since it was uplifted and exposed because this rock type resists erosion in the dry climate of southwest Montana. Limestone comparable to that of Clark’s Lookout lies hidden beneath the sand and gravel that fills the Beaverhead Valley (see cross section).
+
+A Geologic Timeline of Clark's Lookout
+
+Phanerozoic Eon
+
+• Cenozoic Era
+
+Present (Clark stands on the exposed rock in August, 1805)
+
+Quaternary Period (about 2 million years ago)
+
+Tertiary Period (about 65 million years ago) (Uplift of the Clark’s Lookout rock begins)
+
+• Mesozoic Era
+
+Cretaceous Period (about 144 million years ago)
+
+Jurassic Period (about 208 million years ago)
+
+Triassic Period (about 245 million years ago) (the first dinosaurs)
+
+• Paleozoic Era
+
+Permian Period (about 286 million years ago)
+
+Pennsylvanian Period (about 320 million years ago)
+
+Mississippian Period (about 360 million years ago) (Formation of the limestone that makes up Clark’s Lookout)
+
+Devonian Period (about 408 million years ago)
+
+Silurian Period (about 438 million years ago)
+
+Ordovician Period (about 505 million years ago)
+
+Cambrian Period (about 545 million years ago)
+
+Proterozoic Eon (about 2500 million years ago)
+
+Archean Eon (about 4500 million years ago) (Earth and other planets formed)
+
+Data compiled by Dr. Robert C. Thomas, Professor of Geology, The University of Montana – Western.
+
+Erected by Montana State Parks and University of Montana Western.

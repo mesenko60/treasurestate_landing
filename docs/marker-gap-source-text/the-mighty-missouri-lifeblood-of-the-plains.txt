@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 162052
+Slug: the-mighty-missouri-lifeblood-of-the-plains
+Title: The Mighty Missouri - Lifeblood of the Plains
+Town: Roy
+County: Fergus
+Lat / Lng: 47.62355, -108.68242
+Topics: nature
+Year erected: 
+Erected by: Bureau of Land Management, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+The Missouri River is a meandering oasis; a striking contrast to the harsh environment of the surrounding prairie For centuries, American Indians were drawn to this area to hunt game and gather plants. Ancient camps and bison kill sites are evidence of human dependance on the river. As a route of western expansion, the Missouri River had few equals. Lewis and Clark followed the Missouri westward as they searched for a route to the Pacific. For decades after that, the Missouri River served as a gateway to Montana.
+
+Lewis and Clark passed here with their Corps of Discovery on May 24, 1805, during the second year of their adventure, and camped just 2 1/2 miles up river. Members of the expedition sailed and poled, but mostly pulled their boats up river, averaging 13 miles a day agains the formidable current.
+
+On the heels of the Lewis and Clark Expedition, fur traders struggled up river with cumbersome keelboats and began opening the area for settlement. Later, steamboats brought the miners, settlers and adventurers and the supplies necessary to make settlement a reality.
+
+Few names are more prominent in Missouri
+
+River history than James Kipp. Born in Montreal in 1788, he was a fur trader, fort builder and steamboat captain. In 1831, he established Fort Piegan, 128 river miles above here (where the Marias River flows into the Missouri). It was the first American Fur Company trading post on the Missouri west of Fort Union (which was located on the current Montana/North Dakota border). He returned down river the following spring with more than 4,000 beaver pelts and many other smaller furs. He retired in 1859, after 41 years in the fur trade business. This recreation area is named after him.
+
+Until 1860, all river travel west of Fort Union was a difficult and physical task. Most travelers had to literally pull their boats up river against the current. But in 1860, the steamboat Chippewa reached Fort Benton and proved the treacherous Missouri navigable to that point. Over the next 30 years, tons of supplies and thousands of people booked passage into central Montana on the steamer. The boats returned down river with the wealth of the frontier; gold, pelts, buffalo robes and eventually beef and wool.
+
+As well as it served those going east of west, the Missouri River was a major obstacle to north and south travel. Until late in the 1950s, ferries provided the only way of crossing the river between Fort Peck Dam and Fort Benton. The ferries proved quite dependable...except for when the water was too high, too low, or frozen. Then in 1959, the Fred Robinson Bridge, which you can see to you northwest, was dedicated. It was named for Fred Robinson of Malta, a state senator for 40 years and the driving fires behind its construction.
+
+Today, this portion of the Upper Missouri is a national treasure. Up river to Fort Benton, it is a National Wild and Scenic River. Down river to Fort Peck, it forms the heart of the C.M. Russell National Wildlife Refuge.
+
+Pause and Experience the Amazing Diversity

@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165443
+Slug: tullocks-creek
+Title: Tullock's Creek
+Town: Bighorn
+County: Treasure
+Lat / Lng: 46.16176, -107.44822
+Topics: military
+Year erected: 
+Erected by: Custer Circle Project 2017 and Visit Southeast Montana Tourism
+
+--- Inscription (as stored for the site) ---
+
+As late as mid-June 1876, the military still considered Tullock's Creek as a possible location for the big Indian village even though most of the planning by General Terry and Custer a few days prior to the battle focused on the Little Big Horn River.
+
+When the Seventh Cavalry started up Rosebud Creek on June 22, 1876, Custer's written orders included a directive to send a scout from Rosebud Creek to General Alfred Terry via the Tullock's Creek drainage a couple of days into the march. Two days later, when the time came to send the scout north from the Rosebud (present Busby), Custer remained silent issuing no orders and offering no explanation to his officers and scouts.
+
+Meanwhile, the Montana Column was a few miles up the Tullock's Creek drainage on the morning of June 25, 1876 when General Terry ordered the column off to the right towards the Bighorn River. Expecting to cross bench land with easy access to the southwest, the column found rough, hilly terrain with virtually no water. Excessive mid-day heat added to the misery of the infantry with the situation becoming so dire that the cavalry had to ride ahead to the Bighorn River, fill canteens, and return to the troopers still in the hills. At about the same time, the Crow scouts reported that smoke was visible over the Little Bighorn Valley to the southwest increasing Terry's sense of urgency.
+
+The six companies of infantry reached the Bighorn River in mid-afternoon and continued marching south along the river, finally camping for the night at 7:00 PM having covered 24 difficult miles. The four companies of the Second Cavalry pressed on through the stormy, moon-less night, finally resting at midnight, having crossed an additional 12 miles. General Terry had positioned the Second Cavalry to be at the confluence of the Little Bighorn by June 25th as planned a few days earlier. General Terry did not know that it was already too late.
+
+Erected by Custer Circle Project 2017 and Visit Southeast Montana Tourism.

@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128134
+Slug: contributions-of-the-washoe-smelter
+Title: Contributions of the Washoe Smelter
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.12307, -112.93099
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society and Montana Department of Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+The fortunes of copper mining and smelting and associated enterprises were subject to the boom and bust cycles typical of metals-based industries. World and national events affected rapid fluctuation in the supply, demand, and price of copper.
+
+To gain control and stabilize the transportation cost of ore and processed copper, Marcus Daly incorporated the Butte, Anaconda, and Pacific (BA&P) Railroad Company. Although established to service the mines and smelters, this rail line also played a vital role in the economic and social development of the area communities. By 1903, the railroad transported 500 cars per day between Butte and Anaconda, and by 1906, had hauled 2,700,000 tons of industrial products, in addition to passengers and freight. Rail lines were extended west to mining districts, including Georgetown and Southern Cross. In 1912, the BA&P became the first railroad in the nation to be electrified, and by 1917, was carrying nearly 1,000 commuters per day.
+
+With World War I on the horizon, the demand for copper increased, along with its price. In 1916, copper prices rose from 18 cents per pound to 33 cents per pound. Following World War I, the demand for copper fell and the railway businesses slumped. In 1925, the tracks west to the mining districts were abandoned.
+
+During the early years of World War II, the country experienced a severe labor shortage. United States defense industries called on the women of the country to temporarily take jobs that were traditionally held by men. Initially, the Mill and Smeltermen's Union resisted the idea of women holding jobs at the smelter. In 1943, the union provided management with a list of jobs it felt could be handled by women. After the U.S. Employment Service began to make arrangements to import foreign workers, the union modified their objections to employing women. However, they stood firm and negotiated an agreement to protect seniority rights of men returning to work from military service.
+
+Over 70 women were employed at the Washoe Smelter during World War II and in the initial post-war months. These women, like thousands across the nation, contributed by stepping into the positions vacated by their husbands, fathers, brothers, and sons, who were serving in the military.
+
+Erected by Montana Historical Society and Montana Department of Fish, Wildlife & Parks.

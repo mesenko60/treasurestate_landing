@@ -1,0 +1,36 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 73542
+Slug: lewis-and-clark-reach-the-headwaters
+Title: Lewis and Clark reach the Headwaters
+Subtitle: July 25 & July 27, 1805
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.92652, -111.50417
+Topics: exploration, native-american
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+You are standing at the headwaters of the great Missouri River. The Jefferson and Madison Rivers converge with the Gallatin joining one mile downstream to become the Missouri River. Here, the famed explorers accomplished a major goal of their expedition: to explore the Missouri River to its source. They camped here for several days, exploring the area while they prepared to continue their journey.
+
+Clark arrived at the Headwaters first, on July 25, 1805. He quickly explored the area and then continued on, hoping to find the Shoshone and the horses they desperately needed. He returned two days later, exhausted and ill. Lewis arrived that day, and the whole party camped for 3 days while they continued to explore the area. The camp is thought to be less than a mile up the Jefferson River from here on private land.
+
+As the party left the Headwaters, they were anxious to find the Shoshones, who they hoped would provide them with horses to continue their journey across the mountains. On August 13, 1805 the Corps met up with the Lemhi Shoshone, including Sacagawea’s brother.
+
+On their return trip, Lewis and Clark split up to explore more of the territory north and south of the Missouri River. Clark passed through here again in the summer of 1806.
+
+Lewis describes in his journal how they determined this to be the source of the Missouri River. They named the three tributaries the Jefferson, the Madison, and the Gallatin, after the organizers of the expedition: President Jefferson, Secretary of State James Madison, and Secretary of the Treasury, Albert Gallatin.
+
+”Both Capt. C. and myself corrisponded in opinion with rispect to the impropriety of calling either of these streams the Missouri and accordingly agreed to name them after the President of the United States and the Secretaries of the Treasury and state…”
+
+Meriwether Lewis, July 28, 1805
+
+”a fine morning we proceeded on a fiew miles to the three forks of the Missouri those three forks are nearly of a Size, the North fork appears to have the most water and must be Considered as the one best calculated for us to assend…”
+
+William Clark, July 25th, 1805
+
+”I was verry unwell all night, Something better this morning, a very worm day untill 4 oClock when the wind rose & blew hard from the S W… Several deer killed to day men all employed dressing Skins for Clothes & Mockersons…”
+
+William Clark, July 28, 1805

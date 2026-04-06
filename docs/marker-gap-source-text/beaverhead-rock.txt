@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193249
+Slug: beaverhead-rock
+Title: Beaverhead Rock
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 45.3658, -112.47388
+Topics: exploration
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The prominent geological feature to the west is called Beaverhead Rock. On the afternoon of August 8, 1805, members of the Lewis and Clark Expedition pulled its canoes up the Beaverhead River toward the Continental Divide. They sighted what Clark later called a “remarkable Clift” to the southwest. Sacajawea recognized this large promontory and told the captains that her people called it “beaver’s head.”
+
+Beaverhead Rock is composed principally of Madison Limestone. About 350 million years ago, a shallow sea covered much of Montana. Billions of tiny marine creatures thrived in the water and when they died their bodies settled into the muck on the sea bed. After about 10 million years of accumulation and many more millions of years of compaction this muck became the pale gray rocks that are known today as Madison Limestone. The limestone is common throughout Montana, eastern Idaho, northern Wyoming, and in the Dakotas. In Montana, the limestone beds range from 1,000 to 2,000 feet thick. Because in Montana’s dry climate Madison Limestone resists weathering and erosion much better than most other kinds of rocks, it forms many of the spectacular cliffs and ridges that make Montana so scenic.
+
+Beaverhead Rock served as an important landmark not only for Lewis and Clark, but also for the trappers, miners, and traders who followed them into this area. It was known to many of them as Point of Rocks. In 1863, a man named Goetschius built a stage station on the "well-traveled, deep rutted road" between Bannack and Alder Gulch near here. It was part of the Montana-Utah Road, but was also known as Road Agents Trail because of all the robberies that occurred along it during the 1860s. In addition to changing tired horses for fresh animals for the stagecoaches, the station also served meals and provided a place to sleep for stagecoach travelers.
+
+Geo-Facts:
+
+The glaciated peaks of the Tobacco Root Mountains are on the horizon to the northeast. The range consists of a large granite batholith that pushed up through Paleozoic and Mesozoic formations about 70 million years ago.
+
+The mountains to the east are the Ruby Range. Madison Limestone forms the peaks at the north end of the range, whereas the lower hills to the south are Precambrian basement rock. There are also outcrops of white marble in the range. Marble is a metamorphic rock that forms when limestone recrystallizes at high temperatures deep within the earth.
+
+The Point of Rocks stage station was also known as Watson Station and included a hotel, saloon, and post office. It closed in 1881 with the arrival of the Utah & Northern Railroad. The dirt road at the base of the bluffs is the Montana-Utah Road.
+
+Geo-Activity:
+
+Can you see how Lewis and Clark might have thought Beaverhead Rock looked like a giant beaver swimming across a river? Try naming some of the mountains and other features you see from the highway after animals or parts of animals.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,37 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 164615
+Slug: a-river-ran-through-it
+Title: A River Ran Through It
+Town: Ekalaka
+County: Carter
+Lat / Lng: 46.04159, -104.46734
+Topics: 
+Year erected: 
+Erected by: Medicine Rocks State Park
+
+--- Inscription (as stored for the site) ---
+
+If you had visited Medicine Rocks 61.5 million years ago, you would have needed gills to breathe!
+
+A vast river once flowed through the regions, depositing layers of underwater sandbars along its deep channel. Over time, other rivers buried the sandbars with mud. Eventually the rivers dried up, and mineral-rich ground water saturated the buried grains of sand, cementing them together to create sandstone.
+
+Millions of years later, erosion exposed the sandstone at the prairie surface. Wind began sculpting the soft sandstone into the mottled pillars, arches and buttresses you see today. This fragile landscape is constantly changing - and slowly disappearing. Please respect these natural processes by not defacing the rocks during your visit. Thank You!
+
+Nature's Artistry
+
+The formations at Medicine Rocks show cross bedding, where thin layers of sandstone lie at angles within thicker beds due to the movement of the ancient river. Sandstone reveals many other unique characteristics as it gradually erodes away.
+
+Hollows and halos As sand cemented into stone, mineral matter formed around tree limbs and trunks trapped in the sandbars. Eventually the wood disintegrated, leaving a hollow in the sandstone surrounded by a dark "halo."
+
+Pits, caves and holes
+
+Swirling winds continually erode pits in the rock faces, sometimes carving out deep caves in the sandstone that may eventually bore through to the other side.
+
+Tan vs. red sandstone
+
+An iron oxide called limonite gives this sandstone its tan color, but red streaks indicate that another iron oxide called hematite was carried downstream from sandstone eroding in South Dakota's Black Hills.
+
+Mudrock seams As the sandbars moved downstream 61.5 million years ago, they picked up pieces of eroding riverbank that later settled as seams of chunky white sediment called mudrock within the sandstone.
+
+Erected by Medicine Rocks State Park.

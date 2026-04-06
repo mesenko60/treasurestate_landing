@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 189447
+Slug: captain-balls-scout
+Title: Captain Ball's Scout
+Town: Hardin
+County: Big Horn
+Lat / Lng: 45.92736, -107.57494
+Topics: 
+Year erected: 
+Erected by: Custer Circle Project 2017 and Montana Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+Captain Edward Ball, leading two companies of the Second Cavalry from the Montana Column, was ordered to scout along the Bighorn as far south as the 1868 ruins of Fort C.F. Smith. The detachment was then to cross over the divide to the Little Bighorn, and return to Fort Pease via Tullock's Creek.
+
+Although no recent Indian signs were observed during the 175-mile march (April 24 to May 1, 1876), the scouting expedition was not without incident. On the return to Fort Pease, the detachment came upon a large Lakota campsite from the previous summer, a few miles north of present Lodge Grass. Later in the day, the two companies halted along the Little Bighorn where, left than two months later, over a thousand Lakota and Northern Cheyenne lodges would occupy an uninterrupted two-mile stretch in the valley.
+
+The scouting party then veered to the northwest near present Crow Agency eventually camping in the upper reaches of the Tullock''s Creek drainage. The final two-days march down the creek was uneventful with journals of both officers and enlisted men making note of the alkali water, the limited forage, and the crooked stream requiring numerous crossings.
+
+Upon arrival at the fort, Captain Ball's scout raised little excitement because there were no recent Indian sightings to report. However, the information regarding water and forage availability in the Bighorn basin was certainly discussed on June, 21st when General Terry, Gibbon and Custer conferred on the steamer Far West four days before the battle.
+
+Immediately after the Custer disaster, Captain Ball was ordered to follow the trail left by the departing village up the Little Bighorn Valley. Near the mouth of Lodge Grass Creek, Captain Ball discovered that the big village began to disperse - some lodges going towards the Bighorn Mountains and others heading in a more easterly direction. Captain Ball also came across a substantial trail less than a week-old heading north. The trail that Custer followed up Rosebud Creek was not the only trail adding to the huge village just prior to the battle.
+
+Erected by Custer Circle Project 2017 and Montana Fish, Wildlife & Parks.

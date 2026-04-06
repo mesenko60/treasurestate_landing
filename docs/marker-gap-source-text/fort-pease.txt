@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165326
+Slug: fort-pease
+Title: Fort Pease
+Town: Hysham
+County: Treasure
+Lat / Lng: 46.2928, -107.23262
+Topics: military
+Year erected: 
+Erected by: Custer Circle Project - 2017 and City of Hysham
+
+--- Inscription (as stored for the site) ---
+
+Fort Pease was established in June of 1875 a few miles below the mouth of the Bighorn by Bozeman businessmen speculating that the fort would serve as the head of steamboat navigation on the Yellowstone.
+
+For much of the winter of 1875-76, the fort, having been built on favored tribal hunting grounds, was under constant harassment by the Lakota. During the winter, with six trappers killed and eight wounded, the situation became so dire that the trappers sent for help from the military at Fort Ellis near Bozeman.
+
+Four companies of the Second Cavalry lead by Major James S. Brisbin arrived at Fort Pease in early March 1876 to relieve the fort. Even though the Lakota had not been seen for a month and the trappers had resumed trapping and hunting, Brisbin had orders to bring the trappers back to Fort Ellis. Two days later, the cavalry and the trappers headed west as ordered, leaving the fort intact assuming the Indians would burn the fort to the ground when found abandoned.
+
+The Montana Column, commanded by Colonel John Gibbon, arrived in the area on April 19, 1876 and found the deserted fort virtually untouched. The American flag was still flying and a dog greeted the troops. The next day, dispatches from General Terry arrived ordering Gibbon to continue his patrol of the north side of the Yellowstone preventing any Indian movement across the river. Colonel Gibbon occupied the fort for two weeks sending out scouting parties up and down the Yellowstone and as far south as Bighorn Canyon before moving downriver to the Rosebud confluence.
+
+In the aftermath of the Little Bighorn defeat. the Montana Column and the decimated Seventh Cavalry regrouped at Fort Pease waiting nearly a month for resupply and reinforcement. By late July 1876, the military had already determined that supplying Fort Pease late in the summer would be difficult due to low water levels. There was discussion about building a fort at the Rosebud confluence but the military finally settled on the cantonment site at the confluence of the Tongue River with construction beginning on Fort Keogh in early 1877.
+
+Erected by Custer Circle Project - 2017 and City of Hysham.

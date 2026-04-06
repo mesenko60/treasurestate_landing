@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 252983
+Slug: the-place-where-the-white-horse-went-down
+Title: The Place Where the White Horse Went Down
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.80316, -108.47191
+Topics: nature, native-american, science
+Year erected: 2024
+Erected by: Yellowstone County Parks and Bruce W. Larsen
+
+--- Inscription (as stored for the site) ---
+
+In 1837-38 a smallpox epidemic spread from the American Fur Trading Company steamboat St. Peter which had docked at Fort Union. The terrible disease for which the Indians had no immunity eventually affected all Montana tribes. A story is told among the Crow of two young warriors returning from a war expedition who found their village stricken. One discovered his sweetheart among the dying, and both warriors, grieving over loss of friends and family, were despondent and frustrated because nothing could alter the course of events. The young warriors dressed in their finest clothing and mounted a snow-white horse. Riding double and singing their death songs, they drove the blindfolded horse over a cliff and landed at what is now the eastern end of the Yellowstone County Exhibition grounds. Six teenage boys and six teenage girls who were not afflicted with the disease witnessed the drama: they buried the dead warriors and left the camp. Great loss of life among the tribe followed in the wake of the epidemic. Although time has reduced the height of the cliff, the location is remembered even today as The Place Where the White Horse Went Down.
+
+This redwood sign is a piece of Montana history. In 1935, the Montana Department of Transportation (MDT) created a roadside historical marker program to celebrate the state’s history by memorializing important places and events. Written by Robert Fletcher, "Sacrifice Cliff" was one of the first signs installed as part of the new program. The sign, with different text, originally stood about ½ mile east of here along then US Highway 10, which is now Bench Boulevard. The sign was later moved to Main Street at a turnout overlooking the Midland Empire Fairgrounds. When the MDT widened Main Street to four lanes in 1964, that sign was removed. This sign was fabricated in 1991 with funds approved by the Legislature to depict historic Native American events and sites and placed at the Coulson Boothill Cemetery. The sign's text was written by decorated WWII veteran Dr. Barney Old Coyote, Jr. - Chiip Kalishtahchia and historian Ellen Baumler. In 2024, the sign was restored and preserved by Bruce W. Larsen and installed under this shelter.

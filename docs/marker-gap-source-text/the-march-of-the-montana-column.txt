@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 190923
+Slug: the-march-of-the-montana-column
+Title: The March of the Montana Column
+Town: Columbus
+County: Stillwater
+Lat / Lng: 45.60035, -109.06586
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Fighting escalated between the Lake and Northern Cheyenne Indians and American miners and settlers in early 1876. Increasing pressure from non-Indians in the region, coupled with a desire by the Indians to live free on the northern Great Plains, brought the two sides into conflict. After issuing an ultimatum to the tribes in late 1875, the US Army implemented a plan to trap the Indians in the vicinity of the Little Bighorn River through a three-pronged attack. Three columns of soldiers would converge on the Big Horn River area from the east, west and south to inflict a decisive defeat on the tribes and return them to the reservation in Dakota Territory.
+
+Colonel John Gibbon and troops from the 5th Infantry left Fort Shaw on the Sun River in March 1876 and rendezvoused with elements of the Second Cavalry near Fort Ellis in the Gallatin Valley. After marching down the Yellowstone Valley, sometimes through hip-deep snow, the soldiers reached the mouth of the Stillwater River, about 10 miles west of here on April 8th. Gibbon and a small detachment of officers then rode up the Stillwater to the Crow Agency on Rosebud Creek. At the agency, Gibbon hired Crow warriors to scout ahead of the soldiers as they advance downriver to the Little Bighorn.
+
+While camped at the mouth of the Stillwater, a company of infantry from Camp Baker, near today's White Sulphur Springs, joined the column. Gibbon's negotiations at the Crow Agency gave the soldiers time to rest in preparation for the next phase of the their march. To while away the time, many soldiers became avid fishermen, depleting the river of over 500 pounds of trout during their 8-day stay in camp.
+
+The lack of communication between the three columns doomed the campaign from the start. After several weeks marching back and forth along the Yellowstone, the Montana Column joined with General Alfred Terry's troops from the east. The combined force marched south up the Big Horn River. On June 27, 1876, the soldiers found the grisly remains of Lieutenant Colonel George Armstrong Custer's Seventh Cavalry, who had been soundly defeated but the Indians on the Little Bighorn. The soldiers also rescued several companies of cavalrymen, under the command of Major Marcus Reno, who had been besieged by the Lakota and Northern Cheyenne a few miles south of the site of Custer's defeat. The Montana Column played an important part in the 1876-77 Centennial Campaign against the Lakota and Northern Cheyenne.

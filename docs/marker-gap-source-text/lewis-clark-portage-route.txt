@@ -1,0 +1,20 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143667
+Slug: lewis-clark-portage-route
+Title: Lewis & Clark Portage Route
+Subtitle: June - July 1805 - July, 1806
+Town: Great Falls
+County: Cascade
+Lat / Lng: 47.49402, -111.22235
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+To avoid the series of waterfalls along the Missouri River north of this point, the Expedition portaged their canoes and several tons of baggage, crossing the highway right here. At the lower camp, some 12 miles NE, the crew made crude wagons, the wheels sliced off a cottonwood tree. The upper camp, named after the bears which inhabited the islands, was located some 5 miles SW.
+
+The portage was near man-killing. the men has to haul with all their strength wate & art Clark wrote.
+
+Erected by Montana Department of Transportation.

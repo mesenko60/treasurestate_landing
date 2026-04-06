@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220444
+Slug: the-whoop-up-trail
+Title: The Whoop Up Trail
+Town: Dutton
+County: Teton
+Lat / Lng: 47.92474, -111.7351
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+From 1869 to 1885, supplies and trade goods that came up the Missouri River from St. Louis were transferred at Fort Benton from steamboats to freight wagons for distribution in southern Alberta on the famed Whoop-up Trail, which ran near here. In 1869, traders John Healy and Andrew Hamilton established the 200-mile trail from Fort Benton to the junction of the Belly and St. Mary rivers in Canada, where they built a trading post called Fort Whoop-Up. The post was the first of a chain of "whiskey forts" where American traders swapped tobacco, sugar, knives, beads and rot-gut whiskey to the Blackfeet Indians for buffalo robes and wolf pelts. It was a lucrative business and the traders make a fortune to the detriment of the Blackfeet, who suffered the negative effects of the exchange. Responding to complaints from both sides of the international border, the Canadian government sent the Royal Canadian Mounted Police (RCMP) to chase the whiskey traders back across the borders into Montana in 1874. Soon after, Fort Benton merchants and traders realized there was even more money to be made supplying the RCMP posts in Alberta. The arrival of the Canadian
+
+Pacific Railroad in the province in 1883 spelled doom for the trade and the Whoop-Up Trail soon fell into disuse.. The trail was the precursor in reverse of Alberta Montana rum running channels during the Prohibition era in the United States.
+
+The exact origin of the name "Whoop Up" is lost, but one old timer told this story: "When Johnny LaMotte, one of the traders returned to [Fort] Benton from across the border, he was asked, 'How's business?' 'Aw, they're just whooping' 'er up!' was the reply,"
+
+Rattlesnakes
+
+One of the most iconic images of the American West is a rattlesnake coiled to strike a hapless pioneer. On May 17, 1805 William Clark wrote that he "nearly {treaded} on a small fierce rattle Snake different from any I had ever Seen." It was the Lewis and Clark Expedition's first encounter with a reptile that is as much a part of the lore of the West as is the buffalo and the grizzly bear.
+
+The prairie rattlesnake (Crotalus vindus) is an amazing creature that is highly adapted to its environment. Found throughout most of Montana, it is the state's only venomous reptile. The snake is identified by its triangular head, blunt nose, stout body and the distinctive rattles at the end of its tail. The snakes range in length from fifteen inches to five feet. Rattlesnakes are pit vipers. They use heat sensors located between their nostrils and eyes to locate and kill prey, such a small rodents. Rattlesnakes rarely bite humans unless they are provoked or feel threatened. Snakebites are rarely fatal if the victim receives prompt medical attention.
+
+The rattlesnake's distinctive rattles are make of hollow interlocked segments of keratin and are used to warn potential predators of its presence. The snake produced a new rattle each time it sheds its skin, which can be several times a year depending on the food supply. It is a myth that a rattlesnake's age can be determined by the number of rattles it has. Rattlesnakes hibernate in dens during the winter months, which they return to year after year.
+
+Rattlesnakes can usually be found on the south-facing slopes and in rocky terrain where they can hide from predators. They will generally avoid humans if they are aware of their approach. So, if you see one keep your distance and allow the snake room to get away.

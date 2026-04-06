@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 192786
+Slug: lewis-clark-arrive-at-the-headwaters-july-1805
+Title: Lewis & Clark Arrive at the Headwaters July, 1805
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.89664, -111.55141
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Lewis and Clark explored the Missouri River in search of the "Northwest Passage."
+
+"The object of your mission" wrote President Thomas Jefferson to Meriwether Lewis and William Clark "is to explore the Missouri River and such principal streams of it ... as may offer the most direct and practicable water communication across the continent." Lewis and Clark, along with 32 other members of the expedition, camped on the banks of the Jefferson near here. Although they realized by then that the Missouri would not lead directly to the Pacific, they still considered it "an essential point" in the geography of North America. The Expedition rested here, exploring the surrounding area and noting the wide variety and abundance of game and plants. The following year, Clark and some members of the Expedition returned here on their way east.

@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 188744
+Slug: railroad-survey-of-1873
+Title: Railroad Survey of 1873
+Town: Forsyth
+County: Rosebud
+Lat / Lng: 46.26122, -106.68298
+Topics: railroads, military
+Year erected: 
+Erected by: Custer Circle Project 2017 and Community Foundation of Northern Rosebud County
+
+--- Inscription (as stored for the site) ---
+
+The Northern Pacific Railroad surveyed along the north side of the Yellowstone River during the summers of 1871 and 1873, a time when the still-powerful Lakota controlled the unceded land south of the river. As a result, the survey crews required military protection each summer.
+
+Colonel David S. Stanley's 1873 command was large - 18 companies of infantry, 275 wagons, 3 artillery pieces, along with 10 companies of Lt. Colonel Custer's Seventh Cavalry, all leaving a significant trail as the column passed up the valley. Portions of today's roads on the north side are built over Colonel Stanley's route.
+
+A couple of weeks into the march, Colonel Stanley began to have difficulties with the headstrong Custer, something he anticipated given Custer's reputation. Eventually, an angry confrontation occurred leading to disciplinary action with Custer ordered to the rear of the command. Stanley's authority was compromised by his bouts of binge drinking, something that Custer, a teetotaler (sic), had a history of using against rivals. Even though the issues between the two officers were relatively minor, some officers recognized that Stanley's drunkenness contributed to the problems so they disposed of the liquor supply. Stanley backed off his punishment about a day later and there were no further incidents.
+
+There were also two skirmishes with the Lakota during the summer of 1873. Even though both fights were minor, the tactics of the Lakota led Custer and most in the officer corps to believe that the enemy would scatter at any show of strength by the military, an assumption with fatal consequences three years later.
+
+Railroad construction stopped for almost a decade when the stock market crashed leading to the Panic of 1873. A decade later, with the economy recovered and the Indian threat over, the Northern Pacific built its line - south of the Yellowstone River.
+
+Erected by Custer Circle Project 2017 and Community Foundation of Northern Rosebud County.

@@ -1,0 +1,44 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143875
+Slug: one-of-many-firsts
+Title: One of Many Firsts
+Subtitle: Lewis and Clark Nature Trail
+Town: Great Falls
+County: Cascade
+Lat / Lng: 47.53187, -111.23349
+Topics: exploration, native-american
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The narrowleaf cottonwood, a tree "with a leaf like that of the wild cherry" was first described for modern science by Lewis on June 12, 1805. Other expedition first near Great Falls include documenting the cutthroat trout, thirteen-lined ground squirrel, swift fox, bushy-tailed woodrat, western meadowlark, squaw currant, and Brewer's blackbird.
+
+Bounty on the Riverbank
+
+Could the Corps of Discovery have crossed the plains without cottonwoods for firewood, shelter, tools, and transport? The corps crafted dugout canoes and paddles from the trees to ascend the Upper Missouri, and made cottonwood cartwheels to portage the dugouts around the falls.
+
+The cottonwood played almost as important a role in the lives of Plains Indian tribes as the bison. They used nearly every part of the tree:
+
+• leaves - poultice
+
+• buds - yellow dye
+
+• inner bark - food for horses (and people in lean times), firestarter
+
+• branches - firewood
+
+• roots - firestarter
+
+• bark - medicinal tea
+
+• twigs - food for horses
+
+Trees in Trouble "the beaver appear to be extremely fond of this tree..." - Meriwether Lewis, June 12, 1805
+
+Montana's cottonwood groves are disappearing. Steamboats traveling the Missouri during the 1800's required entire groves of cottonwood to feed their boilers. Today, a thriving beaver population, hungry cattle, and dams threaten the remaining groves.
+
+Cottonwoods release their seeds in the spring, when streams are swollen with snowmelt. The floodwaters deposit seeds and silt high along a river's channel, where saplings can grow safely above ensuing high waters and winter ice. Dams, though, have eliminated this important spring flooding on many stretches of river.
+
+Loss of cottonwoods could have devastating effect on wildlife. Three out of four Montana wildlife species rely on riverside habitat.

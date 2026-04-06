@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 188961
+Slug: chief-joseph
+Title: Chief Joseph
+Town: Ryegate
+County: Golden Valley
+Lat / Lng: 46.29714, -109.24837
+Topics: native-american
+Year erected: 1975
+Erected by: Golden Valley Bicentennial Commission
+
+--- Inscription (as stored for the site) ---
+
+The Nez Perce people, under the leadership of their Great Chief Joseph crossed the Musselshell River near here on September 17, 1877. They had left their Idaho homeland in a valiant but futile effort to reach Canada. Their march marked by several skirmishes with the U.S. Army, ended at the fateful Battle of the Bears Paw with their surrender to Colonel Nelson Miles October 5, 1877.
+
+Erected 1975 by Golden Valley Bicentennial Commission.

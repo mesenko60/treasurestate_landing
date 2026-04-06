@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123280
+Slug: fort-missoula-post-headquarters
+Title: Fort Missoula Post Headquarters
+Town: Missoula
+County: Missoula
+Lat / Lng: 46.8421, -114.059
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Fort Missoula's first chapel was completed in 1885. During the late 1930s, the Works Progress Administration allocated funds to renovate the deteriorating building in order to create a new post headquarters with an upstairs courtroom. A concrete foundation was poured adjacent to the chapel which was then hoisted up and moved to this new location. The current building, as you see it today, was built around the chapel structure. Some of the original chapel walls and windows were found during the restoration of the building in 2009.
+
+Following the bombing at Pearl Harbor, over 1,000 Japanese Issei, first generation non-American citizen immigrants, were taken from their homes by the FBI and brought to Fort Missoula. The US Department of Justice took charge in detaining and questioning these "enemy aliens". The Alien Enemy Hearing Boards operated under the assumption of guilt. Each Japanese detainee was required to prove his loyalty to the United States without legal representation or information about his alleged crimes. The Alien Enemy Hearing Board determined the future of these men. Each detainee could be recommended for parole, release, deportation, further investigation, or continued internment at one of the US Army detention camps. Though the hearing boards did not uncover any cases of espionage or sabotage, the vast majority of Issei men remained incarcerated in camps for the duration of the war. Issei men would not be allowed to seek US Citizenship until 1952.
+
+At Fort Missoula, these hearings took place in the second-floor courtroom of this T-1 building. Since purchasing the building in 2009, the Museum has renovated the courtroom where these hearings took place. Further plans call for the continued use, preservation, and interpretation of the building's history.
+
+Located behind building T-1, the Colonial Revival style Building T-2 was constructed as a Post Exchange (PX) in 1906. Soldiers could purchase food, beer, wine, jewelry, and other personal items and gifts at the PX. The building also included a gymnasium where movie nights were held.
+
+Today, the building is owned by the Northern Rockies Heritage Center and is leased for office space and use for weddings and community events.

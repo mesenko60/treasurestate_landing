@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 168625
+Slug: 240-mm-howitzer-m1
+Title: 240 mm Howitzer M1
+Town: Lewistown
+County: Fergus
+Lat / Lng: 47.07086, -109.41532
+Topics: 
+Year erected: 
+Erected by: Lewistown Historic Resources Commission
+
+--- Inscription (as stored for the site) ---
+
+The 240 was designed and first built in 1941. It was used extensively in WWII in Europe and in the Pacific. It was also used in Korea until the ammo supply ran out. More recently, the 240 was in service in the Republic of China. None are now known to be in the active Army inventory. The 240 was the largest field piece used by the US except for Naval ordinance. The only larger howitzer built for the US Army was the 280 atomic cannon which was never put into action.
+
+In the late 1950's, the Department of Army established Army Reserve units nationwide. Lewistown had one of those units. The 743rd Field Artillery was a Regular Army unit and included the local reserve unit which consisted of about 50 to 60 local young men. Training was conducted on a 240 mm howitzer but the gun was never fired locally. After a short time of having the 240 as a training aid, the Montana Army Reserve units received 155mm howitzers to replace the 240. This 240 was donated to the City of Lewistown in 1957 and was placed on display here in 1959.
+
+Specifications:
+
+240 millimeter (9.4") bore • 360 pound projectile • 22 man crew including the drivers of the two wagons (The barrel came off for moving and was carried on its own wagon). • Six men on the loading tray (this is for lifting and placing the projectile to the breech of the gun). Four men on the rammer staff to shove the round into the breech. • Range of about 14 miles • Muzzle velocity - 2300 feet per second. • Weight - 64,700 pounds. • Barrel length - 27'6"
+
+The loading operation was somewhat similar to a muzzle loading rifle except that it was loaded from the breech. The projectile was loaded followed by the powder bags. The fuse to ignite the powder was a blank cartridge screwed into the breech.
+
+"Someday, not too distant, there can come streaking out of somewhere-we won't be able to hear it, it will come so fast-some kind of gadget with an explosive so powerful that one projectile will be able to wipe out completely this city of Washington."
+
+General H.H. Arnold.
+
+Erected by Lewistown Historic Resources Commission.

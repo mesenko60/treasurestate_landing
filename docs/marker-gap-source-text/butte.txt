@@ -1,0 +1,28 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 184260
+Slug: butte
+Title: Butte
+Subtitle: Old Lexington Gardens
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.01461, -112.53209
+Topics: education, industry, settlements
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Long known as the "Richest Hill on Earth" Butte produced more mineral wealth than any other mine district in the world up to the middle of the 20th century. To date over $43 billion of wealth has been unearthed from this hill. This extraordinary phenomenon emerged at the height of the Industrial Revolution when the mining hill became the most concentrated area of industrial machines on earth. The colossal machines spawned the most influential labor market anywhere, the most ethnically diverse population in the country, the largest red-light district in the American West, nine railroads, the largest network of underground workings per square mile in the world (over 10,000 miles of tunneling), more wealth per citizen than any comparable place on earth up to that time, and a titanic struggle for the hill's riches by both entrepreneurs and laborers. But over a century of mining left a legacy of exposed toxic mine waste and polluted water. Thus here at the headwaters of the Columbia River and in the most biologically diverse area of North America, Butte became the site of the nation's largest environmental cleanup. Explore more of the largest historic district in the American West both around town and on this site.
+
+The Old Lexington Stamp Mill
+
+The Old Lexington Stamp Mill was Butte's first stamp mill. It began as a five stamp mill and was erected on this site by Charles Hendrie in 1867. The stamp mill is an ore crushing machine that pounds rock into fine sand. Soon after the mill's construction, Hendrie left Butte and never returned. A.J. Davis held a lien on the property and took over the mill. It laid idle for 9 years until a process to extract the minerals out off Butte's complex compounds was discovered. Because of the newly discovered metal extraction process, the mill was enlarged to ten stamps, and first blew it's work whistle on January 23, 1877. Eventually enlarged to a 20 stamp mill, it operated around the clock until Davis' death in 1890. In 1881 Davis sold the mill along with the Lexington Mine to a French syndicate for $1 million (about $15 million in today's money). This was the largest transaction in Butte up to that time. Eventually, the mill processed about $45 million of wealth in today's money.
+
+Andrew Jackson Davis 1820 to 1890
+
+At the age of 13, Davis left home to be an errand boy for a Boston merchant. At 15 he borrowed a stock of goods and resold the merchandise for a large profit in Indiana. At 29 along the Mississippi River, he established the first set of chain stores in America. In 1863 while passing through Montana Territory, he saw and profited from a great demand for mining supplies...and whiskey. He ran the first flour mills in Montana and successfully operated an iron foundry in Helena. In 1864 he came to Butte City. Much of the next 13 years proved to be very bleak and desolate for the city, but still Davis maintained his Butte interests. He felt that the surface exposed ore veins would someday be able to be profitably mined. His persistence paid off. This property, the Baltic Claim was one of the first in Butte recorded for a patent application in 1878. HIs mining profits moved him into banking, and the financing and management of Montana's first major cattle herd. Though he died with between$105 and $165 million in today's money, his wealth would pale in comparison to the wealth of others who would follow and profit from the Butte Hill's riches. Davis was the first to realize spectacular wealth from Butte's minerals.
+
+Butte's First High School
+
+Butte's first high school was erected in 1886 on the parking lot behind you. At the time, it was one of the nation's most advanced school buildings. However, because of underground mining below the building, the structure subsided and cracked to such a degree that it was condemned at the end of 1913 school year. While the new building was being constructed, the classes of 1914 met in the newly built city jails behind the Butte-Silver Bow Courthouse. The new school, completed in 1915, had the largest and strongest reinforced foundation built in Montana at the time. The new building never did settle. In fact, when constructing the present parking lot, the foundation could not be completely raised. In the 1890's, the building became Butte's first junior high school (the Washington School), and a grade school in 1957. It closed in 1976. The relationship between the high school and the Old Lexington Stamp Mill was a common one in Butte...a building of controlled quiet next to a structure of deafening noise.

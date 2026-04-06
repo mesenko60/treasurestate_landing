@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 258582
+Slug: the-cattle-drive-of-1866
+Title: The Cattle Drive of 1866
+Subtitle: (The First Cattle Drive on the Bozeman Trail)
+Town: Big Timber
+County: Sweet Grass
+Lat / Lng: 45.73576, -109.7563
+Topics: agriculture, events, transportation
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+In 1866, Nelson Story and two dozen cowboys drove six hundred longhorn cattle from Texas over 1400 miles to the Livingston area in Montana. The journey was an epic one, the stuff of countless Hollywood Westerns.
+
+The Montana mining camps provided a lucrative market for those who "mined the miners." Although bison and local game was plentiful, the miners had a taste for beef and there were men willing to provide it to them. One of those, Nelson Story, had panned enough gold in the placer mines to invest in other economic pursuits, including provisioning the mining camps. In 1866, he purchased rangy Texas longhorns with the intent of driving them to Montana to sell in Virginia City. He and his hired hands left Fort Worth in the spring and began the long journey north.
+
+On the way, they evaded toll collectors, outfoxed rustlers, and swam the cattle across flood-swollen streams - then the trouble really started. Story resolved to drive his cattle up the Bozeman Trail in central Wyoming. In 1866 the trail was hotly contested as the Lakota and Northern Cheyenne Indians defended their hunting grounds from the hundreds of emigrants heading for the Montana mining camps. To protect the pilgrims, the US Army established three military posts on the trail. By the time Story arrived in October, the forts were under siege and travel on the trail was extremely dangerous.
+
+Near the first post, Fort Reno, the Indians ran off many of Story's cattle. Not to be intimidated, Story and his men followed the Indians into the badlands and retrieved the animals after a short skirmish that left two of his cowboys wounded. When they neared Fort Phil Kearney, the post commander, Henry Carrington, made them camp three miles from the post. He didm't want the cattle to eat all the grass adjacent to the fort. Story cooled his heels for two weeks, waiting for Carrington's permission to push on. Eventually, he decided to go without the officer's consent.
+
+Traveling by night and corralling the cattle during the day, the crew largely managed to avoid trouble with the Indians. When they reached the third post, Fort C.F. Smith, in Montana, the danger had passed. But they remained vigilant as they pushed up the Yellowstone Valley to near present Livingston, where Story established a cattle camp. Not only did Story successfully run a dangerous gauntlet to Virginia City, he also was the first to make the long cattle drive from Texas to Montana. In the process, he pioneered the famed Texas Trail and established the foundation of Montana's cattle industry.
+
+The Mysterious Death of John Bozeman
+
+About thirty miles west of here on April 18, 1867, Blackfeet Indians allegedly shot and killed John Bozeman, the blazer of the Bozeman Trail and a founder of the city named for him. But is that what really happened?
+
+Bozeman and Tom Cover hoped to secure four contracts with the military at Bozeman Trail forts. While stopped near the mouth of Mission Creek, several Indians approached the men's camp. Thinking they were Crow Indians, Bozeman waved them in. Too late did he realize they were Blackfeet, who opened fire killing Bozeman and wounding Cover. He returned fire, killing one of the Indians. The Blackfeet fled with the pair's horses. Cover made his way back up the Yellowstone River finding refuge in Nelson Story's cattle camp.
+
+Cover's account of the incident widely varied and rumors persisted that he had shot Bozeman. Evidence at the site suggested there were no Indians. Strikingly handsome, Bozeman was a noted Beau Brummel with a reputation as a ladies' man. Could Bozeman have dallied with Clover's wife? The answer will never be known, so, the official story stands.
+
+Erected by Montana Department of Transportation.

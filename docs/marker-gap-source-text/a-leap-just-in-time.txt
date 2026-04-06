@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 114166
+Slug: a-leap-just-in-time
+Title: A Leap Just in Time
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.85719, -111.32651
+Topics: disasters, people
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+I've been a pretty tough old bird, but I wouldn’t want to go through that again! Grace Miller
+
+August 1959
+
+Survival Tactics
+
+Seventy-something-year-old Grace Miller was a self-professed “tough old bird.” When she found herself boating past her submerged home, which was sunk to the roofline in Hebgen lake, she responded to the situation with humor. “I hope it stays upright,”she quipped, “my teeth are still on the kitchen counter. Right next to the sink.”
+
+Prior to the Disaster
+
+Prior to the Hebgen Lake Earthquake, Grace Miller’s small lakeside home sat up the hillside from here---along the original lakeside. Miller ran the Hilgard Lodge---renting cabins and boats to vacationers. On the night of August 17,1959, she woke with a strange feeling she needed to get out of the house, immediately. When she and her malemute dog, Sandy, reached the door, she found it jammed shut.
+
+Strengthened by adrenaline, she kicked the door open---only to find a five-foot gap between the stoop and the shore. As she and her dog leaped, the house dropped away behind them, sinking into the lake.
+
+Now homeless and afoot, with the earth trembling all around, she knew she had to get to higher ground. She and Sandy headed cross-country. The dog stayed close to Miller, several times stopping her before she fell into crevices. They arrived at the Kirkwood Ranch, about a mile and a half away, in the early hours of the next morning.
+
+Slides and Seiches
+
+Grace Miller’s house (and other buildings at this site) were destroyed by the 20-foot seiches (pronounced saysh), waves that rolled back and forth across the lake after the earthquake. These powerful water surges, combined with the destabilization of the ground, also caused a landslide along the shore. The slide was 750 feet long, 200 feet wide, and dumped 1/3 million cubic yards of debris into the lake---taking a large chunk of Highway 287 with it.

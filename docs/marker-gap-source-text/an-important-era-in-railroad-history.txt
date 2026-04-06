@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128402
+Slug: an-important-era-in-railroad-history
+Title: An Important Era in Railroad History
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.30724, -111.96781
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The Montana Heritage Commission’s state-owned collection of railroad equipment represents the construction era of railroads in Montana. The wooden Soo Line cars are representative of cars used by the Northern Pacific, Great Northern and Union Pacific as they reached into the state during the 1880’s. The bunk cars demonstrate the living conditions of workers who built and maintained the railroads. The freight cars demonstrate the nature of freight hauling in the pioneer era of Montana railroading.
+
+The Milwaukee Road 222 and Great Northern A-3 may seem to be modern anomalies, but they too have beginnings in the early days of railroad history.
+
+The Milwaukee Road 222 was built by Barney and Smith, of Dayton, Ohio in January 1882, as a business car for the Chicago, Milwaukee, St. Paul & Pacific Railroad (aka Milwaukee Road). Steel framing made it an advanced design for its early date. Rebuilt in 1930, the car continued to operate in the Rocky Mountain Division until retirement and acquisition by CA. Bovey in 1963.
+
+The Great Northern Business Car A-3 was built by Barney and Smith as wooden Coach 265 in July, 1906. The addition of steel framing and sheathing in its April 1927 rebuild, and modernization in 1951, transformed the A-3 in effect, into an entirely new car. The Great Northern Railway gave the car to the Historic Landmark Society of Montana in November, 1965 and moved it on its own wheels by rail from St. Paul, MN to Alder, MT (the end of the line), where Charles Bovey transported it to Nevada City.
+
+With the historic fact that railroads never made it to Alder Gulch, the railroad collection at Nevada City is part of the Bovey legacy. The bulk of the collection has been on site for over 50 years, and has gained historical significance relative to Nevada City, in addition to ably describing a short period of railroad history.
+
+The train restoration was paid for by Tom and Barbi Donnelley.

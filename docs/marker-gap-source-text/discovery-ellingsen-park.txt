@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 208993
+Slug: discovery-ellingsen-park
+Title: Discovery - Ellingsen Park
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.28923, -111.94469
+Topics: events, landmarks
+Year erected: 
+Erected by: Montana Heritage Commission, Montana History Foundation
+
+--- Inscription (as stored for the site) ---
+
+Discovery Park - The Fairweather Party
+
+One spring day in 1863, six men looking for their next big gold strike found it in Alder Gulch, William Fairweather, Henry Edgar, Thomas Cover, Barney Hughes, Micheal Sweeney, and Harry Rogers left Bannack, attempting to meet and travel with James Stewart's Yellowstone Expedition, to find gold and establish town sites along the Yellowstone. The six were two days behind the main party and trying to catch up. An encounter with a Crow tribe that left them considering the best route back to Bannack, led them up into the mountains away from the Madison River. Fairweather and Edgar slipped their gold pans into the cold creek waters beside the spot they picked for that night's camp. They soon realized they had discovered a rich deposit of placer gold in what Edgar would name Alder Creek.
+
+During the early 1850's small amounts of gold had been found in this region of Idaho Territory, but within ten years the number of prospectors and the intensity of their search had increased. Gold discoveries were made throughout the territory, with prospectors rushing from one region to another: Elk City, Gold Creek, Grasshopper Creek. The May 26, 1863 gold discovery in Alder Creek not only changed the lives of the six men who found it and the thousands who followed them, but it also influenced Montana's future, with the creation of the Montana Territory in 1864.
+
+The six men known as the Fairweather party discovered the gold that soon brought a growth in population that created settlements all along the gulch. Thomas Cover and Henry Edgar played an important part in establishing the town site of the city of Varina, soon to be renamed Virginia. The upper most settlement in the gulch was Summit, with Junction City being the last of the "14-mile city'. Virginia City was central in location and importance and was established closely after Nevada City, with claims that both were first.
+
+The Secretary of the Treasury, H. McCulloch, reported on March 5, 1868: "Alder gulch has produced more gold than all the others, and probably more within the last three years than ever was taken in the same time from any gulch of the same extent. It is the opinion of those best qualified to judge that within three years from the commencement of mining operations on this gulch $30,000,000 were taken from it."
+
+These six men that formed a partnership and deep alliances in their successful quest for gold eventually found different paths, but will be well remembered as the Fairweather party, discoverers of one of the world's richest gold deposits.
+
+John D. Ellingsen
+
+John D. Ellingsen was born in Great Falls, Montana on May 17, 1947. John's earliest memories of Old Town, located in Great Falls, which was a collection of old Montana buildings that were being preserved by Charles Bovey. Charles and Sue Ford Bovey also began acquiring and saving deteriorating buildings in Virginia and Nevada Cities in 1944. John's trip to Virginia City in 1952 when he was a boy began his fascination with architecture. This set him on a path of working alongside Charles Bovey in his quest of preserving the past.
+
+Ellingsen started working with Bovey on March 15, 1972, and his duties as curator included, but were not limited to, cleaning and setting up authentic displays, painting many storefront signs in historical fonts, furnishing and setting up the Sedman House and Barber in Nevada City, printing in the Montana Post Print Shop, repairing nickelodeons and band organs and searching, disassembling, and reconstructing old buildings in Nevada City from throughout the state. John built about half the buildings in Nevada City with Charlie. Unfortunately, John's time working with Bovey came to an end when Charles died from a heart attack in Nevada City on June 9, 1978. John continued to work for Bovey Restorations and Sue until her death on October 7, 1988. John's work as curator continued as Ford, Charles and Sue's only child, took charge of Bovey Restorations.
+
+As early as 1989, Ford asked John to go to the Legislature in Helena to see if the state would purchase the Bovey properties in Virginia and Nevada Cities. In the 1995 session, John along with supporters such as the Montana Historical Society, Virginia City Preservation Alliance and the National Trust for Historic Preservation, expected the state legislature to authorize money to buy the Bovey properties but they were one vote short. Finally in 1997, House Bill 14 came up for a final vote and passed with 81 in favor and 19 opposed. John's greatest accomplishment was saving Virginia and Nevada Cities from being sold off piece by piece. Instead it was saved with the State of Montana's purchase of the 250 buildings, 160 acres, and over a million artifacts for $6.5 million.
+
+Charlie Bovey's last words to John were "take care of things." which he kept close to heart. Presently, John is curator emeritus and has felt since his first trip to Virginia City that he was coming home. He has a Master's degree in history and received a minor in architecture and archaeology. John has won numerous awards for his work in historic preservation, including a lifetime achievement award from the Montana Preservation
+
+Alliance, the Governor's Award for Historic Preservation, and a "special award for preservation" from the Department of the Interior for his work at Garnet Ghost Town. John resides in Nevada City, Montana, and continues in many ways to "take care of things."
+
+Erected by Montana Heritage Commission, Montana History Foundation.

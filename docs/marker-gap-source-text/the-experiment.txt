@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143669
+Slug: the-experiment
+Title: The Experiment
+Town: Great Falls
+County: Cascade
+Lat / Lng: 47.52925, -111.23536
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Designed to be Portable
+
+In 1803, Captain Meriwether Lewis led an expedition to map a water route west to the Pacific Ocean. Along the way, the Lewis and Clark Expedition uses 26 different boats, but one deserves special mention. Christened "The Experiment," this boat traveled down the Ohio River, up part of the Mississippi River and up most of the Missouri River - in a box! The iron frame before you is a replica of this peculiar boat.
+
+In March of 1803, Lewis came to the U.S. Armory at Harpers Ferry, Virginia, to obtains rifles and supplies. He also carried plans for a portable, sturdy boat to replace heavier boats he planned to leave behind at the great falls. Armory craftsmen produced a canoe-shaped iron frame about 36 feet long, 4 feet 6 inches wide and 26 inched deep. The frame weighed less than 200 pounds, but Lewis estimated it would carry 8,000 pounds of cargo. His plan was to cover the hull with animal skins, then make it watertight by sealing the seams with tar from pine trees.
+
+What Happened to the Iron Boat?
+
+Assuming a pine tree forest at Great Falls was a mistake. Finding only scattered cottonwood trees on the riverbanks Lewis still proceeded to assemble the boat with a substitute sealer in mind. The men prepared the skins, assembled the frame and made a sealer of pounded charcoal, buffalo tallow and beeswax. When launched, Lewis described the boat as "a perfect cork on the water." Unfortunately, the substitute sealer did not adhere and the leaks were unstoppable. Lewis wrote, "...this circumstance mortified me not a little; ...the evil was irreparable." William Clark noted, "This failure of our favorite boat was a great disappointment to us, we havening more baggage than our Canoes could carry." Lewis abandoned his boat project and the pieces were buried on July 10, 1805. Clark assigned several men to carve additional canoes from nearby trees to replace "the Experiment." Journal records verify the men retrieved the iron frame on their 1806 return trip. No further mention of the boat is recorded, and its whereabouts remain a mystery even today.

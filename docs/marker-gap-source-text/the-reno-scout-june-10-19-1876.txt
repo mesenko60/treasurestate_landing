@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 189245
+Slug: the-reno-scout-june-10-19-1876
+Title: The Reno Scout -June 10-19, 1876
+Town: Rosebud
+County: Rosebud
+Lat / Lng: 45.96919, -106.38831
+Topics: military
+Year erected: 
+Erected by: Custer Circle Project 2017 and Visit Southeast Montana Tourism
+
+--- Inscription (as stored for the site) ---
+
+When the Dakota Column arrived at the confluence of the Powder River and the Yellowstone, General Alfred Terry wanted to be certain that the Lakota had not moved south and east even though Gibbon's scouts had already located the big village on the Rosebud a couple of weeks earlier.
+
+Major Marcus Reno, leading six companies of the Seventh, was ordered to march south along the Powder and Little Powder Rivers and continue west to the Tongue River eventually meeting the command at the Tongue's confluence back on the Yellowstone.
+
+Six days int the march, Major Reno's scouts found an abandoned campsite along the Tongue River. This was the same village located a month earlier by Lt. Bradley's scouts from the Montana Column. Mitch Bouyer, Reno's scout estimated the camp at four hundred lodges and over a thousand warriors. There was also a wide trail heading west out of the valley toward the Rosebud. Having seen no signs of the hostiles during his march, Major Reno decided to follow the Rosebud though General Terry's orders were specific about the column returning to the confluence of the Tongue on the Yellowstone.
+
+Major Reno's command camped along Rosebud Creek just before midnight on June 16, 1876 after crossing over from the Tongue River. The command then continued up the valley to the Greenleaf area before turning back to the Yellowstone to wait for the Dakota Column. Reno's advance scouts may have reached as far as the confluence of Lame Deer Creek before turning back. Information regarding the extent of Reno's scout is limited because most of the officers and troopers from the Reno Scout were killed at little Bighorn a week later.
+
+Both Terry and Custer were angry when learning of Reno's scout of the Rosebud for different reasons. Terry took issue with the disobedience of his orders while Custer criticized Reno for not pressing forward and engaging the hostiles. On the other hand General Terry now had an estimate of the size of the Indian village and an idea of where the hostiles might be heading.

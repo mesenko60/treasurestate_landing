@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128057
+Slug: welcome-to-the-top-of-the-world
+Title: Welcome! To the Top of the World
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.02296, -112.53294
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Montana’s Copperway
+
+You are about to enter a unique trail system that is part of Montana's Copperway, a network of trails and cultural sites developed to celebrate and interpret one of the richest, most colorful histories in our nation. The Top of the World trail segment encompasses a wide variety of cultural sites, including:
+
+• The Mountain Con — one of Butte's oldest and most productive mines.
+
+• The Granite Mountain Memorial — honoring the lives of 168 miners lost in the disastrous Speculator Fire of 1917.
+
+• And a fantastic view of the Berkeley Pit — a former open pit copper mine one mile long, half a mile wide, and 1,780 feet deep and mostly filled with water.
+
+You’ll Find Mineyards Here
+
+Mineyards were vast in scale and dynamic in function and design, employing the latest advances in industrial technology. Constantly evolving as mines deepened, consolidated or played out, mine yards were self-contained mining operations behind an imposing perimeter fence. Tall wooden fences complete with barbed wired and electric security alarms extended around the perimeter of the mine yard. These “strike fences” were intended to protect the mine yards from vandalism during frequent periods of labor unrest. Different buildings and trades provided a variety of specialized services to support underground mining operations.
+
+Montana’s Copperway Preserves Heritage
+
+Copper mining dominated the Butte and Anaconda region and defined its culture and landscape. Butte and Anaconda in the early 1990s created Montana's Copperway to preserve the rich heritage of mining's past through what once was a landscape of mining and smelting. As impacted areas are reclaimed, Montana's Copperway preserves the region's past through interpretation of historic industrial, commercial and residential districts. Development of open spaces and trails will ensure easy access to these sites. Look for the Copperway logo at the top of the many interpretive signs you'll find as you explore Butte and Anaconda. The signs identify historic, cultural, and reclamation areas around the region.

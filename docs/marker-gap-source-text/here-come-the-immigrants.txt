@@ -1,0 +1,26 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 253720
+Slug: here-come-the-immigrants
+Title: Here Come the Immigrants!
+Subtitle: Railroads, Boats & Wagon Trains
+Town: Terry
+County: Prairie
+Lat / Lng: 46.7306, -105.43515
+Topics: disasters, railroads, nature
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+Over the span of untold generations, rivers marked the primary travel routes used by nomadic tribes and the earliest explorers. The first steamboat to venture up the Yellowstone River to its confluence with the Powder River was the famed Far West, which accompanied the first survey team sent by the Northern Pacific Railroad in 1872. It carried supplies for the surveyors and for the soldiers who came along to provide a defense against the Sioux, who had become hostile because the encroachment violated the 1868 Treaty of Fort Laramie.
+
+The railroad tracks that passed in front of you helped entice a figurative flood of immigration to this area. Later, a literal flood here precipitated one of the worst transportation disasters in American 20th Century history. Imagine the dead of night, in the wee hours of June 19, 1938, when a Milwaukee Railroad passenger train arrived at the Custer Creek Bridge crossing- just as a torrential flash-flood struck the same bridge from below.
+
+The bridge collapsed, seven of the train's 11 cars falling into deep, rushing waters, killing 48 passengers and injuring 75. Another 43 survived unscathed-many of them discovered the perilous situation when they awoke in the train's rear cars to realize they were no longer moving. One car teetered for nearly an hour in the pitch-black darkness before it fell into the river and washed downstream. At the time, it was the second deadliest U.S. train wreck that ever had occurred, and few incidents have surpassed it since.
+
+script letter at the bottom center:
+
+"I awoke in the middle of the night to see all this wreckage across a roaring river, train cars flung at right angles to the way we were going. We were stuck on the east side, we couldn't get to it, we couldn't hear people on the other side of the river, we couldn't do anything to help. There were 48 people trapped and dead but we didn't know that at the time. They fished one body out as far away as Gelendive." Warren Jones, survivor
+
+Erected by Undaunted Stewardship.

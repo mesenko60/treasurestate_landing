@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142745
+Slug: the-buffalo-soldiers-at-fort-assinniboine
+Title: The Buffalo Soldiers at Fort Assinniboine
+Town: Havre
+County: Hill
+Lat / Lng: 48.49857, -109.79648
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+African American soldiers serve in the Revolutionary War, and fought for the Union in the American Civil War. Six black cavalry-infantry units were officially organized on September 21, 1866 at Fort Leavenworth, Kansas. These men saw service throughout the West from Kansas and Oklahoma to Texas and Arizona earning a formidable reputation as first class soldiers. The 9th and 10th Cavalry and the consolidated 24th and 25th Infantry Regiments were active until 1952 when black troops were integrated into the regular Army. The men of the 9th and 10th were the first "Buffalo Soldiers," so named by Cheyenne and other tribal adversaries. The troopers accepted this name for the honor that it was.
+
+In 1892, the black cavalry-infantry units were transferred from Fort Grant, Arizona to Fort Custer in Montana under the command of celebrated Civil War veteran Colonel J.K. Mizner. Troops were stationed at Forts Custer, Keogh and Assiniboine in Montana and Fort Buford in North Dakota. Fort Assiniboine became regimental headquarters in 1896.
+
+One of the regiment's white officers was Lieutenant John J. Pershing, later brigadier general of international renown. In 1898, Pershing was recalled from West Point at his own request to rejoin Fort Assinniboine's 10th Cavalry on assignment to Cuba during the Spanish American War/Philippine Insurrection. The future general and his men fought valiantly alongside Theodore Roosevelt's Rough Riders in the famous battle at San Juan Hill. One eyewitness reported, "If it had not been for the Negro cavalry the Rough Riders would have been exterminated."
+
+Horace W. Bivens was among the 10th Cavalry's non-commissioned black officers at Fort Assinniboine. During a career spanning more than thirty years, Bivens received 32 medals including the Silver Star for valor at San Juan Hill. One of the nation's most highly decorated African American soldiers, his army record in marksmanship is still one of the highest on record.
+
+An 1897 regimental history of the 10th Cavalry observed. "The settlement and civilization of the Great West is due to no small degree to the veterans of the Tenth Cavalry. The regular soldier's sufferings have been lightly regarded; his valor has only occasionally received suitable reward; his life has not been valued at its true worth. The mountains and plains know the story of his devotion to duty, and his toils. Many a hero sleeps in an unknown grave whose life was offered as a sacrifice to the peace security now enjoyed throughout our vast domain."
+
+Erected by Montana Historical Society.

@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128131
+Slug: organized-labor
+Title: Organized Labor
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.12293, -112.93109
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society and Montana Department of Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+Between 1880 and 1920, large-scale development of copper mining and smelting in Butte and Anaconda spurred the growth of railroads and industrialization. This, in turn, attracted thousands of workers from across the country and around the world. As the area assumed world leadership in copper production in 1887, trade and labor organizations, particularly those comprised of miners and smeltermen, came to the forefront.
+
+Most labor unions in Anaconda were formed between 1890 and 1900; many were affiliated with national groups. The 1920 Anaconda City Directory lists 30 trade union and labor organizations; for example, Central Labor Council, American Alliance for Labor and Democracy, Federal Labor Union, Mill and Smeltermens' Union, Anaconda Typographical Union, Barber's Union, Blacksmiths' and Helpers' Union, Bricklayers, Cigarmakers' International, United Brewery Workers, Iron Molders' Union, Machinists' Union, Musicians' Union, and the Shoemakers' Union.
+
+Although the copper industry boomed and profits rose in the years leading up to World War I, wages had only risen from an average of $3.00 per day in 1900 to $3.85 per day in 1915. Dissatisfaction with working conditions was also increasing. The 1917 Granite Mountain/Speculator Mine fire, in which 164 men were lost, incited the labor unrest in Butte and Anaconda. Within days of the fire, a general strike was called demanding a $5.00 per day wage and better working conditions. Federal troops were garrisoned in both Butte and Anaconda to head-off violence. The strike ended six months later, and a sliding wage scale based on the price of copper was adopted.
+
+The results of a second strike two years later, however, gave the upper hand to management. The copper market was depressed, and the Company had begun to expand its foreign holdings, reducing its dependence on Butte ore. The smelter was shut down for a period in 1920, and when it reopened in 1921, wages had decreased. This up and down, gain and loss, pattern became a familiar one to smeltermen and their families. Nevertheless, the labor movement and the solidarity of the unions was firmly woven into the fabric of Anaconda.
+
+Erected by Montana Historical Society and Montana Department of Fish, Wildlife & Parks.

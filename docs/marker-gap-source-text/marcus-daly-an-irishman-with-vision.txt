@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128128
+Slug: marcus-daly-an-irishman-with-vision
+Title: Marcus Daly - An Irishman with Vision
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.12303, -112.93133
+Topics: industry, settlements
+Year erected: 
+Erected by: Montana Historical Society and Montana Department of Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+In 1876, an Irish immigrant working for a Salt Lake City mining company arrived in southwest Montana to appraise mining properties. His name was Marcus Daly, and as a result of good timing and a keen knowledge of the mining industry, he became instrumental in making the Butte mines and Anaconda smelters part of the foundation upon which the country's industrial and social development would be built.
+
+In the late 1800s, a gigantic vein of copper sulfide ore was discovered in Butte, just as the country was beginning to embrace the electric light bulb and the telephone. This increased demand for copper wire to meet America's electrical needs placed Montana's copper industry on the verge of a boom. Eventually, the savvy Daly convinced his backers to invest in the research and development of a large-scale smelting and refining works to process the copper ore.
+
+Daly's search for the ideal smelter location lead him to the Deer Lodge Valley, where he chose Anaconda as the new site. It was the location nearest the Butte mines that offered a natural water source sufficient to operate the large-scale ore processing. He also planned and founded the city of Anaconda. In the community's early years, Daly assisted in providing the city water supply, lighting system, electric street car service, sewer system, and public buildings. A dedicated follower of horse racing, Daly promoted the construction of the Anaconda Driving Park, a mile-long racing track featuring a double-decked grandstand that seated 2,000. A number of famous sprinters raced on the track, including Daly's beloved thoroughbred Tammany.
+
+From 1884 to 1902 smelting and refining facilities were operated at the Upper and Lower Works, on the north side of the valley near the current site of the Old Works Golf Course. When Montana was granted statehood in 1889, Marcus Daly promoted Anaconda as its capitol, and built the Montana Hotel in anticipation of housing the legislators. Although his bid was unsuccessful, Daly remained committed to the city's welfare.
+
+Under his leadership, plans for a modern 5,000-ton capacity smelter were finalized in 1889. Groundbreaking for the Washoe Smelter took place on September 20, 1900, and the Anaconda Reduction Works went into production in 1902. Marcus Daly died in November 1900 and did not see the great smelter completed. This Irishman dreamed grand dreams and left an indelible mark on the city he founded.
+
+“Dedicated to our Irish Ancestors, who gave their lives to the smelter and this community.” – Ancient Order of Hibernians (AOH), Division No. 1, Anaconda-Deer Lodge County, Montana, the longest continuous Division of the Ancient Order of Hibernians West of the Mississippi River.
+
+Erected by Montana Historical Society and Montana Department of Fish, Wildlife & Parks.

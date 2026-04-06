@@ -1,0 +1,16 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 99217
+Slug: jeffersons-instructions-to-lewis-and-clark
+Title: Jefferson’s Instructions to Lewis and Clark
+Subtitle: July 4th, 1803
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.92609, -111.50329
+Topics: exploration
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+“The object of your mission is to explore the Missouri river, & such principle stream of it, as, by its course & communication with the waters of the Pacific ocean… may offer the most direct & practicable water communication across this continent…” from Thomas Jefferson’s instructions to Meriwether Lewis, July 4th, 1803

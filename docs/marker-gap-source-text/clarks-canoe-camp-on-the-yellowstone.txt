@@ -1,0 +1,53 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 231289
+Slug: clarks-canoe-camp-on-the-yellowstone
+Title: Clark's Canoe Camp on the Yellowstone
+Town: Park City
+County: Stillwater
+Lat / Lng: 45.63307, -108.91704
+Topics: 
+Year erected: 
+Erected by: Lewis & Clark Trail Heritage Foundation
+
+--- Inscription (as stored for the site) ---
+
+On July 3, 1806, Capt. Clark and 12 members of the Corps left Traveler's Rest to explore the Yellowstone River, intending to canoe the entire length. But, as Clark noted, "I can See no timber Sufficiently large...to answer my purpose."* On July 18th, near present-day Columbus, Sgt. Gibson was seriously injured, forcing Clark to stop the next day, south of Park City, and construct 2 small dugout canoes. The party proceeded on the 24th of July.
+
+* Moulton Vol 8, p. 187
+
+The actual location of Canoe Camp has been of interest to Lewis & Clark historians and local enthusiasts since 1893. Starting in 2010, an intensive study using additional information, modern mapping equipment and technology, opened the way to accurately position Clark's camp symbol. It provided a promising location for the archaeological investigation.
+
+The archaeology study was initiated by MSU Billings in 2011, with funding by the Lewis & Clark Trail Heritage Foundation, National Park Service, MSU Billings, as well as the Rochejhone and Headwaters Chapters, Assisting MSU B students were the Boy Scouts of America and others.
+
+During the archaeology study, many factors led to a confident identification of the site. Artifacts, including mercury and lead, were recovered from there area, which conformed to military camp layout of the fire pit, latrine, and distance from the river. Mercury, as a medicinal salve and in Dr. Rush's pills called 'thunderclappers,' was used only by the Corps and is considered positive evidence. Composition of the lead matches that found at Traveler's Rest and also that from Kentucky mines known to be the source of lead for the Expedition.
+
+Clark's Party
+
+Capt. William Clark: b.1770-d.1838
+
+Sacagawea: b.1788-d.1812
+
+Jean Baptiste Charbonneau "Pomp": b.1805-d.1866
+
+Toussaint Charbonneau: b. 1767-d.1843
+
+Sgt. Nathaniel Pryor: b.ca1772-d.1831
+
+Pvt. George Gibson: unk.-d.1809
+
+Pvt. John Shields: b.1769-c.1809
+
+Pvt. William Bratton: b.1778-d.1841
+
+Pvt. George Shannon: b.1785-d.1836
+
+Pvt. Francois (William) Labiche: unk.
+
+Pvt Hugh Hall: b.1772-d. unk. Pvt. Richard Windsor: unk.
+
+York: b.1772-d.1816-1832
+
+For more information, please visit Lewis & Clark Trail Heritage Foundation and the National Park Service websites. More signs and details are available at Pompeys Pillar.
+
+Erected by Lewis & Clark Trail Heritage Foundation.

@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 71505
+Slug: madison-limestone-and-the-garnet-mountains
+Title: Madison Limestone and the Garnet Mountains
+Town: Drummond
+County: Granite
+Lat / Lng: 46.71923, -113.31246
+Topics: industry, settlements
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+About 350 million years ago, much of Montana was submerged under a shallow sea. Billions of tiny marine creatures thrived in the water and when they died their bodies settled into the muck on the sea bed. After hundreds of millions of years of accumulation and many more millions of years it metamorphosed into the pale gray rocks that are known today as Madison Limestone. The limestone is common throughout Montana, eastern Idaho, northern Wyoming, and in the Dakotas. In Montana, the limestone beds are from 1,000 to 2,000 feet thick in places. Because Madison Limestone resists weathering and erosion much better than most other kinds of rocks, it forms many of the spectacular cliffs and dramatic ridges that make Montana such a scenic place to drive through. A magnificent outcrop of Madison Limestone is visible on the north side of Interstate 90 just a few miles east of this rest area. The limestone pinnacles were exposed when the soil around them eroded away, creating the dramatic canyon along the Clark Fork River. The red streaks visible on the rocks and soil is iron oxide.
+
+About 75 million years ago molten rock intruded the area near the crest of the Garnet Range, seven miles north of this rest area. Northwest-trending faults and rock layers channeled mineral-rich fluids from the intrusion into Cambrian and Precambrian rocks to form three principal gold veins and numerous smaller, gold-bearing zones. Prospectors discovered gold placers at the mouth of Bear Gulch, about a mile northeast of the rest area in 1865; discoveries in other drainages of the Garnet Range soon followed. Although gold-bearing veins were discovered in 1866, the technology was not readily available to work them. By 1896, however, numerous underground mines were producing gold, silver, and copper. In 1898, more than 1,000 people lived in the town of Garnet to support the miners living in the surrounding area.
+
+Geo-Facts:
+
+Where the magma contacted the Madison Limestone, it caused a chemical reaction called a skarn that formed the garnets found in the range.
+
+The Garnet area placer mines produced approximately 60,000 ounces of gold, as did the lode mines. Drilling has revealed gold placer reserves under the current rest area, and resources of several hundred thousand ounces of gold still remain in the Garnet Range.
+
+A mining camp called Beartown was located in a narrow gulch near here. Between 1865 and 1869, miners recovered $30 million in gold and silver from Bear Gulch. As many as 7,000 people lived in camp during its heyday.
+
+Geo-Activity:
+
+What are some organisms you know of today that are similar to marine organisms whose shells and bodies accumulated into what we now know today as Madison Limestone? Remember, these creatures lived when much of Montana was on the floor of a tropical sea.
+
+Erected by Montana Department of Transportation.

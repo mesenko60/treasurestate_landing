@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220038
+Slug: lewis-and-clark-pass
+Title: Lewis and Clark Pass
+Town: Lincoln
+County: Lewis and Clark
+Lat / Lng: 47.14267, -112.42902
+Topics: exploration
+Year erected: 
+Erected by: Helena-Lewis and Clark National Forest
+
+--- Inscription (as stored for the site) ---
+
+Capt. Meriwether Lewis, on his return journey, crossed the Continental Divide through this pass on July 7, 1806.
+
+Erected by Helena-Lewis and Clark National Forest.

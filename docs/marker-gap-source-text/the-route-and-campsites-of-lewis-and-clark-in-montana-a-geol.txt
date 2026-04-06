@@ -1,0 +1,54 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 256272
+Slug: the-route-and-campsites-of-lewis-and-clark-in-montana-a-geol
+Title: The Route and Campsites of Lewis and Clark in Montana: A Geologic Perpective
+Subtitle: by Robert N. Bergantino and Kenneth L Sandau
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 44.99448, -112.86834
+Topics: exploration
+Year erected: 
+Erected by: Montana Bureau of Mines and Geology
+
+--- Inscription (as stored for the site) ---
+
+At the beginning of the 1800s, the science of Geology still was in its infancy; in fact the word geology in its currently accepted meaning was not used until 1778. Before the mid-1700s, the study of the origins of the earth and its rocks, rivers, and mountains was essentially a philosophical plaything, a part of Natural History or Natural Philosophy. In America, the science of geology was even less known and less developed than in Europe. Lewis had neither formal not practical training in geology, mining, or mineralogy, although he possibly had the opportunity to acquire some knowledge from Jefferson's library. Lewis' second in command, Clark, also had no training or experience in geology. The other members of the expedition were principally backwoodsmen, hunters, or enlisted soldiers. Like their leaders, much of their "understanding" of geology was based on the common knowledge and popular misconception of the time.
+
+The geologic vocabulary of Lewis and Clark reveals much about their understanding of geology. The journal entries name several rock types: chalk, flint, flintstone, freestone, granite, lava, limestone, marble, marl, pumicestone, sandstone, sand rock, slate, slate stone, and slate rock. Lewis and Clark generally used the terms chalk, marl, and sandstone, correctly. They applied the term freestone to any rock that was layered, split, or looked like it could be split easily into layers; generally, for rocks that we now know were sandstone and limestone. Sometimes, however, they used that term for rocks that certainly were granitic, perhaps seeing the slabs that resulted from spheroidal weathering or seeing closely spaced fractures. Lewis and Clark occasionally used the term flint, sometimes correctly, sometimes applying it generically for many silica-rich rocks. They used granite both for any crystalline rock and for any hard rock that was not distinctly bedded even though of sedimentary origin. Generally, when they called a rock limestone. it was limestone, but some limestone that they saw they called granite or shale. They used the term marble in the sense of an ornamental stone rather than as a rock, and lava and pumicestone for the products formed from the burning of coal beds. They used the term slate for shale, argillite, or any other thin-bedded rock that was not sandstone or limestone.
+
+Except for the common metals, the explore's mineral vocabulary was largely apothecary or medical in origin.
+
+Among the mineral terms in their vocabulary we find: alum, arsenic, cobalt, copperas, epsom salt, glauber salts, iron ore, isinglass, lead, lime, marcasite, mercury, niter, pyrite, quartz, salt, saltpeter, salts of tartar, silver, talc, white vitriol, and yellow ocher. Most of the minerals and salts that Lewis and Clark identified using these names were identified incorrectly.
+
+Lewis and Clark (but especially Lewis) often ascribed colors to rocks that probably resulted from conditions of sunlight, shadow, or vegetation rather than to actual color of the rocks themselves. This incorrect description of rock colors has caused confusion regarding the location of certain geographical features. Lewis, for example, on July 19, 1805, wrote: "...this rock is a black grannite below and appears to be of a much lighter colour above and from fragments I take it to be flint of a yellowish brown and light creemcolord yellow...from the singular appearance of this place I called the gates of the rocky mountains ..." Some have argued that historians have misidentified the location of the Gates of the Mountains because the rocks there are neither granite nor black. Yet careful study of Clark's maps and the expedition's original river survey places that observation precisely at the spot that now goes by the name Gates of the Mountains.
+
+Both Lewis and Clark had a good command of geographic terms and used most of them in their current meaning. Lewis also seems to have had a more specialized geologic vocabulary, perhaps derived from books in Jefferson's library. Among the specialized terms he used appear: argillaceous, calcareous, carbonated wood, conchoidal fracture, crystallized, fossil, incrustation, interstice, and strata.
+
+If the geologic descriptions and interpretations that Lewis and Clark make are evaluated with respect to their lack of specialized training, most of their observations can be interpreted satisfactorily Lewis and Clark and the others of the expedition boldly excel is not in their interpretations of geology, but in their observations of it. Their geologic observations were among the finest of the day in America. In addition both men seemed well aware of certain geomorphic processed, especially river mechanics. This knowledge likely did not come from the books available to Lewis as Jefferson's secretary, but from his practical experience and his keen observational ability. Clark had even less chance to learn geology from scientific books of the day, yet his skills as an observer and his understanding of stream processes are consistently demonstrated in his writings.
+
+Most geographic and geologic descriptions in the expedition's journals are interesting in themselves. They become more interesting and useful when the reader knowns what the feature described was or how it relates to the surrounding geography or geology. Below is a short quote for Lewis' journal entry dated Monday 15th, 1805, footnoted with current geological information and descriptions (journal entry as transcribed by Gary E. Moulton, Editor, "Meriwether Lewis and William Clark, The Journals of the Lewis and Clark Expedition." with permission):
+
+"... we have now passed Fort Mountain¹ on our right it appears to be about ten miles distant. this mountain has a singular appearance it is situated in a level plain, it's sides stand nearly at right angles with each other and are about a mile² in extent, these are formed of a yellow clay³ only without the mixture of rock or stone of any size and rise perpendicularly to the hight of 300 feet.⁴ the top appears to be level plain⁵ and from the eminence on which I was yesterday I could see that it was covered with a similar cost of grass⁶ with the plain on which it stands. the surface appears to also to possess a tolerable fertile mole of 2 feet thick. and is to all appearance inaccessible. from it's figure we gave it the name of fort mountain..."
+
+----------------------------------------------------------
+
+¹ Square Butte, which rises 22 miles southwest of Great Falls and 10 miles west of Ulm.
+
+² The butte's east and west sides are about 1 ½ miles long and its north and south sides are about ¾ mile each.
+
+³ The most conspicuous part of Square Butte is the nearly horizontal mass of an igneous rock called basalt that form the upper three-fourths (700 feet) of the butte. The basalt is all that remains of a laccolith-a "blister of solidified magma that intruded sedimentary rocks and domed them upwards. This laccolith formed during the Late Cretaceous time when magma from the volcanic center of the Adel Mountains, about 10 miles south of the butte, intruded a near-vertical fracture in sedimentary rocks. As this magma sheet reached the area where Square Butte currently stands, it began to force its way between the horizontal layers of sedimentary rock, bowing the upper layers upward as it continued to flow in. The nearly flat base of the laccolith may then have been more than 2000 feet below ground surface. As the molten material cooled and solidified, vertical cracks (joints) developed in the rock. These joints generally formed six-sided columns which can be seen around much of the rim of the butte. Horizontal layering of the laccolith also can be sen in certain localities. The basalt (Shonkinite) that forms this laccolith is much more resistant to erosion that the sedimentary formations into which it forced its way.
+
+The sedimentary formation in which the laccolith intruded is named the Virgell Sandstone. It was deposited as a coastal sand about 80 million years ago during the Late Cretaceous and is the same formation that produced the White Cliffs of the Missouri about 150 miles to the northeast (the White Cliffs also are noted in Lewis' journals). Originally about 399 feet thick, only about 120 feet of the Virgelle Sandstone remains here; it is found just below the basalt. Erosion has removed the upper 280 feet of this sandstone and all the formations that lay above it. Below the Virgelle Sandstone is the Telegraph Creek Formation; it is about 300 feet thick and is fairly sandy at the top, but grades downward into shale. The base of the butte is composed of the Marias River Shale, named for its exposures near the mouth of the Marias River.
+
+⁴ Square Butte's highest point is at 4797 feet above sea level; the height of the surrounding plains ranges from 3500 to 3700 feet, Thus the summit is more that 1000 feet above the plains-not 300 feet. Lewis' description of the length and shape of Square Butte and the nature of its summit surface shows that he gave the butte more than just a casual glance, but it is hard to explain how he underestimated it height so badly or failed to notice the rock that rings the summit plain. He must have assumed that the material forming Square Butte was the same as that of the smaller, still-unnamed buttes near the falls that he had seen on June 13, 1805 from less than 2 miles away,
+
+⁵ The more nearly level summit plain altitude averages 4650 feet and contains at least 1000 acres (1.6 square miles).
+
+⁶ On this upper plain grow plants specimens that are more indigenous to the pre-settlement plains than those that now grow on the plains that surround the base.
+
+This map provides an overview of the routes and campsites of the Lewis and Clark Expedition in Montana that will enable a general understanding of the fascinating geographical and geological observations recorded in their journals. For a more detailed and comprehensive accounting of campsites or for information about our broad catalog of reports and geologic maps, please contact the Montana Bureau of Mines and Geology.
+
+R.N. Bergantino
+
+Associate Research Hydrologist Montana Bureau of Mines and Geology

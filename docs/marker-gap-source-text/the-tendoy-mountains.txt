@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 124335
+Slug: the-tendoy-mountains
+Title: The Tendoy Mountains
+Town: Lima
+County: Beaverhead
+Lat / Lng: 44.6312, -112.5887
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+About four million years ago, this part of the North American Plate slid over a gigantic source of heat in the mantle known as the Yellowstone hot spot. In Yellowstone National Park, this heat is responsible for the geysers, mud pots, and hot springs, but in southwestern Montana, it is partially responsible for the mountains and valleys. The thermal energy deep underground bulged the curst above it as the tectonic plate moved over the hot spot, causing the Earth's upper crust to stretch. This stretching was so great that crust broke into blocks separated by steep faults that allowed these blocks to move up or down relative to adjacent blocks. This site in the Red Rock Valley is one of the down-dropped blocks, whereas the Tendoy Mountains to the west were uplifted. Geologists refer to the break separating them as the Red Rock fault. You can see the Red Rock Fault as the line along the foot of the mountains closest to the rest area. The triangular faces or facets that terminate the ridges coming toward you are evidence that this fault is very young. It ruptured as recently as 3000 years ago and earthquakes indicate that it is still actively moving.
+
+Oryctodromeus
+
+Paleontologist are always discovering new species of dinosaurs that are not only valuable from a scientific standpoint, but also show us how varied life was on Earth millions of years ago. About 95 million years ago a small herbivore called Oryctodromeus lived in this area. What makes this dinosaur so unusual is that it lived in burrows underground! In 2006, paleontologists discovered the fossilized skeletons of an adult Oryctodromeus and two juveniles in an ancient burrow not far from here. The skeleton showed that the animal, with its strong forearms, shoulders, and beak, was specially adapted to digging. Importantly, it also indicated that the adults took care of the young animals. Paleontologists don't know why the long-legged Oryctodromeus chose to den underground, but it could have been to avoid extremes of hot and cold weather, to evade predators and to raise their young.
+
+Geo-facts:
+
+• The upper sixty miles of earth's crust is called the lithosphere.
+
+• Oryctodromeus burrows were twisting and worm-like and were about seven feet in length.
+
+• Tendoy was a prominent Lemhi Shoshone Chief who lived in the area in the mid-19th century.
+
+Geo-Activity:
+
+• Oryctodromeus lived in dens much like coyotes do today. Can you think of some other animals you know about in Montana that live in dens and burrows?

@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 154503
+Slug: nez-perce-national-historical-park-2
+Title: Nez Perce National Historical Park
+Town: Laurel
+County: Yellowstone
+Lat / Lng: 45.77577, -108.79605
+Topics: native-american, military
+Year erected: 
+Erected by: National Park Service
+
+--- Inscription (as stored for the site) ---
+
+The park links a series of widely separated sites of deep significance to the Nez Perce historic villages, battlefield, and legends sites. The park experience involves a journey across both time and territory. Although firmly connected to homeland, the Nez Perce are a dynamic people who for thousands of years travel seasonally between the prairies and river valleys. This lifestyle was interrupted in 1877. Treaties forced bands from their homes in Oregon and Idaho, and war erupted.
+
+Today those events are commemorated by the 1,170-mile Nez Perce (Nee-Me-Poo) National Historic Trail.
+
+Together, the park and the trail tell the story of an encounter between two strong nations, from the 1805 meeting with Lewis and Clark, to the conflicts that led to the 1877 war, to the divisions and healing processes going on today. They provide opportunities to view our shared history of this landscape through a different lens.
+
+Erected by National Park Service.

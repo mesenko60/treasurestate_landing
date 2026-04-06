@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 251040
+Slug: the-discovery-at-last-chance-gulch
+Title: The Discovery at Last Chance Gulch
+Town: Helena
+County: Lewis and Clark
+Lat / Lng: 46.58538, -112.04101
+Topics: exploration, events
+Year erected: 2014
+Erected by: Four Georgians Chapter #4681, E Clampus Vitus
+
+--- Inscription (as stored for the site) ---
+
+In the spring of 1864, John S. Cowan of Georgia, D.J. Miller of Alabama, John Crabb of Iowa, and Reginald (Bob) Stanley of Nuneaton, England, set out from Alder Creek to prospect along the Little Blackfoot River. They had no luck and moved on, traveling over the Continental Divide. On the east side of the mountains, they camped in a narrow gulch where a stream tricked through gravel and passed the evening panning. While there found color, they were anxious to find better diggings and pressed on for six weeks, finding nothing. The discouraged miners began to talk of the little gulch and stream on the east side of the Divide. Nearly out of provisions, they returned to take one last chance. It was the evening of July 14, 1864. Stanley later wrote:
+
+… while my partners dug some holes near the mouth of the gulch, I took pick, shovel and pan and made my way up stream looking for a bar on which to put down a hole. (It was) a fine still evening with the charm of treading the unknown and unexplored.... A tiny stream rippled under the banks.... I commenced a hole on the bar and put it down to bedrock, some six or seven feet. Taking a pan of gravel from the bottom, I panned it in the little stream. Three or four little flat, smooth nuggets was the result; nuggets that made the pan ring when dropped into it....
+
+The four miners employed the "Georgian method" of placer mining and this explains why they were known thereafter as "the Georgians." According to Stanley's description, the discovery site is today situated in the parking lot south of the Colwell Building. By 1869, successful placer mines at Last Chance and other local gulches collectively yielded nearly $18 million with of gold or $310 million in modern currency.
+
+Erected 2014 by Four Georgians Chapter #4681, E Clampus Vitus.

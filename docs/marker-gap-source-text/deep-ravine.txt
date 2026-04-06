@@ -1,0 +1,48 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86800
+Slug: deep-ravine
+Title: Deep Ravine
+Subtitle: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.56522, -107.43015
+Topics: military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Deep Ravine (Crazy Horse Gully & Grey Horse Ravine) was the scene of fierce fighting during the battle. Crazy Horse, and other Sioux and Cheyenne warriors crossed the Little Bighorn River (in front of you) and rode up the ravine during the attack against Lt. Col. George A. Custer’s Battalion. Toward the end of the battle, approximately 40 soldiers broke out from Last Stand Hill, and were killed here, and on adjacent ridges. Warrior accounts indicate that a Sioux, was also killed during the fighting and a Northern Cheyenne mortally wounded (they were recovered by their families). Approximately 28 soldiers, (mostly from Company E) were found in a large heap near the head of the ravine, and others at 15 yard intervals below.
+
+Army accounts indicate that the soldiers in the ravine were buried where they fell. Historical evidence suggests that the soldiers in the ravine were overlooked during the reburial in the mass grave on Last Stand Hill in 1881.
+
+Attempts in 1984, 1985, and 1989 to locate the remains of the missing soldiers using modern archeological techniques and equipment failed. However, in 1995 and 1996 a Rapid Geophysical
+
+Surveyor Investigation indicated soil anomalies and metal, detected throughout the ravine, especially in the upper two-thirds area near the headwall (below you). Perhaps future archeological investigations and techniques may one-day solve the mystery of the missing 7th Cavalrymen.
+
+“In the gully men were lying on top of each other. I could see where they ran down one side and tried to scramble up the other.”
+
+- Trumpeter William G. Hardy,
+
+Co. A, 7th Cavalry
+
+“In the ravine I found most of the troop, (Co. E) who had used the upper sides for a kind of breastwork, falling to the bottom as they were shot down . . . In burying the men the stench was so great . . . so we had to pile large chunks of earth upon them broken off from the sides of the ravine . . . ”
+
+- Major Thomas M. McDougal, Company B, 7th Cavalry May 19, 1919
+
+“Several of these 28 men of Company E were shot in the back. From the position they were hit it was very easy for the Indians to crawl up behind them . . . and kill them.”
+
+- Lieutenant Luther R. Hare, Co. K, 7th Cavalry
+
+“Crazy Horse went to the extreme north end of the camp and the turned to his right and went up another very deep ravine (Deep Ravine) and by following it . . . he came very close to the soldiers side (Capt. Keogh’s Command) . . ”
+
+- Chief Gall, Hunkpapa Lakota, June 25, 1886
+
+“Soldiers came on foot and tried to fight through us into a deep gully, and this was the last of the fight and the men were killed in this gully.”
+
+- Tall Bull, Northern Cheyenne
+
+“ . . . there was a Sioux in the deep gully with the 28 soldiers first [we] thought he was with the soldiers, but we later found he . . . followed the soldiers closely.”
+
+Medicine Man, Oglala Lakota 1912

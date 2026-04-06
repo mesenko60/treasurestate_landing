@@ -1,0 +1,30 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 190094
+Slug: plenty-coups-chief-of-the-crows
+Title: Plenty Coups - Chief Of The Crows
+Subtitle: (Circa 1848 - March 4, 1932)
+Town: Red Lodge
+County: Carbon
+Lat / Lng: 45.19452, -109.247
+Topics: native-american
+Year erected: 1999
+Erected by: Barney Old Coyote, Francis Stewart and Friends of Plenty Coups
+
+--- Inscription (as stored for the site) ---
+
+"The buffalo gone and freedom denied him, the Indian was visited by two equally hideous strangers, famine and tuberculosis. They could cope with neither. His pride broken he felt himself an outcast, a beggar in his own country. It was now that Plenty Coups became the real leader of his people." "All my life I have tried to learn as the chickadee learns, by listening, profiting by the mistakes of others, that I may help my people. I hear the white man say there will be no more war. But this cannot be true. There will be other wars. Men have not changed, and whenever they quarrel they will fight, as they have always done. We love our country because it is beautiful, because we were born here. Strangers will covet it and someway try to possess it, as surely as the sun will come up tomorrow. Then there must be war, unless we have grown to be cowards without love in our hearts for our native land. And whenever war comes between this country and another, your people will find my people pointing their guns with yours. If ever the hands of my people hold the rope that keeps this country's flag high in the air, it will never come down while an Absarokee (Crow) warrior lives."
+
+- Linderman's Biography of Plenty Coups
+
+Crow country once ranged from Three Forks to the Black Hills, from the Musselshell to the Big Horn Mountains. Red Lodge was a place of worship and protection for the Crow people when it was theirs. Please respect it and love it. It is a very good place.
+
+This monument to Plenty Coups Chief of the Crows, was made possible by Tom and Gail Hansberger of the Palisades Ranch through the Hansberger Family Foundation. Collectors of miniatures of this monument are also appreciated.
+
+Dedicated the 3rd of July 1999 by
+
+Barney Old Coyote, Francis Stewart and Friends of Plenty Coups
+
+Sculpter, Lyle E. Johnson, Big Timber, MT; Assisted by Ercel E. Johnson, Willis E. Johnson, Jonathan E. Johnson
+
+Erected 1999 by Barney Old Coyote, Francis Stewart and Friends of Plenty Coups.

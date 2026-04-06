@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 189166
+Slug: custers-first-skirmish-with-the-lakota
+Title: Custer's First Skirmish With The Lakota
+Town: Miles City
+County: Custer
+Lat / Lng: 46.40588, -105.86871
+Topics: 
+Year erected: 
+Erected by: Custer Circle Project 2017 and Waterworks Art Museum
+
+--- Inscription (as stored for the site) ---
+
+Custer's first encounter with the Lakota occurred on August 4, 1873 near the confluence of themTongue River, At this time, the Seventh Cavalry was assigned to Colonel David Stanley's command to protect Northern Pacific railroad surveyors operating on the north side of the Yellowstone River.
+
+The "Battle of Tongue River", was dubbed by the New York Herald at the time, was the first of several engagements between Custer's Seventh and the Lakota in August 1873. At the onset of the skirmish, Custer rode out in front of his two companies to determine the strength of the Indians. When he realized that large numbers of Lakota warriors were waiting in ambush in a grove of cottonwood, he ordered his column to take defensive positions in a dry channel of the river. Indians and troopers exchanged gunfire but casualties in the three-hour standoff were light.
+
+Meanwhile, a few miles downriver, three men, including John Honsinger (some say Holzinger), the cavalry's civilian veterinarian, were caught by Indians away from Colonel Stanley's main body of soldiers and killed.
+
+A little over a year later, a Hunkpapa warrior named Rain-in-the-Face was arrested at the Standing Rock Reservation after boasting about the 1873 killings. He was imprison at Fort Abraham Lincoln by Captain Tom Custer and interrogated by older brother George but escaped after a few months of captivity, supposedly vowing revenge against the Custer brothers.
+
+One of the lurid stories in the aftermath of the Custer disaster named Rain-in-the-Face as the killer of Custer - probably a spurious claim connected to the events of 1873-74. Poet Henry Wadsworth Longfellow even wrote a poem, "The Revenge of Rain-in-the Face" about a year after the battle. By this time, Rain-in-the-Face was already in Canada with Sitting Bull's Hunkpapa lodges, not to return until 1880. Rain-in-the-Face, about 70 years old, died at the Standing Rock Reservation in the fall of 1905.
+
+Erected by Custer Circle Project 2017 and Waterworks Art Museum.

@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 117023
+Slug: gold-in-alder-gulch
+Title: Gold in Alder Gulch
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.31411, -111.98021
+Topics: industry, settlements
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Alder Gulch, located between Virginia City and Alder, is one of the most significant placer mining districts in the U.S., having produced over 2.5 million troy ounces of gold between 1863, and 1889. In total, miners recovered over $40 billion (today's prices) in gold from the gulch!
+
+Almost as soon as prospectors discovered placer gold on Alder Gulch in 1863, the search was on for the mother lode. Gold-bearing quartz veins south of Virginia City – the most likely source of the placer gold – were heavily mined in the late 1800s, producing about 170,800 troy ounces of gold. Over time the gold eroded from the veins and was transported, concentrated, and preserved in the Alder Gulch gravels and channels.
+
+The gold-bearing quartz veins originated from fluids generated from deep in the earth's crust over a billion years ago that had moved through planes of weakness in even older metamorphic rock where they were deposited. The extremely old metamorphic rock is widely exposed in the parts of the Tobacco Root Mountains, Ruby Range, and Gravelly Range that border Alder Gulch.
+
+Articles in the local paper, The Madisonian, between 1915 and 1923 discussed the opinions of several eminent geologists that a gravel-filled channel may exist beneath volcanic rock on the east side of Alder Gulch, and that similar to the gravels of Alder Gulch, it may also contain large amounts of placer gold. Prospectors drilled for the gold in limited areas, but never found a buried channel.
+
+Gold Dredges
+
+The devastated landscape of Alder Gulch is the result of gold dredging from 1899 to 1922. Dredge boats were floating sluice boxes designed to recover gold from the gravel buried deep under the gulch. Floating on ponds of their own making, the dredges literally turned the gulch inside out as they chewed their way through the gulch. Huge cast iron buckets deposited the gravel onto a conveyor belt that carried the gravel inside the dredge and onto a series of sluices and shakers. The gravel, minus the gold and soil was deposited behind the dredge boat onto the piles you see in the gulch today.
+
+Geo-facts:
+
+• Gneiss is a metamorphic rock exposed in areas around Alder Gulch. It started out as sedimentary and igneous rock, but over a billion years ago and at a depth of over 10 miles, extreme temperature and pressure transformed (metamorphosed) those rocks to gneiss.
+
+• Mount Baldy is at the head of Alder Gulch directly south of Virginia City in the Gravelly Range. Its glaciated cliff face exposes sedimentary rocks deposited by a succession of seas that flooded the area hundreds of millions of years ago.
+
+• Much of the $126.7 million (today's prices) in gold recovered by the dredges on Alder Gulch in the early 20th century helped finance Harvard University in Cambridge, Massachusetts.
+
+Geo-activity:
+
+• Imagine Alder Gulch when five prospectors discovered gold here in May 1863. What do you think the gulch looked like then?
+
+Erected by Montana Department of Transportation.

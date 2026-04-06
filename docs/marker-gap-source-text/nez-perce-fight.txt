@@ -1,0 +1,20 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161591
+Slug: nez-perce-fight
+Title: Nez Perce Fight
+Subtitle: 1877 Cow Island Fight
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81287, -110.67001
+Topics: 
+Year erected: 
+Erected by: Fort Benton Chamber of Commerce
+
+--- Inscription (as stored for the site) ---
+
+Across the street is a log house that was occupied by Major Guido Ilges, commander of the troops at Fort Benton during the Indian Wars of 1876-1877. Ilges took a volunteer force of eighteen men to Cow Island where they confronted the Nez Perce during their flight to reach Canada. Ilges and his men arrived just in time to see a soldier from upriver killed by the Indians. They hurriedly dug rifle pits and were pinned down by fire from the warriors of Chiefs Looking Glass and Joseph. The Indians took supplies that they had requested peaceably, and continued their retreat toward the border.
+
+General Howard and some of his troops returned to Fort Benton after Joseph's surrender, the finale of Indian trouble in this part of Montana. Troops remained in Fort Benton until 1881, long after they were needed for protection of the river port. Chief Joseph's actual surrender rifle can be viewed at the Missouri Breaks Interpretive Center here in Fort Benton.
+
+Erected by Fort Benton Chamber of Commerce.

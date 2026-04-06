@@ -1,0 +1,19 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128399
+Slug: the-trail-of-lewis-clark
+Title: The Trail of Lewis & Clark
+Town: Twin Bridges
+County: Madison
+Lat / Lng: 45.54578, -112.33078
+Topics: exploration
+Year erected: 
+Erected by: The Federated Women's Clubs of Madison County Montana
+
+--- Inscription (as stored for the site) ---
+
+Meriwether Lewis, Touissaint Charboneau, Patrick Gass and George Drewyer, the vanguard of the Lewis and Clark Expedition and the first white men to enter this valley, camped on the east bank of the Beaverhead River, two blocks west of here, on August 3, 1805.
+
+The main body of the expedition passed this point in canoes on their way to the Pacific Ocean August 7, 1805.
+
+In the bend of the river northwest from here is a ford used by the Indians for centuries before the coming of the white men. Near here Sacajawea caught sight of Beaverhead Rock, which identified this region as the home of her people.

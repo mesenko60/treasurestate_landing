@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161119
+Slug: glacier-park-womans-club
+Title: Glacier Park Woman's Club
+Town: East Glacier Park
+County: Glacier
+Lat / Lng: 48.4428, -113.218
+Topics: architecture, native-american
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Women, and especially club women, played outsized roles in creating and maintaining the community institutions - churches, schools, and libraries - that they and their families valued. Providing an outlet for women to exercise their leadership skills, women's clubs thrived in the late nineteenth century. By 1901, Montana alone boasted over fifteen women's clubs, with at least one in every major town.
+
+Helene Dawson Edkins, a Blackfeet woman and the adopted daughter of one of East Glacier's founding families, together with twenty-two other women, established the Glacier Park Woman's Club on December 4, 1920. While some women's clubs were stratified by race and class, the Glacier Park Woman's Club welcomed all interested women.
+
+Initially, members took turns hosting meetings in their homes. In 1928, they acquired this lot from the Great Northern Railway. In 1933, they donated the site to Glacier County so that the county could commission the Civilian Conservation Corps-Indian Division (CCC-ID) to construct this saddle-notched log library and community hall. Part of the "Indian New Deal." the CCC-ID employed 80,000 tribal members across the country to work to improve their reservations through pest control, weed eradication, and building projects, including dams, roads, fire lookouts, and other structures. The federally funded program could not perform work for private organizations, but after the hall was completed, the county deeded it back to the club. The hall is a good representation of Rustic architecture, a style associated both with park architecture and the CCC. The building continues to serve the community as a library, meeting space, and social center.
+
+Erected by Montana Department of Transportation.

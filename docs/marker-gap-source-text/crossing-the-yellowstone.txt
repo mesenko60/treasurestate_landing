@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165445
+Slug: crossing-the-yellowstone
+Title: Crossing the Yellowstone
+Town: Custer
+County: Yellowstone
+Lat / Lng: 46.12596, -107.54977
+Topics: 
+Year erected: 
+Erected by: Custer Circle Project 2017 and Junction City Memorial Park
+
+--- Inscription (as stored for the site) ---
+
+By mid-April 1876, Colonel John Gibbon's most immediate concern was crossing to the north side of the Yellowstone before reaching the confluence of the Bighorn River. Plans called for the Montana Column to patrol the lower Yellowstone from the Bighorn on down to the Powder River preventing any Indian movement across the river.
+
+The initial crossing (April 19, 1876), occurred about 10 miles west of the present Custer, was uneventful - journals recorded the river at about 200 yards wide and 3 feet deep. The first couple of miles on the north side were easy but then the command encountered extensive high ground with deep, narrow coulees - terrain impassable for the column's numerous wagons. The entire command then crossed back over to the south side and marched down the valley seeking more favorable ground across the river before camping for the night.
+
+The final crossing to the north side took place the next day opposite the present Custer. Even this crossing had its dangers with the river having risen slightly overnight. Colonel Gibbon relied on Mitch Bouyer's skill as a scout to select the best place to attempt a crossing. Bouyer rode his horse into the river at various locations testing the depth of the river before deciding on a place to cross but this was not always reliable. The command backed off its first attempt when the river proved to be too deep. The troopers then marched about a half-mile back up the valley where Mitch Bouyer selected a more suitable site. Although the water was deeper than the first two crossings, the entire column made it across the river - much to everyone's relief.
+
+The only other attempt to cross the river occurred a month later a few miles above the confluence of Rosebud Creek. Colonel Gibbon, having learned of the big village along the Tongue River from his scouts, ordered Montana Column across the Yellowstone for a march on the Indians. By this time, the river was running high and swift. Gibbon called off the attack late in the day when 4 horses drowned in the river.
+
+Erected by Custer Circle Project 2017 and Junction City Memorial Park.

@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 188746
+Slug: hiram-marcyes-park
+Title: Hiram Marcyes Park
+Town: Forsyth
+County: Rosebud
+Lat / Lng: 46.26122, -106.68298
+Topics: 
+Year erected: 
+Erected by: Forsyth Women's Club
+
+--- Inscription (as stored for the site) ---
+
+Hiram Marcyes was born September 11, 1844 in Newberg, Maine. He served in the Civil War as a bugler in the Fourth Minnesota Volunteer Infantry Company with the Union army. His service took him in battles from Vicksburg to Sherman's March to the sea. He married at war's end, he headed west to Montana, arriving in the town of Forsyth in 1882, where he planted his roots and built a new life for himself.
+
+One of Hiram's first ventures was to open a general store. The expansion of the railroad created a great demand for food and supplies in the Forsyth area. Hiram also manufactured bricks, using local clay, and constructed an elementary school, built on land donated by him and named in his honor, on this site. His company supplied the bricks for building homes and businesses throughout Southeastern Montana. In 1905 he began construction of the Commercial Hotel, in which he took great pride.
+
+Hiram and his wife, Louise, raised one sone and four daughters in the growing community of Forsyth. Hiram's interest in local government led him to serve as a constable and justice of the peace for the community. Later, he was elected to the state legislature where he eagerly supported the separation of Rosebud County from Custer County.
+
+In his leisure time, he pursued his passion for music. The thrilling sound of brass bands playing for concerts, parades and celebrations inspired him to organize and play in several local bands. His talented children gave him great pride as they played in the Marcyes Family Band. A dedicated Methodist, Hiram seldom missed singing in the choir on Sunday.
+
+Hiram studied horticulture and saw the need for shade trees and windbreaks in the community, especially with the hot Montana summers. Hiram decided to plant cottonwood trees because they were best suited to the environment. Today some of these giant trees can still be seen in the town of Forsyth and are a reminder of this pioneer pillar of the Forsyth community.
+
+Hiram died March 11, 1913 at the age of 69 years. He was staying at the Old Soldiers Home, Presido (sic), San Francisco, California at the time.
+
+Erected by Forsyth Women's Club.

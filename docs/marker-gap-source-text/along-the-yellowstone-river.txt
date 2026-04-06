@@ -1,0 +1,38 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 40554
+Slug: along-the-yellowstone-river
+Title: Along the Yellowstone River
+Subtitle: Gallatin National Forest
+Town: Corwin Springs
+County: Park
+Lat / Lng: 45.10785, -110.79052
+Topics: 
+Year erected: 
+Erected by: Gallatin National Forest
+
+--- Inscription (as stored for the site) ---
+
+A Blue Ribbon Flowing Through Paradise
+
+The Yellowstone is the longest free-flowing river in the lower 48 states. For the 103 miles downstream from Gardiner, the river is designated as a "Blue Ribbon" trout stream, the longest single stretch of Blue Ribbon water in Montana. Anglers visit this nationally renowned cold water trout fishery with hopes of reeling in brown, rainbow, or native Yellowstone cutthroat trout. Maybe that's one reason why this area is known as Paradise Valley.
+
+Like reading a 70 million year old book
+
+Few valleys in the Rocky Mountains can match Yellowstone's landform variety...carved by glaciers, landslides, volcanic activity, and massive land folds and faults. You can still see signs of this ancient activity everywhere you look along the Yellowstone River.
+
+Glaciers - The Yellowstone Ice Sheet flowed northward from the Yellowstone Plateau at least twice. Where you now stand, the glacier was once more than 3,000 feet thick! As this mass pressed through the canyon, the glacier deposited rocks and sediment in Paradise Valley and shaped the mountains around you.
+
+Look along the west side of the river at the north end of Yankee Jim Canyon for a "rouche moutonnee" (bedrock that looks like a medieval wig slicked down by mutton tallow). The heavy scraping and pushing of the glacier ice polished the rock knob smooth on its upstream side.
+
+Volcanic Activity - Many of the mountains here were formed in part by volcanoes. You can find deposits of volcanic rock, like andesite, and vertical cracked cliffs of basalt. If you drive to the end of the road in Tom Miner Basin and hike uphill, you can see signs of a petrified forest caused by volcanic ash and mud flows long ago.
+
+Even today, La Duke Hot Springs, where water between 135° - 149° Fahrenheit flows from the east bank of the Yellowstone River, serves as a steamy reminder of past geothermal activity.
+
+Boaters...Beware! Warning - From Gardiner through Yankee Jim Canyon are four rapids that can be extremely dangerous. During high water (usually in June, but sometimes earlier), floating in this season is only recommended for experts. Always wear your flotation device. It may save your life! Much of the land bordering the river is private. Respect owners' rights.
+
+"Archaic" but far from primitive - Five thousand years ago, people lived and worked along the Yellowstone River. Known by archaeologists as the "archaic culture," these people prospered for about 1000 years.
+
+As you travel through this valley today, imagine how these early Americans lived. In the summer, they followed bison, antelope, and mountain sheep into the mountains. They also hunted smaller game and gathered plants and seeds. In the fall, they returned to the valley. With such a wealth of resources, they, too, must have thought this valley "paradise."
+
+Erected by Gallatin National Forest.

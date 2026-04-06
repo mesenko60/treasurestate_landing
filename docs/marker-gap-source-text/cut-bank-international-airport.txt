@@ -1,0 +1,43 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220324
+Slug: cut-bank-international-airport
+Title: Cut Bank International Airport
+Town: Cut Bank
+County: Glacier
+Lat / Lng: 48.60678, -112.36653
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The Early Days
+
+Even before World War I, the expansive flat area that is now Cut Bank International Airport drew the attention of local "brave souls" who dared to fly early aircraft and land on a grass airstrip. When WWI ended in 1918, the appetite for a local airstrip grew as pilots who had served overseas during the war returned home to the "Highline" of Montana. When oil was discovered in 1922, the nearby communities of Cut Bank, Shelby, Kevin and Sunburst began to thrive.
+
+Support for the airport came not only from the Cut Bank area, but from surrounding counties. Dr. Minette began a lengthy campaign to establish aviation services for the region.
+
+With the oil industry booming, Dr. C.H. Minette (a Cut Bank dentist, state legislator, and war veteran) along with a group of area supporters envisioned a future need for a private and commercial aviation facility.
+
+In 1930, the site for the airport was selected and land was leased and later purchased from the Blackfeet tribal members. This private grass airstrip was the humble beginnings for a site that would eventually be listed as a Historical District on the
+
+National Register of Historical Places.
+
+1941-1949
+
+On December 8, 1941, one day after the Japanese bombed Pearl Harbor the airfield was offered to General George Marshall for military use. Cut Bank became one of three satellite-training based in Montana. Construction of two runways began in early 1942, and by November that same year the first troops arrived. Military personnel began training in the 12 Boeing B-17 Flying Fortress aircraft which were stationed at the Base.
+
+1949 In October of 1949, Cut Bank dedicated its new $80,000 Airport Administration Building. Representatives from all over Montana attended with Governor John W. Bonner as the principal speaker. A delegation from the nearby Blackfeet Indian Reservation opened the ceremonies with the tribal welcome song.
+
+The crowd attending was made larger with the addition of more than 150 Montana "air tourists." Led by Frank Wiley, Director of the Montana Aeronautics Commission, the flyers had the Port of Entry en-route to Canada and a three-city tour.
+
+Western Airlines continued to provide commercial service to Cut Bank Municipal Airport. The improved facilities at the airport also included U.S. Customs services and a fully operational FAA weather observation station.
+
+From 1949 to Today, and Into the Future
+
+Western Airlines continued commercial service at Cut Bank Airport until late 1960. With discontinuation of commercial flights, the airport experienced a decline in activity from the 1970s to early 1990s. Many of the World War II air base buildings were demolished.
+
+More recently, airport management has focused efforts on building awareness of the historical significance of the remaining structures, including the terminal building and remnants of the wartime additions. The administration building, constructed in 1948, is a good example of post-war architecture. It remains much the same as it was when it served as the hub for Western Airlines DC-3 passengers. Many improvements have been made to this structure for historical preservation and energy efficiency. A small museum is also housed in the administration building.
+
+Cut Bank has an established reputation for being both a service and customer-oriented airport. The welcoming and helpful atmosphere has increased traffic from pilots on their way north to Canada and Alaska. As a Port of Entry, Cut Bank provides fast customs clearance with a two-hour notice any time of the day or night. The airport is also a favorite stop for aviators traveling through Montana or to any of the major air shows in the northern part of the United States.

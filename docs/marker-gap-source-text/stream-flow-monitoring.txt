@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142410
+Slug: stream-flow-monitoring
+Title: Stream Flow Monitoring
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81743, -110.66705
+Topics: exploration, science
+Year erected: 
+Erected by: Fort Benton Community Improvement Association
+
+--- Inscription (as stored for the site) ---
+
+This stream flow monitoring station is part of a nationwide system of approximately 7,000 streamflow stations operated by the U.S. Geological Survey (USGS). The USGS has principal responsibility for evaluation of the Nation's water resources by conducting investigations and research on the occurrence, quality, quantity, distribution, use, movement, and availability of surface and ground water. These monitoring stations are funded in partnership with other Federal agencies and State, local, and Tribal governments.
+
+Stream flow had been monitored at this site since 1881. This stream flow monitoring station was the first to be established in Montana by the USGS. Current stream flow information for this and other states in the Nation are available on the internet at http://wy-mt.water.usgs.gov/
+
+The instruments you see are operated by a float riding on the water surface in the well that reacts to the rise and fall of the Missouri River. The instruments record the water surface elevation (STAGE) measured in feet, which is then used to determine the discharge or volume of water (FLOW) passing this point in cubic feet per second (CFS).
+
+Stream flow is routinely measured using a current velocity meter, depth-sounding weight, and bridge crane by USGS hydrographers from the highway bridge located 0.6 miles upstream. The measured stream flow and stage are plotted on graph paper to develop a rating curve. The curve is then used to generate a rating table which defines the FLOW at any given STAGE.
+
+Stage data is transmitted every hour to a USGS computer database via satellite.
+
+Captain Meriwether Lewis of the Lewis and Clark Expedition made the following comments in his journal describing the Missouri (South Fork) and Marias (North Fork) Rivers.
+
+"we took the width of the two rivers, found the S. fork 372 yards and the N. fork 200. The north fork is deeper than the other but it's courant not so swift; it's waters run in the same boiling and roling manner which has uniformly characterized the Missouri throughout it's whole course so far; its waters are of a whitish brown colour very thick and tebid, also characteristic of the Missouri; while the South fork is perfectly transparent runs very rappid but with a smooth unriffled surface its bottom composed of round and flat stones like most rivers issuing from a mountainous country. -- Captain Meriwether Lewis, June 3. 1805
+
+It is in this spirit of river exploration that the U.S. Geological Survey carries on its mission of scientific data collection of the Nation's rivers and streams.
+
+Erected by Fort Benton Community Improvement Association.

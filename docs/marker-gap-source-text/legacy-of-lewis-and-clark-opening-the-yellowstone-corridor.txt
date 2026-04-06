@@ -1,0 +1,49 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191799
+Slug: legacy-of-lewis-and-clark-opening-the-yellowstone-corridor
+Title: Legacy of Lewis and Clark: Opening the Yellowstone Corridor
+Town: Livingston
+County: Park
+Lat / Lng: 45.66148, -110.70042
+Topics: 
+Year erected: 
+Erected by: Great Bend of the Yellowstone Lewis and Clark Heritage Regional Bicentennial Commission
+
+--- Inscription (as stored for the site) ---
+
+Early Exploration and Settlement:
+
+John Colter, member of the 1804-1805 (sic) Lewis and Clark Corps of Discovery, in 1807 was the first known white man to have traversed through the area known as Yellowstone Park. Prominent mountain man Jim Bridger explored the park area in 1830, spent time with the Crow Indians, and pioneered routes followed by travelers today. In 1840 Father DeSmet came through returning to St. Louis. In 1863, gold was discovered in Emigrant Gulch. John Bozeman led wagon trains to the gold fields of Bannack, Montana in 1864 establishing the controversial Bozeman Trail that existed until 1868. Nelson Story, Park County pioneer, led the first cattle herd from Texas over the trail into the Gallatin Valley in 1866.
+
+The short-lived post Ida Thurman was built in July of 1867 a few miles northeast of Livingston, to protect settlers. Benson's Landing, the first store in the area, also had a hazardous, short-lived ferry at the time that crossed the Yellowstone River a few miles east of Livingston. During the spring of 1876, Gibbon's army column for Fort Ellis in Bozeman passed through here to aid Custer at Little Bighorn. Calamity Jane was also in this area for 1884 to 1902.
+
+Native American History:
+
+Native Americans were present at least 11,000 years ago as established by the Anzick site, northeast of Livingston that has the largest cache of Clovis artifacts ever found. This area had been used by Shoshone and Crow (Apsaalooké), with occasional incursions by the Blackfoot and Sioux. Sacagwea (sic) was a Shoshne Indian kidnapped for the Three Forks area.
+
+During the years of the Bozeman Trail, the Crow helped the U.S. military protect it against the Sioux. The Ft. Laramie Treaty of 1868 established the first Crow Reservation that extended from the south bank of the Yellowstone southeast to Wyoming.
+
+Ft. Parker (1869-1874), at the mouth of Mission Creek, served as the first Crow Agency. Crow Chief Plenty Coups has his vision quest atop the Crazy Mountains. His abilities with the government at the time kept the Crow reservation lands from being totally dissolved.
+
+Chief Joseph and many of the Nez Perce fled the U.S. Army through Yellowstone Park during the summer of 1877, five years after it was established, alarming visitors.
+
+Yellowstone National Park:
+
+Known by Native Americans, encountered by John Colter in 1807, later explored by Jim Bridger in 1830 and the Folsom-Cook Party in 1869, the first scientific explorations of the park were by the Washburn-Doane Expedition in 1870 and the Hayden Expedition in 1871. Famous photographer W.H. Jackson and artist Thomas Moran accompanied the expedition.
+
+With encouragement fro the Northern Pacific Railroad, President Ulysses Grant established Yellowstone as the first National Park in 1872. The Northern Pacific , of the next 30 years was the only rail access to the park through Livingston, thereby earning the nickname "Gateway to Yellowstone Park." From 1912=1930, Livingston was on a cross-continental auto route called "The Yellowstone Trail."
+
+Northern Pacific Railroad:
+
+Livingston was established as a railroad town in 1882 as the tracks were being laid to the West. The transcontinental Northern Pacific Railroad was completed in 1883. The first Bozeman Tunnel was opened in 1884. Settlement efforts helped Montana achieve statehood in 1889.
+
+The Livingston Depot, designed by Reed and Stem, the same firm that helped design Grand Central Station in New York, was completed in Italian Renaissance style. Today the Depot anchors a downtown National Historic Register District of over 400 buildings.
+
+Livingston Today:
+
+Livingston has become a creative hub in this area located amongst Montana's blue skies, mountains, blue-ribbon trout fisheries, skiing, and hot spring resort. It remains a gateway to Yellowstone National Park. Home to three outstanding museums, to live theaters, and numerous art galleries, this area balances its historical heritage as a tourism center with a rural, small town quality of life. We invite you to discover Livingston and Park County for yourself!
+
+Clark 1807 • Colter 1807 • DeSmet 1840 • Bridger 1844 • Gold Discovered Emmigrant (sic) Gulch 1863 • Bozeman Trail 1864-68 • Yellowstone Expedition 1869-71 • Ft. Parker 1869-74 • Yellowstone Park Estab. 1872 • Little Bighorn 1876 • Flight of Nez Perce 1877 • Livingston Estab. 1882 • Transcontinental Northern Pacific 1883 • Montana Statehood 1889 • Livingston Depot 1902 • Yellowstone Trail 1912-30
+
+Erected by Great Bend of the Yellowstone Lewis and Clark Heritage Regional Bicentennial Commission.

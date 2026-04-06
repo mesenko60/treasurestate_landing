@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 113724
+Slug: geologists-dream
+Title: Geologists' Dream
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.80397, -111.18809
+Topics: disasters, science
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Geologists Irving J. Witkind and Jack Epstein had uncanny timing on the night of August 17, 1959 the two U.S. Geological Survey scientists were camped on a small knoll above Hebgen Lake when their camp trailers began to bounce “like basketballs.” The two emerged to a shuddering landscape and a deafening roar from deep underground.
+
+Witkind and Epstein had spent the summer studying the geologic features of the earthquake-prone land. That night, they had the rare experience of having their academic knowledge come startlingly to life. Today geologists continue to investigate this region’s seismic dynamics.
+
+“We first discovered the fault scarp at night, thank God, there was a full moon the night of the earthquake!”
+
+Jack Epstein visits the fault scarp again in daylight.
+
+Block Faulting
+
+The geologic process by which the Hebgen and Red Canyon blocks dropped and tilted is called block faulting. This area lies at the eastern edge of the Basin and Range province. Here, the earth’s crust is stretching and thinning, causing fault blocks to subside and tilt.
+
+Changes in several of Yellowstone’s geysers after the 1959 earthquake indicate there was some relationship between the quake and Yellowstone geology. After the earthquake, Sapphire Pool erupted violently with some bursts reaching over 125 feet high.
+
+Did the Yellowstone Hot Spot Contribute?
+
+The Hebgen Earthquake occurred when two blocks of the Earth’s surface-the Red Canyon Block and the Hebgen Block-subsided (dropped). Because the quake struck close to Yellowstone, where a large chamber of molten rock (known as the “Yellowstone hot spot”) lies just a short distance below the ground’s surface, one might assume a connection. 640,000 years ago a colossal volcanic eruption created a caldera that encompasses most of the park. Ever since then, parts of the caldera have been rising and falling, causing tremors and faulting in the rocks above. However, there is no evidence that the quake of 1959 was directly caused by the dynamics of the hot spot.

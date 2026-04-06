@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 49565
+Slug: madison-county-pioneers
+Title: Madison County Pioneers
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.30705, -111.96778
+Topics: settlements
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+The gold rush to Alder Creek in 1863 spurred settlement of the Madison Valley, and among the first families to settle here were the Jeffers, the Switzers (whose home is preserved here in Nevada City) and the Careys. Irish-born Nick Carey walked to Virginia City from Denver with his possessions on his back. He established a mercantile and the first local post office where he was postmaster at nearby Adobetown from 1863 to 1905. In 1873 Nick married Mary Emerson, then 16. Their thirteen children live to majority.
+
+The Carey’s oldest child, Matt married Helen Jeffers, daughter of Josiah and Susan Switzer Jeffers in 1907. Matt and Helen had four sons and a daughter, Mary Helen. All were raised and schooled in Virginia City. Mary was to play a significant role in Charles Bovey’s Nevada City enterprise.
+
+Mary Helen married rodeo cowboy Lester Stiles (who grew up in Salmon, Idaho) in 1930. Generous to a fault, Lester could “talk the gold fillings out of your teeth and you’d be glad to have a toothache.” When Charlie and Sue Bovey came to Virginia City in the 1940’s, Lester and Mary took them under their wing. Lester and Charlie became good friends. Mary and Lester gained title to most of the property at Nevada City from the Careys. Lester used the property as pasture but vacant buildings were a danger to his horses. Charlie interceded when Lester burned some of the houses. The Boveys thus acquired the Carey’s Nevada City property through Mary and Lester Stiles.
+
+Mary and Lester raised four children, opened their home to many others, and always maintained their Virginia City roots. Mary managed the Nevada City operations for Bovey Restorations and Lester drove the stagecoach. In 1967, Mary was appointed Deputy Clerk of the District Court and like her father was elected Clerk of the District Court. She served in that position until she retired in 1986.
+
+Friends and family gathered to pay tribute to Mary on her 90th birthday in November of 2000. Proud of her pioneer ancestors, Mary inherited their enthusiasm for the homes they carved in the wilderness of Montana’s Madison County. This, especially, she passed on to her children, grandchildren, great-grandchildren and great-great-grandchildren.
+
+Plaque provided by the Montana Historical Society, 2000
+
+Erected by Montana Historical Society.

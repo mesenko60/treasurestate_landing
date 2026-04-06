@@ -1,0 +1,41 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220403
+Slug: a-dispute-over-horses-and-guns
+Title: A Dispute Over Horses and Guns
+Town: Valier
+County: Pondera
+Lat / Lng: 48.48301, -112.35906
+Topics: exploration, native-american
+Year erected: 
+Erected by: Lewis & Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+A Dispute Over Horses and Guns
+
+Meriwether Lewis and three men from the Corps of Discovery traveled through this area on July 26, 1806. During the journey, the men encountered eight (Blackfeet) American Indians near Two Medicine River Valley and decided to camp together under the bluffs of the river's south bank. In the evening, the men gathered in the Indian's shelter to talk and smoking tobacco.
+
+At daybreak on July 27th, Lewis' party awoke to discover the Indians attempting to take some of the weapons and horses. The party fought for their supplies, leaving one Indian dead and another severely wounded, before fleeing south toward the Missouri River (near today's Fort Benton, Montana), and continuing to the confluence of the Marias and Missouri Rivers.
+
+These were the only American Indians injured by the Corps of Discovery during their three year expedition.
+
+From One Perspective
+
+What did happen at the Two Medicine Fight Site? Wolf Calf, one of the Blackfeet Indian survivors, had vivid recollections. He and his companions were both surprised and frightened when they saw Lewis and his men, but decided to act in a "friendly fashion," for at least a short time. Both parties descended to the Two Medicine River and made camp on the evening of July 26, 1806.
+
+The next morning, Joseph Field carelessly laid his gun aside. One of the young Indian men took the weapon, an act that would win power in his tribe, but signaled the other Indians to take the expedition's guns. When one of the expedition members saw the Blackfeet trying to escape with the guns and horses, a fight ensued. Side Hill Calf was overtaken by Reubin Fields and killed in the struggle. Another young Blackfeet man was shot in the stomach and what happened to him was unknown. The remaining men of the party rode quickly away.
+
+From Another Perspective
+
+What happened at the Two Medicine Site? Meriwether Lewis's group camped with the Blackfeet Indians, on July 26, 1806, at the river just west of this site. There was an exchange of gifts, smoking and talk. After much talking and smoking tobacco, Lewis posted a guard and retired for the night.
+
+In the morning, Lewis and his companion's weapons were taken, an act that gave the Indians power in their tribe. In the ensuing struggle, "...a soldier stabbed a warrior...who fell dead..."
+
+Just as Lewis retrieved his rifle, he saw two Indians attempting to drive off his horses. He sprinted after the Indians and as one turned to shoot, Lewis shot him in the stomach. Injured, but not willing to give up, the Indian raised and returned fire upon Lewis - the bullet whistled by his head. The other Indian fled the scene with some of the horses.
+
+Lewis and his men retreated after bringing some of the Indian's gear left at the camp. Lewis placed a peace medal around the neck of the dead man so that "they would be informed who we were."
+
+"Being bearheaded, I felt the wind of his bullet very distinctly." -- Meriwether Lewis, July 27, 1806
+
+Erected by Lewis & Clark National Historic Trail.

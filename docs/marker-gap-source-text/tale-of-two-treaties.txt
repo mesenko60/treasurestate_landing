@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161905
+Slug: tale-of-two-treaties
+Title: Tale of Two Treaties
+Subtitle: Cultures Clash, Relationships Change
+Town: Big Sandy
+County: Chouteau
+Lat / Lng: 47.73879, -109.62212
+Topics: native-american, military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Gaze out over the lands around you and imagine them filled with 2,000 tipis and 15,000 Indians-it has happened at least twice. Here, enormous gatherings were called to negotiate treaties that transformed relations between Indian tribes and opened the way for Euro-American entry into Montana. The first of these treaties took place in September 1846, when the Jesuit missionary, Father Pierre Jean DeSmet, brokered a peace between the Blackfeet and Flathead. Warring between these tribes had allowed the Crow Indians to prey on both of them in the course of long standing competition over buffalo hunting grounds.
+
+Nine years later, the government charged Isaac S. Stevens, Governor of Washington Territory, with the job of negotiating a treaty that would allow safe exploration and settlement by pioneers along the Missouri River. At least 15,000 members of the Blackfeet, Nez Perce and Flathead tribes gathered here for 10 days, and the Stevens Treaty was signed on October 17, 1855. The Blackfeet called it Lame Deer's Treaty, after the name of their chief negotiator.
+
+The treaty specified that Blackfeet homeland would consist of a large portion of present-day Montana on the east side of the Rockies-including most of the land north of the Missouri River, and most of the land north and west of the Musselshell River. Within this area of Blackfeet control, other tribes would be allowed to hunt buffalo once each year-and the U.S. Government could safely establish trade routes and developments, such as forts and telegraph lines, that were necessary to support navigation along the Missouri River.
+
+Natawista (above), a member of the Blood tribe of the Blackfoot Confederacy, was the wife of Alexander Culbertson. Culbertson founded Fort Benton and was widely recognized for promoting good relations between Indians and Euro-Americans. But it was Natawista who was most likely responsible for the success of many of her husband's endeavors. She is thought to have played a pivotal role in the successful negotiations of the 1855 Treaty.
+
+"My people are a good people but they are jealous and vindictive. I am afraid that they are the whites will not understand each other, but if I go I may be able to explain things to them and sooth them if they should be irritated. I know there is great danger." -- Natawista, statement reported in 1854

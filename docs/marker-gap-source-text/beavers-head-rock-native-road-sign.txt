@@ -1,0 +1,26 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193247
+Slug: beavers-head-rock-native-road-sign
+Title: Beaver's Head Rock: Native Road Sign
+Subtitle: Lewis & Clark Seek the Shoshone
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 45.3658, -112.47388
+Topics: exploration, native-american, people
+Year erected: 
+Erected by: Camp Fortunate Chapter, Lewis and Clark Trail Historical Foundation and University of Montana Western
+
+--- Inscription (as stored for the site) ---
+
+By the time the Corps of Discovery passed through here, the "Valley of the Beaverhead" was already common ground for many Indian tribes. The Beaver's Head was a well-known landmark not only to the Shoshone but other Rocky Mountain tribes who passed through this valley on their way to and from buffalo country. In 1832, the fur-trapper, Warren Angus Ferris noted in Life in the Rocky Mountains,"Aware now of the vicinity of an Indian village (at the Beaver's Head)...some of our boldest comrades with our fleetest horses...rode off in the direction of that village...the village was composed of about one hundred and fifty lodges of FlatHeads, Pen-d'oreilles, and other..."
+
+"we proceeded on passed a remarkable Clift point on the Stard. Side about 150 feet high, this Clift the Indians Call the Beavers head, opposit at 300 yards is a low clift of 50 feet which is a Spur from the Mountain on the Lard. about 4 miles... - Captain William Clark, August 10, 1805"
+
+"the Indian woman recognized the point of a high plain to our right which she informed us was not very distant from the summer retreat of her nation on a river beyond the mountains which runs to the west. this hill she says her nation calls the beaver's head from a conceived remblance of it's figure to the head of that animal. she assures us that we shall either find her people on this river or on the river immediately west of it's source..." - Captain Meriwether Lewis, August 8, 1805
+
+Prominent Exposure of Limestone
+
+The Beaver's Head is a prominent exposure of limestone of the Mississippian Mission Canyon formation that rises above the flood plain of the Beaverhead River.
+
+Erected by Camp Fortunate Chapter, Lewis and Clark Trail Historical Foundation and University of Montana Western.

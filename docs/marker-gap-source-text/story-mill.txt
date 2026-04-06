@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 253557
+Slug: story-mill
+Title: Story Mill
+Town: Bozeman
+County: Gallatin
+Lat / Lng: 45.70197, -111.0216
+Topics: agriculture, architecture, industry
+Year erected: 
+Erected by: Historic Preservation Board of Gallatin County
+
+--- Inscription (as stored for the site) ---
+
+Perceiving the economic advantages of the approaching railroad, Nelson Story Sr. began construction of "the largest flour mill in Montana" in 1882. Manufacturing "Saskatchewan" and "Montana Belle" flour, the Story Mill soon became the largest consistent payroll of any private enterprise in the Gallatin Valley and it remained so for several decades.
+
+On August 27, 1901, a spark from a passing steam engine ignited a devastating fire which destroyed Story's original milling operation and justified construction of a new state-of-the-art brick mill. Resuming flour production in 1904 under the name of the Bozeman Milling Company, the expanded 650-bushel-barrel-a-day operation ran around the clock, commanding a virtual monopoly on milling in south-western Montana.
+
+By 1919, unanticipated financial difficulties in the Story empire forced the family to sell the Bozeman Milling company to the Montana Flour Mills — a conglomerate with flour operations in Great Falls, Harlowtown, and Lewistown, Montana — for $350,000. Producing "It's the Wheat" flour and "Ceretana" cereals, the company made handsome profits supplying flour to Pilsbury,
+
+Safeway Stores, Roman Meal, and Wonder Bread, as well as by filling government contracts during the Great Depression and World War II. Due to the popularity of Montana's hard red, high gluten content wheat, the Bozeman Mill eventually shipped to nearly every state in the union, including Alaska, where Gallatin Valley flour was frequently delivered by dog sled.
+
+In 1967, Montana Flour Mill Company sold out to Con Agra, Inc. Rather than upgrade its aging assets in Bozeman, the new corporation elected to shut down its local operations. After eighty-five years, the largest and longest-running business in the history of the Gallatin Valley had quietly closed.
+
+Notable features of the Story Mill include two ghost signs on the complex's southern and eastern sides, the 100 feet tall reinforced concrete grain bins — each with a capacity of 250,000 bushels — and the distinctive 1882 Head Miller's Residence, which was probably derived from an architectural pattern book.
+
+Erected by Historic Preservation Board of Gallatin County.

@@ -1,0 +1,38 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220034
+Slug: reaching-familiar-territory
+Title: Reaching Familiar Territory
+Subtitle: Meriwether Lewis at Lewis and Clark Pass
+Town: Lincoln
+County: Lewis and Clark
+Lat / Lng: 47.139, -112.4564
+Topics: exploration
+Year erected: 
+Erected by: Lewis & Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+Splitting Up the Corps
+
+Captain Meriwether Lewis passed this way in the summer of 1806. Traveling east from their winter on the Pacific Ocean, co-commanders William Clark and Meriwether Lewis stopped near present-day Lolo, Montana. At a spot they named Travelers' Rest, the two captains divided the Corps of Discovery into two groups, hoping to explore more country before returning to the United States.
+
+Following the Road to the Buffalo
+
+On July 3, 1806, Lewis and his party of nine men set out for the Missouri River. Unsure of the best route across the mountains, Lewis consulted with his Nez Perce guides, who told him about the Road to the Buffalo. This ancient trail, they said, would lead the Corps quickly across the Continental Divide to the Missouri River.
+
+On July 6, 1806, Lewis and his men traveled swiftly east along the Blackfoot River (past present-day Lincoln). The road was easy to find. The Corps members merely followed the deep ruts made by generations of Indian hunters and their travois.
+
+The well-marked track along Alice Creek led them northwest to the foot of the mountains.
+
+Crossing the Gap
+
+Upon reaching the top of Lewis and Clark Pass on July 7, Lewis exultantly wrote that they were "passing the dividing ridge between the waters of the Columbia and Missouri rivers." He also noted that "from this gap [today's Lewis and Clark Pass] ... the fort mountain bears North Eaast (sic), and appears to be distant about 20 Miles." Fort Mountain, today known as Square Butte, was the first landmark Lewis recognized since leaving Travelers' Rest. They were back in familiar territory -- and well on their way home. Lewis and his men must have breathed a deep collective sigh of relief.
+
+Reunion at the Confluence
+
+The two contingents of the Corps of Discovery reunited on August 12, 1806, near the confluence of the Yellowstone and Missouri Rivers, in southeastern Montana. Clark was alarmed to discover that Lewis had been shot the day before in the right buttock, by one of his own men "misstaking (sic) him in the thick bushes to be an Elk."
+
+"passing the dividing ridge between the waters of the Columbia and Missouri rivers at 1/4 mile. from this gap which is low and an easy ascent on the W.side of the fort mountain bears North Eaast (sic), and appears to be distant about 20 Miles." -- Meriwether Lewis, July 7, 1806
+
+Erected by Lewis & Clark National Historic Trail.

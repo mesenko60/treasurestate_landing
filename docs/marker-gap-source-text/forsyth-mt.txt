@@ -1,0 +1,48 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 164762
+Slug: forsyth-mt
+Title: Forsyth, MT
+Subtitle: June 16, 1918
+Town: Forsyth
+County: Rosebud
+Lat / Lng: 46.2672, -106.67532
+Topics: disasters
+Year erected: 
+Erected by: Montana Silver Jackets
+
+--- Inscription (as stored for the site) ---
+
+In 1918, rising flood waters on the Yellowstone River threatened the City of Forsyth, the Forsyth Times-Journal reported "Over 500 men worked for 36 hours to keep water out of the city as much as possible." But, in the early hours of June 16, a hastily constructed levee gave way and water rushed into the west end of Forsyth flooding the town north of the railroad tracks. Buildings on low foundations had 2 to 3 feet of water flowing through rooms at ground-floor level and every basement in Forsyth was flooded to the floor joists.
+
+Citizens sought shelter in the hotels and spare rooms of the business district or with local ranchers and farmers. Forsyth remained flooded until the waters finally receded on July 5, leaving behind destruction and flooded basements.
+
+Only a two-block section of Main Street remained relatively dry because temporary berms were quickly constructed to hold the flood waters at bay.
+
+According to the Forsyth Times Journal, the telephone office was doing business at the old stand, but with about 8 inches of water covering the floor.
+
+For Forsyth, no flood since has been as devastating as the 2 1/2 weeks in 1918. The City has avoided significant damages from flooding on the Yellowstone River since the Forsyth Levee was constructed in 1948.
+
+In 1918, a rising Yellowstone River threatened the City of Forsyth. According to the Forsyth Times Journal, "Over 500 men worked for 36 hours to keep the flood water out of the city as much as possible." On this day in the early morning hours, the hastily constructed levee west of the bridge gave way and nothing more could be done. Water rushed into the west end of Forsyth flooding the entire town north of the railroad tracks.
+
+Every basement was flooded to the floor joists. Homes had 2 to 3 feet of water flowing through their ground floors. The currents washed away streets, fences, and sidewalks. Boats became the only means of transportation. Downtown business remained open while customers and employees waded through 6 to 12 inches of water.
+
+Within a week of the flood abatement, citizens convened a mass public meeting to discuss constructing a new water system, sewer system, a levee and sidewalks. Shortly thereafter, the people of Forsyth also began planning for a new hospital.
+
+In 1944 the US Army Corps of Engineers began the process to construct a levee for the city of Forsyth. Construction was completed in 1948. The levee is about 2 1/2 miles long surrounding the city on the west and north sides separating it from the Yellowstone River. The city has avoided significant damage from Yellowstone River flooding since its construction.
+
+Since 1878 when the first structures were built along the Yellowstone River at the future site of Forsyth, there have been concerns of high water flooding the town.
+
+In the 30 years following development, Forsyth developed and grew, increasing the population. New homes were constructed, a power plant was installed, and telephone service was available.
+
+The town however, was not prepared for the disastrous event which commenced in the early hours of Sunday, June 16, 1918. There was no levee to reduce the flood threat of the Yellowstone River, and when a hurriedly constructed levee west of the bridge gave way, nothing more could be done to hold back the water.
+
+The water rushed into the west end of Forsyth continuing to rise and flood the entire town north of the Northern Pacific Railroad tracks.
+
+There were several inches of water flooding the first floor of the newly constructed Rosebud County Courthouse, and the main sewer pipe under the flooded basement burst.
+
+Buildings on low foundations had 2 to 3 feet of water flowing through rooms and all of the basements in town were completely flooded.
+
+Silver Jackets bring together federal, state, and local agencies to collaborate in reducing flood risk. To learn more about Montana's flood history and how you can prepare your family visit: floodrisk.mt.gov/
+
+Erected by Montana Silver Jackets.

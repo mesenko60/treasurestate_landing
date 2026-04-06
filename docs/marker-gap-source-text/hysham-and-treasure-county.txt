@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165442
+Slug: hysham-and-treasure-county
+Title: Hysham and Treasure County
+Town: Hysham
+County: Treasure
+Lat / Lng: 46.21876, -107.25191
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Montana's small towns have traditionally been places where people by supplies and services, socialize, and ship their products to markets on the railroads or highways. Hysham is typical of those many rural communities scattered across this great state. Beginning about 1899, Charlie Hysham ran cattle south of the Yellowstone River and north of the Wyoming border. Much of his operation was on land leased from the Crow Indians. In 1901, the Northern Pacific Railway built a siding so that Hysham could ship his cattle to market in Chicago and elsewhere. Five years later, President Theodore Roosevelt recused the size of the reservation, opening this area to non-Indian settlement. As the number of homesteaders increased in the area, so did the number of buildings around he railroad siding. The settlement obtained a post office in 1907 and, in 1908, homesteaders and schoolteacher Ada Channell platted a portion of her property as a new town, called Hysham, in honor of the cattleman who had lived in the area for nearly a decade.
+
+By 1914, Hysham included a bank, church, two saloons, a restaurant, barbershop, lumber yards, "a crack baseball team," a railroad depot, and other amenities important to the area's residents. The state legislature created Treasure County from a portion of Rosebud County in 1919. Promoters hoped the name of the new county would draw more settlers and businesses to the area. Hysham, the county seat, was also located on the main east-west highway route through southern and western Montana, the Yellowstone Trail (US Highway 10 after 1926). Hysham and Treasure County's fortunes and population have fluctuated over the years, but it remains an important trade center in eastern Montana.
+
+"US 10 now winds through lonely badlands. Under an uncompromising sun the side of the buttes are mottled with brown, buff, and gray. After sundown, as twilight shades into dusk, the masses of guttered rock take on eerie tones of purple and black. Only the bark and scurry of prairie dogs by day, and the dismal howl of coyotes by night, indicate the presence of living things." - Montana: A State Guidebook (1939)
+
+The Centennial Campaign In February 1876, the US Army initiated a three-pronged attack on the Lakota and Northern Cheyenne Indian who, after an ultimatum, refused refused to return to their reservations. One of the columns, commanded by Colonel John Gibbon, marched down the Yellowstone Valley from Forts Shaw and Ellis. Called the Montana Column, it arrived in the area in late April 1876 and found a deserted Fort Pease virtually untouched. Gibbon occupied the fort while patrolling along the north side of the Yellowstone River before moving down the Rosebud Creek confluence in mid-May.
+
+The Montana Column and the decimated Seventh Cavalry occupied the trading post in the aftermath of the Little Bighorn defeat, waiting nearly a month for resupply and reinforcement.
+
+Custer Circle Project
+
+Erected by Montana Department of Transportation.

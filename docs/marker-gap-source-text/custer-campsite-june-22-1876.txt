@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 189172
+Slug: custer-campsite-june-22-1876
+Title: Custer Campsite - June 22, 1876
+Town: Rosebud
+County: Rosebud
+Lat / Lng: 46.13344, -106.46076
+Topics: 
+Year erected: 
+Erected by: Custer Circle Project 2017 and Community Foundation of Northern Rosebud County
+
+--- Inscription (as stored for the site) ---
+
+At noon, on June 22, 1876, Lt. Colonel George Armstrong Custer's command broke camp along the Yellowstone River, passed in review of General Terry and Colonel Gibbon, and marched to the mouth of Rosebud Creek. The Seventh Cavalry then proceeded about ten miles south along Rosebud Creek reaching this site in the late afternoon.
+
+During "officer's call" at sunset, Custer explained his reasons for two decisions made prior to the day's march. Custer had declined General Terry's offer of Major Brisbin's four additional companies of cavalry from the Montana Column. Custer stated that he felt his Seventh had sufficient manpower to handle the probable numbers of hostiles estimated at no more than 1500 warriors. Custer also decided agains taking the column the column's Gatling gun on the march. Custer reasoned that moving the cumbersome field piece would slow the command down. Custer also restricted bugle use unless in an emergency.
+
+After Custer's meeting, a few junior officers gathered to sing songs for about an hour, a common practice for men of the Seventh. Years later, several of these officers, all survivors of Reno's fight in the valley, recalled a conversation late in the evening about Custer's demeanor during officer's call. They remembered that Custer usually confident prior to going into battle was subdued and almost conciliatory even seeking the advice of his junior officers, something he never did. Custer's behavior was so out of the ordinary that Lt. George Wallace, known for being superstitious, remarked that Custer might have been think of his own death.
+
+Late that night, Lt. Edward Godfrey recalled a dialogue in sign language with Bloody Knife and the Crow scouts about the probable numbers of warriors. There was uncertainty in the communication because of the different languages of the scouts. He remembered Mitch Bouyet, Custer's chief scout who spoke good English emphatically stating, "Well I can tell you, we are going to have damned big fight."
+
+Erected by Custer Circle Project 2017 and Community Foundation of Northern Rosebud County.

@@ -1,0 +1,37 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 167883
+Slug: skeleton-cliff
+Title: Skeleton Cliff
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79978, -108.48409
+Topics: 
+Year erected: 
+Erected by: Western Heritage Center
+
+--- Inscription (as stored for the site) ---
+
+The Coulson "Boothill" Cemetery
+
+Residents of the town of Coulson, established along the banks of the Yellowstone River in 1877, buried their dead at the Coulson "Boothill" Cemetery, just below the Place of the Skulls. The cemetery was abandoned in the 1880s, shortly after Billings was established. The land was later deeded to the city by I.D. O'Donnell, who erected an obelisk to commemorate those buried at Boothill Cemetery. It was named Boothill Cemetery because many of Coulson's residents died violently with "there boots still on."
+
+A Spiritual Place
+
+Like many Native Americans of the Northern Plains, a Crow Indian (Apsaalooke) sought out places to pray, fast, and seek spiritual guidance through a vision quest. According to Crow Indian Lawrence Flat Lip, the Crow leaders Bell Rock and Little Head, while fasting on the Rimrocks, saw bright lights shining into the night sky from the future site of Billings. Dr. W.A. Allen of Coulson, said the high point near Yellowstone Kelly's grave was a vision quest site for the Crow Indians.
+
+A Service of Silence
+
+The student body and faculty of Billings Polytechnic, now Rocky Mountain College, held their annual "Service of Silence" along the Rims in the 1920s, 30s and 40s. Absolute silence would be observed by everyone as they made their way up the Rims. Still silent, they gathered at a specific spot where the leader read a Psalm and offered prayer, after which they returned to the campus below. The service was "one of the most beautiful and impressive of the Polytechnic affairs." and a highlight of their annual commencement.
+
+Face on the Rims
+
+The "Face on the Rims" is believed to be a Crow rock painting. The purpose and meaning of the pictograph are unknown. A 1990s photo by Joyce Jensen is inset to a 1920s photo of the "Face" courtesy of the Western Heritage Center.
+
+Final Resting Place
+
+The surrounding landscape was described by Lt. James H. Bradley in 1876 as "The Place of the Skulls," the location of several Crow (Apsaalooke) Indian graves. Dr. W.A. Allen, a resident of the nearby town of Coulson, recalled bright colored cloth hanging from the trees of "Skeleton Cliff." and "bodies were draped in bright blanket shrouds and bound to the trees with rawhide thongs." These graves were associated with smallpox epidemics that killed thousands of Crow Indians,
+
+"There was a warrior who could not rest from his bed. His limbs were heavy and tired ... his body ached, and his throat burned for water ... they saw upon his face and his body were red spots. The young brave (soon) left his earthly home ... Then they wrapped him in a blanket and bound him to a tree on the side of the cliff. Near him they tied all the things he loved best, his war bonnet and tomahawk, and war club. And they killed his horse and left it on the ground below him for he would need all those things on his journey. Soon another warrior was striken (sic), and another, until over the entire hunting village hung a great fear of the evil spirit that was painting the faces of the warriors with ugly red marks...." --- Smallpox story told by Chief Plenty Coups from Blankets and Moccasins by Glendolin Damon Wagner and William A. Allen, 1933
+
+Erected by Western Heritage Center.

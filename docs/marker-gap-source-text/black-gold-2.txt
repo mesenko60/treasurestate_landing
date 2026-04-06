@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 190146
+Slug: black-gold-2
+Title: Black Gold
+Town: Bearcreek
+County: Carbon
+Lat / Lng: 45.15844, -109.18909
+Topics: industry
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+About sixty million years ago, this area was part of a vast subtropical coastal plain with major rivers flowing eastward into an inland seaway. Between these major river systems great thicknesses of plant material accumulated that was converted to peat and eventually buried under sand, mud, and other sediments. Over millions of years, the increased pressure and temperature from burial compressed and baked the peat into medium grade sub-bituminous coal. Between about 70 to 55 million years ago, tectonic forces caused dramatic deformation of the region and culminated in the formation of mountain ranges like the Beartooth, Pryor, and Big Horn Mountains. This deformation tilted the sedimentary layers and associated coal seams in this area downward to the east. The coal in the Bear Creek field is part of the immense Fort Union Formation, which is estimated to contain over 200 billion tons of coal in eastern and central Montana.
+
+"Yankee Jim" George discovered the Bear Creek coal field in 1866, but it would not be commercially mined for another forty years with the arrival of the Yellowstone Park Railway. Five companies operated coal mines in this narrow valley by 1910. Two towns, Bearcreek and Washoe, provided living quarters and services to the multi-ethnic miners and their families. The field contains about a dozen workable coal beds, with some seams as thick as 11 feet. Underground coal mining peaked in the early 1920s, when Bear Creek coal powered railroad locomotives, fueled the Anaconda Copper Company's smelter in Anaconda, and heated homes throughout Montana. Production gradually diminished as railroads converted to diesel-powered locomotives and private homes began using natural gas. Commercial coal mining in the Bear Creek field ended in 1953 when the Smith Mine closed. Small privately operated companies provided coal to area residents for years afterwards.
+
+Geo-Facts:
+
+• Coal grade is a measure of the amount of heat produced during burning. Bear Creek's coal produces more heat per ton than the lignite and sub-bituminous coals found in eastern Montana.
+
+• On February 27, 1943, an explosion in the Smith Mine about 1-1/2 miles west of here killed 74 miners. It was Montana's worst underground coal mining accident.
+
+• In 1926 a miner found a fossil tooth in the Eagle Coal Mine and gave it to Red Lodge physician J.C.F. Sigfreidt. The doctor believed it resembled a human molar and was proof that man had lived in the Red Lodge area at least a million years ago. Eventually paleontologists identified the tooth as belong to a mammalian species that was not human.
+
+Geo-Activities:
+
+• The Bear Creek Coal Fields were mined during the early part of the 20th Century. As you drive through the area, see if you can pick out clues from the landscape to the area's coal mining history.
+
+Erected by Montana Department of Transportation.

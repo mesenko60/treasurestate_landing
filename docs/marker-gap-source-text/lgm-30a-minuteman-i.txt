@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143339
+Slug: lgm-30a-minuteman-i
+Title: LGM-30A Minuteman I
+Town: Lewistown
+County: Fergus
+Lat / Lng: 47.07091, -109.41481
+Topics: 
+Year erected: 
+Erected by: Lewistown Historic Resources Commission
+
+--- Inscription (as stored for the site) ---
+
+Manufacturer: Boeing
+
+Height: 53 feet 8 inches
+
+Years in Service: 1961-1969
+
+In the late 1950s, the U.S. public perceived there was a "missile gap" between the United States and the Soviet Union, meaning the Soviet Union was pulling ahead of the United States in terms of intercontinental ballistic missile (ICBM) technology. Although this proved to be untrue, the Air Force created the Minuteman program in 1958 to increase the ICBM deterrent force. The Minuteman I became the testing ground for new missile technologies. They were the first solid-fueled, three-stage missiles in the U.S. Inventory.
+
+Minuteman I proved invaluable to American foreign policy. President John F. Kennedy referred to the Minuteman missiles as the "Ace in the Hole" during the Cuban Missile Crisis. Minuteman I was first deployed in 1962 and provided deterrence from Ellsworth AFB in South Dakota, Minot AFB in North Dakota, F.W. Warren AFB in Wyoming, Whiteman AFB in Missouri, and Malmstrom AFB in Montana. In 1966, a modernization program was implemented, upgrading the entire arsenal to Minuteman II or III.
+
+The Minuteman I-B missile on display here was to commemorate the placement of 50 Minuteman III missiles in the area around Lewistown. Underground silos containing these nuclear-warhead missiles are spread across northern Montana. The missiles were placed in their silos in the early 1960s and in late 1966, the Chamber of Commerce Military Affairs Committee considered obtaining a minuteman missile for display. It was noted that the Lewistown area was the hub of the missiles deployed in this area. Installation of this missile was completed on November 5, 1968 and a dedication ceremony was held at this site on May 17, 1969.
+
+In 2015, the missile was refurbished with a new coat of paint and new decals. This work was spearheaded by the Lewistown Historic Resources Commission. Members of the commission and the Sons of the American Legion and other veterans groups did the restoration work on the missile.
+
+Erected by Lewistown Historic Resources Commission.

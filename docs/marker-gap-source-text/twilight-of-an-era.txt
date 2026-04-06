@@ -1,0 +1,51 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123097
+Slug: twilight-of-an-era
+Title: Twilight of an Era
+Town: Missoula
+County: Missoula
+Lat / Lng: 46.87495, -113.88539
+Topics: industry, nature
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The turn of the century decade began one of transition and progress and is considered the first decade of materialism and consumerism.
+
+A Tribute to Milltown Dam
+
+The growth of Montana's lumber industry was dependent on the development to electrical energy. For turn-of-the-century entrepreneur W.A. Clark, wealth derived from mining in Butte made possible his expansion into other business enterprises in Montana.
+
+Clark recognized the emergent energy needs of Missoula and the surrounding area. In 1904 he purchased 20 acres of land at the confluence of the Clark Fork and Blackfoot Rivers as a site for his proposed dam. Clark also acquired sufficient water rights on the two rivers to operate the power plant. Construction of the Milltown Dam began in September 1905 and was completed in 1907. Clark relocated his Western Lumber Company from Lothrop to Milltown in 1911 further establishing the local community as a lumber town, now a focal point for electrical energy production.
+
+The Milltown Dam influenced the culture and landscape of this pocket of Western Montana. The industry made possible by the dam created a solid livelihood and sense of ownership for this once pioneer community, a proud historic journey that encompasses almost one hundred years.
+
+Original features of the dam include a 220 foot timber crib, rock-filled spillway about 40 feet tall. Ten inch square timbers set on the river bed and secured to pilings were filled with rock that provided the foundation for the spillway. Essentially a gravity dam: the structure resists the reservoir's force by the shear gravity of the rock-filled cribs. The 126 foot long by 65 foot wide powerhouse is a brick and reinforced concrete structure housing five General Electric alternating current generators and two G.E. direct current exciters all powered by Leffel twin horizontal turbines. The dam's peak generation of 3,400 Kilowatts provided service to local industry and transportation, the towns of Bonner and Milltown, as well as a Missoula and rural circuit.
+
+Dam History at a glance
+
+1854 -- Captain John Mullan carves out the Mullan Trail through Milltown
+
+1883 -- Northern Pacific Railroad arrives in Milltown
+
+1886 -- Hammond-Bonner Mill opens
+
+1903 -- McCormick sells the townsite land to the Western Lumber Company (W.A. Clark)
+
+1904 -- W.A. Clark purchases the existing power system at Bonner Mill and begins plans to build a dam and generating plant on the Clark Fork River
+
+1905-1907 -- Milltown Dam is constructed
+
+1908 -- The plant first generates electricity and survives flood conditions of major proportions
+
+1916 -- Clark sells the dam to Missoula Light and Water Company
+
+1924 -- The dam is sold to the Missoula Public Service Company
+
+1929 -- The dam and its utility interest are sold to Montana Power Company
+
+2002 -- Northwestern Energy purchases Montana Power Company including the Milltown Dam
+
+The Dam is scheduled for removal.

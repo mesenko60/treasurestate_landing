@@ -1,0 +1,37 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 239711
+Slug: montanas-centennial-train
+Title: Montana's Centennial Train
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.65806, -111.0999
+Topics: education, railroads, settlements
+Year erected: 
+Erected by: Yellowstone Historic Center
+
+--- Inscription (as stored for the site) ---
+
+A Celebration that Rolled on the Rails 1964 marked 100 years since Montana was established as a territory. How would the state celebrate this milestone? The challenge to develop a unique showpiece led to the idea of a train that would tour the state and surrounding region to showcase Montana's history and resources.
+
+An Idea That Kept On Growing....Up To 25 Cars!
+
+Stagecoaches, wagons, 72 horses, exhibits from the Montana Historical Society, even a display of a million-dollar collection of gold were loaded onto train cars. Over 300 Montana citizens traveled on the train to help promote the state. The 100th Birthday Train grew to over 25 cars.
+
+All The Way To New York City!
+
+The Centennial Train left Billings on April 5, 1964 for a tour of 16 cities stretching all the way to the east coast and back. Each stop included a parade, banquet, and other festivities. During the stop in Washington, D.C., a grand dinner was held in honor of President Lyndon Johnson, with Montana native Chet Huntley serving as toastmaster. The train was in New York City for the opening day of the World's Fair, and it served as the backdrop for the Montana Pavilion's pioneer village for two seasons.
+
+Dressed For The Occasion
+
+Art panels illustrating the state's history, wildlife, and industry decorated the train cars exteriors. Some cars displayed Montana ranch brands made from Anaconda copper. Imagine seeing this colorful train as it traveled across the country, painted in colors that evoke images of the Montana countryside and sky, and bedecked with artistic treasures!
+
+All Aboard!
+
+Montana's Centennial Queen Bonnie Jo Robbins and "Big Medicine" served as ambassadors aboard the train.
+
+A Final Home In Yellowstone
+
+The train returned to Montana after the close of the World's Fair in 1965. Seven of the cars were given to gateway communities in the state to serve as visitor centers. West Yellowstone received a "CowBelle" car embellished with copper brands. When the Chamber of Commerce outgrew the space, the train car was used for retail operations. In 2003, it was donated to the Yellowstone Historic Center by the Povah family to once again serve as a showpiece of Montana's history.
+
+Erected by Yellowstone Historic Center.

@@ -1,0 +1,36 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 186551
+Slug: elkhorn-mountain-volcanoes
+Title: Elkhorn Mountain Volcanoes
+Subtitle: and the Boulder Batholith
+Town: Jefferson City
+County: Jefferson
+Lat / Lng: 46.40656, -112.01341
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The story of the Elkhorn Mountains Volcanics and the Boulder Batholith is the story of how molten magma or melted rock rising up through the crust of the earth just kept coming and coming and coming - from about 81 to about 74 million years ago. Magma that reached the surface created violent explosions, hurling chunks of rock, cinders, and volcanic ash into the air. At times it "rained' droplets of melted rock. Great clouds of volcanic ash were carried by the wind to the east and buried many animals. The dinosaur fossils in the Two Medicine Formation near Choteau owe their preservation to eruptions of the Elkhorn Mountains Volcanics. The volcanic field was enormous-about 100 miles in diameter and up to 3 miles thick. After the pile of volcanic rocks got so thick, magma stopped going all the way to the surface and just accumulated near the bottom of the pile. So much magma intruded at this level that it formed a body of granite rock that now extends from Helena to Butte and is known as the Boulder Batholith. You are now in the middle of the Boulder Batholith and the Elkhorn Mountains Volcanics.
+
+The magma was generated because one of the tectonic plates under the Pacific Ocean was subducted under Western North America. Approximately 10,000 miles of the Farallon Plate moved under Montana. This is one of places where it was easy for magma to reach the surface.
+
+Geo-Activity:
+
+• How many things can you find that are made from gold, silver, copper. Hint: Look in the pockets, on fingers, and in mouths. What are the characteristic colors of these metals.
+
+Geo-Facts:
+
+• Seismic and gravity studies show that the Boulder Batholith extends down to a depth of approximately 10 miles. The volume of granite rock in the batholith is measured in tens of thousands of cubic miles.
+
+• When the Elkhorn volcanos erupted about 81 to 74 million years ago, they spewed ash as far away as central Montana and killed dinosaurs as far away as Egg Mountain near Choteau.
+
+• Some of the richest gold, silver, and copper mines in Montana are located on the Boulder Batholith.
+
+The magma contained many metals. As the granite formed cooling cracks, hot solutions squirted into the cracks to form veins in copper (near Butte) and gold (in this area). Millions of years later weathering of the granite allowed gold in the veins to wash down to the gravels in the valley floor. A gold dredge chewed through the gravels of Prickly Pear Creek beginning in 1938.
+
+Mounted on a barge floating on a 30-foot deep ponds, the machinery consisted of a chain of buckets that dumped the gravel on a maze of screens and sluices inside the dredge. In its wake, the dredge left behind a "churned up" landscape. In some places scrub brush holding the gravel piles together is still the only vegetation. Although the dredge shut down permanently in the mid-1960's, it was not until the early 1970's that a South American mining company purchased it and moved it to Bolivia.
+
+Erected by Montana Department of Transportation.

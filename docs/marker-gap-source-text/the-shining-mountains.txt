@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 192667
+Slug: the-shining-mountains
+Title: The Shining Mountains
+Town: Ennis
+County: Madison
+Lat / Lng: 45.3487, -111.7228
+Topics: disasters, nature
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Madison Range rises from the east side of the Madison Valley along an active fault that threads its way along the base of the range. The mountains began to slowly rise along the fault about 50 million years ago and it remains active today. This was violently demonstrated on August 17, 1959 when a magnitude 7.5 earthquake struck the southern end of the Madison Range near Hebgen Lake. The earthquake triggered a massive landslide that dammed the Madison River, creating Earthquake Lake. Fault scarps as much as 21-feet high significantly changed the landscape and are visible in the valley along the length of the zone.
+
+Several prominent peaks in the northern Madison Range, such as Lone, Pioneer, and Fan mountains, are supported by resistant igneous rock that developed from magma that pushed upward along layers of sedimentary rock. Glaciers and landslides carved the peaks into the shapes we see today. Sphinx Mountain is topped by 3,000 feet of gravelly conglomerate rock. The gravels that became these conglomerates were eroded from surrounding highlands and were deposited in an ancient valley that now is part of the highest peaks. Mountain streams deposited the sediments into the Madison Valley creating alluvial fans, named because of their fan shapes as seen from above.
+
+The Madison Range provided a spectacular backdrop to one of the most thrilling periods in the history of the American West, the fur trade. Beginning in the 1830s, American fur trappers, sometimes called mountain men, caught beaver in streams emptying into the Madison River. The fur trade was a cutthroat business as the fur companies competed for a limited and rapidly dwindling resource. By the 1840s the Blackfeet and the beaver had all but disappeared from this area. The mountain men’s legacy lives on in the names of many geographic features in the region.
+
+Geo-Facts:
+
+• The 1959 Madison Canyon landslide was the largest seismically triggered landslide in North America during historic times. The 37 million cubic yard slide formed a 190-foot thick dam across the Madison River to impound Earthquake Lake.
+
+• From 1982 to 2007 more than 4,000 earthquakes having a magnitudes up to 4.8 have occurred near the southern end of Hebgen Lake basin, making this region the most seismically active in the lower 48 states outside of California and Nevada.
+
+• The nearly horizontal benches or terraces that extend for miles along the Madison Valley are the remnants of old channels of the Madison River. The highest terrace represents the oldest channel; lower terraces represent younger channels that formed in succession until the rive cut downward to its present level and current channel.
+
+Geo-Activity:
+
+• As you drive through the Madison Valley, keep your eyes on Sphinx Mountain, Can you tell why the mountain got its name? Try picking out some other mountains and naming them after things they look like.

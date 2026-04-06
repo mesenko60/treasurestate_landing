@@ -1,0 +1,26 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 253655
+Slug: military-camp
+Title: Military Camp
+Subtitle: Exploration to Annihilation
+Town: Terry
+County: Prairie
+Lat / Lng: 46.73064, -105.43509
+Topics: exploration, military
+Year erected: 
+Erected by: Undaunted Stewedship
+
+--- Inscription (as stored for the site) ---
+
+The military paved the way for the settlement of the West-and the lands in front of you played a central role. The first military encampment here occurred on July 30, 1805, when Captain William Clark and other members of the Corps of Discovery camped on the north bank of the Yellowstone River about a mile downstream from here. Heading home quickly, they were just days away from reuniting with Meriwether Lewis and his crew who traveled separately along the Missouri River.
+
+The Corps' survival to this point had required the friendliness and help of numerous native tribes to the West. Clark and his men could scarcely have imagined that this place at the confluence of the Yellowstone and the Powder Rivers-just 70 years later-would become a staging ground for the U.S. governments war to subdue native cultures and transform the region.
+
+The land downstream, to your right on both sides of the Powder River, served regularly as an organizing site for troops throughout the six-year war against the Sioux Nation in the 1870s. Tents housed battalions of soldiers, civilian support-teams camped on the fringes and steamboat docked to unload cargo.
+
+Picture the nation's 99th Birthday-July 4, 1876-when hundreds of soldiers camped here with General Terry. Giant piles of wood were ready for the bonfires that night on the top of Sheridan Butte and on a hilltop to the south. But instead, that afternoon a steamboat, the Far West, arrived with shocking news of the Battle of Little Bighorn. Men they likely all knew, who had camped near here just days earlier-General Armstrong Custer and the entire Seventh Cavalry-were now dead.
+
+On the morning of August 22 just as we were going into camp 20 or 30 Indians concealed themselves behind the rough hills...the Indianas hid themselves on a high and rugged promontory that over looked the valley of O'Fallon's Creek...During this skirmish an Indian calling himself 'Sitting Bull' stood behind a rock on the top of a precipice and addressed us at great length calling over the names of all the bands he would bring to our extermination, his list comprising all the Sioux, the Arapahoes and the Cheyennes. Stanley's report on the expedition, October 28, 1872
+
+Erected by Undaunted Stewardship.

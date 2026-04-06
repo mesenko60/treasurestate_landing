@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 189458
+Slug: captain-grant-marsh
+Title: Captain Grant Marsh
+Town: Hardin
+County: Big Horn
+Lat / Lng: 45.84421, -107.59111
+Topics: 
+Year erected: 
+Erected by: Custer Circle Project 2017 and Montana Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+Captain Grant Marsh (1834-1916), one of the most skilled riverboat pilots on the Upper Missouri during the steamboat era, figured prominently in both the events leading up to the Battle of the Little Bighorn and its aftermath.
+
+The steamboat Far West piloted by Captain Marsh was one of several steamers chartered by the U.S. Government in support of its 1876 military campaign against the Lakota and Northern Cheyenne. As the Dakota Column marched west to the Yellowstone River, the Far West moved upriver in support of the command that now included the Montana Column.
+
+On June 21, 1876, General Terry, Gibbon, and Custer held their final strategy meeting on board the Far West just below the mouth of Rosebud Creek. Custer was to lead the Seventh Cavalry up Rosebud Creek while the Montana Column marched west along the Yellowstone and then south to the Bighorn and Little Bighorn Rivers.
+
+On the afternoon of June 24th, the Far West ferried Terry and Gibbon's columns across the Yellowstone River just below the confluence of the Bighorn River. Captain Marsh continued up the Bighorn eventually mooring a few miles above the confluence of the Little Bighorn River, a remarkable feat of river navigation. Captain Marsh did not learn the fate of the Seventh Cavalry until the early morning of June 29th when a courier from General Terry arrived, directing him to prepare the Far West to receive scores of wounded from Reno and Benteen's columns. Throughout the day the forty or so wounded were transported to the steamers from the battlefield on makeshift litters by troopers from the Montana Column. A few days later, Captain Marsh set off from Fort Pease on a 54-hour, 710 mile, day-and-night dash to the present Bismarck, North Dakota where the fate of the decimated Seventh Cavalry was telegraph to a nation still celebrating its centennial. America was stunned by the news and the story stayed on the front pages of newspapers for weeks.
+
+Erected by Custer Circle Project 2017 and Montana Fish, Wildlife & Parks.

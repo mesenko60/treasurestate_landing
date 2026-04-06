@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 246450
+Slug: the-great-highway-of-the-northwest-the-yellowstone-trail-2
+Title: The Great Highway of the Northwest: The Yellowstone Trail
+Town: Greycliff
+County: Sweet Grass
+Lat / Lng: 45.73437, -109.75793
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Motoring was an adventure in the second decade of the 20th century and people usually didn't travel very far from home. There were few paved roads, and most were choked with dust during the summers, knee-deep in mud in the rainy seasons, and blocked by snowdrifts in the winters. But as more people bought cars, they demanded better roads. Some banded together and formed organizations dedicated to the construction of good roads, which, they believed, increased commerce and made for prosperous communities. One way to prosperity was through tourism. Tourists stayed in local hotels or auto camps, ate at local restaurants, and spent money. For many communities, like Greycliff, a good road was just as important as the railroad.
+
+In 1912, businessmen from South Dakota, Minnesota and Montana formed an organization dedicated to establishing a good coast-to-coast road. Called the Yellowstone Trail, a road ultimately evolved into a coast-to-coast highway connecting Plymouth Rock, Massachusetts and Seattle, Washington with a branch from Livingston south to Yellowstone National Park. The trail was an interconnected chain of county roads marked by chrome yellow signs with arrows pointing the way. Members of the Yellowstone Trail Association (YTA) aggressively promoted the road to tourists and sponsored annual "Trail Days" where local citizens kept the road in passable condition. The YTA designated local businessmen along the route as "Trail men," who offered a helping hand to travelers on the road.
+
+The Yellowstone Trail in Montana was 800 miles long, including roads that branched off the main route to Yellowstone Park and other important tourist destinations. Initially a dirt road that was "slippery in wet weather," the Montana Highway Department began to slowly make improvements to it after World War I. By 1926, the Yellowstone Trail was officially known as US Highway 10. Montana spent more money on road improvements to the Yellowstone Trail than any other state along its route. Today, Interstates 94 and 90 parallel much of the old Yellowstone Trail.
+
+"Will the tourist come in great numbers? Give them a road and you can not stop them."
+
+First Year Book of the Twin Cities-Aberdeen-Yellowstone Park Trail (1914)
+
+"Don't be afraid to tour Montana. You can sleep in a perfectly good bed, with clean linen, each night if you desire, and have a tub bath in the morning. You will have no hair-line drives to make, narrowly escape no yawning precipices, or be compelled to undergo any unusual hardships. ... Carry as little equipment as you wish, for excellent towns will supply your wants and needs. ... Don't try to carry too much for your own comfort. Just plan to enjoy it and you will."
+
+First Year Book of the Twin Cities-Aberdeen-Yellowstone Park Trail (1914)
+
+"The Yellowstone Valley road is usually a splendid one, and the people of this section will be found to be the most cordial in the world. ... The tourist will find many free campgrounds, and cordial good-fellowship everywhere. The road is marked. This is the section from which the Yellowstone Trail derives its name, and in this valley are the hardy pioneers that helped give this organization its form and being."
+
+Yellowstone Trail Route Folder (1919)
+
+Erected by Montana Department of Transportation.

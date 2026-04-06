@@ -1,0 +1,126 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86865
+Slug: bear-paw-monument
+Title: Bear Paw Monument
+Subtitle: 1881
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.56992, -107.43172
+Topics: native-american, military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+This monument was originally erected at Ft. Keogh in 1881 to honor U.S. Army casualties from the 1877 Nez Perce War.
+
+PLEASE NOTE: “Hostile Indians” is in historical context with a term used for Native American enemies of the United States during the 19th century. The historic structure is protected by the 1966 Historic Preservation Act and cannot be changed to reflect modern social norms.
+
+To the officers and soldiers killed, or who died of wounds received in action in the Territory of Montana, while clearing the District of the Yellowstone of hostile Indians.
+
+7th Regiment of Cavalry
+
+Names • Co. • Date • Place
+
+John E. Cleveland • A • Sep. 30, 1877 • Bear Paw Mts.
+
+Lewis Kelly • A • Sep. 30, 1877 • Bear Paw Mts.
+
+Samuel McIntyre • A • Sep. 30, 1877 • Bear Paw Mts.
+
+William J. Randall • D • Sep. 30, 1877 • Bear Paw Mts.
+
+David E. Dawsey • D • Sep. 30, 1877 • Bear Paw Mts.
+
+Charles F. Hurdick • K • Sep. 30, 1877 • Bear Paw Mts.
+
+Frank Knaupp • K • Sep. 30, 1877 • Bear Paw Mts.
+
+Francis Roth • K • Sep. 30, 1877 • Bear Paw Mts.
+
+William Whitlow • K • Sep. 30, 1877 • Bear Paw Mts.
+
+Edson F. Archer • L • Sep. 13, 1877 • Canyon Creek
+
+Nathan T. Brown • L • Sep. 13, 1877 • Canyon Creek
+
+Frank J. Gosselin • M • Sep. 13, 1877 • Canyon Creek
+
+Farrier Jas. Lawler • G • Sep. 18, 1877 • Canyon Creek
+
+2nd Regiment of Cavalry
+
+Names • Co. • Date • Place
+
+Farrier John Irving • G • Oct. 1, 1877 • Bear Paw Mts.
+
+Frank Gackowsky • F • May 7, 1877 • Muddy Creek
+
+Chas. A. Martindale • F • May 7, 1877 • Muddy Creek
+
+Peter Louys • H • May 7, 1877 • Muddy Creek
+
+Charles Sprencer • H • May 7, 1877 • Muddy Creek
+
+7th Regiment of Cavalry
+
+Capt. Owen Hale • • Sep. 30, 1877 • Bear Paw Mts.
+
+2nd Lt. J. W. Biddle • • Sep. 30, 1877 • Bear Paw Mts.
+
+1st Serg. Geo. McDermott • A • Sep. 30, 1877 • Bear Paw Mts.
+
+1st Serg. Michael Martin • D • Sep. 30, 1877 • Bear Paw Mts.
+
+1st Serg. Otto Wilde • K • Sep. 30, 1877 • Bear Paw Mts.
+
+Serg. Otto Durselen • A • Sep. 30, 1877 • Bear Paw Mts.
+
+Serg. Jas. H. Alberts • D • Sep. 30, 1877 • Bear Paw Mts.
+
+Serg. Max. Mielke • K • Sep. 30, 1877 • Bear Paw Mts.
+
+Serg. Henry W. Raichel • K • Sep. 30, 1877 • Bear Paw Mts.
+
+5th Regiment of Infantry
+
+Names • Co. • Date • Place
+
+Capt. Andw. S. Bennett • • Sep. 5, 1878 • Clark’s Fox
+
+Serg. Joseph A. Cable • I • Oct. 15, 1877 • Bear Paw Mts.
+
+Corpl. John Haddo • B • Sep. 30, 1877 • Bear Paw Mts.
+
+Corpl. Aug. Rathman • A • Jan. 8, 1877 • Wolf Mts.
+
+William H. Battin • C • Jan 3, 1877 • Tongue River
+
+Thomas Geoghegan • C • Sep. 30, 1877 • Bear Paw Mts.
+
+Richard M. Peshall • G • Sep. 30, 1877 • Bear Paw Mts.
+
+Joseph Kohler • I • Oct. 1, 1877 • Bear Paw Mts.
+
+22nd Regiment of Infantry
+
+Barnard McCann • F • Jan. 12, 1877 • Wolf Mts.
+
+2nd Regiment of Cavalry
+
+Serg. Joseph Johnson • C • Apr. 1, 1880 • O’Fallon Creek
+
+George E. Douglas • E • Feb. 8, 1880 • Pumpkin Creek
+
+Leo Baader • E • Apr. 5, 1879 • Mispah Creek
+
+In memory of
+
+Joseph A. Cable
+
+Medal of Honor
+
+Corp. Co. I 5 US Inf
+
+Indian War 1848 Oct. 15, 1877

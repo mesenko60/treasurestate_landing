@@ -1,0 +1,46 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 202999
+Slug: evidence-of-the-expedition
+Title: Evidence Of The Expedition
+Subtitle: Clark on the Yellowstone
+Town: Glendive
+County: Dawson
+Lat / Lng: 47.12522, -104.69038
+Topics: nature, exploration, native-american
+Year erected: 
+Erected by: Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission
+
+--- Inscription (as stored for the site) ---
+
+Horses, Canoes and Bull Boats
+
+Clark and his party traveled by horse along the north side of the Yellowstone River until July 24, when nine members began a float in two lashed-together canoes built from cottonwoods they found along the river. Sergeant Pryor and Privates Hall, Shannon and Windsor were sent overland with the party's remaining horses. When those horses were also lost, the four men walked to the Yellowstone River, near Pompeys Pillar. They then built bull boats from buffalo bull hides, on frames of branches that were lashed together. The men floated down the river and into the Missouri River, and rejoined Clark's group on August 8. They joined Lewis' party on August 12, south and east of present-day Williston, North Dakota.
+
+July 20, 1806 "The horses being fatigued and their feet very Sore, I Shall let them rest a fiew days. dureing which time the party... will dress their Skins and make themselves Clothes to bare, as they are nearly naked." "I deturmined to have two Canoes made out of the largest of those trees and lash them together which will Cause them to be Study and fully Sufficient to take my Small party & Self with what little baggage we have down this river"
+
+July 21, 1806 "This morning I was informed that Half of our horses were absent."
+
+July 23, 1806 "Sgt. pryor found an Indian Mockerson and a Small piece of a roab ... those Indian Signs is Conclusive with me that they have taken the 24 horses which we lost. ..."
+
+July 24, 1806 "had all our baggage put on board of the two Small Canoes which when lashed together is very Study. ...at 8 A M we Set out..."
+
+July 24, 1806 "on this Island I observd a large lodge… this Lodge a council lodge…”
+
+July 24, 1806 "I had the horses drove across the river and Set Sergt. Pryor and his party across. ... my man York killed a Buffalow Bull, as he informed me for his tongue and marrow bones. for me to mention or give an estimate of the differant Spcies of wild animals on this river particularly Buffalow, Elk Antelopes & Wolves would be increditable. I shall therefore be silent on the Subject further"
+
+July 25, 1806 "The nativs have ingraved on the face of this rock the figures of animals &c. near which I marked my name and the day of the month & year"
+
+"I encamped on the Stard. Side imediately below the enteranc Shannons River [now known as Fly Creek] about 22 Yards wide, and at this time discharges a great portion of water which is very Muddy."
+
+"A Remarkable Rock"
+
+The most significant incident that occurred during Clark's journey down the Yellowstone was on July 25, 1806, when he wrote, " ... 4 P M arived at a remarkable rock. ...This rock which I shall Call Pompys Tower [Pompeys Pillar]. . . I marked my name and the day of the month & year."
+
+Clark's signature can be seen at Pompeys Pillar today. It is the only remaining on-site physical evidence along the entire route of the Corps of Discovery's 8,000-mile journey.
+
+July 27, 1806
+
+”when we pass the Big horn I take my leave of the view of tremendious chain of Rocky mountains white with Snow”
+
+Erected by Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission.

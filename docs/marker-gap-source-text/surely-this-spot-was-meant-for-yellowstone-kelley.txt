@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 167549
+Slug: surely-this-spot-was-meant-for-yellowstone-kelley
+Title: Surely this spot was meant for Yellowstone Kelley
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79801, -108.48881
+Topics: cemeteries
+Year erected: 
+Erected by: Yellowstone Kelly Interpretive Site
+
+--- Inscription (as stored for the site) ---
+
+Last Will and Testament, 1927
+
+"I, Luther S. Kelly, direct that in the last event, my body be encased in a suitable casket, plain but substantial, together with my Spanish War Saber, a relic of the fight at La Lud, Luzon (Philippines).
+
+I direct that the whole be tendered to the Authorities of the State of Montana at Helena.
+
+If feel that my body will rest better in Montana, the scene of my earlier activities, than it would in the vastness of Arlington (National Cemetery)..." -- Last Will and Testament of Luther S. Kelly, July 7, 1927
+
+Surely this spot was meant for Yellowstone Kelley
+
+Yellowstone Kelly asked to be buried in Montana, the site of his greatest adventures. Kelly, the Montana Historical Society, and Billings Commercial Club worked together and made arrangements for his burial. Kelly died December 17, 1928. His body, accompanied by a military honor guard, was sent to Billings and placed temporarily in a local mausoleum. The highest point of Swords Rimrock Park was renamed Kelly Mountain and selected as his final resting place.
+
+On June 29, 1929, a horse-drawn wagon carried his casket, led by colors and a riderless horse, to his final resting place overlooking the Yellowstone River Valley. A military guard with representatives from the Civil War, Indian Wars, Spanish-American War and First World War attended the funeral. The Billings Rotary Boys Band and a thousand local citizens participated in the ceremony to honor Yellowstone Kelly.
+
+Each year on the anniversary of his death, his wife May Kelly, sent a wreath from their farm in Paradise, California. This wreath is now represented on Kelly's headstone.
+
+Yellowstone Kelly's Map, ca. 1878
+
+Yellowstone Kelly's hand drawn map of the Yellowstone and Missouri River territory in the late 1870s. The original map was presented to the Billings Commercial Club in July 1929 by Kelly's nephew. The map is in the collection of the Billings Public Library.
+
+Erected by Yellowstone Kelly Interpretive Site.

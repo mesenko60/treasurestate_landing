@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 245714
+Slug: a-perfect-defile
+Title: A Perfect Defile
+Subtitle: The Prickly Pear Canyon
+Town: Wolf Creek
+County: Lewis and Clark
+Lat / Lng: 46.95305, -112.10832
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Here nestled deep in the Big Belt Mountains, is one of the most spectacular canyons in Montana. More than a billion years ago, during the Precambrian Era, an ancient inland seaway deposited these shales and sands, which over time, became these vibrant red and green mudstones called "Spokane Shale" for the Spokane Hills east of Helena. The Big Belt themselves consist primarily of Spokane Shale. They contrast with the magnificent white cliffs of Madison Limestone exposed in the nearby Gates of the Mountains and the drab gravels of Confederate Gulch to the southeast. The greenish colors in the mudstones are provided by tiny amounts of iron minerals that form on mudflats that are low in oxygen; the intervening pinkish layers oxidized in contrast with slightly greater amounts of oxygen.
+
+Like most sedimentary rocks, these were originally laid down as horizontal layers. About 70 million years ago these rocks were crumpled, folded and faulted during formation of the Rocky Mountains. As the floor of the Pacific Ocean slowly collided with the western margin of North America the horizontal layers became bent, broken, and tilted as you see them now. The most pronounced crumpling is here in the "overthrust belt" near the eastern edge of the Rockies. The Precambrian sedimentary rocks thin eastward in this area where they overlie hard granite-like "basement" rocks of the central part of the continent.
+
+Geo-facts:
+
+Spokane Shale is composed of red and green mudstones formed over a billion years ago before there were any animals with hard parts such as bones or shells.
+
+The tilted and crumpled layers of rock in the canyon was caused by the formation of the Rocky Mountains during the Cretaceous Period.
+
+The first road through this part of the Prickly Pear Canyon was built in 1864 and was a toll road in 1865, less than a year after Montana became a territory and gold was discovered in Helena.
+
+Geo-activity:
+
+For the next five miles count how many times you can see the red and green stone, called Spokane Shale, in the canyon formations.
+
+Although this multi-hued and rugged canyon was well-known to Native Americans for thousands of years, it was first recorded by road-builder John Mullan in 1859. He called this rocky canyon "a perfect defile" and 'by far the most difficult of any point along the (road), from Hell's Gate to Fort Benton." In 1865, the Territorial Legislature granted a license to the Little Prickly Pear Wagon Road Company to build a toll road through the canyon. A year later, in 1866, Helena merchants James King and Warren Gillette bought the road and spent $40,000 upgrading it. By then traffic on it between Fort Benton and Helena had become so heavy that the men were able to recoup their expenditure within two years. By the early 1870s, it was part of the Benton Road, an important freight and passenger route in the territory. Thereafter, other roads and a railroad were constructed through Prickly Pear Canyon, culminating in the completion of Interstate 15 in 1967. Montana's first Interstate rest area, here at Lyon's Creek, was built in 1965.
+
+Erected by Montana Department of Transportation.

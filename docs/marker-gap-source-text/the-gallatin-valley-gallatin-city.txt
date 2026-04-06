@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 282810
+Slug: the-gallatin-valley-gallatin-city
+Title: The Gallatin Valley / Gallatin City
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.92558, -111.5996
+Topics: settlements
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Gallatin Valley
+
+While known to Montana First Citizens for Millennia, it was not until William Clark explored the valley in July 1806 that we have the first written description of the Gallatin Valley. Clark described the valley as an "open level plain" as he and his party headed eastward, crossing into the Yellowstone River valley over what is now known as Bozeman Pass on July 15th. Clark's description of the large number of beaver dams drew British and American fur trappers to the valley. In 1810, William Ashley established Three Forks Post near here. Famed mountain man Jim Bridger was familiar with the valley. The mountain range to the east is named for him.
+
+Rich gold placers on Grasshopper Creek, Alder Gulch, and Last Chance Gulch in the early 1860s drew thousands of European-Americans to southwestern Montana. The Gallatin Valley's central location to the gold camps and its fertile soil made it the breadbasket of Montana Territory. Farmers and ranchers in the valley sold their products in Bannack and the gold camps strung along the length of Alder Gulch. Bozeman, Belgrade, Manhattan, and Three Forks were important agricultural communities. The arrival of the Northern Pacific Railway in 1883 opened the valley to national markets for their wheat, barley, and cattle. Today, agriculture remains an important industry in the "The Garden Spot of Montana."
+
+Gallatin City
+
+A few months after prospectors discovered gold in Grasshopper Creek, 115 miles to the south, a group of Missouri speculators, with big dreams of the future, stood at the Missouri headwaters. They envisioned a rich agricultural center and steamboat port near here that would make the area a Garden of Eden for those who got in on the scheme. To that end, the promoters lured people from the mining camps and the Minnesota-Montana Road to settle at the headwaters. The Gallatin Town Company platted a town on the west side of the Jefferson River a little over four miles east of here. Small log cabins were soon followed by a flour mill and a ditch from the Madison River to power it. James Shedd constructed a series of river bridges shortly thereafter. At its height in 1866, Gallatin City posted a church, school, stores, and post office. The settlement was the first Gallatin County seat. But the planned "San Francisco of a Northern Eldorado" never materialized.
+
+The promoters big plans for the Headwaters failed. The Great Falls of the Missouri proved an insurmountable barrier to Gallatin City being a steamboat port. The area around the headwaters also proved not to be the best for farming. The area was not particularly attractive for settlers or very favorable for farming, leading one resident to write that Gallatin City was "not one of the cities toward which people gravitate." Settlers in the area left in droves, while Bozeman prospered. By 1870, the county seat had moved to Bozeman and only 160 people remained in the area. Gallatin City, like many other optimistic plans in Montana, flopped, leaving behind abandoned buildings and collapsed log cabins as monuments to a failed dream.
+
+Erected by Montana Department of Transportation.

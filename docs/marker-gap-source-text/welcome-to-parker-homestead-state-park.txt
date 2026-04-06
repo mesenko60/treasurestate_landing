@@ -1,0 +1,37 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 127000
+Slug: welcome-to-parker-homestead-state-park
+Title: Welcome to Parker Homestead State Park
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.84587, -111.67676
+Topics: parks, settlements
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The Montana soil is swallowing hundreds of old homestead buildings like this one. Each takes with it untold stories of men and women whose lives brought them drought and blizzards, loneliness and companionship, fear and simple joys, much like we know today yet sprung from a world that will never be again.
+
+”As I looked across the rolling expanse of prairie, filled with the beauty of a Montana sunset, I sent up a little prayer of thanksgiving from my heart for this, our very first home. Only a rectangle of prairie sod, raw and untouched by the hand of man, but to us it was a kingdom…
+
+…We have no regrets; life is fuller and sweeter through lessons learned in privation, and around our homestead days some of life’s fondest memories still cling. We are of Montana, now and always… I feel that creating a home and rearing a family in Montana has been a grand success, and my cup seems filled to overflowing with the sweetness and joy of living.”
+
+- Pearl Price Robertson
+
+Homesteader in Big Sandy, Montana, 1911
+
+A Kingdom of Hope
+
+Like the cottonwoods that shelter this cabin, the Parker family who build it dug their roots deep, weathered many seasons of hardship, and drank what sustenance the could from the soil. The Parkers were among thousands of Americans who took advantage of the Homestead Act of 1862 to stake their dreams on the arid Montana plains. Like so many others families, they notched out a living with sweat and optimism, and enjoyed little in the way of material comfort.
+
+In the 1890s, newlyweds Nelson and Rosa Ellen (Harwood) Parker refurbished a miner’s shack on nearby Antelope Creek. A few years later they built a cabin for their growing family on the Jefferson River, but a spring flood washed that home away. The Parkers escaped in a rowboat, Rosa clutching the youngest of her three children between her knees. They vowed to move to dry ground.
+
+In 1910, Nelson filed a patent to homestead 160 acres here. They built this sod-roofed cabin, and hauled water from creeks and ditches for years before they could afford to dig a well. Eventually the Parkers built a larger home near Three Forks, and abandoned this cabin.
+
+In 1939, Orville and Josephine Jewett bought the place for their family of four children. The Jewetts farmed, hunted, trapped, and sheared sheep through the Depression and World War II. When they lived here, the cabin had three rooms, all painted with calcimine or white-wash. Bright linoleum covered wide-plank floors, curtains softened the windows, and the laughter of the Jewett’s four children rang across the fields.
+
+A few members of the Jewett family still live nearby. In 1985 they leased the site to Montana Fish, Wildlife & Parks to share and preserve this sample of Montana’s heritage. In 1998 the cabin was stabilized to delay deterioration.
+
+Please help preserve Parker Homestead, and all the old homestead buildings you come across in Montana. Refrain from littering, use the place respectfully, and leave it in peace.

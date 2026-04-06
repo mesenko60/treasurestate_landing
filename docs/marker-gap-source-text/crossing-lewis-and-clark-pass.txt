@@ -1,0 +1,44 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220035
+Slug: crossing-lewis-and-clark-pass
+Title: Crossing Lewis and Clark Pass
+Subtitle: Priests and Roadbuilders, Homesteaders and Firefighters
+Town: Lincoln
+County: Lewis and Clark
+Lat / Lng: 47.139, -112.4564
+Topics: railroads
+Year erected: 
+Erected by: Lewis & Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+"Range life in 1900 was a grueling occupation and especially so in the Alice Creek area where early snows and long winters made for a very short summer work period. When Alberta [Patterson] was twenty-one months old her mother told of putting Alberta into a wooden apple box used for a portable crib when she would go into the field to build fences."
+
+-- Gold Pans and Singletrees, Upper Blackfoot Valley Historical Society
+
+Early Missionaries and Routefinders
+
+Father Nicholas Point In the 1840s, the Jesuit missionary Father Nicolas (sic) Point became the first EuroAmerican to pass this way since Meriwether Lewis and his men crossed Lewis and Clark Pass in 1806.
+
+Father Point journeyed with Salish hunting parties along the Road to the Buffalo. On one bison-hunting venture, Point wrote that they reached "the summit of mountain from which one could see a horizon more that a hundred leagues in circumference." Point was almost certainly referring to Lewis and Clark Pass and the awe-inspiring view from the top.
+
+Military Roads and Train Routes
+
+Military parties, ordered west by Issac Stevens, governor of Washington Territory, searched here for the best routes for a military road and a transcontinental railroad. Between 1853 and 1855, several of Steven's parties traveled along the Blackfoot River on the ancient Indian trail.
+
+Personally, Governor Stevens favored the rail route through the Blackfoot Valley, up Alice Creek, and over Lewis and Clark Pass. Despite the governor's preference, the rail route was ultimately built over Mullan Pass 25 miles to the south, where less snow falls during the tough Montana winter.
+
+The First Homestead
+
+Homesteading brought permanent settlers to the Alice Creek area. In 1898, John Patterson established the earliest homestead here.
+
+The Road to the Buffalo ran right through the Pattersons' ranch yard, and their barn straddled it. Members of the Patterson family often spotted Indian people traveling along the trail. Today, the Patterson is known as the Alice Creek Ranch.
+
+Guarding against Fire
+
+The Alice Creek Guard Station was built by the Forest Service near here, at the head of Alice Creek, in the early 1900s. The Helena National Forest used the station in winter for game surveys, and in the summer Forest Service range riders and fire guards stayed in the rustic cabin.
+
+Today, only the foundation of the station still stands, reminding us of an earlier era in the history of managing fire on out national forests.
+
+Erected by Lewis & Clark National Historic Trail.

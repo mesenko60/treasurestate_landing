@@ -1,0 +1,77 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 278182
+Slug: vigilantes-in-montana
+Title: Vigilantes in Montana
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.2884, -111.94414
+Topics: 
+Year erected: 
+Erected by: Montana Heritage Commission, Montana History Foundation
+
+--- Inscription (as stored for the site) ---
+
+The formation of a vigilante group in 1863-1864 was not new to the frontier of America West. Over forty vigilante movements occurred between 1850 and 1879 during the period of Civil War violence and the uneasy settlement of the western frontier. Present day Montana, however, was the most significant vigilante territory.
+
+March 1863 Congress divided the massive Washington Territory and created Idaho Territory, itself a huge 325,000 square mile area. Idaho Territory contained what we now call Idaho, Wyoming and Montana. The federal government was preoccupied with war, and Congress had adjourned without appropriating any money for the new government, and without providing it any civil or criminal laws.
+
+New settlers, lured by the gold rush to the eastern regions of Idaho Territory that included Bannack and Adler Gulch, found themselves with little government. Physically remote, with slow communications and no federal soldiers, the area harbored men who threatened residents' lives and property.
+
+As the movement of people, goods and gold increased in the area, especially between Alder Gulch and Bannack, travel became a real hazard. Road Agents began to ambush and rob travelers who were known to be carrying gold or money, sometimes with fatal results, as with Nicholas Tiebolt.
+
+Tiebolt's murder precipitated the trial, conviction and hanging of suspected road agent George Ives. A compact was drawn up two days after the trial, with two dozen men signing the oath, including some who captured George Ives and brought him to Nevada City for trial. Ives death avenging the killing of Tiebolt triggered an urgency in many of the men in the gold camps to form an honorable group with duties of law enforcement, to rein in the lawlessness they witnessed around them. The Vigilance Committee in Alder Gulch was established to rid the communities of such menaces for the benefit of public order.
+
+This new Vigilance Committee united many town leaders who were provoked by the rash of recent stagecoach robberies and frustrated with an ineffective legal system. The Vigilance Committee included a president, and executive officer, secretary, treasurer, and an executive committee. The president appointed captains for each of the mining districts, who formed companies and chose their lieutenants. Together, captains and lieutenants chose honest men to join them. The leadership was meant to remain secret. With bylaws to guide them, the Vigilantes felt a duty to conduct their own hearings with swift justice, hanging or banishment, to follow.
+
+Sidney Edgarton, Chief Justice of Idaho Territory, soon led a delegation to lobby Congress to divide Idaho Territory and create Montana Territory, believing it would make both territories more governable. Edgerton brought gold dust and nuggets to Washington to demonstrate the wealth of the region knowing the Union needed the gold reserve and tax revenues to support the war effort. President Abraham Lincoln signed a bill into law creating Montana, Territory on May 26, 1864 and appointed Sidney Edgarton as governor.
+
+By July 1864, settled in Bannack, Governor Sidney Edgerton called for the rule of law and appointed territorial officials. He commissioned a census that counted nearly 16,000 residents, with about 11,500 of them in the towns of Virginia City and Alder Gulch. With Edgerton wanting to remain in Bannack and not exerting much control over areas where law enforcement was inadequate, the bulk of Montana's population living in Alder Gulch was still far from regulatory control. There seemed an unspoken consent by some in the newly formed government that the vigilantes could continue to impose justice without laws, ridding the territory of troublemakers without the expense of time or money for trials.
+
+In December 1864 a governmental framework was begun as the first Legislative Assembly met in Bannack. It passed 700 pages of laws and chose Virginia City as the new capital of Montana Territory. Also in December of that year, the first federal court in Montana Territory was set up by Chief Justice Hezekiah Hosmer in the dining room of a Virginia City hotel, The Planters House. Hosmer convened a grand jury and charged them with their duties, including a directive to indict the Vigilantes on chargers of murder if they acted again. Hosmer gave the Vigilantes formal notice to cease their activities or face the consequences, and the notice was printed in the Montana Post December 10, 1864 for all to see. The Vigilantes stopped for a while.
+
+The Montana vigilante movement began with the Vigilance Committee in Alder Gulch and Bannack in late 1863 and in 1864. Vigilantism spread northward to Helena in 1865 and continued into the 1870's with the Committee of Safety. By April 30, 1870, those two movements had targeted fifty-seven men, carrying out fifty-seven hangings. In 1879 Helena's Committee of Safety revived a posting of "3-7-77" meant to warn undesirables to leave town. A third group lead by Granville Stuart in central and eastern Montana, called "Stuart's Stranglers", formed in 1884. Lynching continued through statehood, into the 20th century, when Frank Little was hanged in 1917 in Butte, with a "3-7-77" sign on his back
+
+Vigilance
+
+Committee - Oath & Bylaws
+
+"We the undersigned uniting ourselves in a party for laudable purpos of arresting thievs & murderers & recovering stolen property do pledge ourselves upon our scared honor each to all others & solemnly swear that we will reveal no secrets, violate no laws of right & never desert each other or or standards of justice so help us God as witness our hand & seal this 23 of December AD 1863."
+
+Official Oath of Allegiance of the Vigilance Committee of Virginia City and Alder Gulch area
+
+"It shall be the duty of members to attach themselves to some company and whenever any criminal act shall come to their (a member's) knowledge to inform his Captain or Lieutenant of the same, when the officers so informed shall call together the members of his Company, (unless the Company has chosen a committee for such purpose) when they shall proceed to investigate a case, and elicit facts and should the said company conclude that the person charged with any offense should be be punished by the committee, the Captain or Lieutenant will first take steps to arrest the Criminal and then report the same with proof to the Chief who will thereupon call a meeting of the Executive Committee and the judgement of such Executive Committee shall be final."
+
+"The only punishment that shall be inflicted by this Committee is death." from Vigilance Committee Bylaws
+
+Targets of the Vigilance Committee - Hangings in Virginia City or Nevada City
+
+• George Lane - January 14, 1864 - Virginia City
+
+• Frank Parish - January 14, 1864 - Virginia City
+
+• Hayes Lyons - January 14, 1864 - Virginia City
+
+• Jack Gallagher - January 14, 1864 - Virginia City
+
+• Boone Helm - January 14, 1864 - Virginia City
+
+• Unknown - February 17, 1864 - Virginia City
+
+• J.A. "Jack" Slade - March 10, 1864 - Virginia City
+
+• James Brady - June 15, 1864 - Nevada City
+
+• John Dolan - September 17, 1864 - Nevada City
+
+• John Morgan - September 27, 1865 - Virginia City
+
+• John Jackson - September 27, 1865 - Virginia City
+
+• Rosenbaum - February 1867 - Nevada City
+
+• Charles Wilson - September 25, 1867 - Virginia City
+
+The Montana Vigilante Activities Movement was from 1864-1870 that resulted into 57 shootings and hangings across Idaho, Utah and Montana. -- "A Decent Orderly Lynching, The Montana Vigilantes" -- Fredereck Allen
+
+Erected by Montana Heritage Commission, Montana History Foundation.

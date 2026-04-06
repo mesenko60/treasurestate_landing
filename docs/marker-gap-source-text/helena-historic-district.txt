@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 186276
+Slug: helena-historic-district
+Title: Helena Historic District
+Town: Helena
+County: Lewis and Clark
+Lat / Lng: 46.5887, -112.03858
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+Two major areas comprise the Helena Historic District. The first area is roughly bounded by Hauser Boulevard, Monroe Avenue, Stuart Street, Dearborn Avenue, Flowerree Street, and Madison Avenue. The second area is roughly bounded by Neill Avenue, North Last Chance Gulch, West Placer Avenue, Cruse Street, East Lawrence Street, North Ewing Street, 7th Avenue, North Rodney Street, East 6th Avenue, North Davis Street, East Broadway Street, South Cruse Avenue, Wong Street, South Park Avenue, the beginning of West Main Street, South Howie Street, North Howie Street, West Lawrence Street, Madison Avenue, Dearborn Avenue, North Benton Avenue, and North Park Avenue. Helena, Montana. The crooked path of Last Chance Gulch, weaving between original mining claims, memorializes Helena’s chaotic beginning as a gold camp in 1864. Within a year of the placer gold discovery, a boomtown flourished, with homes and businesses in tents and log cabins. Fire was both constant threat and regular scourge. In 1869, the downtown burned, replaced over the next few years by brick and granite business houses. Helena survived after the placer gold played out and population declined, because pioneer entrepreneurs had made it a financial center. Helena claimed the territorial capital from declining Virginia City in 1874, and the following year received one of the nation’s five U.S. Assay Offices—acknowledgment of extensive hard-rock gold and silver mining that replaced placer mining. The arrival of the Northern Pacific Railroad in 1883, and Helena’s election as state capital in 1894, confirmed the town’s survival. Downtown buildings in a great variety of architectural styles arose, many since lost to fires, earthquakes, and urban renewal. The panic of 1893 and end of guaranteed federal silver purchases slowed Helena’s early momentum, but the gold camp that survived grew gradually as a business and government center.
+
+Erected by Montana Historical Society.

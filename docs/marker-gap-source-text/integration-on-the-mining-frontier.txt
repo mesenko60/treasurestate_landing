@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 208755
+Slug: integration-on-the-mining-frontier
+Title: Integration on the Mining Frontier
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.29179, -111.9464
+Topics: people, mining
+Year erected: 
+Erected by: Montana Heritage Commission
+
+--- Inscription (as stored for the site) ---
+
+Virginia City's booming gold mines provided economic opportunities for a small number of African Americans after the Civil War. By 1866, at least thirty African American men and women resided in Virginia City. Aside from working in the mines, they worked as barbers, cooks, teamsters, and general laborers. Most married women kept house but along with single women often worked as servants, cooks and laundresses. By 1870, following the decline of the mining industry, only about twenty African Americans remained in the Virginia City. A few of those who remained owned successful businesses.
+
+Born in the 1840s in Kentucky, Jack or "Jarrett" resided in Virginia City from 1866 until his death in 1926. After serving as a Union Army stable hand, Taylor made his way to Virginia City by working for a freighting company. He continued freighting on the vital Virginia City-Fort Benton road for the F.R. Merk Company, formerly located in what is now the Pioneer Bar on Wallace Street. Taylor eventually became a successful real estate entrepreneur and by 1875, he owned 160 acres in the Madison Valley.
+
+In 1880 Taylor was boarding with
+
+African American sisters Minerva Coggswell and Parthenia Sneed. Shortly after Minerva's death in 1894, Taylor purchased this house from her estate. By 1905, he owned a number of cattle and horses that carried his brands. That same year, Thomas Thexton sue Taylor for horse theft. The court ruled in Taylor's favor largely due to testimony from white citizens. The integration of Taylor and other African Americans in the community suggests better race relations in Virginia City than other parts of the country. Sarah Bickford, a prominent local African American businesswoman, cared for Taylor in his final years and served as the executor of his estate. Taylor died on September 16, 1926 and is buried in Hillside Cemetery next to Bickford,
+
+In 2009, with funding from the Ford Foundation, the National Trust for Historic Preservation awarded Montana Heritage Commission (MHC) a Partnership in Scholarship Grant to conduct research into the lives of Virginia City's African American residents. This research conducted by MHC staff, public history faculty and students from Washington State University and University of Wisconsin Eau-Claire added great depth to the knowledge of Virginia City's African American community.
+
+Erected by Montana Heritage Commission.

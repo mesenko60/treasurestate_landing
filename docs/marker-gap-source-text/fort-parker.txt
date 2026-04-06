@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193330
+Slug: fort-parker
+Title: Fort Parker
+Subtitle: Cultural Crossroads, Vanquished Dreams
+Town: Livingston
+County: Park
+Lat / Lng: 45.71035, -110.40324
+Topics: exploration, military, native-american
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+The area in front of you once served as south-central Montana's cultural crossroads. Especially between 1868 and 1875, this was a place where settlers and Indians traded goods and services, where the U.S. government sought (and failed) to convert the Crow Tribe to farming and other Anglo ways - and where many frontiersmen married Indians and adopted their ways instead. During roughly the same period, the bison herds of the Great Plains, core of the Crow Tribe's lifestyle and religion were destroyed.
+
+Built here in 1869, Fort Parker, the first Crow Agency, was a resting point for a veritable "Who's Who" of white explorers as well as Indian leaders. Virtually every major expedition into the Yellowstone Park area stopped here. These included the Langford-Washburn Expedition - widely credited for recommending the creation of the world's first National Park; and the Hayden Survey, sent in 1871 to gather visual and other detailed information that was used to persuade Congress to create the Park in 1872.
+
+The Fort burned down a year after it was built, and was replaced with a poorly constructed adobe fort that lasted only a few more years. In 1875, the government moved the Crow Agency to a site near present-day Absarokee, Montana.
+
+"...it seems almost impossible for the Government to protect the Indians in the rights guaranteed them by their treaties against the mountaineer and gold-hunter...and I most earnestly urge upon the Department the necessity of immediate action in this matter to protect these Indians..." - Agent F.D. Pease August 31, 1871
+
+Erected by Undaunted Stewardship.

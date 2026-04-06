@@ -1,0 +1,32 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123620
+Slug: mountains-on-the-move
+Title: Mountains on the Move
+Subtitle: The Bitterroot and Sapphire Mountains
+Town: Sula
+County: Ravalli
+Lat / Lng: 45.8362, -113.9797
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The spectacular Bitterroot Mountains northwest of Sula expose granite rocks of the Idaho batholith, a major geologic feature that consists of a series of igneous intrusions that pushed their way toward the surface between about 80 and 53 million years ago. The molten magma that formed these intrusions forced its way into older rocks and crystallized more than ten miles below the surface. As the magma rose upward, it raised up the overlying rocks, which sloughed off an enormous block that slid to the east, forming the Sapphire Range on the east side of the Bitterroot Valley. It took about seven million years for this block to slowly slide along a surface that forms the eastern slope of much of the Bitterroot Range. The granite rock exposed along US Highway 93 in the Sula area are part of this block that was once in the present Bitterroot Range. About 50 million years ago, magma again rose up through the crust of the earth resulting in the eruption of large volumes of volcanic rock in the southern Bitterroot Range southwest of Sula.
+
+Glaciers capped much of the Bitterroot Valley and carved dramatic U-shaped profiles into side drainages that flow eastward into the Bitterroot Valley. The last glaciation ended about 15,000 years ago. Multiple times during the glacial ages, a glacier dammed the Clark Fork River near the Idaho/Montana border forming the Glacial Lake Missoula. The highest lake stand reached an altitude of 4,200 feet above sea level, forming a lakeshore only a few miles downstream of Sula.
+
+Geo-Facts:
+
+• The Sapphire Range was named for the large sapphire deposits that were mined during the first part of the 20th century. More than 40 tons of sapphires were mined in the mountains and sold for use in watch bearings. The development of synthetic sapphires caused the market to collapse after World War II.
+
+• If you look carefully along the highway in this area, you can see igneous dikes formed where magma oozed up along fractures in the granite. These dikes are granite and are related to the volcanic activity in the southern part of the Bitterroot Valley.
+
+• Glacial Lake Missoula was first created around 15,000 years ago when an enormous glacier created an ice dam across the Clark Fork River near present day Sandpoint, Idaho. The lake was comparable in size to Lake Erie or Lake Ontario.
+
+Geo-Activity:
+
+• As you travel down the Bitterroot Valley, imagine the ice-age scene: a lake hundreds of feet deep lapping onto the base of the mountains on either side of the valley and icebergs breaking off from the glaciers flowing in from the Bitterroots
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,32 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141858
+Slug: michael-john-mackinnon
+Title: Michael John MacKinnon
+Subtitle: An American Hero
+Town: Craig
+County: Lewis and Clark
+Lat / Lng: 47.1308, -111.90146
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation; Bridges for the Fallen
+
+--- Inscription (as stored for the site) ---
+
+The Missouri River Bridge, just southwest of here, is dedicated to the memory of Captain Michael John MacKinnon, who gave his life in defense of his county. A native of Helena, MacKinnon graduated from West Point in 1997 and was commissioned a second lieutenant in the US Army. He also completed Ranger, Airborne, and Air Assault schools. The Army recognized MacKinnon's natural leadership abilities and he rapidly rose through the ranks to Captain and was slated for promotion to Major upon return from his deployment. At the time of 911, he was part of the Third Infantry Division stationed at Fort Stewart, Georgia. He served with distinction in Operation Iraqi Freedom and the invasion of Iraq, in March 2003. During his second tour of duty in Iraq, on October 27, 2005, an Improvised Explosive Device (IED) exploded next to Captain MacKinnon's Humvee while he led a convoy mission near Baghdad. At the time of his death, the captain commanded Company A of the 184th Infantry, a California National Guard unit.
+
+Captain MacKinnon was buried with full military honors at the post cemetery at West Point. He left behind a wife, Beth, and two children,
+
+Madison and Noah. Mackinnon strove to be the best soldier he could be, but most importantly he lived his life with integrity and courage. He was a loving husband and devoted father - a true American hero!
+
+May 26, 1975 - October 27, 2005
+
+Honoring Our Nation's Fallen Heroes
+
+Founded in 2012, Bridges for the Fallen is a national non-profit organization that celebrates the lives of America's fallen soldiers by dedicating bridges to fallen soldiers in his or her home state.
+
+"The bridge is a symbol of strength, honor and respect and it becomes part of the families/fallen warriors' legacy and history. The bridge will pass the torch on countless generations and show them who the fallen warrior was and their sacrifice to our nation. The bridge is a mechanism to healing and we are proud, honored and humbled to serve our nation's fallen heroes and their families."
+
+Rob Mador, Founder of Bridges for the Fallen
+
+Erected by Montana Department of Transportation; Bridges for the Fallen.

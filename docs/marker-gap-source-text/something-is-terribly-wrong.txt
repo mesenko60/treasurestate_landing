@@ -1,0 +1,43 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 271542
+Slug: something-is-terribly-wrong
+Title: Something is terribly wrong
+Town: Lakeview
+County: Gallatin
+Lat / Lng: 44.85608, -111.32528
+Topics: disasters
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Something is Terribly Wrong
+
+Fourteen-year-old Darwin Steffler was in bed in his family’s lakeside lodge about 5.5 miles east of here, when he felt the earthquake strike. After checking on his little brothers, he race through the darkened house to the front window. Through the dust and moonlight, he saw the lake dropping; water was gushing across the breakwater of the lodge’s marina. “Hebgen Dam must have broken, and the lake is draining,” he thought.
+
+One of the lodge’s brand-new boats had come loose and was drifting. Darwin ran down to the lake edge and waded out to grab it. But as he walked it back to shore, the water began to rise swiftly, and soon he was swimming for his life. When he reached the shore, he tried to make sense of the strange behavior of the lake.
+
+The Entire Lake Bottom Tilted
+
+The bizarre water-level change Darwin Steffler had witnessed was a tsunami-like wave, called a seiche (pronounced “saysh”), caused by the sudden tilting of the land under and around the lakebed.
+
+These waves of destruction wreaked havoc on lakeshore buildings and roads already damaged by the earthquake. Here at Hilgard Lodge, you can still see the results: along the shore there are the remnants of two cabins wrenched off their footings and soaked by the slow, relentless waves. A walk along the road will reveal a gaping scar in the hillside where the highway once ran.
+
+When the ground dropped along the Hebgen Lake Fault, water was displaced from the south shore to the north shore - an effect that made it feel like the lake had tilted. Land was lost along the north shore of Hebgen Lake, and land was gained along the south shore of Hebgen Lake.
+
+It sounded like a freight train rumbling down the tracks starting far away then building to a crescendo and thats when I could feel the ground start to shake.
+
+Darwin Steffler earthquake survivor
+
+Seiches
+
+Like water in a tilted pan, the lake sloshed slowly back and forth several times, alternately swallowing and exposing area along the shoreline.
+
+Lake Tilt
+
+After the earthquake, cabin owners found that their cabins were more than 500 yards from the lake shore due to the tilting of the land beneath the lake. Canals were dug through the uplifted land to provide access for boats.
+
+A Lake Transformed
+
+Even after the seiches had settled, the lake was still playing tricks. Here along the northwest arm, beaches, docks, and roads were flooded by the new, higher lake level. On the southern shore, docks and boats were left permanently high and dry, and many homes that had once been lakeside were now far from the water. The tilt also increased the lake’s storage capacity by 2.6 billion gallons-the equivalent of 6,640 Olympic-sized swimming pools.

@@ -1,0 +1,54 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86804
+Slug: indian-memorial
+Title: Indian Memorial
+Subtitle: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.57073, -107.42781
+Topics: native-american, military
+Year erected: 
+Erected by: National Park Service
+
+--- Inscription (as stored for the site) ---
+
+An Indian memorial to honor Native American participation in the Battle of the Little Bighorn, June 25-26, 1876, and change the name of Custer Battlefield National Monument to Little Bighorn National Monument, was authorized by Congress in 1991 and signed into law by former President George H. W. Bush on December 10, 1991.
+
+The winning design by John R. Collins and Allison J. Towers of Philadelphia, Pennsylvania, was chosen in a national design competition from over 500 entries. The circular earth and stone work is gently carved from the prairie. For many tribes, the circle is sacred and symbolic of the journey of life. The spirit gate to the Seventh Cavalry Monument symbolically welcomes the spirits of the Seventh Cavalry into the memorial’s circle. A weeping wall symbolizes the tears of the Indian People, and the suffering that resulted from their battle here on Greasy Grass, to retain their nomadic way of life. The interior walls commemorate the five tribes that fought here: Sioux, Cheyenne, Arapaho, Crow, and Arikara. The Spirit Warriors sculpture by Oglala Lakota artist Colleen Cutschall, represents the free spirit of warriors riding into battle.
+
+The Indian Memorial is a living memorial, honoring not only the past but present and future generations of Indian people. The memorial provides a universal message for all visitors to this hallowed place; “Peace through Unity.”
+
+“The time has begun to give equal honor to the Indian people who’ve been denied that for so long.”
+
+- Ben Nighthorse Campbell, U.S. Senate
+
+“This bill, long overdue, now establishes a bridge between the races. A bridge which crosses this century . . . A bridge long overdue to join the races, and properly recognize all the races who fought and died at the Battle of the Little Bighorn.”
+
+- Pat Williams, U.S. Senate
+
+“We have waited too long for a memorial symbolizing our bravery, our personal loss, our victory in battle, and our commitment to protecting the way of life which our people knew.”
+
+- A. Gay Kingman, Minniconjou Lakota,
+
+Testimony before Congress, 1991
+
+“The public interest will best be served by establishing a memorial . . . to honor and recognize the Indians who fought to preserve their land and culture.”
+
+Public Law 102-201 “If this memorial is to serve its purpose, it must not only be a tribute to the dead; it must contain a message for the living.”
+
+- Enos Poor Bear, Sr., Lakota Elder
+
+“We now have to try to forget what happened here 100 years ago; we have to unite together . . . Peace through unity.”
+
+- Austin Two Moons, Northern Cheyenne Elder, November 11, 1993
+
+“We want a place where the Native American descendents can feel welcome . . . and believe one’s people had done a courageous thing . . . ”
+
+Indian Memorial Advisory Committee
+
+“The Indian participants of the battle sacrificed much of their human spiritual energy so that their people would survive and prosper in the future. Today the Plains Indian Nations are alive and vibrant.”
+
+- Dennis Sun Rhodes, Northern Arapaho, Indian Memorial Advisory Committee
+
+Erected by National Park Service.

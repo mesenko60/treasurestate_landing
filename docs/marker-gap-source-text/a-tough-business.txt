@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141490
+Slug: a-tough-business
+Title: A Tough Business
+Town: Cameron
+County: Madison
+Lat / Lng: 44.90215, -111.59333
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Madison Valley was well known to mountain men and traders during the first half of the 19th century. Beaver loved the many creeks that emptied into the river and buffalo were common in the valley, making it popular for both Indians and trappers. Located just north of what would become Yellowstone Park, the valley was also a natural corridor into the fur-rich valleys of southwestern Montana. A pageant of colorful fur trade notables were frequent visitors to the Madison Valley, including Jedediah Smith, Bill Sublette, Joe Meek, Kit Carson, and Henry Fraeb. The fur trade was a cutthroat business where competition for a limited natural resource was tough and sometimes violent. Near here, in October 1832, Jim Bridger and Tom Fitzpatrick lead a trapping brigade commanded by rival Henry Vanderburgh into an ambush by the Blackfeet Indians. Vanderburgh and one of his men were killed, while several others were wounded. In 1837, smallpox decimated the Blackfeet, including bands who once lived in this valley. Four years later, changes in eastern fashions doomed the fur trade, ending a colorful and important era in American history.
+
+Raynold's Pass
+
+The low gap in the mountains on the skyline south of here is Raynold's Pass over the Continental Divide.
+
+Jim Bridger, famous trapper and scout, guided an expedition of scientists through the pass in June of 1860. The party was led by Captain William F. Raynolds of the Corps of Engineers, U.S. Army. They came through from the south and camped that night on the Madison River a few miles south of here. Captain Raynolds wrote "The pass is ... so level that it is difficult to located the exact point at which the waters divide. I named it Low Pass and deem it to be one of the most remarkable and important features of the topography of the Rocky Mountains."
+
+Jim Bridger didn't savvy road maps or air route beacons but he sure knew his way around.
+
+Erected by Montana Department of Transportation.

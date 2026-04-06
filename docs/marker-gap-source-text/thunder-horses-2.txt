@@ -1,0 +1,37 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 282647
+Slug: thunder-horses-2
+Title: Thunder Horses
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.92548, -111.59957
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+From 38 to 30 million years ago, great herds of rhinoceros-like herbivores, called Megacerops, roamed this part of Montana. Megacerops, also known as Brontotheres, were massive animals. Classified as Perissodactyla, Megacerops had three toes on its front feet and four toes on its back feet. Adults stood 8 feet tall at the shoulder and were around 16 feet in length; they weighed as much as two tons. They were about as big as African Forest Elephants are today. Megacerops had a branched horn on its snout. The snout may have functioned for mating purposes and as defense against the predators of the time. The climate at that time was warm and damp with lakes surrounded by reeds and other riparian vegetation.
+
+Megacerops went extinct about 30 million years ago. Scientists have speculated that climate change and the resulting change in vegetation may have caused their extinction. The animal's primitive teeth may not have been able to browse the leaves and fruit it lived on, contributing to its disappearance.
+
+The Lakota Indians found Megacerops fossils uncovered by rainstorms on the Great Plains. Many believed the animal caused thunderstorms when running over the clouds and called them Thunder Horses.
+
+Shedd's Bridges
+
+Many settlers who came to Montana in the 1860s quickly saw opportunity and were quick to recognize the needs of travelers in the territory. As immigrants from Scotland, James Shedd came to Montana Territory about 1864 and built bridges across the Madison and Jefferson rivers a mile or so north of Three Forks. He and his wife, Elizabeth, charged travelers tolls paid in gold dust, to cross the structures. Shedd built a hotel, called Bridge House, to serve sojourners on the roads between the Gallatin Valley and Virginia City and Helena. By 1871, the Shedds operated seven toll bridges in the area. A small settlement called Bridgeville, grew up around their hotel. Shedd sold the operation in 1880 and the hotel burned down in 1881.
+
+Geo-facts:
+
+• Megacerops means "giant horned face" in Greek
+
+• Because of its great size, Megacerops had few predators, except for carnivorous mammals called creodonts and nimravids.
+
+• The order Perissodactyla also included horses, rhinos, and tapirs.
+
+Geo-activity:
+
+• Imagine the fields on both sides of the highway filled with bellowing herds of Megacerops rather than cattle or horses. What do you think the area looks like then?
+
+Erected by Montana Department of Transportation.

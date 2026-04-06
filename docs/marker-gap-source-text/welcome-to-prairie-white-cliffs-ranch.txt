@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 246445
+Slug: welcome-to-prairie-white-cliffs-ranch
+Title: Welcome to Prairie White Cliffs Ranch
+Subtitle: Enduring Scenes of Visionary Enchantment
+Town: Virgelle
+County: Fergus
+Lat / Lng: 47.89725, -110.06336
+Topics: 
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+For the last four miles, you have been floating past a family farm and ranch whose riverfront lands are world-renowned for still looking more as they did when Lewis and Clark journeyed here than virtually any others in America. Much the same can be said for the vast stretches of prairie above the Missouri here - along with the famed White Cliffs, they still feature the same naturally sustained productivity that has defined their essence for generations.
+
+The White Cliffs have endured as people have come and gone over the last 200 years. Most settlers merely passed through on steamboats bound for more hospitable areas of present-day Montana. Only a few stayed in this uncommonly dry and challenging county - and very few of them have stayed for long. The stone house whose remains still stand nearby was built in the late 1800s of hand-cut, native stone by Jack Munro. A stone mason by trade, Munro made his living by periodically rounding up wild horses and selling them in Miles City, Montana. Soon after, in 1900, a New Yorker named Gage Clark came to settle here with is wife and child. Gage built a five-room, two-story frame house whose remains still occupy the river bottom near where you stand.
+
+It was 1981 when the present-day owner's family bought the farm and ranch. On the predominantly flat land above the river, the family has done some drylands farming-growing wheat and barley-but most of the lands have been used for grazing by sheep and cattle. With the help of a program called Undaunted Stewardship, the landowner preserves riverfront historic sites and manages the property so that livestock grazing sustains natural vegetation and enhances wildlife habitat.
+
+"The hills and river Clifts which we passed today exhibit a most romantic appearance...we see the remains or ruins of eligant buildings;...As we passed on it seemed as if those seens of visionary inchantment would never have and end;... so perfect indeed are those walls that I should have thought that nature had attempted here to rival the human art of masonry..."(sic) Meriwether Lewis, May 31, 1805
+
+Erected by Undaunted Stewardship.

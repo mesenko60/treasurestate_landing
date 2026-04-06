@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165329
+Slug: jedediah-smith-2
+Title: Jedediah Smith
+Town: Hysham
+County: Treasure
+Lat / Lng: 46.21876, -107.25191
+Topics: exploration
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+One of the most famous trappers of the Rocky Mountain fur trade era was Jedediah Smith, who came west with St. Louis trader William Ashley in 1822. He spent his first winter in Montana at the mouth of the Musselshell River about 100 miles northwest of here. Over the next decade, Smith trapped and explored the Great Plains and Rockies. He re-discovered the South Pass in Wyoming in 1824 and established overland routes to California and Oregon. The trails Smith and his comrades blazed in the 1820s served thousands of emigrants during the great overland migrations of the 1840s and 1850s.
+
+Smith was no stranger to Montana. After wintering on the Musselshell, he explored the upper Missouri River and became well-acquainted with the Gallatin, Jefferson, and Madison rivers. Smith also worked his way through the Bitterroot, Big Hole, Clark Fork, and upper Flathead valleys. By 1828, he was part-owner of the Rocky Mountain Fur Company, which employed many legendary fur traders and trappers like Jim Bridger, Bill Sublette, and Tom Fitzpatrick. Trade opportunities with the Crow Indians eventually drew Smith to this region. In July 1825,
+
+Smith and 20 other trappers floated the Bighorn and Yellowstone rivers to Fort Union at the confluence of the Missouri. The expedition reached the fort in mid-August after sustaining an attack to the east of here by the Blackfeet Indians.
+
+Comanche Indians killed Smith in what is now northern New Mexico in May 1831.
+
+Round Iron
+
+American Fur Company bourgeois Robert Meldrum spent most of his long life working for the company and living among the Crow Indians. He entered the fur trade and went west as a clerk in 1827. The American Fur Company hired him as a liaison between it and the Crow Indians in 1833. He eventually left the company in 1835 and lived with the Crow people, taking several wives and rising to a position of influence in the tribe. Known as Round Iron (papásh Uuwatash), his ability to speak their language and his connections to the tribe made Meldrum a valuable asset to the company when he returned to the fur trade in 1840. Over the years, he managed several trading posts for the company, including both Fort Sarpys. An affable man, he had a reputation for civility that was countered by lax trading practices, irresponsibility, and a celebrated fondness for Crow women. Meldrum died at Fort Union in 1865.
+
+Custer Circle Project
+
+Erected by
+
+Montana Department of Transportation.

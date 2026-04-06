@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 228458
+Slug: the-huntley-irrigation-project-harnessing-the-water-of-the-y
+Title: The Huntley Irrigation Project: Harnessing the Water of the Yellowstone River
+Town: Worden
+County: Yellowstone
+Lat / Lng: 45.99078, -108.00158
+Topics: agriculture
+Year erected: 
+Erected by: Bureau of Land Management
+
+--- Inscription (as stored for the site) ---
+
+When Captain William Clark came down the Yellowstone in 1806, he described a vast landscape filled with wildlife and a wealth of potential. To feed the nation's growing need for arable land, the Yellowstone River Valley shifted from a vast migration corridor, to reservation and tribal allotments, then finally to farmsteads.
+
+Farming the semi-arid Yellowstone Valley required irrigation. In 1907, the first division of the Huntley Irrigation Project opened its gates. The Huntley Irrigation Project was the second "reclamation project" funded through the Reclamation Act of 1902 to be completed. In all, 582 farm units of 40 acres each were opened for entry. There were 5,491 registrations made to apply for those first units, showing the great demand for the new farmland.
+
+The irrigation system made it possible to farm the Yellowstone Valley to an extent previously unheard of. Success of the Project can be attributed to the determination of the farmers who worked the land, and the community spirit that bound them together. Take a closer look at the equipment on display. Can you imagine what it was like to use these tools to farm?
+
+The Huntley Irrigation Project made it possible for cash crops like sugar beets to be farmed in the Yellowstone River Valley. After the beets were harvested from the field, they were hauled to a beet dump and transported by rail to be processed in sugar factories.
+
+1916 Mogul 10-20 Tractor breaking soil with a gang plow. Gang plows had two or more plowshares to till the soil.
+
+By horsepower and elbow grease, assisted by "modern" technology, the Yellowstone River Valley became a productive agricultural hub for southern and eastern Montana. The photograph above shows a horse-drawn combine harvesting wheat.
+
+Thank you to our neighbors at the Huntley Project Museum for the generous loan of the farm equipment to help tell our story. Please visit them to learn more about the unique history of the Huntley Irrigation Project, and enjoy more historic farm equipment, buildings, and tools. The Museum is located at 770 Railroad Highway, Huntley, Montana. Turn right out of the Pompeys Pillar driveway onto Highway 312. Huntley Project Museum is about 12 miles west on the left (south) side of the highway. For more information, call 406-348-2533.
+
+Erected by Bureau of Land Management.

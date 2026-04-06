@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 126999
+Slug: snowed-in
+Title: Snowed In!
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.65828, -111.10113
+Topics: 
+Year erected: 
+Erected by: Yellowstone History Center
+
+--- Inscription (as stored for the site) ---
+
+Prior to 1936, the roads leading from West Yellowstone were not plowed during the winter months, isolating the town from the rest of the world.
+
+Even the Train Stopped Running
+
+The Union Pacific Railroad provided passenger service to West Yellowstone from June into September. The deep snow made it difficult and at times impossible to maintain even freight service during the winter. Once snowed in, the tracks weren’t cleared until about the end of March.
+
+The Spring Campaign, as the opening of the route was called, was greeted with great fanfare in the town. School was let out for the day, and a grand party was held to celebrate the reconnection to the outside world.
+
+Staying Connected
+
+During the winter, postmasters retrieved mail every week to ten days from the Sherwood Store near Henry's Lake in Idaho. They made the two day round trip over Targhee Pass using skis or by dog sled.
+
+In 1933, the first winter air service provided a new way for West Yellowstone's residents to send and receive mail. The plane had skis attached to the landing gear, making it possible to land in a snowy clearing. The pilot also delivered milk, a rare wintertime treat.
+
+FWD Snowplow
+
+The snowplow in front of you was built by the Four Wheel Drive Company of Clintonville, Wisconsin, the first manufacturers of four wheel drive equipment. Produced in the late 1930s, this plow was used by the Montana Highway Department to clear roads in the Gardiner area north of Yellowstone. It features a twin-headed engine produced by the Waukesha Motor Company in Waukesha, Wisconsin.
+
+Closed for the Winter
+
+Because then as now tourism was the main industry of the town, businesses closed for the winter and many residents left West Yellowstone for the season. Those who stayed spent much of their time keeping paths from their homes shoveled — or trying to get around in their vehicles. Skiing and dog sledding provided means of enjoying the snow and getting out and about.
+
+By 1936, the road leading from West Yellowstone to Bozeman was paved, and winter plowing operations began. Plows similar to the FWD in front of you were used to clear the highway, making it possible for the town’s residents to travel during the long winter months.
+
+Erected by Yellowstone History Center.

@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 185308
+Slug: pleasant-alley-and-the-copper-block
+Title: Pleasant Alley and the Copper Block
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.01206, -112.53431
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+"First came the miners to work the mine, then came the ladies who lived on the line." sang early-day prospectors in the bawdy house of wide-open mining camps like Butte. By the 1890's, prostitution was big business. Glamorous Mercury Street parlor houses, moderately priced brothels and hundreds of one-room "cribs" lined both sides of this block. Charlie Chaplin observed that Butte had "the prettiest women of any red-light district in the West." but another month that there "were some tough lookin' blisters too." Danger lurked in the alleys and dark doorways which harbored pickpockets and thieves. The city partially gave in to reformers in 1903, forcing denizens of the twilight zone to leave their Galena and Mercury Street cribs for less obvious places like Pleasure Alley. Old Fashioned Terrace and Model Terrace. Landlords collected two dollars nightly for the tiny alley cribs which reeked of disinfectant mingled with cheap perfume. Activities of "twilight legality": were less visible than before, but the women still solicited with lewd gestures and honeyed words, tapping on their windows with thimbles, rings and chopsticks. At its peak, as many as a thousand women of all ages, races and backgrounds vied to make a living in Butte's terrace alleys. On Saturday nights and pay days, thousands of men strolled along its wooden sidewalks. On this corner, the Copper Block served as a kind of headquarters and home for many of the women; its back opened conveniently onto the multi-storied cribs of Copper Terrace and Pleasant Alley. At the district's peak in 1910, onlookers cheered when reformer Carrie Nation elbowed her way through Pleasant Alley. She emerged with a wrenched elbow, bonnet askew and no converts. But Prohibition and WWI did send red light activities underground in 1917. The area reopened in the 1930s, dubbed "Venus Alley," with a green board fence encircling its perimeter. A sign on the stile-like entrance warned men under 21 to keep out, a grim reminder that boys who worked in the mines became men before they came of age. Children on their way to school wondered about the activities inside. The cribs closed in 1943, but several bordellos operated until the last one, there Dumas, closed in 1982. The Copper Block was demolished in the early 1990s. Its long-operating bar where men lined up for the back room, however, remains etched in recent memories, its title clock has been cast and memorialized in concrete. This unique park commemorates a century of business transacted here. Residents still recall some of the women who were characters and community benefactors. The park is dedicated to these and the thousands of other women who lived and sometimes died within the shadows of the district, contributing so significantly to Butte's legendary history.
+
+Erected by Montana Historical Society.

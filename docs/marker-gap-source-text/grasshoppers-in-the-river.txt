@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161580
+Slug: grasshoppers-in-the-river
+Title: Grasshoppers in the River?
+Subtitle: Perils of Steamboating on the Missouri
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.80985, -110.67253
+Topics: nature
+Year erected: 
+Erected by: Missouri Breaks Interpretive Center
+
+--- Inscription (as stored for the site) ---
+
+In the 25 years following the first gold discoveries in western Montana, before railroads arrived in Fort Benton 1887, steamboats made hundreds of trips bringing fortune-seekers and their supplies from St. Louis to Fort Benton. Some of the boats eventually sank or were destroyed in the turbulent, hazard-filled waters. One world traveler of the era said the trip against the current of the Missouri was more frightening than sailing the high seas during a wild storm.
+
+A frequent-and exhausting-challenge the boatmen faced was running aground on the sandbars that are surprisingly common in this river. At those times, long wooden poles (spars) were driven into the river-bottom to lift the boat. While noisy engine revved backwards, boatmen used ropes and pulleys to pry the wooden spars and wrestle the boat free. Called "grasshoppers" because their use made the boats resemble giant insects, the spars often had to be used repeatedly, each time lifting and moving the boat mere feet or yards further on its way, literally walking the boat down the river.
+
+You can look from here to the patio of the Interpretive Center to get a picture of the scene. The patio is shaped to mirror that of a steamboat deck, with a wooden "grasshopper" coming off the side. A capstan (rotating machine) on the deck, driven by a noisy engine that was in constant use at such times, moved ropes that raised the bow of the boat to free it from the sandbar.
+
+"...we found the boat hard-fast on the Shonkin Bar. The boat backed and shoved forward in efforts to free itself but only came more firmly wedged on the bar. The spars were lowered into the river bed, the engine started and the wheel reversed in an attempt to pry the boat off the bar. First one spar broke, then the second one... The crew was ordered overboard with picks, shovels and crow bars. After thirty hours of ceaseless toil, the hard bar under the boat parted into clods of sand and gravel and we floated clear." May Flanagan, 1887 from "Packets to Paradise" Pictorial Histories Publishing Co., Missoula, by John G. Lepley.
+
+Erected by Missouri Breaks Interpretive Center.

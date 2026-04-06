@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 206536
+Slug: hs-gilbert-brewery-park
+Title: H.S. Gilbert Brewery Park
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.29448, -111.94307
+Topics: 
+Year erected: 
+Erected by: Montana History Foundation
+
+--- Inscription (as stored for the site) ---
+
+Virginia City supported three brewing operations in the 1860's. Eventually only the H.S. Gilbert Brewery would remain. There is no finer intact historic example in the West, possibly even the country, that exemplifies the 19th century brewing culture brought to this country by German immigrants. It remains a time capsule of the historic brewing process, producing the bottom fermented lager immigrants hadn't enjoyed since leaving their native Europe. Sawdust-insulated walls for keeping ice cold, oak aging barrels, a boiler, kiln, malting tower and artifacts off insight and understanding into traditional brewing method, alongside creative incorporation of natural water features and frontier ingenuity.
+
+The Gilbert Brewery was founded in 1863 by Henry S. Gilbert, William Smith, and Christen Richter as the first Montana brewery in 1864. With Gilbert's entrepreneurial spirit, and an experienced brewer and cooper in Richter, the operation expanded. The complex included a bottling building, family residence, stables, and Beer Garden filled with century-old willows. Although altered as the business expanded, but there has been little change since the 1880s.
+
+In 1872, Gilbert purchased both Richter's interest in the business and his house, built in 1864. Gilbert established a grain and stock farm on the Madison Valley to supply most of the barley. In 1875, he began bottling his own Gilbert Lager on site. The operation incorporated the latest technologies, while adhering to traditional standards of purity carried over from Europe.
+
+This lager style beer became popular after the Civil War. Lager beers depend on yeast which ferment slowly and at a colder temperature for longer periods of time, resulting in a purer beer than traditional ale.
+
+To start this brewing process, raw materials are deposited into the Gilbert Brewery's second story by wagon from the hillside behind the brewery. Using gravity, brewers moved wheat, barley and hops via chutes downhill. As a source of cold water, Daylight Creek played an important role in the brewery's beer production. Gilbert's brewers lagered beer in brewing casks on the brewery stone floor. Water diverted from Daylight Creek circulated beneath the beer casks, cooling the beer while the lager yeast worked.
+
+Erected by Montana History Foundation.

@@ -1,0 +1,32 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220107
+Slug: coldest-temperature-in-contiguous-united-states
+Title: Coldest Temperature in Contiguous United States
+Subtitle: -70ºF on January 20, 1954
+Town: Lincoln
+County: Lewis and Clark
+Lat / Lng: 47.07277, -112.3712
+Topics: 
+Year erected: 
+Erected by: National Weather Service, US Department of Agriculture, US Forest Service, NOAA
+
+--- Inscription (as stored for the site) ---
+
+The weather has been unrelenting for days...
+
+but the rugged Montana miners persevered and continued with their daily work. The 4 K's Mine near Rogers Pass, Montana was an equal effort between four men: brothers Albert and Harry Hleinschmidt, their nephew Harrison Mercer (H.M.) Kleinschmidt (related to the prominent Helena family, with roots reaching back to the very earliest Montana pioneers), and Leroy Keil of Elliston, Montana -- also known as "the best bulldozer man" in the area. By 1954, small mining claims were in decline throughout the west. That didn't deter these lifelong treasure hunters, however, from seeking the riches of gold, copper and various other ore elements that were actively mined throughout the Heddleston District since 1860s.
+
+Brutally cold winters and heavy snow are common place in Montana - especially throughout the rugged mountains near Rogers Pass. But this particular winter (described as "normal" by all accounts through the beginning of January) quickly turned extreme and ultimately record-breaking. Over the course of one week, from January 13th to the 20th, the total snow depth rose to be greater than five feet (66 inches). Accumulation of at least six inches occurred each day, including a stunning 28.5 inches on the 14th. Bitter cold temperatures and at times, extreme winds accompanied the prolonged winter storm and the men noted the "thermometer jumping up and down often.
+
+Finally, at about 2 a.m., Kleinschmidt checked his personal "high grade" thermometer positioned several inches fro the building outside an insulated window.It read -68ºF. Umfazed by the startling number and uniquely curious, Kleinschmidt left the cabin. He proceeded to navigate the six-foot deep snow tunnels that led towards the instrument shelter 40 feet south of the cabin, which housed the official thermometers. However, because it was so cold, the official thermometer had "broken," as it exceeds its capacity for measurement (-65ºF). The indicator marker, which pointed to the lowest temperature, had receded into the liquid reservoir bulb. While it certainly may have been colder that night, Kleinschmidt never observe a reading lower than the -68ºF value seen on his personal thermometer.
+
+Remarkably, this observation went unnoticed for several weeks since the men living in this small mountain cabin lived simply, without electricity or a telephone. Media reports noted temperatures as cold as -59ºF in eastern Montana at the same tome, but this record breaking temperatures 2. Roger Pass from the view point.
+
+remained unknown until February 3rd when State Climatologist Richard Dightman of the U.S. Weather Bureau in Helena, MT reviewed the months forms submitted via the U.S. Mail Knowing that this reading would break the all-time coldest temperature for the United States of America (previously -66ºF in West Yellowstone on February 9th, 1933). Dightman contacted the observers with a not requesting that the official thermometer be mailed in for testing Kleinschmidt not only send back the official thermometer, but he also include his personal one. Both were subsequently sent to the Instrument Division in Washington D.C. for testing.
+
+Ultimately, the lab found these thermometers preformed just as Kleinschmidt had noted, remarking that the indicator had indeed receded into the reservoir bulb of the official thermometer at -69.7ºF. On March 16th, the measurement for January 20th, 1954 was officially adjusted to -70F and accepted as the new official all-time record low for the United States of America - a record that would stand until January 23, 1971, when -79.8ºF was observation at Prospect Creek, Alaska. However, the reading from 4 K's Mine still stands today as both the coldest-ever temperature in Montana as well as in the contiguous United States - a reading that astounds as much as it reveals about the limitless of nature.
+
+Erected by
+
+National Weather Service, US Department of Agriculture, US Forest Service, NOAA.

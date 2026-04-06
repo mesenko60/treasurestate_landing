@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 192879
+Slug: lewis-and-clark-trail-2
+Title: Lewis and Clark Trail
+Town: Toston
+County: Broadwater
+Lat / Lng: 46.12171, -111.40921
+Topics: exploration
+Year erected: 
+Erected by: Lewis and Clark National Historic Trail, Bureau of Land Management, State of Montana
+
+--- Inscription (as stored for the site) ---
+
+The Lewis and Clark Expedition passed this way on their westward trek across the continent. Expedition members camped on the west side of the Missouri River on July 25, 1805, a short distance upstream from present day Toston Dam.
+
+It was near this location on July 26, that Captain Meriwether Lewis discovered and described Stipa comata, commonly known as Needle and Thread grass.
+
+Captain Clark also identified the large spring on a map which still can be seen today .5 mile below the dam.
+
+The rocky cliffs on either side of the river, downstream from this location, were significant landmarks previously described to the expedition leaders by Indian informants at Fort Mandan-in present day North Dakota. The cliffs were described as the "Little Gates of the Mountains," where in the informants terms, the second chain of Rocky Mountains approached the river. The more notable "Gate of the Rocky Mountains" are located approximately 60 miles downstream.
+
+Erected by Lewis and Clark National Historic Trail, Bureau of Land Management, State of Montana.

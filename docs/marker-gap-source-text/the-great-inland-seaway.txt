@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 29123
+Slug: the-great-inland-seaway
+Title: The Great Inland Seaway
+Town: Park City
+County: Stillwater
+Lat / Lng: 45.60041, -109.06596
+Topics: nature, transportation, science
+Year erected: 
+Erected by: Montana Department of Transportation (MDT)
+
+--- Inscription (as stored for the site) ---
+
+For over sixty million years during the Cretaceous Period, much of eastern Montana was underwater, covered by an vast inland sea. As the Rocky Mountains formed to the west, it created a broad, flat coastal plain that was home to many different species of dinosaurs. Indeed, the long life of the sea saw the rise and extinction of many dinosaur species until it finally receded from Montana about 65 million years ago at the end of the Cretaceous Period. The sediments deposited underwater or along the sea's coast formed the spectacular sandstone rimrocks in the Yellowstone River valley between Columbus and Billings.
+
+The sea was shallow and warm, probably no more than a few hundred feet deep. But it was home to a wide variety of aquatic life. Oysters lived in dense banks along the shore, while tentacled ammonites fed on monster clams that lived in the shallow water offshore; sharks also cruised the shallows preying on whatever animals appeared tasty to them. For several million years, two predators, synonymous with prehistoric sea creatures, were at the top of the food chain in the sea: the long-necked Plesiosaurs and the snakelike
+
+Mosasaurs. Neither animals were dinosaurs, but were air-breathing reptiles who had adapted to living in the oceans. Both were carnivores that ate just about anything they could seize and swallow. Fossils of Plesiosaurs and Mosasaurs have been found throughout eastern Montana.
+
+For centuries, the sandstone rimrocks along the Yellowstone River guided travelers between the mountains and the buffalo country to the east. In 1912, regional Good Roads enthusiasts and county officials created one of the first interstate highways in the United States, the Yellowstone Trail, an interconnected network of county roads blazed by distinctive chrome yellow signs with black arrows. The 4,000-mile highway connected Plymouth Rock, Massachusetts and Seattle, Washington with a branch to Yellowstone National Park. Later re-designated U.S. Highway 10, Interstate 90 bypassed it in 1971.
+
+Erected by Montana Department of Transportation (MDT).

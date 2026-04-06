@@ -1,0 +1,38 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 256263
+Slug: camp-fortunate
+Title: Camp Fortunate
+Subtitle: To The Headwaters
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 44.99454, -112.86841
+Topics: exploration
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The End of Navigation
+
+The Corps of Discovery's travel on the Missouri River came to an end here in mid-August of 1805. Lewis and Clark followed Thomas Jefferson's order to ascend the Missouri drainage as far as possible by boat and ran out of navigable water in the upper reaches of a tributary they called "Jefferson's River" (Beaverhead).
+
+The Captains had counted on securing horses from Indians living in this region in order to make a portage over the mountains to the Columbia River drainage, yet the Corps had not seen any Indians since leaving the Mandan village four months earlier. Time needed for crossing the mountains before winter set in was slipping away. Lewis and three men moved on ahead of the canoes and crossed over the Continental Divide where they located a Shoshoni Indian band who happened to be Sacajawea's people. Lewis then returned to the "forks of Jefferson's river" where he waited for Clark and the canoe party. The Captains called this place "Fortunate Camp."
+
+"Saturday 17th. A fine morning.
+
+We proceeded on about 2 miles and discovered a number of the natives, of the Snake nation, coming along the bank on the South side. Captain Lewis had been as far as the waters of the Columbia river and met them there. We continued on about two miles further to a place where the river forks, and there halted and encamped after much fatigue. The water is so shallow that we had to drag the canoes, one at a time , almost all the way...
+
+Here we unloaded the canoes, and had a talk with the Indians; and agreed with them that they should lend us some of their horses to carry our baggage to the Columbia river." - Sergeant Patrick Gass
+
+" at twelve Oclock we set out and passed the river below the forks...most of the horses were heavily laden, and it appears to me that it will require at least 25 horses to convey our baggage along such roads as I expect we shall be obliged to pass in the mountains. I had now the inexpressible satisfaction of find myself once more under way with all my baggage and party." August 23, 1805 - Captain Meriwether Lewis.
+
+The Start of the Portage
+
+The failure to find an easy portage over the mountains meant leaving their canoes behind. While William Clark set out ahead to determine if the river (Salmon) to the west was suitable for travel by water, Meriwether Lewis stayed at the camp and prepared the Expedition for the portage (Lemhi Pass). The men fashioned pack saddles and harnesses using rawhide thongs and the blades from the oars and planks from storage boxes. Equipment and supplies were sorted and packaged. Some supplies and specimens were cached 3/4 of a mile downstream from camp. Lewis wrote in his journal on August 20th how they secured the seven canoes, to await their return trip.
+
+"I also laid up the canoes this morning in a pond near the forks; sunk them in the water and weighted them down with stone, after taking our (sic) the plugs of the gage holes in their bottoms; hoping by this means to guard against both the effects of high water, and that of the fire which is frequently kindled in these plains by the natives."
+
+The gauge holes in the bottom of the canoes were drilled by the men during construction to "gauge" the depth or thickness of the wood then plugged when completed.
+
+William Clark recovered the canoes and supplies on the 8th of July, 1806, during the return trip from the Pacific.

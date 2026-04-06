@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 127286
+Slug: road-agent-trail
+Title: Road Agent Trail
+Town: Twin Bridges
+County: Madison
+Lat / Lng: 45.5451, -112.33482
+Topics: industry, transportation
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Gold was the key to the success or failure of many of Montana's mining camps in the 19th century. Roads were almost as important as gold because they made possible the movement of supplies, people, and precious metals between the remote territory and the States. In Montana, many old roads are as fabled as the gold camps they served, including the notorious Road Agent Trail. The trail, like many other roads in Montana, grew out of paths established generations ago by the Indians that were later adapted and used by miners and freighters. It was not engineered in the sense of modern roads, but developed over time to best serve the traffic that used it. Private capitalists established stage stations and ranches along the route to provide food and resting places for passengers and animals — and were hangouts for desperadoes.
+
+Established in 1863, the Road Agent Trail connected Bannack and Virginia City and was an extension of the Montana Road that provided a link between the mining camps and the settlements in Utah. The road wound its way through a region “destitute of vegetation” with “frequent streams, canyons, mountain passes, rocky ledges, willow thickets, and deep embosomed valleys.” The lush grasses of the Beaverhead and Ruby river valleys provided food for the oxen, horses, and mules that pulled the wagons. The 70-mile trip between Bannack and Virginia City could “ordinarily [be] completed between the rising and setting of the sun.”
+
+The trail is indelibly associated with Sheriff Henry Plummer and his infamous outlaw gang. For eight months beginning in the Spring of 1863, the gang systematically terrorized travelers on the trail through intimidation, robbery, and, occasionally, murder. Vigilante chronicler Nathaniel Langford later claimed the area through which the trail passed was “admirably adapted to their purposes” with “ample means of concealment and advantages for attack upon passing trains with very few chances for defense or escape.” Montana legend states that spies placed at the ranches covertly placed marks on horses, wagons and stagecoaches where gold was ripe for the picking. Through that system of “horseback telegraphy” the road agents routinely plundered passengers of their hard-earned gold and other valuables. In December 1863 and January 1864 the reign of terror ended violently as vigilantes from Bannack and Alder Gulch apprehended and hanged over two dozen road agents, including the gang's leader, Henry Plummer.
+
+Today, Montana Highways 41 and 287 closely parallel the old Road Agent Trail. Indeed, when Madison County looked for ways to promote tourism in the area in the 1920s, it designated Montana 287 the Vigilante Trail and blazed it with the old vigilante sign 3-7-77 as a tribute to the early pioneers attempt to bring order to Montana.
+
+Erected by Montana Department of Transportation.

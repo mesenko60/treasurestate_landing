@@ -1,0 +1,28 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142830
+Slug: bear-paw-battlefield
+Title: Bear Paw Battlefield
+Subtitle: C'Aynnim 'Alikinwaaspa
+Town: Chinook
+County: Blaine
+Lat / Lng: 48.37794, -109.21207
+Topics: native-american
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+C'Aynnim 'Alikinwaaspa is the Nez Perce name for this site. It means "Place of the Manure Fire" because the Nez Perce used buffalo chips as fuel here.
+
+On September 29, 1877, about 700 Nez Perce men, women and children camped in the basin before you. Exhausted from four months of flight, they hoped to rest and hunt buffalo. This was an ideal location, providing food, water, and shelter from the wind. Just two days from the Canadian border and freedom, their long journey was about to come to a tragic end.
+
+Early on the morning of September 30, Colonel Miles' scouts discovered the camp, As Nez Perce warriors rushed to the defense, 400 soldiers and scouts attacked. The 7th Cavalry charged the village, while the 2nd Cavalry captured the Nez Perce horses. The 5th Infantry was held in reserve. The Nez Perce repelled the attack.
+
+Another attempt to overrun the camp was made in the early afternoon, The battle became a siege. During the six-day siege about 200 Nez Perce, which included Chief White Bird, managed to reach Canada where they joined Sitting Bull's Lakota near Fort Walsh. On the afternoon of October 5, Chief Joseph surrendered his rifle to end the suffering of women and children.
+
+Outside the camp I had seen men killed. Soldiers ten, Indians ten. That was not so bad. But now, when I saw our remaining warriors gone, my heart grew choked and heavy... Children crying with cold, no fire. There could be no light. Everywhere the crying, the death wail. -- Yellow Wolf. Nez Perce
+
+I remained to help care for the wounded and bury the dead. There were fourteen men killed and thirty wounded besides a great many horses were shot and crippled...One cannot realize the feeling engendered by taking part in such a carnage as a battle produces until they have had the actual experience in warfare. It was a horrible and gruesome site. -- Alexander Cruikshank, Army Scout
+
+Erected by National Park Service, U.S. Department of the Interior.

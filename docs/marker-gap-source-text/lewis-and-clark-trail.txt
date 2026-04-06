@@ -1,0 +1,15 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142016
+Slug: lewis-and-clark-trail
+Title: Lewis and Clark Trail
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81487, -110.70949
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The river below was the first trail west. On their way to the Pacific, Lewis and Clark used the Missouri as their route to the Rocky Mountains. Maria's River enters the Missouri fifteen miles down stream. In June 1805 the Captains spent ten days exploring both forks, trying to decide which way led to the mountains. Although their men wanted to continue up the north fork, Lewis and Clark chose the south fork. Their decision prevented weeks of retracing the trail and probably saved the expedition. The Corps of Discovery was able to cross the Rockies before winter prevented its passage.

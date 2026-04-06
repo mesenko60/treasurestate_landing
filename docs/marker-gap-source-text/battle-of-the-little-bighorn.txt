@@ -1,0 +1,18 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 168088
+Slug: battle-of-the-little-bighorn
+Title: Battle of the Little Bighorn
+Subtitle: "Custer's Last Stand"
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.78426, -108.49786
+Topics: military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+This famous battle pitted federal troops of the U.S. Army's 7th Cavalry, led by Lt. Colonel George Armstrong Custer, against Lakota (Sioux), Northern Cheyenne, and Arapaho warriors. Custer and his command of 259 men were soundly defeated. "Custer's Last Stand" became one of the country's most enduring legends.
+
+The "Custer Battlefield," first preserved as a U.S. National Cemetery in 1879, was renamed Little Bighorn Battlefield National Monument in 1991. White marble and red speckled granite markers dot the hillsides and ravines where soldiers and warriors fell. Open year-round, the battleground is sixty miles southeast of Billings.

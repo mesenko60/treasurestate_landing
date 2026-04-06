@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220443
+Slug: in-the-event-of-an-attack
+Title: In the Event of an Attack
+Subtitle: The Montana Missile Field
+Town: Dutton
+County: Teton
+Lat / Lng: 47.92474, -111.7351
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Tensions between the United States and the Soviet Union ran high during the cold war. Both sides relied heavily on their nuclear weapons arsenals as deterrents to actual combat between the two superpowers. When the Soviets launched the first man-made earth-orbiting satellite, Sputnik, in October 1957, it ushered in a new and deadlier phase to the cold war, the use of Intercontinental Ballistic Missiles (ICBMs) to carry nuclear warheads.
+
+This area is part of the Montana missile field, a 23,500 square mile area that encompasses nine Montana counties. At its height between 1967 and 2008, it contained 200 Minuteman missiles controlled by the 341st Missile Wing based at Malmstrom Air Force Base in Great Falls. In December 1959, the United States Air Force (USAF) selected Malmstrom Air Force Base as the site of the country's first Minuteman missile field. It chose the state because of its high altitude, relatively flat terrain, and sparse population. Construction of the first missile silos, Alpha flight, began in 1961 and was completed in October 1962, just in time for the Cuban Missile Crisis, when the US and the Soviet Union came to the brink of nuclear war. By 1963, three missile squadrons were operational in Montana. Each squadron consisted of five flights of ten missiles, controlled by fifteen launch launch alert facilities, manned 24 hours a day. The missiles are scattered over a wide area, each missile at least ten miles from its nearest neighbor. In 1967, the USAF activated a fourth squadron, the 564th, that encompassed this part of Montana. The four squadron managed 200 nuclear warhead-tipped missiles in what was the largest missile complex in the world. The Strategic Arms Reduction Treaty (START) in 1991 decreased the number of missiles in the country's arsenal. Currently, the 341st Missile Wing, a part of Air Force Global Strike Command, operates, maintains, and secures 150 Minuteman III missiles in Montana.
+
+The 564th Missile Squadron
+
+The 564th Missile Squadron was the fourth activated by the Unites States Air Force (USAF) in Montana. Nicknamed "Deuce," the squadron was responsible for five Minuteman Missile alert facilities and fifty nuclear missile silos northwest of Malmstrom Air Force Base in Great Falls. The unit originated as the 564th Bombardment Squadron during World War II, flying B-24 "Liberators" on missions in central and southern Europe. The USAF reactivated it as an ICBM squadron in December 1965 and it became fully operational in 1967. The 564th was the first squadron in Montana to receive the new Minuteman II missiles in 1967 and had upgraded to the Minuteman III ICBMs by 1975. In 2008, the USAF inactivated the 341st Missile Squadron and removed the Minuteman III missiles from the silos.
+
+Erected by Montana Department of Transportation.

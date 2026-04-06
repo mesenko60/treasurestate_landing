@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 190926
+Slug: park-city
+Title: Park City
+Town: Columbus
+County: Stillwater
+Lat / Lng: 45.59824, -109.06439
+Topics: settlements, nature
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+In 1878, a local farmer named Alonzo Young established a boat landing on the Yellowstone River several miles east of here. In addition to the boat landing, Young and his wife operated a stage station on the road to Coulson and Fort Keogh. In addition to the station, the couple provided a restaurant and hotel accommodations for weary travelers on the road. An advertisement in the Bozeman Avant Courier for Young's Point boasted of the couple's "strict attention to travelers" along with the area's "fine hunting, fowling, and fishing." Young's Point, the advertisement claimed, was "A Splendid Summer Resort." Young's Point even boasted a post office from 1878 until the Youngs moved it to the new community of Park City in 1882.
+
+In 1882, a group of settlers from Ripon, Wisconsin, making the trip in the prairie schooners, settled in this region near the mouth of Valley Creek about seven miles east of here. It was to be their future home, so they planted trees and made what improvements they could to ultimately beautify the little city. The Northern Pacific Railway donated a section of land to them, and things started off in a prosperous pleasant manner. The railroad soon came through and established a station. The bare, sandstone bluffs north of town inspired the officials to christen the place Rimrock, but not so with the persons who planted sprigs and started a city of trees. Bravely they clung to the name Park City, and Rimrock finally disappeared with the list of unused titles. This was unfortunate inasmuch as the general manager of the N.P. resented this stubbornness on the part of the homesteaders, and in retaliation he changed the location of the proposed railroad yards and shops from townsite to Laurel.
+
+Ho! For the States!
+
+For a short time in the 1860s, fleets of Mackinaw boats plied the Yellowstone River, carrying passengers and cargo downstream to the "States." For many sojourners, the thought of backtracking along the route they took to Montana to reach home wasn't very appealing. Instead, many people took an easier route: floating down the Yellowstone on vessels resembling Mackinaw boats. Overland the trip could take several months, but on a boat, it took about a month. Entrepreneurs built the boats at the Great Bend of the Yellowstone, near present Livingston, to float their passengers downriver. Mackinaw boats in name only they were up to 50 feet long and 12 feet wide with flat bottoms to navigate over the many gravel bars and rapids on the river. Each boat had a crew of five: four oarsmen and one man at the rudder. Boat tickets averaged about $35 per person, comparable to today's airline fares.
+
+The first boats sailed from the Great Bend near present Livingston in September 1864. The relative ease of the trip attracted more passengers in 1865, including territorial judge Hezekiah Hosmer and his family. His son, Allen, published an account of the journey, A Trip to the States. In it, he described the day-to-day events of the voyage and recounted how the passengers feared an attack by the Northern Cheyenne and Lakota Indians. Hosmer's cruise occurred when hostilities between Indians and travelers on the Bozeman Trail has erupted into war. He wrote "If it were not for the expectation of being fired into by (the Indians) every night, the traveler would enjoy the trip hugely." While Hosmer's trip was relatively uneventful, other voyages in 1866 and 1867 were not so lucky. By 1868, boat traffic on the Yellowstone River had all but ceased because the violence along the Bozeman Trail made this kind of travel too dangerous.
+
+Erected by Montana Department of Transportation.

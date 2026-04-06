@@ -6,6 +6,8 @@ Curated markers with **no** deep-read article (no matching `articles_information
 
 **Total missing:** 247
 
+Plain-text **inscriptions** for these markers (from `historic-markers.json`): [`docs/marker-gap-source-text/`](../marker-gap-source-text/) — regenerate with `npm run markers:export-gap-sources` in `web/`.
+
 | Filename to create | Marker ID | Title | Town | County |
 | --- | --- | --- | --- | --- |
 | `1984-archeological-survey.md` | 86810 | 1984 Archeological Survey | Crow Agency | Big Horn |

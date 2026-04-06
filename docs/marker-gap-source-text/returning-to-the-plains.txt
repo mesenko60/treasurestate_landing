@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 203054
+Slug: returning-to-the-plains
+Title: Returning To The Plains
+Subtitle: Clark on the Yellowstone
+Town: Glendive
+County: Dawson
+Lat / Lng: 47.12524, -104.69037
+Topics: nature, exploration, native-american
+Year erected: 
+Erected by: Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission
+
+--- Inscription (as stored for the site) ---
+
+July 28, 1806 "Set out this morning at day light and proceeded on glideing down this Smooth Stream passing maney Isld...."
+
+July 29, 1806 "in the fore part of the day, I saw great numbers of Buffalow on the banks, … great quantities of Coal in all the hills I passed this day. … Beaver is very plenty on this part of the Rochejhone. "
+
+July 30, 1806 "here is the first appearance of Birnt hills which I have Seen on this river…"
+
+August 1, 1806 " ...we had Showers of rain repeetedly all day... My Situation a very disagreeable one. in an open Canoe wet and without a possibility of keeping my Self dry. ... at 2 P M I was obliged to land to let the Buffalow Cross over ... the river was crouded with those animals for 1/2 an hour."
+
+August 2, 1806 "about 8 A.M. this morning a Bear of the large vicious Species being on a Sand bar raised himself up on his hind feet and looked at us as we passed down near the middle of the river. he plunged into the water and Swam towards us, either from a disposition to attack't or from the Cent of the meat which was in the Canoes. we Shot him with three balls and he returned to Shore badly wounded."
+
+August 3, 1806 "last night the Musquetors was so troublesom that no one of the party Selpt half the night. ... at 8. A.M. I arived at the Junction of the Rochejhone with the Missouri, and formed my Camp ..."
+
+August 3, 1806 "The Rochejhone or Yellow Stone river is large and navagable with but fiew obstructions ... The Country through which it passes from those Mounts. to its junction is Generaly fertile rich open plains ..."
+
+A Lasting Legacy
+
+The Yellowstone River valley still contains much of the abundant wildlife that roamed the area when Clark and his party traveled through in 1806. The vibrant landscape, with its animals, birds and plants, is a living treasure that has been inhabited and cared for by many groups of people and cultures throughout time. What today's people bring to this Yellowstone region contributes to its legacy and will endure as vividly as the remarkable story of the Corps of Discovery.
+
+Erected by Lower Yellowstone Lewis & Clark Regional Committee; and Montana Lewis & Clark Commission.

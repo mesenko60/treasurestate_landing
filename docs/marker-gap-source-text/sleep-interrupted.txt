@@ -1,0 +1,32 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 116142
+Slug: sleep-interrupted
+Title: Sleep Interrupted
+Subtitle: On The Fringe Of Disaster
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.85299, -111.323
+Topics: disasters
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+August 17, 1959: performer Bobbi Baker was on her way to a gig in Billings, Montana when she stopped at the Hilgard Lodge for the night. Just as she settled into bed, she heard a “huge rush of wind” and the cabin began to shake violently. After one hellish minute, the tremors subsided and Baker ran outside.
+
+For the next six hours, she remembered only a few mental images: holding a crying child, feeling the ground buck with aftershocks, and falling exhausted back into bed. At six the next morning, jolted awake by a big aftershock, she groggily packed her bags. “I have to do a show tonight” she thought, as she raced away. Thirteen hours later, she arrived in Billings, exhausted, with a dislocated shoulder, a black eye and a bruised face. It was not until much later that she learned the magnitude of the disaster she had witnessed.
+
+At the time of the quake, Bobbi Baker was touring as a popular comedian and singer.
+
+This is where the Musician stopped for the Night
+
+When the earthquake struck, this was the site of the Hilgard Lodge. Bobbi Baker was staying in one of two cabins tucked close to the lakeshore. One of the cabins still stands...but barely. Photos from the days after the quake show them remarkably intact, though tilted and cracked.
+
+But earthquake-generated waves had damaged them beyond repair and they were abandoned. Since the quake, they have been making their slow descent to the earth and the water, mute reminders of that frightening night.
+
+The quake made headlines across the country. One article tells the story of a family, fleeing toward West Yellowstone on Route 191, hurdled over a six-foot fault scarp and crashed. Fortunately, they escaped with minor injuries. Some of the highway cracks were 20 feet deep.
+
+Broken Lifelines
+
+Bobbi Baker was lucky - she drove east and escaped from the disaster. Others were not so fortunate. In many places along Hebgen Lake and the Madison River, Highway 287 was severely damaged, with rifts across the road and huge cracks in the pavement. A landslide just west of Hilgard Lodge had cast a large section of Highway 287 into the lake, trapping everyone to the west of it.

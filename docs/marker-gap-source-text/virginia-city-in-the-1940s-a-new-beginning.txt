@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 208660
+Slug: virginia-city-in-the-1940s-a-new-beginning
+Title: Virginia City in the 1940s - a New Beginning
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.2936, -111.94542
+Topics: landmarks, settlements
+Year erected: 
+Erected by: Virginia City Preservation Alliance
+
+--- Inscription (as stored for the site) ---
+
+To truly appreciate the scale of the Boveys' accomplishment in Virginia City, it's important to understand what they found when they first visited in the mid-1940s.
+
+After more than 80 years, Alder Gulch's legendary gold deposits were finally playing out and gold mining was declared a "non-essential industry" during WWII. The local population dwindled as able-bodied persons were drafted into the war, and families relocated to west coast factories to find work. While a few businesses remained active near the courthouse, most of the buildings on the lower end of Wallace Street, the former commercial core of the community, were abandoned or barely functioning.
+
+It was into this almost ghost-town like setting that in 1944 Charlie and Sue Bovey wandered during one of their frequent drives through rural Montana. As the photos below indicate, at that time much of Virginia City was slowly melting into the ground after years of neglect. Fortunately, where others saw decay and ruin, the Boveys saw authentic lingering remnants of Montana's glorious frontier past. They also realized that if someone didn't act quickly these rare remaining fragments, and the fascinating stories they embodied, would soon be lost. So began a relationship of more than 50 years between the Bovey family and Virginia City.
+
+Much of the Virginia City experience we enjoy today is due to Charlie and Sue's incredible foresight. From rustic wooden boardwalks, carefully restored and reconstructed storefronts, compelling interpretive exhibits, to a fully functioning railroad, they invested considerable time, money, and effort to create an authentic and enjoyable frontier-era setting for us all. Where needed, with a careful eye to detail, they reconstructed entire buildings based on historic photos to fill vacant openings along the streetscape. Once stabilized, they then outfitted the various "period-correct" businesses from their vast personal collection of 19th-century merchandise, furnishings, and equipment.
+
+At the time many people considered the Boveys "eccentric" for their interest in these primitive old buildings that most deemed only suitable for firewood. But they persevered, and over time as the lower end of Wallace Street slowly came back to life, their work was appreciated and recognized with numerous awards and designations, including National Historic Landmark status in 1961, and state ownership in 1997.
+
+Since the 1950s, the Boveys' work in Virginia City, and nearby Nevada City, has been enjoyed by thousands of annual visitors.
+
+Erected by Virginia City Preservation Alliance.

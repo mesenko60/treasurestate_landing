@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191170
+Slug: the-lewis-and-clark-expedition-2
+Title: The Lewis and Clark Expedition
+Town: Big Timber
+County: Sweet Grass
+Lat / Lng: 45.82441, -109.96525
+Topics: 
+Year erected: 
+Erected by: Lewis and Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+In 1804-06, Captains Meriwether Lewis and William Clark led about 40 soldiers and boatmen on an epic journey. President Thomas Jefferson commissioned this “Corps of Discovery” to find a route to the Pacific Ocean through the newly acquired Louisiana Territory. Along the way, they mapped the land, recorded its resources, and contacted its native inhabitants. The landscape has changed since Lewis and Clark explored it: rivers have been dammed, forests cut over, prairies plowed under, and roads built to the horizon. Although remnants of wilderness still exist, imagine this land as Lewis and Clark first saw it two centuries ago
+
+Erected by Lewis and Clark National Historic Trail.

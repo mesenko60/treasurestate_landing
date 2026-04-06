@@ -1,0 +1,46 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 130332
+Slug: ghost-town-byway
+Title: Ghost Town Byway
+Subtitle: Discover Stories Worth Their Weight in Gold
+Town: Greenough
+County: Missoula
+Lat / Lng: 46.8868, -113.46132
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Once, the Garnet Mountains echoed with the blasts of dynamite, the clatter of hooves on steep, narrow roads, and the shouts of men out to find fortune.
+
+Once, miners swapped stories in the saloons of Beartown, Top O'Deep and Reynolds City — towns that exist only in history and local legend. Once, loggers felled great trees with crosscut saws to supply timber for railroad ties and mine shafts.
+
+Today, follow the Byway to the ghost town of Garnet and continue over the summit to complete a 26-mile journey. You'll take home memories of country that is rich in natural wealth and in stories of hardy individuals who lived and died here.
+
+Why Gold?
+
+Between 75 to 70 million years ago, great thrust faults carried the Sapphire Block eastward from the top of the Idaho batholith (near today's Montana/Idaho border). The Garnet Range forms the northern edge of the Sapphire Block. The key to gold mineralization lies in the granite magma that rose molten from the earth's crust, forming a slippery base for the Block to slide on. When the granite cooled in the fractures of sedimentary rocks, the crystallization process separated both quartz and gold into veins. As the rocks weathered, gold flakes eroded into the streams — and into the pans of prospectors.
+
+A Close Alliance
+
+Timberrrr! The crash of falling trees joined the whistle of stamp mills in the Garnet Range at the turn of the century. The two industries depended on each other. Logging profits came from the sale of timber for mineshaft beams, railroad ties and fuel for the trains that hauled ore from quartz lode mines.
+
+Namesake of the Garnet Range When the granitic magma entered limestone, the two reacted to form a new kind of rock called a “skarn” that consisted mostly of garnet crystals.
+
+1865: Gold strike at Bear Creek; placer mining era.
+
+1883: Completion of the Northern Pacific Railroad.
+
+1895: Founding of Mitchell, soon to be called Garnet.
+
+1896: Completion of Coloma-Garnet Bearmouth Road.
+
+1898: Fairview quartz lode mine opens.
+
+1912: Fire in Garnet; end of hard-rock era.
+
+1937: Establishment of Lubrecht Experimental Forest.
+
+1956: Barite Mine starts up.

@@ -1,0 +1,19 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 168015
+Slug: the-fight-or-flight-of-the-nez-perce
+Title: The Fight or Flight of the Nez Perce
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.78428, -108.49784
+Topics: native-american, military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+The Nez Perce (Nee-Me-Poo) National Historic Trail marks the path of U.S. soldiers pursuing Chief Looking Glass and Chief Joseph of the Nez Perce during the summer of 1877. Treaties forced bands of Nez Perce from their homes In Idaho and Oregon. Refusing to settle or surrender, the non-treaty Nez Perce move along a meandering 1,170 mile route while being pursued by federal armies. From the Battle of the Big Hole, in southwestern Montana, to evasive maneuvers through the Yellowstone Park, the Nez Perce followed the Clark Fork Canyon into Yellowstone River country, southwest of present-day Billings.
+
+The Canyon Creek Battle, west of Billings, occurred on September 13, 1877. The Nez Perce entered the Canyon Creek valley and took four horses, food and property of Joseph Cochran, an early homesteader. The Nez Perce then defeated Colonel Samuel Sturgis's 7th Cavalry and continued to move north toward Canada. Interpretive signs and a shelter mark the location.
+
+Just 40 miles south of the Canadian border at the Bear Paw Mountains, army troops under the command of Colonel Nelson Miles defeated the Nez Perce and forced their surrender. With four of the five major chiefs of the Nez Perce killed Chief Joseph surrendered. Chief Joseph reportedly spoke to Colonel Miles, "Here me, my Chiefs, I am tired; my hear is sick and sad, From where the sun now stands I will fight no more forever."

@@ -1,0 +1,48 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163581
+Slug: glendive-mt-2
+Title: Glendive, MT
+Subtitle: April 7, 1899
+Town: Glendive
+County: Dawson
+Lat / Lng: 47.10567, -104.71848
+Topics: nature, disasters
+Year erected: 
+Erected by: Montana Silver Jackets
+
+--- Inscription (as stored for the site) ---
+
+April 7, 1899
+
+On this day, ice on the Yellowstone River broke free sending large slabs of ice against the piers of the Yellowstone River Bridge. The ice gorged knocking out three sections of the bridge and flooding thousands of acres upstream. River gauges at the bridge rapidly jumped from 19 to 30 feet.
+
+At a ranch owned by R.W. Snyder, a half-mile south of Glendive, five people were caught in the flood water as they fled for higher ground. They tried climbing a tree but were unable to get the ladies up the tree. Nellie Regan and Rose Wybrecht were tied to the tree trunk with suspenders. As Joseph Meyers climbed into the tree he saw Eugene O'Conner and Mrs. Snyder being washed away.
+
+Soon after, a large chunk of ice broke the tree. Meyers lost sight of the young ladies. He jumped onto a piece of ice. Men who were opposite him on the railroad tracks advised him not to attempt swimming as the ice would crush him.
+
+Meyers grabbed a tree branch where he stayed for seven hours. Sam Eaker, Andrew Larson, and a stranger used ropes and planks to rescue him. Meyers was taken to his home where he made a speedy recovery.
+
+Miss Regan and Miss Wybrecht were found drowned still tied to the tree. The body of Eugene O'Connor was found the next day and Mrs. Snyder's body was found by her husband several days later.
+
+April 7, 1899
+
+On this day, nearly the entire town of Glendive watched as large slabs of ice crushed against the rock-filled structures built in front of the piers of the Yellowstone River Bridge. The four-span bridge with a swing-span to support navigation was built in 1895. At the time, the 1,750-foot-long bridge was the largest wagon bridge in the northwest with a 326-foot-long draw span.
+
+River gages at the bridge rapidly jumped from 19 to 30 feet. The moving ice knocked out three bridge spans, preventing transportation across the river.
+
+The ice jam and the flooding took the lives of 12 people and numerous livestock and washed away several homes.
+
+Among those killed was James Sullivan, his wife and their six children. They were all in bed and asleep when they met their death.
+
+April 7, 1916 When ice breaks up on the Yellowstone River, there is a risk of ice jam flooding to the City of Glendive.
+
+On this day, as the river rose rapidly, 30 horses were caught on islands by the flood. All drowned except for one. The horse, belonging to Peter Evans, climbed onto a cake of ice and floated for two days traveling over 35 miles on the river.
+
+The block of ice settled onto the flooded flats at Glendive, he was finally rescued and had miraculously escaped injury.
+
+Reports claim the animal stood during the entire journey bracing its legs each time the ice was jarred by striking other ice blocks.
+
+Silver Jackets brings together federal, state, and local agencies to collaborate in reducing flood risk. To learn more about Montana's flood history and how you can prepare your family visit flood risk.mt.gov/
+
+Erected by Montana Silver Jackets.

@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142244
+Slug: the-montana-memorial
+Title: The Montana Memorial
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81991, -110.66457
+Topics: 
+Year erected: 
+Erected by: Fort Benton Community Improvement Association
+
+--- Inscription (as stored for the site) ---
+
+The Lewis and Clark Memorial was Fort Benton's contribution to the Nation's Bicentennial in 1976 and is the State of Montana's official memorial to the Expedition. Total cost was $175,000.
+
+The statue is heroic-sized (1/6 larger than actual). It was cast by the lost-wax process at the Modern Art Foundry in New York City. The bronze weights 2 1/2 tons, is 21 feet high and was brought from New York upright on a semi-trailer! During the trip, problems were encountered with interstate underpasses. It caused many a head to turn, but the Captains were not recognized until the statue was west of the Mississippi.
+
+The 85-ton granite base was a gift from Tanner Brothers Quarry near Square Butte, Montana. The rock was transported in mid-winter over frozen roads to save the roadway, on a thirty-wheeled trailer.
+
+Artist Bob Scriver spent an entire year in research before beginning the three-year effort. Equipment, clothing, body features and faces are as historically accurate as could be determined, The Harpers Ferry rifles are accurate even to the name on the hammer plate. The actual telescope carried by Lewis was the pattern for the one he holds in the statue; the compass in Clark's hand was modeled from the one he really did use.
+
+Indian lore was Mr. Scriver's forte, and the statue show his vast understanding of Plains Indian culture. Sacagawea's dress is that of a Shoshone who were her people. She is carrying a skinning knife and an awl; a strike-o-light hangs from her belt. Sacagawea is also wearing many rings and bracelets. Clark mentioned her fondness for jewelry which he often gave her on the trip.
+
+On her back she carries Jean Baptiste in a blanket, folded to free both her hands. The pack board is missing since it was washed overboard a few days earlier. Secured to the baby's blanket is a serpent's pouch containing his umbilical cord; such a pouch was worn by all male children of the plains people. Pouches for females were shaped like a turtle.
+
+Art critics have place the Memorial among the top ten major statuaries of Western art. Bob Scriver is among the West's greatest sculptors; he stated that this Memorial is the most outstanding work of his career.

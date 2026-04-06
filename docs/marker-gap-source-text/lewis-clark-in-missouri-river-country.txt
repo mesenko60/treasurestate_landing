@@ -1,0 +1,72 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 252354
+Slug: lewis-clark-in-missouri-river-country
+Title: Lewis & Clark in Missouri River Country
+Subtitle: The Country is as Yesterday Beautiful in the Extreme
+Town: Fort Peck
+County: Valley
+Lat / Lng: 48.00984, -106.39015
+Topics: exploration
+Year erected: 
+Erected by: Army Corps of Engineers, Travel Montana, Dept. of Commerce, Montana's Missouri River Country, Glasgow Chamber of Commerce
+
+--- Inscription (as stored for the site) ---
+
+Great Quantities of Every Species of Game Common Here
+
+The primary purpose of the Lewis and Clark expedition was to find a Northwest passage from the interior of the continent to the Pacific Ocean so that beaver pelts and other valuable furs could be shipped directly to the Orient via the Columbia River. Although an all water passage was never found, vast numbers of beaver and other wildlife were recorded in northeastern Montana. As they passed through this area, Lewis and Clark noted game so abundant that they could scarcely cast their eyes in any direction without receiving deer, elk, buffalo or antelope.
+
+Many of these species no longer exist on the plains. Audubon sheep have become extinct. Buffalo now live in protected herds while other wildlife like grizzly bears, wolves and moose have been pushed to the mountains. Today, thanks to the reintroduction of elk and bighorn sheep along the Missouri River and around Fort Peck Lake, we can enjoy more of the same species that so amazed Lewis and Clark on their journey through this area.
+
+"We saw a great number of buffaloe, Elk, common and Black taled deer, goats, beaver and wolves... We can send out at any time and obtain whatever species of meat the country affords in as large quantity as we wish..." Captain M. Lewis, Wednesday, May 8, 1805
+
+"we scarcely see a gang of buffaloe without observing a parsel of those faithful shepherds (wolves) on their skirts in readiness to take care of the famed & wounded." Captain M. Lewis, Sunday, May 5 1805
+
+"we also saw this evening emence quantities of timber cut by the beaver which appeared to have been done the preceeding year, in place particularly they had cut all the timber down for three acres..." Captain M. Lewis, Thursday, May 9, 1805
+
+The Country is as Yesterday Beautiful in the Extreme
+
+From the notations in their journals, it is obvious that Lewis and Clark were explorers in the truest sense. They not only documented landmarks and activities, they also kept highly detailed entries in their journals describing the natural world around them. Noting even the slightest variations in everything from sediment to vegetation to wildlife species, they left us with a remarkable appreciation of the richness and complexity of this land in northeastern Montana. Following the footsteps of Lewis and Clark through northeastern Montana, today's traveler will find the quality and character of this land hasn't changed much since the expedition pass through. Today you can experience this area with much the same awe as they did, Scan the horizon and enjoy panoramic views of wide, open plains. Watch as herds of antelope race the wind across the prairies, listen to meadowlarks chirping out their wake-up call and feel air so fresh it revitalizes the soul.
+
+❶ First Whitemen This Far West
+
+It was believed that only one whiteman had ever ascended the Missouri River as far as the party had come and he had turned back only several miles beyond the Yellowstone River. The expedition was entering completely uncharted wilderness at this point.
+
+❷ First Grizzly Bear Killed "about 8 A. M. we fell in with two brown or (yellow) bear; both of which we wounded; one of them made his escape, the other after my firing on him pursued me seventy or eighty yards, ...we again repeated our fire and killed him....it is asstonishing to see the wounds they will bear before they can be put to death. Captain M. Lewis, Monday April 29, 1805
+
+❸ Biggest Elk Killed "I walked on shore this evening and killed a black Elk...it appeared to me to be the largest I had ever seen...found it five feet three inches from point of hoof to the top of the shoulders..." Captain M. Lewis, Tuesday April 30, 1805
+
+❹ First Moose Sighting
+
+A moose was first encountered about 10 miles above the mouth of the Big Dry River. This subspecies of moose known as "Alces acles shiasi" has no scientific standing prior to the Lewis and Clark expedition.
+
+"Several of the party went out to hunt...they Saw Several moose deer which was much larger than the common deer and the first we have seen." Sergeant John Ordway, May 10 1805
+
+❺ Caving Banks of the Missouri "Set out this morning at an early hour, the courant strong; and the very crooked; the banks are falling in very fast; I sometimes wonder some of our canoes or peroques are not swallowed up by means of these immence masses of earth which are eternally precipitating themselves into the river,..." Captain M. Lewis, May 11, 1805
+
+❻ The Prairie Rattler
+
+While at present-day Timber Cove, the party saw a new species of Rattlesnake never before recorded by white men, the Prairie Rattler (Crotalus viridian) "Capt. Clark narrowly escaped being bitten by a rattlesnake in the coarse of his walk, the party killed one this evening at our encampment, which he informed me was similar to that he had seen; this snake is smaller than those common to the middle Atlantic States, being about 2 feet six inches long..." Captain M. Lewis, Friday, May 17, 1805
+
+❼ First Glimpse of the Little Rocky Mountains "I walked on Shore with two men we killed a (brown) white or grey bear;...after killing the bear I continued my walk alone...I ascended the highest hill I could See from the top of which I Saw the mouth of M. Shell R. & the meanderings of the Missouri for a long distance. I also Saw a high mountain in a westerly direction, bearing S. S W. about 40 or 50 miles distant..." Captain W. Clark, Sunday May 14, 1805
+
+❽ Captain Lewis, The Observant Naturalist "the Burrowing Squirrel...never visit the brooks or river for water; I am astonished how this animal exists as it does without water, particularly in a country like this where there is scarcely any rain during 3/4 of the year and more rarely any due (dew); yet we have sometimes found their villages at the distance of five or six miles from any water...." Captain M. Lewis Thursday, May 23, 1805
+
+❾ Big Sky Country "the air is so pure in this open country that mountains and other elivated objects appear much nearer than they really are; these mountains (present day Little Rocky Mountains) do not appear to be further than 15 m. we sent a man up this creek (present day Rock Creek) to explore the country he returned late in the evening and informed that he had proceeded ten miles directly toward these mountains and that he did not think himself by any means half way..." Captain M. Lewis, Friday May 24, 1805
+
+Sacagawea: Equal in Fortitude as any Member of the Party
+
+She was only 17 years old, a mother and a Shoshone Indian. Sacagawea joined the expedition at Fort Mandan with her husband, Toussaint Charbonneau and their infant son.
+
+Although Charbonneau was hired as an interpreter, only one role was intended for his wife: by reuniting Sacagawea with her people around the headwaters of the Missouri in south-central Montana, Lewis and Clark hoped to obtain badly-needed horses to cross the mountains on their way west to the Pacific Ocean.
+
+Yet Sacagawea's contributions to the expedition far exceeded her original role. Her knowledge of native plants and interpretation of Indian signs and customs served the explorers well. Most importantly, she was instrumental in preventing a premature end to the expedition. When a boat overturned, she single-handedly retrieved articles from the water that were indispensable for the success of the expedition. This earned her the respect and status equal to any member of the Lewis and Clark expedition, recognition rarely enjoyed by women, let alone native Americans, in the early 1800's.
+
+Sacagawea River: A Fitting Namesake "...about five miles abe (NB: above) the mouth of shell (Musselshell) river a handsome river of about fifty yards in width discharged itself into the shell river on the Stard, or upper side; this stream we called Sâb-câ-gar ,e-âh (NB: Saw ca gah we a) or bird woman's River. after our interpreter the Snake woman." Captain M. Lewis, Monday, May 28, 1805
+
+"It happened unfortunately for us this evening that Charbono was at the helm of this Perogue,... in this perogue were embarked, our papers, Instruments, books medicine, a great part of our merchandize and in short almost every article indispensibly necessary to...insure success of the enterprize...the Perogue was under sail when a sudon squawl of wind struck her obliquely, and instantly upset the perogue... Captain M. Lewis, Tuesday, May 14, 1805
+
+" ...the Indian woman to whom I ascribe equal fortitude and resolution, with any person onboard at the time of the accedent, caught and preserved most of the light articles which were washed overboard" Captain M. Lewis, Tuesday, May 16, 1805
+
+Erected by Army Corps of Engineers, Travel Montana, Dept. of Commerce, Montana's Missouri River Country, Glasgow Chamber of Commerce.

@@ -83,6 +83,8 @@ function main() {
     '',
     `**Total missing:** ${missing.length}`,
     '',
+    'Plain-text **inscriptions** for these markers (from `historic-markers.json`): [`docs/marker-gap-source-text/`](../marker-gap-source-text/) — regenerate with `npm run markers:export-gap-sources` in `web/`.',
+    '',
     '| Filename to create | Marker ID | Title | Town | County |',
     '| --- | --- | --- | --- | --- |',
     ...missing.map(

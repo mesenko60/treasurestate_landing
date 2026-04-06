@@ -1,0 +1,20 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 180837
+Slug: marcus-daly-company-bank-building
+Title: Marcus Daly & Company Bank Building
+Subtitle: Anaconda Commercial Historic District
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.12941, -112.95277
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+Marcus Daly and W. L. Hoge founded Anaconda’s first bank in 1883. Hoge, Anaconda’s first mayor, sold his interest in the bank to Daly in 1895. The institution became the Marcus Daly & Company Bank and later, the First National Bank of Anaconda. Expansion of the Anaconda Company smelter during the 1890s prompted construction of the bank block in 1895. The building’s colorful history includes a bungled nighttime robbery that occurred soon after the bank’s grand opening. Two men attempted to blow up the safe but instead woke the neighborhood; they were quickly apprehended. The impressive Victorian-era Romanesque style building features granite trim, engaged columns, arched doorways, frosted and sandblasted windows, bronze door hardware, and terra cotta tile with a floral motif. In 1914, renowned Bozeman architect Fred Willson designed the rear addition. The bank moved in 1969 and diverse tenants subsequently occupied the space. Extensive rehabilitation in 2002 restored the older portion of the building to its original splendor and the building now houses the First National Bank of Montana.
+
+Erected by
+
+Montana Historical Society.

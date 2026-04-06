@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 290533
+Slug: fraternity-hall
+Title: Fraternity Hall
+Town: Boulder
+County: Jefferson
+Lat / Lng: 46.27524, -111.94613
+Topics: architecture, culture
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+Swiss miner Peter Wys discovered the lucrative silver veins of the Elkhorn Mine that would eventually yield $14 million. After Wys died in 1872, Helena entrepreneur Anton M. Holter and partners developed the Elkhorn Mine. Holter sold out to an English syndicate circa 1888 and the mining camp flourished into the 1890's. At its peak, the community housed more than 2,500 residents and three passenger trains arrived weekly on the Northern Pacific's branch line. In 1893, the Fraternity Hall Association incorporated to build the town's architectural and social center. Fraternity Hall was aptly named: the town's various fraternal organizations, including the Masons, Oddfellows, and Knights of Pythias, shared its upstairs lodge room. The popular hall was the heart of the community. Here dances, traveling theatrical troupes, graduations, prize fights, and other public gatherings bound citizens together. Fraternity Hall's outstanding architecture reflects the Greek Revival style. Its false front is common to mining camps across the west. The sophisticated neo-classical style balcony above the entry, however, is unique. Elaborate ornamentation at the roofline recalls elements crafted of stone or brick in more urban places, but here adapted to readily available wood. The Silver Panic of 1893 impacted Montana's silver industry and by 1897, the mines had begun to play out. Although it operated off and on into the twentieth century, the death knell sounded when the Northern Pacific removed its tracks in 1931. Remarkably well-preserved, Fraternity Hall has endured time, neglect, and heavy snows to become one of Montana's most photographed buildings.
+
+Listed in the National Register of Historic Places by the United States Department of Interior.
+
+In cooperation with the Montana Historical Society www.montanahistoricalsociety.org
+
+Erected by Montana Historical Society.

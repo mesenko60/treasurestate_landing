@@ -1,0 +1,44 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 192723
+Slug: the-442nd
+Title: The 442nd
+Subtitle: Regimental Combat Team
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.89627, -111.55111
+Topics: 
+Year erected: 
+Erected by: Bud and Esther Lilly
+
+--- Inscription (as stored for the site) ---
+
+"The Nisei bought an awful big hunk of America with their blood." - General Joseph "Vinegar Joe" Stillwell
+
+"You fought the enemy abroad and prejudice at home and you won." - President Harry Truman, July 1946
+
+This memorial is to recognize and honor the men and women of Japanese ancestry who served and fought for America in World War II. These Nisei, second generation American born citizens of Japanese immigrant parents, fought in Italy and France as members of the 442nd Regimental Combat Team. After Pearl Harbor, Japanese Americans were not allowed to serve in the military, as they were classified "4-C, enemy alien." However, in 1943, President Roosevelt signed a law to create a unit made entirely of Japanese Americans. This 442nd RCT went on to become the most decorated unit in U.S. military history for its size and length of service.
+
+The 442nd story has a strong Three Forks connection. There were several Japanese families living here, whose sons and daughters went off to fight the war in Europe.
+
+This memorial was conceived by Three Forks residents Bud and Esther Lilly. Bud grew up in Manhattan and knew the Three Forks Japanese American kids, playing against them in basketball and football. From his own WWII military service, Bud understood the Nisei story and the special role of the 442nd RCT in the War. This Memorial salutes these men and women.
+
+This unit was designated the 442nd Regimental Combat Team, but would go down in history based upon the unit's motto:
+
+"Go For Broke"
+
+George Oiye
+
+As an engineering student at Montana State College, George was not allowed to enlist in 1941. Like all Japanese Americans, he was classified "4-C, enemy alien," even though he was required to take ROTC and was captain of the rifle team. His sister was held in an internment camp. For his service, George was decorated with a Bronze Star. After the war he worked in the aerospace industry as a specialist in optical engineering and designed technology used on the International Space Station.
+
+The Satake Family
+
+Four members of the Satake family served in the war: John, Frank, King, and Irene. Irene retired from the Service as a Colonel. Brother Jim was too young to serve in the war but joined the military later.
+
+Yokichi Itoh
+
+A star athlete at Three Forks High School, Yokichi played basketball and was an all-state half back on the football team. Quarterback George Oiye said, "I just gave You the ball and got out of the way." After being seriously injured in the war, You graduated from medical school at Temple University. Following his training, he returned to Livingston, Montana, where he was a general practitioner from 1956 to 1985. He was respected for his clinical competence and appreciated for his gentle and caring manner.
+
+"Blood that has soaked into the sands of a beach is all of one color. America stands unique in the world, the only country not founded on race, but on a way - an ideal. Not in spite of, but because of our polyglot background, we have had all the strength in the world. That is the American way." - Captain Ronald Reagan, 1945 "They were superb! That word correctly describes it: superb! They took terrific casualties. They showed rare courage and tremendous fighting spirit. Not too much can be said of the performance of those battalions in Europe and everybody wanted them...." - General George C. Marshall
+
+Erected by Bud and Esther Lilly.

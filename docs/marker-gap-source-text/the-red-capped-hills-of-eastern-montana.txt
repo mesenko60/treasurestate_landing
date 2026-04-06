@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163875
+Slug: the-red-capped-hills-of-eastern-montana
+Title: The Red-Capped Hills of Eastern Montana
+Town: Glendive
+County: Dawson
+Lat / Lng: 46.89865, -105.01939
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Striking red rock caps may of the hills of eastern Montana. Some of the rock looks volcanic, so it has incorrectly been called scoria. Lewis and Clark attributed the red rock to burning coal beds and called the red areas "burnt hills." Geologists call the rock clinker. It occurs within the Fort Union Formation which contains coal beds sandwiched between soft sedimentary rock. Clinker developers when coal burns from the surface into a hill, where it cooks, fuses, and melts the adjacent rock, forcing new, completely different types of rocks. Sandstone is baked to a brick-like rock. Shale may be fused like a ceramic in a kiln. Other rock may melt to look like hardened lava. The heat from burring coal rises, so most of the clinker develops above the burning coal bed. Some clinker beds are 100 feet thick. Clinker beds are pours allowing water to infiltrate into them rather that run off. The infiltration recharges the groundwater and protects the underlying rock from erosion, producing hills with red clinker caps.
+
+Before a coal bed can ignite and burn it must be dry and exposed to air. Streams and flash floods erode the hills in eastern Montana In the process, coal beds are left above the water table where water can drain out. Lightning, spontaneous combustion, chemical reactions and range fires ignite the coal. Burning trees rooted in coal beads can also start the fires.
+
+Scientists have determined that coal has been burning in eastern Montana for at least four million years, but each burning coal bed eventually extinguishes naturally. As the fire burns into the hill, the overlying rock breaks up and collapses, this allows air deeper into the hill and keeps the coal burning underground. Eventually, too much overlying rock collapses to allow air to enter, and the fire goes out.
+
+Geo-Facts:
+
+• The ceramic-like cylinder rock produced from welded shale is called porcellanite. Similar to pottery, it has sharp edges when broken. For thousands of years, Native Americans made tools from it, such as hide scrapers, knives, and arrowheads.
+
+• The open spaces within beds of clinker make the layers permeable to water. The backed character of the rocks make the rocks less soluble than typical coal of sandstone beds. Therefore, clinker beds are important in the production of less mineralized ground water in southeastern and far eastern Montana.
+
+• The Fort Union Formation is named for Fort Union, an American Fur Company trading post located near the confluence of the Missouri and Yellowstone rivers. The post was active from 1828 to 1867 and is now a National Historic Site.
+
+Geo-Activity:
+
+• Read the description about red clinker caps. How many can you spot around you? What about while you are driving?

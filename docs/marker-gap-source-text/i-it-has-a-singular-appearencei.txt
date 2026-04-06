@@ -1,0 +1,66 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 256062
+Slug: i-it-has-a-singular-appearencei
+Title: it has a singular appearence
+Subtitle: Meriwether Lewis, August 10, 1895
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 44.99437, -112.86829
+Topics: nature, exploration
+Year erected: 
+Erected by: Reclamation, University of Montana Western
+
+--- Inscription (as stored for the site) ---
+
+The Big Island
+
+Camp Fortunate was located near the base of the prominent island in Clark Canyon Reservoir. The singular mountain in the open plain that Meriwether Lewis described is a limestone rock outcrop that separated the "two forks of the Jefferson River" prior to submergence in 1964. The rock is prominently exposed today due to a combination of the uplift of the ground and the slow erosion of the limestone in the arid climate of southwest Montana.
+
+Mississippian Limestone
+
+South Montana was covered by a topical ocean some 360 million years ago during a time geologists call the Mississippi Period. This rock outcrop originated as seashells that accumulated on the bottom of this ocean. The shells were buried and cemented together to form a rock type called limestone. Geologists call this limestone the Madison Group.
+
+A Tropical Paradise in Montana
+
+It is amazing to envision that the place where you now stand was once a tropical marine paradise, occupied by fish, sharks, squid, corals, crinoids, brachiopods, bryozoans and many other marine animals.
+
+If you look carefully at the rocks you will see the fossil remains of the most common animals that lived in this part of Montana some 360 million years prior to the arrival of Lewis and Clark!
+
+Look at the sample of Mississippian limestone next to the sign and see if you can find the fossils shown in the photos below.
+
+Corals
+
+Corals are related to sea anemones, jellyfish and other animals with a sac-like body and tentacles with stinging cells. They live in a mineralized cup called a theca and they filter the water for live food. Most corals live in colonies, but many in the past lived as solitary animals. A fossil of a solitary Rugose coral is shown in the photo.
+
+Brachiopods
+
+Brachiopods are bottom-dwelling animals that use sticky tentacles to filter the ocean water for suspended food particles.. They usually fix themselves to the sea floor by a means of a fleshy stalk. Their two valves might remind you of a clam, but they are not closely related. Brachiopods have managed to survive on the Earth for about 600 million years!
+
+Bryozoans
+
+Bryozoans are twig-like animals that are very closely related to brachiopods. The "twigs" are actually colonies of animals that use sticky tentacles to filter the ocean water for suspended food particles. Although they look simple, they are very advanced animals with a nervous system, muscular tissue and a complete digestive system.
+
+Crinoids
+
+Crinoids are marine invertebrate animals that are related to starfish, sand dollars, sea-urchins and other animals with bodies that are organized into patterns of five (pentameral symmetry). Although they look like plants, their arms are lined with tube feet that are used to capture plankton. The most common parts of crinoids to be preserved as fossils are the pieces of the arm of animal (shown in photos).
+
+The Geological Time Scale (not shown to scale)
+
+Divisions of geological time were defined in the 19th Century by major changes in the fossil record.
+
+Most of the boundaries are marked by worldwide extinction events.
+
+Numerical dates were added in the 20th Century using modern rock-dating techniques.
+
+PRECAMBRIAN 4500 million years ago Earth began Formation of igneous and metamorphic rocks.
+
+PALEOZOIC ERA 542 million years ago Deposition of the Madison Group limestone during the Mississippian Period
+
+MESOZOIC ERA 250 million years ago Deposition of sedimentary rocks, folding and thrust faulting
+
+CENOZOIC ERA 66 million years ago Deposition of sedimentary and volcanic rock, extension of the Earth's crust and formation of the Red Rock Valley and Tendoy Mountains.
+
+Erected by 3. Coral
+
+Reclamation, University of Montana Western.

@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 186128
+Slug: the-boulder-batholith-and-the-richest-hill-on-earth
+Title: The Boulder Batholith and the Richest Hill on Earth
+Town: Butte
+County: Silver Bow
+Lat / Lng: 45.99116, -112.47516
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Boulder Batholith originated as part of the Elkhorn Mountains Volcanics. Molten magma rose up through the earth's crust for 81 to about 74 million years ago. When it reached the surface, the magma created violent explosions that hurled chunks of rock, cinders and volcanic ash into the air. The volcanic field was enormous - about 100 miles in diameter and up to 3 miles thick. After the pile of volcanic rocks got too thick, magma stopped going all the way to the surface and accumulated near the bottom of the pile. So much magma intruded at this level ant when it cooled it formed a body of granitic rock, called a batholith.
+
+Granite similar to that exposed along Interstate Highway 15 and east of Butte is the host rock for the ores mined at Butte. This granite formed by slow cooling of molten rock deep below the earth's surface about 76 million years ago. Faults and fractures in the Butte area later cut the granite, forming pathways for hot water that carried metals in solution. As these solutions reacted with the enclosing granite they cooled and deposited quarts and metallic minerals to form veins. Some of these veins were of tremendous size: up to 50 feet wide and 4,500 long. The discovery of copper-rich veins together with the need for copper wire for electrical use from 1880 on stimulated both the development of many underground mines and city of Butte. From a few dozen gold prospectors in 1864, Butte went to a reported population of 91,000 in 1917. The head frames of some of the former underground shaft mines can be seen piercing the skyline above the tan rock exposed on the sides of the Berkeley pit. Open-pit mining began there in 1955 and continued until mid-1982 Currently copper and molybdenum ore are mined in the Continental pit, which is hidden by the hills just west of the Interstate Highway.
+
+Geo-Facts:
+
+• The total extent of the underground workings in the Butte district is estimated to be 10,000 miles. There were 74 mines in the Butte district more than 1,000 feet deep.
+
+• The total amount of copper recovered from Butte ore is enough to put a 4-inch-thick layer of payment on all traffic lanes on Interstate 15 from Butte to more than 30 miles south of Salt Lake City, Utah - a distance of 450 miles.
+
+• In addition to copper, mining operations have recovered significant amounts of zinc, manganese, lead, molybdenum, silver and gold from Butte ore.
+
+Geo-Activity:
+
+• Think back to the last time you broke a ceramic mug, bowl, or vase. The way you might have repaired it is similar to the way veins of metal formed in the Boulder batholith. The ceramic pieces are like the granite which formed from magma and cooled under the earth's surface. Movement in the earth created cracks in the granite, similar to the way your mug or bold broke into pieces as well. The glue mimics the way hot water with minerals ran through cracks in the granite, leaving veins of metal, like copper.
+
+Erected by Montana Department of Transportation.

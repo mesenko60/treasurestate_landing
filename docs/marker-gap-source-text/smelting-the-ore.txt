@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128132
+Slug: smelting-the-ore
+Title: Smelting the Ore
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.12299, -112.93099
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society and Montana Department of Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+Extracting pure copper from the ores mined in Butte was a complex process. First, the useless waste rock was separated from the valuable ore, and the high-grade material was separated from the low-grade material. Next, the lower-grade ore was concentrated by crushing and mechanically separating the heavier metal particles from the lighter waste rock. Copper concentrates were “roasted” in furnaces to remove part of the sulphur. Roasted concentrates were then smelted in a blast or reverberatory furnace to further remove impurities. This process formed molten copper matte and slag, a waste material made up of iron oxide and silica (sand). Slag was poured off and run through water to cool and granulate it. Molten matte was smelted in converter furnaces to create crude “blister” copper and more slag. At this point slag itself contained copper and was recycled rather than discarded. Blister copper was further refined in the casting furnaces, cast into anodes, and shipped to Great Falls, where the remaining impurities, metals such as gold and silver, were removed. These valuable by-products were collected and marketed.
+
+The massive black hill near the entrance to Anaconda, directly east of this site, is a slag pile.
+
+During the copper smelting process, the stack acted as a chimney to carry off the smoke and gases produced as by-products. Exhaust from the individual roasting, smelting, and refining furnaces traveled first through a series of dust chambers and flues and then up and out through the stack.
+
+Research and development conducted at the smelter resulted in more efficient methods at each stage of the copper smelting process. The Washoe Smelter contributed to the growth of Montana's copper industry and ensured the name “Anaconda” was recognized as a world leader in metallurgy.
+
+Erected by Montana Historical Society and Montana Department of Fish, Wildlife & Parks.

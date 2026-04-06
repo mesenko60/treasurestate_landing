@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 91535
+Slug: the-great-divide-trophy
+Title: The Great Divide Trophy
+Subtitle: How Montana Became Montana Without the Great Divide Between the Bobcats and the Grizzlies
+Town: Whitehall
+County: Jefferson
+Lat / Lng: 45.90802, -112.32249
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Montana was part of Idaho Territory in 1863. In 1864 when the Idaho Territorial Legislature agreed to a separate Montana Territory, its members wanted the boundary to be the Continental Divide. When the separation bill was proposed in Congress, however, James Ashley of the House Committee on Territories and Idaho Territorial Judge Sydney Edgerton placed the border along the Bitterroot Mountains. The survey followed its current jagged line from Yellowstone Park west and north until it reached about 60 miles from Canada. Ashley and Edgerton then determined that the boundary was veering too far west, so they ran it straight north to Canada, creating the one flat section of Montana’s western boundary. The Idaho Legislature protested the proposed border and petitioned Congress to restore the “stolen” lands with no success. Think of it, if the boundary between Montana and Idaho had been the Continental Divide, The University of Montana’s Grizzlies at Missoula would have been in Idaho and Montana State’s Bobcats at Bozeman would have been in Montana there would be an even greater Great Divide between the Cats and the Griz.
+
+Montana’s crown jewel of sporting events takes place every fall. It's the annual football contest between The University of Montana Grizzlies and Montana State University Bobcats. The frenzy surrounding the Brawl of the Wild game between the Bobcats and Grizzlies is evident in every corner of the state. The passion to win that contest binds and divides families, neighbors and communities.
+
+The game is the football rivalry divided by a mountain range, the Continental Divide. The first game took place in 1897 in Missoula. Since then both schools have enjoyed success on the gridiron. The two schools battled twice in one season seven times between 1898 and 1913. The contest was moved to Butte in 1926. The Griz and Cats did battle in the Mining City from 1926 to 1950, battling for the Copper Bowl from 1946 to 1950. The annual contest was moved to the campus sites in Bozeman and Missoula starting in 1951.
+
+Beginning in 2001, the two teams started playing for the Great Divide Trophy. The trophy was created to resemble Bear Mountain, which can be seen off in the distance. The mountain sits on the Continental Divide, the heart and soul of Montana. The victorious team displays the traveling trophy on their campus for the following year. The Bobcats and Grizzlies will battle for the Great Divide Trophy throughout the century. The team with the most wins during the 21st century will keep the trophy permanently following the 2100 game. Bear Mountain and the Great Divide Trophy are landmarks for all Montanans.
+
+The original painting, by Dave Samuelson, hangs in the Montana Historical Society. The painting was used to create the Great Divide Trophy which goes to the winning institution's campus each year.

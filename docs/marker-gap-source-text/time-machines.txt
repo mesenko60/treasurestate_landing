@@ -1,0 +1,52 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 45054
+Slug: time-machines
+Title: Time Machines
+Subtitle: The Red Bus Rides Again
+Town: East Glacier Park
+County: Glacier
+Lat / Lng: 48.44308, -113.22262
+Topics: transportation
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+A Glacier Tradition
+
+National parks often seem timeless and are valued for the continuity of experience they offer to generations of visitors. At Glacier National Park, the past and future come together through a fleet of historic buses, time machines for a unique touring experience across the crown of the continent.
+
+Glacier's time machines are refurbished vintage White Motor Company touring buses. These bright red icons of Going-to-the-Sun Road have been taking passengers through the park for nearly 70 years, providing sightseers an opportunity to enjoy Glacier's spectacular scenery and wildlife free from the distraction of driving. The red buses hold the record for the longest continuous service of any fleet in the United States, and perhaps the world; but, these old veterans needed some special attention....
+
+Back for the Future
+
+Glacier's time machines needed an upgrade. By 1999, the buses were still running on mostly 1930's technology. Concerns about safety brought the fleet to a standstill and the buses were pulled from service. Seasons unfolded, but without the familiar flash of red, the landscape was incomplete. Everyone mourned the loss, so linked were the buses to Glacier's history and spirit.
+
+The big break came when Ford Motor Company stepped in with a plan to rehabilitate the buses with new technology. The outdated red buses could be brought back to life, using modern engineering to save a cultural treasure while making the buses safer, cleaner, fuel efficient, and more comfortable. In June 2002, the plan became reality. And now a new generation of travelers will ride the red buses once again.
+
+What's New with the Old Red Buses
+
+• Ford E-450 chassis stretched to original wheel base
+
+• 5.4L V8 bi-fuel engine using LPG
+
+• Aluminum honeycomb floor to increase strength
+
+• Emissions are 93% cleaner
+
+• Lighter-weight rear door and body reinforcement
+
+• Upgraded glass and lighting
+
+• Upgraded instrument panel
+
+• Body painted with environmentally friendly paint
+
+Getting Around Glacier
+
+Build it and they will come. Directors of the Great Northern Railway saw the financial wisdom in such a motto and found Glacier National Park the perfect place to implement it. The Great Northern constructed a series of hotels and chalets throughout the park, each within an easy day's travel from each other. Visitors arrived by rail and then toured the park on horseback and in stage coaches. As roads were constructed around the park, motorized transportation became the preferred means of travel. Full-time motorized transportation in Glacier began in the 1914 season. The buses went through a series of upgrades as technology advanced and roads improved.
+
+Partners in Preservation
+
+The red bus project required a team of over 200 experts and took nearly three years to complete. The Ford Motor company shared its environmental leadership, vision, and generosity with the project. The following partners were instrumental in making the red buses ride again.

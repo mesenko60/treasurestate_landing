@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 183612
+Slug: the-anaconda-pintler-and-flint-creek-mountains
+Title: The Anaconda-Pintler and Flint Creek Mountains
+Town: Anaconda
+County: Deer Lodge
+Lat / Lng: 46.09282, -112.80804
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The mountains surrounding this valley began to form more than 100 million years ago when tectonic forces compressed the earth's crust and forced layers of underlying sedimentary rock eastward along great thrust faults. The faults stacked flat slices of rocks on top of one another to form high mountains similar to the Andes or Himalayas today. Molten rock was injected beneath the surface and cooled to form large masses of granite, called the Boulder Batholith, that are now exposed on the east side of the Deer Lodge Valley. Then, about 50 million years ago, the earth's crust in this region began to be pulled apart. The crustal rocks were broken and the Anaconda-Pintler and Flint Creek Mountains to your west were separated from the Deer Lodge Valley by a gentle east-sloping normal fault called the Anaconda detachment fault that forms the gently sloping mountain front on the west side of this valley.
+
+Rocks that form the mountains are hard, resistant metamorphic and igneous rocks brought up from deep in the earth's crust. The sedimentary rocks that formerly lay on top of those in the mountains slide eastward and downward along the detachment fault, and now lie buried beneath the Deer Lodge Valley. As the valley dropped and the mountains rose, the valley filled with thousands of feet of younger material derived from the eroding mountains. Although the Anaconda detachment fault is no longer active, other similar, but steeper, normal faults are, and so the mountains may still be growing.
+
+Geo-Facts:
+
+Metamorphic rocks result from great heat and pressure that cause the original rocks to re-crystallize forming new rocks that are changed in mineralogy and texture.
+
+The Boulder Batholith formed from magma that solidified underground about 70 to 80 million years ago and was later exposed at the surface. Some of the richest gold, silver, and copper mines in Montana are located in the batholith.
+
+A fault is a fracture in the earth's crust separating blocks of rocks that move past each other. A normal fault occurs when the hanging wall of a fault is moved downward along the foot wall.
+
+Geo-Activity:
+
+Look for something in your vehicle that you can fold and tear such as a piece of paper or a slice of bread. See if you can fold it to mimic the way flat slices of rock stacked on top of one another to form the Anaconda-Pintler and Flint Creek Mountains. Then pull the mountains apart in the same way a fault separated the mountains from the Deer Lodge Valley.
+
+In 1852, Francois Finlay discovered gold on Gold Creek near the northern end of the Flint Creek Mountains. It was the first gold found in Montana and touched off a stampede to the area in 1858. By 1863, the mines had played out and the miners moved on to richer strikes in the territory.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,38 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161936
+Slug: welcome-to-the-mountain-ranges
+Title: Welcome to the Mountain Ranges
+Subtitle: Crossroads for Centuries
+Town: Big Sandy
+County: Chouteau
+Lat / Lng: 47.73877, -109.62222
+Topics: 
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+Once home to grazing dinosaurs, the lands surrounding you still exhibit the qualities that have made the Judith Landing area an important crossroads throughout human history. Here, at the confluence of two rivers, trees grow more densely than elsewhere in this part of Montana, and it's the easiest place to cross the Missouri for miles in either direction. The ready availability of water, wood, forage and sheltered space led numerous Indian tribes and their ancestors to converge her for seasonal hunts and meetings.
+
+These lands were widely known, and the river routes well-traveled, long before the Lewis and Clark Expedition camped here in 1805. For the same reasons barely a generation later, two pivotal Indian treaties were negotiated and signed here. When Euro-American immigration began in earnest in the mid-1860s the Missouri River became an interstate highway for supplies and people, and this areas geography made it a primary stopping point along the way. Until railroads were completed in 1887, most everything that entered or left Montana passed here.
+
+Ranching began on these lands in 1881, and has continued ever since. Today with the help of a program called Undaunted Stewardship the Wortman Ranch manages its land and livestock so that grazing preserves the land's historic character and maintains habitat for wildlife and waterfowl. Welcome to a glimpse of this area's ghosts, its life and its future—enjoy your visit.
+
+1. Fort Clagett (1869-1878), trading post 2. Camp Cooke (1866-1869), first military post in Montana 3. Fort Chardon (1844-1845), a trading post that failed because Indians distrusted its founder for having led a massacre of Piegan, members of the Blackfoot Confederacy.
+
+4. Judith River, named by Captain William Clark after Julia Hancock, his future wife, called Oo-tan-kwi-si-sa-tan, or Yellow River by the Blackfeet.
+
+5. The original Judith Landing and site of the P-N Cable Ferry crossing at the Power-Norris Ranch where many of the structures built as early as 1880 still stand.
+
+6. Lohs Ferry site operated 1923-?.
+
+7. Dog Creek, called Bull Creek by Lewis and Clark.
+
+8. Lewis and Clark Expedition campsite on May 28, 1805.
+
+9. Indian treaty sites (1840 and 1855).
+
+10. Wortman Ranch Headquarters 11. Council Island, named for the treaty councils that occurred on the mainland.
+
+Erected by Undaunted Stewardship.

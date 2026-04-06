@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 124268
+Slug: the-way-it-used-to-be-way-back
+Title: The Way It Used To Be... Way Back
+Town: Polaris
+County: Beaverhead
+Lat / Lng: 45.2812, -113.1223
+Topics: exploration, nature
+Year erected: 
+Erected by: USDA Forest Service, University of Montana - Western
+
+--- Inscription (as stored for the site) ---
+
+July 8, 1806
+
+The Way It Used To Be... Way Back
+
+Just over two hundred years ago...
+
+We proceeded down Willards Creek on the S.W. Side about 11 miles...The Country through which we passed to day was diversified high dry and uneaven Stoney open plains and low bottoms very boggy with high mountains on the tops and North sides of which there was Snow, great quantities of the Species of hyssop (sagebrush) & shrubs common the Missouri Plains are scattered in this Valleys and hill sides. The road which we have traveled from travellers rest Creek to this place an excellent road. ...Shields killed an antelope. -- William Clark, July 8, 1806
+
+The Land Seems Timeless
+
+The elevation here is about 6,100 feet (1,859 m above sea level). The granite peak of Baldy Mountain to the northeast - Sacajawea's landmark for the route of the expedition in this area - is 10,568 ft (3,221 m). The native plants and animals of 200 years ago can still be seen here. The July nights are still "remarkably Cold," as Clark described them. Little has changed since the time of Sacajawea's ancestors - who came to this place long before she guided the Corps of Discovery and William Clark here. If she were here today, Sacajawea would easily recognize this place. Yet, the Pioneer Mountains aren't quite like they used to be, and things here will be different in the future. In the scope of geology time, this landscape is dynamic and rapidly changing.
+
+But Way Back...47 Million Year Ago?
+
+How different Clark's journal entries might have been at that time! 47 million years ago, there were no Pioneer Mountains. This was the edge of the Renova Basin, draining to the east. No snow, no sagebrush, no antelope. Fossils show the climate was tropical.
+
+Raising the Pioneers
+
+The Pioneer Mountains started rising about four million years ago - and they are still rising. About 17 million years ago, the earth's crust in this region began to extend, or stretch. It is becoming thinner and more flexible, allowing the super-hot molten magma of the aesthenosphere to bulge upward. This causes blocks of crust to move up or down along faults, which are like cracks in the earth's crust.
+
+The crust in this region has broken along northwest-trending normal faults, and the rising blocks are building the Pioneer Mountains, while adjoining blocks have dropped down, deepening the valleys.
+
+At Fault: Earthquakes
+
+As blocks of the earth's crust move up and down along a fault, the rocks are stretched, and energy is released as an earthquake. The place the rocks break is called the epicenter of the quake. It can be thousands of feet or even miles below the surface along a fault. The more energy is released, the higher the magnitude of the earthquake. A person might pass a lifetime here without experiencing an earthquake, but in the millions of years of geologic time, earthquakes here are common.

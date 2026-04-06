@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 282901
+Slug: land-of-many-uses-sulphur-springs-hiking-trail-lewis-and-cla
+Title: Land of Many Uses / Sulphur Springs Hiking Trail / Lewis and Clark Reach the Rapids
+Town: Shonkin
+County: Chouteau
+Lat / Lng: 47.58222, -111.06468
+Topics: exploration, landmarks
+Year erected: 
+Erected by: U.S. Forest Service, NorthWestern Energy, River Fund, Montana Fish, Wildlife & Parks
+
+--- Inscription (as stored for the site) ---
+
+Delayed by a Decision…Which Way to go?
+
+An unexpected fork downriver bewildered the explorers and delayed their progress.
+
+Captain Meriwether Lewis and four men journeyed overland primed with Indian information that waterfalls marked the Missouri River. The men quickened their pace upon hearing a distant sound of falling water, and their arrival at the :sublimely grand spectacle" on June 13, 1805 confirmed their correct choice of rivers. Marias River, the fork not taken, lay 50 miles downriver.
+
+Erected by U.S. Forest Service, NorthWestern Energy, River Fund, Montana Fish, Wildlife & Parks.

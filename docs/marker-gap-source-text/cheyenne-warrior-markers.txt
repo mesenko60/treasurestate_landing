@@ -1,0 +1,32 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86860
+Slug: cheyenne-warrior-markers
+Title: Cheyenne Warrior Markers
+Subtitle: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.56752, -107.42402
+Topics: cemeteries, native-american, military
+Year erected: 
+Erected by: National Park Service
+
+--- Inscription (as stored for the site) ---
+
+After the battle, Sioux and Cheyenne removed their dead and buried them in tipis, scaffolds, and adjacent hillsides in the Little Bighorn valley. Southern Cheyenne Chief “Ve’ho’enohnenehe” (Lame White Man) and Northern Cheyenne “Nestonevahtsestse” (Noisy Walking) fell below this ridge during the battle. Their families erected stone cairns to commemorate the casualty site of their loved ones.
+
+In 1916 Sioux and Cheyenne battle veterans showed Cheyenne historian John Stands in Timber the cairns and he in turn showed them to Don Rickey, Jr., Custer Battlefield Chief Historian in 1956. In 1958 the National Park Service erected a wooden sign along the ridge to identify the site of Lame White Man’s death. On June 25, 1999, red granite markers were erected by the NPS adjacent to the cairns as fitting memorials and to help visitor understanding of known warrior casualty sites during the Battle of the Little Bighorn.
+
+“Young men, come now with me and show your selves to be brave.”
+
+- Lame White Man, Southern Cheyenne, June 25, 1876
+
+“The soldiers were on the high ground and [in] one of the first charges we made, a Cheyenne Chief named White Man Cripple [Lame White Man] was killed.”
+
+- Waterman, Northern Arapaho
+
+“He [Noisy Walking] was lying on a ground bed of buffalo robes under a willow shelter . . . . I asked my friend ‘How are you?’ He replied ‘Good only I want water.’ I did not know what else to say but wanted him to know I was his friend and willing to do whatever I could for him . . . . I said you were very brave.”
+
+- Wooden Leg, Northern Cheyenne
+
+Erected by National Park Service.

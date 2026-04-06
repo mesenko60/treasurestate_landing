@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 166850
+Slug: who-was-luther-sage-yellowstone-kelly
+Title: Who was Luther Sage "Yellowstone" Kelly?
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79811, -108.48923
+Topics: cemeteries, military
+Year erected: 
+Erected by: Yellowstone Kelly Interpretive Si
+
+--- Inscription (as stored for the site) ---
+
+Born on July 27, 1849, Kelly, a native of Geneva, New York, is best known as an army scout during the Army's closing campaign against the nomadic Indian tribes of the Northern Plains in the late 1860s and 1870s.
+
+Always a restless spirit, Luther S. Kelly would later accompany military and scientific expeditions to Alaska, serve as a Captain during the Philippine-American Insurrection, and work as U.S. Indian Agent for the San Carlos Apache Reservation in Arizona. A friend of Teddy Roosevelt, Kelly was counted among Roosevelt's "Tennis Cabinet." the president's informal sportsmen group.
+
+Yellowstone Kelly and May, his wife, retired to California to operate a fruit ranch. In failing health, he asked to be buried in Montana, the site of his greatest adventures. Yellowstone Kelly died on December 17, 1928 and was buried here six months later with full military honors.
+
+The Grave of Luther Sage "Yellowstone" Kelly
+
+"All was silent as the grave, save the wind sighing through the cedars."
+
+Yellowstone Kelly describing the final resting place of a fellow soldier.
+
+You are entering the burial ground of the warrior, veteran, and scout, Luther S. "Yellowstone" Kelly. The east end of Swords Rimrock Park was the burial place of many historic peoples and is considered hallowed ground by native tribes. Scaffold tree burials of the Apsáalooke (Crow), the ancestral people who still live in Montana today, were located nearby. Also in the vicinity, the people of Coulson, a short-lived frontier settlement (1877-1882), established there graveyard at what is now known as Boothill Cemetery.
+
+Please tread respectfully.
+
+Erected by Yellowstone Kelly Interpretive Site.

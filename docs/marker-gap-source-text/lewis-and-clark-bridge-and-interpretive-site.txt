@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142949
+Slug: lewis-and-clark-bridge-and-interpretive-site
+Title: Lewis and Clark Bridge and Interpretive Site
+Town: Wolf Point
+County: Roosevelt
+Lat / Lng: 48.06449, -105.53385
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Over there...
+
+This location has long been an important river crossing. Buffalo herds used it for centuries. The Assiniboine named it "Crow Ford" because the Crow used it during their raiding campaign. Ferries operated at this location from 1895-1920. Winter was especially dangerous because the ice was the only way to cross until the bridge was built.
+
+Crossing Over Time
+
+Officially dedicated in 1930 and popularly known as the Lewis and Clark Bridge and the Wolf Point Bridge, this structure was listed on the National Register of Historic Places in 1997. It represents the last example of a riveted Pennsylvania through truss bridge in Montana.
+
+Follow me...
+
+Continue your journey on the north side of the Missouri. Visit Lewis and Clark Park.

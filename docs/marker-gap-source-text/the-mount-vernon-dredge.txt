@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 49570
+Slug: the-mount-vernon-dredge
+Title: The Mount Vernon Dredge
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.30526, -111.9655
+Topics: industry
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+In its first five years, Alder Gulch produced between 30 and 60 million in gold. By 1874 about 35,000 people lived in the gulch. Times ran out but the gold never did. You can still find it here in the hills and streams of Alder Gulch.
+
+There were 5 dredges working this stream at one time. They ranged in size from a No. 2 to a No. 16, the world’s largest dredge. They removed from 150 to 200 million dollars in gold. The Mount Vernon Dredge is a No. 2 dredge and was donated to the museum by Mr. Harold Lynch and Mr. Joe Gray in 1985. It worked Deadwood Gulch and Crooked River of Idaho.
+
+The dredge was built at a cost of $37,350 in 1937. The bucket line has 65 two cubic foot buckets and digs 2,000 cubic yards per day. It has a digging depth of 20 ft and was powered by diesel electric generators. The gravel, which contains the free gold, is picked up in the buckets, dumped into a revolving screen, referred to as a trommel, where it is washed. Oversize gravel is dumped behind the boat with a conveyer belt, referred to as a stacker. The gold bearing gravel passes into riffled sluice boxes, then into a mercury trap before being discharged at the rear of the boat. On clean-up day the sluices are cleaned, the amalgam restored and sent to the smelter. The Chilean Wheel, sometimes called Chi Mill by Americans, was a superior crusher capable of being powered by a water wheel. Its origin was the threshing floor of the ancient Middle East. The Chilean Wheel was not the best invention in the world but it had one important virtue, it could be cheaply erected almost anywhere and used animal or water power. The Chilean Wheels being displayed were donated to the museum by Lester and Mary Stiles. Nicholas Carey, Mary’s grandfather arrived here in the fall of 1863, after walking from Denver. Her grandmother, Mary Carey arrived in 1864 by wagon train. By Mary Carey’s directions the wheels were later located by Lester Stiles several miles up Browns Gulch.
+
+The other mining relics on display throughout the grounds have been collected from numerous mining sites in Montana.

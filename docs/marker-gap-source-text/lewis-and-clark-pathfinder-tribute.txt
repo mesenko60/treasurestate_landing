@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 145710
+Slug: lewis-and-clark-pathfinder-tribute
+Title: Lewis and Clark Pathfinder Tribute
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 45.21712, -112.63824
+Topics: 
+Year erected: 1928
+Erected by: Daughters of the American Revolution Beaverhead Chapter
+
+--- Inscription (as stored for the site) ---
+
+The Lewis and Clark Expedition passed this way going west August, 1805 and returning July, 1806.
+
+‘Though the Pathfinder may die, the paths remain open.’
+
+Beaverhead Chapter Daughters of the American Revolution. June 14, 1928
+
+Erected 1928 by Daughters of the American Revolution Beaverhead Chapter.

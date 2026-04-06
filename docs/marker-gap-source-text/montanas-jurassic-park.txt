@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191043
+Slug: montanas-jurassic-park
+Title: Montana's Jurassic Park
+Town: Big Timber
+County: Sweet Grass
+Lat / Lng: 45.73576, -109.75629
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+About 150 million years ago, during late Jurassic times, dinosaurs ruled the earth. Much of Montana was underwater, part of an arm of an inland sea that extended southward from the Arctic Ocean. Distinct wet and dry seasons characterized the semi-arid climate. Conifer trees, cycads, and ferns covered the land. It was the age of sauropods, gigantic herbivorous dinosaurs that browsed trees and ferns in that ancient environment. In Montana, the most common sauropod was Diplodocus, one of the longest dinosaurs with full-grown adults averaging 100 feet in length. The graceful long neck of the animal was well adapted to browsing on the vegetation of that time. Diplodocus coexisted with the enormous Apatosaurus, Brachiosaurus, and Camarasaurus as well as Stegasarus, and primitive birds and mammals. Groups of juvenile Diplodocus have been found in Montana that got themselves stuck in mud while crossing rivers. These groups suggest that these giant dinosaurs were very social, similar to birds, the descendants of dinosaurs.
+
+The sauropods were preyed on by Allosaurus, a large meat-eating dinosaur that may have been at the top of the late Jurassic food chain. Allosaurus was an active predator, who pursued and killed its quarry. The animal averaged 28 feet in length and could reach speeds of 19 to 34 mph when hunting. Allosaurus teeth had saw-like edges that are often found with Diplodocus fossils. Allosaurus has also been found in groups suggesting that they too were very social.
+
+Morrison Formation
+
+Jurassic fossils are found in the Morrison Formation, sandstones and mudstones that were deposited about 155 to 150 million years ago. At that time, this part of Montana was a vast coastal plain that bordered the southern edge of the shallow inland sea. The Morrison Formation consists of layers of sandstone deposited by rivers alternating with lakes of mudstone, which originated as river flood plains. Most of the exposures of the formation in Montana are around the edges of mountain ranges, like the Crazy Mountains to the northwest.
+
+Geo-facts:
+
+• The inland sea was populated by marine reptiles like Ichthyosaurus and the long-necked Plesiosaurs.
+
+• Diplodocus was not only the largest known dinosaur in North America during the Jurassic times, it is also one of the most common fossils found in the upper Morrison Formation.
+
+• Although some paleontologists speculate that Allosaurus hunted in packs, fossils have revealed that the animals sometimes didn't get along well together. The bones show breaks, punctures, and other lesions that may have occurred when the animals were attacked by other Allosaurus.
+
+Geo-activity:
+
+• You can see fossils of Jurassic dinosaurs at the Museum of the Rockies in Bozeman and the Great Plains Dinosaur Museum in Malta.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142928
+Slug: the-ice-ages
+Title: The Ice Ages
+Town: Glasgow
+County: Valley
+Lat / Lng: 48.36992, -106.7925
+Topics: nature, transportation
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+For thousands of years, northern Montana was covered under massive ice sheets. Glaciologists aren't sure why the ice ages began, but the process of glaciation is known because of the mark it leaves on the landscape. About 190,000 years ago, glaciers pushed their way onto the northern Great Plains of Montana from the north and northeast. This area was near the southern extent of the glacial ice sheet, so the ice depth was thinner than it was further north. As the glacier moved south, it blocked the Missouri River, forcing it to seek an ice-free channel to the south.
+
+The ice sheet lasted until about 130,000 years ago when it melted away. The ice left behind a radically changed landscape, dotted with small ponds and glacial till. Large boulders, called erratics, now litter the plains in this area along with extensive gravel beds. The glacier deposited the material as it moved across the landscape or it was deposited after the ice sheets melted. Some of the erratics came from as far away as northern Manitoba or were torn from rock outcrops west of Lake Winnipeg. The Missouri River never returned to its original channel, instead it is now occupied by the Milk River between Havre and Wolf Point. About 25,000 years ago, the Wisconsin ice sheet pushed south into northeastern Montana, but the highlands to the northwest diverted the glaciers to the east and west, leaving a large ice-free pocket between Glasgow and Hinsdale. The Wisconsin ice sheet retreated from Montana about 11,000 to 8,000 years ago.
+
+In 1919, motorists called US 2 the Theodore Roosevelt International Highway. Promoted as "the most wonderful Highway in America," the road in Montana was a series of interconnected rutted country roads that became gumbo mud when wet. Despite the hazards, the route was a popular one with motorists in the early days of automobile travel.
+
+Geo-Facts:
+
+• The bedrock between Malta and Wolf Point is dark shales and brown sandstone deposited in the shallow water of the Western Interior Seaway during Cretaceous time.
+
+• Glaciologists aren't sure how thick the ice was during the glacial periods in northeastern Montana. The glaciers thickened and thinned with the seasons and during the advance or retreat of the ice sheets.
+
+• During the thousands of years between the Illinoian and Wisconsin ice sheets, mammoths, giant bison and horses lived in this area.
+
+Geo-Activity:
+
+• As you drive through the area, see if you can spot some of the clues that this area was once covered by glaciers. Some suggestions are small ponds, gravel piles, and large boulders that look out of place.
+
+Erected by Montana Department of Transportation.

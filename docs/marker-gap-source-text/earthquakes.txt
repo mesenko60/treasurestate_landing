@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 271543
+Slug: earthquakes
+Title: Earthquakes!
+Town: Cameron
+County: Madison
+Lat / Lng: 44.90209, -111.59324
+Topics: disasters, nature
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Few natural events cause as much fear in people as earthquakes. They remind us that the Earth is always changing and renewing itself and that this sometimes occurs violently and without warning. Earthquakes happen when stored energy is suddenly released by movement along a fault. A fault is a fracture that allows blocks of rocks to slide past each other. Tectonic forces gradually apply stress to the fault but friction along the fault keep the two sides locked in place. Eventually, the stress builds to the point where frictional forces locking the fault are exceeded and opposite sides of the fault suddenly slip past each other, releasing the stored energy. Some of this released energy radiates away from the fault surface as seismic waves, which we feel as an earthquake. The earthquakes in southwestern Montana are part of Intermountain Seismic Belt, a zone of frequent earthquake activity that extends about 800 miles from northwest Montana southward through Yellowstone National Park, through the Salt Lake City area, and all the way to southwestern Utah. A branch of the Intermountain Seismic Belt extends from Yellowstone about 300 miles west of the Idaho-Oregon border. The Intermountain Seismic Belt results from gradual stretching of the North American tectonic plate as it interacts with the Pacific tectonic plate.
+
+On August 17, 1959, a magnitude 7.3 earthquake struck Hebgen Lake about 12 miles northeast of here. The earthquake ruptured two faults, the Hebgen Lake fault and the Red Canyon fault, and caused parts of the Hebgen Lake basin to subside as much as 22 feet. The sudden tilting of Hebgen Lake caused a large wave - a seiche - to wash back and forth across the lake overtopping Hebgen Dam and sweeping shoreline cabins off their foundations. It also shook loose a mountainside - the 37 million cubic yard Madison Canyon landslide - that dammed the Madison River to form Earthquake Lake. The landslide buried part of a campground, killing 26 people.
+
+Geo-Facts:
+
+• Montana is one of the more seismically active states in the United States. An average of five earthquakes occur every day. Most are so tiny that a sensitive seismograph is needed to detect them.
+
+• The Hebgen Lake earthquake was felt over an area of 600,000 square miles including all of Montana and from Banff, Canada to Provo, Utah, and from western North Dakota to Seattle, Washington.
+
+• Earthquake strength is measured using the Richter scale, which measures the seismic energy released by a quake and by the Mercalli scale, which measures the intensity by calculating the effects of it on the Earth's surface, humans, and man-made structures.
+
+Geo-Activity:
+
+• Movement along the Hebgen Lake and Red Canyon faults offset the land surface to form a fault scarp that runs like a scar along the north side of Hebgen Lake. Look for these fault scarps at the base of the mountains as you drive east along the Hebgen Lake.
+
+Erected by Montana Department of Transportation.

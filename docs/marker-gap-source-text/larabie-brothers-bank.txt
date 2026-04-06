@@ -1,0 +1,18 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 209635
+Slug: larabie-brothers-bank
+Title: Larabie Brothers Bank
+Subtitle: This Property Contributes to Deer Lodge Central Business Historic District
+Town: Deer Lodge
+County: Powell
+Lat / Lng: 46.3988, -112.73509
+Topics: 
+Year erected: 
+Erected by: Montana Historical Society
+
+--- Inscription (as stored for the site) ---
+
+Wide cement pilasters, a gabled pediment above the entrance, large plate-glass windows, and a roofline balustrade distinguish the Larabie Bros. Bank. The building’s solid construction, dignified façade, and luxurious interior—finished in marble and mahogany—assert stability, respectability, and permanence. Designed by Seattle architect Michael Beezer, the 1912 structure combined modern materials with neoclassical elements, presenting customers visual assurance that their money was safe. This was no small matter in the days before Federal Deposit Insurance. The reputation of the firm’s owners offered additional security. The bank grew from a Virginia City mercantile business, whose principals included S. E. Larabie and W. A. Clark, later better known as one of the Butte copper kings. In 1869, the partners operated from an adobe building on Main and Cottonwood. The firm dissolved in the 1880s, with Larabie continuing to run the Deer Lodge bank from a brick building on this corner. Half of Montana’s banks failed in 1923, but through prudent management, Larabie Bros. Bank survived the 1920s agricultural depression. Unable to comply with New Deal banking regulations, it closed in 1933. Wide cement pilasters, a gabled pediment above the entrance, large plate-glass windows, and a roofline balustrade distinguish the Larabie Bros. Bank. The building’s solid construction, dignified façade, and luxurious interior—finished in marble and mahogany—assert stability, respectability, and permanence. Designed by Seattle architect Michael Beezer, the 1912 structure combined modern materials with neoclassical elements, presenting customers visual assurance that their money was safe. This was no small matter in the days before Federal Deposit Insurance. The reputation of the firm’s owners offered additional security. The bank grew from a Virginia City mercantile business, whose principals included S. E. Larabie and W. A. Clark, later better known as one of the Butte copper kings. In 1869, the partners operated from an adobe building on Main and Cottonwood. The firm dissolved in the 1880s, with Larabie continuing to run the Deer Lodge bank from a brick building on this corner. Half of Montana’s banks failed in 1923, but through prudent management, Larabie Bros. Bank survived the 1920s agricultural depression. Unable to comply with New Deal banking regulations, it closed in 1933.
+
+Erected by Montana Historical Society.

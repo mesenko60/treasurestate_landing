@@ -1,0 +1,53 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 113576
+Slug: the-nights-peace-was-shattered
+Title: The Night’s Peace Was Shattered
+Town: West Yellowstone
+County: Gallatin
+Lat / Lng: 44.80399, -111.18811
+Topics: disasters
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+It began as an idyllic August night. A full moon soared quietly over Yellowstone country. Along Hebgen Lake and the Madison River, campgrounds and vacation cabins were full to capacity, and scores of families were camped by the roadside.
+
+Waking up to a Changed World
+
+Just a few minutes before midnight, the night’s peace was shattered as the earth began to jolt violently. Shaken awake, people began to emerge from tents, cars and cabins all along the Madison River and Hebgen Lake to find trees thrashing, dust clouds rising, and the night in chaos. It was only the beginning of an ordeal that none would forget.
+
+This magnitude 7.5 earthquake is the largest earthquake recorded in the Rocky Mountains. It affected hundreds of lives: 28 people were killed, over 250 were trapped in Madison Canyon, and hundreds more lost loved ones or friends, or saw their homes and businesses damaged.
+
+August 17, 1959 11:37pm
+
+Earthquake strikes and fault scarps form.
+
+Minutes later
+
+Hebgen Lake begins to slosh back and forth. Waves overtop the dam and damage lakeside buildings.
+
+Destabilized shorelines slide into the lake taking parts of Highway 287.
+
+Minutes later
+
+An 80-million-ton landslide blocks the Madison River and cuts off the exit road for campers.
+
+August 18, Midnight to Dawn
+
+Earthquake Lake, rises rapidly, swallows campsites, as aftershocks continue. People scramble for safety, rescue the stranded, and tend to the injured. Fearing that Hebgen Dam will break, many head for high ground.
+
+Dawn to Noon
+
+Helicopters and planes scan the wreckage and report on the damage.
+
+Just before Noon
+
+Forest Service Smokejumpers parachute in to assist the trapped campers and prepare an evacuation.
+
+Noon to 3:00pm
+
+The most gravely injured are evacuated.
+
+Dusk The remaining refugees begin to leave the area on an emergency bypass road along Hebgen Lake, while rescue workers continue to search the campsites in the canyon.

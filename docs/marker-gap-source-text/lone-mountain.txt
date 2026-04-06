@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 192623
+Slug: lone-mountain
+Title: Lone Mountain
+Town: Big Sky
+County: Gallatin
+Lat / Lng: 45.26367, -111.25382
+Topics: 
+Year erected: 
+Erected by: Montan Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Geologic processes have created a winter wonderland for skiers and snow boarders on Lone Mountain, the prominent peak that rises above Big Sky. Some geologists think that if the mountain was cut in half, there would be a Christmas tree pattern of igneous rock within the layers of sandstone and shale. Magma from deep in the earth rose up along a vertical crack, then spread out laterally between the layers of sedimentary rock. The magma never erupted as a volcano, but crystalized into an igneous rock called dacite before reaching the surface of the earth. The "trunk and branches of the tree" are dacite. The igneous rock and adjacent baked sedimentary rocks are much more resistant to erosion than softer sedimentary rock, which has eroded away to leave the mountain standing tall. Glaciers, landslides, and rock fall have greatly modified Lone Mountain. The cirques contain rock glaciers, which are piles of rock with year-round ice in their cores. Like ice glaciers, they slowly creep down the mountain slopes.
+
+The rugged mountains to the northwest of Big Sky are the Spanish Peaks, composed of metamorphic rock that is billions of years older than the igneous and sedimentary rocks of Lone Mountain. These extremely old rocks were brought up from the depths along an enormous fault zone that extends from the Tobacco Root Mountains to the town of Gardiner north of Yellowstone Park.
+
+The mountains provided a spectacular backdrop for visitors to one of the Gallatin Canyon's many dude ranches. The ranches offer visitors adventure and a taste of the Old West. They rode horses, hiked mountain trails, fished the area's trout streams, and reveled in the solitude of the mountains. The ranches were immensely popular before World War II, but their popularity diminished in the 1950s until now only a few remain.
+
+GeoFacts:
+
+• This area contains the northern most remnants of the 1.7 million-year-old Huckleberry Ridge Tuff, which was deposited by extremely hot flows of volcanic ash that swept across the region. The ash was the product of immense eruptions from the Yellowstone Caldera, about 50 miles to the south.
+
+• A volcanic field covered an area of about 9,000 square miles of southern Montana and northern Wyoming about 50 million years ago, including much of the Gallatin Range. Many large, violent eruptions occurred that deposited volcanic rocks over a vast area.
+
+• A cirque is a bowl-like valley or hollow carved by a glacier.
+
+Geo-Activity:
+
+• Remember that Lone Mountain is a volcano that never erupted. Why? Because magma that rose up through the mountain spread out among the rock instead of erupting out the top of Lone Mountain. Draw a picture of a volcano erupting then draw a picture of what happened to the magma inside Lone Mountain.
+
+Erected by Montana Department of Transportation.

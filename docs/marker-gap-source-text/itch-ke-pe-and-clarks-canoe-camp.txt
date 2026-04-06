@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 252996
+Slug: itch-ke-pe-and-clarks-canoe-camp
+Title: Itch-ke-pe and Clark's Canoe Camp
+Subtitle: Clark's Yellowstone River Camps
+Town: Columbus
+County: Stillwater
+Lat / Lng: 45.64225, -109.25165
+Topics: exploration, native-american
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+”I deturmined to have two Canoes made out of largest of those trees and lash them together — had handles put in three Axes and after Sharpening them with a file fell the two trees — those appeared tolerably Sound and will make Canoes of 28 feet in length and about 16 or 18 inches deep and from 16 to 24 inches wide.” Captain Clark, from his journals of the Corps of Discovery's Journey
+
+July 18, 1806, while riding downstream on the north side of Rochejhone (Yellowstone) River, 13 members of the now divided Corps of Discovery, led by William Clark, arrived on horseback in what is today Stillwater County, Montana. After a very eventful week in Crow country they departed, July 24, in two dugout canoes.
+
+Friday evening, July 18, they camped about three miles west of the present location of Columbus, Montana. That evening, Pvt. George Gibson severely injured his thigh in a fall while mounting his horse. And with “Sharbono” still badly bruised from a horse fall in the Big Timber area, making two injured men, the need to return to traveling by water rather than by horseback quickened the search for suitable trees to build dugouts.
+
+Continuing east Saturday morning, July 19, they passed the mouth of the Itch-ke-pe ar-ja (Rosebud River), now the Stillwater River, when they saw an Indian fort just downstream and opposite the Itch-ke-pe near today's site of the bicentennial canoe camp event. The river was so named by the Indians because of the numerous wild roses along her banks. Suitable-sized Cottonwood trees were located about 10-12 miles east of this Indian fort. That evening, the men made handles from chokecherry wood for the three axes and began the work of felling the Cottonwood trees and building two dugout canoes. By Monday evening, July 21, one canoe was nearly finished. The canoe camp was set up near today's Wimsett's and Young's Points.
+
+Upon retiring Sunday evening, July 20, the party had 49 horses and one colt. During the night, Crow Indians took 24 of them while the rest of the herd ran off into “a Small Prarie Serounded with thick timber in the bottom” and were not found for three days. The fresh supply of jerky made for the canoe trip was eaten by wolves, Tuesday night, July 22.
+
+Late Wednesday, July 23, the two dugouts were completed, had been put into the water and lashed together ready for an early morning departure. The plan was that four members were to trail the remaining horses and deliver them to the Mandan villages while the other nine members floated the dugouts by Bernard P. Thomas, Oil on Wall mural© and Courtesy Yellowstone Bank
+
+Photography Courtesy of Clark Marten Photography down the Yellowstone River. Ironically, two nights later, the herders were set afoot because Crow Indians had succeeded in taking the rest of the horses. These men then had to build bullboats and catch up to the main party.
+
+Early Thursday morning, July 24, 1806, they "PROCEDED ON".
+
+Corps of Discovery, Yellowstone Expedition Members
+
+William Clark, captain; Nathaniel Hale Prior, sergeant; William E. Bratton, private; George Gibson, private; Hugh Hall, private; Francois Labiche, private; George Shannon, private; John Shields, private; Richard Windsor, private; York, Clark's slave; Troussaint Charbonneau, interpreter; Sacagawea, interpreter; Jean Baptiste Charbonneau, (the baby, "Pomp")

@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 144062
+Slug: early-ovando-years
+Title: Early Ovando Years
+Town: Ovando
+County: Powell
+Lat / Lng: 47.01991, -113.13188
+Topics: 
+Year erected: 
+Erected by: Brand Bar Museum
+
+--- Inscription (as stored for the site) ---
+
+Ovando Town History
+
+This area around Ovando was visited for centuries by various Indian tribes who followed "Cokalahiskit," the River of the Trail of the Buffalo. Now called the Big Blackfoot River, ranchers and loggers began arriving in the 1870s and 1880s. In 1884 the first school house was built, and by the early 20th century the town boasted two general stores, five saloons, two blacksmith shops, a church, a hotel, a drugstore, a barbershop, and a bank. It also was headquarters for the Forest Service. A stage line and telephone company linked the town to Helmville and Drummond and made it a distribution center for the surrounding 75 miles. The anticipated arrival of the Blackfoot Railroad gave further hope for growth. However, events worked against growth for the town of Ovando. The railroad was never built and a devastating fire in 1919 destroyed much of the commercial heart of the town. In addition the Forest Service headquarters moved, drought damaged farm and ranch productivity, and logging declined. In spite of it all, many of the pioneer ranches remain, some into the fifth generation. Today Ovando serves a surrounding population of approximately 300 people and is also a center for outdoor recreation.
+
+Ovando Hoyt
+
+Ovando Hoyt, born in Massachusetts in 1844, made his way to Montana Territory in 1865. After many years in the Bitterroot Valley he settled in the Blackfoot Valley prior to 1882. He engaged in ranching and later opened a general store in 1890. In 1882, when area settlers decided they needed a post office, they asked Mr. Hoyt to write to the U.S. Postmaster. The town fathers suggested the settlement be named "Sadiesville (It is not known who "Sadie" was.). When the post office request was granted by the Washington D.C. postal authorities, they named the settlement "Ovando" because it was a unique name. They also appointed Ovando Hoyt the town's first postmaster, a position he held for the next 16 years.
+
+Ovando Hoyt left here in 1903 and moved to Ellenburg, Washington, where he died and is buried. His log home, which housed the first post office, still stands at the west end of town and is a reminder of the man who gave this town so much including its unusual name.
+
+George Monture
+
+A member of the Metis, the "Landless Indians." George Monture (also spelled "Monteur" and "Montour") was a trapper, trader, and prospector who worked as an interpreter/guide for the Hudson Bay Company, the U.S. Army, and early pioneers. His reputation was made when he negotiated the release of Major Owen and his men from capture by Indian warriors in 1858. He was employed by the Army thereafter and was highly regarded for his skills as interpreter and guide with the tribes. Although little is known of his activities in the Blackfoot Valley, Monture was considered a friend by many early settlers.
+
+Different versions of his legend claim that his trading with the Indians involved illegal alcohol and arms, but others say he was honorable in all his dealings with Indian and white settlers alike. The differing stories of his death reflect this contradictory nature of his reputation. What is known is that in the Fall of 1877, while he was in an Indian camp on the North Fork of the Blackfoot River, an argument broke out -- some say because he was trading whiskey and ammunition, and others say because he would not trade illegally with the Indians. In either case, an altercation occurred and Monture was killed. Later, his mutilated body was rescued by his pioneer friends, and buried in a secret location. A stone monument to his memory was erected in 1920 and still stands at the site of his death, about four miles east of Ovando. Monture Creek, a tributary of the Blackfoot River, also pays tribute to George Monture. The site of his grave remains a secret to this day.
+
+Ovando's Douglas Fir 1488 - 2001
+
+A Witness to History
+
+This cross-cut was taken from a Douglas Fir which grew east of the museum. Each growth ring represents one year, making it about 520 years old. The light colored wood is "sap wood," wood living at the time it was cut. The darker "heartwood" was dead prior to cutting. Two obvious decay pockets show major damage to the tree. Note the bullets found in the tree.
+
+1483 Douglas fir sprouts 9 years before Columbus' voyage • 1600-1709 Ancestors of current Montana tribes arrive, being pushed west by settlers and other tribes • 1620 Pilgrims on Mayflower land at Plymouth Rock • 1700 Spanish explorers bring horses to Montana (sic) • 1743 Canadian fur traders arrive in Montana • 1776 Declaration of Independence • 1803 Louisiana Purchase; Lewis and Clark begin Expedition • 1806 Meriwether Lewis travels through Blackfoot Valley • 1841 Montana's first pioneer settlement - Bitterroot Valley • 1846 Western Montana purchased from the British • 1850 Ranching begins in Montana • 1848-1853 Western Montana declared part of Oregon Territory • 1854 Early railroad survey party in Blackfoot Valley • 1855 Hellgate Treaty brings more settlers • 1862 Bonner Bridge across Blackfoot River completed • 1863: All of Montana becomes part of Idaho Territory • 1864 President Lincoln declares Montana Territory • 1870s Present Ovando town site becomes trade center • 1880s Logging industry begins in Blackfoot Valley • 1882 The settlement is named Ovando after its first postmaster • 1883 Northern Pacific Railroad crosses Montana • 1884 First Ovando school - 6 students • 1889 President Harrison declares Montana a state • 1890 General store established by Ovando Hoyt • 1894 Original log structure of Ovando Community Church built; Phone line from Ovando to Drummond installed • 1895 Ovando town hall built • 1909-1918 Homesteading boom in Montana • 1919 "The Big Blow-up Fire" in Western Montana and Idaho • 1919 Ovando fire destroys seven buildings • 1923 Ovando schoolhouse burns and current school is built • 1925 Half of Montana's farmers lost farm - Montana only state with declining population • 1926 Last logs float down Blackfoot River to Bonner; trucks are preferred • 1964 Wilderness Act passed; Bob Marshall Wilderness defined • 1968 Timber industry peaks - 1.5 billion board feet processed • 1973 Scapegoat Wilderness designated • 1973 Ovando town hall, fish hatchery & Corner Bar collapse after deep heavy snow • 1988 Scapegoat fire • 2000 Montana burns • 2001 Tree is cut down due to disease
+
+Erected by Brand Bar Museum.

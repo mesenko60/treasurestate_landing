@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141735
+Slug: thars-gold-in-them-thar-hills
+Title: Thar's Gold in Them Thar Hills
+Town: Townsend
+County: Broadwater
+Lat / Lng: 46.35639, -111.54502
+Topics: nature, settlements
+Year erected: 
+Erected by: Montana Historical Society; Department of the Interior, National Register of Historic Places
+
+--- Inscription (as stored for the site) ---
+
+In 1864, prospectors discovered promising placer gold deposits in Confederate Gulch, named for their political sympathies during the Civil War. This led to a huge gold rush that brought thousands of people to the gulch and the discovery of some of the richest placer gold deposits in Montana.
+
+The placer gold came from gravel in Confederate Creek and from gravel bars above the creek deposited during the Pleistocene Epoch (Ice Age). Gold from Montana Bar, a 2-acre gravel deposit on a bench above the gulch, was so plentiful it actually clogged the miner's sluice boxes. Some miners may have taken $15,000 to $21,000 (in modern currency) per pan. The bonanza ended after only three years, and the gulch was all but empty by 1900. In all, Confederate Gulch produced nearly $150 million in gold.
+
+The gold-bearing gravels overlie the Precambrian Spokane, Greyson and Newland Formations of the Belt Supergroup, deposited in an inland sea over a billion years earlier. These extremely old rocks were brought to the surface by huge thrust faults that stacked older rocks over younger, forming the Big Belt Mountains.
+
+Confederate Gulch is crossed by a line of igneous plutons, including Miller Mountain, Boulder Baldy, and Mount Edith, all of which formed from a single magmatic event. The magma intruded the Belt Supergroup rocks between 69 and 74 million years ago, solidifying to rock before it reached the earth's surface. The pluton on Miller Mountain has been extensively prospected as a lode gold source.
+
+Diamond City In December 1864, ex-Confederate soldiers built log cabins adjacent to the gulch later named for them. The paths in the snow between the cabins formed a diamond pattern, giving the name to the new mining camp. When news of the richness of the gold deposits became known outside the Big Belts, the ensuing gold rush brought at least 5,000 people to Diamond City. For a short time, the camp was the seat of newly created Meagher County. The settlement boasted stores, saloons, hurdy-gurdy houses, and hundreds of log cabins. Famed Montana cowboy artist Charlie Russell believed Diamond City the most perfect type of mining camp. Today, nothing remains of the camp.
+
+Geo-facts:
+
+• A pluton is a mass of igneous rock that formed when magma cooled before reaching the earth's surface.
+
+• Fossil remains of a mastodon found at Diamond City helped determine the Pleistocene age of the placer gravels.
+
+• The Townsend Valley where Canyon Ferry Lake is situated, developed later than the thrust faults and plutons of the Little Belt Mountains, as a result of change in the tectonic style. The older thrust faults provided planes of weakness that allowed the valley to form as movement on the faults reversed direction.
+
+• Rocks of the Big Belt Mountains originated from farther west and were transported eastward along low-angle thrust faults, whereas the rocks of the Little Belt Mountains were not transported at all.
+
+Erected by Montana Historical Society; Department of the Interior, National Register of Historic Places.

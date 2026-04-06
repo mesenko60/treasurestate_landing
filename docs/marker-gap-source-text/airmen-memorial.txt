@@ -1,0 +1,75 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142910
+Slug: airmen-memorial
+Title: Airmen Memorial
+Town: Harlem
+County: Blaine
+Lat / Lng: 48.52669, -108.78792
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+On a quiet night, nine miles north of Harlem, Montana the lives of thirteen airmen were lost when two C-141B Starlifter Cargo Planes collided. The thirteen crew members from McChord Air Force Base were on a low level refueling exercise on that fateful night of November 30, 1992.
+
+Though the thirteen who gave their lives in service to their country are mourned deeply, the community of Harlem and its surrounding area were united in the outpouring of love and generosity to those who came to bring them home with dignity.
+
+The question we always ask is 'Why'? We don't have the answer, but we worship the One who does.
+
+High Flight
+
+Oh, I have slipped the surly bonds of earth,
+
+And danced the skies on laughter-silvered wings.
+
+Sunward I've climbed and joined the tumbling mirth
+
+Of sun-split clouds – and done a hundred things
+
+You have not dreamed of – wheeled and soared and swung
+
+High in the sunlit silence. Hovering there,
+
+I've chased the shouting wind along and flung
+
+My eager craft through footless halls of air.
+
+Up, up the long, delirious, burning blue
+
+I've topped the wind-swept heights with easy grace, Where never lark, or even eagle flew:
+
+And, while with silent, lifting mind I've trod
+
+The high untrespassed sanctity of space,
+
+Put out my hand and touched the face of God.
+
+-- John Gillespie Magee, Jr. 1922-1941
+
+Capt. David J. Sielewiez DOB: June 1964 POB: Albany, New York
+
+Capt. Jimmy Lee Jenkins DOB: 8 April 1965 POB: Langdale, Alabama
+
+Capt. Mark Alan Eister DOB: 6 September 1960 POB: Chicago, Illinois
+
+Tech. Sgt. David Richard Young DOB: 27 February 1960 POB: Grand Rapids, Michigan
+
+Staff Sgt. Terrence J. Miyoshi DOB: 5 August 1958 POB: Chicago, Illinois
+
+Sr. Airman Wilbert Tyron Brown III DOB: 10 September 1971 POB: Galveston, Texas
+
+Airman 1st Class George Anthony Moreland DOB: 11 September 1970 POB: Lodi, California
+
+Staff Sgt. Monte Lercy Bissett DOB: 19 July 1964 POB: Myrtle Point, Oregon
+
+Tech. Sgt. Peter Leo Osterfeld DOB: 12 June 1958 POB: Montreal, Canada
+
+1st Lt. Edward H. Hoyle III DOB: 28 October POB: Stoughton, Massachusetts
+
+Capt. Kevin M. Maguire DOB: 9 February 1960 POB: Dover, Delaware
+
+Capt. Banks E. Wilkinson DOB: 28 November 1963 POB: Fayetteville, Arkansas
+
+Capt. Edward Desire Parent, Jr. DOB: 20 May 1964 POB: Hartford, Connecticut

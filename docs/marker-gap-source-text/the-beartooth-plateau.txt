@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 45251
+Slug: the-beartooth-plateau
+Title: The Beartooth Plateau
+Town: Red Lodge
+County: Carbon
+Lat / Lng: 45.17709, -109.24801
+Topics: transportation
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Beartooth Plateau contains some of the oldest exposed rocks on Earth and provides a unique window into the history of our planet. About 55 million years ago, this massive block of metamorphic basement rock pushed its way upward nearly two miles along steep faults that extend deep into the Earth. The exposed rock consists of coarse-grained gray and pink granites, gneisses, and schists that formed about 3.3 billion years ago when older sedimentary and volcanic rocks were heated and recrystallized deep in the Earth at extremely high temperatures. The plateau contains the oldest exposed rocks in Montana and they are among the oldest on Earth. The Stillwater Complex on the plateau’s northern flank is one of the world’s major sources of chromite, platinum, and palladium.
+
+During the ice ages, about 100,000 years ago, the Beartooth Plateau collected enough snow for glaciers to form and cover most of the plateau to a depth of several thousand feet. The spreading glaciers wore down the plateau’s upper surface to leave the distinctively rounded rock outcrops, along with hundreds of lakes, ponds, and depressions. They flowed down old stream valleys, leaving them deepened and straightened, with vertical canyon walls and jagged peaks. The summit of the plateau is alpine tundra.
+
+Geo-activity
+
+• When the Beartooth Highway was constructed in the early 1930s, the men who built it thought up names for many of the curves on the road and for some of the geologic features that could be seen from it. Some of those features were named for movie stars popular at the time. Think of some names for the geologic features you see along the road based on movie and television and movie stars today.
+
+Geo-facts
+
+• The Beartooth Plateau pushed its way upward through sedimentary rock about 55 million years ago. • The plateau contains some of the oldest exposed rock on Earth, formed some 3.3 billion years ago. • The Beartooth Plateau was heavily glaciated during the Ice ages about 100,000 years ago.
+
+Although these mountains were crisscrossed by trails used by Native Americans since prehistory, it was not until the 20th century that many sought a permanent route over the mountains from Red Lodge to Yellowstone National Park. As the Red Lodge coal mines closed, Red Lodge businessmen lobbied Montana’s congressional delegation to construct a road between their community and the Park. In 1931, President Herbert Hoover signed the Park Approach Act into law, which funded the construction of scenic routes to the country’s national parks through federally-owned land. Construction of the $2.5 million project began in 1932. Some 100 workers employed by five companies blasted their way up the side of the 11,000-foot plateau. The workmen gave names to many features of the road that are still used today, including Lunch Meadow, Mae West Curve and High Lonesome Ridge. The road officially opened on June 14, 1936. Today, the road looks much as it did in 1936 and provides motorists an excellent opportunity to experience one of the few North American highways reaching such spectacular high-elevation alpine scenery.
+
+Erected by Montana Department of Transportation.

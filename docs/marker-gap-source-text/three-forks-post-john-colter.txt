@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 282631
+Slug: three-forks-post-john-colter
+Title: Three Forks Post / John Colter
+Town: Three Forks
+County: Gallatin
+Lat / Lng: 45.92552, -111.59956
+Topics: exploration, industry
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Three Forks Post
+
+The Headwaters of the Missouri River were potentially a fur trapper's paradise. Following the return of the Corps of Discovery in 1806, the expeditions's co-leader, William Clark told stories about the abundant beaver living near the confluence of the Gallatin, Jefferson, and Missouri rivers. Visions of quick riches at the headwaters attracted the fur traders such as Manuel Lisa, Andrew Henry and Pierre Menard. In 1809, they formed the Missouri Fur Company to establish a fort at the headwaters. In March 1810, a group of thirty-five fur trappers made the arduous trek to the area. Guided by Lewis and Clark Expedition veterans John Colter and George Drouillard, the group arrived at the headwaters in April 1810 and built what would be known as Three Forks Post. Its exact location is unknown , but it may have stood between the Madison and Jefferson about two miles above the rivers' confluence. While the trappers intended the fort to provide protection against attacks from local tribes, especially the Blackfeet, it seldom did.
+
+The Blackfeet did not want the Americans trapping in their territory. Frequent attacks by the tribe made the headwaters a particularly deadly area to work. Trappers there feared that would not make it out alive. The first Blackfeet attack against the company's men occurred eight days after they built the post. The Blackfeet killed two trappers and three other men disappeared. The attacks continued and, in early May, the Blackfeet killed and mutilated George Drouillard , Meriwether Lewis's right-hand-man during the expedition. Despite the area's plentiful resources, the company decided to abandon the post; the potential profits of trapping there was not worth the lives of their men. After three months the Missouri Fur Company abandoned the post. The Blackfeet burned the fort to the ground.
+
+John Colter
+
+One of Montana's most famous and toughest mountain men, John Colter had a notorious history in the headwaters area. Colter was a member of the Lewis and Clark Expedition. Even before the Corps of Discovery returned to St. Louis, Colter decided to stay in the West and left the Corps' service in August 1806. He spent the next few years exploring and trapping beaver along the extensive waterways of the Louisiana Purchase for the Missouri Fur Company.
+
+While trapping along the Jefferson River hear here in 1809, Colter and fellow trapper John Potts were surrounded by a group of Blackfeet Indians. The Blackfeet killed Potts after he shot and killed a member of the tribe; they had different plans for Colter. Stripping him naked and offering few hundred yards' head start, Colter began to race for his life with the Blackfeet in hot pursuit. Running approximately five to six miles across prickly pear cactus and rocks, Colter suddenly turned to face the Blackfeet Indian who pursued him most closely. After wrestling his spear away from him, Colter killed the man and hid beneath a driftwood dam or beaver lodge in the Madison River until nightfall. Over a week later, he appeared, sunburned, hungry, and with swollen feet, at Fort Manuel Lisa, at the confluence of the Yellowstone and Big Horn rivers more than 200 miles east of here.
+
+Colter's luck at the headwaters never improved. After traveling with the Missouri Fur Company to the area in 1810, Colter left just eleven days after his arrival stating that after his close call the Blackfeet a year prior, he promised never to return; it was a promise he kept. Colter left the headwaters area for good and died of jaundice in St. Louis three years later.

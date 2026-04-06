@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143648
+Slug: mountains-belt-butte-and-the-great-falls-coal-field
+Title: Mountains, Belt Butte, and the Great Falls Coal Field
+Town: Belt
+County: Cascade
+Lat / Lng: 47.34989, -110.89595
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The scenic Highwood Mountains, visible on the skyline to the northeast, are composed of resistant volcanic rocks which tower above the relatively soft surrounding sedimentary rocks. The mountains contain an unusual abundance of a dark igneous rock called shonkinite. Shonkinite occurs in other parts of the world, but it was named for the exposures found near the community of Shonkin on the north side of the Highwood Mountains.
+
+As you drive to the northwest, look for a prominent hill known as Belt Butte northeast of the highway. You can recognize it by its "belt" of Cretaceous sandstone. Belt Butte is notable because it gave its name to Belt Creek, the town of Belt, and to the Big and Little Belt mountains to the south. The Belt Supergroup, an extremely thick and extensive package of western Montana sedimentary and metamorphosed sedimentary rock, hundreds of millions of years old, is found in many mountain ranges of western Montana. The Supergroup was named for the Big and Little Belt mountains thanks to the "belt" of sandstone around Belt Butte!
+
+The Little Belt Mountains, visible to the south, were bowed up by multiple blister-like pockets of magma, molten rock that arched up the overlying sedimentary layers to form domes. The domes and mountains are cored by igneous rock formed about the same time as the Highwood Mountains, about 50 million years ago.
+
+The Great Falls coal field extends through the Armington area. The coal is discontinuous, having developed from plant material that accumulated in a number of Early Cretaceous swamps. Compaction of the remains of swamp plants over millions of years produce the medium-grade bituminous coal in the area. Coal mined in this area powered the locomotives of the Great Northern Railway, fueled the smelter at Great Falls, and heated homes throughout central Montana. Coal mining in the area declined after 1950, when the coal from the Great Falls field could not compete with diesel, oil and natural gas.
+
+GeoFacts:
+
+• Laccoliths are igneous features in this area produced when magma accumulated in a domal shape, up-arching the overlying sedimentary rock. Limestone Butte south of Montana Highway 87 is one of the many laccolith domes of the Little Belt Mountains capped by sedimentary rock. Square and Round Butte are prominent laccoliths along Montana Highway 80 that have eroded exposing their igneous core.
+
+• In the 1890s, Cascade County was the largest coal producer in Montana. Between 1885 and 1955, the coal field produced 38 million tons of coal.
+
+• Look for pale gray stone outcrops of Madison limestone at Sluiceboxes State Monument and Monarch to the south along Montana Highway 89. The limestone formed about 350 million years ago when much of Montana was submerged under a shallow sea.
+
+Geo-Activity:
+
+• The mountain ranges in this area were formed when pockets of magma pushed up through the earth's crust millions of years ago, Imagine what Montana looked like when they were forming and think about what kinds of animals lived here when it was happening. Look for buttes and rock formations that look (like) the walls of ancient castles.
+
+Erected by Montana Department of Transportation.

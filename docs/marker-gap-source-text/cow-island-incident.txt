@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161479
+Slug: cow-island-incident
+Title: Cow Island Incident
+Town: Fort Benton
+County: Chouteau
+Lat / Lng: 47.81085, -110.6725
+Topics: native-american, military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+On September 21, 1877, Fort Benton commander Major Guido Ilges got word that the Nimíipuu (Nez Perce) had traveled across the Judith Basin headed for Canada. Thirteen members of Company F, Seventh Infantry Regiment and to civilians volunteers loaded a mountain howitzer onto a steamboat and set off down the Missouri River. Thirty-eight volunteers and one soldier road along on horseback. the intended to protect Fort Claggett and the supplies at the Cow Island steamboat landing.
+
+They were too late. Before they reached Cow Island, Company F could see smoke and flames in the distance. Near Cow Creek, some Nimíipuu had confronted a supply wagon, taken supplies they needed, and set fire to the rest. Outnumbered, the soldiers turned back to Fort Benton.
+
+1877 was a long and sad summer:
+
+In June, after the US Government ordered them to leave their homes in northeastern Oregon and western Idaho and move to the Nez Perce Reservation in Idaho, nearly 800 Nimíipuu men, women and children left their homelands in search of freedom. The U.S. Military pursued them 1,179 miles across Idaho, through Yellowstone and into Montana where the Nimíipuu were surrounded by Colonel Nelson A. Miles' troops at the Bear Paw, only forty miles from sanctuary in Canada. After enduring five days of bitter cold and no food, Chief Joseph determined the people could last no longer. On October 5, as Chief White Bird fled across the border with the able bodied, Joseph walked across the snowy plain, handed over his rifle and spoke his famous words, "From where the sun now stands, I will fight no more forever."
+
+Although some Nimíipuu escaped to Canada, Joseph and those who stayed behind were exiled to Indian Territory (present-day Oklahoma). After eight years, those who survived the brutal conditions in exile were allowed to return to reservations in the Northwest in 1885.

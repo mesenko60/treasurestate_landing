@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 245763
+Slug: a-volcanic-island-in-the-rocky-mountains
+Title: A Volcanic Island in the Rocky Mountains
+Town: Cascade
+County: Cascade
+Lat / Lng: 47.16001, -111.81946
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+During a geologically brief interval of only 3 million years, between 76 and 73 million years ago, volcanoes erupted blocks of congealed lava and volcanic ash interspersed with lava flows. The volcanoes that erupted this material have since been eroded. Mount Chisholm is a plug formed when magma intruded the surrounding volcanic rocks. Because the plug is a variety of basalt, an unusually hard rock, it eroded more slowly than the softer surrounding rocks. Narrow ridges exposed a mile northeast of this overlook are dikes that formed when magma filled north-south fractures in the fragmental volcanic rock. After cooling, the dikes formed hard rock that eroded more slowly than the surrounding volcanic rock to form narrow ridges.
+
+Missouri River slowly eroded a valley through this volcanic field to form the landscape we see today. About 20,000 years ago the Continental Ice Sheet crept southward from Canada forming a dam against the north edge of the Highwood Mountains about 70 miles northeast of here impounding the Missouri River to fill Glacial Lake Great Falls. This ice-dammed lake flooded the Missouri River valley about 80 miles upstream from this overlook to the vicinity of Townsend, about 90 miles south of here. Around 15,000 years ago the Continental Ice Sheet melted enough to let the Missouri River flow in its former valley thus draining Glacial Lake Great Falls.
+
+The Hardy Bridge
+
+Great Falls contractors Angus McGuire and Evarts Blakeslee built the bridge spanning the Missouri River on the old highway below the overlook in 1931. Called Hardy Bridge because of the nearby community of that name, the bridge was an important part of U.S. Highway 91 until bypassed by the Interstate in 1968. The Hardy Bridge figured prominently in the 1987 film The Untouchables. Located at the fictional United States-Canadian border the bridge was the scene of a pitched battle between U.S. Treasury agents, the Canadian Mounties, and rumrunners employed by Chicago mobster Al Capone. During Prohibition in the 1920s, men regularly crossed into Montana from Canada, smuggling illegal whiskey and other spirits into the United States. This spectacular canyon and the old bridge were much more picturesque international border than the real thing 150 miles north of here.
+
+Geo-facts:
+
+• Named for a local settler, Mount Chisholm is the rocky promontory located directly west of this overlook.
+
+• The Lewis and Clark Expedition traversed this canyon in July 1805. Meriwether Lewis noted the "steep cliffs" of the canyon here and mistakenly thought they were granite.
+
+• Glacial Lake Great Falls at this overlook was over 450 feet deep.
+
+Geo-activity:
+
+• As you drive through this area, imagine what it looked like 75 million years ago when dinosaurs pulled the Earth and 20,000 years ago when it was part of Glacial Lake Great Falls.
+
+Erected by Montana Department of Transportation.

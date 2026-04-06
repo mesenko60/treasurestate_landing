@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 255992
+Slug: reunion-at-camp-fortunate
+Title: Reunion at Camp Fortunate
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 44.99452, -112.86836
+Topics: native-american
+Year erected: 
+Erected by: Reclamation, University of Montana Western
+
+--- Inscription (as stored for the site) ---
+
+Looking for Clark
+
+As the sun rose over their camp on the morning of the 17th of August 1805, Captain Meriwether Lewis dispatched his interpreter George Drouillard downstream to search for Captain William Clark and the rest of the expedition. Lewis had spent a restless night worried over the fate of Clark and the rest of the party.
+
+During the week before, Lewis and three men went ahead of the slow-moving canoes. They found the Shoshoni camped on a river over the mountains to the west in present-day Idaho. Returning on the evening of the 16th with a small party from the village, they made their camp just below the forks. Expecting to meet Clark, "the chief with red hair," they nervously waited in the predawn light.
+
+As Drouillard prepared to ride, the Shoshoni Chief Cameahwait, concerned for the safety of his people, sent several of his men to accompany Drouillard in his search for Clark. The Shoshoni had been reluctant to follow the strangers in fear that they were being led into a trap. Lewis assured them Clark would be here with trade items. He desperately needed their help, and hoped to procure horses from them in order to continue his journey. His focus now turned to holding their confidence. If they did not find Clark as he had promised, the Shoshoni would leave.
+
+Reunited at Last
+
+Drouillard and the warriors rode less than two miles downstream when they found the men dragging the canoes over a gravel bar. Captain Clark had heard the Shoshoni warriors singing before they came into view. Sacajawea, walking out in front of everyone, recognized the riders as those of her tribe, the Aqaidika, or Salmon Eaters. In her excitement she looked back at Clark and began to dance and suck her fingers indicating in sign language that these were her people.
+
+As Clark, Sacajawea and her husband Charbono (sic) entered camp, Lewis, Camealwait and the rest of their Shoshoni gathered to greet them. From this small waiting party an excited young woman ran out to embrace Sacajawea. Five years earlier two young girls had been captured in a raid. One escaped and was able to return to her people, while the other had been taken to the Mandan villages, where she would become a vital member of the Corps of Discovery.
+
+Today when the wind blows from the west, you can close your eyes and still hear their cries of joy. Best friends reuniting at last.
+
+Erected by Reclamation, University of Montana Western.

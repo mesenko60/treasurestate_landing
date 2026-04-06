@@ -1,0 +1,39 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 188669
+Slug: over-a-billion-years-of-montanas-geological-history
+Title: Over a Billion Years of Montana's Geological History
+Town: Elliston
+County: Powell
+Lat / Lng: 46.57684, -112.28074
+Topics: 
+Year erected: 
+Erected by: Montand Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+From this overlook you can see areas of very old rock and nearby relatively young deposits. The Big Belt Mountains on the skyline east of Helena Valley in the far distance are primarily composed of Belt Supergroup rocks deposited about 1.4 billion years ago in a large, shallow sea that covered much of western Montana and extended into Canada. Sand and mud deposited in this sea became hard rock such as quartzite as a result of burial under thick layers of younger sedimentary rock.
+
+The crags to your left are part of the Boulder Batholith, a huge mass of granite that extends to south of Butte. It formed as molten rock (magma) cooled before reaching the earth's surface from 80 to 75 million years ago. If you could strip the vegetation and soil from the grassy hills in the foreground toward the Helena Valley you could see beds of sandstone and shale that were hardened (metamorphosed) by the adjacent hot magma that cooled to form the granite.
+
+During the Ice Age the mountains near MacDonald Pass were partly covered by glaciers. Round boulders to the north of the highway just above this overlook were left when the glaciers melted about 14,000 years ago. Ten Mile Creek that flows in the gentle valley between this overlook and the Helena Valley was a raging torrent when the mountain glaciers melted. Boulders up to 4 feet across were deposited by this flood near the present well-behaved Ten Mile Creek in this valley.
+
+The MacDonald Pass Toll Road
+
+The road between Elliston and Helena originated as a toll road built by Constant Guyot in 1866. Travelers christened it the Frenchwoman's Road for Guyot's wife, who collected the tolls and provided hot meals and a place to sleep for weary sojourners at their cabin near Elliston. In 1868, the Frenchwoman was found murdered in her cabin. Fearing the vigilantes, her husband fled the area. Operation of the toll road then fell to Elijah Dunphy, who hired Alexander MacDonald to maintain the road and to collect tolls. You can see portions of the old toll road on the mountainside below this overlook.
+
+Geo-facts:
+
+• The mineral rich Boulder Batholith encompasses an area of 350 square miles and includes the mining areas of Helena, Butte Basin, and Unionville!
+
+• Granite quarried by the Thomas Main and Sons Company in the mountains north of U.S. Highway 12 and east of here was used to construct many of the prominent historic buildings in Helena beginning in the 1890s.
+
+• MacDonald
+
+Pass is one of three mountain passes crossing the Continental Divide west of Helena. Mullan Pass, northwest of here, is named for John Mullan, who built the first engineered road in Montana in 1860. Priest's Pass is a few miles to the north and is named for its builder, Valentine Priest. For a few years in the 1920s, Priest's Pass was the main route over the Continental Divide west of Helena.
+
+Geo-activity:
+
+• This area has a very long and interesting geological history. As you stand at this sign, imagine what it was like when there was volcanic activity in the area and. later, when glaciers covered the mountains.
+
+Erected by Montana Department of Transportation.

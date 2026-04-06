@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 219647
+Slug: thompson-falls-hydroelectric-dam-district
+Title: Thompson Falls Hydroelectric Dam District
+Subtitle: St. Luke's Hospital
+Town: Thompson Falls
+County: Sanders
+Lat / Lng: 47.59618, -115.35833
+Topics: architecture, science
+Year erected: 
+Erected by: Montana Heritage Commission, Montana History Foundation
+
+--- Inscription (as stored for the site) ---
+
+Missoula senator Edward Donlan, Dr. Everett Peek, and Arthur Preston organized the Thompson Falls Light and Power Company in 1910 to develop electricity for the community and promote the concept of a hydroelectric power station. The monumental project promised progress and opportunity for the little frontier town along the riverbank. In anticipation, Dr. Peek built a hospital near the proposed power plant site. In 1911, the county erected two steel bridges across the Clark Fork River retiring the old cable-drawn ferry. The Thompson Falls Power Company constructed a small plant to service the community and the project itself. The town bustled, construction boomed, and a glorious future seemed inevitable. The Ledger confidently predicted lucrative future projects. By 1916, the main and dry channel dams, power house, and superintendent’s house were among some thirty project structures sprawled along the riverbank. By 1917, the plant supplied 30,000 kilowatts of electricity to the region, crossing into Coeur D’Alene, Idaho. Technology loomed downriver in the huge dam. But after World War I no more major projects boosted the local economy, and men like Donlan and Peek “…who had championed those ideas had already left town to find that dream some other place.” The power company dismantled all but a few of the project buildings, leaving Thompson Falls to survive on its own. Today the remaining structures represent the community’s early development,
+
+St. Luke's Hospital
+
+Thompson Falls Hydroelectric Dam Historic District
+
+Thompson Falls was on the brink of intense development when local druggist and physician Dr. Everett Peek built the region’s first substantial medical facility. Its original twenty rooms accommodated Peek’s hospital and briefly served as a residence. After completion of the hydroelectric dam project, Peek moved to Missoula and the Montana Power Company eventually acquired the building. After 1927, a three-story back wing and second-story wraparound porch were removed, leaving seven of the original rooms. Now a private residence, the front façade appears much as it did in 1910. Tuscan columns and turned wooden posts grace the porch while lovely stained and diamond-patterned leaded glass windows add elegance to this significant architectural landmark.

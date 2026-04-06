@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 86810
+Slug: 1984-archeological-survey
+Title: 1984 Archeological Survey
+Subtitle: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.57062, -107.42822
+Topics: native-american, military
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+On August 10, 1983 a prairie fire swept over the battlefield, burning nearly 600 acres of dense, thick vegetation. In May and June of 1984 the National Park Service began an unprecedented systematic archeological survey of the Custer Battlefield. Led by archeologists Dr. Douglas D. Scott, NPS, and Dr. Richard A. Fox, Jr., formerly of the University of Calgary, archeologists and volunteers surveyed the battlefield for five weeks locating historical evidence from the Battle of the Little Bighorn.
+
+Among the 1,159 artifacts recovered were iron arrow heads, bullets, cartridges, buttons, coins, soldier skeletal remains, boots, military and horse equipment, and personal items of soldiers and warriors. Analysis of the artifacts and remains are important links to the past and provide important clues on the various weapons, tactics, equipment, and movements during the battle. Forensic examination of 7th Cavalry skeletal remains help to humanize the cavalrymen who until now, were just mere statistics and reveals important clues for their identification, height, age, health, and how they died.
+
+Archeological evidence, used in conjunction with accounts of battle participants, placement of soldier bodies, and 7th Cavalry and warrior markers, helps us to reconstruct the battle. Additional archeological surveys were conducted here and on adjacent lands in 1985, 1989, 1991, 1994 & 1999, and will likely continue in the future.
+
+Erected by National Park Service, U.S. Department of the Interior.

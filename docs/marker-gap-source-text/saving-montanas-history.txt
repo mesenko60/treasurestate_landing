@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 208661
+Slug: saving-montanas-history
+Title: Saving Montana''s History
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.29361, -111.94542
+Topics: 
+Year erected: 
+Erected by: Virginia City Preservation Alliance
+
+--- Inscription (as stored for the site) ---
+
+Many people have called Virginia City their home and many thousands of others have had the pleasure of visiting this unique town. This would hardly be a place worth visiting, were it not for the tireless efforts of a man unpretentiously known as "Charlie."
+
+As a young boy, Charles, (Charlie) Bovey showed an interest in collecting and preserving artifacts that represented a vanishing age. This interest deepened and its scope expanded as he grew older. Charlie came to Great Falls, Montana in 1926, where he became a very successful rancher and wheat farmer. By 1940, his interests included saving historically significant buildings and artifacts as illustrated by his successful recreation of "Old Town Montana" within a Great Falls, Montana fairground exhibit hall.
+
+During a visit to Madison County in 1944, Charlie discovered Virginia City (or what was left of it) - and what would become his life's work.
+
+By 1946, Charlie had founded the Historic Landmark Society of Montana, a state-wide non-profit preservation advocacy group formed to protect Montana's vanishing frontier heritage. One of their first projects was reconstructing
+
+Virginia City's Montana Post building that had burned down only a decade earlier. Over the next forty years, the Boveys - Charlie, his wife Sue, and son Ford - purchased, stabilized, and recreated dozens of Virginia City properties, including outfitting many with period authentic furnishings. They also initiated still-popular tourism attractions such as the Virginia City Players, the Brewery Follies, the Fairweather Inn, and the Wells Fargo Coffee House.
+
+In 1958, the Boveys began the monumental task of relocating the buildings of "Old Town" plus over 100 other buildings, to their final resting place in Nevada City. As Nevada City took shape, Charlie decided a railroad was also needed to connect the two "cities" - and the Alder Gulch shoreline railroad was born.
+
+Following the deaths of Charlie and Sue, on-going management of the Virginia City and Nevada City properties became an overwhelming task for their son and sole heir, Ford. Rather than have the properties and artifacts sold piecemeal, or removed from Montana, in 1994 a determined group of residents formed the Virginia City Preservation Alliance. From their tireless efforts, the Montana State Legislature purchased the Bovey properties and created the Montana Heritage Commission to manage and preserve this incredible historic treasure....and Charlie's dream.
+
+Erected by Virginia City Preservation Alliance.

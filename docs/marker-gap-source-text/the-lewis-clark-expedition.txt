@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191229
+Slug: the-lewis-clark-expedition
+Title: The Lewis & Clark Expedition
+Town: Livingston
+County: Park
+Lat / Lng: 45.66109, -110.56418
+Topics: 
+Year erected: 
+Erected by: Lewis and Clark National Historic Trail, National Park Service
+
+--- Inscription (as stored for the site) ---
+
+In 1804-1806, Captains Meriwether Lewis and William Clark led the Corps of Discovery on an epic journey. Charged by President Thomas Jefferson to find a water route to the Pacific Ocean through the newly acquired Louisiana territory, they mapped the land, recorded its resources, and met with and learned from its native inhabitants.
+
+The landscape has changed since Lewis and Clark explored it; rivers have been dammed, forests cut over, prairies plowed under, and roads built to the horizon. Although remnants of wilderness still exist, imagine this land as Lewis and Clark first saw it two centuries ago. Today, visitors can travel in the footsteps of Lewis and Clark to share in the diverse perspectives of the Expedition and to gain a better understanding of the history of the United States.
+
+In preparation for the journey, Meriwether Lewis took crash courses in medicine, botany, zoology, and celestial observation. With President Jefferson's permission Lewis asked his friend and former commanding officer, William Clark to be co-leader. Clark brought his skills as an outdoorsman, a geographer and map-maker. Although opposite in temperament, they worked harmoniously throughout the two-year journey.
+
+Erected by Lewis and Clark National Historic Trail, National Park Service.

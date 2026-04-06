@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 188778
+Slug: toston-smelter
+Title: Toston Smelter
+Town: Toston
+County: Broadwater
+Lat / Lng: 46.17247, -111.44114
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Its Beginning
+
+Significant production of gold-rich pyrite ores in the Radersburg District of the Elkhorn Mountains during the 1870s eventually lento the construction of the Toston Smelter in 1885. The Toston Smelter Company - incorporated in August of that year and organized by Duncan T. Hunter, Everard Heneage, Frederick A.C. Amcotts, William K. Henson, and William L. Austin - was instrumental in the project, but metallurgist and company president Austin was almost certainly the driving force. Austin and Toston Smelting built a pilot plant on the banks of the Missouri River one-half mile upstream from here. With the pilot project's success in the fall of 1885, Austin designed and built a full-sized smelter which employed the new pyrite process. The plant ran for less than two months before temporarily closing down. Toston Smelting used that time to remodel and expand the facility, but still was not operating as of late May 1887.
+
+Pyritic Smelting
+
+The pyritic process was an early, experimental type of smelting that had its first practical application in the United States as the Toston Smelter. The proximity of metallurgical materials to a transcontinental railroad and an endless supply of water offered mining engineer William L. Austin the opportunity to build an innovative smelter on the banks of the Missouri River at Toston. Radersburg ore high in iron sulphide was key to the process, and came from mines just 12 miles away. With heat derived from the oxidation of sulphide in pyrites, there was little need for coal, coke, or charcoal as a fuel during the operation of the blast furnace. What coal and limestone was required had to be freighted just a few miles to the smelter. The unique smeltering process established an interest in sulphide ores that had perviously been untreatable by other methods. However, pyritic smelting ended at Toston only two years after it started, when leasees converted the plant to a conventual smelter. Despite this rocky beginning, pyritic smelting subsequently became more popular for a time. A few copper smelter in Butte employed the process just after the turn of the century. More importantly, though, pyritic smelting was adopted and perfected by Robert Sticht, a Colorado and Montana smelterman who toke the technique to Tasmania where it reduced Mount Lyell ores for over 20 years.
+
+Peak Production
+
+In August 1887, the Helena Mining and Reduction Company (HMRC) took over the Toston Smelter under terms of a 16-month lease. It started by converting the pyritic-type facility to a conventional lead-silver smelter. The new operation was successful in a way the old Toston Smelter had never been, creating work for up to 150 men at the smelter and on other jobs in and around Toston. Most ore came from Raderburg (although some from the Coeur d'Alene region of Idaho), coal from a mine 3 miles up Six Mile Creek, and limestone for flux from the mountains just 2 miles away. In early 1889, after the HMRC lease had expired, Toston Smelting resumed control of the plant. Thereafter, the smelter ran only intermittently until it finally closed for good as the end to 1891. Total production records are unavailable. During the smelter's most productive period (while under control of HMRC), however, it reduced 100 tons of ore per day for an estimated total of 48,000 tons.
+
+Toston: Yesterday and Today
+
+Mining, smelting, and trade sparked Toston's early growth. Many men who had worked at the smelter stayed to farm, work for the railroad, haul ore, or work in the area mines. Earthquakes and fires plagued the community and nearly ended its life by 1935. Where the smelter dumped its slag into the river became a popular swimming and fishing hole. Many descendants of those early residents remain today to keep Toston intact.
+
+Reclamation
+
+In 2009, the Montana Department of Environmental Quality completed reclamation of severe heavy metal contamination from the 9.4-acre, privately owned Toston Smelter site. Funding for the $700,000 reclamation was provided through a grant from the Federal Office of Surface Mining Control, Reclamation and Enforcement. Today, no traces of the old smelter remain.

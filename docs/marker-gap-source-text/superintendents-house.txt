@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 49545
+Slug: superintendents-house
+Title: Superintendent’s House
+Subtitle: “Silver Queen City”
+Town: Philipsburg
+County: Granite
+Lat / Lng: 46.31617, -113.24604
+Topics: settlements
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+By 1899, this house stood at the head of Magnolia Avenue, or “Silk Stocking Row,” where the elite of Granite lived. The first floor housed the living quarters for the Superintendent of the Granite Mountain Mining Co. The second floor may have originally housed the mine office, accessed through a door in the back reached by a plank bridgeway from the hillside. No inside connection has ever existed between the two floors.
+
+From 1889 to 1893, Superintendent Thomas Weir lived in this house. A capable manager, Weir did much to improve living and working conditions for the miners. Sweat soaked miners would emerge from the 1,000 ft shaft into winter’s bitter cold, prime candidates for pneumonia. Without antibiotics, the death rate was high. Weir built a “drying house” and a hospital, had bunkhouses cleaned and fumigated, and gave his men one day off a week and good wages--$3.50 a day.
+
+“Silver Queen City”
+
+The Granite Mountain Lode claim was recorded in 1875, and in 1879 a piece of high-grade “ruby” silver was found. With financial backing from St. Louis investors, exploration efforts increased, without a lot of success. In 1882, the investors sent word to stop work—they would put no more money into the mine. One story goes that the pony express messenger was delayed by a blizzard and during this reprieve the big strike was made. The boom was on and before long, three mills were built to handle the flood of ore. In 1889, the Granite Mountain and Bi-Metallic Mines produced $250,000 - $275,000 a month. One mine alone produced 6,000 lbs of silver and 13.3 lbs of gold a week.
+
+In 1892, 3,200 people lived in Granite, with another 2,000 or so at the mills nearby. Repeal of the Sherman Silver Purchase Act, which had guaranteed government purchase of silver resulted in the Silver Panic of 1893. Mines and mills closed and 3,000 people left in 24 hours. The mines later reopened but never again held the distinction they once had. The last of Granite’s residents left in the 1930s

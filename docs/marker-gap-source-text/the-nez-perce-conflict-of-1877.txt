@@ -1,0 +1,46 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143628
+Slug: the-nez-perce-conflict-of-1877
+Title: The Nez Perce Conflict of 1877
+Subtitle: Trading Post at Lewistown
+Town: Lewistown
+County: Fergus
+Lat / Lng: 47.05523, -109.45962
+Topics: 
+Year erected: 
+Erected by: Nez Perce Nee-Me-Poo National Historic Trail, Nez Perce Trail Foundation
+
+--- Inscription (as stored for the site) ---
+
+For thousands of years the fertile Wallowa Valley was home to many Nimiipuu, or Nez Perce people. A treaty in 1855 affirmed Nez Perce ownership of this homeland. Competition for land, grazing and hunting opportunities, and the discovery of gold in 1860 resulted in a renegotiation of the 1855 treaty. The new treaty of 1863 reduced the reservation to 10% of the original homeland. Ultimately, General O. Howard ordered the peaceful Nez Perce bands, no longer protected by treaty rights, to move to the reservation near Lapwai, Idaho, in May of 1877.
+
+The Wallowa band sadly gathered their belongings, livestock and horses, and headed for the reservation. They crossed the Snake River, swollen with spring runoff, and gathered at Camas Prairie near Grangeville, Idaho. Agitated by past events, a few young Nez Perce men attacked several white settlers. In the aftermath of their attacks, there was no option but to flee.
+
+In June 1877, nearly 800 men, women, and children with over 2000 horses began the flight that took them over the Bitterroots, through the Rockies, and onto the high plains of Montana. They survived sweltering heat, dangerous mountain passes, and attacks by five different US Army Regiments. The Nez Perce families were within 40 miles of freedom at the Canadian border before being surrounding by U.S. Army soldiers just as the winter snows began to fall.
+
+For five days, the Nez Perce endured cannon fire, freezing temperatures and starvation. When it became obvious the people could survive no longer, Joseph negotiated a settlement that would allow the people to return to Idaho. Unwilling to trust Colonel Miles, Chief Whitebird led his people on a nighttime escape to Canada. Chief Joseph stayed with the remaining people. On October 5, 1877, Chief Joseph walked across the wintry plain and surrendered to Colonel Nelson A. Miles.
+
+"From where the sun now stands, I will fight no more forever." -- Chief Joseph (Hein-mot Too-ya-la-kekt)
+
+Trading Post at Lewistown
+
+In September of 1877, 5 bands of Nez Perce, under the leadership of Poker Joe (Wahwookya Wasas - Lean Elk) who led them from the Big Hole Battle Field until after crossing the Missouri River, crossed the Musselshell River and entered the Judith Basin. The 5 bands consisted of about 300 warriors and 200 women and followers along with 1000 horses and camp equipment. They had distanced themselves from General Howard and Colonel Samuel Sturgis in their memorable flight in attempting to reach the Canadian border and escape the pursuing army. Having successfully evaded and out-maneuvered the army during 800 miles of almost continuous fighting, the Nez Perce passed through the basin from Judith Gap to Cow Island Landing on the Missouri River.
+
+The Nez Perce felt at home in this country since this was their ancestral hunting grounds, which they came to from their home west of the Rocky Mountains. On Friday night, September 31, 1877, they camped near the stockade of Reed and Bowles Trading Post on the Carroll Trail about one mile below the present site of Lewistown, Montana.
+
+The combination trading post and station was built by two outstanding characters of that time, Alonzo S. Reed and J.J. Bowles. They operated the trading post from November 1874 to 1880. The Nez Perce visited with Alonzo Reed, relating to him the incidents of the fights and boasted of their many successes, the escapes and the punishment they had given Col. Samuel D. Sturgis during their last encounter.
+
+The Nez Perce covered the distance of more than 75 miles from the Reed and Bowles Trading Post to Cow Island on the Missouri in less than 36 hours. Cow Island was, in the period from 1860 to 1885, an important unloading point for steamers unable to continue to Fort Benton. It was also one of the primary crossing of the Missouri River for Indians of all tribes. Interestingly enough, General Alfred Terry and the Sitting Bull Commission arrived at Fort Benton only a few days after the Nez Perce crossed at Cow Island, which was the final skirmish prior to the siege at Bear Paw.
+
+The Exile
+
+"Let the nation in its glory Bow with Shame before the story Of the hero it has ruined and the evil it has done." -- Harpers's New Monthly, 1879
+
+Chief Joseph accompanied his people into exile, first in the unhealthy lowlands of Kansas and later in the windswept prairies of the Indian Territory in what is now Oklahoma. The exiled group included 79 men, 178 women, and 174 children.
+
+The group was initially transported to Fort Keogh in the Montana Territory, then on to Fort Leavenworth, Kansas, where they spent a miserable winter in squalid conditions. In the spring they were moved to Baxter Springs, the Quapaw Agency and finally the Ponca Agency in Oklahoma. During this time of continued death and deprivation, Joseph took every opportunity to publicize their plight to advance their return to the beloved homeland.
+
+Finally in 1885 Joseph's persistence, coupled with a sympathetic press, strong public support and pressure from the Presbyterian Church, convinced the government to allow the remaining 268 survivors to return to the Northwest. Of that group 118 Nez Perce went to the reservation at Lapwai. Chief Joseph and others who would not renounce their traditional religious beliefs were sent to the Colville reservation near Nespelum, Washington. The tribe was never allowed to reclaim its Wallowa Homeland. Chief Joseph, the most famous of the Nez Perce leaders, died and was buried in Nespelem in 1904.
+
+The Nez Perce removal and exile remains one of the darkest chapters in American History. The 1800 mile journey of 800 brave men, women and children wanting to live and believe as they chose stands as one of the most courageous stories in our nation's past.

@@ -1,0 +1,20 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 29072
+Slug: lewis-and-clark
+Title: Lewis and Clark
+Subtitle: To the Headwaters
+Town: Bozeman
+County: Gallatin
+Lat / Lng: 45.7121, -111.0642
+Topics: exploration
+Year erected: 
+Erected by: Montana Department of Transportation (MDT) & Qwest
+
+--- Inscription (as stored for the site) ---
+
+Lewis and Clark's Corps of Discovery reached the headwaters of the Missouri River and named the three tributaries in July, 1805. With great difficulty the Corps of Discovery fought rapids and troublesome mosquitoes as they pulled their boats upstream to the west.
+
+On their return trip in 1806, Expedition members separated at Travelers Rest near Lolo, Montana. Capt. Lewis and nine men headed east to Great Falls, while Clark and the rest of the party, along with 50 horses, returned to the headwaters area. On July 13, 1806, Sgt. Ordway and nine men continued down the Missouri while Capt. Clark, with a party of 12, traveled east through the Gallatin Valley on horseback, camping at the mouth of Kelly Canyon on July 14, 1806. Following an old buffalo trail recommended by Sacagawea, they crossed the Bridger Mountains to the Yellowstone River and traveled east in cottonwood dugout canoes and bull boats to rejoin the other expedition members.
+
+Erected by Montana Department of Transportation (MDT) & Qwest.

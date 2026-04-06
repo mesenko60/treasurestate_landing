@@ -1,0 +1,27 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 169996
+Slug: along-the-zimmerman-trail
+Title: Along the Zimmerman Trail
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.8056, -108.60483
+Topics: parks, transportation
+Year erected: 2005
+Erected by: The Dedication and Support of Many
+
+--- Inscription (as stored for the site) ---
+
+The original Zimmerman Trail was built during the summers of 1890 and 1891 by the brothers Joseph and Frank Zimmerman, born in Fellering, (Alsace-Lorraine) Germany. Joseph immigrated to the United States in 1872; two years later, upon enlisting in the U.S. Cavalry, his duty brought him to Montana. In 1874, Frank followed his brother to Montana where he worked for the railroad until 1883. Frank briefly returned to Alsace-Lorraine, then came back to the United States in 1885 to farm in Flint, Michigan. In 1883, after leaving the army, Joseph started a clothing store in Billings, just one mile west of Coulson.
+
+Several years later, he bought three sections of land west of Billings and started a sheep feeding business. His ranch was located both on the bottom and the top of the rimrocks. Because it required a 32-mile round trip from his home to Boot Hill Cemetery and back to a natural spring on Alkali Creek, Joseph sought a shorter route to move his bands of sheep from his homestead to the spring located atop the rimrocks. In 1890, Joseph brought his brother Frank back to Montana to manage his ranch and to help build the original Zimmerman Trail. Both brothers lived out their lives in the Billings area.
+
+The original Zimmerman Trail passed 2-1/2 miles north of present-day Highway 3 to the spring located on the forks of the North and South Alkali Creeks. A miner named Thompson did the blasting while the grading was done with a two-handled scraper that could hold only one yard of dirt. Still, with just the three men and two mules, the entire trail was completed by the end of the second summer.
+
+In 1938, the Rotary, Kiwanis, and Lions service clubs, and a campaign committee headed by Mearl L. Fagg, Grover C. Cisel, Frank G. Connelly, and Chandler C. Cohagen, donated the $750 required to purchase the tract of land (Zimmerman Park) and the right-of-way for the road down the rimrocks known as the "Zimmerman Trail." These properties were subsequently deeded to Yellowstone County.
+
+Although completed in 1891, the original Zimmerman Trail was never used by common stagecoach carriers of that era. It is speculated that the photograph shown below, which is the only known photograph of the original trail, is of dignitaries being given one of the few rides ever taken up the trail in a stagecoach.
+
+A WPA allotment of $95,252 for equipment and labor was augmented by $23,388 from Yellowstone County for the construction and rerouting of the original Zimmerman Trail. This new trail would require over 150 men working nearly four months to complete the project. The current Zimmerman Trail was finally paved in the 1940s.
+
+Erected 2005 by The Dedication and Support of Many.

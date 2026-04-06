@@ -1,0 +1,19 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 190772
+Slug: lewis-clark-expedition-july-24-1806
+Title: Lewis & Clark expedition July 24, 1806
+Town: Laurel
+County: Yellowstone
+Lat / Lng: 45.66925, -108.77061
+Topics: 
+Year erected: 
+Erected by: Laurel Chamber of Commerce
+
+--- Inscription (as stored for the site) ---
+
+Captain William Clark provided the first documentation of what is now called Laurel, Montana on July 24, 1806 while encamped at the mouth of the Clarks Fork of the Yellowstone River. His mark, documented on the map that day, projected what he considered to be the absolute best location for start up and ongoing commerce in the area.
+
+To the west from where we stand, Clark camped on what the old timers called Clark's Bottom. Up the river, 2 dug-out canoes were made, the food supplies were replenished, and half the parties horses were stolen.
+
+Erected by Laurel Chamber of Commerce.

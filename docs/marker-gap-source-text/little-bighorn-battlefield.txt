@@ -1,0 +1,15 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 21636
+Slug: little-bighorn-battlefield
+Title: Little Bighorn Battlefield
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.52223, -107.37758
+Topics: native-american, military
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+This area was occupied by troops A, B, D, G, H, K, and M, 7th. U.S. Cavalry, and the pack train when they were besieged by the Sioux Indians June 25th and 26th 1876.

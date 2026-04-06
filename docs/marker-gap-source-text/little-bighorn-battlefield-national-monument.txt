@@ -1,0 +1,65 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 7022
+Slug: little-bighorn-battlefield-national-monument
+Title: Little Bighorn Battlefield National Monument
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.5705, -107.42787
+Topics: people, cemeteries, native-american, military, events
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+In memory of
+
+Officers and soldiers who fell near this place fighting with the 7th United States Cavalry against the Sioux Indians on the 25th and 26th of June,
+
+A.D. 1876
+
+Bvt. Maj. Gen’l. G. A. Custer
+
+Captains
+
+M. W. Keogh • G.W. Yates • T. W. Custer
+
+Lieutenants
+
+W. W. Cooke • A. E. Smith • Donald McIntosh • James Calhoun • J.E. Porter • B.H. Hodgson • J. C. Sturgis • W. Van W. Reily • J. J. Crittenden • H.M. Harrington
+
+Assistant Surgeons
+
+G. E. Lord • J.M. De Wolf
+
+Soldiers
+
+W. H. Sharrow • Geo. Eiseman • James Dalious • Gustave Engle • J.E. Armstrong • James Nathersall • Rich’d Rollins • Alpheus Stuart • Jnd Sullivan • Ignatz Stungwitz • T.P. Sweetser • Ludwig St. John • Rich’d Dorn • Garrett Van Allen • Jere Finley • D. T. Warner • August Finckle • Henry Wyman • T. J. Bucknell • Chas. Vincent • Wm. Kramer • Pat’k Colden • Geo. Howwell
+
+• Edw’d Housen • Jnd Brightfield • Fred’k Hohmeyer • Christopher Criddle • Rich’d Farrell
+
+Henry Voss • Nathan Short • Wm. Moodie • John Thadus • G.B. Mask • W.B. Right • Edwin Bobo • J.S. Ogden • H.E. French • W.B. James • Jnd. Foley • Thos. Hagan • Dan’l Ryan • H.S. Mason • Jnd. King • G.G. Brown • F.E. Allan • A.H. Meyer • Jno Lewis • Thos. McElroy • August Meyer • C.A. Moonie • Fred’k Meier • W. H. Baker • Edgar Phillips • Rob’t Barth • Jnd. Rauter • Owen Boyle • Edw’d Rix • James Brogan • J.H. Russell • Edw’d Conner • S.S. Shade • Jnd. Darris • Jere Shea • Wm. Davis • Syker Henderson • James Garney • Jno. Henderson • Anton Dohman • Andy Knect • Timothy Donnally • H.T. Liddiard • Wm Gardiner • Pat’k O’Connor • C.W. Hammon • Henry Shele • Gustav Klein • Wm. Smallwood • Herman Xnauth • James Smith 1st • James Smith 2nd • W. L. Liemann • Christian Madson • Benj Stafford • Joseph Monroe • Cornelius Vansant • Sebastian Omling • Mich’l Kenney • Pat’k Rudden • Fred’k Nursey • Rich’d Saunders • J.N. Wilkinson • F.W. Siglous • Chas. Coleman • Geo. Warren • Benj Brandon • Edw’d Botzer • Benj Brandon • Edw’d Botzer • J.R. Manning • Martin Considine • Thos. Atcheson • James Martin • Lucien Burnham • Otto Hagemann
+
+Jno. Heim • W. M. Lerock • J. S. Hiley • W. A. Lossee • Wm. Huber • F. E. Milton • M. H. Bees • T. M. Way • Edw’d Rood • Henry Dose • A. A. Smith • Benj. Wells • Alex Stella • A. J. Moore • W. A. Torrey • Jno. Rafp • Geo. Walker • Goe. Lell • Jno. Vickory • J. D. Jones • Wm. Teeman • Jno. Wild • John Briody • C. C. Morris • Wm. Brown • H. A. Bailey • B. F. Brown • Jno. Barry • Wm. Brady • C. H. Gross • Pat’k Bruce • M. E. Horn • A. D. Cather • E. W. Lloyd • Jno. Kelly • Geo. Post • Crawford Selby • Fred K. Lehman • J. J. McGinnis • Henry Lehmann • Henry Seafferman • Jno. Mitchell • Edw’d Danley • Jacob Moshang • T. E. Meador • Jno O’Bryan • F. E. Varden • Jno. Parker • James Bustard • F. J. Pitter • S. F. Staples • J. W. Rossbury • Jno. McCucker • Chas. Van Bramer • J. W. Patton • De Witt Winney • J. F. Broadhurst • J. J. Callahan • Thos. Connors • Julius Helmer • T. P. Downing • James Butler • Edw’d Driscoll • W. H. Harrison • D. C. Gillette • W. H. Gilbert • E. P. Holcomb • Fred’k Walsh • Adam Hetesimer • Chas. Siemon • Pat’k Kelley • Chas. Perkins
+
+James Quinn • Jno. Miller • Wm. Reed • Peter McCue • D. L. Symms • W. B Rogers • J. E. Troy • Chas. Schmidt • W. B. Wraley • Chas. Scott • R. H. Hughes • And’w Snow • E. F. Clear • E. D.
+
+Tessier • Wm. Cashan • T. s. Tweed • A. B. Warren • M. F. O’Hara • Jno. Seiler • H. M. Scollin • W. H. Heath • Fred’k Streing • C. E. Adams • Henry Cordon • Jno. Burke • Geo Lorentz • Wm. Dye • W. D. Meyer • Jno. Duggan • C. E. Smith • J. J. Calvan • J. J. Tauner • Louis Haucci • Henry Turlem • F. F. Hughes • H. C. Voirt • Anthony Assadily • T. E. Maxwell • Wm Andrews • Chas. McCarthy • Elmer Babcock • D. J. O’Connell • Ami Cheever • Christian Reibold • W. B. Crisfield • Henry Roberts • Chas. Graham • Bent Siemonson • Weston Harrington • Byron Tarbox • Henry Hamilton • Mich’l Vetter • T. G. Kavanagh • Henry Klotzburcher • Louis Lobering • David Summers • Bartholomew Mahoney
+
+Arikaree Indian Scouts
+
+Bloody Knife • Bobtailed Bull • Little Soldier
+
+Civilians
+
+Boston Custer • Mark Kellogg • Arthur Reed • Chas. Reynolds • Mitch Boyer • F. C. Mann • Isaiah
+
+The Memorial
+
+The remains of about 220 soldiers, scouts and civilians are buried around the base of this memorial.
+
+The white marble headstones scattered over the battlefield denote where the slain troopers were found and originally buried. In 1881 they were reinterred in a single grave on this site.
+
+The officers’ remains were removed in 1877 to various cemeteries throughout the country. General Custer was buried at West Point.
+
+Erected by National Park Service, U.S. Department of the Interior.

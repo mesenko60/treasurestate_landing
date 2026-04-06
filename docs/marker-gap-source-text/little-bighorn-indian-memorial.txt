@@ -1,0 +1,207 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 87723
+Slug: little-bighorn-indian-memorial
+Title: Little Bighorn Indian Memorial
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.57106, -107.42779
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Arikara
+
+“I shall not see you (sun) go down behind the mountains tonight …I am going home today, not the way we came, but in spirit, home to my people.”
+
+- Bloody Knife, Arikara (June 25, 1876)
+
+“These Old Scouts, today we remember them, the ways of the Old Ones who were, the good ways that were ours.”
+
+- Arikara Scout’s Song
+
+Sahnish
+
+U.S. Arikara Scouts In remembrance of our ancestors who fought and died at the Battle of Little Bighorn June 25-26, 1876
+
+*Sgt. Bobtail Bull • *Bloody Knife • *Little Brave Soldier • Boy Chief • Bull • Bull In The Water • Red Bear • Red Foolish Bear • Forked Horn • Pretty Face • Goose • Little Sioux • Lying Down • One Feather • Stab Strikes The Lodge • Strikes Two • White Eagle • Howling Wolf • Young Hawk II • Curly Head • Red Star • Red Wolf • Charging Bull • Black Porcupine • Horns in Front • Running Wolf • Scabby Wolf • Black Fox • Tall Bear • Climbing Up The Hill • One Horn • Bear’s Eye • Foolish Bear • Left Hand • Owl • Wagon
+
+[ * Killed in the Battle of the Little Bighorn]
+
+Apsaalooke Children of the Large Beaked Bird
+
+“The Crow Country is exactly in the right place. Everything good is to be found there. There is no country like the Crow Country.”
+
+- Rotten Belly, Crow
+
+“A scout is like a lone wolf, that must be looking, looking, looking all the time.”
+
+- Red Wing, Crow
+
+“White Man Runs Him, You have scouted against the enemy, the Sioux once. Now you scout again.”
+
+- Crow Honoring Song
+
+“Our leading chiefs saw that to help the white men fight their enemies and ours would make them our friends . . . We had always fought the three tribes, Lakota, Cheyenne, and Arapaho. Our decision was reached . . . because we plainly saw that this course was the only one which might save our beautiful country for us.”
+
+- Chief Plenty Coup, Crow
+
+Apsaalooke
+
+U.S. Crow Scouts In remembrance of our ancestors who fought at the Battle of Little Bighorn, June 25-26, 1876
+
+Half Yellow Face • Curly • Goes Ahead • Hairy Moccasin • White Swan • White Man Runs Him
+
+Arapaho
+
+Hinono’eino’
+
+Blue Sky People
+
+Tsehme’etano’tohevose, Haa’êsta’ehe tsehvonanêse, June 25, 1876 In Remembrance of Our Fallen, Where Long Hair Was Wiped Out June 25, 1876
+
+Voo’xenehe (Hump Nose) • Honeonaxe (Limber Bones) • Amévaohtsé (Noisy Walking) • Ve’ho’e enóhnenehé (Lame White Man)
+
+• O’xäsehé (Cut Belly) • Hevovetäso (Little Whirlwind) • Mo’ôhtàenàhkohe/Hahpêhe’onáhe (Black Bear/Closed Hand)
+
+Cheyenne
+
+Tsé tsehestâhese (The People Like Us)
+
+So’taa’eo’e (The People Left Behind)
+
+Nótâxévestôtse (Warrior Societies)
+
+Véhonenótâxeo’o (Chief Soldiers)
+
+Vóhkêséhteaneo’o (Kit Fox Soldiers)
+
+Hémo’eoxeso (Elk Horn Scrapers)
+
+Hotamétaneo’o (Dog Soldiers)
+
+Hotamémâséha’o (Crazy Dogs Soldiers)
+
+Héma’tanóohese (Bowstring Soldiers)
+
+“We had killed soldiers who had come to kill us.”
+
+- Wooden Leg, Cheyenne (1906)
+
+“It was a hot, clear day and no wind. There was a great dust from fighting, but no storm after the battle.”
+
+- Young Two Moons, Cheyenne (1907)
+
+“I will never harm the Cheyennes again. I will never point my gun at a Cheyenne again. I will never kill another Cheyenne.”
+
+General George A. Custer (1869)
+
+“If you break your promise, you and your soldiers will go to dust like this. If you are acting treacherously toward us, sometime you and your whole command will be killed.”
+
+- Stone Forehead, Arrow Keeper, Cheyenne (1869)
+
+On March 15, 1869, after the Washita Battle, General George Armstrong Custer smoked the pipe with Stone Forehead, Keeper of the Sacred Arrows at Sweetwater. Long Hair (Custer) promised never to fight the Cheyenne people again. The ashes from the Sacred Arrow Keeper’s pipe were then poured on the heel of Long hair’s boot.
+
+“Our Land is everything to us . . . I will tell you one of the things we remember on our land. We remember that out grandfathers paid for it – with their lives.”
+
+- John Wooden Legs, Cheyenne (1969)
+
+Haa’esta’ehe, tosa’e netáho’hovaohe? Nenotaxemo namohea’ovoo’o Tosa’e netáho’hova?
+
+“Long Hair, where did you run and hide? We rounded up your soldiers, where did you run and hide?”
+
+Cheyenne Victory Dance Song, composed after the Battle of Washita (1868)
+
+“It was here that Yellow Nose got a company flag, snatching it from the ground where it stood and counted coup with it on a soldier.”
+
+- White Shield, Cheyenne (1908)
+
+“Yellow Nose captured from a soldier a flag with a gilt lance head on the staff, the only one of this kind taken. About fifteen flags were captured.”
+
+- Little Hawk, Cheyenne (1908)
+
+“I was present there and tried to cross the river. As the troops were crossing the river, the Indians kept killing them right along.”
+
+- Jacob Tall Bull, Cheyenne (1898)
+
+“I have been in many hard fights but I never saw such brave men.”
+
+- Brave Wolf, Cheyenne (1895)
+
+“Custer rode down to the river bank and formed a line of battle and prepared to charge. But then he stopped and fell back up the hill; but he met Indians coming from above and all sides, and again formed a line. It was here that they were killed.”
+
+- White Bull, Cheyenne (1895)
+
+“The Indians rode right up to them and knocked some off their horses as they were running, and some fell off in the river. It was like chasing buffalo – a grand chase.”
+
+- American Horse, Cheyenne (1895)
+
+Oyate We are allied
+
+Dakota – Lakota – Nakota
+
+“Hiyupo! Follow Me”
+
+- The first command spoken by Lakota War Leaders
+
+Oyate
+
+LEADERS – Sitting Bull • Kill Eagle • Inkpaduta • Big Road • •Low Dog • Little Hawk • Hump • Post Bull • Black Shield • Lame Deer • Red Hawk • High Backbone • Crow King • Iron Dog • Black Moon • Crawler • Gall • Rain In The Face •Red Horn • Old Eagle • Two Eagles • Black Eagle • Crazy Bull • Flying Chaser • Crow Dog • Charging Thunder • Iron Horn • Four Horns • Bear Face
+
+IN REMEMBRANCE OF THE FALLEN - Hump Nose • Young Black Moon • Dog With Horns • Chataka • Red Horn Buffalo • Guts • Flying Charge • Hawk Man • Black Wasicha • Dog Backbone • Bear With Horns • High Horse • Swift Bear • Three Bears • Bad Light Hair • Cloud Man • Elk Stands On Top • High Eagle • Plenty Lice
+
+• Elk Standing High • Eagle Hat • Elk Bear • Kills Him • Chased By Owl • Young Bear • Lone Dog • Long Road • Young Skunk • Chief High Eagle • Standing Elk • Mustachs • Swift Cloud • Two Bears • White Buffalo Bull • Standing Rabbit • Big Design • Black Fox • Breech Cloth • White Bull • Owns Red Horse • Flying By • High Elk • Bad Yellow Hair • Red Face • White Eagle • Deed
+
+“We did not ask you white men to come here. The Great Spirit gave us this country as a home. You had yours . . . We did not interfere with you. We do not want your civilization!”
+
+- Ta Sunke Wicko (Crazy Horse)
+
+“They came on us like a thunderbolt. I did not think it possible that any white men would attack us, so strong as we were.”
+
+- Low Dog, Lakota
+
+“It was a terrible battle . . . a hard battle because both sides were brave warriors.”
+
+- Red Feather, Lakota
+
+“power through unity”
+
+- Enos Poor Bear Sr., Lakota
+
+“That night the Lakota men, women and children lighted many fires and danced; their hearts were glad for the Great Spirit had given them a great victory.”
+
+- Gall Lakota
+
+OCETI SAKOWIN
+
+Zuya Wicasa – The Warriors
+
+“generosity, compassion and sacrifice.”
+
+Tatanke Iyotake Sitting Bull
+
+HUNKPAPA LAKOTA, 1831-1890
+
+Tatanke Iyotake lived the spiritual ways of his ancestors. He believed in the law of the Cannupa (Pipe) and the sacred existence with nature. Tatanke Iyotake proved he was a protector and caregiver to the people through his generosity, compassion and self sacrifice.
+
+In early June 1876 the Lakota held their annual Sundance along Rosebud Creek below Deer Medicine Rocks. Tatanke Iyotake offered 50 pieces of flesh from each arm. On the second day of the Sundance he received a vision. He saw soldiers falling into camp upside down, and a voice told him: “I give you these because they have no ears.” Sitting Bull was also instructed to warn people. “These dead soldiers who are coming are the gifts of the creator. Kill them, but do not take their guns or horses. Do not touch the spoils. If you set your hearts upon the goods of the white man, it will prove a curse to this nation.”
+
+Tatanke Iyotake did not partake in the battle because he listens to the wisdom and advice of his mother. She told him he did not have to fight, that it was time to let the younger men prove their ability to protect the village. She advised him to take care of the noncombatants. After the battle, he went to a ridge, filled his Cannupa (Pipe) and prayed for the fallen warriors. He also prayed for Custer and his men.
+
+- Family of Tatanke Iyotake
+
+“truth, justice and wisdom.”
+
+Ta Sunke Witko Crazy Horse 1840-1877
+
+“In order to heal our grandmother earth we must unify through peace.”
+
+In memory of the Lakota Bands of the Great Sioux Nation: Cuthead, Two Kettle, Blackfoot, Minnikojou, Hunkpapa, No Bows, and Flathead. Also the Dakota (Mdewakanton, Wahpetowan, Sissetowan) and Nakota Bands (Ihanktowan – Yankton, Ihanktonwanna – Yanktonai) of the Great Sioux Nation, and Cheyenne and Arapaho Nations who fought here with us against the U.S. 7th Cavalry. The battle was fought because the United States wanted the Black Hills and its natural resources.
+
+Ta Sunke Witko fought in this battle to preserve a way of life for the Lakota Oyate. Our grandfathers protected our Sacred Pipe because it was given to us by the Creator believing that all mankind was given the power of Truth, Justice, and Wisdom. All the warriors at this battle who were killed believed this way. Our grandfathers say that the Cheyenne and Arapaho came because they had family ties with the Lakota Nation.
+
+Our grandfather Ta Sunke Witko was a man who prayed with the Sacred Pipe, played with the children and listened to the elders. He saw that all living things were higher than him because he knew that mankind had the power of choice to do right or wrong, good or bad. Our grandfathers told us that all mankind were created equal, and they represent the earth man with no skin color. In order to heal our grandmother earth we must unify through peace.
+
+Pilmaye Le Uni Prya Ta Sunke Witko Tiwahe “Thank You. We Live.” (Family of TA SUNKE WITKO)

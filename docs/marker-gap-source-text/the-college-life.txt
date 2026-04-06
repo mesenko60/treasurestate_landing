@@ -1,0 +1,28 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 168726
+Slug: the-college-life
+Title: The College Life
+Subtitle: Billings' Universities
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.78362, -108.49914
+Topics: education
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Billings is home to two accredited colleges: Rocky Mountain College, a private liberal arts school, and Montana State University Billings, a state university.
+
+ROCKY MOUNTAIN COLLEGE
+
+Rocky Mountain College is a merger of colleges from Billings, Helena, and Deer Lodge. In Billings, Lewis and Ernst Eaton created Billings Polytechnic Institute vocational school in 1908 using local quarried sandstone for the early buildings. The campus was located northwest of Billings, between Poly Drive and Rimrock Road. By the 1920s, the students could master a trade while earning money at the campus dairy farm, grain fields, cereal mill, stone quarry, machine shop, or gardens. Students even produced their own food for the cafeteria. In 1927, Billings Polytechnic Institute purchased the Billings Business College.
+
+By 1918, the Intermountain Union College of Helena had absorbed the assets of the College of Montana in Deer Lodge. A violent earthquake in 1935 damaged the college beyond repair and the Intermountain College "moved" to Billings and shared the campus with Billings Polytechnic Institute. Billings Polytechnic Institute and Intermountain Union College merged to form Rocky Mountain College in 1947. Today, Rocky Mountain College is the only four-year liberal arts college with Protestant affiliation in Montana.
+
+MONTANA STATE UNIVERSITY BILLINGS
+
+Established in 1925 as the Eastern Montana Normal School, the college prepared students to become teachers. Local elementary schools initially provided space for classroom instruction until the establishment of a larger campus on the north edge of downtown Billings. The college was renamed in 1949 to Eastern Montana College of Education and then Eastern Montana College in 1965.
+
+The college merged with Montana State University in 1994 and became Montana State University Billings. Currently, the university offers associate, bachelor, and master degrees through the University's five colleges. City College at MSU Billings also offers a variety of 2-year Associate degree programs on a separate campus. With 5,000 students, they are the third largest campus population in the Montana university system.

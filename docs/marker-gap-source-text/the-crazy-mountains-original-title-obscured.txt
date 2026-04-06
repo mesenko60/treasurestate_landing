@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191042
+Slug: the-crazy-mountains-original-title-obscured
+Title: The Crazy Mountains (original title obscured)
+Subtitle: Plenty Coup's Vision
+Town: Big Timber
+County: Sweet Grass
+Lat / Lng: 45.73599, -109.75677
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Called Awaxaawippila by the Apsáalooka (Crow) Indians, The Crazy Mountains, which you can see to the northwest, are an igneous formation forged about 50 million years ago. For the Apsáalooka, they are the most sacred and revered mountains on the northern Great Plains. Awaxaawippila was a place of refuge and protection. The Apsáalooka's enemies would not follow them into the mountain. Because of their great spiritual power, Awaxaawippila continues to be an important vision quest site for the tribe. Famed Chief Plenty Coups had a vision there in 1857 in which, he said, the end of the plains Indian way-of-life was shown to him.
+
+Plenty Coup's Vision
+
+The Crazy Mountains are an important spiritual place for the Apsáalooka. Countless generations of Apsáalooka boys have gone there to vision quest, an important rite of passage for them. At young ages, they come to the mountains to seek spiritual guidance from guardian animals and spirit world helpers. In 1857, nine year-old Plenty Coups, famed chief of the Apsáalooka people, came to the Crazy Mountains to dream. After four days of fasting and little sleep, the boy had a powerful vision about the future of his people. In it he saw the disappearance of the buffalo and there replacement by "spotted-buffalo," the white-man's cattle. He also experienced a powerful storm that destroyed all but one of the trees in an ancient forest. That lone tree sheltered the nest of a small bird, a chickadee. When an Apsáalooka elder named Yellow Bear later interpreted his dream, Plenty Coups earned that he would see the disappearance of the buffalo in his lifetime. The forest destroyed by the storm represented other Native American tribes who had resisted the Euro-Americans and had been beaten by them. To Plenty Coups, the lone remaining tree represented the Apsáalooka. The dream told him that the Apsáalooka must adapt to survive as a people. The chickadee became Plenty Coup's medicine. The bird was the "least in strength, but strongest of mind among his kind." Plenty Coups' vision quest proved to be prophetic and he lived his long life guided by the vision he had in the Crazy Mountains as a boy.
+
+Erected by Montana Department of Transportation.

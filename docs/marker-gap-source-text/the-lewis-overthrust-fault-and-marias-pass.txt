@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161417
+Slug: the-lewis-overthrust-fault-and-marias-pass
+Title: The Lewis Overthrust Fault and Marias Pass
+Town: East Glacier Park
+County: Glacier
+Lat / Lng: 48.3177, -113.35298
+Topics: exploration, nature
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+One of the most impressive geologic features in Montana is the mountainside north of you. Notice the prominent layer of white limestone half way up the mountainside. The rocks above this layer were deposited more than 50 miles southwest of here and moved here as part of the Lewis Thrust Sheet-an enormous slab of Precambrian-age sediment more than a mile thick that encompasses most of today's Glacier National Park. The Lewis Thrust Fault on which the thrust sheet moved is under the whitish limestone layer and is a thin zone of intensely sheared shale. How do geologists known that the upper part of the mountain is "out-of-place" and moved so far? See the Geo-Facts below. Movement of the Lewis Thrust Sheet and the many other thrust sheets in the area occurred between 72 and 58 million years ago as the Rocky Mountains were forming. The "motor" causing the Rocky Mountains to form was the subduction of an oceanic plate-The Farallon Tectonic Plate-under the western margin of North America.
+
+Geo-Facts:
+
+• The layers of sedimentary rocks on the mountainside north of the highway are "out-of-order" because of the thrust fault. Deeply buried rocks are now on top of rocks that were only buried to shallow depths. Metamorphosed rocks are on top of rocks that have not been "cooked." Rocks with old fossils are on top of rocks with young fossils.
+
+• Rocks deposited originally as mud occurs above and below the thrust fault. Below the fault the former mud is now shale with clay minerals. still has some of the original seawater, is relatively soft, weathers easily and makes gentle slopes. Above the fault the water was squeezed out of the mud due to the great depth of burial and the clay minerals changed to mica because of the high temperatures at the depth creating argillite-a strong metamorphic rock that now forms steep cliffs and dramatic landscapes.
+
+• Below the thrust fault the Cretaceous-age shales and sandstones have abundant marine fossils and were deposited between about 80 and 110 million years ago. Above the thrust fault the Precambrian-age argillite and limestone only contains fossil algae-stromatolites-deposited about 1.4 billion years ago.
+
+Geo-Activity:
+
+• The next time you have some silly putty to play with, roll it into a ball and leave it on the table. After a half hour notice how the ball has just oozed out to make a flat "puddle." The rocks here behave in a similar manner. Mountain building created high mountains, but the soft shale was very weak and the rocks just coxed out toward the prairie, even though there were strong layers inside.
+
+Although Marias Pass was well-known to Montana's Indians, it was a recent discovery by non-Indians. The Salish, Kootenai, and Blackfeet frequently crossed the pass to hunt buffalo and raid their neighbors. By the 1830s, the area had become so associated with the Blackfeet, that few non-Indians dared search for the Pass. Isaac Stevens' railroad survey attempted to "discover" the pass in 1854, but failed to find it. In 1889, the Great Northern Railway sent engineer John F. Stevens to locate the pass. Stevens plowed through four feet of snow in subzero weather in search of the 5,214-foot pass, finding it on December 10, 1889. The Great Northern built its line over Marias Pass in 1891. It was not until 1930 that a highway was constructed over it. Before then, motorists on U.S. Highway 2 had to load their automobiles onto railroad cars at East or West Glacier to ship them around the southern boundary of Glacier National Park on the Great Northern. The railroad dedicated the statue of John F. Stevens in 1925. The federal Bureau of Public Roads installed the stone obelisk in 1930 after it completed the highway.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 165235
+Slug: terry-and-gibbon
+Title: Terry and Gibbon
+Town: Forsyth
+County: Rosebud
+Lat / Lng: 46.25654, -106.73373
+Topics: military
+Year erected: 
+Erected by: Custer Circle Project - 2017 and Forsyth Chamber of Commerce and Agriculture
+
+--- Inscription (as stored for the site) ---
+
+When General Terry, Custer and Gibbon met on the steamer Far West to coordinate the final plan of action against the hostiles, it was decided that the Indians were probably camped along the Little Bighorn. Custer was to lead the Seventh Cavalry to the upper reaches of Rosebud Creek before crossing west to the Little Bighorn. Terry and Gibbon's command was to establish a blocking position near the confluence of the Little Big Horn.
+
+The Montana Column began its march up the Yellowstone River on June 21, 1876. Three days later, the command was just below the mouth of the Bighorn River where the steamer Far West ferried the troops across the Yellowstone.
+
+Sunday, June 25th, 1876 was a difficult day's march for the Montana Column. The command marched a couple of miles up Tullock's Creek and then veered right expecting to cross bench land for an easy route to the south. Finding only rough country, the command continued on to the Bighorn River where the breaks and coulees along the east side of the river continued to make for a difficult march.
+
+About mid-day on June 26th, an advance unit of the Montana Column first learned of Custer's defeat from the Crow scouts who, released from duty by Custer prior to the battle, witnessed the defeat of the Seventh from a safe distance. At the approach of Terry and Gibbon's command, the big Indian village began to disperse in the late afternoon and move south toward the Bighorn Mountains.
+
+At 6:00 AM on the following day, the Montana Column reached the battlefield site, confirming its worst fears as to what happened to the Seventh. The command relieved the beleaguered companies of Major Reno and Captain Benteen who had been under siege on a hilltop four miles up the valley since the afternoon of June 25th. Over the next few days, the survivors of the Seventh buried the dead in shallow graves. The Montana Column then transported over forty wounded troops to the confluence of the Little Bighorn where the Far West was moored. The command then returned to Fort Pease just below the confluence of the Bighorn River waiting for resupply.
+
+Erected by Custer Circle Project - 2017 and Forsyth Chamber of Commerce and Agriculture.

@@ -1,0 +1,98 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193068
+Slug: jefferson-river-beaverhead-river
+Title: Jefferson River - Beaverhead River
+Subtitle: Philanthropy River
+Town: Twin Bridges
+County: Madison
+Lat / Lng: 45.54345, -112.33356
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Explorations of Lewis and Clark 1804-1806
+
+Cartographic Reconstruction UTM Zone 12
+
+Map Number 262-263
+
+With only a sextant, chronometer, and compass in hand, Captain William Clark was able to map the entire exploration, Cartographer W. Plamondon has traced the trail and recorded the changes of the river's course in the last two hundred years.
+
+Map courtesy of the Washington State University Press, digitally enhanced by Sea Reach Ltd. Background photo courtesy of Rick Graetz, Northern Rockies Publishing.
+
+(There is a great deal of information and detail on this map; some of which has not been transcribed. Click on the images to enlarge them. Entries are presented from top to bottom then left to right best as can be determined:)
+
+Cartographer's Note:
+
+As the river symbols are becoming very narrow the cartographer will not shade the entire length of every water course believed to have flowed during the passage of the expedition. Shading will be used only where it will not compromise other data lines placed within the river banks.
+
+Cartographer's Note:
+
+The cartographer has generally shown the bold, solid, 1805 water line. This was done to ease interpretation by the map reader and does not indicate that the major streams have grown narrower during the past two centuries.
+
+August 6, 1805 "...Drewyer Came to me from Capt. Lewis and informed me that they had explored both forks for 30 or 40 miles & that the one we were ascending was impracticati(c)able much further up & turned imediately to the North,..." Clark ➡︎
+
+Camp (Lewis) Aug. 4, 1805
+
+August 8, 1805 "at now R. Fields joined us had been hunting for Shannon but had not found him." Whitehouse ➡︎ (Note: the above entry covers a portion of a Cartographer's Note:) river tending to the west, .... he called the "Wisdom River." today's Big Hole River. They camped one mile up that fork and somehow made nine miles the following day. The beaver, in their way, had fallen many of the willow and young cottonwood trees growing along each bank. The travelers found themselves having to cut through these downed willows, chopping them in the water, to open a passage.
+
+Camp (Lewis) Aug. 5, 1805 Approximate Area
+
+August 6, 1805 "... we proceeded on with much dificuelty and fatigue over rapids and & Stonce; river about 40 or 50 yards wide much divided by Islands and narrow Bayoce (?) to a low bluff on the Stad. Side & Brackfast, ..." Clark ➡︎
+
+July 11. 1806 "the wind rose and blew with great violence from the SW imediately off Some high mountains covered with Snow, the violence of this wind retarded our progress very much and the river being emencely crooked we had it imediately in our face nearly every bend." Clark ⬅︎
+
+Cartographer's Note:
+
+At this point Clark found it easier to base his traverse on land rather than trying to document every bend in the river. The length of the call distances were much longer than by river. Clark simply stated how many islands and bends appeared in the river. We have no reliable understanding of the definitions he used in identifying what was a bend or an island. How large did an island nee to be before Clark counted it. Channels and sloughs, other than the modern channels of the river, were used by the cartographer whenever descriptions in the journals seem to indicate a particular course.
+
+August 6, 1805 "this report deturmind me to take the middle fork, accordingly Droped down to the forks where I met with Capt. Lewin & party, Capt. Lewis had left a Letter on a pole in the forks informing me what he had discovered & th(e) course of the river &c. this letter was cut down by the (beaver) as it was on a green pole & Carried off." Clark ➡︎
+
+August 8, 1805 "... passed the left hand or North fork has 2 mouths empties in at 2 places but is not as large as the middle fork which we take." Ordway ➡︎
+
+August 5, 1805 "... we ascended this fork about one mile and Encamped on an Island which had lately overflown & was wet we passed a part of the river above the forks which was divided and Scattered thro' the willows in such a manner as to render it difficuelt to pass through for a 1/4 of a mile, we were oblige to Cut our way thro' the willows," Clark ➡︎
+
+August 7, 1805 "despatched R. Fields to hunt Shannon, who was out hunting, on Wisdom river at the time I returned down that Stream, ..." Clark ➡︎
+
+August 8, 1805 "a clear cold morning. Sent out eairly to hunt." Whitehouse ➡︎
+
+July 11, 1806 "at 6 P.M. I passed Phalanhrophy river which I proceved was very low." Clark ⬅︎
+
+August 4, 1805 "... went about 6 miles when we came to a fork of the river; crossed the south branch and from a high knob discovered that the river had forked below us, as we could see the timber on the north branch about 6 or 7 miles from the south and west branches. We therefore crossed to the north branch, and finding it not navigable for our canoes, went down to the confluence and left a note for Capt. Clarke directing him to take the left hand branch. We then went up the north branch about 10 miles and encamped on it." Gass ➡︎
+
+'August 7, 1805 "...Camped on the Lard. Side above the mouth of a bold running Stream 12 yards wide, which we call turf Creek from the number of bogs" Clark ➡︎
+
+Camp Aug. 7, 1805
+
+Camp Aug. 5, 1805
+
+July 11, 1806 "Wisdom river is very high and falling." Clark ⬅︎
+
+August 7, 1805 "...as our Store(s) were a little exorsted and one Canoe became unnecessary deturmind to leave one. " Clark ➡︎
+
+(August 5, 1805)
+
+"passed the mouth of principal fork which falls in on the Lard. Side, this fork is about the Size of the Stard. one less water reather not so rapid, its Course as far as can be Seen is S. E & appear to pass through between two mountains, the N W. fork being the one most in our course i.e. S 25 W. as far as I can See, deturmind me to take this fork as the principal and the one most proper..." Clark ➡︎
+
+Camp Aug. 6, 1805
+
+Return Camp 5. Madison County Fairgrounds Gazebo (Clark's Group) July 11, 1806
+
+(July 11, 1806)
+
+"at 7 P M I arrived at the Enterance of Wisdom River and Encampd. in the Spot we had encamped the of August last. here we found a Bayonet which had been left & the Canoe quite safe. I directed that all the nails be taken out of this Canoe and paddles to be made of her Sides..." Clark ⬅︎
+
+You Are Here (in red)
+
+Cartographer's Note:
+
+Lewis and Clark scholars have, without a second thought, considered the modern fork of the Jefferson and Wisdom (Big Hole) Rivers as the forks that gave the explorers so much trouble. The traverse in this area proved so faithful and true that it was several hours of work later when this cartographer realized that the modern confluence had been passed. The only piece of journal or modern map evidence that argues against this higher or southern fork and the conclusion that today's Owlsey Slough was indeed the old course of the Wisdom River is the reported water distance of seven miles between the forks and the mouth of Turf Creek on the east fork. However, in the same traverse entry by Clark he gave the line of sight distance between those two points as one mile which would seem to clearly rule out the modern forks. Following the information in the traverse, there is a reference to a bayou precisely at the point of the modern confluence.
+
+So much evidence pointed to this upstream or southern fork that the cartographer, in the interest of scholarly debate, has shown it as the most probable course of the Wisdom River in 1805.
+
+Cartographer's Note:
+
+During the day of August 3, 1805, Lewis and party were traveling south just off this map. They were staying to the bench that skirted the floodplain along this part of the Jefferson River. Travel through the boggy floodplain was difficult. They spent the night on the bench just before coming back into the area covered by this map. From the lay of the trees that lined rivers in this area. Lewis determined that the river forked just to the south and decided to spend the next day exploring the area.

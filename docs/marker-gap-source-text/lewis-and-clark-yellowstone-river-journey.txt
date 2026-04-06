@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 144967
+Slug: lewis-and-clark-yellowstone-river-journey
+Title: Lewis and Clark Yellowstone River Journey
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.80012, -108.47806
+Topics: exploration
+Year erected: 1924
+Erected by: Daughters of the American Revolution, Shining Mountain Chapter
+
+--- Inscription (as stored for the site) ---
+
+Captain Clark, of the Lewis and Clark Expedition, passed down the river opposite this point July 24, 1806.
+
+Erected 1924 by Daughters of the American Revolution, Shining Mountain Chapter.

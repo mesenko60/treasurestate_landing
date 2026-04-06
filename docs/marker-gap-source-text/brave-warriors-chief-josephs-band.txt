@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142865
+Slug: brave-warriors-chief-josephs-band
+Title: Brave Warriors Chief Joseph's Band
+Town: Chinook
+County: Blaine
+Lat / Lng: 48.3798, -109.20875
+Topics: 
+Year erected: 1928
+Erected by: Chief Joseph Memorial Association
+
+--- Inscription (as stored for the site) ---
+
+To the everlasting memory of the
+
+Brave Warriors
+
+Chief Joseph's Band who fought on these grounds in the
+
+Nez Perce War of 1877
+
+Erected by
+
+Nez Perce Indians and the Chief Joseph Memorial Association
+
+June, 1928
+
+Erected 1928 by Chief Joseph Memorial Association.

@@ -1,0 +1,44 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 45604
+Slug: seventh-cavalry-horse-cemetery
+Title: Seventh Cavalry Horse Cemetery
+Subtitle: Little Big Horn
+Town: Crow Agency
+County: Big Horn
+Lat / Lng: 45.57117, -107.42824
+Topics: nature, military
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+After the battle, 39 cavalry horses that had been shot for breastworks during Custer’s Last Stand, were found among the dead on Last Stand Hill. In 1879, a temporary cordwood monument was erected by the Army on the crest of the hill. The area, strewn with cavalry horse skeletons, was policed and the remains of the horses placed inside the cordwood monument. In July 1881, Lt. Charles F. Roe and a detail from the Second Cavalry replaced the temporary monument with the present granite monument, and interred the Seventh Cavalry casualties around the base. The 2nd Cavalrymen in fond reverence for the horses, re-interred them here, after the monument was erected, and lined the horse cemetery with cordwood from the original monument.
+
+On April 9, 1941 maintenance workers discovered a horse cemetery here while digging a trench for a water reservoir drainage pipe. Among the artifacts recovered were partial human remains, cavalry boots, bullet-pierced hardtack cracker tins, and approximately 10 Horse skeletons. Further excavations was delayed until July 1946 when Lt. Col. Elwood L. Nye, U.S. Army Veterinarian continued the excavation work.
+
+Unfortunately his report has not been located, nor what became of the horses uncovered.
+
+In February 2002, the site was examined using ground penetrating radar, revealing soil anomalies in the area. National Park Service archeologists excavated the cemetery April 29 to May 1, 2002. Horse skeletal remains were found in two six foot square areas just northeast of the Seventh Cavalry Monument. The remains included a vertebrae, leg bones, shoulder bone, and rib bones. After thorough documentation, mapping, and photography, the horse cemetery (which was left in place for future reference) was covered with protective plastic sheeting and the site restored with backfill.
+
+“While digging an excavation the East End of the wooden trench or “horse cemetery’ on Custer Hill was encountered. The wooden end of the trench gave way and about 10 horse skeleton fell out. Among these bones were also human bones… leg and arm bones but no skulls. There was also a pair of cavalry trooper’s boots with a few toe bones inside. Two tin cracker boxes: “C.L. Woodman & Co, Chicago,” with bullet holes through the tin were found. These at one time contained ‘hardtack’ and were used for protection as breastworks during the fight on Custer Hill, as the time when General Custer ordered all the horses shot to form protection for a defensive position… The horse trench was not thoroughly explored…
+
+The grave or trench has been closed waiting instructions from your office.”
+
+Edward S. Luce, Superintendent, Custer Battlefield National Cemetery, April 18, 1941
+
+“It would be a very valuable study… if we could procure enough of the bones to make detailed and exacting comparisons between those of the Army mount of that day & those of the present…”
+
+Lt. Col Elwood L. Nye, 1946
+
+“On top of Custer Hill was a circle of dead horses with a 30 foot diameter, which was not badly formed. Around Custer some 30 or 40 men had fallen, some of whom had evidently used their horses as breastworks…” 2nd Lt. Edward J. McClernand, Company G, 2nd Cavalry
+
+“Custer was lying on top of a conical hill where five or six horses lay as if to suggest a barricade. Empty shells were found behind the horses which were all sorrels of C Company.”
+
+Lt. Charles C. DeRudio, Company A, 7th Cavalry
+
+“…I accordingly built a mound… out of cordwood filled in the center with all the horse bones I could find on the field… I had all of the horse bones gathered together and placed in the mound where they cannot be readily disturbed by curiosity seekers.”
+
+Capt. G.K. Sanderson, 11th Infantry, Ft. Custer, M.T. April 7, 1879
+
+Erected by National Park Service, U.S. Department of the Interior.

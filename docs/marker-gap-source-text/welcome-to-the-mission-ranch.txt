@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 193374
+Slug: welcome-to-the-mission-ranch
+Title: Welcome to the Mission Ranch
+Subtitle: Perfect Crow Country
+Town: Livingston
+County: Park
+Lat / Lng: 45.71035, -110.40324
+Topics: 
+Year erected: 
+Erected by: Undaunted Stewardship
+
+--- Inscription (as stored for the site) ---
+
+Like much of Montana, the lands of the Mission Ranch still look largely as they did in the days of Lewis and Clark. Ranching, anchored as it is in the land's own natural productivity, is one of the main reasons. The grassland prairies and wooded stream side areas of the Mission Ranch still thrive with fish and wildlife native to the region. Most of the same grasses and other plants still color the view in all directions. Where buffalo once grazed in seasonal migrations, cattle today are managed to achieve similar effects.
+
+Grazed by cattle steadily since the mid-1800s, these lands once bustled as cultural crossroads. On that mid-summer evening in 1806 when Captain William A. Clark and other members of the Corps of Discovery camped across the Yellowstone River from here, the lands of the present-day Mission Ranch already stirred with echoes of human history. Since then, still more events of great moment occurred here.
+
+Today, through a program called Undaunted Stewardship, the Mission Ranch formally preserves its historic sites while sharing them with the public and take other actions designed to maintain the landscape's body and soul. Welcome to a glance of its ghosts, its life and its future-enjoy your visit.
+
+"The Crow country is exactly in the right place. It has snowy mountains and sunny plains, all kinds of climates and good things for every season. When the summers heats scorch the prairies, you can draw up under the mountains, where the air is sweet and cool, the grass fresh, and the bright streams come tumbling out of the snow banks... In the autumn when your horses are fat and strong from the mountains pastures, you can go down into the plains...And when winter comes on, you can take the shelter in the woody bottoms along the rivers...The Crow country is exactly in the right place. Everything good is to be found there.There is no country like the Crow country." - Chief Arapooish (a.k.a. Sore Belly), Crow Tribe, circa 1830s
+
+Erected by Undaunted Stewardship.

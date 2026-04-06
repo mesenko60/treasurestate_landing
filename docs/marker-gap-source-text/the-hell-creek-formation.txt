@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 164492
+Slug: the-hell-creek-formation
+Title: The Hell Creek Formation
+Town: Rosebud
+County: Rosebud
+Lat / Lng: 46.26904, -106.30646
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+About 65 million years ago, the inland sea receded as the Rocky Mountains rose, pushing the shoreline further east. Great rivers meandered through the coastal plain in a warm and humid climate, depositing sediment which would later become known as the Hell Creek Formation. The tan sandstones, siltstones, and mudstones are common throughout eastern Montana, but can be best seen in road cuts along the highway, the Charles M. Russell Wildlife Refuge, and the Makoshika State Park. Dinosaur fossils are frequently found in the Hell Creek Formation and include Triceratops, an immense hadrosaur called Edmontosaurus, the thick-skulled Pachycephaosaurus, the armored Ankylosaurus, and the awesome Tyrannosaurus rex to name just a few. The boundary between late Cretaceous Hell Creek Formation and the more recent Tertiary Fort Union Formation provides evidence that a gigantic meteorite or asteroid struck the Earth about 65 million years ago. But it is not known if that event caused the extinction of the dinosaurs or just hastened their journey to oblivion. Fossils excavated and studied in Montana from the Hell Creek Formation have added immeasurably to our knowledge about the dinosaurs and their lives.
+
+Geo-activity
+
+• When you drive through eastern Montana, imagine what it was like here 65 million years ago when a meteorite or asteroid may have struck the Earth. How many different kinds of dinosaurs lived in Montana and can you think of any animals living today that are like them?
+
+Geo-facts
+
+• Most of eastern Montana was underwater during the Cretaceous Period, 65 to 144 million years ago.
+
+• Dinosaur fossils are frequently found in the Hell Creek Formation.
+
+• The boundary between the Cretaceous Hell Creek Formation and the more recent Tertiary Fort Union Formation provides evidence that an asteroid or gigantic meteorite struck the Earth about 65 million years ago.
+
+In the early years of the 20th century, cross-country travel by automobile was still an adventure comparable to the covered wagon days of the Old West. Instead of hostile Indians and buffalo stampedes, motorists contended with gumbo mud and rutted dirt tracks that could only marginally be called roads. In May 1916, a group of Spokane businessmen formed the National Parks Highway Association to promote an automobile route between Chicago and Seattle and designated a 3,000-mile route between the two cities as the National Parks Highway. The highway was little more than a patchwork of interconnected and unimproved county roads. In June 1916, Frank Guilbert set out with three companions in two Mitchell Six automobiles to blaze the route. For a month, the expedition battled its way across the northern tier of states, including a very rainy trip across Montana, before arriving in Seattle. The mission prove the feasibility of the National Parks Highway and its potential for tourism and commerce. By 1926, the road was known as U.S. Highway 10 and, in 1971, Interstate 94 superseded the old route.
+
+Erected by Montana Department of Transportation.

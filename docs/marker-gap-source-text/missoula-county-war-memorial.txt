@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 144489
+Slug: missoula-county-war-memorial
+Title: Missoula County War Memorial
+Town: Missoula
+County: Missoula
+Lat / Lng: 46.87288, -113.9955
+Topics: 
+Year erected: 1927
+Erected by: American Legion, Hellgate Post No. 27
+
+--- Inscription (as stored for the site) ---
+
+Erected by the Auxiliary of the American Legion in Honor of the Men of Missoula County who made the Supreme Sacrifice during the World War.
+
+Hollis R. Honey • Nelson Gautheir • Harry Hendrickson • James Elliott Wright • Guy Lovell • Ole Beck • Gotfried Axel Petersen • Lt. Col. Robt. Maxey • Douglas G. Marsh • Howard Gibson • Peter Flodness • Patrick Henry Buckley • John Michael Shaughnessy • James Claude Spimpkins • Dan G. Courtney • Roy Butzerin • Huge A. Reardon • Gustav Wilson • Joseph Pronovost • Gerald Davidson • William F. Frey • Paul Logan Dorblaser • Athure Erickson • Wallace B. Smith • Gerald W. Cornelissen • Sidney Wilson Dunbar • Carlos Wayne Matheny • Lawrence Allen • Ian Guy Anderson • Gust Gunderson • Keith Blakely • F.G. Reed • Alcide Jette • Dewey Simpson • William Gilbert • Herbert H. Stone • Harley G. Robinson • Luke Rohletter
+
+Honor Roll Missoula County
+
+Dedicated to the memory of those who gave their lives in World War II
+
+Dec. 1941 to Sept. 2, 1945
+
+Alkire, Jack W. • Allen, Harry J. • Andrews, John E. • Andrews, William V. • Armstrong, James
+
+H. • Aronson, John P. • Avery, Harvey, F. • Bailey, Dean L. • Barger, Dean L. • Bebee, Sydney • Bell, Adam • Bellusci, George • Benedict, Charles C. • Bergset, Leonard A. • Blazier, E. Clifford • Boatright, James A. • Boden, William H. • Brod, Alvin C. • Brondum, Charles L. • Brunson, Clifford L. • Butler, David R. • Butler, Gerald C. • Butler, Jackie • Cahoon, Wells L. • Campbell, Douglas E. • Campbell, Mark V. • Chandler, Gilbert E. • Charlo, Louis C. • Churchill, Frank L. • Cluzen, Bernard S. • Crevier, Wesley J. • Carouse, Harold R. • Cuthbert, William B. • Dandro, Harold • Davidson, Fred G. • Davis, Lowell A. • Davison, James E. • Downs, George R. • Farley, John J. • Farmer, Robert, E. • Farrell, Glenn S. • Fehr, Ray • Fiddler, Jess J. • Freeman, John E. • Fulton, Delbert M. • Gamache, Joseph D. • Giffin, Robert, H. • Golden, Walter S. • Gonsior, Walter S. • Hait, William A. • Hampson, Joseph • Hanson, Joseph • Harman, John E. • Hauck, Herbert H. • Hayes, Jesse J. • Heleen, Carl • Hight, Robert • Hightower, John S. • Hillman, Stanley • Hoyt, Harlan • Huck, Donald R. • Hudelson, Milton L. • Ingraham, Gene A. • Jette, Francis • Jette, Leon R. • Jobb, Thomas W. • Johnnie, Charles P. • Johnson, Clark G. • Johnson, Lyle W. • Keilman, Paul H. • Keup. Robert C. • King, Roland C. • Kinkade, George D., Jr. • Kirkwood, Jack M. • Klos, Robert L. • Knoll, Byron R. • Koch, Stanley H. •
+
+Kuhn, Ralph I. • Kuney, Ralph D. • Kyle, Gilbert E.
+
+Lackman, Joseph F. • Larson, Vernon C. • La Vote, Thomas R. • Lechner, Shull • Lundrigan, Carol E. • Luse, Glenn, G. • Marling, Joseph • Martin, Leo R. • Martinson, Jack S. • Mason, Daniel J. • Mc Atee, James T • Mc Vicars, John T. • Mc Creeedy, Orin C. • Mc Dougall, William J. • Mc Laughlin, Robert E. • Mc Laughlin, Joseph P. • Mc Lure, William W. • Mangan, Charles A. • Miller, William W. • Mitchell, Bruce A. • Moholt, Arnold • Morin, Dalton J. • Morse, Bobby G. • Mosher, Roy • Norman, Kenneth E. • Nelson, E. Eugene • Nelson, Henry W. • Nelson, Roland F. • Nugent, Frank P. • O'Connor, James D. • Floyd, T. O'Day • Odegaard, Clifford M. • O Donnell, Thomas B. • Ogg, Randolph H. • Olson, Leonard R. • Owen, Robert B. • Owens, Maurus C. • Pachico, John • Paul, Benjaman A. • Pearson, Robert S. • Peterson, Melvin L. • Phillips, Murry A. • Plummer, William H. • Price, Robert J. • Probst, Donald G. • Pronovost, William E. • Ranta, Ernest • Rasmussen, Marshall • Reeder, Merwin E. • Reich, Henry C. • Roberts, Charles M. • Root, Joseph S., Jr. • Roundy, Roscoe S. • Ruffcorn, Alfred N. • Salisbury, Patrick H. • Sanzone, Joseph • Sayler, Alvin F. • Schara, James E. • Schottelkorb, W. F. • Seitz, Robert J. • Sellon, William, L. • Smiley, Richard C. • Sorenseon, Ray A. • Stage, Donald W. • Stelling, Daved G. • Streit,
+
+Norman C., Jr. • Sullivan, Charles L. • Taylor, Frank • Taylor, Harry T. • Thompson, Harrell F. • Thrailkill, Frank, Jr. • Tilzey, Donald T. • Torkelson, Roy A. • Towey, Thomas J., Jr. • Unacks, James O. • Vance, Earl T. • Verworn, Benny • Ward, Chester O. • Weisser, John • Welty, Lawrence C, • Wheeler, Ray S. • Wilson, Prince H. • Zimpel, Arnold
+
+Erected 1927 by American Legion, Hellgate Post No. 27.

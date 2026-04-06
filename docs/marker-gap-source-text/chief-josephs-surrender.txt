@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142869
+Slug: chief-josephs-surrender
+Title: Chief Joseph’s Surrender
+Subtitle: October 5, 1887 11:00 a.m.
+Town: Chinook
+County: Blaine
+Lat / Lng: 48.37624, -109.21098
+Topics: native-american
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+With the fighting at a standoff, Hinmatóowyalahtq̓it (Chief Joseph) met with Colonel Miles near this site. Surrender was a survival strategy, to keep the Nez Perce people alive and together. One witness reported that Chief Joseph spoke these words:
+
+Tell General Howard I know his heart. What he told me before I have in my heart. I an tired of fighting. Our chiefs are killed. Looking Glass is dead. Tukulxućúut is dead. The old men are all dead. It is the young men who say yes or no. He who leads the young men is dead. It is cold and we have no blankets. The little children are freezing to death.
+
+My people some of them have run away to the hills and have no blankets, no food; no one knows where they are, perhaps freezing to death. I want to look for my children and see how many I can find. Maybe I shall find them among the dead. Hear me my chiefs, I am tired; my heart is sick and sad. From where the sun now stands, I will fight no more forever.
+
+Erected by National Park Service, U.S. Department of the Interior.

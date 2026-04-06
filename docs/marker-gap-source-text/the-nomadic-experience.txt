@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 167661
+Slug: the-nomadic-experience
+Title: The Nomadic Experience
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79852, -108.48855
+Topics: 
+Year erected: 
+Erected by: Yellowstone Kelly Interpretive Site
+
+--- Inscription (as stored for the site) ---
+
+The Nomadic Experience
+
+For thousands of years, native peoples of the Northern Plains enjoyed a lifestyle marked by freedom of movement. Families, friends, and foes interacted through a diversity of languages and customs. People thrived by chronicling the natural features and moving to the rhythm of the seasons. Their resourcefulness aided in overcoming the toughest winters, hottest summers, and established a lineage of history and stories.
+
+Contact with Europeans introduced the horse and new weapons, but also brought oppression, disease, and fixed boundaries, all of which undermined the nomadic way of life.
+
+Where the Bison Roamed
+
+The American bison was the life line of native peoples. When Yellowstone Kelly first arrived in Montana Territory in 1868, he observed: "...one could ride north for hundreds of miles and never be out of sight of buffaloes..."
+
+By February, 1880, just twelve years later, Yellowstone Kelly witnessed one of the last great gatherings of bison north of the
+
+Yellowstone River. The eradication of the bison corresponded with the forced relocation of native people to reservations.
+
+Alkali Creek Overlook - Where the Bison Roamed
+
+Alkali Creek provides a convenient passage for traveling north from the Yellowstone River. Just north of this point, archaeologists excavated two areas near Alkalie Creek. The sites were occupied from approximately 3,300 B.C. to 340 years ago. Thousands of artifacts were recovered, consisting mostly of bone fragments, fire-cracked rocks, and stone flakes from tool-making, along with projectile points and stone tools.
+
+The earlier people used stone points with atlatls, a small spear-throwing device. In the past 2,000 years, people used smaller arrowheads with bow and arrow technology. They primarily hunted bison. The nearby Billings Bison Trap Site is located one-half mile east, where MetraPark is today. Bison hunting occurred in the immediate area for thousands of years.

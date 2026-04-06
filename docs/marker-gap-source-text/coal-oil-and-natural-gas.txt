@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142979
+Slug: coal-oil-and-natural-gas
+Title: Coal, Oil, and Natural Gas
+Town: Culbertson
+County: Roosevelt
+Lat / Lng: 48.14775, -104.50411
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Fort Union Formation was deposited not long after the dinosaur extinction, about 65 million years ago. Rivers originating in mountains to the west and south carried abundant sediment to the nearby shallow inland sea to the east, crossing the subtropical, swampy coastal plain of eastern Montana on their way. As the rivers shifted, the swamp vegetation and peat were covered with thick deposits of sand, silt, and clay. In time, it compacted to form coal. The sand, silt and clay cemented and compacted into sandstone, siltstone, and mudstone. Eastern Montana has an estimated 200 billion tons of coal that developed from the vegetation of these swamps. Geologists classify much of the coal buried in northeastern Montana as lignite, which has a low energy content. Most of the coal is buried under layers of the soft rock in the Fort Union Formation, but is locally exposed in hill and road cuts. The scattered red rock of the Fort Union Formation is clinker. Clinker forms when lightning strikes, wildfires, or spontaneous combustion cause the coal to ignite and burn. The intense heat of burning coal bakes the adjacent sedimentary layers creating the dense, hard red rock.
+
+Northeastern Montana is part of the Williston Basin, a slightly irregular, round depression centered in North Dakota that slowly subsided over hundreds of millions of years. Sediment that accumulated in the depression is now up to 16,000 feet deep in the basin. The Williston Basin is a major oil and natural gas province because it has all the right components and conditions for oil and gas formation: organic-rich deposits such as black shale to generate the oil and gas, reservoir rocks where it accumulated such as porous sandstone, and geologic traps. The traps are faults, folds, and lateral changes in the rocks that keep the oil and gas from moving out of the area of accumulation.
+
+Geo-Facts:
+
+• Oil is typically generated for organic-rich marine sedimentary rocks. It is accumulated in any porous and permeable rock. The reservoirs are most commonly found in limestones and sandstones deposited in a variety of environments.
+
+• Oil and natural gas exploration has continued in the Williston Basin. In 2008, the Montana Board of Oil and Gas Conservation reported oil production of about 34 million barrels from the Williston Basin and about 1900 active producing wells.
+
+• The Fort Union Formation is named for Fort Union, an American Fur Company trading post located near the confluence of the Missouri and Yellowstone rivers.
+
+The post was active from 1828 to 1867 and is now a National Historic Site.
+
+Geo-Activity:
+
+• Keep a look out for the red rock and soil that can be found throughout eastern Montana; remember that the red color comes from coal seam fires which baked the surrounding rock.
+
+Erected by Montana Department of Transportation.

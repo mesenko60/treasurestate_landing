@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161477
+Slug: a-pleistocene-wonderland
+Title: A Pleistocene Wonderland
+Town: Chester
+County: Liberty
+Lat / Lng: 48.51413, -110.96035
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Imagine you are a time traveler and have the opportunity to visit this area 25,000 years ago. You would recognize the Rocky Mountains to the west. The igneous and heavily glaciated Sweetgrass Hills loom on the horizon far to the north. The last of the great continental glaciers had retreated, leaving behind a hummocky grassland with ponds, swamps, and erratic boulders. The grasslands with an abundance of animal life, much of which would be recognizable as still inhabiting the northern Great Plains today. However, there would also be many animals that have long been extinct. Almost all of them would be much larger and adapted to a colder post-glacial climate.
+
+Great herds of horses, pronghorn antelope, elk, camels, and giant bison would be a common site on the plains. The milled around with groups of blond-haired Shasta ground sloths, and shaggy Musk and Shrub oxen. Columbian mammoths with long, curving tusks roamed the plains in small groups. Dire and Gray wolves and short-faced bears followed the herds in search of easy meals. At 10-feet in length and more than 2,000 pounds the bears dwarfed today's Grizzlies in size and ferocity. Perhaps the most famous of all Pleistocene predators were the feared saber-toothed cats. Relatively small and compact, the cats may have ambushed their prey and slashed them with their 7-inch long canine teeth. Perhaps even more deadly, however, was the long-legged American Lion, a killing machine bigger than the Bengal tiger. Climate changes, limited food supplies, and possibly, over-hunting by paleo-Indians caused many species once common to the northern Great Plains to become extinct about 11,000 years ago. The American bison, gray wolf, elk, and pronghorn antelope are descendants of that primeval ecology.
+
+Paleo-Facts:
+
+Shasta ground sloths migrated to North America from South America about one million years ago. The animals weighed between 300 and 400 pounds, were about nine feet long, and walked on their knuckles. Shasta ground sloths went extinct nearly 11,000 years ago.
+
+About 11,000 years ago the first humans entered this game-rich landscape. These early paleo-Indian hunter-gatherers are best known for hunting mammoths and bison using spears tipped with beautifully-flaked Clovis and Folsom points.
+
+Megafauna is a term sometimes use to describe Pleistocene mammals. It refers to animals that were long-lived with slow population growth rates, and few or no natural predators capable of killing adults. Mammoths, dire wolves, shrub oxen, short-faced bears, saber-toothed cats, Shasta ground sloths, and humans are classified as megafauna.
+
+Geo-Activity:
+
+Imagine you are a paleo-Indian hunter during the Pleistocene era, which of the animals mentioned in the text would you like to hunt and which animals would you want to keep away from?
+
+Erected by Montana Department of Transportation.

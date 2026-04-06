@@ -1,0 +1,40 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 220325
+Slug: cut-bank-international-airport-2
+Title: Cut Bank International Airport
+Subtitle: The Evolution of an Airfield
+Town: Cut Bank
+County: Glacier
+Lat / Lng: 48.60678, -112.3665
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+From a grass airstrip for barnstormers to Army Air Force Satellite Base for bombers to modern-day International Airport - the Cut Bank Airport Authority, the City of Cut Bank, and Glacier County are all extremely proud of the history and accomplishments that have occurred over many decades. The vision for Cut Bank Airport grew from the desire of early aviators and World War I veteran pilots to create an aviation hub for the region.
+
+The post-1990's brought renewed interest in both preserving and improving the airport's facilities. In 2007, the Cut Bank Municipal Airport and Army Air Base was listed on the National Register of Historical Places, with the entire airport property considered a Historic District. This designation covered everything still intact since the original base construction, from buildings and runways to the storm drainage and sewer systems that still operate today.
+
+Construction at the airport began in July 1942, immediately after authorization of the satellite base by the 2nd Air Force, which was responsible for training heavy bombardment crews. The site could easily accommodate three long runways for the training crews in addition to a parallel taxiway system, hardstand parking for the 12 B-17 bombers, a 300' x 300' concrete apron and a large aircraft hangar. Other airside improvements included beacons, weather vanes, and flush mounted runway lighting systems consisting of obstruction, contact, and split filter range lights. (The two elite filter range lights adjacent to this panel were relocated here in 2014) Officers' quarters, barracks for the enlisted men, and various other base support buildings were also contracted during this time.
+
+The military construction documents refer to the runways as:
+
+Runway No. 1, the ENE-WSW runway,
+
+Runway No. 2, the E-W runway, and
+
+Runway No. 3, the NW-SE runway
+
+The runways were all originally 150 feet wide. Runway No. 1 was 5,560 feet in length. Runway No. 2 was 6,567 feet long. Runway No. 3 was 8,285 feet long. The pavement section for the runways consisted of 5" bituminous asphalt over an 8" compacted gravel course. The airside pavement needed to be able to withstand the nearly 70,000 lb. maximum takeoff weight of the Flying Fortress.
+
+The hardstand for the B-17's were circular 74'-to-75' diameter concrete pads, with steel anchors. During the time the base was in operation there were 12 hardstands, one for each B-17 to be parked securely tethered.
+
+Note the range finder embedded in the ground to the left of the marker.
+
+The hardstands were strategically positioned and separated, in the event one of the airplanes was attacked the others in the fleet could potentially remain undamaged.
+
+The storm drainage system is made up approximately 25,000 linear feet of piping plus over 100 drainage structures that collect surface runoff. The sewer system for the air base was designed to function at a maximum capacity of 3,000 men. The collection system connects into the sewage disposal system on the east side of the Historical District. It was also constructed in 1942-43 and is still in operation.
+
+Many rehabilitation and reconstruction projects have been completed at the airport since the mid-1990s. The active runways and taxiways are engineered to meet modern specifications of the Federal Aviation Administration, and have an expected life cycle of 20 years. We welcome and appreciate the mix of small planes, business jets, emergency and military aircraft that all contribute to the success and growth of our airport.

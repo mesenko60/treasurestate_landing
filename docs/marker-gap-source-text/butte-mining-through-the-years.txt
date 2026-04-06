@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 205897
+Slug: butte-mining-through-the-years
+Title: Butte Mining Through the Years
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.01175, -112.51788
+Topics: industry, landmarks
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Placer Mining 1864- 1875
+
+Early pioneers used placer mining, or gold panning, which relied on water to separate waste rock from the gold (placer ore). Gold is heavier and sinks to the bottom. Placer mining tools generally include the rocker box, the sluice, and the dredge, the shaker table, and of course the pan. Besides placer mining, another early form of mining was hydraulic mining which used high-pressure water to wash away waste and expose the valuable gold. In the Butte area, the easy to get ore using placer mining methods ran out quickly, and Butte almost became a ghost town in 1875.
+
+Vein Mining 1875- 1979
+
+Vein mining in Butte was used to extract silver, copper, lead, zinc and manganese. Common tools used for vein mining include picks, shovels, drills, and dynamite. Horizontal stations were cut every 100, 135, or 200 feet below the surface. Drifts were driven from each station and crosscuts were excavated to intersect the ore vein. Ore was hoisted to the surface using vertical shafts attached to massive iron head frames and 13 frames remain today as monuments to underground mining. Montana Bureau of Mines and Geology research shows there are approximately 10,000 miles of underground workings in the Butte area.-- 4,200 miles of vertical shafts and 5,600 miles of main horizontal openings. They are now filling up with returning groundwater.
+
+Block Cave Mining 1948- 1967
+
+Block cave mining in Butte was a low-cost way of extracting pockets of ore that were too small to recover with vein mining. Miners divided the ore body into 80' X 120' zones called blocks that were undercut from below until caving began, crushing the ore into removable fragments. The ore flowed by gravity through chutes into ore cars or concrete-lined slasher drifts. Compressed air-operated motors pulled buckets of ore to a central point where it could be loaded into ore cars, transported to the shaft and hoisted to the surface. Daily production levels reached 15,000 tons of ore at the Kelley Mine, northwest of the Berkeley Pit.
+
+Open Pit Mining 1955 - 2000
+
+Open pit mining in Butte was done by stripping off the waste to expose the ore. Dynamite blasting broke up and loosened the material, which was then loaded by electric or diesel shovels into haul trucks. In 1963, the Weed Concentrator (southeast of the Berkeley Pit) was built to process the ore. The main types of ore recovered from open pit mining in Butte were copper and molybdenum, with by products of gold, silver, lead, and zinc. After the Berkeley Pit closed in 1982, mining was resurrected in 1986 at the Continental Pit, east of the Berkeley. Operations there were suspended in 2000, and resumed in fall 2003

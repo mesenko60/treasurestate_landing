@@ -1,0 +1,22 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163880
+Slug: the-chappel-brothers-corporation
+Title: The Chappel Brothers Corporation
+Subtitle: Of 1928 - 1939
+Town: Miles City
+County: Custer
+Lat / Lng: 46.40506, -105.85229
+Topics: nature, industry
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+By the 1920s the horse industry was thriving in eastern Montana. "There were horses on every knoll and hill in sight." In the 1930s the Great Depression combined with drought drove people to abandon their farms and ranches, turning lose their stock on the public domain. Draft horses were no longer needed as mechanized equipment replaced them. As a result, there were more horses on the range than it could support. Only worth 2 cents a pound with no place to ship them, the horse market collapsed. Seeing opportunity on the open range, two brothers who ran a cannery in Illinois, moved to Miles City where they could set up their office headquarters on Main Street.
+
+From 1928 to 1939 the Chappel Brothers Corporation (CBC) referred to by some as 'Corn Beef and Cabbage') used grazing land from Hardin to Fort Belknap and Miles City to Wolf Point. Their western ranch headquarters was at Sunday Creek on the Kinsey Road. In 1935 60,000 head of horses ranged over 10,000 square miles in eastern Montana.
+
+The CBC outfit provided well-paying jobs to young men who knew horses and could endure long hours of hard and fast riding, rounding up free-range horses and driving the dry mares, old horses and those not fit to work to shipping points bound for the Illinois based packing plant. A day herd of horses gathered for slaughter numbered more than 5,000 head. Once shipped to the cannery, the horses became chicken feed, fertilizer, cat and dog food, and glue. The CBC expanded when the Russian government signed an agreement to receive tons of horse meat for food.
+
+The cowboys who worked for the CBC earned $40 to $45 a month, premium wages during those days of hardship where the work was strenuous and dangerous. Hands were in the saddle from 3 a.m. until 8 or 9 p.m., seven days a week. After the CBC closed down, several former CBC hands were instrumental in raising stock and putting on most of the rodeos in eastern Montana. If you could say you rode for the CBC you wore a badge of honor.

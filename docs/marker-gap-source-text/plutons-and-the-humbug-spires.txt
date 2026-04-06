@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 180834
+Slug: plutons-and-the-humbug-spires
+Title: Plutons and the Humbug Spires
+Town: Silver Bow
+County: Silver Bow
+Lat / Lng: 45.83479, -112.68396
+Topics: nature
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+This rest area lies near the southwest corner of the Boulder Batholith - a very large collection of igneous plutons. "Igneous" refers to rocks solidified from magma. "Plutons" harden from great blobs of magma that harden deep in the earth.
+
+Plutons surround this rest area. The Big Hole Canyon Pluton makes up the south side of Fleecer Mountain to the west (the one that looks like Mount Fuji, though it isn't a volcano). The Climax Gulch Pluton rises on both sides of the highway here and to the north. The Butte Pluton, farther north, hosts the copper, gold, silver and molybdenum deposits of the Butte Mining District. The Butte Pluton has been mined almost continuously since 1864.
+
+The Moose Creek Pluton, south and east of us, is now a labyrinth of pinnacles and fins called the Humbug Spires. The spires are what remain after millennia of weathering and erosion along fractures and joints. The result is a haven for hikers, rock climbers, and mountain lions.
+
+Geo-Facts:
+
+• Plutons are one to twenty miles across. Batholiths are a hundred or more miles across.
+
+• The Plutons around us formed more than three miles deep in the earth, between 70 and 80 million years ago. The dinosaurs living here would have seen nothing to show what was happening beneath their feet.
+
+• The relentless forces of weathering, erosion, and plate tectonics brought the plutons to the surface over millions of years. The rocks above the plutons were slowly disintegrated and carried away. Their remains are now spread all the way to the Atlantic and Pacific oceans.
+
+Geo-Activity:
+
+• Pick up a rock and look at it very closely. Igneous rocks are made of interlocking crystals. The particles in the rocks are commonly angular. Sedimentary rocks are commonly made of roundish particles that are cemented together. Rub the rock with your fingers. Does it break apart? Try to imagine how long it would take for wind, and water to turn the rock into sand and carry it to the sea.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 127799
+Slug: these-springs-have-witnessed
+Title: These Springs Have Witnessed...
+Town: Great Falls
+County: Cascade
+Lat / Lng: 47.53445, -111.22986
+Topics: exploration, native-american, parks
+Year erected: 
+Erected by: Lewis and Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+Native American tribes followed the buffalo through this area and camped at Giant Springs. The temperature of the spring water stays a consistent 54 degrees all year long, making this a good site for winter camps.
+
+Lewis and Clark Corps of Discovery expedition member Captain William Clark first documented these springs on June 18, 1805. The Giant Springs area was one of many where the Corps reported plentiful beaver. Many trappers and fur traders eventually traveled through this area during the Fur Trade Era, which flourished along the Missouri River in the 1800's.
+
+Nearly eighty-five years after William Clark’s discovery of the springs, completion of the Montana Smelter in 1888, located just south of present day Giant Springs Road, gave Great Falls its first major industry. The smelter overlooked Giant Springs and operated until 1902.
+
+The Giant Springs Fish Hatchery was completed in 1922 and became an added attraction for the visitors to Giant Springs Park. The park was operated at the time by the City of Great Falls.
+
+Giant Springs Park prospered during the Great Depression of the 1930’s as the result of major reconstruction projects. The Works Project Administration (WPA) and other local agencies built the concrete bridges, viewing platform, stone steps, and early roads. Workers also rehabilitated the rock walls and planted many of the large trees seen in the park today.
+
+In 1970 Giant Springs Park was transferred from the City of Great Falls to the State of Montana and became Giant Springs State Park.

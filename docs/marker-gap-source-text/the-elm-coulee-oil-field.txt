@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 203000
+Slug: the-elm-coulee-oil-field
+Title: The Elm Coulee Oil Field
+Subtitle: Birthplace of the Bakken Oil Boom
+Town: Sidney
+County: Richland
+Lat / Lng: 47.70706, -104.16315
+Topics: industry, science
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Northeastern Montana is part of the Williston Basin geologic structure, a slightly irregular, bowl-shaped depression centered in North Dakota that slowly subsided over hundreds of millions of years. It served as a locus for sediment accumulation, and now has up to 16,000 feet of sedimentary rock in the deepest part of the basin. The Williston Basin is a major oil and natural gas province because it has all the right components and conditions for oil and gas formation and accumulation: organic-rich deposits such as black shale to generate the oil and gas, reservoir rocks, such as porous sandstone where oil and gas can accumulate, and geologic traps. The traps are faults, folds, and lateral changes in the rock that keep the oil and gas from moving out of the area of accumulation.
+
+The Bakken formation is one of many geologic units deeply buried in the subsurface in the Williston Basin. It is comprised of a dolomite bed sandwiched between two organic-rich shales that were deposited in deep and coastal waters about 350 million years ago during the Late Devonian age. Discovered in 2000, the Elm Coulee Oil Field covers an area of approximately 750 square miles with the oil located at depths of 8,500 to 10,500 feet; the oil-bearing rock is only about 45 feet thick. The technologies used to extract the oil involve horizontal drilling and hydraulic fracturing (fracking). Oil production from the Elm Coulee Oil Field began in 2001 and doubled Montana's oil output in a few short years. Nearly 150 million barrels of oil had been extracted by 2013.
+
+Geo-facts:
+
+• The Bakken Formation is named after Henry Bakken, a farmer in Tioga, North Dakota on whose land the formation was originally discovered in an oil well drilled in 1951.
+
+• Induced hydraulic fracturing (fracking) is a process where water mixed with sand and chemicals is injected under high pressure into a well to create fractures or cracks in deep, subsurface rock formations in order to allow natural gas and oil to migrate into the well.
+
+• In the United States and Canada, oil production is measured in barrels. A barrel holds approximately 42 gallons of crude oil. The barrel as a unit of measurement came into use in the Pennsylvania oil fields in the early 1860s.
+
+• The Bakken Formation in Williston Basin is estimated to contain over 500 billion barrels of oil in place, making it one of the largest oil accumulations in the world. Only about 7 billion barrels are deemed to be recoverable using current technology.
+
+Geo-activity:
+
+• The first forests and seed-bearing plants appeared during the Devonian Age. It is sometimes called the Age of Fish because of the enormous variety of fish that lived in the oceans then. As you pass through this area in your car, imagine the different types of fish and other animals that once lived in that ancient ocean.
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163385
+Slug: welcome-to-dinosaur-country
+Title: Welcome to Dinosaur Country
+Town: Wibaux
+County: Wibaux
+Lat / Lng: 46.99019, -104.17916
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Montana is famous for its dinosaur fossils. Paleontologists have discovered seventy-five different species of dinosaurs in Montana, more than any other state in America. The oldest dinosaur fossils are found in rocks of the Jurassic Period, which are 155 million years old. They include the gigantic Diplodocus, the plated Stegosaurus, and the fearsome Allosaurus. Most Montana dinosaurs come from the Cretaceous Period rocks, including the "raptor" Deinonychus, made notorious by the 1993 motion picture Jurassic Park, and the burrowing dinosaur Oryctodromeus. About 50-75 million years ago, nesting dinosaurs like Maiasaura and Troodon lived in the coastal plains next to the inland sea. Many millions of years later, Tyrannosaurus rex, vast herds of horned Triceratops and the armored Ankylosaurus all lived in Montana. During the millions of years the dinosaurs ruled this region, the climate and geography were very different from today. Inland bays of the Pacific Ocean during Jurassic times and the Atlantic Ocean during the Cretaceous period provided Montana with a hot and humid sub tropical climate.
+
+Montana's big sky drew tourists even during the darkest days of the Great Depression in the 1930s. Thousands of people came to Montana to enjoy its wide open spaces and experience its Old West heritage. Good roads and cheap gasoline helped make it possible. The Montana Department of Transportation distributed colorful highway maps and brochures at ports of entry stations and information centers. Beginning in 1935, the MDT installed interpretive markers at roadside picnic areas to tell readers about Montana's exciting history. The signs told stories reminiscent of cowboys spinning yarns to a greenhorn. Over 250 roadside signs still introduce visitors and residents to Montana's history and geology.
+
+Paleo-Facts:
+
+• American Museum of Natural History paleontologist Barnum Brown discovered the first Tyrannosaurus rex fossil in eastern Montana in 1903. Since then, at least 24 partial Tyrannosaurus skeletons have been discovered in Montana.
+
+• Discovered near Bridger, Montana in 1964, Deinonychus fossils suggested to paleontologists that some dinosaurs were warm-blooded and are the ancestors of today's birds.
+
+• About 65 million years ago, the Western Interior Seaway receded as the Rocky Moutains rose, pushing the shorelines farther east. Great rivers meandered through the coastal plain in a warm and humid climate, depositing sediment which would later become known as the Hell Creek Formation. Dinosaur fossils are frequently found in the Hell Creek Formation.
+
+Paleo-Activity:
+
+• Imagine eastern Montana 65 million years ago when it was much different. Instead of herds of cattle, enormous herds of Triceratops and hadrosaurs (sic) roamed the area. Pterosaurs soared across the sky instead of birds. What kind of predators searched for prey in those days?
+
+Erected by Montana Department of Transportation.

@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 142838
+Slug: nez-perce-encampment
+Title: Nez Perce Encampment
+Town: Chinook
+County: Blaine
+Lat / Lng: 48.37852, -109.21005
+Topics: 
+Year erected: 
+Erected by: National Park Service, U.S. Department of the Interior
+
+--- Inscription (as stored for the site) ---
+
+About noon the families made camp. The scouts killed several buffalo. This place is ćáynim?a•lika?spe (Place of Manure Fire) .... Some warriors were on the buttes watching for enemies. We expected none. -- himi・n maqsmáqs (Yellow Wolf)
+
+This seemed a good place to rest, with thick grass for horses, fresh water in Snake Creek, and buffalo nearby. Exhausted from the three months and 1,170 miles, the Nez Perce set up camp here, organized according to the five tribal bands. You are standing in the midst of the encampment site.
+
+At this point, the Nez Perce had outdistanced their original pursuers. They did not realize that a larger military force was approaching fast from the east.
+
+Erected by National Park Service, U.S. Department of the Interior.

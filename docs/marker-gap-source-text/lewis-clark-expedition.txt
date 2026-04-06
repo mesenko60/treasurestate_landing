@@ -1,0 +1,19 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 128371
+Slug: lewis-clark-expedition
+Title: Lewis & Clark Expedition
+Town: Cardwell
+County: Jefferson
+Lat / Lng: 45.85326, -111.92202
+Topics: nature
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+On August 1, 1805, the Lewis and Clark Expedition camped at a point 200 yards west from this spot on the south bank of the river facing the mouth of the creek which flows into the river from the north. Meriwether Lewis and three others, on a scouting expedition in the hope of finding Sacajawea’s people, had crossed the mountains to the northeast of here and coming down the North Boulder Valley had reached here at 2:00 P.M. They found a herd of elk grazing in the park here and killed two of them. After taking time out for an elk steak lunch, they headed on upstream leaving the two elk on the bank of the river for the expedition’s dinner.
+
+Captain Clark with the expedition reached here late in the evening after a strenuous day spent in snaking the boats up the canyon rapids by means of a long rawhide tow line which had broken in the rapids immediately below here with near calamitous results. At sight of the two elk, the hungry men called it a day and pitched camp. Reuben and Jo Fields went on a short hunt up the creek and killed five deer in the willow breaks which caused the stream to be named Field’s Creek, now known as North Boulder.
+
+A large brown bear was seen on the south side of the river. Clark shot a big horn sheep in the canyon and Lewis shot two antelope a short distance up stream. Near camp was seen the first Maximilian Jay known to science. The temperature at sunrise on August 2 was fifty degrees above zero.

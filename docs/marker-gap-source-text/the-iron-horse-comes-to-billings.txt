@@ -1,0 +1,169 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 168492
+Slug: the-iron-horse-comes-to-billings
+Title: The Iron Horse Comes To Billings
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.78397, -108.49871
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+1879, May
+
+Frederick Billings becomes president of the Northern Pacific Railway. One of the original members of the NP Board of Directors, he had served as director for more than 14 years (1870-1884) and also as chairman of the NPRR land department (1870-1875) before becoming president. He starts construction of the railroad again, which had stopped in 1973 ten miles west of Mandan, North Dakota, and prosperity returns to the troubled company. His short-lived presidency lasts only until June, 1881, before Henry Villard takes control. But Frederick Billings, more than anyone else, created the Northern Pacific Railroad, and in the process he also created the City of Billings.
+
+1882, March
+
+Minnesota & Montana Land & Improvement Company (MML&I Co.) incorporates with Heman Clark, Frederick Billings and Thomas Oakes as the first three directors. MML&I acquires 30,000 acres in and around the townsite of Billings. Lots in the newly platted City of Billings sell at a fast rate; initial prices soon increase by 600%.
+
+1882, May
+
+The Headquarters Building is finished and ready for occupancy by railroad personnel at Montana Avenue and 28th Street, Block 109.
+
+1882, October
+
+The Headquarters Building moves opposite Block 109 on North 28th Street so that it can be temporarily used as a depot. It opens as a hotel to the public on December 15th, and a well is dug on the railroad right-of-way to supply the railroad building and hotel with water. Two more hotels, the International and Park, soon open.
+
+1883, July
+
+R.J. Anderson, owner of the Windsor Hotel, sues the Minnesota & Montana Land & Improvement Company (MML&I Co.) and its president, Heman Clark, for failing to fulfill its contract to build a depot before the first train arrived. A depot is finally constructed, but at a cost of only $10,000, which is much less than the $60,000 that MML&I Co. and Heman Clark agreed to. It lay opposite Block 112. However, the railroad refuses to accept this new depot. Clark's depot is used for social events.
+
+1883, September
+
+Former President General Ulysses S. Grant visits Billings on his way to the Last Spike Celebration in Gold Creek, Montana. President Chester A. Arthur stops briefly after a visit to Yellowstone National Park accompanied by General Phil Sheridan. A large crowd greets the President at the Depot.
+
+1891, July
+
+The Headquarters Hotel, as well as the old depot and telegraph office, burns down. The City wanted to get rid of the building because it blocked 28th Street access to the south side of the city.
+
+1892, March
+
+Northern Pacific opens a one-story brick depot building; it is used until 1909.
+
+1894, April
+
+William Hogan and 320 Butte supporters of Coxey's Army steal a train if Butte. While stopping in Billings on the 26th to take on food prepared by the citizens, they receive a hero's welcome. U.S. Army soldiers plant a cannon on the tracks near Forsyth and the group from Butte surrenders. The men were attempting to reach General Coxey in Washington, D.C., in a march on the White House to urge unemployment relief.
+
+1894, June
+
+American Railway Union, under Eugene V. Debs, announces strike against the Pullman works outside of Chicago. As other railroad workers join in a sympathy strike, rail traffic in Billings comes to a complete halt with over 300 employees on strike. Federal troops are called in; strike ends in Montana on July 23.
+
+1894, October
+
+James Jerome Hill, the Empire Builder, completed a branch line of Chicago, Burlington and Quincy Railroad (CB&Q) to Billings. Called the Burlington Missouri River Railroad (BMR), this not only provides access to Chicago but also opens a southern connection from Billings to Kansas City, Lincoln, and St. Louis. It also makes Billings a vital connection between the Midwest and the Pacific Northwest. Hill had completed the Great Northern Line St. Paul to Seattle on January 6, 1893. He favors hauling freight over passengers, and commented that passenger trains were like the male teat-neither functional nor particularly pretty.
+
+1895-1896
+
+James Hill, the powerful banker J.P. Morgan, and other associated by controlling shares of the Northern Pacific and reorganize it under their own management.
+
+1899, March
+
+The Billings Brewery opens across the street from the depot, between 23rd and 24th Streets. Its slogan: "The Beer That Made Milwaukee Jealous." Its electric sign, reportedly the largest in Montana at 40 feet long and 25 feet tall, becomes one of the sights of Billings. Using 920 yellow and white light bulbs, it shows a bottle of beer filling, tipping and pouring into a mug. The company closed in 1951 and the building is demolished in 1959.
+
+1900, April
+
+The first North Coast Limited train passes through Billings with all its lights on. It is the first NP train Mohave steam heat, baths, a barber shop and valet service.
+
+1900, Fall
+
+Hill announces he will build the Great Falls and Billings Railway which will link the Great Northern and Northern Pacific transcontinental railroads at Billings. This will tie both to the Burlington line and make Billings the trade center of eastern and central Montana.
+
+1901, November
+
+Jim Hill, J.P. Morgan and Edward H. Harriman form the Northern Securities Company to unify management for Great Northern, Northern Pacific and Chicago, Burlington and Quincy Railroads. A line between Billings and Cheyenne links Billings to Denver, Fort Worth, Dallas, Houston and Galveston. Hill now has diagonal transcontinental line through America from Puget Sound to Gulf of Mexico. Billings is at the center of the western railroad network.
+
+1904, March
+
+U.S. Supreme Court orders Northern Securities Company dissolved as a monopoly trust. Despite the Court's ruling, the three railroads continue to play important roles in the development and growth of the region. Not until 1970 are the three railroads reunited under one ownership.
+
+1909, March
+
+The new depot, vastly upgraded from the previous one and built for a cost of $65.000, is used for the first time by the Northern Pacific Railroad and the Burlington and Missouri River line. Designed by the Northern Pacific's chief engineer, this complex features a spacious waiting area for 200 passengers, gentlemen's smoking room, ladies' writing room, baggage area and service offices. The lunch room, or Beanery, has its own building where a first-rate chef has charge of the kitchen. Because both the Northern Pacific and Burlington Railroads use this depot, it is called the Union Depot. The depot complex continues to have additions through 1940.
+
+1910, May
+
+Charlie Blair's wool shipment from Billings weights 1,900,000 pounds and fills 47 railroad cars.
+
+1911, April
+
+Theodore Roosevelt, traveling across the nation by train, stops for twenty-five minutes at Billings depot; he speaks to an estimated crowd of 8,000 from the wrought iron balcony of he Commercial Hotel across from the Union Depot.
+
+1911, August
+
+Because Billings has insufficient land available for the traffic interchange for three rail lines, Jim Hill builds switch yards, a roundhouse, a machine shop, docks and other facilities at Laure, where 100 acres of land are available.
+
+1911, October
+
+President Howard Taft is met by thousands of area residents when he visits Billings.
+
+1911, November
+
+Three passenger trains pass through Billings daily between Seattle and Chicago, and the Burlington and Missouri River has a daily train to St. Louis from Billings. A total of 20 trains, including locals, arrive and depart from Union Depot daily.
+
+1914
+
+Railroad tracks extend in ten directions, and the depot serves twenty-six passenger trains every day. Fifteen hotels accommodate travelers.
+
+1917 In the middle of World War I, the Canteen Service begins to provide for the needs of troops passing through Billings via railroad. Even after the war ends, many troops, some sick or injured, pass through Billings.
+
+1918, October "A monster crowd" welcomes former president Theodore Roosevelt at the Depot. He gives eight speeches during 12 hours time in Billings.
+
+1919, August
+
+President Woodrow Wilson come to Billings to promote the League os Nations.
+
+1920, August
+
+Franklin Delano Roosevelt, a vice-presidential candidate, visits Billings.
+
+1927, August
+
+President Calvin Coolidge, traveling aboard a special train, stops on his way to visit Yellowstone Park.
+
+1941-1945
+
+The transcontinental railroads play a crucial role in moving troops and war supplies across the country; Billings is vital to the effort and security is tight.
+
+1952, October
+
+Presidential candidate Dwight Eisenhower makes a campaign stop in Billings.
+
+1970
+
+Burlington Northern is formed with the merger of four railroads; the Chicago, Burlington & Quincy; the Great Northern: the Northern Pacific; and the Spokane, Portland and Seattle. It traverses 19 states and two Canadian provinces with more than 25,000 miles of track, including the lines two subsidiary railroads-the Fort Worth and Denver, and the Colorado and Southern. With the merger, BN assumes ownership of approximately 2.4 million acres of fee lands (surface and mineral) and six million acres of mineral rights from its predecessor companies. The land includes what remains of 39.1 million acres of land grants used to promote construction of the NP.
+
+1978
+
+Union Depot is placed on the National Register of Historic Places.
+
+1979
+
+Amtrak ends passenger service to the southern part of the state. The Billings Depot becomes vacant and inactive.
+
+1980
+
+BN merges with the St. Louis-San Francisco Railway which operated 4,600 miles of track across six southern and central states. This merger creates a rail system stretching from the Pacific Northwest to the Florida Panhandle and from Canada to the Gulf of Mexico. In December, a BN train leaves Portland, Oregon bound for Birmingham, Alabama. Its 3,076-mile trip sets a record for the longest single-line freight run by rail in the U.S.
+
+1987, October
+
+Montana Rai Link is created when Dennis Washington purchases the southern route through Montana from Burlington Northern. The route from Billings to Sandpoint, Idaho, plus branch lines, totals 822 miles. With this purchase, he acquires three of the four depot buildings in Billings.
+
+1989
+
+Billings Preservation Society applies for CTEP (City Community Transportation Enhancement Program) grant for $229,000 for exterior stabilization of the depot buildings.
+
+1993
+
+CTEP grant approval and Montana Rail Link provides a $26,000 cash-match for the grant.
+
+1994, March
+
+Billings Depot, Inc. forms under sponsorship of Billings Preservation Society to coordinate the restoration of the depot, as well as operate and maintain the site.
+
+1996, September
+
+With the acquisition of the Santa Fe Railroad, Burlington Northern becomes the Burlington Northern Santa Fe.

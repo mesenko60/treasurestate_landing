@@ -1,0 +1,29 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 167885
+Slug: enjoying-our-parks
+Title: Enjoying Our Parks
+Town: Billings
+County: Yellowstone
+Lat / Lng: 45.79791, -108.49211
+Topics: 
+Year erected: 
+Erected by: Western Heritage Center
+
+--- Inscription (as stored for the site) ---
+
+Developing Our Quiet Spaces In the 1910s, Charles H. Ramsdell, a landscape architect from Minneapolis who designed plans for city park improvements, suggested that "interesting drives in and about these park lands would appeal to the automobile pleasure seeker... nor should the desires of those who would like picnic grounds be disregarded. Provision should be made for the quiet enjoyment of field lawns and woods as well." "Rimrock Park" (as a natural scenic drive) and "Pioneer Park" (as a flowering community garden spot) are legacies of Ramsdell's vision of quiet spaces. Improved playground and recreational facilities were emphasized for South and North Parks. By the 1920s, Rimrock Park was popular with hikers and those enjoying "outdoor luncheons" or a "sunrise breakfast."
+
+Swords Rimrock Park and Black Otter Trail
+
+George Swords deeded rim top land to Billings in the late 1920s and early 1930s, and the city changed the name of the park to "Swords Rimrock Park." The Works Progress Administration (WPA), a federal public works project during the Depression, started building a scenic loop drive on the east end of the park in 1936. When the road was finished in 1938, it was named in honor of the late Crow Indian Chief Black Otter. According to the Billings Commercial Club, Black Otter was killed in 1861 and laid to rest near the high point of the park, near the present location of Yellowstone Kelly's grave. Interestingly, there is no record of a Chief Black Otter in Crow oral traditions.
+
+Today the remains of three observation platforms (locations that once had viewing telescopes) are visible along Black Otter Trail. They are similar to the rock road barriers depicted in the post card image.
+
+Rimrocks National Monument
+
+During the 1970s, there was interest in making rimrocks a National Monument, in part to prevent "encroaching urban blight and shortsighted commercialism" along the rimrocks. A bill to create the Rimrocks National Monument was introduced to the U.S. Senate by Montana Senators Lee Metcalf and Mike Mansfield, but it was rejected in 1971 because the area considered too developed.
+
+" When you get as far west as Billings go slow. Take time for side trips. You are near the most marvelous scenes nature has placed on earth. Do not hurry by without seeing some of them, You can see nothing from a railroad train. You can see very little from an auto unless you take side trips. Take time to make diversions and see some of the wonders of Wonderland." -- The First Year Book of the Twin Cities- Aberdeen-Yellowstone Park Trail, 1915
+
+Erected by Western Heritage Center.

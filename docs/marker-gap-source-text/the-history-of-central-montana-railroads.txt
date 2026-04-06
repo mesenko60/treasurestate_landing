@@ -1,0 +1,34 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 143508
+Slug: the-history-of-central-montana-railroads
+Title: The History of Central Montana Railroads
+Subtitle: 1903-2016
+Town: Lewistown
+County: Fergus
+Lat / Lng: 47.05696, -109.41729
+Topics: 
+Year erected: 
+Erected by: Lewiston Historic Resources Commission, BNSF Railway Company, Central Montana Foundation, Central Montana Historical Association
+
+--- Inscription (as stored for the site) ---
+
+The railroad era in Lewistown ended in 2003. Subsequent to the end of rail service, the BNSF Railway Company negotiated an interim trail use and rail-banking agreement for the transfer of the rail corridor to the City of Lewistown. A Rail-banking agreement allows the railroad to reclaim use of the corridor if needed. The Rail-banking and Bargain Sale Contract was entered into between the BNSF and the city on December 11, 2006. On August 17, 2007 a quitclaim deed and a bill of sale were filed. The salvage of 14.47 miles of track already been completed by the end of 2006. The 150 feet of track you see here remains as an historical reminder of the glory days of Lewiston's railroads. The remaining corridor was converted into a trail for non-motorized recreational use.
+
+Previous to the coming of the railroads, freight was hauled by wagons and people arrived on foot, horseback and stagecoach. The first railroad to reach Lewistown was an extension of a line originating in Lombard, MT. Locally known as "The Jawbone," it was owned and operated by the Montana Railroad Company. The legend behind the name Jawbone came about because the advocate and builder, Richard Harlow, was known for his excessive verbal promotion of the line. The first train arrived in October 1903. Subsequently, from 1907 - 1910, the Chicago, Milwaukee, and St. Paul Railroad purchased the Montana Railroad. The CM&StP went through several name changes and was most commonly referred to as "the Milwaukee Road."
+
+The Great Northern Railway (GN) decided to expand into smaller communities in central Montana, The GN completed a branch line from Moccasin to Lewistown on November 20, 1912. In addition to the track itself, a handsome, brick depot along with other facilities were constructed in Lewistown. Construction of a line eastward from Lewistown, intended to each New Rockford, ND, was underway by 1913. The roadbed, for this line, was completed to Grass Range but, the track was never laid. The World War I years brought a halt to railroad construction and along with Montana's poor economy during the 1920s discouraged thoughts of reviving the project. Evidence of the partially completed roadbed can still be seen from the highway east of Lewistown.
+
+Meanwhile, the Milwaukee was also expanding its presence in central Montana. The company built a branch line from Lewistown north to Hilger in 1912 and extended it to Winifried and Roy in 1914. Also in 1914, track was laid from Lewistown east of Grass Range and 137 miles northwest to Great Falls. Two years later, the Great Falls line was extended to Agawam. In 1917, the Grass Range line was extended east to Winnett. Along these routes were many stations, some with water and coaling facilities, for the steam locomotives and section crews to accommodate the numerous passengers and freight trains. As a side note, steam locomotives were the only power used until the late 1940s when diesel locomotives began appearing. By 1955, all locomotives were diesel. Lewistown's Milwaukee depot was the hub of the Northern Montana Division which originated from the Milwaukee's main line at Harlowton and provided connections to Chicago and Seattle.
+
+Both GN and the Milwaukee built and maintained good-sized terminals in Lewistown. The Milwaukee constructed their Lewistown depot building in 1913. It was used as the passenger depot and office until 1955. The abandoned depot was purchased by the Lewistown Community Hotel Company in 1963 and was renovated as part of the Logo Inn. The former GN depot, located near the junction of 1st Avenue North and Highway 191, was last used by local businesses. The Harlowton, Lewistown, Great Falls passenger service on the Milwaukee line ended in 1955. The GN's Lewistown, Great Falls passenger service ended in 1966.
+
+Freight traffic had decreased on many branch lines by the 1960s. In addition to declining revenues, there were problems with deteriorating tracks and infrastructure. Over the span of 10 years, 120 miles of line were abandoned. In 1970, GN merged with other railroads to become the Burlington Northern (BN), then Burlington Northern and Santa Fe, and finally the BNSF. The 74-mile segment between Lewistown and Geraldine was assimilated by the BN following the Milwaukee's failure. Following 99 1/2 years of continuous railroad service, no more train whistles could be heard in Lewistown.
+
+However, railroading did not end in central Montana. Central Montana Railway (CMR) was organized in 1984 and the next year began hauling grain on state-owned tracks between Geraldine and Spring Creek Junction. Eventually, it connected with the BNSF at Moccasin. BNSF continues to serve huge grain elevators at Moore and Moccasin. In the late 1980s, five miles of new track near Moore and nearly one mile at Kingston Junction (just west of Spring Creek junction) were constructed to augment BNSF and CMR operations.
+
+An excursion dinner train, called the Charlie Russell Chew Choo, operates over a portion of the former Milwaukee's Great Falls line. This exciting and memorable railroading experience is operated by the Lewistown Area Chamber of Commerce and CMR.
+
+Be sure to visit the former depots; Milwaukee and BNSF freight house located near the intersection of 1st Avenue South and Brassey Street; the brick "sand house" which is all that is left of numerous Milwaukee Road structures in what is now called the Brewery Flats; the Spring Creek trestle near Hanover and the railroad museum at Geraldine and Harlowton. Several of the former Milwaukee depots survive including Geraldine, Grass Range, Roy and Winifred.
+
+Erected by Lewiston Historic Resources Commission, BNSF Railway Company, Central Montana Foundation, Central Montana Historical Association.

@@ -1,0 +1,47 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 191172
+Slug: all-in-blume
+Title: "...all in blume..."
+Town: Big Timber
+County: Sweet Grass
+Lat / Lng: 45.82441, -109.96525
+Topics: 
+Year erected: 
+Erected by: Lewis and Clark National Historic Trail
+
+--- Inscription (as stored for the site) ---
+
+President Thomas Jefferson's passion for botany fueled his instructions to Meriwether Lewis to notice "the soil and face of the country, it's growth & vegetable productions, especially those not in the U.S. ...the date at which particular plants put forth or lose their flowers or leaf." During the expedition Meriwether Lewis and William Clark collected 178 plants new to science. Most of these plants are now found at the Academy of Natural Sciences in Philadelphia, Pennsylvania.
+
+"observe the Silkgrass, Sunflower & Wild indigo all in blume." -- William Clark July 16, 1806
+
+Indians taught the explorers to forage for plant berries and roots.
+
+Several "new" plants were named for Meriwether Lewis & William Clark.
+
+Serviceberry (Amelanchier alnifolia) - Also known as Juneberry or Sarvisberry.
+
+Silver Buffaloberry (Shepherdia argentea)
+
+Ponderosa Pine (Pinus ponderosa) - Montana state tree. Indians burned the center of these tree to make canoes.
+
+Cottonwood (Populus app.) - These lofty trees saved the day throughout the expedition by providing shade, shelter, furniture, wagon wheels, dugout canoes, and firewood.
+
+Blue Flax (Linum lewisii)
+
+Lewis' Monkeyflower (Mimulus lewisii)
+
+Bitterroot (Lewisia redivide) - Montana's state flower was named for Meriwether Lewis. The specimen Lewis collected was taken to Philadelphia by horse, boat, and stagecoach.
+
+Golden Currant (Ribes anreum) - "I found great quantities of the Purple, yellow & black currents ripe. they were of an excellent flavor. I think the purple Superior to any I have ever tasted." -- William Clark July 18 1806
+
+Chokecherry (prunus Virginian) - The expedition used this wood to make ax handles.
+
+Camas Lily (Camassia quomash)
+
+Mockorange (Philadelphus lewisii)
+
+Elkhorns (Clarkia pulchella) - Noted for its petals, which resemble an elk's antlers.
+
+Erected by Lewis and Clark National Historic Trail.

@@ -1,0 +1,42 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 261413
+Slug: the-end-of-the-northwest-passage
+Title: …the End of the Northwest Passage?
+Subtitle: Change in Topography Across the Great Divide
+Town: Dillon
+County: Beaverhead
+Lat / Lng: 44.99446, -112.86833
+Topics: exploration, nature, people
+Year erected: 
+Erected by: Reclamation, University of Montana, Western
+
+--- Inscription (as stored for the site) ---
+
+On the day he reached the "two forks" Lewis wrote in his journal, "I do not believe that the world can furnish an example of a river running to the extent which the Missouri and Jefferson's rivers do through such a mountainous country and at the same time so navigable as they are".
+
+Lewis was describing a landscape that has been millions of years in the making! Over that time, the Earth's crust in this area has been pulled apart to form a landscape of towering mountains and broad valleys.
+
+The placid rivers that follow these valleys made the notion of a Northwest Passage a possibility. Unfortunately for the Corps of Discovery, the geology to the west of the Great Divide produced deep canyons with raging rivers, ending all hopes for a safe "communication across the continent by water."
+
+The Geological Time Scale (not shown to scale)
+
+Divisions of geological time were defined in the 19th Century by major changes in the fossil record.
+
+Most of the boundaries are marked by worldwide extinction events.
+
+Numerical dates were added in the 20th Century using modern rock-dating techniques.
+
+Precambrian 4500 million years ago: Earth began. Formation of igneous and metamorphic rocks.
+
+Paleozoic Era 542 million years ago Deposition of sedimentary rocks.
+
+Mesozoic Era 250 million years ago Deposition of sedimentary rocks, folding and thrust faulting.
+
+Cenozoic Era 66 million years ago Deposition of sedimentary and volcanic rock, extension of the Earth's crust and formation of the Red Rock Valley and Tendoy Mountains.
+
+Making of the Landscape
+
+On August 17, 1805, the historic meeting of cultures took place in this valley. The valley started forming about 4.0 million years ago as extension of the Earth's crust produced a fault that dropped the Red Rock Valley down and uplifted the adjacent Tendoy Mountains. Although this fault is considered by geologist to be active, it last ruptured the ground surface some 3,000 years ago. Fortunately for the Corps of Discovery, there was no activity on this fault on August 17, 1805.
+
+Erected by Reclamation, University of Montana, Western.

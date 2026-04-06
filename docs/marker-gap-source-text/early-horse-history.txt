@@ -1,0 +1,30 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 163879
+Slug: early-horse-history
+Title: Early Horse History
+Subtitle: of Custer County ● 1880 - 1920
+Town: Miles City
+County: Custer
+Lat / Lng: 46.4052, -105.85233
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+By late 1880s breeders in the Miles City area produced cow ponies, saddle horses, cavalry mounts, carriage horses, draft animals for farming and freighting, some polo ponies, and race horses.
+
+In 1883, the Custer County Assessor estimated that the Rosebud and Tongue River Valleys alone were carrying 300,000 cattle and 12,000 horses
+
+March 7, 1885 from Miles City Stockgrowers Journal: "With the demand from cattlemen for cow ponies, Miles City is likely to become quite a horse market.
+
+1889: The Green Mountain Livestock Company ran 2,250 horses on rangeland near Forsyth.
+
+1890: The Horse Sales and Fair Association held its first auctions of local stock. By the mid-1890s, local stockman, A.B. Clark, moved the yards closer to the Tongue River. Between 1895 and 1907, Clark managed the sales of hundreds of thousands of Montana horses. Miles City gained a reputation as "The largest horse-sales center in the world" after providing mounts for the Spanish-American War (1898) and the Boer War (1899-1902).
+
+1902: The Cross Brothers on Pumpkin Creek ran 3,000 horses.
+
+WW I (1914-1918) - Miles City stockyard sales peaked during World War I. In June of 1916 they sold at auction four thousand horses in four days. June 10, 1916 Miles City Star ad: "All grades, types, and kinds. 2,000 War Horse-English, French, and Italian specifications Large Draft Mares in foal; others with colts by side. Large, medium, and small-sized range horses and mares of all descriptions, with lots of fat and quality." The U.S. government spent an estimated $20 million in Miles city for stock during World War I, and the Allies reportedly matched that figure.
+
+1910-1922: Fort Keogh Cavalry Remount Depot "The government hired over one hundred civilian horsemen to break an endless supply of Army-purchase mounts. Each day the fort's corrals offered up a rodeo. From 1910 to 1918, the Fort Keogh Remount Depot was called "Uncle Sam's largest horse ranch." It processed over 100,000 head of horses as replacement stock for the army. It closed in 1922 when motorized vehicles would likely replace the horse.

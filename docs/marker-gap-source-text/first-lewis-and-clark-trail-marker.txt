@@ -1,0 +1,17 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 148210
+Slug: first-lewis-and-clark-trail-marker
+Title: First Lewis and Clark Trail Marker
+Town: Livingston
+County: Park
+Lat / Lng: 45.66117, -110.56421
+Topics: 
+Year erected: 1908
+Erected by: Yellowstone Park Chapter Daughters of the American Revolution
+
+--- Inscription (as stored for the site) ---
+
+"Trail of Lewis & Clark. This point was passed July 17, 1806. Marked Yellowstone Park Chapter D.A.R. October 23, 1908"
+
+Erected 1908 by Yellowstone Park Chapter Daughters of the American Revolution.

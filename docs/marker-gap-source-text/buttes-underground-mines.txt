@@ -1,0 +1,54 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 184188
+Slug: buttes-underground-mines
+Title: Butte's Underground Mines
+Subtitle: "Just the facts, Ma'am"
+Town: Butte
+County: Silver Bow
+Lat / Lng: 46.01461, -112.53178
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+(Five plaques are mounted on a carousel-like turntable:)
+
+♦︎ This mining hill produced over $51 billion of mineral wealth
+
+♦︎ This mining hill is the most extensive vein mined area in the world
+
+♦︎ There were at least 512 mines which have over 10,000 miles of tunneling and shafts (enough to cross the United States twice)
+
+♦︎ There are over 49 miles of vertical shafts some of which go a mile deep
+
+♦︎ The shaft of the Mountain Con Mine (the black headframe up the hill to you left) is more than a mile deep. Thus, Butte is often called a city "a mile high and a mile deep"
+
+♦︎ The copper alone from these mines could make a 4 lane highway from Butte to 25 miles south of Salt Lake City paved with copper 4 inches thick
+
+♦︎ Over 2,300 men died instantly or within days from mining accidents on the hill. This doesn't include the thousands who died from chronic illness or injury resulting from mining or fatalities from related industries such as milling, smelting, or rail transportation.
+
+♦︎ Often called "the richest hill on earth" this hill is an area of only 7 square miles.
+
+The Baltic and Silversmith Mines
+
+Money, Money, Money
+
+This property was part of the Baltic Mine claim, one of the first patented mine claims in Butte (08-07-1881). The claim was a four-block area that had Butte's first smelter where you are now standing, first iron foundry, first stamp mill, and first high school. This claim also had one of Butte's first mines, the Baltic, whose headframe was very similar to the crude wooden head frame to your left which is the Silversmith headframe built in the mid-1940's. Both the Baltic and Silversmith mines stood over profitable ore bodies and were small operations of two men. Yet both mines filed for lack of sufficient money. The silversmith shaft hit water at 180 foot depth and lacked the capital for a large water pump and more electricity. Mining only succeeded in Butte in the late 19th century because of enormous infusions of capital primarily from Boston bankers and the Hearst fortune in San Francisco. The result was that though Butte produced more wealth per person than any other city in the world before 1900, most of that wealth left the city to repay the investors whose fortunes allowed the capital intensive mining to initially thrive in Butte.
+
+Butte's
+
+Stamp Mills
+
+Butte had more stamps crushing ore than any other city before or since ... 375 stamps! But when copper became Butte's major mined metal, the use of stamp mills quickly declined because these mills worked best why only gold and silver ores. The stamp mills in Butte were powered by steam engines. The engines could turn the cam shaft of the mill as fast as 60 rpm's. Thus, each 900 pound stamp could be lifted and dropped as many as 120 times per minute. Each stamp would crush ore to a fine sand. About one ton of ore would be pulverized by each stamp every 24 hour day. The crushed ore would sift through a screen in front of the iron crushing box. The metal in the ore would be separated by lining the crushing box and inclined tray in front of the box with a thin layer of mercury that would catch the metallic particles and leave the remaining fine sand to slide on as mill waste. Stamp mills were an engineer designer's dream project in the 19th century; all manner of clever innovations was devoted to stamp mills to increase their efficiency. You will notice that the metal "shoes" on the bottom of the stamps and pads under the stamp could vey quickly be replaced as they wore out by pulling out metal and wood wedges. All other pars of the mill ere designed for quick adjustment. The frame, and often the foundation of a stamp mill, would be heavy timber because
+
+The Old Lexington Stamp Mill In its brief 12 year active operation, the Old Lexington Stamp Mill, which was one of Butte's smaller mills, produced over $45 million (in today's money). The wealth produced from each stamp would support the lives of over 250 people. Thus this ten stamp mill represented the lives of over 2,500 people. The mill, erected by Charles Hendrie, was first known as the Lexington or Davis (after its owner) Mill, and later as the Old Lexington Mill after a new and more efficient 40 stamp mill for the Lexington Mine (the New Lexington Stamp Mill) was completed further up the hill in 1882. The mill was originally located about 100 feet to your right. In the 1880's Montana State prisoners used sledge hammers in a small receiving area at the southwest street corner to your left to crush the boulders from the Lexington Mine, on the summit of the mining hill, into manageable egg sized rocks for this mill. This mill was made in Chicago, shipped to St. Louis by rail, the barged up the Missouri River to Fort Benton, Montana, and from there hauled by ox cart over trains to various mine camps and eventually to Butte. This mill last ran in 1955 in Pony, Montana crushing tungsten ore. Check out some of this mill's byproduct in the black metal box to your left.
+
+Butte's First Smelter
+
+A Failure that Produced Inadvertent Wealth Where you are standing was Butte's first smelter, the Ramsdell, built in 1866. Originally, it was located about 3 1/2 blocks northwest of here where the Butte Archives now stands. But it could not produce sufficient heat. Ramsdell then moved the smelter 4 blocks to the northwest corner of Wyoming and Park Streets, this time producing more heat. In 1868 it produced about 7,500 pounds of copper for which Charles Ramsdell and his two partners received about $36,000 in today's money. However, the smelter cost about $100,000 in today's money to build. Because the second location did not have a sufficient incline, Charles Hendrie bought the smelter and moved it here. When it was restarted, its furnace choked and it was shut down. While the smelter lay idle a prospector broke into the smelter and secretly pounded out an oyster can of silver nuggets from the smelter's slag. This served as a suggestion to someone else who rented this stamp mill and further pounded out another six or seven beer kegs of silver concentrate with a good deal of money. Finally Charles S. Warren was hired to tear down the smelter. In the process he found about 1,000 pounds of copper in the smelter.
+
+The Washington School Education in Early Butte
+
+By 1887, Butte could say

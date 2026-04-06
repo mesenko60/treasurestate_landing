@@ -1,0 +1,21 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 124336
+Slug: the-montana-road
+Title: The Montana Road
+Town: Lima
+County: Beaverhead
+Lat / Lng: 44.6312, -112.5883
+Topics: railroads, transportation
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+This area once echoed with the sound of creaking wagon wheels, cracking whips, and profanity so intense the mountains vibrated with sulfur! The old wagon road between Montana and Utah passed very close to this rest area. It first saw use in the 1840s and 1850s as the route from the Mormon settlements in Utah to the Deer Lodge Valley, and St. Mary's Mission in the Bitterroot Valley. With the discovery of gold on Grasshopper Creek in 1862 and Alder Gulch in 1863, the road became the main supply and passenger route to southwestern Montana until the Utah & Northern Railroad completed its line to Butte in 1881.
+
+The bulk of the supplies destined for the Montana gold camps came by freight wagons pulled by oxen. The slow, plodding animals could pull a tremendous amount of cargo, often as much as nine tons per wagon set. A set consisted of three linked wagons, (a lead, swing and a trail-end), with each set pulled by up to 24 oxen. The animals were driven by teamsters called bullwhackers, "red-shirted, big-booted, brigand-looking ruffians" skilled in the use of bullwhips and profanity to keep the oxen moving along the trail. Many people recalled hearing the bullwhackers long before actually seeing them. Life on the road for these men was not easy as they had to deal with bad water, bad food, bad weather, lice, and, occasionally, road agents. Oxen could make 10 to 15 miles per day on the road with around trip to Virginia City taking about three months. If the supplies included perishable goods or other groceries that needed to get to the mining camps quickly, then mules or horses were used to pull much smaller wagons than those by oxen. By the early 1860s, stagecoaches also regularly carried passengers between southwestern Montana and Utah. A stagecoach trip to Montana took three days and nights with regular stops at stations strategically located along the road.
+
+Lima is Montana's first railroad town. Established as a division point on the Utah & Northern Railroad in 1880, the town included a substantial depot, roundhouse, machine shop, and a vibrant business district along the tracks that consisted of hotels, restaurants, store, and saloons. Two churches ministered to the community's spiritual needs. In 1889, the Utah & Northern and the Oregon Short Line railroads merged. The Union Pacific absorbed the railroad in 1935. Lima also enjoyed an important position on US Highway 91 in the twentieth century. Along with the old establishments of the railroad era, new businesses, such as motels and service stations, joined them along the highway.
+
+Nothing is more extraordinary and wearisome than the levelness of the road. From Corrine (Utah) to Virginia City you drive along a series of apparently perfectly flat plains, connected with each other by short canyons and valleys. Occasionally the road ascends, but by very easy gradient. There are no precipices, no torrents, no avalanches, no glaciers, nothing grand, terrible or dangerous. The idea that you are crossing the backbone of the continent, and scaling a vast mountain range, appears preposterous. -- Earl of Dunraven, August 1874

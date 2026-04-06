@@ -1,0 +1,33 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141859
+Slug: cliffs-high-and-steep
+Title: "Cliffs High and Steep"
+Town: Craig
+County: Lewis and Clark
+Lat / Lng: 47.13073, -111.90179
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Lewis and Clark Expedition passed through this canyon of "nearly perpendicular rocks" during its journey up the Missouri in July 1805. Although the men grumbled about mosquitoes and prickly pear cactus, the Corps of Discovery was clearly impressed by the Adel Mountain volcanics, the eroded remains of a pile of volcanic rocks more than 40 miles long and 20 miles wide. The volcanics consisted mostly of fragments–blocks, cinders, ash–from violent, explosive eruptions that played magma out of the earth and into the air. The eruptions occurred about 75 million years ago and continued for several million years.
+
+Erosion has exposed some of the underground "plumbing" for the volcanic center. Magma rose up along cracks and had enough pressure to push the walls of cracks apart for tens of feet, forming dikes. At several places in the canyon, you'll notice the dark ridges–dikes–going up the mountainsides. Some magma squirted in along the bottom of the pile of volcanics forming horizontal intrusions called laccoliths. Square Butte, Shaw Butte, and Cascade Butte are prominent laccoliths with high, vertical cliffs that can be seen between Ulm and Cascade. This great eruption of magma occurred on the Great Falls Tectonic Zone–a collision zone between two continental plates which collided more than a billion years ago. It left a zone of weakness that resulted in the Adel Mountain Volcanics.
+
+Geo-Activity:
+
+Before you stopped at this rest area, did you notice the many vertical dikes. At Milepost 250 across the Missouri River to the left they looked like all stone walls going up the mountainside. Now look at the cliff in back of the rest area and see if you can see the vertical lines in the cliff face. Several dikes are visible if you look closely.
+
+Geo-Facts:
+
+• All the rocks visible from the rest area are part of the Adel Mountain Volcanics.
+
+• Explosive ash falls are one way that fossils are preserved. The Two Medicine Formation, which underlies the Adel Mountain Volcanics and is a few million years old, contains volcanic rocks and many dinosaur fossils.
+
+• The old highway through this portion of the Missouri River Canyon was constructed in the 1930s and provided the first direct road connection between Helena and Great Falls.
+
+Native Americans frequently camped in this area on their way to and from the buffalo hunting grounds. The rugged landscape, however, largely prevented the non-Indian settlement of the area until late in the 19th century. Montana's first modern road-builder, John Mullan, skirted the mountains for a route far to the northwest. The canyon's residents were mostly cattle ranchers who sold their animals in Helena or Great Falls. The arrival of the Montana Central Railroad in 1887 did much to open this region to settlement, but it was not until the early 1930s that a modern paved highway connected Helena and Great Falls through this area. U.S. Highway 91 wound its way along the Missouri River through the volcanic outcrops of the canyon, crossing the river over two large steel truss bridges that still carry traffic in the vicinity of Hardy and Wolf Creek. Though bypassed by Interstate 15 in the 1960s, old U.S. 91 provides motorists a unique opportunity to experience a Great Depression era road through one of the most spectacular landscapes in Montana.
+
+Erected by Montana Department of Transportation.

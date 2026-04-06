@@ -1,0 +1,16 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 246039
+Slug: lewis-and-clark-passed-here
+Title: Lewis and Clark Passed Here
+Subtitle: 1805 - 08 (sic)
+Town: Great Falls
+County: Cascade
+Lat / Lng: 47.56809, -111.11723
+Topics: 
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+(empty)

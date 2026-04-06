@@ -1,0 +1,35 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 123100
+Slug: souvenirs-of-the-ice-age
+Title: Souvenirs of the Ice Age
+Town: Greenough
+County: Missoula
+Lat / Lng: 47.0024, -113.3689
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+Highway 200 near this rest area passes through one of the most spectacular ice-age landscapes in Montana. Glaciers advanced out to the Mission and Swan ranges, and the mountains in the Bob Marshall-Scapegoat wildernesses, forming an ice cap that nearly filled in the valleys to the peaks from Salmon Lake to the Flathead Valley, about eighty miles north of here. Glaciers sculpted the rugged mountain peaks of the mountain ranges you can see from the rest area. This ice cap was connected to the vast Cordilleran Ice Sheet that extended into the United States from the Canadian Rockies.
+
+Glaciers formed in this area multiple times over about 300,000 years during two ice ages: the Bull Lake and Pinedale. During the Bull Lake Ice Age, about 140,000 years ago, the glaciers flowed farther south in the valleys south of Ovando and Helmville. Between 60,000 and 15,000 years ago the ice cap formed again. Southward spreading glaciers carried gravel and sand into the Ovando area, about one to two miles south of Highway 200. Melting glaciers left behind mounds of rock and soil debris, called moraines. The low areas between the moraines mark places where the glacial till wasn't deposited, leaving hollows that filled with water. Many of the ancient hollows can still be seen today as wetlands, shallow ponds and small lakes. Large depressions north of the rest area along Highway 83 are called kettles. Masses of ice buried in the outwash gravels melted forming the depressions.
+
+The smooth broad plains to the north and east of here are glacial outwash plains. They were once the location of raging streams that carried meltwater loaded with mud, sand, gravel from the front of melting glaciers. These valleys are now the agricultural land along the Clearwater and Blackfoot rivers.
+
+Geo-facts:
+
+• Although scientists don't know everything about ice ages, cyclic movements in the earth's orbit and spin probably cause glacial-to non glacial cycles.
+
+• North America may have experienced as many as twenty ice ages, but scientists only know a great deal about four of them.
+
+• The Cordilleran Ice Sheet covered northwestern Montana, the Idaho panhandle, all of British Columbia, much of Alberta, southern Alaska and parts of the Yukon.
+
+Geo-Activity:
+
+• Glaciers carry rocks in from areas that can be faraway from Montana. The rocks form deposits of everything from rounded gravel to huge boulders. Look for big boulders that look out of place next to the highway.
+
+They will have a variety of different colors, banding, and textures indicating different types of bedrock.
+
+Erected by Montana Department of Transportation.

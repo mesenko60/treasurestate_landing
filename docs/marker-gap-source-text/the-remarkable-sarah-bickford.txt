@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 117050
+Slug: the-remarkable-sarah-bickford
+Title: The Remarkable Sarah Bickford
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.29356, -111.94551
+Topics: people, industry
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+Born a slave in 1852 near Jonesborough, Tennessee, Sarah Bickford would become an iconic Montana businesswoman. Separated from her parents during the Civil War, upon conclusion of the war Sarah then moved to Knoxville, Tennessee. In 1870, local lawyer and former Union officer John L. Murphy received an appointment as a territorial judge in Virginia City, Montana. In exchange for passage west, Sarah worked as a nanny for Murphy's adopted children. They arrived in Virginia City in January 1871, where Sarah soon found work as a domestic servant.
+
+On October 20, 1872, Sarah married John L. Brown. They lived two miles west of Virginia City on Granite Creek with their three children – Eva, William, and Leonard. In 1879, Brown abandoned Sarah and their only surviving child, Eva, as William and Leonard perished earlier in a diphtheria epidemic. Sarah soon filed for divorce, stating that John was physically abusive and unwilling to support his family. Always resourceful, Sarah then started the New City Bakery & Restaurant in downtown Virginia City. Tragically, Eva died in 1881.
+
+In 1883, prior to Montana's 1909 miscegenation law prohibiting interracial marriage, Sarah married Stephen Bickford, a white man originally from Maine. The Bickfords had four children, Elmer, Harriet, Helena, and Mabel. In 1888, Stephen Bickford made a business decision that would ultimately change Sarah's life: he purchased two-thirds of the Virginia City Water Company. Bickford also owned various lots, mining claims, and a small farm on the east end of town where the couple lived.
+
+Sadly, Stephen Bickford died of pneumonia on March 22, 1900 leaving Sarah his shares of the water company in his $9500 estate. After his death Sarah further honed her business skills through a correspondence course at a school in Scranton, Pennsylvania. In 1902, she purchased the "Hangman's Building” as the water company’s headquarters. She installed a trap door which she would open for a small fee, revealing the notorious beam from which the Vigilantes hanged five alleged criminals in January 1864. Additionally, she installed a restroom for the region's affluent tourists.
+
+Remarkably, Sarah bought out her partner in the water company, running the business until her death in July 1931. Her inspiring life story left an indelible mark on Montana History. For more information on this remarkable woman please visit http://sarahbickford.org/
+
+In 2009, with funding from the Ford Foundation, the National Trust for Historic Preservation awarded Montana Heritage Commission (MHC) a Partnership in Scholarship Grant to conduct research into the lives of Virginia City’s African American residents. This research conducted by MHC staff, public history faculty and students from Washington State University and the University of Wisconsin Eau-Claire added great depth to the knowledge of Virginia City’s African American community.

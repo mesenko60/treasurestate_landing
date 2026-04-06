@@ -1,0 +1,31 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 166979
+Slug: the-pryor-mountains-and-raptor-country
+Title: The Pryor Mountains and Raptor Country
+Town: Bridger
+County: Carbon
+Lat / Lng: 45.33788, -108.91621
+Topics: 
+Year erected: 
+Erected by: Montana Department of Transportation
+
+--- Inscription (as stored for the site) ---
+
+The Pryor Mountains are located on the horizon to the southeast. The prominent cliffs and dip slopes are Madison Limestone, which was deposited in shallow seas over 300 million years ago. Along the margins of the mountains, younger tan-colored Tensleep sandstone and brick-red Chugwater Formation crop out. Canyons in the range expose older rocks, including Precambrian basement rock more than two billion yeas old. Crustal blocks that form the Pryor Mountains were uplifted along reverse faults about 65-55 million years ago.
+
+Over millions of years, water dissolved deep caves in the limestone. Some open vertically to the surface, allowing cold dense air to sink down into the cave. The rocks acts as an insulator, trapping the dense air and moisture underground, resulting in spectacular ice caves, such as Big Ice Cave. Other caves in the mountains have fantastic formations of stalagmites and stalactites.
+
+About 115 million years ago, a 10-foot long dinosaur with razor-sharp claws and teeth and retractable slashing talons on its hind feet hunted in pacts in this area. Lightly-built, agile and quick, this intelligent carnivore could run at speeds up to 25 miles per hour and was the perfect killing machine of its time. In 1964 on a wind-swept hill in the badlands near here, Yale professor John Ostrom discovered the fossil remains of just such a creature. Called Deinonychus ("Terrible Claw"), the discovery of this animal revolutionized the study of paleontology and changed our understanding of dinosaurs. Because of its unique skeletal structure, Deinonychus had more in common with birds that it did reptiles. The great amount of energy needed for it to survive has also led some to believe that it was warm-blooded rather than cold-blooded like its reptilian cousins. Because of Deinonychus, paleontologists now consider dinosaurs to have been agile, smart, and social animals rather than slow-moving and dull-witted. Fortunately for us, Deinonychus died out millions of yeas ago and no longer scour these hills for prey.
+
+Geo-Facts:
+
+• The Pryor Mountains are named for Sergeant Nathaniel Pryor, a member of the Lewis and Clark Expediton (1804-1806).
+
+• The Chugwater Formation is named for the town in Wyoming and is easily recognizable by it brick-red color, which is caused by the oxidation of iron minerals in the rock.
+
+• The Velociraptos in the Jurassic Park movies are a close relative of Deinonychus.
+
+Geo-Activity:
+
+• Imagine you are back in time when Deinonychus hunted in packs in this area. Can you spot any places where you might be able to hide? This dinosaur could run as speeds up to 25 miles per hour. What are some animals that are alive today that can run this fast?

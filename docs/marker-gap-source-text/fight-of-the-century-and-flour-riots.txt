@@ -1,0 +1,23 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 117055
+Slug: fight-of-the-century-and-flour-riots
+Title: Fight of the Century and Flour Riots
+Town: Virginia City
+County: Madison
+Lat / Lng: 45.29306, -111.94849
+Topics: culture, events, settlements
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+J. A. Nelson built Leviathan Hall in 1863 with a "special view to the development of muscular talent." Torn down just five years later in 1868, the hall dominated Wallace Street with its impressive 28 feet wide and 100 feet long footprint.
+
+On January 2, 1865 saloon owner Con Orem, age 29, the son of an Ohio blacksmith and veteran prizefighter, faced Hugh O'Neil, age 34, a native of Ireland, a well known miner and whiskey drinking, barroom brawler. All respectable saloons in Virginia City sold reserved seat tickets at ten dollars, while pit seats were only five. At the end of Round 185, O'Neil knocked down Orem and Nelson, the referee, called the fight a draw, much to the dismay of all in attendance.
+
+Later in 1865, Leviathan Hall again played a role in the community as a storage vault for precious flour. Snow had closed all transportation routes to Virginia City, literally cutting the town off from the rest of the world, which severely limited storekeeper's offerings as well as household supplies. As the winter wore on and flour levels dropped, local anxiety rose along with the price of flour. By March 1865, flour sold for $1.50 per pound in Virginia City, more than twenty times the price in the rest of the country.
+
+As spring arrived, the passes and roads remained snow-clogged and tension continued to mount. Sheriff Neil Howie, aided by the Vigilance Committee, supervised the first organized flour riot, when 438 people marched into Virginia City residences and confiscated all the flour they could find. They did not balk at entering private homes, searching Colonel Wilbur Fisk Sanders' home, once when Mrs. Harriet Sanders was home, and again when she was in town attempting to buy the much sought-after flour. The rioters searched the home of Mary Sheehan as well, but to no avail – her mother hid the flour at the bottom of a bin of beans. The presence of beans does indicate that starvation was not imminent and beef was still plentiful as well. Ultimately, the rioters rounded up over eighty sacks of flour, stockpiling them in Leviathan Hall and later redistributed the flour to the town's residents.
+
+The present-day log house was built by Julius Kohl about 1875. "Aunt” Julia Elledge, daughter of Lucien Romey, a Virginia City pioneer, lived there from the 1920s to 1950's.

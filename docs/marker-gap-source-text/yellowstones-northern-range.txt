@@ -1,0 +1,25 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 40572
+Slug: yellowstones-northern-range
+Title: Yellowstone's Northern Range
+Town: Gardiner
+County: Park
+Lat / Lng: 45.02083, -110.69658
+Topics: 
+Year erected: 
+Erected by: This exhibit made possible by a generous grant to the Yellowstone Park Foundation in memory of Katie L. Rhoads
+
+--- Inscription (as stored for the site) ---
+
+What is different about the northern range soils?
+
+While most of Yellowstone is a high volcanic plateau composed of rhyolite, the northern portion of the park is more complex geologically. Here you find landslides, erodible shales and sandstones, and glacial till deposits of mixed rock types. This particular area of the northern range is composed of soils that have a high clay content. These soils bind water tightly to the clay particles, which results in little water being available for plants to use. The soils are also poorly aerated, resist root growth, and have high levels of sodium and salts. All of these factors combine to limit the plant communities that can grow here.
+
+Greasewood. Prickly pear. Rubber rabbitbrush.
+
+The harsh names of these low-growing plants aptly reflect the sparse, dry environment in this portion of Yellowstone's northern range. A complex interaction of soil, climate, and plant life create this habitat that ecologists call a "cold desert." Here annual precipitation is 10 to 15 inches - only one-third of the moisture received in Yellowstone's southwestern corner. It is only during a few brief weeks in May and June that this landscape becomes lush, green, and vibrant as the grasses and other plants capitalize on snowmelt and rainfall to grow and flower. Soon, however, the familiar brown and arid scene reappears.
+
+It is because of this dry and "beaten" appearance that many people have questioned the health of the northern range. Some wonder if the sheer number of Yellowstone's elk, deer, pronghorn, and other wild grazers are destroying habitat. Many years of research on the interaction of wildlife and plants here show that these naturally dry grasslands remain productive and healthy. Wildlife continue to depend on the northern range, particularly for winter forage, maintaining a cycle of growth, grazing, and rebirth that has occurred here for thousands of years.
+
+This exhibit made possible by a generous grant to the Yellowstone Park Foundation in memory of Katie L. Rhoads.

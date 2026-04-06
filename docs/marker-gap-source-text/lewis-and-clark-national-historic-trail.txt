@@ -1,0 +1,16 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 161807
+Slug: lewis-and-clark-national-historic-trail
+Title: Lewis and Clark National Historic Trail
+Subtitle: 1804 • Commemorating 200 Years • 2004
+Town: Loma
+County: Chouteau
+Lat / Lng: 47.92571, -110.49826
+Topics: 
+Year erected: 
+Erected by: Department of the Interior, Bureau of Land Management
+
+--- Inscription (as stored for the site) ---
+
+Erected by Department of the Interior, Bureau of Land Management.

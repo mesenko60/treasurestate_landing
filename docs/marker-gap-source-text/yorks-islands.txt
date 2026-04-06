@@ -1,0 +1,24 @@
+=== Montana historic marker (source: web/data/historic-markers.json) ===
+
+Marker ID: 141726
+Slug: yorks-islands
+Title: Yorks Islands
+Subtitle: Lewis and Clark in Montana
+Town: Townsend
+County: Broadwater
+Lat / Lng: 46.26608, -111.49277
+Topics: people
+Year erected: 
+Erected by: 
+
+--- Inscription (as stored for the site) ---
+
+York (ca. 1770-1831) is the only name given for Captain William Clark's slave in the journals of Lewis and Clark (Moulton, 1988).
+
+Lewis and Clark's journals frequently refer to York, a black slave to Captain William Clark. York played an important role in the success of the Corps of Discovery. The journals document how York tended to the sick, hunted and fished for food and contributed to wildlife observation. This muscular, black man's appearance was curious to the native people the Corps encountered and he gained their respect which helped the expedition. York was given an equal vote in the Corp's decision to winter at Fort Clatsop on the Pacific Ocean in 1805. York requested his freedom upon retiring from the expedition citing his contributions to its success. However it would not be until almost 5 years later that William Clark was successful in negotiating York's freedom as a slave. Still York remained a black man in a world of slavery and segregation, history has not fully revealed how successfully this black man who traversed the continent was able to function in a society still developing its ideals of equality and freedom.
+
+Two places in Montana are named in his honor. Yorks 8 Islands here in Broadwater County and Yorks Dry River (now Custer Creek) in Prairie County along the Yellowstone River.
+
+Today Yorks Islands are private property. Please respect the landowners and observe these islands from a distance.
+
+Lewis' Journal (July 24, 1805): "we saw many beaver and some otter today; the former dam up the small channels of the river between the islands and compell the river in these parts to make other channels; which as soon as it has effected that which was stoped by the beaver becomes dry and is filled up with mud sand gravel and driftwood. the beaver is then compelled to seek another spot for his habitation wher(e) he again erects his dam. thus the river in many places among the clusters of islands is constantly changing the direction of such sluices as the beaver are capable of stoping or of 20 yds in with. this animal is that way I believe to be very instrumental in adding to the number of islands with which we find the river crouded."
