@@ -243,13 +243,14 @@ export default function GolfCoursesGuide({ courses, totalCount, compiledDate }: 
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 
+  /** Course USGA-style ratings are not 1–5 stars; omit from DirectoryMap popup. */
   const mapItems = courses.map((c) => ({
     name: c.course_name,
     slug: c.slug,
     lat: c.latitude,
     lng: c.longitude,
     category: c.categoryKey,
-    rating: parseCourseRating(c.rating),
+    rating: null,
     reviews: null,
     address: c.address || null,
   }));
