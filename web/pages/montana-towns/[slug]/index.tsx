@@ -314,18 +314,14 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
           {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
           {airportDistances && <TownDistances distances={airportDistances} />}
-          <div className="map-jump-links" aria-label={`${townName} history and recreation`}>
-            <a href="#local-history" className="map-jump-link" onClick={scrollToSection('local-history')}>
-              <span aria-hidden="true">📜</span>
-              Historic markers &amp; deep reads
-            </a>
-            {recreationPlaces && recreationPlaces.length > 0 && (
+          {recreationPlaces && recreationPlaces.length > 0 && (
+            <div className="map-jump-links" aria-label={`${townName} recreation`}>
               <a href="#outdoor-recreation-heading" className="map-jump-link" onClick={scrollToSection('outdoor-recreation-heading')}>
                 <span aria-hidden="true">🥾</span>
                 Browse recreation
               </a>
-            )}
-          </div>
+            </div>
+          )}
           <SingleTownMap
             currentTown={currentTownCoords}
             relatedTowns={relatedTownCoords}
