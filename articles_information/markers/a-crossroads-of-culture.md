@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # A Crossroads of Culture
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County*
 

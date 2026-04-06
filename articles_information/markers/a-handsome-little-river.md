@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # "...a handsome little river..."
 
-**By Editor**
+**By editor**
 
 *Twin Bridges, Madison County, Montana, August 1805*
 

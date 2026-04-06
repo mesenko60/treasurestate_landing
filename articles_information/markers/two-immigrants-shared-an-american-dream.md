@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Two Immigrants Shared an American Dream
 
-**By Editor**
+**By editor**
 
 *Deer Lodge, Powell County, Montana, 1862*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 ## Jim Bridger, Mountain Man
 
-**By Editor**
+**By editor**
 
 *Bridger, Carbon County*
 

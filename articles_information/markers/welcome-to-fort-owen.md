@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Welcome to Fort Owen
 
-**By Editor**
+**By editor**
 
 *Stevensville, Ravalli County, Montana, 1850*
 

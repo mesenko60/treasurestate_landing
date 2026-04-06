@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Two Moons
 
-**By Editor**
+**By editor**
 
 *Busby, Big Horn County, Montana, June 1876*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # St. Mary's Mission Historic District
 
-**By Editor**
+**By editor**
 
 *Stevensville, Ravalli County, Montana, September 1841*
 

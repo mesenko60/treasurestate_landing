@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Tobacco Plains
 
-**By Mark Twain**
+**By editor**
 
 *[Eureka, Lincoln County, Montana, 1808]*
 

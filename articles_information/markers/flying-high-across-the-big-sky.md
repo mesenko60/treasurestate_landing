@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Flying High Across the Big Sky
 
-**By Editor**
+**By editor**
 
 *Alberton, Mineral County, Montana, May 2018*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Tomb of the Unknown Soldier
 
-**By Editor**
+**By editor**
 
 *Garryowen, Big Horn County, Montana, June 1876 and after*
 

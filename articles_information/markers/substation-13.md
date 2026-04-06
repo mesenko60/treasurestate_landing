@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Substation 13
 
-**By Mark Twain**
+**By editor**
 
 *[East Portal, Mineral County, Montana, 1915]*
 

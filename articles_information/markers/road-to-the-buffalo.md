@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Road to the Buffalo
 
-**By Editor**
+**By editor**
 
 *Plains, Sanders County, Montana, August 2022*
 

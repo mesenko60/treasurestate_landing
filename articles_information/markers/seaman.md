@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Seaman
 
-**By Editor**
+**By editor**
 
 *Ovando, Powell County, Montana*
 

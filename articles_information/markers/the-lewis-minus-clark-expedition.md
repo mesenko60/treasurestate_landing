@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Lewis Minus Clark Expedition
 
-**By Editor**
+**By editor**
 
 *Ovando, Powell County, Montana*
 

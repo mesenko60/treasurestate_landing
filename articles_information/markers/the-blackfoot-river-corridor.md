@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Blackfoot River Corridor
 
-**By Editor**
+**By editor**
 
 *Ovando, Powell County, Montana*
 

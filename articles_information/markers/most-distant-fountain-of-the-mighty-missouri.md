@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # "Most Distant Fountain" of the Mighty Missouri
 
-**By Editor**
+**By editor**
 
 *Grant, Beaverhead County, Montana, August 1805*
 

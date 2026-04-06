@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Kootenai Falls People and History
 
-**By Editor**
+**By editor**
 
 *Troy, Lincoln County, Montana, August 2022*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Route of the Hiawatha
 
-**By Mark Twain**
+**By editor**
 
 *[East Portal, Mineral County, Montana, August 1910]*
 

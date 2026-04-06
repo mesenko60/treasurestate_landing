@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Big Hole Valley
 
-**By Editor**
+**By editor**
 
 *Wisdom, Beaverhead County, Montana, August 1877*
 

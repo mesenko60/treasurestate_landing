@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Fort Connah
 
-**By Editor**
+**By editor**
 
 *St. Ignatius, Lake County, Montana, 1846*
 

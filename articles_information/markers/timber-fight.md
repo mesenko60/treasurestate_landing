@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Timber Fight
 
-**By Editor**
+**By editor**
 
 *Crow Agency, Big Horn County, Montana, June 1876*
 

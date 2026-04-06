@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Coursing Through Miles Of Montana
 
-**By Editor**
+**By editor**
 
 *Paradise, Sanders County*
 

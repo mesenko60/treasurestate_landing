@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Welcome to Hamilton Ranch
 
-**By Editor**
+**By editor**
 
 *Jackson, Beaverhead County, Montana*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Beginning of the "Endless Missouri"
 
-**By Editor**
+**By editor**
 
 *Grant, Beaverhead County, Montana, August 1805*
 

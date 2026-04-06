@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Garryowen
 
-**By Editor**
+**By editor**
 
 *Garryowen, Big Horn County, Montana, June 1876*
 

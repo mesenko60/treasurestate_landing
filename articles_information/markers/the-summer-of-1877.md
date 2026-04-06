@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 The Summer of 1877
 
-**By Editor**
+**By editor**
 
 *Cooke City, Park County*
 

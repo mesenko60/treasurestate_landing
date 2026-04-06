@@ -18,7 +18,7 @@ date_modified: 2026-04-06
 
 # A Lost World
 
-**By Editor**
+**By editor**
 
 *Saltese, Mineral County*
 

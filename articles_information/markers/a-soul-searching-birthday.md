@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # A Soul-Searching Birthday
 
-**By Editor**
+**By editor**
 
 *Jackson, Beaverhead County, Montana*
 

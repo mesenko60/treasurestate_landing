@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Butte-Anaconda Historic District
 
-**By Editor**
+**By editor**
 
 *Anaconda, Deer Lodge County, Montana, July 2016*
 

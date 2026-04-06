@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Uncovering the Expedition
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County*
 

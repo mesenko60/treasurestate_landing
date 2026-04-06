@@ -112,6 +112,14 @@ function yamlEscape(s) {
   return `"${s.replace(/"/g, '\\"')}"`;
 }
 
+/**
+ * Normalize author byline to "**By editor**".
+ * Matches lines like "**By Mark Twain**", "**By Jane Doe**", etc.
+ */
+function normalizeAuthor(body) {
+  return body.replace(/^\*\*By [^*]+\*\*$/gm, '**By editor**');
+}
+
 function main() {
   const townSlugs = loadTownSlugs();
   const today = new Date().toISOString().slice(0, 10);
@@ -154,7 +162,8 @@ date_modified: ${today}
 
 `;
 
-    fs.writeFileSync(fp, fm + raw.trimStart(), 'utf8');
+    const normalizedBody = normalizeAuthor(raw.trimStart());
+    fs.writeFileSync(fp, fm + normalizedBody, 'utf8');
     updated++;
   }
 

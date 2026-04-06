@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Savenac Nursery Historic District
 
-**By Mark Twain**
+**By editor**
 
 *[Haugan, Mineral County, Montana, 1908]*
 

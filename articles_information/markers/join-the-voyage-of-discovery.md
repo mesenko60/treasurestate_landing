@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Join the Voyage of Discovery
 
-**By Editor**
+**By editor**
 
 *Saltese, Mineral County*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # What Is This Land Worth?
 
-**By Editor**
+**By editor**
 
 *Decker, Big Horn County*
 

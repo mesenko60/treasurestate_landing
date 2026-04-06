@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Mountain (Bighorn) Sheep
 
-**By John Muir**
+**By editor**
 
 *Thompson Falls, Sanders County, Montana, 1810*
 

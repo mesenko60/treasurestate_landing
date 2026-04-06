@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Fort Thompson Playground
 
-**By Washington Irving**
+**By editor**
 
 *Thompson Falls, Sanders County, Montana, 1811*
 

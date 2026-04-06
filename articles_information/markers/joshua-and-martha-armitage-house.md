@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Joshua and Martha Armitage House
 
-**By Mark Twain**
+**By editor**
 
 *Helena, Lewis and Clark County, Montana, July 2021*
 

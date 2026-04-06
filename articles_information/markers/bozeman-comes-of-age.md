@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Bozeman Comes of Age
 
-**By Mark Twain**
+**By editor**
 
 *Bozeman, Gallatin County, Montana, July 2021*
 

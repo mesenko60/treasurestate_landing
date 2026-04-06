@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Lewis and Clark at Ross' Hole
 
-**By Editor**
+**By editor**
 
 *Sula, Ravalli County, Montana, September 1805*
 

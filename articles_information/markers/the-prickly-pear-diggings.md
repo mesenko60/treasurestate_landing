@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Prickly Pear Diggings
 
-**By Mark Twain**
+**By editor**
 
 *Montana City, Jefferson County, Montana, July 2021*
 

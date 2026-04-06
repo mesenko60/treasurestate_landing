@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Great Clearing
 
-**By Editor**
+**By editor**
 
 *Sula, Ravalli County, Montana, September 1805*
 
@@ -34,7 +34,7 @@ The only problem was the language barrier. The Séliš spoke a language that sou
 
 To tell the Séliš that they wanted to buy horses, the captains had to employ a translation chain that would have made the builders of the Tower of Babel throw up their hands in despair. Captain Clark spoke in English to Private Labiche. Labiche translated the English into French for Toussaint Charbonneau. Charbonneau translated the French into Hidatsa for his wife, Sacagawea. Sacagawea translated the Hidatsa into Shoshone for a young Shoshone boy who happened to be living with the Séliš. And the boy, finally, translated the Shoshone into Séliš for the chiefs.
 
-By the time "We would like to buy some horses" reached the other end of the line, it is a wonder it did not come out as "My canoe is full of eels."
+By the time "We would like to buy some horses" reached the other end of the line, it is a wonder it did not come out as "My hovercraft is full of eels."
 
 But the Séliš understood the universal language of trade goods. The captains laid out their merchandise in little piles, and the bargaining began. The Séliš, who were described by the journalists as the "likelyest and honestest" people they had met, proved to be generous trading partners. They took the expedition's worn-out, broken-down nags and traded them for fresh, strong animals, accepting only a few small articles of merchandise in return.
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # A Vast Network of Indigenous Trails
 
-**By Editor**
+**By editor**
 
 *Greenough, Missoula County, Montana*
 

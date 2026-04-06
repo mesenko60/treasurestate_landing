@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Nez Perce Camp
 
-**By Editor**
+**By editor**
 
 *Dillon, Beaverhead County*
 

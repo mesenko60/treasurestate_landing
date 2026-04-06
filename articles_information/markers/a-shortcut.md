@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # A Shortcut
 
-**By Editor**
+**By editor**
 
 *Missoula, Missoula County, Montana*
 

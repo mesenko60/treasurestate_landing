@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Nez Perce Sikum
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County, Montana, September 1805*
 

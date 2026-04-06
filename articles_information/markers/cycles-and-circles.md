@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 ## Cycles and Circles
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County*
 

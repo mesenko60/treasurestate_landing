@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Outwitted and Outflanked
 
-**By Manus AI**
+**By editor**
 
 *Lolo, Missoula County, Montana, July 1877*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Howse House
 
-**By Manus AI**
+**By editor**
 
 *Somers, Flathead County, Montana, 1903*
 

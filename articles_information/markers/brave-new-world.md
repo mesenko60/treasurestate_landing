@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Brave New World
 
-**By Editor**
+**By editor**
 
 *Missoula, Missoula County*
 

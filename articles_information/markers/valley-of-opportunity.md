@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Valley of Opportunity
 
-**By Mark Twain**
+**By editor**
 
 *Bozeman, Gallatin County, Montana, March 2009*
 

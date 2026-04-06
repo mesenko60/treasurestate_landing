@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Native People Sustained Through Many Millennia
 
-**By Editor**
+**By editor**
 
 *Paradise, Sanders County, Montana, July 2011*
 

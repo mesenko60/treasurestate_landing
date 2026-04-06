@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Trail Through Time
 
-**By Mark Twain**
+**By editor**
 
 *Bozeman, Gallatin County, Montana, March 2009*
 

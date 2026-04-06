@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Journey Home
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County, Montana*
 

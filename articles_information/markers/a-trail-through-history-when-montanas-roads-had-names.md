@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # A Trail Through History / When Montana's Roads Had Names
 
-**By Mark Twain**
+**By editor**
 
 *Three Forks, Gallatin County, Montana, July 2025*
 

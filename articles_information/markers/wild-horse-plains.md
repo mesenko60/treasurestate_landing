@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Wild Horse Plains
 
-**By Mark Twain**
+**By editor**
 
 *[Plains, Sanders County, Montana, 1881]*
 

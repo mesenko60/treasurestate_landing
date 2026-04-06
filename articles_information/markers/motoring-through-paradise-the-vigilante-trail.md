@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Motoring Through Paradise: The Vigilante Trail
 
-**By Editor**
+**By editor**
 
 *Cameron, Madison County*
 

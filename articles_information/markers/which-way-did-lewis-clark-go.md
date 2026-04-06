@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Which Way Did Lewis & Clark Go?
 
-**By Editor**
+**By editor**
 
 *Sula, Ravalli County, Montana, September 1805*
 

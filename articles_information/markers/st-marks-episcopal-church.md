@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # St. Mark's Episcopal Church
 
-**By Editor**
+**By editor**
 
 *Anaconda, Deer Lodge County, Montana, August 2022*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Hepburn's Mesa
 
-**By Francis Parkman**
+**By editor**
 
 *Pray, Park County, Montana, July 2021*
 

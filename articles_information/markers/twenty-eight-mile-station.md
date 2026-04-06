@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Twenty-eight Mile Station
 
-**By Mark Twain**
+**By editor**
 
 *Great Falls, Cascade County, Montana, August 2022*
 

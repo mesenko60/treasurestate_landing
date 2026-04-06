@@ -14,7 +14,7 @@ date_published: 2026-04-02
 date_modified: 2026-04-02
 ---
 
-**By Editor**
+**By editor**
 
 *Lolo, Missoula County, Montana — September 1805*
 

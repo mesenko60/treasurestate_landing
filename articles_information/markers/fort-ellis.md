@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Fort Ellis
 
-**By Francis Parkman**
+**By editor**
 
 *Bozeman, Gallatin County, Montana, March 2009*
 

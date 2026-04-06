@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 Rosebud Battlefield
 
-**By Editor**
+**By editor**
 
 *Busby, Big Horn County*
 

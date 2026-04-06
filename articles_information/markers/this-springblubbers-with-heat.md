@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # "this spring...blubbers with heat"
 
-**By Editor**
+**By editor**
 
 *Wisdom, Beaverhead County, Montana, July 1806*
 

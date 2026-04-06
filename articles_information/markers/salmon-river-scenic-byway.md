@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Salmon River Scenic Byway
 
-**By Editor**
+**By editor**
 
 *Sula, Ravalli County, Montana, August 1805*
 

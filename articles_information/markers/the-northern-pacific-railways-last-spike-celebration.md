@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Northern Pacific Railway's Last Spike Celebration
 
-**By Editor**
+**By editor**
 
 *Goldcreek, Powell County, Montana, August 2022*
 

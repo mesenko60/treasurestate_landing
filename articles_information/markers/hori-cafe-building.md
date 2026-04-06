@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Hori Cafe Building
 
-**By Mark Twain**
+**By editor**
 
 *Whitefish, Flathead County, Montana, 1905*
 

@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Historic Crail Ranch | North View
 
-**By Editor**
+**By editor**
 
 *Big Sky, Gallatin County*
 

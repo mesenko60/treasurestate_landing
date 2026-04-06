@@ -17,7 +17,12 @@ const MARKERS_DIR = path.join(REPO_ROOT, 'articles_information', 'markers');
 const DATA_PATH = path.join(__dirname, '../data/historic-markers.json');
 
 /** Companion files whose basename intentionally does not match any marker.slug */
-const UMBRELLA_BASENAMES = new Set(['1910_fire']);
+const UMBRELLA_BASENAMES = new Set([
+  '1910_fire',
+  'jefferson-river',
+  'the-historic-crail-ranch',
+  'this-spring-blubbers-with-heat',
+]);
 
 function main() {
   const all = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));

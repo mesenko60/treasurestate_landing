@@ -2,13 +2,13 @@
 title: "Road to the Buffalo"
 slug: road-to-the-buffalo-2
 type: montana-facts
-tags: [history, historic-markers, native-american, exploration]
+tags: [history, historic-markers, native-american]
 featured: false
-excerpt: "David Thompson, Saleesh House at Thompson Falls, and the fur-trade era that reshaped Salish country—from beaver wealth to Fort Connah."
+excerpt: "Road to the Buffalo"
 hero_image: /images/hero-image.jpg
 hero_alt: "Montana landscape"
-meta_description: "Companion narrative for the Thompson Falls Road to the Buffalo marker: David Thompson, Saleesh House, the fur trade, and Fort Connah."
-related_towns: [thompson-falls]
+meta_description: "Road to the Buffalo"
+related_towns: []
 related_topics: []
 date_published: 2026-04-06
 date_modified: 2026-04-06
@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Road to the Buffalo
 
-**By Charles Eastman**
+**By editor**
 
 *Thompson Falls, Sanders County, Montana, August 2022*
 

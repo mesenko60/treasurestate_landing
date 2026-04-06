@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Searching For Fur And A Finer Life
 
-**By Editor**
+**By editor**
 
 *Paradise, Sanders County, Montana, April 2026*
 

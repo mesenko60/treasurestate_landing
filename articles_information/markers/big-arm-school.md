@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Big Arm School
 
-**By Editor**
+**By editor**
 
 *Big Arm, Lake County*
 

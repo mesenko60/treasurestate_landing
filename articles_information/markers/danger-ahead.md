@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Danger Ahead!
 
-**By Editor**
+**By editor**
 
 *Missoula, Missoula County, Montana, July 1806*
 

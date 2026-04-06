@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Bozeman Trail
 
-**By Francis Parkman**
+**By editor**
 
 *McAllister, Madison County, Montana, July 2016*
 

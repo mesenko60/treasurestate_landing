@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # "it was mutually advantageous..."
 
-**By Editor**
+**By editor**
 
 *Dillon, Beaverhead County, Montana, August 1805*
 

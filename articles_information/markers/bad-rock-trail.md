@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Bad Rock Trail
 
-**By Mark Twain**
+**By editor**
 
 *[Thompson Falls, Sanders County, Montana, 1809]*
 

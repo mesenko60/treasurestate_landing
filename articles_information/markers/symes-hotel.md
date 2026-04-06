@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Symes Hotel
 
-**By Editor**
+**By editor**
 
 *Hot Springs, Sanders County, Montana, August 2022*
 

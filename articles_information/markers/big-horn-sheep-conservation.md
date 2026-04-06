@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Big Horn Sheep Conservation
 
-**By Editor**
+**By editor**
 
 *Sula, Ravalli County, Montana, July 2016*
 

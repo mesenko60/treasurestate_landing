@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # Traveler's Crossroads for Centuries
 
-**By Editor**
+**By editor**
 
 *Twin Bridges, Madison County*
 

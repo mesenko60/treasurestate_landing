@@ -16,7 +16,7 @@ date_modified: 2026-04-06
 
 # The Time When The People Fought The Soldiers.
 
-**By Editor**
+**By editor**
 
 *Decker, Big Horn County*
 
