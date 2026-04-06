@@ -14,13 +14,31 @@ const CURATED = path.join(__dirname, '../data/historic-markers-curated.json');
 const MARKERS_DIR = path.join(REPO_ROOT, 'articles_information', 'markers');
 const OUT = path.join(__dirname, '../lib/markerDeepReads.generated.ts');
 
+/**
+ * Resolve companion markdown: exact `slug.md` first, then `base.md` for `base-N` slugs
+ * only when no `base-M.md` numbered sibling exists (avoids attaching one story to the wrong marker).
+ */
 function findArticleFile(markerSlug) {
-  const candidates = [markerSlug, markerSlug.replace(/-\d+$/, '')];
-  for (const c of candidates) {
-    const fp = path.join(MARKERS_DIR, `${c}.md`);
-    if (fs.existsSync(fp)) return fp;
-  }
-  return null;
+  const exact = path.join(MARKERS_DIR, `${markerSlug}.md`);
+  if (fs.existsSync(exact)) return exact;
+
+  const base = markerSlug.replace(/-\d+$/, '');
+  if (base === markerSlug) return null;
+
+  const baseFp = path.join(MARKERS_DIR, `${base}.md`);
+  if (!fs.existsSync(baseFp)) return null;
+
+  const hasNumberedSibling = fs
+    .readdirSync(MARKERS_DIR)
+    .some(
+      (f) =>
+        f.endsWith('.md') &&
+        f.startsWith(`${base}-`) &&
+        /-\d+\.md$/.test(f),
+    );
+  if (hasNumberedSibling) return null;
+
+  return baseFp;
 }
 
 function main() {

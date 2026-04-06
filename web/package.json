@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/copy-assets.js && node scripts/generate-redirects.js && node scripts/convert-images-to-webp.js && node scripts/generate-marker-deep-reads.mjs && node scripts/generate-search-index.js",
+    "prebuild": "node scripts/copy-assets.js && node scripts/generate-redirects.js && node scripts/convert-images-to-webp.js && node scripts/lint-marker-articles.mjs && node scripts/generate-marker-deep-reads.mjs && node scripts/generate-search-index.js",
+    "markers:parse": "node scripts/parse-historic-markers.js",
     "images:convert": "node scripts/convert-images-to-webp.js",
     "build": "next build && next export && node scripts/generate-sitemap.js",
     "indexnow": "node scripts/push-indexnow.js",

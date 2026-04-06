@@ -3,10 +3,40 @@
 import type { MarkerDeepRead } from './markerDeepReadsTypes';
 
 export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
+  "219-west-third-street": {
+    href: "/information/219-west-third-street/",
+    title: "219 West Third Street — full narrative",
+    description: "219 West Third Street",
+  },
+  "504-main-street": {
+    href: "/information/504-main-street/",
+    title: "504 Main Street — full narrative",
+    description: "504 Main Street",
+  },
+  "a-battle-that-could-not-be-won": {
+    href: "/information/a-battle-that-could-not-be-won/",
+    title: "A Battle That Could Not Be Won — full narrative",
+    description: "A Battle That Could Not Be Won",
+  },
+  "a-crossroads-of-culture": {
+    href: "/information/a-crossroads-of-culture/",
+    title: "A Crossroads of Culture — full narrative",
+    description: "A Crossroads of Culture",
+  },
+  "a-handsome-little-river": {
+    href: "/information/a-handsome-little-river/",
+    title: "\"...a handsome little river...\" — full narrative",
+    description: "\"...a handsome little river...\"",
+  },
   "a-lost-world": {
     href: "/information/a-lost-world/",
     title: "A Lost World — full narrative",
     description: "\"A Lost World\" by John Muir",
+  },
+  "a-shortcut": {
+    href: "/information/a-shortcut/",
+    title: "A Shortcut — full narrative",
+    description: "A Shortcut",
   },
   "a-soul-searching-birthday": {
     href: "/information/a-soul-searching-birthday/",
@@ -18,25 +48,95 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "A Trail Through History / When Montana's Roads Had Names — full narrative",
     description: "A Trail Through History / When Montana's Roads Had Names",
   },
+  "a-vast-network-of-indigenous-trails": {
+    href: "/information/a-vast-network-of-indigenous-trails/",
+    title: "A Vast Network of Indigenous Trails — full narrative",
+    description: "A Vast Network of Indigenous Trails",
+  },
   "a-wonderful-piece-of-engineering-the-mullan-road": {
     href: "/information/a-wonderful-piece-of-engineering-the-mullan-road/",
     title: "A wonderful Piece of Engineering: The Mullan Road — full narrative",
     description: "A wonderful Piece of Engineering: The Mullan Road",
+  },
+  "an-unlikely-safe-haven": {
+    href: "/information/an-unlikely-safe-haven/",
+    title: "An Unlikely Safe Haven — full narrative",
+    description: "An Unlikely Safe Haven",
+  },
+  "atlantic-cable-quartz-lode": {
+    href: "/information/atlantic-cable-quartz-lode/",
+    title: "Atlantic Cable Quartz Lode — full narrative",
+    description: "Atlantic Cable Quartz Lode",
+  },
+  "baberjaquette-house": {
+    href: "/information/baberjaquette-house/",
+    title: "Baber/Jaquette House — full narrative",
+    description: "Baber/Jaquette House",
+  },
+  "bad-rock-trail": {
+    href: "/information/bad-rock-trail/",
+    title: "Bad Rock Trail — full narrative",
+    description: "Bad Rock Trail",
+  },
+  "bi-metallic-aerial-tramway": {
+    href: "/information/bi-metallic-aerial-tramway/",
+    title: "Bi-Metallic Aerial Tramway — full narrative",
+    description: "Bi-Metallic Aerial Tramway",
   },
   "big-arm-school": {
     href: "/information/big-arm-school/",
     title: "Big Arm School — full narrative",
     description: "Big Arm School",
   },
+  "big-hole-valley": {
+    href: "/information/big-hole-valley/",
+    title: "Big Hole Valley — full narrative",
+    description: "Big Hole Valley",
+  },
   "big-horn-sheep-conservation": {
     href: "/information/big-horn-sheep-conservation/",
     title: "Big Horn Sheep Conservation — full narrative",
     description: "Big Horn Sheep Conservation",
   },
+  "bozeman-comes-of-age": {
+    href: "/information/bozeman-comes-of-age/",
+    title: "Bozeman Comes of Age — full narrative",
+    description: "Bozeman Comes of Age",
+  },
   "brave-new-world": {
     href: "/information/brave-new-world/",
     title: "Brave New World — full narrative",
     description: "Brave New World",
+  },
+  "butte-anaconda-and-pacific-railway-historic-district": {
+    href: "/information/butte-anaconda-and-pacific-railway-historic-district/",
+    title: "Butte, Anaconda and Pacific Railway Historic District — full narrative",
+    description: "Butte, Anaconda and Pacific Railway Historic District",
+  },
+  "butte-anaconda-historic-district": {
+    href: "/information/butte-anaconda-historic-district/",
+    title: "Butte-Anaconda Historic District — full narrative",
+    description: "Butte-Anaconda Historic District",
+  },
+  "cadillac-hotel": {
+    href: "/information/cadillac-hotel/",
+    title: "Cadillac Hotel — full narrative",
+    description: "Cadillac Hotel",
+  },
+  "coursing-through-miles-of-montana": {
+    href: "/information/coursing-through-miles-of-montana/",
+    title: "Coursing Through Miles Of Montana — full narrative",
+    description: "Coursing Through Miles Of Montana",
+  },
+  "crows-nest": {
+    href: "/information/crows-nest/",
+    title: "Crow's Nest — full narrative",
+    description: "Crow's Nest",
+  },
+  "custers-advance": {
+    href: "/information/custers-advance/",
+    title: "Custer's Advance — full narrative",
+    description: "Custer's Advance",
   },
   "cycles-and-circles": {
     href: "/information/cycles-and-circles/",
@@ -48,15 +148,90 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Danger Ahead! — full narrative",
     description: "Danger Ahead!",
   },
+  "deer-lodge-county-courthouse": {
+    href: "/information/deer-lodge-county-courthouse/",
+    title: "Deer Lodge County Courthouse — full narrative",
+    description: "Deer Lodge County Courthouse",
+  },
+  "douse-the-flames-and-climb-aboard": {
+    href: "/information/douse-the-flames-and-climb-aboard/",
+    title: "Douse the Flames and Climb Aboard — full narrative",
+    description: "Douse the Flames and Climb Aboard",
+  },
+  "duncan-samson-block": {
+    href: "/information/duncan-samson-block/",
+    title: "Duncan Samson Block — full narrative",
+    description: "Duncan Samson Block",
+  },
+  "ferguson-house": {
+    href: "/information/ferguson-house/",
+    title: "Ferguson House — full narrative",
+    description: "Ferguson House",
+  },
+  "first-impressions": {
+    href: "/information/first-impressions/",
+    title: "First Impressions — full narrative",
+    description: "First Impressions",
+  },
+  "first-presbyterian-church-of-whitefish": {
+    href: "/information/first-presbyterian-church-of-whitefish/",
+    title: "First Presbyterian Church of Whitefish — full narrative",
+    description: "First Presbyterian Church of Whitefish",
+  },
+  "flathead-house": {
+    href: "/information/flathead-house/",
+    title: "Flathead House — full narrative",
+    description: "Flathead House",
+  },
+  "flying-high-across-the-big-sky": {
+    href: "/information/flying-high-across-the-big-sky/",
+    title: "Flying High Across the Big Sky — full narrative",
+    description: "Flying High Across the Big Sky",
+  },
+  "following-formation": {
+    href: "/information/following-formation/",
+    title: "Following Formation — full narrative",
+    description: "Following Formation",
+  },
+  "fort-connah": {
+    href: "/information/fort-connah/",
+    title: "Fort Connah — full narrative",
+    description: "Fort Connah",
+  },
+  "fort-ellis": {
+    href: "/information/fort-ellis/",
+    title: "Fort Ellis — full narrative",
+    description: "Fort Ellis",
+  },
   "fort-fizzle": {
     href: "/information/fort-fizzle/",
     title: "Fort Fizzle — full narrative",
     description: "Fort Fizzle",
   },
+  "fort-owen-state-monument": {
+    href: "/information/fort-owen-state-monument/",
+    title: "Fort Owen State Monument — full narrative",
+    description: "Fort Owen State Monument",
+  },
   "fort-thompson-playground": {
     href: "/information/fort-thompson-playground/",
     title: "Fort Thompson Playground — full narrative",
     description: "Fort Thompson Playground",
+  },
+  "fred-clark-residence": {
+    href: "/information/fred-clark-residence/",
+    title: "Fred Clark Residence — full narrative",
+    description: "Fred Clark Residence",
+  },
+  "furst-residence": {
+    href: "/information/furst-residence/",
+    title: "Furst Residence — full narrative",
+    description: "Furst Residence",
+  },
+  "garryowen": {
+    href: "/information/garryowen/",
+    title: "Garryowen — full narrative",
+    description: "Garryowen",
   },
   "glacial-lake-missoula": {
     href: "/information/glacial-lake-missoula/",
@@ -68,15 +243,55 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Glacial Lake Missoula — full narrative",
     description: "Glacial Lake Missoula",
   },
+  "granite-mountain-mining-company-office": {
+    href: "/information/granite-mountain-mining-company-office/",
+    title: "Granite Mountain Mining Company Office — full narrative",
+    description: "Granite Mountain Mining Company Office",
+  },
+  "grasshopper-creek": {
+    href: "/information/grasshopper-creek/",
+    title: "Grasshopper Creek — full narrative",
+    description: "Grasshopper Creek",
+  },
+  "great-northern-railway-passenger-and-freight-depot-and-divis": {
+    href: "/information/great-northern-railway-passenger-and-freight-depot-and-divis/",
+    title: "Great Northern Railway Passenger and Freight Depot and Division Office — full narrative",
+    description: "Great Northern Railway Passenger and Freight Depot and Division Office",
+  },
   "hepburns-mesa": {
     href: "/information/hepburns-mesa/",
     title: "Hepburn's Mesa — full narrative",
     description: "Hepburn's Mesa",
   },
+  "hori-cafe-building": {
+    href: "/information/hori-cafe-building/",
+    title: "Hori Cafe Building — full narrative",
+    description: "Hori Cafe Building",
+  },
+  "hot-spring-valley": {
+    href: "/information/hot-spring-valley/",
+    title: "Hot Spring Valley — full narrative",
+    description: "Hot Spring Valley",
+  },
+  "houtz-house": {
+    href: "/information/houtz-house/",
+    title: "Houtz House — full narrative",
+    description: "Houtz House",
+  },
+  "howse-house": {
+    href: "/information/howse-house/",
+    title: "Howse House — full narrative",
+    description: "Howse House",
+  },
   "it-was-mutually-advantageous": {
     href: "/information/it-was-mutually-advantageous/",
     title: "\"it was mutually advantageous...\" — full narrative",
     description: "\"it was mutually advantageous...\"",
+  },
+  "jim-bridger-mountain-man": {
+    href: "/information/jim-bridger-mountain-man/",
+    title: "Jim Bridger, Mountain Man — full narrative",
+    description: "Companion narrative for the historic marker: Jim Bridger, Mountain Man.",
   },
   "join-the-voyage-of-discovery": {
     href: "/information/join-the-voyage-of-discovery/",
@@ -118,6 +333,11 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Join the Voyage of Discovery — full narrative",
     description: "Join the Voyage of Discovery",
   },
+  "joshua-and-martha-armitage-house": {
+    href: "/information/joshua-and-martha-armitage-house/",
+    title: "Joshua and Martha Armitage House — full narrative",
+    description: "Joshua and Martha Armitage House",
+  },
   "journey-through-the-blackfoot": {
     href: "/information/journey-through-the-blackfoot/",
     title: "Journey Through the Blackfoot — full narrative",
@@ -127,6 +347,16 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     href: "/information/kootenai-falls-people-and-history/",
     title: "Kootenai Falls People and History — full narrative",
     description: "Kootenai Falls People and History",
+  },
+  "kootenai-river": {
+    href: "/information/kootenai-river/",
+    title: "Kootenai River — full narrative",
+    description: "Kootenai River",
+  },
+  "kootenai-river-waterfowl-home-and-highway": {
+    href: "/information/kootenai-river-waterfowl-home-and-highway/",
+    title: "Kootenai River Waterfowl Home and Highway — full narrative",
+    description: "Kootenai River Waterfowl Home and Highway",
   },
   "lewis-and-clark-at-ross-hole": {
     href: "/information/lewis-and-clark-at-ross-hole/",
@@ -143,6 +373,36 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Lewis and Clark on Lolo Creek — full narrative",
     description: "Lewis and Clark on Lolo Creek",
   },
+  "lone-tipi": {
+    href: "/information/lone-tipi/",
+    title: "Lone Tipi — full narrative",
+    description: "Lone Tipi",
+  },
+  "marias-pass-obelisk": {
+    href: "/information/marias-pass-obelisk/",
+    title: "Marias Pass Obelisk — full narrative",
+    description: "Marias Pass Obelisk",
+  },
+  "mill-a-and-b": {
+    href: "/information/mill-a-and-b/",
+    title: "Mill A and B — full narrative",
+    description: "Mill A and B",
+  },
+  "miners-union-hall": {
+    href: "/information/miners-union-hall/",
+    title: "Miner's Union Hall — full narrative",
+    description: "Miner's Union Hall",
+  },
+  "morse-hall": {
+    href: "/information/morse-hall/",
+    title: "Morse Hall — full narrative",
+    description: "Morse Hall",
+  },
+  "most-distant-fountain-of-the-mighty-missouri": {
+    href: "/information/most-distant-fountain-of-the-mighty-missouri/",
+    title: "\"Most Distant Fountain\" of the Mighty Missouri — full narrative",
+    description: "\"Most Distant Fountain\" of the Mighty Missouri",
+  },
   "motoring-through-paradise-the-vigilante-trail": {
     href: "/information/motoring-through-paradise-the-vigilante-trail/",
     title: "Motoring Through Paradise: The Vigilante Trail — full narrative",
@@ -153,30 +413,180 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Mountain (Bighorn) Sheep — full narrative",
     description: "Mountain (Bighorn) Sheep",
   },
+  "name-that-river": {
+    href: "/information/name-that-river/",
+    title: "Name That River — full narrative",
+    description: "Name That River",
+  },
+  "native-people-sustained-through-many-millennia": {
+    href: "/information/native-people-sustained-through-many-millennia/",
+    title: "Native People Sustained Through Many Millennia — full narrative",
+    description: "Native People Sustained Through Many Millennia",
+  },
   "nez-perce-camp": {
     href: "/information/nez-perce-camp/",
     title: "Nez Perce Camp — full narrative",
     description: "Nez Perce Camp",
   },
+  "northwest-passage": {
+    href: "/information/northwest-passage/",
+    title: "Northwest Passage — full narrative",
+    description: "Northwest Passage",
+  },
+  "outwitted-and-outflanked": {
+    href: "/information/outwitted-and-outflanked/",
+    title: "Outwitted and Outflanked — full narrative",
+    description: "Outwitted and Outflanked",
+  },
+  "palace-bar": {
+    href: "/information/palace-bar/",
+    title: "Palace Bar — full narrative",
+    description: "Palace Bar",
+  },
+  "pastime-pool-hall": {
+    href: "/information/pastime-pool-hall/",
+    title: "Pastime Pool Hall — full narrative",
+    description: "Pastime Pool Hall",
+  },
+  "pend-doreille-hunting-grounds": {
+    href: "/information/pend-doreille-hunting-grounds/",
+    title: "Pend d'Oreille Hunting Grounds — full narrative",
+    description: "Pend d'Oreille Hunting Grounds",
+  },
+  "phantom-formation-is-rock-solid-in-corridor": {
+    href: "/information/phantom-formation-is-rock-solid-in-corridor/",
+    title: "Phantom Formation Is Rock Solid In Corridor — full narrative",
+    description: "Phantom Formation Is Rock Solid In Corridor",
+  },
+  "pizer-building": {
+    href: "/information/pizer-building/",
+    title: "Pizer Building — full narrative",
+    description: "Pizer Building",
+  },
+  "rattlesnake-creek": {
+    href: "/information/rattlesnake-creek/",
+    title: "Rattlesnake Creek — full narrative",
+    description: "Rattlesnake Creek",
+  },
+  "removal-of-salish-from-bitterroot-valley-1855-1891": {
+    href: "/information/removal-of-salish-from-bitterroot-valley-1855-1891/",
+    title: "\"Removal\" of Salish from Bitterroot Valley, 1855-1891 — full narrative",
+    description: "\"Removal\" of Salish from Bitterroot Valley, 1855-1891",
+  },
+  "renos-valley-fight": {
+    href: "/information/renos-valley-fight/",
+    title: "Reno's Valley Fight — full narrative",
+    description: "Reno's Valley Fight",
+  },
+  "retreat-crossing": {
+    href: "/information/retreat-crossing/",
+    title: "Retreat Crossing — full narrative",
+    description: "Retreat Crossing",
+  },
   "road-to-the-buffalo": {
+    href: "/information/road-to-the-buffalo-plains/",
+    title: "Road to the Buffalo — full narrative",
+    description: "Road to the Buffalo",
+  },
+  "road-to-the-buffalo-3": {
     href: "/information/road-to-the-buffalo/",
     title: "Road to the Buffalo — full narrative",
     description: "Road to the Buffalo",
   },
-  "road-to-the-buffalo-2": {
-    href: "/information/road-to-the-buffalo/",
-    title: "Road to the Buffalo — full narrative",
-    description: "Road to the Buffalo",
+  "rosebud-battlefield": {
+    href: "/information/rosebud-battlefield/",
+    title: "Rosebud Battlefield — full narrative",
+    description: "Rosebud Battlefield",
+  },
+  "saleesh-house": {
+    href: "/information/saleesh-house/",
+    title: "Saleesh House — full narrative",
+    description: "Saleesh House",
   },
   "salmon-river-scenic-byway": {
     href: "/information/salmon-river-scenic-byway/",
     title: "Salmon River Scenic Byway — full narrative",
     description: "Salmon River Scenic Byway",
   },
+  "savenac-nursery-historic-district": {
+    href: "/information/savenac-nursery-historic-district/",
+    title: "Savenac Nursery Historic District — full narrative",
+    description: "Savenac Nursery Historic District",
+  },
+  "seaman": {
+    href: "/information/seaman/",
+    title: "Seaman — full narrative",
+    description: "Seaman",
+  },
+  "searching-for-fur-and-a-finer-life": {
+    href: "/information/searching-for-fur-and-a-finer-life/",
+    title: "Searching For Fur And A Finer Life — full narrative",
+    description: "Searching For Fur And A Finer Life",
+  },
+  "sharpshooter-ridge": {
+    href: "/information/sharpshooter-ridge/",
+    title: "Sharpshooter Ridge — full narrative",
+    description: "Sharpshooter Ridge",
+  },
+  "soldiers-as-naturalists": {
+    href: "/information/soldiers-as-naturalists/",
+    title: "Soldiers as Naturalists — full narrative",
+    description: "Soldiers as Naturalists",
+  },
+  "st-marks-episcopal-church": {
+    href: "/information/st-marks-episcopal-church/",
+    title: "St. Mark's Episcopal Church — full narrative",
+    description: "St. Mark's Episcopal Church",
+  },
+  "st-marys-mission-historic-district": {
+    href: "/information/st-marys-mission-historic-district/",
+    title: "St. Mary's Mission Historic District — full narrative",
+    description: "St. Mary's Mission Historic District",
+  },
+  "st-paul-pass-tunnel": {
+    href: "/information/st-paul-pass-tunnel/",
+    title: "St. Paul Pass Tunnel — full narrative",
+    description: "St. Paul Pass Tunnel",
+  },
+  "substation-13": {
+    href: "/information/substation-13/",
+    title: "Substation 13 — full narrative",
+    description: "Substation 13",
+  },
+  "superior-school": {
+    href: "/information/superior-school/",
+    title: "Superior School — full narrative",
+    description: "Superior School",
+  },
+  "surrounded-by-wilderness": {
+    href: "/information/surrounded-by-wilderness/",
+    title: "Surrounded by Wilderness — full narrative",
+    description: "Surrounded by Wilderness",
+  },
+  "symes-hotel": {
+    href: "/information/symes-hotel/",
+    title: "Symes Hotel — full narrative",
+    description: "Symes Hotel",
+  },
+  "tetrault-house": {
+    href: "/information/tetrault-house/",
+    title: "Tetrault House — full narrative",
+    description: "Tetrault House",
+  },
+  "the-beginning-of-the-endless-missouri": {
+    href: "/information/the-beginning-of-the-endless-missouri/",
+    title: "The Beginning of the \"Endless Missouri\" — full narrative",
+    description: "The Beginning of the \"Endless Missouri\"",
+  },
   "the-blackfoot-river-corridor": {
     href: "/information/the-blackfoot-river-corridor/",
     title: "The Blackfoot River Corridor — full narrative",
     description: "The Blackfoot River Corridor",
+  },
+  "the-bozeman-trail": {
+    href: "/information/the-bozeman-trail/",
+    title: "The Bozeman Trail — full narrative",
+    description: "The Bozeman Trail",
   },
   "the-bozeman-trail-4": {
     href: "/information/the-bozeman-trail/",
@@ -188,6 +598,36 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "The Bruck\" was a machine built for purpose, a testament to the ingenuity that tamed the vast American West. You would have seen it, perhaps, a distinctive orange and green leviathan, plying the roads between Whitefish and Kalispell, a vital link in the Great Northern Railway's intricate network. It was not a thing of beauty in the classical sense, but a thing of function, and in that function, it found its own rugged elegance. For those who understood the logistics of moving men and materiel across a challenging landscape, the Bruck was a marvel of engineering, a solution to a problem that had vexed the railway for years. It was, as one railway man put it, a workhorse. — full narrative",
     description: "\"The Bruck\" was a machine built for purpose, a testament to the ingenuity that tamed the vast American West. You would have seen it, perhaps, a distinctive orange and green leviathan, plying the ro…",
   },
+  "the-earths-blood-flows-past-you": {
+    href: "/information/the-earths-blood-flows-past-you/",
+    title: "The Earth's Blood Flows Past You — full narrative",
+    description: "The Earth's Blood Flows Past You",
+  },
+  "the-great-clearing": {
+    href: "/information/the-great-clearing/",
+    title: "The Great Clearing — full narrative",
+    description: "The Great Clearing",
+  },
+  "the-historic-crail-ranch-north-view": {
+    href: "/information/the-historic-crail-ranch-north-view/",
+    title: "The Historic Crail Ranch | North View — full narrative",
+    description: "The Historic Crail Ranch | North View",
+  },
+  "the-journey-home": {
+    href: "/information/the-journey-home/",
+    title: "The Journey Home — full narrative",
+    description: "The Journey Home",
+  },
+  "the-land-speaks": {
+    href: "/information/the-land-speaks/",
+    title: "The Land Speaks — full narrative",
+    description: "The Land Speaks",
+  },
+  "the-lewis-minus-clark-expedition": {
+    href: "/information/the-lewis-minus-clark-expedition/",
+    title: "The Lewis Minus Clark Expedition — full narrative",
+    description: "The Lewis Minus Clark Expedition",
+  },
   "the-lolo-trail": {
     href: "/information/the-lolo-trail/",
     title: "The Lolo Trail — full narrative",
@@ -198,10 +638,35 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "The Nez Perce Sikum — full narrative",
     description: "The Nez Perce Sikum",
   },
+  "the-ninemile-remount-depot": {
+    href: "/information/the-ninemile-remount-depot/",
+    title: "The Ninemile Remount Depot — full narrative",
+    description: "The Ninemile Remount Depot",
+  },
   "the-northern-pacific-railways-last-spike-celebration": {
     href: "/information/the-northern-pacific-railways-last-spike-celebration/",
     title: "The Northern Pacific Railway's Last Spike Celebration — full narrative",
     description: "The Northern Pacific Railway's Last Spike Celebration",
+  },
+  "the-prickly-pear-diggings": {
+    href: "/information/the-prickly-pear-diggings/",
+    title: "The Prickly Pear Diggings — full narrative",
+    description: "The Prickly Pear Diggings",
+  },
+  "the-reno-benteen-defense": {
+    href: "/information/the-reno-benteen-defense/",
+    title: "The Reno-Benteen Defense — full narrative",
+    description: "The Reno-Benteen Defense",
+  },
+  "the-route-of-the-hiawatha": {
+    href: "/information/the-route-of-the-hiawatha/",
+    title: "The Route of the Hiawatha — full narrative",
+    description: "The Route of the Hiawatha",
+  },
+  "the-soldiers-corral": {
+    href: "/information/the-soldiers-corral/",
+    title: "The \"Soldiers' Corral\" — full narrative",
+    description: "The \"Soldiers' Corral\"",
   },
   "the-summer-of-1877": {
     href: "/information/the-summer-of-1877/",
@@ -213,29 +678,134 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "The Time When The People Fought The Soldiers. — full narrative",
     description: "The Time When The People Fought The Soldiers.",
   },
+  "the-trail-follows-the-trains": {
+    href: "/information/the-trail-follows-the-trains/",
+    title: "The Trail Follows the Trains — full narrative",
+    description: "The Trail Follows the Trains",
+  },
   "the-way-they-saw-it": {
     href: "/information/the-way-they-saw-it/",
     title: "The Way They Saw It — full narrative",
     description: "The Way They Saw It",
+  },
+  "the-wickedest-city": {
+    href: "/information/the-wickedest-city/",
+    title: "The Wickedest City — full narrative",
+    description: "The Wickedest City",
   },
   "this-springblubbers-with-heat": {
     href: "/information/this-springblubbers-with-heat/",
     title: "\"this spring...blubbers with heat\" — full narrative",
     description: "\"this spring...blubbers with heat\"",
   },
+  "timber-fight": {
+    href: "/information/timber-fight/",
+    title: "Timber Fight — full narrative",
+    description: "Timber Fight",
+  },
+  "tobacco-plains": {
+    href: "/information/tobacco-plains/",
+    title: "Tobacco Plains — full narrative",
+    description: "Tobacco Plains",
+  },
+  "tomb-of-the-unknown-soldier": {
+    href: "/information/tomb-of-the-unknown-soldier/",
+    title: "Tomb of the Unknown Soldier — full narrative",
+    description: "Tomb of the Unknown Soldier",
+  },
   "trail-through-time": {
     href: "/information/trail-through-time/",
     title: "Trail Through Time — full narrative",
     description: "Trail Through Time",
+  },
+  "trapper-peak": {
+    href: "/information/trapper-peak/",
+    title: "Trapper Peak — full narrative",
+    description: "Trapper Peak",
   },
   "travelers-crossroads-for-centuries": {
     href: "/information/travelers-crossroads-for-centuries/",
     title: "Traveler's Crossroads for Centuries — full narrative",
     description: "Traveler's Crossroads for Centuries",
   },
+  "tuttle-residence": {
+    href: "/information/tuttle-residence/",
+    title: "Tuttle Residence — full narrative",
+    description: "Tuttle Residence",
+  },
+  "twenty-eight-mile-station": {
+    href: "/information/twenty-eight-mile-station/",
+    title: "Twenty-eight Mile Station — full narrative",
+    description: "Twenty-eight Mile Station",
+  },
+  "two-immigrants-shared-an-american-dream": {
+    href: "/information/two-immigrants-shared-an-american-dream/",
+    title: "Two Immigrants Shared an American Dream — full narrative",
+    description: "Two Immigrants Shared an American Dream",
+  },
+  "two-moons": {
+    href: "/information/two-moons/",
+    title: "Two Moons — full narrative",
+    description: "Two Moons",
+  },
+  "uncovering-the-expedition": {
+    href: "/information/uncovering-the-expedition/",
+    title: "Uncovering the Expedition — full narrative",
+    description: "Uncovering the Expedition",
+  },
+  "undaunted-stewardship": {
+    href: "/information/undaunted-stewardship/",
+    title: "Undaunted Stewardship — full narrative",
+    description: "Undaunted Stewardship",
+  },
+  "valley-of-opportunity": {
+    href: "/information/valley-of-opportunity/",
+    title: "Valley of Opportunity — full narrative",
+    description: "Valley of Opportunity",
+  },
+  "weinstein-building": {
+    href: "/information/weinstein-building/",
+    title: "Weinstein Building — full narrative",
+    description: "Weinstein Building",
+  },
+  "weir-point": {
+    href: "/information/weir-point/",
+    title: "Weir Point — full narrative",
+    description: "Weir Point",
+  },
+  "weir-point-fight": {
+    href: "/information/weir-point-fight/",
+    title: "Weir Point Fight — full narrative",
+    description: "Weir Point Fight",
+  },
+  "welcome-to-fort-owen": {
+    href: "/information/welcome-to-fort-owen/",
+    title: "Welcome to Fort Owen — full narrative",
+    description: "Welcome to Fort Owen",
+  },
+  "welcome-to-hamilton-ranch": {
+    href: "/information/welcome-to-hamilton-ranch/",
+    title: "Welcome to Hamilton Ranch — full narrative",
+    description: "Welcome to Hamilton Ranch",
+  },
+  "what-is-this-land-worth": {
+    href: "/information/what-is-this-land-worth/",
+    title: "What Is This Land Worth? — full narrative",
+    description: "What Is This Land Worth?",
+  },
+  "when-the-mountains-roared": {
+    href: "/information/when-the-mountains-roared/",
+    title: "When the Mountains Roared — full narrative",
+    description: "When the Mountains Roared",
+  },
   "which-way-did-lewis-clark-go": {
     href: "/information/which-way-did-lewis-clark-go/",
     title: "Which Way Did Lewis & Clark Go? — full narrative",
     description: "Which Way Did Lewis & Clark Go?",
+  },
+  "wild-horse-plains": {
+    href: "/information/wild-horse-plains/",
+    title: "Wild Horse Plains — full narrative",
+    description: "Wild Horse Plains",
   },
 };

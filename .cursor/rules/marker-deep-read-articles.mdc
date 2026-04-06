@@ -7,7 +7,8 @@ This rule documents the process for adding a companion "deep read" article that 
 - **Article markdown**: `articles_information/markers/<slug>.md` (filename should match the marker `slug` in `historic-markers-curated.json`, or the base slug before a numeric suffix like `-2`)
 - **Deep-read links (auto)**: `web/lib/markerDeepReads.generated.ts` — regenerated on every `npm run prebuild` from curated markers + marker article files
 - **Deep-read overrides**: `web/lib/markerDeepReads.ts` — shared type in `markerDeepReadsTypes.ts`; use for clusters (e.g. several markers → one article) that should not be overwritten by the generator
-- **Batch tooling**: `web/scripts/normalize-marker-articles.mjs` (dedupe/rename), `web/scripts/add-marker-article-frontmatter.mjs` (prepend frontmatter to files missing `---`), `web/scripts/generate-marker-deep-reads.mjs` (writes the generated map)
+- **Batch tooling**: `web/scripts/normalize-marker-articles.mjs` (dedupe/rename), `web/scripts/add-marker-article-frontmatter.mjs` (prepend frontmatter to files missing `---`), `web/scripts/generate-marker-deep-reads.mjs` (writes the generated map), `web/scripts/lint-marker-articles.mjs` (prebuild: fail on orphan filenames)
+- **After adding/removing companion files or changing CSV**: run `node web/scripts/parse-historic-markers.js` so `historic-markers-curated.json` includes every marker that has a matching `articles_information/markers/<slug>.md` (companion tier).
 - **Marker data**: `web/data/historic-markers.json`
 - **History trails**: `web/data/history-trails.json`
 

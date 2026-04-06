@@ -1,6 +1,6 @@
 ---
 title: "Baber/Jaquette House"
-slug: baber-jaquette-house
+slug: baberjaquette-house
 type: montana-facts
 tags: [history, historic-markers, native-american]
 featured: false
@@ -30,5 +30,5 @@ When the Baders moved to Eureka in 1905, farmer Walter Jaquette bought this home
 
 ## See also
 
-- [Baber/Jaquette House](/historic-markers/baber-jaquette-house/) at Kalispell, Flathead County (Montana Historical Society, erected 2000)
+- [Baber/Jaquette House](/historic-markers/baberjaquette-house/) at Kalispell, Flathead County (Montana Historical Society, erected 2000)
 - West Side Historic District

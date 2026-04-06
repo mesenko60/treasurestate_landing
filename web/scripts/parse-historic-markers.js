@@ -23,6 +23,7 @@ const {
   cleanMarkerInscription,
 } = require('./lib/historic-marker-text');
 
+const MARKER_ARTICLES_DIR = path.join(__dirname, '../../articles_information/markers');
 const CSV_PATH = path.join(__dirname, '../../Historic_markers/Montana_Historic_Markers_Directory.csv');
 const TOWN_COORDS_PATH = path.join(__dirname, '../data/town-coordinates.json');
 const OUTPUT_PATH = path.join(__dirname, '../data/historic-markers.json');
@@ -218,7 +219,21 @@ function normalizeTopics(topicsStr) {
 
 // Determine if marker qualifies for individual page (~150-200 target)
 // Tier3 threshold below 2000 because cleaned inscriptions drop boilerplate length.
+function hasCompanionMarkerArticle(slug) {
+  if (!slug) return false;
+  try {
+    return fs.existsSync(path.join(MARKER_ARTICLES_DIR, `${slug}.md`));
+  } catch {
+    return false;
+  }
+}
+
 function isCuratedMarker(marker) {
+  // Deep-read companion: any marker with a matching markdown file gets its own page.
+  if (hasCompanionMarkerArticle(marker.slug)) {
+    return true;
+  }
+
   const inscriptionLength = marker.inscription.length;
   const topicCount = marker.topics.length;
   
@@ -367,11 +382,6 @@ function main() {
     
     markers.push(marker);
     stats.total++;
-    
-    if (isCuratedMarker(marker)) {
-      curated.push(marker);
-      stats.curated++;
-    }
   }
   
   // Sort markers by title
@@ -389,14 +399,14 @@ function main() {
     }
   }
   
-  // Rebuild curated list with updated slugs
-  const markerById = Object.fromEntries(markers.map(m => [m.id, m]));
+  // Curated list only after final slugs (companion filenames must match these slugs).
   curated.length = 0;
   for (const m of markers) {
     if (isCuratedMarker(m)) {
       curated.push(m);
     }
   }
+  stats.curated = curated.length;
   curated.sort((a, b) => a.title.localeCompare(b.title));
   
   // Write output files
