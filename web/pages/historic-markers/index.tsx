@@ -1,7 +1,9 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import type { GetStaticProps } from 'next';
+import { formatTownNameFromSlug } from '../../lib/townHistoricMarkers';
 import fs from 'fs';
 import path from 'path';
 import dynamic from 'next/dynamic';
@@ -40,16 +42,50 @@ type Props = {
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCounts, countyCounts }: Props) {
+  const router = useRouter();
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
   const popupDeepRead = selectedMarker ? MARKER_DEEP_READS[selectedMarker.slug] : undefined;
   const [topicFilter, setTopicFilter] = useState<string>('');
   const [countyFilter, setCountyFilter] = useState<string>('');
+  const [townSlugFilter, setTownSlugFilter] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState('');
   const [viewState, setViewState] = useState({
     latitude: 46.8,
     longitude: -110.5,
     zoom: 5.5,
   });
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    const q = router.query;
+    const t = q.town;
+    const c = q.county;
+    if (typeof t === 'string' && t.trim()) setTownSlugFilter(t.trim());
+    if (typeof c === 'string' && c.trim()) setCountyFilter(c.trim());
+  }, [router.isReady, router.query.town, router.query.county]);
+
+  const filteredTownName = townSlugFilter ? formatTownNameFromSlug(townSlugFilter) : '';
+
+  useEffect(() => {
+    if (!townSlugFilter || markers.length === 0) return;
+    const subset = markers.filter((m) => m.townSlug === townSlugFilter);
+    if (subset.length === 0) return;
+    let minLat = 90;
+    let maxLat = -90;
+    let minLng = 180;
+    let maxLng = -180;
+    subset.forEach((m) => {
+      minLat = Math.min(minLat, m.lat);
+      maxLat = Math.max(maxLat, m.lat);
+      minLng = Math.min(minLng, m.lng);
+      maxLng = Math.max(maxLng, m.lng);
+    });
+    const lat = (minLat + maxLat) / 2;
+    const lng = (minLng + maxLng) / 2;
+    const span = Math.max(maxLat - minLat, maxLng - minLng, 0.04);
+    const zoom = Math.min(11, Math.max(7.2, 9.2 - Math.log2(span * 25)));
+    setViewState({ latitude: lat, longitude: lng, zoom });
+  }, [townSlugFilter, markers]);
 
   const url = 'https://treasurestate.com/historic-markers/';
   const title = 'Montana Historic Markers Explorer';
@@ -62,6 +98,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
 
   const filteredMarkers = useMemo(() => {
     return markers.filter(m => {
+      if (townSlugFilter && m.townSlug !== townSlugFilter) return false;
       if (topicFilter && !m.topics.includes(topicFilter)) return false;
       if (countyFilter && m.county !== countyFilter) return false;
       if (searchQuery) {
@@ -72,7 +109,15 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
       }
       return true;
     });
-  }, [markers, topicFilter, countyFilter, searchQuery]);
+  }, [markers, townSlugFilter, topicFilter, countyFilter, searchQuery]);
+
+  const clearAllFilters = useCallback(() => {
+    setTopicFilter('');
+    setCountyFilter('');
+    setTownSlugFilter('');
+    setSearchQuery('');
+    router.replace('/historic-markers/', undefined, { shallow: true });
+  }, [router]);
 
   const visibleMarkers = useMemo(() => {
     return filteredMarkers.slice(0, 500);
@@ -205,6 +250,24 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
               </select>
             </div>
 
+            {townSlugFilter && (
+              <div
+                className="filter-section"
+                style={{
+                  padding: '0.65rem 0.75rem',
+                  background: '#f4f8f5',
+                  borderRadius: '8px',
+                  border: '1px solid #dce8dc',
+                }}
+              >
+                <div style={{ fontSize: '0.78rem', color: '#666', marginBottom: '0.25rem' }}>Town (from link)</div>
+                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#204051' }}>{filteredTownName}</div>
+                <div style={{ fontSize: '0.75rem', color: '#888', marginTop: '0.35rem' }}>
+                  Showing markers matched to this community in the statewide dataset.
+                </div>
+              </div>
+            )}
+
             <div className="filter-stats">
               Showing {filteredMarkers.length.toLocaleString()} of {markers.length.toLocaleString()} markers
               {filteredMarkers.length > 500 && (
@@ -214,11 +277,8 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
               )}
             </div>
 
-            {(topicFilter || countyFilter || searchQuery) && (
-              <button
-                className="clear-filters"
-                onClick={() => { setTopicFilter(''); setCountyFilter(''); setSearchQuery(''); }}
-              >
+            {(topicFilter || countyFilter || townSlugFilter || searchQuery) && (
+              <button type="button" className="clear-filters" onClick={clearAllFilters}>
                 Clear all filters
               </button>
             )}
@@ -320,12 +380,12 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
 
         <section className="markers-list">
           <h2>
-            {searchQuery || topicFilter || countyFilter
+            {searchQuery || topicFilter || countyFilter || townSlugFilter
               ? `Filtered Results (${filteredMarkers.length})`
               : 'Featured Markers'}
           </h2>
           <div className="markers-grid">
-            {(searchQuery || topicFilter || countyFilter ? filteredMarkers.slice(0, 24) : markers.filter(m => curatedSet.has(m.slug)).slice(0, 12)).map(m => (
+            {(searchQuery || topicFilter || countyFilter || townSlugFilter ? filteredMarkers.slice(0, 24) : markers.filter(m => curatedSet.has(m.slug)).slice(0, 12)).map(m => (
               <div
                 key={m.id}
                 className="marker-card"

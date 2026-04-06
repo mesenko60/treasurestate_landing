@@ -18,6 +18,7 @@ import CrossHubLinks from '../../../components/town/CrossHubLinks';
 import { clusterConfigs, getClusterConfig } from '../../../components/town/cluster-data';
 import { getRelatedTowns, getTownNameFromSlug } from '../../../lib/towns';
 import { filterNearbyRecreation } from '../../../lib/recreation';
+import { townHistoricMarkersDirectoryHref } from '../../../lib/townHistoricMarkers';
 
 const topicComponents: Record<string, Record<string, ComponentType<any>>> = {
   missoula: {
@@ -596,6 +597,25 @@ export default function TopicPage(props: Props) {
             />
           )}
           {content}
+          <div
+            style={{
+              margin: '1.75rem 0',
+              padding: '1rem 1.25rem',
+              background: '#faf8f4',
+              borderRadius: '10px',
+              border: '1px solid #ebe4d8',
+            }}
+          >
+            <Link
+              href={townHistoricMarkersDirectoryHref(slug)}
+              style={{ fontSize: '0.95rem', fontWeight: 700, color: '#204051', textDecoration: 'none' }}
+            >
+              Historic markers &amp; deep research stories near {townName} →
+            </Link>
+            <p style={{ margin: '0.45rem 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>
+              Map of markers in the area, full marker pages, and long-form companion articles where published.
+            </p>
+          </div>
           <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
           {!getClusterConfig(slug) && (
             <div style={{ margin: '2rem 0', padding: '1.25rem 1.5rem', background: '#f0f7fa', borderRadius: '10px', border: '1px solid #d4e4ec' }}>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getClusterConfig } from './cluster-data';
+import { townHistoricMarkersDirectoryHref } from '../../lib/townHistoricMarkers';
 
 type Props = {
   slug: string;
@@ -56,6 +57,16 @@ export default function RelatedGuides({ slug, townName, currentTopic }: Props) {
           }}
         >
           Where to Stay in {townName} &rarr;
+        </Link>
+        <span style={{ color: '#ccc' }}>|</span>
+        <Link
+          href={townHistoricMarkersDirectoryHref(slug)}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
+            color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none',
+          }}
+        >
+          Historic markers &amp; deep reads &rarr;
         </Link>
         <span style={{ color: '#ccc' }}>|</span>
         <Link
