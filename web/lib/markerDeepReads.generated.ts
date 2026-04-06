@@ -488,6 +488,11 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     title: "Road to the Buffalo — full narrative",
     description: "Road to the Buffalo",
   },
+  "road-to-the-buffalo-2": {
+    href: "/information/road-to-the-buffalo-2/",
+    title: "Road to the Buffalo — full narrative",
+    description: "David Thompson, Saleesh House at Thompson Falls, and the fur-trade era that reshaped Salish country—from beaver wealth to Fort Connah.",
+  },
   "road-to-the-buffalo-3": {
     href: "/information/road-to-the-buffalo/",
     title: "Road to the Buffalo — full narrative",
