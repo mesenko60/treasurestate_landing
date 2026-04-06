@@ -4,8 +4,10 @@ This rule documents the process for adding a companion "deep read" article that 
 
 ## File locations
 
-- **Article markdown**: `articles_information/markers/<slug>.md`
-- **Deep-read registry**: `web/lib/markerDeepReads.ts`
+- **Article markdown**: `articles_information/markers/<slug>.md` (filename should match the marker `slug` in `historic-markers-curated.json`, or the base slug before a numeric suffix like `-2`)
+- **Deep-read links (auto)**: `web/lib/markerDeepReads.generated.ts` — regenerated on every `npm run prebuild` from curated markers + marker article files
+- **Deep-read overrides**: `web/lib/markerDeepReads.ts` — shared type in `markerDeepReadsTypes.ts`; use for clusters (e.g. several markers → one article) that should not be overwritten by the generator
+- **Batch tooling**: `web/scripts/normalize-marker-articles.mjs` (dedupe/rename), `web/scripts/add-marker-article-frontmatter.mjs` (prepend frontmatter to files missing `---`), `web/scripts/generate-marker-deep-reads.mjs` (writes the generated map)
 - **Marker data**: `web/data/historic-markers.json`
 - **History trails**: `web/data/history-trails.json`
 
@@ -13,7 +15,7 @@ This rule documents the process for adding a companion "deep read" article that 
 
 ### 1. Create the article file
 
-Place the markdown file in `articles_information/markers/`. The filename should match the marker slug (e.g., `lewis-and-clark-in-salish-territory-123385.md`).
+Place the markdown file in `articles_information/markers/`. The filename should match the marker slug in `historic-markers-curated.json` (e.g. `lewis-and-clark-in-salish-territory.md`). Use frontmatter `slug` when the public URL must differ (e.g. `slug: lewis-and-clark-in-salish-territory-123385`).
 
 **Required frontmatter:**
 
@@ -50,17 +52,9 @@ Confirm the marker slug matches what you'll use in `markerDeepReads.ts`.
 
 ### 3. Link article to marker page
 
-Edit `web/lib/markerDeepReads.ts` and add an entry:
+If the marker is **curated** and the article file exists at `articles_information/markers/<marker-slug>.md` (or `<base-slug>.md` when the marker slug ends with `-2`, `-3`, etc.), **`prebuild` adds the deep-read link automatically** via `generate-marker-deep-reads.mjs`.
 
-```typescript
-'marker-slug-with-id': {
-  href: '/information/marker-slug-with-id/',
-  title: 'Article Title — full narrative',
-  description: "Brief description of what the article covers.",
-},
-```
-
-**Important:** Use double quotes (`"`) for strings containing apostrophes to avoid TypeScript parse errors.
+For **several markers → one article** (e.g. the 1910 fire cluster), add or adjust entries in `web/lib/markerDeepReads.ts` under `MARKER_DEEP_READS_FIRE` (those override the auto map). Use marker slugs **without** legacy `-12345` URL suffixes—they must match `m.slug` from `historic-markers-curated.json`.
 
 ### 4. Check if marker is in a history trail
 
@@ -85,11 +79,11 @@ cd web && npm run build
 ### 6. Commit and push
 
 ```bash
-git add articles_information/markers/<file>.md web/lib/markerDeepReads.ts web/public/search-index.json
+git add articles_information/markers/<file>.md web/lib/markerDeepReads.ts web/lib/markerDeepReads.generated.ts web/public/search-index.json
 git commit -m "Add <title> deep-read article
 
 Marker companion article at /information/<slug>/
-linked from the historic marker page via markerDeepReads.ts."
+linked from the historic marker page (auto-generated map or override in markerDeepReads.ts)."
 git push
 ```
 
@@ -99,7 +93,7 @@ git push
 - [ ] Frontmatter complete (title, slug, meta_description, related_towns, dates)
 - [ ] Content ≥600 words with ≥2 internal links
 - [ ] "See also" section links to marker + related towns
-- [ ] Entry added to `web/lib/markerDeepReads.ts`
+- [ ] Curated marker slug matches article filename (or override / cluster entry in `web/lib/markerDeepReads.ts`); `markerDeepReads.generated.ts` updated by `prebuild`
 - [ ] Build succeeds (`npm run build`)
 - [ ] Article in sitemap and search index
 - [ ] Deep-read link visible on marker page
@@ -107,9 +101,4 @@ git push
 
 ## Scaling notes
 
-When the number of deep-read articles grows large, consider:
-1. Moving `MARKER_DEEP_READS` to a JSON data file
-2. Auto-generating links from frontmatter `related_marker_slugs: [...]`
-3. Build-time reverse lookup (marker page queries articles that reference it)
-
-For now, manual registry in `markerDeepReads.ts` works for dozens of articles.
+Curated markers with a matching `articles_information/markers/<slug>.md` file are linked automatically. Remaining gaps (marker slug ≠ filename, non-curated markers) still need manual overrides in `markerDeepReads.ts` or filename/slug alignment.
