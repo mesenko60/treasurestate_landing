@@ -28,6 +28,7 @@ These are pulled from data files or build output—new entries are included auto
 - **Towns** — from `cities_towns_list/towns.txt`
 - **Corridors** — from `web/data/corridors.json`
 - **Hot springs** — from `web/data/hot-springs.json`
+- **Golf courses** — from `web/data/golf-courses.json`
 - **Campgrounds** — from `web/data/campgrounds.json`
 - **Trails** — from `web/data/hiking.json`
 - **Moving guides** — one per town (from towns list)

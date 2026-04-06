@@ -25,6 +25,7 @@ const SECTIONS = [
       { href: '/guides/wildlife-guide', label: 'Wildlife Viewing Guide', desc: 'Bears, wolves, bison, elk & 15 verified sites' },
       { href: '/guides/photography-guide', label: "Photographer's Guide", desc: '18 locations with GPS, best times & gear tips' },
       { href: '/guides/hot-springs-guide', label: 'Hot Springs Guide', desc: '20+ natural hot springs with ratings & maps' },
+      { href: '/guides/golf-courses-guide', label: 'Montana Golf Courses', desc: 'Statewide directory — map, par, yardage & directions' },
       { href: '/guides/campgrounds-guide', label: 'Campgrounds & RV Parks', desc: 'Directory from Montana places database — KOAs, RV parks, and more' },
       { href: '/guides/montana-backroads', label: 'Montana Backroads Guide', desc: 'Scenic routes off the beaten path' },
       { href: '/guides/summer-road-trips', label: 'Summer Road Trips', desc: 'Best scenic drives June\u2013September' },

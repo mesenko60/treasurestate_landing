@@ -334,6 +334,7 @@ export default function HotSpringsGuide({ resorts, community, primitive, nearBor
         <div className="hs-cta">
           <Link href="/best-of/towns-near-hot-springs" className="hs-cta-primary">Top 10 Towns Near Hot Springs</Link>
           <Link href="/guides/fly-fishing-guide" className="hs-cta-secondary">Fly Fishing Guide</Link>
+          <Link href="/guides/golf-courses-guide" className="hs-cta-secondary">Montana Golf Courses</Link>
           <Link href="/montana-towns" className="hs-cta-secondary">Browse All 134 Towns</Link>
         </div>
       </main>

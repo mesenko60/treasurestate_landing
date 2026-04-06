@@ -144,7 +144,7 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     // Manually add key guides first
     const keyGuides = [
       'montana-backroads', 'fly-fishing-guide', 'fly-fishing-rivers', 'hot-springs-guide',
-      'campgrounds-guide', 'hiking-guide', 'hunting-guide', 'skiing-guide', 'state-parks-guide',
+      'golf-courses-guide', 'campgrounds-guide', 'hiking-guide', 'hunting-guide', 'skiing-guide', 'state-parks-guide',
       'wildlife-guide', 'photography-guide', 'summer-road-trips', 'winter-driving-guide', 'bitterroot-valley'
     ];
     for (const g of keyGuides) {

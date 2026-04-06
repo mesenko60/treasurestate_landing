@@ -54,7 +54,7 @@ export default function Planners() {
             Looking for Travel Guides?
           </h3>
           <p style={{ fontSize: '0.95rem', color: '#666', marginBottom: '1rem' }}>
-            Skiing, fly fishing, hiking, hunting, state parks, wildlife viewing, and more &mdash;
+            Skiing, golf, fly fishing, hiking, hunting, state parks, wildlife viewing, and more &mdash;
             browse all our Montana travel and relocation guides.
           </p>
           <Link
@@ -67,6 +67,13 @@ export default function Planners() {
           >
             Browse All Guides &rarr;
           </Link>
+          <p style={{ fontSize: '0.88rem', color: '#666', marginTop: '1rem', marginBottom: 0 }}>
+            New:{' '}
+            <Link href="/guides/golf-courses-guide" style={{ color: '#3b6978', fontWeight: 600 }}>
+              Montana golf course directory
+            </Link>{' '}
+            — every course with map and town links.
+          </p>
         </section>
       </main>
       <Footer />

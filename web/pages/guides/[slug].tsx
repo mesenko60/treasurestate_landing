@@ -23,7 +23,7 @@ import {
 /* ─── Hardcoded guide pages (handled by their own .tsx files) ─── */
 const HARDCODED_GUIDE_SLUGS = [
   'bitterroot-valley', 'campgrounds-guide', 'fly-fishing-guide', 'fly-fishing-rivers',
-  'hiking-guide', 'hot-springs-guide', 'hunting-guide', 'montana-backroads',
+  'golf-courses-guide', 'hiking-guide', 'hot-springs-guide', 'hunting-guide', 'montana-backroads',
   'photography-guide', 'skiing-guide', 'state-parks-guide', 'summer-road-trips',
   'wildlife-guide', 'winter-driving-guide',
 ];

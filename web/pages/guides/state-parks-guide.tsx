@@ -366,6 +366,7 @@ export default function StateParksGuide({ parks, contentHtml }: Props) {
           <Link href="/guides/photography-guide" className="guide-cta-secondary">Photography Guide</Link>
           <Link href="/guides/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
           <Link href="/guides/hiking-guide" className="guide-cta-secondary">Hiking Guide</Link>
+          <Link href="/guides/golf-courses-guide" className="guide-cta-secondary">Montana Golf Courses</Link>
           <Link href="/montana-towns" className="guide-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

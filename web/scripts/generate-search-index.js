@@ -137,6 +137,7 @@ function walkMarkdownFilesSorted(absDir) {
     { title: 'Fly Fishing Guide', desc: "Montana's trout legacy. Madison, Gallatin, Yellowstone, Missouri rivers.", url: '/guides/fly-fishing-guide/', kw: 'fly fishing trout rainbow brown cutthroat brook bull rivers angling' },
     { title: 'Fly Fishing Rivers Deep Dive', desc: 'Madison, Bitterroot, Big Hole, Gallatin, Yellowstone, Flathead, Missouri', url: '/guides/fly-fishing-rivers/', kw: 'rivers deep dive Madison Bitterroot Big Hole Gallatin Yellowstone Flathead Missouri alpine lakes westslope cutthroat Skwala hatch' },
     { title: 'Hot Springs Guide', desc: 'Natural and developed geothermal hot springs across Montana', url: '/guides/hot-springs-guide/', kw: 'hot springs soaking geothermal resort primitive' },
+    { title: 'Montana Golf Courses Directory', desc: 'All Montana golf courses with map, holes, par, yardage, and town links', url: '/guides/golf-courses-guide/', kw: 'golf course Montana public golf resort golf tee times driving range' },
     { title: 'Campgrounds & RV Parks', desc: `${campgroundCount} campgrounds and RV parks across Montana (Supabase places)`, url: '/guides/campgrounds-guide/', kw: 'campground camping RV park tent KOA state park national forest' },
     { title: 'Hiking Guide', desc: "Montana's best trails, wilderness areas, and national park hikes", url: '/guides/hiking-guide/', kw: 'hiking trails trailhead wilderness backpacking state park national park' },
     { title: 'Montana Hunting Guide', desc: 'Seasons, licenses, WMAs, and public land access for deer, elk, antelope, bear, turkey, and more', url: '/guides/hunting-guide/', kw: 'hunting elk deer antelope bear turkey grouse waterfowl WMA FWP license season public land' },
@@ -212,6 +213,24 @@ function walkMarkdownFilesSorted(absDir) {
         keywords: `${hs.name} ${hs.nearestTownName || ''} hot spring ${hs.type || ''} ${hs.location || ''} soaking geothermal`,
       });
     }
+  }
+
+  // ═══ 7b. INDIVIDUAL GOLF COURSES ═══
+  const golfData = loadJson(path.join(dataDir, 'golf-courses.json'));
+  const golfCourses = golfData && Array.isArray(golfData.courses) ? golfData.courses : [];
+  for (const gc of golfCourses) {
+    const name = gc.course_name || '';
+    const city = gc.city || '';
+    const holes = gc.holes != null ? `${gc.holes} holes` : '';
+    const par = gc.par != null ? `Par ${gc.par}` : '';
+    const ctype = gc.course_type || '';
+    entries.push({
+      type: 'golf-course',
+      title: name,
+      description: [city, holes, par, ctype].filter(Boolean).join(' · '),
+      url: '/guides/golf-courses-guide/',
+      keywords: `${name} ${city} Montana golf course ${ctype} ${gc.county || ''}`.trim(),
+    });
   }
 
   // ═══ 8. INDIVIDUAL CAMPGROUNDS ═══

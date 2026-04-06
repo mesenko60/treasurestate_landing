@@ -2001,6 +2001,13 @@
         "lat": 45.7574573,
         "lng": -112.6507195,
         "distMiles": 30
+      },
+      {
+        "name": "Fairmont Hot Springs Resort Golf Course",
+        "type": "Golf",
+        "lat": 46.041592,
+        "lng": -112.814758,
+        "distMiles": 9
       }
     ]
   },
@@ -2158,6 +2165,13 @@
         "lat": 46.04444,
         "lng": -104.47134,
         "distMiles": 24
+      },
+      {
+        "name": "Lakeview Country Club",
+        "type": "Golf",
+        "lat": 46.347492,
+        "lng": -104.270531,
+        "distMiles": 1
       }
     ]
   },
@@ -5522,6 +5536,27 @@
         "lat": 44.9631,
         "lng": -111.7659,
         "distMiles": 30
+      },
+      {
+        "name": "Big Sky Resort Golf Course",
+        "type": "Golf",
+        "lat": 45.2861,
+        "lng": -111.3197,
+        "distMiles": 2
+      },
+      {
+        "name": "Spanish Peaks Mountain Club",
+        "type": "Golf",
+        "lat": 45.25602,
+        "lng": -111.38716,
+        "distMiles": 4
+      },
+      {
+        "name": "Yellowstone Club",
+        "type": "Golf",
+        "lat": 45.245804,
+        "lng": -111.374532,
+        "distMiles": 3
       }
     ]
   },
@@ -7539,6 +7574,34 @@
         "lat": 46.1044,
         "lng": -108.88321,
         "distMiles": 29
+      },
+      {
+        "name": "Exchange City Par 3",
+        "type": "Golf",
+        "lat": 45.7702,
+        "lng": -108.5638,
+        "distMiles": 3
+      },
+      {
+        "name": "Lake Hills Golf Club",
+        "type": "Golf",
+        "lat": 45.787636,
+        "lng": -108.489304,
+        "distMiles": 1
+      },
+      {
+        "name": "Pryor Creek Golf Club",
+        "type": "Golf",
+        "lat": 45.842407,
+        "lng": -108.296997,
+        "distMiles": 10
+      },
+      {
+        "name": "The Briarwood Golf Club",
+        "type": "Golf",
+        "lat": 45.719098,
+        "lng": -108.506933,
+        "distMiles": 5
       }
     ]
   },
@@ -9194,6 +9257,27 @@
         "lat": 45.2649482,
         "lng": -111.2542198,
         "distMiles": 30
+      },
+      {
+        "name": "Black Bull Golf Course",
+        "type": "Golf",
+        "lat": 45.687546,
+        "lng": -111.157096,
+        "distMiles": 5
+      },
+      {
+        "name": "Cottonwood Hills Golf Club",
+        "type": "Golf",
+        "lat": 45.673948,
+        "lng": -111.222838,
+        "distMiles": 9
+      },
+      {
+        "name": "Riverside Country Club",
+        "type": "Golf",
+        "lat": 45.727461,
+        "lng": -111.06848,
+        "distMiles": 4
       }
     ]
   },
@@ -11123,6 +11207,20 @@
         "lat": 46.3889,
         "lng": -112.856,
         "distMiles": 30
+      },
+      {
+        "name": "Butte Country Club",
+        "type": "Golf",
+        "lat": 45.970482,
+        "lng": -112.487797,
+        "distMiles": 4
+      },
+      {
+        "name": "Highland View Golf Course",
+        "type": "Golf",
+        "lat": 45.979178,
+        "lng": -112.524193,
+        "distMiles": 2
       }
     ]
   },
@@ -11740,6 +11838,13 @@
         "lat": 48.31694,
         "lng": -109.6577,
         "distMiles": 27
+      },
+      {
+        "name": "Chinook Golf & Country Club",
+        "type": "Golf",
+        "lat": 48.57985,
+        "lng": -109.22246,
+        "distMiles": 1
       }
     ]
   },
@@ -14355,6 +14460,13 @@
         "lat": 48.6872091,
         "lng": -113.74167,
         "distMiles": 30
+      },
+      {
+        "name": "Meadow Lake Golf Course",
+        "type": "Golf",
+        "lat": 48.388853,
+        "lng": -114.209294,
+        "distMiles": 2
       }
     ]
   },
@@ -14815,6 +14927,13 @@
         "lat": 45.4362037,
         "lng": -109.7970179,
         "distMiles": 30
+      },
+      {
+        "name": "Stillwater Golf Course",
+        "type": "Golf",
+        "lat": 45.630558,
+        "lng": -109.244293,
+        "distMiles": 1
       }
     ]
   },
@@ -15009,6 +15128,13 @@
         "lat": 47.81,
         "lng": -112.23,
         "distMiles": 28
+      },
+      {
+        "name": "Pondera Golf Course",
+        "type": "Golf",
+        "lat": 48.171297,
+        "lng": -111.968999,
+        "distMiles": 1
       }
     ]
   },
@@ -17486,6 +17612,20 @@
         "lat": 45.7574573,
         "lng": -112.6507195,
         "distMiles": 30
+      },
+      {
+        "name": "Deer Park Golf Course",
+        "type": "Golf",
+        "lat": 46.387577,
+        "lng": -112.774051,
+        "distMiles": 26
+      },
+      {
+        "name": "Rock Creek Cattle Company",
+        "type": "Golf",
+        "lat": 46.483996,
+        "lng": -112.829772,
+        "distMiles": 31
       }
     ]
   },
@@ -20302,6 +20442,13 @@
         "lat": 48.727474,
         "lng": -113.72487,
         "distMiles": 30
+      },
+      {
+        "name": "Glacier Park Lodge Golf Course",
+        "type": "Golf",
+        "lat": 48.443116,
+        "lng": -113.221835,
+        "distMiles": 1
       }
     ]
   },
@@ -21647,6 +21794,13 @@
         "lat": 45.5,
         "lng": -111.15,
         "distMiles": 30
+      },
+      {
+        "name": "Madison Meadows Golf Course",
+        "type": "Golf",
+        "lat": 45.360459,
+        "lng": -111.748238,
+        "distMiles": 1
       }
     ]
   },
@@ -22058,6 +22212,20 @@
         "lat": 48.93134,
         "lng": -115.71713,
         "distMiles": 30
+      },
+      {
+        "name": "Indian Springs Ranch Golf Course",
+        "type": "Golf",
+        "lat": 48.877199,
+        "lng": -115.04875,
+        "distMiles": 1
+      },
+      {
+        "name": "Wilderness Club",
+        "type": "Golf",
+        "lat": 48.932045,
+        "lng": -115.144035,
+        "distMiles": 5
       }
     ]
   },
@@ -22951,6 +23119,13 @@
         "lat": 47.47,
         "lng": -111.06,
         "distMiles": 30
+      },
+      {
+        "name": "Signal Point Golf Club",
+        "type": "Golf",
+        "lat": 47.836933,
+        "lng": -110.644545,
+        "distMiles": 2
       }
     ]
   },
@@ -26017,6 +26192,13 @@
         "lat": 47.4533487,
         "lng": -104.3413321,
         "distMiles": 30
+      },
+      {
+        "name": "Cottonwood Country Club",
+        "type": "Golf",
+        "lat": 47.1265,
+        "lng": -104.7467,
+        "distMiles": 2
       }
     ]
   },
@@ -27789,6 +27971,13 @@
         "lat": 46.1674,
         "lng": -113.5467,
         "distMiles": 30
+      },
+      {
+        "name": "Stock Farm Club",
+        "type": "Golf",
+        "lat": 46.255508,
+        "lng": -114.052738,
+        "distMiles": 5
       }
     ]
   },
@@ -28278,6 +28467,20 @@
         "lat": 48.5698,
         "lng": -110.3108,
         "distMiles": 29
+      },
+      {
+        "name": "Beaver Creek Golf Course",
+        "type": "Golf",
+        "lat": 48.56615,
+        "lng": -109.605764,
+        "distMiles": 3
+      },
+      {
+        "name": "Prairie Farms Golf Course",
+        "type": "Golf",
+        "lat": 48.57447,
+        "lng": -109.606021,
+        "distMiles": 4
       }
     ]
   },
@@ -29025,6 +29228,13 @@
         "lat": 46.8937757,
         "lng": -112.4949892,
         "distMiles": 30
+      },
+      {
+        "name": "Bill Roberts Golf Course",
+        "type": "Golf",
+        "lat": 46.608297,
+        "lng": -112.033455,
+        "distMiles": 1
       }
     ]
   },
@@ -32080,6 +32290,27 @@
         "lat": 47.9098763,
         "lng": -113.8344359,
         "distMiles": 30
+      },
+      {
+        "name": "Buffalo Hill Golf Club",
+        "type": "Golf",
+        "lat": 48.2139,
+        "lng": -114.31541,
+        "distMiles": 1
+      },
+      {
+        "name": "Northern Pines Golf Club",
+        "type": "Golf",
+        "lat": 48.233294,
+        "lng": -114.325965,
+        "distMiles": 2
+      },
+      {
+        "name": "Village Greens Golf Course",
+        "type": "Golf",
+        "lat": 48.230517,
+        "lng": -114.300964,
+        "distMiles": 2
       }
     ]
   },
@@ -33337,6 +33568,13 @@
         "lat": 47.9598684,
         "lng": -115.479784,
         "distMiles": 30
+      },
+      {
+        "name": "Cabinet View Golf Club",
+        "type": "Golf",
+        "lat": 48.370269,
+        "lng": -115.550965,
+        "distMiles": 1
       }
     ]
   },
@@ -34502,6 +34740,20 @@
         "lat": 45.4264,
         "lng": -110.0467,
         "distMiles": 30
+      },
+      {
+        "name": "Livingston Golf Course",
+        "type": "Golf",
+        "lat": 45.6588,
+        "lng": -110.5471,
+        "distMiles": 1
+      },
+      {
+        "name": "Rising Sun Golf Course",
+        "type": "Golf",
+        "lat": 45.3702,
+        "lng": -110.7335,
+        "distMiles": 22
       }
     ]
   },
@@ -34736,6 +34988,13 @@
         "lat": 48.09972,
         "lng": -108.25402,
         "distMiles": 25
+      },
+      {
+        "name": "Marian Hills Golf Course",
+        "type": "Golf",
+        "lat": 48.345261,
+        "lng": -107.885063,
+        "distMiles": 1
       }
     ]
   },
@@ -35610,6 +35869,13 @@
         "lat": 46.74306,
         "lng": -105.43249,
         "distMiles": 30
+      },
+      {
+        "name": "Town & Country Club of Miles City",
+        "type": "Golf",
+        "lat": 46.395836,
+        "lng": -105.845003,
+        "distMiles": 1
       }
     ]
   },
@@ -37071,6 +37337,27 @@
         "lat": 46.4443556,
         "lng": -114.1243933,
         "distMiles": 30
+      },
+      {
+        "name": "Canyon River Golf Club",
+        "type": "Golf",
+        "lat": 46.882875,
+        "lng": -113.917205,
+        "distMiles": 4
+      },
+      {
+        "name": "The Ranch Club",
+        "type": "Golf",
+        "lat": 46.898762,
+        "lng": -114.114221,
+        "distMiles": 6
+      },
+      {
+        "name": "University of Montana Golf Course",
+        "type": "Golf",
+        "lat": 46.847641,
+        "lng": -113.990344,
+        "distMiles": 2
       }
     ]
   },
@@ -40905,6 +41192,13 @@
         "lat": 47.0601028,
         "lng": -115.1158452,
         "distMiles": 30
+      },
+      {
+        "name": "Wild Horse Plains Golf Course",
+        "type": "Golf",
+        "lat": 47.45429,
+        "lng": -114.874886,
+        "distMiles": 1
       }
     ]
   },
@@ -41907,6 +42201,13 @@
         "lat": 48.0687,
         "lng": -113.8656,
         "distMiles": 30
+      },
+      {
+        "name": "Polson Bay Golf Course",
+        "type": "Golf",
+        "lat": 47.692997,
+        "lng": -114.127408,
+        "distMiles": 2
       }
     ]
   },
@@ -43485,6 +43786,13 @@
         "lat": 45.2337,
         "lng": -109.8692,
         "distMiles": 30
+      },
+      {
+        "name": "Red Lodge Mountain Golf Course",
+        "type": "Golf",
+        "lat": 45.202457,
+        "lng": -109.258186,
+        "distMiles": 1
       }
     ]
   },
@@ -44767,6 +45075,13 @@
         "lat": 47.4654,
         "lng": -113.4668,
         "distMiles": 30
+      },
+      {
+        "name": "Mission Mountain Golf Club",
+        "type": "Golf",
+        "lat": 47.539097,
+        "lng": -114.148884,
+        "distMiles": 2
       }
     ]
   },
@@ -44814,6 +45129,13 @@
         "lat": 46.1044,
         "lng": -108.88321,
         "distMiles": 29
+      },
+      {
+        "name": "Pine Ridge Golf Course",
+        "type": "Golf",
+        "lat": 46.461948,
+        "lng": -108.559601,
+        "distMiles": 1
       }
     ]
   },
@@ -49400,6 +49722,13 @@
         "lat": 46.1634,
         "lng": -114.4558,
         "distMiles": 30
+      },
+      {
+        "name": "Whitetail Golf Course",
+        "type": "Golf",
+        "lat": 46.1761,
+        "lng": -114.1177,
+        "distMiles": 23
       }
     ]
   },
@@ -50477,6 +50806,13 @@
         "lat": 47.3124456,
         "lng": -114.8512275,
         "distMiles": 30
+      },
+      {
+        "name": "River's Bend Golf Course",
+        "type": "Golf",
+        "lat": 47.59489,
+        "lng": -115.33834,
+        "distMiles": 1
       }
     ]
   },
@@ -51126,6 +51462,13 @@
         "lat": 46.2808,
         "lng": -111.8251,
         "distMiles": 30
+      },
+      {
+        "name": "Headwaters Golf Course",
+        "type": "Golf",
+        "lat": 45.892598,
+        "lng": -111.541549,
+        "distMiles": 1
       }
     ]
   },
@@ -55949,6 +56292,13 @@
         "lat": 48.6867,
         "lng": -114.5792,
         "distMiles": 30
+      },
+      {
+        "name": "Glacier View Golf Club",
+        "type": "Golf",
+        "lat": 48.501375,
+        "lng": -113.995462,
+        "distMiles": 1
       }
     ]
   },
