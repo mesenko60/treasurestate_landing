@@ -41,7 +41,17 @@ These are pulled from data files or build output—new entries are included auto
 2. If it's a **new page type** (planner, article, tool): update both `generate-search-index.js` and `generate-sitemap.js`.
 3. If it's **new data** (town, corridor, hot spring, etc.): no script changes—next build includes it.
 4. Run `npm run build` in `web/` to regenerate index and sitemap.
-5. Verify: `web/public/search-index.json` and `web/out/sitemap.xml` contain the new content.
+5. Verify: `web/public/search-index.json` contains the new content.
+
+## Sitemap: Where to Look
+
+**DO NOT** trust the local files `web/public/sitemap.xml`, `web/out/sitemap.xml`, or the repo-root `sitemap.xml` — these are stale legacy placeholders (68 URLs from May 2025). They are **never** what gets deployed.
+
+The **real** sitemap is generated fresh on every Netlify build by `web/scripts/generate-sitemap.js`. It produces a sitemap index (`sitemap.xml`) plus split sitemaps (`sitemap-core.xml`, `sitemap-towns.xml`, `sitemap-lodging.xml`, etc.) into `web/out/`.
+
+- **To see the live sitemap:** `curl https://treasurestate.com/sitemap.xml`
+- **To regenerate locally:** `cd web && npm run build` (requires `out/` from `next export`)
+- **Current scale:** ~19,000+ URLs across 11 split sitemaps
 
 ## Reference
 

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated 2025-05-18 – TreasureState.com -->
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  THIS FILE IS A LEGACY PLACEHOLDER — DO NOT EDIT OR TRUST IT.  ║
+  ║                                                                  ║
+  ║  The real sitemap is generated at build time by                   ║
+  ║  web/scripts/generate-sitemap.js into web/out/.                  ║
+  ║  Netlify deploys from web/out/, not from the repo root.          ║
+  ║                                                                  ║
+  ║  To see the live sitemap: curl https://treasurestate.com/sitemap.xml  ║
+  ║  To regenerate locally:   cd web && npm run build                ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<!-- Original: Generated 2025-05-18 – TreasureState.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="

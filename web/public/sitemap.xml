@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated 2025-05-18 – TreasureState.com -->
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  THIS FILE IS A LEGACY PLACEHOLDER — DO NOT EDIT OR TRUST IT.  ║
+  ║                                                                  ║
+  ║  The real sitemap is generated at build time by                   ║
+  ║  web/scripts/generate-sitemap.js, which writes split sitemaps    ║
+  ║  (sitemap-core.xml, sitemap-towns.xml, etc.) and a sitemap       ║
+  ║  index into web/out/. Netlify deploys from out/, so this file    ║
+  ║  is overwritten during every build and never actually served.    ║
+  ║                                                                  ║
+  ║  To see the live sitemap: curl https://treasurestate.com/sitemap.xml  ║
+  ║  To regenerate locally:   cd web && npm run build                ║
+  ║                                                                  ║
+  ║  This file exists only because Next.js copies public/ → out/    ║
+  ║  before the sitemap script runs. It can be deleted safely.       ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<!-- Original: Generated 2025-05-18 – TreasureState.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="
