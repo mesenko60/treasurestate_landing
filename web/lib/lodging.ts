@@ -61,6 +61,69 @@ function stripLodgingMetadata(md: string): { content: string; title: string; tow
   return { content: lines.slice(i).join('\n').trim(), title, townName };
 }
 
+/** Normalize property name for matching table rows to prose lines */
+function lodgingNameKey(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Map property name → booking URL from the Quick Comparison table (first column only).
+ */
+function parseLodgingQuickComparisonUrls(content: string): Map<string, string> {
+  const map = new Map<string, string>();
+  const tableStart = content.indexOf('| Property ');
+  if (tableStart < 0) return map;
+  const tableBlock = content.slice(tableStart);
+  const rows = tableBlock.split('\n').filter((r) => r.trim().startsWith('|'));
+  for (const row of rows) {
+    const cells = row.split('|').map((c) => c.trim()).filter(Boolean);
+    if (cells.length < 5) continue;
+    if (cells[0].toLowerCase() === 'property' || /^[-:|\s]+$/.test(cells[0])) continue;
+    const propCell = cells[0];
+    const linkMatch = propCell.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/);
+    if (linkMatch) map.set(lodgingNameKey(linkMatch[1]), linkMatch[2]);
+  }
+  return map;
+}
+
+/**
+ * Wrap leading **Property Name** on "is located in" / "is situated in" lines with the same
+ * Expedia or VRBO URL used later in that line, or fall back to the Quick Comparison table URL.
+ * Applies site-wide to all town lodging markdown without editing each file.
+ */
+function injectLodgingPropertyNameLinks(content: string): string {
+  const tableUrls = parseLodgingQuickComparisonUrls(content);
+  const lines = content.split('\n');
+  return lines
+    .map((line) => {
+      const indentMatch = line.match(/^(\s*)/);
+      const indent = indentMatch ? indentMatch[1] : '';
+      const trimmed = line.slice(indent.length);
+      if (!trimmed.startsWith('**')) return line;
+      if (/^\[\*\*[^\]]+\*\*\]\(/.test(trimmed)) return line;
+
+      const open = trimmed.match(/^\*\*([^*]+)\*\*/);
+      if (!open) return line;
+      const name = open[1].trim();
+      const afterBold = trimmed.slice(open[0].length);
+      if (!/^\s+is\s+(?:located in|situated in)\b/.test(afterBold)) return line;
+
+      let url: string | undefined;
+      const exp = line.match(/\[Expedia\]\((https:\/\/www\.expedia\.com[^)]+)\)/i);
+      if (exp) url = exp[1];
+      if (!url) {
+        const vrbo = line.match(/\[VRBO\]\((https:\/\/(?:www\.)?vrbo\.com[^)]+)\)/i);
+        if (vrbo) url = vrbo[1];
+      }
+      if (!url) url = tableUrls.get(lodgingNameKey(name));
+      if (!url) return line;
+
+      const rest = trimmed.slice(open[0].length);
+      return `${indent}[**${name}**](${url})${rest}`;
+    })
+    .join('\n');
+}
+
 /** Extract first paragraph as excerpt (plain text, ~160 chars) */
 function extractExcerpt(content: string): string {
   const para = content.split(/\n\n+/)[0] || '';
@@ -124,7 +187,8 @@ export async function readLodgingPage(slug: string): Promise<LodgingPage | null>
 
   const raw = fs.readFileSync(filePath, 'utf8');
   const { content, title, townName } = stripLodgingMetadata(raw);
-  const contentHtml = await markdownToHtml(content, townName || undefined);
+  const contentWithNameLinks = injectLodgingPropertyNameLinks(content);
+  const contentHtml = await markdownToHtml(contentWithNameLinks, townName || undefined);
   const excerpt = extractExcerpt(content);
   const accommodations = extractAccommodations(content);
 
