@@ -16,14 +16,14 @@ This rule documents the process for adding a companion "deep read" article that 
 
 ### 1. Create the article file
 
-Place the markdown file in `articles_information/markers/`. The filename should match the marker slug in `historic-markers-curated.json` (e.g. `lewis-and-clark-in-salish-territory.md`). Use frontmatter `slug` when the public URL must differ (e.g. `slug: lewis-and-clark-in-salish-territory-123385`).
+Place the markdown file in `articles_information/markers/`. The **filename stem** and **frontmatter `slug`** must both equal the marker `slug` in `historic-markers-curated.json` (e.g. `lewis-and-clark-in-salish-territory.md` with `slug: lewis-and-clark-in-salish-territory`). That keeps `/information/<slug>/`, search, and the auto deep-read map consistent. Use `markerDeepReads.ts` overrides for intentional many-markers → one-article cases (e.g. `1910_fire`).
 
 **Required frontmatter:**
 
 ```yaml
 ---
 title: "Article Title"
-slug: marker-slug-with-id
+slug: same-as-filename-stem
 type: montana-facts
 tags: [history, relevant-tags]
 featured: false

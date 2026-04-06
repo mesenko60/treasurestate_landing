@@ -1,6 +1,6 @@
 ---
 title: "Lewis and Clark in Salish Territory"
-slug: lewis-and-clark-in-salish-territory-123385
+slug: lewis-and-clark-in-salish-territory
 type: montana-facts
 tags: [history, lewis-and-clark, native-american, exploration]
 featured: false
@@ -42,6 +42,6 @@ Today, the earth at Travelers Rest still holds the physical memory of their pass
 
 ## See also
 
-- [Lewis and Clark in Salish Territory](/historic-markers/lewis-and-clark-in-salish-territory-123385/) at Lolo, Missoula County (Montana Department of Transportation)
+- [Lewis and Clark in Salish Territory](/historic-markers/lewis-and-clark-in-salish-territory/) at Lolo, Missoula County (Montana Department of Transportation)
 - [Lolo](/montana-towns/lolo/), the modern community at the site of Travelers Rest
 - [Missoula](/montana-towns/missoula/), the major city at the confluence of the Clark Fork and Bitterroot rivers

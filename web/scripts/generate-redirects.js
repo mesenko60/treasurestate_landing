@@ -53,8 +53,15 @@ function main() {
 
   lines.sort();
 
-  fs.writeFileSync(OUT_PATH, lines.join('\n') + '\n', 'utf8');
-  console.log(`Wrote ${lines.length} redirects to ${OUT_PATH}`);
+  /** Legacy /information/ URLs from frontmatter slugs that diverged from marker filenames */
+  const informationRedirects = [
+    '/information/lewis-and-clark-in-salish-territory-123385/  /information/lewis-and-clark-in-salish-territory/  301',
+    '/information/road-to-the-buffalo-plains/  /information/road-to-the-buffalo/  301',
+  ];
+
+  const body = [...lines, '', ...informationRedirects].join('\n') + '\n';
+  fs.writeFileSync(OUT_PATH, body, 'utf8');
+  console.log(`Wrote ${lines.length} marker + ${informationRedirects.length} information redirects to ${OUT_PATH}`);
 }
 
 main();

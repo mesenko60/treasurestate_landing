@@ -364,7 +364,7 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     description: "Lewis and Clark at Ross' Hole",
   },
   "lewis-and-clark-in-salish-territory": {
-    href: "/information/lewis-and-clark-in-salish-territory-123385/",
+    href: "/information/lewis-and-clark-in-salish-territory/",
     title: "Lewis and Clark in Salish Territory — full narrative",
     description: "The Corps of Discovery's crucial encounters with the Salish people at Tmsmli, the Place of No Salmon, before their brutal crossing of the Bitterroot Mountains.",
   },
@@ -484,7 +484,7 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     description: "Retreat Crossing",
   },
   "road-to-the-buffalo": {
-    href: "/information/road-to-the-buffalo-plains/",
+    href: "/information/road-to-the-buffalo/",
     title: "Road to the Buffalo — full narrative",
     description: "Road to the Buffalo",
   },
@@ -494,7 +494,7 @@ export const MARKER_DEEP_READS_AUTO: Record<string, MarkerDeepRead> = {
     description: "David Thompson, Saleesh House at Thompson Falls, and the fur-trade era that reshaped Salish country—from beaver wealth to Fort Connah.",
   },
   "road-to-the-buffalo-3": {
-    href: "/information/road-to-the-buffalo/",
+    href: "/information/road-to-the-buffalo-3/",
     title: "Road to the Buffalo — full narrative",
     description: "Road to the Buffalo",
   },

@@ -1,6 +1,6 @@
 ---
 title: "Road to the Buffalo"
-slug: road-to-the-buffalo-plains
+slug: road-to-the-buffalo
 type: montana-facts
 tags: [history, historic-markers, military, lewis-and-clark, native-american]
 featured: false

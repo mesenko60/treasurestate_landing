@@ -9,6 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '../..');
@@ -30,6 +31,17 @@ function main() {
     if (UMBRELLA_BASENAMES.has(base)) continue;
     if (!slugSet.has(base)) {
       errors.push(`${f}: no marker with slug "${base}" in historic-markers.json (rename file to match marker.slug, or add slug to UMBRELLA_BASENAMES if intentional).`);
+      continue;
+    }
+    const raw = fs.readFileSync(path.join(MARKERS_DIR, f), 'utf8');
+    const { data } = matter(raw);
+    const fmSlug = data.slug != null ? String(data.slug).trim() : '';
+    if (!fmSlug) {
+      errors.push(`${f}: frontmatter slug is required and must equal filename stem "${base}" (for /information/ URL and deep-read href).`);
+    } else if (fmSlug !== base) {
+      errors.push(
+        `${f}: frontmatter slug "${fmSlug}" must equal filename stem "${base}" (deep read and /information/[slug] use the same slug).`,
+      );
     }
   }
 

@@ -1,6 +1,6 @@
 ---
 title: "Road to the Buffalo"
-slug: road-to-the-buffalo
+slug: road-to-the-buffalo-3
 type: montana-facts
 tags: [history, historic-markers, military, lewis-and-clark, native-american]
 featured: false
@@ -26,5 +26,5 @@ When Meriwether Lewis and his party crossed this divide on July 3, 1806, they di
 
 ## See also
 
-- [Road to the Buffalo](/historic-markers/road-to-the-buffalo-3/) at Lincoln, Lewis and Clark County (Lewis & Clark National Historic Trail, erected 2022)
+- [Road to the Buffalo](/historic-markers/road-to-the-buffalo/) at Plains, Sanders County (companion marker on the same ancient trail network)
 - [Crossing Lewis and Clark Pass](/historic-markers/crossing-lewis-and-clark-pass/) for more on the expedition's return journey.
