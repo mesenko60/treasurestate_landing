@@ -228,9 +228,20 @@ function hasCompanionMarkerArticle(slug) {
   }
 }
 
+/** Markers that use the shared `1910_fire` article in markerDeepReads.ts (no stub .md). */
+const UMBRELLA_1910_MARKER_SLUGS = new Set([
+  'building-from-the-ashes',
+  'pluck-and-good-fortune',
+  'sliderock-lookout-tower',
+]);
+
 function isCuratedMarker(marker) {
   // Deep-read companion: any marker with a matching markdown file gets its own page.
   if (hasCompanionMarkerArticle(marker.slug)) {
+    return true;
+  }
+
+  if (UMBRELLA_1910_MARKER_SLUGS.has(marker.slug)) {
     return true;
   }
 

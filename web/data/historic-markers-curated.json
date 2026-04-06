@@ -1291,6 +1291,30 @@
     ]
   },
   {
+    "id": "45509",
+    "slug": "building-from-the-ashes",
+    "title": "Building From the Ashes",
+    "subtitle": null,
+    "lat": 47.39632,
+    "lng": -115.63498,
+    "town": "East Portal",
+    "townSlug": null,
+    "county": "Mineral",
+    "inscription": "“All that remained was to salvage what material that could be salvaged from the disaster, and reorganize for a new start.” - Clarence B. Swim, Assistant Forester\n\nAs the railroad operated rescue trains, Missoula residents met the refugees at the station offering food, clothing and lodging. When the rains came and the fires died down, the relief committee provided tents and supplies so families could return to rebuild their homes and lives. In spite of the widespread devastation, most western Montana communities rose again after the 1910 Fires.\n\nThe forests proved equally resilient. After the fall rain came the winter snow followed by new life in spring. Wildflowers bloomed in the summer, and shrubs and trees thrived and grew. Each year the landscapes progressively recovered as they always do after a fire. The fledgling Forest Service also healed over time, renewing its commitment to the protection of the nation’s forests and investing in research to better understand fire.\n\nThese early 20th century men believed they could stop all fires if they just worked hard enough. The 1910 Fires changed everything.\n\nErected 2010 by Lolo National Forest.",
+    "topics": [
+      "disasters"
+    ],
+    "yearErected": "2010",
+    "erectedBy": "Lolo National Forest",
+    "nearbyMarkers": [
+      "An Unlikely Safe Haven",
+      "Douse the Flames and Climb Aboard",
+      "When the Mountains Roared",
+      "A Battle That Could Not Be Won",
+      "Pluck and Good Fortune"
+    ]
+  },
+  {
     "id": "184260",
     "slug": "butte",
     "title": "Butte",
@@ -5492,6 +5516,30 @@
     ]
   },
   {
+    "id": "45503",
+    "slug": "pluck-and-good-fortune",
+    "title": "Pluck and Good Fortune",
+    "subtitle": null,
+    "lat": 47.39654,
+    "lng": -115.6349,
+    "town": "East Portal",
+    "townSlug": null,
+    "county": "Mineral",
+    "inscription": "“I won’t die here in this creek… [I’m] getting out of here.” - Pinkie Adair, homesteader and camp cook\n\nDuring the 1910 Fires, perseverance often meant the difference between life and death. At 26 years old, Ione “Pinkie” Adair could ride, shoot and cook. She lived about 10 miles from where you are standing. When a fire crew set up camp nearby, Adair hired on to cook for the 74 men, including 60 prisoners released from jail to fight the fires.\n\nOn August 20, heavy smoke descended into their camp. The ranger ordered everyone to take blankets into the river and cover their heads. They all did as ordered and ran for the water as the fire roared and trees crashed to the ground around them. But Pinkie would not stay. She scrambled up and over the riverbank and disappeared.\n\nThirty miles away, Pinkie finally staggered into Avery, Idaho, as the last train was leaving. The engineer spotted the exhausted young woman with singed eyebrows and tattered clothes and told her to climb aboard. Clinging tightly to the caboose, Pinkie rode to safety.\n\nErected 2010 by Lolo National Forest.",
+    "topics": [
+      "disasters"
+    ],
+    "yearErected": "2010",
+    "erectedBy": "Lolo National Forest",
+    "nearbyMarkers": [
+      "A Battle That Could Not Be Won",
+      "Life Along the Line",
+      "When the Mountains Roared",
+      "An Unlikely Safe Haven",
+      "Building From the Ashes"
+    ]
+  },
+  {
     "id": "180834",
     "slug": "plutons-and-the-humbug-spires",
     "title": "Plutons and the Humbug Spires",
@@ -6099,6 +6147,28 @@
       "A Leap Just in Time",
       "The Night the Earth Cracked",
       "Refuge Point"
+    ]
+  },
+  {
+    "id": "123285",
+    "slug": "sliderock-lookout-tower",
+    "title": "Sliderock Lookout Tower",
+    "subtitle": "Built: 1930 Brought to Museum: 1983",
+    "lat": 46.8433,
+    "lng": -114.064,
+    "town": "Missoula",
+    "townSlug": "missoula",
+    "county": "Missoula",
+    "inscription": "The United States Forest Service's first fire lookouts system was a crude setup of tents and crow's nest lookouts. Watching for wild fires in unpopulated areas was a relatively new idea and was regarded with little importance until the Great Fire of 1910. This massive fire too lives and caused major loss of property and forest lands. These damages forced the Forest Service to re-examine their practices, and they began building lookouts.\n\nManufactured in Columbia Falls, Montana in 1930, pre-packaged lookouts were shipped throughout a four-state region for on-site assembly on stilts or bare ground. This lookout tower was stationed at Sliderock Mountain, just off Rock Creek road, southeast of Missoula.\n\nWhen this lookout was brought to the Museum in 1983, it was placed on its own \"mini-Sliderock\" mountain. The first section of stairs was removed, so the tower sits lower that it would have in its original location.\n\nWith assistance from the Friends of the Historical Museum and the Missoula Chapter of the Society of American Foresters, Sliderock Lookout stands preserved today as a reminder of the changing technology of fire prevention.\n\nErected by The US Forest Service Collection.",
+    "topics": [],
+    "yearErected": null,
+    "erectedBy": "The US Forest Service Collection",
+    "nearbyMarkers": [
+      "Quartermaster's Root Cellar",
+      "Fort Missoula Guard Tower",
+      "Fort Missoula Alien Detention Camp",
+      "Fort Missoula Alien Detention Camp",
+      "Fort Missoula Barrack Building"
     ]
   },
   {
