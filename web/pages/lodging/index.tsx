@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
+import StaysCTA from '../../components/StaysCTA';
 import { readLodgingIndex } from '../../lib/lodging';
 
 type Props = {
@@ -61,7 +62,9 @@ export default function LodgingIndex({ title, contentHtml }: Props) {
           .lodging-content a { color: #3b6978; text-decoration: none; }
           .lodging-content a:hover { text-decoration: underline; }
         ` }} />
+        <StaysCTA />
         <article className="lodging-content content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <StaysCTA />
       </main>
       <Footer />
     </>

@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
+import StaysCTA from '../../components/StaysCTA';
 import { readLodgingPage, getLodgingSlugs } from '../../lib/lodging';
 import { schemaTypeFromLodgingType, type LodgingAccommodation } from '../../lib/lodging-schema';
 
@@ -92,6 +93,7 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
           .lodging-content a:hover { text-decoration: underline; }
         ` }} />
         <article className="lodging-content content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <StaysCTA townName={townName} slug={slug} />
       </main>
       <Footer />
     </>

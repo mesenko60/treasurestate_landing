@@ -62,4 +62,4 @@ Before you book, read our [Montana Trip Planner](/planners/) for seasonal guidan
 
 ---
 
-*Affiliate links to Expedia and VRBO help support TreasureState.com at no extra cost to you.*
+*Affiliate links to Expedia and VRBO help support TreasureState.com at no extra cost to you. Browse all Montana hotels on [Expedia](https://www.expedia.com/Hotel-Search?destination=Montana%2C%20United%20States%20of%20America&sort=RECOMMENDED&pwaLob=HRS&camref=1011l52GG6&adref=lodging-index-footer) · Vacation rentals on [VRBO](https://vrbo.com/affiliate?landingPage=https%3A%2F%2Fwww.vrbo.com%2Fsearch%3Fdestination%3DMontana%252C%2520United%2520States%2520of%2520America%26sort%3DRECOMMENDED&camref=1011l52GGp&creativeref=1101l63118&adref=lodging-index-footer).*
