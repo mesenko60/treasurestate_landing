@@ -31,6 +31,7 @@ import { getCorridorsForTown, TownCorridor } from '../../../lib/town-corridors';
 import CrossHubCities from '../../../components/town/CrossHubCities';
 import RelatedContent from '../../../components/RelatedContent';
 import HistoricMarkers from '../../../components/town/HistoricMarkers';
+import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
 import { isEnabled } from '../../../lib/feature-flags';
 import { getArticlesForTown, getFeaturedArticles, type ArticleSummary } from '../../../lib/articles';
 
@@ -128,6 +129,7 @@ type Props = {
   scenicDrives: TownCorridor[];
   relatedArticles: ArticleSummary[];
   historicMarkers: HistoricMarkerSummary[];
+  markerDeepReads: Record<string, { href: string; title: string; description: string }>;
   heroImage: string;
   ogImage: string;
   heroCredit?: string;
@@ -171,7 +173,7 @@ const HERO_CREDITS: Record<string, string> = {
   helena: 'Photo: RTC / Wikimedia Commons (CC BY-SA 3.0)',
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles, historicMarkers }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles, historicMarkers, markerDeepReads }: Props) {
   const router = useRouter();
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
 
@@ -329,7 +331,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             focusedRec={focusedRec}
           />
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
-          <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} />
+          <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} />
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
@@ -451,7 +453,11 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   }
   const nickname = allNicknames[slug] || 'A Montana Community';
   
-  const contentHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
+  const rawHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
+  const contentHtml = rawHtml.replace(
+    /<h[23][^>]*>\s*History\s*&amp;\s*Heritage\s*<\/h[23]>/i,
+    '',
+  );
   const description = md?.excerpt || '';
   const aeoData = md?.aeoData || null;
   
@@ -620,6 +626,12 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     console.error("Failed to load historic markers", e);
   }
 
+  const markerDeepReads: Record<string, { href: string; title: string; description: string }> = {};
+  for (const m of historicMarkers) {
+    const dr = MARKER_DEEP_READS[m.slug];
+    if (dr) markerDeepReads[m.slug] = dr;
+  }
+
   const rawEconomy = allEconomyData[slug];
   const rawHealthcare = allHealthcareData[slug];
   const rawHousing = allHousingData[slug];
@@ -695,6 +707,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
           })()
         : [],
       historicMarkers,
+      markerDeepReads,
     } 
   };
 };
