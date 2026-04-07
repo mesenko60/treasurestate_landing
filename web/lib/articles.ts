@@ -85,6 +85,15 @@ const FRONTMATTER_DEFAULTS: Partial<ArticleFrontmatter> = {
 
 /* ─── Helpers ────────────────────────────────────────────── */
 
+function toISODate(val: unknown): string {
+  if (!val) return '';
+  if (val instanceof Date) return val.toISOString().slice(0, 10);
+  const s = String(val);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const d = new Date(s);
+  return isNaN(d.getTime()) ? '' : d.toISOString().slice(0, 10);
+}
+
 function readDir(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => f.endsWith('.md'));
@@ -228,8 +237,8 @@ function parseFrontmatter(raw: matter.GrayMatterFile<string>): ArticleFrontmatte
     related_topics: Array.isArray(data.related_topics) ? data.related_topics.map(String) : FRONTMATTER_DEFAULTS.related_topics!,
     shop_cta_label: String(data.shop_cta_label || FRONTMATTER_DEFAULTS.shop_cta_label),
     shop_cta_url: String(data.shop_cta_url || FRONTMATTER_DEFAULTS.shop_cta_url),
-    date_published: String(data.date_published || ''),
-    date_modified: String(data.date_modified || data.date_published || ''),
+    date_published: toISODate(data.date_published),
+    date_modified: toISODate(data.date_modified) || toISODate(data.date_published),
     field_notes: Array.isArray(data.field_notes) ? data.field_notes.map(String) : FRONTMATTER_DEFAULTS.field_notes!,
   };
 }

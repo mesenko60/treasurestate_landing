@@ -48,7 +48,7 @@ export default function ArticleCard({ slug, title, excerpt, type, heroImage, her
         <div className="article-card__body">
           <div className="article-card__title">{title}</div>
           <div className="article-card__excerpt">{excerpt}</div>
-          {datePublished && (
+          {datePublished && !isNaN(new Date(datePublished + 'T00:00:00').getTime()) && (
             <div className="article-card__date">
               {new Date(datePublished + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
             </div>
