@@ -130,6 +130,7 @@ type Props = {
   relatedArticles: ArticleSummary[];
   historicMarkers: HistoricMarkerSummary[];
   markerDeepReads: Record<string, { href: string; title: string; description: string }>;
+  historyProse: string;
   heroImage: string;
   ogImage: string;
   heroCredit?: string;
@@ -173,7 +174,7 @@ const HERO_CREDITS: Record<string, string> = {
   helena: 'Photo: RTC / Wikimedia Commons (CC BY-SA 3.0)',
 };
 
-export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles, historicMarkers, markerDeepReads }: Props) {
+export default function TownPage({ slug, townName, nickname, contentHtml, description, aeoData, relatedTowns, currentTownCoords, relatedTownCoords, airportDistances, townFacts, climateMonths, recreationPlaces, housing, economy, healthcare, crossLinks, scenicDrives, heroImage, ogImage, heroCredit, relatedArticles, historicMarkers, markerDeepReads, historyProse }: Props) {
   const router = useRouter();
   const [focusedRec, setFocusedRec] = useState<RecreationPlace | null>(null);
 
@@ -331,7 +332,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             focusedRec={focusedRec}
           />
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
-          <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} />
+          <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} historyProse={historyProse} />
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
@@ -454,10 +455,13 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const nickname = allNicknames[slug] || 'A Montana Community';
   
   const rawHtml = md?.contentHtml || `<h2>About ${townName}</h2><p>Content coming soon.</p>`;
-  const contentHtml = rawHtml.replace(
-    /<h[23][^>]*>\s*History\s*&amp;\s*Heritage\s*<\/h[23]>/i,
-    '',
+  const historyMatch = rawHtml.match(
+    /<h[23][^>]*>\s*History\s*&amp;\s*Heritage\s*<\/h[23]>\s*([\s\S]*?)(?=<h[23]|$)/i,
   );
+  const historyProse = historyMatch ? historyMatch[1].trim() : '';
+  const contentHtml = historyMatch
+    ? rawHtml.replace(historyMatch[0], '')
+    : rawHtml;
   const description = md?.excerpt || '';
   const aeoData = md?.aeoData || null;
   
@@ -708,6 +712,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
         : [],
       historicMarkers,
       markerDeepReads,
+      historyProse,
     } 
   };
 };

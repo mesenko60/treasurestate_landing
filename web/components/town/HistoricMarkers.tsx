@@ -23,6 +23,7 @@ type Props = {
   townSlug: string;
   countyRaw?: string | null;
   deepReads?: Record<string, MarkerDeepRead>;
+  historyProse?: string;
 };
 
 const TOPIC_LABELS: Record<string, string> = {
@@ -59,7 +60,24 @@ const innerSummaryStyle: React.CSSProperties = {
   gap: '0.75rem',
 };
 
-export default function HistoricMarkers({ markers, townName, townSlug, countyRaw, deepReads = {} }: Props) {
+const mapLinkStyle: React.CSSProperties = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  gap: '0.3rem',
+  fontSize: '0.82rem',
+  color: '#3b6978',
+  fontWeight: 600,
+  textDecoration: 'none',
+};
+
+export default function HistoricMarkers({
+  markers,
+  townName,
+  townSlug,
+  countyRaw,
+  deepReads = {},
+  historyProse,
+}: Props) {
   const mapHref = townHistoricMarkersDirectoryHref(townSlug);
   const countyBase = normalizeCountyForMarkerFilter(countyRaw ?? null);
   const countyHref = countyBase ? countyHistoricMarkersDirectoryHref(countyBase) : null;
@@ -67,7 +85,7 @@ export default function HistoricMarkers({ markers, townName, townSlug, countyRaw
   const sorted = [...markers].sort((a, b) => a.title.localeCompare(b.title));
 
   return (
-    <div id="local-history" style={{ marginTop: '2rem' }}>
+    <div id="local-history" className="content-section" style={{ marginTop: '2rem' }}>
       <section aria-labelledby="history-heritage-heading">
         <h2
           id="history-heritage-heading"
@@ -75,6 +93,14 @@ export default function HistoricMarkers({ markers, townName, townSlug, countyRaw
         >
           History &amp; Heritage
         </h2>
+
+        {historyProse && (
+          <div
+            style={{ fontSize: '0.92rem', color: '#444', lineHeight: 1.65, marginBottom: '1rem' }}
+            dangerouslySetInnerHTML={{ __html: historyProse }}
+          />
+        )}
+
         <p style={{ fontSize: '0.9rem', color: '#666', margin: '0 0 1rem', lineHeight: 1.55 }}>
           Official historic markers tied to {townName} in our statewide dataset. Expand the list
           to read inscriptions and follow links to full pages or deep reads where available.
@@ -194,6 +220,9 @@ export default function HistoricMarkers({ markers, townName, townSlug, countyRaw
                             {dr.title} &rarr;
                           </Link>
                         )}
+                        <Link href={mapHref} style={mapLinkStyle}>
+                          View on map &rarr;
+                        </Link>
                       </div>
                     </div>
                   </details>
