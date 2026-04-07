@@ -76,16 +76,11 @@ export default function SingleTownMap({
     border: 0,
   };
   const mapMeta = (
-    <div style={{
-      display: 'flex',
-      alignItems: 'flex-start',
-      justifyContent: 'space-between',
-      gap: '1rem',
+    <div className="single-town-map-meta" style={{
       marginBottom: isMapFirstLayout ? 0 : '1rem',
       marginTop: 0,
-      flexWrap: 'wrap',
     }}>
-      <div style={{ minWidth: 0, flex: 1 }}>
+      <div style={{ minWidth: 0 }}>
         {isMapFirstLayout ? (
           <div
             style={{
@@ -117,20 +112,7 @@ export default function SingleTownMap({
           href={googleMapsHref}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            padding: '0.55rem 0.85rem',
-            borderRadius: '999px',
-            border: '1px solid #cfd8dc',
-            background: '#fff',
-            color: '#3b6978',
-            textDecoration: 'none',
-            fontWeight: 600,
-            fontSize: '0.85rem',
-            whiteSpace: 'nowrap',
-          }}
+          className="single-town-map-gmaps"
         >
           {mapsCta}
         </a>

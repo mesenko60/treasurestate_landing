@@ -441,6 +441,35 @@ main {
   }
 }
 
+/* Map & Nearby header layout */
+.single-town-map-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.single-town-map-gmaps {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  color: #3b6978;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .single-town-map-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 .planners-section h2 {
   color: var(--primary);
 }
