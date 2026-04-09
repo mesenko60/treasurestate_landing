@@ -8,7 +8,7 @@ import path from 'path';
 import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import StaysCTA from '../../../components/StaysCTA';
-import { injectStaysCTA } from '../../../lib/affiliate-urls';
+import { injectStaysCTA, vrboUrl, expediaUrl } from '../../../lib/affiliate-urls';
 import Footer from '../../../components/Footer';
 import Schema from '../../../components/Schema';
 import Breadcrumbs from '../../../components/Breadcrumbs';
@@ -334,6 +334,49 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
           <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} historyProse={historyProse} />
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
+
+          <div style={{
+            display: 'flex', gap: '0.75rem', flexWrap: 'wrap',
+            justifyContent: 'center', margin: '0 0 2rem',
+          }}>
+            <a
+              href={vrboUrl(townName, slug)}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                padding: '0.7rem 1.3rem', borderRadius: '8px',
+                background: '#3b6978', color: '#fff',
+                textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
+                boxShadow: '0 2px 8px rgba(59,105,120,0.25)',
+                transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(59,105,120,0.35)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
+            >
+              <span aria-hidden="true">🏡</span>
+              Vacation Rentals in {townName}
+            </a>
+            <a
+              href={expediaUrl(townName, slug)}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                padding: '0.7rem 1.3rem', borderRadius: '8px',
+                background: '#204051', color: '#fff',
+                textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
+                boxShadow: '0 2px 8px rgba(32,64,81,0.25)',
+                transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(32,64,81,0.35)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(32,64,81,0.25)'; }}
+            >
+              <span aria-hidden="true">🏨</span>
+              Hotels in {townName}
+            </a>
+          </div>
+
           {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
           {housing && <TownHousing {...housing} />}
           {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
