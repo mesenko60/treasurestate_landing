@@ -266,6 +266,8 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .hub-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; margin: 1.25rem 0 2rem; }
           .hub-card { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; background: #f8faf8; border: 1px solid #e2ebe2; border-radius: 10px; text-decoration: none; color: #204051; font-size: 0.9rem; transition: box-shadow 0.2s, transform 0.2s; }
           .hub-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
@@ -288,8 +290,10 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           }
         `}} />
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
-          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          </div>
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
 

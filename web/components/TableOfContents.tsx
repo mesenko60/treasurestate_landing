@@ -152,14 +152,10 @@ export default function TableOfContents({
     <aside 
       className="table-of-contents" 
       style={{
-        position: 'sticky',
-        top: '20px',
         padding: '20px',
         backgroundColor: '#f8f9fa',
         borderRadius: '8px',
         border: '1px solid #ddd',
-        maxHeight: 'calc(100vh - 40px)',
-        overflowY: 'auto',
         minWidth: '250px'
       }}
     >

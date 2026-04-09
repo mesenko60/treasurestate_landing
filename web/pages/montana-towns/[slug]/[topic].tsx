@@ -554,6 +554,8 @@ export default function TopicPage(props: Props) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
             .toc-mobile { display: none; }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .topic-page-content { flex: 1; min-width: 0; }
           .topic-map-row { cursor: pointer; }
           .topic-map-row td { transition: background 0.15s ease; }
@@ -568,8 +570,10 @@ export default function TopicPage(props: Props) {
         ` }} />
 
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".topic-page-content .content-section" />
-          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".topic-page-content .content-section" />
+            <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          </div>
         </div>
 
         <div
