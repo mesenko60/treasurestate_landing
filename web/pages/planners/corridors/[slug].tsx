@@ -8,6 +8,8 @@ import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import TableOfContents from '../../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../../components/ShopifyCollectionSlider';
+import { corridorToCollection, collectionLabel } from '../../../lib/shopify-collections';
 import StaysCTA from '../../../components/StaysCTA';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -310,6 +312,8 @@ export default function CorridorDetailPage({
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .corridor-stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -386,7 +390,10 @@ export default function CorridorDetailPage({
         `}} />
 
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection={corridorToCollection(corridor.throughTowns)} townName={collectionLabel(corridorToCollection(corridor.throughTowns))} />
+          </div>
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>

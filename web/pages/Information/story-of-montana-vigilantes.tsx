@@ -6,6 +6,8 @@ import StaysCTA from '../../components/StaysCTA';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../components/ShopifyCollectionSlider';
+import { DEFAULT_COLLECTION } from '../../lib/shopify-collections';
 
 export default function StoryOfMontanaVigilantes() {
   return (
@@ -41,9 +43,14 @@ export default function StoryOfMontanaVigilantes() {
               flex-shrink: 0;
             }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
         `}} />
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection={DEFAULT_COLLECTION} townName="Montana" />
+          </div>
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <section className="content-section">

@@ -5,6 +5,8 @@ import Hero from '../../components/Hero';
 import StaysCTA from '../../components/StaysCTA';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../components/ShopifyCollectionSlider';
+import { DEFAULT_COLLECTION } from '../../lib/shopify-collections';
 
 export default function SummerRoadTrips() {
   const url = 'https://treasurestate.com/guides/summer-road-trips/';
@@ -56,6 +58,8 @@ export default function SummerRoadTrips() {
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .road-trip-stats {
             display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
             font-size: 0.85rem; color: #555; margin: 0.5rem 0 0.75rem;
@@ -75,7 +79,10 @@ export default function SummerRoadTrips() {
           .cta-card p { color: #a0a8b8; margin: 0 0 1rem; font-size: 0.92rem; }
         ` }} />
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection={DEFAULT_COLLECTION} townName="Montana" />
+          </div>
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <section className="content-section">

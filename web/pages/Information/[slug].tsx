@@ -7,6 +7,8 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import TableOfContents from '../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../components/ShopifyCollectionSlider';
+import { DEFAULT_COLLECTION } from '../../lib/shopify-collections';
 import ShopCTA from '../../components/ShopCTA';
 import StaysCTA from '../../components/StaysCTA';
 import RelatedContent from '../../components/RelatedContent';
@@ -111,6 +113,8 @@ export default function InformationArticle({ article, related }: Props) {
         <style dangerouslySetInnerHTML={{ __html: `
           .toc-desktop { display: none; }
           @media (min-width: 1024px) { .toc-desktop { display: block; width: 280px; flex-shrink: 0; } }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .article-body h2 { color: #204051; font-size: 1.3rem; margin: 2rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #e8ede8; }
           .article-body h3 { color: #3b6978; font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
           .article-body p { color: #333; line-height: 1.7; margin: 0.6rem 0; }
@@ -123,7 +127,10 @@ export default function InformationArticle({ article, related }: Props) {
         `}} />
 
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".article-body" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".article-body" />
+            <ShopifyCollectionSlider collection={DEFAULT_COLLECTION} townName="Montana" />
+          </div>
         </div>
 
         <div className="article-body content-section" style={{ flex: 1, minWidth: 0 }}>

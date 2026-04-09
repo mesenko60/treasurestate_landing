@@ -11,6 +11,7 @@ import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../components/ShopifyCollectionSlider';
 import StaysCTA from '../../components/StaysCTA';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -354,6 +355,8 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
         .bv-main { display: flex; gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 20px 3rem; position: relative; }
         .bv-toc { display: none; }
         @media (min-width: 1024px) { .bv-toc { display: block; width: 300px; flex-shrink: 0; } }
+        .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+        .sidebar-sticky::-webkit-scrollbar { display: none; }
         .bv-content { flex: 1; min-width: 0; }
         .bv-section-title { font-family: var(--font-primary); font-size: 1.4rem; color: #204051; margin: 2.5rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e0e0; }
         .bv-town-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin: 1rem 0; }
@@ -382,7 +385,10 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
 
       <main className="bv-main">
         <div className="bv-toc">
-          <TableOfContents contentSelector=".content-section" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection="hamilton" townName="Bitterroot Valley" />
+          </div>
         </div>
 
         <div className="bv-content">

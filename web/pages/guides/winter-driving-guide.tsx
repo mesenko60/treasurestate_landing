@@ -5,6 +5,8 @@ import Hero from '../../components/Hero';
 import StaysCTA from '../../components/StaysCTA';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
+import ShopifyCollectionSlider from '../../components/ShopifyCollectionSlider';
+import { DEFAULT_COLLECTION } from '../../lib/shopify-collections';
 
 export default function WinterDrivingGuide() {
   const url = 'https://treasurestate.com/guides/winter-driving-guide/';
@@ -56,6 +58,8 @@ export default function WinterDrivingGuide() {
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
           }
+          .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
+          .sidebar-sticky::-webkit-scrollbar { display: none; }
           .route-list { list-style: none; padding: 0; margin: 0; }
           .route-list li {
             padding: 1rem 0; border-bottom: 1px solid #eee;
@@ -94,7 +98,10 @@ export default function WinterDrivingGuide() {
           .resource-list li:last-child { border-bottom: none; }
         ` }} />
         <div className="toc-desktop">
-          <TableOfContents contentSelector=".content-section" />
+          <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
+            <TableOfContents contentSelector=".content-section" />
+            <ShopifyCollectionSlider collection={DEFAULT_COLLECTION} townName="Montana" />
+          </div>
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <section className="content-section">
