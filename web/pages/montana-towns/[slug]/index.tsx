@@ -297,6 +297,44 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             <>
               <div className="content-section" style={{ marginBottom: '0' }}>
                 <div dangerouslySetInnerHTML={{ __html: cluster.hubIntro.replace(/\n/g, '</p><p>') }} style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#444' }} />
+                <div style={{
+                  display: 'flex', gap: '0.75rem', flexWrap: 'wrap',
+                  justifyContent: 'center', margin: '1.25rem 0 0.5rem',
+                }}>
+                  <a
+                    href={vrboUrl(townName, slug)}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    style={{
+                      display: 'inline-flex', flexDirection: 'column', background: '#3b6978', color: '#fff',
+                      padding: '0.7rem 1.3rem', borderRadius: '8px', textDecoration: 'none',
+                      boxShadow: '0 2px 8px rgba(59,105,120,0.25)', lineHeight: 1.3,
+                      transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(59,105,120,0.35)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
+                  >
+                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Find Vacation Rentals near {townName}</span>
+                    <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via VRBO</span>
+                  </a>
+                  <a
+                    href={expediaUrl(townName, slug)}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    style={{
+                      display: 'inline-flex', flexDirection: 'column', background: '#204051', color: '#fff',
+                      padding: '0.7rem 1.3rem', borderRadius: '8px', textDecoration: 'none',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.12)', lineHeight: 1.3,
+                      transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(32,64,81,0.35)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 6px rgba(0,0,0,0.12)'; }}
+                  >
+                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Find Hotels near {townName}</span>
+                    <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via Expedia</span>
+                  </a>
+                </div>
+                <p style={{ fontSize: '0.7rem', color: '#999', margin: '0', textAlign: 'center' }}>Affiliate links help support this site at no extra cost to you.</p>
               </div>
 
               <div className="content-section" style={{ marginTop: '0.5rem' }}>
