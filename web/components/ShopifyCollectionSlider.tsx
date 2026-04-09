@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
-import { fetchCollectionProducts, type ShopifyProduct } from '../lib/shopify';
-import { DEFAULT_COLLECTION } from '../lib/shopify-collections';
+import { fetchCollectionProducts, fetchAllProducts, type ShopifyProduct } from '../lib/shopify';
 
 type Props = {
   collection: string;
@@ -175,8 +174,8 @@ export default function ShopifyCollectionSlider({
 
     (async () => {
       let items = await fetchCollectionProducts(collection, maxProducts);
-      if (items.length === 0 && collection !== DEFAULT_COLLECTION) {
-        items = await fetchCollectionProducts(DEFAULT_COLLECTION, maxProducts);
+      if (items.length === 0) {
+        items = await fetchAllProducts(maxProducts);
       }
       if (!cancelled) {
         setProducts(items);

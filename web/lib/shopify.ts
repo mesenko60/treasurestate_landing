@@ -85,11 +85,38 @@ function mapProduct(node: StorefrontProductNode): ShopifyProduct {
   };
 }
 
-export async function fetchCollectionProducts(
-  collectionHandle: string,
-  count: number = 10,
-): Promise<ShopifyProduct[]> {
-  if (!STOREFRONT_TOKEN) return [];
+const ALL_PRODUCTS_QUERY = `
+  query AllProducts($first: Int!) {
+    products(first: $first) {
+      edges {
+        node {
+          id
+          title
+          handle
+          descriptionHtml
+          priceRange {
+            minVariantPrice {
+              amount
+              currencyCode
+            }
+          }
+          images(first: 1) {
+            edges {
+              node {
+                url
+                altText
+              }
+            }
+          }
+          onlineStoreUrl
+        }
+      }
+    }
+  }
+`;
+
+async function storefrontFetch(query: string, variables: Record<string, unknown>): Promise<unknown> {
+  if (!STOREFRONT_TOKEN) return null;
 
   try {
     const res = await fetch(
@@ -100,23 +127,31 @@ export async function fetchCollectionProducts(
           'Content-Type': 'application/json',
           'X-Shopify-Storefront-Access-Token': STOREFRONT_TOKEN,
         },
-        body: JSON.stringify({
-          query: COLLECTION_QUERY,
-          variables: { handle: collectionHandle, first: count },
-        }),
+        body: JSON.stringify({ query, variables }),
       },
     );
-
-    if (!res.ok) return [];
-
-    const json = await res.json();
-    const edges = json?.data?.collectionByHandle?.products?.edges;
-    if (!Array.isArray(edges)) return [];
-
-    return edges.map((edge: { node: StorefrontProductNode }) =>
-      mapProduct(edge.node),
-    );
+    if (!res.ok) return null;
+    return res.json();
   } catch {
-    return [];
+    return null;
   }
+}
+
+export async function fetchCollectionProducts(
+  collectionHandle: string,
+  count: number = 10,
+): Promise<ShopifyProduct[]> {
+  const json = await storefrontFetch(COLLECTION_QUERY, { handle: collectionHandle, first: count }) as Record<string, unknown> | null;
+  const edges = (json as any)?.data?.collectionByHandle?.products?.edges;
+  if (!Array.isArray(edges)) return [];
+  return edges.map((edge: { node: StorefrontProductNode }) => mapProduct(edge.node));
+}
+
+export async function fetchAllProducts(
+  count: number = 10,
+): Promise<ShopifyProduct[]> {
+  const json = await storefrontFetch(ALL_PRODUCTS_QUERY, { first: count }) as Record<string, unknown> | null;
+  const edges = (json as any)?.data?.products?.edges;
+  if (!Array.isArray(edges)) return [];
+  return edges.map((edge: { node: StorefrontProductNode }) => mapProduct(edge.node));
 }
