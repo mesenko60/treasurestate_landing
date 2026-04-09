@@ -17,7 +17,8 @@ import TableOfContents from '../../../components/TableOfContents';
 import SingleTownMap from '../../../components/SingleTownMap';
 import TownWeather from '../../../components/TownWeather';
 import TownDistances from '../../../components/TownDistances';
-import StoreBanner from '../../../components/StoreBanner';
+import ShopifyCollectionSlider from '../../../components/ShopifyCollectionSlider';
+import { getShopifyCollection } from '../../../lib/shopify-collections';
 import TownQuickFacts from '../../../components/TownQuickFacts';
 import ClimateTable from '../../../components/ClimateTable';
 import NearbyRecreation from '../../../components/NearbyRecreation';
@@ -288,6 +289,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
         `}} />
         <div className="toc-desktop">
           <TableOfContents contentSelector=".content-section" />
+          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
 
@@ -463,7 +465,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {cluster && <CrossHubCities slug={slug} townName={townName} />}
 
           {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
-          <StoreBanner />
+          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
           {relatedArticles.length > 0 && (
             <RelatedContent articles={relatedArticles} title="Related Reading" />
           )}

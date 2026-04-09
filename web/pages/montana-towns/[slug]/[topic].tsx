@@ -10,7 +10,8 @@ import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import StaysCTA from '../../../components/StaysCTA';
-import StoreBanner from '../../../components/StoreBanner';
+import ShopifyCollectionSlider from '../../../components/ShopifyCollectionSlider';
+import { getShopifyCollection } from '../../../lib/shopify-collections';
 import SingleTownMap from '../../../components/SingleTownMap';
 import TableOfContents from '../../../components/TableOfContents';
 import RelatedGuides from '../../../components/town/RelatedGuides';
@@ -568,6 +569,7 @@ export default function TopicPage(props: Props) {
 
         <div className="toc-desktop">
           <TableOfContents contentSelector=".topic-page-content .content-section" />
+          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
         </div>
 
         <div
@@ -610,7 +612,7 @@ export default function TopicPage(props: Props) {
           )}
           <CrossHubLinks slug={slug} topic={topic} townName={townName} />
           <StaysCTA townName={townName} slug={slug} />
-          <StoreBanner />
+          <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
         </div>
       </main>
 
