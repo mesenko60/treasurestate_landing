@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { filterNearbyRecreation } from '../lib/recreation';
 import { trackDirectoryExpand } from '../lib/gtag';
+
+const MapGL = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
+const MapMarker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 type RecreationPlace = {
   name: string;
@@ -133,16 +138,19 @@ function ScoreRing({ score }: { score: number }) {
   );
 }
 
-function scrollToMap(place: RecreationPlace, onSelect?: (place: RecreationPlace) => void) {
+function scrollToRecMap(place: RecreationPlace, setPlace: (p: RecreationPlace) => void, onSelect?: (place: RecreationPlace) => void) {
+  setPlace(place);
   if (onSelect) onSelect(place);
-  const el = document.getElementById('town-map');
-  if (el) {
-    const y = el.getBoundingClientRect().top + window.scrollY - 80;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
+  setTimeout(() => {
+    const el = document.getElementById('rec-inline-map');
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }, 50);
 }
 
-function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenType }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[]; onSelectPlace?: (place: RecreationPlace) => void; openType: string | null; setOpenType: (t: string | null) => void }) {
+function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenType, setSelectedPlace }: { grouped: Record<string, RecreationPlace[]>; sortedTypes: string[]; onSelectPlace?: (place: RecreationPlace) => void; openType: string | null; setOpenType: (t: string | null) => void; setSelectedPlace: (p: RecreationPlace) => void }) {
 
   return (
     <div style={{ marginTop: '0.5rem' }}>
@@ -186,8 +194,8 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenT
                 {items.map((p, i) => (
                   <a
                     key={i}
-                    href="#town-map"
-                    onClick={(e) => { e.preventDefault(); scrollToMap(p, onSelectPlace); }}
+                    href="#rec-inline-map"
+                    onClick={(e) => { e.preventDefault(); scrollToRecMap(p, setSelectedPlace, onSelectPlace); }}
                     style={{
                       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                       padding: '0.3rem 0.6rem', background: '#fff', borderRadius: '4px',
@@ -217,6 +225,7 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenT
 export default function NearbyRecreation({ townName, places, onSelectPlace }: NearbyRecreationProps) {
   const [showDirectory, setShowDirectory] = useState(false);
   const [openType, setOpenType] = useState<string | null>(null);
+  const [selectedPlace, setSelectedPlace] = useState<RecreationPlace | null>(null);
   const visiblePlaces = filterNearbyRecreation(places);
 
   if (visiblePlaces.length === 0) return null;
@@ -351,8 +360,8 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
             return (
               <a
                 key={i}
-                href="#town-map"
-                onClick={(e) => { e.preventDefault(); scrollToMap(place, onSelectPlace); }}
+                href="#rec-inline-map"
+                onClick={(e) => { e.preventDefault(); scrollToRecMap(place, setSelectedPlace, onSelectPlace); }}
                 style={{
                   display: 'flex', alignItems: 'center', gap: '0.6rem',
                   padding: '0.6rem 0.8rem', background: '#fff', borderRadius: '8px',
@@ -386,6 +395,74 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
         </div>
       </div>
 
+      {/* Inline map preview */}
+      {selectedPlace && MAPBOX_TOKEN && (
+        <div id="rec-inline-map" style={{
+          marginBottom: '1rem', borderRadius: '10px', overflow: 'hidden',
+          border: '1px solid #e0e0e0', scrollMarginTop: '90px',
+        }}>
+          <div style={{ height: 220, position: 'relative' }}>
+            <MapGL
+              key={`${selectedPlace.lat}-${selectedPlace.lng}`}
+              initialViewState={{ latitude: selectedPlace.lat, longitude: selectedPlace.lng, zoom: 12 }}
+              mapStyle="mapbox://styles/mapbox/outdoors-v12"
+              mapboxAccessToken={MAPBOX_TOKEN}
+              style={{ width: '100%', height: '100%' }}
+              interactive={false}
+            >
+              <MapMarker latitude={selectedPlace.lat} longitude={selectedPlace.lng} anchor="center">
+                <div style={{
+                  width: 22, height: 22,
+                  background: TYPE_META[selectedPlace.type]?.color || '#c0392b',
+                  border: '2px solid #fff', borderRadius: '50%',
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.35)',
+                }} />
+              </MapMarker>
+            </MapGL>
+          </div>
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            padding: '0.5rem 0.75rem', background: '#f8faf8',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', minWidth: 0 }}>
+              <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>{TYPE_META[selectedPlace.type]?.icon || '📍'}</span>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontWeight: 600, fontSize: '0.9rem', color: '#204051', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {selectedPlace.name}
+                </div>
+                <div style={{ fontSize: '0.76rem', color: TYPE_META[selectedPlace.type]?.color || '#888' }}>
+                  {TYPE_META[selectedPlace.type]?.label || selectedPlace.type} &middot; {selectedPlace.distMiles} mi
+                </div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }}>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${selectedPlace.lat},${selectedPlace.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: '0.78rem', color: '#3b6978', fontWeight: 500,
+                  textDecoration: 'none', whiteSpace: 'nowrap',
+                }}
+              >
+                Google Maps →
+              </a>
+              <button
+                onClick={() => setSelectedPlace(null)}
+                style={{
+                  background: 'none', border: 'none', cursor: 'pointer',
+                  fontSize: '0.82rem', color: '#999', padding: '0 0.25rem',
+                }}
+                aria-label="Close map preview"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {!selectedPlace && <div id="rec-inline-map" />}
+
       {/* Full Directory Toggle */}
       <div id="rec-directory" style={{
         borderTop: '1px solid #eee', paddingTop: '0.75rem',
@@ -404,7 +481,7 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
         </button>
 
         {showDirectory && (
-          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} onSelectPlace={onSelectPlace} openType={openType} setOpenType={setOpenType} />
+          <FullDirectory grouped={grouped} sortedTypes={sortedTypes} onSelectPlace={onSelectPlace} openType={openType} setOpenType={setOpenType} setSelectedPlace={setSelectedPlace} />
         )}
       </div>
 
