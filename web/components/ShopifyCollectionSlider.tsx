@@ -19,13 +19,14 @@ function formatPrice(amount: string, currency: string): string {
   }).format(num);
 }
 
-function ProductCard({ product, compact }: { product: ShopifyProduct; compact?: boolean }) {
+function ProductCard({ product, variant }: { product: ShopifyProduct; variant: 'sidebar' | 'slider' }) {
   return (
     <a
       href={product.productUrl}
       target="_blank"
       rel="noopener noreferrer"
       style={{
+        display: 'block',
         textDecoration: 'none',
         color: '#204051',
         background: '#fff',
@@ -33,9 +34,7 @@ function ProductCard({ product, compact }: { product: ShopifyProduct; compact?: 
         border: '1px solid #e2ebe2',
         overflow: 'hidden',
         transition: 'box-shadow 0.2s, transform 0.2s',
-        ...(compact
-          ? { display: 'flex', gap: '0.75rem', padding: '0.6rem', alignItems: 'center' }
-          : { display: 'block', minWidth: '180px', maxWidth: '220px', flexShrink: 0, scrollSnapAlign: 'start' }),
+        ...(variant === 'slider' && { minWidth: '180px', maxWidth: '220px', flexShrink: 0, scrollSnapAlign: 'start' as const }),
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)';
@@ -51,18 +50,14 @@ function ProductCard({ product, compact }: { product: ShopifyProduct; compact?: 
           src={product.imageUrl}
           alt={product.imageAlt || product.title}
           loading="lazy"
-          style={
-            compact
-              ? { width: '60px', height: '60px', objectFit: 'cover', borderRadius: '6px', flexShrink: 0 }
-              : { width: '100%', aspectRatio: '1', objectFit: 'cover', display: 'block' }
-          }
+          style={{ width: '100%', aspectRatio: '1', objectFit: 'cover', display: 'block' }}
         />
       )}
-      <div style={compact ? { minWidth: 0, flex: 1 } : { padding: '0.6rem 0.75rem' }}>
+      <div style={{ padding: '0.6rem 0.75rem' }}>
         <div
           style={{
             fontWeight: 600,
-            fontSize: compact ? '0.82rem' : '0.88rem',
+            fontSize: variant === 'sidebar' ? '0.85rem' : '0.88rem',
             lineHeight: 1.3,
             marginBottom: '0.25rem',
             overflow: 'hidden',
@@ -82,41 +77,75 @@ function ProductCard({ product, compact }: { product: ShopifyProduct; compact?: 
   );
 }
 
-function LoadingSkeleton({ compact }: { compact?: boolean }) {
-  const items = compact ? 3 : 4;
+function SidebarSlider({ products }: { products: ShopifyProduct[] }) {
+  const [idx, setIdx] = useState(0);
+  const count = products.length;
+
+  const prev = useCallback(() => setIdx((i) => (i - 1 + count) % count), [count]);
+  const next = useCallback(() => setIdx((i) => (i + 1) % count), [count]);
+
+  if (count === 0) return null;
+
+  return (
+    <div>
+      <ProductCard product={products[idx]} variant="sidebar" />
+      {count > 1 && (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
+          <button
+            onClick={prev}
+            aria-label="Previous product"
+            style={{
+              width: '30px', height: '30px', borderRadius: '50%',
+              border: '1px solid #d8e2d8', background: '#fff', cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '1rem', color: '#3b6978', transition: 'background 0.15s',
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f5f0'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = '#fff'; }}
+          >
+            {'\u2039'}
+          </button>
+          <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: 500 }}>
+            {idx + 1} / {count}
+          </span>
+          <button
+            onClick={next}
+            aria-label="Next product"
+            style={{
+              width: '30px', height: '30px', borderRadius: '50%',
+              border: '1px solid #d8e2d8', background: '#fff', cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '1rem', color: '#3b6978', transition: 'background 0.15s',
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f5f0'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = '#fff'; }}
+          >
+            {'\u203A'}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function LoadingSkeleton({ variant }: { variant: 'sidebar' | 'slider' }) {
+  if (variant === 'sidebar') {
+    return (
+      <div style={{ background: '#f4f4f4', borderRadius: '8px', overflow: 'hidden' }}>
+        <div style={{ width: '100%', aspectRatio: '1', background: '#e8e8e8' }} />
+        <div style={{ padding: '0.6rem 0.75rem' }}>
+          <div style={{ height: '0.85rem', background: '#e0e0e0', borderRadius: '4px', marginBottom: '0.4rem', width: '80%' }} />
+          <div style={{ height: '0.75rem', background: '#e8e8e8', borderRadius: '4px', width: '40%' }} />
+        </div>
+      </div>
+    );
+  }
   return (
     <>
-      {Array.from({ length: items }).map((_, i) => (
-        <div
-          key={i}
-          style={
-            compact
-              ? {
-                  display: 'flex',
-                  gap: '0.75rem',
-                  padding: '0.6rem',
-                  background: '#f4f4f4',
-                  borderRadius: '8px',
-                  alignItems: 'center',
-                }
-              : {
-                  minWidth: '180px',
-                  maxWidth: '220px',
-                  flexShrink: 0,
-                  background: '#f4f4f4',
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                }
-          }
-        >
-          <div
-            style={
-              compact
-                ? { width: '60px', height: '60px', borderRadius: '6px', background: '#e8e8e8' }
-                : { width: '100%', aspectRatio: '1', background: '#e8e8e8' }
-            }
-          />
-          <div style={compact ? { flex: 1 } : { padding: '0.6rem 0.75rem' }}>
+      {Array.from({ length: 4 }).map((_, i) => (
+        <div key={i} style={{ minWidth: '180px', maxWidth: '220px', flexShrink: 0, background: '#f4f4f4', borderRadius: '8px', overflow: 'hidden' }}>
+          <div style={{ width: '100%', aspectRatio: '1', background: '#e8e8e8' }} />
+          <div style={{ padding: '0.6rem 0.75rem' }}>
             <div style={{ height: '0.85rem', background: '#e0e0e0', borderRadius: '4px', marginBottom: '0.4rem', width: '80%' }} />
             <div style={{ height: '0.75rem', background: '#e8e8e8', borderRadius: '4px', width: '40%' }} />
           </div>
@@ -239,7 +268,7 @@ export default function ShopifyCollectionSlider({
         }
       `}} />
 
-      {/* Desktop sidebar layout: vertical stack */}
+      {/* Desktop sidebar: single-product slider with prev/next */}
       <div
         className="shopify-sidebar-widget"
         style={{
@@ -251,17 +280,15 @@ export default function ShopifyCollectionSlider({
         }}
       >
         {heading}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          {loading ? (
-            <LoadingSkeleton compact />
-          ) : (
-            products.map((p) => <ProductCard key={p.id} product={p} compact />)
-          )}
-        </div>
+        {loading ? (
+          <LoadingSkeleton variant="sidebar" />
+        ) : (
+          <SidebarSlider products={products} />
+        )}
         <div style={{ textAlign: 'center' }}>{storeCta}</div>
       </div>
 
-      {/* Mobile inline layout: horizontal scroll slider */}
+      {/* Mobile inline: horizontal scroll slider */}
       <div
         className="shopify-inline-widget"
         style={{
@@ -297,9 +324,9 @@ export default function ShopifyCollectionSlider({
               .shopify-inline-widget div::-webkit-scrollbar { display: none; }
             `}} />
             {loading ? (
-              <LoadingSkeleton />
+              <LoadingSkeleton variant="slider" />
             ) : (
-              products.map((p) => <ProductCard key={p.id} product={p} />)
+              products.map((p) => <ProductCard key={p.id} product={p} variant="slider" />)
             )}
           </div>
         </div>
