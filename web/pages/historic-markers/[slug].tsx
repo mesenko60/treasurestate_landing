@@ -43,11 +43,13 @@ type Props = {
   marker: MarkerData;
   nearbyMarkers: MarkerData[];
   trails: { id: string; name: string }[];
+  lodgingSlug: string | null;
+  lodgingTownName: string | null;
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
-export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Props) {
+export default function HistoricMarkerPage({ marker, nearbyMarkers, trails, lodgingSlug, lodgingTownName }: Props) {
   const deepRead = MARKER_DEEP_READS[marker.slug];
   const url = `https://treasurestate.com/historic-markers/${marker.slug}/`;
   const title = marker.title;
@@ -215,6 +217,15 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails }: Pr
                 >
                   Get Directions
                 </a>
+                {lodgingSlug ? (
+                  <Link href={`/lodging/${lodgingSlug}/`}>
+                    Where to Stay in {lodgingTownName}
+                  </Link>
+                ) : (
+                  <Link href="/lodging/">
+                    Find Lodging in Montana
+                  </Link>
+                )}
               </div>
 
               <dl className="marker-meta">
@@ -328,11 +339,25 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     .filter(t => t.markerIds.includes(marker.id))
     .map(t => ({ id: t.id, name: t.name }));
 
+  const lodgingDir = path.resolve(process.cwd(), '..', 'lodging_pages');
+  const toLodgingSlug = (s: string) => s === 'anaconda' ? 'anaconda-montana' : s;
+  let lodgingSlug: string | null = null;
+  let lodgingTownName: string | null = null;
+  if (marker.townSlug) {
+    const ls = toLodgingSlug(marker.townSlug);
+    if (fs.existsSync(path.join(lodgingDir, `${ls}.md`))) {
+      lodgingSlug = ls;
+      lodgingTownName = marker.town;
+    }
+  }
+
   return {
     props: {
       marker,
       nearbyMarkers,
       trails,
+      lodgingSlug,
+      lodgingTownName,
     },
   };
 };

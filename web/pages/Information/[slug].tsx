@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import TableOfContents from '../../components/TableOfContents';
 import ShopCTA from '../../components/ShopCTA';
+import StaysCTA from '../../components/StaysCTA';
 import RelatedContent from '../../components/RelatedContent';
 import { isEnabled } from '../../lib/feature-flags';
 import {
@@ -131,6 +132,8 @@ export default function InformationArticle({ article, related }: Props) {
           {article.shopCtaLabel && article.shopCtaUrl && (
             <ShopCTA label={article.shopCtaLabel} url={article.shopCtaUrl} articleSlug={article.slug} />
           )}
+
+          {!article.noindex && <StaysCTA />}
 
           {related.length > 0 && <RelatedContent articles={related} />}
         </div>

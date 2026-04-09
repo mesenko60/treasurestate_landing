@@ -9,6 +9,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import RelatedContent from '../../components/RelatedContent';
+import StaysCTA from '../../components/StaysCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 import { isEnabled } from '../../lib/feature-flags';
 import { getRelatedArticles, type ArticleSummary } from '../../lib/articles';
@@ -43,6 +44,7 @@ type RankedTown = {
   highlight: string;
   stats: { label: string; value: string }[];
   hasGuide: boolean;
+  hasLodging: boolean;
 };
 
 type PageData = {
@@ -261,6 +263,13 @@ export default function BestOfPage({ page, freshness, relatedRankings, relatedAr
                         Moving Guide
                       </Link>
                     )}
+                    {town.hasLodging && (
+                      <Link href={`/lodging/${town.slug === 'anaconda' ? 'anaconda-montana' : town.slug}/`} style={{
+                        fontSize: '0.82rem', color: '#3b6978', textDecoration: 'none',
+                      }}>
+                        Where to Stay
+                      </Link>
+                    )}
                     <Link href={`/compare?a=${town.slug}`} style={{
                       fontSize: '0.82rem', color: '#888', textDecoration: 'none',
                     }}>
@@ -323,6 +332,10 @@ export default function BestOfPage({ page, freshness, relatedRankings, relatedAr
             View All Rankings
           </Link>
         </div>
+        <div style={{ marginTop: '2rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <StaysCTA />
+        </div>
+
         {relatedArticles.length > 0 && (
           <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 20px' }}>
             <RelatedContent articles={relatedArticles} title="Related Reading" />
@@ -1004,6 +1017,9 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
 
   const { hasGuide, getRelatedRankings } = await import('../../lib/cross-links');
 
+  const lodgingDir = path.resolve(process.cwd(), '..', 'lodging_pages');
+  const toLodgingSlug = (s: string) => s === 'anaconda' ? 'anaconda-montana' : s;
+
   const towns: RankedTown[] = top.map((t, i) => ({
     rank: i + 1,
     slug: t.slug,
@@ -1013,6 +1029,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
     highlight: ranking.highlight(t),
     stats: ranking.stats(t),
     hasGuide: hasGuide(t.slug),
+    hasLodging: fs.existsSync(path.join(lodgingDir, `${toLodgingSlug(t.slug)}.md`)),
   }));
 
   const relatedRankings = getRelatedRankings(slug);

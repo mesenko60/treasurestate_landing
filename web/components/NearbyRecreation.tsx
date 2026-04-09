@@ -151,9 +151,16 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenT
         const items = grouped[type];
         const isOpen = openType === type;
         return (
-          <div key={type} style={{ borderBottom: '1px solid #f0f0f0' }}>
+          <div key={type} style={{
+            borderBottom: '1px solid #f0f0f0',
+            background: isOpen ? `${meta.color}08` : 'transparent',
+            borderLeft: isOpen ? `3px solid ${meta.color}` : '3px solid transparent',
+            borderRadius: isOpen ? '0 6px 6px 0' : '0',
+            transition: 'background 0.25s ease, border-color 0.25s ease',
+          }}>
             <button
               onClick={() => setOpenType(isOpen ? null : type)}
+              title={meta.label}
               style={{
                 display: 'flex', alignItems: 'center', gap: '0.5rem', width: '100%',
                 padding: '0.55rem 0.5rem', background: 'transparent', border: 'none',
@@ -161,12 +168,13 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenT
               }}
             >
               <span>{meta.icon}</span>
-              <span style={{ fontWeight: 500, color: '#204051', flex: 1 }}>{meta.label}</span>
+              <span style={{ fontWeight: isOpen ? 700 : 500, color: isOpen ? meta.color : '#204051', flex: 1, transition: 'color 0.2s' }}>{meta.label}</span>
               <span style={{
-                fontSize: '0.72rem', background: `${meta.color}12`, color: meta.color,
+                fontSize: '0.72rem', background: isOpen ? `${meta.color}22` : `${meta.color}12`, color: meta.color,
                 padding: '0.1rem 0.45rem', borderRadius: '10px', fontWeight: 600,
+                transition: 'background 0.2s',
               }}>{items.length}</span>
-              <span style={{ fontSize: '0.7rem', color: '#bbb', marginLeft: '0.25rem' }}>
+              <span style={{ fontSize: '0.7rem', color: isOpen ? meta.color : '#bbb', marginLeft: '0.25rem', transition: 'color 0.2s' }}>
                 {isOpen ? '▾' : '▸'}
               </span>
             </button>
@@ -182,13 +190,13 @@ function FullDirectory({ grouped, sortedTypes, onSelectPlace, openType, setOpenT
                     onClick={(e) => { e.preventDefault(); scrollToMap(p, onSelectPlace); }}
                     style={{
                       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                      padding: '0.3rem 0.6rem', background: '#fafafa', borderRadius: '4px',
+                      padding: '0.3rem 0.6rem', background: '#fff', borderRadius: '4px',
                       borderLeft: `3px solid ${meta.color}`,
                       fontSize: '0.82rem', textDecoration: 'none',
                       cursor: 'pointer', transition: 'background 0.15s',
                     }}
                     onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f4f0'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.background = '#fafafa'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = '#fff'; }}
                   >
                     <span style={{
                       color: '#204051', overflow: 'hidden', textOverflow: 'ellipsis',
@@ -294,6 +302,8 @@ export default function NearbyRecreation({ townName, places, onSelectPlace }: Ne
             return (
               <button
                 key={type}
+                title={`${meta.label} (${grouped[type].length})`}
+                aria-label={`${meta.label}: ${grouped[type].length} sites`}
                 onClick={() => {
                   setShowDirectory(true);
                   setOpenType(type);

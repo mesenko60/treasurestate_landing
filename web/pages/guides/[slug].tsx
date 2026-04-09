@@ -10,6 +10,7 @@ import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import TableOfContents from '../../components/TableOfContents';
 import ShopCTA from '../../components/ShopCTA';
+import StaysCTA from '../../components/StaysCTA';
 import RelatedContent from '../../components/RelatedContent';
 import { filterNearbyRecreation } from '../../lib/recreation';
 import { isEnabled } from '../../lib/feature-flags';
@@ -149,6 +150,7 @@ function GuideArticlePage({ article, related }: { article: ArticlePageData; rela
           {article.shopCtaLabel && article.shopCtaUrl && (
             <ShopCTA label={article.shopCtaLabel} url={article.shopCtaUrl} articleSlug={article.slug} />
           )}
+          {!article.noindex && <StaysCTA />}
           {related.length > 0 && <RelatedContent articles={related} />}
         </div>
       </main>

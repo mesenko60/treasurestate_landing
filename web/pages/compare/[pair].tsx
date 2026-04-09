@@ -9,6 +9,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import StaysCTA from '../../components/StaysCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 
 type MonthClimate = {
@@ -51,6 +52,8 @@ type Props = {
   townB: TownData;
   guideA: GuideLink;
   guideB: GuideLink;
+  hasLodgingA: boolean;
+  hasLodgingB: boolean;
 };
 
 const AIRPORT_NAMES: Record<string, string> = {
@@ -89,7 +92,7 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
   );
 }
 
-export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
+export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA, hasLodgingB }: Props) {
   const title = `${townA.name} vs ${townB.name}, Montana | Side by Side Comparison`;
   const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side: population, climate, schools, recreation, and more.`;
   const [canonicalSlugA, canonicalSlugB] = [townA.slug, townB.slug].sort();
@@ -300,6 +303,25 @@ export default function ComparePage({ townA, townB, guideA, guideB }: Props) {
             </div>
           )}
 
+          {(hasLodgingA || hasLodgingB) && (
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap' }}>
+              {hasLodgingA && (
+                <Link href={`/lodging/${townA.slug === 'anaconda' ? 'anaconda-montana' : townA.slug}/`} style={{ fontSize: '0.88rem', color: '#3b6978', fontWeight: 500, textDecoration: 'none' }}>
+                  Where to Stay in {townA.name} →
+                </Link>
+              )}
+              {hasLodgingB && (
+                <Link href={`/lodging/${townB.slug === 'anaconda' ? 'anaconda-montana' : townB.slug}/`} style={{ fontSize: '0.88rem', color: '#3b6978', fontWeight: 500, textDecoration: 'none' }}>
+                  Where to Stay in {townB.name} →
+                </Link>
+              )}
+            </div>
+          )}
+
+          <div style={{ marginTop: '2rem' }}>
+            <StaysCTA />
+          </div>
+
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <Link href="/compare/" style={{ color: '#3b6978', fontWeight: 500 }}>
               ← Compare different towns
@@ -416,12 +438,19 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
 
   const { guideLink } = await import('../../lib/cross-links');
 
+  const lodgingDir = path.resolve(process.cwd(), '..', 'lodging_pages');
+  const toLodgingSlug = (s: string) => s === 'anaconda' ? 'anaconda-montana' : s;
+  const hasLodgingA = fs.existsSync(path.join(lodgingDir, `${toLodgingSlug(slugA)}.md`));
+  const hasLodgingB = fs.existsSync(path.join(lodgingDir, `${toLodgingSlug(slugB)}.md`));
+
   return {
     props: {
       townA: buildTown(slugA),
       townB: buildTown(slugB),
       guideA: guideLink(slugA) ? { name: townData[slugA]?.name || slugA, href: `/guides/moving-to-${slugA}-montana/` } : null,
       guideB: guideLink(slugB) ? { name: townData[slugB]?.name || slugB, href: `/guides/moving-to-${slugB}-montana/` } : null,
+      hasLodgingA,
+      hasLodgingB,
     }
   };
 };
