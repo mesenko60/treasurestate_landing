@@ -48,6 +48,11 @@ export default function MobileBottomNav() {
           <span>Search</span>
         </button>
 
+        <Link href="/nearby" className={isActive('/nearby') ? 'active' : ''} tabIndex={-1}>
+          <div className="icon">📍</div>
+          <span>Nearby</span>
+        </Link>
+
         <Link href="/best-of" className={isActive('/best-of') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🏆</div>
           <span>Best Of</span>
@@ -56,11 +61,6 @@ export default function MobileBottomNav() {
         <Link href="/guides" className={isActive('/guides') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">📖</div>
           <span>Guides</span>
-        </Link>
-
-        <Link href="/lodging" className={isActive('/lodging') ? 'active' : ''} tabIndex={-1}>
-          <div className="icon">🏨</div>
-          <span>Lodging</span>
         </Link>
       </nav>
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />

@@ -37,6 +37,7 @@ export default function Header() {
         <Link href="/planners/backroads-planner" className={router.asPath.startsWith('/planners') ? 'active' : ''}>Trip Planner</Link>
         <Link href="/guides" className={router.asPath.startsWith('/guides') ? 'active' : ''}>Guides</Link>
         <Link href="/lodging" className={router.asPath.startsWith('/lodging') ? 'active' : ''}>Lodging</Link>
+        <Link href="/nearby" className={router.asPath.startsWith('/nearby') ? 'active' : ''}>Nearby</Link>
         <Link href="/events" className={router.asPath.startsWith('/events') ? 'active' : ''}>Events</Link>
         <Link href="/information/montana-facts" className={router.asPath.startsWith('/information') ? 'active' : ''}>Montana Facts</Link>
         <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer">Shop</a>

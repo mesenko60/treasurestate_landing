@@ -134,7 +134,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         .hp-hero-search:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.35); transform: translateY(-2px); }
 
         /* Hero buttons */
-        .hp-hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+        .hp-hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: nowrap; }
         .hp-hero-btn { display: inline-block; padding: 0.85rem 2.25rem; border-radius: 8px; font-family: var(--font-primary); font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; letter-spacing: 0.3px; }
         .hp-hero-btn--primary { background: var(--secondary); color: var(--white); box-shadow: 0 4px 16px rgba(216,151,60,0.4); }
         .hp-hero-btn--primary:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(216,151,60,0.55); }
@@ -241,8 +241,8 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         @media (max-width: 600px) {
           .hp-paths { padding: 0 0.75rem; }
           .hp-path-card { padding: 1.5rem 1.25rem; }
-          .hp-hero-btns { gap: 0.75rem; }
-          .hp-hero-btn { padding: 0.75rem 1.75rem; font-size: 0.95rem; }
+          .hp-hero-btns { gap: 0.6rem; }
+          .hp-hero-btn { padding: 0.7rem 1.4rem; font-size: 0.9rem; }
           .hp-rankings { grid-template-columns: 1fr; }
           .hp-towns { grid-template-columns: 1fr; }
           .hp-section { padding: 2rem 0.75rem; }
