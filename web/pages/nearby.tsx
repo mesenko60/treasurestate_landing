@@ -600,7 +600,8 @@ export default function NearbyPage() {
         .nearby-right-controls {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 4px;
+          flex-shrink: 0;
         }
 
         .nearby-toolbar-btn {
@@ -1081,9 +1082,38 @@ export default function NearbyPage() {
             margin-bottom: calc(-1 * var(--bottom-nav-height));
           }
 
+          .nearby-controls-row {
+            gap: 0.35rem;
+            margin-bottom: 0.3rem;
+          }
+
+          .nearby-radius-group {
+            gap: 2px;
+            flex-wrap: wrap;
+          }
+
           .nearby-radius-btn {
-            padding: 0.25rem 0.5rem;
-            font-size: 0.75rem;
+            padding: 0.2rem 0.4rem;
+            font-size: 0.7rem;
+          }
+
+          .nearby-right-controls {
+            gap: 3px;
+          }
+
+          .nearby-toolbar-btn {
+            height: 30px;
+            padding: 0 0.35rem;
+            font-size: 0.9rem;
+          }
+
+          .nearby-toolbar-label {
+            font-size: 0.6rem;
+          }
+
+          .nearby-view-toggle button {
+            padding: 0.2rem 0.4rem;
+            font-size: 0.85rem;
           }
 
           .nearby-filter-label {
