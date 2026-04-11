@@ -51,6 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
 body{font-family:'Arial',sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333;line-height:1.6;font-size:16px;overflow-x:hidden}
 .hero-section{position:relative;height:70vh;min-height:400px;color:#fff;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden}
 header.hero-section.hero-section--small{height:35vh!important;min-height:200px!important}
+@media(max-width:768px){header.hero-section.hero-section--small{height:auto!important;min-height:160px!important;padding-top:2.5rem;padding-bottom:2rem}}
 .hero-image{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;filter:brightness(0.6)}
 .hero-image--small{height:100%;min-height:180px}
 .hero-text{z-index:1;width:100%;max-width:1000px;box-sizing:border-box;padding:2rem;text-align:center}

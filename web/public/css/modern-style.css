@@ -106,6 +106,15 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 180px;
 }
 
+@media (max-width: 768px) {
+  .hero-section--small {
+    height: auto;
+    min-height: 160px;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .hero-image--small {
   height: 100%;
   min-height: 180px;
@@ -113,6 +122,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-text--small h1 {
   font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .hero-text--small h1 {
+    font-size: 1.6rem;
+  }
 }
 
 .hero-text--small p {
