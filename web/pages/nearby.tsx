@@ -50,6 +50,7 @@ export default function NearbyPage() {
   const [selectedPoi, setSelectedPoi] = useState<NearbyPOI | null>(null);
   const [expandedPoiId, setExpandedPoiId] = useState<number | null>(null);
   const [viewMode, setViewMode] = useState<'map' | 'list'>('list');
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const watchIdRef = useRef<number | null>(null);
   const lastFetchRef = useRef<string>('');
 
@@ -176,7 +177,19 @@ export default function NearbyPage() {
     saveAlertSettings(next);
   }, []);
 
-  const filteredPois = pois.filter((p) => enabledCategories.has(p.category));
+  const dedupedPois = (() => {
+    const seen = new Map<string, NearbyPOI>();
+    for (const p of pois) {
+      const key = `${p.name.toLowerCase().trim()}_${p.lat.toFixed(3)}_${p.lng.toFixed(3)}`;
+      const existing = seen.get(key);
+      if (!existing || p.distance_meters < existing.distance_meters) {
+        seen.set(key, p);
+      }
+    }
+    return Array.from(seen.values()).sort((a, b) => a.distance_meters - b.distance_meters);
+  })();
+
+  const filteredPois = dedupedPois.filter((p) => enabledCategories.has(p.category));
 
   const toggleCategory = (cat: string) => {
     setEnabledCategories((prev) => {
@@ -192,7 +205,7 @@ export default function NearbyPage() {
   const selectAll = () => setEnabledCategories(new Set(Object.keys(POI_CATEGORIES)));
   const selectNone = () => setEnabledCategories(new Set());
 
-  const presentCategories = Array.from(new Set(pois.map((p) => p.category)));
+  const presentCategories = Array.from(new Set(dedupedPois.map((p) => p.category)));
 
   return (
     <>
@@ -253,7 +266,15 @@ export default function NearbyPage() {
                 </div>
                 <div className="nearby-right-controls">
                   <button
-                    className={`nearby-alert-bell${alertSettings.enabled ? ' active' : ''}`}
+                    className={`nearby-toolbar-btn${filtersOpen ? ' active' : ''}`}
+                    onClick={() => setFiltersOpen(!filtersOpen)}
+                    aria-label="Filter categories"
+                    title="Filter categories"
+                  >
+                    🏷️ <span className="nearby-toolbar-label">{enabledCategories.size < presentCategories.length ? `${enabledCategories.size}/${presentCategories.length}` : 'All'}</span>
+                  </button>
+                  <button
+                    className={`nearby-toolbar-btn${alertSettings.enabled ? ' active' : ''}`}
                     onClick={() => setAlertPrefsOpen(true)}
                     aria-label="Alert settings"
                     title="Pop-up alert settings"
@@ -279,32 +300,42 @@ export default function NearbyPage() {
                 </div>
               </div>
 
-              <div className="nearby-category-filters">
-                <button className="nearby-filter-meta" onClick={selectAll}>All</button>
-                <button className="nearby-filter-meta" onClick={selectNone}>None</button>
-                {presentCategories.map((cat) => {
-                  const info = getCategoryInfo(cat);
-                  const count = pois.filter((p) => p.category === cat).length;
-                  return (
-                    <button
-                      key={cat}
-                      className={`nearby-filter-btn${enabledCategories.has(cat) ? ' active' : ''}`}
-                      onClick={() => toggleCategory(cat)}
-                      style={{ '--cat-color': info.color } as React.CSSProperties}
-                      title={info.label}
-                    >
-                      <span className="nearby-filter-icon">{info.icon}</span>
-                      <span className="nearby-filter-label">{info.label}</span>
-                      <span className="nearby-filter-count">{count}</span>
-                    </button>
-                  );
-                })}
-              </div>
-
               <div className="nearby-status">
                 {loading ? 'Searching...' : `${filteredPois.length} places within ${RADIUS_OPTIONS.find((o) => o.value === radius)?.label}`}
               </div>
             </div>
+
+            {filtersOpen && (
+              <div className="nearby-filter-panel">
+                <div className="nearby-filter-panel-header">
+                  <span className="nearby-filter-panel-title">Filter by Category</span>
+                  <div className="nearby-filter-panel-actions">
+                    <button className="nearby-filter-meta" onClick={selectAll}>All</button>
+                    <button className="nearby-filter-meta" onClick={selectNone}>None</button>
+                    <button className="nearby-filter-close" onClick={() => setFiltersOpen(false)} aria-label="Close filters">&times;</button>
+                  </div>
+                </div>
+                <div className="nearby-category-filters">
+                  {presentCategories.map((cat) => {
+                    const info = getCategoryInfo(cat);
+                    const count = dedupedPois.filter((p) => p.category === cat).length;
+                    return (
+                      <button
+                        key={cat}
+                        className={`nearby-filter-btn${enabledCategories.has(cat) ? ' active' : ''}`}
+                        onClick={() => toggleCategory(cat)}
+                        style={{ '--cat-color': info.color } as React.CSSProperties}
+                        title={info.label}
+                      >
+                        <span className="nearby-filter-icon">{info.icon}</span>
+                        <span className="nearby-filter-label">{info.label}</span>
+                        <span className="nearby-filter-count">{count}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
 
             {viewMode === 'map' ? (
               <NearbyMap
@@ -572,30 +603,37 @@ export default function NearbyPage() {
           gap: 6px;
         }
 
-        .nearby-alert-bell {
+        .nearby-toolbar-btn {
           background: #f0f0f0;
           border: 1px solid #ddd;
-          width: 34px;
           height: 34px;
           border-radius: 8px;
-          font-size: 1.1rem;
+          font-size: 1rem;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 4px;
+          padding: 0 0.5rem;
           transition: all 0.15s;
-          position: relative;
+          white-space: nowrap;
         }
 
-        .nearby-alert-bell.active {
+        .nearby-toolbar-label {
+          font-size: 0.7rem;
+          font-weight: 600;
+          font-family: var(--font-primary);
+          color: #555;
+        }
+
+        .nearby-toolbar-btn.active {
           background: var(--primary);
           border-color: var(--primary);
-          animation: bell-pulse 2s ease-in-out infinite;
+          color: white;
         }
 
-        @keyframes bell-pulse {
-          0%, 100% { box-shadow: none; }
-          50% { box-shadow: 0 0 0 3px rgba(59, 105, 120, 0.2); }
+        .nearby-toolbar-btn.active .nearby-toolbar-label {
+          color: white;
         }
 
         .nearby-view-toggle {
@@ -621,13 +659,56 @@ export default function NearbyPage() {
           box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
+        .nearby-filter-panel {
+          background: white;
+          border-bottom: 1px solid #e0e0e0;
+          padding: 0.5rem 0.75rem;
+          flex-shrink: 0;
+          animation: filter-slide 0.15s ease-out;
+        }
+
+        @keyframes filter-slide {
+          from { opacity: 0; max-height: 0; }
+          to { opacity: 1; max-height: 200px; }
+        }
+
+        .nearby-filter-panel-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0.4rem;
+        }
+
+        .nearby-filter-panel-title {
+          font-size: 0.75rem;
+          font-weight: 600;
+          font-family: var(--font-primary);
+          color: var(--dark);
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+        }
+
+        .nearby-filter-panel-actions {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+        }
+
+        .nearby-filter-close {
+          background: none;
+          border: none;
+          font-size: 1.3rem;
+          cursor: pointer;
+          color: #999;
+          padding: 0 0.15rem;
+          line-height: 1;
+        }
+
         .nearby-category-filters {
           display: flex;
           flex-wrap: wrap;
           gap: 4px;
           padding: 0.25rem 0;
-          max-height: 4.5rem;
-          overflow-y: auto;
         }
 
         .nearby-filter-meta {
