@@ -325,21 +325,46 @@ export default function CompareTool({ towns }: Props) {
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
+        <div className="compare-selectors">
           <TownSelector towns={towns} value={slugA} onChange={handleA} label="Town A" />
           <button
             onClick={handleSwap}
             disabled={!slugA || !slugB}
-            style={{
-              padding: '0.75rem', background: '#f0f0f0', border: '2px solid #e0e0e0',
-              borderRadius: '8px', cursor: slugA && slugB ? 'pointer' : 'default',
-              fontSize: '1.2rem', lineHeight: 1, flexShrink: 0, alignSelf: 'flex-end',
-              opacity: slugA && slugB ? 1 : 0.4,
-            }}
+            className="compare-swap-btn"
             title="Swap towns"
+            style={{ opacity: slugA && slugB ? 1 : 0.4, cursor: slugA && slugB ? 'pointer' : 'default' }}
           >⇄</button>
           <TownSelector towns={towns} value={slugB} onChange={handleB} label="Town B" />
         </div>
+        <style jsx>{`
+          .compare-selectors {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1rem;
+            align-items: end;
+            margin-bottom: 2rem;
+          }
+          .compare-swap-btn {
+            padding: 0.75rem;
+            background: #f0f0f0;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            line-height: 1;
+          }
+          @media (max-width: 600px) {
+            .compare-selectors {
+              grid-template-columns: 1fr 1fr;
+              gap: 0.75rem;
+            }
+            .compare-swap-btn {
+              grid-column: 1 / -1;
+              justify-self: center;
+              order: -1;
+              padding: 0.5rem 2rem;
+            }
+          }
+        `}</style>
 
         {townA && townB && (
           <div>
@@ -534,9 +559,9 @@ export default function CompareTool({ towns }: Props) {
         )}
 
         {(!townA || !townB) && (
-          <div style={{ textAlign: 'center', padding: '3rem 1rem', color: '#999' }}>
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏔️ ⇄ 🏔️</div>
-            <p style={{ fontSize: '1.1rem' }}>Select two towns above to compare them side by side.</p>
+          <div style={{ textAlign: 'center', padding: '1.5rem 1rem', color: '#999' }}>
+            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🏔️ ⇄ 🏔️</div>
+            <p style={{ fontSize: '1.05rem', margin: '0 0 0.5rem' }}>Select two towns above to compare them side by side.</p>
             <div style={{ marginTop: '2rem', maxWidth: '500px', margin: '2rem auto 0' }}>
               <h3 style={{ color: '#204051', marginBottom: '1rem' }}>Popular Comparisons</h3>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
