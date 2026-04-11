@@ -1,5 +1,6 @@
 import React from 'react';
 import { getCategoryInfo, POI_CATEGORIES } from '../../lib/nearbyApi';
+import { trackNearbyAlertSettingsChange } from '../../lib/gtag';
 
 const ALERT_DISTANCE_OPTIONS = [
   { label: '¼ mi', value: 402 },
@@ -67,13 +68,19 @@ export default function AlertPreferences({
     const next = { ...settings, ...partial };
     onUpdate(next);
     saveAlertSettings(next);
+
+    if ('enabled' in partial) trackNearbyAlertSettingsChange('enabled', !!partial.enabled);
+    if ('soundEnabled' in partial) trackNearbyAlertSettingsChange('sound', !!partial.soundEnabled);
+    if ('triggerDistance' in partial) trackNearbyAlertSettingsChange('distance', partial.triggerDistance!);
   };
 
   const toggleAlertCategory = (cat: string) => {
     const next = new Set(settings.alertCategories);
-    if (next.has(cat)) next.delete(cat);
-    else next.add(cat);
+    const willEnable = !next.has(cat);
+    if (willEnable) next.add(cat);
+    else next.delete(cat);
     update({ alertCategories: next });
+    trackNearbyAlertSettingsChange(`category:${cat}`, willEnable);
   };
 
   const allCategories = Object.keys(POI_CATEGORIES);

@@ -46,6 +46,7 @@ export function getContentGroup(path: string): string {
   if (path === '/compare' || path === '/compare/') return 'compare_tool';
   if (/^\/compare\//.test(path)) return 'comparison';
   if (/^\/information\//.test(path)) return 'montana_facts';
+  if (path === '/nearby' || path === '/nearby/') return 'nearby_app';
   return 'other';
 }
 
@@ -260,5 +261,104 @@ export function trackArticleTownClick(articleSlug: string, townSlug: string) {
     event_category: 'navigation',
     event_label: `${articleSlug} → ${townSlug}`,
     page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+  });
+}
+
+/* ─── Nearby / PWA Events ────────────────────────────────── */
+
+function isPWA(): boolean {
+  if (typeof window === 'undefined') return false;
+  return window.matchMedia('(display-mode: standalone)').matches
+    || (navigator as any).standalone === true;
+}
+
+function nearbyParams(extra?: Record<string, any>) {
+  return {
+    content_group: 'nearby_app',
+    platform: isPWA() ? 'pwa' : 'web',
+    page_path: '/nearby/',
+    ...extra,
+  };
+}
+
+export function trackNearbyLocationGranted() {
+  gtag()?.('event', 'nearby_location_granted', {
+    event_category: 'nearby',
+    event_label: 'permission_granted',
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyLocationDenied(reason: string) {
+  gtag()?.('event', 'nearby_location_denied', {
+    event_category: 'nearby',
+    event_label: reason,
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyRadiusChange(radiusMeters: number) {
+  gtag()?.('event', 'nearby_radius_change', {
+    event_category: 'nearby',
+    event_label: `${Math.round(radiusMeters / 1609)}mi`,
+    value: radiusMeters,
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyViewToggle(mode: 'map' | 'list') {
+  gtag()?.('event', 'nearby_view_toggle', {
+    event_category: 'nearby',
+    event_label: mode,
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyCategoryFilter(category: string, enabled: boolean) {
+  gtag()?.('event', 'nearby_category_filter', {
+    event_category: 'nearby',
+    event_label: `${category}:${enabled ? 'on' : 'off'}`,
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyPOIView(poiName: string, category: string, distanceMeters: number) {
+  gtag()?.('event', 'nearby_poi_view', {
+    event_category: 'nearby',
+    event_label: poiName,
+    ...nearbyParams({ poi_category: category, poi_distance: Math.round(distanceMeters) }),
+  });
+}
+
+export function trackNearbyPOINavigate(poiName: string, category: string) {
+  gtag()?.('event', 'nearby_poi_navigate', {
+    event_category: 'nearby',
+    event_label: poiName,
+    ...nearbyParams({ poi_category: category }),
+  });
+}
+
+export function trackNearbyAlertTriggered(poiName: string, category: string, distanceMeters: number) {
+  gtag()?.('event', 'nearby_alert_triggered', {
+    event_category: 'nearby',
+    event_label: poiName,
+    ...nearbyParams({ poi_category: category, poi_distance: Math.round(distanceMeters) }),
+  });
+}
+
+export function trackNearbyAlertSettingsChange(setting: string, value: string | boolean | number) {
+  gtag()?.('event', 'nearby_alert_settings', {
+    event_category: 'nearby',
+    event_label: `${setting}:${value}`,
+    ...nearbyParams(),
+  });
+}
+
+export function trackNearbyPOIsLoaded(count: number, radiusMeters: number) {
+  gtag()?.('event', 'nearby_pois_loaded', {
+    event_category: 'nearby',
+    event_label: `${count} POIs`,
+    value: count,
+    ...nearbyParams({ radius: radiusMeters }),
   });
 }

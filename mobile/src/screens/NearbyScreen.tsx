@@ -12,6 +12,7 @@ import {
 import { useLocation } from '../hooks/useLocation';
 import { fetchNearbyPOIs, formatDistance, getCategoryInfo, POI_CATEGORIES } from '../lib/supabase';
 import type { NearbyPOI } from '../lib/supabase';
+import { trackPOIsLoaded, trackPOIView, trackPOINavigate, trackRadiusChange, trackLocationGranted, trackLocationDenied } from '../lib/analytics';
 
 const RADIUS_OPTIONS = [
   { label: '1 mi', value: 1609 },
@@ -35,6 +36,7 @@ export default function NearbyScreen() {
     try {
       const data = await fetchNearbyPOIs(location.lat, location.lng, radius, null, 200);
       setPois(data);
+      trackPOIsLoaded(data.length, radius);
     } catch (err) {
       console.error('Failed to fetch POIs:', err);
     } finally {
@@ -44,7 +46,10 @@ export default function NearbyScreen() {
 
   useEffect(() => {
     if (status === 'idle') {
-      requestPermission();
+      requestPermission().then((granted) => {
+        if (granted) trackLocationGranted();
+        else trackLocationDenied('foreground_denied');
+      });
     }
   }, [status, requestPermission]);
 
@@ -59,12 +64,14 @@ export default function NearbyScreen() {
   }, [loadPOIs]);
 
   const openDirections = (poi: NearbyPOI) => {
+    trackPOINavigate(poi.name, poi.category);
     const url = `https://maps.google.com/maps?daddr=${poi.lat},${poi.lng}`;
     Linking.openURL(url);
   };
 
   const openWebPage = (poi: NearbyPOI) => {
     if (poi.content_url) {
+      trackPOIView(poi.name, poi.category, poi.distance_meters);
       Linking.openURL(`https://treasurestate.com${poi.content_url}`);
     }
   };
@@ -97,7 +104,7 @@ export default function NearbyScreen() {
     return (
       <TouchableOpacity
         style={[styles.card, isSelected && styles.cardSelected]}
-        onPress={() => setSelectedPoi(isSelected ? null : item)}
+        onPress={() => { setSelectedPoi(isSelected ? null : item); if (!isSelected) trackPOIView(item.name, item.category, item.distance_meters); }}
         activeOpacity={0.7}
       >
         <View style={[styles.cardIcon, { backgroundColor: info.color }]}>
@@ -140,7 +147,7 @@ export default function NearbyScreen() {
             <TouchableOpacity
               key={opt.value}
               style={[styles.radiusBtn, radius === opt.value && styles.radiusBtnActive]}
-              onPress={() => setRadius(opt.value)}
+              onPress={() => { setRadius(opt.value); trackRadiusChange(opt.value); }}
             >
               <Text style={[styles.radiusBtnText, radius === opt.value && styles.radiusBtnTextActive]}>
                 {opt.label}

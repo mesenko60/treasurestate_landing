@@ -4,6 +4,7 @@ import MapView, { Marker, Circle, PROVIDER_DEFAULT } from 'react-native-maps';
 import { useLocation } from '../hooks/useLocation';
 import { fetchNearbyPOIs, getCategoryInfo } from '../lib/supabase';
 import type { NearbyPOI } from '../lib/supabase';
+import { trackPOIsLoaded, trackPOIView, trackMapInteraction } from '../lib/analytics';
 
 export default function MapScreen() {
   const { location, status, requestPermission } = useLocation();
@@ -20,13 +21,14 @@ export default function MapScreen() {
     if (!location) return;
     setLoading(true);
     fetchNearbyPOIs(location.lat, location.lng, radius, null, 150)
-      .then(setPois)
+      .then((data) => { setPois(data); trackPOIsLoaded(data.length, radius); })
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [location]);
 
   const centerOnUser = useCallback(() => {
     if (location && mapRef.current) {
+      trackMapInteraction('center_on_user');
       mapRef.current.animateToRegion({
         latitude: location.lat,
         longitude: location.lng,
@@ -76,6 +78,7 @@ export default function MapScreen() {
               title={poi.name}
               description={`${info.label} — ${Math.round(poi.distance_meters / 1609.344 * 10) / 10} mi`}
               pinColor={info.color}
+              onPress={() => trackPOIView(poi.name, poi.category, poi.distance_meters)}
             />
           );
         })}

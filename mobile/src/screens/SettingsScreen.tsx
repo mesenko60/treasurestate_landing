@@ -5,6 +5,7 @@ import { POI_CATEGORIES } from '../lib/supabase';
 import { startBackgroundLocationTracking, stopBackgroundLocationTracking } from '../lib/backgroundTasks';
 import { setupNotifications } from '../lib/notifications';
 import { useOTAUpdate } from '../hooks/useOTAUpdate';
+import { trackSettingChange, trackAppUpdate } from '../lib/analytics';
 
 export default function SettingsScreen() {
   const { requestBackgroundPermission } = useLocation();
@@ -36,6 +37,7 @@ export default function SettingsScreen() {
       await stopBackgroundLocationTracking();
     }
     setBackgroundEnabled(value);
+    trackSettingChange('background_alerts', value);
   }, []);
 
   const toggleCategory = (cat: string) => {
@@ -69,7 +71,7 @@ export default function SettingsScreen() {
           <TouchableOpacity
             key={opt.value}
             style={[styles.radiusBtn, notifyRadius === opt.value && styles.radiusBtnActive]}
-            onPress={() => setNotifyRadius(opt.value)}
+            onPress={() => { setNotifyRadius(opt.value); trackSettingChange('notify_radius', opt.value); }}
           >
             <Text style={[styles.radiusBtnText, notifyRadius === opt.value && styles.radiusBtnTextActive]}>
               {opt.label}
@@ -80,7 +82,7 @@ export default function SettingsScreen() {
 
       <Text style={styles.sectionTitle}>Categories to Track</Text>
       {Object.entries(POI_CATEGORIES).map(([key, info]) => (
-        <TouchableOpacity key={key} style={styles.categoryRow} onPress={() => toggleCategory(key)}>
+        <TouchableOpacity key={key} style={styles.categoryRow} onPress={() => { toggleCategory(key); trackSettingChange(`category:${key}`, !enabledCategories.has(key)); }}>
           <Text style={styles.categoryIcon}>{info.icon}</Text>
           <Text style={styles.categoryLabel}>{info.label}</Text>
           <View style={[styles.checkbox, enabledCategories.has(key) && styles.checkboxActive]}>
@@ -101,7 +103,7 @@ export default function SettingsScreen() {
         ) : updateStatus === 'ready' ? (
           <View style={styles.updateRow}>
             <Text style={styles.updateTextBold}>A new version is ready!</Text>
-            <TouchableOpacity style={styles.updateBtn} onPress={applyUpdate}>
+            <TouchableOpacity style={styles.updateBtn} onPress={() => { trackAppUpdate('applied'); applyUpdate(); }}>
               <Text style={styles.updateBtnText}>Restart Now</Text>
             </TouchableOpacity>
           </View>

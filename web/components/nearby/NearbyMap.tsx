@@ -3,6 +3,7 @@ import Map, { Marker, NavigationControl, Source, Layer } from 'react-map-gl/mapb
 import type { MapRef } from 'react-map-gl/mapbox';
 import { getCategoryInfo } from '../../lib/nearbyApi';
 import type { NearbyPOI } from '../../lib/nearbyApi';
+import { trackNearbyPOIView, trackMapInteraction } from '../../lib/gtag';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
@@ -65,6 +66,8 @@ export default function NearbyMap({
     (poi: NearbyPOI) => (e: React.MouseEvent) => {
       e.stopPropagation();
       onSelectPoi(poi);
+      trackNearbyPOIView(poi.name, poi.category, poi.distance_meters);
+      trackMapInteraction('poi_marker_click');
       if (mapRef.current) {
         mapRef.current.flyTo({ center: [poi.lng, poi.lat], zoom: 14, duration: 600 });
       }

@@ -8,6 +8,7 @@ import MapScreen from './screens/MapScreen';
 import SavedScreen from './screens/SavedScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import { setupNotifications, addNotificationResponseListener } from './lib/notifications';
+import { trackScreenView } from './lib/analytics';
 import './lib/backgroundTasks';
 
 const Tab = createBottomTabNavigator();
@@ -38,7 +39,14 @@ export default function App() {
   }, []);
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      onStateChange={(state) => {
+        if (state) {
+          const route = state.routes[state.index];
+          if (route) trackScreenView(route.name);
+        }
+      }}
+    >
       <StatusBar style="dark" />
       <Tab.Navigator
         screenOptions={({ route }) => ({

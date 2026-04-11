@@ -8,6 +8,7 @@ import ProximityToast from '../components/nearby/ProximityToast';
 import type { ProximityAlert } from '../components/nearby/ProximityToast';
 import AlertPreferences, { loadAlertSettings, saveAlertSettings } from '../components/nearby/AlertPreferences';
 import type { AlertSettings } from '../components/nearby/AlertPreferences';
+import * as gtag from '../lib/gtag';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const NearbyMap = dynamic(() => import('../components/nearby/NearbyMap'), { ssr: false });
@@ -63,8 +64,13 @@ export default function NearbyPage() {
       return;
     }
     setGeo({ status: 'requesting' });
+    let grantedOnce = false;
     watchIdRef.current = navigator.geolocation.watchPosition(
       (pos) => {
+        if (!grantedOnce) {
+          grantedOnce = true;
+          gtag.trackNearbyLocationGranted();
+        }
         setGeo({ status: 'granted', lat: pos.coords.latitude, lng: pos.coords.longitude });
       },
       (err) => {
@@ -73,7 +79,9 @@ export default function NearbyPage() {
           2: 'Unable to determine your location. Please check your GPS signal.',
           3: 'Location request timed out. Please try again.',
         };
-        setGeo({ status: 'denied', message: messages[err.code] || err.message });
+        const msg = messages[err.code] || err.message;
+        gtag.trackNearbyLocationDenied(msg);
+        setGeo({ status: 'denied', message: msg });
       },
       { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 },
     );
@@ -95,7 +103,10 @@ export default function NearbyPage() {
 
     setLoading(true);
     fetchNearbyPOIs(geo.lat, geo.lng, radius, null, 200)
-      .then(setPois)
+      .then((data) => {
+        setPois(data);
+        gtag.trackNearbyPOIsLoaded(data.length, radius);
+      })
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [geo, radius]);
@@ -118,6 +129,7 @@ export default function NearbyPage() {
 
       alertedIdsRef.current.set(poi.id, now);
       newAlerts.push({ poi: { ...poi, distance_meters: dist }, triggeredAt: now });
+      gtag.trackNearbyAlertTriggered(poi.name, poi.category, dist);
     }
 
     if (newAlerts.length > 0) {
@@ -149,11 +161,13 @@ export default function NearbyPage() {
     setSelectedPoi(poi);
     setActiveAlerts((prev) => prev.filter((a) => a.poi.id !== poi.id));
     setViewMode('map');
+    gtag.trackNearbyPOIView(poi.name, poi.category, poi.distance_meters);
   }, []);
 
   const handleAlertNavigate = useCallback((poi: NearbyPOI) => {
     window.open(`https://maps.google.com/maps?daddr=${poi.lat},${poi.lng}`, '_blank');
     setActiveAlerts((prev) => prev.filter((a) => a.poi.id !== poi.id));
+    gtag.trackNearbyPOINavigate(poi.name, poi.category);
   }, []);
 
   const handleAlertSettingsUpdate = useCallback((next: AlertSettings) => {
@@ -166,8 +180,10 @@ export default function NearbyPage() {
   const toggleCategory = (cat: string) => {
     setEnabledCategories((prev) => {
       const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat);
-      else next.add(cat);
+      const willEnable = !next.has(cat);
+      if (willEnable) next.add(cat);
+      else next.delete(cat);
+      gtag.trackNearbyCategoryFilter(cat, willEnable);
       return next;
     });
   };
@@ -228,7 +244,7 @@ export default function NearbyPage() {
                     <button
                       key={opt.value}
                       className={`nearby-radius-btn${radius === opt.value ? ' active' : ''}`}
-                      onClick={() => setRadius(opt.value)}
+                      onClick={() => { setRadius(opt.value); gtag.trackNearbyRadiusChange(opt.value); }}
                     >
                       {opt.label}
                     </button>
@@ -246,14 +262,14 @@ export default function NearbyPage() {
                   <div className="nearby-view-toggle">
                     <button
                       className={viewMode === 'map' ? 'active' : ''}
-                      onClick={() => setViewMode('map')}
+                      onClick={() => { setViewMode('map'); gtag.trackNearbyViewToggle('map'); }}
                       aria-label="Map view"
                     >
                       🗺️
                     </button>
                     <button
                       className={viewMode === 'list' ? 'active' : ''}
-                      onClick={() => setViewMode('list')}
+                      onClick={() => { setViewMode('list'); gtag.trackNearbyViewToggle('list'); }}
                       aria-label="List view"
                     >
                       📋
@@ -308,7 +324,7 @@ export default function NearbyPage() {
                     <article
                       key={poi.id}
                       className={`nearby-card${selectedPoi?.id === poi.id ? ' selected' : ''}`}
-                      onClick={() => setSelectedPoi(poi)}
+                      onClick={() => { setSelectedPoi(poi); gtag.trackNearbyPOIView(poi.name, poi.category, poi.distance_meters); }}
                     >
                       <div className="nearby-card-icon" style={{ background: info.color }}>{info.icon}</div>
                       <div className="nearby-card-body">
@@ -361,6 +377,7 @@ export default function NearbyPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="nearby-nav-btn"
+                    onClick={() => gtag.trackNearbyPOINavigate(selectedPoi.name, selectedPoi.category)}
                   >
                     Navigate
                   </a>

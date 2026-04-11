@@ -67,6 +67,7 @@
     "extra": {
       "supabaseUrl": "https://cfcabzvlkxbefniqmcjb.supabase.co",
       "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNmY2FienZsa3hiZWZuaXFtY2piIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwOTAwMzMsImV4cCI6MjA2MDY2NjAzM30.DG8cZR0sw54JuN4pvi3EpOlgxbyeOthFrsuoypHf3m8",
+      "gaApiSecret": "",
       "eas": {
         "projectId": "treasurestate"
       }

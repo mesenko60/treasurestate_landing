@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { getCategoryInfo, formatDistance } from '../../lib/nearbyApi';
 import type { NearbyPOI } from '../../lib/nearbyApi';
+import { trackNearbyPOINavigate } from '../../lib/gtag';
 
 export interface ProximityAlert {
   poi: NearbyPOI;
@@ -46,7 +47,7 @@ export default function ProximityToast({
             <div className="proximity-toast-actions">
               <button
                 className="proximity-toast-nav"
-                onClick={(e) => { e.stopPropagation(); onNavigate(alert.poi); }}
+                onClick={(e) => { e.stopPropagation(); trackNearbyPOINavigate(alert.poi.name, alert.poi.category); onNavigate(alert.poi); }}
               >
                 Navigate
               </button>
