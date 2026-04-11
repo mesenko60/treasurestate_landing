@@ -159,9 +159,9 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
 
       <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 20px 4rem' }}>
         <section className="content-section">
-          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+          <div className="pair-badges">
             {[townA, townB].map((t, i) => (
-              <div key={t.slug} style={{ flex: 1, minWidth: '200px', textAlign: 'center', padding: '1rem', background: i === 0 ? '#e8f0f3' : '#fdf0ef', borderRadius: '10px' }}>
+              <div key={t.slug} className="pair-badge" style={{ background: i === 0 ? '#e8f0f3' : '#fdf0ef' }}>
                 <Link href={`/montana-towns/${t.slug}/`} style={{ textDecoration: 'none' }}>
                   <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#204051' }}>{t.name}</div>
                   <div style={{ fontSize: '0.9rem', color: '#666', fontStyle: 'italic' }}>{t.nickname}</div>
@@ -253,10 +253,10 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
                 </table>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="pair-highlights">
                 {[townA, townB].map((town, idx) => (
                   <div key={town.slug}>
-                    <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>Top Highlights</div>
+                    <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>{town.name} Highlights</div>
                     {town.recreation?.highlights.map((p, i) => (
                       <Link
                         key={i}
@@ -276,6 +276,34 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
                   </div>
                 ))}
               </div>
+              <style jsx>{`
+                .pair-badges {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 1rem;
+                  margin-bottom: 1.5rem;
+                }
+                .pair-badge {
+                  text-align: center;
+                  padding: 1rem;
+                  border-radius: 10px;
+                }
+                .pair-highlights {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 1rem;
+                }
+                @media (max-width: 600px) {
+                  .pair-badges {
+                    grid-template-columns: 1fr;
+                    gap: 0.5rem;
+                  }
+                  .pair-highlights {
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                  }
+                }
+              `}</style>
             </div>
           )}
 

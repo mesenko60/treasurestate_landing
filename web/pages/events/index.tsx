@@ -115,26 +115,28 @@ export default function EventsPage() {
         </p>
 
         <h2 className="events-section-title">Featured Annual Events</h2>
-        <table className="events-table">
-          <thead>
-            <tr>
-              <th>Event</th>
-              <th>Town</th>
-              <th>Month</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {featuredEvents.map((event, i) => (
-              <tr key={i}>
-                <td>{event.name}</td>
-                <td><Link href={`/montana-towns/${event.townSlug}/`}>{event.town}</Link></td>
-                <td>{event.month}</td>
-                <td>{event.description}</td>
+        <div style={{ overflowX: 'auto' }}>
+          <table className="events-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Town</th>
+                <th>Month</th>
+                <th>Description</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {featuredEvents.map((event, i) => (
+                <tr key={i}>
+                  <td>{event.name}</td>
+                  <td><Link href={`/montana-towns/${event.townSlug}/`}>{event.town}</Link></td>
+                  <td>{event.month}</td>
+                  <td>{event.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <h2 className="events-section-title">Events by Season</h2>
 

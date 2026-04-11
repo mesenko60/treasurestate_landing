@@ -259,6 +259,10 @@ export default function GuidePage(props: Props) {
           .guide-content th { background: #204051; color: #fff; padding: 0.5rem 0.75rem; text-align: left; font-weight: 600; }
           .guide-content td { padding: 0.4rem 0.75rem; border-bottom: 1px solid #eee; }
           .guide-content tr:nth-child(even) td { background: #f9f9f9; }
+          .guide-content .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+          @media (max-width: 600px) {
+            .guide-content .pros-cons-grid { grid-template-columns: 1fr; }
+          }
         ` }} />
 
         <div className="toc-desktop">
@@ -625,7 +629,7 @@ function movingGuide(t: TownBundle): GuideData {
     id: 'pros-cons',
     heading: `Pros & Cons of Living in ${t.name}`,
     html: `
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+      <div class="pros-cons-grid">
         <div>
           <h3 style="color: #27ae60;">Pros</h3>
           <ul>${pros.map(p => `<li>${p}</li>`).join('')}</ul>
