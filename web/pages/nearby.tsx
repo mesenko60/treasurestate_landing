@@ -441,7 +441,9 @@ export default function NearbyPage() {
       <style jsx>{`
         .nearby-page {
           min-height: 100vh;
+          min-height: 100dvh;
           background: #f5f5f5;
+          overflow-x: hidden;
         }
 
         .nearby-prompt {
@@ -449,12 +451,17 @@ export default function NearbyPage() {
           align-items: center;
           justify-content: center;
           min-height: calc(100vh - 60px);
+          min-height: calc(100dvh - 60px);
           padding: 2rem;
+          box-sizing: border-box;
         }
 
         .nearby-prompt-inner {
           text-align: center;
           max-width: 420px;
+          width: 100%;
+          padding: 0 1rem;
+          box-sizing: border-box;
         }
 
         .nearby-prompt-icon {
@@ -516,14 +523,17 @@ export default function NearbyPage() {
           display: flex;
           flex-direction: column;
           height: calc(100vh - 60px);
+          height: calc(100dvh - 60px);
           position: relative;
+          overflow: hidden;
         }
 
         .nearby-controls {
           background: white;
           border-bottom: 1px solid #e0e0e0;
-          padding: 0.5rem 1rem;
+          padding: 0.5rem 0.75rem;
           z-index: 10;
+          flex-shrink: 0;
         }
 
         .nearby-controls-row {
@@ -616,6 +626,8 @@ export default function NearbyPage() {
           flex-wrap: wrap;
           gap: 4px;
           padding: 0.25rem 0;
+          max-height: 4.5rem;
+          overflow-y: auto;
         }
 
         .nearby-filter-meta {
@@ -966,15 +978,26 @@ export default function NearbyPage() {
             border-radius: 16px;
             max-height: 70vh;
           }
-
-          .nearby-active {
-            height: calc(100vh - 60px);
-          }
         }
 
         @media (max-width: 768px) {
+          .nearby-prompt {
+            min-height: calc(100vh - var(--bottom-nav-height));
+            min-height: calc(100dvh - var(--bottom-nav-height));
+            padding: 1.5rem 1rem;
+          }
+
+          .nearby-prompt h1 {
+            font-size: 1.6rem;
+          }
+
           .nearby-active {
-            height: calc(100vh - 60px - var(--bottom-nav-height));
+            height: calc(100vh - var(--bottom-nav-height));
+            height: calc(100dvh - var(--bottom-nav-height));
+          }
+
+          .nearby-page {
+            margin-bottom: calc(-1 * var(--bottom-nav-height));
           }
 
           .nearby-radius-btn {
