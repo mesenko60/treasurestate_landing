@@ -49,7 +49,7 @@ export default function NearbyPage() {
   const [enabledCategories, setEnabledCategories] = useState<Set<string>>(new Set(Object.keys(POI_CATEGORIES)));
   const [selectedPoi, setSelectedPoi] = useState<NearbyPOI | null>(null);
   const [expandedPoiId, setExpandedPoiId] = useState<number | null>(null);
-  const [viewMode, setViewMode] = useState<'map' | 'list'>('map');
+  const [viewMode, setViewMode] = useState<'map' | 'list'>('list');
   const watchIdRef = useRef<number | null>(null);
   const lastFetchRef = useRef<string>('');
 
