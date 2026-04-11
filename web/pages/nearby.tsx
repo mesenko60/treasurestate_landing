@@ -177,16 +177,68 @@ export default function NearbyPage() {
     saveAlertSettings(next);
   }, []);
 
+  const CATEGORY_PRIORITY: Record<string, number> = {
+    historic_marker: 1,
+    hot_spring: 2,
+    ski_area: 3,
+    waterfall: 4,
+    golf_course: 5,
+    fishing_access: 6,
+    campground: 7,
+    hiking: 8,
+    state_park: 9,
+    wildlife_viewing: 10,
+    photography: 11,
+    hunting_area: 12,
+    town: 13,
+    gnis_state_park: 14,
+    corridor_poi: 15,
+    recreation_site: 16,
+  };
+
   const dedupedPois = (() => {
-    const seen = new Map<string, NearbyPOI>();
+    const grouped = new Map<string, NearbyPOI[]>();
     for (const p of pois) {
-      const key = `${p.name.toLowerCase().trim()}_${p.lat.toFixed(3)}_${p.lng.toFixed(3)}`;
-      const existing = seen.get(key);
-      if (!existing || p.distance_meters < existing.distance_meters) {
-        seen.set(key, p);
-      }
+      const key = p.name.toLowerCase().trim();
+      const arr = grouped.get(key) || [];
+      arr.push(p);
+      grouped.set(key, arr);
     }
-    return Array.from(seen.values()).sort((a, b) => a.distance_meters - b.distance_meters);
+
+    const results: NearbyPOI[] = [];
+    for (const entries of grouped.values()) {
+      if (entries.length === 1) {
+        results.push(entries[0]);
+        continue;
+      }
+      entries.sort((a, b) =>
+        (CATEGORY_PRIORITY[a.category] ?? 99) - (CATEGORY_PRIORITY[b.category] ?? 99)
+      );
+      const best = entries[0];
+      const richest = entries.reduce((pick, e) => {
+        let score = 0;
+        if (e.description) score += 2;
+        if (e.address) score++;
+        if (e.phone) score++;
+        if (e.website) score++;
+        if (e.content_url) score++;
+        let pickScore = 0;
+        if (pick.description) pickScore += 2;
+        if (pick.address) pickScore++;
+        if (pick.phone) pickScore++;
+        if (pick.website) pickScore++;
+        if (pick.content_url) pickScore++;
+        return score > pickScore ? e : pick;
+      }, best);
+
+      results.push({
+        ...richest,
+        category: best.category,
+        distance_meters: Math.min(...entries.map(e => e.distance_meters)),
+      });
+    }
+
+    return results.sort((a, b) => a.distance_meters - b.distance_meters);
   })();
 
   const filteredPois = dedupedPois.filter((p) => enabledCategories.has(p.category));
