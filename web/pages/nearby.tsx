@@ -206,7 +206,7 @@ export default function NearbyPage() {
     }
 
     const results: NearbyPOI[] = [];
-    for (const entries of grouped.values()) {
+    for (const entries of Array.from(grouped.values())) {
       if (entries.length === 1) {
         results.push(entries[0]);
         continue;
