@@ -354,14 +354,13 @@ export default function CompareTool({ towns }: Props) {
           }
           @media (max-width: 600px) {
             .compare-selectors {
-              grid-template-columns: 1fr 1fr;
-              gap: 0.75rem;
+              grid-template-columns: 1fr;
+              gap: 0.5rem;
             }
             .compare-swap-btn {
-              grid-column: 1 / -1;
               justify-self: center;
-              order: -1;
-              padding: 0.5rem 2rem;
+              padding: 0.4rem 2rem;
+              font-size: 1rem;
             }
           }
         `}</style>
