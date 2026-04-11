@@ -42,6 +42,7 @@ export default function MobileBottomNav() {
             display: 'flex', flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', color: '#6b7280',
             fontFamily: "'Montserrat', sans-serif", fontSize: '0.75rem', fontWeight: 500,
+            flex: 1, minWidth: 0, padding: 0,
           }}
         >
           <div className="icon">🔍</div>
