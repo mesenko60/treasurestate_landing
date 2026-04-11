@@ -81,9 +81,12 @@ export default function PWAUpdateBanner() {
           z-index: 100000;
           background: linear-gradient(135deg, #1a5276, #2980b9);
           color: #fff;
-          padding: 0.75rem 1rem;
+          padding: 0.6rem 0.75rem;
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
           animation: slideDown 0.3s ease-out;
+          box-sizing: border-box;
+          width: 100%;
+          overflow: hidden;
         }
         @keyframes slideDown {
           from { transform: translateY(-100%); }
@@ -92,30 +95,33 @@ export default function PWAUpdateBanner() {
         .pwa-update-content {
           display: flex;
           align-items: center;
-          justify-content: center;
-          gap: 0.75rem;
+          gap: 0.5rem;
           max-width: 800px;
           margin: 0 auto;
-          flex-wrap: wrap;
+          box-sizing: border-box;
         }
         .pwa-update-icon {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
+          flex-shrink: 0;
         }
         .pwa-update-content p {
           margin: 0;
-          font-size: 0.95rem;
+          font-size: 0.85rem;
           font-weight: 500;
+          flex: 1;
+          min-width: 0;
         }
         .pwa-update-btn {
           background: #fff;
           color: #1a5276;
           border: none;
-          padding: 0.4rem 1rem;
+          padding: 0.35rem 0.75rem;
           border-radius: 4px;
           font-weight: 600;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           cursor: pointer;
           white-space: nowrap;
+          flex-shrink: 0;
         }
         .pwa-update-btn:hover {
           background: #eaf2f8;
@@ -124,19 +130,15 @@ export default function PWAUpdateBanner() {
           background: transparent;
           color: #fff;
           border: none;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           cursor: pointer;
-          padding: 0 0.25rem;
+          padding: 0 0.2rem;
           line-height: 1;
           opacity: 0.8;
+          flex-shrink: 0;
         }
         .pwa-update-dismiss:hover {
           opacity: 1;
-        }
-        @media (max-width: 480px) {
-          .pwa-update-content p {
-            font-size: 0.85rem;
-          }
         }
       `}</style>
     </>
