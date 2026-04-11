@@ -4,6 +4,10 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Header from '../components/Header';
 import { fetchNearbyPOIs, formatDistance, getCategoryInfo, POI_CATEGORIES } from '../lib/nearbyApi';
 import type { NearbyPOI } from '../lib/nearbyApi';
+import ProximityToast from '../components/nearby/ProximityToast';
+import type { ProximityAlert } from '../components/nearby/ProximityToast';
+import AlertPreferences, { loadAlertSettings, saveAlertSettings } from '../components/nearby/AlertPreferences';
+import type { AlertSettings } from '../components/nearby/AlertPreferences';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const NearbyMap = dynamic(() => import('../components/nearby/NearbyMap'), { ssr: false });
@@ -24,6 +28,18 @@ type GeoState =
   | { status: 'granted'; lat: number; lng: number }
   | { status: 'denied'; message: string };
 
+const ALERT_COOLDOWN_MS = 5 * 60 * 1000;
+
+function haversineMeters(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371000;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLng = ((lng2 - lng1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
 export default function NearbyPage() {
   const [geo, setGeo] = useState<GeoState>({ status: 'idle' });
   const [pois, setPois] = useState<NearbyPOI[]>([]);
@@ -34,6 +50,12 @@ export default function NearbyPage() {
   const [viewMode, setViewMode] = useState<'map' | 'list'>('map');
   const watchIdRef = useRef<number | null>(null);
   const lastFetchRef = useRef<string>('');
+
+  // Proximity alert state
+  const [alertSettings, setAlertSettings] = useState<AlertSettings>(() => loadAlertSettings());
+  const [alertPrefsOpen, setAlertPrefsOpen] = useState(false);
+  const [activeAlerts, setActiveAlerts] = useState<ProximityAlert[]>([]);
+  const alertedIdsRef = useRef<Map<number, number>>(new Map());
 
   const requestLocation = useCallback(() => {
     if (!navigator.geolocation) {
@@ -77,6 +99,67 @@ export default function NearbyPage() {
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [geo, radius]);
+
+  // Proximity alert detection
+  useEffect(() => {
+    if (geo.status !== 'granted' || !alertSettings.enabled || pois.length === 0) return;
+
+    const now = Date.now();
+    const newAlerts: ProximityAlert[] = [];
+
+    for (const poi of pois) {
+      if (!alertSettings.alertCategories.has(poi.category)) continue;
+
+      const dist = haversineMeters(geo.lat, geo.lng, poi.lat, poi.lng);
+      if (dist > alertSettings.triggerDistance) continue;
+
+      const lastAlerted = alertedIdsRef.current.get(poi.id);
+      if (lastAlerted && now - lastAlerted < ALERT_COOLDOWN_MS) continue;
+
+      alertedIdsRef.current.set(poi.id, now);
+      newAlerts.push({ poi: { ...poi, distance_meters: dist }, triggeredAt: now });
+    }
+
+    if (newAlerts.length > 0) {
+      setActiveAlerts((prev) => [...newAlerts, ...prev].slice(0, 3));
+
+      if (alertSettings.soundEnabled && typeof window !== 'undefined') {
+        try {
+          const ctx = new AudioContext();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 800;
+          osc.type = 'sine';
+          gain.gain.setValueAtTime(0.15, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+          osc.start(ctx.currentTime);
+          osc.stop(ctx.currentTime + 0.3);
+        } catch { /* audio context not available */ }
+      }
+    }
+  }, [geo, pois, alertSettings]);
+
+  const dismissAlert = useCallback((poiId: number) => {
+    setActiveAlerts((prev) => prev.filter((a) => a.poi.id !== poiId));
+  }, []);
+
+  const handleAlertSelect = useCallback((poi: NearbyPOI) => {
+    setSelectedPoi(poi);
+    setActiveAlerts((prev) => prev.filter((a) => a.poi.id !== poi.id));
+    setViewMode('map');
+  }, []);
+
+  const handleAlertNavigate = useCallback((poi: NearbyPOI) => {
+    window.open(`https://maps.google.com/maps?daddr=${poi.lat},${poi.lng}`, '_blank');
+    setActiveAlerts((prev) => prev.filter((a) => a.poi.id !== poi.id));
+  }, []);
+
+  const handleAlertSettingsUpdate = useCallback((next: AlertSettings) => {
+    setAlertSettings(next);
+    saveAlertSettings(next);
+  }, []);
 
   const filteredPois = pois.filter((p) => enabledCategories.has(p.category));
 
@@ -151,21 +234,31 @@ export default function NearbyPage() {
                     </button>
                   ))}
                 </div>
-                <div className="nearby-view-toggle">
+                <div className="nearby-right-controls">
                   <button
-                    className={viewMode === 'map' ? 'active' : ''}
-                    onClick={() => setViewMode('map')}
-                    aria-label="Map view"
+                    className={`nearby-alert-bell${alertSettings.enabled ? ' active' : ''}`}
+                    onClick={() => setAlertPrefsOpen(true)}
+                    aria-label="Alert settings"
+                    title="Pop-up alert settings"
                   >
-                    🗺️
+                    {alertSettings.enabled ? '🔔' : '🔕'}
                   </button>
-                  <button
-                    className={viewMode === 'list' ? 'active' : ''}
-                    onClick={() => setViewMode('list')}
-                    aria-label="List view"
-                  >
-                    📋
-                  </button>
+                  <div className="nearby-view-toggle">
+                    <button
+                      className={viewMode === 'map' ? 'active' : ''}
+                      onClick={() => setViewMode('map')}
+                      aria-label="Map view"
+                    >
+                      🗺️
+                    </button>
+                    <button
+                      className={viewMode === 'list' ? 'active' : ''}
+                      onClick={() => setViewMode('list')}
+                      aria-label="List view"
+                    >
+                      📋
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -278,6 +371,23 @@ export default function NearbyPage() {
               </div>
             )}
           </div>
+        )}
+
+        {geo.status === 'granted' && (
+          <>
+            <ProximityToast
+              alerts={activeAlerts}
+              onDismiss={dismissAlert}
+              onSelect={handleAlertSelect}
+              onNavigate={handleAlertNavigate}
+            />
+            <AlertPreferences
+              settings={alertSettings}
+              onUpdate={handleAlertSettingsUpdate}
+              open={alertPrefsOpen}
+              onClose={() => setAlertPrefsOpen(false)}
+            />
+          </>
         )}
       </div>
 
@@ -397,6 +507,38 @@ export default function NearbyPage() {
           background: var(--primary);
           color: white;
           border-color: var(--primary);
+        }
+
+        .nearby-right-controls {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .nearby-alert-bell {
+          background: #f0f0f0;
+          border: 1px solid #ddd;
+          width: 34px;
+          height: 34px;
+          border-radius: 8px;
+          font-size: 1.1rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.15s;
+          position: relative;
+        }
+
+        .nearby-alert-bell.active {
+          background: var(--primary);
+          border-color: var(--primary);
+          animation: bell-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes bell-pulse {
+          0%, 100% { box-shadow: none; }
+          50% { box-shadow: 0 0 0 3px rgba(59, 105, 120, 0.2); }
         }
 
         .nearby-view-toggle {
