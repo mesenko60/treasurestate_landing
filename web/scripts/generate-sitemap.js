@@ -136,6 +136,7 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     add(`${baseUrl}/events/`, 'monthly');
     add(`${baseUrl}/compare/`);
     add(`${baseUrl}/planners/`);
+    add(`${baseUrl}/nearby/`, 'weekly');
     add(`${baseUrl}/best-of/`);
   });
 

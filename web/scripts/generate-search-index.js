@@ -431,6 +431,7 @@ function walkMarkdownFilesSorted(absDir) {
   entries.push({ type: 'tool', title: 'Moving Guides', description: 'Relocation guides for every Montana town', url: '/guides/', keywords: 'moving guide relocation relocate' });
   entries.push({ type: 'tool', title: 'Best of Montana', description: 'Data-driven rankings of Montana towns', url: '/best-of/', keywords: 'best of rankings top 10 Montana towns' });
   entries.push({ type: 'tool', title: 'Explore Montana', description: 'Discover Montana travel and information', url: '/explore-montana/', keywords: 'explore Montana travel discover' });
+  entries.push({ type: 'tool', title: 'Nearby Points of Interest', description: 'GPS-powered discovery of historic markers, hot springs, trails, and attractions near your location', url: '/nearby/', keywords: 'nearby GPS location points of interest POI historic markers hot springs trails campgrounds discover around me' });
 
   const outPath = path.join(webDir, 'public', 'search-index.json');
   fs.writeFileSync(outPath, JSON.stringify(entries), 'utf8');

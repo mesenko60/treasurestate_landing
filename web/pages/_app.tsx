@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import * as gtag from '../lib/gtag'
 import GlobalSchema from '../components/GlobalSchema'
 import MobileBottomNav from '../components/MobileBottomNav'
+import PWAInstallPrompt from '../components/PWAInstallPrompt'
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -104,6 +105,7 @@ footer p{margin:0.3rem 0}
       <GlobalSchema />
       <Component {...pageProps} />
       <MobileBottomNav />
+      <PWAInstallPrompt />
     </>
   )
 }

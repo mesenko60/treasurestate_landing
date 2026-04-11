@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Treasure State",
+    "slug": "treasurestate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "treasurestate",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2c3e50"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.treasurestate.app",
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Treasure State uses your location to notify you when you are near historic markers, hot springs, trails, and other points of interest in Montana.",
+        "NSLocationWhenInUseUsageDescription": "Treasure State uses your location to show nearby points of interest in Montana.",
+        "NSLocationAlwaysUsageDescription": "Treasure State uses background location to notify you of nearby points of interest while you explore Montana.",
+        "UIBackgroundModes": ["location", "fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2c3e50"
+      },
+      "package": "com.treasurestate.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Treasure State uses your location to notify you of nearby historic markers, hot springs, and points of interest.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#3b6978"
+        }
+      ]
+    ],
+    "extra": {
+      "supabaseUrl": "https://cfcabzvlkxbefniqmcjb.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNmY2FienZsa3hiZWZuaXFtY2piIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwOTAwMzMsImV4cCI6MjA2MDY2NjAzM30.DG8cZR0sw54JuN4pvi3EpOlgxbyeOthFrsuoypHf3m8"
+    }
+  }
+}
