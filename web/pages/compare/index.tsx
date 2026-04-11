@@ -126,7 +126,7 @@ function ClimateChart({ townA, townB }: { townA: TownEntry; townB: TownEntry }) 
           })}
         </div>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+      <div className="cmp-climate-summary">
         {[townA, townB].map((town, idx) => (
           <div key={town.slug} style={{ textAlign: 'center', padding: '0.75rem', background: '#f8f9fa', borderRadius: '6px', border: '1px solid #eee' }}>
             <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.3rem', fontSize: '0.9rem' }}>{town.name}</div>
@@ -136,6 +136,20 @@ function ClimateChart({ townA, townB }: { townA: TownEntry; townB: TownEntry }) 
           </div>
         ))}
       </div>
+      <style jsx>{`
+        .cmp-climate-summary {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+          .cmp-climate-summary {
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+          }
+        }
+      `}</style>
     </div>
   );
 }
@@ -352,6 +366,31 @@ export default function CompareTool({ towns }: Props) {
             font-size: 1.2rem;
             line-height: 1;
           }
+          .compare-badges {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+          }
+          .compare-badge {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+          }
+          .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+          }
+          .compare-table th,
+          .compare-table td {
+            padding: 0.6rem 0.8rem;
+          }
+          .compare-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+          }
           @media (max-width: 600px) {
             .compare-selectors {
               grid-template-columns: 1fr;
@@ -362,15 +401,30 @@ export default function CompareTool({ towns }: Props) {
               padding: 0.4rem 2rem;
               font-size: 1rem;
             }
+            .compare-badges {
+              grid-template-columns: 1fr;
+              gap: 0.5rem;
+            }
+            .compare-table {
+              font-size: 0.8rem;
+            }
+            .compare-table th,
+            .compare-table td {
+              padding: 0.4rem 0.4rem;
+            }
+            .compare-highlights {
+              grid-template-columns: 1fr;
+              gap: 1.5rem;
+            }
           }
         `}</style>
 
         {townA && townB && (
           <div>
             {/* Nickname badges */}
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+            <div className="compare-badges">
               {[townA, townB].map((t, i) => (
-                <div key={t.slug} style={{ flex: 1, minWidth: '200px', textAlign: 'center', padding: '1rem', background: i === 0 ? '#e8f0f3' : '#fdf0ef', borderRadius: '10px' }}>
+                <div key={t.slug} className="compare-badge" style={{ background: i === 0 ? '#e8f0f3' : '#fdf0ef' }}>
                   <Link href={`/montana-towns/${t.slug}/`} style={{ textDecoration: 'none' }}>
                     <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#204051' }}>{t.name}</div>
                     <div style={{ fontSize: '0.9rem', color: '#666', fontStyle: 'italic' }}>{t.nickname}</div>
@@ -381,12 +435,12 @@ export default function CompareTool({ towns }: Props) {
 
             {/* Comparison table */}
             <div style={{ overflowX: 'auto', marginBottom: '1rem' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
+              <table className="compare-table">
                 <thead>
                   <tr style={{ background: '#f8f9fa' }}>
-                    <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'left', color: '#204051', width: '30%' }}>Overview</th>
-                    <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#3b6978', width: '35%' }}>{townA.name}</th>
-                    <th style={{ padding: '0.7rem 0.8rem', borderBottom: '2px solid #204051', textAlign: 'center', color: '#c0392b', width: '35%' }}>{townB.name}</th>
+                    <th style={{ borderBottom: '2px solid #204051', textAlign: 'left', color: '#204051', width: '30%' }}>Overview</th>
+                    <th style={{ borderBottom: '2px solid #204051', textAlign: 'center', color: '#3b6978', width: '35%' }}>{townA.name}</th>
+                    <th style={{ borderBottom: '2px solid #204051', textAlign: 'center', color: '#c0392b', width: '35%' }}>{townB.name}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -523,10 +577,10 @@ export default function CompareTool({ towns }: Props) {
                 </div>
 
                 {/* Top highlights */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="compare-highlights">
                   {[townA, townB].map((town, idx) => (
                     <div key={town.slug}>
-                      <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>Top Highlights</div>
+                      <div style={{ fontWeight: 600, color: idx === 0 ? '#3b6978' : '#c0392b', marginBottom: '0.5rem', fontSize: '0.85rem', textAlign: 'center' }}>{town.name} Highlights</div>
                       {town.recreation?.highlights.map((p, i) => (
                         <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', padding: '0.4rem 0.5rem', background: i % 2 === 0 ? '#f8f9fa' : '#fff', borderRadius: '4px', fontSize: '0.83rem' }}>
                           <span style={{ flexShrink: 0 }}>{REC_ICONS[p.type] || '📍'}</span>
