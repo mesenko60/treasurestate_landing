@@ -1,4 +1,6 @@
-const CACHE_VERSION = 'ts-pwa-v1';
+// Cache version is injected at build time by scripts/stamp-sw-version.js.
+// If not stamped, falls back to a static string.
+const CACHE_VERSION = '__SW_VERSION__' === '__SW_' + 'VERSION__' ? 'ts-pwa-dev' : '__SW_VERSION__';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const MAP_CACHE = `${CACHE_VERSION}-maps`;
@@ -16,7 +18,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => cache.addAll(STATIC_ASSETS))
   );
-  self.skipWaiting();
+  // Do NOT skipWaiting here — let the app decide when to activate
 });
 
 self.addEventListener('activate', (event) => {
@@ -32,18 +34,35 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+self.addEventListener('message', (event) => {
+  if (event.data === 'skip-waiting') {
+    self.skipWaiting();
+  }
+
+  if (event.data === 'cleanup-caches') {
+    caches.open(MAP_CACHE).then(async (cache) => {
+      const keys = await cache.keys();
+      if (keys.length > 500) {
+        const toDelete = keys.slice(0, keys.length - 500);
+        await Promise.all(toDelete.map((k) => cache.delete(k)));
+      }
+    });
+  }
+
+  if (event.data === 'get-version') {
+    event.source.postMessage({ type: 'sw-version', version: CACHE_VERSION });
+  }
+});
+
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Cache Supabase API/RPC responses (POI data) with network-first
   if (url.pathname.includes('/rest/v1/rpc/nearby_pois') || url.pathname.includes('/functions/v1/nearby-pois')) {
     event.respondWith(
       caches.open(DATA_CACHE).then((cache) =>
         fetch(event.request)
           .then((response) => {
-            if (response.ok) {
-              cache.put(event.request, response.clone());
-            }
+            if (response.ok) cache.put(event.request, response.clone());
             return response;
           })
           .catch(() => cache.match(event.request))
@@ -52,16 +71,13 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache map tiles with cache-first
   if (url.hostname.includes('mapbox') && (url.pathname.includes('/tiles/') || url.pathname.includes('/styles/'))) {
     event.respondWith(
       caches.open(MAP_CACHE).then((cache) =>
         cache.match(event.request).then((cached) => {
           if (cached) return cached;
           return fetch(event.request).then((response) => {
-            if (response.ok) {
-              cache.put(event.request, response.clone());
-            }
+            if (response.ok) cache.put(event.request, response.clone());
             return response;
           });
         })
@@ -70,7 +86,6 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache static assets with cache-first
   if (url.origin === self.location.origin) {
     event.respondWith(
       caches.match(event.request).then((cached) => {
@@ -84,18 +99,5 @@ self.addEventListener('fetch', (event) => {
       })
     );
     return;
-  }
-});
-
-// Periodic cache cleanup — limit map tile cache to ~50MB
-self.addEventListener('message', (event) => {
-  if (event.data === 'cleanup-caches') {
-    caches.open(MAP_CACHE).then(async (cache) => {
-      const keys = await cache.keys();
-      if (keys.length > 500) {
-        const toDelete = keys.slice(0, keys.length - 500);
-        await Promise.all(toDelete.map((k) => cache.delete(k)));
-      }
-    });
   }
 });

@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { View, Text, StyleSheet, Switch, ScrollView, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, Switch, ScrollView, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import { useLocation } from '../hooks/useLocation';
 import { POI_CATEGORIES } from '../lib/supabase';
 import { startBackgroundLocationTracking, stopBackgroundLocationTracking } from '../lib/backgroundTasks';
 import { setupNotifications } from '../lib/notifications';
+import { useOTAUpdate } from '../hooks/useOTAUpdate';
 
 export default function SettingsScreen() {
   const { requestBackgroundPermission } = useLocation();
+  const { status: updateStatus, error: updateError, checkForUpdate, applyUpdate } = useOTAUpdate();
   const [backgroundEnabled, setBackgroundEnabled] = useState(false);
   const [notifyRadius, setNotifyRadius] = useState(1609);
   const [enabledCategories, setEnabledCategories] = useState<Set<string>>(new Set(Object.keys(POI_CATEGORIES)));
@@ -87,6 +89,39 @@ export default function SettingsScreen() {
         </TouchableOpacity>
       ))}
 
+      <Text style={styles.sectionTitle}>App Updates</Text>
+      <View style={styles.updateCard}>
+        {updateStatus === 'checking' || updateStatus === 'downloading' ? (
+          <View style={styles.updateRow}>
+            <ActivityIndicator size="small" color="#3b6978" />
+            <Text style={styles.updateText}>
+              {updateStatus === 'checking' ? 'Checking for updates…' : 'Downloading update…'}
+            </Text>
+          </View>
+        ) : updateStatus === 'ready' ? (
+          <View style={styles.updateRow}>
+            <Text style={styles.updateTextBold}>A new version is ready!</Text>
+            <TouchableOpacity style={styles.updateBtn} onPress={applyUpdate}>
+              <Text style={styles.updateBtnText}>Restart Now</Text>
+            </TouchableOpacity>
+          </View>
+        ) : updateStatus === 'upToDate' || updateStatus === 'idle' ? (
+          <View style={styles.updateRow}>
+            <Text style={styles.updateText}>You're on the latest version.</Text>
+            <TouchableOpacity style={styles.updateBtnSecondary} onPress={checkForUpdate}>
+              <Text style={styles.updateBtnSecondaryText}>Check Again</Text>
+            </TouchableOpacity>
+          </View>
+        ) : updateStatus === 'error' ? (
+          <View style={styles.updateRow}>
+            <Text style={styles.updateTextError}>Update check failed{updateError ? `: ${updateError}` : ''}</Text>
+            <TouchableOpacity style={styles.updateBtnSecondary} onPress={checkForUpdate}>
+              <Text style={styles.updateBtnSecondaryText}>Retry</Text>
+            </TouchableOpacity>
+          </View>
+        ) : null}
+      </View>
+
       <Text style={styles.footer}>Your location data stays on your device and is never stored on our servers.</Text>
     </ScrollView>
   );
@@ -111,5 +146,14 @@ const styles = StyleSheet.create({
   checkbox: { width: 24, height: 24, borderRadius: 6, borderWidth: 2, borderColor: '#ddd', justifyContent: 'center', alignItems: 'center' },
   checkboxActive: { backgroundColor: '#3b6978', borderColor: '#3b6978' },
   checkmark: { color: 'white', fontSize: 14, fontWeight: '700' },
+  updateCard: { backgroundColor: 'white', padding: 16, borderRadius: 12, marginBottom: 8 },
+  updateRow: { flexDirection: 'row', alignItems: 'center', gap: 12, flexWrap: 'wrap' },
+  updateText: { flex: 1, fontSize: 14, color: '#555' },
+  updateTextBold: { flex: 1, fontSize: 15, fontWeight: '600', color: '#204051' },
+  updateTextError: { flex: 1, fontSize: 14, color: '#c0392b' },
+  updateBtn: { backgroundColor: '#3b6978', paddingVertical: 8, paddingHorizontal: 16, borderRadius: 8 },
+  updateBtnText: { color: 'white', fontWeight: '600', fontSize: 14 },
+  updateBtnSecondary: { paddingVertical: 8, paddingHorizontal: 16, borderRadius: 8, borderWidth: 1, borderColor: '#3b6978' },
+  updateBtnSecondaryText: { color: '#3b6978', fontWeight: '600', fontSize: 14 },
   footer: { fontSize: 12, color: '#aaa', textAlign: 'center', marginTop: 32, lineHeight: 18 },
 });

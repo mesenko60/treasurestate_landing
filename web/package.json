@@ -9,7 +9,7 @@
     "markers:gaps": "node scripts/report-marker-companion-gaps.mjs",
     "markers:export-gap-sources": "node scripts/export-marker-gap-sources.mjs",
     "images:convert": "node scripts/convert-images-to-webp.js",
-    "build": "next build && next export && node scripts/generate-sitemap.js",
+    "build": "next build && next export && node scripts/generate-sitemap.js && node scripts/stamp-sw-version.js",
     "indexnow": "node scripts/push-indexnow.js",
     "indexnow:force": "node scripts/push-indexnow.js --force",
     "start": "serve out",
