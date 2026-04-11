@@ -194,20 +194,22 @@ export default function NearbyMap({
                   {info.icon}
                 </div>
                 <div style={{
-                  background: info.color,
-                  color: 'white',
-                  fontSize: '0.55rem',
-                  fontWeight: 700,
-                  padding: '1px 5px',
+                  background: 'rgba(255,255,255,0.95)',
+                  color: '#204051',
+                  fontSize: '0.6rem',
+                  fontWeight: 600,
+                  padding: '2px 6px',
                   borderRadius: 4,
-                  marginTop: 2,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.3px',
+                  marginTop: 3,
+                  maxWidth: 100,
                   whiteSpace: 'nowrap',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  boxShadow: '0 1px 4px rgba(0,0,0,0.15)',
                   fontFamily: 'system-ui, -apple-system, sans-serif',
+                  borderLeft: `3px solid ${info.color}`,
                 }}>
-                  {info.label}
+                  {poi.name}
                 </div>
               </div>
             </Marker>
