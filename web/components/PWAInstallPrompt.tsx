@@ -1,4 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
+import {
+  trackPWAInstallPromptShown,
+  trackPWAInstallAccepted,
+  trackPWAInstallDismissed,
+  trackPWAInstalled,
+} from '../lib/gtag';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
@@ -12,7 +18,6 @@ export default function PWAInstallPrompt() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // Register service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(() => {});
     }
@@ -26,9 +31,19 @@ export default function PWAInstallPrompt() {
     const handler = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e as BeforeInstallPromptEvent);
+      trackPWAInstallPromptShown();
     };
     window.addEventListener('beforeinstallprompt', handler);
-    return () => window.removeEventListener('beforeinstallprompt', handler);
+
+    const installedHandler = () => {
+      trackPWAInstalled();
+    };
+    window.addEventListener('appinstalled', installedHandler);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handler);
+      window.removeEventListener('appinstalled', installedHandler);
+    };
   }, []);
 
   const handleInstall = useCallback(async () => {
@@ -36,13 +51,17 @@ export default function PWAInstallPrompt() {
     deferredPrompt.prompt();
     const choice = await deferredPrompt.userChoice;
     if (choice.outcome === 'accepted') {
+      trackPWAInstallAccepted();
       setDeferredPrompt(null);
+    } else {
+      trackPWAInstallDismissed();
     }
     setDismissed(true);
     sessionStorage.setItem('pwa-prompt-dismissed', '1');
   }, [deferredPrompt]);
 
   const handleDismiss = useCallback(() => {
+    trackPWAInstallDismissed();
     setDismissed(true);
     sessionStorage.setItem('pwa-prompt-dismissed', '1');
   }, []);

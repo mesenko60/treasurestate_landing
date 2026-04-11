@@ -109,3 +109,15 @@ export function trackMapInteraction(action: string) {
 export function trackAppUpdate(status: string) {
   sendEvent('app_update', { event_category: 'system', event_label: status });
 }
+
+export async function trackFirstOpen() {
+  const key = 'ga_first_open_sent';
+  const sent = await AsyncStorage.getItem(key);
+  if (sent) return;
+  sendEvent('first_open', { event_category: 'system', event_label: 'app_installed' });
+  await AsyncStorage.setItem(key, '1');
+}
+
+export async function trackAppOpen() {
+  sendEvent('app_open', { event_category: 'system' });
+}

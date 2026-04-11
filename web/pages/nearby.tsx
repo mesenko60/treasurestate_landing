@@ -48,6 +48,7 @@ export default function NearbyPage() {
   const [radius, setRadius] = useState(DEFAULT_RADIUS);
   const [enabledCategories, setEnabledCategories] = useState<Set<string>>(new Set(Object.keys(POI_CATEGORIES)));
   const [selectedPoi, setSelectedPoi] = useState<NearbyPOI | null>(null);
+  const [expandedPoiId, setExpandedPoiId] = useState<number | null>(null);
   const [viewMode, setViewMode] = useState<'map' | 'list'>('map');
   const watchIdRef = useRef<number | null>(null);
   const lastFetchRef = useRef<string>('');
@@ -320,29 +321,57 @@ export default function NearbyPage() {
                 )}
                 {filteredPois.map((poi) => {
                   const info = getCategoryInfo(poi.category);
+                  const isExpanded = expandedPoiId === poi.id;
                   return (
                     <article
                       key={poi.id}
-                      className={`nearby-card${selectedPoi?.id === poi.id ? ' selected' : ''}`}
-                      onClick={() => { setSelectedPoi(poi); gtag.trackNearbyPOIView(poi.name, poi.category, poi.distance_meters); }}
+                      className={`nearby-card${isExpanded ? ' expanded' : ''}`}
+                      onClick={() => {
+                        const next = isExpanded ? null : poi.id;
+                        setExpandedPoiId(next);
+                        if (next) gtag.trackNearbyPOIView(poi.name, poi.category, poi.distance_meters);
+                      }}
                     >
-                      <div className="nearby-card-icon" style={{ background: info.color }}>{info.icon}</div>
-                      <div className="nearby-card-body">
-                        <h3>{poi.name}</h3>
-                        <div className="nearby-card-meta">
-                          <span className="nearby-card-category">{info.label}</span>
-                          <span className="nearby-card-distance">{formatDistance(poi.distance_meters)}</span>
-                          {poi.rating && <span className="nearby-card-rating">★ {poi.rating}</span>}
+                      <div className="nearby-card-row">
+                        <div className="nearby-card-icon" style={{ background: info.color }}>{info.icon}</div>
+                        <div className="nearby-card-body">
+                          <h3>{poi.name}</h3>
+                          <div className="nearby-card-meta">
+                            <span className="nearby-card-category">{info.label}</span>
+                            <span className="nearby-card-distance">{formatDistance(poi.distance_meters)}</span>
+                            {poi.rating && <span className="nearby-card-rating">★ {poi.rating}{poi.reviews ? ` (${poi.reviews})` : ''}</span>}
+                          </div>
                         </div>
-                        {poi.description && (
-                          <p className="nearby-card-desc">{poi.description.substring(0, 150)}{poi.description.length > 150 ? '...' : ''}</p>
-                        )}
-                        {poi.content_url && (
-                          <a href={poi.content_url} className="nearby-card-link" onClick={(e) => e.stopPropagation()}>
-                            Learn more →
-                          </a>
-                        )}
+                        <span className={`nearby-card-chevron${isExpanded ? ' open' : ''}`}>▾</span>
                       </div>
+                      {isExpanded && (
+                        <div className="nearby-card-details">
+                          {poi.description && <p className="nearby-card-desc">{poi.description}</p>}
+                          <div className="nearby-card-info">
+                            {poi.address && <div className="nearby-card-info-row">📍 {poi.address}</div>}
+                            {poi.nearest_town && !poi.address && <div className="nearby-card-info-row">📍 Near {poi.nearest_town}</div>}
+                            {poi.phone && <div className="nearby-card-info-row">📞 <a href={`tel:${poi.phone}`} onClick={(e) => e.stopPropagation()}>{poi.phone}</a></div>}
+                            {poi.website && <div className="nearby-card-info-row">🌐 <a href={poi.website} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>Website</a></div>}
+                            {poi.subcategory && <div className="nearby-card-info-row">🏷️ {poi.subcategory}</div>}
+                          </div>
+                          <div className="nearby-card-actions">
+                            <a
+                              href={`https://maps.google.com/maps?daddr=${poi.lat},${poi.lng}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="nearby-card-action-btn primary"
+                              onClick={(e) => { e.stopPropagation(); gtag.trackNearbyPOINavigate(poi.name, poi.category); }}
+                            >
+                              Navigate
+                            </a>
+                            {poi.content_url && (
+                              <a href={poi.content_url} className="nearby-card-action-btn secondary" onClick={(e) => e.stopPropagation()}>
+                                Read More
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </article>
                   );
                 })}
@@ -657,8 +686,6 @@ export default function NearbyPage() {
         }
 
         .nearby-card {
-          display: flex;
-          gap: 0.75rem;
           background: white;
           border-radius: 10px;
           padding: 0.75rem;
@@ -668,10 +695,19 @@ export default function NearbyPage() {
           transition: border-color 0.15s, box-shadow 0.15s;
         }
 
-        .nearby-card:hover,
-        .nearby-card.selected {
+        .nearby-card:hover {
+          border-color: #e0e0e0;
+        }
+
+        .nearby-card.expanded {
           border-color: var(--primary);
-          box-shadow: 0 2px 8px rgba(59,105,120,0.12);
+          box-shadow: 0 2px 12px rgba(59,105,120,0.14);
+        }
+
+        .nearby-card-row {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
         }
 
         .nearby-card-icon {
@@ -716,23 +752,91 @@ export default function NearbyPage() {
           color: #e67e22;
         }
 
+        .nearby-card-chevron {
+          font-size: 1.1rem;
+          color: #bbb;
+          flex-shrink: 0;
+          transition: transform 0.2s;
+          margin-left: auto;
+        }
+
+        .nearby-card-chevron.open {
+          transform: rotate(180deg);
+          color: var(--primary);
+        }
+
+        .nearby-card-details {
+          padding-top: 0.75rem;
+          margin-top: 0.75rem;
+          border-top: 1px solid #f0f0f0;
+          animation: card-expand 0.2s ease-out;
+        }
+
+        @keyframes card-expand {
+          from { opacity: 0; max-height: 0; }
+          to { opacity: 1; max-height: 600px; }
+        }
+
         .nearby-card-desc {
+          font-size: 0.85rem;
+          color: #555;
+          margin: 0 0 0.75rem;
+          line-height: 1.55;
+        }
+
+        .nearby-card-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.35rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .nearby-card-info-row {
           font-size: 0.8rem;
           color: #666;
-          margin: 0.4rem 0 0;
-          line-height: 1.4;
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
         }
 
-        .nearby-card-link {
-          font-size: 0.8rem;
+        .nearby-card-info-row a {
           color: var(--primary);
           text-decoration: none;
-          font-weight: 600;
-          font-family: var(--font-primary);
         }
 
-        .nearby-card-link:hover {
+        .nearby-card-info-row a:hover {
           text-decoration: underline;
+        }
+
+        .nearby-card-actions {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .nearby-card-action-btn {
+          flex: 1;
+          text-align: center;
+          padding: 0.6rem;
+          border-radius: 8px;
+          text-decoration: none;
+          font-family: var(--font-primary);
+          font-weight: 600;
+          font-size: 0.85rem;
+          transition: opacity 0.15s;
+        }
+
+        .nearby-card-action-btn:hover {
+          opacity: 0.85;
+        }
+
+        .nearby-card-action-btn.primary {
+          background: var(--primary);
+          color: white;
+        }
+
+        .nearby-card-action-btn.secondary {
+          background: #f0f0f0;
+          color: var(--dark);
         }
 
         .nearby-detail-panel {

@@ -99,42 +99,72 @@ export default function NearbyScreen() {
 
   const renderPOI = ({ item }: { item: NearbyPOI }) => {
     const info = getCategoryInfo(item.category);
-    const isSelected = selectedPoi?.id === item.id;
+    const isExpanded = selectedPoi?.id === item.id;
 
     return (
       <TouchableOpacity
-        style={[styles.card, isSelected && styles.cardSelected]}
-        onPress={() => { setSelectedPoi(isSelected ? null : item); if (!isSelected) trackPOIView(item.name, item.category, item.distance_meters); }}
+        style={[styles.card, isExpanded && styles.cardSelected]}
+        onPress={() => {
+          setSelectedPoi(isExpanded ? null : item);
+          if (!isExpanded) trackPOIView(item.name, item.category, item.distance_meters);
+        }}
         activeOpacity={0.7}
       >
-        <View style={[styles.cardIcon, { backgroundColor: info.color }]}>
-          <Text style={styles.cardIconText}>{info.icon}</Text>
-        </View>
-        <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>{item.name}</Text>
-          <View style={styles.cardMeta}>
-            <Text style={styles.cardCategory}>{info.label}</Text>
-            <Text style={styles.cardDistance}>{formatDistance(item.distance_meters)}</Text>
-            {item.rating ? <Text style={styles.cardRating}>★ {item.rating}</Text> : null}
+        <View style={styles.cardHeader}>
+          <View style={[styles.cardIcon, { backgroundColor: info.color }]}>
+            <Text style={styles.cardIconText}>{info.icon}</Text>
           </View>
-          {isSelected && (
-            <View style={styles.cardActions}>
-              {item.description ? (
-                <Text style={styles.cardDesc} numberOfLines={3}>{item.description}</Text>
+          <View style={styles.cardBody}>
+            <Text style={styles.cardTitle}>{item.name}</Text>
+            <View style={styles.cardMeta}>
+              <Text style={styles.cardCategory}>{info.label}</Text>
+              <Text style={styles.cardDistance}>{formatDistance(item.distance_meters)}</Text>
+              {item.rating ? (
+                <Text style={styles.cardRating}>
+                  ★ {item.rating}{item.reviews ? ` (${item.reviews})` : ''}
+                </Text>
               ) : null}
-              <View style={styles.cardButtons}>
-                <TouchableOpacity style={styles.navButton} onPress={() => openDirections(item)}>
-                  <Text style={styles.navButtonText}>Navigate</Text>
-                </TouchableOpacity>
-                {item.content_url ? (
-                  <TouchableOpacity style={styles.detailButton} onPress={() => openWebPage(item)}>
-                    <Text style={styles.detailButtonText}>Details</Text>
-                  </TouchableOpacity>
-                ) : null}
-              </View>
             </View>
-          )}
+          </View>
+          <Text style={[styles.cardChevron, isExpanded && styles.cardChevronOpen]}>▾</Text>
         </View>
+        {isExpanded && (
+          <View style={styles.cardExpanded}>
+            {item.description ? (
+              <Text style={styles.cardDesc}>{item.description}</Text>
+            ) : null}
+            <View style={styles.cardInfoList}>
+              {item.address ? (
+                <Text style={styles.cardInfoRow}>📍 {item.address}</Text>
+              ) : item.nearest_town ? (
+                <Text style={styles.cardInfoRow}>📍 Near {item.nearest_town}</Text>
+              ) : null}
+              {item.phone ? (
+                <TouchableOpacity onPress={() => Linking.openURL(`tel:${item.phone}`)}>
+                  <Text style={[styles.cardInfoRow, styles.cardInfoLink]}>📞 {item.phone}</Text>
+                </TouchableOpacity>
+              ) : null}
+              {item.website ? (
+                <TouchableOpacity onPress={() => Linking.openURL(item.website!)}>
+                  <Text style={[styles.cardInfoRow, styles.cardInfoLink]}>🌐 Visit Website</Text>
+                </TouchableOpacity>
+              ) : null}
+              {item.subcategory ? (
+                <Text style={styles.cardInfoRow}>🏷️ {item.subcategory}</Text>
+              ) : null}
+            </View>
+            <View style={styles.cardButtons}>
+              <TouchableOpacity style={styles.navButton} onPress={() => openDirections(item)}>
+                <Text style={styles.navButtonText}>Navigate</Text>
+              </TouchableOpacity>
+              {item.content_url ? (
+                <TouchableOpacity style={styles.detailButton} onPress={() => openWebPage(item)}>
+                  <Text style={styles.detailButtonText}>Read More</Text>
+                </TouchableOpacity>
+              ) : null}
+            </View>
+          </View>
+        )}
       </TouchableOpacity>
     );
   };
@@ -194,8 +224,9 @@ const styles = StyleSheet.create({
   radiusBtnTextActive: { color: 'white' },
   statusBar: { fontSize: 12, color: '#888', marginTop: 6 },
   list: { paddingHorizontal: 12, paddingTop: 8, paddingBottom: 100 },
-  card: { flexDirection: 'row', backgroundColor: 'white', borderRadius: 12, padding: 12, marginBottom: 8, borderWidth: 2, borderColor: 'transparent' },
+  card: { backgroundColor: 'white', borderRadius: 12, padding: 12, marginBottom: 8, borderWidth: 2, borderColor: 'transparent' },
   cardSelected: { borderColor: '#3b6978' },
+  cardHeader: { flexDirection: 'row', alignItems: 'center' },
   cardIcon: { width: 44, height: 44, borderRadius: 10, justifyContent: 'center', alignItems: 'center' },
   cardIconText: { fontSize: 20 },
   cardBody: { flex: 1, marginLeft: 12 },
@@ -204,12 +235,17 @@ const styles = StyleSheet.create({
   cardCategory: { fontSize: 12, color: '#888' },
   cardDistance: { fontSize: 12, color: '#3b6978', fontWeight: '600' },
   cardRating: { fontSize: 12, color: '#e67e22' },
-  cardActions: { marginTop: 8 },
-  cardDesc: { fontSize: 13, color: '#555', lineHeight: 18, marginBottom: 8 },
+  cardChevron: { fontSize: 16, color: '#bbb', marginLeft: 4 },
+  cardChevronOpen: { color: '#3b6978', transform: [{ rotate: '180deg' }] },
+  cardExpanded: { marginTop: 12, paddingTop: 12, borderTopWidth: 1, borderTopColor: '#f0f0f0' },
+  cardDesc: { fontSize: 13.5, color: '#555', lineHeight: 20, marginBottom: 10 },
+  cardInfoList: { marginBottom: 10, gap: 4 },
+  cardInfoRow: { fontSize: 13, color: '#666' },
+  cardInfoLink: { color: '#3b6978' },
   cardButtons: { flexDirection: 'row', gap: 8 },
-  navButton: { flex: 1, backgroundColor: '#3b6978', paddingVertical: 8, borderRadius: 6, alignItems: 'center' },
+  navButton: { flex: 1, backgroundColor: '#3b6978', paddingVertical: 10, borderRadius: 8, alignItems: 'center' },
   navButtonText: { color: 'white', fontWeight: '600', fontSize: 14 },
-  detailButton: { flex: 1, backgroundColor: '#f0f0f0', paddingVertical: 8, borderRadius: 6, alignItems: 'center' },
+  detailButton: { flex: 1, backgroundColor: '#f0f0f0', paddingVertical: 10, borderRadius: 8, alignItems: 'center' },
   detailButtonText: { color: '#204051', fontWeight: '600', fontSize: 14 },
   emptyText: { fontSize: 15, color: '#999', textAlign: 'center' },
 });

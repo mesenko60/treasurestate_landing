@@ -362,3 +362,33 @@ export function trackNearbyPOIsLoaded(count: number, radiusMeters: number) {
     ...nearbyParams({ radius: radiusMeters }),
   });
 }
+
+/* ─── PWA Install Tracking ───────────────────────────────── */
+
+export function trackPWAInstallPromptShown() {
+  gtag()?.('event', 'pwa_install_prompt_shown', {
+    event_category: 'pwa',
+    event_label: 'banner_displayed',
+  });
+}
+
+export function trackPWAInstallAccepted() {
+  gtag()?.('event', 'pwa_install_accepted', {
+    event_category: 'pwa',
+    event_label: 'user_accepted',
+  });
+}
+
+export function trackPWAInstallDismissed() {
+  gtag()?.('event', 'pwa_install_dismissed', {
+    event_category: 'pwa',
+    event_label: 'user_dismissed',
+  });
+}
+
+export function trackPWAInstalled() {
+  gtag()?.('event', 'pwa_installed', {
+    event_category: 'pwa',
+    event_label: 'app_installed',
+  });
+}

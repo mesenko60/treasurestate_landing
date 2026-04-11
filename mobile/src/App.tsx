@@ -8,7 +8,7 @@ import MapScreen from './screens/MapScreen';
 import SavedScreen from './screens/SavedScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import { setupNotifications, addNotificationResponseListener } from './lib/notifications';
-import { trackScreenView } from './lib/analytics';
+import { trackScreenView, trackFirstOpen, trackAppOpen } from './lib/analytics';
 import './lib/backgroundTasks';
 
 const Tab = createBottomTabNavigator();
@@ -25,6 +25,8 @@ export default function App() {
 
   useEffect(() => {
     setupNotifications();
+    trackFirstOpen();
+    trackAppOpen();
 
     responseListenerRef.current = addNotificationResponseListener((response) => {
       const data = response.notification.request.content.data;
