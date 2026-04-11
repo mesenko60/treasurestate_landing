@@ -134,30 +134,77 @@ export default function NearbyMap({
               key={poi.id}
               latitude={poi.lat}
               longitude={poi.lng}
-              anchor="center"
+              anchor="bottom"
               onClick={handleMarkerClick(poi) as any}
             >
               <div
                 style={{
-                  width: isSelected ? 36 : 28,
-                  height: isSelected ? 36 : 28,
-                  background: info.color,
-                  borderRadius: '50%',
                   display: 'flex',
+                  flexDirection: 'column',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: isSelected ? '1.1rem' : '0.8rem',
                   cursor: 'pointer',
-                  border: isSelected ? '3px solid white' : '2px solid white',
-                  boxShadow: isSelected
-                    ? '0 0 0 2px ' + info.color + ', 0 3px 8px rgba(0,0,0,0.3)'
-                    : '0 1px 4px rgba(0,0,0,0.2)',
-                  transition: 'all 0.15s',
                   zIndex: isSelected ? 10 : 1,
+                  position: 'relative',
+                  transition: 'all 0.15s',
                 }}
-                title={poi.name}
               >
-                {info.icon}
+                {isSelected && (
+                  <div style={{
+                    background: 'white',
+                    borderRadius: 8,
+                    padding: '4px 8px',
+                    marginBottom: 4,
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                    maxWidth: 160,
+                    textAlign: 'center',
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                  }}>
+                    <div style={{ fontSize: '0.7rem', fontWeight: 700, color: info.color, textTransform: 'uppercase', letterSpacing: '0.3px' }}>
+                      {info.label}
+                    </div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#204051', lineHeight: 1.2, marginTop: 1 }}>
+                      {poi.name}
+                    </div>
+                  </div>
+                )}
+                <div
+                  style={{
+                    width: isSelected ? 36 : 28,
+                    height: isSelected ? 36 : 28,
+                    background: info.color,
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: isSelected ? '1.1rem' : '0.8rem',
+                    border: isSelected ? '3px solid white' : '2px solid white',
+                    boxShadow: isSelected
+                      ? '0 0 0 2px ' + info.color + ', 0 3px 8px rgba(0,0,0,0.3)'
+                      : '0 1px 4px rgba(0,0,0,0.2)',
+                    transition: 'all 0.15s',
+                  }}
+                  title={`${info.label}: ${poi.name}`}
+                >
+                  {info.icon}
+                </div>
+                <div style={{
+                  background: info.color,
+                  color: 'white',
+                  fontSize: '0.55rem',
+                  fontWeight: 700,
+                  padding: '1px 5px',
+                  borderRadius: 4,
+                  marginTop: 2,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.3px',
+                  whiteSpace: 'nowrap',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
+                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                }}>
+                  {info.label}
+                </div>
               </div>
             </Marker>
           );

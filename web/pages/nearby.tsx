@@ -291,6 +291,7 @@ export default function NearbyPage() {
                       className={`nearby-filter-btn${enabledCategories.has(cat) ? ' active' : ''}`}
                       onClick={() => toggleCategory(cat)}
                       style={{ '--cat-color': info.color } as React.CSSProperties}
+                      title={info.label}
                     >
                       <span className="nearby-filter-icon">{info.icon}</span>
                       <span className="nearby-filter-label">{info.label}</span>
@@ -982,7 +983,7 @@ export default function NearbyPage() {
           }
 
           .nearby-filter-label {
-            display: none;
+            font-size: 0.6rem;
           }
 
           .nearby-card {
