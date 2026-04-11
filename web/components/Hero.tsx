@@ -67,6 +67,7 @@ export default function Hero({ title, subtitle, image, alt, small, showSearch = 
         {subtitle && <p>{subtitle}</p>}
         {showSearch && (
           <button
+            className="hero-search-btn"
             onClick={() => window.dispatchEvent(new Event('openSearch'))}
             aria-label="Open search"
             style={{

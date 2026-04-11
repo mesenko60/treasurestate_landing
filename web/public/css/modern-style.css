@@ -64,7 +64,7 @@ body {
 }
 
 /* Mobile Adjustments for Bottom Nav */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     padding-bottom: var(--bottom-nav-height); /* Make room for sticky bottom nav */
   }
@@ -120,9 +120,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu-bar {
-    display: none; /* Hide top nav entirely on mobile */
+    display: none; /* Hide top nav on mobile/tablet — use bottom nav instead */
+  }
+  .hero-search-btn {
+    display: none !important; /* Search is in the mobile bottom nav */
   }
 }
 
@@ -142,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: env(safe-area-inset-bottom); /* iOS safe area */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .mobile-bottom-nav {
     display: flex;
   }
