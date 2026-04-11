@@ -40,6 +40,7 @@ export default function NearbyMap({
   radiusMeters: number;
 }) {
   const mapRef = useRef<MapRef>(null);
+  const prevRadiusRef = useRef<number | null>(null);
 
   const circleData = useMemo(
     () => radiusCircleGeoJSON(userLat, userLng, radiusMeters),
@@ -48,6 +49,9 @@ export default function NearbyMap({
 
   useEffect(() => {
     if (!mapRef.current) return;
+    if (prevRadiusRef.current === radiusMeters) return;
+    prevRadiusRef.current = radiusMeters;
+
     const map = mapRef.current;
     const padding = 60;
     const bounds = circleData.geometry.coordinates[0];
@@ -60,7 +64,7 @@ export default function NearbyMap({
       ],
       { padding, duration: 800 },
     );
-  }, [circleData]);
+  }, [circleData, radiusMeters]);
 
   const handleMarkerClick = useCallback(
     (poi: NearbyPOI) => (e: React.MouseEvent) => {
