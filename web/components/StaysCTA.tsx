@@ -48,7 +48,6 @@ export default function StaysCTA({ townName, slug }: Props) {
       <div style={{
         display: 'flex',
         gap: '0.75rem',
-        flexWrap: 'wrap',
         justifyContent: 'center',
       }}>
         <a
@@ -56,19 +55,23 @@ export default function StaysCTA({ townName, slug }: Props) {
           target="_blank"
           rel="noopener noreferrer sponsored"
           style={{
-            display: 'inline-flex',
+            flex: 1,
+            minWidth: 0,
+            display: 'flex',
             flexDirection: 'column',
+            alignItems: 'center',
             background: '#3b6978',
             color: '#fff',
-            padding: '0.7rem 1.3rem',
+            padding: '0.7rem 0.75rem',
             borderRadius: '8px',
             textDecoration: 'none',
             boxShadow: '0 2px 8px rgba(59,105,120,0.3)',
             lineHeight: 1.3,
+            textAlign: 'center',
           }}
         >
-          <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>
-            Find Vacation Rentals {townName ? `near ${name}` : 'in Montana'}
+          <span style={{ fontWeight: 600, fontSize: '0.88rem' }}>
+            Vacation Rentals
           </span>
           <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via VRBO</span>
         </a>
@@ -77,19 +80,23 @@ export default function StaysCTA({ townName, slug }: Props) {
           target="_blank"
           rel="noopener noreferrer sponsored"
           style={{
-            display: 'inline-flex',
+            flex: 1,
+            minWidth: 0,
+            display: 'flex',
             flexDirection: 'column',
+            alignItems: 'center',
             background: '#204051',
             color: '#fff',
-            padding: '0.7rem 1.3rem',
+            padding: '0.7rem 0.75rem',
             borderRadius: '8px',
             textDecoration: 'none',
             boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
             lineHeight: 1.3,
+            textAlign: 'center',
           }}
         >
-          <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>
-            Find Hotels {townName ? `near ${name}` : 'in Montana'}
+          <span style={{ fontWeight: 600, fontSize: '0.88rem' }}>
+            Hotels
           </span>
           <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via Expedia</span>
         </a>

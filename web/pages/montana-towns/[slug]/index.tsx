@@ -32,6 +32,7 @@ import { getCorridorsForTown, TownCorridor } from '../../../lib/town-corridors';
 import CrossHubCities from '../../../components/town/CrossHubCities';
 import RelatedContent from '../../../components/RelatedContent';
 import HistoricMarkers from '../../../components/town/HistoricMarkers';
+import CollapsibleSection from '../../../components/CollapsibleSection';
 import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
 import { isEnabled } from '../../../lib/feature-flags';
 import { getArticlesForTown, getFeaturedArticles, type ArticleSummary } from '../../../lib/articles';
@@ -263,8 +264,10 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
       <main style={{ display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto', padding: '0 20px', position: 'relative', marginTop: '-15px', zIndex: 1 }}>
         <style dangerouslySetInnerHTML={{__html: `
           .toc-desktop { display: none; }
+          .shopify-mobile-only { display: block; }
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
+            .shopify-mobile-only { display: none; }
           }
           .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
           .sidebar-sticky::-webkit-scrollbar { display: none; }
@@ -302,7 +305,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               <div className="content-section" style={{ marginBottom: '0' }}>
                 <div dangerouslySetInnerHTML={{ __html: cluster.hubIntro.replace(/\n/g, '</p><p>') }} style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#444' }} />
                 <div style={{
-                  display: 'flex', gap: '0.75rem', flexWrap: 'wrap',
+                  display: 'flex', gap: '0.75rem',
                   justifyContent: 'center', margin: '1.25rem 0 0.5rem',
                 }}>
                   <a
@@ -310,15 +313,16 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     style={{
-                      display: 'inline-flex', flexDirection: 'column', background: '#3b6978', color: '#fff',
-                      padding: '0.7rem 1.3rem', borderRadius: '8px', textDecoration: 'none',
-                      boxShadow: '0 2px 8px rgba(59,105,120,0.25)', lineHeight: 1.3,
+                      flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center',
+                      background: '#3b6978', color: '#fff',
+                      padding: '0.7rem 0.75rem', borderRadius: '8px', textDecoration: 'none',
+                      boxShadow: '0 2px 8px rgba(59,105,120,0.25)', lineHeight: 1.3, textAlign: 'center',
                       transition: 'transform 0.15s ease, box-shadow 0.15s ease',
                     }}
                     onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(59,105,120,0.35)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
                   >
-                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Find Vacation Rentals near {townName}</span>
+                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Vacation Rentals</span>
                     <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via VRBO</span>
                   </a>
                   <a
@@ -326,15 +330,16 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     style={{
-                      display: 'inline-flex', flexDirection: 'column', background: '#204051', color: '#fff',
-                      padding: '0.7rem 1.3rem', borderRadius: '8px', textDecoration: 'none',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.12)', lineHeight: 1.3,
+                      flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center',
+                      background: '#204051', color: '#fff',
+                      padding: '0.7rem 0.75rem', borderRadius: '8px', textDecoration: 'none',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.12)', lineHeight: 1.3, textAlign: 'center',
                       transition: 'transform 0.15s ease, box-shadow 0.15s ease',
                     }}
                     onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(32,64,81,0.35)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 6px rgba(0,0,0,0.12)'; }}
                   >
-                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Find Hotels near {townName}</span>
+                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Hotels</span>
                     <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via Expedia</span>
                   </a>
                 </div>
@@ -358,9 +363,21 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             </>
           )}
 
-          {townFacts && <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />}
-          {currentTownCoords && <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />}
-          {airportDistances && <TownDistances distances={airportDistances} />}
+          {townFacts && (
+            <CollapsibleSection title="Quick Facts" icon="📋" defaultOpen>
+              <TownQuickFacts elevation={townFacts.elevation} county={townFacts.county} region={townFacts.region} zipCode={townFacts.zipCode} areaCode={townFacts.areaCode} timeZone={townFacts.timeZone} population={townFacts.population} nearestHospital={healthcare?.nearestHospital ?? null} nearestHospitalDist={healthcare?.nearestHospitalDist ?? null} mainIndustry={economy?.mainIndustry ?? null} industryVintage={economy?.industryVintage ?? null} healthcareVintage={economy?.healthcareVintage ?? null} />
+            </CollapsibleSection>
+          )}
+          {currentTownCoords && (
+            <CollapsibleSection title="Current Weather" icon="🌤️">
+              <TownWeather lat={currentTownCoords.lat} lng={currentTownCoords.lng} />
+            </CollapsibleSection>
+          )}
+          {airportDistances && (
+            <CollapsibleSection title="Airport Distances" icon="✈️">
+              <TownDistances distances={airportDistances} />
+            </CollapsibleSection>
+          )}
           {recreationPlaces && recreationPlaces.length > 0 && (
             <div className="map-jump-links" aria-label={`${townName} recreation`}>
               <a href="#outdoor-recreation-heading" className="map-jump-link" onClick={scrollToSection('outdoor-recreation-heading')}>
@@ -375,12 +392,18 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             recreation={featuredMapRecreation}
             focusedRec={focusedRec}
           />
-          {recreationPlaces && recreationPlaces.length > 0 && <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />}
-          <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} historyProse={historyProse} />
+          {recreationPlaces && recreationPlaces.length > 0 && (
+            <CollapsibleSection title={`Outdoor Recreation Near ${townName}`} icon="🥾" defaultOpen>
+              <NearbyRecreation townName={townName} places={recreationPlaces} onSelectPlace={(p) => setFocusedRec({ ...p })} />
+            </CollapsibleSection>
+          )}
+          <CollapsibleSection title="History & Heritage" icon="🏛️">
+            <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} historyProse={historyProse} />
+          </CollapsibleSection>
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
 
           <div style={{
-            display: 'flex', gap: '0.75rem', flexWrap: 'wrap',
+            display: 'flex', gap: '0.75rem',
             justifyContent: 'center', margin: '0 0 2rem',
           }}>
             <a
@@ -388,8 +411,8 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               target="_blank"
               rel="noopener noreferrer sponsored"
               style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                padding: '0.7rem 1.3rem', borderRadius: '8px',
+                flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                padding: '0.7rem 0.75rem', borderRadius: '8px',
                 background: '#3b6978', color: '#fff',
                 textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
                 boxShadow: '0 2px 8px rgba(59,105,120,0.25)',
@@ -399,15 +422,15 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
             >
               <span aria-hidden="true">🏡</span>
-              Vacation Rentals in {townName}
+              Vacation Rentals
             </a>
             <a
               href={expediaUrl(townName, slug)}
               target="_blank"
               rel="noopener noreferrer sponsored"
               style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                padding: '0.7rem 1.3rem', borderRadius: '8px',
+                flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                padding: '0.7rem 0.75rem', borderRadius: '8px',
                 background: '#204051', color: '#fff',
                 textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
                 boxShadow: '0 2px 8px rgba(32,64,81,0.25)',
@@ -417,73 +440,90 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
               onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(32,64,81,0.25)'; }}
             >
               <span aria-hidden="true">🏨</span>
-              Hotels in {townName}
+              Hotels
             </a>
           </div>
 
-          {climateMonths && <ClimateTable townName={townName} months={climateMonths} />}
-          {housing && <TownHousing {...housing} />}
-          {townFacts?.schoolDistrict && <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />}
+          <div className="shopify-mobile-only">
+            <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          </div>
+
+          {climateMonths && (
+            <CollapsibleSection title={`${townName} Climate`} icon="🌡️">
+              <ClimateTable townName={townName} months={climateMonths} />
+            </CollapsibleSection>
+          )}
+          {housing && (
+            <CollapsibleSection title="Housing & Economy" icon="🏠">
+              <TownHousing {...housing} />
+            </CollapsibleSection>
+          )}
+          {townFacts?.schoolDistrict && (
+            <CollapsibleSection title="Schools" icon="🎓">
+              <SchoolInfo district={townFacts.schoolDistrict} enrollment={townFacts.schoolEnrollment ?? null} website={townFacts.schoolWebsite ?? null} graduationRate={economy?.graduationRate ?? null} perPupilSpending={economy?.perPupilSpending ?? null} schoolsVintage={economy?.schoolsVintage ?? null} />
+            </CollapsibleSection>
+          )}
           {scenicDrives.length > 0 && (
-            <div className="content-section" style={{ margin: '2rem 0' }}>
-              <h2 id="scenic-drives">Scenic Drives Near {townName}</h2>
-              <p style={{ fontSize: '0.92rem', color: '#555', lineHeight: 1.6, marginBottom: '1rem' }}>
-                {townName} is located along or near {scenicDrives.length === 1 ? 'a scenic corridor' : `${scenicDrives.length} scenic corridors`} in Montana.
-              </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '0.75rem' }}>
-                {scenicDrives.map(drive => (
-                  <Link
-                    key={drive.id}
-                    href={`/planners/corridors/${drive.id}/`}
-                    style={{
-                      display: 'block', padding: '1rem 1.15rem', background: '#f8faf8',
-                      border: '1px solid #e2ebe2', borderRadius: '10px', textDecoration: 'none',
-                      color: '#204051', transition: 'box-shadow 0.2s, transform 0.2s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                      <span style={{ width: 10, height: 10, borderRadius: '50%', background: drive.color, flexShrink: 0 }} />
-                      <strong style={{ fontSize: '0.95rem' }}>{drive.name}</strong>
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: '#666', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                      <span>{drive.highways.join(', ')}</span>
-                      <span>{drive.distanceMiles} mi</span>
-                      <span style={{ color: drive.difficulty === 'easy' ? '#27ae60' : drive.difficulty === 'moderate' ? '#f39c12' : '#c0392b', fontWeight: 600 }}>
-                        {drive.difficulty.charAt(0).toUpperCase() + drive.difficulty.slice(1)}
-                      </span>
-                      <span style={{ color: '#999', fontStyle: 'italic' }}>
-                        {drive.relation === 'start' ? 'Starts here' : drive.relation === 'end' ? 'Ends here' : drive.relation === 'through' ? 'Passes through' : 'Nearby'}
-                      </span>
-                    </div>
+            <CollapsibleSection title={`Scenic Drives Near ${townName}`} icon="🛣️">
+              <div className="content-section" style={{ margin: '0' }}>
+                <h2 id="scenic-drives" style={{ margin: '0.5rem 0 0.5rem' }}>Scenic Drives Near {townName}</h2>
+                <p style={{ fontSize: '0.92rem', color: '#555', lineHeight: 1.6, marginBottom: '1rem' }}>
+                  {townName} is located along or near {scenicDrives.length === 1 ? 'a scenic corridor' : `${scenicDrives.length} scenic corridors`} in Montana.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '0.75rem' }}>
+                  {scenicDrives.map(drive => (
+                    <Link
+                      key={drive.id}
+                      href={`/planners/corridors/${drive.id}/`}
+                      style={{
+                        display: 'block', padding: '1rem 1.15rem', background: '#fff',
+                        border: '1px solid #e2ebe2', borderRadius: '10px', textDecoration: 'none',
+                        color: '#204051', transition: 'box-shadow 0.2s, transform 0.2s',
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                        <span style={{ width: 10, height: 10, borderRadius: '50%', background: drive.color, flexShrink: 0 }} />
+                        <strong style={{ fontSize: '0.95rem' }}>{drive.name}</strong>
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#666', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                        <span>{drive.highways.join(', ')}</span>
+                        <span>{drive.distanceMiles} mi</span>
+                        <span style={{ color: drive.difficulty === 'easy' ? '#27ae60' : drive.difficulty === 'moderate' ? '#f39c12' : '#c0392b', fontWeight: 600 }}>
+                          {drive.difficulty.charAt(0).toUpperCase() + drive.difficulty.slice(1)}
+                        </span>
+                        <span style={{ color: '#999', fontStyle: 'italic' }}>
+                          {drive.relation === 'start' ? 'Starts here' : drive.relation === 'end' ? 'Ends here' : drive.relation === 'through' ? 'Passes through' : 'Nearby'}
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                  <Link href="/planners/backroads-planner" style={{ color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}>
+                    Explore all routes on the interactive planner →
                   </Link>
-                ))}
+                </div>
               </div>
-              <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                <Link href="/planners/backroads-planner" style={{ color: '#3b6978', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}>
-                  Explore all routes on the interactive planner →
-                </Link>
-              </div>
-            </div>
+            </CollapsibleSection>
           )}
 
           {crossLinks.length > 0 && (
-            <div style={{ margin: '2rem 0', padding: '1.25rem', background: '#f0f5f0', borderRadius: '10px', border: '1px solid #dde8dd' }}>
-              <h3 style={{ margin: '0 0 0.75rem', fontSize: '1rem', color: '#204051' }}>
-                {townName} in Our Rankings &amp; Guides
-              </h3>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                {crossLinks.map(link => (
-                  <Link key={link.href} href={link.href} style={{
-                    display: 'inline-block', padding: '0.4rem 0.85rem',
-                    background: '#fff', border: '1px solid #cddccd', borderRadius: '20px',
-                    color: '#3b6978', fontSize: '0.85rem', fontWeight: 500,
-                    textDecoration: 'none', transition: 'background 0.2s',
-                  }}>
-                    {link.label}
-                  </Link>
-                ))}
+            <CollapsibleSection title={`${townName} in Rankings & Guides`} icon="📊">
+              <div style={{ padding: '0.5rem 0' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  {crossLinks.map(link => (
+                    <Link key={link.href} href={link.href} style={{
+                      display: 'inline-block', padding: '0.4rem 0.85rem',
+                      background: '#fff', border: '1px solid #cddccd', borderRadius: '20px',
+                      color: '#3b6978', fontSize: '0.85rem', fontWeight: 500,
+                      textDecoration: 'none', transition: 'background 0.2s',
+                    }}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
+            </CollapsibleSection>
           )}
           <div style={{ textAlign: 'center', margin: '2rem 0' }}>
             <Link href={`/compare?a=${slug}`} style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
@@ -493,15 +533,17 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           <NearbyTowns towns={relatedTowns} />
 
           {cluster && (
-            <div className="content-section" style={{ marginTop: '1.5rem' }}>
-              <h2 id="faqs">Frequently Asked Questions About {townName}</h2>
-              {cluster.faqs.map((faq, i) => (
-                <div key={i} className="hub-faq-item">
-                  <div className="hub-faq-q">{faq.question}</div>
-                  <div className="hub-faq-a">{faq.answer}</div>
-                </div>
-              ))}
-            </div>
+            <CollapsibleSection title={`FAQs About ${townName}`} icon="❓">
+              <div className="content-section" style={{ marginTop: '0.5rem' }}>
+                <h2 id="faqs">Frequently Asked Questions About {townName}</h2>
+                {cluster.faqs.map((faq, i) => (
+                  <div key={i} className="hub-faq-item">
+                    <div className="hub-faq-q">{faq.question}</div>
+                    <div className="hub-faq-a">{faq.answer}</div>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleSection>
           )}
 
           {cluster && <CrossHubCities slug={slug} townName={townName} />}

@@ -29,15 +29,15 @@ export function injectStaysCTA(html: string, townName: string, slug: string): { 
   const expedia = expediaUrl(townName, slug);
 
   const ctaBlock = `
-<div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin:1.25rem 0 0.5rem;justify-content:center;text-align:center">
+<div style="display:flex;gap:0.75rem;margin:1.25rem 0 0.5rem;justify-content:center;text-align:center">
   <a href="${vrbo}" target="_blank" rel="noopener noreferrer sponsored"
-     style="display:inline-flex;flex-direction:column;background:#3b6978;color:#fff;padding:0.7rem 1.3rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(59,105,120,0.25);line-height:1.3">
-    <span style="font-weight:600;font-size:0.9rem">Find Vacation Rentals near ${townName}</span>
+     style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;background:#3b6978;color:#fff;padding:0.7rem 0.75rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(59,105,120,0.25);line-height:1.3">
+    <span style="font-weight:600;font-size:0.9rem">Vacation Rentals</span>
     <span style="font-size:0.72rem;opacity:0.7">via VRBO</span>
   </a>
   <a href="${expedia}" target="_blank" rel="noopener noreferrer sponsored"
-     style="display:inline-flex;flex-direction:column;background:#204051;color:#fff;padding:0.7rem 1.3rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.12);line-height:1.3">
-    <span style="font-weight:600;font-size:0.9rem">Find Hotels near ${townName}</span>
+     style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;background:#204051;color:#fff;padding:0.7rem 0.75rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.12);line-height:1.3">
+    <span style="font-weight:600;font-size:0.9rem">Hotels</span>
     <span style="font-size:0.72rem;opacity:0.7">via Expedia</span>
   </a>
 </div>

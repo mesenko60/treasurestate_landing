@@ -550,9 +550,11 @@ export default function TopicPage(props: Props) {
         <style dangerouslySetInnerHTML={{ __html: `
           .toc-desktop { display: none; }
           .toc-mobile { display: block; }
+          .shopify-mobile-only { display: block; }
           @media (min-width: 1024px) {
             .toc-desktop { display: block; width: 300px; flex-shrink: 0; }
             .toc-mobile { display: none; }
+            .shopify-mobile-only { display: none; }
           }
           .sidebar-sticky { scrollbar-width: none; -ms-overflow-style: none; }
           .sidebar-sticky::-webkit-scrollbar { display: none; }
@@ -602,6 +604,9 @@ export default function TopicPage(props: Props) {
             />
           )}
           {content}
+          <div className="shopify-mobile-only">
+            <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
+          </div>
           <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
           {!getClusterConfig(slug) && (
             <div style={{ margin: '2rem 0', padding: '1.25rem 1.5rem', background: '#f0f7fa', borderRadius: '10px', border: '1px solid #d4e4ec' }}>
