@@ -46,6 +46,7 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
   const [fuse, setFuse] = useState<Fuse<SearchEntry> | null>(null);
   const [loading, setLoading] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(-1);
+  const [isKeyboardNav, setIsKeyboardNav] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -117,10 +118,12 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
     if (e.key === 'Escape') { onClose(); return; }
     if (e.key === 'ArrowDown') {
       e.preventDefault();
+      setIsKeyboardNav(true);
       setSelectedIdx(i => Math.min(i + 1, results.length - 1));
     }
     if (e.key === 'ArrowUp') {
       e.preventDefault();
+      setIsKeyboardNav(true);
       setSelectedIdx(i => Math.max(i - 1, 0));
     }
     if (e.key === 'Enter' && selectedIdx >= 0 && results[selectedIdx]) {
@@ -130,10 +133,10 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
   };
 
   useEffect(() => {
-    if (selectedIdx < 0 || !listRef.current) return;
+    if (selectedIdx < 0 || !listRef.current || !isKeyboardNav) return;
     const el = listRef.current.children[selectedIdx] as HTMLElement | undefined;
     el?.scrollIntoView({ block: 'nearest' });
-  }, [selectedIdx]);
+  }, [selectedIdx, isKeyboardNav]);
 
   useEffect(() => {
     if (!open) return;
@@ -237,7 +240,7 @@ export default function SearchOverlay({ open, onClose }: { open: boolean; onClos
                       borderLeft: idx === selectedIdx ? '3px solid #3b6978' : '3px solid transparent',
                       transition: 'background 0.15s',
                     }}
-                    onMouseEnter={() => setSelectedIdx(idx)}
+                    onMouseEnter={() => { setIsKeyboardNav(false); setSelectedIdx(idx); }}
                   >
                     <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>{TYPE_ICONS[r.item.type] || '📄'}</span>
                     <div style={{ flex: 1, minWidth: 0 }}>
