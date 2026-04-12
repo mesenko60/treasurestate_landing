@@ -1,0 +1,1259 @@
+{
+  "type": "FeatureCollection",
+  "name": "Montana Railroad History",
+  "description": "GeoJSON mapping data for all 18 Montana Railroad History articles. Features include Point markers for key locations and LineString routes for railroad corridors. Each feature links to its source article via the 'article_file' property.",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.1853,
+          45.1535
+        ]
+      },
+      "properties": {
+        "id": "bear-creek-smith-mine",
+        "name": "Smith Mine (Bear Creek)",
+        "type": "point_of_interest",
+        "subtype": "mine_disaster",
+        "article": "The Bear Creek Coal Trains",
+        "article_file": "bear-creek-coal-trains.md",
+        "author_voice": "Upton Sinclair",
+        "description": "Site of the Smith Mine disaster, February 27, 1943. An explosion killed 74 miners. The mine served the Montana, Wyoming and Southern Railroad coal branch.",
+        "year": "1943",
+        "county": "Carbon County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.2467,
+          45.1833
+        ]
+      },
+      "properties": {
+        "id": "red-lodge-depot",
+        "name": "Red Lodge Depot (Montana, Wyoming and Southern RR)",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "The Bear Creek Coal Trains",
+        "article_file": "bear-creek-coal-trains.md",
+        "author_voice": "Upton Sinclair",
+        "description": "Southern terminus of the coal branch line from Billings. Red Lodge was the supply and service town for the Bear Creek coal mines.",
+        "year": "1898",
+        "county": "Carbon County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -108.5005,
+            45.7833
+          ],
+          [
+            -108.9167,
+            45.5
+          ],
+          [
+            -109.0833,
+            45.3333
+          ],
+          [
+            -109.2467,
+            45.1833
+          ],
+          [
+            -109.1853,
+            45.1535
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-mws-coal-branch",
+        "name": "Montana, Wyoming and Southern RR \u2014 Coal Branch",
+        "type": "route",
+        "subtype": "branch_line",
+        "article": "The Bear Creek Coal Trains",
+        "article_file": "bear-creek-coal-trains.md",
+        "author_voice": "Upton Sinclair",
+        "description": "The coal branch running from Billings south through Red Lodge to the Bear Creek mines. Operated from 1898 until the Smith Mine closed after the 1943 disaster.",
+        "railroad": "Montana, Wyoming and Southern Railroad",
+        "status": "abandoned",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.5833,
+          46.8667
+        ]
+      },
+      "properties": {
+        "id": "custer-creek-wreck-site",
+        "name": "Custer Creek Train Wreck Site",
+        "type": "point_of_interest",
+        "subtype": "disaster_site",
+        "article": "The Custer Creek Train Wreck of 1938",
+        "article_file": "custer-creek-train-wreck.md",
+        "author_voice": "Jack London",
+        "description": "Site of the June 19, 1938 wreck of the Milwaukee Road's Olympian passenger train. Flash flooding washed out a bridge over Custer Creek. 47 passengers killed. Near Saugus, Prairie County.",
+        "year": "1938",
+        "county": "Prairie County",
+        "marker_color": "#1A3A5C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7167,
+            46.4
+          ],
+          [
+            -105.0,
+            46.55
+          ],
+          [
+            -105.5833,
+            46.8667
+          ],
+          [
+            -106.3333,
+            46.9167
+          ],
+          [
+            -106.9167,
+            46.8667
+          ],
+          [
+            -108.5,
+            46.85
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-milwaukee-eastern-montana",
+        "name": "Milwaukee Road \u2014 Eastern Montana (Miles City to Harlowton corridor)",
+        "type": "route",
+        "subtype": "main_line",
+        "article": "The Custer Creek Train Wreck of 1938",
+        "article_file": "custer-creek-train-wreck.md",
+        "author_voice": "Jack London",
+        "description": "The Milwaukee Road's main line across eastern Montana. The Olympian and Columbian passenger trains ran this route. The Custer Creek wreck occurred near Saugus.",
+        "railroad": "Chicago, Milwaukee, St. Paul and Pacific Railroad",
+        "status": "abandoned",
+        "marker_color": "#1A3A5C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.86,
+          46.5508
+        ]
+      },
+      "properties": {
+        "id": "gold-creek-completion-site",
+        "name": "Northern Pacific Completion Site, Gold Creek",
+        "type": "point_of_interest",
+        "subtype": "historic_ceremony",
+        "article": "The Golden Spike at Gold Creek",
+        "article_file": "gold-creek-golden-spike.md",
+        "author_voice": "Washington Irving",
+        "description": "Site of the Northern Pacific Railroad completion ceremony, September 8, 1883. Henry Villard drove the final spike in the presence of Ulysses S. Grant and 300 guests. Now a National Historic Landmark.",
+        "year": "1883",
+        "county": "Powell County",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.0,
+            46.4
+          ],
+          [
+            -105.8333,
+            46.4167
+          ],
+          [
+            -106.9167,
+            46.8667
+          ],
+          [
+            -108.5,
+            46.85
+          ],
+          [
+            -109.5333,
+            46.8667
+          ],
+          [
+            -110.55,
+            46.6
+          ],
+          [
+            -111.0167,
+            46.5833
+          ],
+          [
+            -111.5,
+            46.5833
+          ],
+          [
+            -112.0333,
+            46.5833
+          ],
+          [
+            -112.86,
+            46.5508
+          ],
+          [
+            -113.9917,
+            46.8753
+          ],
+          [
+            -114.5,
+            47.0
+          ],
+          [
+            -115.0,
+            47.05
+          ],
+          [
+            -115.55,
+            47.0833
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-northern-pacific-main",
+        "name": "Northern Pacific Railway \u2014 Montana Main Line",
+        "type": "route",
+        "subtype": "main_line",
+        "article": "The Golden Spike at Gold Creek",
+        "article_file": "gold-creek-golden-spike.md",
+        "author_voice": "Washington Irving",
+        "description": "The Northern Pacific transcontinental main line across Montana, completed September 8, 1883. Runs from the North Dakota border through Glendive, Miles City, Billings, Livingston, Bozeman, Butte, Missoula, and into Idaho.",
+        "railroad": "Northern Pacific Railway",
+        "status": "active_as_bnsf",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.5333,
+          46.0033
+        ]
+      },
+      "properties": {
+        "id": "butte-ba-p-terminus",
+        "name": "Butte \u2014 BA&P Eastern Terminus",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "The Butte, Anaconda and Pacific Railway",
+        "article_file": "butte-anaconda-pacific-railway.md",
+        "author_voice": "Upton Sinclair",
+        "description": "Eastern terminus of the Butte, Anaconda and Pacific Railway at the Butte mine yards. The BA&P hauled copper ore from the mines to the Anaconda smelter 26 miles west. Electrified 1913.",
+        "year": "1894",
+        "county": "Silver Bow County",
+        "marker_color": "#4A0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.95,
+          46.1333
+        ]
+      },
+      "properties": {
+        "id": "anaconda-smelter",
+        "name": "Anaconda Copper Smelter",
+        "type": "point_of_interest",
+        "subtype": "industrial_site",
+        "article": "The Butte, Anaconda and Pacific Railway",
+        "article_file": "butte-anaconda-pacific-railway.md",
+        "author_voice": "Upton Sinclair",
+        "description": "The Anaconda Copper smelter, western terminus of the BA&P. Marcus Daly built the smelter in 1884 to process Butte copper ore. The 585-foot Anaconda Stack still stands as a state park.",
+        "year": "1884",
+        "county": "Deer Lodge County",
+        "marker_color": "#4A0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -112.5333,
+            46.0033
+          ],
+          [
+            -112.65,
+            46.05
+          ],
+          [
+            -112.75,
+            46.0833
+          ],
+          [
+            -112.85,
+            46.1
+          ],
+          [
+            -112.95,
+            46.1333
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-bap",
+        "name": "Butte, Anaconda and Pacific Railway",
+        "type": "route",
+        "subtype": "industrial_short_line",
+        "article": "The Butte, Anaconda and Pacific Railway",
+        "article_file": "butte-anaconda-pacific-railway.md",
+        "author_voice": "Upton Sinclair",
+        "description": "The 26-mile BA&P connecting Butte mines to the Anaconda smelter. First major electrified railroad in the US (1913). Operated electric locomotives until 1967. Abandoned 1985.",
+        "railroad": "Butte, Anaconda and Pacific Railway",
+        "status": "abandoned_trail",
+        "marker_color": "#4A0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.8333,
+          46.4333
+        ]
+      },
+      "properties": {
+        "id": "harlowton-jawbone-terminus",
+        "name": "Harlowton \u2014 Jawbone Railroad Western Terminus",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "The Jawbone: Richard Harlow's Impossible Railroad",
+        "article_file": "jawbone-railroad.md",
+        "author_voice": "Mark Twain",
+        "description": "Western terminus of the Montana Railroad (the 'Jawbone'), built by Richard Harlow. The line ran from Lombard on the Northern Pacific to Lewistown. Harlow financed it largely on talk \u2014 hence the nickname.",
+        "year": "1903",
+        "county": "Wheatland County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.4333,
+          47.0667
+        ]
+      },
+      "properties": {
+        "id": "lewistown-jawbone-eastern",
+        "name": "Lewistown \u2014 Jawbone Railroad Eastern Terminus",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "The Jawbone: Richard Harlow's Impossible Railroad",
+        "article_file": "jawbone-railroad.md",
+        "author_voice": "Mark Twain",
+        "description": "Eastern terminus of the Jawbone Railroad at Lewistown, the largest city in central Montana. The line served the agricultural and mining communities of the Judith Basin.",
+        "year": "1903",
+        "county": "Fergus County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -111.3833,
+            46.4167
+          ],
+          [
+            -110.8333,
+            46.45
+          ],
+          [
+            -110.3333,
+            46.5
+          ],
+          [
+            -109.8333,
+            46.4333
+          ],
+          [
+            -109.6667,
+            46.6667
+          ],
+          [
+            -109.5,
+            46.8333
+          ],
+          [
+            -109.4333,
+            47.0667
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-jawbone-railroad",
+        "name": "Montana Railroad (The Jawbone) \u2014 Lombard to Lewistown",
+        "type": "route",
+        "subtype": "branch_line",
+        "article": "The Jawbone: Richard Harlow's Impossible Railroad",
+        "article_file": "jawbone-railroad.md",
+        "author_voice": "Mark Twain",
+        "description": "Richard Harlow's 'Jawbone Railroad' running from Lombard (NP junction) through Harlowton to Lewistown. Built 1900-1903 on credit and promises. Absorbed by the Milwaukee Road in 1908.",
+        "railroad": "Montana Railroad / Milwaukee Road",
+        "status": "abandoned",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.3548,
+          48.3166
+        ]
+      },
+      "properties": {
+        "id": "marias-pass-summit",
+        "name": "Marias Pass Summit",
+        "type": "point_of_interest",
+        "subtype": "mountain_pass",
+        "article": "The Discovery of Marias Pass",
+        "article_file": "marias-pass-great-northern.md",
+        "author_voice": "Jack London",
+        "description": "Marias Pass, elevation 5,213 ft \u2014 the lowest crossing of the Continental Divide in the northern Rocky Mountains. John Frank Stevens discovered it for the Great Northern Railway on December 11, 1889, walking alone in temperatures of -40\u00b0F.",
+        "year": "1889",
+        "county": "Glacier County",
+        "marker_color": "#1A3A5C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.36,
+          48.31
+        ]
+      },
+      "properties": {
+        "id": "john-frank-stevens-monument",
+        "name": "John Frank Stevens Monument",
+        "type": "point_of_interest",
+        "subtype": "monument",
+        "article": "The Discovery of Marias Pass",
+        "article_file": "marias-pass-great-northern.md",
+        "author_voice": "Jack London",
+        "description": "Monument to John Frank Stevens at Marias Pass, honoring his solo winter discovery of the pass in 1889. A statue of Theodore Roosevelt also stands nearby.",
+        "year": "1925",
+        "county": "Glacier County",
+        "marker_color": "#1A3A5C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.8333,
+          46.4333
+        ]
+      },
+      "properties": {
+        "id": "harlowton-electrification-start",
+        "name": "Harlowton \u2014 Eastern End of Rocky Mountain Electrification",
+        "type": "point_of_interest",
+        "subtype": "electrification_terminal",
+        "article": "The Milwaukee Road Electrification",
+        "article_file": "milwaukee-road-electrification.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "Harlowton was the eastern end of the Milwaukee Road's Rocky Mountain Division electrification (1915). Electric locomotives took over here from steam for the mountain crossing to Avery, Idaho.",
+        "year": "1915",
+        "county": "Wheatland County",
+        "marker_color": "#8B4513"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -109.8333,
+            46.4333
+          ],
+          [
+            -110.1667,
+            46.5
+          ],
+          [
+            -110.5,
+            46.5833
+          ],
+          [
+            -111.0167,
+            46.5833
+          ],
+          [
+            -111.5,
+            46.55
+          ],
+          [
+            -112.0333,
+            46.5833
+          ],
+          [
+            -112.5333,
+            46.0033
+          ],
+          [
+            -113.0,
+            46.2
+          ],
+          [
+            -113.5,
+            46.5
+          ],
+          [
+            -114.0,
+            46.8667
+          ],
+          [
+            -114.5,
+            47.0
+          ],
+          [
+            -114.8667,
+            47.1167
+          ],
+          [
+            -115.1333,
+            47.1833
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-milwaukee-rocky-mountain-electrified",
+        "name": "Milwaukee Road \u2014 Rocky Mountain Division (Electrified, 1915-1974)",
+        "type": "route",
+        "subtype": "electrified_main_line",
+        "article": "The Milwaukee Road Electrification",
+        "article_file": "milwaukee-road-electrification.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "The Milwaukee Road's electrified Rocky Mountain Division from Harlowton, MT to Avery, ID. 440 miles of 3,000V DC overhead wire. First major mainline electrification in the US. Operated 1915-1974.",
+        "railroad": "Chicago, Milwaukee, St. Paul and Pacific Railroad",
+        "status": "abandoned",
+        "marker_color": "#8B4513"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.55,
+          46.6
+        ]
+      },
+      "properties": {
+        "id": "billings-np-land-office",
+        "name": "Billings \u2014 Northern Pacific Land Office",
+        "type": "point_of_interest",
+        "subtype": "historic_site",
+        "article": "Sodbusters and the Railroad Land Promoters",
+        "article_file": "homestead-boom-railroad-promoters.md",
+        "author_voice": "Mark Twain",
+        "description": "Billings was platted by the Northern Pacific in 1882 and named for railroad president Frederick Billings. The NP's land office here sold railroad grant lands to homesteaders lured by promotional literature promising adequate rainfall and fertile soil.",
+        "year": "1882",
+        "county": "Yellowstone County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.56,
+          45.7833
+        ]
+      },
+      "properties": {
+        "id": "livingston-np-depot",
+        "name": "Livingston \u2014 Northern Pacific Division Point",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "Sodbusters and the Railroad Land Promoters",
+        "article_file": "homestead-boom-railroad-promoters.md",
+        "author_voice": "Mark Twain",
+        "description": "Livingston was the Northern Pacific's division point for the Yellowstone branch and the gateway to Yellowstone National Park. The 1902 depot still stands. Named for NP director Crawford Livingston.",
+        "year": "1882",
+        "county": "Park County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0333,
+          46.5833
+        ]
+      },
+      "properties": {
+        "id": "helena-chinese-railroad-workers",
+        "name": "Helena \u2014 Chinese Railroad Worker Community",
+        "type": "point_of_interest",
+        "subtype": "historic_community",
+        "article": "The Chinese Forerunners of the Northern Pacific",
+        "article_file": "chinese-railroad-workers.md",
+        "author_voice": "Charles Eastman",
+        "description": "Helena's Chinatown was established in part by Chinese workers who graded the Northern Pacific right-of-way through the mountains. An estimated 15,000 Chinese laborers worked on the NP's Montana construction in the 1880s.",
+        "year": "1883",
+        "county": "Lewis and Clark County",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9917,
+          46.8753
+        ]
+      },
+      "properties": {
+        "id": "missoula-chinese-railroad-workers",
+        "name": "Missoula \u2014 Northern Pacific Mountain Division",
+        "type": "point_of_interest",
+        "subtype": "historic_site",
+        "article": "The Chinese Forerunners of the Northern Pacific",
+        "article_file": "chinese-railroad-workers.md",
+        "author_voice": "Charles Eastman",
+        "description": "Missoula was a key point on the Northern Pacific's mountain division, where Chinese laborers performed much of the grading through the Clark Fork canyon. The Missoula NP depot (1901) still stands.",
+        "year": "1883",
+        "county": "Missoula County",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.7333,
+          48.55
+        ]
+      },
+      "properties": {
+        "id": "browning-blackfeet-reservation",
+        "name": "Browning \u2014 Blackfeet Reservation (Great Northern Route)",
+        "type": "point_of_interest",
+        "subtype": "indigenous_site",
+        "article": "The Iron Horse and the Blackfeet Nation",
+        "article_file": "blackfeet-displacement-railroad.md",
+        "author_voice": "Charles Eastman",
+        "description": "Browning is the seat of the Blackfeet Nation. The Great Northern Railway crossed Blackfeet territory under an 1895 agreement that ceded the mineral strip along the Rocky Mountain Front \u2014 land that became the eastern portion of Glacier National Park in 1910.",
+        "year": "1895",
+        "county": "Glacier County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9833,
+          48.55
+        ]
+      },
+      "properties": {
+        "id": "cut-bank-great-northern-blackfeet",
+        "name": "Cut Bank \u2014 Great Northern / Blackfeet Territory",
+        "type": "point_of_interest",
+        "subtype": "historic_site",
+        "article": "The Iron Horse and the Blackfeet Nation",
+        "article_file": "blackfeet-displacement-railroad.md",
+        "author_voice": "Charles Eastman",
+        "description": "Cut Bank sits on the edge of the Blackfeet Reservation. The Great Northern's Hi-Line route passed through here, bisecting Blackfeet hunting territory and accelerating the end of the buffalo economy.",
+        "year": "1892",
+        "county": "Glacier County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.2185,
+          48.4439
+        ]
+      },
+      "properties": {
+        "id": "east-glacier-park-station",
+        "name": "East Glacier Park Station",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "See America First: The Great Northern and Glacier Park",
+        "article_file": "glacier-park-great-northern.md",
+        "author_voice": "John Muir",
+        "description": "East Glacier Park Station, built 1912. Gateway to Glacier Park Lodge, the Great Northern's flagship hotel. Still an active Amtrak Empire Builder stop (seasonal). The station and lodge were the centerpiece of the GN's 'See America First' tourism campaign.",
+        "year": "1912",
+        "county": "Glacier County",
+        "marker_color": "#1A5C2E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.3356,
+          48.4136
+        ]
+      },
+      "properties": {
+        "id": "whitefish-station",
+        "name": "Whitefish Station (Empire Builder)",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "See America First: The Great Northern and Glacier Park",
+        "article_file": "glacier-park-great-northern.md",
+        "author_voice": "John Muir",
+        "description": "Whitefish Station, the western gateway to Glacier National Park on the Great Northern/BNSF main line. Active Amtrak Empire Builder stop. The 1927 depot is on the National Register of Historic Places.",
+        "year": "1927",
+        "county": "Flathead County",
+        "marker_color": "#1A5C2E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -111.9833,
+            48.55
+          ],
+          [
+            -112.7333,
+            48.55
+          ],
+          [
+            -113.2185,
+            48.4439
+          ],
+          [
+            -113.3548,
+            48.3166
+          ],
+          [
+            -113.8,
+            48.35
+          ],
+          [
+            -114.3356,
+            48.4136
+          ],
+          [
+            -114.7,
+            48.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-great-northern-glacier",
+        "name": "Great Northern Railway \u2014 Glacier Park Corridor",
+        "type": "route",
+        "subtype": "main_line",
+        "article": "See America First: The Great Northern and Glacier Park",
+        "article_file": "glacier-park-great-northern.md",
+        "author_voice": "John Muir",
+        "description": "The Great Northern's route through Glacier National Park's southern edge, from Cut Bank through East Glacier and Marias Pass to Whitefish. The corridor that James J. Hill used to promote 'America's Alps' to tourists.",
+        "railroad": "Great Northern Railway / BNSF",
+        "status": "active",
+        "marker_color": "#1A5C2E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1833,
+          47.2
+        ]
+      },
+      "properties": {
+        "id": "st-paul-pass-tunnel-east-portal",
+        "name": "St. Paul Pass Tunnel \u2014 East Portal (Montana)",
+        "type": "point_of_interest",
+        "subtype": "tunnel_portal",
+        "article": "The St. Paul Pass Tunnel",
+        "article_file": "st-paul-pass-tunnel.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "East portal of the St. Paul Pass (Taft) Tunnel on the Montana-Idaho border. 8,771 feet long, completed 1908. The Milwaukee Road bored through the Bitterroot Range at 4,157 ft elevation. Now the eastern trailhead of the Route of the Hiawatha bike trail.",
+        "year": "1908",
+        "county": "Mineral County",
+        "marker_color": "#8B4513"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.2167,
+          47.1833
+        ]
+      },
+      "properties": {
+        "id": "st-paul-pass-tunnel-west-portal",
+        "name": "St. Paul Pass Tunnel \u2014 West Portal (Idaho)",
+        "type": "point_of_interest",
+        "subtype": "tunnel_portal",
+        "article": "The St. Paul Pass Tunnel",
+        "article_file": "st-paul-pass-tunnel.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "West portal of the St. Paul Pass Tunnel near Avery, Idaho. The tunnel was the key engineering achievement of the Milwaukee Road's Pacific Extension. Now the western end of the Route of the Hiawatha trail.",
+        "year": "1908",
+        "county": "Shoshone County, Idaho",
+        "marker_color": "#8B4513"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.8333,
+          46.4333
+        ]
+      },
+      "properties": {
+        "id": "harlowton-milwaukee-abandonment",
+        "name": "Harlowton \u2014 Milwaukee Road Abandonment Point",
+        "type": "point_of_interest",
+        "subtype": "abandonment_site",
+        "article": "The Longest Ghost: Abandoning the Milwaukee Road",
+        "article_file": "abandoned-milwaukee-road.md",
+        "author_voice": "Henry David Thoreau",
+        "description": "Harlowton was the eastern end of the Milwaukee Road's Pacific Extension in Montana. When the railroad abandoned its western lines in 1980, the tracks were pulled up and the right-of-way fell silent. The Milwaukee Road depot still stands.",
+        "year": "1980",
+        "county": "Wheatland County",
+        "marker_color": "#555555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -109.8333,
+            46.4333
+          ],
+          [
+            -110.5,
+            46.5833
+          ],
+          [
+            -111.0167,
+            46.5833
+          ],
+          [
+            -112.0333,
+            46.5833
+          ],
+          [
+            -112.5333,
+            46.0033
+          ],
+          [
+            -113.5,
+            46.5
+          ],
+          [
+            -114.5,
+            47.0
+          ],
+          [
+            -115.1833,
+            47.2
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-milwaukee-abandoned-montana",
+        "name": "Milwaukee Road \u2014 Abandoned Montana Right-of-Way (1980)",
+        "type": "route",
+        "subtype": "abandoned_right_of_way",
+        "article": "The Longest Ghost: Abandoning the Milwaukee Road",
+        "article_file": "abandoned-milwaukee-road.md",
+        "author_voice": "Henry David Thoreau",
+        "description": "The Milwaukee Road's abandoned right-of-way across Montana. Tracks pulled up 1980. Portions now converted to trail use including the Route of the Hiawatha near St. Paul Pass. The rest is a ghost corridor visible on satellite imagery.",
+        "railroad": "Chicago, Milwaukee, St. Paul and Pacific Railroad",
+        "status": "abandoned",
+        "marker_color": "#555555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.6573,
+          47.8346
+        ]
+      },
+      "properties": {
+        "id": "fort-benton-levee",
+        "name": "Fort Benton \u2014 Missouri River Levee",
+        "type": "point_of_interest",
+        "subtype": "historic_landing",
+        "article": "The End of the Steamboat Era at Fort Benton",
+        "article_file": "end-of-steamboat-era.md",
+        "author_voice": "Washington Irving",
+        "description": "Fort Benton's levee on the Missouri River \u2014 the farthest inland port in North America. Steamboats traveled 2,600 miles from St. Louis to reach here. The arrival of the Great Northern Railway in 1887 ended the steamboat era. The levee and historic district are preserved.",
+        "year": "1887",
+        "county": "Chouteau County",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.66,
+          47.83
+        ]
+      },
+      "properties": {
+        "id": "fort-benton-great-northern-depot",
+        "name": "Fort Benton \u2014 Great Northern Depot",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "The End of the Steamboat Era at Fort Benton",
+        "article_file": "end-of-steamboat-era.md",
+        "author_voice": "Washington Irving",
+        "description": "The Great Northern Railway reached Fort Benton in 1887, ending the steamboat trade that had sustained the town since 1846. The depot replaced the levee as the center of commerce.",
+        "year": "1887",
+        "county": "Chouteau County",
+        "marker_color": "#8B6914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.3356,
+          48.4136
+        ]
+      },
+      "properties": {
+        "id": "whitefish-empire-builder",
+        "name": "Whitefish \u2014 Empire Builder Station",
+        "type": "point_of_interest",
+        "subtype": "depot",
+        "article": "Forty-Five Hours Through the Mountains: The Empire Builder",
+        "article_file": "empire-builder-passenger-train.md",
+        "author_voice": "John Muir",
+        "description": "Whitefish is the primary Montana stop for Amtrak's Empire Builder, the direct descendant of the Great Northern's flagship train inaugurated June 10, 1929. The train runs Chicago to Seattle/Portland, 2,206 miles.",
+        "year": "1929",
+        "county": "Flathead County",
+        "marker_color": "#1A5C2E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.15,
+            48.1667
+          ],
+          [
+            -105.6333,
+            48.3167
+          ],
+          [
+            -106.6167,
+            48.55
+          ],
+          [
+            -109.7167,
+            48.55
+          ],
+          [
+            -110.45,
+            48.55
+          ],
+          [
+            -111.9833,
+            48.55
+          ],
+          [
+            -112.7333,
+            48.55
+          ],
+          [
+            -113.2185,
+            48.4439
+          ],
+          [
+            -113.3548,
+            48.3166
+          ],
+          [
+            -114.3356,
+            48.4136
+          ],
+          [
+            -114.9167,
+            48.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-empire-builder-montana",
+        "name": "Empire Builder Route \u2014 Montana (Great Northern / BNSF Hi-Line)",
+        "type": "route",
+        "subtype": "passenger_main_line",
+        "article": "Forty-Five Hours Through the Mountains: The Empire Builder",
+        "article_file": "empire-builder-passenger-train.md",
+        "author_voice": "John Muir",
+        "description": "The Empire Builder's route across Montana on the former Great Northern Hi-Line, from Williston ND through Havre, Shelby, Cut Bank, East Glacier, Marias Pass, and Whitefish. Active Amtrak service daily.",
+        "railroad": "Great Northern Railway / BNSF / Amtrak",
+        "status": "active",
+        "marker_color": "#1A5C2E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.5333,
+          46.0033
+        ]
+      },
+      "properties": {
+        "id": "butte-miners-union-hall",
+        "name": "Butte \u2014 Miners Union Hall Site (1914 Riot)",
+        "type": "point_of_interest",
+        "subtype": "labor_history",
+        "article": "The Richest Hill on Earth: Butte, 1914",
+        "article_file": "butte-labor-riots-1914.md",
+        "author_voice": "Stephen Crane",
+        "description": "Site of the Butte Miners Union Hall, dynamited June 13, 1914. The WFM Local No. 1 had stood for 30 years. Its destruction ended union recognition at the Anaconda mines and began six years of National Guard occupation. The site is now a parking lot.",
+        "year": "1914",
+        "county": "Silver Bow County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.52,
+          46.02
+        ]
+      },
+      "properties": {
+        "id": "butte-granite-mountain-speculator",
+        "name": "Granite Mountain / Speculator Mine Memorial",
+        "type": "point_of_interest",
+        "subtype": "mine_disaster",
+        "article": "The Richest Hill on Earth: Butte, 1914",
+        "article_file": "butte-labor-riots-1914.md",
+        "author_voice": "Stephen Crane",
+        "description": "Site of the Granite Mountain / Speculator Mine fire, June 8, 1917. 168 miners killed \u2014 the worst hard rock mining disaster in US history. The memorial stands on the hill above Uptown Butte.",
+        "year": "1917",
+        "county": "Silver Bow County",
+        "marker_color": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.55,
+          46.6
+        ]
+      },
+      "properties": {
+        "id": "billings-np-platted-town",
+        "name": "Billings \u2014 NP-Platted Town, 1882",
+        "type": "point_of_interest",
+        "subtype": "railroad_town",
+        "article": "A Town Every Ten Miles: The Northern Pacific and the Making of Montana",
+        "article_file": "northern-pacific-birth-of-towns.md",
+        "author_voice": "Mark Twain",
+        "description": "Billings was platted by the Northern Pacific in 1882 and named for railroad president Frederick Billings. It grew to become Montana's largest city. The original NP townsite grid is still visible in the downtown street layout.",
+        "year": "1882",
+        "county": "Yellowstone County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.9167,
+          46.4083
+        ]
+      },
+      "properties": {
+        "id": "miles-city-np-town",
+        "name": "Miles City \u2014 Northern Pacific Division Point",
+        "type": "point_of_interest",
+        "subtype": "railroad_town",
+        "article": "A Town Every Ten Miles: The Northern Pacific and the Making of Montana",
+        "article_file": "northern-pacific-birth-of-towns.md",
+        "author_voice": "Mark Twain",
+        "description": "Miles City grew around the Northern Pacific's arrival in 1881. Named for General Nelson Miles, it became the cattle-shipping capital of eastern Montana and a key NP division point.",
+        "year": "1881",
+        "county": "Custer County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7167,
+          47.1167
+        ]
+      },
+      "properties": {
+        "id": "glendive-np-town",
+        "name": "Glendive \u2014 Northern Pacific Division Point",
+        "type": "point_of_interest",
+        "subtype": "railroad_town",
+        "article": "A Town Every Ten Miles: The Northern Pacific and the Making of Montana",
+        "article_file": "northern-pacific-birth-of-towns.md",
+        "author_voice": "Mark Twain",
+        "description": "Glendive was established by the Northern Pacific in 1881 as a division point near the Montana-North Dakota border. The NP depot was the economic center of Dawson County for decades.",
+        "year": "1881",
+        "county": "Dawson County",
+        "marker_color": "#2E5E1E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.5333,
+          46.0033
+        ]
+      },
+      "properties": {
+        "id": "butte-copper-kings-mines",
+        "name": "Butte \u2014 Copper Kings Mine District",
+        "type": "point_of_interest",
+        "subtype": "historic_district",
+        "article": "The War of the Copper Kings",
+        "article_file": "copper-kings-railroad-wars.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "The Butte mine district where Marcus Daly, William A. Clark, and F. Augustus Heinze fought for control of the world's richest copper deposits from the 1880s through 1906. The Anaconda Company emerged as the monopoly. The Berkeley Pit is the legacy.",
+        "year": "1880",
+        "county": "Silver Bow County",
+        "marker_color": "#4A0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.95,
+          46.1333
+        ]
+      },
+      "properties": {
+        "id": "anaconda-copper-kings",
+        "name": "Anaconda \u2014 Daly's Smelter and Company Town",
+        "type": "point_of_interest",
+        "subtype": "historic_site",
+        "article": "The War of the Copper Kings",
+        "article_file": "copper-kings-railroad-wars.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "Anaconda was Marcus Daly's company town, built around his copper smelter in 1884. The 585-foot Anaconda Stack is the tallest surviving masonry structure in the world. The BA&P Railroad connected it to Butte.",
+        "year": "1884",
+        "county": "Deer Lodge County",
+        "marker_color": "#4A0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.2833,
+          47.5
+        ]
+      },
+      "properties": {
+        "id": "great-falls-boston-montana-smelter",
+        "name": "Great Falls \u2014 Boston and Montana Smelter",
+        "type": "point_of_interest",
+        "subtype": "industrial_site",
+        "article": "The War of the Copper Kings",
+        "article_file": "copper-kings-railroad-wars.md",
+        "author_voice": "Rudyard Kipling",
+        "description": "Great Falls was the site of the Boston and Montana Company's smelter, the second-largest copper operation in Montana after Daly's Anaconda. The Great Northern Railway served it. The company was eventually absorbed by Anaconda.",
+        "year": "1892",
+        "county": "Cascade County",
+        "marker_color": "#4A0080"
+      }
+    }
+  ]
+}

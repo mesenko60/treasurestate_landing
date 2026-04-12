@@ -343,7 +343,29 @@ function walkMarkdownFilesSorted(absDir) {
     }
   }
 
-  // ═══ 15. HISTORIC MARKERS ═══
+  // ═══ 15. RAILROAD HISTORY ═══
+  const railroadDataPath = path.join(dataDir, 'railroad-history.json');
+  if (fs.existsSync(railroadDataPath)) {
+    const railroadData = JSON.parse(fs.readFileSync(railroadDataPath, 'utf8'));
+    entries.push({
+      type: 'guide',
+      title: 'Montana Railroad History',
+      description: `Interactive map and ${railroadData.articleCount} articles exploring Montana's railroad heritage from the 1880s golden spike to the abandoned Milwaukee Road`,
+      url: '/guides/montana-railroad-history/',
+      keywords: 'Montana railroad history Northern Pacific Great Northern Milwaukee Road BNSF trains depots routes map interactive',
+    });
+    for (const article of railroadData.articles) {
+      entries.push({
+        type: 'article',
+        title: article.title,
+        description: article.excerpt,
+        url: `/guides/montana-railroad-history/${article.slug}/`,
+        keywords: `${article.title} ${article.region} Montana railroad history ${article.year}`,
+      });
+    }
+  }
+
+  // ═══ 16. HISTORIC MARKERS ═══
   entries.push({
     type: 'guide',
     title: 'Montana Historic Markers Explorer',

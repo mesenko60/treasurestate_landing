@@ -41,6 +41,7 @@ function getLastmod(loc) {
   if (loc.includes('/events/')) return '2026-03-21';
   if (loc.includes('/historic-markers/')) return '2026-03-29';
   if (loc.includes('/history-trails/')) return '2026-03-29';
+  if (loc.includes('/montana-railroad-history/')) return '2026-04-11';
   if (loc.includes('/explore-montana/')) return '2026-03-01';
   if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
   if (loc.includes('/montana-towns/')) return '2026-03-01';
@@ -63,6 +64,8 @@ function getPriority(loc) {
   if (loc === baseUrl + '/events/') return 0.75;
   if (loc === baseUrl + '/historic-markers/') return 0.75;
   if (loc === baseUrl + '/guides/history-trails/') return 0.75;
+  if (loc === baseUrl + '/guides/montana-railroad-history/') return 0.75;
+  if (/\/montana-railroad-history\/[^/]+\//.test(loc)) return 0.7;
   if (/\/history-trails\/[^/]+\//.test(loc)) return 0.7;
   if (/\/historic-markers\/[^/]+\//.test(loc)) return 0.6;
   if (/\/montana-towns\/[^/]+\/[^/]+\//.test(loc)) return 0.7;
@@ -194,7 +197,19 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     }
   });
 
-  // ═══ 3c. HISTORIC MARKERS (curated only) ═══
+  // ═══ 3c. RAILROAD HISTORY ═══
+  collectUrls('railroad-history', (add) => {
+    add(`${baseUrl}/guides/montana-railroad-history/`);
+    const railroadPath = path.join(webDir, 'data', 'railroad-history.json');
+    if (fs.existsSync(railroadPath)) {
+      const railroadData = JSON.parse(fs.readFileSync(railroadPath, 'utf8'));
+      for (const article of railroadData.articles) {
+        add(`${baseUrl}/guides/montana-railroad-history/${article.slug}/`);
+      }
+    }
+  });
+
+  // ═══ 3d. HISTORIC MARKERS (curated only) ═══
   collectUrls('historic-markers', (add) => {
     add(`${baseUrl}/historic-markers/`);
     const curatedPath = path.join(webDir, 'data', 'historic-markers-curated.json');

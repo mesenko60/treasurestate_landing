@@ -208,6 +208,18 @@ export default function HistoryTrailsIndex({ trails, totalMarkers }: Props) {
           ))}
         </div>
 
+        <aside className="highway-callout" aria-label="Railroad History" style={{ marginTop: '2rem' }}>
+          <h2>Montana Railroad History</h2>
+          <p>
+            Explore the iron horse that built Montana. Our <strong>interactive railroad map</strong> covers
+            18 articles and 42 locations from the 1883 golden spike to the abandoned Milwaukee Road, with
+            depots, disasters, and historic routes mapped across the state.
+          </p>
+          <div className="actions">
+            <Link href="/guides/montana-railroad-history/" className="primary">Explore Railroad History</Link>
+          </div>
+        </aside>
+
         <div className="explore-all">
           <h3>Explore All Historic Markers</h3>
           <p>
