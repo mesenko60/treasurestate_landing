@@ -31,6 +31,15 @@ function fmtPop(n) {
   return `${n} residents`;
 }
 
+/** town-data.json uses full names like "Meagher County"; avoid doubling "County". */
+function formatCountyLabel(raw) {
+  if (!raw) return '';
+  const s = String(raw).trim();
+  if (!s) return '';
+  if (/\sCounty$/i.test(s)) return s;
+  return `${s} County`;
+}
+
 /** Relative paths to each `.md` under absDir (recursive), sorted. */
 function walkMarkdownFilesSorted(absDir) {
   if (!fs.existsSync(absDir)) return [];
@@ -71,7 +80,7 @@ function walkMarkdownFilesSorted(absDir) {
     const d = townData[t.slug] || {};
     const h = housing[t.slug] || {};
     const pop = d.population;
-    const county = d.county ? `${d.county} County` : '';
+    const county = formatCountyLabel(d.county);
     const region = d.region || '';
     const elev = d.elevation ? `${d.elevation} ft elevation` : '';
     const homeVal = h.zillowHomeValue || h.medianHomeValue;

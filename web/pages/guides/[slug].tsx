@@ -22,6 +22,7 @@ import {
   getRelatedArticles,
   type ArticleSummary,
 } from '../../lib/articles';
+import { formatCountyLabel } from '../../lib/county';
 
 /* ─── Hardcoded guide pages (handled by their own .tsx files) ─── */
 const HARDCODED_GUIDE_SLUGS = [
@@ -403,7 +404,7 @@ function movingGuide(t: TownBundle): GuideData {
     id: 'overview',
     heading: `Why Move to ${t.name}?`,
     html: `
-      <p>${t.name} is a ${sizeLabel} of ${n(pop)} people${county ? ` in ${county} County` : ''}, sitting at ${n(elev)} feet in elevation. ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} combines the best of Montana living: stunning natural beauty, outdoor recreation, and a strong community, ${pop > 20000 ? 'with the amenities of a mid-size city' : pop > 5000 ? 'with small-city conveniences' : 'with authentic small-town charm'}.</p>
+      <p>${t.name} is a ${sizeLabel} of ${n(pop)} people${county ? ` in ${formatCountyLabel(county)}` : ''}, sitting at ${n(elev)} feet in elevation. ${t.nickname !== 'A Montana Community' ? `Known as "${t.nickname}," it` : 'It'} combines the best of Montana living: stunning natural beauty, outdoor recreation, and a strong community, ${pop > 20000 ? 'with the amenities of a mid-size city' : pop > 5000 ? 'with small-city conveniences' : 'with authentic small-town charm'}.</p>
       <p>Montana has no state sales tax and does not tax Social Security benefits or most pension income, making it financially attractive for both working professionals and retirees. ${t.name} specifically offers ${places.length} recreation and attraction sites nearby, ${ratio ? `a housing affordability ratio of ${ratio}x` : 'a growing community'}, and four distinct seasons.</p>
       <div class="stat-grid">
         ${statCard(n(pop), 'Population')}

@@ -13,6 +13,7 @@ import StaysCTA from '../../components/StaysCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 import { isEnabled } from '../../lib/feature-flags';
 import { getRelatedArticles, type ArticleSummary } from '../../lib/articles';
+import { formatCountyLabel } from '../../lib/county';
 
 const SLUG_TAG_MAP: Record<string, string[]> = {
   'most-affordable-towns': ['relocation', 'cost-of-living'],
@@ -497,7 +498,7 @@ const RANKINGS: RankingDef[] = [
       const label = ratio <= 2 ? 'extremely affordable' : ratio <= 3 ? 'very affordable' : 'affordable';
       const inv = t.forSaleInventory ? ` There are currently ${t.forSaleInventory} homes for sale.` : '';
       const indNote = t.mainIndustry ? ` The local economy is driven by ${t.mainIndustry.toLowerCase()}.` : '';
-      return `With a price-to-income ratio of ${ratio}x, ${t.name} is ${label}. ${t.county ? `Located in ${t.county} County` : 'Located'} with a population of ${fmt(t.population)}, it offers small-town Montana living at a fraction of the cost of larger cities.${indNote}${inv}`;
+      return `With a price-to-income ratio of ${ratio}x, ${t.name} is ${label}. ${t.county ? `Located in ${formatCountyLabel(t.county)}` : 'Located'} with a population of ${fmt(t.population)}, it offers small-town Montana living at a fraction of the cost of larger cities.${indNote}${inv}`;
     },
     stats: t => [
       { label: 'Home Value', value: fmtDollar(t.zillowHomeValue ?? t.medianHomeValue) },
@@ -561,7 +562,7 @@ const RANKINGS: RankingDef[] = [
       const scoreB = b.riverCount * 3 + b.fishingCount * 2 + Math.min(b.lakeCount, 20);
       return scoreB - scoreA;
     },
-    highlight: t => `${t.name} has ${t.riverCount} rivers, ${t.fishingCount} fishing access sites, and ${t.lakeCount} lakes nearby. ${t.county ? `Located in ${t.county} County` : 'Located'} at ${fmt(t.elevation)} feet, it\'s a premier base camp for Montana fly fishing.`,
+    highlight: t => `${t.name} has ${t.riverCount} rivers, ${t.fishingCount} fishing access sites, and ${t.lakeCount} lakes nearby. ${t.county ? `Located in ${formatCountyLabel(t.county)}` : 'Located'} at ${fmt(t.elevation)} feet, it\'s a premier base camp for Montana fly fishing.`,
     stats: t => [
       { label: 'Rivers', value: fmt(t.riverCount) },
       { label: 'Fishing Access', value: fmt(t.fishingCount) },
@@ -613,7 +614,7 @@ const RANKINGS: RankingDef[] = [
       const jobNote = t.unemploymentRate != null ? ` Unemployment: ${t.unemploymentRate}%.` : '';
       const invNote = t.forSaleInventory != null ? ` ${t.forSaleInventory} homes currently for sale.` : (t.vacancyRate != null ? ` Vacancy rate: ${t.vacancyRate}%.` : '');
       const indNote = t.mainIndustry ? ` Main industry: ${t.mainIndustry.toLowerCase()}.` : '';
-      return `With just ${fmt(t.population)} residents, ${t.name} ${t.nickname !== 'A Montana Community' ? `("${t.nickname}") ` : ''}offers ${t.recTotal} recreation sites nearby${safety} and a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : 'moderate'} cost of living.${gradNote}${jobNote}${indNote}${invNote} ${t.county ? `Nestled in ${t.county} County` : 'Nestled'} at ${fmt(t.elevation)} feet, it\'s authentic Montana.`;
+      return `With just ${fmt(t.population)} residents, ${t.name} ${t.nickname !== 'A Montana Community' ? `("${t.nickname}") ` : ''}offers ${t.recTotal} recreation sites nearby${safety} and a ${(t.affordabilityRatio ?? 0) <= 3 ? 'very affordable' : 'moderate'} cost of living.${gradNote}${jobNote}${indNote}${invNote} ${t.county ? `Nestled in ${formatCountyLabel(t.county)}` : 'Nestled'} at ${fmt(t.elevation)} feet, it\'s authentic Montana.`;
     },
     stats: t => [
       { label: 'Population', value: fmt(t.population) },
@@ -702,7 +703,7 @@ const RANKINGS: RankingDef[] = [
       const scoreB = ((b.janLow ?? -20) + 20) * 3 - (b.annualSnow ?? 100) * 0.5 - Math.abs((b.julHigh ?? 85) - 85) * 0.5;
       return scoreB - scoreA;
     },
-    highlight: t => `${t.name} enjoys January lows averaging ${t.janLow}°F and July highs around ${t.julHigh}°F, with ${t.annualSnow}" of annual snowfall. At ${fmt(t.elevation)} feet in ${t.county ? t.county + ' County' : 'Montana'}, it stands out for comparatively mild winters by Montana standards.`,
+    highlight: t => `${t.name} enjoys January lows averaging ${t.janLow}°F and July highs around ${t.julHigh}°F, with ${t.annualSnow}" of annual snowfall. At ${fmt(t.elevation)} feet in ${t.county ? formatCountyLabel(t.county) : 'Montana'}, it stands out for comparatively mild winters by Montana standards.`,
     stats: t => [
       { label: 'Jan Low', value: (t.janLow ?? 0) + '°F' },
       { label: 'Jul High', value: (t.julHigh ?? 0) + '°F' },
