@@ -13,8 +13,13 @@ export default function AmazonProductCard({
   variant = 'grid',
   showDisclosure = true,
 }: Props) {
+  const linkUrl = wishlistUrl || '#';
+  
   return (
-    <div
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -24,6 +29,8 @@ export default function AmazonProductCard({
         border: '1px solid #e2ebe2',
         overflow: 'hidden',
         transition: 'box-shadow 0.2s, transform 0.2s',
+        textDecoration: 'none',
+        cursor: 'pointer',
         ...(variant === 'slider' && { 
           minWidth: '200px', 
           maxWidth: '240px', 
@@ -105,6 +112,6 @@ export default function AmazonProductCard({
           </p>
         )}
       </div>
-    </div>
+    </a>
   );
 }
