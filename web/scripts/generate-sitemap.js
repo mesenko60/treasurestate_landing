@@ -138,6 +138,7 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     add(`${baseUrl}/planners/`);
     add(`${baseUrl}/nearby/`, 'weekly');
     add(`${baseUrl}/best-of/`);
+    add(`${baseUrl}/gear/`);
   });
 
   // ═══ 2. INFORMATION (Montana Facts articles) ═══

@@ -15,7 +15,10 @@ export default function Footer() {
       <div style={{ marginBottom: '1rem' }}>
         <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#f5c97a', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>
       </div>
-      <p>&copy; <span>{year}</span> treasurestate.com - All Rights Reserved.</p>
+      <p style={{ fontSize: '0.75rem', color: '#999', marginTop: '1rem', marginBottom: '0.5rem' }}>
+        As an Amazon Associate, I earn from qualifying purchases.
+      </p>
+      <p>&copy; <span>{year}</span> treasurestate.com - All Rights Reserved. | <Link href="/privacy-policy/" style={{ color: '#999', textDecoration: 'underline' }}>Privacy Policy</Link></p>
       <p>Your Gateway to Montana&rsquo;s Treasures</p>
     </footer>
   );

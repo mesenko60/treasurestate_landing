@@ -432,6 +432,7 @@ function walkMarkdownFilesSorted(absDir) {
   entries.push({ type: 'tool', title: 'Best of Montana', description: 'Data-driven rankings of Montana towns', url: '/best-of/', keywords: 'best of rankings top 10 Montana towns' });
   entries.push({ type: 'tool', title: 'Explore Montana', description: 'Discover Montana travel and information', url: '/explore-montana/', keywords: 'explore Montana travel discover' });
   entries.push({ type: 'tool', title: 'Nearby Points of Interest', description: 'GPS-powered discovery of historic markers, hot springs, trails, and attractions near your location', url: '/nearby/', keywords: 'nearby GPS location points of interest POI historic markers hot springs trails campgrounds discover around me' });
+  entries.push({ type: 'tool', title: 'Montana Travel Gear & Essentials', description: 'Curated gear for Montana road trips, hiking, fishing, and outdoor adventures', url: '/gear/', keywords: 'gear travel essentials road trip emergency kit bear spray hiking camping fly fishing equipment supplies Amazon' });
 
   const outPath = path.join(webDir, 'public', 'search-index.json');
   fs.writeFileSync(outPath, JSON.stringify(entries), 'utf8');

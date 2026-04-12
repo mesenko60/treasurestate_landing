@@ -1,0 +1,115 @@
+{
+  "collections": [
+    {
+      "id": "emergency-travel-kit",
+      "title": "Montana Emergency Travel Kit",
+      "description": "Essential safety and survival gear for road trips through Big Sky Country",
+      "products": [
+        {
+          "asin": "B00FA2RLX2",
+          "title": "LifeStraw Personal Water Filter",
+          "description": "Portable water filter for hiking, camping, and emergency preparedness",
+          "category": "road-trip",
+          "tags": ["safety", "essential", "water", "bestseller"],
+          "recommendation": "Essential for backcountry travel where clean water may be scarce"
+        },
+        {
+          "asin": "B0CJ5B8RG5",
+          "title": "Prepared4X Fire Starter Survival Tool",
+          "description": "All-in-one flint and steel kit with waterproof tinder wick",
+          "category": "road-trip",
+          "tags": ["safety", "fire", "survival"],
+          "recommendation": "Reliable fire starting in Montana's wet and windy conditions"
+        },
+        {
+          "asin": "B0B29MYTFH",
+          "title": "Titan Deep Freeze Zipperless Cooler",
+          "description": "Hardbody cooler with deep freeze insulation",
+          "category": "road-trip",
+          "tags": ["food", "camping", "travel"],
+          "recommendation": "Keeps food cold on long drives between Montana towns"
+        },
+        {
+          "asin": "B07D7RXGZK",
+          "title": "Counter Assault Bear Spray",
+          "description": "Long-range 40ft bear deterrent with 2% capsaicin",
+          "category": "road-trip",
+          "tags": ["safety", "essential", "bear-country", "wildlife"],
+          "recommendation": "Required gear for any outdoor activity in Montana grizzly country"
+        },
+        {
+          "asin": "B0F7P86PLV",
+          "title": "262-Piece Survival Kit with First Aid",
+          "description": "Complete emergency kit with tent, axe, shovel, and crossbody bag",
+          "category": "road-trip",
+          "tags": ["safety", "essential", "survival", "bestseller"],
+          "recommendation": "Comprehensive kit for vehicle emergencies on remote Montana highways"
+        },
+        {
+          "asin": "B0DDQTK3MD",
+          "title": "GEVOKE 500-Piece First Aid Kit",
+          "description": "Professional emergency medical kit for car, travel, and outdoor use",
+          "category": "road-trip",
+          "tags": ["safety", "essential", "medical", "first-aid"],
+          "recommendation": "Be prepared for injuries far from medical facilities"
+        },
+        {
+          "asin": "B004M7R4PA",
+          "title": "S.O.S. Emergency Food Rations",
+          "description": "3600-calorie emergency food bar with 5-year shelf life",
+          "category": "road-trip",
+          "tags": ["food", "emergency", "survival"],
+          "recommendation": "Keep in your vehicle for unexpected winter strandings"
+        },
+        {
+          "asin": "B0CQXWCLCX",
+          "title": "Prepared4X Emergency Mylar Poncho",
+          "description": "Lightweight, reusable thermal poncho for emergency warmth",
+          "category": "road-trip",
+          "tags": ["safety", "warmth", "emergency", "compact"],
+          "recommendation": "Compact warmth protection for Montana's sudden weather changes"
+        },
+        {
+          "asin": "B002C08ZJI",
+          "title": "Slime Tire and Tube Sealant",
+          "description": "Puncture repair sealant for tires and tubes",
+          "category": "road-trip",
+          "tags": ["automotive", "repair", "tires"],
+          "recommendation": "Quick fix for flats on Montana's gravel backroads"
+        },
+        {
+          "asin": "B074JJVMWX",
+          "title": "Slime Portable Tire Inflator",
+          "description": "12V air compressor with digital display and LED light",
+          "category": "road-trip",
+          "tags": ["automotive", "repair", "tires", "essential"],
+          "recommendation": "Inflate tires anywhere — essential for remote Montana travel"
+        }
+      ]
+    },
+    {
+      "id": "fly-fishing-essentials",
+      "title": "Montana Fly Fishing Essentials",
+      "description": "Gear recommendations for fly fishing Montana's legendary rivers",
+      "products": []
+    },
+    {
+      "id": "hiking-gear",
+      "title": "Montana Hiking Gear",
+      "description": "Equipment for exploring Glacier, the Beartooths, and beyond",
+      "products": []
+    },
+    {
+      "id": "wildlife-watching",
+      "title": "Wildlife Watching Gear",
+      "description": "Binoculars, cameras, and field guides for Montana wildlife",
+      "products": []
+    },
+    {
+      "id": "skiing-gear",
+      "title": "Montana Skiing Essentials",
+      "description": "Gear for Big Sky, Whitefish Mountain, and backcountry skiing",
+      "products": []
+    }
+  ]
+}
