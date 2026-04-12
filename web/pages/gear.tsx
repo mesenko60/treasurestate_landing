@@ -39,20 +39,69 @@ function CollectionSection({ collection }: { collection: AmazonProductCollection
           {collection.description}
         </p>
       )}
+      
+      {/* Product Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
         gap: '1rem',
+        marginBottom: '1.5rem',
       }}>
         {collection.products.map((product) => (
           <AmazonProductCard 
             key={product.asin} 
             product={product} 
+            wishlistUrl={collection.wishlistUrl}
             variant="grid"
             showDisclosure={false}
           />
         ))}
       </div>
+
+      {/* Shop This Kit Button */}
+      {collection.wishlistUrl && (
+        <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+          <a
+            href={collection.wishlistUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '1rem 2rem',
+              background: '#ff9900',
+              color: '#111',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontWeight: 700,
+              fontSize: '1.1rem',
+              boxShadow: '0 2px 8px rgba(255,153,0,0.3)',
+              transition: 'transform 0.2s, box-shadow 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,153,0,0.4)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'none';
+              e.currentTarget.style.boxShadow = '0 2px 8px rgba(255,153,0,0.3)';
+            }}
+          >
+            <svg viewBox="0 0 24 24" style={{ width: '20px', height: '20px', fill: 'currentColor' }}>
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+            Shop This Kit on Amazon
+          </a>
+          <p style={{ 
+            fontSize: '0.75rem', 
+            color: '#888', 
+            marginTop: '0.75rem',
+          }}>
+            View all {collection.products.length} items and add to your cart
+          </p>
+        </div>
+      )}
     </section>
   );
 }

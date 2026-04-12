@@ -42,6 +42,8 @@ export interface AmazonProductCollection {
   title: string;
   /** Optional description */
   description?: string;
+  /** Amazon wishlist URL with affiliate tag for the entire collection */
+  wishlistUrl?: string;
   /** Products in this collection */
   products: AmazonProduct[];
 }

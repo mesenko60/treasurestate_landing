@@ -4,21 +4,24 @@
       "id": "emergency-travel-kit",
       "title": "Montana Emergency Travel Kit",
       "description": "Essential safety and survival gear for road trips through Big Sky Country",
+      "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/3DC310DZ7W02R?tag=treasuresta08-20",
       "products": [
         {
-          "asin": "B00FA2RLX2",
+          "asin": "B006QF3TW4",
           "title": "LifeStraw Personal Water Filter",
           "description": "Portable water filter for hiking, camping, and emergency preparedness",
           "category": "road-trip",
           "tags": ["safety", "essential", "water", "bestseller"],
+          "imageUrl": "/images/Amazon/lifestraw-water-filter.jpg",
           "recommendation": "Essential for backcountry travel where clean water may be scarce"
         },
         {
-          "asin": "B0CJ5B8RG5",
+          "asin": "B09W2GXZMP",
           "title": "Prepared4X Fire Starter Survival Tool",
           "description": "All-in-one flint and steel kit with waterproof tinder wick",
           "category": "road-trip",
           "tags": ["safety", "fire", "survival"],
+          "imageUrl": "/images/Amazon/prepared4x-fire-starter.jpg",
           "recommendation": "Reliable fire starting in Montana's wet and windy conditions"
         },
         {
@@ -27,6 +30,7 @@
           "description": "Hardbody cooler with deep freeze insulation",
           "category": "road-trip",
           "tags": ["food", "camping", "travel"],
+          "imageUrl": "/images/Amazon/titan-deep-freeze-cooler.jpg",
           "recommendation": "Keeps food cold on long drives between Montana towns"
         },
         {
@@ -35,6 +39,7 @@
           "description": "Long-range 40ft bear deterrent with 2% capsaicin",
           "category": "road-trip",
           "tags": ["safety", "essential", "bear-country", "wildlife"],
+          "imageUrl": "/images/Amazon/counter-assault-bear-spray.jpg",
           "recommendation": "Required gear for any outdoor activity in Montana grizzly country"
         },
         {
@@ -43,6 +48,7 @@
           "description": "Complete emergency kit with tent, axe, shovel, and crossbody bag",
           "category": "road-trip",
           "tags": ["safety", "essential", "survival", "bestseller"],
+          "imageUrl": "/images/Amazon/survival-kit-262pc.jpg",
           "recommendation": "Comprehensive kit for vehicle emergencies on remote Montana highways"
         },
         {
@@ -51,6 +57,7 @@
           "description": "Professional emergency medical kit for car, travel, and outdoor use",
           "category": "road-trip",
           "tags": ["safety", "essential", "medical", "first-aid"],
+          "imageUrl": "/images/Amazon/gevoke-first-aid-kit.jpg",
           "recommendation": "Be prepared for injuries far from medical facilities"
         },
         {
@@ -59,6 +66,7 @@
           "description": "3600-calorie emergency food bar with 5-year shelf life",
           "category": "road-trip",
           "tags": ["food", "emergency", "survival"],
+          "imageUrl": "/images/Amazon/sos-emergency-rations.jpg",
           "recommendation": "Keep in your vehicle for unexpected winter strandings"
         },
         {
@@ -67,6 +75,7 @@
           "description": "Lightweight, reusable thermal poncho for emergency warmth",
           "category": "road-trip",
           "tags": ["safety", "warmth", "emergency", "compact"],
+          "imageUrl": "/images/Amazon/prepared4x-mylar-poncho.jpg",
           "recommendation": "Compact warmth protection for Montana's sudden weather changes"
         },
         {
@@ -75,6 +84,7 @@
           "description": "Puncture repair sealant for tires and tubes",
           "category": "road-trip",
           "tags": ["automotive", "repair", "tires"],
+          "imageUrl": "/images/Amazon/slime-tire-sealant.jpg",
           "recommendation": "Quick fix for flats on Montana's gravel backroads"
         },
         {
@@ -83,6 +93,7 @@
           "description": "12V air compressor with digital display and LED light",
           "category": "road-trip",
           "tags": ["automotive", "repair", "tires", "essential"],
+          "imageUrl": "/images/Amazon/slime-tire-inflator.jpg",
           "recommendation": "Inflate tires anywhere — essential for remote Montana travel"
         }
       ]

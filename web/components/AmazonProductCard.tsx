@@ -1,27 +1,23 @@
 import type { AmazonProduct } from '../types/amazon-product';
-import { amazonProductUrl, AMAZON_LINK_DISCLOSURE } from '../lib/amazon-affiliate';
 
 type Props = {
   product: AmazonProduct;
+  wishlistUrl?: string;
   variant?: 'sidebar' | 'slider' | 'grid';
   showDisclosure?: boolean;
 };
 
 export default function AmazonProductCard({ 
   product, 
+  wishlistUrl,
   variant = 'grid',
   showDisclosure = true,
 }: Props) {
-  const url = amazonProductUrl(product.asin);
-  
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
+    <div
       style={{
-        display: 'block',
-        textDecoration: 'none',
+        display: 'flex',
+        flexDirection: 'column',
         color: '#204051',
         background: '#fff',
         borderRadius: '8px',
@@ -29,8 +25,8 @@ export default function AmazonProductCard({
         overflow: 'hidden',
         transition: 'box-shadow 0.2s, transform 0.2s',
         ...(variant === 'slider' && { 
-          minWidth: '180px', 
-          maxWidth: '220px', 
+          minWidth: '200px', 
+          maxWidth: '240px', 
           flexShrink: 0, 
           scrollSnapAlign: 'start' as const 
         }),
@@ -45,40 +41,35 @@ export default function AmazonProductCard({
       }}
     >
       {product.imageUrl && (
-        <img
-          src={product.imageUrl}
-          alt={product.title}
-          loading="lazy"
-          style={{ 
-            width: '100%', 
-            aspectRatio: '1', 
-            objectFit: 'cover', 
-            display: 'block',
-            background: '#f8f8f8',
-          }}
-        />
-      )}
-      {!product.imageUrl && (
-        <div style={{
-          width: '100%',
-          aspectRatio: '1',
-          background: 'linear-gradient(135deg, #f0f4f0 0%, #e8ece8 100%)',
+        <div style={{ 
+          width: '100%', 
+          aspectRatio: '1', 
+          background: '#f8f8f8',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#999',
-          fontSize: '0.8rem',
+          padding: '0.5rem',
         }}>
-          View on Amazon
+          <img
+            src={product.imageUrl}
+            alt={product.title}
+            loading="lazy"
+            style={{ 
+              maxWidth: '100%', 
+              maxHeight: '100%', 
+              objectFit: 'contain', 
+              display: 'block',
+            }}
+          />
         </div>
       )}
-      <div style={{ padding: '0.6rem 0.75rem' }}>
+      <div style={{ padding: '0.75rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
         <div
           style={{
             fontWeight: 600,
-            fontSize: variant === 'sidebar' ? '0.85rem' : '0.88rem',
+            fontSize: variant === 'sidebar' ? '0.85rem' : '0.9rem',
             lineHeight: 1.3,
-            marginBottom: '0.25rem',
+            marginBottom: '0.35rem',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             display: '-webkit-box',
@@ -90,42 +81,30 @@ export default function AmazonProductCard({
         </div>
         {product.description && (
           <div style={{ 
-            fontSize: '0.78rem', 
+            fontSize: '0.8rem', 
             color: '#666', 
             lineHeight: 1.4,
-            marginBottom: '0.35rem',
+            marginBottom: '0.5rem',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             display: '-webkit-box',
             WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',
+            flex: 1,
           }}>
             {product.description}
           </div>
         )}
-        <div style={{ 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'space-between',
-          marginTop: '0.35rem',
-        }}>
-          <span style={{ 
-            fontSize: '0.8rem', 
-            color: '#ff9900', 
-            fontWeight: 600,
+        {showDisclosure && (
+          <p style={{ 
+            fontSize: '0.65rem', 
+            color: '#999',
+            margin: '0 0 0.5rem',
           }}>
-            View on Amazon →
-          </span>
-          {showDisclosure && (
-            <span style={{ 
-              fontSize: '0.65rem', 
-              color: '#999',
-            }}>
-              {AMAZON_LINK_DISCLOSURE}
-            </span>
-          )}
-        </div>
+            (affiliate link)
+          </p>
+        )}
       </div>
-    </a>
+    </div>
   );
 }

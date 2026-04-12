@@ -1,11 +1,10 @@
-import React, { useRef, useCallback, useState } from 'react';
-import type { AmazonProduct, AmazonProductCollection } from '../types/amazon-product';
+import React, { useRef, useCallback } from 'react';
+import type { AmazonProductCollection } from '../types/amazon-product';
 import AmazonProductCard from './AmazonProductCard';
-import { amazonSearchUrl, AMAZON_DISCLOSURE } from '../lib/amazon-affiliate';
+import { AMAZON_DISCLOSURE } from '../lib/amazon-affiliate';
 
 type Props = {
   collection: AmazonProductCollection;
-  searchKeywords?: string;
   maxProducts?: number;
 };
 
@@ -42,60 +41,8 @@ function ScrollArrow({ direction, onClick }: { direction: 'left' | 'right'; onCl
   );
 }
 
-function SidebarSlider({ products }: { products: AmazonProduct[] }) {
-  const [idx, setIdx] = useState(0);
-  const count = products.length;
-
-  const prev = useCallback(() => setIdx((i) => (i - 1 + count) % count), [count]);
-  const next = useCallback(() => setIdx((i) => (i + 1) % count), [count]);
-
-  if (count === 0) return null;
-
-  return (
-    <div>
-      <AmazonProductCard product={products[idx]} variant="sidebar" showDisclosure={false} />
-      {count > 1 && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
-          <button
-            onClick={prev}
-            aria-label="Previous product"
-            style={{
-              width: '30px', height: '30px', borderRadius: '50%',
-              border: '1px solid #d8e2d8', background: '#fff', cursor: 'pointer',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: '1rem', color: '#3b6978', transition: 'background 0.15s',
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f5f0'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = '#fff'; }}
-          >
-            {'\u2039'}
-          </button>
-          <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: 500 }}>
-            {idx + 1} / {count}
-          </span>
-          <button
-            onClick={next}
-            aria-label="Next product"
-            style={{
-              width: '30px', height: '30px', borderRadius: '50%',
-              border: '1px solid #d8e2d8', background: '#fff', cursor: 'pointer',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: '1rem', color: '#3b6978', transition: 'background 0.15s',
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = '#f0f5f0'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = '#fff'; }}
-          >
-            {'\u203A'}
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function AmazonProductSlider({
   collection,
-  searchKeywords,
   maxProducts = 8,
 }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -121,9 +68,9 @@ export default function AmazonProductSlider({
     </p>
   );
 
-  const amazonCta = searchKeywords && (
+  const shopButton = collection.wishlistUrl && (
     <a
-      href={amazonSearchUrl(searchKeywords)}
+      href={collection.wishlistUrl}
       target="_blank"
       rel="noopener noreferrer sponsored"
       style={{
@@ -131,12 +78,12 @@ export default function AmazonProductSlider({
         alignItems: 'center',
         gap: '0.4rem',
         marginTop: '0.75rem',
-        padding: '0.55rem 1rem',
+        padding: '0.65rem 1.25rem',
         background: '#ff9900',
         color: '#111',
         borderRadius: '6px',
         fontWeight: 600,
-        fontSize: '0.85rem',
+        fontSize: '0.9rem',
         textDecoration: 'none',
         transition: 'background 0.2s',
         letterSpacing: '0.3px',
@@ -144,7 +91,7 @@ export default function AmazonProductSlider({
       onMouseEnter={(e) => { e.currentTarget.style.background = '#e88a00'; }}
       onMouseLeave={(e) => { e.currentTarget.style.background = '#ff9900'; }}
     >
-      Shop More on Amazon
+      Shop This Kit on Amazon
       <span aria-hidden="true" style={{ fontSize: '0.9em' }}>&rarr;</span>
     </a>
   );
@@ -161,77 +108,53 @@ export default function AmazonProductSlider({
   );
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: `
-        .amazon-sidebar-widget { display: none; }
-        .amazon-inline-widget { display: block; }
-        @media (min-width: 1024px) {
-          .amazon-sidebar-widget { display: block; }
-          .amazon-inline-widget { display: none; }
-        }
-      `}} />
-
-      {/* Desktop sidebar: single-product slider with prev/next */}
-      <div
-        className="amazon-sidebar-widget"
-        style={{
-          marginTop: '1.5rem',
-          padding: '1rem',
-          background: '#fffaf0',
-          borderRadius: '8px',
-          border: '1px solid #ffe4b8',
-        }}
-      >
-        {heading}
-        <SidebarSlider products={products} />
-        {amazonCta && <div style={{ textAlign: 'center' }}>{amazonCta}</div>}
-        {disclosure}
-      </div>
-
-      {/* Mobile/tablet inline: horizontal scroll slider */}
-      <div
-        className="amazon-inline-widget"
-        style={{
-          margin: '2rem 0',
-          padding: '1.25rem',
-          background: '#fffaf0',
-          borderRadius: '10px',
-          border: '1px solid #ffe4b8',
-        }}
-      >
-        {heading}
-        {description}
-        <div style={{ position: 'relative' }}>
-          {products.length > 2 && (
-            <>
-              <ScrollArrow direction="left" onClick={() => scroll('left')} />
-              <ScrollArrow direction="right" onClick={() => scroll('right')} />
-            </>
-          )}
-          <div
-            ref={scrollRef}
-            style={{
-              display: 'flex',
-              gap: '0.75rem',
-              overflowX: 'auto',
-              scrollSnapType: 'x mandatory',
-              WebkitOverflowScrolling: 'touch',
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
-              padding: '4px 2px',
-            }}
-          >
-            <style dangerouslySetInnerHTML={{ __html: `
-              .amazon-inline-widget div::-webkit-scrollbar { display: none; }
-            `}} />
-            {products.map((p) => (
-              <AmazonProductCard key={p.asin} product={p} variant="slider" showDisclosure={false} />
-            ))}
-          </div>
+    <div
+      style={{
+        margin: '2rem 0',
+        padding: '1.25rem',
+        background: '#fffaf0',
+        borderRadius: '10px',
+        border: '1px solid #ffe4b8',
+      }}
+    >
+      {heading}
+      {description}
+      <div style={{ position: 'relative' }}>
+        {products.length > 2 && (
+          <>
+            <ScrollArrow direction="left" onClick={() => scroll('left')} />
+            <ScrollArrow direction="right" onClick={() => scroll('right')} />
+          </>
+        )}
+        <div
+          ref={scrollRef}
+          style={{
+            display: 'flex',
+            gap: '0.75rem',
+            overflowX: 'auto',
+            scrollSnapType: 'x mandatory',
+            WebkitOverflowScrolling: 'touch',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            padding: '4px 2px',
+          }}
+        >
+          <style dangerouslySetInnerHTML={{ __html: `
+            .amazon-slider div::-webkit-scrollbar { display: none; }
+          `}} />
+          {products.map((p) => (
+            <AmazonProductCard 
+              key={p.asin} 
+              product={p} 
+              wishlistUrl={collection.wishlistUrl}
+              variant="slider" 
+              showDisclosure={false} 
+            />
+          ))}
         </div>
-        {amazonCta && <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>{amazonCta}</div>}
-        {disclosure}
       </div>
-    </>
+      {shopButton && <div style={{ textAlign: 'center', marginTop: '0.5rem' }}>{shopButton}</div>}
+      {disclosure}
+    </div>
   );
 }
