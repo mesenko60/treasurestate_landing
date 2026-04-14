@@ -397,6 +397,39 @@ function walkMarkdownFilesSorted(absDir) {
     }
   }
 
+  // ═══ 17. THIS DAY IN HISTORY ═══
+  entries.push({
+    type: 'guide',
+    title: 'This Day in Montana History',
+    description: 'Daily Montana history feature with one event for each calendar day',
+    url: '/this-day-in-history/',
+    keywords: 'this day in history Montana history today historical events daily',
+  });
+  entries.push({
+    type: 'guide',
+    title: 'Browse Montana This Day in History',
+    description: 'Browse all 365 Montana daily history entries by month and category',
+    url: '/this-day-in-history/browse/',
+    keywords: 'browse Montana history archive by date by month',
+  });
+  const tdihPath = path.join(repoRoot, 'docs', 'TDIH', 'montana_tdih_dataset', 'montana_tdih.json');
+  if (fs.existsSync(tdihPath)) {
+    const tdih = JSON.parse(fs.readFileSync(tdihPath, 'utf8'));
+    for (const entry of tdih) {
+      const monthSlug = [
+        'january', 'february', 'march', 'april', 'may', 'june',
+        'july', 'august', 'september', 'october', 'november', 'december',
+      ][entry.month - 1];
+      entries.push({
+        type: 'article',
+        title: `${entry.date_display}: ${entry.headline}`,
+        description: entry.body.slice(0, 180),
+        url: `/this-day-in-history/${monthSlug}/${entry.day}/`,
+        keywords: `${entry.date_display} ${entry.headline} ${entry.category} ${entry.location} Montana history`,
+      });
+    }
+  }
+
   // ═══ 14. CONTENT HUB ARTICLES ═══
   const articlesInfoDir = path.join(repoRoot, 'articles_information');
   const seenInformationSlugs = new Set();

@@ -1,0 +1,26 @@
+{
+  "id": "0423",
+  "month": 4,
+  "day": 23,
+  "date_display": "April 23",
+  "headline": "Missoula City Police Department Formed, 1883",
+  "year": 1883,
+  "body": "On April 23, 1883, the Missoula City Police Department was officially formed, marking a crucial step in establishing law and order in the growing frontier town. The city council hired William Keyes and Will P. to serve as the first members of the department, laying the groundwork for modern policing in Missoula. This event reflects the transition of Missoula from a rugged settlement to a more organized and governed community, as the need for formal law enforcement became apparent with increasing population and commercial activity. The establishment of a police department was vital for maintaining public safety, resolving disputes, and enforcing local ordinances, contributing to the stability and development of the city. The Missoula City Police Department has since evolved significantly, but its founding on this day represents a foundational moment in the city's civic history.",
+  "category": "infrastructure",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8729,
+  "longitude": -114.005,
+  "tags": [
+    "Missoula Police Department",
+    "Law Enforcement",
+    "Missoula",
+    "Civic History",
+    "Infrastructure"
+  ],
+  "expandable": true,
+  "sources": [
+    "ci.missoula.mt.us/385/History-of-the-Police-Department",
+    "thisweekinmontanahistory.blogspot.com"
+  ],
+  "related_article": null
+}

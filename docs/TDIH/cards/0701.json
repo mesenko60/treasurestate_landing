@@ -1,0 +1,24 @@
+{
+  "id": "0701",
+  "month": 7,
+  "day": 1,
+  "date_display": "July 1",
+  "headline": "Thomas Francis Meagher Disappears, 1867",
+  "year": 1867,
+  "body": "On July 1, 1867, Thomas Francis Meagher, acting Governor of Montana Territory, mysteriously disappeared from a steamboat on the Missouri River near Fort Benton. Meagher, an Irish nationalist and Civil War brigadier general, was a prominent figure in early Montana politics. He was on his way to establish a new territorial government in Virginia City when he vanished. His body was never recovered, leading to enduring speculation about the circumstances of his death, ranging from accidental drowning to foul play. Meagher's disappearance left a significant void in Montana's leadership during a critical period of its territorial development. His legacy as a fiery orator and a champion of Irish freedom, combined with the enigma of his final moments, continues to fascinate historians and residents of Montana.",
+  "category": "exploration",
+  "location": "Fort Benton, Chouteau County",
+  "latitude": 47.8167,
+  "longitude": -110.6667,
+  "tags": [
+    "politics",
+    "mystery",
+    "Missouri River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.ktvh.com/news/montana-news/mystery-on-the-missouri-the-death-of-thomas-meagher",
+    "https://en.wikipedia.org/wiki/Thomas_Francis_Meagher"
+  ],
+  "related_article": null
+}

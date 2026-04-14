@@ -1,0 +1,28 @@
+{
+  "id": "0625",
+  "month": 6,
+  "day": 25,
+  "date_display": "June 25",
+  "headline": "Battle of the Little Bighorn, 1876",
+  "year": 1876,
+  "body": "On June 25, 1876, one of the most iconic and devastating conflicts in American history, the Battle of the Little Bighorn, unfolded in southeastern Montana Territory. Often referred to as \"Custer's Last Stand,\" this battle saw the combined forces of Lakota Sioux and Northern Cheyenne warriors, led by revered figures such as Sitting Bull and Crazy Horse, decisively defeat the U.S. Army's 7th Cavalry Regiment, commanded by Lieutenant Colonel George Armstrong Custer. Custer, leading a detachment of his regiment, attacked a large encampment of Native Americans along the Little Bighorn River, underestimating their numbers and resolve. The ensuing battle resulted in the complete annihilation of Custer's immediate command, with over 200 soldiers killed. This victory for the Native American tribes was a powerful, albeit temporary, assertion of their sovereignty and resistance against forced relocation and the encroachment on their ancestral lands. The Battle of the Little Bighorn remains a deeply significant event, symbolizing both the fierce independence of Native American peoples and the tragic clashes that defined the expansion of the American frontier.",
+  "category": "native_history",
+  "location": "Little Bighorn River, Big Horn County",
+  "latitude": 45.7357,
+  "longitude": -107.5575,
+  "tags": [
+    "Battle of the Little Bighorn",
+    "Custer's Last Stand",
+    "Native American history",
+    "Sitting Bull",
+    "Crazy Horse",
+    "Great Sioux War"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/this-day-in-history/june-25/battle-of-little-bighorn",
+    "https://en.wikipedia.org/wiki/Battle_of_the_Little_Bighorn",
+    "https://www.nps.gov/libi/learn/historyculture/battle-story.htm"
+  ],
+  "related_article": null
+}

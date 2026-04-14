@@ -1,0 +1,24 @@
+{
+  "id": "0302",
+  "month": 3,
+  "day": 2,
+  "date_display": "March 2",
+  "headline": "Dakota Territory Organized, Including Much of Future Montana, 1861",
+  "year": 1861,
+  "body": "On March 2, 1861, the United States Congress officially organized the Dakota Territory. This vast new territory encompassed a significant portion of what would later become Montana, along with present-day North Dakota, South Dakota, and parts of Wyoming. The organization of Dakota Territory was a crucial step in the westward expansion of the United States and the eventual formation of Montana as a distinct entity. Prior to this, the region was largely unorganized or part of other territories. The establishment of a formal territorial government brought with it the promise of increased settlement, infrastructure development, and the eventual delineation of state boundaries. This event laid the groundwork for the political and administrative structures that would shape Montana's early history and its path to statehood.",
+  "category": "statehood",
+  "location": "Montana (formerly Dakota Territory)",
+  "latitude": 46.8797,
+  "longitude": -110.3626,
+  "tags": [
+    "Dakota Territory",
+    "Territorial History",
+    "Statehood"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dakota_Territory",
+    "https://www.history.nd.gov/archives/stateagencies/dtrecords.html"
+  ],
+  "related_article": null
+}

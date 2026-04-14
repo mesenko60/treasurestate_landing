@@ -1,0 +1,26 @@
+{
+  "id": "0518",
+  "month": 5,
+  "day": 18,
+  "date_display": "May 18",
+  "headline": "The Anaconda Copper Mining Company Incorporated, 1895",
+  "year": 1895,
+  "body": "On May 18, 1895, the Anaconda Copper Mining Company was formally incorporated under the laws of Montana, consolidating the copper mining and smelting operations that Marcus Daly had built into the most powerful industrial enterprise in the northern Rockies. Daly, an Irish immigrant who had learned mining in the silver camps of Nevada and Utah, had arrived in Butte in 1876 and purchased the Anaconda mine for a modest sum. What he found beneath the surface was not silver but copper, and the timing could not have been better. The electrification of American cities was creating an insatiable demand for copper wire, and Daly's Anaconda mine sat atop one of the richest copper deposits ever discovered. He built a smelter at the town of Anaconda, 26 miles west of Butte, and connected the two with the Butte, Anaconda and Pacific Railway. By the time the company was formally incorporated in 1895, it controlled mines, smelters, timberlands, water rights, and a company town. The Anaconda Company would go on to dominate Montana's economy and politics for the better part of a century, owning most of the state's newspapers, controlling the legislature, and employing tens of thousands of workers. At its peak, the Anaconda smelter stack, completed in 1919, stood 585 feet tall, the tallest masonry structure in the world at the time of its construction.",
+  "category": "mining",
+  "location": "Anaconda, Deer Lodge County",
+  "latitude": 46.1285,
+  "longitude": -112.9427,
+  "tags": [
+    "Anaconda Copper",
+    "Marcus Daly",
+    "mining",
+    "incorporation",
+    "1895"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia: Anaconda Copper Mining Company",
+    "Montana Historical Society"
+  ],
+  "related_article": "copper-kings-railroad-wars.md"
+}

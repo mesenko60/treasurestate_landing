@@ -1,0 +1,26 @@
+{
+  "id": "0517",
+  "month": 5,
+  "day": 17,
+  "date_display": "May 17",
+  "headline": "The Vigilantes Hang Joseph Slade, 1864",
+  "year": 1864,
+  "body": "On May 17, 1864, the Virginia City Vigilance Committee hanged Joseph Alfred Slade, a former Overland Stage superintendent whose violent behavior had made him one of the most feared and notorious figures on the frontier. Slade had built a fearsome reputation during his years managing the Overland Stage division in Wyoming, where he was said to have killed more than two dozen men in various disputes. Mark Twain, who encountered Slade during his 1861 journey west, described him in 'Roughing It' as a man whose name inspired terror across the plains. Slade arrived in the Bannack and Virginia City mining camps in 1863 and initially kept order, but his drinking grew worse and his behavior increasingly erratic. He disrupted public meetings, threatened citizens, and on several occasions drew weapons in crowded saloons. The Virginia City Vigilance Committee, which had already hanged the outlaw sheriff Henry Plummer and his gang earlier that winter, decided Slade had become ungovernable. On the morning of May 17, a committee of several hundred armed men confronted Slade and informed him he was to be hanged. His wife, Maria Virginia Slade, rode furiously into town to save him but arrived too late. Slade was hanged from a corral gate on Wallace Street, one of the most controversial executions carried out by the vigilantes, as he had never been formally charged with any crime in Montana.",
+  "category": "crime_outlaws",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2941,
+  "longitude": -111.9418,
+  "tags": [
+    "Virginia City",
+    "vigilantes",
+    "Joseph Slade",
+    "1864",
+    "hanging"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia: Joseph Slade",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

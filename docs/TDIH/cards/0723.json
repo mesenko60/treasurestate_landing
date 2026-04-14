@@ -1,0 +1,24 @@
+{
+  "id": "0723",
+  "month": 7,
+  "day": 23,
+  "date_display": "July 23",
+  "headline": "Lewis Describes New Snake Species Near Townsend, 1805",
+  "year": 1805,
+  "body": "On July 23, 1805, Captain Meriwether Lewis of the Lewis and Clark Expedition observed and described a new species of snake near present-day Townsend, Montana. This scientific discovery was part of the expedition's broader mission to document the flora and fauna of the newly acquired Louisiana Purchase territory. Lewis's detailed observations contributed significantly to the understanding of North American natural history, showcasing the scientific rigor applied during the journey. This event highlights the expedition's role not only in geographical exploration but also in expanding the scientific knowledge of the American West.",
+  "category": "exploration",
+  "location": "Townsend, Broadwater County",
+  "latitude": 46.3191,
+  "longitude": -111.5196,
+  "tags": [
+    "Lewis and Clark",
+    "wildlife_nature",
+    "science_medicine"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewisandclarkjournals.unl.edu/item/lc.sup.johnsgard.01.04",
+    "https://en.wikipedia.org/wiki/Townsend,_Montana"
+  ],
+  "related_article": null
+}

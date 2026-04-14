@@ -1,0 +1,24 @@
+{
+  "id": "1001",
+  "month": 10,
+  "day": 1,
+  "date_display": "October 1",
+  "headline": "Conservationist Bud Moore Born, 1917",
+  "year": 1917,
+  "body": "On October 1, 1917, William Robert 'Bud' Moore, a prominent Montana forester and conservationist, was born in Florence, Montana. Moore dedicated his life to the preservation and understanding of wilderness areas, particularly in the Northern Rocky Mountain Crown of the Continent Bioregion. He served as the Division Chief of Fire Control and Air Operations for the Forest Service Northern Region, where he championed sustainable forestry practices. A prolific writer and speaker, Moore shared his extensive knowledge on trapping, hunting, and various wilderness topics. His work significantly influenced conservation efforts in Montana and beyond. In recognition of his contributions, he received an honorary doctorate from the University of Montana in 1974. Moore's legacy continues through his writings, including 'The Lochsa Story: Land Ethics in the Bitterroot Mountains', and the William R. (Bud) and Jane Buckhouse Moore Graduate Research Endowment at the University of Montana, which supports future conservation research.",
+  "category": "wildlife_nature",
+  "location": "Florence, Ravalli County",
+  "latitude": 46.7458,
+  "longitude": -114.0903,
+  "tags": [
+    "conservation",
+    "forestry",
+    "notable birth",
+    "wilderness"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/environment/alumni/howtogive/bud-moore.php"
+  ],
+  "related_article": null
+}

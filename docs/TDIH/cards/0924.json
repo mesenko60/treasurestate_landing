@@ -1,0 +1,27 @@
+{
+  "id": "0924",
+  "month": 9,
+  "day": 24,
+  "date_display": "September 24",
+  "headline": "Bannack Founded, 1862",
+  "year": 1862,
+  "body": "On September 24, 1862, the town of Bannack was founded following the discovery of gold on Grasshopper Creek. This event triggered a major gold rush, attracting thousands of prospectors to the area and leading to the establishment of Montana's first territorial capital. Bannack quickly grew into a bustling boomtown, with a diverse population of miners, merchants, and entrepreneurs. However, the town also gained a reputation for lawlessness, with a notorious gang of road agents led by Sheriff Henry Plummer preying on the gold shipments. The founding of Bannack was a pivotal moment in Montana's history, marking the beginning of the state's gold rush era and laying the foundation for its future economic and political development. Today, Bannack is a well-preserved ghost town and a state park, offering a glimpse into the turbulent and exciting days of the Montana frontier.",
+  "category": "mining",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1619,
+  "longitude": -112.9961,
+  "tags": [
+    "Bannack",
+    "gold rush",
+    "mining",
+    "boomtown",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bannack,_Montana",
+    "https://www.visitmt.com/listings/general/ghost-town/bannack-state-park.html",
+    "https://www.legendsofamerica.com/mt-bannack/"
+  ],
+  "related_article": null
+}

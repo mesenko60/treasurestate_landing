@@ -1,0 +1,27 @@
+{
+  "id": "1224",
+  "month": 12,
+  "day": 24,
+  "date_display": "December 24",
+  "headline": "St. Mary's Mission, Montana's First Permanent White Settlement, Established, 1841",
+  "year": 1841,
+  "body": "On December 24, 1841, Father Pierre Jean De Smet established St. Mary's Mission near present-day Stevensville, marking the founding of Montana's first permanent white settlement. De Smet, a Jesuit missionary, was invited by the Salish (Flathead) tribe to establish a mission among them. The mission served as a center for religious instruction, agricultural education, and cultural exchange between the missionaries and the Native American communities. Its establishment was a pivotal moment in Montana's history, signifying the beginning of sustained European-American presence and influence in the region. St. Mary's Mission played a crucial role in the early development of Montana, introducing new farming techniques, trades, and a different way of life to the indigenous populations, while also serving as a hub for early settlers and traders. The site remains a significant historical landmark, preserving the legacy of this foundational period.",
+  "category": "exploration",
+  "location": "Stevensville, Ravalli County",
+  "latitude": 46.5081,
+  "longitude": -114.0928,
+  "tags": [
+    "St. Mary's Mission",
+    "Pierre Jean De Smet",
+    "Stevensville",
+    "first settlement",
+    "Native American relations",
+    "missionary"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.wherewewalked.info/feasts/12-December/12-24.htm",
+    "https://en.wikipedia.org/wiki/St._Mary%27s_Mission_(Montana)"
+  ],
+  "related_article": null
+}

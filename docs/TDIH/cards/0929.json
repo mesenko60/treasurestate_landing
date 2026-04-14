@@ -1,0 +1,27 @@
+{
+  "id": "0929",
+  "month": 9,
+  "day": 29,
+  "date_display": "September 29",
+  "headline": "Serial Killer David Meirhofer Dies in Deer Lodge Prison, 1974",
+  "year": 1974,
+  "body": "On September 29, 1974, David Gail Meirhofer, a notorious serial killer who terrorized rural Montana, died by suicide in the Montana State Prison at Deer Lodge. Meirhofer confessed to the murders of four individuals, including three children, between 1967 and 1974, primarily in Gallatin County. His crimes deeply impacted the communities of southwestern Montana and led to one of the earliest applications of criminal profiling by the FBI. Meirhofer's death brought a grim end to a dark chapter in Montana's criminal history, closing the case on a series of horrific acts that had gripped the state with fear. The event serves as a stark reminder of the challenges faced by law enforcement and the lasting trauma inflicted by such crimes on both victims' families and the wider public.",
+  "category": "crime_outlaws",
+  "location": "Deer Lodge, Powell County",
+  "latitude": 46.3958,
+  "longitude": -112.73,
+  "tags": [
+    "serial killer",
+    "David Meirhofer",
+    "Deer Lodge",
+    "crime",
+    "Montana State Prison"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/David_Meirhofer",
+    "https://murderpedia.org/male.M/m/meirhofer-david.htm",
+    "https://latitude.to/articles-by-country/us/united-states/26870/deer-lodge-montana"
+  ],
+  "related_article": null
+}

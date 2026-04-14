@@ -1,0 +1,27 @@
+{
+  "id": "0920",
+  "month": 9,
+  "day": 20,
+  "date_display": "September 20",
+  "headline": "Yellowstone National Park Act of 1872",
+  "year": 1872,
+  "body": "While the act was signed into law on March 1, 1872, the ongoing exploration and documentation of Yellowstone's wonders throughout the late summer and early fall of 1871, including the Hayden Geological Survey, were instrumental in its passage. The reports, photographs, and sketches from these expeditions, which concluded in the fall, provided the compelling evidence needed to convince Congress to protect the region. The Yellowstone National Park Act, which set aside over 2 million acres of land in present-day Wyoming, Montana, and Idaho, was a revolutionary concept, establishing the world's first national park. This landmark legislation preserved the unique geothermal features, wildlife, and breathtaking landscapes of Yellowstone for the enjoyment and benefit of future generations. The creation of Yellowstone National Park was a pivotal moment in the history of conservation and a testament to the foresight of those who recognized the value of preserving America's natural treasures.",
+  "category": "wildlife_nature",
+  "location": "Yellowstone National Park",
+  "latitude": 44.428,
+  "longitude": -110.5885,
+  "tags": [
+    "Yellowstone National Park",
+    "Hayden Geological Survey",
+    "conservation",
+    "national park",
+    "wildlife"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/yell/learn/historyculture/yellowstone-act-1872.htm",
+    "https://www.archives.gov/milestone-documents/yellowstone-national-park-act",
+    "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
+  ],
+  "related_article": null
+}

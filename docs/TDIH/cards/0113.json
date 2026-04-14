@@ -1,0 +1,25 @@
+{
+  "id": "0113",
+  "month": 1,
+  "day": 13,
+  "date_display": "January 13",
+  "headline": "Big Horn County Created in Montana, 1913",
+  "year": 1913,
+  "body": "On January 13, 1913, Big Horn County was officially created in southeastern Montana, carved out of portions of Yellowstone and Rosebud counties. Named for the Bighorn Mountains and the Bighorn River that traverse its landscape, the county seat was established in Hardin. The creation of Big Horn County reflected the ongoing process of organizing and defining administrative boundaries within the young state of Montana. This region has a rich history, deeply intertwined with Native American culture, particularly the Crow Indian Reservation, which occupies a significant portion of the county. The county's economy has historically been based on agriculture, ranching, and natural resources. The establishment of Big Horn County was a step in the development of local governance and infrastructure, serving the growing population and diverse communities in this part of Montana.",
+  "category": "statehood",
+  "location": "Hardin, Big Horn County",
+  "latitude": 45.6294,
+  "longitude": -107.6087,
+  "tags": [
+    "county formation",
+    "Montana history",
+    "local government",
+    "Native American history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Big_Horn_County,_Montana"
+  ],
+  "related_article": null
+}

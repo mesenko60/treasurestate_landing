@@ -1,0 +1,25 @@
+{
+  "id": "1201",
+  "month": 12,
+  "day": 1,
+  "date_display": "December 1",
+  "headline": "Chinook Winds Bring Dramatic Temperature Rise to Kipp, 1896",
+  "year": 1896,
+  "body": "On December 1, 1896, Kipp, Montana, experienced a remarkable weather phenomenon as chinook winds caused the temperature to soar by 80°F in just 15 hours. This dramatic temperature increase is one of the most extreme short-duration temperature changes recorded in U.S. history. Chinook winds, known for their warmth and dryness, are common in Montana, often bringing rapid thaws during winter months. This particular event saw temperatures rise from -3°F to 34°F in a mere seven minutes, and the snow depth decreased significantly from 28 inches to 11 inches by December 2nd. Such sudden shifts highlight the dynamic and often unpredictable nature of Montana's climate, particularly in areas susceptible to these powerful wind systems.",
+  "category": "weather",
+  "location": "Kipp, Pondera County",
+  "latitude": 48.5569,
+  "longitude": -113.0134,
+  "tags": [
+    "chinook winds",
+    "extreme weather",
+    "temperature record",
+    "Kipp"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.facebook.com/weatherhistory/posts/december-1st-1896chinook-winds-raised-the-temperature-at-kipp-browning-montana-f/1441062094693259/",
+    "https://560kmon.com/mt-wx-records/"
+  ],
+  "related_article": null
+}

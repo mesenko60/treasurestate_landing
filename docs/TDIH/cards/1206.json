@@ -1,0 +1,26 @@
+{
+  "id": "1206",
+  "month": 12,
+  "day": 6,
+  "date_display": "December 6",
+  "headline": "Chinese Trial Reported in Deer Lodge, 1873",
+  "year": 1873,
+  "body": "On December 6, 1873, the \"New North-West\" newspaper in Deer Lodge, Montana, reported on the trial of Hang La Chung (also known as Ah Chung) for the murder of Ah Wah in Bear Gulch. This event sheds light on the presence and experiences of Chinese immigrants in Montana during the territorial period, particularly in the mining regions. Chinese laborers played a significant role in the development of Montana\"s infrastructure and mining industry, often facing discrimination and prejudice. The reporting of such a trial in a prominent territorial newspaper underscores the legal and social challenges faced by these communities. Deer Lodge, a key center in early Montana, served as a hub for legal proceedings and news dissemination, reflecting the evolving social dynamics of the frontier. This historical record provides a glimpse into the complexities of justice and ethnic relations in 19th-century Montana.",
+  "category": "crime_outlaws",
+  "location": "Deer Lodge, Powell County",
+  "latitude": 46.3957,
+  "longitude": -112.73,
+  "tags": [
+    "Chinese immigrants",
+    "Deer Lodge",
+    "mining history",
+    "frontier justice",
+    "New North-West newspaper"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/chinese-in-montana/documents/thenewnorthwest.pdf",
+    "https://oldmissoula.com/missoula-murderess-with-a-little-pistol-1st-woman-ever-to-penitentiary-1878/"
+  ],
+  "related_article": null
+}

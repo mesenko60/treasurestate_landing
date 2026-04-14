@@ -1,0 +1,26 @@
+{
+  "id": "1203",
+  "month": 12,
+  "day": 3,
+  "date_display": "December 3",
+  "headline": "Gold Discovered at Confederate Gulch, 1864",
+  "year": 1864,
+  "body": "On December 3, 1864, a group of prospectors discovered gold in Confederate Gulch, a rugged canyon in the Big Belt Mountains of Montana. This discovery triggered a major gold rush to the area, attracting thousands of miners and leading to the establishment of Diamond City, which quickly became one of the territory's most prosperous and notorious mining camps. Confederate Gulch proved to be one of the richest placer gold discoveries in Montana's history, with some claims yielding extraordinary amounts of gold. The influx of people and wealth had a profound impact on the development of the Montana Territory, contributing to its economic growth and shaping its social fabric. The legacy of the Confederate Gulch gold rush is still visible today in the remnants of the old mining operations and the stories of the colorful characters who sought their fortunes there.",
+  "category": "mining",
+  "location": "Confederate Gulch, Broadwater County",
+  "latitude": 46.3833,
+  "longitude": -111.4333,
+  "tags": [
+    "gold rush",
+    "Confederate Gulch",
+    "mining history",
+    "Diamond City",
+    "Montana Territory"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://www.legendsofamerica.com/mt-confederategulch/"
+  ],
+  "related_article": null
+}

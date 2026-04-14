@@ -1,0 +1,26 @@
+{
+  "id": "0430",
+  "month": 4,
+  "day": 30,
+  "date_display": "April 30",
+  "headline": "Fort Shaw Indian Industrial School Opens, 1892",
+  "year": 1892,
+  "body": "On April 30, 1892, the Fort Shaw Indian Industrial School opened its doors in Fort Shaw, Montana. This institution was part of a broader federal policy aimed at assimilating Native American children into mainstream American society through vocational training and cultural re-education. The school provided industrial training, teaching skills such as farming, carpentry, and domestic arts, alongside academic subjects. While proponents believed these schools offered opportunities for Native American youth, they often came at the cost of suppressing indigenous languages, cultures, and traditions. The opening of Fort Shaw Indian Industrial School reflects a complex and often controversial chapter in American and Montana history, highlighting the government's efforts to shape the lives of Native American communities during the late 19th and early 20th centuries. Its legacy continues to be debated, representing both educational opportunities and cultural loss.",
+  "category": "native_history",
+  "location": "Fort Shaw, Cascade County",
+  "latitude": 47.5055,
+  "longitude": -111.8103,
+  "tags": [
+    "Fort Shaw Indian Industrial School",
+    "Native American History",
+    "Assimilation",
+    "Education",
+    "Cascade County"
+  ],
+  "expandable": true,
+  "sources": [
+    "atoztheusa.com/montana/historical-timeline.html",
+    "en.wikipedia.org/wiki/Fort_Shaw,_Montana"
+  ],
+  "related_article": null
+}

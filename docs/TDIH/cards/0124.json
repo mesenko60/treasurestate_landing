@@ -1,0 +1,25 @@
+{
+  "id": "0124",
+  "month": 1,
+  "day": 24,
+  "date_display": "January 24",
+  "headline": "Skinner and Carter Hanged by Montana Vigilantes, 1864",
+  "year": 1864,
+  "body": "On January 24, 1864, in the midst of the Montana gold rush, two men identified as Skinner and Carter were subjected to a vigilante trial and subsequently hanged. This event was part of the broader campaign by the Montana Vigilantes to establish order and justice in the lawless mining camps of the Idaho Territory, which would soon become Montana Territory. The trial, held in a dry goods store, exemplified the swift and often brutal nature of frontier justice when formal legal systems were absent or deemed ineffective. Skinner and Carter were accused of being part of the notorious road agent gang led by Henry Plummer, which was responsible for numerous robberies and murders. Their execution, like many others carried out by the vigilantes, served as a stark warning to criminals and was intended to deter further lawlessness. These actions, though controversial in their methods, played a significant role in shaping the early social and legal landscape of Montana.",
+  "category": "crime_outlaws",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1649,
+  "longitude": -112.9917,
+  "tags": [
+    "Montana Vigilantes",
+    "frontier justice",
+    "gold rush",
+    "outlaws"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montana_Vigilantes",
+    "https://www.hcn.org/issues/51-11/history-montanas-vigilante-obsession-obscures-the-truth/"
+  ],
+  "related_article": null
+}

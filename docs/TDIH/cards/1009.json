@@ -1,0 +1,25 @@
+{
+  "id": "1009",
+  "month": 10,
+  "day": 9,
+  "date_display": "October 9",
+  "headline": "Yellowstone National Park Designated UNESCO World Heritage Site, 1978",
+  "year": 1978,
+  "body": "On October 9, 1978, Yellowstone National Park, a natural wonder spanning parts of Montana, Wyoming, and Idaho, was designated as one of the first UNESCO World Heritage Sites. This prestigious recognition underscored the park's outstanding universal value, acknowledging its unique geological features, diverse ecosystems, and unparalleled wildlife. Established in 1872 as the world's first national park, Yellowstone is renowned for its geothermal activity, including the iconic Old Faithful geyser, and its role as a critical habitat for numerous species, such as grizzly bears, wolves, and bison. The UNESCO designation further solidified Yellowstone's status as a global treasure, emphasizing the international community's commitment to preserving its natural and cultural heritage for future generations. This event marked a significant milestone in the ongoing efforts to protect and appreciate one of America's most cherished landscapes.",
+  "category": "wildlife_nature",
+  "location": "Yellowstone National Park (Montana portion)",
+  "latitude": 45.0,
+  "longitude": -110.0,
+  "tags": [
+    "Yellowstone National Park",
+    "UNESCO",
+    "conservation",
+    "natural heritage"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.nps.gov/articles/000/yellowstone-national-park-world-heritage-site.htm"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "0203",
+  "month": 2,
+  "day": 3,
+  "date_display": "February 3",
+  "headline": "Senator Jon Tester Becomes Chairman of Senate Indian Affairs Committee, 2021",
+  "year": 2021,
+  "body": "On February 3, 2021, Montana Senator Jon Tester assumed the chairmanship of the powerful Senate Committee on Indian Affairs. This appointment marked a significant moment for both Montana and tribal nations across the United States, as Tester, a Democrat, took the helm of the committee responsible for overseeing legislation and policy related to Native American issues. His leadership brought a focus on critical areas such as tribal sovereignty, economic development, healthcare, education, and natural resource management for the 574 federally recognized tribes. Senator Tester, known for his bipartisan approach and deep understanding of rural and tribal concerns, has consistently advocated for Native American communities throughout his career. His chairmanship provided a direct voice for Montana's twelve tribal nations at the highest levels of federal policymaking, ensuring that their unique challenges and perspectives were represented in national discourse. This role underscored Montana's historical and ongoing relationship with its indigenous populations and highlighted the importance of federal-tribal relations in the state.",
+  "category": "native_history",
+  "location": "Washington D.C.",
+  "latitude": 38.9072,
+  "longitude": -77.0369,
+  "tags": [
+    "Jon Tester",
+    "Senate",
+    "Indian Affairs Committee",
+    "Native American policy",
+    "Montana politics"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.daines.senate.gov/meet-steve/committee-assignments/indian-affairs-committee/",
+    "https://www.senate.gov/states/MT/timeline.shtml"
+  ],
+  "related_article": null
+}

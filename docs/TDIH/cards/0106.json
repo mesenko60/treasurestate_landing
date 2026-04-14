@@ -1,0 +1,24 @@
+{
+  "id": "0106",
+  "month": 1,
+  "day": 6,
+  "date_display": "January 6",
+  "headline": "Montana Vigilantes Capture 'Dutch John' Wagner, 1864",
+  "year": 1864,
+  "body": "On January 6, 1864, the notorious road agent 'Dutch John' Wagner was captured by members of the Montana Vigilantes. Wagner, who had been wounded during the Moody robbery, was apprehended by Captain Nick Wall and Ben Peabody on the Salt Lake City trail. This capture was a significant event in the vigilante movement that sought to bring law and order to the chaotic mining camps of Montana Territory. The vigilantes transported Wagner to Bannack, where he was subsequently hanged on January 11, 1864. The actions of the Montana Vigilantes, though controversial, played a crucial role in establishing a semblance of justice in a region largely devoid of formal law enforcement during the gold rush era. Wagner's capture and execution served as a stark warning to other outlaws operating in the territory.",
+  "category": "crime_outlaws",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1649,
+  "longitude": -112.9917,
+  "tags": [
+    "Montana Vigilantes",
+    "outlaws",
+    "gold rush",
+    "frontier justice"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montana_Vigilantes"
+  ],
+  "related_article": null
+}

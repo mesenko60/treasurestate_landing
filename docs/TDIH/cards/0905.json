@@ -1,0 +1,26 @@
+{
+  "id": "0905",
+  "month": 9,
+  "day": 5,
+  "date_display": "September 5",
+  "headline": "Murder of Sammy Hays in Helena, 1867",
+  "year": 1867,
+  "body": "On September 5, 1867, Sammy Hays, a Black resident of Helena, Montana, was murdered during a post-election riot. The incident, reported in the Helena Weekly Herald, highlights the racial tensions and violence that were present in Montana during the Reconstruction era. While specific details surrounding the riot and Hays's murder are scarce, the event underscores the challenges faced by African Americans in the post-Civil War West. This tragic event serves as a reminder of the often-overlooked aspects of Montana's early history and the struggles for justice and equality.",
+  "category": "crime_outlaws",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Sammy Hays",
+    "Helena",
+    "racial violence",
+    "Reconstruction era",
+    "African American history"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://mhs.mt.gov/Shpo/AfricanAmericans/History/Timeline",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

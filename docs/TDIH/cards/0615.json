@@ -1,0 +1,27 @@
+{
+  "id": "0615",
+  "month": 6,
+  "day": 15,
+  "date_display": "June 15",
+  "headline": "Oregon Treaty Cedes Western Montana to U.S., 1846",
+  "year": 1846,
+  "body": "On June 15, 1846, the Oregon Treaty was signed between the United States and Great Britain, formally settling the boundary dispute over the Oregon Country. This diplomatic agreement was a pivotal moment in the territorial expansion of the United States, as it officially ceded the far western portion of what would become Montana to American control. Prior to the treaty, the region was jointly occupied by both nations, leading to ongoing tensions and competing claims. The treaty established the 49th parallel as the boundary, extending from the Rocky Mountains to the Pacific Ocean, thereby solidifying American sovereignty over a vast and resource-rich area. For Montana, this meant that its western lands, including the future Flathead and Bitterroot Valleys, were definitively brought into the American sphere. This event was crucial for the eventual formation of Montana Territory and its subsequent statehood, paving the way for American settlement, exploration, and the development of its unique cultural and economic landscape. The Oregon Treaty represents a significant diplomatic achievement that profoundly shaped the geopolitical map of the American West.",
+  "category": "statehood",
+  "location": "Western Montana (area affected by Oregon Treaty)",
+  "latitude": 47.0,
+  "longitude": -113.0,
+  "tags": [
+    "Oregon Treaty",
+    "territorial expansion",
+    "Great Britain",
+    "diplomacy",
+    "western Montana"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.atoztheusa.com/montana/historical-timeline.html",
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.showallegiance.com/blogs/this-day-in-history/this-week-in-american-history-june-15th-june-21st"
+  ],
+  "related_article": null
+}

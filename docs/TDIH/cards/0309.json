@@ -1,0 +1,24 @@
+{
+  "id": "0309",
+  "month": 3,
+  "day": 9,
+  "date_display": "March 9",
+  "headline": "Lincoln County Created, 1909",
+  "year": 1909,
+  "body": "On March 9, 1909, Lincoln County was established in northwestern Montana, with Libby as its county seat. The county was formed from a portion of Flathead County and was named in honor of President Abraham Lincoln. Its creation was driven by the region's growing population, fueled by the expansion of the Great Northern Railway and the burgeoning timber industry. The establishment of Lincoln County provided more localized governance for its residents, who were previously separated from the Flathead County seat by a significant distance. This event reflects the ongoing process of settlement and administrative organization in Montana during the early 20th century, as the state's infrastructure and economy continued to develop.",
+  "category": "statehood",
+  "location": "Lincoln County, Montana",
+  "latitude": 48.4,
+  "longitude": -115.55,
+  "tags": [
+    "County Formation",
+    "Montana History",
+    "Timber Industry"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lincoln_County,_Montana",
+    "https://www.libby.org/community/history.html"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "0214",
+  "month": 2,
+  "day": 14,
+  "date_display": "February 14",
+  "headline": "Valentine's Day Shootout at Stoneville, 1884",
+  "year": 1884,
+  "body": "On February 14, 1884, the small Montana Territory hamlet of Stoneville, now known as Alzada in Carter County, became the scene of a dramatic Valentine's Day Shootout. This violent confrontation pitted the notorious George Axelby Gang against a determined posse, encapsulating the lawlessness and frontier justice prevalent in Montana during the late 19th century. The Axelby Gang was a group of cattle rustlers and outlaws who terrorized the southeastern Montana and northwestern Dakota Territory. Their criminal activities, including theft and violence, prompted local ranchers and law enforcement to form posses to bring them to justice. The shootout was a desperate attempt by the posse to apprehend the gang, resulting in a deadly exchange of gunfire. Such events were not uncommon in the untamed territories, where established legal systems were often nascent and communities frequently took matters into their own hands to protect their lives and property. The Valentine's Day Shootout at Stoneville serves as a stark reminder of the harsh realities of frontier life, where conflicts over land, resources, and law enforcement often escalated into violent encounters, shaping the rugged character of early Montana.",
+  "category": "crime_outlaws",
+  "location": "Alzada, Carter County",
+  "latitude": 45.0231,
+  "longitude": -104.412,
+  "tags": [
+    "outlaws",
+    "shootout",
+    "frontier justice",
+    "Carter County",
+    "George Axelby Gang"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://historynet.com/valentines-day-shootout-at-stoneville/",
+    "https://en.wikipedia.org/wiki/Alzada,_Montana"
+  ],
+  "related_article": null
+}

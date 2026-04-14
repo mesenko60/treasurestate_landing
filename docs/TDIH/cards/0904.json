@@ -1,0 +1,26 @@
+{
+  "id": "0904",
+  "month": 9,
+  "day": 4,
+  "date_display": "September 4",
+  "headline": "President Theodore Roosevelt Establishes Absaroka Forest Reserve, 1902",
+  "year": 1902,
+  "body": "On September 4, 1902, President Theodore Roosevelt, a staunch conservationist, issued a proclamation establishing the Absaroka Forest Reserve. This significant act of preservation protected a vast area of land in Montana and Wyoming, contributing to the nascent national forest system. The Absaroka Forest Reserve, later incorporated into the larger Absaroka-Beartooth Wilderness, played a crucial role in safeguarding the region's diverse ecosystems, including its forests, wildlife, and water resources. Roosevelt's commitment to conservation laid the groundwork for future environmental protection efforts and left a lasting legacy on Montana's natural landscape.",
+  "category": "wildlife_nature",
+  "location": "Absaroka-Beartooth Wilderness, Park County",
+  "latitude": 45.1,
+  "longitude": -109.933,
+  "tags": [
+    "Theodore Roosevelt",
+    "conservation",
+    "Absaroka Forest Reserve",
+    "national forests",
+    "wildlife"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.presidency.ucsb.edu/documents/proclamation-493-establishment-the-absaroka-forest-reserve",
+    "https://en.wikipedia.org/wiki/Absaroka-Beartooth_Wilderness"
+  ],
+  "related_article": null
+}

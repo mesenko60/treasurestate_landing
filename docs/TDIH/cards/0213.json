@@ -1,0 +1,26 @@
+{
+  "id": "0213",
+  "month": 2,
+  "day": 13,
+  "date_display": "February 13",
+  "headline": "University of Montana Founded, 1893",
+  "year": 1893,
+  "body": "On February 13, 1893, the State of Montana officially founded the University of Montana, marking a pivotal moment in the state's commitment to higher education. This legislative act, occurring just four years after Montana achieved statehood, laid the groundwork for what would become one of the state's premier institutions of learning. The establishment of the university in Missoula was a testament to the foresight of Montana's early leaders, who recognized the importance of providing educational opportunities to its growing population and fostering intellectual development within the state. The university's initial mission was to offer instruction in liberal arts, sciences, and professional fields, preparing students for careers and civic engagement in a rapidly developing region. Over the decades, the University of Montana has grown significantly, evolving into a comprehensive public research university that plays a crucial role in the cultural, economic, and social life of the state. Its founding on this day symbolizes Montana's dedication to education and its belief in the power of knowledge to shape a prosperous future for its citizens.",
+  "category": "arts_culture",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8721,
+  "longitude": -113.994,
+  "tags": [
+    "education",
+    "University of Montana",
+    "Missoula",
+    "statehood",
+    "higher education"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://libguides.lib.umt.edu/umhistory"
+  ],
+  "related_article": null
+}

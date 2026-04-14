@@ -1,0 +1,27 @@
+{
+  "id": "0226",
+  "month": 2,
+  "day": 26,
+  "date_display": "February 26",
+  "headline": "Yellowstone County Created, 1883",
+  "year": 1883,
+  "body": "On February 26, 1883, the Montana Territorial Legislature officially established Yellowstone County, carving it out of parts of Custer and Gallatin Counties. This legislative act was a direct response to the rapid growth and development occurring in the Yellowstone River Valley, primarily driven by the expansion of the Northern Pacific Railway and the burgeoning agricultural and ranching industries. The county was named after the Yellowstone River, a dominant geographical feature of the region. Billings was designated as the county seat, a city that quickly grew into a major commercial and transportation hub due due to its strategic location along the railroad and the river. The creation of Yellowstone County was crucial for providing localized governance, law enforcement, and public services to the increasing population of settlers, ranchers, and business owners. It facilitated the organization of schools, courts, and infrastructure necessary for a developing frontier. This event marks a significant milestone in the administrative and economic history of Montana, as it further solidified the territorial government's control and support for the settlement and exploitation of the rich resources of the Yellowstone Valley, laying the foundation for one of Montana's most populous and economically vital regions.",
+  "category": "statehood",
+  "location": "Billings, Yellowstone County",
+  "latitude": 45.7833,
+  "longitude": -108.5007,
+  "tags": [
+    "county formation",
+    "Yellowstone County",
+    "Montana Territory",
+    "Northern Pacific Railway",
+    "Billings"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Yellowstone_County,_Montana",
+    "https://www.latlong.net/place/billings-mt-usa-10747.html"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0906",
+  "month": 9,
+  "day": 6,
+  "date_display": "September 6",
+  "headline": "Cook-Folsom-Peterson Expedition Departs for Yellowstone, 1869",
+  "year": 1869,
+  "body": "On September 6, 1869, the Cook-Folsom-Peterson Expedition embarked from Diamond City, Montana Territory, on a journey that would prove pivotal in the establishment of the world's first national park. Led by David E. Folsom, Charles W. Cook, and William Peterson, this was the first organized expedition to thoroughly explore and document the geysers, hot springs, and other natural wonders of the Yellowstone region. Their detailed accounts and observations, though initially met with skepticism, provided crucial evidence of Yellowstone's unique geological features. The expedition's findings were instrumental in raising public awareness and ultimately contributed to the designation of Yellowstone as a national park in 1872, forever preserving its unparalleled beauty for future generations. This pioneering effort by Montanans highlighted the region's extraordinary natural heritage.",
+  "category": "exploration",
+  "location": "Diamond City, Broadwater County",
+  "latitude": 46.5972,
+  "longitude": -111.4239,
+  "tags": [
+    "Yellowstone National Park",
+    "exploration",
+    "Cook-Folsom-Peterson Expedition",
+    "Diamond City",
+    "1869"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cook-Folsom-Peterson_Expedition",
+    "https://www.nps.gov/yell/learn/historyculture/expeditions.htm",
+    "https://www.travelmath.com/cities/Diamond+City,+MT"
+  ],
+  "related_article": null
+}

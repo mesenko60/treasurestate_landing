@@ -1,0 +1,26 @@
+{
+  "id": "0209",
+  "month": 2,
+  "day": 9,
+  "date_display": "February 9",
+  "headline": "Montana Territorial Government Adopts State Motto \"Oro y Plata\", 1865",
+  "year": 1865,
+  "body": "On February 9, 1865, the Montana Territorial government officially adopted the motto \"Oro y Plata,\" meaning \"Gold and Silver\" in Spanish. This significant act, occurring just a year after the territory's formation, underscored the profound influence of the mining industry on Montana's early development and identity. The discovery of vast gold and silver deposits in places like Alder Gulch and Butte had fueled a massive influx of prospectors and settlers, rapidly transforming the region from a remote wilderness into a bustling frontier. The motto served as a direct acknowledgment of the mineral wealth that was the driving force behind Montana's economy and growth. It symbolized the promise of prosperity that drew thousands to the territory and reflected the aspirations of its residents. Today, February 9th is recognized as Montana Mining Day, commemorating this historical adoption and honoring the enduring legacy of the mining industry and the countless individuals who contributed to Montana's rich mining heritage. The motto \"Oro y Plata\" remains a powerful emblem of Montana's past and its deep connection to the precious metals that shaped its destiny.",
+  "category": "mining",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2927,
+  "longitude": -111.9422,
+  "tags": [
+    "state motto",
+    "mining",
+    "gold",
+    "silver",
+    "Montana Territory"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://news.mt.gov/Governors-Office/Governor-Gianforte-Proclaims-Montana-Mining-Day",
+    "https://dailymontanan.com/2026/02/10/gianforte-proclaims-feb-9-as-montana-mining-day/"
+  ],
+  "related_article": null
+}

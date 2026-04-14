@@ -1,0 +1,25 @@
+{
+  "id": "0103",
+  "month": 1,
+  "day": 3,
+  "date_display": "January 3",
+  "headline": "Brian Schweitzer Sworn In as 23rd Governor of Montana, 2005",
+  "year": 2005,
+  "body": "On January 3, 2005, Brian Schweitzer took office as the 23rd Governor of Montana. A farmer and politician, Schweitzer brought a unique blend of progressive values and populist rhetoric to the state's highest office. Born in Havre, Montana, he held degrees in agronomy and soil science, and worked on irrigation projects internationally before entering politics. His tenure as governor, which lasted until January 7, 2013, was marked by a focus on economic development, education, and natural resource management. He was known for his folksy public persona and his unsparing use of the veto power, often clashing with the Republican-controlled legislature. Schweitzer consistently maintained high approval ratings throughout his two terms, emphasizing early childhood education and tribal history in schools. His administration also saw significant increases in college degree attainment within the state.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0271,
+  "tags": [
+    "politics",
+    "governor",
+    "Montana history",
+    "education"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Brian_Schweitzer",
+    "https://www.nga.org/governor/brian-schweitzer/"
+  ],
+  "related_article": null
+}

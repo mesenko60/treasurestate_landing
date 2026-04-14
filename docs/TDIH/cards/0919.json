@@ -1,0 +1,27 @@
+{
+  "id": "0919",
+  "month": 9,
+  "day": 19,
+  "date_display": "September 19",
+  "headline": "First Montana State Fair Held in Helena, 1870",
+  "year": 1870,
+  "body": "On September 19, 1870, the first Montana State Fair was held in Helena, showcasing the agricultural and industrial products of the territory. The fair was a significant event for the young territory, providing a venue for farmers, ranchers, and artisans to display their goods and to compete for prizes. It was also a social gathering, bringing together people from across the territory to celebrate their accomplishments and to share ideas. The first state fair was a testament to the growing prosperity and confidence of Montana, and it played an important role in promoting the territory's resources and attracting new settlers. The tradition of the state fair continues to this day, serving as a celebration of Montana's rich agricultural heritage and its vibrant communities.",
+  "category": "agriculture",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Montana State Fair",
+    "agriculture",
+    "Helena",
+    "industry",
+    "community"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.montanastatefair.com/p/about-us/history",
+    "https://helenair.com/news/local/a-look-back-at-the-history-of-the-montana-state-fair/article_c1b2d3a8-9e8a-5b2a-8b3e-3d9e8c7a6f4c.html",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

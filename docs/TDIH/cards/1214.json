@@ -1,0 +1,26 @@
+{
+  "id": "1214",
+  "month": 12,
+  "day": 14,
+  "date_display": "December 14",
+  "headline": "Fairfield Experiences Record-Breaking Temperature Drop, 1924",
+  "year": 1924,
+  "body": "On December 14, 1924, the town of Fairfield, Montana, experienced an extraordinary weather event, setting a record for the greatest temperature drop in a 12-hour period. The temperature plummeted from a mild 63°F (17.2°C) at noon to a frigid -21°F (-29.4°C) by midnight. This dramatic 84-degree Fahrenheit swing showcases the extreme and unpredictable nature of Montana's climate, particularly during the winter months. Such rapid temperature changes are often influenced by chinook winds, which can bring warm air, followed by a swift return to cold arctic air masses. This event in Fairfield stands as a testament to the harsh conditions that Montanans have historically faced and adapted to, highlighting the state's reputation for severe and rapidly shifting weather patterns.",
+  "category": "weather",
+  "location": "Fairfield, Teton County",
+  "latitude": 47.615,
+  "longitude": -111.979,
+  "tags": [
+    "Fairfield",
+    "extreme weather",
+    "temperature record",
+    "chinook winds",
+    "Montana climate"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.reddit.com/r/100yearsago/comments/1he45cj/december_14th_1924_the_town_of_fairfield_montana/",
+    "https://www.travelmath.com/cities/Fairfield,+MT"
+  ],
+  "related_article": null
+}

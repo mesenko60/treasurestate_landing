@@ -1,0 +1,24 @@
+{
+  "id": "0729",
+  "month": 7,
+  "day": 29,
+  "date_display": "July 29",
+  "headline": "Fort C.F. Smith Evacuated, 1868",
+  "year": 1868,
+  "body": "On July 29, 1868, Fort C.F. Smith, a U.S. Army post located on the Bighorn River in what is now Montana, was evacuated. This event marked the effective closure of the Bozeman Trail, a contentious route through Native American hunting grounds that had been a flashpoint for conflict. The evacuation was a result of the Fort Laramie Treaty of 1868, which ended Red Cloud's War and granted the Lakota Sioux and their allies control over the Powder River Country. The abandonment of Fort C.F. Smith symbolized a temporary victory for Native American resistance against westward expansion and a shift in U.S. Indian policy, though these gains would prove short-lived.",
+  "category": "military",
+  "location": "Fort Smith, Big Horn County",
+  "latitude": 45.3133,
+  "longitude": -107.9297,
+  "tags": [
+    "military",
+    "Native American history",
+    "Bozeman Trail"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://www.nps.gov/bica/learn/historyculture/chronology-of-bighorn-canyon-history-part-two-1864-1968.htm"
+  ],
+  "related_article": null
+}

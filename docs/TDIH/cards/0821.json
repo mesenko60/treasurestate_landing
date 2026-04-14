@@ -1,0 +1,24 @@
+{
+  "id": "0821",
+  "month": 8,
+  "day": 21,
+  "date_display": "August 21",
+  "headline": "Bozeman Trail established, 1863",
+  "year": 1863,
+  "body": "On August 21, 1863, the first wagon train arrived in Virginia City via the newly established Bozeman Trail, marking a significant development in the settlement of Montana. Blazed by John Bozeman and John Jacobs, the trail provided a more direct, albeit dangerous, route from the Oregon Trail in Wyoming to the goldfields of southwestern Montana. The trail\"\"\"\"s establishment facilitated a surge of miners, settlers, and supplies into the region, fueling the rapid growth of towns like Virginia City and Bozeman. However, the route cut directly through the hunting grounds of the Lakota, Cheyenne, and Arapaho tribes, leading to intense conflicts known as Red Cloud\"\"\"\"s War. The U.S. military\"\"\"\"s attempts to protect the trail with a series of forts ultimately failed, and the trail was officially closed by the Treaty of Fort Laramie in 1868. Despite its short lifespan, the Bozeman Trail played a crucial role in the early history of Montana, symbolizing the clash between westward expansion and Native American sovereignty.",
+  "category": "exploration",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2949,
+  "longitude": -111.9422,
+  "tags": [
+    "westward expansion",
+    "bozeman trail",
+    "native american history",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "distinctlymontana.com"
+  ],
+  "related_article": null
+}

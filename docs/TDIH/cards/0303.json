@@ -1,0 +1,24 @@
+{
+  "id": "0303",
+  "month": 3,
+  "day": 3,
+  "date_display": "March 3",
+  "headline": "Timber-Culture Act Repealed, 1891",
+  "year": 1891,
+  "body": "On March 3, 1891, President Benjamin Harrison signed legislation that repealed the Timber-Culture Act of 1873. This act had originally aimed to promote tree planting on the Great Plains by granting settlers an additional 160 acres of land if they planted trees on a quarter of it. While intended to encourage timber growth and improve the arid landscape, the act was often abused, leading to fraudulent claims and little actual tree planting. Its repeal marked a shift in federal land policy, moving away from incentivizing private timber cultivation and towards other forms of land management. This event had implications for Montana, where land use and resource development were central to the state's economic and social fabric, influencing how its vast timber resources would be managed in the years to come.",
+  "category": "infrastructure",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0215,
+  "tags": [
+    "Land Policy",
+    "Timber",
+    "Federal Law"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Timber_Culture_Act"
+  ],
+  "related_article": null
+}

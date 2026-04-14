@@ -1,0 +1,26 @@
+{
+  "id": "0619",
+  "month": 6,
+  "day": 19,
+  "date_display": "June 19",
+  "headline": "Custer Creek Train Wreck, 1938",
+  "year": 1938,
+  "body": "On June 19, 1938, Montana experienced its worst rail disaster when the Custer Creek train wreck occurred near Terry, Prairie County. The tragedy unfolded when a bridge, its foundations severely weakened and washed away by a sudden and intense cloudburst, collapsed under a Milwaukee Road passenger train. The rapid and unexpected flooding caused the bridge to give way, sending several cars plunging into the swollen Custer Creek. The derailment resulted in the deaths of 47 people and injured many more. The Custer Creek train wreck was a stark reminder of the destructive power of nature and the vulnerabilities of infrastructure in the face of extreme weather events. The incident prompted investigations into railway safety and bridge construction standards, leading to improvements aimed at preventing similar catastrophes. This devastating event left a lasting impact on the communities along the rail line and remains a somber chapter in Montana's transportation history, highlighting the challenges of operating in a rugged and unpredictable environment.",
+  "category": "natural_disaster",
+  "location": "Custer Creek, Prairie County",
+  "latitude": 46.7056,
+  "longitude": -105.4783,
+  "tags": [
+    "train wreck",
+    "Custer Creek",
+    "railroad",
+    "natural disaster",
+    "Milwaukee Road"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Custer_Creek_train_wreck",
+    "https://helenamt.com/event/a-survivors-account-of-the-custer-creek-train-wreck/"
+  ],
+  "related_article": null
+}

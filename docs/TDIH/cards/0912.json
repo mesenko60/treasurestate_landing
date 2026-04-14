@@ -1,0 +1,27 @@
+{
+  "id": "0912",
+  "month": 9,
+  "day": 12,
+  "date_display": "September 12",
+  "headline": "Montana Stockgrowers Association Formed, 1884",
+  "year": 1884,
+  "body": "On September 12, 1884, a group of prominent cattlemen gathered in Helena, Montana, to form the Montana Stockgrowers Association. This organization was established to protect the interests of the burgeoning cattle industry in the territory, addressing issues such as cattle rustling, grazing rights, and market regulation. The association quickly became a powerful force in Montana's economic and political landscape, representing the interests of the state's cattle ranchers and shaping the development of the livestock industry. The formation of the Montana Stockgrowers Association was a significant milestone in the history of Montana's agriculture, reflecting the growing importance of the cattle industry in the state's economy and the collective efforts of ranchers to safeguard their livelihoods.",
+  "category": "agriculture",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Montana Stockgrowers Association",
+    "cattle industry",
+    "agriculture",
+    "Helena",
+    "ranching"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://mtbeef.org/about-us/",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

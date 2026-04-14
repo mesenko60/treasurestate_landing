@@ -37,6 +37,7 @@ function getTownList(repoRoot) {
 }
 
 function getLastmod(loc) {
+  if (loc.includes('/this-day-in-history/')) return '2026-04-14';
   if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
   if (loc.includes('/events/')) return '2026-03-21';
   if (loc.includes('/historic-markers/')) return '2026-03-29';
@@ -56,6 +57,9 @@ function getLastmod(loc) {
 function getPriority(loc) {
   if (loc === baseUrl + '/') return 1.0;
   if (loc === baseUrl + '/montana-towns/') return 0.9;
+  if (loc === baseUrl + '/this-day-in-history/') return 0.8;
+  if (loc === baseUrl + '/this-day-in-history/browse/') return 0.7;
+  if (/\/this-day-in-history\/[^/]+\/\d+\/$/.test(loc)) return 0.65;
   if (loc === baseUrl + '/explore-montana/') return 0.85;
   if (/\/montana-towns\/[^/]+\/$/.test(loc)) return 0.9;
   if (/\/guides\/moving-to-/.test(loc)) return 0.8;
@@ -142,6 +146,24 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     add(`${baseUrl}/nearby/`, 'weekly');
     add(`${baseUrl}/best-of/`);
     add(`${baseUrl}/gear/`);
+    add(`${baseUrl}/this-day-in-history/`, 'weekly');
+  });
+
+  // ═══ 1b. THIS DAY IN HISTORY ═══
+  collectUrls('tdih', (add) => {
+    add(`${baseUrl}/this-day-in-history/browse/`);
+    const tdihPath = path.join(repoRoot, 'docs', 'TDIH', 'montana_tdih_dataset', 'montana_tdih.json');
+    if (fs.existsSync(tdihPath)) {
+      const tdih = JSON.parse(fs.readFileSync(tdihPath, 'utf8'));
+      const monthSlugs = [
+        'january', 'february', 'march', 'april', 'may', 'june',
+        'july', 'august', 'september', 'october', 'november', 'december',
+      ];
+      for (const entry of tdih) {
+        const monthSlug = monthSlugs[entry.month - 1];
+        add(`${baseUrl}/this-day-in-history/${monthSlug}/${entry.day}/`);
+      }
+    }
   });
 
   // ═══ 2. INFORMATION (Montana Facts articles) ═══

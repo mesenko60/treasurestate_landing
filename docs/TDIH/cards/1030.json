@@ -1,0 +1,27 @@
+{
+  "id": "1030",
+  "month": 10,
+  "day": 30,
+  "date_display": "October 30",
+  "headline": "Helena Founded by Gold Miners, 1864",
+  "year": 1864,
+  "body": "On October 30, 1864, the city of Helena, Montana, was officially founded by four gold miners who had struck it rich at the aptly named \"Last Chance Gulch.\" John Cowan, Daniel G. Cooper, Anton M. Holter, and Robert S. Neill discovered gold in July of that year, leading to a rapid influx of prospectors and settlers. The settlement quickly grew from a mining camp into a thriving town, becoming the territorial capital in 1875 and later the state capital upon Montana's admission to the Union in 1889. The founding of Helena is a quintessential story of the Montana gold rush era, illustrating the transformative power of mineral wealth on the landscape and demography of the American West. Its strategic location and rich gold deposits ensured its prominence, shaping its development into a significant political and economic center in Montana.",
+  "category": "mining",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Helena",
+    "gold rush",
+    "mining",
+    "city founding",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/this-day-in-history/october-30/the-city-of-helena-montana-is-founded-after-miners-discover-gold",
+    "https://en.wikipedia.org/wiki/Helena,_Montana",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0330",
+  "month": 3,
+  "day": 30,
+  "date_display": "March 30",
+  "headline": "President Obama Signs Omnibus Public Land Management Act, 2009",
+  "year": 2009,
+  "body": "On March 30, 2009, President Barack Obama signed the Omnibus Public Land Management Act of 2009 into law. This landmark legislation protected millions of acres of federal land across the United States, including significant areas within Montana. The act established new wilderness areas, expanded national parks and wildlife refuges, and designated wild and scenic rivers, impacting the management and conservation of Montana's natural resources. For Montana, this meant enhanced protection for its pristine landscapes, vital ecosystems, and recreational opportunities, reinforcing the state's identity as a haven for outdoor enthusiasts and wildlife. The signing of this act, though occurring in Washington D.C., had direct and lasting consequences for Montana's environment and its future generations.",
+  "category": "wildlife_nature",
+  "location": "Washington D.C., District of Columbia",
+  "latitude": 38.8951,
+  "longitude": -77.0364,
+  "tags": [
+    "Public Lands",
+    "Conservation",
+    "Environmental Policy"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.fs.usda.gov/land/staff/Wilderness-Act-2009/index.html",
+    "https://obamawhitehouse.archives.gov/realitycheck/the-press-office/statement-presidents-signing-statements-hr-146-omnibus-public-lands-management-act"
+  ],
+  "related_article": null
+}

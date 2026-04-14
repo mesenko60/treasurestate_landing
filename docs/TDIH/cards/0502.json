@@ -1,0 +1,25 @@
+{
+  "id": "0502",
+  "month": 5,
+  "day": 2,
+  "date_display": "May 2",
+  "headline": "First Gold Discovery at Gold Creek, 1858",
+  "year": 1858,
+  "body": "On May 2, 1858, the first significant discovery of gold in what would become Montana occurred at Gold Creek. While earlier prospecting had taken place, this find by a party led by Granville Stuart and his brother James, along with other prospectors, marked the true beginning of the Montana gold rush. The Stuart brothers, initially cattle ranchers, turned to prospecting after hearing rumors of gold. Their efforts at Gold Creek, located in present-day Powell County, yielded promising results, though large-scale mining would not begin immediately. This discovery, though modest at first, ignited a feverish interest in the region's mineral wealth, drawing thousands of prospectors and settlers to Montana in the years that followed. The influx of miners transformed the sparsely populated territory, leading to the establishment of boomtowns, the development of infrastructure, and ultimately, the formation of Montana Territory in 1864. The Gold Creek discovery is a foundational event in Montana's history, setting in motion the economic and demographic changes that shaped the state.",
+  "category": "mining",
+  "location": "Gold Creek, Powell County",
+  "latitude": 46.5867,
+  "longitude": -112.9286,
+  "tags": [
+    "Gold Rush",
+    "Mining",
+    "Granville Stuart",
+    "Gold Creek"
+  ],
+  "expandable": true,
+  "sources": [
+    "UMT.edu",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

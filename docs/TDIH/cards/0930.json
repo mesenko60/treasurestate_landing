@@ -1,0 +1,27 @@
+{
+  "id": "0930",
+  "month": 9,
+  "day": 30,
+  "date_display": "September 30",
+  "headline": "Chief Joseph Surrenders at Bear Paw, 1877",
+  "year": 1877,
+  "body": "On September 30, 1877, Chief Joseph of the Nez Perce delivered his famous \"I Will Fight No More Forever\" speech, surrendering to U.S. forces at the Bear Paw Battlefield in northern Montana. This marked the end of the Nez Perce War, a grueling 1,170-mile flight by the non-treaty Nez Perce bands, who sought to escape forced relocation to a reservation and reach asylum in Canada. For five days, the Nez Perce, led by Chief Joseph, fought a desperate battle against Colonel Nelson A. Miles' troops. Despite their valiant efforts, exhaustion, hunger, and the harsh Montana winter ultimately forced their surrender, just 40 miles short of the Canadian border. This event is a poignant and tragic chapter in American and Montana history, symbolizing the resistance of Native American tribes against westward expansion and the profound impact of these conflicts on indigenous peoples.",
+  "category": "native_history",
+  "location": "Bear Paw Battlefield, Blaine County",
+  "latitude": 48.3775,
+  "longitude": -109.2072,
+  "tags": [
+    "Chief Joseph",
+    "Nez Perce War",
+    "Bear Paw Battlefield",
+    "Native American history",
+    "military history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.nps.gov/nepe/planyourvisit/bear-paw-battlefield.htm",
+    "https://www.onthisday.com/countries/usa/montana"
+  ],
+  "related_article": null
+}

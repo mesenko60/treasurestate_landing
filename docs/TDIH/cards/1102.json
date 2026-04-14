@@ -1,0 +1,26 @@
+{
+  "id": "1102",
+  "month": 11,
+  "day": 2,
+  "date_display": "November 2",
+  "headline": "Montana's First Telegraph Line Established, 1866",
+  "year": 1866,
+  "body": "On November 2, 1866, a significant step in Montana's communication history was made with the establishment of the first telegraph line connecting Virginia City, Montana, to Salt Lake City. This technological advancement dramatically reduced the time it took for news and information to travel to and from the isolated Montana Territory. Before the telegraph, communication relied on slower methods like mail coaches, which could take weeks or even months. The telegraph brought Montana closer to the rest of the United States, facilitating business, government, and personal correspondence. This connection was crucial for the developing mining towns and burgeoning settlements, allowing for quicker transactions, more efficient law enforcement, and a stronger link to national events. The telegraph line marked a pivotal moment in Montana's integration into the broader American infrastructure.",
+  "category": "infrastructure",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2959,
+  "longitude": -111.9463,
+  "tags": [
+    "Telegraph",
+    "Virginia City",
+    "Communication",
+    "Infrastructure",
+    "Montana Territory"
+  ],
+  "expandable": true,
+  "sources": [
+    "Montana Historical Society",
+    "Wikipedia"
+  ],
+  "related_article": null
+}

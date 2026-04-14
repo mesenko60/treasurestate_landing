@@ -1,0 +1,26 @@
+{
+  "id": "1024",
+  "month": 10,
+  "day": 24,
+  "date_display": "October 24",
+  "headline": "Company E, 163rd Montana Infantry Regiment Parades in Helena, 1917",
+  "year": 1917,
+  "body": "On October 24, 1917, Company E of the 163rd Montana Infantry Regiment paraded through the streets of Helena before deploying for service in World War I. This event was a significant moment for the capital city, as residents gathered to show their support and bid farewell to the local soldiers heading off to war. The parade symbolized the patriotic fervor and community spirit that characterized Montana's contribution to the national war effort. For many of these young men, it was their last time seeing their hometown before facing the realities of combat overseas. The 163rd Infantry Regiment, part of the 41st 'Sunset' Division, played a crucial role in the American Expeditionary Forces in France. This day serves as a poignant reminder of Montana's sacrifices and contributions during World War I, reflecting the deep impact of global conflicts on local communities.",
+  "category": "military",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "World War I",
+    "military history",
+    "Helena",
+    "parade",
+    "community support"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.mtmemory.org/nodes/view/74046?utm_medium=email&utm_source=govdelivery",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

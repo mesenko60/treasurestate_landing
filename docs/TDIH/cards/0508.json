@@ -1,0 +1,26 @@
+{
+  "id": "0508",
+  "month": 5,
+  "day": 8,
+  "date_display": "May 8",
+  "headline": "The Great Fire of Miles City, 1899",
+  "year": 1899,
+  "body": "On May 8, 1899, a fire swept through the business district of Miles City, Montana, destroying a significant portion of the downtown commercial blocks that had grown up along Main Street since the Northern Pacific Railroad arrived in 1881. Miles City had established itself as the cattle capital of eastern Montana, a rough and prosperous town where Texas longhorns were driven north along the trails and loaded onto railcars bound for Chicago. The fire began in the early morning hours and spread rapidly through the wooden storefronts that lined the main commercial corridor. Volunteer fire brigades worked through the night but were hampered by limited water pressure and the dry spring conditions that had parched the Yellowstone River valley. Several saloons, a hotel, and a number of mercantile establishments were lost before the fire burned itself out. The destruction prompted Miles City's civic leaders to accelerate plans for brick construction and improved water infrastructure. Within two years, much of the burned district had been rebuilt in brick, giving the downtown its more permanent character. The rebuilt Miles City would go on to host the famous Bucking Horse Sale, an annual tradition that continues to draw cowboys and horse traders from across the Northern Plains.",
+  "category": "natural_disaster",
+  "location": "Miles City, Custer County",
+  "latitude": 46.4083,
+  "longitude": -105.8406,
+  "tags": [
+    "Miles City",
+    "fire",
+    "1899",
+    "Custer County",
+    "downtown"
+  ],
+  "expandable": false,
+  "sources": [
+    "Montana Historical Society",
+    "Chronicling America"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0717",
+  "month": 7,
+  "day": 17,
+  "date_display": "July 17",
+  "headline": "Lewis and Clark Expedition Reunites Near Tower Rock, 1805",
+  "year": 1805,
+  "body": "On July 17, 1805, Captain William Clark and the main body of the Lewis and Clark Expedition reunited with Captain Meriwether Lewis near Tower Rock, a prominent geological feature along the Missouri River in present-day Cascade County, Montana. Lewis had been scouting ahead, and their reunion marked a significant moment as the expedition continued its arduous journey upstream towards the Rocky Mountains. This meeting allowed the Corps of Discovery to consolidate their findings and strategize for the challenging terrain ahead, further solidified their progress in exploring the vast and uncharted Louisiana Purchase.",
+  "category": "exploration",
+  "location": "Cascade, Cascade County",
+  "latitude": 47.1893,
+  "longitude": -111.8114,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Missouri River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/17-jul-1805/",
+    "https://fwp.mt.gov/stateparks/tower-rock"
+  ],
+  "related_article": null
+}

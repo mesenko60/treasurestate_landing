@@ -1,0 +1,24 @@
+{
+  "id": "0320",
+  "month": 3,
+  "day": 20,
+  "date_display": "March 20",
+  "headline": "First Annual Montana Constitution Day Celebrated, 2026",
+  "year": 2026,
+  "body": "On March 20, 2026, Montana celebrated its first annual Montana Constitution Day, marked by a presentation by the Honorable Anthony Johnstone at the Montana Heritage Center in Helena. This event commemorates the signing of the Montana Constitution on March 22, 1972, a foundational document that outlines the rights and responsibilities of its citizens and the structure of the state government. The celebration highlights the enduring importance of this document and its relationship to the state's history and governance. The establishment of an annual day dedicated to the constitution underscores Montana's commitment to civic education and the recognition of the legal framework that shapes its identity and future. This event, though recent, serves to honor a pivotal historical achievement in Montana's political development.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0215,
+  "tags": [
+    "Montana Constitution",
+    "Statehood",
+    "Civic Education"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://helenamt.com/event/the-montana-constitution-in-time-presentation-by-the-honorable-anthony-johnstone/",
+    "https://www.charkoosta.com/news/first-annual-montana-constitution-day-march-20/article_acc1dffe-8727-41ee-8642-c4008b5bcf9a.html"
+  ],
+  "related_article": null
+}

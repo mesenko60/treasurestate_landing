@@ -1,0 +1,25 @@
+{
+  "id": "1008",
+  "month": 10,
+  "day": 8,
+  "date_display": "October 8",
+  "headline": "Montana State University Celebrates 125th Anniversary, 2018",
+  "year": 2018,
+  "body": "On October 8, 2018, Montana State University (MSU) in Bozeman marked its 125th anniversary with a special lecture and book signing. This event celebrated the institution's long and rich history, which began in 1893 as the Agricultural College of the State of Montana. Over the past century and a quarter, MSU has grown into a leading public university, contributing significantly to education, research, and outreach in Montana and beyond. The anniversary celebration highlighted MSU's enduring legacy in various fields, including agriculture, engineering, and the sciences, and its vital role in the development of the state. Such milestones provide an opportunity to reflect on the university's impact on generations of students and its continuous evolution to meet the changing needs of society.",
+  "category": "arts_culture",
+  "location": "Bozeman, Gallatin County",
+  "latitude": 45.6639,
+  "longitude": -111.0686,
+  "tags": [
+    "Montana State University",
+    "education",
+    "anniversary",
+    "Bozeman"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://www.montana.edu/news/17990/msu-sets-oct-8-lecture-book-signing-to-honor-its-125th-anniversary-and-author-robert-rydell",
+    "https://www.latlong.net/poi/montana-state-university-680798"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0328",
+  "month": 3,
+  "day": 28,
+  "date_display": "March 28",
+  "headline": "'No Kings' Demonstrations Held Across Montana, 2026",
+  "year": 2026,
+  "body": "On March 28, 2026, thousands of Montanans participated in 'No Kings' demonstrations across the state, protesting the agenda of President Donald Trump. Major rallies were held in cities like Missoula and Helena, where citizens gathered to express concerns over various issues, including authoritarianism, war, healthcare, and reproductive freedom. In Missoula, at least 3,500 protesters marched along the Clark Fork River. These demonstrations reflect a significant moment of civic engagement and political expression within Montana, showcasing the state's active role in national political discourse. The widespread participation underscores the diverse political landscape of Montana and the willingness of its residents to voice their opinions on matters of national importance.",
+  "category": "statehood",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8729,
+  "longitude": -114.005,
+  "tags": [
+    "Protest",
+    "Political Activism",
+    "Montana Politics"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.bozemandailychronicle.com/news/on-march-28-thousands-of-people-joined-no-kings-demonstrations-across-montana-but-how-many/article_f977a606-5575-45e9-9fa6-c9145cc8d7d2.html",
+    "https://montanafreepress.org/2026/03/28/no-kings-protests-montana-helena-missoula/"
+  ],
+  "related_article": null
+}

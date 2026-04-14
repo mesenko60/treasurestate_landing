@@ -1,0 +1,27 @@
+{
+  "id": "0921",
+  "month": 9,
+  "day": 21,
+  "date_display": "September 21",
+  "headline": "Death of Chief Joseph, 1904",
+  "year": 1904,
+  "body": "On September 21, 1904, Chief Joseph, the renowned leader of the Nez Perce, died on the Colville Indian Reservation in Washington. Although he died outside of Montana, his life and legacy are inextricably linked to the state's history. Chief Joseph is best known for his leadership during the Nez Perce War of 1877, a 1,170-mile fighting retreat from their ancestral lands in Oregon and Idaho, through Montana, in an attempt to reach safety in Canada. His famous surrender speech, \"I will fight no more forever,\" delivered at the Bear Paw Battlefield in Montana, has become a symbol of the tragic consequences of westward expansion and the displacement of Native American peoples. Chief Joseph's death marked the passing of a great leader and a powerful voice for his people, and his story continues to resonate as a poignant reminder of a difficult chapter in American history.",
+  "category": "notable_death",
+  "location": "Colville Indian Reservation, Washington",
+  "latitude": 48.1333,
+  "longitude": -118.1333,
+  "tags": [
+    "Chief Joseph",
+    "Nez Perce",
+    "Nez Perce War",
+    "Native American history",
+    "notable death"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.pbs.org/weta/thewest/people/a_c/chiefjoseph.htm",
+    "https://en.wikipedia.org/wiki/Chief_Joseph",
+    "https://www.history.com/topics/native-american-history/chief-joseph"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0613",
+  "month": 6,
+  "day": 13,
+  "date_display": "June 13",
+  "headline": "Meriwether Lewis Discovers Great Falls of the Missouri, 1805",
+  "year": 1805,
+  "body": "On June 13, 1805, Captain Meriwether Lewis, while scouting ahead of the main Corps of Discovery, became the first American to lay eyes on the majestic Great Falls of the Missouri River in what is now north-central Montana. This momentous discovery confirmed the expedition's progress along the correct waterway, a crucial verification after the 'Decision Point' at the Marias River. Lewis described the falls with awe, noting their immense power and beauty, but also recognizing the formidable challenge they presented. The discovery initiated one of the most arduous phases of the expedition: an 18-mile portage around the five cascades that make up the Great Falls. This monumental task, involving dragging boats and supplies over rugged terrain, tested the limits of the Corps' endurance and ingenuity. The Great Falls marked a significant geographical landmark and a turning point in the journey, solidifying the expedition's understanding of the Missouri River's course and its eventual path to the Pacific. This event remains a powerful symbol of exploration and perseverance in Montana's history.",
+  "category": "exploration",
+  "location": "Great Falls, Cascade County",
+  "latitude": 47.5062,
+  "longitude": -111.2837,
+  "tags": [
+    "Lewis and Clark",
+    "Great Falls",
+    "Missouri River",
+    "exploration",
+    "portage"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/this-day-in-history/june-13/meriwether-lewis-reaches-the-great-falls",
+    "https://lewis-clark.org/day-by-day/13-jun-1805/",
+    "https://www.nps.gov/subjects/travellewisandclark/great-falls-of-the-missouri.htm"
+  ],
+  "related_article": null
+}

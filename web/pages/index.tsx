@@ -6,6 +6,7 @@ import path from 'path';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HomepageCultureModule from '../components/HomepageCultureModule';
+import TodayInHistory from '../components/TodayInHistory';
 import { isEnabled } from '../lib/feature-flags';
 import { getFeaturedArticles, getFeaturedFieldNotes, type ArticleSummary, type FieldNote } from '../lib/articles';
 
@@ -291,6 +292,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <Link href="/best-of/towns-near-hot-springs" className="hp-path-link">Hot Springs</Link>
             <Link href="/lodging" className="hp-path-link">Find Lodging</Link>
             <Link href="/planners" className="hp-path-link">Travel Guides</Link>
+            <Link href="/this-day-in-history" className="hp-path-link">This Day in History</Link>
           </div>
         </div>
       </div>
@@ -476,7 +478,17 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           </div>
         </section>
 
-        {/* ═══ 8. ABOUT + PHOTOGRAPHY CREDIT ═══ */}
+        {/* ═══ 8. TODAY IN HISTORY ═══ */}
+        <section className="hp-section" style={{ paddingTop: 0 }}>
+          <TodayInHistory />
+          <div style={{ textAlign: 'right', marginTop: '0.65rem' }}>
+            <Link href="/this-day-in-history/browse/" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}>
+              Browse all 365 stories →
+            </Link>
+          </div>
+        </section>
+
+        {/* ═══ 9. ABOUT + PHOTOGRAPHY CREDIT ═══ */}
         <section className="hp-section" style={{ paddingTop: 0 }}>
           <div className="hp-about">
             <h2>Why &ldquo;The Treasure State&rdquo;?</h2>
@@ -492,7 +504,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           </div>
         </section>
 
-        {/* ═══ 9. MONTANA CULTURE MODULE ═══ */}
+        {/* ═══ 10. MONTANA CULTURE MODULE ═══ */}
         <HomepageCultureModule articles={cultureArticles} fieldNotes={cultureFieldNotes} />
 
       </main>

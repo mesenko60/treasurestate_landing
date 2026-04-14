@@ -1,0 +1,25 @@
+{
+  "id": "0805",
+  "month": 8,
+  "day": 5,
+  "date_display": "August 5",
+  "headline": "Mann Gulch Fire, 1949",
+  "year": 1949,
+  "body": "On August 5, 1949, the Mann Gulch Fire erupted in the Helena National Forest, leading to one of the most tragic events in the history of wildland firefighting. A crew of 15 smokejumpers parachuted into the gulch to combat a small blaze, but rapidly changing winds and extreme fire behavior quickly trapped them. Thirteen firefighters, including 12 smokejumpers and one forest ranger, perished in the inferno. The fire became infamous for the innovative but ultimately unsuccessful \"\"\"\"escape fire\"\"\"\" technique attempted by foreman R. Wagner Dodge, who lit a fire ahead of the main blaze and lay down in the ashes to survive. The Mann Gulch Fire profoundly impacted wildland firefighting strategies and training, leading to significant reforms in safety protocols, equipment, and fire behavior prediction. It remains a somber reminder of the inherent dangers faced by firefighters and a critical case study in fire science, influencing generations of wildland fire management policies and procedures across the United States.",
+  "category": "natural_disaster",
+  "location": "Mann Gulch, Lewis and Clark County",
+  "latitude": 46.878,
+  "longitude": -111.9547,
+  "tags": [
+    "wildfire",
+    "smokejumpers",
+    "natural disaster",
+    "us forest service"
+  ],
+  "expandable": true,
+  "sources": [
+    "nwcg.gov",
+    "nbcmontana.com"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "0415",
+  "month": 4,
+  "day": 15,
+  "date_display": "April 15",
+  "headline": "Titanic Sinks, Montanans Aboard, 1912",
+  "year": 1912,
+  "body": "On April 15, 1912, the RMS Titanic, on its maiden voyage, struck an iceberg and sank in the North Atlantic Ocean. Among the passengers were several individuals with significant ties to Montana, many of whom were seeking new opportunities in the burgeoning state. While some perished in the disaster, others, like Berta Olivia Nilsson, survived. Nilsson, a Swedish immigrant, was traveling to Montana to join her sweetheart in Missoula. She was among the last to escape in Lifeboat D. The stories of these Montanans, whether they survived or not, reflect the hopes and dreams of many immigrants and settlers who sought a new life in the American West. The tragedy resonated deeply, even in distant Montana, highlighting the interconnectedness of the world and the profound impact of such events on individual lives and communities.",
+  "category": "natural_disaster",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "Titanic",
+    "Shipwreck",
+    "Immigration",
+    "Butte",
+    "Missoula"
+  ],
+  "expandable": true,
+  "sources": [
+    "mthistoryrevealed.blogspot.com",
+    "encyclopedia-titanica.org"
+  ],
+  "related_article": null
+}

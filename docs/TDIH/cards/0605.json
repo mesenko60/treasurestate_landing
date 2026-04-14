@@ -1,0 +1,28 @@
+{
+  "id": "0605",
+  "month": 6,
+  "day": 5,
+  "date_display": "June 5",
+  "headline": "Butte Experiences Anti-Draft Riots, 1917",
+  "year": 1917,
+  "body": "On June 5, 1917, the city of Butte, Montana, was engulfed in significant anti-draft riots, a powerful display of labor unrest and anti-war sentiment during World War I. Approximately 2,500 individuals, largely Irish nationalists and members of the Industrial Workers of the World (IWW), participated in demonstrations against the Selective Service Act. The protests, which began peacefully in front of the Federal Building, quickly escalated into a riot, leading to widespread disorder. The National Guard was deployed to quell the unrest, and the city was effectively placed under martial law. This event highlighted the deep divisions within American society regarding the war and the draft, particularly in a mining town like Butte, which had a strong labor movement and a significant immigrant population. The riots served as a stark reminder of the social and political tensions simmering beneath the surface during this tumultuous period in Montana's history, and they foreshadowed further labor conflicts and anti-war activism in the state.",
+  "category": "labor",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0,
+  "longitude": -112.5333,
+  "tags": [
+    "Butte",
+    "draft riots",
+    "World War I",
+    "labor unrest",
+    "IWW",
+    "anti-war"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nytimes.com/1917/06/06/archives/soldiers-rout-butte-rioters-montana-town-practically-under-martial.html",
+    "https://guides.lib.montana.edu/c.php?g=1474327&p=11075905",
+    "https://storyofbutte.org/items/show/3413"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0606",
+  "month": 6,
+  "day": 6,
+  "date_display": "June 6",
+  "headline": "Miners Arrive at Alder Gulch, Sparking Gold Rush, 1863",
+  "year": 1863,
+  "body": "On June 6, 1863, the first wave of eager miners descended upon Alder Gulch in what would soon become Montana Territory, following the discovery of rich gold deposits. This influx of prospectors ignited one of the largest and most significant gold rushes in American history. The promise of instant wealth quickly transformed the remote gulch into a bustling hub, leading to the rapid establishment of boomtowns like Virginia City. Within three months, the population of the area swelled to over 10,000, fundamentally altering the demographic and economic landscape of the region. The Alder Gulch gold strike played a crucial role in the development of Montana, attracting settlers, establishing trade routes, and laying the groundwork for the territory's eventual statehood. The legacy of this day is etched into the very fabric of Montana, symbolizing the adventurous spirit and transformative power of the gold rush era.",
+  "category": "mining",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2938,
+  "longitude": -111.9461,
+  "tags": [
+    "Alder Gulch",
+    "gold rush",
+    "Virginia City",
+    "mining",
+    "settlement"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://digging-history.com/2014/08/06/ghost-town-wednesday-fourteen-mile-city/",
+    "https://www.greatfallstribune.com/story/life/my-montana/2015/10/01/virginia-city-montanas-history/73145562/",
+    "https://www.bigskywords.com/montana-blog/prospectors-and-the-montana-gold-rush"
+  ],
+  "related_article": null
+}

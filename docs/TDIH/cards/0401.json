@@ -1,0 +1,25 @@
+{
+  "id": "0401",
+  "month": 4,
+  "day": 1,
+  "date_display": "April 1",
+  "headline": "Will Rogers Named Honorary Mayor of Billings, 1927",
+  "year": 1927,
+  "body": "On April 1, 1927, the city of Billings, Montana, bestowed a unique honor upon famed humorist and columnist Will Rogers, naming him honorary mayor for a day. Rogers, known for his folksy wit and insightful social commentary, was visiting Billings as part of a tour. His presence created a stir in the community, and the Billings City Council, recognizing his popularity and charm, extended the ceremonial title. This lighthearted event highlighted Rogers' widespread appeal and his ability to connect with people across the nation. His visit to Montana was part of a broader tour that included appearances and flights across the state, further cementing his connection to the region. The honorary mayoral appointment in Billings became a memorable anecdote in the humorist's storied career, showcasing the affection and admiration Montanans held for him.",
+  "category": "arts_culture",
+  "location": "Billings, Yellowstone County",
+  "latitude": 45.7876,
+  "longitude": -108.4893,
+  "tags": [
+    "Will Rogers",
+    "Billings",
+    "Humorist",
+    "Honorary Mayor"
+  ],
+  "expandable": true,
+  "sources": [
+    "Billings Gazette, May 2, 2010",
+    "NewspaperArchive.com, Billings Gazette, April 2, 1927"
+  ],
+  "related_article": null
+}

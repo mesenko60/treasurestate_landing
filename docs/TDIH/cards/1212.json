@@ -1,0 +1,26 @@
+{
+  "id": "1212",
+  "month": 12,
+  "day": 12,
+  "date_display": "December 12",
+  "headline": "First Montana Territorial Legislature Convenes, 1864",
+  "year": 1864,
+  "body": "On December 12, 1864, the first Legislative Assembly of the Montana Territory convened in Bannack City. Governor Sidney Edgerton presided over the 20 newly elected representatives, marking a significant step in the formal governance of the burgeoning territory. During this session, which lasted until February 9, 1865, nearly 100 bills were passed, laying foundational laws for the territory. Bannack, then the territorial capital, served as the backdrop for these early legislative efforts, reflecting the rapid development and the need for established legal frameworks in the gold-rich region. This assembly was crucial in transitioning Montana from a lawless frontier to a more organized society, setting precedents for future legislative bodies and contributing to the eventual statehood of Montana.",
+  "category": "statehood",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1607,
+  "longitude": -112.9942,
+  "tags": [
+    "Montana Territory",
+    "Legislature",
+    "Bannack",
+    "Sidney Edgerton",
+    "frontier law"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://archiveswest.orbiscascade.org/ark:80444/xv16426",
+    "https://www.umt.edu/this-is-montana/columns/stories/bannack-part-three.php"
+  ],
+  "related_article": null
+}

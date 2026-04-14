@@ -1,0 +1,25 @@
+{
+  "id": "0710",
+  "month": 7,
+  "day": 10,
+  "date_display": "July 10",
+  "headline": "Camp Cooke, First U.S. Army Post in Montana, Established, 1866",
+  "year": 1866,
+  "body": "On July 10, 1866, Camp Cooke was established on the Missouri River, near the mouth of the Judith River, becoming the first U.S. Army post in Montana. Founded by the 13th Infantry Regiment, its primary purpose was to protect steamboat traffic on the Missouri River, which was vital for supplying the growing mining towns and settlements in Montana Territory. The establishment of Camp Cooke marked a significant step in asserting federal presence and control in the region, playing a crucial role in the ongoing conflicts with Native American tribes and facilitating the westward expansion of the United States. Though short-lived, Camp Cooke was instrumental in the early military history of Montana.",
+  "category": "military",
+  "location": "Big Sandy, Chouteau County",
+  "latitude": 47.7417,
+  "longitude": -109.625,
+  "tags": [
+    "military",
+    "forts",
+    "Missouri River",
+    "Native American history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Camp_Cooke_(Montana)",
+    "https://www.hmdb.org/m.asp?m=161911"
+  ],
+  "related_article": null
+}

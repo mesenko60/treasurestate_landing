@@ -1,0 +1,27 @@
+{
+  "id": "1015",
+  "month": 10,
+  "day": 15,
+  "date_display": "October 15",
+  "headline": "Forced Relocation of the Salish People Begins, 1891",
+  "year": 1891,
+  "body": "On October 15, 1891, the forced relocation of the Salish people from their ancestral lands in the Bitterroot Valley to the Flathead Indian Reservation officially began. This tragic event, often referred to as the 'Removal,' was the culmination of decades of pressure from white settlers and the U.S. government, despite earlier treaties that had promised the Salish their homeland. Under the leadership of Chief Charlo, the Salish people, after years of resistance and negotiation, were compelled to leave their traditional territories. The journey was arduous and heartbreaking, marking a profound loss of land, culture, and way of life for the Salish. This forced removal is a somber chapter in Montana's history, symbolizing the broader injustices faced by Native American tribes during westward expansion and the devastating impact of broken treaties on indigenous communities. The event remains a powerful reminder of the resilience and enduring spirit of the Salish people.",
+  "category": "native_history",
+  "location": "Bitterroot Valley, Ravalli County",
+  "latitude": 46.3,
+  "longitude": -114.1,
+  "tags": [
+    "Native American history",
+    "Salish",
+    "forced removal",
+    "Bitterroot Valley",
+    "treaty violations"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.cskt.org/our-history/salish-kootenai-history",
+    "https://en.wikipedia.org/wiki/Bitterroot_Valley",
+    "https://www.latlong.net/place/bitterroot-valley-mt-usa-24080.html"
+  ],
+  "related_article": null
+}

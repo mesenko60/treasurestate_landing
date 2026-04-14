@@ -1,0 +1,25 @@
+{
+  "id": "0131",
+  "month": 1,
+  "day": 31,
+  "date_display": "January 31",
+  "headline": "Powell County Created in Montana, 1901",
+  "year": 1901,
+  "body": "On January 31, 1901, Powell County was officially created in Montana, carved out of parts of Deer Lodge and Missoula counties. The county seat was established in Deer Lodge, a town with a rich history as a major transportation hub and a center for ranching and agriculture. The creation of new counties was a common practice in Montana during this period, reflecting the state's growing population and the need for more localized governance as various industries, particularly mining and ranching, expanded. Powell County is named after Major John Wesley Powell, a renowned explorer and geologist who led the first expedition down the Colorado River. The establishment of Powell County marked another step in the administrative organization of Montana, facilitating local development and providing essential services to its residents. This event is part of the broader narrative of Montana's development from a territory to a fully organized state.",
+  "category": "statehood",
+  "location": "Deer Lodge, Powell County",
+  "latitude": 46.3972,
+  "longitude": -112.7319,
+  "tags": [
+    "county creation",
+    "state government",
+    "Montana history",
+    "local governance"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Powell_County,_Montana"
+  ],
+  "related_article": null
+}

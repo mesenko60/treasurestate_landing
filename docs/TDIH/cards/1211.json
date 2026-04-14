@@ -1,0 +1,25 @@
+{
+  "id": "1211",
+  "month": 12,
+  "day": 11,
+  "date_display": "December 11",
+  "headline": "U.S. Declares War on Germany and Italy, 1941",
+  "year": 1941,
+  "body": "On December 11, 1941, four days after the attack on Pearl Harbor, the United States officially declared war on Germany and Italy, formally entering the European theater of World War II. This declaration had a profound impact on Montana, as thousands of Montanans would go on to serve in the armed forces. The state\"s agricultural and mineral resources, particularly copper, became vital to the war effort. The declaration of war mobilized the entire nation, and Montana played a significant role in supporting the Allied forces through both military service and industrial production. The war brought significant social and economic changes to the state, as it did to the rest of the country, and the sacrifices of Montanans during this period are a crucial part of the state\"s history.",
+  "category": "military",
+  "location": "Washington D.C.",
+  "latitude": 38.8951,
+  "longitude": -77.0364,
+  "tags": [
+    "World War II",
+    "declaration of war",
+    "military history",
+    "Montana homefront"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://mhs.mt.gov/education/textbook/Chapter19/Chapter19.pdf"
+  ],
+  "related_article": null
+}

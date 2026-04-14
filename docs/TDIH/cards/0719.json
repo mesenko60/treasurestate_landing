@@ -1,0 +1,25 @@
+{
+  "id": "0719",
+  "month": 7,
+  "day": 19,
+  "date_display": "July 19",
+  "headline": "Lewis and Clark Pass Through Gates of the Mountains, 1805",
+  "year": 1805,
+  "body": "On July 19, 1805, the Lewis and Clark Expedition navigated through a dramatic canyon on the Missouri River, which Captain Meriwether Lewis famously named the 'Gates of the Rocky Mountains.' This awe-inspiring passage, characterized by towering limestone cliffs, marked a significant moment in their journey. Lewis described the scene in his journal, noting the 'most remarkable clifts' they had yet encountered. This natural wonder, located north of present-day Helena, served as a crucial landmark and a testament to the challenging yet magnificent landscapes the Corps of Discovery traversed in their exploration of the American West.",
+  "category": "exploration",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.883,
+  "longitude": -111.967,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Missouri River",
+    "geography"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.montanadiscoveryfoundation.org/gates-of-the-mountains/",
+    "https://en.wikipedia.org/wiki/Gates_of_the_Mountains_Wilderness"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1004",
+  "month": 10,
+  "day": 4,
+  "date_display": "October 4",
+  "headline": "Golden Valley County Created, 1920",
+  "year": 1920,
+  "body": "On October 4, 1920, Golden Valley County was officially created in Montana. Carved out of portions of Musselshell and Sweet Grass counties, Golden Valley County was established to better serve the needs of its growing agricultural and ranching communities. The county seat was designated as Ryegate, a town strategically located to facilitate commerce and governance for the surrounding rural areas. The formation of new counties like Golden Valley was a common practice in early 20th-century Montana, reflecting the state's ongoing development and the expansion of its population into previously less-settled regions. This event marked a significant step in the administrative and demographic evolution of central Montana, providing local representation and services to its residents.",
+  "category": "statehood",
+  "location": "Ryegate, Golden Valley County",
+  "latitude": 46.2972,
+  "longitude": -109.2588,
+  "tags": [
+    "county formation",
+    "Montana history",
+    "Ryegate"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://latitude.to/map/us/united-states/regions/state-of-montana/golden-valley-county"
+  ],
+  "related_article": null
+}

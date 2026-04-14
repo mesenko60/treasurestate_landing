@@ -1,0 +1,24 @@
+{
+  "id": "1003",
+  "month": 10,
+  "day": 3,
+  "date_display": "October 3",
+  "headline": "Battle of Bear Paw Continues, 1877",
+  "year": 1877,
+  "body": "On October 3, 1877, the Battle of Bear Paw continued as U.S. Army forces intensified their assault on the Nez Perce. Following a grueling 1,170-mile flight from their ancestral lands, Chief Joseph and his people had sought refuge near the Canadian border. However, Colonel Nelson Miles and his troops intercepted them at Bear Paw. On this day, the army employed cannon fire, targeting the areas where Nez Perce families were sheltered. The fighting was fierce, with both sides suffering casualties. The Nez Perce, though vastly outnumbered and exhausted, bravely defended their women, children, and elders. This day marked a critical point in the battle, as the relentless pressure from the U.S. Army pushed the Nez Perce closer to a difficult decision regarding their future.",
+  "category": "native_history",
+  "location": "Chinook, Blaine County",
+  "latitude": 48.3779,
+  "longitude": -109.2134,
+  "tags": [
+    "Nez Perce War",
+    "Battle of Bear Paw",
+    "Native American history",
+    "military"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/nepe/planyourvisit/bear-paw-battlefield.htm"
+  ],
+  "related_article": null
+}

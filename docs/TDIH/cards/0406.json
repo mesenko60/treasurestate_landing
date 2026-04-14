@@ -1,0 +1,27 @@
+{
+  "id": "0406",
+  "month": 4,
+  "day": 6,
+  "date_display": "April 6",
+  "headline": "United States Enters World War I, Montana Mobilizes, 1917",
+  "year": 1917,
+  "body": "On April 6, 1917, the United States officially declared war on Germany, marking its entry into World War I. This momentous decision profoundly impacted Montana, a young state still developing its identity. Montanans responded to the call to arms with patriotism, contributing significantly to the war effort both on the battlefields and the home front. The state's vast natural resources, particularly copper and agricultural products, became crucial for wartime industries. The declaration of war led to widespread mobilization, with many young men enlisting or being drafted into military service. On the home front, Montanans participated in victory gardens, war bond drives, and Red Cross efforts, demonstrating a strong sense of national unity and sacrifice. The war reshaped Montana's economy, society, and political landscape, leaving a lasting legacy on the state's history.",
+  "category": "military",
+  "location": "Montana (statewide)",
+  "latitude": 46.8797,
+  "longitude": -110.3625,
+  "tags": [
+    "World War I",
+    "WWI",
+    "Military",
+    "Montana History",
+    "Mobilization"
+  ],
+  "expandable": true,
+  "sources": [
+    "greatfallstribune.com",
+    "missoulacurrent.com",
+    "history.com"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1027",
+  "month": 10,
+  "day": 27,
+  "date_display": "October 27",
+  "headline": "Historic October Snowstorm Hits Missoula, 2020",
+  "year": 2020,
+  "body": "On October 27, 2020, Missoula experienced a historic snowstorm, marking the biggest October snowfall in over a century. The city received approximately 13.8 inches of snow, significantly impacting daily life and setting new records for early-season accumulation. This unusual weather event brought winter conditions much earlier than typical for the region, known for its relatively mild climate. The heavy, wet snow caused widespread power outages, disrupted transportation, and led to school closures. The event served as a stark reminder of Montana's unpredictable weather patterns and the dramatic shifts that can occur even in areas often referred to as the 'Banana Belt.' The storm became a memorable event for residents, highlighting the challenges and beauty of Montana's diverse climate.",
+  "category": "weather",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8721,
+  "longitude": -113.994,
+  "tags": [
+    "snowstorm",
+    "weather record",
+    "Missoula",
+    "natural disaster"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://nbcmontana.com/news/local/missoula-sees-record-temperatures-snow-levels",
+    "https://www.facebook.com/NWSMissoula/posts/biggest-october-snow-storm-in-over-100-yearsa-historic-138-inches-of-snow-have-b/3623995394325645/",
+    "https://www.latlong.net/place/missoula-mt-usa-4654.html"
+  ],
+  "related_article": null
+}

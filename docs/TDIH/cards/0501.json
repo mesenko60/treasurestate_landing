@@ -1,0 +1,25 @@
+{
+  "id": "0501",
+  "month": 5,
+  "day": 1,
+  "date_display": "May 1",
+  "headline": "Calamity Jane Born, 1852",
+  "year": 1852,
+  "body": "On May 1, 1852, Martha Jane Canary, better known as Calamity Jane, was born in Princeton, Mercer County, Missouri. Her early life was marked by hardship and migration, as her family moved westward, eventually reaching Montana in 1865. Though not born in Montana, Calamity Jane's life became deeply intertwined with the state's frontier history. She was a prominent figure in the American Wild West, known for her adventurous spirit, sharpshooting skills, and unconventional lifestyle. Her time in Montana included periods in various mining camps and towns, where she worked in diverse roles, often donning men's attire. One notable, though disputed, claim is her marriage to Wild Bill Hickok in Benson's Landing, Montana Territory, which is now Livingston. Calamity Jane's presence in Montana contributed to the colorful tapestry of the state's early development, embodying the rugged individualism and daring nature of the frontier era. Her legend grew through her own storytelling and the accounts of others, cementing her place as an iconic figure of the American West, with significant ties to Montana's past.",
+  "category": "notable_birth",
+  "location": "Princeton, Mercer County, Missouri",
+  "latitude": 40.4008,
+  "longitude": -93.5805,
+  "tags": [
+    "Calamity Jane",
+    "Frontier",
+    "Wild West",
+    "Notable Figure"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "History.com"
+  ],
+  "related_article": null
+}

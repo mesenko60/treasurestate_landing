@@ -1,0 +1,25 @@
+{
+  "id": "0108",
+  "month": 1,
+  "day": 8,
+  "date_display": "January 8",
+  "headline": "Battle of Wolf Mountain, 1877",
+  "year": 1877,
+  "body": "On January 8, 1877, the Battle of Wolf Mountain, also known as the Battle of the Belly River, took place in southern Montana Territory. This engagement was a significant clash between the U.S. Army, led by Colonel Nelson A. Miles, and a coalition of Lakota Sioux and Northern Cheyenne warriors, including those led by Crazy Horse. The battle occurred amidst a harsh winter landscape along the Tongue River, near present-day Birney, Montana. While not a decisive victory for either side, the prolonged conflict and the relentless pursuit by the U.S. Army further weakened the Native American resistance. The severe winter conditions and dwindling resources ultimately contributed to the surrender of many Lakota and Cheyenne bands in the following months, marking a critical turning point in the Great Sioux War. This battle is often cited as one of Crazy Horse's last major engagements before his eventual surrender.",
+  "category": "military",
+  "location": "Birney, Rosebud County",
+  "latitude": 45.3886,
+  "longitude": -106.7042,
+  "tags": [
+    "Native American history",
+    "military history",
+    "Great Sioux War",
+    "Crazy Horse"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Wolf_Mountain",
+    "https://www.history.com/this-day-in-history/january-8/battle-of-wolf-mountain"
+  ],
+  "related_article": null
+}

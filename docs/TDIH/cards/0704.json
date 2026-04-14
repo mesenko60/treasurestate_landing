@@ -1,0 +1,24 @@
+{
+  "id": "0704",
+  "month": 7,
+  "day": 4,
+  "date_display": "July 4",
+  "headline": "Jack Dempsey Defeats Tommy Gibbons in Shelby, 1923",
+  "year": 1923,
+  "body": "On July 4, 1923, world heavyweight boxing champion Jack Dempsey successfully defended his title against Tommy Gibbons in a highly anticipated match held in Shelby, Montana. This event was a monumental undertaking for the small town of Shelby, which invested heavily in hosting the fight, building a 40,000-seat arena for the occasion. Despite the local enthusiasm and significant financial risk, the fight ultimately proved to be a financial disaster for Shelby, leaving the town deeply in debt. However, it cemented Shelby's place in boxing history and remains a unique chapter in Montana's past, showcasing the ambition and speculative spirit of the era.",
+  "category": "sports",
+  "location": "Shelby, Toole County",
+  "latitude": 48.5072,
+  "longitude": -111.8603,
+  "tags": [
+    "boxing",
+    "sports",
+    "Shelby"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.onthisday.com/countries/usa/montana",
+    "https://en.wikipedia.org/wiki/Jack_Dempsey_vs._Tommy_Gibbons"
+  ],
+  "related_article": null
+}

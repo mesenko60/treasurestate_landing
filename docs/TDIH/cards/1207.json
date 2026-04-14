@@ -1,0 +1,26 @@
+{
+  "id": "1207",
+  "month": 12,
+  "day": 7,
+  "date_display": "December 7",
+  "headline": "Pearl Harbor Attack Mobilizes Montana for War, 1941",
+  "year": 1941,
+  "body": "On December 7, 1941, the surprise attack on Pearl Harbor by the Imperial Japanese Navy plunged the United States into World War II. This pivotal event had an immediate and profound impact on Montana, as the state quickly mobilized its resources and manpower for the war effort. Thousands of Montanans enlisted in the armed forces, and the state's industries, particularly mining and agriculture, ramped up production to support the national defense. The attack galvanized the state, transforming its economy and society as citizens rallied behind the war. While geographically distant from the Pacific theater, Montana's contributions were vital, with its citizens serving bravely on battlefields and its resources fueling the industrial might that ultimately led to Allied victory. Pearl Harbor remains a solemn reminder of the sacrifices made by Montanans and Americans during this global conflict.",
+  "category": "military",
+  "location": "Pearl Harbor, Hawaii",
+  "latitude": 21.3681,
+  "longitude": -157.9755,
+  "tags": [
+    "Pearl Harbor",
+    "World War II",
+    "military history",
+    "Montana war effort",
+    "mobilization"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://montanamilitarymuseum.org/montanas-participation-in-world-war-ii/",
+    "https://www.greatfallstribune.com/story/life/my-montana/2014/07/20/montana-moment-pearl-harbor-changes-life-montana/12852851/"
+  ],
+  "related_article": null
+}

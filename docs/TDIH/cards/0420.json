@@ -1,0 +1,26 @@
+{
+  "id": "0420",
+  "month": 4,
+  "day": 20,
+  "date_display": "April 20",
+  "headline": "Mining Town of Castle Established, 1887",
+  "year": 1887,
+  "body": "On April 20, 1887, the mining town of Castle was established in the Castle Mountains of Montana, nestled between the Little and Big Belt Mountains. This boomtown quickly grew around rich silver and lead deposits, attracting miners and entrepreneurs seeking their fortunes in the burgeoning Montana Territory. Castle became a vibrant, albeit short-lived, center of mining activity, boasting a population that swelled with the promise of mineral wealth. Its establishment reflects the intense period of resource extraction that characterized much of Montana's late 19th-century history. Like many mining towns of its era, Castle experienced rapid growth followed by a decline as the ore veins played out, eventually becoming a ghost town. Today, its remnants stand as a testament to Montana's rich mining heritage and the transient nature of frontier prosperity.",
+  "category": "mining",
+  "location": "Castle, Meagher County",
+  "latitude": 46.4413,
+  "longitude": -110.6719,
+  "tags": [
+    "Castle",
+    "Mining Town",
+    "Silver Mining",
+    "Meagher County",
+    "Ghost Town"
+  ],
+  "expandable": true,
+  "sources": [
+    "thisweekinmontanahistory.blogspot.com",
+    "atlasobscura.com/places/castle-town-ghost-town"
+  ],
+  "related_article": null
+}

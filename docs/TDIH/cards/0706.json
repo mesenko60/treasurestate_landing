@@ -1,0 +1,24 @@
+{
+  "id": "0706",
+  "month": 7,
+  "day": 6,
+  "date_display": "July 6",
+  "headline": "Clark's Group Crosses Gibbons Pass, 1806",
+  "year": 1806,
+  "body": "On July 6, 1806, Captain William Clark and his detachment of the Lewis and Clark Expedition traversed Gibbons Pass, a high mountain pass in the Rocky Mountains. This crossing was part of the expedition's return journey, during which the Corps of Discovery had split into two groups to explore more territory. Clark's group descended into the Big Hole Valley after crossing the pass, continuing their mission to map and document the vast Louisiana Purchase. This event highlights the arduous nature of their journey and their commitment to thorough exploration of the American West, contributing significantly to the geographical knowledge of the time.",
+  "category": "exploration",
+  "location": "Gibbons Pass, Beaverhead County",
+  "latitude": 45.7476,
+  "longitude": -113.9146,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Rocky Mountains"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/6-jul-1806/",
+    "https://www.fs.usda.gov/r01/bitterroot/recreation/gibbons-pass-interpretive-site"
+  ],
+  "related_article": null
+}

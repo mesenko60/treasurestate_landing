@@ -1,0 +1,24 @@
+{
+  "id": "0111",
+  "month": 1,
+  "day": 11,
+  "date_display": "January 11",
+  "headline": "\"Dutch John\" Wagner Hanged by Montana Vigilantes, 1864",
+  "year": 1864,
+  "body": "On January 11, 1864, \"Dutch John\" Wagner, a notorious road agent, was hanged in Bannack by the Montana Vigilantes. Wagner had been captured on January 6th after being wounded in the Moody robbery. His execution was part of a series of actions taken by the vigilante committee to combat the rampant crime and lawlessness in the Montana Territory's gold mining regions. The vigilantes, a group of citizens who took it upon themselves to enforce justice, targeted individuals they believed were part of the \"Innocents\" gang, responsible for numerous robberies and murders. Wagner's hanging served as a stark example of the harsh frontier justice prevalent in the absence of effective legal institutions. This event further solidified the vigilantes' control and sent a clear message to other outlaws that their reign of terror would not be tolerated in the burgeoning settlements of Montana.",
+  "category": "crime_outlaws",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1649,
+  "longitude": -112.9917,
+  "tags": [
+    "Montana Vigilantes",
+    "outlaws",
+    "frontier justice",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montana_Vigilantes"
+  ],
+  "related_article": null
+}

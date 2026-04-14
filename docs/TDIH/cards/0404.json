@@ -1,0 +1,27 @@
+{
+  "id": "0404",
+  "month": 4,
+  "day": 4,
+  "date_display": "April 4",
+  "headline": "J.C. Collins Lynched in Mondak, 1913",
+  "year": 1913,
+  "body": "On April 4, 1913, J.C. Collins, an African American construction worker, was lynched by a mob in Mondak, Montana. This tragic event occurred after Collins was accused of killing Sheridan County Sheriff Thomas Courtney and a deputized citizen. The mob forcibly removed Collins from jail and subjected him to vigilante justice, hanging him from a power pole and riddling his body with bullets. The lynching of J.C. Collins is a stark reminder of the racial violence and lawlessness that sometimes plagued the American West. Mondak, a bustling but often unruly boomtown near the Montana-North Dakota border, was known for its saloons and transient population. This incident highlights a dark chapter in Montana's history, reflecting the deep-seated racial prejudices and the breakdown of legal processes in certain frontier communities.",
+  "category": "crime_outlaws",
+  "location": "Mondak, Roosevelt County (near Plentywood, Sheridan County)",
+  "latitude": 48.7747,
+  "longitude": -104.5625,
+  "tags": [
+    "Lynching",
+    "Mondak",
+    "Sheridan County",
+    "Racial Violence",
+    "J.C. Collins"
+  ],
+  "expandable": true,
+  "sources": [
+    "mhs.mt.gov",
+    "abhmuseum.org",
+    "news.prairiepublic.org"
+  ],
+  "related_article": null
+}

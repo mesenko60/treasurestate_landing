@@ -1,0 +1,25 @@
+{
+  "id": "1010",
+  "month": 10,
+  "day": 10,
+  "date_display": "October 10",
+  "headline": "George Monture Killed at Monture Creek, 1877",
+  "year": 1877,
+  "body": "On October 10, 1877, George Monture, a mixed-blood trader, was killed at Monture Creek in the upper Blackfoot River area of Montana. Monture Creek, originally named Seaman Creek by Captain Meriwether Lewis in 1806, was later renamed in his honor. Monture was stabbed and killed by Sam Pierre, a Coeur d’Alene man, during an argument over trading a horse for a keg of whiskey. This incident highlights the often-volatile nature of frontier life in Montana during the late 19th century, where disputes could quickly escalate with tragic consequences. The event is a somber reminder of the personal conflicts and dangers that were part of the everyday reality for individuals living and working in the rugged and often lawless territories of the American West. The renaming of the creek serves as a lasting, albeit tragic, memorial to Monture.",
+  "category": "crime_outlaws",
+  "location": "Monture Creek, Missoula County",
+  "latitude": 47.3,
+  "longitude": -113.5,
+  "tags": [
+    "frontier life",
+    "crime",
+    "Native American history",
+    "Missoula County"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://www.mtmemory.org/nodes/view/128547",
+    "https://www.latlong.net/place/monture-creek-mt-usa-24078.html"
+  ],
+  "related_article": null
+}

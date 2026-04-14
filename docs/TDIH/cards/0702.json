@@ -1,0 +1,24 @@
+{
+  "id": "0702",
+  "month": 7,
+  "day": 2,
+  "date_display": "July 2",
+  "headline": "Steamboats Reach Fort Benton, 1860",
+  "year": 1860,
+  "body": "On July 2, 1860, the steamboats 'Chippewa' and 'Key West' successfully navigated the Missouri River to reach Fort Benton, marking a pivotal moment in Montana's early transportation and trade history. Fort Benton, already a significant fur trading post, became the effective 'head of navigation' for steamboat traffic on the Missouri. This achievement dramatically improved access to the interior of Montana Territory, facilitating the movement of goods, supplies, and people, including prospectors during the upcoming gold rushes. The regular arrival of steamboats transformed Fort Benton into a bustling port and a crucial gateway for the development and settlement of Montana, connecting it more directly with the eastern United States.",
+  "category": "infrastructure",
+  "location": "Fort Benton, Chouteau County",
+  "latitude": 47.8167,
+  "longitude": -110.6667,
+  "tags": [
+    "transportation",
+    "Missouri River",
+    "trade",
+    "exploration"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history"
+  ],
+  "related_article": null
+}

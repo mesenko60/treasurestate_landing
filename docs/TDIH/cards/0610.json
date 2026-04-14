@@ -1,0 +1,27 @@
+{
+  "id": "0610",
+  "month": 6,
+  "day": 10,
+  "date_display": "June 10",
+  "headline": "Major Reno Begins Reconnaissance Before Little Bighorn, 1876",
+  "year": 1876,
+  "body": "On June 10, 1876, Major Marcus A. Reno, leading six companies of the U.S. Seventh Cavalry and a Gatling gun crew, commenced a crucial ten-day reconnaissance mission in southeastern Montana Territory. This scouting expedition was a prelude to the fateful Battle of the Little Bighorn, aiming to locate and assess the presence of Native American encampments. Reno's movements were part of the broader military strategy to converge on the Lakota and Cheyenne, who had gathered in significant numbers. The intelligence gathered during this reconnaissance, though perhaps incomplete or misinterpreted, played a role in the subsequent decisions that led to the catastrophic engagement on June 25-26. This day marks an important operational step in the unfolding drama of the Great Sioux War, highlighting the military's efforts to confront the Native American tribes and ultimately leading to one of the most iconic and tragic events in American frontier history.",
+  "category": "military",
+  "location": "Southeastern Montana Territory (near Little Bighorn River)",
+  "latitude": 45.56,
+  "longitude": -107.43,
+  "tags": [
+    "Major Reno",
+    "Seventh Cavalry",
+    "Little Bighorn",
+    "reconnaissance",
+    "Great Sioux War"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/libi/learn/historyculture/major-marcus-reno.htm",
+    "https://lbha.proboards.com/thread/2841?page=2",
+    "https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm"
+  ],
+  "related_article": null
+}

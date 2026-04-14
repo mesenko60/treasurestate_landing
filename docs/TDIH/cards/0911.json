@@ -1,0 +1,27 @@
+{
+  "id": "0911",
+  "month": 9,
+  "day": 11,
+  "date_display": "September 11",
+  "headline": "Great Fire of 1910 Declared Controlled, 1910",
+  "year": 1910,
+  "body": "On September 11, 1910, after weeks of intense and devastating fires, the Great Fire of 1910 was officially declared under control. This massive wildfire, which burned approximately 3 million acres across northeast Washington, northern Idaho, and western Montana, was a landmark event in the history of the U.S. Forest Service. The fire claimed the lives of 87 people, mostly firefighters, and had a profound impact on national fire policy. The immense scale and destruction of the Great Fire of 1910 led to the development of new firefighting techniques and a greater emphasis on fire prevention and suppression. This event serves as a powerful reminder of the destructive force of nature and the bravery of those who combat it, and it forever shaped the landscape and fire management practices of Montana and the surrounding region.",
+  "category": "natural_disaster",
+  "location": "Western Montana",
+  "latitude": 47.0,
+  "longitude": -114.0,
+  "tags": [
+    "Great Fire of 1910",
+    "wildfire",
+    "U.S. Forest Service",
+    "natural disaster",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Great_Fire_of_1910",
+    "https://www.foresthistory.org/research-explore/us-forest-service-history/policy-and-law/the-great-fire-of-1910/",
+    "https://www.history.com/news/the-great-fire-of-1910-and-the-heroic-firefighter-who-saved-his-men"
+  ],
+  "related_article": null
+}

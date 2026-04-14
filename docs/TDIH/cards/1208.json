@@ -1,0 +1,26 @@
+{
+  "id": "1208",
+  "month": 12,
+  "day": 8,
+  "date_display": "December 8",
+  "headline": "U.S. Declares War on Japan, Entering WWII, 1941",
+  "year": 1941,
+  "body": "On December 8, 1941, the United States officially declared war on the Empire of Japan, a day after the devastating attack on Pearl Harbor. This declaration marked America's formal entry into World War II, a conflict that would profoundly reshape Montana and the nation. For Montana, the declaration meant an immediate and intensified commitment to the war effort. Thousands of young Montanans enlisted or were drafted into military service, while those on the home front rallied to support the war through increased agricultural and industrial production, particularly in mining. The state's economy shifted to wartime priorities, and communities across Montana contributed to the national mobilization. This day solidified Montana's role in a global conflict, highlighting the patriotism and resilience of its citizens in the face of unprecedented challenges.",
+  "category": "military",
+  "location": "Washington D.C.",
+  "latitude": 38.8951,
+  "longitude": -77.0364,
+  "tags": [
+    "World War II",
+    "declaration of war",
+    "military history",
+    "Pearl Harbor",
+    "Montana war effort"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://montanamilitarymuseum.org/montanas-participation-in-world-war-ii/"
+  ],
+  "related_article": null
+}

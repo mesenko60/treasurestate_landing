@@ -1,0 +1,23 @@
+{
+  "id": "1002",
+  "month": 10,
+  "day": 2,
+  "date_display": "October 2",
+  "headline": "Montana Centenarian Gloria Taylor Born, 1918",
+  "year": 1918,
+  "body": "On October 2, 1918, Gloria Taylor was born in Malta, Montana. As a centenarian, Gloria has witnessed a century of profound changes in Montana and the world. Her life story reflects the resilience and spirit of Montanans, having lived through significant historical events and societal transformations. While specific details of her life beyond her birthdate and status as a centenarian are not readily available in historical records, her longevity itself marks a notable milestone. Her birth represents the continuation of generations who have shaped Montana's unique cultural and historical landscape.",
+  "category": "notable_birth",
+  "location": "Malta, Phillips County",
+  "latitude": 48.4,
+  "longitude": -107.86,
+  "tags": [
+    "notable birth",
+    "centenarian",
+    "Malta"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://dphhs.mt.gov/assets/NewsLetters/CentenarianBooklet2023.pdf"
+  ],
+  "related_article": null
+}

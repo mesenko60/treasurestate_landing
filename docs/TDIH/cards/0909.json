@@ -1,0 +1,27 @@
+{
+  "id": "0909",
+  "month": 9,
+  "day": 9,
+  "date_display": "September 9",
+  "headline": "Libby Dam Dedicated by President Gerald Ford, 1975",
+  "year": 1975,
+  "body": "On September 9, 1975, President Gerald Ford officially dedicated the Libby Dam on the Kootenai River in northwestern Montana. The dam, a joint project between the United States and Canada, was constructed for flood control, hydroelectric power generation, and to provide recreational opportunities. The dedication ceremony marked the culmination of years of planning and construction, and it highlighted the importance of international cooperation in managing shared water resources. The Libby Dam has had a significant impact on the region, providing clean energy and flood protection, while also creating Lake Koocanusa, a popular destination for boating, fishing, and other outdoor activities. The event underscored the ongoing efforts to harness Montana's natural resources for the benefit of both the state and the nation.",
+  "category": "infrastructure",
+  "location": "Libby, Lincoln County",
+  "latitude": 48.4,
+  "longitude": -115.3167,
+  "tags": [
+    "Libby Dam",
+    "President Gerald Ford",
+    "Kootenai River",
+    "hydroelectric power",
+    "infrastructure"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Libby_Dam",
+    "https://www.nwd.usace.army.mil/Missions/Civil-Works/Locks-and-Dams/Libby-Dam/",
+    "https://www.fordlibrarymuseum.gov/library/document/0013/1552915.pdf"
+  ],
+  "related_article": null
+}

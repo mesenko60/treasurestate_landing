@@ -1,0 +1,27 @@
+{
+  "id": "0923",
+  "month": 9,
+  "day": 23,
+  "date_display": "September 23",
+  "headline": "Mullan Road Completed, 1862",
+  "year": 1862,
+  "body": "On September 23, 1862, the Mullan Road, the first wagon road to cross the Rocky Mountains into the Pacific Northwest, was completed. This 624-mile road, which stretched from Fort Benton, Montana, to Walla Walla, Washington, was a major engineering feat of its time. Constructed under the supervision of Lieutenant John Mullan, the road was intended to facilitate military transportation and to encourage settlement in the region. The Mullan Road played a crucial role in the development of Montana, providing a vital transportation link for miners, settlers, and merchants. It opened up the interior of the territory to wagon traffic, reducing travel times and costs, and it contributed to the growth of towns and cities along its route. The completion of the Mullan Road was a significant milestone in the history of Montana's infrastructure and its integration into the broader American West.",
+  "category": "infrastructure",
+  "location": "Fort Benton, Chouteau County",
+  "latitude": 47.8189,
+  "longitude": -110.6683,
+  "tags": [
+    "Mullan Road",
+    "infrastructure",
+    "transportation",
+    "Fort Benton",
+    "westward expansion"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mullan_Road",
+    "https://www.fhwa.dot.gov/infrastructure/mullan.cfm",
+    "https://www.historylink.org/File/5333"
+  ],
+  "related_article": null
+}

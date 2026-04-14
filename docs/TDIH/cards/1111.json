@@ -1,0 +1,27 @@
+{
+  "id": "1111",
+  "month": 11,
+  "day": 11,
+  "date_display": "November 11",
+  "headline": "Armistice Day Blizzard Hits Montana, 1940",
+  "year": 1940,
+  "body": "On November 11, 1940, the devastating Armistice Day Blizzard swept across the Midwest, including parts of Montana. The storm brought with it a rapid and severe drop in temperature, heavy snow, and high winds, catching many people unprepared. In Montana, the blizzard caused significant hardship, particularly for those in rural areas and the agricultural sector. Livestock were lost, transportation was disrupted, and communities were isolated by the heavy snowfall. The storm served as a stark reminder of the power and unpredictability of Montana's weather, and it led to improvements in weather forecasting and emergency preparedness. The Armistice Day Blizzard remains a significant event in the state's history, illustrating the challenges and resilience of its people in the face of natural disasters.",
+  "category": "weather",
+  "location": "Eastern Montana",
+  "latitude": 47.0,
+  "longitude": -106.0,
+  "tags": [
+    "Armistice Day Blizzard",
+    "Blizzard",
+    "Weather",
+    "Natural Disaster",
+    "Montana History"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "National Weather Service",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

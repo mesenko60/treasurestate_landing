@@ -1,0 +1,27 @@
+{
+  "id": "0607",
+  "month": 6,
+  "day": 7,
+  "date_display": "June 7",
+  "headline": "Devastating Flood Strikes Blackfeet Reservation, 1964",
+  "year": 1964,
+  "body": "On June 7, 1964, a catastrophic flood, considered one of the worst natural disasters in Montana's recorded history, began to unfold, severely impacting the Blackfeet Indian Reservation. Triggered by a massive storm that dumped heavy rain on late-season snowpack, the deluge caused widespread destruction, including the failure of the Swift Dam. The flood claimed 31 lives, with all but one fatality occurring on the Blackfeet Reservation. Homes, infrastructure, and livelihoods were devastated across approximately 20 percent of the state's surface area. The event highlighted the vulnerability of communities to extreme weather and the profound impact of natural disasters on indigenous populations. The 1964 flood remains a somber reminder of nature's power and the resilience of the affected communities in the face of immense loss and destruction, shaping the collective memory and preparedness efforts in Montana.",
+  "category": "natural_disaster",
+  "location": "Blackfeet Indian Reservation, Glacier County",
+  "latitude": 48.57,
+  "longitude": -113.1,
+  "tags": [
+    "flood",
+    "natural disaster",
+    "Blackfeet Reservation",
+    "Swift Dam",
+    "1964"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.greatfallstribune.com/story/news/local/2014/05/25/50th-anniversary-1964-flood/9563135/",
+    "https://www.facebook.com/MontanaHistoricalSociety/posts/on-june-7-and-8-1964-a-massive-storm-dropped-heavy-rain-on-late-season-snowpack-/5513609241982963/",
+    "https://damfailures.org/case-study/swift-and-two-medicine-dams-montana-1964"
+  ],
+  "related_article": null
+}

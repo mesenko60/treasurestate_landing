@@ -1,0 +1,24 @@
+{
+  "id": "0313",
+  "month": 3,
+  "day": 13,
+  "date_display": "March 13",
+  "headline": "Frank Henry Cooney Becomes Governor of Montana, 1933",
+  "year": 1933,
+  "body": "On March 13, 1933, Lieutenant Governor Frank Henry Cooney assumed the office of Governor of Montana, following the death of the incumbent Governor. Cooney, a Democrat, served during a challenging period marked by the Great Depression, which profoundly impacted Montana's economy and its citizens. His administration focused on addressing the economic hardships of the era, implementing relief programs, and working to stabilize the state's finances. This transition of power highlights the continuity of governance even in times of crisis and the responsibilities faced by Montana's leaders in navigating significant social and economic challenges. Cooney's tenure as governor was a critical period in Montana's history, as the state grappled with the widespread effects of the national economic downturn.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0215,
+  "tags": [
+    "Governor",
+    "Montana Politics",
+    "Great Depression"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://mths.mt.gov/Research/Compass/Facts"
+  ],
+  "related_article": null
+}

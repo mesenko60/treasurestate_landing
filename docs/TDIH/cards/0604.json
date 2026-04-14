@@ -1,0 +1,27 @@
+{
+  "id": "0604",
+  "month": 6,
+  "day": 4,
+  "date_display": "June 4",
+  "headline": "Missouri Territory Established, 1812",
+  "year": 1812,
+  "body": "On June 4, 1812, the United States Congress officially established the Missouri Territory, reorganizing the former Louisiana Territory. This act of Congress was a foundational step in the territorial evolution of the American West, directly impacting the vast expanse of land that would eventually become the state of Montana. The eastern portion of present-day Montana, acquired through the Louisiana Purchase, fell under the jurisdiction of this newly formed territory. The establishment of the Missouri Territory marked a formal assertion of American governance over these western lands, laying the groundwork for future exploration, settlement, and political organization. While Montana would undergo several more territorial transformations before achieving statehood, the creation of the Missouri Territory in 1812 represents an early and significant administrative milestone in its history, influencing its legal and political development for decades to come.",
+  "category": "statehood",
+  "location": "Missouri Territory (encompassing eastern Montana)",
+  "latitude": 47.0,
+  "longitude": -109.0,
+  "tags": [
+    "Missouri Territory",
+    "Louisiana Purchase",
+    "territorial history",
+    "governance",
+    "western expansion"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Missouri_Territory",
+    "https://www.atoztheusa.com/montana/historical-timeline.html",
+    "https://www.umt.edu/this-is-montana/columns/stories/montana-statehood-part1.php"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0620",
+  "month": 6,
+  "day": 20,
+  "date_display": "June 20",
+  "headline": "Fort Union Trading Post National Historic Site Established, 1966",
+  "year": 1966,
+  "body": "On June 20, 1966, the Fort Union Trading Post National Historic Site was officially established by an act of Congress, preserving and commemorating one of the most important fur trading posts on the Upper Missouri River. Located near the confluence of the Missouri and Yellowstone Rivers, straddling the border of present-day Montana and North Dakota, Fort Union operated from 1828 to 1867. For nearly four decades, it served as a vital hub for trade between the American Fur Company and various Native American tribes, including the Assiniboine, Crow, Blackfeet, and others. The establishment of the national historic site recognizes the profound impact of the fur trade on the region's history, the complex relationships between European traders and Native American communities, and the economic development of the American West. Today, the site offers a glimpse into this rich past, highlighting the cultural exchange and economic significance of the fur trade era. Its designation ensures that the legacy of Fort Union and its role in shaping Montana's early history are preserved for future generations.",
+  "category": "native_history",
+  "location": "Near Sidney, Richland County (Montana-North Dakota border)",
+  "latitude": 47.9975,
+  "longitude": -104.04,
+  "tags": [
+    "Fort Union Trading Post",
+    "fur trade",
+    "National Historic Site",
+    "Native American history",
+    "Missouri River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/fous/learn/management/index.htm",
+    "https://en.wikipedia.org/wiki/Fort_Union_Trading_Post_National_Historic_Site",
+    "https://www.facebook.com/MidwestNationalParks/posts/on-this-date-in-1966-fort-union-trading-post-national-historic-site-was-establis/2629389087311824/"
+  ],
+  "related_article": null
+}

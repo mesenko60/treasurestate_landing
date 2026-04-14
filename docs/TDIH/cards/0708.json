@@ -1,0 +1,24 @@
+{
+  "id": "0708",
+  "month": 7,
+  "day": 8,
+  "date_display": "July 8",
+  "headline": "Sunbeam Mine Accident Claims Life, 1910",
+  "year": 1910,
+  "body": "On July 8, 1910, Andrea Cerameline died in a tragic mining accident at the Sunbeam Mine in Madison County, Montana. The incident occurred when the air shaft to the mine became plugged with ice and snow. Cerameline, an Italian immigrant, was attempting to clear the obstruction when he fell to his death. This event highlights the perilous conditions faced by miners in Montana's early 20th century, where the pursuit of precious metals often came at a high human cost. The Sunbeam Mine, like many others in the region, was a site of intense activity, contributing to Montana's rich mining history, but also to its somber record of industrial accidents.",
+  "category": "mining",
+  "location": "Madison County, Montana",
+  "latitude": 45.5263,
+  "longitude": -112.0533,
+  "tags": [
+    "mining",
+    "accident",
+    "immigrant"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.mindat.org/feature-5681049.html",
+    "https://custer.idgenweb.org/cemetery/bonanza.html"
+  ],
+  "related_article": null
+}

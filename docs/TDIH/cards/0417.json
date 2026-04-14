@@ -1,0 +1,26 @@
+{
+  "id": "0417",
+  "month": 4,
+  "day": 17,
+  "date_display": "April 17",
+  "headline": "Montana Column Camps Near Pompeys Pillar, 1876",
+  "year": 1876,
+  "body": "On April 17, 1876, a significant military force known as the Montana Column, comprising approximately 450 cavalrymen under the command of Colonel John Gibbon, established a camp near Pompeys Pillar. This movement was part of a larger military campaign against Native American tribes in the region, particularly in the lead-up to the Great Sioux War of 1876. Pompeys Pillar, a prominent sandstone rock formation on the banks of the Yellowstone River, served as a strategic landmark and a temporary base for military operations. The presence of such a substantial military contingent in the area underscores the escalating tensions and conflicts between the U.S. Army and indigenous peoples during this period of westward expansion. This event is a precursor to some of the most well-known battles in Montana's history, including the Battle of the Little Bighorn, and highlights the military's efforts to assert control over the vast territories of Montana.",
+  "category": "military",
+  "location": "Pompeys Pillar, Yellowstone County",
+  "latitude": 45.9953,
+  "longitude": -108.0058,
+  "tags": [
+    "Montana Column",
+    "John Gibbon",
+    "Pompeys Pillar",
+    "Military History",
+    "Great Sioux War"
+  ],
+  "expandable": true,
+  "sources": [
+    "blm.gov/programs/national-conservation-lands/montana-dakotas/pompeys-pillar/traders-travelers-and-settlers",
+    "en.wikipedia.org/wiki/Pompeys_Pillar_National_Monument"
+  ],
+  "related_article": null
+}

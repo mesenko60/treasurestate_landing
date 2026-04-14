@@ -1,0 +1,24 @@
+{
+  "id": "0722",
+  "month": 7,
+  "day": 22,
+  "date_display": "July 22",
+  "headline": "Deadly Tornado Strikes Augusta, 1933",
+  "year": 1933,
+  "body": "On July 22, 1933, the town of Augusta, Montana, was hit by a deadly tornado, causing significant destruction and loss of life. The powerful storm tore through the community, destroying buildings and homes, and tragically killing at least four people while injuring many others. This event stands as a stark reminder of the unpredictable and severe weather phenomena that can impact Montana. The tornado left a lasting impression on the residents of Augusta, highlighting the vulnerability of frontier towns to natural disasters and the resilience required to rebuild in their aftermath.",
+  "category": "natural_disaster",
+  "location": "Augusta, Lewis and Clark County",
+  "latitude": 47.4894,
+  "longitude": -112.3922,
+  "tags": [
+    "weather",
+    "tornado",
+    "natural_disaster"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.tfdsupplies.com/blogs/today-in-history/5-fun-facts-about-july-22-in-montana-history",
+    "https://en.wikipedia.org/wiki/Augusta,_Montana"
+  ],
+  "related_article": null
+}

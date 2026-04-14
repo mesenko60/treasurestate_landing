@@ -1,0 +1,27 @@
+{
+  "id": "1223",
+  "month": 12,
+  "day": 23,
+  "date_display": "December 23",
+  "headline": "Alder Gulch Vigilance Committee Formed, 1863",
+  "year": 1863,
+  "body": "On December 23, 1863, the Vigilance Committee of Alder Gulch was formally established in Virginia City, Montana Territory. This committee, composed of prominent citizens and miners, was formed in response to a rampant crime wave, particularly a series of murders and robberies attributed to a notorious gang led by Henry Plummer, the corrupt sheriff of Bannack. Frustrated by the lack of effective law enforcement in the remote mining camps, the vigilantes took justice into their own hands. Their actions, though controversial, were widely supported by the community at the time, leading to the apprehension and execution of numerous outlaws. The formation of the Alder Gulch Vigilance Committee represents a critical period in Montana\"s early history, highlighting the challenges of establishing law and order in a frontier society and the community\"s determination to protect itself during the chaotic gold rush era.",
+  "category": "crime_outlaws",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2938,
+  "longitude": -111.9461,
+  "tags": [
+    "Vigilance Committee",
+    "Alder Gulch",
+    "Virginia City",
+    "Henry Plummer",
+    "frontier law",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://www.travelmath.com/cities/Virginia+City,+MT"
+  ],
+  "related_article": null
+}

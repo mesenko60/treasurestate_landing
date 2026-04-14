@@ -1,0 +1,27 @@
+{
+  "id": "0602",
+  "month": 6,
+  "day": 2,
+  "date_display": "June 2",
+  "headline": "Lewis and Clark Reach Marias River Confluence, 1805",
+  "year": 1805,
+  "body": "On June 2, 1805, the Lewis and Clark Expedition reached the confluence of the Marias and Missouri Rivers in what is now north-central Montana. This moment marked a critical juncture in their journey of exploration. The expedition faced a significant challenge: determining which of the two large rivers was the true Missouri. Meriwether Lewis, after careful observation and reconnaissance, correctly identified the southern fork as the Missouri, a decision that proved crucial for the expedition's success in finding a navigable route to the Pacific. The confluence, often referred to as \"Decision Point,\" became a temporary camp where the Corps of Discovery spent several days exploring the Marias River and gathering intelligence. This event underscored the expedition's scientific and cartographic objectives, contributing significantly to the early mapping of the American West and the understanding of its vast river systems. The area remains a site of historical importance, commemorating the expedition's pivotal decision and its enduring legacy in shaping the nation's westward expansion.",
+  "category": "exploration",
+  "location": "Loma, Chouteau County",
+  "latitude": 47.8864,
+  "longitude": -110.6289,
+  "tags": [
+    "Lewis and Clark",
+    "Marias River",
+    "Missouri River",
+    "exploration",
+    "Decision Point"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/2-jun-1805/",
+    "https://www.umt.edu/this-is-montana/columns/stories/marias-river.php",
+    "https://www.nps.gov/places/decision-point-montana.htm"
+  ],
+  "related_article": null
+}

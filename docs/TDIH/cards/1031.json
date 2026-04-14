@@ -1,0 +1,26 @@
+{
+  "id": "1031",
+  "month": 10,
+  "day": 31,
+  "date_display": "October 31",
+  "headline": "Baseball Pitcher Dave McNally Born, 1942",
+  "year": 1942,
+  "body": "On October 31, 1942, David Arthur \"Dave\" McNally, a prominent American professional baseball player, was born in Billings, Montana. McNally, a left-handed pitcher, achieved significant fame during his career, primarily with the Baltimore Orioles. He was a key member of the Orioles' dominant teams of the late 1960s and early 1970s, contributing to their four American League pennants and two World Series championships. McNally was one of only four pitchers in Major League Baseball history to win 20 or more games in four consecutive seasons (1968-1971). Beyond his on-field accomplishments, McNally is also remembered for his role in the landmark \"Curt Flood Rule\" lawsuit, which challenged baseball's reserve clause and ultimately led to the establishment of free agency for players. His legacy extends beyond statistics, marking him as a significant figure in both Montana sports history and the evolution of professional baseball.",
+  "category": "sports",
+  "location": "Billings, Yellowstone County",
+  "latitude": 45.7833,
+  "longitude": -108.5,
+  "tags": [
+    "notable birth",
+    "baseball",
+    "sports",
+    "Billings"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dave_McNally",
+    "https://www.baseball-reference.com/players/m/mcnalda01.shtml",
+    "https://www.latlong.net/place/billings-mt-usa-4655.html"
+  ],
+  "related_article": null
+}

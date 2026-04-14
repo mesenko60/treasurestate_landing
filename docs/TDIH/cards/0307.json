@@ -1,0 +1,24 @@
+{
+  "id": "0307",
+  "month": 3,
+  "day": 7,
+  "date_display": "March 7",
+  "headline": "The Mystery of 3-7-77 and the Montana Vigilantes",
+  "year": 1863,
+  "body": "While the exact origin and meaning remain debated, the enigmatic numbers \"3-7-77\" are deeply ingrained in Montana history, primarily associated with the Montana Vigilantes of the 1860s. This vigilance committee, formed in the gold mining camps of places like Bannack and Virginia City, took justice into their own hands during a period of lawlessness. The numbers are widely believed to have been a warning to outlaws, signifying a grave, or perhaps the dimensions of a coffin, or even the time given to leave the territory. The Montana Highway Patrol still incorporates the symbol into its badge, honoring the early efforts to establish order in the Montana Territory. This symbol represents a harsh but effective form of frontier justice that shaped the early social and legal landscape of Montana.",
+  "category": "crime_outlaws",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2908,
+  "longitude": -111.9431,
+  "tags": [
+    "Montana Vigilantes",
+    "3-7-77",
+    "Frontier Justice"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/3-7-77",
+    "https://www.distinctlymontana.com/3-7-77-warning-or-whimsy"
+  ],
+  "related_article": null
+}

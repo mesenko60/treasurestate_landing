@@ -1,0 +1,26 @@
+{
+  "id": "0520",
+  "month": 5,
+  "day": 20,
+  "date_display": "May 20",
+  "headline": "The Dempsey-Gibbons Fight Announced for Shelby, 1923",
+  "year": 1923,
+  "body": "On May 20, 1923, promoters officially announced that heavyweight boxing champion Jack Dempsey would defend his title against challenger Tommy Gibbons in Shelby, Montana, on July 4, 1923. The announcement set off one of the most improbable promotional spectacles in the history of American sports. Shelby was a small oil boomtown on the Hi-Line with a population of fewer than 500 people, and local boosters had promised Dempsey's manager, Doc Kearns, a $300,000 guarantee in hopes that the fight would put their town on the map and stimulate investment in the surrounding oil fields. The promoters began constructing a wooden arena capable of holding 40,000 spectators, an absurd capacity for a town that size. As the fight date approached, it became clear that ticket sales were nowhere near sufficient to cover the guarantee. Four Montana banks were essentially drained to keep the promotion alive. When fight day arrived on July 4, fewer than 8,000 paying customers showed up, though thousands more broke through the fences. Dempsey won on points over 15 rounds. Kearns left town with the cash before the banks could stop him. Three of the four banks that had backed the promotion subsequently failed. The Shelby fight became a legendary cautionary tale about frontier boosterism and the dangers of betting a town's future on a single spectacular event.",
+  "category": "sports",
+  "location": "Shelby, Toole County",
+  "latitude": 48.5058,
+  "longitude": -111.8574,
+  "tags": [
+    "Jack Dempsey",
+    "Tommy Gibbons",
+    "Shelby",
+    "boxing",
+    "1923"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia: Dempsey vs. Gibbons",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0902",
+  "month": 9,
+  "day": 2,
+  "date_display": "September 2",
+  "headline": "Birth of Johann Wilhelm Fuchs, Namer of Lennep, Montana, 1859",
+  "year": 1859,
+  "body": "On September 2, 1859, Johann Wilhelm Fuchs, a German immigrant who would later play a role in Montana's history, was born in Lennep, Germany. Fuchs, who worked as a railroad auditor, is credited with naming the Montana town of Lennep after his German hometown. The town of Lennep, located in Meagher County, Montana, was a significant point along the Montana Railroad, which introduced electric rail service and contributed to the settlement and development of the region. While the town itself is now largely a ghost town, its existence and naming are a testament to the influence of individuals like Fuchs in shaping the landscape and nomenclature of early Montana.",
+  "category": "notable_birth",
+  "location": "Lennep, Meagher County",
+  "latitude": 46.4161,
+  "longitude": -110.5433,
+  "tags": [
+    "Johann Wilhelm Fuchs",
+    "Lennep",
+    "Meagher County",
+    "railroad",
+    "German immigrant"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://montanahistoriclandscape.com/2021/08/15/lennep-revisited/",
+    "https://grokipedia.com/page/lennep_montana",
+    "https://www.topozone.com/montana/meagher-mt/city/lennep/"
+  ],
+  "related_article": null
+}

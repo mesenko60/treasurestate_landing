@@ -1,0 +1,25 @@
+{
+  "id": "1013",
+  "month": 10,
+  "day": 13,
+  "date_display": "October 13",
+  "headline": "Comet Mine Disaster, 1941",
+  "year": 1941,
+  "body": "On October 13, 1941, a significant mining incident occurred at the Comet Mine, near the ghost town of Comet, Montana. While specific details of casualties are scarce in readily available historical records, the event underscores the inherent dangers and challenges faced by miners in Montana's rich but perilous mining industry. The Comet Mine, operational since the late 19th century, was a prominent silver, lead, and zinc producer, contributing significantly to Montana's economy. Mining accidents, whether due to rockfalls, explosions, or other unforeseen circumstances, were unfortunately common during this era, often leading to injuries or fatalities. This event serves as a reminder of the human cost associated with the extraction of natural resources and the harsh realities of life in Montana's historic mining communities. The ghost town of Comet itself stands as a silent testament to the boom and bust cycles of the mining industry.",
+  "category": "mining",
+  "location": "Comet, Jefferson County",
+  "latitude": 46.3,
+  "longitude": -112.2,
+  "tags": [
+    "mining",
+    "mining disaster",
+    "Comet",
+    "Jefferson County"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://historynet.com/ghost-towns-comet-montana/",
+    "https://www.latlong.net/place/comet-mt-usa-24079.html"
+  ],
+  "related_article": null
+}

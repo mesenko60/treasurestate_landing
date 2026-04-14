@@ -1,0 +1,25 @@
+{
+  "id": "0202",
+  "month": 2,
+  "day": 2,
+  "date_display": "February 2",
+  "headline": "Montana Historical Society Incorporated, 1865",
+  "year": 1865,
+  "body": "On February 2, 1865, the Historical Society of Montana was incorporated in Virginia City, a pivotal moment for the preservation of the territory's rich and rapidly unfolding history. This act, one of the first passed by the Montana Territorial Legislature and signed into law by Governor Sidney Edgerton, underscored the early recognition of the importance of documenting and safeguarding Montana's unique heritage. The society's establishment came at a time of immense change, as Montana was just beginning its journey from a rugged frontier territory to a burgeoning state. Gold rushes, conflicts with Native American tribes, and the influx of settlers were all shaping the landscape and culture. The Historical Society of Montana was founded with the mission to collect, preserve, and promote the history of Montana, ensuring that the stories of its pioneers, indigenous peoples, and significant events would not be lost to time. Its creation laid the groundwork for what would become a cornerstone institution for historical research and education in the state, playing a crucial role in shaping Montana's identity and understanding of its past.",
+  "category": "arts_culture",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2927,
+  "longitude": -111.9422,
+  "tags": [
+    "history",
+    "Virginia City",
+    "Montana Territory",
+    "historical society"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://mhs.mt.gov/JoinGive/Docs/newsletter/2014Star2SumWEB.pdf"
+  ],
+  "related_article": null
+}

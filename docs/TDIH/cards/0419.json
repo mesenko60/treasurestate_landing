@@ -1,0 +1,26 @@
+{
+  "id": "0419",
+  "month": 4,
+  "day": 19,
+  "date_display": "April 19",
+  "headline": "Montana State Prison Riot Begins, 1959",
+  "year": 1959,
+  "body": "On April 19, 1959, the Montana State Prison in Deer Lodge erupted in a violent riot, initiated by notorious inmate Jerry Myles and two other convicts. The uprising quickly escalated, with prisoners taking control of parts of the facility and holding guards hostage. The riot, which lasted for 36 hours, drew national attention and exposed severe issues within the state's correctional system, including overcrowding and inadequate conditions. The event ultimately led to significant reforms in prison administration and a modernization of the facility. The Montana State Prison riot remains a dramatic and pivotal moment in Montana's history, highlighting the challenges of incarceration and the ongoing efforts to balance punishment with rehabilitation. The incident underscored the need for improved security measures and a more humane approach to inmate management.",
+  "category": "crime_outlaws",
+  "location": "Deer Lodge, Powell County",
+  "latitude": 46.396,
+  "longitude": -112.7291,
+  "tags": [
+    "Montana State Prison",
+    "Prison Riot",
+    "Jerry Myles",
+    "Deer Lodge",
+    "Crime"
+  ],
+  "expandable": true,
+  "sources": [
+    "youtube.com/watch?v=cEHOEuzv0mw",
+    "thisweekinmontanahistory.blogspot.com"
+  ],
+  "related_article": null
+}

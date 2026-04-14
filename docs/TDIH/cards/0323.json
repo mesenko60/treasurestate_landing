@@ -1,0 +1,24 @@
+{
+  "id": "0323",
+  "month": 3,
+  "day": 23,
+  "date_display": "March 23",
+  "headline": "Montana Enacts First Old-Age Pension Law, 1923",
+  "year": 1923,
+  "body": "On March 23, 1923, Montana made history by enacting one of the nation's first old-age pension laws. This pioneering legislation, alongside a similar law in Nevada, marked a significant step in addressing the economic security of the elderly in the United States. The Montana Old-Age Pension Law provided financial assistance to eligible residents, reflecting a growing societal recognition of the need to support its aging population. While early state pension laws often had limitations and were optional for counties, Montana's initiative laid crucial groundwork for future social welfare policies. This event highlights Montana's progressive stance in the early 20th century and its commitment to the well-being of its citizens, predating the federal Social Security Act by more than a decade.",
+  "category": "labor",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0215,
+  "tags": [
+    "Old-Age Pension",
+    "Social Welfare",
+    "Montana Law"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.ebsco.com/research-starters/history/nevada-and-montana-introduce-old-age-pensions",
+    "https://www.ssa.gov/history/1900.html"
+  ],
+  "related_article": null
+}

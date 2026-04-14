@@ -1,0 +1,27 @@
+{
+  "id": "0918",
+  "month": 9,
+  "day": 18,
+  "date_display": "September 18",
+  "headline": "Fort Benton Established, 1846",
+  "year": 1846,
+  "body": "On September 18, 1846, the American Fur Company established Fort Benton on the upper Missouri River, marking the beginning of what would become a vital hub for trade and transportation in the Montana Territory. Named after Senator Thomas Hart Benton of Missouri, the fort was the last fur trading post on the Missouri River and the head of navigation for steamboats. Its strategic location made it a crucial link between the settled areas of the East and the vast, resource-rich territories of the West. Fort Benton quickly grew into a bustling center of commerce, serving as a supply depot for miners, settlers, and military expeditions. The establishment of Fort Benton was a pivotal event in the history of Montana, playing a key role in the economic development and settlement of the region.",
+  "category": "exploration",
+  "location": "Fort Benton, Chouteau County",
+  "latitude": 47.8189,
+  "longitude": -110.6683,
+  "tags": [
+    "Fort Benton",
+    "American Fur Company",
+    "Missouri River",
+    "fur trade",
+    "steamboats"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fort_Benton,_Montana",
+    "https://www.fortbenton.com/history/",
+    "https://www.nps.gov/places/fort-benton-historic-district.htm"
+  ],
+  "related_article": null
+}

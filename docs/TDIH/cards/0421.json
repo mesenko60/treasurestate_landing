@@ -1,0 +1,26 @@
+{
+  "id": "0421",
+  "month": 4,
+  "day": 21,
+  "date_display": "April 21",
+  "headline": "Anaconda Road Massacre in Butte, 1920",
+  "year": 1920,
+  "body": "On April 21, 1920, the Anaconda Road Massacre occurred in Butte, Montana, a tragic event during a miners' strike. Company guards, employed by the Anaconda Copper Mining Company, opened fire on striking miners who were picketing near one of the company's mines. This violent confrontation resulted in casualties and further inflamed tensions between labor and management in the fiercely contested mining town. The massacre underscored the brutal realities of industrial conflict in early 20th-century Montana, where powerful corporations often clashed with organized labor. It remains a stark reminder of the struggles faced by workers in their fight for better conditions and fair treatment, and the often-deadly consequences of such disputes in Montana's rich but turbulent mining history.",
+  "category": "labor",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "Anaconda Road Massacre",
+    "Butte",
+    "Labor Strike",
+    "Mining History",
+    "Industrial Conflict"
+  ],
+  "expandable": true,
+  "sources": [
+    "facebook.com/workingclasshistory",
+    "en.wikipedia.org/wiki/Anaconda_Road_massacre"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0908",
+  "month": 9,
+  "day": 8,
+  "date_display": "September 8",
+  "headline": "Northern Pacific Golden Spike Driven at Gold Creek, 1883",
+  "year": 1883,
+  "body": "On September 8, 1883, a pivotal moment in American westward expansion and Montana's development occurred at Gold Creek, Montana Territory. On this day, the Northern Pacific Railway completed its transcontinental line with the driving of the 'golden spike.' Although the actual spike was iron, the ceremony symbolized the culmination of years of arduous labor and engineering marvel. This event connected the Pacific Northwest to the eastern United States by rail, dramatically transforming transportation, commerce, and settlement patterns across Montana. The completion of the Northern Pacific Railway facilitated the movement of goods, people, and resources, significantly contributing to the economic growth and integration of Montana into the national fabric. It marked a new era for the state, opening up vast territories for development and solidifying its place in the nation's expanding railway network.",
+  "category": "railroad",
+  "location": "Gold Creek, Powell County",
+  "latitude": 46.5777,
+  "longitude": -112.9148,
+  "tags": [
+    "Northern Pacific Railway",
+    "golden spike",
+    "Gold Creek",
+    "transcontinental railroad",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Northern_Pacific_Railroad_Completion_Site,_1883",
+    "https://www.greatfallstribune.com/story/news/2018/09/08/montana-history-northern-pacific-railroad-finished-gold-creek/1227959002/",
+    "https://www.waymarking.com/waymarks/wm2C3G_Northern_Pacific_Railroad_Completion_Site_1883"
+  ],
+  "related_article": null
+}

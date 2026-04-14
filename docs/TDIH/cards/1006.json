@@ -1,0 +1,24 @@
+{
+  "id": "1006",
+  "month": 10,
+  "day": 6,
+  "date_display": "October 6",
+  "headline": "President Reagan Adds 1 Million Acres to Montana Wilderness, 1986",
+  "year": 1986,
+  "body": "On October 6, 1986, President Ronald Reagan signed into law an act that significantly expanded Montana's wilderness areas, adding over 1 million acres to the National Wilderness Preservation System. This landmark legislation protected vast tracts of Montana's pristine landscapes, ensuring their preservation for future generations. The act was the culmination of years of effort by conservationists, politicians, and citizens who recognized the ecological and recreational value of these wild lands. The addition of these acres underscored Montana's commitment to environmental stewardship and its identity as a state rich in natural beauty and outdoor opportunities. This expansion had a lasting impact on the state's wildlife, ecosystems, and the opportunities for wilderness recreation, solidifying Montana's reputation as a haven for nature enthusiasts.",
+  "category": "wildlife_nature",
+  "location": "Montana (statewide)",
+  "latitude": 47.0,
+  "longitude": -110.0,
+  "tags": [
+    "wilderness",
+    "conservation",
+    "environmental policy",
+    "federal legislation"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history"
+  ],
+  "related_article": null
+}

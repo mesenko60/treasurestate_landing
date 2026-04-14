@@ -1,0 +1,27 @@
+{
+  "id": "0614",
+  "month": 6,
+  "day": 14,
+  "date_display": "June 14",
+  "headline": "Lewis and Clark National Forest Established, 1904",
+  "year": 1904,
+  "body": "On June 14, 1904, U.S. President Theodore Roosevelt issued a proclamation establishing the Lewis and Clark National Forest, a significant act of conservation and land management that shaped the future of central Montana. This designation brought vast tracts of mountainous terrain under federal protection, recognizing the ecological importance and natural beauty of the region. The creation of the national forest aimed to preserve timber resources, protect watersheds, and provide for public recreation, reflecting the growing conservation movement of the early 20th century. The Lewis and Clark National Forest, named in honor of the famed explorers who traversed much of this land a century earlier, encompasses diverse ecosystems, from the rugged peaks of the Rocky Mountains to expansive prairies. Its establishment has had a lasting impact on Montana, influencing everything from logging practices and wildlife management to tourism and outdoor recreation, ensuring the preservation of these natural treasures for future generations.",
+  "category": "wildlife_nature",
+  "location": "Great Falls, Cascade County (Lewis and Clark National Forest)",
+  "latitude": 47.183,
+  "longitude": -111.45,
+  "tags": [
+    "Lewis and Clark National Forest",
+    "conservation",
+    "Theodore Roosevelt",
+    "national forests",
+    "land management"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Helena-Lewis_and_Clark_National_Forest",
+    "https://www.fs.usda.gov/r01/helena-lewisclark/recreation/logging-creek-campground"
+  ],
+  "related_article": null
+}

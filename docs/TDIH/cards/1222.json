@@ -1,0 +1,26 @@
+{
+  "id": "1222",
+  "month": 12,
+  "day": 22,
+  "date_display": "December 22",
+  "headline": "First National Grange Chapter Organized in Montana, 1874",
+  "year": 1874,
+  "body": "On December 22, 1874, the first national Grange chapter in Montana was organized at Deep Creek, near Townsend. The Grange, officially known as the Patrons of Husbandry, was a fraternal organization founded in the United States after the Civil War to promote the economic and political well-being of farmers. Its establishment in Montana marked a significant step in the state\"s agricultural history, providing a platform for farmers to collectively address issues such as unfair railroad rates, high taxes, and the need for agricultural education. The Grange played a crucial role in fostering community among isolated farming families and advocating for legislative changes that benefited the agricultural sector. This event highlights the early efforts of Montana\"s farming communities to organize and assert their influence, laying the groundwork for future agricultural movements and cooperative endeavors in the state.",
+  "category": "agriculture",
+  "location": "Deep Creek, Broadwater County",
+  "latitude": 46.3247,
+  "longitude": -111.5114,
+  "tags": [
+    "Grange",
+    "agriculture",
+    "farmers",
+    "Townsend",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://waterdata.usgs.gov/monitoring-location/06056600/"
+  ],
+  "related_article": null
+}

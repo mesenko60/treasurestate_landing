@@ -1,0 +1,27 @@
+{
+  "id": "0917",
+  "month": 9,
+  "day": 17,
+  "date_display": "September 17",
+  "headline": "Last Spike of the Great Northern Railway in Montana, 1893",
+  "year": 1893,
+  "body": "On September 17, 1893, the Great Northern Railway, under the leadership of James J. Hill, completed its transcontinental line across Montana, with the last spike being driven near present-day Scenic, Washington. While the final spike was driven outside of Montana, the completion of the Great Northern's line across the state was a monumental achievement that had a profound impact on its development. The railway, which traversed the northern part of Montana, opened up new areas for settlement and agriculture, and it provided a vital transportation link for the state's growing industries. The Great Northern's route, which included the spectacular Marias Pass, was a testament to the engineering prowess of the era. The completion of the railway solidified Montana's connection to the rest of the nation and played a crucial role in its economic and social transformation.",
+  "category": "railroad",
+  "location": "Marias Pass, Glacier County",
+  "latitude": 48.3167,
+  "longitude": -113.3667,
+  "tags": [
+    "Great Northern Railway",
+    "James J. Hill",
+    "transcontinental railroad",
+    "Marias Pass",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.historylink.org/File/5101",
+    "https://www.gnrhs.org/history/",
+    "https://en.wikipedia.org/wiki/Great_Northern_Railway_(U.S.)"
+  ],
+  "related_article": null
+}

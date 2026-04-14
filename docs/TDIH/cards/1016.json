@@ -1,0 +1,25 @@
+{
+  "id": "1016",
+  "month": 10,
+  "day": 16,
+  "date_display": "October 16",
+  "headline": "Great Northern Railway Reaches Fort Assinniboine, 1887",
+  "year": 1887,
+  "body": "On October 16, 1887, the Great Northern Railway reached Fort Assinniboine, a significant milestone in the expansion of the railroad across Montana. This event marked the growing influence of rail transportation in the development of the American West, connecting remote military outposts and burgeoning settlements to national markets and supply lines. The arrival of the Great Northern Railway brought profound changes to the region, facilitating the movement of troops, supplies, and settlers, and accelerating the economic development of northern Montana. It also played a crucial role in the decline of the traditional frontier, as the railway opened up vast territories for ranching, farming, and mining. The railway's presence at Fort Assinniboine underscored the strategic importance of the fort and the broader federal efforts to secure and develop the Montana territory during the late 19th century.",
+  "category": "railroad",
+  "location": "Fort Assinniboine, Hill County",
+  "latitude": 48.5,
+  "longitude": -110.0,
+  "tags": [
+    "railroad",
+    "transportation",
+    "frontier history",
+    "Fort Assinniboine"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_pre-statehood_Montana_history",
+    "https://www.getamap.net/maps/united_states/montana/hill/_fort_assinniboine_historical_site/"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "1121",
+  "month": 11,
+  "day": 21,
+  "date_display": "November 21",
+  "headline": "Manuel Lisa Establishes Fort Raymond, 1807",
+  "year": 1807,
+  "body": "On November 21, 1807, Manuel Lisa, a prominent fur trader, established Fort Raymond at the confluence of the Yellowstone and Big Horn Rivers in what is now Montana. This marked the first American trading post in the upper Missouri River region, signifying a pivotal moment in the American fur trade and westward expansion. Fort Raymond served as a base for trapping expeditions and facilitated trade with various Native American tribes, including the Crow. Lisa's enterprise was instrumental in extending American influence into territories previously dominated by British and French traders. The establishment of this fort underscored the growing economic interest in the region's abundant fur resources and played a crucial role in the early commercial development of Montana, paving the way for future American settlement and interaction with indigenous populations.",
+  "category": "exploration",
+  "location": "Bighorn, Yellowstone County",
+  "latitude": 46.1546,
+  "longitude": -107.4743,
+  "tags": [
+    "Manuel Lisa",
+    "Fort Raymond",
+    "Fur Trade",
+    "Yellowstone River",
+    "Big Horn River",
+    "Exploration"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

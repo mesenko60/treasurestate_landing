@@ -1,0 +1,25 @@
+{
+  "id": "0601",
+  "month": 6,
+  "day": 1,
+  "date_display": "June 1",
+  "headline": "Big Horn County Historical Museum Opens, 1979",
+  "year": 1979,
+  "body": "On June 1, 1979, the Big Horn County Historical Museum officially opened its doors in Hardin, Montana. This significant cultural institution was established with the mission to preserve and interpret the rich history of Big Horn County and the surrounding region. The museum, housed in a restored farmhouse, quickly became a cornerstone for local historical preservation efforts. Its opening marked a dedicated commitment to collecting, safeguarding, and sharing the stories of the area's past, including its agricultural heritage, Native American history, and the development of its communities. The museum's establishment provided a vital resource for researchers, educators, and the public, offering a tangible connection to the events and individuals that shaped this part of Montana. It serves as a repository for artifacts, documents, and photographs, ensuring that the historical narrative of Big Horn County remains accessible for future generations. The museum's ongoing efforts contribute significantly to the understanding and appreciation of Montana's diverse historical landscape.",
+  "category": "arts_culture",
+  "location": "Hardin, Big Horn County",
+  "latitude": 45.6294,
+  "longitude": -107.6086,
+  "tags": [
+    "museum",
+    "history",
+    "Big Horn County",
+    "preservation",
+    "culture"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://southeastmontana.com/blog/big-horn-county-historical-museum-epicenter-of-western-american-history"
+  ],
+  "related_article": null
+}

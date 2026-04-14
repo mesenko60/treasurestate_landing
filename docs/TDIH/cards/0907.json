@@ -1,0 +1,27 @@
+{
+  "id": "0907",
+  "month": 9,
+  "day": 7,
+  "date_display": "September 7",
+  "headline": "Natural Gas Arrives in Butte, 1931",
+  "year": 1931,
+  "body": "On September 7, 1931, a new era of energy dawned in Butte, Montana, as natural gas was officially introduced to the city. This momentous occasion was marked by a celebratory lighting of a large torch near the Montana School of Mines, symbolizing the arrival of a cleaner and more efficient fuel source. The introduction of natural gas was a significant industrial and infrastructural development for Butte, a city already renowned for its mining operations. It provided a more economical and convenient heating and power option for homes and businesses, contributing to the city's modernization and growth during a challenging economic period. This event underscored Montana's ongoing development and its ability to adapt to new technologies.",
+  "category": "infrastructure",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "natural gas",
+    "Butte",
+    "infrastructure",
+    "energy",
+    "Montana School of Mines"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.facebook.com/butte.archives/posts/on-this-day-in-history-september-7-1931-natural-gas-was-introduced-to-butte-this/1098037342503422/",
+    "https://www.nytimes.com/1931/03/07/archives/butte-to-get-natural-gas-montana-power-signs-10000000-pipe-line.html",
+    "https://www.latlong.net/place/butte-mt-usa-12693.html"
+  ],
+  "related_article": null
+}

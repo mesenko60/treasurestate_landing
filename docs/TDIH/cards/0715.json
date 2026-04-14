@@ -1,0 +1,24 @@
+{
+  "id": "0715",
+  "month": 7,
+  "day": 15,
+  "date_display": "July 15",
+  "headline": "Montana's First State Fair Opens in Helena, 1893",
+  "year": 1893,
+  "body": "On July 15, 1893, Montana's first state fair officially opened its gates in Helena. This landmark event showcased the agricultural and industrial achievements of the young state, offering a platform for farmers, ranchers, and businesses to display their products and innovations. Beyond its economic significance, the fair served as a vital social gathering, fostering a sense of community and shared identity among Montanans. It featured various attractions, including exhibits, competitions, and entertainment, reflecting the diverse interests and aspirations of the state's residents. The establishment of the state fair marked a coming-of-age for Montana, demonstrating its progress and potential in the post-statehood era.",
+  "category": "agriculture",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5928,
+  "longitude": -112.0287,
+  "tags": [
+    "agriculture",
+    "culture",
+    "economy"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.tfdsupplies.com/blogs/today-in-history/5-fun-facts-about-july-15-in-montana-history",
+    "https://en.wikipedia.org/wiki/Montana_State_Fair"
+  ],
+  "related_article": null
+}

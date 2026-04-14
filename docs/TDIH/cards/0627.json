@@ -1,0 +1,27 @@
+{
+  "id": "0627",
+  "month": 6,
+  "day": 27,
+  "date_display": "June 27",
+  "headline": "First Significant Montana Earthquake Recorded, 1925",
+  "year": 1925,
+  "body": "On June 27, 1925, Montana experienced its first significant recorded earthquake, an event that caused considerable damage within an area of over 600 square miles. The earthquake was centered near Three Forks, a region known for its geological activity. This seismic event, though not as catastrophic as some later quakes, marked a notable moment in the state's natural history, bringing attention to Montana's susceptibility to seismic activity. The tremors were felt across a wide area, leading to structural damage in buildings and highlighting the need for better understanding and preparedness for such natural phenomena. The 1925 earthquake served as a precursor to more powerful seismic events in the region, such as the 1959 Hebgen Lake earthquake. This event underscored the dynamic geological forces at play in Montana, a state characterized by its dramatic landscapes shaped by millions of years of tectonic activity. The recording of this earthquake initiated a more systematic study of seismology in the state, contributing to a broader scientific understanding of the intermountain seismic belt.",
+  "category": "natural_disaster",
+  "location": "Three Forks, Gallatin County",
+  "latitude": 45.9,
+  "longitude": -111.55,
+  "tags": [
+    "earthquake",
+    "natural disaster",
+    "Three Forks",
+    "seismology",
+    "geology"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.usgs.gov/publications/montana-earthquake-june-27-1925",
+    "https://www.facebook.com/MontanaTheMagazineofWesternHistory/photos/on-june-27-1925-the-first-significant-earthquake-in-the-states-recorded-history-/995809745878154/",
+    "https://pubs.usgs.gov/pp/0147b/report.pdf"
+  ],
+  "related_article": null
+}

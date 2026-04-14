@@ -1,0 +1,27 @@
+{
+  "id": "0916",
+  "month": 9,
+  "day": 16,
+  "date_display": "September 16",
+  "headline": "Homestead Act of 1862 Signed, Paving Way for Montana Settlement",
+  "year": 1862,
+  "body": "While not a Montana-specific event on this day, the signing of the Homestead Act of 1862 by President Abraham Lincoln was a pivotal moment in American history that profoundly shaped the settlement of Montana. The act, which allowed settlers to claim 160 acres of public land for a small filing fee and a commitment to live on and cultivate the land for five years, was a powerful incentive for westward migration. The Homestead Act opened up vast areas of Montana to settlement, attracting a diverse wave of homesteaders seeking new opportunities. This influx of settlers transformed the demographic and agricultural landscape of the state, leading to the establishment of new towns, farms, and ranches. The legacy of the Homestead Act is deeply embedded in Montana's history and identity, reflecting the state's origins as a land of opportunity for those willing to work the land.",
+  "category": "statehood",
+  "location": "Montana",
+  "latitude": 47.0,
+  "longitude": -110.0,
+  "tags": [
+    "Homestead Act",
+    "settlement",
+    "westward expansion",
+    "agriculture",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.archives.gov/milestone-documents/homestead-act",
+    "https://www.nps.gov/home/learn/historyculture/abouthomesteadactof1862.htm",
+    "https://www.britannica.com/event/Homestead-Act"
+  ],
+  "related_article": null
+}

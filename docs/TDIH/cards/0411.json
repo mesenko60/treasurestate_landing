@@ -1,0 +1,26 @@
+{
+  "id": "0411",
+  "month": 4,
+  "day": 11,
+  "date_display": "April 11",
+  "headline": "Deadly Tornado Strikes Baker, 1962",
+  "year": 1962,
+  "body": "On April 11, 1962, the town of Baker, Montana, experienced one of the state's most severe natural disasters when a tornado touched down, resulting in two fatalities and numerous injuries. The powerful storm caused extensive damage to homes and infrastructure, leaving a lasting impact on the community. This event serves as a somber reminder of the destructive force of nature and the vulnerability of communities to extreme weather phenomena. The tornado in Baker highlighted the importance of disaster preparedness and response in rural areas of Montana. The resilience of the residents in the aftermath of the storm became a testament to the strong community spirit prevalent in the state.",
+  "category": "natural_disaster",
+  "location": "Baker, Fallon County",
+  "latitude": 46.3669,
+  "longitude": -104.2847,
+  "tags": [
+    "Tornado",
+    "Baker",
+    "Natural Disaster",
+    "Fallon County",
+    "Weather"
+  ],
+  "expandable": true,
+  "sources": [
+    "tfdsupplies.com",
+    "ncei.noaa.gov"
+  ],
+  "related_article": null
+}

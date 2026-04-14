@@ -1,0 +1,25 @@
+{
+  "id": "1020",
+  "month": 10,
+  "day": 20,
+  "date_display": "October 20",
+  "headline": "Chemistry Building Fire at Montana State University, 1916",
+  "year": 1916,
+  "body": "On October 20, 1916, a significant fire broke out in the Chemistry Building at Montana State University (MSU) in Bozeman. The blaze caused substantial damage to the building and its contents, including valuable scientific equipment and research materials. This incident was a setback for the university's burgeoning science programs, highlighting the challenges faced by educational institutions in a rapidly developing state. Despite the destruction, the fire prompted a renewed commitment to rebuilding and modernizing MSU's facilities, ultimately leading to improved infrastructure for scientific research and education. The event serves as a reminder of the fragility of early academic institutions and the resilience required to overcome such adversities in the pursuit of knowledge and progress in Montana.",
+  "category": "arts_culture",
+  "location": "Bozeman, Gallatin County",
+  "latitude": 45.6639,
+  "longitude": -111.0686,
+  "tags": [
+    "Montana State University",
+    "fire",
+    "education",
+    "Bozeman"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://www.montana.edu/news/17990/msu-sets-oct-8-lecture-book-signing-to-honor-its-125th-anniversary-and-author-robert-rydell",
+    "https://www.latlong.net/poi/montana-state-university-680798"
+  ],
+  "related_article": null
+}

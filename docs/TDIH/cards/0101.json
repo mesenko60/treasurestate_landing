@@ -1,0 +1,25 @@
+{
+  "id": "0101",
+  "month": 1,
+  "day": 1,
+  "date_display": "January 1",
+  "headline": "Judy Martz Sworn In as Montana's First Female Governor, 2001",
+  "year": 2001,
+  "body": "On January 1, 2001, Judy Martz made history by being sworn in as the 22nd Governor of Montana, becoming the first woman to hold the state's highest office. Born in Big Timber, Montana, Martz had a distinguished career prior to her governorship, including representing the United States as an Olympic speed skater. Her political journey began as Lieutenant Governor, serving under Governor Marc Racicot. Her election as governor marked a significant milestone for women in Montana politics. During her single term, Governor Martz focused on issues such as economic development, education, and natural resource management. Her administration faced various challenges, including budget shortfalls and debates over environmental policy. Martz's tenure concluded on January 1, 2005, but her legacy as a trailblazer in Montana's political landscape remains. Her inauguration on New Year's Day symbolized a new era for the state.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0271,
+  "tags": [
+    "politics",
+    "governor",
+    "women's history",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Judy_Martz",
+    "https://formergovernors.mt.gov/martz/bios/martzbio.asp"
+  ],
+  "related_article": null
+}

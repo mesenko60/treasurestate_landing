@@ -1,0 +1,24 @@
+{
+  "id": "0310",
+  "month": 3,
+  "day": 10,
+  "date_display": "March 10",
+  "headline": "The Hanging of Jack Slade, Virginia City, 1864",
+  "year": 1864,
+  "body": "On March 10, 1864, Joseph A. \"Jack\" Slade, a notorious gunslinger and stagecoach division superintendent, was hanged by the Montana Vigilantes in Virginia City. Slade had a reputation for both effective management and a violent temper, which often led to drunken rampages and acts of brutality. Despite his contributions to the Overland Stage Company, his increasingly erratic and dangerous behavior became intolerable to the community. His execution by the Vigilantes, a group formed to combat lawlessness in the Montana Territory, marked a significant event in the region's struggle to establish order. The hanging of Jack Slade is a stark example of frontier justice and the complex legacy of the Montana Vigilantes, who used extralegal means to impose their version of law and order.",
+  "category": "crime_outlaws",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2908,
+  "longitude": -111.9431,
+  "tags": [
+    "Jack Slade",
+    "Montana Vigilantes",
+    "Frontier Justice"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.legendsofamerica.com/we-jackslade/",
+    "https://www.historynet.com/joseph-alfred-jack-slade-lawman-and-outlaw/"
+  ],
+  "related_article": null
+}

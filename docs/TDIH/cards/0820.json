@@ -1,0 +1,24 @@
+{
+  "id": "0820",
+  "month": 8,
+  "day": 20,
+  "date_display": "August 20",
+  "headline": "Great Fire of 1910 begins, 1910",
+  "year": 1910,
+  "body": "On August 20, 1910, hurricane-force winds whipped numerous smaller fires into a massive inferno known as the Great Fire of 1910, or the Big Blowup. This catastrophic event devastated vast areas of western Montana, northern Idaho, and eastern Washington, burning approximately three million acres of timberland in just two days. The fire claimed the lives of at least 85 people, mostly firefighters who were overwhelmed by the rapidly advancing flames. Entire towns were destroyed or threatened, and the smoke darkened skies as far away as New England. The Great Fire of 1910 had a profound and lasting impact on national forest management policies. It galvanized public support for the newly formed U.S. Forest Service and led to a policy of total fire suppression, which dominated wildland firefighting for decades. The event remains one of the largest and most destructive wildfires in U.S. history, serving as a stark reminder of the power of nature and the challenges of managing vast forested landscapes.",
+  "category": "natural_disaster",
+  "location": "Western Montana and Northern Idaho",
+  "latitude": 47.0,
+  "longitude": -115.0,
+  "tags": [
+    "wildfire",
+    "natural disaster",
+    "us forest service",
+    "environment"
+  ],
+  "expandable": true,
+  "sources": [
+    "10tv.com"
+  ],
+  "related_article": null
+}

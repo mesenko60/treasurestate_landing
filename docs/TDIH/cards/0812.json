@@ -1,0 +1,24 @@
+{
+  "id": "0812",
+  "month": 8,
+  "day": 12,
+  "date_display": "August 12",
+  "headline": "Lewis and Clark cross Continental Divide at Lemhi Pass, 1805",
+  "year": 1805,
+  "body": "On August 12, 1805, Meriwether Lewis and three other members of the Lewis and Clark Expedition achieved a monumental feat by crossing the Continental Divide of the Americas at Lemhi Pass, located on the present-day border of Montana and Idaho. This crossing marked their entry into territory claimed by various nations and Native American tribes, and it was a crucial step in their quest to find a navigable water route to the Pacific Ocean. Upon reaching the pass, Lewis famously tasted the waters flowing westward, confirming they were on the Pacific side of the continent. This moment was filled with both triumph and trepidation, as they soon encountered the Shoshone people, whose horses and guidance were essential for continuing their journey through the rugged Rocky Mountains. The crossing of Lemhi Pass symbolized the expedition\"\"\"\"s relentless pursuit of geographical knowledge and its encounter with the diverse landscapes and indigenous cultures of the American West.",
+  "category": "exploration",
+  "location": "Lemhi Pass, Beaverhead County",
+  "latitude": 44.9727,
+  "longitude": -113.4489,
+  "tags": [
+    "lewis and clark",
+    "exploration",
+    "continental divide",
+    "sacagawea"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia"
+  ],
+  "related_article": null
+}

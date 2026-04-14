@@ -1,0 +1,24 @@
+{
+  "id": "0716",
+  "month": 7,
+  "day": 16,
+  "date_display": "July 16",
+  "headline": "Hellgate Treaty Signed, 1855",
+  "year": 1855,
+  "body": "On July 16, 1855, the Hellgate Treaty was signed near present-day Missoula, Montana, between the United States government, represented by Governor Isaac Stevens, and the Flathead, Kootenai, and Pend d'Oreille tribes. This treaty established the Flathead Indian Reservation and ceded vast ancestral lands to the United States. While intended to bring peace and define boundaries, the treaty's terms and subsequent interpretations led to significant displacement and hardship for the tribes. The signing of the Hellgate Treaty is a pivotal event in Montana's history, marking a critical moment in the relationship between Native American nations and the expanding American frontier.",
+  "category": "native_history",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8721,
+  "longitude": -113.994,
+  "tags": [
+    "native_history",
+    "treaty",
+    "land cession"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hellgate_Treaty",
+    "https://www.washingtonhistory.org/wp-content/uploads/2020/04/hellgateTreaty.pdf"
+  ],
+  "related_article": null
+}

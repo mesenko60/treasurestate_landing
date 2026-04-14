@@ -1,0 +1,28 @@
+{
+  "id": "0617",
+  "month": 6,
+  "day": 17,
+  "date_display": "June 17",
+  "headline": "Battle of the Rosebud Fought, 1876",
+  "year": 1876,
+  "body": "On June 17, 1876, the Battle of the Rosebud, also known as the Battle Where the Girl Saved Her Brother, took place in southeastern Montana Territory. This significant engagement pitted Lakota and Northern Cheyenne warriors, led by figures such as Crazy Horse, against Brigadier General George Crook's U.S. Army forces, which included elements of the 2nd and 3rd Cavalry, along with Crow and Shoshone scouts. The battle, fought along the Rosebud Creek, was a tactical victory for the Native American forces, who successfully repelled Crook's advance. This prevented Crook from linking up with General Alfred Terry and Lieutenant Colonel George Custer, a crucial factor that contributed to the U.S. Army's devastating defeat at the Battle of the Little Bighorn just eight days later. The Battle of the Rosebud demonstrated the formidable fighting prowess and strategic acumen of the Lakota and Cheyenne, serving as a critical prelude to one of the most famous conflicts of the Great Sioux War. It remains a powerful symbol of Native American resistance against encroaching American expansion.",
+  "category": "native_history",
+  "location": "Rosebud Creek, Big Horn County",
+  "latitude": 45.3,
+  "longitude": -107.2,
+  "tags": [
+    "Battle of the Rosebud",
+    "Great Sioux War",
+    "Native American history",
+    "Crazy Horse",
+    "Cheyenne",
+    "Lakota"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/this-day-in-history/june-17/indians-hammer-u-s-soldiers-at-the-battle-of-the-rosebud",
+    "https://sheridanmedia.com/news/198415/history-rosebud-battle-happened-on-june-17-1876/",
+    "https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm"
+  ],
+  "related_article": null
+}

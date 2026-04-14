@@ -38,6 +38,7 @@ const TRAVEL_GUIDES = [
   { href: '/guides/winter-driving-guide', title: 'Winter Driving Guide', desc: 'Year-round routes, seasonal closures, and essential winter driving tips.' },
   { href: '/guides/montana-railroad-history', title: 'Montana Railroad History', desc: 'Interactive map and 18 articles exploring Montana\u2019s railroad heritage — depots, disasters, and abandoned routes.' },
   { href: '/guides/history-trails', title: 'History Trails', desc: 'Curated driving routes connecting historic markers — Lewis & Clark, mining, battlefields, and railroads.' },
+  { href: '/this-day-in-history', title: 'This Day in Montana History', desc: 'A daily Montana history story for every calendar day, plus a full browse archive.' },
 ];
 
 export default function GuidesIndex({ guides, cultureGuides }: Props) {

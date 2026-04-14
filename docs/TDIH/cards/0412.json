@@ -1,0 +1,26 @@
+{
+  "id": "0412",
+  "month": 4,
+  "day": 12,
+  "date_display": "April 12",
+  "headline": "Helena Forest Reserve Created by President Roosevelt, 1906",
+  "year": 1906,
+  "body": "On April 12, 1906, President Theodore Roosevelt issued a proclamation establishing the Helena Forest Reserve. This act was a significant step in the conservation movement and a testament to Roosevelt's commitment to preserving America's natural heritage. The creation of the reserve aimed to protect the vast timber resources and watersheds in the Helena area, ensuring their sustainable management for future generations. This initiative reflected the growing understanding of the importance of scientific forestry and the need to safeguard public lands from overexploitation. For Montana, the establishment of the Helena Forest Reserve underscored the state's rich natural endowment and its role in the broader national conservation efforts. It laid the groundwork for modern forest management practices and contributed to the enduring legacy of public lands in the Big Sky Country.",
+  "category": "wildlife_nature",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Helena Forest Reserve",
+    "Theodore Roosevelt",
+    "Conservation",
+    "Forestry",
+    "Public Lands"
+  ],
+  "expandable": true,
+  "sources": [
+    "en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "mths.mt.gov"
+  ],
+  "related_article": null
+}

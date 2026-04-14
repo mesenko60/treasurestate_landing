@@ -1,0 +1,25 @@
+{
+  "id": "0116",
+  "month": 1,
+  "day": 16,
+  "date_display": "January 16",
+  "headline": "Beaverhead County Created by Idaho Territory, 1864",
+  "year": 1864,
+  "body": "On January 16, 1864, Beaverhead County was created by the Idaho Territory. This event predates Montana's official territorial status, as the Montana Territory itself would not be formed until May 26, 1864. The creation of Beaverhead County by the Idaho Territory highlights the fluid and often overlapping administrative boundaries in the American West during the mid-19th century. The county, named for the Beaverhead River, is located in southwestern Montana and played a significant role in the early gold rush era, particularly with the discovery of gold in Bannack, which became the first territorial capital. The establishment of this county was an early attempt to bring governmental structure and law to a rapidly growing and often lawless frontier region, laying some of the groundwork for the future state of Montana. Its early history is closely tied to mining, vigilantism, and the development of transportation routes.",
+  "category": "statehood",
+  "location": "Dillon, Beaverhead County",
+  "latitude": 45.2166,
+  "longitude": -112.6361,
+  "tags": [
+    "county formation",
+    "Idaho Territory",
+    "Montana Territory",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://publications.newberry.org/ahcb/documents/MT_Individual_County_Chronologies.htm",
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history"
+  ],
+  "related_article": null
+}

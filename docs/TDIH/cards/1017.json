@@ -1,0 +1,27 @@
+{
+  "id": "1017",
+  "month": 10,
+  "day": 17,
+  "date_display": "October 17",
+  "headline": "Daredevil Evel Knievel Born, 1938",
+  "year": 1938,
+  "body": "On October 17, 1938, Robert Craig 'Evel' Knievel, the legendary American daredevil and entertainer, was born in Butte, Montana. Knievel rose to international fame in the 1960s and 1970s for his spectacular, often dangerous, motorcycle jumps and stunts. His larger-than-life persona and fearless pursuit of extreme challenges captivated audiences worldwide, making him a cultural icon. Despite numerous crashes and serious injuries throughout his career, Knievel's determination and showmanship made him a symbol of American grit and audacity. His most famous stunts included attempts to jump the fountains at Caesars Palace in Las Vegas and the Snake River Canyon. Knievel's Montana roots remained a part of his identity, and his daring feats brought a unique form of celebrity to the state. He remains an enduring figure in the history of extreme sports and entertainment.",
+  "category": "sports",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "notable birth",
+    "sports",
+    "daredevil",
+    "Butte",
+    "entertainment"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Evel_Knievel",
+    "https://www.biography.com/athlete/evel-knievel",
+    "https://www.latlong.net/place/butte-mt-usa-12693.html"
+  ],
+  "related_article": null
+}

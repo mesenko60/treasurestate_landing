@@ -1,0 +1,26 @@
+{
+  "id": "1018",
+  "month": 10,
+  "day": 18,
+  "date_display": "October 18",
+  "headline": "Second Major Helena Earthquake Strikes, 1935",
+  "year": 1935,
+  "body": "On October 18, 1935, Helena, Montana, was rocked by another powerful earthquake, the strongest in a series of tremors that had begun earlier in the month. This quake, with a magnitude of 6.2, caused even more extensive damage than the initial shock on October 12th. Buildings already weakened by previous tremors collapsed, and new fissures appeared in the ground. The earthquake resulted in fatalities and numerous injuries, further exacerbating the crisis in the capital city. The ongoing seismic activity led to widespread fear and disruption, with many residents living in tents or temporary shelters. The events of October 18th underscored the severity of the 1935 Helena earthquake sequence, which ultimately reshaped the city's landscape and led to significant advancements in seismic building codes and disaster preparedness in the region.",
+  "category": "natural_disaster",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "earthquake",
+    "natural disaster",
+    "Helena",
+    "1935"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/1935_Helena_earthquake",
+    "https://www.greatfallstribune.com/story/life/my-montana/2014/07/06/earthquakes-shake-helena/12186097/",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

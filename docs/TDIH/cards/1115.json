@@ -1,0 +1,26 @@
+{
+  "id": "1115",
+  "month": 11,
+  "day": 15,
+  "date_display": "November 15",
+  "headline": "First Montana Constitutional Convention Convenes, 1884",
+  "year": 1884,
+  "body": "On November 15, 1884, the first Montana Constitutional Convention convened in Helena, marking a significant step towards statehood. Delegates from across the territory gathered to draft a constitution that would lay the groundwork for Montana's future government. This initial attempt at statehood, however, was ultimately unsuccessful, as the proposed constitution was not approved by the U.S. Congress. Despite this setback, the 1884 convention was a crucial learning experience, and it set the stage for the successful constitutional convention of 1889, which led to Montana's admission to the Union. This event reflects the determination and political aspirations of Montana's early residents, who were eager to achieve self-governance and take their place as a state in the nation.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Constitutional Convention",
+    "Statehood",
+    "Montana Territory",
+    "Helena",
+    "Politics"
+  ],
+  "expandable": true,
+  "sources": [
+    "Montana Historical Society",
+    "Wikipedia"
+  ],
+  "related_article": null
+}

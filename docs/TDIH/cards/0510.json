@@ -1,0 +1,26 @@
+{
+  "id": "0510",
+  "month": 5,
+  "day": 10,
+  "date_display": "May 10",
+  "headline": "Glacier National Park Established, 1910",
+  "year": 1910,
+  "body": "On May 10, 1910, President William Howard Taft signed the act of Congress establishing Glacier National Park in the Rocky Mountains of northwestern Montana. The legislation set aside more than one million acres along the Continental Divide and the international border with Canada, protecting a landscape of jagged peaks, ancient glaciers, and turquoise lakes that had been promoted relentlessly by the Great Northern Railway as the 'Switzerland of America.' The push for a national park in the region had been championed for years by George Bird Grinnell, the naturalist and editor who first explored the area in the 1880s and named the Grinnell Glacier in his honor. The Great Northern Railway, which had completed its main line through the southern edge of the region in 1891, understood that a national park would generate passenger traffic, and the railroad lobbied Congress and funded promotional campaigns featuring stunning photography of the peaks and lakes. When the park was established, the Great Northern immediately began constructing a series of Swiss-style chalets and lodges to accommodate visitors arriving on its trains. The park's 'Going-to-the-Sun Road,' completed in 1932, opened the interior to automobile tourists and became one of the most celebrated scenic drives in North America. Today Glacier National Park draws more than three million visitors annually.",
+  "category": "wildlife_nature",
+  "location": "Glacier National Park, Glacier County",
+  "latitude": 48.6962,
+  "longitude": -113.7185,
+  "tags": [
+    "Glacier National Park",
+    "1910",
+    "Taft",
+    "Great Northern Railway",
+    "conservation"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia: Glacier National Park",
+    "National Park Service"
+  ],
+  "related_article": "glacier-park-great-northern.md"
+}

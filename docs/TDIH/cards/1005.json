@@ -1,0 +1,26 @@
+{
+  "id": "1005",
+  "month": 10,
+  "day": 5,
+  "date_display": "October 5",
+  "headline": "Chief Joseph Surrenders at Bear Paw, 1877",
+  "year": 1877,
+  "body": "On October 5, 1877, after a grueling 1,170-mile flight and a five-day siege, Chief Joseph of the Nez Perce formally surrendered to U.S. General Nelson A. Miles at the Bear Paw Battlefield in Montana. Exhausted, freezing, and with his people suffering greatly, Chief Joseph delivered his iconic speech, famously declaring, \"From where the sun now stands, I will fight no more forever.\" This surrender marked the tragic end of the Nez Perce War, a desperate attempt by the non-treaty bands to escape to Canada and preserve their traditional way of life. The Nez Perce had demonstrated remarkable resilience and strategic brilliance throughout their flight, but ultimately succumbed to the overwhelming force of the U.S. Army. The event remains a poignant moment in Native American history, symbolizing both the struggle for sovereignty and the profound losses incurred during westward expansion.",
+  "category": "native_history",
+  "location": "Chinook, Blaine County",
+  "latitude": 48.3779,
+  "longitude": -109.2134,
+  "tags": [
+    "Nez Perce War",
+    "Chief Joseph",
+    "Native American history",
+    "military",
+    "surrender"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/nepe/planyourvisit/bear-paw-battlefield.htm",
+    "https://www.history.com/this-day-in-history/october-5/chief-joseph-surrenders"
+  ],
+  "related_article": null
+}

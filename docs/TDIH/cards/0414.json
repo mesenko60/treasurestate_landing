@@ -1,0 +1,26 @@
+{
+  "id": "0414",
+  "month": 4,
+  "day": 14,
+  "date_display": "April 14",
+  "headline": "First Hauser Dam Completed on Missouri River, 1908",
+  "year": 1908,
+  "body": "On April 14, 1908, the first Hauser Dam on the Missouri River, located just south of Helena, Montana, was completed. This hydroelectric dam was a monumental engineering feat for its time, marking a significant advancement in Montana's infrastructure and industrial development. The dam harnessed the power of the Missouri River to generate electricity, providing a crucial energy source for the growing mining operations and communities in the region. Its construction represented a major investment in the state's future, transforming the landscape and contributing to the economic prosperity of Montana. The Hauser Dam played a vital role in the electrification of the state and remains an important part of Montana's energy infrastructure, symbolizing the ingenuity and ambition of early 20th-century development.",
+  "category": "infrastructure",
+  "location": "Hauser Dam, Lewis and Clark County",
+  "latitude": 46.7662,
+  "longitude": -111.8888,
+  "tags": [
+    "Hauser Dam",
+    "Missouri River",
+    "Hydroelectric",
+    "Infrastructure",
+    "Helena"
+  ],
+  "expandable": true,
+  "sources": [
+    "thisweekinmontanahistory.blogspot.com",
+    "en.wikipedia.org/wiki/Hauser_Dam"
+  ],
+  "related_article": null
+}

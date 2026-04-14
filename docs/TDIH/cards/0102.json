@@ -1,0 +1,25 @@
+{
+  "id": "0102",
+  "month": 1,
+  "day": 2,
+  "date_display": "January 2",
+  "headline": "Donald Grant Nutter Sworn In as 15th Governor of Montana, 1961",
+  "year": 1961,
+  "body": "On January 2, 1961, Donald Grant Nutter was sworn in as the 15th Governor of Montana. A decorated World War II veteran, Nutter served as a B-24 bomber pilot, earning the Distinguished Flying Cross. Before his governorship, he was active in the Montana Senate and chaired the state Republican Party. His term as governor, though tragically cut short, focused on reducing state spending and promoting industrial development. Nutter's life ended prematurely on January 25, 1962, when the plane he was traveling in crashed during a blizzard in Wolf Creek Canyon, north of Helena. His death, along with several others, was a significant loss for the state. Nutter is remembered for his dedication to public service and his efforts to streamline state government.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0271,
+  "tags": [
+    "politics",
+    "governor",
+    "Montana history",
+    "aviation accident"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Donald_G._Nutter",
+    "https://www.nga.org/governor/donald-grant-nutter/"
+  ],
+  "related_article": null
+}

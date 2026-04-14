@@ -11,6 +11,7 @@ export default function Footer() {
         <Link href="/guides/summer-road-trips/" style={{ color: '#ddd', textDecoration: 'none' }}>Summer Road Trips</Link>
         <Link href="/guides/winter-driving-guide/" style={{ color: '#ddd', textDecoration: 'none' }}>Winter Driving Guide</Link>
         <Link href="/explore-montana/" style={{ color: '#ddd', textDecoration: 'none' }}>Explore Montana</Link>
+        <Link href="/this-day-in-history/" style={{ color: '#ddd', textDecoration: 'none' }}>This Day in History</Link>
       </nav>
       <div style={{ marginBottom: '1rem' }}>
         <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#f5c97a', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>

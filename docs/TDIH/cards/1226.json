@@ -1,0 +1,26 @@
+{
+  "id": "1226",
+  "month": 12,
+  "day": 26,
+  "date_display": "December 26",
+  "headline": "Missoula Welcomes Montana Educators, 1912",
+  "year": 1912,
+  "body": "On December 26, 1912, Missoula, Montana, played host to educators from across the state, as reported by The Daily Missoulian. The newspaper highlighted the event with the headline, \"Missoula Welcomes Educators of Montana Today.\" This gathering likely involved discussions on educational policies, curriculum development, and the challenges facing schools in a rapidly developing state. Such conventions were crucial for fostering professional development and collaboration among teachers and administrators, especially in a vast and geographically diverse state like Montana. The event underscores the early commitment to education in Montana and the efforts to build a robust educational system to serve its growing population. It also reflects Missoula\"s role as a significant cultural and intellectual center in the state during the early 20th century.",
+  "category": "arts_culture",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8729,
+  "longitude": -114.005,
+  "tags": [
+    "education",
+    "Missoula",
+    "Montana history",
+    "conference",
+    "early 20th century"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://www.loc.gov/resource/sn83025316/1912-12-26/ed-1/?st=text",
+    "https://www.latlong.net/place/missoula-mt-usa-33926.html"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0914",
+  "month": 9,
+  "day": 14,
+  "date_display": "September 14",
+  "headline": "President Taft Visits Montana, 1909",
+  "year": 1909,
+  "body": "On September 14, 1909, President William Howard Taft arrived in Montana as part of a cross-country tour, making several stops across the state. His visit was a significant event for Montanans, who turned out in large numbers to welcome the president. Taft's tour was intended to promote his administration's policies and to connect with citizens across the nation. In Montana, he addressed crowds in cities like Butte and Helena, speaking on topics of national and local importance. Presidential visits were rare and momentous occasions for the relatively young state, and Taft's tour provided an opportunity for Montanans to engage with the nation's leader and to feel a stronger connection to the federal government. The visit was a notable event in Montana's political history, reflecting the state's growing importance in the national landscape.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "President William Howard Taft",
+    "presidential visit",
+    "Helena",
+    "Butte",
+    "political history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.presidency.ucsb.edu/documents/address-helena-montana",
+    "https://www.whitehousehistory.org/collections/president-tafts-travels",
+    "https://www.latlong.net/place/helena-mt-usa-4652.html"
+  ],
+  "related_article": null
+}

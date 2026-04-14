@@ -1,0 +1,24 @@
+{
+  "id": "0118",
+  "month": 1,
+  "day": 18,
+  "date_display": "January 18",
+  "headline": "Bill Bunton Hanged by Montana Vigilantes, 1864",
+  "year": 1864,
+  "body": "On January 18, 1864, Bill Bunton was hanged by the Montana Vigilantes at his Cottonwood Ranch on the Ruby River. Bunton was another individual targeted by the vigilante committee, which was actively working to suppress the rampant crime and lawlessness in the Montana Territory during the gold rush era. The vigilantes, a self-appointed group of citizens, had been formed to bring order to a region where formal law enforcement was largely absent or ineffective. Bunton's execution was part of a series of swift and often brutal actions taken by the vigilantes against suspected road agents and outlaws. These actions, though controversial, were seen by many settlers as necessary to establish a semblance of justice and security in the burgeoning mining communities. The hanging of Bill Bunton further underscored the vigilantes' determination to rid the territory of those they deemed criminals, contributing to the shaping of early Montana's frontier justice system.",
+  "category": "crime_outlaws",
+  "location": "Ruby River, Madison County",
+  "latitude": 45.3,
+  "longitude": -112.1,
+  "tags": [
+    "Montana Vigilantes",
+    "outlaws",
+    "frontier justice",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montana_Vigilantes"
+  ],
+  "related_article": null
+}

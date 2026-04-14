@@ -1,0 +1,26 @@
+{
+  "id": "1213",
+  "month": 12,
+  "day": 13,
+  "date_display": "December 13",
+  "headline": "Magnitude 5.4 Earthquake Rocks Montana, 1926",
+  "year": 1926,
+  "body": "On December 13, 1926, a significant earthquake with a magnitude of 5.4 struck Montana, with its epicenter approximately 30 miles north of Bozeman. The event was widely reported, including by The Helena Independent, which carried a front-page headline about the \"Distinct Earthquake Rocks Much of State.\" While the immediate reports indicated no major damage, the tremor was felt across a wide area of the state, serving as a reminder of Montana\"s seismic activity. Montana is situated in an active seismic zone, and earthquakes have played a role in shaping its geological landscape and influencing its communities. This particular event, though not as destructive as some others in Montana\"s history, highlights the ongoing natural forces at play in the region and the resilience of its inhabitants in the face of such occurrences.",
+  "category": "natural_disaster",
+  "location": "Bozeman, Gallatin County",
+  "latitude": 45.6769,
+  "longitude": -111.0429,
+  "tags": [
+    "earthquake",
+    "natural disaster",
+    "seismic activity",
+    "Bozeman",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.bozemandailychronicle.com/news/rumbles-in-the-rockies-montana-s-seismic-record-begins-with-mysterious-1868-quake/article_4bd69289-49d7-5841-826a-3a75cae76538.html",
+    "https://www.volcanoesandearthquakes.com/app/earthquakemap/earthquakeMap.php?quakeId=2930755&mode=showAftershocks"
+  ],
+  "related_article": null
+}

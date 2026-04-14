@@ -1,0 +1,27 @@
+{
+  "id": "1112",
+  "month": 11,
+  "day": 12,
+  "date_display": "November 12",
+  "headline": "Copper King Marcus Daly Dies, 1900",
+  "year": 1900,
+  "body": "On November 12, 1900, Marcus Daly, one of Montana's famed \"Copper Kings,\" passed away, leaving behind a complex and enduring legacy. An Irish immigrant who rose from humble beginnings, Daly became a dominant force in the copper mining industry, founding the Anaconda Copper Mining Company and transforming Butte into a global industrial center. His rivalry with fellow Copper King William A. Clark shaped Montana's political and economic landscape for decades. Daly's influence extended beyond mining; he was instrumental in the development of the city of Anaconda and played a key role in the selection of Helena as the state capital. While his business practices were often controversial, Daly's impact on Montana's development is undeniable, and his story remains a central chapter in the state's industrial history.",
+  "category": "mining",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "Marcus Daly",
+    "Copper King",
+    "Anaconda Copper Mining Company",
+    "Butte",
+    "Mining"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "Montana Historical Society",
+    "PBS"
+  ],
+  "related_article": null
+}

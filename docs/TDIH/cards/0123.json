@@ -1,0 +1,26 @@
+{
+  "id": "0123",
+  "month": 1,
+  "day": 23,
+  "date_display": "January 23",
+  "headline": "Marias Massacre Claims Piegan Blackfeet Lives, 1870",
+  "year": 1870,
+  "body": "On January 23, 1870, a tragic event known as the Marias Massacre, also referred to as the Baker Massacre or Piegan Massacre, unfolded along the Marias River in northern Montana Territory. Under the command of Major Eugene M. Baker, U.S. Army troops attacked a peaceful camp of Piegan Blackfeet, led by Chief Heavy Runner. The attack, which occurred in the bitter cold of winter, resulted in the deaths of an estimated 173 Piegan people, primarily women, children, and elderly individuals. The soldiers had mistakenly targeted Heavy Runner's camp, believing it to be a hostile band responsible for recent depredations. This horrific incident sparked outrage across the nation and led to a congressional investigation. The Marias Massacre stands as one of the darkest chapters in Montana's history, highlighting the devastating consequences of military actions against Native American communities and the profound impact of frontier conflicts on indigenous populations. It remains a painful reminder of the injustices faced by Native Americans during the westward expansion.",
+  "category": "native_history",
+  "location": "Marias River, Pondera County",
+  "latitude": 48.3333,
+  "longitude": -112.25,
+  "tags": [
+    "Native American history",
+    "massacre",
+    "U.S. Army",
+    "frontier conflict"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Marias_Massacre",
+    "https://mhs.mt.gov/education/IEFA/IEFALessonPlans/Marias-Massacre",
+    "https://www.history.com/this-day-in-history/january-23/soldiers-massacre-the-wrong-camp-of-indians"
+  ],
+  "related_article": null
+}

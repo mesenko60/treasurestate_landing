@@ -1,0 +1,26 @@
+{
+  "id": "0227",
+  "month": 2,
+  "day": 27,
+  "date_display": "February 27",
+  "headline": "Smith Mine Explosion Kills 74 Miners, 1943",
+  "year": 1943,
+  "body": "On February 27, 1943, Montana experienced its deadliest coal mining disaster when an explosion ripped through Smith Mine No. 3 near Bearcreek, killing 74 miners. The tragedy, which occurred deep underground, was attributed to a buildup of methane gas, a constant hazard in coal mining operations. At 8 a.m. that Saturday, Emil Anderson and 76 other miners entered the mine, unaware of the impending catastrophe. Just over an hour later, at approximately 9:37 a.m., the mine exploded, sending shockwaves through the small community. Rescue efforts were immediate but grim, as the scale of the disaster became tragically clear. The Smith Mine explosion devastated the close-knit mining communities of Bearcreek and Washoe, leaving behind scores of widows and orphans. This event served as a stark and painful reminder of the inherent dangers faced by coal miners and spurred renewed calls for improved safety regulations in the industry. The Smith Mine disaster remains a somber chapter in Montana's industrial history, highlighting the human cost of resource extraction and the enduring legacy of those who toiled in the state's mines.",
+  "category": "labor",
+  "location": "Bearcreek, Carbon County",
+  "latitude": 45.1683,
+  "longitude": -109.3207,
+  "tags": [
+    "mining disaster",
+    "coal mining",
+    "Smith Mine",
+    "Bearcreek",
+    "industrial accident"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/this-is-montana/short-notes/stories/smith-mine-disaster.php",
+    "https://www.atoztheusa.com/montana/historical-timeline.html"
+  ],
+  "related_article": null
+}

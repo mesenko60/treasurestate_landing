@@ -1,0 +1,26 @@
+{
+  "id": "1231",
+  "month": 12,
+  "day": 31,
+  "date_display": "December 31",
+  "headline": "Power Failure Stops Clocks in Butte on New Year's Eve, 1938",
+  "year": 1938,
+  "body": "At 11:47 p.m. on New Year's Eve, December 31, 1938, a widespread power failure brought an unusual end to the year in Butte, Montana. The outage caused every clock in the city to stop, creating a memorable and somewhat eerie moment as residents prepared to usher in the new year. This event, while not catastrophic, highlights the reliance on infrastructure in urban centers and the impact that even temporary disruptions can have on daily life and communal celebrations. For a city deeply intertwined with the mining industry, a power failure could have significant implications, affecting operations and the lives of its workers. The incident became a local legend, a unique way for Butte to mark the transition from one year to the next, underscoring the unexpected ways in which historical moments are sometimes created by everyday occurrences.",
+  "category": "infrastructure",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "Butte",
+    "power outage",
+    "New Year's Eve",
+    "infrastructure",
+    "Montana history"
+  ],
+  "expandable": false,
+  "sources": [
+    "https://www.facebook.com/OldAmericanLife/posts/the-night-all-the-clocks-stoppednear-butte-montana-december-31-1938at-1147-pm-on/923425193913768/",
+    "https://www.latlong.net/place/butte-mt-usa-12693.html"
+  ],
+  "related_article": null
+}

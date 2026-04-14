@@ -1,0 +1,26 @@
+{
+  "id": "1215",
+  "month": 12,
+  "day": 15,
+  "date_display": "December 15",
+  "headline": "Montana's First Black Newspaper, 'The Colored Citizen,' Published, 1894",
+  "year": 1894,
+  "body": "On December 15, 1894, the final issue of 'The Colored Citizen,' Montana's first black newspaper, was published in Helena. Launched on September 3, 1894, the newspaper served as a vital voice for the African American community in Montana, primarily advocating for Helena's bid to become the permanent state capital. Its existence highlights the presence and active participation of African Americans in Montana's early political and social landscape. The paper provided a platform for community news, opinions, and political discourse, reflecting the aspirations and challenges faced by black residents during a period of significant growth and change in the state. Although short-lived, 'The Colored Citizen' represents a crucial chapter in Montana's journalistic and civil rights history, underscoring the efforts of its African American population to shape the state's future.",
+  "category": "arts_culture",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5927,
+  "longitude": -112.0361,
+  "tags": [
+    "African American history",
+    "newspaper",
+    "Helena",
+    "civil rights",
+    "journalism"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://mhs.mt.gov/Shpo/AfricanAmericans/History/Timeline",
+    "https://www.loc.gov/item/sn86075096/1961-12-15/ed-1/"
+  ],
+  "related_article": null
+}

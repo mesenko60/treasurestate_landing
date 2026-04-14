@@ -1,0 +1,26 @@
+{
+  "id": "0225",
+  "month": 2,
+  "day": 25,
+  "date_display": "February 25",
+  "headline": "President Cleveland Signs Enabling Act, 1889",
+  "year": 1889,
+  "body": "On February 25, 1889, President Grover Cleveland signed the Enabling Act into law, a crucial piece of legislation that authorized Montana, along with North Dakota, South Dakota, and Washington, to begin the process of forming state governments and drafting constitutions. This act was a direct precursor to Montana's official admission into the Union later that year. The passage of the Enabling Act was a response to the growing populations and economic development in these western territories, signaling the federal government's readiness to grant them full statehood. For Montana, this meant the opportunity to transition from a territorial government, which was largely controlled by federal appointees, to a self-governing state with its own elected officials and legislative powers. The act set forth the conditions and procedures for statehood, including provisions for public education and land grants. This event is a landmark in Montana's political history, representing the formal invitation to join the United States as an equal partner. It marked the beginning of the final phase of Montana's journey from a frontier territory to a sovereign state, empowering its citizens to shape their own destiny and contribute to the national fabric.",
+  "category": "statehood",
+  "location": "Washington D.C.",
+  "latitude": 38.8951,
+  "longitude": -77.0364,
+  "tags": [
+    "statehood",
+    "Grover Cleveland",
+    "Enabling Act",
+    "Montana Territory",
+    "federal legislation"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://mhs.mt.gov/education/Textbook/Chapter10/chapter10.pdf",
+    "https://www.ebsco.com/research-starters/history/montana-admitted-union"
+  ],
+  "related_article": null
+}

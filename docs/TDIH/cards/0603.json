@@ -1,0 +1,27 @@
+{
+  "id": "0603",
+  "month": 6,
+  "day": 3,
+  "date_display": "June 3",
+  "headline": "Lewis and Clark Reconnoiter Marias River, 1805",
+  "year": 1805,
+  "body": "On June 3, 1805, Captains Meriwether Lewis and William Clark, along with members of the Corps of Discovery, continued their crucial reconnaissance at the confluence of the Marias and Missouri Rivers. Having arrived the previous day, the expedition faced a pivotal decision: which of the two major waterways was the main stem of the Missouri River, leading to the Pacific? Lewis and Clark meticulously explored both forks, with Lewis venturing up the northern branch (which he named Marias River) and Clark investigating the southern. Their detailed observations of water color, current, and geological features were critical in determining the correct path. This day marked an intensive period of exploration and scientific inquiry, as the captains gathered vital intelligence to guide their westward journey. The decision made at this \"Decision Point\" was paramount to the success of the entire expedition, solidifying their understanding of the vast and complex river systems of the American West and contributing significantly to the early cartography of Montana.",
+  "category": "exploration",
+  "location": "Loma, Chouteau County",
+  "latitude": 47.8864,
+  "longitude": -110.6289,
+  "tags": [
+    "Lewis and Clark",
+    "Marias River",
+    "Missouri River",
+    "exploration",
+    "reconnaissance"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/3-jun-1805/",
+    "https://lewisandclarkjournals.unl.edu/item/lc.jrn.1805-06-03",
+    "https://www.umt.edu/this-is-montana/columns/stories/marias-river.php"
+  ],
+  "related_article": null
+}

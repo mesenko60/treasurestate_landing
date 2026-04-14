@@ -1,0 +1,28 @@
+{
+  "id": "0903",
+  "month": 9,
+  "day": 3,
+  "date_display": "September 3",
+  "headline": "Lewis and Clark Meet Salish at Ross's Hole, 1805",
+  "year": 1805,
+  "body": "On September 3, 1805, the Lewis and Clark Expedition, also known as the Corps of Discovery, entered the picturesque Bitterroot Valley in what is now Montana. Here, at a location known as Ross's Hole, near present-day Sula, they encountered the Salish people. This meeting was crucial for the expedition, as the Salish provided much-needed horses and guidance for crossing the formidable Bitterroot Mountains. The interaction marked a significant moment of cultural exchange and cooperation between the American explorers and the indigenous inhabitants of the region, facilitating the expedition's westward journey. Ross's Hole remains a historically important site, commemorating this pivotal encounter in the exploration of the American West.",
+  "category": "exploration",
+  "location": "Ross's Hole, Ravalli County",
+  "latitude": 45.8463,
+  "longitude": -113.9579,
+  "tags": [
+    "Lewis and Clark Expedition",
+    "Salish",
+    "Ross's Hole",
+    "Bitterroot Valley",
+    "exploration",
+    "Native American history"
+  ],
+  "expandable": true,
+  "sources": [
+    "http://bitterroottrail.com/history",
+    "https://www.nps.gov/places/ross-hole.htm",
+    "https://www.lewisandclark.travel/listing/ross-hole/"
+  ],
+  "related_article": null
+}

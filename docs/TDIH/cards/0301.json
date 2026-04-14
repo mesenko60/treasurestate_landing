@@ -1,0 +1,24 @@
+{
+  "id": "0301",
+  "month": 3,
+  "day": 1,
+  "date_display": "March 1",
+  "headline": "Yellowstone National Park Established, 1872",
+  "year": 1872,
+  "body": "On March 1, 1872, President Ulysses S. Grant signed the Yellowstone National Park Protection Act into law, creating the world's first national park. This landmark legislation preserved over two million acres of wilderness, primarily in Wyoming, but also extending into Montana and Idaho. The establishment of Yellowstone marked a pivotal moment in American conservation, setting a precedent for protecting natural wonders for public enjoyment and scientific study. The park is renowned for its unique geothermal features, including geysers like Old Faithful, hot springs, and a diverse ecosystem supporting abundant wildlife. Its creation was the culmination of efforts by explorers, artists, and scientists who advocated for the preservation of this extraordinary landscape, ensuring its protection from private development and exploitation.",
+  "category": "wildlife_nature",
+  "location": "Yellowstone National Park",
+  "latitude": 44.4298,
+  "longitude": -110.5847,
+  "tags": [
+    "National Park",
+    "Conservation",
+    "Yellowstone"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/yell/learn/historyculture/yellowstoneestablishment.htm",
+    "https://www.history.com/this-day-in-history/march-1/yellowstone-park-established"
+  ],
+  "related_article": null
+}

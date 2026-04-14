@@ -1,0 +1,24 @@
+{
+  "id": "0811",
+  "month": 8,
+  "day": 11,
+  "date_display": "August 11",
+  "headline": "Lewis and Clark Expedition reunites, 1806",
+  "year": 1806,
+  "body": "On August 11, 1806, the separate parties of the Lewis and Clark Expedition, led by Meriwether Lewis and William Clark respectively, successfully reunited at the confluence of the Yellowstone and Missouri Rivers in what is now eastern Montana. This reunion marked a critical moment in their return journey, as they had split earlier to explore different routes and gather more information about the vast Louisiana Purchase territory. Lewis\"\"\"\"s party had explored the Marias River, while Clark\"\"\"\"s group had navigated the Yellowstone River. Their successful rendezvous demonstrated their remarkable navigational skills and meticulous planning. The confluence of these two mighty rivers was a significant landmark, providing valuable geographical and ecological data. This event underscored the comprehensive nature of their mission, which aimed not only to find a water route to the Pacific but also to map, describe, and understand the newly acquired lands, laying the groundwork for future American expansion and settlement in the West.",
+  "category": "exploration",
+  "location": "Confluence of Yellowstone and Missouri Rivers, Richland County",
+  "latitude": 47.9822,
+  "longitude": -104.015,
+  "tags": [
+    "lewis and clark",
+    "exploration",
+    "yellowstone river",
+    "missouri river"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia"
+  ],
+  "related_article": null
+}

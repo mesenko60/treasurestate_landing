@@ -1,0 +1,27 @@
+{
+  "id": "0925",
+  "month": 9,
+  "day": 25,
+  "date_display": "September 25",
+  "headline": "First Telephone Exchange in Montana, 1881",
+  "year": 1881,
+  "body": "On September 25, 1881, the first telephone exchange in Montana was established in Butte. This marked a significant technological advancement for the state, revolutionizing communication and connecting its residents in a way that was previously unimaginable. The introduction of the telephone was a symbol of Montana's modernization and its growing integration into the national network of communication. The Butte exchange was quickly followed by others across the state, and the telephone became an indispensable tool for business, government, and personal communication. The establishment of the first telephone exchange was a milestone in the history of Montana's infrastructure, reflecting the state's embrace of new technologies and its commitment to progress.",
+  "category": "infrastructure",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "telephone",
+    "communication",
+    "infrastructure",
+    "Butte",
+    "technology"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.montana-tribune.com/2022/09/25/september-25th-in-montana-history/",
+    "https://www.newspapers.com/clip/109951308/the-butte-miner/",
+    "https://www.latlong.net/place/butte-mt-usa-12693.html"
+  ],
+  "related_article": null
+}

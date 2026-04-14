@@ -1,0 +1,25 @@
+{
+  "id": "0120",
+  "month": 1,
+  "day": 20,
+  "date_display": "January 20",
+  "headline": "Record Cold -70°F at Rogers Pass, 1954",
+  "year": 1954,
+  "body": "On January 20, 1954, Rogers Pass, Montana, recorded an astonishing temperature of -70°F (-57°C), setting the record for the coldest temperature ever observed in the contiguous United States. This extreme cold snap was part of a severe winter that gripped much of the northern Rocky Mountains. Rogers Pass, located in the Rocky Mountains of Lewis and Clark County, is known for its harsh winter conditions and heavy snowfall. The frigid temperature had a profound impact on the region, affecting transportation, agriculture, and daily life. Such extreme weather events underscore the challenging environment that early settlers and modern Montanans have faced. This record stands as a testament to Montana's reputation for its dramatic and often unforgiving climate, showcasing the raw power of nature in the Big Sky Country.",
+  "category": "weather",
+  "location": "Rogers Pass, Lewis and Clark County",
+  "latitude": 47.215,
+  "longitude": -112.4386,
+  "tags": [
+    "weather record",
+    "extreme cold",
+    "Rocky Mountains",
+    "Montana climate"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rogers_Pass_(Montana)",
+    "https://www.weather.gov/byz/extremes"
+  ],
+  "related_article": null
+}

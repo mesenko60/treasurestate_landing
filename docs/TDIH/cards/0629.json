@@ -1,0 +1,26 @@
+{
+  "id": "0629",
+  "month": 6,
+  "day": 29,
+  "date_display": "June 29",
+  "headline": "Lewis and Clark Re-enter Montana via Lolo Pass, 1806",
+  "year": 1806,
+  "body": "On June 29, 1806, the Lewis and Clark Expedition, on their return journey from the Pacific, re-entered what is now Montana via Lolo Pass. This marked a significant moment as the Corps of Discovery, having successfully reached the Pacific Ocean, began their final leg through the familiar, yet still challenging, landscapes of the Bitterroot Mountains. After splitting into two groups to explore different routes and gather more information, Captain Lewis and his detachment crossed Lolo Pass, a traditional travel route for Native American tribes, back into the territory. This return journey was crucial for further mapping, scientific observation, and establishing a more comprehensive understanding of the vast Louisiana Purchase. The re-entry into Montana underscored the expedition's remarkable perseverance and their commitment to thoroughly documenting the American West. Lolo Pass, a rugged and historically significant mountain pass, served as both a formidable barrier and a vital corridor for movement between the Rocky Mountains and the Pacific Northwest, playing a continuous role in the history of exploration and trade in the region.",
+  "category": "exploration",
+  "location": "Lolo Pass, Missoula County",
+  "latitude": 46.6366,
+  "longitude": -114.5801,
+  "tags": [
+    "Lewis and Clark",
+    "Lolo Pass",
+    "exploration",
+    "Bitterroot Mountains",
+    "return journey"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.mbmg.mtech.edu/Pubs/Lewis-Clark/main.asp",
+    "https://southwestmt.com/specialfeatures/this-is-montana/lewis-and-clark/lewis-and-clark-and-the-corps-of-discoverys-journey-through-southwest-montana/"
+  ],
+  "related_article": null
+}

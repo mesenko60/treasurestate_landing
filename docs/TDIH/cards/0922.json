@@ -1,0 +1,27 @@
+{
+  "id": "0922",
+  "month": 9,
+  "day": 22,
+  "date_display": "September 22",
+  "headline": "Lewis and Clark Expedition Re-enters Montana, 1806",
+  "year": 1806,
+  "body": "On September 22, 1806, the Lewis and Clark Expedition, on its return journey from the Pacific Ocean, re-entered what is now Montana. This marked the final leg of their epic journey through the state, a region that had been a major focus of their exploration. The expedition had spent more time in Montana than in any other state, and their detailed journals and maps provided the first comprehensive account of its geography, flora, fauna, and native inhabitants. The return journey through Montana was a significant moment, as it completed their traverse of the state and solidified their contributions to the understanding of the American West. The expedition's legacy in Montana is immense, with numerous landmarks and geographical features still bearing the names given to them by Lewis and Clark.",
+  "category": "exploration",
+  "location": "Montana",
+  "latitude": 47.0,
+  "longitude": -110.0,
+  "tags": [
+    "Lewis and Clark Expedition",
+    "exploration",
+    "return journey",
+    "Montana history",
+    "American West"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/lecl/planyourvisit/montana.htm",
+    "https://www.pbs.org/lewisandclark/archive/1806.html",
+    "https://www.history.com/topics/westward-expansion/lewis-and-clark"
+  ],
+  "related_article": null
+}

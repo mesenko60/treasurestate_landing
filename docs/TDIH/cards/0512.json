@@ -1,0 +1,26 @@
+{
+  "id": "0512",
+  "month": 5,
+  "day": 12,
+  "date_display": "May 12",
+  "headline": "Fort Benton Declared a National Historic Landmark, 1961",
+  "year": 1961,
+  "body": "On May 12, 1961, the U.S. Department of the Interior designated Fort Benton, Montana, as a National Historic Landmark, recognizing its singular role as the innermost port of the Missouri River and the commercial gateway to the northern frontier. Fort Benton had been established in 1846 by the American Fur Company as a trading post at the head of navigation on the Missouri, the point beyond which the river's shallow, rocky channel made steamboat travel impossible. For three decades, the town served as the primary supply depot for the Montana gold fields, the military posts of the northern plains, and the ranching empires of the high country. At its peak in the 1870s and early 1880s, dozens of steamboats arrived each spring loaded with goods, whiskey, and settlers, and departed loaded with furs, hides, and gold dust. The arrival of the Great Northern Railway in 1887 ended Fort Benton's era as a river port almost overnight, as rail freight was faster, cheaper, and available year-round. The town survived as an agricultural center for the surrounding wheat country, but its historic waterfront, including the ruins of the original adobe fort and the levee where steamboats once docked, remained largely intact. The National Historic Landmark designation helped preserve this remarkable streetscape, which today includes one of the best-preserved examples of a frontier river town in the American West.",
+  "category": "statehood",
+  "location": "Fort Benton, Chouteau County",
+  "latitude": 47.8186,
+  "longitude": -110.6674,
+  "tags": [
+    "Fort Benton",
+    "Missouri River",
+    "National Historic Landmark",
+    "steamboat",
+    "fur trade"
+  ],
+  "expandable": true,
+  "sources": [
+    "National Park Service",
+    "Montana Historical Society"
+  ],
+  "related_article": "end-of-steamboat-era.md"
+}

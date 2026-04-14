@@ -1,0 +1,27 @@
+{
+  "id": "0910",
+  "month": 9,
+  "day": 10,
+  "date_display": "September 10",
+  "headline": "Battle of Canyon Creek, 1877",
+  "year": 1877,
+  "body": "On September 10, 1877, the Battle of Canyon Creek was fought near present-day Laurel, Montana, as part of the Nez Perce War. Following their victory at the Battle of the Big Hole, the Nez Perce continued their arduous journey towards Canada, seeking refuge from the U.S. Army. At Canyon Creek, they were intercepted by Colonel Samuel D. Sturgis and the 7th U.S. Cavalry. The battle was a running fight, with the Nez Perce skillfully using the terrain to their advantage, holding off the cavalry while their women, children, and elderly escaped. Although the Nez Perce were able to continue their flight, the battle resulted in further losses of horses and supplies, weakening their position. The Battle of Canyon Creek is a significant event in the Nez Perce War, demonstrating the tribe's resilience and tactical prowess in the face of overwhelming odds.",
+  "category": "military",
+  "location": "Laurel, Yellowstone County",
+  "latitude": 45.668,
+  "longitude": -108.7718,
+  "tags": [
+    "Nez Perce War",
+    "Battle of Canyon Creek",
+    "Colonel Samuel D. Sturgis",
+    "Native American history",
+    "military history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Canyon_Creek",
+    "https://www.legendsofamerica.com/nez-perce-canyon-creek/",
+    "https://www.nps.gov/nepe/planyourvisit/canyon-creek.htm"
+  ],
+  "related_article": null
+}

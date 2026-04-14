@@ -1,0 +1,26 @@
+{
+  "id": "1120",
+  "month": 11,
+  "day": 20,
+  "date_display": "November 20",
+  "headline": "First Crow Indian Agency Established Near Livingston, 1869",
+  "year": 1869,
+  "body": "On November 20, 1869, the first Crow Indian Agency was established on Mission Creek, just east of present-day Livingston, Montana. This event marked a significant, albeit often complex, chapter in the relationship between the United States government and the Crow Nation. The establishment of agencies was part of a broader federal policy to manage and control Native American populations, often leading to the displacement of traditional ways of life and the imposition of new social and economic structures. For the Crow people, this agency became a focal point for interactions with federal agents, including the distribution of annuities, agricultural instruction, and attempts at cultural assimilation. While intended to facilitate peace and provide resources, these agencies often became sites of tension and hardship, reflecting the challenges inherent in the westward expansion and the changing landscape of Native American sovereignty in Montana.",
+  "category": "native_history",
+  "location": "Livingston, Park County",
+  "latitude": 45.6614,
+  "longitude": -110.5753,
+  "tags": [
+    "Crow Indian Agency",
+    "Native American History",
+    "Livingston",
+    "Mission Creek",
+    "U.S. Government Relations"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

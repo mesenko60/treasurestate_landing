@@ -1,0 +1,26 @@
+{
+  "id": "1103",
+  "month": 11,
+  "day": 3,
+  "date_display": "November 3",
+  "headline": "Montana Men Vote for Women's Suffrage, 1914",
+  "year": 1914,
+  "body": "On November 3, 1914, Montana made a significant stride towards gender equality when its male voters approved a constitutional amendment granting women the right to vote. This pivotal decision, passed with a 53 to 47 percent majority, made Montana one of the pioneering states in the nation to enact equal suffrage, preceding the 19th Amendment to the U.S. Constitution by six years. The victory was the culmination of decades of tireless advocacy by suffragists across the state, who organized, campaigned, and educated the public on the importance of women's participation in the democratic process. This historic vote not only empowered Montana women but also set a precedent for other states and contributed to the national movement for women's voting rights, marking a crucial moment in the state's social and political development.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5958,
+  "longitude": -112.027,
+  "tags": [
+    "Women's Suffrage",
+    "Montana Politics",
+    "Voting Rights",
+    "Helena",
+    "Equal Rights"
+  ],
+  "expandable": true,
+  "sources": [
+    "Montana Historical Society",
+    "Wikipedia"
+  ],
+  "related_article": null
+}

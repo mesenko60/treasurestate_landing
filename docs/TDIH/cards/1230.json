@@ -1,0 +1,26 @@
+{
+  "id": "1230",
+  "month": 12,
+  "day": 30,
+  "date_display": "December 30",
+  "headline": "Louisiana Purchase Officially Transfers Territory, 1803",
+  "year": 1803,
+  "body": "On December 30, 1803, the United States officially took possession of the vast Louisiana Territory from France, an acquisition that profoundly shaped the future of Montana. While the formal transfer occurred in New Orleans, this monumental event extended American sovereignty over a massive expanse of land, including much of present-day Montana east of the Continental Divide. The Louisiana Purchase, negotiated by President Thomas Jefferson, doubled the size of the young nation and paved the way for westward expansion, exploration, and eventual settlement of the region. This acquisition directly led to the Lewis and Clark Expedition, which traversed Montana, documenting its geography, flora, fauna, and Native American inhabitants. The event is fundamental to Montana's history, as it laid the legal and political groundwork for its eventual territorial status and statehood, transforming it from a foreign territory into a part of the United States.",
+  "category": "exploration",
+  "location": "Three Forks, Gallatin County",
+  "latitude": 45.8966,
+  "longitude": -111.5514,
+  "tags": [
+    "Louisiana Purchase",
+    "exploration",
+    "territorial expansion",
+    "Thomas Jefferson",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.atoztheusa.com/montana/historical-timeline.html",
+    "https://www.hmdb.org/m.asp?m=192732"
+  ],
+  "related_article": null
+}

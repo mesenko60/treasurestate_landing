@@ -1,0 +1,24 @@
+{
+  "id": "0801",
+  "month": 8,
+  "day": 1,
+  "date_display": "August 1",
+  "headline": "Frank Little lynched in Butte, 1917",
+  "year": 1917,
+  "body": "On August 1, 1917, Frank Little, a prominent organizer for the Industrial Workers of the World (IWW), was brutally lynched in Butte, Montana. Little had arrived in Butte to support a miners\"\"\"\" strike against the Anaconda Copper Mining Company, a period marked by intense labor unrest and anti-union sentiment. His outspoken advocacy for workers\"\"\"\" rights and opposition to World War I made him a target. On the night of July 31, a group of masked men abducted Little from his boarding house. He was tortured, tied to a car, and dragged for miles before being hanged from a railroad trestle on the outskirts of Butte. His death sent shockwaves through the labor movement and remains an unsolved crime, symbolizing the violent suppression of labor activism in early 20th-century Montana. The incident highlighted the deep divisions between labor and capital in the state and the extreme measures taken to quell dissent during wartime. Little\"\"\"\"s funeral was attended by thousands, turning into a massive protest against industrial oppression and injustice. His legacy continues to inspire labor activists and historians studying the struggles for workers\"\"\"\" rights in the American West.",
+  "category": "crime_outlaws",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5346,
+  "tags": [
+    "labor",
+    "iww",
+    "mining",
+    "crime"
+  ],
+  "expandable": true,
+  "sources": [
+    "Task Input"
+  ],
+  "related_article": null
+}

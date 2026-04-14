@@ -1,0 +1,25 @@
+{
+  "id": "0115",
+  "month": 1,
+  "day": 15,
+  "date_display": "January 15",
+  "headline": "Butte Dynamite Explosions Devastate City, 1895",
+  "year": 1895,
+  "body": "On January 15, 1895, a series of catastrophic dynamite explosions rocked Butte, Montana, causing widespread devastation and significant loss of life. The disaster began when a fire broke out in a warehouse district, igniting illegally stored dynamite. The ensuing blasts leveled several blocks of the city, destroying numerous buildings and claiming the lives of at least 57 people, including many firefighters who were battling the initial blaze. The explosions sent shockwaves through the community, leaving hundreds injured and many more homeless. Butte, a bustling mining town known as the \"Richest Hill on Earth,\" was a hub of industrial activity, and the storage of large quantities of explosives was a common but dangerous practice. This tragic event highlighted the inherent risks associated with the mining industry and led to increased safety regulations and urban planning efforts in the city. The Butte dynamite explosions remain one of the deadliest industrial accidents in Montana's history, a stark reminder of the perils faced by those who built the state's early economy.",
+  "category": "natural_disaster",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0067,
+  "longitude": -112.5358,
+  "tags": [
+    "mining",
+    "disaster",
+    "fire",
+    "Butte history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://co.silverbow.mt.us/731/Brief-History-of-the-Great-Disaster-of-1",
+    "http://buttehistory.blogspot.com/2013/01/the-january-15-1895-explosions.html"
+  ],
+  "related_article": null
+}

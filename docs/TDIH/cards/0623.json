@@ -1,0 +1,26 @@
+{
+  "id": "0623",
+  "month": 6,
+  "day": 23,
+  "date_display": "June 23",
+  "headline": "Northern Pacific Railroad Reaches Missoula, 1883",
+  "year": 1883,
+  "body": "On June 23, 1883, the Northern Pacific Railroad laid its first track in Missoula, Montana, marking a pivotal moment in the city's and the state's development. The arrival of the railroad was a transformative event, connecting the isolated frontier town to the broader national network and facilitating rapid growth and economic expansion. Prior to the railroad, transportation of goods and people was arduous and slow, relying on river travel and wagon trails. The Northern Pacific's presence dramatically reduced travel times and costs, opening up Missoula and the surrounding region to increased settlement, commerce, and industry. It enabled the efficient transport of timber, agricultural products, and minerals out of Montana, and brought in manufactured goods and new populations. This event solidified Missoula's position as a key transportation and commercial hub in western Montana, profoundly shaping its urban landscape and economic future. The railroad's expansion continued throughout the late 1880s, further integrating Montana into the national economy and accelerating its path towards statehood.",
+  "category": "railroad",
+  "location": "Missoula, Missoula County",
+  "latitude": 46.8729,
+  "longitude": -114.005,
+  "tags": [
+    "Northern Pacific Railroad",
+    "Missoula",
+    "railroad",
+    "infrastructure",
+    "economic development"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://fortmissoulamuseum.org/exhibit/early-missoula-history/",
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history"
+  ],
+  "related_article": null
+}

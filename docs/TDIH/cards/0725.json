@@ -1,0 +1,24 @@
+{
+  "id": "0725",
+  "month": 7,
+  "day": 25,
+  "date_display": "July 25",
+  "headline": "William Clark Carves Name on Pompey's Pillar, 1806",
+  "year": 1806,
+  "body": "On July 25, 1806, Captain William Clark of the Lewis and Clark Expedition carved his name and the date into Pompey's Pillar, a sandstone rock formation overlooking the Yellowstone River near present-day Billings, Montana. This inscription is the only remaining physical evidence of the expedition's journey on their return trip. Clark named the pillar after Sacagawea's son, Jean Baptiste Charbonneau, whom he nicknamed 'Pomp.' This act marked a significant moment in the exploration of the American West, serving as a tangible link to the Corps of Discovery's historic journey and their detailed documentation of the newly acquired Louisiana Purchase.",
+  "category": "exploration",
+  "location": "Pompey's Pillar, Yellowstone County",
+  "latitude": 45.9953,
+  "longitude": -108.0058,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Yellowstone River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/pompeys-pillar/lewis-and-clark-national-historic-trail",
+    "https://lewis-clark.org/day-by-day/25-jul-1806/"
+  ],
+  "related_article": null
+}

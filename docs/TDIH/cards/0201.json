@@ -1,0 +1,25 @@
+{
+  "id": "0201",
+  "month": 2,
+  "day": 1,
+  "date_display": "February 1",
+  "headline": "U.S. Forest Service Established, 1905",
+  "year": 1905,
+  "body": "On February 1, 1905, President Theodore Roosevelt unified all federal forest lands under the U.S. Department of Agriculture, officially establishing the United States Forest Service (USFS). This pivotal moment in conservation history brought a new era of scientific forest management to the nation, including vast tracts of land that would become Montana's national forests. Gifford Pinchot, the first chief of the USFS, famously articulated the agency's mission: 'to provide the greatest amount of good for the greatest amount of people in the long run.' This principle guided the expansion of forest reserves, which grew from 60 units covering 56 million acres in 1905 to 150 national forests spanning 172 million acres by 1910. While specific Montana national forests like the Elkhorn, Hell Gate, and Little Belt were formally established later in 1905, the creation of the USFS on this day laid the foundational framework for their protection and sustainable use. The establishment of the USFS ensured that Montana's rich timber resources, pristine wilderness, and vital watersheds would be managed for future generations, profoundly shaping the state's environmental and economic landscape.",
+  "category": "wildlife_nature",
+  "location": "Washington D.C.",
+  "latitude": 38.9072,
+  "longitude": -77.0369,
+  "tags": [
+    "conservation",
+    "forestry",
+    "federal government",
+    "Theodore Roosevelt"
+  ],
+  "expandable": true,
+  "sources": [
+    "http://www.nwcg.gov/6mfs/day-in-history/birthday-of-the-us-forest-service-february-1-1905",
+    "https://www.fs.usda.gov/sites/default/files/media/2015/06/The_USDA_Forest_Service_TheFirstCentury.pdf"
+  ],
+  "related_article": null
+}

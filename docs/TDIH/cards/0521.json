@@ -1,0 +1,26 @@
+{
+  "id": "0521",
+  "month": 5,
+  "day": 21,
+  "date_display": "May 21",
+  "headline": "The Northern Pacific Reaches Billings, 1882",
+  "year": 1882,
+  "body": "On May 21, 1882, the construction crews of the Northern Pacific Railroad reached the site that would become Billings, Montana, driving the railroad's main line into the broad Yellowstone River valley and establishing a division point that would grow into the largest city in the state. The Northern Pacific had been pushing west from Bismarck, Dakota Territory, at a furious pace, laying track across the northern plains with a workforce that numbered in the thousands. When the railroad's surveyors selected the townsite at the base of the Rimrocks, the land was still open range. Within weeks, a tent city had sprung up, and within months, permanent buildings were rising along the grid of streets that the railroad's land company had platted. The town was named for Frederick Billings, president of the Northern Pacific, who never visited the city that bore his name. The arrival of the railroad transformed the Yellowstone valley almost overnight. Cattle ranchers who had been driving their herds to distant markets could now ship directly from Billings. Settlers poured in from the East, drawn by the railroad's promotional literature promising fertile farmland and mild winters. By the end of 1882, Billings had a population of more than 2,000 people, a newspaper, several hotels, and the beginnings of the commercial infrastructure that would make it the commercial hub of eastern Montana for the next century.",
+  "category": "railroad",
+  "location": "Billings, Yellowstone County",
+  "latitude": 45.7833,
+  "longitude": -108.5007,
+  "tags": [
+    "Northern Pacific",
+    "Billings",
+    "1882",
+    "railroad",
+    "Yellowstone Valley"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia: Billings, Montana",
+    "Montana Historical Society"
+  ],
+  "related_article": "northern-pacific-birth-of-towns.md"
+}

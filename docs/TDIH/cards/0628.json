@@ -1,0 +1,26 @@
+{
+  "id": "0628",
+  "month": 6,
+  "day": 28,
+  "date_display": "June 28",
+  "headline": "Custer's Command Buried After Little Bighorn, 1876",
+  "year": 1876,
+  "body": "On June 28, 1876, two days after the devastating Battle of the Little Bighorn, Major Marcus Reno's command, along with General Alfred Terry and Colonel John Gibbon's Montana column, arrived at the battlefield to discover the grim aftermath. The immediate and somber task was to bury the fallen soldiers of Lieutenant Colonel George Armstrong Custer's command. The scene was one of profound tragedy, with the bodies of Custer and his men scattered across what would become known as Last Stand Hill. The burial detail worked under difficult conditions, often using shallow graves and marking them hastily. This day marked the beginning of the long process of accounting for the dead and understanding the full scope of the disaster. The discovery and burial of Custer's command sent shockwaves across the nation, fueling public outrage and intensifying the U.S. Army's campaign against the Lakota and Cheyenne. This event solidified the Battle of the Little Bighorn as a pivotal moment in the Indian Wars, deeply impacting both Native American tribes and the American military, and forever etching its memory into Montana's historical landscape.",
+  "category": "military",
+  "location": "Little Bighorn River, Big Horn County",
+  "latitude": 45.7357,
+  "longitude": -107.5575,
+  "tags": [
+    "Battle of the Little Bighorn",
+    "Custer's Last Stand",
+    "military history",
+    "Native American history",
+    "burial"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm",
+    "https://en.wikipedia.org/wiki/Battle_of_the_Little_Bighorn"
+  ],
+  "related_article": null
+}

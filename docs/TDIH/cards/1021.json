@@ -1,0 +1,27 @@
+{
+  "id": "1021",
+  "month": 10,
+  "day": 21,
+  "date_display": "October 21",
+  "headline": "Battle of Cedar Creek, 1876",
+  "year": 1876,
+  "body": "On October 21, 1876, the Battle of Cedar Creek took place in eastern Montana, a significant engagement during the Great Sioux War. This conflict involved elements of the U.S. Army, led by Colonel Nelson A. Miles, against a large force of Lakota Sioux and Cheyenne warriors. The battle was part of the broader military campaigns aimed at subduing Native American resistance following the Battle of Little Bighorn. While the engagement itself was inconclusive, it demonstrated the continued determination of the Lakota and Cheyenne to defend their lands and way of life. The Battle of Cedar Creek is notable for its strategic importance in the ongoing struggle between the U.S. military and the Plains tribes, contributing to the eventual containment of Native American populations on reservations. It remains a key event in the complex and often tragic history of the American West.",
+  "category": "native_history",
+  "location": "Cedar Creek, Fallon County",
+  "latitude": 46.5,
+  "longitude": -104.5,
+  "tags": [
+    "Native American history",
+    "Great Sioux War",
+    "military",
+    "Lakota Sioux",
+    "Cheyenne"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Cedar_Creek_(Montana)",
+    "https://www.nps.gov/articles/battle-of-cedar-creek.htm",
+    "https://www.latlong.net/place/cedar-creek-mt-usa-24081.html"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1202",
+  "month": 12,
+  "day": 2,
+  "date_display": "December 2",
+  "headline": "Montana Heritage Center Opens in Helena, 2025",
+  "year": 2025,
+  "body": "On December 2, 2025, the Montana Heritage Center held its grand opening in Helena, marking a significant milestone for the preservation and celebration of the state's rich history. After decades of planning and construction, the new facility opened its doors to the public, offering a modern and expansive space for the Montana Historical Society's vast collections. The center features state-of-the-art exhibition galleries, a research center, and educational facilities, providing an immersive experience for visitors to explore Montana's cultural and historical heritage. The opening ceremony was attended by state leaders, tribal representatives, and community members, all celebrating the culmination of a long-awaited project that will serve as a vital resource for generations to come.",
+  "category": "arts_culture",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5927,
+  "longitude": -112.0361,
+  "tags": [
+    "Montana Heritage Center",
+    "Helena",
+    "museum",
+    "history",
+    "grand opening"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.distinctlymontana.com/decade-making-montana-heritage-center-opens-december-2",
+    "https://news.mt.gov/Montana-Historical-Society/Montana-Heritage-Center-Opens-to-Public-After-20-Year-Journey"
+  ],
+  "related_article": null
+}

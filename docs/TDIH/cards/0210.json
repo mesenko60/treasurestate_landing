@@ -1,0 +1,26 @@
+{
+  "id": "0210",
+  "month": 2,
+  "day": 10,
+  "date_display": "February 10",
+  "headline": "First Livestock Brand Registered in Montana, 1873",
+  "year": 1873,
+  "body": "On February 10, 1873, a significant milestone in Montana's ranching history occurred when the first livestock brand was officially entered into the Montana Department of Livestock Brand Book. This inaugural registration, featuring a distinctive square and compass design, belonged to the Poindexter and Orr Ranch, a prominent operation in Beaverhead County. The formalization of brand registration was a crucial development for the burgeoning cattle industry in Montana. As ranching expanded across the vast open ranges, a reliable system for identifying ownership of livestock became essential to prevent theft and resolve disputes. Brands served as indelible marks of property, providing legal proof of ownership and facilitating the recovery of stray or stolen animals. This act of official registration underscored the growing importance of the livestock industry to Montana's economy and its transition from a wild frontier to a more organized agricultural landscape. The establishment of a centralized brand registry helped bring order and security to the cattle business, laying a foundation for the large-scale ranching operations that would come to define much of Montana's rural character and economic prosperity.",
+  "category": "agriculture",
+  "location": "Dillon, Beaverhead County",
+  "latitude": 45.2155,
+  "longitude": -112.6414,
+  "tags": [
+    "livestock",
+    "ranching",
+    "brands",
+    "agriculture",
+    "Beaverhead County"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.facebook.com/MontanaHistoricalSociety/photos/this-day-in-history-on-february-10-1873-the-first-brand-was-entered-in-the-monta/4022768911067011/",
+    "https://www.latlong.net/place/dillon-montana-seat-of-beaverhead-county-33906.html"
+  ],
+  "related_article": null
+}

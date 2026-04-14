@@ -1,0 +1,24 @@
+{
+  "id": "0703",
+  "month": 7,
+  "day": 3,
+  "date_display": "July 3",
+  "headline": "Lewis and Clark Expedition Splits, 1806",
+  "year": 1806,
+  "body": "On July 3, 1806, Captain Meriwether Lewis and Captain William Clark, leading the Corps of Discovery, divided their forces at Travelers' Rest near present-day Lolo, Montana. This strategic decision allowed them to explore more of the Louisiana Purchase territory and search for different routes back to the United States. Lewis headed north to explore the Marias River, while Clark and his contingent traveled south to the Yellowstone River. This split was a critical phase of their return journey, enabling a broader survey of the vast and uncharted American West. The event underscores the expedition's commitment to comprehensive exploration and mapping of the newly acquired lands.",
+  "category": "exploration",
+  "location": "Lolo, Missoula County",
+  "latitude": 46.7531,
+  "longitude": -114.0901,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Travelers' Rest"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/this-is-montana/columns/stories/bitterroot-river-2.php",
+    "https://www.gpsbasecamp.com/state-parks/Montana/Travelers%27_Rest_State_Park"
+  ],
+  "related_article": null
+}

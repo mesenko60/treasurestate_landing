@@ -1,0 +1,26 @@
+{
+  "id": "1109",
+  "month": 11,
+  "day": 9,
+  "date_display": "November 9",
+  "headline": "David Thompson Establishes Saleesh House, 1809",
+  "year": 1809,
+  "body": "On November 9, 1809, Canadian fur trader and explorer David Thompson established Saleesh House near present-day Thompson Falls, Montana. This was the first trading post in Montana west of the Continental Divide, marking a significant moment in the region's history. Saleesh House served as a vital hub for the fur trade, facilitating commerce between European traders and the Salish people. Thompson's presence and the establishment of this post not only opened up the area to the fur trade but also initiated a period of cultural exchange and interaction between different groups. The construction of Saleesh House represents a key event in the early exploration and economic development of western Montana.",
+  "category": "exploration",
+  "location": "Thompson Falls, Sanders County",
+  "latitude": 47.5966,
+  "longitude": -115.3435,
+  "tags": [
+    "David Thompson",
+    "Saleesh House",
+    "Fur Trade",
+    "Exploration",
+    "Thompson Falls"
+  ],
+  "expandable": true,
+  "sources": [
+    "Wikipedia",
+    "Montana Historical Society"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0403",
+  "month": 4,
+  "day": 3,
+  "date_display": "April 3",
+  "headline": "Unabomber Theodore Kaczynski Arrested in Lincoln, 1996",
+  "year": 1996,
+  "body": "On April 3, 1996, federal agents apprehended Theodore Kaczynski, infamously known as the Unabomber, at his secluded cabin near Lincoln, Montana. Kaczynski, a brilliant mathematician, had waged a 17-year bombing campaign targeting universities and airlines, resulting in three deaths and numerous injuries. His arrest in the remote wilderness of Montana brought an end to one of the longest and most expensive manhunts in FBI history. The primitive cabin, where he had lived for years without electricity or running water, became a symbol of his reclusive and anti-technology ideology. The capture of the Unabomber in Montana highlighted the state's vast and isolated landscapes, which can sometimes provide refuge for individuals seeking to escape modern society.",
+  "category": "crime_outlaws",
+  "location": "Lincoln, Lewis and Clark County",
+  "latitude": 46.9549,
+  "longitude": -112.682,
+  "tags": [
+    "Unabomber",
+    "Theodore Kaczynski",
+    "FBI",
+    "Lincoln",
+    "Crime"
+  ],
+  "expandable": true,
+  "sources": [
+    "news-gazette.com",
+    "apnews.com",
+    "history.com"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "0110",
+  "month": 1,
+  "day": 10,
+  "date_display": "January 10",
+  "headline": "Henry Plummer Hanged by Montana Vigilantes, 1864",
+  "year": 1864,
+  "body": "On January 10, 1864, Henry Plummer, a controversial figure who served as sheriff of Bannack, Montana Territory, was hanged by the Montana Vigilantes. Plummer, along with two associates, was arrested and summarily executed by the vigilante group, who accused him of being the leader of a notorious gang of road agents known as the \"Innocents.\" This gang was believed to be responsible for numerous robberies and murders in the gold mining regions of Montana. The vigilantes, a self-appointed committee of citizens, took justice into their own hands in an era when formal law enforcement was weak or nonexistent. Plummer's hanging, along with the executions of other alleged outlaws, marked a brutal but effective period of frontier justice that aimed to restore order and safety to the burgeoning mining communities. The events surrounding Henry Plummer remain a subject of historical debate, with some viewing him as a criminal mastermind and others as a victim of vigilante extremism.",
+  "category": "crime_outlaws",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1649,
+  "longitude": -112.9917,
+  "tags": [
+    "Montana Vigilantes",
+    "Henry Plummer",
+    "frontier justice",
+    "gold rush"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_Plummer",
+    "https://www.atoztheusa.com/montana/historical-timeline.html"
+  ],
+  "related_article": null
+}

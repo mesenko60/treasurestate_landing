@@ -1,0 +1,26 @@
+{
+  "id": "1217",
+  "month": 12,
+  "day": 17,
+  "date_display": "December 17",
+  "headline": "Lewis and Clark Receive Crucial Maps at Fort Mandan, 1804",
+  "year": 1804,
+  "body": "On December 17, 1804, during the coldest day of their winter encampment at Fort Mandan, Captains Meriwether Lewis and William Clark received vital maps of the Missouri River from Hugh Heney, a clerk with the North West Company. These maps, provided by Native American sources and traders, were instrumental in guiding the Corps of Discovery through the uncharted territories of what would become Montana. The information gathered from Heney and the Mandan and Hidatsa tribes proved invaluable for navigating the complex river systems and understanding the geography ahead. This exchange of knowledge at Fort Mandan underscores the critical role of indigenous peoples and early traders in the success of the Lewis and Clark Expedition, facilitating their journey through the vast and unknown American West. The winter at Fort Mandan was a period of crucial preparation and intelligence gathering that directly impacted the expedition's ability to explore and map the Montana region.",
+  "category": "exploration",
+  "location": "Fort Mandan, North Dakota",
+  "latitude": 47.2982,
+  "longitude": -101.0876,
+  "tags": [
+    "Lewis and Clark Expedition",
+    "Fort Mandan",
+    "exploration",
+    "Native American knowledge",
+    "Missouri River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/17-dec-1804/",
+    "https://www.lewisandclark.travel/listing/fort-mandan/"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "1227",
+  "month": 12,
+  "day": 27,
+  "date_display": "December 27",
+  "headline": "Record 1-Day Snowfall in Judith Basin County, 2003",
+  "year": 2003,
+  "body": "On December 27, 2003, Judith Basin County, Montana, experienced a record-breaking single-day snowfall of 35.0 inches. This extreme weather event highlights the severe winter conditions that can impact Montana, particularly in its mountainous and high-plains regions. Such heavy snowfalls can lead to significant disruptions, including road closures, power outages, and challenges for agriculture and livestock. The event serves as a reminder of the powerful and unpredictable forces of nature in the state, and the resilience required by its residents to navigate such conditions. Montana is known for its dramatic weather patterns, and this particular snowfall stands out as one of the most intense in its recorded history, contributing to the state's reputation for legendary winter weather.",
+  "category": "weather",
+  "location": "Judith Basin County",
+  "latitude": 47.04,
+  "longitude": -110.26,
+  "tags": [
+    "snowfall",
+    "extreme weather",
+    "Judith Basin County",
+    "winter",
+    "Montana weather"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.fairfieldsuntimes.com/news/state/record-snowfalls-in-montana-history/article_7f5fcdc7-b513-55dc-a82f-7942c667eba.html",
+    "https://en.wikipedia.org/wiki/Judith_Basin_County,_Montana"
+  ],
+  "related_article": null
+}

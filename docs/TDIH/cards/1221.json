@@ -1,0 +1,26 @@
+{
+  "id": "1221",
+  "month": 12,
+  "day": 21,
+  "date_display": "December 21",
+  "headline": "Northern Pacific Railroad Reaches Butte, 1881",
+  "year": 1881,
+  "body": "On December 21, 1881, the Northern Pacific Railroad reached Butte, Montana, marking a transformative moment for the burgeoning mining city and the entire state. The arrival of the railroad provided a crucial link for Butte, enabling the efficient transportation of copper ore to smelters and bringing in essential supplies and new populations. This connection to national markets fueled Butte\"s rapid growth, solidifying its status as the \"Richest Hill on Earth\" and a major industrial center. The railroad also played a pivotal role in the development of Montana\"s other industries, including agriculture and timber, by facilitating the movement of goods and people across the vast territory. The completion of this rail line underscored the critical importance of infrastructure in the development of the American West and cemented Butte\"s place as a powerhouse of the Gilded Age.",
+  "category": "railroad",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "Northern Pacific Railroad",
+    "Butte",
+    "mining",
+    "transportation",
+    "economic development"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://southwestmt.com/specialfeatures/this-is-montana/historical-notes/montanas-most-important-decade-occurred-in-southwest-montana/",
+    "https://www.latlong.net/place/butte-mt-usa-12693.html"
+  ],
+  "related_article": null
+}

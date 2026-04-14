@@ -1,0 +1,24 @@
+{
+  "id": "0817",
+  "month": 8,
+  "day": 17,
+  "date_display": "August 17",
+  "headline": "Hebgen Lake earthquake, 1959",
+  "year": 1959,
+  "body": "On August 17, 1959, a massive earthquake, measuring 7.3 on the Richter scale, struck near Hebgen Lake in southwestern Montana, just outside Yellowstone National Park. This powerful seismic event, also known as the Yellowstone earthquake, caused widespread devastation, including a massive landslide that dammed the Madison River, creating what is now known as Earthquake Lake. The earthquake resulted in 28 fatalities, primarily campers in the Rock Creek Campground who were buried by the landslide. It also caused significant damage to roads, bridges, and infrastructure in the region, altering the landscape dramatically. The Hebgen Lake earthquake remains the most powerful and destructive seismic event in Montana\"\"\"\"s recorded history, providing invaluable data for seismologists and geologists studying earthquake phenomena. The event led to increased awareness of seismic hazards in the Intermountain West and prompted significant improvements in building codes and emergency preparedness in the region.",
+  "category": "natural_disaster",
+  "location": "West Yellowstone, Gallatin County",
+  "latitude": 44.6688,
+  "longitude": -111.1044,
+  "tags": [
+    "earthquake",
+    "natural disaster",
+    "yellowstone",
+    "geology"
+  ],
+  "expandable": true,
+  "sources": [
+    "CusterGallatinNationalForest Facebook page"
+  ],
+  "related_article": null
+}

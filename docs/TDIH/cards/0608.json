@@ -1,0 +1,27 @@
+{
+  "id": "0608",
+  "month": 6,
+  "day": 8,
+  "date_display": "June 8",
+  "headline": "Granite Mountain-Speculator Mine Disaster, 1917",
+  "year": 1917,
+  "body": "On June 8, 1917, Butte, Montana, became the site of the worst hard-rock mining disaster in U.S. history when a fire erupted in the Granite Mountain and Speculator mines. The catastrophic blaze, which began shortly before midnight, claimed the lives of 168 miners. The fire was reportedly caused by an electric cable being lowered into the mine, igniting a wooden bulkhead. The rapid spread of the fire and toxic fumes trapped hundreds of miners deep underground. Rescue efforts were heroic but ultimately overwhelmed by the scale of the disaster. This tragedy sent shockwaves through Butte and the nation, highlighting the perilous conditions faced by miners and fueling calls for improved safety regulations in the industry. The Granite Mountain-Speculator Mine disaster remains a somber chapter in Montana's history, a stark reminder of the human cost of the state's rich mining heritage and the struggles of its labor force during a period of intense industrial activity and wartime demand for copper.",
+  "category": "labor",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0,
+  "longitude": -112.5333,
+  "tags": [
+    "mining disaster",
+    "Butte",
+    "labor history",
+    "Granite Mountain",
+    "Speculator Mine"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://mths.mt.gov/Research/Compass/Facts",
+    "https://www.facebook.com/MontanaTheMagazineofWesternHistory/posts/on-june-8-1917-butte-was-the-site-of-the-worst-hard-rock-mining-tragedy-in-us-hi/2915690611819312/",
+    "https://guides.lib.montana.edu/c.php?g=1474327&p=11075905"
+  ],
+  "related_article": null
+}

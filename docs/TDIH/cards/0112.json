@@ -1,0 +1,25 @@
+{
+  "id": "0112",
+  "month": 1,
+  "day": 12,
+  "date_display": "January 12",
+  "headline": "The Children's Blizzard Sweeps Across Montana, 1888",
+  "year": 1888,
+  "body": "On January 12, 1888, a devastating winter storm, later known as the \"Children's Blizzard,\" swept across the Great Plains, including eastern Montana. The blizzard struck with little warning, following a period of unseasonably mild weather. Temperatures plummeted rapidly, accompanied by hurricane-force winds and heavy snowfall, creating whiteout conditions. Many people, especially children who were caught unprepared on their way home from one-room schoolhouses, perished in the sudden and extreme cold. While the exact number of casualties in Montana is difficult to ascertain, the storm caused widespread death among livestock and isolated communities for days. This catastrophic event served as a harsh lesson for settlers and significantly impacted the development of the region, leading to improved weather forecasting and changes in agricultural practices. The Children's Blizzard remains one of the deadliest winter storms in American history, leaving an indelible mark on the collective memory of the northern plains.",
+  "category": "weather",
+  "location": "Eastern Montana",
+  "latitude": 47.0,
+  "longitude": -107.0,
+  "tags": [
+    "blizzard",
+    "natural disaster",
+    "Great Plains",
+    "settlement history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Schoolhouse_Blizzard",
+    "https://www.history.com/this-day-in-history/january-12/blizzard-brings-tragedy-to-northwest-plains"
+  ],
+  "related_article": null
+}

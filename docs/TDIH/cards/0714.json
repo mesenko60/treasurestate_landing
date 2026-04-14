@@ -1,0 +1,25 @@
+{
+  "id": "0714",
+  "month": 7,
+  "day": 14,
+  "date_display": "July 14",
+  "headline": "Four Georgians Discover Gold in Last Chance Gulch, 1864",
+  "year": 1864,
+  "body": "On July 14, 1864, a group of prospectors known as the 'Four Georgians'—John Crab, John Cowan, Daniel Jackson Miller, and Reginald/Robert Stanley—made a significant gold discovery in a gulch off the Prickly Pear Creek. This rich placer strike quickly became known as Last Chance Gulch and led to the founding of Helena, which would eventually become Montana's capital. The discovery ignited a new wave of the Montana gold rush, drawing thousands of miners and settlers to the area and profoundly shaping the economic and demographic landscape of the nascent Montana Territory. The legacy of the Four Georgians and their discovery remains central to Helena's identity and Montana's mining history.",
+  "category": "mining",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5833,
+  "longitude": -112.0425,
+  "tags": [
+    "gold rush",
+    "mining",
+    "settlement",
+    "Helena"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Four_Georgians",
+    "https://southwestmt.com/blog/last-chance-a-tale-of-the-four-georgians/"
+  ],
+  "related_article": null
+}

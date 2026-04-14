@@ -1,0 +1,26 @@
+{
+  "id": "1218",
+  "month": 12,
+  "day": 18,
+  "date_display": "December 18",
+  "headline": "Bill Introduced to Create Yellowstone National Park, 1871",
+  "year": 1871,
+  "body": "On December 18, 1871, Montana Territory Delegate William H. Clagett introduced H.R. 764, a bill that would lead to the creation of Yellowstone National Park. This legislative action marked a pivotal moment in American conservation history, as it laid the groundwork for establishing the world\"s first national park. Clagett\"s efforts, alongside those of other visionaries, aimed to protect the unique geothermal features, wildlife, and natural beauty of the Yellowstone region from private exploitation. The bill\"s introduction underscored a growing national recognition of the importance of preserving natural wonders for public enjoyment and scientific study. While Yellowstone National Park primarily lies in Wyoming, its creation had significant implications for Montana, as parts of the park extend into the state, and its designation influenced future conservation efforts across the American West. This event highlights Montana\"s early role in shaping national environmental policy and the enduring legacy of its natural landscapes.",
+  "category": "wildlife_nature",
+  "location": "Yellowstone National Park",
+  "latitude": 44.4237,
+  "longitude": -110.5885,
+  "tags": [
+    "Yellowstone National Park",
+    "conservation",
+    "William H. Clagett",
+    "national parks",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://history.house.gov/Historical-Highlights/1851-1900/1872-02-27-Yellowstone/",
+    "https://www.latlong.net/place/yellowstone-national-park-usa-26.html"
+  ],
+  "related_article": null
+}

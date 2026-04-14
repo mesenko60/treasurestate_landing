@@ -1,0 +1,25 @@
+{
+  "id": "0130",
+  "month": 1,
+  "day": 30,
+  "date_display": "January 30",
+  "headline": "Treaty of 1818 Takes Effect, Defining Northern Montana Boundary, 1819",
+  "year": 1819,
+  "body": "On January 30, 1819, the Treaty of 1818 between the United States and Great Britain officially took effect. This landmark agreement established the 49th parallel as the northern boundary of the United States from the Lake of the Woods to the \"Stony Mountains\" (Rocky Mountains). This boundary line directly impacted the future territory of Montana, defining its northern border and influencing subsequent American expansion and settlement in the region. The treaty also provided for joint occupation of the Oregon Country for ten years, allowing citizens of both nations access to the area. While the treaty did not immediately lead to extensive settlement in Montana, it laid crucial groundwork for the geopolitical landscape of the American West. It was a significant diplomatic achievement that helped to prevent potential conflicts over territorial claims and set the stage for the eventual formation of Montana as a U.S. state.",
+  "category": "statehood",
+  "location": "International Boundary (affecting Montana)",
+  "latitude": 49.0,
+  "longitude": -110.0,
+  "tags": [
+    "international relations",
+    "boundary",
+    "territorial history",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Treaty_of_1818",
+    "https://www.onthisday.com/countries/usa/montana"
+  ],
+  "related_article": null
+}

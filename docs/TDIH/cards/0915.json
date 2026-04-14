@@ -1,0 +1,27 @@
+{
+  "id": "0915",
+  "month": 9,
+  "day": 15,
+  "date_display": "September 15",
+  "headline": "First Classes Held at Montana State University, 1893",
+  "year": 1893,
+  "body": "On September 15, 1893, the Agricultural College of the State of Montana, which would later become Montana State University, held its first classes in Bozeman. The establishment of the college was a landmark event in the history of higher education in Montana, providing opportunities for students to pursue studies in agriculture, engineering, and other practical fields. The opening of the college reflected the state's commitment to education and its recognition of the importance of scientific knowledge in developing its agricultural and natural resources. From its humble beginnings, Montana State University has grown into a major research institution, playing a vital role in the educational, cultural, and economic life of the state. The first day of classes in 1893 marked the beginning of a long and distinguished history of service to Montana and the nation.",
+  "category": "science_medicine",
+  "location": "Bozeman, Gallatin County",
+  "latitude": 45.677,
+  "longitude": -111.0429,
+  "tags": [
+    "Montana State University",
+    "higher education",
+    "Bozeman",
+    "agriculture",
+    "science"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.montana.edu/about/history.html",
+    "https://en.wikipedia.org/wiki/Montana_State_University",
+    "https://www.latlong.net/place/bozeman-mt-usa-4651.html"
+  ],
+  "related_article": null
+}

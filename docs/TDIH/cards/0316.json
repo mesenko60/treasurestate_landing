@@ -1,0 +1,24 @@
+{
+  "id": "0316",
+  "month": 3,
+  "day": 16,
+  "date_display": "March 16",
+  "headline": "The Montana Post, First Territorial Newspaper, Published in Virginia City, 1867",
+  "year": 1867,
+  "body": "On March 16, 1867, 'The Montana Post,' the first newspaper of the Montana Territory, was actively publishing from Virginia City. Founded in August 1864 by D.W. Tilton, this newspaper played a crucial role in documenting the early history, social life, and political developments of the burgeoning territory. It served as a vital source of information and a platform for public discourse during a period of rapid growth, fueled by the gold rushes. The existence and continued publication of 'The Montana Post' in Virginia City underscore the establishment of civic institutions and the desire for communication and community in the rugged frontier environment. Its pages offer invaluable insights into the challenges and triumphs of early Montanan settlers and the evolution of the territory towards statehood.",
+  "category": "arts_culture",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2908,
+  "longitude": -111.9431,
+  "tags": [
+    "Newspaper",
+    "Virginia City",
+    "Territorial History"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.loc.gov/resource/sn83025293/1867-03-16/ed-1/?st=brief",
+    "https://historicmt.org/items/show/886"
+  ],
+  "related_article": null
+}

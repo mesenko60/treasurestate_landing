@@ -1,0 +1,26 @@
+{
+  "id": "1029",
+  "month": 10,
+  "day": 29,
+  "date_display": "October 29",
+  "headline": "Black Tuesday and the Great Depression's Impact on Montana, 1929",
+  "year": 1929,
+  "body": "On October 29, 1929, the stock market crashed, an event famously known as 'Black Tuesday,' marking the onset of the Great Depression. While this was a national catastrophe, its effects reverberated deeply in Montana, a state already grappling with severe drought and economic challenges in its agricultural and mining sectors. The crash exacerbated these existing hardships, leading to widespread unemployment, foreclosures, and a dramatic decline in commodity prices. Montana's economy, heavily reliant on natural resources, was particularly vulnerable to the national downturn. The period that followed saw many Montanans struggle to survive, with some leaving the state in search of work, while others endured immense poverty. This day serves as a somber reminder of the economic fragility of the era and the profound impact national events had on the lives of ordinary Montanans, shaping the state's social and economic landscape for years to come.",
+  "category": "economic",
+  "location": "Montana (statewide)",
+  "latitude": 47.0,
+  "longitude": -110.0,
+  "tags": [
+    "Great Depression",
+    "economic history",
+    "Black Tuesday",
+    "Montana"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/articles/great-depression-history",
+    "https://www.mtpr.org/2009-10-22/remembering-the-great-depressions-sunny-side",
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history"
+  ],
+  "related_article": null
+}

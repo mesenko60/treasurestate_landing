@@ -1,0 +1,24 @@
+{
+  "id": "0707",
+  "month": 7,
+  "day": 7,
+  "date_display": "July 7",
+  "headline": "Lewis and Clark Cross Continental Divide, 1806",
+  "year": 1806,
+  "body": "On July 7, 1806, Captain William Clark and his party of the Lewis and Clark Expedition crossed the Continental Divide at what is now known as Big Hole Pass. This crossing was a significant milestone during their return journey, as they continued to explore and map the vast Louisiana Purchase territory. Having split from Captain Lewis's group earlier, Clark's detachment was tasked with exploring the Yellowstone River. The successful navigation of the Continental Divide at Big Hole Pass further solidified their understanding of the western landscape and its major river systems, contributing invaluable geographical data to the young United States.",
+  "category": "exploration",
+  "location": "Big Hole Pass, Beaverhead County",
+  "latitude": 45.5496,
+  "longitude": -113.8204,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Continental Divide"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.topozone.com/montana/beaverhead-mt/gap/big-hole-pass-2/"
+  ],
+  "related_article": null
+}

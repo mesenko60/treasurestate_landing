@@ -1,0 +1,25 @@
+{
+  "id": "0117",
+  "month": 1,
+  "day": 17,
+  "date_display": "January 17",
+  "headline": "Montana Constitutional Convention Convenes, 1972",
+  "year": 1972,
+  "body": "On January 17, 1972, the Montana Constitutional Convention formally convened in Helena. This historic gathering brought together 100 delegates elected from across the state to draft a new constitution, replacing the original 1889 document. The convention was a response to the growing recognition that the 1889 constitution was outdated and inadequate for the needs of a modern state. Over the course of 54 days, the delegates debated and crafted a new framework for Montana's government, one that included a strong bill of rights, environmental protections, and provisions for a more responsive and accountable government. The proposed constitution was ratified by Montana voters in June 1972, and its adoption marked a pivotal moment in the state's history, ushering in a new era of governance and citizen participation. The 1972 Montana Constitution is widely regarded as one of the most progressive and forward-thinking state constitutions in the nation.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0271,
+  "tags": [
+    "constitutional convention",
+    "Montana Constitution",
+    "state government",
+    "law"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://scholarworks.umt.edu/montanaconstitution/",
+    "https://en.wikipedia.org/wiki/1972_Montana_Constitutional_Convention"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0727",
+  "month": 7,
+  "day": 27,
+  "date_display": "July 27",
+  "headline": "Meriwether Lewis Climbs Cliff at Three Forks, 1805",
+  "year": 1805,
+  "body": "On July 27, 1805, Captain Meriwether Lewis ascended a prominent limestone cliff overlooking the Three Forks of the Missouri River, near present-day Three Forks, Montana. From this vantage point, he observed the confluence of the Jefferson, Madison, and Gallatin Rivers, which unite to form the mighty Missouri. Lewis meticulously documented the landscape, noting the strategic importance of the location and the potential for future settlement and trade. This climb was a crucial moment in the Lewis and Clark Expedition, providing valuable geographical insights and reinforcing their understanding of the vastness and complexity of the Louisiana Purchase territory.",
+  "category": "exploration",
+  "location": "Three Forks, Gallatin County",
+  "latitude": 45.8924,
+  "longitude": -111.5522,
+  "tags": [
+    "Lewis and Clark",
+    "exploration",
+    "Missouri River"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/this-is-montana/columns/stories/missouri-headwaters-1of2.php",
+    "https://mths.mt.gov/education/Montana-Madness-2026"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0618",
+  "month": 6,
+  "day": 18,
+  "date_display": "June 18",
+  "headline": "Lewis and Clark Continue Great Falls Portage, 1805",
+  "year": 1805,
+  "body": "On June 18, 1805, the Lewis and Clark Expedition continued their arduous portage around the Great Falls of the Missouri River. This period was marked by intense physical labor and significant discoveries. The Corps of Discovery encountered several natural wonders, including Crooked Falls and Giant Springs, which Lewis meticulously documented. They also observed abundant wildlife, including a notable incident where a grizzly bear attacked one of the expedition members, Private Willard, highlighting the dangers of the frontier. During this time, the expedition was also engaged in preparing a cache to store supplies and inspecting their iron-framed boat, which they hoped to assemble after the portage. Sacagawea, who had been ill, was also recovering. These activities underscore the daily challenges and scientific endeavors of the expedition as they navigated the formidable Montana landscape, contributing invaluable geographical and biological knowledge of the American West. The ongoing portage was a testament to their perseverance in the face of immense natural obstacles.",
+  "category": "exploration",
+  "location": "Great Falls, Cascade County",
+  "latitude": 47.5062,
+  "longitude": -111.2837,
+  "tags": [
+    "Lewis and Clark",
+    "Great Falls",
+    "portage",
+    "exploration",
+    "wildlife",
+    "Sacagawea"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://lewis-clark.org/day-by-day/18-jun-1805/",
+    "https://www.history.com/articles/lewis-clark-timeline-expedition"
+  ],
+  "related_article": null
+}

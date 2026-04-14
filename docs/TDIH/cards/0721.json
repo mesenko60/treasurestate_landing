@@ -1,0 +1,24 @@
+{
+  "id": "0721",
+  "month": 7,
+  "day": 21,
+  "date_display": "July 21",
+  "headline": "Work Begins on Troy Ferry Across Kootenai River, 1895",
+  "year": 1895,
+  "body": "On July 21, 1895, work commenced on the Troy Ferry across the Kootenai River in Troy, Montana. This ferry was a crucial infrastructure project aimed at connecting the growing communities and facilitating trade across the river, particularly with the Yahk Valley. The establishment of the ferry was vital for the economic development of the region, improving transportation for goods, resources, and people in an era before widespread bridge construction. It represents an important step in the development of transportation networks in northwestern Montana, linking isolated settlements and supporting the burgeoning timber and mining industries.",
+  "category": "infrastructure",
+  "location": "Troy, Lincoln County",
+  "latitude": 48.4626,
+  "longitude": -115.8921,
+  "tags": [
+    "transportation",
+    "infrastructure",
+    "Kootenai River"
+  ],
+  "expandable": true,
+  "sources": [
+    "http://cityoftroymontana.com/history-of-troy/",
+    "https://en.wikipedia.org/wiki/Troy,_Montana"
+  ],
+  "related_article": null
+}

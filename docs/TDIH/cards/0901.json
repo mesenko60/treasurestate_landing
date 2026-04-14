@@ -1,0 +1,26 @@
+{
+  "id": "0901",
+  "month": 9,
+  "day": 1,
+  "date_display": "September 1",
+  "headline": "U.S. Army Engages Lakota Sioux on Alkali Creek, 1865",
+  "year": 1865,
+  "body": "On September 1, 1865, during the Powder River Expedition, a detachment of U.S. Army soldiers under Colonels Nelson Cole and Samuel Walker encountered approximately 300 Hunkpapa, Sans Arc, and Miniconjou Lakota Sioux warriors on Alkali Creek, near present-day Broadus, Montana. The engagement occurred when the Lakota warriors raided the soldiers' horse herd. Six soldiers were killed in the skirmish. This event marked one of the first significant confrontations for Cole and Walker's command, who had been marching for weeks without encountering Native American forces. The Powder River Expedition was a large-scale military operation aimed at subduing the Sioux, Cheyenne, and Arapaho in the Montana and Wyoming territories following increased hostilities, including the Sand Creek Massacre. Despite the U.S. Army's efforts, the expedition ultimately proved inconclusive in achieving its objectives of decisively defeating the Native American tribes and securing peace in the region.",
+  "category": "military",
+  "location": "Broadus, Powder River County",
+  "latitude": 45.4431,
+  "longitude": -105.4083,
+  "tags": [
+    "Powder River Expedition",
+    "Lakota Sioux",
+    "U.S. Army",
+    "Native American history",
+    "1865"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://military-history.fandom.com/wiki/Powder_River_Expedition_(1865)",
+    "https://en.wikipedia.org/wiki/Broadus,_Montana"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "0322",
+  "month": 3,
+  "day": 22,
+  "date_display": "March 22",
+  "headline": "Custer Battlefield National Monument Established, 1946",
+  "year": 1946,
+  "body": "On March 22, 1946, the Custer Battlefield National Monument was officially established. This site, located in Big Horn County, Montana, preserves the battlefield where the Battle of the Little Bighorn took place on June 25-26, 1876. The battle, often referred to as Custer's Last Stand, was a pivotal event in the Great Sioux War of 1876, pitting the U.S. Army's 7th Cavalry Regiment, led by Lt. Col. George Armstrong Custer, against a coalition of Lakota Sioux, Cheyenne, and Arapaho warriors. The monument serves as a memorial to those who fought and died on both sides, offering a place for reflection on the complex history of westward expansion and Native American resistance. It was later renamed Little Bighorn Battlefield National Monument to better reflect the diverse perspectives of the battle.",
+  "category": "military",
+  "location": "Little Bighorn Battlefield National Monument, Big Horn County",
+  "latitude": 45.5703,
+  "longitude": -107.4275,
+  "tags": [
+    "Custer's Last Stand",
+    "Little Bighorn",
+    "Native American History",
+    "Military History"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Little_Bighorn_Battlefield_National_Monument"
+  ],
+  "related_article": null
+}

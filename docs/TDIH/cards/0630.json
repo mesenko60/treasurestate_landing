@@ -1,0 +1,27 @@
+{
+  "id": "0630",
+  "month": 6,
+  "day": 30,
+  "date_display": "June 30",
+  "headline": "Beartooth National Forest Created, 1908",
+  "year": 1908,
+  "body": "On June 30, 1908, President Theodore Roosevelt, a staunch conservationist, issued an executive order establishing the Beartooth National Forest. This act was a crucial step in the broader conservation movement of the early 20th century and had a profound impact on the preservation of Montana's natural landscapes. The Beartooth National Forest, encompassing a rugged and pristine area within the Beartooth Mountains, was set aside to protect its vast timber resources, critical watersheds, and diverse wildlife habitats. Its creation reflected a growing national awareness of the need to manage and conserve natural resources for public benefit and future generations. The forest quickly became a haven for outdoor recreation, offering opportunities for hiking, fishing, and hunting amidst stunning alpine scenery. The establishment of the Beartooth National Forest not only safeguarded a significant portion of Montana's wilderness but also contributed to the state's identity as a land of unparalleled natural beauty. This foundational act of conservation continues to shape land management practices and recreational opportunities in one of Montana's most iconic mountain ranges.",
+  "category": "wildlife_nature",
+  "location": "Beartooth Mountains, Carbon County",
+  "latitude": 45.093,
+  "longitude": -109.3396,
+  "tags": [
+    "Beartooth National Forest",
+    "conservation",
+    "Theodore Roosevelt",
+    "national forests",
+    "wildlife"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.fs.usda.gov/r01/custergallatin/recreation/beartooth-ranger-district",
+    "https://www.topozone.com/montana/carbon-mt/forest/custer-national-forest-beartooth-division/"
+  ],
+  "related_article": null
+}

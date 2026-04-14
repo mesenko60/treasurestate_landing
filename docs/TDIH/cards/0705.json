@@ -1,0 +1,24 @@
+{
+  "id": "0705",
+  "month": 7,
+  "day": 5,
+  "date_display": "July 5",
+  "headline": "Montana Records Hottest Temperature, 1937",
+  "year": 1937,
+  "body": "On July 5, 1937, Medicine Lake, Montana, experienced the state's highest recorded temperature, soaring to an scorching 117°F (47°C). This extreme heat event was part of a severe heatwave that gripped much of the United States during the summer of 1937. Such high temperatures posed significant challenges for agriculture, public health, and daily life in Montana, a state known for its often harsh, but typically colder, climate. This record stands as a testament to the diverse and sometimes extreme weather patterns that can affect the region, highlighting the resilience of its inhabitants in the face of natural phenomena.",
+  "category": "weather",
+  "location": "Medicine Lake, Sheridan County",
+  "latitude": 48.5006,
+  "longitude": -104.5014,
+  "tags": [
+    "weather",
+    "record",
+    "heatwave"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.onthisday.com/countries/usa/montana",
+    "https://en.wikipedia.org/wiki/Medicine_Lake,_Montana"
+  ],
+  "related_article": null
+}

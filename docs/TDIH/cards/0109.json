@@ -1,0 +1,24 @@
+{
+  "id": "0109",
+  "month": 1,
+  "day": 9,
+  "date_display": "January 9",
+  "headline": "The Great Die Up Decimates Montana Cattle Herds, 1887",
+  "year": 1887,
+  "body": "On January 9, 1887, Montana was in the midst of an exceptionally severe winter, a period that would become infamously known as the \"Great Die Up.\" Following a summer drought that left pastures sparse, an early and heavy snowfall in November 1886, combined with a sudden and prolonged cold snap in January 1887, trapped millions of cattle. Temperatures plummeted, and deep snowdrifts covered the limited forage, leading to widespread starvation and freezing. Ranchers, many of whom had invested heavily in the open-range cattle industry, suffered catastrophic losses, with some reporting up to 90% of their herds perishing. This devastating event marked the end of the open-range cattle era in Montana and the broader Great Plains, forcing ranchers to adopt new practices such as fenced pastures, hay production, and smaller, more manageable herds. The Great Die Up reshaped Montana's agricultural landscape and had a lasting impact on its economy and ranching culture.",
+  "category": "agriculture",
+  "location": "Montana Territory",
+  "latitude": 46.8797,
+  "longitude": -110.3626,
+  "tags": [
+    "cattle ranching",
+    "winter storm",
+    "economic impact",
+    "Montana history"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.history.com/this-day-in-history/january-9/record-cold-and-snow-decimates-cattle-herds"
+  ],
+  "related_article": null
+}

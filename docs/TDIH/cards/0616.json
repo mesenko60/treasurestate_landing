@@ -1,0 +1,27 @@
+{
+  "id": "0616",
+  "month": 6,
+  "day": 16,
+  "date_display": "June 16",
+  "headline": "Virginia City Incorporated by Miners' Court, 1863",
+  "year": 1863,
+  "body": "On June 16, 1863, Virginia City, Montana, achieved the distinction of becoming the first incorporated town in what would soon be Montana Territory. This act of self-governance was carried out by a miners' court, a testament to the rapid organization and establishment of law and order in the burgeoning gold rush camps. Following the rich gold strike in Alder Gulch, thousands of prospectors flocked to the area, necessitating a formal structure for administration and dispute resolution. The incorporation of Virginia City marked a crucial step in the transition from a chaotic mining camp to a more organized settlement. This event underscored the ingenuity and determination of early Montana settlers to create functional communities in the absence of established governmental authority. Virginia City's incorporation laid a precedent for urban development in the region and is a foundational moment in Montana's history, reflecting the swift growth and self-reliance characteristic of the gold rush era.",
+  "category": "mining",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2938,
+  "longitude": -111.9461,
+  "tags": [
+    "Virginia City",
+    "mining",
+    "gold rush",
+    "incorporation",
+    "miners' court"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.umt.edu/this-is-montana/columns/stories/virginia-city.php",
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://www.facebook.com/groups/200453861048301/posts/1477094820050859/"
+  ],
+  "related_article": null
+}

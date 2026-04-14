@@ -1,0 +1,25 @@
+{
+  "id": "0317",
+  "month": 3,
+  "day": 17,
+  "date_display": "March 17",
+  "headline": "Butte Celebrates St. Patrick's Day with Deep Irish Roots, Late 1800s",
+  "year": 1800,
+  "body": "Every March 17th, Butte, Montana, comes alive with vibrant St. Patrick's Day celebrations, a tradition deeply rooted in the city's history. During the late 1800s, Butte's booming copper mines attracted thousands of Irish immigrants, who brought with them their cultural traditions and strong sense of community. These immigrants played a crucial role in the development of Butte, and their heritage continues to be a defining characteristic of the city. The annual parade and festivities are a testament to this enduring legacy, honoring the contributions of the Irish to Montana's mining industry and its social fabric. Butte's St. Patrick's Day celebration is one of the oldest and most authentic in the American West, reflecting a rich cultural history that continues to thrive.",
+  "category": "arts_culture",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.0038,
+  "longitude": -112.5348,
+  "tags": [
+    "St. Patrick's Day",
+    "Irish Immigration",
+    "Butte",
+    "Mining History"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.montanarightnow.com/butte/the-origins-of-the-butte-st-patricks-day-parade/article_34ab6899-6a63-4e6c-a34a-af7421827823.html",
+    "https://southwestmt.com/blog/celebrate-st-patricks-day-in-butte-montana/"
+  ],
+  "related_article": null
+}

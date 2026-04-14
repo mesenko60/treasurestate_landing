@@ -1,0 +1,26 @@
+{
+  "id": "0216",
+  "month": 2,
+  "day": 16,
+  "date_display": "February 16",
+  "headline": "Big Horn County Renamed Custer County, 1877",
+  "year": 1877,
+  "body": "On February 16, 1877, the Montana Territory officially changed the name of Big Horn County to Custer County. This legislative act, occurring less than a year after the infamous Battle of the Little Bighorn, was a direct response to the profound impact of Lieutenant Colonel George Armstrong Custer and the 7th Cavalry on the region. The renaming served as a memorial to Custer and the soldiers who perished in the battle, reflecting the prevailing sentiment among many non-Native settlers and the territorial government at the time. Big Horn County, originally established in 1865, encompassed a vast area of southeastern Montana, a region deeply intertwined with the history of Native American tribes, particularly the Crow, Cheyenne, and Lakota. The Battle of the Little Bighorn, which took place in June 1876, was a pivotal event in the Great Sioux War and had a lasting effect on the relationship between the U.S. government and indigenous peoples. The renaming of the county underscored the territorial government's perspective on these events and its efforts to solidify American control over the region. Today, Custer County, with its seat in Miles City, stands as a geographical marker of this complex and often contentious period in Montana's history, a reminder of the frontier conflicts that shaped the state.",
+  "category": "military",
+  "location": "Miles City, Custer County",
+  "latitude": 46.4089,
+  "longitude": -105.8464,
+  "tags": [
+    "Custer County",
+    "Big Horn County",
+    "Battle of Little Bighorn",
+    "George Armstrong Custer",
+    "Montana Territory"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Timeline_of_Montana_history",
+    "https://en.wikipedia.org/wiki/Custer_County,_Montana"
+  ],
+  "related_article": null
+}

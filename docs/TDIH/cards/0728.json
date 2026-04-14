@@ -1,0 +1,24 @@
+{
+  "id": "0728",
+  "month": 7,
+  "day": 28,
+  "date_display": "July 28",
+  "headline": "Gold Discovered at Grasshopper Creek, 1862",
+  "year": 1862,
+  "body": "On July 28, 1862, John White and a group of prospectors discovered gold on Grasshopper Creek, leading to Montana's first major gold rush and the establishment of Bannack, the territory's first capital. This significant strike attracted thousands of miners and settlers, transforming the remote region into a bustling frontier. The discovery at Grasshopper Creek was instrumental in shaping Montana's early economy and population growth, laying the foundation for its development as a state. The event highlights the allure of gold and its profound impact on the American West, drawing individuals from all walks of life in search of fortune.",
+  "category": "mining",
+  "location": "Bannack, Beaverhead County",
+  "latitude": 45.1611,
+  "longitude": -112.9956,
+  "tags": [
+    "gold rush",
+    "mining",
+    "settlement"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://fwp.mt.gov/bannack",
+    "https://southwestmt.com/specialfeatures/history/bannack/"
+  ],
+  "related_article": null
+}

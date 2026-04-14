@@ -1,0 +1,26 @@
+{
+  "id": "0222",
+  "month": 2,
+  "day": 22,
+  "date_display": "February 22",
+  "headline": "President Cleveland Signs Omnibus Statehood Bill, 1889",
+  "year": 1889,
+  "body": "On February 22, 1889, President Grover Cleveland signed the Omnibus Statehood Bill into law, a monumental act that paved the way for Montana to become the 41st state of the Union. This legislation was a critical step in the process of admitting several western territories—Montana, North Dakota, South Dakota, and Washington—into statehood. The bill authorized these territories to draft state constitutions and form state governments, setting the stage for their formal entry into the United States later that year. For Montana, this event was the culmination of years of effort by its territorial citizens and leaders who sought full representation and the benefits of statehood. The signing of the bill in Washington D.C. signaled the federal government's recognition of Montana's growth, its established population, and its readiness for self-governance. It marked a transition from a territorial administration, often subject to federal oversight, to a sovereign state with its own legislative, executive, and judicial branches. This day is celebrated as a foundational moment in Montana's history, symbolizing its journey from a frontier territory to an integral part of the United States, and affirming its unique identity and contributions to the nation.",
+  "category": "statehood",
+  "location": "Washington D.C.",
+  "latitude": 38.8951,
+  "longitude": -77.0364,
+  "tags": [
+    "statehood",
+    "Grover Cleveland",
+    "Omnibus Statehood Bill",
+    "Montana Territory",
+    "federal legislation"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.ebsco.com/research-starters/history/montana-admitted-union",
+    "https://history.house.gov/HouseRecord/Detail/15032436146"
+  ],
+  "related_article": null
+}

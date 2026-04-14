@@ -1,0 +1,27 @@
+{
+  "id": "0611",
+  "month": 6,
+  "day": 11,
+  "date_display": "June 11",
+  "headline": "Forest Homestead Act Enacted, 1906",
+  "year": 1906,
+  "body": "On June 11, 1906, the United States Congress enacted the Forest Homestead Act, a pivotal piece of legislation that significantly influenced settlement patterns and land management in Montana. This act permitted individuals to file for homesteads within the boundaries of national forests, specifically on lands deemed primarily valuable for agriculture. Prior to this, national forest lands were largely protected from homesteading. The Forest Homestead Act opened up extensive acreage in states like Montana to new settlers, particularly in areas such as the Flathead Valley. This led to a wave of homesteaders establishing farms and ranches within forested regions, contributing to the state's agricultural development and population growth. The act aimed to balance conservation efforts with the demand for arable land, though it also presented challenges in managing these mixed-use landscapes. The Forest Homestead Act of 1906 remains a key event in Montana's history, reflecting the ongoing tension and evolution of land policy in the American West and its profound impact on the state's development.",
+  "category": "agriculture",
+  "location": "Washington D.C. (impact on Montana)",
+  "latitude": 38.9072,
+  "longitude": -77.0369,
+  "tags": [
+    "Forest Homestead Act",
+    "homesteading",
+    "agriculture",
+    "land policy",
+    "national forests"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://npshistory.com/publications/usfs/region/1/flathead/history/chap11.htm",
+    "https://storymaps.arcgis.com/stories/2ea771a64e2a4f658c0a5a0d9c34307d",
+    "https://www.archives.gov/files/calendar/genealogy-fair/6-muhn-presentation.pdf"
+  ],
+  "related_article": null
+}

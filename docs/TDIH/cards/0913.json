@@ -1,0 +1,27 @@
+{
+  "id": "0913",
+  "month": 9,
+  "day": 13,
+  "date_display": "September 13",
+  "headline": "First Issue of the Montana Post Published, 1864",
+  "year": 1864,
+  "body": "On September 13, 1864, the first issue of the Montana Post was published in Virginia City, Montana Territory. As the first major newspaper in the territory, the Montana Post played a crucial role in disseminating information, shaping public opinion, and documenting the early history of Montana. The newspaper covered a wide range of topics, including mining news, political developments, and local events, providing a vital link between the isolated communities of the territory. The publication of the Montana Post marked a significant step in the development of a civil society in Montana, reflecting the growing need for communication and a shared sense of identity among the territory's residents. Its pages offer a valuable window into the challenges and opportunities of life on the Montana frontier.",
+  "category": "arts_culture",
+  "location": "Virginia City, Madison County",
+  "latitude": 45.2952,
+  "longitude": -111.9433,
+  "tags": [
+    "Montana Post",
+    "newspaper",
+    "Virginia City",
+    "journalism",
+    "Montana Territory"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montana_Post",
+    "https://www.newspapers.com/paper/the-montana-post/644/",
+    "https://chroniclingamerica.loc.gov/lccn/sn83025294/"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0624",
+  "month": 6,
+  "day": 24,
+  "date_display": "June 24",
+  "headline": "Lakota and Cheyenne Prepare for Battle, 1876",
+  "year": 1876,
+  "body": "On June 24, 1876, in the encampment along the Little Bighorn River, Lakota and Cheyenne warriors engaged in a 'dying dancing ceremony' and other preparations for the impending confrontation with the U.S. Army. This day was a critical prelude to the Battle of the Little Bighorn, which would unfold the following day. The ceremony, a powerful spiritual and psychological ritual, saw young warriors taking vows to fight to the death, demonstrating their unwavering commitment to defending their lands and way of life. The Native American encampment, a massive gathering of several thousand people, was a vibrant hub of activity, with families, elders, and warriors preparing for what they knew would be a decisive conflict. The events of this day highlight the deep cultural and spiritual significance of the resistance mounted by the Lakota and Cheyenne against the encroaching American military. Their determination and unity in the face of overwhelming odds set the stage for one of the most iconic battles in American history, a testament to their fierce independence and resolve.",
+  "category": "native_history",
+  "location": "Little Bighorn River, Big Horn County",
+  "latitude": 45.7357,
+  "longitude": -107.5575,
+  "tags": [
+    "Battle of the Little Bighorn",
+    "Lakota",
+    "Cheyenne",
+    "Native American history",
+    "Great Sioux War",
+    "dying dancing ceremony"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm",
+    "https://www.history.com/this-day-in-history/june-25/battle-of-little-bighorn"
+  ],
+  "related_article": null
+}

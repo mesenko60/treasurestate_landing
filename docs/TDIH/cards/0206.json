@@ -1,0 +1,27 @@
+{
+  "id": "0206",
+  "month": 2,
+  "day": 6,
+  "date_display": "February 6",
+  "headline": "Flathead and Valley Counties Created, 1893",
+  "year": 1893,
+  "body": "On February 6, 1893, the Montana Legislature officially established two new counties: Flathead County and Valley County. This act of legislative reorganization significantly reshaped the administrative map of Montana, reflecting the ongoing growth and settlement across the state. Flathead County, carved out of the northern portion of Missoula County, was created to better serve the burgeoning population in the Flathead Valley, an area rich in timber and agricultural potential. Its county seat became Kalispell, a rapidly developing town. Simultaneously, Valley County was formed from a section of Dawson County in northeastern Montana. This vast new county, with Glasgow as its county seat, encompassed a diverse landscape characterized by its expansive valleys, which ultimately gave the county its name. The creation of these counties underscored the increasing demand for localized governance and services as Montana continued to attract settlers and develop its resources. These legislative actions were crucial in facilitating the orderly expansion of infrastructure, law enforcement, and public administration in these growing regions, marking a significant step in Montana's post-statehood development.",
+  "category": "statehood",
+  "location": "Helena, Lewis and Clark County",
+  "latitude": 46.5921,
+  "longitude": -112.0216,
+  "tags": [
+    "county formation",
+    "Flathead County",
+    "Valley County",
+    "Montana Legislature",
+    "state development"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Flathead_County,_Montana",
+    "https://en.wikipedia.org/wiki/Valley_County,_Montana",
+    "https://www.familysearch.org/en/wiki/Montana_County_Creation_Dates_and_Parent_Counties"
+  ],
+  "related_article": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0311",
+  "month": 3,
+  "day": 11,
+  "date_display": "March 11",
+  "headline": "Gallatin City Becomes Original County Seat, 1865",
+  "year": 1865,
+  "body": "On March 11, 1865, Gallatin City was designated as the original county seat of Gallatin County. Located at the confluence of the Jefferson, Madison, and Gallatin rivers, the town was strategically positioned to serve as an administrative and commercial hub for the newly formed county. The establishment of a county seat was a crucial step in the organization of local government, providing a center for legal proceedings, record-keeping, and other official functions. While Gallatin City's prominence was later eclipsed by Bozeman, which became the county seat in 1867, its initial designation reflects the early patterns of settlement and development in the Gallatin Valley. This event is a reminder of the dynamic nature of frontier towns and the shifting centers of power in the Montana Territory.",
+  "category": "statehood",
+  "location": "Gallatin City, Gallatin County",
+  "latitude": 45.9433,
+  "longitude": -111.3047,
+  "tags": [
+    "County Seat",
+    "Gallatin County",
+    "Territorial History"
+  ],
+  "expandable": true,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gallatin_City,_Montana",
+    "https://www.bigskyjournal.com/the-confluence-of-the-three-forks/"
+  ],
+  "related_article": null
+}
