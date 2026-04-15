@@ -13,6 +13,10 @@ interface BeforeInstallPromptEvent extends Event {
 
 type PromptMode = 'android' | 'ios' | null;
 
+const DISMISS_KEY = 'pwa-prompt-dismissed';
+/** After dismiss, hide the prompt until this elapses (re-offer later). */
+const DISMISS_COOLDOWN_MS = 30 * 24 * 60 * 60 * 1000;
+
 function detectPromptMode(): PromptMode {
   if (typeof window === 'undefined') return null;
 
@@ -29,6 +33,26 @@ function detectPromptMode(): PromptMode {
   return null; // Android handled via beforeinstallprompt event
 }
 
+function readDismissedWithinCooldown(): boolean {
+  try {
+    const stored = localStorage.getItem(DISMISS_KEY);
+    if (!stored) return false;
+    const dismissedAt = parseInt(stored, 10);
+    if (Number.isNaN(dismissedAt)) return false;
+    return Date.now() - dismissedAt < DISMISS_COOLDOWN_MS;
+  } catch {
+    return false;
+  }
+}
+
+function persistDismiss() {
+  try {
+    localStorage.setItem(DISMISS_KEY, String(Date.now()));
+  } catch {
+    /* ignore */
+  }
+}
+
 export default function PWAInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(false);
@@ -42,14 +66,9 @@ export default function PWAInstallPrompt() {
       navigator.serviceWorker.register('/sw.js').catch(() => {});
     }
 
-    const stored = localStorage.getItem('pwa-prompt-dismissed');
-    if (stored) {
-      const dismissedAt = parseInt(stored, 10);
-      // Re-show after 7 days
-      if (Date.now() - dismissedAt < 7 * 24 * 60 * 60 * 1000) {
-        setDismissed(true);
-        return;
-      }
+    if (readDismissedWithinCooldown()) {
+      setDismissed(true);
+      return;
     }
 
     const mode = detectPromptMode();
@@ -76,6 +95,13 @@ export default function PWAInstallPrompt() {
     };
   }, []);
 
+  const handleDismiss = useCallback(() => {
+    trackPWAInstallDismissed();
+    setDismissed(true);
+    setShowIOSSteps(false);
+    persistDismiss();
+  }, []);
+
   const handleInstall = useCallback(async () => {
     if (!deferredPrompt) return;
     deferredPrompt.prompt();
@@ -87,126 +113,150 @@ export default function PWAInstallPrompt() {
       trackPWAInstallDismissed();
     }
     setDismissed(true);
-    localStorage.setItem('pwa-prompt-dismissed', String(Date.now()));
+    persistDismiss();
   }, [deferredPrompt]);
-
-  const handleDismiss = useCallback(() => {
-    trackPWAInstallDismissed();
-    setDismissed(true);
-    localStorage.setItem('pwa-prompt-dismissed', String(Date.now()));
-  }, []);
 
   const showBanner = !dismissed && (deferredPrompt || iosMode);
   if (!showBanner) return null;
 
   return (
-    <div className="pwa-banner">
-      <div className="pwa-banner-icon">📍</div>
-      <div className="pwa-banner-body">
-        <span className="pwa-banner-title">Explore Montana Nearby</span>
-        <span className="pwa-banner-text">
-          {iosMode
-            ? 'Install this app to discover points of interest near you.'
-            : 'Add to your home screen for quick access to nearby attractions.'}
+    <div className="pwa-install-toast">
+      <button type="button" className="pwa-install-dismiss" onClick={handleDismiss} aria-label="Dismiss">
+        &times;
+      </button>
+      <div className="pwa-install-head">
+        <span className="pwa-install-icon" aria-hidden="true">
+          📍
         </span>
-        {iosMode && showIOSSteps && (
-          <div className="pwa-ios-steps">
-            <div className="pwa-ios-step">
-              <span className="pwa-ios-step-num">1</span>
-              <span>Tap the <strong>Share</strong> button <span className="pwa-ios-share-icon">⬆</span> at the bottom of Safari</span>
+        <div className="pwa-install-body">
+          <span className="pwa-install-title">Treasure State on your home screen</span>
+          <ul className="pwa-install-benefits">
+            <li>Open Montana guides in one tap—no hunting for the tab</li>
+            <li>Faster return visits; key pages work even when the network is spotty</li>
+            <li>Nearby map and POIs stay easier to reach on the go</li>
+          </ul>
+          {iosMode && showIOSSteps && (
+            <div className="pwa-ios-steps">
+              <div className="pwa-ios-step">
+                <span className="pwa-ios-step-num">1</span>
+                <span>
+                  Tap the <strong>Share</strong> button <span className="pwa-ios-share-icon">⬆</span> at the bottom of Safari
+                </span>
+              </div>
+              <div className="pwa-ios-step">
+                <span className="pwa-ios-step-num">2</span>
+                <span>
+                  Scroll down and tap <strong>&ldquo;Add to Home Screen&rdquo;</strong>
+                </span>
+              </div>
+              <div className="pwa-ios-step">
+                <span className="pwa-ios-step-num">3</span>
+                <span>
+                  Tap <strong>&ldquo;Add&rdquo;</strong> in the top right
+                </span>
+              </div>
             </div>
-            <div className="pwa-ios-step">
-              <span className="pwa-ios-step-num">2</span>
-              <span>Scroll down and tap <strong>&ldquo;Add to Home Screen&rdquo;</strong></span>
-            </div>
-            <div className="pwa-ios-step">
-              <span className="pwa-ios-step-num">3</span>
-              <span>Tap <strong>&ldquo;Add&rdquo;</strong> in the top right</span>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-      <div className="pwa-banner-actions">
+      <div className="pwa-install-actions">
         {iosMode ? (
           <button
-            className="pwa-banner-install"
+            type="button"
+            className="pwa-install-primary"
             onClick={() => {
-              setShowIOSSteps(!showIOSSteps);
-              if (!showIOSSteps) trackPWAInstallAccepted();
+              if (showIOSSteps) {
+                handleDismiss();
+              } else {
+                setShowIOSSteps(true);
+                trackPWAInstallAccepted();
+              }
             }}
           >
-            {showIOSSteps ? 'Got it' : 'How to Install'}
+            {showIOSSteps ? 'Got it' : 'How to install'}
           </button>
         ) : (
-          <button className="pwa-banner-install" onClick={handleInstall}>Install</button>
+          <button type="button" className="pwa-install-primary" onClick={handleInstall}>
+            Install
+          </button>
         )}
-        <button className="pwa-banner-dismiss" onClick={handleDismiss} aria-label="Dismiss">&times;</button>
       </div>
       <style jsx>{`
-        .pwa-banner {
+        .pwa-install-toast {
           position: fixed;
-          bottom: 70px;
-          left: 0.5rem;
-          right: 0.5rem;
+          bottom: calc(var(--bottom-nav-height, 65px) + 10px);
+          left: 0.75rem;
+          right: 0.75rem;
+          z-index: 10052;
+          max-width: min(440px, calc(100vw - 1.5rem));
+          margin: 0 auto;
           background: var(--dark, #204051);
           color: white;
-          padding: 0.75rem 1rem;
+          padding: 0.75rem 0.85rem 0.65rem;
           border-radius: 12px;
+          box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+          font-family: var(--font-secondary, 'Open Sans', sans-serif);
+          font-size: 0.8rem;
+          animation: pwa-toast-in 0.35s cubic-bezier(0.21, 1.02, 0.73, 1);
+        }
+        @keyframes pwa-toast-in {
+          from {
+            transform: translateY(16px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        .pwa-install-head {
           display: flex;
           align-items: flex-start;
-          gap: 0.75rem;
-          z-index: 9999;
-          box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-          font-family: var(--font-secondary, 'Open Sans', sans-serif);
-          font-size: 0.85rem;
-          animation: pwa-slide-up 0.3s ease-out;
+          gap: 0.6rem;
+          padding-right: 1.35rem;
         }
-
-        @keyframes pwa-slide-up {
-          from { transform: translateY(100px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
-
-        .pwa-banner-icon {
-          font-size: 1.6rem;
+        .pwa-install-icon {
+          font-size: 1.45rem;
           flex-shrink: 0;
-          margin-top: 2px;
+          line-height: 1.1;
         }
-
-        .pwa-banner-body {
+        .pwa-install-body {
           flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 2px;
+          min-width: 0;
         }
-
-        .pwa-banner-title {
+        .pwa-install-title {
+          display: block;
           font-family: var(--font-primary, 'Montserrat', sans-serif);
           font-weight: 700;
-          font-size: 0.9rem;
+          font-size: 0.92rem;
+          margin-bottom: 0.45rem;
+          line-height: 1.25;
         }
-
-        .pwa-banner-text {
-          line-height: 1.4;
-          opacity: 0.9;
-          font-size: 0.8rem;
+        .pwa-install-benefits {
+          margin: 0;
+          padding-left: 1.1rem;
+          line-height: 1.45;
+          opacity: 0.92;
         }
-
+        .pwa-install-benefits li {
+          margin-bottom: 0.25rem;
+        }
+        .pwa-install-benefits li:last-child {
+          margin-bottom: 0;
+        }
         .pwa-ios-steps {
-          margin-top: 0.5rem;
+          margin-top: 0.55rem;
           display: flex;
           flex-direction: column;
           gap: 0.4rem;
         }
-
         .pwa-ios-step {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          font-size: 0.8rem;
+          font-size: 0.78rem;
           line-height: 1.3;
         }
-
         .pwa-ios-step-num {
           background: var(--secondary, #d8973c);
           color: white;
@@ -220,53 +270,55 @@ export default function PWAInstallPrompt() {
           font-size: 0.7rem;
           flex-shrink: 0;
         }
-
         .pwa-ios-share-icon {
           display: inline-block;
           border: 1.5px solid white;
           border-radius: 3px;
           padding: 0 2px;
-          font-size: 0.7rem;
+          font-size: 0.65rem;
           line-height: 1.1;
           vertical-align: middle;
         }
-
-        .pwa-banner-actions {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.5rem;
-          flex-shrink: 0;
+        .pwa-install-actions {
+          margin-top: 0.65rem;
         }
-
-        .pwa-banner-install {
+        .pwa-install-primary {
+          width: 100%;
           background: white;
           color: var(--dark, #204051);
           border: none;
-          padding: 0.4rem 0.85rem;
-          border-radius: 6px;
+          padding: 0.45rem 0.75rem;
+          border-radius: 8px;
           font-weight: 600;
-          font-size: 0.8rem;
+          font-size: 0.85rem;
           cursor: pointer;
           font-family: var(--font-primary, 'Montserrat', sans-serif);
-          white-space: nowrap;
         }
-
-        .pwa-banner-dismiss {
+        .pwa-install-primary:hover {
+          background: #f5f5f5;
+        }
+        .pwa-install-dismiss {
+          position: absolute;
+          top: 6px;
+          right: 8px;
           background: none;
           border: none;
-          color: rgba(255,255,255,0.6);
+          color: rgba(255, 255, 255, 0.65);
           font-size: 1.3rem;
           cursor: pointer;
-          padding: 0 0.25rem;
+          padding: 2px 6px;
           line-height: 1;
         }
-
+        .pwa-install-dismiss:hover {
+          color: rgba(255, 255, 255, 0.95);
+        }
         @media (min-width: 769px) {
-          .pwa-banner {
+          .pwa-install-toast {
+            left: 1rem;
+            right: auto;
             bottom: 1rem;
-            left: auto;
-            right: 1rem;
-            max-width: 440px;
+            margin: 0;
+            max-width: 380px;
           }
         }
       `}</style>
