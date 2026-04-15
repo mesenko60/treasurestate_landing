@@ -131,9 +131,9 @@ export default function PWAInstallPrompt() {
         <div className="pwa-install-body">
           <span className="pwa-install-title">Treasure State on your home screen</span>
           <ul className="pwa-install-benefits">
+            <li>Get notified when you pass a point of interest</li>
             <li>Open Montana guides in one tap—no hunting for the tab</li>
             <li>Faster return visits; key pages work even when the network is spotty</li>
-            <li>Nearby map and POIs stay easier to reach on the go</li>
           </ul>
           {iosMode && showIOSSteps && (
             <div className="pwa-ios-steps">
