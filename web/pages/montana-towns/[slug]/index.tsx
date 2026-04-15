@@ -8,6 +8,7 @@ import path from 'path';
 import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import StaysCTA from '../../../components/StaysCTA';
+import AppInstallCTA from '../../../components/AppInstallCTA';
 import { injectStaysCTA, vrboUrl, expediaUrl } from '../../../lib/affiliate-urls';
 import Footer from '../../../components/Footer';
 import Schema from '../../../components/Schema';
@@ -549,6 +550,10 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           {cluster && <CrossHubCities slug={slug} townName={townName} />}
 
           {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
+          <AppInstallCTA
+            variant="card"
+            townName={townName}
+          />
           <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
           {relatedArticles.length > 0 && (
             <RelatedContent articles={relatedArticles} title="Related Reading" />

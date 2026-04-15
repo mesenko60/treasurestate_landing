@@ -2,6 +2,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Header from '../components/Header';
+import AppInstallCTA from '../components/AppInstallCTA';
 import { fetchNearbyPOIs, formatDistance, getCategoryInfo, POI_CATEGORIES } from '../lib/nearbyApi';
 import type { NearbyPOI } from '../lib/nearbyApi';
 import ProximityToast from '../components/nearby/ProximityToast';
@@ -274,6 +275,11 @@ export default function NearbyPage() {
               <div className="nearby-prompt-icon">📍</div>
               <h1>What&apos;s Nearby?</h1>
               <p>Discover historic markers, hot springs, trails, campgrounds, and more near your current location in Montana.</p>
+              <AppInstallCTA
+                variant="inline"
+                headline="Never miss a nearby attraction"
+                body="Install the app and we'll alert you when points of interest are just ahead."
+              />
               <button className="nearby-cta" onClick={requestLocation}>
                 Enable Location
               </button>

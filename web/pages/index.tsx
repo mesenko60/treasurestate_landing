@@ -5,6 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AppInstallCTA from '../components/AppInstallCTA';
 import HomepageCultureModule from '../components/HomepageCultureModule';
 import TodayInHistory from '../components/TodayInHistory';
 import { isEnabled } from '../lib/feature-flags';
@@ -367,6 +368,17 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
                 <Link href="/planners" className="hp-travel-link hp-travel-link--primary">All Travel Guides</Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ═══ 3b. APP INSTALL CTA ═══ */}
+        <section className="hp-section" style={{ paddingTop: 0 }}>
+          <div style={{ maxWidth: '480px', margin: '0 auto' }}>
+            <AppInstallCTA
+              variant="card"
+              headline="Explore on the go"
+              body="Get notified when you pass historic markers, hot springs, and trails. Add Treasure State to your home screen."
+            />
           </div>
         </section>
 

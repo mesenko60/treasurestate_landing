@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+import AppInstallCTA from '../components/AppInstallCTA';
 
 export default function Planners() {
   return (
@@ -75,6 +76,14 @@ export default function Planners() {
             — every course with map and town links.
           </p>
         </section>
+
+        <div style={{ marginTop: '2rem', maxWidth: '480px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <AppInstallCTA
+            variant="card"
+            headline="Stay alert on the road"
+            body="Get proximity notifications for markers and attractions along your route."
+          />
+        </div>
       </main>
       <Footer />
     </>
