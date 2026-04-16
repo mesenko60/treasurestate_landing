@@ -14,6 +14,7 @@ import { DEFAULT_COLLECTION, guideSlugToCollection, collectionLabel } from '../.
 import ShopCTA from '../../components/ShopCTA';
 import StaysCTA from '../../components/StaysCTA';
 import RelatedContent from '../../components/RelatedContent';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 import { isEnabled } from '../../lib/feature-flags';
 import {
@@ -158,6 +159,11 @@ function GuideArticlePage({ article, related }: { article: ArticlePageData; rela
           {article.shopCtaLabel && article.shopCtaUrl && (
             <ShopCTA label={article.shopCtaLabel} url={article.shopCtaUrl} articleSlug={article.slug} />
           )}
+          <AppInstallCTA
+            variant="inline"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
           {!article.noindex && <StaysCTA />}
           {related.length > 0 && <RelatedContent articles={related} />}
         </div>
@@ -324,6 +330,12 @@ export default function GuidePage(props: Props) {
               </div>
             </div>
           )}
+
+          <AppInstallCTA
+            variant="inline"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
 
           <div className="cta-box" style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#204051' }}>Ready to learn more?</p>

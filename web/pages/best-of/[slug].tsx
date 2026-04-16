@@ -10,6 +10,7 @@ import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import RelatedContent from '../../components/RelatedContent';
 import StaysCTA from '../../components/StaysCTA';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 import { isEnabled } from '../../lib/feature-flags';
 import { getRelatedArticles, type ArticleSummary } from '../../lib/articles';
@@ -333,6 +334,12 @@ export default function BestOfPage({ page, freshness, relatedRankings, relatedAr
             View All Rankings
           </Link>
         </div>
+        <AppInstallCTA
+          variant="inline"
+          headline="Never Miss a Montana Landmark"
+          body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+        />
+
         <div style={{ marginTop: '2rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
           <StaysCTA />
         </div>

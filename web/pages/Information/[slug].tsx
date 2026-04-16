@@ -12,6 +12,7 @@ import { DEFAULT_COLLECTION } from '../../lib/shopify-collections';
 import ShopCTA from '../../components/ShopCTA';
 import StaysCTA from '../../components/StaysCTA';
 import RelatedContent from '../../components/RelatedContent';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { isEnabled } from '../../lib/feature-flags';
 import {
   getArticleSlugs,
@@ -139,6 +140,12 @@ export default function InformationArticle({ article, related }: Props) {
           {article.shopCtaLabel && article.shopCtaUrl && (
             <ShopCTA label={article.shopCtaLabel} url={article.shopCtaUrl} articleSlug={article.slug} />
           )}
+
+          <AppInstallCTA
+            variant="inline"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
 
           {!article.noindex && <StaysCTA />}
 

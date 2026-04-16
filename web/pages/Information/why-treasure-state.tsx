@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import AppInstallCTA from '../../components/AppInstallCTA';
 
 export default function WhyTreasureState() {
   const url = 'https://treasurestate.com/information/why-treasure-state/';
@@ -87,6 +88,12 @@ export default function WhyTreasureState() {
             In essence, "The Treasure State" is more than just a catchy phrase; it is a testament to Montana's extraordinary <Link href="/information/geology-of-western-montana/">geological heritage</Link> and the profound impact of its mineral wealth on its history, culture, and economy. It speaks to a legacy of exploration, discovery, and the enduring allure of the treasures hidden within its majestic mountains and expansive plains.
           </p>
         </article>
+
+        <AppInstallCTA
+          variant="inline"
+          headline="Never Miss a Montana Landmark"
+          body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+        />
 
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <Link href="/information/montana-facts/" style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: '#3b6978', color: '#fff', borderRadius: '6px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', marginRight: '1rem' }}>

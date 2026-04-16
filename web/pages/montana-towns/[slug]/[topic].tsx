@@ -10,6 +10,7 @@ import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import StaysCTA from '../../../components/StaysCTA';
+import AppInstallCTA from '../../../components/AppInstallCTA';
 import ShopifyCollectionSlider from '../../../components/ShopifyCollectionSlider';
 import { getShopifyCollection } from '../../../lib/shopify-collections';
 import SingleTownMap from '../../../components/SingleTownMap';
@@ -607,6 +608,11 @@ export default function TopicPage(props: Props) {
           <div className="shopify-mobile-only">
             <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
           </div>
+          <AppInstallCTA
+            variant="inline"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
           <RelatedGuides slug={slug} townName={townName} currentTopic={topic} />
           {!getClusterConfig(slug) && (
             <div style={{ margin: '2rem 0', padding: '1.25rem 1.5rem', background: '#f0f7fa', borderRadius: '10px', border: '1px solid #d4e4ec' }}>

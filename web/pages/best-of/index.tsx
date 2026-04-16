@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import AppInstallCTA from '../../components/AppInstallCTA';
 
 const RANKINGS = [
   { slug: 'most-affordable-towns', title: '10 Most Affordable Towns', icon: '💰', description: 'Where your dollar goes furthest in Big Sky Country. Ranked by home prices, rent, and price-to-income ratio.' },
@@ -93,6 +94,14 @@ export default function BestOfIndex() {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div style={{ maxWidth: '480px', margin: '2.5rem auto 0' }}>
+          <AppInstallCTA
+            variant="card"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
         </div>
 
         <div style={{

@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
+import AppInstallCTA from '../../components/AppInstallCTA';
 
 const url = 'https://treasurestate.com/events/';
 const title = 'Montana Events & Festivals 2026 — Annual Calendar';
@@ -166,6 +167,14 @@ export default function EventsPage() {
           <p>
             Fall brings harvest festivals and art shows. The <strong>Glacier Jazz Stampede</strong> in Kalispell celebrates traditional jazz across Flathead Valley venues. <strong>Lewistown Art Center Harvest Show</strong> showcases regional artists. Many communities host Oktoberfest celebrations, harvest dinners featuring local produce, and hunting-season kickoff events.
           </p>
+        </div>
+
+        <div style={{ maxWidth: '480px', margin: '2rem auto 0' }}>
+          <AppInstallCTA
+            variant="card"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
         </div>
 
         <div className="events-cta">

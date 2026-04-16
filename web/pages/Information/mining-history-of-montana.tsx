@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import StaysCTA from '../../components/StaysCTA';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
@@ -87,6 +88,11 @@ export default function MiningHistoryOfMontana() {
           
           <p>Montana's gold mining history, like the metal itself, has been shaped by tremendous pressures, subjected to the heat of human desire, tested by time. What remains is neither pure nor simple, but embedded in the complex matrix of the state's identity. It is a history of destruction and creation, of individual dreams and corporate power, of environmental cost and cultural transformation. It is a history still being written in the long aftermath of those first discoveries, as Montanans continue to negotiate their relationship with the wealth beneath their feet and the cost of bringing it to light.</p>
         </section>
+        <AppInstallCTA
+          variant="inline"
+          headline="Never Miss a Montana Landmark"
+          body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+        />
         <StaysCTA />
         <ComingSoon />
         </div>

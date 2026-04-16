@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import StaysCTA from '../../components/StaysCTA';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
@@ -85,6 +86,11 @@ export default function GeologyOfWesternMontana() {
           
           <p>This is the true wealth of western Montana, not the gold and copper that drew the first prospectors, not even the scenic beauty that draws tourists today, but this deeper story of planetary process and geological time that makes us part of something infinitely larger and older and more wonderful than our brief human concerns. It is a story written in stone, but it speaks to the heart as much as to the mind, reminding us that we belong to this place in ways we are only beginning to understand.</p>
         </section>
+        <AppInstallCTA
+          variant="inline"
+          headline="Never Miss a Montana Landmark"
+          body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+        />
         <StaysCTA />
         <ComingSoon />
         </div>

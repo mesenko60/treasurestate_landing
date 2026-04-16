@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import StaysCTA from '../../components/StaysCTA';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import ComingSoon from '../../components/ComingSoon';
 import Footer from '../../components/Footer';
 import TableOfContents from '../../components/TableOfContents';
@@ -151,6 +152,11 @@ export default function StoryOfMontanaVigilantes() {
 
           <p>The winter wind still moans through the abandoned buildings of Bannack, across the weathered headboards of boot hill graves, down the silent streets of <Link href="/montana-towns/virginia-city/">Virginia City</Link>. If you listen closely, you might hear in it not just the cries of the victims but also the rationalization of the vigilantes, the human voice in all its terrible complexity, capable of both justice and cruelty, often in the same breath. That complexity, that contradiction, is the true legacy of Montana's vigilante era, a history written not in black and white but in shades of gray and splashes of red against the snow.</p>
         </section>
+        <AppInstallCTA
+          variant="inline"
+          headline="Never Miss a Montana Landmark"
+          body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+        />
         <StaysCTA />
         <ComingSoon />
         </div>

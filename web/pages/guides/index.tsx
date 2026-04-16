@@ -9,6 +9,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ArticleCard from '../../components/ArticleCard';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { isEnabled } from '../../lib/feature-flags';
 import { getArticleSummaries, type ArticleSummary } from '../../lib/articles';
 
@@ -161,6 +162,14 @@ export default function GuidesIndex({ guides, cultureGuides }: Props) {
             ))}
           </div>
         </section>
+
+        <div style={{ maxWidth: '480px', margin: '2.5rem auto 0' }}>
+          <AppInstallCTA
+            variant="card"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
+        </div>
 
         <div style={{
           marginTop: '2.5rem', padding: '1.25rem', background: '#f8faf8',

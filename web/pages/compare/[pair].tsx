@@ -10,6 +10,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import StaysCTA from '../../components/StaysCTA';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { filterNearbyRecreation } from '../../lib/recreation';
 
 type MonthClimate = {
@@ -345,6 +346,12 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
               )}
             </div>
           )}
+
+          <AppInstallCTA
+            variant="inline"
+            headline="Never Miss a Montana Landmark"
+            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+          />
 
           <div style={{ marginTop: '2rem' }}>
             <StaysCTA />

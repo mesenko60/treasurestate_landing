@@ -37,7 +37,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </Head>
-      <nav aria-label="breadcrumb" className="breadcrumbs-nav" style={{ padding: '20px 20px 0 20px', maxWidth: '1200px', margin: '0 auto' }}>
+      <nav aria-label="breadcrumb" className="breadcrumbs-nav" style={{ padding: '20px 20px 16px 20px', maxWidth: '1200px', margin: '0 auto' }}>
         <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '14px', color: '#555' }}>
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
