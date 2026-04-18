@@ -10,8 +10,13 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-const Map = dynamic(() => import('react-map-gl/mapbox').then((mod) => mod.default), { ssr: false });
+const MapboxMap = dynamic(() => import('react-map-gl/mapbox').then((mod) => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then((mod) => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-map-gl/mapbox').then((mod) => mod.Popup), { ssr: false });
+const NavigationControl = dynamic(
+  () => import('react-map-gl/mapbox').then((mod) => mod.NavigationControl),
+  { ssr: false },
+);
 
 type Detail = {
   slug: string;
@@ -38,6 +43,8 @@ type Props = {
   bodyHtml: string;
   cemeteries: Cemetery[];
   nearestTownName: string | null;
+  nearestTownLat: number | null;
+  nearestTownLng: number | null;
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -50,7 +57,138 @@ const STATUS_LABEL: Record<string, string> = {
   manual: 'Approximate map point',
 };
 
-export default function GhostTownPage({ town, bodyHtml, cemeteries, nearestTownName }: Props) {
+type HeroMapProps = {
+  lat: number;
+  lng: number;
+  name: string;
+  slug: string;
+  nearestTownName: string | null;
+  nearestTownSlug: string | null;
+  nearestLat: number | null;
+  nearestLng: number | null;
+  zoom: number;
+};
+
+function DetailHeroMap({
+  lat,
+  lng,
+  name,
+  nearestTownName,
+  nearestTownSlug,
+  nearestLat,
+  nearestLng,
+  zoom,
+}: HeroMapProps) {
+  type PopupKind = 'ghost' | 'near';
+  const [popup, setPopup] = React.useState<PopupKind | null>(null);
+
+  // Center on the midpoint when we have a nearest town, otherwise on the ghost town itself.
+  const centerLat = nearestLat != null && nearestLng != null ? (lat + nearestLat) / 2 : lat;
+  const centerLng = nearestLat != null && nearestLng != null ? (lng + nearestLng) / 2 : lng;
+
+  return (
+    <div className="gt-hero-map">
+      <MapboxMap
+        initialViewState={{ latitude: centerLat, longitude: centerLng, zoom }}
+        mapStyle="mapbox://styles/mapbox/outdoors-v12"
+        mapboxAccessToken={MAPBOX_TOKEN}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <NavigationControl position="top-right" showCompass={false} />
+
+        <Marker
+          latitude={lat}
+          longitude={lng}
+          anchor="center"
+          onClick={(e) => {
+            e.originalEvent.stopPropagation();
+            setPopup((p) => (p === 'ghost' ? null : 'ghost'));
+          }}
+        >
+          <div className="gt-pin" title={name} />
+        </Marker>
+
+        {popup === 'ghost' && (
+          <Popup
+            latitude={lat}
+            longitude={lng}
+            anchor="top"
+            onClose={() => setPopup(null)}
+            closeOnClick={false}
+            closeButton={true}
+            offset={14}
+          >
+            <strong>{name}</strong>
+            <div style={{ fontSize: '0.8rem', color: '#555' }}>Ghost town</div>
+          </Popup>
+        )}
+
+        {nearestLat != null && nearestLng != null && nearestTownName && (
+          <>
+            <Marker
+              latitude={nearestLat}
+              longitude={nearestLng}
+              anchor="center"
+              onClick={(e) => {
+                e.originalEvent.stopPropagation();
+                setPopup((p) => (p === 'near' ? null : 'near'));
+              }}
+            >
+              <div className="gt-pin-near" title={nearestTownName} />
+            </Marker>
+
+            {popup === 'near' && (
+              <Popup
+                latitude={nearestLat}
+                longitude={nearestLng}
+                anchor="top"
+                onClose={() => setPopup(null)}
+                closeOnClick={false}
+                closeButton={true}
+                offset={12}
+              >
+                <strong>{nearestTownName}</strong>
+                <div style={{ fontSize: '0.8rem', color: '#555' }}>Nearest active town</div>
+                {nearestTownSlug && (
+                  <div style={{ marginTop: '0.35rem' }}>
+                    <Link href={`/montana-towns/${nearestTownSlug}/`} style={{ color: '#3b6978' }}>
+                      Visit guide →
+                    </Link>
+                  </div>
+                )}
+              </Popup>
+            )}
+          </>
+        )}
+      </MapboxMap>
+    </div>
+  );
+}
+
+/** Pick a Mapbox zoom that comfortably shows both points; falls back to ~10 if no nearest town. */
+function fitZoom(townLat: number, townLng: number, nearLat: number | null, nearLng: number | null): number {
+  if (nearLat == null || nearLng == null) return 10;
+  const dLat = Math.abs(townLat - nearLat);
+  const dLng = Math.abs(townLng - nearLng);
+  const span = Math.max(dLat, dLng * Math.cos((townLat * Math.PI) / 180));
+  if (span <= 0) return 11;
+  if (span < 0.05) return 11;
+  if (span < 0.12) return 10;
+  if (span < 0.25) return 9.5;
+  if (span < 0.5) return 9;
+  if (span < 1) return 8.5;
+  if (span < 2) return 8;
+  return 7.5;
+}
+
+export default function GhostTownPage({
+  town,
+  bodyHtml,
+  cemeteries,
+  nearestTownName,
+  nearestTownLat,
+  nearestTownLng,
+}: Props) {
   const url = `https://treasurestate.com/ghost-towns/${town.slug}/`;
   const plainDesc = bodyHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 158);
   const desc = plainDesc ? `${plainDesc}…` : `${town.name} — Montana ghost town in ${town.countyLabel}.`;
@@ -109,17 +247,14 @@ export default function GhostTownPage({ town, bodyHtml, cemeteries, nearestTownN
 
       <style dangerouslySetInnerHTML={{ __html: `
         .gt-detail { max-width: 960px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
-        .gt-detail-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; }
+        .gt-detail-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; margin-top: 1.5rem; }
         @media (max-width: 860px) { .gt-detail-grid { grid-template-columns: 1fr; } }
         .gt-sidebar { font-size: 0.9rem; color: #444; }
         .gt-sidebar h2 { font-size: 1rem; color: #204051; margin: 0 0 0.5rem; }
-        .gt-facts { margin: 0; padding: 0; }
-        .gt-facts dt { font-weight: 600; color: #204051; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; margin: 0.55rem 0 0; }
-        .gt-facts dt:first-of-type { margin-top: 0; }
-        .gt-facts dd { margin: 0.15rem 0 0.35rem; padding-bottom: 0.35rem; border-bottom: 1px solid #eee; }
-        .gt-facts dd:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
-        .gt-map { height: 220px; border-radius: 10px; overflow: hidden; border: 1px solid #e0e0e0; margin: 1rem 0; }
-        .gt-pin { width: 18px; height: 18px; background: #c9a227; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .gt-hero-map { height: 380px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; margin: 0 auto; max-width: 960px; }
+        @media (max-width: 600px) { .gt-hero-map { height: 280px; } }
+        .gt-pin { width: 18px; height: 18px; background: #c9a227; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); cursor: pointer; }
+        .gt-pin-near { width: 14px; height: 14px; background: #3b6978; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); cursor: pointer; }
         .gt-cem { margin-top: 1.25rem; }
         .gt-cem ul { margin: 0.35rem 0 0 1rem; padding: 0; font-size: 0.85rem; color: #555; }
         .compare-intro-prose.gt-prose { text-align: left; }
@@ -127,6 +262,20 @@ export default function GhostTownPage({ town, bodyHtml, cemeteries, nearestTownN
       `}} />
 
       <main className="gt-detail">
+        {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
+          <DetailHeroMap
+            lat={town.lat}
+            lng={town.lng}
+            name={town.name}
+            slug={town.slug}
+            nearestTownName={nearestTownName}
+            nearestTownSlug={town.nearestLivingTownSlug}
+            nearestLat={nearestTownLat}
+            nearestLng={nearestTownLng}
+            zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
+          />
+        )}
+
         <div className="gt-detail-grid">
           <article
             className="compare-intro-prose gt-prose"
@@ -135,56 +284,6 @@ export default function GhostTownPage({ town, bodyHtml, cemeteries, nearestTownN
           />
 
           <aside className="gt-sidebar">
-            <h2>On the map</h2>
-            <dl className="gt-facts">
-              <dt>Region</dt>
-              <dd>{town.region}</dd>
-              <dt>GNIS</dt>
-              <dd>
-                {town.gnisId ? (
-                  <a
-                    href={`https://geonames.usgs.gov/apex/f?p=GNISPQ:3:::NO::P3_FID:${town.gnisId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {town.gnisId}
-                  </a>
-                ) : (
-                  '—'
-                )}
-              </dd>
-              {town.matchedGnisName ? (
-                <>
-                  <dt>Matched feature</dt>
-                  <dd style={{ fontSize: '0.82rem' }}>{town.matchedGnisName}</dd>
-                </>
-              ) : null}
-              {town.lat != null && town.lng != null ? (
-                <>
-                  <dt>Coordinates</dt>
-                  <dd>
-                    {town.lat.toFixed(5)}, {town.lng.toFixed(5)}
-                  </dd>
-                </>
-              ) : null}
-            </dl>
-
-            {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
-              <div className="gt-map">
-                <Map
-                  initialViewState={{ latitude: town.lat, longitude: town.lng, zoom: 11 }}
-                  mapStyle="mapbox://styles/mapbox/outdoors-v12"
-                  mapboxAccessToken={MAPBOX_TOKEN}
-                  style={{ width: '100%', height: '100%' }}
-                  interactive={false}
-                >
-                  <Marker latitude={town.lat} longitude={town.lng} anchor="center">
-                    <div className="gt-pin" />
-                  </Marker>
-                </Map>
-              </div>
-            )}
-
             {town.nearestLivingTownSlug && nearestTownName && (
               <p>
                 <strong>Nearest town guide:</strong>{' '}
@@ -261,6 +360,17 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const nearestTownName =
     nearestSlug && townData[nearestSlug]?.name ? (townData[nearestSlug].name as string) : null;
 
+  const coordsPath = path.join(process.cwd(), 'data', 'town-coordinates.json');
+  type TownCoord = { name?: string; lat?: number; lng?: number };
+  const townCoords: Record<string, TownCoord> = fs.existsSync(coordsPath)
+    ? JSON.parse(fs.readFileSync(coordsPath, 'utf8'))
+    : {};
+  const nearestCoord = nearestSlug ? townCoords[nearestSlug] : undefined;
+  const nearestTownLat =
+    nearestCoord && typeof nearestCoord.lat === 'number' ? nearestCoord.lat : null;
+  const nearestTownLng =
+    nearestCoord && typeof nearestCoord.lng === 'number' ? nearestCoord.lng : null;
+
   let bodyHtml = '';
   if (fs.existsSync(mdPath)) {
     const raw = fs.readFileSync(mdPath, 'utf8');
@@ -274,6 +384,8 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
       bodyHtml,
       cemeteries,
       nearestTownName,
+      nearestTownLat,
+      nearestTownLng,
     },
   };
 };
