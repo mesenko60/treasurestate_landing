@@ -25,6 +25,42 @@ function getTownList(repoRoot) {
     .filter(t => { if (seen.has(t.slug)) return false; seen.add(t.slug); return true; });
 }
 
+/** Plain-text excerpt from compare intro markdown (first prose block after H1). */
+function excerptFromCompareIntroMarkdown(raw) {
+  const withoutH1 = raw.replace(/^\s*#\s[^\n]+\r?\n?/, '');
+  const beforeFirstH2 = withoutH1.split(/\n##\s/)[0].trim();
+  let plain = beforeFirstH2
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\r?\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!plain) return null;
+  const max = 220;
+  if (plain.length <= max) return plain;
+  const cut = plain.slice(0, max);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 80 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+}
+
+/** Map canonical pair slug `a-vs-b` -> excerpt for search snippets. */
+function loadCompareIntroExcerptMap(webDir) {
+  const dir = path.join(webDir, 'content', 'compare-intros');
+  const map = Object.create(null);
+  if (!fs.existsSync(dir)) return map;
+  for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith('.md')) continue;
+    const key = f.replace(/\.md$/i, '');
+    try {
+      const raw = fs.readFileSync(path.join(dir, f), 'utf8');
+      const ex = excerptFromCompareIntroMarkdown(raw);
+      if (ex) map[key] = ex;
+    } catch { /* skip */ }
+  }
+  return map;
+}
+
 function fmtPop(n) {
   if (!n) return '';
   if (n >= 1000) return `${(n / 1000).toFixed(1)}K residents`;
@@ -273,6 +309,9 @@ function walkMarkdownFilesSorted(absDir) {
   const townNameMap = {};
   for (const t of towns) { townNameMap[t.slug] = t.name; }
 
+  const compareIntroExcerpts = loadCompareIntroExcerptMap(webDir);
+  const defaultCompareDesc = 'Side-by-side comparison of housing, climate, schools, recreation';
+
   const slugs = towns.map((t) => t.slug);
   for (let i = 0; i < slugs.length; i++) {
     for (let j = i + 1; j < slugs.length; j++) {
@@ -280,10 +319,15 @@ function walkMarkdownFilesSorted(absDir) {
       const b = slugs[j];
       const nameA = townNameMap[a] || a.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
       const nameB = townNameMap[b] || b.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      const pairKey = `${a}-vs-${b}`;
+      const introExcerpt = compareIntroExcerpts[pairKey];
+      const description = introExcerpt
+        ? `${introExcerpt} · ${defaultCompareDesc}`.slice(0, 320)
+        : defaultCompareDesc;
       entries.push({
         type: 'comparison',
         title: `${nameA} vs ${nameB}`,
-        description: 'Side-by-side comparison of housing, climate, schools, recreation',
+        description,
         url: `/compare/${a}-vs-${b}/`,
         keywords: `${nameA} ${nameB} compare comparison vs versus`,
       });
