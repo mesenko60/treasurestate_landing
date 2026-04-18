@@ -37,9 +37,12 @@ const cemOut = path.join(dataDir, 'cemeteries-near-ghost-towns.json');
 const contentDir = path.join(webDir, 'content', 'ghost-towns');
 
 function excerptFromGhostMarkdown(raw) {
-  const withoutH1 = raw.replace(/^\s*#\s[^\n]+\r?\n?/, '');
-  const beforeFirstH2 = withoutH1.split(/\n##\s/)[0].trim();
-  let plain = beforeFirstH2
+  let s = raw;
+  s = s.replace(/^\s*#\s[^\n]+\r?\n?/, '');
+  s = s.replace(/^##\s+[^\n]*\r?\n?/, '');
+  const beforeNextH2 = s.split(/\n##\s/)[0].trim();
+  let plain = beforeNextH2
+    .replace(/###?\s+[^\n]*/g, '')
     .replace(/\*\*(.*?)\*\*/g, '$1')
     .replace(/\*(.*?)\*/g, '$1')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
