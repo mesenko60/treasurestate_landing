@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetStaticProps } from 'next';
@@ -18,6 +18,8 @@ type CuratedRow = {
   slug: string;
   name: string;
   countyLabel: string;
+  /** 3-digit Montana county FIPS when known — used to narrow grey GNIS pins when filters are on */
+  countyFips: string | null;
   region: string;
   status: string;
   lat: number | null;
@@ -51,8 +53,6 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
     zoom: 5.5,
   });
 
-  const curatedWithCoords = useMemo(() => curated.filter((c) => c.lat != null && c.lng != null), [curated]);
-
   const regions = useMemo(() => {
     const s = new Set<string>();
     curated.forEach((c) => s.add(c.region));
@@ -67,10 +67,34 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
     });
   }, [curated, regionFilter, statusFilter]);
 
+  const hasActiveFilter = Boolean(regionFilter || statusFilter);
+
+  const curatedOnMap = useMemo(
+    () => filteredCurated.filter((c) => c.lat != null && c.lng != null),
+    [filteredCurated],
+  );
+
   const greyPins = useMemo(() => {
     const cap = 500;
-    return allPins.slice(0, cap);
-  }, [allPins]);
+    if (!hasActiveFilter) return allPins.slice(0, cap);
+    const counties = new Set(
+      filteredCurated.map((c) => c.countyFips).filter((f): f is string => Boolean(f)),
+    );
+    if (counties.size === 0) return [];
+    return allPins.filter((p) => counties.has(p.countyFips)).slice(0, cap);
+  }, [allPins, filteredCurated, hasActiveFilter]);
+
+  useEffect(() => {
+    if (selectedGold && !filteredCurated.some((c) => c.slug === selectedGold.slug)) {
+      setSelectedGold(null);
+    }
+  }, [filteredCurated, selectedGold]);
+
+  useEffect(() => {
+    if (selectedGrey && !greyPins.some((p) => p.gnisId === selectedGrey.gnisId)) {
+      setSelectedGrey(null);
+    }
+  }, [greyPins, selectedGrey]);
 
   const handleGoldClick = useCallback((c: CuratedRow) => {
     setSelectedGrey(null);
@@ -179,10 +203,19 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
               <option value="preserved">Preserved</option>
               <option value="partial">Partial / small population</option>
               <option value="ruins">Ruins / remnants</option>
+              <option value="vanished">Mostly vanished</option>
+              <option value="manual">Historic site (approx. point)</option>
             </select>
             <p className="gt-legend">
               <strong>Grey dots</strong> — GNIS historical places (no article).{' '}
               <strong>Gold pins</strong> — curated story + map coordinates.
+              {hasActiveFilter ? (
+                <>
+                  {' '}
+                  With filters on, the map shows matching gold pins and grey dots only in counties that contain a
+                  matching story (up to 500 grey pins).
+                </>
+              ) : null}
             </p>
           </aside>
 
@@ -207,7 +240,7 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
                     />
                   </Marker>
                 ))}
-                {curatedWithCoords.map((c) => (
+                {curatedOnMap.map((c) => (
                   <Marker key={`c-${c.slug}`} latitude={c.lat!} longitude={c.lng!} anchor="center">
                     <div className="gt-pin-gold" title={c.name} onClick={() => handleGoldClick(c)} />
                   </Marker>
@@ -293,6 +326,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     slug: String(d.slug),
     name: String(d.name),
     countyLabel: String(d.countyLabel || ''),
+    countyFips: typeof d.countyFips === 'string' && d.countyFips ? String(d.countyFips) : null,
     region: String(d.region),
     status: String(d.status),
     lat: typeof d.lat === 'number' ? d.lat : null,
