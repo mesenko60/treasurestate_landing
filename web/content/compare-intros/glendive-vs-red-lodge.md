@@ -1,0 +1,27 @@
+# Red Lodge vs Glendive, Montana: Which Town Is Right for You?
+
+Red Lodge and Glendive offer two very different Montana lifestyles. Red Lodge is a historic mountain town and gateway to Yellowstone with 2,336 people, its vibrant, historic downtown, its position at the base of the Beartooth Highway, and quick access to Red Lodge Mountain and the Beartooth Mountains. Glendive, with just 4,873 residents, is a rugged eastern Montana town known for its rich dinosaur fossil beds, its position as an agricultural and energy hub, and Makoshika State Park and the Yellowstone River.
+
+## Who Should Move to Red Lodge?
+
+* Outdoor enthusiasts who want immediate access to skiing, hiking, and the Beartooth Wilderness.
+* People seeking a lively, historic mountain town with a strong sense of community.
+* Retirees and remote workers drawn to the spectacular scenery and small-town charm.
+* Those who want to live in a gateway community to Yellowstone National Park.
+
+## Who Should Move to Glendive?
+
+* Workers in the agriculture, railroad, or energy sectors looking for steady employment in eastern Montana.
+* Homebuyers seeking some of the most affordable real estate in the state.
+* People who appreciate the stark beauty of the badlands and the quiet isolation of the high plains.
+* Paleontology enthusiasts and rockhounds drawn to the fossil-rich terrain of Makoshika State Park.
+
+## Cost of Living Breakdown
+
+Housing is where the biggest difference shows up. The median home price in Red Lodge is around $550,000, while in Glendive it is closer to $185,447, a difference of roughly $364,553, making Glendive significantly more affordable. Rent follows the same pattern: a typical rental in Red Lodge averages about $1,200 per month, compared to roughly $832 in Glendive.
+
+Red Lodge's overall cost of living differs from Glendive's. Red Lodge offers lower average salaries compared to Glendive, with a median household income of $58,000 compared to Glendive's $71,063.
+
+## Lifestyle and Vibe
+
+Red Lodge is a vibrant, historic mountain town that balances its role as a tourist destination with a strong, year-round local community. It offers spectacular access to the Beartooth Mountains and a lively downtown filled with shops, restaurants, and local events. Glendive is a practical, hardworking town set against the dramatic backdrop of the Montana badlands. It is far removed from the tourist crowds of the western mountains, offering a quiet, resilient community life where the local economy is tied to the land, the railroad, and the river.

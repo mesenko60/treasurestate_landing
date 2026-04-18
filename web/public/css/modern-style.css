@@ -380,6 +380,31 @@ main {
   line-height: 1.7;
 }
 
+/* Compare page markdown intros: left-aligned section headings */
+.compare-intro-prose h2 {
+  text-align: left;
+  font-size: 1.45rem;
+  margin-top: 1.75rem;
+}
+.compare-intro-prose h2:first-child {
+  margin-top: 0;
+}
+.compare-intro-prose h2::after {
+  left: 0;
+  transform: none;
+}
+.compare-intro-prose ul {
+  margin: 0 0 1.25rem 1.25rem;
+  padding: 0;
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+.compare-intro-prose a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
 /* Planners Section */
 .planners-section {
   background-color: var(--white);

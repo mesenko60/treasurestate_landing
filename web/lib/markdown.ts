@@ -205,6 +205,11 @@ function generateQuestion(sectionTitle: string, townName: string): string {
   return `Tell me about ${sectionTitle.toLowerCase()} in ${townName}.`;
 }
 
+/** Remove first ATX H1 line so the page hero can remain the only visible H1 (compare intros, etc.). */
+export function stripLeadingMarkdownH1(md: string): string {
+  return md.replace(/^\s*#\s[^\n]+\r?\n?/, '');
+}
+
 function stripMarkdownAndSources(text: string): string {
   // Very basic markdown stripping for schema.org text
   return text

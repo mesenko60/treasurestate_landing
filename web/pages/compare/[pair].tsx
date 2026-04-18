@@ -55,6 +55,8 @@ type Props = {
   guideB: GuideLink;
   hasLodgingA: boolean;
   hasLodgingB: boolean;
+  /** Rich intro from web/content/compare-intros/{a}-vs-{b}.md (canonical slug order); null if missing */
+  introHtml: string | null;
 };
 
 const AIRPORT_NAMES: Record<string, string> = {
@@ -93,7 +95,7 @@ function CompareRow({ label, valA, valB }: { label: string; valA: string; valB: 
   );
 }
 
-export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA, hasLodgingB }: Props) {
+export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA, hasLodgingB, introHtml }: Props) {
   const title = `${townA.name} vs ${townB.name}, Montana | Side by Side Comparison`;
   const metaDesc = `Compare ${townA.name} (${townA.nickname}) and ${townB.name} (${townB.nickname}), Montana side by side: population, climate, schools, recreation, and more.`;
   const [canonicalSlugA, canonicalSlugB] = [townA.slug, townB.slug].sort();
@@ -171,9 +173,17 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
             ))}
           </div>
 
-          <p style={{ textAlign: 'center', color: '#666', marginBottom: '2rem' }}>
-            A side-by-side comparison to help you decide which Montana community is right for you.
-          </p>
+          {introHtml ? (
+            <article
+              className="content-section compare-intro-prose"
+              style={{ marginBottom: '2rem', textAlign: 'left' }}
+              dangerouslySetInnerHTML={{ __html: introHtml }}
+            />
+          ) : (
+            <p style={{ textAlign: 'center', color: '#666', marginBottom: '2rem' }}>
+              A side-by-side comparison to help you decide which Montana community is right for you.
+            </p>
+          )}
 
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
@@ -478,6 +488,15 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const hasLodgingA = fs.existsSync(path.join(lodgingDir, `${toLodgingSlug(slugA)}.md`));
   const hasLodgingB = fs.existsSync(path.join(lodgingDir, `${toLodgingSlug(slugB)}.md`));
 
+  const { markdownToHtml, stripLeadingMarkdownH1 } = await import('../../lib/markdown');
+  const [canonA, canonB] = [slugA, slugB].sort();
+  const introPath = path.join(process.cwd(), 'content', 'compare-intros', `${canonA}-vs-${canonB}.md`);
+  let introHtml: string | null = null;
+  if (fs.existsSync(introPath)) {
+    const rawIntro = fs.readFileSync(introPath, 'utf8');
+    introHtml = await markdownToHtml(stripLeadingMarkdownH1(rawIntro));
+  }
+
   return {
     props: {
       townA: buildTown(slugA),
@@ -486,6 +505,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       guideB: guideLink(slugB) ? { name: townData[slugB]?.name || slugB, href: `/guides/moving-to-${slugB}-montana/` } : null,
       hasLodgingA,
       hasLodgingB,
+      introHtml,
     }
   };
 };
