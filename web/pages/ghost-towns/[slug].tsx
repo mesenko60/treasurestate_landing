@@ -259,13 +259,13 @@ export default function GhostTownPage({
       <Breadcrumbs items={breadcrumbs} />
 
       <style dangerouslySetInnerHTML={{ __html: `
-        .gt-detail { max-width: 960px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
-        .gt-detail-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; margin-top: 1.5rem; }
-        @media (max-width: 860px) { .gt-detail-grid { grid-template-columns: 1fr; } }
-        .gt-sidebar { font-size: 0.9rem; color: #444; }
-        .gt-sidebar h2 { font-size: 1rem; color: #204051; margin: 0 0 0.5rem; }
-        .gt-hero-map { height: 360px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; margin: 0 0 1.25rem; width: 100%; }
-        @media (max-width: 600px) { .gt-hero-map { height: 260px; } }
+        .gt-detail { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+        .gt-related { max-width: 820px; margin: 2rem auto 0; padding: 1.25rem 0 0; border-top: 1px solid #e0e0e0; font-size: 0.95rem; color: #444; }
+        .gt-related h2 { font-size: 1.05rem; color: #204051; margin: 0 0 0.65rem; }
+        .gt-related p { margin: 0.35rem 0; }
+        .gt-related .gt-related-back { margin-top: 1.25rem; }
+        .gt-hero-map { height: 420px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; margin: 0 0 1.25rem; width: 100%; }
+        @media (max-width: 600px) { .gt-hero-map { height: 280px; } }
         .gt-town-title { font-size: 2rem; color: #204051; margin: 0 0 0.75rem; line-height: 1.15; }
         .gt-pin-wrap { position: relative; display: flex; flex-direction: column; align-items: center; pointer-events: auto; }
         .gt-pin { width: 18px; height: 18px; background: #c9a227; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); cursor: pointer; }
@@ -279,64 +279,60 @@ export default function GhostTownPage({
       `}} />
 
       <main className="gt-detail">
-        <div className="gt-detail-grid">
-          <article className="compare-intro-prose gt-prose" style={{ marginBottom: '2rem' }}>
-            {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
-              <DetailHeroMap
-                lat={town.lat}
-                lng={town.lng}
-                name={town.name}
-                slug={town.slug}
-                nearestTownName={nearestTownName}
-                nearestTownSlug={town.nearestLivingTownSlug}
-                nearestLat={nearestTownLat}
-                nearestLng={nearestTownLng}
-                zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
-              />
-            )}
-            <h1 className="gt-town-title">
-              {town.name}
-              {leadHeading ? ` ${leadHeading}` : ''}
-            </h1>
-            <div dangerouslySetInnerHTML={{ __html: bodyAfterLead }} />
-          </article>
+        <article className="compare-intro-prose gt-prose">
+          {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
+            <DetailHeroMap
+              lat={town.lat}
+              lng={town.lng}
+              name={town.name}
+              slug={town.slug}
+              nearestTownName={nearestTownName}
+              nearestTownSlug={town.nearestLivingTownSlug}
+              nearestLat={nearestTownLat}
+              nearestLng={nearestTownLng}
+              zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
+            />
+          )}
+          <h1 className="gt-town-title">
+            {town.name}
+            {leadHeading ? ` ${leadHeading}` : ''}
+          </h1>
+          <div dangerouslySetInnerHTML={{ __html: bodyAfterLead }} />
+        </article>
 
-          <aside className="gt-sidebar">
-            {town.nearestLivingTownSlug && nearestTownName && (
-              <p>
-                <strong>Nearest town guide:</strong>{' '}
-                <Link href={`/montana-towns/${town.nearestLivingTownSlug}/`}>{nearestTownName}</Link>
-              </p>
-            )}
-
-            {town.hasMarkerSlug && (
-              <p>
-                <strong>Historic marker:</strong>{' '}
-                <Link href={`/historic-markers/${town.slug}/`}>Read the roadside marker page</Link>
-              </p>
-            )}
-
-            {cemeteries.length > 0 && (
-              <div className="gt-cem">
-                <h2>Pioneer cemeteries (within 10 mi)</h2>
-                <p style={{ fontSize: '0.82rem', color: '#666', margin: '0.25rem 0 0.5rem' }}>
-                  From GNIS cemetery features — verify on the ground before visiting.
-                </p>
-                <ul>
-                  {cemeteries.map((c) => (
-                    <li key={`${c.gnisId}-${c.name}`}>
-                      {c.name.replace(/\s*\(historical\)\s*$/i, '')} — {c.miles} mi
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            <p style={{ marginTop: '1.25rem' }}>
-              <Link href="/ghost-towns/">← All Montana ghost towns</Link>
+        <aside className="gt-related">
+          <h2>Related on Treasure State</h2>
+          {town.nearestLivingTownSlug && nearestTownName && (
+            <p>
+              <strong>Nearest town guide:</strong>{' '}
+              <Link href={`/montana-towns/${town.nearestLivingTownSlug}/`}>{nearestTownName}</Link>
             </p>
-          </aside>
-        </div>
+          )}
+          {town.hasMarkerSlug && (
+            <p>
+              <strong>Historic marker:</strong>{' '}
+              <Link href={`/historic-markers/${town.slug}/`}>Read the roadside marker page</Link>
+            </p>
+          )}
+          {cemeteries.length > 0 && (
+            <div className="gt-cem">
+              <h2 style={{ marginTop: '1.25rem' }}>Pioneer cemeteries (within 10 mi)</h2>
+              <p style={{ fontSize: '0.82rem', color: '#666', margin: '0.25rem 0 0.5rem' }}>
+                From GNIS cemetery features — verify on the ground before visiting.
+              </p>
+              <ul style={{ margin: '0.35rem 0 0 1.1rem', padding: 0, fontSize: '0.9rem', color: '#555' }}>
+                {cemeteries.map((c) => (
+                  <li key={`${c.gnisId}-${c.name}`}>
+                    {c.name.replace(/\s*\(historical\)\s*$/i, '')} — {c.miles} mi
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <p className="gt-related-back">
+            <Link href="/ghost-towns/">← All Montana ghost towns</Link>
+          </p>
+        </aside>
       </main>
       <Footer />
     </>
