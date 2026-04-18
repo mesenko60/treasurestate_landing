@@ -99,13 +99,16 @@ function DetailHeroMap({
         <Marker
           latitude={lat}
           longitude={lng}
-          anchor="center"
+          anchor="top"
           onClick={(e) => {
             e.originalEvent.stopPropagation();
             setPopup((p) => (p === 'ghost' ? null : 'ghost'));
           }}
         >
-          <div className="gt-pin" title={name} />
+          <div className="gt-pin-wrap">
+            <div className="gt-pin" title={name} />
+            <span className="gt-pin-label">{name}</span>
+          </div>
         </Marker>
 
         {popup === 'ghost' && (
@@ -128,13 +131,16 @@ function DetailHeroMap({
             <Marker
               latitude={nearestLat}
               longitude={nearestLng}
-              anchor="center"
+              anchor="top"
               onClick={(e) => {
                 e.originalEvent.stopPropagation();
                 setPopup((p) => (p === 'near' ? null : 'near'));
               }}
             >
-              <div className="gt-pin-near" title={nearestTownName} />
+              <div className="gt-pin-wrap">
+                <div className="gt-pin-near" title={nearestTownName} />
+                <span className="gt-pin-label is-near">{nearestTownName}</span>
+              </div>
             </Marker>
 
             {popup === 'near' && (
@@ -251,10 +257,14 @@ export default function GhostTownPage({
         @media (max-width: 860px) { .gt-detail-grid { grid-template-columns: 1fr; } }
         .gt-sidebar { font-size: 0.9rem; color: #444; }
         .gt-sidebar h2 { font-size: 1rem; color: #204051; margin: 0 0 0.5rem; }
-        .gt-hero-map { height: 380px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; margin: 0 auto; max-width: 960px; }
-        @media (max-width: 600px) { .gt-hero-map { height: 280px; } }
+        .gt-hero-map { height: 360px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; margin: 0 0 1.25rem; width: 100%; }
+        @media (max-width: 600px) { .gt-hero-map { height: 260px; } }
+        .gt-town-title { font-size: 2rem; color: #204051; margin: 0 0 0.75rem; line-height: 1.15; }
+        .gt-pin-wrap { position: relative; display: flex; flex-direction: column; align-items: center; pointer-events: auto; }
         .gt-pin { width: 18px; height: 18px; background: #c9a227; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); cursor: pointer; }
         .gt-pin-near { width: 14px; height: 14px; background: #3b6978; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); cursor: pointer; }
+        .gt-pin-label { margin-top: 4px; padding: 2px 6px; background: rgba(255,255,255,0.92); border: 1px solid rgba(0,0,0,0.08); border-radius: 4px; font-size: 0.72rem; font-weight: 600; color: #204051; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.15); pointer-events: none; }
+        .gt-pin-label.is-near { color: #3b6978; }
         .gt-cem { margin-top: 1.25rem; }
         .gt-cem ul { margin: 0.35rem 0 0 1rem; padding: 0; font-size: 0.85rem; color: #555; }
         .compare-intro-prose.gt-prose { text-align: left; }
@@ -262,26 +272,24 @@ export default function GhostTownPage({
       `}} />
 
       <main className="gt-detail">
-        {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
-          <DetailHeroMap
-            lat={town.lat}
-            lng={town.lng}
-            name={town.name}
-            slug={town.slug}
-            nearestTownName={nearestTownName}
-            nearestTownSlug={town.nearestLivingTownSlug}
-            nearestLat={nearestTownLat}
-            nearestLng={nearestTownLng}
-            zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
-          />
-        )}
-
         <div className="gt-detail-grid">
-          <article
-            className="compare-intro-prose gt-prose"
-            style={{ marginBottom: '2rem' }}
-            dangerouslySetInnerHTML={{ __html: bodyHtml }}
-          />
+          <article className="compare-intro-prose gt-prose" style={{ marginBottom: '2rem' }}>
+            {town.lat != null && town.lng != null && MAPBOX_TOKEN && (
+              <DetailHeroMap
+                lat={town.lat}
+                lng={town.lng}
+                name={town.name}
+                slug={town.slug}
+                nearestTownName={nearestTownName}
+                nearestTownSlug={town.nearestLivingTownSlug}
+                nearestLat={nearestTownLat}
+                nearestLng={nearestTownLng}
+                zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
+              />
+            )}
+            <h1 className="gt-town-title">{town.name}</h1>
+            <div dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+          </article>
 
           <aside className="gt-sidebar">
             {town.nearestLivingTownSlug && nearestTownName && (
