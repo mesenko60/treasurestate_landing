@@ -233,13 +233,25 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
       `}} />
 
       <main className="gt-page">
-        <p className="compare-intro-prose gt-hub-prose">
-          Explore Montana&apos;s mining camps, railroad towns, and frontier communities. Gold pins mark the{' '}
-          {curated.length} towns with full articles. Grey dots show every GNIS historical populated place (PPLQ) in the
-          state — about {allPins.length} places — many with no surviving structures. See the{' '}
-          <Link href="/ghost-towns/all/">sortable index of all historical settlements</Link> or read about{' '}
-          <Link href="/information/mining-history-of-montana/">Montana mining history</Link>.
-        </p>
+        {hubEssayHtml ? (
+          <div className="gt-essay-wrap" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
+            <div className={`gt-essay-preview compare-intro-prose gt-hub-essay${essayExpanded ? ' expanded' : ''}`}>
+              <article
+                aria-label="The Geography of Abandonment"
+                dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
+              />
+              {!essayExpanded && <div className="gt-essay-fade" />}
+            </div>
+            <button
+              type="button"
+              className="gt-essay-toggle"
+              onClick={() => setEssayExpanded((v) => !v)}
+              aria-expanded={essayExpanded}
+            >
+              {essayExpanded ? 'Show less ↑' : 'Read more ↓'}
+            </button>
+          </div>
+        ) : null}
 
         <div className="gt-layout">
           <aside className="gt-sidebar">
@@ -411,26 +423,6 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
             </div>
           </section>
         ))}
-
-        {hubEssayHtml ? (
-          <div className="gt-essay-wrap">
-            <div className={`gt-essay-preview compare-intro-prose gt-hub-essay${essayExpanded ? ' expanded' : ''}`}>
-              <article
-                aria-label="The Geography of Abandonment"
-                dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
-              />
-              {!essayExpanded && <div className="gt-essay-fade" />}
-            </div>
-            <button
-              type="button"
-              className="gt-essay-toggle"
-              onClick={() => setEssayExpanded((v) => !v)}
-              aria-expanded={essayExpanded}
-            >
-              {essayExpanded ? 'Show less ↑' : 'Read more ↓'}
-            </button>
-          </div>
-        ) : null}
       </main>
       <Footer />
     </>
