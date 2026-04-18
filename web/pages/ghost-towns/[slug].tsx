@@ -199,6 +199,13 @@ export default function GhostTownPage({
   const plainDesc = bodyHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 158);
   const desc = plainDesc ? `${plainDesc}…` : `${town.name} — Montana ghost town in ${town.countyLabel}.`;
 
+  // If the imported markdown begins with an H2 (typically "## History"), lift its
+  // text into the page H1 so the heading reads e.g. "Quigley History" on one line,
+  // and remove that H2 from the body to avoid a duplicate heading.
+  const leadH2Match = bodyHtml.match(/^\s*<h2[^>]*>([\s\S]*?)<\/h2>\s*/i);
+  const leadHeading = leadH2Match ? leadH2Match[1].replace(/<[^>]+>/g, '').trim() : '';
+  const bodyAfterLead = leadH2Match ? bodyHtml.slice(leadH2Match[0].length) : bodyHtml;
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Place',
@@ -287,8 +294,11 @@ export default function GhostTownPage({
                 zoom={fitZoom(town.lat, town.lng, nearestTownLat, nearestTownLng)}
               />
             )}
-            <h1 className="gt-town-title">{town.name}</h1>
-            <div dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+            <h1 className="gt-town-title">
+              {town.name}
+              {leadHeading ? ` ${leadHeading}` : ''}
+            </h1>
+            <div dangerouslySetInnerHTML={{ __html: bodyAfterLead }} />
           </article>
 
           <aside className="gt-sidebar">
