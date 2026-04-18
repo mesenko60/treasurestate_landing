@@ -380,7 +380,10 @@ main {
   line-height: 1.7;
 }
 
-/* Compare page markdown intros: left-aligned section headings */
+/* Compare page markdown intros (inside parent .content-section) */
+.compare-intro-prose {
+  padding-top: 0.25rem;
+}
 .compare-intro-prose h2 {
   text-align: left;
   font-size: 1.45rem;

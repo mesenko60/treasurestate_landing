@@ -175,7 +175,7 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
 
           {introHtml ? (
             <article
-              className="content-section compare-intro-prose"
+              className="compare-intro-prose"
               style={{ marginBottom: '2rem', textAlign: 'left' }}
               dangerouslySetInnerHTML={{ __html: introHtml }}
             />
