@@ -57,6 +57,7 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
   const popupLeaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [regionFilter, setRegionFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
+  const [essayExpanded, setEssayExpanded] = useState(false);
   const [viewState, setViewState] = useState({
     latitude: 46.8,
     longitude: -110.5,
@@ -217,8 +218,15 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
         .gt-all-link { display: inline-block; margin-top: 1.5rem; font-weight: 600; color: #3b6978; }
         .gt-popup-btn { display: inline-block; margin-top: 10px; padding: 0.45rem 0.9rem; background: #3b6978; color: #fff; font-size: 0.82rem; font-weight: 600; border-radius: 6px; text-decoration: none; transition: background 0.2s; }
         .gt-popup-btn:hover { background: #204051; color: #fff; }
+        .gt-pin-label { position: absolute; left: 50%; transform: translateX(-50%); top: 18px; white-space: nowrap; font-size: 0.68rem; font-weight: 600; color: #204051; background: rgba(255,255,255,0.92); padding: 1px 4px; border-radius: 3px; pointer-events: none; box-shadow: 0 1px 2px rgba(0,0,0,0.15); }
+        .gt-essay-wrap { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #e8ede8; }
+        .gt-essay-preview { position: relative; max-height: 180px; overflow: hidden; }
+        .gt-essay-preview.expanded { max-height: none; }
+        .gt-essay-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); pointer-events: none; }
+        .gt-essay-toggle { display: inline-block; margin-top: 0.75rem; padding: 0.4rem 1rem; background: #eef6f8; color: #3b6978; font-size: 0.85rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .gt-essay-toggle:hover { background: #d8eef3; }
         .compare-intro-prose.gt-hub-prose { margin-top: 1rem; font-size: 0.95rem; color: #555; line-height: 1.6; }
-        .compare-intro-prose.gt-hub-essay { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #e8ede8; max-width: 48rem; }
+        .compare-intro-prose.gt-hub-essay { max-width: 48rem; }
         .compare-intro-prose.gt-hub-essay h1 { font-size: 1.55rem; color: #204051; margin: 0 0 1rem; line-height: 1.25; }
         .compare-intro-prose.gt-hub-essay p { margin: 0 0 1rem; }
         .compare-intro-prose.gt-hub-essay a { color: #3b6978; }
@@ -290,14 +298,17 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
                 ))}
                 {curatedOnMap.map((c) => (
                   <Marker key={`c-${c.slug}`} latitude={c.lat!} longitude={c.lng!} anchor="center">
-                    <div
-                      className="gt-pin-gold"
-                      title={c.name}
-                      role="presentation"
-                      onMouseEnter={() => openGoldMapPopup(c)}
-                      onMouseLeave={scheduleCloseMapPopup}
-                      onClick={() => handleGoldPinClick(c)}
-                    />
+                    <div style={{ position: 'relative' }}>
+                      <div
+                        className="gt-pin-gold"
+                        title={c.name}
+                        role="presentation"
+                        onMouseEnter={() => openGoldMapPopup(c)}
+                        onMouseLeave={scheduleCloseMapPopup}
+                        onClick={() => handleGoldPinClick(c)}
+                      />
+                      {hasActiveFilter && <span className="gt-pin-label">{c.name}</span>}
+                    </div>
                   </Marker>
                 ))}
                 {mapPopup?.kind === 'grey' && (
@@ -402,11 +413,23 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
         ))}
 
         {hubEssayHtml ? (
-          <article
-            className="compare-intro-prose gt-hub-essay"
-            aria-label="The Geography of Abandonment"
-            dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
-          />
+          <div className="gt-essay-wrap">
+            <div className={`gt-essay-preview compare-intro-prose gt-hub-essay${essayExpanded ? ' expanded' : ''}`}>
+              <article
+                aria-label="The Geography of Abandonment"
+                dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
+              />
+              {!essayExpanded && <div className="gt-essay-fade" />}
+            </div>
+            <button
+              type="button"
+              className="gt-essay-toggle"
+              onClick={() => setEssayExpanded((v) => !v)}
+              aria-expanded={essayExpanded}
+            >
+              {essayExpanded ? 'Show less ↑' : 'Read more ↓'}
+            </button>
+          </div>
         ) : null}
       </main>
       <Footer />
