@@ -215,6 +215,8 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
         .gt-badge { font-size: 0.72rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: #eef6f8; color: #3b6978; }
         .gt-excerpt { font-size: 0.9rem; color: #555; line-height: 1.55; }
         .gt-all-link { display: inline-block; margin-top: 1.5rem; font-weight: 600; color: #3b6978; }
+        .gt-popup-btn { display: inline-block; margin-top: 10px; padding: 0.45rem 0.9rem; background: #3b6978; color: #fff; font-size: 0.82rem; font-weight: 600; border-radius: 6px; text-decoration: none; transition: background 0.2s; }
+        .gt-popup-btn:hover { background: #204051; color: #fff; }
         .compare-intro-prose.gt-hub-prose { margin-top: 1rem; font-size: 0.95rem; color: #555; line-height: 1.6; }
         .compare-intro-prose.gt-hub-essay { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #e8ede8; max-width: 48rem; }
         .compare-intro-prose.gt-hub-essay h1 { font-size: 1.55rem; color: #204051; margin: 0 0 1rem; line-height: 1.25; }
@@ -331,9 +333,9 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
                           {mapPopup.pin.gnisId}
                         </a>
                       </div>
-                      <div style={{ marginTop: 8, fontSize: '0.8rem' }}>
-                        <Link href="/ghost-towns/all/">View in full index →</Link>
-                      </div>
+                      <Link href="/ghost-towns/all/" className="gt-popup-btn">
+                        View in full index →
+                      </Link>
                     </div>
                   </Popup>
                 )}
@@ -360,9 +362,9 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
                       <div style={{ marginTop: 4, fontSize: '0.78rem', color: '#777' }}>
                         {mapPopup.town.region} · {STATUS_LABEL[mapPopup.town.status] || mapPopup.town.status}
                       </div>
-                      <div style={{ marginTop: 10 }}>
-                        <Link href={`/ghost-towns/${mapPopup.town.slug}/`}>Read the full story →</Link>
-                      </div>
+                      <Link href={`/ghost-towns/${mapPopup.town.slug}/`} className="gt-popup-btn">
+                        Read the full story →
+                      </Link>
                     </div>
                   </Popup>
                 )}
