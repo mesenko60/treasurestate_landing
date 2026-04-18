@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetStaticProps } from 'next';
@@ -27,9 +27,15 @@ type CuratedRow = {
   excerpt: string;
 };
 
+type MapPopupState =
+  | { kind: 'grey'; pin: AllPin }
+  | { kind: 'gold'; town: CuratedRow };
+
 type Props = {
   allPins: AllPin[];
   curated: CuratedRow[];
+  /** 3-digit FIPS → display label (e.g. Park County) for GNIS popups */
+  countyNamesByFips: Record<string, string>;
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -42,9 +48,11 @@ const STATUS_LABEL: Record<string, string> = {
   manual: 'Historic site',
 };
 
-export default function GhostTownsHub({ allPins, curated }: Props) {
-  const [selectedGrey, setSelectedGrey] = useState<AllPin | null>(null);
-  const [selectedGold, setSelectedGold] = useState<CuratedRow | null>(null);
+const POPUP_LEAVE_MS = 260;
+
+export default function GhostTownsHub({ allPins, curated, countyNamesByFips }: Props) {
+  const [mapPopup, setMapPopup] = useState<MapPopupState | null>(null);
+  const popupLeaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [regionFilter, setRegionFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
   const [viewState, setViewState] = useState({
@@ -84,23 +92,55 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
     return allPins.filter((p) => counties.has(p.countyFips)).slice(0, cap);
   }, [allPins, filteredCurated, hasActiveFilter]);
 
-  useEffect(() => {
-    if (selectedGold && !filteredCurated.some((c) => c.slug === selectedGold.slug)) {
-      setSelectedGold(null);
+  const clearPopupLeaveTimer = useCallback(() => {
+    if (popupLeaveTimer.current) {
+      clearTimeout(popupLeaveTimer.current);
+      popupLeaveTimer.current = null;
     }
-  }, [filteredCurated, selectedGold]);
-
-  useEffect(() => {
-    if (selectedGrey && !greyPins.some((p) => p.gnisId === selectedGrey.gnisId)) {
-      setSelectedGrey(null);
-    }
-  }, [greyPins, selectedGrey]);
-
-  const handleGoldClick = useCallback((c: CuratedRow) => {
-    setSelectedGrey(null);
-    setSelectedGold(c);
-    setViewState((vs) => ({ ...vs, latitude: c.lat!, longitude: c.lng!, zoom: 11 }));
   }, []);
+
+  const scheduleCloseMapPopup = useCallback(() => {
+    clearPopupLeaveTimer();
+    popupLeaveTimer.current = setTimeout(() => {
+      setMapPopup(null);
+      popupLeaveTimer.current = null;
+    }, POPUP_LEAVE_MS);
+  }, [clearPopupLeaveTimer]);
+
+  useEffect(() => () => clearPopupLeaveTimer(), [clearPopupLeaveTimer]);
+
+  useEffect(() => {
+    if (!mapPopup) return;
+    if (mapPopup.kind === 'grey') {
+      if (!greyPins.some((p) => p.gnisId === mapPopup.pin.gnisId)) setMapPopup(null);
+    } else if (!curatedOnMap.some((c) => c.slug === mapPopup.town.slug)) {
+      setMapPopup(null);
+    }
+  }, [mapPopup, greyPins, curatedOnMap]);
+
+  const openGreyMapPopup = useCallback(
+    (pin: AllPin) => {
+      clearPopupLeaveTimer();
+      setMapPopup({ kind: 'grey', pin });
+    },
+    [clearPopupLeaveTimer],
+  );
+
+  const openGoldMapPopup = useCallback(
+    (town: CuratedRow) => {
+      clearPopupLeaveTimer();
+      setMapPopup({ kind: 'gold', town });
+    },
+    [clearPopupLeaveTimer],
+  );
+
+  const handleGoldPinClick = useCallback(
+    (c: CuratedRow) => {
+      openGoldMapPopup(c);
+      setViewState((vs) => ({ ...vs, latitude: c.lat!, longitude: c.lng!, zoom: 11 }));
+    },
+    [openGoldMapPopup],
+  );
 
   const url = 'https://treasurestate.com/ghost-towns/';
   const title = 'Montana Ghost Towns';
@@ -208,7 +248,7 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
             </select>
             <p className="gt-legend">
               <strong>Grey dots</strong> — GNIS historical places (no article).{' '}
-              <strong>Gold pins</strong> — curated story + map coordinates.
+              <strong>Gold pins</strong> — curated story + map coordinates. Hover (or tap) any pin for a popup.
               {hasActiveFilter ? (
                 <>
                   {' '}
@@ -233,48 +273,89 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
                     <div
                       className="gt-pin-grey"
                       title={p.name}
-                      onClick={() => {
-                        setSelectedGold(null);
-                        setSelectedGrey(p);
-                      }}
+                      role="presentation"
+                      onMouseEnter={() => openGreyMapPopup(p)}
+                      onMouseLeave={scheduleCloseMapPopup}
+                      onClick={() => openGreyMapPopup(p)}
                     />
                   </Marker>
                 ))}
                 {curatedOnMap.map((c) => (
                   <Marker key={`c-${c.slug}`} latitude={c.lat!} longitude={c.lng!} anchor="center">
-                    <div className="gt-pin-gold" title={c.name} onClick={() => handleGoldClick(c)} />
+                    <div
+                      className="gt-pin-gold"
+                      title={c.name}
+                      role="presentation"
+                      onMouseEnter={() => openGoldMapPopup(c)}
+                      onMouseLeave={scheduleCloseMapPopup}
+                      onClick={() => handleGoldPinClick(c)}
+                    />
                   </Marker>
                 ))}
-                {selectedGrey && (
+                {mapPopup?.kind === 'grey' && (
                   <Popup
-                    latitude={selectedGrey.lat}
-                    longitude={selectedGrey.lng}
-                    onClose={() => setSelectedGrey(null)}
+                    latitude={mapPopup.pin.lat}
+                    longitude={mapPopup.pin.lng}
+                    onClose={() => {
+                      clearPopupLeaveTimer();
+                      setMapPopup(null);
+                    }}
                     closeButton
+                    closeOnClick={false}
                     anchor="bottom"
                   >
-                    <div style={{ maxWidth: 260, fontSize: '0.88rem' }}>
-                      <strong>{selectedGrey.name.replace(/\s*\(historical\)\s*$/i, '')}</strong>
+                    <div
+                      style={{ maxWidth: 280, fontSize: '0.88rem' }}
+                      onMouseEnter={clearPopupLeaveTimer}
+                      onMouseLeave={scheduleCloseMapPopup}
+                      role="presentation"
+                    >
+                      <strong>{mapPopup.pin.name.replace(/\s*\(historical\)\s*$/i, '')}</strong>
                       <div style={{ color: '#666', marginTop: 4 }}>Historical settlement (GNIS)</div>
+                      <div style={{ marginTop: 4, fontSize: '0.8rem', color: '#555' }}>
+                        {countyNamesByFips[mapPopup.pin.countyFips] || `County FIPS ${mapPopup.pin.countyFips}`}
+                      </div>
+                      <div style={{ marginTop: 4, fontSize: '0.78rem', color: '#777' }}>
+                        GNIS ID{' '}
+                        <a
+                          href={`https://geonames.usgs.gov/apex/f?p=GNISPQ:3:::NO::P3_FID:${mapPopup.pin.gnisId}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {mapPopup.pin.gnisId}
+                        </a>
+                      </div>
                       <div style={{ marginTop: 8, fontSize: '0.8rem' }}>
                         <Link href="/ghost-towns/all/">View in full index →</Link>
                       </div>
                     </div>
                   </Popup>
                 )}
-                {selectedGold && (
+                {mapPopup?.kind === 'gold' && (
                   <Popup
-                    latitude={selectedGold.lat!}
-                    longitude={selectedGold.lng!}
-                    onClose={() => setSelectedGold(null)}
+                    latitude={mapPopup.town.lat!}
+                    longitude={mapPopup.town.lng!}
+                    onClose={() => {
+                      clearPopupLeaveTimer();
+                      setMapPopup(null);
+                    }}
                     closeButton
+                    closeOnClick={false}
                     anchor="bottom"
                   >
-                    <div style={{ maxWidth: 280, fontSize: '0.88rem' }}>
-                      <strong>{selectedGold.name}</strong>
-                      <div style={{ color: '#666', marginTop: 4 }}>{selectedGold.countyLabel}</div>
+                    <div
+                      style={{ maxWidth: 300, fontSize: '0.88rem' }}
+                      onMouseEnter={clearPopupLeaveTimer}
+                      onMouseLeave={scheduleCloseMapPopup}
+                      role="presentation"
+                    >
+                      <strong>{mapPopup.town.name}</strong>
+                      <div style={{ color: '#666', marginTop: 4 }}>{mapPopup.town.countyLabel}</div>
+                      <div style={{ marginTop: 4, fontSize: '0.78rem', color: '#777' }}>
+                        {mapPopup.town.region} · {STATUS_LABEL[mapPopup.town.status] || mapPopup.town.status}
+                      </div>
                       <div style={{ marginTop: 10 }}>
-                        <Link href={`/ghost-towns/${selectedGold.slug}/`}>Read the full story →</Link>
+                        <Link href={`/ghost-towns/${mapPopup.town.slug}/`}>Read the full story →</Link>
                       </div>
                     </div>
                   </Popup>
@@ -318,6 +399,13 @@ export default function GhostTownsHub({ allPins, curated }: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { FIPS_TO_COUNTY_NAME } = require('../../scripts/ghost-towns-meta.cjs');
+  const countyNamesByFips: Record<string, string> = {};
+  for (const [fips, name] of Object.entries(FIPS_TO_COUNTY_NAME as Record<string, string>)) {
+    countyNamesByFips[fips] = `${name} County`;
+  }
+
   const allPath = path.join(process.cwd(), 'data', 'ghost-towns-all.json');
   const detailPath = path.join(process.cwd(), 'data', 'ghost-towns-detail.json');
   const allPins: AllPin[] = fs.existsSync(allPath) ? JSON.parse(fs.readFileSync(allPath, 'utf8')) : [];
@@ -334,5 +422,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     excerpt: String(d.excerpt || ''),
   }));
 
-  return { props: { allPins, curated } };
+  return { props: { allPins, curated, countyNamesByFips } };
 };
