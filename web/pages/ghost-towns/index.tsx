@@ -219,8 +219,8 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
         .gt-popup-btn { display: inline-block; margin-top: 10px; padding: 0.45rem 0.9rem; background: #3b6978; color: #fff; font-size: 0.82rem; font-weight: 600; border-radius: 6px; text-decoration: none; transition: background 0.2s; }
         .gt-popup-btn:hover { background: #204051; color: #fff; }
         .gt-pin-label { position: absolute; left: 50%; transform: translateX(-50%); top: 18px; white-space: nowrap; font-size: 0.68rem; font-weight: 600; color: #204051; background: rgba(255,255,255,0.92); padding: 1px 4px; border-radius: 3px; pointer-events: none; box-shadow: 0 1px 2px rgba(0,0,0,0.15); }
-        .gt-essay-wrap { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #e8ede8; }
-        .gt-essay-preview { position: relative; max-height: 180px; overflow: hidden; }
+        .gt-essay-wrap { margin: 0 auto 1.5rem; max-width: 48rem; text-align: center; }
+        .gt-essay-preview { position: relative; max-height: 180px; overflow: hidden; text-align: left; }
         .gt-essay-preview.expanded { max-height: none; }
         .gt-essay-fade { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); pointer-events: none; }
         .gt-essay-toggle { display: inline-block; margin-top: 0.75rem; padding: 0.4rem 1rem; background: #eef6f8; color: #3b6978; font-size: 0.85rem; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
@@ -234,7 +234,7 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
 
       <main className="gt-page">
         {hubEssayHtml ? (
-          <div className="gt-essay-wrap" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
+          <div className="gt-essay-wrap">
             <div className={`gt-essay-preview compare-intro-prose gt-hub-essay${essayExpanded ? ' expanded' : ''}`}>
               <article
                 aria-label="The Geography of Abandonment"
