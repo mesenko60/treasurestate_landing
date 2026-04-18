@@ -1,0 +1,35 @@
+# McCartneyville
+
+**By Editor**
+
+*Missoula County*
+
+## History
+
+The Garnet Range in Missoula County produced more ghost towns than most people realize. The mountains between the Blackfoot River valley and the Clark Fork drainage are riddled with the evidence of the placer and hard-rock mining that swept through them in the 1860s and continued, in diminishing waves, through the first decades of the twentieth century. Garnet is the best known of these camps, and Coloma and Beartown are the most frequently cited, but the range contained a number of smaller camps that have left only faint impressions on the historical record. McCartneyville was one of these.
+
+The camp took its name from a miner, almost certainly a man named McCartney, who worked the placer deposits in the Garnet Range during the initial rush of the 1860s. The practice of naming camps after their discoverers or most prominent early residents was universal in the mining districts of the West, and the McCartney who gave his name to this place was one of hundreds of men who arrived in the Garnet Mountains during the years when the range was drawing miners from the exhausted placers of California and the newly discovered diggings of the Montana Territory. His name survived in the camp's name long after his own story was forgotten.
+
+The placer gold in the Garnet Range was found in the creek drainages that cut through the mountains, and the camps that grew up around the diggings were located at the confluences and along the benches above the active stream channels. McCartneyville occupied one of these positions in the range, close enough to the other camps to share in the district's supply networks and social life but distinct enough to maintain its own identity and its own post office listing in the territorial records.
+
+The camp's productive period was brief. The placer gold that sustained the initial rush was exhausted within a few years, and the hard-rock deposits that might have extended the camp's life were either not present in sufficient quantity or not accessible with the technology and capital available to the men who worked the area. By the early 1870s the population had moved on to more promising locations, and McCartneyville had joined the long list of Garnet Range camps that existed for a season or two and then dissolved back into the mountain landscape.
+
+The broader context of the Garnet Range mining district helps explain why so many small camps like McCartneyville appeared and disappeared in such a short period. The range attracted miners because the placer gold was real and accessible, but the deposits were scattered and shallow, and the individual claims played out quickly. The men who worked them were mobile by necessity and by temperament, and they moved on without ceremony when the gold gave out. The camps they left behind were not built to last, and most of them did not.
+
+What distinguished McCartneyville from the other small camps of the Garnet Range was not its size or its production but its location in the district's geography. It occupied a position in the range that placed it between the larger camps of Garnet and Beartown, and the men who worked it were connected to both of those communities by the trails and roads that crossed the mountains. The camp was part of a network of small operations that collectively made the Garnet Range one of the more productive placer districts in western Montana during the 1860s and 1870s, even if no single camp in the network produced the kind of wealth that would have attracted sustained attention.
+
+The Garnet Range in the 1860s and 1870s was a place of constant movement. Miners who had spent years in California learning the craft of placer mining arrived in the Montana Territory with well-developed instincts for reading a landscape and identifying the creek drainages most likely to yield color. They moved through the mountains in loose networks, sharing information about promising locations and moving on when a claim played out. The small camps that appeared and disappeared in the space of a season were the physical expression of this mobile economy, and McCartneyville was one of them.
+
+The historical record for McCartneyville is thin, as it is for most of the smaller camps in the Garnet Range. The territorial newspapers covered the major discoveries and the larger camps, but the small placer operations that sustained the district's background level of activity rarely made the news unless something dramatic happened. McCartneyville's story was apparently undramatic, which is why it survived in the GNIS records and in the place-name literature without generating the kind of detailed documentation that would allow a full reconstruction of its history.
+
+## What Remains Today
+
+The McCartneyville site is located in the Garnet Range of Missoula County, in the same mountain district that contains the Garnet Ghost Town, Coloma, and Beartown. The physical evidence of the camp's existence is limited to the disturbed terrain of the placer workings and whatever structural remnants may survive in the forest. The site has not been developed for public interpretation in the way that the Garnet Ghost Town has been.
+
+The Garnet Range is managed by the Bureau of Land Management and the Lolo National Forest, and the area is accessible to hikers, mountain bikers, and off-road vehicle users via the network of roads and trails that cross the mountains. The Garnet Ghost Town, located nearby, provides a more developed and documented experience of the Garnet Range's mining history.
+
+## Visiting
+
+McCartneyville is located in the Garnet Range of Missoula County, accessible via the same unpaved roads that serve the Garnet Ghost Town. The Garnet site is reached from Highway 200 east of Missoula via Bear Creek Road, or from the Drummond area via Garnet Range Road. The Bureau of Land Management's Missoula Field Office can provide current information about road conditions and access to the broader Garnet Range.
+
+Missoula is the nearest city with visitor services, located approximately an hour west via Highway 200 and Interstate 90. Visitors interested in the history of the Garnet Range will find the combination of the Garnet Ghost Town, the Coloma site, and the surrounding mountain landscape a rewarding destination for a full day's exploration.

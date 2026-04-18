@@ -1,0 +1,33 @@
+# Pardee
+
+**By Editor**
+
+*Mineral County*
+
+## History
+
+Hall Gulch cuts north from the Clark Fork River valley through a steep and heavily timbered canyon, climbing into the Cabinet Mountains above the town of Superior. It is the kind of country that discourages casual visitors: the slopes are sharp, the timber is dense, and the roads that exist today are barely improvements on the pack trails that served the district a century ago. It was precisely this isolation that shaped the history of Pardee, a silver mining camp that flourished briefly at the turn of the twentieth century and then disappeared almost as completely as the ore that had called it into being.
+
+The discovery that gave Pardee its reason for existing came in the late 1890s, when prospectors working the upper reaches of Hall Gulch found a rich vein of silver ore running close to the surface of the mountain. The ore was high-grade by any measure, and the Iron Mountain Mining Company moved quickly to secure the claims and begin development. What made the deposit particularly attractive was the shallow angle at which the vein approached the surface. Miners could reach productive ore without sinking deep shafts, which reduced the initial capital requirement and allowed the company to begin generating revenue relatively quickly.
+
+The problem, as it always was in remote mountain districts, was transportation. The nearest railroad connection was at Superior, ten miles away by pack trail through terrain that made wagon roads impractical. Every pound of ore that left the mine had to be carried down the mountain on the backs of mules, a process that consumed a significant portion of the mine's profits in labor and animal costs. The Iron Mountain Mining Company's solution was elegant in its logic: rather than shipping raw ore, they built a concentrating mill at the base of the mountain, close to the gulch bottom where wagons could operate. The mill reduced the bulk of the ore by separating the valuable minerals from the waste rock, so that only the concentrated product (a fraction of the original weight) needed to make the journey to Superior and the railroad.
+
+The mill transformed the economics of the operation. With concentrates rather than raw ore moving down the mountain, the freighters could handle the volume, and the mine's profits improved accordingly. The camp of Pardee grew up around the mill and the mine above it, connected by a narrow-gauge tramway that ran along the edge of the steep slope, carrying ore in small cars from the mine workings to the mill bin. The town at its peak housed several hundred residents: miners, mill workers, freighters, and the merchants and boarding house operators who served them. It had a saloon, a post office that opened in 1896, and the dense social life of an isolated industrial community.
+
+The Iron Mountain Mining Company operated the property through the 1890s and into the early twentieth century, but the relationship between the company and the state of Montana eventually produced the crisis that ended Pardee's working life. In 1906, the Montana legislature passed a law requiring all underground mines to have two separate openings, a safety measure designed to prevent the kind of disasters that had trapped and killed miners in single-entry operations across the West. The requirement was not onerous for most operations, but the Iron Mountain Mining Company, for reasons that remain unclear in the historical record, chose to ignore it. The state eventually enforced the law, and the mine was closed by order of the mining inspector. The town that had grown up around the mine had no reason to exist without it, and Pardee was abandoned around 1930.
+
+The closure was not the end of the district's story. The mill ruins and the mine site attracted the attention of later operators who believed that the ore bodies had not been fully exhausted, and several attempts were made in subsequent decades to reopen the workings. None succeeded on any significant scale. The concentrates that had been shipped from Pardee during its active years represented the best of what the mountain had to offer, and what remained was either too deep, too low-grade, or too expensive to extract profitably.
+
+The name Pardee itself has an ironic resonance in Montana history. Joseph T. Pardee was a USGS geologist who worked extensively in western Montana in the early twentieth century, producing foundational studies of the region's glacial geology and mineral resources. Whether the camp was named for him or for some other Pardee is not established in the surviving records, but the coincidence is worth noting: the geologist whose name graces the camp spent his career documenting the forces that shaped the very mountains in which the miners worked.
+
+## What Remains Today
+
+The mill ruins at the base of Hall Gulch are the most accessible remnant of Pardee's industrial past. The Iron Mountain Mining Company's concentrating mill, though long since collapsed and overgrown, retains enough structural evidence to convey the scale of the original operation. The ruins are located approximately three to four miles from Superior on a well-maintained Forest Service road and can be reached by standard passenger vehicle.
+
+The townsite of Pardee proper, situated higher up the gulch above the mill, requires a four-wheel-drive vehicle and a tolerance for a narrow, steep road with limited turnaround opportunities. At the mine site, a large heavy-timbered ore bin still stands, and careful observers can find foundation outlines from the mine buildings. The route of the narrow-gauge tramway that connected the mine to the mill is traceable in places along the edge of the slope. The Mineral County Historical Society has published a history of the area that includes photographs of Pardee during its active years; copies are available at the museum in Superior.
+
+## Visiting
+
+Pardee is reached from Superior via Hall Gulch Road, heading north from town. The Forest Service road to the mill ruins is passable by most vehicles in dry conditions; the upper road to the townsite requires four-wheel drive and should not be attempted in wet weather or by drivers unfamiliar with narrow mountain roads. The area is within the Lolo National Forest, and no permits are required for day visits.
+
+Summer and early fall are the best seasons to visit. Superior, the Mineral County seat, offers the nearest services and is a pleasant small town with a county museum worth visiting before or after the trip to Pardee. The drive up Hall Gulch, even for those who go no farther than the mill ruins, offers a vivid sense of the isolation that defined life in this corner of the Cabinet Mountains a century ago.

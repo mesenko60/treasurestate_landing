@@ -441,6 +441,38 @@ function walkMarkdownFilesSorted(absDir) {
     }
   }
 
+  // ═══ 16b. MONTANA GHOST TOWNS (hub, full index, curated deep-dives) ═══
+  const ghostDetailPath = path.join(dataDir, 'ghost-towns-detail.json');
+  if (fs.existsSync(ghostDetailPath)) {
+    const ghostTowns = JSON.parse(fs.readFileSync(ghostDetailPath, 'utf8'));
+    entries.push({
+      type: 'guide',
+      title: 'Montana Ghost Towns',
+      description: 'Map of historic populated places (GNIS PPLQ), 75 curated stories, and county-filterable index',
+      url: '/ghost-towns/',
+      keywords: 'Montana ghost towns abandoned mining camps Bannack Garnet historic map GNIS PPLQ',
+    });
+    entries.push({
+      type: 'guide',
+      title: 'Montana Ghost Towns — full GNIS index',
+      description: 'Searchable table of Montana historic-populated-place features with map links',
+      url: '/ghost-towns/all/',
+      keywords: 'Montana ghost town list GNIS historic populated places county map',
+    });
+    for (const g of ghostTowns) {
+      const county = g.countyLabel || '';
+      const region = g.region || '';
+      const excerpt = (g.excerpt && String(g.excerpt).trim()) || `${g.name} — Montana ghost town${county ? ` in ${county}` : ''}.`;
+      entries.push({
+        type: 'article',
+        title: `${g.name} — Montana ghost town`,
+        description: excerpt.slice(0, 320),
+        url: `/ghost-towns/${g.slug}/`,
+        keywords: `${g.name} ${county} ${region} ghost town Montana mining camp abandoned`,
+      });
+    }
+  }
+
   // ═══ 17. THIS DAY IN HISTORY ═══
   entries.push({
     type: 'guide',

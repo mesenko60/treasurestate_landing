@@ -1,0 +1,35 @@
+# Hughesville
+
+**By Editor**
+
+*Judith Basin County*
+
+## History
+
+The men who came to Galena Creek in the fall of 1879 were looking for the same thing that men had been looking for in Montana's mountains for the better part of two decades: metal in the rock, preferably the kind that could be extracted and sold at a profit. What Patrick Hughes found when he filed the Grey Eagle claim on Galena Creek in the Little Belt Mountains was silver and lead, a combination that was less glamorous than gold but often more durable, since the industrial demand for lead gave the ore a value that did not fluctuate as wildly as the precious metals markets. Hughes named his claim and the camp that grew up around it after himself, as was the custom of the frontier, and Hughesville took its place among the mining settlements of central Montana.
+
+The timing of the discovery put Hughesville at the beginning of the Little Belt Mountains mining era. Within a year of Hughes's initial find, word had spread through the prospecting community and several other mines had been opened on Galena Creek and its tributaries: the Homestake, the Hancock, the Belfont, the Harrison, the May, the Edna, and dozens of smaller operations that followed the silver-bearing veins through the rock. The ore was rich enough in the best locations to justify the investment of serious capital, and the Clendenin Mining and Smelting Company was formed in 1881 to provide the processing infrastructure the district needed.
+
+The Clendenin smelter, built near the companion camp of Barker two miles up the mountain from Hughesville, was the first significant smelting operation in the Little Belt Mountains. It processed approximately four tons of ore per day, a modest but meaningful capacity for a district that was still in its early development. The smelter operated for about eighteen months before the economics of the operation shifted and it was shut down, but in that time it processed approximately $375,000 worth of bullion, a figure that demonstrated the genuine richness of the Galena Creek ore bodies.
+
+The early ore was hauled by wagon to Fort Benton, where it was loaded onto steamboats for the long journey down the Missouri River to smelters in the east. The logistics were expensive and slow, and the development of the district was constrained by the difficulty of getting the ore to market. This changed in 1891, when the Montana Central Railroad completed a branch line to Barker, giving the district direct rail access to the smelters at Great Falls, Helena, and Neihart. The arrival of the railroad coincided with a revival of mining activity in the district, as the May and Edna, Liberty, and Wallace mines all reported rich new strikes in 1890, and the combination of new ore and improved transportation set off a second boom.
+
+The second boom was shorter than the first. The silver panic of 1893 struck the Galena Creek district as it struck every silver camp in Montana, and the mines that had been revived by the new strikes and the railroad connection were forced to close. The railroad spur made its last run in 1903, a decade after the panic had ended the district's most productive period. What remained was a handful of operations working the lead content of the ore at reduced prices, and the occasional recovery of bullion from the slag dumps and tailings that the earlier operations had left behind.
+
+The district's twentieth-century history was shaped by a Helena businessman named T.C. Power, who acquired several claims and organized them under the name of the Block P Mine. Power built a mill in Barker in 1910 and operated the mine profitably through the 1920s, when he sold the operation to the St. Joseph Lead Company. Under St. Joseph's management, the Barker-Hughesville district became the largest lead producer in Montana, a distinction it held until the Great Depression forced the mine to close. The mine briefly reopened in the early 1940s, sustained by wartime demand for lead, but closed again in 1943. The equipment and railroad tracks were subsequently sold for salvage.
+
+The combined camps of Barker and Hughesville supported as many as 500 people during their peak periods, a modest population by the standards of the great Montana mining towns but substantial enough to sustain the commercial and social infrastructure of a working community. The camps had schools, boarding houses, and the informal social networks that sustained isolated mountain communities, and the families who lived there built lives that were shaped by the rhythms of the mine and the seasons of the Little Belt Mountains.
+
+The old cemetery at Hughesville is one of the most tangible surviving connections to the community that once existed on Galena Creek. Cemeteries outlast towns in the mining country because they have no commercial value and because the people who care about them tend to maintain them long after the last resident has departed. The graves at Hughesville mark the presence of the men and women who built the camp and worked the mines, and they give the site a human dimension that the surviving mine structures cannot provide.
+
+## What Remains Today
+
+The Barker-Hughesville area retains several standing cabins and the remains of the Clendenin Smelter, the 1881 processing facility that was the district's first significant industrial installation. The St. Joseph Lead Company's mining buildings are located on private property. The old cemetery at Hughesville is the most historically significant surviving feature of the townsite, and it is generally accessible to visitors who approach it respectfully.
+
+The area maintains a small number of residents and vacation homes, giving it a character somewhere between a living community and a ghost town. The mining remnants are visible throughout the Galena Creek drainage, and the landscape retains the evidence of more than sixty years of active mining.
+
+## Visiting
+
+Hughesville is located approximately twelve miles east of Monarch in the Little Belt Mountains of Judith Basin County. From Monarch on US Highway 89, head south toward Hughesville Road and turn east for approximately twelve miles. The road is a county road and is generally passable in dry conditions, though the upper sections can be rough.
+
+Monarch, the nearest community with services, is located on the Kings Hill National Scenic Byway and provides a practical base for exploring the Little Belt Mountains mining district. The Monarch-Neihart Historical Group maintains the historic railroad depot in Monarch and can provide information about the history of the area. White Sulphur Springs to the south and Great Falls to the north are the nearest cities with a full range of visitor services.

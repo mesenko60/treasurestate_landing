@@ -1,0 +1,35 @@
+# Barker
+
+**By Editor**
+
+*Judith Basin County*
+
+## History
+
+E.A. "Buck" Barker found silver and lead on Galena Creek in the fall of 1879, the same season that Patrick Hughes was staking the Grey Eagle claim two miles down the mountain. The two men were working the same ore zone from different directions, and the camps that grew up around their discoveries reflected that relationship: Barker sat higher on the mountain, closer to the mine workings, while Hughesville occupied the lower ground where the creek widened and the terrain was more hospitable. Together they formed the commercial and social center of the Galena Creek mining district, a partnership of necessity in a country where isolation made cooperation a practical virtue.
+
+Barker's position at the upper end of the district gave it a particular character. The men who worked the mines on the upper reaches of Galena Creek and its tributaries lived in Barker because it was closest to their work, and the camp developed the rough-edged quality of a place where the primary business was extracting ore from rock. The boarding houses and saloons that served the miners were functional rather than elegant, built to meet the needs of men who spent their days underground and their evenings recovering from the effort. The Barker Mine itself, which gave the camp its name, was one of the district's most productive operations, working a silver-lead vein that proved both rich and persistent.
+
+The Clendenin Mining and Smelting Company built its smelter near Barker in 1881, choosing the upper camp's location because it was closer to the mines and the ore did not have to be hauled as far before processing. The smelter processed approximately four tons of ore per day during its eighteen months of operation, producing roughly $375,000 worth of bullion before the economics of the operation shifted and it was shut down. The ruins of the Clendenin Smelter are among the most significant surviving industrial artifacts in the Little Belt Mountains mining district.
+
+The pattern of boom and bust that characterized the Galena Creek district played out in Barker as it did in Hughesville. The initial excitement of the early 1880s gave way to a period of reduced activity as the surface ore was depleted and the cost of working deeper became harder to justify. The revival of 1890, when new strikes at the May and Edna, Liberty, and Wallace mines brought fresh investment and workers back to the district, was followed by the collapse of 1893, when the repeal of the Sherman Silver Purchase Act drove silver prices to levels that made most of the district's mines unprofitable.
+
+The Montana Central Railroad branch line that reached Barker in 1891 was the district's most significant infrastructure investment, and its arrival briefly transformed the economics of the operation. Ore that had previously been hauled by wagon to Fort Benton for shipment by steamboat could now be loaded directly onto rail cars and sent to the smelters at Great Falls, Helena, and Neihart. The reduction in transportation costs made marginal ore bodies profitable and encouraged investment in new development. But the silver panic of 1893 arrived before the district could fully capitalize on the railroad connection, and the branch line made its last run in 1903.
+
+The twentieth century brought a different kind of mining to Barker. T.C. Power of Helena acquired several claims and organized the Block P Mine, building a mill in Barker in 1910 that processed lead ore rather than silver. Power operated the mine profitably through the 1920s, and when he sold to the St. Joseph Lead Company in 1927, the new owners expanded operations until Barker became the largest lead producer in Montana. The St. Joseph operation was a modern industrial enterprise, far removed in character from the frontier mining camp of the 1880s, and it employed a workforce that was more settled and less transient than the miners of the earlier era.
+
+The Great Depression ended the St. Joseph operation in the early 1930s, and the mine sat idle through most of that decade. It reopened briefly in the early 1940s, sustained by wartime demand for lead, but closed again in 1943. The equipment and railroad tracks were sold for salvage, removing the most visible evidence of the district's industrial infrastructure and leaving behind the foundations and ruins that mark the site today.
+
+## What Remains Today
+
+The Barker townsite retains the remains of several structures, including standing cabins and the ruins of the Clendenin Smelter, which is the most historically significant surviving artifact of the district's early industrial period. The St. Joseph Lead Company's mining buildings are located on private property. The area maintains a small number of residents and vacation homes, and the mining remnants are visible throughout the Galena Creek drainage.
+
+The landscape around Barker shows the evidence of more than sixty years of active mining: waste rock piles, altered drainage, and the disturbed terrain that characterizes a heavily worked silver-lead district. The Barker-Hughesville Mining District is listed as a Superfund cleanup site due to acid drainage and metal contamination from the old mine workings, and remediation work has been ongoing.
+
+The Barker-Hughesville district's story is also a story about the changing nature of mining labor. The men who worked the silver mines of the 1880s were largely independent prospectors and contract miners, men who moved from camp to camp following the ore and the wages. The men who worked the St. Joseph Lead Company operation in the 1920s were industrial workers in a more modern sense, employed by a large corporation with standardized wages, safety regulations, and the beginnings of the labor protections that would reshape the mining industry in the mid-twentieth century. The transition from one kind of mining to the other played out in Barker over the span of four decades, and the physical evidence of both eras is still visible in the landscape around the camp.
+
+## Visiting
+
+Barker is located approximately twelve miles east of Monarch in the Little Belt Mountains of Judith Basin County, two miles up the mountain from Hughesville. From Monarch on US Highway 89, take Hughesville Road east for approximately twelve miles. The road is a county road and is generally passable in dry conditions.
+
+Monarch is the nearest community with services and is located on the Kings Hill National Scenic Byway. The Monarch-Neihart Historical Group maintains the historic railroad depot in Monarch and provides information about the history of the Little Belt Mountains mining district. The drive from Monarch to Barker follows the route of the old Montana Central Railroad branch line, and the terrain along the way gives a clear sense of the logistical challenges that shaped the district's development.

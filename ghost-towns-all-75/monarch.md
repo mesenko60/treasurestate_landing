@@ -1,0 +1,35 @@
+# Monarch
+
+**By Editor**
+
+*Judith Basin County*
+
+## History
+
+Monarch came into existence in 1889 as a service town for the mining districts of the Little Belt Mountains, a place where the ore from the Barker and Hughesville camps could be loaded onto railroad cars and shipped to the smelters at Great Falls. It was not a mining camp itself but a railroad town, and its character was shaped by that function from the beginning. The men who built Monarch were not prospectors but merchants, railroad workers, and the farmers and ranchers who were beginning to settle the Judith Basin to the east. The town sat at the junction of the mountain country and the plains, and it served both.
+
+The Montana Central Railroad completed its branch line to Barker in 1891, and the construction of the Monarch depot in September 1890 was the event that gave the town its permanent identity. The original depot building burned in 1900 and was replaced with the current structure in 1902, a more substantial building that became the social center of the community. The railroad complex that surrounded it, including the section-house, pump house, water tower, and windmill, made Monarch a functioning railroad town with the infrastructure to support regular operations. The depot was the place where passengers arrived and departed, where freight was loaded and unloaded, and where the community gathered for the informal social exchanges that small towns depend on.
+
+The railroad's role in Monarch's life went beyond the practical business of moving ore and passengers. By September 1890, the railroad was dropping fishermen off at various locations along Belt Creek as the train approached Monarch, to be collected on the return trip to Great Falls in the afternoon. When Belt Creek was designated a blue ribbon trout stream in the 1920s, the railroad ran special fishing trains on Sundays, bringing anglers from Great Falls into the Little Belt Mountains and returning them in the evening. The fishing trains were a small but characteristic detail of the way that the railroad shaped the social life of the communities it served, connecting isolated mountain towns to the larger world of the cities.
+
+Monarch's economy was never dependent on mining alone. The farming and ranching operations of the Judith Basin relied on the railroad as a trade center and a shipping point for crops and livestock, and the town's commercial district reflected the mixed character of its hinterland. The general stores, the hotel, and the other businesses that served Monarch's residents catered to miners and ranchers alike, and the community that developed had a more settled quality than the purely extractive camps higher in the mountains.
+
+The decline of Monarch began with the decline of mining in the Little Belt Mountains. The silver panic of 1893 had already reduced the Barker and Hughesville operations to a shadow of their former scale, and the railroad branch line to Barker made its last run in 1903. The Block P Mine and later the St. Joseph Lead Company operations sustained some activity through the 1920s and into the 1940s, but the overall trajectory of the mining district was downward, and Monarch's role as a shipping center diminished accordingly.
+
+The decisive blow came from an unexpected direction. In the 1920s, the county road from Great Falls to Monarch was still little more than a wagon trail, and the railroad remained the primary connection between the mountain communities and the outside world. As the road was improved and automobile traffic increased, the railroad's advantage eroded. By 1945 the railroad was abandoned, its role taken over by the improved highway that now carried the traffic the train had once handled. The depot, which had been the social center of Monarch for more than half a century, was purchased by the Montana Department of Transportation in 1946 and converted to highway department use.
+
+The town did not disappear after the railroad left, but it contracted. The commercial district that had served the mining camps and the farming community shrank as the population declined and the economic base narrowed. Monarch became one of those small Montana towns that persist in a diminished form, maintaining a post office and a handful of businesses while the buildings that once housed a more active community stand empty or are repurposed for uses their builders never imagined.
+
+## What Remains Today
+
+The most significant surviving structure in Monarch is the 1902 railroad depot, which was transferred from the Montana Department of Transportation to the Monarch-Neihart Historical Group in 2013. The historical group has undertaken restoration work on the depot and has installed exhibits on the history of the Great Falls to Neihart train line and the role of the railroad in the development of the Little Belt Mountains communities. A restored caboose is displayed near the depot.
+
+The Kings Hill National Scenic Byway passes through Monarch on US Highway 89, bringing visitors through the town on their way between Great Falls and White Sulphur Springs. The byway designation has given Monarch a modest tourist economy and has helped sustain the historical group's preservation work. Belt Creek, which runs through the area, remains a blue ribbon trout stream and attracts anglers from across the region.
+
+The story of Monarch's depot is, in miniature, the story of how small Montana towns have tried to preserve their connection to a past that the economy has moved on from. The depot was built to serve a railroad that no longer exists, in a town that no longer ships ore to distant smelters, and the community that maintains it does so because the building represents something that cannot be replaced: the physical evidence of the way that the railroad shaped life in the Little Belt Mountains for more than half a century. The Monarch-Neihart Historical Group's work on the depot is part of a broader effort to document and preserve the history of the Kings Hill corridor, a stretch of country that saw more human activity in the late nineteenth and early twentieth centuries than its current quiet appearance would suggest.
+
+## Visiting
+
+Monarch is located on US Highway 89, forty-five miles southeast of Great Falls in Judith Basin County. The town is easily accessible by paved road and is a natural stopping point on the Kings Hill National Scenic Byway. The historic depot is open to visitors during the summer months, and the Monarch-Neihart Historical Group can provide information about the history of the area and the surrounding mining districts.
+
+The drive from Monarch east to Barker and Hughesville follows county roads into the Little Belt Mountains and provides access to the ghost towns of the Galena Creek district. White Sulphur Springs to the south and Great Falls to the north are the nearest cities with a full range of visitor services.

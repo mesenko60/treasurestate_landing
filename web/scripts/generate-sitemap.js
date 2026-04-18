@@ -41,6 +41,7 @@ function getLastmod(loc) {
   if (loc.includes('/lodging/') && !loc.endsWith('/lodging/')) return '2026-03-14';
   if (loc.includes('/events/')) return '2026-03-21';
   if (loc.includes('/historic-markers/')) return '2026-03-29';
+  if (loc.includes('/ghost-towns/')) return '2026-04-18';
   if (loc.includes('/history-trails/')) return '2026-03-29';
   if (loc.includes('/montana-railroad-history/')) return '2026-04-11';
   if (loc.includes('/explore-montana/')) return '2026-03-01';
@@ -72,6 +73,9 @@ function getPriority(loc) {
   if (/\/montana-railroad-history\/[^/]+\//.test(loc)) return 0.7;
   if (/\/history-trails\/[^/]+\//.test(loc)) return 0.7;
   if (/\/historic-markers\/[^/]+\//.test(loc)) return 0.6;
+  if (loc === baseUrl + '/ghost-towns/') return 0.75;
+  if (loc === baseUrl + '/ghost-towns/all/') return 0.72;
+  if (/\/ghost-towns\/[^/]+\//.test(loc)) return 0.65;
   if (/\/montana-towns\/[^/]+\/[^/]+\//.test(loc)) return 0.7;
   if (/\/guides\//.test(loc)) return 0.7;
   if (/\/best-of\//.test(loc)) return 0.7;
@@ -239,6 +243,19 @@ function writeSitemapIndex(outDir, sitemaps, today) {
       const markers = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
       for (const m of markers) {
         add(`${baseUrl}/historic-markers/${m.slug}/`);
+      }
+    }
+  });
+
+  // ═══ 3e. GHOST TOWNS (hub, GNIS index, curated articles) ═══
+  collectUrls('ghost-towns', (add) => {
+    add(`${baseUrl}/ghost-towns/`, 'weekly');
+    add(`${baseUrl}/ghost-towns/all/`, 'monthly');
+    const detailPath = path.join(webDir, 'data', 'ghost-towns-detail.json');
+    if (fs.existsSync(detailPath)) {
+      const rows = JSON.parse(fs.readFileSync(detailPath, 'utf8'));
+      for (const row of rows) {
+        if (row.slug) add(`${baseUrl}/ghost-towns/${row.slug}/`);
       }
     }
   });

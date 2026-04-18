@@ -1,0 +1,37 @@
+# Egan
+
+**By Editor**
+
+*Lincoln County*
+
+## History
+
+The Kootenai River valley between Libby and Eureka was, before the construction of Libby Dam, a landscape of small communities strung along the river and the Great Northern Railway line that followed it. These communities served the homesteaders, loggers, and ranchers who had settled the valley in the early twentieth century, and they had the character of the small agricultural and service communities that appeared wherever the railroad opened new land to settlement. Egan was one of these valley communities, a small settlement that occupied a position in the river corridor and served the local population for several decades before the combination of economic change and the dam's construction ended its existence.
+
+The Great Northern Railway's arrival in the Kootenai country in the 1890s was the event that made permanent settlement of the valley possible. Before the railroad, the Kootenai River valley was accessible only by difficult overland routes or by the steamboats that navigated the river during periods of high water, and the cost of transportation made commercial agriculture and logging economically marginal. The railroad changed the calculation by providing reliable, year-round access to markets, and the communities that grew up along the line in the early twentieth century were the direct result of that change.
+
+Egan developed as a small service community along the railroad corridor, providing the basic commercial and social functions that the surrounding agricultural population required. The community had the post office, the school, and the small commercial establishments that characterized the rural communities of the northern Rockies in the early twentieth century. The men and women who built Egan were homesteaders and their families, people who had come to the Kootenai country in response to the agricultural opportunities that the railroad had opened, and who built their community with the expectation that it would persist and grow.
+
+The economic life of the Kootenai valley communities was shaped by the timber industry as much as by agriculture. The forests of Lincoln County were among the most productive in Montana, and the logging operations that developed along the Kootenai River and its tributaries provided employment for a significant portion of the valley's population. The sawmills that processed the timber were the industrial anchors of the valley economy, and the communities that served the logging workforce were dependent on the health of the timber industry for their own survival.
+
+The mid-twentieth century brought changes to the Kootenai valley that the communities along the river could not have anticipated when they were established. The decline of the timber industry, the consolidation of agricultural operations, and the broader rural depopulation that characterized the postwar period all reduced the population of the small communities along the Great Northern line. Egan, like the other small communities in the valley, lost population as the economic conditions that had sustained it changed.
+
+The construction of Libby Dam, completed in 1975, was the final chapter in the story of many Kootenai valley communities. The dam created Lake Koocanusa, a reservoir that flooded much of the valley floor between Libby and the Canadian border. The communities that occupied the land that would be inundated were relocated or abandoned, and the landscape that had supported them was transformed into the bottom of a reservoir. Egan's fate in this process was determined by its location relative to the reservoir's boundaries, and the community that had existed along the river was gone.
+
+The history of Egan is the history of the small agricultural and service communities that the railroad created in the northern Rockies in the early twentieth century. These communities were real and functional, and the people who built them were serious about the enterprise of settlement. That most of them did not survive the economic and physical changes of the mid-twentieth century was a function of forces that were larger than any individual community could resist. The Kootenai valley that exists today, with its reservoir and its managed forests, is a different landscape from the one that the homesteaders found when they arrived along the Great Northern line, and the communities they built are part of a history that the landscape no longer reflects.
+
+The communities of the Kootenai valley in the early twentieth century were part of a broader pattern of agricultural settlement that the Great Northern Railway made possible across the northern tier of Montana. The railroad's land grant territories were marketed aggressively to potential settlers in the Midwest and in Europe, and the promotional literature that the railroad distributed described the Kootenai country as a land of opportunity for the farmer and the rancher. The settlers who responded to this promotion arrived with the expectation that the valley's fertile soils and reliable rainfall would support the kind of mixed farming that had sustained communities in the upper Midwest, and for a period that expectation was justified.
+
+The community life of the Kootenai valley settlements was shaped by the institutions that the homesteaders built: the schools, the churches, the granges, and the cooperative organizations that allowed small farmers to pool their resources and their labor. Egan, like the other small communities along the Great Northern line, had these institutions, and they gave the community a social coherence that persisted even as the economic conditions that had attracted the original settlers began to change. The men and women who built Egan were not transient miners or speculators; they were people who intended to stay, and the institutions they built reflected that intention.
+
+## What Remains Today
+
+The site of Egan is in the Kootenai River valley of Lincoln County, in the corridor between Libby and Eureka. The physical evidence of the community's existence depends on whether the site was above or below the Libby Dam reservoir's high-water mark. The Lincoln County MTGenWeb project has documented the communities of the pre-dam Kootenai valley, and the Lincoln County Historical Society in Libby maintains records related to the valley's settlement history.
+
+Lake Koocanusa, the reservoir created by Libby Dam, is now a significant recreational destination in Lincoln County, offering boating, fishing, and camping along its 90-mile length. The reservoir's shoreline provides access to the landscape of the former valley communities, though the communities themselves are gone.
+
+## Visiting
+
+Egan is located in Lincoln County, in the Kootenai River valley between Libby and Eureka. Libby, the Lincoln County seat, is accessible via US Highway 2 and is the nearest city with visitor services. The Lincoln County Historical Society in Libby can provide information about the history of the valley communities, including Egan.
+
+Eureka is approximately 50 miles north of Libby on US Highway 93 and is the nearest town to the northern end of the Kootenai valley corridor.

@@ -1,0 +1,35 @@
+# Maiden
+
+**By Editor**
+
+*Fergus County*
+
+## History
+
+Gold was discovered in the Judith Mountains near the head of Warm Spring Creek Canyon in 1879, and the discovery set off the kind of scramble that had already played out a dozen times across Montana Territory. Prospectors spread through the hills east of what would become Lewistown, following the creek gravels and the exposed rock faces for signs of color. The placer gold they found was real but limited, and the men who stayed in the district quickly understood that the real wealth lay deeper, in the hardrock veins that cut through the older metamorphic basement of the Judith Mountains.
+
+The camp of Maiden was established in 1881, when the first permanent buildings were constructed amid the tent camps that had sprung up around the most promising claims. The name came from the daughter of a friend of the townsite founders, Snow and Kemper, who laid out the original lots and gave the camp its identity. Nearby camps called Andersonville, Rustle, and Alpine developed in the same years, but they were smaller and less well-situated, and they gave way to Maiden as the district's center of gravity became clear.
+
+By 1883 Maiden boasted 154 buildings and was still growing. The population, which reached approximately 1,200 people including the outlying areas, was sustained by the hardrock mines on Gold Hill, the ridge just east of the townsite that held the district's richest ore bodies. The Maginnis mine, the Spotted Horse, the Kentucky Favorite, and the Cumberland were the leading producers, each working a different section of the same general ore zone, each employing hundreds of men at their peak. The ore was gold and silver, occurring in the kind of replacement deposits that characterized the Judith Mountains geology, and the mines that worked it were serious industrial operations requiring shaft sinking, timbering, pumping, and the construction of mills to process the ore before shipping.
+
+One of the most significant investments in the district was the Maginnis ten-stamp mill, constructed in 1884. A stamp mill of this type used heavy iron stamps, each weighing several hundred pounds, to crush the ore to a fine powder that could then be processed to recover the gold and silver. The Maginnis mill was a substantial structure, built to handle the volume of ore that the mine's underground workings were producing, and its construction represented a commitment to the district that went beyond the speculative investment of the early years. The mill's ruins are still preserved at the Maiden townsite today, one of the most tangible surviving connections to the district's industrial past.
+
+The problem that plagued Maiden throughout its existence was one that no amount of ore could solve: the townsite had been laid out on ground already designated as mining claims, which meant that no one who built a house or a business in Maiden actually owned the land beneath it. The legal ambiguity of the townsite's status was a constant source of uncertainty for residents and investors alike, and it complicated the development of the kind of permanent infrastructure that would have made Maiden a more durable community.
+
+The population peaked in the late 1880s and then began a slow decline as the richest ore bodies were worked out and the cost of mining at depth increased. By 1900 the population had dwindled to a few hundred residents, and the commercial district was contracting. In 1905 a fire destroyed most of the business district, and only a few businesses were rebuilt. The last saloon closed around 1918, the post office in 1921, and the school a few years later. In 1927 a second fire destroyed the last hotel and boarding house and the assay office, removing the last of the structures that had given Maiden the character of a functioning town.
+
+The mines on Gold Hill proved more persistent than the town. The Spotted Horse mine reopened in the early 1970s and operated intermittently until 1989, and the most recent gold production from the district came from the Maginnis mine as recently as 2016. The total production of the Judith Mountains mining district, centered on Maiden, has been estimated at approximately 400,000 ounces of gold and a comparable quantity of silver, making it one of the more productive gold districts in central Montana.
+
+"Skookum Joe" and his partner Jones located the first placer mines in the area in May 1880, and their discovery set the stage for everything that followed. The name "Skookum Joe" was the kind of nickname that the mining frontier generated freely, attaching itself to men whose real names were often unknown even to their contemporaries, and it has survived in the historical record as a marker of the anonymous labor that built the Montana mining economy.
+
+## What Remains Today
+
+The Maiden townsite retains the remains of nearly twenty structures, ranging from total ruins to buildings that have been remodeled and are still used as dwellings. The most significant surviving industrial artifact is the Maginnis ten-stamp mill of 1884, whose ruins have been privately preserved along with the remains of a saloon and assay office. These structures give the site a tangible connection to the district's working history that is unusual among Montana ghost towns of comparable age.
+
+Montana and Main Street, the two principal roads through the townsite, can be driven or walked, offering views of the surviving foundations and structures. All structures, ruins, and travel ways are on private property, and visitors are expected to respect the property boundaries. The site is not managed for public access in the way that Bannack State Park is, and there are no interpretive signs or formal visitor facilities.
+
+## Visiting
+
+Maiden is located approximately ten miles east of Lewistown in the Judith Mountains. The access road leaves Lewistown heading east and climbs into the hills through ranch country before reaching the townsite. The road is generally accessible to standard passenger vehicles in dry conditions, though the upper sections can be rough.
+
+The Lewistown Chamber of Commerce produces a brochure covering the ghost towns of the Judith Mountains area, including Maiden, Kendall, Gilt Edge, and Fort Maginnis, with a map and historical notes. The brochure is available at the Lewistown visitor center and is the most practical guide to the area's ghost town circuit. Lewistown itself is worth a stop for its historic downtown and the Central Montana Museum, which maintains exhibits on the mining history of the Judith Mountains.

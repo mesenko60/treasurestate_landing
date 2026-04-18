@@ -1,0 +1,35 @@
+# Bedford
+
+**By Editor**
+
+*Fergus County*
+
+## History
+
+Bedford's history begins not with mining but with cattle, and not with the speculative excitement of a gold rush but with the more deliberate business of feeding livestock and building a community around the needs of the open range. The settlement in the Judith Basin country of Fergus County was established in the 1870s as a service point along the routes that connected the growing cattle operations of central Montana, and its early character was shaped by the practical requirements of the ranching economy rather than the volatile rhythms of the mining camps.
+
+The first significant use of the Bedford area came in 1873, when a flour mill was built at the site, the seventh such mill in the Montana Territory. The mill's existence tells something important about the state of the territory at that moment: there were enough settled farms and ranches in the Judith Basin to justify the capital investment of a mill, and the men who built it expected a steady supply of grain from the surrounding country. The mill served the ranching operations and the small farming settlements that were beginning to establish themselves in the basin, and it gave Bedford a commercial function that preceded the more formal development of the community.
+
+By 1888 the Bedford area had become a profitable location for cattle operations, and the Mormon Church had established several herds of tithing cattle in the vicinity. The church's involvement in the central Montana cattle trade was part of a broader pattern of Mormon economic activity in the West, in which the church used its organizational capacity to manage large-scale agricultural operations that provided both income and food for its communities. The tithing cattle at Bedford were part of this system, and their presence gave the area a connection to the broader network of Mormon settlement that extended from Utah through Idaho and into Montana.
+
+A post office was established at Bedford, formalizing the community's identity and providing the mail service that connected isolated rural settlements to the outside world. The post office was the institutional anchor of small Montana communities in this era, the marker that distinguished a named place from a mere collection of buildings, and its establishment at Bedford indicated that the community had reached a threshold of population and permanence that justified the federal investment.
+
+The open range cattle era that had sustained Bedford's early development ended abruptly with the catastrophic winter of 1886-1887. The blizzards and extreme cold that swept the northern plains that winter killed cattle by the tens of thousands across Montana, and the ranching operations that had seemed so prosperous in the early 1880s were devastated. The ranchers who survived rebuilt their operations on a more conservative model, with smaller herds, hay reserves, and fenced pastures, and the open range that had characterized the Judith Basin was gradually replaced by a more intensive and less speculative form of ranching.
+
+The homestead era that followed the open range period brought a new wave of settlers into the Judith Basin in the early twentieth century. The federal homestead acts encouraged families to claim 160-acre parcels and attempt to build farms on land that had previously been used for cattle grazing, and the basin filled with homesteaders who planted wheat and built the small communities that the farming economy required. Bedford was one of the places where the homestead era left its mark, as new settlers arrived and the community's commercial functions expanded to serve the farming population.
+
+The combination of drought, low prices, and the exhaustion of the soil that characterized the homestead bust of the 1920s and 1930s hit the Bedford area as it hit communities across the Hi-Line and the Judith Basin. The farms that had been built on the assumption of adequate rainfall proved unworkable when the dry years returned, and the families who had invested their savings in the Judith Basin country moved on to other places. Bedford's post office closed, its commercial functions migrated to the larger railroad towns, and the community contracted to a handful of families who held on through the difficult years.
+
+The story of Bedford's flour mill is worth dwelling on. The seventh flour mill in Montana Territory was not a trivial enterprise. It required capital, machinery, and a reliable supply of grain, and its construction in the 1870s indicates that the Judith Basin had already developed a settled agricultural economy substantial enough to support it. The mill's customers were the ranching operations and the small farms that had established themselves in the basin, and the fact that there were enough of them to justify the investment tells something important about the pace of settlement in central Montana during the territorial period. The Judith Basin was not a frontier in the sense of being empty; it was a contested landscape in which the cattle industry, the farming economy, and the remnants of the indigenous land use were all present simultaneously, and the flour mill at Bedford was one of the markers of the agricultural economy's growing dominance.
+
+## What Remains Today
+
+Bedford retains a small number of structures from its ranching and homestead eras, scattered through the Judith Basin country of Fergus County. The landscape itself preserves the evidence of the community's history: the disturbed soil of old fields, the remnants of fencing, and the occasional building that has survived the decades since the community's commercial life ended.
+
+The Judith Basin is a broad and beautiful valley surrounded by mountain ranges on three sides, and the drive through the basin on US Highway 87 or the county roads that cross it gives a clear sense of the agricultural landscape that Bedford served. The ghost towns of the Judith Mountains, including Kendall, Maiden, and Gilt Edge, are accessible from the basin and provide a more complete picture of the region's history.
+
+## Visiting
+
+Bedford is located in Fergus County in the Judith Basin, accessible from the county roads that cross the basin between Lewistown and the surrounding mountain ranges. Lewistown, the Fergus County seat, is the nearest city with visitor services and is located approximately in the center of the basin on US Highway 87. The Central Montana Museum in Lewistown maintains exhibits on the history of the Judith Basin, including the ranching era, the homestead period, and the mining districts of the surrounding mountains.
+
+The Judith Basin country is open range country, and visitors should be aware of cattle on the roads and the distances between services when traveling the county roads. The basin's agricultural landscape and the surrounding mountain ranges make it one of the more scenic areas of central Montana, and the combination of natural beauty and historical depth rewards careful exploration.

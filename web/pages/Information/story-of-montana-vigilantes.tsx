@@ -60,6 +60,12 @@ export default function StoryOfMontanaVigilantes() {
 
           <p>I've stood in the weathered buildings of Bannack, run my fingers along the rough-hewn timbers of <Link href="/montana-towns/virginia-city/">Virginia City</Link>'s false-fronted structures, and felt the weight of those terrible days when the Montana Vigilantes dispensed their brand of frontier justice. The story they tell in the tourist pamphlets is clean, almost heroic, brave citizens rising up against a tide of lawlessness to restore order to the gold camps. But dig beneath the surface, scratch at the veneer of certainty that's been painted over this history, and you'll find something far more troubling: an epic of human frailty, of judgment rendered in haste, of blood spilled without the burden of proof.</p>
 
+          <p>
+            For a place-based account of the first territorial capital, see{' '}
+            <Link href="/ghost-towns/bannack/" style={{ color: '#3b6978' }}>Bannack — Montana ghost town</Link> and the wider{' '}
+            <Link href="/ghost-towns/" style={{ color: '#3b6978' }}>Montana Ghost Towns</Link> map.
+          </p>
+
           <p>The winter of 1863-64 stands as the darkest season in Montana's territorial history. It was a time when men went to bed not knowing if they would be rousted from sleep by masked figures, a time when accusation alone could be a death sentence. The vigilantes' nooses claimed at least twenty-four lives in a matter of weeks, including that of Henry Plummer, the elected sheriff of Bannack.</p>
 
           <p>The official story, the one recorded by Thomas Dimsdale in his 1866 book <em>The Vigilantes of Montana</em> and echoed by Nathaniel Langford in <em>Vigilante Days and Ways</em>, tells us that Plummer was the secret leader of a gang called "The Innocents," responsible for as many as a hundred murders and countless robberies along the roads connecting the mining camps. According to this account, the discovery of his double life necessitated swift and terrible punishment, not just for Plummer but for all of his alleged accomplices.</p>

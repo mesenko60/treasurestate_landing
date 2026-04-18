@@ -1,0 +1,33 @@
+# Carbonate
+
+**By Editor**
+
+*Powell County*
+
+## History
+
+The ore that gave Carbonate its name was a particular kind of silver mineral: argentiferous carbonate, a soft gray rock that could be worked with relatively simple equipment and yielded its silver readily to the smelter. It was the kind of ore that prospectors in the 1870s and 1880s learned to recognize on sight, and when they found it in the hills east of Deer Lodge, they staked their claims with the confidence of men who had seen what carbonate ore could produce in the camps of Colorado and Nevada. The camp that grew up around those claims took the name of the ore itself, a straightforward act of nomenclature that told you everything you needed to know about why the place existed.
+
+Carbonate occupied a position in the Powell County mining landscape that was typical of the secondary camps that surrounded every major district in Montana Territory. It was not a Bannack or a Granite, not a place that produced millions of dollars in ore or attracted thousands of residents. It was instead one of dozens of smaller camps that sustained a working population of miners and their families through the 1880s and into the early 1890s, producing enough silver to justify the investment of labor and capital while never quite generating the returns that would have transformed it into something larger.
+
+The geology of the area east of Deer Lodge was well suited to this kind of modest but persistent production. The carbonate ore bodies occurred in replacement deposits, where silver-bearing solutions had moved through the rock and replaced portions of the original limestone with argentiferous minerals. These deposits were typically irregular in shape, rich in some areas and thin or absent in others, which made them difficult to mine systematically but rewarding to those with the patience and skill to follow the ore through its variations. The men who worked Carbonate were experienced miners who had learned their trade in the older camps of the territory, and they brought to the work a practical knowledge of how carbonate ore behaved underground.
+
+The camp was served by the Carbonate Extension Company, a Deer Lodge-based firm that invested in the claims and provided the organizational structure needed to move from individual prospecting to systematic mining. The company's connection to Conrad Kohrs, the cattle baron whose operations dominated much of the Powell County economy, gave it access to capital and political influence that smaller operators lacked. Kohrs himself was a practical man who understood the economics of western enterprise, and his reported involvement in the Carbonate district reflected his broader strategy of diversifying his holdings across the various resource industries of the region.
+
+The silver crash of 1893 hit Carbonate as it hit every silver camp in Montana. The repeal of the Sherman Silver Purchase Act in November of that year removed the federal government's commitment to purchasing silver at an artificially supported price, and the market value of silver fell sharply in the weeks that followed. Mines that had been marginally profitable at the old price became instantly uneconomical at the new one, and across the territory, camps that had seemed permanent were abandoned within months. Carbonate was among them. The ore bodies were not exhausted, and there was silver still in the ground, but the price of silver had fallen below the cost of extracting it, and the men who had worked the claims walked away.
+
+The Carbonate Extension Company attempted to maintain some presence in the district through the late 1890s, investing in the claims in the Rocker Gulch area and eventually reorganizing under new management. The camp at Carbonate itself was not reoccupied in any significant way, though individual miners continued to work the area on a small scale through the early twentieth century. The district's production records, preserved in the Montana Bureau of Mines and Geology archives, document a pattern familiar from dozens of similar camps: a peak in the late 1880s, a sharp decline after 1893, and a long tail of intermittent small-scale activity that finally ended sometime in the first decade of the new century.
+
+What distinguished Carbonate from the many other small camps of the Powell County mining era was the quality of its ore rather than its quantity. The carbonate silver mineral was among the richest in the territory when it occurred in concentrated form, and the best ore from the Carbonate district commanded premium prices at the Anaconda smelter. It was the kind of ore that rewarded the careful miner who took the time to sort his product and ship only the high-grade material, and the records suggest that the operators at Carbonate understood this well. The camp's total production was modest by the standards of the great Montana mining districts, but the value per ton of ore shipped was respectable.
+
+## What Remains Today
+
+The Carbonate townsite has left no visible surface structures. The ore bodies were worked by underground methods, and the surface expression of the mining activity, including shaft collars, waste dumps, and the foundations of surface structures, has been largely reclaimed by the vegetation of the Beaverhead-Deerlodge National Forest. The area is accessible by forest roads east of Deer Lodge, but there are no interpretive signs or maintained facilities at the site.
+
+The Deer Lodge Valley itself preserves the broader context of the Powell County mining era. The Grant-Kohrs Ranch National Historic Site in Deer Lodge interprets the cattle ranching economy that was the other face of the region's nineteenth-century history, and the Powell County Museum offers exhibits on the mining and ranching heritage of the area.
+
+## Visiting
+
+Carbonate is most easily approached from Deer Lodge, the Powell County seat, via forest roads heading east into the Flint Creek Range foothills. The roads are unpaved and require a high-clearance vehicle; conditions vary significantly by season. The area is best visited in summer and early fall, when the roads are dry and the forest is accessible.
+
+Deer Lodge offers a full range of visitor services and is worth a stop in its own right. The Grant-Kohrs Ranch, operated by the National Park Service, provides an exceptional window into the ranching world that Conrad Kohrs built, the same world that intersected with the mining economy of Carbonate and the other small camps of the Powell County hills.

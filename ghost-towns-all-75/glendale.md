@@ -1,0 +1,37 @@
+# Glendale
+
+**By Editor**
+
+*Beaverhead County, Montana*
+
+## History
+
+The Hecla Mining District in the Pioneer Mountains of Beaverhead County was one of those places where geography and geology conspired to create both opportunity and difficulty in equal measure. The ore was rich, the mountains were remote, and the distance from the nearest railroad meant that every pound of equipment and every ton of processed metal had to travel over roads that were, at best, challenging. What the district needed was not just a mine but a smelter, a place where the ore could be reduced to metal close to where it was extracted, eliminating the cost of shipping raw rock over the mountains to distant processing facilities.
+
+Glendale was that place. Located about five miles west of the Big Hole River near Melrose, it became the smelting center of the Hecla district and, for a time, one of the most important industrial sites in southwestern Montana. The Hecla Consolidated Mining Company, which gave the district its name, dated its operations in the area to 1872, and the early records and newspapers of the period referred to the same territory variously as the Hecla Mining District, the Trapper District, and the Bryant Mining District, all of which described the same cluster of mines and camps on the slopes of Lion Mountain.
+
+The district held four towns on the side of Lion Mountain: Trapper City, Lion City, Hecla, and Glendale. Of the four, Glendale was considered the most civilized, a distinction that in the context of an 1870s mining district meant that it had a brewery, the Montana Brewery, and a general merchandise store, along with the usual complement of saloons and boarding houses. The smelter that made Glendale important was built in 1875 by Charles L. Dehler and Noah Armstrong, a forty-ton lead smelter designed to process the silver and lead ores from the surrounding mines. It was the first significant smelting operation in the district, and it changed the economics of mining in the Pioneer Mountains by making it possible to produce finished metal close to the source.
+
+The ore in the Hecla district ran in veins through the limestone and quartzite of the Pioneer Mountains, silver and lead together in the concentrations that characterized the great Montana silver deposits of the 1870s and 1880s. The mines on Lion Mountain were not placer operations but hard-rock mines, requiring the kind of industrial infrastructure that the early prospectors of the 1860s had lacked. By the time the Hecla Consolidated Mining Company organized its operations in earnest, the district had the benefit of a decade of experience in Montana mining and the capital of Eastern investors who understood what was required to develop a deep-vein silver deposit.
+
+The smelter produced nearly one million ounces of silver and thousands of tons of lead and copper annually during its most productive years. The population of Glendale and the surrounding district reached nearly two thousand at the peak of operations. The town had the infrastructure of a real community: hotels, saloons, a brewery, commercial establishments, and the social organizations that accompanied any population of that size in the nineteenth-century West. The Montana Brewery was a point of local pride, its product consumed in the saloons of all four towns on Lion Mountain and shipped by wagon to the wider district.
+
+The smelter burned on June 25, 1879, a fire that destroyed the main building and threatened to end the district's industrial capacity. The response was immediate: a new smelter was constructed at a cost that demonstrated the investors' confidence in the district's future. The rebuilt facility continued operating through the 1880s, and the district remained one of the leading silver producers in the West.
+
+The charcoal kilns on Canyon Creek, five miles up the road from Glendale, were an essential part of the smelting operation. The kilns, built in the beehive style common to nineteenth-century smelting districts, converted timber from the surrounding forests into the charcoal that fueled the smelter's furnaces. The scale of the operation required an enormous quantity of fuel: the kilns ran continuously during the peak years of the district, consuming timber from the Pioneer Mountain slopes and producing charcoal that was hauled by wagon to the smelter at Glendale. The kilns survive today as some of the best-preserved examples of this kind of industrial infrastructure in Montana, their stone construction having outlasted the wooden buildings of the town they served.
+
+The repeal of the Sherman Silver Purchase Act in 1893 struck the Hecla district as it struck every silver district in Montana. The federal government's decision to stop purchasing silver at a fixed price removed the floor from the silver market, and the price collapsed almost immediately. Mining continued on a reduced scale, but the economics that had justified the large smelting operation no longer held. The district could not produce silver cheaply enough to be profitable at the new market prices, and the capital that had sustained it began to flow elsewhere.
+
+In 1900, the Glendale Smelter was torn down, its materials salvaged for use in other construction projects. The decision to dismantle rather than simply abandon the smelter was a practical one, but it removed the most substantial evidence of what Glendale had been. By 1915, all mining operations in the district had ceased. The town of Glendale, which had housed nearly two thousand people at its peak, was left with a smelter stack, a few dilapidated buildings, and the charcoal kilns up the road.
+
+## What Remains Today
+
+The smelter stack is the most prominent surviving structure at Glendale, a brick chimney that rises above the valley floor as a marker of what was once here. A few dilapidated buildings remain in various states of collapse. The Canyon Creek Charcoal Kilns, five miles up the road, are in considerably better condition and are the most visually striking remnants of the district's industrial past. Their beehive shape, built of stone, is distinctive in the mountain landscape and gives a concrete sense of the scale of the operation that once sustained Glendale.
+
+The site is on public land and is accessible to visitors.
+
+## Visiting
+
+Glendale is located approximately five miles west of Melrose in Beaverhead County. From Interstate 15, take Exit 93 near Melrose and follow Trapper Creek Road west. The road is unpaved beyond the initial stretch and requires a vehicle with reasonable clearance. The Canyon Creek Charcoal Kilns are located five miles further along Canyon Creek Road and are worth the additional drive.
+
+The nearest services are in Melrose, a small community on Interstate 15 with a gas station and limited food options. Dillon, the Beaverhead County seat, is approximately forty miles to the south and offers full services.

@@ -1,0 +1,752 @@
+[
+  {
+    "slug": "aldridge",
+    "name": "Aldridge",
+    "countyName": "Park",
+    "countyFips": "067",
+    "countyLabel": "Park County",
+    "region": "Yellowstone / Beartooth",
+    "status": "ruins",
+    "nearestLivingTownSlug": "gardiner"
+  },
+  {
+    "slug": "apex",
+    "name": "Apex",
+    "countyName": "Mineral",
+    "countyFips": "061",
+    "countyLabel": "Mineral County",
+    "region": "Bitterroot / West",
+    "status": "ruins",
+    "nearestLivingTownSlug": "superior"
+  },
+  {
+    "slug": "argenta",
+    "name": "Argenta",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "bannack",
+    "name": "Bannack",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "preserved",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "barker",
+    "name": "Barker",
+    "countyName": "Judith Basin",
+    "countyFips": "045",
+    "countyLabel": "Judith Basin County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "stanford"
+  },
+  {
+    "slug": "bearmouth",
+    "name": "Bearmouth",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "drummond"
+  },
+  {
+    "slug": "beartown",
+    "name": "Beartown",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "missoula"
+  },
+  {
+    "slug": "bedford",
+    "name": "Bedford",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "black-butte",
+    "name": "Black Butte",
+    "countyName": "Meagher",
+    "countyFips": "059",
+    "countyLabel": "Meagher County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "white-sulphur-springs"
+  },
+  {
+    "slug": "brandon",
+    "name": "Brandon",
+    "countyName": "Madison",
+    "countyFips": "055",
+    "countyLabel": "Madison County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "whitehall"
+  },
+  {
+    "slug": "cable",
+    "name": "Cable",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "philipsburg"
+  },
+  {
+    "slug": "carbonate",
+    "name": "Carbonate",
+    "countyName": "Powell",
+    "countyFips": "077",
+    "countyLabel": "Powell County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "philipsburg"
+  },
+  {
+    "slug": "castle",
+    "name": "Castle",
+    "countyName": "Meagher",
+    "countyFips": "059",
+    "countyLabel": "Meagher County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "great-falls"
+  },
+  {
+    "slug": "centennial",
+    "name": "Centennial",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "cinnabar",
+    "name": "Cinnabar",
+    "countyName": "Park",
+    "countyFips": "067",
+    "countyLabel": "Park County",
+    "region": "Yellowstone / Beartooth",
+    "status": "ruins",
+    "nearestLivingTownSlug": "gardiner"
+  },
+  {
+    "slug": "cleveland",
+    "name": "Cleveland",
+    "countyName": "Blaine",
+    "countyFips": "005",
+    "countyLabel": "Blaine County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "chinook"
+  },
+  {
+    "slug": "coloma",
+    "name": "Coloma",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Garnet Range / Missoula Area",
+    "status": "ruins",
+    "nearestLivingTownSlug": "missoula"
+  },
+  {
+    "slug": "combination",
+    "name": "Combination",
+    "countyName": "Ravalli",
+    "countyFips": "081",
+    "countyLabel": "Ravalli County",
+    "region": "Bitterroot / West",
+    "status": "ruins",
+    "nearestLivingTownSlug": "hamilton"
+  },
+  {
+    "slug": "comet",
+    "name": "Comet",
+    "countyName": "Jefferson",
+    "countyFips": "043",
+    "countyLabel": "Jefferson County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "confederate-gulch",
+    "name": "Confederate Gulch",
+    "countyName": "Broadwater",
+    "countyFips": "007",
+    "countyLabel": "Broadwater County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "townsend"
+  },
+  {
+    "slug": "coolidge",
+    "name": "Coolidge",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "copperopolis",
+    "name": "Copperopolis",
+    "countyName": "Meagher",
+    "countyFips": "059",
+    "countyLabel": "Meagher County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "white-sulphur-springs"
+  },
+  {
+    "slug": "curlew",
+    "name": "Curlew",
+    "countyName": "Ravalli",
+    "countyFips": "081",
+    "countyLabel": "Ravalli County",
+    "region": "Garnet Range / Missoula Area",
+    "status": "ruins",
+    "nearestLivingTownSlug": "hamilton"
+  },
+  {
+    "slug": "demersville",
+    "name": "Demersville",
+    "countyName": "Flathead",
+    "countyFips": "029",
+    "countyLabel": "Flathead County",
+    "region": "Northwest / Flathead",
+    "status": "ruins",
+    "nearestLivingTownSlug": "kalispell"
+  },
+  {
+    "slug": "diamond-city",
+    "name": "Diamond City",
+    "countyName": "Broadwater",
+    "countyFips": "007",
+    "countyLabel": "Broadwater County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "townsend"
+  },
+  {
+    "slug": "egan",
+    "name": "Egan",
+    "countyName": "Lincoln",
+    "countyFips": "053",
+    "countyLabel": "Lincoln County",
+    "region": "Northwest / Flathead",
+    "status": "ruins",
+    "nearestLivingTownSlug": "libby"
+  },
+  {
+    "slug": "elkhorn",
+    "name": "Elkhorn",
+    "countyName": "Jefferson",
+    "countyFips": "043",
+    "countyLabel": "Jefferson County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "boulder"
+  },
+  {
+    "slug": "french-gulch",
+    "name": "French Gulch",
+    "countyName": "Deer Lodge",
+    "countyFips": "023",
+    "countyLabel": "Deer Lodge County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "galata",
+    "name": "Galata",
+    "countyName": "Toole",
+    "countyFips": "101",
+    "countyLabel": "Toole County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "shelby"
+  },
+  {
+    "slug": "garnet",
+    "name": "Garnet",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Garnet Range / Missoula Area",
+    "status": "preserved",
+    "nearestLivingTownSlug": "missoula"
+  },
+  {
+    "slug": "gilt-edge",
+    "name": "Gilt Edge",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "glen",
+    "name": "Glen",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "glendale",
+    "name": "Glendale",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "goldstone",
+    "name": "Goldstone",
+    "countyName": "Toole",
+    "countyFips": "101",
+    "countyLabel": "Toole County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "shelby"
+  },
+  {
+    "slug": "granite",
+    "name": "Granite",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "philipsburg"
+  },
+  {
+    "slug": "greenhorn",
+    "name": "Greenhorn",
+    "countyName": "Lewis and Clark",
+    "countyFips": "049",
+    "countyLabel": "Lewis and Clark County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "hassel",
+    "name": "Hassel",
+    "countyName": "Broadwater",
+    "countyFips": "007",
+    "countyLabel": "Broadwater County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "hecla",
+    "name": "Hecla",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "butte"
+  },
+  {
+    "slug": "highland-city",
+    "name": "Highland City",
+    "countyName": "Silver Bow",
+    "countyFips": "093",
+    "countyLabel": "Silver Bow County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "butte"
+  },
+  {
+    "slug": "horr",
+    "name": "Horr",
+    "countyName": "Park",
+    "countyFips": "067",
+    "countyLabel": "Park County",
+    "region": "Yellowstone / Beartooth",
+    "status": "ruins",
+    "nearestLivingTownSlug": "livingston"
+  },
+  {
+    "slug": "hughesville",
+    "name": "Hughesville",
+    "countyName": "Judith Basin",
+    "countyFips": "045",
+    "countyLabel": "Judith Basin County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "independence",
+    "name": "Independence",
+    "countyName": "Park",
+    "countyFips": "067",
+    "countyLabel": "Park County",
+    "region": "Yellowstone / Beartooth",
+    "status": "ruins",
+    "nearestLivingTownSlug": "livingston"
+  },
+  {
+    "slug": "jardine",
+    "name": "Jardine",
+    "countyName": "Park",
+    "countyFips": "067",
+    "countyLabel": "Park County",
+    "region": "Yellowstone / Beartooth",
+    "status": "partial",
+    "nearestLivingTownSlug": "gardiner"
+  },
+  {
+    "slug": "jennings",
+    "name": "Jennings",
+    "countyName": "Lincoln",
+    "countyFips": "053",
+    "countyLabel": "Lincoln County",
+    "region": "Northwest / Flathead",
+    "status": "ruins",
+    "nearestLivingTownSlug": "libby"
+  },
+  {
+    "slug": "kendall",
+    "name": "Kendall",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "landusky",
+    "name": "Landusky",
+    "countyName": "Phillips",
+    "countyFips": "071",
+    "countyLabel": "Phillips County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "malta"
+  },
+  {
+    "slug": "lion-city",
+    "name": "Lion City",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "lothair",
+    "name": "Lothair",
+    "countyName": "Liberty",
+    "countyFips": "051",
+    "countyLabel": "Liberty County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "chester"
+  },
+  {
+    "slug": "maiden",
+    "name": "Maiden",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "marysville",
+    "name": "Marysville",
+    "countyName": "Lewis and Clark",
+    "countyFips": "049",
+    "countyLabel": "Lewis and Clark County",
+    "region": "Southwest Mining",
+    "status": "partial",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "mccartneyville",
+    "name": "McCartneyville",
+    "countyName": "Missoula",
+    "countyFips": "063",
+    "countyLabel": "Missoula County",
+    "region": "Garnet Range / Missoula Area",
+    "status": "ruins",
+    "nearestLivingTownSlug": "missoula"
+  },
+  {
+    "slug": "mildred",
+    "name": "Mildred",
+    "countyName": "Prairie",
+    "countyFips": "079",
+    "countyLabel": "Prairie County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "glasgow"
+  },
+  {
+    "slug": "monarch",
+    "name": "Monarch",
+    "countyName": "Judith Basin",
+    "countyFips": "045",
+    "countyLabel": "Judith Basin County",
+    "region": "Central Montana",
+    "status": "partial",
+    "nearestLivingTownSlug": "stanford"
+  },
+  {
+    "slug": "nevada-city",
+    "name": "Nevada City",
+    "countyName": "Madison",
+    "countyFips": "055",
+    "countyLabel": "Madison County",
+    "region": "Southwest Mining",
+    "status": "preserved",
+    "nearestLivingTownSlug": "ennis"
+  },
+  {
+    "slug": "old-camp-cooke",
+    "name": "Old Camp Cooke",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "old-fort-belknap",
+    "name": "Old Fort Belknap",
+    "countyName": "Blaine",
+    "countyFips": "005",
+    "countyLabel": "Blaine County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "ruins",
+    "nearestLivingTownSlug": "harlem"
+  },
+  {
+    "slug": "ophir",
+    "name": "Ophir",
+    "countyName": "Powell",
+    "countyFips": "077",
+    "countyLabel": "Powell County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "whitehall"
+  },
+  {
+    "slug": "pardee",
+    "name": "Pardee",
+    "countyName": "Mineral",
+    "countyFips": "061",
+    "countyLabel": "Mineral County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "superior"
+  },
+  {
+    "slug": "pioneer",
+    "name": "Pioneer",
+    "countyName": "Powell",
+    "countyFips": "077",
+    "countyLabel": "Powell County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "townsend"
+  },
+  {
+    "slug": "polaris",
+    "name": "Polaris",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "partial",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "pony",
+    "name": "Pony",
+    "countyName": "Madison",
+    "countyFips": "055",
+    "countyLabel": "Madison County",
+    "region": "Southwest Mining",
+    "status": "partial",
+    "nearestLivingTownSlug": "ennis"
+  },
+  {
+    "slug": "quigley",
+    "name": "Quigley",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "drummond"
+  },
+  {
+    "slug": "red-mountain-city",
+    "name": "Red Mountain City",
+    "countyName": "Silver Bow",
+    "countyFips": "093",
+    "countyLabel": "Silver Bow County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "butte"
+  },
+  {
+    "slug": "reynolds-city",
+    "name": "Reynolds City",
+    "countyName": "Granite",
+    "countyFips": "039",
+    "countyLabel": "Granite County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "philipsburg"
+  },
+  {
+    "slug": "rimini",
+    "name": "Rimini",
+    "countyName": "Lewis and Clark",
+    "countyFips": "049",
+    "countyLabel": "Lewis and Clark County",
+    "region": "Southwest Mining",
+    "status": "partial",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "rochester",
+    "name": "Rochester",
+    "countyName": "Madison",
+    "countyFips": "055",
+    "countyLabel": "Madison County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "sterling",
+    "name": "Sterling",
+    "countyName": "Madison",
+    "countyFips": "055",
+    "countyLabel": "Madison County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "townsend"
+  },
+  {
+    "slug": "sylvanite",
+    "name": "Sylvanite",
+    "countyName": "Lincoln",
+    "countyFips": "053",
+    "countyLabel": "Lincoln County",
+    "region": "Northwest / Flathead",
+    "status": "ruins",
+    "nearestLivingTownSlug": "libby"
+  },
+  {
+    "slug": "tobacco-plains",
+    "name": "Tobacco Plains",
+    "countyName": "Lincoln",
+    "countyFips": "053",
+    "countyLabel": "Lincoln County",
+    "region": "Northwest / Flathead",
+    "status": "ruins",
+    "nearestLivingTownSlug": "eureka"
+  },
+  {
+    "slug": "trapper-city",
+    "name": "Trapper City",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "dillon"
+  },
+  {
+    "slug": "ubet",
+    "name": "Ubet",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "vipond",
+    "name": "Vipond",
+    "countyName": "Beaverhead",
+    "countyFips": "001",
+    "countyLabel": "Beaverhead County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "butte"
+  },
+  {
+    "slug": "wickes",
+    "name": "Wickes",
+    "countyName": "Jefferson",
+    "countyFips": "043",
+    "countyLabel": "Jefferson County",
+    "region": "Southwest Mining",
+    "status": "ruins",
+    "nearestLivingTownSlug": "helena"
+  },
+  {
+    "slug": "yogo",
+    "name": "Yogo",
+    "countyName": "Fergus",
+    "countyFips": "027",
+    "countyLabel": "Fergus County",
+    "region": "Central Montana",
+    "status": "ruins",
+    "nearestLivingTownSlug": "lewistown"
+  },
+  {
+    "slug": "zortman",
+    "name": "Zortman",
+    "countyName": "Phillips",
+    "countyFips": "071",
+    "countyLabel": "Phillips County",
+    "region": "Hi-Line / Little Rockies",
+    "status": "partial",
+    "nearestLivingTownSlug": "malta"
+  }
+]

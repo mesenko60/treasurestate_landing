@@ -1,0 +1,37 @@
+# Elkhorn
+
+**By Editor**
+
+*Jefferson County, Montana*
+
+## History
+
+In the late 1860s, a Swiss immigrant named Peter Wys was working his way through the Elkhorn Mountains northeast of Boulder, in the country that would become Jefferson County, looking for gold. He found silver instead. The distinction mattered enormously in the economy of the time: gold could be worked by a man alone with a pan, but silver required capital, machinery, and organization. What Wys had found was not a placer deposit but a vein, a seam of silver-bearing ore running through the rock of the mountain, and working it would require more than one man's labor and one season's patience.
+
+Wys died in 1872, and the mine he had discovered passed to Helena entrepreneur Anton M. Holter and his associates, men with the capital and the connections to develop it at scale. Under Holter's direction, the Elkhorn Mine became one of the dominant silver operations in the Northwest. The mine changed hands repeatedly over the following decades, as mines in developing districts often did, but the ore body it had opened proved durable, and the operation continued to produce through the boom years of the 1880s and into the 1890s.
+
+The mine that grew from Wys's discovery took its name from the mountains around it, and the town that grew from the mine took the same name. Elkhorn. The Elkhorn Mine became one of the richest early silver operations in the Northwest, eventually producing more than fourteen million dollars in silver ore over its working life, along with significant quantities of gold and lead. By 1900, the mine's recorded output included nearly nine million ounces of silver, eight thousand five hundred ounces of gold, and more than four million pounds of lead, figures that placed it among the most productive silver mines in Montana's history.
+
+The town of Elkhorn grew up in the 1870s and reached its peak in the 1880s, when silver production was at its height and the population climbed above two thousand residents. It was a full-service mining community, with the saloons, hotels, boarding houses, fraternal halls, and social organizations that characterized the larger camps of the era. The mountains around the town were steep and forested, the winters long and cold, and the work in the mine was hard, but Elkhorn in its prime was a real place, not merely a collection of temporary shelters.
+
+The social life of the camp centered on two buildings that still stand today. Fraternity Hall, built in the early 1880s, served as the heart of the community: a dance hall and meeting place for the various fraternal orders that organized much of the social life of nineteenth-century mining towns. Dances were held there, traveling theatrical troupes performed there, graduations and prize fights and public meetings all took place within its walls. The hall was the place where Elkhorn's residents gathered to be a community rather than merely a workforce, and the fact that it was built at all, rather than a second saloon or a larger boarding house, says something about the aspirations of the people who built it. Gillian Hall, the adjacent structure, served as a store, a saloon, and, before Fraternity Hall was completed, a dance hall in its own right. Together the two buildings anchored the commercial and social center of the townsite.
+
+The decline came with the silver panic of 1893, when Congress repealed the Sherman Silver Purchase Act and the price of silver collapsed. Elkhorn, like Granite and a dozen other Montana silver towns, found itself producing a metal that the market no longer valued at the price required to make the work pay. Mining continued on a reduced scale into the early twentieth century, but the population that had sustained the town's businesses and social life had largely dispersed by 1900. The buildings remained because there was no particular reason to tear them down, and because the mountain location discouraged the kind of salvage and redevelopment that erased other camps.
+
+The Elkhorn Mine had changed hands repeatedly over the decades, as mines in declining districts often did, passing from one set of investors to another, each hoping that a new approach or a better price would make the ore pay again. It never quite did, not at the scale that had built the town. By the early twentieth century, Elkhorn was a ghost town in the most literal sense: a place where the buildings stood and the people did not.
+
+What Elkhorn never quite became, however, was entirely empty. A handful of residents remained through the twentieth century, and the town has always had a small permanent population, people who chose to live in the old buildings and maintain a connection to the place. It is one of the few Montana ghost towns that can be described as both genuinely historic and genuinely inhabited, however thinly.
+
+## What Remains Today
+
+Elkhorn is now preserved in part as Elkhorn State Park, administered by Montana Fish, Wildlife and Parks. It is notable for being Montana's smallest state park, encompassing just one acre of land set aside to preserve the two most significant surviving structures: Fraternity Hall and Gillian Hall. Both buildings date from the early 1880s and represent some of the finest surviving examples of frontier vernacular architecture in the state. Fraternity Hall in particular, with its decorative woodwork and relatively intact interior, gives a clear sense of the social ambitions of the community that built it. The second floor of Fraternity Hall is open to visitors.
+
+The Montana Ghost Town Preservation Society worked to stabilize both Fraternity Hall and Gillian Hall before they were acquired by the state. In December 2006, the state park was formally established, securing the buildings' long-term future.
+
+Beyond the one-acre state park boundary, additional old buildings stand on private land, some in better condition than others, a few showing signs of informal maintenance. The overall effect of the townsite is of a place that has been left largely alone, which is to say that it has aged on its own terms, which is the best thing that can happen to a ghost town.
+
+## Visiting
+
+Elkhorn is located approximately eleven miles south of Boulder, Jefferson County, via a gravel road. The state park is open year-round during daylight hours. No admission fee is charged for the state park itself. The gravel road to the site is passable for most vehicles in dry conditions but can be rough; high clearance is helpful.
+
+The site is at approximately 6,400 feet elevation, and weather can change quickly. Visitors are asked to stay on established paths and to respect the private property boundaries around the state park parcel. The doors to Fraternity Hall and Gillian Hall should be closed after entering.

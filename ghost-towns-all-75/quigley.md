@@ -1,0 +1,35 @@
+# Quigley
+
+**By Editor**
+
+*Granite County*
+
+## History
+
+The gold rush that created Quigley in 1895 was built on a rumor, and the rumor was almost certainly a lie. Word spread through the mining camps and investment houses of Montana and beyond that ore from Brewster Creek, a tributary of Rock Creek in the northern Sapphire Mountains, had assayed at extraordinary values, the kind of numbers that made men abandon their common sense and reach for their checkbooks. The rush that followed was swift and substantial, and the community that grew up at the mouth of Brewster Creek Canyon was, for a brief season, a real place with real people who believed they were standing at the edge of a great fortune.
+
+The geography of Quigley's location was promising enough on its face. The Alps Mining District, as the Brewster Creek country was called, sat at an elevation of approximately 3,852 feet in the northern Sapphire Mountains, a range that had yielded gold and silver in other locations and had no obvious reason to be barren at Brewster Creek. The creek itself drained a substantial watershed, and the placer workings that preceded the hard-rock rush had produced enough color to give the promoters something to work with. The assay reports that circulated in 1895 were the kind of numbers that could be produced by salting a sample, and the men who circulated them were skilled at the art of mining promotion.
+
+The capitalization that followed was remarkable for a camp that would prove so short-lived. The total investment reportedly reached $1.5 million, backed in part by President Grover Cleveland and other prominent investors who had been persuaded by the assay reports and the promotional literature. Three mines were developed, a stamp mill was constructed to process the ore, and a seven-and-a-half-mile aqueduct was built to supply water for the milling operations. The most ambitious project was a twelve-mile railroad bed graded up Rock Creek using Chinese labor, intended to connect Quigley to the Northern Pacific Railway at Clinton and give the camp the transportation infrastructure that a major mining operation required.
+
+The railroad was never completed. By 1896 it was clear that the high assays were not representative of the ore body, and the mines were yielding little of value. The investors who had committed their capital to the Quigley district began to understand that they had been deceived, and the population that had gathered at the mouth of Brewster Creek Canyon began to disperse. By 1897 the rush was over, the stamp mill was idle, and the partially graded railroad bed was abandoned to the forest. The community that had briefly housed several hundred residents was reduced to a handful of men working the marginal ore that the district actually contained.
+
+The aftermath of the Quigley rush was not entirely without productive mining. The Golconda Mine, developed by the Golden Sceptre Mining Company from the ruins of the original rush, operated a ten-stamp mill until at least 1912 and shipped oxidized copper ore to the Anaconda smelter until 1931. The nearby Rainy Day Mine produced consistently from 1911 to 1928, with its own five-stamp mill installed in 1923. These operations were modest by the standards of the major Montana mining districts, but they sustained a small population at Quigley for three decades after the original rush had collapsed.
+
+The Quigley story was not unique in Montana's mining history. The territorial and early statehood periods produced dozens of similar episodes, in which promoters used exaggerated or fabricated assay reports to attract investment to marginal properties, collected the capitalization, and disappeared when the ore failed to materialize. The men who lost money at Quigley were not naive; they were experienced investors who had seen legitimate mining booms and believed they could distinguish a real prospect from a fraud. The promoters who sold them on Quigley were simply better at their craft than the investors were at detecting it.
+
+The partially graded railroad bed that the Chinese laborers built up Rock Creek in 1895 and 1896 is the most tangible legacy of the Quigley rush. The grade is still visible in the Rock Creek drainage, a twelve-mile monument to the ambition and the credulity that the rush inspired. It is the kind of artifact that the Montana landscape preserves without effort, too substantial to disappear entirely and too remote to be repurposed for any other use.
+
+The broader context of the Quigley rush illuminates something important about the nature of mining investment in the late nineteenth century. The men who put money into the Alps Mining District were not uninformed speculators; they were experienced investors who had access to assay reports, geological surveys, and the advice of mining engineers. The problem was that the assay reports could be manipulated, the geological surveys could be selectively interpreted, and the mining engineers could be hired to produce the conclusions that the promoters wanted. In an era before the Securities and Exchange Commission and the regulatory framework that governs modern investment, the mining promotion industry operated with a freedom that made frauds like the Quigley rush not only possible but common. Montana's mining history is full of similar episodes, and the men who lost money at Quigley were in distinguished company.
+
+## What Remains Today
+
+The Quigley site retains remnants of its mining infrastructure, including the foundations of the stamp mill and the evidence of the mine workings in the Brewster Creek drainage. The partially graded railroad bed up Rock Creek is visible in the landscape and is accessible to hikers and off-road vehicle users. The site is on national forest land within the Lolo National Forest.
+
+Rock Creek itself is one of the most celebrated trout streams in Montana, a blue ribbon fishery that draws anglers from across the region. The road up Rock Creek from Interstate 90 at Clinton passes through the area of the former Quigley district, and the combination of the fishing and the ghost town history makes the Rock Creek drainage a rewarding destination for visitors interested in both the natural and historical landscape of western Montana.
+
+## Visiting
+
+Quigley is located in Granite County approximately twenty-five miles southeast of Missoula, accessible via Rock Creek Road from the Clinton exit on Interstate 90. The road follows Rock Creek through the Lolo National Forest and provides access to the Brewster Creek drainage where the Quigley mines were located. The site is on national forest land, and the Missoula Ranger District of the Lolo National Forest can provide information about road conditions and access.
+
+Missoula is the nearest city with visitor services and is located approximately forty minutes west on Interstate 90. The Historical Museum at Fort Missoula maintains exhibits on the history of the Missoula area, including the mining districts of the Sapphire and Garnet Mountains.

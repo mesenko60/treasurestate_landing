@@ -1,0 +1,35 @@
+# Independence
+
+**By Editor**
+
+*Park County*
+
+## History
+
+The mountains that form the northeastern corner of Yellowstone National Park are among the most remote and difficult terrain in Montana. The Absaroka Range rises steeply from the valleys of the Yellowstone and Boulder rivers, and the high country above the timber line is a landscape of bare rock and alpine meadow that discourages casual travel. The miners who went into those mountains in the 1860s and 1870s were not casual travelers. They were men who had learned in California and Nevada and the Colorado Territory that the most inaccessible country sometimes held the richest ore, and they were willing to endure considerable hardship for the chance of finding it.
+
+Gold was first discovered in the Independence Mining District in the 1860s, when prospectors working through the upper Boulder River drainage found color in the creeks draining the high Absaroka peaks. The land was part of the Crow Indian Reservation, however, and the federal government enforced the treaty boundaries with enough consistency to prevent large-scale development. Prospectors who entered the reservation were removed by the army, and the mining interests that wanted access to the Absaroka deposits spent the 1870s lobbying for a revision of the reservation boundaries.
+
+The lobbying succeeded. In 1882 the government forced the Crow to cede the land that contained the Independence district, and miners returned to the area almost immediately. Several small finds had been made in the upper Boulder River and at the head of Basin Creek during the years of restricted access, and the men who had been waiting for the legal barriers to fall were ready to move quickly when they did. A pack trail was cut through the timber to the high-elevation veins in 1888, and the same year the first stamp mill was hauled up the steep, rugged road to the camp that was taking shape at the fork of Basin Creek in Park County, about three miles below the head of the Boulder River.
+
+Between 1889 and 1891 several mines were opened in the district, including the Poorman, Hidden Treasure, Daisy, King Solomon, and Independence. The camp that grew up around them took the name of the Independence Mine and grew quickly. By 1892 the mine was running at full capacity, and the camp boasted approximately five hundred people, four saloons, two general stores, and numerous cabins. The elevation was high, the winters were severe, and the road to the nearest railroad was a five-day wagon journey to Big Timber, some fifty miles to the northeast. None of these obstacles prevented the camp from developing the full range of institutions that a mining community required.
+
+Independence became the service center for the entire district, with seven stamp mills, a sawmill, and several concentrators operating in the vicinity. The camp had both telephone and electricity by 1893, amenities that were unusual for a mountain mining camp of its size and era. The telephone and electric lines were symbols of the operators' confidence in the district's future, and the investment they represented was real. Production in the district peaked between 1890 and 1893, with the Independence mill producing about $42,000 in gold bullion during those years.
+
+The collapse of silver prices in 1893 and the general economic depression that followed ended the boom at Independence as it ended mining booms across Montana. The exhaustion of the most easily accessed ore bodies, the difficulty of transportation, and poor management of the operations combined to close the Independence Mine in 1893. The mine was leased out in August 1894, reopened, and operated until 1897, when the Independence, the Daisy, the Hidden Treasure, and other properties were sold and consolidated. The consolidated operations continued until 1904, when the Hidden Treasure Mill burned down and the remaining operations were shut down. From 1890 to 1905 the district reportedly produced gold and silver ore valued at about $120,000.
+
+The high elevation and the difficulty of access that had always characterized the Independence district made it unsuitable for the kind of sustained development that might have extended its productive life. Workings were revived intermittently over the next several decades, but all were found to be unprofitable and quickly abandoned. The camp that had housed five hundred people in 1892 was empty by the early twentieth century, its buildings left to the mountain winters and the slow work of decay.
+
+The Independence district's history illuminates the particular challenges of high-altitude mining in the Absaroka Range. The ore was real, the gold was there, but the combination of elevation, remoteness, and difficult transportation made the economics of extraction marginal even in the best years. The men who built the stamp mills and strung the telephone lines were not wrong to try, but the district's geography imposed limits that no amount of capital or determination could overcome.
+
+## What Remains Today
+
+A few tumbling cabins and mining remnants are all that survive at the Independence site. The high elevation and the harsh mountain climate have accelerated the decay of the wooden structures, and the site is more archaeological than architectural in character. The mine shafts and waste rock piles are the most durable evidence of the district's activity, and they are visible in the landscape around the old townsite.
+
+The surrounding Absaroka Range is part of the Gallatin National Forest and the Absaroka-Beartooth Wilderness, and the area provides exceptional opportunities for hiking and backcountry travel. The combination of the ghost town history and the wilderness landscape makes the Independence area a destination for visitors interested in both the natural and historical character of the northern Absaroka Range.
+
+## Visiting
+
+Independence is located approximately 53 miles southwest of Big Timber, Montana. The route follows Montana Highway 298 southeast toward McLeod for about 27 miles, then continues on Main Boulder Road and Forest Road 6639 for approximately 26 miles to the old townsite. A high-clearance vehicle is strongly recommended, and the upper portions of the road may be impassable in wet conditions or after early snowfall. The Gallatin National Forest's Beartooth Ranger District in Red Lodge can provide current road and access information.
+
+Big Timber is the nearest town with visitor services, and Livingston, the Park County seat, is located approximately 45 miles northwest on Interstate 90.

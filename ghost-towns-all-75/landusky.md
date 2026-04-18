@@ -1,0 +1,37 @@
+# Landusky
+
+**By Editor**
+
+*Phillips County*
+
+## History
+
+The camp of Landusky carries the name of a man whose life and death were both characteristic of the Montana frontier at its most violent. Powell "Pike" Landusky was a Missourian, born in Pike County, who came to Montana in 1864 and spent the next three decades working his way through the mining districts of the territory with the combination of toughness and bad temper that made him both effective and dangerous. He settled eventually in the Little Rocky Mountains of north-central Montana, where he found gold and built the community that would bear his name, and where he was killed on the day after Christmas in 1894 by a young cowboy named Harvey Logan, who would become famous under the name Kid Curry.
+
+Landusky arrived in the Little Rockies in the late 1880s, drawn by the same reports of gold that were bringing prospectors from across the West to the compact range of mountains that rose from the Phillips County plains. He and his partner Bob Ormond made the discovery that set off the district's development around 1890, striking a rich vein that demonstrated the economic potential of the range. The camp that grew up around Landusky's operations took his name, and the man himself became one of the district's more prominent figures, combining the roles of miner, prospector, and informal lawman in the way that was common among the strong-willed men who established themselves in frontier communities.
+
+The relationship between Pike Landusky and the Logan brothers, Harvey and Lonie, was one of the more complicated personal histories in the Little Rockies district. The Logans were young cowboys who had come to the Phillips County range country in the early 1890s, and their relationship with Landusky was contentious from the beginning. The specific grievances that accumulated between them are difficult to reconstruct with precision, but the general outlines are clear: Landusky was a man who made enemies, and the Logans were men who did not forget insults.
+
+The confrontation that ended Pike Landusky's life took place on December 27, 1894, in Harris' saloon in the town of Landusky. Harvey Logan and Pike Landusky came to blows, and when Landusky drew his pistol, Logan drew his own and shot Landusky dead. The killing was witnessed by the saloon's other patrons, and the circumstances were sufficiently ambiguous that Logan feared he would not receive a fair trial in a community where Landusky had been a prominent figure. He left Montana and did not return.
+
+Harvey Logan's subsequent career as Kid Curry made the Landusky killing famous in retrospect. Logan joined Butch Cassidy's Wild Bunch and became one of the most wanted outlaws in the West, participating in a series of train and bank robberies across Wyoming, Montana, and the Southwest. In 1901, Kid Curry and the Wild Bunch robbed the Great Northern Railway near Wagner, Montana, in one of the more audacious train robberies of the era. The Phillips County Museum in Malta maintains a Cowboys and Outlaws exhibit that covers the history of Kid Curry and the Little Rockies district, and the connection between the Landusky killing and the subsequent career of Kid Curry is one of the more compelling stories in Montana's frontier history.
+
+Pike Landusky was buried on his ranch, about a mile down from the town that bore his name. The grave was on a hillside overlooking the Phillips County plains, a location that the man himself might have chosen for the view it offered of the country he had worked and fought over for three decades. The town of Landusky continued to function as a mining community after his death, part of the Little Rockies district that produced an estimated $125 million in gold before the wartime shutdown of 1949.
+
+The mining history of Landusky paralleled that of the neighboring camp of Zortman, with the two communities serving different portions of the Little Rockies district and sharing the infrastructure of roads and supply networks that the district's collective activity created. The Landusky mines were productive through the early twentieth century, and the community that supported them had the character of a working mining town rather than a boomtown. The violence of the district's early years gave way to the more routine rhythms of industrial mining, and the men who worked the Landusky mines in the 1910s and 1920s were wage workers rather than independent prospectors.
+
+Kid Curry's career after leaving Montana was one of the more violent in the history of the Wild Bunch. He participated in the Wilcox train robbery in Wyoming in 1899, the Tipton robbery in 1900, and the Wagner, Montana, train robbery in 1901, in which the gang took approximately $40,000 from the Great Northern Railway's express car. The Wagner robbery was one of the last major operations of the Wild Bunch, and the law enforcement response to it was intense. Curry was eventually captured in Tennessee in 1902 and sentenced to prison, but he escaped before serving his full term and made his way back to the West. He was killed or died in Colorado in 1904, in circumstances that have been debated by historians ever since.
+
+The connection between the Landusky killing and the subsequent career of Kid Curry gave the small community in the Little Rockies a place in the broader mythology of the American West that its size and production figures would not otherwise have warranted. The story of Pike Landusky and Harvey Logan is a story about the violence that was endemic to the frontier mining and ranching communities of the late nineteenth century, and about the way that individual acts of violence could set in motion chains of consequence that extended far beyond the original event. The saloon in Landusky where Pike Landusky died was a long way from the train robberies of Wyoming and Montana, but the line connecting them was direct.
+
+## What Remains Today
+
+The town of Landusky retains some physical evidence of its mining era, including structures from the camp's active period and the landscape of the mine workings in the surrounding mountains. Pike Landusky's grave is located on a hillside near the town, and the site has been recognized as a point of historical interest in the Little Rockies district.
+
+The Phillips County Museum in Malta maintains the Cowboys and Outlaws exhibit that covers the history of Kid Curry, Pike Landusky, and the Little Rockies district. The exhibit provides context for visitors interested in the frontier history of the Phillips County range country.
+
+## Visiting
+
+Landusky is located in Phillips County, accessible via roads from US Highway 191 south of Malta. Malta, the Phillips County seat, is the nearest city with visitor services, located on US Highway 2 along the Hi-Line. The Phillips County Museum in Malta is the best starting point for visitors interested in the history of the Little Rockies mining district and the Kid Curry story.
+
+Zortman, the companion community in the Little Rockies district, is located a few miles from Landusky and can be visited on the same trip. The two communities together provide a comprehensive picture of the Little Rockies gold mining era.

@@ -11,6 +11,7 @@ export default function Footer() {
         <Link href="/information/geology-of-western-montana/" style={{ color: '#ddd', textDecoration: 'none' }}>Geology of Montana</Link>
         <Link href="/guides/summer-road-trips/" style={{ color: '#ddd', textDecoration: 'none' }}>Summer Road Trips</Link>
         <Link href="/guides/winter-driving-guide/" style={{ color: '#ddd', textDecoration: 'none' }}>Winter Driving Guide</Link>
+        <Link href="/ghost-towns/" style={{ color: '#ddd', textDecoration: 'none' }}>Ghost Towns</Link>
         <Link href="/explore-montana/" style={{ color: '#ddd', textDecoration: 'none' }}>Explore Montana</Link>
         <Link href="/this-day-in-history/" style={{ color: '#ddd', textDecoration: 'none' }}>This Day in History</Link>
       </nav>

@@ -1,0 +1,35 @@
+# Goldstone
+
+**By Editor**
+
+*Toole County*
+
+## History
+
+The Hi-Line of northern Montana is a landscape of immense sky and flat horizons, where the Great Northern Railway runs east to west along the Canadian border and the communities that grew up along it are separated by the distances that the railroad's engineers determined and the homesteaders' ambitions required. Goldstone was one of these communities, a small settlement in Toole County that appeared during the homestead boom of the early twentieth century and disappeared when the boom collapsed, leaving behind the scattered remnants that the Montana Historic Landscapes project has documented as the physical record of the homesteading era.
+
+The homestead boom that created Goldstone and dozens of similar communities along the Hi-Line was one of the more dramatic episodes in Montana's agricultural history. The Enlarged Homestead Act of 1909 opened vast tracts of northern Montana to settlement by offering 320-acre claims to anyone willing to live on the land and farm it for five years. The Great Northern Railway, which stood to profit from the agricultural traffic that successful settlement would generate, promoted the Hi-Line country aggressively to potential settlers in the Midwest and in Europe, distributing pamphlets and sending agents to agricultural fairs to describe the opportunities that the Montana plains offered. The settlers who responded to this promotion arrived by the thousands in the years between 1909 and 1918, and the communities they built along the Great Northern line were the physical expression of their collective optimism.
+
+Goldstone occupied a position in the Toole County landscape that was typical of the Hi-Line communities. The settlement grew up around the railroad station and the grain elevator that the Great Northern built to handle the wheat that the surrounding homesteads were expected to produce. A post office, a general store, a school, and the other institutions of a small agricultural community followed, and for a period the community had the character of a functioning small town. The men and women who built Goldstone were not speculators or transients; they were farmers who had come to the Hi-Line with the intention of building permanent lives on the land.
+
+The Sweetgrass Hills, which rise from the Toole County plains to the north of Goldstone, were the dominant landmark of the community's landscape. The hills are a cluster of isolated buttes that the Blackfeet people regarded as a sacred landscape, and their presence on the horizon gave the otherwise flat Hi-Line country a visual anchor that the settlers appreciated. The hills were visible from the fields and the streets of Goldstone, a constant reminder that the settlers were working in a landscape that had been inhabited and valued long before the Great Northern Railway arrived.
+
+The collapse of the homestead boom in the early 1920s was swift and devastating for the Hi-Line communities. The combination of drought, falling wheat prices, and the exhaustion of the thin soils that the homesteaders had broken drove thousands of families off the land in the years between 1919 and 1925. The communities that had grown up to serve the homestead population shrank as the farms around them were abandoned, and many of them lost their post offices, their schools, and their commercial establishments within a few years of the boom's end. Goldstone followed this pattern, losing population and function as the homestead economy that had created it collapsed.
+
+The drought and economic depression of the 1930s completed the process that the 1920s had begun. The remaining population of the Hi-Line communities was reduced by the combination of crop failures, bank closures, and the broader economic catastrophe of the Depression years. The communities that survived this period did so by consolidating their populations and their functions, and the smaller settlements that could not achieve this consolidation were abandoned. Goldstone was among the communities that did not survive the combined pressures of the 1920s and 1930s, and the settlement that had been built with such optimism in the homestead years was left to the wind and the weather.
+
+The history of Goldstone is the history of the Hi-Line homestead boom and bust, a story that played out in dozens of communities across northern Montana in the first three decades of the twentieth century. The men and women who built these communities were not failures; they were responding rationally to the economic incentives that the Enlarged Homestead Act and the Great Northern Railway had created. That the incentives proved to be based on an overestimate of the Hi-Line's agricultural potential was a failure of policy and promotion rather than a failure of the settlers themselves.
+
+The Blackfeet Nation's relationship to the Toole County landscape that the homesteaders settled was one of the more complex dimensions of the Hi-Line's history. The Blackfeet had occupied the northern Montana plains for centuries before the Great Northern Railway arrived, and their territory extended from the Rocky Mountain Front east across the plains to the Sweetgrass Hills and beyond. The homestead era that created Goldstone and the other Hi-Line communities was built on land that had been ceded by the Blackfeet in a series of treaties, and the settlers who came to the Hi-Line in the years after 1909 were farming ground that the Blackfeet had hunted and camped on within living memory. The Sweetgrass Hills, which were visible from the streets of Goldstone, were a sacred site for the Blackfeet, and the community that grew up in their shadow was built on a landscape that carried a history far longer than the homestead era.
+
+## What Remains Today
+
+The site of Goldstone is in Toole County, in the Hi-Line country of northern Montana. The physical evidence of the community's existence may include the foundations of buildings, the remnants of the grain elevator, and the disturbed terrain of the townsite. The Montana Historic Landscapes project has documented Hi-Line ghost towns including communities in Toole County, and the project's records provide context for understanding the history of Goldstone and similar settlements.
+
+The Toole County seat of Shelby is the nearest city with visitor services, located on US Highway 2 and Interstate 15. The Marias Museum of History and Art in Shelby maintains records related to the history of Toole County, including the homestead era.
+
+## Visiting
+
+Goldstone is located in Toole County, in the Hi-Line country along or near US Highway 2. Shelby, the Toole County seat, is accessible via US Highway 2 and Interstate 15 and provides visitor services. The Marias Museum of History and Art in Shelby is the best starting point for visitors interested in the history of the Toole County homestead communities.
+
+The Sweetgrass Hills, which are visible from much of Toole County, are a significant cultural landscape for the Blackfeet Nation and provide a dramatic backdrop for the Hi-Line country that the homesteaders settled.

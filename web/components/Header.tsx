@@ -35,6 +35,7 @@ export default function Header() {
         <Link href="/compare" className={isActive('/compare') ? 'active' : ''}>Compare</Link>
         <Link href="/best-of" className={router.asPath.startsWith('/best-of') ? 'active' : ''}>Best Of</Link>
         <Link href="/planners/backroads-planner" className={router.asPath.startsWith('/planners') ? 'active' : ''}>Trip Planner</Link>
+        <Link href="/ghost-towns/" className={router.asPath.startsWith('/ghost-towns') ? 'active' : ''}>Ghost Towns</Link>
         <Link href="/guides" className={router.asPath.startsWith('/guides') ? 'active' : ''}>Guides</Link>
         <Link href="/lodging" className={router.asPath.startsWith('/lodging') ? 'active' : ''}>Lodging</Link>
         <Link href="/nearby" className={router.asPath.startsWith('/nearby') ? 'active' : ''}>Nearby</Link>

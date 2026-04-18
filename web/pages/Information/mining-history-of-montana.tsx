@@ -61,6 +61,12 @@ export default function MiningHistoryOfMontana() {
           <p>It began, as these tales of glitter and greed so often do, with a whisper that grew to a shout. The year was 1862, and the man was John White. He and his companions, bone-weary from their journey, had been prospecting the endless stream courses that fingered down from the mountains. The place was Grasshopper Creek, a modest waterway in what would later be known as Beaverhead County. White scooped his pan into the creek's flow, swirled the familiar motion handed down from the California diggings, and watched the water carry away the lighter materials. There, catching the slant of mountain sunlight, lay the heavy yellow flecks that would transform Montana Territory.</p>
           
           <p>"Gold is where you find it," the old-timers used to say, their faces weathered as the hills they'd torn apart seeking it. And found it they had, right enough, first at Bannack, the settlement that sprang up alongside Grasshopper Creek faster than wildflowers after a May rain. The word raced out across the country like wildfire in dry grass. Montana, not yet even christened with that name, was about to become the newest stage for the great American drama of mineral extraction.</p>
+
+          <p>
+            Explore specific camps in our{' '}
+            <Link href="/ghost-towns/" style={{ color: '#3b6978' }}>Montana Ghost Towns</Link> collection — including{' '}
+            <Link href="/ghost-towns/bannack/" style={{ color: '#3b6978' }}>Bannack</Link>, Garnet, Elkhorn, and dozens of other places where that drama played out on the ground.
+          </p>
           
           <p>The miners came in waves, their belongings strapped to mules or carried on their own bent backs. They came with the peculiar fever that gold ignites in human blood. They came from played-out diggings in California and Colorado, from war-weary states east of the Mississippi, from continents across vast oceans. Each carried the same hope: that this territory, this creek, this very spot of ground would deliver the fortune that had eluded them elsewhere.</p>
           

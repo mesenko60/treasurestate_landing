@@ -45,11 +45,20 @@ type Props = {
   trails: { id: string; name: string }[];
   lodgingSlug: string | null;
   lodgingTownName: string | null;
+  /** Same slug as marker, when a ghost-town article exists */
+  ghostTownDetailHref: string | null;
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
-export default function HistoricMarkerPage({ marker, nearbyMarkers, trails, lodgingSlug, lodgingTownName }: Props) {
+export default function HistoricMarkerPage({
+  marker,
+  nearbyMarkers,
+  trails,
+  lodgingSlug,
+  lodgingTownName,
+  ghostTownDetailHref,
+}: Props) {
   const deepRead = MARKER_DEEP_READS[marker.slug];
   const url = `https://treasurestate.com/historic-markers/${marker.slug}/`;
   const title = marker.title;
@@ -226,6 +235,11 @@ export default function HistoricMarkerPage({ marker, nearbyMarkers, trails, lodg
                     Find Lodging in Montana
                   </Link>
                 )}
+                {ghostTownDetailHref && (
+                  <Link href={ghostTownDetailHref}>
+                    Ghost town deep-dive
+                  </Link>
+                )}
               </div>
 
               <dl className="marker-meta">
@@ -351,6 +365,15 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     }
   }
 
+  let ghostTownDetailHref: string | null = null;
+  const gtDetailPath = path.join(process.cwd(), 'data', 'ghost-towns-detail.json');
+  if (fs.existsSync(gtDetailPath)) {
+    const gt: { slug: string }[] = JSON.parse(fs.readFileSync(gtDetailPath, 'utf8'));
+    if (gt.some((g) => g.slug === slug)) {
+      ghostTownDetailHref = `/ghost-towns/${slug}/`;
+    }
+  }
+
   return {
     props: {
       marker,
@@ -358,6 +381,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
       trails,
       lodgingSlug,
       lodgingTownName,
+      ghostTownDetailHref,
     },
   };
 };
