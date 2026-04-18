@@ -375,14 +375,6 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
           </div>
         </div>
 
-        {hubEssayHtml ? (
-          <article
-            className="compare-intro-prose gt-hub-essay"
-            aria-label="The Geography of Abandonment"
-            dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
-          />
-        ) : null}
-
         <Link href="/ghost-towns/all/" className="gt-all-link">
           All {allPins.length} historical settlements (sortable table) →
         </Link>
@@ -406,6 +398,14 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hub
             </div>
           </section>
         ))}
+
+        {hubEssayHtml ? (
+          <article
+            className="compare-intro-prose gt-hub-essay"
+            aria-label="The Geography of Abandonment"
+            dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
+          />
+        ) : null}
       </main>
       <Footer />
     </>
