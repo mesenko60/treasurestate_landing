@@ -36,6 +36,8 @@ type Props = {
   curated: CuratedRow[];
   /** 3-digit FIPS → display label (e.g. Park County) for GNIS popups */
   countyNamesByFips: Record<string, string>;
+  /** Long-form essay HTML (from content/ghost-towns/geography-of-abandonment.md) */
+  hubEssayHtml: string;
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -50,7 +52,7 @@ const STATUS_LABEL: Record<string, string> = {
 
 const POPUP_LEAVE_MS = 260;
 
-export default function GhostTownsHub({ allPins, curated, countyNamesByFips }: Props) {
+export default function GhostTownsHub({ allPins, curated, countyNamesByFips, hubEssayHtml }: Props) {
   const [mapPopup, setMapPopup] = useState<MapPopupState | null>(null);
   const popupLeaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [regionFilter, setRegionFilter] = useState('');
@@ -214,6 +216,10 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips }: P
         .gt-excerpt { font-size: 0.9rem; color: #555; line-height: 1.55; }
         .gt-all-link { display: inline-block; margin-top: 1.5rem; font-weight: 600; color: #3b6978; }
         .compare-intro-prose.gt-hub-prose { margin-top: 1rem; font-size: 0.95rem; color: #555; line-height: 1.6; }
+        .compare-intro-prose.gt-hub-essay { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #e8ede8; max-width: 48rem; }
+        .compare-intro-prose.gt-hub-essay h1 { font-size: 1.55rem; color: #204051; margin: 0 0 1rem; line-height: 1.25; }
+        .compare-intro-prose.gt-hub-essay p { margin: 0 0 1rem; }
+        .compare-intro-prose.gt-hub-essay a { color: #3b6978; }
       `}} />
 
       <main className="gt-page">
@@ -369,6 +375,14 @@ export default function GhostTownsHub({ allPins, curated, countyNamesByFips }: P
           </div>
         </div>
 
+        {hubEssayHtml ? (
+          <article
+            className="compare-intro-prose gt-hub-essay"
+            aria-label="The Geography of Abandonment"
+            dangerouslySetInnerHTML={{ __html: hubEssayHtml }}
+          />
+        ) : null}
+
         <Link href="/ghost-towns/all/" className="gt-all-link">
           All {allPins.length} historical settlements (sortable table) →
         </Link>
@@ -422,5 +436,13 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     excerpt: String(d.excerpt || ''),
   }));
 
-  return { props: { allPins, curated, countyNamesByFips } };
+  const essayPath = path.join(process.cwd(), 'content', 'ghost-towns', 'geography-of-abandonment.md');
+  let hubEssayHtml = '';
+  if (fs.existsSync(essayPath)) {
+    const raw = fs.readFileSync(essayPath, 'utf8');
+    const { markdownToHtml } = await import('../../lib/markdown');
+    hubEssayHtml = await markdownToHtml(raw);
+  }
+
+  return { props: { allPins, curated, countyNamesByFips, hubEssayHtml } };
 };
