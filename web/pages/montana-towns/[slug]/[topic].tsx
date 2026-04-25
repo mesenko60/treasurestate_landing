@@ -626,7 +626,7 @@ export default function TopicPage(props: Props) {
             </div>
           )}
           <CrossHubLinks slug={slug} topic={topic} townName={townName} />
-          <StaysCTA townName={townName} slug={slug} />
+          <StaysCTA townName={townName} slug={slug} variant="compact" />
           <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
         </div>
       </main>

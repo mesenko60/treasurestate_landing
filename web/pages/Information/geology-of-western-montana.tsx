@@ -91,7 +91,7 @@ export default function GeologyOfWesternMontana() {
           headline="Never Miss a Montana Landmark"
           body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
         />
-        <StaysCTA />
+        <StaysCTA variant="compact" />
         <ComingSoon />
         </div>
       </main>

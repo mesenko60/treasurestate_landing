@@ -64,7 +64,6 @@ export default function LodgingIndex({ title, contentHtml }: Props) {
         ` }} />
         <StaysCTA />
         <article className="lodging-content content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <StaysCTA />
       </main>
       <Footer />
     </>

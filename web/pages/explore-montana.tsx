@@ -111,7 +111,7 @@ export default function ExploreMontana() {
           </section>
         ))}
 
-        <StaysCTA />
+        <StaysCTA variant="compact" />
       </main>
       <Footer />
     </>

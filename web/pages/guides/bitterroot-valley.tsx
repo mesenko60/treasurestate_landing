@@ -596,7 +596,7 @@ export default function BitterrootValleyPlanner({ corridor, connectedCorridors, 
               </div>
             </div>
 
-            <StaysCTA townName="Hamilton" slug="hamilton" />
+            <StaysCTA townName="Hamilton" slug="hamilton" variant="compact" />
           </section>
 
           {/* Explore All Corridors */}

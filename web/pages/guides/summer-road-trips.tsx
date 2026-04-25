@@ -240,7 +240,7 @@ export default function SummerRoadTrips() {
             </div>
 
           </section>
-          <StaysCTA />
+          <StaysCTA variant="compact" />
         </div>
       </main>
       <Footer />

@@ -341,7 +341,7 @@ export default function BestOfPage({ page, freshness, relatedRankings, relatedAr
         />
 
         <div style={{ marginTop: '2rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <StaysCTA />
+          <StaysCTA variant="compact" />
         </div>
 
         {relatedArticles.length > 0 && (

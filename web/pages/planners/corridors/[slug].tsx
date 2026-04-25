@@ -601,7 +601,7 @@ export default function CorridorDetailPage({
             </div>
           </section>
 
-          <StaysCTA townName={townCoords[corridor.startTown]?.name} slug={corridor.startTown} />
+          <StaysCTA townName={townCoords[corridor.startTown]?.name} slug={corridor.startTown} variant="compact" />
         </div>
       </main>
       <Footer />

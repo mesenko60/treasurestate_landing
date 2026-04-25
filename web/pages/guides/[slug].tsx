@@ -164,7 +164,7 @@ function GuideArticlePage({ article, related }: { article: ArticlePageData; rela
             headline="Never Miss a Montana Landmark"
             body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
           />
-          {!article.noindex && <StaysCTA />}
+          {!article.noindex && <StaysCTA variant="compact" />}
           {related.length > 0 && <RelatedContent articles={related} />}
         </div>
       </main>

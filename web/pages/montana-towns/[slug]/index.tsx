@@ -9,7 +9,7 @@ import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import StaysCTA from '../../../components/StaysCTA';
 import AppInstallCTA from '../../../components/AppInstallCTA';
-import { injectStaysCTA, vrboUrl, expediaUrl } from '../../../lib/affiliate-urls';
+import { injectStaysCTA, lodgingPageSlug } from '../../../lib/affiliate-urls';
 import Footer from '../../../components/Footer';
 import Schema from '../../../components/Schema';
 import Breadcrumbs from '../../../components/Breadcrumbs';
@@ -292,6 +292,17 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
           .map-jump-link:hover {
             background: #eef5ee; transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.06);
           }
+          .stays-inline-cta { margin: 1rem 0 0.75rem; text-align: center; }
+          .stays-inline-cta__buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+          .stays-inline-cta__button {
+            flex: 1 1 150px; min-width: 0; display: flex; flex-direction: column; align-items: center;
+            color: #fff; padding: 0.52rem 0.65rem; border-radius: 8px; text-decoration: none; line-height: 1.25;
+          }
+          .stays-inline-cta__button--vrbo { background: #3b6978; }
+          .stays-inline-cta__button--expedia { background: #204051; }
+          .stays-inline-cta__label { font-weight: 600; font-size: 0.82rem; }
+          .stays-inline-cta__source { font-size: 0.68rem; opacity: 0.72; }
+          .stays-inline-cta__disclosure { font-size: 0.68rem; color: #999; margin: 0.45rem 0 0; text-align: center; }
         `}} />
         <div className="toc-desktop">
           <div className="sidebar-sticky" style={{ position: 'sticky', top: '20px', maxHeight: 'calc(100vh - 40px)', overflowY: 'auto' }}>
@@ -305,46 +316,11 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             <>
               <div className="content-section" style={{ marginBottom: '0' }}>
                 <div dangerouslySetInnerHTML={{ __html: cluster.hubIntro.replace(/\n/g, '</p><p>') }} style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#444' }} />
-                <div style={{
-                  display: 'flex', gap: '0.75rem',
-                  justifyContent: 'center', margin: '1.25rem 0 0.5rem',
-                }}>
-                  <a
-                    href={vrboUrl(townName, slug)}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored"
-                    style={{
-                      flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center',
-                      background: '#3b6978', color: '#fff',
-                      padding: '0.7rem 0.75rem', borderRadius: '8px', textDecoration: 'none',
-                      boxShadow: '0 2px 8px rgba(59,105,120,0.25)', lineHeight: 1.3, textAlign: 'center',
-                      transition: 'transform 0.15s ease, box-shadow 0.15s ease',
-                    }}
-                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(59,105,120,0.35)'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
-                  >
-                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Vacation Rentals</span>
-                    <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via VRBO</span>
-                  </a>
-                  <a
-                    href={expediaUrl(townName, slug)}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored"
-                    style={{
-                      flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center',
-                      background: '#204051', color: '#fff',
-                      padding: '0.7rem 0.75rem', borderRadius: '8px', textDecoration: 'none',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.12)', lineHeight: 1.3, textAlign: 'center',
-                      transition: 'transform 0.15s ease, box-shadow 0.15s ease',
-                    }}
-                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(32,64,81,0.35)'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 6px rgba(0,0,0,0.12)'; }}
-                  >
-                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Hotels</span>
-                    <span style={{ fontSize: '0.72rem', opacity: 0.7 }}>via Expedia</span>
-                  </a>
-                </div>
-                <p style={{ fontSize: '0.7rem', color: '#999', margin: '0', textAlign: 'center' }}>Affiliate links help support this site at no extra cost to you.</p>
+                <p style={{ margin: '1rem 0 0', fontSize: '0.9rem' }}>
+                  <Link href={`/lodging/${lodgingPageSlug(slug)}/`} style={{ color: '#3b6978', fontWeight: 600, textDecoration: 'none' }}>
+                    See lodging options in {townName} →
+                  </Link>
+                </p>
               </div>
 
               <div className="content-section" style={{ marginTop: '0.5rem' }}>
@@ -402,48 +378,6 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
             <HistoricMarkers markers={historicMarkers} townName={townName} townSlug={slug} countyRaw={townFacts?.county ?? null} deepReads={markerDeepReads} historyProse={historyProse} />
           </CollapsibleSection>
           <article className="content-section" dangerouslySetInnerHTML={{ __html: enrichedHtml }} />
-
-          <div style={{
-            display: 'flex', gap: '0.75rem',
-            justifyContent: 'center', margin: '0 0 2rem',
-          }}>
-            <a
-              href={vrboUrl(townName, slug)}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              style={{
-                flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
-                padding: '0.7rem 0.75rem', borderRadius: '8px',
-                background: '#3b6978', color: '#fff',
-                textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
-                boxShadow: '0 2px 8px rgba(59,105,120,0.25)',
-                transition: 'transform 0.15s ease, box-shadow 0.15s ease',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(59,105,120,0.35)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(59,105,120,0.25)'; }}
-            >
-              <span aria-hidden="true">🏡</span>
-              Vacation Rentals
-            </a>
-            <a
-              href={expediaUrl(townName, slug)}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              style={{
-                flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
-                padding: '0.7rem 0.75rem', borderRadius: '8px',
-                background: '#204051', color: '#fff',
-                textDecoration: 'none', fontWeight: 600, fontSize: '0.92rem',
-                boxShadow: '0 2px 8px rgba(32,64,81,0.25)',
-                transition: 'transform 0.15s ease, box-shadow 0.15s ease',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(32,64,81,0.35)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(32,64,81,0.25)'; }}
-            >
-              <span aria-hidden="true">🏨</span>
-              Hotels
-            </a>
-          </div>
 
           <div className="shopify-mobile-only">
             <ShopifyCollectionSlider collection={getShopifyCollection(slug)} townName={townName} />
@@ -549,7 +483,7 @@ export default function TownPage({ slug, townName, nickname, contentHtml, descri
 
           {cluster && <CrossHubCities slug={slug} townName={townName} />}
 
-          {!staysInjected && <StaysCTA townName={townName} slug={slug} />}
+          {!staysInjected && <StaysCTA townName={townName} slug={slug} variant="compact" />}
           <AppInstallCTA
             variant="card"
             townName={townName}

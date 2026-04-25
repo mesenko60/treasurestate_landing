@@ -93,7 +93,7 @@ export default function LodgingTownPage({ slug, townName, title, contentHtml, ex
           .lodging-content a:hover { text-decoration: underline; }
         ` }} />
         <article className="lodging-content content-section" dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <StaysCTA townName={townName} slug={slug} />
+        <StaysCTA townName={townName} slug={slug} variant="compact" showLodgingGuideLink={false} />
       </main>
       <Footer />
     </>

@@ -304,7 +304,7 @@ export default function WinterDrivingGuide() {
             </div>
 
           </section>
-          <StaysCTA />
+          <StaysCTA variant="compact" />
         </div>
       </main>
       <Footer />

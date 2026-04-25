@@ -96,7 +96,7 @@ export default function MontanaBackroads() {
             </ul>
           </section>
           <StoreBanner />
-          <StaysCTA />
+          <StaysCTA variant="compact" />
         </div>
       </main>
       <Footer />

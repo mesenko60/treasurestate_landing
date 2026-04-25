@@ -2,6 +2,10 @@ const VRBO_CAMREF = '1011l52GGp';
 const VRBO_CREATIVEREF = '1101l63118';
 const EXPEDIA_CAMREF = '1011l52GG6';
 
+export function lodgingPageSlug(townSlug: string): string {
+  return townSlug === 'anaconda' ? 'anaconda-montana' : townSlug;
+}
+
 export function vrboUrl(townName: string, slug: string): string {
   const destination = `${townName}, Montana, United States of America`;
   const searchUrl = `https://www.vrbo.com/search?destination=${encodeURIComponent(destination)}&sort=RECOMMENDED`;
@@ -29,19 +33,19 @@ export function injectStaysCTA(html: string, townName: string, slug: string): { 
   const expedia = expediaUrl(townName, slug);
 
   const ctaBlock = `
-<div style="display:flex;gap:0.75rem;margin:1.25rem 0 0.5rem;justify-content:center;text-align:center">
-  <a href="${vrbo}" target="_blank" rel="noopener noreferrer sponsored"
-     style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;background:#3b6978;color:#fff;padding:0.7rem 0.75rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 8px rgba(59,105,120,0.25);line-height:1.3">
-    <span style="font-weight:600;font-size:0.9rem">Vacation Rentals</span>
-    <span style="font-size:0.72rem;opacity:0.7">via VRBO</span>
-  </a>
-  <a href="${expedia}" target="_blank" rel="noopener noreferrer sponsored"
-     style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;background:#204051;color:#fff;padding:0.7rem 0.75rem;border-radius:8px;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.12);line-height:1.3">
-    <span style="font-weight:600;font-size:0.9rem">Hotels</span>
-    <span style="font-size:0.72rem;opacity:0.7">via Expedia</span>
-  </a>
-</div>
-<p style="font-size:0.7rem;color:#999;margin:0 0 1rem;text-align:center">Affiliate links help support this site at no extra cost to you.</p>`;
+<div class="stays-inline-cta" aria-label="Find lodging">
+  <div class="stays-inline-cta__buttons">
+    <a class="stays-inline-cta__button stays-inline-cta__button--vrbo" href="${vrbo}" target="_blank" rel="noopener noreferrer sponsored">
+      <span class="stays-inline-cta__label">Vacation Rentals</span>
+      <span class="stays-inline-cta__source">via VRBO</span>
+    </a>
+    <a class="stays-inline-cta__button stays-inline-cta__button--expedia" href="${expedia}" target="_blank" rel="noopener noreferrer sponsored">
+      <span class="stays-inline-cta__label">Hotels</span>
+      <span class="stays-inline-cta__source">via Expedia</span>
+    </a>
+  </div>
+  <p class="stays-inline-cta__disclosure">Affiliate links help support this site at no extra cost to you.</p>
+</div>`;
 
   const headingPattern = /<h[23][^>]*>(?:[^<]*)?Where to Stay[^<]*<\/h[23]>/i;
   const match = html.match(headingPattern);

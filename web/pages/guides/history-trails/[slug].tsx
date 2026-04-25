@@ -5,11 +5,13 @@ import type { GetStaticPaths, GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
 import dynamic from 'next/dynamic';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import MarkerInscription from '../../../components/MarkerInscription';
+import AppInstallCTA from '../../../components/AppInstallCTA';
 import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
 
@@ -52,8 +54,37 @@ type Props = {
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
+const HIGHLIGHT_STOP_WORDS = new Set([
+  'and', 'the', 'for', 'with', 'from', 'into', 'trail', 'historic', 'national', 'crossing',
+]);
+
+function normalizeForMatch(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function getHighlightTerms(highlight: string) {
+  const primary = highlight.split('-')[0] || highlight;
+  return normalizeForMatch(primary)
+    .split(/\s+/)
+    .filter((term) => term.length > 2 && !HIGHLIGHT_STOP_WORDS.has(term));
+}
+
+function hasStrictHighlightMatch(marker: MarkerData, terms: string[]) {
+  const title = normalizeForMatch(marker.title);
+  const town = normalizeForMatch(marker.town || '');
+  const county = normalizeForMatch(marker.county);
+
+  if (terms.length === 0) return false;
+  const allTermsInTitle = terms.every((term) => title.includes(term));
+  const allTermsInTown = Boolean(town) && terms.every((term) => town.includes(term));
+  const allTermsAcrossPlace = terms.every((term) => town.includes(term) || county.includes(term));
+
+  return allTermsInTitle || allTermsInTown || allTermsAcrossPlace;
+}
+
 export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail }: Props) {
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
+  const [openMarkerIds, setOpenMarkerIds] = useState<string[]>([]);
   const [viewState, setViewState] = useState({
     latitude: 46.8,
     longitude: -110.5,
@@ -82,6 +113,47 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
       maxLat: Math.max(...lats) + 0.3,
     };
   }, [markers]);
+
+  const mustSeeByMarkerId = useMemo(() => {
+    const assignments = new globalThis.Map<string, string>();
+    const usedMarkerIds = new Set<string>();
+
+    trail.highlights.forEach((highlight) => {
+      const terms = getHighlightTerms(highlight);
+      if (terms.length === 0) return;
+
+      for (const marker of markers) {
+        if (usedMarkerIds.has(marker.id)) continue;
+        if (hasStrictHighlightMatch(marker, terms)) {
+          assignments.set(marker.id, highlight);
+          usedMarkerIds.add(marker.id);
+          break;
+        }
+      }
+    });
+
+    return assignments;
+  }, [markers, trail.highlights]);
+
+  const focusMarker = (marker: MarkerData, zoom = 10) => {
+    setSelectedMarker(marker);
+    setOpenMarkerIds((current) => current.includes(marker.id) ? current : [...current, marker.id]);
+    setViewState((current) => ({ ...current, latitude: marker.lat, longitude: marker.lng, zoom }));
+  };
+
+  const updateMarkerPane = (marker: MarkerData, isOpen: boolean) => {
+    setOpenMarkerIds((current) => {
+      if (isOpen) return current.includes(marker.id) ? current : [...current, marker.id];
+      return current.filter((id) => id !== marker.id);
+    });
+
+    if (isOpen) {
+      setSelectedMarker(marker);
+      setViewState((current) => ({ ...current, latitude: marker.lat, longitude: marker.lng, zoom: 10 }));
+    } else if (selectedMarker?.id === marker.id) {
+      setSelectedMarker(null);
+    }
+  };
 
   const schema = {
     '@context': 'https://schema.org',
@@ -117,7 +189,6 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
         <meta property="og:url" content={url} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet" />
       </Head>
       <Header />
       <Hero title={trail.name} subtitle={`${trail.markerCount} Historic Markers`} image="/images/hero-image.jpg" alt={trail.name} small />
@@ -135,45 +206,82 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
         }
         .trail-route-notice strong { color: #204051; }
         .trail-route-notice a { color: #3b6978; font-weight: 700; }
-        .trail-cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
+        .trail-cta-row { display: flex; gap: 0.85rem 1rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
         .trail-primary-cta {
           display: inline-flex; align-items: center; justify-content: center;
-          padding: 0.72rem 1.15rem; border-radius: 8px; background: #204051;
-          color: #fff; font-weight: 700; text-decoration: none;
+          padding: 0.78rem 1.15rem; border-radius: 8px; background: #2f6f7b;
+          color: #fff !important; font-weight: 800; text-decoration: none;
+          border: 1px solid rgba(32, 64, 81, 0.2); box-shadow: 0 2px 8px rgba(32,64,81,0.16);
         }
-        .trail-secondary-cta { color: #3b6978; font-weight: 700; text-decoration: none; }
+        .trail-primary-cta:hover { background: #204051; color: #fff !important; }
+        .trail-app-cta { min-width: 0; }
+        .trail-app-cta .app-install-inline {
+          margin: 0; padding: 0; border-left: 0; background: transparent; align-items: center;
+          color: #4d4331; gap: 0.45rem; font-size: 0.84rem;
+        }
+        .trail-app-cta .app-install-inline-icon { display: none; }
+        .trail-app-cta .app-install-inline-body { display: block; flex: 0 1 auto; line-height: 1.35; }
+        .trail-app-cta .app-install-inline-body strong { font-size: 0.84rem; color: #204051; margin-right: 0.25rem; }
+        .trail-app-cta .app-install-inline-body span { display: inline; font-size: 0.82rem; color: #6c5d46; }
+        .trail-app-cta .app-install-inline-btn {
+          margin-top: 0; border-radius: 999px; padding: 0.34rem 0.7rem; font-size: 0.74rem;
+          background: transparent; color: #2f6f7b; border: 1px solid rgba(47,111,123,0.38);
+        }
+        .trail-app-cta .app-install-inline-btn:hover { background: rgba(47,111,123,0.08); }
         .trail-meta-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 1.1rem 0; }
         .trail-meta-item { font-size: 0.9rem; color: #666; padding: 0.85rem; background: #f8faf8; border: 1px solid #e8ede8; border-radius: 10px; }
         .trail-meta-item strong { color: #204051; }
-        .trail-overview { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.25rem; align-items: start; margin: 1.5rem 0; }
-        @media (max-width: 860px) { .trail-overview { grid-template-columns: 1fr; } }
-        .trail-map-card, .trail-highlights {
+        .trail-guide-layout {
+          display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 44%);
+          gap: 1.25rem; align-items: start; margin: 1.5rem 0;
+        }
+        @media (max-width: 900px) { .trail-guide-layout { grid-template-columns: 1fr; } }
+        .trail-map-card {
           background: #fff; border: 1px solid #e8ede8; border-radius: 12px;
           box-shadow: 0 2px 10px rgba(0,0,0,0.04); overflow: hidden;
         }
+        .trail-map-card { position: sticky; top: 1rem; }
+        @media (max-width: 900px) { .trail-map-card { position: static; order: -1; } }
         .trail-map-heading { padding: 0.85rem 1rem; border-bottom: 1px solid #e8ede8; }
         .trail-map-heading h2 { font-size: 1rem; color: #204051; margin: 0 0 0.25rem; }
         .trail-map-heading p { font-size: 0.84rem; color: #666; margin: 0; line-height: 1.45; }
-        .trail-map-container { height: 340px; overflow: hidden; background: #eef3f0; }
-        .trail-map-fallback { height: 340px; display: flex; align-items: center; justify-content: center; padding: 1.5rem; text-align: center; color: #666; }
-        .trail-markers-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.9rem; margin-top: 1rem; }
+        .trail-map-container { height: min(68vh, 620px); min-height: 420px; overflow: hidden; background: #eef3f0; }
+        .trail-map-fallback { height: 100%; min-height: 420px; display: flex; align-items: center; justify-content: center; padding: 1.5rem; text-align: center; color: #666; }
+        .trail-markers-list { display: grid; gap: 0.75rem; margin-top: 1rem; }
         .marker-item {
-          padding: 1rem; border: 1px solid #e8ede8; border-radius: 10px; background: #fff;
-          cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.15s;
+          border: 1px solid #e1e8e4; border-radius: 10px; background: #fff;
+          transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+          overflow: hidden;
         }
-        .marker-item:hover { background: #f8faf8; transform: translateY(-1px); }
-        .marker-item.active { background: #e8f4f8; border-color: #3b6978; }
-        .marker-item h3 { font-size: 0.95rem; color: #204051; margin: 0 0 0.3rem; }
+        .marker-item[open], .marker-item.active { border-color: #3b6978; box-shadow: 0 2px 10px rgba(59,105,120,0.1); }
+        .marker-item summary {
+          list-style: none; cursor: pointer; padding: 0.9rem 1rem;
+          display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;
+        }
+        .marker-item summary::-webkit-details-marker { display: none; }
+        .marker-summary-main { min-width: 0; }
+        .marker-summary-title { display: block; font-size: 0.95rem; color: #204051; font-weight: 800; line-height: 1.35; }
         .marker-item .marker-loc { font-size: 0.8rem; color: #888; }
-        .marker-item .marker-excerpt { font-size: 0.85rem; color: #555; margin-top: 0.4rem; line-height: 1.4; }
-        .trail-stops-section { margin-top: 1.75rem; }
+        .marker-pane-body { border-top: 1px solid #e8ede8; padding: 0.95rem 1rem 1rem; }
+        .marker-item .marker-excerpt { font-size: 0.88rem; color: #555; line-height: 1.5; }
+        .marker-pane-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.85rem; }
+        .marker-pane-actions a, .marker-pane-actions button {
+          font-size: 0.82rem; font-weight: 800; color: #3b6978; background: none; border: none;
+          padding: 0; cursor: pointer; text-decoration: none;
+        }
+        .marker-pane-actions a:hover, .marker-pane-actions button:hover { text-decoration: underline; }
+        .popular-badge {
+          flex-shrink: 0; border-radius: 999px; padding: 0.22rem 0.55rem;
+          background: #fff4d8; color: #7c4d00; border: 1px solid #efd08b;
+          font-size: 0.72rem; font-weight: 800;
+        }
+        .marker-popular-note {
+          margin-bottom: 0.8rem; padding: 0.72rem 0.8rem; border-radius: 8px;
+          background: #fff8ea; border: 1px solid #efd9a7; color: #4d4331; font-size: 0.84rem; line-height: 1.45;
+        }
+        .trail-stops-section { margin: 0; }
         .trail-stops-section h2 { font-size: 1.2rem; color: #204051; margin: 0 0 0.35rem; }
         .trail-stops-section > p { color: #666; line-height: 1.55; margin: 0 0 1rem; }
-        .trail-highlights { padding: 1rem; }
-        .trail-highlights h2 { font-size: 1.05rem; color: #204051; margin: 0 0 0.75rem; }
-        .highlights-grid { display: grid; gap: 0.7rem; }
-        .highlight-item { padding: 0.85rem; background: #f8faf8; border-radius: 8px; border: 1px solid #e8ede8; }
-        .highlight-item span { font-size: 0.9rem; color: #204051; }
         .trail-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e8ede8; }
         .trail-nav a { font-size: 0.9rem; color: #3b6978; text-decoration: none; }
         .trail-nav a:hover { text-decoration: underline; }
@@ -184,6 +292,7 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
           font-size: 10px; color: #fff; font-weight: 700;
         }
         .map-marker.selected { background: #27ae60; transform: scale(1.2); }
+        .map-marker.must-see { background: #b7791f; }
       `}} />
 
       <main className="trail-page">
@@ -204,16 +313,82 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
           topic briefly or sit far from the next related marker.
           <div className="trail-cta-row">
             <Link href={`/planners/backroads-planner/?mode=history&trail=${trail.id}`} className="trail-primary-cta">
-              Customize this trail in the Trip Planner
+              Open This Itinerary in the Backroads Planner
             </Link>
-            <Link href="/planners/backroads-planner/" className="trail-secondary-cta">
-              Open the Backroads Planner &rarr;
-            </Link>
+            <span className="trail-app-cta">
+              <AppInstallCTA
+                variant="inline"
+                forceShow
+                headline="Never miss a stop."
+                body="Get alerts as historic markers come up along your route."
+                buttonLabel="Get the app"
+              />
+            </span>
           </div>
         </aside>
 
-        <div className="trail-overview">
-          <section className="trail-map-card" aria-label="Marker overview map">
+        <div className="trail-guide-layout">
+          <section className="trail-stops-section">
+            <h2>Historic Marker Stops</h2>
+            <p>
+              Open each pane to read the marker text. Popular stops are called out from the trail highlights.
+              Use the planner when you want to remove stops, reorder them, and calculate a road-following route.
+            </p>
+            <div className="trail-markers-list">
+              {markers.map((m, idx) => {
+                const mustSee = mustSeeByMarkerId.get(m.id);
+                const isOpen = openMarkerIds.includes(m.id);
+
+                return (
+                  <details
+                    key={m.id}
+                    className={`marker-item ${selectedMarker?.id === m.id ? 'active' : ''}`}
+                    open={isOpen}
+                    onToggle={(event) => updateMarkerPane(m, event.currentTarget.open)}
+                  >
+                    <summary>
+                      <span className="marker-summary-main">
+                        <span className="marker-summary-title">{idx + 1}. {m.title}</span>
+                        <span className="marker-loc">
+                          {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
+                        </span>
+                      </span>
+                      {mustSee && <span className="popular-badge">Popular</span>}
+                    </summary>
+                    <div className="marker-pane-body">
+                      {mustSee && (
+                        <div className="marker-popular-note">
+                          <strong>Popular:</strong> {mustSee}
+                        </div>
+                      )}
+                      <div className="marker-excerpt">
+                        <MarkerInscription text={m.inscription} variant="compact" />
+                      </div>
+                      <div className="marker-pane-actions">
+                        <button type="button" onClick={() => focusMarker(m)}>
+                          Show on map
+                        </button>
+                        {MARKER_DEEP_READS[m.slug] && (
+                          <Link href={MARKER_DEEP_READS[m.slug].href}>
+                            {MARKER_DEEP_READS[m.slug].title}
+                          </Link>
+                        )}
+                        <a
+                          href={`https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Directions
+                        </a>
+                      </div>
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
+          </section>
+
+          <aside className="trail-map-card" aria-label="Marker overview map">
             <div className="trail-map-heading">
               <h2>Marker Overview</h2>
               <p>Markers are shown without connector lines so the map does not imply a prescribed road route.</p>
@@ -235,8 +410,8 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                     <Marker key={m.id} latitude={m.lat} longitude={m.lng} anchor="center">
                       <button
                         type="button"
-                        className={`map-marker ${selectedMarker?.id === m.id ? 'selected' : ''}`}
-                        onClick={() => setSelectedMarker(m)}
+                        className={`map-marker ${selectedMarker?.id === m.id ? 'selected' : ''} ${mustSeeByMarkerId.has(m.id) ? 'must-see' : ''}`}
+                        onClick={() => focusMarker(m, Math.max(viewState.zoom, 8))}
                         aria-label={`Show ${m.title}`}
                       >
                         {idx + 1}
@@ -300,47 +475,8 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                 </div>
               )}
             </div>
-          </section>
-
-          <section className="trail-highlights">
-            <h2>Trail Highlights</h2>
-            <div className="highlights-grid">
-              {trail.highlights.map((h, i) => (
-                <div key={i} className="highlight-item">
-                  <span>{h}</span>
-                </div>
-              ))}
-            </div>
-          </section>
+          </aside>
         </div>
-
-        <section className="trail-stops-section">
-          <h2>Historic Marker Stops</h2>
-          <p>
-            Use these cards to read the collection. Use the trip planner when you want to remove stops,
-            reorder them, and calculate a road-following route.
-          </p>
-          <div className="trail-markers-list">
-            {markers.map((m, idx) => (
-              <article
-                key={m.id}
-                className={`marker-item ${selectedMarker?.id === m.id ? 'active' : ''}`}
-                onClick={() => {
-                  setSelectedMarker(m);
-                  setViewState({ ...viewState, latitude: m.lat, longitude: m.lng, zoom: 10 });
-                }}
-              >
-                <h3>{idx + 1}. {m.title}</h3>
-                <div className="marker-loc">
-                  {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
-                </div>
-                <div className="marker-excerpt">
-                  <MarkerInscription text={m.inscription} variant="compact" />
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
 
         <nav className="trail-nav">
           {prevTrail ? (

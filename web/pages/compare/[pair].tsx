@@ -364,7 +364,7 @@ export default function ComparePage({ townA, townB, guideA, guideB, hasLodgingA,
           />
 
           <div style={{ marginTop: '2rem' }}>
-            <StaysCTA />
+            <StaysCTA variant="compact" />
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
