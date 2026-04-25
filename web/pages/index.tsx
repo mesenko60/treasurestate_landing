@@ -101,7 +101,6 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             alt="Montana mountain landscape with blue sky"
             className="hero-image"
             style={{ position: 'absolute', height: '100%', width: '100%', inset: '0', objectFit: 'cover', objectPosition: 'center' }}
-            fetchPriority="high"
             decoding="async"
           />
         </picture>
@@ -127,6 +126,9 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             </span>
             <kbd style={{ fontSize: '0.7rem', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', color: '#9ca3af', background: '#f9fafb' }}>⌘K</kbd>
           </button>
+          <div className="hp-hero-history">
+            <TodayInHistory variant="pill" tone="glass" />
+          </div>
         </div>
       </header>
 
@@ -150,6 +152,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
 
         /* Path cards (two-column) */
         .hp-paths { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; transform: translateY(-15px); margin-bottom: -15px; position: relative; z-index: 2; padding: 0 1rem; }
+        .hp-hero-history { max-width: 660px; margin: 0.8rem auto 0; }
         .hp-path-card { background: var(--white); border-radius: 14px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); padding: 2rem 1.75rem; text-decoration: none; color: var(--dark); transition: transform 0.2s, box-shadow 0.2s; }
         .hp-path-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
         .hp-path-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
@@ -241,6 +244,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
           .hp-shop { flex-direction: column; text-align: center; }
         }
         @media (max-width: 600px) {
+          .hp-hero-history { margin-top: 0.7rem; }
           .hp-paths { padding: 0 0.75rem; }
           .hp-path-card { padding: 1.5rem 1.25rem; }
           .hp-hero-btns { gap: 0.6rem; }
@@ -487,16 +491,6 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" className="hp-shop-link">
               Visit the Shop →
             </a>
-          </div>
-        </section>
-
-        {/* ═══ 8. TODAY IN HISTORY ═══ */}
-        <section className="hp-section" style={{ paddingTop: 0 }}>
-          <TodayInHistory />
-          <div style={{ textAlign: 'right', marginTop: '0.65rem' }}>
-            <Link href="/this-day-in-history/browse/" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}>
-              Browse all 365 stories →
-            </Link>
           </div>
         </section>
 

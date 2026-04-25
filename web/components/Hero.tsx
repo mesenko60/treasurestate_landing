@@ -57,7 +57,6 @@ export default function Hero({ title, subtitle, image, alt, small, showSearch = 
           alt={alt}
           className={`hero-image ${small ? 'hero-image--small' : ''}`}
           style={{ position: 'absolute', height: '100%', width: '100%', inset: 0, objectFit: 'cover', objectPosition: 'center' }}
-          fetchPriority="high"
           decoding="async"
           onError={handleError}
         />

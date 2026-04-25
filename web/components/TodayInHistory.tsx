@@ -1,14 +1,17 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
 import TdihCard from './TdihCard';
 import { TdihEntry, findEntryByDate } from '../lib/tdih';
 
 type Props = {
   heading?: string;
+  variant?: 'card' | 'pill';
+  tone?: 'light' | 'glass';
 };
 
-export default function TodayInHistory({ heading = 'Today in Montana History' }: Props) {
+export default function TodayInHistory({ heading = 'Today in Montana History', variant = 'card', tone = 'light' }: Props) {
   const [entries, setEntries] = useState<TdihEntry[]>([]);
   const [loaded, setLoaded] = useState(false);
 
@@ -34,6 +37,45 @@ export default function TodayInHistory({ heading = 'Today in Montana History' }:
   }, []);
 
   const todayEntry = useMemo(() => findEntryByDate(entries), [entries]);
+
+  if (variant === 'pill') {
+    const isGlass = tone === 'glass';
+
+    return (
+      <section aria-label={heading} style={{ display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 'fit-content',
+            background: isGlass ? 'rgba(10,25,35,0.58)' : 'rgba(255,255,255,0.96)',
+            border: isGlass ? '1px solid rgba(255,255,255,0.28)' : '1px solid #dce6ed',
+            borderRadius: '999px',
+            boxShadow: isGlass ? '0 6px 20px rgba(0,0,0,0.18)' : '0 6px 24px rgba(15,35,48,0.10)',
+            padding: '0.34rem 0.8rem',
+            color: isGlass ? '#fff' : '#204051',
+            backdropFilter: isGlass ? 'blur(8px)' : undefined,
+          }}
+        >
+          <Link
+            href="/this-day-in-history/"
+            style={{
+              color: isGlass ? '#f5c97a' : '#3b6978',
+              fontSize: '0.72rem',
+              fontWeight: 800,
+              letterSpacing: '0.04em',
+              lineHeight: 1.2,
+              textDecoration: 'none',
+              textTransform: 'uppercase',
+            }}
+          >
+            Today in Montana History
+          </Link>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section style={{ background: '#f8fbfd', border: '1px solid #dce6ed', borderRadius: '12px', padding: '1rem' }}>

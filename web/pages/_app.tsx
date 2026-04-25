@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import '../public/css/modern-style.css'
 import * as gtag from '../lib/gtag'
 import GlobalSchema from '../components/GlobalSchema'
 import MobileBottomNav from '../components/MobileBottomNav'
@@ -46,7 +47,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preload" href="/fonts/opensans-latin.woff2" as="font" type="font/woff2" crossOrigin="" />
-        <link rel="stylesheet" href="/css/modern-style.css" />
         <style dangerouslySetInnerHTML={{ __html: `
 body{font-family:'Arial',sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333;line-height:1.6;font-size:16px;overflow-x:hidden}
 .hero-section{position:relative;height:70vh;min-height:400px;color:#fff;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden}
