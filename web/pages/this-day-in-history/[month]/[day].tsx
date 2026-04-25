@@ -81,8 +81,8 @@ export default function TdihDayPage({ entry, prev, next }: Props) {
       />
       <Breadcrumbs items={breadcrumbs} />
 
-      <main style={{ maxWidth: '980px', margin: '0 auto', padding: '1.2rem 1rem 2.5rem' }}>
-        <article style={{ background: '#fff', borderRadius: '12px', border: '1px solid #e5e7eb', padding: '1.25rem' }}>
+      <main style={{ maxWidth: '820px', margin: '0 auto', padding: '1.2rem 1rem 2.5rem' }}>
+        <article style={{ paddingTop: '0.25rem' }}>
           <div style={{ marginBottom: '0.9rem', display: 'flex', gap: '0.65rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <span
               style={{
@@ -101,7 +101,6 @@ export default function TdihDayPage({ entry, prev, next }: Props) {
             <span style={{ color: '#6b7280', fontSize: '0.92rem' }}>{entry.date_display}</span>
           </div>
 
-          <h1 style={{ margin: '0 0 0.6rem', fontFamily: 'var(--font-primary)' }}>{entry.headline}</h1>
           <p style={{ margin: '0 0 1rem', color: '#4b5563' }}>
             <strong>Location:</strong> {entry.location}
           </p>
@@ -125,21 +124,6 @@ export default function TdihDayPage({ entry, prev, next }: Props) {
                 </span>
               ))}
             </div>
-          )}
-
-          {entry.sources.length > 0 && (
-            <section style={{ marginTop: '1.1rem' }}>
-              <h2 style={{ margin: '0 0 0.4rem', fontSize: '1.05rem' }}>Sources</h2>
-              <ul style={{ margin: 0, paddingLeft: '1.1rem' }}>
-                {entry.sources.map((source) => (
-                  <li key={source} style={{ marginBottom: '0.35rem' }}>
-                    <a href={source.startsWith('http') ? source : `https://${source}`} target="_blank" rel="noopener noreferrer">
-                      {source}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
           )}
         </article>
 
