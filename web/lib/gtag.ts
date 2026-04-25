@@ -365,30 +365,58 @@ export function trackNearbyPOIsLoaded(count: number, radiusMeters: number) {
 
 /* ─── PWA Install Tracking ───────────────────────────────── */
 
+function pwaInstallParams(extra?: Record<string, any>) {
+  const pagePath = typeof window !== 'undefined' ? window.location.pathname : '';
+  return {
+    event_category: 'pwa',
+    page_path: pagePath,
+    content_group: pagePath ? getContentGroup(pagePath) : 'other',
+    platform: isPWA() ? 'pwa' : 'web',
+    ...extra,
+  };
+}
+
 export function trackPWAInstallPromptShown() {
   gtag()?.('event', 'pwa_install_prompt_shown', {
-    event_category: 'pwa',
+    ...pwaInstallParams(),
     event_label: 'banner_displayed',
   });
 }
 
 export function trackPWAInstallAccepted() {
   gtag()?.('event', 'pwa_install_accepted', {
-    event_category: 'pwa',
+    ...pwaInstallParams(),
     event_label: 'user_accepted',
   });
 }
 
 export function trackPWAInstallDismissed() {
   gtag()?.('event', 'pwa_install_dismissed', {
-    event_category: 'pwa',
+    ...pwaInstallParams(),
     event_label: 'user_dismissed',
   });
 }
 
 export function trackPWAInstalled() {
   gtag()?.('event', 'pwa_installed', {
-    event_category: 'pwa',
+    ...pwaInstallParams(),
     event_label: 'app_installed',
+  });
+}
+
+export function trackPWAInstallInstructionsShown() {
+  gtag()?.('event', 'pwa_install_instructions_shown', {
+    ...pwaInstallParams(),
+    event_label: 'manual_install_instructions',
+  });
+}
+
+let pwaInstallListenerAttached = false;
+
+export function initPWAInstallTracking() {
+  if (typeof window === 'undefined' || pwaInstallListenerAttached) return;
+  pwaInstallListenerAttached = true;
+  window.addEventListener('appinstalled', () => {
+    trackPWAInstalled();
   });
 }

@@ -3,6 +3,7 @@ import {
   trackPWAInstallPromptShown,
   trackPWAInstallAccepted,
   trackPWAInstallDismissed,
+  trackPWAInstallInstructionsShown,
 } from '../lib/gtag';
 
 interface BeforeInstallPromptEvent extends Event {
@@ -105,6 +106,7 @@ export default function AppInstallCTA({
   const handleInstall = useCallback(async () => {
     if (!deferredPrompt) {
       setShowIOSSteps(true);
+      trackPWAInstallInstructionsShown();
       return;
     }
     deferredPrompt.prompt();
@@ -123,6 +125,11 @@ export default function AppInstallCTA({
     trackPWAInstallDismissed();
     setDismissed(true);
     persistSessionDismiss();
+  }, []);
+
+  const handleShowManualInstallSteps = useCallback(() => {
+    setShowIOSSteps(true);
+    trackPWAInstallInstructionsShown();
   }, []);
 
   const canShow = mounted && (forceShow || (!dismissed && (deferredPrompt || iosMode)));
@@ -148,7 +155,7 @@ export default function AppInstallCTA({
       <>
         <button
           type="button"
-          onClick={iosMode ? () => setShowIOSSteps(true) : handleInstall}
+          onClick={iosMode ? handleShowManualInstallSteps : handleInstall}
           className="app-install-footer-btn"
         >
           <span aria-hidden="true">📍</span> {h} — {b}
@@ -214,7 +221,7 @@ export default function AppInstallCTA({
               <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
             </div>
           ) : (
-            <button type="button" className="app-install-inline-btn" onClick={() => setShowIOSSteps(true)}>
+            <button type="button" className="app-install-inline-btn" onClick={handleShowManualInstallSteps}>
               {buttonLabel || 'How to install'}
             </button>
           )
@@ -300,7 +307,7 @@ export default function AppInstallCTA({
             <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
           </div>
         ) : (
-          <button type="button" className="app-install-card-btn" onClick={() => setShowIOSSteps(true)}>
+          <button type="button" className="app-install-card-btn" onClick={handleShowManualInstallSteps}>
             {buttonLabel || 'How to install'}
           </button>
         )

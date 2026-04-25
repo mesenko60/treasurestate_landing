@@ -3,7 +3,7 @@ import {
   trackPWAInstallPromptShown,
   trackPWAInstallAccepted,
   trackPWAInstallDismissed,
-  trackPWAInstalled,
+  trackPWAInstallInstructionsShown,
 } from '../lib/gtag';
 
 interface BeforeInstallPromptEvent extends Event {
@@ -84,14 +84,8 @@ export default function PWAInstallPrompt() {
     };
     window.addEventListener('beforeinstallprompt', handler);
 
-    const installedHandler = () => {
-      trackPWAInstalled();
-    };
-    window.addEventListener('appinstalled', installedHandler);
-
     return () => {
       window.removeEventListener('beforeinstallprompt', handler);
-      window.removeEventListener('appinstalled', installedHandler);
     };
   }, []);
 
@@ -169,7 +163,7 @@ export default function PWAInstallPrompt() {
                 handleDismiss();
               } else {
                 setShowIOSSteps(true);
-                trackPWAInstallAccepted();
+                trackPWAInstallInstructionsShown();
               }
             }}
           >

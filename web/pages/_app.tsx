@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     gtag.initScrollTracking()
     gtag.initReadTracking()
     gtag.initOutboundTracking()
+    gtag.initPWAInstallTracking()
 
     const handleRouteChange = (url: string) => {
       gtag.pageview(url)
