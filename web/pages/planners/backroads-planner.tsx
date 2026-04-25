@@ -12,7 +12,7 @@ import {
 } from '../../lib/historyTrailMapOrder';
 import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
-  HistoryTrailStopItem, ItineraryPOI, POI,
+  HistoryTrailStopItem, ItineraryPOI, MapHoverPoint, POI,
 } from '../../components/trip-builder/types';
 import { POI_LAYER_CATEGORIES } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
@@ -52,11 +52,11 @@ export default function BackroadsPlanner({
 
   // --- Corridor / explore state ---
   const [selected, setSelected] = useState<string | null>(null);
-  const [tripCorridorIds, setTripCorridorIds] = useState<string[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [difficultyFilter, setDifficultyFilter] = useState<string | null>(null);
   const [poiFilter, setPoiFilter] = useState<string | null>(null);
-  const [hoveredPoi, setHoveredPoi] = useState<CorridorPOI | null>(null);
+  const [hoveredMapPoint, setHoveredMapPoint] = useState<MapHoverPoint | null>(null);
+  const [selectedMapPoint, setSelectedMapPoint] = useState<MapHoverPoint | null>(null);
   const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
   const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
   const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
@@ -199,25 +199,11 @@ export default function BackroadsPlanner({
     return Array.from(byId.values());
   }, [allPOIs, corridors, historicMarkers]);
 
-  const tripStopIds = useMemo(() => itinerary.map((item) => item.id), [itinerary]);
   const historyRouteWithManualStops = useMemo(
     () => [...historyRouteStops, ...itinerary.filter((item) => item.enabled !== false)],
     [historyRouteStops, itinerary],
   );
   const shouldUseHistoryRouteStops = Boolean(activeHistoryTrail && (isHistoryTrailCustomized || itinerary.length > 0));
-
-  const addStopToTrip = useCallback((stop: ItineraryPOI) => {
-    setItinerary((prev) => {
-      if (prev.some((item) => item.id === stop.id)) return prev;
-      return [...prev, { ...stop, enabled: true, source: 'manual' }];
-    });
-    trackMapInteraction(`trip_stop_add:${stop.id}`);
-  }, [setItinerary]);
-
-  const removeStopFromTrip = useCallback((id: string) => {
-    setItinerary((prev) => prev.filter((item) => item.id !== id));
-    trackMapInteraction(`trip_stop_remove:${id}`);
-  }, [setItinerary]);
 
   const addHistoryTrailStop = useCallback((id: string) => {
     if (!canonicalActiveHistoryTrail) return;
@@ -235,7 +221,12 @@ export default function BackroadsPlanner({
     });
   }, [canonicalActiveHistoryTrail]);
 
-  const handleSupabasePoiClick = useCallback((p: POI) => setSelectedSupabasePoi(p), []);
+  const handleSupabasePoiClick = useCallback((p: POI) => {
+    setSelectedSupabasePoi(p);
+    setSelectedHistoricMarker(null);
+    setSelectedMapPoint(null);
+    setHoveredMapPoint(null);
+  }, []);
   const closeSupabasePoiPopup = useCallback(() => setSelectedSupabasePoi(null), []);
 
   usePlannerUrlState({
@@ -246,8 +237,6 @@ export default function BackroadsPlanner({
     setActiveMode,
     selected,
     setSelected,
-    tripCorridorIds,
-    setTripCorridorIds,
     activeHistoryTrailId,
     setActiveHistoryTrailId,
     historyTrailStopIds,
@@ -316,6 +305,9 @@ export default function BackroadsPlanner({
     trackMapInteraction(`corridor_select:${id}`);
     setActiveHistoryTrailId(null);
     setHistoryTrailStopIds(null);
+    setSelectedMapPoint(null);
+    setSelectedHistoricMarker(null);
+    setSelectedSupabasePoi(null);
     setSelected(id);
     const c = corridorMap[id];
     if (c) flyToCorridor(c);
@@ -325,20 +317,13 @@ export default function BackroadsPlanner({
     trackMapInteraction(`history_trail_map:${id}`);
     setSelected(null);
     setSelectedHistoricMarker(null);
-    setHoveredPoi(null);
+    setHoveredMapPoint(null);
     setActiveHistoryTrailId((current) => {
       if (current !== id) setHistoryTrailStopIds(null);
       return id;
     });
-  }, []);
-
-  const addToTrip = useCallback((id: string) => {
-    setTripCorridorIds((prev) => prev.includes(id) ? prev : [...prev, id]);
-    trackMapInteraction(`trip_add:${id}`);
-  }, []);
-
-  const removeFromTrip = useCallback((id: string) => {
-    setTripCorridorIds((prev) => prev.filter((t) => t !== id));
+    setSelectedMapPoint(null);
+    setSelectedSupabasePoi(null);
   }, []);
 
   const resetView = useCallback(() => {
@@ -351,7 +336,7 @@ export default function BackroadsPlanner({
 
   const handlePoiFlyTo = useCallback((poi: CorridorPOI) => {
     mapRef.current?.flyTo({ center: [poi.lng, poi.lat], zoom: 12, duration: 800 });
-    setHoveredPoi(poi);
+    setHoveredMapPoint(null);
   }, []);
 
   const deselectCorridor = useCallback(() => setSelected(null), []);
@@ -361,10 +346,36 @@ export default function BackroadsPlanner({
     setSelectedHistoricMarker(null);
   }, []);
   const toggleSidebar = useCallback(() => setSidebarOpen((o) => !o), []);
-  const handleHistoricMarkerClick = useCallback((m: HistoricMarker) => setSelectedHistoricMarker(m), []);
-  const handlePoiClick = useCallback((p: CorridorPOI) => setHoveredPoi(p), []);
+  const handleHistoricMarkerClick = useCallback((m: HistoricMarker) => {
+    setSelectedHistoricMarker(m);
+    setSelectedMapPoint(null);
+    setSelectedSupabasePoi(null);
+    setHoveredMapPoint(null);
+  }, []);
+  const handleMapPointSelect = useCallback((point: MapHoverPoint) => {
+    setSelectedMapPoint(point);
+    setSelectedHistoricMarker(null);
+    setSelectedSupabasePoi(null);
+    setHoveredMapPoint(null);
+  }, []);
+  const handlePoiClick = useCallback((p: CorridorPOI) => {
+    handleMapPointSelect({
+      id: `corridor-poi:${p.name}:${p.lat}:${p.lng}`,
+      name: p.name,
+      lat: p.lat,
+      lng: p.lng,
+      type: p.type,
+      category: p.category,
+      description: `${p.distFromRoute.toFixed(1)} mi from route`,
+      rating: p.rating,
+      reviews: p.reviews,
+    });
+  }, [handleMapPointSelect]);
   const closeHistoricMarkerPopup = useCallback(() => setSelectedHistoricMarker(null), []);
-  const closePoiPopup = useCallback(() => setHoveredPoi(null), []);
+  const closePoiPopup = useCallback(() => {
+    setSelectedMapPoint(null);
+    setHoveredMapPoint(null);
+  }, []);
 
   const enabledItinerary = useMemo(
     () => itinerary.filter((i) => i.itemType === 'city' || i.enabled !== false),
@@ -412,7 +423,65 @@ export default function BackroadsPlanner({
         .sidebar-header { padding: 16px 18px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; }
         .sidebar-header h1 { font-size: 1.15rem; margin: 0; color: #fff; font-weight: 700; letter-spacing: -0.3px; }
         .sidebar-header p { font-size: 0.78rem; margin: 6px 0 0; color: #8892a4; }
+        .preset-section { padding: 14px 14px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; }
+        .section-kicker { font-size: 0.72rem; color: #6b7890; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 8px; }
+        .preset-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+        .preset-card {
+          text-align: left; padding: 10px 11px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.04); color: #c0c8d8; cursor: pointer;
+        }
+        .preset-card.active { border-color: rgba(96,165,250,0.75); background: rgba(59,130,246,0.18); color: #fff; }
+        .preset-card span { display: block; font-size: 0.82rem; font-weight: 800; }
+        .preset-card small { display: block; margin-top: 4px; font-size: 0.69rem; line-height: 1.35; color: #8fa0bb; }
+        .preset-card.active small { color: #b8d4ff; }
+        .planner-main { flex: 1; overflow-y: auto; }
+        .planner-main::-webkit-scrollbar { width: 5px; }
+        .planner-main::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+        .planner-panel { min-height: 100%; padding-bottom: 16px; }
+        .panel-block { padding: 12px 18px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .panel-block.subtle { background: rgba(255,255,255,0.02); }
+        .planner-select-label { display: grid; gap: 7px; font-size: 0.78rem; font-weight: 700; color: #c0c8d8; }
+        .planner-select {
+          width: 100%; min-width: 0; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px;
+          background: #111827; color: #e0e4ec; padding: 8px 10px; font: inherit; outline: none;
+        }
+        .planner-select:focus { border-color: rgba(96,165,250,0.75); box-shadow: 0 0 0 2px rgba(59,130,246,0.18); }
+        .route-detail { padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .route-detail h2 { display: flex; align-items: center; gap: 8px; font-size: 1.05rem; color: #fff; margin: 0 0 8px; }
+        .route-detail h2 span { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+        .route-detail p { color: #9aa0b0; font-size: 0.82rem; line-height: 1.5; margin: 0 0 8px; }
+        .route-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+        .route-stats-line { display: flex; gap: 14px; flex-wrap: wrap; padding: 12px 18px; border-bottom: 1px solid rgba(255,255,255,0.06); color: #8892a4; font-size: 0.8rem; }
+        .route-stats-line strong { color: #fff; }
+        .route-message { padding: 10px 18px; color: #fbbf24; font-size: 0.76rem; line-height: 1.45; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .planner-empty { padding: 24px 18px; color: #6b7890; font-size: 0.84rem; line-height: 1.5; text-align: center; }
+        .checkbox-row { display: flex; align-items: center; gap: 8px; color: #a0aab8; font-size: 0.8rem; cursor: pointer; }
+        .city-list { display: grid; gap: 7px; margin: 8px 0 10px; }
+        .city-row { display: grid; grid-template-columns: 24px minmax(0, 1fr) 28px; align-items: center; gap: 8px; }
+        .city-row > span {
+          width: 22px; height: 22px; border-radius: 999px; background: #3b82f6; color: #fff;
+          display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 800;
+        }
+        .city-row button, .stop-list button {
+          border: none; border-radius: 6px; background: rgba(255,255,255,0.08); color: #c0c8d8;
+          cursor: pointer; font-size: 0.72rem; padding: 5px 7px;
+        }
+        .stop-list { list-style: none; margin: 0; padding: 8px 18px 16px; display: grid; gap: 6px; }
+        .stop-list li {
+          display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px;
+          padding: 8px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #c0c8d8; font-size: 0.8rem;
+          border-radius: 8px; cursor: pointer;
+        }
+        .stop-list li:hover { background: rgba(255,255,255,0.05); color: #fff; }
+        .stop-list li.selected {
+          background: rgba(59,130,246,0.18); border-color: rgba(96,165,250,0.45);
+          box-shadow: inset 3px 0 0 #60a5fa; color: #fff;
+        }
+        .stop-list li.disabled { opacity: 0.5; }
+        .stop-list strong { color: #e0e4ec; font-size: 0.82rem; }
+        .stop-list span { color: #6b7890; font-size: 0.72rem; }
         .filter-bar { display: flex; gap: 6px; padding: 10px 18px; flex-wrap: wrap; border-bottom: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
+        .filter-bar.compact { padding: 0; border-bottom: 0; margin-top: 8px; }
         .filter-chip {
           font-size: 0.72rem; padding: 4px 10px; border-radius: 20px; cursor: pointer; border: 1px solid rgba(255,255,255,0.15);
           background: transparent; color: #a0a8b8; transition: all 0.15s;
@@ -509,10 +578,18 @@ export default function BackroadsPlanner({
         .poi-section { padding: 12px 18px; }
         .poi-section h3 { font-size: 0.82rem; color: #8892a4; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px; }
         .poi-item {
-          display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 0.8rem; color: #c0c8d8;
-          border-bottom: 1px solid rgba(255,255,255,0.04); cursor: pointer;
+          display: flex; align-items: center; gap: 8px; padding: 7px 8px; font-size: 0.8rem; color: #c0c8d8;
+          border: none; border-bottom: 1px solid rgba(255,255,255,0.04); border-radius: 8px;
+          cursor: pointer; background: none; width: 100%; text-align: left;
         }
+        .poi-item strong { flex: 1; font-size: 0.8rem; font-weight: 600; }
+        .poi-item em { color: #d8973c; font-style: normal; font-size: 0.72rem; }
+        .poi-item small { color: #6b7890; white-space: nowrap; }
         .poi-item:hover { color: #fff; }
+        .poi-item.selected {
+          background: rgba(59,130,246,0.18); box-shadow: inset 3px 0 0 #60a5fa;
+          color: #fff;
+        }
         .poi-dist { font-size: 0.7rem; color: #6b7890; margin-left: auto; white-space: nowrap; }
         .connections-section { padding: 12px 18px; border-top: 1px solid rgba(255,255,255,0.06); }
         .connection-chip {
@@ -590,15 +667,16 @@ export default function BackroadsPlanner({
           activeMode={activeMode}
           onSetActiveMode={setActiveMode}
           selectedCorridorId={selected}
+          selectedMapPoint={selectedMapPoint}
           activeHistoryTrailId={activeHistoryTrailId}
           activeHistoryTrail={activeHistoryTrail}
           canonicalActiveHistoryTrail={canonicalActiveHistoryTrail}
           activeHistoryStops={activeHistoryStops}
+          selectedHistoricMarker={selectedHistoricMarker}
           historyTrailStopIds={historyTrailStopIds}
           setHistoryTrailStopIds={setHistoryTrailStopIds}
           historyRouteStops={historyRouteStops}
           isHistoryTrailCustomized={isHistoryTrailCustomized}
-          tripCorridorIds={tripCorridorIds}
           difficultyFilter={difficultyFilter}
           poiFilter={poiFilter}
           showHistoricMarkers={showHistoricMarkers}
@@ -609,12 +687,12 @@ export default function BackroadsPlanner({
           onDeselectCorridor={deselectCorridor}
           onSelectHistoryTrail={selectHistoryTrail}
           onClearHistoryTrail={clearHistoryTrail}
-          onAddToTrip={addToTrip}
-          onRemoveFromTrip={removeFromTrip}
           onSetDifficultyFilter={setDifficultyFilter}
           onSetPoiFilter={setPoiFilter}
           onSetShowHistoricMarkers={setShowHistoricMarkers}
-          onPoiHover={setHoveredPoi}
+          onMapPointHover={setHoveredMapPoint}
+          onMapPointSelect={handleMapPointSelect}
+          onHistoricMarkerSelect={handleHistoricMarkerClick}
           onPoiFlyTo={handlePoiFlyTo}
           onResetView={resetView}
           cities={cities}
@@ -642,7 +720,6 @@ export default function BackroadsPlanner({
             handleRef={mapRef}
             corridors={corridors}
             selectedCorridorId={selected}
-            tripCorridorIds={tripCorridorIds}
             filteredCorridorIds={filteredCorridorIds}
             dimCorridors={!!activeHistoryTrailId}
             activeHistoryTrail={activeHistoryTrail}
@@ -655,7 +732,8 @@ export default function BackroadsPlanner({
             showHistoricMarkers={showHistoricMarkers}
             filteredPois={filteredPois}
             selectedHistoricMarker={selectedHistoricMarker}
-            hoveredPoi={hoveredPoi}
+            selectedMapPoint={selectedMapPoint}
+            hoveredMapPoint={hoveredMapPoint}
             onCorridorClick={selectCorridor}
             onHistoricMarkerClick={handleHistoricMarkerClick}
             onPoiClick={handlePoiClick}
@@ -665,9 +743,6 @@ export default function BackroadsPlanner({
             selectedSupabasePoi={selectedSupabasePoi}
             onSupabasePoiClick={handleSupabasePoiClick}
             onCloseSupabasePoiPopup={closeSupabasePoiPopup}
-            tripStopIds={tripStopIds}
-            onAddStopToTrip={addStopToTrip}
-            onRemoveStopFromTrip={removeStopFromTrip}
             onAddHistoryTrailStop={addHistoryTrailStop}
             onRemoveHistoryTrailStop={removeHistoryTrailStop}
           />
@@ -722,26 +797,6 @@ export default function BackroadsPlanner({
             Show All Routes
           </button>
 
-          {tripCorridorIds.length > 0 && (
-            <div style={{
-              position: 'absolute', bottom: 24, left: 16, background: '#1a1e2e', color: '#e0e4ec',
-              padding: '10px 16px', borderRadius: '10px', boxShadow: '0 2px 10px rgba(0,0,0,0.3)',
-              fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '12px', zIndex: 5,
-            }}>
-              <div>
-                <strong>{tripCorridorIds.length} route{tripCorridorIds.length > 1 ? 's' : ''}</strong>
-                <span style={{ color: '#6b7890', marginLeft: '8px' }}>
-                  {tripCorridorIds.map((id) => corridorMap[id]).filter(Boolean).reduce((s, r) => s + r.distanceMiles, 0)} mi
-                </span>
-              </div>
-              <div style={{ display: 'flex', gap: '4px' }}>
-                {tripCorridorIds.map((id) => {
-                  const c = corridorMap[id];
-                  return c ? <span key={id} style={{ width: 10, height: 10, borderRadius: '50%', background: c.color }} /> : null;
-                })}
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </>

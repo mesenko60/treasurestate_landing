@@ -27,3 +27,6 @@ dist/
 
 # IndexNow cache (tracks previously submitted URLs)
 web/.indexnow-cache.json
+
+# Local Netlify folder
+.netlify

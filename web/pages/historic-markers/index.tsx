@@ -12,6 +12,7 @@ import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MarkerInscription from '../../components/MarkerInscription';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../lib/historicMarkerMapPopup';
 import { MARKER_DEEP_READS } from '../../lib/markerDeepReads';
 import { MARKER_TOPIC_LABELS } from '../../lib/markerTopicLabels';
@@ -19,6 +20,7 @@ import type { MapRef } from 'react-map-gl/mapbox';
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
 const Popup = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Popup), { ssr: false });
+const NavigationControl = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.NavigationControl), { ssr: false });
 
 type MarkerData = {
   id: string;
@@ -41,11 +43,15 @@ type Props = {
 };
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
+type MarkerPopupMode = 'full' | 'title';
 
 export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCounts, countyCounts }: Props) {
   const router = useRouter();
   const mapRef = useRef<MapRef | null>(null);
+  const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const [selectedMarker, setSelectedMarker] = useState<MarkerData | null>(null);
+  const [selectedMarkerPopupMode, setSelectedMarkerPopupMode] = useState<MarkerPopupMode>('full');
+  const [expandedMarkerId, setExpandedMarkerId] = useState<string | null>(null);
   const popupDeepRead = selectedMarker ? MARKER_DEEP_READS[selectedMarker.slug] : undefined;
   const [topicFilter, setTopicFilter] = useState<string>('');
   const [countyFilter, setCountyFilter] = useState<string>('');
@@ -157,9 +163,73 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
 
   const curatedSet = useMemo(() => new Set(curatedSlugs), [curatedSlugs]);
 
+  const centerPopupInView = useCallback((m: MarkerData) => {
+    const ref = mapRef.current;
+    mapContainerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    if (!ref) {
+      setViewState(prev => ({ ...prev, latitude: m.lat, longitude: m.lng, zoom: Math.max(prev.zoom, 10) }));
+      return;
+    }
+
+    try {
+      ref.flyTo({
+        center: [m.lng, m.lat],
+        zoom: Math.max(ref.getZoom(), 10),
+        duration: 700,
+      });
+    } catch {
+      setViewState(prev => ({ ...prev, latitude: m.lat, longitude: m.lng, zoom: Math.max(prev.zoom, 10) }));
+    }
+  }, []);
+
+  const centerRenderedPopup = useCallback(() => {
+    const ref = mapRef.current;
+    const mapEl = mapContainerRef.current;
+    const popupEl = mapEl?.querySelector<HTMLElement>('.mapboxgl-popup');
+    if (!ref || !mapEl || !popupEl) return;
+
+    const mapRect = mapEl.getBoundingClientRect();
+    const popupRect = popupEl.getBoundingClientRect();
+    const popupCenterX = popupRect.left + popupRect.width / 2;
+    const popupCenterY = popupRect.top + popupRect.height / 2;
+    const targetCenterX = mapRect.left + mapRect.width / 2;
+    const targetCenterY = mapRect.top + mapRect.height / 2;
+    const dx = targetCenterX - popupCenterX;
+    const dy = targetCenterY - popupCenterY;
+
+    popupEl.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+    if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+
+    try {
+      ref.panBy([dx, dy], { duration: 450 });
+    } catch {
+      /* ignore pan errors during teardown */
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!selectedMarker) return;
+    if (selectedMarkerPopupMode === 'title') return;
+
+    const timers = [250, 800, 1300].map((delay) => window.setTimeout(centerRenderedPopup, delay));
+    return () => timers.forEach((timer) => window.clearTimeout(timer));
+  }, [centerRenderedPopup, selectedMarker, selectedMarkerPopupMode]);
+
   const handleMarkerClick = useCallback((m: MarkerData) => {
+    setSelectedMarkerPopupMode('full');
     setSelectedMarker(m);
-    setViewState(prev => ({ ...prev, latitude: m.lat, longitude: m.lng, zoom: 10 }));
+    centerPopupInView(m);
+  }, [centerPopupInView]);
+
+  const handleFeaturedMarkerMapClick = useCallback((m: MarkerData) => {
+    setSelectedMarkerPopupMode('title');
+    setSelectedMarker(m);
+    centerPopupInView(m);
+  }, [centerPopupInView]);
+
+  const toggleMarkerPane = useCallback((id: string) => {
+    setExpandedMarkerId(prev => (prev === id ? null : id));
   }, []);
 
   const schema = {
@@ -205,6 +275,37 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         .filter-stats { font-size: 0.85rem; color: #888; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; }
         .clear-filters { font-size: 0.85rem; color: #3b6978; background: none; border: none; cursor: pointer; padding: 0; margin-top: 0.5rem; }
         .clear-filters:hover { text-decoration: underline; }
+        .markers-sidebar-app { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #eee; }
+        .markers-sidebar .markers-sidebar-app .app-install-inline {
+          display: grid;
+          grid-template-columns: 18px minmax(0, 1fr);
+          align-items: start;
+          gap: 0.35rem 0.5rem;
+          margin: 0;
+          padding: 0.65rem;
+          border-radius: 9px;
+          border-left-width: 3px;
+          font-size: 0.76rem;
+        }
+        .markers-sidebar .markers-sidebar-app .app-install-inline-icon {
+          font-size: 0.95rem;
+          line-height: 1;
+          margin: 0.1rem 0 0;
+        }
+        .markers-sidebar .markers-sidebar-app .app-install-inline-body {
+          gap: 0.12rem;
+          line-height: 1.25;
+        }
+        .markers-sidebar .markers-sidebar-app .app-install-inline-body strong { font-size: 0.78rem; }
+        .markers-sidebar .markers-sidebar-app .app-install-inline-body span { font-size: 0.72rem; }
+        .markers-sidebar .markers-sidebar-app .app-install-inline-btn {
+          grid-column: 1 / -1;
+          width: 100%;
+          margin-top: 0.25rem;
+          padding: 0.34rem 0.55rem;
+          border-radius: 7px;
+          font-size: 0.74rem;
+        }
         .markers-map-container { height: 75vh; min-height: 600px; max-height: 900px; border-radius: 10px; overflow: visible; border: 1px solid #e0e0e0; position: relative; }
         .map-marker {
           width: 12px; height: 12px; background: #c0392b; border: 2px solid #fff;
@@ -212,20 +313,76 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         }
         .map-marker.curated { background: #27ae60; width: 14px; height: 14px; }
         .map-marker:hover { transform: scale(1.3); }
-        .markers-list { margin-top: 1.5rem; }
+        .markers-list {
+          margin-top: 1.5rem;
+          margin-left: calc(280px + 1rem);
+          max-width: calc(100% - 280px - 1rem);
+        }
         .markers-list h2 { font-size: 1.1rem; color: #204051; margin-bottom: 1rem; }
-        .markers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+        .markers-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 0.65rem;
+          max-width: 980px;
+          margin: 0 auto;
+        }
         .marker-card {
           background: #fff; border-radius: 8px; border: 1px solid #e8ede8;
-          padding: 1rem; cursor: pointer; transition: box-shadow 0.15s;
+          transition: box-shadow 0.15s;
         }
         .marker-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        .marker-card h3 { font-size: 0.95rem; color: #204051; margin: 0 0 0.3rem; }
-        .marker-card .loc { font-size: 0.8rem; color: #888; margin-bottom: 0.4rem; }
-        .marker-card .excerpt { font-size: 0.85rem; color: #555; line-height: 1.4; margin-top: 0.35rem; }
+        .marker-card summary {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          gap: 0.75rem;
+          align-items: center;
+          padding: 0.8rem 1rem;
+          cursor: pointer;
+          list-style: none;
+        }
+        .marker-card summary::-webkit-details-marker { display: none; }
+        .marker-card summary::after {
+          content: '+';
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 999px;
+          background: #eef5f6;
+          color: #3b6978;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          line-height: 1;
+        }
+        .marker-card[open] summary {
+          border-bottom: 1px solid #e8ede8;
+        }
+        .marker-card[open] summary::after { content: '−'; }
+        .marker-card h3 { font-size: 0.95rem; color: #204051; margin: 0; }
+        .marker-card .loc { font-size: 0.8rem; color: #888; margin-top: 0.25rem; display: block; }
+        .marker-card-body { padding: 0.85rem 1rem 1rem; }
+        .marker-card .excerpt {
+          max-width: 760px;
+          font-size: 0.88rem;
+          color: #555;
+          line-height: 1.5;
+          margin-top: 0.35rem;
+        }
         .marker-card .topics { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.5rem; }
         .marker-card .topic-tag { font-size: 0.7rem; padding: 0.15rem 0.4rem; background: #f0f4f0; border-radius: 3px; color: #666; }
-        .view-more-link { font-size: 0.82rem; color: #3b6978; margin-top: 0.5rem; display: inline-block; }
+        .marker-card-actions { display: flex; gap: 0.85rem; flex-wrap: wrap; align-items: center; margin-top: 0.75rem; padding-top: 0.65rem; border-top: 1px solid #f0f0f0; }
+        .marker-map-btn {
+          border: none;
+          border-radius: 6px;
+          background: #204051;
+          color: #fff;
+          cursor: pointer;
+          font-size: 0.78rem;
+          font-weight: 700;
+          padding: 0.4rem 0.65rem;
+        }
+        .marker-map-btn:hover { background: #3b6978; }
+        .view-more-link { font-size: 0.82rem; color: #3b6978; display: inline-block; }
         .trails-cta {
           margin-top: 2rem; padding: 1.25rem; background: #f8faf8;
           border-radius: 10px; border: 1px solid #e8ede8; text-align: center;
@@ -235,6 +392,12 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         .trails-cta a {
           display: inline-block; padding: 0.6rem 1.25rem; background: #204051;
           color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;
+        }
+        @media (max-width: 900px) {
+          .markers-list {
+            margin-left: 0;
+            max-width: none;
+          }
         }
       `}} />
 
@@ -314,9 +477,19 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 Clear all filters
               </button>
             )}
+
+            <div className="markers-sidebar-app">
+              <AppInstallCTA
+                variant="inline"
+                forceShow
+                headline="Explore on the go"
+                body="Get landmark alerts in the app."
+                buttonLabel="Add Free App"
+              />
+            </div>
           </aside>
 
-          <div className="markers-map-container" id="markers-explorer-map">
+          <div className="markers-map-container" id="markers-explorer-map" ref={mapContainerRef}>
             {MAPBOX_TOKEN && (
               <Map
                 ref={mapRef}
@@ -326,6 +499,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 mapboxAccessToken={MAPBOX_TOKEN}
                 style={{ width: '100%', height: '100%' }}
               >
+                <NavigationControl position="top-right" showCompass={false} />
                 {visibleMarkers.map(m => (
                   <Marker key={m.id} latitude={m.lat} longitude={m.lng} anchor="center">
                     <div
@@ -338,71 +512,78 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                   <Popup
                     latitude={selectedMarker.lat}
                     longitude={selectedMarker.lng}
-                    onClose={() => setSelectedMarker(null)}
+                    onClose={() => {
+                      setSelectedMarker(null);
+                      setSelectedMarkerPopupMode('full');
+                    }}
                     closeButton
                     closeOnClick={false}
-                    anchor="bottom"
-                    offset={[0, -8]}
-                    maxWidth="480px"
+                    anchor={selectedMarkerPopupMode === 'title' ? 'bottom' : 'center'}
+                    offset={selectedMarkerPopupMode === 'title' ? 18 : [0, 0]}
+                    maxWidth={selectedMarkerPopupMode === 'title' ? '260px' : '480px'}
                   >
                     <div
                       style={{
-                        maxWidth: 460,
-                        maxHeight: 'min(78vh, 560px)',
-                        padding: '0.75rem',
+                        maxWidth: selectedMarkerPopupMode === 'title' ? 240 : 460,
+                        maxHeight: selectedMarkerPopupMode === 'title' ? 'none' : 'min(60vh, 440px)',
+                        padding: selectedMarkerPopupMode === 'title' ? '0.55rem 0.7rem' : '0.75rem',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 0,
                       }}
                     >
-                      <h4 style={{ margin: '0 0 0.35rem', fontSize: '0.98rem', color: '#204051', flexShrink: 0 }}>
+                      <h4 style={{ margin: selectedMarkerPopupMode === 'title' ? 0 : '0 0 0.35rem', fontSize: '0.98rem', color: '#204051', flexShrink: 0 }}>
                         {selectedMarker.title}
                       </h4>
-                      <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.45rem', flexShrink: 0 }}>
-                        📍 {selectedMarker.town || selectedMarker.county}
-                        {selectedMarker.town && selectedMarker.county && `, ${selectedMarker.county} County`}
-                      </p>
-                      {selectedMarker.topics.length > 0 && (
-                        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.45rem', flexShrink: 0 }}>
-                          {selectedMarker.topics.slice(0, 4).map(t => (
-                            <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
-                              {MARKER_TOPIC_LABELS[t] || t}
-                            </span>
-                          ))}
-                        </div>
+                      {selectedMarkerPopupMode === 'full' && (
+                        <>
+                          <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.45rem', flexShrink: 0 }}>
+                            📍 {selectedMarker.town || selectedMarker.county}
+                            {selectedMarker.town && selectedMarker.county && `, ${selectedMarker.county} County`}
+                          </p>
+                          {selectedMarker.topics.length > 0 && (
+                            <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.45rem', flexShrink: 0 }}>
+                              {selectedMarker.topics.slice(0, 4).map(t => (
+                                <span key={t} style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', background: '#e8f4f8', borderRadius: '4px', color: '#3b6978' }}>
+                                  {MARKER_TOPIC_LABELS[t] || t}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.5rem' }}>
+                            <MarkerInscription
+                              text={selectedMarker.inscription}
+                              variant="popup"
+                            />
+                          </div>
+                          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.55rem', borderTop: '1px solid #e8ede8', flexShrink: 0 }}>
+                            {curatedSet.has(selectedMarker.slug) && (
+                              <Link
+                                href={`/historic-markers/${selectedMarker.slug}/`}
+                                style={{ fontSize: '0.82rem', color: '#27ae60', fontWeight: 600 }}
+                              >
+                                View full page →
+                              </Link>
+                            )}
+                            {popupDeepRead && (
+                              <Link
+                                href={popupDeepRead.href}
+                                style={{ fontSize: '0.82rem', color: '#925f14', fontWeight: 600 }}
+                              >
+                                {popupDeepRead.title} →
+                              </Link>
+                            )}
+                            <a
+                              href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ fontSize: '0.82rem', color: '#3b6978' }}
+                            >
+                              Get directions
+                            </a>
+                          </div>
+                        </>
                       )}
-                      <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.5rem' }}>
-                        <MarkerInscription
-                          text={selectedMarker.inscription}
-                          variant="popup"
-                        />
-                      </div>
-                      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '0.55rem', borderTop: '1px solid #e8ede8', flexShrink: 0 }}>
-                        {curatedSet.has(selectedMarker.slug) && (
-                          <Link
-                            href={`/historic-markers/${selectedMarker.slug}/`}
-                            style={{ fontSize: '0.82rem', color: '#27ae60', fontWeight: 600 }}
-                          >
-                            View full page →
-                          </Link>
-                        )}
-                        {popupDeepRead && (
-                          <Link
-                            href={popupDeepRead.href}
-                            style={{ fontSize: '0.82rem', color: '#925f14', fontWeight: 600 }}
-                          >
-                            {popupDeepRead.title} →
-                          </Link>
-                        )}
-                        <a
-                          href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ fontSize: '0.82rem', color: '#3b6978' }}
-                        >
-                          Get directions
-                        </a>
-                      </div>
                     </div>
                   </Popup>
                 )}
@@ -419,29 +600,40 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
           </h2>
           <div className="markers-grid">
             {(searchQuery || topicFilter || countyFilter || townSlugFilter ? filteredMarkers.slice(0, 24) : markers.filter(m => curatedSet.has(m.slug)).slice(0, 12)).map(m => (
-              <div
+              <details
                 key={m.id}
                 className="marker-card"
-                onClick={() => handleMarkerClick(m)}
+                open={expandedMarkerId === m.id}
               >
-                <h3>{m.title}</h3>
-                <div className="loc">
-                  {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
+                <summary onClick={(event) => { event.preventDefault(); toggleMarkerPane(m.id); }}>
+                  <span>
+                    <h3>{m.title}</h3>
+                    <span className="loc">
+                      {m.town || m.county}{m.town && m.county ? `, ${m.county} County` : ''}
+                    </span>
+                  </span>
+                </summary>
+                <div className="marker-card-body">
+                  <div className="excerpt">
+                    <MarkerInscription text={m.inscription} variant="compact" />
+                  </div>
+                  <div className="topics">
+                    {m.topics.slice(0, 3).map(t => (
+                      <span key={t} className="topic-tag">{MARKER_TOPIC_LABELS[t] || t}</span>
+                    ))}
+                  </div>
+                  <div className="marker-card-actions">
+                    <button type="button" className="marker-map-btn" onClick={() => handleFeaturedMarkerMapClick(m)}>
+                      Show on map
+                    </button>
+                    {curatedSet.has(m.slug) && (
+                      <Link href={`/historic-markers/${m.slug}/`} className="view-more-link">
+                        Read Full Story &rarr;
+                      </Link>
+                    )}
+                  </div>
                 </div>
-                <div className="excerpt">
-                  <MarkerInscription text={m.inscription} variant="compact" />
-                </div>
-                <div className="topics">
-                  {m.topics.slice(0, 3).map(t => (
-                    <span key={t} className="topic-tag">{MARKER_TOPIC_LABELS[t] || t}</span>
-                  ))}
-                </div>
-                {curatedSet.has(m.slug) && (
-                  <Link href={`/historic-markers/${m.slug}/`} className="view-more-link">
-                    Read Full Story &rarr;
-                  </Link>
-                )}
-              </div>
+              </details>
             ))}
           </div>
         </section>

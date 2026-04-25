@@ -4,10 +4,15 @@ import type { NextRouter } from 'next/router';
 import type { Corridor, HistoryTrailMapData, ItineraryPOI } from './types';
 import { ACTIVITY_TYPES } from './types';
 
-export type PlannerMode = 'scenic' | 'towns' | 'history' | 'outdoors';
+export type PlannerMode = 'scenic' | 'history' | 'build';
 
-const PLANNER_MODES: PlannerMode[] = ['scenic', 'towns', 'history', 'outdoors'];
+const PLANNER_MODES: PlannerMode[] = ['scenic', 'history', 'build'];
 const DEFAULT_ACTIVITY_TYPES = [...ACTIVITY_TYPES];
+
+function normalizeMode(value: string | null): PlannerMode | null {
+  if (value === 'towns' || value === 'outdoors') return 'build';
+  return value && PLANNER_MODES.includes(value as PlannerMode) ? value as PlannerMode : null;
+}
 
 function matchesDefaultActivities(values: string[]) {
   if (values.length !== DEFAULT_ACTIVITY_TYPES.length) return false;
@@ -36,8 +41,6 @@ export function usePlannerUrlState({
   setActiveMode,
   selected,
   setSelected,
-  tripCorridorIds,
-  setTripCorridorIds,
   activeHistoryTrailId,
   setActiveHistoryTrailId,
   historyTrailStopIds,
@@ -67,8 +70,6 @@ export function usePlannerUrlState({
   setActiveMode: (mode: PlannerMode) => void;
   selected: string | null;
   setSelected: (id: string | null) => void;
-  tripCorridorIds: string[];
-  setTripCorridorIds: (ids: string[]) => void;
   activeHistoryTrailId: string | null;
   setActiveHistoryTrailId: (id: string | null) => void;
   historyTrailStopIds: string[] | null;
@@ -101,15 +102,15 @@ export function usePlannerUrlState({
     if (lastWrittenUrl.current === router.asPath) return;
 
     const query = router.query;
-    const mode = first(query.mode);
-    if (mode && PLANNER_MODES.includes(mode as PlannerMode)) setActiveMode(mode as PlannerMode);
+    const mode = normalizeMode(first(query.mode));
+    if (mode) setActiveMode(mode);
 
     const validCorridors = new Set(corridors.map((c) => c.id));
     const routes = csv(query.routes).filter((id) => validCorridors.has(id));
-    setTripCorridorIds(routes);
 
     const focus = first(query.focus);
-    setSelected(focus && validCorridors.has(focus) ? focus : null);
+    const legacyRouteFocus = routes[0] || null;
+    setSelected(focus && validCorridors.has(focus) ? focus : legacyRouteFocus);
 
     const validTrails = new Set(historyTrails.map((t) => t.id));
     const trail = first(query.trail);
@@ -163,7 +164,6 @@ export function usePlannerUrlState({
     setShowHistoricMarkers,
     setShowSupabasePois,
     setSupabasePoiCategories,
-    setTripCorridorIds,
   ]);
 
   useEffect(() => {
@@ -194,7 +194,6 @@ export function usePlannerUrlState({
 
     const params = new URLSearchParams();
     if (activeMode !== 'scenic') params.set('mode', activeMode);
-    setCsv(params, 'routes', tripCorridorIds);
     if (selected) params.set('focus', selected);
     if (activeHistoryTrailId) params.set('trail', activeHistoryTrailId);
     if (difficultyFilter) params.set('diff', difficultyFilter);
@@ -230,7 +229,6 @@ export function usePlannerUrlState({
     router.pathname,
     router.asPath,
     activeMode,
-    tripCorridorIds,
     selected,
     activeHistoryTrailId,
     historyTrailStopIds,

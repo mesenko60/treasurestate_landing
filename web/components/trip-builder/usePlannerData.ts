@@ -14,6 +14,10 @@ const MAJOR_CITIES = [
   'Big Timber', 'Deer Lodge', 'Hardin', 'Roundup', 'Conrad', 'Chinook',
 ];
 
+function citySlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 function fallbackCitiesFromTownCoords(townCoords: TownCoords): City[] {
   const majorSet = new Set(MAJOR_CITIES.map((c) => c.toLowerCase()));
 
@@ -69,7 +73,7 @@ export function usePlannerData({
         const filteredCities: City[] = (townData || [])
           .filter((t) => t.city && majorSet.has(t.city.toLowerCase()))
           .map((t) => ({
-            id: String(t.gnis_id || `${t.latitude}_${t.longitude}`),
+            id: citySlug(t.city!),
             name: t.city!,
             lat: t.latitude!,
             lon: t.longitude!,

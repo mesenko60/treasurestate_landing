@@ -25,6 +25,19 @@ export interface ItineraryPOI extends POI {
   source?: 'generated' | 'manual';
 }
 
+export interface MapHoverPoint {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+  type?: string;
+  category?: string;
+  description?: string;
+  rating?: number | null;
+  reviews?: number | null;
+  website?: string;
+}
+
 export interface RouteData {
   geometry: {
     coordinates: [number, number][];
@@ -116,6 +129,8 @@ export type Corridor = {
   color: string;
   startTown: string;
   endTown: string;
+  startLabel?: string;
+  endLabel?: string;
   throughTowns: string[];
   connections: string[];
   geometry: { type: string; coordinates: number[][] };
