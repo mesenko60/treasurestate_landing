@@ -115,6 +115,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
   const [totalDuration, setTotalDuration] = useState<number | null>(null);
   const [optimizing, setOptimizing] = useState(false);
   const [routeMessage, setRouteMessage] = useState<string | null>(null);
+  const [tripSummaryOpen, setTripSummaryOpen] = useState(false);
   const tab: string = activeMode === 'towns' ? 'plan' : activeMode === 'scenic' ? 'explore' : activeMode;
 
   useEffect(() => {
@@ -411,18 +412,6 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
             )}
           </div>
 
-          {activeHistoryTrail && (
-            <div className="history-trail-active-bar">
-              <strong>{activeHistoryTrail.name}</strong>
-              <span style={{ color: '#8892a4' }}>
-                {activeHistoryStops.length} active stop{activeHistoryStops.length === 1 ? '' : 's'}
-                {` · ${historyTrailRouteLabel}`}
-              </span>
-              <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
-              <button type="button" className="trail-clear-btn" onClick={onClearHistoryTrail}>Clear trail</button>
-            </div>
-          )}
-
           <div className="corridor-list">
             {historyTrails.length > 0 && (
               <details className="history-trails-details">
@@ -438,12 +427,12 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                   </p>
                   {historyTrails.map((t) => (
                     <div key={t.id} className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}>
-                      <button type="button" className="history-trails-map-btn" onClick={() => onSelectHistoryTrail(t.id)}>
+                      <button type="button" className="history-trails-map-btn" onClick={() => { onSetActiveMode('history'); onSelectHistoryTrail(t.id); }}>
                         <span className="history-trails-link-name">{t.name}</span>
                         <span className="history-trails-meta">{t.stops.length} stops</span>
                       </button>
                       <Link href={`/guides/history-trails/${t.id}/`} className="history-trails-guide" prefetch={false} onClick={(e) => e.stopPropagation()}>
-                        Guide
+                        Itinerary
                       </Link>
                     </div>
                   ))}
@@ -485,11 +474,58 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
         </>
       )}
 
-      {tab === 'history' && (
+      {tab === 'history' && activeHistoryTrail && (
+        <div className="detail-panel">
+          <div className="detail-header" style={{ position: 'relative', paddingRight: '46px' }}>
+            <button className="detail-back" onClick={onClearHistoryTrail}>← All Itineraries</button>
+            <h2 className="detail-title">{activeHistoryTrail.name}</h2>
+            <div className="detail-subtitle">
+              Customize on map · {activeHistoryStops.length} active stop{activeHistoryStops.length === 1 ? '' : 's'} · {historyTrailRouteLabel}
+            </div>
+            <button
+              type="button"
+              className="trail-clear-btn"
+              onClick={onClearHistoryTrail}
+              aria-label="Close active itinerary"
+            >
+              &times;
+            </button>
+          </div>
+          <div style={{ padding: '12px 18px', borderBottom: '1px solid rgba(255,255,255,0.06)', fontSize: '0.82rem', color: '#a0a8b8', lineHeight: 1.45 }}>
+            Select markers on the map to add or remove stops. Reorder and share this itinerary from the Trip Summary drawer.
+          </div>
+          <div style={{ padding: '12px 18px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`} className="trail-guide-btn">
+              Open full itinerary
+            </Link>
+            {isHistoryTrailCustomized && (
+              <button type="button" className="action-btn secondary" onClick={resetHistoryStops}>
+                Reset itinerary
+              </button>
+            )}
+          </div>
+          {removedHistoryStops.length > 0 && (
+            <div style={{ padding: '0 18px 12px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+              <div style={{ fontSize: '0.72rem', color: '#8892a4', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                Removed stops
+              </div>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {removedHistoryStops.map((stop) => (
+                  <button key={stop.id} type="button" className="action-btn secondary" onClick={() => restoreHistoryStop(stop.id)}>
+                    Restore {stop.title}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {tab === 'history' && !activeHistoryTrail && (
         <div className="corridor-list">
           <div className="sidebar-header">
             <h1>History Trails</h1>
-            <p>Plot historic marker routes, then open the full guide for context.</p>
+            <p>Plot historic marker routes, then open the full itinerary for context.</p>
           </div>
           <div style={{ padding: '10px 18px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
             <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer' }}>
@@ -502,72 +538,6 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
               Show historic markers ({historicMarkers.length})
             </label>
           </div>
-          {activeHistoryTrail && (
-            <div className="history-trail-active-bar">
-              <strong>{activeHistoryTrail.name}</strong>
-              <span style={{ color: '#8892a4' }}>
-                {activeHistoryStops.length} active stop{activeHistoryStops.length === 1 ? '' : 's'}
-                {` · ${historyTrailRouteLabel}`}
-              </span>
-              <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
-              <button type="button" className="trail-clear-btn" onClick={onClearHistoryTrail}>Clear trail</button>
-            </div>
-          )}
-          {activeHistoryTrail && (
-            <div style={{ padding: '0 18px 12px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <div style={{ fontSize: '0.78rem', color: '#a0a8b8', lineHeight: 1.45, marginBottom: '8px' }}>
-                Remove or reorder stops to create a custom drive. The planner will use Mapbox road routing when available.
-              </div>
-              <DragDropContext onDragEnd={onHistoryDragEnd}>
-                <Droppable droppableId="history-trail-editor">
-                  {(provided) => (
-                    <ul
-                      ref={provided.innerRef}
-                      {...provided.droppableProps}
-                      style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}
-                    >
-                      {activeHistoryStops.map((stop, i) => (
-                        <Draggable key={stop.id} draggableId={`history-${stop.id}`} index={i}>
-                          {(prov, snap) => (
-                            <li
-                              ref={prov.innerRef}
-                              {...prov.draggableProps}
-                              {...prov.dragHandleProps}
-                              style={{
-                                ...prov.draggableProps.style,
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '8px',
-                                padding: '6px 8px',
-                                borderRadius: '7px',
-                                border: '1px solid rgba(201,162,39,0.28)',
-                                background: snap.isDragging ? 'rgba(201,162,39,0.2)' : 'rgba(201,162,39,0.08)',
-                              }}
-                            >
-                              <span className="trip-num" style={{ background: '#c9a227', color: '#1a1e2e' }}>{i + 1}</span>
-                              <span style={{ flex: 1, minWidth: 0, color: '#e8d9b0', fontSize: '0.78rem' }}>{stop.title}</span>
-                              <button type="button" className="trip-remove" onClick={() => removeHistoryStop(stop.id)}>Remove</button>
-                            </li>
-                          )}
-                        </Draggable>
-                      ))}
-                      {provided.placeholder}
-                    </ul>
-                  )}
-                </Droppable>
-              </DragDropContext>
-              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '8px' }}>
-                {isHistoryTrailCustomized && (
-                  <button type="button" className="action-btn secondary" onClick={resetHistoryStops}>Clear customizations</button>
-                )}
-                {removedHistoryStops.map((stop) => (
-                  <button key={stop.id} type="button" className="action-btn secondary" onClick={() => restoreHistoryStop(stop.id)}>
-                    Restore {stop.title}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
           <div className="history-trails-body" style={{ borderTop: 0, paddingTop: '10px' }}>
             {historyTrails.map((t) => (
               <div key={t.id} className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}>
@@ -576,7 +546,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                   <span className="history-trails-meta">{t.stops.length} stops</span>
                 </button>
                 <Link href={`/guides/history-trails/${t.id}/`} className="history-trails-guide" prefetch={false} onClick={(e) => e.stopPropagation()}>
-                  Guide
+                  Itinerary
                 </Link>
               </div>
             ))}
@@ -1030,18 +1000,30 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
         flexShrink: 0,
         borderTop: '1px solid rgba(255,255,255,0.1)',
         background: 'rgba(10,14,24,0.92)',
-        maxHeight: '44%',
-        overflowY: 'auto',
+        maxHeight: tripSummaryOpen ? '44%' : '88px',
+        overflowY: tripSummaryOpen ? 'auto' : 'hidden',
         padding: '12px 14px',
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10px', alignItems: 'flex-start', marginBottom: '10px' }}>
-          <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10px', alignItems: 'flex-start', marginBottom: tripSummaryOpen ? '10px' : 0 }}>
+          <button
+            type="button"
+            onClick={() => setTripSummaryOpen((open) => !open)}
+            aria-expanded={tripSummaryOpen}
+            style={{ flex: 1, minWidth: 0, textAlign: 'left', background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+          >
             <h2 style={{ fontSize: '0.86rem', color: '#fff', margin: 0, fontWeight: 800 }}>Trip Summary</h2>
             <div style={{ fontSize: '0.72rem', color: '#6b7890', marginTop: '3px' }}>
               {tripCorridorIds.length} scenic route{tripCorridorIds.length === 1 ? '' : 's'} · {itinerary.length} itinerary stop{itinerary.length === 1 ? '' : 's'}
               {activeHistoryTrail ? ` · ${historyRouteStops.length} history stop${historyRouteStops.length === 1 ? '' : 's'}` : ''}
             </div>
-          </div>
+          </button>
+          <button
+            type="button"
+            className="action-btn secondary"
+            onClick={() => setTripSummaryOpen((open) => !open)}
+          >
+            {tripSummaryOpen ? 'Hide' : 'Details'}
+          </button>
           <button
             type="button"
             className="action-btn primary"
@@ -1051,7 +1033,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           </button>
         </div>
 
-        {(totalDistance || totalDuration || tripStats.totalMiles > 0) && (
+        {tripSummaryOpen && (totalDistance || totalDuration || tripStats.totalMiles > 0) && (
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '0.78rem', color: '#c0c8d8', marginBottom: '10px' }}>
             {tripStats.totalMiles > 0 && <span>{tripStats.totalMiles} scenic mi</span>}
             {totalDistance && <span>{formatDistance(totalDistance)} routed</span>}
@@ -1059,11 +1041,11 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           </div>
         )}
 
-        {routeMessage && (
+        {tripSummaryOpen && routeMessage && (
           <div style={{ fontSize: '0.74rem', color: '#fbbf24', lineHeight: 1.45, marginBottom: '10px' }}>{routeMessage}</div>
         )}
 
-        {activeHistoryTrail && (
+        {tripSummaryOpen && activeHistoryTrail && (
           <div style={{ marginBottom: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', alignItems: 'center', marginBottom: '6px' }}>
               <div style={{ fontSize: '0.74rem', color: '#e8d9b0', fontWeight: 800 }}>
@@ -1124,7 +1106,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           </div>
         )}
 
-        {tripCorridorIds.length > 0 && (
+        {tripSummaryOpen && tripCorridorIds.length > 0 && (
           <div style={{ marginBottom: '10px' }}>
             {tripCorridorIds.map((id, i) => {
               const c = corridorMap[id];
@@ -1140,7 +1122,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           </div>
         )}
 
-        {itinerary.length === 0 ? (
+        {tripSummaryOpen && (itinerary.length === 0 ? (
           <div style={{ fontSize: '0.78rem', color: '#6b7890', lineHeight: 1.45 }}>
             {activeHistoryTrail
               ? 'History stop changes are saved in the share URL. Pick Town to Town mode to add separate destinations.'
@@ -1189,6 +1171,13 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                                 {isEnabled ? 'On' : 'Off'}
                               </button>
                             )}
+                            <button
+                              className="trip-remove"
+                              onClick={() => setItinerary(itinerary.filter((p) => p.id !== item.id))}
+                              aria-label={`Remove ${item.name}`}
+                            >
+                              x
+                            </button>
                           </li>
                         )}
                       </Draggable>
@@ -1199,7 +1188,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
               )}
             </Droppable>
           </DragDropContext>
-        )}
+        ))}
       </div>
     </aside>
   );

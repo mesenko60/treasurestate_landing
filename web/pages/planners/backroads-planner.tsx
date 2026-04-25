@@ -5,13 +5,14 @@ import dynamic from 'next/dynamic';
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
+import AppInstallCTA from '../../components/AppInstallCTA';
 import { trackMapInteraction } from '../../lib/gtag';
 import {
   orderStopsNearestNeighborFromEast,
 } from '../../lib/historyTrailMapOrder';
 import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
-  HistoryTrailStopItem, POI,
+  HistoryTrailStopItem, ItineraryPOI, POI,
 } from '../../components/trip-builder/types';
 import { POI_LAYER_CATEGORIES } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
@@ -61,6 +62,7 @@ export default function BackroadsPlanner({
   const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
   const [historyTrailStopIds, setHistoryTrailStopIds] = useState<string[] | null>(null);
   const [activeMode, setActiveMode] = useState<PlannerMode>('scenic');
+  const [routeAlertsOpen, setRouteAlertsOpen] = useState(false);
 
   // --- Trip builder state ---
   const [showSupabasePois, setShowSupabasePois] = useState(false);
@@ -111,9 +113,9 @@ export default function BackroadsPlanner({
     return {
       ...canonicalActiveHistoryTrail,
       stops: activeHistoryStops,
-      lineSegments: historyTrailStopIds ? [] : canonicalActiveHistoryTrail.lineSegments,
+      lineSegments: historyTrailStopIds || itinerary.length > 0 ? [] : canonicalActiveHistoryTrail.lineSegments,
     };
-  }, [canonicalActiveHistoryTrail, activeHistoryStops, historyTrailStopIds]);
+  }, [canonicalActiveHistoryTrail, activeHistoryStops, historyTrailStopIds, itinerary.length]);
 
   const historyRouteStops = useMemo<HistoryTrailStopItem[]>(() => activeHistoryStops.map((stop) => ({
     id: stop.id,
@@ -130,6 +132,7 @@ export default function BackroadsPlanner({
   })), [activeHistoryStops]);
 
   const isHistoryTrailCustomized = Boolean(activeHistoryTrailId && historyTrailStopIds);
+  const activeHistoryStopIds = useMemo(() => activeHistoryStops.map((stop) => stop.id), [activeHistoryStops]);
 
   const corridorMap = useMemo(() => {
     const m: Record<string, Corridor> = {};
@@ -154,6 +157,83 @@ export default function BackroadsPlanner({
     if (!activeCorridor) return [];
     return activeCorridor.pois.filter((p) => !poiFilter || p.category === poiFilter);
   }, [activeCorridor, poiFilter]);
+
+  const availablePopupStops = useMemo<ItineraryPOI[]>(() => {
+    const markerStops = historicMarkers.map((marker) => ({
+      id: `marker:${marker.id}`,
+      name: marker.title,
+      description: marker.town || undefined,
+      lat: marker.lat,
+      lon: marker.lng,
+      type: 'Historic marker',
+      category: 'history',
+      itemType: 'activity' as const,
+      enabled: true,
+      source: 'manual' as const,
+    }));
+    const supabaseStops = allPOIs.map((poi) => ({
+      ...poi,
+      id: `poi:${poi.id}`,
+      itemType: 'activity' as const,
+      enabled: true,
+      source: 'manual' as const,
+    }));
+    const corridorStops = corridors.flatMap((corridor) => corridor.pois.map((poi) => ({
+      id: `corridor-poi:${poi.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${poi.lat.toFixed(4)}-${poi.lng.toFixed(4)}`,
+      name: poi.name,
+      description: `${corridor.name}${poi.distFromRoute ? ` · ${poi.distFromRoute.toFixed(1)} mi from route` : ''}`,
+      lat: poi.lat,
+      lon: poi.lng,
+      type: poi.type,
+      category: poi.category,
+      rating: poi.rating ?? undefined,
+      reviews: poi.reviews ?? undefined,
+      itemType: 'activity' as const,
+      enabled: true,
+      source: 'manual' as const,
+    })));
+    const byId = new Map<string, ItineraryPOI>();
+    [...markerStops, ...supabaseStops, ...corridorStops].forEach((stop) => {
+      if (!byId.has(stop.id)) byId.set(stop.id, stop);
+    });
+    return Array.from(byId.values());
+  }, [allPOIs, corridors, historicMarkers]);
+
+  const tripStopIds = useMemo(() => itinerary.map((item) => item.id), [itinerary]);
+  const historyRouteWithManualStops = useMemo(
+    () => [...historyRouteStops, ...itinerary.filter((item) => item.enabled !== false)],
+    [historyRouteStops, itinerary],
+  );
+  const shouldUseHistoryRouteStops = Boolean(activeHistoryTrail && (isHistoryTrailCustomized || itinerary.length > 0));
+
+  const addStopToTrip = useCallback((stop: ItineraryPOI) => {
+    setItinerary((prev) => {
+      if (prev.some((item) => item.id === stop.id)) return prev;
+      return [...prev, { ...stop, enabled: true, source: 'manual' }];
+    });
+    trackMapInteraction(`trip_stop_add:${stop.id}`);
+  }, [setItinerary]);
+
+  const removeStopFromTrip = useCallback((id: string) => {
+    setItinerary((prev) => prev.filter((item) => item.id !== id));
+    trackMapInteraction(`trip_stop_remove:${id}`);
+  }, [setItinerary]);
+
+  const addHistoryTrailStop = useCallback((id: string) => {
+    if (!canonicalActiveHistoryTrail) return;
+    setHistoryTrailStopIds((prev) => {
+      const current = prev || canonicalActiveHistoryTrail.stops.map((stop) => stop.id);
+      return current.includes(id) ? current : [...current, id];
+    });
+  }, [canonicalActiveHistoryTrail]);
+
+  const removeHistoryTrailStop = useCallback((id: string) => {
+    if (!canonicalActiveHistoryTrail) return;
+    setHistoryTrailStopIds((prev) => {
+      const current = prev || canonicalActiveHistoryTrail.stops.map((stop) => stop.id);
+      return current.filter((stopId) => stopId !== id);
+    });
+  }, [canonicalActiveHistoryTrail]);
 
   const handleSupabasePoiClick = useCallback((p: POI) => setSelectedSupabasePoi(p), []);
   const closeSupabasePoiPopup = useCallback(() => setSelectedSupabasePoi(null), []);
@@ -188,6 +268,7 @@ export default function BackroadsPlanner({
     setSelectedActivityTypes,
     itinerary,
     setItinerary,
+    availableTripStops: availablePopupStops,
   });
 
   // --- Fit map to history trail ---
@@ -357,18 +438,25 @@ export default function BackroadsPlanner({
         .history-trails-body { padding: 0 8px 10px 14px; border-top: 1px solid rgba(255,255,255,0.06); }
         .history-trails-intro { font-size: 0.72rem; color: #8892a4; line-height: 1.45; margin: 10px 0 8px; padding-right: 6px; }
         .history-trail-active-bar {
-          margin: 0 18px 10px; padding: 10px 12px; border-radius: 8px;
+          position: relative; margin: 0 18px 8px; padding: 10px 40px 10px 12px; border-radius: 8px;
           background: rgba(201, 162, 39, 0.12); border: 1px solid rgba(201, 162, 39, 0.35);
-          font-size: 0.78rem; color: #e8d9b0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+          font-size: 0.78rem; color: #e8d9b0;
         }
-        .history-trail-active-bar strong { color: #fff; font-weight: 600; }
-        .history-trail-active-bar a { color: #93c5fd; text-decoration: none; font-weight: 600; font-size: 0.72rem; }
-        .history-trail-active-bar a:hover { text-decoration: underline; }
-        .history-trail-active-bar .trail-clear-btn {
-          margin-left: auto; font-size: 0.72rem; padding: 4px 10px; border-radius: 6px;
-          border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.06); color: #c0c8d8; cursor: pointer;
+        .history-trail-active-bar strong { color: #fff; font-weight: 700; display: block; line-height: 1.25; }
+        .history-trail-active-meta { color: #9aa4b7; margin-top: 4px; line-height: 1.35; }
+        .history-trail-active-actions { display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+        a.trail-guide-btn {
+          display: inline-flex; align-items: center; justify-content: center; border-radius: 7px; padding: 5px 10px;
+          color: #dbeafe; text-decoration: none; font-weight: 800; font-size: 0.72rem;
+          background: rgba(59,130,246,0.18); border: 1px solid rgba(96,165,250,0.42);
         }
-        .history-trail-active-bar .trail-clear-btn:hover { background: rgba(255,255,255,0.1); }
+        a.trail-guide-btn:hover { background: rgba(59,130,246,0.28); border-color: rgba(147,197,253,0.62); }
+        .trail-clear-btn {
+          position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; padding: 0; border-radius: 999px;
+          border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: #c0c8d8;
+          cursor: pointer; font-size: 0.92rem; line-height: 1;
+        }
+        .trail-clear-btn:hover { background: rgba(255,255,255,0.1); }
         .history-trails-row {
           display: flex; align-items: stretch; margin: 0 0 4px; border-radius: 8px;
           border: 1px solid transparent; overflow: hidden;
@@ -442,11 +530,44 @@ export default function BackroadsPlanner({
           width: 36px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px;
           margin: 8px auto 4px; cursor: pointer; display: none;
         }
+        .route-alerts-control {
+          position: absolute; top: 16px; left: 54px; z-index: 6;
+          display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+        }
+        .route-alerts-button {
+          display: inline-flex; align-items: center; gap: 7px; border: 1px solid rgba(255,255,255,0.18);
+          border-radius: 999px; padding: 8px 12px; background: rgba(26,30,46,0.9); color: #fff;
+          font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.28);
+          backdrop-filter: blur(10px);
+        }
+        .route-alerts-button:hover { background: rgba(37,44,66,0.95); border-color: rgba(255,255,255,0.28); }
+        .route-alerts-popover {
+          width: min(320px, calc(100vw - 36px)); border-radius: 14px; background: rgba(17,24,39,0.96);
+          color: #e5e7eb; border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 14px 32px rgba(0,0,0,0.36);
+          padding: 14px; backdrop-filter: blur(14px);
+        }
+        .route-alerts-popover-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+        .route-alerts-popover h2 { margin: 0; font-size: 0.98rem; color: #fff; letter-spacing: -0.01em; }
+        .route-alerts-popover p { margin: 7px 0 0; color: #aab4c5; font-size: 0.8rem; line-height: 1.45; }
+        .route-alerts-close { border: none; background: rgba(255,255,255,0.08); color: #cbd5e1; cursor: pointer; border-radius: 999px; width: 26px; height: 26px; }
+        .route-alerts-popover .app-install-inline {
+          margin: 12px 0 0; padding: 0; background: transparent; border-left: 0; color: #e5e7eb; gap: 0.55rem;
+        }
+        .route-alerts-popover .app-install-inline-icon { display: none; }
+        .route-alerts-popover .app-install-inline-body { display: none; }
+        .route-alerts-popover .app-install-inline-btn {
+          margin: 0; background: #3b82f6; border-radius: 999px; padding: 0.5rem 0.9rem; font-size: 0.78rem;
+        }
+        .route-alerts-popover .app-install-inline-ios {
+          color: #d6dce8; margin-top: 0; line-height: 1.4;
+        }
+        .route-alerts-popover .app-install-inline-ios button { background: #3b82f6; }
         @media (max-width: 768px) {
           .planner-sidebar { width: 100%; position: absolute; bottom: 0; left: 0; right: 0; top: auto; height: 55vh; border-radius: 16px 16px 0 0; margin-left: 0 !important; }
           .planner-sidebar.collapsed { transform: translateY(calc(100% - 48px)); }
           .sidebar-toggle { display: none; }
           .mobile-handle { display: block; }
+          .route-alerts-control { top: 12px; left: 12px; }
         }
       `}} />
 
@@ -525,9 +646,11 @@ export default function BackroadsPlanner({
             filteredCorridorIds={filteredCorridorIds}
             dimCorridors={!!activeHistoryTrailId}
             activeHistoryTrail={activeHistoryTrail}
+            canonicalActiveHistoryTrail={canonicalActiveHistoryTrail}
+            activeHistoryStopIds={activeHistoryStopIds}
             itinerary={enabledItinerary}
-            historyRouteStops={historyRouteStops}
-            useHistoryRouteStops={isHistoryTrailCustomized}
+            historyRouteStops={historyRouteWithManualStops}
+            useHistoryRouteStops={shouldUseHistoryRouteStops}
             historicMarkers={historicMarkers}
             showHistoricMarkers={showHistoricMarkers}
             filteredPois={filteredPois}
@@ -542,7 +665,51 @@ export default function BackroadsPlanner({
             selectedSupabasePoi={selectedSupabasePoi}
             onSupabasePoiClick={handleSupabasePoiClick}
             onCloseSupabasePoiPopup={closeSupabasePoiPopup}
+            tripStopIds={tripStopIds}
+            onAddStopToTrip={addStopToTrip}
+            onRemoveStopFromTrip={removeStopFromTrip}
+            onAddHistoryTrailStop={addHistoryTrailStop}
+            onRemoveHistoryTrailStop={removeHistoryTrailStop}
           />
+
+          <div className="route-alerts-control">
+            <button
+              type="button"
+              className="route-alerts-button"
+              onClick={() => setRouteAlertsOpen((open) => !open)}
+              aria-expanded={routeAlertsOpen}
+            >
+              Point of Interest Alert App
+            </button>
+            {routeAlertsOpen && (
+              <div className="route-alerts-popover" role="dialog" aria-label="Point of Interest Alert App information">
+                <div className="route-alerts-popover-header">
+                  <div>
+                    <h2>Point of Interest Alert App</h2>
+                    <p>
+                      Install Treasure State to get notified as historic markers, hot springs,
+                      trails, and other points of interest come up along your drive.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="route-alerts-close"
+                    onClick={() => setRouteAlertsOpen(false)}
+                    aria-label="Close Point of Interest Alert App"
+                  >
+                    ×
+                  </button>
+                </div>
+                <AppInstallCTA
+                  variant="inline"
+                  forceShow
+                  headline="Point of Interest Alert App"
+                  body="Install the app for real-time point-of-interest notifications along your route."
+                  buttonLabel="Get the app"
+                />
+              </div>
+            )}
+          </div>
 
           <button
             onClick={resetView}

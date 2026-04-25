@@ -58,6 +58,8 @@ type Props = {
   headline?: string;
   body?: string;
   townName?: string;
+  forceShow?: boolean;
+  buttonLabel?: string;
 };
 
 export default function AppInstallCTA({
@@ -65,6 +67,8 @@ export default function AppInstallCTA({
   headline,
   body,
   townName,
+  forceShow = false,
+  buttonLabel,
 }: Props) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [iosMode, setIosMode] = useState(false);
@@ -99,7 +103,10 @@ export default function AppInstallCTA({
   }, []);
 
   const handleInstall = useCallback(async () => {
-    if (!deferredPrompt) return;
+    if (!deferredPrompt) {
+      setShowIOSSteps(true);
+      return;
+    }
     deferredPrompt.prompt();
     const choice = await deferredPrompt.userChoice;
     if (choice.outcome === 'accepted') {
@@ -118,7 +125,7 @@ export default function AppInstallCTA({
     persistSessionDismiss();
   }, []);
 
-  const canShow = mounted && !dismissed && (deferredPrompt || iosMode);
+  const canShow = mounted && (forceShow || (!dismissed && (deferredPrompt || iosMode)));
   if (!canShow) return null;
 
   const defaultHeadline = townName
@@ -151,7 +158,7 @@ export default function AppInstallCTA({
             <p>
               Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong>
             </p>
-            <button type="button" onClick={() => { setShowIOSSteps(false); handleDismiss(); }}>Got it</button>
+            <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
           </div>
         )}
         <style jsx>{`
@@ -203,17 +210,17 @@ export default function AppInstallCTA({
         {iosMode ? (
           showIOSSteps ? (
             <div className="app-install-inline-ios">
-              <span>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong></span>
-              <button type="button" onClick={() => { setShowIOSSteps(false); handleDismiss(); }}>Got it</button>
+              <span>{iosMode ? <>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong></> : <>Use your browser menu to install Treasure State as an app.</>}</span>
+              <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
             </div>
           ) : (
             <button type="button" className="app-install-inline-btn" onClick={() => setShowIOSSteps(true)}>
-              How to install
+              {buttonLabel || 'How to install'}
             </button>
           )
         ) : (
           <button type="button" className="app-install-inline-btn" onClick={handleInstall}>
-            Add to Home Screen
+            {buttonLabel || 'Add to Home Screen'}
           </button>
         )}
         <style jsx>{`
@@ -290,16 +297,16 @@ export default function AppInstallCTA({
         showIOSSteps ? (
           <div className="app-install-card-ios">
             <p>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong></p>
-            <button type="button" onClick={() => { setShowIOSSteps(false); handleDismiss(); }}>Got it</button>
+            <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
           </div>
         ) : (
           <button type="button" className="app-install-card-btn" onClick={() => setShowIOSSteps(true)}>
-            How to install
+            {buttonLabel || 'How to install'}
           </button>
         )
       ) : (
         <button type="button" className="app-install-card-btn" onClick={handleInstall}>
-          Add to Home Screen
+          {buttonLabel || 'Add to Home Screen'}
         </button>
       )}
       <style jsx>{`

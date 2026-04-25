@@ -22,6 +22,7 @@ export interface POI {
 export interface ItineraryPOI extends POI {
   itemType: 'city' | 'activity';
   enabled?: boolean;
+  source?: 'generated' | 'manual';
 }
 
 export interface RouteData {

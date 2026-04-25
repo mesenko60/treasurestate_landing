@@ -58,6 +58,7 @@ export function usePlannerUrlState({
   setSelectedActivityTypes,
   itinerary,
   setItinerary,
+  availableTripStops,
 }: {
   router: NextRouter;
   corridors: Corridor[];
@@ -88,6 +89,7 @@ export function usePlannerUrlState({
   setSelectedActivityTypes: (types: string[]) => void;
   itinerary: ItineraryPOI[];
   setItinerary: Dispatch<SetStateAction<ItineraryPOI[]>>;
+  availableTripStops: ItineraryPOI[];
 }) {
   const lastWrittenUrl = useRef<string | null>(null);
   const enabledStopIdsFromUrl = useRef<Set<string> | null>(null);
@@ -128,6 +130,8 @@ export function usePlannerUrlState({
     const activities = csv(query.activities);
     if (activities.length > 0) setSelectedActivityTypes(activities);
 
+    const tripStopsParam = first(query.tripStops);
+    const popupStops = csv(query.tripStops);
     const stopsParam = first(query.stops);
     const stops = stopsParam === 'none' ? [] : csv(query.stops);
     if (validTrailId) {
@@ -135,7 +139,7 @@ export function usePlannerUrlState({
       const validMarkerIds = new Set(selectedTrail?.stops.map((stop) => stop.id) || []);
       const customTrailStops = stops.filter((id) => validMarkerIds.has(id));
       setHistoryTrailStopIds(stopsParam ? customTrailStops : null);
-      enabledStopIdsFromUrl.current = null;
+      enabledStopIdsFromUrl.current = tripStopsParam ? new Set(popupStops) : null;
     } else {
       setHistoryTrailStopIds(null);
       enabledStopIdsFromUrl.current = stops.length > 0 ? new Set(stops) : null;
@@ -164,13 +168,26 @@ export function usePlannerUrlState({
 
   useEffect(() => {
     const enabled = enabledStopIdsFromUrl.current;
-    if (!enabled || itinerary.length === 0) return;
+    if (!enabled) return;
 
-    setItinerary((prev) => prev.map((item) => (
-      item.itemType === 'city' ? item : { ...item, enabled: enabled.has(item.id) }
-    )));
+    const availableById = new Map(availableTripStops.map((item) => [item.id, item]));
+    const missingIds = Array.from(enabled).filter((id) => !itinerary.some((item) => item.id === id));
+    if (missingIds.some((id) => !availableById.has(id))) return;
+
+    setItinerary((prev) => {
+      const existingIds = new Set(prev.map((item) => item.id));
+      const restored = missingIds
+        .map((id) => availableById.get(id))
+        .filter((item): item is ItineraryPOI => Boolean(item))
+        .filter((item) => !existingIds.has(item.id))
+        .map((item) => ({ ...item, enabled: true, source: 'manual' as const }));
+
+      return [...prev.map((item) => (
+        item.itemType === 'city' ? item : { ...item, enabled: enabled.has(item.id) }
+      )), ...restored];
+    });
     enabledStopIdsFromUrl.current = null;
-  }, [itinerary.length, setItinerary]);
+  }, [availableTripStops, itinerary, setItinerary]);
 
   useEffect(() => {
     if (!router.isReady) return;
@@ -195,6 +212,7 @@ export function usePlannerUrlState({
           params.set('stops', 'none');
         }
       }
+      setCsv(params, 'tripStops', itinerary.filter((item) => item.itemType === 'city' || item.enabled !== false).map((item) => item.id));
     } else {
       setCsv(params, 'stops', itinerary.filter((item) => item.itemType === 'city' || item.enabled !== false).map((item) => item.id));
     }

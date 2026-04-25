@@ -16,7 +16,7 @@ export function usePlannerItinerary({
   const buildItinerary = useCallback(() => {
     const cityIds = selectedCities.filter(Boolean);
     if (!cityIds.length || cities.length === 0) {
-      setItinerary([]);
+      setItinerary((prev) => prev.filter((item) => item.source === 'manual'));
       return;
     }
 
@@ -25,7 +25,7 @@ export function usePlannerItinerary({
       const city = cities.find((c) => c.id === cityIds[i]);
       if (!city) continue;
 
-      result.push({ id: city.id, name: city.name, lat: city.lat, lon: city.lon, itemType: 'city', enabled: true });
+      result.push({ id: city.id, name: city.name, lat: city.lat, lon: city.lon, itemType: 'city', enabled: true, source: 'generated' });
 
       if (i < cityIds.length - 1) {
         const next = cities.find((c) => c.id === cityIds[i + 1]);
@@ -55,13 +55,17 @@ export function usePlannerItinerary({
           .filter((x) => x.near)
           .sort((a, b) => a.t - b.t)
           .slice(0, 5)
-          .map(({ poi }) => ({ ...poi, itemType: 'activity' as const, enabled: true }));
+          .map(({ poi }) => ({ ...poi, itemType: 'activity' as const, enabled: true, source: 'generated' as const }));
 
         result.push(...near);
       }
     }
 
-    setItinerary(result);
+    setItinerary((prev) => {
+      const generatedIds = new Set(result.map((item) => item.id));
+      const manual = prev.filter((item) => item.source === 'manual' && !generatedIds.has(item.id));
+      return [...result, ...manual];
+    });
   }, [selectedCities, cities, allPOIs, selectedActivityTypes]);
 
   useEffect(() => { buildItinerary(); }, [buildItinerary]);
