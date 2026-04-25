@@ -8,12 +8,10 @@ import Header from '../../components/Header';
 import { trackMapInteraction } from '../../lib/gtag';
 import {
   orderStopsNearestNeighborFromEast,
-  buildLineSegmentsLngLat,
-  HISTORY_TRAIL_MAX_EDGE_MILES,
 } from '../../lib/historyTrailMapOrder';
 import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
-  POI,
+  HistoryTrailStopItem, POI,
 } from '../../components/trip-builder/types';
 import { POI_LAYER_CATEGORIES } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
@@ -61,6 +59,7 @@ export default function BackroadsPlanner({
   const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
   const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
   const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
+  const [historyTrailStopIds, setHistoryTrailStopIds] = useState<string[] | null>(null);
   const [activeMode, setActiveMode] = useState<PlannerMode>('scenic');
 
   // --- Trip builder state ---
@@ -98,7 +97,39 @@ export default function BackroadsPlanner({
     return m;
   }, [historyTrails]);
 
-  const activeHistoryTrail = activeHistoryTrailId ? historyTrailById[activeHistoryTrailId] : null;
+  const canonicalActiveHistoryTrail = activeHistoryTrailId ? historyTrailById[activeHistoryTrailId] : null;
+
+  const activeHistoryStops = useMemo(() => {
+    if (!canonicalActiveHistoryTrail) return [];
+    if (!historyTrailStopIds) return canonicalActiveHistoryTrail.stops;
+    const byId = new Map(canonicalActiveHistoryTrail.stops.map((stop) => [stop.id, stop]));
+    return historyTrailStopIds.map((id) => byId.get(id)).filter((stop): stop is HistoricMarker => Boolean(stop));
+  }, [canonicalActiveHistoryTrail, historyTrailStopIds]);
+
+  const activeHistoryTrail = useMemo<HistoryTrailMapData | null>(() => {
+    if (!canonicalActiveHistoryTrail) return null;
+    return {
+      ...canonicalActiveHistoryTrail,
+      stops: activeHistoryStops,
+      lineSegments: historyTrailStopIds ? [] : canonicalActiveHistoryTrail.lineSegments,
+    };
+  }, [canonicalActiveHistoryTrail, activeHistoryStops, historyTrailStopIds]);
+
+  const historyRouteStops = useMemo<HistoryTrailStopItem[]>(() => activeHistoryStops.map((stop) => ({
+    id: stop.id,
+    name: stop.title,
+    description: stop.town || undefined,
+    lat: stop.lat,
+    lon: stop.lng,
+    type: 'Historic marker',
+    category: 'history',
+    itemType: 'activity',
+    enabled: true,
+    markerSlug: stop.slug,
+    markerTown: stop.town,
+  })), [activeHistoryStops]);
+
+  const isHistoryTrailCustomized = Boolean(activeHistoryTrailId && historyTrailStopIds);
 
   const corridorMap = useMemo(() => {
     const m: Record<string, Corridor> = {};
@@ -139,6 +170,8 @@ export default function BackroadsPlanner({
     setTripCorridorIds,
     activeHistoryTrailId,
     setActiveHistoryTrailId,
+    historyTrailStopIds,
+    setHistoryTrailStopIds,
     difficultyFilter,
     setDifficultyFilter,
     poiFilter,
@@ -159,8 +192,8 @@ export default function BackroadsPlanner({
 
   // --- Fit map to history trail ---
   useEffect(() => {
-    if (!activeHistoryTrail || activeHistoryTrail.stops.length === 0) return;
-    const pts = activeHistoryTrail.stops;
+    if (!activeHistoryTrail || activeHistoryStops.length === 0) return;
+    const pts = activeHistoryStops;
     let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
     pts.forEach((p) => {
       if (p.lng < minLng) minLng = p.lng;
@@ -180,7 +213,7 @@ export default function BackroadsPlanner({
     const t = setTimeout(run, 120);
     const t2 = setTimeout(run, 450);
     return () => { clearTimeout(t); clearTimeout(t2); };
-  }, [activeHistoryTrail, sidebarOpen]);
+  }, [activeHistoryTrail, activeHistoryStops, sidebarOpen]);
 
   // --- Corridor actions ---
   const flyToCorridor = useCallback((c: Corridor) => {
@@ -201,6 +234,7 @@ export default function BackroadsPlanner({
   const selectCorridor = useCallback((id: string) => {
     trackMapInteraction(`corridor_select:${id}`);
     setActiveHistoryTrailId(null);
+    setHistoryTrailStopIds(null);
     setSelected(id);
     const c = corridorMap[id];
     if (c) flyToCorridor(c);
@@ -211,7 +245,10 @@ export default function BackroadsPlanner({
     setSelected(null);
     setSelectedHistoricMarker(null);
     setHoveredPoi(null);
-    setActiveHistoryTrailId(id);
+    setActiveHistoryTrailId((current) => {
+      if (current !== id) setHistoryTrailStopIds(null);
+      return id;
+    });
   }, []);
 
   const addToTrip = useCallback((id: string) => {
@@ -227,6 +264,7 @@ export default function BackroadsPlanner({
     mapRef.current?.flyTo({ center: [-109.5, 46.8], zoom: 5.5, duration: 1000 });
     setSelected(null);
     setActiveHistoryTrailId(null);
+    setHistoryTrailStopIds(null);
     setSelectedHistoricMarker(null);
   }, []);
 
@@ -236,7 +274,11 @@ export default function BackroadsPlanner({
   }, []);
 
   const deselectCorridor = useCallback(() => setSelected(null), []);
-  const clearHistoryTrail = useCallback(() => { setActiveHistoryTrailId(null); setSelectedHistoricMarker(null); }, []);
+  const clearHistoryTrail = useCallback(() => {
+    setActiveHistoryTrailId(null);
+    setHistoryTrailStopIds(null);
+    setSelectedHistoricMarker(null);
+  }, []);
   const toggleSidebar = useCallback(() => setSidebarOpen((o) => !o), []);
   const handleHistoricMarkerClick = useCallback((m: HistoricMarker) => setSelectedHistoricMarker(m), []);
   const handlePoiClick = useCallback((p: CorridorPOI) => setHoveredPoi(p), []);
@@ -429,6 +471,12 @@ export default function BackroadsPlanner({
           selectedCorridorId={selected}
           activeHistoryTrailId={activeHistoryTrailId}
           activeHistoryTrail={activeHistoryTrail}
+          canonicalActiveHistoryTrail={canonicalActiveHistoryTrail}
+          activeHistoryStops={activeHistoryStops}
+          historyTrailStopIds={historyTrailStopIds}
+          setHistoryTrailStopIds={setHistoryTrailStopIds}
+          historyRouteStops={historyRouteStops}
+          isHistoryTrailCustomized={isHistoryTrailCustomized}
           tripCorridorIds={tripCorridorIds}
           difficultyFilter={difficultyFilter}
           poiFilter={poiFilter}
@@ -478,6 +526,8 @@ export default function BackroadsPlanner({
             dimCorridors={!!activeHistoryTrailId}
             activeHistoryTrail={activeHistoryTrail}
             itinerary={enabledItinerary}
+            historyRouteStops={historyRouteStops}
+            useHistoryRouteStops={isHistoryTrailCustomized}
             historicMarkers={historicMarkers}
             showHistoricMarkers={showHistoricMarkers}
             filteredPois={filteredPois}
@@ -628,9 +678,7 @@ export const getStaticProps: GetStaticProps = async () => {
           });
         }
         const stops = orderStopsNearestNeighborFromEast(rawStops);
-        const lineSegments = t.routeGeometry && t.routeGeometry.length > 0
-          ? t.routeGeometry
-          : buildLineSegmentsLngLat(stops, HISTORY_TRAIL_MAX_EDGE_MILES);
+        const lineSegments = t.routeGeometry && t.routeGeometry.length > 0 ? t.routeGeometry : [];
         return { id: t.id, name: t.name, markerCount: t.markerCount, lineSegments, stops };
       })
       .filter(t => t.stops.length > 0)

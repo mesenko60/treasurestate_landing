@@ -14,8 +14,6 @@ import { HISTORIC_MARKER_MAP_POPUP_SCROLL } from '../../../lib/historicMarkerMap
 import { MARKER_DEEP_READS } from '../../../lib/markerDeepReads';
 
 const Map = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.default), { ssr: false });
-const Source = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Source), { ssr: false });
-const Layer = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Layer), { ssr: false });
 const Marker = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Marker), { ssr: false });
 const Popup = dynamic(() => import('react-map-gl/mapbox').then(mod => mod.Popup), { ssr: false });
 
@@ -85,15 +83,6 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
     };
   }, [markers]);
 
-  const lineGeoJson = useMemo(() => ({
-    type: 'Feature' as const,
-    properties: {},
-    geometry: {
-      type: 'LineString' as const,
-      coordinates: markers.map(m => [m.lng, m.lat]),
-    },
-  }), [markers]);
-
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'TouristTrip',
@@ -135,37 +124,55 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
       <Breadcrumbs items={breadcrumbs} />
 
       <style dangerouslySetInnerHTML={{ __html: `
-        .trail-page { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-        .trail-header { margin-bottom: 1.5rem; }
-        .trail-header h1 { font-size: 1.6rem; color: #204051; margin-bottom: 0.5rem; }
-        .trail-header p { font-size: 1rem; color: #555; line-height: 1.6; }
+        .trail-page { max-width: 1080px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .trail-header { margin-bottom: 1rem; }
+        .trail-header h1 { font-size: clamp(1.65rem, 3vw, 2.25rem); color: #204051; margin: 0 0 0.5rem; }
+        .trail-header p { font-size: 1.02rem; color: #555; line-height: 1.65; max-width: 840px; }
         .trail-route-notice {
-          margin-bottom: 1.5rem; padding: 1rem 1.15rem;
-          background: #f5f9f8; border: 1px solid #e0ebe8; border-radius: 8px;
-          font-size: 0.92rem; color: #444; line-height: 1.55;
+          margin: 1.25rem 0; padding: 1rem 1.15rem;
+          background: #fff8ea; border: 1px solid #efd9a7; border-radius: 10px;
+          font-size: 0.94rem; color: #4d4331; line-height: 1.6;
         }
         .trail-route-notice strong { color: #204051; }
-        .trail-route-notice a { color: #3b6978; font-weight: 600; }
-        .trail-meta-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
-        .trail-meta-item { font-size: 0.9rem; color: #666; }
-        .trail-meta-item strong { color: #204051; }
-        .trail-layout { display: grid; grid-template-columns: 1fr 400px; gap: 1.5rem; }
-        @media (max-width: 900px) { .trail-layout { grid-template-columns: 1fr; } }
-        .trail-map-container { height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid #e0e0e0; }
-        .trail-markers-list { max-height: 500px; overflow-y: auto; }
-        .marker-item {
-          padding: 1rem; border-bottom: 1px solid #f0f0f0;
-          cursor: pointer; transition: background 0.15s;
+        .trail-route-notice a { color: #3b6978; font-weight: 700; }
+        .trail-cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
+        .trail-primary-cta {
+          display: inline-flex; align-items: center; justify-content: center;
+          padding: 0.72rem 1.15rem; border-radius: 8px; background: #204051;
+          color: #fff; font-weight: 700; text-decoration: none;
         }
-        .marker-item:hover { background: #f8faf8; }
-        .marker-item.active { background: #e8f4f8; border-left: 3px solid #3b6978; }
+        .trail-secondary-cta { color: #3b6978; font-weight: 700; text-decoration: none; }
+        .trail-meta-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 1.1rem 0; }
+        .trail-meta-item { font-size: 0.9rem; color: #666; padding: 0.85rem; background: #f8faf8; border: 1px solid #e8ede8; border-radius: 10px; }
+        .trail-meta-item strong { color: #204051; }
+        .trail-overview { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.25rem; align-items: start; margin: 1.5rem 0; }
+        @media (max-width: 860px) { .trail-overview { grid-template-columns: 1fr; } }
+        .trail-map-card, .trail-highlights {
+          background: #fff; border: 1px solid #e8ede8; border-radius: 12px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.04); overflow: hidden;
+        }
+        .trail-map-heading { padding: 0.85rem 1rem; border-bottom: 1px solid #e8ede8; }
+        .trail-map-heading h2 { font-size: 1rem; color: #204051; margin: 0 0 0.25rem; }
+        .trail-map-heading p { font-size: 0.84rem; color: #666; margin: 0; line-height: 1.45; }
+        .trail-map-container { height: 340px; overflow: hidden; background: #eef3f0; }
+        .trail-map-fallback { height: 340px; display: flex; align-items: center; justify-content: center; padding: 1.5rem; text-align: center; color: #666; }
+        .trail-markers-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.9rem; margin-top: 1rem; }
+        .marker-item {
+          padding: 1rem; border: 1px solid #e8ede8; border-radius: 10px; background: #fff;
+          cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.15s;
+        }
+        .marker-item:hover { background: #f8faf8; transform: translateY(-1px); }
+        .marker-item.active { background: #e8f4f8; border-color: #3b6978; }
         .marker-item h3 { font-size: 0.95rem; color: #204051; margin: 0 0 0.3rem; }
         .marker-item .marker-loc { font-size: 0.8rem; color: #888; }
         .marker-item .marker-excerpt { font-size: 0.85rem; color: #555; margin-top: 0.4rem; line-height: 1.4; }
-        .trail-highlights { margin-top: 2rem; }
-        .trail-highlights h2 { font-size: 1.2rem; color: #204051; margin-bottom: 1rem; }
-        .highlights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
-        .highlight-item { padding: 1rem; background: #f8faf8; border-radius: 8px; border: 1px solid #e8ede8; }
+        .trail-stops-section { margin-top: 1.75rem; }
+        .trail-stops-section h2 { font-size: 1.2rem; color: #204051; margin: 0 0 0.35rem; }
+        .trail-stops-section > p { color: #666; line-height: 1.55; margin: 0 0 1rem; }
+        .trail-highlights { padding: 1rem; }
+        .trail-highlights h2 { font-size: 1.05rem; color: #204051; margin: 0 0 0.75rem; }
+        .highlights-grid { display: grid; gap: 0.7rem; }
+        .highlight-item { padding: 0.85rem; background: #f8faf8; border-radius: 8px; border: 1px solid #e8ede8; }
         .highlight-item span { font-size: 0.9rem; color: #204051; }
         .trail-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e8ede8; }
         .trail-nav a { font-size: 0.9rem; color: #3b6978; text-decoration: none; }
@@ -184,116 +191,138 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
           <h1>{trail.name}</h1>
           <p>{trail.description}</p>
           <div className="trail-meta-row">
-            <div className="trail-meta-item"><strong>{trail.estimatedDays}</strong> days suggested</div>
-            <div className="trail-meta-item"><strong>{trail.totalMiles}</strong> miles</div>
-            <div className="trail-meta-item"><strong>{markers.length}</strong> historic markers</div>
-            <div className="trail-meta-item">Regions: {trail.regions.join(', ')}</div>
+            <div className="trail-meta-item"><strong>{trail.estimatedDays}</strong><br />days if used as a road trip seed</div>
+            <div className="trail-meta-item"><strong>{trail.totalMiles}</strong><br />approximate statewide span</div>
+            <div className="trail-meta-item"><strong>{markers.length}</strong><br />historic marker references</div>
+            <div className="trail-meta-item"><strong>Regions</strong><br />{trail.regions.join(', ')}</div>
           </div>
         </section>
 
         <aside className="trail-route-notice" role="note">
-          <strong>About this map.</strong> Stops are historic markers grouped by theme for reading and research.
-          They are not laid out along one continuous highway, and a marker may only reference this topic briefly.
-          For <strong>roadway routes</strong> drawn on actual US/state highways, use the{' '}
-          <Link href="/planners/backroads-planner/">Backroads Planner</Link>.
+          <strong>This is a thematic history collection, not a fixed driving route.</strong> The stops below are
+          historic markers grouped for reading and research. Some are close together; others only reference the
+          topic briefly or sit far from the next related marker.
+          <div className="trail-cta-row">
+            <Link href={`/planners/backroads-planner/?mode=history&trail=${trail.id}`} className="trail-primary-cta">
+              Customize this trail in the Trip Planner
+            </Link>
+            <Link href="/planners/backroads-planner/" className="trail-secondary-cta">
+              Open the Backroads Planner &rarr;
+            </Link>
+          </div>
         </aside>
 
-        <div className="trail-layout">
-          <div className="trail-map-container">
-            {MAPBOX_TOKEN && (
-              <Map
-                {...viewState}
-                onMove={evt => setViewState(evt.viewState)}
-                mapStyle="mapbox://styles/mapbox/outdoors-v12"
-                mapboxAccessToken={MAPBOX_TOKEN}
-                style={{ width: '100%', height: '100%' }}
-                initialViewState={bounds ? {
-                  bounds: [[bounds.minLng, bounds.minLat], [bounds.maxLng, bounds.maxLat]],
-                  fitBoundsOptions: { padding: 40 },
-                } : undefined}
-              >
-                <Source id="trail-line" type="geojson" data={lineGeoJson}>
-                  <Layer
-                    id="trail-line-layer"
-                    type="line"
-                    paint={{
-                      'line-color': '#c0392b',
-                      'line-width': 3,
-                      'line-opacity': 0.6,
-                      'line-dasharray': [2, 2],
-                    }}
-                  />
-                </Source>
-                {markers.map((m, idx) => (
-                  <Marker key={m.id} latitude={m.lat} longitude={m.lng} anchor="center">
-                    <div
-                      className={`map-marker ${selectedMarker?.id === m.id ? 'selected' : ''}`}
-                      onClick={() => setSelectedMarker(m)}
+        <div className="trail-overview">
+          <section className="trail-map-card" aria-label="Marker overview map">
+            <div className="trail-map-heading">
+              <h2>Marker Overview</h2>
+              <p>Markers are shown without connector lines so the map does not imply a prescribed road route.</p>
+            </div>
+            <div className="trail-map-container">
+              {MAPBOX_TOKEN ? (
+                <Map
+                  {...viewState}
+                  onMove={evt => setViewState(evt.viewState)}
+                  mapStyle="mapbox://styles/mapbox/outdoors-v12"
+                  mapboxAccessToken={MAPBOX_TOKEN}
+                  style={{ width: '100%', height: '100%' }}
+                  initialViewState={bounds ? {
+                    bounds: [[bounds.minLng, bounds.minLat], [bounds.maxLng, bounds.maxLat]],
+                    fitBoundsOptions: { padding: 40 },
+                  } : undefined}
+                >
+                  {markers.map((m, idx) => (
+                    <Marker key={m.id} latitude={m.lat} longitude={m.lng} anchor="center">
+                      <button
+                        type="button"
+                        className={`map-marker ${selectedMarker?.id === m.id ? 'selected' : ''}`}
+                        onClick={() => setSelectedMarker(m)}
+                        aria-label={`Show ${m.title}`}
+                      >
+                        {idx + 1}
+                      </button>
+                    </Marker>
+                  ))}
+                  {selectedMarker && (
+                    <Popup
+                      latitude={selectedMarker.lat}
+                      longitude={selectedMarker.lng}
+                      onClose={() => setSelectedMarker(null)}
+                      closeButton
+                      closeOnClick={false}
+                      anchor="bottom"
+                      offset={15}
                     >
-                      {idx + 1}
-                    </div>
-                  </Marker>
-                ))}
-                {selectedMarker && (
-                  <Popup
-                    latitude={selectedMarker.lat}
-                    longitude={selectedMarker.lng}
-                    onClose={() => setSelectedMarker(null)}
-                    closeButton
-                    closeOnClick={false}
-                    anchor="bottom"
-                    offset={15}
-                  >
-                    <div
-                      style={{
-                        maxWidth: 420,
-                        maxHeight: 'min(78vh, 560px)',
-                        padding: '0.5rem',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: 0,
-                      }}
-                    >
-                      <h4 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#204051', flexShrink: 0 }}>
-                        {selectedMarker.title}
-                      </h4>
-                      <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.4rem', flexShrink: 0 }}>
-                        {selectedMarker.town || selectedMarker.county}
-                      </p>
-                      <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.45rem' }}>
-                        <MarkerInscription text={selectedMarker.inscription} variant="popup" />
-                      </div>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', flexShrink: 0 }}>
-                        {MARKER_DEEP_READS[selectedMarker.slug] && (
-                          <Link
-                            href={MARKER_DEEP_READS[selectedMarker.slug].href}
-                            style={{ fontSize: '0.78rem', color: '#925f14', fontWeight: 600 }}
+                      <div
+                        style={{
+                          maxWidth: 420,
+                          maxHeight: 'min(78vh, 560px)',
+                          padding: '0.5rem',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: 0,
+                        }}
+                      >
+                        <h4 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#204051', flexShrink: 0 }}>
+                          {selectedMarker.title}
+                        </h4>
+                        <p style={{ fontSize: '0.76rem', color: '#888', margin: '0 0 0.4rem', flexShrink: 0 }}>
+                          {selectedMarker.town || selectedMarker.county}
+                        </p>
+                        <div style={{ ...HISTORIC_MARKER_MAP_POPUP_SCROLL, flex: 1, minHeight: 0, marginBottom: '0.45rem' }}>
+                          <MarkerInscription text={selectedMarker.inscription} variant="popup" />
+                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', flexShrink: 0 }}>
+                          {MARKER_DEEP_READS[selectedMarker.slug] && (
+                            <Link
+                              href={MARKER_DEEP_READS[selectedMarker.slug].href}
+                              style={{ fontSize: '0.78rem', color: '#925f14', fontWeight: 600 }}
+                            >
+                              {MARKER_DEEP_READS[selectedMarker.slug].title} &rarr;
+                            </Link>
+                          )}
+                          <a
+                            href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontSize: '0.78rem', color: '#3b6978' }}
                           >
-                            {MARKER_DEEP_READS[selectedMarker.slug].title} →
-                          </Link>
-                        )}
-                        <a
-                          href={`https://www.google.com/maps/dir/?api=1&destination=${selectedMarker.lat},${selectedMarker.lng}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ fontSize: '0.78rem', color: '#3b6978' }}
-                        >
-                          Directions
-                        </a>
+                            Directions
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </Popup>
-                )}
-              </Map>
-            )}
-          </div>
+                    </Popup>
+                  )}
+                </Map>
+              ) : (
+                <div className="trail-map-fallback">
+                  Add `NEXT_PUBLIC_MAPBOX_TOKEN` to enable the marker overview map.
+                </div>
+              )}
+            </div>
+          </section>
 
+          <section className="trail-highlights">
+            <h2>Trail Highlights</h2>
+            <div className="highlights-grid">
+              {trail.highlights.map((h, i) => (
+                <div key={i} className="highlight-item">
+                  <span>{h}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <section className="trail-stops-section">
+          <h2>Historic Marker Stops</h2>
+          <p>
+            Use these cards to read the collection. Use the trip planner when you want to remove stops,
+            reorder them, and calculate a road-following route.
+          </p>
           <div className="trail-markers-list">
-            <h2 style={{ fontSize: '1rem', color: '#204051', margin: '0 0 0.75rem', padding: '0 1rem' }}>
-              Trail Stops
-            </h2>
             {markers.map((m, idx) => (
-              <div
+              <article
                 key={m.id}
                 className={`marker-item ${selectedMarker?.id === m.id ? 'active' : ''}`}
                 onClick={() => {
@@ -308,18 +337,7 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                 <div className="marker-excerpt">
                   <MarkerInscription text={m.inscription} variant="compact" />
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <section className="trail-highlights">
-          <h2>Trail Highlights</h2>
-          <div className="highlights-grid">
-            {trail.highlights.map((h, i) => (
-              <div key={i} className="highlight-item">
-                <span>{h}</span>
-              </div>
+              </article>
             ))}
           </div>
         </section>

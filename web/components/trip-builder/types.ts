@@ -139,3 +139,8 @@ export type HistoryTrailMapData = {
   lineSegments: [number, number][][];
   stops: HistoricMarker[];
 };
+
+export interface HistoryTrailStopItem extends ItineraryPOI {
+  markerSlug: string;
+  markerTown: string | null;
+}

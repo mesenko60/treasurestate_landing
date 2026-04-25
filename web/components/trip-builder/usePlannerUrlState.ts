@@ -40,6 +40,8 @@ export function usePlannerUrlState({
   setTripCorridorIds,
   activeHistoryTrailId,
   setActiveHistoryTrailId,
+  historyTrailStopIds,
+  setHistoryTrailStopIds,
   difficultyFilter,
   setDifficultyFilter,
   poiFilter,
@@ -68,6 +70,8 @@ export function usePlannerUrlState({
   setTripCorridorIds: (ids: string[]) => void;
   activeHistoryTrailId: string | null;
   setActiveHistoryTrailId: (id: string | null) => void;
+  historyTrailStopIds: string[] | null;
+  setHistoryTrailStopIds: (ids: string[] | null) => void;
   difficultyFilter: string | null;
   setDifficultyFilter: (value: string | null) => void;
   poiFilter: string | null;
@@ -107,7 +111,8 @@ export function usePlannerUrlState({
 
     const validTrails = new Set(historyTrails.map((t) => t.id));
     const trail = first(query.trail);
-    setActiveHistoryTrailId(trail && validTrails.has(trail) ? trail : null);
+    const validTrailId = trail && validTrails.has(trail) ? trail : null;
+    setActiveHistoryTrailId(validTrailId);
 
     setDifficultyFilter(first(query.diff));
     setPoiFilter(first(query.poi));
@@ -123,8 +128,18 @@ export function usePlannerUrlState({
     const activities = csv(query.activities);
     if (activities.length > 0) setSelectedActivityTypes(activities);
 
-    const stops = csv(query.stops);
-    enabledStopIdsFromUrl.current = stops.length > 0 ? new Set(stops) : null;
+    const stopsParam = first(query.stops);
+    const stops = stopsParam === 'none' ? [] : csv(query.stops);
+    if (validTrailId) {
+      const selectedTrail = historyTrails.find((t) => t.id === validTrailId);
+      const validMarkerIds = new Set(selectedTrail?.stops.map((stop) => stop.id) || []);
+      const customTrailStops = stops.filter((id) => validMarkerIds.has(id));
+      setHistoryTrailStopIds(stopsParam ? customTrailStops : null);
+      enabledStopIdsFromUrl.current = null;
+    } else {
+      setHistoryTrailStopIds(null);
+      enabledStopIdsFromUrl.current = stops.length > 0 ? new Set(stops) : null;
+    }
   }, [
     router.isReady,
     router.asPath,
@@ -135,6 +150,7 @@ export function usePlannerUrlState({
     router.query,
     setActiveMode,
     setActiveHistoryTrailId,
+    setHistoryTrailStopIds,
     setDifficultyFilter,
     setPoiFilter,
     setSelected,
@@ -171,7 +187,17 @@ export function usePlannerUrlState({
     if (showSupabasePois) setCsv(params, 'poiCats', supabasePoiCategories);
     setCsv(params, 'cities', selectedCities.filter(Boolean));
     if (!matchesDefaultActivities(selectedActivityTypes)) setCsv(params, 'activities', selectedActivityTypes);
-    setCsv(params, 'stops', itinerary.filter((item) => item.itemType === 'city' || item.enabled !== false).map((item) => item.id));
+    if (activeHistoryTrailId) {
+      if (historyTrailStopIds) {
+        if (historyTrailStopIds.length > 0) {
+          setCsv(params, 'stops', historyTrailStopIds);
+        } else {
+          params.set('stops', 'none');
+        }
+      }
+    } else {
+      setCsv(params, 'stops', itinerary.filter((item) => item.itemType === 'city' || item.enabled !== false).map((item) => item.id));
+    }
 
     const qs = params.toString();
     const currentPath = router.asPath.split('?')[0] || router.pathname;
@@ -189,6 +215,7 @@ export function usePlannerUrlState({
     tripCorridorIds,
     selected,
     activeHistoryTrailId,
+    historyTrailStopIds,
     difficultyFilter,
     poiFilter,
     showHistoricMarkers,

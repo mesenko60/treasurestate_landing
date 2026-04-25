@@ -3,11 +3,10 @@ import Link from 'next/link';
 import { DragDropContext, Droppable, Draggable, DropResult } from '@hello-pangea/dnd';
 import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
-  City, ItineraryPOI, POI,
+  City, HistoryTrailStopItem, ItineraryPOI, POI,
 } from './types';
 import { ACTIVITY_TYPES, POI_LAYER_CATEGORIES } from './types';
 import { formatDriveTime, formatDistance } from './utils';
-import { HISTORY_TRAIL_MAX_EDGE_MILES } from '../../lib/historyTrailMapOrder';
 import type { PlannerDataStatus } from './usePlannerData';
 import type { PlannerMode } from './usePlannerUrlState';
 
@@ -43,6 +42,12 @@ interface UnifiedSidebarProps {
   selectedCorridorId: string | null;
   activeHistoryTrailId: string | null;
   activeHistoryTrail: HistoryTrailMapData | null;
+  canonicalActiveHistoryTrail: HistoryTrailMapData | null;
+  activeHistoryStops: HistoricMarker[];
+  historyTrailStopIds: string[] | null;
+  setHistoryTrailStopIds: React.Dispatch<React.SetStateAction<string[] | null>>;
+  historyRouteStops: HistoryTrailStopItem[];
+  isHistoryTrailCustomized: boolean;
   tripCorridorIds: string[];
   difficultyFilter: string | null;
   poiFilter: string | null;
@@ -91,6 +96,8 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
     corridors, corridorMap, historyTrails, historicMarkers,
     activeMode, onSetActiveMode,
     selectedCorridorId, activeHistoryTrailId, activeHistoryTrail,
+    canonicalActiveHistoryTrail, activeHistoryStops, historyTrailStopIds,
+    setHistoryTrailStopIds, historyRouteStops, isHistoryTrailCustomized,
     tripCorridorIds, difficultyFilter, poiFilter, showHistoricMarkers,
     filteredCorridors, activeCorridor, filteredPois,
     onSelectCorridor, onDeselectCorridor, onSelectHistoryTrail, onClearHistoryTrail,
@@ -134,6 +141,17 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
     }
   }, [itinerary]);
 
+  useEffect(() => {
+    if (activeHistoryTrail && activeHistoryStops.length < 2) {
+      setTotalDistance(null);
+      setTotalDuration(null);
+    }
+    if (activeHistoryTrail && !isHistoryTrailCustomized) {
+      setTotalDistance(null);
+      setTotalDuration(null);
+    }
+  }, [activeHistoryTrail, activeHistoryStops.length, isHistoryTrailCustomized]);
+
   const tripStats = React.useMemo(() => {
     const routes = tripCorridorIds.map((id) => corridorMap[id]).filter(Boolean);
     return {
@@ -142,6 +160,41 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
       routes,
     };
   }, [tripCorridorIds, corridorMap]);
+
+  const historyTrailRouteLabel = isHistoryTrailCustomized
+    ? 'custom road route'
+    : activeHistoryTrail?.lineSegments.length
+      ? 'saved road overview'
+      : 'marker overview';
+
+  const activeHistoryStopIds = React.useMemo(
+    () => activeHistoryStops.map((stop) => stop.id),
+    [activeHistoryStops],
+  );
+
+  const removedHistoryStops = React.useMemo(() => {
+    if (!canonicalActiveHistoryTrail || !historyTrailStopIds) return [];
+    const activeIds = new Set(activeHistoryStopIds);
+    return canonicalActiveHistoryTrail.stops.filter((stop) => !activeIds.has(stop.id));
+  }, [canonicalActiveHistoryTrail, historyTrailStopIds, activeHistoryStopIds]);
+
+  const customizeHistoryStops = useCallback(() => {
+    if (!canonicalActiveHistoryTrail) return [];
+    return historyTrailStopIds || canonicalActiveHistoryTrail.stops.map((stop) => stop.id);
+  }, [canonicalActiveHistoryTrail, historyTrailStopIds]);
+
+  const removeHistoryStop = useCallback((id: string) => {
+    setHistoryTrailStopIds(customizeHistoryStops().filter((stopId) => stopId !== id));
+  }, [customizeHistoryStops, setHistoryTrailStopIds]);
+
+  const restoreHistoryStop = useCallback((id: string) => {
+    const current = customizeHistoryStops();
+    if (!current.includes(id)) setHistoryTrailStopIds([...current, id]);
+  }, [customizeHistoryStops, setHistoryTrailStopIds]);
+
+  const resetHistoryStops = useCallback(() => {
+    setHistoryTrailStopIds(null);
+  }, [setHistoryTrailStopIds]);
 
   const addCity = useCallback(() => {
     if (selectedCities.length < 10 && !selectedCities.includes('')) {
@@ -231,6 +284,17 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
       return true;
     }));
   }, [itinerary, setItinerary]);
+
+  const onHistoryDragEnd = useCallback((result: DropResult) => {
+    if (!result.destination || !canonicalActiveHistoryTrail) return;
+    const from = result.source.index;
+    const to = result.destination.index;
+    if (from === to) return;
+    const updated = Array.from(activeHistoryStopIds);
+    const [moved] = updated.splice(from, 1);
+    updated.splice(to, 0, moved);
+    setHistoryTrailStopIds(updated);
+  }, [activeHistoryStopIds, canonicalActiveHistoryTrail, setHistoryTrailStopIds]);
 
   const handleActivityToggle = useCallback((tag: string) => {
     setSelectedActivityTypes((prev) =>
@@ -350,7 +414,10 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           {activeHistoryTrail && (
             <div className="history-trail-active-bar">
               <strong>{activeHistoryTrail.name}</strong>
-              <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops · lines skip jumps over ~{HISTORY_TRAIL_MAX_EDGE_MILES} mi</span>
+              <span style={{ color: '#8892a4' }}>
+                {activeHistoryStops.length} active stop{activeHistoryStops.length === 1 ? '' : 's'}
+                {` · ${historyTrailRouteLabel}`}
+              </span>
               <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
               <button type="button" className="trail-clear-btn" onClick={onClearHistoryTrail}>Clear trail</button>
             </div>
@@ -367,7 +434,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                 </summary>
                 <div className="history-trails-body">
                   <p className="history-trails-intro">
-                    Click a trail to plot stops on the map. Lines connect nearby markers in a sensible order and omit very long gaps — they are not turn-by-turn driving routes.
+                    Click a trail to plot its marker collection. Edit the active stop list in History Trails mode to calculate a road-following route.
                   </p>
                   {historyTrails.map((t) => (
                     <div key={t.id} className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}>
@@ -438,9 +505,67 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           {activeHistoryTrail && (
             <div className="history-trail-active-bar">
               <strong>{activeHistoryTrail.name}</strong>
-              <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops · lines skip jumps over ~{HISTORY_TRAIL_MAX_EDGE_MILES} mi</span>
+              <span style={{ color: '#8892a4' }}>
+                {activeHistoryStops.length} active stop{activeHistoryStops.length === 1 ? '' : 's'}
+                {` · ${historyTrailRouteLabel}`}
+              </span>
               <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
               <button type="button" className="trail-clear-btn" onClick={onClearHistoryTrail}>Clear trail</button>
+            </div>
+          )}
+          {activeHistoryTrail && (
+            <div style={{ padding: '0 18px 12px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+              <div style={{ fontSize: '0.78rem', color: '#a0a8b8', lineHeight: 1.45, marginBottom: '8px' }}>
+                Remove or reorder stops to create a custom drive. The planner will use Mapbox road routing when available.
+              </div>
+              <DragDropContext onDragEnd={onHistoryDragEnd}>
+                <Droppable droppableId="history-trail-editor">
+                  {(provided) => (
+                    <ul
+                      ref={provided.innerRef}
+                      {...provided.droppableProps}
+                      style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}
+                    >
+                      {activeHistoryStops.map((stop, i) => (
+                        <Draggable key={stop.id} draggableId={`history-${stop.id}`} index={i}>
+                          {(prov, snap) => (
+                            <li
+                              ref={prov.innerRef}
+                              {...prov.draggableProps}
+                              {...prov.dragHandleProps}
+                              style={{
+                                ...prov.draggableProps.style,
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                padding: '6px 8px',
+                                borderRadius: '7px',
+                                border: '1px solid rgba(201,162,39,0.28)',
+                                background: snap.isDragging ? 'rgba(201,162,39,0.2)' : 'rgba(201,162,39,0.08)',
+                              }}
+                            >
+                              <span className="trip-num" style={{ background: '#c9a227', color: '#1a1e2e' }}>{i + 1}</span>
+                              <span style={{ flex: 1, minWidth: 0, color: '#e8d9b0', fontSize: '0.78rem' }}>{stop.title}</span>
+                              <button type="button" className="trip-remove" onClick={() => removeHistoryStop(stop.id)}>Remove</button>
+                            </li>
+                          )}
+                        </Draggable>
+                      ))}
+                      {provided.placeholder}
+                    </ul>
+                  )}
+                </Droppable>
+              </DragDropContext>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '8px' }}>
+                {isHistoryTrailCustomized && (
+                  <button type="button" className="action-btn secondary" onClick={resetHistoryStops}>Clear customizations</button>
+                )}
+                {removedHistoryStops.map((stop) => (
+                  <button key={stop.id} type="button" className="action-btn secondary" onClick={() => restoreHistoryStop(stop.id)}>
+                    Restore {stop.title}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
           <div className="history-trails-body" style={{ borderTop: 0, paddingTop: '10px' }}>
@@ -914,6 +1039,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
             <h2 style={{ fontSize: '0.86rem', color: '#fff', margin: 0, fontWeight: 800 }}>Trip Summary</h2>
             <div style={{ fontSize: '0.72rem', color: '#6b7890', marginTop: '3px' }}>
               {tripCorridorIds.length} scenic route{tripCorridorIds.length === 1 ? '' : 's'} · {itinerary.length} itinerary stop{itinerary.length === 1 ? '' : 's'}
+              {activeHistoryTrail ? ` · ${historyRouteStops.length} history stop${historyRouteStops.length === 1 ? '' : 's'}` : ''}
             </div>
           </div>
           <button
@@ -937,6 +1063,67 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           <div style={{ fontSize: '0.74rem', color: '#fbbf24', lineHeight: 1.45, marginBottom: '10px' }}>{routeMessage}</div>
         )}
 
+        {activeHistoryTrail && (
+          <div style={{ marginBottom: '10px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', alignItems: 'center', marginBottom: '6px' }}>
+              <div style={{ fontSize: '0.74rem', color: '#e8d9b0', fontWeight: 800 }}>
+                {activeHistoryTrail.name}
+              </div>
+              {isHistoryTrailCustomized && (
+                <button type="button" className="trip-remove" onClick={resetHistoryStops}>Reset</button>
+              )}
+            </div>
+            <DragDropContext onDragEnd={onHistoryDragEnd}>
+              <Droppable droppableId="persistent-history-trail">
+                {(provided) => (
+                  <ul
+                    ref={provided.innerRef}
+                    {...provided.droppableProps}
+                    style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}
+                  >
+                    {activeHistoryStops.map((stop, i) => (
+                      <Draggable key={`summary-${stop.id}`} draggableId={`summary-history-${stop.id}`} index={i}>
+                        {(prov, snap) => (
+                          <li
+                            ref={prov.innerRef}
+                            {...prov.draggableProps}
+                            {...prov.dragHandleProps}
+                            style={{
+                              ...prov.draggableProps.style,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '8px',
+                              padding: '6px 8px',
+                              borderRadius: '6px',
+                              fontSize: '0.78rem',
+                              background: snap.isDragging ? 'rgba(201,162,39,0.2)' : 'rgba(201,162,39,0.08)',
+                              border: '1px solid rgba(201,162,39,0.25)',
+                            }}
+                          >
+                            <span className="trip-num" style={{ background: '#c9a227', color: '#1a1e2e' }}>{i + 1}</span>
+                            <span className="trip-item-name">{stop.title}</span>
+                            <button className="trip-remove" onClick={() => removeHistoryStop(stop.id)}>x</button>
+                          </li>
+                        )}
+                      </Draggable>
+                    ))}
+                    {provided.placeholder}
+                  </ul>
+                )}
+              </Droppable>
+            </DragDropContext>
+            {removedHistoryStops.length > 0 && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginTop: '7px' }}>
+                {removedHistoryStops.map((stop) => (
+                  <button key={stop.id} type="button" className="action-btn secondary" onClick={() => restoreHistoryStop(stop.id)}>
+                    Restore {stop.title}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         {tripCorridorIds.length > 0 && (
           <div style={{ marginBottom: '10px' }}>
             {tripCorridorIds.map((id, i) => {
@@ -955,7 +1142,9 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
 
         {itinerary.length === 0 ? (
           <div style={{ fontSize: '0.78rem', color: '#6b7890', lineHeight: 1.45 }}>
-            Pick Town to Town mode to add destinations, or add scenic routes from Scenic Drives.
+            {activeHistoryTrail
+              ? 'History stop changes are saved in the share URL. Pick Town to Town mode to add separate destinations.'
+              : 'Pick Town to Town mode to add destinations, or add scenic routes from Scenic Drives.'}
           </div>
         ) : (
           <DragDropContext onDragEnd={onDragEnd}>

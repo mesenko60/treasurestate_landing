@@ -28,6 +28,8 @@ interface UnifiedMapProps {
   dimCorridors: boolean;
   activeHistoryTrail: HistoryTrailMapData | null;
   itinerary: ItineraryPOI[];
+  historyRouteStops: ItineraryPOI[];
+  useHistoryRouteStops: boolean;
   historicMarkers: HistoricMarker[];
   showHistoricMarkers: boolean;
   filteredPois: CorridorPOI[];
@@ -59,7 +61,7 @@ function isMapAlive(map: mapboxgl.Map | null): map is mapboxgl.Map {
 const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function UnifiedMap(props, ref) {
   const {
     corridors, selectedCorridorId, tripCorridorIds, filteredCorridorIds,
-    dimCorridors, activeHistoryTrail, itinerary, historicMarkers,
+    dimCorridors, activeHistoryTrail, itinerary, historyRouteStops, useHistoryRouteStops, historicMarkers,
     showHistoricMarkers, filteredPois, selectedHistoricMarker, hoveredPoi,
     onCorridorClick, onHistoricMarkerClick, onPoiClick,
     onCloseHistoricMarkerPopup, onClosePoiPopup,
@@ -82,6 +84,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   const routeRef = useRef<{ source: boolean; layers: string[] }>({ source: false, layers: [] });
   const [isDrawingRoute, setIsDrawingRoute] = useState(false);
   const lastItineraryKeyRef = useRef<string>('');
+  const routeStops = useHistoryRouteStops ? historyRouteStops : itinerary;
   const hasMapboxToken = Boolean(process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
   // Stable refs for callbacks so effects don't re-run when callbacks change
@@ -584,7 +587,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     const map = mapRef.current;
     if (!isMapAlive(map) || !mapReady || isDrawingRoute) return;
 
-    const enabledPOIs = itinerary.filter(
+    const enabledPOIs = routeStops.filter(
       (p) => p.enabled !== false && p.lon != null && p.lat != null && !isNaN(p.lon) && !isNaN(p.lat)
     );
 
@@ -657,25 +660,25 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     } finally {
       setIsDrawingRoute(false);
     }
-  }, [itinerary, mapReady, isDrawingRoute, cleanupRoute]);
+  }, [routeStops, mapReady, isDrawingRoute, cleanupRoute]);
 
   useEffect(() => {
     if (!mapReady) return;
-    if (itinerary.filter((p) => p.enabled !== false).length < 2) {
+    if (routeStops.filter((p) => p.enabled !== false).length < 2) {
       cleanupRoute();
       lastItineraryKeyRef.current = '';
       return;
     }
     const t = setTimeout(drawRoute, 300);
     return () => clearTimeout(t);
-  }, [itinerary, mapReady, drawRoute, cleanupRoute]);
+  }, [routeStops, mapReady, drawRoute, cleanupRoute]);
 
   // Fit to itinerary when stops change
   useEffect(() => {
     const map = mapRef.current;
-    if (!isMapAlive(map) || !mapReady || itinerary.length === 0) return;
+    if (!isMapAlive(map) || !mapReady || routeStops.length === 0) return;
 
-    const enabled = itinerary.filter((p) => p.enabled !== false);
+    const enabled = routeStops.filter((p) => p.enabled !== false);
     if (enabled.length === 0) return;
 
     try {
@@ -683,7 +686,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       enabled.forEach((p) => bounds.extend([p.lon, p.lat]));
       map.fitBounds(bounds, { padding: 150, duration: 1200, maxZoom: 8 });
     } catch { /* map may be destroyed */ }
-  }, [itinerary.length, mapReady]);
+  }, [routeStops, mapReady]);
 
   if (!hasMapboxToken) {
     return (
