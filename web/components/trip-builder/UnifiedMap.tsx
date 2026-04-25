@@ -6,6 +6,7 @@ import { POI_LAYER_CATEGORIES } from './types';
 
 const HISTORY_TRAIL_LINE_COLOR = '#c9a227';
 const HISTORY_TRAIL_LINE_WIDTH = 4;
+const MAX_DIRECTIONS_WAYPOINTS = 25;
 
 const POI_CATEGORY_COLORS: Record<string, string> = {
   hotspring: '#e74c3c',
@@ -81,6 +82,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
   const routeRef = useRef<{ source: boolean; layers: string[] }>({ source: false, layers: [] });
   const [isDrawingRoute, setIsDrawingRoute] = useState(false);
   const lastItineraryKeyRef = useRef<string>('');
+  const hasMapboxToken = Boolean(process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
   // Stable refs for callbacks so effects don't re-run when callbacks change
   const onCorridorClickRef = useRef(onCorridorClick);
@@ -113,6 +115,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
 
   // Initialize map
   useEffect(() => {
+    if (!hasMapboxToken) return;
     if (!mapContainer.current || mapRef.current) return;
 
     mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -175,7 +178,7 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       mapRef.current = null;
       try { map.remove(); } catch { /* already removed */ }
     };
-  }, []);
+  }, [hasMapboxToken]);
 
   // One-time corridor layer setup (separate from data updates)
   const corridorLayersAdded = useRef(false);
@@ -586,6 +589,12 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     );
 
     if (enabledPOIs.length < 2) return;
+    if (enabledPOIs.length > MAX_DIRECTIONS_WAYPOINTS) {
+      window.dispatchEvent(new CustomEvent('routeError', {
+        detail: { message: `Routes are limited to ${MAX_DIRECTIONS_WAYPOINTS} active stops. Turn off or remove a few stops to calculate drive time.` },
+      }));
+      return;
+    }
 
     const key = enabledPOIs.map((p) => `${p.id}-${p.lon}-${p.lat}`).join('|');
     if (key === lastItineraryKeyRef.current) return;
@@ -593,8 +602,15 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
     setIsDrawingRoute(true);
     try {
       cleanupRoute();
+      const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+      if (!token) {
+        window.dispatchEvent(new CustomEvent('routeError', {
+          detail: { message: 'Map routing is unavailable until a Mapbox token is configured.' },
+        }));
+        return;
+      }
       const coordStr = enabledPOIs.map((p) => `${p.lon},${p.lat}`).join(';');
-      const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${coordStr}?geometries=geojson&overview=full&access_token=${process.env.NEXT_PUBLIC_MAPBOX_TOKEN}`;
+      const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${coordStr}?geometries=geojson&overview=full&access_token=${token}`;
       const resp = await fetch(url);
       if (!resp.ok) throw new Error(`Mapbox API: ${resp.status}`);
       const data = await resp.json();
@@ -635,6 +651,9 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       }));
     } catch (err) {
       console.error('Route error:', err);
+      window.dispatchEvent(new CustomEvent('routeError', {
+        detail: { message: err instanceof Error ? err.message : 'Route calculation failed.' },
+      }));
     } finally {
       setIsDrawingRoute(false);
     }
@@ -665,6 +684,33 @@ const UnifiedMap = forwardRef<UnifiedMapHandle, UnifiedMapProps>(function Unifie
       map.fitBounds(bounds, { padding: 150, duration: 1200, maxZoom: 8 });
     } catch { /* map may be destroyed */ }
   }, [itinerary.length, mapReady]);
+
+  if (!hasMapboxToken) {
+    return (
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: 'linear-gradient(135deg, #111827, #1f2937)',
+          color: '#e5e7eb',
+          padding: '2rem',
+          textAlign: 'center',
+        }}
+        aria-label="Montana Trip Planner Map unavailable"
+      >
+        <div style={{ maxWidth: 420 }}>
+          <h2 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', color: '#fff' }}>Map preview unavailable</h2>
+          <p style={{ margin: 0, color: '#aab4c4', lineHeight: 1.6 }}>
+            Add `NEXT_PUBLIC_MAPBOX_TOKEN` to enable the interactive map, directions, and drive-time calculations.
+            You can still browse routes and build a draft itinerary in the planner.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

@@ -8,8 +8,15 @@ import type {
 import { ACTIVITY_TYPES, POI_LAYER_CATEGORIES } from './types';
 import { formatDriveTime, formatDistance } from './utils';
 import { HISTORY_TRAIL_MAX_EDGE_MILES } from '../../lib/historyTrailMapOrder';
+import type { PlannerDataStatus } from './usePlannerData';
+import type { PlannerMode } from './usePlannerUrlState';
 
-type SidebarTab = 'explore' | 'plan' | 'itinerary';
+const MODE_OPTIONS: Array<{ id: PlannerMode; label: string; body: string }> = [
+  { id: 'scenic', label: 'Scenic Drives', body: 'Browse curated corridors and add the best roads to your trip.' },
+  { id: 'towns', label: 'Town to Town', body: 'Pick destinations and let the planner suggest stops between them.' },
+  { id: 'history', label: 'History Trails', body: 'Follow marker routes and historic story lines across Montana.' },
+  { id: 'outdoors', label: 'Outdoor Stops', body: 'Layer in campgrounds, hikes, hot springs, food, fuel, and services.' },
+];
 
 const CATEGORY_ICONS: Record<string, string> = {
   hotspring: '♨️', campground: '⛺', hiking: '🥾', recreation: '🏔️',
@@ -30,6 +37,8 @@ interface UnifiedSidebarProps {
   corridorMap: Record<string, Corridor>;
   historyTrails: HistoryTrailMapData[];
   historicMarkers: HistoricMarker[];
+  activeMode: PlannerMode;
+  onSetActiveMode: (mode: PlannerMode) => void;
 
   selectedCorridorId: string | null;
   activeHistoryTrailId: string | null;
@@ -64,6 +73,8 @@ interface UnifiedSidebarProps {
   selectedActivityTypes: string[];
   setSelectedActivityTypes: React.Dispatch<React.SetStateAction<string[]>>;
   supabaseReady: boolean;
+  supabaseStatus: PlannerDataStatus;
+  supabaseError: string | null;
 
   sidebarOpen: boolean;
   onToggleSidebar: () => void;
@@ -78,6 +89,7 @@ interface UnifiedSidebarProps {
 export default function UnifiedSidebar(props: UnifiedSidebarProps) {
   const {
     corridors, corridorMap, historyTrails, historicMarkers,
+    activeMode, onSetActiveMode,
     selectedCorridorId, activeHistoryTrailId, activeHistoryTrail,
     tripCorridorIds, difficultyFilter, poiFilter, showHistoricMarkers,
     filteredCorridors, activeCorridor, filteredPois,
@@ -87,24 +99,32 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
     cities, selectedCities, setSelectedCities,
     itinerary, setItinerary, allPOIs,
     selectedActivityTypes, setSelectedActivityTypes,
-    supabaseReady, sidebarOpen, onToggleSidebar,
+    supabaseReady, supabaseStatus, supabaseError, sidebarOpen, onToggleSidebar,
     showSupabasePois, onSetShowSupabasePois,
     supabasePoiCategories, onSetSupabasePoiCategories, supabasePoiCount,
   } = props;
 
-  const [tab, setTab] = useState<SidebarTab>('explore');
-
   const [totalDistance, setTotalDistance] = useState<number | null>(null);
   const [totalDuration, setTotalDuration] = useState<number | null>(null);
   const [optimizing, setOptimizing] = useState(false);
+  const [routeMessage, setRouteMessage] = useState<string | null>(null);
+  const tab: string = activeMode === 'towns' ? 'plan' : activeMode === 'scenic' ? 'explore' : activeMode;
 
   useEffect(() => {
     const handler = (e: CustomEvent) => {
       setTotalDistance(e.detail.distance);
       setTotalDuration(e.detail.duration);
+      setRouteMessage(null);
+    };
+    const errorHandler = (e: CustomEvent) => {
+      setRouteMessage(e.detail?.message || 'Route calculation is temporarily unavailable.');
     };
     window.addEventListener('routeCalculated', handler as EventListener);
-    return () => window.removeEventListener('routeCalculated', handler as EventListener);
+    window.addEventListener('routeError', errorHandler as EventListener);
+    return () => {
+      window.removeEventListener('routeCalculated', handler as EventListener);
+      window.removeEventListener('routeError', errorHandler as EventListener);
+    };
   }, []);
 
   useEffect(() => {
@@ -144,17 +164,25 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
   [cities, selectedCities]);
 
   const handleOptimize = useCallback(async () => {
-    if (itinerary.length < 3 || itinerary.length > 8) return;
+    const enabled = itinerary.filter((item) => item.itemType === 'city' || item.enabled !== false);
+    if (enabled.length < 3) {
+      setRouteMessage('Add at least three active stops before optimizing.');
+      return;
+    }
+    if (enabled.length > 8) {
+      setRouteMessage('Optimization supports up to 8 active stops. Turn off or remove a few stops first.');
+      return;
+    }
     setOptimizing(true);
     try {
-      const coords = itinerary.map((p) => `${p.lon},${p.lat}`).join(';');
       const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-      if (!token) throw new Error('Mapbox token missing');
+      if (!token) throw new Error('Map routing is unavailable until a Mapbox token is configured.');
+      const coords = enabled.map((p) => `${p.lon},${p.lat}`).join(';');
       const resp = await fetch(`https://api.mapbox.com/directions-matrix/v1/mapbox/driving/${coords}?annotations=duration&access_token=${token}`);
       if (!resp.ok) throw new Error('Matrix API error');
       const data = await resp.json();
       const durations: number[][] = data.durations;
-      const n = itinerary.length;
+      const n = enabled.length;
       const permute = (arr: number[]): number[][] => {
         if (arr.length === 1) return [arr];
         const result: number[][] = [];
@@ -177,9 +205,12 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
         }
         if (t < bestTime) { bestTime = t; best = order; }
       }
-      setItinerary(best.map((i) => itinerary[i]));
-    } catch {
-      // silently fail
+      const optimizedEnabled = best.map((i) => enabled[i]);
+      const disabled = itinerary.filter((item) => item.itemType !== 'city' && item.enabled === false);
+      setItinerary([...optimizedEnabled, ...disabled]);
+      setRouteMessage(null);
+    } catch (err) {
+      setRouteMessage(err instanceof Error ? err.message : 'Route optimization failed.');
     } finally {
       setOptimizing(false);
     }
@@ -209,35 +240,41 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
 
   // If user navigates to corridor detail while on plan tab, switch to explore
   useEffect(() => {
-    if (selectedCorridorId && tab !== 'explore') setTab('explore');
-  }, [selectedCorridorId]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (selectedCorridorId && activeMode !== 'scenic') onSetActiveMode('scenic');
+  }, [selectedCorridorId, activeMode, onSetActiveMode]);
 
   return (
     <aside className={`planner-sidebar ${sidebarOpen ? '' : 'collapsed'}`}>
       <div className="mobile-handle" onClick={onToggleSidebar} />
 
-      {/* Tab bar */}
-      <div style={{
-        display: 'flex', borderBottom: '1px solid rgba(255,255,255,0.08)', flexShrink: 0,
-      }}>
-        {([
-          ['explore', 'Explore'],
-          ['plan', 'Plan Trip'],
-          ['itinerary', `Itinerary${itinerary.length > 0 ? ` (${itinerary.length})` : ''}`],
-        ] as [SidebarTab, string][]).map(([id, label]) => (
-          <button
-            key={id}
-            onClick={() => { if (id === 'explore') onDeselectCorridor(); setTab(id); }}
-            style={{
-              flex: 1, textAlign: 'center', padding: '10px 4px', fontSize: '0.78rem',
-              fontWeight: 600, color: tab === id ? '#fff' : '#6b7890',
-              background: 'none', border: 'none', cursor: 'pointer',
-              borderBottom: tab === id ? '2px solid #3b82f6' : '2px solid transparent',
-            }}
-          >
-            {label}
-          </button>
-        ))}
+      <div style={{ padding: '14px 14px 10px', borderBottom: '1px solid rgba(255,255,255,0.08)', flexShrink: 0 }}>
+        <div style={{ fontSize: '0.72rem', color: '#6b7890', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '8px' }}>
+          What kind of trip?
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+          {MODE_OPTIONS.map((mode) => {
+            const active = activeMode === mode.id;
+            return (
+              <button
+                key={mode.id}
+                type="button"
+                onClick={() => { if (mode.id !== 'scenic') onDeselectCorridor(); onSetActiveMode(mode.id); }}
+                style={{
+                  textAlign: 'left',
+                  padding: '9px 10px',
+                  borderRadius: '10px',
+                  border: active ? '1px solid rgba(96,165,250,0.75)' : '1px solid rgba(255,255,255,0.1)',
+                  background: active ? 'rgba(59,130,246,0.18)' : 'rgba(255,255,255,0.04)',
+                  color: active ? '#fff' : '#c0c8d8',
+                  cursor: 'pointer',
+                }}
+              >
+                <span style={{ display: 'block', fontSize: '0.78rem', fontWeight: 800 }}>{mode.label}</span>
+                <span style={{ display: 'block', marginTop: '4px', fontSize: '0.68rem', lineHeight: 1.35, color: active ? '#b8d4ff' : '#7f8aa0' }}>{mode.body}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* === EXPLORE TAB === */}
@@ -381,6 +418,115 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
         </>
       )}
 
+      {tab === 'history' && (
+        <div className="corridor-list">
+          <div className="sidebar-header">
+            <h1>History Trails</h1>
+            <p>Plot historic marker routes, then open the full guide for context.</p>
+          </div>
+          <div style={{ padding: '10px 18px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer' }}>
+              <input
+                type="checkbox"
+                checked={showHistoricMarkers}
+                onChange={(e) => onSetShowHistoricMarkers(e.target.checked)}
+                style={{ accentColor: '#c0392b' }}
+              />
+              Show historic markers ({historicMarkers.length})
+            </label>
+          </div>
+          {activeHistoryTrail && (
+            <div className="history-trail-active-bar">
+              <strong>{activeHistoryTrail.name}</strong>
+              <span style={{ color: '#8892a4' }}>{activeHistoryTrail.stops.length} stops · lines skip jumps over ~{HISTORY_TRAIL_MAX_EDGE_MILES} mi</span>
+              <Link href={`/guides/history-trails/${activeHistoryTrail.id}/`}>Trail guide →</Link>
+              <button type="button" className="trail-clear-btn" onClick={onClearHistoryTrail}>Clear trail</button>
+            </div>
+          )}
+          <div className="history-trails-body" style={{ borderTop: 0, paddingTop: '10px' }}>
+            {historyTrails.map((t) => (
+              <div key={t.id} className={`history-trails-row ${activeHistoryTrailId === t.id ? 'active' : ''}`}>
+                <button type="button" className="history-trails-map-btn" onClick={() => onSelectHistoryTrail(t.id)}>
+                  <span className="history-trails-link-name">{t.name}</span>
+                  <span className="history-trails-meta">{t.stops.length} stops</span>
+                </button>
+                <Link href={`/guides/history-trails/${t.id}/`} className="history-trails-guide" prefetch={false} onClick={(e) => e.stopPropagation()}>
+                  Guide
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {tab === 'outdoors' && (
+        <div className="corridor-list">
+          <div className="sidebar-header">
+            <h1>Outdoor Stops</h1>
+            <p>Turn on map layers for stops, food, fuel, lodging, and services near your route.</p>
+          </div>
+          <div style={{ padding: '10px 18px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#a0aab8', cursor: 'pointer', marginBottom: showSupabasePois ? '8px' : 0 }}>
+              <input
+                type="checkbox"
+                checked={showSupabasePois}
+                onChange={(e) => onSetShowSupabasePois(e.target.checked)}
+                style={{ accentColor: '#3498db' }}
+              />
+              Show points of interest{showSupabasePois ? ` (${supabasePoiCount})` : ''}
+            </label>
+            {supabaseStatus === 'fallback' && (
+              <div style={{ fontSize: '0.76rem', color: '#fbbf24', lineHeight: 1.45, marginBottom: '8px' }}>
+                Live POI layers are unavailable right now. Town planning still works from local data.
+                {supabaseError ? ` ${supabaseError}` : ''}
+              </div>
+            )}
+            {showSupabasePois && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                {Object.entries(POI_LAYER_CATEGORIES).map(([key, cat]) => {
+                  const active = supabasePoiCategories.includes(key);
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => onSetSupabasePoiCategories((prev) =>
+                        active ? prev.filter((k) => k !== key) : [...prev, key]
+                      )}
+                      className={`filter-chip ${active ? 'active' : ''}`}
+                      style={active ? { borderColor: cat.color, color: cat.color } : {}}
+                    >
+                      {cat.icon} {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+          <div className="filter-bar">
+            <button className={`filter-chip ${!poiFilter ? 'active' : ''}`} onClick={() => onSetPoiFilter(null)}>All route stops</button>
+            {Object.entries(CATEGORY_LABELS).map(([k, v]) => (
+              <button key={k} className={`filter-chip ${poiFilter === k ? 'active' : ''}`}
+                onClick={() => onSetPoiFilter(poiFilter === k ? null : k)}
+              >
+                {CATEGORY_ICONS[k]} {v}
+              </button>
+            ))}
+          </div>
+          {filteredCorridors.map((c) => (
+            <div key={c.id} className={`corridor-card ${selectedCorridorId === c.id ? 'selected' : ''}`} onClick={() => onSelectCorridor(c.id)}>
+              <div className="corridor-card-name">
+                <span style={{ width: 10, height: 10, borderRadius: '50%', background: c.color, flexShrink: 0 }} />
+                {c.name}
+              </div>
+              <div className="corridor-card-meta">
+                <span>{c.pois.length} curated stops</span>
+                <span>{c.distanceMiles} mi</span>
+              </div>
+              <div className="corridor-card-desc">{c.description}</div>
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Corridor detail panel */}
       {tab === 'explore' && selectedCorridorId && activeCorridor && (
         <div className="detail-panel">
@@ -489,6 +635,12 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                 <label style={{ fontSize: '0.78rem', fontWeight: 600, color: '#c0c8d8', marginBottom: '8px', display: 'block' }}>
                   Select Destinations
                 </label>
+                {supabaseStatus === 'fallback' && (
+                  <div style={{ fontSize: '0.76rem', color: '#fbbf24', lineHeight: 1.45, marginBottom: '10px' }}>
+                    Using local town data because live planner data is unavailable.
+                    {supabaseError ? ` ${supabaseError}` : ''}
+                  </div>
+                )}
 
                 {selectedCities.length < 10 && cities.some((c) => !selectedCities.includes(c.id)) && (
                   <button
@@ -555,7 +707,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           {supabaseReady && (
             <div style={{ padding: '12px 18px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <label style={{ fontSize: '0.78rem', fontWeight: 600, color: '#c0c8d8', marginBottom: '8px', display: 'block' }}>
-                Filter Activities Along Route
+                Filter Activities Along Route {allPOIs.length > 0 ? `(${allPOIs.length.toLocaleString()} candidates)` : ''}
               </label>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
                 {ACTIVITY_TYPES.map((tag) => (
@@ -615,6 +767,11 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
               </div>
             )}
           </div>
+          {routeMessage && (
+            <div style={{ padding: '8px 18px', fontSize: '0.76rem', color: '#fbbf24', borderBottom: '1px solid rgba(255,255,255,0.06)', lineHeight: 1.45 }}>
+              {routeMessage}
+            </div>
+          )}
 
           {/* Corridor trip summary */}
           {tripCorridorIds.length > 0 && (
@@ -628,7 +785,7 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
                 return (
                   <div key={id} className="trip-item">
                     <div className="trip-num" style={{ background: c.color }}>{i + 1}</div>
-                    <span className="trip-item-name" style={{ cursor: 'pointer' }} onClick={() => { setTab('explore'); onSelectCorridor(id); }}>{c.name}</span>
+                    <span className="trip-item-name" style={{ cursor: 'pointer' }} onClick={() => { onSetActiveMode('scenic'); onSelectCorridor(id); }}>{c.name}</span>
                     <span className="trip-item-miles">{c.distanceMiles} mi</span>
                     <button className="trip-remove" onClick={() => onRemoveFromTrip(id)}>✕</button>
                   </div>
@@ -743,6 +900,118 @@ export default function UnifiedSidebar(props: UnifiedSidebarProps) {
           )}
         </div>
       )}
+
+      <div style={{
+        flexShrink: 0,
+        borderTop: '1px solid rgba(255,255,255,0.1)',
+        background: 'rgba(10,14,24,0.92)',
+        maxHeight: '44%',
+        overflowY: 'auto',
+        padding: '12px 14px',
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10px', alignItems: 'flex-start', marginBottom: '10px' }}>
+          <div>
+            <h2 style={{ fontSize: '0.86rem', color: '#fff', margin: 0, fontWeight: 800 }}>Trip Summary</h2>
+            <div style={{ fontSize: '0.72rem', color: '#6b7890', marginTop: '3px' }}>
+              {tripCorridorIds.length} scenic route{tripCorridorIds.length === 1 ? '' : 's'} · {itinerary.length} itinerary stop{itinerary.length === 1 ? '' : 's'}
+            </div>
+          </div>
+          <button
+            type="button"
+            className="action-btn primary"
+            onClick={() => navigator.clipboard?.writeText(window.location.href)}
+          >
+            Share
+          </button>
+        </div>
+
+        {(totalDistance || totalDuration || tripStats.totalMiles > 0) && (
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '0.78rem', color: '#c0c8d8', marginBottom: '10px' }}>
+            {tripStats.totalMiles > 0 && <span>{tripStats.totalMiles} scenic mi</span>}
+            {totalDistance && <span>{formatDistance(totalDistance)} routed</span>}
+            {totalDuration && <span>{formatDriveTime(totalDuration)} drive time</span>}
+          </div>
+        )}
+
+        {routeMessage && (
+          <div style={{ fontSize: '0.74rem', color: '#fbbf24', lineHeight: 1.45, marginBottom: '10px' }}>{routeMessage}</div>
+        )}
+
+        {tripCorridorIds.length > 0 && (
+          <div style={{ marginBottom: '10px' }}>
+            {tripCorridorIds.map((id, i) => {
+              const c = corridorMap[id];
+              if (!c) return null;
+              return (
+                <div key={id} className="trip-item">
+                  <div className="trip-num" style={{ background: c.color }}>{i + 1}</div>
+                  <span className="trip-item-name" style={{ cursor: 'pointer' }} onClick={() => { onSetActiveMode('scenic'); onSelectCorridor(id); }}>{c.name}</span>
+                  <button className="trip-remove" onClick={() => onRemoveFromTrip(id)}>x</button>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {itinerary.length === 0 ? (
+          <div style={{ fontSize: '0.78rem', color: '#6b7890', lineHeight: 1.45 }}>
+            Pick Town to Town mode to add destinations, or add scenic routes from Scenic Drives.
+          </div>
+        ) : (
+          <DragDropContext onDragEnd={onDragEnd}>
+            <Droppable droppableId="persistent-itinerary">
+              {(provided) => (
+                <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}
+                  ref={provided.innerRef} {...provided.droppableProps}
+                >
+                  {itinerary.map((item, i) => {
+                    const isCity = item.itemType === 'city';
+                    const isEnabled = item.enabled !== false;
+                    return (
+                      <Draggable key={`${item.id}-${i}`} draggableId={`${item.id}-${i}`} index={i}>
+                        {(prov, snap) => (
+                          <li
+                            ref={prov.innerRef}
+                            {...prov.draggableProps}
+                            {...prov.dragHandleProps}
+                            style={{
+                              ...prov.draggableProps.style,
+                              display: 'flex', alignItems: 'center', gap: '8px',
+                              padding: '6px 8px', borderRadius: '6px', fontSize: '0.78rem',
+                              background: isCity ? 'rgba(59,130,246,0.1)' : 'rgba(255,255,255,0.04)',
+                              border: `1px solid ${isCity ? 'rgba(59,130,246,0.25)' : 'rgba(255,255,255,0.08)'}`,
+                              opacity: !isEnabled && !isCity ? 0.5 : 1,
+                              boxShadow: snap.isDragging ? '0 4px 16px rgba(0,0,0,0.4)' : 'none',
+                            }}
+                          >
+                            <span style={{
+                              width: 19, height: 19, borderRadius: '50%', flexShrink: 0,
+                              background: isCity ? '#3b82f6' : '#ef4444',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                              fontSize: '0.62rem', fontWeight: 700, color: '#fff',
+                            }}>{i + 1}</span>
+                            <span style={{ flex: 1, color: isCity ? '#e0e4ec' : '#c0c8d8', fontWeight: isCity ? 700 : 400 }}>{item.name}</span>
+                            {!isCity && (
+                              <button
+                                onClick={() => setItinerary(itinerary.map((p) => p.id === item.id ? { ...p, enabled: !isEnabled } : p))}
+                                style={{ background: 'none', border: 'none', color: '#6b7890', cursor: 'pointer', fontSize: '0.7rem', padding: '2px' }}
+                                aria-label={isEnabled ? 'Disable stop' : 'Enable stop'}
+                              >
+                                {isEnabled ? 'On' : 'Off'}
+                              </button>
+                            )}
+                          </li>
+                        )}
+                      </Draggable>
+                    );
+                  })}
+                  {provided.placeholder}
+                </ul>
+              )}
+            </Droppable>
+          </DragDropContext>
+        )}
+      </div>
     </aside>
   );
 }

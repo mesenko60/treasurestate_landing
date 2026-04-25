@@ -13,10 +13,13 @@ import {
 } from '../../lib/historyTrailMapOrder';
 import type {
   Corridor, CorridorPOI, HistoricMarker, HistoryTrailMapData,
-  City, POI, ItineraryPOI,
+  POI,
 } from '../../components/trip-builder/types';
-import { ACTIVITY_TYPES, POI_LAYER_CATEGORIES, MONTANA_BOUNDS } from '../../components/trip-builder/types';
+import { POI_LAYER_CATEGORIES } from '../../components/trip-builder/types';
 import type { UnifiedMapHandle } from '../../components/trip-builder/UnifiedMap';
+import { usePlannerData } from '../../components/trip-builder/usePlannerData';
+import { usePlannerItinerary } from '../../components/trip-builder/usePlannerItinerary';
+import { usePlannerUrlState, PlannerMode } from '../../components/trip-builder/usePlannerUrlState';
 import type { MutableRefObject } from 'react';
 
 const UnifiedMap = dynamic(() => import('../../components/trip-builder/UnifiedMap'), {
@@ -33,14 +36,6 @@ const UnifiedSidebar = dynamic(() => import('../../components/trip-builder/Unifi
 });
 
 type TownCoords = Record<string, { name: string; lat: number; lng: number }>;
-
-const MAJOR_CITIES = [
-  'Billings', 'Missoula', 'Great Falls', 'Bozeman', 'Butte', 'Helena',
-  'Kalispell', 'Havre', 'Anaconda', 'Miles City', 'Livingston', 'Whitefish',
-  'Lewistown', 'Sidney', 'Glendive', 'Dillon', 'Hamilton', 'Cut Bank',
-  'Shelby', 'Glasgow', 'Wolf Point', 'Polson', 'Libby', 'Red Lodge',
-  'Big Timber', 'Deer Lodge', 'Hardin', 'Roundup', 'Conrad', 'Chinook',
-];
 
 export default function BackroadsPlanner({
   corridors,
@@ -66,17 +61,35 @@ export default function BackroadsPlanner({
   const [showHistoricMarkers, setShowHistoricMarkers] = useState(false);
   const [selectedHistoricMarker, setSelectedHistoricMarker] = useState<HistoricMarker | null>(null);
   const [activeHistoryTrailId, setActiveHistoryTrailId] = useState<string | null>(null);
+  const [activeMode, setActiveMode] = useState<PlannerMode>('scenic');
 
   // --- Trip builder state ---
-  const [cities, setCities] = useState<City[]>([]);
-  const [allPOIs, setAllPOIs] = useState<POI[]>([]);
-  const [itinerary, setItinerary] = useState<ItineraryPOI[]>([]);
-  const [selectedCities, setSelectedCities] = useState<string[]>([]);
-  const [selectedActivityTypes, setSelectedActivityTypes] = useState<string[]>([...ACTIVITY_TYPES]);
-  const [supabaseReady, setSupabaseReady] = useState(false);
   const [showSupabasePois, setShowSupabasePois] = useState(false);
   const [supabasePoiCategories, setSupabasePoiCategories] = useState<string[]>(Object.keys(POI_LAYER_CATEGORIES));
   const [selectedSupabasePoi, setSelectedSupabasePoi] = useState<POI | null>(null);
+
+  const {
+    cities,
+    allPOIs,
+    visibleSupabasePois,
+    supabaseReady,
+    supabaseStatus,
+    supabaseError,
+  } = usePlannerData({
+    corridors,
+    townCoords,
+    showSupabasePois,
+    supabasePoiCategories,
+  });
+
+  const {
+    itinerary,
+    setItinerary,
+    selectedCities,
+    setSelectedCities,
+    selectedActivityTypes,
+    setSelectedActivityTypes,
+  } = usePlannerItinerary({ cities, allPOIs });
 
   // --- Derived state ---
   const historyTrailById = useMemo(() => {
@@ -111,66 +124,38 @@ export default function BackroadsPlanner({
     return activeCorridor.pois.filter((p) => !poiFilter || p.category === poiFilter);
   }, [activeCorridor, poiFilter]);
 
-  // --- Supabase POI layer (deduped + filtered by category) ---
-  const visibleSupabasePois = useMemo(() => {
-    if (!showSupabasePois || allPOIs.length === 0) return [];
-
-    const allowedTypes = new Set<string>();
-    for (const catKey of supabasePoiCategories) {
-      const cat = POI_LAYER_CATEGORIES[catKey];
-      if (cat) cat.types.forEach((t) => allowedTypes.add(t));
-    }
-
-    const typed = allPOIs.filter((p) => p.type && allowedTypes.has(p.type));
-
-    const corridorCoords = corridors.flatMap((c) =>
-      c.pois.map((cp) => ({ lat: cp.lat, lng: cp.lng, name: cp.name.toLowerCase().trim() })),
-    );
-
-    return typed.filter((p) => {
-      const pName = p.name.toLowerCase().trim();
-      for (const cp of corridorCoords) {
-        const dlat = p.lat - cp.lat;
-        const dlng = p.lon - cp.lng;
-        const dist = Math.sqrt(dlat * dlat + dlng * dlng);
-        if (dist < 0.002 && pName === cp.name) return false;
-      }
-      return true;
-    });
-  }, [showSupabasePois, allPOIs, supabasePoiCategories, corridors]);
-
   const handleSupabasePoiClick = useCallback((p: POI) => setSelectedSupabasePoi(p), []);
   const closeSupabasePoiPopup = useCallback(() => setSelectedSupabasePoi(null), []);
 
-  // --- URL sync ---
-  useEffect(() => {
-    const routes = router.query.routes;
-    if (typeof routes === 'string' && routes.length > 0) {
-      const ids = routes.split(',').filter((id) => corridors.some((c) => c.id === id));
-      if (ids.length > 0) setTripCorridorIds(ids);
-    }
-    const trail = router.query.trail;
-    if (typeof trail === 'string' && historyTrails.some((t) => t.id === trail)) {
-      setActiveHistoryTrailId(trail);
-    } else {
-      const focus = router.query.focus;
-      if (typeof focus === 'string' && corridors.some((c) => c.id === focus)) {
-        setSelected(focus);
-      }
-    }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  useEffect(() => {
-    const params = new URLSearchParams();
-    if (tripCorridorIds.length > 0) params.set('routes', tripCorridorIds.join(','));
-    if (selected) params.set('focus', selected);
-    if (activeHistoryTrailId) params.set('trail', activeHistoryTrailId);
-    const qs = params.toString();
-    const newUrl = qs ? `${router.pathname}?${qs}` : router.pathname;
-    if (newUrl !== router.asPath) {
-      router.replace(newUrl, undefined, { shallow: true });
-    }
-  }, [tripCorridorIds, selected, activeHistoryTrailId]); // eslint-disable-line react-hooks/exhaustive-deps
+  usePlannerUrlState({
+    router,
+    corridors,
+    historyTrails,
+    activeMode,
+    setActiveMode,
+    selected,
+    setSelected,
+    tripCorridorIds,
+    setTripCorridorIds,
+    activeHistoryTrailId,
+    setActiveHistoryTrailId,
+    difficultyFilter,
+    setDifficultyFilter,
+    poiFilter,
+    setPoiFilter,
+    showHistoricMarkers,
+    setShowHistoricMarkers,
+    showSupabasePois,
+    setShowSupabasePois,
+    supabasePoiCategories,
+    setSupabasePoiCategories,
+    selectedCities,
+    setSelectedCities,
+    selectedActivityTypes,
+    setSelectedActivityTypes,
+    itinerary,
+    setItinerary,
+  });
 
   // --- Fit map to history trail ---
   useEffect(() => {
@@ -196,115 +181,6 @@ export default function BackroadsPlanner({
     const t2 = setTimeout(run, 450);
     return () => { clearTimeout(t); clearTimeout(t2); };
   }, [activeHistoryTrail, sidebarOpen]);
-
-  // --- Supabase data loading ---
-  useEffect(() => {
-    async function loadSupabase() {
-      try {
-        const { getSupabase } = await import('../../lib/supabaseClient');
-        const supabase = getSupabase();
-
-        const { data: townData } = await supabase
-          .from('montana_town_coords')
-          .select('gnis_id, city, latitude, longitude')
-          .not('city', 'is', null)
-          .not('latitude', 'is', null)
-          .not('longitude', 'is', null);
-
-        const majorSet = new Set(MAJOR_CITIES.map((c) => c.toLowerCase()));
-        const filteredCities: City[] = (townData || [])
-          .filter((t) => t.city && majorSet.has(t.city.toLowerCase()))
-          .map((t) => ({
-            id: String(t.gnis_id || `${t.latitude}_${t.longitude}`),
-            name: t.city!,
-            lat: t.latitude!,
-            lon: t.longitude!,
-          }))
-          .sort((a, b) => a.name.localeCompare(b.name));
-        setCities(filteredCities);
-
-        const { data: poiData } = await supabase
-          .from('places')
-          .select('id, place_id, name, description, latitude, longitude, type, category, rating, reviews, website, thumbnail')
-          .not('latitude', 'is', null)
-          .not('longitude', 'is', null)
-          .not('name', 'is', null)
-          .gte('latitude', MONTANA_BOUNDS.minLat)
-          .lte('latitude', MONTANA_BOUNDS.maxLat)
-          .gte('longitude', MONTANA_BOUNDS.minLng)
-          .lte('longitude', MONTANA_BOUNDS.maxLng);
-
-        const pois: POI[] = (poiData || []).map((p) => ({
-          id: p.place_id || String(p.id),
-          name: p.name!,
-          description: p.description || undefined,
-          lat: p.latitude!,
-          lon: p.longitude!,
-          type: p.type || undefined,
-          category: p.category || undefined,
-          rating: p.rating ? Number(p.rating) : undefined,
-          reviews: p.reviews ? Number(p.reviews) : undefined,
-          website: p.website || undefined,
-          thumbnail: p.thumbnail || undefined,
-        }));
-        setAllPOIs(pois);
-        setSupabaseReady(true);
-      } catch {
-        setSupabaseReady(false);
-      }
-    }
-    loadSupabase();
-  }, []);
-
-  // --- Build itinerary from selected cities ---
-  const buildItinerary = useCallback(() => {
-    if (!selectedCities.length || cities.length === 0) {
-      setItinerary([]);
-      return;
-    }
-    const result: ItineraryPOI[] = [];
-    for (let i = 0; i < selectedCities.length; i++) {
-      const city = cities.find((c) => c.id === selectedCities[i]);
-      if (!city) continue;
-      result.push({ id: city.id, name: city.name, lat: city.lat, lon: city.lon, itemType: 'city', enabled: true });
-
-      if (i < selectedCities.length - 1) {
-        const next = cities.find((c) => c.id === selectedCities[i + 1]);
-        if (!next) continue;
-        const pad = 0.5;
-        const minLat = Math.min(city.lat, next.lat) - pad;
-        const maxLat = Math.max(city.lat, next.lat) + pad;
-        const minLon = Math.min(city.lon, next.lon) - pad;
-        const maxLon = Math.max(city.lon, next.lon) + pad;
-
-        const dx = next.lon - city.lon;
-        const dy = next.lat - city.lat;
-        const len2 = dx * dx + dy * dy;
-
-        const near = allPOIs
-          .filter((p) => {
-            const inBox = p.lat >= minLat && p.lat <= maxLat && p.lon >= minLon && p.lon <= maxLon;
-            const matchType = selectedActivityTypes.length === 0 || (p.type && selectedActivityTypes.includes(p.type));
-            return inBox && matchType;
-          })
-          .map((p) => {
-            const t = len2 > 0 ? ((p.lon - city.lon) * dx + (p.lat - city.lat) * dy) / len2 : 0;
-            const cross = Math.abs((p.lat - city.lat) * dx - (p.lon - city.lon) * dy);
-            const dist = len2 > 0 ? cross / Math.sqrt(len2) : 0;
-            return { poi: p, t, near: dist <= 0.3 && t >= -0.1 && t <= 1.1 };
-          })
-          .filter((x) => x.near)
-          .sort((a, b) => a.t - b.t)
-          .slice(0, 5)
-          .map(({ poi }) => ({ ...poi, itemType: 'activity' as const, enabled: true }));
-
-        result.push(...near);
-      }
-    }
-    setItinerary(result);
-  }, [selectedCities, cities, allPOIs, selectedActivityTypes]);
-
-  useEffect(() => { buildItinerary(); }, [buildItinerary]);
 
   // --- Corridor actions ---
   const flyToCorridor = useCallback((c: Corridor) => {
@@ -548,6 +424,8 @@ export default function BackroadsPlanner({
           corridorMap={corridorMap}
           historyTrails={historyTrails}
           historicMarkers={historicMarkers}
+          activeMode={activeMode}
+          onSetActiveMode={setActiveMode}
           selectedCorridorId={selected}
           activeHistoryTrailId={activeHistoryTrailId}
           activeHistoryTrail={activeHistoryTrail}
@@ -579,6 +457,8 @@ export default function BackroadsPlanner({
           selectedActivityTypes={selectedActivityTypes}
           setSelectedActivityTypes={setSelectedActivityTypes}
           supabaseReady={supabaseReady}
+          supabaseStatus={supabaseStatus}
+          supabaseError={supabaseError}
           sidebarOpen={sidebarOpen}
           onToggleSidebar={toggleSidebar}
           showSupabasePois={showSupabasePois}
