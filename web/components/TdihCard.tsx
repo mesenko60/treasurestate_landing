@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TdihBodyParagraphs from './TdihBodyParagraphs';
 import { TdihEntry, formatCategoryLabel, getTdihUrl } from '../lib/tdih';
 
 type Props = {
@@ -44,7 +45,7 @@ export default function TdihCard({ entry, defaultOpen = false, showViewFullLink 
       </summary>
 
       <div style={{ padding: '0 1rem 1rem', borderTop: '1px solid #f0f2f4' }}>
-        <p style={{ margin: '0.8rem 0 0', color: '#333', lineHeight: 1.7 }}>{entry.body}</p>
+        <TdihBodyParagraphs body={entry.body} variant="card" />
 
         <div style={{ marginTop: '0.8rem', color: '#4b5563', fontSize: '0.9rem' }}>
           <strong>Location:</strong> {entry.location}

@@ -161,3 +161,15 @@ export function formatCategoryLabel(category: string): string {
   if (words.length === 0) return category;
   return words.map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
 }
+
+/**
+ * Splits TDIH card body (paragraphs in JSON separated by \\n\\n) into blocks for <p> elements.
+ * Single newlines inside a block are treated as soft breaks and become spaces.
+ */
+export function splitTdihBodyIntoParagraphs(body: string): string[] {
+  return body
+    .trim()
+    .split(/\n{2,}/)
+    .map((block) => block.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+}

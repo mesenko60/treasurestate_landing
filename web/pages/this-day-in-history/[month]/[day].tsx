@@ -7,6 +7,7 @@ import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
+import TdihBodyParagraphs from '../../../components/TdihBodyParagraphs';
 import { TdihEntry, formatCategoryLabel, getPrevNext, getTdihUrl, monthNumberToSlug, monthSlugToNumber, toEntryId } from '../../../lib/tdih';
 
 type Props = {
@@ -25,7 +26,8 @@ function readTdihEntries(): TdihEntry[] {
 export default function TdihDayPage({ entry, prev, next }: Props) {
   const pageUrl = `https://treasurestate.com${getTdihUrl(entry)}`;
   const title = `${entry.date_display} in Montana History: ${entry.headline}`;
-  const desc = `${entry.date_display} (${entry.year ?? 'Historic era'}): ${entry.headline}. ${entry.body.slice(0, 140)}...`;
+  const bodyPlain = entry.body.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
+  const desc = `${entry.date_display} (${entry.year ?? 'Historic era'}): ${entry.headline}. ${bodyPlain.slice(0, 140)}...`;
   const categoryLabel = formatCategoryLabel(entry.category);
 
   const breadcrumbs = [
@@ -104,7 +106,7 @@ export default function TdihDayPage({ entry, prev, next }: Props) {
           <p style={{ margin: '0 0 1rem', color: '#4b5563' }}>
             <strong>Location:</strong> {entry.location}
           </p>
-          <p style={{ margin: 0, color: '#222', lineHeight: 1.75 }}>{entry.body}</p>
+          <TdihBodyParagraphs body={entry.body} variant="article" />
 
           {entry.tags.length > 0 && (
             <div style={{ marginTop: '1rem', display: 'flex', gap: '0.45rem', flexWrap: 'wrap' }}>
