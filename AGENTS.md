@@ -15,6 +15,12 @@ bd close <id>         # Complete work
 # Issues live in .beads/ — commit & push with git (see “Syncing beads” below). There is no `bd sync` in this CLI.
 ```
 
+## Compare town pair intros
+
+- **Source (edit here):** `town_comparison_articles/` — one `towna_vs_townb.md` per pair.
+- **Generated (do not edit by hand):** `web/content/compare-intros/{a}-vs-{b}.md` — produced by `npm run import-compare-intros` (runs on `postinstall` and in `prebuild` before the search index).
+- Slugs must exist in `cities_towns_list/towns.txt`; the script sorts pair names alphabetically for the output filename.
+
 ## AEO / SEO Rules
 - **AEO (Answer Engine Optimization)**: We target Answer Engines (ChatGPT, Perplexity, Google SGE). Content must be structured to directly answer queries.
   - Extract and structure FAQs, key facts, and direct answers in content files.

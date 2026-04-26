@@ -30,3 +30,9 @@ web/.indexnow-cache.json
 
 # Local Netlify folder
 .netlify
+
+# TypeScript incremental build cache
+**/*.tsbuildinfo
+
+# Generated from town_comparison_articles/ (see web/scripts/import-compare-intros.js)
+web/content/compare-intros/*.md

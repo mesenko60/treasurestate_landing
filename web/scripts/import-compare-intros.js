@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 /**
- * Copy town_comparison_ articles/*.md into web/content/compare-intros/{a}-vs-{b}.md
- * using canonical alphabetical slug order. Logs files whose segments are not valid town slugs.
+ * Copy town_comparison_articles/*.md (source filenames: towna_vs_townb.md) into
+ * web/content/compare-intros/{a}-vs-{b}.md using canonical alphabetical slug order.
+ * Logs files whose segments are not valid town slugs.
  *
- * Run from repo root: node web/scripts/import-compare-intros.js
+ * Run: (from repo) `node web/scripts/import-compare-intros.js`
+ * or:  (from web/) `npm run import-compare-intros`
+ *
+ * Shipped intros in compare-intros/ are generated — edit the repo-root source only.
  */
 'use strict';
 
@@ -12,7 +16,7 @@ const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const webRoot = path.join(repoRoot, 'web');
-const sourceDir = path.join(repoRoot, 'town_comparison_ articles');
+const sourceDir = path.join(repoRoot, 'town_comparison_articles');
 const destDir = path.join(webRoot, 'content', 'compare-intros');
 
 function slugify(input) {
