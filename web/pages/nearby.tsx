@@ -2,6 +2,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Header from '../components/Header';
+import SiteSearchWithHistory from '../components/SiteSearchWithHistory';
 import AppInstallCTA from '../components/AppInstallCTA';
 import { fetchNearbyPOIs, formatDistance, getCategoryInfo, POI_CATEGORIES } from '../lib/nearbyApi';
 import type { NearbyPOI } from '../lib/nearbyApi';
@@ -268,6 +269,7 @@ export default function NearbyPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </Head>
       <Header />
+      <SiteSearchWithHistory layout="strip" />
       <div className="nearby-page">
         {geo.status === 'idle' && (
           <div className="nearby-prompt">

@@ -6,6 +6,7 @@ import type { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
 import Header from '../../components/Header';
+import SiteSearchWithHistory from '../../components/SiteSearchWithHistory';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { filterNearbyRecreation } from '../../lib/recreation';
@@ -329,6 +330,7 @@ export default function CompareTool({ towns }: Props) {
       </Head>
 
       <Header />
+      <SiteSearchWithHistory layout="strip" />
       <Breadcrumbs items={breadcrumbs} />
 
       <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem 20px 4rem' }}>

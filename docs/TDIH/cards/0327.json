@@ -3,17 +3,18 @@
   "month": 3,
   "day": 27,
   "date_display": "March 27",
-  "headline": "Montana Legislature Honors 80th Anniversary of End of WWII, 2026",
-  "year": 2026,
-  "body": "On March 27, 2026, the 69th Montana Legislature passed a resolution honoring the eightieth anniversary of the end of World War II. This legislative action recognized the profound sacrifices and contributions of Montanans during the global conflict, both on the battlefield and on the home front. The resolution served as a formal acknowledgment of the state's enduring gratitude for the veterans and civilians who played a part in securing peace. Such commemorations are vital in preserving historical memory and ensuring that future generations understand the significance of past events. This event, though recent, highlights Montana's continuous connection to national and international historical milestones and its commitment to honoring its past.",
-  "category": "military",
-  "location": "Helena, Lewis and Clark County",
-  "latitude": 46.5921,
-  "longitude": -112.0215,
+  "headline": "First Electric Light Illuminates Montana's Alice Mine, 1880",
+  "year": 1880,
+  "body": "In the year of our Lord 1880, as the nation strained under the relentless march of industry, a flicker of a new age pierced the perpetual gloom of Montana's mining frontier. It was not the gentle glow of a kerosene lamp, nor the harsh glare of a carbide flame, but the stark, unwavering brilliance of electric light that first broke the subterranean darkness of the Alice Silver Mining Company in Butte. This was no mere convenience; it was a revolution, a testament to the unyielding drive for profit and progress that defined the era.\n\nThe Alice Mine, a crucible of silver extraction, became the unlikely stage for this technological marvel. While Thomas Edison tinkered with his incandescent bulbs, a different system, the Brush Electric Lighting System, was deployed deep within the earth. This was a brutal, pragmatic technology, utilizing electric arcs between two carbon electrodes to generate its fierce illumination. It was a light born of raw power, a fitting symbol for a town forged in the fires of ambition and greed. The miners, their faces etched with the grime and weariness of their toil, now worked under an artificial sun, its stark rays revealing every vein of ore, every dangerous crevice, every drop of sweat that fell from their brows. The promise was clear: more light meant more work, more ore, more wealth for the owners, and perhaps, a slightly less perilous existence for the men who risked their lives daily.\n\nButte, a town synonymous with copper and silver, was a place where innovation was not a luxury but a necessity. The very earth beneath it held untold riches, but extracting them demanded ever-greater ingenuity. The introduction of electric light was but the first tremor in an earthquake of electrification that would transform the mining industry. Though Butte would later boast its own electric lighting company by 1884, these early mine installations often relied on their own generating plants, small bastions of power carved out of the rugged landscape. The relentless demand for copper, fueled by the very electrification it enabled, would turn Butte into the \"Richest Hill on Earth,\" a monument to human endeavor and exploitation. The arc light, a harsh, unforgiving beacon, was the harbinger of a new industrial dawn, a dawn that promised both unprecedented prosperity and the deepening shadows of industrial struggle. As one contemporary observer might have noted, 'The light, it burns bright, but what shadows does it cast upon the souls of men?'",
+  "category": "technology",
+  "location": "Butte, Silver Bow County",
+  "latitude": 46.003822,
+  "longitude": -112.534775,
   "tags": [
-    "World War II",
-    "Montana Legislature",
-    "Veterans"
+    "mining",
+    "electricity",
+    "innovation",
+    "Butte"
   ],
   "expandable": false,
   "sources": [

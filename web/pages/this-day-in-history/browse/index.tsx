@@ -8,7 +8,7 @@ import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import TdihCard from '../../../components/TdihCard';
-import { CATEGORY_LABELS, MONTH_LABELS, TdihEntry } from '../../../lib/tdih';
+import { MONTH_LABELS, TdihEntry, formatCategoryLabel } from '../../../lib/tdih';
 
 type Props = {
   entries: TdihEntry[];
@@ -79,7 +79,7 @@ export default function TdihBrowsePage({ entries, categories }: Props) {
             <option value="all">All categories</option>
             {categories.map((category) => (
               <option key={category} value={category}>
-                {CATEGORY_LABELS[category] || category}
+                {formatCategoryLabel(category)}
               </option>
             ))}
           </select>

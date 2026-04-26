@@ -3,19 +3,20 @@
   "month": 4,
   "day": 14,
   "date_display": "April 14",
-  "headline": "First Hauser Dam Completed on Missouri River, 1908",
+  "headline": "Hauser Dam Collapses on Missouri River, 1908",
   "year": 1908,
-  "body": "On April 14, 1908, the first Hauser Dam on the Missouri River, located just south of Helena, Montana, was completed. This hydroelectric dam was a monumental engineering feat for its time, marking a significant advancement in Montana's infrastructure and industrial development. The dam harnessed the power of the Missouri River to generate electricity, providing a crucial energy source for the growing mining operations and communities in the region. Its construction represented a major investment in the state's future, transforming the landscape and contributing to the economic prosperity of Montana. The Hauser Dam played a vital role in the electrification of the state and remains an important part of Montana's energy infrastructure, symbolizing the ingenuity and ambition of early 20th-century development.",
-  "category": "infrastructure",
+  "body": "The Missouri River, a coiled serpent of power, had been tamed, or so they thought. From 1905 to 1907, men had wrestled with rock and steel, pouring their sweat and ambition into the Hauser Dam. A steel leviathan, 630 feet long and 75 feet high, it rose from the churning waters, its masonry footings sunk deep into the riverbed, or so they believed. For a million and a half dollars, they had bought power, electricity to fuel the hungry mines and burgeoning towns of Montana. On February 12, 1907, the great beast was declared operational, its turbines humming a song of progress.\n\nBut the river, ancient and unforgiving, held its secrets. Beneath the grand facade, where 300 feet of the dam rested not on bedrock but on a treacherous bed of gravel, the water began its insidious work. Thirty-five-foot sheet pilings, driven deep, were meant to hold, but the river’s relentless pressure found the weakness. The twenty-foot layer of volcanic ash, laid to prevent seepage, proved no match for the gnawing current. The men, proud of their creation, were blind to the slow, relentless undermining.\n\nThen came April 14, 1908, a day etched in the memory of the Missouri. At precisely 2:30 in the afternoon, the first sign of betrayal appeared: silt-heavy water, a muddy gush, erupted from the dam’s base near the powerhouse. A company man, his heart seizing with dread, saw it. He knew the river’s temper, its brutal indifference. He ran, shouting, a raw cry for life, urging every soul in the powerhouse to flee. Fifteen minutes later, the masonry footings groaned, then gave way. A thirty-foot breach ripped open, a gaping wound in the dam’s side. The river, unleashed, surged through, tearing at the foundations, hungry for more.\n\nSix minutes. That was all it took. The initial breach widened, consumed, until a three-hundred-foot section of the steel dam tore loose, a monumental roar echoing across the canyon. A wall of water, twenty-five to thirty feet high, thundered downstream, a liquid avalanche. Martin Gerry, the construction supervisor, received the chilling news by telephone. No time for despair, only action. Telegrams flew, desperate warnings to towns in the path of the deluge. A Great Northern Railway locomotive, a steel horse against the flood, raced seventy miles to Great Falls, its whistle screaming a dire prophecy at every station.\n\nThe Holter Dam construction camp, further downriver, was swallowed whole. At the Seven Bar Nine Ranch, young Gary Cooper and his family fled before the torrent claimed their land. Craig, Montana, a small settlement, received its warning, its residents scattering to higher ground. The river, though, showed a strange mercy. The narrow canyons above Craig constricted the flood, dissipating some of its fury. The town was not swept away, only a few shacks and the railroad station torn from their moorings. The iron Craig Bridge, twenty-five feet above the normal flow, saw two feet of water surge over its deck, yet it held, a testament to its own stubborn strength. The Great Northern tracks from Craig to Ulm vanished beneath the brown tide.\n\nIn Great Falls, seventy miles distant, the Missouri rose a mere seven feet. The quick thinking of workers at the Boston and Montana Smelter, who improvised a wing dam and even dynamited a section of the Black Eagle Dam, proved unnecessary, yet their readiness spoke of the primal fear the river could inspire. The cost of the river’s brief, violent freedom: over a million dollars. And in the years that followed, the ghost of Hauser Dam haunted the minds of engineers. The steel dam, structurally sound, had been condemned by its footings. The lesson was brutal, clear: build on gravel, and the river will always find its way. Even at the close of the century, twisted remnants of that steel skeleton could be found along the Missouri’s banks, a silent, rusting monument to a battle lost.",
+  "category": "disaster",
   "location": "Hauser Dam, Lewis and Clark County",
   "latitude": 46.7662,
   "longitude": -111.8888,
   "tags": [
     "Hauser Dam",
     "Missouri River",
-    "Hydroelectric",
-    "Infrastructure",
-    "Helena"
+    "Dam Failure",
+    "Disaster",
+    "Helena",
+    "Hydroelectric"
   ],
   "expandable": true,
   "sources": [

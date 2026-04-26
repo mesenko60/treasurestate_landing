@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import TdihCard from './TdihCard';
-import { TdihEntry, findEntryByDate } from '../lib/tdih';
+import { TdihEntry, findEntryByDate, getTodayTdihPath } from '../lib/tdih';
 
 type Props = {
   heading?: string;
@@ -37,6 +37,7 @@ export default function TodayInHistory({ heading = 'Today in Montana History', v
   }, []);
 
   const todayEntry = useMemo(() => findEntryByDate(entries), [entries]);
+  const todayPath = useMemo(() => getTodayTdihPath(), []);
 
   if (variant === 'pill') {
     const isGlass = tone === 'glass';
@@ -59,7 +60,7 @@ export default function TodayInHistory({ heading = 'Today in Montana History', v
           }}
         >
           <Link
-            href="/this-day-in-history/"
+            href={todayPath}
             style={{
               color: isGlass ? '#f5c97a' : '#3b6978',
               fontSize: '0.72rem',

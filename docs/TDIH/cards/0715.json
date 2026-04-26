@@ -3,17 +3,18 @@
   "month": 7,
   "day": 15,
   "date_display": "July 15",
-  "headline": "Montana's First State Fair Opens in Helena, 1893",
+  "headline": "Original Montana Club Building Opens in Helena, 1893",
   "year": 1893,
-  "body": "On July 15, 1893, Montana's first state fair officially opened its gates in Helena. This landmark event showcased the agricultural and industrial achievements of the young state, offering a platform for farmers, ranchers, and businesses to display their products and innovations. Beyond its economic significance, the fair served as a vital social gathering, fostering a sense of community and shared identity among Montanans. It featured various attractions, including exhibits, competitions, and entertainment, reflecting the diverse interests and aspirations of the state's residents. The establishment of the state fair marked a coming-of-age for Montana, demonstrating its progress and potential in the post-statehood era.",
-  "category": "agriculture",
+  "body": "Well now, gather 'round, and let ol' Mark tell you a tale of Helena, Montana, back in '93, a year when the silver panic was settin' folks on edge, but some still had a mind for the finer things, or at least, the things they called fine. It wasn't no state fair that opened its gates on July 15th, no sir, not unless you count the grand spectacle of human ambition and high society as a fair. What truly commenced that day was the unveiling of the Montana Club, a veritable palace of brick and stone, built for the gentlemen of means, the mining magnates, the bankers, and the politicians who, by gum, ran the whole show.\n\nThis wasn't some ramshackle saloon, mind you, nor a rough-and-tumble gambling den. No, the Montana Club was a statement, a declaration in granite and polished mahogany that Helena, for all its frontier grit, had arrived. It was founded back in '85, by a collection of fifty souls, all male, all attorneys, or bankers, or mining men, or livestock kings, or timber barons, or transportation titans, or wholesalers, or, as they so modestly put it, \"self-described capitalists.\" They had a vision, you see, of a place where a man could escape the dust and the clamor, a sanctuary where deals were struck over cigars and brandy, and the fate of the territory, and later the state, was often decided in hushed tones.\n\nThe original building, a seven-story marvel, rose from a corner lot bought for a hefty forty-five thousand dollars in 1891. It was a structure designed to impress, to stand as a monument to the wealth and influence that had flowed into Montana with the gold and silver strikes. And on that mid-July day in 1893, the doors swung open, inviting the elite of Helena into its hallowed halls. Imagine the scene: the clinking of glasses, the murmur of conversation, the scent of fine tobacco and even finer aspirations. It was a place where a man could feel important, even if the world outside was teetering on the brink of financial ruin.\n\nOne fellow who knew the ins and outs of that establishment better than most was Julian Anderson, a man of color who, from about that very year of 1893, stood behind the bar, a silent observer of the comings and goings of Montana's powerful. He served drinks for over sixty years, a testament to his steady hand and keen eye, and no doubt, a quiet wit that saw more than he ever let on. As one newspaper account from the era might have put it, if they'd been inclined to notice such things, \"Mr. Anderson, with his quiet demeanor and expert hand, ensures that the gentlemen of the Montana Club are never wanting for refreshment, a most essential service in these trying times.\" He was, in his own way, as much a fixture as the grand staircase or the plush leather chairs, a witness to history unfolding, one cocktail at a time. The club, for all its grandeur, was not immune to the vagaries of fate, for a mere decade later, in April of 1903, fire would claim that magnificent structure, leaving naught but a charred skeleton. But on that July day in '93, all was new, all was promising, and the gentlemen of Helena raised their glasses to a future they believed was as solid and enduring as the granite of their new club.",
+  "category": "history",
   "location": "Helena, Lewis and Clark County",
   "latitude": 46.5928,
   "longitude": -112.0287,
   "tags": [
-    "agriculture",
-    "culture",
-    "economy"
+    "history",
+    "social",
+    "architecture",
+    "helena"
   ],
   "expandable": true,
   "sources": [

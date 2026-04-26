@@ -3,19 +3,21 @@
   "month": 4,
   "day": 26,
   "date_display": "April 26",
-  "headline": "Anaconda Standard Reports on 'Strange Love' Story, 1906",
+  "headline": "End of Copper Kings War Ignites Butte Building Boom, 1906",
   "year": 1906,
-  "body": "On April 26, 1906, The Anaconda Standard, a prominent newspaper in Montana, featured an intriguing story about a \"strange love.\" While the specifics of the narrative are not fully detailed in historical records, its mention in historical summaries suggests it captured the public's imagination and reflected the social curiosities of the era. Newspapers like The Anaconda Standard played a crucial role in shaping public opinion and documenting the daily lives, dramas, and events that unfolded in Montana's bustling mining communities. Such stories, whether factual or embellished, offered a glimpse into the human interest aspects of life in early 20th-century Montana, providing entertainment and a sense of connection among readers. This particular report highlights the diverse content found in historical newspapers and their importance as primary sources for understanding the social fabric of the past.",
-  "category": "arts_culture",
+  "body": "The year 1906 dawned upon Butte, Montana, a city forged in the crucible of copper, yet long held captive in the iron grip of industrial warfare. For years, the very earth beneath its streets had been a battleground, not merely for ore, but for power, for profit, for the souls of men. The War of the Copper Kings, a brutal, protracted conflict between the titans of industry—Marcus Daly, William Clark, and Augustus Heinze—had bled the district dry, not of its mineral wealth, but of its potential for stable, unbridled growth. Lawsuits piled higher than the tailings heaps, capital lay stagnant, and the future of the richest hill on Earth hung precariously in the balance.\n\nBut April 26, 1906, marked a turning point, a cessation of hostilities that would unleash a torrent of development. Augustus Heinze, the audacious interloper who had dared to challenge the monolithic Amalgamated Copper Company, finally capitulated. His vast holdings, the very mines that had fueled his rebellion and the endless legal skirmishes, were sold to his formidable rival. The ink on the contracts was barely dry, yet the effect was immediate and profound. Over one hundred lawsuits, shackles on progress, were summarily dismissed. Millions of dollars, once frozen in legal limbo, were liberated, flowing like molten copper into the veins of Butte's economy.\n\nWith the war concluded, the city, long stifled by uncertainty, erupted in a frenzy of construction. The population, already swollen from fewer than 50,000 in 1900, surged towards 85,000 by 1917, demanding housing, commerce, and infrastructure. From 1906 to 1908, Butte witnessed a building boom of unprecedented scale, transforming its very skyline. Granite Street, a central artery, became a perpetual construction site, as grand structures rose from the dust. The Leonard Hotel, the Silver Bow Club, the Carpenters Union Hall, and the Telephone Company building, all began their ascent, symbols of a new era. The Napton apartment building, at 25 East Granite, even bore the year 1906 in its facade's medallions, a permanent marker of this explosive growth.\n\nFurther along, a new labor temple at 128 West Broadway and the Buol Building at 132 West Broadway took shape. The Metals Bank skyscraper, a testament to financial power, was completed at Park and Main, while the Phoenix Building, home to Symons Department Store, rose from the ashes of a devastating fire just months prior. Madame Marie Paumie, a woman of enterprise, commissioned the St. Francis Apartments on South Dakota Street. Even St. Mark's Lutheran Church, a sanctuary for the working class, began construction, costing a substantial $16,000. These were not mere buildings; they were monuments to capital, to labor, and to the relentless, often brutal, march of progress.\n\nYet, beneath the gleaming facades and the roar of construction, the lives of the miners, the laborers, the very backbone of Butte, continued their arduous rhythm. Their sweat and toil laid the bricks, poured the concrete, and extracted the copper that fueled this boom. The Anaconda Standard, ever the chronicler of the city's pulse, captured the prevailing sentiment, declaring, \"The Montana copper war has ended and peace hence forth will reign over the Butte district. The future has in store for the city unexampled.\" This peace, however, was a fragile thing, bought at a price, and the unexampled future it promised would continue to be shaped by the same powerful forces that had waged the war.",
+  "category": "labor_history",
   "location": "Butte, Silver Bow County",
   "latitude": 46.0038,
   "longitude": -112.5348,
   "tags": [
-    "Anaconda Standard",
+    "mining",
+    "labor_history",
     "Butte",
-    "Newspaper",
-    "Social History",
-    "Love Story"
+    "Anaconda Copper",
+    "Augustus Heinze",
+    "War of the Copper Kings",
+    "building boom"
   ],
   "expandable": false,
   "sources": [

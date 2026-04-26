@@ -3,17 +3,17 @@
   "month": 3,
   "day": 24,
   "date_display": "March 24",
-  "headline": "Virtual Event on Montana's Constitutional History, 2026",
-  "year": 2026,
-  "body": "On March 24, 2026, a virtual event titled 'Documenting Montana's Constitutional History: 1867, 1884, 1889, & 1972' was held, featuring Montana State Archivist Rich Aarstad. This event delved into the various constitutional conventions and documents that shaped Montana's governance, from its territorial days to its modern constitution. It provided an opportunity for the public to learn about the foundational legal frameworks that underpin the state's history and development. The discussion covered the evolution of Montana's constitutional landscape, highlighting key moments and figures in its political past. This virtual gathering underscores the ongoing effort to preserve and educate about Montana's rich historical and legal heritage, making it accessible to a wider audience.",
-  "category": "statehood",
-  "location": "Helena, Lewis and Clark County",
-  "latitude": 46.5921,
-  "longitude": -112.0215,
+  "headline": "Montana Carves Out New Lands: Sheridan and Stillwater Counties Born, 1913",
+  "year": 1913,
+  "body": "Well now, if you ever fancied a good old-fashioned carving, not of a Christmas turkey, mind you, but of the very land itself, then March 24, 1913, was a day to remember in the grand, sprawling territory of Montana. The legislative gentlemen, with their pens and maps, decided it was high time to slice off a couple more pieces from the existing pie, giving birth to two new counties: Sheridan and Stillwater. It was a common enough practice in those days, this business of drawing lines on God's green earth and calling it progress, or perhaps, just plain convenience for the folks who lived there.\n\nSheridan County, up there in the frosty northeast, was chiseled out of the considerable bulk of Dawson and Valley Counties. They named it after General Philip Sheridan, a man who knew a thing or two about drawing lines and making them stick, though his lines were usually drawn with cavalry and cannon, not ink and parchment. Plentywood, a name that fairly sings of abundance, was chosen as its seat, a place where the wind howled down from Saskatchewan, reminding everyone that civilization, even in its newest forms, was still a stone's throw from the wild. The land stretched out, 1,706 square miles of it, a goodly portion of which was fit for the plow and the rancher's dream.\n\nDown south, in a rather different corner of the state, Stillwater County emerged from the embrace of Sweet Grass, Yellowstone, and Carbon Counties. This one took its name from the Stillwater River, a waterway that meandered through the landscape, much like the hopes and dreams of the settlers. Columbus, a town with a name that spoke of discovery, became its county seat. It was a place where the Beartooth Mountains loomed, a majestic backdrop to the everyday struggles and triumphs of those who sought to tame the land. These new counties, twenty-six of which sprang up between 1910 and 1920, were a testament to the relentless march of settlement, a sign that Montana was filling up, inch by hard-won inch.\n\nOne might wonder, what was the fuss all about? Why this constant re-drawing of boundaries? It was simple enough, really. As more folks arrived, bringing their families, their ambitions, and their occasional squabbles, the old county lines became too unwieldy. Distances to the county seat grew too vast, and the needs of the populace demanded closer governance. It was a matter of practicality, of bringing the courthouse and the tax collector a bit nearer to the common man. As one newspaper of the era, the *Billings Gazette*, might have put it, \"The people demand that their affairs be managed with dispatch, and a shorter ride to the county seat is a boon to both man and beast.\" This carving of the land, though seemingly a dry administrative act, was in truth a vibrant chapter in the ongoing saga of Montana's growth, a testament to the enduring spirit of those who sought to build a life in the vast, untamed West.",
+  "category": "frontier_history",
+  "location": "Plentywood, Sheridan County and Columbus, Stillwater County",
+  "latitude": 47.2,
+  "longitude": -106.945,
   "tags": [
-    "Montana Constitution",
-    "State History",
-    "Virtual Event"
+    "county_creation",
+    "montana_history",
+    "frontier_settlement"
   ],
   "expandable": true,
   "sources": [

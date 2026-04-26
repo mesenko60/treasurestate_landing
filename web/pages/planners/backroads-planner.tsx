@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Header from '../../components/Header';
+import SiteSearchWithHistory from '../../components/SiteSearchWithHistory';
 import AppInstallCTA from '../../components/AppInstallCTA';
 import { trackMapInteraction } from '../../lib/gtag';
 import {
@@ -649,6 +650,7 @@ export default function BackroadsPlanner({
       `}} />
 
       <Header />
+      <SiteSearchWithHistory layout="strip" />
 
       <div className="planner-wrap">
         <button

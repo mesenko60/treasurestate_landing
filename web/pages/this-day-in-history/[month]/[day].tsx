@@ -7,7 +7,7 @@ import Header from '../../../components/Header';
 import Hero from '../../../components/Hero';
 import Footer from '../../../components/Footer';
 import Breadcrumbs from '../../../components/Breadcrumbs';
-import { CATEGORY_LABELS, TdihEntry, getPrevNext, getTdihUrl, monthNumberToSlug, monthSlugToNumber, toEntryId } from '../../../lib/tdih';
+import { TdihEntry, formatCategoryLabel, getPrevNext, getTdihUrl, monthNumberToSlug, monthSlugToNumber, toEntryId } from '../../../lib/tdih';
 
 type Props = {
   entry: TdihEntry;
@@ -26,7 +26,7 @@ export default function TdihDayPage({ entry, prev, next }: Props) {
   const pageUrl = `https://treasurestate.com${getTdihUrl(entry)}`;
   const title = `${entry.date_display} in Montana History: ${entry.headline}`;
   const desc = `${entry.date_display} (${entry.year ?? 'Historic era'}): ${entry.headline}. ${entry.body.slice(0, 140)}...`;
-  const categoryLabel = CATEGORY_LABELS[entry.category] || entry.category.replace(/_/g, ' ');
+  const categoryLabel = formatCategoryLabel(entry.category);
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },

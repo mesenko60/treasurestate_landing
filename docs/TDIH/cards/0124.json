@@ -3,18 +3,19 @@
   "month": 1,
   "day": 24,
   "date_display": "January 24",
-  "headline": "Skinner and Carter Hanged by Montana Vigilantes, 1864",
+  "headline": "Skinner, Carter, and Cooper Hanged by Montana Vigilantes, 1864",
   "year": 1864,
-  "body": "On January 24, 1864, in the midst of the Montana gold rush, two men identified as Skinner and Carter were subjected to a vigilante trial and subsequently hanged. This event was part of the broader campaign by the Montana Vigilantes to establish order and justice in the lawless mining camps of the Idaho Territory, which would soon become Montana Territory. The trial, held in a dry goods store, exemplified the swift and often brutal nature of frontier justice when formal legal systems were absent or deemed ineffective. Skinner and Carter were accused of being part of the notorious road agent gang led by Henry Plummer, which was responsible for numerous robberies and murders. Their execution, like many others carried out by the vigilantes, served as a stark warning to criminals and was intended to deter further lawlessness. These actions, though controversial in their methods, played a significant role in shaping the early social and legal landscape of Montana.",
+  "body": "The cold January night of 1864 bit deep into the raw frontier. A stark wind whipped through Hell Gate, carrying with it the scent of pine and the chill of impending death. The Montana Vigilantes, a grim, determined force forged in the crucible of lawlessness, had gathered. Their quarry: Cyrus Skinner, Aleck Carter, and Johnny Cooper, three men whose names were whispered with fear and loathing across the gold camps. The original card stated January 24th, but the truth, as etched in the stark records of the time, points to the 25th, a day that would forever stain the snows of Hell Gate.\n\nSkinner, a man whose very presence seemed to exude a hardened, merciless brutality, was seized first. His woman, Nelly, a figure of fierce loyalty, railed against the vigilantes, her words sharp as winter ice. But their resolve was unyielding. Next, Aleck Carter, found in a drunken stupor at Miller's, roused to the grim reality of his capture. \"This is tight papers, ain't it, boys?\" he muttered, a desperate plea for a smoke on his lips. He heard of other hangings, a chilling prelude to his own fate, and remarked with a hollow cynicism, \"all right; not an innocent man hung yet.\"\n\nJohnny Cooper, a lieutenant in the notorious Road Agent gang, was discovered wounded, a testament to a prior quarrel with Carter over a stolen pistol. He was a splendid horseman, a man who had once outrun a hundred bullets, but now, his luck had run out. The three were marched to Higgins' store, a makeshift court where frontier justice, swift and unyielding, was meted out. The trials were brief, the verdict predetermined by the weight of their crimes. Skinner, ever defiant, refused to confess, clinging to his chilling philosophy: \"Dead men tell no tales.\" He had, after all, been the one to ingratiate himself with others, prompting the murder of Magruder, a man who believed his killers were his friends.\n\nUnder the flickering light of torches, Carter and Skinner were led to Higgins' corral. Two poles, stark against the night sky, leaned over the fence, ropes dangling like macabre ornaments. Store-boxes served as their final platforms. Skinner, in a desperate, futile act, broke from his guards, shouting, \"shoot! shoot!\" His captors, veterans of such grim theater, quickly subdued him. He tried again on the box, a final, desperate struggle against the inevitable. \"I was not born to be hanged,\" he declared, a trifling error in judgment that would soon be corrected. Carter, seemingly ashamed of Skinner's frantic attempts, was asked to confess his part in a murder. He erupted in a volley of oaths, a final, defiant roar against his accusers. But the end was near. Their faces covered with handkerchiefs, they were launched into eternity, the gang's password, \"I am innocent,\" a hollow whisper on their dying lips. Both died easily, their bodies swaying in the cold night air, a grim warning to all who would defy the nascent order of Montana. The people, in their own quiet way, had already prepared their graves, a final, somber act in the brutal drama of the frontier.",
   "category": "crime_outlaws",
-  "location": "Bannack, Beaverhead County",
-  "latitude": 45.1649,
-  "longitude": -112.9917,
+  "location": "Hell Gate, Missoula County",
+  "latitude": 46.8832566,
+  "longitude": -114.0870563,
   "tags": [
     "Montana Vigilantes",
-    "frontier justice",
+    "vigilante justice",
     "gold rush",
-    "outlaws"
+    "outlaws",
+    "Johnny Cooper"
   ],
   "expandable": true,
   "sources": [

@@ -7,7 +7,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AppInstallCTA from '../components/AppInstallCTA';
 import HomepageCultureModule from '../components/HomepageCultureModule';
-import TodayInHistory from '../components/TodayInHistory';
+import SiteSearchWithHistory from '../components/SiteSearchWithHistory';
+import TodayTdihLink from '../components/TodayTdihLink';
 import { isEnabled } from '../lib/feature-flags';
 import { getFeaturedArticles, getFeaturedFieldNotes, type ArticleSummary, type FieldNote } from '../lib/articles';
 
@@ -113,30 +114,11 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <a href="#relocate" className="hp-hero-btn hp-hero-btn--primary">I&rsquo;m Moving</a>
             <a href="#visit" className="hp-hero-btn hp-hero-btn--secondary">I&rsquo;m Visiting</a>
           </div>
-          <button
-            onClick={() => window.dispatchEvent(new Event('openSearch'))}
-            aria-label="Open search"
-            className="hp-hero-search"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            <span style={{ flex: 1, textAlign: 'left', color: '#9ca3af', fontFamily: "'Montserrat', sans-serif", fontSize: '0.95rem', fontWeight: 500 }}>
-              Search Montana...
-            </span>
-            <kbd style={{ fontSize: '0.7rem', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', color: '#9ca3af', background: '#f9fafb' }}>⌘K</kbd>
-          </button>
-          <div className="hp-hero-history">
-            <TodayInHistory variant="pill" tone="glass" />
-          </div>
+          <SiteSearchWithHistory layout="home" />
         </div>
       </header>
 
       <style dangerouslySetInnerHTML={{ __html: `
-        /* Hero search bar */
-        .hp-hero-search { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.95); border: none; border-radius: 8px; padding: 10px 18px; margin: 2.5rem auto 0; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); max-width: 340px; width: auto; transition: box-shadow 0.2s, transform 0.2s; }
-        .hp-hero-search:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.35); transform: translateY(-2px); }
-
         /* Hero buttons */
         .hp-hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: nowrap; }
         .hp-hero-btn { display: inline-block; padding: 0.85rem 2.25rem; border-radius: 8px; font-family: var(--font-primary); font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; letter-spacing: 0.3px; }
@@ -152,7 +134,6 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
 
         /* Path cards (two-column) */
         .hp-paths { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; transform: translateY(-15px); margin-bottom: -15px; position: relative; z-index: 2; padding: 0 1rem; }
-        .hp-hero-history { max-width: 660px; margin: 0.8rem auto 0; }
         .hp-path-card { background: var(--white); border-radius: 14px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); padding: 2rem 1.75rem; text-decoration: none; color: var(--dark); transition: transform 0.2s, box-shadow 0.2s; }
         .hp-path-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
         .hp-path-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
@@ -297,7 +278,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
             <Link href="/best-of/towns-near-hot-springs" className="hp-path-link">Hot Springs</Link>
             <Link href="/lodging" className="hp-path-link">Find Lodging</Link>
             <Link href="/planners" className="hp-path-link">Travel Guides</Link>
-            <Link href="/this-day-in-history" className="hp-path-link">This Day in History</Link>
+            <TodayTdihLink className="hp-path-link">This Day in History</TodayTdihLink>
           </div>
         </div>
       </div>

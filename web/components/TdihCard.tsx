@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CATEGORY_LABELS, TdihEntry, getTdihUrl } from '../lib/tdih';
+import { TdihEntry, formatCategoryLabel, getTdihUrl } from '../lib/tdih';
 
 type Props = {
   entry: TdihEntry;
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function TdihCard({ entry, defaultOpen = false, showViewFullLink = true }: Props) {
-  const categoryLabel = CATEGORY_LABELS[entry.category] || entry.category.replace(/_/g, ' ');
+  const categoryLabel = formatCategoryLabel(entry.category);
   const url = getTdihUrl(entry);
 
   return (
