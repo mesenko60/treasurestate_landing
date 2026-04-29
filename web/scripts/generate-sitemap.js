@@ -44,7 +44,6 @@ function getLastmod(loc) {
   if (loc.includes('/ghost-towns/')) return '2026-04-18';
   if (loc.includes('/history-trails/')) return '2026-03-29';
   if (loc.includes('/montana-railroad-history/')) return '2026-04-11';
-  if (loc.includes('/explore-montana/')) return '2026-03-01';
   if (/\/guides\/moving-to-/.test(loc)) return '2026-03-01';
   if (loc.includes('/montana-towns/')) return '2026-03-01';
   if (loc.includes('/compare/')) return '2026-03-01';
@@ -61,7 +60,6 @@ function getPriority(loc) {
   if (loc === baseUrl + '/this-day-in-history/') return 0.8;
   if (loc === baseUrl + '/this-day-in-history/browse/') return 0.7;
   if (/\/this-day-in-history\/[^/]+\/\d+\/$/.test(loc)) return 0.65;
-  if (loc === baseUrl + '/explore-montana/') return 0.85;
   if (/\/montana-towns\/[^/]+\/$/.test(loc)) return 0.9;
   if (/\/guides\/moving-to-/.test(loc)) return 0.8;
   if (/\/lodging\/[^/]+\//.test(loc)) return 0.8;
@@ -141,7 +139,6 @@ function writeSitemapIndex(outDir, sitemaps, today) {
   collectUrls('core', (add) => {
     add(`${baseUrl}/`, 'weekly');
     add(`${baseUrl}/montana-towns/`, 'weekly');
-    add(`${baseUrl}/explore-montana/`, 'weekly');
     add(`${baseUrl}/guides/`);
     add(`${baseUrl}/lodging/`);
     add(`${baseUrl}/events/`, 'monthly');

@@ -59,9 +59,17 @@ function main() {
     '/information/road-to-the-buffalo-plains/  /information/road-to-the-buffalo/  301',
   ];
 
-  const body = [...lines, '', ...informationRedirects].join('\n') + '\n';
+  /** Retired hub merged into homepage; 301 for SEO and old bookmarks */
+  const siteRedirects = [
+    '/explore-montana  /  301',
+    '/explore-montana/  /  301',
+    '/explore-montana.html  /  301',
+  ];
+
+  const extraCount = informationRedirects.length + siteRedirects.length;
+  const body = [...lines, '', ...informationRedirects, ...siteRedirects].join('\n') + '\n';
   fs.writeFileSync(OUT_PATH, body, 'utf8');
-  console.log(`Wrote ${lines.length} marker + ${informationRedirects.length} information redirects to ${OUT_PATH}`);
+  console.log(`Wrote ${lines.length} marker + ${extraCount} other redirects to ${OUT_PATH}`);
 }
 
 main();

@@ -22,7 +22,7 @@ The footer (`Footer.tsx`) should contain links to pages that are **not** in the 
 - `/information/geology-of-western-montana/`
 - `/planners/summer-road-trips/`
 - `/planners/winter-driving-guide/`
-- `/explore-montana/`
+- `/gear/`
 
 If a new page is added that isn't reachable from the nav or from contextual links on at least 3 other pages, consider adding it to the footer.
 
