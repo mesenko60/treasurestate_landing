@@ -45,15 +45,32 @@ export default function QRInstallModal({ open, onClose, targetUrl = DEFAULT_INST
         role="dialog"
         aria-modal="true"
         aria-labelledby="qr-install-title"
+        aria-describedby="qr-install-desc"
       >
         <button type="button" className="qr-install-close" onClick={onClose} aria-label="Close">
           &times;
         </button>
         <div className="qr-install-accent" aria-hidden="true" />
         <h2 id="qr-install-title" className="qr-install-title">
-          Get the Free App
+          Get the free Treasure State app
         </h2>
-        <p className="qr-install-sub">Scan with your phone to install the Treasure State app</p>
+        <div id="qr-install-desc" className="qr-install-desc">
+          <p className="qr-install-lead">
+            Scan this code with your phone. It opens our <strong>Nearby</strong> map—then you can{' '}
+            <strong>Add to Home Screen</strong> so Treasure State works like a normal app (no App Store
+            required).
+          </p>
+          <ul className="qr-install-bullets">
+            <li>
+              <strong>Drive alerts:</strong> get notified when you&apos;re approaching historic markers,
+              hot springs, trails, and other Montana points of interest.
+            </li>
+            <li>
+              <strong>Road trips:</strong> guides, planners, and town pages stay one tap away—no digging
+              through browser tabs on the highway.
+            </li>
+          </ul>
+        </div>
         <div className="qr-install-qr-wrap">
           <QRCodeSVG
             value={targetUrl}
@@ -70,8 +87,8 @@ export default function QRInstallModal({ open, onClose, targetUrl = DEFAULT_INST
             }}
           />
         </div>
-        <p className="qr-install-hint">Scan with your phone camera to install</p>
-        <p className="qr-install-fine">Point your camera at the code &mdash; no app needed to scan</p>
+        <p className="qr-install-hint">Open your phone&apos;s camera and point it at the code</p>
+        <p className="qr-install-fine">Most phones open the link automatically; you don&apos;t need a separate QR app</p>
         <button type="button" className="qr-install-done" onClick={onClose}>
           Close
         </button>
@@ -89,7 +106,7 @@ export default function QRInstallModal({ open, onClose, targetUrl = DEFAULT_INST
         }
         .qr-install-dialog {
           position: relative;
-          max-width: 340px;
+          max-width: 400px;
           width: 100%;
           background: linear-gradient(165deg, #1a3544 0%, #0d1f2d 55%, #1a3544 100%);
           border-radius: 14px;
@@ -137,11 +154,28 @@ export default function QRInstallModal({ open, onClose, targetUrl = DEFAULT_INST
           border: none;
           padding: 0;
         }
-        .qr-install-sub {
-          font-size: 0.88rem;
+        .qr-install-desc {
+          text-align: left;
           margin: 0 0 1rem;
-          opacity: 0.9;
+        }
+        .qr-install-lead {
+          font-size: 0.86rem;
+          margin: 0 0 0.65rem;
+          opacity: 0.92;
+          line-height: 1.5;
+        }
+        .qr-install-bullets {
+          margin: 0;
+          padding-left: 1.15rem;
+          font-size: 0.82rem;
           line-height: 1.45;
+          opacity: 0.88;
+        }
+        .qr-install-bullets li {
+          margin-bottom: 0.4rem;
+        }
+        .qr-install-bullets li:last-child {
+          margin-bottom: 0;
         }
         .qr-install-qr-wrap {
           display: inline-block;
