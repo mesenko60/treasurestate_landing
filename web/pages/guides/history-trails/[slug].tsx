@@ -215,19 +215,14 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
         }
         .trail-primary-cta:hover { background: #204051; color: #fff !important; }
         .trail-app-cta { min-width: 0; }
-        .trail-app-cta .app-install-inline {
-          margin: 0; padding: 0; border-left: 0; background: transparent; align-items: center;
-          color: #4d4331; gap: 0.45rem; font-size: 0.84rem;
+        .trail-app-cta .app-cta-inline {
+          margin: 0; padding: 0.6rem 0.75rem; border-left: 0; border-radius: 8px;
+          background: linear-gradient(135deg, #1a3544 0%, #204051 100%);
         }
-        .trail-app-cta .app-install-inline-icon { display: none; }
-        .trail-app-cta .app-install-inline-body { display: block; flex: 0 1 auto; line-height: 1.35; }
-        .trail-app-cta .app-install-inline-body strong { font-size: 0.84rem; color: #204051; margin-right: 0.25rem; }
-        .trail-app-cta .app-install-inline-body span { display: inline; font-size: 0.82rem; color: #6c5d46; }
-        .trail-app-cta .app-install-inline-btn {
-          margin-top: 0; border-radius: 999px; padding: 0.34rem 0.7rem; font-size: 0.74rem;
-          background: transparent; color: #2f6f7b; border: 1px solid rgba(47,111,123,0.38);
+        .trail-app-cta .app-cta-inline-icon { display: none; }
+        .trail-app-cta .app-cta-inline-btn {
+          margin-top: 0; border-radius: 999px; padding: 0.4rem 0.8rem; font-size: 0.76rem;
         }
-        .trail-app-cta .app-install-inline-btn:hover { background: rgba(47,111,123,0.08); }
         .trail-meta-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 1.1rem 0; }
         .trail-meta-item { font-size: 0.9rem; color: #666; padding: 0.85rem; background: #f8faf8; border: 1px solid #e8ede8; border-radius: 10px; }
         .trail-meta-item strong { color: #204051; }

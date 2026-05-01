@@ -628,18 +628,18 @@ export default function BackroadsPlanner({
         .route-alerts-popover h2 { margin: 0; font-size: 0.98rem; color: #fff; letter-spacing: -0.01em; }
         .route-alerts-popover p { margin: 7px 0 0; color: #aab4c5; font-size: 0.8rem; line-height: 1.45; }
         .route-alerts-close { border: none; background: rgba(255,255,255,0.08); color: #cbd5e1; cursor: pointer; border-radius: 999px; width: 26px; height: 26px; }
-        .route-alerts-popover .app-install-inline {
-          margin: 12px 0 0; padding: 0; background: transparent; border-left: 0; color: #e5e7eb; gap: 0.55rem;
+        .route-alerts-popover .app-cta-inline {
+          margin: 12px 0 0; padding: 0.6rem 0.75rem; background: transparent; border-left: 0; border-radius: 0; color: #e5e7eb;
         }
-        .route-alerts-popover .app-install-inline-icon { display: none; }
-        .route-alerts-popover .app-install-inline-body { display: none; }
-        .route-alerts-popover .app-install-inline-btn {
-          margin: 0; background: #3b82f6; border-radius: 999px; padding: 0.5rem 0.9rem; font-size: 0.78rem;
+        .route-alerts-popover .app-cta-inline-icon { display: none; }
+        .route-alerts-popover .app-cta-inline-left { display: none; }
+        .route-alerts-popover .app-cta-inline-btn {
+          margin: 0; width: 100%; text-align: center; border-radius: 999px; padding: 0.5rem 0.9rem; font-size: 0.78rem;
         }
-        .route-alerts-popover .app-install-inline-ios {
-          color: #d6dce8; margin-top: 0; line-height: 1.4;
+        .route-alerts-popover .app-cta-inline-help {
+          color: #d6dce8; margin-top: 0; line-height: 1.4; max-width: none;
         }
-        .route-alerts-popover .app-install-inline-ios button { background: #3b82f6; }
+        .route-alerts-popover .app-cta-inline-help button { background: var(--gold-display, #d8973c); }
         @media (max-width: 768px) {
           .planner-sidebar { width: 100%; position: absolute; bottom: 0; left: 0; right: 0; top: auto; height: 55vh; border-radius: 16px 16px 0 0; margin-left: 0 !important; }
           .planner-sidebar.collapsed { transform: translateY(calc(100% - 48px)); }

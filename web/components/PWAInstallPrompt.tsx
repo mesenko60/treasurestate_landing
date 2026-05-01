@@ -14,8 +14,21 @@ interface BeforeInstallPromptEvent extends Event {
 type PromptMode = 'android' | 'ios' | null;
 
 const DISMISS_KEY = 'pwa-prompt-dismissed';
-/** After dismiss, hide the prompt until this elapses (re-offer later). */
 const DISMISS_COOLDOWN_MS = 30 * 24 * 60 * 60 * 1000;
+
+function isIOSDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const ua = navigator.userAgent;
+  return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function isIOSNonSafari(): boolean {
+  if (typeof window === 'undefined') return false;
+  const ua = navigator.userAgent;
+  const isIOS = isIOSDevice();
+  const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|OPiOS|EdgiOS|Chrome/.test(ua);
+  return isIOS && !isSafari;
+}
 
 function detectPromptMode(): PromptMode {
   if (typeof window === 'undefined') return null;
@@ -30,7 +43,7 @@ function detectPromptMode(): PromptMode {
   const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|OPiOS|EdgiOS|Chrome/.test(ua);
 
   if (isIOS && isSafari) return 'ios';
-  return null; // Android handled via beforeinstallprompt event
+  return null;
 }
 
 function readDismissedWithinCooldown(): boolean {
@@ -53,11 +66,15 @@ function persistDismiss() {
   }
 }
 
+/**
+ * Persistent install bar — sits above MobileBottomNav on mobile, bottom-left on desktop.
+ * Always visible (unless dismissed or already installed), on every page.
+ */
 export default function PWAInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(false);
   const [iosMode, setIosMode] = useState(false);
-  const [showIOSSteps, setShowIOSSteps] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -92,12 +109,16 @@ export default function PWAInstallPrompt() {
   const handleDismiss = useCallback(() => {
     trackPWAInstallDismissed();
     setDismissed(true);
-    setShowIOSSteps(false);
+    setShowHelp(false);
     persistDismiss();
   }, []);
 
   const handleInstall = useCallback(async () => {
-    if (!deferredPrompt) return;
+    if (!deferredPrompt) {
+      setShowHelp(true);
+      trackPWAInstallInstructionsShown();
+      return;
+    }
     deferredPrompt.prompt();
     const choice = await deferredPrompt.userChoice;
     if (choice.outcome === 'accepted') {
@@ -113,206 +134,140 @@ export default function PWAInstallPrompt() {
   const showBanner = !dismissed && (deferredPrompt || iosMode);
   if (!showBanner) return null;
 
+  const helpMessage = iosMode ? (
+    <>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong></>
+  ) : isIOSNonSafari() ? (
+    <>Open this site in <strong>Safari</strong>, then tap <strong>Share</strong> → <strong>Add to Home Screen</strong>.</>
+  ) : (
+    <>Open <strong>Chrome</strong> menu (⋮) → <strong>Install app</strong> or <strong>Add to Home Screen</strong>.</>
+  );
+
   return (
-    <div className="pwa-install-toast">
-      <button type="button" className="pwa-install-dismiss" onClick={handleDismiss} aria-label="Dismiss">
-        &times;
-      </button>
-      <div className="pwa-install-head">
-        <span className="pwa-install-icon" aria-hidden="true">
-          📍
-        </span>
-        <div className="pwa-install-body">
-          <span className="pwa-install-title">Install Treasure State on your phone</span>
-          <ul className="pwa-install-benefits">
-            <li>Install on your mobile device to be notified when approaching points of interest</li>
-            <li>Open Montana guides in one tap—no hunting for the tab</li>
-            <li>Best on a phone or tablet while you&apos;re on the road; some pages load faster on return visits</li>
-          </ul>
-          {iosMode && showIOSSteps && (
-            <div className="pwa-ios-steps">
-              <div className="pwa-ios-step">
-                <span className="pwa-ios-step-num">1</span>
-                <span>
-                  Tap the <strong>Share</strong> button <span className="pwa-ios-share-icon">⬆</span> at the bottom of Safari
-                </span>
-              </div>
-              <div className="pwa-ios-step">
-                <span className="pwa-ios-step-num">2</span>
-                <span>
-                  Scroll down and tap <strong>&ldquo;Add to Home Screen&rdquo;</strong>
-                </span>
-              </div>
-              <div className="pwa-ios-step">
-                <span className="pwa-ios-step-num">3</span>
-                <span>
-                  Tap <strong>&ldquo;Add&rdquo;</strong> in the top right
-                </span>
-              </div>
-            </div>
-          )}
+    <div className="pwa-bar">
+      <button type="button" className="pwa-bar-close" onClick={handleDismiss} aria-label="Dismiss">&times;</button>
+      <div className="pwa-bar-content">
+        <span className="pwa-bar-icon" aria-hidden="true">📱</span>
+        <div className="pwa-bar-text">
+          <strong>Get the Free App</strong>
+          <span>POI alerts on your phone</span>
         </div>
-      </div>
-      <div className="pwa-install-actions">
-        {iosMode ? (
-          <button
-            type="button"
-            className="pwa-install-primary"
-            onClick={() => {
-              if (showIOSSteps) {
-                handleDismiss();
-              } else {
-                setShowIOSSteps(true);
-                trackPWAInstallInstructionsShown();
-              }
-            }}
-          >
-            {showIOSSteps ? 'Got it' : 'How to install'}
-          </button>
+        {showHelp ? (
+          <div className="pwa-bar-help">
+            <span>{helpMessage}</span>
+            <button type="button" onClick={() => { setShowHelp(false); handleDismiss(); }}>OK</button>
+          </div>
         ) : (
-          <button type="button" className="pwa-install-primary" onClick={handleInstall}>
-            Install
+          <button type="button" className="pwa-bar-install" onClick={iosMode ? () => { setShowHelp(true); trackPWAInstallInstructionsShown(); } : handleInstall}>
+            {iosMode ? 'Install' : deferredPrompt ? 'Install' : 'Install'}
           </button>
         )}
       </div>
       <style jsx>{`
-        .pwa-install-toast {
+        .pwa-bar {
           position: fixed;
-          bottom: calc(var(--bottom-nav-height, 65px) + 10px);
-          left: 0.75rem;
-          right: 0.75rem;
-          z-index: 10052;
-          max-width: min(440px, calc(100vw - 1.5rem));
+          bottom: calc(var(--bottom-nav-height, 65px) + 4px);
+          left: 0.5rem;
+          right: 0.5rem;
+          z-index: 10050;
+          max-width: min(440px, calc(100vw - 1rem));
           margin: 0 auto;
-          background: var(--dark, #204051);
-          color: white;
-          padding: 0.75rem 0.85rem 0.65rem;
+          background: linear-gradient(135deg, #1a3544 0%, #0d1f2d 100%);
+          border: 1px solid rgba(216, 151, 60, 0.35);
           border-radius: 12px;
-          box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
-          font-family: var(--font-secondary, 'Open Sans', sans-serif);
-          font-size: 0.8rem;
-          animation: pwa-toast-in 0.35s cubic-bezier(0.21, 1.02, 0.73, 1);
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+          padding: 0.6rem 0.75rem;
+          animation: pwa-bar-in 0.4s cubic-bezier(0.21, 1.02, 0.73, 1);
         }
-        @keyframes pwa-toast-in {
-          from {
-            transform: translateY(16px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
+        @keyframes pwa-bar-in {
+          from { transform: translateY(20px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
         }
-        .pwa-install-head {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.6rem;
-          padding-right: 1.35rem;
-        }
-        .pwa-install-icon {
-          font-size: 1.45rem;
-          flex-shrink: 0;
-          line-height: 1.1;
-        }
-        .pwa-install-body {
-          flex: 1;
-          min-width: 0;
-        }
-        .pwa-install-title {
-          display: block;
-          font-family: var(--font-primary, 'Montserrat', sans-serif);
-          font-weight: 700;
-          font-size: 0.92rem;
-          margin-bottom: 0.45rem;
-          line-height: 1.25;
-        }
-        .pwa-install-benefits {
-          margin: 0;
-          padding-left: 1.1rem;
-          line-height: 1.45;
-          opacity: 0.92;
-        }
-        .pwa-install-benefits li {
-          margin-bottom: 0.25rem;
-        }
-        .pwa-install-benefits li:last-child {
-          margin-bottom: 0;
-        }
-        .pwa-ios-steps {
-          margin-top: 0.55rem;
-          display: flex;
-          flex-direction: column;
-          gap: 0.4rem;
-        }
-        .pwa-ios-step {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 0.78rem;
-          line-height: 1.3;
-        }
-        .pwa-ios-step-num {
-          background: var(--secondary, #d8973c);
-          color: white;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: 700;
-          font-size: 0.7rem;
-          flex-shrink: 0;
-        }
-        .pwa-ios-share-icon {
-          display: inline-block;
-          border: 1.5px solid white;
-          border-radius: 3px;
-          padding: 0 2px;
-          font-size: 0.65rem;
-          line-height: 1.1;
-          vertical-align: middle;
-        }
-        .pwa-install-actions {
-          margin-top: 0.65rem;
-        }
-        .pwa-install-primary {
-          width: 100%;
-          background: white;
-          color: var(--dark, #204051);
-          border: none;
-          padding: 0.45rem 0.75rem;
-          border-radius: 8px;
-          font-weight: 600;
-          font-size: 0.85rem;
-          cursor: pointer;
-          font-family: var(--font-primary, 'Montserrat', sans-serif);
-        }
-        .pwa-install-primary:hover {
-          background: #f5f5f5;
-        }
-        .pwa-install-dismiss {
+        .pwa-bar-close {
           position: absolute;
-          top: 6px;
+          top: 4px;
           right: 8px;
           background: none;
           border: none;
-          color: rgba(255, 255, 255, 0.65);
-          font-size: 1.3rem;
+          color: rgba(255, 255, 255, 0.4);
+          font-size: 1.2rem;
           cursor: pointer;
-          padding: 2px 6px;
+          padding: 2px 5px;
           line-height: 1;
         }
-        .pwa-install-dismiss:hover {
-          color: rgba(255, 255, 255, 0.95);
+        .pwa-bar-close:hover { color: rgba(255, 255, 255, 0.8); }
+        .pwa-bar-content {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          color: #fff;
+        }
+        .pwa-bar-icon {
+          font-size: 1.6rem;
+          flex-shrink: 0;
+        }
+        .pwa-bar-text {
+          flex: 1;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.05rem;
+        }
+        .pwa-bar-text strong {
+          font-family: var(--font-primary, 'Montserrat', sans-serif);
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: var(--gold-footer, #f5c97a);
+        }
+        .pwa-bar-text span {
+          font-size: 0.72rem;
+          opacity: 0.8;
+        }
+        .pwa-bar-install {
+          flex-shrink: 0;
+          background: linear-gradient(135deg, var(--gold-display, #d8973c) 0%, #e5a94e 100%);
+          color: #1a1e2e;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          font-weight: 700;
+          font-size: 0.82rem;
+          cursor: pointer;
+          font-family: var(--font-primary, 'Montserrat', sans-serif);
+          white-space: nowrap;
+          box-shadow: 0 2px 8px rgba(216, 151, 60, 0.3);
+          transition: background 0.2s, transform 0.15s;
+        }
+        .pwa-bar-install:hover {
+          background: linear-gradient(135deg, #e5a94e 0%, #d8973c 100%);
+          transform: translateY(-1px);
+        }
+        .pwa-bar-help {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          font-size: 0.72rem;
+          color: #d6dce8;
+          max-width: 180px;
+        }
+        .pwa-bar-help button {
+          align-self: flex-start;
+          background: var(--gold-display, #d8973c);
+          color: #1a1e2e;
+          border: none;
+          padding: 0.25rem 0.5rem;
+          border-radius: 4px;
+          font-size: 0.68rem;
+          font-weight: 700;
+          cursor: pointer;
         }
         @media (min-width: 769px) {
-          .pwa-install-toast {
+          .pwa-bar {
             left: 1rem;
             right: auto;
             bottom: 1rem;
             margin: 0;
-            max-width: 380px;
+            max-width: 360px;
           }
         }
       `}</style>

@@ -276,30 +276,19 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
         .clear-filters { font-size: 0.85rem; color: #3b6978; background: none; border: none; cursor: pointer; padding: 0; margin-top: 0.5rem; }
         .clear-filters:hover { text-decoration: underline; }
         .markers-sidebar-app { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #eee; }
-        .markers-sidebar .markers-sidebar-app .app-install-inline {
-          display: grid;
-          grid-template-columns: 18px minmax(0, 1fr);
-          align-items: start;
-          gap: 0.35rem 0.5rem;
+        .markers-sidebar .markers-sidebar-app .app-cta-inline {
           margin: 0;
-          padding: 0.65rem;
+          padding: 0.65rem 0.75rem;
           border-radius: 9px;
           border-left-width: 3px;
           font-size: 0.76rem;
         }
-        .markers-sidebar .markers-sidebar-app .app-install-inline-icon {
-          font-size: 0.95rem;
-          line-height: 1;
-          margin: 0.1rem 0 0;
+        .markers-sidebar .markers-sidebar-app .app-cta-inline-icon {
+          font-size: 1rem;
         }
-        .markers-sidebar .markers-sidebar-app .app-install-inline-body {
-          gap: 0.12rem;
-          line-height: 1.25;
-        }
-        .markers-sidebar .markers-sidebar-app .app-install-inline-body strong { font-size: 0.78rem; }
-        .markers-sidebar .markers-sidebar-app .app-install-inline-body span { font-size: 0.72rem; }
-        .markers-sidebar .markers-sidebar-app .app-install-inline-btn {
-          grid-column: 1 / -1;
+        .markers-sidebar .markers-sidebar-app .app-cta-inline-text strong { font-size: 0.78rem; }
+        .markers-sidebar .markers-sidebar-app .app-cta-inline-text span { font-size: 0.72rem; }
+        .markers-sidebar .markers-sidebar-app .app-cta-inline-btn {
           width: 100%;
           margin-top: 0.25rem;
           padding: 0.34rem 0.55rem;
