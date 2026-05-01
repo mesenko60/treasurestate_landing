@@ -473,7 +473,6 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 forceShow
                 headline="Explore on the go"
                 body="Install this on your mobile device to be notified when approaching points of interest."
-                buttonLabel="Add Free App"
               />
             </div>
           </aside>

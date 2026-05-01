@@ -359,7 +359,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         {/* ═══ 3b. APP INSTALL CTA ═══ */}
         <section className="hp-section" style={{ paddingTop: 0 }}>
           <div style={{ maxWidth: '480px', margin: '0 auto' }}>
-            <AppInstallCTA variant="card" headline="Get the Free App" />
+            <AppInstallCTA variant="card" />
           </div>
         </section>
 

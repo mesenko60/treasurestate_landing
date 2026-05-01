@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { DEFAULT_APP_INSTALL_PRIMARY_LABEL } from './AppInstallCTA';
 import {
   trackPWAInstallPromptShown,
   trackPWAInstallAccepted,
@@ -150,7 +151,7 @@ export default function PWAInstallPrompt() {
       <div className="pwa-bar-content">
         <span className="pwa-bar-icon" aria-hidden="true">📱</span>
         <div className="pwa-bar-text">
-          <strong>Get the Free App</strong>
+          <strong>{DEFAULT_APP_INSTALL_PRIMARY_LABEL}</strong>
           <span>POI alerts on your phone</span>
         </div>
         {showHelp ? (

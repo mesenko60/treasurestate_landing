@@ -782,7 +782,6 @@ export default function BackroadsPlanner({
                   forceShow
                   headline="Point of Interest Alert App"
                   body="Install this on your mobile device to be notified when approaching points of interest."
-                  buttonLabel="Get the app"
                 />
               </div>
             )}

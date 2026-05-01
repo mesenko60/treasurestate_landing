@@ -20,6 +20,9 @@ const DISMISS_COOLDOWN_MS = 30 * 24 * 60 * 60 * 1000;
 export const MOBILE_POI_INSTALL_BODY =
   'Install this on your mobile device to be notified when approaching points of interest.';
 
+/** Default primary CTA on card, banner, inline, and footer variants. */
+export const DEFAULT_APP_INSTALL_PRIMARY_LABEL = 'Get the free Points of Interest app';
+
 function isStandalone(): boolean {
   if (typeof window === 'undefined') return false;
   return (
@@ -202,14 +205,16 @@ export default function AppInstallCTA({
   const canShow = mounted && (forceShow || !dismissed);
   if (!canShow) return null;
 
-  const defaultHeadline = townName ? `Take ${townName} with you` : 'Get the Free App';
+  const defaultHeadline = townName
+    ? `Take ${townName} with you`
+    : 'Montana points of interest in your pocket';
   const defaultBody = townName
     ? "On your phone or tablet, get notified when you're near historic sites and points of interest."
     : MOBILE_POI_INSTALL_BODY;
 
   const h = headline ?? defaultHeadline;
   const b = body ?? defaultBody;
-  const primaryLabel = buttonLabel ?? (iosMode ? 'How to install' : deferredPrompt ? 'Install Free' : 'How to install');
+  const primaryLabel = buttonLabel ?? DEFAULT_APP_INSTALL_PRIMARY_LABEL;
 
   /* ═══ FOOTER VARIANT ═══ */
   if (variant === 'footer') {
@@ -221,7 +226,7 @@ export default function AppInstallCTA({
           className="app-install-footer-btn"
         >
           <span className="app-install-footer-phone" aria-hidden="true">📱</span>
-          <span className="app-install-footer-text">{h}</span>
+          <span className="app-install-footer-text">{primaryLabel}</span>
         </button>
         {showInstallHelp && (
           <div className="app-install-footer-help">
@@ -341,7 +346,8 @@ export default function AppInstallCTA({
             cursor: pointer;
             font-family: var(--font-primary, 'Montserrat', sans-serif);
             letter-spacing: 0.02em;
-            white-space: nowrap;
+            line-height: 1.25;
+            text-align: center;
             transition: background 0.2s, transform 0.15s;
           }
           .app-install-banner-btn:hover {
@@ -458,7 +464,8 @@ export default function AppInstallCTA({
             font-size: 0.82rem;
             cursor: pointer;
             font-family: var(--font-primary, 'Montserrat', sans-serif);
-            white-space: nowrap;
+            line-height: 1.25;
+            text-align: center;
             transition: background 0.2s, transform 0.15s;
           }
           .app-cta-inline-btn:hover {
@@ -599,6 +606,7 @@ export default function AppInstallCTA({
           cursor: pointer;
           font-family: var(--font-primary, 'Montserrat', sans-serif);
           letter-spacing: 0.03em;
+          line-height: 1.3;
           transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
           box-shadow: 0 3px 12px rgba(216, 151, 60, 0.3);
         }

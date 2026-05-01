@@ -19,7 +19,7 @@ export default function Footer() {
         <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#f5c97a', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>
       </div>
       <div style={{ marginBottom: '0.75rem' }}>
-        <AppInstallCTA variant="footer" headline="Get the Free App" />
+        <AppInstallCTA variant="footer" />
       </div>
       <p style={{ fontSize: '0.75rem', color: '#999', marginTop: '1rem', marginBottom: '0.5rem' }}>
         As an Amazon Associate, I earn from qualifying purchases.
