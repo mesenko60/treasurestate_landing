@@ -81,7 +81,7 @@ export default function Planners() {
           <AppInstallCTA
             variant="card"
             headline="Stay alert on the road"
-            body="Get proximity notifications for markers and attractions along your route."
+            body="Install on your phone to get proximity notifications for markers and attractions along your route."
           />
         </div>
       </main>

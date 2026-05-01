@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import AppInstallCTA from './AppInstallCTA';
+import AppInstallCTA, { MOBILE_POI_INSTALL_BODY } from './AppInstallCTA';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -19,11 +19,7 @@ export default function Footer() {
         <a href="https://shop.treasurestate.com" target="_blank" rel="noopener noreferrer" style={{ color: '#f5c97a', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>Visit the Treasure State Shop</a>
       </div>
       <div style={{ marginBottom: '0.75rem' }}>
-        <AppInstallCTA
-          variant="footer"
-          headline="Add to Home Screen"
-          body="get notified near points of interest"
-        />
+        <AppInstallCTA variant="footer" headline="Install on your phone" body={MOBILE_POI_INSTALL_BODY} />
       </div>
       <p style={{ fontSize: '0.75rem', color: '#999', marginTop: '1rem', marginBottom: '0.5rem' }}>
         As an Amazon Associate, I earn from qualifying purchases.

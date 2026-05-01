@@ -280,7 +280,7 @@ export default function NearbyPage() {
               <AppInstallCTA
                 variant="inline"
                 headline="Never miss a nearby attraction"
-                body="Install the app and we'll alert you when points of interest are just ahead."
+                body="Install this on your mobile device to be notified when approaching points of interest."
               />
               <button className="nearby-cta" onClick={requestLocation}>
                 Enable Location

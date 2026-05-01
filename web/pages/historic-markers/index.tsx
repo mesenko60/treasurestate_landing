@@ -483,7 +483,7 @@ export default function HistoricMarkersExplorer({ markers, curatedSlugs, topicCo
                 variant="inline"
                 forceShow
                 headline="Explore on the go"
-                body="Get landmark alerts in the app."
+                body="Install this on your mobile device to be notified when approaching points of interest."
                 buttonLabel="Add Free App"
               />
             </div>

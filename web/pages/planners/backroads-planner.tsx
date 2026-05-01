@@ -781,7 +781,7 @@ export default function BackroadsPlanner({
                   variant="inline"
                   forceShow
                   headline="Point of Interest Alert App"
-                  body="Install the app for real-time point-of-interest notifications along your route."
+                  body="Install this on your mobile device to be notified when approaching points of interest."
                   buttonLabel="Get the app"
                 />
               </div>

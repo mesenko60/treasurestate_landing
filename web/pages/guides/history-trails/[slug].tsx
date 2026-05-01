@@ -320,7 +320,7 @@ export default function HistoryTrailPage({ trail, markers, prevTrail, nextTrail 
                 variant="inline"
                 forceShow
                 headline="Never miss a stop."
-                body="Get alerts as historic markers come up along your route."
+                body="Install this on your mobile device to be notified when approaching points of interest."
                 buttonLabel="Get the app"
               />
             </span>

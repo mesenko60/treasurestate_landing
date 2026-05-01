@@ -161,8 +161,8 @@ function GuideArticlePage({ article, related }: { article: ArticlePageData; rela
           )}
           <AppInstallCTA
             variant="inline"
-            headline="Never Miss a Montana Landmark"
-            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+            headline="Install on your phone"
+            body="Install this on your mobile device to be notified when approaching points of interest."
           />
           {!article.noindex && <StaysCTA variant="compact" />}
           {related.length > 0 && <RelatedContent articles={related} />}
@@ -333,8 +333,8 @@ export default function GuidePage(props: Props) {
 
           <AppInstallCTA
             variant="inline"
-            headline="Never Miss a Montana Landmark"
-            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+            headline="Install on your phone"
+            body="Install this on your mobile device to be notified when approaching points of interest."
           />
 
           <div className="cta-box" style={{ textAlign: 'center', marginTop: '2rem' }}>

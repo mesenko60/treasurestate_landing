@@ -15,6 +15,10 @@ const SESSION_DISMISS_KEY = 'app-install-cta-dismissed';
 const DISMISS_KEY = 'pwa-prompt-dismissed';
 const DISMISS_COOLDOWN_MS = 30 * 24 * 60 * 60 * 1000;
 
+/** Primary product message (mobile-first POI alerts). */
+export const MOBILE_POI_INSTALL_BODY =
+  'Install this on your mobile device to be notified when approaching points of interest.';
+
 function isStandalone(): boolean {
   if (typeof window === 'undefined') return false;
   return (
@@ -23,12 +27,23 @@ function isStandalone(): boolean {
   );
 }
 
+function isIOSDevice(): boolean {
+  if (typeof window === 'undefined') return false;
+  const ua = navigator.userAgent;
+  return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
 function isIOSSafari(): boolean {
   if (typeof window === 'undefined') return false;
   const ua = navigator.userAgent;
-  const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isIOS = isIOSDevice();
   const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|OPiOS|EdgiOS|Chrome/.test(ua);
   return isIOS && isSafari;
+}
+
+/** iPhone/iPad in Chrome, Firefox, etc. — Add to Home Screen is reliable from Safari. */
+function isIOSNonSafari(): boolean {
+  return isIOSDevice() && !isIOSSafari();
 }
 
 function isDismissedRecently(): boolean {
@@ -63,6 +78,30 @@ type Props = {
   buttonLabel?: string;
 };
 
+function InstallFallbackMessage({ iosMode }: { iosMode: boolean }) {
+  if (iosMode) {
+    return (
+      <>
+        Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong>
+      </>
+    );
+  }
+  if (isIOSNonSafari()) {
+    return (
+      <>
+        To install, open this site in <strong>Safari</strong>, then tap <strong>Share</strong> →{' '}
+        <strong>Add to Home Screen</strong>.
+      </>
+    );
+  }
+  return (
+    <>
+      {MOBILE_POI_INSTALL_BODY} On <strong>Chrome</strong> or <strong>Edge</strong>, open the menu (⋮) →{' '}
+      <strong>Install app</strong> or <strong>Add to Home Screen</strong>.
+    </>
+  );
+}
+
 export default function AppInstallCTA({
   variant = 'card',
   headline,
@@ -73,7 +112,7 @@ export default function AppInstallCTA({
 }: Props) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [iosMode, setIosMode] = useState(false);
-  const [showIOSSteps, setShowIOSSteps] = useState(false);
+  const [showInstallHelp, setShowInstallHelp] = useState(false);
   const [dismissed, setDismissed] = useState(true);
   const [mounted, setMounted] = useState(false);
 
@@ -105,7 +144,7 @@ export default function AppInstallCTA({
 
   const handleInstall = useCallback(async () => {
     if (!deferredPrompt) {
-      setShowIOSSteps(true);
+      setShowInstallHelp(true);
       trackPWAInstallInstructionsShown();
       return;
     }
@@ -128,27 +167,26 @@ export default function AppInstallCTA({
   }, []);
 
   const handleShowManualInstallSteps = useCallback(() => {
-    setShowIOSSteps(true);
+    setShowInstallHelp(true);
     trackPWAInstallInstructionsShown();
   }, []);
+
+  const closeHelp = useCallback(() => {
+    setShowInstallHelp(false);
+    if (!forceShow) handleDismiss();
+  }, [forceShow, handleDismiss]);
 
   const canShow = mounted && (forceShow || (!dismissed && (deferredPrompt || iosMode)));
   if (!canShow) return null;
 
-  const defaultHeadline = townName
-    ? `Take ${townName} with you`
-    : variant === 'footer'
-    ? 'Add to Home Screen'
-    : 'Explore on the go';
-
+  const defaultHeadline = townName ? `Take ${townName} with you` : 'Install on your phone';
   const defaultBody = townName
-    ? "Get notified when you're near historic sites and attractions."
-    : variant === 'inline'
-    ? "Install the app and we'll alert you when points of interest are just ahead."
-    : 'Get notified when you pass historic markers, hot springs, and trails.';
+    ? "On your phone or tablet, get notified when you're near historic sites and points of interest."
+    : MOBILE_POI_INSTALL_BODY;
 
   const h = headline ?? defaultHeadline;
   const b = body ?? defaultBody;
+  const nonIosPrimaryLabel = buttonLabel ?? (deferredPrompt ? 'Install app' : 'How to install');
 
   if (variant === 'footer') {
     return (
@@ -160,12 +198,14 @@ export default function AppInstallCTA({
         >
           <span aria-hidden="true">📍</span> {h} — {b}
         </button>
-        {iosMode && showIOSSteps && (
-          <div className="app-install-footer-ios">
+        {showInstallHelp && (
+          <div className="app-install-footer-help">
             <p>
-              Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong>
+              <InstallFallbackMessage iosMode={iosMode} />
             </p>
-            <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
+            <button type="button" onClick={closeHelp}>
+              Got it
+            </button>
           </div>
         )}
         <style jsx>{`
@@ -184,15 +224,15 @@ export default function AppInstallCTA({
           .app-install-footer-btn:hover {
             color: #f5c97a;
           }
-          .app-install-footer-ios {
+          .app-install-footer-help {
             margin-top: 0.5rem;
             font-size: 0.8rem;
             color: #bbb;
           }
-          .app-install-footer-ios p {
+          .app-install-footer-help p {
             margin: 0 0 0.35rem;
           }
-          .app-install-footer-ios button {
+          .app-install-footer-help button {
             background: #3b6978;
             color: #fff;
             border: none;
@@ -214,20 +254,22 @@ export default function AppInstallCTA({
           <strong>{h}</strong>
           <span>{b}</span>
         </div>
-        {iosMode ? (
-          showIOSSteps ? (
-            <div className="app-install-inline-ios">
-              <span>{iosMode ? <>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong></> : <>Use your browser menu to install Treasure State as an app.</>}</span>
-              <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
-            </div>
-          ) : (
-            <button type="button" className="app-install-inline-btn" onClick={handleShowManualInstallSteps}>
-              {buttonLabel || 'How to install'}
+        {showInstallHelp ? (
+          <div className="app-install-inline-ios">
+            <span>
+              <InstallFallbackMessage iosMode={iosMode} />
+            </span>
+            <button type="button" onClick={closeHelp}>
+              Got it
             </button>
-          )
+          </div>
+        ) : iosMode ? (
+          <button type="button" className="app-install-inline-btn" onClick={handleShowManualInstallSteps}>
+            {buttonLabel || 'How to install'}
+          </button>
         ) : (
           <button type="button" className="app-install-inline-btn" onClick={handleInstall}>
-            {buttonLabel || 'Add to Home Screen'}
+            {nonIosPrimaryLabel}
           </button>
         )}
         <style jsx>{`
@@ -300,20 +342,22 @@ export default function AppInstallCTA({
       <div className="app-install-card-icon" aria-hidden="true">📍</div>
       <h3 className="app-install-card-title">{h}</h3>
       <p className="app-install-card-body">{b}</p>
-      {iosMode ? (
-        showIOSSteps ? (
-          <div className="app-install-card-ios">
-            <p>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong></p>
-            <button type="button" onClick={() => { setShowIOSSteps(false); if (!forceShow) handleDismiss(); }}>Got it</button>
-          </div>
-        ) : (
-          <button type="button" className="app-install-card-btn" onClick={handleShowManualInstallSteps}>
-            {buttonLabel || 'How to install'}
+      {showInstallHelp ? (
+        <div className="app-install-card-ios">
+          <p>
+            <InstallFallbackMessage iosMode={iosMode} />
+          </p>
+          <button type="button" onClick={closeHelp}>
+            Got it
           </button>
-        )
+        </div>
+      ) : iosMode ? (
+        <button type="button" className="app-install-card-btn" onClick={handleShowManualInstallSteps}>
+          {buttonLabel || 'How to install'}
+        </button>
       ) : (
         <button type="button" className="app-install-card-btn" onClick={handleInstall}>
-          {buttonLabel || 'Add to Home Screen'}
+          {nonIosPrimaryLabel}
         </button>
       )}
       <style jsx>{`

@@ -359,11 +359,7 @@ export default function Home({ featuredTowns, totalTowns, totalGuides, totalRank
         {/* ═══ 3b. APP INSTALL CTA ═══ */}
         <section className="hp-section" style={{ paddingTop: 0 }}>
           <div style={{ maxWidth: '480px', margin: '0 auto' }}>
-            <AppInstallCTA
-              variant="card"
-              headline="Explore on the go"
-              body="Get notified when you pass historic markers, hot springs, and trails. Add Treasure State to your home screen."
-            />
+            <AppInstallCTA variant="card" />
           </div>
         </section>
 

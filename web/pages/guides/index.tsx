@@ -166,8 +166,8 @@ export default function GuidesIndex({ guides, cultureGuides }: Props) {
         <div style={{ maxWidth: '480px', margin: '2.5rem auto 0' }}>
           <AppInstallCTA
             variant="card"
-            headline="Never Miss a Montana Landmark"
-            body="Get alerted to historic sites, hot springs, and trails as you drive through Montana."
+            headline="Install on your phone"
+            body="Install this on your mobile device to be notified when approaching points of interest."
           />
         </div>
 

@@ -123,11 +123,11 @@ export default function PWAInstallPrompt() {
           📍
         </span>
         <div className="pwa-install-body">
-          <span className="pwa-install-title">Treasure State on your home screen</span>
+          <span className="pwa-install-title">Install Treasure State on your phone</span>
           <ul className="pwa-install-benefits">
-            <li>Get notified when you pass a point of interest</li>
+            <li>Install on your mobile device to be notified when approaching points of interest</li>
             <li>Open Montana guides in one tap—no hunting for the tab</li>
-            <li>Faster return visits; key pages work even when the network is spotty</li>
+            <li>Best on a phone or tablet while you&apos;re on the road; some pages load faster on return visits</li>
           </ul>
           {iosMode && showIOSSteps && (
             <div className="pwa-ios-steps">
