@@ -411,6 +411,13 @@ export function trackPWAInstallInstructionsShown() {
   });
 }
 
+export function trackPWAQRInstallModalOpen() {
+  gtag()?.('event', 'pwa_qr_install_modal_opened', {
+    ...pwaInstallParams(),
+    event_label: 'desktop_qr_modal',
+  });
+}
+
 let pwaInstallListenerAttached = false;
 
 export function initPWAInstallTracking() {

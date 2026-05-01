@@ -4,7 +4,9 @@ import {
   trackPWAInstallAccepted,
   trackPWAInstallDismissed,
   trackPWAInstallInstructionsShown,
+  trackPWAQRInstallModalOpen,
 } from '../lib/gtag';
+import QRInstallModal from './QRInstallModal';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
@@ -113,6 +115,18 @@ export default function AppInstallCTA({
   const [showInstallHelp, setShowInstallHelp] = useState(false);
   const [dismissed, setDismissed] = useState(true);
   const [mounted, setMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [qrModalOpen, setQrModalOpen] = useState(false);
+
+  useEffect(() => {
+    const updateDesktop = () => {
+      setIsDesktop(!window.matchMedia('(pointer: coarse)').matches);
+    };
+    updateDesktop();
+    const mq = window.matchMedia('(pointer: coarse)');
+    mq.addEventListener('change', updateDesktop);
+    return () => mq.removeEventListener('change', updateDesktop);
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -174,6 +188,17 @@ export default function AppInstallCTA({
     if (!forceShow) handleDismiss();
   }, [forceShow, handleDismiss]);
 
+  const onPrimaryClick = iosMode ? handleShowManualInstallSteps : handleInstall;
+
+  const handleCtaPrimaryClick = useCallback(() => {
+    if (isDesktop) {
+      setQrModalOpen(true);
+      trackPWAQRInstallModalOpen();
+      return;
+    }
+    onPrimaryClick();
+  }, [isDesktop, onPrimaryClick]);
+
   const canShow = mounted && (forceShow || !dismissed);
   if (!canShow) return null;
 
@@ -186,15 +211,13 @@ export default function AppInstallCTA({
   const b = body ?? defaultBody;
   const primaryLabel = buttonLabel ?? (iosMode ? 'How to install' : deferredPrompt ? 'Install Free' : 'How to install');
 
-  const onPrimaryClick = iosMode ? handleShowManualInstallSteps : handleInstall;
-
   /* ═══ FOOTER VARIANT ═══ */
   if (variant === 'footer') {
     return (
       <>
         <button
           type="button"
-          onClick={onPrimaryClick}
+          onClick={handleCtaPrimaryClick}
           className="app-install-footer-btn"
         >
           <span className="app-install-footer-phone" aria-hidden="true">📱</span>
@@ -243,6 +266,7 @@ export default function AppInstallCTA({
             cursor: pointer;
           }
         `}</style>
+        <QRInstallModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
       </>
     );
   }
@@ -250,6 +274,7 @@ export default function AppInstallCTA({
   /* ═══ BANNER VARIANT (full-width accent bar) ═══ */
   if (variant === 'banner') {
     return (
+      <>
       <div className="app-install-banner">
         <div className="app-install-banner-inner">
           <span className="app-install-banner-icon" aria-hidden="true">📱</span>
@@ -263,7 +288,7 @@ export default function AppInstallCTA({
               <button type="button" onClick={closeHelp}>Got it</button>
             </div>
           ) : (
-            <button type="button" className="app-install-banner-btn" onClick={onPrimaryClick}>
+            <button type="button" className="app-install-banner-btn" onClick={handleCtaPrimaryClick}>
               {primaryLabel}
             </button>
           )}
@@ -358,12 +383,15 @@ export default function AppInstallCTA({
           }
         `}</style>
       </div>
+      <QRInstallModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
+      </>
     );
   }
 
   /* ═══ INLINE VARIANT ═══ */
   if (variant === 'inline') {
     return (
+      <>
       <div className="app-cta-inline">
         <div className="app-cta-inline-left">
           <span className="app-cta-inline-icon" aria-hidden="true">📱</span>
@@ -378,7 +406,7 @@ export default function AppInstallCTA({
             <button type="button" onClick={closeHelp}>Got it</button>
           </div>
         ) : (
-          <button type="button" className="app-cta-inline-btn" onClick={onPrimaryClick}>
+          <button type="button" className="app-cta-inline-btn" onClick={handleCtaPrimaryClick}>
             {primaryLabel}
           </button>
         )}
@@ -469,11 +497,14 @@ export default function AppInstallCTA({
           }
         `}</style>
       </div>
+      <QRInstallModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
+      </>
     );
   }
 
   /* ═══ CARD VARIANT (default) ═══ */
   return (
+    <>
     <section className="app-cta-card">
       <button type="button" className="app-cta-card-dismiss" onClick={handleDismiss} aria-label="Dismiss">&times;</button>
       <div className="app-cta-card-content">
@@ -489,7 +520,7 @@ export default function AppInstallCTA({
           <button type="button" onClick={closeHelp}>Got it</button>
         </div>
       ) : (
-        <button type="button" className="app-cta-card-btn" onClick={onPrimaryClick}>
+        <button type="button" className="app-cta-card-btn" onClick={handleCtaPrimaryClick}>
           {primaryLabel}
         </button>
       )}
@@ -594,5 +625,7 @@ export default function AppInstallCTA({
         .app-cta-card-help button:hover { background: rgba(255, 255, 255, 0.25); }
       `}</style>
     </section>
+    <QRInstallModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
+    </>
   );
 }
