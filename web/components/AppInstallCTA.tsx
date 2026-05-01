@@ -174,7 +174,7 @@ export default function AppInstallCTA({
     if (!forceShow) handleDismiss();
   }, [forceShow, handleDismiss]);
 
-  const canShow = mounted && (forceShow || (!dismissed && (deferredPrompt || iosMode)));
+  const canShow = mounted && (forceShow || !dismissed);
   if (!canShow) return null;
 
   const defaultHeadline = townName ? `Take ${townName} with you` : 'Get the Free App';

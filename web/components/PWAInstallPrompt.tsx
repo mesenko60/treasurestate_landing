@@ -85,19 +85,18 @@ export default function PWAInstallPrompt() {
 
     if (readDismissedWithinCooldown()) {
       setDismissed(true);
-      return;
     }
 
     const mode = detectPromptMode();
     if (mode === 'ios') {
       setIosMode(true);
-      trackPWAInstallPromptShown();
     }
+
+    trackPWAInstallPromptShown();
 
     const handler = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e as BeforeInstallPromptEvent);
-      trackPWAInstallPromptShown();
     };
     window.addEventListener('beforeinstallprompt', handler);
 
@@ -131,8 +130,11 @@ export default function PWAInstallPrompt() {
     persistDismiss();
   }, [deferredPrompt]);
 
-  const showBanner = !dismissed && (deferredPrompt || iosMode);
-  if (!showBanner) return null;
+  const isAlreadyInstalled = typeof window !== 'undefined' && (
+    window.matchMedia('(display-mode: standalone)').matches ||
+    (navigator as any).standalone === true
+  );
+  if (dismissed || isAlreadyInstalled) return null;
 
   const helpMessage = iosMode ? (
     <>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong></>
