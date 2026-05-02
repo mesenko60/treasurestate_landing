@@ -202,7 +202,7 @@ export default function AppInstallCTA({
     onPrimaryClick();
   }, [isDesktop, onPrimaryClick]);
 
-  const canShow = mounted && (forceShow || !dismissed);
+  const canShow = mounted && !isStandalone() && (forceShow || !dismissed);
   if (!canShow) return null;
 
   const defaultHeadline = townName

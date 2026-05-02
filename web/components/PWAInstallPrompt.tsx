@@ -74,11 +74,22 @@ function persistDismiss() {
 export default function PWAInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [iosMode, setIosMode] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+
+    setMounted(true);
+
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (navigator as any).standalone === true;
+    if (isStandalone) {
+      setDismissed(true);
+      return;
+    }
 
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(() => {});
@@ -86,6 +97,7 @@ export default function PWAInstallPrompt() {
 
     if (readDismissedWithinCooldown()) {
       setDismissed(true);
+      return;
     }
 
     const mode = detectPromptMode();
@@ -131,11 +143,7 @@ export default function PWAInstallPrompt() {
     persistDismiss();
   }, [deferredPrompt]);
 
-  const isAlreadyInstalled = typeof window !== 'undefined' && (
-    window.matchMedia('(display-mode: standalone)').matches ||
-    (navigator as any).standalone === true
-  );
-  if (dismissed || isAlreadyInstalled) return null;
+  if (!mounted || dismissed) return null;
 
   const helpMessage = iosMode ? (
     <>Tap <strong>Share</strong> → <strong>Add to Home Screen</strong> → <strong>Add</strong></>
