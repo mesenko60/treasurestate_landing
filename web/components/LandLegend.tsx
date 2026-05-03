@@ -1,4 +1,5 @@
 import React from 'react';
+import { PUBLIC_LAND_SEMANTICS, PUBLIC_LAND_TIER_DISPLAY_ORDER } from '../lib/classifyMontanaPublicOwner';
 
 const SWATCH: React.CSSProperties = {
   flexShrink: 0,
@@ -9,8 +10,7 @@ const SWATCH: React.CSSProperties = {
 };
 
 /**
- * Explains Treasure State overlays (Mapbox dots) and MSDI raster symbology
- * rendered by Montana State Library services.
+ * Explains Treasure State vector classification, MSDI rasters, and hunting pins.
  */
 export default function LandLegend() {
   return (
@@ -24,46 +24,64 @@ export default function LandLegend() {
       }}
     >
       <summary style={{ cursor: 'pointer', fontWeight: 700, color: '#204051', fontSize: '0.92rem', fontFamily: 'var(--font-primary, sans-serif)' }}>
-        Map legend &mdash; MSDI raster vs. Treasure State dots
+        Map legend &mdash; categorical public lands vs. rasters &amp; dots
       </summary>
       <div style={{ marginTop: '0.85rem', fontSize: '0.82rem', color: '#45555e', lineHeight: 1.55 }}>
         <p style={{ margin: '0 0 0.75rem' }}>
-          <strong>Cadastral rasters:</strong> Public lands, conservation easements, parcel linework, and PLSS grids are streamed as transparent PNG tiles from Montana
-          State Library ArcGIS map services. Fill colors and labels follow the state&rsquo;s published symbology &mdash; use the official{' '}
-          <a href="https://gis.mt.gov/" target="_blank" rel="noopener noreferrer" style={{ color: '#3b6978', fontWeight: 600 }}>
-            Montana Cadastral map
-          </a>{' '}
-          for parcel research and legal descriptions.
+          After you zoom in (≈ Montana-wide scale 11+), MSDI Public Lands polygons are tinted with Treasure State colors so federal, DNRC trust parcels, Montana FWP parcels, broader state-managed blocks, tribal text matches (when detected), city/county ground, etc. visually separate.
+          Regions without those fills typically remain privately held — turn on parcel linework when you want every lot boundary etched on top.
         </p>
+
+        <p style={{ margin: '0 0 0.5rem', fontWeight: 700, color: '#204051', fontFamily: 'var(--font-primary, sans-serif)' }}>
+          Treasure State categorical public fills
+        </p>
+        <ul style={{ margin: '0 0 0.9rem', paddingLeft: '0', listStyle: 'none' }}>
+          {PUBLIC_LAND_TIER_DISPLAY_ORDER.map((tier) => (
+            <li key={tier} style={{ marginBottom: '0.45rem', display: 'flex', gap: '0.55rem', alignItems: 'flex-start' }}>
+              <span
+                style={{
+                  ...SWATCH,
+                  marginTop: '0.1rem',
+                  background: PUBLIC_LAND_SEMANTICS[tier].fill,
+                  border: `1px solid ${PUBLIC_LAND_SEMANTICS[tier].outline}`,
+                }}
+                aria-hidden
+              />
+              <span>
+                <strong style={{ display: 'block', color: '#204051', fontWeight: 700 }}>
+                  {PUBLIC_LAND_SEMANTICS[tier].label}
+                </strong>
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <p style={{ margin: '0 0 0.65rem', fontWeight: 700, color: '#204051', fontFamily: 'var(--font-primary, sans-serif)' }}>
+          MSDI raster overlays (PNG tiles from ArcGIS Export)
+        </p>
+        <p style={{ margin: '0 0 0.75rem' }}>
+          Montana State Library also streams shaded conservation parcels, statewide parcel envelopes, township grids, and the tinted public panorama you see farther zoomed-out. Those symbologies match the authoritative{' '}
+          <a href="https://gis.mt.gov/" target="_blank" rel="noopener noreferrer" style={{ color: '#3b6978', fontWeight: 600 }}>
+            Montana Cadastral viewer
+          </a>
+          {' '}for lookups and disclaimers — Treasure State overlays are educational only.
+        </p>
+
         <ul style={{ margin: 0, paddingLeft: '1.2rem' }}>
           <li style={{ marginBottom: '0.45rem' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ ...SWATCH, background: 'linear-gradient(90deg,#c4a574,#5a8a5c)' }} aria-hidden />
-              <strong>Public lands</strong> &mdash; federal, state, tribal, and other publicly administered surface ownership from the DOR cadastral framework.
-            </span>
+            <strong>Conservation easements</strong> &mdash; private parcels with legally recorded restrictions; shading does{' '}
+            <em>not</em>
+            promise recreation access.
           </li>
           <li style={{ marginBottom: '0.45rem' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ ...SWATCH, background: 'repeating-linear-gradient(45deg,#a8c8a0,#a8c8a0 4px,#e8f4e4 4px,#e8f4e4 8px)' }} aria-hidden />
-              <strong>Conservation easements</strong> &mdash; private parcels with registered easements; <em>no public access is implied</em>.
-            </span>
+            <strong>Parcel grid</strong> &mdash; turn on zoomed-in linework whenever you must decide where one lot ends and another begins.
           </li>
           <li style={{ marginBottom: '0.45rem' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ ...SWATCH, background: '#f5f5f5', boxShadow: 'inset 0 0 0 1px #888' }} aria-hidden />
-              <strong>Parcels</strong> &mdash; statewide tax and exempt parcel boundaries (linework can be dense; enable only when zoomed in).
-            </span>
-          </li>
-          <li style={{ marginBottom: '0.45rem' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ ...SWATCH, background: 'repeating-linear-gradient(90deg,#ccc 0 2px,transparent 2px 6px)' }} aria-hidden />
-              <strong>PLSS</strong> &mdash; townships, ranges, sections, and subdivisions for legal land descriptions.
-            </span>
+            <strong>PLSS township grid</strong> &mdash; legal township / range references for surveying notes and hunting district cross-checks.
           </li>
         </ul>
         <p style={{ margin: '0.85rem 0 0', fontSize: '0.78rem', color: '#6a7a82' }}>
-          <strong>Hunting guide dots</strong> (green = WMA, blue = National Forest, brown = BLM, tan = refuge) match the{' '}
-          <a href="/guides/hunting-guide/" style={{ color: '#3b6978', fontWeight: 600 }}>Montana Hunting Guide</a> map and link back to each area card on that page.
+          <strong>Hunting guide dots</strong> (green WMA · blue Forest · desert brown BLM · tan refuge shades) reuse the Montana Hunting palette and deep-link straight to each pinned write-up when you zoom to the symbol.
         </p>
       </div>
     </details>

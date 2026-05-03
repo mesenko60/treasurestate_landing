@@ -1,12 +1,15 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl, { type Expression } from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import type { FeatureCollection } from 'geojson';
 import {
   MSDI_CONSERVATION_EASEMENTS_TILES,
   MSDI_PARCELS_TILES,
   MSDI_PLSS_TILES,
   MSDI_PUBLIC_LANDS_TILES,
 } from '../lib/msdiCadastralTiles';
+import { PUBLIC_LAND_SEMANTICS, PUBLIC_LAND_TIER_DISPLAY_ORDER, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
+import { fetchMsdiPublicLandPatches } from '../lib/fetchMsdiPublicLandPatches';
 import { trackMapInteraction } from '../lib/gtag';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
@@ -15,12 +18,14 @@ const SOURCE_PUBLIC = 'msdi-public-lands';
 const SOURCE_CE = 'msdi-conservation';
 const SOURCE_PARCELS = 'msdi-parcels';
 const SOURCE_PLSS = 'msdi-plss';
+const SOURCE_PUBLIC_VEC = 'msdi-public-vector';
 const SOURCE_HUNTING = 'hunting-area-markers';
 
 const LAYER_PUBLIC = `${SOURCE_PUBLIC}-raster`;
 const LAYER_CE = `${SOURCE_CE}-raster`;
 const LAYER_PARCELS = `${SOURCE_PARCELS}-raster`;
 const LAYER_PLSS = `${SOURCE_PLSS}-raster`;
+const LAYER_PUBLIC_VEC_FILL = `${SOURCE_PUBLIC_VEC}-fill`;
 const LAYER_HUNTING = `${SOURCE_HUNTING}-circles`;
 
 export type HuntingMarker = {
@@ -39,6 +44,25 @@ const CATEGORY_COLORS: Record<string, string> = {
 };
 
 const PARCEL_MIN_ZOOM = 12;
+/** Treasure State categorical fills load above this zoom; below it the MSDI public-lands raster provides context. */
+const VECTOR_PUBLIC_MIN_ZOOM = 11;
+
+const EMPTY_FC: FeatureCollection = { type: 'FeatureCollection', features: [] };
+
+/** Satisfy Mapbox GeoJSON sources without brittle namespace imports */
+function toMapGeoJSON(fc: FeatureCollection) {
+  return fc as never;
+}
+
+function buildTierPaint(prop: 'fill' | 'outline'): Expression {
+  const expr: unknown[] = ['match', ['get', 'tier']];
+  for (const k of PUBLIC_LAND_TIER_DISPLAY_ORDER) {
+    expr.push(k);
+    expr.push(PUBLIC_LAND_SEMANTICS[k][prop]);
+  }
+  expr.push('#9e9e9e');
+  return expr as Expression;
+}
 
 export type LayerToggleId = 'publicLands' | 'conservation' | 'parcels' | 'plss' | 'huntingMarkers';
 
@@ -109,6 +133,9 @@ export default function LandOwnershipMap({
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
   const huntingGeoInitial = useRef(huntingMarkers);
+  const vecDebounceRef = useRef<number | undefined>(undefined);
+  const vecAbortRef = useRef<AbortController | null>(null);
+  const lastVectorFetchKey = useRef<string>('');
   const [ready, setReady] = useState(false);
   const [noToken] = useState(() => !MAPBOX_TOKEN.trim());
   const togglesRef = useRef({ ...DEFAULT_LAYER_TOGGLES });
@@ -120,10 +147,8 @@ export default function LandOwnershipMap({
     togglesRef.current = toggles;
   }, [toggles]);
 
-  /** GeoJSON keyed by slug list changes */
   const huntingGeoJson = useMemo(() => buildHuntingGeoJson(huntingMarkers), [huntingMarkers]);
 
-  /** Apply MSDI overlay + hunting visibility from ref (used from map load + zoom handlers) */
   const applyVisibility = useCallback((map: mapboxgl.Map) => {
     const t = togglesRef.current;
 
@@ -131,11 +156,19 @@ export default function LandOwnershipMap({
       if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', on ? 'visible' : 'none');
     };
 
-    vis(LAYER_PUBLIC, t.publicLands);
+    const z = map.getZoom();
+    const useVectorClasses = t.publicLands && z >= VECTOR_PUBLIC_MIN_ZOOM;
+
+    if (map.getLayer(LAYER_PUBLIC)) {
+      map.setLayoutProperty(LAYER_PUBLIC, 'visibility', t.publicLands ? 'visible' : 'none');
+      const rasterOp = !t.publicLands ? 0 : useVectorClasses ? 0 : 0.78;
+      map.setPaintProperty(LAYER_PUBLIC, 'raster-opacity', rasterOp);
+    }
+
+    vis(LAYER_PUBLIC_VEC_FILL, useVectorClasses);
+
     vis(LAYER_CE, t.conservation);
 
-    const z = map.getZoom();
-    /** Parcels raster is heavy; fade to 0 when zoom is too wide or toggle is off */
     if (map.getLayer(LAYER_PARCELS)) {
       map.setLayoutProperty(LAYER_PARCELS, 'visibility', 'visible');
       map.setPaintProperty(LAYER_PARCELS, 'raster-opacity', t.parcels && z >= PARCEL_MIN_ZOOM ? 0.72 : 0);
@@ -144,6 +177,54 @@ export default function LandOwnershipMap({
     vis(LAYER_PLSS, t.plss);
     vis(LAYER_HUNTING, t.huntingMarkers);
   }, []);
+
+  const scheduleVectorReload = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    window.clearTimeout(vecDebounceRef.current);
+    vecDebounceRef.current = window.setTimeout(async () => {
+      const map = mapRef.current;
+      if (!map) return;
+      const geoSrc = map.getSource(SOURCE_PUBLIC_VEC) as mapboxgl.GeoJSONSource | undefined;
+      if (!geoSrc) return;
+
+      vecAbortRef.current?.abort();
+      vecAbortRef.current = new AbortController();
+      const sig = vecAbortRef.current.signal;
+
+      try {
+        if (!togglesRef.current.publicLands || map.getZoom() < VECTOR_PUBLIC_MIN_ZOOM) {
+          geoSrc.setData(toMapGeoJSON(EMPTY_FC));
+          lastVectorFetchKey.current = '';
+          applyVisibility(map);
+          return;
+        }
+
+        const b = map.getBounds() as mapboxgl.LngLatBounds;
+        const bboxKey = `${map.getZoom().toFixed(2)}:${b.getWest().toFixed(4)},${b.getSouth().toFixed(4)},${b.getEast().toFixed(4)},${b.getNorth().toFixed(4)}`;
+        if (bboxKey === lastVectorFetchKey.current) {
+          return;
+        }
+
+        const fc = await fetchMsdiPublicLandPatches(
+          b.getWest(),
+          b.getSouth(),
+          b.getEast(),
+          b.getNorth(),
+          { signal: sig },
+        );
+
+        geoSrc.setData(toMapGeoJSON(fc));
+        lastVectorFetchKey.current = bboxKey;
+      } catch (e: unknown) {
+        const aborted = typeof e === 'object' && e !== null && (e as { name?: string }).name === 'AbortError';
+        if (!aborted && geoSrc) {
+          geoSrc.setData(toMapGeoJSON(EMPTY_FC));
+        }
+      } finally {
+        if (mapRef.current) applyVisibility(mapRef.current);
+      }
+    }, 320);
+  }, [applyVisibility]);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -175,10 +256,15 @@ export default function LandOwnershipMap({
       addRasterPair(map, SOURCE_PARCELS, LAYER_PARCELS, MSDI_PARCELS_TILES, LAYER_CE);
       addRasterPair(map, SOURCE_PLSS, LAYER_PLSS, MSDI_PLSS_TILES, LAYER_PARCELS);
 
+      map.addSource(SOURCE_PUBLIC_VEC, {
+        type: 'geojson',
+        data: toMapGeoJSON(EMPTY_FC),
+      });
+
       const initialData = buildHuntingGeoJson(huntingGeoInitial.current);
       map.addSource(SOURCE_HUNTING, {
         type: 'geojson',
-        data: initialData,
+        data: toMapGeoJSON(initialData),
       });
 
       map.addLayer({
@@ -206,6 +292,23 @@ export default function LandOwnershipMap({
         },
       });
 
+      map.addLayer(
+        {
+          id: LAYER_PUBLIC_VEC_FILL,
+          type: 'fill',
+          source: SOURCE_PUBLIC_VEC,
+          paint: {
+            'fill-color': buildTierPaint('fill'),
+            'fill-opacity': 0.5,
+            'fill-outline-color': buildTierPaint('outline'),
+          },
+        },
+        LAYER_HUNTING,
+      );
+
+      map.on('idle', scheduleVectorReload);
+      queueMicrotask(scheduleVectorReload);
+
       applyVisibility(map);
 
       setReady(true);
@@ -218,25 +321,31 @@ export default function LandOwnershipMap({
 
     return () => {
       canceled = true;
+      window.clearTimeout(vecDebounceRef.current);
+      vecAbortRef.current?.abort();
       map.off('moveend', onMoveEnd);
+      map.off('idle', scheduleVectorReload);
       popupRef.current?.remove();
       popupRef.current = null;
       map.remove();
       mapRef.current = null;
       setReady(false);
     };
-  }, [noToken, applyVisibility]);
+  }, [noToken, applyVisibility, scheduleVectorReload]);
 
   useEffect(() => {
     const map = mapRef.current;
     const src = map?.getSource(SOURCE_HUNTING) as mapboxgl.GeoJSONSource | undefined;
-    if (src && ready) src.setData(huntingGeoJson);
+    if (src && ready) src.setData(toMapGeoJSON(huntingGeoJson));
   }, [huntingGeoJson, ready]);
 
   useEffect(() => {
     const map = mapRef.current;
-    if (map && ready) applyVisibility(map);
-  }, [toggles, ready, applyVisibility]);
+    if (map && ready) {
+      applyVisibility(map);
+      scheduleVectorReload();
+    }
+  }, [toggles, ready, applyVisibility, scheduleVectorReload]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -274,16 +383,51 @@ export default function LandOwnershipMap({
       trackMapInteraction(`land_own_hunt_click:${slugRaw}`);
     };
 
+    const onPubClick = (e: mapboxgl.MapMouseEvent & { features?: mapboxgl.MapboxGeoJSONFeature[] }) => {
+      const f = e.features?.[0];
+      const coords = e.lngLat;
+      const props = f?.properties as { tier?: string; OWNER?: string } | undefined;
+      if (!props?.tier || !coords) return;
+      const tier = props.tier as PublicLandTier;
+      const sem = PUBLIC_LAND_SEMANTICS[tier];
+      const owner = escapeHtml(String(props.OWNER ?? 'Unknown stewardship'));
+
+      popupRef.current?.remove();
+      popupRef.current = new mapboxgl.Popup({ offset: 12, closeButton: true })
+        .setLngLat(coords)
+        .setHTML(
+          `
+          <div style="padding:8px 6px;font-family:sans-serif;max-width:240px;color:#222">
+            <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.04em;color:${sem.outline};font-weight:700">
+              MSDI PUBLIC LANDS
+            </div>
+            <strong style="font-size:0.93rem;display:block;margin-top:4px;color:#204051">${owner}</strong>
+            <div style="font-size:0.78rem;line-height:1.45;color:#455;margin-top:6px">${escapeHtml(sem.label)}</div>
+          </div>
+        `,
+        )
+        .addTo(map);
+
+      trackMapInteraction(`land_own_public_polygon:${tier}`);
+    };
+
     const setPointer = () => map.getCanvas().style.setProperty('cursor', 'pointer');
     const clearPointer = () => map.getCanvas().style.setProperty('cursor', '');
     map.on('click', LAYER_HUNTING, onCircleClick);
     map.on('mouseenter', LAYER_HUNTING, setPointer);
     map.on('mouseleave', LAYER_HUNTING, clearPointer);
 
+    map.on('click', LAYER_PUBLIC_VEC_FILL, onPubClick);
+    map.on('mouseenter', LAYER_PUBLIC_VEC_FILL, setPointer);
+    map.on('mouseleave', LAYER_PUBLIC_VEC_FILL, clearPointer);
+
     return () => {
       map.off('click', LAYER_HUNTING, onCircleClick);
       map.off('mouseenter', LAYER_HUNTING, setPointer);
       map.off('mouseleave', LAYER_HUNTING, clearPointer);
+      map.off('click', LAYER_PUBLIC_VEC_FILL, onPubClick);
+      map.off('mouseenter', LAYER_PUBLIC_VEC_FILL, setPointer);
+      map.off('mouseleave', LAYER_PUBLIC_VEC_FILL, clearPointer);
     };
   }, [ready, noToken]);
 
@@ -365,7 +509,7 @@ export default function LandOwnershipMap({
               [
                 ['publicLands', 'Public lands'] as const,
                 ['conservation', 'Conservation easements'] as const,
-                ['parcels', `Parcels (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
+                ['parcels', `Parcels & private boundaries (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
                 ['plss', 'PLSS grid'] as const,
                 ['huntingMarkers', 'Hunting guide areas'] as const,
               ] as const
@@ -376,10 +520,10 @@ export default function LandOwnershipMap({
             ))}
           </nav>
 
-          <p style={{ margin: '0', padding: '0 1rem 0.75rem', fontSize: '0.68rem', color: '#71808a', lineHeight: 1.45 }}>
-            Raster tiles load from live MSDI endpoints; cadastral is updated roughly monthly.
-
-            Parcel boundaries appear only above zoom {PARCEL_MIN_ZOOM}. Not for legal, engineering, or surveying use.
+          <p style={{ margin: '0', padding: '0 1rem 0.85rem', fontSize: '0.68rem', color: '#71808a', lineHeight: 1.45 }}>
+            Zoom ≥ {VECTOR_PUBLIC_MIN_ZOOM} loads GeoJSON polygons from MSDI Public Lands and re-colors them by steward (federal, Montana trust/DNRC, Montana FWP, other state agencies, local governments, heuristic tribal text matches, misc public).
+            Anywhere those fills stop and the base map shows through is usually private taxable land—turn on parcels to draw every lot boundary. Farther out we keep the MSDI public-lands raster for quick regional context.
+            Conservation easements remain on the separate MSDI raster; no fill there means the easement styling or private parcel rules apply. Informational only—not for legal surveying—and updated roughly monthly by Montana State Library.
           </p>
         </>
       )}
