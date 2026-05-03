@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
@@ -8,7 +7,6 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
-import LandLegend from '../../components/LandLegend';
 import LandOwnershipInfo, { type LandFaq, type LandOwnershipStatsPayload } from '../../components/LandOwnershipInfo';
 
 const LandOwnershipMap = dynamic(() => import('../../components/LandOwnershipMap'), {
@@ -77,7 +75,7 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
   const url = 'https://treasurestate.com/guides/land-ownership/';
   const title = 'Montana Land Ownership Map & GIS Guide';
   const desc =
-    'Interactive MSDI Cadastral map for Montana public lands, conservation easements, parcel boundaries, PLSS township grid, FTP downloads, hunter access reminders, plus links to statewide Montana Cadastral and FWP tools.';
+    'Interactive Montana State Library MSDI cadastral map: public lands, conservation easements, parcels, PLSS grid, with MSL disclaimer and links to Montana Cadastral and FWP.';
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -135,7 +133,7 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
       <Header />
       <Hero
         title="Montana Land Ownership &amp; GIS"
-        subtitle={`MSDI cadastral layers · ${huntingMarkers.length} hunting guide pins · DNRC/FWP checkpoints`}
+        subtitle="Montana State Library MSDI cadastral — informational only"
         image="/images/hero-image.jpg"
         alt="Montana landscape from above illustrating public lands and towns"
         small
@@ -151,61 +149,17 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
         .guide-disclaimer { background: #fffbf0; border-left: 4px solid #d8973c; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
         .guide-disclaimer h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #8a6d3b; }
         .guide-disclaimer p, .guide-disclaimer li { font-size: 0.9rem; color: #555; line-height: 1.6; }
-        .guide-cta { text-align: center; margin-top: 2.5rem; }
-        .guide-cta a { display: inline-block; padding: 0.75rem 1.75rem; border-radius: 8px; font-weight: 700; font-family: var(--font-primary); font-size: 0.95rem; text-decoration: none; margin: 0 0.5rem 0.5rem; }
-        .guide-cta-primary { background: #3b6978; color: #fff; }
-        .guide-cta-secondary { background: #f0f7fa; color: #3b6978; border: 2px solid #3b6978; }
       `,
         }}
       />
 
       <main className="guide-page">
-        <p style={{ fontSize: '1rem', lineHeight: 1.7, color: '#444', marginBottom: '1.25rem' }}>
-          Explore Montana&rsquo;s statewide cadastral themes as published by the{' '}
-          <a href="https://msl.mt.gov/geoinfo/msdi/cadastral/" target="_blank" rel="noopener noreferrer" style={{ color: '#3b6978', fontWeight: 600 }}>
-            Montana State Library MSDI Program
-          </a>
-          . Toggle public lands, conservation easements, parcel linework, and the PLSS grid while cross-referencing the same{' '}
-          <Link href="/guides/hunting-guide/" style={{ color: '#3b6978', fontWeight: 600 }}>
-            public hunting overlays
-          </Link>{' '}
-          that power our elk, deer, and bird hunting playbook.
-        </p>
-
-        <LandLegend />
-
         <h2 id="interactive-map" className="guide-section-title" style={{ marginTop: '1rem' }}>
-          Interactive MSDI Cadastral map
+          Cadastral map
         </h2>
         <LandOwnershipMap height="560px" huntingMarkers={huntingMarkers} />
 
         <LandOwnershipInfo stats={stats} faqs={FAQS} />
-
-        <div className="guide-cta">
-          <Link href="/guides/hunting-guide/" className="guide-cta-primary">
-            Montana Hunting Guide
-          </Link>
-          <Link href="/guides/fly-fishing-guide/" className="guide-cta-secondary">
-            Fly Fishing Guide
-          </Link>
-          <Link href="/guides/wildlife-guide/" className="guide-cta-secondary">
-            Wildlife Guide
-          </Link>
-          <Link href="/planners/" className="guide-cta-secondary">
-            Trip Planners Hub
-          </Link>
-          <Link href="/montana-towns" className="guide-cta-secondary">
-            Browse All Towns
-          </Link>
-        </div>
-
-        <p style={{ fontSize: '0.78rem', color: '#555', fontStyle: 'italic', textAlign: 'center', marginTop: '2rem', lineHeight: 1.5 }}>
-          Map base layer © Mapbox. Cadastral rasters courtesy Montana Spatial Data Infrastructure and Montana Fish, Wildlife &amp; Parks-linked reference materials cited above—always defer to landowners, statutes, signage,{' '}
-          <a href="https://svc.mt.gov/msl/cadastral/" target="_blank" rel="noopener noreferrer" style={{ color: '#555' }}>
-            svc.mt.gov cadastral
-          </a>
-          , and official regulations before recreating.
-        </p>
       </main>
 
       <Footer />

@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import mapboxgl, { type Expression } from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import type { FeatureCollection } from 'geojson';
+import LandLegend from './LandLegend';
 import {
   MSDI_CONSERVATION_EASEMENTS_TILES,
   MSDI_PARCELS_TILES,
@@ -120,6 +121,14 @@ function addRasterPair(
   );
 }
 
+function resizeMapSoon(map: mapboxgl.Map | null) {
+  if (!map) return;
+  requestAnimationFrame(() => {
+    map.resize();
+    requestAnimationFrame(() => map.resize());
+  });
+}
+
 export default function LandOwnershipMap({
   height = '560px',
   huntingMarkers,
@@ -129,6 +138,7 @@ export default function LandOwnershipMap({
   huntingMarkers: HuntingMarker[];
   ariaLabel?: string;
 }) {
+  const shellRef = useRef<HTMLDivElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const popupRef = useRef<mapboxgl.Popup | null>(null);
@@ -137,6 +147,7 @@ export default function LandOwnershipMap({
   const vecAbortRef = useRef<AbortController | null>(null);
   const lastVectorFetchKey = useRef<string>('');
   const [ready, setReady] = useState(false);
+  const [fullscreenUi, setFullscreenUi] = useState(false);
   const [noToken] = useState(() => !MAPBOX_TOKEN.trim());
   const togglesRef = useRef({ ...DEFAULT_LAYER_TOGGLES });
   const [toggles, setToggles] = useState({ ...DEFAULT_LAYER_TOGGLES });
@@ -146,6 +157,23 @@ export default function LandOwnershipMap({
   useEffect(() => {
     togglesRef.current = toggles;
   }, [toggles]);
+
+  useEffect(() => {
+    const onFullscreenChange = () => {
+      const shell = shellRef.current;
+      const root = typeof document !== 'undefined' ? document : null;
+      if (!shell || !root) return;
+      const active = root.fullscreenElement === shell || (root as unknown as { webkitFullscreenElement?: Element }).webkitFullscreenElement === shell;
+      setFullscreenUi(active);
+      resizeMapSoon(mapRef.current);
+    };
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange as EventListener);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', onFullscreenChange as EventListener);
+    };
+  }, []);
 
   const huntingGeoJson = useMemo(() => buildHuntingGeoJson(huntingMarkers), [huntingMarkers]);
 
@@ -438,6 +466,40 @@ export default function LandOwnershipMap({
     });
   }, []);
 
+  const toggleFullscreen = useCallback(() => {
+    const shell = shellRef.current;
+    if (!shell) return;
+    const doc = document as Document & {
+      webkitExitFullscreen?: () => Promise<void> | void;
+      webkitFullscreenElement?: Element | null;
+    };
+    const el = shell as HTMLElement & {
+      webkitRequestFullscreen?: (allowKeyboard?: boolean) => Promise<void> | void;
+      msRequestFullscreen?: () => Promise<void> | void;
+    };
+    const fsActive = document.fullscreenElement ?? doc.webkitFullscreenElement ?? null;
+    if (!fsActive) {
+      const p = shell.requestFullscreen?.() ?? el.webkitRequestFullscreen?.() ?? el.msRequestFullscreen?.();
+      Promise.resolve(p as Promise<void> | void)
+        .then(() => undefined)
+        .catch(() => undefined)
+        .finally(() => {
+          trackMapInteraction('land_own_fullscreen:on');
+          resizeMapSoon(mapRef.current);
+        });
+      return;
+    }
+    if (fsActive === shell) {
+      Promise.resolve(document.exitFullscreen?.() ?? doc.webkitExitFullscreen?.())
+        .then(() => undefined)
+        .catch(() => undefined)
+        .finally(() => {
+          trackMapInteraction('land_own_fullscreen:off');
+          resizeMapSoon(mapRef.current);
+        });
+    }
+  }, []);
+
   const chipStyle = (
     active: boolean,
   ): React.CSSProperties => ({
@@ -452,14 +514,54 @@ export default function LandOwnershipMap({
     fontFamily: 'var(--font-primary, sans-serif)',
   });
 
+  const shellStyle: React.CSSProperties = fullscreenUi
+    ? {
+        borderRadius: 0,
+        marginBottom: 0,
+        height: '100vh',
+        maxHeight: '100dvh',
+        display: 'flex',
+        flexDirection: 'column',
+        overflow: 'hidden',
+      }
+    : {};
+
+  const mapViewportStyle: React.CSSProperties = fullscreenUi
+    ? {
+        position: 'relative',
+        flex: '1 1 auto',
+        minHeight: 0,
+        width: '100%',
+      }
+    : { position: 'relative', width: '100%', height };
+
+  const fsBtnStyle: React.CSSProperties = {
+    position: 'absolute',
+    zIndex: 2,
+    top: 10,
+    left: 10,
+    padding: '0.35rem 0.65rem',
+    borderRadius: 8,
+    border: '1px solid rgba(0,0,0,0.12)',
+    background: 'rgba(255,255,255,0.92)',
+    color: '#204051',
+    fontSize: '0.74rem',
+    fontWeight: 700,
+    fontFamily: 'var(--font-primary, sans-serif)',
+    cursor: 'pointer',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
+  };
+
   return (
     <div
+      ref={shellRef}
       style={{
         borderRadius: '12px',
         overflow: 'hidden',
         boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
         marginBottom: '1.25rem',
         background: '#fff',
+        ...shellStyle,
       }}
     >
       {noToken ? (
@@ -480,9 +582,15 @@ export default function LandOwnershipMap({
         </div>
       ) : (
         <>
-          <div ref={containerRef} style={{ width: '100%', height }} aria-label={ariaLabel} role="img" />
+          <div style={mapViewportStyle}>
+            <button type="button" style={fsBtnStyle} onClick={toggleFullscreen} aria-pressed={fullscreenUi}>
+              {fullscreenUi ? 'Exit full screen' : 'Full screen'}
+            </button>
+            <div ref={containerRef} style={{ width: '100%', height: fullscreenUi ? '100%' : '100%' }} aria-label={ariaLabel} role="img" />
+          </div>
 
-          {/* Layer toggles */}
+          <LandLegend />
+
           <nav
             aria-label="Cadastral map layers"
             style={{
@@ -492,26 +600,19 @@ export default function LandOwnershipMap({
               flexWrap: 'wrap',
               gap: '0.45rem',
               alignItems: 'center',
+              flexShrink: 0,
             }}
           >
-            <span
-              style={{
-                fontSize: '0.75rem',
-                fontWeight: 700,
-                color: '#204051',
-                width: '100%',
-                marginBottom: '0.1rem',
-              }}
-            >
-              Layers (Montana State Library Web Mercator services)
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#204051', width: '100%', marginBottom: '0.1rem' }}>
+              Layers (MSDI)
             </span>
             {(
               [
                 ['publicLands', 'Public lands'] as const,
                 ['conservation', 'Conservation easements'] as const,
-                ['parcels', `Parcels & private boundaries (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
+                ['parcels', `Parcels / lot lines (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
                 ['plss', 'PLSS grid'] as const,
-                ['huntingMarkers', 'Hunting guide areas'] as const,
+                ['huntingMarkers', 'Hunting pins'] as const,
               ] as const
             ).map(([id, label]) => (
               <button key={id} type="button" style={chipStyle(toggles[id])} onClick={() => toggle(id)}>
@@ -519,12 +620,6 @@ export default function LandOwnershipMap({
               </button>
             ))}
           </nav>
-
-          <p style={{ margin: '0', padding: '0 1rem 0.85rem', fontSize: '0.68rem', color: '#71808a', lineHeight: 1.45 }}>
-            Zoom ≥ {VECTOR_PUBLIC_MIN_ZOOM} loads GeoJSON polygons from MSDI Public Lands and re-colors them by steward (federal, Montana trust/DNRC, Montana FWP, other state agencies, local governments, heuristic tribal text matches, misc public).
-            Anywhere those fills stop and the base map shows through is usually private taxable land—turn on parcels to draw every lot boundary. Farther out we keep the MSDI public-lands raster for quick regional context.
-            Conservation easements remain on the separate MSDI raster; no fill there means the easement styling or private parcel rules apply. Informational only—not for legal surveying—and updated roughly monthly by Montana State Library.
-          </p>
         </>
       )}
     </div>
