@@ -77,6 +77,7 @@ export function rankingLinks(townSlug: string): CrossLink[] {
 export function plannerLinks(_townSlug: string): CrossLink[] {
   return [
     { label: 'Hunting Guide', href: '/guides/hunting-guide/' },
+    { label: 'Land Ownership GIS', href: '/guides/land-ownership/' },
   ];
 }
 

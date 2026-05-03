@@ -402,6 +402,13 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
           breakdown for both residents and nonresidents. All regulations are administered
           by <a href="https://fwp.mt.gov" target="_blank" rel="noopener noreferrer" style={{ color: '#3b6978' }}>Montana Fish, Wildlife &amp; Parks (FWP)</a>.
         </p>
+        <p style={{ fontSize: '1rem', lineHeight: 1.65, color: '#444', marginBottom: '1.5rem' }}>
+          Prefer to see MSDI parcels, Montana public-administered lands, conservation easements, and township grid lines next to these same hotspots? Use the interactive{' '}
+          <Link href="/guides/land-ownership/" style={{ color: '#3b6978', fontWeight: 600 }}>
+            Montana Land Ownership &amp; GIS map
+          </Link>
+          , where all of the locations below appear as colored pins you can inspect alongside cadastral rasters from the Montana State Library.
+        </p>
 
         {/* ─── Map ─── */}
         <DirectoryMap
@@ -526,6 +533,9 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
 
           <h2>Planning Resources</h2>
           <ul>
+            <li>
+              <Link href="/guides/land-ownership/">Montana Land Ownership &amp; GIS map</Link> — statewide MSDI cadastral rasters layered with Treasure State hunting pins for quick field planning.
+            </li>
             <li><a href="https://fwp.mt.gov/gis/maps/huntPlanner/" target="_blank" rel="noopener noreferrer">FWP Hunt Planner Map</a> — district boundaries, public land, access points</li>
             <li><a href="https://fwp.mt.gov/hunt/regulations" target="_blank" rel="noopener noreferrer">FWP Regulations</a> — current-year regulation booklets (free PDFs)</li>
             <li><a href="https://fwp.mt.gov/buyandapply" target="_blank" rel="noopener noreferrer">MyFWP License Portal</a> — purchase licenses and apply for drawings</li>
@@ -542,6 +552,7 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
 
         {/* ─── CTAs ─── */}
         <div className="hunt-cta">
+          <Link href="/guides/land-ownership" className="hunt-cta-secondary">Land Ownership GIS</Link>
           <Link href="/guides/fly-fishing-guide" className="hunt-cta-primary">Fly Fishing Guide</Link>
           <Link href="/guides/wildlife-guide" className="hunt-cta-secondary">Wildlife Guide</Link>
           <Link href="/guides/skiing-guide" className="hunt-cta-secondary">Skiing Guide</Link>

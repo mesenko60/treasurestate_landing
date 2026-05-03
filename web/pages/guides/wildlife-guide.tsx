@@ -334,6 +334,7 @@ export default function WildlifeGuide({ areas, contentHtml }: Props) {
           <Link href="/guides/state-parks-guide" className="guide-cta-secondary">State Parks Guide</Link>
           <Link href="/guides/skiing-guide" className="guide-cta-secondary">Skiing Guide</Link>
           <Link href="/guides/hunting-guide" className="guide-cta-secondary">Hunting Guide</Link>
+          <Link href="/guides/land-ownership" className="guide-cta-secondary">Land Ownership GIS</Link>
           <Link href="/montana-towns" className="guide-cta-secondary">Browse All Towns</Link>
         </div>
       </main>

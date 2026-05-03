@@ -68,7 +68,14 @@ export default function Planners() {
           >
             Browse All Guides &rarr;
           </Link>
-          <p style={{ fontSize: '0.88rem', color: '#666', marginTop: '1rem', marginBottom: 0 }}>
+          <p style={{ fontSize: '0.88rem', color: '#666', marginTop: '1rem', marginBottom: '0.35rem' }}>
+            Planning hunts or river access across a mix of DNRC leases and township lines? Peek at{' '}
+            <Link href="/guides/land-ownership" style={{ color: '#3b6978', fontWeight: 600 }}>
+              the Montana Land Ownership &amp; GIS guide
+            </Link>{' '}
+            layered with statewide MSDI parcels, then pair it with corridor stops and travel guides inside the hubs above.
+          </p>
+          <p style={{ fontSize: '0.88rem', color: '#666', marginTop: 0, marginBottom: 0 }}>
             New:{' '}
             <Link href="/guides/golf-courses-guide" style={{ color: '#3b6978', fontWeight: 600 }}>
               Montana golf course directory

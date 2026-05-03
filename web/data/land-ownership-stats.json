@@ -1,0 +1,41 @@
+{
+  "subtitle": "High-level Montana land context for outdoors planning (figures are approximate; verify with official agencies).",
+  "highlights": [
+    {
+      "label": "Montana gross area",
+      "valueText": "~94 million acres",
+      "note": "Per U.S. Census Bureau state quick facts.",
+      "sourceUrl": "https://www.census.gov/quickfacts/fact/table/MT"
+    },
+    {
+      "label": "Federal lands (often multiple-use public recreation)",
+      "valueText": "On the order of tens of millions of acres",
+      "note": "BLM, USFS, NPS, FWS, BOR, DoD overlap — see CRS / federal inventories for methodology.",
+      "sourceUrl": "https://fas.org/crs/misc/RS21798.pdf"
+    },
+    {
+      "label": "State trust lands (DNRC)",
+      "valueText": "Roughly five million acres of trust land statewide",
+      "note": "Use DNRC recreation rules and leased-block maps before relying on \"public\" assumptions.",
+      "sourceUrl": "https://dnrc.mt.gov/TrustLandManagement/Recreation/RecreationFAQ"
+    }
+  ],
+  "dataSourcesWebsite": [
+    {
+      "name": "MSDI Cadastral (Montana State Library)",
+      "url": "https://msl.mt.gov/geoinfo/msdi/cadastral/",
+      "role": "Parcels, public lands, conservation easements, PLSS downloads and map services."
+    },
+    {
+      "name": "Montana Cadastral map (DOR)",
+      "url": "https://svc.mt.gov/msl/cadastral/",
+      "role": "Official cadastral research viewer and parcel lookup."
+    },
+    {
+      "name": "FWP Hunt Planner",
+      "url": "https://fwp.mt.gov/gis/maps/huntPlanner/",
+      "role": "Hunting districts, walk-in lands, Block Management overlays."
+    }
+  ],
+  "disclaimerShort": "MSL cadastral data are for informational purposes only — not for legal, engineering, or surveying purposes. Always confirm access, ownership, and regulations in the field."
+}
