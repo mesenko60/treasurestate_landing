@@ -15,14 +15,14 @@ export default function LandOwnershipInfo({ stats, faqs }: Props) {
   return (
     <>
       <h2 className="guide-section-title" id="ownership-context">
-        Cadastral disclaimer & official sources
+        Land ownership data disclaimer &amp; official sources
       </h2>
       <div className="guide-disclaimer">
         <h3>⚠️ {stats.disclaimerShort}</h3>
         <p style={{ margin: '0.5rem 0 0' }}>
           Confirm boundaries and access with landowners, agencies,{' '}
           <a href="https://svc.mt.gov/msl/cadastral/" target="_blank" rel="noopener noreferrer">
-            Montana Cadastral
+            Montana Cadastral GIS
           </a>
           , and current regulations.
         </p>
@@ -45,7 +45,7 @@ export default function LandOwnershipInfo({ stats, faqs }: Props) {
 
       <details style={{ border: '1px solid #e4eaf0', borderRadius: '10px', padding: '0.75rem 1rem', background: '#fff' }}>
         <summary style={{ cursor: 'pointer', fontWeight: 700, color: '#204051', fontFamily: 'var(--font-primary, sans-serif)', fontSize: '0.95rem' }}>
-          Common questions (Montana MSDI cadastral)
+          Common questions about Montana land GIS
         </summary>
         <div style={{ marginTop: '0.75rem' }}>
           {faqs.map((f, i) => (

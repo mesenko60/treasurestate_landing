@@ -22,14 +22,14 @@
   ],
   "dataSourcesWebsite": [
     {
-      "name": "MSDI Cadastral (Montana State Library)",
+      "name": "Montana GIS — parcels & public lands hub (Montana State Library MSDI)",
       "url": "https://msl.mt.gov/geoinfo/msdi/cadastral/",
-      "role": "Parcels, public lands, conservation easements, PLSS downloads and map services."
+      "role": "Statewide parcels, stewardship polygons, conservation easements, PLSS grids, downloads, and map services."
     },
     {
-      "name": "Montana Cadastral map (DOR)",
+      "name": "Montana Cadastral GIS viewer (Department of Revenue lookup)",
       "url": "https://svc.mt.gov/msl/cadastral/",
-      "role": "Official cadastral research viewer and parcel lookup."
+      "role": "Official parcel stewardship research map and lookups."
     },
     {
       "name": "FWP Hunt Planner",
@@ -37,5 +37,5 @@
       "role": "Hunting districts, walk-in lands, Block Management overlays."
     }
   ],
-  "disclaimerShort": "MSL cadastral data are for informational purposes only — not for legal, engineering, or surveying purposes. Always confirm access, ownership, and regulations in the field."
+  "disclaimerShort": "Montana State Library GIS parcels and stewardship layers are for informational purposes only — not for legal, engineering, or surveying purposes. Always confirm access, ownership, and regulations in the field."
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import { PUBLIC_LAND_SEMANTICS, PUBLIC_LAND_TIER_DISPLAY_ORDER } from '../lib/classifyMontanaPublicOwner';
 
 const SWATCH: React.CSSProperties = {
@@ -9,16 +9,43 @@ const SWATCH: React.CSSProperties = {
   border: '1px solid rgba(0,0,0,0.12)',
 };
 
-/** Collapsible legend for public-land tiers (map chrome or standalone). */
-export default function LandLegend({ defaultOpen = false }: { defaultOpen?: boolean }) {
+type Props = {
+  /** Expanded on mount (fewer overlooked tier swatches). */
+  defaultExpanded?: boolean;
+  /** Rising edge expands again when entering full screen mode. */
+  fullscreenActive?: boolean;
+};
+
+/** Public land tier swatches plus MSL attribution (mounted under the map viewport). */
+export default function LandLegend({ defaultExpanded = true, fullscreenActive }: Props) {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+  const prevFsRef = useRef(false);
+
+  useLayoutEffect(() => {
+    const el = detailsRef.current;
+    if (el) el.open = defaultExpanded;
+  }, [defaultExpanded]);
+
+  useEffect(() => {
+    const el = detailsRef.current;
+    const now = Boolean(fullscreenActive);
+    const prev = prevFsRef.current;
+    prevFsRef.current = now;
+
+    if (el && now && !prev) {
+      el.open = true;
+    }
+  }, [fullscreenActive]);
+
   return (
     <details
-      open={defaultOpen}
+      ref={detailsRef}
       style={{
         margin: 0,
         borderTop: '1px solid #e8eef0',
         padding: '0.5rem 1rem',
         background: '#fafcfd',
+        flexShrink: 0,
       }}
     >
       <summary
@@ -31,13 +58,13 @@ export default function LandLegend({ defaultOpen = false }: { defaultOpen?: bool
           listStyle: 'none',
         }}
       >
-        Legend
+        Legend — public steward colors / private rule of thumb
       </summary>
       <div style={{ marginTop: '0.55rem', fontSize: '0.76rem', color: '#45555e', lineHeight: 1.5 }}>
         <p style={{ margin: '0 0 0.5rem' }}>
           Zoom in for colored public-land polygons by steward. Unfilled base map is usually private—use parcel linework to see lot boundaries.{' '}
           <a href="https://msl.mt.gov/geoinfo/msdi/cadastral/" target="_blank" rel="noopener noreferrer" style={{ color: '#3b6978', fontWeight: 600 }}>
-            MSL MSDI cadastral
+            Montana State Library land GIS portal
           </a>
           {' '}
           is informational only.

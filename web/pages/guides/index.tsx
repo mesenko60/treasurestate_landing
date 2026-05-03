@@ -28,7 +28,7 @@ const TRAVEL_GUIDES = [
   { href: '/guides/fly-fishing-guide', title: 'Fly Fishing Guide', desc: 'Montana\u2019s trout legacy from 1919 to today — Madison, Gallatin, Yellowstone, and Glacier waters.' },
   { href: '/guides/hiking-guide', title: 'Hiking Trails & Trailheads', desc: '60+ hiking destinations across Montana with difficulty ratings, directions, and tips.' },
   { href: '/guides/hunting-guide', title: 'Montana Hunting Guide', desc: 'Season dates, license fees, 21 WMAs, and species profiles for deer, elk, antelope, and more.' },
-  { href: '/guides/land-ownership', title: 'Montana Land Ownership & GIS Map', desc: 'MSDI cadastral layers for public lands, conservation easements, parcels, PLSS grid, statewide FTP GIS links, hunter access FAQs.' },
+  { href: '/guides/land-ownership', title: 'Interactive Montana Land Ownership Map & GIS', desc: 'State Library GIS overlays for parcels, public lands steward colors, conservation easements & PLSS; links to Montana Cadastral viewer and hunter overlays.' },
   { href: '/guides/state-parks-guide', title: 'State Parks Guide', desc: '20 Montana state parks — badlands, ghost towns, cave tours, buffalo jumps, and the Smith River.' },
   { href: '/guides/wildlife-guide', title: 'Wildlife Viewing Guide', desc: 'Grizzly bears, wolves, bison, elk, bighorn sheep — 15 verified locations with species and seasons.' },
   { href: '/guides/photography-guide', title: 'Photographer\u2019s Guide', desc: '18 photography locations with GPS coordinates, best times, recommended lenses, and gear tips.' },

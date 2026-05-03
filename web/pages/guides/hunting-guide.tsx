@@ -407,7 +407,7 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
           <Link href="/guides/land-ownership/" style={{ color: '#3b6978', fontWeight: 600 }}>
             Montana Land Ownership &amp; GIS map
           </Link>
-          , where all of the locations below appear as colored pins you can inspect alongside cadastral rasters from the Montana State Library.
+          , where all of the locations below appear as colored pins you can inspect alongside State Library GIS parcel layers on our land ownership map.
         </p>
 
         {/* ─── Map ─── */}
@@ -534,7 +534,7 @@ export default function HuntingGuide({ areas, seasons, licenses }: Props) {
           <h2>Planning Resources</h2>
           <ul>
             <li>
-              <Link href="/guides/land-ownership/">Montana Land Ownership &amp; GIS map</Link> — statewide MSDI cadastral rasters layered with Treasure State hunting pins for quick field planning.
+              <Link href="/guides/land-ownership/">Montana land ownership &amp; GIS map</Link> — State Library parcels and public-land tiles layered with Treasure State hunting pins for quick field planning.
             </li>
             <li><a href="https://fwp.mt.gov/gis/maps/huntPlanner/" target="_blank" rel="noopener noreferrer">FWP Hunt Planner Map</a> — district boundaries, public land, access points</li>
             <li><a href="https://fwp.mt.gov/hunt/regulations" target="_blank" rel="noopener noreferrer">FWP Regulations</a> — current-year regulation booklets (free PDFs)</li>

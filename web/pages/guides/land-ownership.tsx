@@ -25,7 +25,7 @@ const LandOwnershipMap = dynamic(() => import('../../components/LandOwnershipMap
         marginBottom: '1.25rem',
       }}
     >
-      Loading Montana cadastral map…
+      Loading Montana land ownership map…
     </div>
   ),
 });
@@ -45,9 +45,9 @@ type Props = {
 
 const FAQS: LandFaq[] = [
   {
-    question: 'Is Montana cadastral data accurate enough for surveying or deeds?',
+    question: 'Is Montana parcel GIS accurate enough for surveying or deeds?',
     answer:
-      'No. Montana State Library explicitly states MSDI Cadastral is for informational use only—not for legal, engineering, or surveying purposes. Parcel geometry can lag deeds, split lots, exempt transfers, or rural fence lines.',
+      'No. Montana State Library states its statewide parcel and public lands GIS—the MSDI Cadastral parcel program—is for informational use only—not for legal, engineering, or surveying purposes. Polygon boundaries can lag deeds, split lots, exempt transfers, or rural fence lines.',
   },
   {
     question: 'Does mapped public land guarantee I can hunt or camp there?',
@@ -60,9 +60,9 @@ const FAQS: LandFaq[] = [
       'MSL maps easements voluntarily recorded between landowners and qualifying agencies or land trusts on private parcels. Showing an easement does not grant public recreation rights—consult the steward organization for permissible uses.',
   },
   {
-    question: 'How often is the cadastral data updated?',
+    question: 'How often are Montana parcel records updated?',
     answer:
-      'Montana parcels are maintained on a statewide monthly cadastral cycle mirrored on the State Library GIS services plus FTP snapshots. Operational delays can still occur; cross-check parcels you care about directly in Montana Cadastral or county assessor GIS.',
+      'Montana parcels are maintained on roughly a monthly statewide GIS cycle mirrored on State Library MapServer services plus FTP snapshots. Operational delays still happen; verify parcels that matter on the Montana Cadastral GIS viewer or your county assessor map.',
   },
   {
     question: 'Why keep parcel linework toggled off by default?',
@@ -73,9 +73,9 @@ const FAQS: LandFaq[] = [
 
 export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
   const url = 'https://treasurestate.com/guides/land-ownership/';
-  const title = 'Montana Land Ownership Map & GIS Guide';
+  const title = 'Interactive Montana Land Ownership Map (Parcels, Public Lands & GIS)';
   const desc =
-    'Interactive Montana State Library MSDI cadastral map: public lands, conservation easements, parcels, PLSS grid, with MSL disclaimer and links to Montana Cadastral and FWP.';
+    'Interactive Montana land ownership map with a built-in steward-color legend plus Montana State Library GIS tiles: parcels, conservation easements, public land classifications, township grid / PLSS, and links to the Montana Cadastral GIS viewer and FWP Hunt Planner — informational only.';
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -116,7 +116,7 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
         <meta name="description" content={desc} />
         <meta
           name="keywords"
-          content="Montana land ownership, Montana cadastral map, MSDI parcels, Montana public lands GIS, DNRC trust land recreation, hunter access Montana, Treasure State GIS"
+          content="Montana land ownership map, parcel GIS legend, steward color key, Montana public lands map, property boundaries GIS, PLSS township grid, Treasure State GIS, conservation easements, Montana Cadastral viewer"
         />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
@@ -133,7 +133,7 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
       <Header />
       <Hero
         title="Montana Land Ownership &amp; GIS"
-        subtitle="Montana State Library MSDI cadastral — informational only"
+        subtitle="Montana State Library GIS (parcels &amp; public lands) — informational only"
         image="/images/hero-image.jpg"
         alt="Montana landscape from above illustrating public lands and towns"
         small
@@ -155,7 +155,7 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
 
       <main className="guide-page">
         <h2 id="interactive-map" className="guide-section-title" style={{ marginTop: '1rem' }}>
-          Cadastral map
+          Interactive Montana land ownership map
         </h2>
         <LandOwnershipMap height="560px" huntingMarkers={huntingMarkers} />
 

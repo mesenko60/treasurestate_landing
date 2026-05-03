@@ -132,7 +132,7 @@ function resizeMapSoon(map: mapboxgl.Map | null) {
 export default function LandOwnershipMap({
   height = '560px',
   huntingMarkers,
-  ariaLabel = 'Interactive Montana cadastral and public lands map',
+  ariaLabel = 'Interactive Montana land ownership map: parcels and public lands',
 }: {
   height?: string;
   huntingMarkers: HuntingMarker[];
@@ -269,7 +269,7 @@ export default function LandOwnershipMap({
       cooperativeGestures: true,
       customAttribution: [
         '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a>',
-        '<a href="https://msl.mt.gov/geoinfo/msdi/cadastral/">© Montana MSDI Cadastral</a>',
+        '<a href="https://msl.mt.gov/geoinfo/msdi/cadastral/">Montana GIS (MSL)</a>',
       ],
     });
 
@@ -522,7 +522,8 @@ export default function LandOwnershipMap({
         maxHeight: '100dvh',
         display: 'flex',
         flexDirection: 'column',
-        overflow: 'hidden',
+        overflowY: 'auto',
+        overflowX: 'hidden',
       }
     : {};
 
@@ -578,7 +579,7 @@ export default function LandOwnershipMap({
             color: '#555',
           }}
         >
-          Map unavailable: configure <code style={{ padding: '0 4px' }}>NEXT_PUBLIC_MAPBOX_TOKEN</code> for Montana cadastral layers.
+          Map unavailable: configure <code style={{ padding: '0 4px' }}>NEXT_PUBLIC_MAPBOX_TOKEN</code> for Montana land GIS layers (parcels / public lands).
         </div>
       ) : (
         <>
@@ -589,10 +590,10 @@ export default function LandOwnershipMap({
             <div ref={containerRef} style={{ width: '100%', height: fullscreenUi ? '100%' : '100%' }} aria-label={ariaLabel} role="img" />
           </div>
 
-          <LandLegend />
+          <LandLegend defaultExpanded fullscreenActive={fullscreenUi} />
 
           <nav
-            aria-label="Cadastral map layers"
+            aria-label="Land ownership map GIS layers"
             style={{
               padding: '0.65rem 1rem',
               borderTop: '1px solid #e8eef0',
