@@ -1,5 +1,6 @@
 /**
  * Shared MSDI cadastral overlays + hunting pins for embedded and full-viewport Montana maps.
+ * PLSS tiles load only when `ensurePlssRasterLayer` runs (user toggles grid on).
  */
 import mapboxgl, { type Expression } from 'mapbox-gl';
 import type { FeatureCollection } from 'geojson';
@@ -104,12 +105,11 @@ export function addRasterPair(
   );
 }
 
-/** MSDI rasters + classified public fills + hunting circles (same stack as LandOwnershipMap). */
+/** MSDI rasters (no PLSS until `ensurePlssRasterLayer`) + classified public fills + hunting circles. */
 export function addMontanaCadastralLayers(map: mapboxgl.Map, huntingMarkers: HuntingMarker[]) {
   addRasterPair(map, SOURCE_PUBLIC, LAYER_PUBLIC, MSDI_PUBLIC_LANDS_TILES);
   addRasterPair(map, SOURCE_CE, LAYER_CE, MSDI_CONSERVATION_EASEMENTS_TILES, LAYER_PUBLIC);
   addRasterPair(map, SOURCE_PARCELS, LAYER_PARCELS, MSDI_PARCELS_TILES, LAYER_CE);
-  addRasterPair(map, SOURCE_PLSS, LAYER_PLSS, MSDI_PLSS_TILES, LAYER_PARCELS);
 
   if (!map.getSource(SOURCE_PUBLIC_VEC)) {
     map.addSource(SOURCE_PUBLIC_VEC, {
@@ -170,6 +170,11 @@ export function addMontanaCadastralLayers(map: mapboxgl.Map, huntingMarkers: Hun
       LAYER_HUNTING,
     );
   }
+}
+
+/** Lazy PLSS township grid — call when the user enables the layer (skips ArcGIS tile traffic until then). */
+export function ensurePlssRasterLayer(map: mapboxgl.Map) {
+  addRasterPair(map, SOURCE_PLSS, LAYER_PLSS, MSDI_PLSS_TILES, LAYER_PARCELS);
 }
 
 export const SOURCE_MAPBOX_TERRAIN = 'mapbox-dem';

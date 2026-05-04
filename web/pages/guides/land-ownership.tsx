@@ -39,6 +39,11 @@ const FAQS: LandFaq[] = [
     answer:
       'Statewide parcel rendering is heavier than thematic public-lands overlays. Showing parcels only once you zoom in keeps the Treasure State viewer responsive while you pan across Montana on phones and laptops.',
   },
+  {
+    question: 'Why is the PLSS township grid off by default?',
+    answer:
+      'The township-and-section overlay is visually dense statewide and pulls extra MSDI tiles. Turn it on when you want approximate survey subdivisions alongside parcels or public lands.',
+  },
 ];
 
 export default function LandOwnershipGuide({ stats }: Props) {
@@ -61,7 +66,7 @@ export default function LandOwnershipGuide({ stats }: Props) {
     url,
     author: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
     datePublished: '2026-05-03T00:00:00-06:00',
-    dateModified: '2026-05-03T00:00:00-06:00',
+    dateModified: '2026-05-04T00:00:00-06:00',
     publisher: { '@type': 'Organization', name: 'Treasure State', url: 'https://treasurestate.com' },
   };
 

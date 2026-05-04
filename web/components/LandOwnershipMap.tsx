@@ -16,6 +16,7 @@ import {
   SOURCE_PUBLIC_VEC,
   addMontanaCadastralLayers,
   buildHuntingGeoJson,
+  ensurePlssRasterLayer,
   toMapGeoJSON,
   type HuntingMarker,
 } from '../lib/montanaCadastralMapLayers';
@@ -38,7 +39,7 @@ export const DEFAULT_LAYER_TOGGLES: Record<LayerToggleId, boolean> = {
   publicLands: true,
   conservation: true,
   parcels: false,
-  plss: true,
+  plss: false,
   huntingMarkers: true,
 };
 
@@ -203,6 +204,7 @@ export default function LandOwnershipMap({
       if (canceled || !mapRef.current) return;
 
       addMontanaCadastralLayers(map, huntingGeoInitial.current);
+      if (togglesRef.current.plss) ensurePlssRasterLayer(map);
 
       map.on('idle', scheduleVectorReload);
       queueMicrotask(scheduleVectorReload);
@@ -240,6 +242,7 @@ export default function LandOwnershipMap({
   useEffect(() => {
     const map = mapRef.current;
     if (map && ready) {
+      if (toggles.plss) ensurePlssRasterLayer(map);
       applyVisibility(map);
       scheduleVectorReload();
     }

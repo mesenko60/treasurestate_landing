@@ -19,6 +19,7 @@ import {
   buildHuntingGeoJson,
   ensureMapboxTerrainDemSource,
   syncHybridHillshadeOverlay,
+  ensurePlssRasterLayer,
   toMapGeoJSON,
   type HuntingMarker,
 } from '../lib/montanaCadastralMapLayers';
@@ -45,7 +46,7 @@ const DEFAULT_TOGGLES: Record<LayerToggleId, boolean> = {
   publicLands: true,
   conservation: true,
   parcels: false,
-  plss: true,
+  plss: false,
   huntingMarkers: true,
 };
 
@@ -287,6 +288,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
       lastVectorFetchKey.current = '';
 
       addMontanaCadastralLayers(map, huntingMarkersRef.current);
+      if (togglesRef.current.plss) ensurePlssRasterLayer(map);
       ensureMapboxTerrainDemSource(map);
       syncHybridHillshadeOverlay(map, basemapIdRef.current === 'hybrid');
       applyTerrainVisual(map, terrain3dRef.current);
@@ -342,6 +344,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   useEffect(() => {
     const map = mapRef.current;
     if (map && mapReady) {
+      if (toggles.plss) ensurePlssRasterLayer(map);
       applyVisibility(map);
       scheduleVectorReload();
     }
