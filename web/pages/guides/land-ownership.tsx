@@ -1,45 +1,15 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
-import dynamic from 'next/dynamic';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Footer from '../../components/Footer';
 import LandOwnershipInfo, { type LandFaq, type LandOwnershipStatsPayload } from '../../components/LandOwnershipInfo';
 
-const LandOwnershipMap = dynamic(() => import('../../components/LandOwnershipMap'), {
-  ssr: false,
-  loading: () => (
-    <div
-      style={{
-        height: 560,
-        borderRadius: 12,
-        background: '#f0f6f9',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#5a7582',
-        fontSize: '0.9rem',
-        marginBottom: '1.25rem',
-      }}
-    >
-      Loading Montana land ownership map…
-    </div>
-  ),
-});
-
-type HuntingAreaLite = {
-  name: string;
-  slug: string;
-  lat: number;
-  lng: number;
-  category: string;
-};
-
 type Props = {
-  huntingMarkers: HuntingAreaLite[];
   stats: LandOwnershipStatsPayload;
 };
 
@@ -71,7 +41,7 @@ const FAQS: LandFaq[] = [
   },
 ];
 
-export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
+export default function LandOwnershipGuide({ stats }: Props) {
   const url = 'https://treasurestate.com/guides/land-ownership/';
   const title = 'Interactive Montana Land Ownership Map (Parcels, Public Lands & GIS)';
   const desc =
@@ -157,7 +127,37 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
         <h2 id="interactive-map" className="guide-section-title" style={{ marginTop: '1rem' }}>
           Interactive Montana land ownership map
         </h2>
-        <LandOwnershipMap height="560px" huntingMarkers={huntingMarkers} />
+        <div
+          style={{
+            marginBottom: '1.75rem',
+            padding: '1.35rem 1.5rem',
+            borderRadius: 12,
+            border: '1px solid #d4e4ec',
+            background: 'linear-gradient(165deg, #f6fbfc 0%, #eef6f9 100%)',
+          }}
+        >
+          <p style={{ margin: '0 0 0.85rem', fontSize: '0.98rem', lineHeight: 1.65, color: '#344850' }}>
+            Open the full-screen Montana map with Topo / Satellite / Hybrid basemaps, optional 3D terrain (Mapbox elevation),
+            steward-colored public lands, parcels, conservation easements, PLSS grid, and hunting pins — same MSDI layers as before,
+            optimized for phones and desktops.
+          </p>
+          <Link
+            href="/map/"
+            style={{
+              display: 'inline-block',
+              padding: '0.72rem 1.35rem',
+              borderRadius: 10,
+              background: '#3b6978',
+              color: '#fff',
+              fontWeight: 700,
+              fontSize: '0.95rem',
+              textDecoration: 'none',
+              fontFamily: 'var(--font-primary, sans-serif)',
+            }}
+          >
+            Open full Montana map →
+          </Link>
+        </div>
 
         <LandOwnershipInfo stats={stats} faqs={FAQS} />
       </main>
@@ -169,25 +169,10 @@ export default function LandOwnershipGuide({ huntingMarkers, stats }: Props) {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const dataDir = path.join(process.cwd(), 'data');
-  const areasRaw = JSON.parse(fs.readFileSync(path.join(dataDir, 'hunting-areas.json'), 'utf8')) as {
-    name: string;
-    slug: string;
-    lat: number;
-    lng: number;
-    category: string;
-  }[];
-
-  const huntingMarkers: HuntingAreaLite[] = areasRaw.map((a) => ({
-    name: a.name,
-    slug: a.slug,
-    lat: a.lat,
-    lng: a.lng,
-    category: a.category,
-  }));
 
   const stats: LandOwnershipStatsPayload = JSON.parse(
     fs.readFileSync(path.join(dataDir, 'land-ownership-stats.json'), 'utf8'),
   );
 
-  return { props: { huntingMarkers, stats } };
+  return { props: { stats } };
 };

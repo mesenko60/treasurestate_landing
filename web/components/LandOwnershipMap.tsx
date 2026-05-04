@@ -1,69 +1,35 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import mapboxgl, { type Expression } from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import type { FeatureCollection } from 'geojson';
 import LandLegend from './LandLegend';
 import {
-  MSDI_CONSERVATION_EASEMENTS_TILES,
-  MSDI_PARCELS_TILES,
-  MSDI_PLSS_TILES,
-  MSDI_PUBLIC_LANDS_TILES,
-} from '../lib/msdiCadastralTiles';
-import { PUBLIC_LAND_SEMANTICS, PUBLIC_LAND_TIER_DISPLAY_ORDER, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
+  CATEGORY_COLORS,
+  EMPTY_FC,
+  LAYER_HUNTING,
+  LAYER_PARCELS,
+  LAYER_PLSS,
+  LAYER_PUBLIC,
+  LAYER_PUBLIC_VEC_FILL,
+  LAYER_CE,
+  SOURCE_HUNTING,
+  SOURCE_PUBLIC_VEC,
+  addMontanaCadastralLayers,
+  buildHuntingGeoJson,
+  toMapGeoJSON,
+  type HuntingMarker,
+} from '../lib/montanaCadastralMapLayers';
+import { PUBLIC_LAND_SEMANTICS, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
 import { fetchMsdiPublicLandPatches } from '../lib/fetchMsdiPublicLandPatches';
 import { trackMapInteraction } from '../lib/gtag';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
-const SOURCE_PUBLIC = 'msdi-public-lands';
-const SOURCE_CE = 'msdi-conservation';
-const SOURCE_PARCELS = 'msdi-parcels';
-const SOURCE_PLSS = 'msdi-plss';
-const SOURCE_PUBLIC_VEC = 'msdi-public-vector';
-const SOURCE_HUNTING = 'hunting-area-markers';
-
-const LAYER_PUBLIC = `${SOURCE_PUBLIC}-raster`;
-const LAYER_CE = `${SOURCE_CE}-raster`;
-const LAYER_PARCELS = `${SOURCE_PARCELS}-raster`;
-const LAYER_PLSS = `${SOURCE_PLSS}-raster`;
-const LAYER_PUBLIC_VEC_FILL = `${SOURCE_PUBLIC_VEC}-fill`;
-const LAYER_HUNTING = `${SOURCE_HUNTING}-circles`;
-
-export type HuntingMarker = {
-  name: string;
-  slug: string;
-  lat: number;
-  lng: number;
-  category: string;
-};
-
-const CATEGORY_COLORS: Record<string, string> = {
-  wma: '#5a8a5c',
-  'national-forest': '#3b6978',
-  'national-wildlife-refuge': '#7a6b3d',
-  blm: '#a0522d',
-};
-
 const PARCEL_MIN_ZOOM = 12;
 /** Treasure State categorical fills load above this zoom; below it the MSDI public-lands raster provides context. */
 const VECTOR_PUBLIC_MIN_ZOOM = 11;
 
-const EMPTY_FC: FeatureCollection = { type: 'FeatureCollection', features: [] };
-
-/** Satisfy Mapbox GeoJSON sources without brittle namespace imports */
-function toMapGeoJSON(fc: FeatureCollection) {
-  return fc as never;
-}
-
-function buildTierPaint(prop: 'fill' | 'outline'): Expression {
-  const expr: unknown[] = ['match', ['get', 'tier']];
-  for (const k of PUBLIC_LAND_TIER_DISPLAY_ORDER) {
-    expr.push(k);
-    expr.push(PUBLIC_LAND_SEMANTICS[k][prop]);
-  }
-  expr.push('#9e9e9e');
-  return expr as Expression;
-}
+export type { HuntingMarker };
 
 export type LayerToggleId = 'publicLands' | 'conservation' | 'parcels' | 'plss' | 'huntingMarkers';
 
@@ -75,51 +41,6 @@ export const DEFAULT_LAYER_TOGGLES: Record<LayerToggleId, boolean> = {
   plss: true,
   huntingMarkers: true,
 };
-
-function buildHuntingGeoJson(markers: HuntingMarker[]) {
-  return {
-    type: 'FeatureCollection' as const,
-    features: markers.map((m) => ({
-      type: 'Feature' as const,
-      properties: {
-        slug: m.slug,
-        name: m.name,
-        category: m.category,
-      },
-      geometry: {
-        type: 'Point' as const,
-        coordinates: [m.lng, m.lat],
-      },
-    })),
-  };
-}
-
-function addRasterPair(
-  map: mapboxgl.Map,
-  sourceId: string,
-  layerId: string,
-  tilesTemplate: string,
-  beforeLayerId?: string,
-) {
-  if (map.getSource(sourceId)) return;
-  map.addSource(sourceId, {
-    type: 'raster',
-    tiles: [tilesTemplate],
-    tileSize: 256,
-    attribution:
-      '<a href="https://msl.mt.gov/geoinfo/msdi/cadastral/" rel="noopener noreferrer">Montana State Library (MSDI)</a>',
-  });
-  const before = beforeLayerId && map.getLayer(beforeLayerId) ? beforeLayerId : undefined;
-  map.addLayer(
-    {
-      id: layerId,
-      type: 'raster',
-      source: sourceId,
-      paint: { 'raster-opacity': 0.82, 'raster-resampling': 'linear' },
-    },
-    before,
-  );
-}
 
 function resizeMapSoon(map: mapboxgl.Map | null) {
   if (!map) return;
@@ -163,7 +84,9 @@ export default function LandOwnershipMap({
       const shell = shellRef.current;
       const root = typeof document !== 'undefined' ? document : null;
       if (!shell || !root) return;
-      const active = root.fullscreenElement === shell || (root as unknown as { webkitFullscreenElement?: Element }).webkitFullscreenElement === shell;
+      const active =
+        root.fullscreenElement === shell ||
+        (root as unknown as { webkitFullscreenElement?: Element }).webkitFullscreenElement === shell;
       setFullscreenUi(active);
       resizeMapSoon(mapRef.current);
     };
@@ -279,60 +202,7 @@ export default function LandOwnershipMap({
     map.once('load', () => {
       if (canceled || !mapRef.current) return;
 
-      addRasterPair(map, SOURCE_PUBLIC, LAYER_PUBLIC, MSDI_PUBLIC_LANDS_TILES);
-      addRasterPair(map, SOURCE_CE, LAYER_CE, MSDI_CONSERVATION_EASEMENTS_TILES, LAYER_PUBLIC);
-      addRasterPair(map, SOURCE_PARCELS, LAYER_PARCELS, MSDI_PARCELS_TILES, LAYER_CE);
-      addRasterPair(map, SOURCE_PLSS, LAYER_PLSS, MSDI_PLSS_TILES, LAYER_PARCELS);
-
-      map.addSource(SOURCE_PUBLIC_VEC, {
-        type: 'geojson',
-        data: toMapGeoJSON(EMPTY_FC),
-      });
-
-      const initialData = buildHuntingGeoJson(huntingGeoInitial.current);
-      map.addSource(SOURCE_HUNTING, {
-        type: 'geojson',
-        data: toMapGeoJSON(initialData),
-      });
-
-      map.addLayer({
-        id: LAYER_HUNTING,
-        type: 'circle',
-        source: SOURCE_HUNTING,
-        paint: {
-          'circle-radius': 8,
-          'circle-stroke-width': 2,
-          'circle-stroke-color': '#ffffff',
-          'circle-color': [
-            'match',
-            ['get', 'category'],
-            'wma',
-            CATEGORY_COLORS.wma,
-            'national-forest',
-            CATEGORY_COLORS['national-forest'],
-            'national-wildlife-refuge',
-            CATEGORY_COLORS['national-wildlife-refuge'],
-            'blm',
-            CATEGORY_COLORS.blm,
-            '#204051',
-          ],
-          'circle-opacity': 0.95,
-        },
-      });
-
-      map.addLayer(
-        {
-          id: LAYER_PUBLIC_VEC_FILL,
-          type: 'fill',
-          source: SOURCE_PUBLIC_VEC,
-          paint: {
-            'fill-color': buildTierPaint('fill'),
-            'fill-opacity': 0.5,
-            'fill-outline-color': buildTierPaint('outline'),
-          },
-        },
-        LAYER_HUNTING,
-      );
+      addMontanaCadastralLayers(map, huntingGeoInitial.current);
 
       map.on('idle', scheduleVectorReload);
       queueMicrotask(scheduleVectorReload);

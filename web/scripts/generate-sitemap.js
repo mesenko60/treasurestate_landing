@@ -49,6 +49,7 @@ function getLastmod(loc) {
   if (loc.includes('/compare/')) return '2026-03-01';
   if (loc.includes('/best-of/')) return '2026-02-01';
   if (loc.includes('/information/')) return '2026-03-14';
+  if (loc === baseUrl + '/map/' || loc.endsWith('/map/')) return '2026-05-04';
   if (loc.includes('/guides/')) return '2026-03-01';
   if (loc.includes('/planners/')) return '2026-03-01';
   return '2026-01-01';
@@ -56,6 +57,7 @@ function getLastmod(loc) {
 
 function getPriority(loc) {
   if (loc === baseUrl + '/') return 1.0;
+  if (loc === baseUrl + '/map/') return 0.82;
   if (loc === baseUrl + '/montana-towns/') return 0.9;
   if (loc === baseUrl + '/this-day-in-history/') return 0.8;
   if (loc === baseUrl + '/this-day-in-history/browse/') return 0.7;
@@ -148,6 +150,7 @@ function writeSitemapIndex(outDir, sitemaps, today) {
     add(`${baseUrl}/best-of/`);
     add(`${baseUrl}/gear/`);
     add(`${baseUrl}/this-day-in-history/`, 'weekly');
+    add(`${baseUrl}/map/`, 'weekly');
   });
 
   // ═══ 1b. THIS DAY IN HISTORY ═══
