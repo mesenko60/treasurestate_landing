@@ -18,6 +18,7 @@ import {
   addMontanaCadastralLayers,
   buildHuntingGeoJson,
   ensureMapboxTerrainDemSource,
+  syncHybridHillshadeOverlay,
   toMapGeoJSON,
   type HuntingMarker,
 } from '../lib/montanaCadastralMapLayers';
@@ -32,7 +33,7 @@ const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 const BASEMAP_STYLES = {
   topo: 'mapbox://styles/mapbox/outdoors-v12',
   satellite: 'mapbox://styles/mapbox/satellite-streets-v12',
-  /** MVP: same imagery + labels as satellite; contour overlay ships later */
+  /** Same Mapbox style as satellite; Hybrid adds DEM hillshade below MSDI overlays. */
   hybrid: 'mapbox://styles/mapbox/satellite-streets-v12',
 } as const;
 
@@ -73,6 +74,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   const vecAbortRef = useRef<AbortController | null>(null);
   const lastVectorFetchKey = useRef('');
   const interactionCleanupRef = useRef<(() => void) | undefined>(undefined);
+  const basemapIdRef = useRef<BasemapId>('topo');
 
   const [noToken] = useState(() => !MAPBOX_TOKEN.trim());
   const [mapReady, setMapReady] = useState(false);
@@ -83,6 +85,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
 
   huntingMarkersRef.current = huntingMarkers;
   terrain3dRef.current = terrain3d;
+  basemapIdRef.current = basemapId;
 
   useEffect(() => {
     togglesRef.current = toggles;
@@ -276,6 +279,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
     });
 
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    map.addControl(new mapboxgl.ScaleControl({ maxWidth: 90, unit: 'imperial' }), 'bottom-left');
     mapRef.current = map;
 
     const onStyleLoad = () => {
@@ -284,6 +288,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
 
       addMontanaCadastralLayers(map, huntingMarkersRef.current);
       ensureMapboxTerrainDemSource(map);
+      syncHybridHillshadeOverlay(map, basemapIdRef.current === 'hybrid');
       applyTerrainVisual(map, terrain3dRef.current);
 
       wireInteractions(map);
@@ -346,6 +351,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
     (id: BasemapId) => {
       const map = mapRef.current;
       if (!map || !mapReady) return;
+      basemapIdRef.current = id;
       setBasemapId(id);
       trackMapInteraction(`montana_map_basemap:${id}`);
       map.setStyle(BASEMAP_STYLES[id]);
@@ -369,15 +375,17 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
 
   const pill = (active: boolean): React.CSSProperties => ({
     cursor: 'pointer',
-    padding: '0.35rem 0.55rem',
+    padding: '0.5rem 0.85rem',
+    minHeight: 44,
     borderRadius: 999,
     border: active ? '2px solid #204051' : '1px solid rgba(0,0,0,0.14)',
     background: active ? 'rgba(240,247,250,0.96)' : 'rgba(255,255,255,0.94)',
-    fontSize: '0.72rem',
+    fontSize: '0.76rem',
     fontWeight: active ? 700 : 600,
     color: '#204051',
     fontFamily: 'var(--font-primary, sans-serif)',
     boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+    boxSizing: 'border-box',
   });
 
   if (noToken) {
@@ -402,7 +410,20 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   }
 
   return (
-    <div ref={wrapRef} style={{ position: 'relative', width: '100%', height: '100%', minHeight: 0 }}>
+    <div ref={wrapRef} className="montana-map-root" style={{ position: 'relative', width: '100%', height: '100%', minHeight: 0 }}>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .montana-map-root button.montana-map-ui-btn:focus-visible,
+      .montana-map-root label.montana-map-layer-row:focus-within {
+        outline: 2px solid #204051;
+        outline-offset: 3px;
+        border-radius: 10px;
+      }
+      .montana-map-root label.montana-map-layer-row:focus-within { outline-offset: 2px; }
+    `,
+        }}
+      />
       <div ref={containerRef} style={{ position: 'absolute', inset: 0 }} aria-label="Montana land ownership full map" role="application" />
 
       <div
@@ -418,9 +439,10 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
           pointerEvents: 'none',
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 6, pointerEvents: 'auto' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'auto' }}>
           <button
             type="button"
+            className="montana-map-ui-btn"
             style={pill(terrain3d)}
             disabled={!mapReady}
             onClick={() => setTerrain3d((v) => !v)}
@@ -428,7 +450,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
           >
             {terrain3d ? '3D terrain on' : '3D terrain off'}
           </button>
-          <button type="button" style={pill(false)} disabled={!mapReady} onClick={resetNorth}>
+          <button type="button" className="montana-map-ui-btn" style={pill(false)} disabled={!mapReady} onClick={resetNorth}>
             Reset north
           </button>
         </div>
@@ -448,7 +470,14 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
         }}
       >
         <div style={{ pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-end' }}>
-          <button type="button" style={pill(layersOpen)} disabled={!mapReady} onClick={() => setLayersOpen((o) => !o)} aria-expanded={layersOpen}>
+          <button
+            type="button"
+            className="montana-map-ui-btn"
+            style={pill(layersOpen)}
+            disabled={!mapReady}
+            onClick={() => setLayersOpen((o) => !o)}
+            aria-expanded={layersOpen}
+          >
             Layers
           </button>
 
@@ -463,7 +492,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
                 boxShadow: '0 4px 18px rgba(0,0,0,0.12)',
               }}
             >
-              <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#71808a', marginBottom: 6 }}>Land ownership</div>
+              <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#71808a', marginBottom: 8 }}>Land ownership</div>
               {(
                 [
                   ['publicLands', 'Public lands'] as const,
@@ -475,17 +504,20 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
               ).map(([id, label]) => (
                 <label
                   key={id}
+                  className="montana-map-layer-row"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: 8,
-                    fontSize: '0.78rem',
+                    gap: 10,
+                    fontSize: '0.8rem',
                     color: '#204051',
-                    marginBottom: 6,
+                    marginBottom: 4,
+                    padding: '6px 2px',
+                    minHeight: 44,
                     cursor: 'pointer',
                   }}
                 >
-                  <input type="checkbox" checked={toggles[id]} onChange={() => toggleLayer(id)} />
+                  <input type="checkbox" checked={toggles[id]} onChange={() => toggleLayer(id)} style={{ width: 18, height: 18 }} />
                   {label}
                 </label>
               ))}
@@ -499,12 +531,20 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
             </div>
           )}
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end', pointerEvents: 'auto' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-end', pointerEvents: 'auto' }}>
             {(['topo', 'satellite', 'hybrid'] as const).map((id) => (
               <button
                 key={id}
                 type="button"
+                className="montana-map-ui-btn"
                 disabled={!mapReady}
+                title={
+                  id === 'hybrid'
+                    ? 'Satellite imagery plus shaded relief from elevation data'
+                    : id === 'satellite'
+                      ? 'Satellite imagery with roads and labels'
+                      : 'Topographic map with trails and contours'
+                }
                 style={{ ...pill(basemapId === id), opacity: mapReady ? 1 : 0.55 }}
                 onClick={() => switchBasemap(id)}
               >
@@ -518,7 +558,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
       <div
         style={{
           position: 'absolute',
-          bottom: 52,
+          bottom: 96,
           left: 12,
           zIndex: 10,
           maxWidth: 300,

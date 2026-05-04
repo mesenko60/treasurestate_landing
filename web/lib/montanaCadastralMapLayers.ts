@@ -33,6 +33,9 @@ export const LAYER_PLSS = `${SOURCE_PLSS}-raster`;
 export const LAYER_PUBLIC_VEC_FILL = `${SOURCE_PUBLIC_VEC}-fill`;
 export const LAYER_HUNTING = `${SOURCE_HUNTING}-circles`;
 
+/** DEM hillshade on Hybrid basemap only — inserted below MSDI rasters. */
+export const LAYER_HYBRID_HILLSHADE = 'treasure-hybrid-hillshade';
+
 export const CATEGORY_COLORS: Record<string, string> = {
   wma: '#5a8a5c',
   'national-forest': '#3b6978',
@@ -180,4 +183,32 @@ export function ensureMapboxTerrainDemSource(map: mapboxgl.Map) {
     tileSize: 512,
     maxzoom: 14,
   });
+}
+
+/** Satellite + shaded relief (distinct from plain Satellite). Call after cadastral layers so `LAYER_PUBLIC` exists. */
+export function syncHybridHillshadeOverlay(map: mapboxgl.Map, enable: boolean) {
+  if (!enable) {
+    if (map.getLayer(LAYER_HYBRID_HILLSHADE)) map.removeLayer(LAYER_HYBRID_HILLSHADE);
+    return;
+  }
+  ensureMapboxTerrainDemSource(map);
+  if (map.getLayer(LAYER_HYBRID_HILLSHADE)) return;
+  const before = map.getLayer(LAYER_PUBLIC) ? LAYER_PUBLIC : undefined;
+  map.addLayer(
+    {
+      id: LAYER_HYBRID_HILLSHADE,
+      type: 'hillshade',
+      source: SOURCE_MAPBOX_TERRAIN,
+      layout: { visibility: 'visible' },
+      paint: {
+        'hillshade-exaggeration': 0.42,
+        'hillshade-shadow-color': '#1e293b',
+        'hillshade-highlight-color': '#f8fafc',
+        'hillshade-accent-color': '#64748b',
+        'hillshade-illumination-direction': 315,
+        'hillshade-illumination-anchor': 'viewport',
+      },
+    },
+    before,
+  );
 }

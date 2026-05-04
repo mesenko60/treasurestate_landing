@@ -31,7 +31,7 @@ type Props = { huntingMarkers: HuntingMarker[] };
 const url = 'https://treasurestate.com/map/';
 const title = 'Montana Land Map — Full Viewport GIS';
 const desc =
-  'Full-screen Montana map: Topo, satellite, optional 3D terrain, Montana State Library parcel and public-land overlays, PLSS grid, hunting pins. Informational only — see the land ownership guide for MSL disclaimers.';
+  'Full-screen Montana map: Topo, satellite, Hybrid (satellite plus shaded relief), optional 3D terrain, Montana State Library parcel and public-land overlays, PLSS grid, hunting pins. Informational only — see the land ownership guide for MSL disclaimers.';
 
 export default function MontanaMapPage({ huntingMarkers }: Props) {
   return (
@@ -80,6 +80,26 @@ export default function MontanaMapPage({ huntingMarkers }: Props) {
             All guides
           </Link>
         </header>
+
+        <div
+          role="note"
+          style={{
+            flexShrink: 0,
+            padding: '0.45rem 1rem',
+            borderBottom: '1px solid #eee6d6',
+            background: '#fffbf3',
+            fontFamily: 'var(--font-primary, system-ui, sans-serif)',
+            fontSize: '0.78rem',
+            lineHeight: 1.55,
+            color: '#4d483f',
+          }}
+        >
+          <strong style={{ color: '#71582e' }}>Informational only.</strong> MSDI parcel and public-lands GIS from the Montana State Library is not for legal, surveying, or engineering use—boundaries can lag deeds and closures.
+          {' '}
+          <Link href="/guides/land-ownership/" style={{ fontWeight: 700, color: '#3b6978', whiteSpace: 'nowrap' }}>
+            Full disclaimers &amp; sources
+          </Link>
+        </div>
 
         <div style={{ flex: 1, minHeight: 0, position: 'relative' }}>
           <MontanaMapApp huntingMarkers={huntingMarkers} />
