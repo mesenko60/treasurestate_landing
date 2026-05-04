@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import type { HuntingMarker } from '../components/MontanaMapApp';
 import { useMediaQuery } from '../lib/useMediaQuery';
 
@@ -38,7 +38,6 @@ const desc =
 export default function MontanaMapPage({ huntingMarkers }: Props) {
   const narrowMobile = useMediaQuery('(max-width: 640px)');
   const [chromeVisible, setChromeVisible] = useState(true);
-  const idleTimerRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     document.body.classList.add('map-page-mobile');
@@ -48,25 +47,11 @@ export default function MontanaMapPage({ huntingMarkers }: Props) {
   const notifyMapInteraction = useCallback(() => {
     if (!narrowMobile) return;
     setChromeVisible(false);
-    if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
-    idleTimerRef.current = window.setTimeout(() => {
-      setChromeVisible(true);
-      idleTimerRef.current = undefined;
-    }, 8000);
   }, [narrowMobile]);
 
   const restoreChrome = useCallback(() => {
-    if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
-    idleTimerRef.current = undefined;
     setChromeVisible(true);
   }, []);
-
-  useEffect(
-    () => () => {
-      if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
-    },
-    [],
-  );
 
   const chromeInner = (
     <>
@@ -138,7 +123,7 @@ export default function MontanaMapPage({ huntingMarkers }: Props) {
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
 
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden', background: '#fff', position: 'relative' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100dvh', overflow: 'hidden', background: '#fff', position: 'relative' }}>
         {narrowMobile ? (
           <div
             style={{

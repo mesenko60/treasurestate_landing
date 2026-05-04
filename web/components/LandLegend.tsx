@@ -44,9 +44,9 @@ export default function LandLegend({ defaultExpanded = true, fullscreenActive, c
       ref={detailsRef}
       style={{
         margin: 0,
-        borderTop: '1px solid #e8eef0',
-        padding: '0.5rem 1rem',
-        background: '#fafcfd',
+        borderTop: compactSummary ? 'none' : '1px solid #e8eef0',
+        padding: compactSummary ? '0.25rem 0' : '0.5rem 1rem',
+        background: compactSummary ? 'transparent' : '#fafcfd',
         flexShrink: 0,
       }}
     >
@@ -55,17 +55,17 @@ export default function LandLegend({ defaultExpanded = true, fullscreenActive, c
           cursor: 'pointer',
           fontWeight: 600,
           color: '#204051',
-          fontSize: compactSummary ? '0.82rem' : '0.8rem',
+          fontSize: compactSummary ? '0.75rem' : '0.8rem',
           fontFamily: 'var(--font-primary, sans-serif)',
           listStyle: 'none',
-          minHeight: 44,
+          minHeight: compactSummary ? 32 : 44,
           display: 'flex',
           alignItems: 'center',
-          padding: '0.35rem 0',
+          padding: compactSummary ? '0.15rem 0' : '0.35rem 0',
           WebkitTapHighlightColor: 'transparent',
         }}
       >
-        {compactSummary ? 'Legend — tap for steward colors & MSL note' : 'Legend — public steward colors / private rule of thumb'}
+        {compactSummary ? 'Legend — steward colors & MSL note' : 'Legend — public steward colors / private rule of thumb'}
       </summary>
       <div style={{ marginTop: '0.55rem', fontSize: '0.76rem', color: '#45555e', lineHeight: 1.5 }}>
         <p style={{ margin: '0 0 0.5rem' }}>

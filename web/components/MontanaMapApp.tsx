@@ -55,10 +55,8 @@ const VECTOR_PUBLIC_MIN_ZOOM = 12;
 /** Skip MSDI GeoJSON fetch when viewport span exceeds this (degrees). */
 const MAX_VECTOR_VIEWPORT_SPAN_DEG = 0.35;
 
-/** Height reserved for bottom chip bar + safe area (legend stacks above). */
-const MOBILE_UI_BOTTOM = 'calc(52px + env(safe-area-inset-bottom, 0px))';
-/** Layers sheet stacks above collapsed legend + chip bar. */
-const MOBILE_LAYERS_SHEET_BOTTOM = 'calc(108px + env(safe-area-inset-bottom, 0px))';
+/** Chip bar height (36px chips + padding). */
+const CHIP_BAR_H = 46;
 
 function resizeMapSoon(map: mapboxgl.Map | null) {
   if (!map) return;
@@ -822,40 +820,26 @@ export default function MontanaMapApp({
             <div
               style={{
                 position: 'absolute',
-                bottom: MOBILE_LAYERS_SHEET_BOTTOM,
-                left: 8,
-                right: 8,
-                zIndex: 14,
-                maxHeight: 'min(42vh, 320px)',
+                bottom: CHIP_BAR_H,
+                left: 0,
+                right: 0,
+                zIndex: 16,
+                maxHeight: 'min(50vh, 340px)',
                 overflow: 'auto',
                 pointerEvents: 'auto',
+                background: 'rgba(255,255,255,0.97)',
+                borderTop: '1px solid #e0e8ea',
+                borderRadius: '12px 12px 0 0',
+                boxShadow: '0 -2px 16px rgba(0,0,0,0.12)',
+                padding: '0.65rem 0.75rem',
               }}
             >
-              <div style={{ ...layersPanelSurface, maxWidth: 'none', width: '100%', boxSizing: 'border-box' }}>{layerRows}</div>
+              {layerRows}
+              <div style={{ marginTop: 12, paddingTop: 8, borderTop: '1px solid #eef2f5' }}>
+                <LandLegend defaultExpanded={false} fullscreenActive={fullscreenUi} compactSummary />
+              </div>
             </div>
           )}
-
-          <div
-            style={{
-              position: 'absolute',
-              bottom: MOBILE_UI_BOTTOM,
-              left: 8,
-              zIndex: 10,
-              maxWidth: 'calc(100vw - 16px)',
-              maxHeight: 'min(32vh, 260px)',
-              overflow: 'auto',
-              pointerEvents: 'auto',
-              borderRadius: 12,
-              boxShadow: '0 4px 18px rgba(0,0,0,0.1)',
-              background: 'rgba(255,255,255,0.94)',
-            }}
-          >
-            <LandLegend
-              defaultExpanded={fullscreenUi ? true : false}
-              fullscreenActive={fullscreenUi}
-              compactSummary={!fullscreenUi}
-            />
-          </div>
 
           <nav
             aria-label="Map controls"
@@ -865,16 +849,15 @@ export default function MontanaMapApp({
               right: 0,
               bottom: 0,
               zIndex: 15,
+              height: CHIP_BAR_H,
               display: 'flex',
               alignItems: 'center',
               gap: 6,
-              paddingTop: 4,
-              paddingBottom: 'max(6px, env(safe-area-inset-bottom))',
               paddingLeft: 8,
               paddingRight: 8,
               overflowX: 'auto',
               WebkitOverflowScrolling: 'touch',
-              scrollbarWidth: 'thin',
+              scrollbarWidth: 'none',
               background: 'rgba(255,255,255,0.92)',
               borderTop: '1px solid rgba(0,0,0,0.08)',
               backdropFilter: 'blur(10px)',
