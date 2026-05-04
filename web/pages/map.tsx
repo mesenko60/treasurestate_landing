@@ -4,7 +4,9 @@ import dynamic from 'next/dynamic';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
 import path from 'path';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import type { HuntingMarker } from '../components/MontanaMapApp';
+import { useMediaQuery } from '../lib/useMediaQuery';
 
 const MontanaMapApp = dynamic(() => import('../components/MontanaMapApp'), {
   ssr: false,
@@ -34,6 +36,82 @@ const desc =
   'Full-screen Montana map: Topo, satellite, Hybrid (satellite plus shaded relief), optional 3D terrain, Montana State Library parcel and public-land overlays, PLSS grid, hunting pins. Informational only — see the land ownership guide for MSL disclaimers.';
 
 export default function MontanaMapPage({ huntingMarkers }: Props) {
+  const narrowMobile = useMediaQuery('(max-width: 640px)');
+  const [chromeVisible, setChromeVisible] = useState(true);
+  const idleTimerRef = useRef<number | undefined>(undefined);
+
+  const notifyMapInteraction = useCallback(() => {
+    if (!narrowMobile) return;
+    setChromeVisible(false);
+    if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = window.setTimeout(() => {
+      setChromeVisible(true);
+      idleTimerRef.current = undefined;
+    }, 8000);
+  }, [narrowMobile]);
+
+  const restoreChrome = useCallback(() => {
+    if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = undefined;
+    setChromeVisible(true);
+  }, []);
+
+  useEffect(
+    () => () => {
+      if (idleTimerRef.current !== undefined) window.clearTimeout(idleTimerRef.current);
+    },
+    [],
+  );
+
+  const chromeInner = (
+    <>
+      <header
+        style={{
+          flexShrink: 0,
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          gap: '0.65rem 1.25rem',
+          padding: '0.55rem 1rem',
+          borderBottom: '1px solid #e8eef0',
+          background: '#fbfdfe',
+          fontFamily: 'var(--font-primary, system-ui, sans-serif)',
+        }}
+      >
+        <Link href="/" style={{ fontWeight: 800, color: '#204051', textDecoration: 'none', fontSize: '0.95rem' }}>
+          Treasure State
+        </Link>
+        <span style={{ color: '#5a7582', fontSize: '0.85rem' }}>Montana land map</span>
+        <Link href="/guides/land-ownership/" style={{ marginLeft: 'auto', fontWeight: 600, color: '#3b6978', fontSize: '0.82rem' }}>
+          MSL disclaimers &amp; sources →
+        </Link>
+        <Link href="/guides/" style={{ fontWeight: 600, color: '#3b6978', fontSize: '0.82rem' }}>
+          All guides
+        </Link>
+      </header>
+
+      <div
+        role="note"
+        style={{
+          flexShrink: 0,
+          padding: '0.45rem 1rem',
+          borderBottom: narrowMobile ? 'none' : '1px solid #eee6d6',
+          background: '#fffbf3',
+          fontFamily: 'var(--font-primary, system-ui, sans-serif)',
+          fontSize: '0.78rem',
+          lineHeight: 1.55,
+          color: '#4d483f',
+        }}
+      >
+        <strong style={{ color: '#71582e' }}>Informational only.</strong> MSDI parcel and public-lands GIS from the Montana State Library is not for legal,
+        surveying, or engineering use—boundaries can lag deeds and closures.{' '}
+        <Link href="/guides/land-ownership/" style={{ fontWeight: 700, color: '#3b6978', whiteSpace: 'nowrap' }}>
+          Full disclaimers &amp; sources
+        </Link>
+      </div>
+    </>
+  );
+
   return (
     <>
       <Head>
@@ -55,54 +133,37 @@ export default function MontanaMapPage({ huntingMarkers }: Props) {
         <meta name="twitter:image" content="https://treasurestate.com/images/hero-image.jpg" />
       </Head>
 
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden', background: '#fff' }}>
-        <header
-          style={{
-            flexShrink: 0,
-            display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            gap: '0.65rem 1.25rem',
-            padding: '0.55rem 1rem',
-            borderBottom: '1px solid #e8eef0',
-            background: '#fbfdfe',
-            fontFamily: 'var(--font-primary, system-ui, sans-serif)',
-          }}
-        >
-          <Link href="/" style={{ fontWeight: 800, color: '#204051', textDecoration: 'none', fontSize: '0.95rem' }}>
-            Treasure State
-          </Link>
-          <span style={{ color: '#5a7582', fontSize: '0.85rem' }}>Montana land map</span>
-          <Link href="/guides/land-ownership/" style={{ marginLeft: 'auto', fontWeight: 600, color: '#3b6978', fontSize: '0.82rem' }}>
-            MSL disclaimers &amp; sources →
-          </Link>
-          <Link href="/guides/" style={{ fontWeight: 600, color: '#3b6978', fontSize: '0.82rem' }}>
-            All guides
-          </Link>
-        </header>
-
-        <div
-          role="note"
-          style={{
-            flexShrink: 0,
-            padding: '0.45rem 1rem',
-            borderBottom: '1px solid #eee6d6',
-            background: '#fffbf3',
-            fontFamily: 'var(--font-primary, system-ui, sans-serif)',
-            fontSize: '0.78rem',
-            lineHeight: 1.55,
-            color: '#4d483f',
-          }}
-        >
-          <strong style={{ color: '#71582e' }}>Informational only.</strong> MSDI parcel and public-lands GIS from the Montana State Library is not for legal, surveying, or engineering use—boundaries can lag deeds and closures.
-          {' '}
-          <Link href="/guides/land-ownership/" style={{ fontWeight: 700, color: '#3b6978', whiteSpace: 'nowrap' }}>
-            Full disclaimers &amp; sources
-          </Link>
-        </div>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden', background: '#fff', position: 'relative' }}>
+        {narrowMobile ? (
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              zIndex: 25,
+              transform: chromeVisible ? 'translateY(0)' : 'translateY(-100%)',
+              opacity: chromeVisible ? 1 : 0,
+              transition: 'transform 0.25s ease, opacity 0.25s ease',
+              pointerEvents: chromeVisible ? 'auto' : 'none',
+              boxShadow: chromeVisible ? '0 2px 14px rgba(0,0,0,0.12)' : 'none',
+              background: '#fff',
+            }}
+          >
+            {chromeInner}
+          </div>
+        ) : (
+          chromeInner
+        )}
 
         <div style={{ flex: 1, minHeight: 0, position: 'relative' }}>
-          <MontanaMapApp huntingMarkers={huntingMarkers} />
+          <MontanaMapApp
+            huntingMarkers={huntingMarkers}
+            narrowMobile={narrowMobile}
+            onMapInteraction={notifyMapInteraction}
+            onRestorePageChrome={restoreChrome}
+            pageChromeHidden={narrowMobile && !chromeVisible}
+          />
         </div>
       </div>
     </>

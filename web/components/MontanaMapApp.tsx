@@ -26,7 +26,6 @@ import {
 import { PUBLIC_LAND_SEMANTICS, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
 import { fetchMsdiPublicLandPatches } from '../lib/fetchMsdiPublicLandPatches';
 import { trackMapInteraction } from '../lib/gtag';
-import { useMediaQuery } from '../lib/useMediaQuery';
 
 export type { HuntingMarker };
 
@@ -56,6 +55,11 @@ const VECTOR_PUBLIC_MIN_ZOOM = 12;
 /** Skip MSDI GeoJSON fetch when viewport span exceeds this (degrees). */
 const MAX_VECTOR_VIEWPORT_SPAN_DEG = 0.35;
 
+/** Height reserved for bottom chip bar + safe area (legend stacks above). */
+const MOBILE_UI_BOTTOM = 'calc(52px + env(safe-area-inset-bottom, 0px))';
+/** Layers sheet stacks above collapsed legend + chip bar. */
+const MOBILE_LAYERS_SHEET_BOTTOM = 'calc(108px + env(safe-area-inset-bottom, 0px))';
+
 function resizeMapSoon(map: mapboxgl.Map | null) {
   if (!map) return;
   requestAnimationFrame(() => {
@@ -64,7 +68,79 @@ function resizeMapSoon(map: mapboxgl.Map | null) {
   });
 }
 
-export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: HuntingMarker[] }) {
+function IconLayers() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+      <path d="m2 17 10 5 10-5M2 12l10 5 10-5" />
+    </svg>
+  );
+}
+
+function IconTopo() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="m3 18 7-12 4 7 4-9 7 14H3z" opacity={0.9} />
+    </svg>
+  );
+}
+
+function IconSat() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <circle cx={12} cy={12} r={3} />
+      <path d="M12 2v3m0 14v3M4.93 4.93l2.12 2.12m10 10 2.12 2.12M2 12h3m14 0h3M4.93 19.07l2.12-2.12m10-10L19.07 4.93" />
+    </svg>
+  );
+}
+
+function IconHybrid() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <path d="M4 18 10 8l4 7 6-11v13H4z" fill="currentColor" fillOpacity={0.15} strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function IconTerrain3d() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <path d="m12 3 9 5v8l-9 5-9-5V8l9-5z" />
+      <path d="m12 12 9-5M12 12v10M12 12 3 7" />
+    </svg>
+  );
+}
+
+function IconExpand() {
+  return (
+    <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+    </svg>
+  );
+}
+
+function IconInfo() {
+  return (
+    <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden>
+      <circle cx={12} cy={12} r={10} />
+      <path d="M12 16v-4M12 8h.01" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export default function MontanaMapApp({
+  huntingMarkers,
+  narrowMobile = false,
+  onMapInteraction,
+  onRestorePageChrome,
+  pageChromeHidden = false,
+}: {
+  huntingMarkers: HuntingMarker[];
+  narrowMobile?: boolean;
+  onMapInteraction?: () => void;
+  onRestorePageChrome?: () => void;
+  pageChromeHidden?: boolean;
+}) {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
@@ -77,6 +153,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   const lastVectorFetchKey = useRef('');
   const interactionCleanupRef = useRef<(() => void) | undefined>(undefined);
   const basemapIdRef = useRef<BasemapId>('topo');
+  const scaleControlRef = useRef<mapboxgl.ScaleControl | null>(null);
 
   const [noToken] = useState(() => !MAPBOX_TOKEN.trim());
   const [mapReady, setMapReady] = useState(false);
@@ -84,8 +161,8 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   const [terrain3d, setTerrain3d] = useState(false);
   const [layersOpen, setLayersOpen] = useState(false);
   const [toggles, setToggles] = useState({ ...DEFAULT_TOGGLES });
+  const [fullscreenUi, setFullscreenUi] = useState(false);
 
-  const narrowLegendViewport = useMediaQuery('(max-width: 640px)');
   huntingMarkersRef.current = huntingMarkers;
   terrain3dRef.current = terrain3d;
   basemapIdRef.current = basemapId;
@@ -282,7 +359,6 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
     });
 
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-    map.addControl(new mapboxgl.ScaleControl({ maxWidth: 90, unit: 'imperial' }), 'bottom-left');
     mapRef.current = map;
 
     const onStyleLoad = () => {
@@ -321,6 +397,14 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
       map.off('style.load', onStyleLoad);
       map.off('moveend', onMoveEnd);
       map.off('idle', scheduleVectorReload);
+      if (scaleControlRef.current) {
+        try {
+          map.removeControl(scaleControlRef.current);
+        } catch {
+          /* noop */
+        }
+        scaleControlRef.current = null;
+      }
       popupRef.current?.remove();
       popupRef.current = null;
       map.remove();
@@ -328,6 +412,63 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
       setMapReady(false);
     };
   }, [noToken, applyVisibility, scheduleVectorReload, applyTerrainVisual, wireInteractions]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+
+    if (narrowMobile) {
+      if (scaleControlRef.current) {
+        try {
+          map.removeControl(scaleControlRef.current);
+        } catch {
+          /* noop */
+        }
+        scaleControlRef.current = null;
+      }
+    } else if (!scaleControlRef.current) {
+      const c = new mapboxgl.ScaleControl({ maxWidth: 90, unit: 'imperial' });
+      map.addControl(c, 'bottom-left');
+      scaleControlRef.current = c;
+    }
+  }, [mapReady, narrowMobile]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || !narrowMobile || !onMapInteraction) return;
+
+    const fire = () => {
+      onMapInteraction();
+    };
+
+    map.on('dragstart', fire);
+    map.on('touchstart', fire);
+    map.on('zoomstart', fire);
+
+    return () => {
+      map.off('dragstart', fire);
+      map.off('touchstart', fire);
+      map.off('zoomstart', fire);
+    };
+  }, [mapReady, narrowMobile, onMapInteraction]);
+
+  useEffect(() => {
+    const onFs = () => {
+      const doc = document as Document & { webkitFullscreenElement?: Element | null };
+      const shell = wrapRef.current;
+      const active = document.fullscreenElement ?? doc.webkitFullscreenElement ?? null;
+      setFullscreenUi(Boolean(shell && active === shell));
+      resizeMapSoon(mapRef.current);
+    };
+
+    document.addEventListener('fullscreenchange', onFs);
+    document.addEventListener('webkitfullscreenchange', onFs as EventListener);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', onFs);
+      document.removeEventListener('webkitfullscreenchange', onFs as EventListener);
+    };
+  }, []);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -378,6 +519,40 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
     trackMapInteraction('montana_map_reset_north');
   }, [mapReady]);
 
+  const toggleFullscreen = useCallback(() => {
+    const shell = wrapRef.current;
+    if (!shell) return;
+    const doc = document as Document & {
+      webkitExitFullscreen?: () => Promise<void> | void;
+      webkitFullscreenElement?: Element | null;
+    };
+    const el = shell as HTMLElement & {
+      webkitRequestFullscreen?: (allowKeyboard?: boolean) => Promise<void> | void;
+      msRequestFullscreen?: () => Promise<void> | void;
+    };
+    const fsActive = document.fullscreenElement ?? doc.webkitFullscreenElement ?? null;
+    if (!fsActive) {
+      const p = shell.requestFullscreen?.() ?? el.webkitRequestFullscreen?.() ?? el.msRequestFullscreen?.();
+      Promise.resolve(p as Promise<void> | void)
+        .then(() => undefined)
+        .catch(() => undefined)
+        .finally(() => {
+          trackMapInteraction('montana_map_fullscreen:on');
+          resizeMapSoon(mapRef.current);
+        });
+      return;
+    }
+    if (fsActive === shell) {
+      Promise.resolve(document.exitFullscreen?.() ?? doc.webkitExitFullscreen?.())
+        .then(() => undefined)
+        .catch(() => undefined)
+        .finally(() => {
+          trackMapInteraction('montana_map_fullscreen:off');
+          resizeMapSoon(mapRef.current);
+        });
+    }
+  }, []);
+
   const pill = (active: boolean): React.CSSProperties => ({
     cursor: 'pointer',
     padding: '0.5rem 0.85rem',
@@ -392,6 +567,80 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
     boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
     boxSizing: 'border-box',
   });
+
+  const chipBtn = (active: boolean): React.CSSProperties => ({
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 4,
+    height: 36,
+    padding: '0 0.6rem',
+    borderRadius: 999,
+    border: active ? '2px solid #204051' : '1px solid rgba(0,0,0,0.14)',
+    background: active ? 'rgba(240,247,250,0.96)' : 'rgba(255,255,255,0.94)',
+    fontSize: '0.72rem',
+    fontWeight: active ? 700 : 600,
+    color: '#204051',
+    cursor: 'pointer',
+    flexShrink: 0,
+    fontFamily: 'var(--font-primary, sans-serif)',
+    boxSizing: 'border-box',
+    WebkitTapHighlightColor: 'transparent',
+  });
+
+  const layerRows = (
+    <>
+      <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#71808a', marginBottom: 8 }}>Land ownership</div>
+      {(
+        [
+          ['publicLands', 'Public lands'] as const,
+          ['conservation', 'Conservation easements'] as const,
+          ['parcels', `Parcels (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
+          ['plss', 'PLSS grid'] as const,
+          ['huntingMarkers', 'Hunting pins'] as const,
+        ] as const
+      ).map(([id, label]) => (
+        <label
+          key={id}
+          className="montana-map-layer-row"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 10,
+            fontSize: '0.8rem',
+            color: '#204051',
+            marginBottom: 4,
+            padding: '6px 2px',
+            minHeight: 44,
+            cursor: 'pointer',
+          }}
+        >
+          <input type="checkbox" checked={toggles[id]} onChange={() => toggleLayer(id)} style={{ width: 18, height: 18 }} />
+          {label}
+        </label>
+      ))}
+      <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #eef2f5', fontSize: '0.72rem', color: '#6a7a82', lineHeight: 1.45 }}>
+        MSDI GIS — informational only. See{' '}
+        <Link href="/guides/land-ownership/" style={{ color: '#3b6978', fontWeight: 600 }}>
+          land ownership guide
+        </Link>{' '}
+        for disclaimers.
+      </div>
+      {narrowMobile && (
+        <button type="button" className="montana-map-ui-btn" style={{ ...pill(false), width: '100%', marginTop: 10 }} disabled={!mapReady} onClick={resetNorth}>
+          Reset north
+        </button>
+      )}
+    </>
+  );
+
+  const layersPanelSurface: React.CSSProperties = {
+    background: 'rgba(255,255,255,0.96)',
+    borderRadius: 12,
+    border: '1px solid #e0e8ea',
+    padding: '0.65rem 0.75rem',
+    maxWidth: 280,
+    boxShadow: '0 4px 18px rgba(0,0,0,0.12)',
+  };
 
   if (noToken) {
     return (
@@ -420,6 +669,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
         dangerouslySetInnerHTML={{
           __html: `
       .montana-map-root button.montana-map-ui-btn:focus-visible,
+      .montana-map-chip:focus-visible,
       .montana-map-root label.montana-map-layer-row:focus-within {
         outline: 2px solid #204051;
         outline-offset: 3px;
@@ -431,117 +681,222 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
       />
       <div ref={containerRef} style={{ position: 'absolute', inset: 0 }} aria-label="Montana land ownership full map" role="application" />
 
-      <div
-        style={{
-          position: 'absolute',
-          top: 12,
-          left: 12,
-          zIndex: 10,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 8,
-          alignItems: 'flex-start',
-          pointerEvents: 'none',
-        }}
-      >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'auto' }}>
-          <button
-            type="button"
-            className="montana-map-ui-btn"
-            style={pill(terrain3d)}
-            disabled={!mapReady}
-            onClick={() => setTerrain3d((v) => !v)}
-            aria-pressed={terrain3d}
-          >
-            {terrain3d ? '3D terrain on' : '3D terrain off'}
-          </button>
-          <button type="button" className="montana-map-ui-btn" style={pill(false)} disabled={!mapReady} onClick={resetNorth}>
-            Reset north
-          </button>
-        </div>
-      </div>
+      {narrowMobile && pageChromeHidden && onRestorePageChrome && (
+        <button
+          type="button"
+          className="montana-map-ui-btn"
+          aria-label="Show site header and disclaimers"
+          onClick={() => {
+            onRestorePageChrome();
+            trackMapInteraction('montana_map_restore_chrome');
+          }}
+          style={{
+            position: 'absolute',
+            top: 12,
+            left: 12,
+            zIndex: 20,
+            width: 44,
+            height: 44,
+            borderRadius: 12,
+            border: '1px solid rgba(0,0,0,0.12)',
+            background: 'rgba(255,255,255,0.94)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#204051',
+            cursor: 'pointer',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+            pointerEvents: 'auto',
+          }}
+        >
+          <IconInfo />
+        </button>
+      )}
 
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 52,
-          right: 12,
-          zIndex: 10,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-end',
-          gap: 10,
-          pointerEvents: 'none',
-        }}
-      >
-        <div style={{ pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-end' }}>
-          <button
-            type="button"
-            className="montana-map-ui-btn"
-            style={pill(layersOpen)}
-            disabled={!mapReady}
-            onClick={() => setLayersOpen((o) => !o)}
-            aria-expanded={layersOpen}
+      {!narrowMobile && (
+        <>
+          <div
+            style={{
+              position: 'absolute',
+              top: 12,
+              left: 12,
+              zIndex: 10,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 8,
+              alignItems: 'flex-start',
+              pointerEvents: 'none',
+            }}
           >
-            Layers
-          </button>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'auto' }}>
+              <button
+                type="button"
+                className="montana-map-ui-btn"
+                style={pill(terrain3d)}
+                disabled={!mapReady}
+                onClick={() => setTerrain3d((v) => !v)}
+                aria-pressed={terrain3d}
+              >
+                {terrain3d ? '3D terrain on' : '3D terrain off'}
+              </button>
+              <button type="button" className="montana-map-ui-btn" style={pill(false)} disabled={!mapReady} onClick={resetNorth}>
+                Reset north
+              </button>
+            </div>
+          </div>
 
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 52,
+              right: 12,
+              zIndex: 10,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-end',
+              gap: 10,
+              pointerEvents: 'none',
+            }}
+          >
+            <div style={{ pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-end' }}>
+              <button
+                type="button"
+                className="montana-map-ui-btn"
+                style={pill(layersOpen)}
+                disabled={!mapReady}
+                onClick={() => setLayersOpen((o) => !o)}
+                aria-expanded={layersOpen}
+              >
+                Layers
+              </button>
+
+              {layersOpen && <div style={layersPanelSurface}>{layerRows}</div>}
+
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-end', pointerEvents: 'auto' }}>
+                {(['topo', 'satellite', 'hybrid'] as const).map((id) => (
+                  <button
+                    key={id}
+                    type="button"
+                    className="montana-map-ui-btn"
+                    disabled={!mapReady}
+                    title={
+                      id === 'hybrid'
+                        ? 'Satellite imagery plus shaded relief from elevation data'
+                        : id === 'satellite'
+                          ? 'Satellite imagery with roads and labels'
+                          : 'Topographic map with trails and contours'
+                    }
+                    style={{ ...pill(basemapId === id), opacity: mapReady ? 1 : 0.55 }}
+                    onClick={() => switchBasemap(id)}
+                  >
+                    {id === 'topo' ? 'Topo' : id === 'satellite' ? 'Satellite' : 'Hybrid'}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 96,
+              left: 12,
+              zIndex: 10,
+              maxWidth: 300,
+              maxHeight: '38vh',
+              overflow: 'auto',
+              pointerEvents: 'auto',
+              borderRadius: 12,
+              boxShadow: '0 4px 18px rgba(0,0,0,0.1)',
+              background: 'rgba(255,255,255,0.94)',
+            }}
+          >
+            <LandLegend defaultExpanded fullscreenActive={fullscreenUi} compactSummary={false} />
+          </div>
+        </>
+      )}
+
+      {narrowMobile && (
+        <>
           {layersOpen && (
             <div
               style={{
-                background: 'rgba(255,255,255,0.96)',
-                borderRadius: 12,
-                border: '1px solid #e0e8ea',
-                padding: '0.65rem 0.75rem',
-                maxWidth: 280,
-                boxShadow: '0 4px 18px rgba(0,0,0,0.12)',
+                position: 'absolute',
+                bottom: MOBILE_LAYERS_SHEET_BOTTOM,
+                left: 8,
+                right: 8,
+                zIndex: 14,
+                maxHeight: 'min(42vh, 320px)',
+                overflow: 'auto',
+                pointerEvents: 'auto',
               }}
             >
-              <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#71808a', marginBottom: 8 }}>Land ownership</div>
-              {(
-                [
-                  ['publicLands', 'Public lands'] as const,
-                  ['conservation', 'Conservation easements'] as const,
-                  ['parcels', `Parcels (zoom ≥ ${PARCEL_MIN_ZOOM})`] as const,
-                  ['plss', 'PLSS grid'] as const,
-                  ['huntingMarkers', 'Hunting pins'] as const,
-                ] as const
-              ).map(([id, label]) => (
-                <label
-                  key={id}
-                  className="montana-map-layer-row"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 10,
-                    fontSize: '0.8rem',
-                    color: '#204051',
-                    marginBottom: 4,
-                    padding: '6px 2px',
-                    minHeight: 44,
-                    cursor: 'pointer',
-                  }}
-                >
-                  <input type="checkbox" checked={toggles[id]} onChange={() => toggleLayer(id)} style={{ width: 18, height: 18 }} />
-                  {label}
-                </label>
-              ))}
-              <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #eef2f5', fontSize: '0.72rem', color: '#6a7a82', lineHeight: 1.45 }}>
-                MSDI GIS — informational only. See{' '}
-                <Link href="/guides/land-ownership/" style={{ color: '#3b6978', fontWeight: 600 }}>
-                  land ownership guide
-                </Link>{' '}
-                for disclaimers.
-              </div>
+              <div style={{ ...layersPanelSurface, maxWidth: 'none', width: '100%', boxSizing: 'border-box' }}>{layerRows}</div>
             </div>
           )}
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-end', pointerEvents: 'auto' }}>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: MOBILE_UI_BOTTOM,
+              left: 8,
+              zIndex: 10,
+              maxWidth: 'calc(100vw - 16px)',
+              maxHeight: 'min(32vh, 260px)',
+              overflow: 'auto',
+              pointerEvents: 'auto',
+              borderRadius: 12,
+              boxShadow: '0 4px 18px rgba(0,0,0,0.1)',
+              background: 'rgba(255,255,255,0.94)',
+            }}
+          >
+            <LandLegend
+              defaultExpanded={fullscreenUi ? true : false}
+              fullscreenActive={fullscreenUi}
+              compactSummary={!fullscreenUi}
+            />
+          </div>
+
+          <nav
+            aria-label="Map controls"
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 15,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              paddingTop: 4,
+              paddingBottom: 'max(6px, env(safe-area-inset-bottom))',
+              paddingLeft: 8,
+              paddingRight: 8,
+              overflowX: 'auto',
+              WebkitOverflowScrolling: 'touch',
+              scrollbarWidth: 'thin',
+              background: 'rgba(255,255,255,0.92)',
+              borderTop: '1px solid rgba(0,0,0,0.08)',
+              backdropFilter: 'blur(10px)',
+              pointerEvents: 'auto',
+            }}
+          >
+            <button
+              type="button"
+              className="montana-map-chip"
+              disabled={!mapReady}
+              aria-expanded={layersOpen}
+              style={{ ...chipBtn(layersOpen), opacity: mapReady ? 1 : 0.55 }}
+              onClick={() => setLayersOpen((o) => !o)}
+            >
+              <IconLayers />
+              Layers
+            </button>
             {(['topo', 'satellite', 'hybrid'] as const).map((id) => (
               <button
                 key={id}
                 type="button"
-                className="montana-map-ui-btn"
+                className="montana-map-chip"
                 disabled={!mapReady}
                 title={
                   id === 'hybrid'
@@ -550,37 +905,39 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
                       ? 'Satellite imagery with roads and labels'
                       : 'Topographic map with trails and contours'
                 }
-                style={{ ...pill(basemapId === id), opacity: mapReady ? 1 : 0.55 }}
+                style={{ ...chipBtn(basemapId === id), opacity: mapReady ? 1 : 0.55 }}
                 onClick={() => switchBasemap(id)}
               >
-                {id === 'topo' ? 'Topo' : id === 'satellite' ? 'Satellite' : 'Hybrid'}
+                {id === 'topo' ? <IconTopo /> : id === 'satellite' ? <IconSat /> : <IconHybrid />}
+                {id === 'topo' ? 'Topo' : id === 'satellite' ? 'Sat' : 'Hyb'}
               </button>
             ))}
-          </div>
-        </div>
-      </div>
-
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 96,
-          left: 12,
-          zIndex: 10,
-          maxWidth: narrowLegendViewport ? 'calc(100vw - 24px)' : 300,
-          maxHeight: narrowLegendViewport ? 'min(42vh, 320px)' : '38vh',
-          overflow: 'auto',
-          pointerEvents: 'auto',
-          borderRadius: 12,
-          boxShadow: '0 4px 18px rgba(0,0,0,0.1)',
-          background: 'rgba(255,255,255,0.94)',
-        }}
-      >
-        <LandLegend
-          defaultExpanded={!narrowLegendViewport}
-          fullscreenActive={false}
-          compactSummary={narrowLegendViewport}
-        />
-      </div>
+            <button
+              type="button"
+              className="montana-map-chip"
+              disabled={!mapReady}
+              aria-pressed={terrain3d}
+              title={terrain3d ? 'Turn off 3D terrain' : 'Turn on 3D terrain'}
+              style={{ ...chipBtn(terrain3d), opacity: mapReady ? 1 : 0.55 }}
+              onClick={() => setTerrain3d((v) => !v)}
+            >
+              <IconTerrain3d />
+              3D
+            </button>
+            <button
+              type="button"
+              className="montana-map-chip"
+              aria-pressed={fullscreenUi}
+              title={fullscreenUi ? 'Exit full screen' : 'Full screen map'}
+              style={chipBtn(fullscreenUi)}
+              onClick={toggleFullscreen}
+            >
+              <IconExpand />
+              {fullscreenUi ? 'Exit' : 'Full'}
+            </button>
+          </nav>
+        </>
+      )}
     </div>
   );
 }
