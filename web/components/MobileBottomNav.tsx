@@ -9,6 +9,9 @@ export default function MobileBottomNav() {
   const openSearch = useCallback(() => setSearchOpen(true), []);
   const toggleSearch = useCallback(() => setSearchOpen(v => !v), []);
 
+  /** Immersive map uses its own bottom chip bar; fixed nav would cover it (z-index 9999). */
+  const hideBottomNav = router.pathname === '/map';
+
   useEffect(() => {
     const handleOpenEvent = () => openSearch();
     window.addEventListener('openSearch', handleOpenEvent);
@@ -22,6 +25,7 @@ export default function MobileBottomNav() {
 
   return (
     <>
+      {!hideBottomNav && (
       <nav className="mobile-bottom-nav" aria-hidden="true">
         <Link href="/" className={isActive('/') ? 'active' : ''} tabIndex={-1}>
           <div className="icon">🏠</div>
@@ -64,6 +68,7 @@ export default function MobileBottomNav() {
           <span>Guides</span>
         </Link>
       </nav>
+      )}
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );

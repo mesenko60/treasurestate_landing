@@ -68,6 +68,10 @@ body {
   body {
     padding-bottom: var(--bottom-nav-height); /* Make room for sticky bottom nav */
   }
+
+  body.map-page-mobile {
+    padding-bottom: 0; /* /map/ — full viewport; chip bar sits at visual bottom */
+  }
 }
 
 img {

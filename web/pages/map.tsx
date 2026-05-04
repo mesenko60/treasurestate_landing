@@ -40,6 +40,11 @@ export default function MontanaMapPage({ huntingMarkers }: Props) {
   const [chromeVisible, setChromeVisible] = useState(true);
   const idleTimerRef = useRef<number | undefined>(undefined);
 
+  useEffect(() => {
+    document.body.classList.add('map-page-mobile');
+    return () => document.body.classList.remove('map-page-mobile');
+  }, []);
+
   const notifyMapInteraction = useCallback(() => {
     if (!narrowMobile) return;
     setChromeVisible(false);
