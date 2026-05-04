@@ -23,6 +23,7 @@ import {
 import { PUBLIC_LAND_SEMANTICS, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
 import { fetchMsdiPublicLandPatches } from '../lib/fetchMsdiPublicLandPatches';
 import { trackMapInteraction } from '../lib/gtag';
+import { useMediaQuery } from '../lib/useMediaQuery';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
@@ -73,6 +74,7 @@ export default function LandOwnershipMap({
   const [noToken] = useState(() => !MAPBOX_TOKEN.trim());
   const togglesRef = useRef({ ...DEFAULT_LAYER_TOGGLES });
   const [toggles, setToggles] = useState({ ...DEFAULT_LAYER_TOGGLES });
+  const narrowLegendViewport = useMediaQuery('(max-width: 640px)');
 
   huntingGeoInitial.current = huntingMarkers;
 
@@ -463,7 +465,11 @@ export default function LandOwnershipMap({
             <div ref={containerRef} style={{ width: '100%', height: fullscreenUi ? '100%' : '100%' }} aria-label={ariaLabel} role="img" />
           </div>
 
-          <LandLegend defaultExpanded fullscreenActive={fullscreenUi} />
+          <LandLegend
+            defaultExpanded={!narrowLegendViewport || fullscreenUi}
+            fullscreenActive={fullscreenUi}
+            compactSummary={narrowLegendViewport && !fullscreenUi}
+          />
 
           <nav
             aria-label="Land ownership map GIS layers"

@@ -26,6 +26,7 @@ import {
 import { PUBLIC_LAND_SEMANTICS, type PublicLandTier } from '../lib/classifyMontanaPublicOwner';
 import { fetchMsdiPublicLandPatches } from '../lib/fetchMsdiPublicLandPatches';
 import { trackMapInteraction } from '../lib/gtag';
+import { useMediaQuery } from '../lib/useMediaQuery';
 
 export type { HuntingMarker };
 
@@ -84,6 +85,7 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
   const [layersOpen, setLayersOpen] = useState(false);
   const [toggles, setToggles] = useState({ ...DEFAULT_TOGGLES });
 
+  const narrowLegendViewport = useMediaQuery('(max-width: 640px)');
   huntingMarkersRef.current = huntingMarkers;
   terrain3dRef.current = terrain3d;
   basemapIdRef.current = basemapId;
@@ -564,8 +566,8 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
           bottom: 96,
           left: 12,
           zIndex: 10,
-          maxWidth: 300,
-          maxHeight: '38vh',
+          maxWidth: narrowLegendViewport ? 'calc(100vw - 24px)' : 300,
+          maxHeight: narrowLegendViewport ? 'min(42vh, 320px)' : '38vh',
           overflow: 'auto',
           pointerEvents: 'auto',
           borderRadius: 12,
@@ -573,7 +575,11 @@ export default function MontanaMapApp({ huntingMarkers }: { huntingMarkers: Hunt
           background: 'rgba(255,255,255,0.94)',
         }}
       >
-        <LandLegend defaultExpanded fullscreenActive={false} />
+        <LandLegend
+          defaultExpanded={!narrowLegendViewport}
+          fullscreenActive={false}
+          compactSummary={narrowLegendViewport}
+        />
       </div>
     </div>
   );

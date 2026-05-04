@@ -14,10 +14,12 @@ type Props = {
   defaultExpanded?: boolean;
   /** Rising edge expands again when entering full screen mode. */
   fullscreenActive?: boolean;
+  /** Shorter summary line (e.g. narrow viewports). */
+  compactSummary?: boolean;
 };
 
 /** Public land tier swatches plus MSL attribution (mounted under the map viewport). */
-export default function LandLegend({ defaultExpanded = true, fullscreenActive }: Props) {
+export default function LandLegend({ defaultExpanded = true, fullscreenActive, compactSummary }: Props) {
   const detailsRef = useRef<HTMLDetailsElement>(null);
   const prevFsRef = useRef(false);
 
@@ -53,12 +55,17 @@ export default function LandLegend({ defaultExpanded = true, fullscreenActive }:
           cursor: 'pointer',
           fontWeight: 600,
           color: '#204051',
-          fontSize: '0.8rem',
+          fontSize: compactSummary ? '0.82rem' : '0.8rem',
           fontFamily: 'var(--font-primary, sans-serif)',
           listStyle: 'none',
+          minHeight: 44,
+          display: 'flex',
+          alignItems: 'center',
+          padding: '0.35rem 0',
+          WebkitTapHighlightColor: 'transparent',
         }}
       >
-        Legend — public steward colors / private rule of thumb
+        {compactSummary ? 'Legend — tap for steward colors & MSL note' : 'Legend — public steward colors / private rule of thumb'}
       </summary>
       <div style={{ marginTop: '0.55rem', fontSize: '0.76rem', color: '#45555e', lineHeight: 1.5 }}>
         <p style={{ margin: '0 0 0.5rem' }}>
